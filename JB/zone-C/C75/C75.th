@@ -1,0 +1,53 @@
+encoding  utf-8
+ 
+survey C75 -title "C75" -entrance "C75"
+ 
+   centerline
+     title "C75"
+     cs lat-long
+     fix C75 46.1058500 6.8033833 2251
+     team "Xavier Robert"
+     team "Estelle Forbach"
+     team "Stéphane Lips"
+     date 2005.10.16
+     explo-team "Xavier Robert"
+     explo-team "Estelle Forbach"
+     explo-team "Stéphane Lips"
+     explo-date 2005.10.16
+
+     calibrate tape 0 1
+     units clino compass grad
+     data topofil from to length compass clino left right up down
+extend left 
+   C75    0    0    0     0   2    1   0.5    0.3  
+   0    1 4.84  294   -14   1.5  2   0.5    0.5
+   1    2 9.59  343    10   0.7  1   0.7    0.4
+   2    3 8.72  322    12   1    0.6 1      0.4
+   3    4 7.11  287    38   0.2  0.2 3      0.5
+extend right
+   4    5 3.00  187    38   0.1  0.1 0.1    0.1
+extend left
+   4    6 3.51  353    29   0.3  0.3 0.3    0.2
+   6    7 5.00  353    29   0.1  0.1 0.1    0.1
+ 
+   endcenterline
+   
+#   input C75.th2
+
+#    join ew1:0 ew2:end
+#    join ew1:end ew2:0
+#    join ps1 ps2
+
+#    map pdx -title "C75 -- Coupe"
+#      xs1
+#      xs2
+#    endmap
+  
+#    map pdp -title "C75"
+#      ps1
+#      ps2
+#    endmap
+
+
+ endsurvey
+

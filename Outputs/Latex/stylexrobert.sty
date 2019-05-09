@@ -1,0 +1,519 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{stylexrobert}
+
+\newif\if@sommairechap \@sommairechapfalse
+\DeclareOption{sommairechap}{\@sommairechaptrue}
+\ProcessOptions
+
+% ==========================================================================
+% PACKAGES ADDITIONNELS
+
+% Police MathPazo
+	% Valable pour un Mac :
+		\usepackage[applemac]{inputenc}
+	% Valable pour un PC
+		%\usepackage[T1]{fontenc}
+
+%\usepackage[frenchb]{babel}
+\RequirePackage[osf,sc]{mathpazo}
+\RequirePackage[scaled=.95]{helvet}
+\RequirePackage{courier}
+% Entêtes améliorés
+\RequirePackage{fancyhdr}
+% Enumerations personnalisÈe 
+\RequirePackage{enumerate}
+% Calcul des tailles d'environnement
+\RequirePackage{calc}
+% Symboles de amsmath et additionnels
+\RequirePackage{amsmath,amssymb,amsthm,amscd}%amsfonts,
+\RequirePackage{dsfont,mathrsfs}
+\RequirePackage{color}
+
+\RequirePackage{aeguill}
+\RequirePackage[english,frenchb,french,francais]{babel}
+\frenchspacing
+\RequirePackage{eurosym}
+\RequirePackage{xcolor}
+
+% Lettrine
+\RequirePackage{lettrine}
+% Ajout d'entrées dans la table des matières
+\RequirePackage{tocbibind}
+% Style de la légende
+\RequirePackage{caption}
+\DeclareCaptionLabelSeparator{mysep}{~--~}
+\captionsetup{singlelinecheck=no,labelsep=mysep,font=small,textfont=it}
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{-5pt}
+
+% Figures
+\RequirePackage{epsfig}
+\RequirePackage{subfigure}
+\RequirePackage{placeins}
+\RequirePackage{pstricks}
+\RequirePackage{graphics}
+\RequirePackage{graphicx}
+\RequirePackage{shadow}
+\RequirePackage{wrapfig}
+\RequirePackage{pdfpages}
+
+% Tableaux sur plusieurs pages - page de notations
+\RequirePackage{supertabular}
+\RequirePackage{multicol}
+\RequirePackage{multirow}
+\RequirePackage{array}
+\RequirePackage{longtable}
+\RequirePackage{colortbl}
+% Mise en forme des algorithmes
+%\RequirePackage[french,ruled,vlined]{algorithm2e}
+
+
+\RequirePackage{ifpdf}
+
+\ifpdf
+  % configuration de graphicx et hyperref pour sortie PDF
+%  \RequirePackage[pdftex]{graphicx}
+  \RequirePackage[pdftex,bookmarks,colorlinks=true,pagebackref,plainpages=false]{hyperref} 
+  \hypersetup{
+    pdftitle =
+        Inventaire spéléologique du massif du Folly,
+    pdfauthor =
+        Groupe Spéléologique Vulcain,
+    pdfsubject=
+       Karstologie,
+    pdfkeywords =
+    	Spéléologie Karstologie Samoens Vulcain}
+   \hypersetup{
+    colorlinks = true,
+    linkcolor = red,
+    anchorcolor = red,
+    citecolor = blue,
+    filecolor = red,
+    %pagecolor = red,
+    urlcolor = red} 
+  \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\else
+  % configuration de graphicx et hyperref pour sortie PS
+  \RequirePackage[dvips]{graphicx}
+  \DeclareGraphicsExtensions{.eps,.ps}
+  \RequirePackage[dvips,bookmarks,pdfauthor=Groupe Spéléologique Vulcain,colorlinks=true,pagebackref,plainpages=false]{hyperref}
+\fi
+
+% Gestion éventuel des sommaires en début de chapitre
+\if@sommairechap
+  \RequirePackage[french]{minitoc}
+  \dominitoc
+  \setlength{\mtcindent}{0em}
+  \renewcommand{\mtifont}{\large\rm\scshape}
+  \renewcommand{\mtcSfont}{\small\rm\scshape}
+\fi
+
+% CONFIGURATION DE LA CESURE (-> Axel Reichert)
+\tolerance = 1414
+\hbadness = 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\widowpenalty=10000
+\vfuzz \hfuzz
+\raggedbottom
+
+% =============================================
+% PAGE DE GARDE
+
+% Définition des variables
+\def\titleFR#1{\gdef\@titleFR{#1}}
+\def\@author{}
+\def\address#1{\gdef\@address{#1}}
+\def\lieu#1{\gdef\@lieu{#1}}
+\def\dedicate#1{\gdef\dedication@text{#1}}
+
+% Mise en page de la page de garde
+\renewcommand{\titlepage}{
+  \renewcommand{\baselinestretch}{1} % interligne
+  \begin{center}    
+  	\Large\textbf{\@author} \\	% Print l'auteur
+	\vspace{2.5cm}	% Fait un espace vertical de 4cm
+    \Huge~\textbf{\textsc{\@titleFR}} \\	% Print le titre
+    \vspace{2cm}
+    % Ajout du Logo Vulcain sur la page de garde
+    \begin{figure}[ht]
+    	\begin{center}
+			\includegraphics[width=0.35\linewidth]{Logos/vulcain.png}
+		\end{center}
+	\end{figure}
+	\vspace{2cm}
+    \normalsize
+    Export du document le \today \\	% Date de l'export du document
+    \vspace{3cm}
+    \textsc{\@lieu} \\
+    \textsc{\@address} \\
+  \end{center}
+  %\cleardoublepage
+}
+
+% ==========================================================================
+% MISE EN PAGE
+\RequirePackage{geometry}
+\geometry{textheight=145ex,textwidth=33em,top=85pt,headheight=30pt,headsep=30pt,inner=120pt}
+%\addtolength{\marginparwidth}{-20pt}
+\addtolength{\marginparwidth}{-80pt}
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+
+% ==============================================================
+% PREFACE 
+\newcommand{\beforepreface}{
+  \frontmatter
+  \pagestyle{empty}
+  \renewcommand{\baselinestretch}{1.5} % interligne
+  \titlepage
+  \pagestyle{plain}
+}
+
+% ==============================================================
+% CONTENU MAÎTRE
+\newcommand{\afterpreface}{
+  \mainmatter
+  \renewcommand{\baselinestretch}{0.9} % interligne
+  \pagestyle{main}
+% \oddsidemargin=-1cm % marge gauche recto
+% \evensidemargin=-1cm %marge gauche verso
+% \textwidth=17.5cm % largeur du texte
+% \topmargin=-1.5cm % marge supÈrieure
+% \textheight=25.5cm % hauteur totale du texte
+% \parskip=0.25\baselineskip
+% \setcounter{secnumdepth}{-1}
+% \setcounter{page}{0}
+% \setcounter{tocdepth}{3}
+}
+
+% ---------------------------------------------------------------
+% PERSONNALISATION DE BABEL
+% redéfinition des noms chapitres spéciaux
+%\addto{\captionsfrench}{
+%  \renewcommand*{\listfigurename}{Liste des figures}
+%  \renewcommand*{\appendixname}{}%
+%}
+% noindent en début de section
+%\addto\extrasfrench{\bbl@nonfrenchindent}
+
+ \oddsidemargin=-1cm % marge gauche recto
+ \evensidemargin=0cm %marge gauche verso
+ \textwidth=16.5cm % largeur du texte
+ \textheight=24.5cm % hauteur totale du texte
+ 
+% ==========================================================================
+% ENTÊTES
+% Entêtes standards pour le corps
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[RO,LE]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\fancypagestyle{main}{
+  \fancyhf{}
+  \fancyhead[LO]{\nouppercase{\rightmark}}
+  \fancyhead[RO,LE]{\thepage}
+  \fancyhead[RE]{\nouppercase{\leftmark}}
+  \renewcommand{\headrulewidth}{0.5pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% ==========================================================================
+% PAGE DE GARDE DES CHAPITRES
+% Le résumé + le minitoc éventuel
+\newenvironment{chapintro}{%
+  \if@sommairechap \nomtcrule \vspace{1.5cm} \minitoc[l] \fi}{%
+  \cleardoublepage
+}
+ 
+% chapitre numéroté
+\newfont{\chapterNumber}{eurb10 scaled 7000}
+\renewcommand*{\@makechapterhead}[1]{%
+  \thispagestyle{plain}
+  \marginpar{\vspace*{1.5em}\flushright\chapterNumber\thechapter}
+  \begin{flushleft}\nobreak\Huge\sc#1\end{flushleft}
+  \vspace{3cm}
+}
+% chapitre non numéroté (*) 
+\renewcommand*{\@makeschapterhead}[1]{%  
+  \markboth{#1}{#1}
+  \thispagestyle{plain}
+  \begin{flushleft}\nobreak\Huge\sc #1\end{flushleft}
+  \vspace{3cm}
+  \if@sommairechap \mtcaddchapter \fi
+}
+
+% ==========================================================================
+% LES SECTIONS, SOUS-SECTIONS, SOUS-SOUS-SECTIONS
+%\makeatletter
+%\renewcommand\section{\@startsection {section}{1}{\z@}%
+%                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+%                                   {2.3ex \@plus.2ex}%
+%                                   {\normalfont\Large\scshape}}
+%\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+%             {-3.25ex\@plus -1ex \@minus -.2ex}%
+%             {1.5ex \@plus .2ex}%
+%             {\normalfont\bfseries\large}}
+
+%\def\@seccntformat#1{%
+%  \protect\makebox[-3.5pt][r]{\csname the#1\endcsname\quad\hspace{-3.5pt}}
+%}
+%\makeatother
+
+% ==========================================================================
+% ANNEXE, BIBLIOGRAPHIE
+
+% Annexe se comporte comme un chapitre
+\let\oldappendix=\appendix
+\renewcommand\appendix{%
+  \oldappendix
+  \chapter{Annexes}
+  \thispagestyle{plain}
+  \begin{chapintro} \end{chapintro}
+  \pagestyle{main}
+}
+
+\RequirePackage[hyperpageref]{backref}
+\backreffrench
+\renewcommand*{\backref}[1]{}  % Disable standard
+\renewcommand*{\backrefalt}[4]{% Detailed backref
+  \ifcase #1 %
+  \relax%(Not cited.)%
+  \or
+  (Cit\'e page~#2.)%
+  \else
+  (Cit\'e pages~#2.) 
+  \fi}
+
+% Page blanche aprés chapitre si nécessaire
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \hbox{}
+  \vspace*{\fill}
+  \begin{center}
+    ~
+  \end{center}
+  \vspace{\fill}
+  \thispagestyle{empty}
+  \newpage
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% ---------------------------------------------------------------
+% LETTRINE
+\newcommand{\malettrine}[1]{
+  \lettrine[lines=2,lhang=0.33,loversize=0.33]{#1}
+}
+
+% ==========================================================================
+% BOITES DES FICHES DE CHAQUE CAVITE
+
+% Definition des variables des fiches Topos
+\makeatletter
+	\def\trou#1{\gdef\troucontent{#1}}
+	\def\systeme#1{\gdef\systemecontent{#1}}
+	\def\developpement#1{\gdef\develcontent{#1}}
+	\def\profondeur#1{\gdef\profcontent{#1}}
+	
+	\def\lat#1{\gdef\latcontent{#1}}
+	\def\longi#1{\gdef\longicontent{#1}}
+	\def\altitude#1{\gdef\altcontent{#1}}
+	\def\XUTM#1{\gdef\XUTMcontent{#1}}
+	\def\YUTM#1{\gdef\YUTMcontent{#1}}
+	
+	\def\situation#1{\gdef\situationcontent{#1}}
+	\def\decouverte#1{\gdef\decouvertecontent{#1}}
+	\def\histoire#1{\gdef\histoirecontent{#1}}
+	\def\descrip#1{\gdef\descripcontent{#1}}
+	\def\rem#1{\gdef\remcontent{#1}}
+	\def\biblio#1{\gdef\bibliocontent{#1}}	
+	\def\topopt#1{\gdef\topoptcontent{#1}}
+	\def\saut#1{\gdef\sautcontent{#1}}
+\makeatother
+
+% Situation
+\newcommand{\site}{
+	\ifx\situationcontent\empty
+	\else
+		\textbf{Situation : } \situationcontent
+		\newline \newline
+	\fi
+	}
+% Découverte
+\newcommand{\decouv}{
+	\ifx\situationcontent\empty
+	\else
+		\textbf{Découverte : } \decouvertecontent
+		\newline \newline
+	\fi
+	} 
+% Historique
+\newcommand{\hist}{
+	\ifx\histoirecontent\empty
+	\else
+		\textbf{Historique : } \histoirecontent
+		\newline \newline
+	\fi
+   } 
+% Description
+\newcommand{\galeries}{
+	\ifx\descripcontent\empty
+	\else
+		\textbf{Description : } \descripcontent
+		\newline \newline
+	\fi
+   } 
+% Remarques
+\newcommand{\remarques}{
+	\ifx\remcontent\empty
+	\else
+		\textbf{Remarque : } \remcontent
+		\newline \newline
+	\fi
+   } 
+% Référence
+\newcommand{\bibl}{
+	\ifx\bibliocontent\empty
+	\else
+		\textbf{Référence(s) : } \bibliocontent
+		\newline \newline
+		%\newline\vspace{\sautcontent\baselineskip}
+	\fi
+	}
+
+% Construction de la fiche globale
+\newcommand{\fichetrougd}{
+	\begin{center}	% C'est pour le titre de la fiche, sous forme de tableau
+		\begin{tabular}{ccc}
+		\multirow{3}{*}{\shabox{\noindent \Huge{ \textbf{ \troucontent }}}} & \ & \ \\
+		\ifx\systemecontent\empty
+			& \ \\
+		\else
+			\ & \multicolumn{2}{c}{\noindent \textbf{Système :} \systemecontent} \\
+		\fi
+		&		
+		\textbf{Développement :} \develcontent \ m & \textbf{Profondeur :} \profcontent \ m \\
+		\ & \ & \ \\
+		\ & \ & \ \\
+		\textbf{Latitude :} \ifx\latcontent\empty \textcolor{red}{XXX°} \else\latcontent ° \fi 
+			& \textbf{Longitude :} \ifx\longicontent\empty \textcolor{red}{XXX°} \else\longicontent ° \fi 
+			& \textbf{Altitude :} \ifx\altcontent\empty \textcolor{red}{XXX m} \else\altcontent \ m \fi \\
+		\textbf{X Utm32 :} \ifx\XUTMcontent\empty \textcolor{red}{XXX m} \else\XUTMcontent \ m \fi 
+			& \textbf{Y Utm32 :} \ifx\YUTMcontent\empty \textcolor{red}{XXX m} \else\YUTMcontent \ m \fi 
+			& \ \\%\textbf{Altitude :} \ifx\altcontent\empty \textcolor{red}{XXX m} \else\altcontent \ m \fi \\
+		\end{tabular}
+	\end{center}	% Fin du titre de la fiche
+	
+	% Gérer la fiche avec un tableau ???
+
+	% écrit la localisation
+	\noindent\site
+	% écrit la découverte
+	\noindent\decouv
+	% écrit l'historique
+	\noindent\hist
+	% écrit la description
+	\noindent\galeries
+	% écrit les remarques
+	\noindent\remarques
+	% écrit la biblio
+	\noindent\bibl
+}
+
+\newcommand{\fichetroupt}{
+	\begin{center}	% C'est pour le titre de la fiche, sous forme de tableau
+		\begin{tabular}{ccc}
+		\multirow{3}{*}{\shabox{\noindent \Huge{ \textbf{ \troucontent }}}} & \ & \ \\
+		\ifx\systemecontent\empty
+			& \ \\
+		\else
+			\ & \multicolumn{2}{c}{\noindent \textbf{Système :} \systemecontent} \\
+		\fi
+		&		
+		\textbf{Développement :} \develcontent \ m & \textbf{Profondeur :} \profcontent \ m \\
+		\ & \ & \ \\
+		\ & \ & \ \\
+		\textbf{Latitude :} \ifx\latcontent\empty \textcolor{red}{XXX°} \else\latcontent ° \fi 
+			& \textbf{Longitude :} \ifx\longicontent\empty \textcolor{red}{XXX°} \else\longicontent ° \fi 
+			& \textbf{Altitude :} \ifx\altcontent\empty \textcolor{red}{XXX m} \else\altcontent \ m \fi \\
+		\textbf{X Utm32 :} \ifx\XUTMcontent\empty \textcolor{red}{XXX m} \else\XUTMcontent \ m \fi 
+			& \textbf{Y Utm32 :} \ifx\YUTMcontent\empty \textcolor{red}{XXX m} \else\YUTMcontent \ m \fi 
+			& \ \\%\textbf{Altitude :} \ifx\altcontent\empty \textcolor{red}{XXX m} \else\altcontent \ m \fi \\
+		\end{tabular}
+	\end{center}	% Fin du titre de la fiche
+	
+	% Gérer la fiche avec un tableau ???
+	
+	\begin{minipage}[m]{11cm}
+		% écrit la localisation
+		\noindent\site
+		% écrit la découverte
+		\noindent\decouv
+		% écrit l'historique
+		\noindent\hist
+		% écrit la description
+		\noindent\galeries
+		% écrit les remarques
+		\noindent\remarques
+		% écrit la biblio
+		\noindent\bibl
+	\end{minipage} \hspace{0.2cm}%\hfill
+	\begin{minipage}[c]{5.5cm}
+		% La figure doit être au max de 5 cm de large pour 9 cm (?) de haut
+		\begin{center}
+			\fbox{\includegraphics[width=1\linewidth]{\topoptcontent}}	% \fbox est pour encadrer l'image
+		\end{center}
+	\end{minipage}
+}
+
+% ==========================================================================
+% FIGURES ET TABLES 
+
+% \figScale{monfichier}{Légende de la figure}
+\newcommand{\figScaleX}[3]{
+  \begin{figure}[htp!]
+    \includegraphics[width=#1\textwidth]{./figures/#2}
+    \caption{#3}
+    \label{fig:#2}
+  \end{figure}
+}
+\newcommand{\figScale}[2]{
+ \figScaleX{0.95}{#1}{#2}
+}
+\newcommand{\figScaleRot}[3]{
+  \begin{figure}[htp!]
+    \includegraphics[angle=#1,width=0.95\textwidth]{./figures/#2}
+    \caption{#3}
+    \label{fig:#2}
+  \end{figure}
+}
+
+% ==========================================================================
+% COLOPHON
+\newcommand{\colophon}[1]{
+  ~\vfill
+  \begin{center}
+    \small #1
+  \end{center}
+  \cleardoublepage
+}
+
+%===========================================================================
+% BOITE RESUME
+\newcommand{\resume}[1]{
+	\addcontentsline{toc}{section}{RÈsumÈ}
+	\begin{center}\fbox{\parbox{12cm}{\bf #1}}\end{center}
+}
+
+%===========================================================================
+% BOITE TRANSITION
+\newcommand{\transition}[1]{
+	\addcontentsline{toc}{section}{Transition}
+	\begin{center}\fbox{\parbox{12cm}{\bf #1}}\end{center}
+}
+
+%===========================================================================

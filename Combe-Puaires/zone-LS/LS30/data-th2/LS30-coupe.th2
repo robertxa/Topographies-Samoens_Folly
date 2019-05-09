@@ -1,0 +1,212 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 246.1103 403.5907
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.369600000000005 1 1.0} {255.90800000000002 LS30} ../LS30-coupe.xvi 0 {}
+
+
+
+scrap LS30-c1 -projection extended -author 2009 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
+
+point 62.949600000000004 247.83800000000002 station -name 1@LS30
+
+line wall -subtype invisible
+  74.0 261.25
+  74.0 261.25 42.5 266.5 37.75 264.75
+  33.0 263.0 24.75 256.75 24.75 256.75
+  smooth off
+endline
+
+line wall
+  125.25 50.5
+  125.25 50.5 117.5 50.0 113.5 58.5
+  109.5 67.0 107.25 81.5 106.0 87.5
+  105.16 91.51 103.75 93.0 103.5 97.75
+  103.25 102.5 97.25 135.5 94.0 146.0
+  90.75 156.5 88.0 180.5 85.75 189.25
+  83.5 198.0 85.0 200.0 81.0 206.25
+  77.0 212.5 76.25 211.25 73.75 219.5
+  71.25 227.75 65.25 246.0 65.25 250.5
+  65.25 255.0 60.5 257.0 62.75 258.75
+  65.0 260.5 74.0 261.25 74.0 261.25
+  smooth off
+endline
+
+point 118.25 49.5 breakdown-choke -orientation 42.7
+
+point 106.5 43.75 breakdown-choke -orientation 84.9
+
+line wall -subtype presumed
+  144.0 42.0
+  144.0 42.0 128.0 48.5 125.25 50.5
+endline
+
+line wall -subtype presumed
+  104.75 37.75
+  104.75 37.75 125.75 41.0 130.5 39.25
+  135.25 37.5 140.0 35.5 140.0 35.5
+  smooth off
+endline
+
+line wall -subtype debris
+  106.0 54.0
+  106.0 54.0 109.5 56.0 109.0 53.25
+  108.5 50.5 103.5 47.25 103.5 47.25
+  smooth off
+endline
+
+line wall -subtype ice
+  100.75 82.0
+  100.75 82.0 102.5 57.0 103.25 56.0
+  104.0 55.0 106.0 54.0 106.0 54.0
+  smooth off
+endline
+
+line wall
+  99.5 95.5
+  99.75 88.5 100.75 82.0 100.75 82.0
+  smooth off
+endline
+
+line wall -subtype debris
+  95.5 98.0
+  95.5 98.0 97.5 97.25 99.5 95.5
+endline
+
+line u:rope
+  39.0 259.25
+  39.0 259.25 56.75 245.75 63.0 251.5
+  63.41 251.88 64.75 191.75 80.25 201.75
+  81.01 202.24 72.25 97.75 95.25 118.0
+  95.52 118.23 94.75 93.25 103.5 93.5
+  104.77 93.54 107.25 56.5 107.25 56.5
+  smooth off
+endline
+
+line rock-border -close on
+  61.5 258.75
+  61.5 258.75 57.75 257.75 57.5 259.25
+  57.25 260.75 55.75 262.25 55.75 262.25
+  smooth off
+  55.75 262.25 52.75 261.75 52.75 260.0
+  52.75 258.25 55.75 257.0 56.0 256.0
+  56.25 255.0 56.0 251.75 57.75 253.75
+  59.5 255.75 61.5 258.75 61.5 258.75
+  smooth off
+endline
+
+point 51.75 250.0 breakdown-choke -orientation 24.0
+
+point 24.75 256.75 altitude -align left
+
+point 49.5 221.25 snow
+
+point 47.0 237.0 snow
+
+point 48.25 229.5 snow
+
+point 52.75 226.75 snow
+
+point 53.75 218.0 snow
+
+point 49.75 213.75 snow
+
+point 47.0 216.75 snow
+
+point 47.25 224.25 snow
+
+point 46.5 233.25 snow
+
+point 46.25 241.0 snow
+
+point 47.25 197.75 breakdown-choke -orientation 0.0
+
+point 29.0 269.0 entrance -orientation 140.0
+
+point 20.75 285.25 label -text "<bf>LS30" -scale xl
+
+point 85.5 49.75 label -text "etr."
+
+point 123.25 100.5 label -text "etr."
+
+point 45.5 136.75 label -text "<center>glace<br>de regel"
+
+point 20.0 223.25 label -text "névé"
+
+point 81.25 235.75 height -value [-12 m]
+
+point 113.75 164.25 height -value [-26 m]
+
+point 87.25 76.5 height -value [-10 m]
+
+point 152.0 36.25 continuation -attr Code D -text "Etroiture à désobstruer, méandre en dessous ; faible c.a. ?"
+
+point 114.75 56.75 altitude -align right
+
+line wall -subtype ice
+  83.25 117.75
+  83.25 117.75 83.75 116.0 86.5 114.75
+  89.25 113.5 91.75 115.5 92.75 111.0
+  93.75 106.5 95.5 98.0 95.5 98.0
+  smooth off
+endline
+
+line wall -subtype ice
+  51.25 196.5
+  51.25 196.5 55.75 196.5 56.25 200.5
+  56.75 204.5 64.25 210.75 66.25 206.5
+  68.25 202.25 70.5 182.25 70.5 177.0
+  70.5 171.75 69.75 160.75 70.75 158.25
+  71.75 155.75 73.25 159.0 74.0 156.5
+  74.75 154.0 72.5 138.56 75.75 136.75
+  78.0 135.5 78.0 136.5 78.25 133.25
+  78.5 130.0 83.25 117.75 83.25 117.75
+  smooth off
+endline
+
+line wall -subtype presumed
+  51.75 186.75
+  51.25 196.5
+endline
+
+line wall -subtype presumed
+  44.0 197.0
+  44.0 186.75
+endline
+
+line wall
+  44.25 212.0
+  44.0 197.0
+endline
+
+line wall -subtype ice
+  44.0 243.0
+  44.25 212.0
+endline
+
+line wall
+  24.75 256.75
+  24.75 256.75 30.0 251.75 33.5 251.0
+  37.0 250.25 37.75 250.75 40.25 249.0
+  42.75 247.25 44.0 243.0 44.0 243.0
+  smooth off
+endline
+
+point 110.1896 56.80800000000001 station -name 8@LS30
+
+point 102.12960000000001 95.748 station -name 7@LS30
+
+point 92.56960000000001 116.058 station -name 6@LS30
+
+point 88.9196 139.138 station -name 5@LS30
+
+point 80.6696 171.21800000000002 station -name 4@LS30
+
+point 80.6696 199.058 station -name 3@LS30
+
+point 71.4796 214.608 station -name 2@LS30
+
+point 39.369600000000005 255.90800000000002 station -name 0double@LS30
+
+endscrap
+
+

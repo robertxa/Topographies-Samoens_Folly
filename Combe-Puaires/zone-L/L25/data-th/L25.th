@@ -1,0 +1,40 @@
+encoding utf-8
+
+survey L25 -title "L25" -entrance "L25"
+       
+centerline
+ cs lat-long
+ fix  L25       46.115050     006.80878      2373
+   date 1981.08.23
+   calibrate counter 0 1.000
+  team "Jean-Bernard/de Chabelier"
+  team "Bernard Lips"
+  explo-date 1981.08.23
+  explo-team "Jean-Bernard/de Chabelier"
+  explo-team "Bernard Lips"
+  explo-team "Christophe Ohl"
+   units lenght meters
+   units compass grad
+   units clino grad
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino #left right up down
+	extend right
+   0 0double 0 0    0       100     
+   0double 1 10416 10732    0       100
+   1 2 10916 11284    320       80
+   2 3 11284 12003    355       55
+   3 4 12744 13670    0       100
+   4 5 13670 13840    150       25
+   5 6 13840 14804    0       100
+   6 7 14804 15446    100       10
+   7 8 15446 16661    80       81
+   #8 9 0 7    0       100
+   8 9 00000 04500    0       100	# Longueur révisée car ne correspond pas à la la topo initiale
+   9 10 20653 20933    50       0
+   10 11 20933 21048    30       0
+   11 12 21048 21411    0       49
+   12 13 21411 21905    375       55
+   13 14 21905 22281    129       20
+   14 L25 22281 22966    10       70
+ endcenterline
+ endsurvey

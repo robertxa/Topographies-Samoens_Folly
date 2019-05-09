@@ -1,0 +1,168 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -132.0 -130.75 172.75 233.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {23.3638 1 1.0} {79.0134 LS30} ../LS30-map.xvi 0 {}
+
+
+
+scrap LS30-1 -projection plan -author 2009 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
+
+line pit
+  25.0 41.0
+  25.0 41.0 21.25 44.0 18.0 41.75
+  14.75 39.5 12.0 38.25 12.0 38.25
+  smooth off
+endline
+
+line pit
+  26.5 26.0
+  26.5 26.0 27.5 29.5 23.0 32.0
+  18.5 34.5 12.75 33.0 12.75 33.0
+  smooth off
+endline
+
+line pit -close on
+  4.5 73.75
+  4.5 73.75 -2.0 70.75 -1.75 69.0
+  -1.5 67.25 -1.0 63.5 2.5 66.5
+  6.0 69.5 8.5 69.0 8.0 71.0
+  7.5 73.0 4.5 73.75 4.5 73.75
+  smooth off
+endline
+
+point 24.75 76.25 pebbles
+
+point 18.25 63.5 pebbles
+
+point 20.0 67.5 pebbles
+
+point 24.0 71.0 pebbles
+
+point 21.0 75.0 pebbles
+
+line pit -close on -reverse on
+  17.0 60.75
+  20.5 62.75 22.5 64.25 22.5 61.75
+  22.5 59.25 21.75 53.25 21.0 51.5
+  20.25 49.75 16.5 51.5 16.5 53.0
+  16.5 54.5 16.0 55.5 16.0 57.5
+  16.0 59.5 13.5 58.75 17.0 60.75
+endline
+
+line pit
+  19.0 19.25
+  19.0 19.25 13.25 18.5 13.5 25.5
+  smooth off
+endline
+
+line wall
+  38.25 88.75
+  38.25 88.75 22.75 85.25 19.25 82.0
+  15.75 78.75 -1.25 72.25 -1.75 69.0
+  -2.25 65.75 -0.5 64.0 2.5 66.5
+  5.5 69.0 22.75 81.0 17.25 70.5
+  15.38 66.93 17.25 62.75 16.0 57.5
+  14.75 52.25 15.0 52.5 15.0 47.0
+  15.0 41.5 14.5 41.0 15.5 37.5
+  16.5 34.0 17.75 33.5 16.0 29.25
+  14.25 25.0 14.0 20.75 12.5 22.75
+  11.0 24.75 8.5 31.0 8.75 26.25
+  9.0 21.5 13.98 20.28 13.25 17.0
+  12.25 12.5 17.5 11.75 18.25 11.0
+  19.0 10.25 20.0 8.75 20.0 8.75
+  smooth off
+endline
+
+line wall
+  40.5 67.0
+  40.5 67.0 28.25 70.0 28.25 73.5
+  28.25 77.0 25.0 75.25 28.5 78.0
+  32.0 80.75 39.25 84.75 39.25 84.75
+  smooth off
+endline
+
+point 34.5 27.75 rope
+
+point 31.75 41.75 rope
+
+point 29.75 55.75 rope
+
+point 43.5 8.75 label -text "-51 m"
+
+point 19.25 82.0 altitude -align top-left
+
+point 18.25 11.0 altitude -align bottom-left
+
+point 11.25 104.25 label -text "<bf>LS30" -scale xl
+
+point 22.5 -1.25 continuation
+
+point 15.75 92.0 entrance -orientation 157.9
+
+point 32.25 16.0 label -text "Etr."
+
+point -2.75 14.75 label -text "Etr."
+
+point -2.25 24.0 label -text "P10"
+
+point 1.25 39.75 label -text "P26"
+
+point 5.5 57.25 label -text "P12"
+
+point 36.0 -1.5 air-draught -orientation 311.2 -subtype summer
+
+point 25.75 8.5 narrow-end -orientation 301.0
+
+line u:fault -clip off
+  12.5 80.25
+  -15.5 96.0
+endline
+
+line u:fault -clip off
+  42.5 64.0
+  70.0 50.0
+endline
+
+line u:fault -clip off
+  -4.25 65.25
+  -35.25 48.0
+endline
+
+line u:fault -clip off
+  41.0 87.5
+  75.0 104.25
+endline
+
+line wall
+  24.0 15.0
+  24.0 15.0 24.26 16.75 21.25 16.25
+  15.25 15.25 13.5 19.0 15.5 20.0
+  17.5 21.0 23.0 21.0 23.75 24.0
+  24.5 27.0 21.25 28.0 23.5 28.75
+  25.75 29.5 29.75 29.25 28.75 32.5
+  27.75 35.75 21.75 39.5 21.75 43.75
+  21.75 48.0 20.75 52.75 21.75 55.25
+  22.75 57.75 25.25 72.5 26.5 70.75
+  27.75 69.0 40.0 63.5 40.0 63.5
+  smooth off
+endline
+
+point 19.4138 14.7534 station -name 8@LS30
+
+point 13.0238 19.6734 station -name 7@LS30
+
+point 17.5938 28.0634 station -name 6@LS30
+
+point 20.6038 30.1234 station -name 5@LS30
+
+point 18.9038 38.1934 station -name 4@LS30
+
+point 18.4338 47.3834 station -name 2@LS30
+
+point 18.6738 55.9034 station -name 1@LS30
+
+point 23.3638 79.0134 station -name 0double@LS30
+
+endscrap
+
+

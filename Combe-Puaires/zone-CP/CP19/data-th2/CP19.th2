@@ -1,0 +1,345 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 452.0 305.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {293.841 1 1.0} {151.313 CP19} ../CP19-map.xvi 0 {}
+
+
+
+scrap CP19-1 -projection plan -author 1995 "Daniel Chailloux" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
+
+point 65.75 37.0 label -text "-17 m"
+
+point 220.5 144.5 continuation
+
+point 167.75 110.25 continuation
+
+point 41.5 47.0 continuation
+
+point 51.5 59.25 altitude -align top-left
+
+point 188.75 77.5 altitude -align top-right
+
+point 302.75 137.75 altitude -align right
+
+point 280.75 176.5 label -text "muret"
+
+point 322.75 159.0 label -text "<bf>CP19" -scale xl
+
+point 193.25 65.5 label -text "R3"
+
+point 181.25 51.25 label -text "R3"
+
+point 164.75 47.0 label -text "R3"
+
+point 105.75 99.0 label -text "R2"
+
+point 162.5 80.25 low-end
+
+point 54.5 49.5 breakdown-choke -orientation 48.8
+
+point 51.0 54.25 breakdown-choke -orientation 48.8
+
+point 197.25 74.75 water-flow -orientation 275.2
+
+point 306.25 153.0 entrance -orientation 255.5
+
+point 288.75 158.5 pebbles
+
+point 291.25 151.75 pebbles
+
+point 290.5 154.25 pebbles
+
+point 289.0 156.25 pebbles
+
+line floor-meander
+  228.25 116.0
+  228.25 116.0 199.75 107.5 197.25 106.75
+  194.75 106.0 161.75 92.25 161.75 92.25
+  smooth off
+endline
+
+line floor-meander
+  75.5 63.75
+  59.75 53.5
+endline
+
+point 78.5 73.5 pebbles
+
+point 78.75 67.75 pebbles
+
+point 96.5 77.0 pebbles
+
+point 96.75 72.75 pebbles
+
+point 96.75 69.5 pebbles
+
+point 172.0 63.0 pebbles
+
+point 166.75 63.5 pebbles
+
+point 158.25 63.75 pebbles
+
+point 148.5 66.0 pebbles
+
+point 138.25 70.5 pebbles
+
+point 127.0 74.75 pebbles
+
+point 117.5 77.75 pebbles
+
+point 227.5 110.75 pebbles
+
+point 218.25 107.0 pebbles
+
+point 207.75 103.75 pebbles
+
+point 199.25 101.75 pebbles
+
+point 272.0 137.5 pebbles
+
+point 268.0 143.0 pebbles
+
+line contour
+  249.0 124.5
+  249.0 124.5 251.75 128.25 255.0 128.5
+  258.25 128.75 266.25 126.0 266.25 126.0
+  smooth off
+endline
+
+line gradient
+  134.5 55.0
+  148.5 62.5
+endline
+
+line gradient
+  128.0 55.5
+  123.75 72.0
+endline
+
+line gradient
+  232.25 142.0
+  250.75 138.0
+endline
+
+line contour
+  250.0 145.5
+  250.0 145.5 249.0 140.5 247.0 138.5
+  245.0 136.5 241.0 134.0 241.0 134.0
+  smooth off
+endline
+
+line contour
+  242.75 147.25
+  242.75 147.25 244.0 144.25 242.75 140.25
+  241.5 136.25 238.0 134.0 238.0 134.0
+  smooth off
+endline
+
+line contour -reverse on
+  234.25 136.75
+  234.25 136.75 237.75 136.25 238.0 139.25
+  238.25 142.25 238.5 148.25 238.5 148.25
+  smooth off
+endline
+
+line contour -close on
+  150.75 93.25
+  149.0 93.0 148.5 91.5 150.25 91.5
+  152.0 91.5 155.0 91.5 154.0 92.75
+  153.0 94.0 152.5 93.5 150.75 93.25
+endline
+
+line contour -close on
+  152.25 96.25
+  152.25 96.25 145.75 94.0 146.0 92.5
+  146.25 91.0 146.5 89.5 150.0 90.0
+  153.5 90.5 156.5 91.0 156.5 92.75
+  156.5 94.5 152.25 96.25 152.25 96.25
+  smooth off
+endline
+
+line contour
+  113.75 68.25
+  113.75 68.25 131.0 70.75 133.75 68.5
+  136.5 66.25 155.5 53.25 155.5 53.25
+  smooth off
+endline
+
+line contour
+  116.0 62.5
+  116.0 62.5 127.0 67.0 132.25 64.5
+  137.5 62.0 151.5 51.25 151.5 51.25
+  smooth off
+endline
+
+line contour
+  118.0 58.5
+  118.0 58.5 132.5 60.25 135.25 57.25
+  138.0 54.25 145.75 49.5 145.75 49.5
+  smooth off
+endline
+
+line pit
+  185.25 68.25
+  176.5 71.25
+endline
+
+line pit
+  179.25 57.25
+  179.25 57.25 174.75 61.5 174.5 63.75
+  174.25 66.0 174.25 69.0 174.25 69.0
+  smooth off
+endline
+
+line pit
+  163.0 58.0
+  163.0 58.0 160.0 60.5 160.75 63.25
+  161.5 66.0 163.75 69.0 163.75 69.0
+  smooth off
+endline
+
+line pit
+  109.0 68.5
+  109.0 68.5 113.0 74.75 112.75 78.25
+  112.5 81.75 108.25 88.5 108.25 88.5
+  smooth off
+endline
+
+line wall
+  141.25 81.5
+  141.25 81.5 140.5 87.25 142.25 87.25
+  144.0 87.25 150.0 87.0 150.75 85.5
+  151.5 84.0 154.0 80.25 154.0 78.5
+  154.0 76.75 157.75 72.75 153.5 72.75
+  149.25 72.75 119.25 88.25 111.75 85.5
+  104.25 82.75 101.0 79.25 95.5 79.0
+  90.0 78.75 84.75 78.75 78.0 76.5
+  71.25 74.25 51.5 59.25 51.5 59.25
+  smooth off
+endline
+
+line wall
+  134.75 86.25
+  134.75 86.25 139.25 91.25 139.25 88.75
+  139.25 86.25 138.25 82.5 138.25 82.5
+  smooth off
+endline
+
+line wall
+  160.0 105.75
+  160.0 105.75 157.5 102.5 153.5 100.75
+  149.5 99.0 133.0 90.0 133.0 90.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  302.75 137.75
+  302.75 137.75 299.25 154.0 297.25 157.75
+  295.25 161.5 289.75 165.75 289.75 165.75
+  smooth off
+endline
+
+line wall
+  231.5 138.5
+  231.5 138.5 248.75 136.0 245.0 133.75
+  241.25 131.5 234.5 123.5 232.25 121.25
+  230.0 119.0 204.25 113.75 195.0 110.25
+  185.75 106.75 163.25 97.0 160.75 96.75
+  158.25 96.5 156.25 98.25 157.75 100.0
+  159.25 101.75 161.75 103.0 161.75 103.0
+  smooth off
+endline
+
+line wall
+  289.75 165.75
+  289.75 165.75 293.25 158.5 291.5 158.5
+  289.75 158.5 289.0 162.75 286.5 162.0
+  284.0 161.25 275.75 153.25 275.75 153.25
+  smooth off
+  275.75 153.25 267.25 145.25 264.75 144.0
+  262.25 142.75 258.0 137.75 257.5 139.0
+  257.0 140.25 259.25 141.75 258.5 144.0
+  257.75 146.25 254.0 143.5 249.5 143.5
+  245.0 143.5 235.25 145.5 235.25 145.5
+  smooth off
+endline
+
+line wall
+  188.75 77.5
+  188.75 77.5 175.75 80.25 175.75 78.25
+  175.75 76.25 178.75 71.25 178.5 69.5
+  178.25 67.75 178.75 66.25 175.75 66.25
+  172.75 66.25 164.75 65.5 163.25 66.75
+  161.75 68.0 159.5 73.0 159.5 74.75
+  159.5 76.5 155.5 83.0 157.25 84.5
+  159.0 86.0 190.75 98.5 195.5 99.25
+  200.25 100.0 232.25 109.5 234.5 112.5
+  236.75 115.5 244.25 125.75 246.25 126.0
+  248.25 126.25 262.25 125.75 265.5 128.75
+  268.75 131.75 281.25 136.5 284.25 138.25
+  287.25 140.0 294.0 141.0 296.25 140.25
+  298.5 139.5 302.75 137.75 302.75 137.75
+  smooth off
+endline
+
+line wall
+  57.5 50.25
+  57.5 50.25 58.75 51.5 61.75 51.5
+  64.75 51.5 77.0 61.25 79.5 62.5
+  82.0 63.75 92.75 65.25 96.0 66.0
+  99.25 66.75 107.25 73.5 111.25 73.0
+  115.25 72.5 116.5 72.25 116.5 70.75
+  116.5 69.25 122.75 52.75 128.5 52.75
+  134.25 52.75 147.5 52.5 150.75 53.75
+  154.0 55.0 155.25 56.0 157.5 57.25
+  159.75 58.5 159.75 61.0 162.75 61.0
+  165.75 61.0 175.25 59.5 177.75 60.25
+  180.25 61.0 184.75 69.0 183.5 70.25
+  182.25 71.5 178.75 73.75 181.0 73.75
+  183.25 73.75 187.0 72.5 188.5 72.5
+  smooth off
+endline
+
+point 55.241 56.313 station -name 1.14@CP19
+
+point 77.881 71.653 station -name 1.13@CP19
+
+point 96.631 74.673 station -name 1.12@CP19
+
+point 110.321 80.803 station -name 1.11@CP19
+
+point 188.271 74.823 station -name 3.4@CP19
+
+point 176.921 75.983 station -name 3.3@CP19
+
+point 181.421 69.343 station -name 3.2@CP19
+
+point 177.381 63.763 station -name 3.1@CP19
+
+point 154.101 64.113 station -name 1.10@CP19
+
+point 157.331 71.783 station -name 1.9@CP19
+
+point 156.781 79.443 station -name 1.8@CP19
+
+point 154.781 87.373 station -name 1.7@CP19
+
+point 195.611 104.813 station -name 1.6@CP19
+
+point 231.741 115.263 station -name 1.5@CP19
+
+point 244.971 129.033 station -name 1.4@CP19
+
+point 236.121 140.693 station -name 2.1@CP19
+
+point 258.521 133.473 station -name 1.3@CP19
+
+point 267.301 139.423 station -name 1.2@CP19
+
+point 281.691 145.873 station -name 1.1@CP19
+
+point 293.841 151.313 station -name CP19double@CP19
+
+endscrap
+
+

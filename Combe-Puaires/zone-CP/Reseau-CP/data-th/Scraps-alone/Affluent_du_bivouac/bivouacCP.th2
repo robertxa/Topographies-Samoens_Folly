@@ -1,0 +1,33 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 482.3309 364.2206
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {314.964 1 1.0} {78.745 0double} Lavoir-map.xvi 0 {}
+
+
+
+scrap scrap1 -projection plan -author 2013 "Xavier Robert" -scale [-128.0 -128.0 482.3309 -128.0 0.0 0.0 15.502404859999997 0.0 m]
+
+line wall
+  106.75 184.0
+  106.75 184.0 94.25 192.75 87.25 197.75
+  80.25 202.75 78.0 210.25 70.75 211.0
+  63.5 211.75 47.75 216.25 47.75 216.25
+  smooth off
+endline
+
+line wall
+  48.75 195.25
+  48.75 195.25 61.25 203.5 66.5 201.5
+  71.75 199.5 80.25 201.75 84.0 193.0
+  87.75 184.25 96.75 177.0 99.25 173.0
+endline
+
+point 84.00399999999999 197.845 station -name 19@Lavoir
+
+point 67.88399999999999 205.355 station -name 20@Lavoir
+
+point 49.14399999999998 203.71499999999997 station -name 21@Lavoir
+
+endscrap
+
+

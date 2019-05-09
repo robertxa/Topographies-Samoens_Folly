@@ -1,0 +1,35 @@
+encoding utf-8
+
+survey Billy1 -title "Billy1"
+  
+centerline -title "Billy Xa-2015-0_Xa-2015-0bis Xa-2015-8_Xa-2015-9"
+
+	date 2015.10.31
+		team "Xavier Robert"
+		team "Jonathan Mercier"
+		team "Jérémie Boucheteil"
+		team "Damien Gruel"
+		team "Frédéric Astolfi"
+
+	units lenght meters
+	units compass grads
+	units clino grads
+
+	data normal from to length compass clino left right up down
+	extend left
+	Xa-2015-0	Xa-2015-0bis	0	0	0	0.5	0.5	0.3	0.3	#Jction méandre principal côté amont
+	extend right
+	Xa-2015-0	Xa-2015-1	4.13	278	-39	1	1	4	0	
+	extend left
+	Xa-2015-0	Xa-2015-2	3.66	99	-19	1.2	3	1	1.5	
+	Xa-2015-2	Xa-2015-3	5.4	161	-64	1	1	3	1.5	
+	Xa-2015-3	Xa-2015-4	8.49	219	-14	0.7	1.3	1	1	
+	Xa-2015-4	Xa-2015-5	4.14	283	-12	1	1	0.5	1	
+	Xa-2015-5	Xa-2015-6	12.36	257	-16	0.5	0.7	0.5	0.5	
+	Xa-2015-6	Xa-2015-7	4.07	262	-22	0	0.5	0.5	0.5	
+	Xa-2015-7	Xa-2015-8	4.59	305	-8	2	1	1.5	0.5	
+	Xa-2015-8	Xa-2015-9	1.8	252	-45	1.5	2.5	2	1.5	#Jction méandre principal côté aval
+# dev = 47 m
+endcenterline
+ 
+endsurvey

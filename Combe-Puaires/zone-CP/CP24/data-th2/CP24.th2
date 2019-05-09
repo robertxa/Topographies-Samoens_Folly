@@ -1,0 +1,248 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -136.0 255.303 369.6836
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {48.5628 1 1.0} {123.5726 CP24} CP24-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {89.354 1 1.0} {174.47820000000002 0} CP24-map2018.xvi 0 {}
+
+
+
+scrap CP24-1 -projection plan -author 1993 "Bernard Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
+
+point 21.25 60.0 air-draught -orientation 126.6 -subtype summer
+
+point 33.25 54.75 narrow-end -orientation 118.0
+
+point 91.0 41.25 water-flow -orientation 236.8
+
+point 55.5 40.0 dig
+
+point 61.0 45.75 dig
+
+point 64.0 67.75 dig
+
+point 90.5 109.0 label -text "<bf>CP24" -scale xl
+
+point 43.25 144.75 label -text "<bf>CP24a" -scale xl
+
+point 103.25 41.5 label -text "Etr."
+
+point 31.25 33.0 label -text "Etr."
+
+point 78.25 88.75 label -text "P7"
+
+point 41.75 96.5 label -text "P4"
+
+point 39.0 83.0 label -text "P14"
+
+point 39.5 121.75 altitude -align left
+
+point 46.25 132.75 entrance -orientation 168.2
+
+point 37.25 49.5 altitude -align bottom-left
+
+point 88.5 26.75 narrow-end -orientation 325.1
+
+point 9.75 68.5 continuation
+
+line wall -close on -outline in
+  47.5 50.75
+  47.5 50.75 52.75 52.0 51.75 50.0
+  50.75 48.0 49.75 48.0 48.0 48.0
+  46.25 48.0 47.5 50.75 47.5 50.75
+  smooth off
+endline
+
+line pit
+  66.75 96.0
+  66.75 96.0 63.25 91.25 57.75 91.5
+  52.25 91.75 50.0 93.0 50.0 93.0
+  smooth off
+endline
+
+line pit
+  67.5 80.25
+  67.5 80.25 58.5 76.75 55.0 79.25
+  51.5 81.75 48.5 83.5 48.5 83.5
+  smooth off
+endline
+
+line pit
+  70.0 88.25
+  70.0 88.25 62.5 83.0 58.75 84.5
+  55.0 86.0 51.25 89.0 51.25 89.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  60.25 126.75
+  60.25 126.75 50.0 129.0 44.75 127.25
+  39.5 125.5 39.5 121.75 39.5 121.75
+  smooth off
+endline
+
+point 70.75 99.5 entrance -orientation 234.4
+
+line overhang -close on
+  61.25 94.0
+  61.25 94.0 57.25 96.5 57.25 94.0
+  57.25 91.5 57.25 87.5 59.5 88.0
+  61.75 88.5 63.75 89.75 63.0 90.5
+  62.25 91.25 61.25 94.0 61.25 94.0
+  smooth off
+endline
+
+line wall
+  87.0 33.0
+  87.0 33.0 83.75 37.75 82.5 38.75
+  81.25 39.75 65.25 49.75 68.0 54.75
+  69.09 56.72 70.0 59.0 68.5 60.75
+  67.0 62.5 64.75 62.25 63.0 62.75
+  61.25 63.25 59.5 65.0 58.0 66.75
+  56.5 68.5 54.75 73.25 56.25 74.0
+  57.75 74.75 68.75 83.75 65.5 86.5
+  62.25 89.25 52.0 123.0 53.5 124.5
+  55.0 126.0 60.25 126.75 60.25 126.75
+  smooth off
+endline
+
+point 62.0 87.5 snow
+
+point 56.25 88.5 snow
+
+line wall
+  37.25 49.5
+  37.25 49.5 42.0 49.0 45.0 46.5
+  47.31 44.57 50.5 43.25 52.5 45.25
+  54.5 47.25 54.5 47.5 55.0 49.0
+  55.5 50.5 56.75 55.25 60.75 52.5
+  63.15 50.85 61.34 49.96 65.5 49.5
+  70.0 49.0 77.25 39.5 79.0 37.0
+  80.75 34.5 82.5 31.5 82.5 31.5
+  smooth off
+endline
+
+line wall
+  39.5 121.75
+  39.5 121.75 44.75 126.75 44.75 122.0
+  44.75 117.25 57.0 89.75 54.75 86.5
+  52.5 83.25 50.25 82.25 50.25 77.0
+  50.25 71.75 50.0 73.0 51.75 71.75
+  53.5 70.5 54.25 67.25 57.0 65.0
+  59.75 62.75 60.25 62.5 59.25 60.5
+  smooth off
+endline
+
+line wall
+  58.25 58.75
+  57.25 56.75 60.25 58.5 59.0 56.5
+  57.75 54.5 55.75 52.75 52.0 52.5
+  48.25 52.25 45.75 51.75 43.75 51.25
+  41.75 50.75 39.25 52.0 38.0 52.5
+  smooth off
+endline
+
+point 39.3057 50.9275 station -name 0@CP24
+
+point 46.5857 47.4775 station -name 1.1@CP24
+
+point 51.7957 47.0575 station -name 1.2@CP24
+
+point 84.0657 34.0275 station -name 1.4@CP24
+
+point 64.9357 56.5475 station -name 1.3@CP24
+
+point 63.0157 59.6975 station -name 2.1@CP24
+
+point 52.5157 74.2175 station -name 2.3@CP24
+
+point 56.3457 80.4275 station -name 2.4@CP24
+
+point 60.1057 86.5375 station -name 2.5@CP24
+
+point 48.2157 123.4475 station -name CP24a@CP24
+
+endscrap
+
+
+
+scrap CP24b-SP1 -projection plan -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
+
+line overhang -close on
+  74.25 29.75
+  74.0 36.25 70.5 35.75 68.5 33.5
+  66.5 31.25 64.25 29.0 64.25 26.0
+  64.25 23.0 66.0 18.25 68.0 18.5
+  70.0 18.75 71.16 18.73 72.75 23.5
+  73.75 26.5 74.33 27.72 74.25 29.75
+endline
+
+line wall -close on -reverse on -outline in
+  66.0 27.5
+  66.0 27.5 67.75 24.25 69.25 24.25
+  70.75 24.25 74.25 26.0 71.5 26.5
+  68.75 27.0 66.0 27.5 66.0 27.5
+  smooth off
+endline
+
+point 71.75 63.25 height -value [-7 m]
+
+point 81.0 43.5 height -value [-10 m]
+
+line wall
+  46.75 73.25
+  46.75 73.25 37.54 67.46 50.0 65.5
+  53.69 64.92 53.5 66.0 55.25 62.25
+  57.0 58.5 63.0 48.5 64.5 45.0
+  66.0 41.5 66.25 40.25 65.5 37.0
+  64.75 33.75 61.42 20.29 68.0 18.5
+  73.5 17.0 74.25 29.75 74.25 29.75
+  smooth off
+endline
+
+point 72.75 23.5 altitude -align bottom-right
+
+point 54.25 22.75 air-draught -orientation 193.6 -subtype summer
+
+point 66.0 1.0 label -text "<bf>CP24b" -scale xl
+
+point 67.5 13.25 entrance -orientation 10.8
+
+line pit
+  47.5 73.75
+  47.5 73.75 49.5 74.0 50.0 72.5
+  50.5 71.0 55.5 70.5 56.25 74.0
+  smooth off
+endline
+
+line pit
+  50.25 63.5
+  64.25 66.5 60.75 63.75 64.75 70.0
+  smooth off
+endline
+
+line pit
+  62.75 38.5
+  62.75 38.5 69.75 32.75 74.25 38.0
+  smooth off
+endline
+
+line wall
+  74.25 29.75
+  74.25 29.75 74.25 33.5 73.0 38.0
+  71.75 42.5 71.5 44.75 69.0 49.0
+  66.5 53.25 57.76 65.03 58.75 68.0
+  60.75 74.0 56.25 74.0 56.25 74.0
+  smooth off
+endline
+
+point 52.4228 74.3233 station -name 2018-JRa1@CP24
+
+point 69.8628 39.1633 station -name 2018-JRa2@CP24
+
+point 70.1028 29.4033 station -name 2018-JRa3@CP24
+
+point 68.4528 22.5133 station -name CP24b@CP24
+
+endscrap
+
+

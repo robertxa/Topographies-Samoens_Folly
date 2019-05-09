@@ -1,0 +1,34 @@
+ encoding utf-8
+ 
+ survey Erreur -title "Boyau de l'erreur"
+  
+  centerline
+  #explo-date 2015.05.30   
+
+  date 2015.08.29
+  team "Stéphane Emmer"
+  team "Xavier Robert"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+
+	data normal from to length compass clino left right up down
+	extend right
+	Xa-2015e-0	Xa-2015e-0bis	0	0	0	3	2	3.5	0.5	# bloc
+	Xa-2015e-0	Xa-2015e-1	8.33	154	-7	1.5	1	0.3	0.6	# fond colmatage galerie de l'Erreur
+	Xa-2015e-0	Xa-2015e-2	4.35	103	57	0.4	0.4	0.4	1	# noeud
+	Xa-2015e-2	Xa-2015e-3	3.58	132	30	2	0.5	0.4	0.6	
+	Xa-2015e-3	Xa-2015e-4	1.33	64	18	1	0.4	0.5	1.2	# bequet
+	Xa-2015e-4	Xa-2015e-5	3.97	182	46	0.8	0	0.6	0.3	
+	Xa-2015e-5	Xa-2015e-6	3.1	82	20	0.6	0	0.3	0.3	# AN
+	Xa-2015e-6	Xa-2015e-7	2.01	48	14	0	0.4	1	0.3	
+	Xa-2015e-7	Xa-2015e-8	6.18	55	-5	1	0	0.4	0.6	# arrivée d'eau impénétrable
+	Xa-2015e-8	Xa-2015e-9	1.45	332	-20	0.1	0.6	0.2	2.5	# Spit P2
+	Xa-2015e-9	Xa-2015e-10	2.63	10	-33	2	3	3	1.5	# Galerie du P15, base du ressaut	
+
+# dev = 37 m
+ endcenterline
+ 
+ endsurvey

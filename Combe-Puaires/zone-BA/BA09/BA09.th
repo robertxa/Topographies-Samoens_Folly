@@ -1,0 +1,29 @@
+encoding utf-8
+
+survey BA09 -title "BA09" -entrance "BA09"
+ 
+ centerline -title "BA09 BA09_Xa2014-0b Xa2014-7_Xa2014-8"
+ cs lat-long 
+ fix BA09 46.10563  6.77403  1553   # Err = 3 m
+
+   date 2014.08.10
+  team "Xavier Robert"
+  team "Guillaume Cerdan"
+  explo-date 2014.08.10
+    explo-team "Xavier Robert"
+    explo-team "Guillaume Cerdan"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+extend left
+
+BA09   Xa2014-0b   0.00    0.00    0.00   2   2   0.25   0.25	# Entrée
+BA09   Xa2014-1   6.7   327.00   -56.00   1.50   1.50   1   10.0 # Bloc
+Xa2014-1   Xa2014-2   1   327   -56   1.50   1.50   0.20   0.20 # Blocs, c.a. soufflant le 10/08/2014
+
+
+
+ endcenterline
+ endsurvey

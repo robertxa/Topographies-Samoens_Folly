@@ -1,0 +1,103 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -148.0 -147.25 186.25 296.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {24.4918 1 1.0} {22.0764 C51} C51-map.xvi 0 {}
+
+
+
+scrap C51-1 -projection plan -author 2009 "Gaëtan Poschmann" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+
+point 26.0 -18.0 label -text "sortie dans éboulis"
+
+point 26.0 115.75 pebbles
+
+point 29.75 128.0 pebbles
+
+point 25.25 137.75 pebbles
+
+point 27.25 4.5 pebbles
+
+point 25.25 13.0 pebbles
+
+point 26.5 44.75 pebbles
+
+point 22.5 39.0 pebbles
+
+point 15.0 26.5 pebbles
+
+point 26.75 30.75 pebbles
+
+point 20.5 27.75 pebbles
+
+point 37.75 45.0 dig
+
+point 23.75 150.5 dig
+
+point 35.0 157.75 continuation -attr Code D -text "Désobstruction à continuer, courant d'air"
+
+point 51.25 23.0 altitude
+
+point 6.75 143.75 altitude
+
+point 57.0 166.75 air-draught -orientation 222.0 -subtype summer
+
+point 43.75 154.5 narrow-end -orientation 226.2
+
+point 43.25 138.75 label -text "imp."
+
+point -18.75 28.75 label -text "<bf>C51" -scale xl
+
+point 0.25 27.5 entrance -orientation 95.3
+
+point 26.5 -3.75 entrance -orientation 0.0
+
+line overhang -close on
+  29.25 29.0
+  29.25 29.0 28.25 33.25 24.5 33.75
+  20.27 34.31 20.25 36.5 16.75 33.5
+  13.25 30.5 8.0 23.25 13.0 23.0
+  19.79 22.66 34.0 20.0 32.75 22.5
+  31.5 25.0 29.25 29.0 29.25 29.0
+  smooth off
+endline
+
+line wall
+  36.0 148.25
+  36.0 148.25 32.75 144.0 27.5 144.5
+  22.25 145.0 20.5 145.0 20.5 140.75
+  20.5 136.5 21.75 134.0 22.5 124.75
+  23.25 115.5 22.75 86.5 21.0 72.5
+  19.25 58.5 21.25 42.25 20.25 39.0
+  19.25 35.75 21.0 35.0 16.75 33.5
+  12.5 32.0 8.25 24.75 13.0 23.0
+  17.75 21.25 21.25 23.75 21.25 19.0
+  21.25 14.25 23.25 4.5 21.75 4.25
+  20.25 4.0 17.25 5.0 17.25 5.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  17.25 5.0
+  17.25 5.0 19.25 2.25 26.75 1.25
+  34.25 0.25 34.75 0.0 37.0 2.75
+endline
+
+line wall
+  37.0 2.75
+  37.0 2.75 33.25 0.5 33.0 4.5
+  32.75 8.5 29.5 18.0 29.25 19.5
+  29.0 21.0 33.25 18.25 32.75 22.5
+  32.25 26.75 31.0 24.25 29.25 29.0
+  27.5 33.75 32.0 88.75 32.0 94.0
+  32.0 99.25 32.25 138.75 33.25 140.25
+  34.25 141.75 38.5 146.25 38.5 146.25
+  smooth off
+endline
+
+point 29.4718 140.0764 station -name 2@C51
+
+point 24.4918 22.0764 station -name 1@C51
+
+endscrap
+
+

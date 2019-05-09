@@ -1,0 +1,75 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -92.5 -128.0 278.5 190.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7373 1 1.0} {43.3074 CH23} CH23-coupe.xvi 0 {}
+
+
+
+scrap CH23-coupe-1 -projection extended -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+
+line border
+  118.0 37.75
+  119.0 45.0
+endline
+
+point 105.75 29.75 label -text "murets"
+
+point 60.5 35.5 altitude
+
+point 146.0 44.75 label -text "Imp."
+
+point 149.25 61.25 continuation
+
+point 137.75 55.0 narrow-end -orientation 247.2
+
+point 36.75 53.0 label -text "CH23" -scale xl
+
+point 64.25 45.0 entrance -orientation 99.9
+
+point 104.5 45.25 camp
+
+line border
+  95.0 43.25
+  95.0 37.5
+endline
+
+line wall -subtype pebbles
+  117.25 40.25
+  131.5 50.25
+endline
+
+line wall -subtype invisible
+  75.75 56.75
+  75.75 56.75 72.0 43.75 72.0 41.0
+  72.0 38.25 73.25 33.75 73.25 33.75
+  smooth off
+endline
+
+line wall
+  131.75 54.5
+  131.75 54.5 119.0 46.75 116.75 46.75
+  114.5 46.75 111.25 49.25 109.75 50.25
+  108.25 51.25 103.25 51.25 100.5 51.25
+  97.75 51.25 93.75 53.0 92.5 53.25
+  91.25 53.5 76.25 51.0 76.25 51.0
+  smooth off
+  75.75 56.75
+endline
+
+line wall
+  73.25 33.75
+  73.25 33.75 73.75 38.5 76.5 39.5
+  79.25 40.5 89.0 39.75 91.5 40.0
+  94.0 40.25 117.25 40.25 117.25 40.25
+  smooth off
+endline
+
+point 78.7373 43.3074 station -name CH23double@CH23
+
+point 116.5273 43.967400000000005 station -name 1@CH23
+
+point 131.5573 52.647400000000005 station -name 2@CH23
+
+endscrap
+
+

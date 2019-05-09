@@ -1,0 +1,147 @@
+encoding utf-8
+
+survey CP62 -title "CP62" -entrance "CP62" -entrance "CP63"
+  
+centerline -title "La Piscine CP62_0 17_18"
+ cs lat-long
+ fix CP62   46.112070 6.790722 1960.000
+ station CP62 entrance    
+ date 2012.08.18
+    team "Bernard Lips"
+    team "Stéphane Lips"
+  explo-date 2012.08.18
+    explo-team "Xavier Robert"
+    explo-team "Frédéric Gennérat"
+    explo-team "Bernard Lips"
+    explo-team "Stéphane Lips"
+
+   calibrate counter 0 0.500
+   units length meters
+   units compass grad
+   units clino grad
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   CP62 0    0.000000   0.000000   0.000000 100.0000 0.5000000 0.5000000 0.000000 4.000000    
+   0 1    630.0000   1613.000   0.000000 -100.0000 1.000000 2.500000 5.000000 1.200000    
+   extend left
+   1 2    1613.000   2150.000   95.00000 10.00000 0.6000000 0.6000000 1.500000 1.200000    
+   2 3    2150.000   2643.000   42.00000 26.00000 0.6000000 0.6000000 2.000000 1.200000    
+   3 4    2643.000   3243.000   90.00000 42.00000 0.5000000  0.5000000 2.000000 2.000000    
+   extend right
+   2 5    3243.000   4122.000   210.0000 -55.00000 0.6000000 0.6000000 1.000000 0.5000000    
+   5 6    4122.000   5233.000   195.0000 -61.00000 1.500000 1.500000 0.5000000 0.5000000    
+   extend left
+   6 7    5233.000   5958.000   300.0000 -49.00000 0.3000000 0.6000000 0.5000000 0.2000000    
+   7 8    5958.000   7114.000   365.0000 -31.00000 0.6000000 2.000000 0.5000000 4.000000    
+   8 9    7114.000   7650.000   0.000000 -100.0000 1.000000 1.000000 3.000000 1.500000    
+   9 10    7650.000   8693.000   360.0000 -27.00000 0.5000000 0.5000000 0.4000000 0.4000000    
+   10 11    8693.000   10584.00   365.0000 -11.00000 0.6000000 0.6000000 0.4000000 7.000000    
+   11 12    10584.00   11714.00   0.000000 -100.0000 0.8000000 0.8000000 5.000000 2.000000    
+   12 13    11714.00   12322.00   345.0000 -34.00000 0.5000000 1.000000 0.5000000 3.000000    
+   13 14    12322.00   13103.00   0.000000 -100.0000 0.6000000 0.6000000 4.000000 1.500000    
+   14 15    13103.00   13488.00   385.0000 5.000000 0.7000000 0.7000000 2.000000 1.500000    
+   15 16    13488.00   14800.00   390.0000 -60.00000 0.6000000 0.6000000 0.8000000 0.8000000    
+   16 17    14800.00   15951.00   360.0000 -54.0000 00.3000000 1.500000 0.4000000 0.6000000    
+   17 18    15951.00   16635.00   380.0000 -27.00000 0.2000000 0.2000000 0.1000000 0.1000000    
+ endcenterline
+  
+ centerline -title "Le petit méandre 19_20 22_8"
+  date 2012.08.18
+    team "Xavier Robert"
+    team "Stéphane Lips"
+  explo-date 2012.08.18
+    explo-team "Xavier Robert"
+    explo-team "Stéphane Lips"
+
+   units length meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   extend left
+   19 20    4.000000 25.00000 25.00000 0.3000000 0.3000000 0.4000000 0.4000000    
+   extend right
+   19 21    2.730000 243.0000 -49.00000 0.3000000 0.3000000 0.2000000 2.000000    
+   21 22    3.860000 242.0000 -28.00000 1.000000 0.2000000 0.2000000 1.000000    
+   22 8    2.830000 162.0000 16.00000 1.500000 0.3000000 0.3000000 4.000000    
+endcenterline
+  
+centerline -title "CP63 2.0_2.0b 2.43_CP63"
+  cs lat-long
+  fix CP63   46.112429    6.790076  1925
+  station CP63 entrance
+  
+  date 2014.07.16
+    team "Frédéric Alvarez"
+    team "Max Pinard"
+    team "Gaëtan Poschmann"
+  explo-date 2012.09.08
+    explo-team "Philippe Sénécal"
+    explo-team "Stéphane Lips"
+    explo-team "Xavier Robert"
+  explo-date 2012.09.18
+    explo-team "Gaëtan Poschmann"
+    explo-team "Cédric Chambe"
+    explo-team "Frédéric Alvarez"
+  explo-date 2012.09.22
+    explo-team "Xavier Robert"
+    explo-team "Frédéric Gennérat"
+  explo-date 2013.10.29
+    explo-team "Gaëtan Poschmann"
+    explo-team "Cédric Chambe"
+    explo-team "Frédéric Alvarez"
+  explo-date 2014.05.17
+    explo-team "Xavier Robert"
+    explo-team "Virginie Humbert"
+    explo-team "Romain Roure"
+  explo-date 2014.05.24
+    explo-team "Stéphane Lips"
+    explo-team "Xavier Robert"
+    explo-team "Vincent Sordel"
+  explo-date 2014.06.21
+    explo-team "Vincent Sordel"
+    explo-team "Stéphane Lips"
+    explo-team "Frédéric Astolfi"
+    explo-team "Stéphane Kanshine"
+   units length meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down 
+ 
+	extend right 
+2.0  2.0b    0.00    0.00    0.00   0.33   0.43   0.48   0.53 # Début désob du fond;
+2.0b    2.1    5.51  145.00   45.00   1.08   0.98   4.56   1.49
+2.1    2.2    4.74  148.00   25.00   1.82   0.70   4.80   1.40
+extend left
+2.2    2.2'   6.34  140.00   25.00   0.50   0.50   0.40   0.40
+extend right
+2.2  2.3    2.85   90.00   15.00   0.42   0.55   0.63   0.86
+2.3    2.4    6.14  105.00   35.00   0.10   0.53   0.38   1.25
+2.4    2.5    2.93  120.00    0.00   0.10   0.63   0.48   0.42
+2.5    2.6    1.95   45.00    0.00   2.90   1.22   0.60   0.80
+2.6    2.7    2.79   30.00  -10.00   1.68   2.64   0.94   1.23
+2.7    2.8   10.41  110.00  -25.00   0.98   0.70   0.47   0.75
+2.8    2.9    4.28  115.00   -5.00   0.88   0.45   0.42   0.20
+2.9    2.10   4.15  105.00  -25.00   0.32   0.37   0.52   0.51
+2.10    2.11   1.61  130.00   20.00   0.47   0.30   0.33   0.40
+2.11    18     3.29  115.00  -20.00   0.40   0.40   0.00   1.00 # Jonction piscine;
+extend right
+2.20 2.20b   0.00    0.00    0.00   0.30   0.30   0.40   0.20 # Terminus actuel : désob en cours;
+2.20    2.21   2.40  170.00   28.00   0.40   0.53   0.88   0.40
+2.21    2.22   2.20  190.00   25.00   1.61   0.30   1.00   0.36
+2.22    2.0    2.40  165.00   24.00   0.40   0.40   0.50   0.50
+extend right
+2.2  2.30   9.91   90.00   46.00   1.00   1.00   1.00   1.00
+extend left
+2.6  2.40   5.45  305.00   25.00   0.50   0.45   0.90   0.60
+2.40    2.30   2.00  230.00   20.00   1.14   0.72   0.95   0.70
+2.30    2.42   3.65  320.00   32.00   1.00   1.41   0.86   0.58
+2.42    2.43   3.47  215.00   25.00   0.68   0.53   0.26   0.33
+2.43    CP63   3.86  225.00   35.00   0.90   0.35   0.00   0.96 # Entrée inférieure : CP63;
+endcenterline
+  
+endsurvey
+
+# join the scraps 
+ join scrap63-CP62 CP62-2
+ join CP62-c2 CP62-c4
+ 

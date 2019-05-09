@@ -1,0 +1,32 @@
+encoding utf-8
+survey CH28 -title "CH28" -entrance "CH28"
+ 
+centerline -extend right
+   
+	cs lat-long
+	fix CH28	46:06.3092	006:48.6644	2234
+	#fix CH28   46.101166833       6.78841683       2066.000000 
+	# Coordonnées non enregistrées... A faire !
+	date 2015.09.15
+		team "Frédéric Alvarez"
+		team "Gaëtan Poschmann"
+	explo-date 2015.08.30
+		explo-team "Frédéric Alvarez"
+		explo-team "Stéphane Kanshine"
+	explo-date 2015.09.15
+		explo-team "Frédéric Alvarez"
+		explo-team "Gaëtan Poschmann"
+	units lenght meters
+	units compass grad
+	units clino grad
+	data normal from to length compass clino left right up down
+   CH28	0    0	0	0	1.1	1.4	0.3	0.3	# Entrée
+   0	1    3.6	120	-5	0.7	0	0.3	0.1
+   1	2	4.5	84	15	0.6	0.7	0.6	0.5
+   2	3	2.1	73	10	0.6	0.4	0.3	1	# Trémie
+   
+   # Dev = 10 m
+
+endcenterline
+
+endsurvey CH28

@@ -1,0 +1,28 @@
+ encoding iso8859-2
+ survey C52 -title "C52" -entrance "C52"
+  
+ #cs 
+ #fix C52   0.000000       0.000000       0.000000    
+ centerline
+
+#  cs lat-long 
+#  fix C52 
+	explo-date 1998.09.09
+		explo-team "Bernard Lips"
+		explo-team "Christophe Ferry"
+	date 1998.09.09
+		team "Bernard Lips"
+		team "Christophe Ferry"
+   calibrate counter 0 1.000
+   units lenght meters
+   units compass grad
+   units clino grad
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   C52 C52double 0 0    0.000000       100.0000       0.000000       0.000000       0.000000       0.000000    
+   C52 1 72471 73377    350.0000      -43.00000       0.000000       0.000000       0.000000       0.000000    
+   1 2 71869 72471    360.0000      -45.00000       0.000000       0.000000       0.000000       0.000000    
+   2 3 71422 71869    355.0000      -37.00000       0.000000       0.000000       0.000000       0.000000    
+   3 4 71122 71422    355.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+ endcenterline
+ endsurvey

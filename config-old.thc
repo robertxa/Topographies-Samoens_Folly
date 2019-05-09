@@ -1,0 +1,1402 @@
+encoding  utf-8
+
+# Licence
+#
+#Released under a Creative Commons Attribution-ShareAlike-NonCommecial License:
+#<http://creativecommons.org/licenses/by-nc-sa/3.0/>
+#
+# Written by Xavier Robert
+#
+
+# File to set up specific settings for Therion drawing outputs
+# In your *.thconfig file, you need to call this file with:
+#    input <path/to/the/file/>config.thc
+# and then, in each layout, you need to call the corresponding layout:
+#    copy drawingconfig
+
+
+# A FAIRE
+#	- Rajouter un point arbre:pin
+#	- Rajouter un point arbre:feuillu
+#	- ajouter un point oiseau/guacharos
+#	- ajouter ligne tronc
+#	- ajouter point stalactites/mites brisées
+# END A FAIRE
+
+
+
+# Existing user points:
+#	- nid/nest (u:nest)
+#	- gradient -->	geologic dip
+#	- danger (u:danger)
+#	- bats (u:bats)
+#	- stalactite boss (u:boss)
+
+# Existing user lines:
+#	- strata (u:strata; option -clip off)
+#	- coupole (u:coupole; option -clip off)
+#	- fault (u:fault; option -clip off)
+#	- doline (u:doline; option -clip off)
+#	- bats (u:bats)
+
+
+# Existing user areas:
+# 	- boue/mud (u:boue)
+#	- guano (u:guano)
+#	- bats (u:bats)
+
+
+# change the names for the legend
+text en "line u:rope" "rope" #text to appear in legend
+text fr "line u:rope" "corde" #text to appear in legend
+text es "line u:rope" "cuerda" #text to appear in legend
+text en "line u:fault" "fault" #text to appear in legend
+text fr "line u:fault" "faille" #text to appear in legend
+text es "line u:fault" "falla" #text to appear in legend
+text en "line u:strata" "strata" #text to appear in legend
+text fr "line u:strata" "strate" #text to appear in legend
+text es "line u:strata" "strata" #text to appear in legend
+text en "line u:doline" "doline" #text to appear in legend
+text fr "line u:doline" "doline" #text to appear in legend
+text es "line u:doline" "dolina" #text to appear in legend
+text en "point u:bats" "bat(s)"
+text fr "point u:bats" "chauve-souris"
+text es "point u:bats" "murciélago(s)"
+text en "line u:bats" "bat path"
+text fr "line u:bats" "passage de chauve-souris"
+text es "line u:bats" "ruta de murciélagos"
+text en "area u:bats" "lot of bats"
+text fr "area u:bats" "beaucoup de chauve-souris"
+text es "area u:bats" "muchos murciélagos"
+text en "point u:guacharos" "guacharos"
+text fr "point u:guacharos" "guacharos"
+text es "point u:guacharos" "guacharos"
+text fr "point u:danger" "danger !"
+text en "point u:danger" "danger !"
+text es "point u:danger" "danger !"
+
+text en "point u:boss" "stalagmite boss"
+text fr "point u:boss" "stalagmite boss"
+text es "point u:boss" "stalagmite boss"
+text fr "area u:guano" "guano"
+text en "area u:guano" "guano"
+text es "area u:guano" "guano"
+
+text fr "area u:boue" "lac de boue"
+text en "area u:boue" "mud lake"
+text es "area u:boue" "lago de barro"
+
+text en "line u:sentier" "trail"
+text fr "line u:sentier" "sentier"
+text es "line u:sentier" "sendero"
+
+
+# Correction texte espagnol
+text es "point air-draught" "corriente de aire"
+text es "line rock-border" "contorno de bloque"
+#text es "point water-flow" "curso de agua"
+#text es "line water-flow" "curso de agua"
+##text es "group water-flow" "curso de agua"
+text es "point water-flow:permanent" "riachuelo"
+text es "line water-flow:permanent" "riachuelo"
+text es "point water-flow:intermittent" "riachuelo intermitente"
+text es "line water-flow:intermittent" "riachuelo intermitente"
+text es "line water-flow:conjectural" "riachuelo supuesto"
+
+text es "line rock-edge" "arista de bloque"
+text es "point cave-pearl" "perlas de cavernas"
+
+text es "point rimstone-dam" "travertino"
+text es "point rimstone-pool" "travertino"
+text es "point stalactite" "estalactita"
+text es "point stalactites" "estalactitas"
+text es "point stalagmite" "estalagmita"
+text es "point stalagmites" "estalagmitas"
+text es "point pillars" "pilares"
+text es "point pillar" "pilare"
+
+text fr "point traverse" "vire"
+text fr "point ice-stalagmite" "stalagmite de glace"
+
+text fr "point u:anchor_artificial" "Ancrage artificiel"
+text fr "point u:anchor_natural" "Ancrage naturel"
+
+### Layouts Languages
+
+# Different layouts to manage languages (en, fr, es)
+# In your thconfig, call the layout langue-XX where XX is en, fr or es
+# You need to add one of these layout if you use the layout headerl or header_coupe
+# If you want to add one of the field club, syntesys, web page, expedition, guide, 
+#    add the following line in the code tex-map/endcode block of your layout in the thconfig
+#		\newtoks\YYYY \YYYY={the value of your variable}
+#    where YYYY = club, synth, wpage, expe or guide
+#
+# You may add new fields, following the examples in the layouts. 
+# If you add a new field, you need to edit the layout(s) headerl and/or header_coupe
+
+layout langue-fr
+	# Set the language
+	language fr
+	
+	code tex-map
+		% Definition of variables for the tuned headers :
+		\newtoks\thversiontitleB \thversiontitleB={Therion }
+
+		\newtoks\thversiontitleA \thversiontitleA={Compilation }
+		\newtoks\datetitle \datetitle={le }
+		\newtoks\thproj \thproj={Projection }
+		\newtoks\thclub \thclub={Club(s) }
+		\newtoks\thsynth \thsynth={Synthèse }
+		\newtoks\thwpage \thwpage={Page internet }
+		\newtoks\thexpe \thexpe={Expedition }
+		\newtoks\thguide \thguide={Guide(s) }
+		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
+
+		# Initiate variables
+		\newtoks\club \club={}
+		\newtoks\synth \synth={}
+		\newtoks\wpage \wpage={}
+		\newtoks\expe \expe={}
+		\newtoks\guide \guide={}
+	endcode
+endlayout
+
+
+layout langue-es
+	# Set the language
+	language es
+	
+	code tex-map
+		% Definition of variables for the tuned headers :
+		\newtoks\thversiontitleB \thversiontitleB={Therion }
+
+		\newtoks\thversiontitleA \thversiontitleA={Compilación}
+		\newtoks\datetitle \datetitle={el }
+		\newtoks\thproj \thproj={Proyección}
+		\newtoks\thclub \thclub={Club(es)}
+		\newtoks\thsynth \thsynth={Síntesis}
+		\newtoks\thwpage \thwpage={Página web}
+		\newtoks\thexpe \thexpe={Expedición}
+		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
+		\newtoks\thguide \thguide={Guia(s)}
+		\cartotitle={Dibujo}
+
+		# Initiate variables		
+		\newtoks\club \club={}
+		\newtoks\synth \synth={}
+		\newtoks\wpage \wpage={}
+		\newtoks\expe \expe={}
+		\newtoks\guide \guide={}
+	endcode	
+	
+endlayout
+
+
+layout langue-en
+	# Set the language
+	language en
+	
+	code tex-map
+		% Definition of variables for the tuned headers :
+		\newtoks\thversiontitleB \thversiontitleB={Therion }
+		
+		\newtoks\thversiontitleA \thversiontitleA={Compiled}
+		\newtoks\datetitle \datetitle={on }
+		\newtoks\thproj \thproj={Projection}
+		\newtoks\thclub \thclub={Club(s)}
+		\newtoks\thsynth \thsynth={Synthesys}
+		\newtoks\thwpage \thwpage={Web page}
+		\newtoks\thexpe \thexpe={Expedition}
+		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
+		\newtoks\thguide \thguide={Guide(s)}
+
+		# Initiate variables
+		\newtoks\club \club={}
+		\newtoks\synth \synth={}
+		\newtoks\wpage \wpage={}
+		\newtoks\expe \expe={}
+		\newtoks\guide \guide={}
+	endcode	
+	
+endlayout
+
+### End of the layout languages
+#______________________________
+
+layout drawingconfig
+# Layout to draw the map and extended view.
+
+	# Set the language; see the layouts langue-XX with XX = fr, es or en.
+	
+	# Auteur
+	doc-author "Xavier Robert"
+	# Set the symology you want to use: UIS, ASF (Australie) CCNP (Etats Units) ou
+	# SKB (tchecoslovakia)
+	#symbol-set UIS
+	# Change the type or colors of symbols:
+	symbol-assign point station:temporary SKBB
+	symbol-assign point pillar AUT
+	
+	symbol-color point water-flow [17 46 100]
+	symbol-color point water [17 46 100]
+	symbol-color line water-flow [17 46 100]
+	symbol-color point ice [0 0 100]
+	symbol-color line wall:ice [0 0 100]
+	symbol-color point ice-pillar [0 0 100]
+	symbol-color point ice-stalagmite [0 0 100]
+	symbol-color area ice [0 0 100]
+	symbol-color point snow [0 0 100]
+	symbol-color point spring [17 46 100]
+	symbol-color point root [52 33 6]
+	symbol-color point vegetable-debris [13 47 6]
+	symbol-color point altitude [100 50 0]
+	symbol-color point station [54 7 60]
+	symbol-color line flowstone [100 60 20]
+
+	#symbol-color area guano [0 100 0]
+
+
+####### Metapost-changes ############
+
+code metapost
+
+	# Change the dashed line for the line wall:presumed
+	def l_wall_presumed (expr P) = 
+		T:=identity;
+		pickup PenA;
+		# Old definition
+		#thdraw P dashed evenly scaled (2*optical_zoom);
+		# New definition
+		thdraw P dashed evenly scaled (.1u);
+	enddef;
+
+	def l_chimney (expr P) = 
+		T:=identity;
+		pickup PenC;
+		%thdraw P dashed evenly scaled optical_zoom;
+		thdraw P dashed evenly scaled (.05u);
+	enddef;
+
+	# to change blocs size
+	def a_blocks (expr p) =
+		T:=identity;
+		pickup PenC;
+		path q, qq; q = bbox p;
+		picture tmp_pic;
+		uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart     llcorner q)/100);
+		tmp_pic := image(
+		for i = xpart llcorner q step 1.0uu until xpart urcorner q:
+			for j = ypart llcorner q step 1.0uu until ypart urcorner q:
+				qq := punked (((-.3uu,-.3uu)--(.3uu,-.3uu)--(.3uu,.3uu)--(-.3uu,.3uu)--cycle)
+				randomized (uu/2))
+					rotated uniformdeviate(360)
+					shifted ((i,j) randomized 1.0uu);
+				if xpart (p intersectiontimes qq) < 0:
+					thclean qq;
+					thdraw qq;
+				fi;
+			endfor;
+		endfor;
+		);
+		clip tmp_pic to p;
+		draw tmp_pic;
+	enddef;
+
+ 	#  To change sand aspects
+ 	def a_sands (expr p) =
+		T:=identity;
+		pickup PenC;
+		path q; q = bbox p;
+		picture tmp_pic;
+		tmp_pic := image(
+		for i = xpart llcorner q step 0.1u until xpart urcorner q:
+			for j = ypart llcorner q step 0.1u until ypart urcorner q:
+				draw origin shifted ((i,j) randomized 0.1u) withpen PenC;
+			endfor;
+		endfor;
+		);
+		#clip tmp_pic to p;
+		draw tmp_pic;
+	enddef;
+
+ 	# To change pebbles aspects
+ 	def a_pebbles_SKBB (expr p) =
+		T:=identity;
+		pickup PenC;
+		path q, qq; q = bbox p;
+		picture tmp_pic;
+		tmp_pic := image(
+		for i = xpart llcorner q step .1u until xpart urcorner q:
+			for j = ypart llcorner q step .5u until ypart urcorner q:
+				qq := (superellipse((.07u,0),(0,.03u), (-.07u,0),(0,.-.03u),.75))
+				%randomized (u/25)
+				rotated uniformdeviate(360)
+				shifted ((i,j) randomized 0.27u);
+				if xpart (p intersectiontimes qq) < 0:
+					thdraw qq;
+				fi;
+			endfor;
+		endfor;
+		);
+		clip tmp_pic to p;
+		draw tmp_pic;
+	enddef;
+
+	 # To change slopes aspects
+	def l_slope (expr P,S)(text Q) = 
+		%show Q;
+		T:=identity;
+		numeric dirs[];
+		numeric lengths[];
+		for i=Q:
+			dirs[redpart i]:=greenpart i;
+			lengths[redpart i]:=bluepart i;
+		endfor;  
+		li:=length(P); % last
+		alw_perpendicular:=true;
+		for i=0 upto li:
+			if unknown dirs[i]: dirs[i]:=-1; 
+			else: 
+				if dirs[i]>-1:
+					dirs[i]:=((90-dirs[i]) - angle(thdir(P,i))) mod 360;
+					alw_perpendicular:=false;
+				fi;
+			fi;
+			if unknown lengths[i]: lengths[i]:=-1; fi;
+		endfor;
+		%for i=0 upto li: show dirs[i]; endfor;
+		ni:=0; % next
+		pi:=0; % previous
+		for i=0 upto li:
+			d:=dirs[i];
+			if d=-1:
+				if (i=0) or (i=li):
+					dirs[i] := angle(thdir(P,i) rotated 90) mod 360;
+					pi:=i;
+				else:
+					if ni<=i:
+						for j=i upto li:
+							ni:=j;
+							exitif dirs[j]>-1;
+						endfor;
+					fi;
+					w:=arclength(subpath(pi,i) of P) / 
+					arclength(subpath(pi,ni) of P);
+					dirs[i]:=w[dirs[pi],dirs[ni]];
+					%if (dirs[i]-angle(thdir(P,i))) mod 360>180:
+					%dirs[i]:=w[dirs[ni],dirs[pi]];
+					%message("*******");
+					%fi;
+				fi;
+			else:
+				pi:=i;
+			fi;
+		endfor;
+		%for i=0 upto li: show dirs[i]; endfor;
+		ni:=0; % next
+		pi:=0; % previous
+		for i=0 upto li:
+			l:=lengths[i];
+			if l=-1:
+				if (i=0) or (i=li):
+					lengths[i] := 1cm; % should never happen!
+					thwarning("slope width at the end point not specified");
+					pi:=i;
+				else:
+					if ni<=i:
+						for j=i+1 upto li:
+							ni:=j;
+							exitif lengths[j]>-1;
+						endfor;  
+					fi;
+					w:=arclength(subpath(pi,i) of P) /   
+					arclength(subpath(pi,ni) of P);
+					lengths[i]:=w[lengths[pi],lengths[ni]];
+					pi:=i;
+				fi;
+			else:
+				pi:=i;
+			fi;
+		endfor;
+		%for i=0 upto li: show lengths[i]; endfor;
+		T:=identity;
+		boolean par;
+		cas := 0.3u;
+		krok := 0.7u;
+		dlzka := (arclength P);
+		if dlzka>3u: dlzka:=dlzka-0.6u fi;
+		mojkrok:=adjust_step(dlzka,1.4u) / 5;
+		pickup PenD;
+		par := false;
+		forever:
+			t := arctime cas of P;
+			if t mod 1>0:  % not a key point
+				w := (arclength(subpath(floor t,t) of P) / 
+				arclength(subpath(floor t,ceiling t) of P));
+				if alw_perpendicular:
+					a := 90;
+				else:
+					a := w[dirs[floor t],dirs[ceiling t]];
+				fi;
+				l := w[lengths[floor t],lengths[ceiling t]];
+			else:
+				if alw_perpendicular:
+					a := 90;
+				else:
+					a:= dirs[t];
+				fi; 
+				l:=lengths[t];
+			fi;    
+			a := a + angle(thdir(P,t));    
+			thdraw (point t of P) -- 
+			((point t of P) + if par: 0.333 * fi l * unitvector(dir(a)));
+			cas := cas + mojkrok;
+			par := not par;
+			exitif cas > dlzka + .3u + (krok / 3);  % for rounding errors
+		endfor;
+		if S = 1: pickup PenC; draw P fi;
+			%pickup pencircle scaled 3pt;
+			%for i=0 upto li: draw point i of P; endfor;
+	enddef; 
+
+	# To change color of Boue
+	def a_u_boue (expr p) =
+		T:=identity;
+		#thfill p withcolor (0.22, 0.22, 0.95);
+		#126, 51, 0
+		thfill p withcolor (0.49, 0.20, 0.00);
+	enddef;
+
+	# To change color of Sump
+	def a_sump (expr p) =
+		T:=identity;
+		#thfill p withcolor (0.22, 0.22, 0.95);
+		thfill p withcolor (0.06, 0.20, 0.65);
+	enddef;
+
+	# To change color of guano
+	def a_u_guano (expr p) =
+		T:=identity;
+		thfill p withcolor (0.53, 0.26, 0.11);
+	enddef;
+
+	# To change color of Water area
+	def a_water (expr p) =
+		T:=identity;
+		#thfill p withcolor (0.60, 0.8, 1);
+		thfill p withcolor (0.17, 0.46, 1);
+	enddef;
+
+	# Northarrow more funnier !
+	def s_northarrow (expr rot) =
+		begingroup
+			interim defaultscale:=0.7; % scale your north arrow here
+			T:=identity scaled defaultscale rotated -rot;
+			interim linecap:=squared;
+			interim linejoin:=rounded;
+			thfill (-.5cm,-.1cm)--(0,2.5cm)--(.5cm,-.1cm)--cycle;
+			pickup pencircle scaled (0.08cm * defaultscale);
+			thdraw (0,0)--(0,-2.5cm);
+			pickup pencircle scaled (0.16cm * defaultscale);
+			p:=(0.4cm,0.6cm);
+			thdraw ((p--(p yscaled -1)--(p xscaled -1)--(p scaled -1)) shifted (0,-1.0cm));
+			label.rt(thTEX("mg") scaled 1.6, (.6cm,-1.6cm)) transformed T;
+		endgroup;
+	enddef;
+
+
+ 	# Change Scale bar type
+	def s_scalebar (expr l, units, txt) =
+		begingroup
+			interim warningcheck:=0;
+			tmpl:=l / Scale * cm * units / 2;
+			tmpx:=l / Scale * cm * units / 5;
+			tmph:=5bp; % bar height
+		endgroup;
+		pickup PenC;
+		draw (-tmpl,0)--(tmpl,0)--(tmpl,-tmph)--(-tmpl,-tmph)--cycle;
+		p:=(0,0)--(tmpx,0)--(tmpx,-tmph)--(0,-tmph)--cycle;
+		for i:=-2.5 step 2 until 2:
+			fill p shifted (i * tmpx,0);
+		endfor;
+		begingroup
+			interim labeloffset:=3.5bp;
+			for i:=0 step (l/5) until (l-1):
+				tmpx:=tmpl * (i * 2 / l - 1);
+				label.bot(thTEX(decimal (i)),(tmpx,-tmph));
+			endfor;
+			label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
+			% To write the scale "1:scale" uncomment it the next line:
+			%label.top(thTEX("Echelle 1 : " & decimal (Scale*100)),(0,0));
+		endgroup;
+	enddef;
+
+#	# Write the point depth
+#	def p_u_prof (expr pos) =
+#		T:=identity shifted pos;
+#		pickup PenD;
+#		p:=(-.3u,0)--(.3u,0);
+#		thdraw p; thdraw p rotated 90;
+#		p:=fullcircle scaled .2u;
+#		thclean p; thdraw p;
+#	enddef;
+#	vardef p_label@#(expr txt,pos,rot,mode) =
+#		if mode=1:
+#			thdrawoptions(withcolor .8red + .4blue);
+#			p_u_prof(pos);
+#			% append "m" to label
+#			picture txtm;
+#			% calcul profondeur
+#			%numeric profondeur;
+#			profondeur:=(\thaltitude-\cavemaxz);
+#			picture txtprofondeur;
+#			txtm:=image(
+#				draw txt;
+#				interim labeloffset:=0;
+#				label.urt(btex \thaltitude m etex, lrcorner txt);
+#				%label.urt(btex \thdepth m etex, lrcorner txt);
+#			);
+#			% give extra offset in case of l/r/t/b alignment
+#			pair ctmp;
+#			ctmp:=center thelabel@#("x", (0,0));
+#			if (xpart ctmp * ypart ctmp)=0:
+#				interim labeloffset:=(.4u);
+#			else: % diagonal alignment
+#				interim labeloffset:=(.2u);
+#			fi;
+#			% draw label
+#			lab:=thelabel@#(txtm, pos);
+#			draw lab _thop_; % use color
+#			thdrawoptions();
+#			bboxmargin:=0.8bp;
+#			write_circ_bbox((bbox lab) smoothed 2);
+#		else:
+#			if mode=7: interim labeloffset:=(u/8) fi;
+#			lab:=thelabel@#(txt, pos);
+#			if mode>1: pickup PenD fi;
+#			if mode=2: process_uplabel;
+#			elseif mode=3: process_downlabel;
+#			elseif mode=4: process_updownlabel;
+#			elseif mode=5: process_circledlabel;
+#			elseif mode=6: process_boxedlabel;
+#			elseif mode=7: process_label(pos,rot);  % station name
+#			elseif mode=8: process_filledlabel(pos, rot);
+#			else: process_label(pos,rot); fi;
+#    	fi;
+ # 	enddef;
+
+
+
+	# Change the altitude definition
+	#     This label requires to specify the position of text relative to point with
+	#     help of -align in the options box.
+	#     ex: -align bottom-right/top-left/top-right/bottom-left/top/bottom/left/right...
+	def p_altitude (expr pos) =
+		T:=identity shifted pos;
+		pickup PenD;
+		p:=(-.3u,0)--(.3u,0);
+		thdraw p; thdraw p rotated 90;
+		p:=fullcircle scaled .2u;
+		thclean p; thdraw p;
+	enddef;
+	vardef p_label@#(expr txt,pos,rot,mode) =
+		if mode=1:
+			thdrawoptions(withcolor .8red + .4blue);
+			p_altitude(pos);
+			% append "m" to label
+			picture txtm;
+			txtm:=image(
+				draw txt;
+				interim labeloffset:=0;
+				label.urt(btex \thaltitude { m} etex, lrcorner txt);
+				#label.urt(btex \thheight m etex, lrcorner txt);
+			);
+			% give extra offset in case of l/r/t/b alignment
+			pair ctmp;
+			ctmp:=center thelabel@#("x", (0,0));
+			if (xpart ctmp * ypart ctmp)=0:
+				interim labeloffset:=(.4u);
+			else: % diagonal alignment
+				interim labeloffset:=(.2u);
+			fi;
+			% draw label
+			lab:=thelabel@#(txtm, pos);
+			draw lab _thop_; % use color
+			thdrawoptions();
+			bboxmargin:=0.8bp;
+			write_circ_bbox((bbox lab) smoothed 2);
+		else:
+			if mode=7: interim labeloffset:=(u/8) fi;
+			lab:=thelabel@#(txt, pos);
+			if mode>1: pickup PenD fi;
+			if mode=2: process_uplabel;
+			elseif mode=3: process_downlabel;
+			elseif mode=4: process_updownlabel;
+			elseif mode=5: process_circledlabel;
+			elseif mode=6: process_boxedlabel;
+			elseif mode=7: process_label(pos,rot);  % station name
+			elseif mode=8: process_filledlabel(pos, rot);
+			else: process_label(pos,rot); fi;
+    	fi;
+  	enddef;
+
+  # For point height with P or C prefixe
+  # use “point 0 0 height -value [+10 m]”
+  # or “point 0 0 height -value [-85 m]”
+  # in your data to get E10 or P85
+     verbatimtex \def\thheightpos{E}\def\thheightneg{P} etex
+
+  # definition of new lines/symbols
+
+	#    Line symbol for strata for cross sections (u:strata). It works exactly as line section
+	#    symbol but you should use -clip off option:
+	def l_u_strata (expr P) =
+		T:=identity;
+		path Q; Q = punked P;
+		for t = 0 upto length P - 1:
+			pair zz[];
+			zz1 := point t of P;
+			zz2 := point t+1 of P;
+			zz3 := postcontrol t of P;
+			zz4 := precontrol t+1 of P;
+			linecap:=0;
+			if (length(zz3-1/3[zz1,zz2]) > 0.1pt) or (length(zz4-2/3[zz1,zz2]) > 0.1pt):
+				zz5 = whatever[zz1,zz2];
+				(zz3-zz5) = whatever * (zz1-zz2) rotated 90;
+				pickup pencircle scaled 1 mm;
+				draw zz1--zz5 dashed evenly;
+				pickup PenA;
+				draw zz1--zz5 withcolor background;
+				zz6 = whatever[zz1,zz2];
+				(zz4-zz6) = whatever * (zz1-zz2) rotated 90;
+				pickup pencircle scaled 1 mm;
+				draw zz2--zz6 dashed evenly;
+				pickup PenA;
+				draw zz2--zz6 withcolor background;
+			else:
+				pickup pencircle scaled 1 mm;
+				draw zz1--zz2 dashed evenly;
+				pickup PenA;
+				draw zz1--zz2 withcolor background;
+			fi;
+		endfor;
+	enddef;
+
+	#    Line symbol for Coupoles (u:strata). It works exactly as line section
+	def l_u_coupole (expr P) = 
+		T:=identity;
+		cas := 0;                            % cursor to step along path
+		dlzka := arclength P;
+		mojkrok:=adjust_step(dlzka, 0.25u);  % symbol length nudged to be multiple of path length
+		q:= (0.10u,0.16u) -- (0.13u,0.17u);         % dot
+   
+		pickup PenC;  %2nd thinnest pen
+		forever:
+			t := arctime cas of P;
+			thdraw q rotated angle(thdir(P,t)) shifted (point t of P ); % draw dots
+			cas := cas + mojkrok;
+			exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+		endfor;
+		pickup PenC;   %2nd thickest pen
+		thdraw P;      %continuous line
+	enddef;
+
+
+	# Line symbol for fault. It works exactly as line section symbol but you should use -clip off option:
+	def l_u_fault (expr P) =
+		T:=identity;
+		path Q; Q = punked P;
+		pickup PenA;
+		for t = 0 upto length P - 1:
+			pair zz[];
+			zz1 := point t of P;
+			zz2 := point t+1 of P;
+			zz3 := postcontrol t of P;
+			zz4 := precontrol t+1 of P;
+			if (length(zz3-1/3[zz1,zz2]) > 0.1pt) or (length(zz4-2/3[zz1,zz2]) > 0.1pt):
+				zz5 = whatever[zz1,zz2];
+				(zz3-zz5) = whatever * (zz1-zz2) rotated 90;
+				draw zz1--zz5 dashed evenly;
+				zz6 = whatever[zz1,zz2];
+				(zz4-zz6) = whatever * (zz1-zz2) rotated 90;
+				draw zz2--zz6 dashed evenly;
+			else:
+				draw zz1--zz2 dashed evenly;
+			fi;
+		endfor;
+	enddef;
+
+
+	# Line symbol for the surface. It works exactly as line section symbol but you should use -clip off option:
+	def l_u_surf (expr P) =
+		T:=identity;
+		path Q; Q = punked P;
+		pickup PenC;
+		draw Q dashed evenly withcolor (0.5, 0, 0);	
+	enddef;
+
+	# To add a doline line (u:doline); Do not forget the option -clip off !
+	def l_u_doline (expr P) =
+		T:=identity;
+		laenge:= arclength P;
+		symsize:=adjust_step(laenge,2u);
+		triangle_width:=symsize/10;
+		cur:=(symsize-triangle_width)/2;
+		pickup PenC;
+		forever:
+			t1 := arctime (cur) of P;
+	 		t  := arctime (cur + triangle_width/2) of P;
+			t2 := arctime (cur + triangle_width) of P;
+			thfill (subpath (t1,t2) of P) --
+				((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+				cycle;
+			thdraw (point t2 of P) --((point t of P) + symsize/2 * unitvector(thdir(P,t) rotated 90)) --
+				(point t1 of P) withcolor (0.5, 0, 0);
+			cur := cur + symsize;
+			exitif cur > laenge - (1*symsize/3); % for rounding errors
+			t1:=arctime (cur) of P;
+		endfor;
+	enddef;
+
+
+	# Modifier l aspect et les données des statistiques de longueur affichees
+	#code tex-map
+	#	\cavelength{1330\thinspace{}m}
+	#	+ 150\thinspace{}m estimes}
+	#	\cavedepth{243\thinspace{}m}
+
+	# Définit le gradient comme pendage géologique
+	def p_gradient_XA (expr P,R,S,A) =
+		U:=(.15u, .4u);
+		T:=identity aligned A rotated R scaled S shifted P;
+		pickup PenC;
+		thdraw (0u, 0u) -- (0u, .4u);
+		thdraw (-.4u, 0u) -- (.4u, 0u);
+	enddef;
+	initsymbol ("p_gradient_XA");
+	symbol-assign point gradient XA
+
+	path bat_path_x;
+	bat_path_x := (160.43589,619.76148)
+	.. controls (200.83034,598.56215) and (225.01974,599.82632) .. (242.33709,601.15842)
+	.. controls (250.91988,585.02142) and (280.12279,545.7622) .. (328.92385,566.52372)
+	.. controls (343.18917,529.89929) and (387.77695,513.04018) .. (453.54702,518.36185)
+	.. controls (456.6654,525.97557) and (466.09064,533.43257) .. (471.27843,523.05007)
+	.. controls (463.85291,520.67657) and (466.71891,517.42483) .. (471.63814,522.23522)
+	.. controls (472.87859,519.83044) and (472.11254,517.25674) .. (467.00984,516.24193)
+	.. controls (498.08181,494.38071) and (518.37927,488.7935) .. (554.08261,484.34703)
+	.. controls (536.23968,468.87122) and (526.7451,451.32142) .. (536.0878,433.78585)
+	.. controls (539.04313,428.23891) and (549.65293,437.81051) .. (550.08905,431.99134)
+	.. controls (543.35122,428.68782) and (547.16851,429.31755) .. (550.93619,430.90592)
+	.. controls (555.01514,419.20795) and (542.29889,420.82043) .. (539.21019,422.32967)
+	.. controls (526.80565,412.03922) and (538.14174,362.22955) .. (562.04206,325.41289)
+	.. controls (560.70416,305.4475) and (552.94665,275.48765) .. (596.42383,240.15823)
+	.. controls (586.13796,214.86512) and (584.21841,176.344) .. (618.88684,158.99293)
+	.. controls (600.38363,161.42082) and (571.90452,163.00167) .. (555.87287,173.29962)
+	.. controls (533.80922,180.31406) and (511.7587,189.77279) .. (494.76462,217.75852)
+	.. controls (469.02274,260.15007) and (465.60841,280.08537) .. (466.27659,287.73284)
+	.. controls (467.27295,299.13663) and (456.20597,295.4343) .. (455.42733,284.84646)
+	.. controls (447.034,297.47822) and (465.71846,292.96944) .. (457.40227,311.17742)
+	.. controls (451.51715,333.88534) and (454.55183,344.68208) .. (455.22274,365.27634)
+	.. controls (445.59186,380.66207) and (438.52169,394.98144) .. (432.56329,406.97544)
+	.. controls (421.27321,411.75599) and (411.86904,413.85884) .. (403.92838,423.33244)
+	.. controls (391.19793,418.79449) and (380.875,414.46152) .. (373.6673,409.41976)
+	.. controls (365.11095,413.84661) and (372.76761,437.1554) .. (372.88328,437.30963)
+	-- (360.72573,447.88215)
+	.. controls (360.72573,447.88215) and (348.36583,439.38367) .. (342.32921,440.26049)
+	.. controls (340.52016,451.25937) and (343.58923,463.9528) .. (354.67087,475.2679)
+	.. controls (341.63825,482.57642) and (339.10347,494.24676) .. (313.80723,490.57484)
+	.. controls (304.61922,489.24114) and (282.31298,490.61764) .. (258.32359,496.84657)
+	.. controls (246.18809,499.99759) and (248.48311,482.8706) .. (236.36849,493.22467)
+	.. controls (239.32461,491.85429) and (242.55704,492.01948) .. (245.59044,495.64662)
+	.. controls (248.83726,499.52895) and (249.4495,502.08244) .. (244.59097,503.87878)
+	.. controls (221.93401,514.80409) and (190.83965,541.85436) .. (178.69512,574.11392)
+	.. controls (176.80431,577.00681) and (162.4873,600.33708) .. cycle;
+	path bat_path_bb;
+	bat_path_bb = bbox bat_path_x;
+	path bat_path;
+	bat_path = bat_path_x shifted (-(llcorner bat_path_bb) - (urcorner bat_path_bb - llcorner bat_path_bb) / 2.0) scaled (1u / ((xpart urcorner bat_path_bb) - (xpart llcorner bat_path_bb))) rotated 210;
+
+	#! section of your layout define point u:bat symbol like this
+	def p_u_bats(expr pos, theta, sc, al) =
+		T := identity shifted pos;
+		thfill (bat_path scaled 1.5) withcolor black;
+	enddef;
+
+	#! similarly the line u:bat symbol
+	def l_u_bats(expr P) =
+		T:=identity;
+		cas := 0;
+		dlzka := arclength P;
+		mojkrok:=adjust_step(dlzka, 1.0u);
+		pickup PenD;
+		forever:
+			t := arctime cas of P;
+			thfill bat_path scaled 0.5 shifted (point t of P) withcolor black;
+			cas := cas + mojkrok;
+			exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+		endfor;
+	enddef;
+
+	#! and finally the area u:bat symbol (pattern in this case)
+	% bat pattern
+	beginpattern(pattern_bat);
+		fill bat_path withcolor black;
+	endpattern;
+
+	% bat area symbol
+	def a_u_bats (expr Path) =
+		T:=identity;
+		thclean Path;
+		thfill Path withpattern pattern_bat;
+	enddef;
+
+
+	#! These symbols will be included also in the legend. To
+	#! change the way how they are drawn there just define appropriate
+	#! macro. Its name should be symbol macro name with <code>_legend</code>
+	#! suffix.
+	def l_u_bats_legend =
+		l_u_bats(((.2,.2) -- (.8,.8)) inscale)
+	enddef;
+
+
+	# Definition of a stalagmite boss symbol
+	# symbol-color point u:boss [100 60 20]
+	def p_u_boss (expr pos,theta,sc,al)=
+		T:=identity aligned al rotated theta scaled sc shifted pos;
+		pickup PenD;
+		p := (0.08u,0.25u)..(0,0.29u)..(-0.08u,0.25u);
+		q := (0.16u,0.5u)..(0u,0.58u)..(-0.16u,0.5u);
+		for i=0 upto 9:
+			# braun color
+			thdraw p rotated 36i withcolor (100, 0.6, 0.2);
+			thdraw q rotated 36i withcolor (100, 0.6, 0.2);
+			% black color
+			%thdraw p rotated 36i;
+			%thdraw q rotated 36i;
+
+		endfor
+		p := fullcircle scaled 0.15u;
+		thdraw p withcolor (100, 0.6, 0.2);
+		% black color
+		%thdraw p withcolor;
+	enddef;
+
+	# Define Danger symbol
+	def p_u_danger (expr P,R,S,A)=
+       T:=identity aligned A rotated R scaled S shifted P;
+       thfill (0,-u)--(u,0)--(0,u)--(0,.9u)--(.9u,0)--(0,-.9u)--cycle;
+       thfill (0,-u)--(-u,0)--(0,u)--(0,.9u)--(-.9u,0)--(0,-.9u)--cycle;
+       thfill (.1u,-.45u)..(0,-.35u)..(-.1u,-.45u)..(0,-.55u)..cycle;
+       thfill (0,-.2u)..(.1u,-.1u)--(.2u,.4u)..(0,.6u)..(-.2u,.4u)--(-.1u,-.1u)..cycle;
+     enddef;
+     #initsymbol("p_entrance_MY");
+     #let p_entrance = p_entrance_MY;
+
+	# Change fig Flowstone, increase the number of arcs
+	def l_flowstone (expr p) =
+		#draw p withpen PenC withcolor (0.0, 0.5, 1.0);
+		T:=identity;
+		cas := 0;
+		dlzka := arclength p;
+		mojkrok:=adjust_step(dlzka, .3u);
+		# povodne .7u
+		pickup PenC;
+		t1:=0;
+		forever:
+			t2 := arctime (cas + mojkrok) of p;
+			thdraw (point t1 of p){dir (angle(thdir(p,t1)) + 60)} ..
+					{dir (angle(thdir(p,t2)) - 60)}(point t2 of p);
+			cas := cas + mojkrok;
+			exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+			t1:=t2;
+		endfor;
+	enddef;
+
+	# point pour représenter un nid d'oiseau
+	def p_u_nid (expr pos,theta,sc,al)=
+		U:=(.4u,.2u);
+		T:=identity aligned al rotated theta scaled sc shifted pos;
+		pickup PenC;
+		#thdraw (-.4u,.2u){dir -70}..{dir 70}(.4u,.2u) withcolor (0.53, 0.26, 0.11);
+		thdraw (-.2u,.1u){dir -70}..{dir 70}(.2u,.1u) withcolor (0.53, 0.26, 0.11);
+	enddef;
+	
+	# Point ancrage artificiel (From a post by Evaristo Quiroga)
+	def p_u_anchor_artificial(expr pos,theta,sc,al) =
+		T:=identity shifted pos;
+		thdraw origin withpen pencircle scaled 0.25u withcolor (0.58, 0.44, 0.25);
+	enddef;
+	initsymbol ("p_u_anchor_artificial");
+	# Point ancrage naturel (From a post by Evaristo Quiroga)
+	def p_u_anchor_natural(expr pos,theta,sc,al) =
+		U:=(.2u,.2u);
+		T:=identity aligned al rotated theta scaled sc shifted pos;
+		thfill (-.2u,-.2u)--(0,.2u)--(.2u,-.2u)--cycle withcolor (0.58, 0.44, 0.25); 
+	enddef;
+	initsymbol ("p_u_anchor_natural");
+
+	symbol-colour line rope [58 44 25]
+
+endcode
+
+
+code tex-map
+	\newtoks\thversiontitleB \thversiontitleB={Therion }
+	#\newif\ifes
+	#\newcommand{\langes}[1]{\ifes#1\fi}
+	
+	%\if
+	# Français
+		#\newtoks\thversiontitleA \thversiontitleA={Compilation }
+		#\newtoks\datetitle \datetitle={le }
+		#\newtoks\thclub \thclub={Club(s) }
+		#\newtoks\thsynth \thsynth={Synthèse }
+		%\newtoks\thwpage \thwpage={Page internet }
+		%\newtoks\thexpe \thexpe={Expedition }
+		#\newtoks\depthrangetitle \depthrangetitle={Depth range from }
+		%\else
+		%\if
+		# Espagnol
+			#\newtoks\thversiontitleA \thversiontitleA={Compilación}
+			#\newtoks\datetitle \datetitle={el }
+			#\newtoks\thclub \thclub={Club(es)}
+			#\newtoks\thsynth \thsynth={Síntesis}
+			#\newtoks\thwpage \thwpage={Página web}
+			#\newtoks\thexpe \thexpe={Expedición}
+			#\newtoks\depthrangetitle \depthrangetitle={Depth range from }
+			#\cartotitle={Dibujo}
+			%\else
+			%\if			
+			# english:
+				#\newtoks\thversiontitleA \thversiontitleA={Compiled}
+				#\newtoks\datetitle \datetitle={on }
+				#\newtoks\thclub \thclub={Club(s)}
+				#\newtoks\thsynth \thsynth={Synthesys}
+				%\newtoks\thwpage \thwpage={Web page}
+				%\newtoks\thexpe \thexpe={Expedition}
+				#\newtoks\depthrangetitle \depthrangetitle={Depth range from }
+			%\fi
+		%\fi
+	%\fi
+
+endcode
+
+endlayout
+
+#------------------------------
+layout headerl
+# Layout to change the header
+	#This code is experimental redefinition of map header
+	#Bruce Mutton           Therion 5.3.15 make use of new variables
+
+	#this one affects maps only
+	code tex-map
+		\legendcontent={%
+			\hsize=\legendwidth
+			\color[0 0 0]\the\legendtextcolor
+			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			%print cave map name
+			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
+				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
+			\fi
+			%print comment
+			{\rightskip=0pt plus 3em\parskip=3bp
+			\edef\tmp{\the\comment} \ifx\tmp\empty \else
+				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
+			\fi}
+			%print scalebar
+			\ifscalebar\scalebar\vskip1cm\fi
+
+		% start bruces addition
+		# %    CS
+		\edef\tmp{\the\outcsname} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thproj: \ss\the\outcsname\par}
+		\fi
+		\edef\tmp{\the\northdir} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\northdir north }
+		\fi
+		\edef\tmp{\the\magdecl} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\magdecl deg \par}
+		\fi
+		\vskip0.5cm
+		% end bruces addition
+		#%print comment
+		{
+		#\rightskip=0pt plus 3em\parskip=3bp
+		#\edef\tmp{\the\comment} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\the\comment} \par\medskip
+		#\fi
+		%print cavelength and depth
+		\everypar{\hangindent=2em\hangafter=1}
+		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+		\fi
+		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+		\fi
+		# % start bruces addition
+		## %      altitude
+		#\edef\tmp{\the\cavemaxz} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\depthrangetitle \ss\the\cavemaxz m to}
+		#\fi
+		#\edef\tmp{\the\caveminz} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\ss\the\caveminz m \par} %above mean sea level
+		#\fi
+		# % end bruces addition
+
+		%print explorers names
+		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+		\fi
+		%print surveyors names
+		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+		\fi
+		 %%print the guides
+		\edef\tmp{\the\guide} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+		\fi
+		%print cartographers names
+		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+		\fi
+		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+		\edef\tmp{\the\synth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+		\fi
+		%print the club
+		\edef\tmp{\the\club} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+		\fi
+		%%print the expedition
+		\edef\tmp{\the\expe} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+		\fi
+        %%print the web page
+		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
+		% \fi
+		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+		\fi
+
+		# % end bruces addition
+		%print copyrights
+		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\copyrights\par}
+		\fi
+		}
+		\formattedlegend
+		\color[0 0 0]
+		}
+
+	endcode
+endlayout
+
+#------------------------------
+layout header_coupe
+# Layout to change the header
+	#This code is experimental redefinition of map header
+	#Bruce Mutton           Therion 5.3.15 make use of new variables
+
+	#this one affects maps only
+	code tex-map
+		\legendcontent={%
+			\hsize=\legendwidth
+			\color[0 0 0]\the\legendtextcolor
+			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			%print cave map name
+			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
+				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
+			\fi
+			%print comment
+			{\rightskip=0pt plus 3em\parskip=3bp
+			\edef\tmp{\the\comment} \ifx\tmp\empty \else
+				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
+			\fi}
+			%print scalebar
+			\ifscalebar\scalebar\vskip1cm\fi
+
+		{
+		%print cavelength and depth
+		\everypar{\hangindent=2em\hangafter=1}
+		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+		\fi
+		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+		\fi
+		# % end bruces addition
+
+		%print explorers names
+		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+		\fi
+		%print surveyors names
+		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+		\fi
+		 %%print the guides
+		\edef\tmp{\the\guide} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+		\fi
+		%print cartographers names
+		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+		\fi
+		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+		\edef\tmp{\the\synth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+		\fi
+		%print the club
+		\edef\tmp{\the\club} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+		\fi
+		%%print the expedition
+		\edef\tmp{\the\expe} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+		\fi
+        %%print the web page
+		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
+		% \fi
+		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+		\fi
+
+		# % end bruces addition
+		%print copyrights
+		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\copyrights\par}
+		\fi
+		}
+		\formattedlegend
+		\color[0 0 0]
+		}
+	endcode
+endlayout
+
+#------------------------------
+layout layoutmapborder
+# If you want to draw a frame around the map
+	code tex-map
+		\framethickness=0.5mm
+	endcode
+endlayout
+
+
+#CODE TO CUSTOMISE ATLAS OUTPUT
+#------------------------------
+layout LayoutAtlasNorthArrow
+#This code is a redefinition of the default atlas definition
+#that includes both north arrow & scale bar beside the navigation pane
+
+code tex-atlas
+	\def\dopage{%
+		\vbox{\centerline{\framed{\mapbox}}
+			\bigskip
+			\line{%
+				\vbox to \ht\navbox{
+					\hbox{\size[20]\the\pagelabel
+					\ifpagenumbering\space(\the\pagenum)\fi
+					\space\size[16]\the\pagename}
+					\ifpagenumbering
+						\medskip
+						\hbox{\qquad\qquad
+							\vtop{%
+								\hbox to 0pt{\hss\showpointer\pointerN\hss}
+								\hbox to 0pt{\llap{\showpointer\pointerW\hskip0.7em}%
+								\raise1pt\hbox to 0pt{\hss$\updownarrow$\hss}%
+								\raise1pt\hbox to 0pt{\hss$\leftrightarrow$\hss}%
+								\rlap{\hskip0.7em\showpointer\pointerE}}
+								\hbox to 0pt{\hss\showpointer\pointerS\hss}
+							}\qquad\qquad
+							\vtop{
+								\def\arr{$\uparrow$}
+								\showpointerlist\pointerU
+								\def\arr{$\downarrow$}
+								\showpointerlist\pointerD
+							}
+						}
+					\fi
+					\vss
+				}
+				\hss
+				\vbox to \ht\navbox{
+					\ifnortharrow\hbox to 0pt{\hss\northarrow\qquad}\fi
+					\vss
+					\ifscalebar\hbox to 0pt{\hss\scalebar\qquad}\fi
+				}
+				\box\navbox
+			}
+		}
+	}
+
+endlayout LayoutAtlasNorthArrow
+
+#------------------------------
+layout layoutcontinuation
+	# If you want to write all the texts that go with continuations marks
+	code metapost
+		def p_continuation(expr pos,theta,sc,al) =
+			% draw default continuation symbol
+			p_continuation_UIS(pos,theta,sc,al);
+			% if text attribute is set
+			if known(ATTR__text) and picture(ATTR__text):
+				% set labeling color to light orange
+				push_label_fill_color(1.0, 0.9, 0.8);
+				% draw filled label with text next to ?
+				p_label.urt(ATTR__text,(.5u,-.25u) transformed T,0.0,8);
+				% restore original labeling color
+				pop_label_fill_color;
+			fi;
+		enddef;
+	endcode
+endlayout layoutcontinuation
+
+#------------------------------
+layout northarrowMG
+
+	code metapost
+	  	# If you want to get both, magnetic and geographic north,
+  		# with \cartodate ?
+		def s_northarrow (expr rot) =
+			%valscal=1.2; % scale your north arrow here
+			valscal=0.7; % scale your north arrow here
+			decl:=MagDecl; % set the magnetic declination
+			T:=identity;
+			picture tmp_pic;
+			tmp_pic = image (
+				pickup pencircle scaled .3;
+				thfill fullcircle scaled 4cm withcolor 1white;
+				thdraw fullcircle scaled 3.1cm;
+				thdraw fullcircle scaled 4.05cm;
+				pickup pencircle scaled .1;
+				thdraw fullcircle scaled 3cm;
+				thdraw fullcircle scaled 4cm;
+				pickup pencircle scaled .2;
+				thdraw (dir(45)*2.025cm)--(dir(45)*3.7cm);
+				thdraw (dir(135)*2.025cm)--(dir(135)*3.7cm);
+				thdraw (dir(225)*2.025cm)--(dir(225)*3.7cm);
+				thdraw (dir(315)*2.025cm)--(dir(315)*3.7cm);
+				pickup pencircle scaled .1;
+				for whereto=0 step 15 until 345:
+					thdraw dir(whereto)*.65cm--dir(whereto)*.9cm;
+					thdraw dir(whereto)*1.4cm--dir(whereto)*1.5cm;
+				endfor;
+				for whereto=0 step 5 until 355:
+					thdraw dir(whereto)*.65cm--dir(whereto)*.8cm;
+					thdraw dir(whereto)*1.45cm--dir(whereto)*1.5cm;
+				endfor;
+				for whereto=0 step 1 until 359:
+					thdraw dir(whereto)*1.94cm--dir(whereto)*2cm;
+				endfor;
+				pickup pencircle scaled 1;
+				thdraw fullcircle scaled 1cm;
+				thdraw fullcircle scaled 1.1cm;
+				thdraw fullcircle scaled 1.3cm withpen pencircle scaled .3;
+				vald=90-decl;
+				texrot=0-decl;
+				drawarrow(dir(vald)*-2cm--dir(vald)*2cm) withpen pencircle scaled .2;
+				% Add the date of the last drawing
+				thdraw image(label.top(btex $mg$ etex, (0,0)) scaled .5 rotated texrot;) shifted (dir(vald)*2.04cm);
+				thfill (1.06cm,1.06cm)--(0,.2cm)--(-1.06cm,1.06cm)--(-.2cm,0)--(-1.06cm,-1.06cm)--(0,-.2cm)--(1.06cm,-1.06cm)--(.2cm,0)--cycle;
+				thfill (-.2cm,.2cm)--(0,2cm)--(0,0)--cycle;
+				thfill (.2cm,-.2cm)--(0,-2cm)--(0,0)--cycle;
+				thfill (.2cm,.2cm)--(2cm,0)--(0,0)--cycle;
+				thfill (-.2cm,-.2cm)--(-2cm,0)--(0,0)--cycle;
+				thfill (.2cm,.2cm)--(-0,2cm)--(0,0)--cycle withcolor 1white;
+				thfill (.2cm,-.2cm)--(2cm,0)--(0,0)--cycle withcolor 1white;
+				thfill (-.2cm,-.2cm)--(0,-2cm)--(0,0)--cycle withcolor 1white;
+				thfill (-.2cm,.2cm)--(-2cm,0)--(0,0)--cycle withcolor 1white;
+				pickup pencircle scaled .2;
+				thdraw (-.2cm,.2cm)--(0,2cm)--(.2cm,.2cm)--(2cm,0cm)--(.2cm,-.2cm)--(0,-2cm)--(-.2cm,-.2cm)--(-2cm,0)--cycle;
+				thfill fullcircle scaled .56cm withcolor 1white;
+				pickup pencircle scaled .1;
+				thdraw (.28cm,0)..(0,.28cm)..(-.28cm,0)..(0,-.28cm)..cycle;
+				pickup pencircle scaled .4;
+				thdraw (.2cm,0)..(0,.2cm)..(-.2cm,0)..(0,-.2cm)..cycle;
+				label.bot(btex $N$ etex, (0,2.6cm));
+				label.lft(btex $E$ etex, (2.6cm,0));
+				label.rt(btex $W$ etex, (-2.6cm,0));
+				label.top(btex $S$ etex, (0,-2.6cm));
+			);
+			thdraw tmp_pic scaled valscal rotatedaround(origin, -rot);
+		enddef;
+	endcode
+endlayout northarrowMG
+
+layout test
+
+code metapost
+
+	def p_u_prof (expr P,R,S,A)=
+		T:=identity aligned A rotated R scaled S shifted P;
+		pickup PenD;
+		p:=(-.3u,0)--(.3u,0);
+		thdraw p; 
+		#thdraw p rotated 90;
+		p:=fullcircle scaled .2u;
+		#thclean p; 
+		thdraw p;
+	enddef;
+	vardef p_label@#(expr txt,P,R,mode) =
+		if mode=1:
+			thdrawoptions(withcolor .8red + .4blue);
+#			thdrawoptions(withcolor .8red + .6blue);
+			p_u_prof(P);
+			% append "m" to label
+			picture txtm;
+			% calcul profondeur
+			%numeric profondeur;
+			profondeur:=(\thaltitude-\cavemaxz);
+			picture txtprofondeur;
+			txtm:=image(
+				draw txt;
+				interim labeloffset:=0;
+				#label.urt(btex \thaltitude m etex, lrcorner txt);
+				label.urt(btex profondeur m etex, lrcorner txt);
+				%label.urt(btex \thdepth m etex, lrcorner txt);
+			);
+			% give extra offset in case of l/r/t/b alignment
+			pair ctmp;
+			ctmp:=center thelabel@#("x", (0,0));
+			if (xpart ctmp * ypart ctmp)=0:
+				interim labeloffset:=(.4u);
+			else: % diagonal alignment
+				interim labeloffset:=(.2u);
+			fi;
+			% draw label
+			lab:=thelabel@#(txtm, P);
+			draw lab _thop_; % use color
+			thdrawoptions();
+			bboxmargin:=0.8bp;
+			write_circ_bbox((bbox lab) smoothed 2);
+		else:
+			if mode=7: interim labeloffset:=(u/8) fi;
+			lab:=thelabel@#(txt, P);
+			if mode>1: pickup PenD fi;
+			if mode=2: process_uplabel;
+			elseif mode=3: process_downlabel;
+			elseif mode=4: process_updownlabel;
+			elseif mode=5: process_circledlabel;
+			elseif mode=6: process_boxedlabel;
+			elseif mode=7: process_label(P,R);  % station name
+			elseif mode=8: process_filledlabel(P, R);
+			else: process_label(P,R); fi;
+    	fi;
+ 	enddef;
+
+endcode
+
+endlayout

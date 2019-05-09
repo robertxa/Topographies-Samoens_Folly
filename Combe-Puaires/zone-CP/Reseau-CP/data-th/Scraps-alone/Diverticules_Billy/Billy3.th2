@@ -1,0 +1,207 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 375.25 305.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {157.4813 1 1.0} {62.994099999999996 Xa-2015-15} Billy3-map.xvi 0 {}
+
+
+
+scrap Billy3-s1 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 301.22799999999995 -128.0 0.0 0.0 10.902391199999999 0.0 m]
+
+point 135.75 88.25 blocks
+
+point 246.0 158.25 label -text "<center>v. méandre<br>Billy amont"
+
+point 59.5 145.75 label -text "<center>v. méandre<br>Billy aval<br>et CP14"
+
+point 178.0 138.5 height -value [+10 m]
+
+point 26.0 109.75 narrow-end
+
+point 160.5 22.75 narrow-end
+
+point 132.5 30.75 dig
+
+point 152.75 176.25 air-draught -orientation 267.8 -subtype summer
+
+point 149.5 14.25 air-draught -orientation 9.5 -subtype summer -scale s
+
+point 171.25 50.25 soda-straw
+
+point 176.25 64.0 height -value [+3 m]
+
+point 136.5 140.25 rope
+
+point 2.25 95.0 air-draught -orientation 277.3 -subtype summer
+
+point 18.75 82.5 label -text "colm."
+
+point 173.5 33.5 label -text "colm."
+
+point 163.25 102.5 label -text "R3"
+
+point 126.25 156.5 water-flow -orientation 190.1
+
+point 180.25 168.5 water-flow -orientation 253.7
+
+line arrow
+  187.5 172.0
+  207.0 170.5
+endline
+
+line arrow
+  120.75 143.25
+  89.0 141.5
+endline
+
+line arrow
+  151.0 111.75
+  154.75 131.25
+endline
+
+line arrow
+  157.0 138.25
+  160.5 156.0
+endline
+
+line contour
+  150.25 152.75
+  150.25 152.75 160.75 155.0 167.25 155.0
+  173.75 155.0 179.5 156.25 182.5 156.25
+  185.5 156.25 190.5 155.0 190.5 155.0
+  smooth off
+endline
+
+line contour
+  148.75 149.0
+  148.75 149.0 164.25 143.75 168.0 145.5
+  smooth off
+endline
+
+line contour
+  147.75 144.25
+  147.75 144.25 155.5 139.25 161.25 140.75
+  167.0 142.25 170.25 144.0 170.25 144.0
+  smooth off
+endline
+
+line contour
+  162.25 114.5
+  162.25 114.5 143.0 115.75 138.5 120.0
+  smooth off
+endline
+
+line contour
+  164.25 124.75
+  164.25 124.75 146.75 122.5 140.25 129.5
+  smooth off
+endline
+
+line pit
+  149.25 60.25
+  149.25 60.25 153.0 59.75 155.75 60.5
+  158.5 61.25 160.25 61.0 162.5 63.0
+  smooth off
+endline
+
+line pit
+  154.25 104.5
+  154.25 104.5 145.5 102.75 142.5 107.75
+  smooth off
+endline
+
+line pit
+  146.0 140.25
+  146.0 140.25 159.75 131.0 166.25 136.75
+  smooth off
+endline
+
+line pit -reverse on
+  191.75 162.25
+  191.75 162.25 176.5 163.0 170.75 161.75
+  165.0 160.5 151.75 155.75 148.0 155.25
+  smooth off
+endline
+
+line wall
+  153.75 27.0
+  153.75 27.0 156.0 37.0 156.75 42.5
+  157.5 48.0 160.5 57.5 160.75 61.5
+  161.0 65.5 158.25 67.25 161.5 69.75
+  164.75 72.25 164.0 79.0 160.0 81.0
+  156.0 83.0 151.0 88.25 151.0 92.25
+  151.0 96.25 149.25 100.75 152.5 106.5
+  155.75 112.25 160.5 130.0 161.75 134.75
+  163.0 139.5 163.5 148.5 165.5 149.25
+  167.5 150.0 175.75 151.5 178.5 151.5
+  181.25 151.5 185.25 147.25 187.0 150.0
+  188.75 152.75 188.0 163.75 188.75 166.5
+  smooth off
+endline
+
+line wall
+  24.0 90.0
+  24.0 90.0 27.0 87.75 30.0 87.75
+  33.0 87.75 32.5 89.75 45.5 88.5
+  58.5 87.25 98.75 83.75 102.5 84.25
+  106.25 84.75 113.5 88.75 117.25 88.75
+  121.0 88.75 124.25 91.0 126.75 88.0
+  129.25 85.0 134.0 83.75 135.5 79.75
+  137.0 75.75 133.75 64.75 137.25 64.75
+  140.75 64.75 146.25 63.0 150.0 63.0
+  153.75 63.0 153.0 60.75 152.5 55.5
+  152.0 50.25 150.0 33.25 150.0 33.25
+  smooth off
+  149.5 28.25
+endline
+
+line wall
+  128.0 149.5
+  128.0 149.5 127.5 160.5 130.5 160.5
+  133.5 160.5 149.0 162.5 149.75 159.5
+  150.5 156.5 153.75 155.25 153.5 150.75
+  153.25 146.25 152.0 143.5 149.75 137.25
+  147.5 131.0 144.0 119.5 144.75 116.0
+  145.5 112.5 149.03 107.53 146.3913 106.5141
+  143.75 105.5 142.25 103.75 140.75 99.5
+  139.25 95.25 138.75 93.25 136.25 95.5
+  133.75 97.75 132.0 104.5 125.25 102.75
+  118.5 101.0 110.5 93.0 102.25 93.0
+  94.0 93.0 28.5 93.75 28.5 93.75
+  smooth off
+  24.5 93.75
+endline
+
+line wall
+  182.5 174.0
+  182.5 174.0 167.5 167.5 161.25 167.5
+  155.0 167.5 133.25 167.75 128.5 166.75
+  123.75 165.75 123.75 160.25 123.75 158.0
+  123.75 155.75 122.5 151.0 122.5 151.0
+  smooth off
+endline
+
+point 130.1413 164.3841 station -name Xa-2015-25@Billy3
+
+point 162.7113 163.3641 station -name Xa-2015-24@Billy3
+
+point 158.8913 133.0741 station -name Xa-2015-23@Billy3
+
+point 146.3913 106.5141 station -name Xa-2015-22@Billy3
+
+point 152.7913 33.36409999999999 station -name Xa-2015-16@Billy3
+
+point 157.4813 62.994099999999996 station -name Xa-2015-15bis@Billy3
+
+point 150.8613 70.9941 station -name Xa-2015-17@Billy3
+
+point 138.7713 84.2741 station -name Xa-2015-18@Billy3
+
+point 124.4613 99.0441 station -name Xa-2015-19@Billy3
+
+point 104.82130000000001 89.0341 station -name Xa-2015-20@Billy3
+
+point 29.291300000000007 91.4141 station -name Xa-2015-21@Billy3
+
+endscrap
+
+

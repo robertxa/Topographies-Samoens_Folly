@@ -1,0 +1,405 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -253.98799999999997 -143.748 712.5 505.952
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {248.086 1 1.0} {212.595 0} BA4-coupe.xvi 0 {}
+
+
+
+scrap scrapBA4-1 -projection extended -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/4.0/" -scale [-251.08299999999997 -178.4039 477.357 -178.4039 0.0 0.0 18.502376 0.0 m]
+
+point -72.75 135.5 air-draught -orientation 122.3 -subtype summer
+
+point 253.25 152.0 rimstone-pool
+
+area water
+  l20-235-154
+  l12-235-150
+endarea
+
+line label -id l20-235-154
+  251.0 154.0
+  224.0 152.25
+endline
+
+point 237.5 137.75 label -text "gour" -scale s
+
+point 186.75 124.25 label -text "etr." -scale s
+
+point 124.75 95.0 label -text "etr." -scale s
+
+point 62.75 128.0 label -text "<it>Lat : 46.103829 <br>Long : 6.766091 <br>Alt : 1287 m" -scale s
+
+point 62.75 51.5 entrance -orientation 0.0
+
+point 196.0 187.5 height -value [+5 m]
+
+point 266.0 188.75 height -value [+7 m]
+
+point 87.75 69.75 height -value [+2 m]
+
+point 28.75 69.5 height -value [+2 m]
+
+point -50.75 107.25 label -text "etr." -scale s
+
+point -51.25 123.5 flowstone-choke -orientation 294.3
+
+line contour
+  33.25 76.0
+  33.25 76.0 37.25 71.75 46.25 70.0
+  55.25 68.25 55.0 65.75 64.25 66.75
+  73.5 67.75 81.25 71.5 81.25 71.5
+  smooth off
+endline
+
+point 201.75 213.25 rope
+
+point 123.25 131.25 air-draught -orientation 234.3 -subtype summer
+
+point 167.25 140.5 moonmilk
+
+point 153.25 133.5 moonmilk
+
+point 139.75 126.5 moonmilk
+
+point 129.25 120.5 moonmilk
+
+point 118.5 114.5 moonmilk
+
+point 106.25 106.5 moonmilk
+
+point 97.5 101.25 moonmilk
+
+point 89.0 96.25 moonmilk
+
+point -36.0 122.0 moonmilk
+
+point -24.75 117.5 moonmilk
+
+point -6.75 107.75 moonmilk
+
+point 7.25 102.0 moonmilk
+
+point 20.75 95.75 moonmilk
+
+point 62.25 58.5 altitude
+
+line wall -id l12-235-150
+  79.5 62.75
+  79.5 62.75 77.5 75.5 79.5 76.5
+  81.5 77.5 117.0 102.5 119.0 104.0
+  121.0 105.5 121.75 105.75 125.0 107.5
+  128.25 109.25 179.5 138.0 181.75 138.0
+  184.0 138.0 207.75 152.0 211.25 152.0
+  214.75 152.0 224.75 154.25 226.0 153.25
+  227.25 152.25 225.75 150.5 227.75 150.25
+  229.75 150.0 244.0 151.25 245.75 151.5
+  247.5 151.75 248.0 156.75 248.25 158.5
+  248.5 160.25 252.5 173.25 252.5 176.25
+  252.5 179.25 252.0 211.75 252.0 213.5
+  252.0 215.25 252.0 218.5 251.75 219.5
+  251.5 220.5 249.0 220.5 247.75 219.5
+  246.5 218.5 244.25 214.25 244.25 211.5
+  244.25 208.75 240.25 196.0 238.0 196.5
+  235.75 197.0 234.0 203.5 234.0 205.0
+  234.0 206.5 234.25 216.25 231.75 216.75
+  229.25 217.25 223.0 216.5 222.0 214.5
+  221.0 212.5 206.25 208.5 206.25 203.5
+  206.25 198.5 205.75 182.0 205.75 178.25
+  205.75 174.5 207.5 167.5 204.75 167.0
+  202.0 166.5 193.25 167.75 190.75 166.25
+  188.25 164.75 185.75 156.5 184.75 154.0
+  183.75 151.5 185.5 147.0 183.75 145.25
+  182.0 143.5 167.5 135.25 164.5 133.75
+  161.5 132.25 122.0 110.5 119.25 109.0
+  116.5 107.5 90.25 91.0 88.25 88.75
+  86.25 86.5 81.25 86.75 78.75 86.5
+  76.25 86.25 74.5 82.75 68.25 81.5
+  62.0 80.25 58.25 79.5 52.75 81.0
+  47.25 82.5 32.5 84.75 28.25 87.0
+  24.0 89.25 -10.75 106.5 -21.75 111.75
+  -32.75 117.0 -44.75 123.5 -46.5 124.25
+endline
+
+line wall
+  -48.0 119.25
+  -48.0 119.25 -45.5 117.5 -40.25 114.5
+  -35.0 111.5 -26.25 109.0 -24.0 106.75
+  -21.75 104.5 -23.5 100.5 -21.75 100.0
+  -20.0 99.5 -13.0 100.5 -10.75 99.25
+  -8.5 98.0 22.5 84.75 24.0 83.75
+  25.5 82.75 34.75 79.5 35.25 78.25
+  35.75 77.0 36.0 73.25 37.0 70.75
+  38.0 68.25 41.75 62.5 41.75 62.5
+  smooth off
+endline
+
+point -47.083999999999975 121.67500000000001 station -name 16@BA4
+
+point 23.56600000000003 85.675 station -name 15@BA4
+
+point 62.98600000000002 69.755 station -name BA4@BA4
+
+point 121.10600000000002 107.485 station -name 13@BA4
+
+point 181.01600000000002 140.705 station -name 3@BA4
+
+line wall -close on -outline in
+  219.5 206.25
+  219.5 206.25 222.0 208.0 224.5 207.5
+  227.0 207.0 228.25 207.75 229.25 206.0
+  230.25 204.25 231.25 204.5 231.25 204.5
+  smooth off
+  231.25 202.5
+  231.25 202.5 231.75 200.25 229.25 200.25
+  226.75 200.25 224.75 200.25 222.75 200.25
+  220.75 200.25 219.25 202.25 219.25 202.25
+  smooth off
+  219.5 206.25
+endline
+
+point 227.526 165.435 station -name 2@BA4
+
+point 248.086 175.905 station -name 1@BA4
+
+point 248.086 212.595 station -name 0@BA4
+
+endscrap
+
+
+
+scrap scrapBA4_2-coupe -projection extended -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/4.0/" -scale [-251.08299999999997 -178.4039 477.357 -178.4039 0.0 0.0 18.502376 0.0 m]
+
+line wall -close on -outline in
+  525.25 293.75
+  525.25 293.75 527.75 294.75 528.5 292.5
+  529.25 290.25 534.25 289.75 529.75 288.75
+  525.25 287.75 520.5 286.25 520.5 288.0
+  520.5 289.75 520.0 292.5 521.25 292.5
+  522.5 292.5 525.25 293.75 525.25 293.75
+  smooth off
+endline
+
+line wall -close on -outline in
+  506.75 291.0
+  506.75 291.0 508.75 291.75 510.75 290.75
+  512.75 289.75 517.25 288.75 516.25 287.25
+  515.25 285.75 512.0 283.75 509.75 284.0
+  507.5 284.25 505.0 283.5 505.25 285.75
+  505.5 288.0 506.75 291.0 506.75 291.0
+  smooth off
+endline
+
+line wall
+  242.5 220.75
+  242.5 220.75 242.25 215.75 238.75 215.5
+  235.25 215.25 229.75 215.25 228.0 215.0
+  226.25 214.75 223.0 213.25 221.75 212.0
+  220.5 210.75 219.5 206.25 219.5 206.25
+  smooth off
+  219.25 202.25
+endline
+
+line wall
+  503.25 332.0
+  503.25 332.0 503.25 329.75 503.25 326.5
+  503.25 323.25 503.5 307.5 503.5 303.25
+  503.5 299.0 503.75 297.25 501.25 293.5
+  498.75 289.75 490.25 276.0 486.75 273.25
+  483.25 270.5 459.0 246.5 452.75 243.75
+  446.5 241.0 421.5 222.75 415.75 221.75
+  410.0 220.75 355.5 216.25 348.0 215.25
+  340.5 214.25 295.5 207.75 289.75 208.25
+  284.0 208.75 270.0 210.5 266.5 210.5
+  263.0 210.5 261.25 210.75 259.25 211.25
+  257.25 211.75 240.25 210.5 242.5 213.5
+  244.75 216.5 245.25 219.5 245.25 219.5
+  smooth off
+endline
+
+line wall
+  540.0 303.5
+  540.0 303.5 533.25 300.75 531.75 303.25
+  530.25 305.75 531.75 326.25 528.75 326.25
+  525.75 326.25 521.0 325.5 517.0 325.5
+  513.0 325.5 507.25 323.75 507.0 325.75
+  506.75 327.75 507.75 332.5 507.75 332.5
+  smooth off
+endline
+
+point 475.25 270.5 scallop
+
+point 468.5 264.5 scallop
+
+point 463.25 260.75 scallop
+
+point 458.0 256.0 scallop
+
+point 451.0 250.25 scallop
+
+point 443.0 245.75 scallop
+
+point 437.5 242.75 scallop
+
+point 430.75 238.0 scallop
+
+point 422.5 234.0 scallop
+
+point 414.5 230.25 scallop
+
+point 408.75 227.25 scallop
+
+point 400.5 226.0 scallop
+
+point 391.75 226.25 scallop
+
+point 381.5 225.25 scallop
+
+point 371.75 224.5 scallop
+
+point 361.5 223.25 scallop
+
+point 353.0 221.75 scallop
+
+point 345.5 220.25 scallop
+
+point 338.0 219.25 scallop
+
+point 330.5 219.0 scallop
+
+point 322.0 217.5 scallop
+
+point 315.0 216.5 scallop
+
+point 307.75 215.25 scallop
+
+point 485.0 299.0 altitude
+
+point 496.25 245.5 water-flow -orientation 257.8
+
+point 412.75 213.25 pebbles -scale xs
+
+point 406.5 212.5 pebbles -scale xs
+
+point 401.0 212.0 pebbles -scale xs
+
+point 395.25 211.25 pebbles -scale xs
+
+point 389.75 210.75 pebbles -scale xs
+
+point 384.25 209.25 pebbles -scale xs
+
+point 378.5 209.0 pebbles -scale xs
+
+point 372.75 208.5 pebbles -scale xs
+
+point 367.0 207.75 pebbles -scale xs
+
+point 362.0 207.25 pebbles -scale xs
+
+point 355.75 206.75 pebbles -scale xs
+
+point 347.5 206.25 pebbles -scale xs
+
+point 341.75 205.75 pebbles -scale xs
+
+point 336.75 205.25 pebbles -scale xs
+
+point 331.0 204.75 pebbles -scale xs
+
+point 325.25 204.5 pebbles -scale xs
+
+point 319.75 203.5 pebbles -scale xs
+
+point 314.75 203.25 pebbles -scale xs
+
+point 309.25 202.75 pebbles -scale xs
+
+point 302.75 202.5 pebbles -scale xs
+
+point 295.25 201.75 pebbles -scale xs
+
+point 285.75 201.75 pebbles -scale xs
+
+point 280.5 202.0 pebbles -scale xs
+
+point 275.25 202.25 pebbles -scale xs
+
+point 301.25 214.5 scallop
+
+point 353.75 232.0 air-draught -orientation 264.1 -subtype summer
+
+point 583.25 283.75 air-draught -orientation 277.1 -subtype summer
+
+point 553.25 304.0 air-draught -orientation 254.7 -subtype summer
+
+point 505.0 349.75 air-draught -orientation 182.3 -subtype summer
+
+point 488.75 236.0 label -text "etr." -scale s
+
+point 485.75 330.5 label -text "etr." -scale s
+
+point 540.25 312.0 label -text "etr." -scale s
+
+point 535.0 272.75 label -text "etr." -scale s
+
+line wall
+  565.25 290.5
+  565.25 290.5 534.25 289.25 532.5 290.0
+  530.75 290.75 530.75 292.75 530.75 294.5
+  530.75 296.25 528.5 298.25 530.75 298.25
+  533.0 298.25 539.0 299.5 539.0 299.5
+  smooth off
+endline
+
+line wall
+  489.25 246.0
+  489.25 246.0 481.75 245.25 480.0 244.75
+  478.25 244.25 469.5 241.75 471.75 244.5
+  474.0 247.25 487.25 266.75 489.5 267.0
+  491.75 267.25 503.0 273.0 507.25 273.25
+  511.5 273.5 525.5 279.25 528.75 279.75
+  532.0 280.25 537.75 280.25 537.75 280.25
+  smooth off
+  564.0 279.5
+endline
+
+line wall
+  247.25 200.25
+  247.25 200.25 250.5 203.75 255.75 203.75
+  261.0 203.75 268.0 203.75 271.25 203.75
+  274.5 203.75 285.75 202.25 288.75 202.5
+  291.75 202.75 343.75 207.25 351.25 207.5
+  358.75 207.75 411.75 214.0 416.25 214.0
+  420.75 214.0 450.0 219.5 452.25 220.25
+  454.5 221.0 465.75 237.75 468.5 239.0
+  471.25 240.25 475.0 240.5 477.5 241.0
+  480.0 241.5 487.5 242.5 489.25 243.25
+endline
+
+line wall
+  231.25 202.5
+  231.25 202.5 229.75 204.5 231.25 204.5
+  232.75 204.5 244.25 205.25 245.25 204.5
+  246.25 203.75 244.25 201.0 244.25 201.0
+  smooth off
+endline
+
+point 529.056 296.115 station -name 4@BA4
+
+point 506.77600000000007 296.115 station -name 5@BA4
+
+point 488.446 270.895 station -name 6@BA4
+
+point 452.16600000000005 238.225 station -name 7@BA4
+
+point 416.356 218.375 station -name 8@BA4
+
+point 349.79600000000005 211.385 station -name 9@BA4
+
+point 288.706 204.965 station -name 10@BA4
+
+point 227.526 210.315 station -name 11@BA4
+
+endscrap
+
+

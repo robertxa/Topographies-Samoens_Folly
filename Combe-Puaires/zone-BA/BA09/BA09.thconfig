@@ -1,0 +1,129 @@
+encoding  utf-8
+  
+# File written by tro2therion.f90 (Xavier Robert)   
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2
+  
+source BA09.th
+source BA09.th2
+source BA09-coupe.th2
+
+# Add config file
+input ../../../config.thc 
+
+  
+layout xviexport
+	scale 1 500
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+  
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copye langue-fr
+  
+	doc-title "BA09"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 500
+	scale 1 250
+	scale-bar 25 m
+	#rotate 2.25
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "<it>Plan<ss> - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 14.5 cm
+	map-header 0 -05 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={BA09} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+   
+	# add extended-elev on the same pdf
+	map-image 200 130 n BA09-coupe.pdf
+
+endlayout
+ 
+layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	#copy header_coupe
+	copy langue-fr
+  
+	doc-title "BA09"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 500
+	scale 1 250
+	scale-bar 25 m
+	#rotate 2.25
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 21 cm
+	map-header 0 00 off
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+#	# To change the Title          
+#	code tex-map
+#		\edef\temp{\the\cavename}   % cavename from Therion
+#		\edef\nostring{}            % empty string
+#		\ifx\temp\nostring          % test if cavename is empty
+#			% if empty reassign cavename to describe selected maps as a group
+#			\cavename={L39} 		
+#		\else % if not empty keep the value set by therion, or assign an override cavename here
+# 		\fi
+#		\newtoks\club \club={Groupe Spéléologique Vulcain}
+#	endcode  
+  
+endlayout
+
+
+#export map -fmt xvi -layout xviexport -o BA09-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o BA09-coupe.xvi
+  
+ 
+export map -projection extended -layout my_layout-coupe -o BA09-coupe.pdf
+export map -o BA09-plan.pdf -layout my_layout
+export model -o BA09.lox
+export map -proj plan -fmt kml -o BA09.kml -layout my_layout

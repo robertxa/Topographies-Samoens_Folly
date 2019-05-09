@@ -1,0 +1,46 @@
+encoding utf-8
+
+ survey LS22 -title "LS22" -entrance "LS22"
+    
+ centerline -title "LS22 0_0b 9_LS22"
+ 
+ cs lat-long
+ fix LS22 46.113833  6.8113333  2422
+
+  date 2009.09.27
+  	team "Stéphane Lips"
+  	team "Antoine Aigueperse" 
+  date 2012.07.17
+  	team "Stéphane Lips"
+  	team "Xavier Robert"
+  explo-date 2008.09.21
+  	explo-team "Stéphane Lips"
+  	explo-team "Bernard Lips"
+  explo-date 2012.07.17
+  	explo-team "Stéphane Lips"
+  	explo-team "Xavier Robert"
+  #explo-date  2009.09.27
+  	explo-team "Stéphane Lips"
+  	explo-team "Antoine Aigueperse"
+ 
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length backcompass backclino left right up down
+extend right
+0          0b                         0.00    0.00    0.00   1.00  13.00  13.00   0.30
+0          1                        13.44  187.00  -78.00   3.00   1.00   1.00   1.00
+1          2                         3.83  187.00  -63.00   2.00  15.00  15.00   3.00
+2          3                        17.38   18.00  -88.00   0.20   4.00   4.00  20.00
+3          4                         9.50    0.00  -90.00   0.30   3.00   3.00  20.00
+3          5                         4.65   80.00  -42.00   0.60  10.00  10.00   1.00
+5          6                        10.40    0.00  -90.00   0.50   1.00   0.50  10.00
+6          7                         5.00  120.00    0.00   0.60   0.60   2.00   1.50 # visée fictive
+7          LS22                         2.00    0.00  -90.00   0.60   0.60   0.00   3.00 # Visée fictive
+
+5          9                        14.00    0.00   90.00   1.00   1.00   6.00   0.00 # Visée fictive
+9          10                      10.00  290.00   50.00   1.00   1.00   2.00   0.00 # visée fictive
+  
+   endcenterline
+
+endsurvey

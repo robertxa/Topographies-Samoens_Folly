@@ -1,0 +1,134 @@
+encoding  utf-8
+ 
+ survey trousD -title "trous D"
+
+# Fichier contenant les positions des entrées de la zone D, Samoens, France
+
+ centerline -extend right
+cs lat-long
+
+fix       D02       46.105050     006.79461      2195
+fix       D04       46.105883     006.79606      2283
+fix       D05       46.105350     006.79628      2252
+fix       D06       46.105550     006.79651      2272
+fix       D07       46.105683     006.79661      2285
+fix       D08       46.105650     006.79710      2274
+fix       D10       46.106866     006.79558      2230
+#fix       D11       46.106866     006.79563      2235
+fix       D12       46.106583     006.79531      2226
+fix       D14       46.106583     006.79505      2219
+fix       D15       46.106183     006.79460      2217
+fix       D16       46.106433     006.79383      2200 # ALT PAR DEFAULT
+fix       D17       46.106366     006.79416      2192
+fix       D18       46.106266     006.79401      2200
+fix       D19       46.106333     006.79296      2200 # ALT PAR DEFAULT
+fix       D20       46.106300     006.79291      2172
+fix       D22       46.105883     006.79468      2232
+fix       D23A      46.105783     006.79340      2200 # ALT PAR DEFAULT
+fix       D23B      46.105833     006.79340      2200 # ALT PAR DEFAULT
+fix       D23C      46.105950     006.79340      2200 # ALT PAR DEFAULT
+fix       D24       46.105966     006.79270      2158
+fix       D25       46.106350     006.79253      2161
+fix       D26       46.105850     006.79250      2152
+fix       D27       46.105666     006.79203      2130
+fix       D28       46.105733     006.79226      2144
+fix       D29       46.105433     006.79216      2132
+fix       D30       46.106383     006.79455      2205
+fix       D31       46.106433     006.79460      2215
+fix       D32       46.106616     006.79456      2201
+#fix       D33       46.105350     006.79265      2166
+fix       D35       46.105433     006.79221      2133
+fix       D36       46.106250     006.79490      2217
+fix       D37       46.106216     006.79313      2160
+fix       D38       46.106166     006.79485      2229
+fix       D39       46.105933     006.79341      2193
+fix       D40       46.105983     006.79748      2298
+fix       D41       46.105533     006.79123      2121
+fix       D50       46.106883     006.79505      2224
+fix       D51       46.105983     006.79801      2299
+fix       D60       46.106183     006.79503      2231
+
+
+station   D02       "D02" entrance continuation explored 30m
+station   D04       "D04" entrance continuation explored 07m
+station   D05       "D05" entrance continuation explored 20m
+station   D06       "D06" entrance continuation explored 10m
+station   D07       "D07" entrance continuation explored 14m
+station   D08       "D08" entrance continuation explored 15m
+station   D10       "D10" entrance continuation explored 20m
+station   D12       "D12" entrance continuation explored 30m
+station   D14       "D14" entrance continuation explored 15m
+station   D15       "D15" #entrance continuation explored 00m
+station   D16       "D16" entrance continuation explored 10m
+station   D17       "D17" entrance continuation explored 10m
+station   D18       "D18" entrance continuation explored 15m
+station   D19       "D19" entrance continuation explored 40m
+station   D20       "D20" entrance continuation explored 40m
+station   D22       "D22" entrance continuation explored 80m
+station   D23A      "D23A" entrance #continuation explored 00m
+station   D23B      "D23B" entrance # continuation explored 10m
+station   D23C      "D23C" entrance # continuation explored 10m
+station   D24       "D24" entrance continuation explored 15m
+station   D25       "D25" entrance continuation explored 04m
+station   D26       "D26" entrance continuation explored 30m
+station   D27       "D27" entrance continuation explored 70m
+station   D28       "D28" entrance continuation explored 17m
+station   D29       "D29" entrance continuation explored 19m
+station   D30       "D30" entrance continuation explored 15m
+station   D31       "D31" entrance continuation explored 17m
+station   D32       "D32" entrance continuation explored 20m
+station   D35       "D35" entrance continuation explored 60m
+station   D36       "D36" entrance continuation explored 10m
+station   D37       "D37" entrance continuation explored 45m
+station   D38       "D38" entrance continuation explored 40m
+station   D39       "D39" entrance continuation explored 08m
+station   D40       "D40" entrance continuation explored 15m
+station   D41       "D41" entrance continuation explored 10m
+station   D50       "D50" entrance #continuation explored 00m
+station   D51       "D51" entrance # continuation explored 10m
+station   D60       "D60" entrance continuation explored 15m
+
+#data nosurvey from to  #definition of relation between points
+##flags splay
+#flags surface
+#D02       D04
+#D04       D05
+#D05       D06
+#D06       D07
+#D07       D08
+#D08       D10
+#D10       D12
+#D12       D14
+#D14       D15
+#D15       D16
+#D16       D17
+#D17       D18
+#D18       D19
+#D19       D20
+#D20       D22
+#D22       D23A
+#D23A      D23B
+#D23B      D23C
+#D23C      D24
+#D24       D25
+#D25       D26
+#D26       D27
+#D27       D28
+#D28       D29
+#D29       D30
+#D30       D31
+#D31       D32
+#D32       D35
+#D35       D36
+#D36       D37
+#D37       D38
+#D38       D39
+#D39       D40
+#D40       D41
+#D41       D50
+#D50       D51
+#D51       D60
+  
+endcenterline
+
+ endsurvey

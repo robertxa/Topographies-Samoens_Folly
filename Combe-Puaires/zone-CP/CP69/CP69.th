@@ -1,0 +1,27 @@
+encoding utf-8
+
+survey CP69 -title "CP69" -entrance "CP69"
+ 
+centerline -extend right
+   date 2015.09.15
+  cs lat-long 
+  fix CP69   46.11442       6.79188       1954.000000 
+  team "Stéphane Lips"
+  team "Xavier Robert"
+  team "Bernard Lips"
+  explo-date 2015.09.15
+  explo-team "Stéphane Lips"
+  explo-team "Xavier Robert"
+  explo-team "Bernard Lips"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+#	extend right
+   0 0b    0.0      0.0     0.0      0.5      1.2      5.3      1
+   0b 1    5.07     316.    -27.      0.5     0.5      5      1
+   0b CP69    6.3       224.    65.       0.4    0.4      0.0      5
+     
+endcenterline
+    
+endsurvey

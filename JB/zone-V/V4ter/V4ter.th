@@ -1,0 +1,32 @@
+encoding utf-8
+
+survey V4ter -title "V4ter" -entrance "6"
+
+ centerline
+ cs lat-long
+ fix 6  46.10209    6.77944  1830
+   date 2013.07.13
+  team "Xavier Robert"
+  team "Nasir Ahmed"
+  team "Frédéric Alvarez"
+  explo-date 2013.07.13
+  explo-team "Xavier Robert"
+  explo-team "Nasir Ahmed"
+  explo-team "Frédéric Alvarez"
+  explo-team "David Parrot"
+  units lenght meters
+  units compass deg
+  units clino deg
+   data normal from to length compass clino left right up down
+   extend right
+   0	0b	0	0	0	0.3	0.3	0.3	0.3 # courant d'air provenant d'une petite lucarnem ‡ dÈsobstruer
+   0	1	2.63	61	25	0.5	0.5	0.5	0.5	# direction originale = 161
+   1	2	9.08	325	33	0.5	0.5	0.3	0.3
+   2	3	3.80	2	33	1	0.5	0.3	0.3
+   extend left
+   3	4	3.02	377	33	0.2	0.2	0.1	0.1	# entree imp.
+   extend right
+   3	5	2.74	51	22	0.4	0.4	0.3	0.3
+   5	6	3.74	25	27	1	1	0.6	0.3
+   endcenterline
+  endsurvey

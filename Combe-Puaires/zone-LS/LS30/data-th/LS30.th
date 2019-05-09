@@ -1,0 +1,31 @@
+encoding utf-8
+
+survey LS30 -title "LS30" -entrance "LS30"
+  
+     
+ centerline
+   date 2009.09.26
+ cs lat-long
+ fix       LS30     46.114316     006.81015      2395
+  team "Stéphane Lips"
+  team "Antoine Aigueperse"
+  explo-date 2008.09.21
+  explo-team "Josiane Lips"
+  explo-date 2009.09.26
+  explo-team "Stéphane Lips"
+  explo-team "Antoine Aigueperse"
+   units lenght meters
+   units compass grad
+   units clino grad
+   data normal from to length compass clino left right up down
+   LS30 0double    0.000000       0.000000       0.000000       1.500000      0.5000000       0.000000       1.500000    
+   0double 1    6.330000       211.0000      -21.00000      0.7000000      0.7000000       1.000000       5.000000    
+   1 2    8.710000       200.0000      -84.00000       1.000000       1.000000       1.000000       3.000000    
+   2 3    4.590000       195.0000      -66.00000      0.6000000      0.7000000       1.500000       5.000000    
+   3 4    7.070000       0.000000      -100.0000      0.7000000      0.7000000       5.000000       4.000000    
+   4 5    8.420000       185.0000      -84.00000       2.000000       1.000000       3.000000       5.000000    
+   5 6    5.930000       260.0000      -90.00000       1.500000      0.5000000       3.000000       1.500000    
+   6 7    5.700000       230.0000      -72.00000      0.4000000      0.4000000       3.000000       1.000000    
+   7 8    10.10000       140.0000      -87.00000      0.5000000      0.5000000       3.000000       1.500000    
+ endcenterline
+ endsurvey

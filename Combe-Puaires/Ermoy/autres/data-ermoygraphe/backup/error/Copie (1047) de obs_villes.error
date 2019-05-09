@@ -1,0 +1,649 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<link href="/css/css.css" rel="stylesheet" type="text/css">
+<title>Meteociel - Observations Chamonix-Mont-Blanc - données météo de la station  - Tableaux horaires en temps r&eacute;el</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Relevés horaires des observations météo de Chamonix-Mont-Blanc. Températures, pression, précipitations, vent en temps réel ">
+<meta name="keywords" lang="fr" content="meteo,meteociel,temps réel, temps reel, observations, observation, meteo ciel, meteociel, pluie, precipitations, soleil, température, temp, neige, report, rapport, données, relevé, radars, satallite, meteo">
+<meta http-equiv="Content-Language" content="fr">
+<meta name="reply-to" content="webmaster@meteociel.com">
+<meta name="category" content="Actualités">
+<meta name="robots" content="index, follow">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="7 days">
+<meta name="author" lang="fr" content="Thomas Canda">
+<meta name="copyright" content="00035819 copyright depot">
+<meta name="generator" content="dreamweaver">
+<meta name="identifier-url" content="www.meteociel.com">
+<SCRIPT language="JavaScript">
+window.status=("www.meteociel.fr la météo en temps réel");
+</SCRIPT>
+
+
+</head>
+<body>
+<table align="center" border="0" width="950">
+    <tbody>
+    <tr>
+      <td height="81" colspan="2" class="texte"><div align="center"><img src="/obs3.png" height="81" width="978"></div></td>
+    </tr>
+    <tr class="texte">
+        <td class="texte" valign="top" width="160" rowspan="2"><script type="text/javascript">
+<!--
+function DivStatus( nom, numero, classs )
+{
+	var divID = nom + numero;
+	if ( document.getElementById && document.getElementById( divID ) ) // Pour les navigateurs récents
+		{
+			Pdiv = document.getElementById( divID );
+			PcH = true;
+		}
+	else if ( document.all && document.all[ divID ] ) // Pour les veilles versions
+		{
+			Pdiv = document.all[ divID ];
+			PcH = true;
+		}
+	else if ( document.layers && document.layers[ divID ] ) // Pour les tres veilles versions
+		{
+			Pdiv = document.layers[ divID ];
+			PcH = true;
+		}
+	else
+		{
+			
+			PcH = false;
+		}
+	if ( PcH )
+		{
+			Pdiv.className = ( Pdiv.className == 'cachediv' ) ? '' + classs + '': 'cachediv';		
+			EcrireCookie(divID, Pdiv.className);
+	
+		}
+}
+function ChangeSigne ( nom )
+{
+	var divID = nom;
+	if ( document.getElementById && document.getElementById( divID ) ) // Pour les navigateurs récents
+		{
+			Pdiv = document.getElementById( divID );
+			PcH = true;
+		}
+	else if ( document.all && document.all[ divID ] ) // Pour les veilles versions
+		{
+			Pdiv = document.all[ divID ];
+			PcH = true;
+		}
+	else if ( document.layers && document.layers[ divID ] ) // Pour les tres veilles versions
+		{
+			Pdiv = document.layers[ divID ];
+			PcH = true;
+		}
+	else
+		{
+			
+			PcH = false;
+		}
+	if ( PcH )
+		{
+			var OldImg = Pdiv.innerHTML;
+			
+			if (OldImg == '<img src="http://static.meteociel.fr/Banner/plus.png">')
+			{
+				Pdiv.innerHTML = '<img src="http://static.meteociel.fr/Banner/moins.png">';
+			}
+			
+			else if (OldImg == '<img src="http://static.meteociel.fr/Banner/moins.png">')
+			{
+				Pdiv.innerHTML = '<img src="http://static.meteociel.fr/Banner/plus.png">';
+			}
+		}
+}
+
+
+function EcrireCookie(nom, valeur)
+{		
+		
+	//alert(nom + "=" + escape(valeur));
+	
+	date=new Date;
+	date.setMonth(date.getMonth()+1);
+	document.cookie = nom + "=" + escape(valeur) + "; expires=" + date.toGMTString() + "; path=/; domain=.meteociel.fr";
+	/*
+	   var argv=EcrireCookie.arguments;
+	var argc=EcrireCookie.arguments.length;
+	var expires=(argc > 2) ? argv[2] : null;
+	var path=(argc > 3) ? argv[3] : null;
+	var domain=(argc > 4) ? argv[4] : null;	
+	var secure=(argc > 5) ? argv[5] : false;
+	document.cookie=nom+"="+escape(valeur)+	((expires==null) ? "" : ("; expires="+expires.toGMTString()))+
+	((path==null) ? "" : ("; path="+path))+ ((domain==null) ? "" : ("; domain="+domain))+ ((secure==true) ? "; secure" : "");
+*/
+}
+-->
+</script>
+<table align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr valign="top">
+      <td width="140" height="1073" align="center" class="texte"><font size="2" face="Arial">
+        
+	
+	</font>
+        <table align="center" cellspacing="1" width="145">
+          <tbody>
+            <tr bgcolor="#ec2e00" class="texte" height="10">
+              <td width="56" height="20" valign="middle" bgcolor="#DDF7F2"><div align="center"><font size="2" face="Arial"><a href="/index.php">Accueil </a></font></div></td>
+              <td width="92" bgcolor="#DDF7F2"><div align="center">
+                  979 connectés                </div></td>
+            </tr>
+                              <tr>
+                    <td height="18" class="user_area" colspan="2" valign="middle">
+                    <font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Menu Utilisateur</strong></font></td>
+                  </tr>
+            <tr bgcolor="#97bedd" class="texte">
+              <td height="21" colspan="2" valign="middle"><table border="0" cellpadding="0" cellspacing="5" width="151">
+                        <tbody>
+                          <tr align="left" valign="top">
+                            <td width="141" height="14" bgcolor="#EBFAF7" class="texte"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0" alt="puce" /> <a href="/temps-reel/inscription.php">Inscription</a><br />
+                            <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="/connexion.php"> Se connecter </a></td>
+                          </tr>
+                          <tr align="left" valign="top">
+                            <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><span class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /></span><a href="http://forums.meteociel.fr/" target="_blank">Forums Meteociel</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+          </tbody>
+        </table><br />
+                        <table align="center" cellspacing="0" width="155">
+          <tbody>
+            <tr bgcolor="#97bedd" class="texte" height="10" onclick="ChangeSigne('cat7'); DivStatus( 'menu', '7', 'showdiv' );" style="cursor:pointer;">
+              <td height="18" class="titre_categorie" colspan="2" valign="middle" style="cursor:pointer;">
+              
+                    
+              <div style="position:relative; float:left; cursor:pointer;"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Temps réel</strong></font></div><div id="cat7" style="position:relative; float:right; padding-right:5px; padding-top:3px; cursor:pointer;"><img src="http://static.meteociel.fr/Banner/moins.png"></div></td>
+            </tr>
+           </tbody>
+	   </table>
+
+          <div id="menu7" class="" style="width:155px;">
+	   <table  align="center" cellspacing="1" width="155">
+           <tr bgcolor="#97bedd" class="texte">
+              <td height="21" colspan="2" valign="middle">
+	        <table border="0" cellpadding="0" cellspacing="5" width="151">
+                  <tbody>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;">
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/temps-reel.php">Observations</a> <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/temps-reel/observation.php">Reporter vos obs</a>.<font size="2"><br>
+		      <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/cartes_obs/metardesc.php">D&eacute;tails des obs.</a><br>
+		      <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/user/day-gallery.php">Galerie des obs.</a>
+	               </td>
+		      </tr>
+		      <tr align="left" valign="top">
+		      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;">
+	
+	
+			<img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/temperatures.php">Temp&eacute;rature</a><br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/tmini.php">Temp&eacute;rature min</a>.<br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/tmaxi.php">Temp&eacute;rature max</a>. <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/sst.php">Température mer</a><br />
+                       </td>
+		      </tr>
+		      <tr align="left" valign="top">
+		      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;">
+		     	<img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/windchill.php">Windchill</a><br>
+		      <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/humidex.php">Humidex</a> <br>
+		      
+		     </td>
+			</tr>
+		      <tr align="left" valign="top">
+		      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;">
+	
+
+		       <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/isos.php">Isobares</a> <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/pression.php">Pression</a> <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/vent.php">Vent  moyen</a> <br>
+                      </td>
+		      </tr>
+		      <tr align="left" valign="top">
+		      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;">
+	
+		      <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/nebu.php">N&eacute;bulosit&eacute;</a> <br>
+		      <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/humi.php">Humidit&eacute;</a> <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/rr.php">Pluie 24H</a> <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/enso.php">Ensoleillement</a><br>
+                       </td>
+		      </tr>
+		      <tr align="left" valign="top">
+		      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;">
+	
+		        
+			<img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/satellite.php">Satellite</a> <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/foudre.php">Foudre</a> <br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/observations-meteo/radar.php">Radar</a> <br>
+                      </td>
+		      </tr>
+                  </tbody>
+                </table>
+		
+		
+		</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+	
+        </div>
+        <font size="2" face="Arial"><br>
+        </font>
+                <table align="center" cellspacing="0" class="titre_categorie" width="155">
+            <tr onclick="ChangeSigne('cat8'); DivStatus( 'menu', '8', 'showdiv' );" style="cursor:pointer;">
+              <td>
+              <div style="position:relative; float:left"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Pr&eacute;vi R&eacute;gions </strong></font></div>
+              <div id="cat8" style="position:relative; float:right; padding-right:5px; padding-top:3px;"><img src="http://static.meteociel.fr/Banner/moins.png"></div>
+              </td>
+            </tr>
+        </table>
+        <div id="menu8" class="">
+        
+         <table  align="center" cellspacing="1" width="155">
+           <tr bgcolor="#97bedd" class="texte">
+              <td height="21"  valign="middle">
+	  
+        <table align="center" cellpadding="0" cellspacing="5" width="151">
+          <tbody>
+            <tr align="left" valign="top">
+              <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;">
+			  <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://alsace-meteo.fr/"  target="_blank" title="Alsace"> Alsace </a><br>
+            <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://aquitaine.meteociel.fr/"  title="Prevision Aquitaine" target="_blank">Aquitaine</a><br>
+	   	    <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://centre-meteo.fr/" title="Prévision Centre" target="_blank">Centre</a><br>
+			  <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://haute-normandie-meteo.fr/"  target="_blank" title="Haute Normandie"> Haute Normandie</a>
+            <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://ile-de-france-meteo.fr/" title="Ile-De-France" target="_blank">Ile-De-France</a><br>
+            <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://languedoc-roussillon-meteo.fr/" title="Languedoc-Roussillon" target="_blank">Languedoc-Rouss.</a><br>
+            <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://midi-pyrenees-meteo.fr/" title="Midi Pyr&eacute;n&eacute;es" target="_blank">Midi Pyr&eacute;n&eacute;es</a><br>
+			  <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://nord-pas-de-calais-meteo.fr/"  target="_blank" title="Nord Pas de Calais">Nord Pas de Calais</a><br>
+			  <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://paca-meteo.fr/"  target="_blank" title="Provence Alpes Cote d'Azur">PACA</a><br>
+		    <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://pays-de-la-loire-meteo.fr/"  target="_blank" title="Pays de la Loire"> Pays de la Loire</a><br>
+                        <img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://rhone-alpes-meteo.fr/"  title="Rh&ocirc;ne-Alpes" target="_blank">Rh&ocirc;ne-Alpes</a><br>
+
+			 
+						</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </td>
+    </tr></table>
+        </div>
+<br />
+        
+<table align="center" cellspacing="0" class="titre_categorie" width="155">
+            <tr onclick="ChangeSigne('cat6'); DivStatus( 'menu', '6', 'showdiv' );" style="cursor:pointer;">
+              <td>
+              <div style="position:relative; float:left"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Pr&eacute;visions</strong></font></div><div id="cat6" style="position:relative; float:right; padding-right:5px; padding-top:3px;"><img src="http://static.meteociel.fr/Banner/moins.png"></div>
+              </td>
+            </tr>
+        </table>
+        <div id="menu6" class="">
+        <table align="center" cellspacing="1" width="155">
+          <tbody>
+            <tr bgcolor="#eaedf2">
+              <td width="140" height="21" valign="middle" bgcolor="#97bedd">
+              
+              
+              
+              
+              
+<table border="0" cellpadding="0" cellspacing="5" width="151">
+                  <tbody>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"><a href="/prevision/genprev0.php" class="texte">Pr&eacute;visions 3 jours </a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><div align="center"><strong><font size="2" face="Arial"><a href="/prevision/genprev0.php"><img src="/prevision/mini/prev0_t.png" alt="Pr&eacute;visions m&eacute;t&eacute;o" width=90  border=0></a></font></strong></div></td>
+                    </tr>
+                                        <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><a href="/prevville.php"><img src="http://static.meteociel.fr/Banner/car3.gif" alt="prévisions meteo gratuites" border="0" />Pr&eacute;visions par Villes</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><a href="/modeles/cfs.php"><img src="http://static.meteociel.fr/Banner/car3.gif" alt="meteo" border="0" />CFS Tend. Saison.</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td width="141" height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><div align="left"><center><script type="text/javascript"><!--
+google_ad_client = "pub-0446706340290364";
+/* 120x90, date de création 01/01/10 */
+google_ad_slot = "9297700434";
+google_ad_width = 120;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+        </center></div></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <br>
+        <table align="center" cellspacing="0" class="titre_categorie" width="155">
+            <tr onclick="ChangeSigne('cat5'); DivStatus( 'menu', '5', 'showdiv' );" style="cursor:pointer;">
+              <td>
+              <div style="position:relative; float:left"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Climatologie</strong></font></div><div id="cat5" style="position:relative; float:right; padding-right:5px; padding-top:3px;"><img src="http://static.meteociel.fr/Banner/moins.png"></div>
+              </td>
+            </tr>
+        </table>
+        <div id="menu5" class="">
+        <table align="center" cellspacing="1" width="155">
+          <tbody>
+            <tr bgcolor="#eaedf2">
+              <td width="140" height="21" valign="middle" bgcolor="#97bedd" class="texte"><table border="0" cellpadding="0" cellspacing="5" width="151">
+                  <tbody>
+                    <tr align="left" valign="top">
+                      <td bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo"> <a href="/climatologie/climato.php" class="Style6">Tableaux  et graphiques par villes</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><span class="texte"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="météo"> <a href="/temps-reel/obs_villes.php">Tableaux horaires</a></span></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo"> <a href="/temps-reel/obs_temps.php">Cartes horaires</a></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <font size="2" face="Arial"><br>
+        </font>
+        <table align="center" cellspacing="0" class="titre_categorie" width="155">
+            <tr onclick="ChangeSigne('cat4'); DivStatus( 'menu', '4', 'showdiv' );" style="cursor:pointer;">
+              <td>
+              <div style="position:relative; float:left"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Phénomènes météo</strong></font></div><div id="cat4" style="position:relative; float:right; padding-right:5px; padding-top:3px;"><img src="http://static.meteociel.fr/Banner/moins.png"></div>
+              </td>
+            </tr>
+        </table>
+        <div id="menu4" class="">
+        <table align="center" cellspacing="1" width="155">
+          <tbody>
+            <tr bgcolor="#eaedf2">
+              <td height="21" valign="middle" bgcolor="#97bedd" class="texte"><table border="0" cellpadding="0" cellspacing="5" width="151">
+                <tbody>
+                  <tr align="left" valign="top">
+                    <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><div align="left"><font size="2" face="Arial"><a href="/tempete/xynthia/"><img src="http://static.meteociel.fr/Banner/car3.gif" alt="M&eacute;t&eacute;o" border="0" /> Temp&ecirc;te Xynthia </a></font></div></td>
+                  </tr>
+                </tbody>
+              </table></td>
+            </tr>
+            <tr bgcolor="#eaedf2">
+              <td width="140" height="21" valign="middle" bgcolor="#97bedd" class="texte"><table border="0" cellpadding="0" cellspacing="5" width="151">
+                  <tbody>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><div align="center"><font size="2" face="Arial"><a href="/phenomenes_meteo/index.php"><img src="http://www.meteociel.fr/vigilance/suivi_t.jpg" alt="Surveillance actuelle" width="110" height="120" border="0" /></a></font></div></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+</div>
+        <font size="2" face="Arial"><br>
+        </font>
+        <table align="center" cellspacing="0" class="titre_categorie" width="155">
+            <tr onclick="ChangeSigne('cat3'); DivStatus( 'menu', '3', 'showdiv' );" style="cursor:pointer;">
+              <td>
+              <div style="position:relative; float:left"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Mod&egrave;les</strong></font></div><div id="cat3" style="position:relative; float:right; padding-right:5px; padding-top:3px;"><img src="http://static.meteociel.fr/Banner/moins.png"></div>
+              </td>
+            </tr>
+        </table>
+        <div id="menu3" class="">
+        <table align="center" cellspacing="1" width="155">
+          <tbody>
+            <tr bgcolor="#eaedf2">
+              <td width="140" height="21" valign="middle" bgcolor="#97bedd" class="texte">
+              <table border="0" cellpadding="0" cellspacing="5" width="151">
+                  <tbody>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="Météo" /> <a href="/modeles/coupes_gfs.php">Coupes GFS </a></td>
+                    </tr>
+		    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="Météo" /> <a href="/modeles/coupes_wrf.php">Coupes WRF 0.05° </a></td>
+                    </tr>
+
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo" /> <a href="/modeles/sondage_gfs.php">Sondages GFS </a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo" /> <a href="/modeles/sondage_wrf.php">Sondages WRF </a></td>
+                    </tr>
+		    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="Meteo"> <a href="/modeles/index.php">GFS HR 0.5&deg;</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="Météo" /> <a href="/modeles/gfse_cartes.php">GFS Europe</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#FFFFFF" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo wrf 0.05"> <a href="/modeles/wrfnmm.php">WRF NMM 0.05&deg;</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#FFFFFF" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo wrf 0.05" /> <a href="http://www.meteociel.fr/modeles/wrfnmm.php?map=10">WRF NMM 0.08&deg;</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="Meteo ecmwf"> <a href="/modeles/ecmwf.php">ECMWF</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="Meteo ukmo"> <a href="/modeles/ukmo2.php">UKMO</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="modeles nogaps"> <a href="/modeles/nogapse_cartes.php">NOGAPS</a></td>
+                    </tr>
+                     <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="modele coamps"> <a href="/modeles/coamps_cartes.php">COAMPS</a></td>
+                    </tr>
+                   <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo gme dwd"> <a href="/modeles/gmee_cartes.php">GME/DWD</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="météo wmc russie"> <a href="/modeles/wmce_cartes.php">WMC Moscou</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="météo"> <a href="/modeles/jma.php">JMA</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo"> <a href="/modeles/geme_cartes.php">GEM</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#FF9900" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="meteo"> <a href="/modeles/bome_cartes.php">BOM ACCESS</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="météo"> <a href="/modeles/ensembles.php">Ensembles</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td width="141" height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="archive météo"> <a href="/modeles/archives/archives.php">Archives NCEP</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><span class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="front météo" /> <a href="/fronts/index.php">Fronts et Analyse</a></span></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><center><script type="text/javascript"><!--
+google_ad_client = "pub-0446706340290364";
+/* 125x125, date de création 01/01/10 */
+google_ad_slot = "6513216479";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <font size="2" face="Arial"><br>
+        </font>
+          <table align="center" cellspacing="0" class="titre_categorie" width="155">
+          <tr onclick="ChangeSigne('cat2'); DivStatus( 'menu', '2', 'showdiv' );" style="cursor:pointer;">
+              <td>
+              <div style="position:relative; float:left"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Pratique</strong></font></div><div id="cat1" style="position:relative; float:right; padding-right:5px; padding-top:3px;"><img src="http://static.meteociel.fr/Banner/moins.png"></div>
+              </td>
+            </tr>
+        </table>
+        <div id="menu2" class="">
+        <table align="center" cellspacing="1" width="155">
+          <tbody>
+            <tr bgcolor="#eaedf2">
+              <td width="140" height="21" valign="middle" bgcolor="#97bedd" class="texte">
+              <table border="0" cellpadding="0" cellspacing="5" width="151">
+                  <tbody>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><a href="/FAQ-modeles.php"><img src="http://static.meteociel.fr/Banner/car3.gif" alt="FAQ modeles" border="0" /></a> <a href="/Arnaud/index.php">Dossier modeles</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><a href="/FAQ-modeles.php"><img src="http://static.meteociel.fr/Banner/car3.gif" alt="FAQ modeles" border="0" /> FAQ Modeles </a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><a href="http://images.meteociel.fr/"><img src="http://static.meteociel.fr/Banner/car3.gif" alt="FAQ modeles" border="0" /> Héberger image </a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce" /> <a href="http://www.meteo-paris.com/chronique/" target="_blank">Chronique 1850</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><a href="http://www.meteo-paris.com/almanach/" target="_blank"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"   alt="puce"> Almanach </a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td width="141" height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/actualitee/livres/index.php">Livres</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/livre_or.php">Livre d'Or </a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/dossier/index.php">Dossiers</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <font size="2" face="Arial"><br>
+        </font>
+        <table align="center" cellspacing="0" class="titre_categorie" width="155">
+            <tr onclick="ChangeSigne('cat1'); DivStatus( 'menu', '1', 'showdiv' );" style="cursor:pointer;">
+              <td>
+              <div style="position:relative; float:left"><font face="Arial">&nbsp;<b>&nbsp;&bull;</b> <strong>Logiciels</strong></font></div><div id="cat1" style="position:relative; float:right; padding-right:5px; padding-top:3px;"><img src="http://static.meteociel.fr/Banner/moins.png"></div>
+              </td>
+            </tr>
+        </table>
+        <div id="menu1" class="">
+        <table align="center" cellspacing="1" width="155">
+          <tbody>
+            <tr bgcolor="#eaedf2">
+              <td width="140" height="21" valign="middle" bgcolor="#97bedd">
+              <table border="0" cellpadding="0" cellspacing="5" width="151">
+                  <tbody>
+                    <tr align="left" valign="top">
+                      <td width="141" height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/logiciels_meteo/gfs/index.php">GFS</a></td>
+                    </tr>
+                    <tr align="left" valign="top">
+                      <td height="14" bgcolor="#EBFAF7" class="texte" style="padding:3px;"><img src="http://static.meteociel.fr/Banner/car3.gif" border="0"  alt="puce"> <a href="/logiciels_meteo/cartes_meteo/index.php">&Eacute;diteur de cartes</a></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <br></td>
+    </tr>
+  </tbody>
+  <tr valign="top">
+    <td width="140" height="30" align="center">&nbsp;</td>
+  </tr>
+</table>
+</td>
+      <td valign="top" width="815">
+                        <table width="750" height="20" border="0" align="center" style="margin-top:17px;">
+              <tr>
+                <td><script src="/prevision/banner.jsp"></script></td>
+              </tr>
+        </table>
+            <table align="center" cellspacing="1" width="100%">
+                          <tbody>
+                            <tr bgcolor="#97bedd" class="titre_categorie">
+                              <td><b>&nbsp;&bull;Observations horaires et graphiques </strong></b>  [ <a href='/obs/pays.php'> Observations du monde </a> ] </td>
+                            </tr>
+                            <tr bgcolor="#97bedd">
+                              <td height="21" valign="middle"><table border="0" cellpadding="0" cellspacing="5" width="807">
+                                  <tbody>
+                                    <tr align="left" valign="top">
+                                      <td width="797" height="14" bgcolor="#DDF7F2" class="Style1">
+									  <p class="texte">
+   <center>  <script type="text/javascript"><!--
+google_ad_client = "pub-0446706340290364";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "DDF7F2";
+google_color_bg = "DDF7F2";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+                            <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                                </script></center>
+                                        </p>
+                                        <p class="texte">
+                                          <style><!--.popper{z-index:1000;position : absolute;visibility : hidden;}.Style14 {font-size: xx-small}--></style><DIV ID="topdeck" CLASS="popper"> </DIV><script lang=javascript src="/cartes_obs/script.js"></script><SCRIPT LANGUAGE="JavaScript">
+function openCarte()
+{
+  var child = window.open('http://neige.meteociel.fr/cartes_obs/pagecarte.php?code=7469','carte','width=350,height=370,status=yes');
+}
+</SCRIPT>
+<H1><center> Tableau d'observations pour <br>Chamonix-Mont-Blanc <small> ( 1042 m ) </small> <br><font size=2><a onmouseover="javascript:pop('Station Chamonix-Mont-Blanc','<font size=2><img src=http://neige.meteociel.fr/cartes_obs/carte.php?station=7469&scaling=1></font>','#88ffff');" onmouseout="javascript:kill();" href='javascript:openCarte();'>[Carte]</a> - <a href="/climatologie/villes.php?code=7469&mois=11&annee=2009">[Clim. mensuelle]</a> - <a href='obs_villes.php?code2=7469'> [ Observations d'aujourd'hui ] </a></font></center></H1><font size=4><center> <a rel='nofollow' href='/temps-reel/obs_villes.php?code2=7469&jour2=10&mois2=10&annee2=2009' STYLE='text-decoration: none;'>&lsaquo;&lsaquo;</a> mercredi 11 novembre 2009 <a rel='nofollow' href='/temps-reel/obs_villes.php?code2=7469&jour2=12&mois2=10&annee2=2009' STYLE='text-decoration: none;'>&rsaquo;&rsaquo;</a></center></font><p><center><table border=0   ><tr><td><form name=form1 action=/temps-reel/obs_villes.php>Station : <select name=code2><option value=7005> Abbeville<option value=7524> Agen<option value=7761> Ajaccio<option value=7632> Albi<option value=7139> Alençon<option value=7775> Alistro<option value=7482> Amberieu<option value=7230> Angers<option value=7738> Andorre Les Escaldes<option value=7420> Angoulême<option value=7688> Antibes<option value=7570> Aubenas<option value=7622> Auch<option value=7549> Aurillac<option value=7265> Auxerre<option value=7563> Avignon<option value=7257> Avord<option value=7299> Bâle / Mulhouse<option value=7019> Barfleur<option value=7790> Bastia<option value=7055> Beauvais<option value=7295> Belfort<option value=7530> Bergerac<option value=7288> Besançon<option value=7638> Béziers-Vias<option value=7602> Biarritz<option value=7503> Biscarosse<option value=7245> Blois<option value=7510> Bordeaux<option value=7002> Boulogne<option value=7497> Bourg-Saint-Maurice<option value=7255> Bourges<option value=7110> Brest<option value=7148> Brétigny<option value=7593> Briançon<option value=7107> Brignogan<option value=7438> Brive<option value=7027> Caen<option value=7754> Calvi<option value=7017> Cambrai<option value=7684> Cannes<option value=7749> Cap Bear<option value=7677> Cap Camarat<option value=7661> Cap Cépet<option value=7785> Cap Corse<option value=7004> Cap Gris Nez<option value=7695> Cap Ferrat<option value=7500> Cap Ferret<option value=7020> Cap de la Hague<option value=7028> Cap de la Hève<option value=7770> Cap Pertusato<option value=7791> Cap Sagro<option value=7635> Carcassonne<option value=7586> Carpentras<option value=7034> Carteret<option value=7502> Cazaux<option value=7216> Chemoulin<option value=7491> Chambéry / Aix-Les-Bains<option selected value=7469> Chamonix-Mont-Blanc<option value=7075> Charleville-Mézières<option value=7143> Chartres<option value=7140> Châteaudun<option value=7354> Châteauroux<option value=7024> Cherbourg<option value=7460> Clermont-Ferrand<option value=7412> Cognac<option value=7197> Colmar<option value=7057> Creil<option value=7603> Dax<option value=7031> Deauville<option value=7040> Dieppe<option value=7280> Dijon<option value=7125> Dinard<option value=7386> Dôle-Tavaux<option value=7010> Dunkerque<option value=7591> Embrun<option value=7173> Epinal<option value=7038> Evreux<option value=7780> Figari<option value=7535> Gourdon<option value=7525> Golfech<option value=7008> Gravelines<option value=7486> Grenoble/St-Etienne-St-Geoirs<option value=7487> Grenoble/agglo Le Versoud<option value=7360> Guéret<option value=7667> Hyères<option value=7116> Ile de Batz<option value=7314> Ile d'Oléron<option value=7311> Ile de Ré<option value=7203> Ile de Groix<option value=7678> Ile du Levant<option value=7753> Ile Rousse <option value=7647> Istres<option value=7306> La Roche s/yon<option value=7106> Landivisiau<option value=7283> Langres<option value=7118> Lannion<option value=7109> Lanveoc<option value=7134> Laval<option value=7150> Le Bourget<option value=7656> La Ciotat<option value=7046> Le Havre<option value=7675> Le Luc<option value=7235> Le Mans<option value=7752> La Parata<option value=7471> Le Puy<option value=7315> La Rochelle<option value=7207> Le Talut - Belle-Ile<option value=7003> Le Touquet<option value=7666> Leucate<option value=7015> Lille<option value=7434> Limoges<option value=7390> Lons-le-Saunier<option value=7205> Lorient<option value=7292> Luxeuil<option value=7480> Lyon - Bron<option value=7481> Lyon - Satolas<option value=7385> Mâcon<option value=7650> Marignane<option value=7653> Martigues<option value=7153> Melun<option value=7554> Mende - Brenoux<option value=7090> Metz<option value=7093> Metz-Nancy-Lorraine<option value=7558> Millau<option value=7560> Mont-Aigoual<option value=7607> Mont-de-Marsan<option value=7540> Montauban<option value=7577> Montélimar<option value=7643> Montpellier<option value=7156> Montsouris<option value=7181> Nancy - Ochey<option value=7180> Nancy - Essey<option value=7222> Nantes<option value=7260> Nevers<option value=7690> Nice<option value=7646> Nîmes - Garons<option value=7645> Nîmes - Courbessac<option value=7330> Niort<option value=7026> Oistream<option value=7579> Orange<option value=7249> Orléans<option value=7149> Orly<option value=7100> Ouessant<option value=7016> Paluel<option value=7379> Paray-le-Monial - St-Yan<option value=7156> Paris - Montsouris<option value=7610> Pau<option value=7081> Penly<option value=7428> Périgueux<option value=7747> Perpignan<option value=7117> Ploumanac'h<option value=7314> Pointe de Chassiron<option value=7200> Pointe de Penmarch<option value=7600> Pointe de Socoa<option value=7103> Pointe du Raz<option value=7133> Pointe du Roc<option value=7102> Pointe Saint Mathieu<option value=7335> Poitiers<option value=7029> Port-en-Bessin<option value=7670> Porquerolles<option value=7768> Porto-Vecchio<option value=7201> Quimper<option value=7070> Reims<option value=7130> Rennes<option value=7552> Rodez<option value=7157> Roissy<option value=7247> Romorantin<option value=7037> Rouen<option value=7588> Saint-Auban<option value=7120> Saint-Brieuc<option value=7169> Saint-Dizier<option value=7475> Saint-Etienne<option value=7740> Sainte-Leocadie<option value=7627> Saint-Girons<option value=7742> Saint-Michel-De-Cuxa<option value=7217> Saint-Nazaire<option value=7061> Saint-Quentin<option value=7300> Saint-Sauveur<option value=7648> Salon-de-Provence<option value=7641> Sète<option value=7765> Solenzara<option value=7190> Strasbourg<option value=7621> Tarbes<option value=7660> Toulon<option value=7631> Toulouse-Francazal<option value=7630> Toulouse-Blagnac<option value=7240> Tours<option value=7146> Toussus-le-Noble<option value=7145> Trappes<option value=7168> Troyes<option value=7210> Vannes<option value=7039> Valognes<option value=7374> Vichy<option value=7147> Villacoublay<option value=7022> Vigie du Homet<option value=0> ----------------------<option value=3091> Aberdeen (UK)<option value=10501> Aix-la-Chapelle (All)<option value=6712> Aigle (Sw)<option value=16054> Aoste (It)<option value=6450> Anvers (Be)<option value=6601> Bâle - Dinningen (Sw)<option value=6458> Beauvechain (Be)<option value=6631> Berne Liebefeld (Sw)<option value=6478> Bierset (Be)<option value=8025> Bilbao (Esp)<option value=3965> Birr (Ir)<option value=10513> Bonn (All)<option value=3862> Bournemouth (UK)<option value=6451> Bruxelles (Be)<option value=8075> Burgos (Esp)<option value=16153> Cap Mele (It)<option value=6449> Charleroi (Be)<option value=6605> Chasseral (Sw)<option value=6432> Chièvres (Be)<option value=10929> Constance (All)<option value=6784> Davos (Sw)<option value=3969> Dublin (Ir)<option value=6702> La Dôle (Sw)<option value=3166> Edinburgh (UK)<option value=6370> Eindhoven (PB)<option value=6496> Elsenborn (Be)<option value=6616> Fahy (Sw)<option value=10908> Feldberg-Schwarzwald (All)<option value=6456> Florennes (Be)<option value=10803> Fribourg (All)<option value=10637> Frankfort (All)<option value=16121> Gênes (It)<option value=6700> Genève (Sw)<option value=8184> Gerona (Esp)<option value=8495> Gibraltar (UK)<option value=3134> Glasgow (UK)<option value=6717> Grand Saint Bernard (Sw)<option value=3894> Guernesey (UK)<option value=3882> Herstmonceux (UK)<option value=8094> Huesca (Esp)<option value=8373> Ibiza (Esp)<option value=3895> Jersey (UK)<option value=6730> Jungfraujoch (Sw)<option value=10727> Karlsruhe (All)<option value=6479> Kleine-Brogel (Be)<option value=6400> Koksijde (Be)<option value=6619> La Fretaz (Sw)<option value=10805> Lahr (All)<option value=8171> Lerida (Esp)<option value=6612> Les Eplatures (Sw)<option value=8579> Lisbonne (Po)<option value=6760> Locarno (Sw)<option value=8084> Logrono (Esp)<option value=3772> London (UK)<option value=6770> Lugano (Sw)<option value=6590> Luxembourg (Lux)<option value=8221> Madrid (Esp)<option value=3797> Manston (UK)<option value=16080> Milan (It)<option value=6609> Moleson (Sw)<option value=6380> Maastricht (PB)<option value=6604> Neuchatel (Sw)<option value=6639> Napf (Sw)<option value=6610> Payerne (Sw)<option value=8085> Pamplona (Esp)<option value=16052> Pian Rosa (It)<option value=3827> Plymouth (UK)<option value=6711> Pully-Lausanne (Sw)<option value=8175> Reus (Esp)<option value=3957> Rosslare(Ir)<option value=6680> Saentis (Sw)<option value=8027> San Sebastian (Esp)<option value=8023> Santander (Esp)<option value=3876> Shoream (UK)<option value=6465> Schaffen (Be)<option value=16061> Torino Bric Croce (It)<option value=16059> Turin (It)<option value=6447> Uccle (Be)<option value=8141> Valladolid (Esp)<option value=8080> Vitoria (Esp)<option value=3803> Scilly Saint Mary (UK)<option value=6720> Sion (Sw)<option value=8148> Soria (Esp)<option value=10738> Stuttgart (All)<option value=8160> Zaragoza (Esp)<option value=6670> Zurich (Sw)<option value=10961> Zugspitze (All)<option value=0> ----------------------<option value=1> Station Vias (34)<option value=2> Paris Saint-Germain-des-Prés (75)<option value=3> Laprade (16)<option value=4> Corny sur Moselle (57)<option value=5> Courcouronnes (91)<option value=6> Saint-Gervasy (30)<option value=7> Cernay (86)<option value=8> Sablons (38)<option value=9> La Louvière (Be)</select> Date : <select name=jour2><option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10<option selected value=11>11<option value=12>12<option value=13>13<option value=14>14<option value=15>15<option value=16>16<option value=17>17<option value=18>18<option value=19>19<option value=20>20<option value=21>21<option value=22>22<option value=23>23<option value=24>24<option value=25>25<option value=26>26<option value=27>27<option value=28>28<option value=29>29<option value=30>30<option value=31>31</select><select name=mois2><option value=0>janvier<option value=1>février<option value=2>mars<option value=3>avril<option value=4>mai<option value=5>juin<option value=6>juillet<option value=7>août<option value=8>septembre<option value=9>octobre<option selected value=10>novembre<option value=11>décembre</select><select name=annee2><option value=2002>2002<option value=2003>2003<option value=2004>2004<option value=2005>2005<option value=2006>2006<option value=2007>2007<option value=2008>2008<option selected value=2009>2009<option value=2010>2010<option value=2011>2011</select><input type=submit name=envoyer value='OK'></td></tr></table></form></center></p><br>                                        </p></td>
+                                    </tr>
+                                  </tbody>
+                              </table></td>
+                            </tr>
+                          </tbody>
+        </table></td>
+    </tr>
+    </tbody>
+</table>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="5" bgcolor="#97bedd">
+  <tbody>
+    <tr>
+      <td height="14" align="center" bgcolor="#DDF7F2" class="Style1"><span class="texte">
+        
+<span class="texte"><a href="http://www.meteociel.fr/">www.meteociel.fr</a> © 2004 - 2010 | <a href="/copyright/mentions.php">Mentions légales</a> | <a href="/contact/">Contact</a> | <a href="/liens_meteo.php">Liens m&eacute;t&eacute;o</a> </span> | <a href="/media/index.php">On parle de Meteociel ! </a>
+| Charge :
+ 2.59<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{
+var pageTracker = _gat._getTracker("UA-8903466-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+      </span> </td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+
+</body></html>

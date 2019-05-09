@@ -1,0 +1,353 @@
+encoding  utf-8
+ 
+ survey trousC -title "trous C"
+
+# Fichier contenant les positions des entrées de la zone C, Samoens, France
+
+ centerline -extend right
+cs lat-long
+
+fix       C01       46.103783     006.79170      2287
+fix       C02       46.106133     006.79373      2201
+fix       C04       46.104600     006.79330      2300 # ALT PAR DEFAULT
+fix       C05       46.106100     006.79518      2243
+fix       C06       46.106133     006.79530      2246
+fix       C08       46.106400     006.79665      2293
+fix       C09       46.106400     006.79666      2290
+fix       C10       46.106400     006.79678      2298
+fix       C11       46.106516     006.79671      2289
+fix       C12       46.106533     006.79645      2281
+fix       C13       46.106683     006.79608      2258
+#fix       C14       46.106716     006.79626      2251
+fix       C17       46.106783     006.79718      2312
+fix       C20       46.106683     006.79528      2225
+fix       C21       46.106100     006.79700      2289
+fix       C23       46.106866     006.79793      2320
+#fix       C24       46.105933     006.79998      2297
+fix       C25       46.105500     006.79868      2286
+fix       C25B      46.105666     006.79863      2296
+fix       C26A      46.105583     006.80160      2267
+fix       C26B      46.105616     006.80180      2277
+fix       C27A      46.106350     006.80053      2302
+fix       C27B      46.106383     006.80056      2308
+fix       C28       46.106183     006.80073      2296
+#fix       C31       46.106683     006.79883      2328
+fix       C32       46.106733     006.79833      2317
+fix       C33       46.106433     006.79783      2302
+fix       C34       46.106150     006.79675      2287
+fix       C35       46.106983     006.80125      2338
+fix       C36       46.106733     006.80043      2300 # ALT PAR DEFAULT
+#fix       C37A      46.106700     006.79966      2300 # ALT PAR DEFAULT
+#fix       C37B      46.106733     006.79960      2274
+#fix       C42       46.107916     006.80030      2398
+fix       C43       46.106616     006.79746      2302
+#fix       C44       46.105783     006.79920      2289
+fix       C44B      46.105783     006.79901      2290
+fix       C45       46.106966     006.79788      2320
+fix       C46       46.107150     006.80201      2348
+fix       C47       46.107166     006.80186      2352
+fix       C50       46.106933     006.80080      2327
+fix       C51       46.106550     006.80153      2300 # ALT PAR DEFAULT
+fix       C53       46.106316     006.80196      2329
+fix       C54       46.106983     006.80161      2345
+fix       C55       46.106750     006.80166      2329
+fix       C56       46.106483     006.80191      2309
+fix       C57       46.106350     006.80198      2300 # ALT PAR DEFAULT 
+fix       C58       46.105900     006.80220      2276
+fix       C59       46.106083     006.80195      2288
+fix       C61A      46.105483     006.79535      2243
+fix       C61B      46.105400     006.79531      2300 # ALT PAR DEFAULT
+fix       C64       46.105733     006.79923      2283
+fix       C65       46.105583     006.79901      2291
+fix       C66       46.105766     006.79936      2291
+fix       C67       46.107450     006.80121      2367
+fix       C68       46.106600     006.80050      2312
+fix       C69       46.105866     006.79800      2303
+fix       C70       46.105833     006.79785      2300
+#fix       C74       46.105150     006.80208      2169
+#fix       C75       46.105850     006.80338      2251
+fix       C76       46.105683     006.79851      2303
+fix       C78       46.106033     006.79841      2312
+fix       C79       46.106000     006.79840      2315
+fix       C80       46.105916     006.79845      2317
+fix       C81A      46.105533     006.79871      2286
+fix       C81C      46.105350     006.79895      2279
+fix       C82       46.105683     006.79968      2292
+fix       C83       46.105716     006.79740      2287
+fix       C84       46.105566     006.79728      2286
+fix       C85       46.105483     006.79911      2287
+fix       C86       46.105633     006.79893      2292
+fix       C87       46.105650     006.79968      2287
+fix       C88       46.105750     006.80046      2279
+fix       C89       46.105733     006.80028      2274
+fix       C90       46.105950     006.80211      2280
+fix       C91       46.105716     006.80185      2276
+fix       C92       46.105650     006.80228      2266
+fix       C94       46.106400     006.80015      2298
+fix       C94A      46.106433     006.80020      2299
+fix       C94B      46.106333     006.80031      2301
+fix       C94C      46.106416     006.80013      2302
+fix       C95       46.106550     006.80005      2311
+fix       C95B      46.106616     006.80003      2307
+fix       C95C      46.106683     006.79995      2313
+fix       C95D      46.106650     006.80000      2313
+fix       C96       46.106816     006.80005      2328
+fix       C97       46.106783     006.79956      2324
+fix       C98       46.106400     006.80038      2293
+fix       C99       46.106816     006.79985      2324
+fix       C100      46.107516     006.80075      2331
+fix       C101      46.106600     006.79951      2307
+fix       C102      46.106716     006.79975      2315
+fix       C103      46.106750     006.79981      2318
+fix       C104      46.106800     006.79993      2323
+fix       C105      46.107050     006.80153      2343
+fix       C106      46.107166     006.80151      2348
+fix       C107      46.107300     006.80158      2356
+fix       C108      46.106483     006.79996      2305
+fix       C109      46.107266     006.80021      2356
+fix       C110      46.106528     006.80141      2321
+fix       C111      46.104866     006.80128      2277
+fix       C112      46.105250     006.79913      2238
+fix       C113      46.104366     006.79675      2207
+
+station   C01       "C01" entrance continuation explored 21m
+station   C02       "C02" entrance continuation explored 40m
+
+#station   C02B      "C02B" entrance continuation explored 20m
+#station C03	"C03B" entrance continuation explored 08m
+
+station   C04       "C04" entrance continuation explored 25m
+station   C05       "C05" entrance continuation explored 20m
+station   C06       "C06" entrance continuation explored 137m
+
+#station C07	"C07" entrance continuation explored 15m
+
+station   C08       "C08" entrance # continuation explored 00m
+station   C09       "C09" entrance continuation explored 40m air-draught
+station   C10       "C10" entrance continuation explored 15m air-draught
+station   C11       "C11" entrance continuation explored 12m
+station   C12       "C12" entrance continuation explored 20m
+station   C13       "C13" entrance continuation explored 20m
+
+#station C15	"C15" entrance continuation explored 27m air-draught
+#station C16	"C16" entrance continuation explored 10m
+
+station   C17       "C17A" entrance continuation explored 20m
+
+#station C17B	"C17B" entrance continuation explored 15m
+#station C17C	"C17C" entrance continuation explored 06m
+#station C18	"C18" entrance continuation explored 06m
+#station C19 "C19" entrance continuation explored 20m
+
+station   C20       "C20" entrance continuation explored 10m
+station   C21       "C21" entrance continuation explored 15m
+
+#station C22	"C22" entrance continuation explored 05m
+
+station   C23       "C23" entrance continuation explored 14m
+station   C25       "C25A" entrance continuation explored 20m
+station   C25B      "C25B" entrance continuation explored 15m
+station   C26A      "C26A" entrance continuation explored 25m
+station   C26B      "C26B" entrance continuation explored 10m
+station   C27A      "C27A" entrance continuation explored 80m air-draught
+station   C27B      "C27B" entrance continuation explored 20m
+station   C28       "C28" entrance continuation explored 70m
+
+#station C29	"C29" entrance continuation explored 30m air-draught
+#station C30	"C30" entrance continuation explored 03m
+
+station   C32       "C32" entrance continuation explored 35m
+station   C33       "C33" entrance continuation explored 30m
+station   C34       "C34" entrance continuation explored 07m
+station   C35       "C35" entrance continuation explored 15m
+station   C36       "C36" entrance continuation explored 30m
+
+#station C38	"C38" entrance continuation explored 70m
+#station C39	"C39" entrance continuation explored 05m
+#station C40	"C40" entrance continuation explored 30m
+#station C41	"C41" entrance continuation explored 15m
+
+station   C43       "C43" entrance continuation explored 30m
+station   C44B      "C44B" entrance	# seconde entrée du C44
+station   C45       "C45" entrance #continuation explored 00m
+station   C46       "C46" entrance continuation explored 05m
+station   C47       "C47" entrance continuation explored 09m
+
+#station C48	"C48" entrance continuation explored 03m
+#station C49	"C49" entrance continuation explored 05m
+
+station   C50       "C50" entrance continuation explored 10m
+station   C51       "C51" entrance continuation explored 20m air-draught
+#station C52	"C52" entrance continuation explored 23m air-draught
+station   C53       "C53" entrance continuation explored 23m air-draught
+station   C54       "C54" entrance continuation explored 10m air-draught
+station   C55       "C55" entrance continuation explored 30m air-draught
+station   C56       "C56" entrance continuation explored 40m
+station   C57       "C57" entrance continuation explored 15m
+station   C58       "C58" entrance continuation explored 50m
+station   C59       "C59" entrance continuation explored 15m
+
+#station C60	"C60"	entrance continuation explored 06m
+
+station   C61A      "C61A" entrance continuation explored 05m
+station   C61B      "C61B" entrance continuation explored 08m
+
+#station C62	"C62"	entrance continuation explored 50m
+#station C63	"C63"	entrance continuation explored 20m air-draught
+
+station   C64       "C64" entrance continuation explored 05m
+station   C65       "C65" entrance continuation explored 30m
+station   C66       "C66" entrance continuation explored 30m
+station   C67       "C67" entrance #continuation explored 00m
+station   C68       "C68" entrance continuation explored 02m air-draught
+station   C69       "C69" entrance continuation explored 10m
+station   C70       "C70" entrance continuation explored 18m
+
+station   C76       "C76" entrance continuation explored 10m
+
+#station C77	"c77" entrance continuation explored 07m
+
+station   C78       "C78" entrance continuation explored 09m
+station   C79       "C79" entrance continuation explored 03m
+station   C80       "C80" entrance continuation explored 05m air-draught
+station   C81A      "C81A" entrance continuation explored 20m air-draught
+station   C81C      "C81C" entrance continuation explored 20m
+station   C82       "C82" entrance continuation explored 07m
+station   C83       "C83" entrance continuation explored 06m
+station   C84       "C84" entrance continuation explored 07m
+station   C85       "C85" entrance continuation explored 28m
+station   C86       "C86" entrance continuation explored 10m
+station   C87       "C87" entrance continuation explored 06m
+station   C88       "C88" entrance continuation explored 20m
+station   C89       "C89" entrance continuation explored 02m
+station   C90       "C90" entrance continuation explored 10m
+station   C91       "C91" entrance continuation explored 30m
+station   C92       "C92" entrance continuation explored 15m
+
+#station C93	"C93	entrance continuation explored 15m
+
+station   C94A      "C94A" entrance continuation explored 30m air-draught
+station   C94B      "C94B" entrance continuation explored 30m air-draught
+station   C94C      "C94C" entrance continuation explored 30m air-draught
+station   C95       "C95A" entrance continuation explored 40m air-draught
+station   C95B      "C95B" entrance	air-draught
+station   C95C      "C95C" entrance	air-draught
+station   C95D      "C95D" entrance	air-draught
+station   C96       "C96" entrance continuation explored 20m
+station   C97       "C97" entrance continuation explored 10m
+station   C98       "C98" entrance continuation explored 06m
+station   C99       "C99" entrance continuation explored 06m
+station   C100      "C100" entrance continuation explored 05m
+station   C101      "C101" entrance continuation explored 08m air-draught
+station   C102      "C102" entrance continuation explored 05m
+station   C103      "C103" entrance continuation explored 08m
+station   C104      "C104" entrance continuation explored 16m
+station   C105      "C105" entrance continuation explored 10m air-draught
+station   C106      "C106" entrance continuation explored 08m air-draught
+station   C107      "C107" entrance continuation explored 10m
+station   C108      "C108" entrance continuation explored 06m
+station   C109      "C109" entrance continuation explored 10m
+station   C110      "C110" entrance continuation explored 18m air-draught
+station   C111      "C111" entrance continuation explored 05m air-draught
+station   C112      "C112" entrance continuation explored 20m
+station   C113      "C113" entrance continuation explored 08m
+
+#data nosurvey from to  #definition of relation between points
+##flags splay
+#flags surface
+#C01       C02
+#C02       C04
+#C04       C05
+#C05       C06
+#C06       C08
+#C08       C09
+#C09       C10
+#C10       C100
+#C100      C101
+#C101      C102
+#C102      C103
+#C103      C104
+#C104      C105
+#C105      C106
+#C106      C107
+#C107      C108
+#C108      C109
+#C109      C11
+#C11       C110
+#C110      C111
+#C111      C112
+#C112      C113
+#C113      C12
+#C12       C13
+#C13       C17
+#C17       C20
+#C20       C21
+#C21       C23
+#C23       C25
+#C25       C25B
+#C25B      C26A
+#C26A      C26B
+#C26B      C27A
+#C27A      C27B
+#C27B      C28
+#C28       C32
+#C32       C33
+#C33       C34
+#C34       C35
+#C35       C36
+#C36       C43
+#C43       C44B
+#C44B      C45
+#C45       C46
+#C46       C47
+#C47       C50
+#C50       C51
+#C51       C53
+#C53       C54
+#C54       C55
+#C55       C56
+#C56       C57
+#C57       C58
+#C58       C59
+#C59       C61A
+#C61A      C61B
+#C61B      C64
+#C64       C65
+#C65       C66
+#C66       C67
+#C67       C68
+#C68       C69
+#C69       C70
+#C70       C76
+#C76       C78
+#C78       C79
+#C79       C80
+#C80       C81A
+#C81A      C81C
+#C81C      C82
+#C82       C83
+#C83       C84
+#C84       C85
+#C85       C86
+#C86       C87
+#C87       C88
+#C88       C89
+#C89       C90
+#C90       C91
+#C91       C92
+#C92       C94
+#C94       C94A
+#C94A      C94B
+#C94B      C94C
+#C94C      C95
+#C95       C95B
+#C95B      C95C
+#C95C      C95D
+#C95D      C96
+#C96       C97
+#C97       C98
+#C98       C99
+  
+endcenterline
+
+ endsurvey

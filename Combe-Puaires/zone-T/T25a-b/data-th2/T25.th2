@@ -1,0 +1,183 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -125.145 -128.6881 210.25 250.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {60.4645 1 1.0} {101.862 0} ../T25a-b-map.xvi 0 {}
+
+
+
+scrap T25-1 -projection plan -author 1976 "Pierre Rias" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 81.0 112.75 label -text "-52 m"
+
+point 73.75 75.25 height -value [-16 m]
+
+point 49.0 46.5 height -value [-6 m]
+
+point 74.0 53.75 height -value [-9 m]
+
+point 22.5 34.0 height -value [-10 m]
+
+point 31.25 75.75 label -text "Etr."
+
+point 71.0 19.25 label -text "<bf>T25b" -scale xl
+
+point 41.25 5.75 label -text "<bf>T25a" -scale xl
+
+point 64.5 35.5 entrance -orientation 344.1
+
+point 39.5 22.0 entrance -orientation 352.3
+
+line overhang -close on
+  63.0 54.75
+  63.0 54.75 56.75 53.5 57.5 51.75
+  58.25 50.0 56.25 46.75 59.75 47.0
+  63.25 47.25 65.5 49.0 64.75 50.25
+  64.0 51.5 63.0 54.75 63.0 54.75
+  smooth off
+endline
+
+line overhang -close on
+  33.75 36.75
+  33.75 36.75 32.25 31.5 36.25 32.0
+  40.25 32.5 42.0 34.75 40.75 36.0
+  39.5 37.25 40.5 40.75 38.0 39.75
+  35.5 38.75 33.75 36.75 33.75 36.75
+  smooth off
+endline
+
+line pit
+  50.25 56.25
+  50.25 56.25 48.0 61.25 48.25 62.75
+  48.5 64.25 51.75 70.5 51.75 70.5
+  smooth off
+endline
+
+line pit
+  57.75 75.25
+  66.25 63.25
+endline
+
+line pit
+  52.75 57.75
+  53.75 63.5
+endline
+
+line pit
+  39.0 77.0
+  39.0 77.0 46.5 72.0 49.25 74.25
+  smooth off
+endline
+
+line wall -subtype invisible
+  60.25 90.25
+  55.0 117.0
+endline
+
+point 64.75 50.25 altitude -align bottom-right
+
+point 36.25 32.0 altitude -align bottom-left
+
+line wall -subtype presumed
+  55.0 117.0
+  55.0 117.0 53.5 119.25 51.25 117.25
+  49.0 115.25 42.5 112.75 39.25 109.75
+  36.0 106.75 32.25 108.5 33.25 104.75
+  34.25 101.0 42.5 81.25 42.5 81.25
+  smooth off
+endline
+
+line wall -subtype presumed
+  49.75 81.5
+  49.75 81.5 46.75 89.5 46.25 91.5
+  45.75 93.5 38.75 106.75 41.25 108.0
+  43.75 109.25 48.75 114.5 50.0 111.75
+  51.25 109.0 60.25 90.25 60.25 90.25
+  smooth off
+endline
+
+line wall -subtype presumed
+  63.0 106.75
+  68.25 94.75
+endline
+
+line wall
+  42.5 81.25
+  42.5 81.25 42.0 78.75 43.25 77.25
+  44.5 75.75 45.75 73.25 44.0 72.25
+  42.25 71.25 39.25 68.5 39.75 65.75
+  40.25 63.0 44.5 62.75 42.25 60.5
+  40.0 58.25 31.75 58.25 32.0 52.5
+  32.25 46.75 34.25 40.0 33.75 36.75
+  33.25 33.5 33.75 31.0 36.25 32.0
+  38.75 33.0 41.75 34.75 40.75 36.0
+  39.75 37.25 38.0 36.25 38.0 39.75
+  38.0 43.25 35.75 50.5 37.25 51.75
+  38.75 53.0 41.25 56.0 44.5 56.0
+  47.75 56.0 47.75 52.0 49.0 54.5
+  50.25 57.0 47.25 59.25 50.5 59.0
+  53.75 58.75 59.0 61.25 59.0 58.0
+  59.0 54.75 57.5 54.0 57.5 51.75
+  57.5 49.5 56.25 47.0 59.75 47.0
+  63.25 47.0 65.25 48.5 64.75 50.25
+  64.25 52.0 63.0 53.0 63.0 54.75
+  63.0 56.5 65.25 62.0 62.25 62.0
+  59.25 62.0 49.75 60.25 49.75 62.0
+  49.75 63.75 48.75 65.5 50.75 65.5
+  52.75 65.5 61.5 64.5 63.75 66.75
+  66.0 69.0 63.0 83.75 64.25 85.75
+  65.5 87.75 76.0 90.0 75.0 92.75
+  74.0 95.5 61.5 122.25 59.25 121.25
+  57.0 120.25 56.5 121.0 56.5 116.25
+  56.5 111.5 58.5 101.25 58.5 101.25
+  smooth off
+endline
+
+line wall
+  68.25 94.75
+  68.25 94.75 71.0 93.75 68.5 92.75
+  66.0 91.75 59.5 92.0 59.5 87.0
+  59.5 82.0 63.5 71.75 60.75 71.75
+  58.0 71.75 51.0 66.75 50.5 68.5
+  50.0 70.25 47.75 70.0 47.5 71.75
+  47.25 73.5 48.75 75.25 49.0 77.25
+  49.25 79.25 49.75 81.5 49.75 81.5
+  smooth off
+endline
+
+line wall
+  62.25 100.0
+  62.25 100.0 61.0 105.5 60.75 107.5
+  60.5 109.5 58.0 113.5 59.75 112.5
+  61.5 111.5 63.0 106.75 63.0 106.75
+  smooth off
+endline
+
+point 36.1045 38.192 station -name T25a@T25a-b
+
+point 35.1645 52.952 station -name 12@T25a-b
+
+point 60.8445 51.952 station -name T25b@T25a-b
+
+point 46.3845 60.892 station -name 11@T25a-b
+
+point 61.1545 59.862 station -name 9@T25a-b
+
+point 45.8945 60.932 station -name 8@T25a-b
+
+point 46.0645 66.792 station -name 7@T25a-b
+
+point 63.2145 68.692 station -name 5@T25a-b
+
+point 62.7745 87.912 station -name 4@T25a-b
+
+point 71.0045 93.312 station -name 3@T25a-b
+
+point 58.6645 118.272 station -name 2@T25a-b
+
+point 58.4145 109.902 station -name 1@T25a-b
+
+point 60.4645 101.862 station -name 0double@T25a-b
+
+endscrap
+
+

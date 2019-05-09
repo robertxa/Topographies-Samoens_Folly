@@ -1,0 +1,10 @@
+encoding  utf-8
+ 
+survey zone_DR -title "Zone DR"
+  input trousDR.th
+  #input trousDR.th2
+  # Pour importer les différentes données de différents fichiers topos : 
+   input DR1/data-th/DR1.th
+   input DR1/data-th2/DR1.th2
+      
+endsurvey

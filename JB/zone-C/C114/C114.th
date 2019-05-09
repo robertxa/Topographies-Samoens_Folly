@@ -1,0 +1,29 @@
+encoding utf-8
+
+survey C114 -title "C114" -entrance "C114"
+    
+centerline -title "C114"
+	cs lat-long
+	#fix C114 46.10445 6.79128 2280	# Coordonnées approximatives (tirées de Google Earth)
+	fix C114 46.107703 6.797302 2307	# Coordonnées approximatives (tirées de Google Earth)
+	date 2012.07.17
+		team "Stéphane Lips"
+		team "Frédéric Delègue"
+	explo-date 2012.07.17
+		explo-team "Stéphane Lips"
+		explo-team "Frédéric Delègue"
+		explo-team "Max Pinard"
+		explo-team "Boris Laurent"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+	data normal from to length compass clino left right up down
+	extend right
+	0         0b                         0.00    0.00    0.00   0.30   0.30   0.00   1.00
+	0          1                        10.00    0.00   90.00   0.30   2.00   1.50   1.00
+	1          2                         2.00  200.00    3.00   1.00   1.00   1.50   0.50
+	2          C114                         8.00  205.00   58.00   0.50   0.30   1.00   1.00
+
+# Dev = 20 m
+endcenterline
+endsurvey

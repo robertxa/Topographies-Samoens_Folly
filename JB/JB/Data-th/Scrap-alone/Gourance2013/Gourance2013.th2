@@ -1,0 +1,254 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 231.75 215.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.3678 1 1.0} {39.3658 2013c-xa-0} Gourance-map2013.xvi 0 {}
+
+
+
+scrap Gourance2013-1 -projection plan -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 39.25 26.5 label -text "imp."
+
+point 74.25 74.0 label -text "imp."
+
+point 49.0 30.75 narrow-end -orientation 324.8
+
+point 78.25 64.75 narrow-end -orientation 263.9
+
+line arrow
+  62.0 60.75
+  37.0 53.5
+endline
+
+line contour
+  54.75 53.0
+  54.75 53.0 52.25 53.75 52.0 56.5
+  51.75 59.25 51.5 61.5 51.5 61.5
+  smooth off
+endline
+
+line contour
+  47.75 51.25
+  47.75 51.25 45.5 53.5 45.5 55.75
+  45.5 58.0 46.75 60.0 46.75 60.0
+  smooth off
+endline
+
+line contour
+  43.25 50.25
+  43.25 50.25 39.5 52.25 39.5 54.25
+  39.5 56.25 41.25 59.0 41.25 59.0
+  smooth off
+endline
+
+line pit
+  21.0 41.0
+  21.0 41.0 23.25 41.0 27.5 42.75
+  31.75 44.5 34.75 46.0 34.75 46.0
+  smooth off
+endline
+
+line pit -reverse on
+  30.5 58.0
+  30.5 58.0 33.75 55.0 33.75 52.25
+  33.75 49.5 35.25 48.0 33.25 47.25
+  31.25 46.5 30.0 46.5 27.5 46.5
+  25.0 46.5 23.75 46.5 22.5 45.5
+  smooth off
+endline
+
+point 16.25 33.5 height -value [+8 m]
+
+line wall
+  47.0 36.75
+  47.0 36.75 44.25 42.0 41.5 41.75
+  38.75 41.5 30.25 40.0 30.0 42.75
+  29.75 45.5 27.25 46.75 29.75 48.25
+  32.25 49.75 53.25 56.25 57.0 57.25
+  60.75 58.25 72.0 61.5 72.0 61.5
+  smooth off
+endline
+
+line wall
+  18.0 50.25
+  20.0 48.75 21.5 47.5 22.75 48.0
+  24.0 48.5 25.75 51.0 25.5 48.5
+  25.25 46.0 23.25 39.5 25.0 39.0
+  26.75 38.5 36.5 37.0 38.75 36.75
+  41.0 36.5 44.75 34.5 44.75 34.5
+  smooth off
+endline
+
+line wall
+  71.25 65.0
+  71.25 65.0 53.25 60.5 48.25 58.25
+  43.25 56.0 37.75 56.0 36.0 56.0
+  34.25 56.0 31.5 54.75 30.25 55.25
+  29.0 55.75 28.25 59.16 28.25 60.5
+  smooth off
+endline
+
+point 70.8978 63.1258 station -name 2013c-xa-4@Gourance2013
+
+point 27.467800000000004 50.6658 station -name 2013c-xa-5@Gourance2013
+
+point 26.597800000000003 40.7158 station -name 2013c-xa-2@Gourance2013
+
+point 39.3678 39.3658 station -name 2013c-xa-0double@Gourance2013
+
+point 42.857800000000005 36.925799999999995 station -name 2013c-xa-1@Gourance2013
+
+endscrap
+
+
+
+scrap Gourance2013-2 -projection plan -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 67.48780000000001 57.2158 station -name 2013c-xa-11@Gourance2013
+
+point 25.0 77.5 stalagmite -scale s
+
+point 6.5 49.5 narrow-end -orientation 356.4
+
+point 14.25 85.75 narrow-end -orientation 129.1
+
+line arrow
+  28.5 72.75
+  35.5 64.25
+endline
+
+line pit
+  20.0 72.5
+  20.0 72.5 23.0 74.25 24.5 71.25
+  26.0 68.25 24.75 66.25 24.75 66.25
+  smooth off
+endline
+
+line pit
+  53.5 58.0
+  53.5 58.0 54.5 62.25 52.5 62.5
+  smooth off
+endline
+
+line pit
+  46.75 62.0
+  46.75 62.0 48.0 66.25 45.25 66.5
+  42.5 66.75 40.25 66.75 39.0 64.5
+  37.75 62.25 34.0 58.25 34.0 58.25
+  smooth off
+endline
+
+line wall -close on -reverse on -outline in
+  50.2678 64.1758
+  50.2678 64.1758 44.0 63.0 44.5 61.75
+  45.0 60.5 46.75 60.5 48.75 61.25
+  50.75 62.0 52.5 62.5 52.5 62.5
+  smooth off
+  50.2678 64.1758
+endline
+
+line wall
+  44.5 52.5
+  44.5 52.5 42.25 58.0 44.75 58.0
+  47.25 58.0 53.75 60.0 55.75 58.25
+  57.75 56.5 62.25 52.0 65.0 52.5
+  67.75 53.0 74.0 53.0 74.0 53.0
+  smooth off
+endline
+
+point 36.25 82.75 height -value [+3 m]
+
+point 19.0 53.75 clay-tree
+
+point 12.25 76.5 rope
+
+point 14.0 42.25 rope
+
+line water-flow
+  74.25 55.0
+  74.25 55.0 72.25 55.75 70.25 55.75
+  68.25 55.75 66.75 54.25 63.0 56.5
+  59.25 58.75 57.5 61.0 55.75 61.0
+  54.0 61.0 51.0 60.5 49.5 60.0
+  48.0 59.5 45.0 62.0 43.25 59.0
+  41.5 56.0 41.25 55.0 41.5 53.0
+  41.75 51.0 44.0 48.0 44.0 48.0
+  smooth off
+endline
+
+point 46.25 73.5 traverse
+
+point 64.75 44.0 rope
+
+line pit -reverse on
+  74.5 60.5
+  74.5 60.5 71.25 61.0 68.5 58.5
+  65.75 56.0 66.75 56.0 66.75 53.5
+  smooth off
+endline
+
+line wall
+  28.25 60.5
+  26.25 61.5 24.25 60.5 22.5 61.5
+  20.75 62.5 18.5 65.25 20.25 66.5
+  22.0 67.75 23.25 68.0 23.75 69.0
+  24.25 70.0 26.0 71.5 26.25 70.0
+  26.5 68.5 27.75 68.0 30.5 65.0
+  33.25 62.0 34.25 62.5 35.0 60.75
+  35.75 59.0 39.25 50.25 39.25 50.25
+  smooth off
+endline
+
+line wall
+  7.0 56.25
+  7.0 56.25 5.25 62.0 7.25 60.75
+  9.25 59.5 10.0 57.5 12.5 55.5
+  15.0 53.5 18.0 50.25 18.0 50.25
+  smooth off
+endline
+
+line wall
+  17.5 81.25
+  17.5 81.25 20.75 80.0 20.75 78.5
+  20.75 77.0 19.37 76.03 19.75 74.75
+  20.5 72.25 23.5 73.5 22.5 72.5
+  21.5 71.5 17.25 67.75 15.0 68.0
+  12.75 68.25 10.0 71.5 9.25 70.25
+  8.5 69.0 5.5 69.0 5.5 64.75
+  5.5 60.5 4.5 58.5 5.25 56.25
+  smooth off
+endline
+
+point 90.25 48.25 label -text "Gourance"
+
+line arrow
+  78.25 55.25
+  102.5 56.75
+endline
+
+line wall
+  75.0 58.0
+  75.0 58.0 71.75 56.75 71.25 58.5
+  70.75 60.25 73.8 62.5 70.8978 63.1258
+  68.0 63.75 54.75 67.5 52.5 67.5
+  50.25 67.5 43.75 64.25 41.5 64.75
+  39.25 65.25 31.0 73.5 29.75 76.25
+  28.5 79.0 28.25 81.75 25.75 81.0
+  23.25 80.25 22.5 80.5 21.5 81.25
+  20.5 82.0 19.0 82.75 19.0 82.75
+  smooth off
+endline
+
+point 50.2678 64.1758 station -name 2013c-xa-10@Gourance2013
+
+point 39.3678 61.2558 station -name 2013c-xa-9@Gourance2013
+
+point 26.387800000000002 74.2458 station -name 2013c-xa-8@Gourance2013
+
+point 21.827800000000003 70.2758 station -name 2013c-xa-7@Gourance2013
+
+point 15.617800000000003 63.3758 station -name 2013c-xa-6@Gourance2013
+
+endscrap
+
+

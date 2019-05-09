@@ -1,0 +1,465 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -241.67199999999997 -185.1809 471.02000000000004 370.0311
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {123.09200000000001 1 1.0} {50.414100000000005 0} BA4-map.xvi 0 {}
+
+
+
+scrap BA4-1 -projection plan -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/4.0/" -scale [-251.08299999999997 -178.4039 477.357 -178.4039 0.0 0.0 18.502376 0.0 m]
+
+point 279.25 132.25 continuation -attr Code D -text "Etroiture ventilée à élargir"
+
+point 323.0 157.5 continuation -attr Code D -text "m. étroit à désobtruer à l'explosif sur au moins 4 m"
+
+point 285.75 131.0 narrow-end -orientation 5.4
+
+point 105.0 26.75 height -value [+5 m]
+
+point 161.5 119.25 scallop
+
+point 170.75 128.75 scallop
+
+point 180.5 139.25 scallop
+
+point 191.75 146.25 scallop
+
+point 203.25 154.75 scallop
+
+point 214.75 162.25 scallop
+
+point 212.25 178.25 scallop
+
+point 199.75 168.5 scallop
+
+point 188.5 160.75 scallop
+
+point 176.25 151.0 scallop
+
+point 164.0 143.5 scallop
+
+point 154.0 136.5 scallop
+
+point 144.75 131.25 scallop
+
+point 98.5 93.25 narrow-end -orientation 31.4
+
+point 145.0 117.25 pebbles -scale xs
+
+point 147.25 122.0 pebbles -scale xs
+
+point 150.25 116.75 pebbles -scale xs
+
+point 153.0 123.0 pebbles -scale xs
+
+point 153.0 128.0 pebbles -scale xs
+
+point 160.25 126.75 pebbles -scale xs
+
+point 162.0 133.75 pebbles -scale xs
+
+point 170.5 138.5 pebbles -scale xs
+
+point 181.0 146.25 pebbles -scale xs
+
+point 187.25 150.0 pebbles -scale xs
+
+point 194.25 155.75 pebbles -scale xs
+
+point 199.5 159.5 pebbles -scale xs
+
+point 204.25 163.0 pebbles -scale xs
+
+point 209.0 168.25 pebbles -scale xs
+
+point 216.5 172.75 pebbles -scale xs
+
+point 296.5 144.0 altitude -align bottom-right
+
+point 221.25 177.0 pebbles -scale xs
+
+point 301.5 171.0 height -value [+4 m]
+
+point 317.75 164.5 narrow-end -orientation 233.1
+
+point 286.0 110.5 air-draught -orientation 3.0 -subtype summer
+
+point 333.75 177.0 air-draught -orientation 229.0 -subtype summer
+
+line floor-meander
+  284.5 155.25
+  284.5 155.25 275.75 165.25 271.5 167.5
+  267.25 169.75 263.5 177.0 258.0 181.25
+  252.5 185.5 248.75 190.0 248.75 190.0
+  smooth off
+endline
+
+line pit -close on -reverse on
+  299.0 156.5
+  299.0 156.5 304.08 158.44 303.0 156.75
+  301.25 154.0 302.75 149.75 300.0 151.25
+  297.25 152.75 299.0 156.5 299.0 156.5
+  smooth off
+endline
+
+line pit
+  300.5 144.25
+  300.5 144.25 297.0 144.75 294.75 148.0
+  292.5 151.25 291.5 149.5 293.0 153.75
+  294.5 158.0 295.25 162.0 295.25 162.0
+  smooth off
+endline
+
+line pit
+  285.75 142.25
+  285.75 142.25 287.0 146.0 288.5 142.75
+  smooth off
+endline
+
+line pit
+  106.25 45.0
+  106.25 45.0 106.25 47.75 104.75 47.75
+  103.25 47.75 100.75 45.75 100.75 45.75
+  smooth off
+endline
+
+line wall
+  104.5 101.5
+  104.5 101.5 105.25 108.0 108.5 105.75
+  111.75 103.5 116.25 105.0 115.0 101.75
+  113.75 98.5 114.5 91.25 114.25 86.0
+  114.0 80.75 112.25 75.25 109.5 68.75
+  106.75 62.25 102.96 47.13 100.75 45.75
+  smooth off
+endline
+
+line wall
+  312.0 161.75
+  312.0 161.75 308.75 157.5 306.75 159.5
+  304.75 161.5 303.0 163.25 299.75 161.0
+  296.5 158.75 298.5 155.25 293.0 160.0
+  287.5 164.75 293.75 162.25 291.75 169.0
+  289.75 175.75 290.5 176.25 286.25 183.75
+  282.0 191.25 281.0 196.5 273.5 198.5
+  266.0 200.5 257.0 206.0 252.0 204.25
+  247.0 202.5 243.25 201.0 239.5 196.5
+  235.75 192.0 231.25 188.5 225.5 183.25
+  219.75 178.0 175.75 144.5 173.0 143.0
+  170.25 141.5 144.25 125.75 141.25 120.75
+  138.25 115.75 137.5 114.25 133.0 115.0
+  128.5 115.75 125.25 112.5 119.25 113.5
+  113.25 114.5 111.25 112.25 108.5 110.75
+  105.75 109.25 103.0 102.5 103.0 102.5
+  smooth off
+endline
+
+line wall
+  288.0 138.5
+  288.0 138.5 286.75 142.0 288.5 142.75
+  290.25 143.5 293.5 141.0 296.5 144.0
+  299.5 147.0 307.5 152.5 309.0 154.75
+  310.5 157.0 312.75 159.5 312.75 159.5
+  smooth off
+endline
+
+line wall
+  106.25 45.0
+  106.25 45.0 104.75 43.5 108.25 49.0
+  smooth off
+endline
+
+line wall
+  108.25 49.0
+  115.5 52.0
+endline
+
+line wall
+endline
+
+line wall
+  114.75 54.25
+  110.5 52.25
+endline
+
+point 92.0 51.75 rope
+
+point 121.75 57.0 narrow-end -orientation 244.8
+
+line wall
+  110.5 52.25
+  114.0 57.75 126.5 87.25 131.25 92.5
+  136.0 97.75 135.75 100.5 143.5 107.0
+  151.25 113.5 171.75 135.25 175.75 138.5
+  179.75 141.75 224.5 175.75 227.25 175.25
+  230.0 174.75 233.0 173.5 241.75 166.75
+  250.5 160.0 255.5 160.5 264.0 153.25
+  272.5 146.0 280.75 145.25 282.25 144.75
+  283.75 144.25 285.75 144.25 285.75 142.25
+  285.75 140.25 285.0 138.25 285.0 138.25
+  smooth off
+endline
+
+point 103.55200000000002 44.0341 station -name 11@BA4
+
+point 129.32200000000003 99.5241 station -name 10@BA4
+
+point 174.66200000000003 140.4641 station -name 9@BA4
+
+point 227.752 180.60410000000002 station -name 8@BA4
+
+point 263.312 176.29410000000001 station -name 7@BA4
+
+point 289.882 151.5841 station -name 6@BA4
+
+point 307.39200000000005 156.97410000000002 station -name 5@BA4
+
+point 287.552 146.8241 station -name 4b@BA4
+
+endscrap
+
+
+
+scrap BA4-2 -projection plan -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-251.08299999999997 -178.4039 477.357 -178.4039 0.0 0.0 18.502376 0.0 m]
+
+point 11.832000000000022 -3.235900000000001 station -name 16@BA4
+
+point -44.65799999999999 39.204100000000004 station -name 15@BA4
+
+point -52.90799999999999 77.7541 station -name BA4@BA4
+
+point 0.6120000000000232 55.1241 station -name 13@BA4
+
+point 57.622000000000014 36.6941 station -name 3@BA4
+
+line wall -subtype invisible
+  -45.0 96.5
+  -45.0 96.5 -70.0 73.0 -74.0 66.0
+  -78.0 59.0 -88.0 32.75 -88.0 32.75
+  smooth off
+endline
+
+line wall
+  100.75 45.75
+  100.75 45.75 100.25 44.24 91.25 43.75
+  82.0 43.25 81.5 42.75 77.25 42.75
+  73.0 42.75 63.0 42.25 61.0 40.75
+  59.0 39.25 59.0 39.25 56.5 41.25
+  54.0 43.25 45.0 46.75 40.75 47.5
+  36.5 48.25 8.25 57.0 3.0 58.75
+  -2.25 60.5 -19.0 71.5 -22.75 73.75
+  -26.5 76.0 -34.5 79.5 -37.5 79.5
+  -40.5 79.5 -47.75 78.0 -47.75 83.0
+  -47.75 88.0 -45.0 96.5 -45.0 96.5
+  smooth off
+endline
+
+line wall
+  22.75 0.5
+  22.75 0.5 17.5 -3.0 17.75 0.25
+  18.0 3.5 21.0 3.0 18.75 6.0
+  16.5 9.0 -1.75 21.75 -9.0 25.0
+  -16.25 28.25 -29.0 39.5 -32.5 39.75
+  -36.0 40.0 -37.25 39.75 -39.0 42.5
+  -40.75 45.25 -49.25 59.25 -45.0 60.75
+  -40.75 62.25 -35.5 62.75 -34.0 60.25
+  -32.5 57.75 -36.25 52.0 -31.5 51.0
+  -26.75 50.0 -17.5 54.75 -13.25 54.75
+  -9.0 54.75 -5.5 53.25 -2.0 52.0
+  1.5 50.75 48.75 32.0 53.25 32.0
+  57.75 32.0 54.25 33.5 58.75 33.5
+  63.25 33.5 57.5 30.5 60.75 30.0
+  64.0 29.5 75.25 33.75 82.25 33.75
+  89.25 33.75 101.25 35.75 106.25 36.5
+  111.25 37.25 121.5 43.75 123.75 45.75
+  126.0 47.75 127.75 54.0 124.75 54.0
+  121.75 54.0 106.75 45.0 106.25 45.0
+  smooth off
+endline
+
+line wall
+  -88.0 32.75
+  -88.0 32.75 -79.5 44.0 -78.5 46.5
+  -77.5 49.0 -72.5 63.0 -69.75 59.75
+  -67.0 56.5 -65.0 54.25 -64.5 50.5
+  -64.0 46.75 -63.75 41.75 -60.0 37.75
+  -56.25 33.75 -47.5 21.25 -41.5 17.5
+  -35.5 13.75 -16.0 6.5 -11.5 4.5
+  -7.0 2.5 2.5 -3.5 5.75 -5.25
+  9.0 -7.0 10.25 -8.5 12.5 -8.5
+  14.75 -8.5 20.75 -7.75 22.0 -6.0
+  smooth off
+endline
+
+point 41.0 6.25 air-draught -orientation 238.3 -subtype summer
+
+line contour
+  -26.0 47.75
+  -26.0 47.75 -28.5 61.0 -24.75 65.75
+  -21.0 70.5 -12.25 78.0 -12.25 78.0
+  smooth off
+endline
+
+line contour
+  -17.75 51.0
+  -17.75 51.0 -18.5 56.5 -14.75 62.5
+  -11.0 68.5 -3.75 73.0 -3.75 73.0
+  smooth off
+endline
+
+line contour
+  -9.0 51.5
+  -9.0 51.5 -11.0 55.75 -6.5 60.0
+  -2.0 64.25 2.25 66.25 2.25 66.25
+  smooth off
+endline
+
+line contour
+  18.0 38.0
+  18.0 38.0 15.0 44.0 18.25 48.25
+  21.5 52.5 27.75 61.0 27.75 61.0
+  smooth off
+endline
+
+line contour
+  27.75 35.75
+  27.75 35.75 23.07 38.42 26.0 45.25
+  29.0 52.25 32.25 55.0 32.25 55.0
+  smooth off
+endline
+
+line contour
+  37.5 30.5
+  37.5 30.5 33.0 35.5 37.0 44.25
+  41.0 53.0 43.5 54.75 44.5 55.25
+  smooth off
+endline
+
+point -72.75 73.0 height -value [+2 m]
+
+point 24.25 -3.0 flowstone-choke
+
+point -19.0 46.25 moonmilk
+
+point -19.0 76.75 moonmilk
+
+point 22.75 39.25 moonmilk
+
+point 36.25 54.0 moonmilk
+
+point 16.75 61.0 moonmilk
+
+point -88.0 32.75 altitude -align left
+
+point -30.25 126.25 label -text "<it>Lat : 46.103829 <br>Long : 6.766091 <br>Alt : 1287 m" -scale s
+
+point 18.75 -21.0 label -text "etr." -scale l
+
+point 59.5 51.75 label -text "etr." -scale l
+
+point 7.75 72.0 label -text "etr." -scale l
+
+line pit
+  -70.0 56.0
+  -70.0 56.0 -67.0 56.5 -62.25 59.25
+  -57.5 62.0 -55.25 64.0 -55.25 66.75
+  -55.25 69.5 -55.75 73.0 -53.25 74.5
+  -50.75 76.0 -43.0 77.25 -42.75 81.5
+  smooth off
+endline
+
+line arrow
+  -5.25 56.5
+  -45.0 72.75
+endline
+
+line arrow
+  50.0 38.75
+  10.25 51.25
+endline
+
+line arrow
+  -42.25 29.5
+  -55.5 58.0
+endline
+
+line arrow
+  9.25 3.25
+  -30.5 25.0
+endline
+
+line contour
+  -4.0 -6.25
+  -4.0 -6.25 3.5 -0.25 5.75 5.0
+  8.0 10.25 10.5 20.5 10.5 20.5
+  smooth off
+endline
+
+line contour
+  -14.25 0.75
+  -14.25 0.75 -7.0 5.75 -5.5 12.75
+  -4.0 19.75 -1.75 27.75 -1.75 27.75
+  smooth off
+endline
+
+line contour
+  -27.0 3.75
+  -27.0 3.75 -19.5 9.25 -18.0 14.75
+  -16.5 20.25 -12.0 33.5 -12.0 33.5
+  smooth off
+endline
+
+line contour
+  -37.75 10.0
+  -37.75 10.0 -31.5 14.0 -27.0 21.0
+  -22.5 28.0 -20.5 37.5 -20.5 37.5
+  smooth off
+endline
+
+line contour
+  -51.25 20.75
+  -51.25 20.75 -38.75 24.75 -37.5 26.75
+  -36.25 28.75 -29.75 44.5 -29.75 44.5
+  smooth off
+endline
+
+line contour
+  -59.0 28.75
+  -59.0 28.75 -49.75 29.75 -45.75 33.5
+  -41.75 37.25 -37.0 43.0 -37.0 43.0
+  smooth off
+endline
+
+line contour
+  -65.25 38.5
+  -65.25 38.5 -59.75 37.25 -55.25 40.25
+  -50.75 43.25 -38.5 51.0 -38.5 51.0
+  smooth off
+endline
+
+line contour
+  -68.5 47.25
+  -68.5 47.25 -64.0 45.25 -59.75 48.25
+  -55.5 51.25 -53.75 47.25 -49.0 52.0
+  -44.25 56.75 -41.75 54.75 -40.75 59.5
+  -39.75 64.25 -44.0 65.25 -40.25 71.25
+  -36.5 77.25 -29.0 85.5 -29.0 85.5
+  smooth off
+endline
+
+line contour
+  46.5 24.75
+  46.5 24.75 46.0 32.75 45.5 36.75
+  45.0 40.75 48.5 47.0 50.25 49.0
+  smooth off
+endline
+
+point -84.75 108.0 air-draught -orientation 312.3 -subtype summer
+
+point -108.75 87.75 label -text "<bf>BA4" -scale xl
+
+point -62.25 87.75 entrance -orientation 138.4
+
+point 123.09200000000001 50.4141 station -name 1@BA4
+
+endscrap
+
+

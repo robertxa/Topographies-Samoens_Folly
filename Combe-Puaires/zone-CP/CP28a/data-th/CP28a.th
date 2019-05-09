@@ -1,0 +1,35 @@
+encoding utf-8
+
+survey CP28a -title "CP28" -entrance "0"
+  
+ #cs EPSG:<27572>
+ #fix CP28   944.0000       2133.000       0.000000    
+centerline
+ cs lat-long
+# fix 0 46.515  06.83668333    2149
+  fix 0 46.115150  6.798367    2149
+   date 2007.07.08
+   calibrate counter 0 0.500
+  team "Bernard Lips"
+  team "Eric Tarazona"
+  explo-date 2000.07.13
+  explo-team "Frédéric Chambat"
+  explo-team "Christian Locatelli"
+  explo-team "Stéphane Lips"
+  explo-team "Christophe Ferry"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   0 0double 0.0 0.0    0.000000       90.00000       0.000000       0.000000       0.000000       0.000000    
+   0double 1 84108.0 85178.0    162.0000      -23.00000       0.000000       0.000000       0.000000       0.000000    
+   1 2 85178.0 86100.0    134.0000      -33.00000       0.000000       0.000000       0.000000       0.000000    
+   2 3 86100.0 87188.0    260.0000      -20.00000       0.000000       0.000000       0.000000       0.000000    
+   2 4 87188.0 88218.0    143.0000       9.000000       0.000000       0.000000       0.000000       0.000000    
+   2 5 88218.0 89104.0    0.000000      -29.00000       0.000000       0.000000       0.000000       0.000000    
+   4 6 89104.0 89841.0    135.0000       60.00000       0.000000       0.000000       0.000000       0.000000    
+ endcenterline
+ endsurvey

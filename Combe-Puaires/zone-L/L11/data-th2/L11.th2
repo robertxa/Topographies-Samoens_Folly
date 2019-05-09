@@ -1,0 +1,155 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -132.25 191.0 196.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {25.5626 1 1.0} {13.8345 L11} ../L11-map.xvi 0 {}
+
+
+
+scrap L11-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
+
+point 30.0926 23.5745 station -name 14@L11
+
+point 28.2526 23.8645 station -name 12@L11
+
+point 32.6826 23.5645 station -name 7@L11
+
+point 27.0026 22.9545 station -name 5@L11
+
+point 9.5 15.5 label -text "R6"
+
+line arrow
+  35.75 63.0
+  29.75 35.25
+endline
+
+line arrow
+  28.25 53.5
+  26.75 32.25
+endline
+
+line arrow
+  23.0 41.0
+  24.0 33.0
+endline
+
+line arrow
+  15.0 48.75
+  22.5 32.5
+endline
+
+line arrow
+  7.0 57.25
+  20.5 31.5
+endline
+
+point 41.0 66.75 label -text "P15"
+
+point 28.25 58.0 label -text "P21"
+
+point 22.5 44.75 label -text "P10"
+
+point 14.25 53.0 label -text "P20"
+
+point 8.75 61.0 label -text "P13"
+
+point 28.75 8.5 entrance -orientation 333.4
+
+point 9.5 27.25 rope
+
+point 13.25 22.0 dig
+
+point 44.0 16.25 continuation
+
+point 46.25 3.5 air-draught -orientation 316.4 -subtype summer
+
+point 37.5 14.5 water-flow -orientation 144.2
+
+point 61.75 16.0 label -text "-93 m"
+
+point -0.25 38.75 altitude
+
+point 45.75 29.0 altitude
+
+point 31.75 -3.0 label -text "L11" -scale xl
+
+point 33.5 40.75 water-flow -orientation 196.1
+
+line pit
+  29.5 28.25
+  29.5 28.25 30.75 27.5 30.75 26.25
+  30.75 25.0 32.0 21.0 32.0 21.0
+  smooth off
+endline
+
+line pit
+  22.75 28.75
+  22.75 28.75 20.75 22.75 22.75 22.0
+endline
+
+line pit
+  28.5 30.5
+  28.5 30.5 27.51 25.98 28.2526 23.8645
+  29.0 21.75 31.25 18.5 31.25 18.5
+  smooth off
+endline
+
+line pit
+  27.0 29.25
+  27.0 29.25 26.26 24.41 27.0026 22.9545
+  27.75 21.5 29.25 18.5 29.25 18.5
+  smooth off
+endline
+
+line pit
+  24.75 29.25
+  24.75 29.25 23.0 25.25 24.5 23.25
+  26.0 21.25 27.0 17.75 27.0 17.75
+  smooth off
+endline
+
+line pit -reverse on
+  24.5 20.0
+  24.5 20.0 20.0 19.75 19.75 22.5
+  19.5 25.25 21.0 28.5 21.0 28.5
+  smooth off
+endline
+
+line wall
+  30.0 32.5
+  30.0 32.5 31.5 28.25 29.5 28.25
+  27.5 28.25 25.25 26.5 23.5 26.75
+  21.75 27.0 20.5 24.75 20.25 26.25
+  20.0 27.75 13.75 41.25 13.0 37.5
+  12.25 33.75 17.0 24.5 18.25 22.25
+  19.5 20.0 25.0 14.25 23.75 12.25
+  22.5 10.25 21.0 8.5 21.0 8.5
+  smooth off
+endline
+
+line wall
+  37.0 19.25
+  37.0 19.25 36.25 23.0 36.0 24.75
+  35.75 26.5 33.25 24.75 33.0 27.5
+  32.75 30.25 32.25 32.25 32.25 32.25
+  smooth off
+endline
+
+line wall
+  29.75 14.0
+  29.75 14.0 26.5 14.75 26.0 16.25
+  25.5 17.75 20.5 22.5 22.75 22.0
+  25.0 21.5 26.25 18.75 28.0 19.75
+  29.75 20.75 31.0 21.25 32.0 21.0
+  33.0 20.75 34.25 18.0 34.25 18.0
+  smooth off
+endline
+
+point 25.5626 13.8345 station -name L11double@L11
+
+point 20.1126 24.0245 station -name 3@L11
+
+point 14.3626 34.7545 station -name 1'@L11
+
+endscrap
+
+

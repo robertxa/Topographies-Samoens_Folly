@@ -1,0 +1,110 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 248.0 263.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {57.7707 1 1.0} {65.27499999999999 0} CP69-2015-coupe.xvi 0 {}
+
+
+
+scrap CP69-c1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 52.5 35.5 label -text "Coupe" -scale xl
+
+line wall -subtype pebbles
+  58.0 58.25
+  58.0 58.25 69.5 51.0 76.25 47.75
+  83.0 44.5 91.0 39.75 93.0 39.75
+  95.0 39.75 98.0 37.75 98.0 37.75
+  smooth off
+endline
+
+line wall -subtype pebbles
+  37.0 104.75
+  37.0 104.75 36.0 100.75 39.0 98.75
+  42.0 96.75 49.5 95.0 49.5 95.0
+  smooth off
+endline
+
+line wall -close on -outline in
+  59.0 109.5
+  59.0 109.5 64.0 110.75 63.75 109.5
+  63.5 108.25 67.25 106.0 63.5 105.75
+  59.75 105.5 57.5 103.75 57.5 105.75
+  57.5 107.75 59.0 109.5 59.0 109.5
+  smooth off
+endline
+
+point 100.25 82.0 breakdown-choke -orientation 275.4
+
+point 100.0 41.5 breakdown-choke -orientation 275.4
+
+point 99.75 50.75 breakdown-choke -orientation 275.4
+
+point 100.0 61.75 breakdown-choke -orientation 275.4
+
+point 100.25 73.25 breakdown-choke -orientation 275.4
+
+point 54.75 78.0 pebbles
+
+line wall -close on -outline in
+  47.25 108.5
+  47.25 108.5 52.5 111.5 52.75 108.5
+  53.0 105.5 51.75 104.75 48.5 105.0
+  45.25 105.25 41.5 108.25 43.5 108.25
+  45.5 108.25 47.25 108.5 47.25 108.5
+  smooth off
+endline
+
+point 99.0 22.75 label -text "imp."
+
+point 35.25 81.75 height -value [-6 m]
+
+point 47.25 133.75 label -text "<bf>CP69" -scale xl
+
+point 118.75 59.25 air-draught -orientation 270.5 -subtype summer
+
+point 51.25 120.25 entrance -orientation 148.2
+
+line wall -subtype invisible
+  91.5 119.5
+  91.5 119.5 81.5 119.25 72.25 117.75
+  63.0 116.25 59.0 113.75 51.75 113.25
+  44.5 112.75 43.25 109.5 37.25 109.5
+  31.25 109.5 23.75 108.75 23.75 108.75
+  smooth off
+endline
+
+line wall
+  100.25 85.25
+  100.25 85.25 84.5 90.25 81.5 92.5
+  78.5 94.75 78.75 99.5 79.0 102.75
+  79.25 106.0 80.0 109.5 83.5 112.5
+  87.0 115.5 91.5 119.5 91.5 119.5
+  smooth off
+endline
+
+line wall
+  49.5 95.0
+  49.5 95.0 52.75 93.0 52.75 88.0
+  52.75 83.0 50.0 77.5 52.25 76.25
+  54.5 75.0 56.25 76.25 56.0 73.5
+  55.75 70.75 50.75 67.75 52.0 65.5
+  53.25 63.25 54.75 62.0 55.75 61.0
+  56.75 60.0 55.75 60.0 58.0 58.25
+  smooth off
+endline
+
+line wall
+  23.75 108.75
+  23.75 108.75 36.25 106.0 37.0 104.75
+  smooth off
+endline
+
+point 93.35069999999999 47.154999999999994 station -name 1@CP69
+
+point 57.7707 65.27499999999999 station -name 0b@CP69
+
+point 78.7407 110.23499999999999 station -name CP69@CP69
+
+endscrap
+
+

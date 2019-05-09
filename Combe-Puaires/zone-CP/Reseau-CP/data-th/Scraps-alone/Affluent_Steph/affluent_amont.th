@@ -1,0 +1,53 @@
+encoding utf-8
+
+ survey affluent_Steph -title "CP16 Affluent Steph"
+    
+ centerline -title "Affluent Amont Xa-2014-0_Xa-2014-0bis Xa-2014-14_Xa-2014-15"
+  
+   date 2014.09.27
+#   declination 0.0000  degrees
+  team "Xavier Robert"
+  team "Gaëtan Poschmann"
+  team "Frédéric Alvarez"
+  explo-date 2014.08.20 # date à Revoir !!!
+  explo-team "Xavier Robert"
+  explo-team "Stéphane Lips"
+  explo-team "Gaëtan Poschmann"
+  explo-team "Frédéric Alvarez"
+  explo-team "Cédric Chambe"
+  explo-date 2014.09.27
+  explo-team "Xavier Robert"
+  explo-team "David Parrot"
+  explo-team "Gaëtan Poschmann"
+  explo-team "Frédéric Alvarez"
+  explo-team "Daniel Beleiu"
+
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+extend right
+	Xa-2014-0 Xa-2014-0bis	0	0	0	0.5	1.5	0.5	1.5	# terminus dans méandre au dessus salle
+	Xa-2014-0 Xa-2014-1	2.87	142	-8	0.5	2	0.5	15
+	Xa-2014-0 Xa-2014-2	8.96	99	7	1	1	2.5	1.5
+	Xa-2014-2 Xa-2014-3	2.88	20	33	0.4	0	0.3	2.5 # goujon
+	Xa-2014-3 Xa-2014-4	2.36	53	-14	2	0.5	4	7
+extend left
+	Xa-2014-4 Xa-2014-5	5.44	220	-65	0.5	2.5	2	1.5 # Goujon
+	Xa-2014-5 Xa-2014-6	3.49	260	-36	0.6	0.6	1	3
+	Xa-2014-6 Xa-2014-7	3.62	243	3	0.5	2	0.5	1.5
+	Xa-2014-6 Xa-2014-8	3.91	255	-69	2	1	5	5
+extend right
+	Xa-2014-8 Xa-2014-9	8.24	9	-50	0.3	3	5	7
+	Xa-2014-9 Xa-2014-10	8.48	48	-60	2	1.5	5	1.5
+	Xa-2014-10 Xa-2014-11	7.23	341	0	2.5	1	20	1.5	# Cairn, base de la cascade
+	Xa-2014-11 Xa-2014-12	20	0	90	2	2	8	21	# visée fictive
+extend left
+	Xa-2014-10 Xa-2014-13	6.87	208	-24	0.5	2.5	3	7 # sommet de la cascade
+	Xa-2014-13 Xa-2014-14	10.40	238	-47	5	5	20	1.5 # cairn de jonction dans la salle sous la cascade
+	Xa-2014-14 Xa-2014-15	14	120	32	2	3	4	1	# Cloche qui a permis l'escalade de la première cascade
+
+endcenterline
+
+endsurvey	

@@ -1,0 +1,20 @@
+encoding  utf-8
+ 
+ survey zone_T -title "Zone T"
+  input trousT.th
+  #input trousT.th2
+
+  # Pour importer les différentes données de différents fichiers topos : 
+   input T9/data-th/T9.th
+   input T9/data-th2/T9.th2
+      
+   input T25a-b/data-th/T25a-b.th
+   input T25a-b/data-th2/T25.th2
+   
+   input T35/T35.th
+   input T35/T35.th2
+   
+   input T59/T59.th
+   input T59/T59.th2     
+   
+ endsurvey

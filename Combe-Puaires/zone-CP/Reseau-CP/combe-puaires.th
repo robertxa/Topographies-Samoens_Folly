@@ -1,0 +1,99 @@
+encoding  utf-8
+ 
+survey ReseauCP -title "Réseau de la Combe aux Puaires"
+
+# Pour importer les différentes données de différents fichiers topos : 
+	input data-th/ReseauCP
+	
+	input data-th/CP12
+	equate 1.19@ReseauCP 1.19@CP12
+	
+	input data-th/CP14
+	equate 9.17@ReseauCP 9.17@CP14
+	equate E.9@2xxpats E.9@CP14
+	
+	input data-th/CP16
+	equate 20.13@billy 20.13@CP16
+	
+	input data-th/CP19b
+	equate 6.23@reptiles 6.23@CP19b
+	input data-th/reptiles
+	equate 1.28@ReseauCP 1.28@reptiles	
+	
+	input data-th/billy
+	equate 11.22@ReseauCP 11.22@billy
+	equate 11.25@billy 11.25@ReseauCP
+	input data-th/Billy1
+	equate 21.34@billy Xa-2015-0@Billy1
+	equate 21.28@billy Xa-2015-9@Billy1
+	input data-th/Billy2
+	equate 21.11@billy Xa-2015-14@Billy2
+	input data-th/Billy3
+	##equate 21.06@ReseauCP Xa-2015-25@Billy3
+	equate 21.09@billy Xa-2015-25@Billy3	# Raccord sur méandre Billy non sûr, il faudra vérifier sur le terrain !!!
+	
+	input data-th/2xxpats
+	equate 11.35@ReseauCP 11.35@2xxpats
+	
+	
+	input data-th/espoir
+	equate 16.15@ReseauCP 16.15@espoir
+	
+	input data-th/shunt_cata
+	equate 30.19@espoir 30.19@shunt_cata
+	equate 13.7@espoir 13.7@shunt_cata
+	
+	input data-th/riviere_amont
+	equate 2008.S.0@espoir 2008.S.0@riviere_amont
+	equate 14.4@riviere_aval 40.0@riviere_amont
+	##equate 40.60@ReseauCP 40.60@riviere_amont
+	##equate 40.50@ReseauCP 40.50@riviere_amont
+	input data-th/affluent_steph 
+	equate 40.34@riviere_amont Xa-2014-14@affluent_Steph
+	
+	input data-th/riviere_aval
+	equate 17.13@ReseauCP 17.13@riviere_aval
+	equate 13.7@espoir 13.7@riviere_aval
+	
+	input data-th/BivouacCP
+	equate 16.26@ReseauCP 16.26@BivouacCP
+	
+	
+   
+# Pour importer les différents fichiers de dessins 
+	
+	### OLD
+	input data-th2/billy.th2   
+	input Data-th2/TeteHomme.th2
+	input Data-th2/CP12.th2
+	
+	join 4vents-2 4vents-4
+	join 4vents-2 Massues-1
+	join huit-1 CP14-2
+	join huit-1 CP14-2
+
+	
+	input Data-th2/clowns.th2
+	join clown_Sp1 Massues-2
+ 
+ 	input Data-th2/Billy1.th2
+ 	join billy2015_1 Billy-3 #-count 2
+ 	join billy2015_1 Billy-4
+ 	
+ 	input Data-th2/Billy2.th2
+ 	
+ 	input Data-th2/Billy3.th2
+ 	join Billy3-s1 Billy-4 -count 2
+ 	
+ 	input Data-th2/riv_amont.th2
+ 	join palm-Sp1 Pierrot-6
+ 	join amont-dessous-Sp1 Pierrot-6
+ 	join affsteph-Sp1 Pierrot-1
+ 	# Homme-8 et Homme-7 à commenter !!! C'est tout pourri ! c'est ce qui a été dessiné à partir des data des Cataphiles...
+ 	join homjct-Sp2 Homme-3
+ 	join homjct-Sp2 Massues-3
+ 	
+ 	input Data-th2/CP14-2011.th2
+ 	join CP14_2008-Sp1 CP14-2
+ 	
+ endsurvey

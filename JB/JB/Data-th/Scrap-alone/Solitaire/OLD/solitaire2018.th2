@@ -1,0 +1,74 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -129.5 1151.6226000000001 1072.8824
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {708.6659999999999 1 1.0} {629.925 xx0init} solitaire-plan2018.xvi 0 {}
+
+
+
+scrap Solitaire2018-SP1 -projection plan -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+point 954.0 517.5 air-draught -orientation 50.9 -subtype winter
+
+point 916.0 509.0 continuation -attr Code A -text "CF à continuer, fort courant d'air"
+
+point 893.5 429.0 rope
+
+line pit
+  899.0 459.5
+  899.0 459.5 862.0 491.5 861.0 512.0
+endline
+
+line pit
+  867.5 455.0
+  867.5 455.0 853.5 465.0 852.0 480.5
+endline
+
+line pit
+  843.0 445.5
+  843.0 445.5 818.5 454.5 820.5 468.5
+endline
+
+line pit
+  820.5 434.5
+  820.5 434.5 796.0 439.0 803.5 454.5
+endline
+
+point 869.0 438.0 height -value [+10 m]
+
+point 884.0 498.0 helictite
+
+line pit
+  776.0 405.0
+  776.0 405.0 775.0 407.0 780.5 417.0
+  786.0 427.0 793.5 428.0 785.5 433.5
+endline
+
+line wall
+  780.5 417.0
+  793.5 419.5
+endline
+
+line wall
+  793.5 419.5
+  793.5 419.5 848.5 456.5 858.0 458.0
+  867.5 459.5 880.0 462.0 887.5 464.5
+  895.0 467.0 914.5 477.5 914.5 477.5
+  smooth off
+endline
+
+line wall
+  886.0 524.0
+  886.0 524.0 866.5 510.5 864.0 504.0
+  861.5 497.5 858.5 479.5 851.0 475.5
+  843.5 471.5 823.5 462.0 815.5 457.0
+  807.5 452.0 785.5 433.5 785.5 433.5
+  smooth off
+endline
+
+point 879.056 477.715 station -name 2018-CBa-fin@solitaire
+
+point 858.976 466.145 station -name 2018-CBa-01@solitaire
+
+endscrap
+
+

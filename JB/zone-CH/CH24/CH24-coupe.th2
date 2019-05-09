@@ -1,0 +1,184 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -127.99999999999994 -128.0 915.402 403.5907
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {748.0360000000001 1 1.0} {224.412 CH24} CH24-coupe.xvi 0 {}
+
+
+
+scrap CH24-coupe1 -projection extended -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 836.6618 -128.0 0.0 0.0 24.50240972 0.0 m]
+
+point 343.5 100.0 sand
+
+point 353.25 100.75 sand
+
+point 321.5 97.5 sand
+
+point 334.0 99.0 sand
+
+point 309.25 96.5 sand
+
+point 295.25 95.5 sand
+
+point 283.0 94.75 sand
+
+line border
+  273.5 90.0
+  273.5 90.0 273.0 95.5 277.75 96.0
+  282.5 96.5 307.75 98.75 314.25 98.75
+  320.75 98.75 338.25 102.0 345.5 102.0
+  352.75 102.0 366.25 102.0 371.25 101.25
+  376.25 100.5 379.0 99.5 379.0 99.5
+  smooth off
+endline
+
+point 222.75 93.25 blocks -scale s
+
+point 213.0 93.25 blocks -scale s
+
+point 197.25 93.5 blocks -scale s
+
+point 205.25 93.0 blocks -scale s
+
+point 191.5 94.5 blocks -scale s
+
+point 95.0 129.5 breakdown-choke -orientation 90.0
+
+point 100.75 126.25 blocks -scale s
+
+point 109.25 115.25 blocks -scale s
+
+point 107.0 104.25 blocks -scale s
+
+point 102.25 107.75 blocks -scale s
+
+point 99.75 117.25 blocks -scale s
+
+point 116.25 106.5 ice
+
+point 111.25 111.5 ice
+
+point 106.25 109.25 ice
+
+point 112.5 103.75 ice
+
+point 101.75 103.5 ice
+
+point 99.5 112.0 ice
+
+point 106.0 116.5 ice
+
+point 101.0 121.75 ice
+
+line wall -subtype ice
+  168.5 92.0
+  168.5 92.0 148.0 95.0 142.25 95.0
+  136.5 95.0 125.75 97.5 121.75 97.0
+  117.75 96.5 103.75 96.5 103.75 96.5
+  smooth off
+  99.5 96.0
+endline
+
+line wall -subtype ice
+  713.5 196.0
+  713.5 196.0 731.25 208.25 734.75 211.25
+  738.25 214.25 748.75 221.75 750.25 221.0
+endline
+
+line wall -subtype pebbles
+  654.0 178.5
+  654.0 178.5 702.25 189.0 705.75 191.0
+  709.25 193.0 713.5 196.0 713.5 196.0
+  smooth off
+endline
+
+line wall
+  621.0 170.5
+  621.0 170.5 652.0 178.5 654.0 178.5
+endline
+
+line wall -subtype sand
+  562.5 158.25
+  562.5 158.25 617.25 169.5 621.0 170.5
+endline
+
+line wall
+  750.25 221.0
+  750.25 221.0 751.25 219.75 751.25 217.75
+endline
+
+line wall
+  168.5 92.0
+  168.5 92.0 178.75 91.25 186.0 90.75
+  193.25 90.25 252.0 91.5 258.25 91.5
+  264.5 91.5 367.25 98.25 373.75 100.5
+endline
+
+point 79.0 126.75 altitude
+
+point 769.75 221.25 altitude
+
+point 769.25 242.5 label -text "CH24" -scale xl
+
+point 753.75 208.0 label -text "0 m"
+
+point 143.0 84.5 label -text "-33 m"
+
+point 95.5 143.0 label -text "trémie englacée"
+
+point 107.0 83.75 label -text "glace"
+
+point 746.25 196.75 label -text "glace"
+
+point 759.25 229.75 entrance -orientation 246.0
+
+point 575.75 166.5 camp
+
+line wall -subtype pebbles
+  373.75 100.5
+  547.5 154.5
+endline
+
+line wall
+  547.5 154.5
+  554.0 156.75 559.5 158.0 562.5 158.25
+endline
+
+line wall
+  748.25 235.75
+  748.25 235.75 749.5 228.25 747.75 227.5
+  746.0 226.75 736.75 231.25 734.75 227.5
+  732.75 223.75 737.0 221.0 731.25 218.0
+  725.5 215.0 712.25 206.25 704.75 203.5
+  697.25 200.75 601.75 177.0 593.75 175.75
+  585.75 174.5 538.0 162.75 529.25 158.75
+  520.5 154.75 385.0 112.0 374.25 110.75
+  363.5 109.5 266.75 100.25 258.0 100.5
+  249.25 100.75 195.75 103.25 186.75 104.0
+  177.75 104.75 148.0 104.25 142.75 107.0
+  137.5 109.75 125.5 117.5 119.75 121.0
+  114.0 124.5 107.0 132.0 104.0 131.75
+  101.0 131.5 99.0 131.75 99.0 131.75
+  smooth off
+endline
+
+point 103.416 127.05200000000002 station -name 8@CH24
+
+point 122.08600000000001 103.162 station -name 7@CH24
+
+point 143.426 97.04200000000002 station -name 6@CH24
+
+point 185.716 97.04200000000002 station -name 5@CH24
+
+point 258.18600000000004 95.77200000000002 station -name 4@CH24
+
+point 373.446 103.83200000000002 station -name 3@CH24
+
+point 561.206 161.24200000000002 station -name 2@CH24
+
+point 705.336 194.512 station -name 1@CH24
+
+point 748.0360000000001 224.412 station -name CH24double@CH24
+
+endscrap
+
+

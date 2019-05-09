@@ -1,0 +1,81 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 248.5 328.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7382 1 1.0} {181.1 BA09} BA09-coupe.xvi 0 {}
+
+
+
+scrap BA09-coupe -projection extended -author 2014 "Xavier Robert" -copyright 2014 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 43.0 158.5 label -orientation 308.7 -text "joint de strate"
+
+point 98.75 145.5 label -text "<it>Coupe"
+
+point 119.25 194.5 label -text "lapiez"
+
+point 65.5 129.25 label -text "-6 m"
+
+point 41.5 131.75 breakdown-choke -orientation 315.0
+
+point 35.5 108.75 continuation
+
+point 16.0 101.25 air-draught -orientation 32.9 -subtype summer -scale xs
+
+point 89.5 199.5 entrance -orientation 203.7
+
+line wall -subtype presumed
+  29.0 114.75
+  41.75 128.75
+endline
+
+line wall -subtype invisible
+  101.0 199.0
+  101.0 199.0 97.25 193.25 93.5 191.5
+  89.75 189.75 78.0 190.25 76.0 189.5
+  74.0 188.75 70.0 186.75 70.0 186.75
+  smooth off
+endline
+
+line wall
+  80.25 179.5
+  80.25 179.5 86.5 179.25 88.75 180.0
+  91.0 180.75 94.75 185.25 95.5 187.25
+  96.25 189.25 101.0 199.0 101.0 199.0
+  smooth off
+endline
+
+line wall -subtype pebbles
+  41.75 128.75
+  41.75 128.75 45.25 127.75 46.0 129.25
+  46.75 130.75 51.0 136.0 51.0 136.0
+  smooth off
+  51.0 136.0 53.5 137.25 56.25 138.5
+  59.0 139.75 62.75 142.5 66.5 148.75
+  70.25 155.0 75.25 161.75 75.25 166.25
+  75.25 170.75 76.25 174.0 77.0 175.75
+  77.75 177.5 79.0 179.5 80.25 179.5
+endline
+
+line wall -subtype presumed
+  39.0 132.0
+  25.25 116.5
+endline
+
+line wall
+  70.0 186.75
+  70.0 186.75 76.5 189.25 76.75 187.75
+  77.0 186.25 78.75 184.75 77.5 182.5
+  76.25 180.25 51.0 147.75 49.25 145.25
+  47.5 142.75 39.0 132.0 39.0 132.0
+  smooth off
+endline
+
+point 44.8382 130.84 station -name Xa2014-2@BA09
+
+point 49.238200000000006 137.37 station -name Xa2014-1@BA09
+
+point 78.7382 181.1 station -name BA09@BA09
+
+endscrap
+
+

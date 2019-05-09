@@ -1,0 +1,36 @@
+encoding utf-8
+
+survey LP3 -title "LP3" -entrance "LP3"
+    
+centerline
+   date 2009.08.08
+  cs lat-long 
+# fix LP3    46.112983       6.797483       2168
+# fix       LP3      46.112983     006.79748      2047  
+  fix       LP3      46.112983     006.79748      2168	# Revision de l'altitude car ne correspond pas avec le DEM  
+   calibrate counter 0 1.000
+  team "Stéphane Lips"
+  team "Antoine Aigueperse"
+  team "Guillaume Cerdan"
+  explo-date 2009.08.08
+  explo-team "Stéphane Lips"
+  explo-team "Antoine Aigueperse"
+  explo-team "Guillaume Cerdan"
+  
+   units lenght meters
+   units compass grad
+   units clino grad
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   0 0double 0.0 0.0    0.000000       100.0000      0.3000000      0.3000000      0.4000000      0.4000000    
+   0double 1 1640.0 2010.0    77.00000       50.00000      0.4000000      0.4000000      0.5000000       1.000000    
+   1 2 2010.0 2353.0    122.0000       16.00000      0.4000000      0.4000000       1.500000       1.500000    
+   2 3 2353.0 2790.0    47.00000       63.00000      0.4000000      0.4000000       1.000000       2.500000    
+   3 4 2790.0 3305.0    74.00000       59.00000      0.4000000      0.4000000       1.000000       1.500000    
+   4 5 3305.0 3683.0    61.00000       56.00000      0.5000000      0.5000000       1.000000      0.5000000    
+   5 6 3683.0 4079.0    90.00000       63.00000      0.6000000      0.6000000       5.000000       1.500000    
+   6 7 4079.0 5312.0    39.00000       85.00000       1.000000       1.000000       5.000000       13.00000    
+   7 8 0.0 545.0    0.000000       100.0000       1.500000       1.000000       4.000000       1.000000    
+   8 LP3 5312.0 5743.0    64.00000       57.00000       3.000000       1.000000       0.000000       1.000000    
+endcenterline
+endsurvey

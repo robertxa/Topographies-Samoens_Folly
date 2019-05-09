@@ -1,0 +1,365 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 652.0 403.5907
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {140.335 1 1.0} {196.848 XR-2015d-0bis} puitstraverse-coupe.xvi 0 {}
+
+
+
+scrap traversec1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+line wall
+  406.25 87.75
+  406.25 87.75 410.25 88.0 414.5 87.75
+  418.75 87.5 414.75 87.25 422.25 85.75
+  429.75 84.25 436.75 82.5 444.25 81.25
+  451.75 80.0 459.75 78.25 461.75 77.25
+endline
+
+point 273.5 132.25 blocks
+
+point 210.25 154.75 blocks
+
+point 189.5 155.5 label -text "etr."
+
+point 323.75 98.5 soda-straw
+
+point 358.0 108.5 soda-straw
+
+point 336.5 99.75 soda-straw
+
+point 127.25 184.75 label -text "trémie"
+
+point 472.5 124.0 label -text "Puits que l'on Traverse"
+
+point 316.5 83.25 label -text "colm."
+
+point 403.5 79.25 label -text "colm."
+
+point 424.75 116.25 height -value [+4 m]
+
+point 220.75 188.75 height -value [+3 m]
+
+point 299.25 142.5 air-draught -orientation 306.7 -subtype summer
+
+point 444.75 103.5 air-draught -orientation 283.7 -subtype summer
+
+point 338.25 85.5 air-draught -orientation 271.2 -subtype summer
+
+point 353.25 85.25 label -text "C.F."
+
+point 387.75 124.5 label -text "C.F."
+
+point 90.5 252.5 label -text "C.F."
+
+point 148.75 252.25 label -text "méandre"
+
+point 106.0 216.0 height -value [+7 m]
+
+point 135.25 193.5 breakdown-choke
+
+point 120.25 194.75 breakdown-choke
+
+point 298.0 93.25 continuation
+
+point 86.75 241.5 continuation
+
+point 150.25 239.75 continuation
+
+line rock-edge
+  126.0 234.75
+  136.5 212.25
+  148.75 208.25
+endline
+
+line rock-border -close on
+  126.0 234.75
+  148.75 208.25
+  153.25 199.0
+  143.0 204.75
+  136.5 212.25
+  136.5 212.25 129.5 224.75 128.5 225.25
+  127.5 225.75 124.0 230.5 124.0 230.5
+  smooth off
+  126.0 234.75
+endline
+
+line rock-border -close on
+  127.5 207.75
+  133.0 202.0
+  130.75 199.75
+  127.5 207.75
+endline
+
+line border
+  244.5 156.5
+  244.5 156.5 248.0 157.25 249.5 154.5
+  251.0 151.75 252.0 145.25 252.0 145.25
+  smooth off
+endline
+
+line border
+  227.5 165.75
+  227.5 165.75 232.25 167.75 232.25 164.0
+  232.25 160.25 234.25 155.5 234.25 155.5
+  smooth off
+endline
+
+line border
+  214.5 171.0
+  214.5 171.0 217.0 170.5 217.0 167.75
+  217.0 165.0 217.0 160.5 217.0 160.5
+  smooth off
+endline
+
+line border
+  207.5 158.75
+  210.25 158.75 211.25 158.25 214.5 156.75
+  217.75 155.25 220.5 153.0 220.5 153.0
+  smooth off
+endline
+
+line border
+  259.25 138.0
+  259.25 138.0 263.0 137.25 266.75 135.0
+  270.5 132.75 272.75 132.75 276.0 130.75
+  279.25 128.75 283.25 128.0 288.0 125.5
+  292.75 123.0 296.0 120.75 300.5 118.25
+  305.0 115.75 313.25 111.25 317.0 110.0
+  320.75 108.75 323.5 106.25 323.5 106.25
+  smooth off
+endline
+
+line border
+  228.5 148.5
+  228.5 148.5 231.0 150.0 234.0 148.25
+  237.0 146.5 238.5 143.75 238.5 143.75
+  smooth off
+endline
+
+line border
+  411.5 99.75
+  414.0 98.5 413.5 98.25 417.25 96.75
+  421.0 95.25 421.75 96.0 423.0 94.25
+  424.25 92.5 425.0 89.0 425.0 89.0
+  smooth off
+endline
+
+line wall
+  402.0 91.75
+  402.0 91.75 396.25 94.25 391.75 94.25
+  387.25 94.25 375.0 97.5 372.75 97.5
+  370.5 97.5 364.0 98.0 367.75 99.5
+  371.5 101.0 371.0 103.5 375.5 104.75
+  380.0 106.0 392.0 106.5 394.25 106.5
+  396.5 106.5 397.0 107.75 400.25 106.0
+  403.5 104.25 409.5 104.0 409.5 102.0
+  409.5 100.0 409.75 97.0 409.75 95.25
+  409.75 93.5 409.0 89.5 406.5 90.0
+  smooth off
+endline
+
+point 284.75 89.75 air-draught -orientation 274.4 -subtype summer
+
+line wall
+  302.5 87.0
+  302.5 87.0 308.0 87.25 310.25 87.5
+  312.5 87.75 313.0 89.0 316.0 89.25
+  319.0 89.5 319.0 89.75 324.25 90.0
+  329.5 90.25 330.25 89.75 335.5 90.75
+  340.75 91.75 352.0 94.25 355.0 94.25
+  358.0 94.25 356.5 95.0 364.25 94.5
+  372.0 94.0 376.5 92.0 381.5 92.0
+  386.5 92.0 392.75 90.25 395.25 90.25
+  397.75 90.25 401.25 88.5 401.25 88.5
+  smooth off
+endline
+
+line wall
+  199.5 155.25
+  199.5 155.25 203.25 155.0 204.0 153.5
+  204.75 152.0 200.75 149.0 203.75 149.0
+  206.75 149.0 210.25 148.75 213.0 148.5
+  215.75 148.25 219.0 146.75 221.25 146.5
+  223.5 146.25 220.5 140.75 223.25 140.25
+  226.0 139.75 227.5 137.75 231.25 138.0
+  235.0 138.25 253.5 136.75 257.0 136.25
+  260.5 135.75 256.5 130.75 260.75 130.5
+  265.0 130.25 268.5 130.25 271.5 128.75
+  274.5 127.25 287.0 121.75 294.75 117.25
+  302.5 112.75 310.5 107.75 316.75 106.0
+  323.0 104.25 327.5 103.75 331.0 103.5
+  334.5 103.25 342.75 102.25 345.5 101.25
+  348.25 100.25 355.0 100.5 352.25 99.0
+  349.5 97.5 337.0 96.25 333.75 95.0
+  330.5 93.75 320.0 92.0 318.0 92.0
+  316.0 92.0 314.75 91.5 312.75 91.5
+  310.75 91.5 308.25 95.5 308.25 95.5
+  smooth off
+endline
+
+line wall
+  140.25 194.25
+  140.25 194.25 147.5 190.75 150.75 190.25
+  154.0 189.75 159.25 186.25 162.5 185.0
+  165.75 183.75 171.5 181.75 176.25 180.75
+  181.0 179.75 186.0 175.5 189.5 174.75
+  193.0 174.0 197.5 170.5 198.75 169.25
+  smooth off
+endline
+
+line wall
+  123.75 195.0
+  123.75 195.0 121.25 207.5 124.0 207.5
+  126.75 207.5 126.25 205.25 128.5 200.5
+  130.75 195.75 131.25 194.25 131.25 194.25
+  smooth off
+endline
+
+line wall
+  95.75 237.5
+  95.75 237.5 103.5 238.25 106.75 238.25
+  110.0 238.25 115.75 228.25 116.5 220.5
+  117.25 212.75 117.0 197.5 117.5 195.5
+  smooth off
+endline
+
+line wall
+  144.25 244.0
+  144.25 244.0 133.5 244.5 128.0 244.5
+  122.5 244.5 120.25 243.75 113.5 243.75
+  106.75 243.75 96.5 244.0 96.5 244.0
+  smooth off
+endline
+
+line wall
+  464.75 95.75
+  458.5 95.75 424.75 102.0 420.75 103.75
+  416.75 105.5 414.0 108.0 410.5 108.75
+  407.0 109.5 403.75 112.25 399.75 112.25
+  395.75 112.25 379.5 114.75 375.0 111.75
+  370.5 108.75 365.5 101.25 362.25 101.5
+  359.0 101.75 343.0 107.75 340.0 109.25
+  337.0 110.75 330.5 114.0 327.75 116.0
+  325.0 118.0 319.75 123.25 315.5 125.0
+  311.25 126.75 297.0 136.0 290.25 138.5
+  283.5 141.0 281.25 143.0 277.25 145.5
+  273.25 148.0 274.5 152.25 269.0 154.5
+  263.5 156.75 262.25 158.75 253.75 161.0
+  245.25 163.25 239.5 167.25 234.0 169.25
+  228.5 171.25 225.0 171.5 221.25 174.5
+  217.5 177.5 216.25 180.75 213.0 180.75
+  209.75 180.75 200.5 184.0 194.0 185.25
+  187.5 186.5 189.0 186.0 182.0 188.5
+  175.0 191.0 170.5 193.25 165.5 195.75
+  160.5 198.25 159.5 200.0 156.75 202.0
+  154.0 204.0 154.25 205.5 152.0 210.75
+  149.75 216.0 149.5 219.5 142.5 222.5
+  135.5 225.5 137.5 230.5 135.25 233.75
+  133.0 237.0 142.25 235.75 143.75 236.0
+  smooth off
+endline
+
+point 480.105 75.98800000000001 station -name XR-2015d-34@puitstraverse.Jean-Bernard
+
+point 464.385 82.98800000000001 station -name XR-2015d-33@puitstraverse.Jean-Bernard
+
+point 419.785 92.46800000000002 station -name XR-2015d-32@puitstraverse.Jean-Bernard
+
+point 410.415 105.84800000000001 station -name XR-2015d-31@puitstraverse.Jean-Bernard
+
+point 399.635 108.93800000000002 station -name XR-2015d-30@puitstraverse.Jean-Bernard
+
+point 375.685 107.68800000000002 station -name XR-2015d-29@puitstraverse.Jean-Bernard
+
+point 393.175 92.20800000000001 station -name XR-2015d-26@puitstraverse.Jean-Bernard
+
+point 319.995 90.68800000000002 station -name XR-2015d-28@puitstraverse.Jean-Bernard
+
+point 335.58500000000004 92.87800000000001 station -name XR-2015d-27@puitstraverse.Jean-Bernard
+
+point 361.985 96.58800000000002 station -name XR-2015d-25@puitstraverse.Jean-Bernard
+
+point 345.425 104.30800000000002 station -name XR-2015d-24@puitstraverse.Jean-Bernard
+
+point 331.07500000000005 109.52800000000002 station -name XR-2015d-23@puitstraverse.Jean-Bernard
+
+point 317.695 111.64800000000001 station -name XR-2015d-22@puitstraverse.Jean-Bernard
+
+point 275.45500000000004 134.108 station -name XR-2015d-21@puitstraverse.Jean-Bernard
+
+point 269.995 135.77800000000002 station -name XR-2015d-20@puitstraverse.Jean-Bernard
+
+point 257.555 142.39800000000002 station -name XR-2015d-19@puitstraverse.Jean-Bernard
+
+point 233.59500000000003 154.078 station -name XR-2015d-18@puitstraverse.Jean-Bernard
+
+point 221.88500000000002 150.49800000000002 station -name XR-2015d-17@puitstraverse.Jean-Bernard
+
+point 215.22500000000002 152.40800000000002 station -name XR-2015d-16@puitstraverse.Jean-Bernard
+
+point 208.185 153.14800000000002 station -name XR-2015d-15@puitstraverse.Jean-Bernard
+
+point 206.63500000000002 161.108 station -name XR-2015d-12@puitstraverse.Jean-Bernard
+
+point 201.64500000000004 172.848 station -name XR-2015d-11@puitstraverse.Jean-Bernard
+
+point 190.805 177.228 station -name XR-2015d-10@puitstraverse.Jean-Bernard
+
+point 162.115 188.828 station -name XR-2015d-9@puitstraverse.Jean-Bernard
+
+point 154.32500000000002 190.90800000000002 station -name XR-2015d-8@puitstraverse.Jean-Bernard
+
+point 140.335 196.848 station -name XR-2015d-0@puitstraverse.Jean-Bernard
+
+point 126.60500000000002 210.578 station -name XR-2015d-1@puitstraverse.Jean-Bernard
+
+point 118.10500000000002 240.20800000000003 station -name XR-2015d-2@puitstraverse.Jean-Bernard
+
+endscrap
+
+
+
+scrap traversec2 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+line wall
+  144.25 193.5
+  144.25 193.5 149.0 187.0 151.75 186.0
+  154.5 185.0 156.75 183.5 160.75 182.25
+  164.75 181.0 170.75 178.75 173.25 177.75
+  175.75 176.75 186.0 173.0 186.25 171.25
+  186.5 169.5 184.5 167.75 186.5 167.0
+  188.5 166.25 189.25 167.75 191.75 164.75
+  194.25 161.75 191.5 161.25 193.5 159.75
+  195.5 158.25 198.5 157.75 199.75 157.25
+  201.0 156.75 199.5 155.25 199.5 155.25
+  smooth off
+endline
+
+line wall
+  198.75 169.25
+  198.75 169.25 197.75 169.25 195.0 170.5
+  192.25 171.75 189.75 174.75 188.75 176.25
+  187.75 177.75 188.0 181.25 185.0 182.25
+  182.0 183.25 181.0 186.0 177.25 186.25
+  173.5 186.5 168.0 186.75 166.25 187.5
+  164.5 188.25 162.75 191.5 162.75 191.5
+  smooth off
+endline
+
+point 199.94500000000002 161.108 station -name XR-2015d-13@puitstraverse.Jean-Bernard
+
+point 188.01500000000001 172.768 station -name XR-2015d-7@puitstraverse.Jean-Bernard
+
+point 187.13500000000002 173.918 station -name XR-2015d-14@puitstraverse.Jean-Bernard
+
+point 176.60500000000002 182.68800000000002 station -name XR-2015d-6@puitstraverse.Jean-Bernard
+
+point 172.32500000000002 184.15800000000002 station -name XR-2015d-5@puitstraverse.Jean-Bernard
+
+point 164.91500000000002 185.198 station -name XR-2015d-4@puitstraverse.Jean-Bernard
+
+point 155.735 190.93800000000002 station -name XR-2015d-3@puitstraverse.Jean-Bernard
+
+endscrap
+
+

@@ -1,0 +1,134 @@
+encoding  utf-8
+  
+# File written by tro2therion.f90 (Xavier Robert) 
+# Based on the work of Roman Muñoz <tatel@euskalnet.net> and Martin Gerbaux <martin.gerbaux@wanadoo.fr> 
+  
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2
+
+#source CH24tot.th
+source CH24.th
+source CH24.th2
+source CH24-coupe.th2
+
+# Add config file
+input ../../../config.thc 
+  
+layout xviexport
+	scale 1 1000
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+  
+layout my_layout
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copy langue-fr
+  
+	doc-title "CH24"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	#rotate 2.25
+	# origin 12 22 0 m
+	# origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "<it>Plan<ss> - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend on
+	#legend-width 14 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={CH24} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+endlayout
+ 
+  
+layout my_layout-coupe
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr
+  
+	doc-title "CH24"
+	doc-author "Xavier Robert"
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	#rotate 2.25
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend on
+	legend-width 21 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+ 
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={CH24} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+
+endlayout
+
+ 
+  
+export map -fmt xvi -layout xviexport -o CH24-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o CH24-coupe.xvi
+  
+export map -o CH24-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o CH24-coupe.pdf
+export model -o CH24.lox
+  
+# Export ESRI files
+export map -proj plan -fmt esri -o CH24 -layout my_layout
+  
+# Export kml files
+export map -proj plan -fmt kml -o CH24.kml -layout my_layout

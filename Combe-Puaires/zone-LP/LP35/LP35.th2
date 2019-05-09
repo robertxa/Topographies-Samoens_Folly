@@ -1,0 +1,114 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 234.75 174.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {72.622 1 1.0} {22.0745 LP35} LP35-map.xvi 0 {}
+
+
+
+scrap LP35-1 -projection plan -author 2002 "Bernard Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+
+point 35.75 9.5 label -text "-53 m"
+
+point 105.5 17.75 label -text "LP35" -scale xl
+
+point 79.75 45.5 height -value [-14 m]
+
+point 46.5 44.5 height -value [-13 m]
+
+point 96.0 28.75 height -value [-17 m]
+
+point 93.5 17.75 entrance -orientation 300.0
+
+point 70.0 10.25 altitude
+
+point 18.5 28.25 altitude
+
+point 30.75 19.25 continuation
+
+point 36.5 23.0 breakdown-choke
+
+point 72.25 29.5 snow
+
+point 65.5 29.25 snow
+
+point 59.0 27.5 snow
+
+point 57.25 31.75 snow
+
+point 51.25 28.0 snow
+
+point 45.5 29.0 snow
+
+line pit
+  52.75 22.75
+  52.75 22.75 55.25 29.5 53.0 31.75
+  50.75 34.0 48.5 35.5 48.5 35.5
+  smooth off
+endline
+
+line pit
+  72.75 27.0
+  72.75 27.0 79.25 29.0 79.75 31.75
+  80.25 34.5 80.0 36.75 80.0 36.75
+  smooth off
+endline
+
+line pit
+  71.75 26.0
+  71.75 26.0 82.75 24.75 84.75 29.0
+endline
+
+line overhang -close on
+  79.5 25.0
+  79.5 25.0 77.25 25.75 75.5 25.5
+  73.75 25.25 70.25 25.0 69.25 23.5
+  68.25 22.0 64.5 18.0 69.5 17.75
+  74.5 17.5 86.25 17.75 87.75 20.5
+  89.25 23.25 91.25 26.5 88.75 26.75
+  86.25 27.0 83.25 27.75 82.0 27.0
+  80.75 26.25 79.5 25.0 79.5 25.0
+  smooth off
+endline
+
+line wall
+  35.75 19.5
+  35.75 19.5 34.0 20.5 39.5 22.0
+  45.0 23.5 54.0 27.5 56.0 27.0
+  58.0 26.5 54.5 23.75 58.5 24.25
+  62.5 24.75 72.5 27.5 74.25 27.25
+  76.0 27.0 81.0 24.75 79.5 25.0
+  78.0 25.25 75.5 25.5 75.5 25.5
+  smooth off
+endline
+
+line wall
+  75.5 25.5
+  75.5 25.5 72.25 26.0 69.25 23.5
+  66.25 21.0 65.75 17.75 69.5 17.75
+  73.25 17.75 85.0 16.0 87.75 20.5
+  90.5 25.0 91.25 27.0 88.75 26.75
+  86.25 26.5 83.25 26.25 82.0 27.0
+  80.75 27.75 83.25 32.0 79.75 31.75
+  76.25 31.5 71.75 32.0 69.25 31.75
+  66.75 31.5 64.5 31.25 63.25 33.0
+  62.0 34.75 63.25 35.75 59.25 34.75
+  55.25 33.75 38.75 30.5 36.5 29.5
+  34.25 28.5 32.75 24.5 32.75 24.5
+  smooth off
+endline
+
+point 38.452 26.1145 station -name F@LP35
+
+point 61.182 30.8745 station -name 2@LP35
+
+point 61.352 27.4145 station -name 4@LP35
+
+point 76.702 29.3945 station -name 5@LP35
+
+point 83.272 23.4445 station -name 7@LP35
+
+point 72.622 22.0745 station -name 0double@LP35
+
+endscrap
+
+

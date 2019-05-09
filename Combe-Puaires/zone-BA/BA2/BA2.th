@@ -1,0 +1,38 @@
+encoding utf-8
+
+survey BA2 -title "BA2 (Samoëns)" -entrance "BA2"
+  
+ #cs 
+ #fix BA2_(SamoÎns)   943.1930       2132.637       1660.000    
+ 
+centerline
+
+ cs lat-long
+ fix BA2  46.106623    6.778692  1660  # COORDONNES APPROX ESTIMEES SUR GOOGLE EARTH !!!
+   date 2010.07.03
+  team "Boris Laurent"
+  team "Bernard Lips"
+  explo-date 2009.06.21
+  explo-team "Xavier Robert"
+  explo-team "Stéphane Lips"
+  explo-team "Josiane Lips"
+  explo-team "Bernard Lips"
+  explo-team "Estelle Forbach"
+  explo-team "Pauline Evrard"
+
+  units lenght meters
+  units compass grad
+  units clino grad
+   data normal from to length compass clino left right up down
+   BA2 0double    0.000000       0.000000       0.000000       1.000000      0.7000000       1.000000      0.6000000
+   0double 1    1.100000       154.0000      -20.00000       1.000000      0.5000000       2.000000      0.3000000
+   1 2    2.800000       157.0000      -17.00000      0.5000000      0.5000000      0.5000000      0.2000000
+   2 3    1.700000       158.0000      -17.00000      0.5000000      0.7000000       1.700000      0.5000000
+   3 4    2.000000       131.0000      -39.00000      0.3000000      0.3000000       1.000000      0.3000000
+   1 5    2.400000       224.0000      -22.00000      0.8000000      0.2000000      0.3000000      0.1000000
+   5 6    1.600000       165.0000       5.000000      0.5000000      0.5000000       1.000000      0.7000000
+   6 7    1.500000       148.0000       0.000000      0.2000000      0.2000000       1.500000       1.400000
+   7 8    1.500000       232.0000      -1.000000      0.2000000      0.2000000       1.200000       1.400000
+   8 9    1.300000       186.0000      -2.000000      0.2000000      0.2000000       1.600000       1.400000
+   endcenterline
+   endsurvey

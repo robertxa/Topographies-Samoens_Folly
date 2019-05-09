@@ -1,0 +1,42 @@
+encoding utf-8
+
+ survey BA4 -title "BA4 (Samoëns)" -entrance "BA4"
+ 
+ centerline
+ cs lat-long
+ #fix 14   46.103829      6.766091  1287  # COORDONNES APPROX ESTIMEES SUR GOOGLE EARTH parce que le GPS passe difficilement !!!
+ fix BA4   46.104068      6.766586  1295  # COORDONNES APPROX ESTIMEES SUR GOOGLE EARTH parce que le GPS passe difficilement !!!
+   date 2013.07.13
+      #declination 0.0000 grad
+  team "Xavier Robert"
+  team "David Parrot"
+  explo-date 2013.07.13
+  explo-team "Xavier Robert"
+  explo-team "David Parrot"
+  units lenght meters
+  units compass deg
+  units clino deg
+   data normal from to length compass clino left right up down
+   0	0b	0	0	0	0.3	0.3	0	6   # Etr.
+   0	1	4.66	0	-90	0.5	0.5	4	2.5
+   1	2	2.93	249	-27	1	0	5.7	1.5
+   2	3	6.69	258	-28	0.7	0.7	0.2	0.2
+   4	4b	0	0	0	0.2	0.2	4	2	# Etr.
+   4	5	2.83	60	0	0.5	0.7	0.5	0.5
+   5	6	3.96	250	-54	1.2	0.7	0.5	0.5
+   6	7	6.20	310	-42	2.7	3	0.7	2.3
+   7	8	5.20	274	-29	0.4	0.4	0.5	0.5
+   8	9	8.50	230	-6	0.2	0.5	0.5	0.5
+   9	10	7.8	225	-6	0.5	2	0.3	0.3
+   10	11	7.8	202	5	0.2	0.2	0.5	5
+   11	2	5.7	0	-90	1	0	5.7	1.5
+   3	13	8.7	285	-29	0.5	0.5	0.2	0.2
+   13	BA4	8.8	290	-33	4	1.5	1	1
+   extend left
+   BA4	15	5.4	165	22	0.5	0.5	0.2	0.2	# Porche d'entrée
+   15	16	10.07	124	27	1.5	0.5	0.4	0.4
+   
+   # dev = 95 m
+   
+   endcenterline
+   endsurvey

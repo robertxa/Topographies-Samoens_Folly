@@ -1,0 +1,125 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -130.68299999999994 -130.0 1424.5303000000001 1624.0638000000001
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {290.90400000000005 1 1.0} {340.969 2012-xa-0} Lavoir-coupe2015b.xvi 0 {}
+
+
+
+scrap browniesc1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+
+line label -text "galerie des Brownies"
+  1092.5 1130.5
+  1092.5 1130.5 1156.5 1180.5 1167.0 1199.0
+  1177.5 1217.5 1191.0 1312.5 1192.0 1314.5
+endline
+
+line u:rope
+  1009.5 1116.5
+  1009.5 1116.5 997.0 1108.5 994.0 1111.5
+  993.21 1112.29 985.5 1104.0 983.5 1108.5
+endline
+
+line u:rope
+  1099.0 1229.5
+  1099.0 1229.5 1086.5 1223.0 1086.5 1229.5
+  1086.5 1236.0 1080.0 1170.0 1080.0 1170.0
+  smooth off
+endline
+
+line u:rope
+  1111.5 1282.0
+  1111.5 1282.0 1099.5 1272.0 1099.0 1281.0
+  1098.5 1290.0 1099.0 1229.5 1099.0 1229.5
+  smooth off
+endline
+
+point 1134.0 1250.0 height -value [+11 m]
+
+point 1068.5 1159.5 water-flow -orientation 235.7
+
+point 1088.5 1305.5 water-flow -orientation 148.2
+
+point 1078.5 1294.5 narrow-end
+
+point 1137.0 1354.5 altitude
+
+point 1191.5 1359.0 narrow-end
+
+line wall
+  1053.0 1143.0
+  1053.0 1143.0 1077.5 1159.0 1081.5 1165.0
+  1085.5 1171.0 1094.5 1211.5 1096.5 1218.0
+  1098.5 1224.5 1101.0 1229.5 1106.0 1230.5
+  1111.0 1231.5 1103.0 1272.5 1108.5 1272.5
+  1114.0 1272.5 1119.5 1269.5 1120.0 1273.5
+  1120.5 1277.5 1136.0 1295.0 1142.5 1305.5
+  1149.0 1316.0 1164.5 1334.0 1166.5 1337.5
+  1168.5 1341.0 1168.0 1344.5 1172.5 1345.5
+  1177.0 1346.5 1182.5 1353.0 1182.5 1353.0
+  smooth off
+endline
+
+line wall
+  999.0 1103.0
+  999.0 1103.0 1007.0 1111.5 1011.5 1112.5
+  1016.0 1113.5 1024.0 1119.0 1028.5 1122.5
+  1033.0 1126.0 1043.66 1137.0 1053.0 1143.0
+endline
+
+line wall
+  1092.0 1292.5
+  1092.0 1292.5 1102.5 1290.5 1101.0 1286.5
+  1099.5 1282.5 1095.0 1280.0 1091.5 1276.0
+  1088.0 1272.0 1073.0 1252.0 1070.5 1244.5
+  1068.0 1237.0 1057.0 1190.5 1055.0 1182.0
+  1053.0 1173.5 1050.5 1160.0 1045.5 1155.5
+  1040.5 1151.0 1029.5 1138.5 1026.5 1135.0
+  1023.5 1131.5 1018.0 1127.0 1013.5 1123.5
+  1009.0 1120.0 1009.0 1116.5 1001.5 1116.5
+  994.0 1116.5 991.0 1116.0 991.0 1116.0
+  smooth off
+endline
+
+line wall
+  1178.5 1357.0
+  1178.5 1357.0 1166.5 1348.0 1163.0 1344.5
+  1159.5 1341.0 1160.5 1341.5 1155.5 1334.0
+  1150.5 1326.5 1149.5 1328.5 1143.0 1323.0
+  1136.5 1317.5 1131.5 1320.5 1126.0 1311.5
+  1120.5 1302.5 1123.0 1288.0 1117.5 1287.5
+  1112.0 1287.0 1109.0 1286.5 1106.0 1288.0
+  1103.0 1289.5 1099.5 1296.0 1099.5 1296.0
+  smooth off
+endline
+
+point 1178.424 1352.489 station -name 2015-FD2.2b@Lavoir.Jean-Bernard
+
+point 1166.5639999999999 1343.229 station -name 2015-FD2.1b@Lavoir.Jean-Bernard
+
+point 1158.474 1332.859 station -name 2015-FD2.0@Lavoir.Jean-Bernard
+
+point 1115.824 1276.269 station -name 2015-FD2.1@Lavoir.Jean-Bernard
+
+point 1103.144 1276.269 station -name 2015-FD2.2@Lavoir.Jean-Bernard
+
+point 1103.144 1233.749 station -name 2015-FD2.3@Lavoir.Jean-Bernard
+
+point 1093.154 1226.749 station -name 2015-FD2.4@Lavoir.Jean-Bernard
+
+point 1076.844 1165.899 station -name 2015-FD2.5@Lavoir.Jean-Bernard
+
+point 1054.834 1149.319 station -name 2015-FD2.6@Lavoir.Jean-Bernard
+
+point 1041.454 1139.5990000000002 station -name 2015-FD2.7@Lavoir.Jean-Bernard
+
+point 1029.274 1129.009 station -name 2015-FD2.8@Lavoir.Jean-Bernard
+
+point 1014.814 1118.109 station -name 2015-FD2.9@Lavoir.Jean-Bernard
+
+point 1004.454 1114.339 station -name 2015-FD2.10@Lavoir.Jean-Bernard
+
+point 992.644 1107.239 station -name 2015-FD2.11@Lavoir.Jean-Bernard
+
+endscrap
+
+

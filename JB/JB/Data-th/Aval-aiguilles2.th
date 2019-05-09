@@ -1,0 +1,69 @@
+encoding utf-8
+
+ survey aval-aiguilles2 -title "aval Aiguilles - Aspirosouffle"
+    
+ centerline -title "Aval Aiguilles 2012c-xa-28 2012c-xa-70"
+   date 2012.11.02
+  team "Xavier Robert"
+  team "Stéphane Lips"
+  team "Frédéric Delègue"
+  explo-date 2012.11.02
+  explo-team "Xavier Robert"
+  explo-team "Stéphane Lips"
+  explo-team "Frédéric Delègue"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   extend right
+
+#Point depart	Point arrivee	L	A	P	G	D	H	B	Rem
+2012c-xa-28	2012c-xa-28double	0	0	0	2.5	1.8	12	8	# Point topo frac
+2012c-xa-28	2012c-xa-29	10	350	-53	3	3	20	0	# Point topo terminal ancienne topo
+2012c-xa-28	2012c-xa-30	7.30	245	73	1.5	2	0.3	8 # sommet puits, noeud en plafond
+2012c-xa-30	2012c-xa-31	5.6	268	9	0.6	0.6	1	1.8
+2012c-xa-31	2012c-xa-32	6	297	15	1	0.5	1	2.7
+2012c-xa-32	2012c-xa-33	3.8	225	6	2.3	3.5	2.3	1.5
+2012c-xa-33	2012c-xa-34	4.4	296	30	1.6	0.8	2.9	2.5 # E4
+2012c-xa-34	2012c-xa-35	3.5	270	-1	1	0.7	5	1.5
+2012c-xa-35	2012c-xa-36	6.7	323	26	1.5	1	3	1.5	# départ rive gauche
+2012c-xa-36	2012c-xa-37	2.6	308	30	1	0.7	1.6	1.5 # Bouclage avec virage méandre principal
+2012c-xa-37	2012c-xa-38	2.7	322	52	0.5	0.5	0.5	0.5	# E2
+2012c-xa-38	2012c-xa-39	3.5	245	35	1.2	0.9	1	0.5	# Fistuleuses et excentriques
+2012c-xa-39	2012c-xa-40	4.9	330	15	0.1	0.1	0.1	0.1	# Colm.
+2012c-xa-39	2012c-xa-41	4.1	172	11	0.1	0.1	0.1	0.1	# Colm.
+2012c-xa-36	2012c-xa-42	3.40	190	-12	0.6	0.6	4	1.8
+2012c-xa-42	2012c-xa-43	3.8	160	21	0.6	0.6	8	3.5
+2012c-xa-43	2012c-xa-44	3.2	218	42	0.6	0.6	4	4
+2012c-xa-44	2012c-xa-45	4.66	179	13	0.6	1.8	6	3
+2012c-xa-45	2012c-xa-46	3.3	223	20	1	0.8	8	2.5
+2012c-xa-46	2012c-xa-47	5.30	153	-5	0.6	0.8	9	2
+2012c-xa-47	2012c-xa-48	4.3	0	90	0.3	0.3	5	6	# E4
+2012c-xa-48	2012c-xa-49	1.9	220	5	0.3	0.3	5	2
+2012c-xa-49	2012c-xa-50	3.7	145	60	0.5	0.5	2.4	4
+2012c-xa-50	2012c-xa-51	2.8	208	0	0.5	1	4.7	2.5
+2012c-xa-51	2012c-xa-52	3.5	327	6	0.3	0.3	6	5
+2012c-xa-52	2012c-xa-53	7.6	253	2	2	0.5	1.7	1.5
+2012c-xa-53	2012c-xa-54	12.7	212	83	1.6	2	4.2	10 # E12 / palier avec 3 départs
+2012c-xa-54	2012c-xa-55	2.6	337	12	2	0.5	4.1	1.5
+2012c-xa-55	2012c-xa-56	4.2	339	62	0.5	0.5	1.2	4
+2012c-xa-56	2012c-xa-57	3.4	341	48	0.8	0.4	1.2	1.5
+2012c-xa-57	2012c-xa-58	3.5	355	40	0.5	1.5	1.5	1
+2012c-xa-58	2012c-xa-59	5	150	-22	1	0.5	1.2	0.5
+2012c-xa-58	2012c-xa-60	2.9	234	37	1	0.5	1.4	0.5
+2012c-xa-60	2012c-xa-61	1.8	154	10	0.7	1	2	1
+2012c-xa-61	2012c-xa-62	4	112	41	0.7	1	2	1
+2012c-xa-62	2012c-xa-63	1.5	232	5	0.1	0.1	0.1	0.1
+2012c-xa-57	2012c-xa-64	3.3	320	26	0.3	0.3	0.2	1.5
+2012c-xa-64	2012c-xa-65	2.2	302	1	0.2	0.2	0.5	0.7	# Lucarne etr. vers puits/méandre parallèle
+2012c-xa-65	2012c-xa-66	3	354	23	1	0.5	4	1.5
+2012c-xa-66	2012c-xa-67	4	323	2	0.1	0.1	0.1	0.1
+2012c-xa-66	2012c-xa-68	2.7	157	52	0.3	0.3	2	3 # Etr. sommet ressaut / amarrage douteux
+2012c-xa-68	2012c-xa-69	1.62	226	-20	1.5	0.3	2	4 # AN sommet puits
+2012c-xa-69	2012c-xa-70	23	237	-50	1	1	20	30 # visee dans puits
+
+
+# dev = 194 m
+
+endcenterline
+endsurvey

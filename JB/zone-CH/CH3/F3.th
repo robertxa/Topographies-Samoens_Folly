@@ -1,0 +1,233 @@
+encoding utf-8
+
+survey F3 -title "F3" -entrance "F3"
+ 
+# EST-CE LE CH3 ?? --> OUI !!! 
+   
+centerline -title "CH3_old"
+	#  cs EPSG:27572
+	#  fix F3   945.4300       132.7000       2250.000 
+	cs lat-long
+	fix F3   46.1060333 6.8071333 2246   
+	date 1975.08.14
+		team "Christian Rigaldie"
+		team "Jacques Lopez"
+	explo-date 1975.08.14
+		explo-team "Christian Rigaldie"
+		explo-team "Jacques Lopez"
+	units lenght meters
+	units compass grad
+	units clino degrees
+   
+data normal from to length backcompass backclino right left up down
+	0 0double    0.000000       0.000000       90.00000       0.000000       0.000000       0.000000       0.000000    
+	0double 1    10.23000       246.0000      -20.00000       0.000000       0.000000       0.000000       0.000000    
+	1 2    8.920000       166.0000      -54.00000       0.000000       0.000000       0.000000       0.000000    
+	2 3    6.750000       129.0000      -9.000000       0.000000       0.000000       0.000000       0.000000    
+	3 4    4.820000       109.0000      -22.00000       0.000000       0.000000       0.000000       0.000000    
+	4 5    3.170000       102.0000      -25.00000       0.000000       0.000000       0.000000       0.000000    
+	5 6    3.150000       149.0000      -15.00000       0.000000       0.000000       0.000000       0.000000    
+	6 7    8.950000       230.0000      -57.00000       0.000000       0.000000       0.000000       0.000000    
+	7 8    13.25000       132.0000      -40.00000       0.000000       0.000000       0.000000       0.000000    
+	8 9    8.000000       0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+	extend right
+	9 F3    9.480000       250.0000      -55.00000       0.000000       0.000000       0.000000       0.000000    
+endcenterline
+ 
+centerline -title "CH3-2015"
+  
+	date 2015.10.17
+		team "Xavier Robert"
+		team "Frédéric Alvarez"
+		team "Gaëtan Poschmann"
+		team "Cédric Chambe"
+	explo-date 2015.10.17
+		explo-team "Xavier Robert"
+		explo-team "Frédéric Alvarez"
+		explo-team "Gaëtan Poschmann"
+		explo-team "Cédric Chambe"
+  
+	units lenght meters
+	units compass degrees
+	units clino degrees
+
+data normal from to length compass clino left right up down
+	extend right
+	2015-Xa-0	2015-Xa-0b	0	0	0	0.4	0.5	0.8	1.8	# Croix, c.a. aspirant en hiver
+	2015-Xa-0	2015-Xa-1	2.27	125	15	0.6	0.4	0.4	0.5	# Trémie
+	2015-Xa-1	2015-Xa-2	8.46	125	-7	1	0.1	0.5	0.5	
+	2015-Xa-2	2015-Xa-3	9	125	-17	2	2.9	3.5	0.5	# Cairn
+	2015-Xa-3	2015-Xa-4	4.14	120	20	0.3	0.3	1.5	3	# R3
+	2015-Xa-4	2015-Xa-5	2.56	115	30	1.3	0.5	1.5	3.9	# Cheminée
+	2015-Xa-5	2015-Xa-6	1.66	60	16	0.5	1.8	0.5	0.5	
+	2015-Xa-6	2015-Xa-7	2.16	103	-40	0.3	0.3	1.5	0.5	
+	2015-Xa-7	2015-Xa-8	1.6	215	-10	0.5	0.5	0.5	0.5	# Galets
+	2015-Xa-8	2015-Xa-9	2.46	130	3	0.5	0.5	1	0.5	
+	2015-Xa-9	2015-Xa-10	1.28	210	30	1	0.8	1.5	1.5	
+	2015-Xa-10	2015-Xa-11	3.28	122	10	0.1	0.1	0.2	0.3	# Etr. C.a.
+	2015-Xa-10	2015-Xa-12	3.33	215	-45	0.5	0.5	1.5	0.5	
+	2015-Xa-12	2015-Xa-13	2.34	115	-10	0.3	0.2	0.8	0.2	# Passage bas
+	2015-Xa-13	2015-Xa-14	4.59	105	20	0.5	0.5	3	0.5	
+	2015-Xa-14	2015-Xa-15	3.11	85	50	0.3	0.3	3	3	# Cristaux
+	2015-Xa-15	2015-Xa-16	4.67	130	-30	0.3	0.3	1	1	
+	2015-Xa-16	2015-Xa-17	3.23	135	5	0.4	0.4	6	3	# R3
+	2015-Xa-17	2015-Xa-18	3.29	140	-65	0.5	0.6	4	0.5	
+	2015-Xa-18	2015-Xa-19	8.12	135	-3	0.5	0.5	3.5	3	
+	2015-Xa-19	2015-Xa-20	5.98	140	0	0.3	0.3	15	0.5	# Cheminée
+	2015-Xa-20	2015-Xa-21	5.28	135	-30	1.5	0.1	10	1.5	# skiff AN
+	2015-Xa-21	2015-Xa-22	4.55	120	30	2.5	0.1	10	10	# noeud
+#	extend left
+	2015-Xa-22	2015-Xa-23	8.4	60	50	2	0.2	0.5	15	# Goujon
+	2015-Xa-23	F3	3.27	90	30	0.6	0.6	0.5	1.5	# Entrée
+endcenterline
+
+centerline -title "CH3-2016.1"
+  
+	date 2016.09.23
+		team "Frédéric Alvarez"
+		team "Gaëtan Poschmann"
+	explo-date 2016.09.23
+		explo-team "Frédéric Alvarez"
+		explo-team "Gaëtan Poschmann"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+
+data normal from to length compass clino left right up down
+	0	0b	0	0	0	0.6	0.5	0.4	0.6
+	0	2016-FA-1	1.8	198	-38	0.25	0.3	0.3	0.4
+	2016-FA-1	2016-FA-2	1.7	170	25	0.5	1.3	1.2	0.6
+	2016-FA-2	2016-FA-3	5	258	12	1.2	1.3	0.9	1.3
+	2016-FA-3	2016-FA-4	4	260	15	1.53	1.89	0.8	1.3
+endcenterline
+
+centerline -title "CH3-2016.2"
+  
+	date 2016.12.10
+		team "Frédéric Alvarez"
+		team "Gaëtan Poschmann"
+		team "Stéphane Kanshine"
+	explo-date 2016.12.10
+		explo-team "Frédéric Alvarez"
+		explo-team "Gaëtan Poschmann"
+		explo-team "Stéphane Kanshine"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+
+data normal from to length compass clino left right up down
+	2016-FA-4	2016-Pab-0b	0	0	0	1.8	1.6	1	0.6
+	2016-FA-4	2016-Pab-1	2.92	135	-25	1.5	1.7	1.5	25
+	2016-Pab-1	2016-Pab-2	4.95	300	-90	0.5	2	6.7	20
+	2016-Pab-2	2016-Pab-3	15.5	310	-85	0.8	1	1.8	0.6 # Pente -95 changée en -85
+	2016-Pab-3	2016-Pab-4	7.8	115	-50	0.7	0.8	1.9	0.7
+	2016-Pab-4	2016-Pab-5	3.3	100	0	0.5	0.3	1.8	1.2
+	2016-Pab-5	2016-Pab-6	6.6	90	-70	0.6	0.6	1.5	0.8
+	2016-Pab-6	2016-Pab-7	3	90	-35	0.5	1	1.6	0.8
+	2016-Pab-7	2016-Pab-8	6.6	20	-76	1.5	1.1	3.1	1.1
+	2016-Pab-8	2016-Pab-9	5.1	5	-70	0.6	0.3	0.6	1.2
+	2016-Pab-9	2016-Pab-10	2.75	100	-20	0.5	0.6	1.2	0.7
+	2016-Pab-10	2016-Pab-11	4.4	95	-12	0.6	1	1.2	2.1
+	2016-Pab-11	2016-Pab-12	7.6	125	-38	0.4	1	0.8	1.1
+	2016-Pab-12	2016-Pab-13	4	105	-46	0.6	1.1	0.9	1.1
+	2016-Pab-13	2016-Pab-14	6.9	100	-55	0.8	0.8	0.6	1.2
+	2016-Pab-14	2016-Pab-15	9	110	-45	0.5	0.6	8	1.2
+	# dev = 90.42 m
+endcenterline
+
+
+centerline -title "CH3-2017.1"
+# Départ du méandre descendant dans la salle du robinet
+  
+	date 2017.07.12
+		team "Frédéric Alvarez"
+		team "Gaëtan Poschmann"
+	explo-date 2017.07.12
+		explo-team "Frédéric Alvarez"
+		explo-team "Gaëtan Poschmann"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+
+data normal from to length compass clino left right up down
+	extend left
+	2015-Xa-3	2015-Xa-3b	0	0	0	1.5	3	12	1.2	# Salle du robinet
+	2015-Xa-3	2017-JR-1	3.5	198	-35	0.6	4.7	2	0.5	# Désobstruction
+	2017-JR-1	2017-JR-2	2.5	242	-34	0.5	0.4	1.2	1.2	
+	2017-JR-2	2017-JR-3	3.2	212	-16	0.5	0.3	1.7	1.2	
+	2017-JR-3	2017-JR-4	1.4	168	22	0.6	0.7	1.2	1.8	# Affluent temporaire
+	2017-JR-4	2017-JR-5	4.1	204	-20	0.4	0.2	1.6	0.6	# Bloc
+	2017-JR-5	2017-JR-6	4.4	305	-5	0.4	0.3	0.7	0.7	# Désobstruction
+	2017-JR-6	2017-JR-7	3.4	305	-22	0.5	0.5	1	1.2	
+	2017-JR-7	2017-JR-8	3.2	305	4	0.6	0.5	1.7	2	
+	2017-JR-8	2017-JR-9	2.8	23	-40	0.4	0.3	0.7	0.6	# Bloc
+	2017-JR-9	2017-JR-10	3.4	306	-9	0.8	0.5	1.2	0.6	# P5 et continuation
+	# dev = 31.9 m
+endcenterline
+
+
+centerline -title "CH3-2017.2"
+# Suite du départ descendant dans la salle du Robinet  
+  
+	date 2017.07.14
+		team "Frédéric Alvarez"
+		team "Gaëtan Poschmann"
+		team "Stéphane Kanshine"
+	explo-date 2017.07.14
+		explo-team "Frédéric Alvarez"
+		explo-team "Gaëtan Poschmann"
+		explo-team "Stéphane Kanshine"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+
+data normal from to length compass clino left right up down
+	extend left
+	2017-JR-10	2017-JR-11	0	0	0	1.8	0.5	0.6	1	
+	2017-JR-11	2017-JR-11bis	5	0	-90	1.8	0.5	0.6	1	# P5 avec méandre étroit sans courant d'air à la base
+	2017-JR-11	2017-JR-12	2.8	266	32	0.2	0.3	0.8	0.7	
+	2017-JR-12	2017-JR-13	2.8	276	8	0.3	0.7	1	0.6	
+	2017-JR-13	2017-JR-14	2	334	6	0.3	0.4	1	0.6	
+	2017-JR-14	2017-JR-15	4.2	310	14	0.5	0.3	0.5	0.7	
+	2017-JR-15	2017-JR-16	4.5	308	-1	0.3	0.5	1	0.7	# Départ d'ecalade facile, arrêt sur étroiture à claquer, courant d'air important
+	2017-JR-16	2017-JR-17	5.3	248	45	1.2	0.7	3.5	1.4	
+	2017-JR-17	2017-JR-18	9.2	150	75	0.3	0.6	1	9.2	# E10, sommet étroit, courant d'air, boyau à tirer
+	# dev = 35.8 m
+endcenterline
+
+
+centerline -title "CH3-2017.3"
+# Suite de l'aval, reprise de la topo à partir du sommet du puits
+  
+	date 2017.09.30
+		team "Frédéric Alvarez"
+		team "Gaëtan Poschmann"
+		team "Arnauld Roux"
+	explo-date 2017.09.30
+		explo-team "Frédéric Alvarez"
+		explo-team "Gaëtan Poschmann"
+		explo-team "Arnauld Roux"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+
+data normal from to length compass clino left right up down
+# Retopo du l'aval, pas d'avancée, du coup, je le place en duplicate (Xav, 02/10/2017)
+	flags duplicate
+	2016-FA-4	2017-Pab-0	0	0	0	2	1.7	0.8	0.7
+	2016-FA-4	2017-Pab-1	2.45	268	-20	1	2	1	26
+	2017-Pab-1	2017-Pab-2	4.7	321	-90	1.5	2.2	6	16
+	2017-Pab-2	2017-Pab-3	16	310	-90	1.4	1	26	1.1
+	2017-Pab-3	2017-Pab-4	8	112	-43	0.7	0.9	1.3	1
+	2017-Pab-4	2017-Pab-5	4.5	122	-6	0.6	0.3	1.9	1.3
+	2017-Pab-5	2017-Pab-6	5.9	88	-59	0.5	0.8	5.3	1.2
+	2017-Pab-6	2017-Pab-7	5.4	76	-55	0.9	1	2.2	0.8
+	2017-Pab-7	2017-Pab-8	6.9	46	-72	1.8	2.6	6	1
+	2017-Pab-8	2017-Pab-9	3.7	66	-63	0.4	0.4	1	1.3
+	2017-Pab-9	2017-Pab-10	6.8	102	-12	0.8	0.5	1.8	1.1
+	2017-Pab-10	2017-Pab-11	10.1	114	-32	1	0.5	1.4	1
+	2017-Pab-11	2017-Pab-12	9.8	108	-42	0.4	1	0.8	1.1
+	# dev = 84.25 m
+endcenterline
+ 
+ endsurvey

@@ -1,0 +1,316 @@
+encoding  utf-8
+
+#encoding  iso8859-2
+ 
+ survey Jean-Bernard -title "Gouffre Jean Bernard"
+
+# Pour importer les différentes données de différents fichiers topos : 
+   input Data-th/jb-amonts1
+   input Data-th/jb-amonts2
+   input Data-th/jb-riv
+   input Data-th/jb-riv2
+   
+   input Data-th/jb-arianes
+   
+   input Data-th/Aval-aiguilles2
+   
+   input Data-th/Aval-aiguilles
+   
+   input Data-th/Lavoir
+   
+   input Data-th/shunt-branlots
+   
+   input Data-th/affluentC14
+
+   input Drawing-th2/Arva.th2
+    
+    input Drawing-th2/GoureToiDeLa2015.th2
+    input Drawing-th2/GoureToiDeLa2015b.th2
+    input Drawing-th2/GoureToiDeLa.th2
+    input Drawing-th2/Gourance2013.th2
+    
+    input Drawing-th2/dino.th2
+    input Drawing-th2/B19.th2
+    input Drawing-th2/V5.th2
+    input Drawing-th2/gadoue.th2
+    input Drawing-th2/B21.th2
+    
+    input Drawing-th2/puitstraverse.th2   
+##   input Data-th/jb-ajouts
+
+##	input Data-th/assemblage
+   
+
+   centerline
+    
+# Pour assembler plusieurs fichiers topos
+     equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
+     equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
+     equate  Jf.14@jb-amonts2  Jf.14@jb-riv
+     equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
+     equate  Kg.0@jb-riv  Kg.0@jb-riv2
+     equate  Kg.9@jb-riv  Kg.9@jb-riv2
+     equate  Ke.29@jb-riv  Ke.29@jb-riv2
+     equate  Ke.43@jb-riv  Ke.43@jb-riv2
+     equate  Ke.33@jb-riv  Ke.33@jb-riv2
+     equate  Da.58@jb-amonts2  Da.58@jb-riv2
+     equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
+     equate  Bc.50@jb-arianes Bc.50@jb-amonts1
+     equate  Bb.115@jb-arianes Bb.115@jb-amonts1
+     equate  2012c-xa-29@aval-aiguilles2 De.44@jb-amonts2
+     equate  2012c-xa-27@aval-aiguilles De.8@jb-amonts2
+     equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
+     equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
+     equate  2012c-xa-0double@aval-aiguilles Da.197@jb-amonts2
+     equate  2013-xac-14@shunt-branlots Fb.29@jb-amonts2
+     equate  2013-xac-0@shunt-branlots Fd.14@jb-amonts2
+     equate  2013-xab-22@affluentC14 Bg.0@jb-amonts1
+          
+     # Pour boucler toute la topo du JB, de façon à supprimer les choix de coupage de Steph
+        # Zone de la rivière aux excentriques
+          #equate  Da.179@jb-amonts1  Da.180'@jb-amonts1
+          #equate  Da.99@jb-amonts1  Da.100'@jb-amonts1
+        
+        # Zone du réseau des Bourguignons
+          #equate  Hb.0@jb-amonts1  Da.237@jb-amonts1 #(En rajoutant artificiellement une visée P15 ?)
+          #equate  Ha.33@jb-amonts1  Hd.31@jb-amonts1 #(? Je ne suis pas sûr que le m. des chatons jonctionne avec les bourguignons)
+          #equate  Hd.0@jb-amonts1  Hc.15@jb-amonts1 #(? Je ne suis pas sûr que le m. de la soucoupe jonctionne avec les bourguignons)
+        
+        # Zone de la Pierre qui tombe
+          #equate  Jc.0@jb-amonts1  Da.346@jb-amonts1 #(Ca semble bon)
+          #equate  Jb.15@jb-amonts1  Gc.0@jb-amonts1 #(? Pb en dx, dy et surtout dz)
+          #equate  Jb.27@jb-amonts1  Jc.5@jb-amonts1 #(Arrff dz est dans les choux)
+          
+        # Zone de la galerie du P15-colimaçon
+          #equate  Fm.0@jb-amonts1  Da.257@jb-amonts1 #(ou 259 ?)
+          #equate  Fd.41@jb-amonts1  Da.240@jb-amonts1
+ 
+   endcenterline
+
+ endsurvey
+ 
+
+# Pour importer les différents fichiers de dessins 
+    input Drawing-th2/JB-riviere2.th2
+    input Drawing-th2/JB-riviere1.th2
+    input Drawing-th2/arianes.th2   
+    input Drawing-th2/JB-aval1.th2
+    input Drawing-th2/JB-V4.th2
+    input Drawing-th2/JB-dessin.th2
+    input Drawing-th2/JB-B22.th2
+    input Drawing-th2/JB-C37.th2
+    input Drawing-th2/dessin2010.th2
+    input Drawing-th2/JB-nuitblanche.th2
+    input Drawing-th2/aval-aiguilles2.th2
+    input Drawing-th2/aval-aiguilles.th2
+    input Drawing-th2/Lavoir.th2
+    input Drawing-th2/Lavoir-boeuf.th2
+    input Drawing-th2/shunt-branlots.th2
+    input Drawing-th2/affluentC14.th2
+    input Drawing-th2/Arva.th2
+
+ # Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
+ # join scrap1 scrap2 . C'est tout simple !
+   # Gourance avec -500
+     join gourance-1 bivouac500c
+   # Salle V6 avec Mais   
+     join V6 Mais
+   # Galerie du Maïs avec Mais-2010
+     join Mais Mais-2010  
+   # Salle V6 avec V5
+     join V6 V5
+   # Depart Anou II avec Mais
+     join Anou2 Mais
+   # Depart Feigne avec Mais
+     join flash Mais
+   # Depart Jaunisse avec Mais
+     join anou2bis Mais
+   # Depart Mais avec Grand Escalier
+     join grdescalier Mais
+   # Pierre qui tombe avec Puits Alain     
+     join quitombe4 pquitombeend
+   # Au niveau telepherique
+     join V4 pAlain
+     
+     join Echo2010-1 Branlots
+     
+     join Echo2010-2 Branlots
+     
+     join Echo2010-2 Branlots
+     
+     join Echo2010-2 Colimaconaval
+     
+     join Echo2010-3 Branlots
+     
+     join Lavoir-new1 Lavoir7
+     
+     join lavoir-sec Boeuf2
+     
+     join base-racc Racc5
+     
+     join Lavoir3old B19
+
+     join reverbere affluent-C14-2
+     
+     join Branlots s-branlots1
+     
+
+     #join aval-aiguille2-1 ???
+
+#	 join aval-aiguilles1 Frenesie
+
+#     join aval-aiguilles5 Bulle
+
+# Pour gérer la disposition des différents scraps entre eux:   
+
+
+
+  
+#  map JB-amontsuite		
+#		aval-aiguilles4 		
+#     break
+#		aval-aiguilles5  		
+#     break
+#		aval-aiguilles2	
+#     break
+#		aval-aiguilles3  		
+#     break
+#		aval-aiguilles11  		
+#   endmap
+
+   
+   
+#   map JB-rev
+#   		Voltigeurs-amonts
+#     break
+#  		voltigeurs
+#     preview below JB-total
+#  endmap
+
+
+# Scraps existants :
+#1) dans JB-C37.th2
+#  C37
+#  C37-jonction
+#  escalade-octobre
+#  Voltigeurs-amonts
+#  voltigeurs
+#  reverbere
+#  arche
+#  faille-bivouac
+#  riviera (A mettre sous JB-B22 et arianes)
+#
+#2) dans JB-B22.th2
+#  B21-1
+#  B21-2
+#  B21-3
+#  B21-4
+#  B22-1
+#  B22-2
+#  champs-elysees
+#  champs-elysees2
+#
+#3) dans arianes.th2
+#  arianes1
+#  arianes2
+#
+#4) dans JB-dessin.th2
+#  B19
+#  Senecaliens
+#  Crawleurs
+#  V11
+#  V11-meandre
+#  oublies
+#  J14
+#  Lavoir1
+#  lavoir2
+#  Raccourci
+#  Aiguilles
+#  aiguilles2
+#  Ascension
+#  audessusbulle
+#  Crawleuraval
+#  Excentriques1
+#  Montagnesrusses
+#  Pourquedalle
+#  P15
+#  Branlots
+#  Russesaval
+#  Russesaval2
+#  Colimaconaval
+#  Passibas
+#  scrap2603
+#  Echo
+#  Frenesie
+#  Bulle
+#  Pseudosiphons
+#  Pseudosiphon2
+#  Bourguignons1
+#  Bourguignons1bis
+#  P15aval
+#  P15-2
+#  Erreur
+#  P15-4
+#  Cataboyau
+#  Mais
+#  V5
+#  V5aval
+#  Excentriques2 (à mettre ailleur ?)
+#  Arva1
+#  Arva2
+#  Lavoir3 (à mettre ailleur)
+#  scrap1917 (à mettre ailleur)
+#  gadouejonction (à mettre ailleur)
+#  Gadoue (à mettre ailleur)
+#  
+#5) dans JB-V4.th2
+#  Anou2
+#  flash
+#  anou2bis
+#  grdescalier
+#  bourguignons2
+#  Soucoupe
+#  Soucoupe2
+#  bourguignonscollecteur
+#  jaunisse
+#  papy2
+#  V6ter
+#  V6
+#  V4
+#  savoyards
+#  quitombe
+#  quitombe2
+#  quitombe3
+#  mangerjct
+#  quitombe4
+#  chatons
+#  pierretombe
+#  jaunisse2
+#  
+#6) dans JB-aval1.th2
+#  pquitombeend
+#  pAlain
+#  cascatelles
+#  
+#7) dans Aval-Aiguilles2.th2 ; a mettre au dessus audessusbulle@JB-dessin
+#  aval-aiguille2-4
+#  aval-aiguille2-6
+#  aval-aiguille2-5
+#  aval-aiguille2-3
+#  aval-aiguilles2-2
+#  aval-aiguille2-1
+#  
+
+#8) dans Aval-aiguilles.th2 ; a mettre au dessus bulle@JB-dessin
+#		aval-aiguilles4  		
+#		aval-aiguilles5  		
+#		aval-aiguilles2	
+#		aval-aiguilles3  		
+#		aval-aiguilles1 
+
+# endsurvey
+ 
+ 
+
+ 
+ 	

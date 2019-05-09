@@ -1,0 +1,153 @@
+encoding  utf-8
+# File written by tro2therion.f90 (Xavier Robert) 
+# Based on the work of Roman Muñoz <tatel@euskalnet.net> and Martin Gerbaux <martin.gerbaux@wanadoo.fr> 
+  
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2
+ 
+# Import DATA  
+source solitaire.th
+source solitaire-tot.th
+#source solitaire-plan.th2
+#source solitaire-plan2017.th2
+#source solitaire-coupe2017.th2
+# Add config file
+input ../../../../../config.thc 
+  
+ 
+  
+layout xviexport_plan
+	scale 1 500
+	grid-size 10 10 10 m
+	grid bottom
+endlayout  
+ 
+layout xviexport_coupe
+   scale 1 1000
+   grid-size 10 10 10 m
+   grid bottom
+endlayout
+  
+layout layout_plan
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl 
+	copy langue-fr
+	  
+	doc-title "Réseau du Solitaire-plan"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 500
+	scale 1 500
+	scale-bar 50 m
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "Réseau du solitaire"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 18 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	#symbol-hide line survey
+	#symbol-hide point station
+	#debug station-names
+	# grid bottom
+	# grid-size 100 100 100 m
+	grid off
+  
+	######## Code Metapost pour modifier l aspect des symboles ####### 
+
+	# Titre          
+	code tex-map
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+ 
+	######################### 
+  
+	# Ajouter une coupe développée sur le même pdf
+	#map-image 200 130 n solitaire-coupe.pdf
+  
+endlayout
+  
+  
+layout layout_coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe 
+	copy langue-fr
+
+	doc-title "Réseau du solitaire-coupe"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	#color map-bg 85 
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "Réseau du solitaire"
+	symbol-hide line survey
+	#debug station-names
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 18 cm
+	map-header 0 -20 nw
+	map-header-bg off
+	layers on
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off  
+  
+	######## Code Metapost pour modifier l aspect des symboles ####### 
+
+	# Titre          
+	code tex-map  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard}
+			
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+	######################### 
+  
+endlayout
+
+# Export des fichiers xvi  
+	export map -fmt xvi -layout xviexport_plan -o solitaire-plan2018b.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o solitaire-coupe2018b.xvi
+
+# Export des fichiers pdf  
+	export map -projection extended -layout layout_coupe -o solitaire-coupe2018.pdf
+	export map -layout layout_plan -o solitaire-plan2018.pdf
+ 
+# Export des modeles 3D
+	export model -o solitaire.lox
+  
+# Export des fichiers ESRI
+	#export map -proj plan -fmt esri -o solitaire -layout layout_plan
+  
+# Export des fichiers kml
+	#export map -proj plan -fmt kml -o solitaire.kml -layout layout_plan

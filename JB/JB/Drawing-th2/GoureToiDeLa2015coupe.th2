@@ -1,0 +1,409 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -521.6379999999999 -167.36999999999998 1072.9454 1033.5124
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {389.29100000000005 1 1.0} {590.5500000000001 2014-SL-0} GoureToiDeLa-coupe2015b.xvi 0 {}
+
+
+
+scrap Gourcoupe20151 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+point 713.75 737.25 clay-choke
+
+point 668.5 715.0 clay-tree
+
+point 687.25 723.0 clay-tree
+
+point 723.25 742.25 clay-tree
+
+point 772.0 790.5 clay-tree
+
+point 785.25 791.25 crystal
+
+line border
+  685.5 741.75
+  682.25 741.25 680.75 740.75 674.0 739.75
+  667.25 738.75 659.5 737.5 657.0 737.5
+  654.5 737.5 649.25 737.0 649.25 737.0
+  smooth off
+endline
+
+point 750.0 767.75 height -value [+6 m]
+
+point 617.5 763.5 height -value [-4 m]
+
+point 586.5 739.25 traverse
+
+point 564.25 731.75 rope
+
+point 615.75 749.25 rope
+
+point 742.0 798.5 rope
+
+point 848.75 801.0 continuation
+
+point 843.25 812.5 air-draught -orientation 94.1 -subtype winter
+
+point 844.5 818.75 label -text "c.a. ?"
+
+point 783.25 818.75 label -text "R1"
+
+point 829.25 804.25 label -text "colm."
+
+point 829.5 824.5 narrow-end
+
+line u:rope
+  750.0 792.25
+  750.0 792.25 742.0 787.25 739.5 787.25
+  737.0 787.25 736.25 783.75 735.25 785.25
+  734.25 786.75 726.5 758.25 726.5 758.25
+  smooth off
+endline
+
+line u:rope
+  618.25 711.75
+  618.0 732.25
+  618.0 732.25 616.75 731.0 615.0 731.5
+  613.25 732.0 610.0 732.75 607.25 730.75
+  604.5 728.75 604.75 728.0 599.75 726.75
+  594.75 725.5 592.75 722.5 589.25 722.25
+  585.75 722.0 568.25 716.75 568.25 716.75
+  smooth off
+  568.25 716.75 567.25 715.75 565.75 716.25
+  564.25 716.75 568.5 699.5 565.25 694.0
+  562.0 688.5 558.25 695.75 557.75 697.75
+  557.25 699.75 556.5 704.25 556.5 704.25
+  smooth off
+endline
+
+line rock-edge
+  646.0 736.75
+  641.25 733.25
+  632.25 730.75
+endline
+
+line rock-border -close on
+  641.0 739.25
+  641.25 733.25
+  647.25 731.5
+  646.0 736.75
+  641.0 739.25
+endline
+
+line rock-border -close on
+  635.0 735.5
+  632.25 730.75
+  638.25 729.25
+  641.25 733.25
+  635.0 735.5
+endline
+
+line wall -close on -outline in
+  602.25 712.25
+  602.25 712.25 600.5 721.5 603.5 721.25
+  606.5 721.0 608.25 721.5 609.75 720.0
+  611.25 718.5 613.75 715.0 611.25 714.25
+  608.75 713.5 602.25 712.25 602.25 712.25
+  smooth off
+endline
+
+line wall -close on -outline in
+  584.75 703.5
+  584.75 703.5 580.0 712.5 582.75 713.0
+  585.5 713.5 592.25 716.75 595.5 717.5
+  598.75 718.25 599.5 713.0 598.75 710.5
+  598.0 708.0 584.75 703.5 584.75 703.5
+  smooth off
+endline
+
+line wall
+  585.25 677.75
+  585.25 677.75 579.75 682.75 585.0 684.75
+  590.25 686.75 613.5 699.75 620.25 702.25
+  627.0 704.75 639.25 710.75 645.75 712.5
+  652.25 714.25 665.25 720.0 671.0 722.75
+  676.75 725.5 703.0 736.75 711.5 741.5
+  720.0 746.25 723.5 749.5 727.0 751.75
+  730.5 754.0 728.75 754.75 732.0 758.75
+  735.25 762.75 737.5 767.25 738.5 772.0
+  739.5 776.75 741.25 783.25 744.5 785.25
+  747.75 787.25 749.75 790.75 752.75 791.0
+  755.75 791.25 757.25 793.5 764.5 794.5
+  771.75 795.5 779.0 797.75 782.5 798.0
+  786.0 798.25 788.5 798.5 788.0 800.25
+  787.5 802.0 785.0 802.5 788.5 803.75
+  792.0 805.0 796.75 806.0 800.25 807.25
+  803.75 808.5 809.75 810.0 816.25 811.5
+  822.75 813.0 822.25 813.0 825.25 812.5
+  828.25 812.0 830.0 811.75 830.0 811.75
+  smooth off
+endline
+
+line wall
+  829.5 814.5
+  829.5 814.5 826.75 815.25 823.5 815.25
+  820.25 815.25 815.25 815.5 812.75 815.25
+  810.25 815.0 805.5 812.75 801.5 812.0
+  797.5 811.25 788.0 809.5 785.25 809.0
+  782.5 808.5 780.5 805.0 777.5 803.75
+  774.5 802.5 761.0 798.0 757.0 796.0
+  753.0 794.0 739.0 790.0 736.5 788.75
+  734.0 787.5 730.25 788.75 730.0 786.0
+  729.75 783.25 731.0 777.75 727.25 777.75
+  723.5 777.75 717.75 776.5 716.0 773.75
+  714.25 771.0 718.5 771.0 713.25 766.25
+  708.0 761.5 697.5 748.75 688.5 746.25
+  679.5 743.75 684.25 746.75 673.0 746.25
+  661.75 745.75 648.5 745.25 639.75 744.5
+  631.0 743.75 615.25 743.75 608.25 740.25
+  601.25 736.75 568.0 722.0 564.75 720.0
+  smooth off
+endline
+
+point 566.5210000000001 714.58 station -name 2015-XR-9@GoureToiDeLa.Jean-Bernard
+
+point 610.991 725.6700000000001 station -name 2015-XR-8@GoureToiDeLa.Jean-Bernard
+
+point 584.181 690.4300000000001 station -name 2015-XR-7@GoureToiDeLa.Jean-Bernard
+
+point 619.1210000000001 709.0 station -name 2015-XR-6@GoureToiDeLa.Jean-Bernard
+
+point 640.3510000000001 716.73 station -name 2015-XR-5@GoureToiDeLa.Jean-Bernard
+
+point 652.2610000000001 720.6 station -name 2015-XR-4@GoureToiDeLa.Jean-Bernard
+
+point 673.0310000000001 730.28 station -name 2015-XR-3@GoureToiDeLa.Jean-Bernard
+
+point 691.4010000000001 738.85 station -name 2015-XR-2@GoureToiDeLa.Jean-Bernard
+
+point 728.3810000000001 756.8900000000001 station -name 2015-XR-1@GoureToiDeLa.Jean-Bernard
+
+point 728.3810000000001 775.75 station -name 2015-XR-0@GoureToiDeLa.Jean-Bernard
+
+point 737.0310000000001 786.82 station -name 2015b-XR-7@GoureToiDeLa.Jean-Bernard
+
+point 752.0910000000001 792.3 station -name 2015b-XR-6@GoureToiDeLa.Jean-Bernard
+
+point 760.2510000000001 795.44 station -name 2015b-XR-5@GoureToiDeLa.Jean-Bernard
+
+point 778.551 799.6600000000001 station -name 2015b-XR-4@GoureToiDeLa.Jean-Bernard
+
+point 785.811 805.33 station -name 2015b-XR-3@GoureToiDeLa.Jean-Bernard
+
+point 800.8710000000001 809.94 station -name 2015b-XR-2@GoureToiDeLa.Jean-Bernard
+
+point 814.0010000000001 813.7 station -name 2015b-XR-1@GoureToiDeLa.Jean-Bernard
+
+point 826.831 813.9300000000001 station -name 2015b-XR-0@GoureToiDeLa.Jean-Bernard
+
+endscrap
+
+
+
+scrap Gourecoupe2015-2 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+point -42.75 382.0 label -text "R3"
+
+point 60.5 481.25 continuation
+
+point 129.75 506.0 height -value [-5 m]
+
+point 135.5 526.5 gypsum
+
+point -171.75 314.0 gypsum
+
+point -187.0 303.0 gypsum-flower
+
+point -181.25 307.0 gypsum-flower
+
+line rock-border -close on
+  -174.25 300.5
+  -173.0 303.75
+  -171.5 302.25
+  -174.25 300.5
+endline
+
+point -161.75 247.0 air-draught -orientation 301.2 -subtype winter
+
+point 142.0 508.5 air-draught -orientation 90.5 -subtype winter
+
+point 51.5 479.75 air-draught -orientation 40.6 -subtype winter -scale s
+
+point 5.75 439.75 air-draught -orientation 60.4 -subtype winter
+
+point -137.75 337.75 air-draught -orientation 52.6 -subtype winter
+
+point -240.0 269.0 air-draught -orientation 52.6 -subtype winter
+
+point -262.5 258.0 rope
+
+point 119.0 528.75 rope
+
+line u:rope
+  130.5 518.0
+  130.5 518.0 124.75 516.25 123.25 516.25
+  121.75 516.25 120.25 516.5 120.25 516.5
+  smooth off
+  114.75 497.75
+endline
+
+point 64.5 505.0 dig
+
+point 149.75 524.0 dig
+
+point 152.0 532.75 label -text "etr."
+
+point 47.25 498.75 label -text "colm."
+
+point -177.5 249.5 label -text "colm."
+
+point -228.0 251.0 label -text "etr."
+
+line wall
+  -254.0 238.75
+  -252.5 244.0
+endline
+
+line wall
+  -265.75 246.5
+  -266.75 240.75
+endline
+
+point -167.75 263.0 narrow-end
+
+line wall
+  -175.0 255.75
+  -175.0 255.75 -175.5 259.25 -179.75 260.25
+  -184.0 261.25 -208.0 271.25 -206.25 274.25
+  -204.5 277.25 -196.0 283.5 -191.0 286.75
+  -186.0 290.0 -175.5 297.75 -169.0 302.25
+  -162.5 306.75 -147.75 315.0 -143.25 318.75
+  -138.75 322.5 -98.75 347.0 -95.0 350.5
+  -91.25 354.0 -77.25 361.25 -70.75 365.25
+  -64.25 369.25 -55.25 374.0 -52.75 375.25
+  -50.25 376.5 -49.0 381.5 -49.0 384.25
+  -49.0 387.0 -51.0 388.0 -49.0 388.75
+  -47.0 389.5 -37.25 398.25 -31.75 401.75
+  -26.25 405.25 -18.0 412.75 -12.75 415.25
+  -7.5 417.75 14.25 432.0 20.5 435.25
+  26.75 438.5 37.0 446.25 41.5 449.75
+  46.0 453.25 65.25 468.25 70.25 471.0
+  75.25 473.75 89.25 483.0 92.5 484.25
+  95.75 485.5 95.0 486.0 101.5 488.5
+  108.0 491.0 110.5 490.0 113.0 491.0
+  115.5 492.0 112.75 491.5 115.5 494.5
+  118.25 497.5 128.5 495.75 127.25 497.0
+  126.0 498.25 125.5 499.0 123.25 499.0
+  121.0 499.0 114.5 498.0 116.5 500.5
+  118.5 503.0 121.75 500.75 121.75 502.5
+  121.75 504.25 119.5 509.5 122.0 510.75
+  124.5 512.0 126.75 515.5 134.25 515.25
+  141.75 515.0 140.75 515.5 144.0 515.5
+  147.25 515.5 150.93 513.98 153.34100000000007 514.49
+  155.75 515.0 155.5 515.75 159.75 517.0
+  164.0 518.25 171.25 520.0 171.25 520.0
+  smooth off
+endline
+
+line wall
+  -252.5 244.0
+  -252.5 244.0 -252.5 246.25 -250.75 247.75
+  -249.0 249.25 -242.75 252.25 -239.0 254.5
+  -235.25 256.75 -231.5 258.0 -228.75 260.0
+  -226.0 262.0 -213.5 270.5 -211.25 271.25
+  -209.0 272.0 -206.25 271.5 -202.5 268.75
+  -198.75 266.0 -181.25 257.5 -179.75 257.5
+  -178.25 257.5 -176.5 255.25 -176.5 255.25
+  smooth off
+endline
+
+line wall
+  61.25 489.0
+  61.25 489.0 58.0 491.75 62.25 492.75
+  66.5 493.75 70.75 497.25 73.75 496.0
+  76.75 494.75 87.75 492.25 89.25 491.5
+  90.75 490.75 92.75 490.5 88.75 487.75
+  84.75 485.0 69.25 475.25 66.0 472.75
+  62.75 470.25 39.25 452.75 35.75 450.0
+  32.25 447.25 21.25 439.75 14.0 436.0
+  6.75 432.25 -11.5 424.5 -15.75 420.0
+  -20.0 415.5 -44.75 397.0 -47.75 394.75
+  -50.75 392.5 -53.75 391.5 -55.25 390.0
+  -56.75 388.5 -55.5 383.25 -57.5 381.25
+  -59.5 379.25 -72.0 372.75 -76.0 370.0
+  -80.0 367.25 -84.25 361.75 -90.5 358.0
+  -96.75 354.25 -132.75 332.0 -136.25 330.0
+  -139.75 328.0 -155.25 318.5 -161.5 313.5
+  -167.75 308.5 -180.0 299.5 -184.25 296.0
+  -188.5 292.5 -209.5 277.25 -214.0 273.75
+  -218.5 270.25 -226.75 264.5 -229.25 263.0
+  -231.75 261.5 -232.0 260.0 -238.0 257.5
+  -244.0 255.0 -255.5 248.25 -258.25 248.0
+  -261.0 247.75 -265.25 249.75 -265.75 246.5
+  smooth off
+endline
+
+line wall
+  171.5 528.25
+  171.5 528.25 163.0 526.25 161.5 524.0
+  160.0 521.75 159.25 521.25 157.75 519.5
+  156.25 517.75 156.0 515.5 153.5 516.0
+  151.0 516.5 147.25 517.5 145.5 517.75
+  143.75 518.0 142.0 519.25 137.25 519.0
+  132.5 518.75 126.25 520.25 124.0 520.25
+  121.75 520.25 115.25 515.0 109.25 512.5
+  103.25 510.0 82.25 504.5 79.0 504.5
+  75.75 504.5 75.5 503.25 74.25 502.0
+  73.0 500.75 72.0 499.0 69.75 498.25
+  67.5 497.5 63.5 497.25 60.25 496.0
+  57.0 494.75 56.0 489.5 56.0 489.5
+  smooth off
+endline
+
+point -263.7689999999999 242.99 station -name 2015c-XR-0@GoureToiDeLa.Jean-Bernard
+
+point -229.94899999999996 260.98 station -name 2015c-XR-1@GoureToiDeLa.Jean-Bernard
+
+point -178.17899999999992 258.52000000000004 station -name 2015c-XR-3@GoureToiDeLa.Jean-Bernard
+
+point -209.7489999999999 274.61 station -name 2015c-XR-2@GoureToiDeLa.Jean-Bernard
+
+point -177.19899999999996 299.13 station -name 2015c-XR-4@GoureToiDeLa.Jean-Bernard
+
+point -155.03899999999993 314.08000000000004 station -name 2015c-XR-5@GoureToiDeLa.Jean-Bernard
+
+point -90.65899999999993 355.89000000000004 station -name 2015c-XR-6@GoureToiDeLa.Jean-Bernard
+
+point -54.13899999999995 377.83000000000004 station -name 2015c-XR-7@GoureToiDeLa.Jean-Bernard
+
+point -48.418999999999926 391.31000000000006 station -name 2015c-XR-8@GoureToiDeLa.Jean-Bernard
+
+point -12.82899999999995 419.11 station -name 2015c-XR-9@GoureToiDeLa.Jean-Bernard
+
+point 21.321000000000083 438.05000000000007 station -name 2015c-XR-10@GoureToiDeLa.Jean-Bernard
+
+point 38.03100000000006 448.90000000000003 station -name 2015c-XR-11@GoureToiDeLa.Jean-Bernard
+
+point 69.32100000000005 472.47 station -name 2015c-XR-12@GoureToiDeLa.Jean-Bernard
+
+point 91.89100000000008 486.04 station -name 2015c-XR-13@GoureToiDeLa.Jean-Bernard
+
+point 60.561000000000064 494.30000000000007 station -name 2015c-XR-16@GoureToiDeLa.Jean-Bernard
+
+point 74.77100000000007 497.84000000000003 station -name 2015c-XR-15@GoureToiDeLa.Jean-Bernard
+
+point 98.93100000000007 493.58000000000004 station -name 2015c-XR-14@GoureToiDeLa.Jean-Bernard
+
+point 112.50100000000006 497.22 station -name 2015c-XR-17@GoureToiDeLa.Jean-Bernard
+
+point 121.77100000000007 517.09 station -name 2015c-XR-18@GoureToiDeLa.Jean-Bernard
+
+point 142.91100000000006 517.09 station -name 2015c-XR-19@GoureToiDeLa.Jean-Bernard
+
+point 153.34100000000007 514.49 station -name 2015c-XR-20@GoureToiDeLa.Jean-Bernard
+
+point 157.75100000000006 517.94 station -name 2015c-XR-21@GoureToiDeLa.Jean-Bernard
+
+point 180.20100000000008 527.01 station -name 2015c-XR-22@GoureToiDeLa.Jean-Bernard
+
+endscrap
+

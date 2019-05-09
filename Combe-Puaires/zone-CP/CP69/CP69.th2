@@ -1,0 +1,74 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -130.0 -130.0 208.0 285.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {50.9966 1 1.0} {98.43700000000001 0} CP69-2015-map.xvi 0 {}
+
+
+
+scrap CP69-1 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+point 22.0 41.0 label -text "<bf>CP69" -scale xl
+
+point 7.5 154.5 air-draught -orientation 144.5 -subtype summer
+
+point 24.0 63.5 entrance -orientation 41.0
+
+point 77.5 109.5 height -value [-6 m]
+
+line pit
+  31.5 93.0
+  31.5 93.0 38.5 83.5 47.0 82.5
+endline
+
+line pit -close on
+  60.5 97.0
+  60.5 97.0 63.0 102.5 58.5 106.0
+  54.0 109.5 51.5 111.5 48.0 110.0
+  44.5 108.5 38.5 109.5 39.5 104.5
+  40.5 99.5 42.5 93.0 47.0 93.0
+  51.5 93.0 50.5 91.5 55.0 91.5
+  59.5 91.5 60.5 97.0 60.5 97.0
+  smooth off
+endline
+
+point 23.5 132.0 breakdown-choke -orientation 139.8
+
+line wall
+  67.5 85.0
+  67.5 85.0 64.0 87.0 60.5 90.5
+  57.0 94.0 60.0 94.5 60.5 97.0
+  61.0 99.5 62.5 101.5 58.5 106.0
+  54.5 110.5 50.0 116.5 46.5 116.5
+  43.0 116.5 39.0 122.0 36.5 124.0
+  34.0 126.0 29.5 133.5 29.5 133.5
+  smooth off
+endline
+
+line wall
+  34.5 76.0
+  34.5 76.0 38.5 80.5 41.0 83.0
+  43.5 85.5 46.5 89.0 49.0 88.5
+  51.5 88.0 58.0 92.0 60.5 90.5
+  63.0 89.0 67.5 85.0 67.5 85.0
+  smooth off
+endline
+
+line wall
+  20.0 128.5
+  20.0 128.5 20.5 126.0 24.0 122.5
+  27.5 119.0 39.5 108.0 39.5 104.5
+  39.5 101.0 38.0 97.0 37.0 95.0
+  36.0 93.0 32.0 87.0 31.0 85.0
+  30.0 83.0 30.0 75.5 30.0 75.5
+  smooth off
+endline
+
+point 27.776600000000002 125.37700000000001 station -name 1@CP69
+
+point 50.9966 98.43700000000001 station -name 0b@CP69
+
+point 35.6066 84.197 station -name CP69@CP69
+
+endscrap
+
+

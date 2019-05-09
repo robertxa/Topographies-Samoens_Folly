@@ -1,0 +1,99 @@
+encoding utf-8
+
+survey DR1 -title "DR1" -entrance "DR1"
+  
+ centerline
+    date 1981.08.07
+  team "Jean-Luc Dinard"
+  team "Josiane Lips"
+  team "Benoît/Le Falher"
+  team "Bernard Lips"
+  explo-date 1981.08.05
+  explo-team "Jean-Luc Dinard"
+  explo-team "Philippe Bigeard"
+  explo-team "Benoît/Le Falher"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   calibrate counter 0 1.000
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   0 0double 0.0 0.0    0.000000       90.00000       0.000000       0.000000       0.000000       0.000000    
+   0 1 87837.0 88407.0    106.0000       8.000000       0.000000       0.000000       0.000000       0.000000    
+   1 2 88407.0 88706.0    159.0000       59.00000       0.000000       0.000000       0.000000       0.000000    
+   2 3 88706.0 89111.0    187.0000       8.000000       0.000000       0.000000       0.000000       0.000000    
+   3 4 89111.0 89790.0    144.0000       17.00000       0.000000       0.000000       0.000000       0.000000    
+   4 5 89790.0 90609.0    88.00000       41.00000       0.000000       0.000000       0.000000       0.000000    
+   5 6 90609.0 91152.0    107.0000       53.00000       0.000000       0.000000       0.000000       0.000000    
+endcenterline
+  
+centerline
+	#cs EPSG:<27572>
+	#fix DR1   944.9750       2134.228       2265.000  
+ cs lat-long
+ #fix 25   944.9750       2134.228       2265.000  
+ #fix 21 46.01833333  06.2083333   2265
+  fix DR1 46.120183  6.802083   2265
+   date 1981.08.07
+
+  team "Jean-Luc Dinard"
+  team "Josiane Lips"
+  team "Benoît/Le Falher"
+  team "Bernard Lips"
+  explo-date 1981.08.05
+  explo-team "Jean-Luc Dinard"
+  explo-team "Philippe Bigeard"
+  explo-team "Benoît/Le Falher"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   calibrate counter 0 1.000
+  units counter centimeters
+   data topofil from to fromcount tocount backcompass backclino right left up down
+   6 7 54503.0 54989.0    352.0000      -9.000000       0.000000       0.000000       0.000000       0.000000    
+   7 8 54989.0 55346.0    15.00000      -55.00000       0.000000       0.000000       0.000000       0.000000    
+   8 9 55346.0 56368.0    100.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+   9 10 56368.0 56791.0    46.00000      -17.00000       0.000000       0.000000       0.000000       0.000000    
+   10 11 56791.0 57655.0    320.0000      -10.00000       0.000000       0.000000       0.000000       0.000000    
+   11 12 57655.0 57919.0    0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+   12 13 57919.0 58648.0    315.0000      -14.00000       0.000000       0.000000       0.000000       0.000000    
+   13 14 58648.0 59703.0    83.00000      -36.00000       0.000000       0.000000       0.000000       0.000000    
+   14 15 59703.0 60090.0    102.0000      -1.000000       0.000000       0.000000       0.000000       0.000000    
+   15 16 60090.0 60367.0    100.0000      -17.00000       0.000000       0.000000       0.000000       0.000000    
+   16 17 60367.0 60562.0    164.0000      -28.00000       0.000000       0.000000       0.000000       0.000000    
+   17 18 60562.0 60818.0    128.0000      -7.000000       0.000000       0.000000       0.000000       0.000000    
+   18 19 60818.0 61161.0    120.0000      -20.00000       0.000000       0.000000       0.000000       0.000000    
+   19 20 61161.0 61457.0    150.0000      -19.00000       0.000000       0.000000       0.000000       0.000000    
+   20 21 61457.0 62186.0    135.0000      -5.000000       0.000000       0.000000       0.000000       0.000000    
+   21 22 62186.0 62551.0    136.0000      -3.000000       0.000000       0.000000       0.000000       0.000000    
+   22 23 62856.0 63230.0    138.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+   23 24 63230.0 63806.0    115.0000      -33.00000       0.000000       0.000000       0.000000       0.000000    
+   24 DR1 63806.0 64496.0    40.00000      -45.00000       0.000000       0.000000       0.000000       0.000000    
+endcenterline
+  
+centerline
+    date 1981.08.07
+  team "Jean-Luc Dinard"
+  team "Josiane Lips"
+  team "Benoît/Le Falher"
+  team "Bernard Lips"
+  explo-date 1981.08.05
+  explo-team "Jean-Luc Dinard"
+  explo-team "Philippe Bigeard"
+  team "Benoît/Le Falher"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   calibrate counter 0 1.000
+	units counter centimeters
+   data topofil from to fromcount tocount backcompass backclino right left up down
+   13.0 13.1 50030.0 50758.0    117.0000      -15.00000       0.000000       0.000000       0.000000       0.000000    
+   13.1 13.2 50758.0 51341.0    85.00000      -7.000000       0.000000       0.000000       0.000000       0.000000    
+   13.2 13.3 51341.0 52269.0    118.0000      -22.00000       0.000000       0.000000       0.000000       0.000000    
+   13.3 13.4 52269.0 53966.0    75.00000       30.00000       0.000000       0.000000       0.000000       0.000000    
+   13.4 13 53966.0 54503.0    170.0000       24.00000       0.000000       0.000000       0.000000       0.000000    
+ endcenterline
+ endsurvey

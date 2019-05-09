@@ -1,0 +1,139 @@
+encoding  utf-8
+ 
+ survey trous-A -title "Cavités de la Zone A"
+
+centerline
+
+cs lat-long
+
+fix A01    46.1031500 6.7833833  01929
+fix A02    46.1032833 6.7836500  01930
+fix A03    46.1035167 6.7856000  01978
+fix A04    46.1039167 6.7863500  01994
+fix A05    46.1052667 6.7854500  01925
+fix A06    46.1038833 6.7870167  02017
+fix A07    46.1041000 6.7879667  02038
+fix A08    46.1038333 6.7881000  02063
+fix A09    46.1044500 6.7883833  02039
+fix A10    46.1043667 6.7886167  02050
+fix A11    46.1045000 6.7886333  02048
+fix A12    46.1045500 6.7886833  02054
+fix A13    46.1045667 6.7889667  02049
+fix A14    46.1046000 6.7888333  02047
+fix A15    46.1046667 6.7888667  02053
+fix A16    46.1047167 6.7889500  02055
+fix A17    46.1047500 6.7892167  02059
+fix A18    46.1047667 6.7894167  02067
+fix A19    46.1048333 6.7888833  02056
+fix A20    46.1036667 6.7842167  01937
+#fix A21    46.1048333 6.7830667  01857
+#fix A22    46.1039333 6.7804833  01811
+fix A23    46.1040833 6.7872333  02019
+#fix A24    46.1041000 6.7810667  01809
+
+fix		A25	46.10311	6.77806	1766
+fix		A26	46.104090	6.78	1801
+fix		A27	46.104400	6.7813	1834
+fix		A28	46.104240	6.781650	1841
+
+station A01 "A01" entrance continuation explored 15m
+station A02 "A02" entrance continuation explored 10m
+station A03 "A03" entrance continuation explored 20m
+station A04 "A04" entrance continuation explored 50m
+station A05 "A05" entrance #continuation explored 06m
+station A06 "A06" entrance continuation explored 06m
+station A07 "A07" entrance continuation explored 05m
+station A08 "A08" entrance continuation explored 15m
+station A09 "A09" entrance continuation explored 05m
+station A10 "A10" entrance continuation explored 08m
+station A11 "A11" entrance continuation explored 10m
+station A12 "A12" entrance continuation explored 10m
+station A13 "A13" entrance continuation explored 02m
+station A14 "A14" entrance #continuation explored 10m ENTREE JB
+station A15 "A15" entrance continuation explored 08m
+station A16 "A16" entrance continuation explored 04m
+station A17 "A17" entrance continuation explored 03m
+station A18 "A18" entrance continuation explored 05m
+station A19 "A19" entrance continuation explored 08m
+station A20 "A20" entrance continuation explored 15m
+#station A21 "Unsurveyed cave" entrance
+#station A22 "Unsurveyed cave" entrance
+station A23 "A23" entrance continuation explored 04m
+#station A24 "Unsurveyed cave" entrance
+
+station A25 "A25" entrance continuation explored 01m air-draught
+station A26 "A26" entrance continuation explored 02m air-draught
+station A27 "A27" entrance continuation explored 08m air-draught
+station A28 "A28" entrance continuation explored 05m
+
+#fix       J14       46.103766     006.78598      1984
+#station   J14       "Unsurveyed cave" entrance
+
+fix V0        46.102050 006.78035 2013
+fix       V01       46.108583     006.79303      2090
+#fix       V04       46.102216     006.77961      1836
+#fix       V04B      46.102383     006.78056      1843
+#fix       V05       46.102116     006.78201      1893
+#fix       V06       46.102733     006.78066      1853
+#fix       V06B      46.102450     006.78135      1863
+fix       V08       46.105183     006.79041      2094
+fix       V09A      46.104933     006.79018      2089
+fix       V09B      46.104833     006.79001      2089
+fix       V09C      46.104833     006.79031      2095
+#fix       V11       46.104533     006.78850      2048
+
+station   V0        "V0" entrance	continuation explored 10m
+station   V01       "V01" entrance continuation explored 28m
+#station   V04       "Unsurveyed cave" entrance
+#station   V04B      "Unsurveyed cave" entrance
+#station   V05       "Unsurveyed cave" entrance
+#station   V06       "Unsurveyed cave" entrance
+#station   V06B      "Unsurveyed cave" entrance
+station   V08       "V08" entrance continuation explored 60m
+station   V09A      "V09A" entrance continuation explored 30m
+station   V09B      "V09B" entrance continuation explored 10m
+station   V09C      "V09C" entrance continuation explored 30m
+#station   V11       "Unsurveyed cave" entrance
+
+#data nosurvey from to  #definition of relation between points
+#flags surface
+#A01 A02
+#A02 A03
+#A03 A04
+#A04 A05
+#A05 A06
+#A06 A07
+#A07 A08
+#A08 A09
+#A09 A10
+#A11 A11
+#A12 A12
+#A12 A13
+#A13 A14
+#A14 A15
+#A15 A16
+#A16 A17
+#A17 A18
+#A18 A19
+#A19 A20
+#A20 A23
+#A23	A25
+#A25	A26
+#A26	A27
+#A27	A28
+##A21 A22
+##A22 A23
+##A23 A24
+##A24 J14
+##J14       V0
+#A23 V0
+#V0        V01
+#V01       V08
+##V04      V08
+#V08       V09A
+#V09A      V09B
+#V09B      V09C
+
+endcenterline
+
+endsurvey

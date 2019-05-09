@@ -1,0 +1,258 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -152.25 -128.0 417.5 326.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.373999999999995 1 1.0} {118.108 2013-xac-0} shunt-branlots-2013.xvi 0 {}
+
+
+
+scrap s-branlots1 -projection plan -author 2014 "Xavier Robert" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 364.2206 -128.0 0.0 0.0 12.50240324 0.0 m]
+
+point 231.934 117.278 station -name 2013-xac-14@shunt-branlots.Jean-Bernard
+
+point 215.144 148.858 station -name 2013-xac-13@shunt-branlots.Jean-Bernard
+
+point 235.25 143.5 height -value [+20 m]
+
+point 203.0 168.0 water-flow -orientation 154.5
+
+point 191.0 139.25 clay-tree
+
+point 179.5 128.25 clay-tree
+
+point 209.25 139.0 continuation
+
+point 167.0 118.5 clay
+
+point 163.5 72.5 clay
+
+point 172.5 75.25 clay
+
+point 161.75 112.5 clay
+
+point 153.25 97.25 helictite
+
+line arrow
+  62.5 93.0
+  48.5 109.25
+endline
+
+line contour
+  42.0 96.25
+  42.0 96.25 48.0 104.0 52.25 104.75
+  56.5 105.5 65.25 108.5 65.25 108.5
+  smooth off
+endline
+
+line contour
+  47.75 91.0
+  47.75 91.0 52.5 98.75 56.25 100.5
+  60.0 102.25 63.75 104.5 67.0 104.25
+  smooth off
+endline
+
+line contour -reverse on
+  70.75 97.75
+  70.75 97.75 64.5 100.0 61.5 97.25
+  58.5 94.5 53.75 88.5 53.75 88.5
+  smooth off
+endline
+
+line contour
+  170.25 125.0
+  170.25 125.0 165.5 120.25 162.5 117.0
+  159.5 113.75 154.5 110.75 151.75 110.5
+  smooth off
+endline
+
+line contour
+  174.25 123.5
+  174.25 123.5 172.0 119.0 168.25 116.5
+  164.5 114.0 164.75 109.25 159.25 107.75
+  153.75 106.25 149.25 106.25 149.25 106.25
+  smooth off
+endline
+
+line contour
+  159.25 66.25
+  159.25 66.25 161.75 70.5 167.75 72.0
+  173.75 73.5 181.25 73.75 181.25 73.75
+  smooth off
+endline
+
+line contour
+  155.0 69.25
+  155.0 69.25 157.5 73.0 163.0 75.5
+  168.5 78.0 176.0 80.5 178.5 78.5
+  smooth off
+endline
+
+point 229.5 148.5 rope
+
+point 76.0 96.25 rope
+
+point 68.75 110.75 height -value [-10 m]
+
+point 147.75 123.5 air-draught -orientation 45.2 -subtype summer
+
+point 199.25 174.5 continuation
+
+point 228.5 160.25 continuation
+
+line pit
+  228.0 139.5
+  228.0 139.5 222.0 141.5 219.25 138.5
+  216.5 135.5 215.0 132.5 215.0 132.5
+  smooth off
+endline
+
+line pit -reverse on
+  212.75 144.25
+  212.75 144.25 213.25 146.75 216.0 147.0
+  218.75 147.25 223.5 149.0 223.5 149.0
+  smooth off
+endline
+
+line pit
+  209.0 148.0
+  209.0 148.0 212.5 150.0 212.5 146.25
+  smooth off
+endline
+
+line pit -reverse on
+  215.5 160.0
+  215.5 160.0 214.5 158.25 216.25 156.75
+  218.0 155.25 220.75 154.75 220.75 152.5
+  smooth off
+endline
+
+line pit
+  203.5 157.5
+  203.5 157.5 204.25 161.0 206.75 161.0
+  209.25 161.0 210.75 161.0 210.75 161.0
+  smooth off
+endline
+
+point 106.25 95.5 label -text "R2"
+
+line pit
+  112.25 82.25
+  112.25 82.25 102.5 85.0 103.25 88.25
+  smooth off
+endline
+
+line pit
+  54.25 86.0
+  54.25 86.0 60.0 86.5 62.25 88.5
+  64.5 90.5 67.25 91.0 70.25 93.25
+  smooth off
+endline
+
+line pit
+  30.0 109.5
+  30.0 109.5 32.25 113.0 35.25 112.5
+  38.25 112.0 38.0 110.5 43.0 111.5
+  48.0 112.5 53.5 118.5 54.0 120.25
+  smooth off
+endline
+
+line wall
+  202.25 163.5
+  202.25 163.5 205.75 159.75 205.25 156.75
+  204.75 153.75 204.0 152.0 202.25 147.75
+  200.5 143.5 200.0 141.75 197.25 139.5
+  194.5 137.25 176.25 119.0 173.25 118.75
+  170.25 118.5 167.5 125.0 164.25 121.5
+  161.0 118.0 156.25 112.25 156.25 109.5
+  156.25 106.75 159.75 86.0 155.5 88.25
+  151.25 90.5 145.75 99.0 142.25 98.25
+  138.75 97.5 141.0 98.25 137.75 93.0
+  134.5 87.75 133.75 84.5 129.5 85.0
+  125.25 85.5 111.0 89.0 109.0 87.25
+  107.0 85.5 102.5 84.0 102.5 81.5
+  102.5 79.0 106.0 69.5 103.0 67.75
+  100.0 66.0 81.75 70.5 78.25 73.75
+  74.75 77.0 67.75 87.25 68.5 90.25
+  69.25 93.25 69.25 94.0 67.75 98.5
+  66.25 103.0 48.75 113.75 48.0 117.5
+endline
+
+line wall
+  221.5 161.0
+  221.5 161.0 217.0 158.0 213.75 157.75
+  210.5 157.5 209.25 158.5 208.75 159.75
+  208.25 161.0 206.75 165.5 206.75 165.5
+  smooth off
+endline
+
+line wall
+  222.0 146.25
+  222.0 146.25 218.5 149.75 219.25 151.75
+  220.0 153.75 224.75 153.75 224.75 153.75
+  smooth off
+endline
+
+line wall
+  225.0 139.0
+  224.0 142.0 222.5 144.5 222.0 146.25
+  smooth off
+endline
+
+line wall
+  210.75 144.25
+  210.75 144.25 211.5 150.25 212.75 147.75
+  214.0 145.25 217.5 139.25 217.75 134.25
+endline
+
+line wall
+  30.25 111.75
+  33.0 113.25 36.0 106.5 38.0 104.5
+  40.0 102.5 58.75 90.75 61.25 86.5
+  63.75 82.25 69.75 69.0 73.25 66.75
+  76.75 64.5 102.75 49.0 109.0 50.0
+  115.25 51.0 120.0 53.75 120.0 56.5
+  120.0 59.25 114.5 65.75 112.25 67.25
+  110.0 68.75 106.5 75.25 107.75 78.0
+  109.0 80.75 109.5 85.5 113.25 84.75
+  117.0 84.0 127.5 79.75 131.25 80.75
+  135.0 81.75 140.0 90.0 141.25 87.5
+  142.5 85.0 143.25 86.75 144.5 84.0
+  145.75 81.25 143.5 78.75 146.5 76.5
+  149.5 74.25 163.0 67.25 169.0 69.0
+  175.0 70.75 177.5 71.5 177.5 75.0
+  177.5 78.5 170.75 107.0 174.25 110.0
+  177.75 113.0 179.75 116.0 183.0 118.75
+  186.25 121.5 199.0 133.5 200.5 135.75
+  202.0 138.0 208.5 151.75 209.75 150.0
+  211.0 148.25 208.5 145.25 208.5 145.25
+  smooth off
+endline
+
+point 208.324 156.698 station -name 2013-xac-12@shunt-branlots.Jean-Bernard
+
+point 198.874 137.318 station -name 2013-xac-11@shunt-branlots.Jean-Bernard
+
+point 169.304 111.618 station -name 2013-xac-10@shunt-branlots.Jean-Bernard
+
+point 168.074 76.248 station -name 2013-xac-9@shunt-branlots.Jean-Bernard
+
+point 152.134 79.638 station -name 2013-xac-8@shunt-branlots.Jean-Bernard
+
+point 142.594 95.528 station -name 2013-xac-7@shunt-branlots.Jean-Bernard
+
+point 132.364 82.44800000000001 station -name 2013-xac-6@shunt-branlots.Jean-Bernard
+
+point 111.294 86.538 station -name 2013-xac-5@shunt-branlots.Jean-Bernard
+
+point 105.794 79.988 station -name 2013-xac-4@shunt-branlots.Jean-Bernard
+
+point 110.334 56.618 station -name 2013-xac-3@shunt-branlots.Jean-Bernard
+
+point 75.88399999999999 71.958 station -name 2013-xac-2@shunt-branlots.Jean-Bernard
+
+point 64.714 87.898 station -name 2013-xac-1@shunt-branlots.Jean-Bernard
+
+point 39.373999999999995 118.108 station -name 2013-xac-0double@shunt-branlots.Jean-Bernard
+
+endscrap
+
+

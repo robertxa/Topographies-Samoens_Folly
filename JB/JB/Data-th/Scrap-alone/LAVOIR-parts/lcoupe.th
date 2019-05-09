@@ -1,0 +1,15 @@
+encoding  utf-8
+
+#survey Jean-Bernard -title "Gouffre Jean Bernard"
+
+
+#endsurvey
+
+input lavoirsommet-coupe.th2
+input lavoir-coupe2015.th2
+input brownies-coupe.th2
+join lavoirc1 lavoirc2 
+join lavoirc2 browniesc1
+
+input FileOu-coupe.th2
+join fileouc1 lavoirc5

@@ -1,0 +1,59 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 221.25 232.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7399 1 1.0} {39.3652 C52} C52-map.xvi 0 {}
+
+
+
+scrap C52-1 -projection plan -author 2010 "Xavier Robert" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 25.25 102.75 narrow-end
+
+point 92.0 20.0 label -text "<bf>C51" -scale xl
+
+point 87.5 30.75 entrance -orientation 319.5
+
+line wall -subtype invisible
+  73.5 33.0
+  73.5 33.0 79.0 36.0 81.25 37.5
+  83.5 39.0 85.75 43.25 85.75 43.25
+  smooth off
+endline
+
+line wall
+  27.75 95.75
+  27.75 95.75 33.25 88.25 35.25 85.75
+  37.25 83.25 37.25 80.25 43.75 74.5
+  50.25 68.75 53.0 63.75 55.5 59.75
+  58.0 55.75 67.5 47.5 70.25 43.75
+  73.0 40.0 77.75 40.25 77.0 37.25
+  76.25 34.25 73.5 33.0 73.5 33.0
+  smooth off
+endline
+
+line wall
+  85.75 43.25
+  85.75 43.25 83.0 39.5 79.5 42.5
+  76.0 45.5 61.0 60.75 57.5 65.75
+  54.0 70.75 50.5 77.75 46.5 81.25
+  42.5 84.75 37.5 87.25 35.75 90.25
+  34.0 93.25 29.0 96.5 29.0 96.5
+  smooth off
+endline
+
+line wall
+endline
+
+point 78.7399 39.3652 station -name C52double@C52
+
+point 59.0599 59.0552 station -name 1@C52
+
+point 48.4599 73.6352 station -name 2@C52
+
+point 38.9099 84.8152 station -name 3@C52
+
+point 31.2399 93.8052 station -name 4@C52
+
+endscrap
+
+

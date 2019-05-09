@@ -1,0 +1,25 @@
+ encoding iso8859-2
+ survey echo1 -title "echo1" -entrance "0"
+
+ centerline
+   date 2010.10.23
+#   declination 0.0000  degrees
+  team "G.S. Vulcain"
+  team "Eric Revole"
+  team "Eric Tarazona"
+  team "Florence Curt"
+  team "Alexandre Schalk"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+   data normal from to length compass clino left right up down
+   0 Fb.40    0.000000       0.000000       0.000000       0.000000       5.800000       3.000000       1.100000    
+   Fb.40 Fq.9    8.100000       245.0000      -25.00000       1.500000       1.500000       2.800000       1.300000    
+   Fq.9 Fq.10    10.40000       210.0000      -24.00000       1.500000       1.500000       2.800000       1.300000    
+   Fq.9 Fq.11    12.80000       330.0000       29.00000      0.6000000      0.6000000       3.100000       4.500000    
+   Fq.11 Fq.12    9.100000       330.0000       25.00000      0.3000000      0.3000000      0.5000000      0.3000000    
+ endcenterline
+ endsurvey

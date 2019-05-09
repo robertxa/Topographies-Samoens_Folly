@@ -1,0 +1,42 @@
+encoding utf-8
+
+ survey Goure2019 -title "GoureToiDeLa"
+    
+ centerline -title "GoureToiDeLa2019 2019-FD-E15_2019-FD-0 2019-FD-12_2019-FD-11"
+	
+	date 2019.02.23
+		team "Frédéric Delègue"
+		team "Arnaud Malard"
+		team "Antoine Aigueperse"
+     explo-date 2019.02.23
+		explo-team "Frédéric Delègue"
+		explo-team "Arnaud Malard"
+		explo-team "Antoine Aigueperse"
+
+	units lenght meters
+	units compass degrees
+	units clino degrees
+	data normal from to length compass clino left right up down
+		extend left
+		2019-FD-E15	2019-FD-0	15	0 90	0	0	0	0	# Visée fictive verticale de 15 m pour raccorder la topo au reste
+		2019-FD-0   2019-FD-0b  0.00    0.00    0.00   0.4	3.4	0	1	# Sommet E15 (départ MC)
+		2019-FD-0   2019-FD-1   7.73	174	-35.4	3.6	1.5	1.1	1
+		2019-FD-1   2019-FD-2   11.1	316	19.7	0.7	0.7	0.2	1.5
+		2019-FD-2   2019-FD-3   2.68	93	14.7	2.1	0	0.4	1.4	# Az 33 ou 93 ? ; Fossile de gastéropode de 5 cm de diamètre
+		extend right
+		2019-FD-3   2019-FD-4   12.34	34	25.6	2.3	0	3.4	2.3
+		2019-FD-4   2019-FD-5   4.4	350	13.5	1.2	0.4	3.7	0.8
+		2019-FD-5   2019-FD-6   5.87	343	-3.4	1.6	0.6	8.9	1.3	# Blocs
+		2019-FD-6   2019-FD-7   11.02	352	-8.2	1.2	0.5	12	1.3
+		2019-FD-7   2019-FD-8   4.82	349	-39.4	0.5	0.5	0.5	0.5	# Trémie impénétrable
+		2019-FD-7   2019-FD-9   4.28	355	-1	0	0	0	0
+		2019-FD-9   2019-FD-10   4.4	357	-30	0	0	0	0	# Etroit et impénétrable (coulée de calcite), c.a. hivernal soufflant
+		
+	data normal from to length compass clino
+		2019-FD-12   2019-FD-11   19	12	6	# Comment raccorder à au dessus ? Comment raccorder à topo précédente ?
+
+	# Dev =  87 m
+  
+endcenterline
+
+endsurvey

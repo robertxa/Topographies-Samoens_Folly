@@ -1,0 +1,230 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 14576.8267 8356.3509
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {12874.02 1 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+
+
+
+scrap arianes1 -projection plan -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+
+line pit -reverse on
+  11759.75 5820.0
+  11759.75 5820.0 11756.25 5820.5 11755.5 5824.0
+  11754.75 5827.5 11753.5 5831.5 11753.5 5831.5
+  smooth off
+endline
+
+line wall
+  11753.25 5817.5
+  11755.5 5818.25 11762.25 5824.75 11762.25 5824.75
+  smooth off
+endline
+
+line wall -reverse on
+  11750.5 5826.25
+  11754.75 5830.0 11754.23 5828.92 11757.0 5828.0
+  11759.25 5827.25 11763.5 5826.75 11762.25 5824.75
+  smooth off
+endline
+
+point 11758.84 5825.41 station -name Gs.5@jb-arianes.Jean-Bernard
+
+point 11752.15 5819.29 station -name Gs.4@jb-arianes.Jean-Bernard
+
+point 11732.26 5814.09 station -name Gs.3@jb-arianes.Jean-Bernard
+
+point 11724.86 5803.03 station -name Gs.2@jb-arianes.Jean-Bernard
+
+point 11712.33 5793.03 station -name Gs.1@jb-arianes.Jean-Bernard
+
+point 11616.28 5777.57 station -name Gs.0@jb-arianes.Jean-Bernard
+
+endscrap
+
+
+
+scrap arianes2 -projection plan -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+
+point 12022.63 5792.07 station -name Bb.115@jb-arianes.Jean-Bernard
+
+point 11985.8 5751.71 station -name Gr.18@jb-arianes.Jean-Bernard
+
+point 11940.14 5739.67 station -name Gr.17@jb-arianes.Jean-Bernard
+
+point 11926.59 5718.15 station -name Gr.16@jb-arianes.Jean-Bernard
+
+point 11897.99 5695.35 station -name Gr.15@jb-arianes.Jean-Bernard
+
+point 11881.98 5680.28 station -name Gr.14@jb-arianes.Jean-Bernard
+
+point 11867.7 5675.41 station -name Gr.13@jb-arianes.Jean-Bernard
+
+point 11862.0 5688.61 station -name Gr.12@jb-arianes.Jean-Bernard
+
+point 11836.31 5702.73 station -name Gr.11@jb-arianes.Jean-Bernard
+
+point 11827.0 5774.5 continuation
+
+point 11747.5 5837.0 label -text "P13"
+
+point 11833.25 5743.75 label -text "M. des Arianes"
+
+point 11829.75 5786.75 label -text "C4"
+
+point 11834.75 5724.75 label -text "Blocs"
+
+point 11820.75 5719.5 blocks
+
+point 11830.0 5713.25 blocks
+
+point 11857.75 5691.5 blocks
+
+point 11864.5 5681.5 blocks
+
+point 11875.5 5677.0 blocks
+
+line pit
+  11807.75 5772.0
+  11807.75 5772.0 11806.5 5777.0 11808.25 5779.5
+  11810.0 5782.0 11811.75 5784.5 11814.25 5784.75
+  11816.75 5785.0 11820.0 5785.5 11820.0 5785.5
+  smooth off
+endline
+
+point 11818.0 5776.5 water-flow -orientation 285.8
+
+point 11794.75 5772.25 water-flow -orientation 228.6
+
+point 11776.5 5758.5 water-flow -orientation 148.7
+
+point 11833.0 5709.25 water-flow -orientation 155.8
+
+point 11908.5 5703.75 water-flow -orientation 52.1
+
+point 11989.0 5756.0 water-flow -orientation 60.1
+
+line pit
+  12016.25 5794.25
+  12017.5 5790.5
+  12017.5 5790.5 12016.75 5786.0 12018.0 5784.75
+  12019.25 5783.5 12021.25 5784.0 12021.25 5784.0
+  smooth off
+  12021.25 5784.0 12025.75 5782.25 12027.0 5781.75
+  smooth off
+endline
+
+line wall
+  12017.5 5790.5
+  12015.75 5788.25 11988.75 5756.25 11984.75 5755.5
+  11980.75 5754.75 11941.25 5743.25 11938.5 5741.25
+  11935.75 5739.25 11928.25 5721.75 11924.5 5719.25
+  11920.75 5716.75 11902.0 5701.5 11896.5 5697.5
+  11891.0 5693.5 11884.75 5684.25 11880.75 5682.75
+  11876.75 5681.25 11870.25 5676.25 11868.5 5678.25
+  11866.75 5680.25 11865.0 5690.5 11863.0 5691.25
+  11861.0 5692.0 11839.5 5702.0 11838.25 5704.0
+  11837.0 5706.0 11836.5 5710.75 11833.25 5713.75
+  11830.0 5716.75 11802.75 5730.75 11800.75 5732.75
+  11798.75 5734.75 11795.5 5739.5 11793.25 5740.5
+  11791.0 5741.5 11785.63 5743.84 11784.44 5747.17
+  11783.25 5750.5 11777.25 5758.75 11780.25 5758.75
+  11783.25 5758.75 11787.0 5759.75 11790.25 5762.0
+  11793.5 5764.25 11800.0 5778.25 11802.5 5776.75
+  11805.0 5775.25 11805.5 5774.5 11808.25 5774.0
+  smooth off
+endline
+
+line wall
+  11755.0 5827.75
+  11755.0 5827.75 11756.75 5825.25 11755.5 5824.0
+  11754.25 5822.75 11752.5 5823.25 11751.5 5823.0
+  11750.5 5822.75 11750.25 5821.0 11750.25 5821.0
+  smooth off
+  11750.25 5821.0 11747.25 5824.75 11746.0 5822.5
+  11744.75 5820.25 11735.0 5808.25 11735.5 5804.25
+  11736.0 5800.25 11732.75 5782.75 11735.5 5781.25
+  11738.25 5779.75 11748.25 5781.5 11753.0 5780.25
+  11757.75 5779.0 11761.75 5783.25 11764.0 5779.5
+  11766.25 5775.75 11767.75 5769.75 11769.5 5766.25
+  11771.25 5762.75 11769.0 5764.0 11771.75 5760.25
+  11774.5 5756.5 11779.75 5749.0 11783.0 5746.0
+  11786.25 5743.0 11787.5 5741.25 11790.0 5737.5
+  11792.5 5733.75 11794.0 5730.0 11798.25 5728.25
+  11802.5 5726.5 11816.25 5721.25 11818.5 5718.25
+  11820.75 5715.25 11828.75 5713.0 11829.75 5710.5
+  11830.75 5708.0 11831.75 5703.25 11834.5 5701.5
+  11837.25 5699.75 11857.75 5691.75 11859.75 5687.5
+  11861.75 5683.25 11862.75 5675.5 11866.25 5674.25
+  11869.75 5673.0 11881.0 5675.5 11883.75 5676.75
+  11886.5 5678.0 11895.5 5689.25 11899.75 5693.5
+  11904.0 5697.75 11926.25 5713.0 11928.5 5716.75
+  11930.75 5720.5 11936.25 5736.0 11941.25 5737.25
+  11946.25 5738.5 11983.0 5745.75 11986.25 5747.5
+  11989.5 5749.25 12019.5 5782.75 12021.25 5784.0
+  smooth off
+endline
+
+line wall
+  11814.25 5784.75
+  11809.5 5785.25 11804.5 5786.25 11801.0 5784.75
+  11797.5 5783.25 11801.0 5781.0 11797.5 5778.25
+  11794.0 5775.5 11790.0 5771.25 11787.5 5769.75
+  11785.0 5768.25 11786.75 5768.25 11783.0 5768.0
+  11779.25 5767.75 11776.0 5765.75 11775.0 5766.75
+  11774.0 5767.75 11771.25 5766.75 11771.25 5769.5
+  11771.25 5772.25 11768.5 5782.75 11765.75 5783.5
+  11763.0 5784.25 11757.5 5783.75 11753.5 5784.25
+  11749.5 5784.75 11744.0 5784.75 11743.0 5788.25
+  11742.0 5791.75 11739.0 5800.75 11739.5 5803.0
+  11740.0 5805.25 11745.75 5815.0 11746.5 5816.75
+  11747.25 5818.5 11747.75 5818.25 11749.75 5817.5
+  11751.75 5816.75 11753.0 5819.0 11754.25 5819.75
+  11755.5 5820.5 11758.25 5821.0 11758.25 5821.0
+  smooth off
+endline
+
+point 11831.31 5712.29 station -name Gr.10@jb-arianes.Jean-Bernard
+
+point 11818.84 5720.38 station -name Gr.9@jb-arianes.Jean-Bernard
+
+point 11799.43 5730.98 station -name Gr.8@jb-arianes.Jean-Bernard
+
+point 11791.95 5739.06 station -name Gr.7@jb-arianes.Jean-Bernard
+
+point 11784.44 5747.17 station -name Gr.6@jb-arianes.Jean-Bernard
+
+point 11809.91 5777.47 station -name Gr.5@jb-arianes.Jean-Bernard
+
+point 11802.07 5781.99 station -name Gr.4@jb-arianes.Jean-Bernard
+
+point 11799.72 5776.96 station -name Gr.3@jb-arianes.Jean-Bernard
+
+point 11790.14 5767.38 station -name Gr.2@jb-arianes.Jean-Bernard
+
+point 11787.66 5763.84 station -name Gr.1@jb-arianes.Jean-Bernard
+
+point 11774.78 5762.48 station -name 0double@jb-arianes.Jean-Bernard
+
+point 11770.14 5767.71 station -name Gs.16@jb-arianes.Jean-Bernard
+
+point 11764.9 5781.72 station -name Gs.15@jb-arianes.Jean-Bernard
+
+point 11753.85 5782.5 station -name Gs.14@jb-arianes.Jean-Bernard
+
+point 11736.48 5782.47 station -name Gs.13@jb-arianes.Jean-Bernard
+
+point 11737.1 5803.07 station -name Gs.12@jb-arianes.Jean-Bernard
+
+point 11743.09 5816.19 station -name Gs.11@jb-arianes.Jean-Bernard
+
+point 11747.25 5820.92 station -name Gs.10@jb-arianes.Jean-Bernard
+
+point 11751.1 5818.52 station -name Gs.9@jb-arianes.Jean-Bernard
+
+point 11752.43 5821.96 station -name Gs.8@jb-arianes.Jean-Bernard
+
+point 11757.91 5822.97 station -name Gs.6@jb-arianes.Jean-Bernard
+
+endscrap
+
+

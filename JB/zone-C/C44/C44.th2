@@ -1,0 +1,270 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -130.0 -129.0 260.15049999999997 267.4164
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {106.81219999999999 1 1.0} {121.3544 C44} C44-map.xvi 0 {}
+
+
+
+scrap C44-1 -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 18.1503 67.5562 station -name 5@C44
+
+point 29.2503 64.0362 station -name 3@C44
+
+point 40.1503 62.3862 station -name 2@C44
+
+point 40.7203 64.4562 station -name 1@C44
+
+line wall
+  62.75 54.25
+  62.75 54.25 58.25 57.0 54.5 58.25
+  50.75 59.5 46.75 59.5 44.25 60.25
+  41.75 61.0 37.25 61.25 34.5 61.75
+  31.75 62.25 27.75 63.75 27.75 63.75
+  smooth off
+  27.75 63.75 25.75 67.0 23.25 66.25
+  20.75 65.5 24.75 64.25 24.75 64.25
+  smooth off
+  27.75 63.75
+endline
+
+line wall
+  21.25 74.0
+  21.25 74.0 27.25 71.75 23.5 71.25
+  19.75 70.75 19.75 75.25 17.0 73.25
+  14.25 71.25 9.25 65.75 13.0 64.0
+  16.75 62.25 21.0 63.25 23.5 63.25
+  26.0 63.25 29.25 62.0 29.25 62.0
+  smooth off
+endline
+
+point 34.75 79.0 label -text "imp."
+
+point 14.5 106.75 label -text "<bf>C44b" -scale xl
+
+point 89.75 55.25 label -text "<bf>C44" -scale xl
+
+point -0.75 69.5 label -text "P7"
+
+line pit -close on
+  23.25 66.25
+  23.25 66.25 26.0 71.0 23.5 71.25
+  21.0 71.5 18.25 74.5 17.0 73.25
+  15.75 72.0 8.5 65.0 13.0 64.0
+  17.5 63.0 23.5 62.25 23.5 63.25
+  23.5 64.25 23.25 66.25 23.25 66.25
+  smooth off
+endline
+
+point 96.5 44.5 altitude -scale l
+
+line overhang -close on
+  64.5 63.5
+  64.5 63.5 55.5 66.25 54.25 65.0
+  53.0 63.75 50.0 64.0 50.75 61.5
+  51.5 59.0 51.5 59.5 54.5 58.25
+  57.5 57.0 62.75 54.25 62.75 54.25
+  smooth off
+  62.75 54.25 64.75 57.0 64.75 59.0
+  64.75 61.0 64.5 63.5 64.5 63.5
+  smooth off
+endline
+
+point 18.25 96.0 entrance -orientation 167.3
+
+point 74.5 56.25 entrance -orientation 291.8
+
+line wall -subtype unsurveyed
+  14.0 83.0
+  14.0 83.0 17.0 85.25 18.0 83.5
+  19.0 81.75 21.25 74.0 21.25 74.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  26.25 86.0
+  26.25 86.0 24.0 86.0 19.5 86.0
+  15.0 86.0 14.0 83.0 14.0 83.0
+  smooth off
+endline
+
+line wall -reverse on -subtype unsurveyed
+  26.25 86.0
+  26.25 86.0 22.5 86.5 22.75 84.25
+  23.0 82.0 24.75 75.75 24.75 75.75
+  smooth off
+endline
+
+line wall
+  64.5 63.5
+  60.75 64.5 55.5 65.75 54.25 65.0
+  53.0 64.25 49.75 63.0 47.75 63.75
+  45.75 64.5 40.75 67.25 39.5 66.5
+  38.25 65.75 36.0 65.25 33.25 65.25
+  30.5 65.25 28.25 66.75 27.75 67.75
+  27.25 68.75 24.75 75.75 24.75 75.75
+  smooth off
+endline
+
+point 53.4103 60.6762 station -name 0double@C44
+
+endscrap
+
+
+
+scrap C44-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 75.4103 20.2662 station -name 16@C44
+
+point 66.0303 22.1862 station -name 14@C44
+
+point 57.7003 19.4162 station -name 12@C44
+
+point 54.0003 19.3862 station -name 11@C44
+
+point 58.2203 24.4962 station -name 10@C44
+
+point 49.2003 38.1762 station -name 9@C44
+
+line wall
+  29.25 62.0
+  29.25 62.0 33.25 54.25 34.0 51.0
+  34.75 47.75 41.0 34.75 43.75 33.75
+  46.5 32.75 52.5 28.75 52.5 26.0
+  52.5 23.25 47.25 18.25 50.5 17.5
+  53.75 16.75 57.25 17.25 58.5 17.25
+  59.75 17.25 67.25 22.5 69.0 22.0
+  70.75 21.5 73.5 21.0 72.25 21.0
+  smooth off
+endline
+
+point 94.5 21.0 label -text "-44 m"
+
+point 72.5 6.0 label -text "P6"
+
+point 55.5 4.75 label -text "R4"
+
+point 35.0 25.5 label -text "P15"
+
+point 23.25 35.5 label -text "R6"
+
+line pit
+  58.0 21.0
+  64.75 26.0
+  64.75 26.0 68.0 25.75 68.5 23.5
+  69.0 21.25 67.0 15.75 67.0 15.75
+  smooth off
+endline
+
+line pit
+  59.75 22.25
+  59.75 22.25 54.75 22.25 55.5 18.25
+  56.25 14.25 58.75 12.5 58.75 12.5
+  smooth off
+endline
+
+line pit
+  52.5 43.25
+  52.5 43.25 48.75 43.75 47.5 39.0
+  46.25 34.25 44.75 29.0 44.75 29.0
+  smooth off
+endline
+
+line pit
+  39.5 54.25
+  39.5 54.25 39.75 52.25 40.5 49.25
+  41.25 46.25 41.25 47.0 40.5 42.5
+  39.75 38.0 38.0 36.5 39.5 34.0
+  smooth off
+endline
+
+line wall
+  27.75 63.75
+  27.75 63.75 30.5 69.75 31.5 67.25
+  32.5 64.75 34.5 56.0 37.0 53.0
+  39.5 50.0 40.25 54.75 41.75 52.5
+  43.25 50.25 49.75 45.0 51.75 41.0
+  53.75 37.0 61.25 27.5 60.5 25.25
+  59.75 23.0 54.0 20.0 58.0 21.0
+  62.0 22.0 64.75 23.25 66.0 24.25
+  67.25 25.25 69.25 27.25 72.0 27.25
+  74.75 27.25 78.0 21.25 78.0 20.0
+  78.0 18.75 71.0 18.75 71.0 18.75
+  smooth off
+endline
+
+point 35.7403 52.3962 station -name 7@C44
+
+point 30.9603 63.9762 station -name 6@C44
+
+endscrap
+
+
+
+scrap C44-3 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 60.3403 18.7162 station -name 18@C44
+
+point 63.8903 20.1862 station -name 17@C44
+
+endscrap
+
+
+
+scrap C44-4 -projection plan -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 43.0003 63.1262 station -name 26@C44
+
+point 36.4703 58.8162 station -name 25@C44
+
+line wall
+  72.25 21.0
+  72.25 21.0 68.0 22.75 68.5 23.5
+  69.0 24.25 70.5 31.75 67.75 33.0
+  65.0 34.25 60.5 32.25 60.0 34.5
+  59.5 36.75 58.0 46.5 55.0 47.75
+  52.0 49.0 48.5 44.75 48.5 47.5
+  48.5 50.25 50.5 52.5 47.5 53.75
+  44.5 55.0 37.25 57.0 39.25 58.5
+  41.25 60.0 44.75 60.5 45.25 61.75
+  45.75 63.0 46.05 64.9 47.25 65.5
+  smooth off
+endline
+
+point 55.5 71.0 label -text "Imp."
+
+point 66.5 78.75 label -text "-65 m"
+
+point 65.5 89.0 altitude -scale l
+
+line wall
+  47.5 68.5
+  47.5 68.5 46.5 67.75 45.5 67.5
+  44.5 67.25 40.0 66.0 39.0 64.5
+  38.0 63.0 34.94 62.13 36.4703 58.8162
+  38.0 55.5 43.75 53.0 44.5 50.5
+  45.25 48.0 43.0 45.25 45.5 43.75
+  48.0 42.25 51.75 45.0 52.5 43.25
+  53.25 41.5 54.75 31.25 57.5 30.25
+  60.25 29.25 64.25 32.0 64.75 30.0
+  65.25 28.0 68.25 27.0 66.0 24.25
+  63.75 21.5 59.75 18.0 62.75 18.0
+  65.75 18.0 71.0 18.75 71.0 18.75
+  smooth off
+endline
+
+point 46.5203 51.0862 station -name 24@C44
+
+point 47.5603 44.7962 station -name 23@C44
+
+point 52.4303 45.5162 station -name 22@C44
+
+point 59.6003 32.2662 station -name 21@C44
+
+point 66.2503 31.8462 station -name 20@C44
+
+point 67.9203 20.5262 station -name 19@C44
+
+endscrap
+
+

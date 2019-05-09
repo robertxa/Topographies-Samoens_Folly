@@ -1,0 +1,119 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 300.25 219.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {62.678000000000004 1 1.0} {39.371900000000004 Xa-2015e-0} Erreur-coupe-2015.xvi 0 {}
+
+
+
+scrap berreurc1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.502401619999999 0.0 m]
+
+line wall -subtype invisible
+  73.0 35.25
+  77.0 47.75
+endline
+
+line wall -subtype invisible
+  63.5 56.0
+  58.75 37.25
+endline
+
+point 39.5 52.0 label -text "<center>g. de<br>l'Erreur"
+
+point 171.0 74.0 label -text "<center>g. du<br>P15"
+
+point 138.0 64.5 height -value [-3 m]
+
+point 61.75 64.75 height -value [-3 m]
+
+point 105.25 87.0 air-draught -orientation 249.4 -subtype summer
+
+point 144.0 89.75 water-flow -orientation 179.3
+
+line u:rope
+  139.25 79.5
+  139.25 79.5 145.25 73.75 147.25 76.25
+  149.25 78.75 148.0 67.75 148.0 67.75
+  smooth off
+endline
+
+line u:rope
+  108.75 76.75
+  108.75 76.75 102.0 72.5 98.75 75.5
+  97.93 76.26 95.25 60.5 92.25 63.25
+  92.25 63.25 75.25 51.5 73.5 55.25
+  73.17 55.97 68.75 49.75 68.75 54.5
+  68.75 59.25 68.25 37.75 68.25 37.75
+  smooth off
+endline
+
+line wall
+  58.75 37.25
+  58.75 37.25 63.5 36.5 67.25 36.0
+  71.0 35.5 73.0 35.25 73.0 35.25
+  smooth off
+endline
+
+line wall
+  143.0 83.25
+  143.0 83.25 145.25 80.25 142.0 80.5
+  138.75 80.75 128.75 83.5 124.75 83.5
+  120.75 83.5 119.0 85.0 116.75 83.25
+  114.5 81.5 110.5 78.75 107.25 78.0
+  104.0 77.25 100.25 77.5 98.75 75.5
+  97.25 73.5 92.0 65.5 89.0 64.25
+  86.0 63.0 84.25 61.5 80.0 59.75
+  75.75 58.0 74.5 55.5 71.5 55.5
+  68.5 55.5 63.5 56.0 63.5 56.0
+  smooth off
+endline
+
+line wall
+  158.75 84.75
+  158.75 84.75 151.25 85.75 150.5 83.25
+  149.75 80.75 151.75 78.0 147.5 78.75
+  143.25 79.5 145.5 83.0 145.5 83.0
+  smooth off
+endline
+
+line wall
+  77.0 47.75
+  77.0 47.75 72.0 47.5 72.0 49.5
+  72.0 51.5 75.0 52.75 77.0 53.25
+  79.0 53.75 81.25 57.75 83.75 57.75
+  86.25 57.75 87.5 57.75 89.25 58.0
+  91.0 58.25 94.5 59.25 95.0 62.0
+  95.5 64.75 97.5 69.0 98.5 69.75
+  99.5 70.5 99.75 72.25 103.25 73.0
+  106.75 73.75 108.5 73.5 110.5 74.5
+  112.5 75.5 112.0 76.75 114.5 77.0
+  117.0 77.25 116.0 78.0 121.25 78.0
+  126.5 78.0 135.5 76.25 137.75 76.25
+  140.0 76.25 142.25 76.75 142.75 75.25
+  143.25 73.75 147.0 67.25 148.0 66.0
+  149.0 64.75 155.25 61.5 155.25 61.5
+  smooth off
+endline
+
+point 62.678000000000004 39.371900000000004 station -name Xa-2015e-0@Erreur
+
+point 72.00800000000001 53.7319 station -name Xa-2015e-2@Erreur
+
+point 84.208 60.7819 station -name Xa-2015e-3@Erreur
+
+point 89.188 62.401900000000005 station -name Xa-2015e-4@Erreur
+
+point 100.048 73.6419 station -name Xa-2015e-5@Erreur
+
+point 111.518 77.81190000000001 station -name Xa-2015e-6@Erreur
+
+point 119.19800000000001 79.7319 station -name Xa-2015e-7@Erreur
+
+point 143.428 77.6119 station -name Xa-2015e-8@Erreur
+
+point 148.798 75.6619 station -name Xa-2015e-9@Erreur
+
+point 157.478 70.0219 station -name Xa-2015e-10@Erreur
+
+endscrap
+
+

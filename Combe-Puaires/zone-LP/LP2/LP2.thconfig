@@ -1,0 +1,127 @@
+encoding  utf-8
+
+# File written by tro2therion.f90 (Xavier Robert) 
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2  
+  
+source data-th/LP2.th
+source data-th2/LP2.th2
+  
+layout xviexport
+	scale 1 1000
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+  
+layout my_layout
+  	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copy langue-fr
+ 
+	doc-title "LP2"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 750
+	scale 1 500
+	scale-bar 50 m
+	#rotate 2.25
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "<it>Plan<ss> - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 14.5 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+ 
+	# Titre          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={LP2} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+
+endlayout
+
+layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr
+	
+	doc-title "LP2 coupe"
+	base-scale 1 750
+	scale-bar 50 m
+	scale 1 500
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	doc-author "Xavier Robert"
+	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
+	transparency on
+	opacity 90
+	statistics topo-length off
+	statistics explo-length off
+	statistics copyright all
+	legend off
+	legend-width 14.5 cm
+	map-header 30 93 ne
+	symbol-hide line survey
+	#debug station-names
+	map-header-bg off
+	layers on
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+ 
+	# Titre          
+	code tex-map
+		% Output map title as determined by Therion 5.3 is stored in cavename. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={LP2} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+
+endlayout
+  
+export map -fmt xvi -layout xviexport -o LP2-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o LP2-coupe.xvi
+  
+export map -o LP2-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o LP2-coupe.pdf
+export model -o LP2.lox
+  
+# Export des fichiers ESRI
+#export map -proj plan -fmt esri -o LP2 -layout my_layout
+  
+# Export des fichiers kml
+export map -proj plan -fmt kml -o LP2.kml -layout my_layout

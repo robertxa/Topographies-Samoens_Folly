@@ -1,0 +1,33 @@
+encoding utf-8
+survey Billy2 -title "Billy2"
+  
+centerline -title "Billy Xa-2015-10_Xa-2015-10bis Xa-2015-13_Xa-2015-14"
+ 
+ cs lat-long
+  explo-team "G.S. Vulcain"
+
+  date 2015.10.31
+  team "G.S. Vulcain"
+  team "Xavier Robert"
+  team "Jonathan Mercier"
+  team "Jérémie Boucheteil"
+  team "Damien Gruel"
+  team "Frédéric Astolfi"
+
+   units lenght meters
+   units compass grads
+   units clino grads
+
+
+	data normal from to length compass clino left right up down
+	Xa-2015-10	Xa-2015-10bis	0	0	0	2	1	1	0.5
+	extend left	
+	Xa-2015-10	Xa-2015-11	5.62	0	0	2	1	0.5	0	# colm
+	extend right
+	Xa-2015-10	Xa-2015-12	9.42	200	0	0	2	1.5	7	# sommet méandre
+	Xa-2015-10	Xa-2015-13	3.76	183	-33	3	3	0.5	0.5	# vire
+	Xa-2015-13	Xa-2015-14	6.8	145	-45	1	2	4	3	# sommet ressaut R3
+# dev = 26 m
+endcenterline
+ 
+endsurvey

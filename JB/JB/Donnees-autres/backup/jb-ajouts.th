@@ -1,0 +1,249 @@
+ encoding  iso8859-2
+ survey jb-ajouts -title jb-Xav-2010 #-entrance "ENTREE"
+ 
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  grad
+   calibrate counter 0 1.000
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass grad
+   units clino grad
+ # infer equates on
+ # infer plumbs on
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   0 0double 0.0 0.0    0.       100.      0.5      0.5      0.5      0.5    
+   0double 1 67077.0 67534.0    379.       21.      0.5      0.5      0.5      0.5    
+   1 2 67810.0 68216.0    396.       35.      0.5      0.5      0.5      0.5    
+   2 3 68216.0 68415.0    356.       30.      0.5      0.5      0.5      0.5    
+   3 4 68573.0 68843.0    14.       36.      0.5      0.5      0.5      0.5    
+   4 5 68843.0 69326.0    374.       27.      0.5      0.5      0.5      0.5    
+   5 6 69326.0 69809.0    387.       28.      0.2      0.2      0.2       0.    
+   6 7 69809.0 70237.0    365.       33.      0.4      0.4      0.2      0.2    
+   7 8 70237.0 70607.0    13.       41.       1.       1.       2.       1.    
+   8 9 70607.0 71051.0    394.       64.       1.       1.       10.       1.    
+   9 10 71020.0 71430.0    185.       68.       1.       1.       10.       1.    
+   10 11 71430.0 72425.0    178.      -35.       1.       1.       2.       1.    
+   11 12 72425.0 73235.0    134.      -30.       2.       1.       1.       1.    
+   10 13 73235.0 74175.0    346.       57.      0.6      0.6       1.       1.    
+   13 14 74175.0 74717.0    365.       19.      0.4      0.4       1.       1.    
+   14 15 74717.0 75207.0    384.      -6.      0.6      0.6      0.6      0.8    
+   15 16 75207.0 75576.0    357.       40.      0.6      0.6      0.6      0.6    
+   16 17 75576.0 76076.0    3.      -10.      0.4      0.4      0.3      0.3    
+   17 18 76076.0 77013.0    363.       37.      0.4      0.4      0.4      0.4    
+   18 19 77013.0 77751.0    14.      -28.       2.       1.       2.       1.    
+   19 20 0.0 600.0    14.       30.      0.5      0.5       2.       1.    
+   19 21 77751.0 78194.0    265.      -34.       2.       2.      0.4      0.4    
+   21 Da.58 78194.0 78638.0    282.      -50.       0.       0.       0.       0.    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+   calibrate counter 0 0.500
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   Gk.0 Gk.1 26635.0 26992.0    272.       7.      0.4      0.4       10.       1.    
+   Gk.1 Gk.2 26992.0 27594.0    342.       36.       1.       4.       8.       1.5    
+   Gk.2 Gk.3 27594.0 28222.0    13.      -1.      0.5      0.5       2.       1.5    
+   Gk.3 Gk.4 28222.0 30081.0    349.       36.       1.       2.       1.5      0.5    
+   Gk.4 Gk.5 30081.0 30900.0    32.       12.       3.       1.       5.       1.5    
+   Gk.5 Gk.6 30900.0 31785.0    2.      -16.       1.       3.       20.       1.5    
+   Gk.6 Gk.7 31785.0 33386.0    278.       51.       1.       1.       15.       1.5    
+   Gk.7 Gk.8 33386.0 34760.0    305.       20.       2.       2.       15.       1.5    
+   Gk.8 Gk.9 34760.0 36048.0    9.       56.       1.       1.       14.       1.5    
+   Gk.9 Gk.10 36048.0 37396.0    11.       52.       3.       1.       13.       1.5    
+   Gk.10 Gk.11 37396.0 38030.0    38.       12.       1.       3.       16.       1.5    
+   Gk.11 Gk.12 38030.0 39110.0    104.      -2.       1.       1.       10.       1.5    
+   Gk.11 Gk.13 39110.0 42309.0    0.       90.       0.       4.       4.       16.    
+   Gk.13 Ia.17 42309.0 43181.0    287.      -16.       1.       1.       4.       1.5    
+   Ia.17 Gk.15 43181.0 44493.0    358.       30.       2.       2.       7.       1.5    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+   data normal from to length compass clino left right up down
+   Gk.15 Gk.16    10.47000       139.       74.       1.       1.       1.       1.    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+   calibrate counter 0 0.500
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   Fv.1 Gl.1 31151.0 32092.0    342.       35.       2.       1.       5.       1.2    
+   Gl.1 Gl.2 32092.0 33306.0    257.       81.       1.       2.       8.       2.    
+   Gl.2 Gk.0 33306.0 35430.0    262.       67.       3.       7.       8.       10.    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+   calibrate counter 0 0.500
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   Ia.17 Gm.1 35454.0 36518.0    6.       31.       1.5       1.5       8.       1.5    
+   Gm.1 Gjm.2 36518.0 37126.0    265.       0.      0.1      0.1       1.       3.    
+   Gm.1 Gm.3 37126.0 38481.0    118.       78.      0.3       1.       5.       5.    
+   Gm.3 Gm.4 38481.0 39092.0    175.       15.      0.6       1.       2.5       1.    
+   Gm.4 Gm.5 39092.0 39505.0    140.      -30.      0.2      0.3      0.3      0.3    
+   Gm.5 Gm.6 39505.0 39709.0    157.       15.      0.2      0.4      0.2      0.4    
+   Gm.6 Gm.7 39709.0 39709.0    0.       90.      0.5       1.       3.      0.4    
+   Gm.7 Gm.8 39709.0 40237.0    184.       8.      0.3      0.6       10.       1.5    
+   Gm.8 Gm.9 40237.0 41363.0    210.       45.      0.8      0.8       10.       1.5    
+   Gm.9 Gm.10 41368.0 42571.0    165.       79.      0.3      0.3       2.5       7.    
+   Gm.10 Gm.11 42571.0 42884.0    220.       20.      0.2      0.1       2.       1.5    
+   Gm.11 Gm.12 42884.0 43181.0    165.       5.      0.2      0.1       2.      0.3    
+   Gm.12 Gm.13 43181.0 44058.0    187.       20.      0.4      0.1       6.       1.5    
+   Gm.13 Gm.14 44058.0 44702.0    190.       86.      0.5       1.       3.       1.5    
+   Gm.14 Gm15 44702.0 45165.0    210.       44.      0.3      0.7       3.       1.5    
+   Gm15 Gm.16 45165.0 45822.0    320.       43.      0.5       1.5       3.       1.5    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+   data normal from to length compass clino left right up down
+   Kg.9 Gn.0    0.       0.       0.       0.       0.       0.       0.    
+   Gn.0 Gn.1    4.1       136.       90.       0.       0.       0.       0.    
+   Gn.1 Gn.2    3.24       139.       1.       0.       0.       0.       0.    
+   Gn.2 Gn.3    5.37       130.       38.      0.5      0.5       15.       1.    
+   Gn.3 Gn.4    9.95       327.       18.       2.      0.5       15.       3.86    
+   Gn.4 Gn.5    11.55000       250.      -2.       0.       0.       0.       0.    
+   Gn.5 Gn.6    2.71       275.       2.       0.       0.       0.       0.    
+   Gn.6 Gn.7    3.23       245.       44.       0.       0.       0.       0.    
+   Gn.7 Gn.8    7.1       281.      -5.       0.       0.       0.       0.    
+   Gn.8 Gn.10    4.06       250.      -9.       0.       0.       0.       0.    
+   Gn.10 Gn.11    2.62       341.      -5.       0.       0.       0.       0.    
+   Gn.11 Gn.12    2.15       265.      -3.       0.       0.       0.       0.    
+   Gn.12 Gn.13    3.18       186.       2.       0.       0.       0.       0.    
+   Gn.13 Gn.14    2.8       295.      -4.       0.       0.       0.       0.    
+   Gn.14 Gn.15    4.35       230.       2.       0.       0.       0.       0.    
+   Gn.15 Gn.16    4.74       292.      -27.       0.       0.       0.       0.    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+   data normal from to length compass clino left right up down
+   Ke.29 Go.0    5.       0.       90.       2.3      0.8      0.5      0.5    
+   Go.0 Go.1    4.56       55.       15.       2.75       1.81      0.82      0.5    
+   Go.1 Go.2    7.88       340.       25.      0.88       1.21      0.72      0.5    
+   Go.2 Go.3    6.51       321.       20.       1.      0.5      0.5      0.5    
+   Go.3 Go.4    9.13       325.       15.       1.      0.5      0.5      0.5    
+   Go.3 Go.5    7.13       17.       38.      0.88       2.35      0.74      0.5    
+   Go.5 Go.6    12.68000       316.       16.      0.88       2.35      0.66      0.5    
+   Go.5 Go.7    11.25000       100.       26.      0.65      0.73       1.69      0.5    
+   Go.7 Go.8    3.47       73.       40.      0.5      0.5      0.5       0.    
+   Go.8 Go.9    3.45       96.       10.       2.18       1.16       1.96       1.    
+   Go.9 Go.10    20.       330.       35.       1.47       2.1       2.07       1.    
+   Go.9 Go.11    2.89       119.       0.       1.26       1.19       7.83       1.    
+   Go.11 Go.12    5.       0.       90.       1.77       2.       3.       1.    
+   Go.12 Go.13    18.       327.       25.       1.78       4.64       1.04       1.    
+   Go.13 Go.14    9.6       40.       35.       2.91       3.57       1.49       1.    
+   Go.14 Go.15    6.55       99.       27.       0.       0.       0.       0.    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+   data normal from to length compass clino left right up down
+   xa-0-2009 xa-0-2009do    0.       0.       0.      0.5      0.5      0.5      0.5    
+   xa-0-2009do xa-1-2009    2.35       170.      -7.      0.5      0.5       0.       0.    
+   xa-0-2009 xa-2-2009    4.15       241.      -7.       1.5       1.      0.5      0.4    
+   xa-2-2009 xa-3-2009    6.64       300.       0.       6.      0.5       0.      0.5    
+   xa-3-2009 xa-4-2009    3.1       225.      -30.       1.5      0.5       1.      0.3    
+   xa-4-2009 xa-5-2009    5.6       300.       0.       1.       0.       0.       1.5    
+   xa-5-2009 Kh.37    4.59       250.      -42.       10.       3.       1.       10.    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+   data normal from to length compass clino left right up down
+   Ke.43 Gp.0    0.       0.       0.       4.92       4.42       3.52       5.26    
+   Gp.0 Gp.1    8.26       348.       25.       0.      0.69       4.14       1.    
+   Gp.1 Gp.2    10.32000       109.       46.      0.75      0.42       2.2       1.    
+   Gp.2 Gp.3    6.16       40.       39.      0.8       0.       1.4       0.    
+   Gp.3 Gp.4    4.06       106.       5.       1.1      0.2       1.27      0.5    
+   Gp.4 Gp.5    8.1       74.       0.      0.68       1.13      0.79      0.5    
+   Gp.5 Gp.6    4.96       74.       26.      0.62      0.64       1.04      0.5    
+   Gp.6 Gp.7    8.2       63.       34.      0.8      0.4       1.2      0.5    
+ endcenterline
+  
+ centerline
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+  team "G.S. Vulcain"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+   data normal from to length compass clino left right up down
+   Ke.33 Gq.0    5.       10.       10.       2.26       1.76       3.67       1.    
+   Gq.0 Gq.1    21.4       70.       39.       2.53       2.88       1.87       1.    
+   Gq.1 Gq.2    5.8       355.       16.       2.53       2.88       1.87       1.    
+ endcenterline
+ endsurvey

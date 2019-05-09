@@ -1,0 +1,243 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -370.578 -170.4026 318.4931 479.2984
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {122.858 1 1.0} {20.776399999999995 0} F3-map.xvi 0 {}
+
+
+
+scrap F3-1 -projection plan -author 1975 "Jacques Lopez" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 285.4804 -128.0 0.0 0.0 10.50240216 0.0 m]
+
+point 105.75 27.5 dig
+
+line arrow
+  171.5 23.75
+  171.5 23.75 163.5 9.5 155.5 9.25
+  147.5 9.0 123.75 10.75 123.75 10.75
+  smooth off
+endline
+
+point 184.75 24.25 label -text "<center>Siphon<br>temp."
+
+point 134.25 30.0 water-flow -orientation 224.0
+
+point 171.25 66.5 water-flow -orientation 224.0
+
+point 176.25 55.25 label -text "Imp."
+
+point 156.0 34.0 height -value [-7 m]
+
+point 106.25 96.25 height -value [-8 m]
+
+point 38.5 117.75 continuation
+
+line arrow
+  81.25 87.25
+  89.5 82.75
+endline
+
+line arrow
+  84.25 103.5
+  79.75 93.5
+endline
+
+line arrow
+  59.25 121.5
+  81.25 111.5
+endline
+
+line contour
+  91.25 90.25
+  91.25 90.25 83.25 77.5 75.0 80.5
+  smooth off
+endline
+
+line contour
+  88.0 92.75
+  88.0 92.75 72.5 94.0 72.25 98.5
+  smooth off
+endline
+
+line contour
+  95.0 107.0
+  95.0 107.0 83.0 98.0 77.75 103.0
+  smooth off
+endline
+
+line contour
+  80.0 122.75
+  77.5 116.25 81.25 110.0 73.25 106.75
+  smooth off
+endline
+
+line contour
+  71.25 124.0
+  71.25 124.0 72.75 112.0 67.0 110.25
+  smooth off
+endline
+
+line contour
+  63.75 127.0
+  63.75 127.0 64.5 112.5 57.75 112.0
+  smooth off
+endline
+
+line pit
+  111.0 94.0
+  111.0 94.0 89.5 83.5 95.0 81.0
+  100.5 78.5 102.5 64.0 102.5 64.0
+  smooth off
+endline
+
+line pit
+  151.0 35.0
+  151.0 35.0 150.5 46.5 143.0 46.5
+  135.5 46.5 128.0 46.0 128.0 46.0
+  smooth off
+endline
+
+area sump
+  l20-113-30
+  l14-113-21
+  l19-116-15
+  l15-124-15
+endarea
+
+line label -id l20-113-30
+  135.5 11.5
+  111.5 28.5
+endline
+
+line label -id l19-116-15
+  103.0 22.5
+  109.0 19.0
+  120.5 10.5
+  127.5 5.0
+endline
+
+line pit
+  153.0 52.5
+  153.0 52.5 149.0 58.75 144.0 56.25
+  139.0 53.75 139.0 52.0 139.0 52.0
+  smooth off
+endline
+
+line floor-meander
+  141.75 61.5
+  141.75 61.5 146.5 56.5 147.0 54.0
+  147.5 51.5 145.75 46.5 145.75 46.5
+  smooth off
+endline
+
+point 130.25 69.5 blocks
+
+point 129.5 73.0 blocks
+
+point 123.5 73.75 blocks
+
+point 119.75 77.0 blocks
+
+point 105.0 81.0 snow
+
+point 103.75 76.0 snow
+
+point 108.0 79.25 snow
+
+point 109.25 82.75 snow
+
+point 102.5 82.75 snow
+
+point 79.75 109.25 snow
+
+point 85.75 109.5 snow
+
+point 80.75 114.0 snow
+
+point 56.75 120.75 snow
+
+point 62.25 122.5 snow
+
+point 53.0 123.25 snow
+
+point 57.75 125.0 snow
+
+line wall
+  164.0 61.25
+  164.0 61.25 152.25 45.5 150.75 52.0
+  149.25 58.5 147.75 66.25 141.75 68.75
+  135.75 71.25 123.64 77.63 119.5 81.25
+  107.5 91.75 102.25 85.75 98.75 85.75
+  95.25 85.75 92.5 83.25 89.0 86.25
+  85.5 89.25 79.5 91.25 84.0 97.25
+  88.5 103.25 94.75 104.5 90.25 110.0
+  85.75 115.5 54.75 125.5 57.25 129.0
+  59.75 132.5 59.5 132.25 63.75 134.75
+  smooth off
+endline
+
+line wall -id l15-124-15
+  118.25 12.0
+  118.25 12.0 122.0 15.0 127.0 19.0
+  132.0 23.0 146.5 41.0 152.0 45.0
+  157.5 49.0 166.0 58.75 166.0 58.75
+  smooth off
+endline
+
+point 132.75 49.0 rope
+
+point 92.25 69.5 rope
+
+point 75.25 128.25 rope
+
+line pit -close on
+  39.0 126.75
+  39.0 126.75 31.25 126.0 34.75 125.0
+  38.25 124.0 45.5 122.75 44.5 124.25
+  43.5 125.75 39.0 126.75 39.0 126.75
+  smooth off
+endline
+
+line wall
+  29.75 128.5
+  29.75 128.5 32.5 121.5 39.25 121.5
+  46.0 121.5 51.5 119.75 51.5 119.75
+  smooth off
+endline
+
+line wall -id l14-113-21
+  51.5 119.75
+  51.5 119.75 82.75 115.25 80.25 105.25
+  77.75 95.25 71.0 93.0 75.0 89.0
+  79.0 85.0 79.5 77.5 86.0 77.5
+  92.5 77.5 93.5 79.5 98.0 77.5
+  102.5 75.5 98.25 68.75 113.75 73.5
+  119.12 75.15 132.75 68.5 134.75 64.0
+  136.75 59.5 146.5 55.25 143.0 48.75
+  139.5 42.25 119.5 23.5 119.5 23.5
+  smooth off
+  111.5 17.0
+endline
+
+point 163.0 69.0 narrow-end
+
+#point 122.858 20.7764 station -name 0double@F3
+
+
+point 148.658 48.4664 station -name 1@F3
+
+point 138.638 66.5164 station -name 2@F3
+
+point 115.398 78.7064 station -name 3@F3
+
+point 98.058 81.6664 station -name 4@F3
+
+point 86.758 82.3364 station -name 5@F3
+
+point 78.398 90.9064 station -name 6@F3
+
+point 87.578 107.7564 station -name 7@F3
+
+point 53.098 127.9664 station -name 9@F3
+
+endscrap
+
+

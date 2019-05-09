@@ -1,0 +1,141 @@
+encoding  utf-8
+
+source data/C74.th
+source th2/C74-plan.th2
+
+# Add config file
+input ../../../config.thc 
+  
+# Debut de la definition du Layout "xviexport"
+layout xviexport
+  # echele auquel on veut faire la topo
+  scale 1 1000
+  # taille de la grille
+  grid-size 10 10 10 m
+  # mettre la grille en arrière plan
+  grid bottom
+endlayout
+# fin de la définition du layout "xviexport"  
+  
+layout my_layout
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copy langue-fr
+	
+  doc-title "C74"
+  doc-author "Xavier Robert"
+  cs UTM32
+  base-scale 1 1000
+  scale 1 1000
+ # origin 12 22 0 m
+ # origin-label 100 K
+ # exclude-pages on 1,2,5
+#  color map-bg 85
+  color map-fg [100 100 80]
+  transparency on
+  opacity 75
+  doc-author "Xavier Robert"
+  map-comment "<it>Plan - Samoëns, 74, France"  
+  statistics topo-length off
+  statistics explo-length off
+  legend on
+  # map-header 5 50 e
+  map-header 0 0 nw
+    map-header-bg off  
+  layers on
+  symbol-hide line survey
+  #symbol-hide point station
+  map-header-bg off
+#  debug station-names
+  grid off
+#  grid-size 100 100 100 m
+    # Afficher un copyright
+  statistics copyright all
+
+# Titre                         
+    code tex-map
+   % Output map title as determined by Therion 5.3 is stored in cavename. 
+   % It will be empty if there are multiple maps selected for any one projection
+   % AND there are multiple source surveys identified in the thconfig file 
+   % ie Therion can not infer a unique title from the input data given.
+   % This code allows you to define an output map title {cavename} if it happens to be empty
+  \edef\temp{\the\cavename}        % cavename from Therion   
+  \edef\nostring{}                 % empty string 
+  \ifx\temp\nostring             % test if cavename is empty
+        % if empty reassign cavename to describe selected maps as a group
+		\cavename={C74} 
+  \else % if not empty keep the value set by therion, or assign an override cavename here
+  \fi
+  \newtoks\club \club={Groupe Spéléologique Vulcain}
+  endcode   
+
+ endlayout
+
+layout my_layout-coupe
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr
+	
+	doc-title "C74 coupe"
+	base-scale 1 1000
+	scale-bar 50 m
+	scale 1 500
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	doc-author "Xavier Robert"
+	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
+	transparency on
+	opacity 90
+	statistics topo-length off
+	statistics explo-length off
+	statistics copyright all
+	legend on
+	#map-header 5 50 e
+	map-header 0 0 n
+	#symbol-hide line survey
+	map-header-bg off
+	layers on
+	debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+ 
+	# Titre          
+	code tex-map
+		% Output map title as determined by Therion 5.3 is stored in cavename. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={C74} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+
+endlayout
+
+  
+ export map -fmt xvi -layout xviexport -o th2/C74-plan2017.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o th2/C74-coupe2017.xvi 
+ 
+ export map -o Outputs/2D/C74-planTH.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/2D/C74-coupeNum.pdf
+ 
+ export model -o Outputs/3D/C74.lox
+
+# Export des fichiers ESRI
+export model -fmt esri -o Outputs/3D/C74-2017
+
+# Export des fichiers kml
+export map -proj plan -fmt kml -o Outputs/kml/C74.kml -layout my_layout

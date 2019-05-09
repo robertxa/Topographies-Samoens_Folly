@@ -1,0 +1,163 @@
+encoding utf-8
+
+survey CP16 -title "CP16" -entrance CP16
+
+centerline -title "CP16.0_CP16.0doubl CP16.25_CP16.6"
+ #cs lat-long
+ #fix CP16   46.115050     6.798150  2135	#2137	#2135
+ station CP16 entrance
+   date 2006.10.14
+   calibrate counter 0 0.500
+  team "Stéphane Lips"
+  team "Estelle Forbach"
+  team "Pauline Evrard"
+  explo-date 1981.08.04
+  explo-team "Bernard Lips"
+  explo-team "Benoît/le Falher"
+  explo-date 2006.10.14
+  explo-team "Stéphane Lips"
+  explo-team "Estelle Forbach"
+  explo-team "Pauline Evrard"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   CP16.0 CP16.0doubl 0.0 0.0    0.0       90.      0.60      0.90       15.       1.5    
+   CP16.0doubl CP16.1 96330.0 98029.0    58.       35.       1.0       1.0       15.       1.2    
+   CP16.0 CP16.2 98029.0 100728.    0.0       90.      0.30       1.2      0.80       14.    
+   CP16.2 CP16.3 728.0 1028.0    250.0      -8.0      0.40      0.40       1.0       15.    
+   CP16.3 CP16.4 1028.0 2614.0    104.0       24.      0.40      0.30      0.60       1.0    
+   CP16.4 CP16.5 2614.0 3590.0    108.0       9.0      0.40      0.30       1.3       1.5    
+   CP16.5 CP16.6 3590.0 4425.0    108.0      -21.       0.0       2.0       10.       1.5    
+   CP16.6 CP16.7 4425.0 5825.0    5.0       17.       2.0      0.20       4.5       4.0    
+   CP16.7 CP16.8 5825.0 6508.0    277.0       6.0       1.0      0.20       8.0       1.8    
+   CP16.8 CP16.9 6508.0 8223.0    355.0       73.      0.20       1.0       1.0       8.0    
+   CP16.9 CP16.10 8223.0 9762.0    335.0       69.      0.20       1.0       4.5       7.5    
+   CP16.10 CP16.11 9762.0 10711.0    0.0       90.      0.20       3.0      0.50       4.5    
+   CP16.12 CP16.13 10733.0 11500.0    334.0       24.      0.50      0.50       4.0       10.    
+   CP16.13 CP16.14 11500.0 12428.0    296.0       31.      0.60      0.60       6.0       1.0    
+   CP16.14 CP16.15 12428.0 13009.0    0.0       90.      0.60      0.60       4.0       1.5    
+   CP16.15 CP16.16 13009.0 13752.0    296.0       4.0      0.40      0.40       3.0      0.50    
+   CP16.16 CP16.17 13752.0 14297.0    276.0       23.      0.30      0.30       4.0       1.5    
+   CP16.17 CP16.18 14297.0 14933.0    257.0       4.0      0.30      0.30       1.5       1.5    
+   CP16.18 CP16.19 14933.0 15488.0    260.0       2.0      0.30      0.30       1.5      0.50    
+   CP16.19 CP16.20 15488.0 16381.0    317.0       31.      0.30      0.30       3.0      0.50    
+   CP16.20 CP16.21 16381.0 17531.0    332.0      -20.      0.40      0.40       5.0       3.0    
+   CP16.21 CP16.22 17531.0 18706.0    0.0       90.       1.5       1.5       6.0       1.5    
+   CP16.22 CP16.23 18706.0 19539.0    321.0       5.0      0.30      0.30       1.0       6.0    
+   CP16.23 CP16.24 19539.0 20347.0    343.0       13.      0.30      0.30      0.50       1.0    
+   CP16.24 CP16.25 20347.0 21086.0    344.0      -31.      0.80      0.80       6.0       1.5    
+   CP16.25 CP16.6 21086.0 22751.0    311.0      -65.       1.2      0.30       6.0       6.0    
+endcenterline
+  
+centerline -title "CP16.11_CP16' CP16.15_CP16.15'"
+   date 2006.10.28
+  team "Stéphane Lips"
+  team "Bernard Lips"
+  explo-date 2006.10.28
+  explo-team "Philippe Sénécal"
+  explo-team "Florence Colinet"
+  explo-team "Bernard Lips"
+  explo-team "Josiane Lips"
+  explo-team "Stéphane Lips"
+   units lenght meters
+   units compass grad
+   units clino grad
+   data normal from to length compass clino left right up down
+   CP16.11 CP16'    5.9       320.0       55.       2.0       2.0       0.0       1.5    
+   CP16.11 CP16    10.08       210.0       38.       2.0       2.0       0.0       1.5    
+   CP16.15 CP16.15'    18.       0.0      -100.0       1.0       1.0       18.       0.0    
+endcenterline
+  
+centerline -title "CP16.12_CP16.2.1 CP16.2.17_CP16.2.18"
+   date 2006.10.28
+  team "Stéphane Lips"
+  team "Bernard Lips"
+  explo-date 2006.10.28
+  explo-team "Philippe Sénécal"
+  explo-team "Florence Colinet"
+  explo-team "Bernard Lips"
+  explo-team "Josiane Lips"
+  explo-team "Stéphane Lips"
+   units lenght meters
+   units compass grad
+   units clino grad
+
+   data normal from to length compass clino left right up down
+   CP16.12 CP16.2.1    7.980       0.0      -100.0       1.0       1.0       10.       1.5    
+   CP16.2.1 CP16.2.2    7.730       135.0      -20.      0.60      0.70       8.0       9.0    
+   CP16.2.2 CP16.2.3    9.610       0.0      -100.0       1.5       1.5       16.       1.5    
+   CP16.2.3 CP16.2.4    5.6       123.0      -5.0       0.0       3.0       15.       5.0    
+   CP16.2.4 CP16.2.5    4.410       0.0      -100.0       1.0       1.0       20.       1.5    
+   CP16.2.5 CP16.2.6    2.610       166.0       0.0      0.50       2.0       15.       1.5    
+   CP16.2.6 CP16.2.7    5.660       177.0      -70.       1.0       1.0       15.       8.0    
+   CP16.2.7 CP16.2.8    7.930       0.0      -100.0       1.0       2.0       20.       1.5    
+   CP16.2.8 CP16.2.9    4.140       196.0      -25.       1.0       1.5       8.0       1.5    
+   CP16.2.9 CP16.2.10    11.43       0.0      -100.0       2.0       4.0       15.       1.5    
+   CP16.2.10 CP16.2.11    2.510       26.       0.0       1.0       1.0       3.0       50.    
+   CP16.2.11 CP16.2.12    19.68       0.0      -100.0       3.0       4.0       23.       25.    
+   CP16.2.12 CP16.2.12'    17.95       0.0      -100.0       3.0       4.0       20.       10.    
+   CP16.2.12' CP16.2.13    10.70       0.0      -100.0       2.0       2.0       50.       1.5    
+   CP16.2.13 CP16.2.14    4.190       216.0       14.       1.0       1.0       2.0       4.6    
+   CP16.2.14 CP16.2.15    4.6       0.0      -100.0       1.0       2.0       6.0       4.0    
+   CP16.2.15 CP16.2.16    6.4       0.0      -100.0      0.50      0.50       6.0       4.0    
+   CP16.2.16 CP16.2.17    2.270       0.0      -100.0      0.50      0.50       6.0      0.50    
+   CP16.2.17 CP16.2.18    2.460       363.0       0.0      0.20      0.20       1.0      0.50    
+endcenterline
+  
+centerline -title "Jction CP16 - Rasoir : 20.13_CP16.3.1 CP16.3.7_CP16.2.12'"
+   date 2007.09.15
+  team "Xavier Robert"
+  team "Stéphane Lips"
+  team "Patrice Plantier"
+  explo-date 2007.09.15
+  explo-team "Xavier Robert"
+  explo-team "Stéphane Lips"
+  explo-team "Patrice Plantier"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   calibrate counter 0 0.500
+   units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   20.13 CP16.3.1 5980.0 8688.0    259.0       68.       2.0       2.0       10.       1.5    
+   CP16.3.1 CP16.3.2 8688.0 9020.0    294.0       47.       1.0       1.0       5.0       1.5    
+   CP16.3.2 CP16.3.3 9020.0 9823.0    306.0       6.0      0.40      0.40      0.30      0.30    
+   CP16.3.3 CP16.3.4 9823.0 10488.0    197.0       50.       1.0       1.0       1.5       1.5    
+   CP16.3.4 CP16.3.5 10488.0 11230.0    254.0       45.      0.60      0.60       1.5       1.5    
+   CP16.3.5 CP16.3.6 11230.0 12438.0    269.0       37.      0.80      0.80       3.0      0.50    
+   CP16.3.6 CP16.3.7 12438.0 13565.0    321.0       36.      0.50      0.50       3.0       1.5    
+   CP16.3.7 CP16.2.12' 13565.0 14603.0    333.0       0.0      0.50      0.50       5.0       1.5    
+endcenterline
+
+centerline -title "XR07-10_XR07-10doub XR07-19_CP16.3.3"
+   date 2007.10.27
+  team "Bernard Lips"
+  team "Xavier Robert"
+  explo-date 2007.10.27
+  explo-team "Xavier Robert"
+  explo-team "Bernard Lips"
+  explo-team "Stéphane Lips"
+  explo-team "Philippe Sénécal"
+  explo-team "Josiane Lips"
+  explo-team "Christophe Ohl"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+   XR07-10 XR07-10doub    0.0       0.0       0.0       1.640       1.830       2.6      0.50    
+   XR07-10doub XR07-11    28.07       84.      -60.       2.0       3.0       30.       1.0    
+   XR07-10 XRO7-12    6.5       68.       40.      0.30      0.30       1.0       1.0    
+   XR07-10 XR07-13    1.690       343.0      -14.       1.5       1.0      0.50       0.0    
+   XR07-13 XRO7-14    5.860       249.0       62.      0.50      0.50       0.0       6.0    
+   XR07-13 XR07-15    3.210       289.0      -28.      0.10      0.10      0.10      0.50    
+   XR07-13 XR07-16    4.0       290.0       60.      0.20      0.20       1.0       1.0    
+   XR07-13 XR07-17    2.590       218.0       27.      0.20      0.30      0.30      0.30    
+   XR07-17 XR07-18    3.160       144.0       30.      0.30      0.50       1.0       3.0    
+   XR07-18 XR07-19    7.580       175.0       65.      0.30      0.30       1.0      0.50    
+   XR07-19 CP16.3.3    3.120       167.0       42.       1.5       1.0       2.0      0.50    
+endcenterline
+
+endsurvey

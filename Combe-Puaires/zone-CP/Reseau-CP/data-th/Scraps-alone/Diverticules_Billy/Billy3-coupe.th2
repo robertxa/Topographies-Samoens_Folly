@@ -1,0 +1,149 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 362.25 269.73199999999997
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {173.228 1 1.0} {110.23519999999999 Xa-2015-15} Billy3-coupe.xvi 0 {}
+
+
+
+scrap Billy3-c1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 301.22799999999995 -128.0 0.0 0.0 10.902391199999999 0.0 m]
+
+line border
+  68.5 72.5
+  66.5 64.5 67.5 65.5 61.0 64.75
+  54.5 64.0 55.5 68.25 46.5 65.25
+  37.05 62.1 33.25 60.5 33.25 60.5
+  smooth off
+endline
+
+point 28.25 89.75 label -text "<center>méandre<br>Billy amont"
+
+point 233.0 101.75 continuation -attr Code D -text "Désobstruction à effectuer, courant d'air, vu sur plus d'espace"
+
+point 220.25 124.0 narrow-end
+
+point 225.0 110.25 air-draught -orientation 271.1 -subtype summer -scale s
+
+point 206.0 121.25 dig
+
+point 190.25 122.25 soda-straw
+
+point 184.0 95.25 height -value [+3 m]
+
+point 87.75 125.0 height -value [+10 m]
+
+point 143.25 69.5 label -text "R3"
+
+point 203.25 99.75 label -text "colm."
+
+point 127.5 81.5 blocks
+
+line u:rope
+  120.25 111.75
+  120.25 111.75 135.0 74.5 135.5 83.75
+endline
+
+line u:rope
+  120.25 111.75
+  120.25 111.75 115.25 108.25 115.0 111.0
+  114.95 111.5 97.4 82.36 89.0 96.0
+  87.0 99.25 71.75 38.5 66.0 46.0
+endline
+
+line wall
+  113.5 66.75
+  113.5 66.75 120.5 67.25 124.0 68.25
+  127.5 69.25 132.25 68.75 132.5 71.0
+  132.75 73.25 133.75 75.0 137.75 76.0
+  141.75 77.0 141.0 82.5 149.0 82.75
+  157.0 83.0 160.75 86.0 162.5 86.0
+  164.25 86.0 173.0 82.25 173.0 86.0
+  173.0 89.75 172.75 98.25 174.5 101.0
+  176.25 103.75 175.25 106.5 179.75 106.5
+  184.25 106.5 193.5 106.5 197.0 106.5
+  200.5 106.5 199.25 108.0 203.5 107.5
+  207.75 107.0 212.0 105.25 212.0 105.25
+  smooth off
+endline
+
+line wall
+  27.75 28.0
+  27.75 28.0 57.0 32.5 60.75 33.5
+  64.5 34.5 72.75 31.25 73.25 35.0
+  73.75 38.75 75.25 51.25 75.25 54.25
+  75.25 57.25 80.25 68.5 81.5 69.25
+  82.75 70.0 87.5 80.5 91.5 81.5
+  95.5 82.5 103.75 91.0 110.75 94.25
+  117.75 97.5 117.25 100.25 121.75 99.25
+  126.25 98.25 125.75 97.5 125.75 94.25
+  125.75 91.0 123.66 81.08 120.25 80.0
+  115.5 78.5 113.25 77.5 113.25 77.5
+  smooth off
+endline
+
+line wall
+  212.25 114.75
+  212.25 114.75 205.5 112.5 201.5 112.5
+  197.5 112.5 195.0 114.25 191.25 114.25
+  187.5 114.25 179.75 115.25 177.0 115.25
+  174.25 115.25 171.75 122.25 167.25 122.25
+  162.75 122.25 144.0 117.0 136.0 115.75
+  128.0 114.5 100.25 110.75 91.75 111.25
+  83.25 111.75 67.0 117.5 59.5 116.0
+  52.0 114.5 30.25 107.75 28.25 107.25
+endline
+
+point 203.228 110.23519999999999 station -name Xa-2015-16@Billy3
+
+point 173.228 110.23519999999999 station -name Xa-2015-15@Billy3
+
+point 162.838 90.6152 station -name Xa-2015-17@Billy3
+
+point 124.318 73.1652 station -name Xa-2015-19@Billy3
+
+point 144.888 84.4652 station -name Xa-2015-18@Billy3
+
+point 121.378 108.7252 station -name Xa-2015-22@Billy3
+
+point 92.028 94.9152 station -name Xa-2015-23@Billy3
+
+point 61.498000000000005 45.095200000000006 station -name Xa-2015-24@Billy3
+
+point 28.908 39.9352 station -name Xa-2015-25@Billy3
+
+endscrap
+
+
+
+scrap Billy3-c2 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 301.22799999999995 -128.0 0.0 0.0 10.902391199999999 0.0 m]
+
+point 19.25 48.0 narrow-end
+
+point 0.75 32.5 air-draught -orientation 251.6 -subtype summer
+
+point 12.25 24.75 label -text "colm."
+
+line wall
+  21.5 37.25
+  21.5 37.25 23.75 38.25 27.25 38.5
+  30.75 38.75 29.75 36.5 35.5 38.25
+  41.25 40.0 61.25 49.0 70.25 52.5
+  79.25 56.0 97.74 64.04 103.5 65.0
+  109.5 66.0 113.5 66.75 113.5 66.75
+  smooth off
+endline
+
+line wall
+  113.25 77.5
+  113.25 77.5 101.75 73.0 94.5 69.75
+  87.25 66.5 66.0 59.5 61.75 57.0
+  57.5 54.5 21.25 39.75 21.25 39.75
+  smooth off
+endline
+
+point 102.27800000000002 68.95519999999999 station -name Xa-2015-20@Billy3
+
+point 26.708000000000013 40.40519999999999 station -name Xa-2015-21@Billy3
+
+endscrap
+
+

@@ -1,0 +1,58 @@
+encoding utf-8
+ 
+survey P11 -title "P11"
+  
+centerline -title "Xav2016-0_Xav2016-0bis Xav2016-22_Xav2016-23 Plafonds du P11"
+	explo-date 2016.03.12   
+		explo-team "G.S. Vulcain"
+		explo-team "Xavier Robert"
+		explo-team "Constance Picque"
+		explo-team "Frédéric Delègue"
+		explo-team "Daniel Beleiu"
+	date 2016.03.12
+		team "G.S. Vulcain"
+		team "Frédéric Delègue"
+		team "Xavier Robert"
+		team "Constance Picque"
+		team "Daniel Beleiu"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+
+
+	data normal from to length compass clino left right up down
+	extend right
+	Xav2016-0	Xav2016-0bis	0	0	0	2	3	0.5	0.5	# Au niveau lame séparant la CF principale et la petite CF du palfond
+	Xav2016-0	Xav2016-1	20	115	-15	2	2	1	1	# Distance estimée. Il faut encore rajouter une trentaine de mètres dans la même direction ; bruit sourd de rivière ; il faut équiper pour continuer
+	extend left
+	Xav2016-0	Xav2016-2	10.6	295	-6	0.5	0.5	3.5	20	# Croix sur la paroi avec "2016" ; boue
+	Xav2016-2	Xav2016-3	9.55	231	-1	0.7	0.7	4	2	# boue
+	Xav2016-3	Xav2016-4	8.56	305	-5	0.8	0.8	4	3	
+	Xav2016-4	Xav2016-5	5.86	265	1	0.5	0.5	3	0.5	
+	Xav2016-5	Xav2016-6	5.89	186	20	1	1	0.1	0.5	
+	#extend right
+	Xav2016-4	Xav2016-7	5.08	266	-33	0.3	0.3	0.5	0.5	
+	Xav2016-7	Xav2016-8	6.86	264	-15	0.2	0.2	0.5	1.5	# Courant d'air de l'aval vers l'amont
+	Xav2016-8	Xav2016-9	4.26	288	-16	0.2	0.2	1.5	1.5	
+	Xav2016-9	Xav2016-10	1.6	247	-20	0.1	0.3	1.5	1.5	
+	Xav2016-10	Xav2016-11	2.12	287	-24	0.3	0.4	1.5	2	
+	Xav2016-11	Xav2016-12	3.02	285	-42	0.2	0.2	3	3	# R2
+	Xav2016-12	Xav2016-13	4.03	280	-49	0.2	0.2	4	1.5	# R3
+	Xav2016-13	Xav2016-14	4.02	258	-41	0.2	0.2	7	1.5	# R2
+	Xav2016-14	Xav2016-15	4.26	217	-48	0.8	1	5	1.5	# R3
+	extend right
+	Xav2016-15	Xav2016-16	7.53	144	-24	2	1	6	1.5	
+	Xav2016-16	Xav2016-17	9	132	-7	2	0.5	1	0.5	# vire
+	extend left
+	Xav2016-17	Xav2016-18	10	253	-20	1	1	3	12	# distance estimée ; Condiote forcée plonge dans le méandre ; arrêt sur P12
+	extend right
+	Xav2016-17	Xav2016-19	4.92	124	1	1	1.5	1	0.5	
+	Xav2016-19	Xav2016-20	13.5	139	-21	2.5	1	1	1.5	
+	Xav2016-20	Xav2016-21	11.92	151	-33	3	0.3	1	20	# amarrage
+	Xav2016-21	Xav2016-22	5.77	128	-27	1.5	2	1.7	15	
+	Xav2016-22	Xav2016-23	4.5	163	-35	6	0.5	0.2	11	# nœud du P11
+
+# dev = 163 m
+ endcenterline
+ 
+ endsurvey

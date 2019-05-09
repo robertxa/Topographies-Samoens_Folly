@@ -1,0 +1,220 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -130.0 -177.5 435.5 442.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {204.72699999999998 1 1.0} {220.47699999999998 Xa-2015-0} Billy1-map.xvi 0 {}
+
+
+
+scrap billy2015_1 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 395.716 -128.0 0.0 0.0 13.3023864 0.0 m]
+
+line wall
+  25.0 82.0
+  25.0 82.0 27.5 64.5 34.5 54.5
+  41.5 44.5 52.5 46.5 52.5 39.0
+  52.5 31.5 51.5 20.5 51.5 20.5
+  smooth off
+endline
+
+line wall
+  163.5 234.0
+  163.5 234.0 166.5 213.5 165.0 207.5
+  163.5 201.5 156.5 195.5 156.5 195.5
+  smooth off
+endline
+
+line wall
+  240.0 236.0
+  240.0 236.0 236.5 232.5 229.5 231.0
+  222.5 229.5 207.5 226.5 202.5 226.0
+  197.5 225.5 188.0 221.0 183.5 223.5
+  179.0 226.0 179.0 234.5 179.0 234.5
+  smooth off
+endline
+
+line arrow
+  59.5 11.0
+  53.5 -29.5
+endline
+
+line arrow
+  246.5 242.5
+  292.0 269.0
+endline
+
+line arrow
+  168.0 240.5
+  168.0 240.5 164.0 268.0 174.0 272.0
+  184.0 276.0 183.0 273.0 187.0 275.0
+  smooth off
+endline
+
+line arrow
+  168.0 240.5
+  158.5 295.0
+endline
+
+line label -text "méandre Billy amont"
+  34.5 97.5
+  34.5 97.5 56.5 123.5 75.0 127.0
+  93.5 130.5 119.5 138.5 138.0 149.5
+  156.5 160.5 168.0 190.0 169.5 193.5
+  smooth off
+endline
+
+line arrow
+  75.5 55.0
+  50.0 52.5
+endline
+
+line border
+  73.5 33.0
+  73.5 33.0 58.0 45.0 53.5 60.5
+  49.0 76.0 51.5 82.0 51.5 82.0
+  smooth off
+endline
+
+line border
+  76.5 41.5
+  76.5 41.5 66.0 56.0 66.5 64.5
+  67.0 73.0 67.5 79.5 67.5 79.5
+  smooth off
+endline
+
+point 59.0 25.0 water-flow -orientation 177.8
+
+point 34.0 89.5 water-flow -orientation 174.9
+
+point 235.0 212.0 water-flow -orientation 142.0
+
+point 172.0 220.5 water-flow -orientation 182.4
+
+point 305.0 280.0 label -text "v. méandre Billy amont (P20 remontant)"
+
+point 157.5 312.0 label -text "v. méandre Billy amont (etr. désob.)"
+
+point 55.5 -47.0 label -text "v. méandre Billy aval et CP14"
+
+line label -text "boucle du méandre"
+  118.0 19.0
+  118.0 19.0 141.0 30.5 170.5 47.0
+  200.0 63.5 250.0 106.0 256.0 117.0
+  262.0 128.0 276.5 177.5 278.5 187.5
+  smooth off
+endline
+
+point 208.0 187.5 height -value [+5 m]
+
+point 271.5 224.0 height -value [+2 m]
+
+point 148.5 70.5 helictite
+
+point 184.0 92.0 helictite
+
+point 145.5 118.5 air-draught -orientation 232.1 -subtype summer
+
+point 254.5 163.0 helictite
+
+point 261.5 210.5 helictite
+
+line pit
+  258.0 230.0
+  258.0 230.0 246.5 230.5 244.0 234.0
+  241.5 237.5 236.5 235.0 238.5 242.0
+  smooth off
+endline
+
+line pit
+  188.0 199.0
+  188.0 199.0 182.0 210.5 182.5 217.0
+  183.0 223.5 185.0 228.5 188.0 230.5
+  smooth off
+endline
+
+line rock-edge
+  215.5 140.5
+  210.5 137.0
+endline
+
+line rock-edge
+  211.0 143.5
+  215.5 140.5
+  216.5 146.0
+endline
+
+line rock-border -close on
+  216.5 146.0
+  221.0 138.0
+  210.5 137.0
+  211.0 143.5
+  216.5 146.0
+endline
+
+line pit
+  229.0 237.0
+  229.0 237.0 227.0 236.0 224.0 224.5
+  221.0 213.0 219.5 213.0 219.5 205.0
+  219.5 197.0 219.5 189.5 219.5 189.5
+  smooth off
+endline
+
+line pit
+  251.5 223.0
+  251.5 223.0 242.5 224.5 234.0 227.0
+  225.5 229.5 226.5 232.5 221.5 237.0
+  smooth off
+endline
+
+line wall
+  67.5 19.0
+  67.5 19.0 61.5 47.0 70.0 47.0
+  78.5 47.0 89.0 46.5 96.0 50.0
+  103.0 53.5 111.0 61.5 123.5 68.0
+  136.0 74.5 187.5 118.0 198.5 122.5
+  226.09 133.79 206.5 125.0 206.5 125.0
+  smooth off
+  206.5 125.0 226.0 131.5 230.5 137.0
+  235.0 142.5 253.0 194.5 252.5 201.5
+  252.0 208.5 244.5 224.5 244.5 224.5
+  smooth off
+  246.5 231.0
+endline
+
+line wall
+  178.0 194.0
+  178.0 194.0 179.0 202.0 184.0 205.0
+  189.0 208.0 198.5 216.5 204.0 215.0
+  209.5 213.5 212.5 207.0 219.5 205.0
+  226.5 203.0 237.0 204.0 235.0 199.0
+  233.0 194.0 221.5 154.5 216.0 150.5
+  210.5 146.5 198.0 142.0 188.5 136.5
+  179.0 131.0 149.0 103.0 137.5 94.0
+  126.0 85.0 99.0 57.5 91.5 60.0
+  84.0 62.5 65.5 68.0 61.5 67.0
+  57.5 66.0 46.0 61.0 43.0 66.0
+  40.0 71.0 40.0 81.5 40.0 81.5
+  smooth off
+endline
+
+point 53.18699999999998 51.00699999999999 station -name Xa-2015-9@Billy1
+
+point 61.04699999999998 58.387 station -name Xa-2015-8@Billy1
+
+point 96.78699999999998 55.577 station -name Xa-2015-7@Billy1
+
+point 121.72699999999999 72.517 station -name Xa-2015-6@Billy1
+
+point 195.297 131.457 station -name Xa-2015-5@Billy1
+
+point 226.18699999999998 139.90699999999998 station -name Xa-2015-4@Billy1
+
+point 245.367 202.267 station -name Xa-2015-3@Billy1
+
+point 232.267 220.90699999999998 station -name Xa-2015-2@Billy1
+
+point 204.72699999999998 220.47699999999998 station -name Xa-2015-0bis@Billy1
+
+point 179.68699999999998 211.457 station -name Xa-2015-1@Billy1
+
+endscrap
+
+

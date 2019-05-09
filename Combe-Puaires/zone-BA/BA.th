@@ -1,0 +1,19 @@
+encoding  utf-8
+ 
+ survey zone_BA -title "BA"
+# Pour importer les différentes données de différents fichiers topos : 
+   input trousBA.th
+   
+   input BA2/BA2.th
+   input BA2/BA2.th2
+   
+   input BA4/BA4.th
+   input BA4/BA4.th2
+   
+   input BA06/BA06.th
+   input BA06/BA06.th2
+   
+   input BA09/BA09.th
+   input BA09/BA09.th2
+
+ endsurvey

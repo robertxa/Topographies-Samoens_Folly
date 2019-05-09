@@ -1,0 +1,94 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -170.0 -158.5 322.0 283.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {39.3652 1 1.0} {102.3621 C51} C51-coupe.xvi 0 {}
+
+
+
+scrap C51c -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+
+point -39.5 28.0 entrance -orientation 144.4
+
+point 106.0 -28.0 label -text "etr."
+
+point 159.5 -14.5 air-draught -orientation 296.9 -subtype summer
+
+point 147.0 -24.0 continuation -attr Code D -text "Fissure à désobstruer"
+
+point -29.5 13.5 breakdown-choke -orientation 121.2
+
+point 191.5 36.5 narrow-end
+
+point 37.0 153.0 label -text "<bf>C51" -scale xl
+
+point 38.5 127.5 entrance -orientation 181.5
+
+line wall -subtype invisible
+  73.5 99.5
+  73.5 99.5 51.5 108.5 42.0 108.5
+  32.5 108.5 7.5 100.5 7.5 100.5
+  smooth off
+endline
+
+line wall
+  -19.5 10.0
+  -19.5 10.0 -3.0 0.5 5.0 4.0
+  13.0 7.5 25.5 8.5 25.5 15.0
+  25.5 21.5 28.5 36.5 25.5 48.5
+  22.5 60.5 29.5 79.5 28.0 87.0
+  26.5 94.5 28.0 100.5 22.5 100.5
+  17.0 100.5 7.5 100.5 7.5 100.5
+  smooth off
+endline
+
+line wall
+  134.5 -18.0
+  134.5 -18.0 126.0 -12.0 119.5 -10.0
+  113.0 -8.0 106.0 -3.0 99.5 -0.5
+endline
+
+point 112.0 12.5 dig
+
+line wall -subtype debris
+  99.5 -0.5
+  93.0 2.0 77.5 11.0 66.0 11.0
+  54.5 11.0 44.5 12.5 41.0 11.0
+  37.5 9.5 32.5 4.5 25.0 0.5
+endline
+
+line wall
+  25.0 0.5
+  17.5 -3.5 11.5 -4.5 3.5 -4.5
+  -4.5 -4.5 -15.0 -1.0 -15.0 -1.0
+  smooth off
+  -23.0 5.0
+endline
+
+line wall
+  180.0 30.5
+  180.0 30.5 165.5 33.5 165.5 26.5
+  165.5 19.5 162.0 17.5 154.5 13.5
+  147.0 9.5 139.0 5.5 132.0 3.5
+  125.0 1.5 114.5 -2.0 122.0 -6.5
+  129.5 -11.0 137.5 -15.0 137.5 -15.0
+  smooth off
+endline
+
+line wall
+  73.5 99.5
+  73.5 99.5 52.5 107.0 52.0 101.0
+  51.5 95.0 48.5 52.0 60.5 48.5
+  72.5 45.0 118.0 39.0 130.5 39.0
+  143.0 39.0 175.5 37.0 175.5 37.0
+  smooth off
+endline
+
+point 157.48520000000002 23.622100000000003 station -name 2@C51
+
+point 39.3652 23.622100000000003 station -name 1@C51
+
+point 39.3652 102.3621 station -name 0double@C51
+
+endscrap
+
+

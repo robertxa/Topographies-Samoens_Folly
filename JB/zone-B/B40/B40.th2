@@ -1,0 +1,66 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 237.25 196.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {57.623599999999996 1 1.0} {47.2577 B40} B40-map.xvi 0 {}
+
+
+
+scrap B40-entree -projection plan -author 2014 "Xavier Robert"-copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 43.0 50.0 breakdown-choke -orientation 295.1
+
+point 31.25 51.25 continuation -attr Code D -text "Trémie à désobstruer, courant d'air"
+
+point 108.0 31.75 continuation -attr Code D -text "Trémie à désobstruer, courant d'air"
+
+point 51.75 26.0 label -text "<bf>B40" -scale xl
+
+point 54.0 35.75 entrance -orientation 9.5
+
+point 56.75 65.75 air-draught -orientation 175.3 -subtype summer
+
+point 67.5 58.5 label -text "R3"
+
+point 82.0 67.0 label -text "<it> Plan"
+
+point 79.75 37.75 breakdown-choke -orientation 202.8
+
+point 88.75 43.5 breakdown-choke -orientation 13.6
+
+point 76.0 45.75 breakdown-choke -orientation 26.3
+
+point 97.5 35.0 breakdown-choke -orientation 111.9
+
+line overhang -close on -reverse on
+  59.0 50.0
+  59.0 50.0 62.0 48.25 61.25 46.75
+  60.5 45.25 57.5 44.25 55.5 45.5
+  53.5 46.75 51.5 49.0 53.75 49.5
+  56.0 50.0 59.0 50.0 59.0 50.0
+  smooth off
+endline
+
+line wall
+  99.5 43.0
+  99.5 43.0 95.0 44.75 90.25 45.25
+  85.5 45.75 77.25 49.5 70.0 49.5
+  62.75 49.5 60.0 52.0 56.25 52.25
+  52.5 52.5 46.5 53.0 46.5 53.0
+  smooth off
+endline
+
+line wall
+  46.25 45.75
+  46.25 45.75 54.25 44.0 57.0 43.25
+  59.75 42.5 67.5 39.75 74.75 36.5
+  82.0 33.25 90.75 28.5 92.5 28.5
+  smooth off
+endline
+
+point 93.8636 36.137699999999995 station -name Xa2014-1@B40
+
+point 57.623599999999996 47.2577 station -name Xa2014-0b@B40
+
+endscrap
+
+

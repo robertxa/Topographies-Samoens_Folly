@@ -1,0 +1,197 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -148.75 -129.0 382.75 324.8505
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {236.218 1 1.0} {181.106 0} CH20-coupe.xvi 0 {}
+
+
+
+scrap CH20-coupe1 -projection extended -author 2005 "Xavier Robert" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+point -4.25 34.0 label -text "-34 m"
+
+point 50.25 39.25 altitude
+
+point 253.5 181.75 altitude
+
+point 213.5 195.5 label -text "CH20" -scale xl
+
+point 137.5 135.25 label -text "P10"
+
+point 129.0 59.75 label -text "R6"
+
+point 132.75 80.75 label -text "R4"
+
+point -19.5 50.0 label -text "Colm."
+
+point 43.75 32.5 label -text "etr."
+
+point 182.0 142.5 label -text "etr."
+
+point 238.5 195.5 air-draught -orientation 33.2 -scale xs
+
+point 229.0 186.0 entrance -orientation 215.8
+
+point 45.25 56.25 dig
+
+point 169.25 159.75 dig
+
+line wall -subtype unsurveyed
+  -3.5 41.25
+  -3.5 41.25 -2.25 41.25 9.0 41.25
+  20.25 41.25 24.5 41.25 29.5 41.25
+  34.5 41.25 42.0 44.5 42.0 44.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  41.5 50.0
+  41.5 50.0 43.0 66.25 31.0 68.0
+  19.0 69.75 10.5 67.75 5.25 67.25
+  0.0 66.75 1.0 65.25 0.75 61.75
+  0.5 58.25 0.75 49.25 -1.0 47.5
+  -2.75 45.75 -4.25 43.75 -4.25 43.75
+  smooth off
+endline
+
+point 236.25 179.25 blocks
+
+line wall -close on -reverse on
+  105.75 70.5
+  101.75 69.25 98.25 64.25 94.25 65.75
+  90.25 67.25 87.5 75.0 86.75 72.0
+  86.0 69.0 76.5 58.5 80.0 57.75
+  83.5 57.0 105.0 54.5 106.5 59.0
+  108.0 63.5 109.75 71.75 105.75 70.5
+endline
+
+line wall -subtype presumed
+  104.5 90.25
+  104.5 90.25 97.0 77.5 94.75 78.5
+  92.5 79.5 91.5 86.0 86.75 84.0
+  82.0 82.0 77.25 73.0 77.25 73.0
+  smooth off
+endline
+
+line wall -subtype pebbles
+  210.5 159.25
+  210.5 159.25 226.25 171.0 231.5 174.25
+  236.75 177.5 239.75 175.75 240.0 177.25
+  240.25 178.75 238.5 181.5 241.25 181.75
+  smooth off
+endline
+
+line wall -subtype pebbles
+  209.75 122.75
+  208.5 127.0 197.0 142.5 194.75 142.75
+  smooth off
+endline
+
+line wall
+  196.75 122.5
+  209.75 122.75
+endline
+
+line wall
+  193.25 143.0
+  180.5 124.5
+  180.5 124.5 172.5 121.25 173.0 123.5
+  173.5 125.75 170.75 147.25 173.25 147.25
+  175.75 147.25 184.75 152.25 189.25 153.0
+  193.75 153.75 207.0 158.25 210.5 159.25
+  smooth off
+endline
+
+point 111.75 104.75 rope
+
+point 144.0 158.5 rope
+
+line u:rope
+  89.75 78.5
+  89.75 78.5 81.5 68.25 81.5 76.5
+  81.5 77.06 73.25 55.5 73.25 55.5
+  smooth off
+endline
+
+line u:rope
+  128.5 99.0
+  128.5 99.0 117.0 82.25 117.5 91.0
+  118.0 99.75 113.75 55.25 107.25 76.5
+endline
+
+line u:rope
+  174.75 150.5
+  174.75 150.5 166.25 141.0 166.25 146.5
+  166.25 152.0 166.5 122.75 166.5 122.75
+  smooth off
+endline
+
+line wall
+  42.0 44.5
+  42.0 44.5 58.25 47.5 66.25 49.0
+  74.25 50.5 71.25 52.25 77.0 53.0
+  82.75 53.75 103.5 50.25 106.75 52.0
+  110.0 53.75 112.0 50.25 115.0 51.75
+  118.0 53.25 115.16 73.91 119.75 75.25
+  125.75 77.0 120.75 85.0 123.75 89.0
+  126.75 93.0 131.75 101.5 136.0 102.75
+  140.25 104.0 146.25 109.5 152.75 109.5
+  159.25 109.5 163.5 121.5 171.5 121.0
+  179.5 120.5 196.75 122.5 196.75 122.5
+  smooth off
+endline
+
+line wall
+  77.25 73.0
+  72.75 67.5 71.25 55.5 65.5 55.0
+  59.75 54.5 45.0 49.5 41.5 50.0
+  smooth off
+endline
+
+line wall
+  198.5 180.0
+  198.5 180.0 210.25 182.25 210.25 180.0
+  210.25 177.75 213.75 173.0 210.25 171.75
+  206.75 170.5 192.5 164.25 189.5 162.75
+  186.5 161.25 172.0 154.25 171.5 152.75
+  171.0 151.25 172.25 149.5 169.5 149.5
+  166.75 149.5 150.75 153.5 150.25 148.75
+  149.75 144.0 155.75 120.25 152.25 119.25
+  148.75 118.25 141.75 114.25 135.0 109.5
+  128.25 104.75 124.75 95.25 120.0 95.0
+  115.25 94.75 107.75 92.25 104.5 90.25
+  smooth off
+endline
+
+point 42.278 45.986 station -name 2005.14@CH20
+
+point 66.168 51.726 station -name 2005.13@CH20
+
+point 77.358 57.426 station -name 2005.12@CH20
+
+point 86.538 76.946 station -name 2005.11@CH20
+
+point 93.948 69.996 station -name 2005.10@CH20
+
+point 103.738 74.606 station -name 2005.9@CH20
+
+point 106.508 55.696 station -name 2005.8@CH20
+
+point 117.238 76.746 station -name 2005.7@CH20
+
+point 119.868 90.546 station -name 2005.6@CH20
+
+point 135.178 105.856 station -name 2005.5@CH20
+
+point 152.238 111.696 station -name 2005.4@CH20
+
+point 171.238 148.986 station -name 2005.3@CH20
+
+point 189.688 155.966 station -name 2005.2@CH20
+
+point 210.608 165.406 station -name 2005.1@CH20
+
+point 236.218 181.106 station -name 0double@CH20
+
+endscrap
+
+

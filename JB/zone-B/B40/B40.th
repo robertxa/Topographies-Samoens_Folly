@@ -1,0 +1,29 @@
+encoding utf-8
+
+survey B40 -title "B40" -entrance "B40"
+ 
+ centerline -title "B40 B40_Xa2014-0b B40_Xa2014-1"
+ cs lat-long 
+ fix B40 46.10191  6.78944  2111   # Err = 3 m
+
+   date 2014.08.19
+  team "Xavier Robert"
+  team "Stéphane Lips"
+  explo-date 2014.08.19
+    explo-team "Stéphane Lips"
+    explo-team "Xavier Robert"
+    explo-team "Vincent Sordel"
+    explo-team "Guillaume Cerdan"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+extend right
+
+B40   Xa2014-0b   0.00    0.00    0.00   0.5   0.5   0   5	# Entrée
+B40   Xa2014-1   8   104.00   -53.00   1   1   5   1 # colmatage bloc, courant aspirant fort
+
+
+ endcenterline
+ endsurvey

@@ -1,0 +1,122 @@
+encoding  utf-8
+  
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2
+  
+ 
+source GoureToiDeLa-tot.th 
+#source GoureToiDeLa.th
+#source GoureToiDeLa.th2
+#source GoureToiDeLa2015.th2 
+#source GoureToiDeLa2015b.th2
+#source GoureToiDeLa2015coupe.th2
+
+# Add config file
+input ../../../../../config.thc 
+
+layout xviexport
+	scale 1 1000
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+  
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl 
+	copy langue-fr
+	  
+	doc-title "GoureToiDeLa"
+	cs UTM32
+	base-scale 1 750
+	 scale 1 500
+	scale-bar 50 m
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "Réseau GoureToiDeLa, Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	#legend-width 14 cm
+	map-header 32 30 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+ 
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain, EPIA, Association Spéléologique Doubs Central (ASDC)}
+	    \newtoks\synth \synth={Xavier Robert}
+	endcode  
+  
+endlayout
+ 
+ 
+ 
+layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe 
+	copy langue-fr
+		
+	doc-title "Plafonds de la Gourance"
+	cs UTM32
+	base-scale 1 1300
+	scale 1 750
+	scale-bar 100 m
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "Réseau GoureToiDeLa, coupe développée, Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 17 cm
+	#map-header 60 15 w
+	#map-header 00 80 w
+	map-header 57 0 sw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off   
+  
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+	    \newtoks\club \club={Groupe Spéléologique Vulcain, EPIA, Association Spéléologique Doubs Central (ASDC)}
+	    \newtoks\synth \synth={Xavier Robert}
+	endcode  
+
+  
+endlayout
+
+select GoureToiDeLa-Tot
+ export map -fmt xvi -layout xviexport -o th2/GoureToiDeLa-map2019.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o th2/GoureToiDeLa-coupe2019.xvi
+  
+ export map -o Outputs/GoureToiDeLa-plan2019.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/GoureToiDeLa-coupe2019.pdf
+ export model -o Outputs/GoureToiDeLa.lox

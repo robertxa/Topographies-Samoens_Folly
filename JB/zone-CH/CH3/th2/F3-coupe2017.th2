@@ -1,0 +1,222 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -285.4789999999999 -129.0 1072.8838 797.2907
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {635.806 1 1.0} {387.718 0} F3-coupe2017.xvi 0 {}
+
+
+
+scrap CH3-2017-c1 -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1072.8824 -128.0 0.0 0.0 30.502412959999997 0.0 m]
+
+point 131.75 492.5 continuation -attr Code D -text "Méandre étroit, pas de courantd'air"
+
+point 212.75 532.25 dig
+
+point 164.25 519.25 dig
+
+point 175.75 548.0 water-flow -orientation 210.1
+
+line rock-edge
+  155.75 529.25
+  157.25 533.75
+  162.5 533.75
+  162.5 529.5
+endline
+
+line rock-edge
+  145.5 532.5
+  139.75 529.25
+  136.5 531.75
+endline
+
+line rock-edge
+  140.25 522.0
+  142.25 524.0
+  146.0 522.75
+endline
+
+line rock-edge
+  131.0 519.5
+  132.0 522.75
+  135.5 522.75
+  135.25 520.5
+endline
+
+point 85.75 500.0 height -value [-5 m]
+
+line rock-edge
+  117.75 517.0
+  120.5 522.0
+  125.0 522.0
+  128.0 519.0
+endline
+
+line u:rope
+  113.0 521.25
+  113.0 521.25 105.0 516.5 105.0 520.75
+  105.0 525.0 105.25 499.0 105.25 499.0
+  smooth off
+endline
+
+line wall
+  125.5 495.25
+  125.5 495.25 115.5 493.5 112.25 495.75
+  109.0 498.0 113.75 495.75 111.75 502.5
+  109.75 509.25 107.5 515.0 109.0 515.0
+  110.5 515.0 116.5 517.25 121.5 518.0
+  126.5 518.75 129.75 518.0 135.25 520.5
+  140.75 523.0 146.0 519.25 146.0 522.75
+  146.0 526.25 144.5 527.75 149.25 528.25
+  154.0 528.75 165.5 530.0 173.5 530.0
+  181.5 530.0 186.5 531.5 191.25 532.5
+  196.0 533.5 199.5 530.5 199.5 532.75
+  199.5 535.0 200.0 539.75 201.75 540.25
+  203.5 540.75 204.0 540.75 207.0 542.0
+  210.0 543.25 216.0 547.0 216.0 547.0
+  smooth off
+endline
+
+line wall
+  92.0 513.25
+  92.0 513.25 95.75 513.25 97.75 512.25
+  99.75 511.25 94.25 497.25 97.75 497.25
+  101.25 497.25 108.25 492.5 112.0 492.5
+  115.75 492.5 124.5 491.5 124.5 491.5
+  smooth off
+endline
+
+line wall
+  205.25 552.75
+  205.25 552.75 201.25 551.75 199.5 550.75
+  197.75 549.75 201.5 545.0 197.25 544.5
+  193.0 544.0 190.5 542.5 185.25 542.5
+  180.0 542.5 169.5 541.5 163.5 538.75
+  157.5 536.0 147.5 533.25 142.0 532.0
+  136.5 530.75 125.5 534.5 121.5 533.25
+  117.5 532.0 116.75 524.25 111.5 523.25
+  106.25 522.25 94.75 524.5 94.75 524.5
+  smooth off
+endline
+
+point 100.976 517.2280000000001 station -name 2017-JR-10@F3
+
+point 114.19599999999997 519.328 station -name 2017-JR-9@F3
+
+point 122.63599999999997 526.408 station -name 2017-JR-8@F3
+
+point 135.20599999999996 525.538 station -name 2017-JR-7@F3
+
+point 147.61599999999999 530.548 station -name 2017-JR-6@F3
+
+point 164.87599999999998 532.058 station -name 2017-JR-5@F3
+
+point 180.046 537.578 station -name 2017-JR-4@F3
+
+point 185.156 535.518 station -name 2017-JR-3@F3
+
+point 197.26599999999996 538.988 station -name 2017-JR-2@F3
+
+point 205.426 544.488 station -name 2017-JR-1@F3
+
+endscrap
+
+
+
+scrap CH3-2017c2 -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1072.8824 -128.0 0.0 0.0 30.502412959999997 0.0 m]
+
+line wall
+  12.25 546.5
+  12.25 546.5 0.5 547.75 0.5 546.25
+  0.5 544.75 -2.0 542.0 4.5 542.0
+  11.0 542.0 13.5 540.5 17.75 540.0
+  22.0 539.5 23.5 537.75 23.5 537.75
+  smooth off
+endline
+
+line wall
+  -23.75 574.25
+  -23.75 574.25 4.85 575.89 3.25 573.75
+  -2.75 565.75 1.5 562.0 2.75 554.75
+  4.0 547.5 8.0 549.25 12.25 546.5
+  smooth off
+endline
+
+point 49.5 529.25 blocks -scale s
+
+line wall
+  23.5 537.75
+  27.75 535.0 33.0 528.25 37.5 526.75
+  42.0 525.25 52.0 527.0 57.25 526.25
+  62.5 525.5 68.0 522.0 74.0 522.0
+  80.0 522.0 89.75 521.0 91.25 518.5
+  92.75 516.0 92.0 513.25 92.0 513.25
+  smooth off
+endline
+
+line wall
+  -1.25 584.25
+  -1.25 584.25 0.0 579.5 -6.0 579.25
+  -12.0 579.0 -22.75 579.0 -22.75 579.0
+  smooth off
+endline
+
+line wall
+  65.5 536.0
+  65.5 536.0 67.0 529.25 62.25 530.75
+  57.5 532.25 47.75 532.5 43.5 533.0
+  39.25 533.5 37.5 540.25 37.25 544.75
+  37.0 549.25 25.75 578.75 21.5 580.25
+  17.25 581.75 3.75 583.75 -1.25 584.25
+  smooth off
+endline
+
+point 100.97600000000006 497.548 station -name 2017-JR-11bis@F3
+
+point -1.25 584.25 altitude -align top
+
+point -10.75 550.25 height -value [+10 m]
+
+point 58.75 544.0 continuation -attr Code D -text "Etroiture en sommet de puits à tirer"
+
+point -24.25 589.5 continuation -attr Code D -text "Etroiture en sommet de puits à tirer"
+
+line u:rope
+  -4.25 578.25
+  -4.25 578.25 3.0 576.75 3.25 581.5
+  3.5 586.25 28.25 531.0 27.25 547.25
+  27.17 548.59 30.5 534.5 30.5 534.5
+  smooth off
+endline
+
+point -40.25 576.5 air-draught -orientation 265.7 -subtype winter -scale xs
+
+point 68.25 544.75 air-draught -orientation 0.0 -subtype winter
+
+point -24.25 565.25 label -text "etr."
+
+point 82.75 539.0 label -text "etr."
+
+line wall
+  94.75 524.5
+  94.75 524.5 90.0 528.25 85.25 528.25
+  80.5 528.25 73.0 528.0 72.0 529.75
+  71.0 531.5 71.0 535.75 71.0 535.75
+  smooth off
+endline
+
+point 14.986000000000047 578.868 station -name 2017-JR-18@F3
+
+point 24.366000000000042 543.878 station -name 2017-JR-17@F3
+
+point 39.11600000000004 529.118 station -name 2017-JR-16@F3
+
+point 56.83600000000001 529.428 station -name 2017-JR-15@F3
+
+point 72.87600000000003 525.428 station -name 2017-JR-14@F3
+
+point 80.70600000000002 524.6080000000001 station -name 2017-JR-13@F3
+
+point 91.62600000000003 523.078 station -name 2017-JR-12@F3
+
+endscrap
+
+

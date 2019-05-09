@@ -1,0 +1,9 @@
+encoding  utf-8
+ 
+ survey zone_F -title "Zone F"
+# Pour importer les différentes données de différents fichiers topos : 
+ input trousF
+ input trousF.th2
+#   input F3/F3
+#    input F3/F3.th2       
+ endsurvey

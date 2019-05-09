@@ -1,0 +1,42 @@
+encoding utf-8
+
+survey T59 -title "T59" -entrance "T59"
+ 
+centerline
+ cs lat-long 
+ fix T59 46.108961  6.795255  2149
+
+   date 2014.08.04
+  team "Stéphane Lips"
+  team "Clément Baudy"
+  explo-date 2014.08.04
+    explo-team "Stéphane Lips"
+    explo-team "Clément Baudy"
+  explo-date 2002.10.12
+    explo-team "Christophe Ferry"
+    explo-team "Patrice Plantier"
+    explo-team "Xavier Robert"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+extend right
+
+0   0b   0.00    0.00    0.00   0.10   0.10   0.40   0.40
+0   1   2.83   94.00   22.00   0.30   0.30   0.50   0.50
+1   2   2.49   90.00   16.00   1.00   1.00   1.50   0.50
+extend left
+2   3   2.85  238.00   56.00   0.40   0.40   1.00   0.20
+extend right
+3   4   3.90   86.00   31.00   0.40   0.40   0.80   0.80
+4   5   2.49  114.00    0.00   1.00   1.00  30.00   1.50
+5   6   15.11    0.00   90.00   2.00   2.00   1.50  15.00
+6   7   3.27  158.00   52.00   1.00   3.00  20.00   1.50
+7   8   15.26  182.00   83.00   0.80   0.80   3.00   1.50
+8   9   3.18   66.00   72.00   0.30   0.30   0.30   3.00
+9   10   2.93  140.00   37.00   0.60   0.60   2.00   0.50
+10   T59   3.97  192.00   49.00   0.50   0.50   0.00   0.00 # Entrée
+
+ endcenterline
+ endsurvey

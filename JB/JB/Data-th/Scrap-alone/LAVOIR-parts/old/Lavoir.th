@@ -1,0 +1,345 @@
+encoding utf-8
+
+ survey Lavoir -title "Lavoir"
+    
+ centerline -title "Lavoir 2012-xa-0_2012-xa-0double 2012-xa-41_2012-xa-10"
+   date 2012.01.14
+#   declination 0.0000  degrees
+  team "G.S. Vulcain"
+  team "Xavier Robert"
+  team "Arnaud Malard"
+  team "SC Epia"
+  explo-date 1977.08.06
+  explo-date 1977.08.07
+  explo-date 1977.08.09
+  explo-date 1977.08.10
+  explo-date 1977.08.11
+  explo-team "G.S. Vulcain"
+  explo-team "Bernard Lips"
+  explo-team "Josiane Lips"
+  explo-team "Jean-Luc Dinard"
+  explo-team "Christian Rigaldie"
+  explo-team "Bernard Séroul"
+  explo-team "Philippe Lavabre"
+  explo-team "Pierre Gagneux" # GP ??
+  explo-team "Jean-Luc Thevenin"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   extend right
+
+#Point depart	Point arrivee	L	A	P	G	D	H	B	Rem
+	2012-xa-0	2012-xa-0double	0	0	0	1.3	1.7	2.2	1.4	
+	2012-xa-0double	2012-xa-1	6.9	334	4	0.5	0.5	0.3	0.2	
+	2012-xa-1	2012-xa-2	4	333	9	0.5	0.7	0.3	0.3	
+	2012-xa-2	2012-xa-3	2.4	350	20	0.7	0.7	3.5	0.5	
+	2012-xa-3	2012-xa-4	3.5	0	90	0.3	0.3	0.5	3.5	#E4 a faire, depart CF au sommet
+	2012-xa-0	2012-xa-5	6.2	36	-44	1.2	2.6	1.7	2.8	#Sommet du meandre
+	2012-xa-5	2012-xa-6	2.9	9	18	1.4	0.6	1.4	8.4	
+	2012-xa-6	2012-xa-7	1.87	78	5	3.6	0	0.9	35	#Spit sommet Puits du Racourcit
+	2012-xa-7	2012-xa-8	32.2	0	-90	4.8	1.3	3.5	2.1	#Base corde, bloc triangulaire
+	2012-xa-7	2012-xa-9	8.5	40	16	2.2	0.6	3.3	2	
+	2012-xa-9	2012-xa-10	4.57	89	-5	1.7	1.9	0.9	0.5	
+	2012-xa-10	2012-xa-11	8.3	101	-2	1	2	0.8	1.2	
+	2012-xa-11	2012-xa-12	6.1	84	0	0.9	1.4	1.3	0.3	
+	2012-xa-12	2012-xa-13	4.91	92	10	2.5	5.5	2.6	1.6	#Sommet puits
+	2012-xa-13	2012-xa-14	5.57	20	46	1	4.5	10	3.9	#Puits
+	
+	extend left
+	2012-xa-14	2012-xa-15	5.1	25	39	0.5	1	1	1	#Souffle en hiver
+	
+	extend right
+	2012-xa-14	2012-xa-16	16	60	20	2	3	10	40	#suite en CF 
+	
+	extend right
+	2012-xa-17bis	2012-xa-17	0	0	0	0.2	0.2	0	0.4	#Souffle en hiver, imp., glaise
+	2012-xa-17	2012-xa-18	3.93	166	-70	0.2	0.2	0.2	0.2	#glaise
+	2012-xa-18	2012-xa-19	2.8	70	-26	1.3	1.8	1.3	0.7	
+	2012-xa-19	2012-xa-20	3.2	15	-6	0	4.4	0.7	1
+	
+	extend right	
+	2012-xa-20	2012-xa-21	4.85	21	15	1	0.2	0.2	0.2	
+	2012-xa-21	2012-xa-22	2.5	71	16	0.4	0.2	0.2	0.2	#Désob
+	2012-xa-22	2012-xa-23	5.85	35	17	0.5	0.2	0.2	0.1	
+	2012-xa-23	2012-xa-24	3.45	80	12	0.3	0.2	0.2	0.2	
+	2012-xa-24	2012-xa-25	2.9	1	-5	1.9	1	1.2	0.5	#Main courante
+	2012-xa-25	2012-xa-26	3.3	305	-50	0	1.3	1.7	20	#Puits frac 1
+	2012-xa-26	2012-xa-27	14	0	-90	1	0	15	4	#Puits frac 2
+	
+	extend right
+	2012-xa-28bis	2012-xa-28	0	0	0	0.7	0	9	1.6	#Arrivée Lavoir Sec dans Excentriques
+	2012-xa-28	2012-xa-29	4.5	104	18	0	1.4	6.8	2.2	
+	2012-xa-29	2012-xa-30	3.6	194	1	1.4	0	5.8	1.6	
+	2012-xa-30	2012-xa-31	3.2	108	5	1.1	0	5.4	1.6	
+	2012-xa-31	2012-xa-32	9.6	52	6	1.7	0.4	21	1.5	
+	2012-xa-32	2012-xa-33	8.2	342	18	3.1	0	21	1.6	#Base Puits du B19
+	2012-xa-33	2012-xa-34	3.2	309	-13	0	1.3	15	3	#Depart Lavoir historique en puits non topographié
+	2012-xa-34	2012-xa-35	17.8	340	69	4.5	1.9	14	25	#Frac spit
+	2012-xa-35	2012-xa-36	8	316	81	1	0	1.7	10	#frac AN
+	2012-xa-36	2012-xa-37	13.5	328	56	0	1	14	12	#frac Spit
+	2012-xa-37	2012-xa-27	1.7	329	8	0	1	15	4	#Frac Spit
+# Puits des Manards	
+	extend left
+	2012-xa-20	2012-xa-39	5.9	82	-42	1.2	0	5	1.5	
+	2012-xa-39	2012-xa-40	5.3	256	-44	4.1	1	1.2	1	
+	2012-xa-40	2012-xa-41	3.2	265	-14	0.5	0.5	6	0.5	
+	2012-xa-41	2012-xa-10	5.95	229	-48	1.9	1.7	0.9	0.5	
+
+#dev = 259 m	
+endcenterline
+
+ centerline -title "Lavoir 2012-xa-7_2012-SL1 2012-SL27_2012-SL28"
+   date 2012.02.25
+#   declination 0.0000  degrees
+  team "G.S. Vulcain"
+  team "Stéphane Lips"
+  team "Eric Revolle"
+  team "Patricia Gentil"
+  explo-date 1979.08.12
+  explo-team "G.S. Vulcain"
+  explo-team "Philippe Lavabre" # LP ?
+  explo-team "Jean-Philippe Faubert"
+  explo-date 1984.07.24
+  explo-team "G.S. Vulcain"
+  explo-team "Jean-Bernard de_Chabelier"
+  explo-team "thierry Millet"
+   calibrate counter 0 0.500
+   units counter centimeters
+   units lenght meters
+   units compass grad
+   units clino grad
+   data topofil from to fromcount tocount compass clino left right up down
+   extend right
+
+#Lavoir : du sommet du puits du raccourci vers le lavoir
+
+# Spit du sommet du puits du raccourci
+#2012-SL0 2012-xa-7    0.000000         0.000000         0.000000       100.0000       2.000000       4.000000       1.000000       30.00000    
+   2012-xa-7 2012-SL1    69017.00         70317.00         5.000000       35.00000      0.6000000      0.6000000      0.3000000      0.4000000    
+   2012-SL1 2012-SL2    70317.00         70876.00         35.00000       16.00000      0.4000000       1.000000      0.6000000      0.6000000    
+   2012-SL2 2012-SL3    70876.00         71193.00         85.00000       0.000000      0.4000000      0.4000000      0.8000000       15.00000    
+   2012-SL3 2012-SL4    71193.00         71781.00         10.00000      -30.00000      0.5000000      0.5000000       2.000000       10.00000    
+   2012-SL4 2012-SL5    71781.00         72788.00         0.000000      -100.0000       1.000000       1.000000       7.000000       2.000000    
+   2012-SL5 2012-SL6    72788.00         73170.00         26.00000       7.000000      0.6000000       2.000000       7.000000       1.500000    
+   2012-SL6 2012-SL7    73170.00         73498.00         330.0000       42.00000       0.000000       6.000000       60.00000       15.00000    
+   2012-SL7 2012-SL8    73498.00         76338.00         0.000000      -100.0000       0.000000       6.000000       75.00000       1.500000    
+#Bas du puits des deux boeufs, en bas de la corde venant du puits du raccourci.
+   2012-SL8 2012-SL9    76338.00         77977.00         351.0000       0.000000       1.000000       1.000000       75.00000       1.500000    
+   2012-SL9 2012-SL10    0.000000         300.0000         351.0000       0.000000       1.000000       1.000000       75.00000       1.500000 # Visée fictive;
+   2012-SL10 2012-SL11    77977.00         83005.00         0.000000       100.0000       0.000000       1.200000       1.500000       20.00000    
+   2012-SL11 2012-SL12    83005.00         83837.00         42.00000      -4.000000      0.7000000      0.7000000       6.000000       1.500000    
+   2012-SL12 2012-SL13    83837.00         84509.00         0.000000       100.0000      0.7000000      0.7000000       1.500000       5.000000    
+   2012-SL13 2012-SL14    84509.00         85266.00         70.00000       27.00000      0.4000000      0.4000000       7.000000      0.7000000    
+   2012-SL14 2012-SL15    85266.00         85909.00         0.000000       12.00000      0.5000000      0.5000000       1.000000       3.000000    
+   2012-SL15 2012-SL16    85909.00         86277.00         86.00000       9.000000      0.7000000      0.7000000       1.000000       4.000000    
+   2012-SL16 2012-SL17    86277.00         87198.00         395.0000       10.00000      0.4000000      0.4000000       1.000000      0.2000000    
+   2012-SL17 2012-SL18    87198.00         87822.00         95.00000       34.00000       1.000000       1.000000       5.000000       1.500000    
+   2012-SL18 2012-SL19    87822.00         88911.00         0.000000       100.0000      0.5000000      0.5000000      0.5000000      0.5000000    
+   2012-SL19 2012-SL20    88911.00         89119.00         217.0000       37.00000      0.6000000      0.6000000       1.500000       1.000000    
+   2012-SL20 2012-SL21    89119.00         89829.00         100.0000       38.00000       1.200000       1.200000       2.000000       1.500000    
+   2012-SL21 2012-SL22    89829.00         90648.00         260.0000       48.00000       1.200000       1.200000       5.000000       1.500000    
+   2012-SL22 2012-SL23    90648.00         91399.00         0.000000       100.0000      0.6000000      0.6000000       1.000000       5.000000    
+   2012-SL23 2012-SL24    91399.00         92632.00         125.0000       32.00000      0.4000000      0.4000000      0.5000000      0.5000000    
+   2012-SL24 2012-SL25    92632.00         93080.00         192.0000       9.000000      0.6000000      0.6000000       2.000000       7.000000    
+# Début main courante des puits arrosés du lavoir
+   2012-SL25 2012-SL26    93080.00         95885.00         158.0000       45.00000       1.000000       1.000000       1.500000       7.000000    
+   2012-SL26 2012-SL27    95885.00         96730.00         303.0000       58.00000       4.000000       3.000000       6.000000       15.00000    
+   2012-SL27 2012-SL28    96730.00         98551.00         0.000000       100.0000       1.000000       1.000000       5.000000       20.00000    
+# Amarrage en Y dans les plafonds glaiseux en bas du P20. 
+endcenterline
+
+
+centerline -title "Lavoir 2012-SL28_2012-SL91 2012-SL100_2012-SL101"
+   date 2012.02.25
+#   declination 0.0000  degrees
+  team "G.S. Vulcain"
+  team "Eric Revolle"
+  team "Antoine Aigueperse"
+  team "Patricia Gentil"
+  explo-date 2006.02.15
+  explo-team "G.S. Vulcain"
+  explo-team "Xavier Robert"
+  explo-team "Stéphane Lips"
+  explo-team "Bernard Lips"
+  explo-date 2012.02.25
+  explo-team "G.S. Vulcain"
+  explo-team "Stéphane Lips"
+  explo-team "Eric Revolle"
+  explo-team "Antoine Aigueperse"
+  explo-team "Patricia Gentil"
+  explo-team "USAN"
+  explo-team "David Parrot" 
+   units lenght meters
+   units compass grad
+   units clino grad
+   data normal from to length backcompass backclino right left up down
+   extend right
+
+#Lavoir : du sommet du P20 du lavoir vers le sommet du P30.
+# topographie fausse, Les dimensions sont approx.
+
+#flags duplicate
+2012-SL28         2012-SL91                        2.00  265.00  00.00   0.00   3.00   5.00  10.00 # longueur fictive;
+2012-SL91          2012-SL92                        4.00  160.00  00.00   2.00   2.00  20.00   1.50 # longueur fictive;
+2012-SL92          2012-SL93                       21.20    0.00  -100.00   0.25   0.50   1.00  20.00
+2012-SL93          2012-SL94                        3.24  297.00  -33.00   0.00   0.50   1.00   0.50
+2012-SL94          2012-SL95                        0.68  215.00  00.00   0.50   0.50   2.00   1.00
+2012-SL95          2012-SL96                        6.15  246.00  -82.00   3.00   3.00   3.00   1.50
+2012-SL96          2012-SL97                        8.59  230.00  -36.00   0.00   3.00  30.00   1.50
+2012-SL97          2012-SL98                       22.50    0.00  -100.00   3.00   3.00  14.00   1.50
+2012-SL98          2012-SL99                       10.66    0.00  -100.00   2.00   2.00   4.00   1.50
+2012-SL99          2012-SL100                       3.21   90.00  -30.00   3.00   3.00  20.00   1.50 # Bas du dernier P20 (sommet du P30);
+2012-SL100          2012-SL101                      20.00    0.00 -100.00   3.00   3.00  10.00  20.00 # Visée fictive;
+#flags no duplicate
+
+#dev = 511-259 = 252 m
+
+endcenterline
+
+
+ centerline -title "Lavoir 2012b-xa-0_2012-SL7 2012b-xa-18_2012b-xa-19"
+   date 2012.03.31
+#   declination 0.0000  degrees
+  team "G.S. Vulcain"
+  team "Xavier Robert"
+  team "Clément Baudy"
+  explo-date 2012.02.25
+  explo-team "G.S. Vulcain"
+  explo-team "USAN"
+  explo-team "Stéphane Lips"
+  explo-team "David Parrot"
+  explo-date 2012.03.31
+  explo-team "G.S. Vulcain"
+  explo-team "USAN"
+  explo-team "Stéphane Lips"
+  explo-team "David Parrot"
+  explo-team "Xavier Robert"
+  explo-team "Clément Baudy"
+  explo-team "Antoine Aigueperse"
+  explo-team "Dominique Gilbert"
+  explo-team "Patricia Gentil"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   extend right
+# Départ spit sommet derniere corde provenant du Raccourci et arrivant a la base des 2 boeufs
+#flags no duplicate
+2012b-xa-0 2012-SL7 0 0 0 5.7 3.3 80 16
+2012-SL7 2012b-xa-1 16.24 304 -72 4.6 2.2 10 1.5 
+# base du puit des 2 boeufs, a la base de la corde plein pot du puits des 2 boeufs, au dessus d'un cailloux calcité
+2012b-xa-1 2012b-xa-2 95 0 90 0.3 0.3 11 10 # longueur estimée P95
+2012b-xa-2 2012b-xa-3 5.95 323 16 0.3 0.3 11 5 # méandre
+2012b-xa-3 2012b-xa-4 4.55 330 -19 3.1 0.5 10 4
+2012b-xa-4 2012b-xa-5 3.06 9 -27 1.1 1.4 7.3 1.5
+2012b-xa-5 2012b-xa-6 2.9 47 0 1.5 0.6 4.5 1.5
+2012b-xa-6 2012b-xa-7 4.65 288 66 0.3 0.3 15 1.5 # R3
+2012b-xa-7 2012b-xa-8 2.11 247 14 0.3 0.3 15 1.5
+2012b-xa-8 2012b-xa-9 2.09 306 26 0 1 15 1.2
+2012b-xa-9 2012b-xa-10 0.95 2 3 1 0.5 15 1.5
+2012b-xa-10 2012b-xa-11 2.86 0 35 0.6 0.6 60 1.5
+# base du P57
+2012b-xa-11 2012b-xa-12 9.02 64 20 3.2 3 57 2
+2012b-xa-12 2012b-xa-13 10.7 84 82 3 3 48 12
+2012b-xa-13 2012b-xa-14 9.67 69 84 6 6 38 22 # Depart puits parallele
+2012b-xa-14 2012b-xa-15 17.04 69 89  8 3 21 38
+2012b-xa-15 2012b-xa-16 11.76 294 85 6 0 10 49
+2012b-xa-16 2012b-xa-17 7.93 165 86 1.5 1 0.4 57
+# Sommet P57
+2012b-xa-17 2012b-xa-18 3.62 158 20 0.2 0.2 2.5 1.5
+2012b-xa-18 2012b-xa-19 5.63 103 3 0.8 0.2 5 1.5
+# Cloche dans méandre fossile où on peut manger
+
+endcenterline
+
+ centerline -title "Lavoir 2012b-xa-20_2012b-xa-20bis 2012b-xa-42_2012b-xa-19"
+   date 2012.03.31
+#   declination 0.0000  degrees
+  team "G.S. Vulcain"
+  team "Xavier Robert"
+  team "Clément Baudy"
+  explo-date 2012.03.31
+  explo-team "G.S. Vulcain"
+  explo-team "USAN"
+  explo-team "Stéphane Lips"
+  explo-team "David Parrot"
+  explo-team "Lucille Delacour"
+  explo-team "Xavier Robert"
+  explo-team "Clément Baudy"
+  explo-team "Antoine Aigueperse"
+  explo-team "Dominique Gilbert"
+  explo-team "Patricia Gentil"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   extend right
+2012b-xa-20 2012b-xa-20bis 0 0 0 0.1 0.1 0.1 0.1 # Siphon imp. et colm.
+2012b-xa-20 2012b-xa-21 9.68 124 0 3.4 2.4 5 1.5 # salle
+2012b-xa-21 2012b-xa-22 4.56 120 0 0 0  3 2 # Siphon imp (arrivee collecteur) et colm.
+2012b-xa-21 2012b-xa-23 4.82 270 14 0.3 0.3 7 1.5
+2012b-xa-23 2012b-xa-24 4.17 240 41 3 0.5 12 1.5
+extend right
+2012b-xa-24 2012b-xa-25 3.72 105 4 1.5 2 7 1.5
+2012b-xa-25 2012b-xa-26 6.65 143 40 1.5 0.5 7 1.5 # arrivee dans faille a 120°
+2012b-xa-26 2012b-xa-27 4.10 101 2 1 4 40 1.5 # point topo au dessus cailloux avec caouetch autour
+2012b-xa-27 2012b-xa-28 4.31 81 82 1 1 40 1.5 # sommet R3
+2012b-xa-28 2012b-xa-29 3 50 0 1.5 1.5 40 1.5 # visee fictive
+2012b-xa-29 2012b-xa-29b 40 0 90 1 1 0 40 # visee fictive plafond
+extend left
+2012b-xa-24 2012b-xa-30 7.54 54 31 1 1 3 1.5
+2012b-xa-30 2012b-xa-31 5.56 63 -19 0.3 0.3 2 4
+2012b-xa-31 2012b-xa-32 4.08 20 -64 2 0.5 4 1.5
+2012b-xa-32 2012b-xa-33 2.95 81 -9 0.2 0.2 0.5 1.5
+2012b-xa-33 2012b-xa-34 5.25 74 -3 1 0.5 0.5 1.5
+2012b-xa-34 2012b-xa-35 2.14 21 -6 1 1 0.5 1.5 # départ en rive gauche
+2012b-xa-35 2012b-xa-36 6.11 301 0 2 3 0.5 0 # visee dans départ en rive gauche. Ca continue
+2012b-xa-35 2012b-xa-37 5.26 42 -40 1 1 4 1.5
+2012b-xa-37 2012b-xa-38 3.77 68 -5 0.5 0.5 4 8
+2012b-xa-38 2012b-xa-39 3.11 350 3 0.5 0.5 2 8
+2012b-xa-39 2012b-xa-40 9.37 5 -69 1 1 12 20
+2012b-xa-40 2012b-xa-41 1.92 346 0 0.5 0.5 12 20
+2012b-xa-41 2012b-xa-42 2.57 322 -4 1 0.8 10 15
+2012b-xa-42 2012b-xa-19 1.42 232 -6 0.3 0.3 10 1.5
+
+# 2 dernières scéances : 362 m
+
+endcenterline
+
+ centerline -title "Lavoir FD-2012-0_FD-2012-0double FD-2012-11_2012b-xa-14"
+ #  date YYYY.MM.DD
+   declination 0.0000  degrees
+  date 2012.07.16
+  team "G.S. Vulcain"
+  team "Frédéric Delègue"
+  team "Gaëtan Poschmann"
+  explo-date 2012.07.16
+  explo-team "G.S. Vulcain"
+  explo-team "Frédéric Delègue"
+  explo-team "Gaëtan Poschmann"
+   units length meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   FD-2012-0 FD-2012-0double    0.000000       0.000000       0.000000       1.000000       1.000000       0.000000       1.000000    
+   FD-2012-0double FD-2012-1    9.000000       0.000000       90.00000       1.000000      0.5000000       0.000000       1.000000    
+   FD-2012-1 FD-2012-2    4.560000       0.000000       90.00000      0.2000000      0.3000000       0.000000       1.000000    
+   FD-2012-2 FD-2012-3    2.430000       288.0000       35.00000      0.5000000      0.3000000       5.000000       1.000000    
+   FD-2012-3 FD-2012-4    3.620000       240.0000       50.00000       3.000000       1.500000       6.620000      0.5000000    
+   FD-2012-4 FD-2012-5    5.470000       0.000000      -90.00000      0.3000000      0.3000000       0.000000       1.000000    
+   FD-2012-4 FD-2012-6    4.550000       3.000000      -24.00000      0.2000000      0.3000000       1.000000      0.5000000    
+   FD-2012-6 FD-2012-7    1.630000       76.00000      -42.00000      0.2000000      0.2000000       1.500000       1.000000    
+   FD-2012-7 FD-2012-8    2.580000       333.0000      -43.00000      0.2000000      0.2000000       1.000000      0.5000000    
+   FD-2012-8 FD-2012-9    5.420000       0.000000      -90.00000       1.000000      0.5000000       0.000000       1.000000    
+   FD-2012-4 FD-2012-10    3.210000       244.0000      -11.00000      0.2000000      0.3000000       1.000000       1.000000    
+   FD-2012-10 FD-2012-11    9.690000       0.000000       90.00000      0.3000000      0.5000000       0.000000       1.000000    
+   FD-2012-11 2012b-xa-14    7.530000       215.0000       46.00000      0.4000000       1.100000       0.000000       0.000000    
+ endcenterline
+
+
+
+
+
+
+endsurvey

@@ -1,0 +1,34 @@
+encoding  utf-8
+ 
+survey Ermoy -title "Grotte de l'Ermoy"
+
+	# Pour importer les différentes données de différents fichiers topos : 
+   input data-th/Ermoy.th
+ 
+	# Pour importer les différents fichiers de dessins 
+    input data-th2/Ermoy_im.th2
+    input data-th2/Ermoy_im2.th2    
+    input data-th2/Ermoy_im3.th2  ## Erreur pour lox; Refaire le premier scrap, il ne colle pas avec le dessin de Steph !
+    input data-th2/Ermoy.th2   
+ 
+ 	
+	# Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
+	## join scrap1 scrap2 . C'est tout simple !
+	join v_bivouac Escalades
+	join jctaval Aval-sup
+	join avalinf Ermoy-entree2
+	join avalinf Aval-sup -count 2
+
+	# Pour la Coupe :
+	input data-th2/Ermoy-coupe1.th2
+	
+	input data-th2/Ermoy-coupe2.th2
+	join Erm-SC1 Erm-SC5
+	
+	input data-th2/Ermoy-coupe3.th2
+	join Erm-SC5 Erm-SC9
+	
+	input data-th2/Ermoy-coupe4.th2
+	join Erm-SC10 Erm-SC15
+
+endsurvey

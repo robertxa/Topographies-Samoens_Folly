@@ -1,0 +1,30 @@
+encoding  utf-8
+ 
+survey zone_CH -title "Zone CH"
+  input trousCH
+  input trousCH.th2
+  
+  # Pour importer les différentes données de différents fichiers topos : 
+   input CH3/F3tot.th
+   
+   input CH17/CH17.th
+   input CH17/CH17.th2     
+
+   input CH20/CH20.th
+   input CH20/CH20-plan.th2
+   
+   input CH22/CH22.th
+   input CH22/CH22.th2
+   
+   input CH23/CH23.th
+   input CH23/CH23.th2
+   
+   input CH24/CH24.th
+   input CH24/CH24.th2
+   
+   input CH28/CH28.th
+   input CH28/CH28.th2
+   
+endsurvey
+ 
+# join ch3b.F3 F3-1.F3

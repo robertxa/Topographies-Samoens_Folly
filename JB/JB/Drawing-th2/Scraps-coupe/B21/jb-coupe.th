@@ -1,0 +1,110 @@
+encoding  utf-8
+
+#encoding  iso8859-2
+
+
+
+
+
+ survey Jean-Bernard -title "Gouffre Jean Bernard"
+
+
+# Pour importer les différentes données de différents fichiers topos : 
+
+   #input jb-amonts1
+   #input affluentC14
+
+   input jb-amonts2
+
+   #input Data-th/jb-riv
+
+   #input Data-th/jb-riv2
+   #input jb-arianes
+
+##   input Data-th/jb-ajouts
+##	input Data-th/assemblage
+
+
+
+   
+
+   centerline
+    
+
+# Pour assembler plusieurs fichiers topos
+
+     #equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
+
+     #equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
+
+     #equate  Jf.14@jb-amonts2  Jf.14@jb-riv
+     #equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
+
+     #equate  Kg.0@jb-riv  Kg.0@jb-riv2
+
+     #equate  Kg.9@jb-riv  Kg.9@jb-riv2
+
+     #equate  Ke.29@jb-riv  Ke.29@jb-riv2
+
+     #equate  Ke.43@jb-riv  Ke.43@jb-riv2
+
+     #equate  Ke.33@jb-riv  Ke.33@jb-riv2
+
+     #equate  Da.58@jb-amonts2  Da.58@jb-riv2
+
+     #equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
+     
+     #equate  Bc.50@jb-arianes Bc.50@jb-amonts1
+     #equate  Bb.115@jb-arianes Bb.115@jb-amonts1
+     #equate  2013-xab-22@affluentC14 Bg.0@jb-amonts1
+     
+     # Pour boucler toute la topo du JB, de façon à supprimer les choix de coupage de Steph
+        # Zone de la rivière aux excentriques
+          #equate  Da.179@jb-amonts1  Da.180'@jb-amonts1
+          #equate  Da.99@jb-amonts1  Da.100'@jb-amonts1
+
+        
+        # Zone du réseau des Bourguignons
+          #equate  Hb.0@jb-amonts1  Da.237@jb-amonts1 #(En rajoutant artificiellement une visée P15 ?)
+
+          #equate  Ha.33@jb-amonts1  Hd.31@jb-amonts1 #(? Je ne suis pas sûr que le m. des chatons jonctionne avec les bourguignons)
+          #equate  Hd.0@jb-amonts1  Hc.15@jb-amonts1 #(? Je ne suis pas sûr que le m. de la soucoupe jonctionne avec les bourguignons)
+        
+        # Zone de la Pierre qui tombe
+          #equate  Jc.0@jb-amonts1  Da.346@jb-amonts1 #(Ca semble bon)
+          #equate  Jb.15@jb-amonts1  Gc.0@jb-amonts1 #(? Pb en dx, dy et surtout dz)
+
+          #equate  Jb.27@jb-amonts1  Jc.5@jb-amonts1 #(Arrff dz est dans les choux)
+          
+        # Zone de la galerie du P15-colimaçon
+          #equate  Fm.0@jb-amonts1  Da.257@jb-amonts1 #(ou 259 ?)
+          #equate  Fd.41@jb-amonts1  Da.240@jb-amonts1
+ 
+
+   endcenterline
+
+
+
+
+
+
+
+
+   
+
+   
+
+ endsurvey
+ 
+
+# Pour importer les différents fichiers de dessins 
+	input B21-coupe.th2
+    #input C37-coupe.th2
+    #input voltigeurs-coupe.th2
+	#input B22-coupe.th2
+	#input affluentC14-coupe.th2
+
+#join voltic1 C37c3
+#join B22c1 B22cx
+#join B22c2 elyseesc1 
+#join affluent-C14_c1 archec2 	

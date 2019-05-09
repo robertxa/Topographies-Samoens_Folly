@@ -1,0 +1,91 @@
+encoding utf-8
+
+survey C24 -title "C24" -entrance "C24"
+   
+centerline
+# cs EPSG:27572
+# fix C24   944.8930       2132.653       2286.000
+ cs lat-long
+ fix C24 46.1059333 6.7999833 02297 
+	explo-date 1976.08.05
+		explo-team "Christian Rigaldie"
+		explo-team "Frédéric Pallu"
+	explo-date 1976.08.07
+		explo-team "Christophe Aubert"
+		explo-team "Marc Rosée"
+	explo-date 1976.08.08
+		explo-team "Christian Rigaldie"
+		explo-team "Jean-Pierre/Stéfanato"
+		explo-team "Philippe Lavabre"
+	explo-date 1976.08.09
+		explo-team "Christophe Aubert"
+		explo-team "Bernard Lips"
+	explo-date 1976.08.11
+		explo-team "Luc Petit"
+		explo-team "Bernard Lips"
+	explo-date 1976.08.13
+		explo-team "Christian Rigaldie"
+		explo-team "Frédéric Pallu"
+		explo-team "Jean-Louis/Bernard"
+	explo-date 1976.08.14
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+	explo-date 2005.07.13
+		explo-team "Xavier Robert"
+		explo-team "Josiane Lips"
+	explo-date 2005.07.14
+		explo-team "Patrice Plantier"
+		explo-team "Agnès Plantier"
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+	explo-date 2005.07.15
+		explo-team "Xavier Robert"
+		explo-team "Stéphane Lips"
+	explo-date 2006.07.13
+		explo-team "Stéphane Launay"
+		explo-team "Josiane Lips"
+		explo-team "Bernard Lips"
+	explo-date 2006.07.15
+		explo-team "Philippe Tresca"
+		explo-team "Josiane Lips"
+		explo-team "Bernard Lips"
+	date 1976.08.14
+		team "Bernard Lips"
+		team "Josiane Lips"
+		
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+   extend right
+   0 0double    0.000000       0.000000       90.00000       0.000000       0.000000       0.000000       0.000000    
+   0double 1    7.000000       0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+   1 2    8.100000       170.0000      -74.00000       0.000000       0.000000       0.000000       0.000000    
+   2 3    1.790000       235.0000      -55.00000       0.000000       0.000000       0.000000       0.000000    
+   3 4    2.600000       135.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+   4 5    3.910000       140.0000       26.00000       0.000000       0.000000       0.000000       0.000000    
+   5 6    10.74000       0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+   6 7    2.330000       110.0000       22.00000       0.000000       0.000000       0.000000       0.000000    
+   7 8    3.020000       68.00000      -59.00000       0.000000       0.000000       0.000000       0.000000    
+   8 9    4.580000       0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+   9 10    1.880000       123.0000      -50.00000       0.000000       0.000000       0.000000       0.000000    
+   10 11    2.720000       100.0000      -30.00000       0.000000       0.000000       0.000000       0.000000    
+   11 12    1.070000       98.00000       0.000000       0.000000       0.000000       0.000000       0.000000    
+   12 13    4.100000       115.0000       30.00000       0.000000       0.000000       0.000000       0.000000    
+   13 14    1.550000       20.00000       0.000000       0.000000       0.000000       0.000000       0.000000    
+   14 15    11.02000       0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+   15 16    3.120000       15.00000      -56.00000       0.000000       0.000000       0.000000       0.000000    
+   16 17   0.7500000       55.00000      -35.00000       0.000000       0.000000       0.000000       0.000000    
+   17 18    2.740000       110.0000      -28.00000       0.000000       0.000000       0.000000       0.000000    
+   18 19    6.170000       5.000000      -63.00000       0.000000       0.000000       0.000000       0.000000    
+   19 20    3.950000       5.000000      -15.00000       0.000000       0.000000       0.000000       0.000000    
+   20 21    2.640000       83.00000      -43.00000       0.000000       0.000000       0.000000       0.000000    
+   21 22    1.330000       8.000000       0.000000       0.000000       0.000000       0.000000       0.000000    
+   22 23    5.220000       0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+   23 24    11.08000       35.00000      -75.00000       0.000000       0.000000       0.000000       0.000000    
+   24 25    5.190000       172.0000      -43.00000       0.000000       0.000000       0.000000       0.000000    
+   25 26    1.280000       53.00000      -43.00000       0.000000       0.000000       0.000000       0.000000    
+   26 C24    4.290000       0.000000      -67.00000       0.000000       0.000000       0.000000       0.000000    
+ endcenterline
+ endsurvey

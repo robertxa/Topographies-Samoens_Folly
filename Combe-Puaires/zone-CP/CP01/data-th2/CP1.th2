@@ -1,0 +1,686 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -187.843 -234.279 408.5 469.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {59.85300000000001 1 1.0} {106.279 CP1b} ../CP1-map.xvi 0 {}
+
+
+
+scrap CP1-a -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-187.843 -234.279 383.1178 -234.279 0.0 0.0 14.502404319999998 0.0 m]
+
+area ice
+  l29-170-236
+  l18-102-259
+  l25-74-266
+  l19-60-236
+  l24-82-164
+  l16-118-104
+  l36-134-105
+  l27-148-120
+  l17-164-216
+endarea
+
+line border -id l36-134-105
+  135.5 98.5
+  135.5 98.5 130.5 115.0 133.5 117.0
+  136.5 119.0 138.0 120.5 138.0 120.5
+  smooth off
+endline
+
+line pit -reverse on
+  81.0 171.5
+  81.0 171.5 90.82 167.91 94.0 162.0
+  97.5 155.5 103.5 145.0 106.5 139.0
+  109.5 133.0 115.0 126.5 115.0 122.0
+  115.0 117.5 111.5 111.5 111.5 111.5
+  smooth off
+endline
+
+line rock-edge
+  171.0 108.0
+  180.5 107.5
+endline
+
+line rock-edge
+  168.0 113.0
+  171.0 108.0
+  163.5 106.0
+endline
+
+line rock-edge
+  187.5 122.0
+  194.5 122.0
+endline
+
+line rock-edge
+  180.5 128.0
+  187.5 122.0
+  191.5 115.5
+endline
+
+line rock-border
+  185.5 130.0
+  189.5 138.5
+  198.0 136.5
+  194.5 122.0
+endline
+
+line rock-border -close on
+  146.5 107.5
+  153.5 113.5
+  144.0 113.5
+  146.5 107.5
+endline
+
+line rock-border -close on
+  168.0 113.0
+  180.5 107.5
+  174.0 104.0
+  163.5 106.0
+  168.0 113.0
+endline
+
+line rock-border -close on
+  180.5 128.0
+  192.0 128.0
+  194.5 122.0
+  191.5 115.5
+  180.0 120.5
+  180.5 128.0
+endline
+
+line arrow
+  251.5 44.0
+  209.5 100.0
+endline
+
+line border
+  203.0 70.0
+  208.5 75.5 211.5 88.5 218.0 88.5
+  224.5 88.5 241.0 91.0 243.0 89.0
+  smooth off
+endline
+
+line border
+  231.5 40.5
+  231.5 40.5 231.0 56.0 238.0 57.0
+  245.0 58.0 260.0 59.5 260.0 59.5
+  smooth off
+endline
+
+line border
+  215.5 65.0
+  215.5 65.0 220.0 79.0 231.5 79.0
+  243.0 79.0 253.5 76.0 253.5 76.0
+  smooth off
+endline
+
+line border
+  226.0 55.0
+  226.0 55.0 226.0 66.5 236.0 67.5
+  246.0 68.5 255.0 66.5 255.0 66.5
+  smooth off
+endline
+
+line border
+  239.0 34.5
+  239.0 34.5 235.0 47.5 249.0 51.5
+  263.0 55.5 264.0 52.5 264.0 52.5
+  smooth off
+endline
+
+line pit -reverse on
+  69.5 248.5
+  69.5 248.5 68.5 235.5 70.0 224.5
+  71.5 213.5 75.0 199.0 74.0 195.5
+  73.0 192.0 70.0 189.5 70.0 189.5
+  smooth off
+endline
+
+point 28.0 101.5 air-draught -orientation 243.6 -subtype summer
+
+point 32.0 155.0 air-draught -orientation 270.2 -subtype summer
+
+point 6.5 310.0 air-draught -orientation 312.2 -subtype summer
+
+point 169.0 324.5 air-draught -orientation 33.0 -subtype summer
+
+point 152.5 285.5 entrance -orientation 205.7
+
+point 28.5 291.0 entrance -orientation 130.8
+
+point 19.5 81.5 entrance -orientation 64.3
+
+line contour
+  105.5 247.0
+  105.5 247.0 100.0 231.5 98.5 238.0
+  97.0 244.5 95.0 261.5 93.0 264.5
+  91.0 267.5 87.0 273.0 87.0 273.0
+  smooth off
+endline
+
+line arrow
+  84.5 244.0
+  96.5 255.5
+endline
+
+line arrow
+  122.0 219.0
+  111.0 181.0
+endline
+
+line arrow
+  117.0 223.0
+  87.5 204.5
+endline
+
+line floor-meander
+  72.0 148.0
+  72.0 148.0 72.13 159.96 73.0 163.0
+  74.0 166.5 76.863 175.829 76.863 175.829
+  smooth off
+endline
+
+point 140.0 107.5 breakdown-choke -orientation 88.9
+
+point 73.0 92.0 breakdown-choke -orientation 342.5
+
+point 50.5 65.5 label -scale xl -text "<bf>CP1b"
+
+point 37.0 338.5 label -scale xl -text "<bf>CP1c"
+
+point 219.5 276.5 label -scale xl -text "<bf>CP1a"
+
+point 260.5 26.5 continuation -attr code E -text "Suite de la faille en hauteur à escalader"
+
+line border
+  127.0 204.5
+  127.0 204.5 119.0 188.0 113.0 185.0
+  107.0 182.0 92.5 182.5 92.5 193.0
+  92.5 203.5 90.5 213.0 90.5 221.0
+  90.5 229.0 93.0 235.5 91.5 244.0
+  90.0 252.5 90.0 256.0 89.0 260.0
+  88.0 264.0 85.5 268.5 85.5 268.5
+  smooth off
+endline
+
+line border
+  128.5 209.5
+  128.5 209.5 110.5 198.5 106.5 202.5
+  102.5 206.5 97.5 211.0 99.5 221.0
+  101.5 231.0 110.5 241.5 110.5 241.5
+  smooth off
+endline
+
+line border
+  130.5 214.0
+  130.5 214.0 109.5 212.5 110.5 222.5
+  111.5 232.5 111.0 233.5 115.0 236.0
+  smooth off
+endline
+
+line border
+  131.0 222.5
+  131.0 222.5 124.0 227.5 121.5 233.0
+  smooth off
+endline
+
+line border -id l29-170-236
+  170.0 235.5
+  170.0 235.5 153.5 235.0 142.0 235.5
+  130.5 236.0 121.0 239.0 118.0 244.5
+  smooth off
+endline
+
+line pit
+  157.5 132.5
+  157.5 132.5 152.0 143.0 157.5 153.0
+  163.0 163.0 183.0 179.0 183.0 179.0
+  smooth off
+endline
+
+line pit -id l27-148-120
+  170.5 229.0
+  170.5 229.0 167.5 228.5 153.5 226.5
+  139.5 224.5 133.0 228.5 132.0 219.0
+  131.0 209.5 121.5 196.5 124.0 185.5
+  126.5 174.5 123.0 163.0 123.0 154.5
+  123.0 146.0 118.0 137.0 123.0 131.5
+  128.0 126.0 132.0 122.5 138.0 120.5
+  144.0 118.5 149.5 119.0 156.5 123.0
+  163.5 127.0 171.5 132.5 171.5 132.5
+  smooth off
+endline
+
+line pit
+  172.5 247.0
+  172.5 247.0 161.5 250.5 144.5 252.5
+  127.5 254.5 121.5 253.5 117.5 259.5
+  smooth off
+endline
+
+line pit -id l25-74-266
+  75.0 265.0
+  75.0 265.0 73.5 250.0 63.0 250.5
+  smooth off
+endline
+
+line pit -id l24-82-164 -reverse on
+  82.0 165.0
+  82.0 165.0 79.0 173.0 74.0 178.0
+  69.0 183.0 62.0 185.5 62.0 185.5
+  smooth off
+endline
+
+line rock-edge
+  61.0 103.5
+  62.5 98.5
+endline
+
+line rock-border -close on
+  62.5 98.5
+  67.0 103.0
+  61.0 103.5
+  55.5 99.5
+  62.5 98.5
+endline
+
+line pit -reverse on
+  172.5 247.0
+  172.5 247.0 162.5 254.5 152.5 256.5
+  142.5 258.5 135.5 262.5 131.0 262.5
+  126.5 262.5 124.0 257.0 124.0 257.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  177.0 251.0
+  177.0 251.0 169.5 253.5 161.0 256.0
+  152.5 258.5 144.5 261.0 138.5 263.5
+  132.5 266.0 118.5 270.5 118.5 270.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  60.0 282.5
+  60.0 282.5 50.5 285.5 48.0 281.0
+  45.5 276.5 43.0 263.0 43.0 263.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  54.5 117.5
+  54.5 117.5 52.5 106.0 55.5 99.5
+  58.5 93.0 63.5 91.5 63.5 91.5
+  smooth off
+endline
+
+line wall
+  51.0 147.5
+  51.0 147.5 50.0 152.0 53.0 152.0
+  56.0 152.0 61.0 155.0 60.5 152.0
+  59.1 143.62 60.0 137.0 60.0 130.0
+  60.0 123.0 62.5 115.0 61.5 113.0
+  60.5 111.0 57.5 108.0 57.0 111.0
+  56.5 114.0 54.5 117.5 54.5 117.5
+  smooth off
+endline
+
+point 44.0 246.5 dig
+
+line pit -close on
+  165.5 123.0
+  165.5 123.0 160.0 119.5 164.5 118.5
+  169.0 117.5 174.5 124.5 172.0 124.5
+  169.5 124.5 165.5 123.0 165.5 123.0
+  smooth off
+endline
+
+line pit
+  173.0 111.5
+  173.0 111.5 176.5 104.5 180.5 107.5
+  184.5 110.5 183.5 117.5 183.5 117.5
+  smooth off
+  180.0 120.5
+endline
+
+line pit
+  180.0 120.5
+  180.0 120.5 172.0 123.0 172.0 119.5
+  172.0 116.0 173.0 111.5 173.0 111.5
+  smooth off
+endline
+
+line arrow
+  175.5 142.0
+  130.5 157.5
+endline
+
+point 278.0 78.5 height -value [+15 m]
+
+point 190.0 236.5 height -value [-15 m]
+
+point 45.5 186.5 height -value [-4 m]
+
+line wall -id l19-60-236
+  43.0 263.0
+  43.0 263.0 45.0 270.0 48.0 267.0
+  51.0 264.0 60.5 260.0 61.0 257.5
+  61.5 255.0 74.5 253.5 70.0 251.5
+  65.5 249.5 60.0 253.5 60.0 237.0
+  60.0 220.5 65.0 206.5 67.0 197.5
+  69.0 188.5 72.0 183.5 67.5 182.0
+  63.0 180.5 60.0 182.5 60.0 173.5
+  60.0 164.5 64.0 155.5 60.0 155.5
+  56.0 155.5 51.58 153.73 53.0 158.0
+  smooth off
+endline
+
+line wall -id l18-102-259
+  118.5 270.5
+  118.5 270.5 127.5 260.0 124.0 257.0
+  120.5 254.0 126.5 221.5 118.0 233.5
+  109.5 245.5 106.0 250.0 102.5 258.5
+  99.0 267.0 94.5 278.5 90.0 276.5
+  85.5 274.5 83.0 264.0 81.5 262.0
+  80.0 260.0 78.0 255.5 73.5 258.0
+  69.0 260.5 65.5 264.0 62.5 267.0
+  59.5 270.0 53.0 277.0 54.5 278.5
+  56.0 280.0 60.0 282.5 60.0 282.5
+  smooth off
+endline
+
+point 51.263000000000005 274.169 altitude -align top-left
+
+point 164.5 254.0 altitude -align top
+
+line wall -id l17-164-216
+  262.5 42.0
+  262.5 42.0 235.5 88.5 231.0 97.5
+  226.5 106.5 234.5 129.0 229.5 136.5
+  224.5 144.0 205.0 156.5 198.0 165.0
+  191.0 173.5 175.5 168.5 169.5 180.5
+  163.5 192.5 162.0 216.5 164.0 223.0
+  166.0 229.5 162.5 251.0 167.0 251.0
+  171.5 251.0 177.0 251.0 177.0 251.0
+  smooth off
+endline
+
+point 56.0 105.5 altitude -align bottom-left
+
+point 254.143 38.989000000000004 altitude -align right
+
+line wall -id l16-118-104
+  75.5 96.5
+  75.5 96.5 74.0 103.5 74.0 111.0
+  74.0 118.5 72.5 139.5 74.5 137.5
+  76.5 135.5 84.0 127.0 83.0 133.0
+  82.0 139.0 77.5 150.0 77.5 155.0
+  77.5 160.0 77.0 177.0 81.0 171.5
+  85.0 166.0 103.5 119.5 111.5 111.5
+  119.5 103.5 122.0 102.5 129.5 99.5
+  137.0 96.5 160.0 101.5 168.0 97.5
+  176.0 93.5 191.0 97.0 203.0 86.0
+  215.0 75.0 244.5 41.5 248.0 35.5
+  smooth off
+endline
+
+line wall
+  63.5 91.5
+  63.5 91.5 57.5 95.5 62.5 98.5
+  67.5 101.5 68.5 96.0 68.5 96.0
+  smooth off
+endline
+
+point 254.143 38.989000000000004 station -name Xa-2015d-9@CP1
+
+point 181.923 135.619 station -name Xa-2015d-8@CP1
+
+point 160.603 247.239 station -name CP1a@CP1
+
+point 127.973 108.399 station -name Xa-2015d-6@CP1
+
+point 51.263000000000005 274.169 station -name CP1cbis@CP1
+
+point 61.143 262.299 station -name Xa-2015d-20@CP1
+
+point 75.60300000000001 252.81900000000002 station -name Xa-2015d-5@CP1
+
+point 83.043 190.219 station -name Xa-2015d-4@CP1
+
+point 76.863 175.829 station -name Xa-2015d-3@CP1
+
+point 72.393 156.809 station -name Xa-2015d-2@CP1
+
+point 69.793 110.659 station -name Xa-2015d-1@CP1
+
+point 59.85300000000001 106.27900000000001 station -name CP1bis@CP1
+
+endscrap
+
+
+
+scrap CP1-b -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-187.843 -234.279 383.1178 -234.279 0.0 0.0 14.502404319999998 0.0 m]
+
+line wall -id l83-108-194
+  124.0 194.0
+  124.0 194.0 117.5 191.0 108.5 193.0
+  99.5 195.0 93.0 200.5 85.0 200.0
+  77.0 199.5 73.0 202.0 74.0 195.5
+  75.0 189.0 94.5 165.0 100.0 159.0
+  105.5 153.0 107.0 151.0 112.0 146.0
+  117.0 141.0 125.5 131.5 131.0 127.5
+  136.5 123.5 139.45 109.85 146.5 107.5
+  154.0 105.0 159.26 104.76 157.0 102.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  163.5 157.0
+  150.5 162.0
+  150.5 162.0 146.5 182.5 144.5 178.0
+  142.5 173.5 142.5 168.0 142.5 163.0
+  142.5 158.0 141.0 155.0 142.5 149.0
+  144.0 143.0 144.0 136.0 144.0 136.0
+  smooth off
+endline
+
+point 93.5 119.5 height -value [-12 m]
+
+point 174.5 163.5 dig
+
+point 181.5 148.5 air-draught -orientation 289.9 -subtype summer
+
+line arrow
+  121.0 143.5
+  138.0 125.5
+endline
+
+line contour
+  133.0 139.0
+  133.0 139.0 122.5 139.0 123.0 131.5
+  smooth off
+endline
+
+line contour
+  130.0 142.0
+  130.0 142.0 120.0 145.5 120.0 140.0
+  120.0 134.5 118.0 129.0 118.0 129.0
+  smooth off
+endline
+
+line contour
+  151.5 125.5
+  151.5 125.5 142.5 124.5 142.5 120.5
+  142.5 116.5 140.0 107.5 140.0 107.5
+  smooth off
+endline
+
+area ice
+  l84-136-187
+  l83-108-194
+  l87-115-152
+endarea
+
+line pit
+  124.5 178.5
+  124.5 178.5 117.5 179.5 117.5 172.5
+  117.5 165.5 118.5 164.5 120.5 161.0
+  122.5 157.5 123.0 154.5 123.0 154.5
+  smooth off
+endline
+
+line pit -id l87-115-152 -reverse on
+  110.5 141.5
+  110.5 141.5 111.5 153.0 115.0 152.5
+  118.5 152.0 128.0 147.0 128.0 147.0
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  149.5 135.0
+  149.5 135.0 154.5 140.0 152.5 143.0
+  150.5 146.0 145.5 153.5 150.5 153.5
+  155.5 153.5 161.5 152.0 161.5 152.0
+  smooth off
+endline
+
+line wall -id l84-136-187 -subtype invisible
+  123.0 149.0
+  123.0 149.0 134.5 149.5 136.0 159.0
+  137.5 168.5 138.0 181.0 135.5 186.0
+  133.0 191.0 124.0 194.0 124.0 194.0
+  smooth off
+endline
+
+line wall
+  144.0 136.0
+  144.0 136.0 142.5 127.0 139.5 129.5
+  136.5 132.0 123.0 140.5 124.5 144.5
+  126.0 148.5 123.0 149.0 123.0 149.0
+  smooth off
+endline
+
+line wall
+  159.5 93.0
+  159.5 93.0 166.0 97.0 167.0 100.5
+  168.0 104.0 170.0 114.0 165.0 115.0
+  160.0 116.0 147.5 122.5 147.5 126.5
+  147.5 130.5 149.5 135.0 149.5 135.0
+  smooth off
+endline
+
+point 127.5 133.5 ice
+
+point 144.0 127.5 ice
+
+point 150.0 118.5 ice
+
+point 163.0 111.0 ice-pillar
+
+point 161.763 103.44900000000001 station -name Xa-2015d-14@CP1
+
+point 132.083 131.34900000000002 station -name Xa-2015d-13@CP1
+
+point 117.043 145.489 station -name Xa-2015d-12@CP1
+
+point 78.49300000000001 191.12900000000002 station -name Xa-2015d-11@CP1
+
+point 105.63300000000001 160.749 station -name Xa-2015d-10@CP1
+
+endscrap
+
+
+
+scrap CP1-c -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-187.843 -234.279 383.1178 -234.279 0.0 0.0 14.502404319999998 0.0 m]
+
+point 142.0 94.0 ice-pillar
+
+point 155.5 93.5 ice
+
+line pit
+  162.5 88.5
+  162.5 88.5 154.0 86.5 152.5 90.0
+  151.0 93.5 149.5 99.5 149.5 99.5
+  smooth off
+endline
+
+point 170.0 35.0 continuation -attr Code E -text "Méandre en hauteur à atteindre en artif"
+
+point 141.0 48.5 height -value [+15 m]
+
+point 174.5 82.5 height -value [-18 m]
+
+line pit
+  155.5 57.0
+  155.5 57.0 159.5 63.5 168.0 64.0
+  176.5 64.5 182.0 62.5 182.0 62.5
+  smooth off
+endline
+
+point 159.963 63.91900000000001 altitude -align left
+
+point 186.5 159.0 label -text "trémie"
+
+line wall -subtype ice
+  141.5 105.0
+  141.5 105.0 162.5 109.0 165.0 115.0
+  167.5 121.0 172.0 129.0 169.0 137.5
+  166.0 146.0 164.5 150.0 155.0 150.0
+  145.5 150.0 142.0 148.0 139.0 146.5
+  136.0 145.0 133.0 143.0 133.0 143.0
+  smooth off
+endline
+
+line wall
+  133.0 143.0
+  133.0 143.0 127.5 121.5 128.5 113.5
+  129.5 105.5 136.0 88.0 139.5 81.0
+  143.0 74.0 150.5 66.5 154.0 63.0
+  157.5 59.5 163.0 63.0 163.0 57.5
+  163.0 52.0 163.0 48.5 163.0 48.5
+  smooth off
+endline
+
+line wall
+  157.0 102.5
+  157.0 102.5 153.5 93.0 150.0 93.0
+  146.5 93.0 138.5 104.5 141.5 105.0
+  smooth off
+endline
+
+point 153.5 113.5 breakdown-choke
+
+point 138.0 120.5 breakdown-choke
+
+point 160.0 127.0 breakdown-choke
+
+point 159.0 142.0 breakdown-choke
+
+point 151.0 131.0 breakdown-choke
+
+point 140.5 138.0 breakdown-choke
+
+point 118.5 116.0 continuation -attr Code D -text "Trémie très soufflante en été ; à désobstruer ; jonction possible avec CP12"
+
+point 105.5 133.0 air-draught -orientation 93.9 -scale l -subtype summer
+
+line wall
+  170.5 50.5
+  170.5 50.5 171.5 57.0 169.5 60.5
+  167.5 64.0 168.5 64.5 167.5 70.0
+  166.5 75.5 159.5 83.0 157.5 85.0
+  155.5 87.0 157.0 90.5 159.5 93.0
+  smooth off
+endline
+
+point 163.963 135.24900000000002 station -name Xa-2015d-19@CP1
+
+point 134.723 113.38900000000001 station -name Xa-2015d-18@CP1
+
+point 159.963 63.91900000000001 station -name Xa-2015d-17@CP1
+
+point 144.373 81.379 station -name Xa-2015d-16@CP1
+
+endscrap
+
+

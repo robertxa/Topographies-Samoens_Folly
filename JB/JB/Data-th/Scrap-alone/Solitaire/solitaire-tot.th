@@ -1,0 +1,15 @@
+encoding  utf-8
+
+input solitaire-plan.th2
+input solitaire-plan2017.th2
+input solitaire2018.th2
+
+join solitaire_plan sol2017-1 -count 2
+
+# 2018
+join Solitaire-c-2018_2 solitaire_plan
+#join Solitaire-c-2018-1 sol2017-2
+join Solitaire2018-SP1 sol2017-1
+
+input solitaire-coupe2017.th2
+input solitaire-coupe2018.th2

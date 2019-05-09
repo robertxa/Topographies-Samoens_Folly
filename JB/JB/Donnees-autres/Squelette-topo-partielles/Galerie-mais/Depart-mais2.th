@@ -1,0 +1,28 @@
+ encoding iso8859-2
+ survey Depart-mais2 -title "Depart-mais2" -entrance "0"
+  
+   
+ centerline
+   date 2010.10.23
+   declination 0.0000  degrees
+   calibrate counter 0 0.500
+  team "G.S. Vulcain"
+  team "Boris Laurent"
+  team "Thomas Cabotiau"
+ # (to be completed, add many lines as you need)
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ # infer equates on
+ # infer plumbs on
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   0 Ia.15 41149.0 41149.0    0.000000       90.00000      0.4000000      0.6000000      0.3000000      0.3000000    
+   Ia.15 Ij.1 41149.0 41370.0    290.0000      -88.00000      0.3000000       1.000000      0.1000000      0.4000000    
+   Ij.1 Ij.2 41368.0 41639.0    0.000000      -90.00000       0.000000       0.000000       0.000000       0.000000    
+   Ij.2 Ij.3 41657.0 42667.0    225.0000      -70.00000       0.000000       0.000000       0.000000       0.000000    
+   Ij.3 Ij.4 42672.0 43171.0    300.0000      -88.00000       0.000000       0.000000       0.000000       0.000000    
+   Ij.4 Ij.5 43217.0 43545.0    295.0000       27.00000       0.000000       0.000000       0.000000       0.000000    
+   Ij.3 Ij.6 43614.0 44156.0    227.0000       75.00000       1.000000       3.000000      0.5000000      0.5000000    
+ endcenterline
+ endsurvey

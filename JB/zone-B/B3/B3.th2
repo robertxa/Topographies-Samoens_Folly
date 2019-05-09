@@ -1,0 +1,143 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -110.75 -139.4415 227.5 197.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {45.8765 1 1.0} {50.0943 0} B3-map.xvi 0 {}
+
+
+
+scrap B3-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 30.7065 52.6243 station -name 2@B3
+
+line wall
+  41.25 53.0
+  41.25 53.0 33.25 51.75 35.5 52.75
+  37.75 53.75 39.0 55.0 40.75 54.5
+  42.5 54.0 45.5 48.0 44.0 47.25
+  42.5 46.5 41.5 44.75 41.5 44.75
+  smooth off
+endline
+
+point 74.0 51.5 label -text "B3" -scale xl
+
+point 58.5 48.0 entrance -orientation 273.2
+
+point 30.0 47.25 breakdown-choke
+
+point 26.25 43.75 breakdown-choke
+
+point 23.25 47.75 breakdown-choke
+
+line pit
+  38.0 53.0
+  34.0 59.25
+endline
+
+point 48.0 67.75 label -text "etr."
+
+point 98.25 51.75 altitude -scale l
+
+line wall
+  58.0 54.5
+  58.0 54.5 52.25 50.5 50.0 52.25
+  47.75 54.0 46.0 56.75 42.75 57.0
+  39.5 57.25 32.0 55.5 30.0 55.25
+  28.0 55.0 23.0 52.75 22.25 54.5
+  21.5 56.25 20.75 59.25 20.75 59.25
+  smooth off
+  20.75 59.25 17.75 56.75 18.5 52.75
+  19.25 48.75 18.75 38.75 23.5 38.25
+  28.25 37.75 30.25 39.75 32.25 43.75
+  34.25 47.75 43.5 48.5 43.5 48.5
+  smooth off
+endline
+
+point 42.1465 54.8543 station -name 1@B3
+
+point 45.8765 50.0943 station -name B3@B3
+
+endscrap
+
+
+
+scrap B3-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+line wall
+  45.25 53.25
+  45.25 53.25 49.88 52.52 47.8165 51.8843
+  45.75 51.25 41.25 53.0 41.25 53.0
+  smooth off
+endline
+
+line wall
+  43.5 48.5
+  43.5 48.5 46.75 48.75 48.25 50.0
+  49.75 51.25 53.0 54.25 51.0 55.75
+  49.0 57.25 45.5 55.75 45.5 55.75
+  smooth off
+endline
+
+point 48.5865 53.9343 station -name 4@B3
+
+point 47.8165 51.8843 station -name 3@B3
+
+endscrap
+
+
+
+scrap B3-3 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 80.75 33.0 water-flow -orientation 61.0
+
+line wall
+  61.0 26.5
+  61.0 26.5 61.0 23.5 62.75 23.5
+  64.5 23.5 67.75 24.75 67.75 24.75
+  smooth off
+endline
+
+point 47.25 22.5 label -text "-19 m"
+
+point 68.0 38.25 water-flow -orientation 220.7
+
+point 70.25 16.5 label -text "etr."
+
+point 71.5 28.25 narrow-end -orientation 251.3
+
+point 80.25 22.75 continuation -attr Code D -text "Méandre étroit à désobtruer"
+
+line wall
+  41.25 51.5
+  40.25 53.0 45.5 55.75 45.5 55.75
+  smooth off
+  47.0 48.0
+  49.0 46.0 47.25 43.75 48.5 40.5
+  49.75 37.25 56.0 36.25 57.0 33.5
+  58.0 30.75 61.0 26.5 61.0 26.5
+  smooth off
+endline
+
+point 68.5 6.75 altitude -scale l
+
+line wall
+  64.25 27.75
+  64.25 27.75 62.5 32.5 60.75 34.5
+  59.0 36.5 54.5 38.75 54.25 41.25
+  54.0 43.75 53.75 48.25 52.5 49.75
+  51.25 51.25 45.25 53.25 45.25 53.25
+  smooth off
+endline
+
+point 49.9965 50.5443 station -name 6@B3
+
+point 52.0 43.25 station -name 8@B3
+
+point 52.7265 40.7243 station -name 7@B3
+
+point 58.6865 34.3743 station -name 9@B3
+
+point 62.1665 28.0943 station -name 10@B3
+
+endscrap
+
+

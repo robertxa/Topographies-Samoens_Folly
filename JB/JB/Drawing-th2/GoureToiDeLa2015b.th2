@@ -1,0 +1,880 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -129.5 639.8113000000001 1033.5122999999999
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {275.587 1 1.0} {708.665 2014-SL-0} GoureToiDeLa-map2015b.xvi 0 {}
+
+
+
+scrap Gourance2015b-1 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+line arrow
+  177.5 556.25
+  169.0 536.5
+endline
+
+line contour
+  176.0 530.75
+  176.0 530.75 168.5 531.25 166.75 533.25
+  165.0 535.25 162.0 538.0 162.0 541.0
+  smooth off
+endline
+
+line contour
+  180.25 539.5
+  180.25 539.5 174.0 539.25 169.75 542.0
+  165.5 544.75 164.25 548.5 164.25 548.5
+  smooth off
+endline
+
+line contour
+  180.75 547.5
+  180.75 547.5 176.5 545.75 173.25 547.5
+  170.0 549.25 167.25 553.5 167.25 553.5
+  smooth off
+endline
+
+line contour
+  181.25 551.75
+  181.25 551.75 175.5 550.5 174.0 552.75
+  172.5 555.0 171.5 557.5 171.5 557.5
+  smooth off
+endline
+
+line arrow
+  187.75 564.0
+  181.25 560.5
+endline
+
+line arrow
+  168.0 579.25
+  174.75 566.25
+endline
+
+line contour
+  166.25 566.5
+  166.25 566.5 171.75 568.5 173.75 569.75
+  175.75 571.0 179.25 569.25 181.25 567.0
+  183.25 564.75 185.25 561.0 185.25 558.25
+  185.25 555.5 185.25 550.0 185.25 550.0
+  smooth off
+endline
+
+point 164.5 579.5 clay
+
+point 185.5 567.5 clay
+
+point 176.75 563.0 clay
+
+point 177.0 574.25 clay
+
+point 170.75 535.5 clay
+
+point 170.75 545.0 clay
+
+line contour
+  162.75 569.5
+  162.75 569.5 169.5 571.5 172.0 573.25
+  174.5 575.0 175.0 580.0 178.0 579.0
+  181.0 578.0 184.0 573.0 187.5 570.0
+  191.0 567.0 196.25 563.25 196.25 563.25
+  smooth off
+endline
+
+line contour
+  161.0 574.5
+  161.0 574.5 165.5 574.25 168.75 576.25
+  172.0 578.25 171.25 580.5 174.0 581.25
+  176.75 582.0 180.75 584.0 183.75 581.75
+  186.75 579.5 192.5 573.75 194.5 571.0
+  196.5 568.25 197.25 566.0 197.25 566.0
+  smooth off
+endline
+
+point 213.25 571.75 gypsum
+
+point 206.25 576.0 gypsum
+
+point 191.0 596.0 height -value [-5 m]
+
+point 156.25 602.0 label -text "etr."
+
+point 146.5 578.0 continuation
+
+point 141.25 593.5 narrow-end
+
+point 137.75 580.5 air-draught -orientation 47.8 -subtype winter -scale xs
+
+point 182.75 536.25 air-draught -orientation 18.1 -subtype winter
+
+point 163.0 594.5 dig
+
+point 227.25 575.0 dig
+
+point 200.75 587.75 rope
+
+line pit
+  202.25 568.25
+  202.25 568.25 204.5 572.75 201.25 574.75
+  198.0 576.75 198.25 577.25 194.5 579.25
+  190.75 581.25 190.25 584.0 190.0 586.0
+  smooth off
+endline
+
+line wall
+  170.0 528.5
+  170.0 528.5 171.75 533.75 173.0 536.5
+  174.25 539.25 178.25 555.75 180.25 555.5
+  182.25 555.25 186.5 553.0 189.75 553.75
+  193.0 554.5 192.75 555.0 195.5 557.25
+  198.25 559.5 200.0 558.75 199.75 560.75
+  199.5 562.75 195.25 562.75 194.75 561.0
+  194.25 559.25 192.25 556.25 191.0 558.0
+  189.75 559.75 190.75 559.25 193.0 562.75
+  195.25 566.25 196.25 569.0 197.75 570.25
+  199.25 571.5 198.5 572.5 202.25 571.5
+  206.0 570.5 217.0 566.5 220.5 565.75
+  224.0 565.0 230.25 562.25 232.5 562.25
+  234.75 562.25 238.75 562.25 243.5 564.5
+  248.25 566.75 253.75 567.0 254.5 566.0
+  255.25 565.0 267.75 565.75 267.75 565.75
+  smooth off
+endline
+
+line wall
+  148.5 585.75
+  148.5 585.75 149.0 588.5 150.5 587.75
+  152.0 587.0 154.25 585.5 155.75 584.5
+  157.25 583.5 159.75 581.0 161.25 579.5
+  162.75 578.0 164.75 574.75 168.25 571.5
+  171.75 568.25 172.25 564.75 172.25 562.25
+  172.25 559.75 175.75 561.75 175.25 558.75
+  174.75 555.75 170.75 551.75 169.75 548.5
+  168.75 545.25 167.5 541.75 166.75 540.5
+  166.0 539.25 163.5 538.75 160.5 538.75
+  157.5 538.75 155.75 539.75 154.25 538.75
+  smooth off
+endline
+
+point 217.5 560.0 air-draught -orientation 112.9 -subtype winter
+
+line wall
+  267.75 575.5
+  267.75 575.5 254.5 574.75 250.75 573.0
+  247.0 571.25 240.5 570.0 238.25 569.25
+  236.0 568.5 234.5 569.25 232.75 567.75
+  231.0 566.25 234.25 563.5 232.0 564.5
+  229.75 565.5 228.5 566.0 226.5 567.0
+  224.5 568.0 219.25 568.0 219.0 569.5
+  218.75 571.0 218.75 573.75 213.75 575.0
+  208.75 576.25 209.0 578.75 203.25 579.5
+  197.5 580.25 193.75 581.75 190.25 581.75
+  186.75 581.75 188.0 584.5 185.75 585.25
+  183.5 586.0 181.75 584.25 181.0 581.75
+  180.25 579.25 181.75 576.5 178.5 577.25
+  175.25 578.0 171.25 582.5 169.5 583.5
+  167.75 584.5 165.5 582.25 163.5 583.0
+  161.5 583.75 157.25 587.25 155.5 587.5
+  153.75 587.75 152.0 591.25 150.25 591.25
+  148.5 591.25 146.75 589.0 146.75 589.0
+  smooth off
+endline
+
+point 169.407 538.125 station -name 2015c-XR-12@GoureToiDeLa.Jean-Bernard
+
+point 178.58700000000002 558.745 station -name 2015c-XR-13@GoureToiDeLa.Jean-Bernard
+
+point 149.467 589.865 station -name 2015c-XR-16@GoureToiDeLa.Jean-Bernard
+
+point 161.257 581.915 station -name 2015c-XR-15@GoureToiDeLa.Jean-Bernard
+
+point 179.207 565.755 station -name 2015c-XR-14@GoureToiDeLa.Jean-Bernard
+
+point 190.457 573.345 station -name 2015c-XR-17@GoureToiDeLa.Jean-Bernard
+
+point 199.58700000000002 574.955 station -name 2015c-XR-18@GoureToiDeLa.Jean-Bernard
+
+point 219.327 567.385 station -name 2015c-XR-19@GoureToiDeLa.Jean-Bernard
+
+point 229.347 564.505 station -name 2015c-XR-20@GoureToiDeLa.Jean-Bernard
+
+point 233.70700000000002 565.115 station -name 2015c-XR-21@GoureToiDeLa.Jean-Bernard
+
+point 255.817 569.015 station -name 2015c-XR-22@GoureToiDeLa.Jean-Bernard
+
+endscrap
+
+
+
+scrap Goure2015b-2 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+point 149.75 428.0 label -text "R3"
+
+point 150.25 325.5 narrow-end
+
+line arrow
+  138.75 454.75
+  134.0 434.5
+endline
+
+line arrow
+  114.25 454.75
+  123.0 432.5
+endline
+
+line arrow
+  131.75 490.5
+  114.75 459.75
+endline
+
+line arrow
+  150.0 478.5
+  135.0 457.25
+endline
+
+line arrow
+  150.5 508.25
+  148.25 486.75
+endline
+
+line arrow
+  164.5 529.25
+  149.5 513.5
+endline
+
+point 151.25 360.0 air-draught -orientation 0.0 -subtype winter
+
+line arrow
+  131.75 416.0
+  132.25 394.0
+endline
+
+line arrow
+  132.75 379.5
+  130.5 347.5
+endline
+
+line arrow
+  129.0 337.0
+  127.75 323.5
+endline
+
+line arrow
+  139.0 336.5
+  142.5 324.25
+endline
+
+line contour
+  146.5 330.75
+  146.5 330.75 136.75 326.75 130.0 326.5
+  123.25 326.25 115.75 330.5 113.0 332.0
+  smooth off
+endline
+
+line contour
+  144.75 336.75
+  144.75 336.75 140.0 333.25 135.75 332.75
+  131.5 332.25 128.0 330.75 123.75 332.75
+  119.5 334.75 113.5 337.75 113.5 337.75
+  smooth off
+endline
+
+line contour
+  142.0 343.5
+  142.0 343.5 130.0 341.25 126.75 343.25
+  123.5 345.25 115.5 348.5 115.5 348.5
+  smooth off
+endline
+
+line contour
+  141.75 353.25
+  141.75 353.25 132.0 349.75 127.5 353.25
+  123.0 356.75 113.75 361.75 113.75 361.75
+  smooth off
+endline
+
+line contour
+  143.0 364.25
+  143.0 364.25 136.5 361.5 127.25 365.5
+  118.0 369.5 114.75 372.5 114.75 372.5
+  smooth off
+endline
+
+line contour
+  142.0 374.0
+  142.0 374.0 137.25 372.25 129.25 374.75
+  121.25 377.25 116.25 380.25 116.25 380.25
+  smooth off
+endline
+
+line contour
+  143.75 388.25
+  143.75 388.25 131.0 382.25 125.75 384.75
+  120.5 387.25 112.25 393.25 112.25 393.25
+  smooth off
+endline
+
+line contour
+  143.5 400.0
+  143.5 400.0 134.0 396.5 126.5 398.5
+  119.0 400.5 114.0 403.5 114.0 403.5
+  smooth off
+endline
+
+line contour
+  143.0 408.0
+  143.0 408.0 135.75 403.5 130.0 404.5
+  124.25 405.5 115.25 410.75 115.25 410.75
+  smooth off
+endline
+
+line contour
+  141.25 416.5
+  141.25 416.5 133.0 409.25 127.0 411.5
+  121.0 413.75 118.0 417.25 118.0 417.25
+  smooth off
+endline
+
+line contour
+  146.5 435.75
+  146.5 435.75 142.25 435.75 134.75 437.25
+  127.25 438.75 129.25 439.25 129.25 439.25
+  smooth off
+endline
+
+line contour
+  145.5 443.5
+  145.5 443.5 131.75 443.75 124.5 446.75
+  117.25 449.75 110.25 456.25 108.75 459.0
+  smooth off
+endline
+
+line contour
+  150.5 454.25
+  150.5 454.25 142.5 451.75 137.0 452.25
+  131.5 452.75 125.75 453.75 123.0 456.0
+  120.25 458.25 112.75 462.0 110.0 467.75
+  smooth off
+endline
+
+line contour
+  153.5 461.0
+  153.5 461.0 136.75 460.5 131.5 466.0
+  126.25 471.5 114.75 479.5 114.75 489.25
+  smooth off
+endline
+
+line contour
+  164.0 471.0
+  164.0 471.0 155.0 468.25 140.5 479.75
+  126.0 491.25 122.0 492.0 119.75 498.0
+  smooth off
+endline
+
+line contour
+  167.25 489.5
+  167.25 489.5 159.75 487.75 148.0 492.75
+  136.25 497.75 128.25 502.0 124.75 508.0
+  smooth off
+endline
+
+line contour
+  165.0 502.75
+  165.0 502.75 153.25 502.5 145.25 508.0
+  137.25 513.5 131.75 517.5 129.5 522.5
+  smooth off
+endline
+
+line contour
+  172.0 512.0
+  172.0 512.0 156.5 515.0 151.5 520.5
+  146.5 526.0 140.75 530.25 139.75 536.25
+  smooth off
+endline
+
+line contour
+  175.75 522.0
+  175.75 522.0 160.5 525.0 157.0 529.0
+  153.5 533.0 148.25 541.5 148.25 541.5
+  smooth off
+endline
+
+line rock-edge
+  121.25 442.75
+  126.75 438.25
+  123.25 435.25
+endline
+
+line rock-border -close on
+  123.25 435.25
+  121.25 442.75
+  128.5 442.0
+  130.25 436.0
+  127.0 434.0
+  123.25 435.25
+endline
+
+line pit
+  141.5 427.5
+  141.5 427.5 133.25 432.0 128.5 431.0
+  123.75 430.0 122.5 430.0 119.25 430.0
+  smooth off
+endline
+
+line wall -close on -outline in
+  121.0 449.75
+  121.0 449.75 116.5 459.25 119.25 460.0
+  122.0 460.75 126.75 461.0 127.0 458.5
+  127.25 456.0 128.75 453.75 126.5 452.0
+  124.25 450.25 121.0 449.75 121.0 449.75
+  smooth off
+endline
+
+line label -text "galerie de la Chauve Souris"
+  59.0 297.5
+  59.0 297.5 49.5 380.0 55.0 405.0
+  60.5 430.0 83.5 517.0 95.5 529.5
+  107.5 542.0 129.5 555.5 129.5 555.5
+  smooth off
+endline
+
+line wall
+  154.25 538.75
+  154.25 538.75 144.0 534.75 140.5 530.75
+  137.0 526.75 132.5 524.25 131.75 517.0
+  131.0 509.75 127.25 500.75 125.25 495.75
+  123.25 490.75 112.25 483.25 112.25 477.5
+  112.25 471.75 109.75 459.25 111.25 452.0
+  112.75 444.75 121.25 434.5 121.25 430.75
+  121.25 427.0 122.5 399.5 122.5 392.0
+  122.5 384.5 120.25 334.5 119.25 329.0
+  118.25 323.5 116.75 318.75 116.75 318.75
+  smooth off
+endline
+
+line wall
+  143.5 326.25
+  143.5 326.25 143.0 329.0 141.5 334.0
+  140.0 339.0 137.75 344.5 137.0 350.75
+  136.25 357.0 136.25 364.25 136.25 370.0
+  136.25 375.75 137.5 385.5 137.5 391.25
+  137.5 397.0 138.0 421.0 138.0 424.25
+  138.0 427.5 138.25 428.0 139.75 433.25
+  141.25 438.5 145.5 454.75 147.5 460.25
+  149.5 465.75 160.75 484.0 162.0 490.25
+  163.25 496.5 162.0 500.0 161.5 509.25
+  161.0 518.5 166.0 518.0 167.0 521.5
+  168.0 525.0 170.0 528.5 170.0 528.5
+  smooth off
+endline
+
+point 125.75 320.25 clay
+
+point 136.5 339.5 clay
+
+point 123.25 330.0 clay
+
+point 122.5 337.5 clay
+
+point 133.25 343.0 clay
+
+point 123.5 348.75 clay
+
+point 125.25 357.0 clay
+
+point 133.5 361.0 clay
+
+point 125.0 370.0 clay
+
+point 128.0 380.0 clay
+
+point 133.0 387.75 clay
+
+point 127.75 394.25 clay
+
+point 127.75 402.25 clay
+
+point 134.25 408.75 clay
+
+point 135.25 417.25 clay
+
+point 125.0 422.5 clay
+
+point 133.25 441.5 clay
+
+point 132.0 448.25 clay
+
+point 141.25 456.25 clay
+
+point 117.0 471.75 clay
+
+point 124.5 466.75 clay
+
+point 122.5 484.25 clay
+
+point 133.75 478.25 clay
+
+point 153.75 482.75 clay
+
+point 137.0 489.25 clay
+
+point 143.5 499.75 clay
+
+point 137.75 507.5 clay
+
+point 160.75 519.0 clay
+
+point 157.0 507.0 clay
+
+point 143.75 513.75 clay
+
+point 141.0 523.0 clay
+
+point 150.75 528.75 clay
+
+point 143.25 316.75 label -text "colm."
+
+line wall
+  132.0 317.75
+  132.0 317.75 133.5 323.75 133.5 327.25
+  133.5 330.75 132.25 339.25 134.0 337.75
+  135.75 336.25 139.0 333.25 139.25 331.25
+  139.5 329.25 140.5 325.5 140.5 325.5
+  smooth off
+endline
+
+point 125.35700000000003 326.595 station -name 2015c-XR-5@GoureToiDeLa.Jean-Bernard
+
+point 129.847 390.82500000000005 station -name 2015c-XR-6@GoureToiDeLa.Jean-Bernard
+
+point 129.847 427.33500000000004 station -name 2015c-XR-7@GoureToiDeLa.Jean-Bernard
+
+point 133.67700000000002 431.595 station -name 2015c-XR-8@GoureToiDeLa.Jean-Bernard
+
+point 135.537 467.125 station -name 2015c-XR-9@GoureToiDeLa.Jean-Bernard
+
+point 155.61700000000002 494.765 station -name 2015c-XR-10@GoureToiDeLa.Jean-Bernard
+
+point 153.29700000000003 511.305 station -name 2015c-XR-11@GoureToiDeLa.Jean-Bernard
+
+endscrap
+
+
+
+scrap Goure2015b-3 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+point 95.697 224.235 station -name 2015c-XR-0b@GoureToiDeLa.Jean-Bernard
+
+point 101.56700000000001 257.545 station -name 2015c-XR-1@GoureToiDeLa.Jean-Bernard
+
+point 90.0 237.5 rope
+
+point 117.5 236.75 label -text "puits"
+
+line rock-edge
+  118.5 277.5
+  116.0 276.0
+endline
+
+line rock-edge
+  116.5 279.75
+  118.5 277.5
+  121.0 278.5
+endline
+
+line rock-border -close on
+  116.0 276.0
+  116.5 279.75
+  121.0 278.5
+  121.5 274.0
+  116.0 276.0
+endline
+
+point 116.25 301.75 gypsum-flower
+
+point 117.5 314.25 gypsum-flower
+
+point 97.0 308.75 label -text "bloc"
+
+point 148.5 257.25 label -text "colm."
+
+point 111.75 251.0 label -text "etr."
+
+point 152.5 277.75 narrow-end
+
+point 167.5 263.25 air-draught -orientation 279.3 -subtype winter
+
+point 86.25 245.25 air-draught -orientation 0.0 -subtype winter
+
+line pit
+  110.0 231.75
+  110.0 231.75 106.5 233.25 102.5 233.25
+  98.5 233.25 96.0 231.25 94.25 234.25
+  smooth off
+endline
+
+line rock-border -close on
+  115.25 309.5
+  118.0 309.5
+  118.75 306.5
+  115.25 309.5
+endline
+
+line wall -close on -outline in
+  119.25 308.75
+  119.25 308.75 120.0 313.5 121.0 312.5
+  122.0 311.5 128.0 310.75 126.0 310.0
+  124.0 309.25 122.5 307.5 121.5 307.75
+  120.5 308.0 119.25 308.75 119.25 308.75
+  smooth off
+endline
+
+line arrow
+  97.75 247.0
+  101.25 235.0
+endline
+
+line arrow
+  110.0 266.0
+  98.0 251.25
+endline
+
+line arrow
+  121.5 303.25
+  115.75 286.75
+endline
+
+line contour
+  110.0 241.0
+  110.0 241.0 102.5 232.0 94.5 238.25
+  smooth off
+endline
+
+line contour
+  105.0 249.75
+  105.0 249.75 98.75 242.5 91.25 247.0
+  smooth off
+endline
+
+line contour
+  108.0 253.0
+  108.0 253.0 98.25 250.75 95.5 257.5
+  smooth off
+endline
+
+line contour
+  118.0 259.75
+  118.0 259.75 108.75 260.25 105.25 265.5
+  101.75 270.75 100.0 274.5 100.0 274.5
+  smooth off
+endline
+
+line contour
+  135.75 274.25
+  135.75 274.25 128.25 269.25 121.0 270.0
+  113.75 270.75 106.5 274.75 103.75 276.0
+  smooth off
+endline
+
+line contour
+  133.5 281.75
+  133.5 281.75 120.0 282.5 111.75 284.75
+  103.5 287.0 100.75 289.0 100.75 289.0
+  smooth off
+endline
+
+line contour
+  134.25 288.75
+  134.25 288.75 129.0 287.0 120.5 289.0
+  112.0 291.0 107.5 293.5 107.5 293.5
+  smooth off
+endline
+
+line contour
+  134.0 301.0
+  134.0 301.0 125.5 296.75 119.5 298.25
+  113.5 299.75 107.25 303.75 107.25 303.75
+  smooth off
+endline
+
+line contour
+  137.75 310.75
+  137.75 310.75 126.0 309.0 122.0 310.0
+  118.0 311.0 110.0 315.75 110.0 315.75
+  smooth off
+endline
+
+line wall
+  152.75 268.75
+  152.75 268.75 130.25 271.25 129.75 273.5
+  129.25 275.75 127.75 279.0 129.0 288.5
+  130.25 298.0 130.75 301.5 131.0 306.5
+  131.25 311.5 132.0 317.75 132.0 317.75
+  smooth off
+endline
+
+line wall
+  119.25 229.25
+  119.25 229.25 112.0 228.5 109.0 229.75
+  106.0 231.0 106.25 234.5 106.25 237.25
+  106.25 240.0 107.75 244.75 105.75 246.0
+  103.75 247.25 99.75 247.75 101.25 250.75
+  102.75 253.75 102.25 254.5 105.5 255.75
+  108.75 257.0 109.5 260.5 112.0 263.25
+  114.5 266.0 113.25 263.25 118.0 263.25
+  122.75 263.25 139.25 265.5 142.25 265.5
+  145.25 265.5 151.0 264.0 151.0 264.0
+  smooth off
+endline
+
+line wall
+  81.0 218.5
+  81.0 218.5 92.75 215.75 96.5 215.25
+  100.25 214.75 110.0 214.5 110.0 214.5
+  smooth off
+  115.25 214.5
+endline
+
+line wall
+  116.75 318.75
+  116.75 318.75 114.5 312.25 113.5 305.75
+  112.5 299.25 111.25 283.75 111.0 280.0
+  110.75 276.25 103.5 266.5 102.0 262.25
+  100.5 258.0 96.25 255.0 95.0 251.0
+  93.75 247.0 96.0 246.5 96.0 243.25
+  96.0 240.0 99.0 232.5 95.5 232.25
+  92.0 232.0 83.25 232.75 83.25 232.75
+  smooth off
+endline
+
+point 101.0 230.5 clay
+
+point 102.25 242.5 clay
+
+point 107.75 260.5 clay
+
+point 130.0 267.5 clay
+
+point 117.25 268.5 clay
+
+point 117.5 282.25 clay
+
+point 122.75 293.5 clay
+
+point 121.5 314.0 clay
+
+point 144.037 267.52500000000003 station -name 2015c-XR-3@GoureToiDeLa.Jean-Bernard
+
+point 113.15700000000001 274.095 station -name 2015c-XR-2@GoureToiDeLa.Jean-Bernard
+
+point 115.99700000000001 306.515 station -name 2015c-XR-4@GoureToiDeLa.Jean-Bernard
+
+endscrap
+
+
+
+scrap Goure2015b-4 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+point 393.5 852.25 crystal
+
+point 383.5 850.25 label -text "R1"
+
+line pit
+  389.75 846.25
+  389.75 846.25 400.75 845.25 401.25 842.0
+  smooth off
+endline
+
+line arrow
+  422.0 834.0
+  422.25 826.25
+endline
+
+line contour
+  428.75 830.5
+  428.75 830.5 422.25 828.25 418.75 829.5
+  smooth off
+endline
+
+line wall
+  400.5 837.25
+  400.5 837.25 399.25 839.25 399.25 841.25
+  399.25 843.25 401.75 846.0 403.75 844.75
+  405.75 843.5 411.5 841.25 413.75 839.5
+  416.0 837.75 420.5 836.25 420.5 833.25
+  420.5 830.25 420.0 826.0 420.0 826.0
+  smooth off
+endline
+
+point 404.75 854.0 clay-tree
+
+line wall
+  420.0 826.0
+  420.0 826.0 416.25 823.25 416.25 822.0
+  416.25 820.75 414.75 817.5 414.75 817.5
+  smooth off
+endline
+
+line wall
+  425.5 818.0
+  425.25 825.0
+endline
+
+line wall -reverse on
+  396.75 837.75
+  396.75 837.75 390.25 843.5 393.25 846.0
+  396.25 848.5 399.5 849.0 401.5 849.25
+  403.5 849.5 403.5 848.5 405.75 846.75
+  408.0 845.0 417.25 841.75 418.75 840.25
+  420.25 838.75 421.5 836.75 422.75 835.25
+  424.0 833.75 425.25 825.0 425.25 825.0
+  smooth off
+endline
+
+point 395.847 844.185 station -name 2015b-XR-3@GoureToiDeLa.Jean-Bernard
+
+point 402.307 847.475 station -name 2015b-XR-4@GoureToiDeLa.Jean-Bernard
+
+point 418.317 838.605 station -name 2015b-XR-5@GoureToiDeLa.Jean-Bernard
+
+point 423.447 832.2650000000001 station -name 2015b-XR-6@GoureToiDeLa.Jean-Bernard
+
+point 421.877 817.2950000000001 station -name 2015b-XR-7@GoureToiDeLa.Jean-Bernard
+
+endscrap
+
+
+
+scrap Goure2015b-5 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+point 441.5 857.75 label -text "c.a. ?"
+
+point 443.75 841.25 label -text "colm."
+
+point 435.25 847.75 narrow-end
+
+line wall
+  424.0 848.25
+  424.0 848.25 417.25 838.25 412.75 837.0
+  408.25 835.75 405.0 832.25 403.0 833.75
+  401.0 835.25 400.5 837.25 400.5 837.25
+  smooth off
+endline
+
+line wall
+  396.75 837.75
+  396.75 837.75 398.25 828.25 400.5 828.25
+  402.75 828.25 410.75 830.75 413.5 831.5
+  416.25 832.25 425.5 836.0 426.75 836.25
+  428.0 836.5 432.75 836.75 432.75 836.75
+  smooth off
+endline
+
+point 424.467 841.415 station -name 2015b-XR-0b@GoureToiDeLa.Jean-Bernard
+
+point 413.577 834.615 station -name 2015b-XR-1@GoureToiDeLa.Jean-Bernard
+
+point 401.237 830.125 station -name 2015b-XR-2@GoureToiDeLa.Jean-Bernard
+
+endscrap
+
+

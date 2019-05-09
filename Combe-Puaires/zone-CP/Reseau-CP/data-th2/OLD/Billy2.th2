@@ -1,0 +1,277 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -174.75 -147.0 276.5 284.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {31.498899999999995 1 1.0} {94.48760000000001 Xa-2015-10} Billy2-map.xvi 0 {}
+
+
+
+scrap Billy2_s1 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 206.74 -128.0 0.0 0.0 8.502396 0.0 m]
+
+point 25.25 50.0 clay
+
+point 33.0 56.25 clay
+
+point 24.5 64.0 clay
+
+point 26.5 75.5 clay
+
+point 19.75 73.25 clay
+
+point 19.25 87.25 clay
+
+point 28.25 106.5 clay
+
+point 24.0 99.5 clay
+
+point 19.5 110.0 clay
+
+point 35.25 120.25 clay
+
+point 26.0 118.75 clay
+
+point 26.0 129.25 clay
+
+point 35.25 126.75 clay
+
+point 19.0 122.25 clay
+
+point 23.25 134.25 clay
+
+line border
+  35.75 92.0
+  35.75 92.0 34.0 99.25 32.0 97.5
+  30.0 95.75 28.75 90.5 28.75 90.5
+  smooth off
+endline
+
+line rock-edge
+  35.75 92.0
+  37.0 85.5
+endline
+
+line rock-edge
+  27.75 85.5
+  25.0 86.5
+endline
+
+line rock-edge
+  32.0 84.5
+  27.75 85.5
+  28.75 90.5
+endline
+
+line rock-edge
+  33.5 78.75
+  31.0 83.25
+endline
+
+line rock-edge
+  31.75 73.5
+  33.5 78.75
+  38.0 74.75
+endline
+
+line rock-border -close on
+  35.75 92.0
+  31.25 87.25
+  37.0 85.5
+  38.5 89.25
+  35.75 92.0
+endline
+
+line rock-border
+  31.0 83.25
+  35.75 82.5
+  38.0 74.75
+  31.75 73.5
+  29.25 80.75
+endline
+
+line rock-border -close on
+  28.75 90.5
+  32.0 84.5
+  29.25 80.75
+  25.0 86.5
+  28.75 90.5
+endline
+
+line pit
+  39.0 48.75
+  39.0 48.75 22.75 40.75 16.0 45.25
+endline
+
+point 11.75 16.25 water-flow -orientation 225.7
+
+line pit
+  10.75 -2.75
+  10.75 -2.75 19.25 9.5 26.25 12.0
+  33.25 14.5 44.25 18.75 47.0 18.75
+endline
+
+line arrow
+  5.5 6.0
+  -6.0 -0.5
+endline
+
+point -3.25 92.5 label -text "etr."
+
+point 27.25 155.5 label -text "colm."
+
+point -45.5 -17.75 label -text "<center> v. méandre<br>Billy aval et CP14"
+
+line wall
+  9.75 1.5
+  9.75 1.5 28.5 1.25 33.5 3.75
+  38.32 6.16 46.75 26.5 46.75 26.5
+  smooth off
+endline
+
+line wall -reverse on
+  3.75 16.5
+  3.75 16.5 17.5 33.75 17.5 40.5
+  17.5 47.25 21.5 54.0 19.0 65.25
+  16.5 76.5 15.25 86.0 15.25 94.0
+  15.25 102.0 13.75 131.25 15.75 135.25
+  17.75 139.25 32.5 146.75 35.75 140.25
+  39.0 133.75 37.25 116.25 38.25 109.25
+  39.25 102.25 37.75 99.25 38.5 92.0
+  39.25 84.75 35.75 53.5 35.75 49.25
+  35.75 45.0 40.5 38.75 40.5 38.75
+  smooth off
+endline
+
+point 31.498899999999995 20.317600000000006 station -name Xa-2015-12@Billy2
+
+point 31.498899999999995 94.48760000000001 station -name Xa-2015-10bis@Billy2
+
+point 31.498899999999995 138.73760000000001 station -name Xa-2015-11@Billy2
+
+endscrap
+
+
+
+scrap Billy2_s2 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 206.74 -128.0 0.0 0.0 8.502396 0.0 m]
+
+point 88.25 49.5 water-flow -orientation 265.1
+
+point 72.0 82.75 rope
+
+line rock-edge
+  45.0 75.75
+  48.0 76.5
+  51.5 73.75
+endline
+
+line rock-edge
+  51.5 85.25
+  55.5 83.75
+endline
+
+line rock-edge
+  48.75 88.25
+  49.0 93.0
+endline
+
+line rock-edge
+  42.75 84.0
+  48.75 88.25
+  51.5 85.25
+  51.75 80.5
+endline
+
+line rock-edge
+  38.5 62.5
+  40.5 60.0
+endline
+
+line rock-edge
+  34.0 63.5
+  38.5 62.5
+  43.5 66.25
+endline
+
+line rock-border -close on
+  34.0 63.5
+  43.5 66.25
+  40.5 60.0
+  33.75 60.25
+  34.0 63.5
+endline
+
+line rock-border -close on
+  45.0 75.75
+  51.5 73.75
+  48.75 79.25
+  45.0 75.75
+endline
+
+line rock-border
+  43.0 93.0
+  42.75 84.0
+  51.75 80.5
+  55.5 83.75
+endline
+
+line pit
+  78.25 40.75
+  78.25 40.75 66.5 38.75 66.25 41.5
+  66.0 44.25 63.5 47.5 66.25 50.75
+  69.0 54.0 76.75 57.0 76.75 57.0
+  smooth off
+endline
+
+line pit
+  80.5 58.0
+  80.5 58.0 71.75 55.5 66.25 56.5
+  60.75 57.5 58.25 64.75 53.0 61.5
+  47.75 58.25 42.0 54.25 40.25 52.5
+  38.5 50.75 30.75 42.75 30.75 42.75
+  smooth off
+endline
+
+line wall
+  28.75 90.5
+  28.75 90.5 32.5 84.75 33.0 81.0
+  33.5 77.25 35.75 73.75 32.75 68.5
+  29.75 63.25 22.75 56.0 23.0 51.5
+  23.25 47.0 40.5 38.75 40.5 38.75
+  smooth off
+endline
+
+line wall
+  92.5 58.5
+  92.5 58.5 79.0 52.75 73.25 57.25
+  67.5 61.75 60.25 73.75 57.25 81.0
+  54.25 88.25 50.0 93.75 46.5 93.5
+  43.0 93.25 35.75 91.0 35.75 92.0
+endline
+
+point 147.25 63.0 label -text "<center> v. méandre<br>Billy amont"
+
+line arrow
+  96.75 52.25
+  114.0 57.0
+endline
+
+point 77.5 69.25 height -value [+4 m]
+
+point 76.75 25.0 height -value [-3 m]
+
+point 56.5 1.5 air-draught -orientation 240.1 -subtype summer
+
+line wall
+  46.75 26.5
+  46.75 26.5 55.75 28.5 59.75 31.75
+  63.75 35.0 64.5 36.0 70.25 40.0
+  76.0 44.0 81.5 44.0 81.5 44.0
+  smooth off
+  92.5 44.5
+endline
+
+point 38.27889999999999 69.6876 station -name Xa-2015-13@Billy2
+
+point 69.2389 43.23760000000001 station -name Xa-2015-14@Billy2
+
+endscrap
+
+

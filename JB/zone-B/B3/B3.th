@@ -1,0 +1,80 @@
+ encoding utf-8
+ survey B3 -title "B3" -entrance "B3"
+ 
+ 
+ centerline -extend right
+   date 2010.07.16
+  cs lat-long 
+  fix B3   46.101166833       6.78841683       2066.000000 
+  team "Frédéric Delègue"
+  team "Cédric Chambe"
+  explo-date 2010.07.16
+  explo-team "Frédéric Delègue"
+  explo-team "Cédric Chambe"
+   units lenght meters
+   units compass grad
+   units clino grad
+   data normal from to length compass clino left right up down
+	#flags surface
+#	extend right
+
+   B3 0    0.0      0.0     0.0000      0.5000000      0.5000000      0.3000000      0.5000000    
+   0 1    1.8     355.0    -35.0000      0.5000000      0.5000000      0.3000000      0.5000000    
+
+   #	flags not surface
+   1 2    4.190000       285.0000       -50.0000       2.500000      0.3000000       2.000000       1.000000    
+   2 3    4.600000       100.0000       -21.0000      0.5000000       1.500000      0.5000000      0.5000000    
+   3 4    2.000000       20.00000       -82.0000      0.2000000      0.2000000       0.000000      0.5000000    
+   4 5    2.430000       240.0000       -55.0000      0.6000000      0.5000000       1.000000      0.5000000    
+   5 6    1.560000       80.00000       -30.0000      0.5000000      0.5000000       1.000000      0.5000000    
+   6 7    3.780000       180.0000       -52.0000      0.3000000       1.000000       1.000000       1.000000    
+   7 8    2.240000       380.0000       -85.0000      0.2000000       1.500000       3.000000      0.5000000    
+   8 9    3.320000       155.0000       -40.0000      0.3000000      0.4000000       1.000000      0.5000000    
+   9 10    2.580000       165.0000      -50.0000      0.3000000      0.4000000       1.000000       1.000000   
+ 
+# extend ignore 10    
+     
+ endcenterline
+ 
+
+   
+   centerline -extend right
+   date 2015.07.18
+  team "Frédéric Delègue"
+  team "Guillaume Delorme"
+  explo-date 2015.07.18
+  explo-team "Frédéric Delègue"
+  explo-team "Guillaume Delorme"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   10	2015fd-0	0	0	0	0.2	0.2	1.5	1
+	2015fd-0	2015fd-1	4	17	-10	0.3	0.5	0.4	0.5
+	2015fd-1	2015fd-2	3.4	88	-21	0.3	0.3	0.5	0.5
+	2015fd-2	2015fd-3	4	117	0	1	0.3	0.7	1
+	2015fd-3	2015fd-4	2.9	27	-28	0.5	0.5	0.5	0
+	2015fd-4	2015fd-5	2.5	56	-7	0.5	0.5	0.8	0.5 # arrivée affluent
+	2015fd-5	2015fd-6	2.4	71	-14	0.7	0.7	0.6	0.05
+	2015fd-6	2015fd-7	2.4	55	-30	0.7	0.8	0.8	1
+	2015fd-7	2015fd-8	4	320	-5 0.2	0.2	0.8	1 # passage aquatique suivit d'un méandre étroit ! Courant aspirant fort
+   endcenterline
+ 
+  centerline -extend right -title "Méandre à Karine"
+   date 2015.09.20
+  team "Frédéric Delègue"
+  team "Frédéric Astolfi"
+  team "Karine Salin"
+  explo-date 2015.09.20
+  explo-team "Frédéric Delègue"
+  explo-team "Frédéric Astolfi"
+  explo-team "Karine Salin"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   2015fd-8	2015fd2-1	6.5	308	0	0.3	0.3	1.5	1.
+	2015fd2-1	2015fd2-2	4	328	-1	0.2	0.2	1.5	1. # Etr. ; c.a. soufflant fort ; vue sur 1.5 m, non passable sans élargissement important
+   endcenterline
+   
+ endsurvey B3

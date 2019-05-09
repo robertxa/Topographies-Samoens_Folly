@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>therion table output</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+function xTree(node)
+{
+  var fsub = true;
+  var show = false;
+  var last = node.length;
+  var all = document.getElementsByTagName("tr");
+  for(i = 1; i < all.length; i++) {
+    if ((all[i].id.length > node.length) && (all[i].id.substr(0, node.length) == node)) {
+      if (fsub) {
+        fsub = false;
+        show = (all[i].style.display == "none");
+        last = all[i].id.lastIndexOf(".");
+      }
+      if (show) {
+        if (all[i].id.lastIndexOf(".") == last)
+        all[i].style.display = "";
+      } else {
+        all[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<style type="text/css">
+body {font-family: Verdana, Helvetica, Arial, sans-serif; line-height: 1.5;}
+table {font-size:80%; border-spacing: 0px;}
+th {border-bottom:2px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:1px;}
+td {border-bottom:1px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:0px;}
+</style>
+</head>
+<body>
+<table>
+<tr><th align="left">Comment</th><th align="right">Explored</th><th align="left">Survey</th><th align="left">Station</th><th align="left">Code</th></tr>
+<tr id=""><td align="left">R3 puits P10 à descendre, arrêt sur manque de corde</td><td align="right">&nbsp;</td><td align="left">Réseau qui File Ou</td><td align="left">2017-FD-10</td><td align="left">A</td></tr>
+<tr id=""><td align="left">méandre étroit à désobstruer, courant d'air</td><td align="right">&nbsp;</td><td align="left">CouteauG</td><td align="left">Xa-2016b-1</td><td align="left">D</td></tr>
+<tr id=""><td align="left">Puits remontant à escalader, courant d'air</td><td align="right">&nbsp;</td><td align="left">CouteauG</td><td align="left">Xa-2015f-21</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Colmatage à creuser, courant d'air</td><td align="right">&nbsp;</td><td align="left">CouteauG</td><td align="left">Xa-2015f-31</td><td align="left">D</td></tr>
+<tr id=""><td align="left">.troitures à élargir, courant d'air</td><td align="right">&nbsp;</td><td align="left">CouteauG</td><td align="left">Xa-2015f-37</td><td align="left">D</td></tr>
+<tr id=""><td align="left">Puits à descendre</td><td align="right">&nbsp;</td><td align="left">Réseau du solitaire</td><td align="left">xxInterrogation2</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">Départ à atteindre</td><td align="right">&nbsp;</td><td align="left">Réseau du solitaire</td><td align="left">xx22</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Colmatage à creuser</td><td align="right">&nbsp;</td><td align="left">Réseau du solitaire</td><td align="left">xxInterrogation4</td><td align="left">D</td></tr>
+<tr id=""><td align="left">Arrivée d'eau à voir</td><td align="right">&nbsp;</td><td align="left">Réseau du solitaire</td><td align="left">2017-FD-12</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">Départ à escalader</td><td align="right">&nbsp;</td><td align="left">Réseau du solitaire</td><td align="left">2017-FD-14</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Non renseigné sur la topo 1991</td><td align="right">&nbsp;</td><td align="left">Siphons</td><td align="left">is3-6</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">A revoir ?</td><td align="right">&nbsp;</td><td align="left">Siphons</td><td align="left">is3-5</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">Jction effectuée</td><td align="right">50.0</td><td align="left">Réseau du solitaire</td><td align="left">2017-FD-25</td><td align="left">&nbsp;</td></tr>
+</table>
+</body>
+</html>

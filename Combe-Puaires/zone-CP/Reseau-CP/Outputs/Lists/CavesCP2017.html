@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>therion table output</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+function xTree(node)
+{
+  var fsub = true;
+  var show = false;
+  var last = node.length;
+  var all = document.getElementsByTagName("tr");
+  for(i = 1; i < all.length; i++) {
+    if ((all[i].id.length > node.length) && (all[i].id.substr(0, node.length) == node)) {
+      if (fsub) {
+        fsub = false;
+        show = (all[i].style.display == "none");
+        last = all[i].id.lastIndexOf(".");
+      }
+      if (show) {
+        if (all[i].id.lastIndexOf(".") == last)
+        all[i].style.display = "";
+      } else {
+        all[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<style type="text/css">
+body {font-family: Verdana, Helvetica, Arial, sans-serif; line-height: 1.5;}
+table {font-size:80%; border-spacing: 0px;}
+th {border-bottom:2px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:1px;}
+td {border-bottom:1px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:0px;}
+</style>
+</head>
+<body>
+<table>
+<tr><th align="left">Title</th><th align="right">Length</th><th align="right">Depth</th><th align="right">Explored</th><th align="right">X</th><th align="right">Y</th><th align="right">Altitude</th></tr>
+<tr id="ReseauCP"><td align="left" style="padding-left:+0"><a href="javascript:xTree('ReseauCP')">Réseau de la Combe aux Puaires</a></td><td align="right" style="color:#808080">9555</td><td align="right">379</td><td align="right">&nbsp;</td><td align="right">&nbsp;</td><td align="right">&nbsp;</td><td align="right">&nbsp;</td></tr>
+<tr id="ReseauCP.CP12"><td align="left" style="padding-left:+12">CP12</td><td align="right">519</td><td align="right">243</td><td align="right">&nbsp;</td><td align="right">329551.3</td><td align="right">5109084.6</td><td align="right">2025.0</td></tr>
+<tr id="ReseauCP.CP14"><td align="left" style="padding-left:+12">CP14</td><td align="right">361</td><td align="right">227</td><td align="right">&nbsp;</td><td align="right">329827.5</td><td align="right">5109190.1</td><td align="right">2130.0</td></tr>
+<tr id="ReseauCP.CP16"><td align="left" style="padding-left:+12">CP16</td><td align="right">413</td><td align="right">171</td><td align="right">&nbsp;</td><td align="right">329846.8</td><td align="right">5109189.6</td><td align="right">2134.4</td></tr>
+<tr id="ReseauCP.CP19b"><td align="left" style="padding-left:+12">CP19b</td><td align="right">363</td><td align="right">195</td><td align="right">&nbsp;</td><td align="right">329442.6</td><td align="right">5108928.3</td><td align="right">1984.0</td></tr>
+</table>
+</body>
+</html>

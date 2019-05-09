@@ -1,0 +1,136 @@
+encoding  utf-8
+
+source C75.th
+source C75.th2
+source C75-coupe.th2
+
+# Add config file
+input ../../../config.thc 
+
+ # Debut de la definition du Layout "xviexport"
+layout xviexport
+  # echele auquel on veut faire la topo
+  scale 1 1000
+  # taille de la grille
+  grid-size 10 10 10 m
+  # mettre la grille en arrière plan
+  grid bottom
+endlayout
+# fin de la définition du layout "xviexport"
+
+layout my_layout
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copy langue-fr
+	
+  base-scale 1 1000
+  cs UTM32
+  #scale-bar 100 m
+  scale-bar 50 m
+  #scale 1 1000
+  scale 1 500
+	#origin 13 22 0 m
+	#origin-label 100 K
+	#exclude-pages on 1,2,5
+	#color map-bg 85
+   color map-fg [100 100 80]
+   doc-author "Xavier Robert"
+   map-comment "<it>Plan<ss> - Samoëns, 74, France"
+  transparency on
+  opacity 90
+  statistics topo-length off
+  statistics explo-length off
+  statistics copyright all
+  legend on
+  map-header 0 0 n
+  layers on
+#    debug station-names
+   symbol-hide line survey
+   map-header-bg off
+
+
+ # Titre          
+     code tex-map
+    % Output map title as determined by Therion 5.3 is stored in cavename. 
+    % It will be empty if there are multiple maps selected for any one projection
+    % AND there are multiple source surveys identified in the thconfig file 
+    % ie Therion can not infer a unique title from the input data given.
+    % This code allows you to define an output map title {cavename} if it happens to be empty
+  
+   \edef\temp{\the\cavename}   % cavename from Therion
+   \edef\nostring{}            % empty string
+   \ifx\temp\nostring          % test if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+ 		\cavename={C75} 		
+   \else % if not empty keep the value set by therion, or assign an override cavename here
+   \fi
+   \newtoks\club \club={Groupe Spéléologique Vulcain}
+   endcode   
+endlayout
+
+
+layout my_layout-coupe
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr
+	
+  base-scale 1 1000
+  cs UTM32
+  #scale-bar 100 m
+  scale-bar 50 m
+  scale 1 500
+  #scale 1 1000
+#  origin 13 22 0 m
+#  origin-label 100 K
+#  exclude-pages on 1,2,5
+#  color map-bg 85
+   color map-fg [100 100 80]
+   doc-author "Xavier Robert"
+   map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
+  transparency on
+  opacity 90
+  statistics topo-length off
+  statistics explo-length off
+  statistics copyright all
+  legend on
+  map-header 0 0 n
+  layers on
+#    debug station-names
+   symbol-hide line survey
+   map-header-bg off
+  
+ # Titre          
+     code tex-map
+    % Output map title as determined by Therion 5.3 is stored in cavename. 
+    % It will be empty if there are multiple maps selected for any one projection
+    % AND there are multiple source surveys identified in the thconfig file 
+    % ie Therion can not infer a unique title from the input data given.
+    % This code allows you to define an output map title {cavename} if it happens to be empty
+  
+   \edef\temp{\the\cavename}   % cavename from Therion
+   \edef\nostring{}            % empty string
+   \ifx\temp\nostring          % test if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+ 		\cavename={C75} 		
+   \else % if not empty keep the value set by therion, or assign an override cavename here
+   \fi
+   \newtoks\club \club={Groupe Spéléologique Vulcain}
+   endcode  
+  
+endlayout
+
+
+
+#export map -fmt xvi -layout xviexport -o C75-plan.xvi
+export map -projection extended -fmt xvi -layout xviexport -o C75-coupe.xvi
+#export map -fmt svg -o map.svg -layout my_layout
+export map   -o C75-plan.pdf   -layout my_layout
+export map -projection extended -o C75-coupe.pdf -layout my_layout-coupe
+#export atlas -o atlas.pdf -layout my_layout
+export model -o C75.lox
+# Export des fichiers kml
+export map -proj plan -fmt kml -o C75.kml -layout my_layout

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>therion table output</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+function xTree(node)
+{
+  var fsub = true;
+  var show = false;
+  var last = node.length;
+  var all = document.getElementsByTagName("tr");
+  for(i = 1; i < all.length; i++) {
+    if ((all[i].id.length > node.length) && (all[i].id.substr(0, node.length) == node)) {
+      if (fsub) {
+        fsub = false;
+        show = (all[i].style.display == "none");
+        last = all[i].id.lastIndexOf(".");
+      }
+      if (show) {
+        if (all[i].id.lastIndexOf(".") == last)
+        all[i].style.display = "";
+      } else {
+        all[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<style type="text/css">
+body {font-family: Verdana, Helvetica, Arial, sans-serif; line-height: 1.5;}
+table {font-size:80%; border-spacing: 0px;}
+th {border-bottom:2px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:1px;}
+td {border-bottom:1px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:0px;}
+</style>
+</head>
+<body>
+<table>
+<tr><th align="left">Comment</th><th align="right">Explored</th><th align="left">Survey</th><th align="left">Station</th><th align="left">Code</th></tr>
+<tr id=""><td align="left">Non renseigné sur la topo 1991</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Kp.2</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">Non renseigné sur la topo 1991</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Kp.24</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">Non renseigné sur la topo 1991</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Kp.20</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">Non renseigné sur la topo 1991</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Ko.22</td><td align="left">Q</td></tr>
+<tr id=""><td align="left">petite CF à continuer</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Ko.39</td><td align="left">A</td></tr>
+<tr id=""><td align="left">méandre étroit</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Km.0</td><td align="left">B</td></tr>
+<tr id=""><td align="left">A escalader ?</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Kl.16</td><td align="left">E</td></tr>
+<tr id=""><td align="left">A escalader, arrivée d'eau en crue (parois propres)</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Kj.9</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Bloc à casser, pas de courant d'air</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Kh.0</td><td align="left">D</td></tr>
+<tr id=""><td align="left">Gros volume difficile à équiper, sommet puits de la Gourance ?</td><td align="right">&nbsp;</td><td align="left">jb-riv2</td><td align="left">Gn.16</td><td align="left">B</td></tr>
+<tr id=""><td align="left">grosse CF à suivre en artif</td><td align="right">&nbsp;</td><td align="left">jb-riv</td><td align="left">Kg.24</td><td align="left">E</td></tr>
+<tr id=""><td align="left">petite CF à grimper</td><td align="right">&nbsp;</td><td align="left">jb-riv</td><td align="left">Kg.53</td><td align="left">A</td></tr>
+</table>
+</body>
+</html>

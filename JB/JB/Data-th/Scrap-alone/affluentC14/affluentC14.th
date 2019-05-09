@@ -1,0 +1,52 @@
+encoding utf-8
+
+ survey affluentC14 -title "Affluent C14"
+    
+ centerline -title "Affluent C14 2013-xab-0_2013-xab-0bdouble 2013-xab-21_2012-xab-22"
+   date 2013.07.15
+#   declination 0.0000  degrees
+  team "G.S. Vulcain"
+  team "Xavier Robert"
+  team "Gaëtan Poschmann"
+  explo-date 2012.07.15
+  explo-team "G.S. Vulcain"
+  explo-team "Stéphane Lips"
+  explo-team "Frédéric Delègue"
+  explo-team "Max Pinard"
+  explo-date 2013.07.15
+  explo-team "Xavier Robert"
+  explo-team "Gaëtan Poschmann"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   extend left
+
+#Point depart	Point arrivee	L	A	P	G	D	H	B	Rem
+	2013-xab-0	2013-xab-0double	0	0	0	0.4	0	5.5	10	# Etr.
+	2013-xab-0double	2013-xab-1	1.22	130	0	0.2	0.2	5.5	10
+	2013-xab-1	2013-xab-2	2.57	150	-8	0.2	0.1	5.5	10
+	2013-xab-2	2013-xab-3	1.52	92	0	0.1	0.2	6	10
+	2013-xab-3	2013-xab-4	1.51	190	-42	0.4	0.1	6	10
+	2013-xab-4	2013-xab-5	1.53	112	-7	0.2	0.6	5	10
+	2013-xab-5	2013-xab-6	5.09	187	25	0.4	0.4	1.3	15
+	2013-xab-6	2013-xab-7	4.46	213	-8	0.2	0.2	1	15	# Fin Corde
+	2013-xab-7	2013-xab-8	3.57	200	-44	2.5	1	1.5	15
+	2013-xab-8	2013-xab-9	2.38	121	16	1.2	0.5	1	0.5
+	2013-xab-9	2013-xab-10	4.32	149	-16	2	0.5	0.2	1.5	# Noeud
+	2013-xab-10	2013-xab-11	4.66	192	-38	0.3	1.3	0.3	15
+	2013-xab-11	2013-xab-12	4.24	145	-71	0.2	0.2	7	15
+	2013-xab-12	2013-xab-13	2.1	239	-52	0.3	0.3	8	10
+	2013-xab-13	2013-xab-14	1.77	308	-18	0.2	0.2	8	10
+	2013-xab-14	2013-xab-15	1.43	192	0	0.2	0.2	8	10
+	2013-xab-15	2013-xab-16	1.27	240	-14	0.2	0.2	8	10
+	2013-xab-16	2013-xab-17	2.33	127	-40	0.4	0.4	8	8
+	2013-xab-17	2013-xab-18	7.64	299	-80	2	3	16	1.5
+	2013-xab-18	2013-xab-19	1.98	47	0	1	1	3	2
+	2013-xab-19	2013-xab-20	5.00	108	-4	0.2	0.2	1.5	25
+	2013-xab-20	2013-xab-21	25.95	0	-90	1.5	1	2.8	1.5
+	2013-xab-21	2013-xab-22	3.00	147	7	0.3	1	28	1.5	# Point topo dans meandre du Reverbere
+#dev = 90 m	
+endcenterline
+
+endsurvey

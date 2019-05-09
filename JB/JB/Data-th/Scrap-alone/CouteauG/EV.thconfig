@@ -1,0 +1,136 @@
+encoding  utf-8
+  
+  
+ # File written by tro2therion.f90 (Xavier Robert) 
+ # Based on the work of Roman Muñoz <tatel@euskalnet.net> and Martin Gerbaux <martin.gerbaux@wanadoo.fr> 
+  
+ # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+ # This work is under the GPLv2
+  
+  
+source CouteauG.th
+source CouteauG.th2
+source CouteauG-coupe.th2
+# Add config file
+input ../../../../../config.thc 
+
+
+
+   
+layout xviexport
+	scale 1 1000
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+  
+layout my_layout
+	copy drawingconfig
+	copy headerl
+	
+	doc-title "Réseau du Couteau Grenoblois"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 1300
+	scale 1 750
+	scale-bar 100 m
+	#color map-bg 85
+	color map-fg [100 100 80]
+	#color map-fg altitude
+	transparency on
+	opacity 75
+	map-comment "Réseau du Couteau Grenoblois, plan, Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+  
+	legend-width 22 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	#symbol-hide line survey
+	#debug station-names
+
+	# grid bottom
+	# grid-size 100 100 100 m
+	grid off
+	#  size 15 20 cm
+
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+
+	# add extended-elev on the same pdf
+	#map-image -10 100 sw CouteauG-2015-coupe-EV.pdf
+	#map-image 100 -5 sw CouteauG-2015-coupe-EV.pdf
+	map-image 100 -5 sw CouteauG-2016-coupe-EV.pdf
+  
+endlayout
+ 
+ 
+ 
+layout my_layout-coupe
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	#copy header_coupe
+	  
+	doc-title "Réseau du Couteau Grenoblois"
+	doc-author "Xavier Robert"
+	base-scale 1 1300
+	scale 1 750
+	scale-bar 50 m
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "Coupe développée"
+
+	statistics explo-length off
+	statistics explo off
+	statistics topo-length off
+	statistics copyright off
+	statistics topo off
+	statistics carto off
+	legend off
+	# To suppress the displaY of cave length/depth in map header
+	code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
+	legend-width 6 cm
+
+	map-header 40 100 nw
+	map-header-bg off
+	layers on
+  
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+
+#	To change the Title          
+    code tex-map
+# 		\edef\temp{\the\cavename}   % cavename from Therion
+# 		\edef\nostring{}            % empty string
+# 		\ifx\temp\nostring          % test if cavename is empty
+#			% if empty reassign cavename to describe selected maps as a group
+#			\cavename={Gouffre Jean-Bernard} 		
+#		\else % if not empty keep the value set by therion, or assign an override cavename here
+#		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode
+endlayout
+
+ 
+ export map -projection extended -layout my_layout-coupe -o CouteauG-2016-coupe-EV.pdf
+ export map  -projection plan -o CouteauG-2016-plan-EV.pdf -layout my_layout
+ export model -o CouteauG_2016.lox
+ 

@@ -1,0 +1,105 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 200.0 186.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {20.2292 1 1.0} {39.7275 C42} C42-map.xvi 0 {}
+
+
+
+scrap C42-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 45.7492 24.7875 station -name 7@C42
+
+point 41.2392 36.6075 station -name 6@C42
+
+point 38.6292 48.9675 station -name 5@C42
+
+point 37.0592 40.5475 station -name 3@C42
+
+point 33.2692 40.3575 station -name 2@C42
+
+point 22.8592 47.1375 station -name 1@C42
+
+point 15.0 18.75 label -text "<bf>C42" -scale xl
+
+point 65.0 36.25 label -text "Trémie"
+
+point 64.25 22.75 label -text "-31 m"
+
+point 52.5 52.0 label -text "P20"
+
+point 51.25 13.75 continuation -attr Code D -text "Trémie instable à désobstruer"
+
+point 47.5 22.5 breakdown-choke -orientation 340.0
+
+point 30.25 24.5 dig
+
+point 20.5 57.25 dig
+
+point 9.75 48.5 dig
+
+point 16.75 29.0 entrance -orientation 22.2
+
+line pit
+  35.0 47.25
+  39.0 44.5
+endline
+
+line overhang -close on
+  23.0 42.0
+  23.0 42.0 19.5 44.5 18.25 43.0
+  17.0 41.5 16.5 38.0 17.75 37.5
+  19.0 37.0 18.75 36.25 20.5 36.25
+  22.25 36.25 25.5 36.75 25.5 38.25
+  25.5 39.75 23.0 42.0 23.0 42.0
+  smooth off
+endline
+
+line wall
+  35.5 56.0
+  35.5 56.0 34.75 52.75 36.0 51.25
+  37.25 49.75 37.5 48.0 36.75 46.0
+  36.0 44.0 35.5 41.0 33.5 42.5
+  31.5 44.0 24.75 51.75 22.25 49.5
+  19.75 47.25 20.0 45.75 18.25 43.0
+  16.5 40.25 16.25 38.5 17.75 37.5
+  smooth off
+endline
+
+point 4.0 39.0 altitude -scale l
+
+point 70.75 13.5 altitude -scale l
+
+line wall
+  48.25 25.25
+  46.75 27.5 43.5 34.5 42.75 37.5
+  42.0 40.5 42.5 48.0 41.25 49.0
+  40.0 50.0 38.0 52.25 38.0 52.25
+  smooth off
+  37.5 56.25
+endline
+
+line wall
+  31.75 35.0
+  31.75 35.0 32.25 37.25 34.0 38.0
+  35.75 38.75 38.0 37.5 38.5 38.75
+  39.0 40.0 38.0 46.75 39.0 44.5
+  40.0 42.25 38.5 39.0 40.0 35.5
+  41.5 32.0 43.75 24.5 44.5 23.75
+  smooth off
+endline
+
+line wall
+  20.5 36.25
+  22.5 36.25 26.75 36.75 25.5 38.25
+  24.25 39.75 23.0 39.75 23.0 42.0
+  23.0 44.25 23.5 45.75 25.0 44.5
+  26.5 43.25 31.25 41.25 31.25 39.75
+  31.25 38.25 29.5 36.5 29.5 36.5
+  smooth off
+endline
+
+point 20.2292 39.7275 station -name C42double@C42
+
+endscrap
+
+

@@ -1,0 +1,88 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 328.0 253.98399999999998
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {23.1648 1 1.0} {24.796599999999998 0} V4ter-coupe.xvi 0 {}
+
+
+
+scrap V4ter-coupe -projection extended -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 190.992 -128.0 0.0 0.0 8.1023968 0.0 m]
+
+point 123.0 113.5 label -text "imp." -scale s
+
+point 185.75 59.0 label -text "<it>Lat : 46.10209 <br>Long : 6.77944 <br>Alt : 1830 m" -scale s
+
+point 169.25 95.0 dig
+
+point 150.5 85.25 dig
+
+point 20.5 39.0 dig
+
+point 24.75 9.5 continuation -attr Code D -text "Petite CF à désobstruer, courant d'air"
+
+point 198.75 114.5 air-draught -orientation 72.4 -subtype summer
+
+point 72.5 113.75 air-draught -orientation 293.0 -subtype summer
+
+point 44.5 3.0 air-draught -orientation 311.7 -subtype summer
+
+point 30.75 16.5 narrow-end -orientation 308.5
+
+point 96.0 104.5 entrance -orientation 109.5
+
+point 180.5 112.0 entrance -orientation 252.7
+
+line wall
+  105.75 97.5
+  105.75 97.5 104.5 100.25 106.5 100.0
+  108.5 99.75 123.75 90.75 122.0 89.5
+  120.25 88.25 110.25 82.0 106.75 79.0
+  103.25 76.0 45.0 41.0 42.5 38.75
+  40.0 36.5 30.5 30.25 29.0 30.25
+  27.5 30.25 20.5 30.75 20.5 28.5
+  20.5 26.25 18.5 24.25 20.5 22.75
+  22.5 21.25 26.0 19.0 26.0 19.0
+  smooth off
+endline
+
+line wall
+  169.5 120.5
+  169.5 120.5 172.5 117.75 172.75 116.5
+  173.0 115.25 171.25 114.75 168.75 113.25
+  166.25 111.75 151.5 99.75 149.75 99.75
+  148.0 99.75 132.25 94.0 130.5 93.0
+  128.75 92.0 129.5 91.25 127.0 92.0
+  124.5 92.75 114.0 98.5 112.25 99.5
+  110.5 100.5 108.0 101.25 108.0 103.0
+  108.0 104.75 108.75 107.5 108.75 107.5
+  smooth off
+endline
+
+line wall
+  26.25 20.75
+  26.25 20.75 22.0 22.0 24.5 23.25
+  27.0 24.5 38.5 26.75 41.75 29.25
+  45.0 31.75 98.75 67.5 101.75 69.25
+  104.75 71.0 124.0 83.5 127.25 85.5
+  130.5 87.5 143.5 93.0 147.25 94.75
+  151.0 96.5 171.5 107.5 173.5 107.0
+  175.5 106.5 174.0 104.0 174.0 104.0
+  smooth off
+endline
+
+point 173.22480000000002 110.2366 station -name 6@V4ter
+
+point 146.9848 96.8666 station -name 5@V4ter
+
+point 107.0448 101.7366 station -name 4@V4ter
+
+point 126.9848 88.78659999999999 station -name 3@V4ter
+
+point 101.8948 72.4866 station -name 2@V4ter
+
+point 41.9248 33.5466 station -name 1@V4ter
+
+point 23.1648 24.796599999999998 station -name 0@V4ter
+
+endscrap
+
+

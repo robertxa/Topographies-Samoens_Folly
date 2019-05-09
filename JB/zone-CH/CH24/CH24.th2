@@ -1,0 +1,362 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 836.6687999999999 576.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {640.908 1 1.0} {126.274 CH24} CH24-map.xvi 0 {}
+
+
+
+scrap CH24-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 836.6618 -128.0 0.0 0.0 24.50240972 0.0 m]
+
+point 213.75 356.75 label -text "éboulis"
+
+point 203.75 404.25 label -text "glace"
+
+point 205.75 418.0 label -text "etr."
+
+point 655.75 118.25 label -text "0 m"
+
+point 135.5 355.75 label -text "-33 m"
+
+point 94.5 435.0 label -text "Trémie englacée"
+
+point 137.5 415.75 label -text "glaçon"
+
+point 628.25 87.5 label -text "blocs"
+
+point 618.5 153.25 label -text "glace"
+
+point 664.25 145.5 label -text "CH24" -scale xl
+
+point 652.25 129.0 entrance -orientation 243.1
+
+point 629.0 120.25 ice
+
+point 630.5 117.75 ice
+
+point 625.0 122.0 ice
+
+point 627.5 115.75 ice
+
+point 623.75 118.75 ice
+
+point 625.5 113.25 ice
+
+point 616.75 115.25 ice
+
+point 620.5 112.0 ice
+
+point 628.5 110.25 ice
+
+point 622.5 106.75 ice
+
+point 616.25 111.75 ice
+
+point 613.5 117.0 ice
+
+point 620.25 118.75 ice
+
+point 621.75 123.0 ice
+
+point 616.25 119.5 ice
+
+point 611.75 105.0 blocks
+
+point 634.5 114.25 blocks
+
+point 621.0 129.0 blocks
+
+point 600.0 103.75 blocks
+
+point 601.75 118.0 blocks
+
+line gradient
+  585.25 118.25
+  528.25 149.0
+endline
+
+line contour
+  534.75 120.0
+  534.75 120.0 533.0 137.25 537.25 142.5
+  541.5 147.75 557.5 161.25 557.5 161.25
+  smooth off
+endline
+
+line contour
+  556.25 112.5
+  556.25 112.5 555.75 127.75 559.0 133.25
+  562.25 138.75 577.0 150.0 577.0 150.0
+  smooth off
+endline
+
+line contour -reverse on
+  587.5 142.25
+  587.5 142.25 578.0 133.25 576.0 125.25
+  574.0 117.25 572.0 104.25 572.0 104.25
+  smooth off
+endline
+
+point 511.0 168.5 camp
+
+area sand
+  l14-203-336
+  l84-483-186
+  l17-174-336
+  l85-595-124
+endarea
+
+line label -id l85-595-124
+  579.25 98.0
+  579.25 98.0 590.75 106.5 593.25 115.25
+  595.75 124.0 597.75 140.75 597.75 140.75
+  smooth off
+endline
+
+line label -id l84-483-186
+  492.5 201.0
+  492.5 201.0 481.0 183.0 477.5 174.75
+  474.0 166.5 471.75 155.25 471.75 155.25
+  smooth off
+endline
+
+point 561.75 123.0 sand
+
+point 500.25 151.5 sand
+
+point 544.5 146.5 sand
+
+point 576.0 133.75 sand
+
+point 543.75 132.75 sand
+
+point 525.25 155.5 sand
+
+point 496.5 176.5 sand
+
+point 224.25 301.25 sand
+
+point 253.25 270.25 sand
+
+point 276.75 267.25 sand
+
+point 253.75 285.75 sand
+
+area sand
+  l14-203-336
+  l70-204-304
+  l17-174-336
+  l71-292-251
+endarea
+
+line label -id l71-292-251
+  277.25 239.75
+  277.25 239.75 295.75 251.0 296.75 258.75
+  297.75 266.5 299.25 279.5 299.25 279.5
+  smooth off
+endline
+
+line label -id l70-204-304
+  224.5 327.75
+  224.5 327.75 213.5 318.25 209.25 311.0
+  205.0 303.75 197.0 292.0 197.0 292.0
+  smooth off
+endline
+
+area pebbles
+  l67-192-374
+  l17-174-336
+  l68-198-309
+  l14-203-336
+endarea
+
+line label -id l68-198-309
+  188.0 303.0
+  188.0 303.0 199.5 307.25 202.75 315.0
+  206.0 322.75 214.5 332.5 214.5 332.5
+  smooth off
+endline
+
+line label -id l67-192-374 -reverse on
+  154.5 355.25
+  154.5 355.25 157.5 363.5 163.75 367.0
+  170.0 370.5 176.25 374.75 180.25 374.5
+  184.25 374.25 191.0 374.5 191.0 374.5
+  smooth off
+endline
+
+point 200.75 446.75 continuation -attr Code G -text "glace et étroiture"
+
+point 194.5 429.75 narrow-end -orientation 27.8
+
+point 182.75 413.75 ice
+
+point 186.75 415.0 ice
+
+point 187.5 419.0 ice
+
+point 190.25 423.0 ice
+
+point 138.75 393.25 blocks -scale s
+
+point 136.0 399.75 blocks -scale s
+
+point 130.5 382.0 blocks -scale s
+
+point 131.25 394.25 blocks -scale s
+
+point 121.5 382.75 blocks -scale s
+
+point 124.25 392.5 blocks -scale s
+
+point 136.25 390.25 ice
+
+point 134.75 395.75 ice
+
+point 134.25 383.25 ice
+
+point 128.0 384.0 ice
+
+point 130.0 390.0 ice
+
+point 129.75 396.25 ice
+
+point 119.75 385.25 ice
+
+line gradient
+  122.25 389.25
+  135.0 385.5
+endline
+
+line contour
+  132.5 404.25
+  132.5 404.25 133.75 396.5 132.5 389.25
+  131.25 382.0 125.5 371.75 125.5 371.75
+  smooth off
+endline
+
+line contour -reverse on
+  113.0 374.75
+  113.0 374.75 123.0 378.0 125.0 383.75
+  127.0 389.5 127.25 390.5 127.25 394.25
+  127.25 398.0 126.0 404.75 126.0 404.75
+  smooth off
+endline
+
+point 109.0 389.75 ice
+
+point 116.25 390.5 ice
+
+point 115.5 399.0 ice
+
+point 107.5 394.25 ice
+
+point 95.5 394.25 ice
+
+point 97.5 401.75 ice
+
+point 108.5 404.0 ice
+
+point 121.0 396.25 blocks -scale s
+
+point 113.75 393.0 blocks -scale s
+
+point 111.25 386.5 blocks -scale s
+
+point 103.5 391.5 blocks -scale s
+
+point 110.0 399.0 blocks -scale s
+
+point 104.0 406.25 blocks -scale s
+
+point 101.5 398.5 blocks -scale xs
+
+point 96.0 407.0 breakdown-choke -orientation 306.0
+
+point 91.75 398.75 breakdown-choke -orientation 306.0
+
+line wall -subtype pebbles
+  89.5 391.0
+  103.0 383.5
+endline
+
+line wall -subtype pebbles
+  117.5 403.25
+  101.5 413.0
+endline
+
+line wall -id l17-174-336
+  103.0 383.5
+  103.0 383.5 108.75 379.75 112.25 378.0
+  115.75 376.25 128.75 379.5 133.5 376.25
+  138.25 373.0 143.0 371.75 149.75 366.75
+  156.5 361.75 190.25 312.25 196.0 306.0
+  201.75 299.75 288.25 241.5 295.5 239.5
+  302.75 237.5 459.75 165.75 466.5 163.5
+  473.25 161.25 588.5 94.5 601.25 97.75
+  614.0 101.0 615.75 104.0 618.0 101.75
+  620.25 99.5 626.25 96.25 631.25 98.25
+  636.25 100.25 632.0 106.5 635.25 109.5
+  638.5 112.5 645.5 115.5 646.5 115.0
+  647.5 114.5 650.0 110.0 650.0 110.0
+  smooth off
+endline
+
+line wall
+  187.75 421.0
+  187.75 421.0 178.75 413.5 178.5 408.25
+  178.25 403.0 181.25 382.25 175.25 385.25
+  169.25 388.25 141.75 411.0 135.25 403.0
+  128.75 395.0 121.5 402.75 117.5 403.25
+  smooth off
+endline
+
+line wall -subtype invisible
+  650.0 110.0
+  650.0 110.0 647.5 122.25 645.25 126.75
+  643.0 131.25 637.5 139.75 637.5 139.75
+  smooth off
+endline
+
+line wall -id l14-203-336
+  637.5 139.75
+  637.5 139.75 641.75 130.5 639.75 130.5
+  637.75 130.5 631.75 127.75 629.5 130.0
+  627.25 132.25 629.25 141.5 622.0 137.5
+  614.75 133.5 613.0 128.0 610.0 126.75
+  607.0 125.5 604.25 123.25 599.25 127.0
+  594.25 130.75 545.25 159.5 538.25 164.0
+  531.25 168.5 490.25 194.25 482.5 197.0
+  474.75 199.75 316.5 259.25 306.75 264.25
+  297.0 269.25 218.25 313.25 212.5 321.5
+  206.75 329.75 183.5 370.75 182.25 379.25
+  181.0 387.75 182.75 398.75 185.5 404.0
+  188.25 409.25 191.0 419.75 191.0 419.75
+  smooth off
+endline
+
+point 96.38800000000003 390.004 station -name 8@CH24
+
+point 112.43800000000005 380.48400000000004 station -name 7@CH24
+
+point 133.75800000000004 379.494 station -name 6@CH24
+
+point 175.95800000000003 376.784 station -name 5@CH24
+
+point 202.318 309.284 station -name 4@CH24
+
+point 650.0 110.0 altitude -align bottom-right
+
+point 89.5 391.0 altitude -align bottom-left
+
+point 182.25 379.25 altitude -align right
+
+point 299.358 247.074 station -name 3@CH24
+
+point 472.61800000000005 174.724 station -name 2@CH24
+
+point 601.418 110.04400000000001 station -name 1@CH24
+
+point 640.908 126.274 station -name CH24double@CH24
+
+endscrap
+
+

@@ -1,0 +1,101 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 267.5 239.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.3731 1 1.0} {102.3588 B3} B3-coupe.xvi 0 {}
+
+
+
+scrap coupeB3-1 -projection extended -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+line wall -reverse on
+  120.0 42.25
+  120.0 42.25 116.75 34.25 118.25 33.75
+  119.75 33.25 121.25 32.75 121.25 32.75
+  smooth off
+endline
+
+line wall -reverse on
+  42.5 110.0
+  42.5 110.0 37.25 104.5 39.25 104.0
+  41.25 103.5 43.5 100.5 46.25 100.5
+  49.0 100.5 54.0 98.0 57.0 95.0
+  60.0 92.0 71.75 84.75 75.0 82.5
+  78.25 80.25 74.75 77.5 77.5 74.75
+  80.25 72.0 86.0 71.5 87.75 68.75
+  89.5 66.0 98.75 56.5 101.25 54.0
+  103.75 51.5 109.5 43.25 111.75 41.0
+  114.0 38.75 115.75 32.0 116.25 36.0
+  116.75 40.0 116.75 42.75 116.75 42.75
+  smooth off
+endline
+
+point 102.5 64.0 label -text "Boyau"
+
+point 82.5 88.25 label -text "Etr."
+
+point 96.75 22.5 label -text "-19 m"
+
+point 21.25 98.5 label -text "0 m"
+
+point 90.75 44.5 label -text "R2"
+
+point 61.0 82.5 blocks
+
+point 53.25 82.25 blocks
+
+point 9.5 109.75 label -text "B3" -scale xl
+
+point 105.75 29.5 label -text "R3"
+
+point 116.25 17.5 label -text "Cascade"
+
+point 138.25 26.25 continuation
+
+point 124.75 26.75 water-flow -orientation 97.7
+
+point 119.5 51.25 water-flow -orientation 189.5
+
+point 27.5 107.5 entrance -orientation 119.7
+
+line wall -reverse on
+  121.25 24.25
+  119.25 24.25 111.25 23.25 111.0 26.5
+  110.75 29.75 113.5 34.25 110.25 34.5
+  107.0 34.75 102.0 37.5 99.5 40.25
+  97.0 43.0 98.5 47.5 96.0 49.75
+  93.5 52.0 89.5 59.75 86.75 61.0
+  84.0 62.25 83.75 62.0 81.75 64.25
+  79.75 66.5 76.0 69.5 75.25 71.25
+  74.5 73.0 75.75 79.25 72.25 79.25
+  68.75 79.25 50.0 78.25 49.5 80.5
+  49.0 82.75 48.25 94.0 45.25 95.5
+  42.25 97.0 40.0 101.0 38.25 100.75
+  36.5 100.5 34.25 100.5 34.25 100.5
+  smooth off
+endline
+
+point 118.0931 29.2188 station -name 10@B3
+
+point 110.9131 36.3988 station -name 9@B3
+
+point 100.3431 44.0788 station -name 8@B3
+
+point 98.2831 52.6588 station -name 7@B3
+
+point 88.0931 63.5088 station -name 6@B3
+
+point 82.6231 66.2888 station -name 5@B3
+
+point 76.4031 73.5688 station -name 4@B3
+
+point 74.2131 81.1288 station -name 3@B3
+
+point 57.0731 86.9988 station -name 2@B3
+
+point 45.4131 98.6588 station -name 1@B3
+
+point 39.3731 102.3588 station -name 0@B3
+
+endscrap
+
+

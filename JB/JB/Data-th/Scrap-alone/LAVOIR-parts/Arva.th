@@ -1,0 +1,54 @@
+encoding utf-8
+
+ survey Arva -title "Galerie de l'Arva - Lavoir"
+	
+ centerline -title "Lavoir 2013-SL1-0_2013-SL1-0bis 2013-SL1-21_2013-SL1-22"
+	date 2013.07.15
+#	team "G.S. Vulcain"
+	team "Stéphane Lips"
+	team "David Parrot"
+	team "Lucille Delacour"
+	explo-date 2013.07.15
+#	explo-team "G.S. Vulcain"
+	explo-team "Stéphane Lips"
+	explo-team "David Parrot"
+	explo-team "Lucille Delacour"
+	units lenght meters
+	units compass degrees
+	units clino degrees
+	data normal from to length compass clino left right up down
+	extend right
+
+#Point depart	Point arrivee	L	A	P	G	D	H	B	Rem
+2013-SL1-0	2013-SL1-0bis	0.00	0.00	0.00	0.40	0.10	0.70	0.90
+2013-SL1-0bis	2013-SL1-0b	2.56	240.00	40.00	0.40	0.40	0.30	0.30 # Trémie, courant d'air soufflant
+2013-SL1-0	2013-SL1-1	5.50	44.00	-40.00	0.60	0.60	1.50	1.50
+2013-SL1-1	2013-SL1-2	4.78	17.00	-32.00	0.50	0.50	0.60	0.60
+2013-SL1-2	2013-SL1-3	2.72	325.00	-2.00	0.50	0.50	0.30	0.30
+2013-SL1-3	2013-SL1-4	3.35	355.00	-22.00	0.30	0.30	0.60	0.50
+2013-SL1-4	2013-SL1-5	6.52	310.00	-5.00	0.80	0.80	1.00	1.50
+2013-SL1-5	2013-SL1-6	4.32	325.00	-36.00	0.60	0.60	0.60	1.50
+2013-SL1-6	2013-SL1-7	2.14	275.00	-30.00	0.20	1.20	1.50	1.50
+2013-SL1-7	2013-SL1-8	4.16	329.00	-25.00	0.50	0.50	1.00	1.50
+2013-SL1-8	2013-SL1-9	5.26	305.00	-15.00	0.50	0.50	1.00	3.00
+2013-SL1-9	2013-SL1-10	3.18	306.00	-25.00	0.80	0.80	3.00	4.00
+2013-SL1-10b	2013-SL1-10bis	0.00	0.00	0.00	1.00	1.00	0.50	0.50
+2013-SL1-10b	2013-SL1-10c	2.23	154.00	43.00	0.30	0.30	0.20	0.20
+2013-SL1-10b	2013-SL1-11	5.12	50.00	-42.00	0.80	0.80	0.30	0.30 # Trémie, courant d'air soufflant
+2013-SL1-11	2013-SL1-12	2.86	325.00	-32.00	0.50	0.50	0.60	0.60
+2013-SL1-12	2013-SL1-13	6.02	352.00	-15.00	1.00	1.00	0.60	0.80
+2013-SL1-13	2013-SL1-14	4.88	323.00	-22.00	0.60	0.60	1.00	1.50
+2013-SL1-14	2013-SL1-15	8.61	3.00	-45.00	2.00	2.00	0.50	1.50
+2013-SL1-15	2013-SL1-16	4.65	6.00	-50.00	1.00	1.00	1.50	1.50
+2013-SL1-16	2013-SL1-10	3.27	46.00	-60.00	1.00	1.00	3.00	2.00 # Intersection
+2013-SL1-10	2013-SL1-17	7.41	345.00	-40.00	0.60	0.60	4.00	1.50
+2013-SL1-17	2013-SL1-18	3.78	318.00	-39.00	1.50	1.50	4.00	1.50
+2013-SL1-18	2013-SL1-19	3.84	355.00	-21.00	0.00	0.00	4.00	2.00
+2013-SL1-19	2013-SL1-20	4.00	325.00	-20.00	3.00	10.00	4.00	30.00 # Sommet Puits, départs
+2013-SL1-20	2013-SL1-21	14.20	100.00	-80.00	0.60	0.60	20.00	17.00
+2013-SL1-21	2012b-xa-27	17.40	0.00	-90.00	2.00	2.00	30.00	0.00 # Base Puit, jonction cairn avec caouech, point 22 SL1
+
+# Dev = 133 m
+
+endcenterline
+endsurvey

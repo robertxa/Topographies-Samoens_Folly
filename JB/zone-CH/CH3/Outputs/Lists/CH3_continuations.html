@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>therion table output</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+function xTree(node)
+{
+  var fsub = true;
+  var show = false;
+  var last = node.length;
+  var all = document.getElementsByTagName("tr");
+  for(i = 1; i < all.length; i++) {
+    if ((all[i].id.length > node.length) && (all[i].id.substr(0, node.length) == node)) {
+      if (fsub) {
+        fsub = false;
+        show = (all[i].style.display == "none");
+        last = all[i].id.lastIndexOf(".");
+      }
+      if (show) {
+        if (all[i].id.lastIndexOf(".") == last)
+        all[i].style.display = "";
+      } else {
+        all[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<style type="text/css">
+body {font-family: Verdana, Helvetica, Arial, sans-serif; line-height: 1.5;}
+table {font-size:80%; border-spacing: 0px;}
+th {border-bottom:2px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:1px;}
+td {border-bottom:1px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:0px;}
+</style>
+</head>
+<body>
+<table>
+<tr><th align="left">Comment</th><th align="right">Explored</th><th align="left">Survey</th><th align="left">Station</th><th align="left">Code</th></tr>
+<tr id=""><td align="left">étroiture à tirer après escalade</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2017-JR-18</td><td align="left">D</td></tr>
+<tr id=""><td align="left">étroiture à tirer après escalade facile</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2017-JR-15</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Puits à descendre</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">8</td><td align="left">P</td></tr>
+<tr id=""><td align="left">Escalade</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2015-Xa-17</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Escalade</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2015-Xa-6</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Escalade</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2015-Xa-2</td><td align="left">E</td></tr>
+<tr id=""><td align="left">Bloc à tirer</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2015-Xa-0</td><td align="left">D</td></tr>
+<tr id=""><td align="left">Puits à descendre</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2015-Xa-22</td><td align="left">P</td></tr>
+<tr id=""><td align="left">Méandre étroit, pas de courantd'air</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2017-JR-9</td><td align="left">D</td></tr>
+<tr id=""><td align="left">Etroiture en sommet de puits à tirer</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2017-JR-15</td><td align="left">D</td></tr>
+<tr id=""><td align="left">Etroiture en sommet de puits à tirer</td><td align="right">&nbsp;</td><td align="left">F3</td><td align="left">2017-JR-18</td><td align="left">D</td></tr>
+</table>
+</body>
+</html>

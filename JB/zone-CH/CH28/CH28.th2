@@ -1,0 +1,74 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.0 -129.0 261.25 204.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.3663 1 1.0} {39.3721 CH28} CH28-2015-map.xvi 0 {}
+
+
+
+scrap CH28-1 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.502401619999999 0.0 m]
+
+point 46.75 34.0 pebbles
+
+point 61.5 37.0 pebbles
+
+point 60.25 27.5 pebbles
+
+point 42.0 33.5 pebbles
+
+point 45.5 41.5 pebbles
+
+point 110.75 64.75 dig
+
+point 129.75 44.25 continuation -attr code D -text "Trémie soufflante"
+
+point 15.0 75.25 label -text "<bf>CH28" -scale xl
+
+point 21.25 48.75 entrance -orientation 117.5
+
+point 52.75 35.5 water-flow -orientation 291.5
+
+point 67.5 16.5 water-flow -orientation 332.4
+
+point 105.75 41.5 water-flow -orientation 250.0
+
+point 132.0 58.0 air-draught -orientation 238.1 -subtype winter
+
+point 117.25 48.75 breakdown-choke -orientation 59.4
+
+line wall -subtype invisible
+  43.5 54.25
+  43.5 54.25 35.5 40.75 34.25 37.0
+  33.0 33.25 30.75 25.75 32.5 24.0
+endline
+
+line wall
+  114.75 52.75
+  114.75 52.75 102.75 44.0 97.5 43.5
+  92.25 43.0 73.25 36.75 67.5 37.75
+  61.75 38.75 47.0 45.75 45.5 46.25
+  44.0 46.75 42.75 51.25 43.5 54.25
+endline
+
+line wall
+  32.5 24.0
+  32.5 24.0 30.75 28.75 36.5 28.75
+  42.25 28.75 49.25 33.75 54.5 29.5
+  59.75 25.25 61.5 18.5 63.75 23.0
+  66.0 27.5 62.99 31.03 66.2463 30.6421
+  69.5 30.25 87.0 31.75 93.25 32.0
+  99.5 32.25 96.0 32.25 104.75 36.0
+  113.5 39.75 118.5 43.75 118.5 43.75
+  smooth off
+endline
+
+point 114.50630000000001 45.9221 station -name 3@CH28
+
+point 99.6163 39.2021 station -name 2@CH28
+
+point 66.2463 30.6421 station -name 1@CH28
+
+point 39.3663 39.3721 station -name 0@CH28
+
+endscrap
+
+
