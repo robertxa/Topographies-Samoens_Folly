@@ -4,8 +4,9 @@ Base de données Topographiques des systèmes karstiques du massif du Folly (Sam
 Overview
 --------
 
-Ce dépôt contient les données topographiques et les dessins associés des cavités du massif du Folly à Samoëns (74. France).
-Elles ont été majoritairement produites par les spéléologues du club Vulcain de (Lyon, France) '_http://www.groupe-speleo-vulcain.com'.
+Ce dépôt contient les données topographiques et les dessins associés des cavités du massif du Folly à Samoëns (74, France).
+Cela concerne les systèmes du gouffre Jean-Bernard, du réseau de la Combe aux Puaires, des Avoudrues et du A21.
+Elles ont été majoritairement produites par les spéléologues du club Vulcain de (Lyon, France) 'http://www.groupe-speleo-vulcain.com'.
 
 
 Description
@@ -21,7 +22,7 @@ Uniquement les fichiers sources sont sauvegardés pour des raisons de taille. J'
 	
 Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fichiers Therion.
 
-L'ensemble de ces topographies sont publiées et décrites dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet ('_https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/')
+L'ensemble de ces topographies sont publiées et décrites dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet ('https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/')
 
 Licence
 -------
@@ -32,4 +33,4 @@ L'ensemble de ces données sont publiées sous la licence libre Creative Commons
 Contact
 -------
 
-Pour plus d'informations, contacter le club Vulcain (`_https://www.groupe-speleo-vulcain.com/contacts/`)
+Pour plus d'informations, contacter le club Vulcain (`https://www.groupe-speleo-vulcain.com/contacts/`)
