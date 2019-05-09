@@ -177,7 +177,6 @@ layout my_layout
   # la mairie ou est place la cavite dont le nom est probablement
   # le titule de la topo.
   map-comment "Massif du Folly, Samoëns, 74, France"
-#  map-comment "Synthèse 2010"
 
   # Afficher les statistiques d'explo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs
@@ -208,6 +207,7 @@ layout my_layout
   \else % if not empty keep the value set by therion, or assign an override cavename here
   \fi
   \newtoks\club \club={Groupe Spéléologique Vulcain}
+  \newtoks\synth \synth={Xavier Robert}
   endcode   
 
 endlayout
@@ -216,16 +216,16 @@ endlayout
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/Folly-2018-plan-Sat.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/Folly-2019-plan-Sat.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
- export model -o Outputs/3D/Folly-tot-Sat-2018.lox
-# export model -o Outputs/3D/Folly-tot-Xav-2018.3d
+ export model -o Outputs/3D/Folly-tot-Sat-2019.lox
+# export model -o Outputs/3D/Folly-tot-Xav-2019.3d
 
 ##export model -o Outputs/vrml/Folly2014.vrml
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2018 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2019 -layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Folly-tot-2014.kml -layout my_layout

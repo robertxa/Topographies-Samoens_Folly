@@ -170,10 +170,6 @@ layout my_layout
   legend-width 40 cm
   legend-columns 4
 
-
-  # Il faut s'exprimer avec la langue de Voltaire...
-  language fr
-
   # echelle graphique 100 m ampleur
   scale-bar 1000 m
 
@@ -212,6 +208,7 @@ layout my_layout
   \else % if not empty keep the value set by therion, or assign an override cavename here
   \fi
   \newtoks\club \club={Groupe Spéléologique Vulcain}
+  \newtoks\synth \synth={Xavier Robert}
   endcode   
 
 endlayout
