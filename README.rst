@@ -6,7 +6,7 @@ Overview
 
 Ce dépôt contient les données topographiques et les dessins associés des cavités du massif du Folly à Samoëns (74, France).
 Cela concerne les systèmes du gouffre Jean-Bernard, du réseau de la Combe aux Puaires, des Avoudrues et du A21.
-Elles ont été majoritairement produites par les spéléologues du club Vulcain de (Lyon, France) 'http://www.groupe-speleo-vulcain.com'.
+Elles ont été majoritairement produites par les spéléologues du club Vulcain de (Lyon, France) 'https://www.groupe-speleo-vulcain.com'.
 
 
 Description
@@ -27,7 +27,7 @@ L'ensemble de ces topographies sont publiées et décrites dans les différents 
 Licence
 -------
 
-L'ensemble de ces données sont publiées sous la licence libre Creative Commons Attribution-ShareAlike-NonCommecial (Attribution, partage à l'identique et non commerciale):
+L'ensemble de ces données sont publiées sous la licence libre Creative Commons Attribution-ShareAlike-NonCommecial (Attribution, partage à l'identique et non commerciale) :
 	<http://creativecommons.org/licenses/by-nc-sa/3.0/>
 
 Contact
