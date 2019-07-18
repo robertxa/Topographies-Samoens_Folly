@@ -147,9 +147,9 @@ point 520.5 384.0 label -text "R5"
 
 point 656.0 412.0 height -value [+10 m]
 
-point 734.5 496.5 height -value [+25 m]
+point 633.0 506.5 height -value [+25 m]
 
-point 735.0 564.0 height -value [+20 m]
+point 650.0 560.5 height -value [+20 m]
 
 point 814.5 715.0 height -value [+30 m]
 
@@ -158,9 +158,9 @@ point 796.0 889.0 height -value [+10 m]
 point 779.0 826.0 height -value [+20 m]
 
 line label -text "escalades du Lavoir
-  690.0 355.0
-  690.0 355.0 807.0 421.0 825.5 452.0
-  844.0 483.0 905.0 570.5 908.0 584.5
+  722.5 313.0
+  722.5 313.0 848.5 394.5 867.0 425.5
+  885.5 456.5 905.0 570.5 908.0 584.5
   smooth off
 endline
 
@@ -954,7 +954,7 @@ endscrap
 
 scrap lavoirc6 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
-point 327.5 142.0 altitude
+point 347.5 142.0 altitude -align left
 
 point 365.0 120.0 height -value [-8 m]
 

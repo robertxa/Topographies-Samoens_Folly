@@ -58,7 +58,7 @@ layout my_layout
   map-header 0 -10 se
   map-header-bg off
   layers on
-  #symbol-hide line survey
+  symbol-hide line survey
   #debug station-names
 
  # grid bottom
@@ -113,8 +113,7 @@ layout my_layout-coupe
   #map-header 50 20 nw
   map-header-bg off
   layers on
-  #symbol-hide line survey
-  #symbol-hide point station DO NOT WORK !
+  symbol-hide line survey
   #debug station-names
 
  # grid bottom
@@ -141,9 +140,9 @@ endlayout
 # export map -fmt xvi -layout xviexport -o Lavoir-map2017.xvi
 # export map -projection extended -fmt xvi -layout xviexport -o Lavoir-coupe2017b.xvi
   
- export map -o Lavoir-plan2017.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Lavoir-coupe2017.pdf
- export model -o Lavoir2017.lox
+ export map -o Outputs/2D/Lavoir-plan2019.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/2D/Lavoir-coupe2019.pdf
+ export model -o Outputs/3D/Lavoir2019.lox
  #export model -o Lavoir2017.vrml
 # export model -o Lavoir2017.3dmf
  #export survey-list -o sceances2017.html

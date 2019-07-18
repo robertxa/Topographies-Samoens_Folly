@@ -127,7 +127,8 @@ encoding  utf-8
     input Drawing-th2/Lavoir-boeuf.th2
     input Drawing-th2/Arva.th2
     input Drawing-th2/Brownies.th2
-    input Drawing-th2/FileOu.th2
+    input Drawing-th2/fileOu.th2
+    input Drawing-th2/fileOu2019.th2
     input Drawing-th2/shunt-branlots.th2
     input Drawing-th2/affluentC14.th2
     
@@ -199,11 +200,9 @@ encoding  utf-8
 
 	 join brownies1 Arva2 
      join Lavoir-new1 Lavoir7
-     
+     join fileou2019-SP1 fileou2
      join lavoir-sec Boeuf2
-     
      join base-racc Racc5
-     
      join Lavoir3old B19
      
      #join Lavoir3old gadouejonction
@@ -371,6 +370,8 @@ encoding  utf-8
 	 fileou1
 	break
 	 fileou2
+	break
+	 fileou2019-SP1
    break  
      Boeuf1
    break  

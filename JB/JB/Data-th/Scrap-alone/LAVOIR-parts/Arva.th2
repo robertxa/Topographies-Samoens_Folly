@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -136.0 -2534.0 1654.0 144.0
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_adjust -131.0 -2582.0 1650.0 140.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} SommetLavoirSquelette.gif 0 {}
 
 
@@ -36,6 +36,11 @@ line wall -close on -reverse on -outline in
   982.5 -2137.5 974.5 -2129.5 973.0 -2127.0
   971.5 -2124.5 965.0 -2112.5 965.0 -2112.5
   smooth off
+endline
+
+line wall -subtype invisible
+  898.0 -2200.5
+  898.0 -2200.5 929.0 -2247.0 960.5 -2248.5
 endline
 
 line wall
@@ -108,6 +113,8 @@ line wall
   1231.0 -2304.0 1225.5 -2305.0 1225.5 -2305.0
   smooth off
 endline
+
+point 960.5 -2248.5 altitude -align top-right
 
 line wall
   902.5 -1599.5
@@ -251,7 +258,7 @@ line label -text "G. de l'Arva"
   smooth off
 endline
 
-point 1248.0 -2388.0 label -text "trémie"
+point 1249.0 -2449.0 label -text "trémie"
 
 point 827.5 -2200.0 label -orientation 59.4 -text "trémie."
 

@@ -11,7 +11,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
    input Data-th/Aval-aiguilles2
    input Data-th/Aval-aiguilles
    input Data-th/Lavoir
-   input Data-th/FileOu.th
+   input Data-th/fileOu.th
    input Data-th/shunt-branlots
    input Data-th/affluentC14
    input Data-th/Gourance2013
@@ -128,7 +128,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     input Drawing-th2/Lavoir-boeuf.th2
     input Drawing-th2/Arva.th2
     input Drawing-th2/Brownies.th2
-    input Drawing-th2/FileOu.th2
+    input Drawing-th2/fileOu.th2
+    input Drawing-th2/fileOu2019.th2
     input Drawing-th2/shunt-branlots.th2
     input Drawing-th2/affluentC14.th2
     
@@ -196,13 +197,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	 join brownies1 Arva2 
      join Lavoir-new1 Lavoir7
-     
      join lavoir-sec Boeuf2
-     
+     join fileou2019-SP1 fileou2
      join base-racc Racc5
-     
      join Lavoir3old B19
-     
      #join Lavoir3old gadouejonction
      
      join base-racc Excentriques1

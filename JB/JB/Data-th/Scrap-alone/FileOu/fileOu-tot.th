@@ -1,0 +1,13 @@
+encoding utf-8
+
+input fileOu.th
+
+input fileOu.th2
+input fileOu2019.th2
+join fileou2019-SP1 fileou2
+
+input fileOu-coupe.th2   
+input fileOu-coupe2019.th2
+join fileouc1	fileOu2019-SC1   
+
+#equate FD-2012-9@Lavoir 2017-FD-0@fileou

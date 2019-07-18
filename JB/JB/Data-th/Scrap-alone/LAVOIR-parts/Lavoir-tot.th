@@ -1,7 +1,7 @@
 encoding utf-8
 
 input Lavoir.th
-input FileOu.th
+input fileOu.th
 
 equate FD-2012-9@Lavoir 2017-FD-0@fileou
 
@@ -9,6 +9,10 @@ input Lavoir.th2
 input Lavoir-boeuf.th2
 input Arva.th2
 input Brownies.th2
-input FileOu.th2
+input fileOu.th2
+input fileOu2019.th2
+join fileou2019-SP1 fileou2
+
+
 
 #join filou1 Lavoir-FD # Inutile

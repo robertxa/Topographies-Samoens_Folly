@@ -32,4 +32,44 @@ centerline -title "Réseau qui File Ou : 2017-FD-0_2017-FD-0b 2017-FD-9_2017-FD-
 	
 endcenterline
 
+
+centerline -title "Réseau qui File Ou 2019 : 2019-AM-0_2019-1M-0b 2019-AM-9_2017-FD-10"
+
+	date 2019.07.13
+		team "Arnauld Malard"
+		team "Antoine Aigueperse"
+		team "Clément Baudy"
+	explo-date 2019.07.13
+		explo-team "Arnauld Malard"
+		explo-team "Antoine Aigueperse"
+		explo-team "Clément Baudy"
+
+	units length meters
+	units compass degrees
+	units clino degrees
+
+	data normal from to length compass clino left right up down
+	extend left
+	2019-AM-0	2019-1M-0b	0	0	0	0.35	0	0.59	1 # Etroiture, courant d'air
+	2019-AM-0	2019-AM-0c	3.20	161	-18	0	0.4	0.6	1
+	extend right
+	2019-AM-0	2019-AM-0d	2.80	316	11	0	1	5.2	1.9
+	2019-AM-0d	2019-AM-1	5.2	356	81	0	1	1	1	# P7
+	2019-AM-0d	amont	2.50	347	9	0	1	5.2	1.9	# Amont
+	2019-AM-1	2019-AM-2 3.90	53	8	1	1	8.5	0	# P8
+	2019-AM-2	2019-AM-3	7.47	242	85	0.6	0	1	8
+	2019-AM-2	2019-AM-gal	3.80	40	0	1	1	1	1	# LRUD estimées
+	#extend right
+	2019-AM-3	2019-AM-4	3.17	94	48	0	0.6	0.7	1.5
+	2019-AM-4	2019-AM-5	1.76	112	36	0	1.1	1.6	0.8
+	2019-AM-5	2019-AM-6	2.50	186	60	0	1.1	1.5	1.3
+	2019-AM-6	2019-AM-7	3.70	132	37	0	1.5	3	1.4
+	2019-AM-7	2019-AM-8	5.43	237	68	1.2	0	0.6	1.8	# étroiture
+	2019-AM-8	2019-AM-9	2.89	204	14	1	0	1.6	0.8	# Bas R3
+	2019-AM-9	2017-FD-10	4.20	145	67	1.2	0.6	1.5	1	# Jction point précédent FD
+	
+	# Dev = 53 m
+	
+endcenterline
+
 endsurvey

@@ -8,9 +8,14 @@ encoding  utf-8
  # This work is under the GPLv2
   
   
-source FileOu.th
-source FileOu.th2
-source FileOu-coupe.th2   
+source fileOu-tot.th
+#source fileOu.th
+#source fileOu.th2
+#source fileOu2019.th2
+#join fileou2019-SP1 fileou2
+
+#source fileOu-coupe.th2   
+
 # Add config file
 input ../../../../../config.thc 
 
@@ -22,8 +27,10 @@ endlayout
   
 layout my_layout
 # Call the config settings (Layout config inside the config.thc file)
+	
 	copy drawingconfig
 	copy headerl 
+	copy langue-fr
 	  
 	doc-title "Réseau qui File Ou"
 	doc-author "Xavier Robert"
@@ -72,6 +79,7 @@ layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe 
+	copy langue-fr
   
 	doc-title "Réseau qui File Ou"
 	doc-author "Xavier Robert"
@@ -116,10 +124,10 @@ layout my_layout-coupe
 
  
   
- #export map -fmt xvi -layout xviexport -o FileOu-2017.xvi
- #export map -projection extended -fmt xvi -layout xviexport -o FileOu-coupe-2017.xvi
+ #export map -fmt xvi -layout xviexport -o fileOu-2019.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o fileOu-coupe-2019.xvi
   
- export map  -projection plan -o FileOu-2017-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o FileOu-2017-coupe.pdf
- #export model -o FileOu-2017.lox
-#export survey-list -o Surveys2017.html
+ export map  -projection plan -o fileOu-2019-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o fileOu-2019-coupe.pdf
+ export model -o fileOu-2017.lox
+#export survey-list -o surveys2017.html

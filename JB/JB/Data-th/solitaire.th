@@ -231,5 +231,85 @@ centerline -title "JBSolitaire 2018 : 2017-FD-13_2018-FD-0	2018-FD-21	2018-FD-22
 
 endcenterline	
 
+centerline -title "JBSolitaire 2018 : 2017-FD-03_2019-FD-0	2019-FD-16_2019-FD-18"
+	#  Jonction Solitaire avec Pierre qui tombe
+	date 2019.07.16
+		team "Frédéric Delègue"
+		team "Antoine Aigueperse"
+	explo-date 2019.07.16
+		explo-team "Frédéric Delègue"
+		explo-team "Antoine Aigueperse"
+	explo-date 2018.02.18
+		explo-team "Clément Baudy"
+		explo-team "Stéphane Kanshine"
+	units length meters
+	units compass degrees
+  	units clino degrees
+
+	data normal from to length compass clino left right up down
+	2017-FD-03	2019-FD-0	0	0	0	1.1	0.5	5.8	8	# Départ au sommet du P8 qui est la station 2017-FD-03
+	2019-FD-0	2019-FD-1	11.26	78	31	0.5	2	0.9	0.6	
+	2019-FD-1	2019-FD-2	7.58	42	27	1.1	0.6	0.7	2	
+	2019-FD-2	2019-FD-3	11.5	358	32	0.7	1.3	0.7	1.2	
+	2019-FD-3	2019-FD-4	9.1	35	-31	0.3	1.1	2.4	1.35	
+	2019-FD-4	2019-FD-5	2.25	41	-21	0.5	0.4	2.3	9.1	# Pt 5 est la tête de puits
+	2019-FD-5	2019-FD-6	9.1	0	-90	0.6	1.6	9.1	1	# Pt 6 est sur la margelle
+	2019-FD-6	2019-FD-7	2.31	258	-25	4	2	4	15	# Pt 7 est la tête de puits
+	2019-FD-7	2019-FD-8	15	0	-90	1.4	0.7	11	1	
+	2019-FD-8	2019-FD-9	11.28	247	-42	0	0	0	0	# Jction avec la corde à la base du puits Alain
+	2019-FD-8	2019-FD-10	21.36	192	34	1.2	3.5	8.4	1	
+	2019-FD-10	2019-FD-11	5.2	298	46	0	0	0	0	# Est-ce que les deux points 10 et 11 sont sur la topo existante, (spits anciens), est-ce la galerie du séchoir ?
+	2019-FD-6	2019-FD-12	5	335	28	0.6	0.6	1.1	1	
+	2019-FD-12	2019-FD-13	5.63	6	16	0.5	0.6	7.5	1	
+	2019-FD-13	2019-FD-14	9.88	333	4	0.7	0.5	8	1.2	# Pt 14 est la tête de puits
+	2019-FD-14	2019-FD-15	6.87	343	-61	2.2	1.2	16	9	# Pt 15 est la tête de puits
+	2019-FD-15	2019-FD-16	9	0	-90	2.3	4.8	27	2.3	# Bout corde
+	2019-FD-16	2019-FD-17	6.3	131	-33	0	0	0	0	# Vers méandre équipé en fixe (réseau de la Pierre qui tombe
+	2019-FD-16	2019-FD-18	14.3	185	-58	0	0	0	0	
+
+# Dev = 162.92 m
+	
+endcenterline
+	
+centerline -title "JBSolitaire 2019 : 2018-FD-19_2019-FD-19	2019-FD-39_2019-FD-40"
+	#  Suite de l'explo 2018 vers l'aval du Solitaire, à partir du point 2018-FD-19
+	date 2019.07.16
+		team "Frédéric Delègue"
+		team "Antoine Aigueperse"
+	explo-date 2019.07.16
+		explo-team "Frédéric Delègue"
+		explo-team "Antoine Aigueperse"
+	units length meters
+	units compass degrees
+  	units clino degrees
+
+	data normal from to length compass clino left right up down
+	2018-FD-19	2019-FD-19	2.85	242	11	1.5	3.2	0.2	0.7	# Départ au niveau du point 2018-FD-19 de l'explo précédente
+	2019-FD-19	2019-FD-20	6.77	264	-14	13	4.2	0.4	7.5	
+	2019-FD-20	2019-FD-21	7.5	0	-90	16	0.7	8.8	0.2	
+	2019-FD-21	2019-FD-22	12.36	322	22	2	0.7	0.5	0.8	
+	2019-FD-22	2019-FD-23	7.85	321	7	1.5	1.5	1.6	0.7	
+	2019-FD-23	2019-FD-24	8.92	306	-26	0.2	0.2	6.5	1	
+	2019-FD-24	2019-FD-25	3.88	316	-8	0	1	8.6	1.4	
+	2019-FD-25	2019-FD-26	2.65	16	-2.6	2.2	0	10	1.2	
+	2019-FD-26	2019-FD-27	7.25	293	-2	0.6	0.3	2.6	1	
+	2019-FD-27	2019-FD-28	3.67	240	-2	0.8	0	4.7	4.5	
+	2019-FD-28	2019-FD-29	4.67	180	-2	0.7	0	6	1.8	
+	2019-FD-29	2019-FD-30	8.71	178	0	0	1	3	1.8	
+	2019-FD-30	2019-FD-31	3.4	295	30	0	0	0	0	
+	2019-FD-30	2019-FD-32	10.15	231	20	0.7	0	3.8	1.5	
+	2019-FD-32	2019-FD-33	15.48	213	6	0	2	1.7	1.2	
+	2019-FD-33	2019-FD-34	5.93	270	-12	1.6	0.2	0.5	0.5	
+	2019-FD-34	2019-FD-35	15	291	2	0	0.8	4	1.3	
+	2019-FD-35	2019-FD-36	7.6	303	-1	0	1.4	6.1	2.2	
+	2019-FD-36	2019-FD-37	11.8	275	-2	0.8	0.9	3.2	1.2	
+	2019-FD-37	2019-FD-38	5.4	264	-11	0.8	0.9	4.4	1.8	
+	2019-FD-38	2019-FD-39	6.46	155	-12	0.5	0	6	4.5	
+	2019-FD-39	2019-FD-40	7.64	194	-6	0	0	0	0	# Arrêt topo à la croix entre les 2 amarrages de tête de puits
+
+# Dev = 165.94 m	
+	
+endcenterline
+
 endsurvey
 

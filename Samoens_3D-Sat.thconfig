@@ -58,8 +58,11 @@ source Combe-Puaires/zone-T/T.th
 source Combe-Puaires/Ermoy/ermoy.th
 
 # MNT de la zone, avec wrappage des images (éditer le fichier Samoens-GIS/dem/samoens.th pour choisir l'image !)
+# Pour le MNT SRTM à 30 m
 #source Samoens-GIS/dem/samoens.th
+# Pour le MNT avec une résolution spaciale de 10 m
 source Samoens-GIS/dem/IGN_JB_10m-Sat.th
+# pour le MNT avec une résolution spaciale de 1 m ; Attention, c'est difficile à ouvrir et à gérer avec Loch
 #source Samoens-GIS/dem/IGN_JB.th
 
 # Add config file
@@ -235,7 +238,7 @@ endlayout
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -o Outputs/Lists/databaseJB-2018.sql
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2018.html
-export survey-list -location on -o Outputs/Lists/Surveys2018.html
-export cave-list -location on -o Outputs/Lists/Caves2018.html
+export database -o Outputs/Lists/databaseJB-2019.sql
+export continuation-list -o Outputs/Lists/ContinuationsJB2-2019.html
+export survey-list -location on -o Outputs/Lists/Surveys2019.html
+export cave-list -location on -o Outputs/Lists/Caves2019.html

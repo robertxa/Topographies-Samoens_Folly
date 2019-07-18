@@ -5,29 +5,29 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 # Pour importer les différentes données de différents fichiers topos : 
 
-   input Data-th/jb-amonts1
-   input Data-th/affluentC14
-   input Data-th/jb-arianes
-   input Data-th/jb-amonts2
-   input Data-th/jb-riv
-   input Data-th/jb-riv2
-   input Data-th/Lavoir.th
-	input Data-th/FileOu.th
-   input Data-th/GoureToiDeLa
-   input Data-th/GoureToiDeLa2019.th
-   input Data-th/Gourance2013
-   #input Data-th/Aval-aiguilles2
-   #input Data-th/Aval-aiguilles
-   input Data-th/jb-dino
-   input Data-th/puitstraverse
-   input Data-th/shunt-branlots
-   input Data-th/Erreur
-   input Data-th/CouteauG
-   input Data-th/P11
-   input Data-th/solitaire
-   input Data-th/siphons
+	input Data-th/jb-amonts1
+	input Data-th/affluentC14
+	input Data-th/jb-arianes
+	input Data-th/jb-amonts2
+	input Data-th/jb-riv
+	input Data-th/jb-riv2
+	input Data-th/Lavoir.th
+	input Data-th/fileOu.th
+	input Data-th/GoureToiDeLa
+	input Data-th/GoureToiDeLa2019.th
+	input Data-th/Gourance2013
+	#input Data-th/Aval-aiguilles2
+	#input Data-th/Aval-aiguilles
+	input Data-th/jb-dino
+	input Data-th/puitstraverse
+	input Data-th/shunt-branlots
+	input Data-th/Erreur
+	input Data-th/CouteauG
+	input Data-th/P11
+	input Data-th/solitaire
+	input Data-th/siphons
  
-   centerline
+centerline
     
 
 # Pour assembler plusieurs fichiers topos
@@ -119,6 +119,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/lavoirsommet-coupe.th2
 	input Drawing-th2/lavoir-coupe2015.th2
 	input Drawing-th2/brownies-coupe.th2
+	input Drawing-th2/fileOu-coupe2019.th2
 	input Drawing-th2/avalc1
 	
 	input Drawing-th2/GoureToiDeLa-coupe.th2
@@ -164,6 +165,7 @@ join jaunissec7 anou2c2
 join jaunissec3 chatonsc1
 join maisc1 dino-coupe
 join lavoirc2 browniesc1
+join fileouc1	fileOu2019-SC1
 join J14c3 s_branlots-c1
 join traversec1 V11c5
 join branlotsc1 V11c5

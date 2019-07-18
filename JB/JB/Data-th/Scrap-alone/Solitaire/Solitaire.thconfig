@@ -7,10 +7,8 @@ encoding  utf-8
  
 # Import DATA  
 source solitaire.th
-source solitaire-tot.th
-#source solitaire-plan.th2
-#source solitaire-plan2017.th2
-#source solitaire-coupe2017.th2
+#source solitaire-tot.th
+
 # Add config file
 input ../../../../../config.thc 
   
@@ -54,8 +52,7 @@ layout layout_plan
 	map-header-bg off
 	layers on
 	#symbol-hide line survey
-	#symbol-hide point station
-	#debug station-names
+	debug station-names
 	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
@@ -102,8 +99,8 @@ layout layout_coupe
 	opacity 75
 	language fr
 	map-comment "Réseau du solitaire"
-	symbol-hide line survey
-	#debug station-names
+	#symbol-hide line survey
+	debug station-names
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -136,12 +133,12 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o solitaire-plan2018b.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o solitaire-coupe2018b.xvi
+	export map -fmt xvi -layout xviexport_plan -o solitaire-plan2019.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o solitaire-coupe2019.xvi
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o solitaire-coupe2018.pdf
-	export map -layout layout_plan -o solitaire-plan2018.pdf
+	export map -projection extended -layout layout_coupe -o solitaire-coupe2019.pdf
+	export map -layout layout_plan -o solitaire-plan2019.pdf
  
 # Export des modeles 3D
 	export model -o solitaire.lox

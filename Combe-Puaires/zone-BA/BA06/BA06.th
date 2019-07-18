@@ -1,39 +1,88 @@
 encoding utf-8
 
- survey BA06 -title "BA06" -entrance "BA06"
+survey BA06 -title "BA06" -entrance "BA06"
     
- centerline -title "BA06 BA06_2014-SL-0 2014-SL-38_2014-SL-40"
+centerline -title "BA06 BA06_2014-SL-0 2014-SL-38_2014-SL-40"
  
- cs lat-long
- fix BA06 46.103700  6.771830  1535
- 
-   date 2014.07.17
-  team "Stéphane Lips"
-  team "Vincent Sordel"
-  explo-date 2014.06.20 # date à Revoir !!!
-  explo-team "Xavier Robert"
-  explo-team "David Parrot"
-  explo-date 2014.06.20 # date à Revoir !!!
-  explo-team "Xavier Robert"
-  explo-team "Stéphane Lips"
-  explo-date 2014.06.20 # date à Revoir !!! Tir a la paille
-  explo-team "Xavier Robert"
-  explo-team "Romain Roure"
-  explo-date 2014.06.20 # date à Revoir !!!
-  explo-team "Xavier Robert"
-  explo-team "Stéphane Lips"
-  explo-team "Frédéric Astolfi"
-  explo-team "Cédric Chambe"
-  explo-team "Frédéric Alvarez"
-  explo-team "Vincent Sordel"
-  explo-team "Gaëtan Poschmann"
-  explo-team "Max Pinard"
+	cs lat-long
+	fix BA06 46.103700  6.771830  1535
+
+	date 2014.07.17 # Topo
+  		team "Stéphane Lips"
+		team "Vincent Sordel"	
+
+	explo-date 2014.06.20 # Ouverture entrée et premières explos
+		explo-team "Xavier Robert"
+		explo-team "David Parrot" 
+	explo-date 2014.05.18 # Agrandissement entrée
+		explo-team "Xavier Robert"
+		explo-team "Romain Roure"
+		explo-team "Virginie Humbert"
+	explo-date 2014.05.25 # explo pan incliné latéral
+		explo-team "Xavier Robert"
+		explo-team "Stéphane Lips"
+	explo-date 2014.06.01 # Tirs
+		explo-team "Xavier Robert"
+		explo-team "Romain Roure"
+	explo-date 2014.06.09 # Tirs
+		explo-team "Xavier Robert"
+		explo-team "Stéphane Lips"
+		explo-team "Frédéric Astolfi"
+	explo-date 2014.07.14 # Tirs
+  		explo-team "Stéphane Lips"
+		explo-team "Vincent Sordel"	
+	explo-date 2014.07.15	# Tirs et explo suite
+		explo-team "Stéphane Lips"
+		explo-team "Vincent Sordel"
+		explo-team "Clément Baudy"
+		explo-team "Frédéric Alvarez"
+		explo-team "Cédric Chambe"
+		explo-team "Gaëtan Poschmann"
+	explo-date 2014.07.17	# Explo suite
+		explo-team "Stéphane Lips"
+		explo-team "Vincent Sordel"
+		explo-team "Max Pinard"
+		explo-team "Frédéric Alvarez"
+		explo-team "Cédric Chambe"
+		explo-team "Gaëtan Poschmann"		
+	explo-date 2014.08.03	# Tirs
+		explo-team "Stéphane Lips"
+		explo-team "Clément Baudy"
+	explo-date 2014.08.16	# Tirs
+		explo-team "Xavier Robert"
+		explo-team "Clément Baudy"
+	explo-date 2014.08.17	# Tirs
+		explo-team "Stéphane Lips"
+		explo-team "Xavier Robert"
+		explo-team "Clément Baudy"
+	explo-date 2014.08.18	# Tirs
+		explo-team "Stéphane Lips"
+		explo-team "Guillaume Cerdan"
+	explo-date 2015.08.02 # Tirs
+		explo-team "Guillaume Cerdan"
+	explo-date 2016.07.14 # Tirs
+		explo-team "Guillaume Cerdan"
+	explo-date 2016.07.17 # Tirs
+		explo-team "Clément Baudy"
+		explo-team "Arnauld Malard"
+		explo-team "Thomas Bonnand"
+	explo-date 2018.03.11 # Tirs
+		explo-team "Clément Baudy"
+		explo-team "Anais Carreras"
+	explo-date 2018.04.28 # Tirs
+		explo-team "Clément Baudy"
+		explo-team "Guillaume Cerdan"
+	explo-date 2018-06-24 # Tirs
+		explo-team "Guillaume Cerdan"
+	explo-date 2018.07.22 # Tirs
+		explo-team "Frédéric Alvarez"
+		explo-team "Christophe Ferry"
 
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
-   data normal from to length compass clino left right up down
+	units lenght meters
+	units compass degrees
+	units clino degrees
+	data normal from to length compass clino left right up down
 extend left
 BA06 2014-SL-0          0.00    0.00    0.00   0.70   0.70   0.30   0.30 # Entrée;
 2014-SL-0 2014-SL-1     1.84  175.00  -40.00   0.40   1.00   0.40   0.40

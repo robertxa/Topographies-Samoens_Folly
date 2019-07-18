@@ -1,0 +1,139 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 198.0 270.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.365100000000005 1 1.0} {39.3705 2017-FD-0} fileOu-2019.xvi 0 {}
+
+
+
+scrap fileou2019-SP1 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+
+point 51.5 71.0 air-draught -orientation 331.1 -subtype summer
+
+point 32.5 91.5 altitude -align left
+
+line pit
+  56.5 66.0
+  56.5 66.0 66.0 69.5 68.25 65.0
+  smooth off
+endline
+
+line pit
+  59.25 73.25
+  59.25 73.25 64.0 78.25 69.0 76.5
+  smooth off
+endline
+
+line pit
+  53.5 81.5
+  53.5 81.5 60.0 86.75 63.5 86.0
+  smooth off
+endline
+
+line pit
+  49.0 84.5
+  49.0 84.5 48.0 92.75 43.25 94.5
+  smooth off
+endline
+
+line pit
+  43.25 78.0
+  43.25 78.0 39.5 82.25 39.5 89.25
+  smooth off
+endline
+
+line pit
+  51.25 84.5
+  51.25 84.5 50.75 89.5 56.25 90.75
+  smooth off
+endline
+
+point 63.5 104.0 altitude -align right
+
+point 68.75 112.5 narrow-end
+
+point 33.5 98.5 narrow-end
+
+point 50.0 51.0 continuation -attr Code E -text "Etroiture sév§re, courant d'air fort, bruit de rivière (Lavoir humide ?)"
+
+line wall
+  50.75 57.0
+  50.75 57.0 48.5 65.0 47.0 68.0
+  45.5 71.0 43.5 74.75 42.5 76.75
+  41.5 78.75 41.0 80.25 44.5 82.75
+  48.0 85.25 50.75 87.25 52.0 87.0
+  53.25 86.75 55.75 85.0 55.75 83.0
+  55.75 81.0 54.5 81.5 57.25 78.0
+  60.0 74.5 63.5 73.5 61.75 72.0
+  60.0 70.5 57.75 67.25 57.5 64.75
+  57.25 62.25 57.25 58.25 57.75 56.75
+  smooth off
+endline
+
+line u:fault -clip off
+  32.0 105.75
+  19.25 141.0
+endline
+
+point 24.25 80.25 height -value [-7 m]
+
+point 42.25 105.75 height -value [-8 m]
+
+line wall
+  32.5 91.5
+  32.5 91.5 31.75 80.5 35.75 76.5
+  39.75 72.5 42.73 74.0 43.25 70.0
+  43.76 66.0 47.75 56.25 47.75 56.25
+  smooth off
+endline
+
+line wall
+  59.0 107.75
+  59.0 107.75 56.0 105.0 52.75 100.5
+  49.5 96.0 45.0 94.0 44.0 91.5
+  43.0 89.0 40.0 85.5 39.5 87.25
+  39.0 89.0 37.5 91.5 37.5 91.5
+  smooth off
+endline
+
+line wall
+  62.25 60.0
+  62.25 60.0 64.5 66.5 67.0 69.75
+  69.5 73.0 70.0 76.0 66.25 78.0
+  62.5 80.0 60.75 80.5 61.0 83.5
+  61.25 86.5 61.0 87.5 59.0 88.5
+  57.0 89.5 53.25 89.0 55.0 91.5
+  56.75 94.0 63.5 104.0 63.5 104.0
+  smooth off
+endline
+
+point 48.3851 59.4105 station -name 2019-AM-0c@fileou
+
+point 44.4851 70.7505 station -name 2019-1M-0b@fileou
+
+point 34.8051 87.9905 station -name amont@fileou
+
+point 36.96510000000001 78.5005 station -name 2019-AM-0d@fileou
+
+point 36.7751 81.6905 station -name 2019-AM-1@fileou
+
+point 58.505100000000006 102.32050000000001 station -name 2019-AM-gal@fileou
+
+point 48.8951 90.87049999999999 station -name 2019-AM-2@fileou
+
+point 46.655100000000004 89.6505 station -name 2019-AM-3@fileou
+
+point 54.96510000000001 89.0505 station -name 2019-AM-4@fileou
+
+point 60.155100000000004 86.9705 station -name 2019-AM-5@fileou
+
+point 59.6451 82.0905 station -name 2019-AM-6@fileou
+
+point 68.30510000000001 74.29050000000001 station -name 2019-AM-7@fileou
+
+point 61.575100000000006 69.9205 station -name 2019-AM-8@fileou
+
+point 57.085100000000004 59.8405 station -name 2019-AM-9@fileou
+
+endscrap
+
+

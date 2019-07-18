@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -2612 3640 139.5
+##XTHERION## xth_me_area_adjust -129.5 -2612 3640 139.0
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} SommetLavoirSquelette.png 0 {}
 
@@ -26,6 +26,7 @@ line wall
   2282.0 -1543.0 2281.0 -1537.5 2285.5 -1524.0
   2290.0 -1510.5 2294.0 -1496.5 2296.5 -1484.5
   2299.0 -1472.5 2313.39 -1458.22 2324.0 -1450.5
+  smooth off
 endline
 
 point 1424.5 -890.0 breakdown-choke -orientation 93.6
@@ -164,9 +165,9 @@ point 1708.5 -1109.0 label -text "R2"
 
 point 1445.0 -1040.5 label -text "R2"
 
-point 1547.5 -865.0 altitude
+point 1484.5 -892.5 altitude -align top-right
 
-point 1276.5 -939.5 altitude
+point 1238.5 -971.0 altitude -align top-right
 
 point 1333.5 -976.0 label -text "R2"
 

@@ -1,17 +1,15 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 207.75 206.75
+##XTHERION## xth_me_area_adjust -133.25 -128.75 207.75 211.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.3696 1 1.0} {39.3697 2017-FD-0} FileOu-2017.xvi 0 {}
 
 
 
-scrap fileou1 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap fileou1 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
 point 56.699600000000004 20.1297 station -name 2017-FD-5@fileou.Jean-Bernard
 
-point 51.0 52.0 narrow-end
-
-point 37.5 56.0 height -value [-10 m]
+point 34.5 28.25 height -value [-10 m]
 
 point 75.75 17.5 height -value [-12 m]
 
@@ -28,17 +26,10 @@ line pit
 endline
 
 line wall
-  38.0 47.25
-  38.0 47.25 33.0 45.5 33.0 43.25
-  33.0 41.0 34.25 38.25 34.25 38.25
-  smooth off
-endline
-
-line wall
   53.25 46.5
   53.25 46.5 50.25 43.25 49.5 44.25
   48.75 45.25 47.75 46.25 45.5 46.0
-  43.25 45.75 39.75 46.25 38.0 47.25
+  43.25 45.75 39.75 43.25 38.0 44.25
   smooth off
 endline
 
@@ -62,7 +53,7 @@ endscrap
 
 
 
-scrap fileou2 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap fileou2 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
 point 55.25 8.75 rope
 
@@ -86,9 +77,7 @@ line pit -reverse on
   smooth off
 endline
 
-point 60.75 65.5 continuation -attr Code A -text "R3 puits P10 à descendre, arrêt sur manque de corde"
-
-point 51.75 77.5 label -text "File Où ?"
+point -4.0 81.75 label -text "File Où ?"
 
 point 77.25 49.75 height -value [-11 m]
 

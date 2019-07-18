@@ -2,47 +2,47 @@ encoding utf-8
 
 survey CP1 -title "CP1" -entrance "CP1a" -entrance "CP1b" -entrance "CP1c"
   
- #cs EPSG:<27572>
- #fix CP1   944.1120       2133.456       1906.000    1943 ?
- centerline
- cs lat-long
- #fix CP1 46.355   06.050016667  1906
- # fix CP1 46.113550    6.790500  1906
-   date 1982.11.11
-   calibrate counter 0 1.000
-  team "Christophe Ohl"
-  team "Jean-Bernard/de Chabelier"
-  team "Pierre Bergeron"
+#cs EPSG:<27572>
+#fix CP1   944.1120       2133.456       1906.000    1943 ?
+centerline
+	cs lat-long
+	#fix CP1 46.355   06.050016667  1906
+	#fix CP1 46.113550    6.790500  1906
+	date 1982.11.11
+		team "Christophe Ohl"
+		team "Jean-Bernard/de Chabelier"
+		team "Pierre Bergeron"
 
-   units compass grad
-   units clino grad
-   units counter centimeters
-   data topofil from to fromcount tocount compass clino left right up down
-   flags duplicate   
-   CP1 CP1a 0.0 0.0    0.000000       100.0000       0.000000       0.000000       0.000000       0.000000    
-   CP1 1 0.0 1000.0    50.00000       0.000000       0.000000       0.000000       0.000000       0.000000    
-   CP1 2 0.0 1000.0    0.000000      -100.0000       0.000000       0.000000       0.000000       0.000000    
-   CP1 3 0.0 1000.0    0.000000       100.0000       0.000000       0.000000       0.000000       0.000000    
-   CP1 4 0.0 1000.0    150.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
-   CP1 5 0.0 1000.0    250.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
-   CP1 6 0.0 1000.0    350.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+	units compass grad
+	units clino grad
+	units counter centimeters
+	calibrate counter 0 1.000
+	data topofil from to fromcount tocount compass clino left right up down
+	flags duplicate   
+	CP1 CP1a 0.0 0.0    0.000000       100.0000       0.000000       0.000000       0.000000       0.000000    
+	CP1 1 0.0 1000.0    50.00000       0.000000       0.000000       0.000000       0.000000       0.000000    
+	CP1 2 0.0 1000.0    0.000000      -100.0000       0.000000       0.000000       0.000000       0.000000    
+	CP1 3 0.0 1000.0    0.000000       100.0000       0.000000       0.000000       0.000000       0.000000    
+	CP1 4 0.0 1000.0    150.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+	CP1 5 0.0 1000.0    250.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+	CP1 6 0.0 1000.0    350.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
 endcenterline
 
- centerline
- cs lat-long
-  fix CP1b 46.113350    6.790860  1921
-  fix CP1c 46.113550    6.790930  1914
-  #fix CP1a 46.113480    6.791020  1929
+centerline
+	cs lat-long
+	fix CP1b 46.113350    6.790860  1921
+	fix CP1c 46.113550    6.790930  1914
+	#fix CP1a 46.113480    6.791020  1929
 	station CP1b entrance
 	station CP1c entrance
 	station CP1a entrance
-  date 2015.08.29
-  team "Bernard Lips"
-  team "Xavier Robert"
+	date 2015.08.29
+		team "Bernard Lips"
+		team "Xavier Robert"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
+	units lenght meters
+	units compass degrees
+	units clino degrees
 
 
 	data normal from to length compass clino left right up down
@@ -81,6 +81,6 @@ endcenterline
 	Xa-2015d-20	Xa-2015d-5	3.83	120	-55	4	2.5	8	2.5		
 
 # dev = 171 m
- endcenterline
+endcenterline
  
- endsurvey
+endsurvey
