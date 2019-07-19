@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -326.34799999999996 -129.5 1151.6226000000001 1104.8825
+##XTHERION## xth_me_area_adjust -326.35699999999997 -129.5 1189.4862 1104.8755
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {816.686 1 1.0} {314.965 xx0init} solitaire-coupe2017.xvi 0 {}
 ##XTHERION## xth_me_image_insert {816.686 1 1.0} {314.956 xx0init} solitaire-coupe2018.xvi 0 {}
@@ -7,7 +7,7 @@ encoding  utf-8
 
 
 
-scrap sol-C1 -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
+scrap sol-C1 -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
 
 point 524.146 173.195 station -name xxInterrogation2@solitaire
 
@@ -135,17 +135,9 @@ line wall -subtype presumed
   smooth off
 endline
 
-line border
-  679.75 240.25
-  679.75 240.25 681.5 225.5 680.5 224.5
-  676.24 220.24 673.5 222.5 673.5 220.5
-  673.5 211.72 674.75 205.0 674.75 205.0
-  smooth off
-endline
+point 636.0 343.75 label -text "galerie du Solitaire"
 
-point 642.0 291.25 label -text "galerie du Solitaire"
-
-point 241.5 169.5 label -text "m. du Serpent"
+point 243.5 58.0 label -text "m. du Serpent"
 
 point 401.25 197.25 continuation
 
@@ -191,11 +183,29 @@ point 112.25 179.5 continuation
 
 point 75.75 128.75 continuation
 
-point 92.25 153.0 traverse
+area u:galerie
+  l147-381-150
+endarea
 
-point 180.5 171.25 label -text "R3"
+line border -id l147-381-150 -close on
+  379.5 149.5
+  378.06 149.91 376.0 136.0 379.0 132.0
+  382.0 128.0 386.0 130.5 386.0 138.0
+  386.0 145.5 390.0 146.5 379.5 149.5
+endline
 
-point 862.0 185.5 label -text "R3"
+line u:rope
+  115.0 141.0
+  115.0 141.0 102.5 134.5 98.0 134.5
+  93.5 134.5 88.0 135.0 88.0 135.0
+  smooth off
+endline
+
+point 78.25 153.0 traverse
+
+point 182.5 111.25 label -text "R3"
+
+point 875.0 183.0 label -text "R3"
 
 line u:rope -clip off
   551.25 199.75
@@ -422,7 +432,7 @@ endscrap
 
 
 
-scrap sol-C2 -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
+scrap sol-C2 -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
 
 point 944.886 399.405 station -name xxInterrogation4@solitaire
 
@@ -460,9 +470,9 @@ point 750.316 290.655 station -name xx21@solitaire
 
 point 711.376 270.825 station -name xx20@solitaire
 
-point 906.5 366.25 height -value [+2.5 m]
+point 924.0 363.75 height -value [+2.5 m]
 
-point 773.75 323.5 continuation -attr Code E -text "Départ en plafond à atteindre"
+point 777.25 331.5 continuation -attr Code E -text "Départ en plafond à atteindre"
 
 line u:rope
   902.25 385.75
@@ -483,13 +493,13 @@ endline
 
 point 948.0 402.25 altitude -align top
 
-point 962.5 392.0 air-draught -orientation 269.1
+point 1013.5 401.5 air-draught -orientation 269.1
 
-point 966.0 400.75 continuation -attr Code D -text "CF colmatée à creuser"
+point 976.5 415.75 continuation -attr Code D -text "CF colmatée à creuser"
 
-point 954.25 400.25 narrow-end
+point 960.75 399.25 narrow-end
 
-point 646.25 266.0 narrow-end
+point 639.25 268.0 narrow-end
 
 line wall
   651.5 261.25
@@ -498,9 +508,9 @@ line wall
   smooth off
 endline
 
-point 940.5 384.75 label -text "colm."
+point 942.0 379.25 label -text "colm."
 
-point 661.75 270.0 label -text "colm."
+point 659.75 284.0 label -text "colm."
 
 line wall
   766.75 320.75
@@ -566,42 +576,38 @@ endscrap
 
 
 
-scrap Solitaire2018-SC1 -projection extended -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
-
-point 826.25 222.25 height -value [+10 m]
-
-point 880.75 245.5 air-draught -orientation 91.2 -subtype winter
-
-point 864.25 245.5 continuation -attr Code A -text "CF à continuer, courant d'air"
-
-line u:rope -clip off
-  838.956 242.326
-  838.956 242.326 832.75 235.5 824.0 237.5
-  823.66 237.58 814.0 229.25 802.0 230.75
-  800.98 230.88 789.25 221.0 784.5 224.75
-  smooth off
-endline
-
-line wall
-  855.0 248.5
-  855.0 248.5 843.5 247.25 838.5 246.5
-  833.5 245.75 824.25 241.0 819.25 239.0
-  814.25 237.0 805.25 234.25 805.25 234.25
-  smooth off
-endline
-
-line wall
-  808.5 223.75
-  808.5 223.75 821.5 228.75 828.0 232.25
-  834.5 235.75 837.25 238.75 840.75 239.5
-  844.25 240.25 856.25 240.25 856.25 240.25
-  smooth off
-endline
-
-point 838.956 242.326 station -name 2018-CBa-fin@solitaire
-
-point 827.356 235.86599999999999 station -name 2018-CBa-01@solitaire
-
-endscrap
+#scrap Solitaire2018-SC1 -projection extended -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
+#
+#point 826.25 222.25 height -value [+10 m]
+#
+#line u:rope -clip off
+#  838.956 242.326
+#  838.956 242.326 832.75 235.5 824.0 237.5
+#  823.66 237.58 814.0 229.25 802.0 230.75
+#  800.98 230.88 789.25 221.0 784.5 224.75
+#  smooth off
+#endline
+#
+#line wall
+#  855.0 248.5
+#  855.0 248.5 843.5 247.25 838.5 246.5
+#  833.5 245.75 824.25 241.0 819.25 239.0
+#  814.25 237.0 805.25 234.25 805.25 234.25
+#  smooth off
+#endline
+#
+#line wall
+#  808.5 223.75
+#  808.5 223.75 821.5 228.75 828.0 232.25
+#  834.5 235.75 837.25 238.75 840.75 239.5
+#  844.25 240.25 856.25 240.25 856.25 240.25
+#  smooth off
+#endline
+#
+#point 838.956 242.326 station -name 2018-CBa-fin@solitaire
+#
+#point 827.356 235.86599999999999 station -name 2018-CBa-01@solitaire
+#
+#endscrap
 
 

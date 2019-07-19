@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -3636 2607 680.75
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} 2018-dessin-Plan-JB-Solitiare-FDelegue.gif 0 {}
+##XTHERION## xth_me_area_adjust -131.0 -1770.0 1451.0 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} Donnees-topo/2018-dessin-Plan-JB-Solitiare-FDelegue.gif 0 {}
 
 
 
@@ -299,8 +299,8 @@ line wall
 endline
 
 line wall
-  293.5 -1537.5
-  293.5 -1537.5 304.0 -1519.5 315.0 -1513.0
+  285.0 -1530.0
+  285.0 -1530.0 304.0 -1519.5 315.0 -1513.0
   326.0 -1506.5 348.5 -1499.5 358.5 -1481.5
   368.5 -1463.5 377.0 -1455.0 388.5 -1442.0
   400.0 -1429.0 420.0 -1412.0 428.0 -1403.0
@@ -324,10 +324,7 @@ line wall
   49.0 -1324.5
   49.0 -1324.5 103.0 -1391.5 110.5 -1403.5
   118.0 -1415.5 128.0 -1432.0 136.0 -1444.0
-  144.0 -1456.0 154.5 -1480.5 161.5 -1484.5
-  168.5 -1488.5 175.5 -1496.5 175.0 -1504.5
-  174.5 -1512.5 174.0 -1520.0 174.0 -1520.0
-  smooth off
+  144.0 -1456.0 161.15 -1476.45 161.5 -1484.5
 endline
 
 point 62.5 -1316.5 station -name 2018-FD-22@solitaire
@@ -346,8 +343,6 @@ point 513.5 -1287.5 station -name 2018-FD-16@solitaire
 
 point 674.5 -1294.0 station -name 2018-FD-15@solitaire
 
-point 213.5 -1549.0 continuation -attr Code A -text "A continuer, manque de matériel"
-
 point 291.5 -1507.5 clay
 
 point 259.0 -1516.5 clay
@@ -356,150 +351,149 @@ point 208.5 -1511.0 clay
 
 point 169.5 -1475.0 clay
 
-point 49.0 -1324.5 altitude -align left
+point 73.5 -1314.5 altitude -align right
 
-point 83.0 -1264.0 label -text "colm."
+point 87.0 -1248.0 label -text "colm."
 
-point 33.5 -1283.5 narrow-end
+point 27.5 -1266.5 narrow-end
 
 point 760.0 -1402.5 station -name 2018-FD-14@solitaire
 
 endscrap
 
+#scrap Solitaire2018-SP1 -projection plan -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+#
+#line wall
+#  952.5 543.75
+#  952.5 543.75 949.5 544.75 942.75 539.75
+#  936.0 534.75 935.5 527.75 927.5 526.75
+#  919.5 525.75 908.25 520.0 900.25 520.75
+#  892.25 521.5 889.5 525.5 886.0 524.0
+#endline
+#
+#line wall
+#  914.5 477.5
+#  914.5 477.5 919.75 494.75 929.75 505.25
+#  939.75 515.75 958.0 531.0 958.0 531.0
+#  smooth off
+#endline
+#
+#point 987.75 504.0 air-draught -orientation 50.9 -subtype winter
+#
+#point 933.25 551.5 height -value [-20 m]
+#
+#line pit
+#  947.0 548.0
+#  947.0 548.0 947.25 530.5 958.25 527.0
+#endline
+#
+#point 970.0 549.25 continuation -attr Code A -text "CF à continuer, fort courant d'air"
+#
+#point 893.5 429.0 rope
+#
+#line pit
+#  875.5 519.0
+#  875.5 519.0 894.75 498.25 894.75 492.5
+#endline
+#
+#point 958.75 516.25 rope
+#
+#line pit
+#  867.75 475.5
+#  867.75 475.5 859.75 480.75 856.25 488.25
+#endline
+#
+#line pit
+#  867.5 455.0
+#  867.5 455.0 853.5 465.0 852.0 480.5
+#  smooth off
+#endline
+#
+#line pit
+#  843.0 445.5
+#  843.0 445.5 818.5 454.5 820.5 468.5
+#  smooth off
+#endline
+#
+#line pit
+#  820.5 434.5
+#  820.5 434.5 796.0 439.0 803.5 454.5
+#  smooth off
+#endline
+#
+#line wall -outline none -subtype presumed -clip off -place bottom
+#  822.0 438.25
+#  822.0 438.25 821.75 444.25 821.5 445.0
+#endline
+#
+#line wall -subtype presumed -place bottom
+#  809.5 407.5
+#  809.5 407.5 810.0 407.5 813.75 415.0
+#  817.5 422.5 824.0 428.0 822.0 438.25
+#endline
+#
+#line wall -outline none -subtype presumed -clip off -place bottom
+#  814.75 441.25
+#  814.75 441.25 816.5 437.5 815.75 434.5
+#endline
+#
+#line wall -close on -reverse on -outline in
+#  865.0 473.75
+#  865.0 473.75 872.25 486.25 877.25 486.5
+#  882.25 486.75 901.75 497.5 900.5 493.0
+#  899.25 488.5 883.0 483.75 880.0 482.0
+#  877.0 480.25 872.5 474.0 869.75 473.75
+#  867.0 473.5 865.0 473.75 865.0 473.75
+#  smooth off
+#endline
+#
+#line wall -subtype presumed -place bottom
+#  815.75 434.5
+#  815.0 431.5 807.75 414.25 807.75 414.25
+#  smooth off
+#  807.75 414.25 807.25 409.75 806.0 409.0
+#endline
+#
+#line pit -close on
+#  817.5 446.0
+#  817.5 446.0 812.25 441.25 814.75 441.25
+#  817.25 441.25 823.0 443.25 821.5 445.0
+#  820.0 446.75 817.5 446.0 817.5 446.0
+#  smooth off
+#endline
+#
+#point 869.0 438.0 height -value [+10 m]
+#
+#point 884.0 498.0 helictite
+#
+#line pit
+#  802.5 422.25
+#  808.0 432.25 801.0 441.0 793.0 446.5
+#  smooth off
+#endline
+#
+#line wall
+#  800.25 425.0
+#  800.25 425.0 848.5 456.5 858.0 458.0
+#  867.5 459.5 880.0 462.0 887.5 464.5
+#  895.0 467.0 914.5 477.5 914.5 477.5
+#  smooth off
+#endline
+#
+#line wall
+#  886.0 524.0
+#  886.0 524.0 866.5 510.5 864.0 504.0
+#  861.5 497.5 858.5 479.5 851.0 475.5
+#  843.5 471.5 823.5 462.0 815.5 457.0
+#  807.5 452.0 795.0 440.75 795.0 440.75
+#  smooth off
+#endline
+#
+#point 879.056 477.715 station -name 2018-CBa-fin@solitaire
+#
+#point 858.976 466.145 station -name 2018-CBa-01@solitaire
+#
+#endscrap
 
-
-scrap Solitaire2018-SP1 -projection plan -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
-
-line wall
-  952.5 543.75
-  952.5 543.75 949.5 544.75 942.75 539.75
-  936.0 534.75 935.5 527.75 927.5 526.75
-  919.5 525.75 908.25 520.0 900.25 520.75
-  892.25 521.5 889.5 525.5 886.0 524.0
-endline
-
-line wall
-  914.5 477.5
-  914.5 477.5 919.75 494.75 929.75 505.25
-  939.75 515.75 958.0 531.0 958.0 531.0
-  smooth off
-endline
-
-point 987.75 504.0 air-draught -orientation 50.9 -subtype winter
-
-point 933.25 551.5 height -value [-20 m]
-
-line pit
-  947.0 548.0
-  947.0 548.0 947.25 530.5 958.25 527.0
-endline
-
-point 970.0 549.25 continuation -attr Code A -text "CF à continuer, fort courant d'air"
-
-point 893.5 429.0 rope
-
-line pit
-  875.5 519.0
-  875.5 519.0 894.75 498.25 894.75 492.5
-endline
-
-point 958.75 516.25 rope
-
-line pit
-  867.75 475.5
-  867.75 475.5 859.75 480.75 856.25 488.25
-endline
-
-line pit
-  867.5 455.0
-  867.5 455.0 853.5 465.0 852.0 480.5
-  smooth off
-endline
-
-line pit
-  843.0 445.5
-  843.0 445.5 818.5 454.5 820.5 468.5
-  smooth off
-endline
-
-line pit
-  820.5 434.5
-  820.5 434.5 796.0 439.0 803.5 454.5
-  smooth off
-endline
-
-line wall -outline none -subtype presumed -clip off -place bottom
-  822.0 438.25
-  822.0 438.25 821.75 444.25 821.5 445.0
-endline
-
-line wall -subtype presumed -place bottom
-  809.5 407.5
-  809.5 407.5 810.0 407.5 813.75 415.0
-  817.5 422.5 824.0 428.0 822.0 438.25
-endline
-
-line wall -outline none -subtype presumed -clip off -place bottom
-  814.75 441.25
-  814.75 441.25 816.5 437.5 815.75 434.5
-endline
-
-line wall -close on -reverse on -outline in
-  865.0 473.75
-  865.0 473.75 872.25 486.25 877.25 486.5
-  882.25 486.75 901.75 497.5 900.5 493.0
-  899.25 488.5 883.0 483.75 880.0 482.0
-  877.0 480.25 872.5 474.0 869.75 473.75
-  867.0 473.5 865.0 473.75 865.0 473.75
-  smooth off
-endline
-
-line wall -subtype presumed -place bottom
-  815.75 434.5
-  815.0 431.5 807.75 414.25 807.75 414.25
-  smooth off
-  807.75 414.25 807.25 409.75 806.0 409.0
-endline
-
-line pit -close on
-  817.5 446.0
-  817.5 446.0 812.25 441.25 814.75 441.25
-  817.25 441.25 823.0 443.25 821.5 445.0
-  820.0 446.75 817.5 446.0 817.5 446.0
-  smooth off
-endline
-
-point 869.0 438.0 height -value [+10 m]
-
-point 884.0 498.0 helictite
-
-line pit
-  802.5 422.25
-  808.0 432.25 801.0 441.0 793.0 446.5
-  smooth off
-endline
-
-line wall
-  800.25 425.0
-  800.25 425.0 848.5 456.5 858.0 458.0
-  867.5 459.5 880.0 462.0 887.5 464.5
-  895.0 467.0 914.5 477.5 914.5 477.5
-  smooth off
-endline
-
-line wall
-  886.0 524.0
-  886.0 524.0 866.5 510.5 864.0 504.0
-  861.5 497.5 858.5 479.5 851.0 475.5
-  843.5 471.5 823.5 462.0 815.5 457.0
-  807.5 452.0 795.0 440.75 795.0 440.75
-  smooth off
-endline
-
-point 879.056 477.715 station -name 2018-CBa-fin@solitaire
-
-point 858.976 466.145 station -name 2018-CBa-01@solitaire
-
-endscrap
 
 

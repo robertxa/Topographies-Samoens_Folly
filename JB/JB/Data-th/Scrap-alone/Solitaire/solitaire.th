@@ -43,15 +43,23 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
 	xx10  xx11    6.18  215  -9  0.6  0.9  0.5  1  
 	xx11  xx12    6.9    264  -19  1  1.6  1.1  1.4  
 	xx12  xx13    2.61  198  -11  0.4  0.4  0.7  0.2  
-	xx13  xx14    6.29  191  -26  0.6  0.8  0.5  0.7  
+	extend ignore xx13
+	
+	xx13  xx14    6.29  191  -26  0.6  0.8  0.5  0.7
+	extend ignore xx14
+	  
 	xx14  xx15    9.87  231  -21  0.6  3.7  0.3  1.5  
+	extend ignore xx15
+	
 	xx15  xx16    6.25  209  -38  1.1  0.9  0.4  0.5    # Arrêt point 16 sur stagmite plantée dans la boue devant le rocher qui barre le passage
+	extend ignore xx16
 	flags splay
 	xx16  xxInterrogation2    8    158  -45  -  -  -  -  
 	flags not splay
 	xx15  xx17    8.18  268  -3  2  0.3  0.3  0.7    # Arrêt point 17 sur la µstalagtite droite (1 mètre à gauche d'une excentrique isolée)
 	flags splay
 	xx17  xxInterrogation3    8    195  -45  -  -  -  -    # semble rejoindre le point ?2
+	extend ignore xx17
 	flags not splay
 	
 	xx10  xx18    2.31  0  29  0.7  1.2  0.6  0.8  
@@ -172,7 +180,9 @@ centerline -title "JBSolitaire : 2018-CBa-00_2018-CBa-fin 2017-FD-02_2018-CBa-01
 	data normal from to length compass clino left right up down
 	flags duplicate
 	2018-CBa-01	2018-CBa-fin	3.37	60	29	4	2	0.94	1.36	# Noeud sommet escalade
-	2017-FD-04	2018-CBa-01	11.58	65	21	1.25	0.66	5.72	8.35	# Sommet du P8
+	2017-FD-02	2018-CBa-01	11.58	65	21	1.25	0.66	5.72	8.35	# Sommet du P8
+	
+	flags not duplicate
 
 # Dev = 15 m
 
@@ -233,7 +243,7 @@ centerline -title "JBSolitaire 2018 : 2017-FD-13_2018-FD-0	2018-FD-21	2018-FD-22
 
 endcenterline	
 
-centerline -title "JBSolitaire 2018 : 2017-FD-03_2019-FD-0	2019-FD-16_2019-FD-18"
+centerline -title "JBSolitaire 2019 : 2017-FD-02_2019-FD-0	2019-FD-16_2019-FD-18"
 	#  Jonction Solitaire avec Pierre qui tombe
 	date 2019.07.16
 		team "Frédéric Delègue"
@@ -249,7 +259,7 @@ centerline -title "JBSolitaire 2018 : 2017-FD-03_2019-FD-0	2019-FD-16_2019-FD-18
   	units clino degrees
 
 	data normal from to length compass clino left right up down
-	2017-FD-03	2019-FD-0	0	0	0	1.1	0.5	5.8	8	# Départ au sommet du P8 qui est la station 2017-FD-03
+	2017-FD-02	2019-FD-0	0	0	0	1.1	0.5	5.8	8	# Départ au sommet du P8 qui est la station 2017-FD-02
 	2019-FD-0	2019-FD-1	11.26	78	31	0.5	2	0.9	0.6	
 	2019-FD-1	2019-FD-2	7.58	42	27	1.1	0.6	0.7	2	
 	2019-FD-2	2019-FD-3	11.5	358	32	0.7	1.3	0.7	1.2	
@@ -258,15 +268,18 @@ centerline -title "JBSolitaire 2018 : 2017-FD-03_2019-FD-0	2019-FD-16_2019-FD-18
 	2019-FD-5	2019-FD-6	9.1	0	-90	0.6	1.6	9.1	1	# Pt 6 est sur la margelle
 	2019-FD-6	2019-FD-7	2.31	258	-25	4	2	4	15	# Pt 7 est la tête de puits
 	2019-FD-7	2019-FD-8	15	0	-90	1.4	0.7	11	1	
-	2019-FD-8	2019-FD-9	11.28	247	-42	0	0	0	0	# Jction avec la corde à la base du puits Alain
+	2019-FD-8	2019-FD-9	11.28	247	-42	0	0	0	0	# Jction avec la corde à la base du puits Alain, probablement le point topo Jd.24@jb-amonts2
+	extend left
 	2019-FD-8	2019-FD-10	21.36	192	34	1.2	3.5	8.4	1	
-	2019-FD-10	2019-FD-11	5.2	298	56	0	0	0	0	# Est-ce que les deux points 10 et 11 sont sur la topo existante, (spits anciens), est-ce la galerie du séchoir ?
+	2019-FD-10	2019-FD-11	5.2	298	56	0	0	0	0	# galerie du séchoir ; marqué en duplicates ?
+	extend right
 	2019-FD-6	2019-FD-12	5	335	28	0.6	0.6	1.1	1	
 	2019-FD-12	2019-FD-13	5.63	6	16	0.5	0.6	7.5	1	
 	2019-FD-13	2019-FD-14	9.88	333	4	0.7	0.5	8	1.2	# Pt 14 est la tête de puits
 	2019-FD-14	2019-FD-15	6.87	343	-61	2.2	1.2	16	9	# Pt 15 est la tête de puits
 	2019-FD-15	2019-FD-16	9	0	-90	2.3	4.8	27	2.3	# Bout corde
-	2019-FD-16	2019-FD-17	6.3	131	-33	0	0	0	0	# Vers méandre équipé en fixe (réseau de la Pierre qui tombe
+	2019-FD-16	2019-FD-17	6.3	131	-33	0	0	0	0	# Vers méandre équipé en fixe (réseau de la Pierre qui tombe)
+	extend left
 	2019-FD-16	2019-FD-18	14.3	185	-58	0	0	0	0	
 
 # Dev = 162.92 m

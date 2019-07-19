@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -474.0 -3632 2603 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -471.5 -2302.5 2337.5 139.0
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} Donnees-topo/2017-06_Report_topo_galerie_solitaire.ppm 0 {}
 
 
@@ -57,9 +57,10 @@ line wall
   smooth off
 endline
 
-line pit
+line wall
   2052.0 -1430.0
   2052.0 -1430.0 2048.0 -1409.0 2015.0 -1404.0
+  smooth off
 endline
 
 line wall
@@ -72,13 +73,17 @@ line wall
   2141.0 -1537.0 2121.0 -1511.0 2107.0 -1490.0
   2093.0 -1469.0 2083.0 -1466.0 2067.0 -1451.0
   2051.0 -1436.0 2063.0 -1441.0 2052.0 -1430.0
+  smooth off
 endline
 
 line wall
   2015.0 -1404.0
   1993.0 -1401.0 2010.0 -1400.0 1989.0 -1397.0
-  1968.0 -1394.0 1950.0 -1381.0 1923.0 -1381.0
-  1896.0 -1381.0 1868.0 -1383.0 1868.0 -1369.0
+endline
+
+line wall
+  1908.5 -1369.0
+  1883.65 -1379.58 1868.0 -1383.0 1868.0 -1369.0
   1868.0 -1355.0 1867.0 -1340.0 1880.0 -1319.0
   1893.0 -1298.0 1901.0 -1279.0 1919.0 -1257.0
   1937.0 -1235.0 1948.0 -1223.0 1949.0 -1194.0
@@ -510,7 +515,7 @@ endline
 
 point 193.0 -1695.0 water-flow -orientation 178.3
 
-point 231.0 -1594.0 label -text "R3"
+point 155.0 -1586.0 label -text "R3"
 
 point -341.0 -2024.0 height -value [-25 m]
 

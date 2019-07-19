@@ -1,0 +1,317 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -129.5 2253.9854 1387.8432
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {1732.2799999999997 1 1.0} {708.6610000000001 xx0init} solitaire-plan2019.xvi 0 {}
+
+
+
+scrap solitaire2019-SP1 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+line wall
+  379.5 414.5
+  379.5 414.5 382.0 400.0 378.0 400.0
+  374.0 400.0 333.5 405.5 319.5 404.0
+  305.5 402.5 268.0 404.0 270.5 393.0
+  273.0 382.0 273.5 379.5 278.5 370.5
+  283.5 361.5 298.3 347.77 294.0 342.0
+  289.7 336.23 279.5 288.5 279.5 288.5
+  smooth off
+endline
+
+line wall
+  577.5 331.0
+  577.5 331.0 568.5 319.0 562.5 319.0
+  556.5 319.0 528.0 333.0 517.0 337.5
+  506.0 342.0 473.0 352.0 461.5 362.0
+  450.0 372.0 424.5 397.0 413.5 398.0
+  402.5 399.0 386.5 395.5 386.5 401.5
+  386.5 407.5 386.5 414.5 386.5 414.5
+  smooth off
+endline
+
+point 331.5 371.0 air-draught -orientation 88.1 -subtype summer
+
+point 275.5 269.0 continuation -attr Code P -text "P10 à descendre ou traverser"
+
+point 712.0 507.0 continuation -attr Code A -text "CF à explorer"
+
+point 672.5 470.0 continuation -attr Code A -text "Affluent à explorer"
+
+point 746.5 621.0 continuation -attr Code A -text "Affluent à explorer"
+
+point 816.0 582.5 narrow-end
+
+point 682.5 350.0 narrow-end
+
+point 400.0 420.5 narrow-end
+
+point 279.5 288.5 altitude -align left
+
+point 754.0 505.0 stalactites
+
+line pit -close on
+  754.5 584.5
+  754.5 584.5 739.5 578.0 740.0 574.0
+  740.5 570.0 737.5 565.0 745.5 568.5
+  753.5 572.0 759.5 572.0 759.0 575.5
+  758.5 579.0 754.5 584.5 754.5 584.5
+  smooth off
+endline
+
+point 764.0 601.0 traverse
+
+line rock-border -close on
+  735.0 470.5
+  731.0 460.5
+  736.5 460.0
+  740.0 466.0
+  735.0 470.5
+endline
+
+point 755.0 454.0 bridge
+
+point 442.5 363.5 blocks
+
+point 431.5 378.5 blocks
+
+point 650.0 395.0 clay-tree
+
+point 771.0 413.0 label -text "<center>carrefour<br>de Daniel"
+
+point 552.5 413.0 label -text "m. des goujons"
+
+point 803.5 328.5 label -text "<center>puits de<br>la Savonnette"
+
+point 656.5 588.0 label -text "<center>puits de<br>Newton"
+
+point 847.5 539.5 label -text "R1.5"
+
+point 854.0 362.0 height -value [-7 m]
+
+point 709.0 568.0 height -value [-7 m]
+
+point 312.0 284.0 height -value [-10 m]
+
+point 383.5 433.5 water-flow -orientation 185.5
+
+point 668.0 344.0 water-flow -orientation 164.4
+
+point 695.5 478.5 water-flow -orientation 110.6
+
+point 732.0 605.0 water-flow -orientation 150.1
+
+point 803.5 596.5 water-flow -orientation 194.1
+
+line wall -subtype presumed
+  600.5 339.0
+  600.5 339.0 580.32 333.25 577.5 331.0
+endline
+
+line wall -outline in -subtype presumed
+  576.0 322.5
+  576.0 322.5 595.0 332.5 599.5 333.5
+endline
+
+line wall -outline in
+  599.5 333.5
+  599.5 333.5 614.0 336.0 611.5 332.5
+  609.0 329.0 603.5 324.0 596.0 321.5
+  588.5 319.0 571.0 311.0 571.5 315.0
+  572.0 319.0 576.0 322.5 576.0 322.5
+  smooth off
+endline
+
+line wall
+  716.0 466.5
+  716.0 466.5 732.0 467.5 728.0 461.5
+  724.0 455.5 705.0 436.0 699.5 432.0
+  694.0 428.0 678.5 411.5 669.5 401.0
+  660.5 390.5 649.0 377.5 639.0 365.5
+  629.0 353.5 630.0 352.5 628.0 350.5
+  626.0 348.5 618.0 339.5 615.0 339.5
+  612.0 339.5 600.5 339.0 600.5 339.0
+  smooth off
+endline
+
+line wall
+  719.5 488.5
+  719.5 488.5 728.5 480.5 729.5 478.0
+  730.5 475.5 732.0 471.5 732.0 471.5
+  smooth off
+endline
+
+line pit
+  732.0 491.5
+  732.0 491.5 735.0 474.0 727.5 474.0
+endline
+
+line wall
+  733.0 486.5
+  733.0 486.5 730.5 482.0 729.5 485.5
+  728.5 489.0 725.0 496.0 725.0 496.0
+  smooth off
+endline
+
+line wall
+  740.0 582.0
+  740.0 582.0 748.0 577.0 739.5 571.0
+  731.0 565.0 736.0 554.5 736.0 546.0
+  736.0 537.5 735.0 519.5 734.5 510.5
+  734.0 501.5 739.0 490.5 733.0 486.5
+endline
+
+line wall
+  732.0 471.5
+  725.5 471.5 719.0 477.5 719.0 477.5
+  smooth off
+endline
+
+line wall
+  797.0 583.0
+  797.0 583.0 797.5 569.0 791.0 571.5
+  784.5 574.0 768.5 585.5 760.5 582.0
+  752.5 578.5 749.0 582.0 746.5 585.5
+endline
+
+line wall
+  983.5 371.5
+  983.5 371.5 978.0 361.5 969.0 376.5
+  960.0 391.5 929.0 425.0 920.5 439.0
+  912.0 453.0 902.0 481.0 889.0 488.5
+  876.0 496.0 838.5 510.0 831.0 521.0
+  823.5 532.0 819.5 525.5 818.5 537.0
+  817.5 548.5 821.5 559.5 813.5 562.5
+  805.5 565.5 799.5 567.0 799.5 571.0
+  799.5 575.0 802.5 581.0 802.5 581.0
+  smooth off
+endline
+
+line wall
+  739.5 456.5
+  739.5 456.5 744.0 460.5 742.5 468.0
+  741.0 475.5 743.5 520.0 743.5 531.5
+  743.5 543.0 741.5 563.0 750.0 566.5
+  758.5 570.0 758.0 576.5 766.5 571.0
+  775.0 565.5 802.5 547.5 804.5 542.0
+  806.5 536.5 825.0 516.0 834.0 509.0
+  843.0 502.0 863.5 484.0 872.5 471.0
+  881.5 458.0 912.5 435.0 900.0 394.0
+  887.5 353.0 866.0 279.5 914.0 276.5
+  962.0 273.5 1000.5 267.5 1011.0 289.5
+  1021.5 311.5 1041.5 340.5 1046.5 345.0
+endline
+
+line wall
+  669.0 354.0
+  669.0 354.0 660.0 371.0 672.0 386.0
+  684.0 401.0 699.0 418.0 713.0 432.0
+  727.0 446.0 736.0 458.0 739.5 456.5
+endline
+
+line wall -close on -outline in
+  983.5 348.5
+  983.5 348.5 1009.0 355.0 1018.0 352.0
+  1027.0 349.0 1029.0 345.5 1027.5 339.5
+  1026.0 333.5 1009.0 311.5 995.5 311.5
+  982.0 311.5 920.5 307.5 930.5 321.0
+  940.5 334.5 950.5 339.5 959.5 342.0
+  968.5 344.5 983.5 348.5 983.5 348.5
+  smooth off
+endline
+
+line pit
+  879.5 291.0
+  879.5 291.0 917.5 340.5 926.5 367.0
+  935.5 393.5 936.5 433.0 936.5 433.0
+  smooth off
+endline
+
+line pit
+  820.0 514.5
+  820.0 514.5 815.5 528.0 833.0 527.0
+endline
+
+line pit
+  805.5 570.5
+  805.5 570.5 794.5 561.0 789.0 577.0
+endline
+
+line pit
+  575.0 317.5
+  575.0 317.5 564.5 311.5 560.0 322.5
+endline
+
+line pit
+  615.5 344.5
+  615.5 344.5 614.0 334.0 608.0 332.0
+endline
+
+line pit
+  390.5 401.0
+  390.5 401.0 380.0 398.0 376.0 403.0
+endline
+
+line pit
+  292.0 286.0
+  292.0 286.0 287.0 294.5 277.5 294.5
+endline
+
+line wall
+  286.5 284.5
+  286.5 284.5 307.0 333.0 303.0 342.0
+  299.0 351.0 282.0 381.0 292.0 383.0
+  302.0 385.0 324.0 385.0 345.0 385.0
+  366.0 385.0 397.0 391.0 413.0 378.0
+  429.0 365.0 453.0 350.0 477.0 340.0
+  501.0 330.0 545.0 299.0 566.0 301.0
+  587.0 303.0 617.0 300.0 625.0 316.0
+  633.0 332.0 657.0 373.0 659.0 368.0
+  661.0 363.0 662.0 353.0 662.0 353.0
+  smooth off
+endline
+
+point 281.8899999999999 287.24100000000004 station -name 2019-FD-40@solitaire
+
+point 296.29999999999995 345.271 station -name 2019-FD-39@solitaire
+
+point 275.26999999999987 390.391 station -name 2019-FD-38@solitaire
+
+point 316.76999999999987 394.721 station -name 2019-FD-37@solitaire
+
+point 409.28999999999985 386.611 station -name 2019-FD-36@solitaire
+
+point 459.52999999999986 354.091 station -name 2019-FD-35@solitaire
+
+point 569.68 311.731 station -name 2019-FD-34@solitaire
+
+point 615.3499999999999 311.731 station -name 2019-FD-33@solitaire
+
+point 681.4199999999998 413.461 station -name 2019-FD-32@solitaire
+
+point 718.7399999999999 470.471 station -name 2019-FD-31@solitaire
+
+point 739.7599999999999 460.711 station -name 2019-FD-30@solitaire
+
+point 737.3199999999999 529.211 station -name 2019-FD-29@solitaire
+
+point 737.3199999999999 565.981 station -name 2019-FD-28@solitaire
+
+point 762.3599999999999 580.3910000000001 station -name 2019-FD-27@solitaire
+
+point 814.8799999999999 558.111 station -name 2019-FD-26@solitaire
+
+point 809.1299999999999 538.111 station -name 2019-FD-25@solitaire
+
+point 830.1599999999999 516.301 station -name 2019-FD-24@solitaire
+
+point 881.2599999999999 479.211 station -name 2019-FD-23@solitaire
+
+point 919.8399999999999 431.571 station -name 2019-FD-22@solitaire
+
+point 975.3499999999999 360.471 station -name 2019-FD-21@solitaire
+
+point 1026.85 365.831 station -name 2019-FD-19@solitaire
+
+endscrap
+
+

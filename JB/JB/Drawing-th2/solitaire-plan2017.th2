@@ -57,9 +57,10 @@ line wall
   smooth off
 endline
 
-line pit
+line wall
   2048.0 -1423.0
   2048.0 -1423.0 2034.0 -1405.0 2013.0 -1401.0
+  smooth off
 endline
 
 line wall
@@ -72,6 +73,7 @@ line wall
   2141.0 -1537.0 2121.0 -1511.0 2107.0 -1490.0
   2093.0 -1469.0 2083.0 -1466.0 2067.0 -1451.0
   2051.0 -1436.0 2056.0 -1426.0 2048.0 -1423.0
+  smooth off
 endline
 
 line wall
@@ -510,7 +512,7 @@ endline
 
 point 193.0 -1695.0 water-flow -orientation 178.3
 
-point 231.0 -1594.0 label -text "R3"
+point 192.0 -1599.0 label -text "R3"
 
 point -341.0 -2024.0 height -value [-25 m]
 

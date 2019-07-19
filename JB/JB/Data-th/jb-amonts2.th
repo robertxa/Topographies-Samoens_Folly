@@ -3351,7 +3351,8 @@ extend start Da.269
    units compass degrees
    units clino degrees
 
-   data normal from to length backcompass backclino right left up down
+   #data normal from to length backcompass backclino right left up down
+   data normal from to length backcompass clino right left up down	#2019-07-19 : backclino changed to clino
 
    Ja.24 Jb.1    4.87       300.       27.       0.       0.       0.       0.    
    Jb.1 Jb.2    5.65       244.       42.       0.       0.       0.       0.    

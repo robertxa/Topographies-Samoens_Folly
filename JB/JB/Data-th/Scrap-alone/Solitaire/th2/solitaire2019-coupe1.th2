@@ -1,0 +1,316 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 2175.2452000000003 757.9216
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {1604.0900000000001 1 1.0} {393.7 xx0init} solitaire-coupe2019.xvi 0 {}
+
+
+
+scrap solitaire2019-SC1 -projection extended -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+point 644.4500000000002 226.42 station -name 2019-FD-25@solitaire
+
+line rock-border -close on
+  626.5 226.5
+  625.5 223.5
+  629.0 223.5
+  626.5 226.5
+endline
+
+line rock-border -close on
+  623.0 224.75
+  618.5 223.75
+  625.5 222.0
+  623.0 224.75
+endline
+
+line rock-border -close on
+  615.75 225.75
+  614.0 222.0
+  620.25 222.0
+  615.75 225.75
+endline
+
+point 558.25 237.0 stalactites
+
+point 504.75 232.75 clay-tree
+
+line wall -subtype presumed -outline in
+  362.5 254.75
+  362.5 254.75 386.5 254.0 396.75 252.5
+  407.0 251.0 422.25 247.0 422.25 247.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  425.25 249.25
+  425.25 249.25 403.25 256.5 394.5 258.0
+  385.75 259.5 363.0 258.0 363.0 258.0
+  smooth off
+endline
+
+point 792.8000000000002 257.90999999999997 station -name 2019-FD-19@solitaire
+
+point 756.25 191.75 label -text "<center>puits de la<br>Savonnette"
+
+point 589.5 177.5 label -text "<center>puits<br>de Newton"
+
+point 525.75 191.5 label -text "<center>carrefour<br>de Daniel"
+
+point 658.0 270.25 label -text "R1.5"
+
+line wall
+  596.5 203.25
+  596.5 203.25 595.25 212.5 601.25 215.75
+  607.25 219.0 607.75 221.0 616.0 221.0
+  624.25 221.0 638.44 220.56 646.25 220.75
+  656.5 221.0 657.25 225.75 666.0 226.5
+  677.15 227.46 686.0 241.5 696.0 240.0
+  706.0 238.5 716.25 238.25 722.5 236.0
+  728.75 233.75 725.75 221.0 733.5 219.75
+  741.25 218.5 764.0 218.75 769.75 220.5
+  775.5 222.25 772.0 225.0 772.0 230.75
+  772.0 236.5 770.5 250.5 776.25 251.25
+  782.0 252.0 791.25 253.0 795.0 253.0
+  smooth off
+endline
+
+line wall
+  489.75 225.25
+  489.75 225.25 492.25 231.5 500.75 229.5
+  509.25 227.5 525.25 221.0 528.25 219.75
+  531.25 218.5 538.5 215.25 545.25 216.25
+  552.0 217.25 569.25 217.0 573.25 216.25
+  577.25 215.5 584.25 217.5 584.25 214.0
+  584.25 210.5 585.25 202.25 585.25 202.25
+  smooth off
+endline
+
+line wall
+  198.5 175.25
+  198.5 175.25 208.25 174.5 208.25 182.0
+  208.25 189.5 203.75 221.25 210.5 220.5
+  217.25 219.75 231.5 211.5 240.25 214.0
+  249.0 216.5 253.0 224.5 262.75 227.75
+  272.5 231.0 291.25 233.0 304.75 232.0
+  318.25 231.0 351.75 234.5 359.75 235.5
+  367.75 236.5 385.25 234.75 398.25 235.25
+  411.25 235.75 435.0 238.5 439.75 237.75
+  444.5 237.0 472.25 234.75 481.25 233.0
+  490.25 231.25 486.0 226.25 486.0 226.25
+  smooth off
+endline
+
+line wall
+  297.75 263.5
+  297.75 263.5 308.0 258.75 299.25 257.0
+  290.5 255.25 288.0 251.25 279.25 252.25
+  270.5 253.25 244.0 253.5 236.5 253.5
+  229.0 253.5 201.5 254.5 201.5 254.5
+  smooth off
+endline
+
+line wall
+  363.0 258.0
+  363.0 258.0 358.0 256.75 351.75 258.25
+  345.5 259.75 333.5 266.5 328.0 264.75
+  322.5 263.0 314.5 260.5 311.75 261.75
+  309.0 263.0 307.0 266.25 307.0 266.25
+  smooth off
+endline
+
+point 473.5 222.75 narrow-end
+
+point 409.25 297.75 label -text "m. des Goujons"
+
+point 183.5 223.75 continuation -attr Code P -text "P10 à descendre"
+
+point 283.0 270.25 continuation -attr Code E -text "Affluent à explorer"
+
+point 618.5 275.5 continuation -attr Code E -text "Affluent à explorer"
+
+area u:galerie
+  l62-542-222
+endarea
+
+line border -id l62-542-222 -close on
+  536.0 237.25
+  536.0 237.25 526.5 237.25 525.75 233.5
+  525.0 229.75 527.0 224.0 530.5 222.75
+  534.0 221.5 541.5 220.5 542.25 221.75
+  543.0 223.0 540.25 231.5 540.75 233.0
+  541.25 234.5 541.75 236.75 541.75 236.75
+  smooth off
+  536.0 237.25
+endline
+
+line rock-border -close on
+  542.75 231.0
+  534.5 231.25
+  534.5 228.0
+  543.0 226.0
+  542.75 231.0
+endline
+
+line rock-border -close on
+  349.5 239.0
+  347.25 237.0
+  351.25 236.0
+  352.0 238.25
+  349.5 239.0
+endline
+
+line rock-border -close on
+  344.75 238.25
+  341.25 236.0
+  345.0 234.25
+  347.25 237.0
+  344.75 238.25
+endline
+
+line rock-border -close on
+  338.75 237.5
+  335.5 235.25
+  338.75 234.0
+  341.0 237.5
+  338.75 237.5
+endline
+
+point 297.25 272.25 water-flow -orientation 136.7
+
+point 483.5 215.75 water-flow -orientation 220.4
+
+point 603.75 265.75 water-flow -orientation 131.9
+
+point 599.0 258.5 water-flow -orientation 185.0
+
+point 549.0 252.75 water-flow -orientation 211.7
+
+point 537.5 259.25 continuation -attr Code E -text "Affluent à explorer"
+
+point 587.5 259.25 continuation -attr Code E -text "Affluent à explorer"
+
+point 590.5 201.5 continuation -attr Code P -text "Puits à descendre"
+
+point 610.25 204.25 height -value [-7 m]
+
+point 228.25 196.75 height -value [-10 m]
+
+point 786.0 235.5 height -value [-7 m]
+
+line u:rope
+  783.5 257.0
+  783.5 257.0 769.25 248.5 768.75 254.25
+  768.73 254.5 770.0 223.25 770.0 223.25
+  smooth off
+endline
+
+line u:rope
+  610.0 230.0
+  610.0 230.0 591.25 222.25 586.0 227.25
+  585.49 227.74 579.25 223.0 570.5 228.0
+  smooth off
+endline
+
+line u:rope
+  222.25 234.25
+  222.25 234.25 204.0 224.5 204.25 229.75
+  204.5 235.0 205.25 179.75 205.25 179.75
+  smooth off
+endline
+
+line wall -outline in
+  422.25 247.0
+  422.25 247.0 427.5 245.5 425.5 244.75
+  423.5 244.0 423.5 240.0 416.0 242.0
+  408.5 244.0 369.5 247.5 366.5 248.5
+  363.5 249.5 359.25 254.0 362.5 254.75
+  smooth off
+endline
+
+line wall
+  536.0 237.25
+  536.0 237.25 529.25 239.75 522.75 242.5
+  516.25 245.25 508.5 250.75 498.25 251.5
+  488.0 252.25 441.25 251.5 439.0 251.0
+  436.75 250.5 435.0 248.0 432.25 248.0
+  429.5 248.0 425.25 249.25 425.25 249.25
+  smooth off
+endline
+
+line wall
+  543.0 245.25
+  543.0 245.25 539.25 237.0 536.0 237.25
+  smooth off
+endline
+
+line wall
+  595.75 245.25
+  595.75 245.25 598.0 243.0 590.5 243.0
+  583.0 243.0 583.5 250.75 569.5 245.75
+  555.5 240.75 539.25 234.0 541.75 236.75
+  544.25 239.5 546.25 243.25 546.25 243.25
+  smooth off
+endline
+
+line wall
+  611.0 255.0
+  611.0 255.0 621.5 249.75 616.75 246.5
+  612.0 243.25 606.75 234.0 602.75 237.5
+  598.75 241.0 599.75 245.5 599.75 245.5
+  smooth off
+endline
+
+line wall
+  790.5 260.0
+  790.5 260.0 775.75 258.25 767.5 256.25
+  759.25 254.25 733.5 240.75 713.25 245.5
+  693.0 250.25 673.0 253.75 667.5 253.75
+  662.0 253.75 650.5 259.5 640.0 259.0
+  629.5 258.5 624.75 251.25 622.5 252.5
+  620.25 253.75 616.25 259.5 616.25 259.5
+  smooth off
+endline
+
+point 766.9400000000002 251.45999999999998 station -name 2019-FD-20@solitaire
+
+point 766.9400000000002 221.93 station -name 2019-FD-21@solitaire
+
+point 721.8200000000002 240.16 station -name 2019-FD-22@solitaire
+
+point 691.1400000000001 243.94 station -name 2019-FD-23@solitaire
+
+point 659.5800000000002 228.54 station -name 2019-FD-24@solitaire
+
+point 634.0300000000002 225.95 station -name 2019-FD-26@solitaire
+
+point 605.5000000000001 224.92 station -name 2019-FD-27@solitaire
+
+point 591.0600000000002 224.45 station -name 2019-FD-28@solitaire
+
+point 572.6900000000002 223.77999999999997 station -name 2019-FD-29@solitaire
+
+point 538.4000000000001 223.77999999999997 station -name 2019-FD-30@solitaire
+
+point 526.8100000000002 230.46999999999997 station -name 2019-FD-31@solitaire
+
+point 500.85000000000014 237.44 station -name 2019-FD-32@solitaire
+
+point 440.2400000000001 243.82 station -name 2019-FD-33@solitaire
+
+point 417.4000000000001 238.98 station -name 2019-FD-34@solitaire
+
+point 358.3800000000001 241.01999999999998 station -name 2019-FD-35@solitaire
+
+point 328.46000000000015 240.51 station -name 2019-FD-36@solitaire
+
+point 282.0400000000002 238.89999999999998 station -name 2019-FD-37@solitaire
+
+point 261.1700000000002 234.83999999999997 station -name 2019-FD-38@solitaire
+
+point 236.2900000000002 229.57 station -name 2019-FD-39@solitaire
+
+point 206.3800000000001 226.42 station -name 2019-FD-40@solitaire
+
+endscrap
+
+

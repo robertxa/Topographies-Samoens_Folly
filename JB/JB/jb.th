@@ -1,8 +1,6 @@
 encoding  utf-8
-
-#encoding  iso8859-2
  
- survey Jean-Bernard -title "Gouffre Jean Bernard"
+survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 # Pour importer les différentes données de différents fichiers topos : 
    input Data-th/jb-amonts1
@@ -77,6 +75,7 @@ encoding  utf-8
      
      #equate xx36@solitaire Jd.17@jb-amonts2
      equate xx36@solitaire Jd.19@jb-amonts2
+     equate 2019-FD-9@solitaire Jd.24@jb-amonts2	# Jction 2019 Solitaire et Base du puits Alain
      
      equate S1-0@siphons_aval Kp.24@jb-riv2
 
@@ -239,7 +238,7 @@ encoding  utf-8
      #join solitaire_plan 
      join solitaire_plan sol2017-1 -count 2
      join Solitaire-c-2018_2 solitaire_plan
-     join Solitaire2018-SP1 sol2017-1
+     #join Solitaire2018-SP1 sol2017-1
      
      join sezhommes2 S1
      

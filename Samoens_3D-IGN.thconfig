@@ -217,26 +217,23 @@ endlayout
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/Folly-2018-plan-IGN.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/Folly-2019-plan-IGN.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
- export model -o Outputs/3D/Folly-tot-IGN-2018.lox
-# export model -o Outputs/3D/Folly-tot-Xav-2018.3d
-
-##export model -o Outputs/vrml/Folly2014.vrml
+ export model -o Outputs/3D/Folly-tot-IGN-2019.lox
+# export model -o Outputs/3D/Folly-tot-Xav-20189.3d
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2018 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2019 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Folly-tot-2014.kml -layout my_layout
+# export map -proj plan -fmt kml -o Outputs/Folly-tot-2019.kml -layout my_layout
 
 # Export de la database sql
-#export database -o Outputs/database_Folly-2015.sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -o Outputs/Lists/databaseJB-2018.sql
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2018.html
-export survey-list -location on -o Outputs/Lists/Surveys2018.html
-export cave-list -location on -o Outputs/Lists/Caves2018.html
+export database -o Outputs/Lists/databaseJB-2019.sql
+export continuation-list -o Outputs/Lists/ContinuationsJB2-2019.html
+export survey-list -location on -o Outputs/Lists/Surveys2019.html
+export cave-list -location on -o Outputs/Lists/Caves2019.html

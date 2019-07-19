@@ -1,0 +1,262 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 2253.9854 1387.8432
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {1732.2799999999997 1 1.0} {708.6610000000001 xx0init} solitaire-plan2019.xvi 0 {}
+
+
+
+scrap solitaire2019-SP2 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+line rock-border -close on
+  1950.0 676.0
+  1945.5 669.5
+  1950.5 667.5
+  1954.0 675.0
+  1950.0 676.0
+endline
+
+line rock-border -close on
+  1937.0 663.0
+  1932.5 656.5
+  1939.0 656.0
+  1941.5 665.5
+  1937.0 663.0
+endline
+
+line rock-border -close on
+  1921.5 635.0
+  1920.0 627.5
+  1926.0 628.0
+  1926.0 636.0
+  1921.5 635.0
+endline
+
+line rock-border -close on
+  1928.0 651.0
+  1925.5 645.5
+  1932.0 643.0
+  1932.0 650.0
+  1928.0 651.0
+endline
+
+line pit
+  1911.0 505.5
+  1911.0 505.5 1870.5 514.0 1874.0 534.5
+  smooth off
+endline
+
+line wall
+  1959.5 697.0
+  1959.5 697.0 1958.0 691.5 1954.0 687.5
+  1950.0 683.5 1922.0 658.5 1919.0 641.0
+  1916.0 623.5 1917.5 607.0 1917.5 593.5
+  1917.5 580.0 1917.5 571.0 1913.0 562.0
+  1908.5 553.0 1899.0 529.0 1887.5 527.5
+  1876.0 526.0 1831.25 518.0 1831.25 518.0
+  smooth off
+endline
+
+line wall
+  1956.0 719.0
+  1956.0 719.0 1963.5 711.5 1958.5 710.0
+  smooth off
+endline
+
+line wall
+  1966.0 665.0
+  1966.0 665.0 1962.0 674.0 1965.5 681.0
+  1969.0 688.0 1981.5 703.5 1980.0 707.5
+  1978.5 711.5 1972.0 720.5 1972.0 720.5
+  smooth off
+endline
+
+line wall -subtype presumed
+  1932.0 579.0
+  1932.0 579.0 1944.0 596.0 1949.0 604.5
+  1954.0 613.0 1964.0 645.5 1965.0 652.5
+  1966.0 659.5 1966.0 665.0 1966.0 665.0
+  smooth off
+endline
+
+line wall -subtype presumed -outline in
+  1959.5 665.0
+  1959.5 665.0 1960.0 641.5 1953.0 627.0
+  1946.0 612.5 1932.5 597.5 1932.5 597.5
+  smooth off
+endline
+
+line wall -outline in
+  1932.5 597.5
+  1932.5 597.5 1929.0 630.0 1935.0 638.5
+  1941.0 647.0 1958.0 677.5 1959.0 674.5
+  1960.0 671.5 1959.5 665.0 1959.5 665.0
+  smooth off
+endline
+
+point 1930.0 506.0 traverse
+
+line wall
+  1873.75 507.75
+  1873.75 507.75 1895.5 506.0 1904.0 515.0
+  1912.5 524.0 1928.5 545.0 1933.5 562.0
+  1938.5 579.0 1930.0 570.0 1932.0 579.0
+  smooth off
+endline
+
+point 1969.4499999999998 703.231 station -name 2019-FD-6@solitaire
+
+point 1958.58 690.791 station -name 2019-FD-4@solitaire
+
+point 1923.3799999999999 640.471 station -name 2019-FD-3@solitaire
+
+point 1926.06 563.701 station -name 2019-FD-2@solitaire
+
+point 1890.4699999999998 524.171 station -name 2019-FD-1@solitaire
+
+endscrap
+
+
+
+scrap solitaire2019-SP_3 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+point 1887.0 578.5 continuation -attr Code A -text "Boyau à explorer et topographier"
+
+line slope
+  1901.25 584.25
+  1901.25 584.25 1906.5 570.5 1902.0 566.0
+  smooth off
+  l-size 5.0
+endline
+
+line pit
+  1941.25 685.0
+  1941.25 685.0 1941.75 677.0 1948.0 677.75
+  1954.25 678.5 1957.75 692.5 1957.75 692.5
+  smooth off
+endline
+
+line pit
+  1958.0 695.25
+  1958.0 695.25 1953.75 702.5 1953.75 710.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  1901.0 705.0
+  1901.0 705.0 1882.25 679.0 1890.75 667.25
+  1899.25 655.5 1907.5 652.5 1907.5 652.5
+  smooth off
+endline
+
+line wall
+  1895.5 573.75
+  1895.5 573.75 1894.5 570.5 1901.0 568.5
+  1907.5 566.5 1934.0 556.5 1936.0 564.75
+  1938.0 573.0 1953.25 651.0 1957.25 662.75
+  1961.25 674.5 1954.25 694.75 1956.0 696.25
+  1957.75 697.75 1959.5 697.0 1959.5 697.0
+  smooth off
+endline
+
+point 2006.75 611.75 label -text "Le Séchoir"
+
+line wall
+  1907.5 652.5
+  1907.5 652.5 1917.0 680.0 1926.5 681.0
+  1936.0 682.0 1946.0 692.5 1943.0 684.5
+  1940.0 676.5 1920.75 630.0 1912.5 613.25
+  1904.25 596.5 1904.25 586.75 1902.25 582.0
+  1900.25 577.25 1896.75 579.25 1896.75 579.25
+  smooth off
+endline
+
+line wall
+  1958.5 710.0
+  1958.5 710.0 1956.0 708.5 1947.0 703.5
+  1938.0 698.5 1915.0 685.0 1910.0 691.0
+  1905.0 697.0 1901.0 705.0 1901.0 705.0
+  smooth off
+endline
+
+point 1904.09 574.171 station -name 2019-FD-11@solitaire
+
+point 1924.33 563.461 station -name 2019-FD-10@solitaire
+
+point 1892.52 674.011 station -name 2019-FD-9@solitaire
+
+point 1953.3 699.841 station -name 2019-FD-8@solitaire
+
+endscrap
+
+
+
+scrap solitaire2019_SP4 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+point 1918.0 874.5 altitude -align top
+
+point 1927.25 933.0 label -text "<center>réseau de la<br>Pierre Qui Tombe"
+
+line floor-meander
+  1910.25 813.0
+  1910.25 813.0 1910.5 860.25 1919.0 859.5
+  1927.5 858.75 1942.25 849.75 1945.25 848.25
+  1948.25 846.75 1951.25 845.25 1951.25 845.25
+  smooth off
+endline
+
+line pit
+  1919.25 837.75
+  1919.25 837.75 1922.75 850.0 1927.0 847.25
+  1931.25 844.5 1935.0 842.75 1935.0 842.75
+  smooth off
+endline
+
+line pit
+  1951.0 721.25
+  1951.0 721.25 1957.75 733.25 1968.25 729.5
+  smooth off
+endline
+
+line wall
+  1917.5 812.25
+  1917.5 812.25 1915.75 844.5 1919.25 840.5
+  1922.75 836.5 1931.25 819.75 1934.75 813.75
+  1938.25 807.75 1953.5 783.0 1953.5 777.25
+  1953.5 771.5 1947.0 741.75 1949.0 736.5
+  1951.0 731.25 1956.0 719.0 1956.0 719.0
+  smooth off
+endline
+
+line wall
+  1951.25 854.5
+  1951.25 854.5 1937.0 872.0 1930.5 872.5
+  1924.0 873.0 1917.0 877.5 1911.5 870.5
+  1906.0 863.5 1902.0 817.0 1902.0 812.25
+  smooth off
+endline
+
+line wall
+  1972.0 720.5
+  1972.0 720.5 1960.0 731.0 1960.0 740.0
+  1960.0 749.0 1966.75 771.25 1963.0 779.25
+  1959.25 787.25 1947.25 812.5 1941.25 822.5
+  1935.25 832.5 1922.5 848.25 1928.75 847.25
+  1935.0 846.25 1949.0 840.5 1949.0 840.5
+  smooth off
+endline
+
+point 1947.71 844.091 station -name 2019-FD-17@solitaire
+
+point 1911.1 811.8910000000001 station -name 2019-FD-18@solitaire
+
+point 1916.3 871.341 station -name 2019-FD-16@solitaire
+
+point 1923.9299999999998 846.301 station -name 2019-FD-14@solitaire
+
+point 1959.21 777.1610000000001 station -name 2019-FD-13@solitaire
+
+point 1954.7199999999998 734.721 station -name 2019-FD-12@solitaire
+
+endscrap
+
+

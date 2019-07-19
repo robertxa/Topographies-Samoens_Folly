@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -365.0 -206.0 914.6226 994.8824
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {472.44000000000005 1 1.0} {551.182 xx0init} solitaire-plan.xvi 0 {}
 ##XTHERION## xth_me_image_insert {471.66599999999994 1 1.0} {551.919 xx0init} solitaire-plan2017.xvi 0 {}
 
@@ -53,6 +53,7 @@ line wall -reverse on
   282.0 317.5 287.0 319.0 286.0 323.0
   285.0 327.0 286.0 334.0 284.0 338.0
   282.0 342.0 279.73 339.46 282.75 345.5
+  smooth off
 endline
 
 line wall -reverse on
@@ -70,9 +71,9 @@ point 404.0 430.0 label -text colm.
 
 point 201.25 99.25 continuation -text "Puits à descendre" -attr Code Q
 
-point 284.0 561.5 continuation -text "Départ à atteindre" -attr Code E
+point 275.0 562.5 continuation -text "Départ à atteindre" -attr Code E
 
-point 280.25 796.5 continuation -text "Colmatage à creuser" -attr Code D
+point 298.25 799.5 continuation -text "Colmatage à creuser" -attr Code D
 
 point 183.75 759.25 blocks
 
@@ -524,13 +525,13 @@ line contour -reverse on
   smooth off
 endline
 
-point 147.5 767.75 height -value [+2.5]
+point 130.5 767.75 height -value [+2.5]
 
 point 186.25 757.0 continuation
 
-point 281.5 781.25 label -text colm.
+point 284.5 769.25 label -text colm.
 
-point 269.25 812.75 air-draught -orientation 261.3
+point 267.25 824.75 air-draught -orientation 261.3
 
 line pit
   291.5 558.5
@@ -694,7 +695,7 @@ point 125.25 212.0 rope
 
 point 227.0 201.75 rope
 
-point 276.5 789.5 narrow-end
+point 276.5 782.5 narrow-end
 
 point 414.5 417.75 narrow-end
 
@@ -853,7 +854,7 @@ point 384.72 381.882 station -name xx9@solitaire.Jean-Bernard
 
 point 270.25 795.25 altitude -align top-left
 
-point 224.25 581.5 label -text "g. du<br>Solitaire"
+point 224.25 581.5 label -text "<center>g. du<br>Solitaire"
 
 point 512.73 385.432 station -name xx8@solitaire.Jean-Bernard
 

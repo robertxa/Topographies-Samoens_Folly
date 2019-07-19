@@ -7,7 +7,7 @@ encoding  utf-8
  
 # Import DATA  
 source solitaire.th
-#source solitaire-tot.th
+source solitaire-tot.th
 
 # Add config file
 input ../../../../../config.thc 
@@ -35,9 +35,9 @@ layout layout_plan
 	doc-title "Réseau du Solitaire-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 500
-	scale 1 500
-	scale-bar 50 m
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
@@ -47,12 +47,12 @@ layout layout_plan
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 18 cm
+	legend-width 22 cm
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
@@ -90,22 +90,22 @@ layout layout_coupe
 	doc-title "Réseau du solitaire-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 1000
-	scale 1 1000
-	scale-bar 100 m
+	base-scale 1 2000
+	scale 1 1400
+	scale-bar 150 m
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
 	language fr
 	map-comment "Réseau du solitaire"
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 18 cm
+	legend-width 22.5 cm
 	map-header 0 -20 nw
 	map-header-bg off
 	layers on
@@ -133,18 +133,18 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o solitaire-plan2019.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o solitaire-coupe2019.xvi
+	#export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019.xvi
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o solitaire-coupe2019.pdf
-	export map -layout layout_plan -o solitaire-plan2019.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2019.pdf
+	export map -layout layout_plan -o Outputs/2D/solitaire-plan2019.pdf
  
 # Export des modeles 3D
-	export model -o solitaire.lox
+	export model -o Outputs/3D/solitaire.lox
   
 # Export des fichiers ESRI
-	#export map -proj plan -fmt esri -o solitaire -layout layout_plan
+	#export map -proj plan -fmt esri -o Outputs/3D/solitaire -layout layout_plan
   
 # Export des fichiers kml
-	#export map -proj plan -fmt kml -o solitaire.kml -layout layout_plan
+	#export map -proj plan -fmt kml -o Outputs/3D/solitaire.kml -layout layout_plan
