@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 362.5 437.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 366.0 437.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {64.17 1 1.0} {285.035 AV8} AV8-map.xvi 0 {}
 
@@ -126,17 +126,17 @@ line pit
   smooth off
 endline
 
-point 214.75 89.75 rope
+point 219.25 89.75 rope
 
-point 181.25 219.5 rope
+point 186.75 217.75 rope
 
 point 86.75 237.0 rope
 
 point 81.5 250.0 rope
 
-point 64.25 263.5 rope
+point 62.75 258.0 rope
 
-point 56.75 268.75 rope
+point 53.5 268.5 rope
 
 line wall
   140.5 241.75
@@ -207,13 +207,13 @@ point 231.5 76.0 air-draught -orientation 114.5
 
 point 143.0 244.75 continuation -attr Code E -text "Escalade, puits remontant"
 
-point 227.5 88.0 label -text "etr."
+point 236.75 88.0 label -text "etr."
 
 point 216.0 82.25 continuation -attr Code D -text "Boyau à agrandir, courant d'air"
 
 point 223.0 100.5 label -text "P25"
 
-point 177.0 226.0 label -text "P5"
+point 178.75 230.25 label -text "P5"
 
 point 163.25 230.5 label -text "etr."
 
@@ -227,7 +227,7 @@ point 111.5 266.0 label -text "P20"
 
 point 92.25 278.0 label -text "P10"
 
-point 47.25 274.5 label -text "P22"
+point 36.25 271.75 label -text "P22"
 
 point 90.5 298.5 label -text "AV8" -scale xl
 
@@ -249,7 +249,7 @@ line overhang -close on
   smooth off
 endline
 
-point 32.0 284.25 altitude -scale l
+point 54.25 280.75 altitude -align left
 
 line overhang -close on
   68.25 285.0
@@ -320,23 +320,23 @@ line pit -reverse on
   196.25 66.5
 endline
 
-point 131.5 68.0 label -text "etr."
+point 149.25 54.25 label -text "etr."
 
 point 194.75 49.0 label -text "etr."
 
-point 185.25 58.0 dig
+point 184.5 55.75 dig
 
 point 158.0 78.0 dig
 
-point 149.0 82.5 dig
+point 150.5 84.5 dig
 
 point 210.0 52.25 air-draught -orientation 115.9
 
 point 122.25 82.5 air-draught -orientation 109.6
 
-point 233.25 62.0 altitude -scale l
+point 209.25 78.5 altitude -align bottom-right
 
-point 138.5 103.25 altitude -scale l
+point 141.25 74.75 altitude -align bottom-left
 
 point 138.0 78.25 continuation -attr Code D -text "Boyau à agrandir, courant d'air"
 
@@ -378,7 +378,7 @@ point 182.75 89.25 label -text "R5"
 
 point 151.25 41.25 label -text "Boyau des Ammonites"
 
-point 139.25 89.5 label -text "-140 m"
+point 133.0 96.5 label -text "-140 m"
 
 line wall
   209.0 88.0

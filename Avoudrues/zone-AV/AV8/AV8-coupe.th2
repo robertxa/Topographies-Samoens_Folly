@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -134.75 -129.0 679.1814 797.2917
+##XTHERION## xth_me_area_adjust -134.5 -128.75 679.1814 797.2877000000001
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {78.74000000000001 1 1.0} {629.921 AV8} AV8-coupe.xvi 0 {}
 
@@ -37,9 +37,11 @@ point 496.5 78.0 label -text "etr."
 
 point 146.25 295.75 label -text "etr."
 
-point 157.5 310.25 altitude
+point 404.5 222.5 altitude -align top-right
 
-point 107.75 631.0 altitude
+point 143.75 305.75 altitude -align top-right
+
+point 91.5 632.5 altitude -align right
 
 point 97.0 648.0 label -text "AV8b" -scale xl
 
@@ -55,11 +57,9 @@ point 393.75 103.25 label -text "P4"
 
 point 383.75 119.75 label -text "R5"
 
-point 494.5 112.75 label -text "courant d'air"
+point 482.5 66.5 altitude -align bottom
 
-point 514.25 59.0 altitude
-
-point 489.0 58.75 label -text "-140 m"
+point 520.25 68.75 label -text "-140 m"
 
 point 451.5 48.0 label -text "Boyau des Ammonites"
 
@@ -87,17 +87,17 @@ point 4.5 641.75 entrance -orientation 180.0
 
 point 77.75 655.0 air-draught -orientation 181.1 -scale xl
 
-point 373.5 250.0 air-draught -orientation 88.5 -scale xl
+point 383.5 251.0 air-draught -orientation 88.5 -scale xl
 
 point 483.25 124.0 air-draught -orientation 88.5 -scale xl
 
-point 478.75 145.25 continuation
+point 478.75 145.25 continuation -attr Code D -text "Boyau à désobstruer ; c.a."
 
 point 365.5 179.25 continuation
 
 point 336.75 229.75 continuation
 
-point 367.25 261.25 continuation
+point 367.25 261.25 continuation -attr Code D -text "boyau à désobstruer ; c.a."
 
 point 194.25 400.5 continuation
 
@@ -348,6 +348,7 @@ line u:rope
   91.75 536.5 90.5 488.25 93.5 489.25
   93.74 489.33 120.0 451.5 119.75 465.75
   119.5 480.0 117.16 369.34 124.0 388.5
+  smooth off
 endline
 
 line u:rope
