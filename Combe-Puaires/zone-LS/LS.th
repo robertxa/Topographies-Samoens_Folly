@@ -1,13 +1,13 @@
 encoding  utf-8
  
- survey zone_LS -title "Zone LS"
-  input trousLS.th
-  #input trousLS.th2
-  # Pour importer les différentes données de différents fichiers topos :
-   input LS22/LS22.th
-   input LS22/LS22.th2
+survey zone_LS -title "Zone LS"
+	input trousLS.th
+#	input trousLS.th2
+	# Pour importer les différentes données de différents fichiers topos :
+	input LS22/LS22.th
+	input LS22/LS22.th2
 
-   input LS30/data-th/LS30.th
-   input LS30/data-th2/LS30.th2
+	input LS30/data-th/LS30.th
+	input LS30/data-th2/LS30.th2
      
  endsurvey
