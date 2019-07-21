@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -148.75 -129.0 382.75 324.8505
+##XTHERION## xth_me_area_adjust -148.75 -128.75 373.0 336.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {236.218 1 1.0} {181.106 0} CH20-coupe.xvi 0 {}
 
@@ -7,13 +7,13 @@ encoding  utf-8
 
 scrap CH20-coupe1 -projection extended -author 2005 "Xavier Robert" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113 -128.0 0.0 0.0 19.50240702 0.0 m]
 
-point -4.25 34.0 label -text "-34 m"
+point -18.0 28.0 label -text "-34 m"
 
-point 50.25 39.25 altitude
+point 29.5 41.25 altitude -align bottom-left
 
-point 253.5 181.75 altitude
+point 241.25 181.75 altitude -align right
 
-point 213.5 195.5 label -text "CH20" -scale xl
+point 213.0 203.25 label -text "<bf>CH20" -scale xl
 
 point 137.5 135.25 label -text "P10"
 
@@ -27,7 +27,7 @@ point 43.75 32.5 label -text "etr."
 
 point 182.0 142.5 label -text "etr."
 
-point 238.5 195.5 air-draught -orientation 33.2 -scale xs
+point 243.75 206.75 air-draught -orientation 33.2 -scale xs
 
 point 229.0 186.0 entrance -orientation 215.8
 
@@ -116,6 +116,7 @@ line u:rope
   128.5 99.0
   128.5 99.0 117.0 82.25 117.5 91.0
   118.0 99.75 113.75 55.25 107.25 76.5
+  smooth off
 endline
 
 line u:rope

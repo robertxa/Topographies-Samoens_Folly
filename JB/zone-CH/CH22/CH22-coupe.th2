@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 658.75 364.2206
+##XTHERION## xth_me_area_adjust -128.75 -128.75 658.75 364.2156
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {503.038 1 1.0} {57.62899999999999 0} CH22-coupe.xvi 0 {}
 
@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap CH22-coupe1 -projection extended -author 2005 "Xavier Robert" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 639.8113 -128.0 0.0 0.0 19.50240702 0.0 m]
 
-point 51.75 216.0 label -text "CH22" -scale xl
+point 51.75 216.0 label -text "<bf>CH22" -scale xl
 
 point 162.25 85.25 label -text "-29 m"
 
@@ -27,7 +27,7 @@ point 114.75 170.5 label -text "R3"
 
 point 114.0 124.75 label -text "P15"
 
-point 109.75 68.5 label -text "etr."
+point 100.5 73.75 label -text "etr."
 
 point 102.0 176.5 label -text "etr."
 
@@ -37,17 +37,17 @@ point 394.0 46.5 label -text "etr."
 
 point 529.5 61.5 label -text "etr."
 
-point 504.0 51.0 altitude
+point 504.0 56.5 altitude -align bottom
 
-point 105.25 84.5 altitude
+point 123.5 78.0 altitude -align bottom
 
-point 90.5 203.25 altitude
+point 70.75 196.75 altitude -align left
 
 point 176.0 194.75 continuation -explored "5 m" -attr Code A -text "Méandre à explorer, courant d'air, arrêt sur rien"
 
 point 155.25 192.25 air-draught -orientation 87.2
 
-point 71.75 201.0 entrance -orientation 123.5
+point 69.0 204.5 entrance -orientation 123.5
 
 point 516.5 57.5 narrow-end -orientation 273.7
 
@@ -57,7 +57,7 @@ point 386.75 53.25 narrow-end -orientation 67.7
 
 point 134.75 68.25 narrow-end -orientation 20.2
 
-point 113.0 78.5 narrow-end -orientation 53.8
+point 108.75 87.5 narrow-end
 
 line border
   169.5 131.5
@@ -198,6 +198,7 @@ line u:rope
   183.25 141.0
   183.25 141.0 169.25 125.25 169.75 137.0
   169.86 139.51 141.0 74.0 140.25 93.5
+  smooth off
 endline
 
 line u:rope
@@ -206,6 +207,7 @@ line u:rope
   134.25 187.0 161.0 144.25 161.75 155.25
   161.86 156.85 183.25 132.68 183.25 141.0
   183.25 145.25 189.75 131.25 189.5 137.5
+  smooth off
 endline
 
 line u:rope

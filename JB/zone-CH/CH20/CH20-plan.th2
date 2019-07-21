@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -145.082 -117.504 343.25 262.25
+##XTHERION## xth_me_area_adjust -145.082 -128.75 350.5 269.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {196.849 1 1.0} {118.1148 0} CH20-plan.xvi 0 {}
 
@@ -18,7 +18,7 @@ endline
 
 point 164.25 93.75 label -text "etr."
 
-point 211.5 119.25 air-draught -orientation 60.4
+point 221.25 121.0 air-draught -orientation 60.4
 
 point 24.0 39.25 label -text "etr."
 
@@ -38,7 +38,7 @@ point 18.75 57.5 dig
 
 point 150.25 112.5 dig
 
-point 214.0 133.0 label -text "CH20"
+point 213.75 140.5 label -text "<bf>CH20"
 
 point 208.75 125.0 entrance -orientation 239.3
 
@@ -125,9 +125,9 @@ line overhang
   202.0 115.75
 endline
 
-point -5.0 63.25 altitude -scale l
+point 1.0 47.75 altitude -align top-left
 
-point 204.0 99.75 altitude -scale l
+point 198.5 112.5 altitude -align bottom-right
 
 line wall
   58.75 62.25

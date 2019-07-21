@@ -12,7 +12,7 @@ line border -reverse on
   42.5 43.0
 endline
 
-point 73.25 31.75 altitude
+point 54.75 35.5 altitude -align bottom-right
 
 point -9.25 72.5 label -text "imp."
 
@@ -24,7 +24,7 @@ point 15.5 87.0 label -text "+2 m"
 
 point 61.75 58.75 label -text "0 m"
 
-point 96.25 46.25 label -text "CH23" -scale xl
+point 96.25 46.25 label -text "<bf>CH23" -scale xl
 
 point 11.75 61.25 pebbles -scale s
 

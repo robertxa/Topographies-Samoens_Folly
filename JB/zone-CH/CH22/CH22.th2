@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -152.108 -129.0 536.9630999999999 448.6788
+##XTHERION## xth_me_area_adjust -152.108 -128.75 538.0 448.6788
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {393.705 1 1.0} {78.741 0} CH22-plan.xvi 0 {}
 
@@ -30,11 +30,11 @@ line wall
   117.0 267.5
 endline
 
-point 406.5 88.0 altitude -scale l
+point 397.0 78.5 altitude -align top-right
 
-point 13.75 223.25 altitude -scale l
+point 46.0 224.0 altitude -align left
 
-point 113.0 292.75 altitude -scale l
+point 117.0 267.5 altitude -align top-right
 
 point 67.5 224.0 rope
 
@@ -187,19 +187,19 @@ line label -id l49-175-177
   177.5 183.75
 endline
 
-point 395.25 69.75 label -text "etr."
+point 388.25 66.25 label -text "etr."
 
 point 56.75 203.25 label -text "etr."
 
-point 36.5 228.5 label -text "etr."
+point 30.0 228.75 label -text "etr."
 
 point 308.75 135.0 label -text "R3"
 
 point 77.75 250.5 continuation -attr Code A -text "Exploration à continuer, courant d'air"
 
-point 401.5 76.5 continuation -attr Code D -text "Conduite forcée colmatée à désobtruer ; pas de c.a."
+point 408.75 68.5 continuation -attr Code D -text "Conduite forcée colmatée à désobtruer ; pas de c.a."
 
-point 394.75 61.25 label -text "-35 m"
+point 392.5 52.75 label -text "-35 m"
 
 point 37.0 216.75 label -text "-29 m"
 
@@ -215,7 +215,7 @@ point 81.75 240.0 label -text "R3"
 
 point 36.5 254.5 label -text "etr."
 
-point 83.25 293.25 label -text "CH22"
+point 83.0 297.75 label -text "<bf>CH22" -scale xl
 
 point 81.75 281.25 entrance -orientation 196.8
 

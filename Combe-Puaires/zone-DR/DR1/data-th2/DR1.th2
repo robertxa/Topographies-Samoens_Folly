@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -131.344 508.1149 360.8766
+##XTHERION## xth_me_area_adjust -128.75 -131.351 508.1159 360.8696
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {157.36 1 1.0} {214.486 0} ../DR1-map.xvi 0 {}
 
@@ -28,11 +28,11 @@ point 194.75 203.5 label -text "P2"
 
 point 152.5 194.5 label -text "-45 m"
 
-point 144.25 209.75 altitude
+point 149.5 215.0 altitude -align bottom-left
 
-point 371.25 70.75 altitude
+point 363.5 62.75 altitude -align top-right
 
-point 79.5 151.0 altitude
+point 77.25 142.0 altitude -align bottom-right
 
 point 361.0 58.25 clay -orientation 296.6
 
@@ -44,7 +44,7 @@ point 186.75 226.75 water-flow -orientation 215.6
 
 point 67.75 173.75 entrance -orientation 185.0
 
-point 49.0 127.25 label -text "DR1" -scale xl
+point 49.0 127.25 label -text "<bf>DR1" -scale xl
 
 point 62.25 146.0 entrance -orientation 49.1
 

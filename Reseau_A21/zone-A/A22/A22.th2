@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -137.25 -129.0 324.8505 350.25
+##XTHERION## xth_me_area_adjust -137.0 -128.75 324.8385 350.25
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {76.602 1 1.0} {57.278999999999996 0} V22-map.xvi 0 {}
 
@@ -85,6 +85,12 @@ line wall -subtype invisible
   94.75 186.5 96.25 184.5 96.25 184.5
   smooth off
 endline
+
+point 169.75 212.75 altitude -align top
+
+point 96.25 197.75 altitude -align top
+
+point 15.25 183.0 altitude -align left
 
 line wall
   143.75 102.25
@@ -221,6 +227,12 @@ line wall
   15.25 183.0
   15.25 183.0 19.0 185.0 20.0 183.0
   21.0 181.0 26.0 177.5 23.25 176.25
+endline
+
+point 6.0 208.0 label -text "<bf>A22-V22" -scale xl
+
+line wall -subtype unsurveyed
+  23.25 176.25
   20.5 175.0 15.0 170.0 11.75 166.25
   8.5 162.5 5.04 164.62 2.5 164.5
   -2.75 164.25 -2.25 169.25 -2.75 166.25
@@ -231,6 +243,10 @@ line wall
   1.25 146.75 11.5 152.0 11.5 155.5
   11.5 159.0 10.25 160.0 13.0 161.25
   15.75 162.5 21.5 165.25 25.25 164.25
+endline
+
+line wall
+  25.25 164.25
   29.0 163.25 33.78 172.9 46.5 157.0
   47.5 155.75 44.0 154.0 44.0 154.0
   smooth off
@@ -347,6 +363,8 @@ line wall
   86.5 62.5 84.0 62.5 84.0 62.5
   smooth off
 endline
+
+point 100.75 47.25 altitude -align right
 
 line wall
   100.75 47.25

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -253.98799999999997 -143.748 712.5 505.952
+##XTHERION## xth_me_area_adjust -253.98799999999997 -144.863 712.5 504.837
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {248.086 1 1.0} {212.595 0} BA4-coupe.xvi 0 {}
 
@@ -29,7 +29,7 @@ point 124.75 95.0 label -text "etr." -scale s
 
 point 62.75 128.0 label -text "<it>Lat : 46.103829 <br>Long : 6.766091 <br>Alt : 1287 m" -scale s
 
-point 62.75 51.5 entrance -orientation 0.0
+point 63.5 42.75 entrance -orientation 0.0
 
 point 196.0 187.5 height -value [+5 m]
 
@@ -81,7 +81,9 @@ point 7.25 102.0 moonmilk
 
 point 20.75 95.75 moonmilk
 
-point 62.25 58.5 altitude
+point 64.0 15.0 label -text "<bf>BA4" -scale xl
+
+point 62.75 64.0 altitude -align bottom
 
 line wall -id l12-235-150
   79.5 62.75
@@ -118,6 +120,7 @@ line wall -id l12-235-150
   47.25 82.5 32.5 84.75 28.25 87.0
   24.0 89.25 -10.75 106.5 -21.75 111.75
   -32.75 117.0 -44.75 123.5 -46.5 124.25
+  smooth off
 endline
 
 line wall
@@ -272,7 +275,7 @@ point 315.0 216.5 scallop
 
 point 307.75 215.25 scallop
 
-point 485.0 299.0 altitude
+point 503.25 299.75 altitude -align top-left
 
 point 496.25 245.5 water-flow -orientation 257.8
 
@@ -374,6 +377,7 @@ line wall
   454.5 221.0 465.75 237.75 468.5 239.0
   471.25 240.25 475.0 240.5 477.5 241.0
   480.0 241.5 487.5 242.5 489.25 243.25
+  smooth off
 endline
 
 line wall

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 954.7801 718.5535
+##XTHERION## xth_me_area_adjust -128.75 -128.75 954.7871 718.5635
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {723.712 1 1.0} {490.096 V21} A21-map.xvi 0 {}
 
@@ -20,7 +20,7 @@ endline
 
 point 720.25 525.0 entrance -orientation 175.2
 
-point 718.5 539.75 label -text "A21-V21" -scale xl
+point 718.5 539.75 label -text "<bf>A21-V21" -scale xl
 
 point 745.25 362.5 label -orientation 56.4 -text "Méandre Supérieur"
 
@@ -91,9 +91,9 @@ endline
 
 point 710.0 502.25 air-draught -orientation 155.1 -subtype summer
 
-point 721.75 265.25 altitude
+point 726.0 278.5 altitude -align bottom
 
-point 744.5 517.5 altitude
+point 733.0 518.75 altitude -align right
 
 point 732.25 507.5 air-draught -orientation 176.8 -subtype winter
 
@@ -302,7 +302,7 @@ endline
 
 point 129.25 235.0 label -orientation 328.0 -text "Salle du Crâne"
 
-point 87.25 181.75 altitude
+point 103.5 184.5 altitude -align left
 
 line chimney -close on -reverse on
   230.0 187.25
@@ -564,6 +564,8 @@ line wall
   smooth off
 endline
 
+point 226.75 235.75 altitude -align left
+
 line wall
   228.75 245.25
   228.75 245.25 226.0 229.25 223.75 221.0
@@ -724,7 +726,7 @@ point 240.0 278.5 label -text "Ursus speleus"
 
 point 163.75 150.0 label -text "<center>Ursus <br>arctos"
 
-point 78.0 193.5 label -text "A24" -scale xl
+point 69.75 203.0 label -text "<bf>A24" -scale xl
 
 point 91.5 212.0 air-draught -orientation 332.3 -subtype summer
 
@@ -1324,7 +1326,7 @@ point 501.752 214.066 station -name 3.17@A21
 
 point 526.172 222.226 station -name 3.16@A21
 
-point 666.25 267.0 altitude
+point 644.0 265.25 altitude -align right
 
 point 637.652 264.876 station -name 3.0double@A21
 
@@ -1906,7 +1908,7 @@ endline
 
 point 172.0 105.75 label -text "-93 m"
 
-point 191.25 135.25 altitude
+point 189.25 124.75 altitude -align top-left
 
 line wall
   211.0 159.5
