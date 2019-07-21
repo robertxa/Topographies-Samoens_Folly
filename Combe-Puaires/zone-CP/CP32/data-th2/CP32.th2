@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 482.3309 364.2206
+##XTHERION## xth_me_area_adjust -128.75 -128.75 482.33889999999997 364.22659999999996
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {303.472 1 1.0} {179.927 0} ../CP32-map.xvi 0 {}
 
@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap CP32-1 -projection plan -author 1999 "Renaud Locatelli" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
 
-point 32.75 181.25 label -text "CP32" -scale xl
+point 32.75 181.25 label -text "<bf>CP32" -scale xl
 
 point 65.75 176.5 entrance -orientation 104.0
 
@@ -31,7 +31,7 @@ point 107.25 134.0 breakdown-choke -orientation 75.2
 
 point 112.75 135.75 blocks
 
-point 71.25 188.75 altitude
+point 76.25 183.75 altitude -align top
 
 point 76.25 176.75 blocks
 
@@ -219,7 +219,7 @@ line wall
   smooth off
 endline
 
-point 341.5 212.75 altitude
+point 338.25 203.5 altitude -align top
 
 line wall
   304.25 159.25
@@ -634,7 +634,7 @@ point 164.25 116.0 label -text "<center>puits <br> remontant"
 
 point 274.5 72.0 label -text "<center>bouchon <br> de glaise"
 
-point 229.25 46.25 altitude
+point 246.75 46.5 altitude -align bottom-left
 
 point 246.5 53.75 clay
 
@@ -757,7 +757,7 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 41.0 112.75 altitude
+point 51.75 113.5 altitude -align left
 
 point 44.25 98.0 label -text "P11"
 

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -143.195 -147.91 371.75 226.2003
+##XTHERION## xth_me_area_adjust -143.175 -147.9025 371.75 226.2078
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {227.341 1 1.0} {46.7922 0} ../CP15-map.xvi 0 {}
 
@@ -9,11 +9,13 @@ scrap CP15-1 -projection plan -author 1979 "Bernard Lips" -author 2011 "Xavier R
 
 point 34.75 54.75 entrance -orientation 58.0
 
-point 36.0 75.25 altitude
+point 34.75 64.5 altitude -align top-left
 
 point 242.5 39.0 air-draught -orientation 292.9 -subtype summer
 
-point 15.75 44.25 label -text "CP15" -scale xl
+point 230.25 47.75 altitude -align right
+
+point 15.75 44.25 label -text "<bf>CP15" -scale xl
 
 point 48.25 37.25 label -text "falaise"
 

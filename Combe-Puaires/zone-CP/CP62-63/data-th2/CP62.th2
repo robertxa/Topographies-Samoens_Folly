@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -4811 3440 139.5
+##XTHERION## xth_me_area_adjust -129.5 -4811 3440 139.0
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} ../data-th/CP62.gif 0 {}
 
@@ -31,7 +31,11 @@ line arrow
   1251.5 -1915.0
 endline
 
-point 1337.5 -1675.0 label -text "CP62" -scale xl
+point 1270.0 -1618.0 altitude -align right
+
+point 1394.5 -1759.0 altitude -align right
+
+point 1337.5 -1675.0 label -text "<bf>CP62" -scale xl
 
 point 1220.0 -1577.5 dig
 
@@ -319,6 +323,8 @@ endline
 point 1051.0 -1755.5 traverse
 
 point 889.0 -1485.0 rope
+
+point 654.5 -1099.0 altitude -align right
 
 point 822.5 -1383.5 rope
 

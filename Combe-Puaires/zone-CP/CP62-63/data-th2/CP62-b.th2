@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -4811 3440 138.75
+##XTHERION## xth_me_area_adjust -129.5 -4811 3440 139.0
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} ../data-th/Cp62_2014_squelette-2.png 0 {}
 
@@ -10,7 +10,7 @@ scrap scrap1-cp62 -projection plan -author 2014 "Stéphane Lips" -author 2014 "X
 #point 1523.5 -3034.0 altitude
 
 
-point 1434.25 -3021.75 label -text "CP63" -scale xl
+point 1434.25 -3021.75 label -text "<bf>CP63" -scale xl
 
 point 1507.25 -3014.75 air-draught -orientation 238.2 -subtype summer
 
@@ -137,6 +137,8 @@ point 1658.0 -2937.25 station -name 2.40@CP62
 
 point 1636.75 -2956.0 station -name 2.30@CP62
 
+point 1554.25 -3022.25 altitude -align bottom-left
+
 line wall
   1554.25 -3022.25
   1554.25 -3022.25 1550.75 -3024.0 1550.25 -3017.5
@@ -194,6 +196,8 @@ line wall
 endline
 
 point 1468.25 -2707.75 continuation -attr Code D -text "Galerie à désobstruer (blocs) ; courant d'air"
+
+point 1458.75 -2747.25 altitude -align right
 
 point 1372.5 -2731.5 label -text "-52 m"
 

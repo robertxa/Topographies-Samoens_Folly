@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 483.0 561.0711
+##XTHERION## xth_me_area_adjust -128.75 -128.75 483.0 561.0700999999999
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {170.123 1 1.0} {254.685 0} ../CP17-map.xvi 0 {}
 
@@ -19,20 +19,21 @@ line label -id l50-51-411
   52.5 403.25
 endline
 
-point 154.0 250.75 altitude
+point 147.25 262.0 altitude -align bottom
 
-point 57.75 426.0 altitude
+point 58.0 418.0 altitude -align top
 
-point 341.0 411.75 altitude
+point 344.25 401.0 altitude -align bottom-right
 
-point 309.25 65.0 altitude
+point 311.0 72.75 altitude -align bottom
 
-point 340.75 76.0 label -text "CP17"
+point 348.75 76.0 label -text "<bf>CP17" -scale xl
 
 line pit -reverse on
   156.5 275.5
   156.5 275.5 157.75 275.0 157.75 269.0
   157.75 263.0 163.5 257.0 156.0 257.75
+  smooth off
 endline
 
 point 154.5 268.75 breakdown-choke
@@ -45,9 +46,9 @@ point 138.0 242.25 label -text "Siphon"
 
 point 48.5 393.25 label -text "Siphon"
 
-point 106.5 375.75 label -text "Etr."
+point 113.5 379.0 label -text "Etr."
 
-point 120.5 340.0 label -text "Etr."
+point 127.0 341.0 label -text "Etr."
 
 point 123.25 279.0 label -text "-60 m"
 
@@ -111,6 +112,7 @@ point 73.75 414.75 water-flow -orientation 259.7
 line pit -reverse on
   62.0 416.75
   62.0 416.75 60.0 411.0 63.75 410.75
+  smooth off
 endline
 
 line gradient

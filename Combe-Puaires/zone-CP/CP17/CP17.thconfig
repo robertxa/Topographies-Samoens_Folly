@@ -1,7 +1,6 @@
-encoding  utf-8  
+encoding  utf-8
   
 # File written by tro2therion.f90 (Xavier Robert) 
-# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
 # This work is under the GPLv2
   
   
@@ -100,7 +99,7 @@ layout my_layout
    # seulement la legende des symboles dessines sur la topo, si l on veut
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
-  legend on
+  legend off
   
    # Par defaut, la legende est de 14 cm de largeur
 	legend-width 14.5 cm

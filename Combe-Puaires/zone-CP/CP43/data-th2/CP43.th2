@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 324.8505 285.4804
+##XTHERION## xth_me_area_adjust -128.75 -128.75 324.84950000000003 285.46389999999997
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {35.664 1 1.0} {119.4708 0} ../CP43-map.xvi 0 {}
 
@@ -29,9 +29,9 @@ point 166.5 56.75 blocks
 
 point 162.75 63.75 blocks
 
-point 183.0 29.0 label -text "CP43" -scale xl
+point 188.75 18.25 label -text "<bf>CP43" -scale xl
 
-point 16.75 98.25 label -text "CP43b" -scale xl
+point 13.0 94.75 label -text "<bf>CP43b" -scale xl
 
 point 42.25 148.0 label -text "+36 m"
 
@@ -43,9 +43,9 @@ point 17.75 143.25 air-draught -orientation 140.7 -subtype summer
 
 point 88.5 128.75 air-draught -orientation 127.2 -subtype summer
 
-point 189.5 64.0 altitude
+point 190.5 57.0 altitude -align top-right
 
-point 17.5 121.75 altitude
+point 26.25 125.25 altitude -align left
 
 point 74.75 102.75 narrow-end -orientation 134.6
 
@@ -121,7 +121,9 @@ line wall -close on -reverse on -outline in
   smooth off
 endline
 
-line wall
+point 77.25 99.25 altitude -align bottom-left
+
+line wall -subtype invisible
   127.75 52.25
   153.25 41.5
   153.25 41.5 159.0 38.0 164.0 38.75

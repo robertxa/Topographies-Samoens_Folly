@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 718.5515 600.4412
+##XTHERION## xth_me_area_adjust -128.75 -128.75 718.5325 600.4472
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {196.833 1 1.0} {300.71 CP3} ../CP3-map.xvi 0 {}
 
@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap CP3-1 -projection plan -author 1974 "Serge Conduché" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 718.5515 -128.0 0.0 0.0 21.5024081 0.0 m]
 
-point 85.25 366.25 label -text "CP3b" -scale xl
+point 85.25 366.25 label -text "<bf>CP3b" -scale xl
 
 point 482.75 73.0 rope
 
@@ -23,7 +23,7 @@ point 201.0 315.5 rope
 
 point 294.75 287.75 rope
 
-point 172.75 281.5 label -text "CP3" -scale xl
+point 172.75 281.5 label -text "<bf>CP3" -scale xl
 
 point 505.75 86.25 label -text "R6"
 
@@ -47,11 +47,11 @@ point 189.25 294.0 entrance -orientation 49.2
 
 point 106.0 378.5 entrance -orientation 56.5
 
-point 103.5 426.0 altitude
+point 100.0 417.0 altitude -align top-right
 
-point 179.75 301.75 altitude
+point 192.0 301.25 altitude -align left
 
-point 541.25 93.25 altitude
+point 543.0 86.0 altitude -align top
 
 point 522.0 64.75 clay-choke
 
@@ -69,7 +69,7 @@ point 548.5 68.25 clay-choke
 
 point 539.5 79.0 clay-choke
 
-point 561.5 59.25 continuation
+point 561.5 59.25 continuation -attr Code D -text "Etroiture"
 
 line pit
   502.0 79.25
@@ -82,6 +82,7 @@ line pit
   396.0 178.25
   396.0 178.25 390.75 176.37 384.0 177.75
   374.25 179.75 365.75 174.5 365.75 172.5
+  smooth off
 endline
 
 line pit
