@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 552.5 534.0
+##XTHERION## xth_me_area_adjust -128.75 -128.75 552.25 534.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {223.449 1 1.0} {65.934 0} C24-coupe.xvi 0 {}
 
@@ -23,6 +23,7 @@ line wall
   207.25 91.5 214.0 92.0 216.0 91.0
   218.0 90.0 217.75 75.75 217.75 72.5
   217.75 69.25 216.75 64.0 215.25 63.25
+  smooth off
 endline
 
 line wall
@@ -68,6 +69,7 @@ line wall
   272.25 197.5 272.5 196.0 271.0 190.0
   269.5 184.0 269.75 173.5 266.75 172.0
   263.75 170.5 265.5 170.0 261.25 170.0
+  smooth off
 endline
 
 line wall
@@ -141,7 +143,7 @@ line border
   smooth off
 endline
 
-point 411.25 383.0 altitude -align left
+point 411.25 383.0 altitude -align right
 
 point 409.75 404.75 label -text "<bf>C24" -scale xl
 

@@ -45,6 +45,7 @@ line wall
   134.5 -18.0
   134.5 -18.0 126.0 -12.0 119.5 -10.0
   113.0 -8.0 106.0 -3.0 99.5 -0.5
+  smooth off
 endline
 
 point 112.0 12.5 dig
@@ -54,6 +55,7 @@ line wall -subtype debris
   93.0 2.0 77.5 11.0 66.0 11.0
   54.5 11.0 44.5 12.5 41.0 11.0
   37.5 9.5 32.5 4.5 25.0 0.5
+  smooth off
 endline
 
 line wall
@@ -73,6 +75,10 @@ line wall
   129.5 -11.0 137.5 -15.0 137.5 -15.0
   smooth off
 endline
+
+point 154.5 13.5 altitude -align bottom-right
+
+point 73.5 99.5 altitude -align right
 
 line wall
   73.5 99.5

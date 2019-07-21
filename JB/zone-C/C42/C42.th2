@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 200.0 186.5
+##XTHERION## xth_me_area_adjust -128.75 -128.75 194.25 186.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {20.2292 1 1.0} {39.7275 C42} C42-map.xvi 0 {}
 
@@ -23,11 +23,11 @@ point 15.0 18.75 label -text "<bf>C42" -scale xl
 
 point 65.0 36.25 label -text "Trémie"
 
-point 64.25 22.75 label -text "-31 m"
+point 63.25 13.25 label -text "-31 m"
 
 point 52.5 52.0 label -text "P20"
 
-point 51.25 13.75 continuation -attr Code D -text "Trémie instable à désobstruer"
+point 40.5 9.5 continuation -attr Code D -text "Trémie instable à désobstruer"
 
 point 47.5 22.5 breakdown-choke -orientation 340.0
 
@@ -65,9 +65,9 @@ line wall
   smooth off
 endline
 
-point 4.0 39.0 altitude -scale l
+point 16.75 39.75 altitude -align left
 
-point 70.75 13.5 altitude -scale l
+point 48.25 25.25 altitude -align right
 
 line wall
   48.25 25.25

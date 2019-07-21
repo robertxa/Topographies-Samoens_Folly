@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.003 -127.993 797.2887 836.6688
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 797.2877 836.6638
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {117.118 1 1.0} {533.077 C14} C14-map.xvi 0 {}
 
 
@@ -241,7 +241,7 @@ line wall -close on -outline in
   smooth off
 endline
 
-point 120.25 576.5 altitude -scale l
+point 101.25 532.75 altitude -align bottom
 
 point 547.25 284.5 rope
 
@@ -450,7 +450,7 @@ line pit
   smooth off
 endline
 
-point 445.5 635.0 altitude -scale l
+point 443.0 621.25 altitude -align right
 
 line pit
   444.5 612.75
@@ -862,7 +862,7 @@ endline
 
 point 569.988 86.837 station -name 3.17@C14
 
-point 548.25 59.5 altitude -scale l
+point 561.25 102.0 altitude -align left
 
 point 573.648 79.127 station -name 3.16@C14
 

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -208 -130.0 1007.5 888
+##XTHERION## xth_me_area_adjust -208 -129.5 1007.5 888
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {-80 1 1.0} {760 {}} ../C75.png 0 {}
 ##XTHERION## xth_me_image_insert {688.978 1 1.0} {118.107 C75} map.xvi 0 {}
@@ -206,6 +206,8 @@ line wall -id l14-170-258
   75.0 366.25
 endline
 
+point 75.0 366.25 altitude -align left
+
 line wall -id l13-642-143
   688.0 169.0
   688.0 151.0
@@ -271,7 +273,15 @@ endline
 
 point 133.5 175.0 label -text "+8 m"
 
-point -6.5 364.0 label -text "+10 m"
+point 600.0 135.5 camp
+
+point 688.0 169.0 altitude -align top-right
+
+point 204.0 230.0 narrow-end
+
+point 64.0 393.5 narrow-end
+
+point 8.5 407.0 label -text "+10 m"
 
 point 117.402 400.095 label -text "etr."
 

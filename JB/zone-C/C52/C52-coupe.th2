@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 253.25 227.5
+##XTHERION## xth_me_area_adjust -128.75 -128.75 253.25 227.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.3698 1 1.0} {78.74199999999999 C52} C52-coupe.xvi 0 {}
 
@@ -31,6 +31,10 @@ line wall
   43.0 81.75 44.25 86.5 44.25 86.5
   smooth off
 endline
+
+point 104.75 29.75 altitude -align bottom
+
+point 33.0 77.5 altitude -align left
 
 line wall
   86.0 28.75

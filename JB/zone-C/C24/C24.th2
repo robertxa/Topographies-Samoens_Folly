@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -133.75 -129.0 267.0 222.25
+##XTHERION## xth_me_area_adjust -140.5 -132.7889 267.0 222.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {112.9056 1 1.0} {44.0297 0} C24-map.xvi 0 {}
 
@@ -100,7 +100,7 @@ point 20.5 61.0 label -text "P5"
 
 point 37.5 29.75 label -text "P11"
 
-point -4.5 31.0 label -text "<bf>C24" -scale xl
+point -11.25 19.0 label -text "<bf>C24" -scale xl
 
 point 11.75 32.25 entrance -orientation 33.9
 
@@ -200,9 +200,9 @@ line overhang -close on
   smooth off
 endline
 
-point -2.0 45.75 altitude -scale l
+point 14.0 44.5 altitude -align left
 
-point 131.25 40.75 altitude -scale l
+point 116.0 43.75 altitude -align right
 
 line wall
   107.25 37.0

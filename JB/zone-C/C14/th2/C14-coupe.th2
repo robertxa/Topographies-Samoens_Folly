@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 1269.7329 757.9216
+##XTHERION## xth_me_area_adjust -129.5 -129.5 1269.7329 757.9216
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {118.10699999999997 1 1.0} {515.746 C14} C14-coupe.xvi 0 {}
 
@@ -13,7 +13,7 @@ point 525.25 430.75 rope
 
 point 489.75 460.5 rope
 
-point 81.75 516.0 altitude
+point 111.75 511.25 altitude -align bottom
 
 point 86.0 548.5 label -text "C14" -scale xl
 
@@ -332,9 +332,7 @@ point 819.0 213.5 rope
 
 point 1050.25 481.75 rope
 
-point 1055.0 413.25 altitude
-
-point 850.5 123.0 altitude
+point 1040.0 414.25 altitude -align right
 
 point 891.25 133.5 label -text "-99 m"
 
@@ -491,6 +489,7 @@ line u:rope
   826.5 223.5
   826.5 223.5 830.0 219.0 836.0 219.5
   836.5 219.54 840.0 210.0 845.5 212.5
+  smooth off
 endline
 
 line wall
@@ -534,7 +533,7 @@ scrap C14-coupe3 -projection extended -author 2011 "Xavier Robert" -copyright 20
 
 point 1044.75 87.25 label -text "-104 m"
 
-point 1053.75 114.75 altitude
+point 1044.75 117.25 altitude -align right
 
 point 945.25 172.75 dig
 

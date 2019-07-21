@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -178.9183 -116.6664 297.5 234.25
+##XTHERION## xth_me_area_adjust -178.91830000000002 -128.75 289.75 234.25
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {145.9277 1 1.0} {54.6404 C75} C75-coupe.xvi 0 {}
 
@@ -21,11 +21,13 @@ point 81.0 37.5 label -text "<center>crâne <br> de sanglier"
 
 point 3.5 105.0 label -text "+1- m"
 
-point -12.75 88.75 altitude
+point 0.75 91.75 altitude -align bottom-left
 
-point 54.75 82.0 altitude
+point 47.0 86.0 altitude -align bottom-right
 
-point 168.25 54.75 altitude
+point 125.5 63.0 camp
+
+point 155.25 54.75 altitude -align right
 
 point 84.75 57.5 archeo-material
 
@@ -63,6 +65,7 @@ line wall
   39.75 88.25 39.25 89.75 33.25 89.75
   27.25 89.75 25.25 85.5 21.75 86.5
   18.25 87.5 4.5 95.75 2.25 95.75
+  smooth off
 endline
 
 line wall
@@ -73,6 +76,7 @@ line wall
   84.5 60.25 59.0 65.0 56.25 66.75
   53.5 68.5 40.5 80.5 42.75 81.5
   45.0 82.5 44.75 85.75 47.0 85.75
+  smooth off
 endline
 
 point 42.9377 85.2004 station -name 5@C75

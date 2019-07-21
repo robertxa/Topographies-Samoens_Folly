@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 410.25 482.3309
+##XTHERION## xth_me_area_adjust -134.60000000000002 -135.072 410.25 475.2589
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {261.508 1 1.0} {76.159 0} C31-map.xvi 0 {}
 
@@ -93,7 +93,7 @@ line pit -close on
   smooth off
 endline
 
-point 37.5 239.25 altitude -scale l
+point 64.5 260.75 altitude -align left
 
 line wall -close on
   67.25 263.75
@@ -227,9 +227,9 @@ line wall
   smooth off
 endline
 
-point 142.5 86.5 altitude -scale l
+point 149.75 99.25 altitude -align left
 
-point 280.25 56.0 altitude -scale l
+point 260.75 67.5 altitude -align bottom
 
 line wall
   178.25 65.75

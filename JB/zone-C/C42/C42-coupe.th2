@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 263.0 292.25
+##XTHERION## xth_me_area_adjust -128.75 -128.75 265.75 292.25
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.3697 1 1.0} {149.6069 C42} C42-coupe.xvi 0 {}
 
@@ -29,6 +29,7 @@ endline
 line wall -subtype pebbles
   65.75 34.0
   65.75 34.0 69.5 32.0 71.75 33.5
+  smooth off
 endline
 
 point 103.0 19.75 breakdown-choke -orientation 119.1
@@ -57,19 +58,19 @@ point 17.5 152.5 label -text "C42" -scale xl
 
 point 133.75 51.75 label -text "<center>Trémie <br> instable"
 
-point 81.0 17.0 label -text "-31 m"
+point 136.5 27.0 label -text "-31 m"
 
 point 50.5 92.0 label -text "P20"
 
-point 55.5 152.0 altitude
+point 41.75 151.75 altitude -align right
 
-point 122.0 25.75 altitude
+point 94.0 26.25 altitude -align bottom-left
 
-point 129.0 18.75 continuation
+point 129.0 18.75 continuation -attr Code D -text "Trémie à démonter ; c.a."
 
 point 51.25 53.25 continuation
 
-point 86.0 134.5 continuation
+point 86.0 134.5 continuation -attr Code Q -text "A vérifier"
 
 point 116.5 16.0 air-draught -orientation 130.7 -subtype summer
 
@@ -85,6 +86,7 @@ line wall -subtype pebbles
   94.0 26.25 97.25 22.0 98.5 23.25
   99.75 24.5 103.25 28.5 104.5 32.0
   105.75 35.5 106.0 58.25 106.0 59.75
+  smooth off
 endline
 
 line wall

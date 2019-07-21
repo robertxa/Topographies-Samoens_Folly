@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -129.0 260.15049999999997 267.4164
+##XTHERION## xth_me_area_adjust -130.0 -128.75 260.12919999999997 267.4263
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {106.81219999999999 1 1.0} {121.3544 C44} C44-map.xvi 0 {}
 
@@ -42,7 +42,7 @@ point 34.75 79.0 label -text "imp."
 
 point 14.5 106.75 label -text "<bf>C44b" -scale xl
 
-point 89.75 55.25 label -text "<bf>C44" -scale xl
+point 111.75 54.25 label -text "<bf>C44" -scale xl
 
 point -0.75 69.5 label -text "P7"
 
@@ -56,7 +56,7 @@ line pit -close on
   smooth off
 endline
 
-point 96.5 44.5 altitude -scale l
+point 63.0 54.5 altitude -align bottom-right
 
 line overhang -close on
   64.5 63.5
@@ -235,7 +235,7 @@ point 55.5 71.0 label -text "Imp."
 
 point 66.5 78.75 label -text "-65 m"
 
-point 65.5 89.0 altitude -scale l
+point 47.5 68.5 altitude -align top
 
 line wall
   47.5 68.5
