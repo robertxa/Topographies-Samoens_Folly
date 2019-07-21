@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -324.85699999999997 -253.9839 385.0 299.5
+##XTHERION## xth_me_area_adjust -324.85699999999997 -253.9889 385.0 306.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {196.846 1 1.0} {125.9841 L39} L39-coupe.xvi 0 {}
 
@@ -19,9 +19,11 @@ point -151.5 -43.0 air-draught -orientation 89.9 -subtype summer
 
 point -115.5 -39.5 breakdown-choke -orientation 266.9
 
-point -93.5 -66.0 label -text "-21 m"
+point -109.0 -46.0 altitude -align bottom
 
-point 190.5 169.0 label -text "L39" -scale xl
+point -147.5 -72.0 label -text "-21 m"
+
+point 190.5 176.0 label -text "<bf>L39" -scale xl
 
 area snow
   l40-144-90
@@ -141,7 +143,7 @@ line wall -subtype pebbles
   smooth off
 endline
 
-point 210.346 133.9841 altitude
+point 196.846 125.9841 altitude -align top-right
 
 line wall
   -109.0 -46.0

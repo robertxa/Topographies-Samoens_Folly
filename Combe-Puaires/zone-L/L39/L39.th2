@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 317.0 501.5
+##XTHERION## xth_me_area_adjust -129.5 -129.5 324.0 513.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {156.708 1 1.0} {66.90099999999998 L39} L39-map.xvi 0 {}
 
@@ -26,7 +26,7 @@ point 149.5 124.0 snow
 
 point 140.0 124.5 snow
 
-point 186.5 49.5 label -text "L39" -scale xl
+point 193.5 42.5 label -text "<bf>L39" -scale xl
 
 point 140.0 311.0 water-flow -orientation 257.0
 
@@ -36,7 +36,11 @@ point 133.5 321.5 narrow-end
 
 point 58.5 371.0 air-draught -orientation 168.3 -subtype summer
 
-point 84.5 346.0 continuation
+point 148.5 65.5 altitude -align bottom-left
+
+point 71.0 340.0 altitude -align right
+
+point 79.0 383.0 continuation -attr Code D -text "Blocs à enlever, c.a."
 
 point 64.5 345.5 breakdown-choke
 

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -132.25 191.0 196.0
+##XTHERION## xth_me_area_adjust -128.75 -138.75 191.0 196.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {25.5626 1 1.0} {13.8345 L11} ../L11-map.xvi 0 {}
 
@@ -66,11 +66,11 @@ point 37.5 14.5 water-flow -orientation 144.2
 
 point 61.75 16.0 label -text "-93 m"
 
-point -0.25 38.75 altitude
+point 21.0 8.5 altitude -align bottom-left
 
-point 45.75 29.0 altitude
+point 36.0 24.75 altitude -align right
 
-point 31.75 -3.0 label -text "L11" -scale xl
+point 31.75 -9.5 label -text "<bf>L11" -scale xl
 
 point 33.5 40.75 water-flow -orientation 196.1
 
@@ -84,6 +84,7 @@ endline
 line pit
   22.75 28.75
   22.75 28.75 20.75 22.75 22.75 22.0
+  smooth off
 endline
 
 line pit
