@@ -1,0 +1,16 @@
+encoding  utf-8
+ 
+survey Synclinal_JB -title "Réseau du Jean-Bernard"
+
+# Pour importer les différentes données de différents fichiers topos : 
+	input JB/JB-3D.th
+	#input JB/JB.th
+	input zone-B/B.th
+	input zone-C/C.th
+	input zone-CH/CH.th
+	input zone-D/D.th
+	input zone-F/F.th
+	input zone-V/V.th
+ 	
+ endsurvey
+ 

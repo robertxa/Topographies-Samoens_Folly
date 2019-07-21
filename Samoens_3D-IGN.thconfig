@@ -31,31 +31,13 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 # Topos et cavités du réseau du A21 
-source Reseau_A21/zone-A/A.th
-source Reseau_A21/zone-PV/PV.th 
- 
+source Reseau_A21/Synclinal_A21.th
 # Topos et cavités du système des Avoudrues
-source Avoudrues/zone-AV/AV.th
-
+source Avoudrues/Synclinal_AV.th
 # Topos et cavités du système du Jean-Bernard
-source JB/JB/JB-3D.th
-source JB/zone-B/B.th
-source JB/zone-C/C.th
-source JB/zone-CH/CH.th
-source JB/zone-D/D.th
-source JB/zone-F/F.th
-source JB/zone-V/V.th
-
-
+source JB/Synclinal_JB.th
 # Topos et cavités du système de la Combe aux Puaires
-source Combe-Puaires/zone-BA/BA.th
-source Combe-Puaires/zone-CP/CP.th
-source Combe-Puaires/zone-DR/DR.th
-source Combe-Puaires/zone-L/L.th
-source Combe-Puaires/zone-LP/LP.th
-source Combe-Puaires/zone-LS/LS.th
-source Combe-Puaires/zone-T/T.th
-source Combe-Puaires/Ermoy/ermoy.th
+source Combe-Puaires/Synclinal_CP.th
 
 # MNT de la zone, avec wrappage des images (éditer le fichier Samoens-GIS/dem/samoens.th pour choisir l'image !)
 #source Samoens-GIS/dem/samoens.th

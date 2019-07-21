@@ -1,0 +1,16 @@
+encoding  utf-8
+ 
+survey Synclinal_CP -title "Synclinal de la Combe aux Puaires"
+
+# Pour importer les différentes données de différents fichiers topos : 
+	input Ermoy/ermoy.th
+	input zone-BA/BA.th
+	input zone-CP/CP.th
+	input zone-DR/DR.th
+	input zone-L/L.th
+	input zone-LP/LP.th
+	input zone-LS/LS
+	input zone-T/T.th
+ 	
+ endsurvey
+ 
