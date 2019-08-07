@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap fileOu2019-SC1 -projection extended -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap fileOu2019-SC1 -projection extended -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
 line wall
   76.25 91.5
@@ -80,7 +80,7 @@ point 18.75 84.5 height -value [-7 m]
 
 point 15.25 63.5 altitude -align bottom
 
-point 8.0 67.0 continuation -attr Code E -text "Etroiture, courant d'air, bruit de rivière (lavoir humide ?)"
+point 8.0 67.0 continuation -attr Code E -text "Etroiture, courant d'air, bruit de rivière (Lavoir Humide ?)"
 
 line wall -subtype presumed
   54.25 67.25

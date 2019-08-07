@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap fileou2019-SP1 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc : http://creativecommons.org/licenses/by-nc/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap fileou2019-SP1 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
 point 51.5 71.0 air-draught -orientation 331.1 -subtype summer
 
@@ -53,7 +53,7 @@ point 68.75 112.5 narrow-end
 
 point 33.5 98.5 narrow-end
 
-point 50.0 51.0 continuation -attr Code E -text "Etroiture sév§re, courant d'air fort, bruit de rivière (Lavoir humide ?)"
+point 50.0 51.0 continuation -attr Code E -text "Etroiture sévère, courant d'air fort, bruit de rivière (Lavoir humide ?)"
 
 line wall
   50.75 57.0
