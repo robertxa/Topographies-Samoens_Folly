@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 2253.9854 1387.8432
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 2253.9854 1387.8432
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1732.2799999999997 1 1.0} {708.6610000000001 xx0init} solitaire-plan2019.xvi 0 {}
 
 
@@ -62,6 +62,8 @@ line wall
   smooth off
 endline
 
+point 2010.0 708.5 height -value [-24 m]
+
 line wall
   1966.0 665.0
   1966.0 665.0 1962.0 674.0 1965.5 681.0
@@ -119,7 +121,10 @@ endscrap
 
 scrap solitaire2019-SP_3 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
 
-point 1887.0 578.5 continuation -attr Code A -text "Boyau à explorer et topographier"
+line pit
+  1896.0 585.0
+  1896.0 585.0 1900.5 572.0 1894.5 568.5
+endline
 
 line slope
   1901.25 584.25
@@ -158,7 +163,7 @@ line wall
   smooth off
 endline
 
-point 2006.75 611.75 label -text "Le Séchoir"
+point 1890.0 604.5 height -value [+5 m]
 
 line wall
   1907.5 652.5
@@ -216,6 +221,8 @@ line pit
   1951.0 721.25 1957.75 733.25 1968.25 729.5
   smooth off
 endline
+
+point 1958.5 891.0 height -value [-15 m]
 
 line wall
   1917.5 812.25

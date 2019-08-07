@@ -133,8 +133,8 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	#export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019.xvi
+	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019b.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019b.xvi
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2019.pdf

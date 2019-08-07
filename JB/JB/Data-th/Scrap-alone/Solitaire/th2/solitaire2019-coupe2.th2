@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 2175.2452000000003 757.9216
+##XTHERION## xth_me_area_adjust -561.0699999999999 -442.966 2253.9865 797.2865
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1604.0900000000001 1 1.0} {393.7 xx0init} solitaire-coupe2019.xvi 0 {}
 
@@ -11,7 +11,8 @@ point 1850.5 214.5 label -text "<center>Pierre Qui<br>Tombe"
 
 line arrow
   1660.0 179.5
-  1660.0 179.5 1644.0 258.5 1673.0 278.0
+  1660.0 179.5 1597.5 289.5 1626.5 309.0
+  smooth off
 endline
 
 point 1661.0 168.0 label -text "Le Séchoir"
@@ -25,6 +26,7 @@ line u:rope
   1776.0 241.0
   1776.0 241.0 1797.5 256.5 1802.5 268.0
   1803.1 269.38 1825.5 247.5 1832.5 255.0
+  smooth off
 endline
 
 line u:rope
@@ -46,22 +48,30 @@ endline
 line wall -subtype invisible
   1757.0 204.0
   1757.0 204.0 1764.5 227.0 1760.0 234.5
+  smooth off
 endline
 
 line wall -subtype invisible
   1757.0 284.5
   1757.0 284.5 1745.0 299.5 1736.0 295.5
+  smooth off
 endline
 
 line wall -subtype invisible
   1764.0 272.0
   1764.0 272.0 1771.0 212.0 1776.0 206.0
+  smooth off
 endline
 
 line wall -subtype invisible
   1833.5 241.5
   1833.5 241.5 1850.5 285.0 1843.0 295.5
+  smooth off
 endline
+
+point 1723.5 189.5 height -value [-24 m]
+
+point 1844.5 347.0 height -value [-15 m]
 
 line wall
   1843.0 295.5
@@ -100,6 +110,7 @@ endline
 line wall
   1760.0 234.5
   1760.0 234.5 1757.0 279.5 1757.0 284.5
+  smooth off
 endline
 
 line wall

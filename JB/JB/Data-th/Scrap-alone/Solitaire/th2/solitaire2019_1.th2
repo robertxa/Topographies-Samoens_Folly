@@ -1,7 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 2253.9854 1387.8432
+##XTHERION## xth_me_area_adjust -364.0 -679.0 2332.9462 1388.0246
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1732.2799999999997 1 1.0} {708.6610000000001 xx0init} solitaire-plan2019.xvi 0 {}
+##XTHERION## xth_me_image_insert {1732.5 1 1.0} {708.844 xx0init} solitaire-plan2019b.xvi 0 {}
 
 
 
@@ -14,7 +15,7 @@ line wall
   305.5 402.5 268.0 404.0 270.5 393.0
   273.0 382.0 273.5 379.5 278.5 370.5
   283.5 361.5 298.3 347.77 294.0 342.0
-  289.7 336.23 279.5 288.5 279.5 288.5
+  289.7 336.23 278.0 287.5 278.0 287.5
   smooth off
 endline
 
@@ -31,8 +32,6 @@ endline
 
 point 331.5 371.0 air-draught -orientation 88.1 -subtype summer
 
-point 275.5 269.0 continuation -attr Code P -text "P10 à descendre ou traverser"
-
 point 712.0 507.0 continuation -attr Code A -text "CF à explorer"
 
 point 672.5 470.0 continuation -attr Code A -text "Affluent à explorer"
@@ -44,8 +43,6 @@ point 816.0 582.5 narrow-end
 point 682.5 350.0 narrow-end
 
 point 400.0 420.5 narrow-end
-
-point 279.5 288.5 altitude -align left
 
 point 754.0 505.0 stalactites
 
@@ -78,7 +75,11 @@ point 650.0 395.0 clay-tree
 
 point 771.0 413.0 label -text "<center>carrefour<br>de Daniel"
 
-point 552.5 413.0 label -text "m. des goujons"
+point 887.5 312.0 water-flow -orientation 225.6
+
+point 929.0 437.0 water-flow -orientation 189.4
+
+point 613.0 545.0 label -text "m. des goujons"
 
 point 803.5 328.5 label -text "<center>puits de<br>la Savonnette"
 
@@ -90,7 +91,7 @@ point 854.0 362.0 height -value [-7 m]
 
 point 709.0 568.0 height -value [-7 m]
 
-point 312.0 284.0 height -value [-10 m]
+point 312.0 284.0 height -value [-9 m]
 
 point 383.5 433.5 water-flow -orientation 185.5
 
@@ -105,11 +106,13 @@ point 803.5 596.5 water-flow -orientation 194.1
 line wall -subtype presumed
   600.5 339.0
   600.5 339.0 580.32 333.25 577.5 331.0
+  smooth off
 endline
 
 line wall -outline in -subtype presumed
   576.0 322.5
   576.0 322.5 595.0 332.5 599.5 333.5
+  smooth off
 endline
 
 line wall -outline in
@@ -143,6 +146,7 @@ endline
 line pit
   732.0 491.5
   732.0 491.5 735.0 474.0 727.5 474.0
+  smooth off
 endline
 
 line wall
@@ -158,6 +162,7 @@ line wall
   731.0 565.0 736.0 554.5 736.0 546.0
   736.0 537.5 735.0 519.5 734.5 510.5
   734.0 501.5 739.0 490.5 733.0 486.5
+  smooth off
 endline
 
 line wall
@@ -171,6 +176,7 @@ line wall
   797.0 583.0 797.5 569.0 791.0 571.5
   784.5 574.0 768.5 585.5 760.5 582.0
   752.5 578.5 749.0 582.0 746.5 585.5
+  smooth off
 endline
 
 line wall
@@ -186,6 +192,22 @@ line wall
   smooth off
 endline
 
+point 993.5 252.5 continuation -attr Code A -text "Départ à voir"
+
+line wall
+  1017.5 271.0
+  1017.5 271.0 1005.5 283.0 1008.0 286.0
+  1010.5 289.0 1011.0 289.5 1011.0 289.5
+  smooth off
+endline
+
+line wall
+  981.5 277.0
+  981.5 277.0 989.5 277.5 995.0 275.0
+  1000.5 272.5 1006.0 265.0 1006.0 265.0
+  smooth off
+endline
+
 line wall
   739.5 456.5
   739.5 456.5 744.0 460.5 742.5 468.0
@@ -197,8 +219,14 @@ line wall
   843.0 502.0 863.5 484.0 872.5 471.0
   881.5 458.0 912.5 435.0 900.0 394.0
   887.5 353.0 866.0 279.5 914.0 276.5
-  962.0 273.5 1000.5 267.5 1011.0 289.5
+  962.0 273.5 947.5 271.0 981.5 277.0
+  smooth off
+endline
+
+line wall
+  1011.0 289.5
   1021.5 311.5 1041.5 340.5 1046.5 345.0
+  smooth off
 endline
 
 line wall
@@ -206,6 +234,7 @@ line wall
   669.0 354.0 660.0 371.0 672.0 386.0
   684.0 401.0 699.0 418.0 713.0 432.0
   727.0 446.0 736.0 458.0 739.5 456.5
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -229,31 +258,37 @@ endline
 line pit
   820.0 514.5
   820.0 514.5 815.5 528.0 833.0 527.0
+  smooth off
 endline
 
 line pit
   805.5 570.5
   805.5 570.5 794.5 561.0 789.0 577.0
+  smooth off
 endline
 
 line pit
   575.0 317.5
   575.0 317.5 564.5 311.5 560.0 322.5
+  smooth off
 endline
 
 line pit
   615.5 344.5
   615.5 344.5 614.0 334.0 608.0 332.0
+  smooth off
 endline
 
 line pit
   390.5 401.0
   390.5 401.0 380.0 398.0 376.0 403.0
+  smooth off
 endline
 
 line pit
   292.0 286.0
   292.0 286.0 287.0 294.5 277.5 294.5
+  smooth off
 endline
 
 line wall
@@ -311,6 +346,295 @@ point 919.8399999999999 431.571 station -name 2019-FD-22@solitaire
 point 975.3499999999999 360.471 station -name 2019-FD-21@solitaire
 
 point 1026.85 365.831 station -name 2019-FD-19@solitaire
+
+endscrap
+
+
+
+scrap Sol_SP2019b_1 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+point 240.5 -79.5 clay-tree
+
+point 215.5 -79.5 clay-tree
+
+point 351.5 -221.0 gypsum
+
+point 363.0 -229.5 gypsum
+
+point 280.5 -201.0 guano -clip off
+
+point 345.0 -167.0 label -text "c.f."
+
+point 270.0 252.0 clay -clip off
+
+point 225.0 258.0 clay -clip off
+
+point 193.5 199.0 clay -clip off
+
+point 168.5 252.0 clay -clip off
+
+area blocks
+  l135-64-54
+endarea
+
+line slope
+  185.0 -69.0
+  185.0 -69.0 149.0 -104.0 137.5 -98.5
+  smooth off
+  l-size 10.0
+endline
+
+line slope
+  168.5 -55.0
+  155.0 -61.0 149.0 -72.0 131.5 -69.5
+  smooth off
+  l-size 10.0
+endline
+
+line slope
+  152.5 -29.5
+  152.5 -29.5 138.5 -44.5 121.5 -44.5
+  smooth off
+  l-size 10.0
+endline
+
+line slope
+  132.0 -12.5
+  132.0 -12.5 126.0 -26.5 110.5 -26.5
+  smooth off
+  l-size 10.0
+endline
+
+point -34.0 17.0 height -value [-14 m]
+
+line pit
+  47.5 -16.0
+  47.5 -16.0 17.5 7.5 10.5 23.5
+  smooth off
+endline
+
+line label -id l135-64-54 -close on
+  5.0 39.5
+  5.0 39.5 2.5 35.0 7.0 32.0
+  24.1 20.6 47.5 -14.0 69.0 -13.5
+  90.5 -13.0 131.0 -10.0 134.5 1.5
+  138.0 13.0 160.0 49.5 151.5 49.0
+  143.0 48.5 86.5 53.5 62.5 53.5
+  38.5 53.5 5.0 39.5 5.0 39.5
+  smooth off
+endline
+
+point 46.5 72.0 label -text "<center>salle<br>du Chaos"
+
+point 60.0 -152.5 continuation -attr Code P -text "Puits à descendre"
+
+point 120.0 -147.5 continuation -attr Code P -text "Puits à descendre"
+
+point 356.5 -299.0 continuation -attr Code A -text "Départ à explorer ; bruit de rivière"
+
+point 418.0 -166.0 continuation -attr Code A -text "Départ à explorer"
+
+line pit
+  164.0 -149.0
+  164.0 -149.0 148.0 -136.5 148.5 -122.0
+  smooth off
+endline
+
+line pit
+  69.0 -119.0
+  69.0 -119.0 34.0 -141.5 25.5 -123.5
+  smooth off
+endline
+
+point 7.0 192.0 height -value [-8 m]
+
+point 4.5 256.5 height -value [-12 m]
+
+line pit
+  98.5 208.5
+  98.5 208.5 68.0 193.5 53.0 199.5
+  smooth off
+endline
+
+line pit
+  82.5 245.5
+  82.5 245.5 60.5 240.0 41.5 252.5
+  smooth off
+endline
+
+point 156.0 128.0 label -text "R2"
+
+line rock-border -close on -reverse on
+  112.0 117.5
+  109.0 126.0
+  117.5 126.0
+  117.5 118.5
+  112.0 117.5
+endline
+
+line pit
+  128.5 123.0
+  128.5 123.0 116.0 104.5 92.5 108.5
+  smooth off
+endline
+
+point 104.5 174.0 water-flow -orientation 212.9
+
+line wall
+  403.5 -188.0
+  403.5 -188.0 388.5 -237.0 373.0 -226.5
+  357.5 -216.0 311.5 -193.0 298.5 -169.0
+  285.5 -145.0 285.5 -129.5 272.5 -116.0
+  259.5 -102.5 263.0 -98.0 243.5 -94.5
+  224.0 -91.0 215.5 -108.0 192.5 -88.0
+  169.5 -68.0 161.5 -58.0 150.5 -42.5
+  139.5 -27.0 114.5 -7.0 124.0 5.5
+  133.5 18.0 147.5 44.5 141.5 57.0
+  135.5 69.5 122.0 127.5 119.5 130.5
+  117.0 133.5 112.5 121.5 106.0 140.0
+  99.5 158.5 95.5 174.5 95.5 179.5
+  95.5 184.5 89.5 216.0 86.0 226.5
+  82.5 237.0 68.0 248.0 82.0 249.5
+  96.0 251.0 99.5 259.0 106.5 247.0
+  113.5 235.0 123.0 212.0 136.0 219.5
+  149.0 227.0 148.0 231.0 163.5 227.0
+  179.0 223.0 192.0 220.5 199.5 223.5
+  207.0 226.5 207.5 208.5 218.5 213.5
+  229.5 218.5 253.0 225.5 253.0 236.5
+  253.0 247.5 255.0 272.5 263.0 274.5
+  271.0 276.5 281.0 278.5 283.0 280.0
+  285.0 281.5 286.5 284.5 286.5 284.5
+  smooth off
+endline
+
+line wall
+  376.0 -276.0
+  376.0 -276.0 415.0 -214.5 416.0 -209.0
+  417.0 -203.5 421.0 -192.5 421.0 -192.5
+  smooth off
+endline
+
+line wall
+  146.0 -151.0
+  146.0 -151.0 170.5 -137.0 188.5 -129.0
+  206.5 -121.0 243.5 -102.0 249.0 -109.0
+  254.5 -116.0 261.0 -119.5 267.0 -133.5
+  273.0 -147.5 274.5 -172.0 282.5 -179.5
+  290.5 -187.0 340.5 -227.0 347.0 -233.5
+  353.5 -240.0 368.5 -242.5 367.0 -251.0
+  365.5 -259.5 356.5 -270.0 356.5 -270.0
+  smooth off
+endline
+
+line rock-border -close on
+  46.0 -50.0
+  46.0 -62.0
+  53.5 -61.5
+  53.0 -54.0
+  46.0 -50.0
+endline
+
+line rock-border -close on
+  28.0 -43.5
+  29.0 -52.0
+  37.5 -52.0
+  38.5 -44.5
+  28.0 -43.5
+endline
+
+line rock-border -close on
+  38.0 -26.5
+  31.5 -32.5
+  38.0 -35.5
+  40.0 -30.0
+  38.0 -26.5
+endline
+
+line wall
+  67.0 -131.5
+  67.0 -131.5 62.5 -66.5 56.5 -57.0
+  50.5 -47.5 29.5 -10.0 44.5 -9.5
+  59.5 -9.0 97.5 1.5 107.5 -9.0
+  117.5 -19.5 134.0 -41.0 140.0 -56.5
+  146.0 -72.0 173.0 -124.5 164.5 -125.5
+  156.0 -126.5 139.0 -130.5 139.0 -130.5
+  smooth off
+endline
+
+point 41.0 -124.5 altitude -align left
+
+point 347.0 -233.5 altitude -align bottom-left
+
+line wall
+  278.0 287.5
+  278.0 287.5 272.0 285.0 263.5 283.5
+  255.0 282.0 248.5 283.5 247.0 272.5
+  245.5 261.5 250.5 236.5 241.0 232.5
+  231.5 228.5 219.0 216.5 213.5 225.0
+  208.0 233.5 204.0 240.0 198.5 236.5
+  193.0 233.0 191.0 225.0 181.0 230.5
+  171.0 236.0 155.5 247.0 147.5 242.0
+  139.5 237.0 140.0 222.5 130.5 235.5
+  121.0 248.5 119.0 261.5 110.5 265.5
+  102.0 269.5 64.0 279.5 53.0 267.0
+  42.0 254.5 46.0 258.0 51.0 241.5
+  56.0 225.0 75.0 181.0 80.0 164.0
+  85.0 147.0 84.0 147.0 95.0 121.0
+  106.0 95.0 125.5 58.0 121.0 47.5
+  116.5 37.0 125.0 18.0 105.0 18.0
+  85.0 18.0 29.5 37.0 17.0 20.5
+  4.5 4.0 1.5 8.0 10.5 -11.5
+  19.5 -31.0 24.5 -47.0 28.0 -66.0
+  31.5 -85.0 41.0 -124.5 41.0 -124.5
+  smooth off
+  46.0 -136.0
+endline
+
+point 369.12 -243.36599999999999 station -name 2019-FD-566@solitaire
+
+point 287.30000000000007 -174.77599999999995 station -name 2019-FD-565@solitaire
+
+point 271.4000000000001 -125.64599999999996 station -name 2019-FD-564@solitaire
+
+point 250.93000000000006 -99.50599999999997 station -name 2019-FD-563@solitaire
+
+point 177.93000000000006 -120.36599999999999 station -name 2019-FD-562@solitaire
+
+point 140.7700000000001 -47.536 station -name 2019-FD-561@solitaire
+
+point 53.520000000000095 -119.666 station -name 2019-FD-60@solitaire
+
+point 40.530000000000086 -58.325999999999965 station -name 2019-FD-59@solitaire
+
+point 24.230000000000018 7.033999999999992 station -name 2019-FD-58@solitaire
+
+point 115.41000000000008 2.3040000000000305 station -name 2019-FD-56@solitaire
+
+point 129.59000000000003 48.76400000000001 station -name 2019-FD-55@solitaire
+
+point 100.30000000000007 129.234 station -name 2019-FD-54@solitaire
+
+point 88.09000000000003 164.74400000000003 station -name 2019-FD-53@solitaire
+
+point 69.19000000000005 222.93400000000003 station -name 2019-FD-52@solitaire
+
+point 62.74000000000001 263.48400000000004 station -name 2019-FD-51@solitaire
+
+point 106.5200000000001 257.264 station -name 2019-FD-49@solitaire
+
+point 130.5300000000001 222.93400000000003 station -name 2019-FD-48@solitaire
+
+point 149.04000000000008 237.42400000000004 station -name 2019-FD-47@solitaire
+
+point 184.86 225.06400000000002 station -name 2019-FD-46@solitaire
+
+point 202.82000000000005 231.594 station -name 2019-FD-45@solitaire
+
+point 214.86 217.34400000000002 station -name 2019-FD-44@solitaire
+
+point 247.07000000000005 231.67400000000004 station -name 2019-FD-43@solitaire
+
+point 253.21000000000004 275.144 station -name 2019-FD-42@solitaire
 
 endscrap
 

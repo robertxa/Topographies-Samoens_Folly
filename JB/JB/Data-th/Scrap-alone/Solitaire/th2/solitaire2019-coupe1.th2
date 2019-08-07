@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 2175.2452000000003 757.9216
+##XTHERION## xth_me_area_adjust -561.0699999999999 -442.966 2253.9865 797.2865
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {1604.0900000000001 1 1.0} {393.7 xx0init} solitaire-coupe2019.xvi 0 {}
 
@@ -58,6 +58,19 @@ point 525.75 191.5 label -text "<center>carrefour<br>de Daniel"
 
 point 658.0 270.25 label -text "R1.5"
 
+point 784.5 220.25 continuation -attr Code A -text "Départ à explorer"
+
+line wall
+  780.25 236.25
+  780.25 236.25 773.0 233.75 772.0 237.0
+  smooth off
+endline
+
+line wall
+  772.0 227.75
+  779.0 227.75
+endline
+
 line wall
   596.5 203.25
   596.5 203.25 595.25 212.5 601.25 215.75
@@ -68,8 +81,13 @@ line wall
   706.0 238.5 716.25 238.25 722.5 236.0
   728.75 233.75 725.75 221.0 733.5 219.75
   741.25 218.5 764.0 218.75 769.75 220.5
-  775.5 222.25 772.0 225.0 772.0 230.75
-  772.0 236.5 770.5 250.5 776.25 251.25
+  775.5 222.25 772.0 222.0 772.0 227.75
+  smooth off
+endline
+
+line wall
+  772.0 237.0
+  772.0 242.75 770.5 250.5 776.25 251.25
   782.0 252.0 791.25 253.0 795.0 253.0
   smooth off
 endline
@@ -86,9 +104,9 @@ line wall
 endline
 
 line wall
-  198.5 175.25
-  198.5 175.25 208.25 174.5 208.25 182.0
-  208.25 189.5 203.75 221.25 210.5 220.5
+  201.0 186.5
+  201.0 186.5 209.25 183.5 209.25 191.0
+  209.25 198.5 203.75 221.25 210.5 220.5
   217.25 219.75 231.5 211.5 240.25 214.0
   249.0 216.5 253.0 224.5 262.75 227.75
   272.5 231.0 291.25 233.0 304.75 232.0
@@ -105,7 +123,7 @@ line wall
   297.75 263.5 308.0 258.75 299.25 257.0
   290.5 255.25 288.0 251.25 279.25 252.25
   270.5 253.25 244.0 253.5 236.5 253.5
-  229.0 253.5 201.5 254.5 201.5 254.5
+  229.0 253.5 201.5 233.25 201.5 233.25
   smooth off
 endline
 
@@ -120,9 +138,7 @@ endline
 
 point 473.5 222.75 narrow-end
 
-point 409.25 297.75 label -text "m. des Goujons"
-
-point 183.5 223.75 continuation -attr Code P -text "P10 à descendre"
+point 570.0 322.0 label -text "m. des Goujons"
 
 point 283.0 270.25 continuation -attr Code E -text "Affluent à explorer"
 
@@ -193,9 +209,9 @@ point 590.5 201.5 continuation -attr Code P -text "Puits à descendre"
 
 point 610.25 204.25 height -value [-7 m]
 
-point 228.25 196.75 height -value [-10 m]
+point 228.25 196.75 height -value [-9 m]
 
-point 786.0 235.5 height -value [-7 m]
+point 801.5 236.75 height -value [-7 m]
 
 line u:rope
   783.5 257.0
@@ -211,10 +227,21 @@ line u:rope
   smooth off
 endline
 
+point 758.5 220.75 water-flow -orientation 152.1
+
+point 739.5 253.25 water-flow -orientation 152.1
+
 line u:rope
-  222.25 234.25
-  222.25 234.25 204.0 224.5 204.25 229.75
-  204.5 235.0 205.25 179.75 205.25 179.75
+  255.0 240.5
+  255.0 240.5 241.0 235.5 234.75 237.5
+  234.41 237.61 225.25 231.25 220.0 234.5
+  smooth off
+endline
+
+line u:rope
+  220.0 234.5
+  220.0 234.5 204.0 224.5 204.25 229.75
+  204.5 235.0 205.0 188.25 205.0 188.25
   smooth off
 endline
 
@@ -310,6 +337,243 @@ point 261.1700000000002 234.83999999999997 station -name 2019-FD-38@solitaire
 point 236.2900000000002 229.57 station -name 2019-FD-39@solitaire
 
 point 206.3800000000001 226.42 station -name 2019-FD-40@solitaire
+
+endscrap
+
+
+
+scrap Sol-SC2019b-1 -projection extended -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+
+point 127.0 -63.5 altitude -align bottom-right
+
+point -180.25 -33.75 altitude -align bottom-right
+
+point -102.75 -5.25 height -value [-14 m]
+
+point 57.25 86.75 height -value [-8 m]
+
+point 78.75 134.5 height -value [-12 m]
+
+point 93.0 157.0 clay -clip off
+
+point 120.25 166.5 clay -clip off
+
+point 142.0 171.25 clay -clip off
+
+point 161.0 175.25 clay -clip off
+
+point 63.5 -53.25 guano -clip off
+
+point 106.0 -46.75 gypsum
+
+point 116.25 -47.75 gypsum
+
+point -0.5 -32.0 clay-tree
+
+point 162.25 -42.25 continuation -attr Code D -text "Galerie à explorer après désob"
+
+point 92.25 -77.25 continuation -attr Code D -text "Galerie à explorer après désob ; bruit de rivière"
+
+point -43.0 -48.0 continuation -attr Code P -text "Puits à descendre"
+
+point -205.25 -49.0 continuation -attr Code P -text "Puits à descendre"
+
+line u:rope
+  -110.75 28.0
+  -110.75 28.0 -127.5 14.25 -127.5 24.25
+  -127.5 26.07 -127.5 -28.25 -127.5 -28.25
+  smooth off
+endline
+
+line u:rope
+  44.25 115.25
+  44.25 115.25 32.75 107.75 32.75 114.0
+  32.75 114.25 31.5 78.25 31.5 78.25
+  smooth off
+endline
+
+line u:rope
+  76.0 165.25
+  76.0 165.25 55.75 154.75 55.75 161.75
+  55.75 162.5 55.75 112.75 55.75 112.75
+  smooth off
+endline
+
+line wall
+  152.5 -46.25
+  152.5 -46.25 136.25 -57.0 122.5 -55.5
+  108.75 -54.0 78.75 -45.75 71.0 -41.75
+  63.25 -37.75 48.5 -37.75 47.5 -33.25
+  46.5 -28.75 47.25 -28.75 40.0 -24.75
+  32.75 -20.75 35.0 -17.25 23.75 -17.5
+  12.5 -17.75 -0.25 -22.75 -9.5 -17.25
+  -18.75 -11.75 -45.5 5.5 -53.0 13.75
+  -60.5 22.0 -74.5 36.0 -70.75 36.25
+  -67.0 36.5 -60.25 37.5 -49.75 42.75
+  -39.25 48.0 -12.75 62.75 -2.75 67.0
+  7.25 71.25 6.0 73.75 11.25 74.5
+  16.5 75.25 36.75 72.5 37.5 77.25
+  38.25 82.0 34.0 106.25 40.0 107.25
+  46.0 108.25 62.5 106.0 62.5 111.75
+  62.5 117.5 59.0 155.5 68.25 156.5
+  77.5 157.5 72.5 154.75 83.75 158.75
+  95.0 162.75 104.0 169.25 111.75 171.0
+  119.5 172.75 133.25 174.0 136.75 176.0
+  140.25 178.0 145.5 178.75 151.0 179.5
+  156.5 180.25 166.5 186.0 170.75 186.0
+  175.0 186.0 186.75 185.0 192.5 185.5
+  198.25 186.0 201.0 186.5 201.0 186.5
+  smooth off
+endline
+
+line wall
+  105.25 -75.0
+  105.25 -75.0 122.25 -65.0 127.0 -63.5
+  131.75 -62.0 153.75 -49.25 153.75 -49.25
+  smooth off
+endline
+
+line wall
+  -28.75 -61.25
+  -28.75 -61.25 -25.0 -43.75 -21.0 -40.5
+  -17.0 -37.25 -15.5 -30.0 -7.75 -33.0
+  0.0 -36.0 20.0 -46.0 28.0 -46.0
+  36.0 -46.0 38.5 -46.75 49.5 -46.5
+  60.5 -46.25 62.5 -44.25 72.25 -47.75
+  82.0 -51.25 117.5 -60.0 115.5 -61.5
+  113.5 -63.0 103.0 -71.0 103.0 -71.0
+  smooth off
+endline
+
+line wall
+  -186.25 -72.25
+  -186.25 -72.25 -189.75 -36.0 -180.25 -33.75
+  -170.75 -31.5 -166.25 -29.75 -154.0 -30.25
+endline
+
+line wall -subtype debris
+  -154.0 -30.25
+  -141.75 -30.75 -124.0 -31.75 -119.75 -31.0
+endline
+
+line wall
+  -119.75 -31.0
+  -115.5 -30.25 -121.5 17.25 -117.5 17.5
+  smooth off
+endline
+
+line wall -subtype debris
+  -117.5 17.5
+  -113.5 17.75 -94.5 19.5 -89.5 21.25
+  -84.5 23.0 -81.25 38.0 -76.75 32.75
+  smooth off
+endline
+
+line wall
+  -76.75 32.75
+  -72.25 27.5 -49.75 1.0 -43.0 -3.5
+  -36.25 -8.0 -24.25 -18.25 -21.25 -22.0
+  -18.25 -25.75 -20.0 -30.25 -27.25 -30.25
+  -34.5 -30.25 -40.0 -30.5 -40.0 -30.5
+  smooth off
+endline
+
+line water-flow
+  4.25 64.25
+  4.25 64.25 -42.5 38.25 -50.0 36.0
+  smooth off
+endline
+
+point -90.75 16.25 water-flow -orientation 203.4
+
+point 42.5 78.75 water-flow -orientation 262.8
+
+line wall
+  150.0 213.25
+  150.0 213.25 141.5 223.0 135.0 214.0
+  smooth off
+endline
+
+line wall
+  135.0 214.0
+  135.0 214.0 140.0 191.75 129.25 191.75
+  118.5 191.75 113.75 198.5 110.25 194.5
+  106.75 190.5 111.0 182.75 92.75 176.5
+  74.5 170.25 64.75 167.25 58.0 166.5
+  51.25 165.75 49.25 168.75 47.25 161.75
+  45.25 154.75 46.25 136.25 37.25 133.5
+  28.25 130.75 19.5 111.75 9.25 102.75
+  -1.0 93.75 -2.25 88.75 -12.75 81.5
+  -23.25 74.25 -48.0 55.0 -58.25 51.25
+  -68.5 47.5 -83.75 42.75 -96.0 42.25
+  -108.25 41.75 -121.75 41.5 -127.75 40.0
+  -133.75 38.5 -133.5 29.25 -143.25 17.75
+  -153.0 6.25 -148.0 -4.0 -157.0 -7.75
+  -166.0 -11.5 -184.75 -17.25 -190.75 -17.75
+  -196.75 -18.25 -204.25 -22.75 -204.25 -24.5
+  smooth off
+endline
+
+line wall
+  201.5 233.25
+  201.5 233.25 192.5 227.5 186.5 223.75
+  180.5 220.0 167.75 197.25 162.75 196.5
+  157.75 195.75 151.5 193.0 151.25 197.75
+  151.0 202.5 150.0 213.25 150.0 213.25
+  smooth off
+endline
+
+point -189.27999999999986 -32.920000000000016 station -name 2019-FD-60@solitaire
+
+point -157.89999999999986 -24.53000000000003 station -name 2019-FD-59@solitaire
+
+point 124.09000000000015 -60.52000000000004 station -name 2019-FD-566@solitaire
+
+point 70.69000000000005 -45.20000000000002 station -name 2019-FD-565@solitaire
+
+point 44.88000000000011 -41.58000000000001 station -name 2019-FD-564@solitaire
+
+point 28.270000000000095 -41.58000000000001 station -name 2019-FD-563@solitaire
+
+point -9.699999999999932 -27.01000000000002 station -name 2019-FD-562@solitaire
+
+point -50.6099999999999 6.099999999999966 station -name 2019-FD-561@solitaire
+
+point -124.20999999999992 -26.30000000000001 station -name 2019-FD-58@solitaire
+
+point -124.20999999999992 20.93999999999997 station -name 2019-FD-57@solitaire
+
+point -78.53999999999985 39.39999999999998 station -name 2019-FD-56@solitaire
+
+point -54.25999999999988 45.02999999999997 station -name 2019-FD-55@solitaire
+
+point -11.42999999999995 67.78999999999996 station -name 2019-FD-54@solitaire
+
+point 7.330000000000155 76.52999999999997 station -name 2019-FD-53@solitaire
+
+point 37.950000000000045 113.02999999999997 station -name 2019-FD-52@solitaire
+
+point 58.450000000000045 113.72999999999998 station -name 2019-FD-51@solitaire
+
+point 58.450000000000045 160.97999999999996 station -name 2019-FD-50@solitaire
+
+point 80.53000000000009 161.76999999999998 station -name 2019-FD-49@solitaire
+
+point 101.50000000000011 171.09999999999997 station -name 2019-FD-48@solitaire
+
+point 113.25000000000011 174.24999999999997 station -name 2019-FD-47@solitaire
+
+point 132.19000000000005 176.92 station -name 2019-FD-46@solitaire
+
+point 141.7500000000001 180.58999999999997 station -name 2019-FD-45@solitaire
+
+point 151.08000000000015 182.03999999999996 station -name 2019-FD-44@solitaire
+
+point 168.73000000000013 188.80999999999997 station -name 2019-FD-43@solitaire
+
+point 190.68000000000006 189.59999999999997 station -name 2019-FD-42@solitaire
+
+point 206.37000000000012 190.97999999999996 station -name 2019-FD-41@solitaire
 
 endscrap
 
