@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 234.75 174.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 241.25 174.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {72.622 1 1.0} {22.0745 LP35} LP35-map.xvi 0 {}
 
@@ -9,7 +9,7 @@ scrap LP35-1 -projection plan -author 2002 "Bernard Lips" -author 2011 "Xavier R
 
 point 35.75 9.5 label -text "-53 m"
 
-point 105.5 17.75 label -text "LP35" -scale xl
+point 112.0 13.25 label -text "<bf>LP35" -scale xl
 
 point 79.75 45.5 height -value [-14 m]
 
@@ -19,9 +19,9 @@ point 96.0 28.75 height -value [-17 m]
 
 point 93.5 17.75 entrance -orientation 300.0
 
-point 70.0 10.25 altitude
+point 69.5 17.5 altitude -align bottom
 
-point 18.5 28.25 altitude
+point 36.5 29.5 altitude -align top-left
 
 point 30.75 19.25 continuation
 
@@ -56,6 +56,7 @@ endline
 line pit
   71.75 26.0
   71.75 26.0 82.75 24.75 84.75 29.0
+  smooth off
 endline
 
 line overhang -close on

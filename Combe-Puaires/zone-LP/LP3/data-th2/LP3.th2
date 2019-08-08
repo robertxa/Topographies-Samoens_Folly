@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -186.25 -127.9945 205.25 225.5
+##XTHERION## xth_me_area_adjust -178.0 -128.75 195.0 225.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {-22.0419 1 1.0} {45.1632 0} ../LP3-map.xvi 0 {}
 
@@ -29,9 +29,9 @@ point -38.0 59.25 label -text "Etr."
 
 point -15.75 63.5 label -text "Etr."
 
-point -57.0 40.0 altitude
+point -30.5 39.5 altitude -align bottom
 
-point 76.0 73.75 altitude
+point 54.5 72.5 altitude -align right
 
 point -0.25 79.5 label -orientation 334.0 -text "méandre"
 
@@ -39,7 +39,7 @@ point 30.5 78.0 label -text "R5"
 
 point 50.0 57.5 label -text "P12"
 
-point 65.75 96.25 label -text "LP3" -scale xl
+point 65.75 96.25 label -text "<bf>LP3" -scale xl
 
 point -8.75 38.5 low-end -orientation 269.8
 
@@ -49,7 +49,7 @@ point 40.75 47.5 narrow-end -orientation 258.0
 
 point -25.75 60.25 continuation
 
-point -40.25 36.5 continuation
+point -48.75 37.5 continuation -attr Code D -text "étroiture à désobstruer ; courant d'air"
 
 point -43.0 47.0 air-draught -orientation 304.0 -subtype summer
 
@@ -62,6 +62,7 @@ point 57.0 86.5 entrance -orientation 228.8
 line pit
   33.25 41.0
   33.25 41.0 32.75 48.25 30.5 49.75
+  smooth off
 endline
 
 line pit

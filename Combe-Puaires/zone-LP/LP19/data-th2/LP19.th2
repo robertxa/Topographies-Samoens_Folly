@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 271.5 403.5907
+##XTHERION## xth_me_area_adjust -128.75 -128.75 271.5 403.5887
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {52.7264 1 1.0} {148.074 0} LP19-map.xvi 0 {}
 
@@ -34,7 +34,7 @@ point 64.5 153.25 narrow-end -orientation 48.6
 
 point 72.75 148.75 label -text "P8"
 
-point 142.25 129.25 label -text "LP19" -scale xl
+point 142.25 129.25 label -text "<bf>LP19" -scale xl
 
 point 103.0 166.75 label -text "P6"
 
@@ -42,7 +42,7 @@ point 89.0 136.5 label -text "P33"
 
 point 95.25 106.0 label -text "P26"
 
-point 116.75 111.75 altitude
+point 115.25 119.5 altitude -align bottom-right
 
 point 127.75 125.5 entrance -orientation 262.2
 
@@ -198,9 +198,9 @@ point 33.75 191.75 label -text "R5"
 
 point 25.5 155.25 label -text "P30"
 
-point 99.5 204.0 altitude
+point 94.5 195.75 altitude -align top
 
-point 34.0 140.0 altitude
+point 44.5 146.25 altitude -align bottom-left
 
 point 60.5 132.75 narrow-end -orientation 328.9
 
