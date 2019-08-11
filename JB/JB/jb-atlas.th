@@ -132,6 +132,9 @@ centerline
 	input Drawing-th2/solitaire-plan.th2
     input Drawing-th2/solitaire-plan2017.th2
     input Drawing-th2/solitaire2018.th2
+    input Drawing-th2/solitaire2019_1.th2
+    input Drawing-th2/solitaire2019_2.th2
+    
     
     input Drawing-th2/siphons.th2
 
@@ -214,7 +217,8 @@ centerline
        #join solitaire_plan 
      join solitaire_plan sol2017-1 -count 2
      join Solitaire-c-2018_2 solitaire_plan
-     
+	join solitaire2019-SP1 Solitaire-c-2018_3
+     join solitaire2019-SP2 sol2017-1
      join sezhommes2 S1
      
 

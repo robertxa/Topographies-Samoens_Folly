@@ -141,6 +141,8 @@ centerline
 	input Drawing-th2/Erreur-coupe.th2
 	input Drawing-th2/P11-coupe.th2
 	input Drawing-th2/solitaire-coupe2017.th2
+	input Drawing-th2/solitaire2019-coupe1.th2
+	input Drawing-th2/solitaire2019-coupe2.th2
 	input Drawing-th2/siphons-coupe.th2
 	input Drawing-th2/FileOu-coupe.th2
 
@@ -176,3 +178,6 @@ join berreurc1 maisc1
 #join berreurc1 ??
 join avalc1 S1-c
 join fileouc1 lavoirc5
+#join Solitaire-c_2018-1 solitaire2019-SC1 #Solitaire2018-SC1
+join sol-C1 solitaire2019-SC2
+
