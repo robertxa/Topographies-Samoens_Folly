@@ -328,7 +328,7 @@ centerline -title "JBSolitaire 2019 : 2018-FD-19_2019-FD-19	2019-FD-39_2019-FD-4
 endcenterline
 
 centerline -title "JBSolitaire 2019b : 2019-FD-40_2019-FD-41	2019-FD-565_2019-FD-566"
-	#  Suite de l'explo 2018 vers l'aval du Solitaire, à partir du point 2018-FD-19
+	#  Suite de l'explo 2019 vers l'aval du Solitaire, à partir du point 2019-FD-40
 	date 2019.07.20
 		team "Frédéric Delègue"
 		team "Guillaume Cerdan"
@@ -362,7 +362,7 @@ centerline -title "JBSolitaire 2019b : 2019-FD-40_2019-FD-41	2019-FD-565_2019-FD
 	2019-FD-56	2019-FD-57	12.51	273	-22	2	2.1	5	12	# Tête de puits
 	2019-FD-57	2019-FD-58	12	0	-90	1.3	1.4	13	1	# P12
 	2019-FD-58	2019-FD-59	8.57	166	3	1.8	1.8	4.7	1	
-	2019-FD-59	2019-FD-60	8.25	168	-15	0	0	0	0	# Tête de puits ; Arrêt topo au droit d'une colonne en rive droite
+	2019-FD-59	2019-FD-60	8.25	168	-15	1.9	1.2	4.2	1.5	# Tête de puits ; Arrêt topo au droit d'une colonne en rive droite
 	extend right
 	2019-FD-56	2019-FD-561	11.04	153	-50	1.3	0.5	1	0.5	# Départ à partir du point 56
 	2019-FD-561	2019-FD-562	13.37	153	-39	4.2	1.5	2.4	1	
@@ -375,6 +375,49 @@ centerline -title "JBSolitaire 2019b : 2019-FD-40_2019-FD-41	2019-FD-565_2019-FD
 	
 endcenterline
 
+centerline -title "JBSolitaire 2019c : 2019-FD-60_2019-FD-60b	2019-FD-78_2019-FD-79"
+	#  Suite de l'explo 2019 vers l'aval du Solitaire, à partir du point 2019-FD-60
+	date 2019.08.10
+		team "Frédéric Delègue"
+		team "Clément Baudy"
+	explo-date 2019.08.10
+		explo-team "Frédéric Delègue"
+		explo-team "Clément Baudy"
+	units length meters
+	units compass degrees
+  	units clino degrees
+
+	data normal from to length compass clino left right up down
+	extend left
+	#2019-FD-60	2019-FD-60b	0	0	0	1.9	1.2	4.2	1.5	# Départ topo au niveau du point 2019-FD-60 du 20/07/2019
+	2019-FD-60	2019-FD-61	20.05	189	-62	2.3	2.7	5.8	1	# Blocs en hauteur
+	2019-FD-61	2019-FD-62	5.6	218	-28	1.8	3.2	6	1	# Tête du P13
+	extend right
+	2019-FD-61	2019-FD-63	9.4	356	-33	2	1	7	1	# Trémie pénétrable ; Point sur la Trémie
+	extend left
+	2019-FD-62	2019-FD-64	13.24	0	-90	1	1.4	1.2	1	# Base du P13
+	extend right
+	2019-FD-64	2019-FD-65	9.3	2	20	1.8	0.7	4.4	1	# Point 65 sous la Trémie ; Perte de l'actif du Solitaire
+	extend left
+	2019-FD-64	2019-FD-66	15.29	135	-4	1	0.5	14	1	# Conglomérats ; Modification point départ 65 en point 64
+	2019-FD-66	2019-FD-67	7	177	-8	0.5	0.5	3.6	1	
+	2019-FD-67	2019-FD-68	11.6	240	7	4.2	0.9	9	1	# Blocs
+	2019-FD-68	2019-FD-69	8.17	208	-4	1.35	0.5	7.3	0.5	# Vire de 6 m
+	2019-FD-69	2019-FD-70	6.51	193	-20	0.2	1.4	5.1	1	# Tête P11 = puits du Complex"e
+	2019-FD-70	2019-FD-71	11.66	0	-90	0.4	0.7	13	1	# Base P11
+	2019-FD-71	2019-FD-72	4.83	225	3	1.1	1.6	3.6	1	# Eboulement ; Impénétrable
+	extend right
+	2019-FD-71	2019-FD-73	9	20	-2	0.6	0.6	6.7	1	
+	2019-FD-73	2019-FD-74	4.8	6	-5	1	1.3	6.4	1	
+	2019-FD-74	2019-FD-75	9.7	12	-52	0.6	0.6	3.2	1	# Chatière et R5
+	2019-FD-75	2019-FD-76	10.38	43	-19	0	0	0	0	# Arrêt topo au sommet d'un P6 ; Cairn ; Vers l'actif du Solitaire ?
+	2019-FD-65	2019-FD-77	10.25	103	0	1.5	1	5.4	1	
+	2019-FD-77	2019-FD-78	3.75	143	0	0.2	1.8	11.4	0.5	# Base puits remontant
+	2019-FD-78	2019-FD-79	11.4	0	90	0	0	0	0	# Tête Puits Remontant ; Ce réseau rejoint probablement la station 562 du 20/07/2019
+																			
+# Dev = 181.93 m
+
+endcenterline
 
 endsurvey
 

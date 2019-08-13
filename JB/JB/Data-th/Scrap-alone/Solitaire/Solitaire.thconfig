@@ -99,16 +99,16 @@ layout layout_coupe
 	opacity 75
 	language fr
 	map-comment "Réseau du solitaire"
-	symbol-hide line survey
-	#debug station-names
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 22.5 cm
-	map-header 0 -20 nw
+	legend-width 26  cm
+	map-header 35 45 nw
 	map-header-bg off
 	layers on
+	symbol-hide line survey
+	#debug station-names	
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  
@@ -133,8 +133,8 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019b.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019b.xvi
+	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019c.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019c.xvi
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2019.pdf

@@ -4,17 +4,13 @@ survey Lavoir -title "Lavoir"
         
  centerline -title "Lavoir 2012-xa-0_2012-xa-0double 2012-xa-41_2012-xa-10"
    date 2012.01.14
-#   declination 0.0000  degrees
-  #team "G.S. Vulcain"
   team "Xavier Robert"
-  team "Arnaud Malard"
-  #team "SC Epia"
+  team "Arnauld Malard"
   explo-date 1977.08.06
   explo-date 1977.08.07
   explo-date 1977.08.09
   explo-date 1977.08.10
   explo-date 1977.08.11
-  #explo-team "G.S. Vulcain"
   explo-team "Bernard Lips"
   explo-team "Josiane Lips"
   explo-team "Jean-Luc Dinard"
@@ -91,17 +87,13 @@ endcenterline
 
  centerline -title "Lavoir 2012-xa-7_2012-SL1 2012-SL27_2012-SL28"
    date 2012.02.25
-#   declination 0.0000  degrees
-  #team "G.S. Vulcain"
   team "Stéphane Lips"
   team "Eric Revolle"
   team "Patricia Gentil"
   explo-date 1979.08.12
-  #explo-team "G.S. Vulcain"
   explo-team "Philippe Lavabre" # LP ?
   explo-team "Jean-Philippe Faubert"
   explo-date 1984.07.24
-  #explo-team "G.S. Vulcain"
   explo-team "Jean-Bernard/de Chabelier"
   explo-team "Thierry Millet"
    calibrate counter 0 0.500
@@ -152,23 +144,18 @@ endcenterline
 
 centerline -title "Lavoir 2012-SL28_2012-SL91 2012-SL100_2012-SL101"
    date 2012.02.25
-#   declination 0.0000  degrees
- # team "G.S. Vulcain"
   team "Eric Revolle"
   team "Antoine Aigueperse"
   team "Patricia Gentil"
   explo-date 2006.02.15
- # explo-team "G.S. Vulcain"
   explo-team "Xavier Robert"
   explo-team "Stéphane Lips"
   explo-team "Bernard Lips"
   explo-date 2012.02.25
- # explo-team "G.S. Vulcain"
   explo-team "Stéphane Lips"
   explo-team "Eric Revolle"
   explo-team "Antoine Aigueperse"
   explo-team "Patricia Gentil"
- # explo-team "USAN"
   explo-team "David Parrot" 
    units lenght meters
    units compass grad
@@ -200,18 +187,12 @@ endcenterline
 
  centerline -title "Lavoir 2012b-xa-0_2012-SL7 2012b-xa-18_2012b-xa-19"
    date 2012.03.31
-#   declination 0.0000  degrees
-#  team "G.S. Vulcain"
   team "Xavier Robert"
   team "Clément Baudy"
   explo-date 2012.02.25
-#  explo-team "G.S. Vulcain"
-#  explo-team "USAN"
   explo-team "Stéphane Lips"
   explo-team "David Parrot"
   explo-date 2012.03.31
-#  explo-team "G.S. Vulcain"
-#  explo-team "USAN"
   explo-team "Stéphane Lips"
   explo-team "David Parrot"
   explo-team "Xavier Robert"
@@ -255,13 +236,9 @@ endcenterline
 
  centerline -title "Lavoir 2012b-xa-20_2012b-xa-20bis 2012b-xa-42_2012b-xa-19"
    date 2012.03.31
-#   declination 0.0000  degrees
-#  team "G.S. Vulcain"
   team "Xavier Robert"
   team "Clément Baudy"
   explo-date 2012.03.31
- # explo-team "G.S. Vulcain"
- # explo-team "USAN"
   explo-team "Stéphane Lips"
   explo-team "David Parrot"
   explo-team "Lucille Delacour"
@@ -342,12 +319,9 @@ endcenterline
 centerline -title "Lavoir Sec Xa-2013a-0_2012-xa-8 Xa-2013a-17_2012b-xa-1"
      #Raccourci - Lavoir sec
    date 2013.01.05
-#   declination 0.0000  degrees
-#  team "G.S. Vulcain"
   team "Xavier Robert"
   team "Frédéric Delègue"
   explo-date 1984.03.24
- # explo-team "G.S. Vulcain"
   explo-team "Thierry Millet"
   explo-team "Jean-Bernard/de Chabelier"
    
@@ -391,26 +365,16 @@ endcenterline
 centerline -title "Lavoir explos 2006-2012 Xa-2013b-0_2012b-xa-42 Xa-2013b-19_2012-SL28"
      #Lavoir 2006-2012
    date 2013.01.05
-#   declination 0.0000  degrees
-#  team "G.S. Vulcain"
   team "Xavier Robert"
   team "Frédéric Delègue"
-#  explo-date 206.02.15
-#  explo-team "G.S. Vulcain"
   explo-team "Xavier Robert"
   explo-team "Stéphane Lips"
   explo-team "Josiane Lips"
-#  explo-date 2007.02.15
-#  explo-team "G.S. Vulcain"
   explo-team "Xavier Robert"
   explo-team "Stéphane Lips"
   explo-team "Bernard Lips"
-#  explo-date 2012.02.02
-#  explo-team "G.S. Vulcain"
   explo-team "Stéphane Lips"
   explo-team "Arnauld Malard"
-#  explo-date 2012.03.03
-#  explo-team "G.S. Vulcain"
   explo-team "Stéphane Lips"
   explo-team "David Parrot"
    calibrate counter 0 0.500
@@ -456,48 +420,39 @@ endcenterline
    date 1976.03.01
  #  declination -3.0146 degrees
 
-#  team "G.S. Vulcain"
   team "Bernard Lips"
   team "Josiane Lips"
   team "Paul Courbon"
 
   explo-date 1976.03.06
-#  explo-team "G.S. Vulcain"
   explo-team "Bernard Lips"
   explo-team "Josiane Lips"
   explo-team "Paul Courbon"
   explo-date 1977.01.01
-#  explo-team "G.S. Vulcain"
   explo-team "Jean-Luc Thevenin"
   explo-team "Yves Bally"
   explo-team "Jean-Pierre Stéphanato"
   explo-date 1977.11.08
- # explo-team "G.S. Vulcain"
   explo-team "Benoît/le Falher"
   explo-team "Gérard Protat"
   explo-date 1977.11.08
- # explo-team "G.S. Vulcain"
   explo-team "Bernard Lips"  
   explo-team "Benoît/le Falher"
 
   explo-date 1979.02.23
-#  explo-team "G.S. Vulcain"
   explo-team "Bernard Lips"  
   explo-team "Benoît/le Falher"
 
   explo-date 1979.02.24
-#  explo-team "G.S. Vulcain"
   explo-team "Pierre Rias"  
   explo-team "Christian Rigaldie"
 
   explo-date 1979.02.25
-#  explo-team "G.S. Vulcain"
   explo-team "Bernard Lips"  
   explo-team "Josiane Lips"
   explo-team "Benoît/le Falher"
 
   explo-date 1979.03.04
-#  explo-team "G.S. Vulcain"
   explo-team "Bernard Lips"  
   explo-team "Josiane Lips"
   explo-team "Jean-Philippe Faubert"
@@ -529,12 +484,10 @@ endcenterline
 
  centerline -title "Lavoir 2013-SL1-0_2013-SL1-0bis 2013-SL1-21_2013-SL1-22"
 	date 2013.07.15
-#	team "G.S. Vulcain"
 	team "Stéphane Lips"
 	team "David Parrot"
 	team "Lucille Delacour"
 	explo-date 2013.07.15
-#	explo-team "G.S. Vulcain"
 	explo-team "Stéphane Lips"
 	explo-team "David Parrot"
 	explo-team "Lucille Delacour"
@@ -613,15 +566,12 @@ endcenterline
 
 centerline -title "Lavoir-cookies 2015-FD2.0_2015-FD2.0bis 2013-SL1-21_2013-SL1-22"
 	date 2015.08.01
-#	team "G.S. Vulcain"
 	team "Frédéric Delègue"
 	team "Guillaume Cerdan"
 	explo-date 2015.08.01
-#	explo-team "G.S. Vulcain"
 	explo-team "Frédéric Delègue"
 	explo-team "Guillaume Cerdan"
 	explo-date 2015.07.14
-#	explo-team "G.S. Vulcain"
 	explo-team "Arnauld Malard"
 	explo-team "Laurence d'Hautefeuille"
 	explo-team "Micka ??"

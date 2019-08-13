@@ -1,24 +1,23 @@
 encoding utf-8
 
- survey shunt-branlots -title "Shunt Branlots"
+survey shunt-branlots -title "Shunt Branlots"
     
- centerline -title "Shunt Branlots 2013-xac-0_2013-xac-0bdouble 2013-xac-13_2013-xac-14"
+centerline -title "Shunt Branlots 2013-xac-0_2013-xac-0bdouble 2013-xac-13_2013-xac-14"
+
    date 2013.06.15
-#   declination 0.0000  degrees
-  team "G.S. Vulcain"
-  team "Xavier Robert"
-  team "Jonathan Mercier"
-  explo-date 2013.06.15
-  explo-team "G.S. Vulcain"
-  explo-team "Cédric Lacharmoise"
-  explo-team "David Parrot"
-  explo-team "Xavier Robert"
-  explo-team "Jonathan Mercier"
-   units lenght meters
-   units compass degrees
-   units clino degrees
-   data normal from to length compass clino left right up down
-   extend right
+		team "Xavier Robert"
+		team "Jonathan Mercier"
+	explo-date 2013.06.15
+		explo-team "Cédric Lacharmoise"
+		explo-team "David Parrot"
+		explo-team "Xavier Robert"
+		explo-team "Jonathan Mercier"
+
+	units lenght meters
+	units compass degrees
+	units clino degrees
+	data normal from to length compass clino left right up down
+	extend right
 
 #Point depart	Point arrivee	L	A	P	G	D	H	B	Rem
 	2013-xac-0	2013-xac-0double	0	0	0	3	3	3	0	# Base du puits, jonction dans CF, a voir pour bouclage topo
