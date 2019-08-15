@@ -217,8 +217,8 @@ layout my_layout-coupe
 endlayout
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o DR1-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o DR1-coupe.xvi
+export map -fmt xvi -layout xviexport -o data-th2/DR1-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o data-th2/DR1-coupe.xvi
   
 export map -o DR1-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o DR1-coupe.pdf

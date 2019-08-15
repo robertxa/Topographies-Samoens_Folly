@@ -298,8 +298,8 @@ layout my_layout-coupe
 endlayout 
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o CP1-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o CP1-coupe.xvi
+#export map -fmt xvi -layout xviexport -o data-th2/CP1-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP1-coupe.xvi
  
 export map -projection extended -layout my_layout-coupe -o CP1-coupe2.pdf 
 export map -o CP1-plan2.pdf -layout my_layout

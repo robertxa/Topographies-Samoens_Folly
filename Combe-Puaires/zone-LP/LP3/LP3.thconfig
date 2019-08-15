@@ -115,8 +115,8 @@ layout my_layout-coupe
 
 endlayout  
 
-export map -fmt xvi -layout xviexport -o LP3-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o LP3-coupe.xvi
+export map -fmt xvi -layout xviexport -o data-th2/LP3-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP3-coupe.xvi
   
 export map -o LP3-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o LP3-coupe.pdf

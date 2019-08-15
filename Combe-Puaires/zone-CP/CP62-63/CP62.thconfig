@@ -279,8 +279,8 @@ layout my_layoutcoupe
 endlayout
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o CP62-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o CP62-coupe.xvi
+#export map -fmt xvi -layout xviexport -o data-th2/CP62-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP62-coupe.xvi
  
 #export map -fmt xvi -o cave.xvi -layout morph 
   

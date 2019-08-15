@@ -302,8 +302,8 @@ endlayout
  
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o F3-map2017.xvi
- export map -projection extended -fmt xvi -layout xviexport -o F3-coupe2017.xvi
+ export map -fmt xvi -layout xviexport -o th2/F3-map2017.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o th2/F3-coupe2017.xvi
   
  export map -o Outputs/2D/F3-plan2017.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/2D/F3-coupe2017.pdf

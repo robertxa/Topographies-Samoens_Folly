@@ -14,6 +14,7 @@ encoding  utf-8
 # "nomcavite.th2")
 source data-th/CP19.th
 source data-th2/CP19.th2
+source data-th2/CP19-coupe.th2
 
 # Add config file
 input ../../../config.thc 
@@ -102,7 +103,7 @@ layout my_layout
 	# seulement la legende des symboles dessines sur la topo, si l on veut
 	# pour tous les symboles, utilises ou pas, il faut indiquer "all".
 	# "legend off" = pas de legende
-	legend on
+	legend off
 	
 	# Par defaut, la legende est de 14 cm de largeur
 	#	legend-width 14 cm
@@ -208,8 +209,8 @@ layout my_layout-coupe
 endlayout
 	
 # 3-EXPORTS	
-export map -fmt xvi -layout xviexport -o CP19-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o CP19-coupe.xvi
+export map -fmt xvi -layout xviexport -o data-th2/CP19-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP19-coupe.xvi
 	
 export map -o CP19-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CP19-coupe.pdf

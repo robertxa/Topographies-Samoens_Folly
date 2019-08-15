@@ -102,7 +102,7 @@ input ../../../config.thc
    # seulement la legende des symboles dessines sur la topo, si l on veut
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
-  legend on
+  legend off
   
    # Par defaut, la legende est de 14 cm de largeur
 	legend-width 14.5 cm
@@ -170,7 +170,7 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	doc-title "CP6 coupe"
-	base-scale 1 1000
+	base-scale 1 1250
 	scale-bar 100 m
 	scale 1 1000
 	#origin 12 22 0 m
@@ -216,8 +216,8 @@ layout my_layout-coupe
 endlayout  
 
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o CP6-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o CP6-coupe.xvi
+ export map -fmt xvi -layout xviexport -o data-th2/CP6-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP6-coupe.xvi
   
  export map -o CP6-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o CP6-coupe.pdf

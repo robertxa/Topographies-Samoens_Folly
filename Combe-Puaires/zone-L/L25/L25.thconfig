@@ -118,8 +118,8 @@ layout my_layout-coupe
 	endcode  
 
 endlayout  
-export map -fmt xvi -layout xviexport -o L25-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o L25-coupe.xvi
+export map -fmt xvi -layout xviexport -o data-th2/L25-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o data-th2/L25-coupe.xvi
   
 export map -o L25-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o L25-coupe.pdf
