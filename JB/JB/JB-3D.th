@@ -161,6 +161,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     input Drawing-th2/solitaire2018.th2
     input Drawing-th2/solitaire2019_1.th2
     input Drawing-th2/solitaire2019_2.th2
+    input Drawing-th2/solitaire2019_3.th2
     
     input Drawing-th2/siphons.th2
  # Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
@@ -236,8 +237,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
      #join Goure2015b-4 Goure2015a
      #join Gourance2015b-1 Gourance2014-4
      
-     join solitaire_plan sol2017-1 -count 2
-     join solitaire2019-SP1 Solitaire-c-2018_3
-     join solitaire2019-SP2 sol2017-1
-     join sezhommes2 S1
+	join solitaire_plan sol2017-1 -count 2
+	join solitaire2019-SP1 Solitaire-c-2018_3
+	join solitaire2019-SP2 sol2017-1
+	join Solitaire-SP-2019c1 Sol_SP2019b_1
+
+	join sezhommes2 S1
    

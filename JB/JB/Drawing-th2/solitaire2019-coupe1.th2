@@ -346,8 +346,6 @@ scrap Sol-SC2019b-1 -projection extended -author 2019 "Xavier Robert" -copyright
 
 point 127.0 -63.5 altitude -align bottom-right
 
-point -180.25 -33.75 altitude -align bottom-right
-
 point -102.75 -5.25 height -value [-14 m]
 
 point 57.25 86.75 height -value [-8 m]
@@ -375,8 +373,6 @@ point 162.25 -42.25 continuation -attr Code D -text "Galerie à explorer après 
 point 92.25 -77.25 continuation -attr Code D -text "Galerie à explorer après désob ; bruit de rivière"
 
 point -43.0 -48.0 continuation -attr Code P -text "Puits à descendre"
-
-point -205.25 -49.0 continuation -attr Code P -text "Puits à descendre"
 
 line u:rope
   -110.75 28.0
@@ -446,14 +442,15 @@ line wall
 endline
 
 line wall
-  -186.25 -72.25
-  -186.25 -72.25 -189.75 -36.0 -180.25 -33.75
-  -170.75 -31.5 -166.25 -29.75 -154.0 -30.25
+  -188.75 -37.75
+  -179.25 -35.5 -166.25 -29.75 -154.0 -30.25
+  smooth off
 endline
 
 line wall -subtype debris
   -154.0 -30.25
   -141.75 -30.75 -124.0 -31.75 -119.75 -31.0
+  smooth off
 endline
 
 line wall
@@ -509,9 +506,7 @@ line wall
   -108.25 41.75 -121.75 41.5 -127.75 40.0
   -133.75 38.5 -133.5 29.25 -143.25 17.75
   -153.0 6.25 -148.0 -4.0 -157.0 -7.75
-  -166.0 -11.5 -184.75 -17.25 -190.75 -17.75
-  -196.75 -18.25 -204.25 -22.75 -204.25 -24.5
-  smooth off
+  -166.0 -11.5 -190.25 -18.75 -196.25 -19.25
 endline
 
 line wall

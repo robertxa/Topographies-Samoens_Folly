@@ -14,6 +14,7 @@ encoding  utf-8
 # "nomcavite.th2")
 source data-th/CP3.th
 source data-th2/CP3.th2
+source data-th2/CP3-coupe.th2
 
 # Add config file
 input ../../../config.thc
@@ -168,7 +169,7 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	doc-title "CP3 coupe"
-	base-scale 1 1000
+	base-scale 1 1250
 	scale-bar 100 m
 	scale 1 1000
 	#origin 12 22 0 m
@@ -214,8 +215,8 @@ layout my_layout-coupe
 endlayout
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o CP3-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o CP3-coupe.xvi
+export map -fmt xvi -layout xviexport -o data-th2/CP3-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP3-coupe.xvi
   
 export map -o CP3-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CP3-coupe.pdf
