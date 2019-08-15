@@ -1,0 +1,168 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 442.9608 246.1103
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {292.027 1 1.0} {108.5003 0} CP15-coupe.xvi 0 {}
+
+
+
+scrap CP15-SC1 -projection extended -author 1979 "Bernard Lips" -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+point 296.25 106.75 altitude -align bottom-right
+
+line border
+  90.75 55.25
+  90.75 55.25 104.5 55.25 109.25 55.25
+  114.0 55.25 124.0 57.75 124.0 57.75
+  smooth off
+endline
+
+line border
+  50.5 58.0
+  50.5 58.0 62.5 58.25 65.75 58.25
+  69.0 58.25 81.25 58.75 81.25 58.75
+  smooth off
+endline
+
+line border
+  203.0 96.0
+  203.0 96.0 217.0 97.5 220.0 98.5
+endline
+
+point 297.5 108.75 breakdown-choke
+
+point 307.25 113.75 narrow-end
+
+point 169.5 63.5 label -text "R5"
+
+point 15.5 80.5 label -text "<bf>CP15" -scale xl
+
+point 25.0 58.0 entrance -orientation 102.3
+
+line u:rope -clip off
+  43.5 58.0
+  43.5 58.0 38.25 51.0 35.75 55.25
+  35.29 56.03 29.75 18.25 29.75 18.25
+  smooth off
+endline
+
+line wall -subtype invisible
+  39.5 75.0
+  39.5 75.0 29.75 39.25 30.0 31.75
+  30.25 24.25 33.5 15.25 33.5 15.25
+  smooth off
+endline
+
+point 20.75 39.5 height -value [+15 m]
+
+point 43.5 49.75 altitude -align bottom-right
+
+line wall
+  33.5 15.25
+  33.5 15.25 32.25 23.25 33.25 24.75
+  34.25 26.25 36.0 26.75 36.25 29.5
+  36.5 32.25 34.5 35.5 36.75 37.5
+  39.0 39.5 37.25 45.0 38.0 46.25
+  38.75 47.5 40.75 48.75 43.5 49.75
+  46.25 50.75 60.5 48.75 66.75 49.5
+  73.0 50.25 88.75 49.0 98.5 49.25
+  108.25 49.5 115.5 49.5 124.5 49.5
+  133.5 49.5 144.75 48.75 146.25 52.5
+  147.75 56.25 151.75 65.75 156.25 69.25
+  160.75 72.75 164.0 76.5 171.5 79.0
+  179.0 81.5 192.25 84.75 199.25 87.25
+  206.25 89.75 213.5 91.75 220.5 92.75
+  227.5 93.75 231.75 94.5 236.75 96.25
+  241.75 98.0 245.25 100.75 251.5 100.75
+  257.75 100.75 261.75 101.25 266.0 102.75
+  270.25 104.25 270.5 104.5 276.0 105.0
+  281.5 105.5 283.0 105.75 287.25 106.25
+  291.5 106.75 296.25 106.75 296.25 106.75
+  smooth off
+endline
+
+line wall
+  296.5 110.5
+  296.5 110.5 284.5 110.5 282.25 110.5
+  280.0 110.5 276.75 109.25 272.5 109.0
+  268.25 108.75 266.0 107.5 261.25 107.0
+  256.5 106.5 256.0 106.5 250.25 105.75
+  244.5 105.0 239.75 104.0 235.75 103.75
+  231.75 103.5 229.0 103.75 224.0 103.75
+  219.0 103.75 203.25 102.75 200.0 101.0
+  196.75 99.25 187.5 101.5 178.25 97.5
+  169.0 93.5 158.5 87.5 154.75 86.0
+  151.0 84.5 148.0 82.25 143.25 80.0
+  138.5 77.75 132.5 66.25 125.0 66.0
+  117.5 65.75 86.0 65.0 80.75 65.5
+  75.5 66.0 71.25 66.5 66.0 66.5
+  60.75 66.5 52.5 65.25 48.75 65.25
+  45.0 65.25 40.25 65.0 40.0 67.0
+  39.75 69.0 39.5 75.0 39.5 75.0
+  smooth off
+endline
+
+point 285.687 108.5003 station -name 1@CP15
+
+point 292.027 108.5003 station -name 0@CP15
+
+point 282.387 108.7803 station -name 2@CP15
+
+point 277.547 107.4003 station -name 3@CP15
+
+point 263.157 104.2903 station -name 5@CP15
+
+point 271.337 106.6503 station -name 4@CP15
+
+point 260.197 103.3503 station -name 6@CP15
+
+point 256.197 103.0703 station -name 7@CP15
+
+point 251.55700000000002 103.2303 station -name 8@CP15
+
+point 242.247 101.5703 station -name 9@CP15
+
+point 237.767 100.94030000000001 station -name 10@CP15
+
+point 230.797 99.4903 station -name 11@CP15
+
+point 220.627 101.6103 station -name 12@CP15
+
+point 200.377 97.6803 station -name 13@CP15
+
+point 195.577 93.6603 station -name 14@CP15
+
+point 187.187 91.8903 station -name 15@CP15
+
+point 170.447 81.8103 station -name 16@CP15
+
+point 157.587 81.1403 station -name 17@CP15
+
+point 149.897 76.1403 station -name 18@CP15
+
+point 144.247 76.6503 station -name 19@CP15
+
+point 140.527 55.5503 station -name 20@CP15
+
+point 130.30700000000002 63.2703 station -name 21@CP15
+
+point 111.237 59.8803 station -name 22@CP15
+
+point 99.06700000000001 59.8803 station -name 23@CP15
+
+point 88.797 59.720299999999995 station -name 24@CP15
+
+point 81.727 61.610299999999995 station -name 25@CP15
+
+point 72.587 63.0703 station -name 26@CP15
+
+point 65.12700000000001 63.5803 station -name 27@CP15
+
+point 54.437 62.4403 station -name 28@CP15
+
+point 49.387 61.220299999999995 station -name 29@CP15
+
+point 39.367000000000004 51.1803 station -name CP15@CP15
+
+endscrap
+
+
