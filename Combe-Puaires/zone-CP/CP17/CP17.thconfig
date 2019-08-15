@@ -13,6 +13,7 @@ encoding  utf-8
   # "nomcavite.th2")
  source data-th/CP17.th
  source data-th2/CP17.th2
+ source data-th2/CP17-coupe.th2
 
 # Add config file
 input ../../../config.thc 
@@ -164,9 +165,9 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	doc-title "CP17 coupe"
-	base-scale 1 750
-	scale-bar 50 m
-	scale 1 500
+	base-scale 1 1250
+	scale-bar 100 m
+	scale 1 1000
 	#origin 12 22 0 m
 	#origin-label 100 K
 	#color map-bg 85
@@ -180,7 +181,7 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 30 93 ne
+	map-header 10 100 ne
 	symbol-hide line survey
 	#debug station-names
 	map-header-bg off
@@ -210,8 +211,8 @@ layout my_layout-coupe
 endlayout
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o CP17-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o CP17-coupe.xvi
+export map -fmt xvi -layout xviexport -o data-th2/CP17-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP17-coupe.xvi
   
 export map -o CP17-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CP17-coupe.pdf
