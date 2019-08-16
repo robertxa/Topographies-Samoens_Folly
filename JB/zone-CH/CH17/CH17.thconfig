@@ -20,6 +20,9 @@ source CH17-tot.th
 #source CH17.th2
 #source CH17-coupe.th2
 #source CH17-coupe2018.th2
+
+# Add maps definitions
+source CH17-maps.th
     
 # Add config file
 input ../../../config.thc
@@ -296,6 +299,14 @@ endlayout
  # 3-EXPORTS   
  export map -fmt xvi -layout xviexport -o CH17-map2018.xvi
  export map -projection extended -fmt xvi -layout xviexport -o CH17-coupe2018.xvi
+ 
+ # Select maps
+ 	#select CH17-2003-plan
+	#select CH17-2003-coupe
+	#select CH17-2018-plan
+	#select CH17-2018-coupe
+	select CH17-plan-tot
+	select CH17-coupe-tot
   
  export map -o CH17-plan2018.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o CH17-coupe2018.pdf

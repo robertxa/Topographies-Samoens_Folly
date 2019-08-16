@@ -4,6 +4,9 @@ source CH22.th
 source CH22.th2
 source CH22-coupe.th2
 
+# Add maps definitions
+source CH22-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -133,6 +136,11 @@ endlayout
   
 #export map -fmt xvi -layout xviexport -o CH22-plan.xvi
 export map -projection extended -fmt xvi -layout xviexport -o CH22-coupe.xvi
+
+# Select maps
+	select CH22-plan-tot
+	select CH22-coupe-tot
+	
 export map -o CH22-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CH22-coupe.pdf
 # Export des fichiers ESRI

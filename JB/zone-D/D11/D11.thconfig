@@ -17,6 +17,9 @@ source D11.th
 source D11.th2
 source D11-coupe.th2
 
+# Add maps definitions
+source D11-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -103,7 +106,7 @@ layout my_layout
 	# seulement la legende des symboles dessines sur la topo, si l on veut
 	# pour tous les symboles, utilises ou pas, il faut indiquer "all".
 	# "legend off" = pas de legende
-	legend on
+	legend off
   
 	# Par defaut, la legende est de 14 cm de largeur
 	#legend-width 14 cm
@@ -224,7 +227,7 @@ layout my_layout-coupe
 	# seulement la legende des symboles dessines sur la topo, si l on veut
 	# pour tous les symboles, utilises ou pas, il faut indiquer "all".
 	# "legend off" = pas de legende
-	legend on
+	legend off
   
 	# Par defaut, la legende est de 14 cm de largeur
 	#legend-width 14 cm
@@ -281,7 +284,11 @@ endlayout
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o D11-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o D11-coupe.xvi
-  
+
+# Select maps
+	select D11-plan-tot
+	select D11-coupe-tot
+	  
 export map -o D11-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o D11-coupe.pdf
 export model -o D11.lox

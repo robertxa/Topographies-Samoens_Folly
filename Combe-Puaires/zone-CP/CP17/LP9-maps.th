@@ -1,0 +1,57 @@
+encoding  utf-8
+
+#map JB-rev
+#		Voltigeurs-amonts
+#	break
+#		voltigeurs
+#		preview below JB-amonts
+#endmap
+
+
+map CP39-plan	# plan du CP39
+	CP39-1
+	CP39-2
+	CP39-3
+	CP39-4
+	CP39-5
+	CP39-6
+	CP39-7
+	CP39-8
+	CP39-9
+endmap
+
+map CP39-coupe
+	CP39-Sc1
+	CP39-SC2
+	CP39-SC3
+	CP39-SC4
+	
+endmap
+
+map LP9-plan-actif
+	LP9-1
+	LP9-2
+	LP9-3
+	LP9-4
+	LP9-5
+	LP9-7
+endmap
+
+map LP9-coupe-actif
+	LP9-Sc1
+	LP9-SC2
+	LP9-Sc3
+	
+endmap
+
+
+map LP9-plan-tot
+	CP39-plan
+	LP9-plan-actif
+endmap
+
+map LP9-coupe-tot
+	CP39-coupe
+	LP9-coupe-actif
+endmap
+   

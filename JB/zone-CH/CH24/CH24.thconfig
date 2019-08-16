@@ -10,6 +10,9 @@ source CH24.th
 source CH24.th2
 source CH24-coupe.th2
 
+# Add maps definitions
+source CH24-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -121,7 +124,11 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o CH24-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o CH24-coupe.xvi
-  
+
+# Select maps
+	select CH24-plan-tot
+	select CH24-coupe-tot
+	  
 export map -o CH24-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CH24-coupe.pdf
 export model -o CH24.lox

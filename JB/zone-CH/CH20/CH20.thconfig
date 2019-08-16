@@ -4,6 +4,9 @@ source CH20.th
 source CH20-plan.th2
 source CH20-coupe.th2
 
+# Add maps definitions
+source CH20-maps.th
+
 # Add config file
 input ../../../config.thc 
  
@@ -130,6 +133,11 @@ endlayout
   
 #export map -fmt xvi -layout xviexport -o CH20-plan.xvi
 export map -fmt xvi -projection extended -layout xviexport -o CH20-coupe.xvi
+
+# Select maps
+	select CH20-plan-tot
+	select CH20-coupe-tot
+
 export map -o CH20-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CH20-coupe.pdf
 # Export des fichiers ESRI

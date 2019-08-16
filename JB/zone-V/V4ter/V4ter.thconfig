@@ -18,6 +18,9 @@ source V4ter.th
 source V4ter.th2
 source V4ter-coupe.th2
 
+# Add maps definitions
+source V4ter-maps.th
+
 # Add config file
 input ../../../config.thc 
     
@@ -310,7 +313,11 @@ endlayout
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o V4ter-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o V4ter-coupe.xvi
-  
+
+# Select maps
+	select V4ter-plan-tot
+	select V4ter-coupe-tot
+	  
 export map -o V4ter-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o V4ter-coupe.pdf
 export model -o V4ter.lox

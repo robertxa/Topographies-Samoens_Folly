@@ -5,10 +5,12 @@ encoding  utf-8
 # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
 # This work is under the GPLv2
   
-  
 source CH23.th
 source CH23.th2
 source CH23-coupe.th2
+
+# Add maps definitions
+source CH23-maps.th
 
 # Add config file
 input ../../../config.thc 
@@ -123,6 +125,10 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o CH23-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o CH23-coupe.xvi
+
+# Select maps
+	select CH23-plan-tot
+	select CH23-coupe-tot
   
 export map -o CH23-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CH23-coupe.pdf

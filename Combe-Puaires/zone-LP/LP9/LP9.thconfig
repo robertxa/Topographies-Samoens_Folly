@@ -7,6 +7,9 @@ encoding  utf-8
 source data-th/LP9-CP39.th
 source data-th2/LP9-CP39.th2
 source data-th2/LP9-CP39-coupe.th2
+
+# Add maps definitions
+source LP9-maps.th
   
 # Add config file
 input ../../../config.thc 
@@ -41,7 +44,7 @@ layout my_layout
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
-	legend on
+	legend off
 	legend-width 21 cm
 	map-header 0 -10 nw
 	map-header-bg off
@@ -192,6 +195,14 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o data-th2/LP9-CP39-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP9-CP39-coupe.xvi
+
+# Select maps
+	#select CP39-plan			# CP39
+	#select CP39-coupe
+	#select LP9-plan-actif	# LP9 actif
+	#select LP9-coupe-actif
+	select LP9-plan-tot		# Toute le plan du LP9
+	select LP9-coupe-tot
   
 export map -o LP9-CP39-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o LP9-CP39-coupe.pdf

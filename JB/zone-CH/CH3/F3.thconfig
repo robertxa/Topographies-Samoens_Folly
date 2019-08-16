@@ -20,6 +20,9 @@ encoding  utf-8
 #source F3-coupe.th2
 source F3tot.th
 
+# Add maps definitions
+source CH3-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -304,6 +307,16 @@ endlayout
  # 3-EXPORTS   
  export map -fmt xvi -layout xviexport -o th2/F3-map2017.xvi
  export map -projection extended -fmt xvi -layout xviexport -o th2/F3-coupe2017.xvi
+  
+ # Select maps
+ 	#select CH3-1975-plan
+	#select CH3-1975-coupe
+	#select CH3-amonts-plan
+	#select CH3-amonts-coupe
+	#select CH3-aval-plan
+	#select CH3-aval-coupe
+	select CH3-plan-tot
+	select CH3-coupe-tot
   
  export map -o Outputs/2D/F3-plan2017.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/2D/F3-coupe2017.pdf
