@@ -11,8 +11,9 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source data-th/CP6.th
- source data-th2/CP6.th2
+source data-th/CP6.th
+source data-th2/CP6.th2
+source data-th2/CP6-coupe.th2
  
   # Add config file
 input ../../../config.thc 

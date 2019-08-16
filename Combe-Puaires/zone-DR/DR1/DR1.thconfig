@@ -15,6 +15,7 @@ encoding  utf-8
   # "nomcavite.th2")
  source data-th/DR1.th
  source data-th2/DR1.th2
+ source data-th2/DR1-coupe.th2
  
  # Add config file
 input ../../../config.thc 
@@ -172,7 +173,7 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	doc-title "DR1 coupe"
-	base-scale 1 1000
+	base-scale 1 1250
 	scale-bar 100 m
 	scale 1 1000
 	#origin 12 22 0 m
@@ -187,8 +188,9 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend off
+	legend-width 14.5 cm
 	#map-header 5 50 e
-	map-header 0 0 n
+	map-header 50 -5 n
 	symbol-hide line survey
 	map-header-bg off
 	layers on
