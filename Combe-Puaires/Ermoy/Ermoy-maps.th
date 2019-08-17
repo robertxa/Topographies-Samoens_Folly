@@ -1,0 +1,155 @@
+encoding  utf-8
+
+#map JB-rev
+#		Voltigeurs-amonts
+#	break
+#		voltigeurs
+#		preview below JB-amonts
+#endmap
+
+
+map M-Ermoy-Entree-plan
+	Ermoy-entree-1
+	break
+	Aval-sup
+	break
+	Ermoy-entree2
+endmap
+
+map M-Fond-plan
+	dynam-SP1
+	break
+	Desob
+	break
+	siphon_amont
+	break
+	diverticule-fd
+	break
+	P6_1
+	break
+	amont2
+	break
+	bivouac
+	break
+	bof
+	break
+	Ermoy-SPxx
+	break
+	souris
+	break
+	v_bivouac
+	break
+	ermoy-SPyy
+	break
+	ermoy-SPzz
+	break
+	P6_shunt
+endmap
+
+map M-ermoy-rampes-plan
+	Escalades
+	break
+	minirusses
+	break
+	a_sirocco
+	break
+	gd_rampes
+	break
+	siphonP60
+	break
+	gd_rampes2
+	break
+	rampes4
+	break
+	rampes5
+	break
+	rampes_aval
+	break
+	rampes_fin
+	break
+	salle_manger
+	break
+	gd_rampes3
+endmap
+
+map M-ermoy-siphons-plan
+	avalinf
+	break
+	siphon-aval
+	break
+	aval2
+	break
+	aval3
+	break
+	brascas
+	break
+	brascas2
+	break
+	jctaval
+endmap
+
+map MC-ermoy-entree
+	Erm-SC1
+	break
+	Erm-SC3
+	break
+	Erm-SC4
+	break
+	Erm-SC2
+endmap
+
+map MC-ermoy-siphons
+	Erm-SC5
+	break
+	Erm-SC7
+	break
+	Erm-SC8
+	break
+	Erm-SC6
+	break
+	luiro-SC1
+	break
+	luiro-SC2
+endmap
+
+map MC-ermoy-rampes
+	Erm-SC9
+	break
+	MiniR-SC1
+	break
+	Erm-SC10
+	break
+	Erm-SC11
+	break
+	Erm-SC12
+	break
+	Erm-SC13
+endmap
+
+map MC-ermoy-desob
+	Erm-SC14
+	break
+	Erm-SC15
+endmap
+
+#####################################################################
+map Ermoy-plan-tot
+	M-Ermoy-Entree-plan
+	break
+	M-Fond-plan
+	break
+	M-ermoy-rampes-plan
+	break
+	M-ermoy-siphons-plan
+endmap
+
+map Ermoy-coupe-tot
+	MC-ermoy-entree
+	break
+	MC-ermoy-siphons
+	break
+	MC-ermoy-rampes
+	break
+	MC-ermoy-desob
+endmap
+   

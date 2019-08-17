@@ -2,12 +2,15 @@ encoding  utf-8
 
 map CH17-2003-plan
 	CH17_2010-p1
+	break
 	CH17-2
+	break
 	CH17-3
 endmap
 
 map CH17-2003-coupe
 	CH17-coupe1
+	break
 	CH17-coupe2
 endmap
 
@@ -22,11 +25,13 @@ endmap
 
 map CH17-plan-tot
 	CH17-2003-plan
+	break
 	CH17-2018-plan
 endmap
 
 map CH17-coupe-tot
 	CH17-2003-coupe
+	break
 	CH17-2018-coupe
 endmap
    

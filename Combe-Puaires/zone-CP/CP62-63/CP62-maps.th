@@ -7,37 +7,44 @@ encoding  utf-8
 #		preview below JB-amonts
 #endmap
 
-
 map CP62-plan
 	CP62-1
+	break
 	CP62-2
 endmap
 
 map CP62-coupe
 	CP62-c1
+	break
 	CP62-c2
+	break
 	CP62-c3
 endmap
 
 map CP63-plan
 	scrap1-cp62
+	break
 	scrap24-CP62
+	break
 	scrap63-CP62
 endmap
 
 map CP63-coupe
 	CP62-c4
+	break
 	CP62-c5
 endmap
 
 
 map CP62-plan-tot
 	CP62-plan
+	break
 	CP63-plan
 endmap
 
 map CP62-coupe-tot
 	CP62-coupe
+	break
 	CP63-coupe
 endmap
    

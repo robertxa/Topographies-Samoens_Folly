@@ -1,22 +1,23 @@
 encoding  utf-8
+   
+# File written by tro2therion.f90 (Xavier Robert) 
   
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2  
   
- # File written by tro2therion.f90 (Xavier Robert) 
-  
- # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
- # This work is under the GPLv2
-  
-  
- # 1-SOURCES 
- # La ligne source specifie le fichier ou sont les donnees topo
-  # (Au fichier "nomcavite.th" il faudra avoir une ligne
-  # "input "nomcavite.th2" pour specifier le fichier ou se trouvent
-  # les donnees du dessin, comme ça, ce fichier thconfig appelera 
-  # nomcavite.th" et a son tour, "nomcavite.th" appelera
-  # "nomcavite.th2")
- source ermoy.th
- #source Ermoy-MARS-2009.th
- #source Ermoy.th2
+# 1-SOURCES 
+# La ligne source specifie le fichier ou sont les donnees topo
+# (Au fichier "nomcavite.th" il faudra avoir une ligne
+# "input "nomcavite.th2" pour specifier le fichier ou se trouvent
+# les donnees du dessin, comme ça, ce fichier thconfig appelera 
+# nomcavite.th" et a son tour, "nomcavite.th" appelera
+# "nomcavite.th2")
+source ermoy.th
+#source Ermoy-MARS-2009.th
+#source Ermoy.th2
+
+# Add maps definitions
+source Ermoy-maps.th
 
 # Add config file
 input ../../config.thc 
@@ -216,6 +217,10 @@ endlayout
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o Ermoy-MARS-2017-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/Ermoy-MARS-2017-coupe.xvi
+
+# Select maps
+	select Ermoy-plan-tot
+	select Ermoy-coupe-tot
   
 export map -o Ermoy-MARS-2014-plan.pdf -layout my_layout
 #export map -projection extended -layout my_layout-coupe -o Ermoy-MARS-2009-coupe.pdf

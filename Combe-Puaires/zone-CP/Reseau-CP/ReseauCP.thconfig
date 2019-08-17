@@ -1,35 +1,38 @@
 encoding  utf-8
   
- # File written by tro2therion.f90 (Xavier Robert) 
-  
- # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
- # This work is under the GPLv2
-  
- # 1-SOURCES 
- # La ligne source specifie le fichier ou sont les donnees topo
-  # (Au fichier "nomcavite.th" il faudra avoir une ligne
-  # "input "nomcavite.th2" pour specifier le fichier ou se trouvent
-  # les donnees du dessin, comme ça, ce fichier thconfig appelera 
-  # nomcavite.th" et a son tour, "nomcavite.th" appelera
-  # "nomcavite.th2")
- source combe-puaires.th
- #source ReseauCP.th
- #source ReseauCP.th2
+# File written by tro2therion.f90 (Xavier Robert)   
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2
+
+# 1-SOURCES 
+# La ligne source specifie le fichier ou sont les donnees topo
+# (Au fichier "nomcavite.th" il faudra avoir une ligne
+# "input "nomcavite.th2" pour specifier le fichier ou se trouvent
+# les donnees du dessin, comme ça, ce fichier thconfig appelera 
+# nomcavite.th" et a son tour, "nomcavite.th" appelera
+# "nomcavite.th2")
+source combe-puaires.th
+#source ReseauCP.th
+#source ReseauCP.th2
+
+# Add maps definitions
+source ReseauCP-maps-plan.th
+#source ReseauCP-maps-coupe.th
  
 # Add config file
 input ../../../config.thc
   
- # 2-LAYOUT   
- # Debut de la definition du Layout "xviexport"
+# 2-LAYOUT   
+# Debut de la definition du Layout "xviexport"
 layout xviexport
-   # echelle a laquelle on veut dessiner la topo
-   scale 1 1000
-   # taille de la grille
-   grid-size 10 10 10 m
-   # mettre la grille en arrière plan
-   grid bottom
+	# echelle a laquelle on veut dessiner la topo
+	scale 1 1000
+	# taille de la grille
+	grid-size 10 10 10 m
+	# mettre la grille en arrière plan
+	grid bottom
 endlayout
- # fin de la définition du layout "xviexport" 
+# fin de la définition du layout "xviexport" 
   
 layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
@@ -212,28 +215,32 @@ layout my_layout-coupe
 endlayout
 
   
- # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o data-th2/ReseauCP-map2017.xvi
- export map -projection extended -fmt xvi -layout xviexport -o data-th2/ReseauCP-coupe2017.xvi
-  
- export map -o Outputs/2D/ReseauCP-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe.pdf
-  
- # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/3D/ReseauCP -layout my_layout
- 
- # Export du fichier 3d pour Loch
- export model -o Outputs/3D/reseauCP-2016.lox
+# 3-EXPORTS   
+export map -fmt xvi -layout xviexport -o data-th2/ReseauCP-map2017.xvi
+export map -projection extended -fmt xvi -layout xviexport -o data-th2/ReseauCP-coupe2017.xvi
 
- # Export fichiers dxf
- #export model -fmt dxf -o reseauCP-2016.dxf
- # Export du fichier 3D en vrml
- #export model -o reseauCP.vrml
+# Select maps
+	select MP-ReseauCP-total 
+	#select MC-ReseauCP-total
+	
+export map -o Outputs/2D/ReseauCP-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe.pdf
   
- # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/kml/ReseauCP.kml -layout my_layout
+# Export des fichiers ESRI
+export map -proj plan -fmt esri -o Outputs/3D/ReseauCP -layout my_layout
  
- # Export des listes:
+# Export du fichier 3d pour Loch
+export model -o Outputs/3D/reseauCP-2016.lox
+
+# Export fichiers dxf
+#export model -fmt dxf -o reseauCP-2016.dxf
+# Export du fichier 3D en vrml
+#export model -o reseauCP.vrml
+  
+# Export des fichiers kml
+export map -proj plan -fmt kml -o Outputs/kml/ReseauCP.kml -layout my_layout
+ 
+# Export des listes:
 export database -o Outputs/Lists/databaseCP-2017.sql
 export continuation-list -o Outputs/Lists/ContinuationsCP-2017.html
 export survey-list -location on -o Outputs/Lists/SurveysCP2017.html

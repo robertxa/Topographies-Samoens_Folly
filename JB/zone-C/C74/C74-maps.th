@@ -18,9 +18,13 @@ endmap
 
 map C74-brancheE-plan
 	C74-SP1
+	break
 	C74-SP2
+	break
 	C74-SP3
+	break
 	C74-SP4
+	break
 	C74-SP5
 endmap
 
@@ -30,9 +34,13 @@ endmap
 
 map C74-brancheW-plan
 	C74-SP8
+	break
 	C74-SP9
+	break
 	C74-SP10	# A VERIF
+	break
 	C74-SP11
+	break
 	C74-SP12
 endmap
 
@@ -43,13 +51,17 @@ endmap
 
 map C74-plan-tot
 	C74-entree-plan
+	break
 	C74-brancheE-plan
+	break
 	C74-brancheW-plan
 endmap
 
 #map C74-coupe-tot
 #	C74-entree-coupe
+#	break
 #	C74-brancheE-coupe
+#	break
 #	C74-brancheW-coupe
 #endmap
    
