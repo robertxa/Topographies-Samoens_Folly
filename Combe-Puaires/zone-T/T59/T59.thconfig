@@ -9,6 +9,9 @@ source T59.th
 source T59.th2
 source T59-coupe.th2
 
+# Add maps definitions
+source T59-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -121,7 +124,11 @@ endlayout
 
 #export map -fmt xvi -layout xviexport -o T59-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o T59-coupe.xvi
-  
+
+# Select maps
+	select T59-plan-tot
+	select T59-coupe-tot
+	  
 export map -o T59-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o T59-coupe.pdf
 export model -o T59.lox

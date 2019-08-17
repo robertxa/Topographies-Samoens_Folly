@@ -8,6 +8,9 @@ source data-th/LS30.th
 source data-th2/LS30.th2
 source data-th2/LS30-coupe.th2
 
+# Add maps definitions
+source LS30-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -118,7 +121,11 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o data-th2/LS30-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/LS30-coupe.xvi
-  
+ 
+# Select maps
+	select LS30-plan-tot
+	select LS30-coupe-tot
+	  
 export map -o LS30-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o LS30-coupe.pdf
 export model -o LS30.lox

@@ -1,0 +1,43 @@
+encoding  utf-8
+
+#map JB-rev
+#		Voltigeurs-amonts
+#	break
+#		voltigeurs
+#		preview below JB-amonts
+#endmap
+
+
+map CP62-plan
+	CP62-1
+	CP62-2
+endmap
+
+map CP62-coupe
+	CP62-c1
+	CP62-c2
+	CP62-c3
+endmap
+
+map CP63-plan
+	scrap1-cp62
+	scrap24-CP62
+	scrap63-CP62
+endmap
+
+map CP63-coupe
+	CP62-c4
+	CP62-c5
+endmap
+
+
+map CP62-plan-tot
+	CP62-plan
+	CP63-plan
+endmap
+
+map CP62-coupe-tot
+	CP62-coupe
+	CP63-coupe
+endmap
+   

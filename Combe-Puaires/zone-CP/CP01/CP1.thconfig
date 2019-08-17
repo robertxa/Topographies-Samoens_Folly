@@ -14,6 +14,10 @@ encoding  utf-8
  source data-th/CP1.th
  source data-th2/CP1.th2
  source data-th2/CP1-coupe.th2
+
+# Add maps definitions
+source CP1-maps.th
+
 # Add config file
 input ../../../config.thc
 
@@ -300,7 +304,11 @@ endlayout
 # 3-EXPORTS   
 #export map -fmt xvi -layout xviexport -o data-th2/CP1-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP1-coupe.xvi
- 
+
+# Select maps
+	select CP1-plan-tot
+	select CP1-coupe-tot
+	 
 export map -projection extended -layout my_layout-coupe -o CP1-coupe2.pdf 
 export map -o CP1-plan2.pdf -layout my_layout
  

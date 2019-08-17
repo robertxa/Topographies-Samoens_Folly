@@ -1,35 +1,36 @@
 encoding  utf-8
   
- # File written by tro2therion.f90 (Xavier Robert) 
-  
- # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
- # This work is under the GPLv2
-  
-  
- # 1-SOURCES 
- # La ligne source specifie le fichier ou sont les donnees topo
-  # (Au fichier "nomcavite.th" il faudra avoir une ligne
-  # "input "nomcavite.th2" pour specifier le fichier ou se trouvent
-  # les donnees du dessin, comme ça, ce fichier thconfig appelera 
-  # nomcavite.th" et a son tour, "nomcavite.th" appelera
-  # "nomcavite.th2")
- source A22.th
- source A22.th2
+# File written by tro2therion.f90 (Xavier Robert) 
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2
+    
+# 1-SOURCES 
+# La ligne source specifie le fichier ou sont les donnees topo
+# (Au fichier "nomcavite.th" il faudra avoir une ligne
+# "input "nomcavite.th2" pour specifier le fichier ou se trouvent
+# les donnees du dessin, comme ça, ce fichier thconfig appelera 
+# nomcavite.th" et a son tour, "nomcavite.th" appelera
+# "nomcavite.th2")
+source A22.th
+source A22.th2
+
+# Add maps definitions
+source A22-maps.th
  
- # Add config file
+# Add config file
 input ../../../config.thc 
   
- # 2-LAYOUT   
- # Debut de la definition du Layout "xviexport"
- layout xviexport
-   # echelle a laquelle on veut dessiner la topo
-   scale 1 1000
-   # taille de la grille
-   grid-size 10 10 10 m
-   # mettre la grille en arrière plan
-   grid bottom
- endlayout
- # fin de la définition du layout "xviexport" 
+# 2-LAYOUT   
+# Debut de la definition du Layout "xviexport"
+layout xviexport
+	# echelle a laquelle on veut dessiner la topo
+	scale 1 1000
+	# taille de la grille
+	grid-size 10 10 10 m
+	# mettre la grille en arrière plan
+	grid bottom
+endlayout
+# fin de la définition du layout "xviexport" 
   
 layout my_layout
 
@@ -139,23 +140,22 @@ layout my_layout
    # Afficher un copyright
    statistics copyright all
   
- # Titre          
-     code tex-map
-    % Output map title as determined by Therion 5.3 is stored in cavename. 
-    % It will be empty if there are multiple maps selected for any one projection
-    % AND there are multiple source surveys identified in the thconfig file 
-    % ie Therion can not infer a unique title from the input data given.
-    % This code allows you to define an output map title {cavename} if it happens to be empty
-  
-   \edef\temp{\the\cavename}   % cavename from Therion
-   \edef\nostring{}            % empty string
-   \ifx\temp\nostring          % test if cavename is empty
-         % if empty reassign cavename to describe selected maps as a group
- 		\cavename={V22-A22} 		
-   \else % if not empty keep the value set by therion, or assign an override cavename here
-   \fi
-   \newtoks\club \club={Groupe Spéléologique Vulcain}
-   endcode  
+	# Titre          
+	code tex-map
+		% Output map title as determined by Therion 5.3 is stored in cavename. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={V22-A22} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
  
 endlayout
 
@@ -216,7 +216,11 @@ endlayout
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o V22-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o V22-coupe.xvi
-  
+
+# Select maps
+	select A22-plan-tot
+	#select A22-coupe-tot
+	  
 export map -o V22-plan.pdf -layout my_layout
 #export map -projection extended -layout my_layout-coupe -o V22-coupe.pdf
 export model -o V22.lox

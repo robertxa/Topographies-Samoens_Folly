@@ -16,6 +16,9 @@ encoding  utf-8
  source AV8.th
  source AV8.th2
  source AV8-coupe.th2
+
+# Add maps definitions
+source AV8-maps.th
  
  # Add config file
 input ../../../config.thc 
@@ -293,7 +296,11 @@ layout my_layout-coupe
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o AV8-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o AV8-coupe.xvi
-  
+
+# Select maps
+	select AV8-plan-tot
+	select AV8-coupe-tot
+	  
 export map -o AV8-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o AV8-coupe.pdf
 export model -o AV8.lox

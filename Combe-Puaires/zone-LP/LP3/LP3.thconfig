@@ -7,6 +7,9 @@ encoding  utf-8
 source data-th/LP3.th
 source data-th2/LP3.th2
 
+# Add maps definitions
+source LP3-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -117,6 +120,10 @@ endlayout
 
 export map -fmt xvi -layout xviexport -o data-th2/LP3-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP3-coupe.xvi
+
+# Select maps
+	select LP3-plan-tot
+	#select LP3-coupe-tot 
   
 export map -o LP3-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o LP3-coupe.pdf

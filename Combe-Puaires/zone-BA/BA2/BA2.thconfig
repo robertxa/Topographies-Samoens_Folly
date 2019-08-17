@@ -14,6 +14,9 @@ encoding  utf-8
   # "nomcavite.th2")
  source BA2.th
  source BA2.th2
+
+# Add maps definitions
+source BA2-maps.th
  
 # Add config file
 input ../../../config.thc 
@@ -226,7 +229,10 @@ endlayout
  # 3-EXPORTS   
  export map -fmt xvi -layout xviexport -o BA2-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o BA2-coupe.xvi
-  
+
+# Select maps
+	select BA2-plan-tot
+	  
  export map -o BA2-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o BA2-coupe.pdf
 # export model -o BA2.lox

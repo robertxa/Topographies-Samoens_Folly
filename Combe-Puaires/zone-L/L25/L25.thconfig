@@ -9,6 +9,9 @@ source data-th/L25.th
 source data-th2/L25.th2
 source data-th2/L25-coupe.th2
 
+# Add maps definitions
+source L25-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -120,7 +123,11 @@ layout my_layout-coupe
 endlayout  
 export map -fmt xvi -layout xviexport -o data-th2/L25-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/L25-coupe.xvi
-  
+
+# Select maps
+	select L25-plan-tot
+	select L25-coupe-tot
+	  
 export map -o L25-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o L25-coupe.pdf
 export model -o L25.lox

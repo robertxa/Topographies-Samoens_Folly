@@ -8,6 +8,9 @@ source data-th/T9.th
 source data-th2/T9.th2
 source data-th2/T9-coupe.th2
 
+# Add maps definitions
+source T9-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -122,7 +125,11 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o data-th2/T9-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/T9-coupe.xvi
-  
+
+# Select maps
+	select T9-plan-tot
+	select T9-coupe-tot
+	  
 export map -o T9-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o T9-coupe.pdf
 export model -o T9.lox

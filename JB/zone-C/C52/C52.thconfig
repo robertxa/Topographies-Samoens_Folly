@@ -1,8 +1,6 @@
 encoding  utf-8
   
-  
  # File written by tro2therion.f90 (Xavier Robert) 
- # Based on the work of Roman Muñoz <tatel@euskalnet.net> and Martin Gerbaux <martin.gerbaux@wanadoo.fr> 
   
  # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
  # This work is under the GPLv2
@@ -18,6 +16,9 @@ encoding  utf-8
  source C52.th
  source C52.th2
  source C52-coupe.th2
+
+# Add maps definitions
+source C52-maps.th
  
  # Add config file
 input ../../../config.thc 
@@ -222,7 +223,11 @@ endlayout
  # 3-EXPORTS   
  export map -fmt xvi -layout xviexport -o C52-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o C52-coupe.xvi
-  
+
+# Select maps
+	select C52-plan-tot
+	select C52-coupe-tot
+	  
  export map -o C52-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o C52-coupe.pdf
  export model -o C52.lox

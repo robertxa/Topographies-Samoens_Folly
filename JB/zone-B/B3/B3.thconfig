@@ -17,6 +17,10 @@ source B3.th
 #source B3.th2
 source B3-2015.th2
 source B3-coupe.th2 
+
+# Add maps definitions
+source B3-maps.th
+
 # Add config file
 input ../../../config.thc
   
@@ -306,6 +310,10 @@ endlayout
 # 3-EXPORTS   
 #export map -fmt xvi -layout xviexport -o B3-2015-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o B3-2015-coupe.xvi
+
+# Select maps
+	select B3-plan-tot
+	select B3-coupe-tot
 
 export map -projection extended -layout my_layout-coupe -o B3-coupe2015-b.pdf
 export map -o B3-plan2015-b.pdf -layout my_layout

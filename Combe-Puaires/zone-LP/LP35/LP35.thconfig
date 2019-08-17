@@ -8,6 +8,9 @@ source LP35.th
 source LP35.th2
 #source LP35-coupe.th2
 
+# Add maps definitions
+source LP35-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -120,7 +123,11 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o LP35-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o LP35-coupe.xvi
-  
+
+# Select maps
+	select LP35-plan-tot
+	#select LP35-coupe-tot
+	  
 export map -o LP35-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o LP35-coupe.pdf
 export model -o LP35.lox

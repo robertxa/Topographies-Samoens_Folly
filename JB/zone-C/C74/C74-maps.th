@@ -1,0 +1,55 @@
+encoding  utf-8
+
+
+map C74-entree-plan
+	C74-SP6
+	break
+	C74-SP7
+	break
+	C74-SP13
+	break
+	C74-SP14
+	#preview below JB-amonts	
+endmap
+
+#map C74-entree-coupe
+#
+#endmap
+
+map C74-brancheE-plan
+	C74-SP1
+	C74-SP2
+	C74-SP3
+	C74-SP4
+	C74-SP5
+endmap
+
+#map CP74-brancheE-coupe	
+#	
+#endmap
+
+map C74-brancheW-plan
+	C74-SP8
+	C74-SP9
+	C74-SP10	# A VERIF
+	C74-SP11
+	C74-SP12
+endmap
+
+#map C74-brancheW-coupe
+#	
+#endmap
+
+
+map C74-plan-tot
+	C74-entree-plan
+	C74-brancheE-plan
+	C74-brancheW-plan
+endmap
+
+#map C74-coupe-tot
+#	C74-entree-coupe
+#	C74-brancheE-coupe
+#	C74-brancheW-coupe
+#endmap
+   

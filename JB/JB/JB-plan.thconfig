@@ -31,6 +31,8 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 source jb.th
+source jb-maps-plan
+
 # Add config file
 input ../../config.thc 
 
@@ -202,12 +204,24 @@ endlayout
 #export map -proj plan -fmt xvi -layout xviexport -o synthese_plan2016.xvi
 #export map -proj extended -fmt xvi -layout xviexport -o synthese_coupe.xvi
 
+
+#select M-C37-Riviera
+#select M-B22-B21
+#select M-B19-V11
+#select M-Branlots-J14
+#select M-V4-V6-Mais
+#select M-Jean-Dupond
+#select M-Bivouac-500-Gourance
+#select M-aval-900
+
+
 # Export des fichiers pdf, plan et coupe. 
 #select aspiro 
 #  select JB-total@jb.th -map-level 0
 #  select JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2019-plan1000.pdf -layout my_layout
+select JB-plan-tot
+ export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2019-plan1000TEST.pdf -layout my_layout
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2018-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
@@ -223,12 +237,12 @@ endlayout
 #export model -fmt vrml -o Outputs/3D/jb-Xav-2018.vrml
 
 # Export des fichiers kml
-export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2019.kml
+#export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2019.kml
 
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -o Outputs/Lists/DatabaseJB-2019.sql
-export continuation-list -o Outputs/Lists/Continuations-JB-plan-2019.html
-export survey-list -location on -o Outputs/Lists/Topographies_2019.html
-export cave-list -location on -o Outputs/Lists/Cavites_2019.html
+#export database -o Outputs/Lists/DatabaseJB-2019.sql
+#export continuation-list -o Outputs/Lists/Continuations-JB-plan-2019.html
+#export survey-list -location on -o Outputs/Lists/Topographies_2019.html
+#export cave-list -location on -o Outputs/Lists/Cavites_2019.html

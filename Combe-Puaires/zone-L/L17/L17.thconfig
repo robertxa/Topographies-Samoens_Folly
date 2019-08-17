@@ -7,6 +7,9 @@ encoding  utf-8
 source data-th/L17.th
 #source data-th2/L17.th2
 
+# Add maps definitions
+source L17-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -117,7 +120,11 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o data-th2/L17-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/L17-coupe.xvi
-  
+
+# Select maps
+	select L17-plan-tot
+	select L17-coupe-tot
+	  
 export map -o L17-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o L17-coupe.pdf
 export model -o L17.lox

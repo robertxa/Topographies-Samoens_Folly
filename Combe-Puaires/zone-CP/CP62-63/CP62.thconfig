@@ -1,42 +1,42 @@
 encoding  utf-8
   
-  
- # File written by tro2therion.f90 (Xavier Robert) 
-  
- # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
- # This work is under the GPLv2
-  
-  
- # 1-SOURCES 
- # La ligne source specifie le fichier ou sont les donnees topo
-  # (Au fichier "nomcavite.th" il faudra avoir une ligne
-  # "input "nomcavite.th2" pour specifier le fichier ou se trouvent
-  # les donnees du dessin, comme ça, ce fichier thconfig appelera 
-  # nomcavite.th" et a son tour, "nomcavite.th" appelera
-  # "nomcavite.th2")
- source data-th/CP62.th
- source data-th2/CP62.th2
- source data-th2/CP62-b.th2
- source data-th2/CP62-coupe.th2
+# File written by tro2therion.f90 (Xavier Robert) 
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2
+    
+# 1-SOURCES 
+# La ligne source specifie le fichier ou sont les donnees topo
+# (Au fichier "nomcavite.th" il faudra avoir une ligne
+# "input "nomcavite.th2" pour specifier le fichier ou se trouvent
+# les donnees du dessin, comme ça, ce fichier thconfig appelera 
+# nomcavite.th" et a son tour, "nomcavite.th" appelera
+# "nomcavite.th2")
+source data-th/CP62.th
+source data-th2/CP62.th2
+source data-th2/CP62-b.th2
+source data-th2/CP62-coupe.th2
+
+# Add maps definitions
+source CP62-maps.th
  
- # Add config file
+# Add config file
 input ../../../config.thc
   
- # 2-LAYOUT   
- # Debut de la definition du Layout "xviexport"
-# layout xviexport
-   # echelle a laquelle on veut dessiner la topo
-   #scale 1 1000
-   # taille de la grille
-   #grid-size 10 10 10 m
-   # mettre la grille en arrière plan
-   #grid bottom
-# endlayout
- # fin de la définition du layout "xviexport" 
+# 2-LAYOUT   
+# Debut de la definition du Layout "xviexport"
+#layout xviexport
+	# echelle a laquelle on veut dessiner la topo
+	#scale 1 1000
+	# taille de la grille
+	#grid-size 10 10 10 m
+	# mettre la grille en arrière plan
+	#grid bottom
+#endlayout
+# fin de la définition du layout "xviexport" 
  
-layout morph
-	sketches on
-endlayout 
+#layout morph
+#	sketches on
+#endlayout 
   
   
 layout my_layout
@@ -283,7 +283,15 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP62-coupe.xvi
  
 #export map -fmt xvi -o cave.xvi -layout morph 
-  
+
+# Select maps
+	#select CP62-plan
+	#select CP62-coupe
+	#select CP63-plan
+	#select CP63-coupe
+	select CP62-plan-tot
+	select CP62-coupe-tot
+	  
 export map -o CP62-plan.pdf -layout my_layout
 export map -projection extended -layout my_layoutcoupe -o CP62-coupe.pdf
 export model -o CP62.lox

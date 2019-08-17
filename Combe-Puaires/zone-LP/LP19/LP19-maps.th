@@ -1,0 +1,35 @@
+encoding  utf-8
+
+#map JB-rev
+#		Voltigeurs-amonts
+#	break
+#		voltigeurs
+#		preview below JB-amonts
+#endmap
+
+
+map LP19-old-plan
+	LP19-1
+endmap
+
+#map LP19-old-coupe	
+#endmap
+
+map LP19-new-plan
+	LP19-2
+endmap
+
+map LP19-new-coupe
+	LP19-Sc1
+endmap
+
+
+map LP19-plan-tot
+	LP19-old-plan
+	LP19-new-plan
+endmap
+
+map LP19-coupe-tot
+	LP19-new-coupe
+endmap
+   

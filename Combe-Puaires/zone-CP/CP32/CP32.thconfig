@@ -3,33 +3,35 @@ encoding  utf-8
 # File written by tro2therion.f90 (Xavier Robert) 
 # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
 # This work is under the GPLv2
-  
-  
- # 1-SOURCES 
- # La ligne source specifie le fichier ou sont les donnees topo
-  # (Au fichier "nomcavite.th" il faudra avoir une ligne
-  # "input "nomcavite.th2" pour specifier le fichier ou se trouvent
-  # les donnees du dessin, comme ça, ce fichier thconfig appelera 
-  # nomcavite.th" et a son tour, "nomcavite.th" appelera
-  # "nomcavite.th2")
- source data-th/CP32.th
- source data-th2/CP32.th2
- source data-th2/CP32-coupe.th2
+    
+# 1-SOURCES 
+# La ligne source specifie le fichier ou sont les donnees topo
+# (Au fichier "nomcavite.th" il faudra avoir une ligne
+# "input "nomcavite.th2" pour specifier le fichier ou se trouvent
+# les donnees du dessin, comme ça, ce fichier thconfig appelera 
+# nomcavite.th" et a son tour, "nomcavite.th" appelera
+# "nomcavite.th2")
+source data-th/CP32.th
+source data-th2/CP32.th2
+source data-th2/CP32-coupe.th2
+
+# Add maps definitions
+source CP32-maps.th
 
 # Add config file
 input ../../../config.thc 
   
- # 2-LAYOUT   
- # Debut de la definition du Layout "xviexport"
- layout xviexport
-   # echelle a laquelle on veut dessiner la topo
-   scale 1 1000
-   # taille de la grille
-   grid-size 10 10 10 m
-   # mettre la grille en arrière plan
-   grid bottom
- endlayout
- # fin de la définition du layout "xviexport" 
+# 2-LAYOUT   
+# Debut de la definition du Layout "xviexport"
+layout xviexport
+	# echelle a laquelle on veut dessiner la topo
+	scale 1 1000
+	# taille de la grille
+	grid-size 10 10 10 m
+	# mettre la grille en arrière plan
+	grid bottom
+endlayout
+# fin de la définition du layout "xviexport" 
   
 layout my_layout
  	# Call the config settings (Layout config inside the config.thc file)
@@ -140,24 +142,23 @@ layout my_layout
    statistics copyright all
     
 	# Titre          
-     code tex-map
-    % Output map title as determined by Therion 5.3 is stored in cavename. 
-    % It will be empty if there are multiple maps selected for any one projection
-    % AND there are multiple source surveys identified in the thconfig file 
-    % ie Therion can not infer a unique title from the input data given.
-    % This code allows you to define an output map title {cavename} if it happens to be empty
-  
-   \edef\temp{\the\cavename}   % cavename from Therion
-   \edef\nostring{}            % empty string
-   \ifx\temp\nostring          % test if cavename is empty
-         % if empty reassign cavename to describe selected maps as a group
- 		\cavename={CP32 ou Le trou de la lacheuse} 		
-   \else % if not empty keep the value set by therion, or assign an override cavename here
-   \fi
-   \newtoks\club \club={Groupe Spéléologique Vulcain}
-   endcode  
+	code tex-map
+		% Output map title as determined by Therion 5.3 is stored in cavename. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={CP32 ou Le trou de la lacheuse} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
 
- endlayout
+endlayout
 
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
@@ -214,7 +215,11 @@ endlayout
  # 3-EXPORTS   
  export map -fmt xvi -layout xviexport -o data-th2/CP32-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP32-coupe.xvi
-  
+
+# Select maps
+	select CP32-plan-tot
+	select CP32-coupe-tot
+	  
  export map -o CP32-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o CP32-coupe.pdf
  export model -o CP32.lox

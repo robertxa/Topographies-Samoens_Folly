@@ -16,6 +16,9 @@ source data-th/CP24.th
 source data-th2/CP24.th2
 source data-th2/CP24-coupe.th2
 source data-th2/CP24-coupe2.th2
+
+# Add maps definitions
+source CP24-maps.th
   
 # Add config file
 input ../../../config.thc 
@@ -210,7 +213,11 @@ endlayout
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o data-th2/CP24-map2018.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP24-coupe2018.xvi
-  
+
+# Select maps
+	select CP24-plan-tot
+	select CP24-coupe-tot
+	  
 export map -o CP24-plan2018.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o CP24-coupe2018.pdf
 export model -o CP24.lox

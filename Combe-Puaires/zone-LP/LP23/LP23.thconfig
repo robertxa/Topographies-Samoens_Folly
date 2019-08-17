@@ -119,7 +119,11 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o data-th2/LP23-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP23-coupe.xvi
-  
+
+# Select maps
+	select LP23-plan-tot
+	select LP23-coupe-tot
+	  
 export map -o LP23-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o LP23-coupe.pdf
 export model -o LP23.lox

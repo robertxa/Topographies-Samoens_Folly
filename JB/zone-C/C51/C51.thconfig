@@ -4,6 +4,9 @@ source C51.th
 source C51.th2
 source C51-coupe.th2
 
+# Add maps definitions
+source C51-maps.th
+
 # Add config file
 input ../../../config.thc 
 
@@ -38,7 +41,7 @@ layout my_layout
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
-	legend on
+	legend off
 	#legend-width 14 cm
  	 map-header 0 00 nw
 	map-header-bg off
@@ -86,7 +89,7 @@ layout my_layout-coupe
 	statistics topo-length off
 	statistics explo-length off
 	statistics copyright all
-	legend on
+	legend off
 	#map-header 5 50 e
 	map-header 0 0 n
 	symbol-hide line survey
@@ -118,6 +121,10 @@ endlayout
   
  export map -fmt xvi -layout xviexport -o C51-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o C51-coupe.xvi
+
+# Select maps
+	select C51-plan-tot
+	select C51-coupe-tot
   
  export map -o C51-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o C51-coupe.pdf

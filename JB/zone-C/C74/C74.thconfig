@@ -3,6 +3,9 @@ encoding  utf-8
 source data/C74.th
 source th2/C74-plan.th2
 
+# Add maps definitions
+source C74-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -40,7 +43,7 @@ layout my_layout
   map-comment "<it>Plan - Samoëns, 74, France"  
   statistics topo-length off
   statistics explo-length off
-  legend on
+  legend off
   # map-header 5 50 e
   map-header 0 0 nw
     map-header-bg off  
@@ -95,7 +98,7 @@ layout my_layout-coupe
 	statistics topo-length off
 	statistics explo-length off
 	statistics copyright all
-	legend on
+	legend off
 	#map-header 5 50 e
 	map-header 0 0 n
 	#symbol-hide line survey
@@ -126,9 +129,22 @@ layout my_layout-coupe
 endlayout
 
   
- export map -fmt xvi -layout xviexport -o th2/C74-plan2017.xvi
- export map -projection extended -fmt xvi -layout xviexport -o th2/C74-coupe2017.xvi 
- 
+ #export map -fmt xvi -layout xviexport -o th2/C74-plan2017.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o th2/C74-coupe2017.xvi 
+
+# Select maps
+	select C74-entree-plan
+	#select C74-entree-coupe
+	
+	select C74-brancheE-plan
+	#select C74-brancheE-coupe
+
+	select C74-brancheW-plan
+	#select C74-brancheW-coupe
+
+	#select C74-plan-tot
+	#select C74-coupe-tot
+	 
  export map -o Outputs/2D/C74-planTH.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/2D/C74-coupeNum.pdf
  

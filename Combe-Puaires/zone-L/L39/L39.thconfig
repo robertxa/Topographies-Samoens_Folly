@@ -8,6 +8,9 @@ source L39.th
 source L39.th2
 source L39-coupe.th2
 
+# Add maps definitions
+source L39-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -117,7 +120,11 @@ endlayout
 
 export map -fmt xvi -layout xviexport -o L39-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o L39-coupe.xvi
-  
+
+# Select maps
+	select L39-plan-tot
+	select L39-coupe-tot
+	  
 export map -o L39-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o L39-coupe.pdf
 export model -o L39.lox

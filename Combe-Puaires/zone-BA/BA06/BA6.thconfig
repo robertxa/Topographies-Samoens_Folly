@@ -8,6 +8,9 @@ source BA06.th
 source BA06.th2
 source BA06-coupe.th2
 
+# Add maps definitions
+source BA6-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -119,7 +122,11 @@ endlayout
 
 #export map -fmt xvi -layout xviexport -o BA06-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o BA06-coupe.xvi
-  
+
+# Select maps
+	select BA6-plan-tot
+	select BA6-coupe-tot
+	  
 export map -o BA06-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o BA06-coupe.pdf
 export model -o BA06.lox

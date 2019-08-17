@@ -27,6 +27,9 @@ source C114.th
 source C114.th2
 source C114-coupe.th2
 
+# Add maps definitions
+source C114-maps.th
+
 # Add config file
 input ../../../config.thc 
 
@@ -228,6 +231,10 @@ layout my_layout-coupe
 # Voici les lignes pour exporter le cheminement au format xvi
 export map -proj plan -fmt xvi -layout xviexport -o C114-plan2012.xvi
 export map -proj extended -fmt xvi -layout xviexport -o C114-coupe2012.xvi
+
+# Select maps
+	select C114-plan-tot
+	select C114-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
  export map -projection plan -fmt pdf -o C114-2012-plan.pdf -layout my_layout

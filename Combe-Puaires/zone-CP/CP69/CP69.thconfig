@@ -1,38 +1,39 @@
 encoding  utf-8
+   
+# File written by tro2therion.f90 (Xavier Robert) 
+# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the GPLv2  
   
-  
- # File written by tro2therion.f90 (Xavier Robert) 
-  
- # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
- # This work is under the GPLv2
-  
-  
- # 1-SOURCES 
- # La ligne source specifie le fichier ou sont les donnees topo
-  # (Au fichier "nomcavite.th" il faudra avoir une ligne
-  # "input "nomcavite.th2" pour specifier le fichier ou se trouvent
-  # les donnees du dessin, comme ça, ce fichier thconfig appelera 
-  # nomcavite.th" et a son tour, "nomcavite.th" appelera
-  # "nomcavite.th2")
- source CP69.th
- source CP69.th2
- source CP69-coupe.th2
- # Add config file
+# 1-SOURCES 
+# La ligne source specifie le fichier ou sont les donnees topo
+# (Au fichier "nomcavite.th" il faudra avoir une ligne
+# "input "nomcavite.th2" pour specifier le fichier ou se trouvent
+# les donnees du dessin, comme ça, ce fichier thconfig appelera 
+# nomcavite.th" et a son tour, "nomcavite.th" appelera
+# "nomcavite.th2")
+source CP69.th
+source CP69.th2
+source CP69-coupe.th2
+
+# Add maps definitions
+source CP69-maps.th
+
+# Add config file
 input ../../../config.thc 
   
- # 2-LAYOUT   
- # Debut de la definition du Layout "xviexport"
+# 2-LAYOUT   
+# Debut de la definition du Layout "xviexport"
 layout xviexport
-   #cs UTM32
-   # echelle a laquelle on veut dessiner la topo
-   scale 1 500 # pour le plan
-   #scale 1 1000 # pour la coupe
-      # taille de la grille
-   grid-size 10 10 10 m
-   # mettre la grille en arrière plan
-   grid bottom
+	#cs UTM32
+	# échelle à laquelle on veut dessiner la topo
+	scale 1 500 # pour le plan
+	#scale 1 1000 # pour la coupe
+	# taille de la grille
+	grid-size 10 10 10 m
+	# mettre la grille en arrière plan
+	grid bottom
 endlayout
- # fin de la définition du layout "xviexport" 
+# fin de la définition du layout "xviexport" 
   
 layout my_layout
  	# Call the config settings (Layout config inside the config.thc file)
@@ -143,36 +144,28 @@ layout my_layout
 
   ######## Code Metapost pour modifier l aspect des symboles ####### 
   
- # Titre          
-     code tex-map
-    % Output map title as determined by Therion 5.3 is stored in cavename. 
-    % It will be empty if there are multiple maps selected for any one projection
-    % AND there are multiple source surveys identified in the thconfig file 
-    % ie Therion can not infer a unique title from the input data given.
-    % This code allows you to define an output map title {cavename} if it happens to be empty
-  
-   \edef\temp{\the\cavename}   % cavename from Therion
-   \edef\nostring{}            % empty string
-   \ifx\temp\nostring          % test if cavename is empty
-         % if empty reassign cavename to describe selected maps as a group
- 		\cavename={CP69} 		
-   \else % if not empty keep the value set by therion, or assign an override cavename here
-   \fi
-   \newtoks\club \club={Groupe Spéléologique Vulcain}
-   endcode  
+	# Titre          
+	code tex-map
+		% Output map title as determined by Therion 5.3 is stored in cavename. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={CP69} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
 
 # add extended-elev on the same pdf
  map-image 200 0 s CP69-coupe2015.pdf
- 
-  
- # Pour dessiner un cadre autour de la topo   
- #code tex-map
- #  \framethickness=0.5mm
- #endcode
-  
- ######################### 
-  
+
 endlayout
+
   
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
@@ -280,37 +273,37 @@ layout my_layout-coupe
   
    # Afficher un copyright
    statistics copyright all
-  
 
-  ######## Code Metapost pour modifier l aspect des symboles ####### 
-  
- # Titre          
-     code tex-map
-    % Output map title as determined by Therion 5.3 is stored in cavename. 
-    % It will be empty if there are multiple maps selected for any one projection
-    % AND there are multiple source surveys identified in the thconfig file 
-    % ie Therion can not infer a unique title from the input data given.
-    % This code allows you to define an output map title {cavename} if it happens to be empty
-  
-   \edef\temp{\the\cavename}   % cavename from Therion
-   \edef\nostring{}            % empty string
-   \ifx\temp\nostring          % test if cavename is empty
-         % if empty reassign cavename to describe selected maps as a group
- 		\cavename={CP69} 		
-   \else % if not empty keep the value set by therion, or assign an override cavename here
-   \fi
-   \newtoks\club \club={Groupe Spéléologique Vulcain}
-   endcode  
+	# Titre          
+	code tex-map
+		% Output map title as determined by Therion 5.3 is stored in cavename. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={CP69} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
   
 endlayout  
 
   
- # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o CP69-2015-map.xvi
- #export map -proj extended -layout xviexport -fmt xvi -o CP69-2015-coupe.xvi
- 
- export map -projection extended -layout my_layout-coupe -o CP69-coupe2015.pdf 
- export map -o CP69-plan2015.pdf -layout my_layout
+# 3-EXPORTS   
+#export map -fmt xvi -layout xviexport -o CP69-2015-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o CP69-2015-coupe.xvi
+
+# Select maps
+	select CP69-plan-tot
+	select CP69-coupe-tot
+	 
+export map -projection extended -layout my_layout-coupe -o CP69-coupe2015.pdf 
+export map -o CP69-plan2015.pdf -layout my_layout
  
  #export model -o CP69.lox
   

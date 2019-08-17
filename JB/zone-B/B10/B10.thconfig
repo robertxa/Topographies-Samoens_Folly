@@ -17,6 +17,9 @@ source B10.th
 source B10.th2
 source B10-coupe.th2
 
+# Add maps definitions
+source B10-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -216,6 +219,10 @@ endlayout
 export map -fmt xvi -layout xviexport -o B10-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o B10-coupe.xvi
   
+# Select maps
+	select B10-plan-tot
+	select B10-coupe-tot
+	  
 export map -o B10-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o B10-coupe.pdf
 export model -o B10.lox

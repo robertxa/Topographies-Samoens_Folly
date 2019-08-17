@@ -7,6 +7,9 @@ encoding  utf-8
 source data-th/LP19.th
 source data-th2/LP19.th2
 source data-th2/LP19-coupe.th2
+
+# Add maps definitions
+source LP19-maps.th
  
  # Add config file
 input ../../../config.thc
@@ -196,7 +199,11 @@ endlayout
   
 export map -fmt xvi -layout xviexport -o data-th2/LP19-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP19-coupe.xvi
-  
+
+# Select maps
+	select LP19-plan-tot
+	select LP19-coupe-tot
+	  
 export map -o LP19-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o LP19-coupe.pdf
 export model -o LP19.lox

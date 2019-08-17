@@ -15,6 +15,9 @@ encoding  utf-8
  source BA4.th2
  source BA4-coupe.th2
 
+# Add maps definitions
+source BA4-maps.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -315,7 +318,11 @@ endlayout
 # 3-EXPORTS   
 #export map -fmt xvi -layout xviexport -o BA4-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o BA4-coupe.xvi
-  
+
+# Select maps
+	select BA4-plan-tot
+	select BA4-coupe-tot
+	  
 export map -o BA4-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o BA4-coupe.pdf
 #export model -o BA2.lox
