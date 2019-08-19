@@ -1,0 +1,31 @@
+% Page Blanche si besoin
+\clearpage
+
+\newlength\mylength
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+{\scriptsize
+\begin{center}
+\setlength{\extrarowheight}{2pt}
+\setlongtables
+
+\begin{longtable} {|m{1cm}|m{1cm}|m{1cm} |m{1.8cm} |m{1.8cm} |m{1cm} |m{1.8cm} |m{1.8cm}|C{1cm}|}
+\hline \hline Nom & Prof. (m) & Dev. (m) & X UTM (m) & Y UTM (m) & Altitude & Latitude (¡) & Longitude (¡) & Plaquette \\ \hline \hline \endhead
+ \hline \hline \endfoot
+
+	\rowcolor{lightgray} 
+	A1 & -10 & 10 & XXXX & XXXX & 1929 & 46.00000 & 06.00000 & X \\\hline
+
+	A1 & -10 & 10 & XXXX & XXXX & 1929 & 46.00000 & 06.00000 & X   \\\hline
+
+	\rowcolor{lightgray} 
+	A1 & -10 & 10 & XXXX & XXXX & 1929 & 46.00000 & 06.00000 & X \\\hline
+
+	A1 & -10 & 10 & XXXX & XXXX & 1929 & 46.00000 & 06.00000 & X \\\hline
+
+\end{longtable}  
+\end{center}
+}
+
+% Page Blanche si besoin
+%\cleardoublepage

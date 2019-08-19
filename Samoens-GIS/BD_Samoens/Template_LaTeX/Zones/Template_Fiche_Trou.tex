@@ -1,0 +1,79 @@
+% Si nous voulons que ce soit sur une nouvelle page
+%%% A commenter si la fiche est pour 1/2 page (PETIT TROU) %%%
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Définition des variables
+% Si une variable n'est pas définie, il faut la laisser vide, i.e. \trou{}
+
+\trou{NOM_TROU} % Nom(s) du trou
+
+\systeme{NOM_SYSEME}	% Système auquel il appartient
+
+\developpement{DEVELOPPEMENT} % sans unité
+\profondeur{PROFONDEUR} % sans unité
+
+\lat{LATITUDE} % sans unité
+\longi{LONGITUDE} % sans unité
+\altitude{ALTITUDE} % sans unité
+\XUTM{X_UTM} % sans unité
+\YUTM{Y_UTM} % sans unité
+
+\situation{
+SITUATION DE LA CAVITE
+}
+
+\decouverte{
+DATE DE DECOUVERTE
+}
+
+\histoire{
+HISTORIQUE. \\
+POUR LES RETOURS A LA LIGNE, IL FAUT LES REPERER DANS LA BD ORIGINALE, ET LES REMPLACER PAR \\
+NE PAS RAJOUTER DE RETOUR A LA LIGNE POUR LE DERNIER PARAGRAPHE.
+}
+
+\descrip{
+DESCRIPTION \\
+POUR LES RETOURS A LA LIGNE, IL FAUT LES REPERER DANS LA BD ORIGINALE, ET LES REMPLACER PAR \\
+NE PAS RAJOUTER DE RETOUR A LA LIGNE POUR LE DERNIER PARAGRAPHE.
+}
+
+\rem{
+REMARQUES \\
+POUR LES RETOURS A LA LIGNE, IL FAUT LES REPERER DANS LA BD ORIGINALE, ET LES REMPLACER PAR \\
+NE PAS RAJOUTER DE RETOUR A LA LIGNE POUR LE DERNIER PARAGRAPHE.
+}
+
+\biblio{
+BIBLIOGRAPHIE
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Construction la fiche
+
+%%% Dans le cas d'un GROS TROU (plus d'une 1/2 page) %%% :
+	\fichetrougd
+
+	% rajout des figures (jpg ou png), le faire pour chaque figure
+	\begin{figure}[ht]
+		\begin{center}
+			\includegraphics[width=0.95\linewidth]{CHEMIN_VERS_MON_IMAGE.png}	% Ici, l'image est resizée à 0.95% de la largeur de la ligne
+		\end{center}
+	\end{figure}
+	% impose l'impression des images ici
+	\FloatBarrier
+
+%%% Dans le cas d'un PETIT TROU (moins d'une 1/2 page) %%% :	
+	% Chemin de la figure
+	% La figure doit être au max de 5 cm de large pour 9 cm (?) de haut, sinon la fiche sera sur la page d'après. 
+	% Il faut faire attention à la largeur, mais aussi à la hauteur de l'image. 
+	% Il faut peut être faire un algorithme de conversion des images vers pour avoir une hauteur et/ou une largeur inférieur à la limite max.
+	\topopt{CHEMIN_VERS_MON_IMAGE.png}
+	\fichetroupt
+	% impose l'impression des images ici
+	\FloatBarrier
+
+% Si besoin d'une page blanche
+%\clearpage
+%\cleardoublepage

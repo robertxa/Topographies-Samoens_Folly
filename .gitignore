@@ -78,12 +78,28 @@
 **.wpt
 **.GPX
 **.gpx
+**.gpi
 **.vrt
 **.jp2
 **.prn
 **.dbf
 **.qpj
 **.trk
+**.jgw
+**.lyr
+**.aux
+**.rrd
+**.img
+**.xml
+**.html
+**.gxw
+**.ini
+**.dir
+**.dat
+**.nit
+**.OO1
+**.adf
+
 
 # Autres
 **.php
@@ -94,9 +110,15 @@
 # Folders
 **/Docs/
 **/Scans-Carnets/
-!/Samoens-GIS/
-/Samoens-GIS/*
+#!/Samoens-GIS/
+#/Samoens-GIS/*
 #**/Samoens-GIS/
+
+**/Samoens-GIS/dem/IGN_JB.th
+**/Samoens-GIS/dem/IGN_JB_5m.th
+**/Samoens-GIS/dem/Samoens.th
+**/Samoens-GIS/dem/Samoens/
+
 # Exceptions dans le dossier Samoens-GIS
 !/Samoens-GIS/dem/IGN_JB_10m-IGN.th
 !/Samoens-GIS/dem/IGN_JB_10m-Map.th

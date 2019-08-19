@@ -1,0 +1,71 @@
+\documentclass[sommairechap,stylexrobert]{BD_gix}
+ 
+ \usepackage{multirow}
+ \usepackage{eso-pic}
+ \usepackage{everyshi}
+ \usepackage{ifthen,calc}
+ \usepackage{pdfpages}
+  \usepackage{natbib}
+ 
+ 
+\begin{document}
+% ==================================================================
+ 
+\titleFR{Inventaire spéléologique du massif du Folly, Système du Jean-Bernard (Samoëns, 74)}
+
+% Auteur : 
+	\author{Groupe Spéléologique Vulcain}
+% Adresse email
+	\address{contact@groupe-speleo-vulcain.com}
+% Adresse Postale
+	\lieu{G.S. Vulcain - 26, rue Sidoine Apollinaire - 69009 Lyon - France}
+ 
+% ==================================================================
+% DEDICACE
+\dedicate{ }
+ 
+% ==================================================================
+% DEBUT DE LA PREFACE
+\beforepreface
+
+%\cleardoublepage
+ 
+% table des matières générale
+%\large{
+\renewcommand{\baselinestretch}{1.2} % interligne
+{\large\tableofcontents}
+%}
+% ==================================================================
+% Gestion de la mise en page de tous les chapitres qui suivent :
+\afterpreface
+%\renewcommand{\baselinestretch}{0.9} % interligne
+ 
+% ==================================================================
+% AVANT-PROPOS
+%\include{intro}
+%\includepdf[landscape]{Images/Inventaire_samoens_2010_3.pdf}
+\includepdf[angle=90]{Images/Inventaire_samoens_2010_3.pdf}
+\includepdf[landscape]{Images/Inventaire_samoens_2010_4.pdf}
+%\adjustmtc
+ 
+% ==================================================================
+% CONTENU GENERAL
+
+\include{JB}
+ 
+% ==================================================================
+% ANNEXES
+%\appendix
+%\include{annexe} 
+ 
+% ==================================================================
+% COLOPHON
+%\colophon{Ce document a √©t√© pr√©par√© √† l'aide de l'√©diteur de texte GNU
+%  Emacs et du logiciel de composition typographique \LaTeXe
+%  Rajouter comment il est produit ???? et par qui ????.}
+ 
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

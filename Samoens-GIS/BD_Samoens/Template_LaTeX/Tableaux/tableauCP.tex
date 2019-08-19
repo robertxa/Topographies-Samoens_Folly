@@ -1,0 +1,28 @@
+% Page Blanche si besoin
+\clearpage
+
+{\scriptsize	% On change la casse pour du tout petit
+\begin{center}	% On centre le tableau
+\setlength{\extrarowheight}{2pt}
+\setlongtables
+
+\begin{longtable} {|m{1cm} |m{0.8cm} |m{0.8cm} |m{1.8cm} |m{7cm} |m{3cm}|}	% On ouvre le tableau et on définit les colonnes, leur taille et leur lignes verticales
+\hline \hline textbf{Nom} & textbf{Prof. (m)} & textbf{Dev. (m)} & textbf{Date} & textbf{Remarques} & textbf{Références} \\ \hline \hline \endhead	% On définit le header
+ \hline \hline \endfoot
+% Dans un tableau, on sépare chaque colonne avec &, et on revient à la ligne avec \\. \hline, c'est pour générer une séparation horizontale sous forme de ligne
+	\rowcolor{lightgray} % Ca permet de griser la ligne en cours
+	BA1 & -1 & 1 & ??? & Puits érodé dans la falaise des Barmes & ??? \\\hline
+
+	BA2 & 2 & 10 & 30/05/09 & Galerie à désober & E.V. 67   \\\hline
+
+	\rowcolor{lightgray} 
+	CP1 & -60 & 80 & 01/06/74 & Glacière \/ Courant d'air à travers blocs & E.V. 16, 33, 34, 42*, 44, 47, 51, 53, 64 \\\hline
+
+	CP2 & -51 & 51 & 05/08/74 & Courant d'air à travers éboulis & E.V. 31, 36, 58* \\\hline
+
+\end{longtable}  
+\end{center}
+} % Fermer le bloc scriptsize
+
+% Page Blanche si besoin
+%\cleardoublepage
