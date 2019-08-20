@@ -32,8 +32,8 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Migrer toutes les topos sous formes de "maps" et utiliser la commande "select"
 	* Simplifier le système "scraps alone" des gros réseaux qui complique la maintenance
-	gouffre JB : le JB-plan.thconfig est fait, il faut faire les autres thconfig, et tester pour l'Atlas
-	Ermoy : il faut peut-être recouper intelligeamment !
+	* gouffre JB : le JB-plan.thconfig est fait, il faut faire les autres thconfig, et tester pour l'Atlas
+	* Ermoy : il faut peut-être recouper plus intelligeamment !
 	* Verifier toutes les zones de superpositions (C74...)
 
 - Erreurs dessins à corriger
@@ -43,8 +43,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Coordonnées du L17
 	* Coordonnées du CH23
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
-
-- Nettoyer le dossier SamoensGIS pour pouvoir le rajouter sur la BD ; voir comment on peut mettre des exceptions dans le .gitignore
 	
 - Mise à jour sur le site Vulcain
 	* Combe aux Puaires
