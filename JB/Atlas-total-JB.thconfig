@@ -126,10 +126,10 @@ layout layout_Atlas
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Xavier Robert}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
 	endcode   
   
 endlayout
 # Fin de la definition du Layout "atlas"
 
-export atlas -projection plan -fmt pdf -o atlas-JB1000_2019.pdf -layout layout_Atlas
+export atlas -projection plan -fmt pdf -o Outputs/atlas-JB1000_2019.pdf -layout layout_Atlas
