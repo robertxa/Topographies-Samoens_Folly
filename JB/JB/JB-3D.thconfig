@@ -30,7 +30,8 @@ encoding  utf-8
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
 
-source jb-3D.th
+#source Data/jb-3D.th
+source Data/jb.th
 
 #####PB
 	# JB-riviere1.th2
@@ -207,7 +208,7 @@ endlayout
 
 # Export des fichiers pdf. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o jb-Xav-2019-plan1000TEST.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/jb-Xav-2019-plan1000TEST.pdf -layout my_layout
 
 # Export des fichiers ESRI
  export model -fmt esri -o Outputs/3D/jb-Xav-2019 #-layout my_layout
