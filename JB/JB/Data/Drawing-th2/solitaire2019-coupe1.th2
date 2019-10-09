@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -561.0699999999999 -442.966 2253.9865 797.2865
+##XTHERION## xth_me_area_adjust -325.25 -206.5 1732.0900000000001 521.7
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {1604.0900000000001 1 1.0} {393.7 xx0init} solitaire-coupe2019.xvi 0 {}
 
@@ -54,7 +54,7 @@ point 756.25 191.75 label -text "<center>puits de la<br>Savonnette"
 
 point 589.5 177.5 label -text "<center>puits<br>de Newton"
 
-point 525.75 191.5 label -text "<center>carrefour<br>de Daniel"
+point 512.75 158.0 label -text "<center>carrefour<br>de Daniel"
 
 point 658.0 270.25 label -text "R1.5"
 
@@ -507,6 +507,7 @@ line wall
   -133.75 38.5 -133.5 29.25 -143.25 17.75
   -153.0 6.25 -148.0 -4.0 -157.0 -7.75
   -166.0 -11.5 -190.25 -18.75 -196.25 -19.25
+  smooth off
 endline
 
 line wall

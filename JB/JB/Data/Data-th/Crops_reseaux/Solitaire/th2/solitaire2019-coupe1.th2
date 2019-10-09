@@ -54,7 +54,7 @@ point 756.25 191.75 label -text "<center>puits de la<br>Savonnette"
 
 point 589.5 177.5 label -text "<center>puits<br>de Newton"
 
-point 525.75 191.5 label -text "<center>carrefour<br>de Daniel"
+point 537.0 132.5 label -text "<center>carrefour<br>de Daniel"
 
 point 658.0 270.25 label -text "R1.5"
 
@@ -507,6 +507,7 @@ line wall
   -133.75 38.5 -133.5 29.25 -143.25 17.75
   -153.0 6.25 -148.0 -4.0 -157.0 -7.75
   -166.0 -11.5 -184.75 -17.25 -190.75 -17.75
+  smooth off
 endline
 
 line wall

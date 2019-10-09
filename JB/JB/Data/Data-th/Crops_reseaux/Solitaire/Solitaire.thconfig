@@ -10,7 +10,7 @@ source solitaire.th
 source solitaire-tot.th
 
 # Add config file
-input ../../../../../config.thc 
+input ../../../../../../config.thc 
   
  
   
@@ -133,8 +133,8 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019c.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019c.xvi
+	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019d.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019d.xvi
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2019.pdf

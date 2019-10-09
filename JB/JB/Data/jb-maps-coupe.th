@@ -412,6 +412,10 @@ map M-solitaire -title "Réseau du Solitaire"
 	Solitaire-SP-2019c3
 	break
 	Solitaire-SP-2019c4
+	break
+	Sol2019d-SC2
+	break
+	Sol2019d-SC1
 endmap
 
 map M-puitsAlain -title "Puits Alain"     
@@ -703,7 +707,7 @@ endmap
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
-map JB-plan-tot
+map JB-coupe-tot
 	M-C37-Riviera
 	break
 	M-B22-B21

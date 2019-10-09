@@ -419,5 +419,37 @@ centerline -title "JBSolitaire 2019c : 2019-FD-60_2019-FD-60b	2019-FD-78_2019-FD
 
 endcenterline
 
+
+centerline -title "JBSolitaire 2019d : 2019-FD-31_2019-FD-31b	2019d-FD-10_2019d-FD-11"
+	#  Suite de l'explo 2019 vers l'aval du Solitaire, à partir du point 2019-FD-60
+	date 2019.08.31
+		team "Frédéric Delègue"
+		team "Guillemette Bouvier"
+	explo-date 2019.08.31
+		explo-team "Frédéric Delègue"
+		explo-team "Guillemette Bouvier"
+	units length meters
+	units compass degrees
+  	units clino degrees
+
+	data normal from to length compass clino left right up down
+	extend left
+	2019-FD-31	2019-FD-31b	0	0	0	2.6	2.8	2.3	0.5	# Départ topo au niveau du point 2019-FD-31, carrefour Daniel
+	2019-FD-31	2019d-FD-1	2.18	276	-45	0.7	0.3	1	1	# R2 ; Cailloux
+	2019d-FD-1	2019d-FD-2	3.67	183	-36	0.3	0.3	1.8	2.1	
+	2019d-FD-2	2019d-FD-3	6	286	-11	0.73	0.2	2.1	0.5	# Bloc
+	2019d-FD-3	2019d-FD-4	2.2	195	-7	0.5	0.2	2.05	1	
+	2019d-FD-4	2019d-FD-5	1.6	299	-15	0.2	0.2	1.2	1	
+	2019d-FD-5	2019d-FD-6	3.2	328	39	0.2	0.5	1.6	0.5	# R 1.5
+	2019d-FD-6	2019d-FD-7	3.9	338	5	0.3	0.3	2	2	# R2
+	2019d-FD-7	2019d-FD-8	2	0	90	0.3	0.3	2.2	2.5	
+	2019d-FD-8	2019d-FD-9	4.04	356	0	0.4	0.3	2.6	3.5	
+	2019d-FD-9	2019d-FD-10	3.63	310	1	0.8	0.7	1.5	1	# Suite du méandre à équiper, pas de courant d'air, nombreux points à poser
+	2019d-FD-10	2019d-FD-11	11	10	25	2	1	1	1	# Difficilement pénétrable ; etr.	
+																			
+# Dev = 43.42 m
+
+endcenterline
+
 endsurvey
 

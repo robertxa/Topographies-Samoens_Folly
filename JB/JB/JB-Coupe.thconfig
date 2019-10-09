@@ -210,5 +210,6 @@ layout my_layout
 # 3-EXPORT
 # Export du fichier pdf de la coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
+select JB-coupe-tot
  export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2019-coupe.pdf
  export continuation-list -o Outputs/Lists/Continuations-coupe2019.html
