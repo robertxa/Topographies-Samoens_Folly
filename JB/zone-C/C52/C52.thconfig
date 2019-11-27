@@ -13,9 +13,9 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source C52.th
- source C52.th2
- source C52-coupe.th2
+ source Data/C52.th
+ source Data/C52.th2
+ source Data/C52-coupe.th2
 
 # Add maps definitions
 source C52-maps.th
@@ -221,19 +221,19 @@ endlayout
 
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o C52-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o C52-coupe.xvi
+ export map -fmt xvi -layout xviexport -o Data/C52-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/C52-coupe.xvi
 
 # Select maps
 	select C52-plan-tot
 	select C52-coupe-tot
 	  
- export map -o C52-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o C52-coupe.pdf
- export model -o C52.lox
+ export map -o Outputs/C52-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/C52-coupe.pdf
+ export model -o Outputs/C52.lox
   
  # Export des fichiers ESRI
- export map -proj plan -fmt esri -o C52 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/C52 -layout my_layout
   
  # Export des fichiers kml
- export map -proj plan -fmt kml -o C52.kml -layout my_layout
+ export map -proj plan -fmt kml -o Outputs/C52.kml -layout my_layout

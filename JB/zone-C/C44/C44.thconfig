@@ -13,9 +13,9 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source C44.th
- source C44.th2
- source C44-coupe.th2
+ source Data/C44.th
+ source Data/C44.th2
+ source Data/C44-coupe.th2
 
 # Add maps definitions
 source C44-maps.th
@@ -219,19 +219,19 @@ layout my_layout
 endlayout
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o C44-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o C44-coupe.xvi
+ export map -fmt xvi -layout xviexport -o Data/C44-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/C44-coupe.xvi
  
 # Select maps
 	select C44-plan-tot
 	select C44-coupe-tot
   
- export map -o C44-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o C44-coupe.pdf
- export model -o C44.lox
+ export map -o Outputs/C44-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/C44-coupe.pdf
+ export model -o Outputs/C44.lox
   
  # Export des fichiers ESRI
- #export map -proj plan -fmt esri -o C44 -layout my_layout
+ #export map -proj plan -fmt esri -o Outputs/C44 -layout my_layout
   
  # Export des fichiers kml
- export map -proj plan -fmt kml -o C44.kml -layout my_layout
+ export map -proj plan -fmt kml -o Outputs/C44.kml -layout my_layout

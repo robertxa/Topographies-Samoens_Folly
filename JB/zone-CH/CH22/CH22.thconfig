@@ -1,8 +1,8 @@
 encoding  utf-8
  
-source CH22.th
-source CH22.th2
-source CH22-coupe.th2
+source Data/CH22.th
+source Data/CH22.th2
+source Data/CH22-coupe.th2
 
 # Add maps definitions
 source CH22-maps.th
@@ -134,18 +134,18 @@ layout my_layout-coupe
 endlayout
  
   
-#export map -fmt xvi -layout xviexport -o CH22-plan.xvi
-export map -projection extended -fmt xvi -layout xviexport -o CH22-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CH22-plan.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/CH22-coupe.xvi
 
 # Select maps
 	select CH22-plan-tot
 	select CH22-coupe-tot
 	
-export map -o CH22-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CH22-coupe.pdf
+export map -o Outputs/CH22-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CH22-coupe.pdf
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o CH22 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CH22 -layout my_layout
  
-export model -o CH22.lox
+export model -o Outputs/CH22.lox
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CH22.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CH22.kml -layout my_layout

@@ -13,9 +13,9 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source B10.th
-source B10.th2
-source B10-coupe.th2
+source Data/B10.th
+source Data/B10.th2
+source Data/B10-coupe.th2
 
 # Add maps definitions
 source B10-maps.th
@@ -216,19 +216,19 @@ layout my_layout-coupe
 endlayout
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o B10-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o B10-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/B10-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/B10-coupe.xvi
   
 # Select maps
 	select B10-plan-tot
 	select B10-coupe-tot
 	  
-export map -o B10-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o B10-coupe.pdf
-export model -o B10.lox
+export map -o Outputs/B10-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/B10-coupe.pdf
+export model -o Outputs/B10.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o B10 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/B10 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o B10.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/B10.kml -layout my_layout

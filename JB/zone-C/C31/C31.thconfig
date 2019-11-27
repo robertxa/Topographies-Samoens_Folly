@@ -14,9 +14,9 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source C31.th
- source C31.th2
- source C31-coupe.th2
+ source Data/C31.th
+ source Data/C31.th2
+ source Data/C31-coupe.th2
  
 # Add maps definitions
 source C31-maps.th
@@ -223,19 +223,19 @@ endlayout
  
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o C31-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o C31-coupe.xvi
+ export map -fmt xvi -layout Data/xviexport -o C31-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/C31-coupe.xvi
 
 # Select maps
 	select C31-plan-tot
 	select C31-coupe-tot
 	  
- export map -o C31-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o C31-coupe.pdf
- export model -o C31.lox
+ export map -o Outputs/C31-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/C31-coupe.pdf
+ export model -o Outputs/C31.lox
   
  # Export des fichiers ESRI
- export map -proj plan -fmt esri -o C31 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/C31 -layout my_layout
   
  # Export des fichiers kml
- export map -proj plan -fmt kml -o C31.kml -layout my_layout
+ export map -proj plan -fmt kml -o Outputs/C31.kml -layout my_layout

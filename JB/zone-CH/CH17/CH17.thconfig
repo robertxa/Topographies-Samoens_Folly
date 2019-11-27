@@ -297,8 +297,8 @@ endlayout
   
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o CH17-map2018.xvi
- export map -projection extended -fmt xvi -layout xviexport -o CH17-coupe2018.xvi
+ export map -fmt xvi -layout xviexport -o Data/CH17-map2018.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/CH17-coupe2018.xvi
  
  # Select maps
  	#select CH17-2003-plan
@@ -308,15 +308,15 @@ endlayout
 	select CH17-plan-tot
 	select CH17-coupe-tot
   
- export map -o CH17-plan2018.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o CH17-coupe2018.pdf
- export model -o CH172018.lox
+ export map -o Outputs/CH17-plan2018.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/CH17-coupe2018.pdf
+ export model -o Outputs/CH172018.lox
   
  # Export des fichiers ESRI
- export map -proj plan -fmt esri -o CH17 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CH17 -layout my_layout
   
  # Export des fichiers kml
- export map -proj plan -fmt kml -o CH17.kml -layout my_layout
- export model -fmt kml -o CH17m.kml
+ export map -proj plan -fmt kml -o Outputs/CH17.kml -layout my_layout
+ export model -fmt kml -o Outputs/CH17m.kml
  
- #export survey-list -location on -o CH17-topo.html
+ #export survey-list -location on -o Outputs/CH17-topo.html

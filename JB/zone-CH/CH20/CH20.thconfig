@@ -1,8 +1,8 @@
 encoding  utf-8
  
-source CH20.th
-source CH20-plan.th2
-source CH20-coupe.th2
+source Data/CH20.th
+source Data/CH20-plan.th2
+source Data/CH20-coupe.th2
 
 # Add maps definitions
 source CH20-maps.th
@@ -131,18 +131,18 @@ layout my_layout-coupe
 endlayout
  
   
-#export map -fmt xvi -layout xviexport -o CH20-plan.xvi
-export map -fmt xvi -projection extended -layout xviexport -o CH20-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CH20-plan.xvi
+export map -fmt xvi -projection extended -layout xviexport -o Data/CH20-coupe.xvi
 
 # Select maps
 	select CH20-plan-tot
 	select CH20-coupe-tot
 
-export map -o CH20-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CH20-coupe.pdf
+export map -o Outputs/CH20-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CH20-coupe.pdf
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o CH20 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CH20 -layout my_layout
  
-export model -o CH20.lox
+export model -o Outputs/CH20.lox
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CH20.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CH20.kml -layout my_layout

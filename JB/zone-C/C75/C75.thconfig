@@ -1,8 +1,8 @@
 encoding  utf-8
 
-source C75.th
-source C75.th2
-source C75-coupe.th2
+source Data/C75.th
+source Data/C75.th2
+source Data/C75-coupe.th2
 
 # Add maps definitions
 source C75-maps.th
@@ -128,16 +128,16 @@ endlayout
 
 
 
-#export map -fmt xvi -layout xviexport -o C75-plan.xvi
-export map -projection extended -fmt xvi -layout xviexport -o C75-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/C75-plan.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/C75-coupe.xvi
 
 # Select maps
 	select C75-plan-tot
 	select C75-coupe-tot
 	
-export map   -o C75-plan.pdf   -layout my_layout
-export map -projection extended -o C75-coupe.pdf -layout my_layout-coupe
-#export atlas -o atlas.pdf -layout my_layout
-export model -o C75.lox
+export map   -o Outputs/C75-plan.pdf   -layout my_layout
+export map -projection extended -o Outputs/C75-coupe.pdf -layout my_layout-coupe
+#export atlas -o Outputs/atlas.pdf -layout my_layout
+export model -o Outputs/C75.lox
 # Export des fichiers kml
-export map -proj plan -fmt kml -o C75.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/C75.kml -layout my_layout

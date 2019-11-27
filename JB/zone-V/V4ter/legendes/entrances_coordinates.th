@@ -1,0 +1,44 @@
+encoding  utf-8
+
+layout Entrances_coords_JBVa
+# Layout where we define the different variables that contain the text with 
+# the entrance coordinates we want to print in the header.
+# We need one variable per entrance.
+
+# This layout is called by the layout Coords_Header below
+
+	code tex-map
+		\def\thlocationJBVa{V4ter    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+	endcode 
+	
+endlayout
+
+
+layout Coords_Header_JBVa
+# Layout that set the presentation for the entrance coordinates.
+	
+	copy Entrances_coords_JBVa
+	# it calls the layout above Entrances_coords where we defined the different 
+	# variables that contain the text with 
+	# the entrance coordinates we want to print in the header.
+	
+	code tex-map
+		\def\nostring{}
+		\def\thsizexl{}
+		\def\thsizel{}
+		\def\thsizem{}
+		\ifx\thsizexl\nostring\def\thsizexl{30}\else\fi
+		\ifx\thsizel\nostring\def\thsizel{24}\else\fi
+		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
+		
+		\ECoordinates={
+			\edef\tmp{\thlocationJBVa} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thlocationJBVa\vss}	% The first one should be without hskip
+			\fi
+		}
+	endcode
+
+endlayout
+
+
+

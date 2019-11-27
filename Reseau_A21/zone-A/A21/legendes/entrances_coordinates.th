@@ -1,0 +1,48 @@
+encoding  utf-8
+
+layout Entrances_coords_AVAa
+# Layout where we define the different variables that contain the text with 
+# the entrance coordinates we want to print in the header.
+# We need one variable per entrance.
+
+# This layout is called by the layout Coords_Header below
+
+	code tex-map
+		\def\thlocationAVAa{A21    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+		\def\thlocationAVAb{A24 --  Lat. : 46.102383 N ; Long. : 6.780567 E ; Alt. : 1843 m}
+	endcode 
+	
+endlayout
+
+
+layout Coords_Header_AVAa
+# Layout that set the presentation for the entrance coordinates.
+	
+	copy Entrances_coords_AVAa
+	# it calls the layout above Entrances_coords where we defined the different 
+	# variables that contain the text with 
+	# the entrance coordinates we want to print in the header.
+	
+	code tex-map
+		\def\nostring{}
+		\def\thsizexl{}
+		\def\thsizel{}
+		\def\thsizem{}
+		\ifx\thsizexl\nostring\def\thsizexl{30}\else\fi
+		\ifx\thsizel\nostring\def\thsizel{24}\else\fi
+		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
+		
+		\ECoordinates={
+			\edef\tmp{\thlocationAVAa} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thlocationAVAa\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationAVAb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationAVAb\vss}	% You need to set your hskip
+			\fi
+		}
+	endcode
+
+endlayout
+
+
+

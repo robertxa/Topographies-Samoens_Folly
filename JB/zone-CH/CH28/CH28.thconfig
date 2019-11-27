@@ -15,9 +15,9 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source CH28.th
-source CH28.th2
-#source CH28-coupe.th2
+source Data/CH28.th
+source Data/CH28.th2
+#source Data/CH28-coupe.th2
 
 # Add maps definitions
 source CH28-maps.th
@@ -301,19 +301,19 @@ layout my_layout-coupe
 endlayout  
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o CH28-2015-map.xvi
-export map -proj extended -layout xviexport -fmt xvi -o CH28-2015-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/CH28-2015-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/CH28-2015-coupe.xvi
 
 # Select maps
 	select CH28-plan-tot
 	#select CH28-coupe-tot
   
-export map -o CH28-plan2015.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CH28-coupe2015.pdf
-#export model -o CH28.lox
+export map -o Outputs/CH28-plan2015.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CH28-coupe2015.pdf
+#export model -o Outputs/CH28.lox
   
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o CH28 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/CH28 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CH28-2015.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CH28-2015.kml -layout my_layout

@@ -14,8 +14,8 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source A24.th
- #source A24.th2
+ source Data/A24.th
+ #source Data/A24.th2
   
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -474,15 +474,15 @@ encoding  utf-8
  endlayout
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o A24-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o A24-coupe.xvi
+ export map -fmt xvi -layout xviexport -o Data/A24-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -oData/ A24-coupe.xvi
   
- export map -o A24-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout -o A24-coupe.pdf
- export model -o A24.lox
+ export map -o Outputs/A24-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout -o Outputs/A24-coupe.pdf
+ export model -o Outputs/A24.lox
   
  # Export des fichiers ESRI
- export map -proj plan -fmt esri -o A24 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/A24 -layout my_layout
   
  # Export des fichiers kml
- export map -proj plan -fmt kml -o A24.kml -layout my_layout
+ export map -proj plan -fmt kml -o Outputs/A24.kml -layout my_layout

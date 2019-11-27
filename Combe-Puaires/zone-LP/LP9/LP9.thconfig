@@ -14,6 +14,9 @@ source LP9-maps.th
 # Add config file
 input ../../../config.thc 
 
+# Add the entrance coordinates
+input legendes/entrances_coordinates.th
+
   
 layout xviexport
 	scale 1 1000
@@ -23,6 +26,7 @@ endlayout
   
 layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPLP	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy headerl  
 	copy langue-fr
@@ -72,6 +76,7 @@ endlayout
   
 layout my_layout-coupe  
   	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPLP	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
@@ -197,27 +202,27 @@ export map -fmt xvi -layout xviexport -o data-th2/LP9-CP39-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP9-CP39-coupe.xvi
 
 # Select maps
-	#select CP39-plan			# CP39
-	#select CP39-coupe
-	#select LP9-plan-actif	# LP9 actif
-	#select LP9-coupe-actif
+	#select CP39-plan		# CP39 en plan
+	#select CP39-coupe		# CP39 en coupe
+	#select LP9-plan-actif	# LP9 actif en plan
+	#select LP9-coupe-actif	# LP9 actif en coupe
 	select LP9-plan-tot		# Toute le plan du LP9
-	select LP9-coupe-tot
+	select LP9-coupe-tot	# Toute la coupe du LP9
   
-export map -o LP9-CP39-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o LP9-CP39-coupe.pdf
+export map -o Outputs/LP9-CP39-plan.pdf -layout my_layout
+export map -projection extended -layout Outputs/my_layout-coupe -o LP9-CP39-coupe.pdf
  
 # Export du fichier 3d pour Loch
-export model -o LP9-2016.lox
+export model -o Outputs/LP9-2016.lox
 
 # Export fichiers dxf
-#export model -fmt dxf -o LP9-2016.dxf
+#export model -fmt dxf -o Outputs/LP9-2016.dxf
 
 # Export du fichier 3D en vrml
-#export model -o LP9.vrml
+#export model -o Outputs/LP9.vrml
    
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o LP9-CP39 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/LP9-CP39 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o LP9-CP39.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/LP9-CP39.kml -layout my_layout

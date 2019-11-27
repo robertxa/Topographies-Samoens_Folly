@@ -13,9 +13,9 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source D33.th
-source D33.th2
-source D33-coupe.th2
+source Data/D33.th
+source Data/D33.th2
+source Data/D33-coupe.th2
 
 # Add maps definitions
 source LP9-maps.th
@@ -283,19 +283,19 @@ endlayout
   
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o D33-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o D33-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/D33-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/D33-coupe.xvi
   
 # Select maps
 	select D33-plan-tot
 	select D33-coupe-tot  
   
-export map -o D33-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o D33-coupe.pdf
-export model -o D33.lox
+export map -o Outputs/D33-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/D33-coupe.pdf
+export model -o Outputs/D33.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o D33 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/D33 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o D33.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/D33.kml -layout my_layout

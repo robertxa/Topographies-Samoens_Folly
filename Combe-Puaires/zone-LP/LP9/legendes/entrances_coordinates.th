@@ -1,28 +1,17 @@
 encoding  utf-8
 
-layout Entrances_coords
+layout Entrances_coords_CPLP
 
 	code tex-map
-		\def\thlocationa{V4    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
-		\def\thlocationb{V4bis --  Lat. : 46.102383 N ; Long. : 6.780567 E ; Alt. : 1843 m}
-		\def\thlocationc{V4ter --  Lat. : 46.102571 N ; Long. : 6.780500 E ; Alt. = 1854 m}
-		\def\thlocationd{V5    --  Lat. : 46.10212 N ; Long. : 6.78202 E ; Alt. : 1873 m}
-		\def\thlocatione{V6    --  Lat. : 46.10273 N ; Long. : 6.78067 E ; Alt. : 1853 m}
-		\def\thlocationf{V6b   --  Lat. : 46.10245 N ; Long. : 6.78135 E ; Alt. : 1863 m}
-		\def\thlocationg{J14   --  Lat. : 46.10377 N ; Long. : 6.78598 E ; Alt. : 1984 m}
-		\def\thlocationh{V11   --  Lat. : 46.10453 N ; Long. : 6.78850 E ; Alt. : 2048 m}
-		\def\thlocationi{B19   --  Lat. : 46.10422 N ; Long. : 6.79225 E ; Alt. : 2118 m}
-		\def\thlocationj{B21   --  Lat.: 46.1036667 N ; Long. : 6.79451667 E ; Alt. : 2237 m}
-		\def\thlocationk{B22   --  Lat. : 46.10452 N ; Long.: 6.79435 E ; Alt. : 2194 m}
-		\def\thlocationl{C37a  --  Lat. : 46.106700 N ; Long. : 6.799667 E ; Alt. : 2330 m}
-		\def\thlocationm{C37b  --  Lat. : 46.106733 N ; Long. : 6.79960 E ; Alt. : 2333 m}
+		\def\thlocationCPLPa{LP9a    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+		\def\thlocationCPLPb{CP39 --  Lat. : 46.102383 N ; Long. : 6.780567 E ; Alt. : 1843 m}
 	endcode 
 	
 endlayout
 
-layout Coords_Header
+layout Coords_Header_CPLP
 	
-	copy Entrances_coords
+	copy Entrances_coords_CPLP
 	
 	code tex-map
 		\def\nostring{}
@@ -34,44 +23,11 @@ layout Coords_Header
 		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
 		
 		\ECoordinates={
-			\edef\tmp{\thlocationa} \ifx\tmp\empty \else
-				{\size[\thsizem] \ss\thlocationa\vss}
+			\edef\tmp{\thlocationCPLPa} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thlocationCPLPa\vss}
 			\fi
-			\edef\tmp{\thlocationb} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationb\vss}
-			\fi
-			\edef\tmp{\thlocationc} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationc\vss}
-			\fi
-			\edef\tmp{\thlocationd} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationd\vss}
-			\fi
-			\edef\tmp{\thlocatione} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocatione\vss}
-			\fi
-			\edef\tmp{\thlocationf} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationf\vss}
-			\fi
-			\edef\tmp{\thlocationg} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationg\vss}
-			\fi
-			\edef\tmp{\thlocationh} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationh\vss}
-			\fi
-			\edef\tmp{\thlocationi} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationi\vss}
-			\fi
-			\edef\tmp{\thlocationj} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationj\vss}
-			\fi
-			\edef\tmp{\thlocationk} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationk\vss}
-			\fi
-			\edef\tmp{\thlocationl} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationl\vss}
-			\fi
-			\edef\tmp{\thlocationm} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationm\vss}
+			\edef\tmp{\thlocationCPLPb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationCPLPb\vss}
 			\fi
 		}
 	endcode
