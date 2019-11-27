@@ -177,10 +177,6 @@ layout langue-fr
 		\newtoks\thexpe \thexpe={Expedition }
 		\newtoks\thguide \thguide={Guide(s) }
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
-		\newtoks\ththanksto \ththanksto{Nos remerciements }
-		\newtoks\thcoords \thcoords{Coordonnées GPS (WGS84) }
-		
-		
 
 		# Initiate variables
 		\newtoks\club \club={}
@@ -188,9 +184,6 @@ layout langue-fr
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
-		\newtoks\thanksto \thanksto={}
-		\newtoks\ECoordinates \ECoordinates={}
-		
 	endcode
 endlayout
 
@@ -212,9 +205,6 @@ layout langue-es
 		\newtoks\thexpe \thexpe={Expedición}
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\thguide \thguide={Guia(s)}
-		\newtoks\ththanksto \ththanksto{Nuestros agradecimientos }
-		\newtoks\thcoords \thcoords{Coordinadas GPS (WGS84) }
-		
 		\cartotitle={Dibujo}
 
 		# Initiate variables		
@@ -223,9 +213,6 @@ layout langue-es
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
-		\newtoks\thanksto \thanksto={}
-		\newtoks\ECoordinates \ECoordinates={}
-		
 	endcode	
 	
 endlayout
@@ -248,8 +235,6 @@ layout langue-en
 		\newtoks\thexpe \thexpe={Expedition}
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\thguide \thguide={Guide(s)}
-		\newtoks\ththanksto \ththanksto{Acknowledgments }
-		\newtoks\thcoords \thcoords{GPS coordinates (WGS84) }
 
 		# Initiate variables
 		\newtoks\club \club={}
@@ -257,9 +242,6 @@ layout langue-en
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
-		\newtoks\thanksto \thanksto={}
-		\newtoks\ECoordinates \ECoordinates={}
-		
 	endcode	
 	
 endlayout
@@ -1227,7 +1209,6 @@ layout headerl
 	#<en> This one affects maps only
 	#<fr> Ceci ne touche que les maps (plans)
 	code tex-map
-		
 		\legendcontent={%
 			\hsize=\legendwidth
 			\color[0 0 0]\the\legendtextcolor
@@ -1243,249 +1224,6 @@ layout headerl
 			\fi}
 			%print scalebar
 			\ifscalebar\scalebar\vskip1cm\fi
-		
-		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
-			\vskip0.5cm
-		\fi
-
-		% start bruces addition
-		# %    CS
-		\edef\tmp{\the\outcsname} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thproj: \ss\the\outcsname\par}
-		\fi
-		\edef\tmp{\the\northdir} \ifx\tmp\empty \else
-			{\the\legendtextsize\ss\the\northdir north }
-		\fi
-		\edef\tmp{\the\magdecl} \ifx\tmp\empty \else
-			{\the\legendtextsize\ss\the\magdecl { deg.} \par}
-		\fi
-		\vskip0.5cm
-		% end bruces addition
-		#%print comment
-		{
-		#\rightskip=0pt plus 3em\parskip=3bp
-		#\edef\tmp{\the\comment} \ifx\tmp\empty \else
-		#	{\the\legendtextsize\the\comment} \par\medskip
-		#\fi
-		%print cavelength and depth
-		\everypar{\hangindent=2em\hangafter=1}
-		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
-		\fi
-		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
-		\fi
-		# % start bruces addition
-		## %      altitude
-		#\edef\tmp{\the\cavemaxz} \ifx\tmp\empty \else
-		#	{\the\legendtextsize\si\the\depthrangetitle \ss\the\cavemaxz m to}
-		#\fi
-		#\edef\tmp{\the\caveminz} \ifx\tmp\empty \else
-		#	{\the\legendtextsize\ss\the\caveminz m \par} %above mean sea level
-		#\fi
-		# % end bruces addition
-
-		%print explorers names
-		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
-		\fi
-		%print surveyors names
-		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
-		\fi
-		 %%print the guides
-		\edef\tmp{\the\guide} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
-		\fi
-		%print cartographers names
-		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
-		\fi
-		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
-		\edef\tmp{\the\synth} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
-		\fi
-		%print the club
-		\edef\tmp{\the\club} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
-		\fi
-		%%print the expedition
-		\edef\tmp{\the\expe} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
-		\fi
-        %%print the web page
-		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
-		\fi
-		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
-		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
-			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
-		% \fi
-		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
-		\fi
-
-		# % end bruces addition
-		%print copyrights
-		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
-			{\the\legendtextsize\ss\the\copyrights\par}
-		\fi
-		
-		\bigskip
-		\edef\tmp{\ththanksto} \ifx\tmp\empty \else
-				{\the\legendtextsize\si\the\ththanksto: \ss\the\thanksto\par}
-				%\def\ththankstotitle{Nos remerciements : }
-				%{\everypar{\hangindent=7.2em\hangafter=1}
-				%\size[\thsizem]\si\ththankstotitle \ss\ththanksto\par}
-		\fi
-		}
-		\formattedlegend
-		\color[0 0 0]
-		}
-
-	endcode
-endlayout
-
-
-#------------------------------
-layout header_coupe
-#<en> Layout to change the header (extended elevation)
-#     This code is experimental redefinition of map header
-#     Bruce Mutton           Therion 5.3.15 make use of new variables
-#<fr> Layout pour modifier le cartouche (header) de la projection en coupe développée
-#     Ce code de redéfinition est expérimental experimental et basé sur le travail de
-#     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
-
-	#<en> This one affects maps only (extended view)
-	#<fr> Ceci ne touche que les maps (coupes développées)
-	code tex-map
-		\legendcontent={%
-			\hsize=\legendwidth
-			\color[0 0 0]\the\legendtextcolor
-			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
-			%print cave map name
-			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
-				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
-			\fi
-			%print comment
-			{\rightskip=0pt plus 3em\parskip=3bp
-			\edef\tmp{\the\comment} \ifx\tmp\empty \else
-				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
-			\fi}
-			%print scalebar
-			\ifscalebar\scalebar\vskip1cm\fi
-
-		{
-		%print the coordinates of the entrance. It is associated with the entrances_coordinates.th file
-		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
-			\vskip0.5cm
-		\fi
-		%print cavelength and depth
-		\everypar{\hangindent=2em\hangafter=1}
-		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
-		\fi
-		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
-		\fi
-		# % end bruces addition
-
-		%print explorers names
-		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
-		\fi
-		%print surveyors names
-		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
-		\fi
-		 %%print the guides
-		\edef\tmp{\the\guide} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
-		\fi
-		%print cartographers names
-		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
-		\fi
-		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
-		\edef\tmp{\the\synth} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
-		\fi
-		%print the club
-		\edef\tmp{\the\club} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
-		\fi
-		%%print the expedition
-		\edef\tmp{\the\expe} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
-		\fi
-        %%print the web page
-		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
-		\fi
-		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
-		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
-			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
-		% \fi
-		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
-		\fi
-
-		# % end bruces addition
-		%print copyrights
-		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
-			{\the\legendtextsize\ss\the\copyrights\par}
-		\fi
-		
-		\bigskip
-		\edef\tmp{\ththanksto} \ifx\tmp\empty \else
-				{\the\legendtextsize\si\the\ththanksto: \ss\the\thanksto\par}
-				%\def\ththankstotitle{Nos remerciements : }
-				%{\everypar{\hangindent=7.2em\hangafter=1}
-				%\size[\thsizem]\si\ththankstotitle \ss\ththanksto\par}
-		\fi
-		}
-		\formattedlegend
-		\color[0 0 0]
-		}
-	endcode
-endlayout
-
-
-#------------------------------
-layout headeratlas
-#<en> Layout to change the header (plan projection)
-#     This code is experimental redefinition of map header and based on the work of
-#     Bruce Mutton           Therion 5.3.15 make use of new variables
-#<fr> Layout pour modifier le cartouche (header) de la projection en plan
-#     Ce code de redéfinition est expérimental experimental et basé sur le travail de
-#     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
-
-
-	#<en> This one affects maps only
-	#<fr> Ceci ne touche que les maps (plans)
-	code tex-map
-		\legendcontent={%
-			\hsize=\legendwidth
-			\color[0 0 0]\the\legendtextcolor
-			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
-			%print cave map name
-			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
-				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
-			\fi
-			%print comment
-			{\rightskip=0pt plus 3em\parskip=3bp
-			\edef\tmp{\the\comment} \ifx\tmp\empty \else
-				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
-			\fi}
-			%print scalebar
-			\ifscalebar\scalebar\vskip1cm\fi
-			
-		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
-			\vskip0.5cm
-		\fi
 
 		% start bruces addition
 		# %    CS
@@ -1569,13 +1307,217 @@ layout headeratlas
 		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
 			{\the\legendtextsize\ss\the\copyrights\par}
 		\fi
-		
-		\bigskip
-		\edef\tmp{\ththanksto} \ifx\tmp\empty \else
-				{\the\legendtextsize\si\the\ththanksto: \ss\the\thanksto\par}
-				%\def\ththankstotitle{Nos remerciements : }
-				%{\everypar{\hangindent=7.2em\hangafter=1}
-				%\size[\thsizem]\si\ththankstotitle \ss\ththanksto\par}
+		}
+		\formattedlegend
+		\color[0 0 0]
+		}
+
+	endcode
+endlayout
+
+
+#------------------------------
+layout header_coupe
+#<en> Layout to change the header (extended elevation)
+#     This code is experimental redefinition of map header
+#     Bruce Mutton           Therion 5.3.15 make use of new variables
+#<fr> Layout pour modifier le cartouche (header) de la projection en coupe développée
+#     Ce code de redéfinition est expérimental experimental et basé sur le travail de
+#     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
+
+	#<en> This one affects maps only (extended view)
+	#<fr> Ceci ne touche que les maps (coupes développées)
+	code tex-map
+		\legendcontent={%
+			\hsize=\legendwidth
+			\color[0 0 0]\the\legendtextcolor
+			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			%print cave map name
+			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
+				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
+			\fi
+			%print comment
+			{\rightskip=0pt plus 3em\parskip=3bp
+			\edef\tmp{\the\comment} \ifx\tmp\empty \else
+				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
+			\fi}
+			%print scalebar
+			\ifscalebar\scalebar\vskip1cm\fi
+
+		{
+		%print cavelength and depth
+		\everypar{\hangindent=2em\hangafter=1}
+		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+		\fi
+		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+		\fi
+		# % end bruces addition
+
+		%print explorers names
+		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+		\fi
+		%print surveyors names
+		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+		\fi
+		 %%print the guides
+		\edef\tmp{\the\guide} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+		\fi
+		%print cartographers names
+		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+		\fi
+		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+		\edef\tmp{\the\synth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+		\fi
+		%print the club
+		\edef\tmp{\the\club} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+		\fi
+		%%print the expedition
+		\edef\tmp{\the\expe} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+		\fi
+        %%print the web page
+		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
+		% \fi
+		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+		\fi
+
+		# % end bruces addition
+		%print copyrights
+		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\copyrights\par}
+		\fi
+		}
+		\formattedlegend
+		\color[0 0 0]
+		}
+	endcode
+endlayout
+
+
+#------------------------------
+layout headeratlas
+#<en> Layout to change the header (plan projection)
+#     This code is experimental redefinition of map header and based on the work of
+#     Bruce Mutton           Therion 5.3.15 make use of new variables
+#<fr> Layout pour modifier le cartouche (header) de la projection en plan
+#     Ce code de redéfinition est expérimental experimental et basé sur le travail de
+#     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
+
+
+	#<en> This one affects maps only
+	#<fr> Ceci ne touche que les maps (plans)
+	code tex-map
+		\legendcontent={%
+			\hsize=\legendwidth
+			\color[0 0 0]\the\legendtextcolor
+			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			%print cave map name
+			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
+				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
+			\fi
+			%print comment
+			{\rightskip=0pt plus 3em\parskip=3bp
+			\edef\tmp{\the\comment} \ifx\tmp\empty \else
+				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
+			\fi}
+			%print scalebar
+			\ifscalebar\scalebar\vskip1cm\fi
+
+		% start bruces addition
+		# %    CS
+		\edef\tmp{\the\outcsname} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thproj: \ss\the\outcsname\par}
+		\fi
+		\edef\tmp{\the\northdir} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\northdir north }
+		\fi
+		\edef\tmp{\the\magdecl} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\magdecl deg \par}
+		\fi
+		\vskip0.5cm
+		% end bruces addition
+		#%print comment
+		{
+		#\rightskip=0pt plus 3em\parskip=3bp
+		#\edef\tmp{\the\comment} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\the\comment} \par\medskip
+		#\fi
+		%print cavelength and depth
+		\everypar{\hangindent=2em\hangafter=1}
+		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+		\fi
+		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+		\fi
+		# % start bruces addition
+		## %      altitude
+		#\edef\tmp{\the\cavemaxz} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\si\the\depthrangetitle \ss\the\cavemaxz m to}
+		#\fi
+		#\edef\tmp{\the\caveminz} \ifx\tmp\empty \else
+		#	{\the\legendtextsize\ss\the\caveminz m \par} %above mean sea level
+		#\fi
+		# % end bruces addition
+
+		%print explorers names
+		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+		\fi
+		%print surveyors names
+		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+		\fi
+		 %%print the guides
+		\edef\tmp{\the\guide} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+		\fi
+		%print cartographers names
+		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+		\fi
+		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+		\edef\tmp{\the\synth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+		\fi
+		%print the club
+		\edef\tmp{\the\club} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+		\fi
+		%%print the expedition
+		\edef\tmp{\the\expe} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+		\fi
+        %%print the web page
+		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
+		% \fi
+		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+		\fi
+
+		# % end bruces addition
+		%print copyrights
+		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\copyrights\par}
 		\fi
 		}
 		\formattedlegend

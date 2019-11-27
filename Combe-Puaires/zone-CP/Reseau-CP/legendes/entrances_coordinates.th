@@ -1,0 +1,46 @@
+encoding  utf-8
+
+layout Entrances_coords_CPCPr
+
+	code tex-map
+		\def\thlocationCPCPra{CP12    --  Lat. : 46.114050 N ; Long. : 6.794183 E ; Alt. : 2025 m}
+		\def\thlocationCPCPrb{CP14 --  Lat. : 46.115067 N ; Long. : 6.797717 E ; Alt. : 2130 m}
+		\def\thlocationCPCPrc{CP16 --  Lat. : 46.115050 N ; Long. : 6.798150 E ; Alt. = 2135 m}	% A REVOIR ?
+		\def\thlocationCPCPrd{CP19 bis    --  Lat. : 46.112617 N ; Long. : 6.792833 E ; Alt. : 1984 m}
+	endcode 
+	
+endlayout
+
+layout Coords_Header_CPCPr
+	
+	copy Entrances_coords_CPCPr
+	
+	code tex-map
+		\def\nostring{}
+		\def\thsizexl{}
+		\def\thsizel{}
+		\def\thsizem{}
+		\ifx\thsizexl\nostring\def\thsizexl{30}\else\fi
+		\ifx\thsizel\nostring\def\thsizel{24}\else\fi
+		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
+		
+		\ECoordinates={
+			\edef\tmp{\thlocationCPCPra} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thlocationCPCPra\vss}
+			\fi
+			\edef\tmp{\thlocationCPCPrb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationCPCPrb\vss}
+			\fi
+			\edef\tmp{\thlocationCPCPrc} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationCPCPrc\vss}
+			\fi
+			\edef\tmp{\thlocationCPCPrd} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationCPCPrd\vss}
+			\fi
+		}
+	endcode
+
+endlayout
+
+
+

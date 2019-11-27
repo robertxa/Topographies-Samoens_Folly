@@ -31,8 +31,12 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 source Data/jb.th
+
 # Add config file
 input ../../config.thc 
+
+# Add the entrance coordinates
+input legendes/entrances_coordinates.th
 
 
   
@@ -58,6 +62,7 @@ layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
+	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
 	copy headerl 
 	copy langue-fr
 
@@ -196,6 +201,7 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi ??, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 	endcode   
   
 endlayout

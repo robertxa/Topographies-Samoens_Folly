@@ -36,6 +36,8 @@ source Data/jb-maps-plan
 # Add config file
 input ../../config.thc 
 
+# Add the entrance coordinates
+input legendes/entrances_coordinates.th
 
   
 # 2-LAYOUT
@@ -59,9 +61,10 @@ endlayout
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy drawingconfig
-	copy headerl 
-	copy langue-fr
+	copy drawingconfig		# Pour modifier les symboles
+	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	copy headerl 			# Pour modifier le header/cartouche
+	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
 
 	cs UTM32
   
@@ -193,7 +196,11 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi ??, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+		
 	endcode   
+	
+	# Add logos to the map
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -221,7 +228,7 @@ endlayout
 #  select JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select JB-plan-tot
- export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2019-plan1000TEST.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2019-plan1000.pdf -layout my_layout
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2018-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
