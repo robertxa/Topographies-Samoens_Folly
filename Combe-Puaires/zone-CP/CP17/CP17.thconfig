@@ -220,12 +220,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP17-coup
 	select CP17-plan-tot
 	select CP17-coupe-tot
 	  
-export map -o CP17-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CP17-coupe.pdf
-export model -o CP17.lox
+export map -o Outputs/CP17-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP17-coupe.pdf
+export model -o Outputs/CP17.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP17 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP17 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CP17.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP17.kml -layout my_layout

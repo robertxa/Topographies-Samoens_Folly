@@ -11,9 +11,9 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
- source BA4.th
- source BA4.th2
- source BA4-coupe.th2
+ source Data/BA4.th
+ source Data/BA4.th2
+ source Data/BA4-coupe.th2
 
 # Add maps definitions
 source BA4-maps.th
@@ -316,19 +316,19 @@ layout my_layout-coupe
 endlayout 
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o BA4-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o BA4-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/BA4-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/BA4-coupe.xvi
 
 # Select maps
 	select BA4-plan-tot
 	select BA4-coupe-tot
 	  
-export map -o BA4-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o BA4-coupe.pdf
-#export model -o BA2.lox
+export map -o Outputs/BA4-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/BA4-coupe.pdf
+#export model -o Outputs/BA2.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o BA4 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/BA4 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o BA4.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/BA4.kml -layout my_layout

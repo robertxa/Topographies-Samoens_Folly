@@ -225,12 +225,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP3-coupe
 	select CP3-plan-tot
 	select CP3-coupe-tot
 	  
-export map -o CP3-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CP3-coupe.pdf
-export model -o CP3.lox
+export map -o Outputs/CP3-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP3-coupe.pdf
+export model -o Outputs/CP3.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP3 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP3 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CP3.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP3.kml -layout my_layout

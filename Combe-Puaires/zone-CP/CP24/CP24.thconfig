@@ -218,12 +218,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP24-coup
 	select CP24-plan-tot
 	select CP24-coupe-tot
 	  
-export map -o CP24-plan2018.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CP24-coupe2018.pdf
-export model -o CP24.lox
+export map -o Outputs/CP24-plan2018.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP24-coupe2018.pdf
+export model -o Outputs/CP24.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP24 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP24 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CP24.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP24.kml -layout my_layout

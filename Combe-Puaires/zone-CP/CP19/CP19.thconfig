@@ -219,12 +219,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP19-coup
 	select CP19-plan-tot
 	select CP19-coupe-tot
 		
-export map -o CP19-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CP19-coupe.pdf
-export model -o CP19.lox
+export map -o Outputs/CP19-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP19-coupe.pdf
+export model -o Outputs/CP19.lox
 	
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP19 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP19 -layout my_layout
 	
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CP19.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP19.kml -layout my_layout

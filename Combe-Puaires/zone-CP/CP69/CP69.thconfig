@@ -11,9 +11,9 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source CP69.th
-source CP69.th2
-source CP69-coupe.th2
+source Data/CP69.th
+source Data/CP69.th2
+source Data/CP69-coupe.th2
 
 # Add maps definitions
 source CP69-maps.th
@@ -162,7 +162,7 @@ layout my_layout
 	endcode  
 
 # add extended-elev on the same pdf
- map-image 200 0 s CP69-coupe2015.pdf
+ map-image 200 0 s Outputs/CP69-coupe2015.pdf
 
 endlayout
 
@@ -295,20 +295,20 @@ endlayout
 
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o CP69-2015-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o CP69-2015-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CP69-2015-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/CP69-2015-coupe.xvi
 
 # Select maps
 	select CP69-plan-tot
 	select CP69-coupe-tot
 	 
-export map -projection extended -layout my_layout-coupe -o CP69-coupe2015.pdf 
-export map -o CP69-plan2015.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP69-coupe2015.pdf 
+export map -o Outputs/CP69-plan2015.pdf -layout my_layout
  
- #export model -o CP69.lox
+ #export model -o Outputs/CP69.lox
   
  # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o CP69 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/CP69 -layout my_layout
   
  # Export des fichiers kml
- #export map -proj plan -fmt kml -o CP69-2015.kml -layout my_layout
+ #export map -proj plan -fmt kml -o Outputs/CP69-2015.kml -layout my_layout

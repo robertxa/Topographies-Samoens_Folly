@@ -4,9 +4,9 @@ encoding  utf-8
 # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
 # This work is under the GPLv2  
   
-source L39.th
-source L39.th2
-source L39-coupe.th2
+source Data/L39.th
+source Data/L39.th2
+source Data/L39-coupe.th2
 
 # Add maps definitions
 source L39-maps.th
@@ -118,14 +118,14 @@ layout my_layout-coupe
   
 endlayout
 
-export map -fmt xvi -layout xviexport -o L39-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o L39-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/L39-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/L39-coupe.xvi
 
 # Select maps
 	select L39-plan-tot
 	select L39-coupe-tot
 	  
-export map -o L39-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o L39-coupe.pdf
-export model -o L39.lox
-export map -proj plan -fmt kml -o L39.kml -layout my_layout
+export map -o Outputs/L39-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/L39-coupe.pdf
+export model -o Outputs/L39.lox
+export map -proj plan -fmt kml -o Outputs/L39.kml -layout my_layout

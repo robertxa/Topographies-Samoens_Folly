@@ -4,9 +4,9 @@ encoding  utf-8
 # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
 # This work is under the GPLv2
   
-source BA09.th
-source BA09.th2
-source BA09-coupe.th2
+source Data/BA09.th
+source Data/BA09.th2
+source Data/BA09-coupe.th2
 
 # Add maps definitions
 source BA9-maps.th
@@ -68,7 +68,7 @@ layout my_layout
 	endcode  
    
 	# add extended-elev on the same pdf
-	map-image 200 130 n BA09-coupe.pdf
+	map-image 200 130 n Outputs/BA09-coupe.pdf
 
 endlayout
  
@@ -122,14 +122,14 @@ layout my_layout-coupe
 endlayout
 
 
-#export map -fmt xvi -layout xviexport -o BA09-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o BA09-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/BA09-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/BA09-coupe.xvi
 
 # Select maps
 	select BA9-plan-tot
 	select BA9-coupe-tot  
  
-export map -projection extended -layout my_layout-coupe -o BA09-coupe.pdf
-export map -o BA09-plan.pdf -layout my_layout
-export model -o BA09.lox
-export map -proj plan -fmt kml -o BA09.kml -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/BA09-coupe.pdf
+export map -o Outputs/BA09-plan.pdf -layout my_layout
+export model -o Outputs/BA09.lox
+export map -proj plan -fmt kml -o Outputs/BA09.kml -layout my_layout

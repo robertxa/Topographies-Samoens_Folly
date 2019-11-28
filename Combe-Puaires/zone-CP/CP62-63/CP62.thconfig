@@ -292,13 +292,13 @@ endlayout
 	select CP62-plan-tot
 	select CP62-coupe-tot
 	  
-export map -o CP62-plan.pdf -layout my_layout
-export map -projection extended -layout my_layoutcoupe -o CP62-coupe.pdf
-export model -o CP62.lox
+export map -o Outputs/CP62-plan.pdf -layout my_layout
+export map -projection extended -layout my_layoutcoupe -o Outputs/CP62-coupe.pdf
+export model -o Outputs/CP62.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP62 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP62 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o CP62.kml -layout my_layout
-#export model -fmt kml -o CP62.kml
+export map -proj plan -fmt kml -o Outputs/CP62.kml -layout my_layout
+#export model -fmt kml -o Outputs/CP62.kml

@@ -218,12 +218,12 @@ endlayout
 	select CP28-plan-tot
 	#select CP28-coupe-tot
 	
- export map -o CP28a-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout -o CP28a-coupe.pdf
- export model -o CP28a.lox
+ export map -o Outputs/CP28a-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout -o Outputs/CP28a-coupe.pdf
+ export model -o Outputs/CP28a.lox
   
  # Export des fichiers ESRI
- #export map -proj plan -fmt esri -o CP28a -layout my_layout
+ #export map -proj plan -fmt esri -o Outputs/CP28a -layout my_layout
   
  # Export des fichiers kml
- export map -proj plan -fmt kml -o CP28a.kml -layout my_layout
+ export map -proj plan -fmt kml -o Outputs/CP28a.kml -layout my_layout

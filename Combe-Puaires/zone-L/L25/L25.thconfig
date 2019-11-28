@@ -128,12 +128,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/L25-coupe
 	select L25-plan-tot
 	select L25-coupe-tot
 	  
-export map -o L25-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o L25-coupe.pdf
-export model -o L25.lox
+export map -o Outputs/L25-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/L25-coupe.pdf
+export model -o Outputs/L25.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o L25 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/L25 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o L25.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/L25.kml -layout my_layout

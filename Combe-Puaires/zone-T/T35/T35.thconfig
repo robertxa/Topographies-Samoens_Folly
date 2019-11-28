@@ -5,9 +5,9 @@ encoding  utf-8
 # Copyright (C) 2010 Xavier Robert
 # This work is under the GPLv2
   
-source T35.th
-source T35.th2
-source T35-coupe.th2
+source Data/T35.th
+source Data/T35.th2
+source Data/T35-coupe.th2
 
 # Add maps definitions
 source T35-maps.th
@@ -122,14 +122,14 @@ layout my_layout-coupe
  
 endlayout
 
-export map -fmt xvi -layout xviexport -o T35-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o T35-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/T35-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/T35-coupe.xvi
 
 # Select maps
 	select T35-plan-tot
 	select T35-coupe-tot
 	  
-export map -projection plan -o T35-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o T35-coupe.pdf
-export model -o T35.lox
-export map -proj plan -fmt kml -o T35.kml -layout my_layout
+export map -projection plan -o Outputs/T35-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/T35-coupe.pdf
+export model -o Outputs/T35.lox
+export map -proj plan -fmt kml -o Outputs/T35.kml -layout my_layout

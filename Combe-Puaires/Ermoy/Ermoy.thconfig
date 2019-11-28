@@ -21,6 +21,10 @@ source Ermoy-maps.th
 
 # Add config file
 input ../../config.thc 
+
+# Add the entrance coordinates
+input legendes/entrances_coordinates.th
+
   
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -36,6 +40,7 @@ endlayout
   
 layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_Ermoy	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
@@ -165,6 +170,7 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_Ermoy	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
@@ -215,19 +221,19 @@ layout my_layout-coupe
 endlayout
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o Ermoy-MARS-2017-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o data-th2/Ermoy-MARS-2017-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/data-th2/Ermoy-MARS-2017-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/data-th2/Ermoy-MARS-2017-coupe.xvi
 
 # Select maps
 	select Ermoy-plan-tot
 	select Ermoy-coupe-tot
   
-export map -o Ermoy-MARS-2014-plan.pdf -layout my_layout
-#export map -projection extended -layout my_layout-coupe -o Ermoy-MARS-2009-coupe.pdf
-export model -o Ermoy-MARS-2009.lox
+export map -o Outputs/Ermoy-MARS-2014-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-MARS-2009-coupe.pdf
+export model -o Outputs/Ermoy-MARS-2009.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Ermoy-MARS-2009 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/Ermoy-MARS-2009 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Ermoy-MARS-2009.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/Ermoy-MARS-2009.kml -layout my_layout

@@ -166,7 +166,7 @@ layout my_layout
 	endcode   
   
 	# add extended-elev on the same pdf
-	map-image -10 100 sw CP1-coupe2.pdf
+	map-image -10 100 sw Outputs/CP1-coupe2.pdf
 
   
 endlayout
@@ -309,13 +309,13 @@ endlayout
 	select CP1-plan-tot
 	select CP1-coupe-tot
 	 
-export map -projection extended -layout my_layout-coupe -o CP1-coupe2.pdf 
-export map -o CP1-plan2.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP1-coupe2.pdf 
+export map -o Outputs/CP1-plan2.pdf -layout my_layout
  
-#export model -o CP1.lox
+#export model -o Outputs/CP1.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP1 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP1 -layout my_layout
   
 # Export des fichiers kml
-#export map -proj plan -fmt kml -o CP1.kml -layout my_layout
+#export map -proj plan -fmt kml -o Outputs/CP1.kml -layout my_layout

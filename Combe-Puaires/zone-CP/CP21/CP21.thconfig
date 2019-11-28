@@ -287,12 +287,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP21-coup
 	select CP21-plan-tot
 	select CP21-coupe-tot
 	  
-export map -o CP21-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o CP21-coupe.pdf
-export model -o CP21.lox
+export map -o Outputs/CP21-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP21-coupe.pdf
+export model -o Outputs/CP21.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP21 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP21 -layout my_layout
   
 # Export des fichiers kml
-#export map -proj plan -fmt kml -o CP21.kml -layout my_layout
+#export map -proj plan -fmt kml -o Outputs/CP21.kml -layout my_layout

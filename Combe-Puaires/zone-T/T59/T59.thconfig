@@ -5,9 +5,9 @@ encoding  utf-8
  # Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
  # This work is under the GPLv2
   
-source T59.th
-source T59.th2
-source T59-coupe.th2
+source Data/T59.th
+source Data/T59.th2
+source Data/T59-coupe.th2
 
 # Add maps definitions
 source T59-maps.th
@@ -122,14 +122,14 @@ layout my_layout-coupe
  
 endlayout
 
-#export map -fmt xvi -layout xviexport -o T59-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o T59-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/T59-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/T59-coupe.xvi
 
 # Select maps
 	select T59-plan-tot
 	select T59-coupe-tot
 	  
-export map -o T59-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o T59-coupe.pdf
-export model -o T59.lox
-export map -proj plan -fmt kml -o T59.kml -layout my_layout
+export map -o Outputs/T59-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/T59-coupe.pdf
+export model -o Outputs/T59.lox
+export map -proj plan -fmt kml -o Outputs/T59.kml -layout my_layout

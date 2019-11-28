@@ -124,12 +124,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP23-coup
 	select LP23-plan-tot
 	select LP23-coupe-tot
 	  
-export map -o LP23-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o LP23-coupe.pdf
-export model -o LP23.lox
+export map -o Outputs/LP23-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/LP23-coupe.pdf
+export model -o Outputs/LP23.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o LP23 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/LP23 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o LP23.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/LP23.kml -layout my_layout

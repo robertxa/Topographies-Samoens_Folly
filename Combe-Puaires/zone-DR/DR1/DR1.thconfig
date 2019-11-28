@@ -229,12 +229,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/DR1-coupe
 	select DR1-plan-tot
 	select DR1-coupe-tot
 	  
-export map -o DR1-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o DR1-coupe.pdf
-export model -o DR1.lox
+export map -o Outputs/DR1-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/DR1-coupe.pdf
+export model -o Outputs/DR1.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o DR1 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/DR1 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o DR1.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/DR1.kml -layout my_layout

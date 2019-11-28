@@ -129,12 +129,12 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/T25a-b-co
 	select T25-plan-tot
 	select T25-coupe-tot
 	  
-export map -o T25a-b-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o T25a-b-coupe.pdf
-export model -o T25a-b.lox
+export map -o Outputs/T25a-b-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/T25a-b-coupe.pdf
+export model -o Outputs/T25a-b.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o T25a-b -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/T25a-b -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o T25a-b.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/T25a-b.kml -layout my_layout
