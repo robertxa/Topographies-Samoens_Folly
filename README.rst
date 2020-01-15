@@ -28,7 +28,7 @@ Licence
 -------
 
 L'ensemble de ces données sont publiées sous la licence libre Creative Commons Attribution-ShareAlike-NonCommercial (Attribution, partage à l'identique et non commerciale) :
-	<http://creativecommons.org/licenses/by-nc-sa/3.0/>
+	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 Contact
 -------

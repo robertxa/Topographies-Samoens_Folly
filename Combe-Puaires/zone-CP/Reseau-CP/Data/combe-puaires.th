@@ -43,13 +43,16 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	equate 30.19@espoir 30.19@shunt_cata
 	equate 13.7@espoir 13.7@shunt_cata
 	
-	input data-th/riviere_amont
+	#input data-th/riviere_amont
+	input data-th/Scraps-alone/Riviere_amont/Data/riviere_amont
 	equate 2008.S.0@espoir 2008.S.0@riviere_amont
 	equate 14.4@riviere_aval 40.0@riviere_amont
 	##equate 40.60@ReseauCP 40.60@riviere_amont
 	##equate 40.50@ReseauCP 40.50@riviere_amont
 	input data-th/affluent_steph 
 	equate 40.34@riviere_amont Xa-2014-14@affluent_Steph
+	input data-th/Scraps-alone/Riviere_amont/Data/rivamont2019
+	equate 52.0@riviere_amont 52.0@rivamont2019
 	
 	input data-th/riviere_aval
 	equate 17.13@ReseauCP 17.13@riviere_aval
