@@ -1,4 +1,8 @@
 encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>  
  
 survey ReseauCP -title "Réseau de la Combe aux Puaires"
 
@@ -67,8 +71,8 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	
 	### OLD
 	input data-th2/billy.th2   
-	input Data-th2/TeteHomme.th2
-	input Data-th2/CP12.th2
+	input data-th2/TeteHomme.th2
+	input data-th2/CP12.th2
 	
 	join 4vents-2 4vents-4
 	join 4vents-2 Massues-1
@@ -76,19 +80,19 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	join huit-1 CP14-2
 
 	
-	input Data-th2/clowns.th2
+	input data-th2/clowns.th2
 	join clown_Sp1 Massues-2
  
- 	input Data-th2/Billy1.th2
+ 	input data-th2/Billy1.th2
  	join billy2015_1 Billy-3 #-count 2
  	join billy2015_1 Billy-4
  	
- 	input Data-th2/Billy2.th2
+ 	input data-th2/Billy2.th2
  	
- 	input Data-th2/Billy3.th2
+ 	input data-th2/Billy3.th2
  	join Billy3-s1 Billy-4 -count 2
  	
- 	input Data-th2/riv_amont.th2
+ 	input data-th2/riv_amont.th2
  	join palm-Sp1 Pierrot-6
  	join amont-dessous-Sp1 Pierrot-6
  	join affsteph-Sp1 Pierrot-1
@@ -96,7 +100,10 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
  	join homjct-Sp2 Homme-3
  	join homjct-Sp2 Massues-3
  	
- 	input Data-th2/CP14-2011.th2
+ 	input data-th2/rivamont2019.th2
+ 	join rivamont2019-SP3 palm-Sp2
+ 	
+ 	input data-th2/CP14-2011.th2
  	join CP14_2008-Sp1 CP14-2
  	
  endsurvey

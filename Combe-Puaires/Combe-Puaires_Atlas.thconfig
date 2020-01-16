@@ -1,7 +1,8 @@
 encoding  utf-8
 
-# Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
-# This work is under the GPLv2
+# Copyright (C) 2019 Xavier Robert <xavier.robert01@gmail.com>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 # INTRO
 
@@ -191,7 +192,8 @@ layout atlas_layout
 #  symbol-hide point station        
   symbol-hide line survey
   
-  symbol-color point water-flow [0 0 100]  symbol-color line water-flow [0 0 100]
+  symbol-color point water-flow [0 0 100]
+  symbol-color line water-flow [0 0 100]
   
  # origin 12 22 0 m
  # origin-label 100 K
