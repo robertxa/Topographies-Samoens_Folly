@@ -25,6 +25,8 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Révision de la casse des entrées (<bf> + -scale xl)
 
+- Revoir entrée (sigle/nom) du BA9
+
 - Rajout longueurs des explos non topo :
 	* JB : Rajout aval Gadoue, Courte-échelle (données topos perdues)
 
@@ -36,8 +38,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 - Rajout des coordonnées des entrées
 	* a minima pour la CP
 	* Améliorer la façon de faire pour que ce soit plus facile/fluide pour toute la BD ?
-
-- Revoir entrée (sigle/nom) du BA9
 
 - Migrer toutes les topos sous formes de "maps" et utiliser la commande "select"
 	* gouffre JB : le JB-plan.thconfig est fait, il faut faire les autres thconfig, et tester pour l'Atlas
@@ -56,6 +56,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - JB :
 	* Erreur nom explo-team Jean-François Niffenegger,Jean-François Niffengger à corriger
+	* Construire le fichier des maps pour la coupe
 	* 
 	
 - Mise à jour sur le site Vulcain
