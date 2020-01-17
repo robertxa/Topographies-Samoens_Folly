@@ -14,9 +14,9 @@ Description
 
 Ce dépôt sauvegarde les données topographiques et de dessin. Ces fichiers sont pour les logiciels Visual Topo (données) et/ou Therion (data + dessins).
 
-Uniquement les fichiers sources sont sauvegardés pour des raisons de taille. J'ai aussi choisi de ne pas uploader les dessins dessinés à la main sur papier :
+Uniquement les fichiers sources sont sauvegardés pour des raisons de taille; j'ai aussi choisi de ne pas uploader les dessins dessinés à la main sur papier :
 
-	* .tro pour le logiciel Visual Topo
+	* les anciens fichiers .tro pour le logiciel Visual Topo
 	
 	* .thc, .th, .th2 et .thconfig pour le logiciel Therion
 	
@@ -30,8 +30,8 @@ Licence
 L'ensemble de ces données sont publiées sous la licence libre Creative Commons Attribution-ShareAlike-NonCommercial (Attribution, partage à l'identique et non commerciale) :
 	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
-Auteur
-------
+Auteur de la base de données
+----------------------------
 
 Xavier Robert
 
