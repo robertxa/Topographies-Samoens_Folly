@@ -1,7 +1,5 @@
 A FAIRE sur la base de données topographiques de Samoëns
 
-- Mise à jour de toutes les licences vers la licence CC-by-nc-sa v4.0
-
 - Coupes développées à dessiner
 	* C74
 	* Réseau CP
@@ -42,7 +40,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 - Migrer toutes les topos sous formes de "maps" et utiliser la commande "select"
 	* gouffre JB : le JB-plan.thconfig est fait, il faut faire les autres thconfig, et tester pour l'Atlas
 	* Ermoy : il faut peut-être recouper plus intelligemment !
-	* Retravailler le réseau CP
+	* Retravailler le réseau CP (plan OK)
 	* Verifier toutes les zones de superpositions (C74...)
 
 - Erreurs dessins à corriger
@@ -52,10 +50,9 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Coordonnées du L17
 	* Coordonnées du CH23
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
-	* Corriger les erreurs de scraps dans le JB (a minima...)
+	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option debug on des layouts
 
 - JB :
-	* Erreur nom explo-team Jean-François Niffenegger,Jean-François Niffengger à corriger
 	* Construire le fichier des maps pour la coupe
 	* 
 	
