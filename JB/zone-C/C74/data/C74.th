@@ -1,10 +1,12 @@
 encoding  utf-8
 
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
 survey C74 -title "C74" -entrance "C74"
   
 centerline
- #  date YYYY.MM.DD
-   #declination 0.0000  degrees   
    cs lat-long   
    fix C74 46.1051500 6.8020833 2169
    calibrate counter 0 0.500

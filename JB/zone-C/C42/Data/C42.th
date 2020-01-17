@@ -1,9 +1,12 @@
- encoding utf-8
- survey C42 -title "C42" -entrance "C42"
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey C42 -title "C42" -entrance "C42"
   
  centerline
- # Si le systeme de coordonnees n est pas le systeme Lambert français, voir le Thbook et le fichier extern/proj4/nad/epsg dans le dossier source de Therion
- # Si les coordonnees de l entree sont connues, decommenter les 2 lignes suivantes :
   cs lat-long 
  fix C42 46.1079167 6.8003000 2398
    date 1999.09.09

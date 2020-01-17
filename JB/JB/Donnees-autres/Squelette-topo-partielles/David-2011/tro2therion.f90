@@ -73,7 +73,7 @@
 !
 !
 ! COPYRIGHT
-!Copyright (C) 2010 Xavier Robert <xavier.robert01@gmail.com>
+!Copyright (C) 2010 Xavier Robert <xavier.robert***@***ird.fr>
 ! This work is under the GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html) :
 ! This program is free software; you can redistribute it and/or
 ! modify it under the terms of the GNU General Public License
@@ -707,7 +707,7 @@
                       //' and Martin Gerbaux <martin.gerbaux@wanadoo.fr> '
        write (99,*) ' '
        write (99,*) '# Copyright (C) 2010 Xavier Robert' &
-                     //' <xavier.robert01@gmail.com>'
+                     //' <xavier.robert***@***ird.fr>'
        write (99,*) '# This work is under the GPLv2'
        write (99,*) ' '
        write (99,*) ' '
@@ -1367,7 +1367,7 @@
                       //' and Martin Gerbaux <martin.gerbaux@wanadoo.fr> '
        write (99,*) ' '
        write (99,*) '# Copyright (C) 2010 Xavier Robert' &
-                     //' <xavier.robert01@gmail.com>'
+                     //' <xavier.robert***@***ird.fr>'
        write (99,*) '# This work is under the GPLv2'
        write (99,*) ' '
        write (99,*) ' '
