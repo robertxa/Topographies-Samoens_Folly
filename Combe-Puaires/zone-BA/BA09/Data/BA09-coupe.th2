@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 248.5 328.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 248.5 343.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {78.7382 1 1.0} {181.1 BA09} BA09-coupe.xvi 0 {}
 
@@ -20,6 +20,8 @@ point 41.5 131.75 breakdown-choke -orientation 315.0
 point 35.5 108.75 continuation
 
 point 16.0 101.25 air-draught -orientation 32.9 -subtype summer -scale xs
+
+point 50.5 214.5 label -text "<bf>BA09" -scale xl
 
 point 89.5 199.5 entrance -orientation 203.7
 
@@ -54,6 +56,7 @@ line wall -subtype pebbles
   70.25 155.0 75.25 161.75 75.25 166.25
   75.25 170.75 76.25 174.0 77.0 175.75
   77.75 177.5 79.0 179.5 80.25 179.5
+  smooth off
 endline
 
 line wall -subtype presumed

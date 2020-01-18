@@ -23,8 +23,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Révision de la casse des entrées (<bf> + -scale xl)
 
-- Revoir entrée (sigle/nom) du BA9
-
 - Rajout longueurs des explos non topo :
 	* JB : Rajout aval Gadoue, Courte-échelle (données topos perdues)
 
@@ -44,13 +42,13 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Verifier toutes les zones de superpositions (C74...)
 
 - Erreurs dessins à corriger
-	* Coupe développée du réseau de la Pierre Qui Tombe (JB)
+	* Coupe développée du réseau de la Pierre Qui Tombe (JB) : rajouter l'option dans le scrap : -flip horizontal
 	* Revoir dessin du BA2 (rapports d'échelles) --> Thconfig à réécrire
 	* Coordonnées du C52
 	* Coordonnées du L17
-	* Coordonnées du CH23
+	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
-	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option debug on des layouts
+	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on" des layouts
 
 - JB :
 	* Construire le fichier des maps pour la coupe

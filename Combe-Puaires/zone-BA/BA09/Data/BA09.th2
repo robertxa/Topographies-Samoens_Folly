@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -148.25 248.25 213.0
+##XTHERION## xth_me_area_adjust -128.75 -148.0 248.0 213.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {62.1118 1 1.0} {20.138200000000005 BA09} BA09-map.xvi 0 {}
 
@@ -22,9 +22,11 @@ line arrow
   98.25 10.0
 endline
 
+point 115.75 55.0 label -text "<bf>BA09" -scale xl
+
 point 94.0 -10.0 label -text "lapiez"
 
-point 80.75 69.0 label -text "<it>Plan"
+point 80.5 80.25 label -text "<it>Plan"
 
 point 27.25 83.75 air-draught -orientation 149.4 -subtype summer -scale xs
 
