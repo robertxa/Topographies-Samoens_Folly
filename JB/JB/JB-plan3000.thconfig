@@ -215,4 +215,4 @@ endlayout
 #  select JB-total@jb.th -map-level 0
 #  select JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2017-plan3000.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan3000.pdf -layout my_layout

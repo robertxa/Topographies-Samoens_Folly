@@ -209,8 +209,8 @@ endlayout
 
 # 3-EXPORT
 # Voici les lignes pour exporter le cheminement au format xvi
-#export map -proj plan -fmt xvi -layout xviexport -o synthese_plan2016.xvi
-#export map -proj extended -fmt xvi -layout xviexport -o synthese_coupe.xvi
+#export map -proj plan -fmt xvi -layout xviexport -o synthese_plan2020.xvi
+#export map -proj extended -fmt xvi -layout xviexport -o synthese_coupe2020.xvi
 
 
 #select M-C37-Riviera
@@ -229,28 +229,22 @@ endlayout
 #  select JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select JB-plan-tot
- export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2019-plan1000.pdf -layout my_layout
-#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2018-plan5000.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000.pdf -layout my_layout
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
-# export model -fmt esri -o Outputs/3D/jb-Xav-2015 #-layout my_layout
+# export model -fmt esri -o Outputs/3D/jb-Xav-2020 #-layout my_layout
 
 # Export du fichier 3d pour Loch
-# export model -o Outputs/3D/jb-Xav-2018.lox
-
-# Export fichiers dxf
-#export model -fmt dxf -o Outputs/3D/jb-Xav-2018.dxf
-
-# Export fichiers vrml
-#export model -fmt vrml -o Outputs/3D/jb-Xav-2018.vrml
+# export model -o Outputs/3D/jb-Xav-2020.lox
 
 # Export des fichiers kml
-#export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2019.kml
+#export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2020.kml
 
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-#export database -o Outputs/Lists/DatabaseJB-2019.sql
-#export continuation-list -o Outputs/Lists/Continuations-JB-plan-2019.html
-#export survey-list -location on -o Outputs/Lists/Topographies_2019.html
-#export cave-list -location on -o Outputs/Lists/Cavites_2019.html
+#export database -o Outputs/Lists/DatabaseJB-2020.sql
+#export continuation-list -o Outputs/Lists/Continuations-JB-plan-2020.html
+#export survey-list -location on -o Outputs/Lists/Topographies_2020.html
+#export cave-list -location on -o Outputs/Lists/Cavites_2020.html

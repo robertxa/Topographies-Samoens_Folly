@@ -99,6 +99,8 @@ centerline -title "Intersiphon S2-S3"
 	units lenght meters
 	units compass degrees
 	units clino degrees
+	
+	station iS2-1 "Départ à topographier, siphon à plonger" continuation explored 200m
 
 	data normal from to length compass clino
 	extend left
