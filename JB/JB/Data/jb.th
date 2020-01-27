@@ -28,6 +28,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
    input Data-th/Crops_reseaux/P11/P11
    input Data-th/Crops_reseaux/Solitaire/solitaire
    
+   #input Data-th/Crops_reseaux/Sezhommes/Data/sezhommes2020.th
+   
    input Data-th/Crops_reseaux/Siphons/siphons
    #input Data-th/bivouac900
 
@@ -88,6 +90,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
      # Gourance
 	equate 2019-FD-12@Goure2019 2014-SL-24@GoureToiDeLa
 	equate 2019-FD-E15@Goure2019 2014-SL-24@GoureToiDeLa
+	
+	# Sezommes
+	#equate 12.2020@sezhommes2020 Ko.31@jb-aval???	# carrefour vers l'aval
+	#equate 18.2020@sezhommes2020 Ko.39@jb-aval???	# ancien terminus amont de l'affluent
+	#equate 46.2020@sezhommes2020 Kn.4@jb-aval???	# sommet du P6 juste avant le bivouac -900 m
               
      # Pour boucler toute la topo du JB, de façon à supprimer les choix de coupage de Steph
         # Zone de la rivière aux excentriques
@@ -167,6 +174,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     input Drawing-th2/solitaire2019_2.th2
     input Drawing-th2/solitaire2019_3.th2
     input Drawing-th2/solitaire2019_4.th2
+    
+    #input Drawing-th2/sezhommes2020.th2
     
     input Drawing-th2/siphons.th2
     
@@ -256,6 +265,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	join Sol2019d-SP1 solitaire2019-SP1
      
 	join sezhommes2 S1
+	#join sezhommes2020-SP1 ??	# au niveau bivouac -900 m
+	#join sezhommes2020-SP1 ?? -count 2	# Vers l'aval
      
      
      
