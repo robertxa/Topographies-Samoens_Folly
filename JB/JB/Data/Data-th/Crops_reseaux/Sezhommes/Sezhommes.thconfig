@@ -139,8 +139,8 @@ endlayout
 	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Sezhommes-coupe2020.xvi
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/solitaire-coupe2020.pdf
-	export map -layout layout_plan -o Outputs/solitaire-plan2020.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/sezhommes-coupe2020.pdf
+	export map -layout layout_plan -o Outputs/sezhommes-plan2020.pdf
  
 # Export des modeles 3D
 	export model -o Outputs/solitaire.lox
