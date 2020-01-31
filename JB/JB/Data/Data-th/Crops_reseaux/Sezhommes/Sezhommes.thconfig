@@ -7,6 +7,7 @@ encoding  utf-8
 # Import DATA  
 source Data/sezhommes2020.th
 source Data/sezhommes2020.th2
+source Data/sezhommes2020-coupe.th2
 
 # Add config file
 input ../../../../../../config.thc 
@@ -92,9 +93,14 @@ layout layout_coupe
 	doc-title "Réseau de Sezhommes-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 2000
-	scale 1 1400
-	scale-bar 150 m
+	#base-scale 1 2000
+	#scale 1 1400
+	#scale-bar 150 m
+	
+	base-scale 1 750
+	scale 1 500
+	scale-bar 50 m
+	
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
@@ -106,11 +112,11 @@ layout layout_coupe
 	statistics copyright all
 	legend off
 	legend-width 26  cm
-	map-header 35 45 nw
+	map-header 0 0 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names	
+	symbol-hide line survey
+	#debug station-names	
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  

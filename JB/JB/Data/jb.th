@@ -30,7 +30,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
    
    input Data-th/Crops_reseaux/Sezhommes/Data/sezhommes2020.th
    
-   input Data-th/Crops_reseaux/Siphons/siphons
+   input Data-th/Crops_reseaux/Siphons/Data/siphons
    #input Data-th/bivouac900
 
 ##   input Data-th/jb-ajouts
@@ -92,8 +92,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	equate 2019-FD-E15@Goure2019 2014-SL-24@GoureToiDeLa
 	
 	# Sezommes
-	#equate 12.2020@sezhommes2020 Ko.31@jb-riv2	# carrefour vers l'aval
-	#equate 18.2020@sezhommes2020 Ko.39@jb-riv2	# ancien terminus amont de l'affluent
+	equate 12.2020@sezhommes2020 Ko.31@jb-riv2	# carrefour vers l'aval
+	equate 18.2020@sezhommes2020 Ko.39@jb-riv2	# ancien terminus amont de l'affluent
 	equate 46.2020@sezhommes2020 Kn.4@jb-riv2	# sommet du P6 juste avant le bivouac -900 m
               
      # Pour boucler toute la topo du JB, de façon à supprimer les choix de coupage de Steph
@@ -178,6 +178,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     input Drawing-th2/sezhommes2020.th2
     
     input Drawing-th2/siphons.th2
+    input Drawing-th2/siphons2020.th2
     
  # Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
  # join scrap1 scrap2 . C'est tout simple !
@@ -263,11 +264,12 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	join solitaire2019-SP2 sol2017-1
 	join Solitaire-SP-2019c1 Sol_SP2019b_1
 	join Sol2019d-SP1 solitaire2019-SP1
-     
+    
+    
+    join sezhommes2020-SP1 900-1	# au niveau bivouac -900 m
+	join sezhommes2020-SP1 sezhommes-1 -count 2	# Vers l'aval 
 	join sezhommes2 S1
-	#join sezhommes2020-SP1 ??	# au niveau bivouac -900 m
-	#join sezhommes2020-SP1 ?? -count 2	# Vers l'aval
-     
+    join siphons2020-SP1 S2S3 
      
      
      #join P11-h1 ???
@@ -293,6 +295,7 @@ input Drawing-th2/B19senecaliens-coupe.th2
 	input Drawing-th2/lavoir-coupe2015.th2
 	input Drawing-th2/brownies-coupe.th2
 	input Drawing-th2/fileOu-coupe2019.th2
+	input Drawing-th2/FileOu-coupe.th2
 	input Drawing-th2/avalc1
 	
 	input Drawing-th2/GoureToiDeLa-coupe.th2
@@ -321,8 +324,11 @@ input Drawing-th2/B19senecaliens-coupe.th2
 	input Drawing-th2/solitaire2019-coupe3.th2
 	input Drawing-th2/solitaire2019-coupe4.th2
 	
+	input Drawing-th2/sezhommes2020-coupe.th2
 	input Drawing-th2/siphons-coupe.th2
-	input Drawing-th2/FileOu-coupe.th2
+	input Drawing-th2/siphons-coupe2020.th2
+	
+	
 
 # Join scraps...	
 join voltic1 C37c3
@@ -359,3 +365,4 @@ join fileouc1 lavoirc5
 join Solitaire-c_2018-1 solitaire2019-SC1 #Solitaire2018-SC1
 join sol-C1 solitaire2019-SC2
 join Solitaire-SC-2019c1 Sol-SC2019b-1
+join Siphons2020-SC1 S2-S3_c	# Explo du 24/01/2020

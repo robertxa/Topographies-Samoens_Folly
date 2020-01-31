@@ -4,11 +4,10 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source siphons.th
-source siphons.th2
-source siphons-coupe.th2   
+source Data/siphons.th
+source siphons-tot.th
 # Add config file
-input ../../../../../config.thc 
+input ../../../../../../config.thc 
 
 layout xviexport
 	scale 1 1000
@@ -19,7 +18,8 @@ endlayout
 layout my_layout
 # Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy headerl 
+	copy headerl
+	copy langue-fr 
 	  
 	doc-title "Siphons aval"
 	doc-author "Xavier Robert"
@@ -37,11 +37,11 @@ layout my_layout
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	#legend-width 18 cm
-	map-header 0 00 nw
+	legend-width 16 cm
+	map-header 70 60 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
+	symbol-hide line survey
 	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
@@ -67,7 +67,8 @@ layout my_layout
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
+	copy header_coupe
+	copy langue-fr 
   
 	doc-title "Siphons et réseau Stick"
 	doc-author "Xavier Robert"
@@ -85,8 +86,8 @@ layout my_layout-coupe
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	#legend-width 16 cm
-	map-header 0 0 nw
+	legend-width 16 cm
+	map-header 0 45 sw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -112,10 +113,8 @@ layout my_layout-coupe
 
  
   
- #export map -fmt xvi -layout xviexport -o siphons-2003.xvi
- export map -projection extended -fmt xvi -layout xviexport -o siphons-coupe-2003.xvi
+ #export map -fmt xvi -layout xviexport -o Data/siphons-2003.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/siphons-coupe-2003.xvi
   
- export map  -projection plan -o siphon-2003-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o siphon-2003-coupe.pdf
-# export model -o Siphons-2013.lox
-export survey-list -o Surveys2017.html
+ export map  -projection plan -o Outputs/siphon-2020-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/siphon-2020-coupe.pdf

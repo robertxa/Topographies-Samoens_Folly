@@ -296,10 +296,12 @@ survey jb-riv2 -title "JB rivière deuxième partie"
  # infer equates on
  # infer plumbs on
    data normal from to length backcompass backclino right left up down
+   flags duplicate
    Kn.0 Kn.1    12.38000       246.      -62.       0.       0.       0.       0.    
    Kn.1 Kn.2    12.1       241.      -31.       0.       0.       0.       0.    
    Kn.2 Kn.3    26.87000       247.      -17.       0.       0.       0.       0.    
    Kn.3 Kn.4    8.21       270.      -45.       0.       0.       0.       0.    
+   flags not duplicate
    Kn.4 Kn.5    5.85       264.      -37.       0.       0.       0.       0.    
    Kn.5 Kl.0    4.55       253.       30.       0.       0.       0.       0.    
  endcenterline
@@ -351,6 +353,7 @@ survey jb-riv2 -title "JB rivière deuxième partie"
    Ko.29 Ko.30    9.53       265.      -16.       0.       0.       0.       0.    
    Ko.30 Ko.31    1.83       153.      -11.       0.       0.       0.       0.    
    extend left
+   flags duplicate
    Ko.31 Ko.32    3.8       145.      -1.       0.       0.       0.       0.    
    Ko.32 Ko.33    4.55       216.      -22.       0.       0.       0.       0.    
    Ko.33 Ko.34    3.52       155.      -19.       0.       0.       0.       0.    
@@ -369,7 +372,8 @@ survey jb-riv2 -title "JB rivière deuxième partie"
    Ko.45 Ko.46    6.57       250.      -23.       0.       0.       0.       0.    
    Ko.46 Ko.47    6.5       247.      -27.       0.       0.       0.       0.    
    Ko.47 Ko.48    4.64       242.      -22.       0.       0.       0.       0.    
-   Ko.48 Kn.1    5.62       238.       0.       0.       0.       0.       0.    
+   Ko.48 Kn.1    5.62       238.       0.       0.       0.       0.       0.
+   flags not duplicate    
  endcenterline
   
  centerline -extend left -title "Reseau de Sezhommes Ko.0_Kp.1 Kp.23_Kp.24"

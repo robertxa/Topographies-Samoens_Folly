@@ -1,11 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 2182.75 885.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 2332.7256 1033.5122999999999
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2047.25 1 1.0} {748.032 S1-0} siphons-2003.xvi 0 {}
 
 
 
-scrap S1 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
+scrap S1 -projection plan -station-names "" ".Jean-Bernard" -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
 
 point 1954.5 753.5 label -text "S1 (45 m, -8 m)"
 
@@ -51,19 +51,73 @@ line wall
   smooth off
 endline
 
-point 1910.87 669.292 station -name LT-2003-28@siphons_aval.Jean-Bernard
+point 1910.87 669.292 station -name LT-2003-28@siphons_aval
 
-point 2047.25 748.032 station -name S1-1@siphons_aval.Jean-Bernard
+point 2047.25 748.032 station -name S1-1@siphons_aval
 
 endscrap
 
 
 
-scrap S1-S2 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
+scrap S1-S2-SP1 -projection plan -station-names "" ".Jean-Bernard" -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
 
 point 1863.25 670.75 sand -clip off
 
-point 1621.5 588.5 u:boss -scale s
+line gradient
+  1657.75 613.25
+  1648.25 599.0
+endline
+
+line contour
+  1663.25 608.5
+  1663.25 608.5 1651.5 610.5 1649.75 615.5
+  smooth off
+endline
+
+line contour
+  1663.25 601.5
+  1663.25 601.5 1644.5 599.0 1640.75 604.75
+  smooth off
+endline
+
+line contour
+  1663.0 605.5
+  1663.0 605.5 1651.0 604.75 1648.25 611.75
+  smooth off
+endline
+
+line pit
+  1664.75 608.5
+  1664.75 608.5 1658.75 620.25 1653.0 617.25
+  smooth off
+endline
+
+line pit
+  1664.5 597.5
+  1664.5 597.5 1644.25 596.75 1641.75 594.0
+  1639.25 591.25 1637.25 585.25 1637.25 585.25
+  smooth off
+endline
+
+point 1688.0 592.75 narrow-end
+
+line wall
+  1677.0 593.75
+  1677.0 593.75 1667.5 593.25 1664.25 594.5
+  1661.0 595.75 1660.5 599.0 1660.5 602.75
+  1660.5 606.5 1661.5 613.25 1661.5 613.25
+  smooth off
+endline
+
+line wall
+  1638.5 591.0
+  1638.5 591.0 1647.5 589.75 1653.5 590.25
+  1659.5 590.75 1667.25 591.25 1670.25 591.25
+  1673.25 591.25 1677.25 591.5 1677.25 591.5
+  smooth off
+endline
+
+point 1621.5 588.5 u:boss -scale s -clip on
 
 point 1477.75 567.75 rope
 
@@ -175,6 +229,12 @@ line pit
   smooth off
 endline
 
+point 1633.5 619.25 height -value [-6 m]
+
+point 1462.75 515.25 label -text "R4"
+
+point 1295.5 445.5 label -text "R8"
+
 line pit
   1290.5 457.0
   1290.5 457.0 1288.0 472.0 1277.0 474.0
@@ -204,8 +264,13 @@ line wall
   1532.0 557.0 1546.5 555.5 1561.0 557.0
   1575.5 558.5 1605.5 553.5 1605.5 559.0
   1605.5 564.5 1603.5 582.0 1610.0 583.5
-  1616.5 585.0 1633.5 586.0 1638.5 591.0
-  1643.5 596.0 1662.0 620.5 1675.5 622.0
+  1616.5 585.0 1632.25 587.75 1638.5 591.0
+  smooth off
+endline
+
+line wall
+  1661.5 613.25
+  1666.5 618.25 1662.0 620.5 1675.5 622.0
   1689.0 623.5 1699.5 622.5 1707.5 627.0
   1715.5 631.5 1709.5 631.0 1722.0 635.0
   1734.5 639.0 1755.5 649.5 1768.5 650.5
@@ -218,12 +283,63 @@ endline
 
 point 1609.0 666.75 label -text "Réseau Stick"
 
+line pit
+  1819.5 660.5
+  1819.5 660.5 1808.25 657.75 1804.25 659.25
+  smooth off
+endline
+
+line pit -reverse on
+  1905.25 661.5
+  1905.25 661.5 1901.25 667.75 1903.0 674.0
+  smooth off
+endline
+
+point 1907.5 654.0 label -text "R2"
+
+point 1841.75 686.5 continuation -attr Code E -text "Départ à atteindre après escalade"
+
+line pit
+  1837.25 664.5
+  1837.25 664.5 1836.25 662.25 1831.5 662.25
+  smooth off
+endline
+
+line wall -close on -outline in
+  1817.5 659.5
+  1817.5 659.5 1822.25 665.25 1824.75 665.25
+  1827.25 665.25 1833.0 663.0 1831.5 662.25
+  1830.0 661.5 1826.25 659.75 1824.25 659.75
+  1822.25 659.75 1817.5 659.5 1817.5 659.5
+  smooth off
+endline
+
+line wall
+  1834.0 679.25
+  1834.0 679.25 1827.25 671.25 1821.5 666.75
+  1815.75 662.25 1810.75 660.25 1807.75 659.0
+  1804.75 657.75 1802.75 657.75 1802.75 657.75
+  smooth off
+endline
+
+line wall
+  1838.75 661.25
+  1838.75 661.25 1831.25 664.75 1831.5 667.5
+  1831.75 670.25 1838.0 677.75 1838.0 677.75
+  smooth off
+endline
+
 line wall
   1906.0 672.5
   1906.0 672.5 1901.0 669.0 1894.5 669.0
   1888.0 669.0 1881.5 669.0 1874.0 667.0
-  1866.5 665.0 1834.5 661.0 1825.0 660.0
-  1815.5 659.0 1798.5 658.0 1789.5 658.0
+  1866.5 665.0 1848.25 662.25 1838.75 661.25
+  smooth off
+endline
+
+line wall
+  1802.75 657.75
+  1793.25 656.75 1798.5 658.0 1789.5 658.0
   1780.5 658.0 1771.5 658.0 1758.5 658.0
   1745.5 658.0 1724.5 652.0 1713.0 648.0
   1701.5 644.0 1703.5 637.5 1698.5 637.5
@@ -249,80 +365,82 @@ line wall
   smooth off
 endline
 
-point 1284.6499999999999 465.512 station -name LT-2003-1@siphons_aval.Jean-Bernard
+point 1284.6499999999999 465.512 station -name LT-2003-1@siphons_aval
 
-point 1300.28 467.432 station -name LT-2003-2@siphons_aval.Jean-Bernard
+point 1300.28 467.432 station -name LT-2003-2@siphons_aval
 
-point 1315.9099999999999 462.04200000000003 station -name LT-2003-3@siphons_aval.Jean-Bernard
+point 1315.9099999999999 462.04200000000003 station -name LT-2003-3@siphons_aval
 
-point 1344.4199999999998 475.952 station -name LT-2003-4@siphons_aval.Jean-Bernard
+point 1344.4199999999998 475.952 station -name LT-2003-4@siphons_aval
 
-point 1373.0 489.27200000000005 station -name LT-2003-5@siphons_aval.Jean-Bernard
+point 1373.0 489.27200000000005 station -name LT-2003-5@siphons_aval
 
-point 1398.56 493.322 station -name LT-2003-6@siphons_aval.Jean-Bernard
+point 1398.56 493.322 station -name LT-2003-6@siphons_aval
 
-point 1418.04 503.682 station -name LT-2003-7@siphons_aval.Jean-Bernard
+point 1418.04 503.682 station -name LT-2003-7@siphons_aval
 
-point 1445.1 519.302 station -name LT-2003-8@siphons_aval.Jean-Bernard
+point 1445.1 519.302 station -name LT-2003-8@siphons_aval
 
-point 1446.03 532.582 station -name LT-2003-9@siphons_aval.Jean-Bernard
+point 1446.03 532.582 station -name LT-2003-9@siphons_aval
 
-point 1455.69 538.152 station -name LT-2003-10@siphons_aval.Jean-Bernard
+point 1455.69 538.152 station -name LT-2003-10@siphons_aval
 
-point 1468.56 534.472 station -name LT-2003-11@siphons_aval.Jean-Bernard
+point 1468.56 534.472 station -name LT-2003-11@siphons_aval
 
-point 1485.62 548.782 station -name LT-2003-13@siphons_aval.Jean-Bernard
+point 1485.62 548.782 station -name LT-2003-13@siphons_aval
 
-point 1517.01 560.202 station -name LT-2003-14@siphons_aval.Jean-Bernard
+point 1517.01 560.202 station -name LT-2003-14@siphons_aval
 
-point 1550.85 559.022 station -name LT-2003-15@siphons_aval.Jean-Bernard
+point 1550.85 559.022 station -name LT-2003-15@siphons_aval
 
-point 1603.5 561.782 station -name LT-2003-16@siphons_aval.Jean-Bernard
+point 1603.5 561.782 station -name LT-2003-16@siphons_aval
 
-point 1606.4699999999998 586.0120000000001 station -name LT-2003-17@siphons_aval.Jean-Bernard
+point 1606.4699999999998 586.0120000000001 station -name LT-2003-17@siphons_aval
 
-point 1632.28 591.492 station -name LT-2003-18@siphons_aval.Jean-Bernard
+point 1632.28 591.492 station -name LT-2003-18@siphons_aval
 
-point 1668.3 622.812 station -name LT-2003-19@siphons_aval.Jean-Bernard
+point 1668.3 622.812 station -name LT-2003-19@siphons_aval
 
-point 1689.1399999999999 628.392 station -name LT-2003-20@siphons_aval.Jean-Bernard
+point 1689.1399999999999 628.392 station -name LT-2003-20@siphons_aval
 
-point 1702.32 636.002 station -name LT-2003-21@siphons_aval.Jean-Bernard
+point 1702.32 636.002 station -name LT-2003-21@siphons_aval
 
-point 1716.69 645.702 station -name LT-2003-22@siphons_aval.Jean-Bernard
+point 1716.69 645.702 station -name LT-2003-22@siphons_aval
 
-point 1759.32 653.212 station -name LT-2003-23@siphons_aval.Jean-Bernard
+point 1759.32 653.212 station -name LT-2003-23@siphons_aval
 
-point 1794.6599999999999 655.062 station -name LT-2003-24@siphons_aval.Jean-Bernard
+point 1794.6599999999999 655.062 station -name LT-2003-24@siphons_aval
 
-point 1834.27 658.532 station -name LT-2003-25@siphons_aval.Jean-Bernard
+point 1834.27 658.532 station -name LT-2003-25@siphons_aval
 
-point 1877.58 665.392 station -name LT-2003-26@siphons_aval.Jean-Bernard
+point 1877.58 665.392 station -name LT-2003-26@siphons_aval
 
-point 1888.1999999999998 666.5120000000001 station -name LT-2003-27@siphons_aval.Jean-Bernard
+point 1888.1999999999998 666.5120000000001 station -name LT-2003-27@siphons_aval
 
 endscrap
 
 
 
-scrap S2 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
+scrap S2 -projection plan -station-names "" ".Jean-Bernard" -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
 
 point 1271.75 443.75 altitude -align bottom
 
-point 1176.5 480.0 label -text "S2 (40 m, -6 m)"
+point 1179.25 493.75 label -text "S2 (40 m, -6 m)"
 
-point 1195.75 437.25 label -text "etr."
+point 1187.5 424.25 label -text "etr."
 
 area sump
   l70-1217-461
 endarea
 
+point 1189.0 468.5 label -text "cloche"
+
 line label -id l70-1217-461 -close on
   1261.0 433.25
   1261.0 433.25 1271.25 436.5 1271.25 440.5
   1271.25 444.5 1265.0 455.25 1256.75 455.75
-  1248.5 456.25 1225.5 462.0 1216.0 461.25
-  1206.5 460.5 1107.25 471.25 1102.0 465.5
+  1248.5 456.25 1209.25 457.25 1196.0 453.5
+  1186.82 450.9 1107.25 471.25 1102.0 465.5
   1096.75 459.75 1090.59 452.22 1091.1699999999998 448.612
   1091.75 445.0 1085.25 435.75 1094.75 433.5
   1104.25 431.25 1261.0 433.25 1261.0 433.25
@@ -333,9 +451,9 @@ line wall
   1087.25 445.75
   1087.25 445.75 1098.5 446.75 1104.0 446.75
   1109.5 446.75 1127.25 445.0 1135.0 445.25
-  1142.75 445.5 1163.5 446.25 1173.25 446.0
-  1183.0 445.75 1187.75 448.0 1195.5 448.0
-  1203.25 448.0 1213.25 448.0 1225.0 447.0
+  1142.75 445.5 1170.0 434.75 1179.75 434.5
+  1189.5 434.25 1185.75 448.75 1193.5 448.75
+  1201.25 448.75 1213.25 448.0 1225.0 447.0
   1236.75 446.0 1253.75 441.75 1259.25 442.75
   1264.75 443.75 1268.75 441.75 1271.75 443.75
   1274.75 445.75 1279.5 449.0 1279.5 449.0
@@ -343,26 +461,39 @@ line wall
 endline
 
 line wall
+  1200.75 451.75
+  1200.75 451.75 1197.5 458.5 1194.75 458.5
+  1192.0 458.5 1186.0 459.25 1189.0 457.25
+  1192.0 455.25 1195.5 451.0 1192.5 451.25
+  smooth off
+endline
+
+line wall
   1270.0 461.0
   1270.0 461.0 1269.5 452.5 1263.5 452.5
   1257.5 452.5 1226.75 457.0 1221.5 454.75
-  1216.25 452.5 1204.25 450.5 1195.75 451.25
-  1187.25 452.0 1179.75 454.0 1171.0 454.0
-  1162.25 454.0 1142.5 453.25 1132.75 453.25
+  1216.25 452.5 1209.25 451.0 1200.75 451.75
+  smooth off
+endline
+
+line wall
+  1192.5 451.25
+  1184.0 452.0 1187.25 438.0 1178.5 438.0
+  1169.75 438.0 1142.5 453.25 1132.75 453.25
   1123.0 453.25 1113.25 451.5 1105.0 451.5
   1096.75 451.5 1087.5 452.5 1087.5 452.5
   smooth off
 endline
 
-point 1091.1699999999998 448.612 station -name S2-3@siphons_aval.Jean-Bernard
+point 1091.1699999999998 448.612 station -name S2-3@siphons_aval
 
-point 1268.33 448.612 station -name S2-1@siphons_aval.Jean-Bernard
+point 1268.33 448.612 station -name S2-1@siphons_aval
 
 endscrap
 
 
 
-scrap S2S3 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
+scrap S2S3 -projection plan -station-names "" ".Jean-Bernard" -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
 
 line wall -subtype unsurveyed
   335.5 224.25
@@ -403,7 +534,29 @@ line wall -subtype unsurveyed
   1088.25 368.5 1086.25 381.75 1083.75 391.0
   1081.25 400.25 1077.25 417.0 1077.0 423.25
   1076.75 429.5 1071.25 444.25 1074.5 444.75
-  1077.75 445.25 1087.25 445.75 1087.25 445.75
+  smooth off
+endline
+
+line pit
+  1076.0 442.5
+  1076.0 442.5 1080.75 444.25 1083.25 443.75
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  1081.75 441.0
+  1080.75 445.0
+endline
+
+line wall -subtype unsurveyed
+  1074.5 444.75
+  1074.5 444.75 1078.25 443.25 1078.25 441.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  1080.75 445.0
+  1084.0 445.5 1087.25 445.75 1087.25 445.75
   smooth off
 endline
 
@@ -441,7 +594,7 @@ point 289.5 265.0 rope
 
 point 263.25 294.0 height -value [-20 m]
 
-point 339.5 221.25 continuation -attr Code Q -text "Non renseigné sur la topo 1991"
+point 339.5 221.25 continuation
 
 line wall
   187.0 302.5
@@ -490,9 +643,15 @@ point 194.75 299.5 sand
 
 point 193.0 304.0 sand
 
+point 289.75 309.5 flowstone -clip off
+
+point 246.0 224.25 label -text "<center>g.<br>étroite"
+
+point 173.25 287.0 passage-height -value [0.2 m]
+
 point 192.0 288.75 narrow-end
 
-point 178.25 307.25 continuation -attr Code Q -text "A revoir ?"
+point 178.25 307.25 continuation
 
 point 186.5 322.75 label -text "S4 ensablé"
 
@@ -532,6 +691,10 @@ line pit
   smooth off
 endline
 
+point 704.25 372.25 label -text "escalade OP"
+
+point 679.75 417.75 height -value [+10 m]
+
 line pit
   691.0 408.0
   691.0 408.0 686.5 389.75 702.25 388.75
@@ -568,17 +731,19 @@ endline
 
 point 1057.25 425.0 label -text "R7"
 
-point 860.75 422.25 label -text "R6"
+point 860.75 422.25 label -text "R5"
 
-point 1010.75 400.75 label -text "R6"
+point 990.5 367.25 label -text "R6"
 
 point 1098.75 362.5 label -text "R6"
 
 point 1094.0 394.5 label -text "R3"
 
-point 1056.5 452.25 label -text "R3"
+point 1056.5 452.25 height -value [-3 m]
 
-point 1075.25 466.0 label -text "R5"
+point 1096.0 429.75 label -text "R6"
+
+point 1075.25 466.0 label -text "R6"
 
 line pit -reverse on
   860.5 411.5
@@ -592,33 +757,31 @@ line pit
   smooth off
 endline
 
-line pit -reverse on
+line pit
   1079.0 359.0
   1079.0 359.0 1087.5 371.25 1091.75 359.5
   smooth off
 endline
 
-line pit -reverse on
+line pit
   1073.75 393.5
   1073.75 393.5 1082.0 399.75 1088.0 391.0
   smooth off
 endline
 
-line pit -reverse on
+line pit
   1063.0 447.0
   1063.0 447.0 1075.0 444.0 1076.25 438.75
   smooth off
 endline
 
-line pit -reverse on
+line pit
   1067.25 427.75
   1067.25 427.75 1076.25 434.75 1080.5 426.0
   smooth off
 endline
 
-point 1059.0 465.25 rope
-
-line pit -reverse on
+line pit
   1074.25 457.75
   1074.25 457.75 1076.75 451.75 1076.75 447.75
   1076.75 443.75 1076.25 440.75 1076.25 440.75
@@ -673,27 +836,27 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 329.91999999999996 223.572 station -name is3-6@siphons_aval.Jean-Bernard
+point 329.91999999999996 223.572 station -name is3-6@siphons_aval
 
-point 197.90999999999997 299.79200000000003 station -name is3-5@siphons_aval.Jean-Bernard
+point 197.90999999999997 299.79200000000003 station -name is3-5@siphons_aval
 
-point 261.9899999999999 262.79200000000003 station -name iS3-4@siphons_aval.Jean-Bernard
+point 261.9899999999999 262.79200000000003 station -name iS3-4@siphons_aval
 
-point 347.0099999999999 334.13200000000006 station -name iS3-2@siphons_aval.Jean-Bernard
+point 347.0099999999999 334.13200000000006 station -name iS3-2@siphons_aval
 
-point 695.9599999999999 395.66200000000003 station -name iS3-1@siphons_aval.Jean-Bernard
+point 695.9599999999999 395.66200000000003 station -name iS3-1@siphons_aval
 
-point 719.28 459.742 station -name S3-3@siphons_aval.Jean-Bernard
+point 719.28 459.742 station -name S3-3@siphons_aval
 
-point 821.5699999999999 400.682 station -name S3-1@siphons_aval.Jean-Bernard
+point 821.5699999999999 400.682 station -name S3-1@siphons_aval
 
-point 976.66 400.682 station -name iS2-4@siphons_aval.Jean-Bernard
+point 976.66 400.682 station -name iS2-4@siphons_aval
 
-point 1077.3899999999999 342.53200000000004 station -name iS2-3@siphons_aval.Jean-Bernard
+point 1077.3899999999999 342.53200000000004 station -name iS2-3@siphons_aval
 
-point 1087.1899999999998 359.512 station -name iS2-2@siphons_aval.Jean-Bernard
+point 1087.1899999999998 359.512 station -name iS2-2@siphons_aval
 
-point 1071.48 448.612 station -name iS2-1@siphons_aval.Jean-Bernard
+point 1071.48 448.612 station -name iS2-1@siphons_aval
 
 point 1001.5 479.0 label -text "Réseau Stick"
 

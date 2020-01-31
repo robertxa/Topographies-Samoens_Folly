@@ -560,11 +560,14 @@ endmap
 map M-siphons -title "Les siphons terminaux"
 	S1
 	break
-	S1-S2
+	S1-S2-SP1
 	break
 	S2
 	break
-	S2S3 
+	siphons2020-SP1
+	break
+	S2S3
+	 
 endmap
 
 #preview below JB-amontsuite # pour JB-aval-riviere à partir solitaire
