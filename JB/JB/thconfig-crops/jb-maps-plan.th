@@ -1,0 +1,739 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#map JB-rev
+#		Voltigeurs-amonts
+#	break
+#		voltigeurs
+#		preview below JB-amonts
+#endmap
+
+map M-C37 -title "C37"
+	C37
+	break
+	C37-jonction
+	break
+    arche
+endmap
+
+map M-escaladesoctobre -title "Escalades d'Octobre"
+	escalade-octobre
+endmap
+
+map M-Voltigeurs -title "Méandre des Voltigeurs"
+	Voltigeurs-amonts
+	break
+	voltigeurs
+	#preview below M-C37	# A mettre ici ou à mettre dans le map final ?
+endmap
+
+map M-affluentC14 -title "Affluent du C14"
+	JB-C14-1
+	break
+	affluent-C14-2
+endmap
+
+map M-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
+	reverbere
+	break
+	faille-bivouac
+endmap
+
+map M-rivieratot -title "La Riviera"
+	riviera #(A mettre sous JB-B22 et arianes)
+endmap
+
+map M-B21 -title "B21"
+	B21-1
+	break
+	B21-2
+	break
+	B21-3
+	break
+	B21-4
+endmap
+
+map M-B22 -title "B22"
+	B22-1
+	break
+	B22-2
+endmap
+
+#preview above JB-rev # C'était placé à la fin des maps précédentes. A replacer correctement si besoin !
+ 
+map M-arianes -title "Méandre des Arianes"
+	arianes1
+	break
+	arianes2
+endmap
+  
+map M-champselysees -title "Les Champs Elysées"
+	champs-elysees
+	break
+	champs-elysees2
+endmap
+
+map M-gadoue -title "Rivière de la Gadoue"
+	gadouejonction
+	break
+	Gadoue
+endmap
+
+map M-B19 -title "B19"
+	B19
+endmap
+
+map M-senecaliens -title "Galerie des Sénécaliens"
+	Senecaliens
+endmap
+
+map M-lavoir -title "Réseau du Lavoir"
+	brownies1
+	break
+	Arva1
+	break
+	Arva2
+	break
+	Lavoir-2
+	break
+	Lavoir-1
+	break
+	Lavoir-3
+	break
+	Lavoir-5
+	break
+	Lavoir7
+	break
+	Lavoir-FD
+	break
+	fileou1
+	break
+	fileou2
+	break
+	fileou2019-SP1
+	break
+	Boeuf1
+	break
+	Boeuf2  
+	break
+	lavoir-sec   
+	break
+	Racc3
+	break
+	Racc2
+	break
+	rac1
+	break
+	racc4
+	break
+	Racc
+	break
+	Racc4
+	break
+	Racc5
+	break
+	base-racc
+	break
+	Lavoir3old
+endmap
+
+map M-riviere-excentriques -title "Rivière aux excentriques"
+	Excentriques1
+	break
+	Excentriques2
+endmap	
+
+map M-V11 -title "V11"
+	V11
+	break
+	V11-meandre
+endmap
+
+map M-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
+	couteauG2016
+	break
+	CouteauG1
+endmap
+
+map M-traverse -title "Galerie du puits que l'on Traverse"
+	traverse1
+	break
+	traverse2
+endmap         
+
+map M-reseauaiguilles -title "Réseau des Aiguilles"
+	Crawleurs
+	break
+	oublies
+	break
+	Raccourci
+	break
+	Aiguilles
+	break
+	aiguilles2
+	break
+	Ascension
+	break
+	audessusbulle
+	break
+	Crawleuraval
+endmap   	
+     
+map M-aspirosouffle -title "Réseau de l'AspiroSouffle"
+	# Begin Réseau de l'AspiroSouflle
+	aval-aiguille2-1
+	break
+	aval-aiguilles2-2
+	break
+	aval-aiguilles2-3
+	break
+	aval-aiguilles2-5
+	break
+	aval-aiguilles2-6
+	break
+	aval-aiguilles2-4
+endmap   
+
+map M-avalaiguilles -title "Aval des Aiguilles"
+	aval-aiguilles4  
+	break   
+	scrap146b      
+	break
+	aval-aiguilles5
+	break
+	aval-aiguilles2
+	break
+	aval-aiguilles3
+	break
+	aval-aiguilles2013-2
+	break
+	aval-aiguilles1
+	break
+	aval-aiguilles2013-1
+endmap
+
+map M-bulle -title "Affluent de la Bulle"
+	Bulle
+endmap
+
+map M-montagnes_russes -title "Réseau des Montagnes Russes"
+	Montagnesrusses
+	break
+	Russesaval
+	break
+	Russesaval2
+endmap	
+	
+map M-pourquedalle -title "Galerie Pour Que Dalle"
+	Pourquedalle
+endmap
+
+map M-branlots -title "Réseau des Branlots"
+	P15
+	break
+	s-branlots1 
+	break
+	Branlots
+	break
+	Branlots2 
+endmap
+
+map M-echo -title "Salle de l'Echo"
+	Echo2010-1
+	break
+	Echo2010-2
+	break
+	Echo2010-3
+	break
+	Colimaconaval
+	break
+	scrap2603
+	break
+	Echo
+endmap
+	
+map M-reseau_passibas -title "Shunt du Passibas" 
+	Passibas
+endmap
+  
+map M-frenesie -title "Galerie de la Frénésie"
+	Frenesie
+endmap
+
+map M-pseudosiphons -title "Les Pseudos Siphons"
+	Pseudosiphons
+	break
+	Pseudosiphon2
+endmap
+
+map M-erreur -title "Galerie de l'Erreur"
+	berreur1
+	break
+	Erreur
+endmap
+
+map M-aven14J -title "Aven du 14 juillet"
+	J14
+endmap
+
+map M-dino -title "Galerie du Petit Dino"
+	dino-1
+endmap
+
+map M-P15 -title "Galerie du P15"
+	P15aval
+	break
+	P15-2
+	break
+	P15-4
+endmap
+
+map M-bourguignons -title "Réseau des Bourguignons"
+	Bourguignons1
+	break
+	Bourguignons1bis
+	break
+	bourguignons2
+	break
+	bourguignonscollecteur
+endmap
+     
+map M-cataboyau -title "Galerie du Cataboyau"
+	Cataboyau
+endmap
+
+map M-mais -title "Galerie du Mais"
+	Mais
+	break
+	Mais-2010      
+endmap
+
+map M-grandescalier -title "Le Grand Escalier"
+	grdescalier
+endmap
+
+map M-anou2 -title "Réseau Anou 2"
+	Anou2
+	break
+	anou2bis
+endmap
+
+map M-flash -title "Puits du Flash"
+	flash
+endmap
+
+map M-jaunisse -title "Galerie de la Jaunisse"
+	jaunisse
+	break
+	papy2
+	break
+	jaunisse2
+endmap
+
+map M-soucoupe -title "Méandre de la Soucoupe"
+	Soucoupe
+	break
+	Soucoupe2
+endmap
+
+map M-V5 -title "Méandre du V5"
+	V5
+	break
+	V5aval
+endmap
+
+map M-V6 -title "V6"
+	V6ter
+	break
+	V6
+endmap
+
+map M-V4 -title "V4"
+      V4-3
+      break
+      V4
+      break
+      V4-2
+endmap
+
+map M-savoyards -title "Puits des Savoyards"
+	savoyards
+endmap
+
+map M-quitombe -title "Réseau de la Pierre qui Tombe"
+	quitombe
+	break
+	quitombe2
+	break
+	quitombe3
+	break
+	quitombea
+	break
+	mangerjct
+	break
+	quitombe4
+	break
+	pierretombe
+	break
+	pquitombeend
+endmap
+
+map M-chatons -title "Méandre des Chatons"
+	chatons
+endmap
+
+
+
+
+map M-solitaire -title "Réseau du Solitaire"
+	solitaire_plan
+	break
+	sol2017-1
+	break
+	sol2017-2
+	break
+	Solitaire-c-2018_2 
+	break
+	Solitaire-c-2018_3 
+	break
+	solitaire2019-SP2
+	break
+	solitaire2019-SP_3
+	break
+	solitaire2019_SP4
+	break
+	solitaire2019-SP1
+	break
+	Sol_SP2019b_1
+	break
+	Solitaire-SP-2019c1
+	break
+	Solitaire-SP-2019c2
+	break
+	Solitaire-SP-2019c3
+	break
+	Solitaire-SP-2019c4
+	break
+	Sol2019d-SP1
+endmap
+
+map M-puitsAlain -title "Puits Alain"     
+	pAlain
+	break
+	cascatelles   
+endmap
+
+map M-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
+# Regarder si on peut sortir les plafonds
+	riv-1
+	break
+	riv-2b
+	break
+	riv-2
+	break
+	riv-3
+	break
+	riv-4
+	break
+	riv-5
+endmap
+
+map M-bivouac-500 -title "Le bivouac -500"
+	riv-6
+	break
+	bivouac500b
+	break
+	riv-8
+	break
+	bivouac500c
+	break
+	bivouac500
+endmap
+
+map M-siphon69 -title "Siphon 69"
+	Riv6
+	break
+	riv-7
+	break
+	siphon69
+endmap
+
+map M-P11 -title "La galerie du P11"
+	P11-h2
+	break
+	P11-h1
+endmap
+
+map M-plafond-Gourance -title "Réseau GoureToiDeLa"  
+	Goure2015b-5
+	break
+	Goure2015b-4
+	break
+	Goure2015-SP1
+	break
+	Goure2015c
+	break
+	Goure2015b
+	break
+	Goure2019-SP1
+	break
+	Goure2019-SP2
+	break
+	Goure2019-SP3
+	break
+	Gourance2014-1
+	break
+	Gourance2014-2
+	break
+	Gourance2014-3
+	break
+	Gourance2014-4
+	break
+	Gourance2014-5
+	break
+	Gourance2014-6
+	break
+	Gourance2015b-1 # Depart souris chauve
+	break
+	Goure2015b-2
+	break
+	Gourance2014-5
+	break
+	Goure2015b-3
+endmap
+
+map M-gourance -title "La Gourance"      
+	gourance-1
+	break
+	gourance-3
+	break
+	gourance2      
+	break
+	Gourance2013-1
+	break
+	Gourance2013-2     
+	break
+	gourance-4      
+	break
+	gourance5
+endmap
+
+map M-aval-gourance -title "Rivière à l'aval de la Gourance"
+	riv-10
+	break
+	riv-11
+	break
+	cingles
+	break
+	900-1
+endmap
+      
+map M-sezhommes -title "Galerie de Sezhommes"
+	sezhommes2020-SP3
+	break
+	sezhommes2020-SP1
+	break
+	sezhommes2020-SP2
+	break
+	sezhommes-1
+	break
+	sezhommes2               
+endmap
+
+map M-laconscience -title "galerie de la Conscience"
+	conscience-1
+endmap
+
+map M-nuitblanche -title "Réseau de la Nuit Blanche"
+	nuitblanche1
+	break
+	nuitblanche2      
+	break
+	nuitblanche3
+	break
+	nuitblanche4
+endmap
+
+map M-siphons -title "Les siphons terminaux"
+	S1
+	break
+	S1-S2-SP1
+	break
+	S2
+	break
+	siphons2020-SP1
+	break
+	S2S3
+	 
+endmap
+
+#preview below JB-amontsuite # pour JB-aval-riviere à partir solitaire
+
+
+##########################################################################
+# Maps intermédiaire pour construire uniquement certaines parties du gouffre
+
+map M-C37-Riviera
+	M-C37
+	break
+	M-escaladesoctobre
+	break
+		M-Voltigeurs
+		preview below M-C37
+	break
+	M-affluentC14
+	break
+	M-arche-reverbere
+	break
+	M-rivieratot
+endmap
+
+map M-B22-B21
+	M-B21
+	break
+	M-B22
+	break
+	M-champselysees
+	break
+	M-arianes
+	break
+	M-gadoue
+endmap
+
+
+map M-B19-V11
+	M-senecaliens
+	break
+	M-B19
+	preview below M-senecaliens
+	break
+	M-lavoir
+	break
+	M-V11
+	break
+	M-reseauaiguilles
+	break
+	M-couteau-grenoblois
+	break
+	M-traverse
+	break
+	M-aspirosouffle
+	break
+	M-avalaiguilles
+	break
+	M-riviere-excentriques
+	preview below M-avalaiguilles
+	break
+	M-bulle
+endmap
+
+map M-Branlots-J14
+	M-montagnes_russes
+	break
+	M-pourquedalle
+	break
+	M-branlots
+	break
+	M-echo
+	break
+	M-reseau_passibas
+	break
+	M-frenesie
+	break
+	M-pseudosiphons
+	break
+	M-erreur
+	break
+	M-aven14J
+	break
+	M-dino
+	break
+	M-P15
+endmap
+
+map M-V4-V6-Mais
+	M-bourguignons
+	break
+	M-cataboyau
+	break
+	M-mais
+	break
+	M-grandescalier
+	break
+	M-anou2
+	break
+	M-flash
+	break
+	M-jaunisse
+	break
+	M-soucoupe
+	break
+	M-chatons
+	break
+	M-V5
+	break
+	M-V6
+	break
+	M-V4
+	break
+	M-savoyards
+	break
+	M-quitombe
+endmap
+
+map M-Jean-Dupond
+	M-solitaire
+	break
+	M-puitsAlain
+	break
+	M-rivieredebut
+endmap
+
+map M-Bivouac-500-Gourance
+	M-bivouac-500
+	break
+	M-P11
+	break
+	M-siphon69
+	break
+	M-plafond-Gourance
+	break
+	M-gourance
+	break
+	M-aval-gourance
+	break
+	M-laconscience
+	break
+	M-nuitblanche
+endmap
+
+map M-aval-900
+	M-sezhommes 
+	break
+	M-siphons
+endmap
+
+##########################################################################
+# Map qui appelle toutes les autres maps pour construire le plan complet
+map JB-plan-tot
+	M-C37-Riviera
+	break
+	M-B22-B21
+	break
+	M-B19-V11
+	break
+	M-Branlots-J14
+	break
+	M-V4-V6-Mais
+	break
+	M-Jean-Dupond
+	break
+	M-Bivouac-500-Gourance
+	break
+	M-aval-900
+endmap
+
+   

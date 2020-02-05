@@ -218,7 +218,10 @@ layout my_layout-coupe
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Grander et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Grander et la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+		
+		#\def\dopage{\box\navbox}
+		
 	endcode  
 
 endlayout
@@ -229,23 +232,24 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o data-th2/ReseauCP-coupe2020.xvi
 
 # Select maps
-	select MP-ReseauCP-total 
+	#select MP-ReseauCP-total 
+	select MP-RivAmont2019
 	#select MC-ReseauCP-total
 	
-export map -o Outputs/2D/ReseauCP-plan2020.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020.pdf
+export map -o Outputs/2D/ReseauCP-plan2020TEST.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020.pdf
   
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/3D/ReseauCP2020 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/3D/ReseauCP2020 -layout my_layout
  
 # Export du fichier 3d pour Loch
-export model -o Outputs/3D/reseauCP-2020.lox
+#export model -o Outputs/3D/reseauCP-2020.lox
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2020.kml -layout my_layout
+#export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2020.kml -layout my_layout
  
 # Export des listes:
-export database -o Outputs/Lists/databaseCP-2020.sql
-export continuation-list -o Outputs/Lists/ContinuationsCP-2020.html
-export survey-list -location on -o Outputs/Lists/SurveysCP2020.html
-export cave-list -location on -o Outputs/Lists/CavesCP2020.html
+#export database -o Outputs/Lists/databaseCP-2020.sql
+#export continuation-list -o Outputs/Lists/ContinuationsCP-2020.html
+#export survey-list -location on -o Outputs/Lists/SurveysCP2020.html
+#export cave-list -location on -o Outputs/Lists/CavesCP2020.html
