@@ -80,8 +80,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
      equate Xav2016-23@P11 Kg.24@jb-riv
      
      #equate xx36@solitaire Jd.17@jb-amonts2
-     equate xx36@solitaire Jd.19@jb-amonts2
-     equate 2019-FD-9@solitaire Jd.24@jb-amonts2	# Jction 2019 Solitaire et Base du puits Alain
+     equate xx36@solitaire Jd.20@jb-amonts2
+     #equate xx36@solitaire Jd.19@jb-amonts2
+     #equate 2019-FD-9@solitaire Jd.24@jb-amonts2	# Jction 2019 Solitaire et Base du puits Alain
+     #extend ignore 2019-FD-9 Jd.24
      
      equate S1-0@siphons_aval Kp.24@jb-riv2
 
@@ -102,7 +104,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
           #equate  Da.99@jb-amonts1  Da.100'@jb-amonts1
         
         # Zone du réseau des Bourguignons
-          equate  Hb.0@jb-amonts2  Da.237@jb-amonts2 #(En rajoutant artificiellement une visée P15 ?)--> Il faut faire des fichiers différents
+          #equate  Hb.0@jb-amonts2  Da.237@jb-amonts2 #(En rajoutant artificiellement une visée P15 ?)--> Il faut faire des fichiers différents
           #equate  Ha.33@jb-amonts1  Hd.31@jb-amonts1 #(? Je ne suis pas sûr que le m. des chatons jonctionne avec les bourguignons)
           #equate  Hd.0@jb-amonts1  Hc.15@jb-amonts1 #(? Je ne suis pas sûr que le m. de la soucoupe jonctionne avec les bourguignons)
         
@@ -304,8 +306,10 @@ input Drawing-th2/B19senecaliens-coupe.th2
 	input Drawing-th2/GoureToiDeLa2019coupe.th2
 
 	input Drawing-th2/gourance2013-coupe.th2
+	
 	input Drawing-th2/aval500.th2
 	input Drawing-th2/aval400.th2
+	
 	input Drawing-th2/V4-coupe.th2
 	input Drawing-th2/jaunisse-coupe.th2
 	input Drawing-th2/14J-coupe.th2
@@ -365,4 +369,8 @@ join fileouc1 lavoirc5
 join Solitaire-c_2018-1 solitaire2019-SC1 #Solitaire2018-SC1
 join sol-C1 solitaire2019-SC2
 join Solitaire-SC-2019c1 Sol-SC2019b-1
+# Reseau Sezhommes
+join avalc1 sezhommes2020-SC3
+join avalc1 sezhommes2020-SC2
+join avalc2 sezhommes2020-SC3
 join Siphons2020-SC1 S2-S3_c	# Explo du 24/01/2020

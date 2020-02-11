@@ -4,9 +4,9 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
- source affluent_amont.th
- #source affluent_amont.th2
- source affluent_amont_coupe.th2
+ source Data/affluent_amont.th
+ #source Data/affluent_amont.th2
+ source Data/affluent_amont_coupe.th2
  
 layout xviexport
    scale 1 500
@@ -734,9 +734,9 @@ code mpost
   
 endlayout
 
- export map -fmt xvi -layout xviexport -o CP16-affluent_amont-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o CP16-affluent_amont_coupe.xvi
+ export map -fmt xvi -layout xviexport -o Data/CP16-affluent_amont-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/CP16-affluent_amont_coupe.xvi
   
- export map -o CP16-affluent_amont_plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o CP16-affluent_amont-coupe.pdf
- #export model -o CP16-affluent_amont.lox
+ export map -o Outputs/CP16-affluent_amont_plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/CP16-affluent_amont-coupe.pdf
+ #export model -o Outputs/CP16-affluent_amont.lox

@@ -1,0 +1,246 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey jb-branlots -title "JB réseau des Branlots"
+
+centerline -extend left -title "Branlots_Fb Da.205_Fb.1 Fb.49_Da.228"
+
+   date 1976.11.19
+   #declination -2.5615 degrees
+  
+    team "Josiane Lips"
+    team "Jean-Michel Chalon"
+    team "Bernard Lips"
+    team "Christian Rigaldie"
+    team "Benoît/Le Falher"
+   explo-date 1976.11.19
+    explo-team "Josiane Lips"
+    explo-team "Jean-Michel Chalon"
+    explo-team "Bernard Lips"
+    explo-team "Christian Rigaldie"
+    explo-team "Benoît/Le Falher"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Da.205 Fb.1    7.9       148.      -16.       0.       0.       0.       0.    
+   Fb.1 Fb.2    14.61000       180.      -29.       0.       0.       0.       0.    
+   Fb.2 Fb.3    10.36000       211.      -25.       0.       0.       0.       0.   
+   Fb.3 Fb.4    11.72000       158.      -15.       1.       1.       1.       3.    # Petite conduite forcée avec surcreusement, diam = 2 m
+   Fb.4 Fb.5    18.91000       170.      -20.       0.       0.       0.       0.    
+   extend right
+   Fb.5 Fb.6    2.81       228.      -3.       0.       0.       0.       0.    # R3 (Corde)
+   Fb.6 Fb.7    5.       192.      -42.       0.       0.       0.       0.    
+   Fb.7 Fb.8    4.44       248.      -13.       0.       0.       0.       0.    
+   Fb.8 Fb.9    7.42       157.      -32.       0.       0.       0.       0.    
+   extend left
+   Fb.5 Fb.10    8.1       165.      -43.       0.       0.       0.       0.    
+   Fb.10 Fb.11    4.44       135.      -22.       0.       0.       0.       0.    
+   Fb.11 Fb.12    3.2       127.       13.       0.       0.       0.       0.    
+   Fb.12 Fb.13    6.61       166.      -18.       0.       0.       0.       0.    
+   Fb.13 Fb.14    4.33       158.      -20.       0.       0.       0.       0.    
+   Fb.14 Fb.15    5.97       165.       0.       0.       0.       0.       0.    
+   Fb.15 Fb.16    2.76       150.       0.       0.       0.       0.       0.    
+   Fb.16 Fb.17    3.       150.       0.       1.25       1.25       1.25       1.25    # CF diam = 2.5 m
+   Fb.17 Fb.18    4.18       160.      -13.       1.25       1.25       1.25       1.25    # CF diam = 2.5 m
+   Fb.18 Fb.19    2.57       352.      -30.       1.25       1.25       1.25       1.25    # CF diam = 2.5 m + Chatière
+   Fb.19 Fb.20    1.93       360.       10.       0.       0.       0.       0.    
+   Fb.20 Fb.21    4.38       148.      -5.       0.       0.       0.       0.    
+   Fb.21 Fb.22    3.89       95.      -15.       0.       0.       0.       0.    
+   Fb.22 Fb.23    6.8       65.       0.       0.       0.       0.       0.    
+   Fb.23 Fb.24    9.81       127.      -14.       0.       0.       0.       0.    
+   Fb.24 Fb.25    11.3       65.       8.       0.       0.       0.       0.    
+   Fb.25 Fb.26    10.26000       348.       20.       0.       0.       0.       0.    # Zone des excentriques
+   Fb.26 Fb.27    12.27000       320.       15.       1.       1.       1.       1.    # Diam = 2 m
+   Fb.27 Fb.28    10.99000       360.       14.       1.       1.       1.       1.    # Diam = 2 m
+   Fb.28 Fb.29    10.67000       345.       15.       0.       0.       0.       0.    
+   Fb.29 Fb.30    19.25000       310.       10.       0.       0.       0.       0.    
+   Fb.30 Fb.31    7.49       290.       6.       0.       0.       0.       0.    
+   Fb.31 Fb.32    6.57       300.       10.       0.       0.       0.       0.    
+   Fb.29 Fb.35    9.84       104.       27.       0.       0.       0.       0.    
+   Fb.35 Fb.36    7.08       73.       25.       0.       0.       0.       0.    
+   Fb.36 Fb.37    9.41       358.       17.       0.       0.       0.       0.    
+   Fb.37 Fb.38    3.94       110.       0.       0.       0.       0.       0.    
+   Fb.38 Fb.39    9.11       58.       17.       0.       0.       0.       0.    
+   Fb.39 Fb.40    8.54       36.       25.       0.       0.       0.       0.    
+   Fb.40 Fb.41    2.82       289.       18.       0.       0.       0.       0.    
+   Fb.41 Fb.42    10.65000       350.       1.       0.       0.       0.       0.    # Galerie continue (Az = 338), amène au sommet de la salle
+   Fb.42 Fb.43    3.62       317.       17.       0.       0.       0.       0.    
+   Fb.43 Fb.44    8.88       70.       43.       0.       0.       0.       0.    # Etr.
+   Fb.44 Fb.45    9.18       91.       25.       0.       0.       0.       0.    
+   Fb.45 Fb.46    10.11000       114.       23.       0.       0.       0.       0.    # Grande Salle
+   Fb.46 Fb.47    3.17       68.       21.       0.       0.       0.       0.    # E10
+   Fb.47 Fb.48    5.35       151.       31.       0.       0.       0.       0.    # Ressaut
+   Fb.48 Fb.49    8.38       113.       56.       0.       0.       2.       8.    # Meandre h= 10 m ; MC
+   Fb.49 Da.228    13.14000       37.       32.       0.       0.       0.       0.    
+
+endcenterline
+
+
+
+centerline -extend left -title "Branlots-Fc Fc.0_Fc.1 "
+
+   date 1991.05.11
+   #declination -1.1428 grad
+
+  team "Hughes Feuillet"
+  team "Patrick Comte"
+  team "Bernard Lips"
+  explo-date 1991.05.11  
+    explo-team "Hughes Feuillet"
+    explo-team "Patrick Comte"
+    explo-team "Bernard Lips"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+   units counter centimeters
+   calibrate counter 0 1.000
+  
+   data topofil from to fromcount tocount backcompass backclino right left up down
+
+   Fc.0 Fc.1 30964.0 31493.0    105.      -1.       0.       0.       0.       0.    # Colm.
+   Fc.1 Fc.2 31493.0 32011.0    43.      -2.       0.75       0.75       1.       1.    # H = 2 m ; l = 1.5 m
+   Fc.2 Fc.3 32011.0 32448.0    78.       9.       0.75       0.75       1.       1.    # H = 2 m ; l = 1.5 m
+   Fc.3 Fc.4 32448.0 32929.0    160.       0.       0.       0.       0.       0.    # Passage court à plat ventre
+   Fc.4 Fc.5 32929.0 33786.0    148.      -8.       0.       0.       2.       1.    # h = 3 m
+   Fc.5 Fc.6 33786.0 34866.0    165.       5.       0.       0.       0.       0.    
+   Fc.6 Fc.7 34866.0 35215.0    70.       8.       0.       0.       0.       0.    
+   Fc.7 Fb.22 35215.0 36026.0    150.       12.       0.       0.       0.       0.    
+
+endcenterline
+
+
+centerline -extend left -title "Branlots-Fe Fa.0_Fe.1 Fe.23_Fe.24"
+
+   date 1991.05.11
+   #declination -1.1428 grad
+
+  team "Patrice Plantier"
+  team "Bernard Lips"
+  team "Hughes Feuillet"
+  #explo-date 
+
+   units lenght meters
+   units compass grad
+   units clino grad
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount backcompass backclino right left up down
+
+   Fe.0 Fe.1 40185.0 40574.0    165.      -29.       0.       0.       0.       0.    # A partir siphon
+   Fe.1 Fe.2 40574.0 40803.0    250.      -20.       0.       0.       0.       0.    # Remplissage
+   Fe.2 Fe.3 40803.0 41392.0    265.      -6.       3.       3.       5.       1.    # Bas de la corde
+   Fe.3 Fe.4 41392.0 42708.0    175.      -40.       3.       3.       5.       1.    # Diam = 6 m
+   Fe.4 Fe.5 42794.0 43371.0    180.      -38.       3.       3.       5.       1.    
+   Fe.3 Fe.6 43371.0 44185.0    0.      -100.       0.       0.       0.       0.    
+   Fe.6 Fe.7 44185.0 44845.0    0.      -100.       0.       0.       0.       0.    
+   Fe.7 Fe.8 44845.0 45846.0    0.      -100.       0.       0.       0.       0.    
+   Fe.8 Fe.9 45846.0 46055.0    340.      -38.       0.       0.       0.       0.    
+   Fe.9 Fe.10 46055.0 47168.0    180.      -68.       0.       0.       0.       0.    
+   Fe.10 Fe.11 47168.0 48248.0    175.      -35.       0.       0.       0.       0.    
+   extend right
+   Fe.11 Fe.12 48248.0 49846.0    175.      -32.       0.       0.       0.       0.    
+   Fe.12 Fe.13 49846.0 51221.0    375.      -75.       0.       0.       0.       0.    # Puits
+   Fe.13 Fe.14 51221.0 52575.0    360.       26.       0.       0.       0.       0.    
+   Fe.14 Fe.15 52575.0 53516.0    355.       34.       0.       0.       0.       0.   
+   Fe.15 Fb.26 53516.0 54506.0    255.       30.       0.       0.       0.       0.    
+   Fe.9 Fe.17 36108.0 37290.0    370.       9.       0.       0.       0.       0.    
+   Fe.17 Fe.18 37290.0 37913.0    50.       35.       0.       0.       0.       0.    
+   Fe.18 Fe.19 37913.0 38355.0    330.       40.       0.       0.       0.       0.    
+   Fe.19 Fe.20 38355.0 38932.0    270.       0.       0.       0.       0.       0.    
+   Fe.20 Fe.21 38932.0 39089.0    200.       30.       0.       0.       0.       0.    
+   Fe.21 Fe.22 39089.0 39422.0    370.       65.       0.       0.       0.       0.    
+   Fe.22 Fe.23 39422.0 39776.0    65.       55.       0.       0.       0.       0.    
+   Fe.23 Fe.24 39776.0 40116.0    335.       20.       0.       0.       0.       0.    # Siphon
+
+endcenterline
+  
+  
+centerline -extend left -title "Branlots-Ff Ff.0_Ff.1 Ff.10_Fe.12"
+
+   date 1991.06.28
+   #declination -1.1143 grad
+
+  team "Christophe Ohl"
+  team "Hughes Feuillet"
+  team "Patrice Plantier"
+  explo-date 1991.06.28
+    explo-team "Christophe Ohl"
+    explo-team "Hughes Feuillet"
+    explo-team "Patrice Plantier"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+
+   data normal from to length compass clino left right up down
+
+   Ff.0 Ff.1    5.99       315.       27.       0.       0.       1.       2.    # h = 3 m
+   Ff.1 Ff.2    8.35       200.       42.       0.       0.       0.       0.    
+   Ff.2 Ff.3    4.76       295.       13.       0.       0.       0.       0.    
+   Ff.3 Ff.4    15.59000       346.       35.       0.       0.       0.       0.    
+   Ff.4 Ff.5    3.8       375.       45.       0.       0.       0.       0.    
+   Ff.5 Ff.6    2.69       313.       50.       0.       0.       0.       0.    
+   Ff.6 Ff.7    3.72       130.       24.       0.       0.       0.       0.    
+   Ff.7 Ff.8    4.17       234.      -6.       0.25       0.25       0.25       0.25    # Passage bas diam = 0.5 m
+   Ff.8 Ff.9    8.83       183.      -30.       0.       0.       0.       0.    
+   Ff.9 Ff.10    6.79       178.      -25.       0.       0.       0.       0.    
+   Ff.10 Fe.12    1.58       290.       10.       0.       0.       0.       0.    # Raccord bas de la corde
+
+endcenterline
+
+
+centerline -title "Salle de l'Echo Fb.40_Fb.40b Fb.11_Fq.12"
+   date 2010.10.23
+#   declination 0  degrees
+  team "Eric Revolle"
+  team "Eric Tarazona"
+  team "Florence Curt"
+  team "Alexandre Schalk"
+  
+  
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   Fb.40 Fb.40b    0       0       0       0       5.8       3       1.1    
+   Fb.40b Fq.9    8.1       245      -25       1.5       1.5       2.8       1.3    
+   extend left
+   Fq.9 Fq.10    10.40000       210      -24       1.5       1.5       2.8       1.3    
+   Fq.9 Fq.11    12.80000       330       29      0.6      0.6       3.1       4.5    
+   Fq.11 Fq.12    9.1       330       25      0.3      0.3      0.5      0.3    
+endcenterline
+ 
+
+centerline -title "Salle de l'Echo Fb.30_Fb.30b Fq.5_Fq.7"
+   date 2010.10.23
+#   declination 0  degrees
+    team "Eric Revolle"
+  team "Eric Tarazona"
+  team "Florence Curt"
+  team "Alexandre Schalk"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   Fb.30 Fb.30b    0       0       0      0.5       2.8       6.1       1.4    
+   Fb.30b Fq.1    8.5       226       32      0.5       2.8       6.1       1.4    
+   Fq.1 Fq.2    9.7       230       2       2       2.4       19      0.6    
+   Fq.2 Fq.3    3.7       227      -24      0.5      0.3      0.3       1.2    
+   Fq.3 Fb.43    27       0      -90       0       0       0       0    
+   Fb.43 Fq.5    5.4       200       0       0       0       0       0    
+   Fq.5 Fq.6    5.9       90       0       0       0       0       0    
+   Fq.5 Fq.7    6.4       180       0       0       0       0       0    
+
+endcenterline 
+  
+endsurvey

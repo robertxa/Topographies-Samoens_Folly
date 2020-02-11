@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -268.0 -168.0 490.25 481.701
+##XTHERION## xth_me_area_adjust -208.5 -128.75 490.0 464.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {312.279 1 1.0} {157.483 Xa-2015f-0} CouteauG-coupe-2015.xvi 0 {}
 ##XTHERION## xth_me_image_insert {312.34799999999996 1 1.0} {156.855 Xa-2015f-0} CouteauG-coupe-2016.xvi 0 {}
@@ -221,26 +221,24 @@ line wall -close on -outline in
   67.25 185.0
 endline
 
-line u:rope
+line rope
   43.0 216.5
-  43.0 216.5 46.0 210.5 48.25 212.0
-  48.54 212.2 65.25 186.5 69.5 189.25
-  69.8 189.44 76.25 178.75 79.75 182.25
-  80.46 182.96 84.25 171.25 87.25 174.25
-  87.78 174.78 92.5 158.75 92.5 158.75
-  smooth off
+  48.25 212.0
+  69.5 189.25
+  79.75 182.25
+  87.25 174.25
+  92.5 158.75
 endline
 
-line u:rope
-  255.25 101.25
+line rope
+  255.75 101.25
   254.75 75.75
 endline
 
-line u:rope
+line rope
   222.25 91.75
-  222.25 91.75 226.0 86.25 226.0 88.75
-  226.0 91.25 227.0 58.0 227.0 58.0
-  smooth off
+  226.0 88.75
+  227.0 58.0
 endline
 
 line wall
@@ -365,6 +363,7 @@ line wall
   257.0 73.75 258.25 73.25 260.0 74.0
   261.75 74.75 263.0 76.5 263.25 80.0
   263.5 83.5 258.75 97.0 259.75 100.5
+  smooth off
 endline
 
 point 316.639 46.403000000000006 station -name Xa-2015f-31@CouteauG.Jean-Bernard
@@ -419,13 +418,11 @@ point 252.25 128.0 narrow-end
 
 point 309.25 103.5 narrow-end
 
-line u:rope
+line rope
   264.75 122.0
-  264.75 122.0 259.75 116.5 259.75 120.75
-  259.75 122.21 259.5 103.25 256.0 107.5
-  254.88 108.86 254.75 75.75 254.75 75.75
-  smooth off
+  259.75 120.75
   256.0 107.5
+  254.75 75.75
 endline
 
 line wall
@@ -530,14 +527,15 @@ point -74.5 317.5 narrow-end
 
 point -5.75 288.25 narrow-end
 
-line u:rope
+point -54.75 315.5 altitude -align right
+
+line rope
   43.0 216.5
-  43.0 216.5 37.5 217.5 37.5 222.0
-  37.5 223.0 28.75 226.25 29.5 231.0
-  29.61 231.7 16.0 237.75 17.0 241.75
-  17.09 242.09 9.25 242.75 9.0 249.5
-  8.96 250.53 -9.75 258.75 -8.5 265.25
-  smooth off
+  37.5 222.0
+  29.5 231.0
+  17.0 241.75
+  9.0 249.5
+  -8.5 265.25
 endline
 
 line wall -subtype presumed

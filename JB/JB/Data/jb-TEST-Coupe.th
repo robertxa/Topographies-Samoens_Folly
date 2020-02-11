@@ -1,0 +1,102 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey Jean-Bernard -title "Gouffre Jean Bernard"
+   #input Data-th/jb-amonts1
+   input Data-th/jb-amonts2
+   #input Data-th/jb-riv
+   #input Data-th/jb-riv2
+   #input Data-th/Crops_reseaux/Arianes/jb-arianes
+   #input Data-th/Crops_reseaux/aval-aiguilles/Aval-aiguilles2
+   #input Data-th/Crops_reseaux/aval-aiguilles/Aval-aiguilles
+   #input Data-th/Crops_reseaux/Lavoir/Lavoir
+   #input Data-th/Crops_reseaux/Lavoir/FileOu.th
+   #input Data-th/Crops_reseaux/Shunt-Branlots/shunt-branlots
+   #input Data-th/Crops_reseaux/affluentC14/affluentC14
+   #input Data-th/Crops_reseaux/Gourance2013/Gourance2013
+   #input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa
+   #input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa2019.th
+   #input Data-th/Crops_reseaux/dino/jb-dino
+   #input Data-th/Crops_reseaux/puitsquelontraverse/puitstraverse
+   input Data-th/Crops_reseaux/Erreur/Erreur
+   #input Data-th/Crops_reseaux/CouteauG/CouteauG
+   #input Data-th/Crops_reseaux/P11/P11
+   #input Data-th/Crops_reseaux/Solitaire/solitaire
+   
+   #input Data-th/Crops_reseaux/Sezhommes/Data/sezhommes2020.th
+   
+   #input Data-th/Crops_reseaux/Siphons/Data/siphons
+   ##input Data-th/bivouac900
+
+   centerline
+    
+# Pour assembler plusieurs fichiers topos
+     #equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
+     #equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
+     #equate  Jf.14@jb-amonts2  Jf.14@jb-riv
+     #equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
+     #equate  Kg.0@jb-riv  Kg.0@jb-riv2
+     #equate  Kg.9@jb-riv  Kg.9@jb-riv2
+     #equate  Ke.29@jb-riv  Ke.29@jb-riv2
+     #equate  Ke.43@jb-riv  Ke.43@jb-riv2
+     #equate  Ke.33@jb-riv  Ke.33@jb-riv2
+     #equate  Da.58@jb-amonts2  Da.58@jb-riv2
+     #equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
+     #equate  Bc.50@jb-arianes Bc.50@jb-amonts1
+     #equate  Bb.115@jb-arianes Bb.115@jb-amonts1
+     #equate  2012c-xa-29@aval-aiguilles2 De.44@jb-amonts2
+     #equate  2012c-xa-27@aval-aiguilles De.8@jb-amonts2
+     #equate  2012c-xa-0double@aval-aiguilles Da.197@jb-amonts2
+     #equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
+     #equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
+     #equate  Xa-2013-11@aval-aiguilles De.23@jb-amonts2
+     #equate  2013-xac-14@shunt-branlots Fb.29@jb-amonts2
+     #equate  2013-xac-0@shunt-branlots Fd.14@jb-amonts2
+     #equate  2013-xab-22@affluentC14 Bg.0@jb-amonts1     
+     #equate  2014-SL-35@GoureToiDeLa Kh.48@jb-riv2     # C'est celui qui a l'air de coller le mieux sur la topo
+     #equate  2013c-xa-11@Gourance2013 Kh.4@jb-riv2
+     
+     #equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse     
+     
+     #equate xa-2014a-1@jb-dino Da.248@jb-amonts2
+     #equate xa-2014a-9@jb-dino Da.253@jb-amonts2
+     
+     equate Xa-2015e-0@Erreur Da.2494@jb-amonts2
+     #equate Xa-2015e-10@Erreur Da.239@jb-amonts2
+     
+     #equate Xa-2015f-0@CouteauG Ee.0@jb-amonts2
+     
+     #equate Xav2016-23@P11 Kg.24@jb-riv
+     
+     ##equate xx36@solitaire Jd.17@jb-amonts2
+     #equate xx36@solitaire Jd.20@jb-amonts2
+     ##equate xx36@solitaire Jd.19@jb-amonts2
+     ##equate 2019-FD-9@solitaire Jd.24@jb-amonts2	# Jction 2019 Solitaire et Base du puits Alain
+    
+     
+    #equate S1-0@siphons_aval Kp.24@jb-riv2
+
+    #equate FD-2012-9@Lavoir 2017-FD-0@fileou
+     
+    # Gourance
+	#equate 2019-FD-12@Goure2019 2014-SL-24@GoureToiDeLa
+	#equate 2019-FD-E15@Goure2019 2014-SL-24@GoureToiDeLa
+	
+	# Sezommes
+	#equate 12.2020@sezhommes2020 Ko.31@jb-riv2	# carrefour vers l'aval
+	#equate 18.2020@sezhommes2020 Ko.39@jb-riv2	# ancien terminus amont de l'affluent
+	#equate 46.2020@sezhommes2020 Kn.4@jb-riv2	# sommet du P6 juste avant le bivouac -900 m
+              
+    
+        
+    # Zone du réseau des Bourguignons
+    equate  Hb.0@jb-amonts2  Da.237@jb-amonts2 #(En rajoutant artificiellement une visée P15 ?)--> Il faut faire des fichiers différents
+ 
+   endcenterline
+ 
+ endsurvey
+ 
+

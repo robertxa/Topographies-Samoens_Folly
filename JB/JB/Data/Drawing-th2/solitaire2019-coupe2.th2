@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -561.0699999999999 -442.966 2253.9865 797.2865
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -131.0 -131.0 1984.0 521.7
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {1604.0900000000001 1 1.0} {393.7 xx0init} solitaire-coupe2019.xvi 0 {}
 
 
@@ -17,32 +17,30 @@ endline
 
 point 1661.0 168.0 label -text "Le Séchoir"
 
-line u:rope
+line rope
   1756.5 215.0
   1753.0 297.0
 endline
 
-line u:rope
+line rope
   1776.0 241.0
-  1776.0 241.0 1797.5 256.5 1802.5 268.0
-  1803.1 269.38 1825.5 247.5 1832.5 255.0
-  smooth off
+  1786.0 255.0
+  1802.5 268.0
+  1832.5 255.0
 endline
 
-line u:rope
+line rope
   1781.5 329.0
-  1781.5 329.0 1799.0 318.5 1799.5 329.5
-  1800.0 340.5 1803.0 289.5 1807.0 303.5
-  1807.19 304.18 1808.0 254.0 1808.0 254.0
-  smooth off
+  1799.5 329.5
+  1807.0 303.5
+  1808.0 254.0
 endline
 
-line u:rope
+line rope
   1700.0 349.0
-  1700.0 349.0 1718.0 332.0 1719.0 339.5
-  1719.2 340.99 1716.0 295.5 1720.0 304.5
-  1720.73 306.15 1723.0 244.5 1723.0 244.5
-  smooth off
+  1719.0 339.5
+  1720.0 304.5
+  1723.0 244.5
 endline
 
 line wall -subtype invisible

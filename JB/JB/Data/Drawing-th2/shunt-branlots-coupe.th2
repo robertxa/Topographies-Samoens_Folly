@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 592.5 327.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 592.5 327.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {78.74199999999999 1 1.0} {78.744 2013-xac-0} shunt-branlots-coupe2013.xvi 0 {}
 
@@ -143,23 +143,22 @@ point 137.642 123.554 station -name 2013-xac-2@shunt-branlots.Jean-Bernard
 
 point 118.172 122.53399999999999 station -name 2013-xac-1@shunt-branlots.Jean-Bernard
 
-line u:rope
+line rope
   93.0 96.0
   92.25 77.75
 endline
 
-line u:rope
+line rope
   381.25 129.25
-  381.25 129.25 386.75 125.25 387.25 128.5
-  387.75 131.75 397.0 94.0 390.25 101.0
-  390.08 101.18 393.0 76.75 393.0 76.75
-  smooth off
+  387.25 128.5
+  390.25 101.0
+  393.0 76.75
 endline
 
-line u:rope
+line rope
   127.0 121.5
-  127.0 121.5 117.25 117.5 114.75 120.0
-  112.25 122.5 97.51 91.76 93.0 96.0
+  114.75 120.0
+  93.0 96.0
 endline
 
 line map-connection

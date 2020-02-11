@@ -1,0 +1,321 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey jb-14J -title "JB Aven du 14 Juillet" -entrance "J14"
+
+centerline -extend left -title "14J-Fk J14 Fk.0_Fk.1 Fk.34_J14"
+
+   date 1983.06.26
+   cs lat-long
+   fix J14 46.10377 6.78598 1984
+   station J14 "J14" entrance
+   #declination -2.0404 degrees
+
+  team "Jean-Bernard/de Chabelier"
+  team "Christophe Ohl"
+  explo-date 1983.06.26
+    explo-team "Jean-Bernard/de Chabelier"
+    explo-team "Christophe Ohl"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+
+   Fk.0 Fk.1    2.98       26.       15.       0.       0.       0.       0.    
+   Fk.1 Fk.2    4.86       327.       6.       0.       0.       0.       0.    
+   Fk.2 Fr.0    5.68       34.       0.       0.       0.       0.       0.    # Cairn
+   Fr.0 Fk.4    3.41       327.       21.       0.       0.       0.       0.    
+   Fk.4 Fk.5    2.39       278.       13.       0.       0.       0.       0.    
+   Fk.5 Fk.6    2.98       346.       25.       0.       0.       0.       0.    
+   Fk.6 Fk.7    3.5       272.       25.       0.       0.       0.       0.    
+   Fk.7 Fk.8    5.73       351.       47.       0.       0.       0.       0.    
+   Fk.8 Fk.9    2.08       358.       22.       0.       0.       0.       0.    
+   Fk.9 Fk.10    2.27       113.       10.       0.       0.       0.       0.    
+   Fk.10 Fk.11    3.13       34.       15.       0.       0.       0.       0.    
+   Fk.11 Fk.12    1.11       111.      -10.       0.       0.       0.       0.    
+   Fk.12 Fk.13    1.62       74.       0.       0.       0.       0.       0.    
+   Fk.13 Fk.14    3.54       68.       55.       0.       0.       0.       0.    
+   Fk.14 Fk.15    4.25       350.       15.       0.       0.       0.       0.    
+   Fk.15 Fk.16    5.18       286.      -8.       0.       0.       0.       0.    
+   Fk.16 Fk.17    2.5       318.       48.       0.       0.       0.       0.    
+   Fk.17 Fk.18    4.14       330.      -38.       0.       0.       0.       0.    
+   Fk.18 Fk.19    3.14       19.       4.       0.       0.       0.       0.    
+   Fk.19 Fk.20    5.48       71.       21.       0.       0.       0.       0.    # Arrivée salle
+   Fk.20 Fk.21    6.71       272.       51.       0.       0.       0.       0.    
+   Fk.21 Fk.22    5.07       21.       55.       0.       0.       0.       0.    
+   Fk.22 Fk.23    3.41       0.       90.       0.       0.       0.       0.    
+   Fk.23 Fk.24    3.26       203.       47.       0.       0.       0.       0.    
+   Fk.24 Fk.25    3.22       19.       30.       0.       0.       0.       0.    
+   Fk.25 Fk.26    3.31       82.      -2.       0.       0.       0.       0.    
+   Fk.26 Fk.27    7.89       82.       28.       0.       0.       0.       0.    
+   Fk.27 Fk.28    13.7       30.       80.       0.       0.       0.       0.    # Spit
+   Fk.28 Fk.29    17.83000       336.       41.       0.       0.       0.       0.    
+   Fk.29 Fk.30    9.23       325.       30.       0.       0.       0.       0.    
+   Fk.30 Fk.31    9.96       324.       30.       0.       0.       0.       0.    
+   Fk.31 Fk.32    14.75000       327.       33.       0.       0.       0.       0.    
+   Fk.32 Fk.33    15.57000       321.       18.       0.       0.       0.       0.    
+   Fk.33 Fk.34    5.72       5.       75.       0.       0.       0.       0.    
+   Fk.34 J14    13.83000       330.       36.       0.       0.       0.       0.    
+
+endcenterline
+ 
+ 
+centerline -extend right -title "Galerie du Colimaçon Da.228_Fd.1 Fd.40_Fd.41"
+
+   date 1976.02.06
+   #declination -3.0225 degrees
+
+  team "Josiane Lips"
+  team "Bernard Lips"
+  explo-date 1976.02.06
+    explo-team "Josiane Lips"
+    explo-team "Bernard Lips"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Da.228 Fd.1    17.7       197.      -28.       0.       0.       0.       0.    
+   Fd.1 Fd.2    15.72000       148.      -18.       0.       0.       0.       0.    
+   Fd.2 Fd.3    4.91       184.      -42.       0.       0.       0.       0.    
+   Fd.3 Fd.4    9.61       228.       16.       0.       0.       0.       0.    
+   Fd.4 Fd.5    5.72       195.       4.       0.       0.       0.       0.    # imp. (argile)
+   Fd.3 Fd.6    15.65000       163.      -33.       0.       0.       0.       0.    # A partir pt 3
+   extend left
+   Fd.6 Fd.7    13.01000       298.      -39.       0.       0.       0.       0.    # Escalade (2 spits)
+   Fd.7 Fd.8    8.56       348.      -6.       0.       0.       0.       0.    
+   Fd.8 Fd.9    6.76       205.      -49.       0.       0.       0.       0.    # Escalade (1 spit)
+   extend right
+   Fd.9 Fd.10    2.71       280.      -22.       0.       0.       0.       0.    
+   Fd.10 Fd.11    4.52       312.       27.       0.       0.       0.       0.  # Petite CF  
+   Fd.11 Fd.12    7.93       12.       12.       0.       0.       0.       0.    # Petite CF
+   Fd.12 Fd.13    5.41       10.      -8.       0.       0.       0.       0.    
+   extend left
+   Fd.12 Fd.14    10.78000       127.      -28.       0.       0.       0.       0.    # A partir pt 12
+   Fd.14 Fd.15    22.36000       156.      -28.       0.       0.       0.       0.    
+   Fd.15 Fd.16    18.77000       157.      -28.       0.       0.       0.       0.    # CF remontante à explorer ?
+   Fd.16 Fd.17    7.59       189.      -19.       0.       0.       0.       0.    # Départ imp.
+   Fd.17 Fd.18    6.66       147.      -19.       0.       0.       0.       0.    
+   Fd.18 Fd.19    6.59       158.      -19.       0.       0.       0.       0.    # CF avec surcreusement
+   Fd.19 Fd.20    8.26       154.      -20.       0.       0.       0.       0.    
+   Fd.20 Fd.21    6.07       174.       8.       0.       0.       0.       0.    
+   Fd.21 Fd.22    12.04000       72.       19.       0.       0.       0.       0.    
+   Fd.22 Fd.23    5.72       155.      -22.       0.       0.       0.       0.    
+   extend left
+   Fd.23 Fd.24    8.11       97.       2.       0.       0.       0.       0.    # Pt A
+   Fd.24 Fd.25    12.54000       104.       1.       0.       0.       0.       0.    
+   Fd.25 Fd.26    5.18       103.       4.       0.       0.       0.       0.    
+   Fd.26 Fd.27    4.28       127.      -14.       0.       0.       0.       0.    
+   Fd.27 Fd.28    8.26       62.       18.       0.       0.       0.       0.    
+   Fd.28 Fd.29    11.92000       137.      -19.       0.       0.       0.       0.    
+   Fd.29 Fd.30    9.21       118.      -17.       0.       0.       0.       0.    
+   Fd.30 Fd.31    12.24000       110.       12.       0.       0.       0.       0.    
+   Fd.31 Fd.32    11.66000       109.       28.       0.       0.       0.       0.    # CF avec méandre
+   Fd.32 Fd.33    16.28000       341.       39.       0.       0.       0.       0.    # CF avec méandre
+   Fd.33 Fd.34    12.12000       343.       37.       0.       0.       0.       0.    # P12
+   Fd.34 Fd.35    3.69       322.       21.       0.       0.       0.       0.    # CF avec méandre
+   Fd.35 Fd.36    5.05       322.       60.       0.       0.       0.       0.    # Descente dans le surcreusement en escalade
+   Fd.36 Fd.37    5.7       2.       37.       0.       0.       0.       0.    
+   Fd.37 Fd.38    3.59       351.       34.       0.       0.       0.       0.    
+   Fd.38 Fd.39    2.88       328.       25.       0.       0.       0.       0.    
+   Fd.39 Fd.40    2.22       350.       4.       0.       0.       0.       0.    
+   Fd.40 Fd.41    10.51000       334.       28.       0.       0.       0.       0.    # Amarrage corde pour CF descendante
+
+endcenterline
+
+
+centerline -extend left -title "jct Colimaçon - 14J - Fr Fr.0_Fr.1 Fr.4_Fd.23"
+
+  # la date de la topo n'est sûre
+  date 1976.02.06
+   #declination -3.0225 degrees
+
+  team "Josiane Lips"
+  team "Bernard Lips"
+  explo-date 1976.02.06
+    explo-team "Josiane Lips"
+    explo-team "Bernard Lips"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Fr.0 Fr.1    7.6       34.      -20.       0.       0.       0.       0.    
+   Fr.1 Fr.2    4.5       12.      -26.       0.       0.       0.       0.    
+   Fr.2 Fr.3    3.6       12.       14.       0.       0.       0.       0.    
+   Fr.3 Fr.4    5.9       298.       57.       0.       0.       0.       0.    
+   Fr.4 Fd.23    6.5       19.      -23.       0.       0.       0.       0.    
+
+endcenterline
+
+
+centerline -extend right -title "Pour Que Dalle - Fg Fg.0_Fg.1 Fg.29_Fd.13"
+
+   date 1976.03.05
+   #declination -3.0146 degrees
+
+  team "Jean-Luc Thevenin"
+  team "Benoît/Le Falher"
+  explo-date 1976.03.05
+    explo-team "Jean-Luc Thevenin"
+    explo-team "Benoît/Le Falher"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Fg.0 Fg.1    8.93       335.       18.       0.       0.       0.       0.    
+   Fg.1 Fg.2    7.87       313.       8.       0.       0.       0.       0.    # Arrivée d'eau
+   Fg.2 Fg.3    5.21       268.       0.       0.3       0.3       0.3       0.3    # Siphon temporaire (piège à rats) ; 60 cm ; Courant d'air remontant
+   Fg.3 Fg.4    6.31       155.      -12.       0.       0.       0.       0.    # Arrivée d'eau (CF)
+   Fg.4 Fg.5    2.24       162.       21.       0.       0.       0.       0.    # Début de méandre + CF au sommet (l = 80 cm)
+   Fg.5 Fg.6    2.81       150.       13.       0.       0.       0.       0.    
+   Fg.6 Fg.7    2.03       206.      -15.       0.       0.       0.       0.    # Arrivée d'eau importante (Az = 345)
+   Fg.7 Fg.8    1.42       301.       40.       0.       0.       0.       0.    
+   Fg.8 Fg.9    4.05       0.       90.       0.       0.       0.       0.    # R4
+   Fg.9 Fg.10    1.33       301.       17.       0.       0.       0.       0.    # Fond de méandre légèrement actif
+   Fg.10 Fg.11    5.06       186.       34.       0.       0.       0.       0.    
+   Fg.11 Fg.12    3.83       191.      -13.       0.       0.       0.       0.    
+   Fg.12 Fg.13    4.92       236.      -29.       1.       1.       0.       0.    # Elargissement du méandre (l = 2 m)
+   Fg.13 Fg.14    8.11       153.      -4.       0.       0.       0.       0.    # Carrefour ; 2d réseau remontant ; Méandre h = 15 m et l = 0.9 m
+   Fg.14 Fg.15    6.86       140.      -3.       2.5       2.5       20.       1.    # Grand puits remontant (h = 20 m ?), salle diam = 5 m
+   Fg.13 Fg.16    4.09       331.      -3.       0.       0.       0.       0.    # Reprise réseau principal, milieu de méandre
+   Fg.16 Fg.17    3.02       0.       90.       0.       0.       0.       0.    # Remontée dans la CF niveau supérieur
+   Fg.17 Fg.18    6.88       310.      -5.       0.       0.       0.       0.    # Sommet méandre
+   Fg.18 Fg.19    10.24000       343.       27.       1.5       1.5       1.5       1.5    # CF (Sommet méandre) ; Diam = 3 m
+   Fg.19 Fg.20    3.23       312.       12.       0.       0.       0.       0.    
+   #extend left
+   Fg.20 Fg.21    13.08000       332.       17.       0.       0.       0.       0.    # Arrivée d'eau par méandre étroit avec petite conduite forcée même direction que la galerie précédente, mais plus bas, parcourue par un courant d'air, non topographié
+   Fg.21 Fg.22    7.79       318.      -5.       0.       0.       0.       0.    # Remplissage d'argile ; réseau petit
+   Fg.22 Fg.23    4.55       317.       15.       0.       0.       0.       0.    
+   Fg.23 Fg.24    4.89       305.       9.       0.75       0.75       0.25       0.25    # h = 50 cm ; l = 1.5 m
+   Fg.24 Fg.25    2.7       260.      -4.       0.75       0.75       0.25       0.25    
+   Fg.25 Fg.26    3.78       255.      -4.       0.75       0.75       0.25       0.25    
+   Fg.26 Fg.27    2.7       275.      -8.       0.75       0.75       0.25       0.25   
+   Fg.27 Fg.28    2.48       240.      -13.       0.75       0.75       0.25       0.25    
+   Fg.28 Fg.29    4.04       177.      -15.       0.       0.       0.       0.    # fin du boyau 
+   Fg.29 Fd.13    8.54       174.      -11.       0.       0.       0.       0.    
+
+endcenterline
+
+
+centerline -extend left -title "Passibas - Fi Fg.21_Fi.1 Fi.23_Da.233"
+
+   date 1998.09.10
+   #declination -0.3201 grad
+
+   calibrate counter 0 1.000
+
+  team "Stéphane Lips"
+  team "Bernard Lips"
+  explo-date 1998.07.18
+    explo-team "Stéphane Lips"
+    explo-team "Renaud Locatelli"
+    explo-team "Séverine Andriot"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+   units counter centimeters
+
+   data topofil from to fromcount tocount backcompass backclino right left up down
+
+   Fg.21 Fi.1 61721.0 62132.0    10.       27.       0.       0.       0.       0.    
+   Fi.1 Fi.2 61420.0 61670.0    40.       4.       0.       0.       0.       0.    
+   Fi.2 Fi.3 61285.0 61420.0    15.       15.       0.25       0.25       1.       1.    # h = 2 m ; l = 0.5 m
+   Fi.3 Fi.4 60943.0 61285.0    35.       18.       0.       0.       0.       0.    
+   Fi.4 Fi.5 60696.0 60943.0    10.       20.       0.       0.       0.       0.    
+   Fi.5 Fi.6 60337.0 60696.0    57.       20.       0.5       0.5       0.       0.    # l = 1 m
+   Fi.6 Fi.7 60220.0 60337.0    18.       47.       0.       0.       0.       0.    
+   Fi.7 Fi.8 60078.0 60220.0    50.       42.       0.       0.       0.       0.    
+   Fi.8 Fi.9 59786.0 60078.0    330.       20.       0.       0.       0.       0.    
+   Fi.9 Fi.10 59582.0 59786.0    380.       28.       0.       0.       0.       0.    
+   Fi.10 Fi.11 59316.0 59582.0    375.       21.       0.       0.       0.       0.    
+   Fi.11 Fi.12 59216.0 59316.0    332.       19.       0.       0.       0.       0.    
+   Fi.12 Fi.13 59134.0 59216.0    15.       20.       0.       0.       0.       0.    
+   Fi.13 Fi.14 58702.0 59134.0    355.       25.       0.       0.       0.       0.    
+   Fi.14 Fi.15 58587.0 58702.0    395.       13.       0.       0.       0.       0.    
+   Fi.15 Fi.16 58402.0 58587.0    50.       33.       0.       0.       0.       0.    
+   Fi.16 Fi.17 58106.0 58402.0    365.       20.       0.       0.       0.       0.    
+   Fi.17 Fi.18 57828.0 58106.0    0.       100.       0.       0.       0.       0.    
+   Fi.18 Fi.19 56902.0 57828.0    180.       40.       0.       0.       0.       0.    
+   Fi.19 Fi.20 56359.0 56902.0    120.       40.       0.       0.       0.       0.    
+   Fi.20 Fi.21 55852.0 56359.0    95.       38.       0.       0.       0.       0.    
+   Fi.21 Fi.22 54835.0 55852.0    140.       50.       0.       0.       0.       0.    
+   Fi.22 Fi.23 54495.0 54835.0    0.       100.       0.       0.       0.       0.    
+   Fi.23 Da.233 0.0 400.0    0.       0.       0.       0.       0.       0.    
+
+endcenterline
+
+
+centerline -extend left -title "Galerie Cristal - Fj Fj.0_Fj.1 Fj.8_Fi.21"
+
+   date 1999.08.12
+   #declination -0.2747 grad
+
+   calibrate counter 0 1.000
+
+  team "Stéphane Lips"
+  team "Renaud Locatelli"
+  explo-date 1999.08.12
+    explo-team "Stéphane Lips"
+    explo-team "Renaud Locatelli"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+   units counter centimeters
+
+   data topofil from to fromcount tocount compass clino left right up down
+
+   Fj.0 Fj.1 0.0 0.0    0.       100.       0.4       0.8       0.5       0.3    # Etroiture dans trémie
+   Fj.1 Fj.2 446.0 704.0    0.       34.       0.8       0.5       1.       0.    
+   Fj.2 Fj.3 720.0 1130.0    20.       34.       1.       0.2       1.       0.2    
+   Fj.3 Fj.4 1130.0 1590.0    381.       8.       0.       1.       0.5       0.4    
+   Fj.4 Fj.5 1590.0 2011.0    50.       9.       1.2       0.       0.8       0.4    
+   Fj.5 Fj.6 2020.0 2287.0    350.       0.       0.5       0.4       1.5       0.4    
+   Fj.6 Fj.7 2300.0 2561.0    50.       0.       0.5       0.       03.       0.1    # Etr.
+   Fj.7 Fj.8 2570.0 3341.0    30.      -29.       0.5       0.       0.5       0.    # Descente dans faille
+   Fj.8 Fi.21 3350.0 3898.0    34.      -17.       0.       0.       0.       0.    # pointe de roche
+
+endcenterline
+
+
+centerline -extend right -title "Pour Que Dalle - Fh Fh.0_Fh.1 Fh.4_Fg.0"
+
+   date 1976.08.12
+   #declination -2.5807 degrees
+
+  team "Bernard Séroul"
+  team "Jean-Luc Thevenin"
+  explo-date 1976.08.12
+    explo-team "Bernard Séroul"
+    explo-team "Jean-Luc Thevenin"
+
+   units lenght meters
+   units compass degrees
+   units clino grad
+
+   data normal from to length compass clino left right up down
+
+   Fh.0 Fh.1    14.77000       5.       25.       0.       0.       0.       0.    # Colm.
+   Fh.1 Fh.2    8.69       125.       43.       0.       0.       0.       0.    # Visée sur bloc coincé
+   Fh.2 Fh.3    8.12       140.      -5.       0.       0.       0.       0.    # Bord de la remontée en artif
+   Fh.3 Fh.4    5.89       175.      -39.       0.       0.       0.       0.    # Spit en artif
+   Fh.4 Fg.0    3.26       140.      -45.       0.       0.       0.       0.    # Fin
+
+ endcenterline
+ 
+  
+endsurvey

@@ -2322,7 +2322,7 @@ endcenterline
    units clino degrees
 
    data normal from to length backcompass backclino right left up down
-
+	extend left
    Da.235 Da.236    23.76       99.       0.       3.5       1.5       1.5       1.5    # Conduite forcée ; diam = 5 m
    Da.236 Da.237    16.54       130.       0.       0.       0.       0.       0.    
    Da.237 Da.238    6.27       115.       11.       0.       0.       0.       0.    
@@ -2445,6 +2445,7 @@ endcenterline
    Da.335 Da.336    1.57       110.       13.       0.       0.       0.       0.    # méandre
    Da.336 Da.337    2.28       155.       20.       0.       0.       0.       0.    # méandre
    Da.337 Da.338    2.72       88.       37.       0.       0.       0.       0.    # méandre
+   #extend ignore Da.338 Da.339
    Da.338 Da.339    6.33       0.       90.       0.       0.       0.       0.    # m.c. du puits
    Da.339 Da.340    4.31       123.       38.       0.       0.       0.       0.    # méandre des cascadelles
    
@@ -2800,7 +2801,9 @@ endcenterline
 
    Fs.0 Fs.1    5.91       343.      -20.       0.       0.       0.       0.    # Arrêt à la base d'un R5 à escalader
    Fs.1 Fs.2    8.04       326.       25.       0.       0.       0.       0.    
-   Fs.2 Da.255    16.06       352.       38.       0.       0.       0.       0.    
+   extend ignore Fs.2 Da.255
+   Fs.2 Da.255    16.06       352.       38.       0.       0.       0.       0. 
+   #extend ignore Da.255 Fs.4   
    Da.255 Fs.4    9.91       98.       21.       0.       0.       0.       0.    # 2 départs imp. ; Carrefour vers P15 et escalier
 
  endcenterline
@@ -2924,6 +2927,8 @@ extend start Da.269
    Ia.19 Ia.20    13.29000       312.       29.       0.       0.       0.       0.    # Ressaut
    Ia.20 Ia.21    13.04000       275.       2.       0.       0.       0.       0.    
    Ia.21 Ia.22    6.96       315.       37.       2.       2.       3.       1.    # Au moins 4 m de diam
+   
+   #extend ignore Ia.22 Da.269
    Ia.22 Da.269    1.72       0.       90.       0.       0.       0.       0.    # Ressaut
 
  endcenterline
@@ -3858,7 +3863,7 @@ extend start Da.269
    units clino degrees
 
    data normal from to length backcompass backclino right left up down
-
+	#extend ignore Gf.5 Gi.1
    Gf.5 Gi.1    2.       17.       29.       0.       0.       0.       0.    
    Gi.1 Gi.2    7.32       160.      -3.       0.       0.       0.       0.    
    Gi.2 Gi.3    5.55       127.      -21.       0.       0.       0.       0.    
@@ -3969,6 +3974,7 @@ extend start Da.269
    Ha.35 Ha.36    11.43000       93.       1.       0.       0.       0.       0.    
    Ha.36 Ha.37    9.38       115.      -10.       0.       0.       0.       0.    
    Ha.37 Ha.38    9.2       158.      -35.       0.       0.       0.       0.    
+   #extend ignore Ha.38 Da.287
    Ha.38 Da.287    6.84       101.       0.       0.       0.       0.       0.    
 
  endcenterline

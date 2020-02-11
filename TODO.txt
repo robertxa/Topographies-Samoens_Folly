@@ -2,7 +2,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Coupes développées à dessiner
 	* C74
-	* Réseau CP
+	* Réseau CP ; En cours
 	* CP43
 	* L17
 	
@@ -36,9 +36,9 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Améliorer la façon de faire pour que ce soit plus facile/fluide pour toute la BD ?
 
 - Migrer toutes les topos sous formes de "maps" et utiliser la commande "select"
-	* gouffre JB : le JB-plan.thconfig est fait, il faut faire les autres thconfig, et tester pour l'Atlas
+	* gouffre JB : les JB-plan.thconfig et JB-Coupe.thconfig sont faits, il faut tester pour l'Atlas
 	* Ermoy : il faut peut-être recouper plus intelligemment !
-	* Retravailler le réseau CP (plan OK)
+	* Retravailler le réseau CP (plan OK, Coupe développée en cours)
 	* Verifier toutes les zones de superpositions (C74...)
 
 - Erreurs dessins à corriger
@@ -51,11 +51,10 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on" des layouts
 
 - JB :
-	* Construire le fichier des maps pour la coupe
-	* 
+	* Finir la découpe des données de la zone amont (faire les jonctions + revoir les appels à stations dans les dessins)
+	* ...
 	
 - Mise à jour sur le site Vulcain
 	* Combe aux Puaires
-	* Plan et Coupe du JB 2020
 	* ...
 	

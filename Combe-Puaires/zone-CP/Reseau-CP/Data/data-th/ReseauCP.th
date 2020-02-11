@@ -3,8 +3,8 @@ encoding utf-8
 # Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
- 
-survey ReseauCP -title "Combe-aux-Puaires" #-entrance "CP12" -entrance "CP14" -entrance "CP16" -entrance "CP19b"
+
+survey ReseauCP -title "Combe aux Puaires" 
   
 centerline -title "1.0_1.1 3.1_3.2"
    date 1977.09.22
@@ -18,6 +18,7 @@ centerline -title "1.0_1.1 3.1_3.2"
    units compass degrees
    units clino degrees
    data normal from to length compass clino left right up down
+   extend left
    1.0 1.1    11.55       328.0      -20.       1.5       1.5       10.       1.0    
    1.1 1.2    10.14       335.0      -26.       2.5       2.5       4.0       1.0    
    1.2 1.3    12.11       334.0      -26.       2.0       2.0       8.0       1.0    
@@ -46,6 +47,8 @@ centerline -title "1.0_1.1 3.1_3.2"
    1.25 1.26    9.290       232.0      -37.       2.0       2.0       4.0       1.0    
    1.26 1.27    10.16       225.0       0.0       2.0       2.0       4.0       1.0    
    1.27 1.28    11.67       243.0       7.0       3.0       3.0       4.0       1.0    
+   
+   
    1.28 1.29    10.65       301.0       14.       2.0       2.0       2.0       1.0    
    1.29 1.30    5.4       310.0      -4.0       2.0       2.0       4.0       1.0    
    1.30 1.31    15.43       265.0       0.0       2.0       2.0       8.0       1.0    
@@ -69,6 +72,7 @@ centerline -title "1.10_4.1 5.4_5.5"
    units compass degrees
    units clino degrees
    data normal from to length compass clino left right up down
+   extend right
    1.10 4.1    4.560       354.0      -38.      0.50      0.50       1.0       1.0    
    4.1 4.2    3.380       19.      -24.      0.50      0.50       1.0       1.0    
    4.2 4.3    8.860       57.      -4.0      0.50      0.50       1.0       1.0    
@@ -111,8 +115,10 @@ centerline -title "g. du P18 : A.54_7.1 7.18_7.19"
    units compass degrees
    units clino degrees
    data normal from to length compass clino left right up down
+   extend right
    A.54 7.1    12.41       136.0       11.       1.0       1.0       4.0       1.0    
    7.1 7.2    19.35       176.0       6.5       1.0       1.0       5.0       1.0    
+   extend left
    7.2 7.3    16.37       199.0       31.50       1.0       1.0       8.0       1.0    
    7.3 7.4    8.270       200.0      -37.50       1.5       1.5       3.0       1.0    
    7.4 7.5    17.30       302.0      -8.0      0.50      0.50       3.0       1.0    
@@ -126,8 +132,10 @@ centerline -title "g. du P18 : A.54_7.1 7.18_7.19"
    7.12 7.13    54.15       0.0      -90.      0.60      0.60       50.       1.0    
    7.13 1.24    6.340       150.0      -14.      0.60      0.60       3.0       1.0    
    1.24 7.15    7.530       38.      -7.0      0.60      0.60       3.0       1.0    
+   extend right
    1.24 7.16    5.530       135.0       21.      0.60      0.60       3.0       1.0    
    7.16 7.17    13.37       148.0      -31.      0.60      0.60       3.0       1.0    
+   extend left
    1.24 7.18    4.670       290.0      -30.      0.60      0.60       3.0       1.0    
    7.18 7.19    10.47       345.0      -22.      0.60      0.60       3.0       1.0    
 endcenterline
@@ -181,11 +189,13 @@ centerline -title "Sirocco : 1.0_9.1 9.25_9.26"
    units compass degrees
    units clino degrees
    data normal from to length compass clino left right up down
+   extend right
    1.0 9.1    12.83       0.0       90.       1.5       1.5       9.0       1.0    
    9.1 9.2    17.58       160.0       47.       1.5       1.5       12.       1.0    
    9.2 9.2'    32.90       184.0       18.       1.5       1.5       6.0       1.0    
    9.2 9.3    5.060       140.0      -32.       1.5       1.5       4.0       1.0    
    9.3 9.4    11.25       68.      -28.       1.5       1.5       6.0       1.0    
+   extend right
    9.4 9.5    25.78       131.0       11.       2.0       2.0       3.0       1.0    
    9.5 9.6    38.31       57.       15.       2.5       2.5       10.       1.0    
    9.6 9.7    21.64       21.      -1.0       1.5       1.5       2.0       1.0    
@@ -228,6 +238,7 @@ centerline -title "Huit inférieur : 9.10_10.1 10.10_9.4"
    units clino grad
 
    data normal from to length compass clino left right up down
+   extend left
    9.10 10.1    20.05       296.0      -31.       1.0       1.0       3.0       1.0    
    10.1 10.2    5.980       194.0       6.0       1.0       1.0       3.0       1.0    
    10.2 10.3    7.290       277.0      -13.       1.0       1.0       3.0       1.0    
@@ -259,6 +270,7 @@ centerline -title "P30 rasoir ? 12.0_12.1 12.10_9.14"
    units compass grad
    units clino grad
    data normal from to length compass clino left right up down
+   extend left
    12.0 12.1    11.07       50.       0.0       4.0       4.0       1.0       1.0    
    12.1 12.2    20.44       368.0      -19.       1.5       1.5       1.0       1.0    
    12.2 12.3    2.290       297.0      -18.       1.5       1.5       1.0       1.0    
@@ -289,6 +301,7 @@ centerline -title "16.7_11.1 11.38_9.14"
    units clino grad
 
    data normal from to length compass clino left right up down
+   extend left
    16.7 11.1    12.90       50.       26.       1.0       1.0       1.0       1.0    
    11.1 11.2    13.30       30.       40.       1.2       1.2       2.0       1.0    
    11.2 11.3    10.15       65.       20.       1.5       1.5       2.0       1.0    
@@ -309,10 +322,12 @@ centerline -title "16.7_11.1 11.38_9.14"
    11.17 11.18    8.6       380.0       30.       1.0       1.0       4.0       1.0    
    11.18 11.19    3.6       0.0       1.0       1.0       1.0       4.0       1.0    
    11.19 11.20    5.7       365.0       10.       1.0       1.0       4.0       1.0    
-   11.20 11.21    4.9       355.0       60.       1.0       1.0       4.0       1.0    
+   11.20 11.21    4.9       355.0       60.       1.0       1.0       4.0       1.0
+   extend right    
    11.21 11.22    5.5       365.0       31.       1.0       1.0       4.0       1.0    
    11.22 11.23    3.950       280.0      -5.0       1.0       1.0       4.0       1.0    
    11.23 11.24    5.7       345.0      -10.       1.0       1.0       4.0       1.0    
+   extend left
    11.24 11.25    11.05       320.0       31.       1.5       1.5       5.0       1.0    
    11.25 11.26    5.8       330.0       5.0       2.0       2.0       3.0       1.0    
    11.26 11.27    8.450       324.0      -20.       1.5       1.5       4.0       1.0    
@@ -346,6 +361,7 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
    units clino degrees
 
    data normal from to length compass clino left right up down
+   extend right
    9.26 16.1    7.560       95.       62.       1.5       1.5       10.       1.0    
    16.1 16.2    15.04       115.0       13.       1.0       1.0       10.       1.0    
    16.2 16.3    18.07       115.0       28.       2.0       2.0       5.0       1.0    
@@ -364,6 +380,7 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
    16.15 16.16    5.990       162.0      -49.       4.0       4.0       15.       1.0    
    16.16 16.17    28.08       0.0      -90.       4.0       4.0       40.       1.0    
    16.17 16.18    9.490       264.0       8.0       1.5       1.5       5.0       1.0    
+   extend left
    16.18 16.19    7.540       320.0      -17.       1.0       1.0       3.0       1.0    
    16.19 16.20    6.090       20.       8.0       1.0       1.0       1.0       1.0    
    16.20 16.21    15.77       0.0      -90.       1.0       1.0       15.       1.0    
@@ -377,6 +394,7 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
    16.28 16.29    12.31       296.0      -30.       1.0       1.0       5.0       1.0    
    16.29 16.30    12.89       226.0      -34.       1.0       1.0       6.0       1.0    
    16.18 17.1    6.240       256.0       0.0       1.0       1.0       4.0       1.0    
+   extend right
    17.1 17.2    12.41       182.0       16.      0.70      0.70       2.0       1.0    
    17.2 17.3    14.21       149.0      -2.0      0.70      0.70      0.50       1.0    
    17.3 17.4    6.460       138.0       9.0      0.70      0.70      0.50       1.0    
@@ -442,6 +460,7 @@ centerline -title "Puits des Secoués : 19.0_19.1 19.9_1.28"
    units clino degrees
 
    data normal from to length compass clino left right up down
+   extend right
    19.0 19.1    27.80       116.0      -37.       2.0       2.0       4.0       1.0    
    19.1 19.2    17.60       82.      -65.       2.0       2.0       4.0       1.0    
    19.2 19.3    4.050       24.      -70.       2.0       2.0       4.0       1.0    

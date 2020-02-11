@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 1151.6226000000001 600.4412
+##XTHERION## xth_me_area_adjust -128.75 -128.75 1095.25 531.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {816.686 1 1.0} {314.965 xx0init} solitaire-coupe2017.xvi 0 {}
 
@@ -195,26 +195,23 @@ point 180.5 171.25 label -text "R3"
 
 point 862.0 185.5 label -text "R3"
 
-line u:rope -clip off
+line rope
   551.25 199.75
-  551.25 199.75 548.0 194.5 547.0 198.0
-  546.78 198.76 532.75 180.25 532.75 180.25
-  smooth off
+  547.0 198.0
+  532.75 180.25
 endline
 
-line u:rope -clip off
+line rope
   536.75 209.0
-  536.75 209.0 532.5 204.25 530.25 208.0
-  529.96 208.48 511.25 190.75 511.25 190.75
-  smooth off
+  530.25 208.0
+  511.25 190.75
 endline
 
-line u:rope -clip off
+line rope
   758.5 246.5
-  758.5 246.5 766.25 238.25 766.5 244.25
-  766.52 244.75 785.0 212.25 784.5 224.75
-  784.0 237.25 784.75 191.25 784.75 191.25
-  smooth off
+  766.5 244.25
+  784.5 224.75
+  784.75 191.25
 endline
 
 point 771.5 207.5 height -value [-8 m]
@@ -223,12 +220,13 @@ point 761.25 226.75 label -text "R5"
 
 point 856.75 262.5 label -text "puits Alain"
 
-line u:rope -clip off
+line rope -clip off
   853.0 285.0
-  853.0 285.0 846.75 283.0 844.25 285.25
-  843.51 285.92 832.25 282.5 832.25 290.25
-  832.25 290.6 826.0 293.5 824.75 317.25
-  824.72 317.81 821.0 314.75 819.5 317.5
+  844.25 285.25
+  832.25 290.25
+  824.75 317.25
+  824.75 317.25 821.0 314.75 819.5 317.5
+  smooth off
 endline
 
 line wall -subtype invisible
@@ -299,6 +297,7 @@ line wall
   subtype pebbles
   829.0 179.75 854.5 186.25 853.75 195.25
   853.09 203.12 870.5 207.75 872.0 208.75
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -372,6 +371,7 @@ line wall
   534.25 204.5 545.0 205.5 548.75 205.5
   552.5 205.5 561.25 208.25 556.5 205.25
   551.75 202.25 547.0 199.75 545.25 198.0
+  smooth off
 endline
 
 line wall
@@ -382,6 +382,7 @@ line wall
   620.0 236.75 607.5 231.0 600.0 226.5
   592.5 222.0 570.5 212.5 563.0 212.25
   555.5 212.0 534.0 212.5 531.25 210.0
+  smooth off
 endline
 
 line wall
@@ -446,12 +447,11 @@ point 906.5 366.25 height -value [+2.5 m]
 
 point 773.75 323.5 continuation -attr Code E -text "Départ en plafond à atteindre"
 
-line u:rope
+line rope
   902.25 385.75
-  902.25 385.75 896.0 377.0 896.0 383.25
-  896.0 383.75 885.0 368.5 885.25 376.75
-  885.28 377.87 883.5 357.25 883.5 357.25
-  smooth off
+  896.0 383.25
+  885.25 376.75
+  883.5 357.25
 endline
 
 line wall -close on -reverse on -outline in

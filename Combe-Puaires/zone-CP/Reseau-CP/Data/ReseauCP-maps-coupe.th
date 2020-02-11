@@ -1,0 +1,130 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#map MC-rev -title ""
+#		Voltigeurs-amonts
+#	break
+#		voltigeurs
+#		preview below JB-amonts
+#endmap
+
+map MC-Billy -title "Méandre Billy amont"
+	
+	#break
+	Billy1c@ReseauCP
+	break
+	Billy2-c@ReseauCP
+	break
+	Billy3-c1@ReseauCP
+	break
+	Billy3-c2@ReseauCP
+endmap
+
+map MC-clowns -title "Réseau des Clowns"
+	clowns-SC1@ReseauCP
+	break
+	clowns-SC2@ReseauCP
+	break
+	clowns-SC3@ReseauCP
+endmap
+
+map MC-Affluent-Steph -title "Affluent de la rivière amont"
+	aff_coupe_1@ReseauCP
+endmap
+
+map MC-rivamont -title "Rivière amont 2019"
+	rivamont2019-SC1@ReseauCP
+endmap
+
+map MC-rivamont2014 -title "Rivière à Pierrot"
+	Palmier-SC1@ReseauCP
+	break
+	Rivamont14-SC1@ReseauCP
+	break
+	hautspots-SC1@ReseauCP
+	break
+	hautspots-SC3@ReseauCP
+	break
+	hautspots-SC2@ReseauCP
+	break
+	hautspots-SC4@ReseauCP
+	break
+	bivouacpierrot-SC1@ReseauCP
+endmap
+
+map MC-rivaval -title "Rivière de la Tête à l'Homme"
+	shuntcata-SC1@ReseauCP
+	break
+	RivAval-SC2@ReseauCP
+	break
+	RivAval-SC1@ReseauCP
+	break
+	RivAval-SC3@ReseauCP
+	break
+	Massues-SC1@ReseauCP
+endmap
+
+
+map MC-CP12 -title "Gouffre CP12"
+	CP12-SC1@ReseauCP
+	break
+	CP12-SC2@ReseauCP	
+endmap
+
+map MC-reptiles -title "Réseau des Reptiles"
+	Reptiles-SC1@ReseauCp
+	preview above MC-CP19b
+endmap
+
+map MC-CP19b -title "CP19 bis"
+	CP19b-SC2@ReseauCP
+	preview below MC-reptiles
+	break
+	CP19b-SC1@ReseauCP
+endmap
+
+
+#####################################################################
+#    Réseaux intermédiaires
+
+map MC-Rivamont -title "Rivière amont"
+	MC-rivamont2014
+	break
+	MC-rivamont
+	break
+	MC-Affluent-Steph
+endmap
+
+map MC-CP12-aval -title "CP12"
+	MC-CP12
+endmap
+
+map MC-CP19-Reptiles-Aval -title "CP19 bis et réseau des Reptiles"
+	MC-reptiles
+	break
+	MC-CP19b
+	preview below MC-reptiles
+endmap
+
+#####################################################################
+map MC-ReseauCP-total -title "Réseau de la Combe aux Puaires"
+	
+	MC-CP12-aval
+	break
+	MC-CP19-Reptiles-Aval
+	break
+	MC-Billy
+	
+	break
+	MC-Rivamont
+	break
+	MC-rivaval
+	
+	break
+	MC-clowns
+	
+endmap
+   

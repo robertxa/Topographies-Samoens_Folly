@@ -1,0 +1,360 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey jb-V11 -title "JB gouffre du V11" -entrance "V11"
+
+centerline -extend right -title "V11 V11_Ef.1 Ef.37_Ef.38"
+
+   date 1975.08.08
+   cs lat-long
+   fix V11 46.10453 6.78850 2048
+   station V11 "V11" entrance
+  # declination -3.0634 degrees
+
+    team "Jean-Pierre Stéphanato"
+    team "Bernard Lips"
+  explo-date 1975.08.07
+    explo-team "Pierre Rias"
+    explo-team "Michel Heuguebaert"
+    explo-team "Bernard Séroul"
+
+  explo-date 1975.08.08
+    explo-team "Pierre Rias"
+    explo-team "Philippe Bigeard"
+  explo-date 1975.08.09
+    explo-team "Pierre Rias"
+    explo-team "Michel Heuguebaert"
+  explo-date 1975.08.11
+    explo-team "Bernard Lips"
+    explo-team "Bernard Séroul"
+  explo-date 1975.08.14
+    explo-team "Jean-Claude Korp"
+    explo-team "Benoît/Le Falher"
+    explo-team "Jean-Pierre Stéphanato"
+  explo-date 1975.08.14
+    explo-team "Bernard Lips"
+    explo-team "Philippe Bigeard"
+  explo-date 1975.08.15
+    explo-team "Jean-Claude Korp"
+    explo-team "Bernard Lips"
+  explo-date 1975.08.16
+    explo-team "Christian Rigaldie"
+    explo-team "Philippe Bigeard"
+  explo-date 1975.08.17
+    explo-team "Bernard Séroul"
+    explo-team "Philippe Bigeard"
+  explo-date 1975.08.18
+    explo-team "Bernard Lips"
+    explo-team "Christian Rigaldie"
+    explo-team "Benoît/Le Falher"
+    explo-team "Jean-Charles Chouquet"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+
+   V11 V11double    0.       0.       90.       0.       0.       0.       0.    
+   V11 Ef.1    3.31       148.      -32.       0.       0.       0.       0.    # neige
+   Ef.1 Ef.2    6.67       117.      -33.       0.       0.       0.       0.    # glace
+   Ef.2 Ef.3    5.74       113.      -23.       0.       0.       0.       0.    # neige
+   Ef.3 Ef.4    6.86       103.      -22.       0.       0.       0.       0.    # neige
+   Ef.4 Ef.5    8.44       125.      -30.       0.       0.       0.       0.    # neige
+   Ef.5 Ef.6    16.53000       146.      -41.       0.       0.       0.       0.    
+   Ef.6 Ef.7    16.8       172.      -41.       0.       0.       0.       0.    
+   Ef.7 Ef.8    10.09000       135.      -35.       0.       0.       0.       0.    
+   Ef.8 Ef.9    1.88       89.      -30.       0.       0.       0.       0.    # P20
+   Ef.9 Ef.10    20.72000       0.      -90.       0.       0.       0.       0.    
+
+   extend left
+   Ef.10 Ef.11    11.83000       344.      -16.       0.       0.       0.       0.    # P10
+   Ef.11 Ef.12    7.17       344.       57.       0.       0.       0.       0.    
+
+   extend right
+   Ef.10 Ef.13    6.01       159.       9.       0.       0.       0.       0.    
+   Ef.13 Ef.14    4.83       137.      -12.       0.       0.       0.       0.    
+   Ef.14 Ef.15    18.47000       0.      -90.       0.       0.       0.       0.    # P22
+   Ef.15 Ef.16    3.93       139.      -15.       0.       0.       0.       0.    
+   Ef.16 Ef.17    3.92       158.      -30.       0.       0.       0.       0.    
+   Ef.17 Ef.18    5.75       155.       21.       0.       0.       0.       0.    
+   Ef.18 Ef.19    3.5       173.       36.       0.       0.       0.       0.    
+   Ef.19 Ef.20    5.58       130.       36.       0.       0.       0.       0.    
+   Ef.20 Ef.21    2.99       155.       49.       0.       0.       0.       0.    # Dynamitage
+   Ef.21 Ef.22    22.55000       0.      -90.       0.       0.       0.       0.    
+   Ef.22 Ef.23    7.52       154.      -4.       0.       0.       0.       0.    # P25
+   Ef.23 Ef.24    3.66       123.       17.       0.       0.       0.       0.    
+   Ef.24 Ef.25    3.9       155.      -14.       0.       0.       0.       0.    
+   Ef.25 Ef.26    5.78       140.       22.       0.       0.       0.       0.    
+   Ef.26 Ef.27    5.98       123.      -56.       0.       0.       0.       0.    # P10
+   Ef.27 Ef.28    24.12000       0.      -90.       0.       0.       0.       0.   
+   Ef.28 Ef.29    10.94000       142.       29.       0.       0.       0.       0.    
+   Ef.29 Ef.30    9.91       155.      -24.       0.       0.       0.       0.    
+   Ef.30 Ef.31    10.32000       0.      -90.       0.       0.       0.       0.    
+   Ef.31 Ef.32    3.41       100.      -13.       0.       0.       0.       0.    # P10
+   Ef.32 Ef.33    5.1       121.      -13.       0.       0.       0.       0.    
+   Ef.33 Ef.34    10.34000       140.      -22.       0.       0.       0.       0.    
+   Ef.34 Ef.35    2.28       144.      -20.       0.       0.       0.       0.    # Lucarne
+   Ef.35 Ef.36    6.28       122.      -25.       0.       0.       0.       0.    
+   Ef.36 Ef.37    9.85       182.      -2.       0.       0.       0.       0.    # R4
+   Ef.37 Ef.38    0.       0.       90.       0.       0.       0.       0.    # méandre étroit exploré sur 30 m environ ; dynamitage
+
+# Dev = 
+
+endcenterline
+ 
+
+ centerline -extend left -title "Jct V11-B19 Ek.8_Eg.1 Eg.13_Ef.9"
+
+   date 1977.08.05
+  # declination -2.4957 degrees
+
+  team "Philippe Lavabre"
+  team "Michel Decaux"
+  team "Bernard Lips"
+
+  explo-date 1977.08.04
+    explo-team "Bernard Lips"
+    explo-team "Christian Roy"
+  explo-date 1977.08.04
+    explo-team "Josiane Lips"
+    explo-team "Philippe Bigeard"
+    explo-team "Michel Decaux"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Ek.8 Eg.1    12.75000       143.      -28.       0.       0.       0.       0.    
+   Eg.1 Eg.2    4.13       80.       0.       0.       0.       0.       0.    
+   Eg.2 Eg.3    18.78000       147.      -24.       1.5       1.5       2.5       2.5    
+   Eg.3 Eg.4    7.97       145.      -30.       1.5       1.5       2.5       1.5    # l = 3 m ; h = 4 m
+   Eg.4 Eg.5    7.04       146.      -24.       0.       0.       0.       0.    
+   Eg.5 Eg.6    8.28       158.      -34.       0.       0.       0.       0.    
+   Eg.6 Eg.7    7.05       123.      -27.       0.       0.       0.       0.    
+   Eg.7 Eg.8    3.21       196.      -38.       0.       0.       0.       0.    
+   Eg.8 Eg.9    23.47000       145.      -30.       0.       0.       0.       0.   
+   Eg.9 Eg.10    16.54000       145.      -36.       0.       0.       0.       0.    
+   Eg.10 Eg.11    8.94       146.      -31.       0.       0.       0.       0.    
+   Eg.11 Eg.12    12.87000       146.      -26.       0.       0.       0.       0.    
+   Eg.12 Eg.13    4.2       111.      -10.       0.       0.       0.       0.    
+   Eg.13 Ef.9    7.28       146.      -40.       0.       0.       0.       0.    # Puits du V11
+
+# Dev = 142.6 m
+
+endcenterline 
+
+
+centerline -extend left -title "G. des Oubliés ou du bouclage Ej.20_Ek.1 Ek.24_De.35"
+
+   date 1977.05.21
+  # declination -2.5140 degrees
+
+  team "Bernard Lips"
+  team "Christian Rigaldie"
+  explo-date 1977.05.21
+    explo-team "Bernard Lips"
+    explo-team "Christian Rigaldie"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Ej.20 Ek.1    12.3       181.      -28.       0.       0.       0.       0.    
+   Ek.1 Ek.2    11.64       155.      -21.       2.       2.       2.5       1.5    # Diam = 4 m
+   Ek.2 Ek.3    9.02       141.      -13.       0.       0.       0.       0.    
+   Ek.3 Ek.4    13.84       156.      -27.       0.       0.       0.       0.    # vire ; m.c.
+   Ek.4 Ek.5    7.43       164.      -25.       0.       0.       0.       0.    
+   Ek.5 Ek.6    7.05       139.      -12.       0.       0.       0.       0.    # m.c.
+   Ek.6 Ek.7    12.82       156.      -21.       0.       0.       0.       0.    
+   Ek.7 Ek.8    6.17       101.       18.       0.       0.       0.       0.    
+   Ek.8 Ek.9    7.32       43.       28.       0.       0.       0.       0.    
+   Ek.9 Ek.10    6.41       52.       20.       0.       0.       0.       0.    
+   Ek.10 Ek.11    11.92       85.       5.       0.       0.       0.5       0.5    # h = 1 m ; glaise
+   Ek.11 Ek.12    12.7       87.       0.       0.       0.       0.       0.    
+   Ek.12 Ek.13    8.24       82.       7.       0.       0.       0.       0.    
+   Ek.13 Ek.14    8.07       56.       20.       0.       0.       0.       0.    
+   Ek.14 Ek.15    4.96       80.       18.       0.       0.       0.       0.    
+   Ek.15 Ek.16    9.01       114.      -14.       0.       0.       0.       0.    
+   Ek.16 Ek.17    6.41       57.       16.       0.       0.       0.25       0.25    # h = 0.5 m
+   Ek.17 Ek.18    8.51       81.       6.       0.       0.       0.25       0.25    # excentriques ; laminoir ; h = 0.5 m
+   Ek.18 Ek.19    10.87       49.       27.       0.       0.       0.5       0.5    
+   Ek.19 Ek.20    9.94       85.       6.       0.       0.       0.       0.    # h = 0.5 à 1 m
+   Ek.20 Ek.21    5.76       75.       3.       0.       0.       0.25       0.25    # h = 0.5 m
+   Ek.21 Ek.22    9.94       90.       3.       0.       0.       0.       0.    
+   Ek.22 Ek.23    5.27       53.       30.       0.       0.       0.       0.    
+   Ek.23 Ek.24    9.98       349.       34.       0.       0.       0.       0.  # montée glaiseuse sur 3 m  
+   Ek.24 De.35    16.05       10.       26.       0.       0.       0.       0.    
+ 
+ # Dev = 232.4 m
+ 
+endcenterline
+ 
+ 
+centerline -extend right -title "g. des dalles et des aiguilles De.0_De.1 De.46_De.12"
+ # g. des Dalles et g. Des Aiguilles
+
+   date 1977.02.15
+  # declination -2.5351 degrees
+		team "Christian Rigaldie"
+  team "Benoît/Le Falher"
+  team "Bernard Lips"
+  team "Josiane Lips"
+  explo-date 1977.02.12
+    explo-team "Christian Rigaldie"
+    explo-team "Benoît/Le Falher"
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+  explo-date 1977.02.14
+    explo-team "Christian Rigaldie"
+    explo-team "Benoît/Le Falher"
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+    explo-team "Pierre Rias"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   De.0 De.1    10.4       198.      -22.       0.       0.       0.       0.    
+   De.1 De.1'    10.69000       170.      -22.       0.       0.       0.       0.    # arrêt sur colm.
+   De.1 De.2    2.81       310.      -17.       0.       0.       0.       0.    
+   De.2 De.3    3.84       305.      -55.       0.       0.       0.       0.    
+   De.3 De.4    5.37       320.      -32.       0.       0.       0.       0.    
+   De.4 De.5    5.52       215.       4.       0.       0.       0.       0.    
+   De.5 De.6    1.92       260.      -10.       0.       0.       0.       0.    # Au dessus d'un puits
+   De.6 De.7    3.21       310.      -45.       0.       0.       0.       0.    
+   De.7 De.7'    2.6       315.       20.       0.       0.       0.5       0.5    # diam = 1 m
+   De.7' De.8'    1.36       340.       19.       0.       0.       0.       0.    
+   De.8' De.9'    3.82       320.       3.       0.       0.       0.       0. # obstrué par éboulis   
+   De.7 De.8    1.59       265.      -60.       0.       0.       0.       0.    
+   De.8 De.9    7.27       138.      -28.       0.       0.       0.       0.    
+   De.9 De.10    7.6       125.      -43.       0.       0.       0.       0.    
+   De.10 De.11    1.83       165.      -62.       0.       0.       0.       0.    
+   De.11 De.12    2.86       130.      -43.       0.       0.       0.       0.    # Escalade
+   
+
+   De.12 De.13    8.86       274.      -48.       0.       0.       0.       0.    
+   De.13 De.14    7.14       295.      -19.       2.       2.       2.       2.    # Conduite forcée descendante ; diam = 3 à 4 m
+   #extend left
+   De.14 De.15    9.33       290.       23.       0.       0.       0.       0.    
+   De.15 De.16    14.89000       250.       30.       0.       0.       0.       0.    # m.c. ; passage au dessus d'un puits
+   De.16 De.17    8.26       176.       16.       0.       0.       0.       0.    
+   De.17 De.18    7.37       198.       15.       0.       0.       0.       0.    
+   extend right
+   De.18 De.19    8.02       277.       0.       0.       0.       0.       0.    
+   De.19 De.20    13.69000       210.      -16.       0.       0.       0.       0.    
+   De.20 De.21    8.56       305.       9.       2.5       2.5       2.5       2.5    # diam = 5 m
+   De.21 De.22    8.58       338.       20.       0.       0.       0.       0.    
+   De.22 De.23    7.66       300.      -14.       0.       0.       0.       0.    
+   De.23 De.24    11.05000       207.      -6.       0.       0.       0.       0.    
+   De.24 De.25    11.47000       285.       0.       0.       0.       0.       0.    
+   De.25 De.26    21.83000       182.      -23.       0.       0.       0.       0.    
+   De.26 De.27    17.13000       180.      -21.       2.5       2.5       2.5       2.5    # diam = 5 m
+   De.27 De.28    28.8       298.       3.       0.       0.       0.       0.    
+   De.28 De.29    4.83       270.      -4.       0.       0.       0.       0.    
+   De.29 De.30    11.74000       323.       15.       0.       0.       0.       0.    # Arret au cairn
+   extend left
+   De.26 De.31    8.89       89.       1.       0.       0.       0.       0.    
+   De.31 De.32    32.93000       150.      -17.       0.       0.       0.       0.    
+   De.32 De.33    19.29000       98.      -3.       0.       0.       0.       0.    
+   De.33 De.34    11.45000       103.       0.       1.5       1.5       1.5       1.5    # Conduite forcée ; diam = 3 m
+   De.34 De.35    26.95000       168.      -24.       0.       0.       0.       0.    
+   extend left
+   De.35 De.36    17.08000       126.      -21.       0.       0.       0.       0.    
+   De.36 De.37    18.23000       154.      -29.       0.2       1.5       1.5       1.5    # Conduite forcée ; l = 3 m ; h = 1.7 m
+   De.37 De.38    19.7       155.      -32.       0.       0.       0.       0.    
+   De.38 De.39    21.94000       148.      -32.       0.       0.       0.       0.    
+   De.39 De.40    6.37       125.      -20.       0.       0.       0.       0.    
+   De.40 De.41    9.91       157.      -32.       0.       0.       0.       0.    # Surcreusement + dalles ; Arrêt sur pilier au milieu de la galerie ; 10 m dans les dalles ;  courant d'air
+   De.34 De.42    11.       5.       15.       0.       0.       0.       0.    
+   De.42 De.43    15.8       347.       21.       0.       0.       0.       0.    
+   De.43 De.18    30.18000       352.       20.       0.       0.       0.       0.    
+   extend right
+   De.44 De.45    9.94       328.       13.       0.       0.       2.       2.    # Topo de la salle ; conduite forcée colmatée ; puits remontant ; l = 3 à 4 m
+   De.45 De.46    5.99       288.       42.       0.       0.       0.       0.    # Sommet de puits : P5 + R3, suivi d'un méandre étroit ; courant d'air descendant ; non topographié
+   De.46 De.12    11.71000       335.      -28.       0.       0.       0.       0.    # Salle ; arrêt au pied de l'escalade
+
+endcenterline
+
+
+centerline -extend right -title "G. de l'Ascension Ed.0_Ed.1 Ed.9_De.27"
+
+   date 1977.05.20
+ #  declination -2.5143 degrees
+  team "Pierre Rias"
+  team "Jean-Luc Thevenin"
+  explo-date 1977.05.19
+    explo-team "Pierre Rias"
+    explo-team "Jean-Luc Thevenin"
+    explo-team "Bernard Lips"
+    explo-team "Christian Rigaldie"
+    explo-team "Benoît/Le Falher"
+    explo-team "Philippe Lavabre"
+    explo-team "David Rollano"
+         # lui ou Dominique Renard ?
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Ed.0 Ed.1    16.66000       270.      -90.       0.       0.       0.       0.    # imp. ; puits inférieur
+   Ed.1 Ed.2    6.32       4.      -33.       0.       0.       0.       0.    # puits supérieur
+   Ed.2 Ed.3    8.33       0.      -31.       0.       0.       0.       0.    
+   Ed.3 Ed.4    6.84       298.      -40.       0.       0.       0.       0.    
+   Ed.4 Ed.5    5.37       332.      -37.       0.       0.       0.       0.    
+   Ed.5 Ed.6    2.73       342.       3.       0.       0.       0.       0.    # Galerie basse avec courant d'air
+   Ed.6 Ed.7    13.43000       349.       30.       0.       0.       0.       0.    
+   Ed.7 Ed.8    8.15       44.       24.       0.       0.       0.       0.    
+   Ed.8 Ed.9    7.85       341.       20.       0.       0.       0.       0.    
+   Ed.9 De.27    31.26000       336.       19.       0.       0.       0.       0.    
+
+# Dev = 106.3 m
+
+endcenterline 
+
+
+centerline -extend right -title "G. des Dalles Ee.0_Ee.1 Ee.7_De.41"
+
+   date 1977.05.21
+  # declination -2.5143 degrees
+  team "Benoît/Le Falher"
+  team "Philippe Lavabre"
+  team "Rocla Serra"
+
+  explo-date 1977.05.21
+    explo-team "Benoît/Le Falher"
+    explo-team "Philippe Lavabre"
+    explo-team "Rocla Serra"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Ee.0 Ee.1    7.33       270.       18.       1.       1.       1.       1.    # Colmatage ; l = 2 m ; h = 2 m
+   Ee.1 Ee.2    2.57       265.       20.       0.       0.       0.       0.    
+   Ee.2' Ee.2    4.18       343.       38.       0.       0.       0.       0.    # Galerie droite
+   Ee.2 Ee.3    3.67       326.       35.       0.75       0.75       0.75       0.75   # Méandre 30 m ? ; l = 1.5 m ; h = 1.5 m
+   Ee.3 Ee.4    5.85       259.       3.       0.       0.       0.       0.    
+   Ee.4 Ee.5    3.24       228.      -27.       0.       0.       0.       0.    
+   Ee.5 Ee.6    1.87       278.       17.       0.       0.       0.       0.    
+   Ee.6 Ee.7    2.15       234.       15.       0.       0.       0.       0.    # Spit
+   Ee.7 De.41    6.46       330.       35.       0.       0.       0.       0.    
+
+# Dev = 37.4 m
+
+endcenterline
+endsurvey

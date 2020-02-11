@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 3002.0171000000005 1387.8432
+##XTHERION## xth_me_area_adjust -128.75 -128.75 2558.86 1072.8790000000001
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2430.86 1 1.0} {944.8790000000001 xx0init} solitaire-coupe2019c.xvi 0 {}
 
@@ -15,46 +15,41 @@ point 361.75 323.25 altitude -align bottom
 
 point 522.5 278.25 altitude -align right
 
-line u:rope
+line rope
   498.0 288.25
-  498.0 288.25 512.75 277.5 513.0 283.25
-  513.03 284.04 513.0 248.25 513.0 248.25
-  smooth off
+  513.0 283.25
+  513.0 248.25
 endline
 
-line u:rope
+line rope
   394.25 379.0
-  394.25 379.0 387.0 369.25 387.0 376.25
-  387.0 376.6 386.25 324.5 386.25 324.5
-  smooth off
+  387.0 376.25
+  386.25 324.5
 endline
 
-line u:rope
+line rope
   447.75 386.75
-  447.75 386.75 437.25 380.75 433.0 387.0
-  432.56 387.65 420.0 377.5 416.5 385.5
-  smooth off
+  441.75 386.5
+  426.5 385.75
+  416.5 385.5
 endline
 
-line u:rope
+line rope
   585.0 446.75
-  585.0 446.75 575.75 437.0 576.0 444.0
-  576.01 444.35 576.0 389.25 576.0 389.25
-  smooth off
+  576.0 444.0
+  576.0 389.25
 endline
 
-line u:rope
+line rope
   677.75 447.75
-  677.75 447.75 668.0 438.25 668.0 443.75
-  668.0 449.25 668.0 398.0 668.0 398.0
-  smooth off
+  668.0 443.75
+  668.0 398.0
 endline
 
-line u:rope
+line rope
   633.25 524.25
-  633.25 524.25 623.5 517.0 623.0 521.25
-  622.5 525.5 622.0 445.5 622.0 445.5
-  smooth off
+  623.0 521.25
+  622.0 445.5
 endline
 
 point 636.75 501.75 water-flow -orientation 253.5

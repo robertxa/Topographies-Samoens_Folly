@@ -24,14 +24,15 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
   	units clino degrees
 
 	data normal from to length compass clino left right up down
- 
+ 	extend left
 	xx0init  xx0    0    246  0  0  1.2  1.6  1.1    # 0 à la fin de la vire au sommet du puits Alain
 	xx0  xx1    6.6    246  -32  0.6  1.1  1.3  0.5    # sur bloc coincé
 	xx1  xx1b    0    246  0  0.6  1.1  1.3  2.5  
 	xx1b  xx2    6.6    234  -44  1  0.4  2.8  1.6  
 	xx2  xx3    5.5    195  -14  1.15  0.5  1  1.4  
 	xx3  xx4    4.1    114  -16  0.5  1  1.3  1.3  
-	xx4  xx5    6.8    170  -31  2.1  0.3  0.3  0.3  
+	xx4  xx5    6.8    170  -31  2.1  0.3  0.3  0.3
+	extend right  
 	xx5  xx6    4.5    116  -19  2  1  1  0.4  
 	xx6  xx7    5    138  -26  1  1  0.4  0.7    # arrêt sous stalagtite avant grand vide
 	#extend left # Moi
@@ -44,7 +45,8 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
 	xx5  xx9    6.8    234  -10  0.3  0.6  0.5  1.5  
 	xx9  xx10    1.98  288  -40  1.6  0.86  0.6  0.3  
 	extend left
-	xx10  xx11    6.18  215  -9  0.6  0.9  0.5  1  
+	xx10  xx11    6.18  215  -9  0.6  0.9  0.5  1
+	extend ignore xx11  xx12
 	xx11  xx12    6.9    264  -19  1  1.6  1.1  1.4  
 	xx12  xx13    2.61  198  -11  0.4  0.4  0.7  0.2  
 	extend ignore xx13
@@ -67,6 +69,7 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
 	flags not splay
 	
 	xx10  xx18    2.31  0  29  0.7  1.2  0.6  0.8  
+	extend left
 	xx18  xx19    6    58  18  0.1  0.1  0.1  0.1    # petite conduite forcée comatée
 	extend right # Moi
 	xx18  xx20    9.86  338  25  1.1  0.5  0.6  1.3  
@@ -82,14 +85,17 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
 	flags not splay
 
 	extend right # Moi, Vincent était en left
+	#extend left
 	xx27  xx28    6.8    77  31  0.4  0.6  0.6  0.6  
 	xx28  xx29    3.4    68  20  1.4  0.4  0.5  0.7  
+	extend ignore xx29  xx30
 	xx29  xx30    1.84  8  31  0.8  0.4  0.5  0.9  
 	flags splay 
 	xx30  xxInterrogation4    2    86  8  -  -  -  -    # colmatage - courant d'air soufflant
 	flags not splay 
 
 	extend left	 # Moi, Vincent était en rigth
+	#extend right
 	xx30  xx31    5    256  -6  0.3  0.5  0.5  1.5  
 	xx31  xx32    4.55  282  -42  0.7  0.3  1.4  0.8  
 	xx32  xx33    3.1    208  -31  2  0.5  1.8  1.1  
@@ -183,7 +189,9 @@ centerline -title "JBSolitaire : 2018-CBa-00_2018-CBa-fin 2017-FD-02_2018-CBa-01
 
 	data normal from to length compass clino left right up down
 	flags duplicate
+	extend ignore 2018-CBa-01	2018-CBa-fin
 	2018-CBa-01	2018-CBa-fin	3.37	60	29	4	2	0.94	1.36	# Noeud sommet escalade
+	extend ignore 2017-FD-02	2018-CBa-01
 	2017-FD-02	2018-CBa-01	11.58	65	21	1.25	0.66	5.72	8.35	# Sommet du P8
 	
 	flags not duplicate

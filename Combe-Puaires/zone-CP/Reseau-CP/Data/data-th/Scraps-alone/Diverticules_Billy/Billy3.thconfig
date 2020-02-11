@@ -12,9 +12,9 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source Billy3.th
- source Billy3.th2
- source Billy3-coupe.th2
+ source Data/Billy3.th
+ source Data/Billy3.th2
+ source Data/Billy3-coupe.th2
 # Add config file
 input ../../../../../../config.thc
 
@@ -313,15 +313,9 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o Billy3-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Billy3-coupe.xvi
+ export map -fmt xvi -layout xviexport -o Data/Billy3-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/Billy3-coupe.xvi
   
- export map -o Billy3-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Billy3-coupe.pdf
- #export model -o CP1.lox
+ export map -o Outputs/Billy3-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/Billy3-coupe.pdf
   
- # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o CP1 -layout my_layout
-  
- # Export des fichiers kml
- #export map -proj plan -fmt kml -o CP1.kml -layout my_layout

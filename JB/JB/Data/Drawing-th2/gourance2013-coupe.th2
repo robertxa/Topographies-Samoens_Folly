@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 356.5 316.0
+##XTHERION## xth_me_area_adjust -129.5 -129.5 278.5 316.0
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {43.628699999999995 1 1.0} {157.481 2013c-xa-0} Gourance-coupe.xvi 0 {}
 
@@ -40,21 +40,19 @@ point 120.0 97.0 traverse
 
 point 101.0 124.0 rope
 
-line u:rope
+line rope
   89.0 103.0
-  89.0 103.0 94.5 97.5 95.5 103.0
-  96.5 108.5 96.0 84.5 96.0 84.5
-  smooth off
+  95.5 103.0
+  96.0 84.5
 endline
 
-line u:rope
+line rope
   41.0 135.0
-  41.0 135.0 48.0 131.0 49.0 134.0
-  50.0 137.0 56.5 124.0 56.5 124.0
-  smooth off
+  49.0 134.0
+  56.5 124.0
 endline
 
-line u:rope
+line rope
   62.0 145.5
   62.0 122.0
 endline

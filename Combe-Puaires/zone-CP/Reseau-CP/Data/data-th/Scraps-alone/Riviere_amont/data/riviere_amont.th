@@ -19,6 +19,7 @@ centerline -title "Rivière du Pierre de St Martin : 40.0_40.0double 40.59_40.60
    units compass grad
    units clino grad
    data normal from to length compass clino left right up down
+   extend right
    40.0 40.0double    0.0       0.0       0.0       5.0       5.0       24.       0.0    
    40.0double 40.1    24.       0.0       100.0       2.0       2.0       4.0       24.    
    40.1 40.2    8.6       141.0       20.       1.5       1.5       3.0       1.5    
@@ -43,17 +44,22 @@ centerline -title "Rivière du Pierre de St Martin : 40.0_40.0double 40.59_40.60
    40.20 40.21    11.16       74.       28.       1.5       1.5       4.0       1.0    
    40.21 40.22    16.18       73.      -2.0       3.0       5.0       20.       1.0    
    40.22 40.23    15.16       69.       19.       5.0       2.0       7.0       1.0    
+	extend left
    40.23 40.24    9.550       225.0       24.       1.0       1.0       5.0       3.0    
    40.24 40.25    5.890       293.0       30.       3.0       3.0       7.0       1.5    
+   extend right
    40.23 40.26    14.36       68.       9.0       1.0       2.0       1.5       1.0    
    40.26 40.27    6.290       109.0       22.       1.0      0.50       1.0       1.0    
    40.27 40.28    6.360       134.0      -13.       1.0       1.5       1.0       1.0    
    40.28 40.29    3.890       150.0       40.       3.0       1.0       1.0       1.0    
    40.29 40.30    9.990       84.       17.       4.0       1.0       2.0       1.0    
-   40.30 40.31    3.080       118.0      -2.0       2.0       1.0       8.0       1.0    
+   40.30 40.31    3.080       118.0      -2.0       2.0       1.0       8.0       1.0   
+	extend left 
    40.31 40.32    12.28       356.0       21.       1.0       1.0       1.0       1.0    
+   extend right
    40.32 40.33    7.950       359.0      -1.0       5.0       4.0       22.       1.5    
    40.33 40.34    15.69       31.       23.       7.0       8.0       10.       1.0    
+   extend right
    40.31 40.35    5.6       161.0      -4.0       2.0       2.0       5.0       1.5    
    40.35 40.36    8.170       70.       43.       1.0       1.0       8.0       4.0    
    40.35 40.37    14.97       154.0       16.       1.0       1.0       6.0       2.0    
@@ -68,8 +74,10 @@ centerline -title "Rivière du Pierre de St Martin : 40.0_40.0double 40.59_40.60
    40.45 40.46    2.6       8.0      -62.      0.50      0.50       3.0      0.50    
    40.46 40.47    4.080       30.      -17.       1.0       1.0      0.50      0.50    
    40.46 40.48    7.440       151.0       63.       1.5       1.5       2.0       6.0    
+   extend left
    40.44 40.49    6.630       150.0      -39.      0.50      0.50       6.0       4.0    
    40.49 40.50    6.340       331.0      -61.      0.50       1.0       2.0       1.0    
+   extend right
    40.50 40.51    3.480       370.0      -44.       2.0       3.0       1.0       1.5    
    40.51 40.52    8.280       78.      -6.0       1.0       2.0       1.5      0.50    
    40.52 40.53    8.410       99.       10.      0.80      0.80      0.60      0.60    
@@ -81,6 +89,7 @@ centerline -title "Rivière du Pierre de St Martin : 40.0_40.0double 40.59_40.60
    40.58 40.59    7.680       73.       5.0      0.50       1.5       1.0       1.5    
    40.59 40.60    10.61       70.       18.       2.0       2.0       5.0       5.0    
 endcenterline
+
   
 centerline -title "40.38_40.38double 41.1.4_41.1.5"
    date 2008.08.12
@@ -95,13 +104,15 @@ centerline -title "40.38_40.38double 41.1.4_41.1.5"
    calibrate counter 0 0.500
   units counter centimeters
    data topofil from to fromcount tocount compass clino left right up down
+   extend left
    40.38 40.38double 0.0 0.0    0.0       100.0       2.0       2.0       3.0       1.6    
-   40.38double 41.1.1 93819.0 94282.0    210.0       36.       2.0      0.50       2.0       1.6    
+   40.38 41.1.1 93819.0 94282.0    210.0       36.       2.0      0.50       2.0       1.6    
    41.1.1 41.1.2 94282.0 95032.0    120.0       42.       1.0      0.60       1.5       1.6    
    41.1.2 41.1.3 95032.0 96315.0    145.0       26.       1.2      0.60       6.0       1.0    
    41.1.3 41.1.4 96315.0 97004.0    125.0      -15.      0.20      0.40       8.0       1.6    
    41.1.4 41.1.5 97004.0 97640.0    65.       37.       0.0       1.5       8.0       1.6    
 endcenterline
+
   
 centerline -title "41.2.0_41.2.0doubl 41.2.4_40.17"
    date 2008.08.12
@@ -116,6 +127,7 @@ centerline -title "41.2.0_41.2.0doubl 41.2.4_40.17"
    calibrate counter 0 0.500
   units counter centimeters
    data topofil from to fromcount tocount compass clino left right up down
+   extend right
    41.2.0 41.2.0doubl 0.0 0.0    0.0       100.0       2.5       2.5      0.80      0.50    
    41.2.0doubl 41.2.1 1035.0 1713.0    140.0      -8.0       1.0       1.5       0.0       1.2    
    41.2.1 41.2.2 1713.0 2925.0    111.0       24.       1.5       0.0       1.8      0.80    
@@ -123,6 +135,7 @@ centerline -title "41.2.0_41.2.0doubl 41.2.4_40.17"
    41.2.3 41.2.4 3493.0 5045.0    143.0       34.       4.0       1.0      0.30       2.0    
    41.2.4 40.17 5045.0 6021.0    40.       33.       3.0       3.0       3.0      0.30    
 endcenterline
+
 
 centerline -title "Affluent rivière amont : 40.23_45.0 45.8_45.9"
  # Affluent rivière amont
@@ -138,11 +151,13 @@ centerline -title "Affluent rivière amont : 40.23_45.0 45.8_45.9"
    units clino grad
   units counter centimeters
    data topofil from to fromcount tocount compass clino left right up down
+   extend left
    40.23 45.0 0.0 0.0    0.0       100.0       2.0       4.0       6.0      0.10    
    45.0 45.1 29195.0 29980.0    215.0       5.0      0.10       2.0       8.0       1.6    
    45.1 45.2 29980.0 30407.0    220.0       52.      0.10       2.0       7.0       1.7    
    45.2 45.3 30407.0 31002.0    304.0       30.       2.0       3.0       6.0      0.80    
    45.3 45.4 31002.0 31970.0    180.0       49.       2.0      0.10       5.0       1.6    
+   extend right
    45.4 45.5 31970.0 32411.0    85.       23.      0.10       1.4       2.0      0.50    
    45.5 45.6 32411.0 33131.0    198.0       27.       1.2      0.10       4.5       1.3    
    45.6 45.7 33131.0 33637.0    82.       10.      0.10       1.2      0.80      0.30    
@@ -166,6 +181,7 @@ centerline -title "Riviere Amont_1, cascade de la Torche 49.0_49.0b 49.5_49.7"
 	units compass degrees
 	units clino degrees
 	data normal from to length compass clino left right up down
+	extend left
 	49.0        49.0b                      0.00    0.00    0.00   2.00   3.00  27.00   4.00
 	49.0        49.1                       3.66  230.00  -36.00   2.00   2.00   8.00   1.50
 	49.1        49.2                       6.31  172.00   26.00   1.00   3.00  20.00   1.50
@@ -173,9 +189,11 @@ centerline -title "Riviere Amont_1, cascade de la Torche 49.0_49.0b 49.5_49.7"
 	49.3        49.4                       5.06  234.00   -2.00   2.00   1.00  15.00   1.50
 	49.4        49.5                      10.00    0.00  -90.00   2.00   5.00  13.00   2.00
 	49.5        40.60                      7.77  200.00  -52.00   2.00   2.00   6.00   1.00	# Jction Topo ReseauCP
+	#extend right
 	49.5        49.7                      10.43  138.00   20.00   2.00   2.00  10.00   1.50
 
 endcenterline
+
     
 centerline -title "Riviere Amont, cascade des Palmiers, 52.0_52.0b "
   
@@ -190,6 +208,7 @@ centerline -title "Riviere Amont, cascade des Palmiers, 52.0_52.0b "
 	units compass degrees
 	units clino degrees
 	data normal from to length compass clino left right up down
+	extend left
 	52.0        52.0b                       0.00    0.00    0.00   1.00   1.00   0.50   0.80
 	52.0        52.1                       5.56  214.00   15.00   0.70   0.70   0.60   0.60
 	52.1        52.2                       6.97  243.00  -15.00   0.80   0.80   1.00   1.00
@@ -200,9 +219,8 @@ centerline -title "Riviere Amont, cascade des Palmiers, 52.0_52.0b "
 	52.6        52.7                       7.41  236.00  -30.00   1.00   5.00   6.00  20.00
 	52.7        52.8                      23.24    0.00  -90.00   1.50   2.00  25.00   1.50
 	52.8        49.3                       5.74  170.00   -4.00   0.70   0.70  25.00   1.50
-
-
 endcenterline
+
 
 centerline -title "Riviere Amont, rivière inférieure, 52.0_52.0b "
   
@@ -218,6 +236,7 @@ centerline -title "Riviere Amont, rivière inférieure, 52.0_52.0b "
 	units compass degrees
 	units clino degrees
 	data normal from to length compass clino left right up down
+	extend left
 	40.50       53.0                       0.00    0.00    0.00   0.50   5.00   4.00   1.00	# Jction Reseau CP
 	53.0        53.1                       5.93  313.00  -32.00   2.00   1.00   0.60   0.60
 	53.1        53.2                       8.18  252.00   -5.00   0.50   1.00   3.00   1.00
@@ -226,7 +245,9 @@ centerline -title "Riviere Amont, rivière inférieure, 52.0_52.0b "
 	53.4        53.5                      18.52  243.00  -12.00   5.00   1.50   1.00   1.00
 	53.5        53.6                       6.82  228.00    0.00   1.00   4.00   4.00   0.50
 	53.6        53.7                      13.13  263.00  -42.00   1.00   3.00   1.00   1.00
+	extend right
 	53.7        53.8                      11.32  144.00    0.00   0.50   0.50   3.00   1.00
+	extend left
 	53.7        53.9                       4.45  295.00  -52.00   0.50   2.00   1.00   1.50
 	53.9        53.10                      6.01  322.00  -26.00   0.70   0.70   1.50   1.50
 	53.10        53.11                      5.14  317.00  -30.00   0.70   0.70   4.00   1.00

@@ -1,7 +1,9 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -228.365 -128.75 578.8164 403.5906
+##XTHERION## xth_me_area_adjust -179.5 -128.75 533.0 383.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {385.462 1 1.0} {196.851 0.2020} Sezhommes-coupe2020.xvi 0 {}
+
+
 
 scrap sezhommes2020-SC3 -projection extended -station-names "" ".Jean-Bernard" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 915.402 -128.0 0.0 0.0 26.5024108 0.0 m]
 
@@ -42,8 +44,8 @@ endline
 line rope
   244.75 153.5
   244.75 153.5 231.0 147.5 230.75 149.75
-  230.75 149.75 230.25 89.25 230.25 89.25
   smooth off
+  230.25 89.25
 endline
 
 point 105.0 128.0 label -text "laminoir"
@@ -51,6 +53,7 @@ point 105.0 128.0 label -text "laminoir"
 line arrow
   92.0 73.75
   92.0 73.75 87.75 88.5 79.25 94.5
+  smooth off
 endline
 
 point 91.5 68.25 label -text "chatière"
@@ -88,9 +91,30 @@ line wall
   smooth off
 endline
 
+line wall -close on -outline in
+  222.5 142.0
+  222.5 142.0 227.5 145.25 227.5 143.25
+  227.5 141.25 223.75 138.25 222.25 138.0
+  220.75 137.75 217.75 138.75 219.5 140.0
+  221.25 141.25 222.5 142.0 222.5 142.0
+  smooth off
+endline
+
+line wall -close on -outline in
+  210.25 136.0
+  210.25 136.0 212.75 139.25 215.25 139.25
+  217.75 139.25 217.25 134.75 214.25 133.75
+  211.25 132.75 206.25 130.0 207.25 132.75
+  208.25 135.5 210.25 136.0 210.25 136.0
+  smooth off
+endline
+
+point 221.25 62.5 label -text "<center>salle des Crèpes"
+
 line wall -subtype debris
   211.5 89.0
   211.5 89.0 234.5 85.25 237.0 84.5
+  smooth off
 endline
 
 line wall
@@ -105,6 +129,7 @@ line wall
   188.25 125.75 196.75 130.75 198.0 127.5
   199.25 124.25 200.5 102.0 201.75 98.25
   203.0 94.5 207.0 89.0 211.5 89.0
+  smooth off
 endline
 
 line wall
@@ -245,6 +270,7 @@ line water-flow
   253.5 230.75
   253.5 230.75 220.0 216.75 214.25 214.0
   208.5 211.25 181.25 199.75 178.25 198.5
+  smooth off
 endline
 
 line water-flow
@@ -258,6 +284,7 @@ endline
 line water-flow
   17.5 99.75
   17.5 99.75 11.75 94.5 9.5 92.75
+  smooth off
 endline
 
 line water-flow
@@ -332,6 +359,7 @@ point 253.962 237.051 station -name 30.2020@sezhommes2020
 endscrap
 
 
+
 scrap sezhommes2020-SC1 -projection extended -station-names "" ".Jean-Bernard" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 915.402 -128.0 0.0 0.0 26.5024108 0.0 m]
 
 line map-connection
@@ -382,3 +410,5 @@ point 299.202 215.591 station -name 41.2020@sezhommes2020
 point 265.662 195.591 station -name 40.2020@sezhommes2020
 
 endscrap
+
+

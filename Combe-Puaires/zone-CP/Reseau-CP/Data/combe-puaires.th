@@ -9,65 +9,67 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 # Pour importer les différentes données de différents fichiers topos : 
 	input data-th/ReseauCP
 	
-	input data-th/CP12
+	input data-th/Scraps-alone/CP12/Data/CP12
 	equate 1.19@ReseauCP 1.19@CP12
 	
-	input data-th/CP14
+	input data-th/Scraps-alone/CP14/Data/CP14
 	equate 9.17@ReseauCP 9.17@CP14
 	equate E.9@2xxpats E.9@CP14
 	
-	input data-th/CP16
+	input data-th/Scraps-alone/CP16/Data/CP16
 	equate 20.13@billy 20.13@CP16
 	
-	input data-th/CP19b
+	input data-th/Scraps-alone/CP19b/Data/CP19b
 	equate 6.23@reptiles 6.23@CP19b
-	input data-th/reptiles
+	input data-th/Scraps-alone/Reptiles/Data/reptiles
 	equate 1.28@ReseauCP 1.28@reptiles	
 	
-	input data-th/billy
+	input data-th/Scraps-alone/Billy/Data/billy
 	equate 11.22@ReseauCP 11.22@billy
 	equate 11.25@billy 11.25@ReseauCP
-	input data-th/Billy1
+	input data-th/Scraps-alone/Diverticules_Billy/Data/Billy1
 	equate 21.34@billy Xa-2015-0@Billy1
 	equate 21.28@billy Xa-2015-9@Billy1
-	input data-th/Billy2
+	input data-th/Scraps-alone/Diverticules_Billy/Data/Billy2
 	equate 21.11@billy Xa-2015-14@Billy2
-	input data-th/Billy3
+	input data-th/Scraps-alone/Diverticules_Billy/Data/Billy3
 	##equate 21.06@ReseauCP Xa-2015-25@Billy3
 	equate 21.09@billy Xa-2015-25@Billy3	# Raccord sur méandre Billy non sûr, il faudra vérifier sur le terrain !!!
 	
-	input data-th/2xxpats
+	input data-th/Scraps-alone/2xxpats/Data/2xxpats
 	equate 11.35@ReseauCP 11.35@2xxpats
 	
 	
-	input data-th/espoir
+	input data-th/Scraps-alone/Espoir/Data/espoir
 	equate 16.15@ReseauCP 16.15@espoir
 	
-	input data-th/shunt_cata
+	input data-th/Scraps-alone/shunt_cata/Data/shunt_cata
 	equate 30.19@espoir 30.19@shunt_cata
 	equate 13.7@espoir 13.7@shunt_cata
 	
 	#input data-th/riviere_amont
-	input data-th/Scraps-alone/Riviere_amont/Data/riviere_amont
+	input data-th/Scraps-alone/Riviere_amont/data/riviere_amont
 	equate 2008.S.0@espoir 2008.S.0@riviere_amont
 	equate 14.4@riviere_aval 40.0@riviere_amont
 	##equate 40.60@ReseauCP 40.60@riviere_amont
 	##equate 40.50@ReseauCP 40.50@riviere_amont
-	input data-th/affluent_steph 
+	#input data-th/Scraps-alone/Affluent_Steph/Data/affluent_steph 
+	input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont
 	equate 40.34@riviere_amont Xa-2014-14@affluent_Steph
-	input data-th/Scraps-alone/Riviere_amont/Data/rivamont2019
+	
+	input data-th/Scraps-alone/Riviere_amont/data/rivamont2019
 	equate 52.0@riviere_amont 52.0@rivamont2019
 	
-	input data-th/riviere_aval
+	input data-th/Scraps-alone/Riviere_aval/Data/riviere_aval
 	equate 17.13@ReseauCP 17.13@riviere_aval
 	equate 13.7@espoir 13.7@riviere_aval
 	
-	input data-th/BivouacCP
+	input data-th/Scraps-alone/Clowns/Data/BivouacCP
 	equate 16.26@ReseauCP 16.26@BivouacCP
 	
 	
    
-# Pour importer les différents fichiers de dessins 
+# Pour importer les différents fichiers de dessins en Plan
 	
 	### OLD
 	input data-th2/billy.th2   
@@ -105,5 +107,43 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
  	
  	input data-th2/CP14-2011.th2
  	join CP14_2008-Sp1 CP14-2
+
+
+
+# Pour importer les différents fichiers de dessins en Coupe
+	
+	input data-th2/clowns-coupe.th2
+ 	##join Clowns-SC1 #salle du bivouac
+ 	
+ 	## Le méandre Billy
+ 	input data-th2/Billy1-coupe.th2
+ 	input data-th2/Billy2-coupe.th2
+ 	input data-th2/Billy3-coupe.th2
+ 	
+ 	## La rivière à Pierrot
+ 	input data-th/Scraps-alone/Riviere_amont/data/rivamont2014-coupe.th2
+ 	
+ 	input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont_coupe.th2
+ 	join  hautspots-SC3 aff_coupe_1
+ 	input data-th/Scraps-alone/Riviere_amont/data/rivamont2019-coupe.th2
+ 	join rivamont2019-SC1 Palmier-SC1
+ 	
+ 	## La rivière Aval
+ 	input data-th/Scraps-alone/Riviere_aval/Data/riviere_aval-coupe.th2
+	join RivAval-SC3 bivouacpierrot-SC1
+	
+	input data-th/Scraps-alone/shunt_cata/Data/shunt_cata-coupe.th2
+	#join
+	
+	
+
+	# CP12, CP19b et Reptiles
+	input data-th/Scraps-alone/CP12/Data/CP12-coupe.th2
+	#join CP12-SC1 ??? -count ???
+	
+	input data-th/Scraps-alone/Reptiles/Data/reptiles-coupe.th2
+	input data-th/Scraps-alone/CP19b/Data/CP19b-coupe.th2
+	# Pas de join ?
+	
  	
  endsurvey

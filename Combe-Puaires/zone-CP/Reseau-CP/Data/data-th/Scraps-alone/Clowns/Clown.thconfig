@@ -1,0 +1,128 @@
+encoding  utf-8
+    
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
+  
+source Data/BivouacCP.th
+source Data/clowns-coupe.th2
+#source Data/BivouacCP.th2
+
+# Add config file
+input ../../../../../../../config.thc 
+
+  
+layout xviexport
+	scale 1 1000
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+  
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl 
+	copy langue-fr
+	  
+	doc-title "Affluent du bivouac, Réseau CP"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 750
+	scale 1 500
+	scale-bar 50 m
+	#rotate 2.25
+	# origin 12 22 0 m
+	# origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "Affluent du bivouac plan, Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	#legend-width 14 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+	# To change the Title          
+	code tex-map  
+   \edef\temp{\the\cavename}   % cavename from Therion
+   \edef\nostring{}            % empty string
+   \ifx\temp\nostring          % test if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+ 		\cavename={Réseau de la Combe aux Puaires} 		
+   \else % if not empty keep the value set by therion, or assign an override cavename here
+   \fi
+   	\newtoks\club \club={Groupe Spéléologique Vulcain}
+   endcode  
+ 
+endlayout
+ 
+ 
+ 
+layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe 
+	copy langue-fr
+	  
+	doc-title "Affluent du Bivouac, Réseau CP"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 750
+	scale 1 500
+	scale-bar 50 m
+	#rotate 2.25
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "Affluent du bivouac, coupe développée, Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 21 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+ # To change the Title          
+     code tex-map
+  
+   \edef\temp{\the\cavename}   % cavename from Therion
+   \edef\nostring{}            % empty string
+   \ifx\temp\nostring          % test if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+ 		\cavename={Réseau de la Combe aux Puaires} 		
+   \else % if not empty keep the value set by therion, or assign an override cavename here
+   \fi
+   \newtoks\club \club={Groupe Spéléologique Vulcain}
+   endcode  
+
+  
+endlayout
+
+  
+#export map -fmt xvi -layout xviexport -o Data/clown-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/clown-coupe.xvi
+  
+export map -o Outputs/clown-CP-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/clown-CP-coupe.pdf
+export model -o Outputs/clown.lox

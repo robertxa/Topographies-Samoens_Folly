@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 15561.0792 8474.4612
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {12426.68 1 1.0} {5853.0 Cc.0@jb-amonts2.Jean-Bernard} coupe-B19-1.xvi 0 {}
 
 
@@ -13,7 +13,7 @@ point 13882.5 5797.0 narrow-end
 
 point 13959.5 5730.0 narrow-end
 
-point 14068.5 5699.5 continuation
+point 14092.0 5709.5 continuation
 
 point 13827.0 5855.0 continuation
 
@@ -21,7 +21,7 @@ point 13791.0 5893.0 continuation
 
 point 13849.5 5792.5 height -value [-15 m]
 
-point 14093.0 5700.0 altitude
+point 14059.5 5697.5 altitude -align right
 
 line label -text "galerie des Sénécaliens"
   13821.0 5884.5
@@ -35,32 +35,29 @@ point 14055.5 5686.5 air-draught -orientation 288.2 -subtype summer
 
 point 14064.0 5719.0 label -text "com."
 
-line u:rope
+line rope
   13903.0 5818.0
-  13903.0 5818.0 13914.0 5806.0 13916.0 5814.5
-  13918.0 5823.0 13926.0 5773.0 13938.0 5778.5
-  13939.87 5779.36 13938.5 5763.0 13938.5 5763.0
-  smooth off
+  13916.0 5814.5
+  13938.0 5778.5
+  13938.5 5763.0
 endline
 
-line u:rope
+line rope
   13824.5 5827.0
   13825.0 5753.0
 endline
 
-line u:rope
+line rope
   13816.5 5840.5
-  13816.5 5840.5 13820.5 5830.0 13824.5 5827.0
-  13828.5 5824.0 13830.0 5822.5 13835.0 5823.0
-  13840.0 5823.5 13847.5 5827.5 13847.5 5827.5
-  smooth off
+  13824.5 5827.0
+  13835.0 5823.0
+  13847.5 5827.5
 endline
 
-line u:rope
+line rope
   13765.0 5867.5
-  13765.0 5867.5 13757.5 5862.5 13757.0 5867.0
-  13756.5 5871.5 13756.5 5846.0 13756.5 5846.0
-  smooth off
+  13757.0 5867.0
+  13756.5 5846.0
 endline
 
 point 13787.5 5778.5 narrow-end

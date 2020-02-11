@@ -283,12 +283,16 @@ survey jb-riv2 -title "JB rivière deuxième partie"
   
   
  centerline -extend right -title " Kn.0_Kn.1 Kn.5_Kl.0"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+	date 1975.01.01
+		team "Pierre Rias"
+		team "Yves Bailly"
+		team "Jacques Lopez"
+		team "Xavier Thurin"
+	explo-date 1975.01.01
+		explo-team "Pierre Rias"
+		explo-team "Yves Bailly"
+		explo-team "Jacques Lopez"
+		explo-team "Xavier Thurin" 
 
    units lenght meters
    units compass degrees
@@ -308,12 +312,15 @@ survey jb-riv2 -title "JB rivière deuxième partie"
   
   
  centerline -extend right -title " Ko.0_Ko.1 Ko.48_Kn.1"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+	date 1975.02.06
+		#declination 0.  degrees
+		team "Pierre Rias"
+		team "Bernard Lips"
+		team "Christian Rigaldie"
+	explo-date 1975.02.06
+		explo-team "Pierre Rias"
+		explo-team "Bernard Lips"
+		explo-team "Christian Rigaldie"
 
    units lenght meters
    units compass degrees
@@ -358,6 +365,7 @@ survey jb-riv2 -title "JB rivière deuxième partie"
    Ko.32 Ko.33    4.55       216.      -22.       0.       0.       0.       0.    
    Ko.33 Ko.34    3.52       155.      -19.       0.       0.       0.       0.    
    Ko.34 Ko.35    17.16000       269.      -16.       0.       0.       0.       0.    
+	extend right
    Ko.35 Ko.36    9.68       248.      -19.       0.       0.       0.       0.    
    Ko.36 Ko.37    4.67       164.      -10.       0.       0.       0.       0.    
    Ko.37 Ko.38    6.73       163.      -7.       0.       0.       0.       0.    
@@ -377,12 +385,15 @@ survey jb-riv2 -title "JB rivière deuxième partie"
  endcenterline
   
  centerline -extend left -title "Reseau de Sezhommes Ko.0_Kp.1 Kp.23_Kp.24"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+ date 1975.02.06
+		#declination 0.  degrees
+		team "Pierre Rias"
+		team "Bernard Lips"
+		team "Christian Rigaldie"
+	explo-date 1975.02.06
+		explo-team "Pierre Rias"
+		explo-team "Bernard Lips"
+		explo-team "Christian Rigaldie"
 
    units lenght meters
    units compass degrees

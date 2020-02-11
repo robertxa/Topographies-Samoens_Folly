@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 6978.3974 3159.4977
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 6417.99 2580.75
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {6289.99 1 1.0} {2452.75 C37b@jb-amonts1.Jean-Bernard} coupe-C37-2.xvi 0 {}
 
 
@@ -277,28 +277,25 @@ line label -text "méandre des Voltigeurs"
   smooth off
 endline
 
-line u:rope
+line rope
   4783.5 1616.25
-  4783.5 1616.25 4785.75 1613.0 4788.0 1616.25
-  4790.25 1619.5 4788.5 1594.0 4788.5 1594.0
-  smooth off
+  4788.0 1616.25
+  4788.5 1594.0
 endline
 
-line u:rope
+line rope
   4816.25 1625.75
-  4816.25 1625.75 4811.5 1621.0 4809.25 1623.25
-  4807.0 1625.5 4806.5 1593.75 4806.5 1593.75
-  smooth off
+  4809.25 1623.25
+  4806.5 1593.75
 endline
 
-line u:rope
+line rope
   5120.0 1668.25
-  5120.0 1668.25 5114.5 1666.0 5113.5 1668.5
-  5112.5 1671.0 5110.0 1639.5 5110.0 1639.5
-  smooth off
+  5113.5 1668.5
+  5110.0 1639.5
 endline
 
-line u:rope
+line rope
   5192.0 1724.25
   5188.0 1686.0
 endline
@@ -629,10 +626,10 @@ point 4292.0 1577.0 blocks -scale xs
 
 point 4296.75 1578.75 blocks -scale xs
 
-line u:rope
+line rope
   4203.5 1565.0
-  4203.5 1565.0 4198.5 1558.5 4196.5 1558.75
-  4194.5 1559.0 4184.25 1509.75 4183.25 1516.0
+  4196.5 1558.75
+  4196.5 1558.75 4184.25 1509.75 4183.25 1516.0
   smooth off
 endline
 
@@ -755,7 +752,7 @@ endscrap
 
 scrap arche1c -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 3494.75 1232.5 height -value [+17 m]
+point 3505.75 1232.5 height -value [+17 m]
 
 point 3845.75 1388.25 air-draught -orientation 236.3 -subtype summer -scale xl
 
@@ -766,14 +763,13 @@ line label -text "méandre de l'Arche"
   smooth off
 endline
 
-line u:rope
+line rope
   4032.5 1494.5
-  4032.5 1494.5 4027.25 1492.25 4026.25 1494.0
-  4025.25 1495.75 4019.5 1438.25 4019.5 1438.25
-  smooth off
+  4026.25 1494.0
+  4019.5 1438.25
 endline
 
-point 4033.25 1464.25 height -value [-14 m]
+point 4044.75 1463.75 height -value [-14 m]
 
 line wall
   3515.25 1275.25
@@ -1061,67 +1057,58 @@ line label -text "méandre du Réverbère"
   smooth off
 endline
 
-line u:rope
+line rope
   4160.5 1550.25
-  4160.5 1550.25 4155.0 1545.25 4154.5 1549.25
-  4154.0 1553.25 4153.75 1524.0 4153.75 1524.0
-  smooth off
+  4154.5 1549.25
+  4153.75 1524.0
 endline
 
-line u:rope
+line rope
   3994.5 1517.25
-  3994.5 1517.25 3988.75 1510.75 3987.25 1514.75
-  3985.75 1518.75 3987.5 1487.0 3987.5 1487.0
-  smooth off
+  3987.25 1514.75
+  3987.5 1487.0
 endline
 
-line u:rope
+line rope
   3945.0 1490.5
-  3945.0 1490.5 3940.0 1487.5 3939.75 1489.75
-  3939.5 1492.0 3938.75 1474.5 3938.75 1474.5
-  smooth off
+  3939.75 1489.75
+  3938.75 1474.5
 endline
 
-line u:rope
+line rope
   3723.25 1444.0
-  3723.25 1444.0 3716.75 1440.0 3716.75 1443.5
-  3716.75 1447.0 3717.0 1409.5 3717.0 1409.5
-  smooth off
+  3716.75 1443.5
+  3717.0 1409.5
 endline
 
-line u:rope
+line rope
   3648.0 1379.75
-  3648.0 1379.75 3642.0 1377.0 3641.75 1380.5
-  3641.5 1384.0 3641.0 1353.5 3641.0 1353.5
-  smooth off
+  3641.75 1380.5
+  3641.0 1353.5
 endline
 
-line u:rope
+line rope
   3609.25 1374.0
-  3609.25 1374.0 3600.5 1369.25 3600.5 1372.25
-  3600.5 1375.25 3598.25 1341.25 3598.25 1341.25
-  smooth off
+  3600.5 1372.25
+  3598.25 1341.25
 endline
 
-line u:rope
+line rope
   3576.0 1355.5
-  3576.0 1355.5 3565.75 1350.5 3565.5 1354.75
-  3565.25 1359.0 3565.0 1318.0 3565.0 1318.0
-  smooth off
+  3565.5 1354.75
+  3565.0 1318.0
 endline
 
-line u:rope
+line rope
   3351.25 1269.25
-  3351.25 1269.25 3356.0 1266.75 3357.25 1269.25
-  3358.5 1271.75 3365.5 1210.25 3365.5 1210.25
-  smooth off
+  3357.25 1269.25
+  3365.5 1210.25
 endline
 
-line u:rope
+line rope
   3430.0 1299.25
-  3430.0 1299.25 3421.25 1295.0 3417.75 1298.5
-  3414.25 1302.0 3419.0 1221.25 3419.0 1221.25
-  smooth off
+  3417.75 1298.5
+  3419.0 1221.25
 endline
 
 point 3358.0 1277.75 water-flow -orientation 186.0
@@ -1229,7 +1216,7 @@ line wall -subtype presumed
   smooth off
 endline
 
-line u:rope
+line rope
   3521.5 1383.25
   3521.25 1298.0
 endline
@@ -1483,14 +1470,13 @@ point 2841.0 1151.5 height -value [-7 m]
 
 point 2808.0 1202.5 height -value [-14 m]
 
-line u:rope
+line rope
   2757.5 1227.5
-  2757.5 1227.5 2773.0 1217.0 2777.5 1225.0
-  2782.0 1233.0 2777.5 1147.0 2799.5 1162.0
-  2801.25 1163.2 2804.61 1156.58 2812.5 1162.5
-  2820.5 1168.5 2809.0 1145.0 2818.5 1135.5
-  2828.0 1126.0 2823.0 1068.0 2823.0 1068.0
-  smooth off
+  2777.5 1225.0
+  2799.5 1162.0
+  2812.5 1162.5
+  2818.5 1135.5
+  2823.0 1068.0
 endline
 
 line wall -subtype presumed
@@ -1524,11 +1510,10 @@ point 2989.0 1188.0 water-flow -orientation 179.6
 
 point 2988.0 1230.5 water-flow -orientation 179.6
 
-line u:rope
+line rope
   3007.5 1123.0
-  3007.5 1123.0 2998.5 1119.0 2998.5 1123.0
-  2998.5 1127.0 2997.0 1105.0 2997.0 1105.0
-  smooth off
+  2998.5 1123.0
+  2997.0 1105.0
 endline
 
 line wall
@@ -2010,11 +1995,10 @@ point 2054.0899999999997 1159.85 station -name Bc.52@jb-amonts1.Jean-Bernard
 
 point 2609.0 1236.5 height -value [-6 m]
 
-line u:rope
+line rope
   2389.5 1245.5
-  2389.5 1245.5 2364.5 1236.5 2356.0 1240.0
-  2354.97 1240.43 2332.0 1236.0 2322.0 1238.5
-  smooth off
+  2356.0 1240.0
+  2322.0 1238.5
 endline
 
 line water-flow
@@ -2091,36 +2075,32 @@ point 2841.0 1151.5 height -value [-7 m]
 
 point 2808.0 1202.5 height -value [-14 m]
 
-line u:rope
+line rope
   2757.5 1227.5
-  2757.5 1227.5 2774.0 1216.0 2777.5 1225.0
-  2781.0 1234.0 2775.0 1152.0 2799.5 1162.0
-  2801.81 1162.94 2807.5 1153.0 2812.5 1162.5
-  2817.09 1171.21 2811.0 1135.5 2818.5 1135.5
-  2826.0 1135.5 2823.0 1068.0 2823.0 1068.0
-  smooth off
+  2777.5 1225.0
+  2799.5 1162.0
+  2812.5 1162.5
+  2818.5 1135.5
+  2823.0 1068.0
 endline
 
-line u:rope
+line rope
   2707.5 1242.5
-  2707.5 1242.5 2699.0 1230.0 2698.0 1236.0
-  2697.0 1242.0 2677.5 1210.5 2667.5 1215.0
-  2657.5 1219.5 2637.0 1217.5 2637.0 1217.5
-  smooth off
-endline
-
-line u:rope
+  2698.0 1236.0
+  2667.5 1215.0
   2637.0 1217.5
-  2637.0 1217.5 2625.0 1210.0 2625.0 1217.5
-  2625.0 1225.0 2622.0 1187.0 2622.0 1187.0
-  smooth off
 endline
 
-line u:rope
+line rope
+  2637.0 1217.5
+  2625.0 1217.5
+  2622.0 1187.0
+endline
+
+line rope
   2577.0 1224.5
-  2577.0 1224.5 2580.0 1218.5 2588.0 1225.5
-  2596.0 1232.5 2593.5 1191.0 2593.5 1191.0
-  smooth off
+  2588.0 1225.5
+  2593.5 1191.0
 endline
 
 line border
@@ -2305,14 +2285,13 @@ line label -text "méandre des Arianes"
   smooth off
 endline
 
-line u:rope
+line rope
   2480.5 1173.5
-  2480.5 1173.5 2484.0 1170.25 2487.75 1174.25
-  2491.5 1178.25 2494.75 1131.5 2494.75 1131.5
-  smooth off
+  2487.75 1174.25
+  2494.75 1131.5
 endline
 
-line u:rope
+line rope
   2364.0 1214.75
   2369.0 1146.75
 endline

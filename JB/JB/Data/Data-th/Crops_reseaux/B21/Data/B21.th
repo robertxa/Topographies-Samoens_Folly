@@ -1,0 +1,307 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey jb-B21 -title "Gouffre du B21" -entrance "B21"
+
+centerline -extend right -title "B21 Cc.0_Cc.1 Cc.51_B21"
+ # De la base du P140 à l'entrée du B21
+
+   date 1979.07.05
+ #  declination -2.3401 grad   
+   cs lat-long
+  fix B21   46.1036667   6.79451667  2237
+  station B21 "B21" entrance
+
+  ##team "G.S. Vulcain"
+  team "Josiane Lips"
+  team "Bernard Lips"
+  team "Jean-Luc Dinard"
+  team "Benoît/Le Falher"
+  explo-date 1979.04.04
+    explo-team "Pierre Rias"
+    explo-team "Bernard Séroul"
+  explo-date 1979.06.23
+    explo-team "Bernard Lips"
+    explo-team "Jean-Philippe Faubert"
+   # #explo-#team "G.S. Vulcain"
+  explo-date 1979.06.24
+    explo-team "Josiane Lips"
+    explo-team "Benoît/Le Falher"
+    ##explo-#team "G.S. Vulcain"
+  explo-date 1979.07.01
+    explo-team "Jean-Luc Dinard"
+    explo-team "Christian Renaud"
+   # #explo-#team "G.S. Vulcain"
+  explo-date 1979.07.02
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+    ##explo-#team "G.S. Vulcain"
+  explo-date 1979.07.03
+    explo-team "Jean-Luc Dinard"
+    explo-team "Benoît/Le Falher"
+  explo-date 1979.07.04
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+  explo-date 1979.07.05
+    explo-team "Jacques Lopez"
+    explo-team "Benoît/Le Falher"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+
+   data normal from to length backcompass backclino right left up down
+
+   Cc.0 Cc.1    136.40       0.      -100.       0.       0.       0.       0.    # Sommet P140 du B21
+   Cc.1 Cc.2    3.1       0.      -100.       0.       0.       0.       0.    
+   Cc.2 Cc.3    2.       315.       0.       0.       0.       0.       0.    # decalage de 2 m en haut depart galerie
+   Cc.3 Cc.4    4.2       0.      -100.       0.       0.       0.       0.    # m.c. du puits
+   Cc.4 Cc.5    2.8       379.      -29.       4.5      1.5       0.5       0.5    # méandre h = 6 m, l = 1 m
+   Cc.5 Cc.6    2.2       4.      -42.       0.       0.       0.       0.    
+   Cc.6 Cc.7    2.8       307.      -8.       0.       0.       0.       0.    
+   Cc.7 Cc.8    3.9       274.      -3.       0.       0.       0.       0.    
+   Cc.8 Cc.9    3.       304.      -5.       0.       0.       0.       0.    
+   Cc.9 Cc.10    2.       330.      -37.       0.       0.       0.       0.    
+   Cc.10 Cc.11    2.7       308.       30.       0.       0.       0.       0.    
+   Cc.11 Cc.12    5.2       312.      -23.       0.       0.       0.       0.    
+   Cc.12 Cc.13    8.1       292.      -13.       0.       0.       0.       0.    
+   Cc.13 Cc.14    3.8       308.      -60.       0.       0.       0.       0.    # ressaut en escalade
+   Cc.14 Cc.15    5.6       278.      -17.       0.       0.       0.       0.    # bas de la corde
+   Cc.15 Cc.16    28.2       0.      -100.       0.       0.       0.       0.    # P30
+   Cc.16 Cc.17    6.2       285.      -25.       1.5       1.5       0.5       0.5    # méandre l = 1 m, h = 3 m
+   Cc.17 Cc.18    2.9       305.      -15.       0.       0.       0.       0.    
+   Cc.18 Cc.19    5.4       275.      -16.       0.       0.       0.       0.    
+   Cc.19 Cc.20    7.8       300.      -15.       0.       0.       0.       0.    
+   Cc.20 Cc.21    5.6       270.      -18.       0.       0.       0.       0.    
+   Cc.21 Cc.22    4.1       265.      -3.       0.       0.       0.       0.    
+   Cc.22 Cc.23    7.4       292.      -30.       0.       0.       0.       0.    
+   Cc.23 Cc.24    10.       338.      -20.       0.       0.       0.       0.    
+   Cc.24 Cc.25    2.7       215.       0.       0.       0.       0.       0.    # base puits
+   Cc.25 Cc.26    13.7       55.      -82.       0.       0.       0.       0.    # puits 2 spits C25 ; 1 spit à planter (frottements)
+   Cc.26 Cc.27    5.7       110.      -60.       0.       0.       0.       0.    # puits
+   Cc.27 Cc.28    6.6       155.      -14.       0.5       0.5       0.5       0.5    # conduite forcée diamètre 1 m
+   Cc.28 Cc.29    3.4       120.      -38.       0.5       0.5       0.5       0.5    # id
+   Cc.29 Cc.30    4.3       120.      -33.       0.5       0.5       0.5       0.5    # id
+   Cc.30 Cc.31    3.8       65.      -66.       0.5       0.5       0.5       0.5    # id
+   Cc.31 Cc.32    4.2       290.      -19.       0.5       0.5       0.5       0.5    # id
+   Cc.32 Cc.33    3.9       395.      -58.       0.       0.       0.       0.    # ressaut ; C10 ; AN
+   Cc.33 Cc.34    2.8       375.      -20.       0.       0.       0.       0.    # etroit
+   Cc.34 Cc.35    2.8       15.      -41.       0.       0.       0.       0.    
+   Cc.35 Cc.36    5.1       100.      -80.       0.       0.       0.       0.    # Ressaut ; C9 ; AN
+   Cc.36 Cc.37    1.8       110.       0.       0.       0.       0.       0.    # boyau
+   Cc.37 Cc.38    2.5       165.      -40.       0.       0.       0.       0.    # boyau
+   Cc.38 Cc.39    2.3       245.      -42.       0.       0.       0.       0.    # boyau
+   Cc.39 Cc.40    3.1       70.      -68.       0.       0.       0.       0.    
+   Cc.40 Cc.41    9.9       90.      -80.       0.       0.       0.       0.    # puits
+   Cc.41 Cc.42    1.       115.      -23.       0.       0.       0.       0.    
+   Cc.42 Cc.43    2.5       285.      -50.       0.       0.       0.       0.    # m.c. du puits
+   Cc.43 Cc.44    1.7       335.       0.       0.       0.       0.       0.    
+   Cc.44 Cc.45    4.3       395.      -28.       0.       0.       2.       2.   # petite salle, diamètre 4 m 
+   Cc.45 Cc.46    2.5       370.      -80.       0.       0.       0.       0.    # Ressaut en escalade
+   Cc.46 Cc.47    1.3       367.       0.       0.       0.       0.       0.    # Sommet du ressaut à étroiture
+   Cc.47 Cc.48    2.8       295.       0.       0.       0.       0.       0.    # Etroiture
+   Cc.48 Cc.49    3.2       290.      -12.       0.       0.       0.       0.    # étroiture dynamitée
+   Cc.49 Cc.50    12.5       285.      -23.       0.       0.       0.       0.    # étroiture ; base du puits
+   Cc.50 Cc.51    14.8       220.      -63.       0.       0.       0.       0.    # Puits
+   Cc.51 B21    20.       245.      -58.       0.       0.       0.       0.    # puits
+
+# dev = 410 m   
+   
+endcenterline
+
+
+centerline -extend right -title "B21 puits pourris Cb.0_Cb.1 Cb'.3_Cb.14"
+ # du sommet du P140 à la base des Puits Pourris
+
+   date 1980.08.21
+ #  declination -2.2434 degrees
+
+  ##team "G.S. Vulcain"
+  team "Pierre Rias"
+  team "Maurice Chiron"
+  explo-date 1979.08.11
+    explo-team  "Maurice Chiron"
+    explo-team "Jean-Luc Dinard"
+  explo-date 1980.08.06
+    explo-team "Pierre Rias"
+    explo-team "Christophe Ohl"
+  explo-date 1980.08.21
+    explo-team "Pierre Rias"
+    explo-team "Maurice Chiron"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Cb.0 Cb.1    3.       72.       0.       0.       0.       0.       0.    
+   Cb.1 Cb.2    4.1       19.      -20.       0.       0.       0.       0.    
+   Cb.2 Cb.3    1.2       70.      -20.       0.       0.       0.       0.    
+   Cb.3 Cb.4    1.6       39.       53.       0.       0.       0.       0.    
+   Cb.4 Cb.5    2.2       45.       45.       0.       0.       0.       0.    
+   Cb.5 Cb.6    1.       65.       45.       0.       0.       0.       0.    
+   Cb.6 Cb.7    2.5       4.      -3.       0.       0.       0.       0.    
+   Cb.7 Cb.8    6.6       55.       20.       0.       0.       0.       0.    
+   
+   extend left
+   Cb.8 Cb.9    10.4       40.       35.       0.       0.       0.       0.    
+   Cb.9 Cb.10    3.1       332.       16.       0.       0.       0.       0.    
+   Cb.10 Cb.11    1.5       0.       90.       0.       0.       0.       0.    # Chatière verticale
+   Cb.11 Cb.12    2.6       0.       35.       0.       0.       0.       0.    
+   Cb.12 Cb.13    10.4       58.       28.       0.       0.       0.       0.    
+   Cb.13 Cb.14    3.5       52.       13.       0.       0.       0.       0.    
+   Cb.14 Cb.15    4.5       95.       34.       0.       0.       0.       0.    
+   Cb.15 Cb.16    6.6       355.       25.       0.       0.       0.       0.    
+   Cb.16 Cb.17    2.6       50.      -27.       0.       0.       0.       0.    
+   Cb.17 Cb.18    4.35       325.       21.       0.       0.       0.       0.    
+   Cb.18 Cb.19    6.7       325.       1.       0.       0.       0.       0.    
+   Cb.19 Cb.20    3.05       46.       18.       0.       0.       0.       0.    
+   Cb.20 Cb.21    4.5       334.       16.       0.       0.       0.       0.    
+   Cb.21 Cb.22    6.3       270.       13.       0.       0.       0.       0.    
+   Cb.22 Cb.23    3.6       280.       11.       0.       0.       0.       0.    
+   Cb.23 Cb.24    4.3       234.      -2.       0.       0.       0.       0.    
+   Cb.24 Cb.25    4.9       316.       7.       0.       0.       0.       0.    
+   Cb.25 Cb.26    6.6       293.       26.       0.       0.       0.       0.    
+   Cb.26 Cb.27    4.8       326.       5.       0.       0.       0.       0.    
+   Cb.27 Cb.28    6.4       311.       28.       0.       0.       0.       0.    
+   Cb.28 Cb.29    4.       357.       17.       0.       0.       0.       0.    
+   Cb.29 Cb.30    2.5       312.       15.       0.       0.       0.       0.    
+   Cb.30 Cb.31    6.8       282.       25.       0.       0.       0.       0.    
+   Cb.31 Cb.32    1.9       184.       30.       0.       0.       0.       0.    
+   Cb.32 Cb.33    5.       308.       15.       0.       0.       0.       0.    
+   Cb.33 Cb.34    5.7       316.       23.       0.       0.       0.       0.    
+   Cb.34 Cb.35    6.1       318.       24.       0.       0.       0.       0.    
+   Cb.35 Cb.36    4.9       342.       12.       0.       0.       0.       0.    
+
+   extend right
+   Cb.14 Cb.37    7.3       96.       15.       0.       0.       0.       0.    
+   Cb.37 Cb.38    5.1       56.       7.       0.       0.       0.       0.    
+   Cb.38 Cb.39    1.2       100.      -45.       0.       0.       0.       0.    
+   Cb.39 Cb.40    12.       96.       6.       0.       0.       0.       0.    
+   Cb.40 Cb.41    5.4       116.       30.       0.       0.       0.       0.    
+   Cb.41 Cb.42    10.2       83.       18.       0.       0.       0.       0.    
+   Cb.42 Cb.43    7.9       106.       7.       0.       0.       0.       0.    
+   Cb.43 Cb.44    15.9       98.       8.       0.       0.       0.       0.    
+   Cb.44 Cb.45    11.2       78.       18.       0.       0.       0.       0.    
+   Cb.45 Cb.46    2.8       64.       26.       0.       0.       0.       0.    
+   Cb.46 Cb.47    2.3       265.       37.       0.       0.       0.       0.    
+   Cb.47 Cb.48    1.4       0.       90.       0.       0.       0.       0.    
+   Cb.48 Cb.49    3.       20.       28.       0.       0.       0.       0.    
+   Cb.49 Cb.50    6.75       81.       10.       0.       0.       0.       0.    
+   Cb.50 Cb.51    18.15000       81.       6.       0.       0.       0.       0.    
+   Cb.51 Cb.52    7.4       103.      -1.       0.       0.       0.       0.    
+   Cb.52 Cb.53    3.1       77.       37.       0.       0.       0.       0.    
+   Cb.53 Cb.54    4.7       0.       90.       0.       0.       0.       0.    
+   Cb.54 Cb.55    11.       85.       10.       0.       0.       0.       0.    
+   Cb.55 Cb.56    2.       90.       0.       0.       0.       0.       0.    
+   Cb.56 Cb.57    1.       138.       0.       0.       0.       0.       0.    
+   Cb.57 Cb.58    2.1       92.       3.       0.       0.       0.       0.    
+   Cb.58 Cb.59    5.1       156.      -24.       0.       0.       0.       0.    
+   Cb.59 Cb.60    4.87       20.       8.       0.       0.       0.       0.    
+   Cb.60 Cb.61    2.73       71.       7.       0.       0.       0.       0.    
+   Cb.61 Cb.62    1.4       338.       0.       0.       0.       0.       0.    
+   Cb.62 Cb.63    7.4       30.       3.       0.       0.       0.       0.    
+   Cb.63 Cb.64    1.5       310.      -25.       0.       0.       0.       0.    
+   Cb.64 Cc.4    1.5       30.      -20.       0.       0.       0.       0.    
+   Cb'.0 Cb'.1    9.5       33.       24.       0.       0.       0.       0.    
+   Cb'.1 Cb'.2    5.5       345.       35.       0.       0.       0.       0.    
+   Cb'.2 Cb'.3    8.4       330.       32.       0.       0.       0.       0.    
+   Cb'.3 Cb.14    1.4       37.       22.       0.       0.       0.       0.    
+
+# Dev = 351 m
+
+endcenterline  
+
+
+ centerline -extend right -title "B21 g. de la Trémie Cd.0_Cd.1 Cd.9_Cd.36"
+ # B21 - Galerie de la trémie
+
+   date 1981.08.03
+ #  declination -2.1653 grad
+
+  ##team "G.S. Vulcain"
+
+  team "Bernard Lips"
+  team "Josiane Lips"
+  explo-date 1981.08.01
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"  
+
+   units lenght meters
+   units compass grad
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Cd.0 Cd.1    3.85       135.       40.       0.       0.       0.       0.    # trémie avec courant d'air
+   Cd.1 Cd.2    4.46       240.       10.       0.       0.       0.       0.    
+   Cd.2 Cd.3    5.17       170.       20.       0.       0.       0.       0.    
+   Cd.3 Cd.4    9.86       200.       3.       0.       0.       0.       0.    
+   Cd.4 Cd.5    6.41       155.       0.       0.       0.       0.       0.    
+   Cd.5 Cd.6    4.56       235.       30.       0.       0.       0.       0.    # Siphon de boue
+   Cd.6 Cd.7    4.56       278.      -15.       0.       0.       0.       0.    
+   Cd.7 Cd.8    3.8       0.      -90.       0.       0.       0.       0.    # R4
+   Cd.8 Cd.9    2.5       195.      -45.       0.       0.       0.       0.    # toboggan d'accès au R4
+   Cd.9 Cb.36    2.69       225.      -28.       0.       0.       0.       0.    # Arrêt juste avant le pont rocheux
+   
+# dev = 50 m
+# Dev = 47.9 m
+       
+endcenterline
+
+
+ centerline -extend right -title "Scotch-light Cc.0_Ce.1 Ce.9_Ca.0"
+ # De la Rivière de la Gadoue à la salle du Scotch Light
+
+   date 1977.08.25
+ #  declination -2.4943 degrees
+
+  ##team "G.S. Vulcain"
+  team "Jacques Lopez"
+  team "Philippe Bigeard"
+  explo-date 1977.08.22
+    explo-team "Christian Rigaldie"
+    explo-team "Pierre Rias"
+    explo-team "Jacques Lopez"
+    explo-team "Paul Deschamps"
+  explo-date 1977.08.23
+    explo-team "Bernard Lips"
+    explo-team "Jean-Pierre Stéphanato"
+    explo-team "Philippe Bigeard"
+  explo-date 1977.08.24
+    explo-team "Pierre Rias"
+    explo-team "Paul Deschamps"
+  explo-date 1977.08.25
+    explo-team "Jacques Lopez"
+    explo-team "Philippe Bigeard"
+
+  explo-date 1977.11.08
+    explo-team "Jacques Lopez"
+    explo-team "Christian Rigaldie"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Cc.0 Ce.1    8.9       330.       15.       0.       0.       0.       0.    # Arrivée d'Eau au plafond
+   Ce.1 Ce.2    13.3       303.      -24.       0.       0.       10.       10.    # Largeur 15-20 m
+   Ce.2 Ce.3    6.9       0.      -90.       0.       0.       0.       0.    # Gros bloc coincé au sommet du puits. La rivière se pert dans un méandre (P25\30)
+   Ce.3 Ce.4    5.5       285.      -80.       0.       0.       0.       0.    # Premier ressaut du puits
+   Ce.4 Ce.5    14.4       320.      -15.       0.       0.       0.       0.    
+   Ce.5 Ce.6    1.8       347.       14.       0.       0.       0.       0.    
+   Ce.6 Ce.7    7.5       305.       18.       0.       0.       0.       0.    
+   Ce.7 Ce.8    1.9       343.      -26.       0.       0.       0.       0.    
+   Ce.8 Ce.9    28.1       0.       90.       0.       0.       0.       0.    
+   Ce.9 Ca.0    7.7       305.      -5.       0.       0.       0.       0.   
+
+# dev = 88 m
+
+ endcenterline
+ 
+endsurvey
