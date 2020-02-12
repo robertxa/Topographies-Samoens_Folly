@@ -323,5 +323,5 @@ endlayout
  export map -projection extended -layout my_layout-coupe -o Outputs/billy-coupe.pdf 
  export map -o Outputs/billy-plan.pdf -layout my_layout
  
- export model -o Outputs/espoir.lox
- export continuation-list -o Outputs/Continuations-billy.html
+ export model -o Outputs/billy.lox
+ export continuation-list -o Outputs/Continuations-billy-coupe.html

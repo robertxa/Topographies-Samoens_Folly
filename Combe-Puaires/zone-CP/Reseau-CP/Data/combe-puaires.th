@@ -120,8 +120,10 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
  	# le Sirocco et les 4 vents
  	input data-th/Scraps-alone/Huit/huit-coupe.th2
  	join aval-CP12-SC2 huit-SC1
- 	#join sirocco-SC4 2xpats-SC1
+ 	
  	#join sirocco-SC4 rasoir-SC?
+ 	input data-th/Scraps-alone/2xxpats/Data/2xxpats-coupe.th2
+ 	join sirocco-SC4 2xxpats-SC1
  	
  	## Le méandre Billy
  	input data-th2/Billy1-coupe.th2

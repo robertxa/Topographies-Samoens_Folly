@@ -450,6 +450,8 @@ line wall
   smooth off
 endline
 
+point 5970.0 2120.5 height -value [+13 m]
+
 line wall -reverse on
   6005.5 2210.25
   6005.5 2210.25 6000.0 2208.75 5996.5 2206.25
@@ -1161,6 +1163,12 @@ line wall
   6344.5 2263.0 6363.5 2245.5 6363.5 2245.5
   smooth off
 endline
+
+point 6227.5 2365.5 height -value [-5 m]
+
+point 6332.0 2394.5 height -value [+10 m]
+
+point 6099.5 2343.5 height -value [+7 m]
 
 line wall
   6097.5 2246.5

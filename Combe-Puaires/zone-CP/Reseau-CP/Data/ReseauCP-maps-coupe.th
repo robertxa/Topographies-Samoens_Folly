@@ -24,7 +24,7 @@ map MC-Billy -title "Méandre Billy amont"
 endmap
 
 map MC-clowns -title "Réseau des Clowns"
-	bivouac-SC2
+	bivouac-SC2@ReseauCP
 	break
 	clowns-SC1@ReseauCP
 	break
@@ -118,12 +118,14 @@ map MC-sirocco -title "Boucle du Sirocco et des Quatre Vents"
 	sirocco-SC3
 	break
 	pborgne@ReseauCP
+	break
+	2xxpats-SC1@ReseauCP
 endmap
 
 map MC-huit -title "galerie du Huit"
-	huit-SC2
+	huit-SC2@ReseauCP
 	break
-	huit-SC1
+	huit-SC1@ReseauCP
 endmap
 
 #####################################################################
