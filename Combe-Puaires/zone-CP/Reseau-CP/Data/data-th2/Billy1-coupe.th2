@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap Billy1c -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 395.716 -128.0 0.0 0.0 13.3023864 0.0 m]
 
-point -269.5 0.5 label -text "<center>v. méandre<br>Billy aval et CP14"
+#point -269.5 0.5 label -text "<center>v. méandre<br>Billy aval et CP14"
 
 line rock-border
   -89.5 102.5
@@ -18,9 +18,9 @@ endline
 
 point -124.0 78.5 air-draught -orientation 249.2 -subtype summer
 
-point 172.5 203.5 label -text "<center>v. méandre<br>Billy amont<br>(etr. désob.)"
+#point 172.5 203.5 label -text "<center>v. méandre<br>Billy amont<br>(etr. désob.)"
 
-point 49.5 263.0 label -text "v. méandre Billy amont (P20 remontant)"
+#point 49.5 263.0 label -text "v. méandre Billy amont (P20 remontant)"
 
 point -171.0 112.5 helictite
 
@@ -32,29 +32,29 @@ point 36.5 132.0 height -value [+5 m]
 
 point -18.0 170.5 height -value [+2 m]
 
-line arrow
-  13.5 208.0
-  49.0 241.5
-endline
+#line arrow
+#  13.5 208.0
+#  49.0 241.5
+#endline
 
-line arrow
-  79.0 171.0
-  118.5 203.5
-endline
+#line arrow
+#  79.0 171.0
+#  118.5 203.5
+#endline
 
-line arrow
-  79.0 171.0
-  79.0 171.0 98.0 185.5 101.0 189.0
-  104.0 192.5 98.5 204.0 95.0 206.0
-  91.5 208.0 66.0 213.0 65.0 221.5
-  64.0 230.0 70.5 247.5 70.5 247.5
-  smooth off
-endline
+#line arrow
+#  79.0 171.0
+#  79.0 171.0 98.0 185.5 101.0 189.0
+#  104.0 192.5 98.5 204.0 95.0 206.0
+#  91.5 208.0 66.0 213.0 65.0 221.5
+#  64.0 230.0 70.5 247.5 70.5 247.5
+#  smooth off
+#endline
 
-line arrow
-  -277.0 53.0
-  -287.0 18.0
-endline
+#line arrow
+#  -277.0 53.0
+#  -287.0 18.0
+#endline
 
 line wall
   -27.5 184.5

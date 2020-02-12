@@ -2,7 +2,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Coupes développées à dessiner
 	* C74
-	* Réseau CP ; En cours
+	* Réseau CP ; En cours (CP12, CP19b, Rivière à Pierrot faites)
 	* CP43
 	* L17
 	
@@ -21,9 +21,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Révisions des points d'interrogation (rajout des commentaires)
 
-- Révision de la casse des entrées (<bf> + -scale xl)
-
-- Rajout longueurs des explos non topo :
+- Rajout longueurs des explos non topographiées (ou dont les données ont été perdues) :
 	* JB : Rajout aval Gadoue, Courte-échelle (données topos perdues)
 
 - Rajout des logos
@@ -31,30 +29,25 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Sur le réseau CP
 	* Sur toutes les topos annexes ?
 	
-- Rajout des coordonnées des entrées
-	* a minima pour la CP
+- Rajout des coordonnées des entrées dans les cartouches
+	* A minima pour la CP
 	* Améliorer la façon de faire pour que ce soit plus facile/fluide pour toute la BD ?
 
 - Migrer toutes les topos sous formes de "maps" et utiliser la commande "select"
 	* gouffre JB : les JB-plan.thconfig et JB-Coupe.thconfig sont faits, il faut tester pour l'Atlas
-	* Ermoy : il faut peut-être recouper plus intelligemment !
-	* Retravailler le réseau CP (plan OK, Coupe développée en cours)
 	* Verifier toutes les zones de superpositions (C74...)
 
 - Erreurs dessins à corriger
-	* Coupe développée du réseau de la Pierre Qui Tombe (JB) : rajouter l'option dans le scrap : -flip horizontal
-	* Revoir dessin du BA2 (rapports d'échelles) --> Thconfig à réécrire
+	* Coupe développée du réseau de la Pierre Qui Tombe (JB) : couper en 2 scraps et rajouter l'option dans le scrap problématique : -flip horizontal
+	* Revoir l'entrée du V4ter (pas de nom, mais coordonnées)
 	* Coordonnées du C52
 	* Coordonnées du L17
 	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
 	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on" des layouts
+	* Superposition arrivée CP12/P18 mauvaise
 
 - JB :
 	* Finir la découpe des données de la zone amont (faire les jonctions + revoir les appels à stations dans les dessins)
 	* ...
-	
-- Mise à jour sur le site Vulcain
-	* Combe aux Puaires
-	* ...
-	
+		

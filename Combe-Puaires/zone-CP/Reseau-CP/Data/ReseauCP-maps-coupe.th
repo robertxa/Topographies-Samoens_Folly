@@ -24,6 +24,8 @@ map MC-Billy -title "Méandre Billy amont"
 endmap
 
 map MC-clowns -title "Réseau des Clowns"
+	bivouac-SC2
+	break
 	clowns-SC1@ReseauCP
 	break
 	clowns-SC2@ReseauCP
@@ -65,6 +67,10 @@ map MC-rivaval -title "Rivière de la Tête à l'Homme"
 	RivAval-SC3@ReseauCP
 	break
 	Massues-SC1@ReseauCP
+	break
+	massues-SC2@ReseauCP
+	break
+	massues-SC3@ReseauCP
 endmap
 
 
@@ -72,6 +78,20 @@ map MC-CP12 -title "Gouffre CP12"
 	CP12-SC1@ReseauCP
 	break
 	CP12-SC2@ReseauCP	
+endmap
+
+map MC-Secoues -title "galeries du CP12"
+	aval-CP12-SC1@ReseauCP
+	break
+	P18-SC1@ReseauCP
+	break
+	aval-CP12-SC2@ReseauCP
+	break
+	aval-CP12-SC3@ReseauCP
+	break
+	aval-CP12-SC4@ReseauCP
+	break
+	aval-CP19-SC5@ReseauCP
 endmap
 
 map MC-reptiles -title "Réseau des Reptiles"
@@ -86,6 +106,25 @@ map MC-CP19b -title "CP19 bis"
 	CP19b-SC1@ReseauCP
 endmap
 
+map MC-sirocco -title "Boucle du Sirocco et des Quatre Vents"
+	ptraverseCP-SC1
+	break
+	sirocco-SC1
+	break
+	sirocco-SC2
+	break
+	sirocco-SC4
+	break
+	sirocco-SC3
+	break
+	pborgne@ReseauCP
+endmap
+
+map MC-huit -title "galerie du Huit"
+	huit-SC2
+	break
+	huit-SC1
+endmap
 
 #####################################################################
 #    Réseaux intermédiaires
@@ -100,6 +139,8 @@ endmap
 
 map MC-CP12-aval -title "CP12"
 	MC-CP12
+	break
+	MC-Secoues
 endmap
 
 map MC-CP19-Reptiles-Aval -title "CP19 bis et réseau des Reptiles"
@@ -112,6 +153,9 @@ endmap
 #####################################################################
 map MC-ReseauCP-total -title "Réseau de la Combe aux Puaires"
 	
+	MC-sirocco
+	break
+
 	MC-CP12-aval
 	break
 	MC-CP19-Reptiles-Aval
@@ -125,6 +169,7 @@ map MC-ReseauCP-total -title "Réseau de la Combe aux Puaires"
 	
 	break
 	MC-clowns
-	
+	preview below MC-rivaval
+	preview below MC-sirocco
 endmap
    

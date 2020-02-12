@@ -22,7 +22,7 @@ Uniquement les fichiers sources sont sauvegardés pour des raisons de taille; j'
 	
 Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fichiers Therion.
 
-L'ensemble de ces topographies sont publiées et décrites dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet ('https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/')
+L'ensemble de ces topographies sont publiées et décrites dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet ('https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/'). Les topographies compilées peuvent aussi être téléchargées sur les pages 'https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/topographies-du-synclinal-du-jean-bernard-samoens-france/' et 'https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/explorations-a-samoenstopographies-du-systeme-de-la-combe-aux-puaires/'
 
 Licence
 -------

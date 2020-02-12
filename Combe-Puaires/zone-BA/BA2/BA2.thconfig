@@ -55,7 +55,7 @@ layout my_layout
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 1000
+   base-scale 1 150
   
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -141,18 +141,18 @@ layout my_layout
    # Afficher un copyright
    statistics copyright all
    
-    code tex-map 
-\legendwidth=20cm 
-#\legendtextcolor={\color[0 0 100]} 
-\legendtextsize={\size[26]} 
-\legendtextheadersize={\size[40]} 
-endcode
+#    code tex-map 
+#\legendwidth=20cm 
+##\legendtextcolor={\color[0 0 100]} 
+#\legendtextsize={\size[26]} 
+#\legendtextheadersize={\size[40]} 
+#endcode
 
-  code metapost 
-#fonts_setup(<tinysize>,<smallsize>,<normalsize>,<largesize>,<hugesize>);
-fonts_setup(6,8,3,14,6); 
-% default values depend on scale; for 1:200 they are 7,8,10,12,14 
-endcode
+#  code metapost 
+##fonts_setup(<tinysize>,<smallsize>,<normalsize>,<largesize>,<hugesize>);
+#fonts_setup(6,8,3,14,6); 
+#% default values depend on scale; for 1:200 they are 7,8,10,12,14 
+#endcode
   
  # Titre          
      code tex-map
@@ -226,14 +226,14 @@ layout my_layout-coupe
 endlayout
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o Data/BA2-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Data/BA2-coupe.xvi
+ #export map -fmt xvi -layout xviexport -o Data/BA2-map.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/BA2-coupe.xvi
 
 # Select maps
 	select BA2-plan-tot
 	  
  export map -o Outputs/BA2-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/BA2-coupe.pdf
+# export map -projection extended -layout my_layout-coupe -o Outputs/BA2-coupe.pdf
 # export model -o Outputs/BA2.lox
   
  # Export des fichiers ESRI

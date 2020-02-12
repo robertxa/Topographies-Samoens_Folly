@@ -9,8 +9,10 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 # Pour importer les différentes données de différents fichiers topos : 
 	input data-th/ReseauCP
 	
+	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12
+	equate 1.0@aval-CP12 1.0@ReseauCP
 	input data-th/Scraps-alone/CP12/Data/CP12
-	equate 1.19@ReseauCP 1.19@CP12
+	equate 1.19@aval-CP12 1.19@CP12
 	
 	input data-th/Scraps-alone/CP14/Data/CP14
 	equate 9.17@ReseauCP 9.17@CP14
@@ -22,7 +24,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	input data-th/Scraps-alone/CP19b/Data/CP19b
 	equate 6.23@reptiles 6.23@CP19b
 	input data-th/Scraps-alone/Reptiles/Data/reptiles
-	equate 1.28@ReseauCP 1.28@reptiles	
+	equate 1.28@aval-CP12 1.28@reptiles	
 	
 	input data-th/Scraps-alone/Billy/Data/billy
 	equate 11.22@ReseauCP 11.22@billy
@@ -112,8 +114,14 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 
 # Pour importer les différents fichiers de dessins en Coupe
 	
-	input data-th2/clowns-coupe.th2
- 	##join Clowns-SC1 #salle du bivouac
+	input data-th/Scraps-alone/Clowns/Data/clowns-coupe.th2
+ 	join clowns-SC1 bivouac-SC2
+ 	
+ 	# le Sirocco et les 4 vents
+ 	input data-th/Scraps-alone/Huit/huit-coupe.th2
+ 	join aval-CP12-SC2 huit-SC1
+ 	#join sirocco-SC4 2xpats-SC1
+ 	#join sirocco-SC4 rasoir-SC?
  	
  	## Le méandre Billy
  	input data-th2/Billy1-coupe.th2
@@ -131,6 +139,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
  	## La rivière Aval
  	input data-th/Scraps-alone/Riviere_aval/Data/riviere_aval-coupe.th2
 	join RivAval-SC3 bivouacpierrot-SC1
+	join Massues-SC1 massues-SC2
 	
 	input data-th/Scraps-alone/shunt_cata/Data/shunt_cata-coupe.th2
 	#join
@@ -139,9 +148,11 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 
 	# CP12, CP19b et Reptiles
 	input data-th/Scraps-alone/CP12/Data/CP12-coupe.th2
-	#join CP12-SC1 ??? -count ???
-	
+	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12-coupe.th2
+	join CP12-SC1 aval-CP12-SC1
+	#join CP12-SC1 P18-SC1 ???
 	input data-th/Scraps-alone/Reptiles/Data/reptiles-coupe.th2
+	join Reptiles-SC1 aval-CP12-SC1
 	input data-th/Scraps-alone/CP19b/Data/CP19b-coupe.th2
 	# Pas de join ?
 	

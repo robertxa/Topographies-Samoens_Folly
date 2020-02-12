@@ -11,17 +11,17 @@ point 118.5 33.5 height -value [-3 m]
 
 point 89.0 60.5 height -value [+4 m]
 
-point 163.75 49.0 label -text "<center>méandre<br>Billy"
+#point 163.75 49.0 label -text "<center>méandre<br>Billy"
+
 
 point 62.5 110.75 label -text "etr."
 
 point 12.25 86.5 label -text "colm."
 
-line u:rope
-  79.5 85.5
-  79.5 85.5 99.0 77.75 105.5 80.5
-  106.33 80.85 110.0 52.5 110.0 52.5
-  smooth off
+line rope
+  74.0 86.25
+  117.75 78.5
+  142.25 47.75
 endline
 
 line wall -close on -outline in

@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap Billy3-c1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-n-sa/4.0/" -scale [-128.0 -128.0 301.22799999999995 -128.0 0.0 0.0 10.902391199999999 0.0 m]
+scrap Billy3-c1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 301.22799999999995 -128.0 0.0 0.0 10.902391199999999 0.0 m]
 
 line border
   68.5 72.5
@@ -15,9 +15,10 @@ line border
   smooth off
 endline
 
-point 28.25 89.75 label -text "<center>méandre<br>Billy amont"
+#point 28.25 89.75 label -text "<center>méandre<br>Billy amont"
 
-point 233.0 101.75 continuation -attr Code D -text "Désobstruction à effectuer, courant d'air, vu sur plus d'espace"
+
+point 233.0 101.75 continuation -attr Code D -text "Désobstruction à effectuer, courant d'air, vue sur plus d'espace"
 
 point 220.25 124.0 narrow-end
 
@@ -37,16 +38,17 @@ point 203.25 99.75 label -text "colm."
 
 point 127.5 81.5 blocks
 
-line u:rope
-  120.25 111.75
-  120.25 111.75 135.0 74.5 135.5 83.75
+line rope
+  85.0 85.5
+  70.25 82.5
+  69.5 36.0
 endline
 
-line u:rope
-  120.25 111.75
-  120.25 111.75 115.25 108.25 115.0 111.0
-  114.95 111.5 97.4 82.36 89.0 96.0
-  87.0 99.25 71.75 38.5 66.0 46.0
+line rope
+  121.75 111.5
+  104.5 107.5
+  89.5 102.0
+  85.0 85.5
 endline
 
 line wall
@@ -90,6 +92,7 @@ line wall
   128.0 114.5 100.25 110.75 91.75 111.25
   83.25 111.75 67.0 117.5 59.5 116.0
   52.0 114.5 30.25 107.75 28.25 107.25
+  smooth off
 endline
 
 point 203.228 110.23519999999999 station -name Xa-2015-16@Billy3

@@ -6,11 +6,11 @@ encoding  utf-8
   
   
  # 1-SOURCES 
-source ReseauCP.th
-source Scraps-alone/Huit/huit-coupe.th2
+source Data/aval-CP12.th
+source Data/aval-CP12-coupe.th2
 
 # Add config file
-input ../../../../../config.thc
+input ../../../../../../../config.thc
 
   
 # 2-LAYOUT   
@@ -33,7 +33,7 @@ layout my_layout
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Test"
+	doc-title "Aval du CP12"
 	# Auteur
 	doc-author "Xavier Robert"
   
@@ -87,7 +87,7 @@ layout my_layout
 	scale-bar 100 m
   
 	# Un commentaire a ajounter au titule,
-	map-comment "test, Samoëns, 74, France"
+	map-comment "Aval du CP12, Samoëns, 74, France"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -122,8 +122,8 @@ layout my_layout
   
 	# Options pour afficher le squelette topo,
 	# les points et le nom des stations topos
-	symbol-hide line survey
-	#debug station-names
+	#symbol-hide line survey
+	debug station-names
   
 	# Specifier qu il faut imprimer une grille
 	# au dessous de la topo  
@@ -177,7 +177,7 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Test"
+	doc-title "Aval du CP12"
 	# Auteur
 	doc-author "Xavier Robert"
   
@@ -192,8 +192,7 @@ layout my_layout-coupe
 	# employee, c est le cas apres avoir dessine la topo
 	# sur un cheminement exporte avec le layout "xviexport"
 	# (voir en bas)
-	base-scale 1 500
-	#base-scale 1 250
+	base-scale 1 1250
   
 	# "scale" : specification de l echelle,
 	# pour imprimer la topo. La combination entre scale et base-scale
@@ -204,8 +203,7 @@ layout my_layout-coupe
 	# l imprimante ne specifie pas l option "Fit in page"
 	# ou similaire, sinon, l echelle sera change pendant
 	# l impression
-	scale 1 500
-	#scale 1 250
+	scale 1 1000
   
 	# Pour faire une rotation
 	#rotate 2.25
@@ -230,12 +228,11 @@ layout my_layout-coupe
 	language fr
   
 	# echelle graphique 100 m ampleur
-	scale-bar 50 m
-	#scale-bar 25 m
+	scale-bar 100 m
   
 	# Un commentaire a ajounter au titule,
 	#map-comment "Diverticule du méandre Billy, Coupe développée, Samoëns, 74, France"
-	map-comment "Test, Coupe développée"
+	map-comment "Aval du CP12, Coupe développée"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -320,11 +317,11 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o Scraps-alone/Huit/test-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Scraps-alone/Huit/test-coupe.xvi
+ #export map -fmt xvi -layout xviexport -o data/avalCP12-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o data/avalCP12-coupe.xvi
  
- export map -projection extended -layout my_layout-coupe -o Outputs/test-coupe.pdf 
-# export map -o Outputs/espoir-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/avalCP12-coupe.pdf 
+ #export map -o Outputs/avalCP12-plan.pdf -layout my_layout
  
-# export model -o Outputs/test.lox
-# export continuation-list -o Outputs/Continuations-test.html
+ export model -o Outputs/avalCP12.lox
+ export continuation-list -o Outputs/Continuations-avalCP12-coupe.html

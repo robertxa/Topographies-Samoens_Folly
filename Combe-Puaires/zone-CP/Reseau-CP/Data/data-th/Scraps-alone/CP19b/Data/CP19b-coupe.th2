@@ -13,6 +13,7 @@ line wall
   1848.5 1796.5 1852.75 1794.25 1852.75 1797.5
   1852.75 1800.75 1847.5 1812.5 1853.75 1815.75
   1860.0 1819.0 1868.5 1816.5 1875.25 1822.5
+  smooth off
 endline
 
 point 1817.75 1838.0 dig
@@ -155,6 +156,7 @@ line wall
   1787.5 1777.5 1784.5 1776.5 1782.5 1774.0
   1780.5 1771.5 1779.0 1761.0 1774.0 1763.25
   1769.0 1765.5 1768.5 1777.5 1768.25 1779.25
+  smooth off
 endline
 
 line wall -subtype pebbles
@@ -165,6 +167,7 @@ line wall -subtype pebbles
   1911.25 1861.75 1923.5 1878.0 1928.0 1883.75
   1932.5 1889.5 1937.0 1896.25 1940.75 1896.25
   1944.5 1896.25 1949.0 1896.5 1949.0 1898.75
+  smooth off
 endline
 
 line wall
@@ -279,12 +282,14 @@ line wall
   534.0 511.5 544.5 407.0 550.5 381.0
   556.5 355.0 595.0 302.5 608.5 295.0
   622.0 287.5 630.0 296.5 632.0 280.0
+  smooth off
 endline
 
 line wall
   360.5 710.0
   360.5 710.0 430.0 701.0 443.0 690.5
   456.0 680.0 464.0 653.0 464.0 641.5
+  smooth off
 endline
 
 line wall
@@ -310,6 +315,7 @@ line wall
   902.5 1161.5 927.0 1166.5 932.5 1156.0
   938.0 1145.5 938.0 1073.0 938.0 1064.0
   938.0 1055.0 931.0 1047.0 929.5 1037.5
+  smooth off
 endline
 
 line wall
@@ -324,6 +330,7 @@ line wall
   729.0 789.0 710.5 792.5 695.0 791.5
   679.5 790.5 650.5 783.0 632.0 782.0
   613.5 781.0 527.5 783.0 524.0 783.5
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -436,16 +443,19 @@ line wall
   1013.0 1074.0 1071.0 1087.5 1073.0 1103.5
   1075.0 1119.5 1075.0 1175.5 1074.5 1184.0
   1074.0 1192.5 1067.5 1211.5 1073.5 1220.5
+  smooth off
 endline
 
 line border
   1073.0 1258.5
   1073.0 1258.5 1107.0 1260.5 1112.5 1260.5
+  smooth off
 endline
 
 line wall -subtype debris
   1073.5 1220.5
   1079.5 1229.5 1104.5 1254.0 1116.5 1257.0
+  smooth off
 endline
 
 line wall
@@ -456,6 +466,7 @@ line wall
   1231.5 1256.5 1241.5 1263.0 1238.0 1271.5
   1234.5 1280.0 1227.5 1287.5 1221.5 1291.5
   1215.5 1295.5 1206.0 1315.5 1212.0 1322.5
+  smooth off
 endline
 
 line border
@@ -469,6 +480,7 @@ line border
   542.0 540.0
   542.0 540.0 566.5 537.0 581.5 535.5
   596.5 534.0 640.5 532.5 651.5 532.5
+  smooth off
 endline
 
 line border
@@ -482,6 +494,7 @@ line border
   487.5 708.5
   487.5 708.5 533.0 698.0 554.0 696.0
   575.0 694.0 619.0 698.5 635.5 699.0
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -523,6 +536,7 @@ line wall -subtype debris
   1218.0 1329.5 1221.0 1328.5 1231.0 1331.0
   1241.0 1333.5 1261.5 1330.5 1261.0 1338.0
   1260.5 1345.5 1250.0 1368.0 1260.0 1369.5
+  smooth off
 endline
 
 line wall
@@ -561,9 +575,9 @@ point 1093.0 860.0 label -text "<center>puits des<br>Forceps"
 
 point 1068.5 705.0 label -text "<center>puits du<br>Disque"
 
-point 901.0 621.5 label -text "<center>puits de<br>l'Echo"
+point 341.5 630.5 label -text "<center>puits de<br>l'Echo"
 
-point 828.0 463.5 label -text "<center>puits de<br>la Résonnance"
+point 342.5 482.5 label -text "<center>puits de<br>la Résonnance"
 
 line wall
   638.5 241.0
@@ -571,6 +585,7 @@ line wall
   659.0 303.0 660.0 389.0 660.0 408.0
   660.0 427.0 673.0 418.0 677.0 435.0
   681.0 452.0 674.0 522.0 674.0 533.0
+  smooth off
 endline
 
 line rope

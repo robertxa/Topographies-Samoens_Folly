@@ -312,7 +312,7 @@ endscrap
 
 
 
-scrap Huit-2 -projection plan -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap Huit-2 -projection plan -station-names "" "@aval-CP12" -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line wall
   1630.5 1649.0
@@ -421,31 +421,31 @@ line wall
   smooth off
 endline
 
-point 1633.93 1638.44 station -name 1.10@ReseauCP
+point 1633.93 1638.44 station -name 1.10
 
-point 1665.06 1639.97 station -name 1.9@ReseauCP
+point 1665.06 1639.97 station -name 1.9
 
-point 1707.86 1644.25 station -name 1.8@ReseauCP
+point 1707.86 1644.25 station -name 1.8
 
-point 1748.44 1625.46 station -name 1.7@ReseauCP
+point 1748.44 1625.46 station -name 1.7
 
-point 1763.31 1620.41 station -name 1.6@ReseauCP
+point 1763.31 1620.41 station -name 1.6
 
-point 1767.01 1608.08 station -name 1.5@ReseauCP
+point 1767.01 1608.08 station -name 1.5
 
-point 1746.47 1595.38 station -name 1.4@ReseauCP
+point 1746.47 1595.38 station -name 1.4
 
-point 1737.74 1574.92 station -name 1.3@ReseauCP
+point 1737.74 1574.92 station -name 1.3
 
-point 1758.13 1536.61 station -name 1.2@ReseauCP
+point 1758.13 1536.61 station -name 1.2
 
-point 1774.56 1504.26 station -name 1.1@ReseauCP
+point 1774.56 1504.26 station -name 1.1
 
 endscrap
 
 
 
-scrap Huit-3 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap Huit-3 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line wall -subtype unsurveyed
   1979.0 1670.0
@@ -583,57 +583,57 @@ line wall
   smooth off
 endline
 
-point 2064.73 1691.68 station -name 4.21@ReseauCP
+point 2064.73 1691.68 station -name 4.21
 
-point 2028.3 1717.06 station -name 4.20@ReseauCP
+point 2028.3 1717.06 station -name 4.20
 
-point 2019.25 1725.76 station -name 4.19@ReseauCP
+point 2019.25 1725.76 station -name 4.19
 
-point 2007.7 1726.34 station -name 4.18@ReseauCP
+point 2007.7 1726.34 station -name 4.18
 
-point 1982.56 1722.3 station -name 4.17@ReseauCP
+point 1982.56 1722.3 station -name 4.17
 
-point 1960.64 1715.55 station -name 4.16@ReseauCP
+point 1960.64 1715.55 station -name 4.16
 
-point 1943.35 1710.55 station -name 4.15@ReseauCP
+point 1943.35 1710.55 station -name 4.15
 
-point 1920.3 1709.28 station -name 4.14@ReseauCP
+point 1920.3 1709.28 station -name 4.14
 
-point 1979.99 1649.71 station -name 5.5@ReseauCP
+point 1979.99 1649.71 station -name 5.5
 
-point 1968.69 1662.65 station -name 5.4@ReseauCP
+point 1968.69 1662.65 station -name 5.4
 
-point 1947.87 1681.31 station -name 5.3@ReseauCP
+point 1947.87 1681.31 station -name 5.3
 
-point 1932.02 1689.34 station -name 5.2@ReseauCP
+point 1932.02 1689.34 station -name 5.2
 
-point 1916.89 1702.9 station -name 5.1@ReseauCP
+point 1916.89 1702.9 station -name 5.1
 
-point 1897.89 1715.66 station -name 4.13@ReseauCP
+point 1897.89 1715.66 station -name 4.13
 
-point 1887.94 1713.33 station -name 4.12@ReseauCP
+point 1887.94 1713.33 station -name 4.12
 
-point 1856.9 1693.08 station -name 4.11@ReseauCP
+point 1856.9 1693.08 station -name 4.11
 
-point 1838.97 1689.55 station -name 4.10@ReseauCP
+point 1838.97 1689.55 station -name 4.10
 
-point 1828.9 1688.65 station -name 4.9@ReseauCP
+point 1828.9 1688.65 station -name 4.9
 
-point 1803.64 1690.35 station -name 4.8@ReseauCP
+point 1803.64 1690.35 station -name 4.8
 
-point 1786.91 1683.89 station -name 4.7@ReseauCP
+point 1786.91 1683.89 station -name 4.7
 
-point 1785.95 1688.78 station -name 4.6@ReseauCP
+point 1785.95 1688.78 station -name 4.6
 
-point 1766.34 1697.45 station -name 4.5@ReseauCP
+point 1766.34 1697.45 station -name 4.5
 
-point 1718.55 1679.93 station -name 4.4@ReseauCP
+point 1718.55 1679.93 station -name 4.4
 
-point 1664.7 1683.58 station -name 4.3@ReseauCP
+point 1664.7 1683.58 station -name 4.3
 
-point 1635.9 1664.05 station -name 4.2@ReseauCP
+point 1635.9 1664.05 station -name 4.2
 
-point 1632.17 1652.48 station -name 4.1@ReseauCP
+point 1632.17 1652.48 station -name 4.1
 
 endscrap
 
@@ -917,7 +917,7 @@ endscrap
 
 
 
-scrap P18-1 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap P18-1 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 1340.25 1305.5 continuation
 
@@ -968,7 +968,7 @@ line pit -close on
   1144.75 1403.75
 endline
 
-point 1139.69 1406.77 station -name 7.13@ReseauCP
+point 1139.69 1406.77 station -name 7.13
 
 line wall -subtype invisible
   1138.5 1403.75
@@ -1033,33 +1033,33 @@ line wall
   smooth off
 endline
 
-point 1136.94 1401.6 station -name 7.12@ReseauCP
+point 1136.94 1401.6 station -name 7.12
 
-point 1145.69 1383.38 station -name 7.11@ReseauCP
+point 1145.69 1383.38 station -name 7.11
 
-point 1153.04 1372.33 station -name 7.10@ReseauCP
+point 1153.04 1372.33 station -name 7.10
 
-point 1162.37 1355.62 station -name 7.8@ReseauCP
+point 1162.37 1355.62 station -name 7.8
 
-point 1212.49 1346.16 station -name 7.7@ReseauCP
+point 1212.49 1346.16 station -name 7.7
 
-point 1238.35 1337.06 station -name 7.6@ReseauCP
+point 1238.35 1337.06 station -name 7.6
 
-point 1277.57 1356.44 station -name 7.5@ReseauCP
+point 1277.57 1356.44 station -name 7.5
 
-point 1343.28 1344.1 station -name 7.3@ReseauCP
+point 1343.28 1344.1 station -name 7.3
 
-point 1334.62 1320.02 station -name 7.4@ReseauCP
+point 1334.62 1320.02 station -name 7.4
 
-point 1360.61 1395.62 station -name 7.2@ReseauCP
+point 1360.61 1395.62 station -name 7.2
 
-point 1354.44 1470.93 station -name 7.1@ReseauCP
+point 1354.44 1470.93 station -name 7.1
 
 endscrap
 
 
 
-scrap CP12-5 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap CP12-5 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line wall
   1068.5 1291.25
@@ -1198,45 +1198,45 @@ line wall
   smooth off
 endline
 
-point 1170.0 1409.22 station -name 7.15@ReseauCP
+point 1170.0 1409.22 station -name 7.15
 
-point 1190.35 1333.45 station -name 7.17@ReseauCP
+point 1190.35 1333.45 station -name 7.17
 
-point 1176.88 1362.04 station -name 3.2@ReseauCP
+point 1176.88 1362.04 station -name 3.2
 
-point 1166.35 1371.65 station -name 7.16@ReseauCP
+point 1166.35 1371.65 station -name 7.16
 
-point 1159.97 1378.27 station -name 3.1@ReseauCP
+point 1159.97 1378.27 station -name 3.1
 
-point 1124.09 1418.89 station -name 2.2@ReseauCP
+point 1124.09 1418.89 station -name 2.2
 
-point 1134.9 1410.19 station -name 2.1@ReseauCP
+point 1134.9 1410.19 station -name 2.1
 
-point 1084.42 1309.46 station -name 1.27@ReseauCP
+point 1084.42 1309.46 station -name 1.27
 
-point 1111.18 1339.25 station -name 1.26@ReseauCP
+point 1111.18 1339.25 station -name 1.26
 
-point 1132.97 1358.62 station -name 1.25@ReseauCP
+point 1132.97 1358.62 station -name 1.25
 
-point 1151.94 1385.99 station -name 1.24@ReseauCP
+point 1151.94 1385.99 station -name 1.24
 
-point 1176.51 1406.85 station -name 1.23@ReseauCP
+point 1176.51 1406.85 station -name 1.23
 
-point 1207.99 1430.94 station -name 1.22@ReseauCP
+point 1207.99 1430.94 station -name 1.22
 
-point 1248.54 1455.81 station -name 1.21@ReseauCP
+point 1248.54 1455.81 station -name 1.21
 
-point 1320.52 1504.39 station -name 1.19@ReseauCP
+point 1320.52 1504.39 station -name 1.19
 
-point 1281.19 1485.56 station -name 1.20@ReseauCP
+point 1281.19 1485.56 station -name 1.20
 
-point 1368.44 1540.87 station -name 1.18@ReseauCP
+point 1368.44 1540.87 station -name 1.18
 
 endscrap
 
 
 
-scrap P18-2 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap P18-2 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 1126.0 1447.0 height -value [-6 m]
 
@@ -1309,15 +1309,15 @@ line wall -reverse on
   smooth off
 endline
 
-point 1126.98 1428.29 station -name 7.19@ReseauCP
+point 1126.98 1428.29 station -name 7.19
 
-point 1136.97 1391.4 station -name 7.18@ReseauCP
+point 1136.97 1391.4 station -name 7.18
 
 endscrap
 
 
 
-scrap Secoues-1 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap Secoues-1 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line rock-border -close on
   849.0 1326.25
@@ -1563,25 +1563,25 @@ line wall -id l386-983-1264
   smooth off
 endline
 
-point 674.32 1373.36 station -name 19.0@ReseauCP
+point 674.32 1373.36 station -name 19.0
 
-point 752.94 1335.16 station -name 19.1@ReseauCP
+point 752.94 1335.16 station -name 19.1
 
-point 781.93 1339.28 station -name 19.2@ReseauCP
+point 781.93 1339.28 station -name 19.2
 
-point 784.14 1344.26 station -name 19.3@ReseauCP
+point 784.14 1344.26 station -name 19.3
 
-point 784.15 1340.33 station -name 19.5@ReseauCP
+point 784.15 1340.33 station -name 19.5
 
-point 818.44 1345.2 station -name 19.6@ReseauCP
+point 818.44 1345.2 station -name 19.6
 
-point 908.75 1291.12 station -name 19.7@ReseauCP
+point 908.75 1291.12 station -name 19.7
 
-point 976.58 1288.85 station -name 19.8@ReseauCP
+point 976.58 1288.85 station -name 19.8
 
-point 995.38 1261.06 station -name 19.9@ReseauCP
+point 995.38 1261.06 station -name 19.9
 
-point 1045.02 1286.44 station -name 1.28@ReseauCP
+point 1045.02 1286.44 station -name 1.28
 
 endscrap
 
@@ -3017,7 +3017,7 @@ endscrap
 
 
 
-scrap CP12-3 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap CP12-3 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 1541.75 1645.0 water-flow -orientation 82.2
 
@@ -3124,35 +3124,35 @@ line wall
   smooth off
 endline
 
-point 1522.1 1662.0 station -name 8.3@ReseauCP
+point 1522.1 1662.0 station -name 8.3
 
-point 1522.28 1651.49 station -name 8.5@ReseauCP
+point 1522.28 1651.49 station -name 8.5
 
-point 1528.89 1643.88 station -name 8.7@ReseauCP
+point 1528.89 1643.88 station -name 8.7
 
-point 1519.5 1626.23 station -name 8.9@ReseauCP
+point 1519.5 1626.23 station -name 8.9
 
-point 1489.64 1614.76 station -name 8.10@ReseauCP
+point 1489.64 1614.76 station -name 8.10
 
-point 1481.47 1605.36 station -name 8.11@ReseauCP
+point 1481.47 1605.36 station -name 8.11
 
-point 1469.96 1592.13 station -name 8.12@ReseauCP
+point 1469.96 1592.13 station -name 8.12
 
-point 1467.57 1580.87 station -name 8.13@ReseauCP
+point 1467.57 1580.87 station -name 8.13
 
-point 1396.09 1553.56 station -name 1.17@ReseauCP
+point 1396.09 1553.56 station -name 1.17
 
-point 1422.67 1547.93 station -name 1.16@ReseauCP
+point 1422.67 1547.93 station -name 1.16
 
-point 1467.68 1574.37 station -name 1.15@ReseauCP
+point 1467.68 1574.37 station -name 1.15
 
-point 1495.21 1581.59 station -name 1.14@ReseauCP
+point 1495.21 1581.59 station -name 1.14
 
-point 1537.89 1611.94 station -name 1.13@ReseauCP
+point 1537.89 1611.94 station -name 1.13
 
-point 1577.7 1612.49 station -name 1.12@ReseauCP
+point 1577.7 1612.49 station -name 1.12
 
-point 1600.59 1615.61 station -name 1.11@ReseauCP
+point 1600.59 1615.61 station -name 1.11
 
 endscrap
 

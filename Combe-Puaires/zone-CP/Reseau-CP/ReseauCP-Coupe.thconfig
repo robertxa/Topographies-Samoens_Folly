@@ -63,8 +63,9 @@ layout my_layout-coupe
 	statistics copyright all
 	legend on
 	legend-width 28 cm
+	legend-columns 3
 	#map-header 5 50 e
-	map-header 0 0 n
+	map-header 95 65 n
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -89,7 +90,7 @@ layout my_layout-coupe
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		\newtoks\synth \synth={Stéphane Lips (2009), Xavier Robert (2020)}
-		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Grander et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 	endcode  
 
 endlayout
