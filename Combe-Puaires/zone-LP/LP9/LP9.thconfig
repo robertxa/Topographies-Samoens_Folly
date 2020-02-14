@@ -72,7 +72,11 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
-  
+
+	# Rajout des logos du club
+	#map-image 73 35	nw	../../../vulcain.jpg
+	#map-image 80 40	nw	../../../vulcain2.jpg
+	  
 endlayout
   
 layout my_layout-coupe  
@@ -196,7 +200,11 @@ layout my_layout-coupe
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
-  
+
+	# Rajout des logos du club
+	#map-image 73 35	nw	../../../vulcain.jpg
+	#map-image 80 40	nw	../../../vulcain2.jpg  
+	
 endlayout 
   
 export map -fmt xvi -layout xviexport -o data-th2/LP9-CP39-map.xvi

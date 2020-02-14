@@ -126,9 +126,15 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
  	join sirocco-SC4 2xxpats-SC1
  	
  	## Le méandre Billy
+ 	input data-th/Scraps-alone/Billy/Data/billy-coupe.th2
+ 	#join 
  	input data-th2/Billy1-coupe.th2
  	input data-th2/Billy2-coupe.th2
  	input data-th2/Billy3-coupe.th2
+ 	
+ 	# Le réseau de l'Espoir
+ 	input data-th/Scraps-alone/Espoir/Data/espoir-coupe.th2
+ 	#join espoir-SC1 massues-SC2
  	
  	## La rivière à Pierrot
  	input data-th/Scraps-alone/Riviere_amont/data/rivamont2014-coupe.th2
@@ -146,7 +152,13 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	input data-th/Scraps-alone/shunt_cata/Data/shunt_cata-coupe.th2
 	#join
 	
+	# CP16
+	input data-th/Scraps-alone/CP16/Data/CP16-coupe.th2
+	#join ???
 	
+	# CP14
+	input data-th/Scraps-alone/CP14/Data/CP14-coupe.th2
+	join CP14-SC2 sirocco-SC1
 
 	# CP12, CP19b et Reptiles
 	input data-th/Scraps-alone/CP12/Data/CP12-coupe.th2

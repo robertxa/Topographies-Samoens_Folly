@@ -2,7 +2,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Coupes développées à dessiner
 	* C74
-	* Réseau CP ; En cours (CP12, CP19b, Rivière à Pierrot faites)
 	* CP43
 	* L17
 	
@@ -26,10 +25,10 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Rajout des logos
 	* sur le plan et la coupe du JB
-	* Sur le réseau CP
 	* Sur toutes les topos annexes ?
 	
 - Rajout des coordonnées des entrées dans les cartouches
+	* Fait pour Réseau CP, A21, A22, JB, 
 	* A minima pour la CP
 	* Améliorer la façon de faire pour que ce soit plus facile/fluide pour toute la BD ?
 
@@ -38,6 +37,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Verifier toutes les zones de superpositions (C74...)
 
 - Erreurs dessins à corriger
+	* Migrer toutes les lignes u:rope vers rope (corde) sur toutes les coupes Développée (réseau CP, JB, AV8 --> OK)
 	* Coupe développée du réseau de la Pierre Qui Tombe (JB) : couper en 2 scraps et rajouter l'option dans le scrap problématique : -flip horizontal
 	* Revoir l'entrée du V4ter (pas de nom, mais coordonnées)
 	* Coordonnées du C52
@@ -45,7 +45,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
 	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on" des layouts
-	* Superposition arrivée CP12/P18 mauvaise
+	* Superposition arrivée CP12/P18 mauvaise sur le plan
 
 - JB :
 	* Finir la découpe des données de la zone amont (faire les jonctions + revoir les appels à stations dans les dessins)

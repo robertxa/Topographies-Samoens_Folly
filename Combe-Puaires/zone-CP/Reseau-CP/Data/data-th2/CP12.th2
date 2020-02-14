@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 7259.2441 5106.8984
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 7259.2441 5106.8984
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {3327.0299999999997 1 1.0} {3126.7799999999997 1.0@ReseauCP.ReseauCP} ReseauCP-map.xvi 0 {}
 
 
@@ -781,7 +781,7 @@ line wall
   smooth off
 endline
 
-point 1627.25 1559.0 u:danger
+point 1627.25 1559.0 danger
 
 line wall
   1591.75 1610.0
@@ -1249,11 +1249,13 @@ point 1070.25 1477.5 water-flow -orientation 339.7
 line pit -reverse on
   1147.25 1390.25
   1147.25 1390.25 1144.63 1388.01 1145.69 1383.38
+  smooth off
 endline
 
 line pit
   1132.25 1426.25
   1132.25 1426.25 1125.25 1427.5 1126.5 1434.25
+  smooth off
 endline
 
 point 1091.5 1466.25 dig
@@ -1263,6 +1265,7 @@ point 1133.0 1441.75 dig
 line pit
   1118.25 1430.25
   1118.25 1430.25 1123.75 1432.75 1123.75 1438.5
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -1272,6 +1275,7 @@ line wall -subtype unsurveyed
   1105.0 1454.75 1109.0 1446.75 1110.0 1443.75
   1111.0 1440.75 1109.5 1440.0 1111.25 1436.5
   1113.0 1433.0 1116.5 1433.0 1118.0 1433.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -1289,6 +1293,7 @@ point 1129.0 1430.25 altitude -align bottom-right
 line wall
   1129.0 1430.25
   1129.0 1430.25 1123.0 1435.75 1121.25 1436.0
+  smooth off
 endline
 
 line wall
@@ -1297,6 +1302,7 @@ line wall
   1147.75 1393.0 1151.5 1387.5 1149.25 1388.0
   1147.0 1388.5 1140.0 1392.5 1139.25 1394.25
   1138.5 1396.0 1131.0 1429.0 1129.0 1430.25
+  smooth off
 endline
 
 line wall -reverse on
@@ -1401,6 +1407,8 @@ endline
 point 780.5 1363.25 height -value [+50 m]
 
 point 980.0 1323.5 continuation
+
+point 630.5 1345.0 danger
 
 point 686.75 1407.0 label -text "<center>trémie<br> des Secoués"
 

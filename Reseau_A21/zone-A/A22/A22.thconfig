@@ -62,7 +62,7 @@ layout my_layout
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 1000
+   base-scale 1 500
   
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -73,7 +73,7 @@ layout my_layout
    # l imprimante ne specifie pas l option "Fit in page"
    # ou similaire, sinon, l echelle sera change pendant
    # l impression
-  scale 1 1000
+  scale 1 500
   
   # Pour faire une rotation
   #rotate 2.25
@@ -95,7 +95,7 @@ layout my_layout
   opacity 75
   
    # echelle graphique 100 m ampleur
-   scale-bar 100 m
+   scale-bar 50 m
   
    # Un commentaire a ajounter au titule,
   map-comment "<it>Plan<ss> - Samoëns, 74, France"
@@ -113,7 +113,7 @@ layout my_layout
   legend off
   
    # Par defaut, la legende est de 14 cm de largeur
-   #  legend-width 14 cm
+     legend-width 18 cm
   
    # Specification la position de la manchette : interieur
    # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -191,6 +191,7 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend off
+	legend-width 18 cm
 	#map-header 5 50 e
 	map-header 0 0 n
 	symbol-hide line survey

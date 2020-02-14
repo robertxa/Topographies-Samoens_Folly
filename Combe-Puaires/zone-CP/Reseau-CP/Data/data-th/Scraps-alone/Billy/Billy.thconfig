@@ -7,7 +7,7 @@ encoding  utf-8
   
  # 1-SOURCES 
 source Data/billy.th
-#source Data/riviere_aval-coupe.th2
+source Data/billy-coupe.th2
 
 # Add config file
 input ../../../../../../../config.thc
@@ -278,8 +278,8 @@ layout my_layout-coupe
   
 	# Options pour afficher le squelette topo,
 	# les points et le nom des stations topos
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
   
 	# Specifier qu il faut imprimer une grille
 	# au dessous de la topo  
