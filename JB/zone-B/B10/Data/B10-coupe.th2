@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 425.0 537.5
+##XTHERION## xth_me_area_adjust -129.5 -129.5 425.0 537.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {246.672 1 1.0} {62.57400000000001 0} B10-coupe.xvi 0 {}
 
@@ -42,25 +42,22 @@ point 275.5 75.0 continuation -attr Code D -text "méandre impénétrable"
 
 point 271.5 58.0 water-flow -orientation 128.2
 
-line u:rope
+line rope
   233.0 144.5
-  233.0 144.5 243.5 134.0 243.0 144.5
-  242.5 155.0 243.5 65.5 243.5 65.5
-  smooth off
+  243.0 144.5
+  243.5 65.5
 endline
 
-line u:rope
+line rope
   208.5 161.0
-  208.5 161.0 221.0 151.5 220.5 161.0
-  220.0 170.5 223.0 142.0 223.0 142.0
-  smooth off
+  220.5 161.0
+  223.0 142.0
 endline
 
-line u:rope
+line rope
   136.0 291.5
-  136.0 291.5 156.0 266.5 155.5 281.0
-  155.0 295.5 157.0 177.5 157.0 177.5
-  smooth off
+  155.5 281.0
+  157.0 177.5
 endline
 
 line wall

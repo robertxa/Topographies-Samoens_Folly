@@ -16,7 +16,7 @@ source Data/combe-puaires.th
 #source ReseauCP.th2
 
 # Add maps definitions
-#source Data/ReseauCP-maps-coupe.th
+source Data/ReseauCP-maps-coupe.th
  
 # Add config file
 input ../../../config.thc
@@ -57,7 +57,7 @@ layout my_layout-coupe
 	doc-author "Xavier Robert"
 	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	transparency on
-	opacity 90
+	opacity 75
 	statistics topo-length off
 	statistics explo-length off
 	statistics copyright all
@@ -107,6 +107,7 @@ endlayout
 # Select maps
 	select MC-ReseauCP-total
 	#select MC-Rivamont 
+	#select MC-Billy-tot
 	
 export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020.pdf
  

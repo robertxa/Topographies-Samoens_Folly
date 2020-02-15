@@ -7,16 +7,16 @@ encoding  utf-8
 
 scrap Billy2-c -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74 -128.0 0.0 0.0 8.502396 0.0 m]
 
-point 118.5 33.5 height -value [-3 m]
+point 107.75 30.0 height -value [-3 m]
 
-point 89.0 60.5 height -value [+4 m]
+point 80.25 60.0 height -value [+4 m]
 
 #point 163.75 49.0 label -text "<center>méandre<br>Billy"
 
 
-point 62.5 110.75 label -text "etr."
+point 62.5 115.5 label -text "etr."
 
-point 12.25 86.5 label -text "colm."
+point 7.25 74.75 label -text "colm."
 
 line rope
   74.0 86.25
@@ -51,6 +51,10 @@ line wall
   116.25 105.25 100.75 104.0 100.75 104.0
   smooth off
 endline
+
+point 164.25 79.0 map-connection
+
+point 18.25 92.75 map-connection
 
 line wall
   100.75 104.0

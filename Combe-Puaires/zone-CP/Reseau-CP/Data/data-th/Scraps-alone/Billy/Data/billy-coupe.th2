@@ -205,6 +205,7 @@ line wall -subtype unsurveyed -outline in
   5580.5 1880.0 5574.5 1895.0 5580.0 1895.5
   5585.5 1896.0 5603.0 1902.0 5609.5 1903.0
   5616.0 1904.0 5630.0 1907.0 5631.0 1903.0
+  smooth off
 endline
 
 line border
@@ -212,11 +213,13 @@ line border
   5651.5 1914.0 5675.5 1914.5 5687.5 1917.0
   5699.5 1919.5 5723.5 1924.0 5728.5 1925.5
   5733.5 1927.0 5757.0 1930.0 5766.0 1931.0
+  smooth off
 endline
 
 line border
   5537.5 1887.5
   5537.5 1887.5 5558.0 1890.0 5565.0 1892.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed -outline in
@@ -224,6 +227,7 @@ line wall -subtype unsurveyed -outline in
   5499.0 1862.0 5503.5 1878.5 5507.5 1878.5
   5511.5 1878.5 5521.0 1887.0 5526.0 1884.5
   5531.0 1882.0 5530.0 1876.5 5531.0 1875.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -474,6 +478,7 @@ line wall -subtype unsurveyed
   6147.5 1943.5 6142.0 1954.0 6137.5 1948.0
   6133.0 1942.0 6136.0 1938.5 6135.5 1930.5
   6135.0 1922.5 6129.5 1908.5 6125.5 1908.0
+  smooth off
 endline
 
 line wall
@@ -483,6 +488,7 @@ line wall
   6244.0 1934.5 6194.0 1923.0 6186.0 1921.0
   6178.0 1919.0 6165.0 1912.5 6158.5 1912.0
   6152.0 1911.5 6138.5 1909.5 6139.0 1911.5
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -656,6 +662,7 @@ line wall
   4109.0 1706.5 4037.5 1693.0 4021.0 1690.0
   4004.5 1687.0 3897.5 1670.0 3890.0 1666.5
   3882.5 1663.0 3862.5 1650.5 3859.0 1650.0
+  smooth off
 endline
 
 point 3900.9799999999996 1598.03 station -name 21.09@billy
@@ -720,6 +727,7 @@ line wall
   4221.5 1661.5 4285.0 1667.5 4293.0 1668.5
   4301.0 1669.5 4310.5 1669.5 4318.5 1669.5
   4326.5 1669.5 4329.5 1666.5 4342.0 1667.0
+  smooth off
 endline
 
 point 4517.5 1899.0 label -text "méandre Billy Amont"
@@ -764,6 +772,7 @@ line wall
   4469.5 1754.5 4452.0 1752.0 4438.0 1743.0
   4424.0 1734.0 4412.0 1715.0 4401.0 1719.0
   4390.0 1723.0 4390.0 1729.0 4377.0 1736.0
+  smooth off
 endline
 
 line wall
@@ -772,6 +781,7 @@ line wall
   4312.0 1715.0 4315.0 1710.5 4296.0 1711.5
   4277.0 1712.5 4231.0 1709.5 4218.5 1709.5
   4206.0 1709.5 4178.0 1709.0 4176.0 1712.0
+  smooth off
 endline
 
 line wall
@@ -833,6 +843,7 @@ point 3269.0 1294.5 label -text "boyau de la Jonction"
 line border
   2874.5 1393.0
   2874.5 1393.0 2882.0 1389.5 2888.0 1389.0
+  smooth off
 endline
 
 point 2889.5 1337.0 continuation -attr Code A -text "Méandre à visiter et topographier"
@@ -1023,6 +1034,20 @@ endscrap
 
 
 scrap rasoir-SC1 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 8946.9024 -128.0 0.0 0.0 230.50252096 0.0 m]
+
+area u:galerie
+  l491-2704-1462
+endarea
+
+line border -id l491-2704-1462 -close on
+  2691.5 1478.0
+  2681.0 1477.5
+  2679.0 1458.5
+  2692.0 1448.5
+  2692.0 1448.5 2705.0 1455.0 2704.0 1462.0
+  2703.0 1469.0 2691.5 1478.0 2691.5 1478.0
+  smooth off
+endline
 
 point 3607.3899999999994 1496.06 station -name 11.25@billy
 
@@ -1374,6 +1399,7 @@ line wall
   3495.0 1556.5 3515.5 1535.5 3524.5 1531.5
   3533.5 1527.5 3554.5 1513.5 3563.5 1509.0
   3572.5 1504.5 3573.5 1504.5 3579.5 1502.0
+  smooth off
 endline
 
 line wall
@@ -1382,16 +1408,19 @@ line wall
   3318.5 1672.0 3327.0 1674.5 3327.5 1684.0
   3328.0 1693.5 3348.0 1720.5 3351.0 1730.0
   3354.0 1739.5 3352.5 1769.0 3354.5 1774.5
+  smooth off
 endline
 
 line wall
   2925.0 1422.0
   2925.0 1422.0 2953.0 1441.0 2960.0 1441.5
+  smooth off
 endline
 
 line wall -subtype debris
   2960.0 1441.5
   2967.0 1442.0 2978.5 1439.5 2977.5 1446.0
+  smooth off
 endline
 
 line wall
@@ -1403,17 +1432,20 @@ line wall
   3015.5 1531.5 3022.5 1534.0 3024.0 1530.5
   3025.5 1527.0 3017.5 1520.0 3026.0 1519.0
   3034.5 1518.0 3061.5 1516.0 3066.0 1514.5
+  smooth off
 endline
 
 line wall -subtype debris
   3066.0 1514.5
   3070.5 1513.0 3086.5 1510.0 3086.5 1518.5
+  smooth off
 endline
 
 line wall
   3086.5 1518.5
   3086.5 1527.0 3083.0 1546.5 3092.0 1550.5
   3101.0 1554.5 3114.5 1559.5 3129.0 1566.5
+  smooth off
 endline
 
 point 3311.5 1670.0 altitude -align bottom-right
@@ -1421,6 +1453,7 @@ point 3311.5 1670.0 altitude -align bottom-right
 line wall -subtype debris
   3129.0 1566.5
   3143.5 1573.5 3181.5 1580.0 3181.5 1586.5
+  smooth off
 endline
 
 line wall
@@ -1869,6 +1902,7 @@ line wall
   944.0 879.0 904.0 884.0 890.0 871.5
   876.0 859.0 852.5 845.0 844.5 837.5
   836.5 830.0 820.0 816.5 815.0 814.0
+  smooth off
 endline
 
 line wall

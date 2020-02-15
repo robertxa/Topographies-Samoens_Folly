@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -167.00259999999997 412.0 246.4778
+##XTHERION## xth_me_area_adjust -128.75 -167.00259999999997 412.0 246.4778
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.3731 1 1.0} {102.3588 B3} B3-coupe.xvi 0 {}
 ##XTHERION## xth_me_image_insert {39.37399999999997 1 1.0} {102.73180000000002 B3} B3-2015-coupe.xvi 0 {}
@@ -55,6 +55,24 @@ point 116.25 13.5 label -text "Cascade"
 point 119.5 51.25 water-flow -orientation 189.5
 
 point 27.5 107.5 entrance -orientation 119.7
+
+line rope
+  109.5 39.25
+  113.75 35.75
+  113.5 25.5
+endline
+
+line rope
+  87.75 66.25
+  100.75 52.25
+  100.5 41.0
+endline
+
+line rope
+  43.5 100.0
+  50.5 98.75
+  50.75 81.75
+endline
 
 line wall -reverse on
   121.25 24.25

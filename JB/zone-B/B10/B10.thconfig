@@ -21,6 +21,9 @@ source B10-maps.th
 
 # Add config file
 input ../../../config.thc 
+
+# Add entrances
+input legendes/entrances_coordinates.th
   
 # 2-LAYOUT   
 # Debut de la definition du Layout "xviexport"
@@ -37,6 +40,7 @@ endlayout
 layout my_layout
   
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_JBBb
 	copy drawingconfig 
 	copy headerl
 	copy langue-fr
@@ -165,6 +169,7 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_JBBb
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr

@@ -18,23 +18,23 @@ endline
 #point 28.25 89.75 label -text "<center>méandre<br>Billy amont"
 
 
-point 233.0 101.75 continuation -attr Code D -text "Désobstruction à effectuer, courant d'air, vue sur plus d'espace"
+point 235.5 96.0 continuation -attr Code D -text "Désobstruction à effectuer, courant d'air, vue sur plus d'espace"
 
 point 220.25 124.0 narrow-end
 
-point 225.0 110.25 air-draught -orientation 271.1 -subtype summer -scale s
+point 244.0 111.0 air-draught -orientation 271.1 -subtype summer -scale s
 
-point 206.0 121.25 dig
+point 206.25 141.25 dig
 
 point 190.25 122.25 soda-straw
 
-point 184.0 95.25 height -value [+3 m]
+point 187.25 95.25 height -value [+3 m]
 
-point 87.75 125.0 height -value [+10 m]
+point 87.5 138.75 height -value [+10 m]
 
-point 143.25 69.5 label -text "R3"
+point 156.25 59.75 label -text "R3"
 
-point 203.25 99.75 label -text "colm."
+point 226.0 158.75 label -text "colm."
 
 point 127.5 81.5 blocks
 
@@ -82,6 +82,10 @@ line wall
   smooth off
 endline
 
+point 28.25 107.25 map-connection
+
+point 212.25 114.75 map-connection
+
 line wall
   212.25 114.75
   212.25 114.75 205.5 112.5 201.5 112.5
@@ -121,9 +125,9 @@ scrap Billy3-c2 -projection extended -author 2015 "Xavier Robert" -copyright 201
 
 point 19.25 48.0 narrow-end
 
-point 0.75 32.5 air-draught -orientation 251.6 -subtype summer
+point -11.0 29.0 air-draught -orientation 251.6 -subtype summer
 
-point 12.25 24.75 label -text "colm."
+point 5.0 11.25 label -text "colm."
 
 line wall
   21.5 37.25
