@@ -23,23 +23,21 @@ point 600.5 332.0 label -text "R8"
 
 point 511.0 398.25 label -text "P10"
 
-line u:rope
+line rope
   502.0 472.5
   500.5 429.0
 endline
 
-line u:rope
+line rope
   528.5 447.5
-  528.5 447.5 542.0 419.5 541.5 431.0
-  541.0 442.5 549.5 377.0 549.5 377.0
-  smooth off
+  541.5 431.0
+  545.5 376.5
 endline
 
-line u:rope
+line rope
   611.0 359.5
-  611.0 359.5 626.5 347.0 626.0 358.0
-  625.5 369.0 625.0 324.0 625.0 324.0
-  smooth off
+  626.0 358.0
+  625.0 324.0
 endline
 
 point 638.75 399.75 continuation -attr Code E -text "Puits remontant"
@@ -459,37 +457,33 @@ line wall
   smooth off
 endline
 
-line u:rope
+line rope
   1108.5 586.0
-  1108.5 586.0 1084.5 535.0 1084.5 555.0
-  1084.5 556.5 1081.5 512.5 1081.5 512.5
-  smooth off
+  1084.5 555.0
+  1081.5 512.5
 endline
 
-line u:rope
+line rope
   1046.0 505.75
-  1046.0 505.75 1035.5 497.5 1036.0 505.0
-  1036.5 512.5 1034.0 421.0 1034.0 421.0
-  smooth off
+  1036.0 505.0
+  1034.0 421.0
 endline
 
-line u:rope
+line rope
   858.0 154.5
-  858.0 154.5 870.0 141.5 869.5 149.0
-  869.0 156.5 871.677 124.576 871.677 124.576
-  smooth off
+  869.5 149.0
+  869.5 123.0
 endline
 
-line u:rope
+line rope
   836.0 219.5
   837.0 160.5
 endline
 
-line u:rope
+line rope
   826.5 223.5
-  826.5 223.5 830.0 219.0 836.0 219.5
-  836.5 219.54 840.0 210.0 845.5 212.5
-  smooth off
+  836.0 219.5
+  845.5 212.5
 endline
 
 line wall
@@ -551,18 +545,16 @@ point 1011.75 184.75 continuation -attr Code Q -text "Départ à voir ?"
 
 point 1075.25 103.0 continuation -attr Code D -text "Méandre étroit à désobstruer"
 
-line u:rope
+line rope
   1022.0 151.0
-  1022.0 151.0 1005.5 133.5 1005.5 144.0
-  1005.5 154.5 1003.0 107.5 1003.0 107.5
-  smooth off
+  1005.5 144.0
+  1003.0 107.5
 endline
 
-line u:rope
+line rope
   979.0 141.0
-  979.0 141.0 983.7 126.55 988.0 133.0
-  989.0 134.5 988.0 108.0 988.0 108.0
-  smooth off
+  988.0 133.0
+  988.0 108.0
 endline
 
 point 1080.5 131.0 continuation -attr Code D -text "Conduite forcée à désobtruer (remplissage)"

@@ -11,6 +11,9 @@ source Data/C51-coupe.th2
 # Add maps definitions
 source C51-maps.th
 
+# Add entrances coordinates
+input legendes/entrances_coordinates.th
+
 # Add config file
 input ../../../config.thc 
 
@@ -24,6 +27,7 @@ endlayout
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_JBCf
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
@@ -31,9 +35,9 @@ layout my_layout
 	doc-title "C51"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 1000
-	scale 1 1000
-	scale-bar 100 m
+	base-scale 1 500
+	scale 1 500
+	scale-bar 50 m
 	#rotate 2.25
 	#origin 12 22 0 m
 	#origin-label 100 K
@@ -46,7 +50,7 @@ layout my_layout
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	#legend-width 14 cm
+	legend-width 14.5 cm
  	 map-header 0 00 nw
 	map-header-bg off
 	layers on
@@ -74,6 +78,7 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_JBCf
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
@@ -89,11 +94,12 @@ layout my_layout-coupe
 	doc-author "Xavier Robert"
 	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	transparency on
-	opacity 90
+	opacity 75
 	statistics topo-length off
 	statistics explo-length off
 	statistics copyright all
 	legend off
+	legend-width 14.5 cm
 	#map-header 5 50 e
 	map-header 0 0 n
 	symbol-hide line survey

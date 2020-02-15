@@ -22,6 +22,9 @@ source Data/B3-coupe.th2
 # Add maps definitions
 source B3-maps.th
 
+# Add Coordinates
+input legendes/entrances_coordinates.th
+
 # Add config file
 input ../../../config.thc
   
@@ -42,6 +45,8 @@ endlayout
 layout my_layout
   
 	# Call the config settings (Layout config inside the config.thc file)
+	
+	copy Coords_Header_JBBa
 	copy drawingconfig
 	copy headerl
 	copy langue-fr

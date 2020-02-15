@@ -31,6 +31,9 @@ source Data/C114-coupe.th2
 # Add maps definitions
 source C114-maps.th
 
+# Add entrances coordinates
+input legendes/entrances_coordinates.th
+
 # Add config file
 input ../../../config.thc 
 
@@ -57,6 +60,7 @@ endlayout
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_JBCi
 	copy drawingconfig
 	copy headerl 
 	copy langue-fr
@@ -136,7 +140,7 @@ layout my_layout
 	legend off
 
 	# Par defaut, la legende est de 14 cm de largeur
-	#legend-width 24 cm
+	legend-width 14.4 cm
 
 	# echelle graphique 100 m ampleur
 	scale-bar 20 m
@@ -178,12 +182,13 @@ layout my_layout
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode   
     # Add extended
-    map-image 100 -20 sw C114-2012-coupe.pdf
+    map-image 100 -20 sw Outputs/C114-2012-coupe.pdf
 endlayout
 # Fin de la definition du Layout "normal"
 
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
+	#copy Coords_Header_JBCi
 	copy drawingconfig
 	#copy header_coupe 
   

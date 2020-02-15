@@ -12,7 +12,8 @@ layout Entrances_coords_JBCHc
 # This layout is called by the layout Coords_Header below
 
 	code tex-map
-		\def\thlocationJBCHc{CH20    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+		\def\thjunk{ }
+		\def\thlocationJBCHc{CH20    --  Lat. : 46.1068833 N ; Long. : 6.81340 E ; Alt. : 2336 m}
 	endcode 
 	
 endlayout
@@ -36,8 +37,11 @@ layout Coords_Header_JBCHc
 		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
 		
 		\ECoordinates={
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
+			\fi
 			\edef\tmp{\thlocationJBCHc} \ifx\tmp\empty \else
-				{\size[\thsizem] \ss\thlocationJBCHc\vss}	% The first one should be without hskip
+				{\size[\thsizem]\hskip2cm  \ss\thlocationJBCHc\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

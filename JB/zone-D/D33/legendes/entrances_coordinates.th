@@ -12,7 +12,8 @@ layout Entrances_coords_JBDb
 # This layout is called by the layout Coords_Header below
 
 	code tex-map
-		\def\thlocationJBDb{V4    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+		\def\thjunk{ }
+		\def\thlocationJBDb{V4    --  Lat. : 46.10535 N ; Long. : 6.79265 E ; Alt. : 2166 m}
 	endcode 
 	
 endlayout
@@ -36,8 +37,11 @@ layout Coords_Header_JBDb
 		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
 		
 		\ECoordinates={
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
+			\fi
 			\edef\tmp{\thlocationJBDb} \ifx\tmp\empty \else
-				{\size[\thsizem] \ss\thlocationJBDb\vss}	% The first one should be without hskip
+				{\size[\thsizem]\hskip2cm \ss\thlocationJBDb\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

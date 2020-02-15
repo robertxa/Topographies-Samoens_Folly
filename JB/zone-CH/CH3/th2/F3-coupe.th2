@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -478.0 -483.0 683.5123 442.2917
+##XTHERION## xth_me_area_adjust -675.7349999999999 -483.0 683.5123 442.9607
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {245.55000000000004 1 1.0} {33.388000000000005 0} F3-coupe.xvi 0 {}
+##XTHERION## xth_me_image_insert {245.55000000000007 1 1.0} {33.38799999999998 0} F3-coupe.xvi 0 {}
 ##XTHERION## xth_me_image_insert {246.437 1 1.0} {32.71800000000002 0} F3-coupe2016.xvi 0 {}
 
 
@@ -122,24 +122,17 @@ point 106.5 97.25 snow
 
 point 50.25 132.0 continuation -attr Code P -text "Puits à descendre"
 
-line u:rope
+line rope
   179.0 79.25
-  179.0 79.25 187.25 75.25 187.75 78.5
-  188.25 81.75 192.0 51.0 192.0 51.0
-  smooth off
+  187.75 78.5
+  189.0 50.25
 endline
 
-line u:rope
-  64.0 158.25
-  64.0 158.25 100.0 132.5 103.25 133.5
-  106.5 134.5 110.0 131.75 110.0 135.5
-  110.0 139.25 112.25 96.25 112.25 96.25
-  smooth off
-endline
-
-line u:rope
-  64.25 190.5
-  64.0 158.25
+line rope
+  64.0 165.25
+  103.0 133.75
+  110.0 135.5
+  109.75 95.25
 endline
 
 line wall
@@ -225,22 +218,20 @@ line wall -close off -outline in
   smooth off
 endline
 
-line u:rope
+line rope
   64.25 190.5
-  64.25 190.5 61.0 187.75 58.0 188.75
-  55.0 189.75 47.5 185.25 46.5 190.25
-  46.3 191.26 38.5 174.0 35.25 177.75
-  34.3 178.85 25.25 179.0 25.0 183.0
-  smooth off
+  58.0 188.75
+  46.5 190.25
+  35.25 177.75
+  25.0 183.0
 endline
 
-line u:rope
+line rope
   84.75 223.25
-  84.75 223.25 76.75 214.75 74.25 216.5
-  73.96 216.7 66.5 211.0 66.5 216.0
-  66.5 221.0 64.25 190.5 64.25 190.5
-  smooth off
-  64.0 166.0
+  74.25 216.5
+  66.5 216.0
+  64.25 190.5
+  64.0 165.25
 endline
 
 point 85.0 214.25 altitude -align bottom-right
@@ -379,11 +370,10 @@ endline
 
 point -156.0 163.5 label -text "<center>salle du<br>Robinet"
 
-line u:rope
+line rope
   -181.75 221.5
-  -181.75 221.5 -173.75 210.75 -173.75 217.75
-  -173.75 224.75 -173.0 200.0 -173.0 200.0
-  smooth off
+  -173.75 217.75
+  -173.5 199.75
 endline
 
 line wall

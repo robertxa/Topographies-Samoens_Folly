@@ -17,7 +17,10 @@ source Data/V4ter.th2
 source Data/V4ter-coupe.th2
 
 # Add maps definitions
-source V4ter-maps.th
+#source V4ter-maps.th
+
+# Add entrances coordinates
+input legendes/entrances_coordinates.th
 
 # Add config file
 input ../../../config.thc 
@@ -112,7 +115,7 @@ layout my_layout
 	legend off
   
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 21 cm
+	legend-width 14.5 cm
   
 	# Specification la position de la manchette : interieur
 	# occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -122,7 +125,7 @@ layout my_layout
 	# La manchette a des "points cardinaux" : n, s, ne, sw, etc.
 	# Il faut specifier un de ces points 
 	#map-header 100 -80 se
-	map-header 50 10 n
+	map-header 0 100 ne
    
 	# arrière plan de la manchette
 	map-header-bg off
@@ -247,7 +250,7 @@ layout my_layout-coupe
 	legend off
   
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 21 cm
+	legend-width 14.5 cm
   
 	# Specification la position de la manchette : interieur
 	# occuppe par le titule, auteurs, etc. Nous pouvons indiquer

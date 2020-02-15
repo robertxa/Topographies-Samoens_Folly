@@ -27,25 +27,22 @@ point 316.75 619.75 altitude -align bottom-right
 
 point 91.5 350.0 continuation -attr Code D -text "Méandre étroit"
 
-line u:rope
+line rope
   206.5 490.5
-  206.5 490.5 200.75 472.5 201.0 482.5
-  201.03 483.56 202.25 447.75 202.25 447.75
-  smooth off
+  201.0 482.5
+  202.25 447.75
 endline
 
-line u:rope
+line rope
   251.25 590.75
-  251.25 590.75 227.25 569.0 227.25 578.25
-  227.25 587.5 228.0 508.0 228.0 508.0
-  smooth off
+  227.25 578.25
+  228.0 508.0
 endline
 
-line u:rope
+line rope
   281.0 621.25
-  281.0 621.25 275.5 613.5 275.25 618.5
-  275.0 623.5 276.0 591.5 276.0 591.5
-  smooth off
+  275.25 618.5
+  276.0 591.5
 endline
 
 point 325.5 648.0 label -text "<bf>C44" -scale xl

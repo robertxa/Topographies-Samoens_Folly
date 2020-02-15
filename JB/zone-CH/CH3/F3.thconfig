@@ -21,6 +21,9 @@ source F3tot.th
 # Add maps definitions
 source CH3-maps.th
 
+# Add entrances coordinates
+input legendes/entrances_coordinates.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -41,6 +44,7 @@ layout my_layout
 
 	#copy northarrowMG 
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_JBCHa
 	copy drawingconfig 
 	copy headerl
 	copy langue-fr
@@ -112,7 +116,7 @@ layout my_layout
 	legend off
   
 	# Par defaut, la legende est de 14 cm de largeur
-	#legend-width 14 cm
+	legend-width 14.5 cm
   
 	# Specification la position de la manchette : interieur
 	# occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -173,6 +177,7 @@ endlayout
 layout my_layout-coupe
   
   	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_JBCHa
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr

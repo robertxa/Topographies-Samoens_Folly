@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -2678 3637 140.0
+##XTHERION## xth_me_area_adjust -131.0 -2238.0 3606.0 140.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} Scan-Carnet/2018-09-CH17-dessinGaeJR.ppm 0 {}
 
@@ -147,29 +147,27 @@ line wall
   smooth off
 endline
 
-line u:rope
+line rope
   2067.0 -1545.0
   2085.0 -1533.0
 endline
 
-line u:rope
+line rope
   1886.0 -1303.0
-  1886.0 -1303.0 1996.53 -1367.24 2039.0 -1346.0
-  2041.0 -1345.0 2019.0 -1490.0 2067.0 -1545.0
-  2070.36 -1548.85 2079.0 -1894.0 2079.0 -1894.0
-  smooth off
+  2039.0 -1346.0
+  2067.0 -1545.0
+  2079.0 -1894.0
 endline
 
 point 681.0 -953.0 altitude -align bottom
 
 point 3083.0 -2011.0 altitude -align bottom-right
 
-line u:rope
+line rope
   2567.0 -1636.0
-  2567.0 -1636.0 2619.0 -1698.0 2641.0 -1673.0
-  2641.66 -1672.25 2671.0 -1757.0 2688.0 -1707.0
-  2689.61 -1702.27 2678.0 -1912.0 2678.0 -1912.0
-  smooth off
+  2641.0 -1673.0
+  2688.0 -1707.0
+  2687.0 -1914.0
 endline
 
 line wall -close on -outline in

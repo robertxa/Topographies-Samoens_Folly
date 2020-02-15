@@ -12,7 +12,8 @@ layout Entrances_coords_JBCHa
 # This layout is called by the layout Coords_Header below
 
 	code tex-map
-		\def\thlocationJBCHa{CH3    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+		\def\thjunk{ }
+		\def\thlocationJBCHa{CH3    --  Lat. : 46.1060333 N ; Long. : 6.807133 E ; Alt. : 2246 m}
 	endcode 
 	
 endlayout
@@ -36,8 +37,11 @@ layout Coords_Header_JBCHa
 		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
 		
 		\ECoordinates={
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
+			\fi
 			\edef\tmp{\thlocationJBCHa} \ifx\tmp\empty \else
-				{\size[\thsizem] \ss\thlocationJBCHa\vss}	% The first one should be without hskip
+				{\size[\thsizem]\hskip2cm \ss\thlocationJBCHa\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode
