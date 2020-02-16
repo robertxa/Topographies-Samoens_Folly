@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 320.25 275.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 320.25 282.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {59.4618 1 1.0} {101.3474 LP2b} LP2-map.xvi 0 {}
 
@@ -24,9 +24,9 @@ point 90.0 125.5 label -text "-27 m"
 
 point 122.75 75.25 label -text "glacier"
 
-point 33.25 90.5 label -text "<bf>LP2b" -scale xl
+point 22.0 89.25 label -text "<bf>LP2b" -scale xl
 
-point 94.5 146.5 label -text "<bf>LP2a" -scale xl
+point 87.75 152.75 label -text "<bf>LP2a" -scale xl
 
 point 99.5 133.5 entrance -orientation 155.5
 
@@ -175,7 +175,7 @@ line wall
   smooth off
 endline
 
-point 60.25 94.0 altitude -align bottom
+point 60.25 94.0 altitude -align bottom-right
 
 line wall
   55.0 107.0
@@ -364,12 +364,12 @@ line contour
   smooth off
 endline
 
-line contour
-  108.75 132.5
-  108.75 132.5 113.0 134.25 115.25 132.5
+line wall -reverse on -outline none -subtype ice
+  109.75 132.5
+  109.75 132.5 113.0 134.25 115.25 132.5
   117.5 130.75 120.25 127.75 120.5 125.25
   120.75 122.75 122.5 120.0 120.0 119.75
-  117.5 119.5 112.5 121.5 112.5 121.5
+  117.5 119.5 114.5 119.75 114.5 119.75
   smooth off
 endline
 

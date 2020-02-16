@@ -17,6 +17,9 @@ source data-th2/CP28.th2
 # Add maps definitions
 source CP28a-maps.th
 
+# Add entrances coordinates
+input legendes/entrances_coordinates.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -34,6 +37,7 @@ endlayout
   
 layout my_layout
  	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPCPi
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
@@ -160,6 +164,7 @@ endlayout
 
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPCPi
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
@@ -175,7 +180,7 @@ layout my_layout-coupe
 	doc-author "Xavier Robert"
 	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	transparency on
-	opacity 90
+	opacity 75
 	statistics topo-length off
 	statistics explo-length off
 	statistics copyright all

@@ -250,9 +250,10 @@ survey LP9-CP39 -title "LP9" -entrance "LP9" -entrance "CP39" # MEttre les coord
    50 301    7.160000       249.0000      -41.00000       1.000000       1.000000       2.000000       0.000000    
    301 302    2.280000       283.0000      -28.00000      0.3000000      0.3000000      0.2000000      0.2000000    
    302 303    10.30000       205.0000       0.000000      0.3000000      0.3000000      0.4000000      0.4000000    
- endcenterline
+endcenterline
+
   
- centerline
+centerline
  # CP39 de l'entrée à la salle du Ouf
  cs lat-long
  fix CP39     46.115193   6.798445       2166.000
@@ -355,9 +356,10 @@ survey LP9-CP39 -title "LP9" -entrance "LP9" -entrance "CP39" # MEttre les coord
    1.78 1.81 36236.0 36657.0    225.0000      -14.00000      0.3000000      0.3000000       2.000000       1.000000    
    1.81 1.82 36657.0 37379.0    266.0000      -68.00000       1.000000       1.500000       5.000000       1.500000    
    1.82 1.83 37379.0 37762.0    147.0000       10.00000       1.000000       1.000000       5.000000       1.500000    
- endcenterline
+endcenterline
+
   
- centerline
+centerline
    date 2006.07.09
  #  declination 0.4000  grad
   team "Bernard Lips"

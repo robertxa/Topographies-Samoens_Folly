@@ -4,18 +4,19 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-layout Entrances_coords_CPLP
+layout Entrances_coords_CPLPc
 
 	code tex-map
-		\def\thlocationCPLPa{LP9a    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
-		\def\thlocationCPLPb{CP39 --  Lat. : 46.102383 N ; Long. : 6.780567 E ; Alt. : 1843 m}
+		\def\thjunk{ }
+		\def\thlocationCPLPca{LP9a    --  Lat. : 46.11545 N ; Long. : 6.802333 E ; Alt. : 2308 m}
+		\def\thlocationCPLPcb{CP39 --  Lat. : 46.115193 N ; Long. : 6.798445 E ; Alt. : 2166 m}
 	endcode 
 	
 endlayout
 
-layout Coords_Header_CPLP
+layout Coords_Header_CPLPc
 	
-	copy Entrances_coords_CPLP
+	copy Entrances_coords_CPLPc
 	
 	code tex-map
 		\def\nostring{}
@@ -27,11 +28,14 @@ layout Coords_Header_CPLP
 		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
 		
 		\ECoordinates={
-			\edef\tmp{\thlocationCPLPa} \ifx\tmp\empty \else
-				{\size[\thsizem] \ss\thlocationCPLPa\vss}
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationCPLPb} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationCPLPb\vss}
+			\edef\tmp{\thlocationCPLPca} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPLPca\vss}
+			\fi
+			\edef\tmp{\thlocationCPLPcb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPLPcb\vss}
 			\fi
 		}
 	endcode

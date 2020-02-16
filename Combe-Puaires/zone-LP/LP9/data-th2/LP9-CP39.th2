@@ -11,11 +11,12 @@ point 380.0 224.25 narrow-end -orientation 155.6
 
 point 245.75 160.75 narrow-end -orientation 338.7
 
-point 169.5 234.0 label -text "<bf>CP39" -scale xl
+point 179.75 259.25 label -text "<bf>CP39" -scale xl
 
 line wall -subtype invisible
   175.75 212.25
   175.75 212.25 166.5 206.75 165.75 204.5
+  smooth off
 endline
 
 point 165.75 204.5 altitude -align left
@@ -1173,7 +1174,12 @@ point 1082.75 213.0 air-draught -orientation 34.3 -subtype summer
 
 point 1118.0 254.75 label -text "<center>les puits<br> d'Éra"
 
-point 1097.25 211.5 altitude
+line arrow
+  1097.25 211.5
+  1097.25 211.5 1075.75 203.75 1069.0 207.5
+endline
+
+point 1097.25 211.5 altitude -align right
 
 point 1076.5 285.75 height -value [+10 m]
 
@@ -1344,13 +1350,18 @@ point 1372.75 267.0 height -value [-18 m]
 
 point 1366.0 275.5 label -text "R4"
 
-point 1325.0 286.25 altitude
+line arrow
+  1325.0 286.25
+  1355.0 285.75
+endline
+
+point 1325.0 286.25 altitude -align left
 
 point 1344.5 297.5 air-draught -orientation 282.9 -subtype winter
 
 point 1343.75 292.25 air-draught -orientation 106.2 -subtype summer
 
-point 1324.25 275.25 label -text "<bf>LP9" -scale xl
+point 1336.25 258.75 label -text "<bf>LP9" -scale xl
 
 point 1346.5 279.0 entrance -orientation 61.9
 
@@ -2549,7 +2560,7 @@ endscrap
 
 
 
-scrap CP39-6 -projection plan -author 2009 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/3.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap CP39-6 -projection plan -author 2009 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 871.183 205.391 station -name 3.20@LP9-CP39
 

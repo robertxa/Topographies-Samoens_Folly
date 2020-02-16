@@ -26,6 +26,7 @@ endline
 line border
   203.0 96.0
   203.0 96.0 217.0 97.5 220.0 98.5
+  smooth off
 endline
 
 point 297.5 108.75 breakdown-choke
@@ -38,11 +39,11 @@ point 15.5 80.5 label -text "<bf>CP15" -scale xl
 
 point 25.0 58.0 entrance -orientation 102.3
 
-line u:rope -clip off
+line rope -clip off
   43.5 58.0
-  43.5 58.0 38.25 51.0 35.75 55.25
-  35.29 56.03 29.75 18.25 29.75 18.25
-  smooth off
+  35.75 55.25
+  31.75 37.5
+  29.75 18.25
 endline
 
 line wall -subtype invisible

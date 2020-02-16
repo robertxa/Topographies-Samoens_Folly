@@ -7,19 +7,17 @@ encoding  utf-8
 
 scrap CP32-SC1 -projection extended -author 1999 "Renaud Locatelli" -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-285.483 -88.63 639.8087 -88.63 0.0 0.0 23.502409179999997 0.0 m]
 
-line u:rope
+line rope
   312.0 421.5
-  312.0 421.5 320.25 417.75 320.25 420.5
-  320.25 423.25 329.25 401.0 330.25 406.5
-  330.29 406.75 330.5 394.25 330.5 394.25
-  smooth off
+  320.25 420.5
+  330.25 406.5
+  330.5 394.25
 endline
 
-line u:rope
+line rope
   254.0 402.25
-  254.0 402.25 246.25 396.5 246.25 399.5
-  246.25 399.75 247.0 376.75 247.0 376.75
-  smooth off
+  246.25 399.5
+  247.0 376.75
 endline
 
 point 137.5 379.25 air-draught -orientation 266.6 -subtype summer
@@ -438,19 +436,17 @@ point -78.5 96.75 dig
 
 point -81.75 125.5 narrow-end
 
-line u:rope
+line rope
   -56.75 157.25
-  -56.75 157.25 -64.5 151.0 -64.5 155.0
-  -64.5 155.35 -64.0 113.5 -64.0 113.5
-  smooth off
+  -64.5 155.0
+  -64.0 113.5
 endline
 
-line u:rope
+line rope
   -2.75 214.0
-  -2.75 214.0 -14.0 206.75 -14.75 211.25
-  -14.83 211.74 -20.75 173.0 -25.5 185.25
-  -25.7 185.77 -26.0 162.0 -26.0 162.0
-  smooth off
+  -14.75 211.25
+  -25.5 185.25
+  -26.0 162.0
 endline
 
 point 192.75 304.75 narrow-end
@@ -477,11 +473,10 @@ point 148.0 344.25 label -text "etr."
 
 point 177.0 355.75 label -text "etr."
 
-line u:rope
+line rope
   166.25 334.5
-  166.25 334.5 159.5 327.25 159.5 330.25
-  159.5 333.25 159.75 303.0 159.75 303.0
-  smooth off
+  159.5 330.25
+  159.75 303.0
 endline
 
 line wall -subtype presumed
@@ -523,6 +518,7 @@ line wall
   146.75 295.5 151.0 290.25 154.75 290.5
   158.5 290.75 161.5 291.25 162.5 292.25
   163.5 293.25 161.75 295.25 163.75 296.0
+  smooth off
 endline
 
 line wall
@@ -681,7 +677,7 @@ line wall
   smooth off
 endline
 
-line u:rope
+line rope
   330.5 394.25
   330.75 381.0
 endline

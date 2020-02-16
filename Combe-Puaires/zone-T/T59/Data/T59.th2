@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -4811 3440 139.5
+##XTHERION## xth_me_area_adjust -129.5 -4811 3440 139.0
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} T59.png 0 {}
 
@@ -37,7 +37,7 @@ point 445.5 -744.5 narrow-end -orientation 271.2
 
 point 356.5 -779.0 air-draught -orientation 273.4 -subtype summer -scale s
 
-point 442.0 -806.5 continuation
+point 394.0 -698.5 continuation
 
 point 656.5 -740.5 label -text "etr."
 
@@ -61,6 +61,7 @@ line pit
   789.75 -950.75
   789.75 -950.75 795.25 -941.0 795.25 -938.5
   795.25 -936.0 795.25 -933.5 799.0 -933.0
+  smooth off
 endline
 
 line rock-border -close on
@@ -165,6 +166,7 @@ line pit
   740.0 -936.5 749.5 -938.0 755.0 -938.0
   760.5 -938.0 764.5 -938.5 768.0 -935.0
   771.5 -931.5 775.0 -931.0 779.5 -929.5
+  smooth off
 endline
 
 line pit
@@ -251,6 +253,10 @@ line wall
   818.5 -779.0 825.0 -774.0 825.0 -774.0
   smooth off
 endline
+
+point 449.0 -781.0 altitude -align bottom-left
+
+point 837.0 -1084.5 altitude -align bottom-right
 
 line wall
   718.0 -952.0

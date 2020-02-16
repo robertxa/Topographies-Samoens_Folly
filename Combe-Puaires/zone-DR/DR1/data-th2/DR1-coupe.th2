@@ -17,7 +17,9 @@ point 943.0 195.25 altitude -align bottom
 
 point 950.0 197.0 narrow-end
 
-point 516.75 74.0 narrow-end
+point 596.5 255.0 altitude -align right
+
+point 509.5 75.75 narrow-end
 
 point 525.75 72.5 altitude -align bottom-left
 
@@ -35,6 +37,7 @@ line wall
   541.75 82.5 539.75 79.75 537.5 79.75
   535.25 79.75 529.75 83.5 528.5 81.75
   527.25 80.0 526.5 77.25 524.25 77.25
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -48,11 +51,10 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-line u:rope
+line rope
   558.75 90.75
-  558.75 90.75 551.5 85.5 551.5 88.75
-  551.5 88.75 551.0 78.75 551.0 78.75
-  smooth off
+  551.5 88.75
+  551.0 78.75
 endline
 
 point 540.25 262.0 label -text "<bf>DR1" -scale xl
@@ -87,12 +89,11 @@ line border
   smooth off
 endline
 
-line u:rope
+line rope
   661.5 154.25
-  661.5 154.25 653.0 142.0 646.25 143.0
-  645.47 143.12 633.5 133.75 630.75 139.75
-  630.37 140.57 625.75 107.5 625.75 107.5
-  smooth off
+  646.25 143.0
+  630.75 139.75
+  625.75 107.5
 endline
 
 point 645.5 110.75 height -value [-10 m]
@@ -147,6 +148,7 @@ line wall -subtype invisible
   601.0 279.75
   601.0 279.75 595.25 282.75 591.25 282.5
   587.25 282.25 583.75 281.25 582.5 279.25
+  smooth off
 endline
 
 line wall

@@ -12,7 +12,8 @@ layout Entrances_coords_Ermoy
 # This layout is called by the layout Coords_Header below
 
 	code tex-map
-		\def\thlocationErm{Ermoy    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+		\def\thjunk{ }
+		\def\thlocationErm{Ermoy    --  Lat. : 46.109832 N ; Long. : 6.75231 E ; Alt. : 860 m}
 	endcode 
 	
 endlayout
@@ -36,8 +37,11 @@ layout Coords_Header_Ermoy
 		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
 		
 		\ECoordinates={
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
+			\fi
 			\edef\tmp{\thlocationErm} \ifx\tmp\empty \else
-				{\size[\thsizem] \ss\thlocationErm\vss}	% The first one should be without hskip
+				{\size[\thsizem]\hskip2cm \ss\thlocationErm\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

@@ -11,6 +11,9 @@ source data-th2/LP3.th2
 # Add maps definitions
 source LP3-maps.th
 
+# Add entrances coordinates
+input legendes/entrances_coordinates.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -22,6 +25,7 @@ endlayout
   
 layout my_layout
  	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPLPb
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
@@ -29,7 +33,7 @@ layout my_layout
 	doc-title "LP3"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 750
+	base-scale 1 500
 	scale 1 500
 	scale-bar 50 m
 	#rotate 2.25
@@ -69,12 +73,13 @@ endlayout
 
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPLPb
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
 	
 	doc-title "LP3 coupe"
-	base-scale 1 750
+	base-scale 1 500
 	scale-bar 50 m
 	scale 1 500
 	#origin 12 22 0 m
@@ -84,7 +89,7 @@ layout my_layout-coupe
 	doc-author "Xavier Robert"
 	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	transparency on
-	opacity 90
+	opacity 75
 	statistics topo-length off
 	statistics explo-length off
 	statistics copyright all

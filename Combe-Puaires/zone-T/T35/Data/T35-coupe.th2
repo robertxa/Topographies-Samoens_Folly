@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 482.3309 364.2206
+##XTHERION## xth_me_area_adjust -128.75 -172.5 557.5 370.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.36800000000002 1 1.0} {204.728 T35} T35-coupe.xvi 0 {}
 
@@ -71,6 +71,7 @@ line wall -subtype presumed
   271.25 184.25 265.5 181.75 264.25 184.5
   263.0 187.25 257.25 193.0 257.0 189.75
   256.75 186.5 255.0 179.75 254.0 178.0
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -132,36 +133,36 @@ point 240.25 208.25 continuation -attr Code E -text "Puits remontant"
 
 point 297.25 189.75 continuation -attr Code E -text "Puits remontant"
 
-line u:rope
+line rope
   249.25 154.25
-  249.25 154.25 238.25 141.0 236.75 148.75
-  236.51 150.0 234.75 131.0 230.5 136.5
-  229.52 137.77 232.75 111.75 227.75 124.5
+  236.75 148.75
+  232.25 136.25
+  231.75 123.5
 endline
 
-line u:rope
+line rope
   208.75 122.75
-  208.75 122.75 225.4 114.41 227.75 124.5
+  220.25 125.0
+  231.75 123.5
 endline
 
-line u:rope
+line rope
   143.5 129.5
-  143.5 129.5 148.75 121.5 150.5 124.75
-  150.67 125.06 154.0 114.25 159.25 118.5
+  150.5 124.75
+  151.25 118.25
+  157.25 118.0
 endline
 
-line u:rope
+line rope
   132.0 156.25
-  132.0 156.25 134.21 147.49 135.728 151.618
-  136.03 152.43 136.0 133.25 136.0 133.25
-  smooth off
+  135.728 151.618
+  136.0 133.25
 endline
 
-line u:rope
+line rope
   111.5 186.5
-  111.5 186.5 116.25 175.0 119.75 178.5
-  120.15 178.9 118.75 160.25 118.75 160.25
-  smooth off
+  119.75 178.5
+  119.75 160.75
 endline
 
 point 119.75 142.0 height -value [-4 m]
@@ -227,6 +228,8 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
+point 334.0 53.5 altitude -align top-right
+
 line wall
   256.25 137.25
   256.25 137.25 254.75 146.25 255.75 146.25
@@ -247,6 +250,7 @@ line wall
   321.0 59.0 323.0 49.75 326.5 49.75
   330.0 49.75 330.5 49.75 331.5 45.75
   332.5 41.75 333.0 40.0 335.0 36.5
+  smooth off
 endline
 
 line wall
@@ -277,6 +281,7 @@ line wall -subtype presumed
   218.5 62.75 228.0 62.25 228.0 67.25
   228.0 72.25 232.0 86.0 228.5 86.0
   225.0 86.0 215.75 90.25 218.25 91.0
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -295,11 +300,13 @@ line wall
   204.75 116.75 210.0 119.75 210.0 116.5
   210.0 113.25 209.5 94.5 210.25 92.25
   211.0 90.0 213.25 92.5 213.25 90.0
+  smooth off
 endline
 
 line wall -subtype ice
   144.25 95.5
   144.25 95.5 149.75 93.0 151.0 94.75
+  smooth off
 endline
 
 line wall
@@ -313,31 +320,37 @@ endline
 line wall -subtype ice
   133.0 132.75
   133.0 132.75 136.5 130.75 138.0 129.5
+  smooth off
 endline
 
 line wall
   132.5 151.25
   132.5 151.25 132.25 134.75 133.0 132.75
+  smooth off
 endline
 
 line wall -subtype debris
   127.25 155.0
   127.25 155.0 132.25 152.75 132.5 151.25
+  smooth off
 endline
 
 line wall -subtype ice
   112.75 158.5
   112.75 158.5 124.5 157.25 127.25 155.0
+  smooth off
 endline
 
 line wall
   112.5 175.25
   112.5 175.25 110.0 159.0 112.75 158.5
+  smooth off
 endline
 
 line wall -subtype ice
   95.5 193.5
   95.5 193.5 107.75 180.75 112.5 175.25
+  smooth off
 endline
 
 line wall -subtype debris

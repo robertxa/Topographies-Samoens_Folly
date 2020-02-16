@@ -13,6 +13,9 @@ source data-th2/L11-coupe.th2
 # Add maps definitions
 source L11-maps.th
 
+# Add entrances coordinates
+input legendes/entrances_coordinates.th
+
 # Add config file
 input ../../../config.thc 
   
@@ -24,6 +27,7 @@ endlayout
   
 layout my_layout
  	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPLa
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
@@ -72,6 +76,7 @@ endlayout
 
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPLa
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr

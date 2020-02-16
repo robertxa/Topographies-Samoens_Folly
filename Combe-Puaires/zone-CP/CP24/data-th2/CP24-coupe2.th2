@@ -7,15 +7,22 @@ encoding  utf-8
 
 scrap CP24-c2018_1 -projection extended -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
 
-line u:rope -clip off
+point 134.75 214.75 snow
+
+point 132.75 207.5 snow
+
+point 130.0 215.25 snow
+
+point 135.75 222.25 snow
+
+line rope
   151.0 288.75
-  151.0 288.75 155.75 281.5 158.0 286.0
-  158.22 286.45 162.25 278.0 154.75 276.25
-  154.21 276.12 154.25 243.75 147.0 252.0
-  146.54 252.53 144.5 244.25 136.5 247.5
-  135.81 247.78 105.75 221.75 97.75 232.75
-  97.16 233.56 97.75 201.5 97.75 201.5
-  smooth off
+  158.0 286.0
+  154.75 276.25
+  147.0 252.0
+  136.5 247.5
+  97.75 232.75
+  97.75 201.5
 endline
 
 point 156.75 222.5 height -value [-7 m]

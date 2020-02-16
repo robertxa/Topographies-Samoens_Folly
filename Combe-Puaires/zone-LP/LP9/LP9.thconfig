@@ -27,7 +27,7 @@ endlayout
   
 layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_CPLP	# Pour rajouter les coordonnées des entrées
+	copy Coords_Header_CPLPc	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy headerl  
 	copy langue-fr
@@ -37,7 +37,7 @@ layout my_layout
 	cs UTM32
 	base-scale 1 1000
 	scale 1 1000
-	scale-bar 100 m
+	scale-bar 200 m
 	#rotate 2.25
 	#origin 12 22 0 m
 	#origin-label 100 K
@@ -50,7 +50,7 @@ layout my_layout
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 21 cm
+	legend-width 26 cm
 	map-header 0 -10 nw
 	map-header-bg off
 	layers on
@@ -74,14 +74,14 @@ layout my_layout
 	endcode  
 
 	# Rajout des logos du club
-	#map-image 73 35	nw	../../../vulcain.jpg
-	#map-image 80 40	nw	../../../vulcain2.jpg
+	map-image 00 90	nw	../../../Logos/vulcainpar2.jpg
+	map-image 70 95	nw	../../../Logos/vulcain2par2.jpg
 	  
 endlayout
   
 layout my_layout-coupe  
   	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_CPLP	# Pour rajouter les coordonnées des entrées
+	copy Coords_Header_CPLPc	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
@@ -202,8 +202,8 @@ layout my_layout-coupe
 	endcode  
 
 	# Rajout des logos du club
-	#map-image 73 35	nw	../../../vulcain.jpg
-	#map-image 80 40	nw	../../../vulcain2.jpg  
+	map-image 25 30	nw	../../../Logos/vulcainpar2.jpg
+	map-image 45 30	nw	../../../Logos/vulcain2par2.jpg  
 	
 endlayout 
   
@@ -219,7 +219,7 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP9-CP39-
 	select LP9-coupe-tot	# Toute la coupe du LP9
   
 export map -o Outputs/LP9-CP39-plan.pdf -layout my_layout
-export map -projection extended -layout Outputs/my_layout-coupe -o LP9-CP39-coupe.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/LP9-CP39-coupe.pdf
  
 # Export du fichier 3d pour Loch
 export model -o Outputs/LP9-2016.lox

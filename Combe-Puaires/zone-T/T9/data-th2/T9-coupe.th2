@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 285.48040000000003 324.8505
+##XTHERION## xth_me_area_adjust -128.75 -146.0 306.0 350.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {165.435 1 1.0} {37.8 0} T9-coupe.xvi 0 {}
 
@@ -10,6 +10,7 @@ scrap T9-c1 -projection extended -author 1976 "Bernard Lips" -author 2011 "Xavie
 line wall -subtype invisible
   44.0 215.0
   44.0 215.0 28.0 195.5 28.0 187.0
+  smooth off
 endline
 
 line wall
@@ -67,22 +68,32 @@ line wall
   smooth off
 endline
 
-line u:rope
+line rope
   97.25 28.25
-  97.25 28.25 105.5 22.5 111.5 29.0
-  116.93 34.88 142.25 70.5 141.75 83.5
-  smooth off
-  141.75 82.75 149.0 78.75 151.0 83.75
-  151.28 84.45 163.0 40.75 163.0 40.75
-  smooth off
+  111.5 29.0
+  141.75 83.5
 endline
 
-line u:rope
+line rope
+  141.75 83.5
+  151.0 83.75
+  158.75 63.75
+  163.0 40.75
+endline
+
+line rope
+  151.0 83.75
+  141.75 83.5
+  127.0 60.25
+  118.0 43.5
+  111.5 29.0
+endline
+
+line rope
   63.75 187.25
-  63.75 187.25 69.25 179.5 69.5 184.75
-  69.52 185.1 67.0 106.5 76.25 113.0
-  77.35 113.77 77.25 48.5 77.25 48.5
-  smooth off
+  69.5 184.75
+  74.5 113.75
+  74.0 48.75
 endline
 
 point 170.0 64.75 height -value [-12 m]
@@ -156,6 +167,7 @@ line wall -subtype ice
   39.75 188.0
   39.75 188.0 45.25 187.5 48.0 186.25
   50.75 185.0 53.83 183.24 55.5 183.75
+  smooth off
 endline
 
 line wall

@@ -18,7 +18,7 @@ source Data/ermoy.th
 #source Ermoy.th2
 
 # Add maps definitions
-source Ermoy-maps.th
+#source Ermoy-maps.th
 
 # Add config file
 input ../../config.thc 
@@ -187,13 +187,15 @@ layout my_layout-coupe
 	doc-author "Xavier Robert"
 	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	transparency on
-	opacity 90
+	opacity 75
 	statistics topo-length off
 	statistics explo-length off
 	statistics copyright all
 	legend on
-	#map-header 5 50 e
-	map-header 0 0 n
+	legend-width 31 cm
+	legend-columns 3
+	map-header 30 50 sw
+	#map-header 0 0 n
 	symbol-hide line survey
 	map-header-bg off
 	layers on
@@ -230,7 +232,7 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/data-th2/Ermo
 	select Ermoy-coupe-tot
   
 export map -o Outputs/Ermoy-MARS-2014-plan.pdf -layout my_layout
-#export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-MARS-2009-coupe.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-MARS-2009-coupe.pdf
 export model -o Outputs/Ermoy-MARS-2009.lox
   
 # Export des fichiers ESRI

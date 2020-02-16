@@ -85,6 +85,23 @@ point 64.0 15.0 label -text "<bf>BA4" -scale xl
 
 point 62.75 64.0 altitude -align bottom
 
+line rope
+  223.25 205.25
+  223.25 156.0
+endline
+
+line rope
+  29.25 84.5
+  45.25 80.75
+  45.25 61.75
+endline
+
+line rope
+  82.75 82.75
+  63.0 78.25
+  62.75 64.0
+endline
+
 line wall -id l12-235-150
   79.5 62.75
   79.5 62.75 77.5 75.5 79.5 76.5
@@ -146,7 +163,11 @@ point 121.10600000000002 107.485 station -name 13@BA4
 
 point 181.01600000000002 140.705 station -name 3@BA4
 
-line wall -close on -outline in
+area u:galerie
+  l42-232-202
+endarea
+
+line border -id l42-232-202 -close on -reverse on
   219.5 206.25
   219.5 206.25 222.0 208.0 224.5 207.5
   227.0 207.0 228.25 207.75 229.25 206.0
@@ -191,6 +212,8 @@ line wall -close on -outline in
   505.5 288.0 506.75 291.0 506.75 291.0
   smooth off
 endline
+
+point 246.0 230.25 narrow-end
 
 line wall
   242.5 220.75
@@ -352,6 +375,18 @@ line wall
   530.75 296.25 528.5 298.25 530.75 298.25
   533.0 298.25 539.0 299.5 539.0 299.5
   smooth off
+endline
+
+line rope
+  505.5 322.25
+  520.25 322.5
+  520.5 300.0
+endline
+
+line rope
+  528.25 298.25
+  518.0 298.5
+  518.25 277.5
 endline
 
 line wall
