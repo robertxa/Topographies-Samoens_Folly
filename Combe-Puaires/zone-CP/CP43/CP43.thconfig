@@ -14,6 +14,7 @@ encoding  utf-8
 # "nomcavite.th2")
 source data-th/CP43.th
 source data-th2/CP43.th2
+source data-th2/CP43-coupe.th2
 
 # Add maps definitions
 source CP43-maps.th
@@ -188,7 +189,7 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 30 93 ne
+	map-header 17 97 ne
 	symbol-hide line survey
 	#debug station-names
 	map-header-bg off

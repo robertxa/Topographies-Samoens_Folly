@@ -7,6 +7,7 @@ encoding  utf-8
     
 source data-th/LP3.th
 source data-th2/LP3.th2
+source data-th2/LP3-coupe.th2
 
 # Add maps definitions
 source LP3-maps.th
@@ -95,7 +96,7 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 30 93 ne
+	map-header 20 93 ne
 	symbol-hide line survey
 	#debug station-names
 	map-header-bg off
