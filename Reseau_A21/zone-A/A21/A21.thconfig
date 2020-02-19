@@ -190,13 +190,16 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend off
-	legend-width 18 cm
+	legend-width 26 cm
 	#map-header 5 50 e
-	map-header 0 0 n
-	symbol-hide line survey
+	map-header 55 10 n
 	map-header-bg off
 	layers off
+	
+	symbol-hide line survey
 	#debug station-names
+	#base-scale 1 250
+	
 	#grid bottom
 	#grid-size 100 100 100 m
  
@@ -222,7 +225,7 @@ endlayout
   
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o Data/A21-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/A21-coupe.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/A21-coupe.xvi
 
 # Select maps
 	#select A21-plan
@@ -230,7 +233,7 @@ export map -fmt xvi -layout xviexport -o Data/A21-map.xvi
 	#select A24-plan
 	#select A24-coupe
 	select A21-plan-tot
-	#select A21-coupe-tot
+	select A21-coupe-tot
 	  
 export map -o Outputs/A21-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/A21-coupe.pdf

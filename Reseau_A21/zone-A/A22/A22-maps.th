@@ -17,6 +17,11 @@ map A22-plan-tot
 	V22-2
 endmap
 
-#map A22-coupe-tot
-#endmap
+map A22-coupe-tot
+	A22-SC1
+	break
+	A22-SC2
+	break
+	A22-SC3
+endmap
    

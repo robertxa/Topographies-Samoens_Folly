@@ -19,7 +19,7 @@ point 97.5 337.25 label -text "P5"
 
 point 106.75 287.0 label -text "<bf>LP23" -scale xl
 
-line contour -close on
+line wall -close on -outline none -subtype ice
   211.5 287.25
   211.5 287.25 223.5 285.5 225.75 282.75
   228.0 280.0 226.25 269.25 223.75 265.5

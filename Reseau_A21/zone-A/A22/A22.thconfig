@@ -15,6 +15,7 @@ encoding  utf-8
 # "nomcavite.th2")
 source Data/A22.th
 source Data/A22.th2
+source Data/V22-coupe.th2
 
 # Add maps definitions
 source A22-maps.th
@@ -193,10 +194,10 @@ layout my_layout-coupe
 	legend off
 	legend-width 18 cm
 	#map-header 5 50 e
-	map-header 0 0 n
-	symbol-hide line survey
+	map-header 0 100 nw
 	map-header-bg off
 	layers on
+	symbol-hide line survey
 	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
@@ -224,14 +225,14 @@ endlayout
 
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o Data/V22-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/V22-coupe.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/V22-coupe.xvi
 
 # Select maps
 	select A22-plan-tot
-	#select A22-coupe-tot
+	select A22-coupe-tot
 	  
 export map -o Outputs/V22-plan.pdf -layout my_layout
-#export map -projection extended -layout my_layout-coupe -o Outputs/V22-coupe.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/V22-coupe.pdf
 export model -o Outputs/V22.lox
   
 # Export des fichiers ESRI

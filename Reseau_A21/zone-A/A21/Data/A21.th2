@@ -1011,6 +1011,10 @@ point 490.5 388.25 label -orientation 267.6 -text "Le Méandre Tant Redouté"
 
 point 584.25 460.75 label -text "<center> Le Grand <br> Méandre<center>"
 
+point 640.0 457.5 ex-voto
+
+point 604.75 424.0 ex-voto
+
 point 619.0 398.75 label -text "<center>Marquage <br> 74<center>"
 
 point 640.0 477.25 label -text "<center> Marquage <br> 96<center>"
@@ -1616,6 +1620,8 @@ point 314.75 228.0 dig
 point 308.5 239.0 continuation -attr Code D -text "Trémie avec du courant d'air ; ATTENTION, dangeureux"
 
 point 296.5 240.5 air-draught -orientation 338.1 -subtype summer
+
+point 320.75 248.5 danger
 
 point 299.5 264.75 label -text "<center>trémie<br> des Frayeurs"
 

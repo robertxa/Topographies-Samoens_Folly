@@ -7,6 +7,7 @@ encoding  utf-8
     
 source data-th/LP23.th
 source data-th2/LP23.th2
+source data-th2/LP23-coupe.th2
 
 # Add entrances coordinates
 source LP23-maps.th
@@ -65,7 +66,7 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={LP23} 		
+			\cavename={LP23 - gouffre du Tomahawk} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -96,8 +97,8 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend off
-	legend-width 15.5 cm
-	map-header 30 93 ne
+	legend-width 18.5 cm
+	map-header 0 33 nw
 	symbol-hide line survey
 	#debug station-names
 	map-header-bg off
@@ -118,7 +119,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={LP23} 		
+			\cavename={LP23 - gouffre du Tomahawk} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
