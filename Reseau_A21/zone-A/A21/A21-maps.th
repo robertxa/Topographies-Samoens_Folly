@@ -39,6 +39,21 @@ map A21-plan-tot
 	A24-plan
 endmap
 
-#map A21-coupe-tot
-#endmap
+map A21-coupe-tot
+	A24-SC1
+	break
+	A21-SC1
+	break
+	A21-SC2
+	break
+	A21-SC3
+	break
+	A21-SC4
+	#break
+	#A21-SC5
+	break
+	A21-SC6
+	break
+	A21-SC7
+endmap
    

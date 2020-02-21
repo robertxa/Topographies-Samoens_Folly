@@ -95,7 +95,7 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	doc-title "C74 coupe"
-	base-scale 1 1000
+	base-scale 1 500
 	scale-bar 50 m
 	scale 1 500
 	#origin 12 22 0 m
@@ -113,10 +113,13 @@ layout my_layout-coupe
 	legend-width 14.5 cm
 	#map-header 5 50 e
 	map-header 0 0 n
-	#symbol-hide line survey
 	map-header-bg off
 	layers on
+
+	#symbol-hide line survey
 	debug station-names
+	base-scale 1 250
+
 	#grid bottom
 	#grid-size 100 100 100 m
  
