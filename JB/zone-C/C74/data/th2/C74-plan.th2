@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 812.0787 1157.9026
+##XTHERION## xth_me_area_adjust -128.75 -128.75 812.0787 1157.9026
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {472.437 1 1.0} {354.326 0} C74-plan.xvi 0 {}
 
@@ -4309,6 +4309,7 @@ point 473.397 119.876 station -name C74@C74
 endscrap
 
 
+
 scrap C74-SP14 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 561.0711 -128.0 0.0 0.0 17.50240594 0.0 m]
 
 line wall -id l350-455-350 -reverse on
@@ -4465,6 +4466,7 @@ point 498.127 328.036 station -name 2005.6@C74
 line wall
   433.0 314.5
   433.0 314.5 429.75 315.25 429.25 313.25
+  smooth off
 endline
 
 line gradient

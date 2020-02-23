@@ -5,7 +5,8 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 source data/C74.th
-source th2/C74-plan.th2
+source data/th2/C74-plan.th2
+source data/th2/C74-coupe.th2
 
 # Add maps definitions
 source C74-maps.th
@@ -84,6 +85,10 @@ layout my_layout
   \newtoks\club \club={Groupe Spéléologique Vulcain}
   endcode   
 
+	# Rajout des logos
+	map-image -50 100	ne	../../../Logos/vulcainpar2.jpg
+	map-image 0 100	ne	../../../Logos/vulcain2par2.jpg 
+
  endlayout
 
 layout my_layout-coupe
@@ -95,9 +100,9 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	doc-title "C74 coupe"
-	base-scale 1 500
-	scale-bar 50 m
-	scale 1 500
+	base-scale 1 1000
+	scale-bar 100 m
+	scale 1 1000
 	#origin 12 22 0 m
 	#origin-label 100 K
 	#color map-bg 85
@@ -110,15 +115,15 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend off
-	legend-width 14.5 cm
+	legend-width 32 cm
 	#map-header 5 50 e
-	map-header 0 0 n
+	map-header 0 00 nw
 	map-header-bg off
 	layers on
 
-	#symbol-hide line survey
-	debug station-names
-	base-scale 1 250
+	symbol-hide line survey
+	#debug station-names
+	#base-scale 1 250
 
 	#grid bottom
 	#grid-size 100 100 100 m
@@ -141,27 +146,31 @@ layout my_layout-coupe
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
 
+	# Rajout des logos
+	map-image 0 95	nw	../../../Logos/vulcainpar2.jpg
+	map-image 20 95	nw	../../../Logos/vulcain2par2.jpg 
+
 endlayout
 
   
  #export map -fmt xvi -layout xviexport -o th2/C74-plan2017.xvi
- #export map -projection extended -fmt xvi -layout xviexport -o th2/C74-coupe2017.xvi 
+ export map -projection extended -fmt xvi -layout xviexport -o th2/C74-coupe2017.xvi 
 
 # Select maps
-	select C74-entree-plan
+	#select C74-entree-plan
 	#select C74-entree-coupe
 	
-	select C74-brancheE-plan
+	#select C74-brancheE-plan
 	#select C74-brancheE-coupe
 
-	select C74-brancheW-plan
+	#select C74-brancheW-plan
 	#select C74-brancheW-coupe
 
-	#select C74-plan-tot
-	#select C74-coupe-tot
+	select C74-plan-tot
+	select C74-coupe-tot
 	 
  export map -o Outputs/2D/C74-planTH.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/2D/C74-coupeNum.pdf
+ export map -projection extended -layout my_layout-coupe -o Outputs/2D/C74-coupe.pdf
  
  export model -o Outputs/3D/C74.lox
 
