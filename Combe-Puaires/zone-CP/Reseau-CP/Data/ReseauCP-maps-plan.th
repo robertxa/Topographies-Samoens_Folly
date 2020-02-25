@@ -101,8 +101,6 @@ map MP-CP16
 	break
 	CP16-5@ReseauCP
 	break
-	CP16-6@ReseauCP
-	break
 	CP16-7@ReseauCP
 	break
 	CP16-1@ReseauCP
@@ -110,6 +108,8 @@ map MP-CP16
 	CP16-2@ReseauCP
 	break
 	CP16-3@ReseauCP
+	break
+	CP16-6@ReseauCP
 endmap
 
 map MP-CP14
@@ -125,6 +125,14 @@ map MP-CP14
 endmap
 
 map MP-Billy
+	billy2015_1@ReseauCP
+	break
+	Billy2_s1_2015@ReseauCP
+	break
+	Billy2_s2@ReseauCP
+	break
+	Billy3-s1@ReseauCP
+	break
 	Billy-1@ReseauCP
 	break
 	Billy-2@ReseauCP
@@ -138,18 +146,12 @@ map MP-Billy
 	gour-bleu@ReseauCP
 	break
 	Billy-9@ReseauCP
-	break
-	billy2015_1@ReseauCP
-	break
-	Billy2_s1_2015@ReseauCP
-	break
-	Billy2_s2@ReseauCP
-	break
-	Billy3-s1@ReseauCP
 endmap
  
 map MP-CP12
 	CP12-1@ReseauCP
+	break
+	CP12-2@ReseauCP
 	break
 	P18-1@ReseauCP
 	break
@@ -157,11 +159,9 @@ map MP-CP12
 	break
 	P18-2@ReseauCP
 	break
-	Secoues-1@ReseauCP
-	break
-	CP12-2@ReseauCP
-	break
 	CP12-3@ReseauCP
+	break
+	Secoues-1@ReseauCP
 endmap
 
 map MP-reptiles
@@ -185,6 +185,18 @@ endmap
 
 #####################################################################
 map MP-ReseauCP-total
+	MP-CP16
+	break
+	MP-CP14
+	break
+	MP-CP12
+	break
+	MP-CP19
+	break
+	MP-Billy
+	break
+	MP-reptiles
+	break
 	MP-RivAmont2019
 	break
 	MP-RivAPierrot
@@ -196,16 +208,5 @@ map MP-ReseauCP-total
 	MP-RivTeteHomme
 	break
 	MP-huit
-	break
-	MP-CP16
-	break
-	MP-CP14
-	break
-	MP-Billy
-	break
-	MP-CP12
-	break
-	MP-CP19
-	break
-	MP-reptiles
+	
 endmap
