@@ -25,8 +25,6 @@ map MP-RivAPierrot
 	break
 	palm-Sp2@ReseauCP
 	break
-	amont-dessous-Sp1@ReseauCP
-	break
 	affsteph-Sp1@ReseauCP
 	break
 	Bousiers@ReseauCP
@@ -40,6 +38,8 @@ map MP-RivAPierrot
 	Pierrot-5@ReseauCP
 	break
 	Pierrot-6@ReseauCP
+	break
+	amont-dessous-Sp1@ReseauCP
 endmap
 
 map MP-RivTeteHomme
@@ -63,10 +63,6 @@ map MP-4vents-FileIndienne
 	break
 	clown_Sp1@ReseauCP
 	break
-	homjct-Sp1@ReseauCP
-	break
-	homjct-Sp2@ReseauCP
-	break
 	4vents-4@ReseauCP
 	break
 	Massues-1@ReseauCP
@@ -77,15 +73,19 @@ map MP-4vents-FileIndienne
 endmap
 
 map MP-espoir
-	Espoir-1@ReseauCP
+	Espoir-6@ReseauCP
 	break
 	Espoir-2@ReseauCP
 	break
+	Espoir-1@ReseauCP
+	break
 	Espoir-3@ReseauCP
 	break
-	Espoir-6@ReseauCP
-	break
 	Espoir-5@ReseauCP
+	break
+	homjct-Sp1@ReseauCP
+	break
+	homjct-Sp2@ReseauCP
 endmap
 
 map MP-huit
