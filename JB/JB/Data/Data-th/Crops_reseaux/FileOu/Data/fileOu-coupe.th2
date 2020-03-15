@@ -13,25 +13,25 @@ point 114.0 128.0 label -text "<center>puits de<br>la Mèche"
 
 point 48.5 50.5 label -text "<center>Réseau<br>qui File Ou"
 
-line u:rope
+line rope
   40.5 179.0
-  40.5 179.0 69.5 155.5 69.5 171.0
-  69.5 171.5 64.0 113.0 71.5 121.5
-  73.51 123.78 102.0 55.5 102.0 79.0
-  102.0 80.8 102.5 39.5 111.0 58.0
-  112.72 61.75 115.0 24.0 120.0 40.5
+  69.5 171.0
+  71.5 121.5
+  101.5 76.0
+  111.0 58.0
+  120.0 40.5
 endline
 
 #point 104.0 18.5 label -text "R3"
 
+
 point 123.0 38.5 altitude -align right
 
-line u:rope
+line rope
   29.0 206.0
-  29.0 206.0 38.5 190.5 40.0 201.0
-  41.5 211.5 37.5 165.5 40.5 179.0
-  40.81 180.38 40.5 156.5 40.5 156.5
-  smooth off
+  40.0 201.0
+  40.5 179.0
+  40.5 156.5
 endline
 
 point 135.5 63.0 height -value [-11 m]

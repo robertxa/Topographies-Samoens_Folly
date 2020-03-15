@@ -4,14 +4,14 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-input fileOu.th
+input Data/fileOu.th
 
-input fileOu.th2
-input fileOu2019.th2
+input Data/fileOu.th2
+input Data/fileOu2019.th2
 join fileou2019-SP1 fileou2
 
-input fileOu-coupe.th2   
-input fileOu-coupe2019.th2
+input Data/fileOu-coupe.th2   
+input Data/fileOu-coupe2019.th2
 join fileouc1	fileOu2019-SC1   
 
 #equate FD-2012-9@Lavoir 2017-FD-0@fileou

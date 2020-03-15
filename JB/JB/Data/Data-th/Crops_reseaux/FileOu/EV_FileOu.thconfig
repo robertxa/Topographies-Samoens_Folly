@@ -46,7 +46,7 @@ layout my_layout
 	statistics copyright all
 	legend off
 	#legend-width 18 cm
-	map-header 0 00 nw
+	map-header 0 -10 nw
 	map-header-bg off
 	layers on
 	#symbol-hide line survey
@@ -67,6 +67,9 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
+
+	#map-image 0 96 sw Outputs/EV-fileOu-2019-coupe.pdf
+	map-image 0 110 ne Outputs/EV-fileOu-2019-coupe.pdf
   
  endlayout
  
@@ -75,7 +78,7 @@ layout my_layout
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
+	#copy header_coupe 
 	copy langue-fr
   
 	doc-title "Réseau qui File Ou"
@@ -88,34 +91,33 @@ layout my_layout-coupe
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	language fr
-	map-comment "Réseau qui File Ou, coupe développée, Samoëns, 74, France"
+	#map-comment "Réseau qui File Ou, Coupe développée, Samoëns, 74, France"
+	map-comment "<it>Coupe développée<ss>"
+	
+	# Afficher les statistiques d explo par équipe/nom. C est lourd
+	# si la cavite est importante et qu il y a beaucoup d explorateurs
 	statistics explo-length off
+	# Afficher developpement et profondeur de la cavite
 	statistics topo-length off
-	statistics copyright all
+	# Afficher les statistiques d explo par équipe/nom. C est lourd
+	# si la cavite est importante et qu il y a beaucoup d explorateurs
+	statistics explo off
+	# Afficher developpement et profondeur de la cavite
+	statistics topo off
+	# Afficher un copyright
+	statistics copyright off
+	statistics carto off
+	code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
 	legend off
-	#legend-width 16 cm
-	map-header 0 0 nw
+	legend-width 10 cm
+	map-header 0 -3 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
-	#debug station-names
-	#grid bottom
-	#grid-size 100 100 100 m
 	grid off  
-  
-	# To change the Title          
-	code tex-map
-  
-		\edef\temp{\the\cavename}   % cavename from Therion
-		\edef\nostring{}            % empty string
-		\ifx\temp\nostring          % test if cavename is empty
-			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Jean-Bernard} 		
-		\else % if not empty keep the value set by therion, or assign an override cavename here
-		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain}
-	endcode  
   
  endlayout
 
@@ -124,7 +126,5 @@ layout my_layout-coupe
  #export map -fmt xvi -layout xviexport -o Data/fileOu-2019.xvi
  #export map -projection extended -fmt xvi -layout xviexport -o Data/fileOu-coupe-2019.xvi
   
- export map  -projection plan -o Outputs/fileOu-2019-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/fileOu-2019-coupe.pdf
- export model -o Outputs/fileOu-2019.lox
-#export survey-list -o Outputs/surveys2019.html
+ export map -projection extended -layout my_layout-coupe -o Outputs/EV-fileOu-2019-coupe.pdf
+ export map  -projection plan -o Outputs/EV-fileOu-2019-plan.pdf -layout my_layout

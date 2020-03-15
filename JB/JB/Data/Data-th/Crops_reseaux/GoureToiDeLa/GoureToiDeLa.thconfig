@@ -12,7 +12,7 @@ source GoureToiDeLa-tot.th
 #source GoureToiDeLa2015coupe.th2
 
 # Add config file
-input ../../../../../config.thc 
+input ../../../../../../config.thc 
 
 layout xviexport
 	scale 1 1000
@@ -40,7 +40,7 @@ layout my_layout
 	statistics copyright all
 	legend off
 	#legend-width 14 cm
-	map-header 32 30 nw
+	map-header 32 39 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
