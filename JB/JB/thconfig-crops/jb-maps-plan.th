@@ -423,17 +423,23 @@ endmap
 map M-puitsAlain -title "Puits Alain"     
 	pAlain
 	break
-	cascatelles   
-endmap
-
-map M-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
-# Regarder si on peut sortir les plafonds
+	cascatelles  
+	break
 	riv-1
 	break
 	riv-2b
 	break
-	riv-2
-	break
+	riv-2 
+endmap
+
+map M-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
+# Regarder si on peut sortir les plafonds
+	#riv-1
+	#break
+	#riv-2b
+	#break
+	#riv-2
+	#break
 	riv-3
 	break
 	riv-4
@@ -688,7 +694,11 @@ map M-Jean-Dupond
 	M-solitaire
 	break
 	M-puitsAlain
-	break
+	#break
+	
+endmap
+
+map M-Riviere-debut
 	M-rivieredebut
 endmap
 
@@ -730,6 +740,8 @@ map JB-plan-tot
 	M-V4-V6-Mais
 	break
 	M-Jean-Dupond
+	break
+	M-Riviere-debut
 	break
 	M-Bivouac-500-Gourance
 	break
