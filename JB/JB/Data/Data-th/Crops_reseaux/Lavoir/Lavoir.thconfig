@@ -15,9 +15,13 @@ encoding  utf-8
  source lcoupe.th
  #source lavoirsommet-coupe.th2
  #source lavoir-coupe2015.th2
+
+
+# Add map definition
+source lavoir-maps.th
  
 # Add config file
-input ../../../../../config.thc  
+input ../../../../../../config.thc  
   
 layout xviexport
    scale 1 1000
@@ -45,8 +49,7 @@ layout my_layout
   color map-fg altitude
   transparency on
   opacity 75
-  language fr
-  map-comment "Lavoir plan, Samoëns, 74, France"
+  map-comment "Gouffre Jean-Bernard, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
@@ -70,7 +73,7 @@ layout my_layout
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Gouffre Jean-Bernard} 		
+ 		\cavename={Réseau du Lavoir} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    \newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -98,8 +101,7 @@ layout my_layout-coupe
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  language fr
-  map-comment "Lavoir, coupe développée, Samoëns, 74, France"
+  map-comment "Gouffre Jean-Bernard, <it>coupe développée<ss>, Samoëns, 74, France"
   statistics explo off
   statistics topo off
   statistics explo-length off
@@ -125,7 +127,7 @@ layout my_layout-coupe
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Gouffre Jean-Bernard} 		
+ 		\cavename={Réseau du Lavoir} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    \newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -135,15 +137,12 @@ endlayout
 
  
   
-# export map -fmt xvi -layout xviexport -o Lavoir-map2017.xvi
-# export map -projection extended -fmt xvi -layout xviexport -o Lavoir-coupe2017b.xvi
+# export map -fmt xvi -layout xviexport -o Data/Lavoir-map2017.xvi
+# export map -projection extended -fmt xvi -layout xviexport -o Data/Lavoir-coupe2017b.xvi
   
  export map -o Outputs/2D/Lavoir-plan2019.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/2D/Lavoir-coupe2019.pdf
  export model -o Outputs/3D/Lavoir2019.lox
- #export model -o Lavoir2017.vrml
-# export model -o Lavoir2017.3dmf
  #export survey-list -o sceances2017.html
  #export centerline -o sceances2017.html
  #export database -o database2017
-#export map -proj plan -fmt kml -o Lavoir-2017.kml -layout my_layout

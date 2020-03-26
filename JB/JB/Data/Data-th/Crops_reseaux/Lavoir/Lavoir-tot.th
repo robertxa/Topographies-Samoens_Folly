@@ -4,17 +4,17 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-input Lavoir.th
-input fileOu.th
+input Data/Lavoir.th
+input Data/fileOu.th
 
 equate FD-2012-9@Lavoir 2017-FD-0@fileou
 
-input Lavoir.th2
-input Lavoir-boeuf.th2
-input Arva.th2
-input Brownies.th2
-input fileOu.th2
-input fileOu2019.th2
+input Data/Lavoir.th2
+input Data/Lavoir-boeuf.th2
+input Data/Arva.th2
+input Data/Brownies.th2
+input Data/fileOu.th2
+input Data/fileOu2019.th2
 join fileou2019-SP1 fileou2
 
 

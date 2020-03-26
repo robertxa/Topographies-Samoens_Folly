@@ -3,14 +3,22 @@ encoding  utf-8
   
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
-#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-  
-source FileOu.th
-source FileOu.th2
-source FileOu-coupe.th2   
+source Lavoir-tot.th 
+source lcoupe.th  
+#source fileOu-tot.th
+#source fileOu.th
+#source fileOu.th2
+#source fileOu2019.th2
+#join fileou2019-SP1 fileou2
+#source fileOu-coupe.th2   
+
+# Add map definition
+source lavoir-maps
+
 # Add config file
-input ../../../../../config.thc 
+input ../../../../../../config.thc 
 
 layout xviexport
 	scale 1 1000
@@ -20,8 +28,10 @@ endlayout
   
 layout my_layout
 # Call the config settings (Layout config inside the config.thc file)
+	
 	copy drawingconfig
 	copy headerl 
+	copy langue-fr
 	  
 	doc-title "Réseau qui File Ou"
 	doc-author "Xavier Robert"
@@ -34,7 +44,7 @@ layout my_layout
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "Réseau qui File Ou, Samoëns, 74, France"
+	map-comment "Gouffre Jean-Bernard, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -56,7 +66,7 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Jean-Bernard} 		
+			\cavename={Réseau qui File Ou} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -70,19 +80,20 @@ layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe 
+	copy langue-fr
   
 	doc-title "Réseau qui File Ou"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
 	scale 1 500
-	scale-bar 100 m
+	scale-bar 50 m
 	#color map-bg 85
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau qui File Ou, coupe développée, Samoëns, 74, France"
+	map-comment "Gouffre Jean-Bernard, <it>coupe développée<ss>, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -104,7 +115,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Jean-Bernard} 		
+			\cavename={Réseau qui File Ou} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -114,10 +125,14 @@ layout my_layout-coupe
 
  
   
- export map -fmt xvi -layout xviexport -o FileOu-2017.xvi
- export map -projection extended -fmt xvi -layout xviexport -o FileOu-coupe-2017.xvi
-  
- export map  -projection plan -o FileOu-2017-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o FileOu-2017-coupe.pdf
- export model -o FileOu-2017.lox
-#export survey-list -o Surveys2017.html
+ #export map -fmt xvi -layout xviexport -o Data/fileOu-2019.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/fileOu-coupe-2019.xvi
+
+select M-filou  
+ export map  -projection plan -o Outputs/2D/fileOu-2019-plan.pdf -layout my_layout
+
+select MC-Filou
+ export map -projection extended -layout my_layout-coupe -o Outputs/2D/fileOu-2019-coupe.pdf
+
+ export model -o Outputs/3D/fileOu-2019.lox
+#export survey-list -o Outputs/surveys2019.html
