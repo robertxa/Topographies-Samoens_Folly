@@ -32,8 +32,8 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 source ../Data/jb.th
-#source ../Data/jb-maps-plan
-source jb-maps-plan
+source ../Data/jb-maps-plan
+#source jb-maps-plan
 
 # Add config file
 input ../../../config.thc 
@@ -233,8 +233,8 @@ endlayout
 #select M-sezhommes
 select  M-aval-900
 
- export map -projection plan -fmt pdf -o ../Outputs/2D/Sezhommes-jb-Xav-2020-plan1000_TEST.pdf -layout my_layout
-#export map -projection plan -fmt pdf -o ../Outputs/2D/Sezhommes-jb-Xav-2020-plan5000.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o ../Outputs/2D/Crops/Sezhommes-jb-Xav-2020-plan1000_TEST.pdf -layout my_layout
+#export map -projection plan -fmt pdf -o ../Outputs/2D/Crops/Sezhommes-jb-Xav-2020-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
 # export model -fmt esri -o Outputs/3D/jb-Xav-2020 #-layout my_layout

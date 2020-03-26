@@ -32,8 +32,8 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 source ../Data/jb.th
-#source ../Data/jb-maps-plan
-source jb-maps-plan
+source ../Data/jb-maps-plan
+#source jb-maps-plan
 
 # Add config file
 input ../../../config.thc 
@@ -206,7 +206,7 @@ layout my_layout
 	
 	# Add logos to the map
 	
-	map-image 0 100 sw ../Data/Data-th/Crops_reseaux/Solitaire/Outputs/2D/EV-solitaire-coupe2019.pdf
+	map-image 0 100 sw ../Data/Data-th/Crops_reseaux/Solitaire/Outputs/2D/Crops/EV-solitaire-coupe2019.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -237,4 +237,4 @@ endlayout
 #select M-sezhommes
 select  M-Jean-Dupond
 
- export map -projection plan -fmt pdf -o ../Outputs/2D/Solitaire-jb-Xav-2020-plan1000_TEST.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o ../Outputs/2D/Crops/Solitaire-jb-Xav-2020-plan1000_TEST.pdf -layout my_layout

@@ -111,7 +111,7 @@ map M-lavoir -title "Réseau du Lavoir"
 	break
 	fileou1
 	break
-	fileou2
+	filou2
 	break
 	fileou2019-SP1
 	break
@@ -718,7 +718,7 @@ endmap
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
-map JB-plan-tot
+map JB-plan-tot -title "Gouffre Jean-Bernard"
 	M-C37-Riviera
 	break
 	M-B22-B21

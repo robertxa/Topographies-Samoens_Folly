@@ -36,10 +36,13 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ##   input Data-th/jb-ajouts
 ##  input Data-th/assemblage
 
-
-   
+	
    centerline
-    
+
+# Rajout des longueurs explorées, non topo, ou topos perdues
+	station Ca.31@jb-amonts1 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
+	station De.36@jb-amonts2 "+43 m explorés et topographiés le 1991.09.21 par Bernard Lips et Robert Sonney, mais topographie perdue" continuation explored 43m	# Courte-échelle (station De.36, 43 m)
+       
 # Pour assembler plusieurs fichiers topos
      equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
      equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
@@ -222,7 +225,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	 join brownies1 Arva2 
      join Lavoir-new1 Lavoir7
-     join fileou2019-SP1 fileou2
+     join fileou2019-SP1 filou2
      join lavoir-sec Boeuf2
      join base-racc Racc5
      join Lavoir3old B19
