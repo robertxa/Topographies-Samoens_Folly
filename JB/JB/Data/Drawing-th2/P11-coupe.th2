@@ -91,10 +91,6 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 346.75 163.75 label -text [<center>vers Bivouac -500<br>par les CF historiques]
-
-point 349.75 104.75 label -text [<center>vers Bivouac -500<br>par le Court-circuit]
-
 point 266.75 139.5 air-draught -orientation 67.5 -subtype winter
 
 point 313.0 279.5 air-draught -orientation 106.1 -subtype winter
@@ -158,26 +154,9 @@ point 202.0 163.0 helictite
 
 point 230.25 146.5 helictite
 
-line arrow
-  184.25 87.5
-  158.0 88.0
-endline
-
-line arrow
-  270.25 107.25
-  304.25 106.75
-endline
-
-line arrow
-  261.5 132.25
-  306.75 148.5
-endline
-
 point 227.75 93.5 height -value [-11 m]
 
 point 52.25 155.0 height -value [-12 m]
-
-point 133.5 90.0 label -text [<center>vers<br>Gourance]
 
 point 102.75 276.5 label -text colm.
 

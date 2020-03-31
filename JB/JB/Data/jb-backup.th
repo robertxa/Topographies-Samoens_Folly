@@ -1,0 +1,379 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey Jean-Bernard -title "Gouffre Jean Bernard"
+
+# Pour importer les différentes données de différents fichiers topos : 
+   input Data-th/jb-amonts1
+   input Data-th/jb-amonts2
+   input Data-th/jb-riv
+   input Data-th/jb-riv2
+   input Data-th/Crops_reseaux/Arianes/jb-arianes
+   input Data-th/Crops_reseaux/aval-aiguilles/Aval-aiguilles2
+   input Data-th/Crops_reseaux/aval-aiguilles/Aval-aiguilles
+   input Data-th/Crops_reseaux/Lavoir/Data/Lavoir
+   input Data-th/Crops_reseaux/Lavoir/Data/FileOu.th
+   input Data-th/Crops_reseaux/Shunt-Branlots/shunt-branlots
+   input Data-th/Crops_reseaux/affluentC14/affluentC14
+   input Data-th/Crops_reseaux/Gourance2013/Gourance2013
+   input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa
+   input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa2019.th
+   input Data-th/Crops_reseaux/dino/jb-dino
+   input Data-th/Crops_reseaux/puitsquelontraverse/puitstraverse
+   input Data-th/Crops_reseaux/Erreur/Erreur
+   input Data-th/Crops_reseaux/CouteauG/CouteauG
+   input Data-th/Crops_reseaux/P11/P11
+   input Data-th/Crops_reseaux/Solitaire/solitaire
+   
+   input Data-th/Crops_reseaux/Sezhommes/Data/sezhommes2020.th
+   
+   input Data-th/Crops_reseaux/Siphons/Data/siphons
+   #input Data-th/bivouac900
+
+##   input Data-th/jb-ajouts
+##  input Data-th/assemblage
+
+	
+   centerline
+
+# Rajout des longueurs explorées, non topo, ou topos perdues
+	station Ca.31@jb-amonts1 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
+	station De.36@jb-amonts2 "+43 m explorés et topographiés le 1991.09.21 par Bernard Lips et Robert Sonney, mais topographie perdue" continuation explored 43m	# Courte-échelle (station De.36, 43 m)
+       
+# Pour assembler plusieurs fichiers topos
+     equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
+     equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
+     equate  Jf.14@jb-amonts2  Jf.14@jb-riv
+     equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
+     equate  Kg.0@jb-riv  Kg.0@jb-riv2
+     equate  Kg.9@jb-riv  Kg.9@jb-riv2
+     equate  Ke.29@jb-riv  Ke.29@jb-riv2
+     equate  Ke.43@jb-riv  Ke.43@jb-riv2
+     equate  Ke.33@jb-riv  Ke.33@jb-riv2
+     equate  Da.58@jb-amonts2  Da.58@jb-riv2
+     equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
+     equate  Bc.50@jb-arianes Bc.50@jb-amonts1
+     equate  Bb.115@jb-arianes Bb.115@jb-amonts1
+     equate  2012c-xa-29@aval-aiguilles2 De.44@jb-amonts2
+     equate  2012c-xa-27@aval-aiguilles De.8@jb-amonts2
+     equate  2012c-xa-0double@aval-aiguilles Da.197@jb-amonts2
+     equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
+     equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
+     equate  Xa-2013-11@aval-aiguilles De.23@jb-amonts2
+     equate  2013-xac-14@shunt-branlots Fb.29@jb-amonts2
+     equate  2013-xac-0@shunt-branlots Fd.14@jb-amonts2
+     equate  2013-xab-22@affluentC14 Bg.0@jb-amonts1     
+     equate  2014-SL-35@GoureToiDeLa Kh.48@jb-riv2     # C'est celui qui a l'air de coller le mieux sur la topo
+     #equate  2014-SL-35@GoureToiDeLa Kh.46@jb-riv2    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
+     equate  2013c-xa-11@Gourance2013 Kh.4@jb-riv2
+     
+     equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse     
+     
+     equate xa-2014a-1@jb-dino Da.248@jb-amonts2
+     equate xa-2014a-9@jb-dino Da.253@jb-amonts2
+     
+     equate Xa-2015e-0@Erreur Da.2494@jb-amonts2
+     equate Xa-2015e-10@Erreur Da.239@jb-amonts2
+     
+     equate Xa-2015f-0@CouteauG Ee.0@jb-amonts2
+     
+     equate Xav2016-23@P11 Kg.24@jb-riv
+     
+     #equate xx36@solitaire Jd.17@jb-amonts2
+     equate xx36@solitaire Jd.20@jb-amonts2
+     #equate xx36@solitaire Jd.19@jb-amonts2
+     #equate 2019-FD-9@solitaire Jd.24@jb-amonts2	# Jction 2019 Solitaire et Base du puits Alain
+     #extend ignore 2019-FD-9 Jd.24
+     
+     equate S1-0@siphons_aval Kp.24@jb-riv2
+
+     equate FD-2012-9@Lavoir 2017-FD-0@fileou
+     
+     # Gourance
+	equate 2019-FD-12@Goure2019 2014-SL-24@GoureToiDeLa
+	equate 2019-FD-E15@Goure2019 2014-SL-24@GoureToiDeLa
+	
+	# Sezommes
+	equate 12.2020@sezhommes2020 Ko.31@jb-riv2	# carrefour vers l'aval
+	equate 18.2020@sezhommes2020 Ko.39@jb-riv2	# ancien terminus amont de l'affluent
+	equate 46.2020@sezhommes2020 Kn.4@jb-riv2	# sommet du P6 juste avant le bivouac -900 m
+              
+     # Pour boucler toute la topo du JB, de façon à supprimer les choix de coupage de Steph
+        # Zone de la rivière aux excentriques
+          #equate  Da.179@jb-amonts1  Da.180'@jb-amonts1
+          #equate  Da.99@jb-amonts1  Da.100'@jb-amonts1
+        
+        # Zone du réseau des Bourguignons
+          #equate  Hb.0@jb-amonts2  Da.237@jb-amonts2 #(En rajoutant artificiellement une visée P15 ?)--> Il faut faire des fichiers différents
+          #equate  Ha.33@jb-amonts1  Hd.31@jb-amonts1 #(? Je ne suis pas sûr que le m. des chatons jonctionne avec les bourguignons)
+          #equate  Hd.0@jb-amonts1  Hc.15@jb-amonts1 #(? Je ne suis pas sûr que le m. de la soucoupe jonctionne avec les bourguignons)
+        
+        # Zone de la Pierre qui tombe
+          #equate  Jc.0@jb-amonts1  Da.346@jb-amonts1 #(Ca semble bon)
+          #equate  Jb.15@jb-amonts1  Gc.0@jb-amonts1 #(? Pb en dx, dy et surtout dz)
+          #equate  Jb.27@jb-amonts1  Jc.5@jb-amonts1 #(Arrff dz est dans les choux)
+          
+        # Zone de la galerie du P15-colimaçon
+          #equate  Fm.0@jb-amonts1  Da.257@jb-amonts1 #(ou 259 ?)
+          #equate  Fd.41@jb-amonts1  Da.240@jb-amonts1
+ 
+   endcenterline
+ 
+ endsurvey
+ 
+##########################################################################################
+# Pour importer les différents fichiers de dessins en plan
+    input Drawing-th2/JB-riviere2.th2
+    input Drawing-th2/JB-riviere1.th2
+    input Drawing-th2/arianes.th2   
+    input Drawing-th2/JB-aval1.th2
+    input Drawing-th2/JB-V4.th2
+    input Drawing-th2/JB-dessin.th2
+    input Drawing-th2/JB-B22.th2
+    input Drawing-th2/JB-C37.th2
+    input Drawing-th2/dessin2010.th2
+    input Drawing-th2/JB-nuitblanche.th2
+    input Drawing-th2/aval-aiguilles2.th2
+    input Drawing-th2/aval-aiguilles.th2
+    input Drawing-th2/Lavoir.th2
+    input Drawing-th2/Lavoir-boeuf.th2
+    input Drawing-th2/Arva.th2
+    input Drawing-th2/Brownies.th2
+    input Drawing-th2/fileOu.th2
+    input Drawing-th2/fileOu2019.th2
+    input Drawing-th2/shunt-branlots.th2
+    input Drawing-th2/affluentC14.th2
+    
+    #input Drawing-th2/GoureToiDeLa2015.th2
+    #input Drawing-th2/GoureToiDeLa2015b.th2
+    
+    input Drawing-th2/GoureToiDeLa.th2
+    input Drawing-th2/GoureToiDeLa2015.th2
+	join  Goure2015b-4 Goure2015-SP1
+	input Drawing-th2/GoureToiDeLa2015b.th2
+	join Gourance2015b-1 Gourance2014-4
+	input Drawing-th2/GoureToiDeLa2019.th2
+	join Goure2019-SP2 Gourance2014-4
+	join Goure2019-SP3 Gourance2014-4
+    
+    input Drawing-th2/Gourance2013.th2
+    
+    input Drawing-th2/dino.th2
+    input Drawing-th2/B19.th2
+    input Drawing-th2/V5.th2
+    input Drawing-th2/gadoue.th2
+    input Drawing-th2/B21.th2
+    
+    input Drawing-th2/puitstraverse.th2
+    input Drawing-th2/Erreur.th2
+    input Drawing-th2/CouteauG.th2
+    input Drawing-th2/P11.th2
+    
+    input Drawing-th2/solitaire-plan.th2
+    input Drawing-th2/solitaire-plan2017.th2
+    input Drawing-th2/solitaire2018.th2
+    input Drawing-th2/solitaire2019_1.th2
+    input Drawing-th2/solitaire2019_2.th2
+    input Drawing-th2/solitaire2019_3.th2
+    input Drawing-th2/solitaire2019_4.th2
+    
+    input Drawing-th2/sezhommes2020.th2
+    
+    input Drawing-th2/siphons.th2
+    input Drawing-th2/siphons2020.th2
+    
+ # Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
+ # join scrap1 scrap2 . C'est tout simple !
+ # Ici pour le plan
+ 
+   # Gourance avec -500
+     join gourance-1 bivouac500c
+   # Salle V6 avec Mais   
+     join V6 Mais
+   # Galerie du Maïs avec Mais-2010
+     join Mais Mais-2010  
+   # Salle V6 avec V5
+     join V6 V5
+   # Depart Anou II avec Mais
+     join Anou2 Mais
+   # Depart Feigne avec Mais
+     join flash Mais
+   # Depart Jaunisse avec Mais
+     join anou2bis Mais
+   # Depart Mais avec Grand Escalier
+     join grdescalier Mais
+   # Pierre qui tombe avec Puits Alain     
+     join quitombe4 pquitombeend
+   # Au niveau telepherique
+     join V4-2 pAlain
+     
+     join P15aval Bourguignons1
+     
+     join Echo2010-1 Branlots
+     
+     join Echo2010-2 Branlots
+     
+     join Echo2010-2 Branlots
+     
+     # Erreur dans le 3D avec la ligne suivante... A CORRIGER
+     join Echo2010-2 Colimaconaval
+     
+     join Echo2010-3 Branlots
+
+	 join brownies1 Arva2 
+     join Lavoir-new1 Lavoir7
+     join fileou2019-SP1 filou2
+     join lavoir-sec Boeuf2
+     join base-racc Racc5
+     join Lavoir3old B19
+     
+     #join Lavoir3old gadouejonction
+     
+     join base-racc Excentriques1
+     
+     join Raccourci rac1
+     
+     join Racc5 gadouejonction
+     
+     #join scrap146 Ascension
+     
+     join scrap146b Ascension -count 2
+     
+     join CouteauG1 oublies
+     
+     join reverbere affluent-C14-2
+     
+     join Branlots s-branlots1
+    # Autre join Avec Branlots2?????
+    
+     join Erreur berreur1
+     join P15 berreur1
+     
+     join dino-1 Erreur -count 2
+          
+     join B19 Racc5
+     
+     join gadouejonction Racc5
+     join Gadoue champs-elysees2
+     
+     join traverse2 audessusbulle
+          
+	##join solitaire_plan 
+	join solitaire_plan sol2017-1 -count 2
+	join Solitaire-c-2018_2 solitaire_plan
+	##join Solitaire2018-SP1 sol2017-1
+	join solitaire2019-SP1 Solitaire-c-2018_3
+	join solitaire2019-SP2 sol2017-1
+	join Solitaire-SP-2019c1 Sol_SP2019b_1
+	join Sol2019d-SP1 solitaire2019-SP1
+    
+    
+    join sezhommes2020-SP1 900-1	# au niveau bivouac -900 m
+	join sezhommes2020-SP1 sezhommes-1 -count 2	# Vers l'aval 
+	join sezhommes2 S1
+    join siphons2020-SP1 S2S3 
+     
+     
+     #join P11-h1 ???
+
+
+     #join aval-aiguille2-1 ???
+
+#   join aval-aiguilles1 Frenesie
+
+#     join aval-aiguilles5 Bulle
+
+
+##########################################################################################
+# Pour importer les différents fichiers de dessins en coupe développée
+input Drawing-th2/B19senecaliens-coupe.th2
+	input Drawing-th2/B19-coupe.th2 
+    input Drawing-th2/C37-coupe.th2
+    input Drawing-th2/voltigeurs-coupe.th2
+	input Drawing-th2/B22-coupe.th2
+	input Drawing-th2/affluentC14-coupe.th2
+	input Drawing-th2/B21-coupe.th2
+	input Drawing-th2/lavoirsommet-coupe.th2
+	input Drawing-th2/lavoir-coupe2015.th2
+	input Drawing-th2/brownies-coupe.th2
+	input Drawing-th2/fileOu-coupe2019.th2
+	input Drawing-th2/FileOu-coupe.th2
+	input Drawing-th2/avalc1
+	
+	input Drawing-th2/GoureToiDeLa-coupe.th2
+	#input Drawing-th2/GoureToiDeLaOLD.th2
+	input Drawing-th2/GoureToiDeLa2015coupe.th2
+	input Drawing-th2/GoureToiDeLa2019coupe.th2
+
+	input Drawing-th2/gourance2013-coupe.th2
+	
+	input Drawing-th2/aval500.th2
+	input Drawing-th2/aval400.th2
+	
+	input Drawing-th2/V4-coupe.th2
+	input Drawing-th2/jaunisse-coupe.th2
+	input Drawing-th2/14J-coupe.th2
+	input Drawing-th2/dino-coupe.th2
+	input Drawing-th2/puitstraverse-coupe.th2
+	input Drawing-th2/shunt-branlots-coupe.th2
+	input Drawing-th2/V11-coupe.th2
+	input Drawing-th2/CouteauG-coupe.th2
+	input Drawing-th2/Erreur-coupe.th2
+	input Drawing-th2/P11-coupe.th2
+	
+	input Drawing-th2/solitaire-coupe2017.th2
+	input Drawing-th2/solitaire-coupe2018.th2
+	input Drawing-th2/solitaire2019-coupe1.th2
+	input Drawing-th2/solitaire2019-coupe2.th2
+	input Drawing-th2/solitaire2019-coupe3.th2
+	input Drawing-th2/solitaire2019-coupe4.th2
+	
+	input Drawing-th2/sezhommes2020-coupe.th2
+	input Drawing-th2/siphons-coupe.th2
+	input Drawing-th2/siphons-coupe2020.th2
+	
+	
+
+# Join scraps...	
+join voltic1 C37c3
+join B22c1 B22cx
+join B22c2 elyseesc1 
+join affluent-C14_c1 archec2 
+#join B21c B22c3	
+join B19c1 B19c2
+join lavoirc1 lavoirc2 
+join balconc1 GourecoupeSteph3
+join avalc5 balconc1
+join GourecoupeSteph3 balcon2
+join Gourance2013-c1 balcon2
+join 400c1 biv500c4
+join V4c1 dupontc3 	
+join maisc1 V6c1
+join jaunissec6 anou2c3
+join jaunissec7 anou2c1
+join jaunissec7 anou2c2
+join jaunissec3 chatonsc1
+join maisc1 dino-coupe
+join lavoirc2 browniesc1
+join fileouc1	fileOu2019-SC1
+join J14c3 s_branlots-c1
+join traversec1 V11c5
+join branlotsc1 V11c5
+join aiguillesc1 lavoirc7
+#join excenc2 excenLavoir???
+join CouteauGc1 V11c3
+join berreurc1 maisc1
+#join berreurc1 ??
+join avalc1 S1-c
+join fileouc1 lavoirc5
+join Solitaire-c_2018-1 solitaire2019-SC1 #Solitaire2018-SC1
+join sol-C1 solitaire2019-SC2
+join Solitaire-SC-2019c1 Sol-SC2019b-1
+# Reseau Sezhommes
+join avalc1 sezhommes2020-SC3
+join avalc1 sezhommes2020-SC2
+join avalc2 sezhommes2020-SC3
+join Siphons2020-SC1 S2-S3_c	# Explo du 24/01/2020
