@@ -7,6 +7,7 @@ Overview
 Ce dépôt contient les données topographiques et les dessins associés des cavités du massif du Folly à Samoëns (74, France).
 Cela concerne les systèmes du gouffre Jean-Bernard, du réseau de la Combe aux Puaires, des Avoudrues et du A21.
 Elles ont été majoritairement produites par les spéléologues du club Vulcain de (Lyon, France) 'https://www.groupe-speleo-vulcain.com'.
+Ce dépôt est mis à jour à chaque fois qu'une nouvelle topographie est rajoutée à l'un des systèmes décrit dans cette base de données.
 
 
 Description
@@ -22,20 +23,25 @@ Uniquement les fichiers sources sont sauvegardés pour des raisons de taille; j'
 	
 Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fichiers Therion.
 
-L'ensemble de ces topographies sont publiées et décrites dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet ('https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/'). Les topographies compilées peuvent aussi être téléchargées sur les pages 'https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/topographies-du-synclinal-du-jean-bernard-samoens-france/' et 'https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/explorations-a-samoenstopographies-du-systeme-de-la-combe-aux-puaires/'
+L'ensemble de ces topographies est publié et décrit dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet (https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/). Les topographies compilées peuvent aussi être téléchargées sur les pages https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/topographies-du-synclinal-du-jean-bernard-samoens-france/ et 'https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/explorations-a-samoenstopographies-du-systeme-de-la-combe-aux-puaires/
 
 Licence
 -------
 
-L'ensemble de ces données sont publiées sous la licence libre Creative Commons Attribution-ShareAlike-NonCommercial (Attribution, partage à l'identique et non commerciale) :
-	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+L'ensemble de ces données est publié sous la licence libre Creative Commons Attribution-ShareAlike-NonCommercial (Attribution, partage à l'identique et non commerciale) :
+	http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 Auteur de la base de données
 ----------------------------
 
-Xavier Robert
+Xavier Robert (xavier.robert@ird.fr)
+
+How to cite
+-----------
+
+Robert, X., Base de données Topographiques des systèmes karstiques du massif du Folly (Samoëns, 74, France), https://github.com/robertxa/Topographies-Samoens_Folly , 2020. 
 
 Contact
 -------
 
-Pour plus d'informations, contacter le club Vulcain (`https://www.groupe-speleo-vulcain.com/contacts/`)
+Pour plus d'informations, contacter le club Vulcain (https://www.groupe-speleo-vulcain.com/contacts/)
