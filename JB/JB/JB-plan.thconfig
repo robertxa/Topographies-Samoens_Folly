@@ -32,7 +32,7 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 source Data/jb.th
-#source Data/jb-maps-plan
+source Data/jb-maps-plan
 
 # Add config file
 input ../../config.thc 
@@ -232,7 +232,7 @@ endlayout
 #  select JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select JB-plan-tot
- export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000TEST.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000.pdf -layout my_layout
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI

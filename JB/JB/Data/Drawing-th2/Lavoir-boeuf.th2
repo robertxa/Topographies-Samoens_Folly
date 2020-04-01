@@ -1,12 +1,13 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 482.3309 639.8113000000001
+##XTHERION## xth_me_area_adjust -128.75 -128.75 482.3309 961.8072999999999
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {118.114 0 1.0} {78.743 2012-xa-0} Lavoir-map.xvi 0 {}
-##XTHERION## xth_me_image_insert {118.114 1 1.0} {78.744 2012-xa-0} Lavoir-map2.xvi 0 {}
+##XTHERION## xth_me_image_insert {118.114 0 1.0} {78.744 2012-xa-0} Lavoir-map2.xvi 0 {}
+##XTHERION## xth_me_image_insert {78.73799999999999 1 1.0} {400.741 2012-xa-0} Lavoir-map2013.xvi 0 {}
 
 
 
-scrap Lavoir-1 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Lavoir1 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 point 129.0 142.75 label -text "Imp."
 
@@ -121,40 +122,45 @@ line wall -id l7-107-161
   smooth off
 endline
 
-point 90.24400000000001 140.143 station -name 2012b-xa-23@Lavoir.Jean-Bernard
+point 90.24400000000001 140.143 station -name 2012b-xa-23@Lavoir
 
-point 77.06400000000001 161.453 station -name 2012b-xa-20bis@Lavoir.Jean-Bernard
+point 77.06400000000001 161.453 station -name 2012b-xa-20bis@Lavoir
 
-point 108.664 140.143 station -name 2012b-xa-21@Lavoir.Jean-Bernard
+point 108.664 140.143 station -name 2012b-xa-21@Lavoir
 
-point 124.20400000000001 131.16299999999998 station -name 2012b-xa-22@Lavoir.Jean-Bernard
+point 124.20400000000001 131.16299999999998 station -name 2012b-xa-22@Lavoir
 
 endscrap
 
 
 
-scrap Lavoir-FD -projection plan -author 2012 "Xavier Robert" -author 2012 "Frédéric Delègue" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Lavoir-FD -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -author 2012 "Frédéric Delègue" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+
+line wall
+  169.75 305.25
+  169.75 305.25 168.5 309.25 167.5 308.0
+  166.5 306.75 165.0 305.5 165.0 305.5
+  smooth off
+endline
 
 line wall
 endline
 
-point 153.31400000000002 268.93399999999997 station -name FD-2012-11@Lavoir.Jean-Bernard
+point 153.31400000000002 268.93399999999997 station -name FD-2012-11@Lavoir
 
-point 164.464 274.374 station -name FD-2012-5@Lavoir.Jean-Bernard
+point 164.464 274.374 station -name FD-2012-5@Lavoir
 
-point 172.394 278.954 station -name FD-2012-3@Lavoir.Jean-Bernard
+point 172.394 278.954 station -name FD-2012-3@Lavoir
 
-point 179.854 276.534 station -name FD-2012-2@Lavoir.Jean-Bernard
+point 179.854 276.534 station -name FD-2012-2@Lavoir
 
 point 200.75 266.0 label -text "imp."
 
-point 213.0 292.25 label -text "<center>puits des<br> Etincelles"
+point 235.75 291.25 label -text "<center>puits des<br> Etincelles"
 
 point 193.0 276.0 narrow-end -orientation 118.8
 
 point 189.5 271.5 water-flow -orientation 118.4
-
-point 168.75 313.75 continuation
 
 point 174.0 258.5 height -value [-5]
 
@@ -163,8 +169,6 @@ point 186.0 285.5 height -value [-10]
 point 146.0 282.0 height -value [-9]
 
 point 153.25 300.75 height -value [-5]
-
-point 181.75 268.0 rope
 
 point 178.0 298.75 rope
 
@@ -205,6 +209,7 @@ line pit
   160.5 304.0
   160.5 304.0 159.0 302.0 161.5 300.75
   164.0 299.5 168.25 295.25 172.0 297.75
+  smooth off
 endline
 
 line pit -reverse on
@@ -256,25 +261,25 @@ line wall
   smooth off
 endline
 
-point 165.324 290.714 station -name FD-2012-6@Lavoir.Jean-Bernard
+point 165.324 290.714 station -name FD-2012-6@Lavoir
 
-point 169.94400000000002 291.86400000000003 station -name FD-2012-7@Lavoir.Jean-Bernard
+point 169.94400000000002 291.86400000000003 station -name FD-2012-7@Lavoir
 
-point 166.574 298.48400000000004 station -name FD-2012-9@Lavoir.Jean-Bernard
+point 166.574 298.48400000000004 station -name FD-2012-9@Lavoir
 
 endscrap
 
 
 
-scrap Lavoir-2 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Lavoir2 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
-point 132.91400000000002 119.03299999999999 station -name 2012b-xa-29b@Lavoir.Jean-Bernard
+point 132.91400000000002 119.03299999999999 station -name 2012b-xa-29b@Lavoir
 
-point 123.864 111.43299999999999 station -name 2012b-xa-28@Lavoir.Jean-Bernard
+point 123.864 111.43299999999999 station -name 2012b-xa-28@Lavoir
 
-point 121.534 111.073 station -name 2012b-xa-27@Lavoir.Jean-Bernard
+point 121.534 111.073 station -name 2012b-xa-27@Lavoir
 
-point 105.70400000000001 114.143 station -name 2012b-xa-26@Lavoir.Jean-Bernard
+point 105.70400000000001 114.143 station -name 2012b-xa-26@Lavoir
 
 point 59.25 144.5 traverse
 
@@ -393,33 +398,33 @@ endline
 line wall
 endline
 
-point 93.63400000000001 130.16299999999998 station -name 2012b-xa-25@Lavoir.Jean-Bernard
+point 93.63400000000001 130.16299999999998 station -name 2012b-xa-25@Lavoir
 
-point 120.95400000000001 164.91299999999998 station -name 2012b-xa-32@Lavoir.Jean-Bernard
+point 120.95400000000001 164.91299999999998 station -name 2012b-xa-32@Lavoir
 
-point 118.54400000000001 158.293 station -name 2012b-xa-31@Lavoir.Jean-Bernard
+point 118.54400000000001 158.293 station -name 2012b-xa-31@Lavoir
 
-point 100.10400000000001 148.903 station -name 2012b-xa-30@Lavoir.Jean-Bernard
+point 100.10400000000001 148.903 station -name 2012b-xa-30@Lavoir
 
-point 79.51400000000001 133.94299999999998 station -name 2012b-xa-24@Lavoir.Jean-Bernard
+point 79.51400000000001 133.94299999999998 station -name 2012b-xa-24@Lavoir
 
 endscrap
 
 
 
-scrap Lavoir-3 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Lavoir3 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
-point 177.324 209.593 station -name 2012b-xa-39@Lavoir.Jean-Bernard
+point 177.324 209.593 station -name 2012b-xa-39@Lavoir
 
-point 179.454 197.553 station -name 2012b-xa-38@Lavoir.Jean-Bernard
+point 179.454 197.553 station -name 2012b-xa-38@Lavoir
 
-point 165.744 192.01299999999998 station -name 2012b-xa-37@Lavoir.Jean-Bernard
+point 165.744 192.01299999999998 station -name 2012b-xa-37@Lavoir
 
-point 134.50400000000002 192.613 station -name 2012b-xa-36@Lavoir.Jean-Bernard
+point 134.50400000000002 192.613 station -name 2012b-xa-36@Lavoir
 
-point 155.12400000000002 180.22299999999998 station -name 2012b-xa-35@Lavoir.Jean-Bernard
+point 155.12400000000002 180.22299999999998 station -name 2012b-xa-35@Lavoir
 
-point 152.12400000000002 172.403 station -name 2012b-xa-34@Lavoir.Jean-Bernard
+point 152.12400000000002 172.403 station -name 2012b-xa-34@Lavoir
 
 line wall
   122.75 163.0
@@ -519,13 +524,13 @@ line wall -id l74-158-198
   smooth off
 endline
 
-point 132.284 166.713 station -name 2012b-xa-33@Lavoir.Jean-Bernard
+point 132.284 166.713 station -name 2012b-xa-33@Lavoir
 
 endscrap
 
 
 
-scrap Lavoir-5 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Lavoir5 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 line wall
   136.5 243.5
@@ -600,23 +605,23 @@ line wall
   smooth off
 endline
 
-point 138.904 254.123 station -name 2012b-xa-16@Lavoir.Jean-Bernard
+point 138.904 254.123 station -name 2012b-xa-16@Lavoir
 
-point 144.494 239.603 station -name 2012b-xa-18@Lavoir.Jean-Bernard
+point 144.494 239.603 station -name 2012b-xa-18@Lavoir
 
-point 166.054 234.623 station -name 2012b-xa-19@Lavoir.Jean-Bernard
+point 166.054 234.623 station -name 2012b-xa-19@Lavoir
 
-point 170.434 238.053 station -name 2012b-xa-42@Lavoir.Jean-Bernard
+point 170.434 238.053 station -name 2012b-xa-42@Lavoir
 
-point 176.654 230.093 station -name 2012b-xa-41@Lavoir.Jean-Bernard
+point 176.654 230.093 station -name 2012b-xa-41@Lavoir
 
-point 178.484 222.76299999999998 station -name 2012b-xa-40@Lavoir.Jean-Bernard
+point 178.484 222.76299999999998 station -name 2012b-xa-40@Lavoir
 
 endscrap
 
 
 
-scrap Boeuf1 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Boeuf1 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 line pit -reverse on
   136.25 261.0
@@ -701,39 +706,39 @@ line wall
   smooth off
 endline
 
-point 142.594 252.483 station -name 2012b-xa-15@Lavoir.Jean-Bernard
+point 142.594 252.483 station -name 2012b-xa-15@Lavoir
 
-point 139.47400000000002 252.023 station -name 2012b-xa-17@Lavoir.Jean-Bernard
+point 139.47400000000002 252.023 station -name 2012b-xa-17@Lavoir
 
-point 137.784 250.64299999999997 station -name 2012b-xa-13@Lavoir.Jean-Bernard
+point 137.784 250.64299999999997 station -name 2012b-xa-13@Lavoir
 
-point 131.954 250.023 station -name 2012b-xa-12@Lavoir.Jean-Bernard
+point 131.954 250.023 station -name 2012b-xa-12@Lavoir
 
-point 101.96400000000001 235.39299999999997 station -name 2012b-xa-11@Lavoir.Jean-Bernard
+point 101.96400000000001 235.39299999999997 station -name 2012b-xa-11@Lavoir
 
-point 101.96400000000001 226.173 station -name 2012b-xa-10@Lavoir.Jean-Bernard
+point 101.96400000000001 226.173 station -name 2012b-xa-10@Lavoir
 
-point 101.834 222.44299999999998 station -name 2012b-xa-9@Lavoir.Jean-Bernard
+point 101.834 222.44299999999998 station -name 2012b-xa-9@Lavoir
 
-point 107.81400000000001 218.093 station -name 2012b-xa-8@Lavoir.Jean-Bernard
+point 107.81400000000001 218.093 station -name 2012b-xa-8@Lavoir
 
-point 115.23400000000001 221.243 station -name 2012b-xa-7@Lavoir.Jean-Bernard
+point 115.23400000000001 221.243 station -name 2012b-xa-7@Lavoir
 
-point 122.31400000000001 218.94299999999998 station -name 2012b-xa-6@Lavoir.Jean-Bernard
+point 122.31400000000001 218.94299999999998 station -name 2012b-xa-6@Lavoir
 
-point 113.96400000000001 211.153 station -name 2012b-xa-5@Lavoir.Jean-Bernard
+point 113.96400000000001 211.153 station -name 2012b-xa-5@Lavoir
 
-point 112.284 200.553 station -name 2012b-xa-4@Lavoir.Jean-Bernard
+point 112.284 200.553 station -name 2012b-xa-4@Lavoir
 
-point 120.754 185.88299999999998 station -name 2012b-xa-3@Lavoir.Jean-Bernard
+point 120.754 185.88299999999998 station -name 2012b-xa-3@Lavoir
 
-point 134.304 167.903 station -name 2012b-xa-2@Lavoir.Jean-Bernard
+point 134.304 167.903 station -name 2012b-xa-2@Lavoir
 
 endscrap
 
 
 
-scrap Boeuf2 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Boeuf2 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 line pit
   123.75 175.5
@@ -781,8 +786,8 @@ endline
 
 line pit
   166.0 168.75
-  166.0 168.75 159.5 167.75 159.5 161.5
-  159.5 155.25 160.5 147.0 160.5 147.0
+  166.0 168.75 153.5 171.25 159.5 161.5
+  162.78 156.16 160.5 147.0 160.5 147.0
   smooth off
 endline
 
@@ -832,31 +837,31 @@ line wall
   smooth off
 endline
 
-point 146.244 203.343 station -name 2012-SL14@Lavoir.Jean-Bernard
+point 146.244 203.343 station -name 2012-SL14@Lavoir
 
-point 134.144 197.183 station -name 2012-SL13@Lavoir.Jean-Bernard
+point 134.144 197.183 station -name 2012-SL13@Lavoir
 
-point 124.12400000000001 184.26299999999998 station -name 2012-SL11@Lavoir.Jean-Bernard
+point 124.12400000000001 184.26299999999998 station -name 2012-SL11@Lavoir
 
-point 128.234 180.023 station -name 2012-SL9@Lavoir.Jean-Bernard
+point 128.234 180.023 station -name 2012-SL9@Lavoir
 
-point 139.014 126.94299999999998 station -name 2012-SL1@Lavoir.Jean-Bernard
+point 139.014 126.94299999999998 station -name 2012-SL1@Lavoir
 
-point 144.584 136.033 station -name 2012-SL2@Lavoir.Jean-Bernard
+point 144.584 136.033 station -name 2012-SL2@Lavoir
 
-point 150.654 137.493 station -name 2012-SL3@Lavoir.Jean-Bernard
+point 150.654 137.493 station -name 2012-SL3@Lavoir
 
-point 152.264 147.683 station -name 2012-SL5@Lavoir.Jean-Bernard
+point 152.264 147.683 station -name 2012-SL5@Lavoir
 
-point 155.234 154.533 station -name 2012-SL6@Lavoir.Jean-Bernard
+point 155.234 154.533 station -name 2012-SL6@Lavoir
 
-point 150.684 156.85299999999998 station -name 2012b-xa-0@Lavoir.Jean-Bernard
+point 150.684 156.85299999999998 station -name 2012b-xa-0@Lavoir
 
 endscrap
 
 
 
-scrap Lavoir7 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap Lavoir7 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 point 167.5 224.75 water-flow -orientation 247.0
 
@@ -901,86 +906,89 @@ line wall
   smooth off
 endline
 
-point 199.824 176.32299999999998 station -name 2012-SL28@Lavoir.Jean-Bernard
+point 199.824 176.32299999999998 station -name 2012-SL28@Lavoir
 
-point 210.00400000000002 175.833 station -name 2012-SL26@Lavoir.Jean-Bernard
+point 210.00400000000002 175.833 station -name 2012-SL26@Lavoir
 
-point 184.274 209.01299999999998 station -name 2012-SL25@Lavoir.Jean-Bernard
+point 184.274 209.01299999999998 station -name 2012-SL25@Lavoir
 
-point 183.174 217.673 station -name 2012-SL24@Lavoir.Jean-Bernard
+point 183.174 217.673 station -name 2012-SL24@Lavoir
 
-point 163.524 225.813 station -name 2012-SL23@Lavoir.Jean-Bernard
+point 163.524 225.813 station -name 2012-SL23@Lavoir
 
-point 173.034 232.723 station -name 2012-SL21@Lavoir.Jean-Bernard
+point 173.034 232.723 station -name 2012-SL21@Lavoir
 
-point 161.47400000000002 232.723 station -name 2012-SL20@Lavoir.Jean-Bernard
+point 161.47400000000002 232.723 station -name 2012-SL20@Lavoir
 
-point 162.38400000000001 236.023 station -name 2012-SL19@Lavoir.Jean-Bernard
+point 162.38400000000001 236.023 station -name 2012-SL19@Lavoir
 
-point 151.844 235.19299999999998 station -name 2012-SL17@Lavoir.Jean-Bernard
+point 151.844 235.19299999999998 station -name 2012-SL17@Lavoir
 
-point 153.244 217.343 station -name 2012-SL16@Lavoir.Jean-Bernard
+point 153.244 217.343 station -name 2012-SL16@Lavoir
 
-point 146.244 215.783 station -name 2012-SL15@Lavoir.Jean-Bernard
-
-endscrap
-
-
-
-scrap Lavoir8 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
-
-point 200.75 187.5 water-flow -orientation 178.6
-
-point 221.0 218.25 water-flow -orientation 197.3
-
-line arrow -reverse on
-  210.25 227.25
-  183.5 228.0
-endline
-
-line wall
-  223.75 191.0
-  223.75 191.0 219.5 191.25 221.75 194.75
-  224.0 198.25 225.0 216.25 226.5 219.75
-  228.0 223.25 229.25 228.5 226.0 229.25
-  222.75 230.0 213.5 232.5 213.5 232.5
-  smooth off
-endline
-
-line wall
-  210.0 179.25
-  210.0 179.25 202.25 191.0 204.0 191.25
-  205.75 191.5 205.5 191.5 208.25 192.0
-  211.0 192.5 209.25 194.0 211.5 194.0
-  213.75 194.0 217.75 191.0 217.75 191.0
-  smooth off
-endline
-
-line wall
-  209.75 220.25
-  209.75 220.25 217.25 218.75 216.25 215.5
-  215.25 212.25 202.25 212.0 201.5 207.5
-  200.75 203.0 208.0 199.25 206.75 198.5
-  205.5 197.75 205.25 198.25 203.5 197.5
-  201.75 196.75 191.75 193.75 192.0 188.75
-  192.25 183.75 198.5 174.25 198.5 174.25
-  smooth off
-endline
-
-point 206.53400000000002 180.433 station -name 2012-SL91@Lavoir.Jean-Bernard
-
-point 197.28400000000002 193.173 station -name 2012-SL93@Lavoir.Jean-Bernard
-
-point 208.344 193.69299999999998 station -name 2012-SL94@Lavoir.Jean-Bernard
-
-point 208.97400000000002 196.293 station -name 2012-SL95@Lavoir.Jean-Bernard
-
-point 213.44400000000002 201.363 station -name 2012-SL96@Lavoir.Jean-Bernard
-
-point 226.404 226.803 station -name 2012-SL99@Lavoir.Jean-Bernard
-
-point 215.284 225.043 station -name 2012-SL101@Lavoir.Jean-Bernard
+point 146.244 215.783 station -name 2012-SL15@Lavoir
 
 endscrap
+
+#scrap Lavoir8 -projection plan -station-names "" ".Jean-Bernard" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+## Commenté par Xav le 10/02/2013 car la topo ext fausse, et est remplacé par la nouvelle topo
+#point 200.75 187.5 water-flow -orientation 178.6
+
+#point 221.0 218.25 water-flow -orientation 197.3
+
+#line arrow -reverse on
+#  210.25 227.25
+#  183.5 228.0
+#endline
+
+#line wall
+#  223.75 191.0
+#  223.75 191.0 219.5 191.25 221.75 194.75
+#  224.0 198.25 225.0 216.25 226.5 219.75
+#  228.0 223.25 229.25 228.5 226.0 229.25
+#  222.75 230.0 213.5 232.5 213.5 232.5
+#  smooth off
+#endline
+
+#line wall
+#  210.0 179.25
+#  210.0 179.25 202.25 191.0 204.0 191.25
+#  205.75 191.5 205.5 191.5 208.25 192.0
+#  211.0 192.5 209.25 194.0 211.5 194.0
+#  213.75 194.0 217.75 191.0 217.75 191.0
+#  smooth off
+#endline
+
+#line wall
+#  209.75 220.25
+#  209.75 220.25 217.25 218.75 216.25 215.5
+#  215.25 212.25 202.25 212.0 201.5 207.5
+#  200.75 203.0 208.0 199.25 206.75 198.5
+#  205.5 197.75 205.25 198.25 203.5 197.5
+#  201.75 196.75 191.75 193.75 192.0 188.75
+#  192.25 183.75 198.5 174.25 198.5 174.25
+#  smooth off
+#endline
+
+#point 206.53400000000002 180.433 station -name 2012-SL91@Lavoir
+
+#point 197.28400000000002 193.173 station -name 2012-SL93@Lavoir
+
+#point 208.344 193.69299999999998 station -name 2012-SL94@Lavoir
+
+#point 208.97400000000002 196.293 station -name 2012-SL95@Lavoir
+
+#point 213.44400000000002 201.363 station -name 2012-SL96@Lavoir
+
+#point 226.404 226.803 station -name 2012-SL99@Lavoir
+
+#point 215.284 225.043 station -name 2012-SL101@Lavoir
+
+#endscrap
+
+ join base-racc Racc5
+ join Lavoir-new1 Lavoir7
+ join lavoir-sec Boeuf2
+
 
 

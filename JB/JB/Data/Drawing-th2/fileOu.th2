@@ -1,13 +1,13 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -133.25 -128.75 207.75 211.0
+##XTHERION## xth_me_area_adjust -157.5 -128.75 236.25 211.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.3696 1 1.0} {39.3697 2017-FD-0} FileOu-2017.xvi 0 {}
 
 
 
-scrap fileou1 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap filou1 -projection plan -station-names "" ".Jean-Bernard" -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
-point 56.699600000000004 20.1297 station -name 2017-FD-5@fileou.Jean-Bernard
+point 56.699600000000004 20.1297 station -name 2017-FD-5@fileou
 
 point 34.5 28.25 height -value [-10 m]
 
@@ -45,15 +45,15 @@ line wall
   smooth off
 endline
 
-point 51.7596 43.8797 station -name 2017-FD-3@fileou.Jean-Bernard
+point 51.7596 43.8797 station -name 2017-FD-3@fileou
 
-point 39.3696 39.3697 station -name 2017-FD-2@fileou.Jean-Bernard
+point 39.3696 39.3697 station -name 2017-FD-2@fileou
 
 endscrap
 
 
 
-scrap filou2 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap filou2 -projection plan -station-names "" ".Jean-Bernard" -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
 point 55.25 8.75 rope
 
@@ -77,7 +77,9 @@ line pit -reverse on
   smooth off
 endline
 
-point -4.0 81.75 label -text "File Où ?"
+point -28.25 81.75 label -text "<center>Réseau<br>Qui File Ou ?"
+
+point 107.0 63.5 label -text "<center>puits de<br>la Mèche"
 
 point 77.25 49.75 height -value [-11 m]
 
@@ -96,15 +98,15 @@ line wall
   smooth off
 endline
 
-point 51.2396 26.6297 station -name 2017-FD-6@fileou.Jean-Bernard
+point 51.2396 26.6297 station -name 2017-FD-6@fileou
 
-point 59.9296 20.5497 station -name 2017-FD-7@fileou.Jean-Bernard
+point 59.9296 20.5497 station -name 2017-FD-7@fileou
 
-point 58.3896 38.1697 station -name 2017-FD-8@fileou.Jean-Bernard
+point 58.3896 38.1697 station -name 2017-FD-8@fileou
 
-point 62.2096 43.0597 station -name 2017-FD-9@fileou.Jean-Bernard
+point 62.2096 43.0597 station -name 2017-FD-9@fileou
 
-point 60.7996 54.5497 station -name 2017-FD-10@fileou.Jean-Bernard
+point 60.7996 54.5497 station -name 2017-FD-10@fileou
 
 endscrap
 

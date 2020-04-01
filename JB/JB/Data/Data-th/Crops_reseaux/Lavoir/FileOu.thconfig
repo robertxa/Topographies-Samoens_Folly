@@ -33,7 +33,7 @@ layout my_layout
 	copy headerl 
 	copy langue-fr
 	  
-	doc-title "Réseau qui File Ou"
+	doc-title "Réseau Qui File Ou"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -66,7 +66,7 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau qui File Ou} 		
+			\cavename={Réseau Qui File Ou} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -82,7 +82,7 @@ layout my_layout-coupe
 	copy header_coupe 
 	copy langue-fr
   
-	doc-title "Réseau qui File Ou"
+	doc-title "Réseau Qui File Ou"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -115,7 +115,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau qui File Ou} 		
+			\cavename={Réseau Qui File Ou} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}

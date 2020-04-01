@@ -86,7 +86,7 @@ map MC-B19 -title "B19"
 	B19c1
 endmap
 
-map MC-lavoir -title "Réseau du Lavoir"
+map MC-lavoir-principal -title "Réseau du Lavoir"
 	browniesc1	# Erreur sur le scrap ???
 	break
 	lavoirc3
@@ -96,14 +96,18 @@ map MC-lavoir -title "Réseau du Lavoir"
 	lavoirc2
 	break
 	lavoirc4
-	break
-	lavoirc5
+	#break
+	#lavoirc5
 	break
 	lavoirc6
 	break
 	lavoirc7	# Problème de déformation du scrap
 	break
 	lavoirc8
+endmap
+
+map MC-Filou -title "Réseau Qui File Ou"
+	lavoirc5
 	break
 	fileouc1
 	break
@@ -330,7 +334,7 @@ map MC-gourance -title "La Gourance"
 	Gourance2013-c1
 endmap
 
-map MC-aval-cheneau
+map MC-aval-cheneau -title "Le cheneau et la salle du Chaos"
 	avalc4
 	break
 	avalc5
@@ -378,7 +382,7 @@ endmap
 ##########################################################################
 # Maps intermédiaire pour construire uniquement certaines parties du gouffre
 
-map MC-C37-Riviera
+map MC-C37-Riviera -title "Du C37 à la Riviera"
 	MC-escaladesoctobre
 	break
 	MC-C37
@@ -392,7 +396,7 @@ map MC-C37-Riviera
 	MC-rivieratot
 endmap
 
-map MC-B22-B21
+map MC-B22-B21 -title "B21 - B22"
 	MC-B21
 	break
 	MC-champselysees
@@ -404,7 +408,13 @@ map MC-B22-B21
 	MC-gadoue
 endmap
 
-map MC-B19-V11
+map MC-lavoir -title "Réseau du Lavoir"
+	MC-lavoir-principal
+	break
+	MC-Filou
+endmap
+
+map MC-B19-V11 -title "Réseaux du B19 et du V11"
 	MC-B19
 	break
 	MC-gadoue
@@ -422,7 +432,7 @@ map MC-B19-V11
 	MC-bulle
 endmap
 
-map MC-Branlots-J14
+map MC-Branlots-J14 -title "Réseaux des Branlots et du J14"
 	MC-echo	# Erreur dans le dessin, il est à revoir
 	break
 	MC-aven14J
@@ -434,7 +444,7 @@ map MC-Branlots-J14
 	MC-erreur
 endmap
 
-map MC-V4-V6-Mais
+map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	MC-bourguignons
 #	break
 #	M-cataboyau
@@ -460,7 +470,7 @@ map MC-V4-V6-Mais
 	MC-V4
 endmap
 
-map MC-Jean-Dupond
+map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
 	MC-rivieredebut
 	break
 	MC-solitaire
@@ -468,7 +478,7 @@ map MC-Jean-Dupond
 	MC-puitsAlain
 endmap
 
-map MC-Bivouac-500-Gourance
+map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"
 	MC-bivouac-500
 	break
 	MC-P11
@@ -480,13 +490,13 @@ map MC-Bivouac-500-Gourance
 	MC-gourance
 endmap
 
-map MC-aval-800
+map MC-aval-800 -title "Le Cheneau et la salle du Chaos"
 	MC-aval-cheneau
 	break
 	MC-laconscience
 endmap
 
-map MC-aval-900
+map MC-aval-900 -title "Du Bivouac -900 au siphon terminal"
 	MC-nuitblanche
 	break
 	MC-sezhommes
@@ -496,7 +506,7 @@ endmap
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
-map JB-coupe-tot
+map JB-coupe-tot -title "Gouffre Jean-Bernard"
 	MC-B22-B21
 	break
 	MC-C37-Riviera

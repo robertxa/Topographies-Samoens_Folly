@@ -90,32 +90,37 @@ map M-senecaliens -title "Galerie des Sénécaliens"
 	Senecaliens
 endmap
 
-map M-lavoir -title "Réseau du Lavoir"
+map M-lavoir-haut -title "Réseau du Lavoir"
 	brownies1
 	break
 	Arva1
 	break
 	Arva2
 	break
-	Lavoir-2
+	Lavoir2
 	break
-	Lavoir-1
+	Lavoir1
 	break
-	Lavoir-3
+	Lavoir3
+endmap
+
+map M-filou -title "Réseau Qui File Ou"
 	break
-	Lavoir-5
-	break
-	Lavoir7
+	Lavoir5
 	break
 	Lavoir-FD
 	break
-	fileou1
+	Boeuf1
+	break
+	filou1
 	break
 	filou2
 	break
 	fileou2019-SP1
-	break
-	Boeuf1
+endmap
+
+map M-lavoir-bas -title "Réseau du Lavoir"
+	Lavoir7
 	break
 	Boeuf2  
 	break
@@ -385,9 +390,6 @@ map M-chatons -title "Méandre des Chatons"
 	chatons
 endmap
 
-
-
-
 map M-solitaire -title "Réseau du Solitaire"
 	solitaire_plan
 	break
@@ -467,7 +469,7 @@ map M-P11 -title "La galerie du P11"
 	P11-h1
 endmap
 
-map M-plafond-Gourance -title "Réseau GoureToiDeLa"  
+map M-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
 	Goure2015b-5
 	break
 	Goure2015b-4
@@ -576,7 +578,7 @@ endmap
 ##########################################################################
 # Maps intermédiaire pour construire uniquement certaines parties du gouffre
 
-map M-C37-Riviera
+map M-C37-Riviera -title "Du C37 à la Riviera"
 	M-C37
 	break
 	M-escaladesoctobre
@@ -591,7 +593,7 @@ map M-C37-Riviera
 	M-rivieratot
 endmap
 
-map M-B22-B21
+map M-B22-B21 -title "B21 - B22"
 	M-B21
 	break
 	M-B22
@@ -603,8 +605,15 @@ map M-B22-B21
 	M-gadoue
 endmap
 
+map M-lavoir -title "Réseau du Lavoir"
+	M-lavoir-haut
+	break
+	M-filou
+	break
+	M-lavoir-bas
+endmap
 
-map M-B19-V11
+map M-B19-V11 -title "Réseaux du B19 et du V11"
 	M-senecaliens
 	break
 	M-B19
@@ -630,7 +639,7 @@ map M-B19-V11
 	M-bulle
 endmap
 
-map M-Branlots-J14
+map M-Branlots-J14 -title "Réseaux des Branlots et du J14"
 	M-montagnes_russes
 	break
 	M-pourquedalle
@@ -654,7 +663,7 @@ map M-Branlots-J14
 	M-P15
 endmap
 
-map M-V4-V6-Mais
+map M-V4-V6-Mais -title "V4 - V5 - V6"
 	M-bourguignons
 	break
 	M-cataboyau
@@ -684,7 +693,7 @@ map M-V4-V6-Mais
 	M-quitombe
 endmap
 
-map M-Jean-Dupond
+map M-Jean-Dupond -title "Le début de la rivière aval"
 	M-solitaire
 	break
 	M-puitsAlain
@@ -692,7 +701,7 @@ map M-Jean-Dupond
 	M-rivieredebut
 endmap
 
-map M-Bivouac-500-Gourance
+map M-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
 	M-bivouac-500
 	break
 	M-P11
@@ -710,7 +719,7 @@ map M-Bivouac-500-Gourance
 	M-nuitblanche
 endmap
 
-map M-aval-900
+map M-aval-900 -title "Bivouac -900 et siphons terminaux"
 	M-sezhommes
 	break
 	M-siphons

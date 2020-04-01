@@ -34,7 +34,7 @@ layout my_layout
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	map-comment "Réseau GoureToiDeLa, Samoëns, 74, France"
+	map-comment "Gouffre Jean-Bernard, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -55,7 +55,7 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Jean-Bernard} 		
+			\cavename={GoureToiDeLa \smallbreak Zone de la Gourance} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain, EPIA, Association Spéléologique Doubs Central (ASDC)}
@@ -80,7 +80,7 @@ layout my_layout-coupe
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	map-comment "Réseau GoureToiDeLa, coupe développée, Samoëns, 74, France"
+	map-comment "Gouffre Jean-Bernard, <it>coupe développée<ss>, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -103,7 +103,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Jean-Bernard} 		
+			\cavename={GoureToiDeLa - zone de la Gourance} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 	    \newtoks\club \club={Groupe Spéléologique Vulcain, EPIA, Association Spéléologique Doubs Central (ASDC)}

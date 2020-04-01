@@ -4,7 +4,7 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey GoureToi -title "GoureToiDeLa - Gourance"
+survey GoureToi -title "GoureToiDeLa - Zone de la Gourance"
 	
 	input th/GoureToiDeLa.th
 	input th/GoureToiDeLa2019.th
@@ -30,7 +30,7 @@ input th2/GoureToiDeLa2019.th2
 join Goure2019-SP2 Gourance2014-4
 join Goure2019-SP3 Gourance2014-4
 
-map GoureToiDeLa-Tot
+map GoureToiDeLa-Tot -title "GoureToiDeLa<br>Zone de la Gourance"
 	Goure2015b-5
 	break
 	Goure2015b-4

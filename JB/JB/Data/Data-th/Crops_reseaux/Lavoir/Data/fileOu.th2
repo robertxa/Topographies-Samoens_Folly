@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -133.25 -128.75 207.75 211.0
+##XTHERION## xth_me_area_adjust -157.5 -128.75 236.25 211.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.3696 1 1.0} {39.3697 2017-FD-0} FileOu-2017.xvi 0 {}
 
@@ -77,7 +77,9 @@ line pit -reverse on
   smooth off
 endline
 
-point -4.0 81.75 label -text "File Où ?"
+point -28.25 81.75 label -text "<center>Réseau<br>Qui File Ou ?"
+
+point 107.0 63.5 label -text "<center>puits de<br>la Mèche"
 
 point 77.25 49.75 height -value [-11 m]
 
