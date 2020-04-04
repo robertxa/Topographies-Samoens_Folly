@@ -247,21 +247,22 @@ map M-branlots -title "Réseau des Branlots"
 endmap
 
 map M-echo -title "Salle de l'Echo"
+	Colimaconaval
+	break
+	Echo
+	break
 	Echo2010-1
 	break
 	Echo2010-2
 	break
 	Echo2010-3
-	break
-	Colimaconaval
-	break
-	scrap2603
-	break
-	Echo
+	# join Echo Echo2010-3 --> A retravailler directement sur le dessin ?
 endmap
 	
 map M-reseau_passibas -title "Shunt du Passibas" 
 	Passibas
+	break
+	MP-Cristal
 endmap
   
 map M-frenesie -title "Galerie de la Frénésie"
@@ -640,11 +641,13 @@ map M-B19-V11 -title "Réseaux du B19 et du V11"
 endmap
 
 map M-Branlots-J14 -title "Réseaux des Branlots et du J14"
-	M-montagnes_russes
+	M-aven14J
 	break
 	M-pourquedalle
 	break
 	M-branlots
+	break
+	M-montagnes_russes
 	break
 	M-echo
 	break
@@ -654,13 +657,11 @@ map M-Branlots-J14 -title "Réseaux des Branlots et du J14"
 	break
 	M-pseudosiphons
 	break
-	M-erreur
-	break
-	M-aven14J
-	break
 	M-dino
 	break
 	M-P15
+	break
+	M-erreur
 endmap
 
 map M-V4-V6-Mais -title "V4 - V5 - V6"
@@ -724,6 +725,38 @@ map M-aval-900 -title "Bivouac -900 et siphons terminaux"
 	break
 	M-siphons
 endmap
+
+##########################################################################
+# Maps pour traversées
+map M-Tr-V11-V6-AB -title "Traversée V11 - V6 par les Aiguilles et les Branlots"
+	M-B19-V11
+	break
+	M-Branlots-J14
+	break
+	M-V4-V6-Mais
+endmap
+map M-Tr-V11-V6-AP -title "Traversée V11 - V6 par les Aiguilles et les Pseudos-Siphons"
+	M-B19-V11
+	break
+	M-Branlots-J14
+	break
+	M-V4-V6-Mais
+endmap
+map M-Tr-V11-V6-RB -title "Traversée V11 - V6 par le Raccourci et les Branlots"
+	M-B19-V11
+	break
+	M-Branlots-J14
+	break
+	M-V4-V6-Mais
+endmap
+map M-Tr-V11-V6-RP -title "Traversée V11 - V6 par le Raccourci et les Pseudos-Siphons"
+	M-B19-V11
+	break
+	M-Branlots-J14
+	break
+	M-V4-V6-Mais
+endmap
+
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet

@@ -1,0 +1,96 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+layout Entrances_coords_JBJB
+# Layout where we define the different variables that contain the text with 
+# the entrance coordinates we want to print in the header.
+# We need one variable per entrance.
+
+# This layout is called by the layout Coords_Header below
+
+	code tex-map
+		\def\thlocationJBJBa{V4    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
+		\def\thlocationJBJBb{V4bis --  Lat. : 46.102383 N ; Long. : 6.780567 E ; Alt. : 1843 m}
+		\def\thlocationJBJBc{V4ter --  Lat. : 46.102571 N ; Long. : 6.780500 E ; Alt. = 1854 m}
+		\def\thlocationJBJBd{V5    --  Lat. : 46.10212 N ; Long. : 6.78202 E ; Alt. : 1873 m}
+		\def\thlocationJBJBe{V6    --  Lat. : 46.10273 N ; Long. : 6.78067 E ; Alt. : 1853 m}
+		\def\thlocationJBJBf{V6b   --  Lat. : 46.10245 N ; Long. : 6.78135 E ; Alt. : 1863 m}
+		\def\thlocationJBJBg{J14   --  Lat. : 46.10377 N ; Long. : 6.78598 E ; Alt. : 1984 m}
+		\def\thlocationJBJBh{V11   --  Lat. : 46.10453 N ; Long. : 6.78850 E ; Alt. : 2048 m}
+		\def\thlocationJBJBi{B19   --  Lat. : 46.10422 N ; Long. : 6.79225 E ; Alt. : 2118 m}
+		\def\thlocationJBJBj{B21   --  Lat.: 46.1036667 N ; Long. : 6.79451667 E ; Alt. : 2237 m}
+		\def\thlocationJBJBk{B22   --  Lat. : 46.10452 N ; Long.: 6.79435 E ; Alt. : 2194 m}
+		\def\thlocationJBJBl{C37a  --  Lat. : 46.106700 N ; Long. : 6.799667 E ; Alt. : 2330 m}
+		\def\thlocationJBJBm{C37b  --  Lat. : 46.106733 N ; Long. : 6.79960 E ; Alt. : 2333 m}
+	endcode 
+	
+endlayout
+
+
+layout Coords_Header_JBJB
+# Layout that set the presentation for the entrance coordinates.
+	
+	copy Entrances_coords_JBJB
+	# it calls the layout above Entrances_coords where we defined the different 
+	# variables that contain the text with 
+	# the entrance coordinates we want to print in the header.
+	
+	code tex-map
+		\def\nostring{}
+		\def\thsizexl{}
+		\def\thsizel{}
+		\def\thsizem{}
+		\ifx\thsizexl\nostring\def\thsizexl{30}\else\fi
+		\ifx\thsizel\nostring\def\thsizel{24}\else\fi
+		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
+		
+		\ECoordinates={
+			\edef\tmp{\thlocationJBJBa} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thlocationJBJBa\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationJBJBb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBb\vss}	% You need to set your hskip
+			\fi
+			%\edef\tmp{\thlocationJBJBc} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBc\vss}
+			%\fi
+			%\edef\tmp{\thlocationJBJBd} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBd\vss}
+			%\fi
+			\edef\tmp{\thlocationJBJBe} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBe\vss}
+			\fi
+			\edef\tmp{\thlocationJBJBf} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBf\vss}
+			\fi
+			%\edef\tmp{\thlocationJBJBg} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBg\vss}
+			%\fi
+			\edef\tmp{\thlocationJBJBh} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBh\vss}
+			\fi
+			%\edef\tmp{\thlocationJBJBi} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBi\vss}
+			%\fi
+			%\edef\tmp{\thlocationJBJBj} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBj\vss}
+			%\fi
+			%\edef\tmp{\thlocationJBJBk} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBk\vss}
+			%\fi
+			%\edef\tmp{\thlocationJBJBl} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBl\vss}
+			%\fi
+			%\edef\tmp{\thlocationJBJBm} \ifx\tmp\empty \else
+			%	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBm\vss}
+			%\fi
+		}
+	endcode
+
+endlayout
+
+
+

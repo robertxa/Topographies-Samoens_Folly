@@ -210,18 +210,23 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
    # Au niveau telepherique
      join V4-2 pAlain
      
-     join P15aval Bourguignons1
+	join P15aval Bourguignons1
+    join P15aval Pseudosiphon2
+    join Erreur berreur1
+    join P15 berreur1
      
-     join Echo2010-1 Branlots
-     
+     join Echo2010-1 Branlots    
      join Echo2010-2 Branlots
-     
      join Echo2010-2 Branlots
+     join Echo2010-3 Branlots
+     join Branlots2 Echo2010-3
+     join Branlots2 Echo2010-2
+     join Echo Branlots2
+     join Branlots s-branlots1
+    # Autre join Avec Branlots2?????
      
      # Erreur dans le 3D avec la ligne suivante... A CORRIGER
      join Echo2010-2 Colimaconaval
-     
-     join Echo2010-3 Branlots
 
 	 join brownies1 Arva2 
      join Lavoir-new1 Lavoir7
@@ -246,11 +251,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
      
      join reverbere affluent-C14-2
      
-     join Branlots s-branlots1
-    # Autre join Avec Branlots2?????
-    
-     join Erreur berreur1
-     join P15 berreur1
      
      join dino-1 Erreur -count 2
           

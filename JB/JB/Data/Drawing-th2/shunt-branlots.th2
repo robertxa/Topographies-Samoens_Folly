@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -152.25 -128.0 417.5 326.0
+##XTHERION## xth_me_area_adjust -128.75 -128.75 376.25 303.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.373999999999995 1 1.0} {118.108 2013-xac-0} shunt-branlots-2013.xvi 0 {}
 
@@ -11,7 +11,7 @@ point 231.934 117.278 station -name 2013-xac-14@shunt-branlots.Jean-Bernard
 
 point 215.144 148.858 station -name 2013-xac-13@shunt-branlots.Jean-Bernard
 
-point 235.25 143.5 height -value [+20 m]
+point 247.0 140.5 height -value [+20 m]
 
 point 203.0 168.0 water-flow -orientation 154.5
 
@@ -86,7 +86,7 @@ line contour
   smooth off
 endline
 
-point 229.5 148.5 rope
+point 243.5 155.75 rope
 
 point 76.0 96.25 rope
 
@@ -94,9 +94,9 @@ point 68.75 110.75 height -value [-10 m]
 
 point 147.75 123.5 air-draught -orientation 45.2 -subtype summer
 
-point 199.25 174.5 continuation
+point 199.25 174.5 continuation -attr Code E -text "Escalade dans la faille à continuer"
 
-point 228.5 160.25 continuation
+point 228.5 160.25 continuation -attr Code E -text "Escalade dans la faille à continuer"
 
 line pit
   228.0 139.5
@@ -174,6 +174,7 @@ line wall
   74.75 77.0 67.75 87.25 68.5 90.25
   69.25 93.25 69.25 94.0 67.75 98.5
   66.25 103.0 48.75 113.75 48.0 117.5
+  smooth off
 endline
 
 line wall
@@ -201,6 +202,7 @@ line wall
   210.75 144.25
   210.75 144.25 211.5 150.25 212.75 147.75
   214.0 145.25 217.5 139.25 217.75 134.25
+  smooth off
 endline
 
 line wall

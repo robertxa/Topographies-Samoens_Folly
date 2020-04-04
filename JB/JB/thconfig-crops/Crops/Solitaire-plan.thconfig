@@ -31,12 +31,12 @@ encoding  utf-8
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
 
-source ../Data/jb.th
-source ../Data/jb-maps-plan
+source ../../Data/jb.th
+source ../../Data/jb-maps-plan
 #source jb-maps-plan
 
 # Add config file
-input ../../../config.thc 
+input ../../../../config.thc 
 
 # Add the entrance coordinates
 #input ../legendes/entrances_coordinates.th
@@ -47,16 +47,16 @@ input ../../../config.thc
 # a utiliser (UIS, etc) ou imprimer des explications des
 # symboles
 
-# Debut de la definition du Layout "xviexport"
-layout xviexport
-	# echele auquel on veut faire la topo
-	scale 1 1000
-	# taille de la grille
-	grid-size 10 10 10 m
-	# mettre la grille en arrière plan
-	grid bottom
-endlayout
-# fin de la définition du layout "xviexport"
+## Debut de la definition du Layout "xviexport"
+#layout xviexport
+#	# echele auquel on veut faire la topo
+#	scale 1 1000
+#	# taille de la grille
+#	grid-size 10 10 10 m
+#	# mettre la grille en arrière plan
+#	grid bottom
+#endlayout
+## fin de la définition du layout "xviexport"
 
 
 #debut de la definition du layout "my_layout"
@@ -131,7 +131,8 @@ layout my_layout
 	# soit place en bas, a gauche, ou une autre combination
 	#map-header 0 100 nw
 	#map-header 5 50 e
-	map-header 25 35 se
+	#map-header 25 35 se
+	map-header 53 0 sw
 
 	# arrière plan de la manchette
 	map-header-bg off
@@ -140,20 +141,21 @@ layout my_layout
 	# seulement la legende des symboles dessines sur la topo, si l'on veut
 	# pour tous les symboles, utilises ou pas, il faut indiquer "all".
 	# "legend off" = pas de legende
-	legend on
+	legend off
 
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 24 cm
+	#legend-width 15 cm
+	legend-width 23 cm
 
 	# echelle graphique 100 m ampleur
-	scale-bar 100 m
+	scale-bar 150 m
 	#scale-bar 500 m
 
 	# Un commentaire a ajounter au titule, on pourrait indiquer ici
 	# la mairie ou est place la cavite dont le nom est probablement
 	# le titule de la topo.
 	#map-comment "Plan, Projection UTM32, Samoëns, 74, France"
-	map-comment "<it>Plan<ss> - Samoëns, 74, France"
+	map-comment "<it>Plan<ss> - Gouffre Jean-Bernard - Samoëns, 74, France"
 	#map-comment "Synthèse 2014"
  
 	# Afficher les statistiques d'explo par équipe/nom. C'est lourd
@@ -193,7 +195,7 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Jean-Bernard} 
+			\cavename={Réseau du Solitaire} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -203,6 +205,8 @@ layout my_layout
 	endcode   
 	
 	# Add logos to the map
+	
+	map-image 0 100 sw ../Data/Data-th/Crops_reseaux/Solitaire/Outputs/2D/Crops/EV-solitaire-coupe2019.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -231,24 +235,6 @@ endlayout
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 #select JB-plan-tot
 #select M-sezhommes
-select  M-aval-900
+select  M-Jean-Dupond
 
- export map -projection plan -fmt pdf -o ../Outputs/2D/Crops/Sezhommes-jb-Xav-2020-plan1000_TEST.pdf -layout my_layout
-#export map -projection plan -fmt pdf -o ../Outputs/2D/Crops/Sezhommes-jb-Xav-2020-plan5000.pdf -layout my_layout
-
-# Export des fichiers ESRI
-# export model -fmt esri -o Outputs/3D/jb-Xav-2020 #-layout my_layout
-
-# Export du fichier 3d pour Loch
-# export model -o Outputs/3D/jb-Xav-2020.lox
-
-# Export des fichiers kml
-#export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2020.kml
-
-# export des statistiques de l'ensemble de la cavité
-#    Attention, les points de départ et d'arrivée de chaque centreline correspondent
-#    au second point et à l'avant dernier point de la série.
-#export database -o Outputs/Lists/DatabaseJB-2020.sql
-#export continuation-list -o Outputs/Lists/Continuations-JB-plan-2020.html
-#export survey-list -location on -o Outputs/Lists/Topographies_2020.html
-#export cave-list -location on -o Outputs/Lists/Cavites_2020.html
+ export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-plan1000.pdf -layout my_layout

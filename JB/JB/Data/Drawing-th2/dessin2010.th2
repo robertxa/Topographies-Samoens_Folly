@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 14655.5769 8238.240600000001
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} ../synthese_plan2011.xvi 0 {}
 
 
@@ -61,7 +61,7 @@ endscrap
 
 scrap Echo2010-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.50240162 0.0 m]
 
-point 9287.0 4834.5 label -orientation 315.6 -text "Voute basse"
+point 9289.5 4845.0 label -orientation 315.6 -text "Voute basse"
 
 line pit
   9274.5 4789.25
@@ -136,11 +136,11 @@ line wall
   9141.25 4891.5
   9141.25 4891.5 9169.5 4865.25 9173.25 4861.25
   9177.0 4857.25 9189.25 4838.25 9188.5 4834.25
-  9187.75 4830.25 9171.0 4805.25 9171.0 4805.25
+  9187.75 4830.25 9175.25 4806.0 9175.25 4806.0
   smooth off
 endline
 
-point 9273.0 4809.75 label -text "P27"
+point 9223.5 4800.0 label -text "P27"
 
 point 9259.5 4818.25 label -text "Etr."
 
@@ -169,8 +169,8 @@ endline
 point 9238.75 4803.25 water-flow -orientation 111.9
 
 line wall
-  9180.25 4799.0
-  9180.25 4799.0 9195.5 4824.25 9199.25 4827.0
+  9181.0 4800.75
+  9181.0 4800.75 9195.5 4824.25 9199.25 4827.0
   9203.0 4829.75 9217.25 4839.5 9220.75 4839.25
   9224.25 4839.0 9231.0 4840.0 9234.5 4838.25
   9236.63 4837.19 9233.5 4839.0 9234.5 4832.25
@@ -224,8 +224,8 @@ line wall -subtype invisible
 endline
 
 line wall
-  9221.0 4775.25
-  9221.0 4775.25 9235.5 4774.75 9239.0 4773.0
+  9218.5 4775.25
+  9218.5 4775.25 9235.5 4774.75 9239.0 4773.0
   9242.5 4771.25 9229.75 4743.25 9250.75 4744.5
   9271.75 4745.75 9280.75 4760.5 9280.25 4771.0
   9279.75 4781.5 9274.0 4787.25 9274.0 4787.25
@@ -234,7 +234,7 @@ endline
 
 point 9285.0 4781.0 water-flow -orientation 256.3
 
-point 9295.25 4783.25 continuation
+point 9295.25 4783.25 continuation -attr Code E -text "Gros puits remontant arrosé à remonter en escalade (>80 m ?)"
 
 point 9321.25 4767.25 label -text "Salle de l'Echo"
 
@@ -242,7 +242,7 @@ line floor-meander
   9260.75 4760.75
   9260.75 4760.75 9251.5 4767.5 9246.5 4771.0
   9241.5 4774.5 9241.75 4778.0 9236.0 4778.25
-  9230.25 4778.5 9220.75 4780.0 9220.75 4780.0
+  9230.25 4778.5 9217.25 4780.25 9217.25 4780.25
   smooth off
 endline
 
@@ -257,7 +257,7 @@ endline
 line wall
   9246.0 4795.0
   9246.0 4795.0 9242.0 4788.5 9237.75 4787.75
-  9233.5 4787.0 9219.25 4787.75 9219.25 4787.75
+  9233.5 4787.0 9217.5 4787.75 9217.5 4787.75
   smooth off
 endline
 

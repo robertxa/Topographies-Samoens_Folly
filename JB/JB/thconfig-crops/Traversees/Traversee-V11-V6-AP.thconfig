@@ -4,62 +4,22 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-# INTRO
-
-# le signe "#" en début de ligne signifie que la ligne est commentee. Elle ne
-# sera donc pas lue lors de la compilation. 
-
-# Dans ce fichier on met les specifications generales, à savoir
-# dans quel fichier sont les donnees topo, l'aspect que l'on veut
-# donner aux topos imprimees (layout) et ce que l'on 
-# veut comme resultat : map, ou atlas ou 3D
-# ou donnees en format SQL
-
-# Alors, on peut fractioner ce fichier en trois parts:
-# - source, pour specifier les fichiers ou sont les donnees topo/dessin
-# - layout, pour specifier la composition du document a imprimer
-# - export: map, atlas, etc
-
 
 # 1-SOURCES 
-# La ligne source specifie le fichier ou sont les donnees topo
-# jb.th" 
+# La ligne source specifie le fichier ou sont les donnees topos
 
-# (Au fichier "jb.th" il faudra avoir une ligne 
-# "input "nomducavite.th2" pour specifier le fichier ou se trouvent
-# les donnees du dessin, comme ça, ce fichier thconfig appellera 
-# "jb.th" et a leur tour, "jb.th" appellera
-# "jb-dessin.th2")
-
-source ../Data/jb.th
-source ../Data/jb-maps-plan
-#source jb-maps-plan
+source ../../Data/jb.th
+source ../../Data/jb-maps-plan.th
 
 # Add config file
-input ../../../config.thc 
+input ../../../../config.thc 
 
 # Add the entrance coordinates
-#input ../legendes/entrances_coordinates.th
+input legendes-Traversees/entrances_coordinates-V11-V6.th
 
   
 # 2-LAYOUT
-# Ici, on peut specifier des choses comme les symboles
-# a utiliser (UIS, etc) ou imprimer des explications des
-# symboles
 
-## Debut de la definition du Layout "xviexport"
-#layout xviexport
-#	# echele auquel on veut faire la topo
-#	scale 1 1000
-#	# taille de la grille
-#	grid-size 10 10 10 m
-#	# mettre la grille en arrière plan
-#	grid bottom
-#endlayout
-## fin de la définition du layout "xviexport"
-
-
-#debut de la definition du layout "my_layout"
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
@@ -84,19 +44,18 @@ layout my_layout
 	# controlle le gros des lignes, rotation, etc, convenable
 	# pour faire l'ampliation-reduction entre dessin et
 	# le resultat de l'imprimante
-
 	# C'est tres important s'assurer que la configuration de
 	# l'imprimante ne specifie pas l'option "Fit in page"
 	# ou similaire, sinon, l'echelle sera change pendant
 	# l'impression! 
-	scale 1 1000
+	scale 1 2000
 
-	# Voici une ligne pour specifier qu'il faut imprimer une grille
-	# au dessous de la topo
+	# echelle graphique 100 m ampleur
+	scale-bar 200 m
+	#scale-bar 500 m
+
+
 	#grid bottom
-
-	# Une ligne pour specifier que la grille est 1000x1000x1000 metres
-	# (Trois dimensions, oui, ça sert pour la coupe aussi)
 	#grid-size 1000 1000 1000 m  
 	grid off
  
@@ -104,7 +63,8 @@ layout my_layout
 	# une couleur de fond, 85% blanc = 15% noir
 	#color map-bg 90
 	#color map-bg 85
-	color map-fg [100 100 80]  
+	#color map-fg [100 100 80]	# jaune
+	color map-fg [96 40 11]	# Carotte (244, 102, 27)
   
 	# la topo est transparente (on peut voir les galeries sousjacentes)
 	# C'est on par defaut, donc, pas vraiment besoin de specifier
@@ -131,8 +91,7 @@ layout my_layout
 	# soit place en bas, a gauche, ou une autre combination
 	#map-header 0 100 nw
 	#map-header 5 50 e
-	#map-header 25 35 se
-	map-header 53 0 sw
+	map-header 0 55 sw
 
 	# arrière plan de la manchette
 	map-header-bg off
@@ -144,35 +103,29 @@ layout my_layout
 	legend off
 
 	# Par defaut, la legende est de 14 cm de largeur
-	#legend-width 15 cm
-	legend-width 23 cm
-
-	# echelle graphique 100 m ampleur
-	scale-bar 150 m
-	#scale-bar 500 m
+	legend-width 24 cm
+	#legend-columns 3
 
 	# Un commentaire a ajounter au titule, on pourrait indiquer ici
 	# la mairie ou est place la cavite dont le nom est probablement
 	# le titule de la topo.
 	#map-comment "Plan, Projection UTM32, Samoëns, 74, France"
-	map-comment "<it>Plan<ss> - Gouffre Jean-Bernard - Samoëns, 74, France"
-	#map-comment "Synthèse 2014"
+	map-comment "<bf>Gouffre Jean-Bernard<ss> - <it>Plan<ss> - Samoëns, 74, France"
  
 	# Afficher les statistiques d'explo par équipe/nom. C'est lourd
 	# si la cavité est importante et qu'il y a beaucoup d'explorateurs
 	statistics explo-length off
+	statistics explo off
 	# Afficher le developpement et la profondeur de la cavite
 	statistics topo-length off
+	statistics topo off
+	code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
+	
 	# Afficher un copyright
 	statistics copyright all
-  
-	# Modifier l'aspect et les données des statistiques de longueur affichees
-	#code tex-map
-	#     \cavelength{21460\thinspace{}m} 
-	#+ 150\thinspace{}m estimés}
-	#     \cavedepth{-1602\thinspace{}m}
-	#   endcode  
-  
   
 	# Dessin ou pas du cheminement topo
 	symbol-hide line survey
@@ -195,7 +148,7 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau du Solitaire} 
+			\cavename={Traversée V11 - V6} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -205,36 +158,22 @@ layout my_layout
 	endcode   
 	
 	# Add logos to the map
-	
-	map-image 0 100 sw ../Data/Data-th/Crops_reseaux/Solitaire/Outputs/2D/Crops/EV-solitaire-coupe2019.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
 
 
 # 3-EXPORT
-# Voici les lignes pour exporter le cheminement au format xvi
-#export map -proj plan -fmt xvi -layout xviexport -o synthese_plan2020.xvi
-#export map -proj extended -fmt xvi -layout xviexport -o synthese_coupe2020.xvi
-
-
-#select M-C37-Riviera
-#select M-B22-B21
-#select M-B19-V11
-#select M-Branlots-J14
-#select M-V4-V6-Mais
-#select M-Jean-Dupond
-#select M-Bivouac-500-Gourance
-#select M-aval-900
-
-
 # Export des fichiers pdf, plan et coupe. 
-#select aspiro 
-#  select JB-total@jb.th -map-level 0
-#  select JB-rev@jb -map-level 0
-# ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-#select JB-plan-tot
-#select M-sezhommes
-select  M-Jean-Dupond
 
- export map -projection plan -fmt pdf -o ../Outputs/2D/Crops/Solitaire-jb-Xav-2020-plan1000_TEST.pdf -layout my_layout
+#select  M-Tr-V11-V6-AB
+#export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Aiguilles_Branlots-plan1000.pdf -layout my_layout
+
+#select  M-Tr-V11-V6-RB
+#export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Raccourci_Branlots-plan1000.pdf -layout my_layout
+
+select  M-Tr-V11-V6-AP
+export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Aiguilles_pseudoS-plan1000.pdf -layout my_layout
+
+#select  M-Tr-V11-V6-RP
+#export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Raccourci_pseudoS-plan1000.pdf -layout my_layout
