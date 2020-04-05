@@ -1,0 +1,213 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
+##XTHERION## xth_me_area_zoom_to 200
+###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+
+
+
+
+scrap Passibas -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+
+line wall
+  8897.0 4864.0
+  8897.0 4864.0 8895.5 4867.5 8894.25 4868.75
+  8893.0 4870.0 8886.75 4892.5 8886.75 4892.5
+  smooth off
+  8886.75 4892.5 8885.5 4892.75 8885.5 4894.5
+  8885.5 4896.25 8886.5 4897.0 8885.5 4897.75
+  8884.5 4898.5 8882.75 4897.75 8882.0 4899.75
+  8881.25 4901.75 8880.0 4905.0 8879.25 4908.25
+  8878.5 4911.5 8880.5 4913.0 8877.5 4915.0
+  8874.5 4917.0 8866.87 4917.87 8868.0 4919.0
+  8870.5 4921.5 8870.75 4921.25 8872.25 4923.0
+  8873.75 4924.75 8881.75 4929.5 8882.0 4932.0
+  8882.25 4934.5 8881.5 4938.25 8883.25 4941.5
+  8885.0 4944.75 8889.0 4949.0 8889.75 4951.25
+  8890.5 4953.5 8888.25 4954.0 8891.75 4958.0
+  8895.25 4962.0 8896.75 4962.75 8897.25 4965.0
+  8897.75 4967.25 8899.5 4973.75 8899.5 4973.75
+  smooth off
+endline
+
+line wall
+  8896.25 4976.75
+  8896.25 4976.75 8898.03 4966.93 8895.89 4966.09
+  8893.75 4965.25 8889.25 4960.25 8889.0 4959.25
+  8888.75 4958.25 8887.75 4954.75 8887.0 4953.5
+  8886.25 4952.25 8881.5 4946.0 8880.75 4944.0
+  8880.0 4942.0 8880.75 4937.5 8878.75 4934.5
+  8876.75 4931.5 8870.75 4928.0 8869.5 4926.5
+  8868.25 4925.0 8867.5 4923.25 8866.75 4922.25
+  8866.0 4921.25 8863.25 4920.75 8864.0 4918.25
+  8864.75 4915.75 8871.75 4915.5 8872.5 4913.25
+  8873.25 4911.0 8874.75 4910.75 8875.25 4906.75
+  8875.75 4902.75 8877.25 4899.0 8878.5 4897.25
+  8879.75 4895.5 8880.75 4897.25 8881.5 4895.25
+  8882.25 4893.25 8881.25 4891.5 8881.25 4891.5
+  smooth off
+  8881.25 4891.5 8883.5 4892.0 8884.0 4889.5
+  8884.5 4887.0 8892.0 4862.0 8893.75 4862.0
+  8895.5 4862.0 8897.5 4862.5 8897.0 4864.0
+  smooth off
+endline
+
+point 8895.89 4966.09 station -name Fi.1@jb-amonts2.Jean-Bernard
+
+point 8890.0 4958.24 station -name Fi.2@jb-amonts2.Jean-Bernard
+
+point 8888.73 4953.36 station -name Fi.3@jb-amonts2.Jean-Bernard
+
+point 8881.86 4942.44 station -name Fi.4@jb-amonts2.Jean-Bernard
+
+point 8880.36 4933.44 station -name Fi.5@jb-amonts2.Jean-Bernard
+
+point 8868.68 4921.93 station -name Fi.7@jb-amonts2.Jean-Bernard
+
+point 8865.44 4918.87 station -name Fi.8@jb-amonts2.Jean-Bernard
+
+point 8874.98 4914.04 station -name Fi.9@jb-amonts2.Jean-Bernard
+
+point 8877.15 4907.28 station -name Fi.10@jb-amonts2.Jean-Bernard
+
+point 8880.86 4898.28 station -name Fi.11@jb-amonts2.Jean-Bernard
+
+point 8883.18 4893.71 station -name Fi.13@jb-amonts2.Jean-Bernard
+
+point 8894.52 4864.04 station -name Fi.18@jb-amonts2.Jean-Bernard
+
+endscrap
+
+
+
+scrap MP-Cristal -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+
+point 8886.5 4909.25 label -text "R3"
+
+point 8868.5 4953.5 label -orientation 304.3 -text "Passibas"
+
+point 8819.25 4775.0 label -text "Blocs calcifiés"
+
+point 8804.0 4851.75 label -orientation 294.8 -text "Galerie Cristal"
+
+point 8814.25 4822.0 crystal
+
+point 8837.0 4852.5 crystal
+
+point 8820.0 4838.0 crystal
+
+point 8826.0 4822.5 crystal
+
+line gradient
+  8857.25 4893.25
+  8836.5 4906.5
+endline
+
+line contour
+  8852.75 4885.0
+  8852.75 4885.0 8846.5 4890.0 8851.5 4893.5
+  8856.5 4897.0 8860.0 4902.5 8860.0 4902.5
+  smooth off
+endline
+
+line contour
+  8836.0 4899.0
+  8836.0 4899.0 8834.75 4903.25 8838.25 4904.5
+  8841.75 4905.75 8848.75 4907.25 8848.75 4907.25
+  smooth off
+endline
+
+line contour
+  8839.75 4895.5
+  8839.75 4895.5 8839.5 4897.75 8842.25 4901.0
+  8845.0 4904.25 8852.0 4904.25 8852.0 4904.25
+  smooth off
+endline
+
+line pit
+  8878.0 4889.75
+  8878.0 4889.75 8874.5 4890.5 8875.25 4894.5
+  8876.0 4898.5 8875.75 4900.25 8875.75 4900.25
+  smooth off
+endline
+
+point 8819.25 4785.25 flowstone-choke
+
+line wall
+  8832.75 4903.0
+  8832.75 4903.0 8842.75 4899.5 8842.75 4895.5
+  8842.75 4891.5 8840.5 4887.5 8838.5 4882.75
+  8836.5 4878.0 8827.75 4860.5 8826.0 4857.25
+  8824.25 4854.0 8819.75 4852.5 8819.75 4848.75
+  8819.75 4845.0 8828.5 4842.75 8825.75 4839.5
+  8823.0 4836.25 8815.5 4832.25 8815.5 4828.25
+  8815.5 4824.25 8820.25 4815.5 8819.75 4811.0
+  8819.25 4806.5 8816.5 4801.0 8816.5 4798.75
+  8816.5 4796.5 8816.25 4788.25 8816.25 4788.25
+  smooth off
+endline
+
+point 8868.0 4906.25 rope
+
+line wall
+  8896.0 4866.75
+  8896.0 4866.75 8890.25 4870.75 8891.0 4872.0
+  8891.75 4873.25 8896.25 4874.0 8896.0 4877.0
+  8895.75 4880.0 8895.5 4880.0 8894.5 4883.0
+  8893.5 4886.0 8889.75 4889.75 8888.0 4891.0
+  8886.25 4892.25 8874.5 4899.5 8869.5 4900.0
+  8864.5 4900.5 8854.75 4898.0 8852.25 4900.0
+  8849.75 4902.0 8836.25 4911.75 8836.25 4911.75
+  smooth off
+endline
+
+line wall
+  8821.75 4788.5
+  8821.75 4788.5 8819.5 4794.25 8821.0 4796.75
+  8822.5 4799.25 8826.0 4807.25 8825.25 4810.5
+  8824.5 4813.75 8820.75 4823.25 8822.75 4825.5
+  8824.75 4827.75 8831.25 4831.5 8832.5 4836.75
+  8833.75 4842.0 8827.5 4842.5 8828.25 4846.5
+  8829.0 4850.5 8827.25 4848.25 8832.25 4852.5
+  8837.25 4856.75 8847.0 4872.5 8847.25 4876.0
+  8847.5 4879.5 8848.25 4888.25 8851.75 4888.25
+  8855.25 4888.25 8865.5 4890.0 8867.0 4890.0
+  8868.5 4890.0 8879.75 4893.75 8881.25 4891.5
+  8882.75 4889.25 8889.25 4886.25 8889.75 4884.25
+  8890.25 4882.25 8891.75 4880.75 8891.0 4879.25
+  8890.25 4877.75 8886.75 4877.75 8886.75 4875.25
+  8886.75 4872.75 8888.25 4868.75 8888.25 4868.75
+  smooth off
+  8894.52 4864.04
+endline
+
+point 8818.37 4788.66 station -name Fj.1@jb-amonts2.Jean-Bernard
+
+point 8818.33 4797.4 station -name Fj.2@jb-amonts2.Jean-Bernard
+
+point 8822.57 4810.63 station -name Fj.3@jb-amonts2.Jean-Bernard
+
+point 8817.21 4827.78 station -name Fj.4@jb-amonts2.Jean-Bernard
+
+point 8828.77 4839.44 station -name Fj.5@jb-amonts2.Jean-Bernard
+
+point 8821.3 4846.84 station -name Fj.6@jb-amonts2.Jean-Bernard
+
+point 8828.54 4854.13 station -name Fj.7@jb-amonts2.Jean-Bernard
+
+point 8840.81 4878.48 station -name Fj.8@jb-amonts2.Jean-Bernard
+
+point 8827.73 4913.33 station -name Fi.23@jb-amonts2.Jean-Bernard
+
+point 8851.32 4896.43 station -name Fi.21@jb-amonts2.Jean-Bernard
+
+point 8868.03 4897.69 station -name Fi.20@jb-amonts2.Jean-Bernard
+
+point 8893.23 4881.94 station -name Fi.14@jb-amonts2.Jean-Bernard
+
+point 8893.53 4877.68 station -name Fi.15@jb-amonts2.Jean-Bernard
+
+point 8888.92 4873.28 station -name Fi.16@jb-amonts2.Jean-Bernard
+
+endscrap
+
+

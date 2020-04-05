@@ -4,61 +4,6 @@ encoding  utf-8
 ##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} ../synthese_plan2011.xvi 0 {}
 
 
-
-scrap Mais-2010 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.50240162 0.0 m]
-
-point 7879.4 5208.99 station -name Ij.2@jb-amonts2.Jean-Bernard
-
-point 7866.11 5209.69 station -name Ij.4@jb-amonts2.Jean-Bernard
-
-point 7874.38 5204.4 station -name Ij.3@jb-amonts2.Jean-Bernard
-
-point 7866.54 5197.72 station -name Ij.6@jb-amonts2.Jean-Bernard
-
-line pit
-  7860.75 5202.5
-  7860.75 5202.5 7869.0 5198.0 7870.5 5200.25
-  7872.0 5202.5 7872.75 5205.5 7870.0 5206.25
-  7867.25 5207.0 7859.25 5207.5 7859.25 5207.5
-  smooth off
-endline
-
-point 7859.25 5191.25 continuation
-
-line pit
-  7869.5 5195.5
-  7861.5 5200.0
-endline
-
-line pit
-  7881.5 5203.0
-  7881.5 5203.0 7878.25 5202.75 7877.25 5204.75
-  7876.25 5206.75 7875.25 5211.25 7875.25 5211.25
-  smooth off
-endline
-
-line wall
-  7865.5 5194.5
-  7865.5 5194.5 7865.75 5193.25 7869.5 5195.5
-  7873.25 5197.75 7878.23 5201.61 7879.0 5203.25
-  7881.57 5208.72 7879.0 5206.75 7879.0 5206.75
-  smooth off
-endline
-
-line wall
-  7877.5 5210.25
-  7877.5 5210.25 7875.25 5206.5 7874.0 5208.25
-  7872.75 5210.0 7870.25 5213.75 7866.75 5213.0
-  7863.25 5212.25 7857.75 5211.5 7861.0 5207.75
-  7864.25 5204.0 7863.5 5198.75 7863.5 5198.75
-  smooth off
-  7862.25 5197.25
-endline
-
-endscrap
-
-
-
 scrap Echo2010-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.50240162 0.0 m]
 
 point 9289.5 4845.0 label -orientation 315.6 -text "Voute basse"
