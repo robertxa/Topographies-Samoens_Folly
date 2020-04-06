@@ -1,7 +1,8 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
 ##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_image_insert {13021.23 0 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+
 
 
 scrap gourance5 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
@@ -40,7 +41,7 @@ point 3608.75 2329.0 water-flow -orientation 317.6
 
 point 3685.0 2249.75 water-flow -orientation 317.6
 
-point 3515.5 2389.25 continuation
+point 3515.5 2389.25 continuation -attr Code S -attr Cavite JB -attr Reseau "Siphon 69" -text "Siphon à plonger, arrivée du Collecteur, eau claire"
 
 point 3307.5 2234.25 water-flow -orientation 257.5
 
@@ -286,6 +287,7 @@ point 3392.37 2593.88 station -name Kh.46@jb-riv2.Jean-Bernard
 endscrap
 
 
+
 scrap riv-10 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 area water
@@ -339,7 +341,7 @@ point 2827.0 2177.25 water-flow -orientation 274.7
 
 point 2811.0 2153.5 water-flow -orientation 192.1
 
-point 2814.75 2222.75 continuation
+point 2814.75 2222.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Rivière vers -800 m" -text "Peut-être une arrivée à atteindre en plafond, E20 mini"
 
 line pit
   2821.25 2215.5
@@ -928,4 +930,5 @@ point 2792.57 2069.4 station -name Kk.61@jb-riv2.Jean-Bernard
 point 2799.88 2099.61 station -name Kk.62@jb-riv2.Jean-Bernard
 
 endscrap
+
 

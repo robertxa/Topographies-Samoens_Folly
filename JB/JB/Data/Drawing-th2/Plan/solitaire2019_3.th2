@@ -76,7 +76,7 @@ endscrap
 
 scrap Solitaire-SP-2019c2 -projection plan -author 2019 "Xavier Robert" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2647.6864 -128.0 0.0 0.0 70.50243456 0.0 m]
 
-point 464.0 597.5 continuation -attr Code E -text "Puits remontant de 11 m à escalader ;  Rejoint peut-être le point 2019-FD-562"
+point 464.0 597.5 continuation -attr Code E -text "Puits remontant de 11 m à escalader ;  Rejoint peut-être le point 2019-FD-562" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 point 426.0 554.5 height -value [+11 m]
 
@@ -245,7 +245,7 @@ endline
 
 point 392.0 489.5 altitude -align top-left
 
-point 426.5 511.5 continuation -attr Code P -text "P6 à descendre ; Rejoint l'actif du Solitaire"
+point 426.5 511.5 continuation -attr Code P -text "P6 à descendre ; Rejoint l'actif du Solitaire" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 point 399.0 460.5 height -value [-6 m]
 

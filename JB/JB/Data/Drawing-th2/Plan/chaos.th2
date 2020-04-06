@@ -1,8 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
-
+##XTHERION## xth_me_area_zoom_to 400
 
 
 
@@ -401,9 +399,9 @@ point 2324.0 1698.5 blocks
 
 point 2315.0 1700.0 blocks
 
-point 2308.25 1715.0 continuation
+point 2308.25 1715.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Bivouac -900" -text "A revoir ?"
 
-point 2324.0 1705.5 continuation
+point 2324.0 1705.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Bivouac -900" -text "A revoir ?"
 
 line wall -subtype blocks
   2304.5 1717.0
@@ -531,6 +529,7 @@ point 2355.7 1764.84 station -name Kl.9@jb-riv2.Jean-Bernard
 endscrap
 
 
+
 scrap conscience-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 2436.25 1742.0 gypsum
@@ -597,9 +596,9 @@ point 2374.75 1741.0 label -text "E4"
 
 point 2454.0 1759.75 label -text "Laminoir"
 
-point 2494.75 1754.0 continuation
+point 2494.75 1754.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Bivouac -900" -attr CA "Peut-être très léger" -text "Méandre étroit à élargir"
 
-point 2369.5 1718.25 continuation
+point 2369.5 1718.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Bivouac -900" -text "Topo à effectuer" -explored 50m
 
 line pit
   2394.25 1658.25

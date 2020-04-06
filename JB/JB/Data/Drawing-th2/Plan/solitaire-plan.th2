@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -365.0 -206.0 914.6226 994.8824
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {472.44000000000005 1 1.0} {551.182 xx0init} solitaire-plan.xvi 0 {}
 ##XTHERION## xth_me_image_insert {471.66599999999994 1 1.0} {551.919 xx0init} solitaire-plan2017.xvi 0 {}
 
@@ -9,6 +9,7 @@ encoding  utf-8
 scrap solitaire_plan -projection plan -author 2016 "Vincent Sordel" -copyright 2016 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 757.9216 -128.0 0.0 0.0 22.50240864 0.0 m]
 
 #point 560.25 565.5 label -text Puits<br>Alain
+
 
 line wall
 endline
@@ -69,11 +70,11 @@ endline
 
 point 404.0 430.0 label -text colm.
 
-point 201.25 99.25 continuation -text "Puits à descendre" -attr Code Q
+point 201.25 99.25 continuation -text "Puits à descendre" -attr Code P -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
-point 275.0 562.5 continuation -text "Départ à atteindre" -attr Code E
+point 275.0 562.5 continuation -text "Départ à atteindre" -attr Code E -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
-point 298.25 799.5 continuation -text "Colmatage à creuser" -attr Code D
+point 298.25 799.5 continuation -text "Colmatage à creuser" -attr Code D -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 point 183.75 759.25 blocks
 

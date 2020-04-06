@@ -289,7 +289,7 @@ point 112.5 97.0 water-flow -orientation 27.0
 
 point 100.0 121.25 water-flow -orientation 309.8
 
-point 139.5 136.75 continuation
+point 139.5 136.75 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
 point 98.75 79.0 continuation
 
@@ -495,9 +495,9 @@ endline
 
 point 162.25 188.25 blocks -scale xs
 
-point 139.0 176.5 continuation
+point 139.0 176.5 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
-point 154.0 209.0 continuation
+point 154.0 209.0 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
 line wall
   142.5 207.5
@@ -569,7 +569,7 @@ line contour
   smooth off
 endline
 
-point 161.25 259.75 continuation
+point 161.25 259.75 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
 point 183.0 240.0 traverse
 

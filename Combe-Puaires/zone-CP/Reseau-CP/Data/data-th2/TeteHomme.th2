@@ -150,13 +150,13 @@ point 3347.0 1000.5 height -value [-30 m]
 
 point 3359.75 994.5 height -value [+10 m]
 
-point 3381.5 972.75 continuation
+point 3381.5 972.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Reseau de l'Espoir" -text "Escalade à continuer" -explored 20m
 
-point 3183.75 1165.75 continuation
+point 3183.75 1165.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "Puits remontant à escalader"
 
-point 3169.5 1173.75 continuation
+point 3169.5 1173.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "Méandre à atteindre"
 
-point 3062.25 1318.75 continuation
+point 3062.25 1318.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "Puits remontant à escalader"
 
 line gradient
   3103.75 1219.5
@@ -592,7 +592,7 @@ line pit
   smooth off
 endline
 
-point 3294.25 967.25 continuation
+point 3294.25 967.25 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "Départ à atteindre ?"
 
 line wall
   3288.75 972.75
@@ -655,11 +655,9 @@ line pit -close on
   smooth off
 endline
 
-point 3195.25 948.75 continuation
+point 3195.25 948.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "A voir ?"
 
-point 3217.75 918.75 continuation
-
-point 3204.0 901.25 continuation
+point 3217.75 918.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "A voir ?"
 
 line pit -close on
   3255.5 1006.5
@@ -935,7 +933,7 @@ line contour
   smooth off
 endline
 
-point 3412.25 692.5 continuation
+point 3412.25 692.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "Départ à atteindre ?"
 
 line gradient
   3384.75 736.75
@@ -1600,9 +1598,9 @@ endscrap
 
 scrap Espoir-6 -projection plan -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 3476.75 518.25 continuation
+point 3476.75 518.25 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "Départ à atteindre ?"
 
-point 3383.25 558.25 continuation
+point 3383.25 558.25 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "Départ à atteindre ?"
 
 point 3375.25 596.25 dig
 
@@ -2224,7 +2222,7 @@ line rock-border -id l627-3455-821 -close on
   smooth off
 endline
 
-point 3469.75 848.0 continuation
+point 3469.75 848.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Pierre de Saint Martin" -text "Départ en plafond"
 
 line gradient
   3471.0 838.25
@@ -2598,7 +2596,7 @@ point 3781.75 857.0 label -text "galerie du Pierre de Saint Martin"
 
 point 4200.75 926.0 label -text "galerie du Pierre de Saint Martin"
 
-point 4200.0 817.5 continuation
+point 4200.0 817.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Pierre de Saint Martin" -text "Départ en hauteur"
 
 line contour
   4560.0 899.0
@@ -2615,9 +2613,9 @@ point 4463.5 962.5 air-draught -orientation 264.2 -subtype summer
 
 point 4546.0 971.5 air-draught -orientation 148.5 -subtype summer
 
-point 4609.75 930.75 continuation
+point 4609.75 930.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Pierre de Saint Martin" -text "Arrivée d'eau en plafond. Escalade faite ?"
 
-point 4573.75 961.0 continuation
+point 4573.75 961.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Pierre de Saint Martin" -text "Départ en plafond. Escalade faite ?"
 
 line gradient
   4529.75 959.0
@@ -3390,6 +3388,21 @@ line gradient
   4372.0 879.0
 endline
 
+line pit
+  4394.75 901.0
+  4394.75 901.0 4408.25 895.5 4410.0 900.25
+endline
+
+line wall
+  4396.25 907.0
+  4398.0 892.75
+endline
+
+line wall
+  4407.0 895.0
+  4405.5 911.5
+endline
+
 line wall
   4398.0 892.75
   4398.0 892.75 4398.5 873.25 4400.25 871.25
@@ -3441,7 +3454,7 @@ line pit
   smooth off
 endline
 
-point 4682.5 797.75 continuation
+point 4682.5 797.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Pierre de Saint Martin" -text "Puits remontant"
 
 line pit
   4705.5 814.5
@@ -3945,7 +3958,7 @@ point 5016.25 937.75 height -value [+6 m]
 
 point 5062.5 868.75 height -value [+10 m]
 
-point 5028.0 878.0 continuation
+point 5028.0 878.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Pierre de Saint Martin" -text "Méandre à suivre en artif"
 
 point 5022.25 913.75 station -name 40.60@riviere_amont
 
@@ -4071,7 +4084,7 @@ point 3386.75 948.25 water-flow -orientation 246.2
 
 point 3415.25 891.75 label -text "-243 m"
 
-point 3393.25 810.75 label -text "cascade"
+point 3387.75 803.0 label -text "<center>cascade de<br>la Désespérance"
 
 point 3371.75 900.75 height -value [-5 m]
 
@@ -4792,7 +4805,9 @@ point 2998.0 1125.0 height -value [-7 m]
 
 point 2373.25 1089.75 continuation
 
-point 2541.5 1075.5 continuation
+point 3097.0 1019.0 continuation -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'homme" -attr Code E -text "Départ à voir après escalade"
+
+point 2541.5 1075.5 continuation -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'homme" -attr Code E -text "Escalade entaméen il faut la terminer, gros volume"
 
 line pit
   2515.0 1081.5
@@ -5003,7 +5018,7 @@ scrap Homme-6 -projection plan -author 1988 "Christophe Ohl" -author 2008 "Stép
 
 point 2034.75 973.75 altitude -align top
 
-point 2020.75 975.25 continuation -attr Code D -text "Désobstruction dans une trémie instable, il y a du vide dessous"
+point 2020.75 975.25 continuation -attr Code T -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'Homme" -text "Désobstruction dans une trémie instable, il y a du vide dessous"
 
 point 2031.75 970.75 breakdown-choke -orientation 124.3
 
@@ -5076,13 +5091,14 @@ line wall -id l1213-2148-1007
   smooth off
 endline
 
-point 2086.25 1049.5 continuation -attr Code E -text "A escalader"
+point 2086.25 1049.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'homme" -text "A escalader"
 
-point 2096.0 1057.25 water-flow
+point 2096.0 1057.25 water-flow -orientation 168.7
 
 line pit
   2109.0 1035.75
   2109.0 1035.75 2097.5 1037.75 2096.5 1032.5
+  smooth off
 endline
 
 line wall
@@ -5117,6 +5133,7 @@ line wall
   2130.75 1025.75 2134.75 1021.75 2134.5 1020.25
   2134.25 1018.75 2135.01 1016.05 2133.0 1016.5
   2130.75 1017.0 2118.03 1028.81 2111.5 1030.75
+  smooth off
 endline
 
 line wall
@@ -5308,7 +5325,7 @@ line wall -id l508-3566-589
   smooth off
 endline
 
-point 3578.75 599.25 continuation
+point 3578.75 599.25 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "Départ à atteindre ?"
 
 line pit -reverse on
   3579.25 588.75
@@ -5334,9 +5351,9 @@ point 3597.75 548.5 label -text "Siphon"
 
 point 3528.5 515.5 label -text "Siphon"
 
-point 3515.25 527.75 continuation
+point 3515.25 527.75 continuation -attr Code S -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "Siphon"
 
-point 3596.5 557.75 continuation
+point 3596.5 557.75 continuation -attr Code S -attr Cavite ReseauCP -attr Reseau "Réseau de l'Espoir" -text "Siphon"
 
 line water-flow
   3470.25 615.0
@@ -5549,9 +5566,9 @@ line wall -close on -outline in
   smooth off
 endline
 
-point 2929.0 1375.75 continuation
+point 2929.0 1375.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "A voir ?"
 
-point 2863.0 1367.5 continuation
+point 2863.0 1367.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "A voir ?"
 
 line pit
   2976.5 1333.5
@@ -5933,7 +5950,7 @@ endscrap
 
 scrap Massues-3 -projection plan -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 2983.0 1187.0 continuation
+point 2983.0 1187.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "A voir ?"
 
 point 3196.25 1051.5 rope
 
@@ -5958,11 +5975,11 @@ endline
 
 point 3128.5 1108.5 water-flow -orientation 218.7
 
-point 3117.0 1095.0 continuation
+point 3117.0 1095.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "A voir ?"
 
-point 3186.5 1097.5 continuation
+point 3186.5 1097.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "A voir ?"
 
-point 3160.25 1094.0 continuation
+point 3160.25 1094.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "A voir ?"
 
 point 3249.25 1072.75 continuation
 

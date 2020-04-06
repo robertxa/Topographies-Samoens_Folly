@@ -42,6 +42,7 @@ line wall -subtype clay
   1593.0 -3141.0
   1593.0 -3141.0 1599.0 -3117.0 1620.0 -3117.0
   1641.0 -3117.0 1644.0 -3121.0 1640.0 -3135.0
+  smooth off
 endline
 
 line wall -subtype clay
@@ -68,7 +69,7 @@ line label -id l17-1414--3194 -close on
   1412.0 -3194.0
 endline
 
-point 1281.0 -3229.0 continuation -attr Code S -text "Siphon petit et boueux à plonger"
+point 1281.0 -3229.0 continuation -attr Code S -attr Cavite JB -attr Reseau "Siphons terminaux" -text "Siphon petit et boueux à plonger"
 
 point 1646.0 -3188.0 narrow-end
 
@@ -77,6 +78,10 @@ point 1578.0 -3194.0 narrow-end
 point 1481.0 -2984.0 narrow-end
 
 point 1546.0 -2999.0 water-flow -orientation 202.4
+
+point 3239.0 -2737.0 passage-height -value [1.5 m]
+
+point 1740.0 -2984.0 passage-height -value [1.5 m]
 
 line wall -subtype clay
   1521.0 -3052.0

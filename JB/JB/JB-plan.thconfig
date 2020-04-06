@@ -66,6 +66,7 @@ layout my_layout
 	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
 	copy headerl 			# Pour modifier le header/cartouche
 	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
+	#copy layoutcontinuation	# Pour afficher le label des continuations
 
 	cs UTM32
   
@@ -233,6 +234,7 @@ endlayout
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select JB-plan-tot
  export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000.pdf -layout my_layout
+ #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000_Continuations.pdf -layout my_layout
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
@@ -248,6 +250,6 @@ select JB-plan-tot
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
 #export database -o Outputs/Lists/DatabaseJB-2020.sql
-#export continuation-list -o Outputs/Lists/Continuations-JB-plan-2020.html
-#export survey-list -location on -o Outputs/Lists/Topographies_2020.html
+export continuation-list -o Outputs/Lists/Continuations-JB-plan-2020.html
+export survey-list -location on -o Outputs/Lists/Topographies_2020.html
 #export cave-list -location on -o Outputs/Lists/Cavites_2020.html

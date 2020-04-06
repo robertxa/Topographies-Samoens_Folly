@@ -1,7 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
+
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+
 
 
 
@@ -27,11 +29,28 @@ point 10325.75 5586.75 label -text "Méandre des Crawleurs"
 
 point 10365.25 5770.75 label -text "Bloc coincé"
 
-point 10325.75 5790.25 air-draught -orientation 153.8 -scale xs
+point 10327.0 5825.75 air-draught -orientation 153.8 -scale xs
 
-point 10535.5 5691.75 continuation
+point 10535.5 5691.75 continuation -attr Code D -attr Cavite JB -attr Reseau "Crawleurs" -text "Départ en hauteur étroit"
 
-point 10332.75 5776.5 continuation
+line wall -subtype unsurveyed
+  10305.25 5834.75
+  10305.25 5834.75 10310.5 5824.5 10312.25 5820.0
+  10314.0 5815.5 10321.25 5802.25 10323.25 5797.5
+  10325.25 5792.75 10329.5 5785.0 10331.25 5780.0
+  10333.0 5775.0 10333.75 5768.5 10333.75 5768.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  10338.5 5771.0
+  10338.5 5771.0 10332.75 5786.5 10329.25 5793.0
+  10325.75 5799.5 10319.25 5810.5 10318.25 5813.75
+  10317.25 5817.0 10308.25 5836.25 10308.25 5836.25
+  smooth off
+endline
+
+point 10302.25 5847.75 continuation -attr Code D -attr Cavite JB -attr Reseau "Crawleurs" -attr CA "Courant d'air" -text "Méandre étroit à forcer" -explored 40m
 
 point 10337.32 5767.67 blocks -scale xs
 
@@ -272,7 +291,7 @@ line wall
   smooth off
 endline
 
-point 10436.25 5515.0 continuation
+point 10436.25 5515.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Crawleurs" -text "A Voir ?"
 
 line wall
   10416.5 5343.25
@@ -519,9 +538,10 @@ point 10566.98 5733.45 station -name Eh.0@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap Crawleuraval -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 10397.0 5182.5 continuation
+point 10397.0 5182.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Crawleurs" -text "A Voir ?"
 
 point 10413.75 5209.25 label -text "P12"
 
@@ -649,3 +669,5 @@ point 10413.28 5304.64 station -name Eb.27@jb-amonts2.Jean-Bernard
 point 10406.24 5328.68 station -name Eb.26@jb-amonts2.Jean-Bernard
 
 endscrap
+
+

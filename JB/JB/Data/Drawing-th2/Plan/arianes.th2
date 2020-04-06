@@ -1,11 +1,10 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 14576.8267 8356.3509
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12874.02 1 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
 
 
-scrap arianes1 -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -projection plan -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+scrap arianes1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 line pit -reverse on
   11759.75 5820.0
@@ -43,7 +42,7 @@ endscrap
 
 
 
-scrap arianes2 -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -projection plan -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+scrap arianes2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 point 12022.63 5792.07 station -name Bb.115@jb-arianes.Jean-Bernard
 
@@ -63,7 +62,7 @@ point 11862.0 5688.61 station -name Gr.12@jb-arianes.Jean-Bernard
 
 point 11836.31 5702.73 station -name Gr.11@jb-arianes.Jean-Bernard
 
-point 11827.0 5774.5 continuation
+point 11827.0 5774.5 continuation -attr Code E -attr Cavite JB -attr Reseau "Arianes" -text "Cascade de 4 m à escalader"
 
 point 11747.5 5837.0 label -text "P13"
 

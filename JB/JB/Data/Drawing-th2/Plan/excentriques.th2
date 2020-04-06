@@ -1,7 +1,10 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
 ##XTHERION## xth_me_area_zoom_to 200
+
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+
+
 
 
 scrap Excentriques1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
@@ -349,11 +352,11 @@ point 9300.5 5092.0 label -orientation 69.2 -text "Galerie de la Frénésie"
 
 point 9371.25 5093.25 label -text "P4"
 
-point 9319.25 5114.25 continuation
+point 9319.25 5114.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Frénésie" -text "Départ à voir ?"
 
-point 9367.0 4929.5 continuation
+point 9367.0 4929.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Frénésie" -text "Départ à voir ?"
 
-point 9396.0 4932.75 continuation
+point 9396.0 4932.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Frénésie" -text "Départ à voir ?"
 
 point 9545.5 4887.5 continuation
 
@@ -671,11 +674,11 @@ endline
 
 point 9586.0 4874.0 label -text "Etr."
 
-point 9570.0 4826.75 continuation
+point 9570.0 4826.75 continuation -attr Code D -attr Cavite JB -attr Reseau "Rivière aux Ecentriques" -text "Aval de la rivière aux Escentriques, méandre étroit, pas de c.a."
 
-point 9532.25 4861.0 continuation
+point 9532.25 4861.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Rivière aux Ecentriques" -text "Aval de la rivière aux Escentriques, méandre étroit, pas de c.a."
 
-point 9576.75 4996.25 continuation
+point 9576.75 4996.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Méandre de la Bulle" -text "Amont de la Bulle, méandre étroit"
 
 line wall
   9565.25 5001.0
@@ -780,9 +783,9 @@ point 9124.86 4830.23 station -name Da.215@jb-amonts2.Jean-Bernard
 
 point 9156.22 4838.9 station -name Da.214@jb-amonts2.Jean-Bernard
 
-point 9358.0 4883.25 continuation
+point 9358.0 4883.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Frénésie" -text "Départ à voir ?"
 
-point 9266.0 4851.5 continuation
+point 9266.0 4851.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Frénésie" -text "Départ à voir ?"
 
 point 9305.0 4853.75 camp
 
@@ -794,17 +797,17 @@ point 9307.75 4711.25 water-flow -orientation 265.9
 
 point 9361.25 4720.0 water-flow -orientation 249.6
 
-point 9415.75 4739.75 continuation
+point 9415.75 4739.75 continuation -attr Code S -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "Siphon"
 
 point 9377.5 4722.75 continuation
 
 point 9347.5 4716.25 continuation
 
-point 9253.75 4689.75 continuation
+point 9253.75 4689.75 continuation -attr Code S -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "Siphon"
 
-point 9237.25 4702.25 continuation
+point 9237.25 4702.25 continuation -attr Code S -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "Siphon"
 
-point 9108.0 4890.5 continuation
+point 9108.0 4890.5 continuation -attr Code S -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "Siphon"
 
 point 9167.0 4851.0 label -text "R3"
 
@@ -1220,11 +1223,11 @@ point 8877.75 4883.75 pebbles
 
 point 8893.5 4889.75 pebbles
 
-point 8930.5 4934.75 continuation
+point 8930.5 4934.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "A voir ?"
 
-point 8819.0 4862.25 continuation
+point 8819.0 4862.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "Aval de la rivière" -explored 15m
 
-point 8921.5 4881.75 continuation
+point 8921.5 4881.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "A voir ?"
 
 point 8830.75 4861.25 water-flow -orientation 277.1
 
@@ -1255,6 +1258,7 @@ line wall
   8836.25 4911.75 8831.5 4915.5 8831.5 4918.25
   8831.5 4921.0 8829.25 4961.75 8826.0 4964.5
   8822.75 4967.25 8794.25 4982.0 8790.5 4982.25
+  smooth off
 endline
 
 line wall
@@ -1611,6 +1615,7 @@ point 9611.05 4898.36 station -name Da.193@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap Echo -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 point 9140.54 4818.58 station -name Da.217@jb-amonts2.Jean-Bernard
@@ -1649,13 +1654,13 @@ endarea
 
 point 9044.75 4884.0 pebbles
 
-point 9054.75 4904.5 continuation
+point 9054.75 4904.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "A voir ?"
 
-point 9037.75 4912.25 continuation
+point 9037.75 4912.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "A voir ?"
 
-point 9015.5 4875.25 continuation
+point 9015.5 4875.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "A voir ?"
 
-point 9072.25 4795.25 continuation
+point 9072.25 4795.25 continuation -attr Code S -attr Cavite JB -attr Reseau "Pseudos Siphons" -text "Siphon"
 
 point 9115.25 4804.0 label -text "Tobogan"
 
@@ -1874,6 +1879,7 @@ point 8923.6 5089.23 station -name Fd.6@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap Branlots2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 point 9029.6 4936.54 station -name Fb.46@jb-amonts2.Jean-Bernard
@@ -1928,4 +1934,5 @@ line wall
 endline
 
 endscrap
+
 

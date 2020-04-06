@@ -1,13 +1,12 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.0 -129.0 14596.511750000001 8340.602859999999
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
 
 
 
 scrap C37 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 12988.5 6773.25 continuation
+point 12988.5 6773.25 continuation -attr Code P -attr Cavite JB -attr Reseau C37 -text "Puits à descendre ?"
 
 point 13014.25 6682.5 label -text "Boyau des Pétroleurs"
 
@@ -577,19 +576,19 @@ endline
 
 point 13034.75 6483.0 breakdown-choke
 
-point 13033.25 6491.5 continuation
+point 13033.25 6491.5 continuation -attr Code T -attr Cavite JB -attr Reseau C37 -text "Trémie à désobstruer ?"
 
 point 12926.75 6713.5 continuation
 
-point 13035.75 6549.0 continuation
+point 13035.75 6549.0 continuation -attr Code Q -attr Cavite JB -attr Reseau C37 -text "A voir ?"
 
-point 13025.5 6557.5 continuation
+point 13025.5 6557.5 continuation -attr Code Q -attr Cavite JB -attr Reseau C37 -text "A voir ?"
 
-point 12994.25 6571.75 continuation
+point 12994.25 6571.75 continuation -attr Code Q -attr Cavite JB -attr Reseau C37 -text "A voir ?"
 
-point 13111.75 6402.75 continuation
+point 13111.75 6402.75 continuation -attr Code Q -attr Cavite JB -attr Reseau C37 -text "A voir ?"
 
-point 13095.5 6447.25 continuation
+point 13095.5 6447.25 continuation -attr Code Q -attr Cavite JB -attr Reseau C37 -text "A voir ?"
 
 point 13103.0 6436.5 label -text "P50"
 
@@ -1226,7 +1225,7 @@ endline
 
 point 13005.58 6497.39 station -name Ba.7@jb-amonts1.Jean-Bernard
 
-point 12963.75 6559.0 continuation
+point 12963.75 6559.0 continuation -attr Code Q -attr Cavite JB -attr Reseau C37 -text "A voir ?"
 
 point 12870.0 6686.25 label -text "-67 m"
 
@@ -1832,25 +1831,19 @@ line wall -id l458-13019-6275 -reverse on -subtype unsurveyed
   smooth off
 endline
 
-point 13018.5 6312.75 continuation
+point 13018.5 6312.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Réverbère" -text "Méandre à atteindre en face"
 
-point 13006.5 6130.0 continuation
+point 13006.5 6130.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réverbère" -text "A voir ?"
 
-point 12993.25 6020.5 continuation
+point 12993.25 6020.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réverbère" -text "A voir ?"
 
-point 12932.0 6019.5 continuation
+point 12932.0 6019.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réverbère" -text "A voir ?"
 
-point 12591.5 5776.0 continuation
+point 12591.5 5776.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Arche" -text "A voir ?"
 
-point 12547.75 5804.25 continuation
+point 12547.75 5804.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Arche" -text "A voir ?"
 
-point 12491.25 5753.25 continuation
-
-point 12408.0 5961.0 continuation
-
-point 12358.25 5957.0 label -text "-302 m"
-
-point 12379.25 5985.75 label -text "Faille du Bivouac"
+point 12491.25 5753.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Arche" -text "Puits reontant à escalader"
 
 line label -id l466-12911-5989
   12916.25 5983.5
@@ -2052,7 +2045,7 @@ point 12607.5 5965.75 label -text "P4"
 
 point 12624.75 5954.75 label -text "P3"
 
-point 12744.25 6043.25 continuation
+point 12744.25 6043.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Voltigeurs" -text "Méandre à atteindre en face"
 
 point 12621.5 6001.5 label -text "Méandre du Réverbère"
 
@@ -2523,7 +2516,7 @@ endline
 
 point 12949.5 6154.0 water-flow -orientation 26.6
 
-point 12770.0 6187.25 continuation
+point 12770.0 6187.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Réverbère" -text "Méandre à atteindre en face"
 
 point 12862.0 6232.0 label -text "Méandre des Voltigeurs"
 
@@ -2899,7 +2892,7 @@ endline
 
 point 11545.5 5411.75 label -text "Siphon"
 
-point 12320.5 5794.75 continuation
+point 12320.5 5794.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Riviera" -text "A Voir ?"
 
 point 12364.0 5870.75 water-flow -orientation 238.8
 
@@ -2915,13 +2908,13 @@ point 11662.25 5501.75 water-flow -orientation 248.5
 
 point 11573.5 5447.75 water-flow -orientation 182.4
 
-point 11556.75 5464.25 continuation
+point 11556.75 5464.25 continuation -attr Code E -attr Cavite JB -attr Reseau "La Riviera" -text "Cheminée"
 
 point 11598.25 5404.75 continuation
 
 point 11581.0 5449.0 continuation
 
-point 11509.5 5431.25 continuation
+point 11509.5 5431.25 continuation -attr Code E -attr Cavite JB -attr Reseau "La Riviera" -text "Cheminée"
 
 point 11593.0 5427.0 label -text "R6"
 
@@ -3457,6 +3450,12 @@ endscrap
 
 
 scrap faille-bivouac -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+
+point 12408.0 5961.0 continuation -attr Code E -attr Cavite JB -attr Reseau "Faille du Bivouac" -text "Puits reontant à escalader"
+
+point 12358.25 5957.0 label -text "-302 m"
+
+point 12379.25 5985.75 label -text "Faille du Bivouac"
 
 line wall -id l1121-12460-5850
   12477.0 5814.25

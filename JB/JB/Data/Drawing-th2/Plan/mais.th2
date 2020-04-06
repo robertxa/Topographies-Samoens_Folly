@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 14655.5769 8238.240600000001
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} ../synthese_plan2011.xvi 0 {}
 
 
@@ -258,7 +258,7 @@ endline
 
 point 8063.0 5258.75 label -text "-473 m"
 
-point 7359.0 5365.5 continuation
+point 7359.0 5365.5 continuation -attr Code Q -attr Cavite JB -attr reseau "Galeire du Mais" -text "A voir ?"
 
 point 7701.75 5336.75 continuation
 
@@ -508,6 +508,7 @@ point 8157.44 5279.08 station -name Da.261@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap Mais-2010 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.50240162 0.0 m]
 
 point 7879.4 5208.99 station -name Ij.2@jb-amonts2.Jean-Bernard
@@ -593,7 +594,7 @@ line gradient
   7857.0 5333.5
 endline
 
-point 7871.25 5368.75 continuation
+point 7871.25 5368.75 continuation -attr Code E -attr Cavite JB -attr reseau "Galeire du Mais" -text "Escalade"
 
 point 7839.5 5340.25 narrow-end -orientation 74.6
 
@@ -714,6 +715,7 @@ point 7856.95 5259.7 station -name Gm15@jb-riv2.Jean-Bernard
 point 7850.87 5266.94 station -name Gm.16@jb-riv2.Jean-Bernard
 
 endscrap
+
 
 
 scrap Erreur -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
@@ -1075,3 +1077,5 @@ point 8556.67 5064.89 station -name Da.2494@jb-amonts2.Jean-Bernard
 point 8561.98 5052.03 station -name Da.2495@jb-amonts2.Jean-Bernard
 
 endscrap
+
+

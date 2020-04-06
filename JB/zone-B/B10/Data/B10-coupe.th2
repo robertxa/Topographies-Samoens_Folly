@@ -15,7 +15,7 @@ point 217.0 100.5 height -value [-20 m]
 
 point 104.5 264.0 breakdown-choke -orientation 44.1
 
-point 139.5 345.0 continuation -attr Code E -text "puits remontant"
+point 139.5 345.0 continuation -attr Code E -attr Cavite B10 -text "puits remontant"
 
 point 1.5 407.0 label -text "<bf>B10" -scale xl
 
@@ -38,7 +38,7 @@ point 182.0 144.0 label -text "etr."
 
 point 265.0 39.0 label -text "m. imp."
 
-point 275.5 75.0 continuation -attr Code D -text "méandre impénétrable"
+point 275.5 75.0 continuation -attr Code D -attr Cavite B10 -text "méandre impénétrable"
 
 point 271.5 58.0 water-flow -orientation 128.2
 

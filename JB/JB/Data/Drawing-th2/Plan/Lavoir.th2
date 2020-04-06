@@ -1164,9 +1164,9 @@ endscrap
 
 scrap lavoir-sec -projection plan -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
-point 263.25 385.25 continuation
+point 263.25 385.25 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir" -text "Départ à voir en hauteur"
 
-point 269.0 417.75 continuation
+point 269.0 417.75 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir" -text "Départ à voir en hauteur"
 
 point 310.25 389.75 label -text "C10"
 

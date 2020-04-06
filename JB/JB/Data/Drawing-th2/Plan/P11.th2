@@ -39,23 +39,7 @@ point 79.0 168.0 height -value [-12 m]
 
 point 195.5 72.0 height -value [-11 m]
 
-point 68.5 189.75 continuation
-
-line arrow
-  230.25 90.75
-  268.0 97.0
-endline
-
-line arrow
-  202.75 90.25
-  156.5 90.75
-endline
-
-line arrow
-  253.0 62.5
-  275.75 61.75
-endline
-
+point 68.5 189.75 continuation -attr Code P -attr Cavite JB -attr reseau "Aval - P11" -text "Puits à descendre"
 
 point 220.75 61.5 gypsum
 
@@ -121,26 +105,31 @@ endline
 line pit
   109.75 246.75
   109.75 246.75 114.25 251.5 111.5 255.25
+  smooth off
 endline
 
 line pit
   101.5 248.5
   101.5 248.5 106.75 252.5 105.0 255.25
+  smooth off
 endline
 
 line pit
   93.5 250.75
   93.5 250.75 95.25 259.0 91.25 259.0
+  smooth off
 endline
 
 line pit
   78.75 243.5
   78.75 243.5 73.0 248.0 68.25 242.25
+  smooth off
 endline
 
 line pit
   81.75 249.25
   81.75 249.25 74.0 251.0 74.0 253.75
+  smooth off
 endline
 
 line pit
@@ -374,7 +363,7 @@ endline
 
 point 407.5 257.25 air-draught -orientation 69.7 -subtype winter
 
-point 472.25 259.0 continuation
+point 472.25 259.0 continuation -attr Code E -attr Cavite JB -attr reseau "Bivouac -500" -text "Conduite forcée à continuer, en direction Bivouac ?"
 
 line wall -close on -outline in
   257.5 255.0
@@ -398,6 +387,7 @@ line floor-meander
   231.25 247.75 223.75 241.0 217.75 236.25
   211.75 231.5 209.25 229.25 203.25 234.0
   197.25 238.75 186.25 244.75 184.0 246.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -430,6 +420,7 @@ line wall
   263.25 231.25 264.61 229.78 270.5 226.25
   276.75 222.5 318.5 204.0 324.25 203.0
   330.0 202.0 344.5 199.75 345.75 200.25
+  smooth off
 endline
 
 point 155.99499999999998 225.66699999999997 station -name Xav2016-6@P11.Jean-Bernard

@@ -80,6 +80,7 @@ line wall
   2013.0 -1401.0
   1991.0 -1398.0 2010.0 -1400.0 1989.0 -1397.0
   1968.0 -1394.0 1950.0 -1381.0 1923.0 -1381.0
+  smooth off
 endline
 
 line wall
@@ -206,7 +207,7 @@ line slope
   l-size 15.0
 endline
 
-point 1831.0 -1117.5 continuation
+point 1831.0 -1117.5 continuation -attr Code Q -text "A voir ?"  -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 line slope
   1727.5 -1320.5
@@ -495,7 +496,7 @@ endline
 
 point 1351.0 -1947.0 water-flow -orientation 173.3
 
-point 1333.5 -1870.0 continuation -attr Code Q -text "Arrivée d'eau à voir"
+point 1333.5 -1870.0 continuation -attr Code Q -text "Arrivée d'eau à voir" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 line pit
   124.5 -1766.0

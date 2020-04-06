@@ -1,7 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 14596.511750000001 8340.602859999999
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 400
 
 
 
@@ -90,7 +89,7 @@ point 11200.0 6001.0 rope
 
 point 11278.5 5995.5 rope
 
-point 11272.25 6059.75 label -text "B22" -scale xl
+point 11315.75 6031.0 label -text "B22" -scale xl
 
 point 11275.0 6042.0 entrance -orientation 182.0
 
@@ -302,9 +301,9 @@ line wall
   smooth off
 endline
 
-point 11538.25 5809.0 continuation
+point 11538.25 5809.0 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
 
-point 11475.5 5910.25 continuation
+point 11475.5 5910.25 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
 
 line pit
   11347.0 6051.25
@@ -893,7 +892,9 @@ endline
 
 point 11430.75 5595.5 label -text "P"
 
-point 11586.0 5569.0 continuation
+point 11377.0 5644.5 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
+
+point 11586.0 5569.0 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
 
 point 11739.5 5856.0 label -text "Les Champs Elysées"
 
@@ -931,11 +932,25 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 11962.25 5920.25 continuation
+point 11962.25 5920.25 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
 
-point 12000.75 5822.5 continuation
+line pit
+  11960.25 5810.25
+  11960.25 5810.25 11970.5 5811.0 11975.25 5808.5
+  11980.0 5806.0 11983.75 5800.75 11986.25 5796.5
+  11988.75 5792.25 11993.0 5781.25 11993.25 5779.75
+  11993.5 5778.25 11994.5 5774.75 11994.5 5774.75
+  smooth off
+endline
 
-point 11523.5 5754.75 continuation
+line pit
+  11994.25 5810.75
+  11994.25 5810.75 11988.5 5813.75 11988.25 5821.0
+endline
+
+point 12000.75 5822.5 continuation -attr Code E -attr Cavite JB -attr Reseau "B22 - Champs Elysées" -text "CF à atteindre en face, accès probable aux Plafond de la Riviera"
+
+point 11523.5 5754.75 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
 
 point 11569.39 5777.08 station -name Bc.49@jb-amonts1.Jean-Bernard
 
@@ -1057,6 +1072,8 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
+point 11334.25 5582.0 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
+
 line wall -subtype unsurveyed
   11386.25 5588.5
   11386.25 5588.5 11349.0 5596.25 11347.0 5596.5
@@ -1095,11 +1112,11 @@ point 11215.5 5652.75 water-flow -orientation 301.8
 
 point 11206.75 5648.25 water-flow -orientation 0.0
 
-point 11241.25 5728.75 continuation
+point 11241.25 5728.75 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
 
-point 11195.0 5658.25 continuation
+point 11195.0 5658.25 continuation -attr Code E -attr Cavite JB -attr Reseau B22 -text "Puits remontant voir ?"
 
-point 11302.0 5625.75 continuation
+point 11302.0 5625.75 continuation -attr Code Q -attr Cavite JB -attr Reseau B22 -text "A voir ?"
 
 line rock-border -close on
   11381.5 5622.0
@@ -1307,7 +1324,7 @@ point 11204.04 5547.88 station -name Bk.8@jb-amonts1.Jean-Bernard
 
 point 11207.69 5554.21 station -name Bk.7@jb-amonts1.Jean-Bernard
 
-point 11129.75 5491.5 continuation
+point 11129.75 5491.5 continuation -attr Code Q -attr Cavite JB -attr Reseau Gadoue -text "A voir ?"
 
 point 11049.25 5519.5 label -text "P15"
 

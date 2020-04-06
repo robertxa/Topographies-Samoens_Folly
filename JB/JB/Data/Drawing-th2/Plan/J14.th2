@@ -174,11 +174,11 @@ point 8846.75 5512.5 label -text "P14"
 
 point 8778.75 5425.0 label -text "P4"
 
-point 8848.5 5484.75 continuation
+point 8848.5 5484.75 continuation -attr Code Q -attr Cavite JB -attr Reseau J14 -text "Suite de la CF à suivre en face ?"
 
 point 8794.5 5402.25 continuation
 
-point 8509.75 5387.75 continuation
+point 8509.75 5387.75 continuation -attr Code Q -attr Cavite JB -attr Reseau J14 -text "A voir ?"
 
 point 8863.75 5184.0 label -text "Imp."
 
@@ -527,6 +527,7 @@ line wall
   8848.5 5056.25 8854.75 5033.5 8857.25 5030.25
   8859.75 5027.0 8865.5 5023.25 8868.25 5019.5
   8871.0 5015.75 8891.5 4980.25 8894.5 4977.75
+  smooth off
 endline
 
 line wall
@@ -621,7 +622,7 @@ line wall
   smooth off
 endline
 
-point 8943.5 5114.0 continuation
+point 8943.5 5114.0 continuation -attr Code Q -attr Cavite JB -attr Reseau J14 -text "A voir ?"
 
 line pit
   8998.25 5039.25

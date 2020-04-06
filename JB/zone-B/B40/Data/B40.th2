@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 237.25 196.25
+##XTHERION## xth_me_area_adjust -128.75 -128.75 237.25 196.25
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {57.623599999999996 1 1.0} {47.2577 B40} B40-map.xvi 0 {}
 
@@ -9,9 +9,9 @@ scrap B40-entree -projection plan -author 2014 "Xavier Robert"-copyright 2014 "l
 
 point 43.0 50.0 breakdown-choke -orientation 295.1
 
-point 31.25 51.25 continuation -attr Code D -text "Trémie à désobstruer, courant d'air"
+point 31.25 51.25 continuation -attr Code T -attr Cavite B40 -text "Trémie à désobstruer, courant d'air"
 
-point 108.0 31.75 continuation -attr Code D -text "Trémie à désobstruer, courant d'air"
+point 108.0 31.75 continuation -attr Code T -attr Cavite B40 -attr CA "Courant d'air" -text "Trémie à désobstruer, courant d'air"
 
 point 51.75 26.0 label -text "<bf>B40" -scale xl
 

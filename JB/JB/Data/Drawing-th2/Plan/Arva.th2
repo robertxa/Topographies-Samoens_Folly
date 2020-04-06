@@ -289,13 +289,14 @@ point 808.5 -1998.0 air-draught -orientation 128.7 -subtype summer -scale s
 
 point 977.5 -2333.0 air-draught -orientation 332.1 -subtype summer -scale s
 
-point 892.0 -2300.0 continuation
+point 1168.0 -2298.0 continuation -attr Code T -attr Cavite JB -attr Reseau "Lavoir - Arva" -attr CA "Soufflant en été" -text "Trémie à désobstruer, entrée supérieure du Lavoir"
 
-point 1174.0 -2293.0 continuation
+point 892.0 -2300.0 continuation -attr Code T -attr Cavite JB -attr Reseau "Lavoir - Arva" -attr CA "Soufflant en été" -text "Trémie à désobstruer, entrée supérieure du Lavoir"
 
 line wall -subtype invisible
   898.0 -2200.5
   898.0 -2200.5 935.0 -2243.0 960.5 -2248.5
+  smooth off
 endline
 
 point 960.5 -2248.5 altitude -align top-right
@@ -566,10 +567,6 @@ point 764.5 -1458.0 water-flow -orientation 92.5
 point 752.0 -1380.0 water-flow -orientation 56.2
 
 point 724.5 -1252.0 water-flow -orientation 99.5
-
-point 536.5 -1278.5 continuation
-
-point 616.0 -1278.5 air-draught -orientation 92.3 -subtype summer
 
 line wall -subtype unsurveyed
   686.0 -1293.5

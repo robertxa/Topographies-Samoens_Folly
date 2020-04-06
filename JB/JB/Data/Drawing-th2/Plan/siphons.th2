@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 2332.7256 1033.5122999999999
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {2047.25 1 1.0} {748.032 S1-0} siphons-2003.xvi 0 {}
 
 
@@ -297,7 +297,7 @@ endline
 
 point 1907.5 654.0 label -text "R2"
 
-point 1841.75 686.5 continuation -attr Code E -text "Départ à atteindre après escalade"
+point 1841.75 686.5 continuation -attr Code E -attr Cavite JB -attr Reseau "Siphons terminaux" -text "Départ à atteindre après escalade"
 
 line pit
   1837.25 664.5
@@ -594,7 +594,7 @@ point 289.5 265.0 rope
 
 point 263.25 294.0 height -value [-20 m]
 
-point 339.5 221.25 continuation
+point 339.5 221.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Siphons Terminaux" -text "Départ étroit à voir ?"
 
 line wall -subtype unsurveyed
   187.0 302.5
@@ -651,7 +651,7 @@ point 173.25 287.0 passage-height -value [0.2 m]
 
 point 192.0 288.75 narrow-end
 
-point 178.25 307.25 continuation
+point 178.25 307.25 continuation -attr Code S -attr Cavite JB -attr Reseau "Siphons Terminaux" -text "Siphon à revoir ? Ensablé ?"
 
 point 186.5 322.75 label -text "S4 ensablé"
 

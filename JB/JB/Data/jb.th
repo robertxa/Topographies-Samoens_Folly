@@ -42,6 +42,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ## Rajout des longueurs explorées, non topo, ou topos perdues
 	station Ca.31@jb-amonts1 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
 	station De.36@jb-amonts2 "+43 m explorés et topographiés le 1991.09.21 par Bernard Lips et Robert Sonney, mais topographie perdue" continuation explored 43m	# Courte-échelle (station De.36, 43 m)
+## Non Topographié
+	station Ib.23@jb-amonts2 "+20 m non topographiés (V6 ter)" continuation explored 20m	# Entrée du V6 ter
+	station Ib.23@jb-amonts2 "+80 m non topographiés (A14)" continuation explored 80m	# Entrée du A14
        
 ## Pour assembler plusieurs fichiers topos
     equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
@@ -279,8 +282,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ## La zone de la Gourance
 	input Drawing-th2/Plan/gourance.th2
 		join gourance-1 bivouac500c
-	##input Drawing-th2/Plan/GoureToiDeLa2015.th2
-	##input Drawing-th2/Plan/GoureToiDeLa2015b.th2
 	input Drawing-th2/Plan/GoureToiDeLa.th2
 	input Drawing-th2/Plan/GoureToiDeLa2015.th2
 		join  Goure2015b-4 Goure2015-SP1

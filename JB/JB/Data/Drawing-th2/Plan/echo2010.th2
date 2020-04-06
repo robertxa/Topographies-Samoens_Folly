@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 14655.5769 8238.240600000001
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} ../synthese_plan2011.xvi 0 {}
+
 
 
 scrap Echo2010-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.50240162 0.0 m]
@@ -179,7 +179,7 @@ endline
 
 point 9285.0 4781.0 water-flow -orientation 256.3
 
-point 9295.25 4783.25 continuation -attr Code E -text "Gros puits remontant arrosé à remonter en escalade (>80 m ?)"
+point 9295.25 4783.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Echo" -text "Gros puits remontant arrosé à remonter en escalade (>80 m ?)"
 
 point 9321.25 4767.25 label -text "Salle de l'Echo"
 

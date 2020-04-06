@@ -116,6 +116,8 @@ line wall
   smooth off
 endline
 
+point 5021.75 960.25 label -text "<center>cascade de<br>la Tortue"
+
 line wall
   4966.0 951.0
   4966.0 951.0 4970.25 958.75 4970.0 962.5
@@ -337,7 +339,7 @@ line label -id l73-4482-882 -close on
   smooth off
 endline
 
-point 4447.5 916.25 continuation -attr Code N -text "Il faut se mouiller"
+point 4447.5 916.25 continuation -attr Code VM -attr Cavite ReseauCP -attr Reseau "Rivière amont" -text "Il faut se mouiller"
 
 point 4460.0 925.5 water-flow -orientation 326.9
 
@@ -463,7 +465,7 @@ line label -id l102-4478-1132 -close on
   smooth off
 endline
 
-point 4485.25 1164.0 continuation -attr Code E -text "C20 à escalader"
+point 4485.25 1164.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Affluent Amont" -attr CA "Courant d'air'" -text "C20 à escalader, c.a."
 
 point 4483.25 1146.0 water-flow -orientation 195.0
 

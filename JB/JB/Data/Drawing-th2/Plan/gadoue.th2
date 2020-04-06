@@ -1,10 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.0 -129.0 14596.511750000001 8340.602859999999
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12877.95 1 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
-
-
-
 
 
 
@@ -120,7 +116,7 @@ line pit -reverse on
   smooth off
 endline
 
-point 11143.5 5373.0 continuation
+point 11143.5 5373.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Rivière de la Gadoue" -text "Départ à voir ?"
 
 point 11132.25 5385.75 blocks
 
@@ -280,3 +276,5 @@ point 10807.59 5234.7 station -name Ca.30@jb-amonts1.Jean-Bernard
 point 10796.2 5224.06 station -name Ca.31@jb-amonts1.Jean-Bernard
 
 endscrap
+
+

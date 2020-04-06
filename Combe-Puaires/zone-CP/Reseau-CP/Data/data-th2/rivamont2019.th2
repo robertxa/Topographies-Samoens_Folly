@@ -156,13 +156,13 @@ line pit
   smooth off
 endline
 
-point 5760.5 -1076.0 continuation -attr Code E -text "Méandre supérieur à explorer"
+point 5760.5 -1076.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Méandre supérieur à explorer"
 
-point 6005.0 -1245.0 continuation -attr Code E -text "Affluent arrivant d'une E10 à escalader"
+point 6005.0 -1245.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Affluent arrivant d'une E10 à escalader"
 
-point 6172.0 -1195.0 continuation -attr Code E -text "Arrivée d'eau pénétrable ?"
+point 6172.0 -1195.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Arrivée d'eau pénétrable ?"
 
-point 6160.5 -1034.5 continuation -attr Code E -text "Départ après E8"
+point 6160.5 -1034.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Départ après E8"
 
 point 6206.5 -1131.5 water-flow -orientation 276.4
 
@@ -536,11 +536,11 @@ line rock-border -close on
   5772.5 -903.0
 endline
 
-point 5982.0 -823.5 continuation -attr Code E -text "Actif à explorer"
+point 5982.0 -823.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Actif à explorer"
 
-point 4692.5 -1249.0 continuation -attr Code E -text "Départ à explorer après escalade"
+point 4692.5 -1249.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Départ à explorer après escalade"
 
-point 4985.0 -1182.5 continuation -attr Code E -text "Méandre supérieur à explorer après escalade"
+point 4985.0 -1182.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Méandre supérieur à explorer après escalade"
 
 line wall -subtype presumed
   4855.5 -1162.0
@@ -790,11 +790,11 @@ endline
 
 point 4406.0 -1087.5 label -text "R3"
 
-point 4334.5 -878.5 continuation -attr Code A -text "Rivière principale à explorer, c.a"
+point 4334.5 -878.5 continuation -attr Code A -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Rivière principale à explorer, c.a." -attr CA "Courant d'air'"
 
-point 4428.5 -962.5 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 4428.5 -962.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Départ à atteindre en escalade"
 
-point 4391.5 -1294.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 4391.5 -1294.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Départ à atteindre en escalade"
 
 line pit
   4317.5 -1146.5
@@ -1222,9 +1222,9 @@ endline
 
 point 1811.0 -2244.5 station -name 44@rivamont2019
 
-point 3551.5 -1318.0 continuation -attr Code E -text "Affluent à atteindre en escalade"
+point 3551.5 -1318.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Affluent à atteindre en escalade"
 
-point 3521.0 -1636.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 3521.0 -1636.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Départ à atteindre en escalade"
 
 line flowstone
   2995.0 -1481.5
@@ -1264,7 +1264,7 @@ line rock-border -close on
   2950.5 -1511.5
 endline
 
-point 2862.0 -1834.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 2862.0 -1834.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rivière amont 2019" -text "Départ à atteindre en escalade"
 
 point 1809.5 -2274.0 station -name 52.0@rivamont2019
 

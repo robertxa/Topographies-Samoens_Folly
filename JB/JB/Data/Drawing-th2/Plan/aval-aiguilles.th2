@@ -364,9 +364,9 @@ line pit
   smooth off
 endline
 
-point 238.75 110.75 continuation
+point 240.75 110.5 continuation -attr Code E -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Départ en sommet d'escalade"
 
-point 233.25 124.0 continuation
+point 233.5 125.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Départ non visité"
 
 line pit
   224.75 108.5
@@ -806,11 +806,11 @@ point 131.75 124.0 label -text "Etr."
 
 point 96.75 132.5 label -text "Etr."
 
-point 91.25 124.0 continuation
+point 133.5 117.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Affluent de la Bulle" -text "Etroiture en sommet de méandre"
 
-point 122.0 124.5 continuation
+point 122.5 124.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Affluent de la Bulle" -text "Etroiture en sommet de méandre"
 
-point 133.0 115.75 continuation
+point 91.0 124.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Affluent de la Bulle" -text "Etroiture en sommet de méandre"
 
 line floor-meander
   134.75 78.25

@@ -1,7 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.0 -129.0 14596.511750000001 8340.602859999999
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12877.95 1 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
 
 
 
@@ -725,21 +724,21 @@ line pit
   smooth off
 endline
 
-point 11154.75 5611.5 continuation
+point 11154.75 5611.5 continuation -attr Code D -attr Cavite JB -attr Reseau B21 -text "Galerie étroite"
 
-point 11301.0 5686.75 continuation
+point 11301.0 5686.75 continuation -attr Code D -attr Cavite JB -attr Reseau B21 -text "Galerie étroite"
 
-point 11535.25 5737.5 continuation
+point 11535.25 5737.5 continuation -attr Code D -attr Cavite JB -attr Reseau B21 -text "Galerie étroite"
 
-point 11638.0 5789.25 continuation
+point 11638.0 5789.25 continuation -attr Code D -attr Cavite JB -attr Reseau B21 -text "Galerie étroite"
 
-point 11696.75 5519.0 continuation
+point 11696.75 5519.0 continuation -attr Code Q -attr Cavite JB -attr Reseau B21 -text "Départ à voir ?"
 
-point 11696.0 5419.75 continuation
+point 11696.0 5419.75 continuation -attr Code Q -attr Cavite JB -attr Reseau B21 -text "Départ à voir ?"
 
 point 11739.19 5326.16 breakdown-choke -orientation 295.6
 
-point 11746.0 5320.5 continuation
+point 11746.0 5320.5 continuation -attr Code T -attr Cavite JB -attr Reseau B21 -attr CA "Courant d'air" -text "Trémie à désobtruer, la surface est proche (vallon)"
 
 point 11729.75 5314.25 label -text "Trémie"
 

@@ -234,6 +234,8 @@ endline
 
 point 2054.0 1327.25 label -orientation 315.0 -text "galerie du Huit
 
+point 1795.5 1392.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Huit" -text "CF à atteindre en hauteur ?"
+
 point 1784.75 1418.5 label -text "-250 m"
 
 point 1810.5 1473.0 rope
@@ -286,9 +288,9 @@ line pit
   smooth off
 endline
 
-point 2093.5 1388.75 continuation
+point 2093.5 1388.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Huit" -text "Puits à escalader"
 
-point 2009.5 1558.5 continuation
+point 2009.5 1558.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Huit" -text "CF à atteindre après E4"
 
 line wall
   2191.0 1726.75
@@ -381,9 +383,9 @@ endline
 
 point 1751.5 1513.5 air-draught -orientation 334.7 -subtype summer
 
-point 1788.0 1523.0 continuation
+point 1788.0 1523.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir ?"
 
-point 1775.25 1589.5 continuation
+point 1775.25 1589.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir ?"
 
 line wall -close on -outline in
   1643.0 1637.25
@@ -517,11 +519,11 @@ point 1799.25 1711.5 water-flow -orientation 207.8
 
 point 1794.75 1701.5 narrow-end -orientation 215.9
 
-point 2073.0 1687.25 continuation
+point 2073.0 1687.25 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir ?"
 
-point 1787.75 1671.0 continuation
+point 1787.75 1671.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir ?"
 
-point 1759.0 1678.0 continuation
+point 1759.0 1678.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir ?"
 
 line wall
   1763.5 1683.5
@@ -821,7 +823,9 @@ line wall
   smooth off
 endline
 
-point 1591.75 1604.0 continuation
+point 1688.0 1532.5 continuation -attr Code D -attr Cavite ReseauCP -attr Reseau "CP12" -attr CA "Courant d'air soufflant en été" -text "Etroiture à désobstruer, courant d'air"
+
+point 1591.75 1604.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP12" -text "A Voir"
 
 line wall
   1566.0 1620.25
@@ -919,7 +923,7 @@ endscrap
 
 scrap P18-1 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 1340.25 1305.5 continuation
+point 1340.25 1305.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du P18" -text "Puits remontant à escalader"
 
 point 1326.25 1353.25 continuation
 
@@ -1240,7 +1244,7 @@ scrap P18-2 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre
 
 point 1126.0 1447.0 height -value [-6 m]
 
-point 1056.5 1470.25 continuation -attr Code D -text "C'est là qu'est la suite vers l'aval, il faut désobstruer à la paille les lames du méandre"
+point 1056.5 1470.25 continuation -attr Code D -attr Cavite ReseauCP -attr Reseau "Aval CP12" -attr CA "Courant d'air aspirant en été fort" -text "C'est là qu'est la suite vers l'aval, il faut désobstruer à la paille les lames du méandre" -explored 50m
 
 point 1059.75 1500.5 air-draught -orientation 336.0 -subtype summer
 
@@ -1406,7 +1410,7 @@ endline
 
 point 780.5 1363.25 height -value [+50 m]
 
-point 980.0 1323.5 continuation
+point 980.0 1323.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "Puits remontant à escalader"
 
 point 630.5 1345.0 danger
 
@@ -1520,7 +1524,7 @@ line pit -id l389-774-1340
   smooth off
 endline
 
-point 641.0 1388.0 continuation
+point 641.0 1388.0 continuation -attr Code T -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "Trémie à désobtruer, chemin vers le CP1, Attention, danger"
 
 point 661.25 1379.25 air-draught -orientation 293.5 -subtype summer
 
@@ -1745,9 +1749,9 @@ endscrap
 
 scrap Reptiles-2 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 853.75 866.0 continuation
+point 853.75 866.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
-point 895.25 969.0 continuation
+point 895.25 969.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "Puits remontant à escalader"
 
 line pit -close on
   881.75 943.75
@@ -2035,9 +2039,9 @@ point 1054.25 1031.5 continuation
 
 point 1043.5 1026.5 continuation
 
-point 953.5 987.75 continuation
+point 953.5 987.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
-point 957.5 935.25 continuation
+point 957.5 935.25 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
 line floor-meander
   962.25 961.75
@@ -2070,7 +2074,7 @@ point 933.25 974.0 pebbles -scale xs
 
 point 931.75 970.5 pebbles -scale xs
 
-point 916.0 988.75 continuation
+point 916.0 988.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
 point 1065.75 1040.75 height -value [-15 m]
 
@@ -2551,13 +2555,13 @@ line floor-meander
   smooth off
 endline
 
-point 1064.75 983.75 continuation
+point 1064.75 983.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir" -attr CA "Courant d'air"
 
 point 1102.25 1020.5 continuation
 
 point 1089.75 1063.0 continuation
 
-point 1140.75 1151.0 continuation
+point 1140.75 1151.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
 line pit
   1067.5 1245.5

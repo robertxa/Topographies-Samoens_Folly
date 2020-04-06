@@ -94,9 +94,9 @@ point 68.75 110.75 height -value [-10 m]
 
 point 147.75 123.5 air-draught -orientation 45.2 -subtype summer
 
-point 199.25 174.5 continuation -attr Code E -text "Escalade dans la faille à continuer"
+point 199.25 174.5 continuation -attr Code E -attr Cavite JB -attr Reseau "Branlots - Shunt" -text "Escalade dans la faille à continuer"
 
-point 228.5 160.25 continuation -attr Code E -text "Escalade dans la faille à continuer"
+point 228.5 160.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Branlots - Shunt" -text "Escalade dans la faille à continuer"
 
 line pit
   228.0 139.5

@@ -13,9 +13,9 @@ point 1256.5 -2861.5 label -text "CF"
 
 point 1277.5 -2949.5 height -value [-8 m]
 
-point 1192.0 -3267.5 continuation
+point 1192.0 -3267.5 continuation -attr Code P -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "Arrêt sur manque de matériel"
 
-point 1201.5 -2891.0 continuation
+point 1201.5 -2891.0 continuation -attr Code E -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "CF à atteindre"
 
 point 1230.5 -3010.0 blocks
 
@@ -496,7 +496,7 @@ point 1634.0 -3330.5 rope
 
 point 1741.0 -3151.0 label -text "CF"
 
-point 1780.5 -3119.0 continuation
+point 1780.5 -3119.0 continuation -attr Code A -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "CF à explorer"
 
 line wall -close on -outline in
   1480.5 -3121.0
@@ -1259,7 +1259,7 @@ scrap Gourance2014-5 -projection plan -author 2014 "Stéphane Lips" -author 2014
 
 point 1315.5 -3974.0 rope
 
-point 1382.0 -4135.5 continuation
+point 1382.0 -4135.5 continuation -attr Code P -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "Suite du méanre à explorer, devrait rejoindre le puits du Balcon"
 
 point 1284.0 -3902.5 label -text "R4"
 
@@ -1436,3 +1436,5 @@ point 1259.0 -3658.5 station -name 2014-SL-33@GoureToiDeLa.Jean-Bernard
 point 1220.5 -3762.0 station -name 2014-SL-32@GoureToiDeLa.Jean-Bernard
 
 endscrap
+
+

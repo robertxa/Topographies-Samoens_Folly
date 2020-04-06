@@ -1,13 +1,12 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 400
 
 
 
 scrap gourance-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 3598.5 2622.75 continuation
+point 3598.5 2622.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Gourance" -text "A Voir ?"
 
 line wall
   3601.75 2629.75
@@ -100,7 +99,7 @@ point 3405.75 2653.0 blocks
 
 point 3390.25 2652.0 blocks
 
-point 3428.0 2683.5 continuation
+point 3428.0 2683.5 continuation -attr Code E -attr Cavite JB -attr Reseau "La Gourance" -text "Départ en hauteur ?"
 
 line pit
   3387.0 2635.25
@@ -304,7 +303,7 @@ line wall
   smooth off
 endline
 
-point 3373.5 2667.75 continuation
+point 3373.5 2667.75 continuation -attr Code P -attr Cavite JB -attr Reseau "La Gourance - Damocles" -text "Arrêt sur Grand Puits"
 
 point 3494.25 2642.25 label -text "E2"
 
@@ -376,7 +375,7 @@ point 3302.5 2686.25 label -text "P6"
 
 point 3290.0 2620.0 blocks -scale xs
 
-point 3281.0 2615.25 continuation
+point 3281.0 2615.25 continuation -attr Code D -attr Cavite JB -attr Reseau "La Gourance" -text "Etroiture boueuse"
 
 area sump
   l119-3288-2617

@@ -1,7 +1,8 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -275.21 -8.87 14508.3569 8357.3706
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12874.02 1 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {12874.02 0 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+
 
 
 scrap riv-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
@@ -254,7 +255,6 @@ line wall
 endline
 
 endscrap
-
 
 
 
@@ -692,6 +692,7 @@ point 6935.05 4002.15 station -name Kc.70@jb-riv.Jean-Bernard
 endscrap
 
 
+
 scrap riv-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 6645.5 3663.5 rope
@@ -853,7 +854,7 @@ endline
 
 point 6644.75 3647.5 blocks
 
-point 6515.0 3669.25 continuation
+point 6515.0 3669.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Rivière vers -350 m" -text "Arrivée d'un méandre actif à remonter ?"
 
 point 6524.5 3662.25 water-flow -orientation 124.8
 
@@ -1006,6 +1007,5 @@ point 6789.13 3772.81 station -name Ka.57@jb-riv.Jean-Bernard
 point 6775.24 3800.69 station -name Ka.56@jb-riv.Jean-Bernard
 
 endscrap
-
 
 

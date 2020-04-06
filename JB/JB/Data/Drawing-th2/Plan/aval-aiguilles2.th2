@@ -503,9 +503,9 @@ point 88.0 106.5 narrow-end -orientation 156.7
 
 point 99.75 67.0 continuation
 
-point 108.75 51.25 continuation
+point 108.75 51.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Aspiro Souffle" -text "Départ à atteindre après petite escalade"
 
-point 113.5 34.0 continuation
+point 114.75 31.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Aspiro Souffle" -text "Départ à atteindre après petite escalade"
 
 line pit
   126.0 49.75
@@ -735,7 +735,7 @@ point 82.25 51.5 height -value [-30 m]
 
 point 62.0 38.0 air-draught -orientation 58.6 -subtype winter
 
-point 41.75 40.25 continuation
+point 41.75 40.25 continuation -attr Code P -attr Cavite JB -attr Reseau "Aspiro Souffle" -attr CA "Aspirant en été" -text "Puits à descendre"
 
 point 103.881 79.8562 station -name 2012c-xa-68@aval-aiguilles2.Jean-Bernard
 

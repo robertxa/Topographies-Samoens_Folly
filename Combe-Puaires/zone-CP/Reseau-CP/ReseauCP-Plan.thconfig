@@ -44,6 +44,7 @@ layout my_layout
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
+	#copy layoutcontinuation	# Pour afficher le label des continuations
   
    # Titre  
    doc-title "Reseau de la Combe aux Puaires"
@@ -179,6 +180,7 @@ endlayout
 	select MP-ReseauCP-total 
 	
 export map -o Outputs/2D/ReseauCP-plan2020.pdf -layout my_layout
+#export map -o Outputs/2D/ReseauCP-plan2020-Continuations.pdf -layout my_layout
   
 # Export des fichiers ESRI
 export map -proj plan -fmt esri -o Outputs/3D/ReseauCP2020 -layout my_layout

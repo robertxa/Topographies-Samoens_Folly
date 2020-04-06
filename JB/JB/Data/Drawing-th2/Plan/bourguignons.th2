@@ -1,7 +1,10 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
+
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+
+
 
 
 scrap Bourguignons1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
@@ -173,13 +176,13 @@ point 8558.5 4997.75 label -text "Galerie des Bourguignons"
 
 point 8631.0 4925.75 continuation
 
-point 8519.5 4934.5 continuation
+point 8519.5 4934.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
-point 8607.0 4887.0 continuation
+point 8607.0 4887.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
-point 8623.0 4879.0 continuation
+point 8623.0 4879.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
-point 8679.25 4903.0 continuation
+point 8679.25 4903.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
 point 8719.0 4966.0 label -text "Colm."
 
@@ -272,7 +275,7 @@ point 8666.66 4977.19 station -name Hb.6@jb-amonts2.Jean-Bernard
 
 point 8653.38 5011.79 station -name Hb.5@jb-amonts2.Jean-Bernard
 
-point 8704.0 4935.5 continuation
+point 8704.0 4935.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
 line wall
   8700.5 4946.5
@@ -319,7 +322,7 @@ endline
 
 point 8445.5 4907.5 blocks
 
-point 8475.75 4847.75 continuation
+point 8475.75 4847.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
 line pit
   8470.25 4929.25
@@ -549,9 +552,9 @@ point 8522.28 4768.15 station -name Hc.46@jb-amonts2.Jean-Bernard
 
 point 8462.25 4793.5 label -orientation 48.2 -text "Méandre de la Soucoupe"
 
-point 8374.25 4969.0 continuation
+point 8374.25 4969.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
-point 8530.0 4757.25 continuation
+point 8530.0 4757.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
 line pit -reverse on
   8520.0 4758.75
@@ -1002,4 +1005,5 @@ point 8538.74 4974.33 station -name Ha.24@jb-amonts2.Jean-Bernard
 point 8552.81 4975.56 station -name Ha.25@jb-amonts2.Jean-Bernard
 
 endscrap
+
 

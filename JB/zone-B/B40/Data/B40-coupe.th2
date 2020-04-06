@@ -13,6 +13,7 @@ line wall -subtype invisible
   81.25 44.25
   71.0 50.0
   71.0 50.0 60.0 56.0 58.75 58.25
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -24,11 +25,12 @@ endline
 line wall -subtype presumed
   55.25 68.5
   55.25 68.5 51.5 68.5 48.5 68.25
+  smooth off
 endline
 
 point 133.5 71.75 label -text "R4"
 
-point 126.0 38.0 continuation
+point 126.0 38.0 continuation -attr Code T -attr Cavite B40 -attr CA "Courant d'air" -text "Trémie instable à désobstruer"
 
 point 129.5 29.0 air-draught -orientation 118.3 -subtype summer
 
@@ -88,6 +90,7 @@ line wall -subtype pebbles
   93.5 41.25 95.5 39.0 99.25 37.25
   103.0 35.5 107.75 33.25 110.75 32.0
   113.75 30.75 116.25 29.25 117.25 28.25
+  smooth off
 endline
 
 line wall

@@ -1,6 +1,13 @@
 A FAIRE sur la base de données topographiques de Samoëns
 
-- Révisions des points d'interrogation (rajout des commentaires)
+- Révisions des points d'interrogation (rajout des commentaires et des Codes)
+	° Attributs utilisés :
+		* Code : A (il suffit d'y aller et de continuer, pas d'obstacles), D (Désobstruction nécessaire), E (Escalade nécessaire), P (Puits non descendu), Q (non renseigné sur la topographie de 1991, c'est à voir/vérifier), S (Siphon à plonger), T (Trémie à désobstruer)
+		* Cavite : nom de la cavité
+		* Reseau : partie de la cavité
+		* CA : indication de courant d'air s'il y a
+	° JB plan, ReseauCP plan, zones B,V, faits
+	
 
 - Erreurs dessins à corriger
 	* Coupe développée du réseau de la Pierre Qui Tombe (JB) : couper en 2 scraps (OK) et rajouter l'option dans le scrap problématique : -flip horizontal (bug) --> Continuer à le retravailler. Le redessiner complètement ?

@@ -1,7 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 14655.5669 8238.2406
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} ../synthese_plan2011.xvi 0 {}
 
 
 
@@ -57,11 +56,12 @@ point 2322.18 1674.14 station -name Kq.20@jb-riv2.Jean-Bernard
 endscrap
 
 
+
 scrap nuitblanche3 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14655.5669 -128.0 0.0 0.0 375.50259926 0.0 m]
 
 point 2473.25 1728.25 label -text "Perte"
 
-point 2430.5 1724.25 continuation
+point 2430.5 1724.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
 
 line pit
   2432.0 1710.25
@@ -76,6 +76,7 @@ line wall
   2438.0 1719.75
   2438.0 1719.75 2438.75 1717.0 2441.0 1717.75
   2443.25 1718.5 2448.28 1716.52 2448.75 1720.0
+  smooth off
 endline
 
 line wall
@@ -180,15 +181,15 @@ line pit -id l69-2340-1705
   smooth off
 endline
 
-point 2314.0 1703.25 continuation
+point 2314.0 1703.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
 
-point 2328.75 1728.0 continuation
+point 2328.75 1728.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
 
 point 2419.5 1718.5 continuation
 
-point 2393.75 1727.5 continuation
+point 2393.75 1727.5 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
 
-point 2377.5 1743.5 continuation
+point 2377.5 1743.5 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
 
 line wall -id l58-2331-1700 -reverse on
   2389.75 1719.0

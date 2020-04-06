@@ -89,7 +89,7 @@ endline
 
 point 159.0 236.0 traverse
 
-point 119.75 307.5 continuation -attr Code D -text "méandre étroit à désobstruer, courant d'air"
+point 119.75 307.5 continuation -attr Code D -attr Cavite JB -attr Reseau "Couteau grenoblois" -attr CA "Courant d'air aspirant en été" -text "méandre étroit à désobstruer, courant d'air"
 
 point 105.5 292.5 dig
 
@@ -584,11 +584,11 @@ endline
 
 point 173.75 203.75 traverse
 
-point 135.0 196.75 continuation -attr Code E -text "Puits remontant à escalader, courant d'air"
+point 135.0 196.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Coutean grenoblois" -attr CA "Courant d'air" -text "Puits remontant à escalader, courant d'air"
 
-point 293.75 -13.25 continuation -attr Code D -text "Colmatage à creuser, courant d'air"
+point 293.75 -13.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Couteau grenoblois" -attr CA "Courant d'air" -text "Colmatage à creuser, courant d'air"
 
-point 361.25 104.25 continuation -attr Code D -text ".troitures à élargir, courant d'air"
+point 361.25 104.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Couteau grenoblois" -attr CA "Soufflant en été" -text "Etroitures à élargir, courant d'air"
 
 point 266.75 110.75 label -text "<center>réseau du <br>Couteau<br>Grenoblois"
 

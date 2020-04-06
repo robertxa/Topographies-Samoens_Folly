@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 14576.8267 8356.3509
 ##XTHERION## xth_me_area_zoom_to 400
-###XTHERION## xth_me_image_insert {12874.02 1 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+
 
 
 scrap Anou2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
@@ -49,17 +49,19 @@ line wall -close on -outline in
   7966.0 5137.5 7963.5 5139.5 7966.75 5139.5
 endline
 
-point 8000.75 5050.25 continuation
-
 point 7868.75 5173.25 water-flow -orientation 102.5
 
 point 8035.5 5020.25 label -orientation 90.0 -text "Galerie de la Jaunisse"
 
-point 8031.5 5141.75 continuation
+point 7934.75 4988.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2 - Jaunisse" -text "Non renseigné sur la topo"
 
-point 7774.25 5237.75 continuation
+point 8000.0 5051.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2 - Jaunisse" -text "Non renseigné sur la topo"
 
-point 7872.5 5168.5 continuation
+point 8030.75 5139.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2 - Jaunisse" -text "Non renseigné sur la topo"
+
+point 7873.5 5168.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2" -text "Non renseigné sur la topo"
+
+point 7774.25 5237.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2" -text "Non renseigné sur la topo"
 
 point 7855.25 5180.25 label -text "R4"
 
@@ -147,8 +149,6 @@ line pit -reverse on
   7876.25 5199.0 7876.75 5199.25 7879.25 5197.25
   smooth off
 endline
-
-point 7934.75 4990.5 continuation
 
 line wall
   7941.25 4991.0
@@ -404,7 +404,7 @@ endscrap
 
 scrap flash -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 7943.75 5225.75 continuation
+point 7943.75 5225.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Puits du Flash" -text "Départ en hauteur non atteint"
 
 point 7898.75 5235.25 label -orientation 75.4 -text "Galerie de la Feigne"
 
@@ -749,8 +749,6 @@ line floor-meander
   smooth off
 endline
 
-point 7744.25 4892.5 continuation
-
 point 7752.0 4896.75 water-flow -orientation 145.6
 
 point 7796.25 4802.75 water-flow -orientation 289.8
@@ -874,9 +872,11 @@ line wall
   smooth off
 endline
 
-point 7924.0 5042.25 continuation
+point 7744.25 4892.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2" -text "Non renseigné sur la topo"
 
-point 7916.5 5002.0 continuation
+point 7924.75 5042.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2 - Jaunisse" -text "Non renseigné sur la topo"
+
+point 7915.5 5003.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Anou2 - Jaunisse" -text "Non renseigné sur la topo"
 
 point 7819.75 5037.5 label -text "Réseau Anou II"
 
@@ -1022,3 +1022,5 @@ point 7992.64 5287.58 station -name Fv.6@jb-amonts2.Jean-Bernard
 point 7984.19 5306.03 station -name Fv.7@jb-amonts2.Jean-Bernard
 
 endscrap
+
+

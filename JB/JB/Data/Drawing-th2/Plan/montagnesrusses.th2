@@ -1,6 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
+
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
 
 
@@ -16,7 +17,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 9112.5 5048.25 continuation
+point 9112.5 5048.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Branlots" -text "A voir ?"
 
 point 9061.25 5049.5 label -orientation 310.0 -text "Réseau des Branlots"
 
@@ -92,7 +93,7 @@ line wall
   smooth off
 endline
 
-point 9247.0 5063.5 continuation -attr Code E -text "Escalade à continuer"
+point 9247.0 5063.5 continuation -attr Code E -attr Cavite JB -attr Reseau "Branlots" -text "Escalade à continuer, en relatio avec l'Echo ou l'Aspiro Souffle ?"
 
 line chimney -close on
   9222.5 5063.5
@@ -112,7 +113,7 @@ point 9316.5 5029.0 air-draught -orientation 291.6
 
 point 9324.5 4983.0 dig
 
-point 9341.5 4989.5 continuation -attr Code D -text "Colmtage à désobtstruer, courant d'air"
+point 9341.5 4989.5 continuation -attr CA "Courant d'air important" -attr Code D -attr Cavite JB -attr Reseau "Branlots" -text "Colmtage à désobtstruer, courant d'air"
 
 line wall -reverse on
   9188.0 5171.5
@@ -163,11 +164,12 @@ point 9203.39 5147.03 station -name Fb.27@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap Russesaval -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 9133.5 5070.75 continuation
+point 9133.5 5070.75 continuation -attr Code Q -attr Cavite JB -attr reseau "Montagnes Russes" -text "A voir ?"
 
-point 9128.25 5083.75 continuation
+point 9128.25 5083.75 continuation -attr Code Q -attr Cavite JB -attr reseau "Montagnes Russes" -text "A voir ?"
 
 point 9183.25 5098.75 label -text "-511 m"
 
@@ -401,11 +403,11 @@ point 9164.0 5278.75 label -text "Colm."
 
 point 9039.75 5301.5 label -text "Colm."
 
-point 9094.75 5318.5 continuation
+point 9094.75 5318.5 continuation -attr Code Q -attr Cavite JB -attr reseau "Montagnes Russes" -text "A voir ?"
 
-point 9076.5 5332.75 continuation
+point 9076.5 5332.75 continuation -attr Code Q -attr Cavite JB -attr reseau "Montagnes Russes" -text "A voir ?"
 
-point 9056.75 5313.25 continuation
+point 9056.75 5313.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Montagnes Russes" -text "A voir ?"
 
 point 9059.75 5301.5 breakdown-choke
 
@@ -537,6 +539,35 @@ line wall
   smooth off
 endline
 
+point 9325.75 5156.25 air-draught -orientation 313.8 -subtype summer
+
+point 9417.5 5160.75 continuation -attr Code T -attr Cavite JB -attr Reseau "Branlots" -attr CA "Soufflant en été" -text "Boyau et trémie à désobstruer, fort c.a."
+
+point 9405.75 5176.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Branlots" -attr CA "Soufflant en été" -text "Boyau étroit remontant, fort c.a."
+
+line pit
+  9405.75 5165.25
+  9405.75 5165.25 9401.5 5166.25 9399.5 5167.0
+endline
+
+line wall
+  9403.5 5170.25
+  9400.75 5165.0
+endline
+
+line wall
+  9410.5 5162.25
+  9410.5 5162.25 9407.0 5162.5 9405.75 5163.0
+  9404.5 5163.5 9403.25 5164.25 9403.75 5165.5
+  9404.25 5166.75 9405.75 5169.75 9405.75 5169.75
+  smooth off
+endline
+
+line wall
+  9406.0 5160.75
+  9406.0 5160.75 9409.25 5160.25 9410.5 5160.25
+endline
+
 line wall
   9218.0 5224.75
   9218.0 5224.75 9230.0 5216.0 9234.5 5215.25
@@ -549,8 +580,12 @@ line wall
   9355.75 5139.0 9357.75 5139.75 9359.0 5140.25
   9360.25 5140.75 9368.75 5140.25 9371.25 5144.75
   9373.75 5149.25 9378.0 5162.75 9383.0 5162.0
-  9388.0 5161.25 9407.25 5158.25 9405.0 5162.5
-  9402.75 5166.75 9386.25 5169.25 9382.75 5167.5
+  9388.0 5161.25 9401.0 5160.5 9406.0 5160.75
+endline
+
+line wall
+  9400.75 5165.0
+  9395.75 5167.25 9386.25 5169.25 9382.75 5167.5
   9379.25 5165.75 9372.5 5151.5 9369.75 5151.0
   9367.0 5150.5 9358.5 5144.25 9355.75 5145.75
   9353.0 5147.25 9345.25 5155.5 9345.0 5157.0
@@ -620,4 +655,5 @@ point 9142.22 5296.59 station -name Ff.1@jb-amonts2.Jean-Bernard
 point 9163.2 5291.94 station -name Ff.0@jb-amonts2.Jean-Bernard
 
 endscrap
+
 

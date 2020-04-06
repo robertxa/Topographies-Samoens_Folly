@@ -1,8 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -275.21000000000004 -129.0 14508.356899999999 8357.3706
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {12874.02 0 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
-
 
 
 
@@ -75,9 +74,9 @@ scrap V6 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence 
 
 point 7179.5 5387.25 continuation
 
-point 7227.5 5267.5 continuation
+point 7227.5 5267.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "V6" -text "Départ à voir ?"
 
-point 7267.0 5404.75 continuation
+point 7267.0 5404.75 continuation -attr Code E -attr Cavite JB -attr Reseau "V6" -text "Départ étroit en bas de la salle du V6, trémie"
 
 point 7276.0 5374.75 label -text "R3"
 
@@ -89,11 +88,11 @@ point 7259.0 5346.25 blocks
 
 point 7238.5 5344.25 blocks
 
-point 7062.0 5372.0 label -text "V6 ter" -scale xl
+point 6969.5 5368.0 label -text "V6 ter" -scale xl
 
 point 7093.5 5423.75 label -text "V6" -scale xl
 
-point 7096.75 5373.0 entrance -orientation 87.0
+point 6990.25 5367.0 entrance -orientation 87.0
 
 point 7254.25 5334.5 blocks
 
@@ -257,8 +256,8 @@ line wall
 endline
 
 line wall
-  7104.5 5365.25
-  7104.5 5365.25 7102.0 5370.5 7104.0 5370.5
+  7097.5 5369.0
+  7097.5 5369.0 7102.0 5370.5 7104.0 5370.5
   7106.0 5370.5 7133.75 5374.0 7136.75 5373.75
   7139.75 5373.5 7161.25 5380.0 7162.5 5377.25
   7163.75 5374.5 7169.0 5353.25 7172.5 5352.5
@@ -281,12 +280,25 @@ line wall -subtype invisible
   7111.0 5408.75
 endline
 
-line wall -subtype invisible
-  7103.5 5383.5
-  7103.5 5383.5 7102.25 5377.5 7102.25 5375.25
-  7102.25 5373.0 7100.75 5366.5 7102.0 5366.0
-  7103.25 5365.5 7104.5 5365.25 7104.5 5365.25
+line wall -subtype unsurveyed
+  7001.5 5354.25
+  7001.5 5354.25 7039.75 5364.5 7052.75 5365.5
+  7065.75 5366.5 7097.5 5369.0 7097.5 5369.0
   smooth off
+endline
+
+line wall -subtype invisible
+  7001.0 5375.0
+  7001.0 5375.0 6999.25 5370.0 6999.75 5365.25
+  7000.25 5360.5 7001.5 5354.25 7001.5 5354.25
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  7098.0 5376.0
+  7098.0 5376.0 7061.5 5372.5 7052.5 5371.5
+  7043.5 5370.5 7015.0 5371.0 7011.5 5371.0
+  7008.0 5371.0 7001.0 5372.5 7001.0 5375.0
 endline
 
 line wall
@@ -298,7 +310,7 @@ line wall
   7119.0 5392.0 7121.0 5393.5 7124.0 5390.0
   7127.0 5386.5 7134.25 5378.25 7131.25 5378.5
   7128.25 5378.75 7103.5 5374.5 7103.5 5376.25
-  7103.5 5378.0 7103.5 5383.5 7103.5 5383.5
+  7103.5 5378.0 7098.0 5376.0 7098.0 5376.0
   smooth off
 endline
 
@@ -460,7 +472,7 @@ point 6993.5 5088.5 label -text "R3"
 
 point 6994.25 5107.5 label -text "R3"
 
-point 6985.25 5048.75 continuation
+point 6985.25 5048.75 narrow-end
 
 line pit
   7030.0 5083.5
@@ -1303,7 +1315,7 @@ line rock-border -close on
   7422.75 4720.25 7419.75 4728.0 7419.75 4724.5
 endline
 
-point 7193.25 5046.25 continuation
+point 7193.25 5046.25 continuation -attr Code Q -attr Cavite JB -attr Reseau V4 -text "A voir ?"
 
 line wall -close on -outline in
   7151.5 5020.75
@@ -1317,7 +1329,7 @@ point 7138.16 5038.61 station -name Ja.13@jb-amonts2.Jean-Bernard
 
 point 7117.04 5034.12 station -name Ja.12@jb-amonts2.Jean-Bernard
 
-point 7116.5 5051.0 continuation
+point 7116.5 5051.0 continuation -attr Code Q -attr Cavite JB -attr Reseau V4 -text "A voir ?"
 
 line wall
   7191.75 5036.75
@@ -1414,4 +1426,5 @@ point 7394.09 4762.91 station -name Jd.3@jb-amonts2.Jean-Bernard
 point 7424.69 4722.59 station -name Jd.6@jb-amonts2.Jean-Bernard
 
 endscrap
+
 

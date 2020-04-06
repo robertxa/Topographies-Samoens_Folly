@@ -1,9 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 14655.566899999998 8238.240600000001
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {13021.23 0 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
-
-
 
 
 
@@ -246,7 +243,7 @@ point 3962.0 2660.0 rope
 
 point 3979.5 2682.75 label -text "C3"
 
-point 3976.25 2651.5 continuation
+point 3976.25 2651.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Bivouac -500" -text "Petit départ à voir ?"
 
 point 4030.21 2629.75 station -name Ke.31@jb-riv.Jean-Bernard
 
@@ -394,7 +391,7 @@ point 3692.75 2228.5 label -text "Siphon 69"
 
 point 3705.5 2207.0 water-flow -orientation 223.8
 
-point 3694.25 2196.0 continuation
+point 3694.25 2196.0 continuation -attr Code S -attr Cavite JB -attr Reseau "Bivouac -500 - Siphon 69" -text "Siphon à plonger"
 
 line wall -id l482-3715-2213
   3713.0 2210.0
@@ -504,7 +501,7 @@ point 4218.27 2626.95 station -name Gp.1@jb-riv2.Jean-Bernard
 
 point 4270.25 2612.25 continuation
 
-point 4327.25 2625.5 continuation
+point 4327.25 2625.5 continuation -attr Code E -attr Cavite JB -attr Reseau "Bivouac -500" -text "Escalade à continuer ?"
 
 point 4359.5 2668.25 air-draught -orientation 221.2
 
@@ -863,7 +860,7 @@ endline
 
 point 4113.0 2814.25 label -text "Colm."
 
-point 4095.25 2806.0 continuation
+point 4095.25 2806.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Bivouac -500" -text "Comatage à creuser"
 
 point 4088.5 2796.5 flowstone
 
@@ -923,7 +920,7 @@ line contour
   smooth off
 endline
 
-point 4104.75 2780.25 altitude
+point 4094.0 2795.5 altitude -align bottom-right
 
 point 4082.17 2794.75 station -name Go.15@jb-riv2.Jean-Bernard
 

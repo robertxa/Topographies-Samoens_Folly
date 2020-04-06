@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -275.21 -8.87 14508.3569 8357.3706
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12874.02 1 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_image_insert {12874.02 0 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
 
 
@@ -52,6 +52,14 @@ point 7617.25 4236.25 label -text "Collecteur"
 point 7408.0 4191.0 label -text "Siphon"
 
 point 7281.5 4260.0 label -text "Siphon"
+
+point 7629.5 4398.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Jean-Dupont" -text "A voir ?"
+
+point 7624.0 4410.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Jean-Dupont" -text "A voir ?"
+
+point 7604.0 4406.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Jean-Dupont" -text "A voir ?"
+
+point 7763.0 4331.0 continuation -explored 150m -text "environ 150 m non topo."
 
 point 7902.0 4273.25 label -text "Siphon"
 

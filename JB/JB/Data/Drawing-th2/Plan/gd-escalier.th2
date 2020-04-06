@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -275.21000000000004 -129.0 14508.356899999999 8357.3706
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12874.02 0 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 200
+
 
 
 scrap grdescalier -projection plan -author 2010 "Xavier Robert" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
@@ -173,9 +173,9 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 8347.75 4882.75 continuation
+point 8347.75 4882.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
-point 8339.25 4929.0 continuation
+point 8339.25 4929.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
 point 8089.25 4932.0 label -text "P10"
 
@@ -351,6 +351,7 @@ point 8036.3 5234.34 station -name Da.271@jb-amonts2.Jean-Bernard
 point 8038.33 5257.18 station -name Da.270@jb-amonts2.Jean-Bernard
 
 endscrap
+
 
 
 scrap jaunisse -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
@@ -534,17 +535,17 @@ line wall
   smooth off
 endline
 
-point 8137.5 4916.75 continuation
+point 8137.5 4916.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
-point 8151.5 4878.25 continuation
+point 8151.5 4878.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
-point 8235.25 4697.5 continuation
+point 8235.25 4697.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
 point 8426.75 4682.5 continuation
 
-point 8188.75 4589.0 continuation
+point 8188.75 4589.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
-point 8162.75 4569.25 continuation
+point 8162.75 4569.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
 point 8254.0 4560.5 label -text "R2"
 
@@ -1073,6 +1074,7 @@ point 8129.78 4883.74 station -name Da.294@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap chatons -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 8325.75 4710.5 label -text "Méandre des Chatons"
@@ -1109,9 +1111,9 @@ endline
 
 point 8361.25 4767.5 continuation
 
-point 8276.0 4903.25 continuation
+point 8276.0 4903.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
-point 8334.5 4872.75 continuation
+point 8334.5 4872.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "Grand Escalier" -text "A voir ?"
 
 line wall
   8335.5 4866.25
@@ -1309,6 +1311,8 @@ point 8235.11 4564.27 station -name Fn.14@jb-amonts2.Jean-Bernard
 point 8237.26 4559.57 station -name Fn.15@jb-amonts2.Jean-Bernard
 
 endscrap
+
+
 
 scrap jaunisse2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 

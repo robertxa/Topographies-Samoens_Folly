@@ -12,11 +12,13 @@ point 1240.5 -2121.5 label -text "décrochement"
 line pit
   1266.0 -2310.5
   1266.0 -2310.5 1242.5 -2303.5 1245.5 -2282.0
+  smooth off
 endline
 
 line pit
   1337.0 -2382.0
   1337.0 -2382.0 1298.5 -2365.5 1303.0 -2346.5
+  smooth off
 endline
 
 point 1368.0 -2378.5 narrow-end
@@ -34,6 +36,7 @@ point 876.5 -2171.5 water-flow -orientation 280.9
 line pit
   862.0 -2196.5
   862.0 -2196.5 896.5 -2170.0 883.0 -2146.0
+  smooth off
 endline
 
 line wall
@@ -98,9 +101,9 @@ point 1965.5 -2790.0 water-flow -orientation 287.2
 
 point 2069.0 -2695.5 water-flow -orientation 259.1
 
-point 2071.5 -2720.5 continuation -attr Code D -text "Etroiture à franchir"
+point 2071.5 -2720.5 continuation -attr Code D -text "Etroiture à franchir" -attr CA "Courant d'air" -attr Cavite ReseauCP -attr Reseau "Galerie des Clowns"
 
-point 1965.0 -2828.5 continuation -attr Code D -text "Etroiture à franchir"
+point 1965.0 -2828.5 continuation -attr Code D -text "Etroiture à franchir" -attr CA "Courant d'air" -attr Cavite ReseauCP -attr Reseau "Galerie des Clowns"
 
 point 1907.5 -2820.5 narrow-end
 
@@ -143,16 +146,19 @@ endline
 line pit
   1941.0 -2684.5
   1941.0 -2684.5 1919.5 -2673.5 1917.5 -2668.5
+  smooth off
 endline
 
 line pit
   1907.5 -2671.5
   1907.5 -2671.5 1912.0 -2692.5 1900.5 -2695.0
+  smooth off
 endline
 
 line pit
   1806.0 -2672.5
   1806.0 -2672.5 1798.5 -2651.5 1817.0 -2639.5
+  smooth off
 endline
 
 line pit
@@ -162,17 +168,20 @@ line pit
   smooth off
   1563.0 -2636.0 1574.0 -2629.5 1576.0 -2625.0
   1578.0 -2620.5 1585.5 -2612.0 1588.5 -2611.0
+  smooth off
 endline
 
 line pit
   1363.0 -2448.0
   1363.0 -2448.0 1358.0 -2425.0 1374.0 -2419.0
+  smooth off
 endline
 
 line pit
   1206.5 -2313.0
   1206.5 -2313.0 1190.0 -2286.0 1190.0 -2279.0
   1190.0 -2272.0 1200.5 -2252.5 1196.0 -2243.5
+  smooth off
 endline
 
 line wall
@@ -216,6 +225,7 @@ line wall
   1355.5 -2419.5 1346.0 -2415.5 1340.5 -2407.0
   1335.0 -2398.5 1321.5 -2388.0 1325.0 -2380.0
   1328.5 -2372.0 1338.0 -2362.0 1341.5 -2361.5
+  smooth off
 endline
 
 line wall
@@ -260,6 +270,7 @@ line wall
   1866.0 -2676.0 1887.5 -2687.0 1893.0 -2687.5
   1898.5 -2688.0 1903.5 -2690.5 1904.0 -2694.5
   1904.5 -2698.5 1902.5 -2699.5 1891.5 -2696.5
+  smooth off
 endline
 
 line wall
@@ -311,6 +322,7 @@ line wall
   970.5 -2185.5 941.5 -2178.5 921.0 -2175.5
   900.5 -2172.5 911.0 -2171.0 901.5 -2168.0
   892.0 -2165.0 892.5 -2162.0 888.0 -2159.5
+  smooth off
 endline
 
 point 1198.5 -2289.0 station -name 20@BivouacCP

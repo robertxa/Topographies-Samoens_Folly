@@ -1,7 +1,9 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 14576.8267 8356.3509
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
+
 ###XTHERION## xth_me_image_insert {12874.02 1 1.0} {6929.13 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+
 
 
 
@@ -519,7 +521,6 @@ endscrap
 
 
 
-
 scrap quitombe4 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 line wall -close on -outline in -subtype unsurveyed
@@ -693,11 +694,12 @@ point 7639.41 4579.6 station -name Jc.6@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap pierretombe -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 7681.25 4675.25 continuation
+point 7681.25 4675.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
-point 7606.75 4871.25 continuation
+point 7606.75 4871.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
 point 7559.0 5066.75 label -text "-465 m"
 
@@ -889,17 +891,17 @@ point 7780.5 4489.75 label -text "P10"
 
 point 7903.0 4448.75 label -text "Boyau de la Jonction"
 
-point 7969.0 4443.25 continuation
+point 7969.0 4443.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
-point 7949.5 4457.0 continuation
+point 7949.5 4457.0 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
-point 7957.0 4515.0 continuation
+point 7957.0 4515.0 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
-point 7910.25 4506.25 continuation
+point 7910.25 4506.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
-point 7810.25 4462.25 continuation
+point 7810.25 4462.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
-point 7830.5 4506.75 continuation
+point 7830.5 4506.75 continuation -attr Code Q -attr Cavite JB -attr reseau "Pierre qui Tombe" -text "A Voir ?"
 
 point 7770.0 4542.5 water-flow -orientation 226.6
 

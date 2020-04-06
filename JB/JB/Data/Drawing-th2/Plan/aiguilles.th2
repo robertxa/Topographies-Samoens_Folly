@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
+##XTHERION## xth_me_area_adjust -129.5 -129.5 10693.0 5574.0
 ##XTHERION## xth_me_area_zoom_to 200
-###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+
 
 
 scrap Raccourci -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
@@ -20,7 +20,7 @@ point 10508.5 5261.0 label -text "Puits du Raccourci"
 
 point 10543.25 5239.0 label -text "P30"
 
-point 10531.25 5237.5 continuation
+point 10531.25 5237.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Galerie des Aiguilles" -text "Non renseigné sur la topo"
 
 line floor-meander
   10331.0 5193.5
@@ -139,11 +139,11 @@ scrap Aiguilles -projection plan -author 2010 "Xavier Robert" -copyright 2010 "l
 
 point 10305.5 5266.25 continuation
 
-point 10192.25 5200.0 continuation
+point 10232.0 5185.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Départ non renseigné sur la topo"
 
-point 10229.25 5187.75 continuation
+point 10188.0 5201.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Départ non renseigné sur la topo"
 
-point 10144.5 5169.5 continuation
+point 10144.5 5169.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Départ non renseigné sur la topo"
 
 line pit -close on
   10218.75 5169.25
@@ -398,7 +398,9 @@ line chimney -close on -reverse on
   smooth off
 endline
 
-point 10175.25 5240.25 continuation
+point 10099.5 5288.0 continuation -attr Code E -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Cheminée à escalader"
+
+point 10175.25 5240.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Cheminée à escalader"
 
 point 10184.5 5227.0 height -value [+20 m]
 
@@ -561,9 +563,9 @@ point 9855.5 5020.25 label -text "Vers r. aux Excentriques"
 
 point 9798.25 5311.5 label -orientation 62.4 -text "Galerie de l'Ascension"
 
-point 9752.0 5374.0 continuation
+point 9755.0 5374.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Départ non renseigné sur la topo"
 
-point 9753.5 5283.75 continuation
+point 9757.5 5283.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Aiguilles" -text "Départ non renseigné sur la topo"
 
 line pit
   9834.25 5031.75

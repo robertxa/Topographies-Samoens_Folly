@@ -1,7 +1,10 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
 ##XTHERION## xth_me_area_zoom_to 200
+
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+
+
 
 
 scrap P15 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
@@ -52,9 +55,11 @@ point 8555.54 5274.27 station -name Fd.35@jb-amonts2.Jean-Bernard
 
 point 8546.64 5284.5 station -name Fd.34@jb-amonts2.Jean-Bernard
 
-point 8423.0 5183.25 continuation
+point 8549.5 5364.5 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
-point 8345.25 5210.25 continuation
+point 8423.0 5183.25 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
+
+point 8345.25 5210.25 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
 point 8289.75 5250.0 label -orientation 39.8 -text "Galerie du P15"
 
@@ -229,12 +234,11 @@ endscrap
 
 
 
-
 scrap P15aval -projection plan -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 point 8625.75 5019.5 label -text "P15"
 
-point 8649.5 5042.25 continuation
+point 8649.5 5042.25 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
 line pit
   8635.25 5024.5
@@ -254,11 +258,13 @@ endline
 line wall
   8758.0 4974.5
   8758.0 4974.5 8778.0 4971.5 8784.5 4968.5
+  smooth off
 endline
 
 line wall
   8790.5 4982.25
   8790.5 4982.25 8765.5 4988.0 8759.5 4988.25
+  smooth off
 endline
 
 line wall
@@ -273,6 +279,7 @@ line wall
   8642.5 5015.5
   8642.5 5015.5 8641.0 5022.0 8644.75 5019.75
   8648.5 5017.5 8688.5 4983.25 8692.25 4982.75
+  smooth off
 endline
 
 line wall
@@ -308,7 +315,7 @@ endscrap
 
 scrap P15-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 8229.0 5340.75 continuation
+point 8229.0 5340.75 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
 point 8230.5 5434.75 label -text "P40"
 
@@ -389,15 +396,13 @@ endscrap
 
 
 
-
-
 scrap P15-4 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 8021.0 5348.0 continuation
+point 8021.0 5348.0 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
-point 8041.75 5427.0 continuation
+point 8041.75 5427.0 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
-point 8048.75 5437.25 continuation
+point 8048.75 5437.25 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
 point 8101.25 5291.5 label -text "Vers S. Chatière"
 
@@ -498,7 +503,7 @@ line wall
   8222.0 5448.5
 endline
 
-point 8229.0 5521.0 continuation
+point 8229.0 5521.0 continuation -attr Code Q -attr Cavite JB -attr reseau "P15" -text "A Voir ?"
 
 line wall
   8196.75 5428.75

@@ -41,11 +41,11 @@ point 4993.0 2886.25 label -text "-40 m"
 
 point 5016.75 2869.0 altitude -align bottom-right
 
-point 5027.75 2880.0 continuation -attr Code Q -text "A fouiller ?"
+point 5027.75 2880.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A fouiller ?"
 
-point 4976.0 2851.0 continuation
+point 4976.0 2851.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A voir ?"
 
-point 4908.25 2743.0 continuation -attr Code A -text "Puits à descendre"
+point 4908.25 2743.0 continuation -attr Code P -attr Cavite ReseauCP -attr Reseau "Billy" -text "Puits à descendre"
 
 line pit
   4995.5 2839.25
@@ -257,9 +257,9 @@ point 4320.0 2521.0 air-draught -orientation 249.9 -subtype summer
 
 point 4513.75 2449.75 air-draught -orientation 352.3 -subtype summer
 
-point 4432.75 2561.0 continuation
+point 4432.75 2561.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A voir ?"
 
-point 4512.0 2466.75 continuation
+point 4512.0 2466.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Billy" -attr CA "Courant d'air fort soufflant en été" -text "Puits remontant >20 m à escalader, tout le courant d'air de la branche vient d'ici"
 
 point 4530.25 2499.0 height -value [+20 m]
 
@@ -438,13 +438,13 @@ point 4307.75 2689.0 altitude -align right
 
 point 4292.75 2706.0 label -text "-117 m"
 
-point 4310.75 2673.5 continuation
+point 4310.75 2673.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -attr CA "Soufflant fort en été" -text "Etroiture à désobtruer"
 
-point 4120.5 2638.25 continuation
+point 4120.5 2638.25 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -attr CA "Soufflant fort en été" -text "Etroiture à désobtruer"
 
-point 4033.0 2599.75 continuation
+point 4033.0 2599.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A Voir ?"
 
-point 3893.75 2434.75 continuation
+point 3893.75 2434.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A Voir ?"
 
 line pit
   4029.5 2540.5
@@ -768,7 +768,7 @@ point 3775.25 2273.25 blocks -scale xs
 
 point 3813.0 2274.5 water-flow -orientation 325.5
 
-point 3778.25 2316.5 continuation
+point 3778.25 2316.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A Voir ?"
 
 line wall
   3556.0 2209.0
@@ -776,9 +776,9 @@ line wall
   smooth off
 endline
 
-point 3427.5 2101.75 continuation
+point 3427.5 2101.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A Voir ?"
 
-point 3400.0 2054.25 continuation
+point 3400.0 2054.25 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A Voir ?"
 
 line pit
   3393.75 2067.0
@@ -1023,17 +1023,17 @@ endscrap
 
 scrap Billy-6 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 3023.75 2245.75 continuation
+point 3023.75 2245.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy aval" -text "A Voir ?"
 
-point 3058.25 2224.5 continuation
+point 3058.25 2224.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy aval" -text "A Voir ?"
 
-point 3090.5 2159.5 continuation
+point 3090.5 2159.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy aval" -text "A Voir ?"
 
-point 3099.75 2158.25 continuation
+point 3099.75 2158.25 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy aval" -text "A Voir ?"
 
-point 3138.75 2212.75 continuation
+point 3138.75 2212.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A Voir ?"
 
-point 3198.5 2155.75 continuation
+point 3198.5 2155.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A Voir ?"
 
 point 3165.25 2083.0 label -text "R5"
 
@@ -1222,7 +1222,7 @@ line wall
   smooth off
 endline
 
-point 3213.75 1986.75 continuation
+point 3213.75 1986.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy" -text "A voir ?"
 
 line wall
   3205.75 1989.5
@@ -1615,15 +1615,15 @@ point 3080.0 1820.5 narrow-end -orientation 319.5
 
 point 2998.75 1937.0 narrow-end -orientation 109.0
 
-point 3043.5 1943.75 continuation
+point 3043.5 1943.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rasoir" -text "A voir ?"
 
-point 3049.25 1964.25 continuation
+point 3049.25 1964.25 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rasoir" -text "A voir ?"
 
-point 3047.0 1988.25 continuation
+point 3047.0 1988.25 continuation -attr Code D -attr Cavite ReseauCP -attr Reseau "Gour Bleu" -text "Etr."
 
-point 3074.25 1909.0 continuation
+point 3074.25 1909.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rasoir" -text "A voir ?"
 
-point 3046.25 1825.75 continuation
+point 3046.25 1825.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Rasoir" -attr CA "Courant d'air" -text "A Escalade à continuer, courant d'air"
 
 line floor-meander
   3063.5 1866.5
@@ -2228,7 +2228,7 @@ point 3056.75 2071.5 rimstone-pool
 
 point 3068.75 2075.25 helictite
 
-point 3018.0 2005.75 continuation
+point 3018.0 2005.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Gour Bleu" -text "A voir ?"
 
 line pit -close on -reverse on
   3044.5 2022.75
@@ -2807,7 +2807,7 @@ point 2585.0 2001.0 water-flow -orientation 182.8
 
 point 2618.0 1974.5 water-flow -orientation 312.5
 
-point 2675.25 1930.25 continuation -attr Code E -text "Méandre à escalader"
+point 2675.25 1930.25 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau CP14 -text "Méandre à escalader"
 
 point 2623.75 1969.0 narrow-end -orientation 115.5
 
@@ -2896,11 +2896,11 @@ point 2681.25 1860.0 rope
 
 point 2785.5 1883.25 rope
 
-point 2711.0 1852.5 continuation
+point 2711.0 1852.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "galerie du Rasoir" -text "Cheminée"
 
-point 2827.75 1896.75 continuation
+point 2827.75 1896.75 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "galerie du Rasoir" -text "Arrivée d'eau à voir ?"
 
-point 2860.0 1827.5 continuation
+point 2860.0 1827.5 continuation -attr Code A -attr Cavite ReseauCP -attr Reseau "galerie du Rasoir" -text "Méandre à remonter"
 
 line water-flow
   2853.5 1838.0
@@ -3140,7 +3140,7 @@ point 2637.75 1828.75 blocks -scale s
 
 point 2628.5 1831.25 blocks -scale s
 
-point 2335.75 1738.0 continuation
+point 2335.75 1738.0 continuation -attr Code A -attr Cavite ReseauCP -attr Reseau "galerie du Huit" -attr CA "Courant d'air" -text "Galerie à voir et topographier"
 
 line wall
   2818.75 1889.5
@@ -3218,9 +3218,9 @@ endscrap
 
 scrap 4vents-1 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 2368.25 1757.5 continuation
+point 2368.25 1757.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "galerie du Sirroco" -text "CF à atteindre en traversée, à explorer"
 
-point 2346.0 1737.25 continuation
+point 2346.0 1737.25 continuation -attr Code A -attr Cavite ReseauCP -attr Reseau "galerie du Sirroco" -text "CF à topographier"
 
 point 2360.0 1733.25 traverse
 
@@ -3370,6 +3370,8 @@ point 2707.0 1618.5 pebbles -scale s
 point 2680.5 1781.75 pebbles -scale s
 
 point 2686.0 1789.0 blocks -scale s
+
+point 2701.75 1589.75 continuation -attr Code E-P -attr Cavite ReseauCP -attr Reseau "galerie du Rasoir" -text "Puits à revoir" -explored 30m
 
 line wall
   2658.0 1790.0
@@ -3682,7 +3684,7 @@ point 2530.25 1525.75 rope
 
 point 2765.25 1466.5 rope
 
-point 2757.75 1470.75 continuation
+point 2757.75 1470.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "galerie du Sirroco" -text "A voir ?"
 
 point 2760.75 1445.25 height -value [+4 m]
 
@@ -3937,7 +3939,7 @@ line pit
   smooth off
 endline
 
-point 2972.75 1963.5 continuation
+point 2972.75 1963.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Gour Bleu" -text "A voir ?"
 
 point 2971.75 1827.25 air-draught -orientation 147.1 -subtype summer
 
@@ -3947,9 +3949,9 @@ point 2976.75 2023.75 altitude -align top-left
 
 point 3010.0 2053.75 label -orientation 338.4 -text "g. du Gour Bleu"
 
-point 2968.0 2020.75 continuation
+point 2968.0 2020.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Gour Bleu" -text "A voir ?"
 
-point 3008.5 1960.5 continuation
+point 3008.5 1960.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Gour Bleu" -text "A voir ?"
 
 line pit -reverse on
   2984.0 1783.25
@@ -4334,12 +4336,28 @@ line pit
   2825.0 2042.0
 endline
 
-line wall
+line pit
+  2840.25 2039.75
+  2840.25 2039.75 2833.5 2041.25 2833.5 2039.75
+  2833.5 2038.25 2835.0 2034.5 2835.0 2034.5
+  smooth off
+endline
+
+line pit
+  2832.5 2037.0
+  2832.5 2037.0 2828.25 2044.25 2831.25 2045.0
+endline
+
+line wall -outline in
   2845.5 2020.0
   2845.5 2020.0 2844.5 2014.25 2843.0 2015.25
   2841.5 2016.25 2834.5 2023.5 2833.75 2025.75
   2833.0 2028.0 2831.25 2037.5 2831.0 2039.25
-  2830.75 2041.0 2829.0 2047.25 2829.0 2047.25
+endline
+
+line wall
+  2829.75 2043.25
+  2829.5 2045.0 2829.0 2047.25 2829.0 2047.25
   smooth off
 endline
 
@@ -4411,9 +4429,23 @@ point 2857.25 2014.25 height -value [-6 m]
 
 point 2840.0 2046.75 height -value [-10 m]
 
-point 2926.0 1980.5 continuation
+point 2926.0 1980.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "CP16" -text "A voir ?"
 
-point 2851.0 2027.0 continuation
+line wall -subtype unsurveyed -outline in
+  2831.0 2039.25
+  2831.0 2039.25 2838.0 2036.0 2839.25 2034.75
+  2840.5 2033.5 2842.25 2032.0 2843.0 2028.0
+  2843.75 2024.0 2845.5 2020.0 2845.5 2020.0
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  2848.5 2018.25
+  2848.5 2018.25 2848.25 2030.5 2844.5 2033.5
+  2840.75 2036.5 2833.75 2042.25 2832.75 2042.75
+  2831.75 2043.25 2829.75 2043.25 2829.75 2043.25
+  smooth off
+endline
 
 point 2845.5 2010.0 pebbles -scale s
 
@@ -4591,11 +4623,13 @@ point 2512.25 2252.25 height -value [-10 m]
 
 point 2612.0 2325.5 height -value [-8 m]
 
-point 2674.25 2312.5 continuation
+point 2482.0 2231.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy aval" -text "Terminus à revoir ?"
 
-point 2848.5 2281.0 continuation
+point 2674.25 2312.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Billy aval" -text "A voir ?"
 
-point 2845.75 2303.0 continuation
+point 2848.5 2281.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Billy aval" -attr CA "Courant d'air important" -text "A escalader, tout le courant d'air part par là"
+
+point 2845.75 2303.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Billy aval" -attr CA "Courant d'air important" -text "A escalader, tout le courant d'air part par là"
 
 point 2871.5 2267.25 continuation
 

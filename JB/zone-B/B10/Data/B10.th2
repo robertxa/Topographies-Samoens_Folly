@@ -50,9 +50,9 @@ point 45.5 199.25 altitude -align right
 
 point 163.25 51.75 altitude -align right
 
-point 167.0 66.0 continuation -attr Code D -text "Méandre étroit"
+point 167.0 66.0 continuation -attr Code D -attr Cavite B10 -text "Méandre étroit"
 
-point 166.0 46.25 continuation -attr Code D -text "Méandre étroit"
+point 166.0 46.25 continuation -attr Code D -attr Cavite B10 -text "Méandre étroit"
 
 point 37.0 202.25 entrance -orientation 157.8
 
@@ -138,7 +138,7 @@ point 151.756 61.45 station -name 2@B10
 
 point 135.616 57.17 station -name 3@B10
 
-point 86.25 150.0 continuation -attr Code E -text "Puits remontant"
+point 86.25 150.0 continuation -attr Code E -attr Cavite B10 -text "Puits remontant"
 
 point 124.526 61.24 station -name 4@B10
 

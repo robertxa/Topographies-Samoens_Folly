@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 2647.6864 2332.7256
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {2047.24 1 1.0} {1574.8100000000002 xx0init} solitaire-plan2019d.xvi 0 {}
 
 
@@ -47,9 +47,9 @@ endline
 
 point 948.5 1504.75 narrow-end
 
-point 929.25 1522.5 continuation -attr Code D -text "Passage difficilement pénétrable"
+point 929.25 1522.5 continuation -attr Code D -text "Passage difficilement pénétrable" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
-point 877.0 1430.5 continuation -attr Code E -text "Suite du méandre, pas de courant d'air, à Equiper"
+point 877.0 1430.5 continuation -attr Code E -text "Suite du méandre, pas de courant d'air, à Equiper" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 line pit
   886.0 1419.75

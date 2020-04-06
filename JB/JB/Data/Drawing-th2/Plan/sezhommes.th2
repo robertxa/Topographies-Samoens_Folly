@@ -1,7 +1,8 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {13021.23 0 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+
 
 
 scrap sezhommes-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
@@ -74,6 +75,7 @@ line wall
   1961.75 1573.75 1962.75 1577.75 1960.75 1579.0
   1958.75 1580.25 1944.0 1596.0 1948.5 1596.0
   1953.0 1596.0 1982.25 1596.0 1982.25 1598.5
+  smooth off
 endline
 
 point 1855.54 1526.78 station -name Ko.20@jb-riv2.Jean-Bernard
@@ -163,9 +165,9 @@ endline
 
 point 1401.75 1351.75 label -text "P13"
 
-point 1442.75 1349.25 continuation
+point 1442.75 1349.25 continuation -attr Code Q -attr Cavite JB -attr reseau "Reseau de Sezhommes" -text "A voir ?"
 
-point 1663.5 1434.75 continuation
+point 1663.5 1434.75 continuation -attr Code Q -attr Cavite JB -attr reseau "Reseau de Sezhommes" -text "A voir ?"
 
 line wall -close on -outline in
   1573.75 1400.0

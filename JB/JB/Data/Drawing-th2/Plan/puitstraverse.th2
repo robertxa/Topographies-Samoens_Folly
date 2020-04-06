@@ -43,9 +43,9 @@ point 45.25 264.0 label -text "trémie"
 
 point 67.0 284.25 label -orientation 321.8 -text "faille"
 
-point 72.5 239.75 continuation
+point 72.5 239.75 continuation -attr Code E -attr Cavite JB -attr reseau "Puits qu'on Traverse" -text "Départ en hauteur non atteint"
 
-point 54.75 253.0 continuation
+point 54.75 253.0 continuation -attr Code E -attr Cavite JB -attr reseau "Puits qu'on Traverse" -text "Départ en hauteur non atteint"
 
 point 74.5 270.0 blocks
 
@@ -234,7 +234,7 @@ point 154.0 137.0 clay
 
 point 195.25 75.25 height -value [+4 m]
 
-point 93.0 101.0 continuation
+point 93.0 101.0 continuation -attr Code D -attr CA "Courant d'air" -attr Cavite JB -attr reseau "Puits qu'on Traverse" -text "Moins de 1 m de colmatage d'argile à désobstruer, derrière, c'est grand"
 
 point 139.5 139.75 label -text "bloc"
 
@@ -406,6 +406,7 @@ endline
 line wall -subtype invisible
   185.75 105.0
   185.75 105.0 189.5 108.5 188.0 112.75
+  smooth off
 endline
 
 point 186.776 108.67500000000003 station -name XR-2015d-26@puitstraverse.Jean-Bernard

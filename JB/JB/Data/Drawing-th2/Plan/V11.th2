@@ -1,7 +1,10 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
 ##XTHERION## xth_me_area_zoom_to 200
+
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
+
+
 
 
 scrap V11 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
@@ -365,6 +368,8 @@ line wall
   smooth off
 endline
 
+point 9538.5 5995.0 continuation -attr Code A -attr Cavite JB -attr Reseau V11 -text "Peut-être un départ à voir dans l'axe de l'entrée, en bas du glacier"
+
 point 9665.76 5942.99 station -name Ef.12@jb-amonts2.Jean-Bernard
 
 point 9670.78 5928.46 station -name Ef.11@jb-amonts2.Jean-Bernard
@@ -609,6 +614,7 @@ point 9936.43 5559.79 station -name Ef.38@jb-amonts2.Jean-Bernard
 endscrap
 
 
+
 scrap oublies -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 line wall -reverse on
@@ -636,11 +642,11 @@ point 9637.75 5468.75 label -text "Galerie des Oubliés"
 
 point 9437.75 5531.75 label -orientation 52.9 -text "Galerie des Dalles"
 
-point 9360.5 5595.25 continuation
+point 9360.5 5595.25 continuation -attr Code Q -attr Cavite JB -attr Reseau V11 -attr CA "Courant d'air soufflant en été" -text "A voir ? Départ de méandre avec courant d'air"
 
-point 9949.5 5460.0 continuation
+point 9949.5 5460.0 continuation -attr Code Q -attr Cavite JB -attr Reseau V11 -text "A voir ?"
 
-point 9743.0 5440.0 continuation
+point 9743.0 5440.0 continuation -attr Code Q -attr Cavite JB -attr Reseau V11 -text "A voir ?"
 
 line floor-meander
   9559.5 5371.75
@@ -871,3 +877,5 @@ point 9949.8 5488.65 station -name Ek.10@jb-amonts2.Jean-Bernard
 point 9968.04 5503.76 station -name Ek.9@jb-amonts2.Jean-Bernard
 
 endscrap
+
+

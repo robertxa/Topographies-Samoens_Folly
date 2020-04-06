@@ -32,9 +32,9 @@ endline
 
 point 331.5 371.0 air-draught -orientation 88.1 -subtype summer
 
-point 712.0 507.0 continuation -attr Code A -text "CF à explorer"
+point 712.0 507.0 continuation -attr Code A -text "CF à explorer" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
-point 746.5 621.0 continuation -attr Code A -text "Affluent à explorer"
+point 746.5 621.0 continuation -attr Code A -text "Affluent à explorer" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 point 816.0 582.5 narrow-end
 
@@ -188,7 +188,7 @@ line wall
   smooth off
 endline
 
-point 993.5 252.5 continuation -attr Code A -text "Départ à voir"
+point 993.5 252.5 continuation -attr Code A -text "Départ à voir" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 line wall
   1017.5 271.0
@@ -422,11 +422,11 @@ endline
 
 point 46.5 72.0 label -text "<center>salle<br>du Chaos"
 
-point 120.0 -147.5 continuation -attr Code P -text "Puits à descendre"
+point 120.0 -147.5 continuation -attr Code P -text "Puits à descendre" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
-point 356.5 -299.0 continuation -attr Code A -text "Départ à explorer ; bruit de rivière"
+point 356.5 -299.0 continuation -attr Code A -text "Départ à explorer ; bruit de rivière" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
-point 418.0 -166.0 continuation -attr Code A -text "Départ à explorer"
+point 418.0 -166.0 continuation -attr Code A -text "Départ à explorer" -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 line pit
   164.0 -149.0
