@@ -5981,9 +5981,9 @@ point 3186.5 1097.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau
 
 point 3160.25 1094.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Réseau des Massues" -text "A voir ?"
 
-point 3249.25 1072.75 continuation
+point 3249.25 1072.75 continuation -attr Code Q -text "A voir ?" -attr Cavite ReseauCP -attr Reseau "Réseau des Massues"
 
-point 3230.75 1094.25 continuation
+point 3230.75 1094.25 continuation -attr Code Q -text "A voir ?" -attr Cavite ReseauCP -attr Reseau "Réseau des Massues"
 
 line pit
   3201.0 1038.0
@@ -6214,7 +6214,7 @@ line pit
   smooth off
 endline
 
-point 3272.5 1022.25 continuation
+point 3272.5 1022.25 continuation -attr Code Q -text "A voir ?" -attr Cavite ReseauCP -attr Reseau "Tête à l'homme"
 
 line wall
   3276.5 1020.75

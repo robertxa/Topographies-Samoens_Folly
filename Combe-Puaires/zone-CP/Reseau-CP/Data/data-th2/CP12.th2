@@ -2035,9 +2035,9 @@ point 1073.96 1022.54 station -name B.22@CP19b
 
 point 1075.3 1026.39 station -name B.21@CP19b
 
-point 1054.25 1031.5 continuation
+point 1054.25 1031.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
-point 1043.5 1026.5 continuation
+point 1043.5 1026.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
 point 953.5 987.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
@@ -2064,7 +2064,7 @@ endline
 
 point 997.25 1013.25 air-draught -orientation 96.9 -subtype summer
 
-point 953.0 973.25 continuation
+point 953.0 973.25 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
 point 936.25 961.75 blocks -scale s
 
@@ -2458,7 +2458,7 @@ line contour
   smooth off
 endline
 
-point 992.75 861.0 continuation
+point 992.75 861.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
 line contour -reverse on
   978.0 942.0
@@ -2557,9 +2557,9 @@ endline
 
 point 1064.75 983.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir" -attr CA "Courant d'air"
 
-point 1102.25 1020.5 continuation
+point 1102.25 1020.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
-point 1089.75 1063.0 continuation
+point 1089.75 1063.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
 point 1140.75 1151.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
@@ -3051,11 +3051,11 @@ point 1498.25 1670.0 label -text "-354 m"
 
 point 1517.25 1667.5 altitude -align top
 
-point 1539.5 1654.0 continuation
+point 1539.5 1654.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir"
 
-point 1486.25 1627.75 continuation
+point 1486.25 1627.75 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir"
 
-point 1603.75 1642.0 continuation
+point 1603.75 1642.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Aval CP12" -text "A Voir"
 
 line wall
   1384.25 1537.0

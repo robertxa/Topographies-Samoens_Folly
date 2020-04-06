@@ -144,6 +144,7 @@ layout my_layout
 
 	# Par defaut, la legende est de 14 cm de largeur
 	legend-width 24 cm
+	legend-columns 3
 
 	# echelle graphique 100 m ampleur
 	scale-bar 100 m
@@ -203,9 +204,13 @@ layout my_layout
 	endcode   
 	
 	# Add logos to the map
-	# Rajout des logos du club
-	#map-image 73 35	nw	../../../Logos/vulcain.jpg
-	#map-image 80 40	nw	../../../Logos/vulcain2.jpg
+	# Ajout des logos du club
+	#25 35 se = header
+	map-image 12 65	nw	../../Logos/vulcain.jpg
+	map-image 12 55	nw	../../Logos/vulcain2.jpg
+	
+	# Ajout de la topographie du Lavoir en meilleure résolution et avec des couleurs
+	map-image 85 60	nw	Data/Data-th/Crops_reseaux/Lavoir/Outputs/2D/Lavoir-plan-topoJB.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
