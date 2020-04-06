@@ -40,11 +40,11 @@ line rope
   625.0 324.0
 endline
 
-point 638.75 399.75 continuation -attr Code E -text "Puits remontant"
+point 638.75 399.75 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 559.5 467.0 continuation -attr Code E -text "Puits remontant"
+point 559.5 467.0 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 467.75 459.75 continuation -attr Code E -text "Puits remontant"
+point 467.75 459.75 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 point 135.75 559.0 entrance -orientation 143.3
 
@@ -245,9 +245,6 @@ endscrap
 
 scrap C14-coupe2 -projection extended -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-127.993 -128.0 1269.7399 -128.0 0.0 0.0 35.50241566 0.0 m]
 
-line border
-endline
-
 point 927.337 172.846 station -name 3.0@C14
 
 point 888.027 185.616 station -name 55@C14
@@ -342,15 +339,15 @@ point 936.25 170.0 narrow-end -orientation 277.5
 
 point 891.0 121.0 narrow-end -orientation 270.0
 
-point 768.25 355.5 continuation -attr Code E -text "Puits remontant"
+point 768.25 355.5 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 814.5 377.75 continuation -attr Code E -text "Puits remontant"
+point 814.5 377.75 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 1134.25 603.0 continuation -attr Code E -text " Escalade à continuer, étroiture ?"
+point 1134.25 603.0 continuation -attr Code E-D -attr Cavite C14 -attr Reseau " " -attr CA " " -text " Escalade à continuer, étroiture ?"
 
 point 864.5 122.0 altitude -align bottom
 
-point 1003.75 517.0 continuation -attr Code E -text "Puits remontant à escalader"
+point 1003.75 517.0 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant à escalader"
 
 line wall -subtype unsurveyed
   1127.25 593.25
@@ -541,9 +538,9 @@ point 1056.75 143.75 dig
 
 point 1033.5 191.5 water-flow -orientation 171.6
 
-point 1011.75 184.75 continuation -attr Code Q -text "Départ à voir ?"
+point 1011.75 184.75 continuation -attr Code Q -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Départ à voir ?"
 
-point 1075.25 103.0 continuation -attr Code D -text "Méandre étroit à désobstruer"
+point 1075.25 103.0 continuation -attr Code D -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Méandre étroit à désobstruer"
 
 line rope
   1022.0 151.0
@@ -557,7 +554,7 @@ line rope
   988.0 108.0
 endline
 
-point 1080.5 131.0 continuation -attr Code D -text "Conduite forcée à désobtruer (remplissage)"
+point 1080.5 131.0 continuation -attr Code D -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Conduite forcée à désobstruer (remplissage)"
 
 point 1060.75 106.75 narrow-end -orientation 277.5
 

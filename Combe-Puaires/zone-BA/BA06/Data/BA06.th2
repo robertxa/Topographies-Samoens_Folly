@@ -477,7 +477,7 @@ point 1758.5 -3820.5 rope
 
 point 1313.25 -3595.5 air-draught -orientation 237.7 -subtype summer -scale s
 
-point 1271.25 -3582.0 continuation -attr Code D -text "Lucarne à désobstruer à l'explosif ; courant d'air"
+point 1271.25 -3582.0 continuation -attr Code D -attr Cavite BA6 -attr Reseau " " -attr CA "Courant d'air" -text "Lucarne à désobstruer à l'explosif ; courant d'air"
 
 point 1312.75 -3545.5 label -text "colm."
 
@@ -545,7 +545,7 @@ point 1010.5 -3790.75 clay
 
 point 992.75 -3786.75 clay
 
-point 1027.25 -3805.5 continuation -attr Code D -text "Etroiture à désobstruer à l'explosif"
+point 1027.25 -3805.5 continuation -attr Code D -attr Cavite BA6 -attr Reseau " " -attr CA "Courant d'air" -text "Etroiture à désobstruer à l'explosif"
 
 point 954.0 -3780.25 dig
 

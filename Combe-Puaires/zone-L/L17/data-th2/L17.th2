@@ -46,7 +46,7 @@ line floor-meander
   85.0 59.5
 endline
 
-point 63.0 36.75 continuation -attr Code E -text "Cheminée remontante"
+point 63.0 36.75 continuation -attr Code E -attr Cavite L17 -attr Reseau " " -attr CA " " -text "Cheminée remontante"
 
 point 72.25 34.25 altitude -align bottom-left
 
@@ -84,7 +84,7 @@ point 59.91939999999999 56.8494 station -name 10@L17
 
 point 59.91939999999999 64.7294 station -name 9@L17
 
-point -41.0 28.0 continuation -attr Code E -text "Cheminée remontante"
+point -41.0 28.0 continuation -attr Code E -attr Cavite L17 -attr Reseau " " -attr CA " " -text "Cheminée remontante"
 
 line pit
   -27.25 38.75

@@ -130,9 +130,6 @@ line floor-meander
 endline
 
 line wall -subtype unsurveyed
-endline
-
-line wall -subtype unsurveyed
   222.5 221.75
   222.5 221.75 219.25 221.5 215.25 224.25
   211.25 227.0 207.25 230.0 207.25 230.0
@@ -497,7 +494,7 @@ point 91.5 236.0 label -text "-Etr."
 
 point 94.25 251.25 label -text "-Etr."
 
-point 48.0 236.0 continuation
+point 48.0 236.0 continuation -attr Cavite CP21 -attr Reseau " " -attr CA "Courant d'air soufflant en été" -attr Code D -text "Etroiture à élargie à l'explosif"
 
 point 63.5 231.5 altitude -align bottom-left
 

@@ -349,13 +349,13 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 146.5 252.5 continuation -attr Code E -text "Puits remontant"
+point 146.5 252.5 continuation -attr Code E -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 94.75 204.5 continuation -attr Code D -text "Méandre étroit amont à désobstruer"
+point 94.75 204.5 continuation -attr Code D -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Méandre étroit amont à désobstruer"
 
-point 129.75 229.25 continuation -attr Code E -text "Puits remontant"
+point 129.75 229.25 continuation -attr Code E -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 132.5 114.5 continuation -attr Code E -text "Puits remontant"
+point 132.5 114.5 continuation -attr Code E -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 point 201.75 72.5 narrow-end
 
@@ -372,7 +372,7 @@ endline
 
 point -100.0 29.0 air-draught -orientation 252.2
 
-point -225.0 -17.5 continuation -attr Code D -text "Méandre étroit actif, courant d'air"
+point -225.0 -17.5 continuation -attr Code D -attr Cavite A22 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre étroit actif, courant d'air"
 
 point -210.0 -24.5 narrow-end
 

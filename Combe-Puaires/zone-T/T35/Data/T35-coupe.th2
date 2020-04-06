@@ -119,19 +119,19 @@ point 396.5 -34.5 narrow-end
 
 point 309.5 -5.25 narrow-end
 
-point 313.75 6.25 continuation -attr Code D -text "Boyau étroit"
+point 313.75 6.25 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA " " -text -text "Boyau étroit"
 
-point 391.25 -18.5 continuation -attr Code D -text "Boyau étroit à désobstruer ; courant d'air"
+point 391.25 -18.5 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau étroit à désobstruer ; courant d'air"
 
-point 214.5 27.0 continuation -attr Code D -text "Puits étroit"
+point 214.5 27.0 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Puits étroit"
 
-point 170.75 164.25 continuation -attr Code D -text "Diaclase remontante"
+point 170.75 164.25 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Diaclase remontante"
 
-point 212.75 152.5 continuation -attr Code E -text "Puits remontant"
+point 212.75 152.5 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 240.25 208.25 continuation -attr Code E -text "Puits remontant"
+point 240.25 208.25 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 297.25 189.75 continuation -attr Code E -text "Puits remontant"
+point 297.25 189.75 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 line rope
   249.25 154.25

@@ -152,9 +152,9 @@ point -13.25 424.0 air-draught -orientation 238.6 -subtype winter -scale xs
 
 point 34.5 460.0 air-draught -orientation 356.8 -subtype winter
 
-point -3.25 431.0 continuation -attr Code D -text "étroiture à tirer après escalade"
+point -3.25 431.0 continuation -attr Code E-D -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "étroiture à tirer après escalade"
 
-point 43.5 450.5 continuation -attr Code E -text "étroiture à tirer après escalade facile"
+point 43.5 450.5 continuation -attr Code E-D -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "étroiture à tirer après escalade facile"
 
 line pit -reverse on
   13.0 441.0

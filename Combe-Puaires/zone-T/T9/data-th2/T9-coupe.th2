@@ -118,11 +118,11 @@ point 29.0 192.75 altitude -align left
 
 point 81.5 189.5 dig
 
-point 149.0 121.75 continuation -attr Code E -text "Cheminée à escalader"
+point 149.0 121.75 continuation -attr Code E -attr Cavite T9 -attr Reseau " " -attr CA " " -text -text "Cheminée à escalader"
 
 point 78.0 -16.75 air-draught -orientation 46.5
 
-point 79.0 1.0 continuation -attr Code D -text "Méandre à élargir ; courant d'air"
+point 79.0 1.0 continuation -attr Code D -attr Cavite T9 -attr Reseau " " -attr CA "Courant d'air" -text -text "Méandre à élargir ; courant d'air"
 
 point 176.75 23.5 narrow-end
 

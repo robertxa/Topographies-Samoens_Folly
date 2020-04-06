@@ -85,9 +85,9 @@ line chimney -close on
   smooth off
 endline
 
-point 631.0 228.0 continuation -attr Code D -text "Méandre à désobstruer"
+point 631.0 228.0 continuation -attr Code D -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "Méandre à désobstruer"
 
-point 608.0 264.75 continuation -attr Code A -text "Méandre à poursuivre (massette)"
+point 608.0 264.75 continuation -attr Code A -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "Méandre à poursuivre (massette)"
 
 point 463.75 273.75 label -text etr.
 

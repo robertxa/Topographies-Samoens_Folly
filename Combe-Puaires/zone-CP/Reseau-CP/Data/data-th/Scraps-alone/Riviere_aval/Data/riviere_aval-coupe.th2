@@ -43,7 +43,7 @@ line wall -subtype debris
   smooth off
 endline
 
-point 622.0 301.0 continuation -attr Code D -text "Trémie instable à désobstruer, vide important en dessous, gros chantier"
+point 622.0 301.0 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " " -text "Trémie instable à désobstruer, vide important en dessous, gros chantier"
 
 line wall
   1241.0 650.5
@@ -65,9 +65,6 @@ line wall
   629.0 368.0 613.0 366.0 612.5 361.0
   612.0 356.0 612.0 337.0 612.0 337.0
   smooth off
-endline
-
-line wall
 endline
 
 point 1147.7800000000002 481.41700000000003 station -name 15.1@riviere_aval
@@ -257,9 +254,9 @@ line rope
   1848.5 821.0
 endline
 
-point 1729.5 928.0 continuation -attr Code E -text "Escalade des Cataphiles à terminer, gros volume"
+point 1729.5 928.0 continuation -attr Code E  -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " "-text "Escalade des Cataphiles à terminer, gros volume"
 
-point 1335.5 533.0 continuation -attr Code Q -text "Non renseigné sur la topo antérieure"
+point 1335.5 533.0 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " " -text "Non renseigné sur la topo antérieure"
 
 point 2468.5 1082.0 height -value [+7 m]
 
@@ -784,11 +781,11 @@ line rope
   3197.5 1403.5
 endline
 
-point 3043.0 1384.0 continuation -attr Code P -text "Puits à descendre"
+point 3043.0 1384.0 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " " -text "Puits à descendre"
 
-point 3113.5 1518.5 continuation -attr Code E -text "Départ en plafond, pas d'infos"
+point 3113.5 1518.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " " -text "Départ en plafond, pas d'infos"
 
-point 3187.0 1474.0 continuation -attr Code E -text "Départ en plafond, pas d'infos"
+point 3187.0 1474.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " " -text "Départ en plafond, pas d'infos"
 
 line wall
   3180.5 1456.0

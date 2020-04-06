@@ -312,13 +312,13 @@ line border
   smooth off
 endline
 
-point 556.5 547.0 continuation -attr Code E -text "Méandre à suivre en hauteur"
+point 556.5 547.0 continuation -attr Code E -attr Cavite CP6 -attr Reseau "CP6" -attr CA " " -text "Méandre à suivre en hauteur"
 
-point 555.25 508.75 continuation -attr Code E -text "Méandre à suivre en hauteur"
+point 555.25 508.75 continuation -attr Code E -attr Cavite CP6 -attr Reseau "CP6" -attr CA " " -text "Méandre à suivre en hauteur"
 
-point 644.75 366.5 continuation -attr Code E -text "Escalade"
+point 644.75 366.5 continuation -attr Code E -attr Cavite CP6 -attr Reseau "CP6" -attr CA " " -text "Escalade"
 
-point 628.75 380.5 continuation -attr Code E -text "Méandre à suivre en hauteur"
+point 628.75 380.5 continuation -attr Code E -attr Cavite CP6 -attr Reseau "CP6" -attr CA " " -text "Méandre à suivre en hauteur"
 
 point 627.75 358.5 dig
 
@@ -334,7 +334,7 @@ point 637.5 323.75 label -text "R3"
 
 point 652.0 311.5 label -text "R4"
 
-point 718.75 342.5 continuation -attr Code E -text "Puits Remontant à escalader"
+point 718.75 342.5 continuation -attr Code E -attr Cavite CP6 -attr Reseau "CP6" -attr CA " " -text "Puits Remontant à escalader"
 
 area water
   l73-712-304
@@ -559,7 +559,7 @@ point 831.0 89.5 altitude -align left
 
 point 814.0 109.75 narrow-end
 
-point 863.75 97.75 continuation -attr Code D -text "Tête de puits à désobstruer, ça continue derrière"
+point 863.75 97.75 continuation -attr Code D -attr Cavite CP6 -attr Reseau "CP6" -attr CA "Courant d'air" -text "Tête de puits à désobstruer, ça continue derrière"
 
 point 837.75 132.75 dig
 

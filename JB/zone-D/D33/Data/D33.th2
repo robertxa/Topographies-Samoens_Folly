@@ -469,9 +469,9 @@ point 193.795 285.576 station -name B19@D33
 
 point 191.315 293.096 station -name B18@D33
 
-point 206.75 396.75 continuation -attr Code E -text "Escalade à continuer"
+point 206.75 396.75 continuation -attr Code E -attr Cavite D33 -attr Reseau " " -attr CA " " -text "Escalade à continuer"
 
-point 194.25 433.5 continuation -attr Code E -text "Escalade"
+point 194.25 433.5 continuation -attr Code E  -attr Cavite D33 -attr Reseau " " -attr CA " "-text "Escalade"
 
 point 185.25 425.25 air-draught -orientation 221.9 -scale xs
 
@@ -740,7 +740,7 @@ point 223.5 158.75 air-draught -orientation 179.9
 
 point 279.5 142.5 air-draught -orientation 139.9
 
-point 256.75 161.5 continuation -attr Code E -text "Conduite forcée ventilée à atteindre, escalade facile"
+point 256.75 161.5 continuation -attr Code E -attr Cavite D33 -attr Reseau " " -attr CA "Courant d'air" -text "Conduite forcée ventilée à atteindre, escalade facile"
 
 line floor-meander
   257.0 89.75

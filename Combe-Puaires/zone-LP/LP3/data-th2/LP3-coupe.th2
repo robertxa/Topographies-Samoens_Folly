@@ -157,9 +157,9 @@ point 142.5 170.5 label -text "R5"
 
 point 26.25 62.5 label -text "etr."
 
-point 59.25 23.5 continuation -attr Code D -text "Méandre étroit, courant d'air"
+point 59.25 23.5 continuation -attr Code D -attr Cavite LP3 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre étroit, courant d'air"
 
-point 13.0 27.25 continuation -attr Code D -text "Méandre étroit, courant d'air"
+point 13.0 27.25 continuation -attr Code D -attr Cavite LP3 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre étroit, courant d'air"
 
 point 16.5 44.5 air-draught -orientation 271.2 -subtype summer -scale xs
 

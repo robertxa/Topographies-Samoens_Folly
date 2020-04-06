@@ -75,11 +75,11 @@ point 534.5 995.5 height -value [-50 m]
 
 point 597.5 991.0 height -value [-5 m]
 
-point 507.0 983.0 continuation
+point 507.0 983.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 499.0 996.5 continuation
+point 499.0 996.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 677.5 1020.75 continuation
+point 677.5 1020.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 point 702.75 965.25 water-flow -orientation 164.6
 
@@ -486,7 +486,7 @@ point 1045.25 874.0 label -text "-5 m"
 
 point 1029.5 915.0 label -text "Etr."
 
-point 1055.0 893.75 continuation
+point 1055.0 893.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 point 1033.0 902.25 narrow-end -orientation 210.5
 

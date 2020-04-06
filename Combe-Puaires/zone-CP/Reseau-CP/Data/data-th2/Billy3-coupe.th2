@@ -18,7 +18,7 @@ endline
 #point 28.25 89.75 label -text "<center>méandre<br>Billy amont"
 
 
-point 235.5 96.0 continuation -attr Code D -text "Désobstruction à effectuer, courant d'air, vue sur plus d'espace"
+point 235.5 96.0 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy" -attr CA "Courant d'air" -text "Désobstruction à effectuer, courant d'air, vue sur plus d'espace"
 
 point 220.25 124.0 narrow-end
 

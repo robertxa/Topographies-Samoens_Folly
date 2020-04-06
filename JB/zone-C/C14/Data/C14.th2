@@ -117,13 +117,13 @@ point 139.75 550.25 entrance -orientation 193.7
 
 point 111.25 546.5 entrance -orientation 156.6
 
-point 279.5 438.5 continuation
+point 279.5 438.5 continuation -attr Cavite C14 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
-point 499.75 411.5 continuation -attr Code E -text "Puits remontant"
+point 499.75 411.5 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 441.0 411.75 continuation -attr Code E -text "Puits remontant"
+point 441.0 411.75 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 487.5 481.0 continuation -attr Code E -text "Puits remontant"
+point 487.5 481.0 continuation -attr Code E  -attr Cavite C14 -attr Reseau " " -attr CA " "-text "Puits remontant"
 
 line pit
   453.75 450.75
@@ -385,15 +385,15 @@ point 429.218 515.947 station -name 44@C14
 
 point 447.0 573.75 label -orientation 312.7 -text "Méandre"
 
-point 528.25 335.25 continuation -attr Code E -text "Puits remontant"
+point 528.25 335.25 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 403.0 541.0 continuation -attr Code E -text "Puits remontant"
+point 403.0 541.0 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 430.25 569.25 continuation -attr Code E -text "Puits remontant"
+point 430.25 569.25 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 453.5 588.75 continuation -attr Code E -text "Puits remontant"
+point 453.5 588.75 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 420.75 638.25 continuation -attr Code E -text "Puits remontant"
+point 420.75 638.25 continuation -attr Code E -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 point 406.25 620.5 label -text "E15"
 
@@ -624,7 +624,7 @@ point 606.75 173.25 clay
 
 point 610.5 148.0 label -text "Bouchon d'argile"
 
-point 610.5 161.0 continuation -attr Code D -text "Bouchon d'argile à creuser"
+point 610.5 161.0 continuation -attr Code D -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Bouchon d'argile à creuser"
 
 line pit -reverse on
   561.5 266.0
@@ -755,7 +755,7 @@ point 592.568 106.037 station -name 3.25@C14
 
 point 592.548 110.967 station -name 3.24@C14
 
-point 614.25 80.25 continuation -attr Code D -text "Désobstruction"
+point 614.25 80.25 continuation -attr Code D -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Désobstruction"
 
 point 601.0 73.5 air-draught -orientation 183.3
 
@@ -843,7 +843,7 @@ point 563.75 77.5 dig
 
 point 579.25 61.25 air-draught -orientation 148.2
 
-point 575.5 73.25 continuation -attr Code D -text "Méandre à désobstruer"
+point 575.5 73.25 continuation -attr Code D -attr Cavite C14 -attr Reseau " " -attr CA " " -text "Méandre à désobstruer"
 
 line wall
   575.75 80.25

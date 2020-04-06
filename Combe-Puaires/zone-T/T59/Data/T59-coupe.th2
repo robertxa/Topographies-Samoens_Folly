@@ -186,7 +186,7 @@ point 968.0 -1732.5 label -text "R2"
 
 point 694.0 -1683.0 air-draught -orientation 245.7 -subtype summer
 
-point 635.7012987012987 -1767.3636363636365 continuation -attr Code D -text "Méandre dans l'albien à désobtruer à l'explosif ; courant d'air ; beaucoup de travail ?"
+point 635.7012987012987 -1767.3636363636365 continuation -attr Code D -attr Cavite T59 -attr Reseau "Courant d'air" -attr CA " " -text "Méandre dans l'albien à désobtruer à l'explosif ; courant d'air ; beaucoup de travail ?"
 
 line wall -close on -outline in
   907.0 -1650.0

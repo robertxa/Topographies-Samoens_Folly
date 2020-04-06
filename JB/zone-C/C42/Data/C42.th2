@@ -27,7 +27,7 @@ point 63.25 13.25 label -text "-31 m"
 
 point 52.5 52.0 label -text "P20"
 
-point 40.5 9.5 continuation -attr Code D -text "Trémie instable à désobstruer"
+point 40.5 9.5 continuation -attr Code T-D -attr Cavite C42 -attr Reseau " " -attr CA "Courant d'air aspirant en été'" -text "Trémie instable à désobstruer"
 
 point 47.5 22.5 breakdown-choke -orientation 340.0
 

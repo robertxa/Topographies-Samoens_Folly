@@ -34,7 +34,7 @@ line wall
   smooth off
 endline
 
-point 1342.5 1457.0 continuation -attr Code E -text "Départ au sommet de la salle ?"
+point 1342.5 1457.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP16" -attr CA " " -text "Départ au sommet de la salle ?"
 
 point 1355.5 1313.0 narrow-end
 
@@ -668,9 +668,9 @@ line wall
   smooth off
 endline
 
-point 529.5 1187.5 continuation -attr Code E -text "Arrivée d'eau par une cheminée au sommet du puits
+point 529.5 1187.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP16" -attr CA " " -text "Arrivée d'eau par une cheminée au sommet du puits"
 
-point 756.0 1400.5 continuation -attr Code E -text "Départ ?"
+point 756.0 1400.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP16" -attr CA " " -text "Départ ?"
 
 point 929.0 1304.0 label -text "<center>puits du<br>Détrousseur"
 

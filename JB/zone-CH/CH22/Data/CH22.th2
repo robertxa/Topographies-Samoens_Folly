@@ -195,9 +195,9 @@ point 30.0 228.75 label -text "etr."
 
 point 308.75 135.0 label -text "R3"
 
-point 77.75 250.5 continuation -attr Code A -text "Exploration à continuer, courant d'air"
+point 77.75 250.5 continuation -attr Code A -attr Cavite CH22 -attr Reseau "Zone d'entrée" -attr CA "Courant d'air" -text "Exploration à continuer, courant d'air"
 
-point 408.75 68.5 continuation -attr Code D -text "Conduite forcée colmatée à désobtruer ; pas de c.a."
+point 408.75 68.5 continuation -attr Code D -attr Cavite CH22 -attr Reseau " " -attr CA " " -text "Conduite forcée colmatée à désobtruer ; pas de c.a."
 
 point 392.5 52.75 label -text "-35 m"
 

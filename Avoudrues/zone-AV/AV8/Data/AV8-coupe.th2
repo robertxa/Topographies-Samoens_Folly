@@ -12,9 +12,6 @@ scrap AV8-coupe1 -projection extended -author 1990 "Bernard Lips" -author 2011 "
 
 point 3.75 660.75 air-draught -orientation 181.1 -scale xl
 
-area water
-endarea
-
 point 235.0 391.0 label -text "méandre étroit"
 
 point 175.5 364.25 label -text "Boyau"
@@ -91,13 +88,13 @@ point 383.5 251.0 air-draught -orientation 88.5 -scale xl
 
 point 483.25 124.0 air-draught -orientation 88.5 -scale xl
 
-point 478.75 145.25 continuation -attr Code D -text "Boyau à désobstruer ; c.a."
+point 478.75 145.25 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau à désobstruer ; c.a."
 
 point 365.5 179.25 continuation
 
 point 336.75 229.75 continuation
 
-point 367.25 261.25 continuation -attr Code D -text "boyau à désobstruer ; c.a."
+point 367.25 261.25 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA "Courant d'air" -text "boyau à désobstruer ; c.a."
 
 point 194.25 400.5 continuation
 
@@ -164,9 +161,6 @@ point 482.48 69.501 station -name 4.21@AV8
 point 465.16 73.131 station -name 4.18@AV8
 
 point 473.78 69.501 station -name 4.20@AV8
-
-line wall
-endline
 
 line wall
   190.25 390.25

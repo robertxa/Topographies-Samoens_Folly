@@ -240,7 +240,7 @@ line wall -close on -outline in
   smooth off
 endline
 
-point 334.0 224.0 continuation
+point 334.0 224.0 continuation -attr Cavite "RéseauCP" -attr Reseau "Rivière amont - Affluent" -attr CA "Courant d'air" -attr Code E -text "E20 à faire, grosse galerie au sommet"
 
 point 124.5 -76.5 water-flow -orientation 240.5
 

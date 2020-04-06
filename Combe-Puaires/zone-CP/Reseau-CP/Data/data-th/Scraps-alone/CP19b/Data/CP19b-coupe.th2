@@ -32,11 +32,11 @@ point 2055.75 1945.0 air-draught -orientation 78.0 -subtype summer
 
 point 1927.5 1852.0 masonry
 
-point 1726.75 1715.25 continuation -attr Code E -text "Cheminée remontante"
+point 1726.75 1715.25 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Cheminée remontante"
 
-point 1708.0 1749.75 continuation -attr Code E -text "Cheminée remontante"
+point 1708.0 1749.75 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Cheminée remontante"
 
-point 1764.25 1795.25 continuation -attr Code E -text "Cheminée remontante"
+point 1764.25 1795.25 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Cheminée remontante"
 
 point 1827.25 1781.0 narrow-end
 
@@ -297,9 +297,9 @@ line wall
   364.5 785.0
 endline
 
-point 747.5 1146.0 continuation -attr Code E -text "Galerie à Atteindre et à explroer"
+point 747.5 1146.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Galerie à Atteindre et à explorer"
 
-point 882.5 1085.5 continuation -attr Code E -text "Arrivée d'eau en hauteur"
+point 882.5 1085.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Arrivée d'eau en hauteur"
 
 point 915.0 1081.5 water-flow -orientation 176.1
 
@@ -515,13 +515,13 @@ line wall -close on -outline in
   smooth off
 endline
 
-point 473.5 735.0 continuation -attr Code E -text "Départ dans le puits ?"
+point 473.5 735.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Départ dans le puits ?"
 
-point 1393.5 1469.0 continuation -attr Code E -text "Départ dans le puits ?"
+point 1393.5 1469.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Départ dans le puits ?"
 
-point 1247.0 1614.0 continuation -attr Code E -text "Départ dans le puits ?"
+point 1247.0 1614.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Départ dans le puits ?"
 
-point 1126.5 1496.0 continuation -attr Code E -text "Départ dans le puits ?"
+point 1126.5 1496.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Départ dans le puits ?"
 
 line border
   1322.5 1529.5

@@ -30,9 +30,9 @@ line wall
   smooth off
 endline
 
-point 6533.5 2072.5 continuation -attr Code P -text "Puits jamais descendu ?"
+point 6533.5 2072.5 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA " "  -text "Puits jamais descendu ?"
 
-point 6525.0 2517.5 continuation -attr Code E -text "Puits remontant à voir ?"
+point 6525.0 2517.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA " " -text "Puits remontant à voir ?"
 
 line rope
   6474.5 2313.5
@@ -162,13 +162,13 @@ point 4991.5 1953.0 helictite
 
 point 5047.0 1942.0 helictite
 
-point 4340.5 1999.0 continuation -attr Code E -text "Plafonds à fouiller, il y a des départs"
+point 4340.5 1999.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA " " -text "Plafonds à fouiller, il y a des départs"
 
-point 3974.0 1830.0 continuation -attr Code E -text "Plafonds à fouiller, il y a des départs"
+point 3974.0 1830.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA " " -text "Plafonds à fouiller, il y a des départs"
 
-point 3895.0 1899.0 continuation -attr Code E -text "Plafonds à fouiller, il y a des départs"
+point 3895.0 1899.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA " " -text "Plafonds à fouiller, il y a des départs"
 
-point 3535.0 1904.0 continuation -attr Code E -text "Plafonds à fouiller, il y a des départs"
+point 3535.0 1904.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA " " -text "Plafonds à fouiller, il y a des départs"
 
 line wall -close on -outline in
   4277.5 1797.0
@@ -343,7 +343,7 @@ line wall
   smooth off
 endline
 
-point 4968.0 1774.5 continuation -attr Code Q -text "Départ à voir ?"
+point 4968.0 1774.5 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA " " -text "Départ à voir ?"
 
 line map-connection
   5054.5 1874.0
@@ -366,9 +366,9 @@ line border -id l95-5048-1897 -close on
   smooth off
 endline
 
-point 5444.5 1967.5 continuation -attr Code A -text "Galerie non topographiée, courant d'air"
+point 5444.5 1967.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA "Courant d'air" -text "Galerie non topographiée, courant d'air"
 
-point 5668.5 2039.5 continuation -attr Code A -text "Galerie non topographiée, courant d'air"
+point 5668.5 2039.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA "Courant d'air" -text "Galerie non topographiée, courant d'air"
 
 area u:galerie
   l91-5444-1978
@@ -540,13 +540,13 @@ line border
   smooth off
 endline
 
-point 6553.0 1639.0 continuation -attr Code A -text "Petit départ à revisiter et à topographié"
+point 6553.0 1639.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Petit départ à revisiter et à topographié"
 
-point 6413.5 1583.5 continuation -attr Code A -text "Petit départ à revisiter et à topographié"
+point 6413.5 1583.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Petit départ à revisiter et à topographié"
 
-point 6589.0 1413.0 continuation -attr Code P -text "Puits sur failleà descendre"
+point 6589.0 1413.0 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Puits sur faille à descendre"
 
-point 7783.5 1947.0 continuation -attr Code A -text "Petit départ à voir ?"
+point 7783.5 1947.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Petit départ à voir ?"
 
 line wall -close on -outline in
   7007.5 1827.0
@@ -1050,9 +1050,9 @@ line border -id l267-6756-2396 -close on
   smooth off
 endline
 
-point 6437.0 2325.5 continuation -attr Code P -text "Puits à descendre"
+point 6437.0 2325.5 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Puits à descendre"
 
-point 6387.0 2240.5 continuation -attr Code P -text "Puits à descendre"
+point 6387.0 2240.5 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Puits à descendre"
 
 area u:galerie
   l263-6536-2412
@@ -1071,9 +1071,9 @@ line border -id l263-6536-2412 -close on
   smooth off
 endline
 
-point 6527.5 2469.0 continuation -attr Code E -text "Méandre à escalader"
+point 6527.5 2469.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Méandre à escalader"
 
-point 6284.0 2373.0 continuation -attr Code E -text "Cheminée à escalader  ?"
+point 6284.0 2373.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Galerie du Sirroco" -attr CA " " -text "Cheminée à escalader  ?"
 
 point 6529.0 2440.5 water-flow -orientation 174.5
 
@@ -1224,9 +1224,9 @@ endscrap
 
 scrap massues-SC1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [2973.1 738.15 9764.5366 738.15 0.0 0.0 172.50248963999996 0.0 m]
 
-point 7874.5 1859.5 continuation -attr Code A -text "Départ à voir"
+point 7874.5 1859.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie des Massues" -attr CA " " -text "Départ à voir"
 
-point 7930.5 1921.0 continuation -attr Code A -text "Départ à voir"
+point 7930.5 1921.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie des Massues" -attr CA " " -text "Départ à voir"
 
 point 8085.5 1933.0 label -text "g. des Massues"
 
@@ -1352,13 +1352,13 @@ endline
 
 point 9031.5 1839.0 water-flow -orientation 218.7
 
-point 8736.5 1981.5 continuation -attr Code Q -text "Départ à voir ?"
+point 8736.5 1981.5 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Galerie des Massues" -attr CA " " -text "Départ à voir ?"
 
-point 9014.5 1853.5 continuation -attr Code Q -text "Départ à voir ?"
+point 9014.5 1853.5 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Galerie des Massues" -attr CA " " -text "Départ à voir ?"
 
-point 9097.0 1875.5 continuation -attr Code Q -text "Départ à voir ?"
+point 9097.0 1875.5 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Galerie des Massues" -attr CA " " -text "Départ à voir ?"
 
-point 9129.0 1871.0 continuation -attr Code Q -text "Départ à voir ?"
+point 9129.0 1871.0 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Galerie des Massues" -attr CA " " -text "Départ à voir ?"
 
 line wall
   9129.5 1889.5
@@ -1592,9 +1592,9 @@ line rope
   8451.5 1909.0
 endline
 
-point 8503.0 2359.0 continuation -attr Code E -text "Grand puits remontant arrosé non escaladé"
+point 8503.0 2359.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Puits que l'on traverse'" -attr CA " " -text "Grand puits remontant arrosé non escaladé"
 
-point 7811.0 2047.0 continuation -attr Code E -text "Départ en hauteur non atteint"
+point 7811.0 2047.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Puits que l'on traverse'" -attr CA " " -text "Départ en hauteur non atteint"
 
 line rope
   7923.5 2067.0

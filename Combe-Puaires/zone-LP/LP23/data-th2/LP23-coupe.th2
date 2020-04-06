@@ -394,9 +394,9 @@ line wall
   smooth off
 endline
 
-point 116.5 376.75 continuation -attr Code E -text "Puits remontant"
+point 116.5 376.75 continuation -attr Code E -attr Cavite LP23 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 156.75 397.0 continuation -attr Code E -text "Puits remontant"
+point 156.75 397.0 continuation -attr Code E -attr Cavite LP23 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 line wall -subtype unsurveyed
   216.25 297.75
@@ -790,7 +790,7 @@ line wall
   smooth off
 endline
 
-point 408.25 186.75 continuation -attr Code E -text "Puits remontant"
+point 408.25 186.75 continuation -attr Code E -attr Cavite LP23 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 line wall -subtype debris
   366.25 148.75

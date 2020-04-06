@@ -203,7 +203,7 @@ line wall -close on -outline in -subtype unsurveyed
   smooth off
 endline
 
-point 295.0 380.5 continuation -attr Code A -text "Gros affluent non exploré ni topographié"
+point 295.0 380.5 continuation -attr Code A -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "Gros affluent non exploré ni topographié"
 
 line wall -outline in -subtype unsurveyed
   358.5 344.5
@@ -447,11 +447,11 @@ point 708.25 93.25 water-flow -orientation 257.0
 
 point 731.0 109.75 air-draught -orientation 246.8
 
-point 504.75 160.75 continuation
+point 504.75 160.75 continuation -attr Cavite CH17 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
-point 711.75 103.5 continuation
+point 711.75 103.5 continuation -attr Cavite CH17 -attr Reseau " " -attr CA " " -attr Code Q -text  "A voir ?"
 
-point 144.5 54.75 continuation
+point 144.5 54.75 continuation -attr Cavite CH17 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
 line wall -subtype unsurveyed
   695.5 113.75

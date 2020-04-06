@@ -159,17 +159,17 @@ point 249.0 595.75 narrow-end -orientation 35.7
 
 point 235.0 650.75 narrow-end -orientation 124.3
 
-point 146.5 739.5 continuation -attr Code Q -text "A voir ?"
+point 146.5 739.5 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir ?"
 
-point 123.5 773.0 continuation -attr Code Q -text "A voir ?"
+point 123.5 773.0 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir ?"
 
 point 142.75 687.5 air-draught -orientation 54.4 -scale s
 
-point 256.75 505.5 continuation -attr Code A -text "Puits à descendre"
+point 256.75 505.5 continuation -attr Code A -attr Cavite C74 -attr Reseau " " -attr CA " " -text "Puits à descendre"
 
-point 146.25 697.25 continuation -attr Code D -text "Méandre à désobstruer"
+point 146.25 697.25 continuation -attr Code D -attr Cavite C74 -attr Reseau " " -attr CA " " -text "Méandre à désobstruer"
 
-point 229.25 568.5 continuation -attr Code E -text "Cheminée à escalader"
+point 229.25 568.5 continuation -attr Code E -attr Cavite C74 -attr Reseau " " -attr CA " " -text "Cheminée à escalader"
 
 point 259.0 600.5 label -text "imp."
 
@@ -683,7 +683,7 @@ point 325.75 538.5 narrow-end -orientation 243.8
 
 point 309.25 547.25 narrow-end -orientation 160.7
 
-point 279.75 527.0 continuation -attr Code Q -text "A voir ?"
+point 279.75 527.0 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir ?"
 
 point 282.25 488.75 continuation
 
@@ -1260,13 +1260,13 @@ point 338.0 394.75 narrow-end -orientation 29.9
 
 point 364.75 419.5 continuation
 
-point 348.0 428.25 continuation -attr Code E -text "Cheminée à escalader ; courant d'air à traquet"
+point 348.0 428.25 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -attr CA "Courant d'air à traquer'" -text "Cheminée à escalader ; courant d'air à traquer"
 
-point 377.25 374.0 continuation -attr Code E -text "Départ en hauteur"
+point 377.25 374.0 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -attr CA " " -text "Départ en hauteur"
 
-point 375.25 335.5 continuation -attr Code E -text "Départ en hauteur"
+point 375.25 335.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -attr CA " " -text "Départ en hauteur"
 
-point 400.0 263.75 continuation -attr Code Q -text "A voir ?"
+point 400.0 263.75 continuation -attr Code Q -attr Cavite C74 -attr Reseau "Branche Ouest" -attr CA " " -text "A voir ?"
 
 point 421.25 235.75 narrow-end -orientation 332.0
 
@@ -1781,9 +1781,9 @@ point 402.25 137.75 air-draught -orientation 337.2 -scale s
 
 point 361.25 149.25 air-draught -orientation 64.6 -scale s
 
-point 396.0 150.0 continuation -attr Code D -text "Conduite forcée à désobstruer, courant d'air, peut être intéressant"
+point 396.0 150.0 continuation -attr Code D -attr Cavite C74 -attr Reseau "TireSansBoum" -attr CA "Courant d'air'" -text "Conduite forcée à désobstruer, courant d'air, peut être intéressant"
 
-point 350.75 143.0 continuation -attr Code D -text "Conduite forcée à désobstruer, courant d'air, peut être intéressant"
+point 350.75 143.0 continuation -attr Code D -attr Cavite C74 -attr Reseau "TireSansBoum" -attr CA "Courant d'air'" -text "Conduite forcée à désobstruer, courant d'air, peut être intéressant"
 
 line gradient
   358.25 190.0
@@ -1969,13 +1969,13 @@ point 409.5 929.75 continuation -attr Code E -text "E10, courant d'air"
 
 point 413.5 871.75 continuation -attr Code D -text "Etroiture à courant d'air ; boyau"
 
-point 418.75 826.5 continuation -attr Code Q -text "A voir"
+point 418.75 826.5 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
 
-point 448.25 791.75 continuation -attr Code Q -text "A voir"
+point 448.25 791.75 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
 
-point 428.25 758.0 continuation -attr Code Q -text "A voir"
+point 428.25 758.0 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
 
-point 455.75 770.75 continuation -attr Code Q -text "A voir"
+point 455.75 770.75 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
 
 point 450.917 765.986 station -name Xa4-09-17@C74
 
@@ -2877,9 +2877,9 @@ point 472.75 591.25 label -text "Vire Lopette"
 
 point 542.25 645.25 label -text "trémie"
 
-point 492.75 750.5 continuation -attr Code Q -text "A voir"
+point 492.75 750.5 continuation -attr Code Q -attr Cavite C74 -attr Reseau "Branche Est" -attr CA " " -text "A voir"
 
-point 520.75 790.25 continuation -attr Code Q -text "A voir"
+point 520.75 790.25 continuation -attr Code Q -attr Cavite C74 -attr Reseau "Branche Est" -attr CA " " -text "A voir"
 
 line pit -close on
   534.75 573.25
@@ -3457,11 +3457,11 @@ point 486.75 446.75 snow
 
 point 485.75 452.5 snow
 
-point 500.25 385.75 continuation -attr Code E -text " A escalader"
+point 500.25 385.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "Entrée" -attr CA " " -text " A escalader"
 
-point 547.0 365.0 continuation -attr Code A -text "Méandre à explorer"
+point 547.0 365.0 continuation -attr Code A -attr Cavite C74 -attr Reseau "Entrée" -attr CA " " -text "Méandre à explorer"
 
-point 578.25 367.75 continuation -attr Code E -text "A voir, escalade ?"
+point 578.25 367.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "Entrée" -attr CA " " -text "A voir, escalade ?"
 
 point 531.0 372.75 label -text "P20"
 

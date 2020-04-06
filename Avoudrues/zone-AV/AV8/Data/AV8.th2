@@ -205,11 +205,11 @@ endline
 
 point 231.5 76.0 air-draught -orientation 114.5
 
-point 143.0 244.75 continuation -attr Code E -text "Escalade, puits remontant"
+point 143.0 244.75 continuation -attr Code E -attr Cavite AV8 -attr Reseau " " -attr CA " " -text "Escalade, puits remontant"
 
 point 236.75 88.0 label -text "etr."
 
-point 216.0 82.25 continuation -attr Code D -text "Boyau à agrandir, courant d'air"
+point 216.0 82.25 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau à agrandir, courant d'air"
 
 point 223.0 100.5 label -text "P25"
 
@@ -338,9 +338,9 @@ point 209.25 78.5 altitude -align bottom-right
 
 point 141.25 74.75 altitude -align bottom-left
 
-point 138.0 78.25 continuation -attr Code D -text "Boyau à agrandir, courant d'air"
+point 138.0 78.25 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau à agrandir, courant d'air"
 
-point 193.75 59.25 continuation -attr Code D -text "Boyau à agrandir, courant d'air"
+point 193.75 59.25 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau à agrandir, courant d'air"
 
 line pit -reverse on
   194.25 79.5
@@ -427,8 +427,8 @@ endscrap
 
 
 
-scrap AV8-previous -projection plan -author 1990 "Bernard Lips" -scale [-128.0 -128.0 679.1814 -128.0 0.0 0.0 20.50240756 0.0 m]
+#scrap AV8-previous -projection plan -author 1990 "Bernard Lips" -scale [-128.0 -128.0 679.1814 -128.0 0.0 0.0 20.50240756 0.0 m]
 
-endscrap
+#endscrap
 
 

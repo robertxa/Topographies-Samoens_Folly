@@ -11,7 +11,7 @@ point 92.5 628.25 label -text "-54 m"
 
 point 80.75 636.5 narrow-end -orientation 81.9
 
-point 181.25 775.25 continuation -attr Code E -text "Escalade ?"
+point 181.25 775.25 continuation -attr Code E -attr Cavite D33 -attr Reseau " " -attr CA " " -text "Escalade ?"
 
 point 108.5 815.5 continuation
 
@@ -299,7 +299,7 @@ point 421.75 332.75 label -text "etr."
 
 point 224.25 626.0 continuation
 
-point 235.0 616.75 continuation -attr Code E -text "Escalade"
+point 235.0 616.75 continuation -attr Code E -attr Cavite D33 -attr Reseau " " -attr CA " " -text "Escalade"
 
 line rope
   508.5 228.5
@@ -339,7 +339,7 @@ line rope
   213.0 595.25
 endline
 
-point 304.0 643.25 continuation -attr Code E -text "Escalade"
+point 304.0 643.25 continuation -attr Code E -attr Cavite D33 -attr Reseau " " -attr CA " " -text "Escalade"
 
 point 520.0 251.5 continuation
 
@@ -609,9 +609,6 @@ endscrap
 
 
 scrap D33-coupe3 -projection extended -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-127.993 -128.0 1269.7399 -128.0 0.0 0.0 35.50241566 0.0 m]
-
-line wall -subtype presumed
-endline
 
 line border
   518.0 430.0
@@ -984,9 +981,9 @@ point 1016.25 282.75 narrow-end -orientation 257.9
 
 point 978.25 205.75 narrow-end -orientation 60.3
 
-point 968.75 217.25 continuation
+point 968.75 217.25 continuation -attr Cavite D33 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
-point 1078.25 261.75 continuation -attr Code E -text "Conduite forcée à atteindre, courant d'air, escalade facile"
+point 1078.25 261.75 continuation -attr Code E -attr Cavite D33 -attr Reseau " " -attr CA "Courant d'air" -text "Conduite forcée à atteindre, courant d'air, escalade facile"
 
 line wall -close on
   988.5 216.0
@@ -1014,7 +1011,7 @@ point 925.75 189.0 label -text "<center>Colm. <br> décolmaté"
 
 point 1072.25 244.5 label -text "E10"
 
-point 1049.0 283.75 continuation -attr Code E -text "Puits remontant"
+point 1049.0 283.75 continuation -attr Code E -attr Cavite D33 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 line wall
   990.5 218.5

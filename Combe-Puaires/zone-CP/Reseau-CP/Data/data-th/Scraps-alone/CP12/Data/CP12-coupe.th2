@@ -260,9 +260,9 @@ line rope
   966.5 909.5
 endline
 
-point 803.0 980.5 continuation -attr Code E -text "Départ à voir ?"
+point 803.0 980.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP12" -attr CA " " -text "Départ à voir ?"
 
-point 2107.0 1850.5 continuation -attr Code E -text "Départ à voi r?"
+point 2107.0 1850.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP12" -attr CA " " -text "Départ à voir ?"
 
 line rope
   1987.0 1882.0
@@ -567,7 +567,7 @@ point 2269.0 1641.0 height -value [-30 m]
 
 point 2473.0 1978.0 label -text "<center>puits des<br>Oubliés"
 
-point 2546.0 1453.0 continuation -attr Code D -text "étroiture à courant d'air à élargir"
+point 2546.0 1453.0 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "CP12 - réseau des Oubliés" -attr CA "Courant d'air" -text "étroiture à courant d'air à élargir; jct avec le Huit ?"
 
 point 2617.0 1346.0 air-draught -orientation 303.9 -subtype summer
 

@@ -40,9 +40,9 @@ point 50.25 205.75 entrance -orientation 215.3
 
 point 15.75 194.5 entrance -orientation 148.7
 
-point 39.75 150.0 continuation -attr Code Q -text "Non renseigné sur la topo"
+point 39.75 150.0 continuation -attr Code Q -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Non renseigné sur la topo"
 
-point 39.5 106.75 continuation -attr Code Q -text "Non renseigné sur la topo"
+point 39.5 106.75 continuation -attr Code Q -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Non renseigné sur la topo"
 
 line wall -subtype unsurveyed
   144.5 99.0
@@ -149,9 +149,9 @@ line wall
   smooth off
 endline
 
-point 78.75 42.75 continuation -attr Code Q -text "Non renseigné sur la topo"
+point 78.75 42.75 continuation -attr Code Q -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Non renseigné sur la topo"
 
-point 69.75 43.0 continuation -attr Code Q -text "Non renseigné sur la topo"
+point 69.75 43.0 continuation -attr Code Q -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Non renseigné sur la topo"
 
 line wall
   77.75 50.75
@@ -405,7 +405,7 @@ endline
 
 point -195.0 -121.75 air-draught -orientation 224.8
 
-point -219.5 -175.0 continuation -attr Code D -text "Méandre actif étroit à agrandir, courant d'air"
+point -219.5 -175.0 continuation -attr Code D -attr Cavite A22 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre actif étroit à agrandir, courant d'air"
 
 point -225.75 -163.5 narrow-end
 
@@ -451,7 +451,7 @@ point -5.75 -69.0 label -orientation 325.0 -text "80 m non topo."
 
 point 98.0 52.0 water-flow -orientation 167.7
 
-point 71.5 88.25 continuation -attr Code D -text "Méandre étroit à dynamiter"
+point 71.5 88.25 continuation -attr Code D -attr Cavite A22 -attr Reseau " " -attr CA " " -text "Méandre étroit à dynamiter"
 
 line pit
   84.75 65.0

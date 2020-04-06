@@ -59,7 +59,7 @@ line wall
   smooth off
 endline
 
-point 110.25 8.25 continuation -attr Code A -text "Courant d'air, trémie effondrée et qui passe, à explorer"
+point 110.25 8.25 continuation -attr Code A -attr Cavite LP35 -attr Reseau " " -attr CA "Courant d'air" -text "Courant d'air, trémie effondrée et qui passe, à explorer"
 
 point 42.0 151.25 narrow-end
 

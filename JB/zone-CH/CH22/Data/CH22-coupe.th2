@@ -43,7 +43,7 @@ point 123.5 78.0 altitude -align bottom
 
 point 70.75 196.75 altitude -align left
 
-point 176.0 194.75 continuation -explored "5 m" -attr Code A -text "Méandre à explorer, courant d'air, arrêt sur rien"
+point 176.0 194.75 continuation -explored "5 m" -attr Code A -attr Cavite CH22 -attr Reseau "Zone d'entrée" -attr CA "Courant d'air" -text "Méandre à explorer, courant d'air, arrêt sur rien"
 
 point 155.25 192.25 air-draught -orientation 87.2
 

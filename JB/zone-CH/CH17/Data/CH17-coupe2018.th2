@@ -97,11 +97,11 @@ point 3008.0 -2094.0 water-flow -orientation 182.7
 
 point 2964.0 -1452.0 water-flow -orientation 180.9
 
-point 3029.0 -1456.0 continuation -attr Code D -text "Cheminée avec arrivée d'eau"
+point 3029.0 -1456.0 continuation -attr Code D -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "Cheminée avec arrivée d'eau"
 
-point 3451.0 -1944.0 continuation -attr Code D -text "Méandre étroit à poursuivre (massette)"
+point 3451.0 -1944.0 continuation -attr Code D -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "Méandre étroit à poursuivre (massette)"
 
-point 3069.0 -2105.0 continuation -attr Code D -text "perte étroite à désobstruer"
+point 3069.0 -2105.0 continuation -attr Code D -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "perte étroite à désobstruer"
 
 line wall -subtype presumed
   3083.0 -2011.0
@@ -196,7 +196,7 @@ endline
 
 point 2924.0 -2068.0 dig
 
-point 750.0 -687.0 continuation -attr code D -text "Méandre étroit"
+point 750.0 -687.0 continuation -attr code D -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "Méandre étroit"
 
 point 773.0 -783.0 label -text "etr."
 

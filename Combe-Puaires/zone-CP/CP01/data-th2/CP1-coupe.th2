@@ -91,11 +91,11 @@ point 696.0 470.0 ice
 
 point 650.0 467.0 ice
 
-point 647.0 442.0 continuation -attr Code A -text "Méandre englacé"
+point 647.0 442.0 continuation -attr Code A -attr Cavite CP1 -attr Reseau " " -attr CA " " -text "Méandre englacé"
 
-point 697.0 443.0 continuation -attr Code A -text "Méandre englacé"
+point 697.0 443.0 continuation -attr Code A -attr Cavite CP1 -attr Reseau " " -attr CA " " -text "Méandre englacé"
 
-point 753.0 629.0 continuation -attr Code E -text "Escalade, suite du méandre"
+point 753.0 629.0 continuation -attr Code E -attr Cavite CP1 -attr Reseau " " -attr CA " " -text "Escalade, suite du méandre"
 
 line rope
   518.0 500.0
@@ -357,9 +357,9 @@ line rope
   624.0 135.0
 endline
 
-point 500.0 128.0 continuation -attr Code D -text "Trémie à désobstruer; gros courant d'air"
+point 500.0 128.0 continuation -attr Code D -attr Cavite CP1 -attr Reseau " " -attr CA "COurant d'air très fort, soufflant en été" -text "Trémie à désobstruer; gros courant d'air"
 
-point 746.0 263.0 continuation -attr Code E -text "Méandre à attteindre en escalade"
+point 746.0 263.0 continuation -attr Code E -attr Cavite CP1 -attr Reseau " " -attr CA " " -text "Méandre à attteindre en escalade"
 
 point 529.0 111.0 air-draught -orientation 26.4
 

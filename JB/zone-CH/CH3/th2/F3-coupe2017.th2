@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap CH3-2017-c1 -projection extended -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1072.8824 -128.0 0.0 0.0 30.502412959999997 0.0 m]
 
-point 131.75 492.5 continuation -attr Code D -text "Méandre étroit, pas de courantd'air"
+point 131.75 492.5 continuation -attr Code D -attr Cavite CH3 -attr Reseau " " -attr CA "-" -text "Méandre étroit, pas de courantd'air"
 
 point 212.75 532.25 dig
 
@@ -174,9 +174,9 @@ point -1.25 584.25 altitude -align top
 
 point -10.75 550.25 height -value [+10 m]
 
-point 58.75 544.0 continuation -attr Code D -text "Etroiture en sommet de puits à tirer"
+point 58.75 544.0 continuation -attr Code E-D -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Etroiture en sommet de puits à tirer"
 
-point -24.25 589.5 continuation -attr Code D -text "Etroiture en sommet de puits à tirer"
+point -24.25 589.5 continuation -attr Code E-D -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Etroiture en sommet de puits à tirer"
 
 line rope
   -4.25 578.25

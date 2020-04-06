@@ -7,9 +7,9 @@ encoding  utf-8
 
 scrap BA4-1 -projection plan -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-251.08299999999997 -178.4039 477.357 -178.4039 0.0 0.0 18.502376 0.0 m]
 
-point 279.25 132.25 continuation -attr Code D -text "Etroiture ventilée à élargir"
+point 279.25 132.25 continuation -attr Code D -attr Cavite BA4 -attr Reseau " " -attr CA "Courant d'air" -text "Etroiture ventilée à élargir"
 
-point 323.0 157.5 continuation -attr Code D -text "m. étroit à désobtruer à l'explosif sur au moins 4 m"
+point 323.0 157.5 continuation -attr Code D -attr Cavite BA4 -attr Reseau " " -attr CA "Courant d'air" -text "m. étroit à désobstruer à l'explosif sur au moins 4 m"
 
 point 285.75 131.0 narrow-end -orientation 5.4
 

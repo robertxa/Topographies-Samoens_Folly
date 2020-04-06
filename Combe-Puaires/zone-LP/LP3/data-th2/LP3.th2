@@ -7,9 +7,6 @@ encoding  utf-8
 
 scrap LP3-1 -projection plan -author 2009 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
 
-line pit
-endline
-
 line arrow
   -37.0 53.25
   -30.5 45.25
@@ -47,9 +44,9 @@ point -18.0 38.25 low-end -orientation 268.3
 
 point 40.75 47.5 narrow-end -orientation 258.0
 
-point -25.75 60.25 continuation
+point -25.75 60.25 continuation -attr Cavite LP3 -attr Reseau " " -attr CA "Courant d'air" -attr Code D -text "Etroiture"
 
-point -48.75 37.5 continuation -attr Code D -text "étroiture à désobstruer ; courant d'air"
+point -48.75 37.5 continuation -attr Code D -attr Cavite LP3 -attr Reseau " " -attr CA "Courant d'air" -text "étroiture à désobstruer ; courant d'air"
 
 point -43.0 47.0 air-draught -orientation 304.0 -subtype summer
 

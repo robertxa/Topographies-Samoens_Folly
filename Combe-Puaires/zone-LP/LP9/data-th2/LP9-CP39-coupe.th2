@@ -233,13 +233,13 @@ scrap LP9-SC2 -projection extended -author 2009 "Stéphane Lips" -author 2011 "X
 
 point 1506.0 1199.25 height -value [-5 m]
 
-point 784.75 898.0 continuation
+point 784.75 898.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
-point 1156.25 1016.75 continuation
+point 1156.25 1016.75 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
-point 1252.0 1042.0 continuation
+point 1252.0 1042.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
-point 1191.75 1079.5 continuation
+point 1191.75 1079.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
 point 1241.75 1039.5 water-flow -orientation 189.1
 
@@ -717,9 +717,9 @@ scrap LP9-Sc3 -projection extended -author 2009 "Stéphane Lips" -author 2011 "X
 
 point 343.0 771.75 label -text "<center>vers P100 fossile<br>non topographié"
 
-point 219.25 256.0 continuation
+point 219.25 256.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
-point 375.25 294.5 continuation
+point 375.25 294.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
 point 366.0 282.75 altitude -align bottom-right
 
@@ -903,9 +903,9 @@ point 431.5 360.5 dig
 
 point 487.75 354.5 dig
 
-point 532.25 337.0 continuation
+point 532.25 337.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
-point 313.75 341.5 continuation
+point 313.75 341.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
 
 line wall -subtype unsurveyed
   520.75 338.0
@@ -1814,9 +1814,9 @@ point 776.75 1072.25 label -text "<center>l'aval du<br>CP39"
 
 point 691.25 1053.25 air-draught -orientation 133.6 -subtype summer
 
-point 689.25 1036.25 continuation
+point 689.25 1036.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
 
-point 705.75 1064.25 continuation
+point 705.75 1064.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
 
 line wall -close on -outline in
   782.75 1015.75
@@ -2309,7 +2309,7 @@ line rope
   1681.0 1094.25
 endline
 
-point 1585.5 1331.25 continuation
+point 1585.5 1331.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
 
 point 1594.75 1335.5 water-flow -orientation 172.9
 
@@ -2335,9 +2335,9 @@ point 1721.5 1048.75 water-flow -orientation 174.4
 
 point 1714.5 1040.0 air-draught -orientation 351.4
 
-point 1731.75 1064.25 continuation
+point 1731.75 1064.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
 
-point 1704.5 1187.75 continuation
+point 1704.5 1187.75 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
 
 line wall
   1698.0 1089.5

@@ -329,9 +329,9 @@ point 7359.0 -3173.0 water-flow -orientation 233.2
 
 point 7339.0 -3575.0 water-flow -orientation 262.9
 
-point 7286.0 -3648.0 continuation -attr Code A -text "réivière à suivre, étroit"
+point 7286.0 -3648.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "rivière à suivre, étroit"
 
-point 6968.0 -3531.0 continuation -attr Code E -text "Méandre supérieur"
+point 6968.0 -3531.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Méandre supérieur"
 
 line flowstone
   3726.0 -4225.0
@@ -423,9 +423,9 @@ endline
 
 point 3561.0 -4153.0 water-flow -orientation 227.3
 
-point 3453.0 -4126.0 continuation -attr Code E -text "Arrivée d'eau à atteindre en escalade"
+point 3453.0 -4126.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Arrivée d'eau à atteindre en escalade"
 
-point 4242.0 -4023.0 continuation -attr Code E -text "Arrivée d'eau à atteindre en escalade"
+point 4242.0 -4023.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Arrivée d'eau à atteindre en escalade"
 
 line rope
   7060.0 -3623.0
@@ -437,9 +437,9 @@ point 2541.0 -4245.0 label -text "v.m."
 
 point 2337.0 -4247.0 label -text "v.m."
 
-point 5656.0 -4219.0 continuation -attr Code A -text "Rivière principale à explorer"
+point 5656.0 -4219.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Rivière principale à explorer"
 
-point 5472.0 -4158.0 continuation -attr Code A -text "Départ à voir"
+point 5472.0 -4158.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ à voir"
 
 point 5554.0 -4354.0 label -text "actif principal"
 
@@ -479,15 +479,15 @@ line border -id l147-4364--4177 -close on
   smooth off
 endline
 
-point 3985.0 -4098.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 3985.0 -4098.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ à atteindre en escalade"
 
-point 4393.0 -4056.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 4393.0 -4056.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ à atteindre en escalade"
 
-point 5038.0 -4028.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 5038.0 -4028.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ à atteindre en escalade"
 
-point 5016.0 -3862.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 5016.0 -3862.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ à atteindre en escalade"
 
-point 5339.0 -3956.0 continuation -attr Code E -text "Départ à atteindre en escalade"
+point 5339.0 -3956.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ à atteindre en escalade"
 
 line water-flow
   5770.0 -3993.0
@@ -528,13 +528,13 @@ line label -id l120-5997--3952 -close on
   6008.0 -3933.0
 endline
 
-point 5855.0 -3768.0 continuation -attr Code E -text "Méandre supérieur"
+point 5855.0 -3768.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Méandre supérieur"
 
-point 5962.0 -3761.0 continuation -attr Code E -text "Méandre supérieur"
+point 5962.0 -3761.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Méandre supérieur"
 
-point 6893.0 -3442.0 continuation -attr Code E -text "Méandre supérieur"
+point 6893.0 -3442.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Méandre supérieur"
 
-point 7332.0 -3391.0 continuation -attr Code E -text "A escalader"
+point 7332.0 -3391.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "A escalader"
 
 line border
   7042.0 -3566.0
@@ -648,7 +648,7 @@ endline
 
 point 7288.0 -3395.0 altitude -align top-right
 
-point 7273.0 -3097.0 continuation -attr Code E -text "A escalader, arrivée d'eau"
+point 7273.0 -3097.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "A escalader, arrivée d'eau"
 
 line wall -subtype presumed
   6959.0 -3475.0

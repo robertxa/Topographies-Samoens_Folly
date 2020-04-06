@@ -195,7 +195,7 @@ line wall
   smooth off
 endline
 
-point 1468.25 -2707.75 continuation -attr Code D -text "Galerie à désobstruer (blocs) ; courant d'air"
+point 1468.25 -2707.75 continuation -attr Code D -attr Cavite CP62-CP63 -attr Reseau "CP63" -attr CA "Courant d'air" -text "Galerie à désobstruer (blocs) ; courant d'air"
 
 point 1458.75 -2747.25 altitude -align right
 

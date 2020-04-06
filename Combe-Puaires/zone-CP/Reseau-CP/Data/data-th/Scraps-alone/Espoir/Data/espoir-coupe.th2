@@ -218,13 +218,13 @@ line wall
   smooth off
 endline
 
-point 1165.0 805.0 continuation -attr Code E -text "départ en plafond"
+point 1165.0 805.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA " " -text "départ en plafond"
 
-point 732.5 681.5 continuation -attr Code E -text "départ de méandre non atteint"
+point 732.5 681.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA " " -text "départ de méandre non atteint"
 
-point 721.5 857.5 continuation -attr Code E -text "Puits remontant artrosé"
+point 721.5 857.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA " " -text "Puits remontant arrosé"
 
-point 849.0 742.5 continuation -attr Code E -text "Gros départ de galerie à atteindre en escalade"
+point 849.0 742.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA " " -text "Gros départ de galerie à atteindre en escalade"
 
 area u:galerie
   l53-722-666
@@ -419,7 +419,7 @@ line map-connection
   1487.75 454.0
 endline
 
-point 1286.0 832.0 continuation -attr Code E -text "Cheminée à continuer à escalader, courant d'air, escalade facile"
+point 1286.0 832.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA "Courant d'air" -text "Cheminée à continuer à escalader, courant d'air, escalade facile"
 
 point 1272.0 656.0 height -value [+25 m]
 
@@ -633,7 +633,7 @@ line rope
   2020.5 801.0
 endline
 
-point 2050.0 936.0 continuation -attr Code E -text "Dépat en plafond ?"
+point 2050.0 936.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA " " -text "Dépat en plafond ?"
 
 line map-connection
   2128.5 891.5
@@ -878,7 +878,7 @@ line label -id l328-1788-511 -close on
   1791.0 518.5
 endline
 
-point 1770.75 504.5 continuation -attr Code S -text "Siphon boueux"
+point 1770.75 504.5 continuation -attr Code S -attr Cavite "RéseauCP" -attr Reseau "Réseau du Gant" -attr CA " " -text "Siphon boueux"
 
 point 1810.5 598.0 height -value [-13 m]
 
@@ -1012,9 +1012,9 @@ line rope
   2444.0 1010.0
 endline
 
-point 2359.5 1137.0 continuation -attr Code E -text "Puits remontant"
+point 2359.5 1137.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA " " -text "Puits remontant"
 
-point 2729.0 970.5 continuation -attr Code D -text "Etroiture à désobstruer, courant d'air"
+point 2729.0 970.5 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Réseau de l'Espoir" -attr CA "Courant d'air" -text "Etroiture à désobstruer, courant d'air"
 
 point 2422.25 933.0 height -value [+30 m]
 
@@ -1274,15 +1274,15 @@ point 2680.5 746.0 label -text "g. de la File Indienne"
 
 point 2146.5 616.5 narrow-end
 
-point 2220.0 729.0 continuation -attr Code E -text "Départ en hauter"
+point 2220.0 729.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau de la File Indienne" -attr CA " " -text "Départ en hauter"
 
 point 2531.5 771.0 narrow-end
 
 point 2758.0 804.5 narrow-end
 
-point 2860.0 809.0 continuation -attr Code S -text "Siphon"
+point 2860.0 809.0 continuation -attr Code S -attr Cavite "RéseauCP" -attr Reseau "Réseau de la File Indienne" -attr CA " " -text "Siphon"
 
-point 2969.0 841.0 continuation -attr Code S -text "Siphon"
+point 2969.0 841.0 continuation -attr Code S -attr Cavite "RéseauCP" -attr Reseau "Réseau de la File Indienne" -attr CA " " -text "Siphon"
 
 point 2960.5 871.0 altitude -align top-right
 

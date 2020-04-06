@@ -120,7 +120,7 @@ point 115.5 94.75 snow
 
 point 106.5 97.25 snow
 
-point 50.25 132.0 continuation -attr Code P -text "Puits à descendre"
+point 50.25 132.0 continuation -attr Code P -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Puits à descendre"
 
 line rope
   179.0 79.25
@@ -280,15 +280,15 @@ point -176.25 215.25 water-flow -orientation 155.8
 
 point -195.25 237.5 water-flow -orientation 137.0
 
-point -14.75 235.5 continuation -attr Code E -text "Escalade"
+point -14.75 235.5 continuation -attr Code E -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Escalade"
 
-point -149.25 231.75 continuation -attr Code E -text "Escalade"
+point -149.25 231.75 continuation -attr Code E -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Escalade"
 
-point -190.25 243.5 continuation -attr Code E -text "Escalade"
+point -190.25 243.5 continuation -attr Code E -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Escalade"
 
 point -312.75 212.75 blocks
 
-point -312.25 226.5 continuation -attr Code D -text "Bloc à tirer"
+point -312.25 226.5 continuation -attr Code D -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Bloc à tirer"
 
 point -251.0 213.25 altitude -align top-left
 
@@ -476,7 +476,7 @@ line wall
   smooth off
 endline
 
-point 75.75 185.25 continuation -attr Code P -text "Puits à descendre"
+point 75.75 185.25 continuation -attr Code P -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Puits à descendre"
 
 line wall
   88.75 172.25

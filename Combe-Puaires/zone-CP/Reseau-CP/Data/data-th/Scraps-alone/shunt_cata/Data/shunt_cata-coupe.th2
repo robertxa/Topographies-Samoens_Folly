@@ -234,15 +234,15 @@ point 410.0 -732.5 height -value [-10 m]
 
 point 536.5 -885.0 height -value [-5 m]
 
-point 484.5 -604.5 continuation -attr Code E -text "Départ en hauteur à atteindre"
+point 484.5 -604.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Espoir - Faux Shunt" -attr CA " " -text "Départ en hauteur à atteindre"
 
-point 961.0 -693.5 continuation -attr Code D -text "Faille étroite"
+point 961.0 -693.5 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Espoir - Faux Shunt" -attr CA " " -text "Faille étroite"
 
-point 796.5 -466.5 continuation -attr Code T -text "Puits remontant bouché par une trémie"
+point 796.5 -466.5 continuation -attr Code T -attr Cavite "RéseauCP" -attr Reseau "Espoir - Faux Shunt" -attr CA " " -text "Puits remontant bouché par une trémie"
 
-point 828.0 -375.0 continuation -attr Code P -text "Puits non descendu, étroit"
+point 828.0 -375.0 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Espoir - Faux Shunt" -attr CA " " -text "Puits non descendu, étroit"
 
-point 1176.5 -91.0 continuation -attr Code E -text "Affluent à escalader"
+point 1176.5 -91.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Espoir - Faux Shunt" -attr CA " " -text "Affluent à escalader"
 
 point 1124.0 -61.5 water-flow -orientation 205.6
 

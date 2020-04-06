@@ -353,7 +353,7 @@ line border -id l68-1943--1232 -close on
   smooth off
 endline
 
-point 2006.5 -1211.0 continuation -attr Code D -text "Arrivée de l'affluent, courant d'air, mais étroit"
+point 2006.5 -1211.0 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Galerie des Clowns" -attr CA "Courant d'air" -text "Arrivée de l'affluent, courant d'air, mais étroit"
 
 point 2022.0 -1288.5 narrow-end
 
@@ -431,7 +431,7 @@ point 2013.5 -1249.0 station -name 1@BivouacCP
 
 point 1951.5 -1252.5 station -name 0@BivouacCP
 
-point 2130.5 -1245.0 continuation -attr Code D -text "Arrivée de l'affluent, courant d'air, mais étroit"
+point 2130.5 -1245.0 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Galerie des Clowns" -attr CA "Courant d'air" -text "Arrivée de l'affluent, courant d'air, mais étroit"
 
 endscrap
 

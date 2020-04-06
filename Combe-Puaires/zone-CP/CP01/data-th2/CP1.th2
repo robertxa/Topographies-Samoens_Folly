@@ -190,7 +190,7 @@ point 37.0 338.5 label -scale xl -text "<bf>CP1c"
 
 point 219.5 276.5 label -scale xl -text "<bf>CP1a"
 
-point 260.5 26.5 continuation -attr code E -text "Suite de la faille en hauteur à escalader"
+point 260.5 26.5 continuation -attr code E -attr Cavite CP1 -attr Reseau " " -attr CA " " -text "Suite de la faille en hauteur à escalader"
 
 line border
   127.0 204.5
@@ -604,7 +604,7 @@ line pit
   smooth off
 endline
 
-point 170.0 35.0 continuation -attr Code E -text "Méandre en hauteur à atteindre en artif"
+point 170.0 35.0 continuation -attr Code E -attr Cavite CP1 -attr Reseau " " -attr CA " " -text "Méandre en hauteur à atteindre en artif"
 
 point 141.0 48.5 height -value [+15 m]
 
@@ -660,7 +660,7 @@ point 151.0 131.0 breakdown-choke
 
 point 140.5 138.0 breakdown-choke
 
-point 118.5 116.0 continuation -attr Code D -text "Trémie très soufflante en été ; à désobstruer ; jonction possible avec CP12"
+point 118.5 116.0 continuation -attr Code D -attr Cavite CP1 -attr Reseau " " -attr CA "Courant d'air" -text "Trémie très soufflante en été ; à désobstruer ; jonction possible avec CP12"
 
 point 105.5 133.0 air-draught -orientation 93.9 -scale l -subtype summer
 

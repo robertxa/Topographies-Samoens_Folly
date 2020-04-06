@@ -17,7 +17,7 @@ point 65.5 129.25 label -text "-6 m"
 
 point 41.5 131.75 breakdown-choke -orientation 315.0
 
-point 35.5 108.75 continuation
+point 35.5 108.75 continuation -attr Cavite BA9 -attr Reseau " " -attr CA "Courant d'air" -attr Code D -text "A désobstruer, courant d'air"
 
 point 16.0 101.25 air-draught -orientation 32.9 -subtype summer -scale xs
 

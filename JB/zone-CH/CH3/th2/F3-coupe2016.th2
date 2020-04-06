@@ -86,7 +86,7 @@ point 876.5 120.75 label -text "-114 m"
 
 point 825.0 121.5 altitude -align left
 
-point 855.0 120.75 continuation
+point 855.0 120.75 continuation -attr Cavite CH3 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
 line rope
   744.0 205.25
@@ -116,7 +116,7 @@ endline
 
 point 825.0 121.5 stalagmite
 
-point 758.25 175.25 continuation
+point 758.25 175.25 continuation -attr Cavite CH3 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
 line wall -subtype presumed
   749.0 177.0

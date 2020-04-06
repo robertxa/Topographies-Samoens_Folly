@@ -142,7 +142,7 @@ endscrap
 
 scrap CP43-SC2 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
-point 179.25 211.0 continuation -attr Code A -text "Boyau étroit remontant, courant d'air"
+point 179.25 211.0 continuation -attr Code A -attr Cavite CP43 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau étroit remontant, courant d'air"
 
 point 167.0 194.5 altitude -align right
 
@@ -271,9 +271,9 @@ line wall
   smooth off
 endline
 
-point 109.75 221.5 continuation -attr Code A -text "Méandre étroit remonant en joint de strate, courant d'air"
+point 109.75 221.5 continuation -attr Code A -attr Cavite CP43 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre étroit remontant en joint de strate, courant d'air"
 
-point 62.75 270.25 continuation -attr Code D -text "Méandre étroit remonant en joint de strate à désobstruer, courant d'air"
+point 62.75 270.25 continuation -attr Code D -attr Cavite CP43 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre étroit remontant en joint de strate à désobstruer, courant d'air"
 
 point 40.25 237.25 air-draught -orientation 142.4 -subtype summer
 

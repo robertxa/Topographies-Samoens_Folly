@@ -131,19 +131,19 @@ point 2213.5 734.5 air-draught -orientation 325.0 -subtype summer
 
 point 2626.5 535.5 air-draught -orientation 303.1 -subtype summer
 
-point 2786.0 471.5 continuation -attr Code E -text "Faille remontante, courant d'air, explorée sur une 40aine de mètres, ça continue, à revoir"
+point 2786.0 471.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Faille remontante, courant d'air, explorée sur une 40aine de mètres, ça continue, à revoir" -explored 40m
 
-point 2510.5 651.0 continuation -attr Code E -text "Faille remontante, courant d'air, explorée sur une 40aine de mètres, ça continue, à revoir"
+point 2510.5 651.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Faille remontante, courant d'air, explorée sur une 40aine de mètres, ça continue, à revoir"
 
-point 2192.5 719.0 continuation -attr Code A -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
+point 2192.5 719.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA "Courant d'air" -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
 
-point 2157.0 716.5 continuation -attr Code A -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
+point 2157.0 716.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA "Courant d'air" -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
 
-point 1945.5 707.5 continuation -attr Code A -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
+point 1945.5 707.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA "Courant d'air" -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
 
-point 1639.0 754.5 continuation -attr Code E -text "Puits remonant"
+point 1639.0 754.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Puits remonant"
 
-point 412.0 785.0 continuation -attr Code E -text "Départ en hauteur à voir ?"
+point 412.0 785.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Départ en hauteur à voir ?"
 
 line wall
   425.0 770.0

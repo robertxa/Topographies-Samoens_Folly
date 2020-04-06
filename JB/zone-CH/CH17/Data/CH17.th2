@@ -107,7 +107,7 @@ point 40.75 120.75 narrow-end -orientation 66.1
 
 point 49.25 112.5 label -text "etr."
 
-point 272.25 117.0 continuation -attr Code A -text "Méandre étroit à forcer"
+point 272.25 117.0 continuation -attr Code A -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "Méandre étroit à forcer"
 
 point 281.5 125.75 label -text "Méandre étroit"
 
@@ -216,7 +216,7 @@ point 226.75 242.5 rope
 
 point 295.25 257.25 rope
 
-point 314.5 287.25 continuation -attr Code A -text "m&andre à poursuivre après étroiture"
+point 314.5 287.25 continuation -attr Code A -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "m&andre à poursuivre après étroiture"
 
 line wall
   323.25 286.5
@@ -373,7 +373,7 @@ line wall -subtype presumed -outline in
   smooth off
 endline
 
-point 248.75 278.5 continuation -attr Code A -text "m&andre à poursuivre après étroiture"
+point 248.75 278.5 continuation -attr Code A -attr Cavite CH17 -attr Reseau " " -attr CA " " -text "m&andre à poursuivre après étroiture"
 
 line wall -outline in
   277.75 269.0
@@ -549,9 +549,9 @@ point 105.75 72.0 label -text "-112 m"
 
 point 95.0 10.75 label -text "Rivière aval (30 m non topo)"
 
-point 472.25 162.75 continuation -attr Code A -text "Exploration à continuer, arrêt sur rien , courant d'air"
+point 472.25 162.75 continuation -attr Code A -attr Cavite CH17 -attr Reseau " " -attr CA "Courant d'air" -text "Exploration à continuer, arrêt sur rien , courant d'air"
 
-point -20.5 15.5 continuation -attr Code A -text "Exploration à continuer, arrêt sur rien, courant d'air"
+point -20.5 15.5 continuation -attr Code A -attr Cavite CH17 -attr Reseau " " -attr CA "Courant d'air" -text "Exploration à continuer, arrêt sur rien, courant d'air"
 
 point 0.25 20.5 water-flow -orientation 250.8
 

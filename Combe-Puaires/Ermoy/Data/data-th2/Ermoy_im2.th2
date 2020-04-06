@@ -592,7 +592,7 @@ point 4720.0 -1391.0 altitude -align left
 
 point 4786.75 -1411.5 label -text "v. m."
 
-point 4743.25 -1370.25 continuation
+point 4743.25 -1370.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau des Minirusses" -attr CA "Courant d'air" -attr Code A -text "Il suffit de continuer..."
 
 line wall
   4967.5 -1578.0
@@ -988,7 +988,7 @@ line pit
   smooth off
 endline
 
-line label -text "zone à topographier et à fouiller
+line label -text "zone à topographier et à fouiller"
   4136.5 -1683.0
   4136.5 -1683.0 4184.75 -1626.0 4193.25 -1617.75
   4201.75 -1609.5 4312.0 -1511.25 4323.5 -1504.5
@@ -999,7 +999,7 @@ endline
 
 point 4637.5 -1711.0 narrow-end -orientation 354.3
 
-point 4397.5 -1498.75 continuation
+point 4397.5 -1498.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 line wall -close on -outline in
   4416.5 -1783.0
@@ -1110,13 +1110,13 @@ endline
 
 point 3674.0 -1948.5 rope
 
-point 3391.0 -1935.5 continuation
+point 3391.0 -1935.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 3597.0 -1786.0 continuation
+point 3597.0 -1786.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 3546.25 -1730.0 continuation
+point 3546.25 -1730.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 3777.0 -1886.0 continuation
+point 3777.0 -1886.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 line contour
   3498.0 -2077.25
@@ -1769,11 +1769,11 @@ line wall -subtype unsurveyed
   3745.5 -1707.75
 endline
 
-point 3709.25 -1590.75 continuation
+point 3709.25 -1590.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 3745.5 -1686.0 continuation
+point 3745.5 -1686.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 3881.0 -1739.0 continuation
+point 3881.0 -1739.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 point 3859.75 -1711.25 altitude -align left
 
@@ -2932,9 +2932,9 @@ endline
 
 point 2841.0 -2872.25 altitude -align bottom-left
 
-point 2880.5 -2858.5 continuation
+point 2880.5 -2858.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 2703.75 -2875.0 continuation
+point 2703.75 -2875.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 line wall -subtype unsurveyed
   2713.25 -2879.25
@@ -3054,9 +3054,9 @@ point 2488.5 -2683.0 clay
 
 point 2546.25 -2740.75 blocks
 
-point 2325.0 -2674.5 continuation
+point 2325.0 -2674.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 2461.25 -2564.0 continuation
+point 2461.25 -2564.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 point 2512.0 -2602.75 rope
 
@@ -3163,9 +3163,9 @@ endline
 
 point 1999.25 -2735.75 water-flow -orientation 180.3
 
-point 2141.5 -2668.5 continuation
+point 2141.5 -2668.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 1804.0 -2963.75 continuation
+point 1804.0 -2963.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 area sump
   l555-1853--2955
@@ -4030,11 +4030,11 @@ line pit
   smooth off
 endline
 
-point 2076.25 -2429.75 continuation
+point 2076.25 -2429.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 1988.25 -2406.0 continuation
+point 1988.25 -2406.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 1510.75 -2305.0 continuation
+point 1510.75 -2305.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code Q -text "A vérif ?"
 
 line wall -close on -outline in
   1660.25 -2278.0

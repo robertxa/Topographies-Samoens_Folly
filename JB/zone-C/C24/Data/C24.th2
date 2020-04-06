@@ -253,7 +253,7 @@ line wall
   smooth off
 endline
 
-point 88.75 31.0 continuation -attr Code D -text "Méandre étroit à courant d'air à élargir"
+point 88.75 31.0 continuation -attr Code D -attr Cavite C24 -attr Reseau " " -attr CA "Courant d'air aspirant en été'" -text "Méandre étroit à courant d'air à élargir"
 
 line wall
   16.5 37.75

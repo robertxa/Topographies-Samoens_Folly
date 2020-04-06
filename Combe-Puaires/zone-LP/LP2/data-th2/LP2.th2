@@ -255,9 +255,9 @@ line wall
   smooth off
 endline
 
-point 101.0 106.0 continuation
+point 101.0 106.0 continuation -attr Cavite LP2 -attr Reseau " " -attr CA " " -attr Code D -text "Méandre étroit"
 
-point 167.5 113.25 continuation
+point 167.5 113.25 continuation -attr Cavite LP2 -attr Reseau " " -attr CA " " -attr Code E -text "Puits remontant"
 
 point 191.0 119.5 label -text "<center>puits<br>remontant"
 

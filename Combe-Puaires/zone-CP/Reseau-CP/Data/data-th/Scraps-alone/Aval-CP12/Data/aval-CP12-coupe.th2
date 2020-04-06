@@ -78,13 +78,13 @@ point 449.0 895.5 air-draught -orientation 309.1 -subtype summer -scale xl
 
 point 336.0 877.0 altitude -align bottom-left
 
-point 288.5 923.0 continuation -attr Code E -text "Vers le CP1 ? Courant d'air, mais trémie dangeureuse !!!"
+point 288.5 923.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA "Courant d'air" -text "Vers le CP1 ? Courant d'air, mais trémie dangeureuse !!!"
 
-point 706.5 807.5 continuation -attr Code E -text "Cheminée à escalader"
+point 706.5 807.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Cheminée à escalader"
 
-point 858.0 610.0 continuation -attr Code E -text "Cheminée à escalader"
+point 858.0 610.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Cheminée à escalader"
 
-point 1732.5 592.0 continuation -attr Code E -text "Départ en plafond"
+point 1732.5 592.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Départ en plafond"
 
 line wall
   1494.0 418.5
@@ -142,7 +142,7 @@ point 1363.0 344.5 altitude -align bottom-right
 
 point 1296.0 288.0 air-draught -orientation 220.7 -subtype summer
 
-point 1354.5 320.5 continuation -attr Code D -text "Méandre exploré sur environ 40 m, arrêt sur lames à casser, fort courant d'air aspirant"
+point 1354.5 320.5 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA "Courant d'air aspirant fort" -text "Méandre exploré sur environ 40 m, arrêt sur lames à casser, fort courant d'air aspirant" -explored 40 m
 
 point 1332.0 329.0 water-flow -orientation 218.2
 
@@ -350,7 +350,7 @@ endscrap
 
 scrap aval-CP12-SC5 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
 
-point 1414.0 348.5 continuation -attr Code Q -text "A quoi correspond ce départ ????"
+point 1414.0 348.5 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "A quoi correspond ce départ ????"
 
 line wall
   1416.0 387.5
@@ -426,13 +426,13 @@ endline
 
 point 1601.5 1012.0 altitude -align left
 
-point 2070.5 972.0 continuation -attr Code E -text "Arrivée en plafond ?"
+point 2070.5 972.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Arrivée en plafond ?"
 
-point 1748.0 1072.0 continuation -attr Code E -text "Arrivée en plafond ?"
+point 1748.0 1072.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Arrivée en plafond ?"
 
-point 1672.5 1157.0 continuation -attr Code E -text "Arrivée en plafond ?"
+point 1672.5 1157.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Arrivée en plafond ?"
 
-point 1613.0 842.5 continuation -attr Code P -text "Puits à descendre ?"
+point 1613.0 842.5 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Puits à descendre ?"
 
 line wall -subtype unsurveyed
   1417.5 524.0
@@ -612,11 +612,11 @@ point 2964.0 911.0 water-flow -orientation 190.7
 
 point 2982.5 1015.5 water-flow -orientation 180.9
 
-point 2578.0 862.5 continuation -attr Code E -text "Puits qui aurait été escaladé, mais pas de topo existante"
+point 2578.0 862.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Puits qui aurait été escaladé, mais pas de topo existante"
 
-point 2811.5 961.0 continuation -attr Code E -text "Puits qui aurait été escaladé, mais pas de topo existante"
+point 2811.5 961.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Puits qui aurait été escaladé, mais pas de topo existante"
 
-point 2981.0 1082.0 continuation -attr Code E -text "Puits qui aurait été escaladé, mais pas de topo existante"
+point 2981.0 1082.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Puits qui aurait été escaladé, mais pas de topo existante"
 
 line wall -close on -outline in
   2928.5 961.0

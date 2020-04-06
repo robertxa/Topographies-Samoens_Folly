@@ -111,7 +111,7 @@ endline
 
 point 4401.0 1211.5 air-draught -orientation 265.0 -subtype summer
 
-point 4311.5 1266.0 continuation -attr Code E -text "Haut du méandre"
+point 4311.5 1266.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Haut du méandre"
 
 line border
   4585.0 1215.0
@@ -164,7 +164,7 @@ endline
 
 point 3507.5 1056.0 label -text "canyon"
 
-point 3249.0 990.5 continuation -attr Code S -text "Bassin profond, il faut se mouiller entièrement"
+point 3249.0 990.5 continuation -attr Code S -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Bassin profond, il faut se mouiller entièrement"
 
 point 3263.0 932.0 passage-height -value [-2 m]
 
@@ -848,9 +848,9 @@ point 3519.5 1139.5 narrow-end
 
 point 3614.5 1401.5 narrow-end
 
-point 3658.0 1301.5 continuation -attr Code P -text "Puits non descendu"
+point 3658.0 1301.5 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Puits non descendu"
 
-point 3646.5 1156.0 continuation -attr Code P -text "Puits non descendu"
+point 3646.5 1156.0 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Puits non descendu"
 
 point 3960.5 1380.5 label -text "m. des Hauts Pots"
 
@@ -1064,7 +1064,7 @@ endscrap
 
 scrap bivouacpierrot-SC1 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-176.35000000000036 -112.25 5591.464 -112.25 0.0 0.0 146.5024756 0.0 m]
 
-point 727.5 755.0 continuation -attr Code E -text "Départ en joint de strate remontant à voir"
+point 727.5 755.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ en joint de strate remontant à voir"
 
 point 649.0 677.0 altitude -align left
 
@@ -1165,7 +1165,7 @@ line wall
   smooth off
 endline
 
-point 2822.5 1243.5 continuation -attr Code E -text "Départ en plafond à voir ?"
+point 2822.5 1243.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Départ en plafond à voir ?"
 
 line wall -subtype debris
   2907.0 1071.5
@@ -1456,7 +1456,7 @@ endscrap
 
 scrap hautspots-SC2 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-176.35000000000036 -112.25 5591.464 -112.25 0.0 0.0 146.5024756 0.0 m]
 
-point 3636.5 1329.5 continuation -attr Code E -text "Puits remontant non escaladé"
+point 3636.5 1329.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Rivière amont" -attr CA " " -text "Puits remontant non escaladé"
 
 line wall
   3742.5 1244.0

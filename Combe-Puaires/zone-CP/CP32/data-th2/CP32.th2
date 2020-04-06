@@ -81,7 +81,7 @@ line floor-meander
   smooth off
 endline
 
-point 256.25 184.5 continuation
+point 256.25 184.5 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
 line wall -subtype invisible
   76.25 183.75
@@ -103,9 +103,6 @@ line wall
   81.25 178.25 76.25 177.25 76.25 179.5
   76.25 181.75 76.25 183.75 76.25 183.75
   smooth off
-endline
-
-line wall
 endline
 
 line wall
@@ -154,7 +151,7 @@ endscrap
 
 scrap CP32-2 -projection plan -author 1999 "Renaud Locatelli" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
 
-point 299.25 158.0 continuation
+point 299.25 158.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
 line pit -reverse on
   272.5 166.5
@@ -356,9 +353,6 @@ endscrap
 
 
 scrap CP32-4 -projection plan -author 1999 "Renaud Locatelli" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
-
-line pit
-endline
 
 line pit
   76.25 106.5
@@ -674,9 +668,9 @@ line gradient
   142.0 80.0
 endline
 
-point 259.75 43.0 continuation
+point 259.75 43.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
-point 126.25 122.0 continuation
+point 126.25 122.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
 line pit -close on
   132.75 113.0
@@ -795,9 +789,9 @@ line wall
   smooth off
 endline
 
-point 92.5 122.0 continuation
+point 92.5 122.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
-point 32.5 141.0 continuation
+point 32.5 141.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
 line pit
   94.25 98.25

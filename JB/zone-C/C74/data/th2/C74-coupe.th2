@@ -91,7 +91,7 @@ point 832.75 467.75 air-draught -orientation 221.4 -subtype summer
 
 point 999.0 613.25 air-draught -orientation 144.4 -subtype summer
 
-point 971.25 630.25 continuation -attr Code D -text "Méandre étroit, courant d'air"
+point 971.25 630.25 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Ouest" -attr CA "Courant d'air" -text "Méandre étroit, courant d'air"
 
 line rope
   762.5 426.0
@@ -113,21 +113,21 @@ line rope
   797.25 433.25
 endline
 
-point 793.25 421.25 continuation -attr Code P -text "Puits à descendre"
+point 793.25 421.25 continuation -attr Code P -attr Cavite C74 -attr Reseau "Branche Ouest" -text "Puits à descendre"
 
-point 857.5 449.5 continuation -attr Code P -text "Puits à descendre"
+point 857.5 449.5 continuation -attr Code P -attr Cavite C74 -attr Reseau "Branche Ouest" -text "Puits à descendre"
 
-point 1171.75 875.5 continuation -attr Code D -text "Boyau à désobstruer, courant d'aire, bruit de surface"
+point 1171.75 875.5 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Ouest" -attr CA "Courant d'air" -text "Boyau à désobstruer, courant d'air, bruit de surface"
 
-point 1070.25 651.75 continuation -attr Code E -text "Départ en hauteur"
+point 1070.25 651.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -text "Départ en hauteur"
 
-point 1070.75 630.5 continuation -attr Code E -text "Départ en hauteur"
+point 1070.75 630.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -text "Départ en hauteur"
 
-point 743.25 436.75 continuation -attr Code E -text "Départ en hauteur"
+point 743.25 436.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -text "Départ en hauteur"
 
-point 777.25 457.0 continuation -attr Code E -text "Départ en hauteur"
+point 777.25 457.0 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -text "Départ en hauteur"
 
-point 872.5 509.0 continuation -attr Code E -text "Départ en hauteur"
+point 872.5 509.0 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Ouest" -text "Départ en hauteur"
 
 point 945.25 546.75 narrow-end
 
@@ -626,15 +626,15 @@ line map-connection
   1434.0 644.5
 endline
 
-point 1446.5 757.0 continuation -attr Code D -text "Etroiture à courant d'air"
+point 1446.5 757.0 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "Etroiture à courant d'air"
 
-point 1523.5 816.75 continuation -attr Code E -text "La suite est là, il faut escalader, courant d'air"
+point 1523.5 816.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "La suite est là, il faut escalader, courant d'air"
 
-point 1385.0 714.5 continuation -attr Code E -text "Départ en hauteur"
+point 1385.0 714.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Départ en hauteur"
 
-point 1343.5 691.25 continuation -attr Code E -text "Départ en hauteur"
+point 1343.5 691.25 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Départ en hauteur"
 
-point 1330.5 688.5 continuation -attr Code E -text "Départ en hauteur"
+point 1330.5 688.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Départ en hauteur"
 
 point 1295.0 607.0 height -value [+15 m]
 
@@ -712,7 +712,7 @@ line rope
   1225.5 512.75
 endline
 
-point 1203.25 533.0 continuation -attr Code E -text "Départ en hauteur en paroi ?"
+point 1203.25 533.0 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Départ en hauteur en paroi ?"
 
 line map-connection
   1355.25 583.0
@@ -979,7 +979,7 @@ point 967.5 395.0 height -value [-10 m]
 
 point 1063.25 406.0 height -value [+15 m]
 
-point 904.5 464.25 continuation -attr Code E -text "Puits remontant"
+point 904.5 464.25 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits remontant"
 
 line rock-border -close on
   1019.25 387.5
@@ -1056,7 +1056,7 @@ line rope
   1135.25 430.75
 endline
 
-point 1013.0 492.0 continuation -attr Code E -text "Puits remontant"
+point 1013.0 492.0 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits remontant"
 
 point 941.0 427.0 water-flow -orientation 175.5
 
@@ -1504,7 +1504,7 @@ scrap C74e-SC9 -projection extended -author 2010 "Xavier Robert" -author 2020 "X
 
 point 948.0 365.0 narrow-end
 
-point 952.5 347.25 continuation -attr Code D -text "Méandre étroit à désobstruer, courant d'air"
+point 952.5 347.25 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "Méandre étroit à désobstruer, courant d'air"
 
 line wall
   949.5 355.25
@@ -1755,7 +1755,7 @@ line border -id l672-468-292 -close on
   smooth off
 endline
 
-point 384.0 298.75 continuation -attr Code E -text "Puits remontant"
+point 384.0 298.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits remontant"
 
 point 350.5 262.75 altitude -align bottom-right
 
@@ -1934,7 +1934,7 @@ line border
   smooth off
 endline
 
-point 699.5 378.5 continuation -attr Code E -text "Conduite forcée en hauteur"
+point 699.5 378.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Conduite forcée en hauteur"
 
 point 722.25 350.0 height -value [-4 m]
 
@@ -1967,13 +1967,13 @@ endline
 
 point 753.75 317.25 narrow-end
 
-point 835.75 319.0 continuation -attr Code P -text "Puits non descendu"
+point 835.75 319.0 continuation -attr Code P -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits non descendu"
 
-point 721.75 444.5 continuation -attr Code E -text "Puits Remontant"
+point 721.75 444.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits Remontant"
 
-point 796.75 455.25 continuation -attr Code E -text "Puits Remontant"
+point 796.75 455.25 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits Remontant"
 
-point 852.0 426.5 continuation -attr Code E -text "Puits Remontant"
+point 852.0 426.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits Remontant"
 
 line wall
   825.0 320.0
@@ -2148,7 +2148,7 @@ line wall
   smooth off
 endline
 
-point 599.75 226.5 continuation -attr Code D -text "Siphon de sable, à désobstruer ?"
+point 599.75 226.5 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -text "Siphon de sable, à désobstruer ?"
 
 point 610.0 236.25 altitude -align right
 
@@ -2275,7 +2275,7 @@ endscrap
 
 scrap C74e-SC4 -projection extended -author 2010 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3980 4215 -3980 0.0 0.0 110.31219999999999 0.0 m]
 
-point 1515.5 638.5 continuation -attr Code D -text "Suite possible en joint de strate, il y a des blocs à bouger, courant d'air, c'est intéressant"
+point 1515.5 638.5 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "Suite possible en joint de strate, il y a des blocs à bouger, courant d'air, c'est intéressant"
 
 point 1500.0 617.25 altitude -align bottom-right
 
@@ -2458,7 +2458,7 @@ scrap C74e-SC2 -projection extended -author 2010 "Xavier Robert" -author 2020 "X
 
 point 1421.5 783.0 air-draught -orientation 160.2 -subtype summer
 
-point 1426.25 766.5 continuation -attr Code D -text "Trémie à désobstruer, coruant d'air, peu de travail"
+point 1426.25 766.5 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "Trémie à désobstruer, courant d'air, peu de travail"
 
 point 1432.0 708.5 breakdown-choke -orientation 136.6
 
@@ -2934,7 +2934,7 @@ line rock-border -close on
   466.75 308.0
 endline
 
-point 436.25 377.25 continuation -attr Code E -text "Puits remontant"
+point 436.25 377.25 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -text "Puits remontant"
 
 point 503.25 401.0 altitude -align left
 
@@ -2942,9 +2942,9 @@ point 416.5 382.75 altitude -align right
 
 point 374.75 201.0 altitude -align right
 
-point 343.25 249.5 continuation -attr Code T -text "Trémie à désobtruer, courant d'air"
+point 343.25 249.5 continuation -attr Code T -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "Trémie à désobtruer, courant d'air"
 
-point 291.25 262.5 continuation -attr Code D -text "Boyau étroit à désobstruer, courant d'air"
+point 291.25 262.5 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "Boyau étroit à désobstruer, courant d'air"
 
 point 324.25 243.0 air-draught -orientation 27.9 -subtype summer
 
@@ -3017,17 +3017,17 @@ endline
 
 point 707.5 421.0 narrow-end
 
-point 637.75 324.0 continuation -attr Code P -text "Puits"
+point 637.75 324.0 continuation -attr Code P -attr Cavite C74 -attr Reseau "TireSansBoum" -text "Puits"
 
-point 529.5 396.75 continuation -attr Code E -text "Puits remontant"
+point 529.5 396.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "TireSansBoum" -text "Puits remontant"
 
-point 529.0 412.0 continuation -attr Code E -text "Puits remontant"
+point 529.0 412.0 continuation -attr Code E -attr Cavite C74 -attr Reseau "TireSansBoum" -text "Puits remontant"
 
-point 572.0 397.5 continuation -attr Code E -text "Puits remontant"
+point 572.0 397.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "TireSansBoum" -text "Puits remontant"
 
-point 644.25 394.75 continuation -attr Code E -text "Puits remontant, c.a."
+point 644.25 394.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "TireSansBoum" -attr CA "Courant d'air" -text "Puits remontant, c.a."
 
-point 621.0 404.75 continuation -attr Code E -text "Puits remontant, c.a."
+point 621.0 404.75 continuation -attr Code E -attr Cavite C74 -attr Reseau "TireSansBoum" -attr CA "Courant d'air" -text "Puits remontant, c.a."
 
 point 548.0 332.25 narrow-end
 

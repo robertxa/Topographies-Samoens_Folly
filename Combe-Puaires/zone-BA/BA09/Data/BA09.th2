@@ -30,7 +30,7 @@ point 80.5 80.25 label -text "<it>Plan"
 
 point 27.25 83.75 air-draught -orientation 149.4 -subtype summer -scale xs
 
-point 37.5 64.75 continuation -attr Code D -text "Trémie à désobstruer ; courant d'air"
+point 37.5 64.75 continuation -attr Code D -attr Cavite BA9 -attr Reseau " " -attr CA "Courant d'air" -text "Trémie à désobstruer ; courant d'air"
 
 point 73.0 3.5 entrance -orientation 327.4
 

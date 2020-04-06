@@ -328,9 +328,9 @@ endscrap
 
 scrap CP14-SC2 -projection extended -author 1990 "Bernard Lips" -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1545.3236 -128.0 0.0 0.0 42.50241944 0.0 m]
 
-point 824.5 921.5 continuation -attr Code E -text "Arrivée de puits à grimper"
+point 824.5 921.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP14" -attr CA " " -text "Arrivée de puits à grimper"
 
-point 958.0 771.0 continuation -attr Code E -text "Arrivée de puits à grimper"
+point 958.0 771.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP14" -attr CA " " -text "Arrivée de puits à grimper"
 
 point 974.0 313.0 narrow-end
 

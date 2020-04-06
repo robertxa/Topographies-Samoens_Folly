@@ -62,7 +62,7 @@ layout my_layout
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 1000
+   base-scale 1 500
   
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -178,7 +178,7 @@ layout my_layout
 	copy langue-fr
 	
 	doc-title "C44 coupe"
-	base-scale 1 1000
+	base-scale 1 500
 	scale-bar 50 m
 	scale 1 500
 	#origin 12 22 0 m

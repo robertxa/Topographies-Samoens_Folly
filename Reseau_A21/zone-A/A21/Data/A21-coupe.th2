@@ -15,7 +15,7 @@ point 1289.25 342.25 air-draught -orientation 253.1 -subtype summer
 
 point 958.25 420.0 air-draught -orientation 247.1 -subtype summer
 
-point 929.0 382.25 continuation -attr Code D -text "Méandre étroit, courant d'air"
+point 929.0 382.25 continuation -attr Code D -attr Cavite A21 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre étroit, courant d'air"
 
 point 954.75 374.0 narrow-end
 
@@ -410,7 +410,7 @@ endline
 
 point 773.5 249.0 label -text "R4"
 
-point 828.5 271.75 continuation -attr Code Q -text "Départ à vérifier ?"
+point 828.5 271.75 continuation -attr Code Q -attr Cavite A21 -attr Reseau " " -attr CA " " -text "Départ à vérifier ?"
 
 line wall -outline none -subtype debris
   811.25 266.25
@@ -580,7 +580,7 @@ line border
   smooth off
 endline
 
-point 857.25 290.25 continuation -attr Code E -text "Départ à voir en plafond"
+point 857.25 290.25 continuation -attr Code E -attr Cavite A21 -attr Reseau " " -attr CA " " -text "Départ à voir en plafond"
 
 point 761.5 237.75 narrow-end
 
@@ -955,9 +955,9 @@ point 549.75 291.5 height -value [-10 m]
 
 point 595.25 333.25 height -value [+7 m]
 
-point 427.5 313.75 continuation -attr Code E -text "Départ en plafond ?"
+point 427.5 313.75 continuation -attr Code E -attr Cavite A21 -attr Reseau " " -attr CA " " -text "Départ en plafond ?"
 
-point 533.75 351.75 continuation -attr Code E -text "Départ en plafond ?"
+point 533.75 351.75 continuation -attr Code E -attr Cavite A21 -attr Reseau " " -attr CA " " -text "Départ en plafond ?"
 
 line rope
   625.75 280.5
@@ -1209,7 +1209,7 @@ point 602.75 312.5 air-draught -orientation 292.2 -subtype summer
 
 point 793.25 358.0 air-draught -orientation 235.7 -subtype summer
 
-point 840.0 358.25 continuation -attr Code T -text "Galerie après traversée de puits à faire, courant d'air"
+point 840.0 358.25 continuation -attr Code T -attr Cavite A21 -attr Reseau " " -attr CA "Courant d'air" -text "Galerie après traversée de puits à faire, courant d'air"
 
 line wall -subtype unsurveyed
   812.25 330.5
@@ -1442,7 +1442,7 @@ point 389.75 296.25 danger
 
 point 424.0 274.75 dig
 
-point 385.5 311.0 continuation -attr Code D -text "Courant d'air, désobstruction de la trémie par le bas, attention, très dangeureux"
+point 385.5 311.0 continuation -attr Code D -attr Cavite A21 -attr Reseau "Trémie des Frayeurs..." -attr CA "Courant d'air" -text "Courant d'air, désobstruction de la trémie par le bas, attention, très dangeureux"
 
 line wall -subtype pebbles
   411.25 287.0
@@ -1479,9 +1479,9 @@ endscrap
 
 scrap A21-SC7 -projection extended -author 2007 "Xavier Robert" -author 2007 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1584.6937 -128.0 0.0 0.0 43.50241998 0.0 m]
 
-point 324.25 256.5 continuation -attr Code E -text "Puits remontant"
+point 324.25 256.5 continuation -attr Code E -attr Cavite A21 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 220.25 139.0 continuation -attr Code D -text "Méandre étroit, vers A22?"
+point 220.25 139.0 continuation -attr Code D -attr Cavite A21 -attr Reseau " " -attr CA " " -text "Méandre étroit, vers A22?"
 
 point 246.5 131.5 altitude -align right
 

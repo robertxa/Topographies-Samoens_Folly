@@ -146,7 +146,7 @@ line wall
   smooth off
 endline
 
-point 7648.5 2204.5 continuation -attr Code P -text "Puits à descendre, galerie à topographier"
+point 7648.5 2204.5 continuation -attr Code P -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy Amont" -attr CA " " -text "Puits à descendre, galerie à topographier" -explored 5m
 
 point 7182.0 2293.0 air-draught -orientation 250.8
 
@@ -466,11 +466,11 @@ point 6215.5 1975.5 air-draught -orientation 232.3 -subtype summer
 
 point 6339.5 1932.0 air-draught -orientation 309.5 -subtype summer
 
-point 6267.0 1978.0 continuation -attr Code Q -text "à voir ?"
+point 6267.0 1978.0 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy Amont" -attr CA " " -text "à voir ?"
 
-point 6387.0 1875.5 continuation -attr Code D -text "Etroiture à élargir à l'explosif, courant d'air important, trace de paléo rivière, c'est très intéressant"
+point 6387.0 1875.5 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy Amont" -attr CA "Courant d'air" -text "Etroiture à élargir à l'explosif, courant d'air important, trace de paléo rivière, c'est très intéressant"
 
-point 6183.0 1960.5 continuation -attr Code D -text "Etroiture à élargir à l'explosif, courant d'air important"
+point 6183.0 1960.5 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy Amont" -attr CA "Courant d'air" -text "Etroiture à élargir à l'explosif, courant d'air important"
 
 line wall -subtype unsurveyed
   6167.5 1953.0
@@ -846,9 +846,9 @@ line border
   smooth off
 endline
 
-point 2889.5 1337.0 continuation -attr Code A -text "Méandre à visiter et topographier"
+point 2889.5 1337.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Le Gour Bleu" -attr CA " " -text "Méandre à visiter et topographier"
 
-point 2929.5 1417.5 continuation -attr Code A -text "Méandre à visiter et topographier"
+point 2929.5 1417.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Le Gour Bleu" -attr CA " " -text "Méandre à visiter et topographier"
 
 area u:galerie
   l355-2680-1478
@@ -1328,9 +1328,9 @@ endline
 
 point 3594.5 1568.5 height -value [+8 m]
 
-point 3057.0 1613.5 continuation -attr Code E -text "Arrivée d'un méandre ?"
+point 3057.0 1613.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Le rasoir" -attr CA " " -text "Arrivée d'un méandre ?"
 
-point 2813.0 1540.0 continuation -attr Code E -text "Suite de la conduite forcée en hauteur ?"
+point 2813.0 1540.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Le rasoir" -attr CA " " -text "Suite de la conduite forcée en hauteur ?"
 
 point 3019.0 1591.0 height -value [+3 m]
 
@@ -1346,7 +1346,7 @@ point 3203.0 1794.0 height -value [-12 m]
 
 point 3238.5 1872.5 height -value [-26 m]
 
-point 3353.5 2028.5 continuation -attr Code E -text "Suite en escalade ? A vérifier"
+point 3353.5 2028.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Le rasoir" -attr CA " " -text "Suite en escalade ? A vérifier"
 
 point 3288.5 1933.5 height -value [-8 m]
 
@@ -1511,7 +1511,7 @@ point 3304.5 2287.0 height -value [+30 m]
 
 point 3392.0 2458.5 air-draught -orientation 60.6 -subtype summer
 
-point 3457.5 2458.0 continuation -attr Code E -text "Puits à escalader, 30 m minimum, coruant d'air"
+point 3457.5 2458.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Le rasoir" -attr CA "Courant d'air" -text "Puits à escalader, 30 m minimum, coruant d'air"
 
 line rope
   3379.0 1939.0
@@ -1984,7 +1984,7 @@ point 1594.0 1261.5 label -text "méandre Billy"
 
 point 1989.0 1274.0 air-draught -orientation 0.0
 
-point 2035.0 1297.0 continuation -attr Code E -text "Puits remontant, courant d'air"
+point 2035.0 1297.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy aval" -attr CA "Courant d'air" -text "Puits remontant, courant d'air"
 
 line rope
   1732.0 1108.0
@@ -1992,9 +1992,9 @@ line rope
   1705.0 1064.5
 endline
 
-point 1457.5 1134.5 continuation -attr Code E -text "Départ en hauteur ?"
+point 1457.5 1134.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy aval" -attr CA " " -text "Départ en hauteur ?"
 
-point 1063.5 1051.5 continuation -attr Code E -text "Cheminée ?"
+point 1063.5 1051.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy aval" -attr CA " " -text "Cheminée ?"
 
 line rope
   1081.0 934.0
@@ -2109,7 +2109,7 @@ scrap billy-SC2 -projection extended -author 2009 "Stéphane Lips" -author 2020 
 
 point 6529.0 2336.0 air-draught -orientation 239.8
 
-point 6582.5 2328.0 continuation -attr Code E -text "Puits à remonter, environ 20 m, courant d'air"
+point 6582.5 2328.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Méandre Billy amont" -attr CA "Courant d'air" -text "Puits à remonter, environ 20 m, courant d'air"
 
 point 6591.0 2235.5 height -value [+20 m]
 

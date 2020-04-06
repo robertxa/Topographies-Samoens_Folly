@@ -104,7 +104,7 @@ line overhang -close on
   smooth off
 endline
 
-point 1264.0 -1583.0 continuation -attr Code D -text "m. étroit à désobstruer ; courant d'air"
+point 1264.0 -1583.0 continuation -attr Code D -attr Cavite CP62-CP63 -attr Reseau " " -attr CA "Courant d'air" -text "m. étroit à désobstruer ; courant d'air"
 
 line wall
   1122.5 -1842.0

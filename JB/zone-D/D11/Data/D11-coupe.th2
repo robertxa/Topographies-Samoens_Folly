@@ -43,7 +43,7 @@ point 666.25 283.75 narrow-end -orientation 222.7
 
 point 650.25 315.0 narrow-end -orientation 257.7
 
-point 650.75 329.5 continuation -attr Code E -text "Escalade"
+point 650.75 329.5 continuation -attr Code E -attr Cavite D11 -attr Reseau " " -attr CA " " -text "Escalade"
 
 line wall
   661.75 280.25
@@ -199,7 +199,7 @@ point 370.0 415.0 blocks
 
 point 615.5 244.5 continuation
 
-point 148.25 590.75 continuation -attr Code D -text "Méandre étroit"
+point 148.25 590.75 continuation -attr Code D -attr Cavite D11 -attr Reseau " " -attr CA " " -text "Méandre étroit"
 
 line wall -subtype presumed
   365.0 419.75
@@ -364,9 +364,9 @@ point 841.5 129.25 altitude -align bottom-left
 
 point 870.0 128.5 narrow-end -orientation 290.2
 
-point 709.5 228.0 continuation -attr Code D -text "Méandre étroit"
+point 709.5 228.0 continuation -attr Code D -attr Cavite D11 -attr Reseau " " -attr CA " " -text "Méandre étroit"
 
-point 856.75 133.5 continuation -attr Code D -text "Méandre étroit"
+point 856.75 133.5 continuation -attr Code D -attr Cavite D11 -attr Reseau " " -attr CA " " -text "Méandre étroit"
 
 point 484.0 288.0 water-flow -orientation 113.6
 

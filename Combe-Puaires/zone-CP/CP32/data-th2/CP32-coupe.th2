@@ -420,9 +420,9 @@ line contour -id l149-42-194 -close on
   smooth off
 endline
 
-point 178.75 119.5 continuation -attr Code D -text "Galerie colmatée par de la glaise, désobstruction à l'aveugle ?"
+point 178.75 119.5 continuation -attr Code D -attr Cavite CP32 -attr Reseau " " -attr CA " " -text "Galerie colmatée par de la glaise, désobstruction à l'aveugle ?"
 
-point -89.75 112.0 continuation -attr Code D -text "Boyau partiellement colmaté par du sable ; courant d'air important"
+point -89.75 112.0 continuation -attr Code D -attr Cavite CP32 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau partiellement colmaté par du sable ; courant d'air important"
 
 point -60.25 110.0 altitude -align bottom-right
 
@@ -599,7 +599,7 @@ point 45.0 184.75 water-flow -orientation 228.5
 
 point 75.75 301.75 water-flow -orientation 193.7
 
-point 69.0 310.0 continuation -attr Code E -text "Puits remontant à escalader"
+point 69.0 310.0 continuation -attr Code E -attr Cavite CP32 -attr Reseau " " -attr CA " " -text "Puits remontant à escalader"
 
 line wall
   62.0 293.25

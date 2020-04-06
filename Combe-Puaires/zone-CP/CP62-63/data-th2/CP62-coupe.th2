@@ -374,7 +374,7 @@ point 465.5 -1082.0 altitude -align bottom-right
 
 point 425.75 -1107.25 air-draught -orientation 54.1 -subtype summer -scale s
 
-point 430.25 -1085.0 continuation -attr Code D -text "trémie à désosbtruer ; courant d'air"
+point 430.25 -1085.0 continuation -attr Code D -attr Cavite CP62-CP63 -attr Reseau " " -attr CA "Courant d'air" -text "trémie à désosbtruer ; courant d'air"
 
 point 452.75 -1078.75 breakdown-choke -orientation 76.6
 
@@ -848,7 +848,7 @@ point 2372.0 -892.5 dig
 
 point 2058.0 -991.0 air-draught -orientation 122.6 -subtype summer
 
-point 1974.0 -889.5 continuation -attr Code D -text "méandre très étroit à désobstruer à l'explosif ; courant d'air"
+point 1974.0 -889.5 continuation -attr Code D -attr Cavite CP62-CP63 -attr Reseau " " -attr CA "Courant d'air" -text "méandre très étroit à désobstruer à l'explosif ; courant d'air"
 
 point 2195.5 -1039.5 altitude -align bottom-left
 

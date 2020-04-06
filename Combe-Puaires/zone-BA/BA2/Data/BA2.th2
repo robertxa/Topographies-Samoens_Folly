@@ -11,9 +11,9 @@ point 27.75 16.25 dig
 
 point 26.0 42.0 dig
 
-point 40.5 17.0 continuation -attr Code D -text "Désobstruction à l'aveugle dans le remplissage ; pas de courant d'air"
+point 40.5 17.0 continuation -attr Code D -attr Cavite BA2 -attr Reseau " " -attr CA " " -text "Désobstruction à l'aveugle dans le remplissage ; pas de courant d'air"
 
-point 27.0 8.0 continuation -attr Code D -text "m. étroit à désobtruer à l'explosif ; courant d'air"
+point 27.0 8.0 continuation -attr Code D -attr Cavite BA2 -attr Reseau " " -attr CA "Courant d'air" -text "m. étroit à désobtruer à l'explosif ; courant d'air"
 
 point 23.75 -0.75 air-draught -orientation 338.2
 

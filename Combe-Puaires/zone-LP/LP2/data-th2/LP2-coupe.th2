@@ -199,7 +199,7 @@ line wall -subtype ice -outline none
   smooth off
 endline
 
-point 101.25 26.0 continuation -attr Code D -text "Etroiture"
+point 101.25 26.0 continuation -attr Code D -attr Cavite LP2 -attr Reseau " " -attr CA " " -text "Etroiture"
 
 line wall -subtype ice -outline none
   115.75 51.75
@@ -456,9 +456,9 @@ line rope
   168.5 57.5
 endline
 
-point 182.25 107.75 continuation -attr Code E -text "Puits remontant"
+point 182.25 107.75 continuation -attr Code E -attr Cavite LP2 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 186.75 70.0 continuation -attr Code D -text "Méandre étroit"
+point 186.75 70.0 continuation -attr Code D -attr Cavite LP2 -attr Reseau " " -attr CA " " -text "Méandre étroit"
 
 line wall
   178.0 73.5
