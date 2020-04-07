@@ -286,11 +286,22 @@ layout my_layout-coupe
 	endcode  
   
 endlayout
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
   
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o Data/D33-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/D33-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/D33-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/D33-coupe.xvi
   
 # Select maps
 	select D33-plan-tot
@@ -298,6 +309,9 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/D33-coupe.xvi
   
 export map -o Outputs/D33-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/D33-coupe.pdf
+export map -o Outputs/D33-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/D33-coupe-Continuations.pdf
+
 export model -o Outputs/D33.lox
   
 # Export des fichiers ESRI

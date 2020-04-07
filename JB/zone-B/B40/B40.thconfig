@@ -72,7 +72,8 @@ layout my_layout
 	endcode  
 
 # add extended-elev on the same pdf
-map-image 180 140 n Outputs/B40-coupe.pdf
+#map-image 180 140 n Outputs/B40-coupe.pdf
+map-image 180 140 n Outputs/B40-coupe-Continuations.pdf
   
 endlayout
  
@@ -126,6 +127,18 @@ layout my_layout-coupe
  
 endlayout
 
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+
 export map -fmt xvi -layout xviexport -o Data/B40-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o Data/B40-coupe.xvi
   
@@ -135,6 +148,9 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/B40-coupe.xvi
    
 export map -projection extended -layout my_layout-coupe -o Outputs/B40-coupe.pdf
 export map -o Outputs/B40-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/B40-coupe-Continuations.pdf
+export map -o Outputs/B40-plan-Continuations.pdf -layout my_layout-Continuations
+
 export model -o Outputs/B40.lox
 export map -proj plan -fmt kml -o Outputs/B40.kml -layout my_layout
 #export model -o Outputs/B40.vrml
