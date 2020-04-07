@@ -1116,7 +1116,7 @@ point 3597.0 -1786.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau 
 
 point 3546.25 -1730.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
-point 3777.0 -1886.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 3777.0 -1886.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code E -text "Escalade ?"
 
 line contour
   3498.0 -2077.25
@@ -1769,11 +1769,11 @@ line wall -subtype unsurveyed
   3745.5 -1707.75
 endline
 
-point 3709.25 -1590.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 3709.25 -1590.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code E -text "Départ au sommet du puits"
 
-point 3745.5 -1686.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 3745.5 -1686.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code E -text "Escalade à voir"
 
-point 3881.0 -1739.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 3881.0 -1739.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code S -text "Siphon à plonger en fond de puits"
 
 point 3859.75 -1711.25 altitude -align left
 
@@ -2932,9 +2932,9 @@ endline
 
 point 2841.0 -2872.25 altitude -align bottom-left
 
-point 2880.5 -2858.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 2880.5 -2858.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code D -text "Etroit"
 
-point 2703.75 -2875.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 2703.75 -2875.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code D -text "Etroit"
 
 line wall -subtype unsurveyed
   2713.25 -2879.25
@@ -3054,9 +3054,9 @@ point 2488.5 -2683.0 clay
 
 point 2546.25 -2740.75 blocks
 
-point 2325.0 -2674.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 2325.0 -2674.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code E -text "Escalade ? A topo ?"
 
-point 2461.25 -2564.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 2461.25 -2564.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA "Courant d'air à réviser" -attr Code Q -text "A Refouiller, courant d'air bizarre"
 
 point 2512.0 -2602.75 rope
 
@@ -3163,9 +3163,9 @@ endline
 
 point 1999.25 -2735.75 water-flow -orientation 180.3
 
-point 2141.5 -2668.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 2141.5 -2668.5 narrow-end
 
-point 1804.0 -2963.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1804.0 -2963.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code S -text "Siphon étroit"
 
 area sump
   l555-1853--2955
@@ -4030,9 +4030,9 @@ line pit
   smooth off
 endline
 
-point 2076.25 -2429.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code Q -text "A vérif ?"
+point 2076.25 -2429.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code E -text "Escalades ?"
 
-point 1988.25 -2406.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code Q -text "A vérif ?"
+point 1988.25 -2406.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code E -text "Escalades ?"
 
 point 1510.75 -2305.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphons temporaires" -attr CA " " -attr Code Q -text "A vérif ?"
 

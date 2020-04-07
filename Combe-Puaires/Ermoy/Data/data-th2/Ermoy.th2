@@ -75,11 +75,13 @@ point 534.5 995.5 height -value [-50 m]
 
 point 597.5 991.0 height -value [-5 m]
 
-point 507.0 983.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 507.0 983.0 continuation -attr Code E -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Entrée" -attr CA " " -text "Plafonds à fouiller"
 
-point 499.0 996.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 499.0 996.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Entrée" -attr CA " " -attr Code E -text "Plafonds à fouiller"
 
-point 677.5 1020.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 677.5 1020.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "S1" -attr CA " " -attr Code E -text "Escalade"
+
+point 695.0 958.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "S1" -attr CA " " -attr Code Q -text "Perte à revoir ?"
 
 point 702.75 965.25 water-flow -orientation 164.6
 
@@ -179,6 +181,7 @@ point 482.25 994.5 fixed-ladder
 line wall -subtype invisible
   386.0 1057.5
   386.0 1057.5 373.75 1058.5 369.5 1051.0
+  smooth off
 endline
 
 line wall -id l35-423-1013
@@ -486,7 +489,7 @@ point 1045.25 874.0 label -text "-5 m"
 
 point 1029.5 915.0 label -text "Etr."
 
-point 1055.0 893.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1055.0 893.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau Historique" -attr CA " " -attr Code A -text "Affluent à continuer, étroit mais passable, arrêt sur rien"
 
 point 1033.0 902.25 narrow-end -orientation 210.5
 
@@ -815,6 +818,8 @@ line water-flow
   739.75 976.0 736.25 965.75 736.0 963.75
   smooth off
 endline
+
+point 889.5 1167.25 continuation -attr Cavite "Grotte de l'Armoy" -attr Reseau "Rampe d'entrée" -attr CA " " -attr Code Q -text "Rampe à topographier et terminus à revoir"
 
 point 873.0 1163.0 water-flow -orientation 222.6
 

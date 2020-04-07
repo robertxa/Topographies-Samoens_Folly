@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -5034 8026 138.5
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} ../autres/ermoy6.png 0 {}
 
 
@@ -39,6 +39,10 @@ line wall
   smooth off
   1138.25 -1904.0
 endline
+
+point 1276.5 -2277.0 continuation -attr Code D -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau historique" -attr CA "-" -text "Perte de l'actif à revoir ?"
+
+point 1085.5 -1930.0 continuation -attr Code D -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau historique" -attr CA "-" -text "Perte de l'actif à revoir ?"
 
 line wall -outline in
   1251.25 -2106.0
@@ -567,6 +571,7 @@ scrap siphon-aval -projection plan -author 2014 "Xavier Robert" -author 2009 "St
 line wall -subtype invisible
   1442.75 -2745.5
   1442.75 -2745.5 1418.5 -2731.0 1411.25 -2731.25
+  smooth off
 endline
 
 line wall
@@ -654,7 +659,7 @@ line wall -id l107-1350--2934
   smooth off
 endline
 
-point 1359.75 -2956.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1359.75 -2956.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphon Aval" -attr CA " " -attr Code S -text "Siphon à plonger, arrêt sur rien (-40 m)" -explored 40m
 
 line pit
   1448.0 -2752.5
@@ -701,7 +706,7 @@ point 1429.5 -2851.0 rope
 
 point 1359.0 -2918.75 rope
 
-point 1344.5 -2808.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1344.5 -2808.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphon Aval" -attr CA " " -attr Code E -text "Escalade à faire, il y a peut-être un départ"
 
 line arrow
   1387.75 -2858.5
@@ -1956,7 +1961,7 @@ point 1434.25 -2125.25 blocks
 
 point 1583.5 -2268.5 height -value [-10 m]
 
-point 1614.5 -2326.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1614.5 -2326.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Resau historique" -attr CA " " -attr Code E -text "Escalade ?"
 
 line arrow
   1521.5 -2173.25
@@ -2114,5 +2119,4 @@ point 1560.5 -2297.75 station -name 10.30@Ermoy
 point 1527.75 -2345.5 station -name 10.31@Ermoy
 
 endscrap
-
 

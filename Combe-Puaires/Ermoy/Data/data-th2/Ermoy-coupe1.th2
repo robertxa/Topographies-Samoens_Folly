@@ -89,9 +89,11 @@ line wall -close on -outline in
   smooth off
 endline
 
-point 760.75 -4314.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 887.5 -4597.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "S1" -attr CA " " -attr Code D -text "Perte à revoir ?"
 
-point 669.25 -4124.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 760.75 -4314.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Entrée" -attr CA " " -attr Code E -text "Puits remontant"
+
+point 669.25 -4124.75 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Entrée" -attr CA " " -attr Code E -text "Plafonds à fouiller"
 
 point 503.0 -4192.5 fixed-ladder
 
@@ -245,6 +247,10 @@ line wall -subtype unsurveyed
   1066.5 -4391.75 1059.25 -4397.75 1059.25 -4397.75
   smooth off
 endline
+
+point 1969.0 -4419.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Salle à manger" -attr CA " " -attr Code E -text "Escalades"
+
+point 1219.0 -4210.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Rampe S1" -attr CA " " -attr Code Q -text "Rampe à topographier et terminus à revoir"
 
 line wall -subtype unsurveyed
   1214.25 -4242.25
@@ -457,8 +463,6 @@ line rope
 endline
 
 point 1967.5 -4380.0 label -text "Salle à Manger"
-
-point 1967.0 -4416.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
 
 point 1402.75 -4677.0 label -text "Siphon 2, -72 m" -scale xl
 
@@ -763,7 +767,7 @@ endline
 
 point 1415.5 -4266.25 altitude -align right
 
-point 1443.25 -4229.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1443.25 -4229.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau Historique" -attr CA " " -attr Code A -text "Affluent étroit à remonter, arrêt sur rien, ça passe"
 
 point 1426.25 -4251.0 water-flow -orientation 226.4
 
@@ -958,6 +962,10 @@ point 1112.5 -4452.5 station -name 10.6@Ermoy
 point 1042.0 -4462.5 station -name 10.4@Ermoy
 
 point 1019.5 -4470.25 station -name 10.2@Ermoy
+
+point 1265.5 -4609.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau Historique" -attr CA " " -attr Code D -text "Perte à revoir ?"
+
+point 931.0 -4575.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "S1" -attr CA " " -attr Code D -text "Perte à revoir ?"
 
 line wall
   945.0 -4564.25
@@ -1181,19 +1189,19 @@ point 1928.75 -4238.25 height -value [+30 m]
 
 point 1850.75 -4386.0 height -value [+30 m]
 
-point 1582.75 -4323.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1582.75 -4323.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau historique" -attr CA " " -attr Code E -text "Départ au sommet du puits ?"
 
 point 1631.5 -4599.0 narrow-end
 
 point 1618.5 -4669.75 narrow-end
 
-point 1680.0 -4616.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1680.0 -4616.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Siphon Aval" -attr CA " " -attr Code E -text "Escalade"
 
 point 1837.25 -4748.25 label -text "-94 m"
 
 point 1745.5 -4742.25 altitude -align left
 
-point 1786.75 -4785.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 1786.75 -4785.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA "SIphon Aval" -attr Code S -text "SIphon à replonger, arrêt sur rien (-40 m)"
 
 area sump
   l309-1775--4736

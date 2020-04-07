@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -5034 8026 138.5
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} ../autres/ermoy6.png 0 {}
 
 
@@ -26,6 +26,8 @@ point 7430.5 -344.5 label -text "etr."
 point 7454.25 -318.0 label -text "etr."
 
 point 7494.5 -284.25 label -text "etr."
+
+point 7524.0 -311.5 continuation -attr Code D -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Amont" -text "Boyau à continuer à désobstruer à l'explosif ; gros courant d'air aspirant en hiver ; Chantier important" -explored 30m -attr CA "Courant d'air aspirant violent en hiver"
 
 point 7554.75 -263.0 air-draught -orientation 58.3 -subtype winter -scale xl
 
@@ -132,6 +134,8 @@ point 7325.0 -372.75 clay
 point 7326.25 -365.75 clay
 
 point 7279.25 -409.75 dig
+
+point 7317.5 -347.5 continuation -attr Code D -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Amont" -attr CA "-" -text "Suite logique de la conduite forcée ; Désobstruction du remplissage ; pas de c.a." -explored 20m
 
 point 7345.25 -354.0 dig
 

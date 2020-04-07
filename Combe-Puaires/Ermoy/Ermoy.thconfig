@@ -244,9 +244,9 @@ endlayout
 	select Ermoy-coupe-tot
   
 export map -o Outputs/Ermoy-MARS-2014-plan.pdf -layout my_layout
-export map -o Outputs/Ermoy-plan-Continuations.pdf -layout my_layout
+export map -o Outputs/Ermoy-plan-Continuations.pdf -layout my_layout-Continuations
 export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-MARS-2009-coupe.pdf
-export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-coupe-Continuations.pdf
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/Ermoy-coupe-Continuations.pdf
 export model -o Outputs/Ermoy-MARS-2009.lox
   
 # Export des fichiers ESRI

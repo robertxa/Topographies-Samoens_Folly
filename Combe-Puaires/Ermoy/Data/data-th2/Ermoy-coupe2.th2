@@ -76,6 +76,8 @@ line wall
   smooth off
 endline
 
+point 2482.0 -4445.5 continuation -attr Code Q -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Sortie S3" -attr CA "?" -text "A refouiller (et topographier), courant d'air bizarre dans la zone"
+
 line wall -subtype unsurveyed
   2528.75 -4480.5
   2528.75 -4480.5 2520.25 -4463.25 2518.5 -4456.0
@@ -358,7 +360,7 @@ endline
 
 point 2914.0 -4603.5 altitude -align bottom
 
-point 2945.0 -4606.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 2945.0 -4606.25 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "BAse Grandes Rampes" -attr CA " " -attr Code D -text "Etroit ?"
 
 line wall
   2911.75 -4596.25
@@ -449,11 +451,13 @@ line map-connection
   3742.0 -4119.5
 endline
 
-point 3924.75 -4082.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 3766.0 -4082.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Sommet Grandes Rampes" -attr CA " " -attr Code E -text "Puits remontant"
 
-point 4122.25 -4319.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 3924.75 -4082.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Sommet Grandes Rampes" -attr CA " " -attr Code E -text "Départ de galerie à atteindre au sommet du puits"
 
-point 4250.25 -4728.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 4122.25 -4319.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau du P60" -attr CA " " -attr Code E -text "Puits remontant"
+
+point 4250.25 -4728.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Réseau du P60" -attr CA " " -attr Code S -text "Siphon à plonger"
 
 point 4240.0 -4679.75 altitude -align left
 
@@ -947,6 +951,21 @@ line label -id l76-1966--4678 -close on
   1936.75 -4681.0
   1966.75 -4677.5
   1972.75 -4672.75
+endline
+
+point 1910.0 -4684.0 continuation -attr Code S -attr Cavite "Grotte de l'Ermoy" -attr Reseau "S3" -attr CA "-" -text "Siphon étroit à revoir ?"
+
+area u:galerie
+  l202-2018--4653
+endarea
+
+line border -id l202-2018--4653 -close on
+  2013.25 -4650.25
+  2013.25 -4650.25 2010.0 -4651.5 2010.5 -4656.0
+  2011.0 -4660.5 2018.5 -4658.5 2018.5 -4656.0
+  2018.5 -4653.5 2019.5 -4650.5 2016.75 -4651.0
+  2014.0 -4651.5 2013.25 -4650.25 2013.25 -4650.25
+  smooth off
 endline
 
 line wall

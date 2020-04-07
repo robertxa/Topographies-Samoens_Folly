@@ -260,9 +260,9 @@ point 6998.25 -3649.75 dig
 
 point 7073.0 -3637.0 dig
 
-point 7089.75 -3809.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Terminus amont" -attr CA " " -attr Code Q -text "A vérif ?"
+point 7089.75 -3809.0 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Terminus amont" -attr CA "-" -attr Code D -text "Suite logique de la conduite forcée, pas de c.a. mais désobstruction du colmatage..."
 
-point 7212.75 -3678.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Terminus amont" -attr CA " " -attr Code Q -text "A vérif ?"
+point 7212.75 -3678.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau "Terminus amont" -attr CA "Courant d'air aspirant violent en hiver" -attr Code D -text "Boyau à continuer à désobstruer"
 
 point 7240.75 -3616.0 air-draught -orientation 63.6 -subtype winter -scale xl
 
@@ -438,7 +438,9 @@ line rope
   5684.25 -3652.25
 endline
 
-point 5870.25 -3682.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code Q -text "A vérif ?"
+point 5945.5 -3661.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code E -text "Escalades ?"
+
+point 5870.25 -3682.5 continuation -attr Cavite "Grotte de l'Ermoy" -attr Reseau " " -attr CA " " -attr Code E -text "Escalades ?"
 
 line rope
   5904.5 -3823.75
