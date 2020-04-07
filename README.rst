@@ -26,6 +26,30 @@ Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fich
 L'ensemble de ces topographies est publié et décrit dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet (https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/). Les topographies compilées peuvent aussi être téléchargées sur les pages https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/topographies-du-synclinal-du-jean-bernard-samoens-france/ et https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/explorations-a-samoenstopographies-du-systeme-de-la-combe-aux-puaires/ .
 Le scan des notes topographiques de terrain est disponible sur demande.
 
+Une convention a été mise en place pour la gestion des points d'interrogation, avec la définition de différents champs :
+
+	* le champ "Code" qui décrit le type de terminus. Il peut prendre les valeurs : 
+	
+		* A : il suffit d'y aller et de continuer, pas d'obstacles
+		
+		* D : Désobstruction nécessaire, 
+		
+		* E : Escalade nécessaire, 
+		
+		* P : Puits non descendu,
+		
+		* Q : non renseigné sur les topographie anciennes, c'est à voir/vérifier,
+		
+		* S : Siphon à plonger, 
+		
+		* T : Trémie à désobstruer
+	
+	* le champ "Cavite" qui donne le nom de la cavité en question,
+	
+	* le champ "Reseau" qui indique la partie de la cavité où se situe le point d'interrogation (pour pouvoir le retrouver plus rapidement sur les topographies),
+	
+	* le champ "CA" qui est rempli si présence de courant d'air, avec éventuellement des remarques/commentaires.
+
 Licence
 -------
 
