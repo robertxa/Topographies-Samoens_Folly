@@ -181,8 +181,10 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode   
-    # Add extended
-    map-image 100 -20 sw Outputs/C114-2012-coupe.pdf
+	# Add extended
+	map-image 100 -20 sw Outputs/C114-2012-coupe.pdf
+	#map-image 100 -20 sw Outputs/C114-2012-coupe-Continuations.pdf
+	
 endlayout
 # Fin de la definition du Layout "normal"
 
@@ -233,18 +235,31 @@ layout my_layout-coupe
   
  endlayout
 
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
 # 3-EXPORT
 # Voici les lignes pour exporter le cheminement au format xvi
-export map -proj plan -fmt xvi -layout xviexport -o Data/C114-plan2012.xvi
-export map -proj extended -fmt xvi -layout xviexport -o Data/C114-coupe2012.xvi
+#export map -proj plan -fmt xvi -layout xviexport -o Data/C114-plan2012.xvi
+#export map -proj extended -fmt xvi -layout xviexport -o Data/C114-coupe2012.xvi
 
 # Select maps
 	select C114-plan-tot
 	select C114-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
- export map -projection plan -fmt pdf -o Outputs/C114-2012-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -o Outputs/C114-2012-coupe.pdf -layout my_layout-coupe
+export map -projection plan -fmt pdf -o Outputs/C114-2012-plan.pdf -layout my_layout
+export map -projection extended -fmt pdf -o Outputs/C114-2012-coupe.pdf -layout my_layout-coupe
+#export map -projection plan -fmt pdf -o Outputs/C114-2012-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -projection extended -fmt pdf -o Outputs/C114-2012-coupe-Continuations.pdf -layout my_layout-coupe-Continuations
 
 # Export des fichiers ESRI
 export model -fmt esri -o Outputs/C114-2012

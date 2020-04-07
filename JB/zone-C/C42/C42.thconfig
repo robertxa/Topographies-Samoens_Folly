@@ -301,18 +301,32 @@ layout my_layout-coupe
  
  endlayout
 
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o Data/C42-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Data/C42-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/C42-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/C42-coupe.xvi
 
 # Select maps
 	select C42-plan-tot
 	select C42-coupe-tot
 	  
- export map -o Outputs/C42-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/C42-coupe.pdf
- export model -o Outputs/C42.lox
+export map -o Outputs/C42-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/C42-coupe.pdf
+export map -o Outputs/C42-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/C42-coupe-Continuations.pdf
+
+export model -o Outputs/C42.lox
   
  # Export des fichiers ESRI
  #export map -proj plan -fmt esri -o Outputs/C42 -layout my_layout

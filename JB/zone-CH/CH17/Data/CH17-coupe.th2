@@ -447,11 +447,11 @@ point 708.25 93.25 water-flow -orientation 257.0
 
 point 731.0 109.75 air-draught -orientation 246.8
 
-point 504.75 160.75 continuation -attr Cavite CH17 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 504.75 160.75 continuation -attr Cavite CH17 -attr Reseau " " -attr CA " " -attr Code A -text "Méandre étroit à forcer"
 
-point 711.75 103.5 continuation -attr Cavite CH17 -attr Reseau " " -attr CA " " -attr Code Q -text  "A voir ?"
+point 711.75 103.5 continuation -attr Cavite CH17 -attr Reseau " " -attr CA "Courant d'air" -attr Code A -text  "Arrêt sur rien, exploration à continuer"
 
-point 144.5 54.75 continuation -attr Cavite CH17 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 144.5 54.75 continuation -attr Cavite CH17 -attr Reseau " " -attr CA "Courant d'air" -attr Code A -text "Explroation à continuer, pas d'obstracles"
 
 line wall -subtype unsurveyed
   695.5 113.75

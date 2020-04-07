@@ -14,10 +14,6 @@ encoding  utf-8
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
 source Data/CH17-tot.th
-#source CH17.th
-#source CH17.th2
-#source CH17-coupe.th2
-#source CH17-coupe2018.th2
 
 # Add maps definitions
 source CH17-maps.th
@@ -297,11 +293,22 @@ layout my_layout-coupe
 	endcode  
   
 endlayout  
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
   
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o Data/CH17-map2018.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Data/CH17-coupe2018.xvi
+# export map -fmt xvi -layout xviexport -o Data/CH17-map2018.xvi
+# export map -projection extended -fmt xvi -layout xviexport -o Data/CH17-coupe2018.xvi
  
  # Select maps
  	#select CH17-2003-plan
@@ -313,6 +320,9 @@ endlayout
   
  export map -o Outputs/CH17-plan2018.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/CH17-coupe2018.pdf
+ export map -o Outputs/CH17-plan-Continuations.pdf -layout my_layout-Continuations
+ export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CH17-coupe-Continuations.pdf
+ 
  export model -o Outputs/CH172018.lox
   
  # Export des fichiers ESRI

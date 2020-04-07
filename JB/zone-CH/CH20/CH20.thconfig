@@ -140,10 +140,21 @@ layout my_layout-coupe
 	endcode  
 
 endlayout
- 
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
 #export map -fmt xvi -layout xviexport -o Data/CH20-plan.xvi
-export map -fmt xvi -projection extended -layout xviexport -o Data/CH20-coupe.xvi
+#export map -fmt xvi -projection extended -layout xviexport -o Data/CH20-coupe.xvi
 
 # Select maps
 	select CH20-plan-tot
@@ -151,6 +162,9 @@ export map -fmt xvi -projection extended -layout xviexport -o Data/CH20-coupe.xv
 
 export map -o Outputs/CH20-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CH20-coupe.pdf
+#export map -o Outputs/CH20-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CH20-coupe-Continuations.pdf
+
 # Export des fichiers ESRI
  export map -proj plan -fmt esri -o Outputs/CH20 -layout my_layout
  

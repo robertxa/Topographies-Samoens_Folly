@@ -305,11 +305,21 @@ layout my_layout-coupe
   
 endlayout
 
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
  
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o th2/F3-map2017.xvi
- export map -projection extended -fmt xvi -layout xviexport -o th2/F3-coupe2017.xvi
+# export map -fmt xvi -layout xviexport -o th2/F3-map2017.xvi
+# export map -projection extended -fmt xvi -layout xviexport -o th2/F3-coupe2017.xvi
   
  # Select maps
  	#select CH3-1975-plan
@@ -323,6 +333,9 @@ endlayout
   
  export map -o Outputs/2D/F3-plan2017.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/2D/F3-coupe2017.pdf
+ export map -o Outputs/2D/F3-plan-Continuations.pdf -layout my_layout-Continuations
+ export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/2D/F3-coupe-Continuations.pdf
+
  export model -o Outputs/3D/F3_2017.lox
   
  # Export des fichiers ESRI

@@ -138,9 +138,20 @@ layout my_layout-coupe
 endlayout
 
 
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+
 
 #export map -fmt xvi -layout xviexport -o Data/C75-plan.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/C75-coupe.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/C75-coupe.xvi
 
 # Select maps
 	select C75-plan-tot
@@ -148,6 +159,9 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/C75-coupe.xvi
 	
 export map   -o Outputs/C75-plan.pdf   -layout my_layout
 export map -projection extended -o Outputs/C75-coupe.pdf -layout my_layout-coupe
+export map   -o Outputs/C75-plan-Continuations.pdf   -layout my_layout-Continuations
+export map -projection extended -o Outputs/C75-coupe-Continuations.pdf -layout my_layout-coupe-Continuations
+
 #export atlas -o Outputs/atlas.pdf -layout my_layout
 export model -o Outputs/C75.lox
 # Export des fichiers kml

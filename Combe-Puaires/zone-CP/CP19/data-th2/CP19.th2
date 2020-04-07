@@ -9,11 +9,13 @@ scrap CP19-1 -projection plan -author 1995 "Daniel Chailloux" -author 2011 "Xavi
 
 point 65.75 37.0 label -text "-17 m"
 
-point 220.5 144.5 continuation -attr Cavite CP19 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 192.75 85.25 continuation -attr Cavite CP19 -attr Reseau " " -attr CA " " -attr Code D -text "Départ étroit"
 
-point 167.75 110.25 continuation -attr Cavite CP19 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 220.5 144.5 continuation -attr Cavite CP19 -attr Reseau " " -attr CA " " -attr Code D -text "Départ étroit"
 
-point 41.5 47.0 continuation -attr Cavite CP19 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 167.75 110.25 continuation -attr Cavite CP19 -attr Reseau " " -attr CA " " -attr Code D -text "Départ étroit"
+
+point 41.5 47.0 continuation -attr Cavite CP19 -attr Reseau " " -attr CA " " -attr Code T-D -text "Trémie à désobstruer ?"
 
 point 51.5 59.25 altitude -align top-left
 

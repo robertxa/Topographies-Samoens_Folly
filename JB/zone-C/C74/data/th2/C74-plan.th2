@@ -159,9 +159,9 @@ point 249.0 595.75 narrow-end -orientation 35.7
 
 point 235.0 650.75 narrow-end -orientation 124.3
 
-point 146.5 739.5 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir ?"
+point 146.5 739.5 continuation -attr Code E -attr Cavite C74 -attr Reseau "Branche Est" -attr CA " " -text "Départ en hauteur"
 
-point 123.5 773.0 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir ?"
+point 123.5 773.0 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est fond" -attr CA "Courant d'air aspirant en été" -text "Boyau à désobstruer, bruit de surface, courant d'air"
 
 point 142.75 687.5 air-draught -orientation 54.4 -scale s
 
@@ -683,7 +683,7 @@ point 325.75 538.5 narrow-end -orientation 243.8
 
 point 309.25 547.25 narrow-end -orientation 160.7
 
-point 279.75 527.0 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir ?"
+point 279.75 527.0 continuation -attr Code E -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir ?"
 
 point 282.25 488.75 continuation
 
@@ -1969,13 +1969,15 @@ point 409.5 929.75 continuation -attr Code E -text "E10, courant d'air"
 
 point 413.5 871.75 continuation -attr Code D -text "Etroiture à courant d'air ; boyau"
 
-point 418.75 826.5 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
+point 448.75 838.75 continuation -attr Code D-E -attr Cavite C74 -attr Reseau " " -attr CA "Courant d'air" -text "Trémie en hauteur à faire tomber, courant d'air, facile (explosif)"
 
-point 448.25 791.75 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
+point 418.75 826.5 continuation -attr Code E -attr Cavite C74 -attr Reseau " " -attr CA " " -text "Départ en hauteur"
 
-point 428.25 758.0 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
+point 448.25 791.75 continuation -attr Code E -attr Cavite C74 -attr Reseau " " -attr CA " " -text "Départ en hauteur"
 
-point 455.75 770.75 continuation -attr Code Q -attr Cavite C74 -attr Reseau " " -attr CA " " -text "A voir"
+point 428.25 758.0 continuation -attr Code D -attr Cavite C74 -attr Reseau " " -attr CA " " -text "Puits étroit, rejoint probablement le méandre en dessous"
+
+point 455.75 770.75 continuation -attr Code E -attr Cavite C74 -attr Reseau " " -attr CA " " -text "Départ en hauteur"
 
 point 450.917 765.986 station -name Xa4-09-17@C74
 
@@ -2877,9 +2879,9 @@ point 472.75 591.25 label -text "Vire Lopette"
 
 point 542.25 645.25 label -text "trémie"
 
-point 492.75 750.5 continuation -attr Code Q -attr Cavite C74 -attr Reseau "Branche Est" -attr CA " " -text "A voir"
+point 492.75 750.5 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -attr CA " " -text "Etroiture"
 
-point 520.75 790.25 continuation -attr Code Q -attr Cavite C74 -attr Reseau "Branche Est" -attr CA " " -text "A voir"
+point 520.75 790.25 continuation -attr Code D -attr Cavite C74 -attr Reseau "Branche Est" -attr CA "Courant d'air" -text "Dalles sur joint de strate à écarter, continuation facile"
 
 line pit -close on
   534.75 573.25

@@ -233,13 +233,13 @@ scrap LP9-SC2 -projection extended -author 2009 "Stéphane Lips" -author 2011 "X
 
 point 1506.0 1199.25 height -value [-5 m]
 
-point 784.75 898.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 784.75 898.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr CA " " -attr Code E -text "Arrivée en plafond"
 
-point 1156.25 1016.75 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 1156.25 1016.75 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr CA " " -attr Code E-D -text "Départ à voir ? Bouclage ?"
 
-point 1252.0 1042.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 1252.0 1042.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr CA " " -attr Code P-D -text "Puits à voir ? Etroit ? Bouclage ?"
 
-point 1191.75 1079.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 1191.75 1079.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr CA " " -attr Code E -text "Puits remontant"
 
 point 1241.75 1039.5 water-flow -orientation 189.1
 
@@ -717,9 +717,9 @@ scrap LP9-Sc3 -projection extended -author 2009 "Stéphane Lips" -author 2011 "X
 
 point 343.0 771.75 label -text "<center>vers P100 fossile<br>non topographié"
 
-point 219.25 256.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 219.25 256.0 continuation -attr Cavite LP9 -attr Reseau "LP9 - Rivière" -attr CA " " -attr Code D -text " de la rivière, étroit, à forcer ?"
 
-point 375.25 294.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 375.25 294.5 continuation -attr Cavite LP9 -attr Reseau "LP9 - Rivière" -attr CA " " -attr Code D -text "Amont de la rivière, étroit, à forcer ?"
 
 point 366.0 282.75 altitude -align bottom-right
 
@@ -867,7 +867,9 @@ point 493.0 862.5 dig
 
 point 469.25 860.75 dig
 
-point 406.75 850.25 continuation
+point 385.25 774.75 continuation -attr Cavite LP9 -attr Reseau "LP9 sommet P100" -attr CA "?" -attr Code A -text "Vers P100 fossile à retrouver et à retopographier"
+
+point 406.75 850.25 continuation -attr Cavite LP9 -attr Reseau "LP9 sommet P100" -attr CA "?" -attr Code E -text "Escalades à continuer et à topographier"
 
 line wall
   397.0 355.5
@@ -903,9 +905,11 @@ point 431.5 360.5 dig
 
 point 487.75 354.5 dig
 
-point 532.25 337.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 480.0 327.5 air-draught -orientation 96.4 -subtype summer
 
-point 313.75 341.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 532.25 337.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr CA "Courant d'air" -attr Code D -text "Boyau à topographier et à désobstruer, courant d'air"
+
+point 313.75 341.5 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr CA " " -attr Code Q -text "A voir ?"
 
 line wall -subtype unsurveyed
   520.75 338.0
@@ -1400,6 +1404,8 @@ line wall -subtype invisible
   smooth off
 endline
 
+point 1241.75 1255.75 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr CA " " -attr Code E -text "Puits remontant"
+
 line wall
   1234.5 1253.5
   1234.5 1253.5 1231.0 1251.5 1226.5 1250.0
@@ -1547,6 +1553,8 @@ line wall
   1215.5 1222.75 1213.25 1222.0 1213.25 1222.0
   smooth off
 endline
+
+point 730.75 1133.5 narrow-end
 
 line wall
   427.5 1079.75
@@ -1814,9 +1822,9 @@ point 776.75 1072.25 label -text "<center>l'aval du<br>CP39"
 
 point 691.25 1053.25 air-draught -orientation 133.6 -subtype summer
 
-point 689.25 1036.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 689.25 1036.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr CA " " -attr Code E -text "Putis remontant"
 
-point 705.75 1064.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 705.75 1064.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr CA " " -attr Code E -text "Puits remontant"
 
 line wall -close on -outline in
   782.75 1015.75
@@ -1984,6 +1992,8 @@ line wall
   1019.75 1180.25 1012.5 1180.25 1012.5 1180.25
   smooth off
 endline
+
+point 1176.5 1219.75 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr CA " " -attr Code E -text "Puits remontant"
 
 line wall
   1213.25 1222.0
@@ -2309,7 +2319,7 @@ line rope
   1681.0 1094.25
 endline
 
-point 1585.5 1331.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 1585.5 1331.25 continuation -attr Cavite CP39 -attr Reseau "CP39 - Puits d'Era" -attr CA " " -attr Code P -text "Puits remontant arrosé"
 
 point 1594.75 1335.5 water-flow -orientation 172.9
 
@@ -2335,9 +2345,9 @@ point 1721.5 1048.75 water-flow -orientation 174.4
 
 point 1714.5 1040.0 air-draught -orientation 351.4
 
-point 1731.75 1064.25 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 1731.75 1064.25 continuation -attr Cavite CP39 -attr Reseau "CP39 - Puits d'Era" -attr CA "Courant d'air" -attr Code D -text "Méandre étroit, jonctionne avec le méandre du LP9 ?"
 
-point 1704.5 1187.75 continuation -attr Cavite CP39 -attr Reseau "CP39" -attr Code CA " " -attr Code Q -text "A voir ?"
+point 1704.5 1187.75 continuation -attr Cavite CP39 -attr Reseau "CP39 - Puits d'Era" -attr CA " " -attr Code E -text "Puits remontant"
 
 line wall
   1698.0 1089.5

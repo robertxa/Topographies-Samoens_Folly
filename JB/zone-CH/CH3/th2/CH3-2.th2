@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 561.0711 525.25
+##XTHERION## xth_me_area_adjust -206.73299999999998 -285.48199999999997 639.8185000000001 525.25
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {365.43600000000004 1 1.0} {63.179 0} F3-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {365.43600000000004 1 1.0} {63.178999999999974 0} F3-map.xvi 0 {}
 
 
 
@@ -22,9 +22,9 @@ line wall -outline out -subtype unsurveyed
   177.25 272.5
 endline
 
-point 262.5 206.25 continuation
+point 262.5 206.25 continuation -attr Code E -attr Cavite CH3 -attr Reseau " " -attr CA " " -text "Départ en plafond à voir éventuellement"
 
-point 153.5 315.5 continuation
+point 153.5 315.5 continuation -attr Code E -attr Cavite CH3 -attr Reseau " " -attr CA "Courant d'air" -text "Méandre remontant avec c.a. à continuer après escalades"
 
 point 330.5 199.0 label -scale xl -text "<bf>CH3"
 
@@ -61,7 +61,7 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 45.75 394.0 continuation
+point 45.75 394.0 continuation -attr Code Q -attr Cavite CH3 -attr Reseau " " -attr CA "Courant d'air soufflant en été" -text "Désobstruction à continuer, courant d'air" -explored 10m
 
 line wall
   141.25 318.5

@@ -81,7 +81,7 @@ line floor-meander
   smooth off
 endline
 
-point 256.25 184.5 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 256.25 184.5 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code D -text "Colmaté ?"
 
 line wall -subtype invisible
   76.25 183.75
@@ -151,7 +151,7 @@ endscrap
 
 scrap CP32-2 -projection plan -author 1999 "Renaud Locatelli" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
 
-point 299.25 158.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 299.25 158.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code D -text "Etroit"
 
 line pit -reverse on
   272.5 166.5
@@ -668,9 +668,9 @@ line gradient
   142.0 80.0
 endline
 
-point 259.75 43.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 259.75 43.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code D -text "Colmatage à désobtruer, pas de c.a. ?"
 
-point 126.25 122.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 126.25 122.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code E -text "Puits remontant"
 
 line pit -close on
   132.75 113.0
@@ -791,7 +791,7 @@ endline
 
 point 92.5 122.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
 
-point 32.5 141.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA " " -attr Code Q -text "A voir ?"
+point 32.5 141.0 continuation -attr Cavite CP32 -attr Reseau " " -attr CA "Courant d'air" -attr Code D -text "Boyau ensablé à désobstruer ; besoin d'explosif ?"
 
 line pit
   94.25 98.25

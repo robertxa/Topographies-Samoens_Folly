@@ -125,10 +125,19 @@ layout my_layout-coupe
 
 endlayout
 
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
  
   
-export map -fmt xvi -layout xviexport -o Data/CH23-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/CH23-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CH23-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/CH23-coupe.xvi
 
 # Select maps
 	select CH23-plan-tot
@@ -136,6 +145,9 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/CH23-coupe.xv
   
 export map -o Outputs/CH23-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CH23-coupe.pdf
+export map -o Outputs/CH23-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CH23-coupe-Continuations.pdf
+
 export model -o Outputs/CH23.lox
   
 # Export ESRI files
