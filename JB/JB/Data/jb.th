@@ -316,93 +316,101 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
  
 
 ##########################################################################################
-# Pour importer les différents fichiers de dessins en coupe développée
-input Drawing-th2/Coupe/B19senecaliens-coupe.th2
-	input Drawing-th2/Coupe/B19-coupe.th2 
-    input Drawing-th2/Coupe/C37-coupe.th2
+## Pour importer les différents fichiers de dessins en coupe développée
+
+## Le C37
+	input Drawing-th2/Coupe/C37-coupe.th2
+    input Drawing-th2/Coupe/affluentC14-coupe.th2
+    	join affluent-C14_c1 archec2 
     input Drawing-th2/Coupe/voltigeurs-coupe.th2
+    	join voltic1 C37c3
+## Le B22
 	input Drawing-th2/Coupe/B22-coupe.th2
-	input Drawing-th2/Coupe/affluentC14-coupe.th2
+		join B22c1 B22cx
+		join B22c2 elyseesc1 
+## Le B21
 	input Drawing-th2/Coupe/B21-coupe.th2
+		##join B21c B22c3
+
+# Le B19	
+	input Drawing-th2/Coupe/B19-coupe.th2 
+	input Drawing-th2/Coupe/B19senecaliens-coupe.th2
+		join B19c1 B19c2
+## Le Lavoir
 	input Drawing-th2/Coupe/lavoirsommet-coupe.th2
 	input Drawing-th2/Coupe/lavoir-coupe2015.th2
+		join lavoirc1 lavoirc2 
 	input Drawing-th2/Coupe/brownies-coupe.th2
+		join lavoirc2 browniesc1
 	input Drawing-th2/Coupe/fileOu-coupe2019.th2
+		join fileouc1	fileOu2019-SC1
 	input Drawing-th2/Coupe/FileOu-coupe.th2
-	input Drawing-th2/Coupe/avalc1
-	
-	input Drawing-th2/Coupe/GoureToiDeLa-coupe.th2
-	#input Drawing-th2/Coupe/GoureToiDeLaOLD.th2
-	input Drawing-th2/Coupe/GoureToiDeLa2015coupe.th2
-		join Gourcoupe20151 Gourecoupesteph1
-	input Drawing-th2/Coupe/GoureToiDeLa2019coupe.th2
-
-	input Drawing-th2/Coupe/gourance2013-coupe.th2
-	
-	input Drawing-th2/Coupe/aval500.th2
-	input Drawing-th2/Coupe/aval400.th2
-	
-	input Drawing-th2/Coupe/V4-coupe.th2
-	input Drawing-th2/Coupe/jaunisse-coupe.th2
-	input Drawing-th2/Coupe/14J-coupe.th2
-	input Drawing-th2/Coupe/dino-coupe.th2
-	input Drawing-th2/Coupe/puitstraverse-coupe.th2
-	input Drawing-th2/Coupe/shunt-branlots-coupe.th2
+		join fileouc1 lavoirc5
+## Le V11 et les Aiguilles
 	input Drawing-th2/Coupe/V11-coupe.th2
+		join aiguillesc1 lavoirc7
+		##join excenc2 excenLavoir???
 	input Drawing-th2/Coupe/CouteauG-coupe.th2
+		join CouteauGc1 V11c3
+	input Drawing-th2/Coupe/puitstraverse-coupe.th2
+		join traversec1 V11c5
+
+## Le 14J
+	input Drawing-th2/Coupe/14J-coupe.th2
+## Les Branlots
+	input Drawing-th2/Coupe/shunt-branlots-coupe.th2
+		join J14c3 s_branlots-c1
+		join branlotsc1 V11c5
 	input Drawing-th2/Coupe/Erreur-coupe.th2
-	input Drawing-th2/Coupe/P11-coupe.th2
-	
+		##join berreurc1 ??
+## Le V4 et le Mais
+	input Drawing-th2/Coupe/V4-coupe.th2
+		join berreurc1 maisc1
+		join V4c1 dupontc3 	
+		join maisc1 V6c1
+	input Drawing-th2/Coupe/dino-coupe.th2
+		join maisc1 dino-coupe
+	input Drawing-th2/Coupe/jaunisse-coupe.th2
+		join jaunissec6 anou2c3
+		join jaunissec7 anou2c1
+		join jaunissec7 anou2c2
+		join jaunissec3 chatonsc1
+## Le réseau du Solitaire
 	input Drawing-th2/Coupe/solitaire-coupe2017.th2
 	input Drawing-th2/Coupe/solitaire-coupe2018.th2
 	input Drawing-th2/Coupe/solitaire2019-coupe1.th2
+		join Solitaire-c_2018-1 solitaire2019-SC1 #Solitaire2018-SC1
 	input Drawing-th2/Coupe/solitaire2019-coupe2.th2
+		join sol-C1 solitaire2019-SC2
 	input Drawing-th2/Coupe/solitaire2019-coupe3.th2
 	input Drawing-th2/Coupe/solitaire2019-coupe4.th2
-	
+		join Solitaire-SC-2019c1 Sol-SC2019b-1
+
+## La rivière aval
+	input Drawing-th2/Coupe/avalc1
+		join avalc1 S1-c
+		join avalc5 balconc1
+	input Drawing-th2/Coupe/aval400.th2
+		join 400c1 biv500c4
+## Le Bivouac -500
+	input Drawing-th2/Coupe/aval500.th2
+	input Drawing-th2/Coupe/P11-coupe.th2
+## La Gourance	
+	input Drawing-th2/Coupe/GoureToiDeLa-coupe.th2
+	##input Drawing-th2/Coupe/GoureToiDeLaOLD.th2
+	input Drawing-th2/Coupe/GoureToiDeLa2015coupe.th2
+		join Gourcoupe20151 Gourecoupesteph1
+		join balconc1 GourecoupeSteph3
+		join GourecoupeSteph3 balcon2
+	input Drawing-th2/Coupe/GoureToiDeLa2019coupe.th2
+	input Drawing-th2/Coupe/gourance2013-coupe.th2
+		join Gourance2013-c1 balcon2
+## Le réseau de Sezhommes
 	input Drawing-th2/Coupe/sezhommes2020-coupe.th2
+		join avalc1 sezhommes2020-SC3
+		join avalc1 sezhommes2020-SC2
+		join avalc2 sezhommes2020-SC3
+## Les siphons terminaux
 	input Drawing-th2/Coupe/siphons-coupe.th2
 	input Drawing-th2/Coupe/siphons-coupe2020.th2
-	
-	
-
-# Join scraps...	
-join voltic1 C37c3
-join B22c1 B22cx
-join B22c2 elyseesc1 
-join affluent-C14_c1 archec2 
-#join B21c B22c3	
-join B19c1 B19c2
-join lavoirc1 lavoirc2 
-join balconc1 GourecoupeSteph3
-join avalc5 balconc1
-join GourecoupeSteph3 balcon2
-join Gourance2013-c1 balcon2
-join 400c1 biv500c4
-join V4c1 dupontc3 	
-join maisc1 V6c1
-join jaunissec6 anou2c3
-join jaunissec7 anou2c1
-join jaunissec7 anou2c2
-join jaunissec3 chatonsc1
-join maisc1 dino-coupe
-join lavoirc2 browniesc1
-join fileouc1	fileOu2019-SC1
-join J14c3 s_branlots-c1
-join traversec1 V11c5
-join branlotsc1 V11c5
-join aiguillesc1 lavoirc7
-#join excenc2 excenLavoir???
-join CouteauGc1 V11c3
-join berreurc1 maisc1
-#join berreurc1 ??
-join avalc1 S1-c
-join fileouc1 lavoirc5
-join Solitaire-c_2018-1 solitaire2019-SC1 #Solitaire2018-SC1
-join sol-C1 solitaire2019-SC2
-join Solitaire-SC-2019c1 Sol-SC2019b-1
-# Reseau Sezhommes
-join avalc1 sezhommes2020-SC3
-join avalc1 sezhommes2020-SC2
-join avalc2 sezhommes2020-SC3
-join Siphons2020-SC1 S2-S3_c	# Explo du 24/01/2020
+		join Siphons2020-SC1 S2-S3_c	# Explo du 24/01/2020
