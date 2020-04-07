@@ -124,6 +124,18 @@ layout my_layout-coupe
  
 endlayout
 
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+
 #export map -fmt xvi -layout xviexport -o Data/LS22-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o Data/LS22-coupe.xvi
 
@@ -133,5 +145,7 @@ endlayout
   
 export map -o Outputs/LS22-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS22-coupe.pdf
+export map -o Outputs/LS22-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/LS22-coupe-Continuations.pdf
 export model -o Outputs/LS22.lox
 export map -proj plan -fmt kml -o Outputs/LS22.kml -layout my_layout

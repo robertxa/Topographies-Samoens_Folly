@@ -126,9 +126,21 @@ layout my_layout-coupe
 	endcode  
 
 endlayout
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
-export map -fmt xvi -layout xviexport -o Data/LP35-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/LP35-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/LP35-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/LP35-coupe.xvi
 
 # Select maps
 	select LP35-plan-tot
@@ -136,6 +148,9 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/LP35-coupe.xv
 	  
 export map -o Outputs/LP35-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LP35-coupe.pdf
+export map -o Outputs/LP35-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/LP35-coupe-Continuations.pdf
+
 export model -o Outputs/LP35.lox
   
 # Export ESRI files

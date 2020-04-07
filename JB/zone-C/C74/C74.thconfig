@@ -35,7 +35,6 @@ layout my_layout
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
-	#copy layoutcontinuation	# Pour afficher le label des continuations
 	
   doc-title "C74"
   doc-author "Xavier Robert"
@@ -99,7 +98,6 @@ layout my_layout-coupe
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
-	copy layoutcontinuation	# Pour afficher le label des continuations
 	
 	doc-title "C74 coupe"
 	base-scale 1 1000
@@ -154,6 +152,15 @@ layout my_layout-coupe
 
 endlayout
 
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
   
  #export map -fmt xvi -layout xviexport -o th2/C74-plan2017.xvi
  #export map -projection extended -fmt xvi -layout xviexport -o th2/C74-coupe2017.xvi 
@@ -172,9 +179,9 @@ endlayout
 	select C74-coupe-tot
 	 
  export map -o Outputs/2D/C74-planTH.pdf -layout my_layout
- #export map -o Outputs/2D/C74-planTH-Continuations.pdf -layout my_layout
- #export map -projection extended -layout my_layout-coupe -o Outputs/2D/C74-coupe.pdf
- export map -projection extended -layout my_layout-coupe -o Outputs/2D/C74-coupe-Continuations.pdf
+ export map -o Outputs/2D/C74-planTH-Continuations.pdf -layout my_layout-Continuations
+ export map -projection extended -layout my_layout-coupe -o Outputs/2D/C74-coupe.pdf
+ export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/2D/C74-coupe-Continuations.pdf
  
  export model -o Outputs/3D/C74.lox
 

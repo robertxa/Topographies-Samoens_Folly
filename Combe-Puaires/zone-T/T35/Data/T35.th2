@@ -61,11 +61,11 @@ point -9.5 110.0 air-draught -orientation 272.6 -subtype summer
 
 point 18.5 111.5 entrance -orientation 88.0
 
-point 254.5 163.5 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA "Courant d'air" -text -text "Boyau étroit à désobstruer ; courant d'air"
+point 254.5 163.5 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau étroit à désobstruer ; courant d'air"
 
-point 218.25 66.0 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text -text "Puits remontant"
+point 218.25 66.0 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 212.25 54.75 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text -text "Puits remontant"
+point 212.25 54.75 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
 line pit
   196.5 59.75
@@ -252,7 +252,7 @@ line wall
   smooth off
 endline
 
-point 202.0 111.25 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text -text "Cheminée à escalader"
+point 202.0 111.25 continuation -attr Code E -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Cheminée à escalader"
 
 point 68.5 112.25 snow
 
@@ -266,7 +266,7 @@ point 127.5 110.0 snow
 
 point 122.0 105.25 snow
 
-point 107.25 122.25 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA " " -text -text "Diaclase remontante étroite"
+point 107.25 122.25 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Diaclase remontante étroite"
 
 line wall
   192.25 113.0

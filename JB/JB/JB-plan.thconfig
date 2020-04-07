@@ -66,7 +66,6 @@ layout my_layout
 	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
 	copy headerl 			# Pour modifier le header/cartouche
 	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
-	#copy layoutcontinuation	# Pour afficher le label des continuations
 
 	cs UTM32
   
@@ -215,6 +214,11 @@ layout my_layout
 endlayout
 # Fin de la definition du Layout "normal"
 
+layout my_layout-continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
 
 # 3-EXPORT
 # Voici les lignes pour exporter le cheminement au format xvi
@@ -238,8 +242,8 @@ endlayout
 #  select JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select JB-plan-tot
- export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000.pdf -layout my_layout
- #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000_Continuations.pdf -layout my_layout
+export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000.pdf -layout my_layout
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000_Continuations.pdf -layout my_layout-continuations
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI

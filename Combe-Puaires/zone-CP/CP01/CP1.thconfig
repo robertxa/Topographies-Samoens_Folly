@@ -44,6 +44,7 @@ layout my_layout
 	copy drawingconfig
 	copy langue-fr
 	copy headerl
+	copy layoutcontinuation	# Pour afficher le label des continuations
 	
 	# Titre  
 	doc-title "CP1"
@@ -171,6 +172,7 @@ layout my_layout
   
 	# add extended-elev on the same pdf
 	map-image -10 100 sw Outputs/CP1-coupe2.pdf
+	#map-image -10 100 sw Outputs/CP1-coupe2-Continuations.pdf
 
   
 endlayout
@@ -180,7 +182,8 @@ layout my_layout-coupe
 	#Coords_Header_CPCPa
 	copy drawingconfig
 	copy langue-fr
-	#copy header_coupe  
+	#copy header_coupe
+	#copy layoutcontinuation	# Pour afficher le label des continuations  
 	
 	# Titre  
 	doc-title "CP1"
@@ -315,7 +318,9 @@ endlayout
 	select CP1-coupe-tot
 	 
 export map -projection extended -layout my_layout-coupe -o Outputs/CP1-coupe2.pdf 
+#export map -projection extended -layout my_layout-coupe -o Outputs/CP1-coupe2-Continuations.pdf 
 export map -o Outputs/CP1-plan2.pdf -layout my_layout
+#export map -o Outputs/CP1-plan2-Continuations.pdf -layout my_layout
  
 #export model -o Outputs/CP1.lox
   

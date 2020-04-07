@@ -230,6 +230,18 @@ layout my_layout-coupe
 	endcode  
 
 endlayout
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
  # 3-EXPORTS   
  #export map -fmt xvi -layout xviexport -o Data/BA2-map.xvi
@@ -239,6 +251,7 @@ endlayout
 	select BA2-plan-tot
 	  
  export map -o Outputs/BA2-plan.pdf -layout my_layout
+ export map -o Outputs/BA2-plan-Continuations.pdf -layout my_layout-Continuations
 # export map -projection extended -layout my_layout-coupe -o Outputs/BA2-coupe.pdf
 # export model -o Outputs/BA2.lox
   

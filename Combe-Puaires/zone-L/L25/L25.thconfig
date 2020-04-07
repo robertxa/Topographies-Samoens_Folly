@@ -126,9 +126,22 @@ layout my_layout-coupe
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
 
-endlayout  
-export map -fmt xvi -layout xviexport -o data-th2/L25-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o data-th2/L25-coupe.xvi
+endlayout 
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+ 
+#export map -fmt xvi -layout xviexport -o data-th2/L25-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o data-th2/L25-coupe.xvi
 
 # Select maps
 	select L25-plan-tot
@@ -136,6 +149,9 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/L25-coupe
 	  
 export map -o Outputs/L25-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/L25-coupe.pdf
+export map -o Outputs/L25-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/L25-coupe-Continuations.pdf
+
 export model -o Outputs/L25.lox
   
 # Export des fichiers ESRI

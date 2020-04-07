@@ -127,9 +127,21 @@ layout my_layout-coupe
 	endcode  
 
 endlayout
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
-export map -fmt xvi -layout xviexport -o data-th2/T25a-b-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o data-th2/T25a-b-coupe.xvi
+#export map -fmt xvi -layout xviexport -o data-th2/T25a-b-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o data-th2/T25a-b-coupe.xvi
 
 # Select maps
 	select T25-plan-tot
@@ -137,6 +149,10 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/T25a-b-co
 	  
 export map -o Outputs/T25a-b-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/T25a-b-coupe.pdf
+
+export map -o Outputs/T25a-b-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/T25a-b-coupe-Continuations.pdf
+
 export model -o Outputs/T25a-b.lox
   
 # Export des fichiers ESRI

@@ -76,6 +76,7 @@ layout my_layout
    
 	## add extended-elev on the same pdf
 	#map-image 200 130 n Outputs/BA09-coupe.pdf
+	#map-image 200 130 n Outputs/BA09-coupe-Continuations.pdf
 
 endlayout
  
@@ -130,6 +131,17 @@ layout my_layout-coupe
 endlayout
 
 
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+
 #export map -fmt xvi -layout xviexport -o Data/BA09-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o Data/BA09-coupe.xvi
 
@@ -139,5 +151,8 @@ endlayout
  
 export map -projection extended -layout my_layout-coupe -o Outputs/BA09-coupe.pdf
 export map -o Outputs/BA09-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/BA09-coupe-Continuations.pdf
+export map -o Outputs/BA09-plan-Continuations.pdf -layout my_layout-Continuations
+
 export model -o Outputs/BA09.lox
 export map -proj plan -fmt kml -o Outputs/BA09.kml -layout my_layout

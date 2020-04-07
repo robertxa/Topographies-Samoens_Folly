@@ -124,9 +124,21 @@ layout my_layout-coupe
 	endcode  
 
 endlayout
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
-export map -fmt xvi -layout xviexport -o data-th2/LS30-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o data-th2/LS30-coupe.xvi
+#export map -fmt xvi -layout xviexport -o data-th2/LS30-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o data-th2/LS30-coupe.xvi
  
 # Select maps
 	select LS30-plan-tot
@@ -134,6 +146,9 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/LS30-coup
 	  
 export map -o Outputs/LS30-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS30-coupe.pdf
+export map -o Outputs/LS30-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/LS30-coupe-Continuations.pdf
+
 export model -o Outputs/LS30.lox
   
 # Export des fichiers ESRI

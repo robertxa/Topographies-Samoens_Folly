@@ -215,10 +215,22 @@ layout my_layout-coupe
 	endcode  
 
 endlayout
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o data-th2/CP24-map2018.xvi
-export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP24-coupe2018.xvi
+#export map -fmt xvi -layout xviexport -o data-th2/CP24-map2018.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP24-coupe2018.xvi
 
 # Select maps
 	select CP24-plan-tot
@@ -226,6 +238,9 @@ export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP24-coup
 	  
 export map -o Outputs/CP24-plan2018.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP24-coupe2018.pdf
+export map -o Outputs/CP24-plan2018-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP24-coupe2018-Continuations.pdf
+
 export model -o Outputs/CP24.lox
   
 # Export des fichiers ESRI

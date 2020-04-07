@@ -31,7 +31,6 @@ layout my_layout
 	copy drawingconfig
 	copy headerl  
 	copy langue-fr
-	copy layoutcontinuation	# Pour afficher le label des continuations
 	
 	doc-title "LP9-CP39"
 	doc-author "Xavier Robert"
@@ -86,7 +85,6 @@ layout my_layout-coupe
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
-	copy layoutcontinuation	# Pour afficher le label des continuations
 	
 	# Titre  
 	doc-title "LP9 - CP39"
@@ -208,6 +206,18 @@ layout my_layout-coupe
 	map-image 45 30	nw	../../../Logos/vulcain2par2.jpg  
 	
 endlayout 
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
 #export map -fmt xvi -layout xviexport -o data-th2/LP9-CP39-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP9-CP39-coupe.xvi
@@ -220,10 +230,10 @@ endlayout
 	select LP9-plan-tot		# Toute le plan du LP9
 	select LP9-coupe-tot	# Toute la coupe du LP9
   
-#export map -o Outputs/LP9-CP39-plan.pdf -layout my_layout
-export map -o Outputs/LP9-CP39-plan-Continuations.pdf -layout my_layout
-#export map -projection extended -layout my_layout-coupe -o Outputs/LP9-CP39-coupe.pdf
-export map -projection extended -layout my_layout-coupe -o Outputs/LP9-CP39-coupe-Continuations.pdf
+export map -o Outputs/LP9-CP39-plan.pdf -layout my_layout
+export map -o Outputs/LP9-CP39-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe -o Outputs/LP9-CP39-coupe.pdf
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/LP9-CP39-coupe-Continuations.pdf
  
 # Export du fichier 3d pour Loch
 export model -o Outputs/LP9-2016.lox

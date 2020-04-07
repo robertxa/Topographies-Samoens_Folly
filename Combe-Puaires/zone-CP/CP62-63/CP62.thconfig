@@ -169,7 +169,7 @@ layout my_layout
  endlayout
   
   
-layout my_layoutcoupe
+layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy Coords_Header_CPCPl
 	copy drawingconfig
@@ -283,6 +283,18 @@ layout my_layoutcoupe
 	endcode  
 
 endlayout
+
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
   
 # 3-EXPORTS   
 #export map -fmt xvi -layout xviexport -o data-th2/CP62-map.xvi
@@ -299,7 +311,10 @@ endlayout
 	select CP62-coupe-tot
 	  
 export map -o Outputs/CP62-plan.pdf -layout my_layout
-export map -projection extended -layout my_layoutcoupe -o Outputs/CP62-coupe.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/CP62-coupe.pdf
+export map -o Outputs/CP62-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP62-coupe-Continuations.pdf
+
 export model -o Outputs/CP62.lox
   
 # Export des fichiers ESRI

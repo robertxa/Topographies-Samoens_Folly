@@ -45,7 +45,6 @@ layout my_layout-coupe
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
-	#copy layoutcontinuation	# Pour afficher le label des continuations
 	
 	doc-title "Combe aux Puaires coupe"
 	base-scale 1 1000
@@ -101,6 +100,10 @@ layout my_layout-coupe
 	
 endlayout
 
+layout my_layout-coupe-continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
   
 # 3-EXPORTS   
 #export map -projection extended -fmt xvi -layout xviexport -o data-th2/ReseauCP-coupe2020.xvi
@@ -111,7 +114,7 @@ endlayout
 	#select MC-Billy-tot
 	
 export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020.pdf
-#export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020-Continuations.pdf
+#export map -projection extended -layout my_layout-coupe-continuations -o Outputs/2D/ReseauCP-coupe2020-Continuations.pdf
  
 # Export du fichier 3d pour Loch
 export model -o Outputs/3D/reseauCP-2020.lox

@@ -72,8 +72,7 @@ layout my_layout
 	endcode  
  
 endlayout
- 
- 
+  
  
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
@@ -125,6 +124,18 @@ layout my_layout-coupe
  
 endlayout
 
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+
 #export map -fmt xvi -layout xviexport -o Data/BA06-map.xvi
 #export map -projection extended -fmt xvi -layout xviexport -o Data/BA06-coupe.xvi
 
@@ -134,5 +145,8 @@ endlayout
 	  
 export map -o Outputs/BA06-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/BA06-coupe.pdf
+export map -o Outputs/BA06-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/BA06-coupe-Continuations.pdf
+
 export model -o Outputs/BA06.lox
 export map -proj plan -fmt kml -o Outputs/BA06.kml -layout my_layout

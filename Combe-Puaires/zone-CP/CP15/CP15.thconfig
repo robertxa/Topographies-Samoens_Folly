@@ -219,6 +219,16 @@ layout my_layout-coupe
 	endcode  
 
 endlayout
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
   
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o data-th2/CP15-map.xvi

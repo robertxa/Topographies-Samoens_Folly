@@ -123,8 +123,18 @@ layout my_layout-coupe
   
 endlayout
 
-export map -fmt xvi -layout xviexport -o Data/L39-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/L39-coupe.xvi
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+#export map -fmt xvi -layout xviexport -o Data/L39-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/L39-coupe.xvi
 
 # Select maps
 	select L39-plan-tot
@@ -132,5 +142,8 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/L39-coupe.xvi
 	  
 export map -o Outputs/L39-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/L39-coupe.pdf
+export map -o Outputs/L39-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/L39-coupe-Continuations.pdf
+
 export model -o Outputs/L39.lox
 export map -proj plan -fmt kml -o Outputs/L39.kml -layout my_layout

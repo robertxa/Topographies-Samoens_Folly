@@ -90,19 +90,19 @@ point 483.25 124.0 air-draught -orientation 88.5 -scale xl
 
 point 478.75 145.25 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA "Courant d'air" -text "Boyau à désobstruer ; c.a."
 
-point 365.5 179.25 continuation
+point 365.5 179.25 continuation -attr Code E -attr Cavite AV8 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 336.75 229.75 continuation
+point 336.75 229.75 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA " " -text "Arrivée d'eau étroite ?"
 
 point 367.25 261.25 continuation -attr Code D -attr Cavite AV8 -attr Reseau " " -attr CA "Courant d'air" -text "boyau à désobstruer ; c.a."
 
-point 194.25 400.5 continuation
+point 194.25 400.5 continuation -attr Code E -attr Cavite AV8 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 170.0 399.75 continuation
+point 170.0 399.75 continuation -attr Code E -attr Cavite AV8 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 147.25 403.25 continuation
+point 147.25 403.25 continuation -attr Code E -attr Cavite AV8 -attr Reseau " " -attr CA " " -text "Puits remontant"
 
-point 137.5 413.5 continuation
+point 137.5 413.5 continuation -attr Code E -attr Cavite AV8 -attr Reseau " " -attr CA " " -text "Lucarne à atteindre"
 
 point 148.75 303.75 water-flow -orientation 105.6
 

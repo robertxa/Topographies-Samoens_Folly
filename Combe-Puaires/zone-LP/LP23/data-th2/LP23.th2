@@ -154,7 +154,7 @@ line wall
   smooth off
 endline
 
-point 159.75 273.75 continuation -attr Cavite LP23 -attr Reseau " " -attr CA " " -attr Code Q -text "A revoir ?"
+point 159.75 273.75 continuation -attr Cavite LP23 -attr Reseau " " -attr CA " " -attr Code E -text "Puits remontant"
 
 line wall
   164.75 276.5
@@ -645,9 +645,9 @@ point 70.5 306.5 narrow-end -orientation 299.6
 
 point 45.25 319.5 narrow-end -orientation 299.6
 
-point 96.75 266.0 continuation -attr Cavite LP23 -attr Reseau " " -attr CA " " -attr Code Q -text "A Voir ?"
+point 96.75 266.0 continuation -attr Cavite LP23 -attr Reseau " " -attr CA " " -attr Code E -text "Puits remontant"
 
-point 109.0 268.75 continuation -attr Cavite LP23 -attr Reseau " " -attr CA " " -attr Code Q -text "A Voir ?"
+point 109.0 268.75 continuation -attr Cavite LP23 -attr Reseau " " -attr CA " " -attr Code E -text "Puits remontant"
 
 point 35.5 318.0 water-flow -orientation 129.2
 

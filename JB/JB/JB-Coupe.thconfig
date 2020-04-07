@@ -221,6 +221,10 @@ layout my_layout
  endlayout
 # Fin de la definition du Layout "normal"
 
+layout my_layout-continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
 
 
 # 3-EXPORT
@@ -228,4 +232,5 @@ layout my_layout
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select JB-coupe-tot
  export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2020-coupe.pdf
+ export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2020-coupe-continuations.pdf
  export continuation-list -o Outputs/Lists/Continuations-coupe2020.html
