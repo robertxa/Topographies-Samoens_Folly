@@ -1985,11 +1985,36 @@ endscrap
 
 scrap LP9-5 -projection plan -author 2009 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
+line pit
+  597.5 635.25
+  597.5 635.25 608.25 634.0 611.0 636.0
+endline
+
+line wall -subtype unsurveyed
+  600.5 636.75
+  600.5 636.75 603.25 634.5 604.25 632.5
+  605.25 630.5 606.0 627.0 606.0 627.0
+  smooth off
+  606.75 624.5
+endline
+
+line wall -subtype unsurveyed
+  609.75 625.0
+  608.75 627.75
+  608.75 627.75 609.75 629.75 609.5 631.25
+  609.25 632.75 608.75 638.0 608.75 638.0
+  smooth off
+endline
+
 line wall
   630.25 611.25
   630.25 611.25 624.75 608.5 622.75 611.25
-  620.75 614.0 614.5 625.25 608.75 624.75
-  603.0 624.25 598.75 621.25 593.25 619.5
+  620.75 614.0 615.5 625.5 609.75 625.0
+endline
+
+line wall
+  606.75 624.5
+  601.0 624.0 598.75 621.25 593.25 619.5
   587.75 617.75 578.5 617.0 575.25 619.25
   572.0 621.5 569.75 623.5 568.5 626.5
   567.25 629.5 563.25 641.75 561.25 644.0
@@ -2090,13 +2115,15 @@ point 677.75 371.5 continuation -attr Cavite LP9 -attr Reseau "LP9 - actif" -att
 
 point 662.75 402.25 continuation -attr Cavite LP9 -attr Reseau "LP9 - actif" -attr CA "Courant d'air" -attr Code D -text "Départ étroit ? Bouclage non topographié ?"
 
-point 634.5 598.75 continuation -attr Cavite LP9 -attr Reseau "LP9 - actif" -attr CA " " -attr Code A -text "Vers P100 perdu ? A revoir et topographierr"
+point 636.75 606.75 continuation -attr Cavite LP9 -attr Reseau "LP9 - actif" -attr CA " " -attr Code E -text "Escalades à continuer, arrêt sur rien, courant d'air ?"
+
+point 600.5 646.75 continuation -attr Cavite LP9 -attr Reseau "LP9 - actif" -attr CA " " -attr Code A -text "Vers P100 perdu ? A revoir et topographierr"
 
 point 536.0 624.75 continuation -attr Cavite LP9 -attr Reseau "LP9 - actif" -attr CA "Courant d'air" -attr Code D -text "Boyau à topographier et continuer la désobstruction" -explored 30m
 
 point 538.75 591.75 label -text "<center>30 m <br> non topographié"
 
-point 697.75 605.0 label -text "<center>vers P100 fossile<br> non topographié"
+point 629.5 673.25 label -text "<center>vers P100 fossile<br> non topographié"
 
 point 998.75 223.0 continuation -attr Cavite LP9 -attr Reseau "LP9" -attr CA "?" -attr Code D -text "Départ étroit ? Arrivée des puits d'Era ?"
 
@@ -2134,8 +2161,8 @@ line water-flow
 endline
 
 line arrow
-  634.5 605.5
-  651.5 604.0
+  606.0 638.25
+  618.25 656.25
 endline
 
 line arrow

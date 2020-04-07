@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 2568.9462 2017.7648
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -131.0 -131.0 2568.9462 2017.7648
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {2207.43 1 1.0} {1645.666 LP9} LP9-CP39-coupe.xvi 0 {}
 
 
@@ -715,7 +715,11 @@ endscrap
 
 scrap LP9-Sc3 -projection extended -author 2009 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2568.9462 -128.0 0.0 0.0 68.50243348 0.0 m]
 
-point 343.0 771.75 label -text "<center>vers P100 fossile<br>non topographié"
+point 259.0 368.0 continuation -attr Code Q -attr Cavite "LP9" -attr Reseau "LP9 - P100 perdu" -attr CA "-" -text "Puits à retrouver et fouiller le fond !"
+
+point 203.0 579.0 height -value [-100 m]
+
+point 253.25 802.5 label -text "<center>vers P100 fossile<br>non topographié"
 
 point 219.25 256.0 continuation -attr Cavite LP9 -attr Reseau "LP9 - Rivière" -attr CA " " -attr Code D -text " de la rivière, étroit, à forcer ?"
 
@@ -867,7 +871,29 @@ point 493.0 862.5 dig
 
 point 469.25 860.75 dig
 
-point 385.25 774.75 continuation -attr Cavite LP9 -attr Reseau "LP9 sommet P100" -attr CA "?" -attr Code A -text "Vers P100 fossile à retrouver et à retopographier"
+line wall -subtype unsurveyed
+  394.0 779.5
+  394.0 779.5 390.5 773.0 382.5 770.25
+  374.5 767.5 373.25 766.5 359.5 765.75
+  345.75 765.0 324.75 762.25 313.75 761.75
+  302.75 761.25 292.0 766.0 280.0 761.0
+  268.0 756.0 246.0 760.0 242.0 743.0
+  238.0 726.0 239.0 634.0 237.0 594.0
+  235.0 554.0 235.0 483.0 235.0 436.0
+  235.0 389.0 235.0 364.0 235.0 358.0
+  235.0 352.0 238.0 346.0 248.0 346.0
+  258.0 346.0 272.0 349.0 279.0 350.0
+  286.0 351.0 287.0 365.0 287.0 379.0
+  287.0 393.0 283.0 488.0 283.0 520.0
+  283.0 552.0 286.0 669.0 288.0 690.0
+  290.0 711.0 291.0 718.0 301.0 728.0
+  311.0 738.0 317.0 753.0 327.0 753.0
+  337.0 753.0 342.0 756.0 358.0 759.0
+  374.0 762.0 394.0 769.0 394.0 769.0
+  smooth off
+endline
+
+point 371.75 791.75 continuation -attr Cavite LP9 -attr Reseau "LP9 sommet P100" -attr CA "?" -attr Code A -text "Vers P100 fossile à retrouver et à retopographier"
 
 point 406.75 850.25 continuation -attr Cavite LP9 -attr Reseau "LP9 sommet P100" -attr CA "?" -attr Code E -text "Escalades à continuer et à topographier"
 

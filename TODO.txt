@@ -1,20 +1,14 @@
 A FAIRE sur la base de données topographiques de Samoëns
 
-- Révisions des points d'interrogation (rajout des commentaires et des Codes)
-	° JB plan, zones B,C,CH,D,F,V,A21,AV --> OK
-	° ReseauCP plan et Coupe, zones CP,L,LP,LS,T,DR,BA --> OK
-	° A FAIRE : 
-		-- JB Coupe (zonation pour la tableau)
+- Révisions des points d'interrogation (rajout des commentaires et des Codes) pour le JB Coupe (zonation pour la tableau)
 		
 - Erreurs dessins à corriger
 	* Coupe développée du réseau de la Pierre Qui Tombe (JB) : couper en 2 scraps (OK) et rajouter l'option dans le scrap problématique : -flip horizontal (bug) --> Continuer à le retravailler. Le redessiner complètement ?
 	* Coordonnées du C52 et L17 à re-trouver
 	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
-	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on" des layouts, et les logs
+	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on / debug scrap-names" des layouts, et les logs
 
-- JB :
-	* Tenter de simplifier la structure de la base de dessins (i.e. utiliser les dessins directement dans les scraps-alone ?)
-	* Revoir les maps du Lavoir/FileOu pour la topo globale ?
-	* ...
+- Tenter de simplifier la structure de la base de dessins (i.e. utiliser les dessins directement dans les scraps-alone ?)
+
 		
