@@ -7,12 +7,22 @@ encoding  utf-8
 
 scrap Goure2019-SC1 -projection extended -author 2019 "Xavier Robert" -author 2019 "Frédéric Delègue" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -4811 3440 -4811 0.0 0.0 90.6272 0.0 m]
 
+line label -text "Réseau GoureToiDeLa"
+  385.0 696.0
+  385.0 696.0 643.28 820.66 700.0 837.0
+  759.0 854.0 980.0 906.0 980.0 906.0
+  smooth off
+endline
+
+point 691.0 654.75 label -text "R5"
+
 line wall -outline in
   649.5 646.5
   649.5 646.5 683.0 642.5 683.0 640.0
   683.0 637.5 679.5 636.5 673.0 637.5
   666.5 638.5 649.5 643.5 642.0 644.5
   634.5 645.5 609.0 648.5 616.5 649.5
+  smooth off
 endline
 
 line wall -outline in -subtype debris
@@ -34,6 +44,7 @@ line wall
   633.5 617.0
   633.5 617.0 615.5 617.5 605.0 618.0
   594.5 618.5 561.5 623.5 576.5 630.5
+  smooth off
 endline
 
 point 726.5 625.0 air-draught -orientation 317.5 -subtype winter
@@ -49,15 +60,15 @@ point 708.5 632.25 breakdown-choke -orientation 277.1
 
 point 534.25 701.0 label -text "<center>vire des<br>Marteaux"
 
-line u:rope
+line rope
   563.5 640.5
-  563.5 640.5 567.25 638.5 568.75 641.25
-  568.87 641.47 573.25 640.25 573.5 643.75
-  573.54 644.25 578.0 643.75 578.5 648.0
-  578.59 648.79 583.75 645.75 583.75 651.0
-  583.75 651.35 588.25 649.75 589.0 655.25
-  589.14 656.27 593.75 650.75 594.75 657.25
-  594.91 658.3 600.0 653.25 602.0 657.25
+  568.75 641.25
+  573.5 643.75
+  578.5 648.0
+  583.75 651.0
+  589.0 655.25
+  594.75 657.25
+  602.0 657.25
 endline
 
 line wall -subtype invisible
@@ -87,7 +98,7 @@ line wall
   smooth off
 endline
 
-line u:rope
+line rope
   568.0 621.0
   570.0 598.5
 endline

@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 3815.0 2823.5
+##XTHERION## xth_me_area_zoom_to 200
 
 
 
@@ -87,7 +87,12 @@ point 3403.0 2644.75 clay
 
 point 3399.75 2640.5 clay
 
-point 3389.0 2702.25 label -text "Puits de la Gourance"
+line arrow
+  3471.0 2579.5
+  3412.5 2633.0
+endline
+
+point 3478.5 2572.75 label -text "<center>Puits de<br>la Gourance"
 
 point 3389.0 2672.75 blocks
 

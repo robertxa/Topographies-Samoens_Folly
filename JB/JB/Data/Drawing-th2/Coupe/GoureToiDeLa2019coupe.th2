@@ -7,6 +7,15 @@ encoding  utf-8
 
 scrap Goure2019-SC1 -projection extended -author 2019 "Xavier Robert" -author 2019 "Frédéric Delègue" -copyright 2019 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -4811 3440 -4811 0.0 0.0 90.6272 0.0 m]
 
+line label -text "Réseau GoureToiDeLa"
+  385.0 696.0
+  385.0 696.0 643.28 820.66 700.0 837.0
+  759.0 854.0 980.0 906.0 980.0 906.0
+  smooth off
+endline
+
+point 691.0 654.75 label -text "R5"
+
 line wall -outline in
   649.5 646.5
   649.5 646.5 683.0 642.5 683.0 640.0

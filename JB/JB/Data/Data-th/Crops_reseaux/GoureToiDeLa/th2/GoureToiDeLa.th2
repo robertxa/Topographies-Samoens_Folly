@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -4289.0 2653.0 140.0
+##XTHERION## xth_me_area_adjust -131.0 -4289.0 1914.0 140.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} PlafondGouranceSquelette-1.png 0 {}
 
@@ -168,6 +168,13 @@ line wall -subtype presumed
   1195.5 -2903.5
   1195.5 -2903.5 1203.5 -2914.5 1204.0 -2919.5
   1204.5 -2924.5 1210.5 -2940.5 1210.5 -2940.5
+  smooth off
+endline
+
+line label -text "Réseau GoureToiDeLa"
+  696.0 -3380.0
+  696.0 -3380.0 752.0 -3000.0 868.0 -2876.0
+  984.0 -2752.0 1428.0 -2552.0 1428.0 -2552.0
   smooth off
 endline
 
@@ -1413,6 +1420,8 @@ point 1316.0 -3667.0 rope
 
 point 1111.0 -3465.0 rope
 
+point 1379.0 -3331.0 label -text "<center>puits de<br>la Gourance"
+
 line wall
   1231.0 -3763.0
   1231.0 -3763.0 1235.0 -3733.5 1238.5 -3728.5
@@ -1436,3 +1445,5 @@ point 1259.0 -3658.5 station -name 2014-SL-33@GoureToiDeLa.GoureToi
 point 1220.5 -3762.0 station -name 2014-SL-32@GoureToiDeLa.GoureToi
 
 endscrap
+
+
