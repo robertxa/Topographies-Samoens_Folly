@@ -252,3 +252,4 @@ export map -proj plan -fmt kml -o Outputs/LP9-CP39.kml -layout my_layout
 
 # Export Listes
 export continuation-list -o Outputs/Continuations-LP9-CP39-2020.html
+export continuation-list -o Outputs/Continuations-LP9-CP39-2020.kml
