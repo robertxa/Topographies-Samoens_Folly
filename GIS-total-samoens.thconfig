@@ -218,18 +218,16 @@ endlayout
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/2D/Folly-tot-Xav-2019-plan.pdf -layout my_layout
-# export map -proj plan -fmt pdf -o Outputs/2D/Folly-JB-Xav-2017-plan.pdf -layout my_layout
-# export map -proj plan -fmt pdf -o Outputs/2D/Folly-CP-Xav-2017-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/2D/Folly-tot-Xav-2020-plan.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
-export model -o Outputs/Folly-tot-Xav-TEST.lox
+#export model -o Outputs/Folly-tot-Xav-TEST.lox
 
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/Folly-tot-2019 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2020 -layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Folly-tot-2014.kml -layout my_layout
 
 # Export de la database sql
-#export database -o Outputs/database_Folly-2015.sql
+#export database -o Outputs/database_Folly-2020.sql
