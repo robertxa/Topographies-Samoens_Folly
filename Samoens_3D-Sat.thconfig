@@ -65,12 +65,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
 
- cs UTM32
-  
-  #add the DEM
-  surface-opacity 50
-  surface bottom
-  
+ 	cs UTM32N
   
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Par defaut, therion pense que c'est
@@ -93,14 +88,18 @@ layout my_layout
   # l'impression! 
   scale 1 5000
 
+  # echelle graphique 100 m ampleur
+  scale-bar 1000 m
+
   # Voici une ligne pour specifier qu'il faut imprimer une grille
   # au dessous de la topo
   grid bottom
 
   # Une ligne pour specifier que la grille est 1000x1000x1000 metres
   # (Trois dimensions, oui, ça sert pour la coupe aussi)
-  grid-size 250 250 250 m  
-#  grid off
+  grid-size 1000 1000 250 m  
+  # Affiche les coordonnées de la grille <off/all/border>
+  grid-coords all
   
   # une couleur de fond, 85% blanc = 15% noir
   #color map-bg 90
@@ -121,6 +120,12 @@ layout my_layout
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
   
+  # Print de la surface <top/bottom/off>
+   surface bottom
+   # Opacité de la surface [0-100]
+   # Par défault 70
+   surface-opacity 50
+   
   # Pour faire une rotation
   #rotate 2.25
   
@@ -140,10 +145,10 @@ layout my_layout
   # cordonnees.
   # Alors nous pouvons specifier que le sud-ouest de la manchette
   # soit place en bas, a gauche, ou une autre combination
-  map-header 0 100 nw
+  map-header 0 105 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Nous voulons une legende pour expliquer les symboles. "on" imprimera
   # seulement la legende des symboles dessines sur la topo, si l'on veut
@@ -154,10 +159,7 @@ layout my_layout
   # Par defaut, la legende est de 14 cm de largeur
   #legend-width 21 cm
   legend-width 40 cm
-  legend-columns 4
-
-  # echelle graphique 100 m ampleur
-  scale-bar 1000 m
+  legend-columns 5
 
   # Un commentaire a ajouter au titule, on pourrait indiquer ici
   # la mairie ou est place la cavite dont le nom est probablement
@@ -194,8 +196,15 @@ layout my_layout
   \fi
   \newtoks\club \club={Groupe Spéléologique Vulcain}
   \newtoks\synth \synth={Xavier Robert (2020)}
+  \newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Grander et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
   endcode   
 
+	# Add logos to the map
+	# Ajout des logos du club
+	#25 35 se = header
+	map-image 80 0	se	Logos/vulcain.jpg
+	map-image 100 0	se	Logos/vulcain2.jpg
+	
 endlayout
 
 # 3-EXPORT
