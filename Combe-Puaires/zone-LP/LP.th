@@ -3,32 +3,17 @@ encoding  utf-8
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
- 
-survey zone_LP -title "Zone LP"
-
-	input trousLP.th
-#	input trousLP.th2
 
 # Pour importer les différentes données de différents fichiers topos : 
-	input LP2/data-th/LP2.th
-	input LP2/data-th2/LP2.th2
+	input LP2/LP2-tot.th
+	input LP3/LP3-tot.th
+	input LP9/LP9-tot.th
+	input LP19/LP19-tot.th
+	input LP23/LP23-tot.th
+	input LP34/LP34-tot.th
+	input LP35/LP35-tot.th
+
+input LP-tot.th
    
-	input LP3/data-th/LP3.th
-	input LP3/data-th2/LP3.th2
-   
-	input LP9/data-th/LP9-CP39.th
-	input LP9/data-th2/LP9-CP39.th2
-   
-	input LP19/data-th/LP19.th
-	input LP19/data-th2/LP19.th2
-   
-	input LP23/data-th/LP23.th
-	input LP23/data-th2/LP23.th2
-   
-	input LP34/Data/LP34.th
-	input LP34/Data/LP34.th2
-   
-	input LP35/Data/LP35.th
-	input LP35/Data/LP35.th2
+input LP-maps.th
   
- endsurvey

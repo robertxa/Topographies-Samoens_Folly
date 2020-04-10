@@ -4,20 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_BA -title "BA"
-# Pour importer les différentes données de différents fichiers topos : 
-   input trousBA.th
-   
-   input BA2/Data/BA2.th
-   input BA2/Data/BA2.th2
-   
-   input BA4/Data/BA4.th
-   input BA4/Data/BA4.th2
-   
-   input BA06/Data/BA06.th
-   input BA06/Data/BA06.th2
-   
-   input BA09/Data/BA09.th
-   input BA09/Data/BA09.th2
 
- endsurvey
+# Pour importer les différentes données de différents fichiers topos : 
+   
+   input BA2/BA2-tot.th
+   input BA4/BA4-tot.th
+   input BA06/BA6-tot.th
+   input BA09/BA9-tot.th
+   
+   input BA-tot.th
+   
+   input BA-maps.th

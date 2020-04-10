@@ -1,65 +1,65 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 5049.25 3868.15
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {1508.08 1 1.0} {971.69 A01} trousAmap.xvi 0 {}
+##XTHERION## xth_me_area_adjust 439.0 385.0 7344.73 5036.6900000000005
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {3727.84 1 1.0} {2879.09 V21@A21} trousAmap.xvi 0 {}
 
 
 
 scrap A21-22-24 -projection plan -scale [-128.0 -128.0 5049.25 -128.0 0.0 0.0 131.50215 0.0 m]
 
-point 4506.75 3292.5 label -text "V1" -scale xl
+point 4506.75 3292.5 label -text "<bf>V1" -scale xl
 
-point 3666.75 1831.25 label -text "V8" -scale xl
+point 3666.75 1831.25 label -text "<bf>V8" -scale xl
 
-point 3593.25 1716.75 label -text "V9a" -scale xl
+point 3593.25 1716.75 label -text "<bf>V9a" -scale xl
 
-point 3540.0 1672.75 label -text "V9b" -scale xl
+point 3540.0 1672.75 label -text "<bf>V9b" -scale xl
 
-point 3634.75 1670.0 label -text "V9c" -scale xl
+point 3634.75 1670.0 label -text "<bf>V9c" -scale xl
 
-point 3202.0 1682.75 label -text "A19" -scale xl
+point 3202.0 1682.75 label -text "<bf>A19" -scale xl
 
-point 3366.0 1652.75 label -text "A18" -scale xl
+point 3366.0 1652.75 label -text "<bf>A18" -scale xl
 
-point 3305.5 1648.75 label -text "A17" -scale xl
+point 3305.5 1648.75 label -text "<bf>A17" -scale xl
 
-point 2632.0 1284.5 label -text "A6" -scale xl
+point 2632.0 1284.5 label -text "<bf>A6" -scale xl
 
-point 3220.5 1631.0 label -text "A16" -scale xl
+point 3220.5 1631.0 label -text "<bf>A16" -scale xl
 
-point 3190.25 1613.5 label -text "A15" -scale xl
+point 3190.25 1613.5 label -text "<bf>A15" -scale xl
 
-point 3183.75 1580.5 label -text "A14" -scale xl
+point 3183.75 1580.5 label -text "<bf>A14" -scale xl
 
-point 3227.0 1563.0 label -text "A13" -scale xl
+point 3227.0 1563.0 label -text "<bf>A13" -scale xl
 
-point 3140.25 1565.25 label -text "A12" -scale xl
+point 3140.25 1565.25 label -text "<bf>A12" -scale xl
 
-point 3119.5 1483.5 label -text "A10" -scale xl
+point 3119.5 1483.5 label -text "<bf>A10" -scale xl
 
-point 3047.25 1518.0 label -text "A9" -scale xl
+point 3047.25 1518.0 label -text "<bf>A9" -scale xl
 
-point 2956.0 1257.25 label -text "A8" -scale xl
+point 2956.0 1257.25 label -text "<bf>A8" -scale xl
 
-point 2919.5 1372.0 label -text "A7" -scale xl
+point 2919.5 1372.0 label -text "<bf>A7" -scale xl
 
-point 2701.0 1367.0 label -text "A23" -scale xl
+point 2701.0 1367.0 label -text "A<bf>23" -scale xl
 
-point 1772.0 1213.25 label -text "A20" -scale xl
+point 1772.0 1213.25 label -text "A<bf>20" -scale xl
 
 point 1770.0 1198.25 entrance -orientation 198.0
 
-point 1505.5 996.75 label -text "A1" -scale xl
+point 1505.5 996.75 label -text "<bf>A1" -scale xl
 
-point 1591.75 1049.25 label -text "A2" -scale xl
+point 1591.75 1049.25 label -text "<bf>A2" -scale xl
 
-point 2186.5 1135.0 label -text "A3" -scale xl
+point 2186.5 1135.0 label -text "<bf>A3" -scale xl
 
-point 2426.75 1305.75 label -text "A4" -scale xl
+point 2426.75 1305.75 label -text "<bf>A4" -scale xl
 
-point 2160.25 1906.0 label -text "A5" -scale xl
+point 2160.25 1906.0 label -text "<bf>A5" -scale xl
 
-point 569.5 540.0 label -text "V0" -scale xl
+point 569.5 540.0 label -text "<bf>V0" -scale xl
 
 point 571.25 524.0 entrance -orientation 179.3
 
@@ -162,6 +162,36 @@ point 1590.86 1027.74 station -name A02@trous-A
 point 1767.96 1190.64 station -name A20@trous-A
 
 point 571.68 516.29 station -name V0@trous-A
+
+endscrap
+
+
+
+scrap SP-A-2020 -projection plan -scale [-128.0 -128.0 5049.25 -128.0 0.0 0.0 131.50215 0.0 m]
+
+point 2786.5 2628.5 label -text "<bf>A26" -scale xl
+
+point 3289.0 2673.5 label -text "<bf>A28" -scale xl
+
+point 3181.0 2752.5 label -text "<bf>A27" -scale xl
+
+point 2181.5 2213.0 label -text "<bf>A25" -scale xl
+
+point 2182.5 2187.5 entrance -orientation 179.0
+
+point 2785.5 2599.5 entrance -orientation 179.0
+
+point 3183.5 2722.0 entrance -orientation 177.3
+
+point 3290.0 2647.5 entrance -orientation 182.5
+
+point 3289.45 2631.73 station -name A28@trous-A
+
+point 3184.9299999999994 2704.7200000000003 station -name A27@trous-A
+
+point 2785.5999999999995 2580.16 station -name A26@trous-A
+
+point 2183.3099999999995 2167.99 station -name A25@trous-A
 
 endscrap
 

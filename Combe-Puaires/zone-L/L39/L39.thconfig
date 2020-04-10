@@ -4,12 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
-source Data/L39.th
-source Data/L39.th2
-source Data/L39-coupe.th2
-
-# Add maps definitions
-source L39-maps.th
+source L39-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th

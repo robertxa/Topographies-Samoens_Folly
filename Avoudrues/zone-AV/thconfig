@@ -8,9 +8,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
  # 1-SOURCES 
-
- source trousAV.th
- source trousAV.th2
+source AV.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -92,13 +90,6 @@ encoding  utf-8
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    endcode  
-  
-
-  
- # Pour dessiner un cadre autour de la topo   
- code tex-map
-   \framethickness=0.5mm
- endcode
   
  ######################### 
   

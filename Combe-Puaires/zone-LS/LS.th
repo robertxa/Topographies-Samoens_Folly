@@ -4,14 +4,10 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_LS -title "Zone LS"
-	input trousLS.th
-#	input trousLS.th2
-	# Pour importer les différentes données de différents fichiers topos :
-	input LS22/Data/LS22.th
-	input LS22/Data/LS22.th2
-
-	input LS30/data-th/LS30.th
-	input LS30/data-th2/LS30.th2
+# Pour importer les différentes données de différents fichiers topos :
+input LS22/LS22-tot.th
+input LS30/LS30-tot.th
      
- endsurvey
+input LS-tot.th
+   
+input LS-maps.th

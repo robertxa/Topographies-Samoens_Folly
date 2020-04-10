@@ -4,12 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
-source Data/BA09.th
-source Data/BA09.th2
-source Data/BA09-coupe.th2
-
-# Add maps definitions
-source BA9-maps.th
+source BA9-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th

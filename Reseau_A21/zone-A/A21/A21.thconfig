@@ -13,12 +13,11 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2") 
-source Data/A21.th
-source Data/A21.th2
-source Data/A21-coupe.th2
 
 # Add maps definitions
-source A21-maps.th
+#source A21-maps.th
+
+source A21-tot.th
  
 # Add config file
 input ../../../config.thc 

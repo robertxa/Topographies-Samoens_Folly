@@ -8,9 +8,7 @@ encoding  utf-8
   
   
  # 1-SOURCES 
-
- source trousLP.th
- #source trousLP.th2
+ source LP.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -85,24 +83,16 @@ encoding  utf-8
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Trous B} 		
+ 		\cavename={Trous LP} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    endcode  
-  
-
-  
- # Pour dessiner un cadre autour de la topo   
- code tex-map
-   \framethickness=0.5mm
- endcode
-  
- ######################### 
   
  endlayout
     
   
  # 3-EXPORTS   
  export map -fmt xvi -layout xviexport -o trousLPmap.xvi
-   
+ 
+ select   MP-zoneLP
  export map -o trouLPplan.pdf -layout my_layout

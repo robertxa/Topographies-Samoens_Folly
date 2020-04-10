@@ -5,12 +5,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
     
-source data-th/LP19.th
-source data-th2/LP19.th2
-source data-th2/LP19-coupe.th2
-
-# Add maps definitions
-source LP19-maps.th
+source LP19-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -214,8 +209,8 @@ layout my_layout-coupe-Continuations
 endlayout
 
   
-#export map -fmt xvi -layout xviexport -o data-th2/LP19-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP19-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/LP19-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/LP19-coupe.xvi
 
 # Select maps
 	select LP19-plan-tot

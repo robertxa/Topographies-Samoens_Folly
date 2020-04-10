@@ -4,21 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_T -title "Zone T"
-  input trousT.th
-  #input trousT.th2
 
-  # Pour importer les différentes données de différents fichiers topos : 
-   input T9/data-th/T9.th
-   input T9/data-th2/T9.th2
-      
-   input T25a-b/data-th/T25a-b.th
-   input T25a-b/data-th2/T25.th2
+# Pour importer les différentes données de différents fichiers topos : 
+input T9/T9-tot.th
+input T25a-b/T25a-b-tot.th
+input T35/T35-tot.th
+input T59/T59-tot.th
+
    
-   input T35/Data/T35.th
-   input T35/Data/T35.th2
-   
-   input T59/Data/T59.th
-   input T59/Data/T59.th2     
-   
- endsurvey
+input T-tot.th
+
+input T-maps.th
+

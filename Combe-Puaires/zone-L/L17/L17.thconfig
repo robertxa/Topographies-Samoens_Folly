@@ -5,12 +5,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
-source data-th/L17.th
-source data-th2/L17.th2
-source data-th2/L17-coupe.th2
-
-# Add maps definitions
-source L17-maps.th
+source L17-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th

@@ -45,6 +45,9 @@ source Combe-Puaires/Combe-Puaires.th
 source Samoens-GIS/dem/IGN_JB_10m-IGN.th
 #source Samoens-GIS/dem/IGN_JB.th
 
+# Add maps
+source Maps.th
+
 # Add config file
 input config.thc 
  
@@ -202,14 +205,14 @@ layout my_layout
 
 	# Add logos to the map
 	# Ajout des logos du club
-	#25 35 se = header
-	map-image 80 0	se	Logos/vulcain.jpg
-	map-image 100 0	se	Logos/vulcain2.jpg
+	#map-image 80 0	se	Logos/vulcain.jpg
+	#map-image 100 0	se	Logos/vulcain2.jpg
 	
 endlayout
 
 # 3-EXPORT
 
+select MP-Folly-tot
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -projection plan -fmt pdf -o Outputs/2D/Folly-2020-plan-IGN.pdf -layout my_layout

@@ -5,12 +5,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
-source data-th/LP9-CP39.th
-source data-th2/LP9-CP39.th2
-source data-th2/LP9-CP39-coupe.th2
-
-# Add maps definitions
-source LP9-maps.th
+source LP9-tot.th
   
 # Add config file
 input ../../../config.thc 
@@ -219,8 +214,8 @@ layout my_layout-coupe-Continuations
 endlayout
 
   
-#export map -fmt xvi -layout xviexport -o data-th2/LP9-CP39-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/LP9-CP39-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/LP9-CP39-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/LP9-CP39-coupe.xvi
 
 # Select maps
 	#select CP39-plan		# CP39 en plan

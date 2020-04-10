@@ -4,22 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_L -title "Zone L"
-	input trousL.th
-#	input trousL.th2
 
 # Pour importer les différentes données de différents fichiers topos : 
-	input L11/data-th/L11.th
-	input L11/data-th2/L11.th2
-
-#	input L17/data-th/L17.th
-#	input L17/data-th2/L17.th2
-
-   input L25/data-th/L25.th
-	input L25/data-th2/L25.th2
-
-	input L39/Data/L39.th
-	input L39/Data/L39.th2 
-	input L39/Data/L39-coupe.th2 
+input L11/L11-tot.th
+#input L17/L17-tot.th
+input L25/L25-tot.th
+input L39/L39-tot.th
       
- endsurvey
+input L-tot.th
+  
+input L-maps.th
+

@@ -5,10 +5,8 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
- # 1-SOURCES 
-
- source trous-A.th
- source trous-A.th2
+ # 1-SOURCES  
+ source A.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -88,12 +86,6 @@ encoding  utf-8
    \fi
    endcode  
   
-
-  
- # Pour dessiner un cadre autour de la topo   
- code tex-map
-   \framethickness=0.5mm
- endcode
   
  ######################### 
   
@@ -101,6 +93,7 @@ encoding  utf-8
     
   
  # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o trousAmap.xvi
-   
+ export map -fmt xvi -layout xviexport -o trousAmap.xvi
+ 
+ select MP-zoneA  
  export map -o trouAplan.pdf -layout my_layout

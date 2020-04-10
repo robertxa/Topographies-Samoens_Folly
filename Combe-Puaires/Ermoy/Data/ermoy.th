@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey Ermoy -title "Grotte de l'Ermoy"
+#survey Ermoy -title "Grotte de l'Ermoy"
 
 	# Pour importer les différentes données de différents fichiers topos : 
    input data-th/Ermoy.th
@@ -34,5 +34,8 @@ survey Ermoy -title "Grotte de l'Ermoy"
 	
 	input data-th2/Ermoy-coupe4.th2
 	join Erm-SC10 Erm-SC15
+	
+	#input maps definition
+	input Ermoy-maps.th
 
-endsurvey
+#endsurvey

@@ -14,12 +14,7 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source data-th/DR1.th
- source data-th2/DR1.th2
- source data-th2/DR1-coupe.th2
-
-# Add maps definitions
-source DR1-maps.th
+ source DR1-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -241,8 +236,8 @@ endlayout
 
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o data-th2/DR1-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/DR1-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/DR1-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/DR1-coupe.xvi
 
 # Select maps
 	select DR1-plan-tot

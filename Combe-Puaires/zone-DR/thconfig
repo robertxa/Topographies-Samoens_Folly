@@ -7,9 +7,7 @@ encoding  utf-8
   
   
  # 1-SOURCES 
-
- source trousDR.th
-# source trousDR.th2
+ source DR.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -84,17 +82,10 @@ encoding  utf-8
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Trous B} 		
+ 		\cavename={Trous DR} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    endcode  
-  
-
-  
- # Pour dessiner un cadre autour de la topo   
- code tex-map
-   \framethickness=0.5mm
- endcode
   
  ######################### 
   

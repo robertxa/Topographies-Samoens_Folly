@@ -1,0 +1,36 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -127.98999999999992 -324.83500000000004 1153.0 638.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {538.6700000000001 1 1.0} {274.151 PV01} trousPVmap.xvi 0 {}
+
+
+
+scrap SP-PV-2020 -projection plan -scale [-127.98999999999992 -324.83500000000004 1112.2600000000002 -324.83500000000004 0.0 0.0 31.502350000000003 0.0 m]
+
+point 1018.5 507.5 label -text "<bf>PV6" -scale xl
+
+point 529.5 315.0 label -text "<bf>PV1" -scale xl
+
+point 267.0 184.5 label -text "<bf>PV2" -scale xl
+
+point 110.5 102.0 label -text "<bf>PV5" -scale xl
+
+point 116.5 80.0 entrance -orientation 169.8
+
+point 268.5 162.5 entrance -orientation 177.1
+
+point 535.5 293.5 entrance -orientation 171.8
+
+point 1021.0 485.0 entrance -orientation 178.3
+
+point 1022.1400000000001 468.201 station -name PV06@trousPV
+
+point 538.6700000000001 274.15100000000007 station -name PV01@trousPV
+
+point 269.93000000000006 135.88100000000006 station -name PV02@trousPV
+
+point 121.66000000000008 59.90100000000004 station -name PV05@trousPV
+
+endscrap
+
+

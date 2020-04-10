@@ -4,18 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_A -title "Zone A"
+
 # Pour importer les différentes données de différents fichiers topos : 
-   input A21/Data/A21.th
-   input A21/Data/A21.th2
+input A21/A21-tot.th
+input A22/A22-tot.th
+input A24/Data/A24.th
    
-   input A22/Data/A22
-   input A22/Data/A22.th2   
+input A-tot.th
    
-   input A24/Data/A24.th
-   
-   input trous-A
-   input trous-A.th2
-   
-   
-endsurvey
+input A-maps.th
+

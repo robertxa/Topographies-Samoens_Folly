@@ -6,9 +6,7 @@ encoding  utf-8
   
   
  # 1-SOURCES 
-
- source trousB.th
- source trousB.th2
+ source BA.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -88,19 +86,15 @@ encoding  utf-8
    \fi
    endcode  
   
-
-  
- # Pour dessiner un cadre autour de la topo   
- code tex-map
-   \framethickness=0.5mm
- endcode
   
  ######################### 
   
  endlayout
     
   
- # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o trousBmap.xvi
+ # 3-EXPORTS  
+ 
+ select MP-zoneBA 
+ export map -fmt xvi -layout xviexport -o trousBmap.xvi
    
  export map -o trouBAplan.pdf -layout my_layout

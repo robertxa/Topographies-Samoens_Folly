@@ -3,8 +3,6 @@ encoding  utf-8
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
- 
-survey Synclinal_CP -title "Synclinal de la Combe aux Puaires"
 
 # Pour importer les différentes données de différents fichiers topos : 
 	input Ermoy/Data/ermoy.th
@@ -15,9 +13,4 @@ survey Synclinal_CP -title "Synclinal de la Combe aux Puaires"
 	input zone-LS/LS
 	input zone-T/T.th
 	input zone-L/L.th
-	#input zone-LP/LP.th
-	#input zone-LS/LS
-	#input zone-T/T.th
- 	
- endsurvey
  

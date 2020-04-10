@@ -6,12 +6,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
-source Data/T35.th
-source Data/T35.th2
-source Data/T35-coupe.th2
-
-# Add maps definitions
-source T35-maps.th
+source T35-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
