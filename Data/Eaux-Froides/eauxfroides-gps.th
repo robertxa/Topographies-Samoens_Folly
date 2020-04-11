@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey eauxfroides -title "Petit système des Eaux Froides"
+
+ centerline -extend right
+cs long-lat
+fix EF1 6.787267 46.100495	2130 # Coordonnées à revoir !!!!
+fix R-CEF 6.782500058903151	46.09936969748869	2000	 #ALT APPROX !
+
+
+station EF1 "EF1" entrance continuation explored 15m
+station R-CEF "Résurgence de la Cascade des Eaux Froides" entrance
+
+#station B41 "B41" entrance continuation explored 02m air-draught
+  
+endcenterline
+
+ endsurvey

@@ -1,0 +1,26 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.00000000000003 1899.6499999999999 924.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {1673.193 1 1.0} {761.658 EF1} trouseauxfroidesmap2020.xvi 0 {}
+
+
+
+scrap SP-eauxfroides-2020 -projection plan -station-names "" "@eauxfroides" -scale [-128.0 -128.0 1899.6499999999999 -128.0 0.0 0.0 51.502309999999994 0.0 m]
+
+point 1670.5 793.5 label -text "<bf>EF1" -scale xl
+
+point 183.0 271.0 label -text "<center><bf>Résurgence<br>de la Cascade<br>des Eaux Froides" -scale xl
+
+point 208.933 309.8380000000001 spring -orientation 310.5
+
+point 199.0 318.0 water-flow -orientation 310.4
+
+point 1672.5 771.0 entrance -orientation 178.5
+
+point 1673.193 761.658 station -name EF1
+
+point 208.933 309.8380000000001 station -name R-CEF
+
+endscrap
+
+

@@ -16,28 +16,16 @@ fix R-Ermoy 6.749618472636953 46.09650181585388	800  #ALT APPROX !
 fix R-Tuet 6.748918365613179 46.10248805307734	800 # Altitude à revoir
 fix R-Allamands 6.753610585688945 46.11393540358883	1000 #ALT APPROX ! 
 fix R-EF 6.767262	46.101117 1400 #ALT APPROX !
-fix R-CEF 6.782500058903151	46.09936969748869	2000	 #ALT APPROX !
+#fix R-CEF 6.782500058903151	46.09936969748869	2000	 #ALT APPROX !	# Dans système Eaux Froides
 #fix R-Fontaines 6.739244725649069 46.09078683978262	750 #ALT APPROX ! 
 #fix R-Mirolda 6.739536010689617 46.07875465444135	750 #ALT APPROX ! 
-
-
-#cs EPSG:32632
-#fix R-JB 325700	5106919	800 # Altitude à revoir
-#fix R-Ermoy 326053	5107231	800  #ALT APPROX ! 
-#fix R-Tuet 326017	5107898	800 # Altitude à revoir
-##fix R-Allamands 326416	5109100	1000 #ALT APPROX ! 
-##fix R-EF 46.1047333 6.7927 2100 #ALT APPROX !
-##fix R-CEF 46.1048 6.7930667 2100 #ALT APPROX !
-##fix R-Fontaines 325233	5106619	750 #ALT APPROX ! 
-##fix R-Mirolda 325217	5105282	750 #ALT APPROX ! 
-
 
 station R-JB "Résurgence du Gouffre Jean Bernard" entrance
 station R-Ermoy "Résurgence de la grotte de l'Ermoy'" entrance
 station R-Tuet "Résurgences temporaires du Tuet" entrance
 station R-Allamands "Résurgence des Allamands" entrance
 station R-EF "Résurgence des Eaux Froides" entrance
-station R-CEF "Résurgence de la Cascade des Eaux Froides" entrance
+#station R-CEF "Résurgence de la Cascade des Eaux Froides" entrance	# Dans système Eaux Froides
 #station R-Fontaines "Résurgence des Fontaines" entrance
 #station R-Mirolda "Résurgence temporaire du Mirolda" entrance
 #station B41 "B41" entrance  continuation explored 02m air-draught
