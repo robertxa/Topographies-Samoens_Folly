@@ -1,43 +1,59 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 265.70000000000016 462.55000000000086 6033.5 13120.1
+##XTHERION## xth_me_area_adjust 1838.8199999999997 6566.410000000001 16464.87 18436.56
 ##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {3543.31 1 1.0} {8145.670000000001 R-JB} trousBmap2020.xvi 0 {}
+##XTHERION## xth_me_image_insert {3543.3100000000004 1 1.0} {8145.670000000001 R-JB} trousBmap2020.xvi 0 {}
 
 
 
 scrap SP-sources-2020 -projection plan -station-names "" "@sources" -scale [-128.0 -128.0 8002.0 -128.0 0.0 0.0 206.50199999999998 0.0 m]
 
-point 1704.5 6952.0 water-flow -orientation 186.6
-
 point 3523.0 8135.0 water-flow -orientation 238.8
 
 point 4734.0 12024.0 label -text "<center><bf>Résurgences<br>temporaires<br>du Tuet" -scale xl
 
-point 4791.34 12000.0 spring -orientation 203.7
+point 14971.029999999999 10350.71 spring -orientation 306.3
+
+point 10355.6 11244.84 station -name R-EF
+
+point 10355.6 11244.84 spring -orientation 335.3
+
+point 10348.5 11258.0 water-flow -orientation 329.4
+
+point 14959.0 10359.5 water-flow -orientation 307.2
+
+point 14971.029999999999 10350.71 station -name R-CEF
+
+point 14930.5 10308.5 label -text "<center><bf>Résurgence des<br>la Cascade des<br>Eaux Froides"
+
+point 10337.5 11213.0 label -text "<center><bf>Résurgence des<br>Eaux Froides"
+
+point 6358.5 17018.5 label -text "<center><bf>Résurgence<br>captée"
+
+point 6360.16 16968.97 spring -orientation 241.4
+
+point 6337.0 16959.5 water-flow -orientation 240.1
+
+point 6360.16 16968.97 station -name R-Allamands
+
+point 4790.87 12002.039999999999 spring -orientation 203.7
 
 point 4780.5 11978.5 water-flow -orientation 200.3 -subtype intermittent
 
-point 4920.0 9387.0 water-flow -orientation 315.6
+point 4920.0 9389.5 water-flow -orientation 315.6
 
-point 4911.0 9438.5 label -text "<center><bf>Résurgence de<br>la grotte de l'Ermoy" -scale xl
+point 4911.0 9439.0 label -text "<center><bf>Résurgence de<br>la grotte de l'Ermoy" -scale xl
 
-point 4933.07 9374.02 spring -orientation 321.9
-
-point 1778.0 6999.0 label -text "<center><bf>Résurgence<br> des Fontaines" -scale xl
+point 4929.7300000000005 9377.48 spring -orientation 321.9
 
 point 3526.0 8184.0 label -text "<center><bf>Résurgence du<br>gouffre Jean-Bernard" -scale xl
 
-point 3543.31 8145.670000000001 spring -orientation 240.1
+point 3543.3100000000004 8145.67 spring -orientation 240.1
 
-point 1704.73 6964.5700000000015 spring -orientation 179.1
+point 3543.3100000000004 8145.67 station -name R-JB
 
-point 1704.73 6964.5700000000015 station -name R-Fontaines
+point 4929.7300000000005 9377.48 station -name R-Ermoy
 
-point 3543.31 8145.670000000001 station -name R-JB
-
-point 4933.07 9374.02 station -name R-Ermoy
-
-point 4791.34 12000.0 station -name R-Tuet
+point 4790.87 12002.039999999999 station -name R-Tuet
 
 endscrap
 
