@@ -1,0 +1,24 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 3671.2999999999997 2293.35
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {329.57000000000016 1 1.0} {473.5899999999999 Tu01} trousTuetmap2020.xvi 0 {}
+
+
+
+scrap SP-tuet-2020 -projection plan -station-names "" "@tuet" -scale [-128.0 -128.0 3671.2999999999997 -128.0 0.0 0.0 96.50222 0.0 m]
+
+point 3282.0 1964.5 label -text "<bf>Tu02" -scale xl
+
+point 329.0 505.0 label -text "<bf>Tu01" -scale xl
+
+point 329.5 483.5 entrance -orientation 181.9
+
+point 3282.5 1946.0 entrance -orientation 181.9
+
+point 3281.81 1935.55 station -name Tu02
+
+point 329.57000000000016 473.5899999999999 station -name Tu01
+
+endscrap
+
+

@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey suets -title "Massif des Suets"
+
+# Fichier contenant les positions des entrées de la zone B, Samoens, France
+
+ centerline -extend right
+cs long-lat
+fix Su01 6.745180928166752 46.09359826843757	800 # Altitude à revoir	# Coordonnées fausses, il faut trouver les bonnes
+
+
+station Su01 "Su01" entrance continuation explored 20m
+
+#station B41 "B41" entrance  continuation explored 02m air-draught
+  
+endcenterline
+
+ endsurvey

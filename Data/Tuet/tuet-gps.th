@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey tuet -title "Montagne du Tuet"
+
+# Fichier contenant les positions des entrées de la zone B, Samoens, France
+
+ centerline -extend right
+cs long-lat
+fix Tu01 6.75158 46.10589	1183 # Altitude à revoir
+fix Tu02 6.76114 46.10942	1810  #ALT APPROX ! 
+
+
+station Tu01 "Tu01" entrance continuation explored 07m
+station Tu02 "Tu02'" entrance continuation explored 03m
+
+#station B41 "B41" entrance continuation explored 02m air-draught
+  
+endcenterline
+
+ endsurvey
