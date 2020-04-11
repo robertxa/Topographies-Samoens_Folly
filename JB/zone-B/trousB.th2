@@ -1,7 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 3671.3 2096.5
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -128.0000000000001 -522.0 3671.2999999999997 2293.0499999999997
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1750.82 1 1.0} {1541.25 B02} trousBmap.xvi 0 {}
+##XTHERION## xth_me_image_insert {1440.71 1 1.0} {61.24000000000001 B3@B3.B3.zoneB} trousBmap2020.xvi 0 {}
 
 
 
@@ -54,6 +55,30 @@ point 2285.0 1372.0 label -text "<bf>B6" -scale xl
 point 1744.0 1576.0 label -text "<bf>B2" -scale xl
 
 point 400.0 798.0 label -text "<bf>B36" -scale xl
+
+point 2236.0 739.5 label -text "<bf>B41" -scale xl
+
+point 2381.0 500.5 label -text "<bf>B39" -scale xl
+
+point 2922.0 722.5 label -text "<bf>B38" -scale xl
+
+point 3366.5 1606.5 label -text "<bf>B37" -scale xl
+
+point 3366.5 1587.5 entrance -orientation 180.0
+
+point 2923.5 706.0 entrance -orientation 180.0
+
+point 2380.5 482.5 entrance -orientation 180.0
+
+point 2237.0 723.0 entrance -orientation 180.0
+
+point 2236.77 707.66 station -name B41@trousB
+
+point 2380.35 471.63 station -name B39@trousB
+
+point 2924.05 695.5699999999999 station -name B38@trousB
+
+point 3366.26 1576.32 station -name B37@trousB
 
 point 1103.11 495.47 entrance -orientation 196.6
 

@@ -89,6 +89,6 @@ endlayout
     
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o trousCHmap2020.xvi   
+#export map -fmt xvi -layout xviexport -o trousCHmap2020.xvi   
 select MP-zoneCH
 export map -o trouCHplan.pdf -layout my_layout
