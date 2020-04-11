@@ -1,0 +1,127 @@
+encoding  utf-8
+  
+  
+ # File written by tro2therion.f90 (Xavier Robert) 
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
+  
+ source Data/affluentC14.th
+ source Data/affluentC14.th2
+ source Data/affluentC14-coupe.th2
+ 
+ input ../../../../../../../config.thc
+   
+layout xviexport
+   scale 1 1000
+   grid-size 10 10 10 m
+   grid bottom
+endlayout
+  
+layout my_layout
+# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copy langue-fr 
+  
+   doc-title "Affluent C14"
+   doc-author "Xavier Robert"
+   cs UTM32
+   base-scale 1 1000
+  scale 1 500
+   scale-bar 50 m
+  #color map-bg 85
+  color map-fg [100 100 80]
+  #color map-fg altitude
+  transparency on
+  opacity 75
+
+  map-comment "Affluent du C14, plan, Projection UTM32, Samoëns, 74, France"
+   statistics explo-length off
+  statistics topo-length off
+   statistics copyright all
+  legend off
+   #  legend-width 14 cm
+  map-header 0 0 se
+  map-header-bg off
+  layers on
+  symbol-hide line survey
+  #debug station-names
+
+ # grid-size 100 100 100 m
+   grid off
+
+  
+ # To change the Title          
+     code tex-map
+  
+   \edef\temp{\the\cavename}   % cavename from Therion
+   \edef\nostring{}            % empty string
+   \ifx\temp\nostring          % test if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+ 		\cavename={Gouffre Jean-Bernard} 		
+   \else % if not empty keep the value set by therion, or assign an override cavename here
+   \fi
+   endcode  
+
+endlayout
+ 
+  
+layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr 
+  
+   doc-title "Affluent C14"
+   doc-author "Xavier Robert"
+   cs UTM32
+   base-scale 1 1000
+   scale 1 500
+   scale-bar 50 m
+  #rotate 2.25
+ # origin 12 22 0 m
+ # origin-label 100 K
+  #color map-bg 85
+  color map-fg [100 100 80]
+  transparency on
+  opacity 75
+  map-comment "Affluent du C14, coupe développée, Samoëns, 74, France"
+   statistics explo-length off
+  statistics topo-length off
+   statistics copyright all
+  legend off
+     legend-width 13 cm
+  map-header 0 -5 nw
+  map-header-bg off
+  layers on
+  symbol-hide line survey
+  #debug station-names
+
+ # grid-size 100 100 100 m
+   grid off
+  
+ # To change the Title          
+     code tex-map
+  
+   \edef\temp{\the\cavename}   % cavename from Therion
+   \edef\nostring{}            % empty string
+   \ifx\temp\nostring          % test if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+ 		\cavename={Gouffre Jean-Bernard} 		
+   \else % if not empty keep the value set by therion, or assign an override cavename here
+   \fi
+   endcode  
+  
+endlayout
+
+ 
+  
+ export map -fmt xvi -layout Data/xviexport -o affluentC14-2013.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/affluentC14-coupe2013.xvi
+  
+ export map -o Outputs/affluentC14-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/affluentC14-coupe.pdf
+ export model -o Outputs/affluentC14.lox
+

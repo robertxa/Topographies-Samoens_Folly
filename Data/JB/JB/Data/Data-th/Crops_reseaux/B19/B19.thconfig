@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
 source Data/B19.th
-#source siphons-tot.th
+
 # Add config file
 input ../../../../../../../config.thc 
 
@@ -41,8 +41,8 @@ layout my_layout
 	map-header 0 0 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
@@ -60,9 +60,8 @@ layout my_layout
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
- endlayout
- 
- 
+endlayout
+  
  
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
@@ -109,7 +108,7 @@ layout my_layout-coupe
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
- endlayout
+endlayout
 
  
   

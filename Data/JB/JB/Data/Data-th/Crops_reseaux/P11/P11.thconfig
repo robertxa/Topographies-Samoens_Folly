@@ -4,26 +4,26 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
- source P11.th
- source P11.th2
- source P11-coupe.th2 
- # Add config file
-#input ../../../config.thc
-#input config.thc
-input ../../../../../../config.thc 
+source Data/P11.th
+source Data/P11.th2
+source Data/P11-coupe.th2 
+
+# Add config file
+input ../../../../../../../config.thc  
 
   
- layout xviexport
+layout xviexport
    scale 1 1000
    grid-size 10 10 10 m
    grid bottom
- endlayout
+endlayout
   
- layout my_layout
+layout my_layout
  
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl
+	copy langue-fr 
   
 	doc-title "Gouffre Jean-Bernard - Plafonds du P11"
 	doc-author "Xavier Robert"
@@ -31,15 +31,12 @@ input ../../../../../../config.thc
 	base-scale 1 1000
 	scale 1 500
 	scale-bar 50 m
-	#rotate 2.25
-	#origin 12 22 0 m
-	#origin-label 100 K
+
 	#color map-bg 85
 	color map-fg [100 100 80]
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	language fr
 	map-comment "Plafonds du P11, plan, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
@@ -49,8 +46,8 @@ input ../../../../../../config.thc
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
+	symbol-hide line survey
 	#debug station-names 
-	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
   
@@ -73,6 +70,7 @@ layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe
+	copy langue-fr 
   
 	doc-title "Gouffre Jean-Bernard - Plafonds du P11"
 	doc-author "Xavier Robert"
@@ -80,24 +78,21 @@ layout my_layout-coupe
 	base-scale 1 1000
 	scale 1 500
 	scale-bar 50 m
-	#rotate 2.25
-	#origin 12 22 0 m
-	#origin-label 100 K
 	#color map-bg 85
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	language fr
 	map-comment "Plafonds du P11, coupe développée, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
+	symbol-hide line survey
+	#debug station-names 
 	legend off
 	legend-width 16 cm
 	map-header 0 0 nw
 	map-header-bg off
 	layers on
-	# grid bottom
 	# grid-size 100 100 100 m
 	grid off   
   
@@ -117,9 +112,9 @@ layout my_layout-coupe
 
  
   
- export map -fmt xvi -layout xviexport -o P11-2016.xvi
- export map -projection extended -fmt xvi -layout xviexport -o P11-coupe-2016.xvi
+ export map -fmt xvi -layout xviexport -o Data/P11-2016.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/P11-coupe-2016.xvi
   
- export map  -projection plan -o P11-2016-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o P11-2016-coupe.pdf
- export model -o P11-2016.lox
+ export map  -projection plan -o Outputs/P11-2016-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/P11-2016-coupe.pdf
+ export model -o Outputs/P11-2016.lox

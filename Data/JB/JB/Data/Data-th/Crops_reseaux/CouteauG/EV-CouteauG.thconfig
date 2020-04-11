@@ -5,14 +5,12 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source CouteauG.th
-source CouteauG.th2
-source CouteauG-coupe.th2
+source Data/CouteauG.th
+source Data/CouteauG.th2
+source Data/CouteauG-coupe.th2
+
 # Add config file
 input ../../../../../../config.thc 
-
-
-
    
 layout xviexport
 	scale 1 1000
@@ -45,10 +43,9 @@ layout my_layout
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
+	symbol-hide line survey
 	#debug station-names
 
-	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
 	#  size 15 20 cm
@@ -109,7 +106,6 @@ layout my_layout-coupe
 	map-header-bg off
 	layers on
   
-	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
 
