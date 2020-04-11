@@ -11,7 +11,7 @@ source LP3-tot.th
 input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../../config.thc 
+input ../../../../config.thc 
   
 layout xviexport
 	scale 1 1000
@@ -137,7 +137,7 @@ endlayout
 
 # Select maps
 	select LP3-plan-tot@LP3
-	#select LP3-coupe-tot@LP3
+	select LP3-coupe-tot@LP3
   
 export map -o Outputs/LP3-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LP3-coupe.pdf

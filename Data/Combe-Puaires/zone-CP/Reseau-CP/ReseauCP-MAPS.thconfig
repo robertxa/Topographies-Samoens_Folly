@@ -12,15 +12,9 @@ encoding  utf-8
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
 source Data/combe-puaires.th
-#source ReseauCP.th
-#source ReseauCP.th2
-
-# Add maps definitions
-source ReseauCP-maps-plan.th
-#source ReseauCP-maps-coupe.th
  
 # Add config file
-input ../../../config.thc
+input ../../../../config.thc
 
 # Add the entrance coordinates
 input legendes/entrances_coordinates.th
