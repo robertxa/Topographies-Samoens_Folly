@@ -9,13 +9,14 @@ Cela concerne les systèmes du gouffre Jean-Bernard, du réseau de la Combe aux 
 Elles ont été majoritairement produites par les spéléologues du club Vulcain de (Lyon, France) https://www.groupe-speleo-vulcain.com.
 Ce dépôt est mis à jour à chaque fois qu'une nouvelle topographie est rajoutée à l'un des systèmes décrit dans cette base de données.
 
+Si besoin, des templates pour Therion sont disponibles sur https://github.com/robertxa/Th-Config-Xav .
 
 Description
 -----------
 
 Ce dépôt sauvegarde les données topographiques et de dessin. Ces fichiers sont pour les logiciels Visual Topo (données) et/ou Therion (data + dessins).
 
-Uniquement les fichiers sources sont sauvegardés pour des raisons de taille; j'ai aussi choisi de ne pas uploader les dessins dessinés à la main sur papier :
+Uniquement les fichiers sources sont sauvegardés pour des raisons de taille ; j'ai aussi choisi de ne pas uploader les dessins dessinés à la main sur papier :
 
 	* les anciens fichiers .tro pour le logiciel Visual Topo
 	
