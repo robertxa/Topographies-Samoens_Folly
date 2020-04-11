@@ -51,7 +51,7 @@ fix       C45       46.106966     006.79788      2320
 fix       C46       46.107150     006.80201      2348
 fix       C47       46.107166     006.80186      2352
 fix       C50       46.106933     006.80080      2327
-fix       C51       46.106550     006.80153      2300 # ALT PAR DEFAULT
+#fix       C51       46.106550     006.80153      2300 # ALT PAR DEFAULT
 fix       C53       46.106316     006.80196      2329
 fix       C54       46.106983     006.80161      2345
 fix       C55       46.106750     006.80166      2329
@@ -181,7 +181,7 @@ station   C47       "C47" entrance continuation explored 09m
 #station C49	"C49" entrance continuation explored 05m
 
 station   C50       "C50" entrance continuation explored 10m
-station   C51       "C51" entrance continuation explored 20m air-draught
+#station   C51       "C51" entrance continuation explored 20m air-draught
 #station C52	"C52" entrance continuation explored 23m air-draught
 station   C53       "C53" entrance continuation explored 23m air-draught
 station   C54       "C54" entrance continuation explored 10m air-draught

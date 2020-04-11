@@ -5,18 +5,15 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
-survey zone_B -title "Zone B"
- input trousB.th
- input trousB.th2
+survey zoneB -title "Zone B"
  
- # Pour importer les différentes données de différents fichiers topos : 
-   input B3/Data/B3.th
-   input B3/Data/B3-2015.th2
+# Pour importer les différentes données de différents fichiers topos : 
+	input B3/B3-tot.th
+	input B10/B10-tot.th
+	input B40/B40-tot.th
    
-   input B10/Data/B10.th
-   input B10/Data/B10.th2
+	input B-tot.th
    
-   input B40/Data/B40.th
-   input B40/Data/B40.th2
+	input B-maps.th
 
 endsurvey

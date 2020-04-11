@@ -13,10 +13,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source Data/CH17-tot.th
-
-# Add maps definitions
-source CH17-maps.th
+source CH17-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -311,12 +308,12 @@ endlayout
 # export map -projection extended -fmt xvi -layout xviexport -o Data/CH17-coupe2018.xvi
  
  # Select maps
- 	#select CH17-2003-plan
-	#select CH17-2003-coupe
-	#select CH17-2018-plan
-	#select CH17-2018-coupe
-	select CH17-plan-tot
-	select CH17-coupe-tot
+ 	#select CH17-2003-plan@CH17
+	#select CH17-2003-coupe@CH17
+	#select CH17-2018-plan@CH17
+	#select CH17-2018-coupe@CH17
+	select CH17-plan-tot@CH17
+	select CH17-coupe-tot@CH17
   
  export map -o Outputs/CH17-plan2018.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/CH17-coupe2018.pdf

@@ -5,12 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 #source CH24tot.th
-source Data/CH24.th
-source Data/CH24.th2
-source Data/CH24-coupe.th2
-
-# Add maps definitions
-source CH24-maps.th
+source CH24-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -141,8 +136,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CH24-coupe.xvi
 
 # Select maps
-	select CH24-plan-tot
-	select CH24-coupe-tot
+	select CH24-plan-tot@CH24
+	select CH24-coupe-tot@CH24
 	  
 export map -o Outputs/CH24-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CH24-coupe.pdf

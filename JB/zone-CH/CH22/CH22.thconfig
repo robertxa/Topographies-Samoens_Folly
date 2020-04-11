@@ -4,12 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-source Data/CH22.th
-source Data/CH22.th2
-source Data/CH22-coupe.th2
-
-# Add maps definitions
-source CH22-maps.th
+source CH22-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -160,8 +155,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CH22-coupe.xvi
 
 # Select maps
-	select CH22-plan-tot
-	select CH22-coupe-tot
+	select CH22-plan-tot@CH22
+	select CH22-coupe-tot@CH22
 	
 export map -o Outputs/CH22-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CH22-coupe.pdf

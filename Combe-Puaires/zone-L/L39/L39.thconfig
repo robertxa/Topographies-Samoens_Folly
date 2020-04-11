@@ -132,8 +132,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/L39-coupe.xvi
 
 # Select maps
-	select L39-plan-tot
-	select L39-coupe-tot
+	select L39-plan-tot@L39
+	select L39-coupe-tot@L39
 	  
 export map -o Outputs/L39-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/L39-coupe.pdf

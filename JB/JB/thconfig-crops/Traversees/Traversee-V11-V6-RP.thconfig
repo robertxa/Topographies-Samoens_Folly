@@ -9,7 +9,6 @@ encoding  utf-8
 # La ligne source specifie le fichier ou sont les donnees topos
 
 source ../../Data/jb.th
-source ../../Data/jb-maps-plan.th
 
 # Add config file
 input ../../../../config.thc 
@@ -166,14 +165,14 @@ endlayout
 # 3-EXPORT
 # Export des fichiers pdf, plan et coupe. 
 
-#select  M-Tr-V11-V6-AB
+#select  M-Tr-V11-V6-AB@Jean-Bernard
 #export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Aiguilles_Branlots-plan1000.pdf -layout my_layout
 
-#select  M-Tr-V11-V6-RB
+#select  M-Tr-V11-V6-RB@Jean-Bernard
 #export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Raccourci_Branlots-plan1000.pdf -layout my_layout
 
-#select  M-Tr-V11-V6-AP
+#select  M-Tr-V11-V6-AP@Jean-Bernard
 #export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Aiguilles_pseudoS-plan1000.pdf -layout my_layout
 
-select  M-Tr-V11-V6-RP
+select  M-Tr-V11-V6-RP@Jean-Bernard
 export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Raccourci_pseudoS-plan1000.pdf -layout my_layout

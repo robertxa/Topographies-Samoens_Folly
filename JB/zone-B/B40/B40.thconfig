@@ -3,14 +3,8 @@ encoding  utf-8
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
-  
-  
-source Data/B40.th
-source Data/B40.th2
-source Data/B40-coupe.th2
-
-# Add maps definitions
-source B40-maps.th
+    
+source B40-tot.th
 
 # Add coordinates
 input legendes/entrances_coordinates.th
@@ -143,13 +137,13 @@ export map -fmt xvi -layout xviexport -o Data/B40-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o Data/B40-coupe.xvi
   
 # Select maps
-	select B40-plan-tot
-	select B40-coupe-tot
+	select B40-plan-tot@B40
+	select B40-coupe-tot@B40
    
 export map -projection extended -layout my_layout-coupe -o Outputs/B40-coupe.pdf
 export map -o Outputs/B40-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/B40-coupe-Continuations.pdf
-export map -o Outputs/B40-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/B40-coupe-Continuations.pdf
+#export map -o Outputs/B40-plan-Continuations.pdf -layout my_layout-Continuations
 
 export model -o Outputs/B40.lox
 export map -proj plan -fmt kml -o Outputs/B40.kml -layout my_layout

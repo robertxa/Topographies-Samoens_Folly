@@ -5,6 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
+survey A22 -title "A22"
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/A22.th
 	
@@ -26,3 +27,5 @@ input Data/V22-coupe.th2
 
 # Pour importer les maps
 input A22-maps.th
+
+endsurvey

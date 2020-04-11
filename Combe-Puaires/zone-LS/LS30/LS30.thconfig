@@ -132,12 +132,12 @@ layout my_layout-coupe-Continuations
 endlayout
 
   
-#export map -fmt xvi -layout xviexport -o data-th2/LS30-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/LS30-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/LS30-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/LS30-coupe.xvi
  
 # Select maps
-	select LS30-plan-tot
-	select LS30-coupe-tot
+	select LS30-plan-tot@LS30
+	select LS30-coupe-tot@LS30
 	  
 export map -o Outputs/LS30-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS30-coupe.pdf

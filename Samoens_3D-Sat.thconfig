@@ -31,14 +31,7 @@ encoding  utf-8
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
 
-# Topos et cavités du réseau du A21 
-source Reseau_A21/Synclinal_A21.th
-# Topos et cavités du système des Avoudrues
-source Avoudrues/Avoudrues.th
-# Topos et cavités du système du Jean-Bernard
-source JB/Synclinal_JB.th
-# Topos et cavités du système de la Combe aux Puaires
-source Combe-Puaires/Combe-Puaires.th
+source Data/Folly-Total.th
 
 # MNT de la zone, avec wrappage des images (éditer le fichier Samoens-GIS/dem/samoens.th pour choisir l'image !)
 # Pour le MNT SRTM à 30 m
@@ -164,7 +157,7 @@ layout my_layout
   # Un commentaire a ajouter au titule, on pourrait indiquer ici
   # la mairie ou est place la cavite dont le nom est probablement
   # le titule de la topo.
-  map-comment "Massif du Folly, Samoëns, 74, France"
+  map-comment "Samoëns, 74, France"
 
   # Afficher les statistiques d'explo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs
@@ -177,7 +170,9 @@ layout my_layout
   statistics copyright 2
 
   layers on
-  
+
+	# Dessin ou pas du cheminement topo
+	symbol-hide line survey  
                 
 # Titre                         
     code tex-map
@@ -209,7 +204,8 @@ endlayout
 
 # 3-EXPORT
 
-# Export des fichiers pdf, plan et coupe. 
+# Export des fichiers pdf en plan. 
+select MP-Folly-tot@MassifFolly
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -projection plan -fmt pdf -o Outputs/2D/Folly-2020-plan-Sat.pdf -layout my_layout
 

@@ -4,6 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+survey T9 -title "T9"
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/T9.th
 	
@@ -17,3 +18,5 @@ input Data/T9.th2
 input Data/T9-coupe.th2
 
 input T9-maps.th
+
+endsurvey

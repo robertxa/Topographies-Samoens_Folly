@@ -232,9 +232,9 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o data-th2/ReseauCP-coupe2020.xvi
 
 # Select maps
-	#select MP-ReseauCP-total 
-	select MP-RivAmont2019
-	#select MC-ReseauCP-total
+	#select MP-ReseauCP-total@ReseauCP
+	select MP-RivAmont2019@ReseauCP
+	#select MC-ReseauCP-total@ReseauCP
 	
 export map -o Outputs/2D/ReseauCP-plan2020TEST.pdf -layout my_layout
 #export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020.pdf

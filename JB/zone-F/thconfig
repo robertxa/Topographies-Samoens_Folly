@@ -6,8 +6,8 @@ encoding  utf-8
   
   
 # 1-SOURCES 
-source trousF.th
-source trousF.th2
+source F.th
+
 # Add config file
 input ../../config.thc 
      
@@ -89,5 +89,6 @@ endlayout
   
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o trousFmap.xvi
-   
+ 
+ select MP-zoneF  
 export map -o trouFplan.pdf -layout my_layout

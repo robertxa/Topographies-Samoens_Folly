@@ -1,0 +1,44 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 265.70000000000016 462.55000000000086 6033.5 13120.1
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {3543.31 1 1.0} {8145.670000000001 R-JB} trousBmap2020.xvi 0 {}
+
+
+
+scrap SP-sources-2020 -projection plan -station-names "" "@sources" -scale [-128.0 -128.0 8002.0 -128.0 0.0 0.0 206.50199999999998 0.0 m]
+
+point 1704.5 6952.0 water-flow -orientation 186.6
+
+point 3523.0 8135.0 water-flow -orientation 238.8
+
+point 4734.0 12024.0 label -text "<center><bf>Résurgences<br>temporaires<br>du Tuet" -scale xl
+
+point 4791.34 12000.0 spring -orientation 203.7
+
+point 4780.5 11978.5 water-flow -orientation 200.3 -subtype intermittent
+
+point 4920.0 9387.0 water-flow -orientation 315.6
+
+point 4911.0 9438.5 label -text "<center><bf>Résurgence de<br>la grotte de l'Ermoy" -scale xl
+
+point 4933.07 9374.02 spring -orientation 321.9
+
+point 1778.0 6999.0 label -text "<center><bf>Résurgence<br> des Fontaines" -scale xl
+
+point 3526.0 8184.0 label -text "<center><bf>Résurgence du<br>gouffre Jean-Bernard" -scale xl
+
+point 3543.31 8145.670000000001 spring -orientation 240.1
+
+point 1704.73 6964.5700000000015 spring -orientation 179.1
+
+point 1704.73 6964.5700000000015 station -name R-Fontaines
+
+point 3543.31 8145.670000000001 station -name R-JB
+
+point 4933.07 9374.02 station -name R-Ermoy
+
+point 4791.34 12000.0 station -name R-Tuet
+
+endscrap
+
+

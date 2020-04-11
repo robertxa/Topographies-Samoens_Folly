@@ -13,14 +13,9 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- #source Data/AV8.th
- #source Data/AV8.th2
- #source Data/AV8-coupe.th2
+  
  source AV8-tot.th
 
-# Add maps definitions
-#source AV8-maps.th
- 
 # Add config file
 input ../../../config.thc 
 
@@ -316,8 +311,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/AV8-coupe.xvi
 
 # Select maps
-	select MP-AV8-tot
-	select AV8-coupe-tot
+	select MP-AV8-tot@AV8
+	select AV8-coupe-tot@AV8
 	  
 export map -o Outputs/AV8-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/AV8-coupe.pdf

@@ -4,10 +4,12 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-
+survey zoneAV -title "Zone AV"
 # Pour importer les différentes données de différents fichiers topos : 
    input AV8/AV8-tot.th
    
    input AV-tot.th
    
    input AV-maps.th
+
+endsurvey

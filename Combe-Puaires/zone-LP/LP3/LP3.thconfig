@@ -136,8 +136,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/LP3-coupe.xvi
 
 # Select maps
-	select LP3-plan-tot
-	#select LP3-coupe-tot 
+	select LP3-plan-tot@LP3
+	#select LP3-coupe-tot@LP3
   
 export map -o Outputs/LP3-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LP3-coupe.pdf

@@ -15,7 +15,6 @@ encoding  utf-8
 # La ligne source specifie le fichier ou sont les donnees topo
 
 source Data/jb.th
-source Data/jb-maps-plan
 
 # Add config file
 input ../../config.thc 
@@ -96,5 +95,5 @@ endlayout
 # 3-EXPORT
 
 # Export des fichiers pdf, plan et coupe. 
-select JB-plan-tot
+select JB-plan-tot@Jean-Bernard
  export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan20000.pdf -layout my_layout

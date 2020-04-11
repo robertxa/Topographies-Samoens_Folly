@@ -135,8 +135,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/LS22-coupe.xvi
 
 # Select maps
-	select LS22-plan-tot
-	select LS22-coupe-tot
+	select LS22-plan-tot@LS22
+	select LS22-coupe-tot@LS22
   
 export map -o Outputs/LS22-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS22-coupe.pdf

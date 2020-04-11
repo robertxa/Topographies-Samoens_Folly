@@ -1,59 +1,59 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 14655.5769 8238.240600000001
 ##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1.Jean-Bernard} ../synthese_plan2011.xvi 0 {}
+##XTHERION## xth_me_image_insert {13021.23 1 1.0} {6810.0 C37b@jb-amonts1} ../synthese_plan2011.xvi 0 {}
 
 
 
 scrap Mais -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 7274.73 5344.26 station -name Ia.4@jb-amonts2.Jean-Bernard
+point 7274.73 5344.26 station -name Ia.4@jb-amonts2
 
-point 7298.8 5345.52 station -name Ia.5@jb-amonts2.Jean-Bernard
+point 7298.8 5345.52 station -name Ia.5@jb-amonts2
 
-point 7321.12 5341.58 station -name Ia.6@jb-amonts2.Jean-Bernard
+point 7321.12 5341.58 station -name Ia.6@jb-amonts2
 
-point 7336.0 5341.58 station -name Ia.7@jb-amonts2.Jean-Bernard
+point 7336.0 5341.58 station -name Ia.7@jb-amonts2
 
-point 7354.42 5343.52 station -name Ia.8@jb-amonts2.Jean-Bernard
+point 7354.42 5343.52 station -name Ia.8@jb-amonts2
 
-point 7362.32 5342.55 station -name Ia.9@jb-amonts2.Jean-Bernard
+point 7362.32 5342.55 station -name Ia.9@jb-amonts2
 
-point 7387.86 5358.5 station -name Ia.10@jb-amonts2.Jean-Bernard
+point 7387.86 5358.5 station -name Ia.10@jb-amonts2
 
-point 7417.72 5369.37 station -name Ia.11@jb-amonts2.Jean-Bernard
+point 7417.72 5369.37 station -name Ia.11@jb-amonts2
 
-point 7513.87 5371.05 station -name Ia.12@jb-amonts2.Jean-Bernard
+point 7513.87 5371.05 station -name Ia.12@jb-amonts2
 
-point 7610.26 5372.73 station -name Ia.13@jb-amonts2.Jean-Bernard
+point 7610.26 5372.73 station -name Ia.13@jb-amonts2
 
-point 7652.92 5374.97 station -name Ia.14@jb-amonts2.Jean-Bernard
+point 7652.92 5374.97 station -name Ia.14@jb-amonts2
 
-point 7739.51 5358.14 station -name Ia.15@jb-amonts2.Jean-Bernard
+point 7739.51 5358.14 station -name Ia.15@jb-amonts2
 
-point 7775.4 5331.09 station -name Ia.16@jb-amonts2.Jean-Bernard
+point 7775.4 5331.09 station -name Ia.16@jb-amonts2
 
-point 7858.13 5325.9 station -name Ia.17@jb-riv2.Jean-Bernard
+point 7858.13 5325.9 station -name Ia.17@jb-riv2
 
-point 7902.39 5328.98 station -name Ia.18@jb-amonts2.Jean-Bernard
+point 7902.39 5328.98 station -name Ia.18@jb-amonts2
 
-point 7932.77 5324.32 station -name Ia.19@jb-amonts2.Jean-Bernard
+point 7932.77 5324.32 station -name Ia.19@jb-amonts2
 
-point 7964.8 5292.22 station -name Ia.20@jb-amonts2.Jean-Bernard
+point 7964.8 5292.22 station -name Ia.20@jb-amonts2
 
-point 8015.19 5285.72 station -name Ia.21@jb-amonts2.Jean-Bernard
+point 8015.19 5285.72 station -name Ia.21@jb-amonts2
 
-point 8029.84 5269.67 station -name Ia.22@jb-amonts2.Jean-Bernard
+point 8029.84 5269.67 station -name Ia.22@jb-amonts2
 
-point 8062.98 5276.27 station -name Da.268@jb-amonts2.Jean-Bernard
+point 8062.98 5276.27 station -name Da.268@jb-amonts2
 
-point 8078.65 5272.49 station -name Da.267@jb-amonts2.Jean-Bernard
+point 8078.65 5272.49 station -name Da.267@jb-amonts2
 
-point 8104.14 5262.41 station -name Da.266@jb-amonts2.Jean-Bernard
+point 8104.14 5262.41 station -name Da.266@jb-amonts2
 
-point 8133.34 5255.91 station -name Da.265@jb-amonts2.Jean-Bernard
+point 8133.34 5255.91 station -name Da.265@jb-amonts2
 
-point 8150.66 5268.69 station -name Da.264@jb-amonts2.Jean-Bernard
+point 8150.66 5268.69 station -name Da.264@jb-amonts2
 
 line wall -close on -outline in -subtype unsurveyed
   8094.0 5303.75
@@ -258,7 +258,7 @@ endline
 
 point 8063.0 5258.75 label -text "-473 m"
 
-point 7359.0 5365.5 continuation -attr Code Q -attr Cavite JB -attr reseau "Galeire du Mais" -text "A voir ?"
+point 7359.0 5365.5 continuation -attr Code Q -attr Cavite JB -attr reseau "Galerie du Mais" -text "A voir ?"
 
 point 7701.75 5336.75 continuation
 
@@ -499,11 +499,11 @@ line wall
   smooth off
 endline
 
-point 8171.76 5261.2 station -name Da.263@jb-amonts2.Jean-Bernard
+point 8171.76 5261.2 station -name Da.263@jb-amonts2
 
-point 8175.01 5272.13 station -name Da.262@jb-amonts2.Jean-Bernard
+point 8175.01 5272.13 station -name Da.262@jb-amonts2
 
-point 8157.44 5279.08 station -name Da.261@jb-amonts2.Jean-Bernard
+point 8157.44 5279.08 station -name Da.261@jb-amonts2
 
 endscrap
 
@@ -511,13 +511,13 @@ endscrap
 
 scrap Mais-2010 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.50240162 0.0 m]
 
-point 7879.4 5208.99 station -name Ij.2@jb-amonts2.Jean-Bernard
+point 7879.4 5208.99 station -name Ij.2@jb-amonts2
 
-point 7866.11 5209.69 station -name Ij.4@jb-amonts2.Jean-Bernard
+point 7866.11 5209.69 station -name Ij.4@jb-amonts2
 
-point 7874.38 5204.4 station -name Ij.3@jb-amonts2.Jean-Bernard
+point 7874.38 5204.4 station -name Ij.3@jb-amonts2
 
-point 7866.54 5197.72 station -name Ij.6@jb-amonts2.Jean-Bernard
+point 7866.54 5197.72 station -name Ij.6@jb-amonts2
 
 line pit
   7860.75 5202.5
@@ -565,9 +565,9 @@ endscrap
 
 scrap Cataboyau -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 7860.01 5343.75 station -name Gm.1@jb-riv2.Jean-Bernard
+point 7860.01 5343.75 station -name Gm.1@jb-riv2
 
-point 7848.09 5342.71 station -name Gjm.2@jb-riv2.Jean-Bernard
+point 7848.09 5342.71 station -name Gjm.2@jb-riv2
 
 point 7842.0 5304.25 label -orientation 108.5 -text "Cataboyau"
 
@@ -594,7 +594,7 @@ line gradient
   7857.0 5333.5
 endline
 
-point 7871.25 5368.75 continuation -attr Code E -attr Cavite JB -attr reseau "Galeire du Mais" -text "Escalade"
+point 7871.25 5368.75 continuation -attr Code E -attr Cavite JB -attr reseau "Galerie du Mais" -text "Escalade"
 
 point 7839.5 5340.25 narrow-end -orientation 74.6
 
@@ -686,39 +686,39 @@ line wall
   7869.5 5339.0
 endline
 
-point 7857.35 5348.25 station -name Gk.15@jb-riv2.Jean-Bernard
+point 7857.35 5348.25 station -name Gk.15@jb-riv2
 
-point 7864.91 5341.15 station -name Gm.3@jb-riv2.Jean-Bernard
+point 7864.91 5341.15 station -name Gm.3@jb-riv2
 
-point 7864.81 5339.68 station -name Gk.16@jb-riv2.Jean-Bernard
+point 7864.81 5339.68 station -name Gk.16@jb-riv2
 
-point 7865.92 5329.58 station -name Gm.4@jb-riv2.Jean-Bernard
+point 7865.92 5329.58 station -name Gm.4@jb-riv2
 
-point 7870.45 5324.18 station -name Gm.5@jb-riv2.Jean-Bernard
+point 7870.45 5324.18 station -name Gm.5@jb-riv2
 
-point 7871.96 5320.61 station -name Gm.7@jb-riv2.Jean-Bernard
+point 7871.96 5320.61 station -name Gm.7@jb-riv2
 
-point 7863.41 5296.77 station -name Gm.9@jb-riv2.Jean-Bernard
+point 7863.41 5296.77 station -name Gm.9@jb-riv2
 
-point 7871.24 5310.34 station -name Gm.8@jb-riv2.Jean-Bernard
+point 7871.24 5310.34 station -name Gm.8@jb-riv2
 
-point 7864.58 5292.41 station -name Gm.10@jb-riv2.Jean-Bernard
+point 7864.58 5292.41 station -name Gm.10@jb-riv2
 
-point 7860.85 5287.97 station -name Gm.11@jb-riv2.Jean-Bernard
+point 7860.85 5287.97 station -name Gm.11@jb-riv2
 
-point 7862.36 5282.35 station -name Gm.12@jb-riv2.Jean-Bernard
+point 7862.36 5282.35 station -name Gm.12@jb-riv2
 
-point 7860.23 5265.37 station -name Gm.14@jb-riv2.Jean-Bernard
+point 7860.23 5265.37 station -name Gm.14@jb-riv2
 
-point 7856.95 5259.7 station -name Gm15@jb-riv2.Jean-Bernard
+point 7856.95 5259.7 station -name Gm15@jb-riv2
 
-point 7850.87 5266.94 station -name Gm.16@jb-riv2.Jean-Bernard
+point 7850.87 5266.94 station -name Gm.16@jb-riv2
 
 endscrap
 
 
 
-scrap Erreur -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+scrap SP-Erreur -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 point 8540.75 5064.5 rope
 
@@ -1030,51 +1030,51 @@ line wall
   smooth off
 endline
 
-point 8153.78 5286.43 station -name Da.260@jb-amonts2.Jean-Bernard
+point 8153.78 5286.43 station -name Da.260@jb-amonts2
 
-point 8173.04 5288.94 station -name Da.259@jb-amonts2.Jean-Bernard
+point 8173.04 5288.94 station -name Da.259@jb-amonts2
 
-point 8183.21 5277.82 station -name Da.258@jb-amonts2.Jean-Bernard
+point 8183.21 5277.82 station -name Da.258@jb-amonts2
 
-point 8205.39 5271.22 station -name Da.257@jb-amonts2.Jean-Bernard
+point 8205.39 5271.22 station -name Da.257@jb-amonts2
 
-point 8223.83 5320.37 station -name Da.256@jb-amonts2.Jean-Bernard
+point 8223.83 5320.37 station -name Da.256@jb-amonts2
 
-point 8196.12 5423.01 station -name Fs.0@jb-amonts2.Jean-Bernard
+point 8196.12 5423.01 station -name Fs.0@jb-amonts2
 
-point 8203.6 5402.46 station -name Fs.1@jb-amonts2.Jean-Bernard
+point 8203.6 5402.46 station -name Fs.1@jb-amonts2
 
-point 8220.88 5379.56 station -name Fs.2@jb-amonts2.Jean-Bernard
+point 8220.88 5379.56 station -name Fs.2@jb-amonts2
 
-point 8194.11 5333.81 station -name Fs.4@jb-amonts2.Jean-Bernard
+point 8194.11 5333.81 station -name Fs.4@jb-amonts2
 
-point 8230.4 5330.65 station -name Da.255@jb-amonts2.Jean-Bernard
+point 8230.4 5330.65 station -name Da.255@jb-amonts2
 
-point 8236.82 5337.9 station -name Da.254@jb-amonts2.Jean-Bernard
+point 8236.82 5337.9 station -name Da.254@jb-amonts2
 
-point 8260.05 5368.09 station -name Da.253@jb-amonts2.Jean-Bernard
+point 8260.05 5368.09 station -name Da.253@jb-amonts2
 
-point 8310.18 5292.16 station -name Da.252@jb-amonts2.Jean-Bernard
+point 8310.18 5292.16 station -name Da.252@jb-amonts2
 
-point 8368.46 5248.93 station -name Da.251@jb-amonts2.Jean-Bernard
+point 8368.46 5248.93 station -name Da.251@jb-amonts2
 
-point 8386.91 5230.76 station -name Da.250@jb-amonts2.Jean-Bernard
+point 8386.91 5230.76 station -name Da.250@jb-amonts2
 
-point 8407.55 5265.06 station -name Da.247@jb-amonts2.Jean-Bernard
+point 8407.55 5265.06 station -name Da.247@jb-amonts2
 
-point 8410.11 5245.45 station -name Da.248@jb-amonts2.Jean-Bernard
+point 8410.11 5245.45 station -name Da.248@jb-amonts2
 
-point 8405.05 5238.63 station -name Da.249@jb-amonts2.Jean-Bernard
+point 8405.05 5238.63 station -name Da.249@jb-amonts2
 
-point 8435.19 5230.23 station -name Da.2491@jb-amonts2.Jean-Bernard
+point 8435.19 5230.23 station -name Da.2491@jb-amonts2
 
-point 8462.76 5195.49 station -name Da.2492@jb-amonts2.Jean-Bernard
+point 8462.76 5195.49 station -name Da.2492@jb-amonts2
 
-point 8510.8 5137.08 station -name Da.2493@jb-amonts2.Jean-Bernard
+point 8510.8 5137.08 station -name Da.2493@jb-amonts2
 
-point 8556.67 5064.89 station -name Da.2494@jb-amonts2.Jean-Bernard
+point 8556.67 5064.89 station -name Da.2494@jb-amonts2
 
-point 8561.98 5052.03 station -name Da.2495@jb-amonts2.Jean-Bernard
+point 8561.98 5052.03 station -name Da.2495@jb-amonts2
 
 endscrap
 

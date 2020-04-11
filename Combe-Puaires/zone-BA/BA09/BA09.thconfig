@@ -141,8 +141,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/BA09-coupe.xvi
 
 # Select maps
-	select BA9-plan-tot
-	select BA9-coupe-tot  
+	select BA9-plan-tot@BA9
+	select BA9-coupe-tot@BA9
  
 export map -projection extended -layout my_layout-coupe -o Outputs/BA09-coupe.pdf
 export map -o Outputs/BA09-plan.pdf -layout my_layout

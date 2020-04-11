@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey Synclinal_JB -title "Réseau du Jean-Bernard"
+survey SynclinalJB -title "Réseau du Jean-Bernard"
 
 # Pour importer les différentes données de différents fichiers topos : 
 	input JB/Data/jb.th
@@ -14,6 +14,8 @@ survey Synclinal_JB -title "Réseau du Jean-Bernard"
 	input zone-D/D.th
 	input zone-F/F.th
 	input zone-V/V.th
+
+	input Synclinal-JB-maps.th
  	
  endsurvey
  

@@ -334,8 +334,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/BA4-coupe.xvi
 
 # Select maps
-	select BA4-plan-tot
-	select BA4-coupe-tot
+	select BA4-plan-tot@BA4
+	select BA4-coupe-tot@BA4
 	  
 export map -o Outputs/BA4-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/BA4-coupe.pdf

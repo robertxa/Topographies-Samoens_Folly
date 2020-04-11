@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-
+survey DR1 -title "DR1"
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/DR1.th
 
@@ -17,3 +17,5 @@ input Data/DR1.th2
 input Data/DR1-coupe.th2
 
 input DR1-maps.th
+
+endsurvey

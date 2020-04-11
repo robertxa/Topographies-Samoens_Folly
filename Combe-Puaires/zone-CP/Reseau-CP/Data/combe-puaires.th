@@ -169,6 +169,9 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	join Reptiles-SC1 aval-CP12-SC1
 	input data-th/Scraps-alone/CP19b/Data/CP19b-coupe.th2
 	# Pas de join ?
-	
+
+	# Add maps definition
+	input ReseauCP-maps-plan.th
+	input ReseauCP-maps-coupe.th
  	
  endsurvey

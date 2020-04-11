@@ -4,15 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_D -title "Zone D"
- input trousD
- input trousD.th2
+survey zoneD -title "Zone D"
 
 # Pour importer les différentes données de différents fichiers topos : 
-   input D11/Data/D11.th
-   input D11/Data/D11.th2
-   
-   input D33/Data/D33.th
-   input D33/Data/D33.th2
-     
+   input D11/D11-tot.th
+   input D33/D33-tot.th
+
+	input D-tot.th
+	input D-maps.th
+	     
 endsurvey

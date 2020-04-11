@@ -248,7 +248,7 @@ endlayout
  #export map -projection extended -fmt xvi -layout xviexport -o Data/BA2-coupe.xvi
 
 # Select maps
-	select BA2-plan-tot
+	select BA2-plan-tot@BA2
 	  
  export map -o Outputs/BA2-plan.pdf -layout my_layout
  export map -o Outputs/BA2-plan-Continuations.pdf -layout my_layout-Continuations

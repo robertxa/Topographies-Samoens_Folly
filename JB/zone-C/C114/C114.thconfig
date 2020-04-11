@@ -24,12 +24,7 @@ encoding  utf-8
 # 1-SOURCES 
 # La ligne source specifie le fichier ou sont les donnees topo
 
-source Data/C114.th
-source Data/C114.th2
-source Data/C114-coupe.th2
-
-# Add maps definitions
-source C114-maps.th
+source C114-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -252,8 +247,8 @@ endlayout
 #export map -proj extended -fmt xvi -layout xviexport -o Data/C114-coupe2012.xvi
 
 # Select maps
-	select C114-plan-tot
-	select C114-coupe-tot
+	select C114-plan-tot@C114
+	select C114-coupe-tot@C114
 
 # Export des fichiers pdf, plan et coupe. 
 export map -projection plan -fmt pdf -o Outputs/C114-2012-plan.pdf -layout my_layout

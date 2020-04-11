@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey zone_V -title "Zone V"
+survey zoneV -title "Zone V"
 
 
 # Pour importer les différentes données de différents fichiers topos : 
@@ -12,8 +12,10 @@ survey zone_V -title "Zone V"
 #input trousV
 #input trousV.th2
 
-   input V4ter/Data/V4ter.th
-   input V4ter/Data/V4ter.th2
+   input V4ter/V4ter-tot.th
+   
+   #input V-tot.th
+   input V-maps.th
        
 
 endsurvey

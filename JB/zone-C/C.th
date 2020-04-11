@@ -4,40 +4,24 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_C -title "Zone C"
-	input trousC.th
-	input trousC.th2
+survey zoneC -title "Zone C"
+
 
 	# Pour importer les différentes données de différents fichiers topos : 
-	input C14/Data/C14.th
-	input C14/Data/C14.th2
+	input C14/C14-tot.th
+	#problem with C24 and C31 ?
+	input C24/C24-tot.th
+	input C31/C31-tot.th
+	input C42/C42-tot.th
+	input C44/C44-tot.th
+	input C51/C51-tot.th
+##	input C52/C52-tot.th
+	input C74/C74-tot.th
+	input C75/C75-tot.th
+	input C114/C114-tot.th
+
+	input C-tot.th
 	
-#problem with C24 and C31
-	input C24/Data/C24.th
-	input C24/Data/C24.th2
-   
-	input C31/Data/C31.th
-	input C31/Data/C31.th2
-   
-	input C42/Data/C42.th
-	input C42/Data/C42.th2
-   
-	input C44/Data/C44.th
-	input C44/Data/C44.th2
-
-   input C51/Data/C51.th
-   input C51/Data/C51.th2   
-
-##   input C52/Data/C52.th
-##   input C52/Data/C52.th2   
-   
-	input C74/data/C74.th
-	input C74/data/th2/C74-plan.th2
-   
-	input C75/Data/C75.th
-	input C75/Data/C75.th2  
-   
-	input C114/Data/C114.th
-	input C114/Data/C114.th2  
-     
+	input C-maps.th
+	     
  endsurvey

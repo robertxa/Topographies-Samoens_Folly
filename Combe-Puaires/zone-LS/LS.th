@@ -3,7 +3,8 @@ encoding  utf-8
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
- 
+
+survey zoneLS -title "Zone LS" 
 # Pour importer les différentes données de différents fichiers topos :
 input LS22/LS22-tot.th
 input LS30/LS30-tot.th
@@ -11,3 +12,5 @@ input LS30/LS30-tot.th
 input LS-tot.th
    
 input LS-maps.th
+
+endsurvey

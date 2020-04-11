@@ -5,9 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
 # 1-SOURCES 
-source trousCH.th
 source CH.th
-source trousCH.th2
 
 # Add config file
 input ../../config.thc 
@@ -91,5 +89,6 @@ endlayout
     
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o trousCHmap.xvi   
+export map -fmt xvi -layout xviexport -o trousCHmap2020.xvi   
+select MP-zoneCH
 export map -o trouCHplan.pdf -layout my_layout

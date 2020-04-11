@@ -218,12 +218,12 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/LP9-CP39-coupe.xvi
 
 # Select maps
-	#select CP39-plan		# CP39 en plan
-	#select CP39-coupe		# CP39 en coupe
-	#select LP9-plan-actif	# LP9 actif en plan
-	#select LP9-coupe-actif	# LP9 actif en coupe
-	select LP9-plan-tot		# Toute le plan du LP9
-	select LP9-coupe-tot	# Toute la coupe du LP9
+	#select CP39-plan@LP9		# CP39 en plan
+	#select CP39-coupe@LP9		# CP39 en coupe
+	#select LP9-plan-actif@LP9	# LP9 actif en plan
+	#select LP9-coupe-actif@LP9	# LP9 actif en coupe
+	select LP9-plan-tot@LP9		# Toute le plan du LP9
+	select LP9-coupe-tot@LP9	# Toute la coupe du LP9
   
 export map -o Outputs/LP9-CP39-plan.pdf -layout my_layout
 export map -o Outputs/LP9-CP39-plan-Continuations.pdf -layout my_layout-Continuations

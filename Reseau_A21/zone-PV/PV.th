@@ -3,9 +3,10 @@ encoding  utf-8
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
-  
+
+survey zonePV -title "Zone PV"  
   input PV-tot.th
   
   input PV-maps.th
   
-  
+endsurvey

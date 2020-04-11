@@ -4,6 +4,8 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+survey LP9 -title "LP9 - CP39"
+
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/LP9-CP39.th
 	
@@ -17,3 +19,5 @@ input Data/LP9-CP39.th2
 input Data/LP9-CP39-coupe.th2
 
 input LP9-maps.th
+
+endsurvey

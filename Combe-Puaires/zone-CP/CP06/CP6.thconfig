@@ -12,12 +12,7 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
-source data-th/CP6.th
-source data-th2/CP6.th2
-source data-th2/CP6-coupe.th2
-
-# Add maps definitions
-source CP6-maps.th
+source CP6-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -234,16 +229,16 @@ layout my_layout-coupe-Continuations
 endlayout
 
  # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o data-th2/CP6-map.xvi
- #export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP6-coupe.xvi
+ #export map -fmt xvi -layout xviexport -o Data/CP6-map.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/CP6-coupe.xvi
 
 # Select maps
-	#select CP53-plan
-	#select CP53-coupe
-	#select CP6-plan
-	#select CP6-coupe
-	select CP6-plan-tot
-	select CP6-coupe-tot
+	#select CP53-plan@CP6
+	#select CP53-coupe@CP6
+	#select CP6-plan@CP6
+	#select CP6-coupe@CP6
+	select CP6-plan-tot@CP6
+	select CP6-coupe-tot@CP6
 	  
  export map -o Outputs/CP6-plan.pdf -layout my_layout
  export map -o Outputs/CP6-plan-Continuations.pdf -layout my_layout-Continuations

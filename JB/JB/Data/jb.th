@@ -36,15 +36,18 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ###   input Data-th/jb-ajouts
 ###  input Data-th/assemblage
 
+	##Add Maps definitions
+	input jb-maps-plan.th
+	input jb-maps-coupe.th
 	
-   centerline
-
-## Rajout des longueurs explorées, non topo, ou topos perdues
-	station Ca.31@jb-amonts1 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
-	station De.36@jb-amonts2 "+43 m explorés et topographiés le 1991.09.21 par Bernard Lips et Robert Sonney, mais topographie perdue" continuation explored 43m	# Courte-échelle (station De.36, 43 m)
-## Non Topographié
-	station Ib.23@jb-amonts2 "+20 m non topographiés (V6 ter)" continuation explored 20m	# Entrée du V6 ter
-	station Ib.23@jb-amonts2 "+80 m non topographiés (A14)" continuation explored 80m	# Entrée du A14
+	centerline -title "Explorations non topographiées ou topographies manquantes"
+	## Rajout des longueurs explorées, non topo, ou topos perdues
+		station Ca.31@jb-amonts1 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
+		station De.36@jb-amonts2 "+43 m explorés et topographiés le 1991.09.21 par Bernard Lips et Robert Sonney, mais topographie perdue" continuation explored 43m	# Courte-échelle (station De.36, 43 m)
+	## Non Topographié
+		station Ib.23@jb-amonts2 "+20 m non topographiés (V6 ter)" continuation explored 20m	# Entrée du V6 ter
+		station Ib.23@jb-amonts2 "+80 m non topographiés (A14)" continuation explored 80m	# Entrée du A14
+	endcenterline
        
 ## Pour assembler plusieurs fichiers topos
     equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
@@ -123,9 +126,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     #      #equate  Fm.0@jb-amonts1  Da.257@jb-amonts1 #(ou 259 ?)
     #      #equate  Fd.41@jb-amonts1  Da.240@jb-amonts1
  
-   endcenterline
  
- endsurvey
+ #endsurvey
  
 ##########################################################################################
 ## Pour importer les différents fichiers de dessins en plan
@@ -217,14 +219,14 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 # Mais et Erreur
 	input Drawing-th2/Plan/passibas.th2
 	input Drawing-th2/Plan/Erreur.th2
-	    join Erreur berreur1
+	    join SP-Erreur berreur1
 	    join P15 berreur1
 		join P15aval Bourguignons1
 		join P15aval Pseudosiphon2
 	input Drawing-th2/Plan/mais.th2
 		join Mais Mais-2010
 	input Drawing-th2/Plan/dino.th2
-		join dino-1 Erreur -count 2
+		join dino-1 SP-Erreur -count 2
 ## Réseau des Bourguignons	
 	input Drawing-th2/Plan/bourguignons.th2
 ## Réseaux Anou2, Jaunisse, Grand Escalier
@@ -414,3 +416,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/siphons-coupe.th2
 	input Drawing-th2/Coupe/siphons-coupe2020.th2
 		join Siphons2020-SC1 S2-S3_c	# Explo du 24/01/2020
+
+
+endsurvey

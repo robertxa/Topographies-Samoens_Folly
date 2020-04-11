@@ -4,6 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+survey LS22 -title "LS22"
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/LS22.th
 	
@@ -17,3 +18,5 @@ input Data/LS22.th2
 input Data/LS22-coupe.th2
 
 input LS22-maps.th
+
+endsurvey

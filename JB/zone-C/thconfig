@@ -6,9 +6,7 @@ encoding  utf-8
   
   
  # 1-SOURCES 
-
- source trousC.th
- source trousC.th2
+ source C.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -88,19 +86,11 @@ encoding  utf-8
    \fi
    endcode  
   
-
-  
- # Pour dessiner un cadre autour de la topo   
- code tex-map
-   \framethickness=0.5mm
- endcode
-  
- ######################### 
-  
  endlayout
     
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o trousCmap.xvi
-   
+ export map -fmt xvi -layout xviexport -o trousCmap2020.xvi
+
+select MP-zoneC@zoneC
  export map -o trouCplan.pdf -layout my_layout

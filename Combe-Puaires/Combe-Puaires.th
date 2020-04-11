@@ -4,6 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+survey SystemeCP -title "Système de la Combe aux Puaires"
 # Pour importer les différentes données de différents fichiers topos : 
 	input Ermoy/Data/ermoy.th
 	input zone-BA/BA.th
@@ -13,4 +14,7 @@ encoding  utf-8
 	input zone-LS/LS
 	input zone-T/T.th
 	input zone-L/L.th
+
+input Combe-puaires-maps.th
+endsurvey
  

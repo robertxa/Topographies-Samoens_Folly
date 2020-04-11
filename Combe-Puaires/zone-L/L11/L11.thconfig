@@ -134,12 +134,12 @@ layout my_layout-coupe-Continuations
 endlayout
 
   
-#export map -fmt xvi -layout xviexport -o data-th2/L11-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/L11-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/L11-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/L11-coupe.xvi
 
 # Select maps
-	select L11-plan-tot
-	select L11-coupe-tot
+	select L11-plan-tot@L11
+	select L11-coupe-tot@L11
 	  
 export map -o Outputs/L11-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/L11-coupe.pdf

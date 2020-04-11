@@ -12,12 +12,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source Data/V4ter.th
-source Data/V4ter.th2
-source Data/V4ter-coupe.th2
-
-# Add maps definitions
-#source V4ter-maps.th
+source V4ter-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -333,8 +328,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/V4ter-coupe.xvi
 
 # Select maps
-	select V4ter-plan-tot
-	select V4ter-coupe-tot
+	select V4ter-plan-tot@V4ter
+	select V4ter-coupe-tot@V4ter
 	  
 export map -o Outputs/V4ter-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/V4ter-coupe.pdf

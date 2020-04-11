@@ -4,6 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+survey T25 -title "T25a-b"
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/T25a-b.th
 	
@@ -17,3 +18,5 @@ input Data/T25.th2
 input Data/T25-coupe.th2
 
 input T25a-b-maps.th
+
+endsurvey

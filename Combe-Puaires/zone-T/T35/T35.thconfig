@@ -135,8 +135,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/T35-coupe.xvi
 
 # Select maps
-	select T35-plan-tot
-	select T35-coupe-tot
+	select T35-plan-tot@T35
+	select T35-coupe-tot@T35
 	  
 export map -projection plan -o Outputs/T35-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/T35-coupe.pdf

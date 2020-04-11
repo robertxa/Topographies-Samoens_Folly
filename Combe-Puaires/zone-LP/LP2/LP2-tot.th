@@ -4,6 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+survey LP2 -title "LP2"
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/LP2.th
 	
@@ -17,3 +18,5 @@ input Data/LP2.th2
 input Data/LP2-coupe.th2
 
 input LP2-maps.th
+
+endsurvey

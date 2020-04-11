@@ -12,12 +12,7 @@ encoding  utf-8
   # les donnees du dessin, comme ça, ce fichier thconfig appelera 
   # nomcavite.th" et a son tour, "nomcavite.th" appelera
   # "nomcavite.th2")
- source Data/C52.th
- source Data/C52.th2
- source Data/C52-coupe.th2
-
-# Add maps definitions
-source C52-maps.th
+ source C52-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -241,8 +236,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/C52-coupe.xvi
 
 # Select maps
-	select C52-plan-tot
-	select C52-coupe-tot
+	select C52-plan-tot@C52
+	select C52-coupe-tot@C52
 	  
 export map -o Outputs/C52-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/C52-coupe.pdf

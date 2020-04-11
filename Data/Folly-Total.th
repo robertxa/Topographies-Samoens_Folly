@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey MassifFolly -title "Massif du Folly"
+# Pour importer les différentes données de différents fichiers topos : 
+	# Topos et cavités du réseau du A21 
+	input ../Reseau_A21/Synclinal_A21.th
+	# Topos et cavités du système des Avoudrues
+	input ../Avoudrues/Avoudrues.th
+	# Topos et cavités du système du Jean-Bernard
+	input ../JB/Synclinal_JB.th
+	# Topos et cavités du système de la Combe aux Puaires
+	input ../Combe-Puaires/Combe-Puaires.th
+	
+	# Localisation des sources
+	input sources/sources.th
+	
+	# Add maps
+	input Maps.th
+
+endsurvey
+ 	
+ 
+

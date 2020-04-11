@@ -38,10 +38,6 @@ input ../../config.thc
 
 # Add the entrance coordinates
 input legendes/entrances_coordinates.th
-
-# Add maps
-source Data/jb-maps-coupe.th
-
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles
@@ -230,7 +226,7 @@ endlayout
 # 3-EXPORT
 # Export du fichier pdf de la coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-select JB-coupe-tot
+select JB-coupe-tot@Jean-Bernard
  export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2020-coupe.pdf
  export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2020-coupe-continuations.pdf
  export continuation-list -o Outputs/Lists/Continuations-coupe2020.html

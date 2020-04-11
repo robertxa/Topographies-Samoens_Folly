@@ -138,8 +138,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/T59-coupe.xvi
 
 # Select maps
-	select T59-plan-tot
-	select T59-coupe-tot
+	select T59-plan-tot@T59
+	select T59-coupe-tot@T59
 	  
 export map -o Outputs/T59-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/T59-coupe.pdf

@@ -6,58 +6,27 @@ encoding  utf-8
 
 survey zoneCP -title "Zone CP"
 
-	input trousCP
-	#input trousCP.th2
 	# Pour importer les différentes données de différents fichiers topos : 
 	
 	input Reseau-CP/Data/combe-puaires.th
-	#input Reseau-CP/data-th/ReseauCP
-	#input Reseau-CP/data-th2/billy.th2
-	#input Reseau-CP/data-th2/CP12.th2
-	#input Reseau-CP/data-th2/TeteHomme.th2
 	
-	input CP01/data-th/CP1.th
-	input CP01/data-th2/CP1.th2
-	input CP01/data-th2/CP1-coupe.th2
-   
-   input CP03/data-th/CP3.th
-   input CP03/data-th2/CP3.th2
-   
-   input CP06/data-th/CP6.th
-   input CP06/data-th2/CP6.th2
-   
-   input CP15/data-th/CP15.th
-   input CP15/data-th2/CP15.th2
-   
-   input CP17/data-th/CP17.th
-   input CP17/data-th2/CP17.th2
-   
-   input CP19/data-th/CP19.th
-   input CP19/data-th2/CP19.th2
-   
-   input CP21/data-th/CP21.th
-   input CP21/data-th2/CP21.th2
-   
-	input CP24/data-th/CP24.th
-	input CP24/data-th2/CP24.th2
-	input CP24/data-th2/CP24-coupe.th2
-	input CP24/data-th2/CP24-coupe2.th2
+	input CP01/CP1-tot.th
+	input CP03/CP3-tot.th
+	input CP06/CP6-tot.th
+	input CP15/CP15-tot.th
+	input CP17/CP17-tot.th
+	input CP19/CP19-tot.th
+	input CP21/CP21-tot.th
+	input CP24/CP24-tot.th
+	input CP28a/CP28a-tot.th
+	input CP32/CP32-tot.th
+	input CP43/CP43-tot.th
+	input CP62-63/CP62-tot.th
+	input CP69/CP69-tot.th
+	
+	input CP-tot.th
 
-   input CP28a/data-th/CP28a.th
-   input CP28a/data-th2/CP28.th2
-   
-   input CP32/data-th/CP32.th
-   input CP32/data-th2/CP32.th2
-   
-   input CP43/data-th/CP43.th
-   input CP43/data-th2/CP43.th2
-   
-   input CP62-63/data-th/CP62.th
-   input CP62-63/data-th2/CP62.th2
-   input CP62-63/data-th2/CP62-b.th2 
-   input CP62-63/data-th2/CP62-coupe.th2 
-   
-   input CP69/Data/CP69.th
-   input CP69/Data/CP69.th2
-
+	# Call maps
+	input CP-maps.th
+	
 endsurvey

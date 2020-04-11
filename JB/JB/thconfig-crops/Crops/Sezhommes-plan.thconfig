@@ -32,8 +32,6 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 source ../../Data/jb.th
-source ../../Data/jb-maps-plan
-#source jb-maps-plan
 
 # Add config file
 input ../../../../config.thc 
@@ -214,14 +212,14 @@ endlayout
 #export map -proj extended -fmt xvi -layout xviexport -o synthese_coupe2020.xvi
 
 
-#select M-C37-Riviera
-#select M-B22-B21
-#select M-B19-V11
-#select M-Branlots-J14
-#select M-V4-V6-Mais
-#select M-Jean-Dupond
-#select M-Bivouac-500-Gourance
-#select M-aval-900
+#select M-C37-Riviera@Jean-Bernard
+#select M-B22-B21@Jean-Bernard
+#select M-B19-V11@Jean-Bernard
+#select M-Branlots-J14@Jean-Bernard
+#select M-V4-V6-Mais@Jean-Bernard
+#select M-Jean-Dupond@Jean-Bernard
+#select M-Bivouac-500-Gourance@Jean-Bernard
+#select M-aval-900@Jean-Bernard
 
 
 # Export des fichiers pdf, plan et coupe. 
@@ -229,9 +227,9 @@ endlayout
 #  select JB-total@jb.th -map-level 0
 #  select JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-#select JB-plan-tot
-#select M-sezhommes
-select  M-aval-900
+#select JB-plan-tot@Jean-Bernard
+#select M-sezhommes@Jean-Bernard
+select  M-aval-900@Jean-Bernard
 
  export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Sezhommes-jb-Xav-2020-plan1000_TEST.pdf -layout my_layout
 #export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Sezhommes-jb-Xav-2020-plan5000.pdf -layout my_layout

@@ -4,10 +4,8 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey zone_F -title "Zone F"
+survey zoneF -title "Zone F"
 # Pour importer les différentes données de différents fichiers topos : 
- input trousF
- input trousF.th2
-#   input F3/F3
-#    input F3/F3.th2       
+	input F-tot.th
+	input F-maps.th
  endsurvey

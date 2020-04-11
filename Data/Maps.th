@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+
+map MP-Folly-tot -title "Systèmes karstologiques du massif du Folly"
+	MP-sources@sources
+	break
+	MP-systeme-AV@SystemeAV
+	break
+	MP-systeme-JB@SynclinalJB
+	break
+	MP-systeme-A21@SystemeA21
+	break
+	MP-systeme-CP@SystemeCP
+endmap

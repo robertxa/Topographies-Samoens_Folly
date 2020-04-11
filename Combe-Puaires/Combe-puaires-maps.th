@@ -5,19 +5,19 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-systeme-CP -title "Système de la Combe aux Puaires"
-	MP-zoneBA
-	#break
-	#MP-zoneCP
+	MP-zoneBA@zoneBA
 	break
-	MP-zoneDR
+	MP-zoneCP@zoneCP
 	break
-	MP-zoneL
+	MP-zoneDR@zoneDR
 	break
-	MP-zoneLP
+	MP-zoneL@zoneL
 	break
-	MP-zoneLS
+	MP-zoneLP@zoneLP
 	break
-	MP-zoneT
+	MP-zoneLS@zoneLS
 	break
-	Ermoy-plan-tot
+	MP-zoneT@zoneT
+	break
+	Ermoy-plan-tot@Ermoy
 endmap

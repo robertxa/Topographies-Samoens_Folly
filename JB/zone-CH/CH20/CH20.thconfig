@@ -4,9 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-source Data/CH20.th
-source Data/CH20-plan.th2
-source Data/CH20-coupe.th2
+source CH20-tot.th
 
 # Add maps definitions
 source CH20-maps.th
@@ -157,8 +155,8 @@ endlayout
 #export map -fmt xvi -projection extended -layout xviexport -o Data/CH20-coupe.xvi
 
 # Select maps
-	select CH20-plan-tot
-	select CH20-coupe-tot
+	select CH20-plan-tot@CH20
+	select CH20-coupe-tot@CH20
 
 export map -o Outputs/CH20-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CH20-coupe.pdf

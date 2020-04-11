@@ -12,13 +12,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source data-th/CP62.th
-source data-th2/CP62.th2
-source data-th2/CP62-b.th2
-source data-th2/CP62-coupe.th2
-
-# Add maps definitions
-source CP62-maps.th
+source CP62-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -297,18 +291,18 @@ endlayout
 
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o data-th2/CP62-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP62-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CP62-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/CP62-coupe.xvi
  
 #export map -fmt xvi -o cave.xvi -layout morph 
 
 # Select maps
-	#select CP62-plan
-	#select CP62-coupe
-	#select CP63-plan
-	#select CP63-coupe
-	select CP62-plan-tot
-	select CP62-coupe-tot
+	#select CP62-plan@CP62
+	#select CP62-coupe@CP62
+	#select CP63-plan@CP62
+	#select CP63-coupe@CP62
+	select CP62-plan-tot@CP62
+	select CP62-coupe-tot@CP62
 	  
 export map -o Outputs/CP62-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP62-coupe.pdf

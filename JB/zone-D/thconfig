@@ -5,8 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
 # 1-SOURCES 
-source trousD.th
-source trousD.th2
+source D.th
 
 # Add config file
 input ../../config.thc 
@@ -89,5 +88,6 @@ endlayout
   
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o trousDmap.xvi
-   
+
+select MP-zoneD   
 export map -o trouDplan.pdf -layout my_layout

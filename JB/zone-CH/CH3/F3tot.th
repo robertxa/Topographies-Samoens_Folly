@@ -4,22 +4,26 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-input Data/F3.th
+survey CH3 -title "CH3"
+	input Data/F3.th
 
-# pour le plan
-input th2/F3.th2
-input th2/CH3-2.th2
-input th2/CH3_2016.th2
-input th2/CH3_2017.th2
+	# pour le plan
+	input Data/th2/F3.th2
+	input Data/th2/CH3-2.th2
+	input Data/th2/CH3_2016.th2
+	input Data/th2/CH3_2017.th2
 
-join ch3b F3-1
-join CH3_2016a F3-1
-join CH3-2017-1 ch3b -count 2
+	join ch3b F3-1
+	join CH3_2016a F3-1
+	join CH3-2017-1 ch3b -count 2
 
-# Pour la coupe
-input th2/F3-coupe.th2
-input th2/F3-coupe2016.th2
-input th2/F3-coupe2017.th2
+	# Pour la coupe
+	input Data/th2/F3-coupe.th2
+	input Data/th2/F3-coupe2016.th2
+	input Data/th2/F3-coupe2017.th2
 
-join F3-c2016 F3-coupe1
-join CH3-2017-c1 CH3c-2
+	join F3-c2016 F3-coupe1
+	join CH3-2017-c1 CH3c-2
+	
+	input CH3-maps.th
+endsurvey

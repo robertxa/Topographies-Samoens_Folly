@@ -28,5 +28,5 @@ endlayout
 # 3-EXPORT
 # Export du fichier pdf de la coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-#select JB-coupe-tot
+#select JB-coupe-tot@Jean-Bernard
  export map -projection extended -fmt xvi -layout xviexport -o Data/Drawing-th2/xvi/TEST-coupe.xvi

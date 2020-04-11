@@ -135,12 +135,12 @@ layout my_layout-coupe-Continuations
 endlayout
 
   
-#export map -fmt xvi -layout xviexport -o data-th2/T25a-b-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/T25a-b-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/T25a-b-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/T25a-b-coupe.xvi
 
 # Select maps
-	select T25-plan-tot
-	select T25-coupe-tot
+	select T25-plan-tot@T25
+	select T25-coupe-tot@T25
 	  
 export map -o Outputs/T25a-b-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/T25a-b-coupe.pdf

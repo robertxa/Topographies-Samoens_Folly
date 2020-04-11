@@ -204,5 +204,6 @@ layout my_layout
 # Export des fichiers pdf, plan et coupe. 
 #  select JB-total@jb.th -map-level 0
 #  select JB-rev@jb -map-level 0
+#select JB @Jean-Bernard
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2020-coupe3000.pdf

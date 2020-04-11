@@ -1,4 +1,4 @@
-encoding  utf-8  
+encoding  utf-8
   
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
@@ -6,9 +6,7 @@ encoding  utf-8
   
   
  # 1-SOURCES 
-
- source trousCP.th
-# source trousCP.th2
+ source CP.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -67,9 +65,6 @@ encoding  utf-8
  #  grid off
      statistics copyright all
   
- 
-  
-
   
  # Titre          
      code tex-map
@@ -83,24 +78,16 @@ encoding  utf-8
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Trous B} 		
+ 		\cavename={Trous CP} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    endcode  
-  
-
-  
- # Pour dessiner un cadre autour de la topo   
- code tex-map
-   \framethickness=0.5mm
- endcode
-  
- ######################### 
   
  endlayout
     
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o trousCPmap.xvi
-   
+ #export map -fmt xvi -layout xviexport -o trousCPmap.xvi
+ 
+ select MP-systeme-CP   
  export map -o trouCPplan.pdf -layout my_layout

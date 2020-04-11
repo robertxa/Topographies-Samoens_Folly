@@ -136,8 +136,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/BA06-coupe.xvi
 
 # Select maps
-	select BA6-plan-tot
-	select BA6-coupe-tot
+	select BA6-plan-tot@BA6
+	select BA6-coupe-tot@BA6
 	  
 export map -o Outputs/BA06-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/BA06-coupe.pdf

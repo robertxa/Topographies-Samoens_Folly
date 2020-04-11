@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-#survey A21A24 -title "Réseau A21 - A24"
+survey BA6 -title "BA6"
 
 # Pour importer les différentes données de différents fichiers topos : 
    input Data/BA06.th
@@ -16,7 +16,6 @@ encoding  utf-8
 #    equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
 #   endcenterline
  
-# endsurvey
  
 ##########################################################################################
 ## Pour importer les différents fichiers de dessins en plan
@@ -27,3 +26,5 @@ input Data/BA06.th2
 input Data/BA06-coupe.th2
 
 input BA6-maps.th
+
+endsurvey

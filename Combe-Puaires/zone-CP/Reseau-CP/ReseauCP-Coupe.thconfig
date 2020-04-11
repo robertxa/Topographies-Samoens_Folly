@@ -12,11 +12,6 @@ encoding  utf-8
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
 source Data/combe-puaires.th
-#source ReseauCP.th
-#source ReseauCP.th2
-
-# Add maps definitions
-source Data/ReseauCP-maps-coupe.th
  
 # Add config file
 input ../../../config.thc
@@ -109,9 +104,9 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o data-th2/ReseauCP-coupe2020.xvi
 
 # Select maps
-	select MC-ReseauCP-total
-	#select MC-Rivamont 
-	#select MC-Billy-tot
+	select MC-ReseauCP-total@ReseauCP
+	#select MC-Rivamont@ReseauCP 
+	#select MC-Billy-tot@ReseauCP
 	
 export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020.pdf
 #export map -projection extended -layout my_layout-coupe-continuations -o Outputs/2D/ReseauCP-coupe2020-Continuations.pdf

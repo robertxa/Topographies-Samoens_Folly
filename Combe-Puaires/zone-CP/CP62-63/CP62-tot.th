@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CP62 -title "CP62 - CP63"
+# Pour importer les différentes données de différents fichiers topos : 
+   input Data/CP62.th
+	
+ 
+##########################################################################################
+## Pour importer les différents fichiers de dessins en plan
+	## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
+	## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). C'est tout simple !
+
+input Data/CP62.th2
+input Data/CP62-b.th2
+input Data/CP62-coupe.th2
+
+input CP62-maps.th
+
+endsurvey

@@ -13,12 +13,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source data-th/CP17.th
-source data-th2/CP17.th2
-source data-th2/CP17-coupe.th2
-
-# Add maps definitions
-source CP17-maps.th
+source CP17-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -231,12 +226,12 @@ layout my_layout-coupe-Continuations
 endlayout
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o data-th2/CP17-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP17-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CP17-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/CP17-coupe.xvi
 
 # Select maps
-	select CP17-plan-tot
-	select CP17-coupe-tot
+	select CP17-plan-tot@CP17
+	select CP17-coupe-tot@CP17
 	  
 export map -o Outputs/CP17-plan.pdf -layout my_layout
 export map -o Outputs/CP17-plan-Continuations.pdf -layout my_layout-Continuations

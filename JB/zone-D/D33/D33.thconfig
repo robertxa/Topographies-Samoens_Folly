@@ -14,12 +14,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source Data/D33.th
-source Data/D33.th2
-source Data/D33-coupe.th2
-
-# Add maps definitions
-source D33-maps.th
+source D33-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -304,8 +299,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/D33-coupe.xvi
   
 # Select maps
-	select D33-plan-tot
-	select D33-coupe-tot  
+	select D33-plan-tot@D33
+	select D33-coupe-tot@D33
   
 export map -o Outputs/D33-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/D33-coupe.pdf
