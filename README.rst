@@ -11,6 +11,8 @@ Ce dépôt est mis à jour à chaque fois qu'une nouvelle topographie est rajout
 
 Si besoin, des templates pour Therion sont disponibles sur https://github.com/robertxa/Th-Config-Xav .
 
+Un article sur cette base de données topographiques, publié dans l'Echo des Vulcain n°77, est accessible dans le dossier Docs/.
+
 Description
 -----------
 
