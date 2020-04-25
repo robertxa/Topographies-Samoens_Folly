@@ -5,87 +5,87 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map C74-entree-plan -title "C74, entrée"
-	C74-SP7
+map MP-C74-entree-plan -title "C74, entrée"
+	SP-C74-7
 	break
-	C74-SP6
+	SP-C74-6
 	break
-	C74-SP5
+	SP-C74-5
 	break
-	C74-SP13
+	SP-C74-13
 	break
-	C74-SP14
+	SP-C74-14
 endmap
 
-map C74-brancheE-plan -title "C74, branche est"
-	C74-SP4
+map MP-C74-brancheE-plan -title "C74, branche est"
+	SP-C74-4
 	break
-	C74-SP1
+	SP-C74-1
 	break
-	C74-SP2
+	SP-C74-2
 	break
-	C74-SP3
+	SP-C74-3
 endmap
 
-map C74-brancheW-plan -title "C74, branche ouest"
-	C74-SP8
+map MP-C74-brancheW-plan -title "C74, branche ouest"
+	SP-C74-8
 	break
-	C74-SP9
+	SP-C74-9
 	break
-	C74-SP10	# A VERIF
+	SP-C74-10	# A VERIF
 	break
-	C74-SP11
+	SP-C74-11
 	break
-	C74-SP12
+	SP-C74-12
 endmap
 
 
 map MC-C74-brancheW-coupe -title "C74, branche ouest"
-	C74w-SC1
+	SC-C74w-1
 	break
-	C74w-SC2
+	SC-C74w-2
 	break
-	C74w-SC3
+	SC-C74w-3
 endmap
 
 map MC-C74-brancheE-coupe	 -title "C74, branche est"
-	C74e-SC1
+	SC-C74e-1
 	break
-	C74e-SC2
+	SC-C74e-2
 	break
-	C74e-SC3
+	SC-C74e-3
 	break
-	C74e-SC4
+	SC-C74e-4
 	break
-	C74e-SC5
+	SC-C74e-5
 	break
-	C74e-SC6
+	SC-C74e-6
 	break
-	C74e-SC7
+	SC-C74e-7
 	break
-	C74e-SC8
+	SC-C74e-8
 	break
-	C74e-SC9
+	SC-C74e-9
 	break
-	C74e-SC10
+	SC-C74e-10
 	break
-	C74e-SC11
+	SC-C74e-11
 	break
-	C74e-SC12
+	SC-C74e-12
 	break
-	C74e-SC13
+	SC-C74e-13
 endmap
 
 #################################################
-map C74-plan-tot -title "C74"
-	C74-brancheE-plan
+map MP-C74-plan-tot -title "C74"
+	MP-C74-brancheE-plan
 	break
-	C74-brancheW-plan
+	MP-C74-brancheW-plan
 	break
-	C74-entree-plan
+	MP-C74-entree-plan
 endmap
 
-map C74-coupe-tot -title "C74"
+map MC-C74-coupe-tot -title "C74"
 #	MC-C74-entree-coupe
 #	break
 	MC-C74-brancheE-coupe

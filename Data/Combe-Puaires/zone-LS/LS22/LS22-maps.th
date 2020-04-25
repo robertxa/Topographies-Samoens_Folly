@@ -5,13 +5,13 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map LS22-plan-tot
-	LS22-1
+map MP-LS22-plan-tot -title "LS22"
+	SP-LS22-1
 endmap
 
-map LS22-coupe-tot
-	LS22-c1
+map MC-LS22-coupe-tot -title "LS22"
+	SC-LS22-c1
 	break
-	LS22-c2
+	SC-LS22-c2
 endmap
    

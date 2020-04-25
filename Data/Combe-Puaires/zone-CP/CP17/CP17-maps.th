@@ -4,13 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map CP17-plan-tot
-	CP17-1
+map MP-CP17-plan-tot -title "CP17"
+	SP-CP17-1
 endmap
 
-map CP17-coupe-tot
-	CP17-SC1
+map MC-CP17-coupe-tot -title "CP17"
+	SC-CP17-1
 	break
-	CP17-SC2
+	SC-CP17-2
 endmap
    

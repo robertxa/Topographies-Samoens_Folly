@@ -216,8 +216,8 @@ endlayout
 # export map -projection extended -fmt xvi -layout xviexport -o Data/CP28a-coupe.xvi
  
  # Select maps
-	select CP28-plan-tot@CP28a
-	#select CP28-coupe-tot@CP28a
+	select MP-CP28-plan-tot@CP28a
+	#select MC-CP28-coupe-tot@CP28a
 	
  export map -o Outputs/CP28a-plan.pdf -layout my_layout
 # export map -projection extended -layout my_layout -o Outputs/CP28a-coupe.pdf

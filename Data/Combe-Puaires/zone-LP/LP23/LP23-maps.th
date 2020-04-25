@@ -5,20 +5,29 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map LP23-plan-tot
-	LP23-1
+map MP-LP23-plan-tot -title "LP23"
+	SP-LP23-1
 	break
-	LP23-2
+	SP-LP23-2
 	break
-	LP23-3
+	SP-LP23-3
 	break
-	LP23-4
+	SP-LP23-4
 	break
-	LP23-5
+	SP-LP23-5
 	break
-	LP23-6
+	SP-LP23-6
 endmap
 
-#map LP23-coupe-tot
-#endmap
+map MC-LP23-coupe-tot -title "LP23"	# REVOIR ORDRE
+	SC-LP23-1
+	#break
+	SC-LP23-3
+	#break
+	SC-LP23-4
+	#break
+	SC-LP23-5
+	#break
+	SC-LP23-2
+endmap
    

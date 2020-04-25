@@ -312,7 +312,7 @@ endlayout
 
 # Select maps
 	select MP-AV8-tot@AV8
-	select AV8-coupe-tot@AV8
+	select MC-AV8-tot@AV8
 	  
 export map -o Outputs/AV8-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/AV8-coupe.pdf

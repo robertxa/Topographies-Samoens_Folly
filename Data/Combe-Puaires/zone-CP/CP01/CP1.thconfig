@@ -309,8 +309,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CP1-coupe.xvi
 
 # Select maps
-	select CP1-plan-tot@CP1
-	select CP1-coupe-tot@CP1
+	select MP-CP1-plan-tot@CP1
+	select MC-CP1-coupe-tot@CP1
 	 
 export map -projection extended -layout my_layout-coupe -o Outputs/CP1-coupe2.pdf 
 #export map -projection extended -layout my_layout-coupe -o Outputs/CP1-coupe2-Continuations.pdf 

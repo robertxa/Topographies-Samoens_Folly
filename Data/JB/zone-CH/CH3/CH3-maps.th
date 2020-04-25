@@ -4,54 +4,54 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map F3-1975-plan
-	F3-1
+map MP-F3-1975-plan -title "CH3 - Historique"
+	SP-F3-1
 	break
-	ch3b
+	SP-ch3b
 endmap
 
-map F3-1975-coupe
-	F3-coupe1
+map MC-F3-1975-coupe -title "CH3 - Historique"
+	SC-F3-coupe1
 	break
-	CH3c-2
+	SC-CH3c-2
 endmap
 
-map CH3-amonts-plan
-	CH3-2017-1
+map MP-CH3-amonts-plan -title "CH3 - Amont"
+	SP-CH3-2017-1
 	break
-	CH3-2017-2
+	SP-CH3-2017-2
 endmap
 
-map CH3-aval-plan
-	CH3_2016a
+map MP-CH3-aval-plan -title "CH3 - Aval"
+	SP-CH3_2016a
 	break
-	CH3-2016b
+	SP-CH3-2016b
 endmap
 
-map CH3-amonts-coupe
-	CH3-2017-c1
+map MC-CH3-amonts-coupe -title "CH3 - Amonts"
+	SC-CH3-2017-c1
 	break
-	CH3-2017c2
+	SC-CH3-2017c2
 endmap
 
-map CH3-aval-coupe
-	F3-c2016
+map MC-CH3-aval-coupe -title "CH3 - Aval"
+	SC-F3-c2016
 endmap
 
 
-map CH3-plan-tot
-	F3-1975-plan
+map MP-CH3-plan-tot -title "CH3"
+	MP-F3-1975-plan
 	break
-	CH3-amonts-plan
+	MP-CH3-amonts-plan
 	break
-	CH3-aval-plan
+	MP-CH3-aval-plan
 endmap
 
-map CH3-coupe-tot
-	F3-1975-coupe
+map MC-CH3-coupe-tot -title "CH3"
+	MC-F3-1975-coupe
 	break
-	CH3-amonts-coupe
+	MC-CH3-amonts-coupe
 	break
-	CH3-aval-coupe
+	MC-CH3-aval-coupe
 endmap
    

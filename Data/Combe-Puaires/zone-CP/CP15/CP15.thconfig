@@ -230,8 +230,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CP15-coupe.xvi
 
 # Select maps
-	select CP15-plan-tot@CP15
-	select CP15-coupe-tot@CP15
+	select MP-CP15-plan-tot@CP15
+	select MC-CP15-coupe-tot@CP15
 	  
 export map -o Outputs/CP15-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout -o Outputs/CP15-coupe.pdf

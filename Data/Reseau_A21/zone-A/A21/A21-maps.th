@@ -11,51 +11,51 @@ encoding  utf-8
 #		preview below JB-amonts
 #endmap
 
-map A21-plan
-	A21-1
+map MP-A21-plan -title "A21"
+	SP-A21-1
 	break
-	A21-2
+	SP-A21-2
 	break
-	A21-3
+	SP-A21-3
 	break
-	A21-4
+	SP-A21-4
 	break
-	A21-7
+	SP-A21-7
 	break
-	A21-8
+	SP-A21-8
 	break
-	A21-5
+	SP-A21-5
 	break
-	A21-6
+	SP-A21-6
 endmap
 
-map A24-plan
-	A24-1
+map MP-A24-plan -title "A24"
+	SP-A24-1
 endmap
 
 
 ###############################
-map A21-plan-tot
-	A21-plan
+map MP-A21-tot -title "A21 - A24"
+	MP-A21-plan
 	break
-	A24-plan
+	MP-A24-plan
 endmap
 
-map A21-coupe-tot
-	A24-SC1
+map MC-A21-tot -title "A21 - A24"
+	SC-A24-SC1
 	break
-	A21-SC1
+	SC-A21-SC1
 	break
-	A21-SC2
+	SC-A21-SC2
 	break
-	A21-SC3
+	SC-A21-SC3
 	break
-	A21-SC4
+	SC-A21-SC4
 	#break
-	#A21-SC5
+	#SC-A21-SC5
 	break
-	A21-SC6
+	SC-A21-SC6
 	break
-	A21-SC7
+	SC-A21-SC7
 endmap
    

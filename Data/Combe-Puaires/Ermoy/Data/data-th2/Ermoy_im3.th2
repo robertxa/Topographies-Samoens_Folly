@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap avalinf -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
+scrap SP-avalinf -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
 
 line wall -subtype unsurveyed -outline in
   1245.0 -2090.5
@@ -566,7 +566,7 @@ endscrap
 
 
 
-scrap siphon-aval -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
+scrap SP-siphon-aval -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
 
 line wall -subtype invisible
   1442.75 -2745.5
@@ -933,7 +933,7 @@ endscrap
 
 
 
-scrap aval2 -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
+scrap SP-aval2 -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
 
 line pit
   1523.0 -2558.75
@@ -1290,7 +1290,7 @@ endscrap
 
 
 
-scrap aval3 -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
+scrap SP-aval3 -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
 
 point 1923.25 -2892.5 station -name 12.10@Ermoy
 
@@ -1399,7 +1399,7 @@ endscrap
 
 
 
-scrap brascas -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
+scrap SP-brascas -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
 
 point 1745.5 -3052.75 narrow-end
 
@@ -1469,7 +1469,7 @@ endscrap
 
 
 
-scrap brascas2 -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
+scrap SP-brascas2 -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
 
 point 1599.75 -2607.5 station -name 11.17@Ermoy
 
@@ -1953,7 +1953,7 @@ endscrap
 
 
 
-scrap jctaval -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
+scrap SP-jctaval -projection plan -author 2014 "Xavier Robert" -author 2009 "Stéphane Lips" -author 1974 "Michel Siméon" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licences/by-nc-sa/4.0/" -scale [-128.0 -1691.1249 5881.0 -1691.1249 0.0 0.0 152.6286 0.0 m]
 
 point 1569.0 -2197.25 height -value [+12 m]
 

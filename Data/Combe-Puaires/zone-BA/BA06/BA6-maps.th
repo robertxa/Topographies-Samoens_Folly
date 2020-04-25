@@ -5,28 +5,22 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map BA6-2014-plan
-	BA06-SP1
+map MP-BA6-2014-plan -title "BA6"
+	SP-BA06-1
 	break
-	BA06-SP2
+	SP-BA06-2
 endmap
 
-map BA6-2014-coupe
-	BA6-SC1
+map MC-BA6-2014-coupe -title "BA6"
+	SC-BA6-1
 endmap
 
-#map BA6-???-plan
-#endmap
 
-#map BA6-???-coupe
-#endmap
-
-
-map BA6-plan-tot
-	BA6-2014-plan
+map MP-BA6-plan-tot -title "BA6"
+	MP-BA6-2014-plan
 endmap
 
-map BA6-coupe-tot
-	BA6-2014-coupe
+map MC-BA6-coupe-tot -title "BA6"
+	MC-BA6-2014-coupe
 endmap
    

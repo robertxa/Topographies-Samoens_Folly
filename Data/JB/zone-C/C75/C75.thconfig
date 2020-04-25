@@ -149,8 +149,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/C75-coupe.xvi
 
 # Select maps
-	select C75-plan-tot@C75
-	select C75-coupe-tot@C75
+	select MP-C75-plan-tot@C75
+	select MC-C75-coupe-tot@C75
 	
 export map   -o Outputs/C75-plan.pdf   -layout my_layout
 export map -projection extended -o Outputs/C75-coupe.pdf -layout my_layout-coupe

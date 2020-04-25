@@ -328,8 +328,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/V4ter-coupe.xvi
 
 # Select maps
-	select V4ter-plan-tot@V4ter
-	select V4ter-coupe-tot@V4ter
+	select MP-V4ter-plan-tot@V4ter
+	select MC-V4ter-coupe-tot@V4ter
 	  
 export map -o Outputs/V4ter-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/V4ter-coupe.pdf

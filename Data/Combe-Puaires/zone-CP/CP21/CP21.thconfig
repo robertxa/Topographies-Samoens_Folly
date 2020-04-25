@@ -295,8 +295,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CP21-coupe.xvi
 
 # Select maps
-	select CP21-plan-tot@CP21
-	select CP21-coupe-tot@CP21
+	select MP-CP21-plan-tot@CP21
+	select MC-CP21-coupe-tot@CP21
 	  
 export map -o Outputs/CP21-plan.pdf -layout my_layout
 export map -o Outputs/CP21-plan-Continuations.pdf -layout my_layout-Continuations

@@ -301,8 +301,8 @@ endlayout
 	#select CP62-coupe@CP62
 	#select CP63-plan@CP62
 	#select CP63-coupe@CP62
-	select CP62-plan-tot@CP62
-	select CP62-coupe-tot@CP62
+	select MP-CP62-plan-tot@CP62
+	select MC-CP62-coupe-tot@CP62
 	  
 export map -o Outputs/CP62-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP62-coupe.pdf

@@ -78,52 +78,52 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	input data-th2/TeteHomme.th2
 	input data-th2/CP12.th2
 	
-	join 4vents-2 4vents-4
-	join 4vents-2 Massues-1
-	join huit-1 CP14-2
-	join huit-1 CP14-2
+	join SP-4vents-2 SP-4vents-4
+	join SP-4vents-2 SP-Massues-1
+	join SP-huit-1 SP-CP14-2
+	join SP-huit-1 SP-CP14-2
 
 	
 	input data-th2/clowns.th2
-	join clown_Sp1 Massues-2
+	join SP-clown-1 SP-Massues-2
  
  	input data-th2/Billy1.th2
- 	join billy2015_1 Billy-3 #-count 2
- 	join billy2015_1 Billy-4
+ 	join SP-billy2015_1 SP-Billy-3 #-count 2
+ 	join SP-billy2015_1 SP-Billy-4
  	
  	input data-th2/Billy2.th2
  	
  	input data-th2/Billy3.th2
- 	join Billy3-s1 Billy-4 -count 2
+ 	join SP-Billy3-s1 SP-Billy-4 -count 2
  	
  	input data-th2/riv_amont.th2
- 	join palm-Sp1 Pierrot-6
- 	join amont-dessous-Sp1 Pierrot-6
- 	join affsteph-Sp1 Pierrot-1
+ 	join SP-palm-1 SP-Pierrot-6
+ 	join SP-amont-dessous-1 SP-Pierrot-6
+ 	join SP-affsteph-1 SP-Pierrot-1
  	# Homme-8 et Homme-7 à commenter !!! C'est tout pourri ! c'est ce qui a été dessiné à partir des data des Cataphiles...
- 	join homjct-Sp2 Homme-3
- 	join homjct-Sp2 Massues-3
+ 	join SP-homjct-2 SP-Homme-3
+ 	join SP-homjct-2 SP-Massues-3
  	
  	input data-th2/rivamont2019.th2
- 	join rivamont2019-SP3 palm-Sp2
+ 	join SP-rivamont2019-3 SP-palm-2
  	
  	input data-th2/CP14-2011.th2
- 	join CP14_2008-Sp1 CP14-2
+ 	join SP-CP14_2008-1 SP-CP14-2
 
 
 
 # Pour importer les différents fichiers de dessins en Coupe
 	
 	input data-th/Scraps-alone/Clowns/Data/clowns-coupe.th2
- 	join clowns-SC1 bivouac-SC2
+ 	join SC-clowns-1 SC-bivouac-2
  	
  	# le Sirocco et les 4 vents
  	input data-th/Scraps-alone/Huit/huit-coupe.th2
- 	join aval-CP12-SC2 huit-SC1
+ 	join SC-aval-CP12-2 SC-huit-1
  	
  	#join sirocco-SC4 rasoir-SC?
  	input data-th/Scraps-alone/2xxpats/Data/2xxpats-coupe.th2
- 	join sirocco-SC4 2xxpats-SC1
+ 	join SC-sirocco-4 SC-2xxpats-1
  	
  	## Le méandre Billy
  	input data-th/Scraps-alone/Billy/Data/billy-coupe.th2
@@ -140,14 +140,14 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
  	input data-th/Scraps-alone/Riviere_amont/data/rivamont2014-coupe.th2
  	
  	input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont_coupe.th2
- 	join  hautspots-SC3 aff_coupe_1
+ 	join  SC-hautspots-3 SC-aff_coupe_1
  	input data-th/Scraps-alone/Riviere_amont/data/rivamont2019-coupe.th2
- 	join rivamont2019-SC1 Palmier-SC1
+ 	join SC-rivamont2019-1 SC-Palmier-1
  	
  	## La rivière Aval
  	input data-th/Scraps-alone/Riviere_aval/Data/riviere_aval-coupe.th2
-	join RivAval-SC3 bivouacpierrot-SC1
-	join Massues-SC1 massues-SC2
+	join SC-RivAval-3 SC-bivouacpierrot-1
+	join SC-Massues-1 SC-massues-2
 	
 	input data-th/Scraps-alone/shunt_cata/Data/shunt_cata-coupe.th2
 	#join
@@ -158,15 +158,15 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	
 	# CP14
 	input data-th/Scraps-alone/CP14/Data/CP14-coupe.th2
-	join CP14-SC2 sirocco-SC1
+	join SC-CP14-2 SC-sirocco-1
 
 	# CP12, CP19b et Reptiles
 	input data-th/Scraps-alone/CP12/Data/CP12-coupe.th2
 	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12-coupe.th2
-	join CP12-SC1 aval-CP12-SC1
+	join SC-CP12-1 SC-aval-CP12-1
 	#join CP12-SC1 P18-SC1 ???
 	input data-th/Scraps-alone/Reptiles/Data/reptiles-coupe.th2
-	join Reptiles-SC1 aval-CP12-SC1
+	join SC-Reptiles-1 SC-aval-CP12-1
 	input data-th/Scraps-alone/CP19b/Data/CP19b-coupe.th2
 	# Pas de join ?
 

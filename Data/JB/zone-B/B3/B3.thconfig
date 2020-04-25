@@ -325,8 +325,8 @@ endlayout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/B3-2015-coupe.xvi
 
 # Select maps
-	select B3-plan-tot@B3
-	select B3-coupe-tot@B3
+	select MP-B3-plan-tot@B3
+	select MC-B3-coupe-tot@B3
 
 export map -projection extended -layout my_layout-coupe -o Outputs/B3-coupe2015-b.pdf
 export map -o Outputs/B3-plan2015-b.pdf -layout my_layout

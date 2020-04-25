@@ -5,44 +5,44 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map CP62-plan
-	CP62-1
+map MP-CP62-plan -title "CP62"
+	SP-CP62-1
 	break
-	CP62-2
+	SP-CP62-2
 endmap
 
-map CP62-coupe
-	CP62-c1
+map MC-CP62-coupe -title "CP62"
+	SC-CP62-c1
 	break
-	CP62-c2
+	SC-CP62-c2
 	break
-	CP62-c3
+	SC-CP62-c3
 endmap
 
-map CP63-plan
-	scrap1-cp62
+map MP-CP63-plan -title "CP63"
+	SP-CP63-1
 	break
-	scrap24-CP62
+	SP-CP63-2
 	break
-	scrap63-CP62
+	SP-CP63-3
 endmap
 
-map CP63-coupe
-	CP62-c4
+map MC-CP63-coupe -title "CP63"
+	SC-CP62-c4
 	break
-	CP62-c5
+	SC-CP62-c5
 endmap
 
 
-map CP62-plan-tot
-	CP62-plan
+map MP-CP62-plan-tot -title "CP62 - CP63"
+	MP-CP62-plan
 	break
-	CP63-plan
+	MP-CP63-plan
 endmap
 
-map CP62-coupe-tot
-	CP62-coupe
+map MC-CP62-coupe-tot -title "CP62 - CP63"
+	MC-CP62-coupe
 	break
-	CP63-coupe
+	MC-CP63-coupe
 endmap
    

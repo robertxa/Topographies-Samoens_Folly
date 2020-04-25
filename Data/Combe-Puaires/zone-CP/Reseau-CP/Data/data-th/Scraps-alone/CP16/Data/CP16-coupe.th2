@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap CP16-SC1 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
+scrap SC-CP16-1 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
 
 line wall -close on -outline in
   1288.5 1373.5
@@ -110,7 +110,7 @@ endscrap
 
 
 
-scrap CP16-SC2 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
+scrap SC-CP16-2 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
 
 line wall -outline none -subtype ice
   971.5 1436.5
@@ -339,7 +339,7 @@ endscrap
 
 
 
-scrap CP16-SC4 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
+scrap SC-CP16-4 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
 
 line rope
   418.0 541.0
@@ -445,7 +445,7 @@ endscrap
 
 
 
-scrap CP16-SC3 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
+scrap SC-CP16-3 -projection extended -author 2007 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1624.0638000000001 -128.0 0.0 0.0 44.50242052 0.0 m]
 
 line wall -outline in -subtype debris
   798.0 1329.0
@@ -789,9 +789,6 @@ line wall -subtype presumed
   586.0 1153.5 583.0 1154.5 576.5 1143.5
   569.47 1131.6 562.0 1118.5 562.0 1118.5
   smooth off
-endline
-
-line wall
 endline
 
 line wall

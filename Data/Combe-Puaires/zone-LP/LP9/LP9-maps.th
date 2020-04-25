@@ -5,70 +5,68 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map CP39-plan	# plan du CP39
-	CP39-1
+map MP-CP39-plan -title "CP39"	# plan du CP39
+	SP-CP39-1
 	break
-	CP39-2
+	SP-CP39-2
 	break
-	CP39-3
+	SP-CP39-3
 	break
-	CP39-4
+	SP-CP39-4
 	break
-	CP39-5
+	SP-CP39-5
 	break
-	CP39-6
+	SP-CP39-6
 	break
-	CP39-7
+	SP-CP39-7
 	break
-	CP39-8
+	SP-CP39-8
 	break
-	CP39-9
+	SP-CP39-9
 endmap
 
-map CP39-coupe
-	CP39-Sc1
+map MC-CP39-coupe -title "CP39"
+	SC-CP39-1
 	break
-	CP39-SC2
+	SC-CP39-2
 	break
-	CP39-SC3
+	SC-CP39-3
 	break
-	CP39-SC4
-	
+	SC-CP39-4
 endmap
 
-map LP9-plan-actif
-	LP9-1
+map MP-LP9-plan-actif -title "LP9 - Actif"
+	SP-LP9-1
 	break
-	LP9-2
+	SP-LP9-2
 	break
-	LP9-3
+	SP-LP9-3
 	break
-	LP9-4
+	SP-LP9-4
 	break
-	LP9-5
+	SP-LP9-5
 	break
-	LP9-7
+	SP-LP9-7
 endmap
 
-map LP9-coupe-actif
-	LP9-Sc1
+map MC-LP9-coupe-actif -title "LP9 - Actif"
+	SC-LP9-1
 	break
-	LP9-SC2
+	SC-LP9-2
 	break
-	LP9-Sc3
-	
+	SC-LP9-3
 endmap
 
 
-map LP9-plan-tot
-	CP39-plan
+map MP-LP9-plan-tot -title "LP9 - CP39"
+	MP-CP39-plan
 	break
-	LP9-plan-actif
+	MP-LP9-plan-actif
 endmap
 
-map LP9-coupe-tot
-	CP39-coupe
+map MC-LP9-coupe-tot -title "LP9 - CP39"
+	MC-CP39-coupe
 	break
-	LP9-coupe-actif
+	MC-LP9-coupe-actif
 endmap
    

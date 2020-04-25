@@ -229,8 +229,8 @@ endlayout
 # export map -projection extended -fmt xvi -layout xviexport -o data-th2/CP32-coupe.xvi
 
 # Select maps
-	select CP32-plan-tot@CP32
-	select CP32-coupe-tot@CP32
+	select MP-CP32-plan-tot@CP32
+	select MC-CP32-coupe-tot@CP32
 	  
  export map -o Outputs/CP32-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/CP32-coupe.pdf

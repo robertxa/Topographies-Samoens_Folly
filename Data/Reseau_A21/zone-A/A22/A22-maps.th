@@ -11,17 +11,17 @@ encoding  utf-8
 #		preview below JB-amonts
 #endmap
 
-map A22-plan-tot
-	V22-1
+map MP-A22-tot -title "A22"
+	SP-V22-1
 	break
-	V22-2
+	SP-V22-2
 endmap
 
-map A22-coupe-tot
-	A22-SC1
+map MC-A22-coupe-tot -title "A22"
+	SC-A22-SC1
 	break
-	A22-SC2
+	SC-A22-SC2
 	break
-	A22-SC3
+	SC-A22-SC3
 endmap
    

@@ -240,8 +240,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/DR1-coupe.xvi
 
 # Select maps
-	select DR1-plan-tot@DR1
-	select DR1-coupe-tot@DR1
+	select MP-DR1-plan-tot@DR1
+	select MC-DR1-coupe-tot@DR1
 	  
 export map -o Outputs/DR1-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/DR1-coupe.pdf

@@ -5,47 +5,44 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map C14-1999-plan
-	C14-1
+map MP-C14-1999-plan -title "C14"
+	SP-C14-1
 	break
-	C14-2
+	SP-C14-2
 	break
-	C14-3
+	SP-C14-3
 	break
-	C14-4
+	SP-C14-4
 	break
-	C14-6
+	SP-C14-6
 	break
-	C14-7
+	SP-C14-7
 	break
-	C14-8
+	SP-C14-8
 endmap
 
-map C14-1999-coupe
-	C14-coupe1
+map MC-C14-1999-coupe -title "C14"
+	SC-C14-coupe1
 	break
-	C14-coupe2
+	SC-C14-coupe2
 	break
-	C14-coupe3
-	
+	SC-C14-coupe3
 endmap
 
-#map C14-plan
+#map MP-C14-plan
 	
 #endmap
 
-#map C14-coupe
+#map MC-C14-coupe
 	
 #endmap
 
 
-map C14-plan-tot
-	C14-1999-plan
-	
+map MP-C14-plan-tot -title "C14"
+	MP-C14-1999-plan
 endmap
 
-map C14-coupe-tot
-	C14-1999-coupe
-	
+map MC-C14-coupe-tot -title "C14"
+	MC-C14-1999-coupe
 endmap
    

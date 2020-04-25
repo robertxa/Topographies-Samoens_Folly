@@ -226,22 +226,22 @@ endlayout
 #export map -proj extended -fmt xvi -layout xviexport -o synthese_coupe2020.xvi
 
 
-#select M-C37-Riviera
-#select M-B22-B21
-#select M-B19-V11
-#select M-Branlots-J14
-#select M-V4-V6-Mais
-#select M-Jean-Dupond
-#select M-Bivouac-500-Gourance
-#select M-aval-900
+#select MP-C37-Riviera
+#select MP-B22-B21
+#select MP-B19-V11
+#select MP-Branlots-J14
+#select MP-V4-V6-Mais
+#select MP-Jean-Dupond
+#select MP-Bivouac-500-Gourance
+#select MP-aval-900
 
 
 # Export des fichiers pdf, plan et coupe. 
 #select aspiro 
-#  select JB-total@jb.th -map-level 0
-#  select JB-rev@jb -map-level 0
+#  select MP-JB-total@jb.th -map-level 0
+#  select MP-JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-select JB-plan-tot@Jean-Bernard
+select MP-JB-plan-tot@Jean-Bernard
 export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000.pdf -layout my_layout
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000_Continuations.pdf -layout my_layout-continuations
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan5000.pdf -layout my_layout

@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap V6ter -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-V6ter -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 7298.0 5237.75 label -text "V6 bis" -scale xl
 
@@ -70,7 +70,7 @@ endscrap
 
 
 
-scrap V6 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-V6 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 7179.5 5387.25 continuation
 
@@ -464,7 +464,7 @@ endscrap
 
 
 
-scrap V4 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-V4 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 7018.75 5024.25 label -text "Salle Delacour"
 
@@ -568,7 +568,6 @@ point 7022.87 5079.47 station -name Ja.9@jb-amonts2
 
 #point 7009.28 5102.76 station -name Ja.7@jb-amonts2
 
-
 point 6953.31 5140.84 station -name Ih.6@jb-amonts2
 
 point 6915.18 5139.64 station -name Ih.5@jb-amonts2
@@ -597,11 +596,9 @@ point 7014.38 5116.13 station -name Ih.14@jb-amonts2
 
 #point 7012.45 5125.31 station -name Ja.6@jb-amonts2
 
-
 point 7036.11 5145.07 station -name Ih.15@jb-amonts2
 
 #point 7026.56 5142.12 station -name Ja.5@jb-amonts2
-
 
 point 7011.98 5141.52 station -name Ih.12@jb-amonts2
 
@@ -609,17 +606,13 @@ point 7047.19 5151.75 station -name Ih.13@jb-amonts2
 
 #point 7052.07 5159.98 station -name Ja.4@jb-amonts2
 
-
 point 7050.02 5156.19 station -name Ih.16@jb-amonts2
 
 #point 7033.35 5182.09 station -name Ja.2@jb-amonts2
 
-
 #point 7053.04 5177.48 station -name Ja.3@jb-amonts2
 
-
 #point 7022.63 5211.54 station -name Ja.1@jb-amonts2
-
 
 line wall -close on -outline in
   7009.0 5128.0
@@ -833,12 +826,11 @@ point 6817.25 5140.5 entrance -orientation 113.9
 
 #point 7057.83 5233.53 station -name Ja.0@jb-amonts2
 
-
 endscrap
 
 
 
-scrap V4-3 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-V4-3 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 7094.53 5172.96 station -name Ih.23@jb-amonts2
 
@@ -1039,8 +1031,7 @@ endline
 endscrap
 
 
-
-scrap V4-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-V4-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 7444.0 4690.25 rope
 
@@ -1395,7 +1386,7 @@ endscrap
 
 
 
-scrap savoyards -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-savoyards -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 line wall -reverse on
   7425.5 4719.25

@@ -18,22 +18,22 @@ survey Ermoy -title "Grotte de l'Ermoy"
  	
 	# Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
 	## join scrap1 scrap2 . C'est tout simple !
-	join v_bivouac Escalades
-	join jctaval Aval-sup
-	join avalinf Ermoy-entree2
-	join avalinf Aval-sup -count 2
+	join SP-v_bivouac SP-Escalades
+	join SP-jctaval SP-Aval-sup
+	join SP-avalinf SP-Ermoy-entree2
+	join SP-avalinf SP-Aval-sup -count 2
 
 	# Pour la Coupe :
 	input data-th2/Ermoy-coupe1.th2
 	
 	input data-th2/Ermoy-coupe2.th2
-	join Erm-SC1 Erm-SC5
+	join SC-Erm-1 SC-Erm-5
 	
 	input data-th2/Ermoy-coupe3.th2
-	join Erm-SC5 Erm-SC9
+	join SC-Erm-5 SC-Erm-9
 	
 	input data-th2/Ermoy-coupe4.th2
-	join Erm-SC10 Erm-SC15
+	join SC-Erm-10 SC-Erm-15
 	
 	#input maps definition
 	input Ermoy-maps.th

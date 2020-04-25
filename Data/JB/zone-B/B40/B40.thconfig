@@ -137,8 +137,8 @@ export map -fmt xvi -layout xviexport -o Data/B40-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o Data/B40-coupe.xvi
   
 # Select maps
-	select B40-plan-tot@B40
-	select B40-coupe-tot@B40
+	select MP-B40-plan-tot@B40
+	select MC-B40-coupe-tot@B40
    
 export map -projection extended -layout my_layout-coupe -o Outputs/B40-coupe.pdf
 export map -o Outputs/B40-plan.pdf -layout my_layout

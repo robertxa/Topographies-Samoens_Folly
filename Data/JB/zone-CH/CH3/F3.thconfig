@@ -321,8 +321,8 @@ endlayout
 	#select CH3-amonts-coupe@CH3
 	#select CH3-aval-plan@CH3
 	#select CH3-aval-coupe@CH3
-	select CH3-plan-tot@CH3
-	select CH3-coupe-tot@CH3
+	select MP-CH3-plan-tot@CH3
+	select MC-CH3-coupe-tot@CH3
   
  export map -o Outputs/2D/F3-plan2017.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/2D/F3-coupe2017.pdf

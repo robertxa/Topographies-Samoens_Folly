@@ -5,181 +5,174 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>  
 
 
-#map JB-rev
-#		Voltigeurs-amonts
-#	break
-#		voltigeurs
-#		preview below JB-amonts
-#endmap
-
 map MP-RivAmont2019 -title "Rivière amont"
-	rivamont2019-SP1 #@ReseauCP
+	SP-rivamont2019-1 #@ReseauCP
 	break
-	rivamont2019-SP2 #@ReseauCP
+	SP-rivamont2019-2 #@ReseauCP
 	break
-	rivamont2019-SP3 #@ReseauCP
+	SP-rivamont2019-3 #@ReseauCP
 endmap
 
 map MP-RivAPierrot -title "Rivière à Pierrot"
-	palm-Sp1 #@ReseauCP
+	SP-palm-1 #@ReseauCP
 	break
-	palm-Sp2 #@ReseauCP
+	SP-palm-2 #@ReseauCP
 	break
-	affsteph-Sp1 #@ReseauCP
+	SP-affsteph-1 #@ReseauCP
 	break
-	Bousiers #@ReseauCP
+	SP-Bousiers #@ReseauCP
 	break
-	Pierrot-1 #@ReseauCP
+	SP-Pierrot-1 #@ReseauCP
 	break
-	Pierrot-2 #@ReseauCP
+	SP-Pierrot-2 #@ReseauCP
 	break
-	Pierrot-3 #@ReseauCP
+	SP-Pierrot-3 #@ReseauCP
 	break
-	Pierrot-5 #@ReseauCP
+	SP-Pierrot-5 #@ReseauCP
 	break
-	Pierrot-6 #@ReseauCP
+	SP-Pierrot-6 #@ReseauCP
 	break
-	amont-dessous-Sp1 #@ReseauCP
+	SP-amont-dessous-1 #@ReseauCP
 endmap
 
 map MP-RivTeteHomme -title "Galerie de la Tête à l'Homme'"
-	Homme-2 #@ReseauCP
+	SP-Homme-2 #@ReseauCP
 	break
-	Homme-3 #@ReseauCP
+	SP-Homme-3 #@ReseauCP
 	break
-	Homme-5 #@ReseauCP
+	SP-Homme-5 #@ReseauCP
 	break
-	Homme-6 #@ReseauCP
+	SP-Homme-6 #@ReseauCP
 	break
-	Homme-1 #@ReseauCP
+	SP-Homme-1 #@ReseauCP
 endmap
 
 map MP-4vents-FileIndienne -title "Les 4 vents, la galerie des Massues et la galerie des Clowns"
-	4vents-1 #@ReseauCP
+	SP-4vents-1 #@ReseauCP
 	break
-	4vents-2 #@ReseauCP
+	SP-4vents-2 #@ReseauCP
 	break
-	4vents-3 #@ReseauCP
+	SP-4vents-3 #@ReseauCP
 	break
-	clown_Sp1 #@ReseauCP
+	SP-clown-1 #@ReseauCP
 	break
-	4vents-4 #@ReseauCP
+	SP-4vents-4 #@ReseauCP
 	break
-	Massues-1 #@ReseauCP
+	SP-Massues-1 #@ReseauCP
 	break
-	Massues-2 #@ReseauCP
+	SP-Massues-2 #@ReseauCP
 	break
-	Massues-3 #@ReseauCP
+	SP-Massues-3 #@ReseauCP
 endmap
 
 map MP-espoir -title "Réseau de l'Espoir'"
-	Espoir-6 #@ReseauCP
+	SP-Espoir-6 #@ReseauCP
 	break
-	Espoir-2 #@ReseauCP
+	SP-Espoir-2 #@ReseauCP
 	break
-	Espoir-1 #@ReseauCP
+	SP-Espoir-1 #@ReseauCP
 	break
-	Espoir-3 #@ReseauCP
+	SP-Espoir-3 #@ReseauCP
 	break
-	Espoir-5 #@ReseauCP
+	SP-Espoir-5 #@ReseauCP
 	break
-	homjct-Sp1 #@ReseauCP
+	SP-homjct-1 #@ReseauCP
 	break
-	homjct-Sp2 #@ReseauCP
+	SP-homjct-2 #@ReseauCP
 endmap
 
 map MP-huit -title "Galerie du Huit"
-	huit-1 #@ReseauCP
+	SP-huit-1 #@ReseauCP
 	break
-	Huit-2 #@ReseauCP
+	SP-Huit-2 #@ReseauCP
 	break
-	Huit-3 #@ReseauCP
+	SP-Huit-3 #@ReseauCP
 endmap
 
 map MP-CP16 -title "CP16"
-	CP16-4 #@ReseauCP
+	SP-CP16-4 #@ReseauCP
 	break
-	CP16-5 #@ReseauCP
+	SP-CP16-5 #@ReseauCP
 	break
-	CP16-7 #@ReseauCP
+	SP-CP16-7 #@ReseauCP
 	break
-	CP16-1 #@ReseauCP
+	SP-CP16-1 #@ReseauCP
 	break
-	CP16-2 #@ReseauCP
+	SP-CP16-2 #@ReseauCP
 	break
-	CP16-3 #@ReseauCP
+	SP-CP16-3 #@ReseauCP
 	break
-	CP16-6 #@ReseauCP
+	SP-CP16-6 #@ReseauCP
 endmap
 
 map MP-CP14 -title "CP14"
-	CP14-1 #@ReseauCP
+	SP-CP14-1 #@ReseauCP
 	break
-	CP14-2 #@ReseauCP
+	SP-CP14-2 #@ReseauCP
 	break
-	CP14-3 #@ReseauCP
+	SP-CP14-3 #@ReseauCP
 	break
-	CP14_2008-Sp1 #@ReseauCP
+	SP-CP14_2008-1 #@ReseauCP
 	break
-	CP14_2011-Sp2 #@ReseauCP
+	SP-CP14_2011-2 #@ReseauCP
 endmap
 
 map MP-Billy -title "Méandre Billy"
-	billy2015_1 #@ReseauCP
+	SP-billy2015_1 #@ReseauCP
 	break
-	Billy2_s1_2015 #@ReseauCP
+	SP-Billy2_s1_2015 #@ReseauCP
 	break
-	Billy2_s2 #@ReseauCP
+	SP-Billy2_s2 #@ReseauCP
 	break
-	Billy3-s1 #@ReseauCP
+	SP-Billy3-s1 #@ReseauCP
 	break
-	Billy-1 #@ReseauCP
+	SP-Billy-1 #@ReseauCP
 	break
-	Billy-2 #@ReseauCP
+	SP-Billy-2 #@ReseauCP
 	break
-	Billy-3 #@ReseauCP
+	SP-Billy-3 #@ReseauCP
 	break
-	Billy-4 #@ReseauCP
+	SP-Billy-4 #@ReseauCP
 	break
-	Billy-6 #@ReseauCP
+	SP-Billy-6 #@ReseauCP
 	break
-	gour-bleu #@ReseauCP
+	SP-gour-bleu #@ReseauCP
 	break
-	Billy-9 #@ReseauCP
+	SP-Billy-9 #@ReseauCP
 endmap
  
 map MP-CP12 -title "CP12"
-	CP12-1 #@ReseauCP
+	SP-CP12-1 #@ReseauCP
 	break
-	CP12-2 #@ReseauCP
+	SP-CP12-2 #@ReseauCP
 	break
-	P18-1 #@ReseauCP
+	SP-P18-1 #@ReseauCP
 	break
-	CP12-5 #@ReseauCP
+	SP-CP12-5 #@ReseauCP
 	break
-	P18-2 #@ReseauCP
+	SP-P18-2 #@ReseauCP
 	break
-	CP12-3 #@ReseauCP
+	SP-CP12-3 #@ReseauCP
 	break
-	Secoues-1 #@ReseauCP
+	SP-Secoues-1 #@ReseauCP
 endmap
 
 map MP-reptiles -title "Réseau des Reptiles"
-	Reptiles-2 #@ReseauCP
+	SP-Reptiles-2 #@ReseauCP
 	break
-	Reptiles-3 #@ReseauCP
+	SP-Reptiles-3 #@ReseauCP
 	break
-	Reptiles-1 #@ReseauCP
+	SP-Reptiles-1 #@ReseauCP
 endmap
 
 map MP-CP19 -title "CP19 bis"
-	CP19b-1 #@ReseauCP
+	SP-CP19b-1 #@ReseauCP
 	break
-	CP19-2 #@ReseauCP
+	SP-CP19-2 #@ReseauCP
 	break
-	CP19b-3 #@ReseauCP
+	SP-CP19b-3 #@ReseauCP
 	break
-	CP19b-4 #@ReseauCP
+	SP-CP19b-4 #@ReseauCP
 endmap
 
 

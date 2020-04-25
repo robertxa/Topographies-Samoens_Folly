@@ -236,8 +236,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/C52-coupe.xvi
 
 # Select maps
-	select C52-plan-tot@C52
-	select C52-coupe-tot@C52
+	select MP-C52-plan-tot@C52
+	select MC-C52-coupe-tot@C52
 	  
 export map -o Outputs/C52-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/C52-coupe.pdf

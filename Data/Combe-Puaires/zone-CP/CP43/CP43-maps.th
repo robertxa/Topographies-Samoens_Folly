@@ -5,19 +5,19 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map CP43-plan-tot
-	CP43-1
+map MP-CP43-plan-tot -title "CP43"
+	SP-CP43-1
 endmap
 
-map CP43-coupe-tot
-	CP43-SC1
+map MC-CP43-coupe-tot -title "CP43"
+	SC-CP43-1
 	break
-	CP43-SC2
+	SC-CP43-2
 	break
-	CP43-SC3
+	SC-CP43-3
 	break
-	CP43-SC4
+	SC-CP43-4
 	break
-	CP43-SC5
+	SC-CP43-5
 endmap
    

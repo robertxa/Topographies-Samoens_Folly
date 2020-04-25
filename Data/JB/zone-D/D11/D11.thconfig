@@ -298,8 +298,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/D11-coupe.xvi
 
 # Select maps
-	select D11-plan-tot@D11
-	select D11-coupe-tot@D11
+	select MP-D11-plan-tot@D11
+	select MC-D11-coupe-tot@D11
 	  
 export map -o Outputs/D11-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/D11-coupe.pdf

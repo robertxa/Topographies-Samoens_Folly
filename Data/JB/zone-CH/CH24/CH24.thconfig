@@ -136,8 +136,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CH24-coupe.xvi
 
 # Select maps
-	select CH24-plan-tot@CH24
-	select CH24-coupe-tot@CH24
+	select MP-CH24-plan-tot@CH24
+	select MC-CH24-coupe-tot@CH24
 	  
 export map -o Outputs/CH24-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CH24-coupe.pdf

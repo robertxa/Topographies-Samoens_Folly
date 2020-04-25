@@ -305,8 +305,8 @@ endlayout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/CP69-2015-coupe.xvi
 
 # Select maps
-	select CP69-plan-tot
-	select CP69-coupe-tot
+	select MP-CP69-plan-tot
+	select MC-CP69-coupe-tot
 	 
 export map -projection extended -layout my_layout-coupe -o Outputs/CP69-coupe2015.pdf 
 export map -o Outputs/CP69-plan2015.pdf -layout my_layout

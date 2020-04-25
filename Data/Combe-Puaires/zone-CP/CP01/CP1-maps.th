@@ -4,19 +4,19 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map CP1-plan-tot
-	CP1-a
+map MP-CP1-plan-tot -title "CP1"
+	SP-CP1-a
 	break
-	CP1-b
+	SP-CP1-b
 	break
-	CP1-c
+	SP-CP1-c
 endmap
 
-map CP1-coupe-tot
-	CP1c1
+map MC-CP1-coupe-tot -title "CP1"
+	SC-CP1c1
 	break
-	CP1c2
+	SC-CP1c2
 	break
-	CP1c3
+	SC-CP1c3
 endmap
    

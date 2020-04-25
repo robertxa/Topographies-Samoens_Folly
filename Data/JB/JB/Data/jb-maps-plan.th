@@ -4,778 +4,772 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map JB-rev
-#		Voltigeurs-amonts
-#	break
-#		voltigeurs
-#		preview below JB-amonts
-#endmap
 
-map M-C37 -title "C37"
-	C37
+map MP-C37 -title "C37"
+	SP-C37
 	break
-	C37-jonction
+	SP-C37-jonction
 	break
-    arche
+    SP-arche
 endmap
 
-map M-escaladesoctobre -title "Escalades d'Octobre"
-	escalade-octobre
+map MP-escaladesoctobre -title "Escalades d'Octobre"
+	SP-escalade-octobre
 endmap
 
-map M-Voltigeurs -title "Méandre des Voltigeurs"
-	Voltigeurs-amonts
+map MP-Voltigeurs -title "Méandre des Voltigeurs"
+	SP-Voltigeurs-amonts
 	break
-	voltigeurs
+	SP-voltigeurs
 	#preview below M-C37	# A mettre ici ou à mettre dans le map final ?
 endmap
 
-map M-affluentC14 -title "Affluent du C14"
-	JB-C14-1
+map MP-affluentC14 -title "Affluent du C14"
+	SP-JB-C14-1
 	break
-	affluent-C14-2
+	SP-affluent-C14-2
 endmap
 
-map M-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
-	reverbere
+map MP-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
+	SP-reverbere
 	break
-	faille-bivouac
+	SP-faille-bivouac
 endmap
 
-map M-rivieratot -title "La Riviera"
-	riviera #(A mettre sous JB-B22 et arianes)
+map MP-rivieratot -title "La Riviera"
+	SP-riviera #(A mettre sous JB-B22 et arianes)
 endmap
 
-map M-B21 -title "B21"
-	B21-1
+map MP-B21 -title "B21"
+	SP-B21-1
 	break
-	B21-2
+	SP-B21-2
 	break
-	B21-3
+	SP-B21-3
 	break
-	B21-4
+	SP-B21-4
 endmap
 
-map M-B22 -title "B22"
-	B22-1
+map MP-B22 -title "B22"
+	SP-B22-1
 	break
-	B22-2
+	SP-B22-2
 endmap
 
 #preview above JB-rev # C'était placé à la fin des maps précédentes. A replacer correctement si besoin !
  
-map M-arianes -title "Méandre des Arianes"
-	arianes1
+map MP-arianes -title "Méandre des Arianes"
+	SP-arianes1
 	break
-	arianes2
+	SP-arianes2
 endmap
   
-map M-champselysees -title "Les Champs Elysées"
-	champs-elysees
+map MP-champselysees -title "Les Champs Elysées"
+	SP-champs-elysees
 	break
-	champs-elysees2
+	SP-champs-elysees2
 endmap
 
-map M-gadoue -title "Rivière de la Gadoue"
-	gadouejonction
+map MP-gadoue -title "Rivière de la Gadoue"
+	SP-gadouejonction
 	break
-	Gadoue
+	SP-Gadoue
 endmap
 
-map M-B19 -title "B19"
-	B19
+map MP-B19 -title "B19"
+	SP-B19
 endmap
 
-map M-senecaliens -title "Galerie des Sénécaliens"
-	Senecaliens
+map MP-senecaliens -title "Galerie des Sénécaliens"
+	SP-Senecaliens
 endmap
 
-map M-lavoir-haut -title "Réseau du Lavoir"
-	brownies1
+map MP-lavoir-haut -title "Réseau du Lavoir"
+	SP-brownies1
 	break
-	Arva1
+	SP-Arva1
 	break
-	Arva2
+	SP-Arva2
 	break
-	Lavoir2
+	SP-Lavoir2
 	break
-	Lavoir1
+	SP-Lavoir1
 	break
-	Lavoir3
+	SP-Lavoir3
 endmap
 
-map M-filou -title "Réseau Qui File Ou"
+map MP-filou -title "Réseau Qui File Ou"
 	break
-	Lavoir5
+	SP-Lavoir5
 	break
-	Lavoir-FD
+	SP-Lavoir-FD
 	break
-	Boeuf1
+	SP-Boeuf1
 	break
-	filou1
+	SP-filou1
 	break
-	filou2
+	SP-filou2
 	break
-	fileou2019-SP1
+	SP-fileou2019-1
 endmap
 
-map M-lavoir-bas -title "Réseau du Lavoir"
-	Lavoir7
+map MP-lavoir-bas -title "Réseau du Lavoir"
+	SP-Lavoir7
 	break
-	Boeuf2  
+	SP-Boeuf2  
 	break
-	lavoir-sec   
+	SP-lavoir-sec   
 	break
-	Racc3
+	SP-Racc3
 	break
-	Racc2
+	SP-Racc2
 	break
-	rac1
+	SP-rac1
 	break
-	racc4
+	SP-racc4
 	break
-	Racc
+	SP-Racc
 	break
-	Racc4
+	SP-Racc4
 	break
-	Racc5
+	SP-Racc5
 	break
-	base-racc
+	SP-base-racc
 	break
-	Lavoir3old
+	SP-Lavoir3old
 endmap
 
-map M-riviere-excentriques -title "Rivière aux excentriques"
-	Excentriques1
+map MP-riviere-excentriques -title "Rivière aux excentriques"
+	SP-Excentriques1
 	break
-	Excentriques2
+	SP-Excentriques2
 endmap	
 
-map M-V11 -title "V11"
-	V11
+map MP-V11 -title "V11"
+	SP-V11
 	break
-	V11-meandre
+	SP-V11-meandre
 endmap
 
-map M-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
-	couteauG2016
+map MP-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
+	SP-couteauG2016
 	break
-	CouteauG1
+	SP-CouteauG1
 endmap
 
-map M-traverse -title "Galerie du puits que l'on Traverse"
-	traverse1
+map MP-traverse -title "Galerie du puits que l'on Traverse"
+	SP-traverse1
 	break
-	traverse2
+	SP-traverse2
 endmap         
 
-map M-reseauaiguilles -title "Réseau des Aiguilles"
-	Crawleurs
+map MP-reseauaiguilles -title "Réseau des Aiguilles"
+	SP-Crawleurs
 	break
-	oublies
+	SP-oublies
 	break
-	Raccourci
+	SP-Raccourci
 	break
-	Aiguilles
+	SP-Aiguilles
 	break
-	aiguilles2
+	SP-aiguilles2
 	break
-	Ascension
+	SP-Ascension
 	break
-	audessusbulle
+	SP-audessusbulle
 	break
-	Crawleuraval
+	SP-Crawleuraval
 endmap   	
      
-map M-aspirosouffle -title "Réseau de l'AspiroSouffle"
+map MP-aspirosouffle -title "Réseau de l'AspiroSouffle"
 	# Begin Réseau de l'AspiroSouflle
-	aval-aiguille2-1
+	SP-aval-aiguille2-1
 	break
-	aval-aiguilles2-2
+	SP-aval-aiguilles2-2
 	break
-	aval-aiguilles2-3
+	SP-aval-aiguilles2-3
 	break
-	aval-aiguilles2-5
+	SP-aval-aiguilles2-5
 	break
-	aval-aiguilles2-6
+	SP-aval-aiguilles2-6
 	break
-	aval-aiguilles2-4
+	SP-aval-aiguilles2-4
 endmap   
 
-map M-avalaiguilles -title "Aval des Aiguilles"
-	aval-aiguilles4  
+map MP-avalaiguilles -title "Aval des Aiguilles"
+	SP-aval-aiguilles4  
 	break   
-	scrap146b      
+	SP-scrap146b      
 	break
-	aval-aiguilles5
+	SP-aval-aiguilles5
 	break
-	aval-aiguilles1-2
+	SP-aval-aiguilles1-2
 	break
-	aval-aiguilles3
+	SP-aval-aiguilles3
 	break
-	aval-aiguilles2013-2
+	SP-aval-aiguilles2013-2
 	break
-	aval-aiguilles1
+	SP-aval-aiguilles1
 	break
-	aval-aiguilles2013-1
+	SP-aval-aiguilles2013-1
 endmap
 
-map M-bulle -title "Affluent de la Bulle"
-	Bulle
+map MP-bulle -title "Affluent de la Bulle"
+	SP-Bulle
 endmap
 
-map M-montagnes_russes -title "Réseau des Montagnes Russes"
-	Montagnesrusses
+map MP-montagnes_russes -title "Réseau des Montagnes Russes"
+	SP-Montagnesrusses
 	break
-	Russesaval
+	SP-Russesaval
 	break
-	Russesaval2
+	SP-Russesaval2
 endmap	
 	
-map M-pourquedalle -title "Galerie Pour Que Dalle"
-	Pourquedalle
+map MP-pourquedalle -title "Galerie Pour Que Dalle"
+	SP-Pourquedalle
 endmap
 
-map M-branlots -title "Réseau des Branlots"
-	P15
+map MP-branlots -title "Réseau des Branlots"
+	SP-P15
 	break
-	s-branlots1 
+	SP-s-branlots1 
 	break
-	Branlots
+	SP-Branlots
 	break
-	Branlots2 
+	SP-Branlots2 
 endmap
 
-map M-echo -title "Salle de l'Echo"
-	Colimaconaval
+map MP-echo -title "Salle de l'Echo"
+	SP-Colimaconaval
 	break
-	Echo
+	SP-Echo
 	break
-	Echo2010-1
+	SP-Echo2010-1
 	break
-	Echo2010-2
+	SP-Echo2010-2
 	break
-	Echo2010-3
-	# join Echo Echo2010-3 --> A retravailler directement sur le dessin ?
+	SP-Echo2010-3
+	# join SP-Echo SP-Echo2010-3 --> A retravailler directement sur le dessin ?
 endmap
 	
-map M-reseau_passibas -title "Shunt du Passibas" 
-	Passibas
+map MP-reseau_passibas -title "Shunt du Passibas" 
+	SP-Passibas
 	break
-	MP-Cristal
+	SP-Cristal
 endmap
   
-map M-frenesie -title "Galerie de la Frénésie"
-	Frenesie
+map MP-frenesie -title "Galerie de la Frénésie"
+	SP-Frenesie
 endmap
 
-map M-pseudosiphons -title "Les Pseudos Siphons"
-	Pseudosiphons
+map MP-pseudosiphons -title "Les Pseudos Siphons"
+	SP-Pseudosiphons
 	break
-	Pseudosiphon2
+	SP-Pseudosiphon2
 endmap
 
-map M-erreur -title "Galerie de l'Erreur"
-	berreur1
+map MP-erreur -title "Galerie de l'Erreur"
+	SP-berreur1
 	break
 	SP-Erreur
 endmap
 
-map M-aven14J -title "Aven du 14 juillet"
-	J14
+map MP-aven14J -title "Aven du 14 juillet"
+	SP-J14
 endmap
 
-map M-dino -title "Galerie du Petit Dino"
-	dino-1
+map MP-dino -title "Galerie du Petit Dino"
+	SP-dino-1
 endmap
 
-map M-P15 -title "Galerie du P15"
-	P15aval
+map MP-P15 -title "Galerie du P15"
+	SP-P15aval
 	break
-	P15-2
+	SP-P15-2
 	break
-	P15-4
+	SP-P15-4
 endmap
 
-map M-bourguignons -title "Réseau des Bourguignons"
-	Bourguignons1
+map MP-bourguignons -title "Réseau des Bourguignons"
+	SP-Bourguignons1
 	break
-	Bourguignons1bis
+	SP-Bourguignons1bis
 	break
-	bourguignons2
+	SP-bourguignons2
 	break
-	bourguignonscollecteur
+	SP-bourguignonscollecteur
 endmap
      
-map M-cataboyau -title "Galerie du Cataboyau"
-	Cataboyau
+map MP-cataboyau -title "Galerie du Cataboyau"
+	SP-Cataboyau
 endmap
 
-map M-mais -title "Galerie du Mais"
-	Mais
+map MP-mais -title "Galerie du Mais"
+	SP-Mais
 	break
-	Mais-2010      
+	SP-Mais-2010      
 endmap
 
-map M-grandescalier -title "Le Grand Escalier"
-	grdescalier
+map MP-grandescalier -title "Le Grand Escalier"
+	SP-grdescalier
 endmap
 
-map M-anou2 -title "Réseau Anou 2"
-	Anou2
+map MP-anou2 -title "Réseau Anou 2"
+	SP-Anou2
 	break
-	anou2bis
+	SP-anou2bis
 endmap
 
-map M-flash -title "Puits du Flash"
-	flash
+map MP-flash -title "Puits du Flash"
+	SP-flash
 endmap
 
-map M-jaunisse -title "Galerie de la Jaunisse"
-	jaunisse
+map MP-jaunisse -title "Galerie de la Jaunisse"
+	SP-jaunisse
 	break
-	papy2
+	SP-papy2
 	break
-	jaunisse2
+	SP-jaunisse2
 endmap
 
-map M-soucoupe -title "Méandre de la Soucoupe"
-	Soucoupe
+map MP-soucoupe -title "Méandre de la Soucoupe"
+	SP-Soucoupe
 	break
-	Soucoupe2
+	SP-Soucoupe2
 endmap
 
-map M-V5 -title "Méandre du V5"
-	V5
+map MP-V5 -title "Méandre du V5"
+	SP-V5
 	break
-	V5aval
+	SP-V5aval
 endmap
 
-map M-V6 -title "V6"
-	V6ter
+map MP-V6 -title "V6"
+	SP-V6ter
 	break
-	V6
+	SP-V6
 endmap
 
-map M-V4 -title "V4"
-      V4-3
-      break
-      V4
-      break
-      V4-2
+map MP-V4 -title "V4"
+    SP-V4-3
+    break
+    SP-V4
+    break
+    SP-V4-2
 endmap
 
-map M-savoyards -title "Puits des Savoyards"
-	savoyards
+map MP-savoyards -title "Puits des Savoyards"
+	SP-savoyards
 endmap
 
-map M-quitombe -title "Réseau de la Pierre qui Tombe"
-	quitombe
+map MP-quitombe -title "Réseau de la Pierre qui Tombe"
+	SP-quitombe
 	break
-	quitombe2
+	SP-quitombe2
 	break
-	quitombe3
+	SP-quitombe3
 	break
-	quitombea
+	SP-quitombea
 	break
-	mangerjct
+	SP-mangerjct
 	break
-	quitombe4
+	SP-quitombe4
 	break
-	pierretombe
+	SP-pierretombe
 	break
-	pquitombeend
+	SP-pquitombeend
 endmap
 
-map M-chatons -title "Méandre des Chatons"
-	chatons
+map MP-chatons -title "Méandre des Chatons"
+	SP-chatons
 endmap
 
-map M-solitaire -title "Réseau du Solitaire"
-	solitaire_plan
+map MP-solitaire -title "Réseau du Solitaire"
+	SP-solitaire_plan
 	break
-	sol2017-1
+	SP-sol2017-1
 	break
-	sol2017-2
+	SP-sol2017-2
 	break
-	Solitaire-c-2018_2 
+	SP-Solitaire-c-2018_2 
 	break
-	Solitaire-c-2018_3 
+	SP-Solitaire-c-2018_3 
 	break
-	solitaire2019-SP2
+	SP-solitaire2019-2	#SPPPPPPP
 	break
-	solitaire2019-SP_3
+	SP-solitaire2019-3	#SPPPPPPP
 	break
-	solitaire2019_SP4
+	SP-solitaire2019_4	#SPPPPPPP
 	break
-	solitaire2019-SP1
+	SP-solitaire2019-1	#SPPPPPPP
 	break
-	Sol_SP2019b_1
+	SP-Sol_2019b_1	#SPPPPPPP
 	break
-	Solitaire-SP-2019c1
+	SP-Solitaire-2019c1	#SPPPPPPP
 	break
-	Solitaire-SP-2019c2
+	SP-Solitaire-2019c2	#SPPPPPPP
 	break
-	Solitaire-SP-2019c3
+	SP-Solitaire-2019c3	#SPPPPPPP
 	break
-	Solitaire-SP-2019c4
+	SP-Solitaire-2019c4	#SPPPPPPP
 	break
-	Sol2019d-SP1
+	SP-Sol2019d-1	#SPPPPPPP
 endmap
 
-map M-puitsAlain -title "Puits Alain"     
-	pAlain
+map MP-puitsAlain -title "Puits Alain"     
+	SP-pAlain
 	break
-	cascatelles   
+	SP-cascatelles   
 endmap
 
-map M-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
+map MP-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
 # Regarder si on peut sortir les plafonds
-	riv-1
+	SP-riv-1
 	break
-	riv-2b
+	SP-riv-2b
 	break
-	riv-2
+	SP-riv-2
 	break
-	riv-3
+	SP-riv-3
 	break
-	riv-4
+	SP-riv-4
 	break
-	riv-5
+	SP-riv-5
 endmap
 
-map M-bivouac-500 -title "Le bivouac -500"
-	riv-6
+map MP-bivouac-500 -title "Le bivouac -500"
+	SP-riv-6
 	break
-	bivouac500b
+	SP-bivouac500b
 	break
-	riv-8
+	SP-riv-8
 	break
-	bivouac500c
+	SP-bivouac500c
 	break
-	bivouac500
+	SP-bivouac500
 endmap
 
-map M-siphon69 -title "Siphon 69"
-	Riv6
+map MP-siphon69 -title "Siphon 69"
+	SP-Riv6
 	break
-	riv-7
+	SP-riv-7
 	break
-	siphon69
+	SP-siphon69
 endmap
 
-map M-P11 -title "La galerie du P11"
-	P11-h2
+map MP-P11 -title "La galerie du P11"
+	SP-P11-h2
 	break
-	P11-h1
+	SP-P11-h1
 endmap
 
-map M-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
-	Goure2015b-5
+map MP-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
+	SP-Goure2015b-5
 	break
-	Goure2015b-4
+	SP-Goure2015b-4
 	break
-	Goure2015-SP1
+	SP-Goure2015-1	# SPPPPP
 	break
-	Goure2015c
+	SP-Goure2015c
 	break
-	Goure2015b
+	SP-Goure2015b
 	break
-	Goure2019-SP1
+	SP-Goure2019-1	# SPPPPP
 	break
-	Goure2019-SP2
+	SP-Goure2019-2	# SPPPPP
 	break
-	Goure2019-SP3
+	SP-Goure2019-3	# SPPPPP
 	break
-	Gourance2014-1
+	SP-Gourance2014-1
 	break
-	Gourance2014-2
+	SP-Gourance2014-2
 	break
-	Gourance2014-3
+	SP-Gourance2014-3
 	break
-	Gourance2014-4
+	SP-Gourance2014-4
 	break
-	Gourance2014-5
+	SP-Gourance2014-5
 	break
-	Gourance2014-6
+	SP-Gourance2014-6
 	break
-	Gourance2015b-1 # Depart souris chauve
+	SP-Gourance2015b-1 # Depart souris chauve
 	break
-	Goure2015b-2
+	SP-Goure2015b-2
 	break
-	Gourance2014-5
+	SP-Gourance2014-5
 	break
-	Goure2015b-3
+	SP-Goure2015b-3
 endmap
 
-map M-gourance -title "La Gourance"      
-	gourance-1
+map MP-gourance -title "La Gourance"      
+	SP-gourance-1
 	break
-	gourance-3
+	SP-gourance-3
 	break
-	gourance2      
+	SP-gourance2      
 	break
-	Gourance2013-1
+	SP-Gourance2013-1
 	break
-	Gourance2013-2     
+	SP-Gourance2013-2     
 	break
-	gourance-4      
+	SP-gourance-4      
 	break
-	gourance5
+	SP-gourance5
 endmap
 
-map M-aval-gourance -title "Rivière à l'aval de la Gourance"
-	riv-10
+map MP-aval-gourance -title "Rivière à l'aval de la Gourance"
+	SP-riv-10
 	break
-	riv-11
+	SP-riv-11
 	break
-	cingles
+	SP-cingles
 	break
-	900-1
+	SP-900-1
 endmap
       
-map M-sezhommes -title "Galerie de Sezhommes"
-	sezhommes2020-SP3
+map MP-sezhommes -title "Galerie de Sezhommes"
+	SP-sezhommes2020-3
 	break
-	sezhommes2020-SP1
+	SP-sezhommes2020-1
 	break
-	sezhommes2020-SP2
+	SP-sezhommes2020-2
 	break
-	sezhommes-1
+	SP-sezhommes-1
 	break
-	sezhommes2               
+	SP-sezhommes2               
 endmap
 
-map M-laconscience -title "galerie de la Conscience"
-	conscience-1
+map MP-laconscience -title "galerie de la Conscience"
+	SP-conscience-1
 endmap
 
-map M-nuitblanche -title "Réseau de la Nuit Blanche"
-	nuitblanche1
+map MP-nuitblanche -title "Réseau de la Nuit Blanche"
+	SP-nuitblanche1
 	break
-	nuitblanche2      
+	SP-nuitblanche2      
 	break
-	nuitblanche3
+	SP-nuitblanche3
 	break
-	nuitblanche4
+	SP-nuitblanche4
 endmap
 
-map M-siphons -title "Les siphons terminaux"
-	S1
+map MP-siphons -title "Les siphons terminaux"
+	SP-S1
 	break
-	S1-S2-SP1
+	SP-S1-S2-1
 	break
-	S2
+	SP-S2
 	break
-	siphons2020-SP1
+	SP-siphons2020-1
 	break
-	S2S3
+	SP-S2S3
 	 
 endmap
 
-#preview below JB-amontsuite # pour JB-aval-riviere à partir solitaire
+#preview below SP-JB-amontsuite # pour JB-aval-riviere à partir solitaire
 
 
 ##########################################################################
 # Maps intermédiaire pour construire uniquement certaines parties du gouffre
 
-map M-C37-Riviera -title "Du C37 à la Riviera"
-	M-C37
+map MP-C37-Riviera -title "Du C37 à la Riviera"
+	MP-C37
 	break
-	M-escaladesoctobre
+	MP-escaladesoctobre
 	break
-		M-Voltigeurs
-		preview below M-C37
+		MP-Voltigeurs
+		preview below MP-C37
 	break
-	M-affluentC14
+	MP-affluentC14
 	break
-	M-arche-reverbere
+	MP-arche-reverbere
 	break
-	M-rivieratot
+	MP-rivieratot
 endmap
 
-map M-B22-B21 -title "B21 - B22"
-	M-B21
+map MP-B22-B21 -title "B21 - B22"
+	MP-B21
 	break
-	M-B22
+	MP-B22
 	break
-	M-champselysees
+	MP-champselysees
 	break
-	M-arianes
+	MP-arianes
 	break
-	M-gadoue
+	MP-gadoue
 endmap
 
-map M-lavoir -title "Réseau du Lavoir"
-	M-lavoir-haut
+map MP-lavoir -title "Réseau du Lavoir"
+	MP-lavoir-haut
 	break
-	M-filou
+	MP-filou
 	break
-	M-lavoir-bas
+	MP-lavoir-bas
 endmap
 
-map M-B19-V11 -title "Réseaux du B19 et du V11"
-	M-senecaliens
+map MP-B19-V11 -title "Réseaux du B19 et du V11"
+	MP-senecaliens
 	break
-	M-B19
-	preview below M-senecaliens
+	MP-B19
+	preview below MP-senecaliens
 	break
-	M-lavoir
+	MP-lavoir
 	break
-	M-V11
+	MP-V11
 	break
-	M-reseauaiguilles
+	MP-reseauaiguilles
 	break
-	M-couteau-grenoblois
+	MP-couteau-grenoblois
 	break
-	M-traverse
+	MP-traverse
 	break
-	M-aspirosouffle
+	MP-aspirosouffle
 	break
-	M-avalaiguilles
+	MP-avalaiguilles
 	break
-	M-riviere-excentriques
-	preview below M-avalaiguilles
+	MP-riviere-excentriques
+	preview below MP-avalaiguilles
 	break
-	M-bulle
+	MP-bulle
 endmap
 
-map M-Branlots-J14 -title "Réseaux des Branlots et du J14"
-	M-aven14J
+map MP-Branlots-J14 -title "Réseaux des Branlots et du J14"
+	MP-aven14J
 	break
-	M-pourquedalle
+	MP-pourquedalle
 	break
-	M-branlots
+	MP-branlots
 	break
-	M-montagnes_russes
+	MP-montagnes_russes
 	break
-	M-echo
+	MP-echo
 	break
-	M-reseau_passibas
+	MP-reseau_passibas
 	break
-	M-frenesie
+	MP-frenesie
 	break
-	M-pseudosiphons
+	MP-pseudosiphons
 	break
-	M-dino
+	MP-dino
 	break
-	M-P15
+	MP-P15
 	break
-	M-erreur
+	MP-erreur
 endmap
 
-map M-V4-V6-Mais -title "V4 - V5 - V6"
-	M-bourguignons
+map MP-V4-V6-Mais -title "V4 - V5 - V6"
+	MP-bourguignons
 	break
-	M-cataboyau
+	MP-cataboyau
 	break
-	M-mais
+	MP-mais
 	break
-	M-grandescalier
+	MP-grandescalier
 	break
-	M-anou2
+	MP-anou2
 	break
-	M-flash
+	MP-flash
 	break
-	M-jaunisse
+	MP-jaunisse
 	break
-	M-soucoupe
+	MP-soucoupe
 	break
-	M-chatons
+	MP-chatons
 	break
-	M-V5
+	MP-V5
 	break
-	M-V6
+	MP-V6
 	break
-	M-V4
+	MP-V4
 	break
-	M-savoyards
+	MP-savoyards
 	break
-	M-quitombe
+	MP-quitombe
 endmap
 
-map M-Jean-Dupond -title "Le début de la rivière aval"
-	M-solitaire
+map MP-Jean-Dupond -title "Le début de la rivière aval"
+	MP-solitaire
 	break
-	M-puitsAlain
+	MP-puitsAlain
 	break
-	M-rivieredebut
+	MP-rivieredebut
 endmap
 
-map M-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
-	M-bivouac-500
+map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
+	MP-bivouac-500
 	break
-	M-P11
+	MP-P11
 	break
-	M-siphon69
+	MP-siphon69
 	break
-	M-plafond-Gourance
+	MP-plafond-Gourance
 	break
-	M-gourance
+	MP-gourance
 	break
-	M-aval-gourance
+	MP-aval-gourance
 	break
-	M-laconscience
+	MP-laconscience
 	break
-	M-nuitblanche
+	MP-nuitblanche
 endmap
 
-map M-aval-900 -title "Bivouac -900 et siphons terminaux"
-	M-sezhommes
+map MP-aval-900 -title "Bivouac -900 et siphons terminaux"
+	MP-sezhommes
 	break
-	M-siphons
+	MP-siphons
 endmap
 
 ##########################################################################
 # Maps pour traversées
-map M-Tr-V11-V6-AB -title "Traversée V11 - V6 par les Aiguilles et les Branlots"
-	M-B19-V11
+map MP-Tr-V11-V6-AB -title "Traversée V11 - V6 par les Aiguilles et les Branlots"
+	MP-B19-V11
 	break
-	M-Branlots-J14
+	MP-Branlots-J14
 	break
-	M-V4-V6-Mais
+	MP-V4-V6-Mais
 endmap
-map M-Tr-V11-V6-AP -title "Traversée V11 - V6 par les Aiguilles et les Pseudos-Siphons"
-	M-B19-V11
+map MP-Tr-V11-V6-AP -title "Traversée V11 - V6 par les Aiguilles et les Pseudos-Siphons"
+	MP-B19-V11
 	break
-	M-Branlots-J14
+	MP-Branlots-J14
 	break
-	M-V4-V6-Mais
+	MP-V4-V6-Mais
 endmap
-map M-Tr-V11-V6-RB -title "Traversée V11 - V6 par le Raccourci et les Branlots"
-	M-B19-V11
+map MP-Tr-V11-V6-RB -title "Traversée V11 - V6 par le Raccourci et les Branlots"
+	MP-B19-V11
 	break
-	M-Branlots-J14
+	MP-Branlots-J14
 	break
-	M-V4-V6-Mais
+	MP-V4-V6-Mais
 endmap
-map M-Tr-V11-V6-RP -title "Traversée V11 - V6 par le Raccourci et les Pseudos-Siphons"
-	M-B19-V11
+map MP-Tr-V11-V6-RP -title "Traversée V11 - V6 par le Raccourci et les Pseudos-Siphons"
+	MP-B19-V11
 	break
-	M-Branlots-J14
+	MP-Branlots-J14
 	break
-	M-V4-V6-Mais
+	MP-V4-V6-Mais
 endmap
 
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
-map JB-plan-tot -title "Gouffre Jean-Bernard"
-	M-C37-Riviera
+map MP-JB-plan-tot -title "Gouffre Jean-Bernard"
+	MP-C37-Riviera
 	break
-	M-B22-B21
+	MP-B22-B21
 	break
-	M-B19-V11
+	MP-B19-V11
 	break
-	M-Branlots-J14
+	MP-Branlots-J14
 	break
-	M-V4-V6-Mais
+	MP-V4-V6-Mais
 	break
-	M-Jean-Dupond
+	MP-Jean-Dupond
 	break
-	M-Bivouac-500-Gourance
+	MP-Bivouac-500-Gourance
 	break
-	M-aval-900
+	MP-aval-900
 endmap
 
    

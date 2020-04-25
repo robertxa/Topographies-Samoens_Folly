@@ -227,8 +227,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CP24-coupe2018.xvi
 
 # Select maps
-	select CP24-plan-tot@CP24
-	select CP24-coupe-tot@CP24
+	select MP-CP24-plan-tot@CP24
+	select MC-CP24-coupe-tot@CP24
 	  
 export map -o Outputs/CP24-plan2018.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP24-coupe2018.pdf

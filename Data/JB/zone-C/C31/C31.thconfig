@@ -239,8 +239,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/C31-coupe.xvi
 
 # Select maps
-	select C31-plan-tot@C31
-	select C31-coupe-tot@C31
+	select MP-C31-plan-tot@C31
+	select MC-C31-coupe-tot@C31
 	  
 export map -o Outputs/C31-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/C31-coupe.pdf

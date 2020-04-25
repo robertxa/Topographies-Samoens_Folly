@@ -5,40 +5,40 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map CP53-plan
-	CP6-3
+map MP-CP53-plan -title "CP53"
+	SP-CP6-3
 endmap
 
-map CP53-coupe
-	CP53-SC1
+map MC-CP53-coupe -title "CP53"
+	SC-CP53-1
 endmap
 
-map CP6-plan
-	CP6-1
+map MP-CP6-plan -title "CP6"
+	SP-CP6-1
 	break
-	CP6-2
+	SP-CP6-2
 endmap
 
-map CP6-coupe
-	CP6-SC1
+map MC-CP6-coupe -title "CP6"
+	SC-CP6-1
 	break
-	CP6-SC2
+	SC-CP6-2
 	break
-	CP6-SC3
+	SC-CP6-3
 	break
-	CP6-SC4
+	SC-CP6-4
 endmap
 
 
-map CP6-plan-tot
-	CP53-plan
+map MP-CP6-plan-tot -title "CP6 - CP53"
+	MP-CP53-plan
 	break
-	CP6-plan
+	MP-CP6-plan
 endmap
 
-map CP6-coupe-tot
-	CP6-coupe
+map MC-CP6-coupe-tot -title "CP6 - CP53"
+	MC-CP6-coupe
 	break
-	CP53-coupe
+	MC-CP53-coupe
 endmap
    

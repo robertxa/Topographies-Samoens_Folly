@@ -235,8 +235,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/V22-coupe.xvi
 
 # Select maps
-	select A22-plan-tot@A22
-	select A22-coupe-tot@A22
+	select MP-A22-tot@A22
+	select MP-A22-coupe-tot@A22
 	  
 export map -o Outputs/V22-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/V22-coupe.pdf

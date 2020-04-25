@@ -299,8 +299,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/D33-coupe.xvi
   
 # Select maps
-	select D33-plan-tot@D33
-	select D33-coupe-tot@D33
+	select MP-D33-plan-tot@D33
+	select MC-D33-coupe-tot@D33
   
 export map -o Outputs/D33-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/D33-coupe.pdf

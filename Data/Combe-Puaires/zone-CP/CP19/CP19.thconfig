@@ -227,8 +227,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/CP19-coupe.xvi
 
 # Select maps
-	select CP19-plan-tot@CP19
-	select CP19-coupe-tot@CP19
+	select MP-CP19-plan-tot@CP19
+	select MC-CP19-coupe-tot@CP19
 		
 export map -o Outputs/CP19-plan.pdf -layout my_layout
 export map -o Outputs/CP19-plan-Continuations.pdf -layout my_layout-Continuations

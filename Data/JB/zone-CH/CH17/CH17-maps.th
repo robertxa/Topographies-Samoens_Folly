@@ -4,38 +4,38 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map CH17-2003-plan
-	CH17_2010-p1
+map MP-CH17-2003-plan -title "CH17 - 2003"
+	SP-CH17_2010-p1
 	break
-	CH17-2
+	SP-CH17-2
 	break
-	CH17-3
+	SP-CH17-3
 endmap
 
-map CH17-2003-coupe
-	CH17-coupe1
+map MC-CH17-2003-coupe -title "CH17 - 2003"
+	SC-CH17-coupe1
 	break
-	CH17-coupe2
+	SC-CH17-coupe2
 endmap
 
-map CH17-2018-plan
-	CH17_2018-p1
+map MP-CH17-2018-plan -title "CH17 - 2018"
+	SP-CH17_2018-p1
 endmap
 
-map CH17-2018-coupe
-	CH17_2018-c1
+map MC-CH17-2018-coupe -title "CH17 - 2018"
+	SC-CH17_2018-c1
 endmap
 
 
-map CH17-plan-tot
-	CH17-2003-plan
+map MP-CH17-plan-tot -title "CH17"
+	MP-CH17-2003-plan
 	break
-	CH17-2018-plan
+	MP-CH17-2018-plan
 endmap
 
-map CH17-coupe-tot
-	CH17-2003-coupe
+map MC-CH17-coupe-tot -title "CH17"
+	MC-CH17-2003-coupe
 	break
-	CH17-2018-coupe
+	MC-CH17-2018-coupe
 endmap
    

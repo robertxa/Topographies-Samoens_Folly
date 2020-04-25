@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap sol2017-1 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+scrap SP-sol2017-1 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
 
 line wall
   1739.0 -1295.0
@@ -392,7 +392,7 @@ endscrap
 
 
 
-scrap sol2017-2 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
+scrap SP-sol2017-2 -projection plan -author 2017 "Xavier Robert" -copyright 2017 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3632 2603 -3632 0.0 0.0 69.3674 0.0 m]
 
 line pit
   924.0 -1902.0
@@ -404,7 +404,6 @@ point 79.0 -1673.0 label -text "m. du Serpent"
 point 524.5 -1499.0 label -text "m. du Serpent"
 
 #point 130.5 -1668.0 label -text "cairn"
-
 
 point 161.5 -1766.0 altitude -align bottom-right
 

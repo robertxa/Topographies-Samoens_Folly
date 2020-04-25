@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap AV8-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+scrap SP-AV8-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
 
 point 73.33 276.535 station -name 1.3@AV8
 
@@ -294,7 +294,7 @@ endscrap
 
 
 
-scrap AV8-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+scrap SP-AV8-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
 
 line wall -close on -reverse on -outline in
   201.0 97.0
@@ -424,11 +424,4 @@ point 203.77 96.545 station -name 4.11@AV8
 point 214.11 103.525 station -name 4.10@AV8
 
 endscrap
-
-
-
-#scrap AV8-previous -projection plan -author 1990 "Bernard Lips" -scale [-128.0 -128.0 679.1814 -128.0 0.0 0.0 20.50240756 0.0 m]
-
-#endscrap
-
 

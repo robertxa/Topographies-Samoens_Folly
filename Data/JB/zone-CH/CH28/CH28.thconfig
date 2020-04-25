@@ -313,8 +313,8 @@ endlayout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/CH28-2015-coupe.xvi
 
 # Select maps
-	select CH28-plan-tot@CH28
-	#select CH28-coupe-tot@CH28
+	select MP-CH28-plan-tot@CH28
+	#select MC-CH28-coupe-tot@CH28
   
 export map -o Outputs/CH28-plan2015.pdf -layout my_layout
 #export map -projection extended -layout my_layout-coupe -o Outputs/CH28-coupe2015.pdf

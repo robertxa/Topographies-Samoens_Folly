@@ -170,8 +170,8 @@ endlayout
 	#select C74-brancheW-plan@C74
 	#select C74-brancheW-coupe@C74
 
-	select C74-plan-tot@C74
-	select C74-coupe-tot@C74
+	select MP-C74-plan-tot@C74
+	select MC-C74-coupe-tot@C74
 	 
  export map -o Outputs/2D/C74-planTH.pdf -layout my_layout
  export map -o Outputs/2D/C74-planTH-Continuations.pdf -layout my_layout-Continuations

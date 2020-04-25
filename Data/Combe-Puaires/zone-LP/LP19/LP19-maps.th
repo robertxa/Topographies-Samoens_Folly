@@ -5,29 +5,29 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map LP19-old-plan
-	LP19-1
+map MP-LP19-old-plan -title "LP19 old"
+	SP-LP19-1
 endmap
 
 #map LP19-old-coupe	
 #endmap
 
-map LP19-new-plan
-	LP19-2
+map MP-LP19-new-plan -title "LP19 new"
+	SP-LP19-2
 endmap
 
-map LP19-new-coupe
-	LP19-Sc1
+map MC-LP19-new-coupe -title "LP19"
+	SP-LP19-1
 endmap
 
 
-map LP19-plan-tot
-	LP19-old-plan
+map MP-LP19-plan-tot -title "LP19"
+	MP-LP19-old-plan
 	break
-	LP19-new-plan
+	MP-LP19-new-plan
 endmap
 
-map LP19-coupe-tot
-	LP19-new-coupe
+map MC-LP19-coupe-tot -title "LP19"
+	MC-LP19-new-coupe
 endmap
    

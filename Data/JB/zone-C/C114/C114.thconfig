@@ -246,8 +246,8 @@ endlayout
 #export map -proj extended -fmt xvi -layout xviexport -o Data/C114-coupe2012.xvi
 
 # Select maps
-	select C114-plan-tot@C114
-	select C114-coupe-tot@C114
+	select MP-C114-plan-tot@C114
+	select MC-C114-coupe-tot@C114
 
 # Export des fichiers pdf, plan et coupe. 
 export map -projection plan -fmt pdf -o Outputs/C114-2012-plan.pdf -layout my_layout

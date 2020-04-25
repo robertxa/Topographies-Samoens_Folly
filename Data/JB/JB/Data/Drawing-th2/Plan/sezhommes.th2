@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap sezhommes-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-sezhommes-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 1833.52 1523.53 station -name Ko.21@jb-riv2
 
@@ -106,7 +106,7 @@ endscrap
 
 
 
-scrap sezhommes2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-sezhommes2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 line wall -close on -outline in -subtype unsurveyed
   1669.5 1421.75
@@ -119,10 +119,9 @@ endline
 
 point 1311.75 1350.25 altitude
 
-point 1315.0 1311.25 label -text "-1466"
+point 1315.0 1311.25 label -text "-1466 m"
 
 #point 1252.25 1348.0 label -text "S1 (45 m, -8 m)"
-
 
 point 1356.25 1356.5 label -text "P13"
 

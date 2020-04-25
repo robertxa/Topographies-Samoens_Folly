@@ -136,8 +136,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/L17-coupe.xvi
 
 # Select maps
-	select L17-plan-tot@L17
-	select L17-coupe-tot@L17
+	select MP-L17-plan-tot@L17
+	select MC-L17-coupe-tot@L17
 	  
 export map -o Outputs/L17-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/L17-coupe.pdf

@@ -235,8 +235,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/C44-coupe.xvi
  
 # Select maps
-	select C44-plan-tot@C44
-	select C44-coupe-tot@C44
+	select MP-C44-plan-tot@C44
+	select MC-C44-coupe-tot@C44
   
 export map -o Outputs/C44-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/C44-coupe.pdf

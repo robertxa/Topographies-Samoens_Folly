@@ -4,150 +4,143 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map JB-rev
-#		Voltigeurs-amonts
-#	break
-#		voltigeurs
-#		preview below JB-amonts
-#endmap
 
-
-map M-Ermoy-Entree-plan
-	Ermoy-entree-1
+map MP-Ermoy-Entree -title "Grotte de l'Ermoy - Entrée"
+	SP-Ermoy-entree-1
 	break
-	Aval-sup
+	SP-Aval-sup
 	break
-	Ermoy-entree2
+	SP-Ermoy-entree2
 endmap
 
-map M-Fond-plan
-	dynam-SP1
+map MP-Fond-plan -title "Grotte de l'Ermoy - Fond"
+	SP-dynam-SP1
 	break
-	Desob
+	SP-Desob
 	break
-	siphon_amont
+	SP-siphon_amont
 	break
-	diverticule-fd
+	SP-diverticule-fd
 	break
-	P6_1
+	SP-P6_1
 	break
-	amont2
+	SP-amont2
 	break
-	bivouac
+	SP-bivouac
 	break
-	bof
+	SP-bof
 	break
-	Ermoy-SPxx
+	SP-Ermoy-SPxx
 	break
-	souris
+	SP-souris
 	break
-	v_bivouac
+	SP-v_bivouac
 	break
-	ermoy-SPyy
+	SP-ermoy-SPyy
 	break
-	ermoy-SPzz
+	SP-ermoy-SPzz
 	break
-	P6_shunt
+	SP-P6_shunt
 endmap
 
-map M-ermoy-rampes-plan
-	Escalades
+map MP-ermoy-rampes -title "Grotte de l'Ermoy - Grandes Rampes"
+	SP-Escalades
 	break
-	minirusses
+	SP-minirusses
 	break
-	a_sirocco
+	SP-a_sirocco
 	break
-	gd_rampes
+	SP-gd_rampes
 	break
-	siphonP60
+	SP-siphonP60
 	break
-	gd_rampes2
+	SP-gd_rampes2
 	break
-	rampes4
+	SP-rampes4
 	break
-	rampes5
+	SP-rampes5
 	break
-	rampes_aval
+	SP-rampes_aval
 	break
-	rampes_fin
+	SP-rampes_fin
 	break
-	salle_manger
+	SP-salle_manger
 	break
-	gd_rampes3
+	SP-gd_rampes3
 endmap
 
-map M-ermoy-siphons-plan
-	avalinf
+map MP-ermoy-siphons -title "Grotte de l'Ermoy - Siphons"
+	SP-avalinf
 	break
-	siphon-aval
+	SP-siphon-aval
 	break
-	aval2
+	SP-aval2
 	break
-	aval3
+	SP-aval3
 	break
-	brascas
+	SP-brascas
 	break
-	brascas2
+	SP-brascas2
 	break
-	jctaval
+	SP-jctaval
 endmap
 
-map MC-ermoy-entree
-	Erm-SC1
+map MC-ermoy-entree -title "Grotte de l'Ermoy - Entrée"
+	SC-Erm-1
 	break
-	Erm-SC3
+	SC-Erm-3
 	break
-	Erm-SC4
+	SC-Erm-4
 	break
-	Erm-SC2
+	SC-Erm-2
 endmap
 
-map MC-ermoy-siphons
-	Erm-SC5
+map MC-ermoy-siphons -title "Grotte de l'Ermoy - Siphons"
+	SC-Erm-5
 	break
-	Erm-SC7
+	SC-Erm-7
 	break
-	Erm-SC8
+	SC-Erm-8
 	break
-	Erm-SC6
+	SC-Erm-6
 	break
-	luiro-SC1
+	SC-luiro-1
 	break
-	luiro-SC2
+	SC-luiro-2
 endmap
 
-map MC-ermoy-rampes
-	Erm-SC9
+map MC-ermoy-rampes -title "Grotte de l'Ermoy - Grandes Rampes"
+	SC-Erm-9
 	break
-	MiniR-SC1
+	SC-MiniR-1
 	break
-	Erm-SC10
+	SC-Erm-10
 	break
-	Erm-SC11
+	SC-Erm-11
 	break
-	Erm-SC12
+	SC-Erm-12
 	break
-	Erm-SC13
+	SC-Erm-13
 endmap
 
-map MC-ermoy-desob
-	Erm-SC14
+map MC-ermoy-desob -title "Grotte de l'Ermoy - Fond"
+	SC-Erm-14
 	break
-	Erm-SC15
+	SC-Erm-15
 endmap
 
 #####################################################################
-map Ermoy-plan-tot
-	M-Ermoy-Entree-plan
+map MP-Ermoy-plan-tot -title "Grotte de l'Ermoy"
+	MP-Ermoy-Entree
 	break
-	M-Fond-plan
+	MP-Fond-plan
 	break
-	M-ermoy-rampes-plan
+	MP-ermoy-rampes
 	break
-	M-ermoy-siphons-plan
+	MP-ermoy-siphons
 endmap
 
-map Ermoy-coupe-tot
+map Ermoy-coupe-tot -title "Grotte de l'Ermoy"
 	MC-ermoy-entree
 	break
 	MC-ermoy-siphons

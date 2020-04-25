@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap gourance5 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-gourance5 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 3318.75 2538.25 label -text "Puits du Balcon"
 
@@ -204,9 +204,6 @@ line wall -id l157-3505-2409
 endline
 
 line wall
-endline
-
-line wall
   3388.0 2601.75
   3388.0 2601.75 3390.5 2599.75 3387.0 2590.25
   3383.5 2580.75 3381.0 2576.0 3380.25 2568.75
@@ -288,7 +285,7 @@ endscrap
 
 
 
-scrap riv-10 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-riv-10 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 area water
   l241-2871-2175
@@ -636,7 +633,7 @@ endscrap
 
 
 
-scrap riv-11 -projection plan -author 2010 "Xavier Robert" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-riv-11 -projection plan -author 2010 "Xavier Robert" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 2368.98 1908.84 station -name Kk.17@jb-riv2
 

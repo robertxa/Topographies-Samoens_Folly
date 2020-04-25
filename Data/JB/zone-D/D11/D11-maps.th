@@ -4,17 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map D11-plan-tot
-	D11-1
+map MP-D11-plan-tot -title "D11"
+	SP-D11-1
 	break
-	D11-3
+	SP-D11-3
 	break
-	D11-2
+	SP-D11-2
 endmap
 
-map D11-coupe-tot
-	D11-coupe1
+map MC-D11-coupe-tot -title "D11"
+	SC-D11-coupe1
 	break
-	D11-coupe2
+	SC-D11-coupe2
 endmap
    

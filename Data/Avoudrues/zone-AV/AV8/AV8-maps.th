@@ -4,20 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map JB-rev
-#		Voltigeurs-amonts
-#	break
-#		voltigeurs
-#		preview below JB-amonts
-#endmap
 
-map MP-AV8-tot
-	AV8-1
+map MP-AV8-tot -title "AV8"
+	SP-AV8-1
 	break
-	AV8-2
+	SP-AV8-2
 endmap
 
-map AV8-coupe-tot
-	AV8-coupe1
+map MC-AV8-tot -title "AV8"
+	SC-AV8-1
 endmap
    

@@ -138,8 +138,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/LP34-coupe.xvi
 
 # Select maps
-	select LP34-plan-tot@LP34
-	#select LP34-coupe-tot@LP34
+	select MP-LP34-plan-tot@LP34
+	select MC-LP34-coupe-tot@LP34
 	  
 export map -o Outputs/LP34-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LP34-coupe.pdf

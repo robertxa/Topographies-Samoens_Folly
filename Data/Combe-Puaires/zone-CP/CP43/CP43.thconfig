@@ -230,8 +230,8 @@ endlayout
 # export map -projection extended -fmt xvi -layout xviexport -o Data/CP43-coupe.xvi
 
 # Select maps
-	select CP43-plan-tot@CP43
-	#select CP43-coupe-tot@CP43
+	select MP-CP43-plan-tot@CP43
+	select MC-CP43-coupe-tot@CP43
 	  
  export map -o Outputs/CP43-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/CP43-coupe.pdf

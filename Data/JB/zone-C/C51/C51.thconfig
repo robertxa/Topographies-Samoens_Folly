@@ -140,8 +140,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/C51-coupe.xvi
 
 # Select maps
-	select C51-plan-tot@C51
-	select C51-coupe-tot@C51
+	select MP-C51-plan-tot@C51
+	select MC-C51-coupe-tot@C51
   
 export map -o Outputs/C51-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/C51-coupe.pdf
