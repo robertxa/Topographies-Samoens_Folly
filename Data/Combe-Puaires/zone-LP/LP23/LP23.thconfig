@@ -98,9 +98,10 @@ layout my_layout-coupe
 	#debug station-names
 	map-header-bg off
 	layers on
-	#grid bottom
-	#grid-size 100 100 100 m
 	grid off
+	grid-size 100 100 20 m
+	grid-coords border
+	map-header-bg off
  
 	# Titre          
 	code tex-map
