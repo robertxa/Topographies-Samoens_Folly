@@ -324,6 +324,7 @@ layout drawingconfig
 	symbol-color point station [54 7 60]
 	symbol-color line flowstone [100 60 20]
 	symbol-color line wall:flowstone [100 60 20]
+	symbol-color point wall-altitude [78 8 52]	# rouge-violet 199, 21, 133
 
 	####### Metapost-changes ############
 	code metapost
@@ -603,34 +604,35 @@ layout drawingconfig
 			endgroup;
 		enddef;
 
- 		#<en> Change Scale bar type
-	 	#<fr> Pour modifier la barre d'échelle
-		def s_scalebar (expr l, units, txt) =
-			begingroup
-				interim warningcheck:=0;
-				tmpl:=l / Scale * cm * units / 2;
-				tmpx:=l / Scale * cm * units / 5;
-				tmph:=5bp; % bar height
-			endgroup;
-			pickup PenC;
-			draw (-tmpl,0)--(tmpl,0)--(tmpl,-tmph)--(-tmpl,-tmph)--cycle;
-			p:=(0,0)--(tmpx,0)--(tmpx,-tmph)--(0,-tmph)--cycle;
-			for i:=-2.5 step 2 until 2:
-				fill p shifted (i * tmpx,0);
-			endfor;
-			begingroup
-				interim labeloffset:=3.5bp;
-				for i:=0 step (l/5) until (l-1):
-					tmpx:=tmpl * (i * 2 / l - 1);
-					label.bot(thTEX(decimal (i)),(tmpx,-tmph));
-				endfor;
-				label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
-				%<en> To write the scale "1:scale" uncomment it the next line:
-				%<fr> Pour écrire l'échelle "1:scale" au dessus de la barre décommenter la ligne suivante :
-				%label.top(thTEX("Echelle 1 : " & decimal (Scale*100)),(0,0));
-			endgroup;
-		enddef;
+#		#<en> Change Scale bar type
+#	 	#<fr> Pour modifier la barre d'échelle
+#		def s_scalebar (expr l, units, txt) =
+#			begingroup
+#				interim warningcheck:=0;
+#				tmpl:=l / Scale * cm * units / 2;
+#				tmpx:=l / Scale * cm * units / 5;
+#				tmph:=5bp; % bar height
+#			endgroup;
+#			pickup PenC;
+#			draw (-tmpl,0)--(tmpl,0)--(tmpl,-tmph)--(-tmpl,-tmph)--cycle;
+#			p:=(0,0)--(tmpx,0)--(tmpx,-tmph)--(0,-tmph)--cycle;
+#			for i:=-2.5 step 2 until 2:
+#				fill p shifted (i * tmpx,0);
+#			endfor;
+#			begingroup
+#				interim labeloffset:=3.5bp;
+#				for i:=0 step (l/5) until (l-1):
+#					tmpx:=tmpl * (i * 2 / l - 1);
+#					label.bot(thTEX(decimal (i)),(tmpx,-tmph));
+#				endfor;
+#				label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
+#				%<en> To write the scale "1:scale" uncomment it the next line:
+#				%<fr> Pour écrire l'échelle "1:scale" au dessus de la barre décommenter la ligne suivante :
+#				%label.top(thTEX("Echelle 1 : " & decimal (Scale*100)),(0,0));
+#			endgroup;
+#		enddef;
 
+		
 #		#<en> Write the point depth (not functionning...)
 #		#<fr> Définir un point qui écrit la côte/profondeur (Ne fonctionne pas actuellement...)
 #		def p_u_prof (expr pos) =
@@ -756,6 +758,56 @@ layout drawingconfig
 		verbatimtex \def\thheightpos{E}\def\thheightneg{P} etex
 
 
+		#<en> Change the altitude definition for the wall-line label (add units)
+		#	  To modify the color, you need to modify the triplets after the 3 withcolor command
+		#<fr> Changer la définition de l'altitude pour le label de la ligne mur (ajout de l'unité)
+		#	  Pour modifier la couleur, modifier le triplet (RGB) après les 3 commandes withcolor
+		
+		def p_wallaltitude (expr pprev,pos,pnext,txt) =
+			rot:=angle(unitvector(pnext-pos)+unitvector(pos-pprev)) - 90;
+			pickup PenD;
+			pair zz;
+			%zz:=(pos + 3*unitvector(dir rot));
+			zz:=(pos + (u/4)*unitvector(dir rot));
+			%draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in black
+			draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in color
+			% add the unit (here, meters as m)
+			txtm:=image(
+					%draw txt; % altitude in black
+					draw txt withcolor (0.78, 0.08, 0.52); % altitude in color
+					%interim labeloffset:=0;
+					%label.urt(btex \thaltitude { m} etex, lrcorner txt); % unit in black
+					label.urt(btex \thaltitude { m} etex, lrcorner txt) withcolor (0.78, 0.08, 0.52); % unit in color
+				);
+			begingroup 
+				%    interim labeloffset:=2pt;
+				interim labeloffset:=(u/12);
+				if horiz_labels:
+					rot:=rot mod 360;
+					if rot<=22.5: lab:=thelabel.rt(txtm, zz);
+					elseif rot<=67.5: lab:=thelabel.urt(txtm, zz);
+					elseif rot<=112.5: lab:=thelabel.top(txtm, zz);
+					elseif rot<=157.5: lab:=thelabel.ulft(txtm, zz);
+					elseif rot<=202.5: lab:=thelabel.lft(txtm, zz);
+					elseif rot<=247.5: lab:=thelabel.llft(txtm, zz);
+					elseif rot<=292.5: lab:=thelabel.bot(txtm, zz);
+					elseif rot<=337.5: lab:=thelabel.lrt(txtm, zz);
+					else: lab:=thelabel.rt(txtm, zz);
+					fi;
+				else:
+					if (abs rot>90) and (abs rot <=270):
+						rot:=rot-180;
+						lab:=thelabel.lft(txtm, pos);
+					else:
+						lab:=thelabel.rt(txtm, pos);
+						fi;
+				fi;
+				process_label(pos, if horiz_labels: 0 else: rot fi);		
+			endgroup;
+		enddef;
+		
+		
+		
 	#<en> Definition of new lines symbols
 	#<fr> Définition de nouveau symboles de lignes
 
@@ -1230,6 +1282,91 @@ layout drawingconfig
 endlayout
 
 #------------------------------
+layout scalebar_horiz
+
+	#<en> Layout to define a horizontal Scale bar
+	#<fr> Layout pour définir une barre d'échelle horizontale
+
+	code metapost
+ 		#<en> Change Scale bar type
+	 	#<fr> Pour modifier la barre d'échelle
+		def s_scalebar (expr l, units, txt) =
+			begingroup
+				interim warningcheck:=0;
+				tmpl:=l / Scale * cm * units / 2;
+				tmpx:=l / Scale * cm * units / 5;
+				tmph:=5bp; % bar height
+			endgroup;
+			pickup PenC;
+			draw (-tmpl,0)--(tmpl,0)--(tmpl,-tmph)--(-tmpl,-tmph)--cycle;
+			p:=(0,0)--(tmpx,0)--(tmpx,-tmph)--(0,-tmph)--cycle;
+			for i:=-2.5 step 2 until 2:
+				fill p shifted (i * tmpx,0);
+			endfor;
+			
+			begingroup
+				interim labeloffset:=3.5bp;
+				for i:=0 step (l/5) until (l-1):
+					tmpx:=tmpl * (i * 2 / l - 1);
+					label.bot(thTEX(decimal (i)),(tmpx,-tmph));
+				endfor;
+				label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
+				%<en> To write the scale "1:scale" uncomment it the next line:
+				%<fr> Pour écrire l'échelle "1:scale" au dessus de la barre décommenter la ligne suivante :
+				%label.top(thTEX("Echelle 1 : " & decimal (Scale*100)),(0,0));
+			endgroup;
+		enddef;
+	endcode
+
+endlayout
+
+
+#------------------------------
+layout scalebar_vert
+
+	#<en> Layout to define a vertical Scale bar
+	#<fr> Layout pour définir une barre d'échelle verticale
+
+	code metapost
+ 		#<en> Change Scale bar type
+	 	#<fr> Pour modifier la barre d'échelle
+		def s_scalebar (expr l, units, txt) =
+			begingroup
+				interim warningcheck:=0;
+				tmpl:=l / Scale * cm * units / 2;
+				tmpx:=l / Scale * cm * units / 5;
+				tmph:=5bp; % bar height
+				% To compute the right size of the text
+				if (l/1000) <1 :
+					if (l/100) <1 :
+						if (l/10) <1 : tmphz:=6bp;
+						else: tmphz:=8bp; fi;
+					else: tmphz:=10bp; fi;
+				else tmphz:=12bp; fi;
+			endgroup;
+			pickup PenC;
+			draw (0,-tmpl)--(0,tmpl)--(-tmph,tmpl)--(-tmph,-tmpl)--cycle;
+			p:=(0,0)--(0,tmpx)--(-tmph,tmpx)--(-tmph,0)--cycle;
+			for i:=-2.5 step 2 until 2:
+				fill p shifted (0,i * tmpx);
+			endfor;
+			begingroup
+				interim labeloffset:=0bp;
+				for i:=0 step (l/5) until (l-1):
+					tmpx:=tmpl * (i * 2 / l - 1);
+					label.bot(thTEX(decimal (l-i)),(tmph+tmphz,tmpx));
+					%label.bot(thTEX(decimal (i)),(tmpx,-tmph)) rotated 90;
+					% Inverser l'ordre des nombres
+				endfor;
+				label.bot(thTEX(decimal (l-l) & "\thinspace" & txt),(tmph+tmphz,tmpl));
+				%label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph)) rotated 90;
+			endgroup;
+		enddef;
+	endcode
+endlayout
+
+
+#------------------------------
 layout headerl
 #<en> Layout to change the header (plan projection)
 #     This code is experimental redefinition of map header and based on the work of
@@ -1238,6 +1375,7 @@ layout headerl
 #     Ce code de redéfinition est expérimental experimental et basé sur le travail de
 #     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
 
+	copy scalebar_horiz
 
 	#<en> This one affects maps only
 	#<fr> Ceci ne touche que les maps (plans)
@@ -1364,13 +1502,35 @@ endlayout
 
 
 #------------------------------
-layout header_coupe
+layout header_coupe_vert-to-place
 #<en> Layout to change the header (extended elevation)
 #     This code is experimental redefinition of map header
 #     Bruce Mutton           Therion 5.3.15 make use of new variables
+#	  Xavier Robert (2020/04/27)
+#     Header specifically for extended elevation maps with a vertical scale bar 
+#     that needs to be manually located inside your layout (in the thconfig file)
+#     with the code :
+#       	code tex-map
+#          		\def\maplayout{
+#				\legendbox{0}{-1}{NW}{\the\legendcontent}	% add legend content
+#				\legendbox{0}{87.5}{NW}{\hsize=1.5 cm\centerline\scalebar}	% add scalebar where you want it
+#				}
+#			endcode
 #<fr> Layout pour modifier le cartouche (header) de la projection en coupe développée
 #     Ce code de redéfinition est expérimental experimental et basé sur le travail de
 #     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
+#	  Xavier Robert (2020/04/27)
+#     Header développé spécialement pour les coupes étendues et projetées, avec l'échelle
+#     verticale qu'il faut localiser grâce au code :
+#       	code tex-map
+#          		\def\maplayout{
+#				\legendbox{0}{-1}{NW}{\the\legendcontent}	% Ajout du contenu de la légende
+#				\legendbox{0}{87.5}{NW}{\hsize=1.5 cm\centerline\scalebar}	% Ajout de l'échelle où nous la voulons
+#				}
+#			endcode
+
+
+	copy scalebar_vert
 
 	#<en> This one affects maps only (extended view)
 	#<fr> Ceci ne touche que les maps (coupes développées)
@@ -1378,7 +1538,7 @@ layout header_coupe
 		\legendcontent={%
 			\hsize=\legendwidth
 			\color[0 0 0]\the\legendtextcolor
-			\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			%\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
 			%print cave map name
 			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
 				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
@@ -1386,11 +1546,8 @@ layout header_coupe
 			%print comment
 			{\rightskip=0pt plus 3em\parskip=3bp
 			\edef\tmp{\the\comment} \ifx\tmp\empty \else
-				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
+				{\the\legendtextsize\the\comment} \par\medskip\vskip0.5cm
 			\fi}
-			%print scalebar
-			\ifscalebar\scalebar\vskip1cm\fi
-
 		{
 		%print the coordinates of the entrance. It is associated with the entrances_coordinates.th file
 		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
@@ -1469,6 +1626,221 @@ endlayout
 
 
 #------------------------------
+layout header_coupe_vert-auto
+#<en> Layout to change the header (extended elevation)
+#     This code is experimental redefinition of map header
+#     Bruce Mutton           Therion 5.3.15 make use of new variables
+#	  Xavier Robert (2020/04/27)
+#     Header specifically for extended elevation maps with a vertical scale bar 
+#     located at the right of the header.
+#<fr> Layout pour modifier le cartouche (header) de la projection en coupe développée
+#     Ce code de redéfinition est expérimental experimental et basé sur le travail de
+#     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
+#	  Xavier Robert (2020/04/27)
+#     Header développé spécialement pour les coupes étendues et projetées, avec l'échelle
+#     verticale et localisée à la droite du header.
+
+	copy scalebar_vert
+
+	#<en> This one affects maps only (extended view)
+	#<fr> Ceci ne touche que les maps (coupes développées)
+	code tex-map
+		\legendcontent={%
+			\hsize=\legendwidth
+			\color[0 0 0]\the\legendtextcolor
+			% print scalebar
+			\ifscalebar\hskip1.3cm\vbox to 0pt{\line{\hfil\scalebar}\vss}\fi
+			% print cave map name
+			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
+				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
+			\fi
+			% print comment
+			{\rightskip=0pt plus 3em\parskip=3bp
+			\edef\tmp{\the\comment} \ifx\tmp\empty \else
+				{\the\legendtextsize\the\comment} \par\medskip\vskip0.3cm
+			\fi}
+		{
+		%print the coordinates of the entrance. It is associated with the entrances_coordinates.th file
+		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
+			\vskip0.5cm
+		\fi
+		%print cavelength and depth
+		\everypar{\hangindent=2em\hangafter=1}
+		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+		\fi
+		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+		\fi
+		# % end bruces addition
+
+		%print explorers names
+		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+		\fi
+		%print surveyors names
+		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+		\fi
+		 %%print the guides
+		\edef\tmp{\the\guide} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+		\fi
+		%print cartographers names
+		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+		\fi
+		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+		\edef\tmp{\the\synth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+		\fi
+		%print the club
+		\edef\tmp{\the\club} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+		\fi
+		%%print the expedition
+		\edef\tmp{\the\expe} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+		\fi
+        %%print the web page
+		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
+		% \fi
+		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+		\fi
+
+		# % end bruces addition
+		%print copyrights
+		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\copyrights\par}
+		\fi
+		
+		\bigskip
+		\edef\tmp{\the\thanksto} \ifx\tmp\empty \else
+				{\the\legendtextsize\si\the\ththanksto: \ss\the\thanksto\par}
+				%\def\ththankstotitle{Nos remerciements : }
+				%{\everypar{\hangindent=7.2em\hangafter=1}
+				%\size[\thsizem]\si\ththankstotitle \ss\ththanksto\par}
+		\fi
+		}
+		\formattedlegend
+		\color[0 0 0]
+		}
+	endcode
+endlayout
+
+#------------------------------
+layout header_coupe
+#<en> Layout to change the header (extended elevation)
+#     This code is experimental redefinition of map header
+#     Bruce Mutton           Therion 5.3.15 make use of new variables
+#<fr> Layout pour modifier le cartouche (header) de la projection en coupe développée
+#     Ce code de redéfinition est expérimental experimental et basé sur le travail de
+#     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
+
+	copy scalebar_horiz
+
+	#<en> This one affects maps only (extended view)
+	#<fr> Ceci ne touche que les maps (coupes développées)
+	code tex-map
+		\legendcontent={%
+			\hsize=\legendwidth
+			\color[0 0 0]\the\legendtextcolor
+			%\ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+			%print cave map name
+			\edef\tmp{\the\cavename} \ifx\tmp\empty \else
+				{\the\legendtextheadersize\the\cavename}\vskip0.5cm
+			\fi
+			%print comment
+			{\rightskip=0pt plus 3em\parskip=3bp
+			\edef\tmp{\the\comment} \ifx\tmp\empty \else
+				{\the\legendtextsize\the\comment} \par\medskip\vskip1cm
+			\fi}
+			%print scalebar
+			\ifscalebar\scalebar\vskip1cm\fi
+		{
+		%print the coordinates of the entrance. It is associated with the entrances_coordinates.th file
+		\edef\tmp{\the\ECoordinates} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thcoords: \ss\the\ECoordinates\par}
+			\vskip0.5cm
+		\fi
+		%print cavelength and depth
+		\everypar{\hangindent=2em\hangafter=1}
+		\edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+		\fi
+		\edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+		\fi
+		# % end bruces addition
+
+		%print explorers names
+		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+		\fi
+		%print surveyors names
+		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+		\fi
+		 %%print the guides
+		\edef\tmp{\the\guide} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+		\fi
+		%print cartographers names
+		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+		\fi
+		%print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+		\edef\tmp{\the\synth} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+		\fi
+		%print the club
+		\edef\tmp{\the\club} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+		\fi
+		%%print the expedition
+		\edef\tmp{\the\expe} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+		\fi
+        %%print the web page
+		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
+		% \fi
+		% \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+		\fi
+
+		# % end bruces addition
+		%print copyrights
+		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+			{\the\legendtextsize\ss\the\copyrights\par}
+		\fi
+		
+		\bigskip
+		\edef\tmp{\the\thanksto} \ifx\tmp\empty \else
+				{\the\legendtextsize\si\the\ththanksto: \ss\the\thanksto\par}
+				%\def\ththankstotitle{Nos remerciements : }
+				%{\everypar{\hangindent=7.2em\hangafter=1}
+				%\size[\thsizem]\si\ththankstotitle \ss\ththanksto\par}
+		\fi
+		}
+		\formattedlegend
+		\color[0 0 0]
+		}
+	endcode
+endlayout
+
+#------------------------------
 layout headeratlas
 #<en> Layout to change the header (plan projection)
 #     This code is experimental redefinition of map header and based on the work of
@@ -1477,7 +1849,8 @@ layout headeratlas
 #     Ce code de redéfinition est expérimental experimental et basé sur le travail de
 #     Bruce Mutton           Therion 5.3.15 fait appel à de nouvelles variables
 
-
+	copy scalebar_horiz
+	
 	#<en> This one affects maps only
 	#<fr> Ceci ne touche que les maps (plans)
 	code tex-map

@@ -168,6 +168,7 @@ layout my_layout-coupe
 	copy Coords_Header_CPCPl
 	copy drawingconfig
 	copy header_coupe
+	#copy header_coupe_vert-auto
 	copy langue-fr
   
 	# Titre  
@@ -243,7 +244,7 @@ layout my_layout-coupe
 	# 100 100, c est en haut, a droite
 	# La manchette a des "points cardinaux" : n, s, ne, sw, etc.
 	# Il faut specifier un de ces points 
-	map-header 5 -1 nw
+	map-header 0 -1 nw
   
 	# arrière plan de la manchette
 	map-header-bg off
@@ -256,13 +257,14 @@ layout my_layout-coupe
 
 	# Specifier qu il faut imprimer une grille
 	# au dessous de la topo  
-	#grid bottom
-  
+	grid bottom
 	# Specifier le pas de la grille, ici 100x100x100 metres
 	# (Trois dimensions, oui, ça sert pour la coupe aussi) 
-	#grid-size 100 100 100 m
-	# Si nous ne voulons pas de grille :
-	grid off    
+	grid-size 100 100 10 m
+	cs UTM32N
+	grid-origin 0 0 0 m
+	#grid-origin 0 0 1960 m
+	grid-coords border
   
 	# Titre          
 	code tex-map
@@ -274,6 +276,12 @@ layout my_layout-coupe
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		
+		%% Dans le cas d'un cartouche avec une barre verticale à placer
+		%\def\maplayout{
+		%	\legendbox{0}{-1}{NW}{\the\legendcontent}	% Ajout de la barre d'échelle verticale
+		%	\legendbox{0}{87.5}{NW}{\hsize=1.5 cm\centerline\scalebar}
+		%	}
 	endcode  
 
 endlayout
