@@ -1,0 +1,15 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CH26 -title "CH26"
+
+centerline -extend right
+	cs lat-long
+	fix       CH26      46.10437     006.82571      2439
+	station   CH26      "CH26" entrance continuation explored 07m
+endcenterline
+
+endsurvey

@@ -1,0 +1,60 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -455 514 160.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH25.gif 0 {}
+
+
+
+scrap SC-CH25-1 -projection extended -author 2011 "Gaëtan Poschmann" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [22.0 -104.0 22.0 -290.0 0.0 0.0 0 -9.0 m]
+
+point 126.5 -297.0 altitude -align right -value [-9 m]
+
+point 168.5 -98.5 altitude -align top-right
+
+point 116.0 29.5 label -text "<bf>CH25" -scale xl
+
+point 113.5 -40.5 entrance -orientation 191.8
+
+point 118.0 -291.5 breakdown-choke
+
+point 102.0 -295.5 breakdown-choke
+
+point 91.5 -289.5 breakdown-choke
+
+point 73.5 -295.0 breakdown-choke
+
+line wall -subtype invisible
+  182.0 -104.5
+  182.0 -104.5 179.0 -92.5 170.5 -92.5
+  162.0 -92.5 90.5 -96.0 75.5 -96.0
+  60.5 -96.0 31.0 -97.0 27.0 -102.0
+endline
+
+line wall
+  126.5 -297.0
+  126.5 -297.0 124.5 -256.0 125.5 -245.5
+  126.5 -235.0 129.0 -192.0 130.5 -178.0
+  132.0 -164.0 127.0 -146.0 127.0 -135.0
+  127.0 -124.0 125.5 -117.0 134.0 -112.5
+  142.5 -108.0 145.0 -107.0 152.5 -102.0
+  160.0 -97.0 163.5 -96.5 168.5 -98.5
+  173.5 -100.5 182.0 -104.5 182.0 -104.5
+  smooth off
+endline
+
+line wall
+  27.0 -102.0
+  27.0 -102.0 55.0 -97.5 59.5 -103.0
+  64.0 -108.5 70.0 -128.5 67.5 -138.0
+  65.0 -147.5 56.0 -153.5 56.5 -171.5
+  57.0 -189.5 60.5 -224.5 59.5 -237.0
+  58.5 -249.5 56.5 -265.0 56.5 -274.5
+  56.5 -284.0 56.5 -294.0 56.5 -294.0
+  smooth off
+endline
+
+point 75.0 -101.0 station -name CH25@CH25
+
+endscrap
+
+

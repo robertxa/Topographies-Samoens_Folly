@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey prospectionCH -title "Prospection Zone CH"
+  
+	# Pour importer les différentes données de différents fichiers topos : 
+	input CH19/CH19-tot.th
+	input CH19b/CH19b-tot.th
+	input CH21/CH21-tot.th
+	input CH23/CH23-tot.th
+	input CH25/CH25-tot.th
+	input CH26/CH26-tot.th
+	input CH30/CH30-tot.th
+	input CH31/CH31-tot.th
+	
+endsurvey

@@ -1,0 +1,72 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -415 491 550.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH26.gif 0 {}
+
+
+
+scrap SC-CH26-1 -projection extended -author 2011 "Gaëtan Poschmann" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [39.0 -127.5 39.0 -251.5 0.0 0.0 0 -7.0 m]
+
+point 87.0 -248.5 altitude -align right -value [-7 m]
+
+point 107.0 -129.0 altitude -align top-right
+
+point 90.5 -35.0 label -text "<bf>CH26" -scale xl
+
+point 87.0 -92.0 entrance -orientation 187.2
+
+point 80.5 -249.0 breakdown-choke
+
+point 71.0 -249.0 breakdown-choke
+
+line wall -subtype invisible
+  107.0 -129.0
+  107.0 -129.0 81.5 -122.5 70.5 -124.0
+  59.5 -125.5 42.5 -128.0 42.5 -128.0
+  smooth off
+endline
+
+line wall
+  87.0 -248.5
+  87.0 -248.5 86.0 -201.5 85.5 -191.5
+  85.0 -181.5 75.5 -136.0 88.0 -131.5
+  100.5 -127.0 107.0 -129.0 107.0 -129.0
+  smooth off
+endline
+
+line wall
+  42.5 -128.0
+  42.5 -128.0 62.0 -127.0 63.5 -132.5
+  65.0 -138.0 71.0 -163.0 71.0 -174.5
+  71.0 -186.0 69.5 -207.5 67.5 -218.5
+  65.5 -229.5 63.0 -249.5 63.0 -249.5
+  smooth off
+endline
+
+point 76.0 -128.5 station -name CH26@CH26
+
+endscrap
+
+
+
+scrap SP-CH26-1 -projection plan -author 2011 "Gaëtan Poschmann" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [60.0 -130.0 109.0 -130.0 0.0 0.0 0.6 0 m]
+
+point 76.0 -128.5 station -name CH26@CH26
+
+point 69.5 412.0 label -text "<bf>CH26" -scale xl
+
+point 80.0 91.0 entrance -orientation 180.3
+
+line wall -close on -subtype pit
+  77.0 -113.5
+  77.0 -113.5 62.5 -127.0 63.5 -132.5
+  64.5 -138.0 87.5 -142.5 96.0 -141.0
+  104.5 -139.5 111.5 -136.5 111.5 -130.5
+  111.5 -124.5 115.5 -118.5 105.5 -115.5
+  95.5 -112.5 77.0 -113.5 77.0 -113.5
+  smooth off
+endline
+
+endscrap
+
+

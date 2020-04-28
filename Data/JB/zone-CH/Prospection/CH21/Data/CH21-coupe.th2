@@ -1,0 +1,66 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -3635 2608 142.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH21.gif 0 {}
+
+
+
+scrap SC-CH21-1 -projection extended -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [782.0 -1047.0 782.0 -1503.0 0.0 0.0 0.0 -4.0 m]
+
+point 1404.0 -280.0 label -text "<bf>CH21" -scale xl
+
+point 1012.0 -1732.0 label -text "<center>trémie<br>instable"
+
+point 1204.0 -768.0 entrance -orientation 196.0
+
+line rock-border -close on -clip off
+  956.0 -1044.0
+  980.0 -958.0
+  870.0 -886.0
+  776.0 -948.0
+  868.0 -1038.0
+  956.0 -1044.0
+endline
+
+point 1288.0 -992.0 altitude -align right
+
+line wall -subtype invisible
+  1288.0 -992.0
+  1288.0 -992.0 1128.0 -992.0 1074.0 -980.0
+  1020.0 -968.0 854.0 -1012.0 840.0 -1020.0
+endline
+
+line wall
+  1168.0 -1478.0
+  1168.0 -1478.0 1188.0 -1454.0 1188.0 -1432.0
+  1188.0 -1410.0 1188.0 -1356.0 1196.0 -1322.0
+  1204.0 -1288.0 1202.0 -1178.0 1188.0 -1122.0
+  1174.0 -1066.0 1182.0 -998.0 1216.0 -996.0
+  1250.0 -994.0 1288.0 -992.0 1288.0 -992.0
+  smooth off
+endline
+
+point 910.0 -1516.0 altitude -align left -value [-4 m]
+
+line wall -subtype debris
+  910.0 -1516.0
+  910.0 -1516.0 1010.0 -1528.0 1072.0 -1516.0
+  1134.0 -1504.0 1158.0 -1494.0 1168.0 -1478.0
+endline
+
+line wall
+  840.0 -1020.0
+  840.0 -1020.0 808.0 -1026.0 814.0 -1046.0
+  820.0 -1066.0 850.0 -1100.0 890.0 -1136.0
+  930.0 -1172.0 964.0 -1228.0 966.0 -1284.0
+  968.0 -1340.0 998.0 -1374.0 964.0 -1400.0
+  930.0 -1426.0 922.0 -1422.0 910.0 -1456.0
+  898.0 -1490.0 910.0 -1516.0 910.0 -1516.0
+  smooth off
+endline
+
+point 1158.0 -1008.0 station -name CH21@CH21
+
+endscrap
+
+

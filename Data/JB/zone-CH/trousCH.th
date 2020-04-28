@@ -21,20 +21,20 @@ centerline -extend right
 	fix       CH16      46.105800     006.80743      2245
 	#fix       CH17      46.106700     006.81188      2280
 	fix       CH18      46.108200     006.82203      2329
-	fix       CH19      46.106900     006.81716      2318
-	fix       CH19B     46.106900     006.81661      2308
+	#fix       CH19      46.106900     006.81716      2318
+	#fix       CH19B     46.106900     006.81661      2308
 	#fix       CH20      46.106883     006.81340      2336
-	fix       CH21      46.107133     006.81616      2320
+	#fix       CH21      46.107133     006.81616      2320
 	#fix       CH22      46.106300     006.81526      2340
-	fix       CH23      46.106633     006.80655      2288
+	#fix       CH23      46.106633     006.80655      2288
 	#fix       CH24      46.10442	006.82357       2427  # Coordonnées fausses
-	fix       CH25      46.10489     006.82052      2404
-	fix       CH26      46.10437     006.82571      2439
+	#fix       CH25      46.10489     006.82052      2404
+	#fix       CH26      46.10437     006.82571      2439
 	#fix       CH27      46.106300     006.81526      2340
-	#fix       CH28      46.106300     006.81526      2340    # Coordonnées inconnues
+	#fix       CH28      46.106300     006.81526      2340    # Coordonnées inconnues ? Sûr ? Les coordonnées sont pourtant bonnes
 	
-	fix       CH30      46.105130     6.822550      2389
-	fix       CH31      46.105020     6.823230      2394
+	#fix       CH30      46.105130     6.822550      2389
+	#fix       CH31      46.105020     6.823230      2394
 	
 	#station   CH03      "CH03" entrance
 	station   CH4       "CHO4" entrance continuation explored 04m
@@ -47,40 +47,15 @@ centerline -extend right
 	station   CH14      "CH14" entrance continuation explored 15m
 	station   CH16      "CH16" entrance continuation explored 07m
 	station   CH18      "CH18" entrance # continuation explored 00m
-	station   CH19      "CH19" entrance continuation explored 10m
-	station   CH19B     "CH19B" entrance continuation explored 50m
-	station   CH21      "CH21" entrance continuation explored 04m
-	station   CH23      "CH23" entrance continuation explored 15m
-	station   CH25      "CH25" entrance continuation explored 09m
-	station   CH26      "CH26" entrance continuation explored 07m
+	#station   CH19      "CH19" entrance continuation explored 10m
+	#station   CH19B     "CH19B" entrance continuation explored 50m
+	#station   CH21      "CH21" entrance continuation explored 04m
+	#station   CH23      "CH23" entrance continuation explored 15m
+	#station   CH25      "CH25" entrance continuation explored 09m
+	#station   CH26      "CH26" entrance continuation explored 07m
 
-	station   CH30      "CH30" entrance continuation explored 10m
-	station   CH31      "CH31" entrance continuation explored 15m
-	
-#data nosurvey from to  #definition of relation between points
-#	#flags splay
-#	flags surface
-#	CH03	  CH05
-#	CH05      CH06
-#	CH06      CH09
-#	CH09      CH10
-#	CH10      CH12
-#	CH12      CH13
-#	CH13      CH14
-#	CH14      CH16
-#	CH16      CH18
-#	CH18      CH19
-#	CH19      CH19B
-#	CH19B     CH21
-#	CH21      CH23
-#	CH23      CH4
-#	CH23      CH25
-#	#CH24      CH25
-#	CH25      CH26
-#	#CH26      CH27
-#	#CH25      CH28#
-#	CH26      CH30
-#	CH30      CH31
+	#station   CH30      "CH30" entrance continuation explored 10m
+	#station   CH31      "CH31" entrance continuation explored 15m
 	
 endcenterline
 

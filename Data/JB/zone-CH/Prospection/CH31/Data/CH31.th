@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CH31 -title "CH31"
+ # Fichier contenant les positions des entrées de la zone CH, Samoens, France
+
+centerline -extend right
+	cs lat-long
+	fix       CH31      46.105020     6.823230      2394
+	station   CH31      "CH31" entrance continuation explored 15m
+	
+endcenterline
+
+endsurvey

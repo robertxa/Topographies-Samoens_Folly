@@ -1,0 +1,71 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -3635 2608 142.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH23.gif 0 {}
+
+
+
+scrap SP-CH23-1 -projection plan -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [676.0 -1067.0 1504.0 -1067.0 0.0 0.0 15 0.0 m]
+
+point 1834.0 -348.0 label -text "<bf>CH23" -scale xl
+
+point 1798.0 -750.0 entrance -orientation 220.1
+
+point 802.0 -990.0 altitude -align left -value [-15 m]
+
+point 1588.0 -1276.0 altitude -align bottom-right
+
+area blocks
+  l4-1028--890
+  l5-1656--1016
+endarea
+
+line gradient
+  1424.0 -1034.0
+  1010.0 -1120.0
+endline
+
+line border
+  1206.0 -1378.0
+  1206.0 -1378.0 1134.0 -1204.0 1132.0 -1106.0
+  1130.0 -1008.0 1144.0 -806.0 1158.0 -784.0
+endline
+
+line border
+  1356.0 -1364.0
+  1356.0 -1364.0 1224.0 -1174.0 1216.0 -1070.0
+  1208.0 -966.0 1242.0 -782.0 1242.0 -782.0
+  smooth off
+endline
+
+line border
+  1520.0 -1350.0
+  1520.0 -1350.0 1348.0 -1122.0 1344.0 -1010.0
+  1340.0 -898.0 1342.0 -760.0 1342.0 -760.0
+  smooth off
+endline
+
+line u:doline -id l5-1656--1016 -clip off
+  1588.0 -1276.0
+  1588.0 -1276.0 1680.0 -1082.0 1654.0 -1012.0
+  1628.0 -942.0 1564.0 -886.0 1522.0 -858.0
+  1480.0 -830.0 1446.0 -800.0 1446.0 -800.0
+  smooth off
+endline
+
+line wall -id l4-1028--890
+  1446.0 -800.0
+  1446.0 -800.0 1152.0 -864.0 1032.0 -894.0
+  912.0 -924.0 798.0 -896.0 802.0 -990.0
+  806.0 -1084.0 800.0 -1116.0 840.0 -1186.0
+  880.0 -1256.0 988.0 -1306.0 1130.0 -1318.0
+  1272.0 -1330.0 1450.0 -1284.0 1502.0 -1286.0
+  1554.0 -1288.0 1588.0 -1276.0 1588.0 -1276.0
+  smooth off
+endline
+
+point 1454.0 -1056.0 station -name CH23@CH23
+
+endscrap
+
+

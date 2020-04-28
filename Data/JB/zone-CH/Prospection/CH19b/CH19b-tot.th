@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CH19b -title "CH19b"
+	input Data/CH19b.th
+
+	# pour le plan
+	input Data/CH19b.th2
+	# Pour la coupe et le plan
+	input Data/CH19b-coupe.th2
+
+	input CH19b-maps.th
+endsurvey

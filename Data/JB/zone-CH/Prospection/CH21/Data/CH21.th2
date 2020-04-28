@@ -1,0 +1,44 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -3635 2608 214.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH21.gif 0 {}
+
+
+
+scrap SP-CH21-1 -projection plan -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [1474.0 -1027.0 1176.0 -749.0 0.0 0.0 -2.0 0.0 m]
+
+point 2248.0 76.0 label -text "<bf>CH21" -scale xl
+
+point 1428.0 -784.0 entrance -orientation 218.7
+
+line rock-border -close on -clip off
+  834.0 -904.0
+  762.0 -966.0
+  740.0 -1050.0
+  890.0 -1028.0
+  904.0 -920.0
+  834.0 -904.0
+endline
+
+point 954.0 -974.0 altitude -align top-left
+
+area blocks
+  l4-1206--988
+endarea
+
+line wall -id l4-1206--988 -close on
+  1204.0 -992.0
+  1204.0 -992.0 1038.0 -958.0 954.0 -974.0
+  870.0 -990.0 798.0 -998.0 798.0 -1034.0
+  798.0 -1070.0 782.0 -1074.0 904.0 -1076.0
+  1026.0 -1078.0 1106.0 -1082.0 1166.0 -1072.0
+  1226.0 -1062.0 1238.0 -1050.0 1226.0 -1034.0
+  1214.0 -1018.0 1204.0 -992.0 1204.0 -992.0
+  smooth off
+endline
+
+point 1146.0 -1016.0 station -name CH21@CH21
+
+endscrap
+
+

@@ -1,0 +1,85 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -138.5 -128.0 225.5 220.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {55.8912 1 1.0} {44.480999999999995 CH23} CH23-map.xvi 0 {}
+
+
+
+scrap SP-CH27-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+
+line border -reverse on
+  46.25 55.75
+  42.5 43.0
+endline
+
+point 54.75 35.5 altitude -align bottom-right
+
+point -9.25 72.5 label -text "imp."
+
+point 39.5 31.25 label -text "muret"
+
+point 18.75 42.5 label -text "muret"
+
+point 15.5 87.0 label -text "+2 m"
+
+point 61.75 58.75 label -text "0 m"
+
+point 96.25 46.25 label -text "<bf>CH27" -scale xl
+
+point 11.75 61.25 pebbles -scale s
+
+point 16.75 57.75 pebbles -scale s
+
+point 15.75 62.0 pebbles -scale s
+
+point 11.0 64.75 pebbles -scale s
+
+point 35.25 61.75 camp
+
+line border -reverse on
+  22.25 50.5
+  27.5 61.75
+endline
+
+point -7.25 91.0 continuation -attr Code D -attr Cavite CH27 -attr Reseau " " -attr CA " " -text "A désobstruer"
+
+point -1.0 79.75 narrow-end -orientation 138.2
+
+point 66.75 39.75 entrance -orientation 290.9
+
+line wall
+  2.5 73.25
+  2.5 73.25 5.0 69.5 5.0 67.5
+  5.0 65.5 2.5 63.0 5.25 62.0
+  8.0 61.0 16.5 56.0 19.25 54.5
+  22.0 53.0 52.5 43.0 54.0 42.0
+  55.5 41.0 58.25 41.5 57.5 39.25
+  56.75 37.0 54.75 35.5 54.75 35.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  54.75 35.5
+  54.75 35.5 61.0 35.75 62.25 44.0
+  63.5 52.25 61.75 51.0 61.75 51.0
+  smooth off
+endline
+
+line wall
+  61.75 51.0
+  61.75 51.0 62.25 46.0 60.25 47.0
+  58.25 48.0 23.75 58.5 22.25 60.0
+  20.75 61.5 9.5 68.0 9.5 70.75
+  9.5 73.5 4.75 75.75 4.75 75.75
+  smooth off
+endline
+
+point 6.6312 63.461 station -name 2@CH27
+
+point 20.301199999999998 57.190999999999995 station -name 1@CH27
+
+point 55.8912 44.480999999999995 station -name CH27@CH27
+
+endscrap
+
+

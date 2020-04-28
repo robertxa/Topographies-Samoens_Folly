@@ -8,7 +8,7 @@ encoding  utf-8
 source CH.th
 
 # Add config file
-input ../../config.thc 
+input ../../../config.thc 
    
 # 2-LAYOUT   
 # Debut de la definition du Layout "xviexport"
@@ -45,7 +45,7 @@ layout my_layout
 	legend off
   
 	# Par defaut, la legende est de 14 cm de largeur
-	#legend-width 14 cm
+	legend-width 24 cm
   
 	# Specification la position de la manchette : interieur
 	# occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -54,7 +54,7 @@ layout my_layout
 	# 100 100, c est en haut, a droite
 	# La manchette a des "points cardinaux" : n, s, ne, sw, etc.
 	# Il faut specifier un de ces points 
-	map-header 0 00 nw
+	map-header 0 -40 nw
   
 	# arrière plan de la manchette
 	map-header-bg off
@@ -65,7 +65,8 @@ layout my_layout
 	#debug station-names
  
 	grid bottom
-	grid-size 100 100 100 m
+	grid-size 250 250 250 m
+	grid-coords border
 	#grid off
  
 	# Titre          
@@ -90,5 +91,5 @@ endlayout
   
 # 3-EXPORTS   
 #export map -fmt xvi -layout xviexport -o trousCHmap2020.xvi   
-select MP-zoneCH
+select MP-zoneCH@zoneCH
 export map -o trouCHplan.pdf -layout my_layout

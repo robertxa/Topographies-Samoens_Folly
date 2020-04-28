@@ -1,0 +1,81 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -996 747 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH31.gif 0 {}
+
+
+
+scrap SC-CH31-1 -projection extended -author 2015 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [110.0 -162.0 110.0 -309.0 0.0 0.0 0 -5.0 m]
+
+point -112.0 118.0 label -text "<bf>CH31" -scale xl
+
+point 21.0 -37.0 entrance -orientation 141.9
+
+point 598.0 -491.0 continuation -attr Code A -attr Cavite CH31 -attr CA " " -text "A revoir avec une combinaison, départ de méandre"
+
+point 69.0 -294.0 narrow-end
+
+point 133.0 -334.0 altitude -align bottom-left
+
+point 114.0 -160.0 altitude -align left
+
+line wall -subtype invisible
+  187.0 -54.0
+  187.0 -54.0 162.0 -41.0 146.0 -57.0
+  130.0 -73.0 108.0 -101.0 107.0 -121.0
+  106.0 -141.0 114.0 -160.0 114.0 -160.0
+  smooth off
+endline
+
+line wall
+  618.0 -439.0
+  618.0 -439.0 619.0 -312.0 608.0 -310.0
+  597.0 -308.0 567.0 -303.0 531.0 -305.0
+  495.0 -307.0 434.0 -316.0 420.0 -301.0
+  406.0 -286.0 425.0 -265.0 400.0 -255.0
+  375.0 -245.0 338.0 -223.0 298.0 -200.0
+  258.0 -177.0 250.0 -165.0 235.0 -160.0
+  220.0 -155.0 214.0 -140.0 202.0 -138.0
+  190.0 -136.0 159.0 -127.0 159.0 -111.0
+  159.0 -95.0 152.0 -80.0 160.0 -71.0
+  168.0 -62.0 187.0 -54.0 187.0 -54.0
+  smooth off
+endline
+
+line wall
+  409.0 -392.0
+  409.0 -392.0 455.0 -369.0 482.0 -373.0
+  509.0 -377.0 541.0 -360.0 548.0 -380.0
+  555.0 -400.0 570.0 -446.0 570.0 -446.0
+  smooth off
+endline
+
+line wall -subtype debris
+  133.0 -334.0
+  133.0 -334.0 142.0 -367.0 163.0 -372.0
+  184.0 -377.0 231.0 -380.0 275.0 -380.0
+  319.0 -380.0 345.0 -395.0 365.0 -393.0
+  385.0 -391.0 398.0 -399.0 409.0 -392.0
+endline
+
+line wall
+  261.0 -290.0
+  261.0 -290.0 263.0 -332.0 247.0 -332.0
+  231.0 -332.0 201.0 -315.0 181.0 -307.0
+  161.0 -299.0 139.0 -288.0 129.0 -288.0
+endline
+
+line wall -subtype debris
+  114.0 -160.0
+  114.0 -160.0 127.0 -167.0 140.0 -166.0
+  153.0 -165.0 160.0 -163.0 170.0 -176.0
+  180.0 -189.0 195.0 -208.0 205.0 -225.0
+  215.0 -242.0 227.0 -260.0 241.0 -270.0
+  255.0 -280.0 261.0 -279.0 261.0 -290.0
+endline
+
+point 118.0 -141.0 station -name CH31@CH31
+
+endscrap
+
+
