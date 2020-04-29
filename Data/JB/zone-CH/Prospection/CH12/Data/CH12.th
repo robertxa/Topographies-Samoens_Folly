@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CH12 -title "CH12"
+ # Fichier contenant les positions des entrées de la zone CH, Samoens, France
+
+centerline -extend right
+	cs lat-long
+	fix       CH12      46.108633     006.82235      2368
+	station   CH12      "CH12" entrance continuation explored 14m
+
+	explo-date 1975.08.05
+		explo-team "Pierre Rias"	
+endcenterline
+
+endsurvey

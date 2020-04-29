@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CH6 -title "CH6"
+ # Fichier contenant les positions des entrées de la zone CH, Samoens, France
+
+centerline -extend right
+	cs lat-long
+	fix       CH06      46.106783     006.81258      2272
+	station   CH06      "CH06" entrance continuation explored 25m
+	
+	explo-date 1990.08.01
+		explo-team "Patrice Plantier"
+		explo-team "Christophe Ohl"
+	explo-date 2005.11.12
+		explo-team "Stéphane Lips"
+		explo-team "Benoît Gay"
+	
+endcenterline
+
+endsurvey

@@ -4,12 +4,19 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey prospectionCH -title "Prospection Zone CH"
+survey prospectionCP -title "Prospection Zone CP"
   
   # Pour importer les différentes données de différents fichiers topos : 
-   input CH25/Data/CH25-coupe.th2
-   input CH26/Data/CH26-coupe.th2
+   #input CP51/CP51-tot.th
+   #input CP52/CP52-tot.th
+   #input CP52/CP55-tot.th
+   #input CP57/CP57-tot.th
+   #input CP58/CP58-tot.th
+   #input CP59/CP59-tot.th
+   #input CP60/CP60-tot.th
+   #input CP61/CP61-tot.th
+   #input CP70?/CP70?-tot.th	# Revoir la numérotation ?
+   #input CP70b?/CP70b?-tot.th	# revoir la numérotation ?
+   
 	
 endsurvey
- 
-# join ch3b.F3 F3-1.F3

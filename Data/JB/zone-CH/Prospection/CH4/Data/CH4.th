@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CH4 -title "CH4"
+ # Fichier contenant les positions des entrées de la zone CH, Samoens, France
+
+centerline -extend right
+	cs lat-long
+	fix       CH4       46.106083     006.80626      2252
+	station   CH4       "CHO4" entrance continuation explored 04m
+	
+	explo-date 1991.09.27
+		explo-team "Christophe Ohl"
+		explo-team "Patrice Plantier"
+endcenterline
+
+endsurvey
