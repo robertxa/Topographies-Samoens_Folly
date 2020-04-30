@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey A28 -title "A28"
+
+	centerline
+
+		cs lat-long
+		fix		A28	46.104240	6.781650	1841
+		station A28 "A28" entrance continuation explored 05m
+
+		explo-date 2014.07.07	# Revoir D/M
+		explo-team "Xavier Robert"
+
+endcenterline
+
+endsurvey

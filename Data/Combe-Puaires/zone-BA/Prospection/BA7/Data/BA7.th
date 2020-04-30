@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey BA7 -title "BA7"
+
+	centerline -extend right
+		cs lat-long
+		fix		  BA7		 46.100411 6.754550 1005
+		station   BA7        "BA7" entrance continuation explored 04m
+
+		explo-date 2014.07.13
+			explo-team "Romain Roure"
+			explo-team "Grégory G."
+		
+	endcenterline
+
+endsurvey

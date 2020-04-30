@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey BA8 -title "BA8"
+
+	centerline -extend right
+		cs lat-long
+		fix		  BA8		 46.103370 6.770590 1524
+		station   BA8        "BA8" entrance continuation explored 03m
+
+		explo-date 2014.06.20	# date à revoir
+			explo-team "Xavier Robert"
+			explo-team "Stéphane Lips"
+			explo-team "Frédéric Astolfi"
+  
+	endcenterline
+
+endsurvey

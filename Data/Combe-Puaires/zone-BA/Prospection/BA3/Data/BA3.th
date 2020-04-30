@@ -1,0 +1,29 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey BA3 -title "BA3"
+
+	centerline -extend right
+		cs lat-long
+		fix       BA3a       46.10499 6.774266 1578
+		fix       BA3b       46.104967 6.7743 1579
+		station   BA3a        "BA3A" entrance continuation explored 40m air-draught
+		station   BA3b        "BA3B" entrance continuation explored 04m air-draught
+
+		explo-date 2013.06.20	# D/M a revoir
+			explo-team "David Parrot"
+			explo-team "Xavier Robert"
+		explo-date 2016.07.14
+			explo-team "Xavier Robert"
+			explo-team "Gaëtan Poschmann"
+			explo-team "Christophe Ferry"
+			explo-team "Stéphane Lips"
+			explo-team "Frédéric Alvarez"
+			explo-team "Cédric Chambe"
+  
+	endcenterline
+
+endsurvey
