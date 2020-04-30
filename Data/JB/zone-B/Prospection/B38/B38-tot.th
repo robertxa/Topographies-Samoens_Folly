@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CH26 -title "CH26"
-	input Data/CH26.th
+survey B38 -title "B38"
+	input Data/B38.th
 
 	# pour le plan
-	#input Data/CH26.th2
+	#input Data/B38.th2
 	# Pour la coupe et le plan
-	input Data/CH26-coupe.th2
+	input Data/B38-coupe.th2
 
-	input CH26-maps.th
+	input B38-maps.th
 endsurvey

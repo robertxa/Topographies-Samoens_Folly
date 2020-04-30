@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D37 -title "D37"
+
+centerline -extend right
+	cs lat-long
+		fix       D37       46.106216     006.79313      2160
+		station   D37       "D37" entrance continuation explored 45m
+
+		explo-date 2005.07.16
+			explo-team "Xavier Robert"
+			explo-team "Josiane Lips"
+		explo-date 2005.07.17
+			explo-team "Xavier Robert"
+			explo-team "Christophe Ferry"
+		explo-date 2005.08.05
+			explo-team "Xavier Robert"
+			explo-team "Estelle Forbach"
+		explo-date 2005.10.14
+			explo-team "Xavier Robert"
+			explo-team "Stéphane Lips"
+			explo-team "Estelle Forbach"
+			explo-team "Benoît Gay"
+			
+endcenterline
+
+ endsurvey

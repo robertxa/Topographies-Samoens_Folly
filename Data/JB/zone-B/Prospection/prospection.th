@@ -4,12 +4,12 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey prospectionCH -title "Prospection Zone CH"
+survey prospectionB -title "Prospection Zone B"
   
-  # Pour importer les différentes données de différents fichiers topos : 
-   input CH25/Data/CH25-coupe.th2
-   input CH26/Data/CH26-coupe.th2
+	# Pour importer les différentes données de différents fichiers topos : 
+	input B37/B37-tot.th
+	input B38/B38-tot.th
+	input B39/B39-tot.th
 	
 endsurvey
  
-# join ch3b.F3 F3-1.F3

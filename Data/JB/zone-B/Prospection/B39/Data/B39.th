@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B39 -title "B39"
+
+	centerline -extend right
+		cs lat-long
+		fix B39 46.102164 6.791465 2135 
+		station B39 "B39" entrance  continuation explored 25m air-draught
+
+		explo-date 2013.07.16
+			explo-team "Bernard Lips"
+			explo-team "Josiane Lips"
+			explo-team "Yann Fabre"
+			explo-team "Frédéric Delègue"
+			explo-team "Antoine Aigueperse"
+			explo-team "Patricia Gentil"
+			explo-team "Xavier Robert"
+  
+	endcenterline
+
+endsurvey

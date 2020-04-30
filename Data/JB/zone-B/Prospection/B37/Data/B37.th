@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B37 -title "B37"
+
+ centerline -extend right
+	cs lat-long
+	fix B37 46.10475 6.794602 2121
+	station B37 "B37" entrance  continuation explored 16m air-draught
+	
+	explo-date 2013.07.06
+		explo-team "Xavier Robert"
+		explo-team "David Parrot"
+  
+endcenterline
+
+ endsurvey

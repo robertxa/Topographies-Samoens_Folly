@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B38 -title "B38"
+
+	centerline -extend right
+		cs lat-long
+		fix B38 46.10271 6.79323 2151
+		station B38 "B38" entrance  continuation explored 15m air-draught
+		
+		explo-date 2013.07.16
+			explo-team "Xavier Robert"
+			explo-team "David Parrot"
+  
+endcenterline
+
+ endsurvey
