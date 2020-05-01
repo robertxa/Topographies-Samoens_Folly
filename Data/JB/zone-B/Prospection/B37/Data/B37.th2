@@ -1,0 +1,104 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -1216 760 139.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B37.gif 0 {}
+
+
+
+scrap SP-B37-1 -projection plan -author 2013 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [288.0 -1084.0 538.0 -1082.0 0.0 0.0 10 0.0 m]
+
+point 298.5 -1025.5 altitude -align top-left -value [-10 m]
+
+point 440.5 -738.0 altitude -align top-right
+
+point 211.0 -1100.0 continuation -attr Code D -attr Cavite B37 -attr CA "Courant d'air soufflant en été" -text "Méandre étroit, étroiture ponctuelle, gros puits derrière, courant d'air"
+
+point 546.5 -1057.5 date -value [2013.07.06]
+
+point 348.0 -1032.5 air-draught -orientation 43.5 -subtype summer
+
+point 278.0 -853.0 label -text "etr."
+
+point 451.5 -462.0 label -text "<bf>B37" -scale xl
+
+point 439.5 -632.0 entrance -orientation 179.6
+
+point 491.0 -781.5 label -text "R2"
+
+point 322.5 -746.5 label -text "R2"
+
+point 436.0 -878.0 label -text "R2"
+
+point 265.5 -900.0 label -text "R2"
+
+point 461.0 -952.5 label -text "R2"
+
+point 273.5 -1080.5 narrow-end
+
+line pit
+  363.0 -981.0
+  363.0 -981.0 352.0 -967.0 340.5 -975.5
+endline
+
+line pit
+  359.5 -923.5
+  359.5 -923.5 362.5 -902.0 352.0 -901.5
+  341.5 -901.0 330.5 -904.5 326.5 -908.0
+endline
+
+line pit
+  372.5 -863.5
+  372.5 -863.5 353.0 -851.5 348.0 -859.0
+endline
+
+line pit
+  404.0 -816.5
+  404.0 -816.5 394.5 -799.0 384.5 -799.0
+endline
+
+line pit
+  441.0 -748.0
+  441.0 -748.0 419.5 -742.5 421.5 -727.0
+endline
+
+line wall
+  307.5 -1030.5
+  307.5 -1030.5 343.5 -1010.0 351.0 -994.0
+  358.5 -978.0 360.5 -970.5 357.5 -962.0
+  354.5 -953.5 347.0 -937.0 349.5 -930.0
+  352.0 -923.0 365.5 -905.5 366.0 -898.0
+  366.5 -890.5 364.0 -860.5 366.0 -852.0
+  368.0 -843.5 372.0 -831.0 381.0 -826.5
+  390.0 -822.0 402.5 -815.0 405.5 -804.5
+  408.5 -794.0 404.0 -787.5 402.5 -781.0
+  401.0 -774.5 401.0 -769.0 401.0 -769.0
+  smooth off
+  410.0 -769.0
+  410.0 -769.0 424.0 -747.5 431.0 -744.0
+  438.0 -740.5 440.5 -738.0 440.5 -738.0
+  smooth off
+endline
+
+line wall
+  435.5 -728.0
+  435.5 -728.0 420.0 -735.5 411.5 -735.5
+  403.0 -735.5 391.0 -745.0 390.5 -752.5
+  390.0 -760.0 392.5 -769.0 395.5 -777.0
+  398.5 -785.0 397.5 -793.0 388.5 -801.0
+  379.5 -809.0 358.0 -817.0 351.5 -831.5
+  345.0 -846.0 349.0 -839.5 351.0 -849.5
+  353.0 -859.5 359.0 -869.0 354.5 -876.0
+  350.0 -883.0 338.5 -894.0 334.0 -902.0
+  329.5 -910.0 326.0 -928.0 330.0 -932.5
+  334.0 -937.0 343.0 -957.5 345.0 -960.5
+  347.0 -963.5 348.5 -978.0 339.0 -987.5
+  329.5 -997.0 319.0 -999.0 312.0 -1007.5
+  305.0 -1016.0 298.5 -1025.5 298.5 -1025.5
+  smooth off
+endline
+
+point 437.0 -733.0 station -name B37@B37
+
+endscrap
+
+

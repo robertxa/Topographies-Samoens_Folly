@@ -9,7 +9,7 @@ survey trousB -title "Cavités non topographiées de la zone B"
 
 # Fichier contenant les positions des entrées de la zone B, Samoens, France
 
- centerline -extend right
+	centerline -extend right
 cs lat-long
 fix B02 46.1045667 6.7893   2066
 #fix B03 46.1011667 6.7884167	#--> TOPO
@@ -36,8 +36,8 @@ fix B28 46.10475 6.7930833 2100 #ALT APPROX !
 fix B29 46.1021 6.7872667 2100 #ALT APPROX !
 fix B35 46.1028833 6.78505   2028
 fix B36 46.10275 6.7850333   2034
-fix B37 46.10475 6.794602 2121
-fix B38 46.10271 6.79323 2151
+#fix B37 46.10475 6.794602 2121
+#fix B38 46.10271 6.79323 2151
 fix B39 46.102164 6.791465 2135 
 #fix B40 46.10275 6.7850333   2034 #--> TOPO
 fix B41 46.102694 6.790972   2107
@@ -63,40 +63,12 @@ station B28 "B28" entrance  continuation explored 40m
 station B29 "B29" entrance  continuation explored 03m
 station B35 "B35" entrance  continuation explored 40m
 station B36 "B36" entrance  continuation explored 20m
-station B37 "B37" entrance  continuation explored 16m air-draught
-station B38 "B38" entrance  continuation explored 15m air-draught
+#station B37 "B37" entrance  continuation explored 16m air-draught
+#station B38 "B38" entrance  continuation explored 15m air-draught
 station B39 "B39" entrance  continuation explored 25m air-draught
 station B41 "B41" entrance  continuation explored 02m air-draught
 
-
-#data nosurvey from to  #definition of relation between points
-##flags splay
-#flags surface
-  #B02 B06
-  #B06 B11
-  #B11 B12
-  #B12 B13
-  #B13 B14
-  #B14 B15
-  #B15 B16
-  #B16 B17
-  #B17 B18  
-  #B18 B20
-  #B20 B21B
-  #B21B B23
-  #B23 B24
-  #B24 B25
-  #B25 B26
-  #B26 B27
-  #B27 B28
-  #B28 B29
-  #B29 B35
-  #B35 B36
-  #B36 B37
-  #B37 B38
-  #B38 B39
-  #B39 B41
   
-endcenterline
+	endcenterline
 
- endsurvey
+endsurvey
