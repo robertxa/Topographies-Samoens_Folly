@@ -1,23 +1,24 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 2687.05 1309.1
+##XTHERION## xth_me_area_adjust 249.5 200.0 4090.8999999999996 2032.6149999999998
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {1403.85 1 1.0} {329.815 D02} trousDmap.xvi 0 {}
+##XTHERION## xth_me_image_insert {3141.09 1 1.0} {1839.3469999999998 D11@D11.D11.zoneD} trousDmap.xvi 0 {}
 
 
 
 scrap SP-D-1 -projection plan -scale [-128.0 -128.0 5049.25 -128.0 0.0 0.0 131.50215 0.0 m]
 
-point 1055.25 731.75 entrance -orientation 223.1
+#point 1055.25 731.75 entrance -orientation 223.1
+
 
 point 835.75 766.5 label -text "<bf>D24" -scale xl
 
-point 1028.5 672.25 label -text "<bf>D23a" -scale xl
+point 1003.0 660.75 label -text "<bf>D23a" -scale xl
 
-point 1045.75 701.25 label -text "<bf>D23b" -scale xl
+point 1003.25 688.5 label -text "<bf>D23b" -scale xl
 
-point 1069.0 739.25 label -text "<bf>D39" -scale xl
+#point 1069.0 739.25 label -text "<bf>D39" -scale xl
 
-point 1031.25 749.75 label -text "<bf>D23c" -scale xl
+point 1043.75 764.25 label -text "<bf>D23c" -scale xl
 
 point 1555.5 1018.75 label -text "<bf>D14" -scale xl
 
@@ -83,9 +84,9 @@ point 696.25 670.25 label -text "<bf>D28" -scale xl
 
 point 624.75 639.5 label -text "<bf>D27" -scale xl
 
-point 378.75 593.0 label -text "<bf>D41" -scale xl
+#point 378.75 593.0 label -text "<bf>D41" -scale xl
 
-point 380.0 578.25 entrance -orientation 174.2
+#point 380.0 578.25 entrance -orientation 174.2
 
 point 834.25 752.5 entrance -orientation 185.5
 
@@ -101,17 +102,18 @@ point 685.25 523.25 entrance -orientation 232.4
 
 point 657.25 523.5 entrance -orientation 133.1
 
-point 1039.25 665.75 entrance -orientation 133.1
+point 1033.5 661.25 entrance -orientation 92.8
 
-point 1045.25 689.25 entrance -orientation 185.6
+point 1035.5 683.5 entrance -orientation 102.3
 
-point 1042.0 740.25 entrance -orientation 145.2
+point 1044.75 742.25 entrance -orientation 170.3
 
 point 901.75 898.0 entrance -orientation 182.5
 
 point 917.75 911.25 entrance -orientation 182.5
 
 #point 967.25 858.25 entrance -orientation 182.5
+
 
 point 1545.0 828.75 entrance -orientation 182.5
 
@@ -207,7 +209,7 @@ point 1435.26 693.595 station -name D22@trousD
 
 point 1044.59 660.665 station -name D23A@trousD
 
-point 1049.45 726.195 station -name D39@trousD
+#point 1049.45 726.195 station -name D39@trousD
 
 point 1045.2 682.535 station -name D23B@trousD
 
@@ -233,7 +235,7 @@ point 663.05 518.045 station -name D29@trousD
 
 point 626.33 621.065 station -name D27@trousD
 
-point 381.3 569.655 station -name D41@trousD
+#point 381.3 569.655 station -name D41@trousD
 
 endscrap
 
