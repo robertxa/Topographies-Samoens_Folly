@@ -23,7 +23,8 @@ layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
 	copy Coords_Header_JBCHpra
 	copy drawingconfig
-	copy headerl
+	#copy headerl
+	copy header-plan-schema
 	copy langue-fr
   
 	doc-title "CH19"
@@ -64,6 +65,9 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		% Ajout de la spéléométrie explorée
+		\cavelength{15\thinspace{}m}
+		\cavedepth{-5\thinspace{}m}
 	endcode  
   
 endlayout
@@ -74,7 +78,7 @@ layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy Coords_Header_JBCHpra
 	copy drawingconfig
-	copy header_coupe
+	copy header_coupe-schema
 	copy langue-fr
   
 	doc-title "CH19"
@@ -114,6 +118,8 @@ layout my_layout-coupe
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		\cavelength{15\thinspace{}m}
+		\cavedepth{-5\thinspace{}m}
 	endcode  
 
 endlayout
