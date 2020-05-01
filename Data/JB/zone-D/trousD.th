@@ -8,8 +8,8 @@ survey trousD -title "Cavités non topographiées de la zone D"
 
 # Fichier contenant les positions des entrées de la zone D, Samoens, France
 
- centerline -extend right
-cs lat-long
+	centerline -extend right
+		cs lat-long
 
 fix       D02       46.105050     006.79461      2195
 fix       D04       46.105883     006.79606      2283
@@ -43,7 +43,7 @@ fix       D32       46.106616     006.79456      2201
 #fix       D33       46.105350     006.79265      2166
 fix       D35       46.105433     006.79221      2133
 fix       D36       46.106250     006.79490      2217
-fix       D37       46.106216     006.79313      2160
+#fix       D37       46.106216     006.79313      2160
 fix       D38       46.106166     006.79485      2229
 fix       D39       46.105933     006.79341      2193
 fix       D40       46.105983     006.79748      2298
@@ -83,7 +83,7 @@ station   D31       "D31" entrance continuation explored 17m
 station   D32       "D32" entrance continuation explored 20m
 station   D35       "D35" entrance continuation explored 60m
 station   D36       "D36" entrance continuation explored 10m
-station   D37       "D37" entrance continuation explored 45m
+#station   D37       "D37" entrance continuation explored 45m
 station   D38       "D38" entrance continuation explored 40m
 station   D39       "D39" entrance continuation explored 08m
 station   D40       "D40" entrance continuation explored 15m
@@ -91,48 +91,7 @@ station   D41       "D41" entrance continuation explored 10m
 station   D50       "D50" entrance #continuation explored 00m
 station   D51       "D51" entrance # continuation explored 10m
 station   D60       "D60" entrance continuation explored 15m
-
-#data nosurvey from to  #definition of relation between points
-##flags splay
-#flags surface
-#D02       D04
-#D04       D05
-#D05       D06
-#D06       D07
-#D07       D08
-#D08       D10
-#D10       D12
-#D12       D14
-#D14       D15
-#D15       D16
-#D16       D17
-#D17       D18
-#D18       D19
-#D19       D20
-#D20       D22
-#D22       D23A
-#D23A      D23B
-#D23B      D23C
-#D23C      D24
-#D24       D25
-#D25       D26
-#D26       D27
-#D27       D28
-#D28       D29
-#D29       D30
-#D30       D31
-#D31       D32
-#D32       D35
-#D35       D36
-#D36       D37
-#D37       D38
-#D38       D39
-#D39       D40
-#D40       D41
-#D41       D50
-#D50       D51
-#D51       D60
   
-endcenterline
+	endcenterline
 
- endsurvey
+endsurvey
