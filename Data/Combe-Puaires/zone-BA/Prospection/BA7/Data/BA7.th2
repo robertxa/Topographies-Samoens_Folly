@@ -1,0 +1,52 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -176.0 -444.0 571 250.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} BA07.gif 0 {}
+
+
+
+scrap SP-BA7-1 -projection plan -author 2014 "Romain Roure" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [199.0 -169.0 432.0 -169.0 0.0 0.0 4 0.0 m]
+
+point -83.0 140.0 label -text "<bf>BA7" -scale xl
+
+point 136.0 -15.0 entrance -orientation 146.2
+
+point 180.0 -126.0 altitude -align bottom-left
+
+point 305.0 -357.0 narrow-end
+
+line wall -subtype invisible
+  221.0 -87.0
+  221.0 -87.0 183.0 -86.0 180.0 -98.0
+  177.0 -110.0 180.0 -126.0 180.0 -126.0
+  smooth off
+endline
+
+line wall
+  321.0 -256.0
+  321.0 -256.0 316.0 -225.0 323.0 -231.0
+  330.0 -237.0 338.0 -252.0 345.0 -255.0
+  352.0 -258.0 383.0 -287.0 378.0 -270.0
+  373.0 -253.0 349.0 -230.0 336.0 -222.0
+  323.0 -214.0 296.0 -188.0 282.0 -175.0
+  268.0 -162.0 244.0 -137.0 235.0 -128.0
+  226.0 -119.0 220.0 -109.0 218.0 -104.0
+  216.0 -99.0 221.0 -87.0 221.0 -87.0
+  smooth off
+endline
+
+line wall
+  180.0 -126.0
+  180.0 -126.0 193.0 -110.0 198.0 -113.0
+  203.0 -116.0 212.0 -125.0 223.0 -135.0
+  234.0 -145.0 249.0 -171.0 269.0 -187.0
+  289.0 -203.0 301.0 -212.0 306.0 -222.0
+  311.0 -232.0 311.0 -254.0 311.0 -254.0
+  smooth off
+endline
+
+point 205.0 -100.0 station -name BA7@BA7
+
+endscrap
+
+

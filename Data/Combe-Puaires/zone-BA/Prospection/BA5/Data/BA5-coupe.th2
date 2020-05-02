@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -416 674 139.0
+##XTHERION## xth_me_area_adjust -129.5 -416 674 254.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} BA05.gif 0 {}
 
@@ -38,6 +38,10 @@ line wall
   349.5 -169.0 372.5 -169.0 381.5 -179.0
   390.5 -189.0 389.0 -186.5 393.0 -195.0
 endline
+
+point 326.0 124.0 label -text "<bf>BA5" -scale xl
+
+point 332.5 9.0 entrance -orientation 177.6
 
 point 452.0 -245.5 altitude -align bottom-left -value [-4 m]
 
