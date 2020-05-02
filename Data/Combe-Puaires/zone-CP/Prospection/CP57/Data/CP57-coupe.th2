@@ -1,0 +1,136 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -932 929 139.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP57.gif 0 {}
+
+
+
+scrap SC-CP57-1 -projection extended -author 2011 "Frédéric Delègue" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [563.0 -551.0 563.0 -732.0 0.0 0.0 0 -10 m]
+
+line wall -reverse on
+  298.0 -747.5
+  298.0 -747.5 306.0 -735.5 328.0 -727.0
+  350.0 -718.5 378.5 -714.0 389.5 -703.0
+  400.5 -692.0 401.5 -679.0 401.0 -656.0
+  400.5 -633.0 409.5 -570.5 406.0 -560.5
+  402.5 -550.5 392.0 -544.5 392.0 -544.5
+  smooth off
+endline
+
+point 502.5 -778.5 label -text "bol"
+
+point 372.5 -384.0 label -text "<bf>CP57" -scale xl
+
+point 613.5 -670.5 height -value [-10 m]
+
+point 218.0 -591.5 height -value [-6 m]
+
+point 258.5 -645.0 altitude -align bottom-left -value [-6 m]
+
+point 300.0 -751.5 altitude -align bottom -value [-10 m]
+
+point 630.0 -551.5 altitude -align right
+
+line rope
+  308.0 -540.5
+  280.0 -535.5
+  277.5 -621.0
+endline
+
+line rope
+  392.0 -544.5
+  444.0 -545.0
+  443.0 -698.5
+endline
+
+line wall -subtype ice -outline none
+  456.5 -742.0
+  456.5 -742.0 451.0 -694.0 434.0 -696.5
+  417.0 -699.0 412.5 -694.0 404.0 -702.5
+  395.5 -711.0 392.0 -717.5 386.5 -724.5
+  381.0 -731.5 379.0 -747.5 379.0 -747.5
+  smooth off
+endline
+
+line wall -subtype debris
+  517.0 -723.5
+  508.5 -727.5 484.0 -736.5 459.5 -736.0
+  435.0 -735.5 387.0 -729.5 368.5 -734.5
+  350.0 -739.5 340.5 -749.0 329.5 -749.0
+  318.5 -749.0 316.5 -748.5 310.5 -748.5
+  304.5 -748.5 300.0 -751.5 300.0 -751.5
+  smooth off
+endline
+
+line wall -outline none -clip off
+  214.0 -535.0
+  214.0 -535.0 228.5 -532.0 237.0 -532.5
+  245.5 -533.0 249.0 -532.5 249.0 -532.5
+  smooth off
+endline
+
+line wall -outline none -clip off
+  320.0 -539.0
+  320.0 -539.0 339.5 -543.5 351.0 -542.5
+  362.5 -541.5 366.0 -537.5 377.0 -539.0
+  388.0 -540.5 392.0 -544.5 392.0 -544.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  320.0 -539.0
+  320.0 -539.0 271.5 -524.0 249.0 -532.5
+endline
+
+line wall
+  299.0 -646.5
+  299.0 -646.5 300.0 -594.5 300.0 -577.5
+  300.0 -560.5 298.5 -539.5 308.0 -540.5
+  317.5 -541.5 320.0 -539.0 320.0 -539.0
+  smooth off
+endline
+
+line wall
+  249.0 -532.5
+  249.0 -532.5 262.5 -534.5 262.5 -543.5
+  262.5 -552.5 260.5 -587.5 260.5 -601.0
+  260.5 -614.5 258.5 -645.0 258.5 -645.0
+  smooth off
+endline
+
+point 267.0 -758.5 narrow-end
+
+point 279.0 -639.5 breakdown-choke -orientation 0.0
+
+point 281.5 -485.0 entrance -orientation 182.2
+
+point 477.5 -480.5 entrance -orientation 182.2
+
+line wall -outline none -clip off
+  552.5 -548.5
+  552.5 -548.5 563.0 -551.5 574.5 -553.0
+  586.0 -554.5 589.0 -555.5 600.5 -554.0
+  612.0 -552.5 630.0 -551.5 630.0 -551.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  552.5 -548.5
+  552.5 -548.5 466.0 -535.5 444.0 -537.0
+  422.0 -538.5 392.0 -544.5 392.0 -544.5
+  smooth off
+endline
+
+line wall -reverse on
+  552.5 -548.5
+  552.5 -548.5 530.5 -545.5 526.0 -555.5
+  521.5 -565.5 519.0 -586.0 519.5 -604.5
+  520.0 -623.0 522.5 -688.0 521.5 -704.0
+  520.5 -720.0 523.0 -719.0 517.0 -723.5
+endline
+
+point 376.0 -529.5 station -name CP57@CP57
+
+endscrap
+
+

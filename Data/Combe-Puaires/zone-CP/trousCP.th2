@@ -11,7 +11,7 @@ point 5778.38 3427.24 station -name CP54
 
 point 5778.5 3453.0 label -text "<bf>CP54" -scale xl
 
-point 4979.5 3154.5 label -text "<bf>CP61" -scale xl
+#point 4979.5 3154.5 label -text "<bf>CP61" -scale xl
 
 point 4817.0 3376.5 label -text "<bf>CP64" -scale xl
 
@@ -47,7 +47,7 @@ point 4422.0 3109.0 entrance -orientation 182.2
 
 point 5779.0 3437.5 entrance -orientation 182.2
 
-point 4979.0 3169.0 entrance -orientation 354.6
+#point 4979.0 3169.0 entrance -orientation 354.6
 
 point 4816.5 3391.0 entrance -orientation 0.3
 
@@ -67,7 +67,7 @@ point 4771.610000000001 3441.22 station -name CP66
 
 point 4815.860000000001 3400.59 station -name CP64
 
-point 4979.05 3181.1 station -name CP61
+#point 4979.05 3181.1 station -name CP61
 
 point 4597.870000000001 3072.2 station -name CP09
 
@@ -169,15 +169,15 @@ endscrap
 
 scrap SP-CP-4-2020 -projection plan -station-names "" "@trousCP" -scale [3036.2900000000004 1760.03 13134.79 1760.03 0.0 0.0 256.5019 0.0 m]
 
-point 8585.74 5033.5 station -name CP52B
+#point 8585.74 5033.5 station -name CP52B
 
 point 8655.0 5115.5 label -text "<bf>CP35" -scale xl
 
-point 8585.0 5064.5 label -text "<bf>CP52b" -scale xl
+#point 8585.0 5064.5 label -text "<bf>CP52b" -scale xl
 
-point 8601.0 4966.5 label -text "<bf>CP52a" -scale xl
+#point 8601.0 4966.5 label -text "<bf>CP52a" -scale xl
 
-point 8507.0 4850.5 label -text "<bf>CP51" -scale xl
+#point 8507.0 4850.5 label -text "<bf>CP51" -scale xl
 
 point 8257.5 5006.0 label -text "<bf>CP34" -scale xl
 
@@ -187,19 +187,19 @@ point 8000.5 5110.0 entrance -orientation 182.2
 
 point 8259.0 4988.5 entrance -orientation 182.2
 
-point 8506.5 4868.5 entrance -orientation 358.0
+#point 8506.5 4868.5 entrance -orientation 358.0
 
-point 8600.5 4985.5 entrance -orientation 0.5
+#point 8600.5 4985.5 entrance -orientation 0.5
 
 point 8655.5 5101.0 entrance -orientation 182.2
 
-point 8586.0 5046.5 entrance -orientation 182.2
+#point 8586.0 5046.5 entrance -orientation 182.2
 
 point 8654.29 5089.84 station -name CP35
 
-point 8599.960000000001 4996.7699999999995 station -name CP52A
+#point 8599.960000000001 4996.7699999999995 station -name CP52A
 
-point 8505.470000000001 4882.5199999999995 station -name CP51
+#point 8505.470000000001 4882.5199999999995 station -name CP51
 
 point 8258.460000000001 4976.89 station -name CP34
 
@@ -211,7 +211,7 @@ endscrap
 
 scrap SP-CP-6-2020 -projection plan -station-names "" "@trousCP" -scale [3036.2900000000004 1760.03 13134.79 1760.03 0.0 0.0 256.5019 0.0 m]
 
-point 9894.37 5788.389999999999 station -name CP58
+#point 9894.37 5788.389999999999 station -name CP58
 
 point 8741.0 6410.5 entrance -orientation 356.3
 
@@ -219,17 +219,17 @@ point 8787.0 6468.5 entrance -orientation 182.2
 
 point 8950.0 6434.0 entrance -orientation 182.2
 
-point 9894.0 5817.0 label -text "<bf>CP58" -scale xl
+#point 9894.0 5817.0 label -text "<bf>CP58" -scale xl
 
 point 9721.0 6162.0 label -text "<bf>CP41" -scale xl
 
 point 9408.5 5572.0 label -text "<bf>CP56" -scale xl
 
-point 9437.5 5690.0 label -text "<bf>CP57" -scale xl
+#point 9437.5 5690.0 label -text "<bf>CP57" -scale xl
 
 point 9241.5 5594.5 label -text "<bf>CP22" -scale xl
 
-point 9251.0 5699.5 label -text "<bf>CP55" -scale xl
+#point 9251.0 5699.5 label -text "<bf>CP55" -scale xl
 
 point 8891.5 5956.5 label -text "<bf>CP36" -scale xl
 
@@ -241,7 +241,7 @@ point 8786.5 6486.5 label -text "<bf>CP38" -scale xl
 
 point 8741.0 6395.0 label -text "<bf>CP37" -scale xl
 
-point 8891.0 5940.0 entrance -orientation 182.2
+#point 8891.0 5940.0 entrance -orientation 182.2
 
 point 9071.5 6095.0 entrance -orientation 182.2
 
@@ -249,9 +249,9 @@ point 9408.5 5588.5 entrance -orientation 0.1
 
 point 9242.5 5609.0 entrance -orientation 355.8
 
-point 9252.0 5682.0 entrance -orientation 182.2
+#point 9252.0 5682.0 entrance -orientation 182.2
 
-point 9438.0 5673.5 entrance -orientation 182.2
+#point 9438.0 5673.5 entrance -orientation 182.2
 
 point 9721.5 6144.5 entrance -orientation 182.2
 
@@ -261,11 +261,11 @@ point 9721.25 6133.74 station -name CP41
 
 point 9241.29 5620.79 station -name CP22
 
-point 9437.24 5660.91 station -name CP57
+#point 9437.24 5660.91 station -name CP57
 
 point 9408.18 5600.43 station -name CP56
 
-point 9251.810000000001 5670.43 station -name CP55
+#point 9251.810000000001 5670.43 station -name CP55
 
 point 9071.49 6085.16 station -name CP18
 
@@ -287,9 +287,9 @@ point 11088.0 5984.0 entrance -orientation 358.4
 
 point 11095.0 6040.5 entrance -orientation 182.2
 
-point 11311.0 6166.0 entrance -orientation 182.2
+#point 11311.0 6166.0 entrance -orientation 182.2
 
-point 12179.0 6341.0 label -text "<bf>CP59" -scale xl
+#point 12179.0 6341.0 label -text "<bf>CP59" -scale xl
 
 point 12291.0 6660.5 label -text "<bf>CP50" -scale xl
 
@@ -301,7 +301,7 @@ point 11713.0 6402.0 label -text "<bf>CP46" -scale xl
 
 point 11414.0 6394.5 label -text "<bf>CP45" -scale xl
 
-point 11310.5 6179.5 label -text "<bf>CP60" -scale xl
+#point 11310.5 6179.5 label -text "<bf>CP60" -scale xl
 
 point 11088.0 5967.5 label -text "<bf>CP70" -scale xl
 
@@ -321,7 +321,7 @@ point 11713.0 6387.5 entrance -orientation 182.2
 
 point 11874.0 6484.0 entrance -orientation 182.2
 
-point 12180.0 6325.0 entrance -orientation 182.2
+#point 12180.0 6325.0 entrance -orientation 182.2
 
 point 12292.0 6641.5 entrance -orientation 182.2
 
@@ -331,7 +331,7 @@ point 12292.04 6631.0599999999995 station -name CP50
 
 point 12130.23 6613.62 station -name CP49
 
-point 12179.76 6311.969999999999 station -name CP59
+#point 12179.76 6311.969999999999 station -name CP59
 
 point 11873.74 6474.92 station -name CP47
 
@@ -341,7 +341,7 @@ point 11414.25 6369.84 station -name CP45
 
 point 11094.33 6029.29 station -name CP48
 
-point 11310.94 6156.42 station -name CP60
+#point 11310.94 6156.42 station -name CP60
 
 point 11087.36 5996.219999999999 station -name CP70
 

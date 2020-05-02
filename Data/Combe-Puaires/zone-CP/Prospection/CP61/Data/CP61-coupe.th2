@@ -1,0 +1,122 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -142.5 -512 479 150.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP61.gif 0 {}
+
+
+
+scrap SC-CP61-1 -projection extended -author 2012 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [135.0 -132.0 135.0 -307.0 0.0 0.0 0 -10 m]
+
+point 144.5 -273.0 altitude -align bottom-right -value [-9 m]
+
+point 82.0 -309.5 altitude -align bottom-left -value [-10 m]
+
+point 16.0 -265.5 air-draught -orientation 327.5 -subtype summer
+
+point 172.5 -327.0 air-draught -orientation 316.1 -subtype summer
+
+point 135.5 -84.0 air-draught -subtype summer
+
+point 104.5 19.5 label -text "<bf>CP61" -scale xl
+
+point 88.0 -59.0 entrance -orientation 208.7
+
+line wall -subtype invisible
+  107.5 -136.0
+  107.5 -136.0 50.5 -82.0 26.5 -82.0
+endline
+
+line wall
+  144.5 -273.0
+  144.5 -273.0 135.0 -270.5 134.5 -257.5
+  134.0 -244.5 136.5 -237.0 132.5 -219.5
+  128.5 -202.0 126.0 -189.0 118.0 -177.0
+  110.0 -165.0 98.5 -148.5 90.0 -145.0
+  81.5 -141.5 74.0 -138.5 71.5 -135.5
+  69.0 -132.5 69.0 -127.0 78.0 -127.0
+  87.0 -127.0 107.5 -136.0 107.5 -136.0
+  smooth off
+endline
+
+point 134.5 -272.0 breakdown-choke -orientation 340.6
+
+point 96.5 -305.5 breakdown-choke -orientation 350.0
+
+point 22.0 -183.5 breakdown-choke -orientation 132.1
+
+point 107.5 -136.0 altitude -align bottom-right
+
+line wall
+  113.5 -304.0
+  113.5 -304.0 106.0 -291.0 99.0 -281.5
+  92.0 -272.0 89.5 -266.5 85.0 -254.5
+  80.5 -242.5 73.5 -231.0 67.5 -221.5
+  61.5 -212.0 59.0 -204.5 61.5 -199.0
+  64.0 -193.5 65.0 -194.0 68.0 -189.5
+  71.0 -185.0 78.0 -172.5 82.0 -178.5
+  86.0 -184.5 85.0 -186.5 94.5 -190.5
+  104.0 -194.5 113.5 -197.0 116.0 -204.0
+  118.5 -211.0 123.5 -218.0 121.0 -222.5
+  118.5 -227.0 114.5 -224.5 119.5 -235.0
+  124.5 -245.5 129.0 -277.5 129.0 -277.5
+  smooth off
+endline
+
+line wall
+  22.5 -196.0
+  22.5 -196.0 31.5 -204.5 34.0 -212.5
+  36.5 -220.5 37.0 -221.5 42.5 -228.5
+  48.0 -235.5 52.0 -242.0 57.0 -251.0
+  62.0 -260.0 58.5 -265.0 65.5 -274.0
+  72.5 -283.0 73.5 -279.5 77.0 -288.5
+  80.5 -297.5 82.0 -309.5 82.0 -309.5
+  smooth off
+endline
+
+line wall
+  48.5 -154.5
+  48.5 -154.5 53.5 -158.0 59.5 -161.0
+  65.5 -164.0 70.5 -167.5 72.5 -167.5
+  74.5 -167.5 69.5 -176.0 64.5 -178.5
+  59.5 -181.0 58.0 -189.5 50.5 -189.5
+  43.0 -189.5 39.0 -189.0 36.5 -182.5
+  34.0 -176.0 27.5 -172.5 27.5 -172.5
+  smooth off
+endline
+
+point 38.0 -56.5 dig
+
+point 175.0 -161.0 dig
+
+point 9.0 -109.0 air-draught -orientation 132.7 -subtype summer -scale xs
+
+point -12.0 -156.5 air-draught -orientation 132.7 -subtype summer -scale xs
+
+line rock-border -close on
+  88.5 -160.5
+  72.5 -167.5
+  82.0 -178.5
+  91.5 -174.5
+  93.5 -168.5
+  88.5 -160.5
+endline
+
+line wall -subtype debris
+  51.5 -123.0
+  51.5 -123.0 45.5 -150.5 48.5 -154.5
+endline
+
+line wall
+  26.5 -82.0
+  26.5 -82.0 31.5 -84.0 34.0 -90.0
+  36.5 -96.0 35.0 -92.5 40.0 -101.0
+  45.0 -109.5 48.0 -113.5 49.5 -115.5
+  51.0 -117.5 51.5 -123.0 51.5 -123.0
+  smooth off
+endline
+
+point 68.0 -123.0 station -name CP61@CP61
+
+endscrap
+
+

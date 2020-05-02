@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP60 -title "CP60"
+
+	centerline
+		cs lat-long
+		fix		CP60	46.11932 6.81103 2258
+		station   CP60      "CP60" entrance continuation explored 10m
+
+		explo-date 2011.07.12
+			explo-team "Frédéric Delègue"
+			explo-team "Hervé Frot"
+  
+	endcenterline
+endsurvey

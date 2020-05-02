@@ -1,0 +1,75 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -183.5 -544.5 479 139.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP61.gif 0 {}
+
+
+
+scrap SP-CP61-1 -projection plan -author 2012 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-1.0 -329.0 135.0 -329.0 0.0 0.0 5 0.0 m]
+
+point 146.5 -77.0 dig
+
+point 88.0 -414.0 label -text "<bf>CP61" -scale xl
+
+point 54.0 -202.0 air-draught -orientation 74.9 -subtype summer
+
+point 157.5 -258.5 entrance -orientation 342.8
+
+point -51.0 -147.0 altitude -align top-left -value [-10 m]
+
+point 134.0 -161.5 altitude -align bottom-right
+
+point -7.5 -178.0 breakdown-choke -orientation 242.7
+
+point -53.0 -153.0 breakdown-choke -orientation 260.9
+
+point 99.0 -125.5 breakdown-choke -orientation 260.9
+
+line pit
+  129.0 -165.5
+  129.0 -165.5 118.0 -150.5 124.0 -145.0
+endline
+
+line wall
+  -5.0 -183.5
+  -5.0 -183.5 37.0 -174.0 51.0 -170.5
+  65.0 -167.0 76.5 -165.0 88.5 -163.5
+  100.5 -162.0 115.5 -161.0 122.5 -161.0
+  129.5 -161.0 134.0 -161.5 134.0 -161.5
+  smooth off
+endline
+
+line wall
+  -48.5 -156.5
+  -48.5 -156.5 -4.0 -151.0 4.5 -151.0
+  13.0 -151.0 47.0 -140.5 55.0 -140.5
+  63.0 -140.5 64.5 -146.5 64.5 -149.5
+  64.5 -152.5 67.5 -154.5 50.0 -160.0
+  32.5 -165.5 12.0 -170.0 4.5 -171.0
+  -3.0 -172.0 -9.5 -175.5 -9.5 -175.5
+  smooth off
+endline
+
+line wall
+  96.0 -122.5
+  96.0 -122.5 78.5 -125.5 71.5 -127.0
+  64.5 -128.5 43.5 -130.0 37.5 -131.5
+  31.5 -133.0 17.5 -136.0 4.5 -137.5
+  -8.5 -139.0 -51.0 -147.0 -51.0 -147.0
+  smooth off
+endline
+
+line wall
+  130.0 -149.5
+  130.0 -149.5 103.5 -149.5 97.5 -147.0
+  91.5 -144.5 82.0 -150.0 82.0 -145.5
+  82.0 -141.0 79.0 -133.0 83.0 -133.0
+  87.0 -133.0 96.5 -130.0 96.5 -130.0
+  smooth off
+endline
+
+point 132.0 -156.0 station -name CP61@CP61
+
+endscrap
+
+

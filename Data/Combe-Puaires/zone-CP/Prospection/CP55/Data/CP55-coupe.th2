@@ -1,0 +1,116 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -643 1028 140.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP55.gif 0 {}
+
+
+
+scrap SC-CP55-1 -projection extended -author 2011 "Frédéric Delègue" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [224.0 -93.0 614.0 -93.0 0.0 0.0 11 0.0 m]
+
+line wall -subtype invisible
+  453.0 -334.0
+  453.0 -334.0 297.0 -315.0 259.0 -317.0
+  221.0 -319.0 155.0 -327.0 155.0 -327.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  619.0 -335.0
+  619.0 -335.0 558.0 -330.0 552.0 -337.0
+endline
+
+line wall -outline none -clip off
+  453.0 -334.0
+  453.0 -334.0 458.0 -339.0 478.0 -340.0
+  498.0 -341.0 507.0 -342.0 522.0 -341.0
+  537.0 -340.0 552.0 -337.0 552.0 -337.0
+  smooth off
+endline
+
+line wall
+  552.0 -337.0
+  552.0 -337.0 559.0 -343.0 559.0 -349.0
+  559.0 -355.0 559.0 -383.0 559.0 -388.0
+  559.0 -393.0 558.0 -413.0 548.0 -413.0
+  538.0 -413.0 533.0 -411.0 526.0 -422.0
+  519.0 -433.0 508.0 -444.0 502.0 -437.0
+  496.0 -430.0 498.0 -423.0 489.0 -423.0
+  480.0 -423.0 477.0 -426.0 473.0 -414.0
+  469.0 -402.0 461.0 -396.0 459.0 -384.0
+  457.0 -372.0 453.0 -334.0 453.0 -334.0
+  smooth off
+endline
+
+line wall
+  602.0 -438.0
+  602.0 -438.0 589.0 -433.0 589.0 -421.0
+  589.0 -409.0 592.0 -343.0 592.0 -343.0
+  smooth off
+  592.0 -343.0 615.0 -336.0 619.0 -335.0
+endline
+
+line wall -subtype debris
+  623.0 -467.0
+  602.0 -438.0
+endline
+
+line wall -subtype debris
+  580.0 -455.0
+  608.0 -477.0
+endline
+
+line wall
+  495.0 -459.0
+  495.0 -459.0 500.0 -461.0 513.0 -458.0
+  526.0 -455.0 540.0 -448.0 553.0 -449.0
+  566.0 -450.0 572.0 -447.0 580.0 -455.0
+endline
+
+point 155.0 -327.0 altitude -align left
+
+point 623.0 -467.0 altitude -align right -value [-9 m]
+
+point 602.0 -456.0 breakdown-choke -orientation 46.1
+
+point 422.0 -45.0 label -text "<bf>CP55" -scale xl
+
+point 583.0 -271.0 entrance -orientation 182.0
+
+point 206.0 -257.0 entrance -orientation 171.3
+
+area ice
+  l14-221--396
+  l5-314--456
+endarea
+
+line wall -id l14-221--396 -reverse on -outline none -subtype ice
+  451.0 -465.0
+  451.0 -465.0 470.0 -438.0 435.0 -440.0
+  400.0 -442.0 371.0 -443.0 355.0 -432.0
+  339.0 -421.0 328.0 -421.0 306.0 -416.0
+  284.0 -411.0 286.0 -421.0 268.0 -411.0
+  250.0 -401.0 231.0 -390.0 222.0 -396.0
+  213.0 -402.0 190.0 -402.0 190.0 -402.0
+  smooth off
+endline
+
+line wall -id l5-314--456 -subtype debris
+  182.0 -331.0
+  182.0 -331.0 176.0 -351.0 182.0 -360.0
+  188.0 -369.0 203.0 -397.0 213.0 -406.0
+  223.0 -415.0 273.0 -445.0 312.0 -453.0
+  351.0 -461.0 367.0 -465.0 387.0 -465.0
+  407.0 -465.0 430.0 -458.0 450.0 -458.0
+  470.0 -458.0 479.0 -462.0 495.0 -459.0
+endline
+
+line wall
+  155.0 -327.0
+  155.0 -327.0 183.0 -325.0 182.0 -331.0
+endline
+
+point 518.0 -324.0 station -name CP55@CP55
+
+endscrap
+
+

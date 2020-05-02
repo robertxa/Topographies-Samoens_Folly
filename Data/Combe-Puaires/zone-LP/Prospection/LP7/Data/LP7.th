@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP7 -title "LP7"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP07      46.114216     006.80081      2275
+		station   LP07      "LP07" entrance continuation explored 75m	#	L7 = LP24 ???
+
+		explo-date ..
+			explo-team ""
+  
+endcenterline
+
+ endsurvey

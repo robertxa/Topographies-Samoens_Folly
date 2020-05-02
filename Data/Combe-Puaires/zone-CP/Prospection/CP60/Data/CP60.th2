@@ -1,0 +1,55 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -897.0 923 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP60.gif 0 {}
+
+
+
+scrap SP-CP60-1 -projection plan -author 2011 "Frédric Delègue" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [350.0 -345.0 412.0 -386.0 0.0 0.0 1 0.0 m]
+
+point 682.0 -237.0 height -value [-10 m]
+
+point 406.0 -479.0 entrance -orientation 352.8
+
+point 451.0 -887.0 label -text "<bf>CP60" -scale xl
+
+area ice
+  l6-420--219
+endarea
+
+line wall -id l6-420--219 -close on -outline none -subtype ice
+  374.0 -210.0
+  374.0 -210.0 402.0 -190.0 410.0 -198.0
+  418.0 -206.0 419.0 -208.0 419.0 -220.0
+  419.0 -232.0 418.0 -256.0 410.0 -264.0
+  402.0 -272.0 407.0 -278.0 403.0 -290.0
+  399.0 -302.0 394.0 -311.0 383.0 -308.0
+  372.0 -305.0 369.0 -290.0 369.0 -275.0
+  369.0 -260.0 371.0 -247.0 371.0 -236.0
+  371.0 -225.0 374.0 -210.0 374.0 -210.0
+  smooth off
+endline
+
+area blocks
+  l4-404--121
+endarea
+
+line wall -id l4-404--121 -close on
+  388.0 -131.0
+  388.0 -131.0 373.0 -172.0 368.0 -185.0
+  363.0 -198.0 354.0 -253.0 354.0 -278.0
+  354.0 -303.0 363.0 -329.0 381.0 -329.0
+  399.0 -329.0 415.0 -330.0 420.0 -310.0
+  425.0 -290.0 434.0 -256.0 434.0 -236.0
+  434.0 -216.0 443.0 -187.0 438.0 -172.0
+  433.0 -157.0 434.0 -140.0 424.0 -130.0
+  414.0 -120.0 410.0 -118.0 403.0 -122.0
+  396.0 -126.0 388.0 -131.0 388.0 -131.0
+  smooth off
+endline
+
+point 406.0 -316.0 station -name CP60@CP60
+
+endscrap
+
+

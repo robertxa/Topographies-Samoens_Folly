@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP57 -title "CP57"
+
+	centerline
+		cs lat-long
+		fix		CP57	46.11807 6.80492 2248
+		station   CP57      "CP57" entrance continuation explored 10m
+
+		explo-date 2008.07.12
+			explo-team "Antoine Aigueperse"
+			explo-team "Patricia Gentil"
+			explo-team "Laurent Morel"
+			explo-team "Marie-Jo Bravais"
+			explo-team "Frédéric Delègue"
+			explo-team "Hervé Frot"
+  
+	endcenterline
+endsurvey

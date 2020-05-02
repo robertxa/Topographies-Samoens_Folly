@@ -1,0 +1,105 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -3627 2594 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP51-CP52.gif 0 {}
+
+
+
+scrap SP-CP51-1 -projection plan -author 2008 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [298.0 -1055.0 510.0 -1055.0 0.0 0.0 5 0.0 m]
+
+line pit -clip off
+  298.0 -850.0
+  298.0 -850.0 333.0 -731.0 386.0 -699.0
+  439.0 -667.0 497.0 -651.0 524.0 -615.0
+  551.0 -579.0 621.0 -495.0 678.0 -450.0
+  735.0 -405.0 821.0 -355.0 821.0 -355.0
+  smooth off
+endline
+
+line pit -clip off
+  356.0 -866.0
+  356.0 -866.0 374.0 -759.0 424.0 -737.0
+  474.0 -715.0 541.0 -695.0 575.0 -653.0
+  609.0 -611.0 721.0 -502.0 752.0 -476.0
+  783.0 -450.0 826.0 -417.0 826.0 -417.0
+  smooth off
+endline
+
+line overhang -clip off
+  620.0 -677.0
+  620.0 -677.0 658.0 -619.0 692.0 -598.0
+  726.0 -577.0 750.0 -569.0 774.0 -552.0
+  798.0 -535.0 838.0 -498.0 838.0 -498.0
+  smooth off
+endline
+
+line overhang -clip off
+  407.0 -883.0
+  407.0 -883.0 395.0 -825.0 442.0 -796.0
+  489.0 -767.0 494.0 -773.0 521.0 -755.0
+  548.0 -737.0 557.0 -725.0 557.0 -725.0
+  smooth off
+endline
+
+point 607.0 -1239.0 continuation -attr Code D -attr Cavite C51 -attr CA "Courant d'air soufflant en été" -text "Méandre étroit à continuer, quelques lames à casser à la paille, travail facile, courant d'air"
+
+point 809.0 -1286.0 air-draught -orientation 320.2
+
+point 1224.0 -860.0 label -text "m. étroit"
+
+point 796.0 -652.0 label -text "etr."
+
+point 912.0 -786.0 label -text "etr."
+
+point 918.0 -1069.0 label -text "etr."
+
+point 691.0 -1086.0 altitude -align bottom-left -value [-2 m]
+
+point 557.0 -725.0 altitude -align bottom-left
+
+point 397.0 -342.0 label -text "<bf>CP51" -scale xl
+
+point 528.0 -622.0 entrance -orientation 140.6
+
+line wall -subtype invisible
+  620.0 -677.0
+  620.0 -677.0 563.0 -699.0 557.0 -725.0
+endline
+
+line wall
+  716.0 -1074.0
+  716.0 -1074.0 697.0 -1051.0 694.0 -1036.0
+  691.0 -1021.0 695.0 -994.0 704.0 -968.0
+  713.0 -942.0 718.0 -926.0 717.0 -902.0
+  716.0 -878.0 714.0 -860.0 694.0 -858.0
+  674.0 -856.0 664.0 -848.0 658.0 -841.0
+  652.0 -834.0 655.0 -826.0 655.0 -826.0
+  smooth off
+  655.0 -826.0 683.0 -823.0 683.0 -805.0
+  683.0 -787.0 690.0 -761.0 678.0 -755.0
+  666.0 -749.0 638.0 -740.0 629.0 -735.0
+  620.0 -730.0 618.0 -722.0 618.0 -707.0
+  618.0 -692.0 617.0 -683.0 620.0 -677.0
+endline
+
+line wall
+  557.0 -725.0
+  557.0 -725.0 565.0 -717.0 580.0 -722.0
+  595.0 -727.0 604.0 -736.0 613.0 -748.0
+  622.0 -760.0 628.0 -764.0 638.0 -759.0
+  648.0 -754.0 655.0 -742.0 658.0 -751.0
+  661.0 -760.0 674.0 -789.0 669.0 -791.0
+  664.0 -793.0 632.0 -805.0 632.0 -819.0
+  632.0 -833.0 630.0 -847.0 653.0 -860.0
+  676.0 -873.0 702.0 -894.0 701.0 -912.0
+  700.0 -930.0 684.0 -941.0 678.0 -962.0
+  672.0 -983.0 670.0 -1011.0 674.0 -1034.0
+  678.0 -1057.0 691.0 -1086.0 691.0 -1086.0
+  smooth off
+endline
+
+point 596.0 -702.0 station -name CP51@CP51
+
+endscrap
+
+

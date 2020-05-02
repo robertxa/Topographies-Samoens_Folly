@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP59 -title "CP59"
+
+	centerline
+		cs lat-long
+		fix		CP59	46.11973 6.81387 2253
+		station   CP59      "CP59" entrance continuation explored 07m
+
+		explo-date 2008.07.12
+			explo-team "Laurent Morel"
+			explo-team "Marie-Jo Bravais"
+			explo-team "Frédéric Delègue"
+			explo-team "Hervé Frot"
+  
+	endcenterline
+endsurvey

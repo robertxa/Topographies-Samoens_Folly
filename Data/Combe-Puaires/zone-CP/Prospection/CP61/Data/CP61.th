@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP61 -title "CP61"
+
+	centerline
+		cs lat-long
+		fix		CP61	46.112123 6.790502 1947
+		station   CP61      "CP61" entrance continuation explored 13m
+
+		explo-date 2012.08.15
+			explo-team "Xavier Robert"
+  
+	endcenterline
+endsurvey

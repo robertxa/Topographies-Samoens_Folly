@@ -1,0 +1,80 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -775 923 139.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP60.gif 0 {}
+
+
+
+scrap SC-CP60-1 -projection extended -author 2011 "Frédéric Delègue" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [513.0 -451.0 513.0 -622.0 0.0 0.0 0 -10 m]
+
+line wall -subtype invisible
+  437.0 -454.5
+  437.0 -454.5 406.5 -449.0 381.0 -448.5
+  355.5 -448.0 319.5 -454.0 319.5 -454.0
+  smooth off
+endline
+
+line wall
+  357.5 -599.0
+  357.5 -599.0 382.0 -592.0 389.0 -592.0
+  396.0 -592.0 399.0 -595.5 401.0 -582.5
+  403.0 -569.5 404.5 -549.5 407.0 -535.5
+  409.5 -521.5 413.0 -515.5 413.0 -499.5
+  413.0 -483.5 415.0 -475.0 415.5 -470.5
+  416.0 -466.0 418.5 -460.5 421.0 -458.5
+  423.5 -456.5 437.0 -454.5 437.0 -454.5
+  smooth off
+endline
+
+point 292.5 -641.0 continuation -attr Code D -attr Cavite CP60 -text "A revoir avec peu de neige ?"
+
+point 274.5 -597.0 narrow-end
+
+line wall -close on -subtype ice -outline none
+  382.5 -608.5
+  382.5 -608.5 361.5 -598.0 354.0 -594.5
+  346.5 -591.0 348.0 -596.0 357.5 -587.5
+  367.0 -579.0 365.5 -582.5 374.5 -579.0
+  383.5 -575.5 398.5 -565.5 397.0 -574.5
+  395.5 -583.5 393.5 -595.0 392.5 -599.0
+  391.5 -603.0 382.5 -608.5 382.5 -608.5
+  smooth off
+endline
+
+point 395.5 -593.0 altitude -align bottom-right -value [-10.5 m]
+
+line rope
+  421.0 -458.5
+  380.5 -455.5
+  377.0 -570.0
+endline
+
+point 319.5 -454.0 altitude -align left
+
+point 437.0 -454.5 station -name CP60@CP60
+
+point 382.5 -291.5 label -text "<bf>CP60" -scale xl
+
+point 380.5 -406.5 entrance -orientation 180.0
+
+line wall -subtype debris
+  315.5 -620.5
+  315.5 -620.5 326.5 -606.0 334.5 -604.0
+  342.5 -602.0 352.0 -599.5 357.5 -599.0
+endline
+
+line wall
+  319.5 -454.0
+  339.0 -455.0
+  339.0 -455.0 339.5 -479.0 339.5 -488.0
+  339.5 -497.0 337.0 -510.0 334.5 -522.0
+  332.0 -534.0 336.0 -548.5 334.5 -555.5
+  333.0 -562.5 327.0 -569.5 325.5 -578.5
+  324.0 -587.5 322.0 -593.5 318.0 -600.5
+  314.0 -607.5 309.0 -616.0 309.0 -616.0
+  smooth off
+endline
+
+endscrap
+
+

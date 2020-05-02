@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP52 -title "CP52"
+
+	centerline
+		cs lat-long
+
+		fix       CP52A     46.116500     006.80223      2232
+		fix       CP52B     46.116583     006.80218      2250	# Coordonnées bofbof
+		station   CP52A     "CP52A" entrance continuation explored 10m
+		station   CP52B     "CP52B" entrance
+
+		explo-date 2008.07.14
+			explo-team "Xavier Robert"
+  
+	endcenterline
+endsurvey

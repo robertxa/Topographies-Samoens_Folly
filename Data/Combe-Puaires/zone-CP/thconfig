@@ -38,7 +38,7 @@ encoding  utf-8
   legend off
   
    # Par defaut, la legende est de 14 cm de largeur
-   #  legend-width 14 cm
+     legend-width 30 cm
   
    # Specification la position de la manchette : interieur
    # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -89,5 +89,5 @@ encoding  utf-8
  # 3-EXPORTS   
  #export map -fmt xvi -layout xviexport -o trousCPmap.xvi
  
- select MP-systeme-CP   
+ select MP-zoneCP@zoneCP
  export map -o trouCPplan.pdf -layout my_layout

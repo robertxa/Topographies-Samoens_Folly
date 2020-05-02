@@ -59,18 +59,18 @@ fix       CP47      46.120083     006.81285      2281
 fix       CP48      46.119016     006.81033      2264
 fix       CP49      46.120416     006.81368      2252
 fix       CP50      46.120466     006.81421      2290
-fix       CP51      46.116233     006.80193      2232
-fix       CP52A     46.116500     006.80223      2232
-fix       CP52B     46.116583     006.80218      2250
+#fix       CP51      46.116233     006.80193      2232
+#fix       CP52A     46.116500     006.80223      2232
+#fix       CP52B     46.116583     006.80218      2250
 #fix       CP53      46.118616     006.79940      2182
 fix		CP54	46.112736 6.793105 2015
-fix		CP55	46.11808 6.80431 2282
+#fix		CP55	46.11808 6.80431 2282
 fix		CP56	46.11793 6.80483 2262
-fix		CP57	46.11807 6.80492 2248
-fix		CP58	46.11839 6.80641 2246
-fix		CP59	46.11973 6.81387 2253
-fix		CP60	46.11932 6.81103 2258
-fix		CP61	46.112123 6.790502 1947
+#fix		CP57	46.11807 6.80492 2248
+#fix		CP58	46.11839 6.80641 2246
+#fix		CP59	46.11973 6.81387 2253
+#fix		CP60	46.11932 6.81103 2258
+#fix		CP61	46.112123 6.790502 1947
 fix		CP64	46.112614 6.789946 1909
 fix		CP65	46.112976 6.789483 1878
 fix		CP66	46.112704 6.789797 1914	# altitude approx
@@ -115,17 +115,17 @@ station   CP47      "CP47" entrance continuation explored 09m
 station   CP48      "CP48" entrance continuation explored 06m
 station   CP49      "CP49" entrance continuation explored 10m
 station   CP50      "CP50" entrance continuation explored 10m
-station   CP51      "CP51" entrance continuation explored 15m air-draught
-station   CP52A     "CP52A" entrance continuation explored 10m
-station   CP52B     "CP52B" entrance
+#station   CP51      "CP51" entrance continuation explored 15m air-draught
+#station   CP52A     "CP52A" entrance continuation explored 10m
+#station   CP52B     "CP52B" entrance
 station   CP54      "CP54" entrance continuation explored 04m air-draught
-station   CP55      "CP55" entrance continuation explored 09m
+#station   CP55      "CP55" entrance continuation explored 09m
 station   CP56      "CP56" entrance #continuation explored 00m
-station   CP57      "CP57" entrance continuation explored 10m
-station   CP58      "CP58" entrance continuation explored 10m
-station   CP59      "CP59" entrance continuation explored 07m
-station   CP60      "CP60" entrance continuation explored 10m
-station   CP61      "CP61" entrance continuation explored 13m
+#station   CP57      "CP57" entrance continuation explored 10m
+#station   CP58      "CP58" entrance continuation explored 10m
+#station   CP59      "CP59" entrance continuation explored 07m
+#station   CP60      "CP60" entrance continuation explored 10m
+#station   CP61      "CP61" entrance continuation explored 13m
 station   CP64      "CP64" entrance continuation explored 01m air-draught
 station   CP65      "CP65" entrance continuation explored 15m
 station   CP66      "CP66" entrance air-draught #continuation explored 00m
@@ -133,62 +133,6 @@ station   CP67      "CP67" entrance continuation explored 02m
 station   CP68      "CP68" entrance continuation explored 03m
 station   CP70      "CP70" entrance continuation explored 13m
 station		CP71	"CP71"	entrance	continuation	explored	01m	air-draught
-
-#data nosurvey from to  #definition of relation between points
-#flags surface
   
-#CP        CP02
-#CP02      CP04
-#CP04      CP05
-#CP05    CP08  
-#CP08	CP09
-#CP09      CP10
-#CP10      CP11
-#CP11      CP18
-#CP18      CP20
-#CP20      CP22
-#CP22      CP23
-#CP23      CP25
-#CP25      CP26
-#CP26      CP27
-#CP27      CP29
-#CP29      CP30
-#CP30      CP31
-#CP31      CP33
-#CP33      CP34
-#CP34      CP35
-#CP35      CP36
-#CP36      CP37
-#CP37      CP38
-#CP38      CP39
-#CP39      CP40
-#CP40      CP41
-#CP41      CP42
-#CP42      CP44
-#CP44      CP45
-#CP45      CP46
-#CP46      CP47
-#CP47      CP48
-#CP48      CP49
-#CP49      CP50
-#CP50      CP51
-#CP51      CP52A
-#CP52A     CP52B
-#CP52B     CP53
-#CP53	CP54
-#CP54	CP55
-#CP55	CP56
-#CP56	CP57
-#CP57	CP58
-#CP58	CP59
-#CP59	CP60
-#CP60	CP61
-#CP61	CP64
-#CP64	CP65
-#CP65	CP66
-#CP66	CP67
-#CP67	CP68
-#CP68	CP70
-  
-endcenterline
+	endcenterline
 endsurvey
