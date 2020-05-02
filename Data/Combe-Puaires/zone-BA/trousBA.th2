@@ -9,7 +9,7 @@ scrap SP-BA-2020 -projection plan -scale [-128.0 -128.0 9183.1 -128.0 0.0 0.0 23
 
 point 7775.75 3491.0 label -text "<bf>BA1" -scale xl
 
-point 7024.5 2705.5 label -text "<bf>BA5" -scale xl
+#point 7024.5 2705.5 label -text "<bf>BA5" -scale xl
 
 #point 7023.5 2601.5 label -text "<bf>BA3b" -scale xl
 
@@ -31,13 +31,13 @@ point 7780.75 3472.5 entrance -orientation 162.6
 
 #point 7013.75 2641.0 entrance -orientation 83.6
 
-point 7030.0 2685.25 entrance -orientation 172.9
+#point 7030.0 2685.25 entrance -orientation 172.9
 
 #point 7034.21 2631.1400000000003 station -name BA3b@trousBA
 
 #point 7024.17 2641.4900000000002 station -name BA3a@trousBA
 
-point 7031.54 2677.1600000000003 station -name BA5@trousBA
+#point 7031.54 2677.1600000000003 station -name BA5@trousBA
 
 point 7783.47 3463.82 station -name BA1@trousBA
 

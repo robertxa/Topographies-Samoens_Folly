@@ -23,7 +23,12 @@ encoding  utf-8
  endlayout
  # fin de la définition du layout "xviexport" 
   
- layout my_layout  
+layout my_layout  
+
+	copy drawingconfig
+	copy headerl
+	copy langue-fr
+	
    doc-title "zone BA"
    doc-author "Xavier Robert"
    cs UTM32
