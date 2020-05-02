@@ -7,6 +7,8 @@ encoding  utf-8
   
  # 1-SOURCES 
  source BA.th
+ 
+ input ../../../config.thc
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -57,16 +59,11 @@ encoding  utf-8
   symbol-hide line survey
   #debug station-names
  
-  symbol-assign point station:temporary SKBB
- 
   grid bottom
   
   grid-size 100 100 100 m
  #  grid off
      statistics copyright all
-  
- 
-  
 
   
  # Titre          
@@ -94,7 +91,7 @@ encoding  utf-8
   
  # 3-EXPORTS  
  
- select MP-zoneBA 
+ select MP-zoneBA@zoneBA
  export map -fmt xvi -layout xviexport -o trousBmap.xvi
    
  export map -o trouBAplan.pdf -layout my_layout
