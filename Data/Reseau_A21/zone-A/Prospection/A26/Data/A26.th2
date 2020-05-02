@@ -1,0 +1,57 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -594 526 165.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A26.gif 0 {}
+
+
+
+scrap SP-A26-1 -projection plan -author 2013 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [113.0 -287.0 197.0 -287.0 0.0 0.0 2 0.0 m]
+
+point 101.0 -290.0 station -name A26@A26
+
+point 407.0 -329.0 continuation -attr Code D -attr Cavite A26 -attr CA "Courant d'air soufflant en été" -text "Doline à désobtruer (cailloutis), courant d'air"
+
+point 224.0 -361.0 altitude -align bottom-left -value [-2 m]
+
+point 73.0 -282.0 altitude -align top-left
+
+point 354.0 -234.0 dig
+
+area blocks
+  l7-130--237
+  l6-73--282
+  l8-229--351
+endarea
+
+point 15.0 32.0 label -text "<bf>A26" -scale xl
+
+point 95.0 -172.0 entrance -orientation 156.0
+
+point 413.0 -439.0 air-draught -orientation 293.2 -subtype summer
+
+line wall -id l8-229--351 -subtype invisible
+  224.0 -361.0
+  230.0 -349.0
+endline
+
+line wall -id l7-130--237
+  230.0 -349.0
+  230.0 -349.0 194.0 -337.0 193.0 -325.0
+  192.0 -313.0 203.0 -297.0 200.0 -275.0
+  197.0 -253.0 192.0 -234.0 173.0 -236.0
+  154.0 -238.0 128.0 -240.0 128.0 -240.0
+  smooth off
+endline
+
+line wall -id l6-73--282
+  128.0 -240.0
+  128.0 -240.0 70.0 -252.0 73.0 -282.0
+  76.0 -312.0 101.0 -324.0 140.0 -326.0
+  179.0 -328.0 192.0 -342.0 202.0 -353.0
+  212.0 -364.0 224.0 -361.0 224.0 -361.0
+  smooth off
+endline
+
+endscrap
+
+

@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 439.0 385.0 7344.73 5036.6900000000005
+##XTHERION## xth_me_area_adjust 439.0 385.0 7344.65 5036.0
 ##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {3727.84 1 1.0} {2879.09 V21@A21} trousAmap.xvi 0 {}
+##XTHERION## xth_me_image_insert {3727.76 1 1.0} {2878.4 V21@A21.A21.zoneA} trousAmap.xvi 0 {}
 
 
 
@@ -167,29 +167,27 @@ endscrap
 
 
 
-scrap SP-A-2020 -projection plan -scale [-128.0 -128.0 5049.25 -128.0 0.0 0.0 131.50215 0.0 m]
+scrap SP-A-2020 -projection plan -scale [2099.0 2152.0 2296.0 2152.0 0.0 0.0 50 0.0 m]
 
-point 2786.5 2628.5 label -text "<bf>A26" -scale xl
+#point 2786.5 2628.5 label -text "<bf>A26" -scale xl
 
-point 3289.0 2673.5 label -text "<bf>A28" -scale xl
 
-point 3181.0 2752.5 label -text "<bf>A27" -scale xl
+#point 3181.0 2752.5 label -text "<bf>A27" -scale xl
+
 
 point 2181.5 2213.0 label -text "<bf>A25" -scale xl
 
 point 2182.5 2187.5 entrance -orientation 179.0
 
-point 2785.5 2599.5 entrance -orientation 179.0
+#point 2785.5 2599.5 entrance -orientation 179.0
 
-point 3183.5 2722.0 entrance -orientation 177.3
+#point 3183.5 2722.0 entrance -orientation 177.3
 
-point 3290.0 2647.5 entrance -orientation 182.5
 
-point 3289.45 2631.73 station -name A28@trous-A
+#point 3184.9299999999994 2704.7200000000003 station -name A27@trous-A
 
-point 3184.9299999999994 2704.7200000000003 station -name A27@trous-A
+#point 2785.5999999999995 2580.16 station -name A26@trous-A
 
-point 2785.5999999999995 2580.16 station -name A26@trous-A
 
 point 2183.3099999999995 2167.99 station -name A25@trous-A
 

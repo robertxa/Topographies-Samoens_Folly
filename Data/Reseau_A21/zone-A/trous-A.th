@@ -4,11 +4,11 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
- survey trous-A -title "Cavités non topographiées de la Zone A"
+survey trous-A -title "Cavités non topographiées de la Zone A"
 
-centerline
+	centerline
 
-cs lat-long
+		cs lat-long
 
 fix A01    46.1031500 6.7833833  01929
 fix A02    46.1032833 6.7836500  01930
@@ -36,9 +36,9 @@ fix A23    46.1040833 6.7872333  02019
 #fix A24    46.1041000 6.7810667  01809
 
 fix		A25	46.10311	6.77806	1766
-fix		A26	46.104090	6.78	1801
-fix		A27	46.104400	6.7813	1834
-fix		A28	46.104240	6.781650	1841
+#fix		A26	46.104090	6.78	1801
+#fix		A27	46.104400	6.7813	1834
+#fix		A28	46.104240	6.781650	1841
 
 station A01 "A01" entrance continuation explored 15m
 station A02 "A02" entrance continuation explored 10m
@@ -66,9 +66,9 @@ station A23 "A23" entrance continuation explored 04m
 #station A24 "Unsurveyed cave" entrance
 
 station A25 "A25" entrance continuation explored 01m air-draught
-station A26 "A26" entrance continuation explored 02m air-draught
-station A27 "A27" entrance continuation explored 08m air-draught
-station A28 "A28" entrance continuation explored 05m
+#station A26 "A26" entrance continuation explored 02m air-draught
+#station A27 "A27" entrance continuation explored 08m air-draught
+#station A28 "A28" entrance continuation explored 05m
 
 #fix       J14       46.103766     006.78598      1984
 #station   J14       "Unsurveyed cave" entrance
@@ -99,45 +99,6 @@ station   V09B      "V09B" entrance continuation explored 10m
 station   V09C      "V09C" entrance continuation explored 30m
 #station   V11       "Unsurveyed cave" entrance
 
-#data nosurvey from to  #definition of relation between points
-#flags surface
-#A01 A02
-#A02 A03
-#A03 A04
-#A04 A05
-#A05 A06
-#A06 A07
-#A07 A08
-#A08 A09
-#A09 A10
-#A11 A11
-#A12 A12
-#A12 A13
-#A13 A14
-#A14 A15
-#A15 A16
-#A16 A17
-#A17 A18
-#A18 A19
-#A19 A20
-#A20 A23
-#A23	A25
-#A25	A26
-#A26	A27
-#A27	A28
-##A21 A22
-##A22 A23
-##A23 A24
-##A24 J14
-##J14       V0
-#A23 V0
-#V0        V01
-#V01       V08
-##V04      V08
-#V08       V09A
-#V09A      V09B
-#V09B      V09C
-
-endcenterline
+	endcenterline
 
 endsurvey

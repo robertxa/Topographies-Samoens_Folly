@@ -145,7 +145,7 @@ endlayout
 	select MC-A28-coupe-tot@A28
 	  
  export map -o Outputs/A28-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/A28-coupe.pdf
+#export map -projection extended -layout my_layout-coupe -o Outputs/A28-coupe.pdf
 #export map -o Outputs/A28-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/A28-coupe-Continuations.pdf
 

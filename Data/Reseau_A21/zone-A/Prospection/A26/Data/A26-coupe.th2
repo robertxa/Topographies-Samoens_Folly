@@ -1,0 +1,81 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -594 531.0 139.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A26.gif 0 {}
+
+
+
+scrap SC-A26-1 -projection extended -author 2013 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [114.0 -287.0 114.0 -345.0 0.0 0.0 0 -2 m]
+
+line wall -subtype invisible
+  310.5 -197.5
+  310.5 -197.5 230.0 -215.0 199.0 -233.0
+  168.0 -251.0 89.5 -287.0 78.5 -297.0
+  67.5 -307.0 55.5 -321.5 55.5 -321.5
+  smooth off
+endline
+
+line wall
+  285.0 -259.5
+  285.0 -259.5 286.5 -244.5 292.5 -234.5
+  298.5 -224.5 310.5 -204.0 310.5 -197.5
+endline
+
+line wall -subtype debris
+  233.5 -260.5
+  233.5 -260.5 246.5 -262.0 258.5 -262.0
+  270.5 -262.0 281.5 -260.5 285.0 -259.5
+endline
+
+line wall
+  244.0 -345.5
+  244.0 -345.5 230.5 -334.0 223.5 -330.0
+  216.5 -326.0 213.5 -318.5 208.0 -319.0
+  202.5 -319.5 199.5 -316.5 198.5 -305.5
+  197.5 -294.5 194.0 -278.0 200.0 -266.0
+  206.0 -254.0 209.5 -234.5 213.5 -234.5
+  217.5 -234.5 219.5 -231.5 224.0 -240.5
+  228.5 -249.5 233.5 -260.5 233.5 -260.5
+  smooth off
+endline
+
+point 128.0 -357.5 altitude -align bottom-left -value [-2 m]
+
+point 308.0 -310.0 continuation -attr Code D -attr Cavite A26 -attr CA "Courant d'air soufflant en été" -text "Doline à désobstruer (cailloutis) ; courant d'air"
+
+point 67.5 -295.5 altitude -align left
+
+point 32.0 -17.5 label -text "<bf>A26" -scale xl
+
+point 99.0 -210.5 entrance -orientation 150.2
+
+point 227.0 -157.0 air-draught -orientation 318.2 -subtype summer
+
+point 400.5 -418.0 air-draught -orientation 296.2 -subtype summer
+
+point 275.5 -370.0 narrow-end
+
+point 166.5 -388.0 dig
+
+line wall -subtype debris
+  121.0 -347.0
+  121.0 -347.0 114.5 -358.5 128.0 -357.5
+  141.5 -356.5 155.0 -355.0 166.0 -352.5
+  177.0 -350.0 197.5 -348.0 206.5 -349.0
+  215.5 -350.0 234.0 -362.0 234.0 -362.0
+  smooth off
+endline
+
+line wall
+  55.5 -321.5
+  55.5 -321.5 95.5 -287.5 104.5 -303.5
+  113.5 -319.5 121.0 -322.0 121.0 -330.5
+  121.0 -339.0 121.0 -347.0 121.0 -347.0
+  smooth off
+endline
+
+point 102.0 -292.0 station -name A26@A26
+
+endscrap
+
+
