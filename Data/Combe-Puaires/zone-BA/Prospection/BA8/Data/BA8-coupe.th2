@@ -1,0 +1,60 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -568 657 249.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} BA08.gif 0 {}
+
+
+
+scrap SC-BA8-1 -projection extended -author 2014 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [343.0 -85.0 343.0 -249.0 0.0 0.0 0 -2 m]
+
+point 491.5 -271.0 air-draught -orientation 223.6
+
+point 356.0 -242.0 altitude -align bottom-left -value [-2 m]
+
+point 137.0 116.0 label -text "<bf>BA8" -scale xl
+
+point 374.0 55.0 entrance -orientation 166.7
+
+point 445.5 -84.0 altitude -align right
+
+point 342.0 -299.0 narrow-end
+
+line wall -subtype invisible
+  488.0 -9.5
+  488.0 -9.5 370.0 -37.0 349.5 -53.5
+  329.0 -70.0 276.5 -142.5 273.5 -160.5
+  270.5 -178.5 275.5 -191.0 275.5 -191.0
+  smooth off
+endline
+
+line wall
+  369.0 -255.5
+  369.0 -255.5 400.0 -216.0 410.5 -200.0
+  421.0 -184.0 435.5 -163.0 436.0 -149.0
+  436.5 -135.0 433.5 -121.5 438.5 -108.0
+  443.5 -94.5 450.0 -73.5 449.5 -62.5
+  449.0 -51.5 449.0 -36.5 458.0 -32.5
+  467.0 -28.5 469.0 -27.5 475.5 -21.5
+  482.0 -15.5 488.0 -9.5 488.0 -9.5
+  smooth off
+endline
+
+line wall
+  275.5 -191.0
+  275.5 -191.0 295.5 -142.5 306.5 -123.5
+  317.5 -104.5 334.5 -75.0 346.5 -84.0
+  358.5 -93.0 356.5 -92.5 360.0 -104.0
+  363.5 -115.5 358.5 -123.5 369.0 -129.5
+  379.5 -135.5 378.0 -135.0 384.0 -141.5
+  390.0 -148.0 402.5 -151.5 407.5 -157.5
+  412.5 -163.5 414.0 -172.0 406.0 -180.5
+  398.0 -189.0 378.0 -211.0 371.0 -219.5
+  364.0 -228.0 356.0 -242.0 356.0 -242.0
+  smooth off
+endline
+
+point 354.5 -77.0 station -name BA8@BA8
+
+endscrap
+
+

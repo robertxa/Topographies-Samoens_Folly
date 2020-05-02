@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap SP-BA-2020 -projection plan -scale [-128.0 -128.0 9183.1 -128.0 0.0 0.0 236.50194 0.0 m]
 
-point 7775.75 3491.0 label -text "<bf>BA1" -scale xl
+#point 7775.75 3491.0 label -text "<bf>BA1" -scale xl
 
 #point 7024.5 2705.5 label -text "<bf>BA5" -scale xl
 
@@ -15,17 +15,17 @@ point 7775.75 3491.0 label -text "<bf>BA1" -scale xl
 
 #point 6989.0 2623.5 label -text "<bf>BA3a" -scale xl
 
-point 5885.790000000001 1964.2100000000003 station -name BA8@trousBA
+#point 5885.790000000001 1964.2100000000003 station -name BA8@trousBA
 
-point 5902.0 1916.0 label -text "<bf>BA8" -scale xl
+#point 5902.0 1916.0 label -text "<bf>BA8" -scale xl
 
 #point 956.5 845.5 label -text "<bf>BA7" -scale xl
 
 #point 962.5 825.0 entrance -orientation 162.6
 
-point 5893.0 1945.5 entrance -orientation 338.7
+#point 5893.0 1945.5 entrance -orientation 338.7
 
-point 7780.75 3472.5 entrance -orientation 162.6
+#point 7780.75 3472.5 entrance -orientation 162.6
 
 #point 7030.5 2622.75 entrance -orientation 26.6
 
@@ -39,7 +39,7 @@ point 7780.75 3472.5 entrance -orientation 162.6
 
 #point 7031.54 2677.1600000000003 station -name BA5@trousBA
 
-point 7783.47 3463.82 station -name BA1@trousBA
+#point 7783.47 3463.82 station -name BA1@trousBA
 
 #point 968.6600000000003 807.2800000000002 station -name BA7@trousBA
 

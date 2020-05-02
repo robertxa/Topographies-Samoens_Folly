@@ -1,0 +1,43 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -674.0 657 139.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} BA08.gif 0 {}
+
+
+
+scrap SP-BA8-1 -projection plan -author 2014 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [67.0 -360.0 204.0 -360.0 0.0 0.0 3 0.0 m]
+
+point 405.5 -543.5 label -text "<bf>BA8" -scale xl
+
+point 282.0 -371.5 entrance -orientation 297.7
+
+point 45.0 -246.0 narrow-end
+
+line wall
+  83.5 -267.0
+  83.5 -267.0 111.0 -268.5 120.0 -282.5
+  129.0 -296.5 145.5 -309.5 154.5 -312.0
+endline
+
+point 163.5 -295.5 altitude -align top-right
+
+line wall -subtype pit
+  154.5 -312.0
+  163.5 -314.5 187.5 -331.0 199.5 -321.0
+  211.5 -311.0 215.5 -313.5 206.5 -306.5
+  197.5 -299.5 182.0 -295.5 163.5 -295.5
+endline
+
+line wall
+  163.5 -295.5
+  145.0 -295.5 140.5 -293.5 134.0 -283.0
+  127.5 -272.5 121.5 -265.0 111.5 -266.0
+  101.5 -267.0 86.0 -259.0 86.0 -259.0
+  smooth off
+endline
+
+point 197.0 -313.0 station -name BA8@BA8
+
+endscrap
+
+
