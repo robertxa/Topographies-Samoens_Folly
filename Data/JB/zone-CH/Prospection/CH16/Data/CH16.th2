@@ -1,0 +1,46 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -562 831 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH16.gif 0 {}
+
+
+
+scrap SP-CH16-1 -projection plan -author 2004 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [420.0 -133.0 616.0 -133.0 0.0 0.0 10 0.0 m]
+
+line wall
+  164.0 -179.0
+  164.0 -179.0 177.0 -165.0 186.0 -160.0
+endline
+
+point 165.0 -217.0 narrow-end
+
+point 359.0 -240.0 label -text "<bf>CH16" -scale xl
+
+point 308.0 -166.0 entrance -orientation 288.9
+
+line wall -subtype pit
+  186.0 -160.0
+  195.0 -155.0 211.0 -142.0 223.0 -142.0
+  235.0 -142.0 256.0 -142.0 255.0 -136.0
+  254.0 -130.0 252.0 -123.0 252.0 -123.0
+  smooth off
+endline
+
+line wall
+  252.0 -123.0
+  252.0 -123.0 217.0 -130.0 203.0 -137.0
+  189.0 -144.0 160.0 -146.0 163.0 -153.0
+endline
+
+line wall -subtype pit
+  163.0 -153.0
+  166.0 -160.0 177.0 -160.0 171.0 -164.0
+  165.0 -168.0 159.0 -175.0 159.0 -175.0
+  smooth off
+endline
+
+point 242.0 -134.0 station -name CH16@CH16
+
+endscrap
+
+

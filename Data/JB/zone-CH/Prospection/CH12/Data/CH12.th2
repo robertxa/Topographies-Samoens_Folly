@@ -1,0 +1,31 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -850 662 293.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH12.gif 0 {}
+
+
+
+scrap SP-CH12-1 -projection plan -author 1975 "Pierre Rias" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [190.0 -144.0 190.0 -514.0 0.0 0.0 0 -9.0 m]
+
+point 227.0 -284.0 height -value [-9 m]
+
+point 137.0 160.0 label -text "<bf>CH12" -scale xl
+
+point 183.0 -31.0 entrance -orientation 170.8
+
+point 276.0 -128.0 altitude -align top-right
+
+line wall -close on -subtype pit
+  276.0 -128.0
+  276.0 -128.0 197.0 -122.0 170.0 -130.0
+  143.0 -138.0 149.0 -158.0 173.0 -157.0
+  197.0 -156.0 254.0 -157.0 275.0 -151.0
+  296.0 -145.0 276.0 -128.0 276.0 -128.0
+  smooth off
+endline
+
+point 180.0 -141.0 station -name CH12@CH12
+
+endscrap
+
+

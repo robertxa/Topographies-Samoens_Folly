@@ -15,10 +15,10 @@ centerline -extend right
 	#fix       CH06      46.106783     006.81258      2272
 	#fix       CH09      46.108616     006.81946      2423
 	#fix       CH10      46.108766     006.81995      2397
-	fix       CH12      46.108633     006.82235      2368
-	fix       CH13      46.108533     006.82168      2329
+	#fix       CH12      46.108633     006.82235      2368
+	#fix       CH13      46.108533     006.82168      2329
 	fix       CH14      46.107566     006.82096      2245
-	fix       CH16      46.105800     006.80743      2245
+	#fix       CH16      46.105800     006.80743      2245
 	#fix       CH17      46.106700     006.81188      2280
 	fix       CH18      46.108200     006.82203      2329
 	#fix       CH19      46.106900     006.81716      2318
@@ -42,10 +42,10 @@ centerline -extend right
 	#station   CH06      "CH06" entrance continuation explored 25m
 	#station   CH09      "CH09" entrance continuation explored 60m
 	#station   CH10      "CH10" entrance continuation explored 37m
-	station   CH12      "CH12" entrance continuation explored 14m
-	station   CH13      "CH13" entrance continuation explored 40m
+	#station   CH12      "CH12" entrance continuation explored 14m
+	#station   CH13      "CH13" entrance continuation explored 40m
 	station   CH14      "CH14" entrance continuation explored 15m
-	station   CH16      "CH16" entrance continuation explored 07m
+	#station   CH16      "CH16" entrance continuation explored 07m
 	station   CH18      "CH18" entrance # continuation explored 00m
 	#station   CH19      "CH19" entrance continuation explored 10m
 	#station   CH19B     "CH19B" entrance continuation explored 50m

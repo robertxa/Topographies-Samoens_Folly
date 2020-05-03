@@ -8,8 +8,6 @@ encoding  utf-8
 map MP-zoneCH
 	MP-trousCH
 	break
-	MP-CH3-plan-tot@CH3
-	break
 	MP-CH17-plan-tot@CH17
 	break
 	MP-CH20-plan-tot@CH20
@@ -31,12 +29,16 @@ map MP-zoneCH
 	MP-CH9-plan-tot@CH9.prospectionCH
 	break
 	MP-CH10-plan-tot@CH10.prospectionCH
-	#break
-	#MP-CH12-plan-tot@CH12.prospectionCH
-	#break
-	#MP-CH13-plan-tot@CH13.prospectionCH
-	#break
-	#MP-CH16-plan-tot@CH16.prospectionCH
+	break
+	MP-CH12-plan-tot@CH12.prospectionCH
+	break
+	MP-CH13-plan-tot@CH13.prospectionCH
+	break
+	MP-CH16-plan-tot@CH16.prospectionCH
+	preview above MP-CH3-plan-tot@CH3
+	break
+	MP-CH3-plan-tot@CH3
+	preview below MP-CH16-plan-tot@CH16.prospectionCH
 	break
 	MP-CH19-plan-tot@CH19.prospectionCH
 	break
