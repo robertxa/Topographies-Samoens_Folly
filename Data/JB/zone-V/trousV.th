@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey A -title "A"
+survey trousV -title "Cavités non topographiées de la Zone V"
 
 	centerline
 
@@ -14,7 +14,6 @@ fix A01    46.1031500 6.7833833  01929
 fix A02    46.1032833 6.7836500  01930
 fix A03    46.1035167 6.7856000  01978
 fix A04    46.1039167 6.7863500  01994
-fix A05    46.1052667 6.7854500  01925
 fix A06    46.1038833 6.7870167  02017
 fix A07    46.1041000 6.7879667  02038
 fix A08    46.1038333 6.7881000  02063
@@ -30,12 +29,13 @@ fix A17    46.1047500 6.7892167  02059
 fix A18    46.1047667 6.7894167  02067
 fix A19    46.1048333 6.7888833  02056
 fix A20    46.1036667 6.7842167  01937
+fix A23    46.1040833 6.7872333  02019
+
 
 station A01 "A01" entrance continuation explored 15m
 station A02 "A02" entrance continuation explored 10m
 station A03 "A03" entrance continuation explored 20m
 station A04 "A04" entrance continuation explored 50m
-station A05 "A05" entrance #continuation explored 06m
 station A06 "A06" entrance continuation explored 06m
 station A07 "A07" entrance continuation explored 05m
 station A08 "A08" entrance continuation explored 15m
@@ -51,10 +51,12 @@ station A17 "A17" entrance continuation explored 03m
 station A18 "A18" entrance continuation explored 05m
 station A19 "A19" entrance continuation explored 08m
 station A20 "A20" entrance continuation explored 15m
+station A23 "A23" entrance continuation explored 04m
 
+#fix       J14       46.103766     006.78598      1984
+#station   J14       "Unsurveyed cave" entrance
 
 fix V0        46.102050 006.78035 2013
-fix       V01       46.108583     006.79303      2090
 #fix       V04       46.102216     006.77961      1836
 #fix       V04B      46.102383     006.78056      1843
 #fix       V05       46.102116     006.78201      1893
@@ -67,7 +69,6 @@ fix       V09C      46.104833     006.79031      2095
 #fix       V11       46.104533     006.78850      2048
 
 station   V0        "V0" entrance	continuation explored 10m
-station   V01       "V01" entrance continuation explored 28m
 #station   V04       "Unsurveyed cave" entrance
 #station   V04B      "Unsurveyed cave" entrance
 #station   V05       "Unsurveyed cave" entrance

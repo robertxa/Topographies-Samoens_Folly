@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-layout Entrances_coords_AApra
+layout Entrances_coords_JBVpra
 # Layout where we define the different variables that contain the text with 
 # the entrance coordinates we want to print in the header.
 # We need one variable per entrance.
@@ -14,16 +14,16 @@ layout Entrances_coords_AApra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationAApra{A5    --  Lat. : 46.1052667 N ; Long. : 6.78545 E ; Alt. : 1925 m}
+		\def\thlocationJBVpra{V'Heloise    --  Lat. : 46.0994 N ; Long. : 6.76794 E ; Alt. : 1590 m}
 	endcode 
 	
 endlayout
 
 
-layout Coords_Header_AApra
+layout Coords_Header_JBVpra
 # Layout that set the presentation for the entrance coordinates.
 	
-	copy Entrances_coords_AApra
+	copy Entrances_coords_JBVpra
 	# it calls the layout above Entrances_coords where we defined the different 
 	# variables that contain the text with 
 	# the entrance coordinates we want to print in the header.
@@ -41,8 +41,8 @@ layout Coords_Header_AApra
 			\edef\tmp{\thjunk} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationAApra} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm \ss\thlocationAApra\vss}	% The first one should be without hskip
+			\edef\tmp{\thlocationJBVpra} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationJBVpra\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

@@ -4,12 +4,31 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey prospectionCH -title "Prospection Zone CH"
+survey prospectionV -title "Prospection Zone V"
   
   # Pour importer les différentes données de différents fichiers topos : 
-   input CH25/Data/CH25-coupe.th2
-   input CH26/Data/CH26-coupe.th2
+   #input A1/A1-tot.th
+   #input A2/A2-tot.th
+   #input A3/A3-tot.th
+   #input A4/A4-tot.th
+   #input A6/A6-tot.th
+   #input A7/A7-tot.th
+   #input A8/A8-tot.th
+   #input A9/A9-tot.th
+   #input A10/A10-tot.th
+   #input A11/A11-tot.th
+   #input A12/A12-tot.th
+   #input A14/A14-tot.th
+   #input A15/A15-tot.th
+   #input A16/A16-tot.th
+   #input A17/A17-tot.th
+   #input A18/A18-tot.th
+   #input A19/A19-tot.th
+   #input A20/A20-tot.th
+   
+   #input V8/V8-tot.th
+   #input V9a-c/V9a-c-tot.th
+   #input V9b/V9b-tot.th
+   #input Vloise/Vloise-tot.th
 	
 endsurvey
- 
-# join ch3b.F3 F3-1.F3

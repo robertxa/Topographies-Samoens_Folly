@@ -7,9 +7,11 @@ encoding  utf-8
 survey prospectionA -title "Prospection Zone A"
   
 	# Pour importer les différentes données de différents fichiers topos : 
+	input A5/A5-tot.th
 	input A26/A26-tot.th
 	input A27/A27-tot.th
 	input A28/A28-tot.th
+	#input V1/V1-tot.th	# A mettre dans les T, plutôt ?
 	
 endsurvey
  

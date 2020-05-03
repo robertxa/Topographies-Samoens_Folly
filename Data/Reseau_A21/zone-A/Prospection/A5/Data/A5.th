@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey A5 -title "A5"
+
+	centerline
+
+		cs lat-long
+
+		fix A5    46.1052667 6.7854500  1925
+		station A5 "A5" entrance continuation explored 50m
+
+		explo-date 1976.06.16
+			explo-team "Benoît/le Falher"
+			explo-team "Christian Rigaldie"
+		explo-date 1976.08.09
+			explo-team "Michel Heugebaert"
+			explo-team "Christophe Aubert"
+			
+	endcenterline
+
+endsurvey

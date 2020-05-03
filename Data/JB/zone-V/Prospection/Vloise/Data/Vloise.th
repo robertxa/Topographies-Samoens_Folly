@@ -1,0 +1,67 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey Vloise -title "Vloise"
+
+	centerline -extend right
+		cs lat-long
+
+	fix       Vloise       46.0994     006.7694      1590 # ALT PAR DEFAULT
+	station   Vloise       "V'Héloise" entrance continuation explored 3m
+
+	explo-date 2015.10.08
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+	explo-date 2016.08.27
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+		explo-team "Christophe Ferry"
+	explo-date 2016.08.28
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+		explo-team "Christophe Ferry"
+	explo-date 2016.09.04
+		explo-team "Vincent Sordel"
+		explo-team "Clément Baudy"
+		explo-team "Romain Roure"
+		explo-team "Bernard Lips"
+		explo-team "Virgine Humbert"
+		explo-team "Christophe Goutailler"
+		explo-team "Stéphane Lips"
+	explo-date 2018.08.19
+		explo-team "Patrick Comte"
+		explo-team "Cécile Comte"
+		explo-team "Caroline Comte"
+		explo-team "Nocolas Blanchard"
+	explo-date 2018.09.06
+		explo-team "Gaëtan Poschmann"
+		explo-team "Frédéric Alvarez"
+		explo-team "Christophe Ferry"
+	explo-date 2018.09.07
+		explo-team "Gaëtan Poschmann"
+		explo-team "Frédéric Alvarez"
+		explo-team "Christophe Ferry"
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+	explo-date 2018.09.08
+		explo-team "Gaëtan Poschmann"
+		explo-team "Frédéric Alvarez"
+		explo-team "Christophe Ferry"
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+		explo-team "Stéphane Lips"
+	explo-date 2018.09.09
+		explo-team "Christophe Ferry"
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
+	explo-date 2018.10.06
+		explo-team "Patrice Comte"
+		explo-team "Patrice Plantier"
+	
+  
+endcenterline
+
+ endsurvey
