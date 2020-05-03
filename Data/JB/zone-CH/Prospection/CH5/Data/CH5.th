@@ -4,19 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey CH9 -title "CH9"
+survey CH5 -title "CH5"
  # Fichier contenant les positions des entrées de la zone CH, Samoens, France
 
 centerline -extend right
 	cs lat-long
-	fix       CH9      46.108616     006.81946      2423
-	station   CH9      "CH9" entrance continuation explored 60m
+	fix       CH5      46.106800     006.81231      2274
+	station   CH5      "CH5" entrance continuation explored 15m
 	
-	explo-date 1975.08.05
-		explo-team "Pierre Rias"
-	explo-date 2005.10.27
-		explo-team "Pauline Evrard"
-		explo-team "Clément Ronzon"
+	explo-date 1991.09.21
 		explo-team "Christophe Ohl"
 	
 endcenterline

@@ -1,0 +1,29 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -785 560 213.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH10.gif 0 {}
+
+
+
+scrap SP-CH10-1 -projection plan -author 2005 "Christophe Ohl" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [35.5 -511.0 246.5 -511.0 0.0 0.0 20 0.0 m]
+
+point 211.0 -26.5 altitude -align top-left
+
+point 255.0 83.0 label -text "<bf>CH10" -scale xl
+
+point 248.0 1.0 entrance -orientation 198.8
+
+line wall -close on -subtype pit
+  243.5 -29.0
+  243.5 -29.0 219.0 -23.5 211.0 -26.5
+  203.0 -29.5 197.0 -47.0 210.0 -47.0
+  223.0 -47.0 242.0 -54.0 246.0 -47.0
+  250.0 -40.0 243.5 -29.0 243.5 -29.0
+  smooth off
+endline
+
+point 240.5 -32.0 station -name CH10@CH10
+
+endscrap
+
+

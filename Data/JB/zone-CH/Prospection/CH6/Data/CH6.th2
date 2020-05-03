@@ -1,0 +1,83 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -994 1012 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH6.gif 0 {}
+
+
+
+scrap SP-CH6-1 -projection plan -author 2005 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [33.0 -676.0 337.0 -676.0 0.0 0.0 10 0.0 m]
+
+point 211.0 82.0 label -text "<bf>CH6" -scale xl
+
+point 244.0 -82.0 entrance -orientation 162.7
+
+point 417.0 -333.0 altitude -align bottom-left -value [-20 m]
+
+point 487.0 -164.0 altitude -align top-right
+
+point 472.0 -358.0 narrow-end
+
+point 246.0 -290.0 height -value [-5 m]
+
+point 593.0 -235.0 height -value [-9 m]
+
+point 166.0 -203.0 label -text "R6"
+
+line pit
+  529.0 -287.0
+  529.0 -287.0 418.0 -242.0 377.0 -303.0
+endline
+
+line pit
+  498.0 -254.0
+  498.0 -254.0 415.0 -207.0 381.0 -226.0
+  347.0 -245.0 323.0 -270.0 323.0 -270.0
+  smooth off
+endline
+
+line pit
+  501.0 -198.0
+  501.0 -198.0 423.0 -144.0 387.0 -144.0
+  351.0 -144.0 330.0 -150.0 308.0 -163.0
+  286.0 -176.0 261.0 -227.0 261.0 -227.0
+  smooth off
+endline
+
+line wall
+  493.0 -311.0
+  493.0 -311.0 473.0 -273.0 473.0 -254.0
+  473.0 -235.0 481.0 -222.0 485.0 -203.0
+  489.0 -184.0 487.0 -164.0 487.0 -164.0
+  smooth off
+endline
+
+line wall
+  347.0 -235.0
+  347.0 -235.0 377.0 -256.0 384.0 -274.0
+  391.0 -292.0 411.0 -323.0 417.0 -333.0
+endline
+
+line wall -subtype pit
+  277.0 -125.0
+  277.0 -125.0 217.0 -133.0 236.0 -148.0
+endline
+
+line wall
+  236.0 -148.0
+  255.0 -163.0 218.0 -182.0 262.0 -202.0
+  306.0 -222.0 314.0 -235.0 347.0 -235.0
+endline
+
+line wall -subtype pit
+  487.0 -164.0
+  466.0 -126.0 424.0 -123.0 390.0 -122.0
+  356.0 -121.0 330.0 -120.0 311.0 -121.0
+  292.0 -122.0 277.0 -125.0 277.0 -125.0
+  smooth off
+endline
+
+point 262.0 -155.0 station -name CH6@CH6
+
+endscrap
+
+

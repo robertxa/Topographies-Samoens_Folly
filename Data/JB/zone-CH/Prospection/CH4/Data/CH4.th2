@@ -1,0 +1,62 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -741 997 203.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH4.gif 0 {}
+
+
+
+scrap SP-CH4-1 -projection plan -author 1991 "Christophe Ohl" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [178.0 -381.0 289.5 -381.0 0.0 0.0 10 0.0 m]
+
+area blocks
+  l12-596--44
+  l13-596--84
+  l14-652--88
+  l6-633--70
+endarea
+
+point 717.0 -65.0 height -value [-15 m]
+
+line pit -id l14-652--88
+  686.0 -80.0
+  686.0 -80.0 630.0 -87.0 630.0 -117.0
+endline
+
+point 511.0 70.0 label -text "<bf>CH4" -scale xl
+
+point 563.0 -13.0 entrance -orientation 145.3
+
+point 731.0 -157.0 altitude -align top-right -value [-30 m]
+
+point 612.0 -40.5 altitude -align top-right
+
+point 767.0 -171.0 narrow-end
+
+line wall -id l6-633--70
+  731.0 -157.0
+  731.0 -157.0 705.0 -135.0 700.0 -126.0
+  695.0 -117.0 692.0 -101.0 677.0 -92.0
+  662.0 -83.0 640.0 -83.0 631.0 -71.0
+  622.0 -59.0 612.0 -40.5 612.0 -40.5
+  smooth off
+endline
+
+line wall -id l12-596--44 -subtype invisible
+  612.0 -40.5
+  612.0 -40.5 573.0 -47.5 573.0 -57.5
+  573.0 -67.5 568.0 -70.5 580.5 -71.5
+endline
+
+line wall -id l13-596--84
+  580.5 -71.5
+  593.0 -72.5 582.0 -75.0 597.0 -84.0
+  612.0 -93.0 623.0 -94.0 647.0 -105.0
+  671.0 -116.0 672.0 -128.0 688.0 -139.0
+  704.0 -150.0 726.0 -168.0 726.0 -168.0
+  smooth off
+endline
+
+point 579.0 -64.0 station -name CH4@CH4
+
+endscrap
+
+

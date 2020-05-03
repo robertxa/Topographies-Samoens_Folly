@@ -1,0 +1,69 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -762 584 163.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH9.gif 0 {}
+
+
+
+scrap SP-CH9-1 -projection plan -author 2005 "Christophe Ohl" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [23.0 -488.5 217.0 -488.0 0.0 0.0 20 0.0 m]
+
+point 280.5 -221.5 narrow-end
+
+point 161.5 -135.0 height -value [-15 m]
+
+point 288.0 -144.0 height -value [-40 m]
+
+point 254.0 -208.0 altitude -align bottom-left -value [-50 m]
+
+point 208.5 -85.0 altitude -align left
+
+point 181.0 30.5 label -text "<bf>CH9" -scale xl
+
+point 201.0 -42.0 entrance -orientation 154.2
+
+line pit
+  264.5 -146.5
+  264.5 -146.5 244.5 -149.0 227.5 -164.5
+endline
+
+line pit
+  250.0 -129.0
+  250.0 -129.0 222.5 -127.0 213.5 -137.5
+endline
+
+line pit
+  264.5 -77.0
+  264.5 -77.0 222.0 -76.0 207.5 -89.5
+endline
+
+line wall -subtype invisible
+  256.0 -73.5
+  256.0 -73.5 221.0 -66.5 208.5 -85.0
+endline
+
+line wall
+  260.5 -205.0
+  260.5 -205.0 253.0 -189.0 252.0 -181.0
+  251.0 -173.0 266.0 -172.5 260.0 -158.0
+  254.0 -143.5 239.0 -141.0 239.5 -135.5
+  240.0 -130.0 246.0 -128.0 248.5 -116.0
+  251.0 -104.0 253.5 -92.5 254.0 -86.0
+  254.5 -79.5 256.0 -73.5 256.0 -73.5
+  smooth off
+endline
+
+line wall
+  208.5 -85.0
+  208.5 -85.0 215.5 -87.0 217.0 -100.5
+  218.5 -114.0 216.5 -116.5 221.0 -129.5
+  225.5 -142.5 228.5 -143.5 231.5 -157.0
+  234.5 -170.5 240.5 -173.0 243.5 -182.5
+  246.5 -192.0 254.0 -208.0 254.0 -208.0
+  smooth off
+endline
+
+point 215.0 -79.0 station -name CH9@CH9
+
+endscrap
+
+
