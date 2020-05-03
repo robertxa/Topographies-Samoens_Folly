@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B27 -title "B27"
+
+	centerline -extend right
+		cs lat-long
+
+		fix B27 46.1046333 6.7939833 2100 #ALT APPROX !
+		station B27 "B27" entrance  continuation explored 30m
+
+		explo-date 1981.10.19
+			explo-team "Christophe Ohl"
+		explo-date 1999.07.13
+			explo-team "Josiane Lips"
+		explo-date 1999.07.16
+			explo-team "Stéphane Lips"
+			explo-team "Christian Locatelli"
+  
+	endcenterline
+
+endsurvey

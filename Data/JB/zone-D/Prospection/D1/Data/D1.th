@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D1 -title "D1"
+
+	centerline -extend right
+		cs lat-long
+
+		#fix       D01       46.105050     006.79461      2195 # A côté du B22, coordonnées à modifier
+
+		station   D01       "D1" entrance continuation explored 08m
+
+		explo-date 1971.08.06	# Date ???
+			explo-team "Emile Cheilletz"
+  
+	endcenterline
+
+endsurvey

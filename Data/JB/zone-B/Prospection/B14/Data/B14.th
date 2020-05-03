@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B14 -title "B14"
+
+	centerline -extend right
+		cs lat-long
+		fix B14 46.1048 6.7930667 2100 #ALT APPROX !
+		station B14 "B14" entrance continuation explored 15m
+
+		explo-date 2000.09.01
+			explo-team "Josiane Lips"
+			explo-team "Christophe Ferry"
+  
+	endcenterline
+
+endsurvey

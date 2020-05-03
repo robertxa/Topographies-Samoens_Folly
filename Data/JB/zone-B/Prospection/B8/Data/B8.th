@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B8 -title "B8"
+
+	centerline -extend right
+		cs lat-long
+		#fix B8 46.1045667 6.7893   2066	# A trouver !!!
+		station B8 "B8" entrance  continuation explored 08m
+
+		explo-date ..
+			explo-team ""
+  
+	endcenterline
+
+endsurvey

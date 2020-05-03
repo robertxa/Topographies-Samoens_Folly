@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B36 -title "B36"
+
+	centerline -extend right
+		cs lat-long
+		fix B36 46.10275 6.7850333   2034
+		station B36 "B36" entrance  continuation explored 20m
+
+	explo-date 2005.07.15
+		explo-team "Frédéric Générat"
+		explo-team "Michel Berbige"
+  
+	endcenterline
+
+endsurvey

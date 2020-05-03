@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B2 -title "B2"
+
+# Fichier contenant les positions des entrées de la zone B, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix B2 46.1045667 6.7893   2066
+		station B2 "B2" entrance continuation explored 10m 
+
+	explo-date 1976.08.06
+		explo-team "Pierre Rias"
+  
+	endcenterline
+
+endsurvey

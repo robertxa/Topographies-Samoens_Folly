@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B13 -title "B13"
+
+	centerline -extend right
+		cs lat-long
+		fix B13 46.1047333 6.7927 2100 #ALT APPROX !
+		station B13 "B13" entrance  continuation explored 30m
+
+		#explo-date ..
+		#	explo-team ""
+  
+	endcenterline
+
+endsurvey

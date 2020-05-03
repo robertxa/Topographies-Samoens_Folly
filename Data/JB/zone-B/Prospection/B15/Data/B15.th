@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B15 -title "B15"
+
+	centerline -extend right
+		cs lat-long
+		fix B15 46.10485 6.7933833 2100 #ALT APPROX !
+		station B15 "B15" entrance  continuation explored 10m
+
+		#explo-date ..
+		#	explo-team ""
+  
+	endcenterline
+
+endsurvey

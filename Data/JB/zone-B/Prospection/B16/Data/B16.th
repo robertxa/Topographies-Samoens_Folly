@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B16 -title "B16"
+
+	centerline -extend right
+		cs lat-long
+		fix B16 46.1048 6.7933167 2100 #ALT APPROX !
+		station B16 "B16" entrance  continuation explored 08m
+
+		#explo-date ..
+		#	explo-team ""
+  
+	endcenterline
+
+endsurvey
