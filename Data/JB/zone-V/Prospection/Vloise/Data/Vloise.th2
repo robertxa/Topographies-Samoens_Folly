@@ -1,16 +1,122 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 411.0 450.0 689.0 813.0
+##XTHERION## xth_me_area_adjust -131.0 -142.0 2454.0 974.0
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {539.0 1 1.0} {717.0 {}} Vheloise.gif 0 {}
 
 
 
-scrap SP-Vloise-1 -projection plan -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [392.0 512.0 744.0 512.0 0.0 0.0 40.64 0.0 m]
+scrap SP-Vloise-1 -projection plan -author 2018 "Bernard Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [1817.0 131.0 1911.5 130.5 0.0 0.0 1 0.0 m]
 
-point 544.0 680.0 label -text "<bf>V'Heloise" -scale xl
+line wall -subtype pit
+  1878.0 259.0
+  1878.0 259.0 1900.0 248.0 1919.0 238.0
+  1938.0 228.0 1969.0 216.0 1988.0 195.0
+  2007.0 174.0 2022.0 167.0 2046.0 167.0
+  2070.0 167.0 2074.0 169.0 2084.0 165.0
+endline
 
-point 553.0 614.0 entrance -orientation 176.0
+line wall
+  1730.0 376.0
+  1730.0 376.0 1756.0 373.0 1768.0 361.0
+  1780.0 349.0 1801.0 327.0 1817.0 317.0
+  1833.0 307.0 1862.0 286.0 1867.0 279.0
+  1872.0 272.0 1871.0 263.0 1878.0 259.0
+endline
 
-point 555.0 585.0 station -name Vloise@Vloise
+line wall
+  2005.0 433.0
+  2005.0 433.0 1884.0 434.0 1856.0 441.0
+  1828.0 448.0 1807.0 449.0 1785.0 455.0
+  1763.0 461.0 1735.0 468.0 1735.0 468.0
+  smooth off
+endline
+
+line wall -subtype pit
+  2158.0 260.0
+  2158.0 260.0 2124.0 340.0 2108.0 344.0
+  2092.0 348.0 2083.0 347.0 2071.0 365.0
+  2059.0 383.0 2031.0 420.0 2023.0 424.0
+  2015.0 428.0 2013.0 432.0 2005.0 433.0
+endline
+
+line contour
+  2019.0 209.0
+  2019.0 209.0 2043.0 282.0 2071.0 296.0
+endline
+
+line contour
+  2094.0 179.0
+  2094.0 179.0 2091.0 257.0 2124.0 261.0
+endline
+
+line contour
+  1823.0 267.0
+  1823.0 267.0 1894.0 273.0 1941.0 251.0
+  1988.0 229.0 2003.0 203.0 2038.0 191.0
+  2073.0 179.0 2109.0 155.0 2109.0 155.0
+  smooth off
+endline
+
+line contour
+  2157.0 300.0
+  2157.0 300.0 2065.0 332.0 2043.0 342.0
+  2021.0 352.0 1932.0 432.0 1923.0 446.0
+endline
+
+line contour
+  2128.0 338.0
+  2128.0 338.0 1984.0 391.0 1969.0 414.0
+  1954.0 437.0 1941.0 450.0 1941.0 450.0
+  smooth off
+endline
+
+line contour
+  2094.0 383.0
+  2094.0 383.0 1992.0 413.0 1987.0 421.0
+  1982.0 429.0 1971.0 443.0 1971.0 443.0
+  smooth off
+endline
+
+line gradient
+  2123.0 228.0
+  1953.0 320.0
+endline
+
+line rock-border -close on -clip off
+  1809.0 485.0
+  1738.0 346.0
+  1860.0 256.0
+  1955.0 382.0
+  1999.0 470.0
+  1809.0 485.0
+endline
+
+line overhang
+  2008.0 466.0
+  2008.0 466.0 2000.0 404.0 1984.0 390.0
+  1968.0 376.0 1917.0 306.0 1905.0 292.0
+  1893.0 278.0 1860.0 249.0 1860.0 249.0
+  smooth off
+endline
+
+line wall -subtype sand
+  1735.0 468.0
+  1735.0 468.0 1753.0 419.0 1750.0 401.0
+  1747.0 383.0 1730.0 376.0 1730.0 376.0
+  smooth off
+endline
+
+point 1845.0 381.0 continuation -attr Code D -attr Cavite "V'Heloise" -attr CA "Courant d'air soufflant froid en été" -text "Désobstuction en fond de doline, coruant d'air, entrée probable de la chauve souris de -700 m au JB ?"
+
+point 1553.0 448.0 dig
+
+point 1589.0 233.0 air-draught -orientation 58.1 -subtype summer
+
+point 2321.0 841.0 label -text "<bf>V'Heloise" -scale xl
+
+point 2319.0 219.0 entrance -orientation 253.7
+
+point 2109.0 223.0 station -name Vloise@Vloise
 
 endscrap
 
