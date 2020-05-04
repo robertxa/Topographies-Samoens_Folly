@@ -1,0 +1,32 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -571 629 128
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A7.gif 0 {}
+
+
+
+scrap SP-A7-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [202.0 -219.0 201.0 -399.0 0.0 0.0 0 -7 m]
+
+point 374.0 -243.0 height -value [-5 m]
+
+point 195.5 -211.0 altitude -align left
+
+point 184.5 21.5 label -text "<bf>A7" -scale xl
+
+point 207.5 -142.5 entrance -orientation 174.2
+
+line wall -close on -subtype pit
+  319.5 -276.5
+  319.5 -276.5 312.0 -227.5 295.5 -216.5
+  279.0 -205.5 230.0 -203.0 212.0 -205.5
+  194.0 -208.0 188.0 -208.5 205.0 -230.5
+  222.0 -252.5 225.0 -252.5 254.5 -270.0
+  284.0 -287.5 319.5 -276.5 319.5 -276.5
+  smooth off
+endline
+
+point 218.5 -217.5 station -name A7@A7
+
+endscrap
+
+

@@ -1,0 +1,52 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -601 957 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A9.gif 0 {}
+
+
+
+scrap SC-A9-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [403.0 -169.0 403.0 -334.0 0.0 0.0 0 -3 m]
+
+point 794.0 -330.0 altitude -align bottom-right -value [-3 m]
+
+point 401.0 -165.0 altitude -align bottom-left
+
+point 465.0 -8.0 label -text "<bf>A9" -scale xl
+
+point 400.0 -89.0 entrance -orientation 132.5
+
+point 423.0 -152.0 station -name A9@A9
+
+line wall -subtype invisible
+  548.0 -80.0
+  548.0 -80.0 477.0 -89.0 446.0 -108.0
+  415.0 -127.0 401.0 -165.0 401.0 -165.0
+  smooth off
+endline
+
+line wall
+  794.0 -330.0
+  794.0 -330.0 780.0 -235.0 746.0 -206.0
+  712.0 -177.0 691.0 -171.0 658.0 -161.0
+  625.0 -151.0 583.0 -150.0 551.0 -143.0
+  519.0 -136.0 473.0 -125.0 489.0 -113.0
+  505.0 -101.0 528.0 -85.0 548.0 -80.0
+endline
+
+line wall -subtype debris
+  619.0 -286.0
+  619.0 -286.0 670.0 -319.0 713.0 -324.0
+  756.0 -329.0 783.0 -334.0 794.0 -330.0
+endline
+
+line wall
+  401.0 -165.0
+  401.0 -165.0 413.0 -175.0 433.0 -174.0
+  453.0 -173.0 481.0 -181.0 505.0 -199.0
+  529.0 -217.0 546.0 -220.0 562.0 -236.0
+  578.0 -252.0 603.0 -283.0 619.0 -286.0
+endline
+
+endscrap
+
+

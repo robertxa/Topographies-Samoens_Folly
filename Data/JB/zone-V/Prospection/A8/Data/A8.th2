@@ -1,0 +1,55 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -1101 713 266.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A8.gif 0 {}
+
+
+
+scrap SP-A8-1 -projection plan -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [422.0 -151.0 422.0 -497.0 0.0 0.0 0 -8.0 m]
+
+line wall
+  396.0 -300.0
+  396.0 -300.0 370.0 -284.0 368.0 -270.0
+  366.0 -256.0 366.0 -234.0 366.0 -234.0
+  smooth off
+endline
+
+point 388.0 -320.0 altitude -align bottom-left -value [-15 m]
+
+point 216.0 -180.0 altitude -align left
+
+point 118.0 128.0 label -text "<bf>A8" -scale xl
+
+point 236.0 -172.0 station -name A8@A8
+
+point 204.0 -62.0 entrance -orientation 163.7
+
+point 442.0 -42.0 height -value [-9 m]
+
+point 604.0 -218.0 height -value [-11 m]
+
+point 450.0 -336.0 narrow-end
+
+line pit
+  392.0 -244.0
+  392.0 -244.0 304.0 -230.0 296.0 -280.0
+endline
+
+line wall -subtype pit
+  366.0 -234.0
+  366.0 -234.0 334.0 -198.0 314.0 -184.0
+  294.0 -170.0 260.0 -148.0 236.0 -160.0
+  212.0 -172.0 208.0 -200.0 230.0 -224.0
+  252.0 -248.0 266.0 -258.0 294.0 -264.0
+endline
+
+line wall
+  294.0 -264.0
+  322.0 -270.0 338.0 -282.0 354.0 -296.0
+  370.0 -310.0 388.0 -320.0 388.0 -320.0
+  smooth off
+endline
+
+endscrap
+
+

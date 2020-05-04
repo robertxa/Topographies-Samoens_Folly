@@ -1,0 +1,50 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -677 660 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A10.gif 0 {}
+
+
+
+scrap SC-A10-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [246.0 -277.0 246.0 -509.0 0.0 0.0 0 -4 m]
+
+point 403.0 -128.0 label -text "<bf>A10" -scale xl
+
+point 402.0 -217.0 entrance -orientation 187.1
+
+point 60.0 -533.0 altitude -align bottom-right -value [-4 m]
+
+point 244.0 -273.0 altitude -align left
+
+point 16.0 -540.0 narrow-end
+
+point 431.0 -273.0 station -name A10@A10
+
+line wall -subtype invisible
+  499.0 -270.0
+  499.0 -270.0 319.0 -241.0 244.0 -273.0
+endline
+
+line wall
+  60.0 -533.0
+  60.0 -533.0 163.0 -494.0 186.0 -476.0
+  209.0 -458.0 304.0 -425.0 336.0 -395.0
+  368.0 -365.0 365.0 -372.0 394.0 -336.0
+  423.0 -300.0 451.0 -272.0 469.0 -272.0
+  487.0 -272.0 499.0 -270.0 499.0 -270.0
+  smooth off
+endline
+
+line wall
+  244.0 -273.0
+  244.0 -273.0 279.0 -278.0 300.0 -279.0
+  321.0 -280.0 337.0 -277.0 339.0 -284.0
+  341.0 -291.0 330.0 -344.0 313.0 -362.0
+  296.0 -380.0 219.0 -403.0 194.0 -417.0
+  169.0 -431.0 146.0 -443.0 119.0 -462.0
+  92.0 -481.0 48.0 -521.0 48.0 -521.0
+  smooth off
+endline
+
+endscrap
+
+
