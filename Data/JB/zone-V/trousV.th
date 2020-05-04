@@ -10,7 +10,7 @@ survey trousV -title "Cavités non topographiées de la Zone V"
 
 		cs lat-long
 
-fix A01    46.1031500 6.7833833  01929
+#fix A01    46.1031500 6.7833833  01929
 fix A02    46.1032833 6.7836500  01930
 fix A03    46.1035167 6.7856000  01978
 fix A04    46.1039167 6.7863500  01994
@@ -32,7 +32,7 @@ fix A20    46.1036667 6.7842167  01937
 fix A23    46.1040833 6.7872333  02019
 
 
-station A01 "A01" entrance continuation explored 15m
+#station A01 "A01" entrance continuation explored 15m
 station A02 "A02" entrance continuation explored 10m
 station A03 "A03" entrance continuation explored 20m
 station A04 "A04" entrance continuation explored 50m

@@ -4,17 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey A -title "A"
+survey A1 -title "A1"
 
 	centerline
 
 		cs lat-long
 
-		fix A01    46.1031500 6.7833833  01929
-		station A01 "A01" entrance continuation explored 15m
+		fix A1    46.1031500 6.7833833  1929
+		station A1 "A1" entrance continuation explored 15m
 
-		explo-date ..
-			explo-team ""
+		#explo-date ..
+		#	explo-team ""
 
 	endcenterline
 

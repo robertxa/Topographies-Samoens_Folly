@@ -1,0 +1,76 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -672.0 1275 262.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} a01.gif 0 {}
+
+
+
+scrap SP-A1-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [566.0 -123.0 567.0 -369.0 0.0 0.0 0 7 m]
+
+point 669.0 -127.0 altitude -align left
+
+line overhang -clip off
+  895.0 -451.0
+  895.0 -451.0 957.0 -447.0 972.0 -447.0
+  987.0 -447.0 1018.0 -444.0 1018.0 -444.0
+  smooth off
+endline
+
+line overhang -clip off
+  767.0 -445.0
+  767.0 -445.0 734.0 -444.0 707.0 -445.0
+  680.0 -446.0 612.0 -444.0 612.0 -444.0
+  smooth off
+endline
+
+point 895.0 -451.0 altitude -align right -value [-7 m]
+
+line overhang -close on -clip off
+  702.0 -105.0
+  669.0 -127.0
+  669.0 -127.0 716.0 -186.0 733.0 -185.0
+  750.0 -184.0 782.0 -167.0 770.0 -160.0
+  758.0 -153.0 702.0 -105.0 702.0 -105.0
+  smooth off
+endline
+
+point 587.0 129.0 label -text "<bf>A1" -scale xl
+
+point 630.0 -61.0 entrance -orientation 133.8
+
+point 821.0 -539.0 entrance -orientation 0.0
+
+line wall -subtype invisible
+  707.0 -445.0
+  707.0 -445.0 829.0 -477.0 854.0 -469.0
+  879.0 -461.0 895.0 -451.0 895.0 -451.0
+  smooth off
+endline
+
+line wall
+  669.0 -127.0
+  669.0 -127.0 763.0 -213.0 780.0 -227.0
+  797.0 -241.0 815.0 -251.0 816.0 -286.0
+  817.0 -321.0 823.0 -376.0 814.0 -397.0
+  805.0 -418.0 797.0 -443.0 767.0 -445.0
+  737.0 -447.0 707.0 -445.0 707.0 -445.0
+  smooth off
+endline
+
+line wall
+  895.0 -451.0
+  895.0 -451.0 845.0 -456.0 847.0 -414.0
+  849.0 -372.0 852.0 -320.0 869.0 -296.0
+  886.0 -272.0 903.0 -238.0 910.0 -216.0
+  917.0 -194.0 923.0 -159.0 910.0 -151.0
+  897.0 -143.0 872.0 -141.0 850.0 -149.0
+  828.0 -157.0 790.0 -171.0 770.0 -160.0
+  750.0 -149.0 702.0 -105.0 702.0 -105.0
+  smooth off
+endline
+
+point 830.0 -440.0 station -name A1@A1
+
+endscrap
+
+
