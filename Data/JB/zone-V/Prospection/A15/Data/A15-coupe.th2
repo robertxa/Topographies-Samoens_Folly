@@ -1,0 +1,61 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -552 534 236.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A15.gif 0 {}
+
+
+
+scrap SC-A15-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [306.0 -110.0 306.0 -400.0 0.0 0.0 0 -8 m]
+
+line wall -subtype invisible
+  367.0 -95.0
+  367.0 -95.0 161.0 -66.0 114.0 -86.0
+endline
+
+line wall
+  282.0 -118.0
+  282.0 -118.0 308.0 -107.0 326.0 -104.0
+  344.0 -101.0 367.0 -95.0 367.0 -95.0
+  smooth off
+endline
+
+point 288.0 103.0 label -text "<bf>A15" -scale xl
+
+point 290.0 -26.0 entrance -orientation 202.6
+
+point 73.0 -408.0 altitude -align bottom -value [-8 m]
+
+point 114.0 -86.0 altitude -align left
+
+line wall -subtype ice -outline none
+  141.0 -311.0
+  141.0 -311.0 120.0 -309.0 147.0 -275.0
+  174.0 -241.0 227.0 -127.0 249.0 -127.0
+  271.0 -127.0 310.0 -122.0 310.0 -122.0
+  smooth off
+endline
+
+line wall -subtype ice
+  133.0 -305.0
+  133.0 -305.0 154.0 -301.0 173.0 -279.0
+  192.0 -257.0 236.0 -189.0 251.0 -165.0
+  266.0 -141.0 282.0 -118.0 282.0 -118.0
+  smooth off
+endline
+
+line wall
+  114.0 -86.0
+  114.0 -86.0 135.0 -101.0 155.0 -105.0
+  175.0 -109.0 186.0 -122.0 179.0 -143.0
+  172.0 -164.0 143.0 -224.0 121.0 -247.0
+  99.0 -270.0 54.0 -307.0 54.0 -345.0
+  54.0 -383.0 55.0 -408.0 73.0 -408.0
+  91.0 -408.0 112.0 -408.0 112.0 -388.0
+  112.0 -368.0 113.0 -320.0 133.0 -305.0
+endline
+
+point 291.0 -98.0 station -name A15@A15
+
+endscrap
+
+

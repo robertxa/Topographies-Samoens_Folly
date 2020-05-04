@@ -1,0 +1,58 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -449.0 -633.0 650 504.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A17.gif 0 {}
+
+
+
+scrap SP-A17-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [68.0 -360.0 438.0 -356.0 0.0 0.0 3 0.0 m]
+
+point 228.0 -319.0 snow -clip on
+
+point 255.0 -354.0 snow -clip on
+
+point 324.0 -419.0 snow -clip on
+
+point 385.0 -450.0 snow -clip on
+
+line wall -subtype ice
+  415.0 -501.0
+  415.0 -501.0 420.0 -477.0 437.0 -476.0
+  454.0 -475.0 491.0 -481.0 491.0 -481.0
+  smooth off
+endline
+
+point 120.0 -329.0 altitude -align left
+
+point -316.0 371.0 label -text "<bf>A17" -scale xl
+
+point 46.0 -52.0 entrance -orientation 149.9
+
+line wall -subtype invisible
+  283.0 -260.0
+  283.0 -260.0 148.0 -268.0 120.0 -329.0
+endline
+
+line wall
+  491.0 -481.0
+  491.0 -481.0 388.0 -421.0 362.0 -407.0
+  336.0 -393.0 272.0 -326.0 265.0 -314.0
+  258.0 -302.0 266.0 -285.0 269.0 -279.0
+  272.0 -273.0 283.0 -260.0 283.0 -260.0
+  smooth off
+endline
+
+line wall
+  120.0 -329.0
+  120.0 -329.0 161.0 -319.0 176.0 -326.0
+  191.0 -333.0 193.0 -339.0 227.0 -369.0
+  261.0 -399.0 293.0 -425.0 318.0 -446.0
+  343.0 -467.0 415.0 -501.0 415.0 -501.0
+  smooth off
+endline
+
+point 202.0 -305.0 station -name A17@A17
+
+endscrap
+
+

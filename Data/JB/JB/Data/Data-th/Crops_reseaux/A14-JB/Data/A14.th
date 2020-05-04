@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey A14 -title "A14"
+
+	centerline
+
+		cs lat-long
+		fix A14    46.1046000 6.7888333  2047
+		station A14 "A14" entrance #continuation explored 10m ENTREE JB
+
+	endcenterline
+
+endsurvey

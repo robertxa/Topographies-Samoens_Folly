@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey A17 -title "A17"
+
+	centerline
+
+		cs lat-long
+		fix A17    46.1047500 6.7892167  2059
+		station A17 "A17" entrance continuation explored 03m
+		
+		explo-date 1967.08.06
+
+	endcenterline
+
+endsurvey

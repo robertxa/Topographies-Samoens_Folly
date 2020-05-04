@@ -1,0 +1,50 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -512.0 -407 714.0 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A19.gif 0 {}
+
+
+
+scrap SP-A19-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [361.0 -253.0 443.0 -168.0 0.0 0.0 2 0.0 m]
+
+point 581.0 -124.0 narrow-end
+
+point 43.0 -46.0 altitude -align top
+
+point -379.0 -68.0 label -text "<bf>A19" -scale xl
+
+point -115.0 -101.0 entrance -orientation 90.0
+
+line wall -subtype invisible
+  43.0 -46.0
+  43.0 -46.0 14.0 -107.0 32.0 -147.0
+endline
+
+line wall
+  462.0 -115.0
+  462.0 -115.0 436.0 -109.0 414.0 -109.0
+  392.0 -109.0 316.0 -101.0 286.0 -103.0
+  256.0 -105.0 183.0 -103.0 161.0 -101.0
+  139.0 -99.0 129.0 -93.0 114.0 -93.0
+  99.0 -93.0 71.0 -99.0 55.0 -88.0
+  39.0 -77.0 43.0 -46.0 43.0 -46.0
+  smooth off
+endline
+
+line wall
+  32.0 -147.0
+  32.0 -147.0 52.0 -124.0 71.0 -131.0
+  90.0 -138.0 122.0 -147.0 147.0 -147.0
+  172.0 -147.0 202.0 -137.0 223.0 -138.0
+  244.0 -139.0 273.0 -144.0 291.0 -138.0
+  309.0 -132.0 353.0 -126.0 371.0 -126.0
+  389.0 -126.0 396.0 -121.0 412.0 -121.0
+  428.0 -121.0 457.0 -124.0 457.0 -124.0
+  smooth off
+endline
+
+point 52.0 -106.0 station -name A19@A19
+
+endscrap
+
+

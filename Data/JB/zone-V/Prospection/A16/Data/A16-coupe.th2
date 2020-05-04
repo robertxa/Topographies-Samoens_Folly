@@ -1,0 +1,48 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -543 546 242.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A16.gif 0 {}
+
+
+
+scrap SC-A16-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [264.0 -189.0 382.0 -189.0 0.0 0.0 2 0.0 m]
+
+point 227.0 -349.0 altitude -align left -value [-4 m]
+
+point 80.0 -110.0 altitude -align left
+
+point 66.0 109.0 label -text "<bf>A16" -scale xl
+
+point 101.0 -40.0 entrance -orientation 161.0
+
+point 234.0 -409.0 narrow-end
+
+line wall -subtype invisible
+  301.0 -86.0
+  301.0 -86.0 96.0 -83.0 80.0 -110.0
+endline
+
+line wall
+  238.0 -352.0
+  238.0 -352.0 237.0 -334.0 237.0 -307.0
+  237.0 -280.0 237.0 -254.0 237.0 -227.0
+  237.0 -200.0 229.0 -153.0 253.0 -131.0
+  277.0 -109.0 301.0 -86.0 301.0 -86.0
+  smooth off
+endline
+
+line wall
+  80.0 -110.0
+  80.0 -110.0 97.0 -135.0 97.0 -149.0
+  97.0 -163.0 98.0 -196.0 120.0 -196.0
+  142.0 -196.0 175.0 -192.0 187.0 -202.0
+  199.0 -212.0 212.0 -225.0 217.0 -259.0
+  222.0 -293.0 227.0 -349.0 227.0 -349.0
+  smooth off
+endline
+
+point 91.0 -105.0 station -name A16@A16
+
+endscrap
+
+

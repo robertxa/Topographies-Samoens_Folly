@@ -1,0 +1,70 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -189.0 -482 781 251.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A11.gif 0 {}
+
+
+
+scrap SP-A11-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [494.0 -228.0 611.0 -227.0 0.0 0.0 2 0.0 m]
+
+point 34.0 -302.0 altitude -align left -value [-6 m]
+
+point 610.0 -95.0 altitude -align bottom-right
+
+line wall -outline none -clip off
+  75.0 -216.0
+  75.0 -216.0 79.0 -175.0 107.0 -156.0
+  135.0 -137.0 163.0 -119.0 214.0 -123.0
+  265.0 -127.0 274.0 -128.0 298.0 -128.0
+  322.0 -128.0 341.0 -124.0 351.0 -128.0
+  361.0 -132.0 361.0 -133.0 361.0 -133.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  610.0 -95.0
+  610.0 -95.0 480.0 -107.0 432.0 -119.0
+  384.0 -131.0 361.0 -133.0 361.0 -133.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  75.0 -216.0
+  75.0 -216.0 36.0 -262.0 36.0 -279.0
+  36.0 -296.0 34.0 -302.0 34.0 -302.0
+  smooth off
+endline
+
+line wall
+  361.0 -133.0
+  361.0 -133.0 395.0 -150.0 380.0 -171.0
+  365.0 -192.0 361.0 -211.0 335.0 -221.0
+  309.0 -231.0 267.0 -222.0 220.0 -225.0
+  173.0 -228.0 171.0 -219.0 144.0 -222.0
+  117.0 -225.0 103.0 -237.0 93.0 -232.0
+  83.0 -227.0 75.0 -221.0 75.0 -216.0
+endline
+
+line wall
+  34.0 -302.0
+  34.0 -302.0 52.0 -280.0 94.0 -272.0
+  136.0 -264.0 190.0 -266.0 233.0 -266.0
+  276.0 -266.0 306.0 -264.0 335.0 -256.0
+  364.0 -248.0 392.0 -256.0 418.0 -225.0
+  444.0 -194.0 452.0 -164.0 486.0 -145.0
+  520.0 -126.0 555.0 -111.0 573.0 -106.0
+  591.0 -101.0 610.0 -95.0 610.0 -95.0
+  smooth off
+endline
+
+point 197.0 118.0 label -text "<bf>A11" -scale xl
+
+point -56.0 -208.0 entrance -orientation 113.9
+
+point 482.0 -13.0 entrance -orientation 209.7
+
+point 487.0 -119.0 station -name A11@A11
+
+endscrap
+
+

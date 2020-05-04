@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey A18 -title "A18"
+
+	centerline
+
+		cs lat-long
+		fix A18    46.1047667 6.7894167  2067
+		station A18 "A18" entrance continuation explored 05m
+		
+		explo-date 1967.08.06
+
+	endcenterline
+
+endsurvey

@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey A11 -title "A11"
+
+	centerline
+
+		cs lat-long
+
+		fix A11    46.1045000 6.7886333  2048
+		station A11 "A11" entrance continuation explored 10m
+
+	endcenterline
+
+endsurvey

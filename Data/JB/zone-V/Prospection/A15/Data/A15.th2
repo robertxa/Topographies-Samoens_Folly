@@ -1,0 +1,32 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -140.0 -552 534 256.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A15.gif 0 {}
+
+
+
+scrap SP-A15-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [306.0 -110.0 306.0 -400.0 0.0 0.0 0 -8 m]
+
+point 237.0 -114.0 altitude -align bottom-left
+
+point -23.0 252.0 label -text "<bf>A15" -scale xl
+
+point 127.0 56.0 entrance -orientation 142.9
+
+point 256.0 -92.0 snow
+
+line wall -close on -subtype pit
+  205.0 -26.0
+  205.0 -26.0 178.0 -28.0 180.0 -51.0
+  182.0 -74.0 208.0 -100.0 237.0 -114.0
+  266.0 -128.0 285.0 -121.0 296.0 -113.0
+  307.0 -105.0 303.0 -83.0 280.0 -69.0
+  257.0 -55.0 205.0 -26.0 205.0 -26.0
+  smooth off
+endline
+
+point 284.0 -99.0 station -name A15@A15
+
+endscrap
+
+

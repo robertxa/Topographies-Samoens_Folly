@@ -1,0 +1,53 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -172.0 -739 1001.0 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A12.gif 0 {}
+
+
+
+scrap SP-A12-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [420.0 -239.0 477.0 -133.0 0.0 0.0 -2 0.0 m]
+
+line wall
+  367.0 -475.0
+  367.0 -475.0 339.0 -488.0 301.0 -488.0
+  263.0 -488.0 198.0 -489.0 170.0 -490.0
+  142.0 -491.0 125.0 -491.0 114.0 -491.0
+  103.0 -491.0 92.0 -491.0 92.0 -491.0
+  smooth off
+endline
+
+point 999.0 -512.0 label -text "<bf>A12" -scale xl
+
+point 626.0 -497.0 entrance -orientation 269.4
+
+point 457.0 -442.0 altitude -align top
+
+point 93.0 -517.0 altitude -align bottom-left -value [-6 m]
+
+point -39.0 -513.0 narrow-end
+
+line wall -subtype pit
+  381.0 -509.0
+  381.0 -509.0 415.0 -530.0 441.0 -531.0
+  467.0 -532.0 483.0 -540.0 484.0 -528.0
+  485.0 -516.0 496.0 -486.0 491.0 -471.0
+  486.0 -456.0 481.0 -438.0 457.0 -442.0
+  433.0 -446.0 394.0 -460.0 385.0 -464.0
+  376.0 -468.0 367.0 -475.0 367.0 -475.0
+  smooth off
+endline
+
+line wall
+  93.0 -517.0
+  93.0 -517.0 203.0 -518.0 239.0 -516.0
+  275.0 -514.0 287.0 -518.0 306.0 -514.0
+  325.0 -510.0 354.0 -508.0 362.0 -508.0
+  370.0 -508.0 381.0 -509.0 381.0 -509.0
+  smooth off
+endline
+
+point 485.0 -491.0 station -name A12@A12
+
+endscrap
+
+

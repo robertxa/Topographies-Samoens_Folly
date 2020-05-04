@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey A17 -title "A17"
+	input Data/A17.th
+
+	# pour le plan
+	input Data/A17.th2
+	# Pour la coupe et le plan
+	input Data/A17-coupe.th2
+
+	input A17-maps.th
+endsurvey
