@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey A3 -title "A3"
+
+	centerline
+
+		cs lat-long
+
+		fix A3    46.1035167 6.7856000  1978
+		station A3 "A3" entrance continuation explored 20m
+
+	endcenterline
+
+endsurvey

@@ -1,14 +1,16 @@
-encoding  utf-8
+encoding utf-8
 
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-A26-plan-tot -title "A26"
-	SP-A26-1
-endmap
+survey A2 -title "A2"
+	input Data/A2.th
 
-map MC-A26-coupe-tot -title "A26"
-	SC-A26-1
-endmap
-   
+	# pour le plan
+	input Data/A2.th2
+	# Pour la coupe et le plan
+	input Data/A2-coupe.th2
+
+	input A2-maps.th
+endsurvey

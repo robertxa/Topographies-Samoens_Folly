@@ -1,0 +1,63 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -884.0 1603 140.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A3.gif 0 {}
+
+
+
+scrap SP-A3-1 -projection plan -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [1116.0 -673.0 329.0 -743.0 0.0 0.0 20 0.0 m]
+
+line wall -subtype invisible
+  915.0 -522.0
+  915.0 -522.0 985.0 -574.0 1037.0 -568.0
+endline
+
+line wall
+  1114.0 -111.0
+  1114.0 -111.0 1110.0 -166.0 1095.0 -185.0
+  1080.0 -204.0 1059.0 -257.0 1043.0 -280.0
+  1027.0 -303.0 1014.0 -347.0 1011.0 -381.0
+  1008.0 -415.0 996.0 -464.0 980.0 -486.0
+  964.0 -508.0 960.0 -516.0 946.0 -519.0
+  932.0 -522.0 915.0 -522.0 915.0 -522.0
+  smooth off
+endline
+
+point 828.0 -751.0 label -text "<bf>A3" -scale xl
+
+point 965.0 -605.0 entrance -orientation 16.2
+
+line gradient
+  1093.0 -220.0
+  997.0 -495.0
+endline
+
+point 1114.0 -111.0 altitude -align left -value [+17 m]
+
+point 1037.0 -568.0 altitude -align right
+
+point 1159.0 -43.0 continuation -attr Code D -attr Cavite A3 -text "Galerie remontante, terminée sur étroiture, rejoint très probablement le lapiaz susjacent"
+
+point 1228.0 -114.0 narrow-end
+
+line wall -subtype invisible
+  1168.0 -114.0
+  1168.0 -114.0 1123.0 -97.0 1114.0 -111.0
+endline
+
+line wall
+  1037.0 -568.0
+  1037.0 -568.0 1021.0 -540.0 1021.0 -517.0
+  1021.0 -494.0 1016.0 -436.0 1034.0 -423.0
+  1052.0 -410.0 1046.0 -379.0 1062.0 -347.0
+  1078.0 -315.0 1103.0 -231.0 1110.0 -206.0
+  1117.0 -181.0 1103.0 -176.0 1119.0 -157.0
+  1135.0 -138.0 1168.0 -114.0 1168.0 -114.0
+  smooth off
+endline
+
+point 990.0 -542.0 station -name A3@A3
+
+endscrap
+
+

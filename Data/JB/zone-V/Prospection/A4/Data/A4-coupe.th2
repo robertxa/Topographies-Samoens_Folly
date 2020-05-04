@@ -1,0 +1,64 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -845 965 159.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} A4.gif 0 {}
+
+
+
+scrap SC-A4-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [66.0 -75.0 67.0 -443.0 0.0 0.0 0 -30 m]
+
+line water-flow
+  319.0 -429.0
+  319.0 -429.0 639.0 -465.0 660.0 -469.0
+endline
+
+point 696.0 -459.0 altitude -align bottom-right -value [-30 m]
+
+point 69.0 -77.0 altitude -align bottom-left
+
+line rope
+  89.0 -59.0
+  200.0 -115.0
+  188.0 -363.0
+endline
+
+point 36.0 26.0 label -text "<bf>A4" -scale xl
+
+point 41.0 -45.0 entrance -orientation 112.5
+
+line wall
+  235.0 -105.0
+  235.0 -105.0 190.0 -87.0 165.0 -80.0
+  140.0 -73.0 105.0 -56.0 100.0 -53.0
+  95.0 -50.0 88.0 -46.0 88.0 -46.0
+  smooth off
+endline
+
+point 715.0 -340.0 narrow-end
+
+line wall -subtype presumed
+  702.0 -232.0
+  702.0 -232.0 621.0 -184.0 566.0 -179.0
+  511.0 -174.0 485.0 -172.0 424.0 -160.0
+  363.0 -148.0 307.0 -131.0 283.0 -125.0
+  259.0 -119.0 235.0 -105.0 235.0 -105.0
+  smooth off
+endline
+
+line wall
+  69.0 -77.0
+  69.0 -77.0 137.0 -90.0 139.0 -136.0
+  141.0 -182.0 142.0 -309.0 144.0 -331.0
+  146.0 -353.0 176.0 -377.0 216.0 -387.0
+  256.0 -397.0 348.0 -415.0 386.0 -414.0
+  424.0 -413.0 421.0 -422.0 448.0 -422.0
+  475.0 -422.0 518.0 -436.0 567.0 -438.0
+  616.0 -440.0 696.0 -459.0 696.0 -459.0
+  smooth off
+endline
+
+point 80.0 -68.0 station -name A4@A4
+
+endscrap
+
+

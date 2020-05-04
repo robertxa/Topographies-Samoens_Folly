@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey A26 -title "A26"
-	input Data/A26.th
+survey A4 -title "A4"
+	input Data/A4.th
 
 	# pour le plan
-	input Data/A26.th2
+	input Data/A4.th2
 	# Pour la coupe et le plan
-	input Data/A26-coupe.th2
+	input Data/A4-coupe.th2
 
-	input A26-maps.th
+	input A4-maps.th
 endsurvey
