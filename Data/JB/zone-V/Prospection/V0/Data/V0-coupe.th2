@@ -1,0 +1,77 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -940 1744 204.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} V0.gif 0 {}
+
+
+
+scrap SC-V0-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [704.0 -260.0 704.0 -668.0 0.0 0.0 0 -6.0 m]
+
+line wall -outline none -clip off
+  364.0 -236.0
+  364.0 -236.0 398.0 -218.0 422.0 -224.0
+  446.0 -230.0 472.0 -240.0 490.0 -240.0
+  508.0 -240.0 536.0 -244.0 536.0 -244.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  364.0 -236.0
+  364.0 -236.0 120.0 -196.0 36.0 -244.0
+endline
+
+line wall -subtype invisible
+  656.0 -266.0
+  656.0 -266.0 586.0 -226.0 536.0 -244.0
+endline
+
+line wall
+  536.0 -244.0
+  536.0 -244.0 548.0 -242.0 544.0 -292.0
+  540.0 -342.0 546.0 -372.0 520.0 -370.0
+  494.0 -368.0 478.0 -364.0 458.0 -366.0
+  438.0 -368.0 428.0 -388.0 408.0 -370.0
+  388.0 -352.0 370.0 -294.0 346.0 -292.0
+  322.0 -290.0 330.0 -266.0 338.0 -252.0
+  346.0 -238.0 364.0 -236.0 364.0 -236.0
+  smooth off
+endline
+
+line wall
+  762.0 -644.0
+  762.0 -644.0 704.0 -580.0 674.0 -554.0
+  644.0 -528.0 630.0 -460.0 636.0 -402.0
+  642.0 -344.0 656.0 -266.0 656.0 -266.0
+  smooth off
+endline
+
+point 414.0 66.0 label -text "<bf>V0" -scale xl
+
+point 762.0 -644.0 altitude -align right -value [-6 m]
+
+point 656.0 -266.0 altitude -align right
+
+point 624.0 -142.0 entrance -orientation 188.3
+
+point 184.0 -128.0 entrance -orientation 179.7
+
+line wall -subtype debris
+  608.0 -648.0
+  608.0 -648.0 644.0 -674.0 698.0 -666.0
+  752.0 -658.0 784.0 -690.0 762.0 -644.0
+endline
+
+line wall
+  36.0 -244.0
+  36.0 -244.0 52.0 -334.0 136.0 -344.0
+  220.0 -354.0 260.0 -336.0 310.0 -374.0
+  360.0 -412.0 418.0 -450.0 450.0 -490.0
+  482.0 -530.0 500.0 -548.0 536.0 -578.0
+  572.0 -608.0 602.0 -642.0 608.0 -648.0
+endline
+
+point 184.0 -244.0 station -name V0@V0
+
+endscrap
+
+

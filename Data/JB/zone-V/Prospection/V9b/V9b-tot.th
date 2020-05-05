@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey D37 -title "D37"
-	input Data/D37.th
+survey V9b -title "V9b"
+	input Data/V9b.th
 
 	# pour le plan
-	input Data/D37.th2
+	input Data/V9b.th2
 	# Pour la coupe et le plan
-	input Data/D37-coupe.th2
+	#input Data/V9b-coupe.th2
 
-	input D37-maps.th
+	input V9b-maps.th
 endsurvey

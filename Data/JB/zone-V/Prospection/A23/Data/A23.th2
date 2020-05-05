@@ -1,0 +1,51 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -131.0 1269.0 1440.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap SP-A23-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [504.0 376.0 887.0 376.0 0.0 0.0 4 0.0 m]
+
+point 652.0 629.0 altitude -align left
+
+point 244.0 1443.0 label -text "<bf>A23" -scale xl
+
+point 547.0 979.0 entrance -orientation 146.4
+
+point 1198.0 575.0 air-draught -orientation 330.6 -subtype summer
+
+point 1069.0 274.0 narrow-end
+
+line wall -subtype invisible
+  870.0 725.0
+  870.0 725.0 776.0 716.0 743.0 695.0
+  710.0 674.0 652.0 629.0 652.0 629.0
+  smooth off
+endline
+
+line wall
+  932.0 455.0
+  932.0 455.0 892.0 516.0 879.0 526.0
+  866.0 536.0 837.0 567.0 834.0 579.0
+  831.0 591.0 830.0 598.0 831.0 619.0
+  832.0 640.0 818.0 680.0 825.0 687.0
+  832.0 694.0 870.0 725.0 870.0 725.0
+  smooth off
+endline
+
+line wall
+  652.0 629.0
+  652.0 629.0 687.0 643.0 701.0 651.0
+  715.0 659.0 732.0 663.0 740.0 650.0
+  748.0 637.0 752.0 623.0 765.0 613.0
+  778.0 603.0 789.0 589.0 807.0 572.0
+  825.0 555.0 854.0 529.0 869.0 513.0
+  884.0 497.0 925.0 444.0 925.0 444.0
+  smooth off
+endline
+
+point 778.0 679.0 station -name A23@A23
+
+endscrap
+
+

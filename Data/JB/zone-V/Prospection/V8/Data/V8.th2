@@ -1,0 +1,112 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -1150 834 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} V8.gif 0 {}
+
+
+
+scrap SP-V8-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [164.0 -976.0 308.0 -756.0 0.0 0.0 10 0.0 m]
+
+line wall
+  582.0 -870.0
+  599.0 -858.0 615.0 -849.0 607.0 -822.0
+  599.0 -795.0 584.0 -746.0 558.0 -748.0
+  532.0 -750.0 503.0 -744.0 486.0 -767.0
+  469.0 -790.0 472.0 -794.0 439.0 -798.0
+  406.0 -802.0 378.0 -794.0 357.0 -797.0
+  336.0 -800.0 310.0 -800.0 294.0 -802.0
+  278.0 -804.0 246.0 -800.0 231.0 -801.0
+  216.0 -802.0 198.0 -800.0 187.0 -794.0
+  176.0 -788.0 172.0 -769.0 172.0 -769.0
+  smooth off
+endline
+
+point 255.0 -1040.0 continuation -attr Code D -attr Cavite V8 -attr CA "Cournat d'air soufflant en été" -text "Puits à descendre après étroiture à élargir ; courant d'air"
+
+line wall
+  175.0 -849.0
+  175.0 -849.0 199.0 -830.0 224.0 -834.0
+  249.0 -838.0 257.0 -830.0 273.0 -830.0
+  289.0 -830.0 300.0 -834.0 332.0 -832.0
+  364.0 -830.0 397.0 -827.0 424.0 -825.0
+  451.0 -823.0 463.0 -812.0 463.0 -830.0
+  463.0 -848.0 437.0 -879.0 420.0 -891.0
+  403.0 -903.0 396.0 -939.0 385.0 -939.0
+  374.0 -939.0 358.0 -931.0 346.0 -939.0
+  334.0 -947.0 317.0 -964.0 318.0 -977.0
+endline
+
+line wall
+  331.0 -992.0
+  332.0 -1005.0 353.0 -987.0 362.0 -986.0
+  371.0 -985.0 380.0 -960.0 394.0 -948.0
+  408.0 -936.0 430.0 -910.0 450.0 -898.0
+  470.0 -886.0 497.0 -870.0 514.0 -868.0
+  531.0 -866.0 568.29 -873.43 582.0 -870.0
+endline
+
+point 172.0 -769.0 altitude -align top
+
+point -120.0 -815.0 label -text "<bf>V8" -scale xl
+
+point 57.0 -831.0 entrance -orientation 87.1
+
+point 468.0 -1033.0 height -value [-4 m]
+
+point 485.0 -674.0 height -value [-5 m]
+
+point 455.0 -880.0 snow -clip on
+
+point 508.0 -845.0 snow -clip on
+
+point 563.0 -783.0 snow -clip on
+
+point 556.0 -815.0 snow -clip on
+
+point 527.0 -812.0 snow -clip on
+
+point 595.0 -840.0 snow -clip on
+
+point 547.0 -848.0 snow -clip on
+
+point 488.0 -824.0 snow -clip on
+
+point 534.0 -773.0 snow -clip on
+
+point 505.0 -796.0 snow -clip on
+
+line pit
+  403.0 -972.0
+  403.0 -972.0 400.0 -951.0 376.0 -933.0
+endline
+
+line pit
+  467.0 -776.0
+  467.0 -776.0 451.0 -807.0 451.0 -835.0
+endline
+
+line pit
+  410.0 -784.0
+  410.0 -784.0 402.0 -804.0 403.0 -831.0
+endline
+
+line pit
+  361.0 -776.0
+  361.0 -776.0 348.0 -820.0 353.0 -846.0
+endline
+
+line pit
+  300.0 -782.0
+  300.0 -782.0 293.0 -825.0 305.0 -845.0
+endline
+
+line wall -subtype invisible
+  172.0 -769.0
+  172.0 -769.0 160.0 -829.0 175.0 -849.0
+endline
+
+point 172.0 -823.0 station -name V8@V8
+
+endscrap
+
+

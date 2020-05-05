@@ -1,0 +1,30 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey V8 -title "V8"
+
+	centerline
+
+		cs lat-long
+
+		fix       V8       46.105183     006.79041      2094
+		station   V8       "V8" entrance continuation explored 60m
+
+		explo-date 1976.08.12
+			explo-team "Bernard Lips"
+			explo-team "Jacques Aubert"
+		explo-date 2005.09.08
+			explo-team "Xavier Robert"
+			explo-team "Stéphane Lips"
+			explo-team "Estelle Forbach"
+		explo-date 2005.10.27
+			explo-team "Stéphane Lips"
+			explo-team "Estelle Forbach"
+			explo-team "Lucie Leplat"
+
+	endcenterline
+
+endsurvey

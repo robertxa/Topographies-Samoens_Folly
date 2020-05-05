@@ -1,0 +1,81 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -420.0 -756.0 1552.0 506.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} V9a-c.gif 0 {}
+
+
+
+scrap SP-V9a-c-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -681 1266 -681 0.0 0.0 35.407599999999995 0.0 m]
+
+line wall -close on -outline none -subtype pit
+  796.0 -206.0
+  796.0 -206.0 758.0 -184.0 746.0 -202.0
+  734.0 -220.0 718.0 -242.0 724.0 -266.0
+  730.0 -290.0 770.0 -274.0 784.0 -250.0
+  798.0 -226.0 796.0 -206.0 796.0 -206.0
+  smooth off
+endline
+
+line wall
+  1010.0 -448.0
+  1010.0 -448.0 1068.0 -280.0 1006.0 -210.0
+endline
+
+line wall
+  1006.0 -210.0
+  1006.0 -210.0 1012.0 -278.0 976.0 -270.0
+  940.0 -262.0 938.0 -258.0 896.0 -236.0
+  854.0 -214.0 820.0 -210.0 772.0 -178.0
+  724.0 -146.0 586.0 -136.0 516.0 -124.0
+  446.0 -112.0 374.0 -118.0 350.0 -88.0
+endline
+
+line wall -close on -subtype ice -outline none
+  174.0 -36.0
+  174.0 -36.0 348.0 -88.0 348.0 -120.0
+  348.0 -152.0 328.0 -208.0 274.0 -202.0
+  220.0 -196.0 198.0 -198.0 158.0 -170.0
+  118.0 -142.0 106.0 -68.0 128.0 -52.0
+  150.0 -36.0 174.0 -36.0 174.0 -36.0
+  smooth off
+endline
+
+point 1498.0 -626.0 label -text "<bf>V9a" -scale xl
+
+point -264.0 274.0 label -text "<bf>V9c" -scale xl
+
+point 648.0 -416.0 entrance -orientation 31.1
+
+point 1244.0 -378.0 entrance -orientation 282.6
+
+point -60.0 54.0 entrance -orientation 120.0
+
+line wall -subtype pit
+  350.0 -88.0
+  326.0 -58.0 278.0 -20.0 222.0 -20.0
+  166.0 -20.0 90.0 -2.0 94.0 -56.0
+  98.0 -110.0 92.0 -184.0 136.0 -200.0
+  180.0 -216.0 302.0 -220.0 342.0 -216.0
+endline
+
+point 1010.0 -448.0 altitude -align bottom
+
+point 136.0 -200.0 altitude -align bottom
+
+line wall
+  342.0 -216.0
+  382.0 -212.0 436.0 -230.0 494.0 -244.0
+  552.0 -258.0 626.0 -272.0 682.0 -284.0
+  738.0 -296.0 746.0 -324.0 800.0 -342.0
+  854.0 -360.0 898.0 -362.0 934.0 -378.0
+  970.0 -394.0 1010.0 -448.0 1010.0 -448.0
+  smooth off
+endline
+
+point 154.0 -72.0 station -name V9c@V9a-c
+
+point 992.0 -324.0 station -name V9a@V9a-c
+
+endscrap
+
+

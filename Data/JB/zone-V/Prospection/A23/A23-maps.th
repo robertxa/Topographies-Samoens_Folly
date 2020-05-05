@@ -1,16 +1,14 @@
-encoding utf-8
+encoding  utf-8
 
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey D37 -title "D37"
-	input Data/D37.th
+map MP-A23-plan-tot -title "A23"
+	SP-A23-1
+endmap
 
-	# pour le plan
-	input Data/D37.th2
-	# Pour la coupe et le plan
-	input Data/D37-coupe.th2
-
-	input D37-maps.th
-endsurvey
+#map MC-A23-coupe-tot -title "A23"
+#	SC-A23-1
+#endmap
+   

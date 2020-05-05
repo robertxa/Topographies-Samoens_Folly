@@ -4,15 +4,11 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey zoneV -title "Zone V"
+map MP-V0-plan-tot -title "V0"
+	SP-V0-1
+endmap
 
-	# Pour importer les différentes données de différents fichiers topos : 
-
-	input V4ter/V4ter-tot.th
+map MC-V0-coupe-tot -title "V0"
+	SC-V0-1
+endmap
    
-	input Prospection/prospection.th
-   
-	#input V-tot.th
-	input V-maps.th   
-
-endsurvey

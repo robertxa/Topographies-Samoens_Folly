@@ -1,14 +1,16 @@
-encoding  utf-8
+encoding utf-8
 
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-D37-plan-tot -title "D37"
-	SP-D37-1
-endmap
+survey V9a-c -title "V9a-c"
+	input Data/V9a-c.th
 
-map MC-D37-coupe-tot -title "D37"
-	SC-D37-1
-endmap
-   
+	# pour le plan
+	input Data/V9a-c.th2
+	# Pour la coupe et le plan
+	input Data/V9a-c-coupe.th2
+
+	input V9a-c-maps.th
+endsurvey

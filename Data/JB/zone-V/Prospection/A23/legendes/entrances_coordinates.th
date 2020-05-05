@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-layout Entrances_coords_JBCHpra
+layout Entrances_coords_AApra
 # Layout where we define the different variables that contain the text with 
 # the entrance coordinates we want to print in the header.
 # We need one variable per entrance.
@@ -14,17 +14,16 @@ layout Entrances_coords_JBCHpra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationJBCHpra{V9a    --  Lat. : 46.104933 N ; Long. : 6.79018 E ; Alt. : 2089 m}
-		\def\thlocationJBCHpra{V9c    --  Lat. : 46.104833 N ; Long. : 6.79031 E ; Alt. : 2095 m}
+		\def\thlocationAApra{A23    --  Lat. : 46.104083 N ; Long. : 6.78723 E ; Alt. : 2019 m}
 	endcode 
 	
 endlayout
 
 
-layout Coords_Header_JBCHpra
+layout Coords_Header_AApra
 # Layout that set the presentation for the entrance coordinates.
 	
-	copy Entrances_coords_JBCHpra
+	copy Entrances_coords_AApra
 	# it calls the layout above Entrances_coords where we defined the different 
 	# variables that contain the text with 
 	# the entrance coordinates we want to print in the header.
@@ -42,8 +41,8 @@ layout Coords_Header_JBCHpra
 			\edef\tmp{\thjunk} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationJBCHpra} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm \ss\thlocationJBCHpra\vss}	% The first one should be without hskip
+			\edef\tmp{\thlocationAApra} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationAApra\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode
