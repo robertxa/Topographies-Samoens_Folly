@@ -144,7 +144,7 @@ endlayout
 	select MP-B15-plan-tot@B15
 	select MC-B15-coupe-tot@B15
 	  
- export map -o Outputs/B15-plan.pdf -layout my_layout
+export map -o Outputs/B15-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/B15-coupe.pdf
 #export map -o Outputs/B15-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/B15-coupe-Continuations.pdf

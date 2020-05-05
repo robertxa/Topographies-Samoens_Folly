@@ -1,0 +1,63 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -659 719 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B2.gif 0 {}
+
+
+
+scrap SP-B2-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [44.0 -413.0 131.0 -547.0 0.0 0.0 10 0.0 m]
+
+line wall
+  189.0 -286.0
+  189.0 -286.0 179.0 -294.0 163.0 -292.0
+  147.0 -290.0 142.0 -289.0 131.0 -300.0
+  120.0 -311.0 123.0 -313.0 104.0 -314.0
+  85.0 -315.0 76.0 -307.0 69.0 -322.0
+  62.0 -337.0 52.0 -344.0 52.0 -344.0
+  smooth off
+endline
+
+line wall
+  95.0 -380.0
+  95.0 -380.0 123.0 -374.0 131.0 -364.0
+  139.0 -354.0 140.0 -339.0 132.0 -333.0
+  124.0 -327.0 121.0 -322.0 143.0 -320.0
+  165.0 -318.0 165.0 -315.0 174.0 -307.0
+  183.0 -299.0 194.0 -296.0 194.0 -296.0
+  smooth off
+endline
+
+point 46.0 -367.0 altitude -align left
+
+point 246.0 -318.0 narrow-end
+
+line pit -reverse on
+  144.0 -336.0
+  144.0 -336.0 103.0 -316.0 89.0 -296.0
+endline
+
+line overhang
+  95.0 -394.0
+  95.0 -394.0 84.0 -346.0 64.0 -346.0
+  44.0 -346.0 26.0 -346.0 26.0 -346.0
+  smooth off
+endline
+
+point -118.0 -507.0 label -text "<bf>B2" -scale xl
+
+point -20.0 -424.0 entrance -orientation 63.2
+
+point 189.0 -286.0 altitude -align top -value [-10 m]
+
+line wall -subtype pit
+  52.0 -344.0
+  52.0 -344.0 37.0 -388.0 61.0 -388.0
+  85.0 -388.0 95.0 -380.0 95.0 -380.0
+  smooth off
+endline
+
+point 56.0 -372.0 station -name B2@B2
+
+endscrap
+
+

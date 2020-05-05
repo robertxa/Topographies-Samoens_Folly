@@ -1,0 +1,53 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -637 434 180.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B16.gif 0 {}
+
+
+
+scrap SC-B16-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [278.0 -105.0 278.0 -449.0 0.0 0.0 0 -8.0 m]
+
+point 106.0 -457.0 altitude -align right -value [-8 m]
+
+point 92.0 -97.0 altitude -align left
+
+point 239.0 -38.0 entrance -orientation 196.5
+
+point 159.0 47.0 label -text "<bf>B16" -scale xl
+
+point 98.0 -496.0 narrow-end
+
+line wall -subtype invisible
+  282.0 -99.0
+  282.0 -99.0 194.0 -75.0 157.0 -78.0
+  120.0 -81.0 92.0 -97.0 92.0 -97.0
+  smooth off
+endline
+
+line wall
+  106.0 -457.0
+  106.0 -457.0 108.0 -404.0 124.0 -384.0
+  140.0 -364.0 131.0 -355.0 143.0 -336.0
+  155.0 -317.0 160.0 -302.0 181.0 -279.0
+  202.0 -256.0 205.0 -228.0 222.0 -206.0
+  239.0 -184.0 230.0 -163.0 236.0 -146.0
+  242.0 -129.0 243.0 -108.0 257.0 -107.0
+  271.0 -106.0 282.0 -99.0 282.0 -99.0
+  smooth off
+endline
+
+line wall
+  92.0 -97.0
+  92.0 -97.0 105.0 -103.0 119.0 -111.0
+  133.0 -119.0 145.0 -129.0 130.0 -145.0
+  115.0 -161.0 93.0 -182.0 93.0 -204.0
+  93.0 -226.0 87.0 -327.0 89.0 -344.0
+  91.0 -361.0 90.0 -456.0 90.0 -456.0
+  smooth off
+endline
+
+point 236.0 -105.0 station -name B16@B16
+
+endscrap
+
+

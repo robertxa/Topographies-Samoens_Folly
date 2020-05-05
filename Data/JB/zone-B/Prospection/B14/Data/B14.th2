@@ -1,0 +1,61 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -734.0 1197 393.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B14.gif 0 {}
+
+
+
+scrap SP-B14-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [748.0 -546.0 889.0 -700.0 0.0 0.0 10 0.0 m]
+
+line wall -subtype invisible
+  1004.0 -16.0
+  1004.0 -16.0 992.0 17.0 938.0 -17.0
+  smooth off
+endline
+
+point 1059.0 -265.0 air-draught -orientation 22.1 -scale xs -subtype summer
+
+point 1041.0 260.0 label -text "<bf>B14" -scale xl
+
+point 975.0 65.0 entrance -orientation 184.6
+
+point 834.0 -528.0 altitude -align right -value [-10 m]
+
+point 1004.0 -16.0 altitude -align right
+
+point 819.0 -601.0 narrow-end
+
+line wall
+  938.0 -17.0
+  938.0 -17.0 955.0 -27.0 950.0 -35.0
+  945.0 -43.0 938.0 -38.0 938.0 -66.0
+  938.0 -94.0 921.0 -144.0 904.0 -182.0
+  887.0 -220.0 889.0 -225.0 874.0 -250.0
+  859.0 -275.0 843.0 -274.0 838.0 -302.0
+  833.0 -330.0 831.0 -329.0 809.0 -359.0
+  787.0 -389.0 767.0 -369.0 767.0 -407.0
+  767.0 -445.0 754.0 -482.0 773.0 -500.0
+  792.0 -518.0 775.0 -511.0 805.0 -526.0
+  smooth off
+endline
+
+line wall
+  834.0 -528.0
+  852.0 -510.0 858.0 -495.0 865.0 -473.0
+  872.0 -451.0 867.0 -426.0 866.0 -401.0
+  865.0 -376.0 875.0 -342.0 885.0 -339.0
+  895.0 -336.0 891.0 -341.0 906.0 -354.0
+  921.0 -367.0 930.0 -390.0 938.0 -377.0
+  946.0 -364.0 936.0 -332.0 927.0 -315.0
+  918.0 -298.0 916.0 -254.0 927.0 -219.0
+  938.0 -184.0 957.0 -145.0 963.0 -125.0
+  969.0 -105.0 957.0 -84.0 968.0 -63.0
+  979.0 -42.0 1004.0 -16.0 1004.0 -16.0
+  smooth off
+endline
+
+point 972.0 -20.0 station -name B14@B14
+
+endscrap
+
+

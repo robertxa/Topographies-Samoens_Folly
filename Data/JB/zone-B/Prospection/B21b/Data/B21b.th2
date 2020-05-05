@@ -1,0 +1,40 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -700 962 128
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B21b.gif 0 {}
+
+
+
+scrap SP-B21b-1 -projection plan -author 1980 "Christophe Ohl" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [196.0 -252.0 433.0 -252.0 0.0 0.0 20 0.0 m]
+
+point 655.5 28.0 label -text "<bf>B21b" -scale xl
+
+point 579.0 -30.0 entrance -orientation 180.4
+
+point 691.5 -46.5 entrance -orientation 231.4
+
+line wall -close on -subtype pit
+  584.0 -86.5
+  584.0 -86.5 570.0 -87.5 575.5 -92.0
+  581.0 -96.5 584.5 -98.0 586.0 -93.0
+  587.5 -88.0 584.0 -86.5 584.0 -86.5
+  smooth off
+endline
+
+line wall -close on -subtype pit
+  638.0 -91.5
+  638.0 -91.5 631.5 -83.0 623.5 -82.5
+  615.5 -82.0 611.0 -78.0 609.5 -85.5
+  608.0 -93.0 598.5 -101.0 608.0 -101.0
+  617.5 -101.0 620.5 -100.5 626.0 -98.5
+  631.5 -96.5 638.0 -91.5 638.0 -91.5
+  smooth off
+endline
+
+point 605.0 -148.0 height -value [-30 m]
+
+point 626.0 -88.0 station -name B21b@B21b
+
+endscrap
+
+

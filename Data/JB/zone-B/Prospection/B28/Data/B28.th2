@@ -1,0 +1,90 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -1194 1028 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B28.gif 0 {}
+
+
+
+scrap SP-B28-1 -projection plan -author 1999 "Christophe Ferry" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [146.0 -834.0 616.0 -834.0 0.0 0.0 20 0.0 m]
+
+line wall -close on -outline none -subtype ice
+  458.0 -386.0
+  458.0 -386.0 399.0 -328.0 427.0 -338.0
+  455.0 -348.0 468.0 -367.0 481.0 -380.0
+  494.0 -393.0 548.0 -435.0 531.0 -433.0
+  514.0 -431.0 491.0 -418.0 480.0 -408.0
+  469.0 -398.0 458.0 -386.0 458.0 -386.0
+  smooth off
+endline
+
+point 277.0 -614.0 label -text "<bf>B28" -scale xl
+
+point 381.0 -494.0 entrance -orientation 39.3
+
+point 562.0 -450.0 altitude -align top-right
+
+point 101.0 -120.0 altitude -align top -value [-14 m]
+
+point 46.0 -125.0 narrow-end
+
+line pit
+  301.0 -295.0
+  301.0 -295.0 345.0 -257.0 340.0 -206.0
+endline
+
+line pit -reverse on
+  144.0 -102.0
+  144.0 -102.0 167.0 -135.0 144.0 -172.0
+endline
+
+line pit
+  616.0 -461.0
+  616.0 -461.0 553.0 -466.0 559.0 -522.0
+endline
+
+point 747.0 -561.0 continuation -attr Code D -attr Cavite B28 -text "méandre étroit à élargir"
+
+line wall -close on -outline none -subtype pit
+  434.0 -326.0
+  434.0 -326.0 407.0 -308.0 400.0 -318.0
+  393.0 -328.0 401.0 -353.0 413.0 -361.0
+  425.0 -369.0 486.0 -429.0 506.0 -444.0
+  526.0 -459.0 582.0 -470.0 562.0 -450.0
+  542.0 -430.0 489.0 -369.0 478.0 -359.0
+  467.0 -349.0 434.0 -326.0 434.0 -326.0
+  smooth off
+endline
+
+line wall
+  691.0 -536.0
+  691.0 -536.0 599.0 -489.0 562.0 -450.0
+  525.0 -411.0 498.0 -373.0 478.0 -359.0
+  458.0 -345.0 434.0 -326.0 434.0 -326.0
+  smooth off
+endline
+
+line wall
+  101.0 -138.0
+  101.0 -138.0 134.0 -153.0 164.0 -169.0
+  194.0 -185.0 199.0 -188.0 254.0 -225.0
+  309.0 -262.0 331.0 -281.0 373.0 -323.0
+  415.0 -365.0 484.0 -418.0 506.0 -444.0
+  528.0 -470.0 519.0 -462.0 572.0 -497.0
+  625.0 -532.0 684.0 -551.0 684.0 -551.0
+  smooth off
+endline
+
+line wall
+  434.0 -326.0
+  434.0 -326.0 343.0 -237.0 334.0 -230.0
+  325.0 -223.0 248.0 -150.0 222.0 -147.0
+  196.0 -144.0 177.0 -135.0 153.0 -132.0
+  129.0 -129.0 101.0 -120.0 101.0 -120.0
+  smooth off
+endline
+
+point 408.0 -331.0 station -name B28@B28
+
+endscrap
+
+

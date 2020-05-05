@@ -1,0 +1,69 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -919 787.0 245.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B36.gif 0 {}
+
+
+
+scrap SP-B36-1 -projection plan -author 2005 "Michel Berbige" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [88.0 -519.0 433.0 -521.0 0.0 0.0 10 0.0 m]
+
+line wall
+  645.0 -596.0
+  645.0 -596.0 601.0 -552.0 585.0 -540.0
+  569.0 -528.0 575.0 -510.0 534.0 -485.0
+  493.0 -460.0 472.0 -453.0 438.0 -433.0
+  404.0 -413.0 393.0 -399.0 382.0 -392.0
+  371.0 -385.0 362.0 -381.0 362.0 -381.0
+  smooth off
+endline
+
+line wall
+  356.0 -387.0
+  356.0 -387.0 401.0 -426.0 436.0 -449.0
+  471.0 -472.0 558.0 -550.0 585.0 -570.0
+  612.0 -590.0 638.0 -612.0 638.0 -612.0
+  smooth off
+endline
+
+point 29.0 112.0 label -text "<bf>B36" -scale xl
+
+point 151.0 -102.0 entrance -orientation 140.3
+
+point 181.0 -211.0 altitude -align bottom-left
+
+point 638.0 -612.0 altitude -align bottom-left -value [-15 m]
+
+point 711.0 -643.0 narrow-end
+
+line wall -subtype invisible
+  262.0 -167.0
+  262.0 -167.0 221.0 -177.0 206.0 -187.0
+  191.0 -197.0 181.0 -211.0 181.0 -211.0
+  smooth off
+endline
+
+line wall
+  362.0 -381.0
+  362.0 -381.0 326.0 -355.0 324.0 -338.0
+  322.0 -321.0 325.0 -309.0 303.0 -285.0
+  281.0 -261.0 272.0 -247.0 265.0 -225.0
+  258.0 -203.0 258.0 -195.0 258.0 -188.0
+  258.0 -181.0 262.0 -167.0 262.0 -167.0
+  smooth off
+endline
+
+line wall
+  181.0 -211.0
+  181.0 -211.0 196.0 -196.0 208.0 -208.0
+  220.0 -220.0 231.0 -222.0 244.0 -246.0
+  257.0 -270.0 251.0 -265.0 272.0 -298.0
+  293.0 -331.0 315.0 -353.0 324.0 -363.0
+  333.0 -373.0 356.0 -387.0 356.0 -387.0
+  smooth off
+endline
+
+point 228.0 -187.0 station -name B36@B36
+
+endscrap
+
+

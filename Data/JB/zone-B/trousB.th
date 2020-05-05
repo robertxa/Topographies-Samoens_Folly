@@ -11,58 +11,58 @@ survey trousB -title "Cavités non topographiées de la zone B"
 
 	centerline -extend right
 cs lat-long
-fix B02 46.1045667 6.7893   2066
+#fix B02 46.1045667 6.7893   2066
 #fix B03 46.1011667 6.7884167	#--> TOPO
-fix B06 46.1041333 6.79105 2151  #ALT APPROX ! 
-fix B11 46.104 6.7916667   2161
+#fix B06 46.1041333 6.79105 2151  #ALT APPROX ! 
+#fix B11 46.104 6.7916667   2161
 fix B12 46.1046667 6.7924833 2100 #ALT APPROX ! 
-fix B13 46.1047333 6.7927 2100 #ALT APPROX !
-fix B14 46.1048 6.7930667 2100 #ALT APPROX !
-fix B15 46.10485 6.7933833 2100 #ALT APPROX !
-fix B16 46.1048 6.7933167 2100 #ALT APPROX !
+#fix B13 46.1047333 6.7927 2100 #ALT APPROX !
+#fix B14 46.1048 6.7930667 2100 #ALT APPROX !
+#fix B15 46.10485 6.7933833 2100 #ALT APPROX !
+#fix B16 46.1048 6.7933167 2100 #ALT APPROX !
 fix B17 46.1049333 6.79325 2100 #ALT APPROX !
 fix B18 46.1049333 6.7932833 2100 #ALT APPROX !
 #fix B19 46.1042167 6.79225 2100 #ALT APPROX ! #--> TOPO
-fix B20 46.1038833 6.7941833 2100 #ALT APPROX !
+#fix B20 46.1038833 6.7941833 2100 #ALT APPROX !
 #fix B21A 46.1036667 6.7945167 2100 #ALT APPROX ! #--> TOPO
-fix B21B 46.1036667 6.7947 2100 #ALT APPROX !
+#fix B21B 46.1036667 6.7947 2100 #ALT APPROX !
 #fix B22 46.1045167 6.79435 2100 #ALT APPROX ! #--> TOPO
 fix B23 46.1048 6.7937833 2100 #ALT APPROX !
 fix B24 46.10525 6.7926167 2100 #ALT APPROX !
 fix B25 46.1052833 6.7924667 2100 #ALT APPROX !
 fix B26 46.1052833 6.7922667 2100 #ALT APPROX !
-fix B27 46.1046333 6.7939833 2100 #ALT APPROX !
-fix B28 46.10475 6.7930833 2100 #ALT APPROX !
+#fix B27 46.1046333 6.7939833 2100 #ALT APPROX !
+#fix B28 46.10475 6.7930833 2100 #ALT APPROX !
 fix B29 46.1021 6.7872667 2100 #ALT APPROX !
-fix B35 46.1028833 6.78505   2028
-fix B36 46.10275 6.7850333   2034
+#fix B35 46.1028833 6.78505   2028
+#fix B36 46.10275 6.7850333   2034
 #fix B37 46.10475 6.794602 2121
 #fix B38 46.10271 6.79323 2151
 #fix B39 46.102164 6.791465 2135 
 #fix B40 46.10275 6.7850333   2034 #--> TOPO
 fix B41 46.102694 6.790972   2107
 
-station B02 "B02" entrance continuation explored 10m 
-station B06 "B06" entrance  continuation explored 15m
-station B11 "B11" entrance  continuation explored 04m
+#station B02 "B02" entrance continuation explored 10m 
+#station B06 "B06" entrance  continuation explored 15m
+#station B11 "B11" entrance  continuation explored 04m
 station B12 "B12" entrance  #continuation explored 00m
-station B13 "B13" entrance  continuation explored 30m
-station B14 "B14" entrance #continuation explored 00m
-station B15 "B15" entrance  continuation explored 10m
-station B16 "B16" entrance  continuation explored 08m
+#station B13 "B13" entrance  continuation explored 30m
+#station B14 "B14" entrance #continuation explored 00m
+#station B15 "B15" entrance  continuation explored 10m
+#station B16 "B16" entrance  continuation explored 08m
 station B17 "B17" entrance  continuation explored 07m
 station B18 "B18" entrance  continuation explored 07m
-station B20 "B20" entrance  continuation explored 15m
-station B21B "B21B" entrance  continuation explored 30m
+#station B20 "B20" entrance  continuation explored 15m
+#station B21B "B21B" entrance  continuation explored 30m
 station B23 "B23" entrance # continuation explored 00m
 station B24 "B24" entrance  continuation explored 06m
 station B25 "B25" entrance  continuation explored 10m
 station B26 "B26" entrance  continuation explored 06m
-station B27 "B27" entrance  continuation explored 30m
-station B28 "B28" entrance  continuation explored 40m
+#station B27 "B27" entrance  continuation explored 30m
+#station B28 "B28" entrance  continuation explored 40m
 station B29 "B29" entrance  continuation explored 03m
-station B35 "B35" entrance  continuation explored 40m
-station B36 "B36" entrance  continuation explored 20m
+#station B35 "B35" entrance  continuation explored 40m
+#station B36 "B36" entrance  continuation explored 20m
 #station B37 "B37" entrance  continuation explored 16m air-draught
 #station B38 "B38" entrance  continuation explored 15m air-draught
 #station B39 "B39" entrance  continuation explored 25m air-draught

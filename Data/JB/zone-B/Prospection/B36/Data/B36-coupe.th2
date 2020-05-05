@@ -1,0 +1,84 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -919 808.0 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B36.gif 0 {}
+
+
+
+scrap SC-B36-1 -projection extended -author 2005 "Michel Berbige" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [88.0 -519.0 433.0 -521.0 0.0 0.0 10 0.0 m]
+
+line wall -subtype invisible
+  308.0 -134.0
+  308.0 -134.0 197.0 -167.0 178.0 -181.0
+  159.0 -195.0 147.0 -218.0 147.0 -218.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  639.0 -441.0
+  639.0 -441.0 591.0 -400.0 562.0 -393.0
+  533.0 -386.0 522.0 -361.0 485.0 -352.0
+  448.0 -343.0 416.0 -345.0 400.0 -338.0
+endline
+
+line wall
+  400.0 -338.0
+  384.0 -331.0 366.0 -285.0 353.0 -283.0
+  340.0 -281.0 313.0 -285.0 313.0 -270.0
+  313.0 -255.0 318.0 -245.0 305.0 -241.0
+  292.0 -237.0 262.0 -218.0 273.0 -195.0
+  284.0 -172.0 289.0 -164.0 294.0 -152.0
+  299.0 -140.0 308.0 -134.0 308.0 -134.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  429.0 -370.0
+  429.0 -370.0 447.0 -373.0 465.0 -383.0
+  483.0 -393.0 466.0 -400.0 491.0 -411.0
+  516.0 -422.0 525.0 -427.0 546.0 -434.0
+  567.0 -441.0 584.0 -460.0 584.0 -460.0
+  smooth off
+  614.0 -492.0
+endline
+
+point 675.0 -486.0 narrow-end
+
+point 614.0 -492.0 altitude -align bottom-left -value [-15 m]
+
+point 311.0 -331.0 altitude -align bottom-left -value [-7 m]
+
+point 147.0 -218.0 altitude -align left
+
+point 221.0 -56.0 label -text "<bf>B36" -scale xl
+
+point 173.0 -135.0 entrance -orientation 153.9
+
+point 442.0 -283.0 dig
+
+line wall -subtype debris
+  311.0 -331.0
+  311.0 -331.0 344.0 -329.0 356.0 -334.0
+  368.0 -339.0 396.0 -353.0 396.0 -353.0
+  smooth off
+  429.0 -370.0
+endline
+
+line wall
+  147.0 -218.0
+  147.0 -218.0 173.0 -206.0 190.0 -206.0
+  207.0 -206.0 212.0 -210.0 212.0 -210.0
+  smooth off
+  212.0 -210.0 207.0 -221.0 222.0 -231.0
+  237.0 -241.0 249.0 -242.0 250.0 -259.0
+  251.0 -276.0 250.0 -293.0 267.0 -293.0
+  284.0 -293.0 283.0 -295.0 292.0 -303.0
+  301.0 -311.0 311.0 -331.0 311.0 -331.0
+  smooth off
+endline
+
+point 218.0 -194.0 station -name B36@B36
+
+endscrap
+
+

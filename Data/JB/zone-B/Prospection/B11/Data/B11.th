@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B11 -title "B11"
+
+	centerline -extend right
+		cs lat-long
+		fix B11 46.104 6.7916667   2161
+		station B11 "B11" entrance  continuation explored 04m
+  
+	endcenterline
+
+endsurvey

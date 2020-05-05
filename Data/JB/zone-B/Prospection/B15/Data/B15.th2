@@ -1,0 +1,32 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -612 780.0 172.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} B15.gif 0 {}
+
+
+
+scrap SP-B15-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [352.0 -104.0 352.0 -424.0 0.0 0.0 0 -10 m]
+
+point 132.0 -72.0 height -value [-5 m]
+
+point 329.0 -124.0 altitude -align bottom-right
+
+point 778.0 88.0 label -text "<bf>B15" -scale xl
+
+point 517.0 -33.0 entrance -orientation 244.0
+
+point 338.0 -100.0 station -name B15@B15
+
+line wall -close on -subtype pit
+  344.0 -89.0
+  344.0 -89.0 196.0 -109.0 179.0 -121.0
+  162.0 -133.0 194.0 -159.0 222.0 -151.0
+  250.0 -143.0 305.0 -129.0 329.0 -124.0
+  353.0 -119.0 382.0 -100.0 368.0 -96.0
+  354.0 -92.0 344.0 -89.0 344.0 -89.0
+  smooth off
+endline
+
+endscrap
+
+

@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B20 -title "B20"
+
+	centerline -extend right
+		cs lat-long
+		fix B20 46.1038833 6.7941833 2100 #ALT APPROX !
+		station B20 "B20" entrance  continuation explored 15m
+
+	endcenterline
+
+endsurvey

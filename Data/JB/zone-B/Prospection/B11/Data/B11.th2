@@ -1,0 +1,53 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust 0 0 1600 1200
+##XTHERION## xth_me_area_zoom_to 200
+
+
+
+scrap SP-B11-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [305.5 182.5 460.5 183.0 0.0 0.0 4 0.0 m]
+
+point 303.0 232.0 altitude -align top-left
+
+point 491.5 99.5 label -text "<bf>B11" -scale xl
+
+point 570.0 299.0 entrance -orientation 252.9
+
+point 264.5 104.0 entrance -orientation 29.7
+
+line overhang -close on
+  426.0 284.0
+  413.8 284.87 400.0 279.0 401.0 265.0
+  402.0 251.0 409.0 237.0 422.0 237.0
+  435.0 237.0 460.0 237.0 458.0 243.0
+  456.0 249.0 454.0 282.0 426.0 284.0
+endline
+
+line overhang -close on
+  356.0 209.0
+  356.0 209.0 372.0 222.0 365.0 237.0
+  358.0 252.0 340.0 259.0 331.0 255.0
+  322.0 251.0 305.0 243.0 303.0 232.0
+  301.0 221.0 305.0 204.0 310.0 201.0
+  315.0 198.0 318.0 193.0 326.0 194.0
+  334.0 195.0 356.0 209.0 356.0 209.0
+  smooth off
+endline
+
+line wall -close on
+  326.0 194.0
+  326.0 194.0 342.0 201.0 356.0 209.0
+  370.0 217.0 398.0 222.0 412.0 224.0
+  426.0 226.0 461.0 227.0 458.0 243.0
+  455.0 259.0 452.0 284.0 426.0 284.0
+  400.0 284.0 400.0 280.0 369.0 270.0
+  338.0 260.0 302.0 247.0 303.0 232.0
+  304.0 217.0 300.0 205.0 310.0 201.0
+  320.0 197.0 326.0 194.0 326.0 194.0
+  smooth off
+endline
+
+point 327.0 205.0 station -name B11@B11
+
+endscrap
+
+
