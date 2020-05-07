@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey D27 -title "D27"
+	input Data/D27.th
+
+	# pour le plan
+	input Data/D27.th2
+	# Pour la coupe et le plan
+	#input Data/D27-coupe.th2
+
+	input D27-maps.th
+endsurvey

@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D -title "D"
+
+	centerline -extend right
+		cs lat-long
+		fix       D16       46.106433     006.79383      2200 # ALT PAR DEFAULT
+		station   D16       "D16" entrance continuation explored 10m
+
+		#explo-date  ..
+		#	explo-team ""
+			
+	endcenterline
+
+endsurvey

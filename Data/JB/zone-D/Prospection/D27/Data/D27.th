@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D27 -title "D27"
+
+	centerline -extend right
+		cs lat-long
+		fix       D27       46.105666     006.79203      2130
+		station   D27       "D27" entrance continuation explored 70m
+
+		explo-date  1971.07.07
+		explo-date 1983.10.10
+			explo-team "Thierry Millet"
+		explo-date 1983.10.12
+			explo-team "Christophe Ohl"
+			
+	endcenterline
+
+endsurvey

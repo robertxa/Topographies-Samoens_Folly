@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D6 -title "D6"
+
+# Fichier contenant les positions des entrées de la zone D, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+
+		fix       D6       46.105550     006.79651      2272
+		station   D6       "D6" entrance continuation explored 10m
+
+  
+	endcenterline
+
+endsurvey

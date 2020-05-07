@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D28 -title "D28"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       D28       46.105733     006.79226      2144
+		station   D28       "D28" entrance continuation explored 17m
+
+		explo-date  2000.09.01
+			explo-team "Christophe Ferry"
+			explo-team "Josiane Lips"
+			
+	endcenterline
+
+endsurvey

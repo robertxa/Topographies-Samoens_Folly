@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D24 -title "D24"
+
+# Fichier contenant les positions des entrées de la zone D, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix       D24       46.105966     006.79270      2158
+		station   D24       "D24" entrance continuation explored 15m
+
+		explo-date  200.09.01
+			explo-team "Christophe Ferry"
+			explo-team "Josiane Lips"
+			
+	endcenterline
+
+endsurvey

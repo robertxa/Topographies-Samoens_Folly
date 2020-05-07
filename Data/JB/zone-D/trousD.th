@@ -19,8 +19,8 @@ fix       D07       46.105683     006.79661      2285
 fix       D08       46.105650     006.79710      2274
 fix       D10       46.106866     006.79558      2230
 #fix       D11       46.106866     006.79563      2235
-fix       D12       46.106583     006.79531      2226
-fix       D14       46.106583     006.79505      2219
+#fix       D12       46.106583     006.79531      2226
+#fix       D14       46.106583     006.79505      2219
 fix       D15       46.106183     006.79460      2217
 fix       D16       46.106433     006.79383      2200 # ALT PAR DEFAULT
 fix       D17       46.106366     006.79416      2192
@@ -47,7 +47,7 @@ fix       D36       46.106250     006.79490      2217
 fix       D38       46.106166     006.79485      2229
 #fix       D39       46.105933     006.79341      2193
 fix       D40       46.105983     006.79748      2298
-fix       D41       46.105533     006.79123      2121
+#fix       D41       46.105533     006.79123      2121
 fix       D50       46.106883     006.79505      2224
 fix       D51       46.105983     006.79801      2299
 fix       D60       46.106183     006.79503      2231
@@ -60,8 +60,8 @@ station   D06       "D06" entrance continuation explored 10m
 station   D07       "D07" entrance continuation explored 14m
 station   D08       "D08" entrance continuation explored 15m
 station   D10       "D10" entrance continuation explored 20m
-station   D12       "D12" entrance continuation explored 30m
-station   D14       "D14" entrance continuation explored 15m
+#station   D12       "D12" entrance continuation explored 30m
+#station   D14       "D14" entrance continuation explored 15m
 station   D15       "D15" #entrance continuation explored 00m
 station   D16       "D16" entrance continuation explored 10m
 station   D17       "D17" entrance continuation explored 10m
@@ -87,7 +87,7 @@ station   D36       "D36" entrance continuation explored 10m
 station   D38       "D38" entrance continuation explored 40m
 #station   D39       "D39" entrance continuation explored 08m
 station   D40       "D40" entrance continuation explored 15m
-station   D41       "D41" entrance continuation explored 10m
+#station   D41       "D41" entrance continuation explored 10m
 station   D50       "D50" entrance #continuation explored 00m
 station   D51       "D51" entrance # continuation explored 10m
 station   D60       "D60" entrance continuation explored 15m

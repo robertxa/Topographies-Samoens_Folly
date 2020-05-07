@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D23 -title "D23"
+
+	centerline -extend right
+		cs lat-long
+	fix       D23a      46.105783     006.79340      2200 # ALT PAR DEFAULT
+	fix       D23b      46.105833     006.79340      2200 # ALT PAR DEFAULT
+	fix       D23c      46.105950     006.79340      2200 # ALT PAR DEFAULT
+	station   D23a      "D23a" entrance #continuation explored 00m
+	station   D23b      "D23b" entrance # continuation explored 10m
+	station   D23c      "D23c" entrance # continuation explored 10m
+
+		explo-date  ..
+			explo-team ""
+			
+	endcenterline
+
+endsurvey

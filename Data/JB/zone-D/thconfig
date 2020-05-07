@@ -89,5 +89,5 @@ endlayout
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o trousDmap.xvi
 
-select MP-zoneD   
+select MP-zoneD@zoneD
 export map -o trouDplan.pdf -layout my_layout

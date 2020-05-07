@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D7 -title "D7"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       D7       46.105683     006.79661      2285
+		station   D7       "D7" entrance continuation explored 14m
+  
+	endcenterline
+
+endsurvey

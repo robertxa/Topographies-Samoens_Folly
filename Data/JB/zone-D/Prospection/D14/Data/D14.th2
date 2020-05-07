@@ -1,0 +1,51 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -256.0 -1084 837 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D14.gif 0 {}
+
+
+
+scrap SP-D14-1 -projection plan -author 1976 "Pierre Rias" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [92.0 -412.0 589.0 -168.0 0.0 0.0 11 0.0 m]
+
+point -245.0 -115.0 label -text "<bf>D14" -scale xl
+
+point -55.0 -184.0 entrance -orientation 121.0
+
+point 623.0 -349.0 altitude -align bottom-right -value [-15 m]
+
+point 128.0 -134.0 altitude -align top
+
+line wall -subtype invisible
+  128.0 -134.0
+  128.0 -134.0 26.0 -197.0 26.0 -224.0
+  26.0 -251.0 22.0 -268.0 22.0 -268.0
+  smooth off
+endline
+
+line wall
+  22.0 -268.0
+  22.0 -268.0 40.0 -246.0 100.0 -252.0
+  160.0 -258.0 214.0 -254.0 230.0 -260.0
+  246.0 -266.0 262.0 -286.0 288.0 -274.0
+  314.0 -262.0 326.0 -260.0 350.0 -264.0
+  374.0 -268.0 388.0 -282.0 416.0 -291.0
+  444.0 -300.0 467.0 -322.0 486.0 -336.0
+  505.0 -350.0 531.0 -361.0 561.0 -361.0
+  591.0 -361.0 619.0 -370.0 623.0 -349.0
+  627.0 -328.0 642.0 -301.0 613.0 -277.0
+  584.0 -253.0 537.0 -240.0 498.0 -243.0
+  459.0 -246.0 428.0 -249.0 397.0 -249.0
+  366.0 -249.0 367.0 -242.0 352.0 -243.0
+  337.0 -244.0 341.0 -245.0 321.0 -245.0
+  301.0 -245.0 293.0 -228.0 266.0 -216.0
+  239.0 -204.0 163.0 -198.0 141.0 -187.0
+  119.0 -176.0 111.0 -162.0 116.0 -153.0
+  121.0 -144.0 128.0 -134.0 128.0 -134.0
+  smooth off
+endline
+
+point 52.0 -226.0 station -name D14@D14
+
+endscrap
+
+

@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D26 -title "D26"
+
+	centerline -extend right
+		cs lat-long
+		fix       D26       46.105850     006.79250      2152
+		station   D26       "D26" entrance continuation explored 30m
+
+		explo-date  1971.07.07
+			#explo-team ""
+			
+	endcenterline
+
+endsurvey

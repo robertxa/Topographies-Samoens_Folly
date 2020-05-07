@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D25 -title "D25"
+
+# Fichier contenant les positions des entrées de la zone D, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+
+		fix       D25       46.106350     006.79253      2161
+		station   D25       "D25" entrance continuation explored 04m
+
+		#explo-date  ..
+		#	explo-team ""
+			
+	endcenterline
+
+endsurvey

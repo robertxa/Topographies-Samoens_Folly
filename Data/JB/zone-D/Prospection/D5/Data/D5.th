@@ -1,0 +1,16 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D5 -title "D5"
+
+	centerline -extend right
+		cs lat-long
+		fix       D5       46.105350     006.79628      2252
+		station   D5       "D5" entrance continuation explored 20m
+  
+	endcenterline
+
+endsurvey

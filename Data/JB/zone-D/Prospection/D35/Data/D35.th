@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D35 -title "D35"
+
+# Fichier contenant les positions des entrées de la zone D, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+
+		fix       D35       46.105433     006.79221      2133
+		station   D35       "D35" entrance continuation explored 60m
+
+		explo-date  1999.07.14
+			explo-team "Christophe Ferry"
+			
+	endcenterline
+
+endsurvey

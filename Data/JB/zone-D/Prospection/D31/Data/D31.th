@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D31 -title "D31"
+
+	centerline -extend right
+		cs lat-long
+		fix       D31       46.106433     006.79460      2215
+		station   D31       "D31" entrance continuation explored 17m
+
+		#explo-date  ..
+			explo-team "Pierre Rias"
+			
+	endcenterline
+
+endsurvey
