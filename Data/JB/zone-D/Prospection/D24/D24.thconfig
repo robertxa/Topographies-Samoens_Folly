@@ -65,8 +65,8 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{20\thinspace{}m}
-		\cavedepth{-10\thinspace{}m}
+		\cavelength{15\thinspace{}m}
+		\cavedepth{0\thinspace{}m}
 	endcode  
   
 endlayout
@@ -118,8 +118,8 @@ layout my_layout-coupe
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{20\thinspace{}m}
-		\cavedepth{-10\thinspace{}m}
+		\cavelength{15\thinspace{}m}
+		\cavedepth{0\thinspace{}m}
 	endcode  
 
 endlayout
@@ -144,8 +144,8 @@ endlayout
 	select MP-D24-plan-tot@D24
 	select MC-D24-coupe-tot@D24
 	  
- export map -o Outputs/D24-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/D24-coupe.pdf
+export map -o Outputs/D24-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/D24-coupe.pdf
 #export map -o Outputs/D24-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/D24-coupe-Continuations.pdf
 
