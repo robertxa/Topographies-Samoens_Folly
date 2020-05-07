@@ -1,0 +1,60 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV -title "AV"
+
+	centerline -extend right
+		cs lat-long
+fix       AV1       46.103416     006.81610     2500 # ALT PAR DEFAULT
+fix       AV2       46.103550     006.81681     2500 # ALT PAR DEFAULT
+fix       AV3       46.103200     006.81768     2550
+fix       AV4       46.103050     006.81761     2500 # ALT PAR DEFAULT
+fix       AV5       46.102683     006.81726     2500 # ALT PAR DEFAULT
+fix       AV6       46.102066     006.81648     2500 # ALT PAR DEFAULT
+fix       AV7       46.101533     006.81595     2500 # ALT PAR DEFAULT
+fix       AV9       46.103033     006.81801     2500 # ALT PAR DEFAULT
+fix       AV10      46.103183     006.81790     2519
+fix       AV11      46.103266     006.81590     2595
+fix       AV11B     46.103183     006.81571     2585
+fix       AV12      46.103400     006.81671     2605
+fix       AV13      46.103650     006.81658     2611
+fix       AV14      46.103650     006.81680     2605
+fix       AV15      46.103850     006.81743     2570
+fix       AV16      46.103633     006.81753     2577
+fix       AV17      46.102900     006.81731     2519
+fix       AV18      46.102933     006.81756     2545
+fix       AV19      46.103016     006.81766     2500 # ALT PAR DEFAULT
+fix       AV20      46.102366     006.81003     2460
+fix       AV21      46.103350     006.81106      2456
+
+station   AV1       "AV1" entrance continuation explored 20m
+station   AV2       "AV2" entrance continuation explored 14m
+station   AV3       "AV3" entrance continuation explored 06m
+station   AV4       "AV4" entrance continuation explored 08m
+station   AV5       "AV5" entrance continuation explored 17m
+station   AV6       "AV6" entrance continuation explored 09m
+station   AV7       "AV7" entrance continuation explored 10m
+station   AV9       "AV9" entrance continuation explored 10m
+station   AV10      "AV10" entrance continuation explored 20m
+station   AV11      "AV11" entrance continuation explored 45m
+station   AV11B     "AV11B" entrance
+station   AV12      "AV12" entrance continuation explored 15m
+station   AV13      "AV13" entrance continuation explored 10m
+station   AV14      "AV14" entrance continuation explored 10m
+station   AV15      "AV15" entrance continuation explored 03m
+station   AV16      "AV16" entrance continuation explored 02m
+station   AV17      "AV17" entrance continuation explored 04m
+station   AV18      "AV18" entrance continuation explored 08m
+station   AV19      "AV19" entrance continuation explored 04m
+station   AV20      "AV20" entrance continuation explored 16m
+station   AV21      "AV21" entrance continuation explored 06m
+		
+		explo-date ..
+			explo-team ""  
+
+	endcenterline
+
+endsurvey
