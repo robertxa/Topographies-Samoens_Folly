@@ -18,7 +18,7 @@ fix       DR05      46.120450     006.80371      2244
 fix       DR06      46.120600     006.80380      2329
 fix       DR07      46.121316     006.80685      2300 # ALT PAR DEFAULT
 fix       DR08      46.121383     006.80786      2300 # ALT PAR DEFAULT
-fix       DR09      46.120900     006.80521      2300 # ALT PAR DEFAULT
+#fix       DR09      46.120900     006.80521      2300 # Topo
 fix       DR11A     46.120533     006.80330      2319
 fix       DR11B     46.120350     006.80338      2324
 fix       DR12      46.120716     006.80536      2300 # ALT PAR DEFAULT
@@ -38,7 +38,7 @@ station   DR05      "DR05" entrance continuation explored 15m
 station   DR06      "DR06" entrance continuation explored 30m
 station   DR07      "DR07" entrance continuation explored 60m air-draught
 station   DR08      "DR08" entrance continuation explored 12m
-station   DR09      "DR09" entrance continuation explored 51m air-draught
+#station   DR09      "DR09" entrance continuation explored 51m air-draught
 station   DR11A     "DR11A" entrance continuation explored 20m
 station   DR11B     "DR11B" entrance
 station   DR12      "DR12" entrance continuation explored 05m

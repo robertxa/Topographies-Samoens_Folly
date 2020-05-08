@@ -1,0 +1,49 @@
+encoding utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey DR9 -title "DR9" -entrance "DR9"
+  
+	centerline
+		
+		cs lat-long
+		fix DR9 46.120900     006.80521      2300
+		station   DR9      "DR9" entrance air-draught
+	
+		date 2001.07.21
+			team "Christophe Ferry"
+			team "Renaud Locatelli"
+		explo-date 2001.07.21
+			explo-team "Christophe Ferry"
+			explo-team "Renaud Locatelli"
+		explo-date 2001.07.15
+			explo-team "Josiane Lips"
+			explo-team "Christian Locatelli"
+
+		units lenght meters
+		units compass grad
+		units clino grad
+		#calibrate clino -100
+		calibrate counter 0 1.0
+		units counter centimeters
+		
+	data topofil from to fromcount tocount compass backclino left right up down
+		extend right
+		0b	0	3788	3788	0.0		0.0		0.75	0.75	0.60	1.00	# Désob
+		0	1	3788	4184	347.0	-43.0	1.00	1.00	10.00	1.00	# Cheminée
+		1	2	4503	5120	78.0	-32.0	1.00	1.00	4.00	1.00	# Etroiture
+		2	3	5120	5608	75.0	-53.0	0.30	0.30	1.00	1.00	# Désob haut du puits
+		3	4	5608	5761	120.0	0.0		1.00	1.00	0		1.00	# Bas du puits
+		4	5	5761	6209	30.0	-78.0	1.50	1.50	0		1.00	# Haut du puits
+		5	6	6209	6831	265.0	-65.0	2.00	2.00	0		1.00	# milieu du puits
+		6	7	6831	7930	265.0	-100.0	1.00	1.00	1.50	1.00	# Le puits haut
+		7	8	7930	8087	316.0	-32.0	0.15	0.15	1.00	1.00	# Etroiture
+		8	9	8087	8360	260.0	-52.0	1.50	1.50	2.00	1.00	# Bas du puits
+		9	DR9	8360	8888	170.0	-61.0	0		0		0		1.00	# Entrée
+		extend left
+		1	1b	4184	4503	290.0	00.0	0.50	0.50	2.50	1.00	# Fond salle
+	endcenterline
+  
+endsurvey
