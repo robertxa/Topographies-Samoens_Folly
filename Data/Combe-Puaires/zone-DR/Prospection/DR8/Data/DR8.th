@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR8 -title "DR8"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       DR8      46.121383     006.80786      2300 # ALT PAR DEFAULT
+		station   DR8      "DR8" entrance continuation explored 12m
+
+		explo-date 1981.09.06
+			explo-team "Christian Rigaldie"
+			explo-team "Christophe Ohl"
+		explo-date 2001.07.21
+			explo-team "Olivier Marcillat"
+			explo-team "Bernard Lips"
+			
+	endcenterline
+endsurvey

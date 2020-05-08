@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey DR12 -title "DR12"
+	input Data/DR12.th
+
+	# pour le plan
+	input Data/DR12.th2
+	# Pour la coupe et le plan
+	#input Data/DR12-coupe.th2
+
+	input DR12-maps.th
+endsurvey

@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR12 -title "DR12"
+
+	centerline -extend right
+		cs lat-long
+		fix       DR12      46.120716     006.80536      2300 # ALT PAR DEFAULT
+		station   DR12      "DR12" entrance continuation explored 05m
+
+		explo-date 2001.07.17
+			explo-team "Josiane Lips"
+			
+	endcenterline
+endsurvey

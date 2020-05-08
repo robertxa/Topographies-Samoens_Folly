@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR11 -title "DR11"
+
+	centerline -extend right
+		cs lat-long
+		fix       DR11a     46.120533     006.80330      2319
+		fix       DR11b     46.120350     006.80338      2324
+		station   DR11a     "DR11A" entrance continuation explored 20m
+		station   DR11b     "DR11B" entrance
+
+		explo-date 2001.07.17
+			explo-team "Josiane Lips"
+			explo-team "Christian Locatelli"
+			
+	endcenterline
+endsurvey

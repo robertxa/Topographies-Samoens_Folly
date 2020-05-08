@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR3 -title "DR3"
+
+	centerline -extend right
+		cs lat-long
+		fix       DR3      46.119816     006.80408      2311
+		station   DR3      "DR3" entrance continuation explored 02m
+
+		explo-date 1981.10.18
+			explo-team "Christian Rigaldie"
+			explo-team "Christophe Ohl"
+			
+	endcenterline
+endsurvey

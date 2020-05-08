@@ -14,7 +14,8 @@ layout Entrances_coords_DRDRpra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationDRDRpra{DR18    --  Lat. : 46.121816 N ; Long. : 6.80691 E ; Alt. : 2431 m}
+		\def\thlocationDRDRpra{DR11a    --  Lat. : 46.120533 N ; Long. : 6.80330 E ; Alt. : 2319 m}
+		\def\thlocationDRDRprb{DR11b    --  Lat. : 46.120350 N ; Long. : 6.80338 E ; Alt. : 2324 m}
 	endcode 
 	
 endlayout
@@ -43,6 +44,9 @@ layout Coords_Header_DRDRpra
 			\fi
 			\edef\tmp{\thlocationDRDRpra} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm \ss\thlocationDRDRpra\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationDRDRprb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationDRDRprb\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode
