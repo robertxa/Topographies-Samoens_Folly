@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR18 -title "DR18"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       DR18      46.121816     6.80691      2431
+		station   DR18      "DR18" entrance continuation explored 30m air-draught
+
+		explo-date 2007.10.14
+			explo-team "Xavier Robert"  
+  endcenterline
+endsurvey

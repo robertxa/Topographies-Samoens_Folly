@@ -1,0 +1,49 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR -title "DR"
+
+	centerline -extend right
+		cs lat-long
+fix       DR03      46.119816     006.80408      2311
+fix       DR04      46.120366     006.80373      2311
+fix       DR05      46.120450     006.80371      2244
+fix       DR06      46.120600     006.80380      2329
+fix       DR07      46.121316     006.80685      2300 # ALT PAR DEFAULT
+fix       DR08      46.121383     006.80786      2300 # ALT PAR DEFAULT
+fix       DR09      46.120900     006.80521      2300 # ALT PAR DEFAULT
+fix       DR11A     46.120533     006.80330      2319
+fix       DR11B     46.120350     006.80338      2324
+fix       DR12      46.120716     006.80536      2300 # ALT PAR DEFAULT
+fix       DR13A     46.122383     006.80896      2300 # ALT PAR DEFAULT
+fix       DR13B     46.122283     006.80896      2042
+fix       DR14      46.121383     006.80976      2047
+fix       DR15      46.121466     006.80821      2118
+fix       DR16      46.121550     006.80840      2300 # ALT PAR DEFAULT
+fix       DR17      46.120466     006.80523      2300 # ALT PAR DEFAULT
+
+station   DR03      "DR03" entrance continuation explored 02m
+station   DR04      "DR04" entrance continuation explored 70m
+station   DR05      "DR05" entrance continuation explored 15m
+station   DR06      "DR06" entrance continuation explored 30m
+station   DR07      "DR07" entrance continuation explored 60m air-draught
+station   DR08      "DR08" entrance continuation explored 12m
+station   DR09      "DR09" entrance continuation explored 51m air-draught
+station   DR11A     "DR11A" entrance continuation explored 20m
+station   DR11B     "DR11B" entrance
+station   DR12      "DR12" entrance continuation explored 05m
+station   DR13A     "DR13A" entrance continuation explored 15m
+station   DR13B     "DR13B" entrance continuation explored 20m
+station   DR14      "DR14" entrance continuation explored 15m
+station   DR15      "DR15" entrance continuation explored 09m
+station   DR16      "DR16" entrance continuation explored 12m
+station   DR17      "DR17" entrance continuation explored 06m
+
+		#explo-date ..
+		#	explo-team ""
+			
+	endcenterline
+endsurvey

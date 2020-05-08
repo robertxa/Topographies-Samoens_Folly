@@ -8,8 +8,8 @@ survey trousDR -title "Cavités non topographiées de la zone DR"
 
 # Fichier contenant les positions des entrées de la zone DR, Samoens, France
 
- centerline -extend right
-cs lat-long
+centerline -extend right
+	cs lat-long
 
 #fix       DR01      46.120183     006.80208      2264 # TOPO
 fix       DR03      46.119816     006.80408      2311
@@ -28,8 +28,8 @@ fix       DR14      46.121383     006.80976      2047
 fix       DR15      46.121466     006.80821      2118
 fix       DR16      46.121550     006.80840      2300 # ALT PAR DEFAULT
 fix       DR17      46.120466     006.80523      2300 # ALT PAR DEFAULT
-fix       DR18      46.121816     006.80691      2431
-fix       DR19      46.121900     006.80693      2431
+#fix       DR18      46.121816     006.80691      2431
+#fix       DR19      46.121900     006.80693      2431
 
 #station   DR01      "Unsurveyed cave" entrance #TOPO
 station   DR03      "DR03" entrance continuation explored 02m
@@ -48,28 +48,8 @@ station   DR14      "DR14" entrance continuation explored 15m
 station   DR15      "DR15" entrance continuation explored 09m
 station   DR16      "DR16" entrance continuation explored 12m
 station   DR17      "DR17" entrance continuation explored 06m
-station   DR18      "DR18" entrance continuation explored 30m air-draught
-station   DR19      "DR19" entrance continuation explored 04m
+#station   DR18      "DR18" entrance continuation explored 30m air-draught
+#station   DR19      "DR19" entrance continuation explored 04m
 
-#data nosurvey from to  #definition of relation between points
-#flags surface
-#DR03      DR04
-#DR04      DR05
-#DR05      DR06
-##DR06      DR07
-#DR07      DR08
-#DR08      DR09
-#DR09      DR11A
-#DR11A     DR11B
-#DR11B     DR12
-#DR12      DR13A
-#DR13A     DR13B
-#DR13B     DR14
-#DR14      DR15
-#DR15      DR16
-#DR16      DR17
-#DR17      DR18
-#DR18      DR19
-  
-  endcenterline
+	endcenterline
 endsurvey

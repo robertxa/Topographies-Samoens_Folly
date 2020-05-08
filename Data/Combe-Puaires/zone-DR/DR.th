@@ -6,11 +6,12 @@ encoding  utf-8
  
 survey zoneDR -title "zone DR"
  
-# Pour importer les différentes données de différents fichiers topos : 
-input DR1/DR1-tot.th
-
-input DR-tot.th
-  
-input DR-maps.th
+	# Pour importer les différentes données de différents fichiers topos : 
+	input DR1/DR1-tot.th
+	
+	input Prospection/prospection.th
+	
+	input DR-tot.th
+	input DR-maps.th
 
 endsurvey

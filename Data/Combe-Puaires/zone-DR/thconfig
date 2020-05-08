@@ -93,6 +93,7 @@ encoding  utf-8
     
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o trousDRmap.xvi
-   
+ #export map -fmt xvi -layout xviexport -o trousDRmap.xvi
+ 
+select MP-zoneDR@zoneDR 
  export map -o trouDRplan.pdf -layout my_layout

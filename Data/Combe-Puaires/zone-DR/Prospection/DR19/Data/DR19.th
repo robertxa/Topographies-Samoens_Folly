@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR19 -title "DR19"
+
+centerline -extend right
+		cs lat-long
+
+		fix       DR19      46.121900     006.80693      2431
+		station   DR19      "DR19" entrance continuation explored 04m
+	
+		explo-date 2007.10.17
+			explo-team "Xavier Robert"  
+  endcenterline
+endsurvey
