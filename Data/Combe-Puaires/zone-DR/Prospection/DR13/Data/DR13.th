@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR13 -title "DR13"
+
+	centerline -extend right
+		cs lat-long
+		fix       DR13a     46.122383     006.80896      2300 # ALT PAR DEFAULT
+		fix       DR13b     46.122283     006.80896      2042
+		station   DR13a     "DR13a" entrance continuation explored 15m
+		station   DR13b     "DR13b" entrance continuation explored 20m
+
+		explo-date 2001.07.21
+			explo-team "Bernard Lips"
+			explo-team "Olivier Marcillat"
+			
+	endcenterline
+endsurvey

@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey DR18 -title "DR18"
-	input Data/DR18.th
+survey DR15 -title "DR15"
+	input Data/DR15.th
 
 	# pour le plan
-	input Data/DR18.th2
+	input Data/DR15.th2
 	# Pour la coupe et le plan
-	input Data/DR18-coupe.th2
+	#input Data/DR15-coupe.th2
 
-	input DR18-maps.th
+	input DR15-maps.th
 endsurvey

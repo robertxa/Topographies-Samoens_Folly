@@ -1,16 +1,14 @@
-encoding utf-8
+encoding  utf-8
 
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey DR18 -title "DR18"
-	input Data/DR18.th
+map MP-DR15-plan-tot -title "DR15"
+	SP-DR15-1
+endmap
 
-	# pour le plan
-	input Data/DR18.th2
-	# Pour la coupe et le plan
-	input Data/DR18-coupe.th2
-
-	input DR18-maps.th
-endsurvey
+#map MC-DR15-coupe-tot -title "DR15"
+#	SC-DR15-1
+#endmap
+   

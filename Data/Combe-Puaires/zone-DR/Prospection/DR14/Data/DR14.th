@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey DR14 -title "DR14"
+
+	centerline -extend right
+		cs lat-long
+		fix       DR14      46.121383     006.80976      2047
+		station   DR14      "DR14" entrance continuation explored 15m
+
+		explo-date 2001.07.21
+			explo-team "Bernard Lips"
+			
+	endcenterline
+endsurvey
