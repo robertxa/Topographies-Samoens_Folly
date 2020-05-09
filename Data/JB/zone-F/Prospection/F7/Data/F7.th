@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey F7 -title "F7"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       F7       46.106666     006.79698      2299
+		station   F7       "F7" entrance continuation explored 09m
+
+		explo-date 1975.08.17
+			explo-team "Bernard Lips"
+		  
+	endcenterline
+
+endsurvey

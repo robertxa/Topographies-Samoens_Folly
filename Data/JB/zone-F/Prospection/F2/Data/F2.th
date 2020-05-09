@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey F2 -title "F2"
+
+	centerline -extend right
+		cs lat-long
+		fix       F2       46.107200     006.79731      2306
+		station   F2       "F2" entrance continuation explored 40m
+
+		explo-date 1975.08.17
+			explo-team "Bernard Lips"
+			explo-team "Christian Rigaldie"
+		  
+	endcenterline
+
+endsurvey

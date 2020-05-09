@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey E1 -title "E1"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       E1       46.104716     006.79360      2100 # ALT PAR DEFAULT
+		station   E1       "E1" entrance continuation explored 17m
+
+		explo-date 1971.08.04
+		#	explo-team ""
+		  
+	endcenterline
+
+endsurvey

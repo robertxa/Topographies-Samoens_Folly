@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey E5 -title "E5"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       E5       46.105483     006.79063      2116
+		station   E5       "E5" entrance continuation explored 05m
+
+		explo-date 1971.08.05
+		#	explo-team ""
+		  
+	endcenterline
+
+endsurvey
