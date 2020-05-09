@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey prospectionE -title "Prospection Zone E"
+  
+	# Pour importer les différentes données de différents fichiers topos : 
+	input E1/E1-tot.th
+	#input E2/E2-tot.th
+	#input E3/E3-tot.th
+	#input E4/E4-tot.th
+	#input E5/E5-tot.th
+	#input E6/E6-tot.th
+	
+endsurvey

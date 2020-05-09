@@ -1,0 +1,91 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP -title "LP"
+
+	centerline -extend right
+		cs lat-long
+fix       LP01      46.113483     006.80078      2109
+fix       LP02B     46.113366     006.79940      2047
+fix       LP05      46.112266     006.79645      2125
+fix       LP06      46.113683     006.79906      2200 # ALT PAR DEFAULT
+fix       LP07      46.114216     006.80081      2275
+fix       LP08      46.114150     006.80070      2200 # ALT PAR DEFAULT
+fix       LP13      46.114900     006.80231      2200 # ALT PAR DEFAULT
+fix       LP15      46.114300     006.79991      2244
+fix       LP16      46.114050     006.80065      2285
+fix       LP17      46.113516     006.80223      2200 # ALT PAR DEFAULT
+fix       LP18      46.112950     006.79886      2217
+fix       LP20      46.112650     006.79716      2172
+fix       LP20B     46.112766     006.79721      2175
+fix       LP21      46.112833     006.79845      2191
+fix       LP22      46.111583     006.80048      2285
+fix       LP24      46.114400     006.80078      2271
+fix       LP25      46.112766     006.79918      2229
+fix       LP27      46.113183     006.79981      2200 # ALT PAR DEFAULT
+fix       LP36      46.113983     006.79923      2200 # ALT PAR DEFAULT
+fix       LP37      46.114250     006.80045      2267
+fix       LP38      46.114350     006.80040      2245
+fix       LP39A     46.113433     006.79966      2244
+fix       LP40      46.114216     006.80100      2281
+fix       LP41      46.114183     006.80088      2287
+fix       LP42      46.114150     006.80063      2288
+fix       LP50      46.114266     006.80010      2245
+fix       LP51      46.114400     006.80006      2244
+fix       LP52      46.114166     006.80056      2200 # ALT PAR DEFAULT
+fix       LP53      46.114166     006.80048      2266
+fix       LP55      46.115083     006.80496      2331
+fix       LP56      46.115100     006.80486      2332
+fix       LP57      46.114866     006.80510      2328
+fix       LP59      46.113633     006.79785      2181
+fix       LP60      46.113316     006.79846      2200
+fix       LP61      46.113050     006.79801      2194
+fix       LP62      46.113066     006.79811      2195
+
+
+station   LP01      "LP01" entrance continuation explored 50m
+station   LP02B     "LP02B" entrance	# seconde entrée du LP2A
+station   LP05      "LP05" entrance continuation explored 20m
+station   LP06      "LP06" entrance continuation explored 25m air-draught
+station   LP07      "LP07" entrance continuation explored 75m	#	L7 = LP24 ???
+station   LP08      "LP08" entrance continuation explored 53m
+station   LP13      "LP13" entrance continuation explored 30m air-draught
+station   LP15      "LP15" entrance continuation explored 60m
+station   LP16      "LP16" entrance continuation explored 53m
+station   LP17      "LP17" entrance continuation explored 30m
+station   LP18      "LP18" entrance continuation explored 20m
+station   LP20      "LP20" entrance continuation explored 30m
+station   LP20B     "LP20B" entrance continuation explored 40m
+station   LP21      "LP21" entrance continuation explored 50m air-draught
+station   LP22      "LP22" entrance continuation explored 50m
+station   LP24      "LP24" entrance continuation explored 15m
+station   LP25      "LP25" entrance continuation explored 15m
+station   LP27      "LP27" entrance continuation explored 10m
+station   LP36      "LP36" entrance continuation explored 08m
+station   LP37      "LP37" entrance continuation explored 10m
+station   LP38      "LP38" entrance continuation explored 06m
+station   LP39A     "LP39A" entrance continuation explored 08m
+station   LP40      "LP40" entrance continuation explored 25m
+station   LP41      "LP41" entrance #continuation explored 00m
+station   LP42      "LP42" entrance continuation explored 15m
+station   LP50      "LP50" entrance continuation explored 10m
+station   LP51      "LP51" entrance continuation explored 08m
+station   LP52      "LP52" entrance continuation explored 15m
+station   LP53      "LP53" entrance continuation explored 07m
+station   LP55      "LP55" entrance continuation explored 15m air-draught
+station   LP56      "LP56" entrance continuation explored 15m
+station   LP57      "LP57" entrance continuation explored 13m air-draught
+station   LP59      "LP59" entrance continuation explored 20m
+station   LP60      "LP60" entrance continuation explored 04m
+station   LP61      "LP61" entrance continuation explored 08m
+station   LP62      "LP62" entrance continuation explored 04m
+	
+		#explo-date  
+		#	explo-team ""
+		
+endcenterline
+
+ endsurvey

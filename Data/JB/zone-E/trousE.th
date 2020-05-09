@@ -1,0 +1,42 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousF -title "Cavités non topographiées de la zone F"
+
+# Fichier contenant les positions des entrées de la zone F, Samoens, France
+
+ centerline -extend right
+cs lat-long
+
+fix       E01       46.104716     006.79360      2100 # ALT PAR DEFAULT
+fix       E03       46.105783     006.79211      2153
+fix       E04       46.105133     006.79113      2114
+fix       E05       46.105483     006.79063      2116
+fix       F01       46.106400     006.79503      2229
+fix       F02       46.107200     006.79731      2306
+fix       F07       46.106666     006.79698      2299
+
+station   E01       "E01" entrance continuation explored 17m
+station   E03       "E03" entrance continuation explored 08m
+station   E04       "E04" entrance #continuation explored 00m
+station   E05       "E05" entrance continuation explored 05m
+station   F01       "F01" entrance continuation explored 12m
+station   F02       "F02" entrance continuation explored 40m
+station   F07       "F07" entrance continuation explored 09m
+
+#data nosurvey from to  #definition of relation between points
+##flags splay
+#flags surface
+#E01       E03
+#E03       E04
+#E04       E05
+#E05       F01
+#F01       F02
+#F02       F07
+  
+endcenterline
+
+ endsurvey

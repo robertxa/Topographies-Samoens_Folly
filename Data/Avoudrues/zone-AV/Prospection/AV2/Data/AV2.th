@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV2 -title "AV2"
+
+	centerline -extend right
+		cs lat-long
+
+		fix       AV2       46.103550     006.81681     2500 # ALT PAR DEFAULT
+		station   AV2       "AV2" entrance continuation explored 14m
+
+		
+		explo-date 1989.08.22
+			explo-team "Christophe Ohl"  
+
+	endcenterline
+
+endsurvey

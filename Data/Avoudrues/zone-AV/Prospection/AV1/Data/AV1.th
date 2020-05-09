@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV1 -title "AV1"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV1       46.103416     006.81610     2500 # ALT PAR DEFAULT
+		station   AV1       "AV1" entrance continuation explored 20m
+		
+		explo-date 1989.08.22
+			explo-team "Bernard Lips"  
+
+	endcenterline
+
+endsurvey

@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey zoneBA -title "Zone BA"
+# Pour importer les différentes données de différents fichiers topos : 
+   
+   input BA2/BA2-tot.th
+   input BA4/BA4-tot.th
+   input BA06/BA6-tot.th
+   input BA09/BA9-tot.th
+   
+   input Prospection/prospection.th
+   
+   #input BA-tot.th	# Tous les trous sont dessinés
+   
+   input BA-maps.th
+
+endsurvey

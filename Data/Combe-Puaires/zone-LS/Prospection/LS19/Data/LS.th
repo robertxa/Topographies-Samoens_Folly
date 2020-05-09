@@ -1,0 +1,124 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS -title "LS"
+
+	centerline -extend right
+		cs lat-long
+
+fix		LS9	46.113027 6.808443 2373 
+fix       LS10      46.113600     006.80990      2399
+fix       LS11      46.114250     006.80891      2374
+fix       LS12      46.113716     006.80918      2390
+fix       LS13      46.113400     006.81016      2413
+fix       LS14      46.113600     006.81103      2417
+fix       LS15      46.113116     006.81158      2427
+fix       LS16      46.113200     006.81121      2424
+fix       LS17      46.113483     006.81148      2427
+fix       LS18      46.113183     006.81173      2442
+fix       LS19      46.113150     006.81178      2439
+fix       LS20      46.113866     006.81106      2422
+fix       LS21      46.113550     006.81138      2427
+fix		LS23	46.113769 6.81121 2413
+fix       LS24      46.113716     006.81091      2416
+fix       LS25      46.114100     006.81041      2412
+fix       LS26      46.114283     006.81030      2407
+fix       LS27      46.113983     006.81300      2442
+fix       LS28      46.114216     006.81245      2435
+fix       LS29      46.114216     006.81273      2442
+fix       LS31      46.114300     006.81005      2390
+fix		LS32	46.114042 6.813056 2436
+fix		LS33	46.11402 6.813145 2442
+fix		LS34	46.114083 6.812914 2440
+fix		LS35	46.114129 6.812728 2438
+fix		LS36a	46.114216 6.812692 2438
+fix		LS37	46.11446 6.813275 2438
+fix		LS38	46.114619 6.813332 2433
+fix		LS39	46.114251 6.813543 2447
+fix       LS40      46.112933     006.81218      2453
+fix		LS42	46.114057 6.813596 2451
+fix		LS43	46.114097 6.813721 2453
+fix		LS44	46.11466 6.81345 2429
+fix		LS45	46.114679 6.814529 2450
+fix		LS46	46.114342 6.814634 2458
+fix		LS47	46.113028 6.809706 2392
+fix		LS48	46.112947 6.809896 2400
+fix		LS49	46.112822 6.810059 2407
+fix		LS50	46.112686 6.810237 2406
+fix		LS51	46.112653 6.80997 2408
+fix		LS52	46.112696 6.80985 2406
+fix		LS53	46.112498 6.811537 2433
+fix		LS54	46.112541 6.811515 2433
+fix		LS55	46.113562 6.809076 2375
+fix		LS56	46.11354 6.809141 2376
+fix		LS57	46.113472 6.809517 2381
+fix		LS58	46.112683 6.808659 2377
+fix		LS59	46.112779 6.808692 2379
+fix		LS60	46.112734 6.808762 2379
+fix		LS61	46.112861 6.80828 2373
+fix		LS62	46.112758 6.808382 2376
+fix		LS63	46.117100	6.815710 2347
+
+station   LS9      "LS09" entrance continuation explored 40m
+station   LS10      "LS10" entrance continuation explored 21m
+station   LS11      "LS11" entrance continuation explored 08m
+station   LS12      "LS12" entrance continuation explored 16m air-draught
+station   LS13      "LS13" entrance continuation explored 10m
+station   LS14      "LS14" entrance continuation explored 17m
+station   LS15      "LS15" entrance continuation explored 17m
+station   LS16      "LS16" entrance continuation explored 20m air-draught
+station   LS17      "LS17" entrance continuation explored 11m
+station   LS18      "LS18" entrance continuation explored 15m air-draught
+station   LS19      "LS19" entrance continuation explored 09m air-draught
+station   LS20      "LS20" entrance continuation explored 22m
+station   LS21      "LS21" entrance continuation explored 07m
+station   LS23      "LS23" entrance continuation explored 05m
+station   LS24      "LS24" entrance continuation explored 14m
+station   LS25      "LS25" entrance continuation explored 16m
+station   LS26      "LS26" entrance continuation explored 13m
+station   LS27      "LS27" entrance continuation explored 08m
+station   LS28      "LS28" entrance continuation explored 15m
+station   LS29      "LS29" entrance continuation explored 10m
+station   LS31      "LS31" entrance continuation explored 12m
+station   LS32      "LS32" entrance continuation explored 20m
+station   LS33      "LS33" entrance continuation explored 17m
+station   LS34      "LS34" entrance continuation explored 09m
+station   LS35      "LS35" entrance continuation explored 18m
+station   LS36a      "LS36" entrance continuation explored 06m
+station   LS37      "LS37" entrance continuation explored 04m
+station   LS38      "LS38" entrance continuation explored 10m
+station   LS39      "LS39" entrance continuation explored 07m
+station   LS40      "LS40" entrance continuation explored 10m
+
+station   LS42      "LS42" entrance continuation explored 09m
+station   LS43      "LS43" entrance continuation explored 10m air-draught
+station   LS44      "LS44" entrance continuation explored 12m air-draught
+station   LS45      "LS45" entrance continuation explored 04m
+station   LS46      "LS46" entrance continuation explored 05m
+station   LS47      "LS46" entrance continuation explored 24m
+station   LS48      "LS48" entrance continuation explored 07m
+station   LS49      "LS49" entrance continuation explored 50m air-draught
+station   LS50      "LS50" entrance continuation explored 10m
+station   LS51      "LS51" entrance continuation explored 12m
+station   LS52      "LS52" entrance continuation explored 25m air-draught
+station   LS53      "LS53" entrance continuation explored 08m
+station   LS54      "LS54" entrance continuation explored 14m
+station   LS55      "LS55" entrance continuation explored 09m air-draught
+station   LS56      "LS56" entrance continuation explored 07m
+station   LS57      "LS57" entrance continuation explored 05m
+station   LS58      "LS58" entrance continuation explored 08m
+station   LS59      "LS59" entrance continuation explored 05m
+station   LS60      "LS17" entrance continuation explored 17m
+station   LS61      "LS61" entrance continuation explored 13m
+station   LS62      "LS62" entrance continuation explored 06m
+station   LS63      "LS63" entrance #continuation explored 08m
+
+		#explo-date
+		#	explo-team ""
+
+	endcenterline
+
+endsurvey

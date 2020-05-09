@@ -1,0 +1,151 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T -title "T"
+
+	centerline -extend right
+		cs lat-long
+fix       T01       46.108916     006.79226      2063
+fix       T02       46.108650     006.79245      2042
+fix		T03	46.108389	6.792330	2063
+fix       T04       46.108766     006.79291      2074
+fix		T05	46.108122	6.793850	2118
+fix       T06       46.108800     006.79410      2118
+#fix       T07       46.108650     006.79460      2131	# OLD
+fix       T07       46.109070     006.79523      2149
+fix       T08       46.108716     006.79480      2136
+#fix       T09       46.108883     006.79521      2149
+fix       T09b       46.108807     6.795243      2153
+#fix       T10       46.109050     006.79530      2136	# OLD
+fix       T10       46.108690     006.794570      2132
+fix       T11A      46.109300     006.79576      2149
+fix       T11B      46.109266     006.79585      2150
+fix       T11C      46.109266     006.79593      2153
+fix       T11D      46.109250     006.79608      2156
+fix       T11E       46.109233     006.79628      2165
+fix       T12       46.109266     006.79591      2155
+fix		T13	46.109632	6.794024	2122
+fix		T14	46.109802	6.793052	2100
+fix       T15       46.109050     006.79635      2195
+fix       T16       46.109133     006.79758      2224
+fix       T16B      46.109150     006.79773      2222
+fix		T17	46.110229	6.792154	2071
+fix       T18       46.109250     006.79806      2223
+fix       T20       46.110766     006.79480      2123
+fix		T21	46.111647	6.795628	2119
+fix       T23       46.109166     006.79405      2112
+fix       T24       46.109016     006.79396      2099
+fix       T25C      46.109066     006.79606      2173
+fix       T25D      46.109116     006.79620      2176
+fix       T26A      46.108966     006.79418      2109
+fix       T26B      46.109166     006.79425      2119
+fix       T27       46.108983     006.79075      2047
+fix       T28A      46.109516     006.79573      2149
+fix       T28B      46.109500     006.79590      2156
+fix       T29       46.109350     006.79643      2167
+fix       T30       46.109566     006.79636      2167
+fix       T31       46.109316     006.79691      2189
+fix       T32       46.109300     006.79856      2237
+fix       T32B      46.109216     006.79836      2236
+fix       T33A      46.111883     006.79741      2175
+fix       T33B      46.111833     006.79745      2176
+fix		T34a	 46.111445	6.796458	2157
+fix		T37		46.10836	6.79392	2118
+fix       T39       46.109016     006.79155      2058
+fix       T40       46.109516     006.79635      2167
+fix       T42       46.109116     006.79581      2166
+fix		T43	46.109052	6.795825	2162
+fix       T44       46.111800     006.79535      2058
+fix		T45	46.111279	6.794309	2100
+fix       T46       46.109016     006.79736      2217
+fix       T47       46.109200     006.79751      2216
+fix       T48       46.109383     006.79805      2218
+fix       T49A      46.109016     006.79660      2193
+fix       T49B      46.109000     006.79666      2219
+fix       T50       46.110083     006.79748      2195
+fix       T51       46.109800     006.79791      2206
+fix       T52       46.109783     006.79765      2202
+fix       T52B      46.109716     006.79755      2201
+fix       T53       46.109250     006.79870      2245
+fix       T54       46.109933     006.79815      2212
+fix       T55       46.109383     006.79805      2218
+fix       T56       46.109700     006.79741      2201
+fix       T57       46.109683     006.79735      2195
+fix       T58       46.109900     006.79720      2177
+fix		T60	46.10828	6.79242	2080
+
+station   T01       "T01" entrance continuation explored 05m
+station   T02       "T02" entrance continuation explored 15m
+station   T03       "T03" entrance continuation explored 04m
+station   T04       "T04" entrance continuation explored 15m
+station   T05       "T05" entrance continuation explored 75m
+station   T06       "T06" entrance continuation explored 30m air-draught
+station   T07       "T07" entrance continuation explored 07m
+station   T08       "T08" entrance continuation explored 10m
+
+station   T09b       "T09b" entrance continuation explored 10m
+station   T10       "T10" entrance continuation explored 11m
+station   T11A      "T11A" entrance continuation explored 10m
+station   T11B      "T11B" entrance
+station   T11C      "T11C" entrance
+station   T11D      "T11D" entrance
+station   T11E       "T11E" entrance
+station   T12       "T12" entrance continuation explored 60m
+station   T13       "T13" entrance continuation explored 13m
+station   T14       "T14" entrance continuation explored 10m
+station   T15       "T15" entrance continuation explored 20m air-draught
+station   T16       "T16A" entrance continuation explored 35m
+station   T16B      "T16B" entrance
+station   T17       "T17" entrance continuation explored 20m
+station   T18       "T18" entrance continuation explored 40m air-draught
+station   T20       "T20" entrance continuation explored 50m
+station   T21       "T21" entrance continuation explored 20m air-draught
+station   T23       "T23" entrance continuation explored 20m
+station   T24       "T24" entrance continuation explored 10m
+station   T25C      "T25C" entrance continuation explored 10m
+station   T25D      "T25D" entrance
+station   T26A      "T26A" entrance continuation explored 09m
+station   T26B      "T26B" entrance
+station   T27       "T27" entrance continuation explored 15m
+station   T28A      "T28A" entrance continuation explored 15m
+station   T28B      "T28B" entrance continuation explored 20m
+station   T29       "T29" entrance continuation explored 08m
+station   T30       "T30" entrance continuation explored 16m
+station   T31       "T31" entrance continuation explored 30m
+station   T32       "T32A" entrance continuation explored 15m
+station   T32B      "T32B" entrance
+station   T33A      "T33A" entrance continuation explored 30m air-draught
+station   T33B      "T33B" entrance continuation explored 25m
+station   T34a      "T34A" entrance continuation explored 25m
+station T37	"T37"	entrance continuation explored 05m
+station   T39       "T39" entrance continuation explored 06m
+station   T40       "T40" entrance continuation explored 30m
+station   T42       "T42" entrance continuation explored 05m
+station   T43       "T43" entrance continuation explored 06m
+station   T44       "T44" entrance #continuation explored 00m
+station   T45       "T45" continuation explored 20m entrance
+station   T46       "T46" entrance continuation explored 06m
+station   T47       "T47" entrance continuation explored 10m
+station   T48       "T48" entrance #continuation explored 00m
+station   T49A      "T49A" entrance continuation explored 65m
+station   T49B      "T49B" entrance continuation explored 08m
+station   T50       "T50" entrance continuation explored 05m
+station   T51       "T51" entrance continuation explored 10m
+station   T52       "T52A" entrance continuation explored 60m
+station   T52B      "T52B" entrance
+station   T53       "T53" entrance continuation explored 10m
+station   T54       "T54" entrance continuation explored 05m
+station   T55       "T55" entrance continuation explored 08m
+station   T56       "T56" entrance continuation explored 08m
+station   T57       "T57" entrance continuation explored 08m
+station   T58       "T58" entrance continuation explored 15m
+station   T60       "T60" entrance air-draught #continuation explored 00m
+
+		#explo-date
+		#	explo-team ""
+		
+endcenterline
+ endsurvey
