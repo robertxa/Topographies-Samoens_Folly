@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -781 387 140.0
+##XTHERION## xth_me_area_adjust -131.0 -781 387 223.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} E5.gif 0 {}
 
@@ -7,13 +7,20 @@ encoding  utf-8
 
 scrap SC-E5-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [138.0 -141.0 137.0 -613.0 0.0 0.0 0 -5 m]
 
+line rope
+  147.0 -136.0
+  197.0 -130.0
+  147.0 -319.0
+  108.0 -597.0
+endline
+
 point 83.0 -613.0 altitude -align bottom -value [-5 m]
 
 point 119.0 -143.0 altitude -align left
 
-point 184.0 -4.0 label -text "<bf>E5" -scale xl
+point 183.0 90.0 label -text "<bf>E5" -scale xl
 
-point 158.0 -85.0 entrance -orientation 177.6
+point 159.0 -53.0 entrance -orientation 177.6
 
 line wall -subtype invisible
   236.0 -104.0

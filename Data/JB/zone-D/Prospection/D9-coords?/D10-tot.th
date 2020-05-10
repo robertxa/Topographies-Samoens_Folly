@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey D40 -title "D40"
-	input Data/D40.th
+survey D10 -title "D10"
+	input Data/D10.th
 
 	# pour le plan
-	input Data/D40.th2
+	input Data/D10.th2
 	# Pour la coupe et le plan
-	#input Data/D40-coupe.th2
+	#input Data/D10-coupe.th2
 
-	input D40-maps.th
+	input D10-maps.th
 endsurvey

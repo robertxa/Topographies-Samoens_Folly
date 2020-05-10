@@ -1,0 +1,33 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -694 478 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D40.gif 0 {}
+
+
+
+scrap SP-D40-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [180.0 -148.0 180.0 -506.0 0.0 0.0 0 -15 m]
+
+point 107.0 73.0 label -text "<bf>D40" -scale xl
+
+point 30.0 -294.0 height -value [-15 m]
+
+point 75.0 -112.0 altitude -align top-left
+
+point 192.0 -51.0 entrance -orientation 197.2
+
+line wall -close on -subtype pit
+  178.0 -142.0
+  178.0 -142.0 145.0 -122.0 126.0 -114.0
+  107.0 -106.0 84.0 -88.0 75.0 -112.0
+  66.0 -136.0 48.0 -171.0 82.0 -178.0
+  116.0 -185.0 155.0 -197.0 174.0 -186.0
+  193.0 -175.0 183.0 -153.0 181.0 -146.0
+  179.0 -139.0 178.0 -142.0 178.0 -142.0
+  smooth off
+endline
+
+point 162.0 -144.0 station -name D40@D40
+
+endscrap
+
+

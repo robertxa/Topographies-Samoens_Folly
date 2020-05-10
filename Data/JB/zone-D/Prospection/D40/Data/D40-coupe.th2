@@ -1,0 +1,66 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -694 478 141.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D40.gif 0 {}
+
+
+
+scrap SC-D40-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [180.0 -148.0 180.0 -506.0 0.0 0.0 0 -15 m]
+
+line wall -subtype invisible
+  177.0 -150.0
+  177.0 -150.0 173.0 -129.0 130.0 -130.0
+  87.0 -131.0 59.0 -152.0 59.0 -152.0
+  smooth off
+endline
+
+line wall
+  214.0 -489.0
+  214.0 -489.0 196.0 -482.0 191.0 -472.0
+  186.0 -462.0 181.0 -461.0 183.0 -449.0
+  185.0 -437.0 189.0 -426.0 177.0 -418.0
+  165.0 -410.0 159.0 -419.0 160.0 -396.0
+  161.0 -373.0 165.0 -299.0 165.0 -263.0
+  165.0 -227.0 167.0 -183.0 168.0 -171.0
+  169.0 -159.0 167.0 -150.0 177.0 -150.0
+endline
+
+point 217.0 -283.0 height -value [-15 m]
+
+point 181.0 8.0 label -text "<bf>D40" -scale xl
+
+point 164.0 -78.0 entrance -orientation 189.0
+
+point 198.0 -507.0 altitude -align bottom -value [-15 m]
+
+point 177.0 -150.0 altitude -align right
+
+line rope
+  156.0 -148.0
+  122.0 -148.0
+  122.0 -391.0
+endline
+
+line wall -subtype debris
+  158.0 -477.0
+  158.0 -477.0 190.0 -503.0 198.0 -507.0
+  206.0 -511.0 220.0 -498.0 214.0 -489.0
+endline
+
+line wall
+  59.0 -152.0
+  79.0 -148.0
+  79.0 -148.0 88.0 -156.0 88.0 -198.0
+  88.0 -240.0 85.0 -277.0 85.0 -313.0
+  85.0 -349.0 81.0 -388.0 95.0 -396.0
+  109.0 -404.0 119.0 -393.0 122.0 -407.0
+  125.0 -421.0 120.0 -425.0 128.0 -434.0
+  136.0 -443.0 144.0 -439.0 150.0 -452.0
+  156.0 -465.0 149.0 -472.0 158.0 -477.0
+endline
+
+point 163.0 -146.0 station -name D40@D40
+
+endscrap
+
+
