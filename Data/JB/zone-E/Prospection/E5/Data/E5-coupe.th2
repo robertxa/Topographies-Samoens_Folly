@@ -1,0 +1,51 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -781 387 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} E5.gif 0 {}
+
+
+
+scrap SC-E5-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [138.0 -141.0 137.0 -613.0 0.0 0.0 0 -5 m]
+
+point 83.0 -613.0 altitude -align bottom -value [-5 m]
+
+point 119.0 -143.0 altitude -align left
+
+point 184.0 -4.0 label -text "<bf>E5" -scale xl
+
+point 158.0 -85.0 entrance -orientation 177.6
+
+line wall -subtype invisible
+  236.0 -104.0
+  236.0 -104.0 140.0 -122.0 119.0 -143.0
+endline
+
+line wall
+  29.0 -614.0
+  29.0 -614.0 64.0 -615.0 83.0 -613.0
+  102.0 -611.0 117.0 -605.0 132.0 -578.0
+  147.0 -551.0 156.0 -515.0 161.0 -478.0
+  166.0 -441.0 167.0 -400.0 177.0 -388.0
+  187.0 -376.0 208.0 -379.0 222.0 -365.0
+  236.0 -351.0 249.0 -330.0 244.0 -307.0
+  239.0 -284.0 221.0 -227.0 222.0 -191.0
+  223.0 -155.0 229.0 -117.0 236.0 -104.0
+endline
+
+line wall
+  119.0 -143.0
+  119.0 -143.0 156.0 -144.0 156.0 -161.0
+  156.0 -178.0 147.0 -182.0 149.0 -205.0
+  151.0 -228.0 155.0 -255.0 151.0 -265.0
+  147.0 -275.0 133.0 -302.0 115.0 -315.0
+  97.0 -328.0 83.0 -341.0 72.0 -374.0
+  61.0 -407.0 59.0 -422.0 56.0 -461.0
+  53.0 -500.0 57.0 -526.0 49.0 -551.0
+  41.0 -576.0 30.0 -598.0 21.0 -604.0
+endline
+
+point 160.0 -138.0 station -name E5@E5
+
+endscrap
+
+

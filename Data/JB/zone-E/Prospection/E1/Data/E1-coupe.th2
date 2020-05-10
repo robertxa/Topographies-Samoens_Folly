@@ -1,0 +1,84 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -884 472 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} E1.gif 0 {}
+
+
+
+scrap SC-E1-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [284.0 -134.0 284.0 -710.0 0.0 0.0 0 -17 m]
+
+line wall -subtype invisible
+  278.0 -133.0
+  278.0 -133.0 165.0 -121.0 154.0 -122.0
+  143.0 -123.0 138.0 -130.0 138.0 -130.0
+  smooth off
+endline
+
+line wall
+  230.0 -659.0
+  230.0 -659.0 226.0 -511.0 219.0 -489.0
+  212.0 -467.0 190.0 -415.0 191.0 -390.0
+  192.0 -365.0 215.0 -305.0 214.0 -288.0
+  213.0 -271.0 216.0 -212.0 221.0 -192.0
+  226.0 -172.0 245.0 -142.0 258.0 -138.0
+  271.0 -134.0 278.0 -133.0 278.0 -133.0
+  smooth off
+endline
+
+line rope
+  253.0 -134.0
+  206.0 -137.0
+  166.0 -355.0
+  172.0 -627.0
+endline
+
+point 97.0 -722.0 altitude -align bottom -value [-17 m]
+
+point 138.0 -130.0 altitude -align left
+
+point 290.0 -393.0 height -value [-17 m]
+
+point 189.0 -48.0 label -text "<bf>E1" -scale xl
+
+point 260.0 -103.0 entrance -orientation 204.0
+
+line wall -subtype ice
+  88.0 -718.0
+  88.0 -718.0 90.0 -736.0 116.0 -707.0
+  142.0 -678.0 152.0 -667.0 164.0 -652.0
+  176.0 -637.0 185.0 -623.0 200.0 -636.0
+  215.0 -649.0 230.0 -659.0 230.0 -659.0
+  smooth off
+endline
+
+line wall
+  147.0 -352.0
+  147.0 -352.0 135.0 -373.0 114.0 -400.0
+  93.0 -427.0 93.0 -443.0 93.0 -468.0
+  93.0 -493.0 86.0 -541.0 83.0 -583.0
+  80.0 -625.0 70.0 -664.0 75.0 -687.0
+  80.0 -710.0 88.0 -718.0 88.0 -718.0
+  smooth off
+endline
+
+line wall -subtype ice
+  165.0 -166.0
+  165.0 -166.0 189.0 -170.0 190.0 -183.0
+  191.0 -196.0 191.0 -246.0 187.0 -269.0
+  183.0 -292.0 170.0 -320.0 160.0 -330.0
+  150.0 -340.0 147.0 -352.0 147.0 -352.0
+  smooth off
+endline
+
+line wall
+  138.0 -130.0
+  138.0 -130.0 151.0 -135.0 155.0 -145.0
+  159.0 -155.0 165.0 -166.0 165.0 -166.0
+  smooth off
+endline
+
+point 261.0 -129.0 station -name E1@E1
+
+endscrap
+
+

@@ -1,0 +1,32 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -884 472 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} E1.gif 0 {}
+
+
+
+scrap SP-E1-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [284.0 -134.0 284.0 -710.0 0.0 0.0 0 -17 m]
+
+point 246.0 -132.0 station -name E1@E1
+
+point 134.0 -243.0 height -value [-17 m]
+
+point 160.0 -95.0 altitude -align left
+
+point 302.0 60.0 label -text "<bf>E1" -scale xl
+
+point 297.0 -71.0 entrance -orientation 212.6
+
+line wall -close on -subtype pit
+  269.0 -136.0
+  269.0 -136.0 206.0 -91.0 189.0 -82.0
+  172.0 -73.0 165.0 -76.0 160.0 -95.0
+  152.76 -122.5 164.0 -108.0 199.0 -128.0
+  234.0 -148.0 253.0 -187.0 269.0 -168.0
+  285.0 -149.0 269.0 -136.0 269.0 -136.0
+  smooth off
+endline
+
+endscrap
+
+
