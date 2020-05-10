@@ -1,0 +1,61 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -694 469 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} F7.gif 0 {}
+
+
+
+scrap SC-F7-1 -projection extended -author 1975 "Bernard Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [102.0 -158.0 103.0 -378.0 0.0 0.0 0 -6 m]
+
+line rope
+  122.0 -155.0
+  165.0 -158.0
+  162.0 -377.0
+endline
+
+point 273.0 -263.0 height -value [-6 m]
+
+point 244.0 -484.0 altitude -align bottom-left -value [-9 m]
+
+point 135.0 -383.0 altitude -align bottom-left -value [-6 m]
+
+point 234.0 -153.0 altitude -align right
+
+point 193.0 -23.0 label -text "<bf>F7" -scale xl
+
+point 139.0 -92.0 entrance -orientation 192.1
+
+point 251.0 -530.0 narrow-end
+
+line wall -subtype invisible
+  234.0 -153.0
+  234.0 -153.0 102.0 -134.0 77.0 -140.0
+  52.0 -146.0 43.0 -152.0 43.0 -152.0
+  smooth off
+endline
+
+line wall
+  259.0 -484.0
+  259.0 -484.0 271.0 -403.0 261.0 -386.0
+  251.0 -369.0 209.0 -347.0 207.0 -321.0
+  205.0 -295.0 205.0 -219.0 208.0 -196.0
+  211.0 -173.0 214.0 -154.0 234.0 -153.0
+endline
+
+line wall
+  43.0 -152.0
+  43.0 -152.0 54.0 -155.0 76.0 -154.0
+  98.0 -153.0 107.0 -148.0 116.0 -171.0
+  125.0 -194.0 133.0 -254.0 129.0 -287.0
+  125.0 -320.0 114.0 -377.0 135.0 -383.0
+  156.0 -389.0 227.0 -391.0 232.0 -411.0
+  237.0 -431.0 244.0 -438.0 244.0 -455.0
+  244.0 -472.0 244.0 -484.0 244.0 -484.0
+  smooth off
+endline
+
+point 122.0 -149.0 station -name F7@F7
+
+endscrap
+
+

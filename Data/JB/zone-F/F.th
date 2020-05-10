@@ -6,6 +6,7 @@ encoding  utf-8
  
 survey zoneF -title "Zone F"
 # Pour importer les différentes données de différents fichiers topos : 
-	input F-tot.th
+	input Prospection/prospection.th
+	#input F-tot.th
 	input F-maps.th
  endsurvey

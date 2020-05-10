@@ -1,0 +1,33 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -762 578 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} F1.gif 0 {}
+
+
+
+scrap SP-F1-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [246.0 -159.0 353.0 -159.0 0.0 0.0 1.5 0.0 m]
+
+point 347.0 -11.0 height -value [-12 m]
+
+point 215.0 -146.0 altitude -align left
+
+point 355.0 -629.0 label -text "<bf>F1" -scale xl
+
+point 356.0 -365.0 entrance -orientation 0.0
+
+line wall -close on -subtype pit
+  378.0 -214.0
+  378.0 -214.0 308.0 -161.0 284.0 -153.0
+  260.0 -145.0 214.0 -119.0 215.0 -146.0
+  216.0 -173.0 229.0 -182.0 265.0 -207.0
+  301.0 -232.0 336.0 -249.0 355.0 -250.0
+  374.0 -251.0 380.0 -246.0 380.0 -234.0
+  380.0 -222.0 378.0 -214.0 378.0 -214.0
+  smooth off
+endline
+
+point 356.0 -215.0 station -name F1@F1
+
+endscrap
+
+

@@ -1,0 +1,54 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 2687.05 1702.8
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {1289.34 1 1.0} {389.097 E01} trousEmap.xvi 0 {}
+
+
+
+scrap SP-E-1 -projection plan -scale [-128.0 -128.0 5049.25 -128.0 0.0 0.0 131.50215 0.0 m]
+
+#point 2448.75 1467.25 label -text "<bf>F2" -scale xl
+
+#point 2339.25 1234.5 label -text "<bf>F7" -scale xl
+
+#point 1744.0 1136.25 label -text "<bf>F1" -scale xl
+
+point 393.5 770.25 label -text "<bf>E5" -scale xl
+
+point 543.0 611.75 label -text "<bf>E4" -scale xl
+
+point 848.5 889.0 label -text "<bf>E3" -scale xl
+
+point 1289.25 409.25 label -text "<bf>E1" -scale xl
+
+point 1289.25 395.75 entrance -orientation 180.0
+
+point 543.0 599.25 entrance -orientation 180.0
+
+point 394.5 757.0 entrance -orientation 180.0
+
+point 848.75 875.5 entrance -orientation 180.0
+
+#point 1744.25 1121.75 entrance -orientation 174.1
+
+#point 2448.5 1452.0 entrance -orientation 185.5
+
+#point 2340.75 1221.5 entrance -orientation 172.6
+
+#point 2341.41 1213.537 station -name F07@trousF
+
+#point 2448.29 1444.337 station -name F02@trousF
+
+#point 1744.88 1113.637 station -name F01@trousF
+
+point 394.99 749.707 station -name E05@trousE
+
+point 542.87 592.377 station -name E04@trousE
+
+point 848.95 868.417 station -name E03@trousE
+
+point 1289.34 389.097 station -name E01@trousE
+
+endscrap
+
+

@@ -1,0 +1,30 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -694 469 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} F7.gif 0 {}
+
+
+
+scrap SP-F7-1 -projection plan -author 1975 "Bernard Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [102.0 -158.0 103.0 -378.0 0.0 0.0 0 -6 m]
+
+point 219.0 -210.0 altitude -align right
+
+point 96.0 91.0 label -text "<bf>F7" -scale xl
+
+point 104.0 -51.0 entrance -orientation 176.6
+
+line wall -close on -subtype pit
+  139.0 -142.0
+  139.0 -142.0 92.0 -129.0 95.0 -143.0
+  98.0 -157.0 112.0 -172.0 136.0 -183.0
+  160.0 -194.0 217.0 -227.0 219.0 -210.0
+  221.0 -193.0 211.0 -182.0 188.0 -172.0
+  165.0 -162.0 139.0 -142.0 139.0 -142.0
+  smooth off
+endline
+
+point 118.0 -149.0 station -name F7@F7
+
+endscrap
+
+

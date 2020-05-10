@@ -9,7 +9,7 @@ encoding  utf-8
 source F.th
 
 # Add config file
-input ../../config.thc 
+input ../../../config.thc 
      
 # 2-LAYOUT   
 # Debut de la definition du Layout "xviexport"
@@ -88,7 +88,7 @@ endlayout
     
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o trousFmap.xvi
+#export map -fmt xvi -layout xviexport -o trousFmap.xvi
  
- select MP-zoneF  
+ select MP-zoneF@zoneF  
 export map -o trouFplan.pdf -layout my_layout

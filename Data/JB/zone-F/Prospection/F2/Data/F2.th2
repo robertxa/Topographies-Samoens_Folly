@@ -1,0 +1,120 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -1412 1003 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} F2.gif 0 {}
+
+
+
+scrap SP-F2-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [266.0 -1274.0 521.0 -992.0 0.0 0.0 40 0.0 m]
+
+line wall -outline none -subtype pit
+  562.0 -1159.0
+  562.0 -1159.0 555.0 -1175.0 556.0 -1186.0
+  557.0 -1197.0 569.0 -1211.0 569.0 -1211.0
+  smooth off
+endline
+
+line wall
+  228.0 -1214.0
+  228.0 -1214.0 265.0 -1199.0 280.0 -1203.0
+  295.0 -1207.0 346.0 -1225.0 368.0 -1219.0
+  390.0 -1213.0 426.0 -1206.0 459.0 -1206.0
+  492.0 -1206.0 561.0 -1211.0 561.0 -1211.0
+  smooth off
+endline
+
+line wall -id l6-391--1073
+  495.0 -1108.0
+  495.0 -1108.0 454.0 -1109.0 440.0 -1099.0
+  426.0 -1089.0 407.0 -1069.0 390.0 -1073.0
+  373.0 -1077.0 354.0 -1083.0 358.0 -1107.0
+  362.0 -1131.0 386.0 -1138.0 398.0 -1140.0
+  410.0 -1142.0 417.0 -1143.0 418.0 -1161.0
+  419.0 -1179.0 417.0 -1177.0 394.0 -1175.0
+  371.0 -1173.0 342.0 -1169.0 316.0 -1170.0
+  290.0 -1171.0 266.0 -1185.0 253.0 -1189.0
+  240.0 -1193.0 212.0 -1194.0 212.0 -1194.0
+  smooth off
+endline
+
+line wall
+  562.0 -1159.0
+  562.0 -1159.0 504.0 -1175.0 484.0 -1171.0
+  464.0 -1167.0 436.0 -1147.0 436.0 -1139.0
+  436.0 -1131.0 435.0 -1113.0 452.0 -1115.0
+  469.0 -1117.0 493.0 -1121.0 493.0 -1121.0
+  smooth off
+endline
+
+point 434.0 -1265.0 label -text "R4"
+
+point 432.0 -1186.0 snow
+
+point 504.0 -1186.0 snow
+
+point 577.0 -1181.0 snow
+
+point 397.0 -1108.0 snow
+
+area snow
+  l23-436--1084
+  l6-391--1073
+  l15-421--1141
+endarea
+
+line label -id l23-436--1084
+  453.0 -1125.0
+  453.0 -1125.0 444.0 -1088.0 437.0 -1084.0
+endline
+
+point 228.0 -1214.0 altitude -align bottom-left -value [-20 m]
+
+point 636.0 -1165.0 altitude -align top-right
+
+point 495.0 -1108.0 altitude -align top-right -value [-40 m]
+
+point 331.0 -1056.0 height -value [-5 m]
+
+point 641.0 -1105.0 height -value [-20 m]
+
+line pit
+  406.0 -1169.0
+  406.0 -1169.0 435.0 -1188.0 474.0 -1160.0
+endline
+
+line pit -id l15-421--1141
+  388.0 -1149.0
+  388.0 -1149.0 431.0 -1145.0 447.0 -1131.0
+endline
+
+line u:fault -clip off
+  -19.0 -1221.0
+  159.0 -1212.0
+endline
+
+line u:fault -clip off
+  648.0 -1174.0
+  823.0 -1164.0
+endline
+
+point 628.0 -1333.0 label -text "<bf>F2" -scale xl
+
+point 627.0 -1245.0 entrance -orientation 0.0
+
+point 178.0 -1209.0 narrow-end
+
+point 533.0 -1110.0 narrow-end
+
+line wall -subtype pit
+  561.0 -1211.0
+  561.0 -1211.0 615.0 -1216.0 627.0 -1201.0
+  639.0 -1186.0 650.0 -1175.0 636.0 -1165.0
+  622.0 -1155.0 606.0 -1140.0 594.0 -1144.0
+  582.0 -1148.0 571.0 -1156.0 562.0 -1159.0
+endline
+
+point 622.0 -1178.0 station -name F2@F2
+
+endscrap
+
+
