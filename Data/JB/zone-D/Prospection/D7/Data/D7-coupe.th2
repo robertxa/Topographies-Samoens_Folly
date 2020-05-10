@@ -1,0 +1,67 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -812 553 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D7.gif 0 {}
+
+
+
+scrap SC-D7-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [112.0 -170.0 111.0 -580.0 0.0 0.0 0 -14 m]
+
+line wall -subtype invisible
+  255.0 -141.0
+  255.0 -141.0 136.0 -133.0 101.0 -167.0
+endline
+
+line wall
+  283.0 -598.0
+  283.0 -598.0 277.0 -592.0 272.0 -563.0
+  267.0 -534.0 261.0 -520.0 252.0 -505.0
+  243.0 -490.0 241.0 -502.0 242.0 -468.0
+  243.0 -434.0 252.0 -397.0 243.0 -393.0
+  234.0 -389.0 188.0 -382.0 183.0 -374.0
+  178.0 -366.0 179.0 -353.0 195.0 -348.0
+  211.0 -343.0 216.0 -314.0 217.0 -289.0
+  218.0 -264.0 207.0 -222.0 220.0 -197.0
+  233.0 -172.0 255.0 -141.0 255.0 -141.0
+  smooth off
+endline
+
+point 283.0 -598.0 altitude -align right -value [-14 m]
+
+point 255.0 -141.0 altitude -align right
+
+point 278.0 -296.0 height -value [-14 m]
+
+line rope
+  131.0 -162.0
+  166.0 -159.0
+  175.0 -520.0
+endline
+
+point 168.0 -10.0 label -text "<bf>D7" -scale xl
+
+point 146.0 -103.0 entrance -orientation 171.8
+
+line wall -subtype debris
+  206.0 -558.0
+  206.0 -558.0 240.0 -574.0 253.0 -582.0
+  266.0 -590.0 283.0 -598.0 283.0 -598.0
+  smooth off
+endline
+
+line wall
+  101.0 -167.0
+  101.0 -167.0 128.0 -172.0 131.0 -189.0
+  134.0 -206.0 135.0 -268.0 127.0 -301.0
+  119.0 -334.0 116.0 -379.0 128.0 -388.0
+  140.0 -397.0 147.0 -400.0 148.0 -421.0
+  149.0 -442.0 141.0 -503.0 160.0 -521.0
+  179.0 -539.0 206.0 -558.0 206.0 -558.0
+  smooth off
+endline
+
+point 140.0 -164.0 station -name D7@D7
+
+endscrap
+
+

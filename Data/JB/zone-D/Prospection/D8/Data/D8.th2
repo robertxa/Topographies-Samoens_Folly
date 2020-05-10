@@ -1,0 +1,47 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -190.0 -2062 1056.0 142.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D5.gif 0 {}
+
+
+
+scrap SP-D8-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [528.0 -1562.0 526.0 -1842.0 0.0 0.0 -5 0.0 m]
+
+point 576.0 -1918.0 height -value [-15 m]
+
+point 118.0 -1670.0 altitude -align bottom-left
+
+point 482.0 -1012.0 label -text "<bf>D8" -scale xl
+
+point 502.0 -1386.0 entrance -orientation 183.5
+
+point -52.0 -1664.0 narrow-end
+
+point 822.0 -1614.0 narrow-end
+
+line wall -subtype pit
+  118.0 -1670.0
+  118.0 -1670.0 214.0 -1672.0 264.0 -1686.0
+  314.0 -1700.0 348.0 -1700.0 394.0 -1708.0
+  440.0 -1716.0 460.0 -1724.0 498.0 -1698.0
+  536.0 -1672.0 578.0 -1636.0 620.0 -1636.0
+  662.0 -1636.0 730.0 -1638.0 730.0 -1638.0
+  smooth off
+endline
+
+line wall -subtype pit
+  730.0 -1596.0
+  730.0 -1596.0 624.0 -1616.0 576.0 -1600.0
+  528.0 -1584.0 520.0 -1548.0 478.0 -1548.0
+  436.0 -1548.0 422.0 -1526.0 372.0 -1546.0
+  322.0 -1566.0 296.0 -1562.0 272.0 -1592.0
+  248.0 -1622.0 224.0 -1642.0 186.0 -1644.0
+  148.0 -1646.0 112.0 -1644.0 112.0 -1644.0
+  smooth off
+endline
+
+point 486.0 -1568.0 station -name D8@D8
+
+endscrap
+
+

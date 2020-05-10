@@ -1,0 +1,79 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -2062 1006 142.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D5.gif 0 {}
+
+
+
+scrap SC-D5-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [452.0 -354.0 454.0 -1302.0 0.0 0.0 0 -20 m]
+
+line rope
+  556.0 -352.0
+  450.0 -354.0
+  462.0 -1284.0
+endline
+
+point 364.0 -344.0 altitude -align left
+
+point 490.0 -64.0 label -text "<bf>D5" -scale xl
+
+point 492.0 -240.0 entrance -orientation 182.0
+
+line wall -subtype invisible
+  556.0 -352.0
+  556.0 -352.0 550.0 -328.0 486.0 -330.0
+  422.0 -332.0 364.0 -344.0 364.0 -344.0
+  smooth off
+endline
+
+line wall
+  596.0 -1296.0
+  596.0 -1296.0 566.0 -1034.0 564.0 -978.0
+  562.0 -922.0 568.0 -772.0 536.0 -710.0
+  504.0 -648.0 524.0 -644.0 498.0 -600.0
+  472.0 -556.0 446.0 -520.0 470.0 -486.0
+  494.0 -452.0 504.0 -432.0 530.0 -404.0
+  556.0 -376.0 556.0 -352.0 556.0 -352.0
+  smooth off
+endline
+
+point 322.0 -1304.0 altitude -align bottom-left -value [-20 m]
+
+point 658.0 -830.0 height -value [-20 m]
+
+point 190.0 -858.0 narrow-end
+
+line wall -subtype debris
+  322.0 -1304.0
+  322.0 -1304.0 396.0 -1282.0 422.0 -1296.0
+  448.0 -1310.0 460.0 -1300.0 496.0 -1298.0
+  532.0 -1296.0 554.0 -1280.0 566.0 -1296.0
+  578.0 -1312.0 596.0 -1296.0 596.0 -1296.0
+  smooth off
+endline
+
+line wall
+  246.0 -940.0
+  246.0 -940.0 296.0 -1006.0 302.0 -1056.0
+  308.0 -1106.0 318.0 -1176.0 318.0 -1230.0
+  318.0 -1284.0 322.0 -1304.0 322.0 -1304.0
+  smooth off
+endline
+
+line wall
+  364.0 -344.0
+  364.0 -344.0 346.0 -412.0 370.0 -424.0
+  394.0 -436.0 424.0 -430.0 424.0 -452.0
+  424.0 -474.0 436.0 -496.0 414.0 -510.0
+  392.0 -524.0 358.0 -562.0 352.0 -624.0
+  346.0 -686.0 332.0 -822.0 332.0 -860.0
+  332.0 -898.0 318.0 -902.0 300.0 -890.0
+  282.0 -878.0 262.0 -856.0 262.0 -856.0
+  smooth off
+endline
+
+point 516.0 -344.0 station -name D5@D5
+
+endscrap
+
+

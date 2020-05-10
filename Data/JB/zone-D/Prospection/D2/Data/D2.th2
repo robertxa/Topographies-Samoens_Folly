@@ -1,0 +1,75 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -398.0 -637 1169 174.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D2.gif 0 {}
+
+
+
+scrap SP-D2-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [66.0 -79.0 299.0 -311.0 0.0 0.0 0 -15 m]
+
+line wall -subtype pit
+  296.0 -128.0
+  296.0 -128.0 302.0 -108.0 252.0 -84.0
+  202.0 -60.0 122.0 -54.0 122.0 -54.0
+  smooth off
+endline
+
+line wall
+  878.0 -330.0
+  878.0 -330.0 802.0 -296.0 768.0 -274.0
+  734.0 -252.0 718.0 -238.0 652.0 -234.0
+  586.0 -230.0 482.0 -226.0 448.0 -212.0
+  414.0 -198.0 384.0 -178.0 354.0 -168.0
+  324.0 -158.0 296.0 -128.0 296.0 -128.0
+  smooth off
+endline
+
+line wall
+  292.0 -168.0
+  292.0 -168.0 324.0 -188.0 418.0 -222.0
+  512.0 -256.0 520.0 -246.0 592.0 -270.0
+  664.0 -294.0 696.0 -280.0 746.0 -310.0
+  796.0 -340.0 876.0 -352.0 876.0 -352.0
+  smooth off
+endline
+
+point 878.0 -330.0 altitude -align top-right -value [-15 m]
+
+point 224.0 12.0 height -value [-15 m]
+
+point -142.0 -16.0 label -text "<bf>D2" -scale xl
+
+point -12.0 -50.0 entrance -orientation 110.5
+
+point 162.0 -140.0 altitude -align bottom
+
+point 844.0 -326.0 snow -clip on
+
+point 794.0 -304.0 snow -clip on
+
+point 724.0 -284.0 snow -clip on
+
+point 670.0 -250.0 snow -clip on
+
+point 574.0 -244.0 snow -clip on
+
+point 472.0 -224.0 snow -clip on
+
+point 364.0 -188.0 snow -clip on
+
+point 312.0 -160.0 snow -clip on
+
+point 972.0 -344.0 narrow-end
+
+line wall -subtype pit
+  122.0 -54.0
+  122.0 -54.0 50.0 -56.0 60.0 -80.0
+  70.0 -104.0 104.0 -136.0 162.0 -140.0
+  220.0 -144.0 252.0 -142.0 292.0 -168.0
+endline
+
+point 92.0 -78.0 station -name D2@D2
+
+endscrap
+
+
