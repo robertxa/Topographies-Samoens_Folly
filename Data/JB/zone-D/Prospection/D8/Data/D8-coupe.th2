@@ -1,5 +1,80 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 0 0 1600 1200
+##XTHERION## xth_me_area_adjust -131.0 -744 1044 140.0
 ##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D8.gif 0 {}
+
+
+
+scrap SC-D8-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [82.0 -132.0 82.0 -578.0 0.0 0.0 0 -15 m]
+
+line rope
+  203.0 -139.0
+  171.0 -136.0
+  216.0 -234.0
+  176.0 -286.0
+  182.0 -581.0
+endline
+
+point 207.0 -22.0 label -text "<bf>D8" -scale xl
+
+point 205.0 -80.0 entrance -orientation 193.8
+
+line wall -subtype debris -outline in
+  170.0 -222.0
+  170.0 -222.0 190.0 -228.0 196.0 -235.0
+endline
+
+point 84.0 -330.0 height -value [-15 m]
+
+point 297.0 -595.0 altitude -align right -value [-15 m]
+
+point 231.0 -131.0 altitude -align right
+
+line wall -outline in
+  196.0 -235.0
+  196.0 -235.0 194.0 -270.0 185.0 -270.0
+  176.0 -270.0 163.0 -262.0 165.0 -253.0
+  167.0 -244.0 170.0 -222.0 170.0 -222.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  231.0 -131.0
+  231.0 -131.0 119.0 -103.0 77.0 -130.0
+endline
+
+line wall
+  297.0 -595.0
+  297.0 -595.0 283.0 -515.0 272.0 -486.0
+  261.0 -457.0 263.0 -440.0 258.0 -410.0
+  253.0 -380.0 235.0 -353.0 222.0 -337.0
+  209.0 -321.0 177.0 -301.0 192.0 -288.0
+  207.0 -275.0 241.0 -241.0 232.0 -228.0
+  223.0 -215.0 192.0 -175.0 197.0 -159.0
+  202.0 -143.0 224.0 -132.0 231.0 -131.0
+endline
+
+line wall -subtype debris
+  135.0 -573.0
+  135.0 -573.0 174.0 -596.0 195.0 -593.0
+  216.0 -590.0 218.0 -590.0 237.0 -590.0
+  256.0 -590.0 297.0 -595.0 297.0 -595.0
+  smooth off
+endline
+
+line wall
+  77.0 -130.0
+  77.0 -130.0 110.0 -133.0 128.0 -133.0
+  146.0 -133.0 155.0 -145.0 153.0 -159.0
+  151.0 -173.0 150.0 -194.0 150.0 -223.0
+  150.0 -252.0 153.0 -305.0 150.0 -357.0
+  147.0 -409.0 136.0 -482.0 135.0 -513.0
+  134.0 -544.0 135.0 -573.0 135.0 -573.0
+  smooth off
+endline
+
+point 194.0 -136.0 station -name D8@D8
+
+endscrap
 
 
