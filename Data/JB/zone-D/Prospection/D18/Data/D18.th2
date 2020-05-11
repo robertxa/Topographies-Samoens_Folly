@@ -1,0 +1,37 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -1237 912 128
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D18.gif 0 {}
+
+
+
+scrap SP-D18-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [540.0 -569.0 540.0 -1069.0 0.0 0.0 -11 0 m]
+
+point 364.0 -14.0 height -value [-11 m]
+
+point 132.0 -202.0 altitude -align left
+
+point 362.0 -648.0 label -text "<bf>D18" -scale xl
+
+point 492.0 -176.0 blocks
+
+point 378.0 -378.0 entrance -orientation 0.0
+
+line wall -close on -subtype pit
+  298.0 -154.0
+  298.0 -154.0 228.0 -168.0 204.0 -178.0
+  180.0 -188.0 104.0 -198.0 150.0 -204.0
+  196.0 -210.0 288.0 -208.0 324.0 -214.0
+  360.0 -220.0 410.0 -234.0 456.0 -220.0
+  502.0 -206.0 512.0 -204.0 536.0 -204.0
+  560.0 -204.0 590.0 -184.0 548.0 -176.0
+  506.0 -168.0 450.0 -146.0 400.0 -150.0
+  350.0 -154.0 298.0 -154.0 298.0 -154.0
+  smooth off
+endline
+
+point 368.0 -174.0 station -name D18@D18
+
+endscrap
+
+

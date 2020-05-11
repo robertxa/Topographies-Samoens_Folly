@@ -1,0 +1,211 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -920 838 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D19.gif 0 {}
+
+
+
+scrap SP-D19-1 -projection plan -author 2005 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -920 838 -920 0.0 0.0 24.5364 0.0 m]
+
+line wall
+  159.0 -241.0
+  159.0 -241.0 137.0 -234.0 130.0 -232.0
+  123.0 -230.0 109.0 -225.0 109.0 -225.0
+  smooth off
+endline
+
+line wall -subtype pit
+  201.0 -248.0
+  201.0 -248.0 190.0 -235.0 181.0 -238.0
+  172.0 -241.0 159.0 -241.0 159.0 -241.0
+  smooth off
+endline
+
+line wall
+  262.0 -242.0
+  262.0 -242.0 235.0 -248.0 224.0 -249.0
+  213.0 -250.0 201.0 -248.0 201.0 -248.0
+  smooth off
+endline
+
+line wall -subtype pit
+  308.0 -240.0
+  308.0 -240.0 301.0 -233.0 288.0 -234.0
+  275.0 -235.0 262.0 -242.0 262.0 -242.0
+  smooth off
+endline
+
+line wall
+  382.0 -239.0
+  382.0 -239.0 353.0 -239.0 336.0 -239.0
+  319.0 -239.0 308.0 -240.0 308.0 -240.0
+  smooth off
+endline
+
+line wall -subtype pit
+  432.0 -237.0
+  432.0 -237.0 420.0 -235.0 410.0 -234.0
+  400.0 -233.0 389.0 -238.0 382.0 -239.0
+endline
+
+line wall
+  673.0 -280.0
+  673.0 -280.0 645.0 -268.0 627.0 -267.0
+  609.0 -266.0 600.0 -260.0 573.0 -256.0
+  546.0 -252.0 516.0 -242.0 495.0 -240.0
+  474.0 -238.0 432.0 -237.0 432.0 -237.0
+  smooth off
+endline
+
+line wall
+  431.0 -262.0
+  431.0 -262.0 436.0 -270.0 467.0 -271.0
+  498.0 -272.0 516.0 -273.0 550.0 -278.0
+  584.0 -283.0 600.0 -280.0 623.0 -283.0
+  646.0 -286.0 673.0 -288.0 673.0 -288.0
+  smooth off
+endline
+
+point 307.0 -482.0 label -text "<bf>c" -scale xl
+
+point 189.0 -486.0 label -text "<bf>b" -scale xl
+
+point 80.0 -492.0 label -text "<bf>a" -scale xl
+
+point 677.0 -440.0 label -text "R3+6"
+
+point 460.0 -363.0 label -text "etr."
+
+point 673.0 -280.0 altitude -align top-right -value [-15 m]
+
+point 53.0 -225.0 altitude -align top-left
+
+line pit
+  543.0 -236.0
+  543.0 -236.0 522.0 -245.0 537.0 -294.0
+endline
+
+line pit
+  486.0 -226.0
+  486.0 -226.0 468.0 -234.0 471.0 -283.0
+endline
+
+point 194.0 -256.0 snow -clip on
+
+point 131.0 -247.0 snow -clip on
+
+point 75.0 -235.0 snow -clip on
+
+point -98.0 -711.0 label -text "<bf>D20" -scale xl
+
+point 419.0 78.0 label -text "<bf>D19" -scale xl
+
+point 76.0 -318.0 entrance -orientation 1.0
+
+point 183.0 -313.0 entrance -orientation 1.0
+
+point 289.0 -326.0 entrance -orientation 1.0
+
+point 409.0 -156.0 entrance -orientation 181.2
+
+line wall -subtype pit -outline none
+  431.0 -262.0
+  431.0 -262.0 451.0 -258.0 446.0 -251.0
+  441.0 -244.0 432.0 -237.0 432.0 -237.0
+  smooth off
+endline
+
+line wall -subtype pit -outline none
+  382.0 -239.0
+  382.0 -239.0 367.0 -247.0 375.0 -252.0
+  383.0 -257.0 390.0 -261.0 390.0 -261.0
+  smooth off
+endline
+
+line wall -subtype pit -outline none
+  301.0 -265.0
+  301.0 -265.0 316.0 -261.0 313.0 -254.0
+  310.0 -247.0 308.0 -240.0 308.0 -240.0
+  smooth off
+endline
+
+line wall -subtype pit -outline none
+  262.0 -242.0
+  262.0 -242.0 253.0 -248.0 259.0 -254.0
+  265.0 -260.0 273.0 -268.0 273.0 -268.0
+  smooth off
+endline
+
+line wall -subtype pit -outline none
+  200.0 -271.0
+  200.0 -271.0 207.0 -262.0 205.0 -259.0
+  203.0 -256.0 201.0 -248.0 201.0 -248.0
+  smooth off
+endline
+
+line wall -subtype pit -outline none
+  159.0 -241.0
+  159.0 -241.0 154.0 -248.0 160.0 -255.0
+  166.0 -262.0 168.0 -265.0 168.0 -265.0
+  smooth off
+endline
+
+line wall -subtype pit -outline none
+  105.0 -259.0
+  105.0 -259.0 114.0 -261.0 112.0 -248.0
+  110.0 -235.0 109.0 -225.0 109.0 -225.0
+  smooth off
+endline
+
+line wall -subtype pit
+  390.0 -261.0
+  390.0 -261.0 425.0 -262.0 431.0 -262.0
+endline
+
+line wall
+  301.0 -265.0
+  301.0 -265.0 335.0 -265.0 351.0 -264.0
+  367.0 -263.0 390.0 -261.0 390.0 -261.0
+  smooth off
+endline
+
+line wall -subtype pit
+  273.0 -268.0
+  273.0 -268.0 292.0 -265.0 301.0 -265.0
+endline
+
+line wall
+  200.0 -271.0
+  200.0 -271.0 206.0 -271.0 227.0 -270.0
+  248.0 -269.0 273.0 -268.0 273.0 -268.0
+  smooth off
+endline
+
+line wall -subtype pit
+  168.0 -265.0
+  168.0 -265.0 195.0 -271.0 200.0 -271.0
+endline
+
+line wall
+  105.0 -259.0
+  105.0 -259.0 141.0 -261.0 149.0 -263.0
+  157.0 -265.0 168.0 -265.0 168.0 -265.0
+  smooth off
+endline
+
+line wall -subtype pit
+  109.0 -225.0
+  109.0 -225.0 65.0 -217.0 53.0 -225.0
+  41.0 -233.0 32.0 -257.0 43.0 -259.0
+  54.0 -261.0 76.0 -260.0 85.0 -260.0
+  94.0 -260.0 105.0 -259.0 105.0 -259.0
+  smooth off
+endline
+
+point 179.0 -252.0 station -name D20@D19
+
+point 396.0 -237.0 station -name D19@D19
+
+endscrap
+
+

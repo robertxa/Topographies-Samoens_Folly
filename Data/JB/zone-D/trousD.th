@@ -22,11 +22,11 @@ survey trousD -title "Cavités non topographiées de la zone D"
 #fix       D12       46.106583     006.79531      2226
 #fix       D14       46.106583     006.79505      2219
 fix       D15       46.106183     006.79460      2217
-fix       D16       46.106433     006.79383      2200 # ALT PAR DEFAULT
-fix       D17       46.106366     006.79416      2192
-fix       D18       46.106266     006.79401      2200
-fix       D19       46.106333     006.79296      2200 # ALT PAR DEFAULT
-fix       D20       46.106300     006.79291      2172
+#fix       D16       46.106433     006.79383      2200 # ALT PAR DEFAULT
+#fix       D17       46.106366     006.79416      2192
+#fix       D18       46.106266     006.79401      2200
+#fix       D19       46.106333     006.79296      2200 # ALT PAR DEFAULT
+#fix       D20       46.106300     006.79291      2172
 fix       D22       46.105883     006.79468      2232
 fix       D23A      46.105783     006.79340      2200 # ALT PAR DEFAULT
 fix       D23B      46.105833     006.79340      2200 # ALT PAR DEFAULT
@@ -63,11 +63,11 @@ fix       D51       46.105983     006.79801      2299
 #station   D12       "D12" entrance continuation explored 30m
 #station   D14       "D14" entrance continuation explored 15m
 station   D15       "D15" #entrance continuation explored 00m
-station   D16       "D16" entrance continuation explored 10m
-station   D17       "D17" entrance continuation explored 10m
-station   D18       "D18" entrance continuation explored 15m
-station   D19       "D19" entrance continuation explored 40m
-station   D20       "D20" entrance continuation explored 40m
+#station   D16       "D16" entrance continuation explored 10m
+#station   D17       "D17" entrance continuation explored 10m
+#station   D18       "D18" entrance continuation explored 15m
+#station   D19       "D19" entrance continuation explored 40m
+#station   D20       "D20" entrance continuation explored 40m
 station   D22       "D22" entrance continuation explored 80m
 station   D23A      "D23A" entrance #continuation explored 00m
 station   D23B      "D23B" entrance # continuation explored 10m

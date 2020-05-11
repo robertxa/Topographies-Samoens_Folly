@@ -1,0 +1,81 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -1237 912 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D18.gif 0 {}
+
+
+
+scrap SC-D18-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [540.0 -569.0 540.0 -1069.0 0.0 0.0 0 -11 m]
+
+line wall -subtype invisible
+  441.0 -576.0
+  441.0 -576.0 362.0 -565.0 302.0 -572.0
+  242.0 -579.0 218.0 -591.0 218.0 -591.0
+  smooth off
+endline
+
+line wall
+  600.0 -1042.0
+  600.0 -1042.0 592.0 -1010.0 568.0 -970.0
+  544.0 -930.0 532.0 -912.0 495.0 -877.0
+  458.0 -842.0 433.0 -813.0 413.0 -763.0
+  393.0 -713.0 404.0 -715.0 400.0 -679.0
+  396.0 -643.0 404.0 -629.0 398.0 -618.0
+  392.0 -607.0 397.0 -596.0 411.0 -590.0
+  425.0 -584.0 441.0 -576.0 441.0 -576.0
+  smooth off
+endline
+
+point 337.0 -449.0 label -text "<bf>D18" -scale xl
+
+point 346.0 -535.0 entrance -orientation 177.8
+
+point 114.0 -661.0 label -text "<center>éboulis<br>instable"
+
+line rope
+  413.0 -579.0
+  350.0 -582.0
+  357.0 -963.0
+endline
+
+point 473.0 -718.0 height -value [-11 m]
+
+point 583.0 -1074.0 altitude -align bottom -value [-11 m]
+
+point 441.0 -576.0 altitude -align right
+
+line wall -subtype pebbles
+  460.0 -1035.0
+  460.0 -1035.0 526.0 -1062.0 551.0 -1068.0
+  576.0 -1074.0 596.0 -1079.0 596.0 -1069.0
+  596.0 -1059.0 600.0 -1042.0 600.0 -1042.0
+  smooth off
+endline
+
+line wall
+  270.0 -742.0
+  270.0 -742.0 226.0 -802.0 205.0 -833.0
+  184.0 -864.0 165.0 -916.0 158.0 -940.0
+  151.0 -964.0 143.0 -992.0 168.0 -996.0
+  193.0 -1000.0 249.0 -992.0 277.0 -992.0
+  305.0 -992.0 308.0 -990.0 333.0 -982.0
+  358.0 -974.0 359.0 -975.0 374.0 -963.0
+  389.0 -951.0 405.0 -945.0 415.0 -969.0
+  425.0 -993.0 427.0 -991.0 437.0 -1008.0
+  447.0 -1025.0 460.0 -1035.0 460.0 -1035.0
+  smooth off
+endline
+
+line wall -subtype debris
+  218.0 -591.0
+  218.0 -591.0 278.0 -585.0 288.0 -600.0
+  298.0 -615.0 299.0 -645.0 297.0 -666.0
+  295.0 -687.0 270.0 -742.0 270.0 -742.0
+  smooth off
+endline
+
+point 376.0 -580.0 station -name D18@D18
+
+endscrap
+
+
