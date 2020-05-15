@@ -9,7 +9,7 @@ scrap SP-D-1 -projection plan -scale [-128.0 -128.0 5049.25 -128.0 0.0 0.0 131.5
 
 #point 1055.25 731.75 entrance -orientation 223.1
 
-point 835.75 766.5 label -text "<bf>D24" -scale xl
+#point 835.75 766.5 label -text "<bf>D24" -scale xl
 
 #point 1003.0 660.75 label -text "<bf>D23a" -scale xl
 
@@ -77,25 +77,25 @@ point 694.25 532.25 label -text "<bf>D35" -scale xl
 
 point 646.5 533.0 label -text "<bf>D29" -scale xl
 
-point 771.0 717.5 label -text "<bf>D26" -scale xl
+#point 771.0 717.5 label -text "<bf>D26" -scale xl
 
 point 696.25 670.25 label -text "<bf>D28" -scale xl
 
-point 624.75 639.5 label -text "<bf>D27" -scale xl
+#point 624.75 639.5 label -text "<bf>D27" -scale xl
 
 #point 378.75 593.0 label -text "<bf>D41" -scale xl
 
 #point 380.0 578.25 entrance -orientation 174.2
 
-point 834.25 752.5 entrance -orientation 185.5
+#point 834.25 752.5 entrance -orientation 185.5
 
 #point 786.75 924.5 entrance -orientation 178.3
 
-point 771.25 704.5 entrance -orientation 174.8
+#point 771.25 704.5 entrance -orientation 174.8
 
 point 697.5 655.25 entrance -orientation 174.8
 
-point 626.0 628.0 entrance -orientation 174.8
+#point 626.0 628.0 entrance -orientation 174.8
 
 point 685.25 523.25 entrance -orientation 232.4
 
@@ -221,9 +221,9 @@ point 1435.26 693.595 station -name D22@trousD
 
 #point 786.77 916.035 station -name D25@trousD
 
-point 833.83 746.625 station -name D24@trousD
+#point 833.83 746.625 station -name D24@trousD
 
-point 771.57 697.575 station -name D26@trousD
+#point 771.57 697.575 station -name D26@trousD
 
 point 697.12 648.425 station -name D28@trousD
 
@@ -231,7 +231,7 @@ point 678.26 517.625 station -name D35@trousD
 
 point 663.05 518.045 station -name D29@trousD
 
-point 626.33 621.065 station -name D27@trousD
+#point 626.33 621.065 station -name D27@trousD
 
 #point 381.3 569.655 station -name D41@trousD
 

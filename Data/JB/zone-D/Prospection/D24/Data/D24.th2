@@ -1,0 +1,50 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -722 850 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D24.gif 0 {}
+
+
+
+scrap SP-D24-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [24.0 -206.0 24.0 -512.0 0.0 0.0 0 -15 m]
+
+line wall -subtype invisible
+  110.0 -184.0
+  110.0 -184.0 78.0 -186.0 70.0 -217.0
+endline
+
+line wall
+  121.0 -480.0
+  121.0 -480.0 65.0 -426.0 65.0 -405.0
+  65.0 -384.0 70.0 -374.0 97.0 -354.0
+  124.0 -334.0 141.0 -290.0 128.0 -269.0
+  115.0 -248.0 104.0 -221.0 103.0 -216.0
+  102.0 -211.0 105.0 -190.0 110.0 -184.0
+endline
+
+line wall
+  70.0 -217.0
+  70.0 -217.0 115.0 -246.0 118.0 -272.0
+  121.0 -298.0 132.0 -314.0 98.0 -336.0
+  64.0 -358.0 49.0 -377.0 49.0 -393.0
+  49.0 -409.0 59.0 -436.0 77.0 -454.0
+  95.0 -472.0 119.0 -488.0 119.0 -488.0
+  smooth off
+endline
+
+point 211.0 -470.0 continuation -attr Code D -attr Cavite D24 -attr CA "Léger courant d'air soufflant en été" -text "Méandre merdique à continuer"
+
+point 100.0 -539.0 narrow-end
+
+point 175.0 -523.0 air-draught -orientation 306.2 -scale s -subtype summer
+
+point 110.0 -184.0 altitude -align right
+
+point 30.0 -72.0 label -text "<bf>D24" -scale xl
+
+point 45.0 -155.0 entrance -orientation 143.0
+
+point 88.0 -206.0 station -name D24@D24
+
+endscrap
+
+

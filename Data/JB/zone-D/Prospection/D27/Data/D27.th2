@@ -1,0 +1,92 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -1634 1244 128
+##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D27.gif 0 {}
+
+
+
+scrap SP-D27-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [300.0 -194.0 300.0 -1446.0 0.0 0.0 0 -50 m]
+
+line wall -outline none -subtype pit
+  132.0 -332.0
+  132.0 -332.0 216.0 -340.0 244.0 -284.0
+  272.0 -228.0 300.0 -204.0 300.0 -204.0
+  smooth off
+endline
+
+line wall
+  992.0 -1308.0
+  992.0 -1308.0 916.0 -1156.0 880.0 -1120.0
+  844.0 -1084.0 816.0 -1008.0 768.0 -940.0
+  720.0 -872.0 664.0 -820.0 640.0 -760.0
+  616.0 -700.0 632.0 -704.0 560.0 -620.0
+  488.0 -536.0 424.0 -444.0 372.0 -408.0
+  320.0 -372.0 324.0 -348.0 320.0 -308.0
+  316.0 -268.0 300.0 -204.0 300.0 -204.0
+  smooth off
+endline
+
+line wall
+  132.0 -332.0
+  132.0 -332.0 400.0 -556.0 448.0 -652.0
+  496.0 -748.0 608.0 -824.0 676.0 -904.0
+  744.0 -984.0 768.0 -1064.0 828.0 -1136.0
+  888.0 -1208.0 940.0 -1288.0 964.0 -1324.0
+endline
+
+point 268.0 100.0 label -text "<bf>D27" -scale xl
+
+point 260.0 -64.0 entrance -orientation 186.9
+
+point 60.0 -224.0 altitude -align left
+
+point 992.0 -1308.0 altitude -align bottom-right -value [-50 m]
+
+point 1008.0 -1456.0 narrow-end
+
+line pit
+  884.0 -1044.0
+  884.0 -1044.0 900.0 -1176.0 796.0 -1176.0
+endline
+
+line pit
+  576.0 -540.0
+  576.0 -540.0 556.0 -616.0 376.0 -664.0
+endline
+
+line pit
+  376.0 -336.0
+  376.0 -336.0 312.0 -504.0 196.0 -488.0
+endline
+
+point 764.0 -980.0 snow -clip on
+
+point 824.0 -1064.0 snow -clip on
+
+point 528.0 -656.0 snow -clip on
+
+point 432.0 -556.0 snow -clip on
+
+point 332.0 -448.0 snow -clip on
+
+point 280.0 -332.0 snow -clip on
+
+point 176.0 -288.0 snow -clip on
+
+point 112.0 -212.0 snow -clip on
+
+point 184.0 -200.0 snow -clip on
+
+line wall -subtype pit
+  300.0 -204.0
+  300.0 -204.0 200.0 -148.0 136.0 -164.0
+  72.0 -180.0 56.0 -176.0 60.0 -224.0
+  64.0 -272.0 132.0 -332.0 132.0 -332.0
+  smooth off
+endline
+
+point 244.0 -180.0 station -name D27@D27
+
+endscrap
+
+
