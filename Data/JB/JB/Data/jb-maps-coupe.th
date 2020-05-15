@@ -519,4 +519,44 @@ map MC-JB-coupe-tot -title "Gouffre Jean-Bernard"
 	MC-aval-900
 endmap
 
+
+################# Maps pour Topoguide 74
+map MC-Tr-V4-JD -title "Classique V4b - Cascade Jean Dupont"
+#MC-V6 -title "V6"
+	#SC-V6c1
+	#break
+	#SC-V6c2
+	#break
+#MC-V4 -title "V4"
+	#SC-SavoySup-1
+	#break
+	SC-V4c4
+	break
+	#SC-V4c5
+	#break
+
+#MC-puitsAlain -title "Puits Alain"     
+	SC-V4c1	# Scrap déformé !
+	break
+	SC-V4c3
+	break
+	SC-V4c2
+	break   
+#MC-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
+	SC-dupondc1
+	break
+	SC-dupontc2
+	break
+	SC-dupontc3
+#	break
+#	SC-400c3
+#	break
+#	SC-400c2
+#	break
+#	SC-400c1
+	
+endmap
+
+
+
    
