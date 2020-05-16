@@ -1,0 +1,46 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -748.0 1197 262.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D31.gif 0 {}
+
+
+
+scrap SP-D31-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [72.0 -426.0 869.0 -426.0 0.0 0.0 17 0.0 m]
+
+point 445.0 -725.0 narrow-end
+
+point 531.0 -611.0 altitude -align bottom-right -value [-15 m]
+
+point 88.0 -63.0 altitude -align right
+
+point 215.0 255.0 label -text "<bf>D31" -scale xl
+
+point 79.0 35.0 entrance -orientation 181.1
+
+line wall
+  531.0 -611.0
+  531.0 -611.0 506.0 -559.0 484.0 -537.0
+  462.0 -515.0 423.0 -458.0 396.0 -435.0
+  369.0 -412.0 330.0 -369.0 302.0 -336.0
+  274.0 -303.0 241.0 -280.0 216.0 -249.0
+  191.0 -218.0 155.0 -195.0 141.0 -174.0
+  127.0 -153.0 101.0 -110.0 96.0 -93.0
+  91.0 -76.0 88.0 -63.0 88.0 -63.0
+  smooth off
+endline
+
+line wall
+  63.0 -70.0
+  63.0 -70.0 101.0 -142.0 125.0 -178.0
+  149.0 -214.0 160.0 -214.0 224.0 -283.0
+  288.0 -352.0 331.0 -405.0 376.0 -450.0
+  421.0 -495.0 490.0 -597.0 499.0 -602.0
+  508.0 -607.0 520.0 -616.0 520.0 -616.0
+  smooth off
+endline
+
+point 76.0 -66.0 station -name D31@D31
+
+endscrap
+
+

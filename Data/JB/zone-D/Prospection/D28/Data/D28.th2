@@ -1,0 +1,63 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -694 1272 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D28.gif 0 {}
+
+
+
+scrap SP-D28-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [306.0 -54.0 306.0 -442.0 0.0 0.0 0 -15 m]
+
+line wall
+  127.0 -448.0
+  127.0 -448.0 135.0 -372.0 137.0 -339.0
+  139.0 -306.0 137.0 -248.0 164.0 -249.0
+  191.0 -250.0 233.0 -255.0 246.0 -231.0
+  259.0 -207.0 262.0 -189.0 262.0 -164.0
+  262.0 -139.0 266.0 -146.0 266.0 -113.0
+  266.0 -80.0 271.0 -45.0 271.0 -45.0
+  smooth off
+endline
+
+point 127.0 -448.0 altitude -align bottom-right -value [-15 m]
+
+point 230.0 -41.0 altitude -align left
+
+point 247.0 -67.0 snow -clip on
+
+point 256.0 127.0 label -text "<bf>D28" -scale xl
+
+point 253.0 41.0 entrance -orientation 182.7
+
+area water
+  l6-156--394
+endarea
+
+line label -id l6-156--394 -close on
+  155.0 -393.0
+  155.0 -393.0 103.0 -383.0 87.0 -402.0
+  71.0 -421.0 78.0 -456.0 78.0 -456.0
+  smooth off
+  113.0 -452.0
+  127.0 -448.0
+  127.0 -448.0 149.0 -440.0 150.0 -429.0
+  151.0 -418.0 155.0 -393.0 155.0 -393.0
+  smooth off
+endline
+
+line wall
+  230.0 -41.0
+  230.0 -41.0 233.0 -130.0 226.0 -155.0
+  219.0 -180.0 222.0 -221.0 197.0 -218.0
+  172.0 -215.0 162.0 -200.0 144.0 -200.0
+  126.0 -200.0 115.0 -205.0 111.0 -233.0
+  107.0 -261.0 104.0 -324.0 104.0 -357.0
+  104.0 -390.0 99.0 -412.0 97.0 -422.0
+  95.0 -432.0 113.0 -452.0 113.0 -452.0
+  smooth off
+endline
+
+point 249.0 -38.0 station -name D28@D28
+
+endscrap
+
+

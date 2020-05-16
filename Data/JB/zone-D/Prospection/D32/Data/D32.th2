@@ -1,0 +1,116 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -666 1628 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D32.gif 0 {}
+
+
+
+scrap SP-D32-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [124.0 -100.0 534.0 -100.0 0.0 0.0 20 0.0 m]
+
+line wall
+  275.0 -233.0
+  275.0 -233.0 254.0 -219.0 259.0 -200.0
+  264.0 -181.0 274.0 -178.0 305.0 -178.0
+  336.0 -178.0 347.0 -178.0 375.0 -175.0
+  403.0 -172.0 422.0 -165.0 446.0 -172.0
+  470.0 -179.0 485.0 -185.0 488.0 -200.0
+  491.0 -215.0 494.0 -223.0 494.0 -223.0
+  smooth off
+endline
+
+line wall -subtype pit
+  229.0 -256.0
+  229.0 -256.0 198.0 -279.0 190.0 -297.0
+  182.0 -315.0 164.0 -335.0 185.0 -337.0
+  206.0 -339.0 230.0 -332.0 257.0 -321.0
+  284.0 -310.0 322.0 -289.0 332.0 -276.0
+  342.0 -263.0 350.0 -256.0 339.0 -244.0
+  328.0 -232.0 334.0 -224.0 311.0 -229.0
+  288.0 -234.0 275.0 -233.0 275.0 -233.0
+  smooth off
+endline
+
+line wall
+  186.0 -181.0
+  186.0 -181.0 231.0 -198.0 236.0 -212.0
+  241.0 -226.0 257.0 -238.0 229.0 -256.0
+endline
+
+point 597.0 -416.0 label -text "<bf>D32a" -scale xl
+
+point 302.0 -501.0 label -text "<bf>D32b" -scale xl
+
+point 201.0 -154.0 snow -clip on
+
+point 246.0 -185.0 snow -clip on
+
+point 267.0 -157.0 snow -clip on
+
+point 216.0 -175.0 snow -clip on
+
+point 159.0 -155.0 snow -clip on
+
+point 196.0 -132.0 snow -clip on
+
+point 227.0 -153.0 snow -clip on
+
+point 534.0 -231.0 altitude -align right
+
+point -41.0 -175.0 label -text "<bf>D32c" -scale xl
+
+point 71.0 -168.0 entrance -orientation 79.5
+
+point 574.0 -309.0 entrance -orientation 312.3
+
+point 289.0 -379.0 entrance -orientation 345.1
+
+line wall -subtype pit -outline none
+  275.0 -233.0
+  275.0 -233.0 234.0 -254.0 229.0 -256.0
+endline
+
+line wall -subtype pit -outline none
+  520.0 -215.0
+  520.0 -215.0 507.0 -208.0 494.0 -223.0
+endline
+
+line wall -subtype pit -outline none
+  186.0 -181.0
+  186.0 -181.0 192.0 -146.0 183.0 -135.0
+  174.0 -124.0 170.0 -117.0 170.0 -117.0
+  smooth off
+endline
+
+line wall -subtype pit
+  170.0 -117.0
+  170.0 -117.0 129.0 -136.0 129.0 -159.0
+  129.0 -182.0 128.0 -188.0 148.0 -185.0
+  168.0 -182.0 186.0 -181.0 186.0 -181.0
+  smooth off
+endline
+
+line wall
+  520.0 -215.0
+  520.0 -215.0 508.0 -197.0 500.0 -181.0
+  492.0 -165.0 471.0 -143.0 438.0 -142.0
+  405.0 -141.0 372.0 -140.0 340.0 -141.0
+  308.0 -142.0 281.0 -143.0 259.0 -136.0
+  237.0 -129.0 229.0 -115.0 205.0 -115.0
+  181.0 -115.0 170.0 -117.0 170.0 -117.0
+  smooth off
+endline
+
+line wall -subtype pit
+  494.0 -223.0
+  494.0 -223.0 489.0 -247.0 496.0 -254.0
+  503.0 -261.0 520.0 -273.0 528.0 -261.0
+  536.0 -249.0 540.0 -236.0 534.0 -231.0
+  528.0 -226.0 520.0 -215.0 520.0 -215.0
+  smooth off
+endline
+
+point 528.0 -250.0 station -name D32@D32
+
+endscrap
+
+

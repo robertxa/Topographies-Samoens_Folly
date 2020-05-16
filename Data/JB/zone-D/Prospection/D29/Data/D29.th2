@@ -1,0 +1,65 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -878 1234 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D29.gif 0 {}
+
+
+
+scrap SP-D29-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [476.0 -144.0 380.0 -240.0 0.0 0.0 5 0.0 m]
+
+line wall
+  177.0 -145.0
+  177.0 -145.0 172.0 -123.0 153.0 -116.0
+  134.0 -109.0 104.0 -96.0 83.0 -113.0
+  62.0 -130.0 37.0 -164.0 54.0 -180.0
+  71.0 -196.0 92.0 -212.0 112.0 -212.0
+  132.0 -212.0 144.0 -218.0 150.0 -211.0
+  156.0 -204.0 160.0 -204.0 160.0 -204.0
+  smooth off
+endline
+
+point 83.0 -113.0 altitude -align top-left -value [-19 m]
+
+point 330.0 -134.0 altitude -align right
+
+point 658.0 -71.0 label -text "<bf>D29" -scale xl
+
+point 462.0 -147.0 entrance -orientation 254.3
+
+point 81.0 -156.0 blocks
+
+point 284.0 -38.0 height -value [-19 m]
+
+line pit
+  160.0 -204.0
+  160.0 -204.0 177.0 -167.0 176.0 -157.0
+  175.0 -147.0 177.0 -145.0 177.0 -145.0
+  smooth off
+endline
+
+line wall -subtype pit -outline none
+  177.0 -145.0
+  177.0 -145.0 169.0 -144.0 149.0 -150.0
+  129.0 -156.0 121.0 -160.0 129.0 -173.0
+  137.0 -186.0 148.0 -196.0 154.0 -199.0
+  160.0 -202.0 160.0 -204.0 160.0 -204.0
+  smooth off
+endline
+
+line wall -subtype pit
+  160.0 -204.0
+  160.0 -204.0 210.0 -211.0 234.0 -214.0
+  258.0 -217.0 269.0 -228.0 286.0 -224.0
+  303.0 -220.0 331.0 -222.0 343.0 -203.0
+  355.0 -184.0 367.0 -172.0 349.0 -151.0
+  331.0 -130.0 301.0 -127.0 278.0 -130.0
+  255.0 -133.0 241.0 -126.0 220.0 -134.0
+  199.0 -142.0 177.0 -145.0 177.0 -145.0
+  smooth off
+endline
+
+point 333.0 -199.0 station -name D29@D29
+
+endscrap
+
+
