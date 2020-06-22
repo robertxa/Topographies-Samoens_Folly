@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-layout Entrances_coords_JBJB
+layout Entrances_coords_CPBAe
 # Layout where we define the different variables that contain the text with 
 # the entrance coordinates we want to print in the header.
 # We need one variable per entrance.
@@ -12,19 +12,17 @@ layout Entrances_coords_JBJB
 # This layout is called by the layout Coords_Header below
 
 	code tex-map
-		\def\thlocationJBJBa{V4    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
-		\def\thlocationJBJBb{V4b   --  Lat. : 46.10238 N ; Long. : 6.78057 E ; Alt. : 1843 m}
-		\def\thlocationJBJBe{V6    --  Lat. : 46.10273 N ; Long. : 6.78067 E ; Alt. : 1853 m}
-		\def\thlocationJBJBf{V6b   --  Lat. : 46.10245 N ; Long. : 6.78135 E ; Alt. : 1863 m}
+		\def\thjunk{ }
+		\def\thlocationCPBAe{BA10    --  Lat. : 46.10418 N ; Long. : 6.77292 E ; Alt. : 1569 m}
 	endcode 
 	
 endlayout
 
 
-layout Coords_Header_JBJB
+layout Coords_Header_CPBAe
 # Layout that set the presentation for the entrance coordinates.
 	
-	copy Entrances_coords_JBJB
+	copy Entrances_coords_CPBAe
 	# it calls the layout above Entrances_coords where we defined the different 
 	# variables that contain the text with 
 	# the entrance coordinates we want to print in the header.
@@ -39,18 +37,12 @@ layout Coords_Header_JBJB
 		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
 		
 		\ECoordinates={
-			\edef\tmp{\thlocationJBJBa} \ifx\tmp\empty \else
-				{\size[\thsizem] \ss\thlocationJBJBa\vss}	% The first one should be without hskip
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationJBJBb} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBb\vss}	% You need to set your hskip
+			\edef\tmp{\thlocationCPBAe} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPBAe\vss}	% You need to set your hskip
 			\fi
-			#\edef\tmp{\thlocationJBJBe} \ifx\tmp\empty \else
-			#	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBe\vss}
-			#\fi
-			#\edef\tmp{\thlocationJBJBf} \ifx\tmp\empty \else
-			#	{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBf\vss}
-			#\fi
 		}
 	endcode
 

@@ -34,10 +34,11 @@ encoding  utf-8
 source ../../Data/jb.th
 
 # Add config file
-input ../../../../../config.thc 
+#input ../../../../../config.thc 
+input config.thc 
 
 # Add the entrance coordinates
-input legendes-Traversees/entrances_coordinates-V4-JD.th
+#input legendes-Traversees/entrances_coordinates-V4-JD.th
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles
@@ -59,9 +60,9 @@ endlayout
 #debut de la definition du layout "my_layout"
 layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
-	copy headerl 			# Pour modifier le header/cartouche
+	#copy headerl 			# Pour modifier le header/cartouche
 	copy header_coupe 
 	copy langue-fr
 
@@ -108,6 +109,7 @@ layout my_layout
   # une couleur de fond, 85% blanc = 15% noir
   #color map-bg 90
 #  color map-bg 85
+	#color map-bg [100 90 80]
    #color map-fg [100 100 80]  
   
   # la topo est transparente (on peut voir les galeries sousjacentes)
@@ -136,7 +138,7 @@ layout my_layout
   # cordonnees.
   # Alors nous pouvons specifier que le sud-ouest de la manchette
   # soit place en bas, a gauche, ou une autre combination
-  map-header 0 100 nw	# C'est lui le bon
+  map-header 20 90 nw	# C'est lui le bon
    #map-header 5 50 e
   #map-header 0 0 nw
 
@@ -155,7 +157,7 @@ layout my_layout
   # Un commentaire a ajounter au titule, on pourrait indiquer ici
   # la mairie ou est place la cavite dont le nom est probablement
   # le titule de la topo.
-  map-comment "<bf>Gouffre Jean-Bernard<ss> - <it>Coupe développée<ss> - Samoëns, 74, France"
+  #map-comment "<bf>Gouffre Jean-Bernard<ss> - <it>Coupe développée<ss> - Samoëns, 74, France"
 #  map-comment "Synthèse 2010, Coupe développée"
  
   # Afficher les statistiques d'explo par équipe/nom. C'est lourd
@@ -182,7 +184,28 @@ layout my_layout
   
   # Dessin ou pas du cheminement topo
   symbol-hide line survey
-	#debug station-names    
+	#debug station-names   
+	
+	
+	symbol-hide group all
+	#symbol-hide special north-arrow
+	#symbol-hide special scale-bar
+	symbol-show line wall
+	symbol-show line contour
+	symbol-show line rock-border
+	symbol-show line border
+	symbol-show point entrance
+	symbol-show point breakdown-choke
+	symbol-show point continuation
+	symbol-show point water-flow
+	symbol-show point height
+	#symbol-show point label
+	symbol-show point ice
+	symbol-show point snow
+	symbol-show line water-flow 
+	symbol-show area water 
+	symbol-show area sump 
+	 
  # origin 12 22 0 m
  # origin-label 100 K
 
@@ -206,7 +229,8 @@ layout my_layout
   \else % if not empty keep the value set by therion, or assign an override cavename here
   \fi
   \newtoks\club \club={Groupe Spéléologique Vulcain}
-  \newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2020)}
+  #\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2020)}
+  #\newtoks\synth \synth={Xavier Robert (2020)}
   #\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
   endcode   
   

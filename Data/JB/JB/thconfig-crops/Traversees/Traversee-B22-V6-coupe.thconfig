@@ -12,20 +12,21 @@ source ../../Data/jb.th
 
 # Add config file
 input ../../../../../config.thc 
+input config.thc 
 
 # Add the entrance coordinates
-input legendes-Traversees/entrances_coordinates-V4-JD.th
+#input legendes-Traversees/entrances_coordinates-B22-V6.th
 
   
 # 2-LAYOUT
 
-layout my_layout
-
+layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
-	copy drawingconfig		# Pour modifier les symboles
-	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
-	copy headerl 			# Pour modifier le header/cartouche
-	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	copy drawingconfig
+	#copy headerl 			# Pour modifier le header/cartouche
+	copy header_coupe 
+	copy langue-fr
 
 	cs UTM32
   
@@ -47,10 +48,10 @@ layout my_layout
 	# l'imprimante ne specifie pas l'option "Fit in page"
 	# ou similaire, sinon, l'echelle sera change pendant
 	# l'impression! 
-	scale 1 1000
+	scale 1 2000
 
 	# echelle graphique 100 m ampleur
-	scale-bar 100 m
+	scale-bar 200 m
 	#scale-bar 500 m
 
 
@@ -62,6 +63,7 @@ layout my_layout
 	# une couleur de fond, 85% blanc = 15% noir
 	#color map-bg 90
 	#color map-bg 85
+	#color map-bg [100 90 80]
 	#color map-fg [100 100 80]	# jaune
 	#color map-fg [96 40 11]	# Carotte (244, 102, 27)
 	#color map-fg white
@@ -91,7 +93,7 @@ layout my_layout
 	# soit place en bas, a gauche, ou une autre combination
 	#map-header 0 100 nw
 	#map-header 5 50 e
-	map-header 50 55 sw
+	map-header 3 70 sw
 
 	# arrière plan de la manchette
 	map-header-bg off
@@ -103,14 +105,14 @@ layout my_layout
 	legend off
 
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 18 cm
+	legend-width 16 cm
 	#legend-columns 3
 
 	# Un commentaire a ajounter au titule, on pourrait indiquer ici
 	# la mairie ou est place la cavite dont le nom est probablement
 	# le titule de la topo.
 	#map-comment "Plan, Projection UTM32, Samoëns, 74, France"
-	map-comment "<bf>Gouffre Jean-Bernard<ss> - <it>Plan<ss> - Samoëns, 74, France"
+	#map-comment "<bf>Gouffre Jean-Bernard<ss> - <it>Plan<ss> - Samoëns, 74, France"
  
 	# Afficher les statistiques d'explo par équipe/nom. C'est lourd
 	# si la cavité est importante et qu'il y a beaucoup d'explorateurs
@@ -135,17 +137,29 @@ layout my_layout
 	#symbol-hide special north-arrow
 	#symbol-hide special scale-bar
 	symbol-show line wall
+	symbol-show line pit
+	symbol-show line floor-meander
+	symbol-show line contour
+	symbol-show line rock-border
+	symbol-show line border
+	symbol-show line slope
+	symbol-show line gradient
 	symbol-show point entrance
 	symbol-show point breakdown-choke
 	symbol-show point continuation
 	symbol-show point water-flow
+	symbol-show point ice
+	symbol-show point snow
 	symbol-show point height
-	
+	symbol-show point label
 	symbol-show line water-flow 
 	symbol-show area water 
 	symbol-show area sump 
+	
 	#origin 12 22 0 m
 	#origin-label 100 K
+	
+	#debug scrap-names
 
 	layers on
                 
@@ -165,7 +179,7 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2020)}
+		#\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2020)}
 		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 		
 	endcode   
@@ -188,5 +202,5 @@ endlayout
 #select  M-Tr-V11-V6-AP@Jean-Bernard
 #export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-V11-V6_par_Aiguilles_pseudoS-plan1000.pdf -layout my_layout
 
-select  MP-Tr-V4-JD@Jean-Bernard
-export map -projection plan -fmt pdf -o ../../Outputs/2D/Traversees/JB-Classique-V4-JD-plan1000.pdf -layout my_layout
+select  MC-Tr-B22-V6@Jean-Bernard
+export map -projection extended -fmt pdf -o ../../Outputs/2D/Traversees/JB-Traversee-B22-V6-coupe1000.pdf -layout my_layout-coupe

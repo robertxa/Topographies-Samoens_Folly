@@ -1,0 +1,72 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 222.25 249.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7376 1 1.0} {70.862 BA10} BA10-coupe.xvi 0 {}
+
+
+
+scrap SC-BA10-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+line wall
+  82.5 46.75
+  82.5 46.75 81.0 51.25 81.0 54.75
+  81.0 58.25 81.25 68.5 81.25 68.5
+  smooth off
+endline
+
+point 47.75 73.0 height -value [-3 m]
+
+point 71.0 36.0 dig
+
+line wall -subtype clay
+  57.0 45.25
+  57.0 45.25 68.5 46.0 71.5 46.0
+  74.5 46.0 82.5 45.75 82.5 46.75
+endline
+
+line wall
+  68.0 89.0
+  68.0 89.0 69.5 84.25 69.0 80.75
+  68.5 77.25 67.75 73.5 67.0 68.0
+  66.25 62.5 60.25 60.25 59.25 56.0
+  58.25 51.75 57.0 45.25 57.0 45.25
+  smooth off
+endline
+
+point 88.5 109.5 label -text "<bf>BA10" -scale xl
+
+point 86.0 85.5 entrance -orientation 226.5
+
+line wall -subtype invisible
+  81.25 68.5
+  81.25 68.5 75.5 87.0 68.0 89.0
+endline
+
+point 57.0 45.25 altitude -align left
+
+point 81.25 68.5 altitude -align right
+
+line wall -outline none -clip off
+  17.5 120.0
+  17.5 120.0 24.5 119.75 32.5 117.0
+  40.5 114.25 52.0 112.25 52.0 112.25
+  smooth off
+endline
+
+line wall -outline none -clip off
+  52.0 112.25
+  68.0 89.0
+endline
+
+line wall -reverse on -outline none -clip off
+  93.25 44.5
+  81.25 68.5
+endline
+
+point 68.8976 47.642 station -name Xa2020-1@BA10
+
+point 78.7376 70.862 station -name BA10@BA10
+
+endscrap
+
+

@@ -1,0 +1,73 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -137.25 214.0 183.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {59.7609 1 1.0} {30.389799999999997 BA10} BA10-map.xvi 0 {}
+
+
+
+scrap SP-BA10-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+line gradient -clip off
+  76.25 41.75
+  66.75 54.0
+endline
+
+line gradient -clip off
+  66.75 35.75
+  57.25 49.0
+endline
+
+line gradient -clip off
+  54.0 30.0
+  44.5 41.5
+endline
+
+line gradient -clip off
+  44.75 20.25
+  32.25 35.75
+endline
+
+line gradient -clip off
+  36.25 15.25
+  24.5 32.0
+endline
+
+point 80.75 30.0 height -value [-3 m]
+
+point 81.0 -8.0 label -text "<bf>BA10" -scale xl
+
+point 75.75 8.75 entrance -orientation 320.8
+
+line overhang -clip off
+  66.25 30.5
+  66.25 30.5 78.25 38.25 79.25 39.0
+  80.25 39.75 85.0 43.25 85.0 43.25
+  smooth off
+endline
+
+line overhang -clip off
+  27.5 5.5
+  27.5 5.5 47.5 17.25 51.25 19.75
+  55.0 22.25 57.25 24.5 57.25 24.5
+  smooth off
+endline
+
+line wall -close on -subtype pit
+  66.25 30.5
+  66.25 30.5 61.5 33.0 59.5 31.75
+  57.5 30.5 55.5 28.5 57.25 24.5
+  59.0 20.5 60.25 20.75 62.75 19.5
+  65.25 18.25 66.75 18.25 68.75 17.25
+  70.75 16.25 69.75 17.5 69.5 21.0
+  69.25 24.5 67.75 28.0 67.0 29.0
+  66.25 30.0 66.25 30.5 66.25 30.5
+  smooth off
+endline
+
+point 59.7609 30.389799999999997 station -name BA10@BA10
+
+point 65.1209 22.1298 station -name Xa2020-1@BA10
+
+endscrap
+
+
