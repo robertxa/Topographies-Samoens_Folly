@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CP51 -title "CP51"
-	input Data/CP51.th
+survey CP13 -title "CP13"
+	input Data/CP13.th
 
 	# pour le plan
-	input Data/CP51.th2
+	input Data/CP13.th2
 	# Pour la coupe et le plan
-	input Data/CP51-coupe.th2
+	input Data/CP13-coupe.th2
 
-	input CP51-maps.th
+	input CP13-maps.th
 endsurvey

@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP13 -title "CP13"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP13      46.11499     6.79661      2086
+		station   CP13      "CP13" entrance continuation explored 40m air-draught
+
+
+		explo-date 1977.10.10
+			explo-team "Christian Rigaldie"
+			explo-team "Josiane Lips"
+			explo-team "Benoît/Le Falher"
+			explo-team "Bernard Lips"
+		explo-date 1978.11.03
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean-Luc Dinard"
+			explo-team "Josiane Lips"
+		explo-date 1979.08.12
+  
+	endcenterline
+endsurvey

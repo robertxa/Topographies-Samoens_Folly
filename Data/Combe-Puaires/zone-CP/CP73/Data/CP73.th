@@ -1,0 +1,28 @@
+encoding utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CP73 -title "CP73" -entrance "CP73"
+ 
+centerline -extend right
+	cs lat-long 
+	fix CP73   46.11333       6.79314       2007
+	date 2020.07.05
+		team "Xavier Robert"
+	explo-date 2020.07.05
+		explo-team "Frédéric Gennerat"
+		explo-team "Xavier Robert"
+		explo-team "Fabrizio Delagado"
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+#	extend right
+   CP73 0    0.0      0.0     0.0      0.6      0.6      4      0
+   0 1    4.4     0.    -90.      0.6     0.6      0      4
+     
+endcenterline
+    
+endsurvey

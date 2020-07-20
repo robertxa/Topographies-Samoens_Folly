@@ -4,8 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-
-layout Entrances_coords_CPCPpra
+layout Entrances_coords_CPCPn
 # Layout where we define the different variables that contain the text with 
 # the entrance coordinates we want to print in the header.
 # We need one variable per entrance.
@@ -14,16 +13,16 @@ layout Entrances_coords_CPCPpra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationCPCPpra{CP51    --  Lat. : 46.116233 N ; Long. : 6.80193 E ; Alt. : 2232 m}
+		\def\thlocationCPCPn{CP74    --  Lat. : 46.11450 N ; Long. : 6.79637 E ; Alt. : 2063 m}
 	endcode 
 	
 endlayout
 
 
-layout Coords_Header_CPCPpra
+layout Coords_Header_CPCPn
 # Layout that set the presentation for the entrance coordinates.
 	
-	copy Entrances_coords_CPCPpra
+	copy Entrances_coords_CPCPn
 	# it calls the layout above Entrances_coords where we defined the different 
 	# variables that contain the text with 
 	# the entrance coordinates we want to print in the header.
@@ -41,8 +40,8 @@ layout Coords_Header_CPCPpra
 			\edef\tmp{\thjunk} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thjunk\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationCPCPpra} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm \ss\thlocationCPCPpra\vss}	% The first one should be without hskip
+			\edef\tmp{\thlocationCPCPn} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPCPn\vss}	% You need to set your hskip
 			\fi
 		}
 	endcode

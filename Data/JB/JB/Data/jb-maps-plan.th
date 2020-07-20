@@ -415,6 +415,10 @@ map MP-solitaire -title "Réseau du Solitaire"
 	SP-Solitaire-2019c4	#SPPPPPPP
 	break
 	SP-Sol2019d-1	#SPPPPPPP
+	break
+	SP-Solitaire2020-1
+	break
+	SP-Solitaire2020-2
 endmap
 
 map MP-puitsAlain -title "Puits Alain"     
@@ -563,8 +567,7 @@ map MP-siphons -title "Les siphons terminaux"
 	break
 	SP-siphons2020-1
 	break
-	SP-S2S3
-	 
+	SP-S2S3	 
 endmap
 
 #preview below SP-JB-amontsuite # pour JB-aval-riviere à partir solitaire
@@ -775,6 +778,14 @@ endmap
    
    
    
+   
+   
+   
+   
+   
+   
+   
+   
 ################## Pour le Topoguide 74
 
 map MP-lavoir-basMIN -title "Réseau du Lavoir"
@@ -857,6 +868,13 @@ map MP-montagnes_russesMIN
 	#break
 	#SP-Russesaval2
 endmap
+map MP-P15MIN
+	SP-P15aval
+	#break
+	#SP-P15-2
+	#break
+	#SP-P15-4
+endmap
 map	MP-maisMIN
 	SP-Mais
 	#break
@@ -900,8 +918,8 @@ map MP-Tr-B22-V6 -title "B22 - V6"
 		#preview below MP-senecaliens
 		break
 		MP-lavoir-basMIN
-		break
-		MP-V11MIN
+		#break
+		#MP-V11MIN
 		break
 		MP-reseauaiguillesMIN
 		#break
@@ -919,8 +937,8 @@ map MP-Tr-B22-V6 -title "B22 - V6"
 		MP-bulle
 	break
 	#MP-Branlots-J14
-		MP-aven14J
-		break
+		#MP-aven14J
+		#break
 		MP-pourquedalle
 		break
 		MP-branlotsMIN
@@ -937,7 +955,7 @@ map MP-Tr-B22-V6 -title "B22 - V6"
 		#break
 		#MP-dino
 		break
-		MP-P15
+		MP-P15MIN
 		break
 		MP-erreur
 	#break

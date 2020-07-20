@@ -1,16 +1,15 @@
-encoding utf-8
+encoding  utf-8
 
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CP51 -title "CP51"
-	input Data/CP51.th
 
-	# pour le plan
-	input Data/CP51.th2
-	# Pour la coupe et le plan
-	input Data/CP51-coupe.th2
+map MP-CP73-plan-tot -title "CP73"
+	SP-CP73-1
+endmap
 
-	input CP51-maps.th
-endsurvey
+map MC-CP73-coupe-tot -title "CP73"
+	SC-CP73-c1
+endmap
+   

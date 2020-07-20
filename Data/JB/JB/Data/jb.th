@@ -7,31 +7,36 @@ encoding  utf-8
 survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 # Pour importer les différentes données de différents fichiers topos : 
-   input Data-th/jb-amonts1.th
-   input Data-th/jb-amonts2.th
-   input Data-th/jb-riv.th
-   input Data-th/jb-riv2.th
-   input Data-th/Crops_reseaux/Arianes/jb-arianes.th
-   input Data-th/Crops_reseaux/aval-aiguilles/Data/Aval-aiguilles2.th
-   input Data-th/Crops_reseaux/aval-aiguilles/Data/Aval-aiguilles.th
-   input Data-th/Crops_reseaux/Lavoir/Data/Lavoir.th
-   input Data-th/Crops_reseaux/Lavoir/Data/FileOu.th
-   input Data-th/Crops_reseaux/Shunt-Branlots/Data/shunt-branlots.th
-   input Data-th/Crops_reseaux/affluentC14/Data/affluentC14.th
-   input Data-th/Crops_reseaux/Gourance2013/Data/Gourance2013.th
-   input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa.th
-   input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa2019.th
-   input Data-th/Crops_reseaux/dino/Data/jb-dino.th
-   input Data-th/Crops_reseaux/puitsquelontraverse/Data/puitstraverse.th
-   input Data-th/Crops_reseaux/Erreur/Data/Erreur.th
-   input Data-th/Crops_reseaux/CouteauG/Data/CouteauG.th
-   input Data-th/Crops_reseaux/P11/Data/P11.th
-   input Data-th/Crops_reseaux/Solitaire/solitaire.th
+	input Data-th/jb-amonts1.th
+	input Data-th/jb-amonts2.th
+	input Data-th/jb-riv.th
+	input Data-th/jb-riv2.th
+	input Data-th/Crops_reseaux/C37/Data/C37_2020.th
+		equate Aa.28@jb-amonts1 0.2020@C37_2020
+	input Data-th/Crops_reseaux/Arianes/jb-arianes.th
+	input Data-th/Crops_reseaux/aval-aiguilles/Data/Aval-aiguilles2.th
+	input Data-th/Crops_reseaux/aval-aiguilles/Data/Aval-aiguilles.th
+	input Data-th/Crops_reseaux/Lavoir/Data/Lavoir.th
+	input Data-th/Crops_reseaux/Lavoir/Data/FileOu.th
+	input Data-th/Crops_reseaux/Shunt-Branlots/Data/shunt-branlots.th
+	input Data-th/Crops_reseaux/affluentC14/Data/affluentC14.th
+	input Data-th/Crops_reseaux/Gourance2013/Data/Gourance2013.th
+	input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa.th
+	input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa2019.th
+	input Data-th/Crops_reseaux/dino/Data/jb-dino.th
+	input Data-th/Crops_reseaux/puitsquelontraverse/Data/puitstraverse.th
+	input Data-th/Crops_reseaux/Erreur/Data/Erreur.th
+	input Data-th/Crops_reseaux/CouteauG/Data/CouteauG.th
+	input Data-th/Crops_reseaux/P11/Data/P11.th
+	
+	input Data-th/Crops_reseaux/Solitaire/Data/solitaire.th
+ 	input Data-th/Crops_reseaux/Solitaire/Data/jb_solitaire2020a.th
+		equate 1@solitaire2020a 2019d-FD-10@solitaire
+  
+	input Data-th/Crops_reseaux/Sezhommes/Data/sezhommes2020.th
    
-   input Data-th/Crops_reseaux/Sezhommes/Data/sezhommes2020.th
-   
-   input Data-th/Crops_reseaux/Siphons/Data/siphons.th
-   ##input Data-th/bivouac900.th
+	input Data-th/Crops_reseaux/Siphons/Data/siphons.th
+	##input Data-th/bivouac900.th
 
 ###   input Data-th/jb-ajouts.th
 ###  input Data-th/assemblage.th
@@ -137,6 +142,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ## Les Amonts (C37 - B19)    
 ## Le C37
 	input Drawing-th2/Plan/JB-C37.th2
+	#input Drawing-th2/Plan/JB-C37.th2
+		# join 
 	input Drawing-th2/Plan/affluentC14.th2
 		join SP-reverbere SP-affluent-C14-2
 ## Le B22
@@ -265,6 +272,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-Solitaire-2019c1 SP-Sol_2019b_1
 	input Drawing-th2/Plan/solitaire2019_4.th2
 		join SP-Sol2019d-1 SP-solitaire2019-1
+	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-plan2020.th2
+		join SP-Solitaire2020-1 SP-Sol2019d-1
+
 
 ######### A MODIFIER a partir d'ici ##############     
 ## La rivière vers l'aval
@@ -322,6 +332,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 ## Le C37
 	input Drawing-th2/Coupe/C37-coupe.th2
+	#input Drawing-th2/Coupe/C37-coupe.th2
+		#join ?? ??
     input Drawing-th2/Coupe/affluentC14-coupe.th2
     	join SC-affluent-C14_c1 SC-archec2 
     input Drawing-th2/Coupe/voltigeurs-coupe.th2
@@ -387,6 +399,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/solitaire2019-coupe3.th2
 	input Drawing-th2/Coupe/solitaire2019-coupe4.th2
 		join SC-Solitaire-2019c1 SC-Sol-2019b-1
+	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-coupe2020.th2
 
 ## La rivière aval
 	input Drawing-th2/Coupe/avalc1

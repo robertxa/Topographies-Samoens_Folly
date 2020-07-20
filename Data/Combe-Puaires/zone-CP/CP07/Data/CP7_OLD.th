@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP7 -title "CP7"
+
+	centerline -extend right
+		cs lat-long
+	fix       CP7      46.11355     6.79250      1982
+	station   CP7      "CP7" entrance continuation explored 30m air-draught
+
+		explo-date 1974.07.14
+			explo-team "Bernard Lips"
+			explo-team "Michel Goujon"
+  
+	endcenterline
+endsurvey

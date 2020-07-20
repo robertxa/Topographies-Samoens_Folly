@@ -1,0 +1,247 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -153.25 -162.75 218.0 216.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {57.5632 1 1.0} {62.8386 0} CP7-map2020a.xvi 0 {}
+
+
+
+scrap SP-CP7-1 -projection plan -station-names "" "@CP7" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-146.1832 -151.4585 188.55700000000002 -151.4585 0.0 0.0 8.50240108 0.0 m]
+
+point 33.0 -0.75 breakdown-choke -orientation 354.3
+
+area pebbles
+  l30-40-38
+endarea
+
+line label -id l30-40-38 -close on
+  68.0 14.25
+  68.0 14.25 48.0 23.25 47.25 33.25
+  46.5 43.25 30.25 34.25 23.75 31.0
+  17.25 27.75 13.5 28.25 15.0 21.5
+  16.5 14.75 20.75 6.25 22.0 1.25
+  23.25 -3.75 26.25 -3.25 30.75 -3.25
+  35.25 -3.25 41.75 3.0 50.0 4.25
+  58.25 5.5 68.0 14.25 68.0 14.25
+  smooth off
+endline
+
+area pebbles
+  l28-59-80
+endarea
+
+line label -id l28-59-80 -close on
+  58.5 79.25
+  47.25 78.25
+  52.0 54.25
+  60.25 43.25
+  55.75 33.25
+  58.75 25.0
+  78.5 27.25
+  89.0 38.5
+  58.5 79.25
+endline
+
+line gradient
+  72.0 49.75
+  56.75 60.0
+endline
+
+point -24.0 -9.25 continuation -attr Code D -attr CA "Courant d'air Soufflant en été" -attr Cavite CP7 -text "Méandre étroit à désobstruer, cela devrait jonctionner avec la galerie du P18 dans le CP12"
+
+point 31.75 -33.5 continuation -attr Code D -attr CA "Courant d'air Soufflant en été" -attr Cavite CP7 -text "Trémie à courant d'air à creuser, c'est très motivant, cela devrait jonctionner avec la galerie du P18 dnas le CP12"
+
+point 16.75 -17.5 dig
+
+point -3.0 25.5 dig
+
+point 51.25 -27.75 air-draught -orientation 338.1 -subtype summer
+
+point -13.75 10.25 air-draught -orientation 53.8 -subtype summer
+
+point -3.0 5.0 narrow-end
+
+point 36.5 -15.0 narrow-end
+
+point 50.5 87.0 narrow-end
+
+point 49.25 47.25 height -value [-3 m]
+
+point 13.5 -1.0 height -value [-22 m]
+
+point 53.75 78.5 altitude -align top-right
+
+line wall -subtype invisible
+  27.0 -6.75
+  27.0 -6.75 39.25 -9.5 40.5 -4.0
+endline
+
+line pit
+  56.25 40.5
+  56.25 40.5 50.5 28.75 56.25 24.25
+  62.0 19.75 60.25 25.25 65.0 25.25
+  69.75 25.25 74.0 25.25 74.0 25.25
+  smooth off
+endline
+
+line wall
+  50.75 78.25
+  50.75 78.25 53.75 69.75 53.5 68.0
+  53.25 66.25 50.0 65.5 51.5 61.5
+  53.0 57.5 56.5 56.0 59.75 54.5
+  63.0 53.0 66.5 52.5 65.5 48.25
+  64.5 44.0 64.0 42.25 58.5 39.5
+  53.0 36.75 49.75 30.0 46.25 30.0
+  42.75 30.0 39.25 27.0 35.0 27.0
+  30.75 27.0 26.25 30.0 24.5 25.75
+  22.75 21.5 19.75 23.25 17.0 20.5
+  14.25 17.75 15.0 16.5 12.5 16.5
+  10.0 16.5 8.5 18.0 6.25 16.75
+  4.0 15.5 2.75 11.75 2.75 11.75
+  smooth off
+endline
+
+line wall
+  40.5 -4.0
+  40.5 -4.0 34.0 4.75 36.5 5.75
+  39.0 6.75 44.0 7.75 47.0 9.0
+  50.0 10.25 49.5 14.75 52.75 16.75
+  56.0 18.75 64.25 21.5 66.5 23.75
+  68.75 26.0 74.0 27.5 76.75 30.5
+  79.5 33.5 85.0 36.0 83.0 39.0
+  81.0 42.0 76.25 42.25 77.5 46.0
+  78.75 49.75 79.5 51.0 76.25 52.25
+  73.0 53.5 63.25 59.5 61.5 60.75
+  59.75 62.0 58.0 63.5 58.0 65.5
+  58.0 67.5 55.5 73.5 55.0 75.0
+  54.5 76.5 53.75 78.5 53.75 78.5
+  smooth off
+endline
+
+line wall
+  5.25 11.25
+  5.25 11.25 6.5 13.75 8.75 13.75
+  11.0 13.75 12.5 12.25 13.0 13.5
+  13.5 14.75 13.0 15.25 15.5 14.5
+  18.0 13.75 18.25 15.0 20.5 13.5
+  22.75 12.0 28.0 7.25 28.25 5.75
+  28.5 4.25 27.0 -6.75 27.0 -6.75
+  smooth off
+endline
+
+point 34.7332 -4.641399999999997 station -name 6
+
+point 5.833199999999998 14.178600000000003 station -name 5
+
+point 27.4032 18.428600000000003 station -name 4
+
+point 63.8632 23.938600000000005 station -name 3
+
+point 76.14320000000001 44.4986 station -name 2
+
+point 57.563199999999995 62.8386 station -name 0
+
+point 52.9232 74.33860000000001 station -name 1
+
+endscrap
+
+
+
+scrap SP-CP7-2 -projection plan -station-names "" "@CP7" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-146.1832 -151.4585 188.55700000000002 -151.4585 0.0 0.0 8.50240108 0.0 m]
+
+line wall -subtype pit
+  51.75 15.5
+  51.75 15.5 49.25 24.5 44.75 26.0
+  40.25 27.5 39.5 26.25 35.0 27.0
+endline
+
+line wall
+  35.0 27.0
+  30.5 27.75 30.5 26.0 28.5 28.75
+  26.5 31.5 21.0 36.25 20.5 37.5
+  20.0 38.75 18.75 40.75 18.75 40.75
+  smooth off
+endline
+
+line wall
+  71.75 7.5
+  71.75 7.5 53.75 14.25 51.75 15.5
+endline
+
+line wall
+  47.0 9.0
+  47.0 9.0 48.0 11.5 52.5 9.0
+  57.0 6.5 62.0 4.75 64.25 3.5
+  66.5 2.25 69.25 1.25 69.25 1.25
+  smooth off
+endline
+
+line wall
+  9.0 35.5
+  9.0 35.5 10.5 32.0 12.75 31.25
+  15.0 30.5 13.5 27.25 15.0 24.25
+  16.5 21.25 13.75 22.25 17.0 20.5
+  20.25 18.75 17.0 16.0 20.5 13.5
+endline
+
+line wall -outline none -subtype pit
+  28.25 5.75
+  28.25 5.75 40.5 9.5 39.25 14.5
+  38.0 19.5 37.5 22.0 36.25 23.75
+  35.0 25.5 35.0 27.0 35.0 27.0
+  smooth off
+endline
+
+line wall -outline none
+  15.0 24.25
+  15.0 24.25 21.25 25.0 23.25 27.0
+  25.25 29.0 26.0 31.75 26.0 31.75
+  smooth off
+endline
+
+line wall -outline none -subtype pit
+  35.0 27.0
+  35.0 27.0 29.75 24.25 27.25 21.0
+  24.75 17.75 20.75 15.5 20.5 13.5
+endline
+
+line pit
+  32.5 29.0
+  32.5 29.0 32.02 25.53 27.8832 26.388600000000004
+  23.75 27.25 23.0 28.0 18.0 27.75
+  13.0 27.5 10.0 27.25 10.0 27.25
+  smooth off
+endline
+
+line pit
+  63.25 13.75
+  63.25 13.75 55.25 12.25 55.5 7.0
+  55.75 1.75 56.0 -0.0 56.0 -0.0
+  smooth off
+endline
+
+point 9.0 35.5 altitude -align top-left
+
+point 78.5 2.25 continuation -attr Code E -attr CA "?" -attr Cavite "CP7" -text "Suite à voir après vire à équiper en artif, puits ?"
+
+point 19.25 58.75 air-draught -orientation 325.2 -subtype summer
+
+point 0.25 63.0 label -text "<bf>CP7" -scale xl
+
+point 9.75 44.0 entrance -orientation 149.3
+
+line wall -subtype pit
+  20.5 13.5
+  24.0 11.0 26.25 5.75 28.25 5.75
+  30.25 5.75 32.75 4.25 36.5 5.75
+  40.25 7.25 42.75 10.5 47.0 9.0
+endline
+
+point 61.1832 7.168600000000005 station -name 8
+
+point 27.8832 26.388600000000004 station -name 7
+
+point 19.1432 37.168600000000005 station -name CP7
+
+endscrap
+
+

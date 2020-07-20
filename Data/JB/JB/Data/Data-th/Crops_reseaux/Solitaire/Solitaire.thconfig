@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 # Import DATA  
-source solitaire.th
+#source solitaire.th
 source solitaire-tot.th
 
 # Add config file
@@ -30,6 +30,8 @@ layout layout_plan
 	copy drawingconfig
 	copy headerl 
 	copy langue-fr
+	
+	#debug scrap-names
 	  
 	doc-title "Réseau du Solitaire-plan"
 	doc-author "Xavier Robert"
@@ -48,7 +50,7 @@ layout layout_plan
 	legend off
 	#legend-width 22 cm
 	legend-width 18 cm
-	map-header 30 50 nw
+	map-header 30 40 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -87,7 +89,7 @@ layout layout_coupe
 	copy header_coupe 
 	copy langue-fr
 	
-	#debug on
+	#debug scrap-names
 
 	doc-title "Réseau du solitaire-coupe"
 	doc-author "Xavier Robert"
@@ -135,12 +137,12 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2019d.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2019d.xvi
+	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2020.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2020.xvi
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2019.pdf
-	export map -layout layout_plan -o Outputs/2D/solitaire-plan2019.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2020.pdf
+	export map -layout layout_plan -o Outputs/2D/solitaire-plan2020.pdf
  
 # Export des modeles 3D
 	export model -o Outputs/3D/solitaire.lox
