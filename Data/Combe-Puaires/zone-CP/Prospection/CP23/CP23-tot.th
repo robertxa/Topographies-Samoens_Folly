@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CP23 -title "CP23"
+	input Data/CP23.th
+
+	# pour le plan
+	input Data/CP23.th2
+	# Pour la coupe et le plan
+	input Data/CP23-coupe.th2
+
+	input CP23-maps.th
+endsurvey
