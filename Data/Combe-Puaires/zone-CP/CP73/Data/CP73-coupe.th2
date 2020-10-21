@@ -1,0 +1,62 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 232.75 212.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7402 1 1.0} {55.1153 CP73} CP73-2020-coupe.xvi 0 {}
+
+
+
+scrap SC-CP73-1 -projection extended -station-names "" "@CP73" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+line wall -subtype debris
+  66.75 19.25
+  66.75 19.25 72.25 18.25 80.25 18.75
+  88.25 19.25 89.25 19.5 89.25 19.5
+  smooth off
+endline
+
+point 103.5 36.25 height -value [-4 m]
+
+point 88.5 82.75 label -text "<bf>CP73" -scale xl
+
+point 84.0 69.5 entrance -orientation 182.7
+
+line rope
+  76.25 54.5
+  83.5 56.75
+  83.25 20.0
+endline
+
+point 89.25 19.5 altitude -align right
+
+point 64.5 54.75 altitude -align left
+
+line wall -subtype invisible
+  102.5 55.5
+  102.5 55.5 73.5 60.75 64.5 54.75
+  smooth off
+endline
+
+line wall
+  89.25 19.5
+  89.25 19.5 93.75 30.0 93.0 34.75
+  92.25 39.5 92.5 43.75 92.75 47.0
+  93.0 50.25 91.5 54.0 94.0 54.5
+  96.5 55.0 102.5 55.5 102.5 55.5
+  smooth off
+endline
+
+line wall
+  64.5 54.75
+  64.5 54.75 76.5 56.75 76.25 54.5
+  76.0 52.25 75.75 40.5 71.25 34.75
+  66.75 29.0 66.75 19.25 66.75 19.25
+  smooth off
+endline
+
+point 78.7402 20.475299999999997 station -name 1
+
+point 78.7402 55.1153 station -name 0
+
+endscrap
+
+

@@ -1,0 +1,75 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -131.0 622.0 719.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap SP-CP75-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [69.0 126.0 600.0 436.0 0.0 0.0 10 0.0 m]
+
+line overhang -clip off
+  384.0 390.0
+  384.0 390.0 422.0 415.0 430.0 422.0
+endline
+
+line overhang -clip off
+  268.0 286.0
+  268.0 286.0 310.0 328.0 316.0 334.0
+  322.0 340.0 336.0 352.0 336.0 352.0
+  smooth off
+endline
+
+point 229.0 586.0 label -text "<bf>CP75" -scale xl
+
+point 317.0 455.0 entrance -orientation 147.3
+
+point 169.0 161.0 continuation -attr code D -text "Courant d'air froid fort, à désobstruer" -attr Cavite "CP75" -attr CA "Courant d'air froid fort, soufflant en été"
+
+point 249.0 220.0 air-draught -orientation 46.2 -subtype summer
+
+point 368.0 186.0 dig
+
+point 489.0 354.0 dig
+
+line contour -clip off
+  322.0 342.0
+  322.0 342.0 335.0 382.0 353.0 390.0
+  371.0 398.0 412.0 411.0 412.0 411.0
+  smooth off
+endline
+
+point 336.0 352.0 altitude -align top-left
+
+line floor-meander
+  316.0 280.0
+  378.0 341.0
+endline
+
+line wall -subtype invisible
+  316.0 334.0
+  316.0 334.0 348.0 387.0 368.0 393.0
+  388.0 399.0 398.0 399.0 398.0 399.0
+  smooth off
+endline
+
+line wall
+  306.0 284.0
+  306.0 284.0 314.0 299.0 321.0 308.0
+  328.0 317.0 340.0 324.0 341.0 335.0
+  342.0 346.0 346.0 361.0 336.0 352.0
+  326.0 343.0 316.0 334.0 316.0 334.0
+  smooth off
+endline
+
+line wall
+  398.0 399.0
+  398.0 399.0 380.0 393.0 385.0 385.0
+  390.0 377.0 410.0 358.0 402.0 346.0
+  394.0 334.0 319.0 270.0 319.0 270.0
+  smooth off
+endline
+
+point 366.0 387.0 station -name CP75@CP75
+
+endscrap
+
+

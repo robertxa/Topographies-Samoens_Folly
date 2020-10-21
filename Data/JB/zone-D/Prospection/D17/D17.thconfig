@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/D17-coupe.pdf
 #export map -proj plan -fmt esri -o Outputs/D17 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/D17.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/D17.kml -layout my_layout

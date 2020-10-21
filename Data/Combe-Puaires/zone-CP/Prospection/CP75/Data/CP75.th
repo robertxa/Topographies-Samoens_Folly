@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2020 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP75 -title "CP75"
+
+	centerline
+		cs lat-long
+		fix		CP75	46.11462 6.79793 2148
+		station   CP75      "CP75" entrance continuation explored 03m air-draught
+
+		explo-date 2005.07.14
+			explo-team "Xavier Robert"
+  
+	endcenterline
+endsurvey

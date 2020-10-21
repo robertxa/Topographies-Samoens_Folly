@@ -142,7 +142,7 @@ endlayout
 
 # Select maps
 	select MP-A23-plan-tot@A23
-	select MC-A23-coupe-tot@A23
+	#select MC-A23-coupe-tot@A23
 	  
 export map -o Outputs/A23-plan.pdf -layout my_layout
 #export map -projection extended -layout my_layout-coupe -o Outputs/A23-coupe.pdf
@@ -155,4 +155,4 @@ export map -o Outputs/A23-plan.pdf -layout my_layout
 #export map -proj plan -fmt esri -o Outputs/A23 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/A23.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/A23.kml -layout my_layout

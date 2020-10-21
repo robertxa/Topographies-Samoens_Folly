@@ -1,0 +1,55 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -131.0 526.0 537.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap SP-CP72-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [44.0 167.0 529.0 430.0 0.0 0.0 15 0.0 m]
+
+point 350.0 262.0 height -value [-10 m]
+
+point 349.0 127.0 snow
+
+point 320.0 183.0 snow
+
+point 299.0 122.0 snow
+
+point 270.0 248.0 snow
+
+point 268.0 194.0 snow
+
+point 195.0 232.0 snow
+
+point 227.0 266.0 snow
+
+point 230.0 319.0 altitude -align top-left
+
+point 393.0 404.0 label -text "<bf>CP72" -scale xl
+
+point 303.0 317.0 entrance -orientation 228.8
+
+point 252.0 295.0 station -name CP72@CP72
+
+line overhang -id l4-390-164 -close on
+  252.0 295.0
+  230.0 319.0
+  230.0 319.0 152.0 246.0 152.0 236.0
+  152.0 226.0 298.0 82.0 317.0 75.0
+  336.0 68.0 404.0 129.0 388.0 163.0
+  372.0 197.0 252.0 295.0 252.0 295.0
+  smooth off
+endline
+
+line wall -close on
+  230.0 319.0
+  230.0 319.0 151.0 249.0 152.0 236.0
+  153.0 223.0 296.0 86.0 317.0 75.0
+  338.0 64.0 402.0 131.0 388.0 163.0
+  374.0 195.0 271.0 273.0 252.0 295.0
+  233.0 317.0 230.0 319.0 230.0 319.0
+  smooth off
+endline
+
+endscrap
+
+

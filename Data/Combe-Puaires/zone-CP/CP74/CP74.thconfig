@@ -1,7 +1,6 @@
 encoding  utf-8
    
-# File written by tro2therion.f90 (Xavier Robert) 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2020 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
@@ -12,12 +11,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source Data/CP74.th
-source Data/CP74.th2
-source Data/CP74-coupe.th2
-
-# Add maps definitions
-source CP74-maps.th
+source CP74-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -113,7 +107,7 @@ layout my_layout
   legend off
   
    # Par defaut, la legende est de 14 cm de largeur
-   #  legend-width 14 cm
+     legend-width 14.5 cm
   
    # Specification la position de la manchette : interieur
    # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -167,7 +161,7 @@ layout my_layout
 	endcode  
 
 # add extended-elev on the same pdf
- map-image 200 0 s Outputs/CP74-coupe2015.pdf
+ map-image 200 0 s Outputs/CP74-coupe.pdf
 
 endlayout
 
@@ -301,20 +295,20 @@ endlayout
 
   
 # 3-EXPORTS   
-#export map -fmt xvi -layout xviexport -o Data/CP74-2015-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/CP74-2015-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/CP74-2020-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/CP74-2205-coupe.xvi
 
 # Select maps
-	select MP-CP74-plan-tot
-	select MC-CP74-coupe-tot
+	select MP-CP74-plan-tot@CP74
+	select MC-CP74-coupe-tot@CP74
 	 
-export map -projection extended -layout my_layout-coupe -o Outputs/CP74-coupe2015.pdf 
-export map -o Outputs/CP74-plan2015.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP74-coupe.pdf 
+export map -o Outputs/CP74-plan.pdf -layout my_layout
  
- #export model -o Outputs/CP74.lox
+export model -o Outputs/CP74.lox
   
- # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/CP74 -layout my_layout
+# Export des fichiers ESRI
+#export map -proj plan -fmt esri -o Outputs/CP74 -layout my_layout
   
- # Export des fichiers kml
- #export map -proj plan -fmt kml -o Outputs/CP74-2015.kml -layout my_layout
+# Export des fichiers kml
+export map -proj plan -fmt kml -o Outputs/CP74.kml -layout my_layout

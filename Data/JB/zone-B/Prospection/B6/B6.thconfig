@@ -142,10 +142,10 @@ endlayout
 
 # Select maps
 	select MP-B6-plan-tot@B6
-	select MC-B6-coupe-tot@B6
+	#select MC-B6-coupe-tot@B6
 	  
- export map -o Outputs/B6-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/B6-coupe.pdf
+export map -o Outputs/B6-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/B6-coupe.pdf
 #export map -o Outputs/B6-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/B6-coupe-Continuations.pdf
 
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/B6-coupe.pdf
 #export map -proj plan -fmt esri -o Outputs/B6 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/B6.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/B6.kml -layout my_layout

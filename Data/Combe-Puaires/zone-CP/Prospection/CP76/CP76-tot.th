@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CP70 -title "CP70"
-	input Data/CP70.th
+survey CP76 -title "CP76"
+	input Data/CP76.th
 
 	# pour le plan
-	input Data/CP70.th2
+	input Data/CP76.th2
 	# Pour la coupe et le plan
-	#input Data/CP70-coupe.th2
+	#input Data/CP76-coupe.th2
 
-	input CP70-maps.th
+	input CP76-maps.th
 endsurvey

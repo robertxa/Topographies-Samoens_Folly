@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP76 -title "CP76"
+
+	centerline
+		cs lat-long
+		fix		CP76	46.11894 6.81031 2268
+		station   CP02      "CP02" entrance continuation explored 13m
+
+
+		explo-date 2011.07.15
+			explo-team "Romain Roure"
+  
+	endcenterline
+endsurvey

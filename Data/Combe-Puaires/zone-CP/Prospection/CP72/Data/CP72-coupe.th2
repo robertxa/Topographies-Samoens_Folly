@@ -1,0 +1,60 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -131.0 410.0 735.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap SC-CP72-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [44.0 167.0 42.0 452.0 0.0 0.0 0 10.0 m]
+
+line wall -subtype ice
+  100.0 181.0
+  100.0 181.0 137.0 219.0 148.0 221.0
+  159.0 223.0 167.0 232.0 191.0 220.0
+  215.0 208.0 254.0 179.0 254.0 179.0
+  smooth off
+endline
+
+point 100.0 181.0 altitude -align left -value [-10 m]
+
+point 76.0 442.0 altitude -align left
+
+point 277.0 337.0 height -value [-10 m]
+
+line rope
+  102.0 440.0
+  144.0 448.0
+  147.0 226.0
+endline
+
+point 125.0 602.0 label -text "<bf>CP72" -scale xl
+
+point 143.0 506.0 entrance -orientation 171.2
+
+point 76.0 442.0 station -name CP72@CP72
+
+line wall -subtype invisible
+  250.0 488.0
+  250.0 488.0 92.0 467.0 76.0 442.0
+endline
+
+line wall
+  254.0 179.0
+  254.0 179.0 234.0 252.0 232.0 271.0
+  230.0 290.0 221.0 343.0 222.0 367.0
+  223.0 391.0 218.0 465.0 223.0 470.0
+  228.0 475.0 250.0 488.0 250.0 488.0
+  smooth off
+endline
+
+line wall
+  76.0 442.0
+  76.0 442.0 102.0 447.0 102.0 440.0
+  102.0 433.0 98.0 381.0 98.0 353.0
+  98.0 325.0 100.0 268.0 100.0 241.0
+  100.0 214.0 100.0 181.0 100.0 181.0
+  smooth off
+endline
+
+endscrap
+
+

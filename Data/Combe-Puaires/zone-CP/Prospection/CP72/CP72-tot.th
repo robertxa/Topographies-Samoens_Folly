@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2020 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CP72 -title "CP72"
+	input Data/CP72.th
+
+	# pour le plan
+	input Data/CP72.th2
+	# Pour la coupe et le plan
+	input Data/CP72-coupe.th2
+
+	input CP72-maps.th
+endsurvey

@@ -1,0 +1,71 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -129.5 364.2206 271.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {157.479 1 1.0} {102.3596 CP74} CP74-2205-coupe.xvi 0 {}
+
+
+
+scrap SC-CP74-1 -projection extended -station-names "" "@CP74" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+line wall -subtype invisible
+  185.0 100.0
+  185.0 100.0 141.0 108.0 130.5 102.0
+endline
+
+line wall
+  187.5 52.5
+  187.5 52.5 170.0 47.5 170.0 53.0
+  170.0 58.5 166.0 73.5 168.0 79.0
+  170.0 84.5 171.0 85.5 175.0 90.5
+  179.0 95.5 185.0 100.0 185.0 100.0
+  smooth off
+endline
+
+line wall
+  156.5 24.0
+  156.5 24.0 165.5 24.5 166.5 29.5
+  167.5 34.5 165.0 42.0 170.0 43.0
+  175.0 44.0 186.5 45.0 186.5 45.0
+  smooth off
+endline
+
+point 155.5 141.0 label -text "<bf>CP74" -scale xl
+
+point 156.5 118.5 entrance -orientation 180.2
+
+line rope
+  157.479 102.3596
+  156.5 24.0
+endline
+
+point 125.0 6.0 continuation -attr code D -text "Vérifier si ça passe ? Pas de courant d'air" -attr Cavite "CP74" -attr CA " "
+
+point 110.5 71.0 height -value [-10 m]
+
+point 115.5 21.5 altitude -align left
+
+point 130.5 102.0 altitude -align left
+
+point 201.5 50.0 water-flow -orientation 260.5
+
+line wall -subtype debris
+  137.0 17.0
+  137.0 17.0 152.0 22.0 156.5 24.0
+endline
+
+line wall
+  130.5 102.0
+  130.5 102.0 151.0 103.5 151.0 100.0
+  151.0 96.5 143.0 83.0 140.0 77.5
+  137.0 72.0 116.5 53.5 116.5 45.5
+  116.5 37.5 115.5 21.5 115.5 21.5
+  smooth off
+endline
+
+point 150.619 23.9396 station -name 1
+
+point 157.479 102.3596 station -name 0
+
+endscrap
+
+

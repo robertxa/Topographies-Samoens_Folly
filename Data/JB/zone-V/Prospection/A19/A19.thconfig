@@ -155,4 +155,4 @@ endlayout
 #export map -proj plan -fmt esri -o Outputs/A19 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/A19.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/A19.kml -layout my_layout
