@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP2 -title "CP2"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP2      46.116133     006.79755      2123
+		station   CP2      "CP02" entrance continuation explored 51m air-draught
+
+		explo-date 1974.08.05
+			explo-team "Pierre Cahinght"
+			explo-team "Serge Aviotte"
+		explo-date 1977.08.15
+			explo-team "Christian Rigaldie"
+			explo-team "Philippe Lavabre"
+		explo-date 2000.07.13
+			explo-team "Stéphane Lips"
+  
+	endcenterline
+endsurvey

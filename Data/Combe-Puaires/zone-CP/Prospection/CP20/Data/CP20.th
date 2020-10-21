@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP20 -title "CP20"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP20      46.114498     6.794954      2033
+		station   CP20      "CP20" entrance continuation explored 25m
+
+		explo-date 1978.08.02
+			explo-team "Frédéric Palu"
+			explo-team "Philippe Lavabre"
+		explo-date 1983.09.20
+			explo-team "Christophe Ohl"
+			explo-team "Jean-Bernard/de Chabelier"
+
+	endcenterline
+endsurvey

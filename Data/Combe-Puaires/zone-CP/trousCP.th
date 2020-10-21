@@ -12,10 +12,10 @@ survey trousCP -title "Cavités non topographiées de la zone CP"
 cs lat-long
 fix       CP        46.111683     006.78880      1899
 #fix       CP01      46.113550     006.79050      1943
-fix       CP02      46.116133     006.79755      1900 # ALT PAR DEFAULT
+#fix       CP02      46.116133     006.79755      1900 # ALT PAR DEFAULT
 #fix       CP03      46.118016     006.80306      1900 # ALT PAR DEFAULT
-fix       CP04      46.118050     006.79940      2197
-fix       CP05      46.118333     006.79891      2184
+#fix       CP04      46.118050     006.79940      2197
+#fix       CP05      46.118333     006.79891      2184
 #fix       CP06      46.118666     006.79861      2163
 fix       CP08      46.111568     6.787626      1857
 fix       CP09      46.111850     006.78926      1902
@@ -82,9 +82,9 @@ fix		CP71	46.11190 6.78868 1884
 
 
 station   CP        "CP?" entrance
-station   CP02      "CP02" entrance continuation explored 51m air-draught
-station   CP04      "CP04" entrance continuation explored 22m
-station   CP05      "CP05" entrance continuation explored 40m
+#station   CP02      "CP02" entrance continuation explored 51m air-draught
+#station   CP04      "CP04" entrance continuation explored 22m
+#station   CP05      "CP05" entrance continuation explored 40m
 station   CP08      "CP08" entrance continuation explored 15m air-draught
 station   CP09      "CP09" entrance continuation explored 15m air-draught
 station   CP10      "CP10" entrance continuation explored 15m air-draught

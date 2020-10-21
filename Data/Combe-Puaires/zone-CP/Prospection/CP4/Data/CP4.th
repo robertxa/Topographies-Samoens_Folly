@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP4 -title "CP4"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP4      46.118050     006.79940      2197
+		station   CP4      "CP04" entrance continuation explored 22m
+
+		explo-date 1974.08.07
+			explo-team "Christian Rigaldie"
+  
+	endcenterline
+endsurvey

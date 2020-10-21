@@ -1,0 +1,130 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -184.0 -784 506 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP4.gif 0 {}
+
+
+
+scrap SP-CP4-1 -projection plan -author 1974 "Christian Rigaldie" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [118.0 -133.0 102.0 -527.0 0.0 0.0 0 -22 m]
+
+point 56.0 -112.0 label -text "<bf>CP4" -scale xl
+
+point -51.0 -100.0 height -value [-22 m]
+
+point 18.5 -113.5 entrance -orientation 246.0
+
+point -36.0 -137.0 altitude -align top-left -value [-22 m]
+
+point -6.0 -132.0 altitude -align bottom-right
+
+point -47.5 -142.5 narrow-end
+
+line overhang -close on
+  -27.0 -188.0
+  -20.0 -188.0
+  -20.0 -188.0 -20.0 -167.0 -17.0 -160.0
+  -14.0 -153.0 -5.0 -141.0 -6.0 -132.0
+  -7.0 -123.0 -8.0 -99.0 -8.0 -99.0
+  smooth off
+  -20.0 -99.0
+  -20.0 -99.0 -29.0 -114.0 -28.0 -119.0
+  -25.61 -130.93 -28.0 -147.0 -28.0 -152.0
+  -28.0 -157.0 -27.0 -188.0 -27.0 -188.0
+  smooth off
+endline
+
+line wall
+  -36.0 -146.0
+  -36.0 -146.0 -28.0 -142.0 -28.0 -152.0
+  -28.0 -162.0 -27.0 -188.0 -27.0 -188.0
+  smooth off
+endline
+
+line wall
+  -20.0 -99.0
+  -20.0 -99.0 -25.0 -111.0 -28.0 -119.0
+  -31.0 -127.0 -36.0 -137.0 -36.0 -137.0
+  smooth off
+endline
+
+line wall -reverse on
+  -8.0 -99.0
+  -8.0 -99.0 -5.0 -121.0 -6.0 -132.0
+  -7.0 -143.0 -17.0 -149.0 -17.0 -160.0
+  -17.0 -171.0 -20.0 -188.0 -20.0 -188.0
+  smooth off
+endline
+
+point -15.0 -126.0 station -name CP4@CP4
+
+endscrap
+
+
+
+scrap SC-CP4-1 -projection extended -author 1974 "Christian Rigaldie" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [118.0 -133.0 102.0 -527.0 0.0 0.0 0 -22 m]
+
+point 209.5 -139.5 station -name CP4@CP4
+
+point 256.0 -101.0 entrance -orientation 180.0
+
+line wall -subtype invisible
+  358.0 -133.0
+  358.0 -133.0 244.0 -125.0 220.0 -127.0
+  196.0 -129.0 127.0 -136.0 127.0 -136.0
+  smooth off
+endline
+
+line wall
+  151.0 -615.0
+  151.0 -615.0 167.0 -580.0 173.0 -559.0
+  179.0 -538.0 182.0 -540.0 184.0 -525.0
+  186.0 -510.0 199.0 -486.0 203.0 -464.0
+  207.0 -442.0 228.0 -381.0 234.0 -367.0
+  240.0 -353.0 250.0 -342.0 254.0 -320.0
+  258.0 -298.0 273.0 -248.0 278.0 -230.0
+  283.0 -212.0 297.0 -164.0 310.0 -152.0
+  323.0 -140.0 341.0 -133.0 358.0 -133.0
+endline
+
+line wall
+  149.0 -550.0
+  134.0 -614.0
+endline
+
+line rope
+  200.0 -147.0
+  226.0 -148.0
+  174.0 -420.0
+  172.0 -539.0
+endline
+
+point 127.0 -136.0 altitude -align left
+
+point 111.0 -530.0 altitude -align left -value [-22 m]
+
+point 299.0 -337.0 height -value [-22 m]
+
+point 134.0 -646.0 narrow-end
+
+line wall -subtype debris
+  119.0 -509.0
+  119.0 -509.0 103.0 -529.0 119.0 -536.0
+  135.0 -543.0 149.0 -537.0 149.0 -550.0
+endline
+
+line wall
+  127.0 -136.0
+  127.0 -136.0 163.0 -142.0 180.0 -145.0
+  197.0 -148.0 208.0 -144.0 208.0 -170.0
+  208.0 -196.0 187.0 -234.0 187.0 -255.0
+  187.0 -276.0 174.0 -331.0 163.0 -349.0
+  152.0 -367.0 154.0 -375.0 146.0 -405.0
+  138.0 -435.0 139.0 -446.0 134.0 -466.0
+  129.0 -486.0 126.0 -497.0 119.0 -509.0
+endline
+
+point 252.5 -57.5 label -text "<bf>CP4" -scale xl
+
+endscrap
+
+

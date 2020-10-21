@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP5 -title "CP5"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP5      46.118333     006.79891      2184
+		station   CP5      "CP05" entrance continuation explored 40m
+
+		explo-date 1974.08.07
+			explo-team "Daniel Colliard"
+			explo-team "Bernard Lips"
+		explo-date 1974.08.08
+			explo-team "Daniel Colliard"
+			explo-team "Bernard Lips"
+		explo-date 2001.07.21
+			explo-team "Agnès Galmiche"
+			explo-team "Josiane Lips"	
+			explo-team "Sylvain Cochon"
+  
+	endcenterline
+endsurvey
