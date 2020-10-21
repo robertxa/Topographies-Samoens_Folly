@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP26 -title "CP26"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP26      46.115900     006.79823      2134
+		station   CP26      "CP26" entrance continuation explored 04m
+
+		#explo-date ..
+		#	explo-team ""
+  
+	endcenterline
+endsurvey

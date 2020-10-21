@@ -7,17 +7,17 @@ encoding  utf-8
 
 scrap SP-CP4-1 -projection plan -author 1974 "Christian Rigaldie" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [118.0 -133.0 102.0 -527.0 0.0 0.0 0 -22 m]
 
-point 56.0 -112.0 label -text "<bf>CP4" -scale xl
+point 103.0 -76.0 label -text "<bf>CP4" -scale xl
 
-point -51.0 -100.0 height -value [-22 m]
+point -74.0 -81.0 height -value [-22 m]
 
-point 18.5 -113.5 entrance -orientation 246.0
+point 31.5 -107.5 entrance -orientation 246.0
 
 point -36.0 -137.0 altitude -align top-left -value [-22 m]
 
 point -6.0 -132.0 altitude -align bottom-right
 
-point -47.5 -142.5 narrow-end
+point -62.5 -145.5 narrow-end
 
 line overhang -close on
   -27.0 -188.0
@@ -84,6 +84,7 @@ line wall
   258.0 -298.0 273.0 -248.0 278.0 -230.0
   283.0 -212.0 297.0 -164.0 310.0 -152.0
   323.0 -140.0 341.0 -133.0 358.0 -133.0
+  smooth off
 endline
 
 line wall
@@ -110,6 +111,7 @@ line wall -subtype debris
   119.0 -509.0
   119.0 -509.0 103.0 -529.0 119.0 -536.0
   135.0 -543.0 149.0 -537.0 149.0 -550.0
+  smooth off
 endline
 
 line wall
@@ -121,6 +123,7 @@ line wall
   152.0 -367.0 154.0 -375.0 146.0 -405.0
   138.0 -435.0 139.0 -446.0 134.0 -466.0
   129.0 -486.0 126.0 -497.0 119.0 -509.0
+  smooth off
 endline
 
 point 252.5 -57.5 label -text "<bf>CP4" -scale xl

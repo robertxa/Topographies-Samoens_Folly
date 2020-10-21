@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP66 -title "CP66"
+
+	centerline
+		cs lat-long
+		fix		CP66	46.1127 6.789805 1900
+		station   CP66      "CP66" entrance continuation explored 01m air-draught
+
+		explo-date 2014.07.16
+			explo-team "Max Pinard"
+			explo-team "Frédéric Alavarez"
+			explo-team "Vincent Sordel"
+			explo-team "Clément Baudy"
+			explo-team "Stéphane Lips"
+			explo-team "Gaëtan Poschmann"
+			explo-team "Frédéric Augey"
+			explo-team "Cédric Chambe"
+  
+  
+	endcenterline
+endsurvey

@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP64 -title "CP64"
+
+	centerline
+		cs lat-long
+		fix		CP64	46.112613 6.789954 1909
+		station   CP64      "CP64" entrance continuation explored 01m air-draught
+
+		explo-date 2014.07.16
+			explo-team "Max Pinard"
+			explo-team "Frédéric Alavarez"
+			explo-team "Vincent Sordel"
+			explo-team "Clément Baudy"
+			explo-team "Stéphane Lips"
+			explo-team "Gaëtan Poschmann"
+			explo-team "Frédéric Augey"
+			explo-team "Cédric Chambe"
+  
+	endcenterline
+endsurvey

@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP9 -title "CP9"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP09      46.111850     006.78926      1902
+		station   CP09      "CP09" entrance continuation explored 15m air-draught
+
+		explo-date 1977.08.18
+			explo-team "Françoise Debrosse"
+			explo-team "Benoît/Le Falher"
+			explo-team "Christian Rigaldie"
+			explo-team "Jean-Pierre Stéfanato"
+			explo-team "Cécile Stéfanato"
+			explo-team "Bernard Séroul"
+			explo-team "Henri/de Rocca Serra"
+		explo-date 2000.07.11
+			explo-team "Frédéric Chambat"
+			explo-team "Stéphane Lips"
+  
+	endcenterline
+endsurvey

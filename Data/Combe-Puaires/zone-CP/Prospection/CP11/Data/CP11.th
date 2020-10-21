@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP11 -title "CP11"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP11      46.119783     006.80325      2285
+		station   CP11      "CP11" entrance continuation explored 14m
+		
+		explo-date 1977.08.18
+			explo-team "Françoise Debrosse"
+			explo-team "Benoît/Le Falher"
+			explo-team "Christian Rigaldie"
+			explo-team "Jean-Pierre Stéfanato"
+			explo-team "Cécile Stéfanato"
+			explo-team "Bernard Séroul"
+			explo-team "Henri/de Rocca Serra"
+		explo-date 2001.07.01
+			explo-team "Sylvain Cochon"
+  
+	endcenterline
+endsurvey

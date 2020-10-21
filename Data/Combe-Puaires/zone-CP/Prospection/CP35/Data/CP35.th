@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP35 -title "CP35"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP35      46.116716     006.80240      2250
+		station   CP35      "CP35" entrance continuation explored 20m
+
+		explo-date 2000.07.10
+			explo-team "Josiane Lips"
+			explo-team "Stéphane Lips"
+		explo-date 2000.07.13
+			explo-team "Stéphane Lips"
+			explo-team "Christophe Ferry"
+  
+	endcenterline
+endsurvey

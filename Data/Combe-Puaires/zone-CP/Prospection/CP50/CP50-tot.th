@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CP50 -title "CP50"
+	input Data/CP50.th
+
+	# pour le plan
+	input Data/CP50.th2
+	# Pour la coupe et le plan
+	input Data/CP50-coupe.th2
+
+	input CP50-maps.th
+endsurvey

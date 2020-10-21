@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP41 -title "CP41"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP41      46.119168     006.80581      2251
+		station   CP41      "CP41" entrance continuation explored 10m
+
+		explo-date 2007.07.13
+			explo-team "Paul Coucoureux"
+  
+	endcenterline
+endsurvey

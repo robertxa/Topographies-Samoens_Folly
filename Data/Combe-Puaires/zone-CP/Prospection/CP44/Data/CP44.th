@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP44 -title "CP44"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP44      46.120105     006.81014      2298
+		station   CP44      "CP44" entrance continuation explored 05m
+
+		explo-date 2007.07.12
+			explo-team "Christophe Ferry"
+			explo-team "Frédéric Meignin"
+  
+	endcenterline
+endsurvey

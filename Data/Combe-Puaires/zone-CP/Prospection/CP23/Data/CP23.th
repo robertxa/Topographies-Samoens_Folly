@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP23 -title "CP23"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP23      46.114500     6.79625      2079 # Coordonnées à revoir car fausses !
+		station   CP23      "CP23" entrance continuation explored 02m
+
+		explo-date 2000.07.09
+			explo-team "Josiane Lips"
+			explo-team "Christian Locatelli"
+  
+	endcenterline
+endsurvey

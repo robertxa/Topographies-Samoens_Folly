@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP45 -title "CP45"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP45      46.119814     006.81135      2278
+		station   CP45      "CP45" entrance continuation explored 08m
+
+		explo-date 2007.07.13
+			explo-team "Frédéric Meignin"
+  
+	endcenterline
+endsurvey

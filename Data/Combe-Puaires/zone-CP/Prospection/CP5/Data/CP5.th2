@@ -20,6 +20,7 @@ endline
 line pit
   174.0 -354.5
   174.0 -354.5 171.0 -314.0 177.0 -305.0
+  smooth off
 endline
 
 line pit
@@ -36,15 +37,17 @@ line pit
   smooth off
 endline
 
-point 257.5 -333.0 label -text "<bf>CP5" -scale xl
+point 164.0 -267.0 height -value [-35 m]
+
+point 346.5 -338.0 label -text "<bf>CP5" -scale xl
 
 point 162.5 -338.0 altitude -align top-left -value [-25 m]
 
 point 220.5 -281.0 altitude -align top
 
-point 230.5 -334.5 entrance -orientation 272.4
+point 250.5 -339.5 entrance -orientation 272.4
 
-point 155.5 -345.0 narrow-end
+point 144.5 -353.0 narrow-end
 
 line overhang -close on
   220.5 -281.0
@@ -110,6 +113,7 @@ point 585.0 -208.0 entrance -orientation 205.9
 line wall -subtype invisible
   646.0 -239.0
   646.0 -239.0 507.0 -197.0 432.0 -223.0
+  smooth off
 endline
 
 line wall

@@ -1,0 +1,35 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP10 -title "CP10"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP10      46.111783     006.78843      1886
+		station   CP10      "CP10" entrance continuation explored 15m air-draught
+
+		explo-date 1977.08.18
+			explo-team "Françoise Debrosse"
+			explo-team "Benoît/Le Falher"
+			explo-team "Christian Rigaldie"
+			explo-team "Jean-Pierre Stéfanato"
+			explo-team "Cécile Stéfanato"
+			explo-team "Bernard Séroul"
+			explo-team "Henri/de Rocca Serra"
+		explo-date 2005.02.05
+			explo-team "Stéphane Lips"
+		explo-date 2005.06.18
+			explo-team "Josiane Lips"
+			explo-team "Xavier Robert"
+		explo-date 2005.07.05
+			explo-team "Josiane Lips"
+			explo-team "Christian Locatelli"
+		explo-date 2005.11.06
+			explo-team "Laurent Stehly"
+			explo-team "Xavier Robert"
+  
+	endcenterline
+endsurvey

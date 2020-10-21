@@ -1,0 +1,28 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP65 -title "CP65"
+
+	centerline
+		cs lat-long
+		fix		CP65	46.112983 6.789479 1878
+		station   CP65      "CP65" entrance continuation explored 15m
+
+		explo-date 2014.07.16
+			explo-team "Max Pinard"
+			explo-team "Frédéric Alavarez"
+			explo-team "Vincent Sordel"
+			explo-team "Clément Baudy"
+			explo-team "Stéphane Lips"
+			explo-team "Gaëtan Poschmann"
+			explo-team "Frédéric Augey"
+			explo-team "Cédric Chambe"
+  
+		explo-date 2012.08.15
+			explo-team "Xavier Robert"
+  
+	endcenterline
+endsurvey

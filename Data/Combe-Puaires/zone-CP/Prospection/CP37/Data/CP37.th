@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP37 -title "CP37"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP37      46.119766     006.80256      2261
+		station   CP37      "CP37" entrance continuation explored 08m
+
+		explo-date 2001.07.21
+			explo-team "Agnès Galmiche"
+  
+	endcenterline
+endsurvey

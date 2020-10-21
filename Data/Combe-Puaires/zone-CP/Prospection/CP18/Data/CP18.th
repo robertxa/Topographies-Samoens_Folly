@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP18 -title "CP18"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP18      46.119016     006.80368      2255
+		station   CP18      "CP18" entrance continuation explored 42m
+
+		explo-date 1981.09.10
+			explo-team "Christophe Ohl"
+  
+	endcenterline
+endsurvey

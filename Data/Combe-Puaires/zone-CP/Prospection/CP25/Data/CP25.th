@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP25 -title "CP25"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP25      46.116700     006.80025      2183
+		station   CP25      "CP25" entrance continuation explored 40m
+
+		explo-date 1989.10.28
+			explo-team "Patrick Comte"
+			explo-team "Christophe Ohl"
+			explo-team "Patrice Dubail"
+		explo-date 2006.10.29
+			explo-team "Estelle Forbach"
+			explo-team "Philippe Sénécal"
+			explo-team "Stéphane Lips"
+  
+	endcenterline
+endsurvey

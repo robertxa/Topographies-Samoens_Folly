@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP42 -title "CP42"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP42      46.119749     006.80866      2273
+		station   CP42      "CP42" entrance continuation explored 30m
+
+		explo-date 2007.07.12
+			explo-team "Véronique Leplat"
+			explo-team "Paul Coucoureux"
+  
+	endcenterline
+endsurvey

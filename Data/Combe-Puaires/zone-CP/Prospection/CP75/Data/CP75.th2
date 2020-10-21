@@ -9,6 +9,7 @@ scrap SP-CP75-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "l
 line overhang -clip off
   384.0 390.0
   384.0 390.0 422.0 415.0 430.0 422.0
+  smooth off
 endline
 
 line overhang -clip off
@@ -18,13 +19,13 @@ line overhang -clip off
   smooth off
 endline
 
-point 229.0 586.0 label -text "<bf>CP75" -scale xl
+point 162.0 668.0 label -text "<bf>CP75" -scale xl
 
-point 317.0 455.0 entrance -orientation 147.3
+point 297.0 475.0 entrance -orientation 147.3
 
-point 169.0 161.0 continuation -attr code D -text "Courant d'air froid fort, à désobstruer" -attr Cavite "CP75" -attr CA "Courant d'air froid fort, soufflant en été"
+point 137.0 150.0 continuation -attr code D -text "Courant d'air froid fort, à désobstruer" -attr Cavite "CP75" -attr CA "Courant d'air froid fort, soufflant en été"
 
-point 249.0 220.0 air-draught -orientation 46.2 -subtype summer
+point 222.0 201.0 air-draught -orientation 46.2 -subtype summer
 
 point 368.0 186.0 dig
 
@@ -51,7 +52,7 @@ line wall -subtype invisible
   smooth off
 endline
 
-line wall
+line wall -reverse on
   306.0 284.0
   306.0 284.0 314.0 299.0 321.0 308.0
   328.0 317.0 340.0 324.0 341.0 335.0
@@ -60,7 +61,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   398.0 399.0
   398.0 399.0 380.0 393.0 385.0 385.0
   390.0 377.0 410.0 358.0 402.0 346.0

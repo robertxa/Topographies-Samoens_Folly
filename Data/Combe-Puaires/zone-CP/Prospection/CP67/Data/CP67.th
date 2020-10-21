@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP67 -title "CP67"
+
+	centerline
+		cs lat-long
+		fix		CP67	46.113418 6.789203 1901
+		station   CP67      "CP67" entrance continuation explored 02m
+
+		explo-date 2014.07.16
+			explo-team "Vincent Sordel"
+			explo-team "Max Pinard"
+  
+	endcenterline
+endsurvey

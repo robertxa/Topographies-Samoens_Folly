@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP50 -title "CP50"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP50      46.120466     006.81421      2290
+		station   CP50      "CP50" entrance continuation explored 10m
+
+		explo-date 2007.07.14
+			explo-team "Bernard Lips"
+			explo-team "Philippe Sénécal"
+  
+	endcenterline
+endsurvey

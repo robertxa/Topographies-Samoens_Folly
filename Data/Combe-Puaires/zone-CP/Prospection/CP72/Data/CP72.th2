@@ -1,12 +1,12 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -131.0 526.0 537.0
+##XTHERION## xth_me_area_adjust -131.0 -131.0 598.0 645.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
 
 scrap SP-CP72-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [44.0 167.0 529.0 430.0 0.0 0.0 15 0.0 m]
 
-point 350.0 262.0 height -value [-10 m]
+point 465.0 249.0 height -value [-10 m]
 
 point 349.0 127.0 snow
 
@@ -22,9 +22,9 @@ point 195.0 232.0 snow
 
 point 227.0 266.0 snow
 
-point 230.0 319.0 altitude -align top-left
+point 152.0 236.0 altitude -align left
 
-point 393.0 404.0 label -text "<bf>CP72" -scale xl
+point 418.0 512.0 label -text "<bf>CP72" -scale xl
 
 point 303.0 317.0 entrance -orientation 228.8
 

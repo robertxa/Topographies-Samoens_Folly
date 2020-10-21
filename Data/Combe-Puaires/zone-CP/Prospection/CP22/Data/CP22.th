@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey CP22 -title "CP22"
+
+	centerline -extend right
+		cs lat-long
+		fix       CP22      46.117966     006.80428      2245
+		station   CP22      "CP22" entrance continuation explored 60m
+
+		explo-date 1985.07.08
+			explo-team "Jean-Bernard/de Chabelier"
+			explo-team "Christophe Ohl"
+		explo-date 1995.08.21
+			explo-team "Christophe Ferry"
+			explo-team "Olivier Vidal"
+			explo-team "W. Bortoletto"
+		explo-date 1995.98.22
+			explo-team "Olivier Vidal"
+			explo-team "Christophe Ferry"
+  
+	endcenterline
+endsurvey
