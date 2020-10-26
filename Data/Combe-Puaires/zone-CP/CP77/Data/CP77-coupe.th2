@@ -1,0 +1,165 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 292.75 288.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.739 1 1.0} {50.4717 0} CP77-2020-coupe.xvi 0 {}
+
+
+
+scrap SC-CP77-1 -projection extended -station-names "" "@CP77" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+line wall -subtype invisible
+  112.75 132.5
+  112.75 132.5 89.75 133.25 85.0 125.5
+endline
+
+line wall -subtype debris
+  107.0 112.0
+  107.0 112.0 101.5 119.25 100.0 120.25
+  98.5 121.25 99.0 124.5 100.0 125.0
+  101.0 125.5 99.5 130.25 102.75 130.5
+  106.0 130.75 112.75 132.5 112.75 132.5
+  smooth off
+endline
+
+line wall
+  118.75 95.0
+  118.75 95.0 119.5 84.75 119.5 81.5
+  119.5 78.25 119.25 74.0 116.0 72.5
+  112.75 71.0 110.75 73.0 109.25 73.5
+  107.75 74.0 105.75 77.5 106.25 79.0
+  106.75 80.5 109.75 87.75 110.0 90.25
+  110.25 92.75 109.0 102.25 110.75 102.75
+  112.5 103.25 121.0 104.75 117.75 106.25
+  114.5 107.75 107.0 112.0 107.0 112.0
+  smooth off
+endline
+
+line wall
+  153.0 94.75
+  153.0 94.75 141.0 88.75 138.0 88.75
+  135.0 88.75 128.75 88.25 128.25 89.75
+  127.75 91.25 127.75 96.0 127.75 96.0
+  smooth off
+endline
+
+line wall
+  108.75 60.5
+  108.75 60.5 112.0 60.5 113.5 63.25
+  115.0 66.0 114.0 67.25 120.75 68.25
+  127.5 69.25 136.75 71.5 139.5 71.5
+  142.25 71.5 154.75 73.5 154.75 73.5
+  smooth off
+endline
+
+line wall -subtype debris
+  103.0 61.25
+  103.0 61.25 104.75 59.25 108.75 60.5
+endline
+
+line wall
+  129.75 15.0
+  129.75 15.0 128.0 23.5 128.0 25.25
+  128.0 27.0 130.75 30.25 129.25 33.25
+  127.75 36.25 127.5 39.75 121.5 39.75
+  115.5 39.75 113.0 39.75 110.75 41.25
+  108.5 42.75 104.0 43.0 102.5 46.0
+  101.0 49.0 100.75 52.5 101.0 55.25
+  101.25 58.0 99.25 60.25 103.0 61.25
+endline
+
+point 129.0 0.75 continuation -attr Code D -attr Cavite "CP77" -attr Reseau "Combe aux Puaires" -attr CA "Courant d'air soufflant en été" -text "Perte dans des cailloux, courant d'air soufflant en été, à désobstruer"
+
+point 163.5 86.25 continuation -attr Code D -attr Cavite "CP77" -attr Reseau "Combe aux Puaires" -attr CA " " -text "Faille à explorer après élargissement de l'étroiture ponctuelle"
+
+point 63.0 82.75 height -value [-12 m]
+
+line rope
+  88.0 126.25
+  106.25 109.75
+  97.25 71.75
+  98.25 36.25
+endline
+
+point 93.0 137.75 air-draught -orientation 328.7 -subtype summer
+
+point 128.75 45.25 air-draught -orientation 281.2 -subtype summer
+
+point 139.5 24.25 dig
+
+point 86.25 106.5 dig
+
+point 119.0 17.5 water-flow -orientation 159.9 -subtype intermittent
+
+point 96.0 59.25 water-flow -orientation 180.3 -subtype intermittent
+
+point 124.0 94.5 water-flow -orientation 180.3 -subtype intermittent
+
+point 104.75 124.0 water-flow -orientation 217.3 -subtype intermittent
+
+point 126.0 60.75 label -text "etr."
+
+point 116.5 117.25 label -text "etr."
+
+point 82.0 159.25 label -text "<bf>CP77" -scale xl
+
+point 84.75 138.25 entrance -orientation 136.6
+
+point 85.0 125.5 altitude -align left
+
+point 129.75 15.0 altitude -align right
+
+point 127.25 14.75 breakdown-choke -orientation 340.8
+
+line wall -close on -outline in
+  112.0 35.25
+  112.0 35.25 119.5 35.0 120.0 33.0
+  120.5 31.0 118.75 30.5 116.5 31.5
+  114.25 32.5 112.0 35.25 112.0 35.25
+  smooth off
+endline
+
+line wall -subtype debris
+  78.75 38.25
+  78.75 38.25 85.25 35.25 90.25 35.25
+  95.25 35.25 100.0 34.75 105.25 32.75
+  110.5 30.75 119.75 30.25 120.75 27.0
+  121.75 23.75 123.75 17.25 124.0 15.75
+endline
+
+line wall
+  93.5 114.25
+  93.5 114.25 100.25 109.75 100.25 105.5
+  100.25 101.25 99.75 90.0 94.75 87.5
+  89.75 85.0 80.0 95.5 78.0 83.75
+  76.0 72.0 78.5 66.5 75.5 64.75
+  72.5 63.0 66.0 63.25 69.0 55.0
+  72.0 46.75 73.75 47.75 74.75 44.25
+  75.75 40.75 76.5 38.5 78.75 38.25
+endline
+
+line wall -subtype debris
+  85.0 125.5
+  85.0 125.5 84.0 121.75 85.75 119.5
+  87.5 117.25 93.5 114.25 93.5 114.25
+  smooth off
+endline
+
+point 128.209 17.561699999999995 station -name 2
+
+point 122.509 33.781699999999994 station -name 1
+
+point 78.739 50.4717 station -name 0
+
+point 138.929 75.59169999999999 station -name 5
+
+point 111.759 68.9717 station -name 4
+
+point 100.109 70.3917 station -name 3
+
+point 106.139 108.5017 station -name 6
+
+point 86.799 125.98169999999999 station -name CP77
+
+endscrap
+
+

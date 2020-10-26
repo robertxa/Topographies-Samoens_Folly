@@ -1,0 +1,102 @@
+# 2020.10.24 created by TopoDroid v 5.0.5c
+
+survey CP77 -title "CP77" -entrance "CP77"
+
+  centerline
+	cs lat-long
+	fix CP77 46.11488	6.79661	2086
+	
+	date 2020.10.24 
+    # team Groupe Spéléologique Vulcain 
+    	team "Xavier Robert"
+    explo-date 2020.09.05
+    	explo-team "Xavier Robert"
+    	explo-team "Frédéric Gennerat"
+    	explo-team "Arnaud Triquet"
+    explo-date 2020.10.24
+    	explo-team "Frédéric Gennerat"
+    	explo-team "Patrice Plantier"
+    	explo-team "Laure Sahmaoui"
+    	explo-team "Xavier Robert"
+    	
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    0 . 1.14 39.0 6.1	# Base du puits d'entrée
+    0 . 2.18 50.5 55.4
+    0 . 3.58 40.6 79.6
+    0 . 1.27 137.9 76.0
+    0 . 1.48 149.0 4.2
+    0 . 1.84 125.8 2.1
+    0 . 2.84 106.1 0.5
+    0 . 1.93 87.9 -6.2
+    0 . 2.01 96.4 -63.7
+    0 . 2.77 106.2 -42.4
+    0 . 4.47 109.9 -35.4
+    0 . 4.29 110.7 -17.4
+    0 . 3.27 109.1 -10.8
+    0 . 3.32 101.7 -22.3
+    0 . 5.19 108.3 -19.8
+    0 . 4.35 113.8 -25.4
+    0 . 2.71 118.5 -28.4
+    0 . 3.23 115.7 23.5
+    0 . 2.56 108.5 36.5
+    0 . 2.39 119.2 35.6
+    0 . 5.10 116.2 31.0
+    0 . 4.80 112.2 31.6
+    0 . 4.97 113.0 49.2
+    0 . 3.69 120.8 51.6
+    0 . 1.13 4.2 8.8
+    0 . 1.48 315.0 18.8
+    0 . 1.47 1.6 75.9
+    0 . 4.30 28.6 84.4
+    0 . 1.52 67.9 -82.9
+    0 . 1.03 337.7 -46.2
+    extend right
+    0 1 5.95 112.4 -20.9
+    # extend auto
+    1 . 0.23 214.4 -3.0
+    1 . 0.97 129.5 -9.9
+    1 . 0.78 136.1 81.5
+    1 . 0.56 308.1 -55.5
+    1 . 1.20 310.8 -82.9
+    extend right
+    1 2 2.18 136.6 -70.6	# Perte dans les cailloux, courant d'air, à désobstruer
+    0 3 3.71 113.7 43.0
+    # extend auto
+    3 . 0.41 16.9 1.1
+    3 . 0.91 268.9 -21.1
+    3 . 2.25 293.0 -11.7
+    3 . 3.10 302.7 -11.8
+    3 . 0.78 312.6 -13.0
+    3 . 4.72 299.2 -80.8
+    3 . 1.33 100.6 -82.4
+    3 . 0.89 134.6 7.1
+    3 . 1.66 126.6 -7.5
+    3 . 0.97 102.0 -6.6
+    3 . 1.76 122.1 -45.8
+    3 . 1.99 120.4 -19.9
+    3 . 1.32 125.2 15.3
+    3 . 0.62 85.7 2.5
+    extend right
+    3 4 1.49 119.1 -6.8
+    # extend auto
+    4 . 0.47 220.4 -5.9
+    4 . 0.92 187.5 -70.7
+    4 . 0.98 121.7 14.4
+    4 . 0.78 138.6 17.1
+    4 . 2.48 130.3 25.4
+    extend right
+    4 5 3.55 133.3 13.6	# Suite de la faille après étroiture (station 4) à élargir
+    extend ignore
+    3 6 4.90 242.0 81.0	# sommet étroit du puits d'entrée
+    # extend auto
+    #5 . 4.47 241.9 81.0
+    #5 . 4.89 242.4 81.1
+    #5 . 5.55 241.6 81.3
+    extend right
+    CP77 6 3.31 105.1 -42.1	# Entrée
+  endcenterline
+
+endsurvey

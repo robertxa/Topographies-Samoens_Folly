@@ -11,12 +11,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source Data/CP77.th
-source Data/CP77.th2
-source Data/CP77-coupe.th2
-
-# Add maps definitions
-source CP77-maps.th
+source CP77-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -112,7 +107,7 @@ layout my_layout
   legend off
   
    # Par defaut, la legende est de 14 cm de largeur
-   #  legend-width 14 cm
+     legend-width 18.5 cm
   
    # Specification la position de la manchette : interieur
    # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -166,7 +161,7 @@ layout my_layout
 	endcode  
 
 # add extended-elev on the same pdf
-# map-image 200 0 s Outputs/CP77-coupe.pdf
+ map-image 105 -100 sw Outputs/CP77-coupe.pdf
 
 endlayout
 
@@ -304,10 +299,10 @@ export map -fmt xvi -layout xviexport -o Data/CP77-2020-map.xvi
 export map -proj extended -layout xviexport -fmt xvi -o Data/CP77-2020-coupe.xvi
 
 # Select maps
-	select MP-CP77-plan-tot
-	select MC-CP77-coupe-tot
+	select MP-CP77-plan-tot@CP77
+	select MC-CP77-coupe-tot@CP77
 	 
-export map -projection extended -layout my_layout-coupe -o Outputs/CP74-coupe.pdf 
+export map -projection extended -layout my_layout-coupe -o Outputs/CP77-coupe.pdf 
 export map -o Outputs/CP77-plan.pdf -layout my_layout
  
 export model -o Outputs/CP77.lox
