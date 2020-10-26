@@ -1,0 +1,77 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -450.0 -134.0 1212.0 1308.0
+##XTHERION## xth_me_area_zoom_to 50
+
+
+
+scrap SP-CP23-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [448.0 544.0 752.0 544.0 0.0 0.0 2 0.0 m]
+
+area blocks
+  l16-621-762
+endarea
+
+line label -id l16-621-762 -close on
+  622.0 761.0
+  622.0 761.0 565.0 660.0 541.0 591.0
+  517.0 522.0 501.0 457.0 562.0 458.0
+  623.0 459.0 707.0 519.0 707.0 575.0
+  707.0 631.0 742.0 717.0 699.0 735.0
+  656.0 753.0 622.0 761.0 622.0 761.0
+  smooth off
+endline
+
+point 798.0 653.0 altitude -align bottom-right -value [-2 m]
+
+point 523.0 664.0 altitude -align left
+
+line overhang
+  664.0 701.0
+  664.0 701.0 588.0 726.0 582.0 734.0
+  576.0 742.0 569.0 760.0 580.0 780.0
+endline
+
+line overhang
+  459.0 423.0
+  459.0 423.0 472.0 533.0 502.0 536.0
+  532.0 539.0 592.0 531.0 605.0 536.0
+endline
+
+point 1020.0 855.0 air-draught -orientation 267.3 -subtype summer
+
+point 1073.0 683.0 narrow-end
+
+point -430.0 1291.0 label -text "<bf>CP23" -scale xl
+
+point 165.0 819.0 entrance -orientation 117.4
+
+line wall -subtype invisible
+  580.0 780.0
+  580.0 780.0 439.0 504.0 452.0 446.0
+  465.0 388.0 459.0 423.0 459.0 423.0
+  smooth off
+endline
+
+line wall
+  799.0 671.0
+  799.0 671.0 729.0 661.0 714.0 668.0
+  699.0 675.0 701.0 686.0 664.0 701.0
+  627.0 716.0 596.0 723.0 582.0 734.0
+  568.0 745.0 580.0 780.0 580.0 780.0
+  smooth off
+endline
+
+line wall
+  459.0 423.0
+  459.0 423.0 476.0 530.0 502.0 536.0
+  528.0 542.0 565.0 533.0 605.0 536.0
+  645.0 539.0 680.0 570.0 685.0 595.0
+  690.0 620.0 706.0 643.0 726.0 644.0
+  746.0 645.0 798.0 653.0 798.0 653.0
+  smooth off
+endline
+
+point 555.0 705.0 station -name CP23@CP23
+
+endscrap
+
+
