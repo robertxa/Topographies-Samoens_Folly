@@ -8,9 +8,9 @@ survey DR5 -title "DR5"
 
 	centerline -extend right
 		cs lat-long
-		fix       DR5      46.120450     006.80371      2244
+		fix       DR5      46.120450     006.80371      2326	# 2244
 		station   DR5      "DR5" entrance continuation explored 15m
-		fix       DR06      46.120600     006.80380      2329
+		fix       DR06      46.120600     006.80380      2336	# 2329
 		station   DR06      "DR06" entrance continuation explored 30m
 
 		explo-date 1981.10.18

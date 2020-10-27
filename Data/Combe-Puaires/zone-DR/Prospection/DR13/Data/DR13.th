@@ -8,8 +8,8 @@ survey DR13 -title "DR13"
 
 	centerline -extend right
 		cs lat-long
-		fix       DR13a     46.122383     006.80896      2300 # ALT PAR DEFAULT
-		fix       DR13b     46.122283     006.80896      2042
+		fix       DR13a     46.122383     006.80896      2486
+		fix       DR13b     46.122283     006.80896      2482	# 2042
 		station   DR13a     "DR13a" entrance continuation explored 15m
 		station   DR13b     "DR13b" entrance continuation explored 20m
 

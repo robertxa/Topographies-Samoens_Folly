@@ -7,10 +7,10 @@ encoding utf-8
 survey AV8 -title "AV8" -entrance "AV8"
 
  centerline
-#  cs EPSG:27572
-# fix AV8   946.3000       2132.400       2550.000 
-   cs lat-long
- fix AV8  46.1032000 006.8180500 2550.0 
+	#cs EPSG:27572
+	#fix AV8   946.3000       2132.400       2550
+	cs lat-long
+	fix AV8  46.10320	6.81805	2553	#2550
  
 	date 1989.08.28
 		team "Christophe Ohl"

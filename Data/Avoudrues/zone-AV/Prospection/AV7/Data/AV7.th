@@ -4,16 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey DR16 -title "DR16"
+survey AV7 -title "AV7"
 
 	centerline -extend right
 		cs lat-long
+		fix       AV7       46.101533     6.81595     2490
+		station   AV7       "AV7" entrance continuation explored 10m
+		
+		explo-date 1987.08.15
+			explo-team "Bernard Lips"  
 
-		fix       DR16      46.121550     006.80840      2436
-		station   DR16      "DR16" entrance continuation explored 12m
-
-		explo-date 2001.07.21
-			explo-team "Bernard Lips"
-			
 	endcenterline
+
 endsurvey

@@ -12,7 +12,7 @@ survey A21 -title "A(V)21 - A24" -entrance "V21" -entrance "A24"
 centerline
  cs lat-long
  #fix A21    46.1048333 6.7830667  01857
- fix V21    46.104833         6.783067     1857.000
+ fix V21    46.104833         6.783067     1864	# 1857
  station V21 entrance
    date 1976.06.16
 #   declination -2.5834 degrees
@@ -243,7 +243,7 @@ centerline
  centerline
   date 2005.07.02
  cs lat-long
- fix A24 46.1041000 6.7810667  01809
+ fix A24 46.1041000 6.7810667  1813	# 1809
  station A24 entrance
    calibrate counter 0 0.500
   team "Stéphane Lips"
