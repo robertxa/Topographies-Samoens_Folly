@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap SP-CH27-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap SP-CH23-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
 line border -reverse on
   46.25 55.75
@@ -24,7 +24,7 @@ point 15.5 87.0 label -text "+2 m"
 
 point 61.75 58.75 label -text "0 m"
 
-point 96.25 46.25 label -text "<bf>CH27" -scale xl
+point 96.25 46.25 label -text "<bf>CH23" -scale xl
 
 point 11.75 61.25 pebbles -scale s
 
@@ -41,7 +41,7 @@ line border -reverse on
   27.5 61.75
 endline
 
-point -7.25 91.0 continuation -attr Code D -attr Cavite CH27 -attr Reseau " " -attr CA " " -text "A désobstruer"
+point -7.25 91.0 continuation -attr Code D -attr Cavite CH23 -attr Reseau " " -attr CA " " -text "A désobstruer"
 
 point -1.0 79.75 narrow-end -orientation 138.2
 
@@ -74,11 +74,11 @@ line wall
   smooth off
 endline
 
-point 6.6312 63.461 station -name 2@CH27
+point 6.6312 63.461 station -name 2@CH23
 
-point 20.301199999999998 57.190999999999995 station -name 1@CH27
+point 20.301199999999998 57.190999999999995 station -name 1@CH23
 
-point 55.8912 44.480999999999995 station -name CH27@CH27
+point 55.8912 44.480999999999995 station -name CH23@CH23
 
 endscrap
 

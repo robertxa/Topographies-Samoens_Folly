@@ -3,14 +3,14 @@ encoding  utf-8
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
-
+  
 source CH23-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../../../../config.thc 
+input ../../../../config.thc 
   
 layout xviexport
 	scale 1 1000
@@ -21,20 +21,20 @@ endlayout
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBCHpra
+	copy Coords_Header_JBCHe
 	copy drawingconfig
-	copy header-plan-schema
+	copy header_coupe
 	copy langue-fr
   
 	doc-title "CH23"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 250
+	base-scale 1 350
 	scale 1 250
 	scale-bar 25 m
 	#rotate 2.25
-	# origin 12 22 0 m
-	# origin-label 100 K
+	#origin 12 22 0 m
+	#origin-label 100 K
 	#color map-bg 85
 	color map-fg [100 100 80]
 	transparency on
@@ -53,10 +53,10 @@ layout my_layout
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
-  
+ 
 	# To change the Title          
 	code tex-map
-		\edef\temp{\the\cavename}   % cavename from Therion
+  		\edef\temp{\the\cavename}   % cavename from Therion
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
@@ -64,25 +64,24 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		% Ajout de la spéléométrie explorée
-		\cavelength{20\thinspace{}m}
-		\cavedepth{-15\thinspace{}m}
 	endcode  
-  
+
 endlayout
  
-  
+ 
+ 
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBCHpra
+	copy Coords_Header_JBCHe
 	copy drawingconfig
-	copy header_coupe-schema
+	copy header_coupe
 	copy langue-fr
   
 	doc-title "CH23"
 	doc-author "Xavier Robert"
-	base-scale 1 250
+	cs UTM32
+	base-scale 1 350
 	scale 1 250
 	scale-bar 25 m
 	#rotate 2.25
@@ -98,7 +97,7 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 50 80 ne
+	map-header 0 00 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -106,7 +105,7 @@ layout my_layout-coupe
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
- 
+
 	# To change the Title          
 	code tex-map
 		\edef\temp{\the\cavename}   % cavename from Therion
@@ -117,13 +116,9 @@ layout my_layout-coupe
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		% Ajout de la spéléométrie explorée
-		\cavelength{20\thinspace{}m}
-		\cavedepth{-15\thinspace{}m}
 	endcode  
 
 endlayout
-
 
 layout my_layout-Continuations
 	copy my_layout
@@ -134,25 +129,24 @@ layout my_layout-coupe-Continuations
 	copy my_layout-coupe
 	copy layoutcontinuation	# Pour afficher le label des continuations
 endlayout
-
  
   
-#export map -fmt xvi -layout xviexport -o Data/CH24-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/CH24-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CH23-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/CH23-coupe.xvi
 
 # Select maps
 	select MP-CH23-plan-tot@CH23
 	select MC-CH23-coupe-tot@CH23
-	  
- export map -o Outputs/CH23-plan.pdf -layout my_layout
+  
+export map -o Outputs/CH23-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CH23-coupe.pdf
-#export map -o Outputs/CH23-plan-Continuations.pdf -layout my_layout-Continuations
-#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CH23-coupe-Continuations.pdf
+export map -o Outputs/CH23-plan-Continuations.pdf -layout my_layout-Continuations
+export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CH23-coupe-Continuations.pdf
 
-#export model -o Outputs/CH23.lox
+export model -o Outputs/CH23.lox
   
 # Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/CH23 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/CH23 -layout my_layout
   
 # Export kml files
 export map -proj plan -fmt kml -o Outputs/CH23.kml -layout my_layout

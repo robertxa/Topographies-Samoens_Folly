@@ -1,13 +1,13 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -134.0 -3635 2608 142.0
 ##XTHERION## xth_me_area_zoom_to 50
-##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH23.gif 0 {}
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CH27.gif 0 {}
 
 
 
-scrap SP-CH23-1 -projection plan -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [676.0 -1067.0 1504.0 -1067.0 0.0 0.0 15 0.0 m]
+scrap SP-CH27-1 -projection plan -author 2005 "Xavier Robert" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [676.0 -1067.0 1504.0 -1067.0 0.0 0.0 15 0.0 m]
 
-point 1834.0 -348.0 label -text "<bf>CH23" -scale xl
+point 1834.0 -348.0 label -text "<bf>CH27" -scale xl
 
 point 1798.0 -750.0 entrance -orientation 220.1
 
@@ -64,7 +64,7 @@ line wall -id l4-1028--890
   smooth off
 endline
 
-point 1454.0 -1056.0 station -name CH23@CH23
+point 1454.0 -1056.0 station -name CH27@CH27
 
 endscrap
 

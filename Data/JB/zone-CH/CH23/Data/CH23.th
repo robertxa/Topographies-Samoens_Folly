@@ -4,12 +4,12 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CH27 -title "CH27" -entrance "CH27"
+survey CH23 -title "CH23" -entrance "CH23"
   
- #fix CH27   946.7220       2132.589       2427.000    
+ #fix CH23   946.7220       2132.589       2427 
  centerline
  cs lat-long
- fix CH27   46.1042100 006.8270900       2481.000
+ fix CH23   46.1042100 006.8270900       2476	# 2481
    date 2011.09.07
   team "Gaëtan Poschmann"
   team "Frédéric Alvarez"
@@ -23,8 +23,8 @@ survey CH27 -title "CH27" -entrance "CH27"
    units clino degrees
    data normal from to length compass clino left right up down
    extend right
-   CH27 CH27double    0.000000       0.000000       0.000000       0.70000       1.0000       0.80000       0.90000    
-   CH27 1    9.60000       287.0000      1.0000       0.600000       0.80000       0.50000       0.80000    
+   CH23 CH23double    0.000000       0.000000       0.000000       0.70000       1.0000       0.80000       0.90000    
+   CH23 1    9.60000       287.0000      1.0000       0.600000       0.80000       0.50000       0.80000    
    1 2    4.41000       292.0000      30.00000       0.200000       1.50000       0.40000       0.50000    
    
  endcenterline

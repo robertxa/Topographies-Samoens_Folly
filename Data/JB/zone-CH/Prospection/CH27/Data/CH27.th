@@ -4,13 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey CH23 -title "CH23"
+survey CH27 -title "CH27"
  # Fichier contenant les positions des entrées de la zone CH, Samoens, France
 
 centerline -extend right
 	cs lat-long
-	fix       CH23      46.106633     006.80655      2288
-	station   CH23      "CH23" entrance continuation explored 15m
+	fix       CH27      46.106633     6.80655      2285	#2288
+	station   CH27      "CH27" entrance continuation explored 15m
 	
 	explo-date 2005.10.16
 		explo-team "Xavier Robert"

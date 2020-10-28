@@ -4,10 +4,10 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey CH27 -title "CH27"
+survey CH23 -title "CH23"
 
 # Pour importer les différentes données de différents fichiers topos : 
-   input Data/CH27.th
+   input Data/CH23.th
 	
 #   centerline
 ## Rajout des longueurs explorées, non topo, ou topos perdues
@@ -22,9 +22,9 @@ survey CH27 -title "CH27"
 	## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
 	## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). C'est tout simple !
 
-input Data/CH27.th2
-input Data/CH27-coupe.th2
+input Data/CH23.th2
+input Data/CH23-coupe.th2
 
-input CH27-maps.th
+input CH23-maps.th
 
 endsurvey

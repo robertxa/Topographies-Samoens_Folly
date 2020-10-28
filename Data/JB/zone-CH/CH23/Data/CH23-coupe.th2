@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap SC-CH27-coupe-1 -projection extended -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+scrap SC-CH23-coupe-1 -projection extended -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
 
 line border
   118.0 37.75
@@ -18,11 +18,11 @@ point 73.25 33.75 altitude -align bottom-left
 
 point 146.0 44.75 label -text "Imp."
 
-point 149.25 61.25 continuation -attr Code D -attr Cavite CH27 -attr Reseau " " -attr CA " " -text "A désobstruer"
+point 149.25 61.25 continuation -attr Code D -attr Cavite CH23 -attr Reseau " " -attr CA " " -text "A désobstruer"
 
 point 137.75 55.0 narrow-end -orientation 247.2
 
-point 36.75 53.0 label -text "<bf>CH27" -scale xl
+point 36.75 53.0 label -text "<bf>CH23" -scale xl
 
 point 64.25 45.0 entrance -orientation 99.9
 
@@ -64,11 +64,11 @@ line wall
   smooth off
 endline
 
-point 78.7373 43.3074 station -name CH27@CH27
+point 78.7373 43.3074 station -name CH23@CH23
 
-point 116.5273 43.967400000000005 station -name 1@CH27
+point 116.5273 43.967400000000005 station -name 1@CH23
 
-point 131.5573 52.647400000000005 station -name 2@CH27
+point 131.5573 52.647400000000005 station -name 2@CH23
 
 endscrap
 
