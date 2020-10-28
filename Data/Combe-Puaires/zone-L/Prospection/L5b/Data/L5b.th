@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L5b -title "L5b"
+
+	centerline -extend right
+		cs lat-long
+		fix       L5b      46.111283     6.80165      2309	# 2123
+		station   L5b      "L5b" entrance continuation explored 07m
+
+		explo-date 1976.06.17
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Bernard Lips"
+			explo-team "Josiane Lips"
+		explo-date 1977.08.03
+			explo-team "Christian Roy"
+					   
+  endcenterline
+
+ endsurvey

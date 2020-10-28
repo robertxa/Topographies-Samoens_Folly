@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L29 -title "L29"
+
+	centerline -extend right
+		cs lat-long
+		fix       L29       46.114533     6.80695      2335	# 2341
+		station   L29       "L29" entrance continuation explored 04m
+		
+		explo-date 2008.08.21
+			explo-team "Thomas Philippe"
+		   
+  endcenterline
+
+ endsurvey

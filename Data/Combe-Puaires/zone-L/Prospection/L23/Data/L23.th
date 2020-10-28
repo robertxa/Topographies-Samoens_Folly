@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L23 -title "L23"
+
+	centerline -extend right
+		cs lat-long
+		fix       L23       46.112533     6.80428      2327	# 2328
+		station   L23       "L23" entrance continuation explored 20m
+		
+		explo-date 2006.09.09
+			explo-team "Christophe Ohl"
+			explo-team "Patrice Plantier"
+					   
+  endcenterline
+
+ endsurvey

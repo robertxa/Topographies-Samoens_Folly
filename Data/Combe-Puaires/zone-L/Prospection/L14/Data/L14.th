@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L14 -title "L14"
+
+	centerline -extend right
+		cs lat-long
+		fix       L14       46.110600     6.80071      2287
+		station   L14       "L14" entrance continuation explored 10m
+		
+		explo-date 1977.08.07
+			explo-team "Daniel Fromentin"
+			explo-team "Jean-Paul Faubert"
+		   
+  endcenterline
+
+ endsurvey

@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L2 -title "L2"
+
+	centerline -extend right
+		cs lat-long
+		fix       L2       46.110366     6.79996      2267
+		station   L2       "L2" entrance #continuation explored 10m
+		
+		explo-date 1976.06.17
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Josiane Lips"
+			explo-team "Bernard Lips"
+		   
+  endcenterline
+
+ endsurvey

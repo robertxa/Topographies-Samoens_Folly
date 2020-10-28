@@ -8,9 +8,9 @@ survey D23 -title "D23"
 
 	centerline -extend right
 		cs lat-long
-	fix       D23a      46.105783     006.79340      2200 # ALT PAR DEFAULT
-	fix       D23b      46.105833     006.79340      2200 # ALT PAR DEFAULT
-	fix       D23c      46.105950     006.79340      2200 # ALT PAR DEFAULT
+	fix       D23a      46.105783     006.79340      2194
+	fix       D23b      46.105833     006.79340      2192
+	fix       D23c      46.105950     006.79340      2188
 	station   D23a      "D23a" entrance #continuation explored 00m
 	station   D23b      "D23b" entrance continuation explored 10m
 	station   D23c      "D23c" entrance continuation explored 10m

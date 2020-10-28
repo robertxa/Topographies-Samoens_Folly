@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L30 -title "L30"
+
+	centerline -extend right
+		cs lat-long
+		fix       L30       46.114683     6.80693      2331
+		station   L30       "L30" entrance continuation explored 06m
+		
+		explo-date 2008.08.21
+			explo-team "Thomas Philippe"
+		   
+  endcenterline
+
+ endsurvey

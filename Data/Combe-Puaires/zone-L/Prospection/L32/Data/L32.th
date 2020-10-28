@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L32 -title "L32"
+
+	centerline -extend right
+		cs lat-long
+		fix       L32       46.115016     6.80806      2352	# 2356
+		station   L32       "L32" entrance continuation explored 06m
+		
+		explo-date 2008.08.21
+			explo-team "Gaëlle Paillart"
+		   
+  endcenterline
+
+ endsurvey

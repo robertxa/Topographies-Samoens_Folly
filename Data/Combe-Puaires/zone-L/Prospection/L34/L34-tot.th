@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey L34 -title "L34"
+	input Data/L34.th
+
+	# pour le plan
+	#input Data/L34.th2
+	# Pour la coupe et le plan
+	#input Data/L34-coupe.th2
+
+	#input L34-maps.th
+endsurvey

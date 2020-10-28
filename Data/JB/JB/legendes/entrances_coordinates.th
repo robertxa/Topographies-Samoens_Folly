@@ -20,6 +20,7 @@ layout Entrances_coords_JBJB
 		\def\thlocationJBJBf{V6b   --  Lat. : 46.10245 N ; Long. : 6.78135 E ; Alt. : 1863 m}
 		\def\thlocationJBJBg{J14   --  Lat. : 46.10377 N ; Long. : 6.78598 E ; Alt. : 1984 m}
 		\def\thlocationJBJBh{V11   --  Lat. : 46.10453 N ; Long. : 6.78850 E ; Alt. : 2048 m}
+		\def\thlocationJBJBn{A14   --  Lat. : 46.10460 N ; Long. : 6.78883 E ; Alt. : 2052 m}
 		\def\thlocationJBJBi{B19   --  Lat. : 46.10422 N ; Long. : 6.79225 E ; Alt. : 2118 m}
 		\def\thlocationJBJBj{B21   --  Lat.: 46.1036667 N ; Long. : 6.79451667 E ; Alt. : 2237 m}
 		\def\thlocationJBJBk{B22   --  Lat. : 46.10452 N ; Long.: 6.79435 E ; Alt. : 2194 m}
@@ -71,6 +72,9 @@ layout Coords_Header_JBJB
 			\fi
 			\edef\tmp{\thlocationJBJBh} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBh\vss}
+			\fi
+			\edef\tmp{\thlocationJBJBn} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBn\vss}
 			\fi
 			\edef\tmp{\thlocationJBJBi} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBi\vss}

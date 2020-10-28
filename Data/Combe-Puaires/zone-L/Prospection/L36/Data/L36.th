@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L36 -title "L36"
+
+	centerline -extend right
+		cs lat-long
+		fix       L36       46.115383     6.80771      2342	# 2352
+		station   L36       "L36" entrance continuation explored 06m
+		
+		explo-date 2008.08.21
+			explo-team "Stéphane Lips"
+		   
+  endcenterline
+
+ endsurvey

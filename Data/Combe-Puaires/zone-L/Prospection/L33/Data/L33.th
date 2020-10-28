@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L33 -title "L33"
+
+	centerline -extend right
+		cs lat-long
+		fix       L33       46.115050     6.80633      2328	# 2334
+		station   L33       "L33" entrance continuation explored 08m
+		
+		explo-date 2008.08.21
+			explo-team "Thomas Philippe"
+			explo-team "Pauline Evrard-Guespin"
+		   
+  endcenterline
+
+ endsurvey

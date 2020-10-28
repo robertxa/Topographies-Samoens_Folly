@@ -8,8 +8,8 @@ survey D19 -title "D19"
 
 	centerline -extend right
 		cs lat-long
-		fix       D19       46.106333     006.79296      2172 # ALT PAR DEFAULT
-		fix       D20       46.106300     006.79291      2172
+		fix       D19       46.106333     006.79296      2165	# 2172 # ALT PAR DEFAULT
+		fix       D20       46.106300     006.79291      2164	# 2172
 		station   D19       "D19" entrance continuation explored 40m
 		station   D20       "D20" entrance #continuation explored 40m
 

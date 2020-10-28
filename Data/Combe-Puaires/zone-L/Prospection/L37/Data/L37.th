@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L37 -title "L37"
+
+	centerline -extend right
+		cs lat-long
+		fix       L37       46.115483     6.80668      2327	# 2336
+		station   L37       "L37" entrance continuation explored 12m air-draught
+		
+		explo-date 2008.08.21
+			explo-team "Thomas Philippe"
+		   
+  endcenterline
+
+ endsurvey

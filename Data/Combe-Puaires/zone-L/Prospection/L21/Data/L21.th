@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L21 -title "L21"
+
+	centerline -extend right
+		cs lat-long
+		fix       L21       46.112633     6.80338      2310
+		station   L21       "L21" entrance continuation explored 15m
+
+		explo-date 2006.09.09
+			explo-team "Christophe Ohl"
+			explo-team "Patrice Plantier"
+		   
+  endcenterline
+
+ endsurvey

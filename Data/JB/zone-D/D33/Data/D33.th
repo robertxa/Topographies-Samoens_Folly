@@ -9,9 +9,9 @@ survey D33 -title "D33" -entrance "D33"
 centerline
 
 #  cs EPSG:27572
-#  fix D33   944.3220       2132.552       2174.000
+#  fix D33   944.3220       2132.552       2174
   cs lat-long
-  fix D33 46.1053500 6.7926500 2166
+  fix D33 46.1053500 6.7926500 2176	# 2166
 	date 1998.09.08
 		team "Bernard Lips"
 		team "Renaud Locatelli"

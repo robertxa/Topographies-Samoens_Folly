@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L34 -title "L34"
+
+	centerline -extend right
+		cs lat-long
+		fix       L34       46.115250     6.80658      2327	# 2333
+		station   L34       "L34" entrance continuation explored 25m
+		
+		explo-date 2008.08.21
+			explo-team "Thomas Philippe"
+		   
+  endcenterline
+
+ endsurvey

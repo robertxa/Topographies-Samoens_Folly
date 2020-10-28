@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L4 -title "L4"
+
+	centerline -extend right
+		cs lat-long
+		fix       L4       46.111050     6.80166      2304
+		station   L4       "L4" entrance continuation explored 25m
+		
+				explo-date 1976.06.17
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Bernard Lips"
+			explo-team "Josiane Lips"
+		explo-date 1977.08.03
+			explo-team "Bernard Lips"
+		   
+  endcenterline
+
+ endsurvey

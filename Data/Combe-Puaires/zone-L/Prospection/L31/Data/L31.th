@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L31 -title "L31"
+
+	centerline -extend right
+		cs lat-long
+		fix       L31       46.114800     6.80790      2352	# 2359
+		station   L31       "L31" entrance continuation explored 15m
+		
+		explo-date 2008.08.21
+			explo-team "Stéphane Lips"
+		   
+  endcenterline
+
+ endsurvey

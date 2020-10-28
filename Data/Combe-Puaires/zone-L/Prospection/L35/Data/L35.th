@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L35 -title "L35"
+
+	centerline -extend right
+		cs lat-long
+		fix       L35       46.115433     6.80783      2342	# 2346
+		station   L35       "L35" entrance continuation explored 05m
+		
+		explo-date 2008.08.21
+			explo-team "Stéphane Lips"
+		   
+  endcenterline
+
+ endsurvey

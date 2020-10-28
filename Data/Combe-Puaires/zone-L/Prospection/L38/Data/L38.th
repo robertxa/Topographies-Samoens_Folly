@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L38 -title "L38"
+
+	centerline -extend right
+		cs lat-long
+		fix       L38       46.115383     6.80610      2326	# 2330
+		station   L38       "L38" entrance continuation explored 14m
+		
+		explo-date 2008.08.21
+			explo-team "Stéphane Lips"
+		   
+  endcenterline
+
+ endsurvey

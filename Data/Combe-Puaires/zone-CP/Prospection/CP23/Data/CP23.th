@@ -9,7 +9,7 @@ survey CP23 -title "CP23"
 	centerline -extend right
 		cs lat-long
 		#fix       CP23      46.114500     6.79625      2079 # Coordonnées à revoir car fausses !
-		fix       CP23      46.11355     6.79518      2064 # Coordonnées à revoir car fausses !
+		fix       CP23      46.11355     6.79518      2064
 		station   CP23      "CP23" entrance continuation explored 02m
 
 		explo-date 2000.07.09

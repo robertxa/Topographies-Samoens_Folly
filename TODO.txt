@@ -1,9 +1,8 @@
 A FAIRE sur la base de données topographiques de Samoëns
 
 - Corriger les altitudes des entrées avec le MNT IGN :
-		zones A-JB-V, A-A21, AV, BA, CH, DR, E, F, PV --> OK total (data + cartouche)
-		zones CP --> OK mais affichage coordonnées cartouche à vérifier pour tous
-		zones B, D, C, L, LP, LS, T --> A faire (Data + Cartouche)
+		zones A-JB-V, A-A21, AV, B, BA, CH, CP (revoir pour Cartouche au cas par cas) D, DR, E, F, L, PV --> OK total (data + cartouche)
+		zones C, LP, LS, T --> A faire (Data + Cartouche)
 
 - Revoir toutes les visées à distance nulle ? Ca fait planter les xvi des coupes développées ?
 
@@ -11,7 +10,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 		zones A, V, B, CH, D, E, F, BA --> OK
 		zones C, AV, CP, DR, L, LP, LS, T --> A faire
 
-- Rajouter coordonnées A14 + station topo dans le V11 ?
+- Rajouter coordonnées A14 + station topo dans le V11 ? OK pour le Cartouche...
 
 - Préparer un dossier GIS/QGIS complet, prêt à l'emploi pour pouvoir mettre la BD sur smartphone/QField
 

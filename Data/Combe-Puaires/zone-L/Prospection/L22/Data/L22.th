@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey L22 -title "L22"
+
+	centerline -extend right
+		cs lat-long
+		fix       L22       46.112850     6.80343      2315
+		station   L22       "L22" entrance continuation explored 10m
+
+		explo-date 2006.09.09
+			explo-team "Christophe Ohl"
+			explo-team "Patrice Plantier"
+		   
+  endcenterline
+
+ endsurvey

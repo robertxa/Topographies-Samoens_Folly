@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey D38 -title "D38"
+
+centerline -extend right
+	cs lat-long
+		fix       D38       46.106166     6.794844      2224	# 2226
+		station   D38       "D38" entrance continuation explored 40m
+
+		explo-date 2005.09.07
+			explo-team "Xavier Robert"
+			explo-team "Estelle Forbach"
+			explo-team "Stéphane Lips"
+		explo-date 2005.09.27
+			explo-team "Stéphane Lips"
+			explo-team "Lucie Leplat"
+			explo-team "Estelle Forbach"
+			
+endcenterline
+
+ endsurvey
