@@ -9,8 +9,10 @@ survey A20 -title "A20"
 	centerline
 
 		cs lat-long
-		fix A20    46.1036667 6.7842167  1937
+		fix A20    46.1036667 6.7842167  1920	# 1937
 		station A20 "A20" entrance continuation explored 15m
+		
+		explo-date 1967
 
 
 	endcenterline
