@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV11 -title "AV11"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV11      46.103266     6.81590     2597	# 2595
+		fix       AV11B     46.103183     6.81571     2590	# 2585
+		station   AV11      "AV11" entrance continuation explored 45m
+		station   AV11B     "AV11B" entrance
+		
+		explo-date 2007.09.15
+			explo-team "Xavier Robert"  
+
+	endcenterline
+
+endsurvey

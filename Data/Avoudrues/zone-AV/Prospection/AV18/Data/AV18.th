@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV18 -title "AV18"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV18      46.102933     6.81756     2538	# 2545
+		station   AV18      "AV18" entrance continuation explored 08m
+		
+		explo-date 2007.09.15
+			explo-team "Josiane Lips"  
+			explo-team "Xavier Robert"
+
+	endcenterline
+
+endsurvey

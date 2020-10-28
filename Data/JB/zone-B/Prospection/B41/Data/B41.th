@@ -1,0 +1,58 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey B41 -title "B41"
+
+	centerline -extend right
+		cs lat-long
+		fix B41 46.102697 6.790972 2164 
+		station B41 "B41" entrance  continuation explored 8m air-draught
+
+		explo-date 2014.07.16
+			explo-team "Stéphane Lips"
+		explo-date 2015.08.01
+			explo-team "Stéphane Lips"
+			explo-team "Bernard Lips"
+			explo-team "Pauline Evrard-Guespin"
+			explo-team "Antoine Aigueperse"
+		explo-date 2020.06.20
+			explo-team "Xavier Robert"
+			explo-team "Constance Picque"
+			explo-team "Frédéric Alvarez"
+			explo-team "Tom Delamare"
+		explo-date 2020.07.04
+			explo-team "Xavier Robert"
+			explo-team "Constance Picque"
+			explo-team "Frédéric Gennerat"
+			explo-team "Bernard Lips"
+		explo-date 2020.07.12
+			explo-team "Xavier Robert"
+			explo-team "Constance Picque"
+			explo-team "Stéphane Lips"
+			explo-team "Antoine Aigueperse"
+			explo-team "Clément Baudy"
+			explo-team "Charlotte Triquigneaux"
+			explo-team "Arnauld Malard"
+			explo-team "Laurence D'Hautefeuille"
+			explo-team "Thomas Boileau"
+		explo-date 2020.07.13	
+			explo-team "Xavier Robert"
+			explo-team "Constance Picque"
+			explo-team "Stéphane Lips"
+			explo-team "Antoine Aigueperse"
+			explo-team "Clément Baudy"
+			explo-team "Charlotte Triquigneaux"
+			explo-team "Gaëtan Poschmann"
+			explo-team "Bruce Delorme"
+		explo-date 2020.07.18
+			explo-team "Xavier Robert"
+			explo-team "Bernard Lips"
+			explo-team "Stéphane Kanshine"
+
+	endcenterline
+
+endsurvey

@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV15 -title "AV15"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV15      46.103850     6.81743     2566	# 2570
+		station   AV15      "AV15" entrance continuation explored 03m
+
+		explo-date 2007.09.15
+			explo-team "Josiane Lips"  
+			explo-team "Xavier Robert"
+
+	endcenterline
+
+endsurvey

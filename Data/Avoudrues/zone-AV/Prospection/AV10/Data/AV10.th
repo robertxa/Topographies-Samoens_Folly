@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV10 -title "AV10"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV10      46.103183     6.81790     2549	# 2519
+		station   AV10      "AV10" entrance continuation explored 20m
+		
+		explo-date 1991.10.27
+			explo-team "Bernard Lips"  
+		explo-date 2007.09.16
+			explo-team "Xavier Robert"
+			explo-team "Josiane Lips"
+
+	endcenterline
+
+endsurvey

@@ -142,10 +142,10 @@ endlayout
 
 # Select maps
 	select MP-V1-plan-tot@V1
-	select MC-V1-coupe-tot@V1
+#	select MC-V1-coupe-tot@V1
 	  
- export map -o Outputs/V1-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/V1-coupe.pdf
+export map -o Outputs/V1-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/V1-coupe.pdf
 #export map -o Outputs/V1-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/V1-coupe-Continuations.pdf
 
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/V1-coupe.pdf
 #export map -proj plan -fmt esri -o Outputs/V1 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/V1.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/V1.kml -layout my_layout

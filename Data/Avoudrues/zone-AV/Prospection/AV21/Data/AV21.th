@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV21 -title "AV21"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV21      46.103350     6.81106     2456
+		station   AV21      "AV21" entrance continuation explored 06m
+		
+		explo-date 2008.09.27
+			explo-team "Xavier Robert"  
+			explo-team "Christophe Ohl"
+
+	endcenterline
+
+endsurvey

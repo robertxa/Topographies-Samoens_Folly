@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV16 -title "AV16"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV16      46.103633     6.81753     2574	# 2577
+		station   AV16      "AV16" entrance continuation explored 02m
+		
+		explo-date 2007.09.15
+			explo-team "Josiane Lips"  
+			explo-team "Xavier Robert"
+
+	endcenterline
+
+endsurvey

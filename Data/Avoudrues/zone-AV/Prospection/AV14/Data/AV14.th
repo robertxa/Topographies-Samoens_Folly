@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey AV14 -title "AV14"
+
+	centerline -extend right
+		cs lat-long
+		fix       AV14      46.103650     6.81680     2598	# 2605
+		station   AV14      "AV14" entrance continuation explored 10m
+		
+		explo-date 2007.09.15
+			explo-team "Josiane Lips"  
+			explo-team "Xavier Robert"
+
+	endcenterline
+
+endsurvey

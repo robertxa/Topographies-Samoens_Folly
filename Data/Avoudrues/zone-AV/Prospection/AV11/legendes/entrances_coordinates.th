@@ -14,7 +14,8 @@ layout Entrances_coords_AVAVpra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationAVAVpra{AV1    --  Lat. : 46.???? N ; Long. : 6.???? E ; Alt. : ???? m}
+		\def\thlocationAVAVpra{AV11a    --  Lat. : 46.103266 N ; Long. : 6.81590 E ; Alt. : 2597 m}
+		\def\thlocationAVAVprb{AV11a    --  Lat. : 46.103183 N ; Long. : 6.81571 E ; Alt. : 2590 m}
 	endcode 
 	
 endlayout
@@ -43,6 +44,9 @@ layout Coords_Header_AVAVpra
 			\fi
 			\edef\tmp{\thlocationAVAVpra} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm \ss\thlocationAVAVpra\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationAVAVprb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationAVAVprb\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

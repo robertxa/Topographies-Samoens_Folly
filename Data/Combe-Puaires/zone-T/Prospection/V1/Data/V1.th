@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey V1 -title "V1"
+
+	centerline -extend right
+		cs lat-long
+		fix       V1       46.108581     6.793033      2085	# 2090
+		station   V1       "V1" entrance continuation explored 28m
+
+		explo-date 1976.06.15
+			explo-team "Christian Rigaldie"
+		
+endcenterline
+ endsurvey
