@@ -11,7 +11,11 @@ survey A13 -title "A13"
 		cs lat-long
 
 		fix A13    46.1045667 6.7889667  2056	# 2049
-		station A13 "A13" entrance continuation explored 02m
+		station A13 "A13" entrance #continuation explored 02m
+		
+		data normal from to length compass clino
+		flags approx
+		A13	1	2	0	-90
 
 	endcenterline
 

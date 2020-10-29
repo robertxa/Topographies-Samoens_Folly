@@ -10,7 +10,7 @@ survey CH10 -title "CH10"
 centerline -extend right
 	cs lat-long
 	fix       CH10      46.108766     006.81995      2390	# 2397
-	station   CH10      "CH10" entrance continuation explored 37m
+	station   CH10      "CH10" entrance #continuation explored 37m
 
 	explo-date 1976.08.05
 		explo-team "Pierre Rias"
@@ -18,6 +18,10 @@ centerline -extend right
 		explo-team "Clément Ronzon"
 		explo-team "Pauline Evrard"
 		explo-team "Christophe Ohl"
+	
+	data normal from to length compass clino
+		flags approx
+		CH10	1	37	0	-90
 	
 endcenterline
 

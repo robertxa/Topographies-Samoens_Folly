@@ -10,10 +10,14 @@ survey E1 -title "E1"
 		cs lat-long
 
 		fix       E1       46.104716     006.79360      2191
-		station   E1       "E1" entrance continuation explored 17m
-
+		station   E1       "E1" entrance #continuation explored 17m
+		
 		explo-date 1971.08.04
 		#	explo-team ""
+
+		data normal from to length compass clino
+		flags approx
+		E1	1	17	0	-90
 		  
 	endcenterline
 

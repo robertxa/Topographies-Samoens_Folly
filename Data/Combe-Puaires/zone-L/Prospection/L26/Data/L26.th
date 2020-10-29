@@ -9,11 +9,15 @@ survey L26 -title "L26"
 	centerline -extend right
 		cs lat-long
 		fix       L26       46.114366     6.80218      2290	# 2319
-		station   L26       "L26" entrance continuation explored 15m
+		station   L26       "L26" entrance #continuation explored 15m
 		
 		explo-date 2006.09.09
 			explo-team "Christophe Ohl"
 			explo-team "Patrice Plantier"
+		
+		data normal from to length compass clino
+		flags approx
+		L26	1	15	0	-90
 					   
   endcenterline
 

@@ -10,7 +10,7 @@ survey B41 -title "B41"
 	centerline -extend right
 		cs lat-long
 		fix B41 46.102697 6.790972 2164 
-		station B41 "B41" entrance  continuation explored 8m air-draught
+		station B41 "B41" entrance air-draught #continuation explored 8m #air-draught
 
 		explo-date 2014.07.16
 			explo-team "Stéphane Lips"
@@ -52,6 +52,10 @@ survey B41 -title "B41"
 			explo-team "Xavier Robert"
 			explo-team "Bernard Lips"
 			explo-team "Stéphane Kanshine"
+		
+		data normal from to length compass clino
+		flags approx
+		B41	1	8	0	-90
 
 	endcenterline
 

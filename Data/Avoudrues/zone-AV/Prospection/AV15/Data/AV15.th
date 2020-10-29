@@ -9,11 +9,15 @@ survey AV15 -title "AV15"
 	centerline -extend right
 		cs lat-long
 		fix       AV15      46.103850     6.81743     2566	# 2570
-		station   AV15      "AV15" entrance continuation explored 03m
+		station   AV15      "AV15" entrance #continuation explored 03m
 
 		explo-date 2007.09.15
 			explo-team "Josiane Lips"  
 			explo-team "Xavier Robert"
+		
+		data normal from to length compass clino
+		flags approx
+		AV15	1	3	0	-90
 
 	endcenterline
 

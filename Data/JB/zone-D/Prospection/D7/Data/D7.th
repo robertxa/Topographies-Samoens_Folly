@@ -10,7 +10,11 @@ survey D7 -title "D7"
 		cs lat-long
 
 		fix       D7       46.105683     006.79661      2271	# 2285
-		station   D7       "D7" entrance continuation explored 14m
+		station   D7       "D7" entrance #continuation explored 14m
+		
+		data normal from to length compass clino
+		flags approx
+		D7	1	14	0	-90
   
 	endcenterline
 

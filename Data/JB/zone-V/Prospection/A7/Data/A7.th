@@ -11,7 +11,11 @@ survey A7 -title "A7"
 		cs lat-long
 
 		fix A7    46.1041000 6.7879667  2037	# 2038
-		station A7 "A7" entrance continuation explored 05m
+		station A7 "A7" entrance #continuation explored 05m
+		
+		data normal from to length compass clino
+		flags approx
+		A7	1	5	0	-90
 
 	endcenterline
 

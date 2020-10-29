@@ -9,7 +9,7 @@ survey L5d -title "L5d"
 	centerline -extend right
 		cs lat-long
 		fix       L5d      46.111183     6.80150      2305	# 2099
-		station   L5d      "L5d" entrance continuation explored 12m
+		station   L5d      "L5d" entrance #continuation explored 12m
 	
 		explo-date 1976.06.17
 			explo-team "Christian Rigaldie"
@@ -17,6 +17,9 @@ survey L5d -title "L5d"
 			explo-team "Bernard Lips"
 			explo-team "Josiane Lips"
 		
+		data normal from to length compass clino
+		flags approx
+		L5d	1	12	0	-90
 		   
   endcenterline
 

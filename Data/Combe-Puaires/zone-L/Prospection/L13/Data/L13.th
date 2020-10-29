@@ -9,11 +9,15 @@ survey L13 -title "L13"
 	centerline -extend right
 		cs lat-long
 		fix       L13       46.110916     6.80185      2300
-		station   L13       "L13" entrance continuation explored 06m
+		station   L13       "L13" entrance #continuation explored 06m
 		
 		explo-date 1977.08.06
 			explo-team "Daniel Fromentin"
 			explo-team "Christian Aubert"
+			
+		data normal from to length compass clino
+		flags approx
+		L13	1	6	0	-90
 		   
   endcenterline
 

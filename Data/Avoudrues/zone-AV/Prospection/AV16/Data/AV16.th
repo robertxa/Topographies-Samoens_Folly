@@ -9,11 +9,15 @@ survey AV16 -title "AV16"
 	centerline -extend right
 		cs lat-long
 		fix       AV16      46.103633     6.81753     2574	# 2577
-		station   AV16      "AV16" entrance continuation explored 02m
+		station   AV16      "AV16" entrance #continuation explored 02m
 		
 		explo-date 2007.09.15
 			explo-team "Josiane Lips"  
 			explo-team "Xavier Robert"
+			
+		data normal from to length compass clino
+		flags approx
+		AV16	1	2	0	-90
 
 	endcenterline
 

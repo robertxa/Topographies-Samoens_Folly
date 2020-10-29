@@ -9,11 +9,15 @@ survey AV4 -title "AV4"
 	centerline -extend right
 		cs lat-long
 		fix       AV4       46.103050     006.81761     2541
-		station   AV4       "AV4" entrance continuation explored 08m
+		station   AV4       "AV4" entrance #continuation explored 08m
 
 		
 		explo-date 1989.08.22
 			explo-team "Christophe Ohl"  
+			
+		data normal from to length compass clino
+		flags approx
+		AV4	1	8	0	-90
 
 	endcenterline
 

@@ -9,10 +9,14 @@ survey L30 -title "L30"
 	centerline -extend right
 		cs lat-long
 		fix       L30       46.114683     6.80693      2331
-		station   L30       "L30" entrance continuation explored 06m
+		station   L30       "L30" entrance #continuation explored 06m
 		
 		explo-date 2008.08.21
 			explo-team "Thomas Philippe"
+			
+		data normal from to length compass clino
+		flags approx
+		L30	1	6	0	-90
 		   
   endcenterline
 

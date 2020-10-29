@@ -10,10 +10,14 @@ survey B8 -title "B8"
 	centerline -extend right
 		cs lat-long
 		#fix B8 46.1045667 6.7893   2066	# A trouver !!!
-		station B8 "B8" entrance  continuation explored 08m
+		station B8 "B8" entrance  #continuation explored 08m
 
-		explo-date ..
-			explo-team ""
+		#explo-date ..
+		#	explo-team ""
+			
+		data normal from to length compass clino
+		flags approx
+		B8	1	8	0	-90
   
 	endcenterline
 

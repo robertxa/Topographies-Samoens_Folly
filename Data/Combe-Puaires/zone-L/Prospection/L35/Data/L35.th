@@ -9,10 +9,14 @@ survey L35 -title "L35"
 	centerline -extend right
 		cs lat-long
 		fix       L35       46.115433     6.80783      2342	# 2346
-		station   L35       "L35" entrance continuation explored 05m
+		station   L35       "L35" entrance #continuation explored 05m
 		
 		explo-date 2008.08.21
 			explo-team "Stéphane Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		L35	1	5	0	-90
 		   
   endcenterline
 

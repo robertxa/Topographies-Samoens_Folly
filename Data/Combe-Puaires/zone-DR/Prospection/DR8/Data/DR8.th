@@ -10,7 +10,7 @@ survey DR8 -title "DR8"
 		cs lat-long
 
 		fix       DR8      46.121383     006.80786      2427
-		station   DR8      "DR8" entrance continuation explored 12m
+		station   DR8      "DR8" entrance #continuation explored 12m
 
 		explo-date 1981.09.06
 			explo-team "Christian Rigaldie"
@@ -18,6 +18,10 @@ survey DR8 -title "DR8"
 		explo-date 2001.07.21
 			explo-team "Olivier Marcillat"
 			explo-team "Bernard Lips"
+			
+		data normal from to length compass clino
+		flags approx
+		DR8	1	12	0	-90
 			
 	endcenterline
 endsurvey

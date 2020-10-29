@@ -9,13 +9,17 @@ survey AV20 -title "AV20"
 	centerline -extend right
 		cs lat-long
 		fix       AV20      46.102366     6.81003     2451	# 2460
-		station   AV20      "AV20" entrance continuation explored 16m
+		station   AV20      "AV20" entrance #continuation explored 16m
 		
 		explo-date 2007.09.16
 			explo-team "Xavier Robert"  
 		explo-date 2008.09.27
 			explo-team "Xavier Robert"
 			explo-team "Christophe Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		AV20	1	16	0	-90
 
 	endcenterline
 

@@ -10,12 +10,16 @@ survey CH25 -title "CH25"
 centerline -extend right
 	cs lat-long
 	fix       CH25      46.10489     006.82052      2418	# 2404
-	station   CH25      "CH25" entrance continuation explored 09m
+	station   CH25      "CH25" entrance #continuation explored 09m
 	
 	explo-date 2011.09.07
 		explo-team "Gaëtan Poschmann"
 		explo-team "Cédric Chambe"
 		explo-team "Frédéric Alvarez"
+	
+	data normal from to length compass clino
+		flags approx
+		CH25	1	9	0	-90
 
 endcenterline
 

@@ -9,10 +9,14 @@ survey L32 -title "L32"
 	centerline -extend right
 		cs lat-long
 		fix       L32       46.115016     6.80806      2352	# 2356
-		station   L32       "L32" entrance continuation explored 06m
+		station   L32       "L32" entrance #continuation explored 06m
 		
 		explo-date 2008.08.21
 			explo-team "Gaëlle Paillart"
+			
+		data normal from to length compass clino
+		flags approx
+		L32	1	6	0	-90
 		   
   endcenterline
 

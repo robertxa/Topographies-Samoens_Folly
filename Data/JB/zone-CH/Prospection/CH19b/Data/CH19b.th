@@ -10,13 +10,17 @@ survey CH19b -title "CH19b"
 centerline -extend right
 	cs lat-long
 	fix       CH19b     46.106900     006.81661      2316	# 2308
-	station   CH19b     "CH19b" entrance continuation explored 50m
+	station   CH19b     "CH19b" entrance air-draught #continuation explored 50m
 	
 	explo-date 2005.10.29
 		explo-team "Xavier Robert"
 	explo-date 2006.10.08
 		explo-team "Stéphane Lips"
 		explo-team "Xavier Robert"
+	
+	data normal from to length compass clino
+		flags approx
+		CH19b	1	50	0	-90
 
 endcenterline
 

@@ -10,7 +10,11 @@ survey A16 -title "A16"
 
 		cs lat-long
 		fix A16    46.1047167 6.7889500  2054	# 2055
-		station A16 "A16" entrance continuation explored 04m
+		station A16 "A16" entrance #continuation explored 04m
+		
+		data normal from to length compass clino
+		flags approx
+		A16	1	4	0	-90
 
 	endcenterline
 

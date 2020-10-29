@@ -10,7 +10,11 @@ survey B20 -title "B20"
 	centerline -extend right
 		cs lat-long
 		fix B20 46.1038833 6.7941833 2206
-		station B20 "B20" entrance  continuation explored 15m
+		station B20 "B20" entrance  #continuation explored 15m
+		
+		data normal from to length compass clino
+		flags approx
+		B15	1	15	0	-90
 
 	endcenterline
 

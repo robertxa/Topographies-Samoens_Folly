@@ -10,10 +10,14 @@ survey CH16 -title "CH16"
 centerline -extend right
 	cs lat-long
 	fix       CH16      46.105800     006.80743      2235	# 2245
-	station   CH16      "CH16" entrance continuation explored 07m
+	station   CH16      "CH16" entrance #continuation explored 07m
 	
 	explo-date 2003.08.28
 		explo-team "Xavier Robert"	
+		
+	data normal from to length compass clino
+		flags approx
+		CH16	1	7	0	-90
 	
 endcenterline
 

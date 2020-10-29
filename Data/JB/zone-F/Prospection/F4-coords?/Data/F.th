@@ -19,7 +19,11 @@ station   F07       "F07" entrance continuation explored 09m
 
 		#explo-date
 		#	explo-team ""
-		  
+
+		data normal from to length compass clino
+		flags approx
+		F4	1	6	0	-90
+				  
 	endcenterline
 
 endsurvey

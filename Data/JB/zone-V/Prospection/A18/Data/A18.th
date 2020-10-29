@@ -10,9 +10,13 @@ survey A18 -title "A18"
 
 		cs lat-long
 		fix A18    46.1047667 6.7894167  2067
-		station A18 "A18" entrance continuation explored 05m
+		station A18 "A18" entrance #continuation explored 05m
 		
 		explo-date 1967.08.06
+		
+		data normal from to length compass clino
+		flags approx
+		A18	1	5	0	-90
 
 	endcenterline
 

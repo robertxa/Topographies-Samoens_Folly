@@ -9,10 +9,14 @@ survey AV5 -title "AV5"
 	centerline -extend right
 		cs lat-long
 		fix       AV5       46.102683     006.81726     2523
-		station   AV5       "AV5" entrance continuation explored 17m
+		station   AV5       "AV5" entrance #continuation explored 17m
 		
 		explo-date 1989.08.22
-			explo-team "Christophe Ohl"  
+			explo-team "Christophe Ohl" 
+		
+		data normal from to length compass clino
+		flags approx
+		AV5	1	17	0	-90 
 
 	endcenterline
 

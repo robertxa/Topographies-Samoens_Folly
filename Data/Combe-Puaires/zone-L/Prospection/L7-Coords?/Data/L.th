@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey L -title "L"
+survey L7 -title "L7"
 
 	centerline -extend right
 		cs lat-long
@@ -67,6 +67,10 @@ station   L38       "L38" entrance continuation explored 14m
 		
 		#explo-date 
 		#	explo-team ""
+		
+		data normal from to length compass clino
+		flags approx
+		L7	1	12	0	-90
 		   
   endcenterline
 

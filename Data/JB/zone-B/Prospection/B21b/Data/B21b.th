@@ -10,10 +10,14 @@ survey B21b -title "B21b"
 	centerline -extend right
 		cs lat-long
 		fix B21b 46.1036667 6.7947 2216
-		station B21b "B21b" entrance  continuation explored 30m
+		station B21b "B21b" entrance  #continuation explored 30m
 	
 		explo-date 1980.07.20
 			explo-team "Christophe Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		B21b	1	30	0	-90
   
 	endcenterline
 

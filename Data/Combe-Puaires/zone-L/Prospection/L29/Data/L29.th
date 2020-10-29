@@ -9,10 +9,14 @@ survey L29 -title "L29"
 	centerline -extend right
 		cs lat-long
 		fix       L29       46.114533     6.80695      2335	# 2341
-		station   L29       "L29" entrance continuation explored 04m
+		station   L29       "L29" entrance #continuation explored 04m
 		
 		explo-date 2008.08.21
 			explo-team "Thomas Philippe"
+			
+		data normal from to length compass clino
+		flags approx
+		L29	1	4	0	-90
 		   
   endcenterline
 

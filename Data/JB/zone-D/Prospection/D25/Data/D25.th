@@ -12,10 +12,14 @@ survey D25 -title "D25"
 		cs lat-long
 
 		fix       D25       46.106350     006.79253      2156	# 2161
-		station   D25       "D25" entrance continuation explored 04m
+		station   D25       "D25" entrance #continuation explored 04m
 
 		#explo-date  ..
 		#	explo-team ""
+		
+		data normal from to length compass clino
+		flags approx
+		D25	1	4	0	-90
 			
 	endcenterline
 

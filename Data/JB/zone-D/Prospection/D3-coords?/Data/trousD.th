@@ -91,6 +91,10 @@ station   D40       "D40" entrance continuation explored 15m
 station   D50       "D50" entrance #continuation explored 00m
 station   D51       "D51" entrance # continuation explored 10m
 station   D60       "D60" entrance continuation explored 15m
+
+		data normal from to length compass clino
+		flags approx
+		D3	1	7	0	-90
   
 	endcenterline
 

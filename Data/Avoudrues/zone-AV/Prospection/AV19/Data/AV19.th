@@ -9,11 +9,15 @@ survey AV19 -title "AV19"
 	centerline -extend right
 		cs lat-long
 		fix       AV19      46.103016     6.81766     2541
-		station   AV19      "AV19" entrance continuation explored 04m
+		station   AV19      "AV19" entrance #continuation explored 04m
 		
 		explo-date 2007.09.16
 			explo-team "Josiane Lips"  
 			explo-team "Xavier Robert"
+			
+		data normal from to length compass clino
+		flags approx
+		AV19	1	4	0	-90
 
 	endcenterline
 

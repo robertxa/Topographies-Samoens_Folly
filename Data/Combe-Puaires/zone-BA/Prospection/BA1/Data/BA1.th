@@ -9,12 +9,16 @@ survey BA1 -title "BA1"
 	centerline -extend right
 		cs lat-long
 		fix       BA1        46.106917 6.776684 1573
-		station   BA1        "BA1" entrance continuation explored 01m
+		station   BA1        "BA1" entrance #continuation explored 01m
 
 		explo-date 200..
 			explo-team "Stéphane Lips"
 			explo-team "Xavier Robert"
 			explo-team "Frédéric Delègue"
+		
+		data normal from to length compass clino
+		flags approx
+		BA1	1	1	0	-90
 
 	endcenterline
 

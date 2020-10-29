@@ -10,10 +10,14 @@ survey B16 -title "B16"
 	centerline -extend right
 		cs lat-long
 		fix B16 46.1048 6.7933167 2193
-		station B16 "B16" entrance  continuation explored 08m
+		station B16 "B16" entrance  #continuation explored 08m
 
 		#explo-date ..
 		#	explo-team ""
+		
+		data normal from to length compass clino
+		flags approx
+		B16	1	8	0	-90
   
 	endcenterline
 

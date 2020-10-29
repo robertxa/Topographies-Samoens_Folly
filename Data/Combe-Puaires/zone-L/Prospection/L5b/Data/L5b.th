@@ -9,7 +9,7 @@ survey L5b -title "L5b"
 	centerline -extend right
 		cs lat-long
 		fix       L5b      46.111283     6.80165      2309	# 2123
-		station   L5b      "L5b" entrance continuation explored 07m
+		station   L5b      "L5b" entrance #continuation explored 07m
 
 		explo-date 1976.06.17
 			explo-team "Christian Rigaldie"
@@ -18,6 +18,10 @@ survey L5b -title "L5b"
 			explo-team "Josiane Lips"
 		explo-date 1977.08.03
 			explo-team "Christian Roy"
+		
+		data normal from to length compass clino
+		flags approx
+		L5b	1	7	0	-90
 					   
   endcenterline
 

@@ -15,9 +15,13 @@ survey V9a-c -title "V9a-c"
 		station   V9c      "V9c" entrance #continuation explored 30m
 
 		explo-date 1976.08.12
-			explo-team "Bernar Lips"
+			explo-team "Bernard Lips"
 		explo-date 1976.08.12
 			explo-team "Pierre Rias"
+			
+		data normal from to length compass clino
+		flags approx
+		V9c	1	8	0	-90
 
 	endcenterline
 

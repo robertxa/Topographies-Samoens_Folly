@@ -9,7 +9,11 @@ survey D8 -title "D8"
 	centerline -extend right
 		cs lat-long
 		fix       D8       46.105650     006.79710     2277	#  2274
-		station   D8       "D8" entrance continuation explored 15m
+		station   D8       "D8" entrance #continuation explored 15m
+		
+		data normal from to length compass clino
+		flags approx
+		D8	1	15	0	-90
   
 	endcenterline
 

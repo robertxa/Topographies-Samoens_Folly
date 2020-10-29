@@ -9,10 +9,14 @@ survey L36 -title "L36"
 	centerline -extend right
 		cs lat-long
 		fix       L36       46.115383     6.80771      2342	# 2352
-		station   L36       "L36" entrance continuation explored 06m
+		station   L36       "L36" entrance #continuation explored 06m
 		
 		explo-date 2008.08.21
 			explo-team "Stéphane Lips"
+			
+		data normal from to length compass clino
+		flags approx
+		L36	1	6	0	-90
 		   
   endcenterline
 

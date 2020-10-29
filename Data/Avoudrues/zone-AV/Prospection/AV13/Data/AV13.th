@@ -9,11 +9,15 @@ survey AV13 -title "AV13"
 	centerline -extend right
 		cs lat-long
 		fix       AV13      46.103650     6.81658     2602	# 2611
-		station   AV13      "AV13" entrance continuation explored 10m
+		station   AV13      "AV13" entrance #continuation explored 10m
 		
 		explo-date 2007.09.15
 			explo-team "Xavier Robert"
 			explo-team "Josiane Lips"  
+			
+		data normal from to length compass clino
+		flags approx
+		AV13	1	10	0	-90
 
 	endcenterline
 

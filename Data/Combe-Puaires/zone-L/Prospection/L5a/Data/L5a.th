@@ -9,7 +9,7 @@ survey L5a -title "L5a"
 	centerline -extend right
 		cs lat-long
 		fix       L5a      46.111416     6.80168      2311
-		station   L5a      "L5a" entrance continuation explored 15m
+		station   L5a      "L5a" entrance #continuation explored 15m
 
 		explo-date 1976.06.17
 			explo-team "Christian Rigaldie"
@@ -17,7 +17,11 @@ survey L5a -title "L5a"
 			explo-team "Bernard Lips"
 			explo-team "Josiane Lips"
 		explo-date 1977.08.03
-			explo-team "Philippe Lavabre"		   
+			explo-team "Philippe Lavabre"	
+		
+		data normal from to length compass clino
+		flags approx
+		L5a	1	15	0	-90	   
 			
   endcenterline
 

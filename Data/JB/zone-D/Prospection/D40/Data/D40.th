@@ -9,10 +9,14 @@ survey D40 -title "D40"
 	centerline -extend right
 		cs lat-long
 		fix       D40       46.105983     006.79748      2290	# 2298
-		station   D40       "D40" entrance continuation explored 15m
+		station   D40       "D40" entrance #continuation explored 15m
 
 		#explo-date  ..
 			explo-team "Christophe Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		D40	1	15	0	-90
 			
 	endcenterline
 

@@ -10,11 +10,15 @@ survey A26 -title "A26"
 
 	cs lat-long
 		fix		A26	46.104090	6.78	1795	# 1801
-	station A26 "A26" entrance continuation explored 02m air-draught
+	station A26 "A26" entrance air-draught #continuation explored 02m #air-draught
 
 	explo-date 2013.07.07	# Revoir jour/mois
 		explo-team "Xavier Robert"
 		explo-team "Josiane Lips"
+		
+	data normal from to length compass clino
+		flags approx
+		A26	1	2	0	-90
 
 	endcenterline
 
