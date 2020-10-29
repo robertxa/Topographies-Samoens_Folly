@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP25 -title "LP25"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP25      46.112766     6.79918      2228	# 2229
+		station   LP25      "LP25" entrance continuation explored 15m
+	
+		explo-date  1988.11.11
+			explo-team "Bernard Lips"
+		explo-date 2002.10.21
+			explo-team "Christophe Ferry"
+			explo-team "Xavier Robert"
+		
+endcenterline
+
+ endsurvey

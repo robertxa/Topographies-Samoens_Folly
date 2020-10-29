@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP39 -title "LP39"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP39a     46.113433     6.79966      2241	# 2244
+		station   LP39a     "LP39a" entrance continuation explored 08m
+	
+		explo-date  2001.07.22
+			explo-team "Bernard Lips"
+		
+endcenterline
+
+ endsurvey

@@ -1,0 +1,33 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP15 -title "LP15"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP15      46.114300     6.79991      2228	# 2244
+		station   LP15      "LP15" entrance continuation explored 60m
+
+		explo-date  1979.08.10
+			explo-team "Frédéric Pallu"
+			explo-team "Philippe Lavabre"
+		explo-date 1979.08.11
+			explo-team "Jean-Bernard/de Chalelier"
+			explo-team "Philippe Lavabre"
+		explo-date 1979.08.12
+			explo-team "Josiane Lips"
+			explo-team "Frédéric Pallu"
+		explo-date 1988.11.11
+			explo-team "Josiane Lips"
+		explo-date 1988.11.12
+			explo-team "Bernard Lips"
+		explo-date 2006.09.15
+			explo-team "Xavier Robert"
+			explo-team "Stéphane Lips"
+		
+endcenterline
+
+endsurvey

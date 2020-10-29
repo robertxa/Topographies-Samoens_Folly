@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP5 -title "LP5"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP5      46.112266     6.79645      2150	# 2125
+		station   LP5      "LP5" entrance continuation explored 20m
+	
+		explo-date  1977.08.09
+			explo-team "Bernard Séroul"
+		
+endcenterline
+
+ endsurvey

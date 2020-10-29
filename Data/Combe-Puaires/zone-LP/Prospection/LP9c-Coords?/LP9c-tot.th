@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP9c -title "LP9c"
+	input Data/LP9c.th
+
+	# pour le plan
+	#input Data/LP9c.th2
+	# Pour la coupe et le plan
+	#input Data/LP9c-coupe.th2
+
+	#input LP9c-maps.th
+endsurvey

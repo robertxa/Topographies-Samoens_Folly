@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP53 -title "LP53"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP53      46.114166     6.80048      2254	# 2266
+		station   LP53      "LP53" entrance continuation explored 07m
+	
+		explo-date  2007.09.23
+			explo-team "Stéphane Lips"
+			explo-team "Frédéric Alvarez"
+		
+endcenterline
+
+ endsurvey

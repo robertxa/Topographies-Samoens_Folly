@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP6 -title "LP6"
+	input Data/LP6.th
+
+	# pour le plan
+	#input Data/LP6.th2
+	# Pour la coupe et le plan
+	#input Data/LP6-coupe.th2
+
+	#input LP6-maps.th
+endsurvey

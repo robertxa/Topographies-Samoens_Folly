@@ -7,27 +7,29 @@ encoding utf-8
 survey LP2 -title "LP2" -entrance "LP2a" -entrance "LP2b"
   
  #cs EPSG:<27572>
- #fix LP2   944.7970       2133.473       2119.000    
- centerline
-   date 2001.07.20
- cs lat-long
- fix LP2a   46.113350          6.799350       2119.000 #LP2A
- ##fix       LP2b     46.113366     006.79940      2047
-  #fix       LP2b        46.113299           6.799203      2047
-  fix       LP2b        46.113299           6.799203      2114
-   calibrate counter 0 1.000
-  team "Bernard Lips"
-  team "Olivier Marcillat"
-  team "Christophe Ferry"
-  explo-date 1977.08.12
-  explo-team "Christian Rigaldie"
-  explo-team "Philippe Guignard"
-  explo-team "Philippe Delzant"
-  explo-team "André Herbepin"
-  explo-date 2001.07.20
-  explo-team "Stéphane Lips"
-  explo-team "Bernard Lips"
-  explo-team "Josiane Lips"
+ #fix LP2   944.7970       2133.473       2119    
+centerline
+	cs lat-long
+	fix LP2a   46.113350          6.799350       2219	# 2119 #LP2A
+	##fix      LP2b     46.113366     006.79940      2047
+	#fix       LP2b        46.113299           6.799203      2047
+	fix       LP2b        46.113299           6.799203      2218	# 2114
+	
+	calibrate counter 0 1.000
+	
+	date 2001.07.20
+		team "Bernard Lips"
+		team "Olivier Marcillat"
+		team "Christophe Ferry"
+	explo-date 1977.08.12
+		explo-team "Christian Rigaldie"
+		explo-team "Philippe Guignard"
+		explo-team "Philippe Delzant"
+		explo-team "André Herbepin"
+	explo-date 2001.07.20
+		explo-team "Stéphane Lips"
+		explo-team "Bernard Lips"
+		explo-team "Josiane Lips"
   
    units lenght meters
    units compass grad

@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP22 -title "LP22"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP22      46.111583     6.80048      2273	# 2285
+		station   LP22      "LP22" entrance continuation explored 50m
+	
+		explo-date  2002.09.29
+			explo-team "Christophe Ohl"
+		explo-date 2002.10.31
+			explo-team "Christophe Ohl"
+		explo-date 2020.11.01
+			explo-team "Christophe Ohl"
+		
+endcenterline
+
+ endsurvey

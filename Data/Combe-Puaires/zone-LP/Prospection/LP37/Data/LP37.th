@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP37 -title "LP37"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP37      46.114250     6.80045      2253	# 2267
+		station   LP37      "LP37" entrance continuation explored 10m
+
+		explo-date  2007.08.12
+			explo-team "Christophe Ohl"
+		
+endcenterline
+
+ endsurvey

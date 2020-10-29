@@ -1,14 +1,18 @@
 A FAIRE sur la base de données topographiques de Samoëns
 
 - Corriger les altitudes des entrées avec le MNT IGN :
-		zones A-JB-V, A-A21, AV, B, BA, CH, CP (revoir pour Cartouche au cas par cas) D, DR, E, F, L, PV --> OK total (data + cartouche)
-		zones C, LP, LS, T --> A faire (Data + Cartouche)
+		zones A-JB-V, A-A21, AV, B, BA, CH, CP (revoir pour Cartouche au cas par cas) D, DR, E, F, L, LP, PV --> OK total (data + cartouche)
+		zones C, LS, T --> A faire (Data + Cartouche)
 
 - Revoir toutes les visées à distance nulle ? Ca fait planter les xvi des coupes développées ?
 
 - Rajouter les dessins en plan de toutes les cavités explorées, mais non topo, que nous avons dans la base de données.
 		zones A, V, B, CH, D, E, F, BA --> OK
 		zones C, AV, CP, DR, L, LP, LS, T --> A faire
+		
+- Rajouter des visées verticales fictives pour les trous sans topo verticaux
+		zones  --> OK
+		zones  --> A Faire
 
 - Rajouter coordonnées A14 + station topo dans le V11 ? OK pour le Cartouche...
 

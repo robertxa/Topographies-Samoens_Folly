@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP27 -title "LP27"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP27      46.113183     006.79981      2250
+		station   LP27      "LP27" entrance continuation explored 10m
+	
+		explo-date  1988.11.11
+			explo-team "Bernard Lips"
+		
+endcenterline
+
+ endsurvey

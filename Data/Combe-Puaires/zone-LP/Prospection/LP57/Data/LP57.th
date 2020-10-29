@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP57 -title "LP57"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP57      46.114866     6.80510      2326	# 2328
+		station   LP57      "LP57" entrance continuation explored 13m air-draught
+	
+		explo-date  2008.08.22
+			explo-team "Thomas Philippe"
+		
+endcenterline
+
+ endsurvey

@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP1 -title "LP1"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP1      46.113483     6.80078      2275	# 2109
+		station   LP1      "LP01" entrance continuation explored 50m
+	
+		explo-date  1977.08.15
+			explo-team "Bernard Séroul"
+		
+endcenterline
+
+ endsurvey

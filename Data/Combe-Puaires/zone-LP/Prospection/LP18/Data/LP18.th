@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP18 -title "LP18"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP18      46.112950     6.79886      2215	# 2217
+		station   LP18      "LP18" entrance continuation explored 20m
+	
+		explo-date  2002.10.31
+			explo-team "Xavier Robert"
+			explo-team "Christophe Ferry"
+		
+endcenterline
+
+ endsurvey

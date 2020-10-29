@@ -7,23 +7,21 @@ encoding utf-8
 survey LP19 -title "LP19" -entrance "LP19"
   
  #cs EPSG:<27572>
- #fix LP19   945.1170       2133.536       2326.000    
+ #fix LP19   945.1170       2133.536       2326
 centerline
    
 	cs lat-long
-	fix LP19   46.113750        6.803483       2326.000
+	fix LP19   46.113750        6.803483       2314	# 2326
 	
-   date 2006.09.02
-		team "Xavier Robert"
-		team "Stéphane Lips"
-		team "Pauline Evrard"
 	explo-date 1981.08.05
 		explo-team "Daniel Ziegel"
 		explo-team "Claude Milly"
-		explo-date 2006.08.11
-		explo-date 2006.09.02
+	explo-date 2006.08.11
+		explo-date "Stéphane Lips"
+		explo-date "Pauline Evrard-Guespin"
+	explo-date 2006.09.02
 		explo-team "Stéphane Lips"
-		explo-team "Pauline Evrard"
+		explo-team "Pauline Evrard-Guespin"
 		explo-team "Xavier Robert"
 		explo-team "Vincent Routhieau"
 		

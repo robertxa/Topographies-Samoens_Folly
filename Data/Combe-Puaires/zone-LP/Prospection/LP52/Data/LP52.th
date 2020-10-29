@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP52 -title "LP52"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP52      46.114166     006.80056      2259
+		station   LP52      "LP52" entrance continuation explored 15m
+		
+	explo-date 2007.09.23
+		explo-team "Gaëtan Poschmann"
+  
+endcenterline
+
+ endsurvey

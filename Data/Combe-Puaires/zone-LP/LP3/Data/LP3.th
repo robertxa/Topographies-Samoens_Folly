@@ -7,19 +7,21 @@ encoding utf-8
 survey LP3 -title "LP3" -entrance "LP3"
     
 centerline
-   date 2009.08.08
   cs lat-long 
 # fix LP3    46.112983       6.797483       2168
 # fix       LP3      46.112983     006.79748      2047  
-  fix       LP3      46.112983     006.79748      2168	# Revision de l'altitude car ne correspond pas avec le DEM  
+  fix       LP3      46.112983     006.79748      2179	# 2168	# Revision de l'altitude car ne correspond pas avec le DEM  
    calibrate counter 0 1.000
-  team "Stéphane Lips"
-  team "Antoine Aigueperse"
-  team "Guillaume Cerdan"
-  explo-date 2009.08.08
-  explo-team "Stéphane Lips"
-  explo-team "Antoine Aigueperse"
-  explo-team "Guillaume Cerdan"
+   
+	date 2009.08.08
+		team "Stéphane Lips"
+		team "Antoine Aigueperse"
+		team "Guillaume Cerdan"
+	explo-date 1977.08.09
+	explo-date 2009.08.08
+		explo-team "Stéphane Lips"
+		explo-team "Antoine Aigueperse"
+		explo-team "Guillaume Cerdan"
   
    units lenght meters
    units compass grad

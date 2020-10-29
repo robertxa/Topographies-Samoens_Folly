@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP4 -title "LP4"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP4	#46.113483     6.80078      2109	# Coordonnées à retrouver/lever
+		station   LP4      "LP4" entrance continuation explored 15m
+
+		explo-date  1977.08.09
+			explo-team "Bernard Séroul"
+		explo-date 1977.08.10
+			explo-team 'Bernard Lips'
+		
+endcenterline
+
+ endsurvey

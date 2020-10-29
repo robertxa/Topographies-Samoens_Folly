@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP45 -title "LP45"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP45      #46.113483     006.80078      2109
+		station   LP45      "LP45" entrance continuation explored 12m
+	
+		explo-date  2007.08.13
+			explo-team "Christophe Ohl"
+		
+endcenterline
+
+ endsurvey

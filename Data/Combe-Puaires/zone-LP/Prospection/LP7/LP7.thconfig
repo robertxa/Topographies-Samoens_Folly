@@ -21,7 +21,7 @@ endlayout
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBCHpra
+	copy Coords_Header_CPLPpra
 	copy drawingconfig
 	copy header-plan-schema
 	copy langue-fr
@@ -65,8 +65,8 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{15\thinspace{}m}
-		\cavedepth{-2\thinspace{}m}
+		\cavelength{75\thinspace{}m}
+		\cavedepth{-50\thinspace{}m}
 	endcode  
   
 endlayout
@@ -75,7 +75,7 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBCPpra
+	copy Coords_Header_CPLPpra
 	copy drawingconfig
 	copy header_coupe-schema
 	copy langue-fr
@@ -118,8 +118,8 @@ layout my_layout-coupe
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{15\thinspace{}m}
-		\cavedepth{-2\thinspace{}m}
+		\cavelength{75\thinspace{}m}
+		\cavedepth{-50\thinspace{}m}
 	endcode  
 
 endlayout
@@ -142,10 +142,10 @@ endlayout
 
 # Select maps
 	select MP-LP7-plan-tot@LP7
-	select MC-LP7-coupe-tot@LP7
+#	select MC-LP7-coupe-tot@LP7
 	  
- export map -o Outputs/LP7-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/LP7-coupe.pdf
+export map -o Outputs/LP7-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/LP7-coupe.pdf
 #export map -o Outputs/LP7-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/LP7-coupe-Continuations.pdf
 
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/LP7-coupe.pdf
 #export map -proj plan -fmt esri -o Outputs/LP7 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/LP7.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/LP7.kml -layout my_layout

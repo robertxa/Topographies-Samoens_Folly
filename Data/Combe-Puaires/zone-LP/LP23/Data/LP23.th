@@ -7,13 +7,13 @@ encoding utf-8
 survey LP23 -title "LP23" -entrance "LP23"
   
  #cs EPSG:<27572>
- #fix LP23   944.8320       2133.399       2259.000    
+ #fix LP23   944.8320       2133.399       2259 
 centerline
    date 1989.08.25
   team "Bernard Lips"
   team "Patrice Dubail"
  cs lat-long
- fix LP23    46.112667        6.799750       2259.000
+ fix LP23    46.112667        6.799750       2249	# 2259
    calibrate counter 0 1.000
   explo-date 1988.11.11
   explo-team "Vincent Treiber"

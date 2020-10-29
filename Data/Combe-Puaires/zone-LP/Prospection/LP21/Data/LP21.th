@@ -1,0 +1,34 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP21 -title "LP21"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP21      46.112833     006.79845      2201	# 2191
+		station   LP21      "LP21" entrance continuation explored 50m air-draught
+
+		explo-date  1981.08.17
+			explo-team "Christophe Ohl"
+		explo-date  1981.08.19
+			explo-team "Christophe Ohl"
+		explo-date  1981.09.04
+			explo-team "Christophe Ohl"
+			explo-team "Christian Rigaldie"
+		explo-date  1981.09.05
+			explo-team "Christophe Ohl"
+			explo-team "Christian Rigaldie"
+		explo-date  1983.08.04
+			explo-team "Christophe Ohl"
+			explo-team "Bernard Lips"
+		explo-date  1983.08.05
+			explo-team "Bernard Lips"
+			explo-team "Bernard Séroul"
+			explo-team "Marie Claude"
+		
+endcenterline
+
+ endsurvey

@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP8 -title "LP8"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP8      46.114150     6.80070      2264
+		station   LP8      "LP8" entrance continuation explored 53m
+	
+		explo-date  1977.08.10
+			explo-team "Bernard Lips"
+		
+endcenterline
+
+ endsurvey

@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP40 -title "LP40"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP40      46.114216     6.80100      2274	# 2281
+		station   LP40      "LP40" entrance continuation explored 25m
+	
+		explo-date  2007.08.12
+			explo-team "Arthur Ohl"
+		
+endcenterline
+
+ endsurvey

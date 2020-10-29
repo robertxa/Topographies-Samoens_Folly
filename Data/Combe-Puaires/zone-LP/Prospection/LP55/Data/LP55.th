@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP55 -title "LP55"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP55      46.115083     6.80496      2324	# 2331
+		station   LP55      "LP55" entrance continuation explored 15m air-draught
+
+		explo-date  2008.08.22
+			explo-team "Gaëlle Paillart"
+			explo-team "Eric Tarazona"
+		
+endcenterline
+
+ endsurvey

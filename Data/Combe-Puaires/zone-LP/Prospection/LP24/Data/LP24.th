@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP24 -title "LP24"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP24      46.114400     006.80078      2264	# 2271
+		station   LP22      "LP22" entrance continuation explored 50m
+
+		explo-date  1988.11.11
+			explo-team "Patrice Plantier"
+		
+endcenterline
+
+ endsurvey

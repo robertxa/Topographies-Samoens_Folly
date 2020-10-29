@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP38 -title "LP38"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP38      46.114350     6.80040      2248	# 2245
+		station   LP38      "LP38" entrance continuation explored 06m
+	
+		explo-date  2007.12.07
+			explo-team "Christophe Ohl"
+		
+endcenterline
+
+ endsurvey

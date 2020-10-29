@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP62 -title "LP62"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP62      46.113066     6.79811      2192	# 2195
+		station   LP62      "LP62" entrance continuation explored 04m
+	
+		explo-date  2009.08.08
+			explo-team "Antoine Aigueperse"
+			explo-team "Stéphane Lips"
+		
+endcenterline
+
+ endsurvey

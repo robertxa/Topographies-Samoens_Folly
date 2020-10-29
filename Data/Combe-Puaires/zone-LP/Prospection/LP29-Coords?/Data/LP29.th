@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP29 -title "LP29"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP29      #46.113483     006.80078      2109
+		station   LP29      "LP29" entrance continuation explored 08m
+	
+		explo-date  1988.11.11
+			explo-team "Josiane Lips"
+		explo-date 1988.11.12
+			explo-date "Bernard Lips"
+		
+endcenterline
+
+ endsurvey

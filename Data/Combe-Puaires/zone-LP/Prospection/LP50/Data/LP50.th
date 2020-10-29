@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP50 -title "LP50"
+
+	centerline -extend right
+		cs lat-long
+		fix       LP50      46.114266     6.80010      2236	# 2245
+		station   LP50      "LP50" entrance continuation explored 10m
+	
+		explo-date  2007.09.23
+			explo-team "Frédéric Alvarez"
+			explo-team "Gaëtan Poschmann"
+		
+endcenterline
+
+ endsurvey
