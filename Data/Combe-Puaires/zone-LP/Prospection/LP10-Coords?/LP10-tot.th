@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey LP1 -title "LP1"
-	input Data/LP1.th
+survey LP10 -title "LP10"
+	input Data/LP10.th
 
 	# pour le plan
-	#input Data/LP1.th2
+	#input Data/LP10.th2
 	# Pour la coupe et le plan
-	#input Data/LP1-coupe.th2
+	#input Data/LP10-coupe.th2
 
-	#input LP1-maps.th
+	#input LP10-maps.th
 endsurvey
