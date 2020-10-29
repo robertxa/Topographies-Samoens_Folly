@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP20b -title "LP20b"
+	input Data/LP20b.th
+
+	# pour le plan
+	#input Data/LP20b.th2
+	# Pour la coupe et le plan
+	#input Data/LP20b-coupe.th2
+
+	#input LP20b-maps.th
+endsurvey

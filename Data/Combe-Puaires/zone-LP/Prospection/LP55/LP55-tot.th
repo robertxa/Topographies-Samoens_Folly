@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP55 -title "LP55"
+	input Data/LP55.th
+
+	# pour le plan
+	#input Data/LP55.th2
+	# Pour la coupe et le plan
+	#input Data/LP55-coupe.th2
+
+	#input LP55-maps.th
+endsurvey

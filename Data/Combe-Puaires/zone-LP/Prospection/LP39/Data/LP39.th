@@ -4,12 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey LP39 -title "LP39"
+survey LP39 -title "LP39a-b-c"
 
 	centerline -extend right
 		cs lat-long
 		fix       LP39a     46.113433     6.79966      2241	# 2244
-		station   LP39a     "LP39a" entrance continuation explored 08m
+		#station   LP39a     "LP39a" entrance continuation explored 08m
+		#station   LP39b     "LP39b" entrance continuation explored 18m
+		#station   LP39c     "LP39c" entrance continuation explored 12m
+		station   LP39a     "LP39a" entrance continuation explored 48m
 	
 		explo-date  2001.07.22
 			explo-team "Bernard Lips"

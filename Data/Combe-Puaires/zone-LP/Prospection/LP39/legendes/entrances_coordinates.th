@@ -14,7 +14,9 @@ layout Entrances_coords_CPLPpra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationCPLPpra{LP1    --  Lat. : 46.? N ; Long. : 6.? E ; Alt. : 2? m}
+		\def\thlocationCPLPpra{LP39a    --  Lat. : 46.11343 N ; Long. : 6.79966 E ; Alt. : 2241 m}
+		\def\thlocationCPLPprb{LP39b    --  Lat. : 46.? N ; Long. : 6.? E ; Alt. : 22? m}
+		\def\thlocationCPLPprc{LP39b    --  Lat. : 46.? N ; Long. : 6.? E ; Alt. : 22? m}
 	endcode 
 	
 endlayout
@@ -43,6 +45,12 @@ layout Coords_Header_CPLPpra
 			\fi
 			\edef\tmp{\thlocationCPLPpra} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm \ss\thlocationCPLPpra\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationCPLPprb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPLPprb\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationCPLPprc} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPLPprc\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode
