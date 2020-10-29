@@ -26,7 +26,7 @@ layout my_layout
 	copy header-plan-schema
 	copy langue-fr
   
-	doc-title "CH24"
+	doc-title "F2"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 250
@@ -80,7 +80,7 @@ layout my_layout-coupe
 	copy header_coupe-schema
 	copy langue-fr
   
-	doc-title "CH24"
+	doc-title "F2"
 	doc-author "Xavier Robert"
 	base-scale 1 250
 	scale 1 250
@@ -137,8 +137,8 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/CH24-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/CH24-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/F2-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/F2-coupe.xvi
 
 # Select maps
 	select MP-F2-plan-tot@F2

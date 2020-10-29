@@ -26,7 +26,7 @@ layout my_layout
 	copy header-plan-schema
 	copy langue-fr
   
-	doc-title "CH24"
+	doc-title "CH25"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -60,7 +60,7 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={CH24} 		
+			\cavename={CH25} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -80,7 +80,7 @@ layout my_layout-coupe
 	copy header_coupe-schema
 	copy langue-fr
   
-	doc-title "CH24"
+	doc-title "CH25"
 	doc-author "Xavier Robert"
 	base-scale 1 250
 	scale 1 250
@@ -137,8 +137,8 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/CH24-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/CH24-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CH25-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/CH25-coupe.xvi
 
 # Select maps
 	select MP-CH25-plan-tot@CH25
