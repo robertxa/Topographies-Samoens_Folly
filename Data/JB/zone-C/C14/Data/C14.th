@@ -7,9 +7,9 @@ encoding utf-8
 survey C14 -title "C14" -entrance "C14"
 centerline
 	#cs EPSG:27572
-	#fix C14   944.6000       2132.723       2273.000 
+	#fix C14   944.6000       2132.723       2273
 	cs lat-long
-	fix C14 46.1067167 6.7962667 2251 
+	fix C14 46.1067167 6.7962667 2269	# 2251 
 
 	date 1971.08.06
 		team "Jacques Lopez"

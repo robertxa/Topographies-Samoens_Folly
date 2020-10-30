@@ -8,9 +8,9 @@ survey C24 -title "C24" -entrance "C24"
    
 centerline
 # cs EPSG:27572
-# fix C24   944.8930       2132.653       2286.000
+# fix C24   944.8930       2132.653       2286
  cs lat-long
- fix C24 46.1059333 6.7999833 02297 
+ fix C24 46.1059333 6.7999833 2283	# 2297 
 	explo-date 1976.08.05
 		explo-team "Christian Rigaldie"
 		explo-team "Frédéric Pallu"
