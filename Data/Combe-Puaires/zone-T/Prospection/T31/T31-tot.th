@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey T31 -title "T31"
+	input Data/T31.th
+
+	# pour le plan
+	#input Data/T31.th2
+	# Pour la coupe et le plan
+	#input Data/T31-coupe.th2
+
+	#input T31-maps.th
+endsurvey

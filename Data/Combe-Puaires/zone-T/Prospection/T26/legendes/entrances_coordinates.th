@@ -14,7 +14,8 @@ layout Entrances_coords_CPTpra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationCPTpra{V1    --  Lat. : 46.10857 N ; Long. : 6.79303 E ; Alt. : 2090 m}
+		\def\thlocationCPTpra{T26a    --  Lat. : 46.10897 N ; Long. : 6.79418 E ; Alt. : 2114 m}
+		\def\thlocationCPTprb{T26b    --  Lat. : 46.10917 N ; Long. : 6.79425 E ; Alt. : 2115 m}
 	endcode 
 	
 endlayout
@@ -43,6 +44,9 @@ layout Coords_Header_CPTpra
 			\fi
 			\edef\tmp{\thlocationCPTpra} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm \ss\thlocationCPTpra\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationCPTprb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPTprb\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

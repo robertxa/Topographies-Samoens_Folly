@@ -8,8 +8,8 @@ survey T10 -title "T10"
 
 	centerline -extend right
 		cs lat-long
-		#fix       T10       46.109050     006.79530      2136	# OLD
-		fix       T10       46.108690     006.794570      2130	# 2132
+		#fix       T10       46.109050     6.79530      2136	# OLD
+		fix       T10       46.108690     6.794570      2130	# 2132
 		station   T10       "T10" entrance #continuation explored 11m
 		
 		explo-date 1975.10.26

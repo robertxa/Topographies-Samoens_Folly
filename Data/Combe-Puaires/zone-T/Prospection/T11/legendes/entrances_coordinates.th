@@ -14,7 +14,11 @@ layout Entrances_coords_CPTpra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationCPTpra{V1    --  Lat. : 46.10857 N ; Long. : 6.79303 E ; Alt. : 2090 m}
+		\def\thlocationCPTpra{T11a    --  Lat. : 46.10930 N ; Long. : 6.79576 E ; Alt. : 2154 m}
+		\def\thlocationCPTprb{T11b    --  Lat. : 46.10927 N ; Long. : 6.79585 E ; Alt. : 2157 m}
+		\def\thlocationCPTprc{T11c    --  Lat. : 46.10927 N ; Long. : 6.79593 E ; Alt. : 2157 m}
+		\def\thlocationCPTprd{T11d    --  Lat. : 46.10925 N ; Long. : 6.79608 E ; Alt. : 2166 m}
+		\def\thlocationCPTpre{T11e    --  Lat. : 46.10923 N ; Long. : 6.79628 E ; Alt. : 2171 m}
 	endcode 
 	
 endlayout
@@ -43,6 +47,18 @@ layout Coords_Header_CPTpra
 			\fi
 			\edef\tmp{\thlocationCPTpra} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm \ss\thlocationCPTpra\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationCPTprb} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPTprb\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationCPTprc} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPTprc\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationCPTprd} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPTprd\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationCPTpre} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm \ss\thlocationCPTpre\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

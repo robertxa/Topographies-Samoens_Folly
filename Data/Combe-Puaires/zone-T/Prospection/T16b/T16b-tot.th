@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey T16b -title "T16b"
+	input Data/T16b.th
+
+	# pour le plan
+	#input Data/T16b.th2
+	# Pour la coupe et le plan
+	#input Data/T16b-coupe.th2
+
+	#input T16b-maps.th
+endsurvey

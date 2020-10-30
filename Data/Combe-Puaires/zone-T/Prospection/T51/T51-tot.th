@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey T51 -title "T51"
+	input Data/T51.th
+
+	# pour le plan
+	#input Data/T51.th2
+	# Pour la coupe et le plan
+	#input Data/T51-coupe.th2
+
+	#input T51-maps.th
+endsurvey

@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey T29 -title "T29"
+	input Data/T29.th
+
+	# pour le plan
+	#input Data/T29.th2
+	# Pour la coupe et le plan
+	#input Data/T29-coupe.th2
+
+	#input T29-maps.th
+endsurvey
