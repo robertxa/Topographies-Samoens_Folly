@@ -9,10 +9,14 @@ survey LP51 -title "LP51"
 	centerline -extend right
 		cs lat-long
 		fix       LP51      46.114400     6.80006      2233	# 2244
-		station   LP51      "LP51" entrance continuation explored 08m
+		station   LP51      "LP51" entrance #continuation explored 08m
 	
 		explo-date  2007.09.23
 			explo-team "Gaëtan Poschmann"
+		
+		data normal from to length compass clino
+		flags approx
+		LP51	1	8	0	-90
 		
 endcenterline
 

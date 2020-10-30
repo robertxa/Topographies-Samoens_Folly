@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T55 -title "T55"
+
+	centerline -extend right
+		cs lat-long
+		fix       T55       46.109383     6.79805      2227	# 2218
+		station   T55       "T55" entrance continuation explored 08m
+
+		explo-date 2004.09.03
+			explo-team "Bernard Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		T55	1	8	0	-90
+		
+endcenterline
+ endsurvey

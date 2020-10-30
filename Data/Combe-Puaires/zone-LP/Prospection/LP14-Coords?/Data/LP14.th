@@ -9,10 +9,14 @@ survey LP14 -title "LP14"
 	centerline -extend right
 		cs lat-long
 		fix       LP14      #46.113483     006.80078      2109
-		station   LP14      "LP14" entrance continuation explored 10m
+		station   LP14      "LP14" entrance #continuation explored 10m
 	
 		explo-date  1978.08.06
 			explo-team "Philippe Frère"
+		
+		data normal from to length compass clino
+		flags approx
+		LP14	1	10	0	-90
 		
 endcenterline
 

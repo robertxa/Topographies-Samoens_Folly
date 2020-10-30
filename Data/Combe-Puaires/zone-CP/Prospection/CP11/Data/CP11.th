@@ -9,7 +9,7 @@ survey CP11 -title "CP11"
 	centerline -extend right
 		cs lat-long
 		fix       CP11      46.119783     006.80325      2285
-		station   CP11      "CP11" entrance continuation explored 14m
+		station   CP11      "CP11" entrance #continuation explored 14m
 		
 		explo-date 1977.08.18
 			explo-team "Françoise Debrosse"
@@ -21,6 +21,10 @@ survey CP11 -title "CP11"
 			explo-team "Henri/de Rocca Serra"
 		explo-date 2001.07.01
 			explo-team "Sylvain Cochon"
+		
+		data normal from to length compass clino
+		flags approx
+		CP11	1	14	0	-90
   
 	endcenterline
 endsurvey

@@ -9,10 +9,14 @@ survey LP42 -title "LP42"
 	centerline -extend right
 		cs lat-long
 		fix       LP42      46.114150     6.80063      2262	# 2288
-		station   LP42      "LP42" entrance continuation explored 15m
+		station   LP42      "LP42" entrance #continuation explored 15m
 	
 		explo-date  2007.08.12
 			explo-team "Christophe Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		LP42	1	15	0	-90
 		
 endcenterline
 

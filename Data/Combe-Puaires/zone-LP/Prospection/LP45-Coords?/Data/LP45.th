@@ -9,10 +9,14 @@ survey LP45 -title "LP45"
 	centerline -extend right
 		cs lat-long
 		fix       LP45      #46.113483     006.80078      2109
-		station   LP45      "LP45" entrance continuation explored 12m
+		station   LP45      "LP45" entrance #continuation explored 12m
 	
 		explo-date  2007.08.13
 			explo-team "Christophe Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		LP45	1	12	0	-90
 		
 endcenterline
 

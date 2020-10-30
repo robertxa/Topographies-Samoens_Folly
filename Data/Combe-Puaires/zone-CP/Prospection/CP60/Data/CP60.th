@@ -9,11 +9,15 @@ survey CP60 -title "CP60"
 	centerline
 		cs lat-long
 		fix		CP60	46.11932 6.81103 2258
-		station   CP60      "CP60" entrance continuation explored 10m
+		station   CP60      "CP60" entrance #continuation explored 10m
 
 		explo-date 2011.07.12
 			explo-team "Frédéric Delègue"
 			explo-team "Hervé Frot"
+		
+		data normal from to length compass clino
+		flags approx
+		CP60	1	10	0	-90
   
 	endcenterline
 endsurvey

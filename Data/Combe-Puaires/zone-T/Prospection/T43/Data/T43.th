@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T43 -title "T43"
+
+	centerline -extend right
+		cs lat-long
+		fix		T43	46.109052	6.795825	2139	# 2162
+		station   T43       "T43" entrance #continuation explored 06m
+		
+		explo-date 2004.09.02
+			explo-team "Bernard Lips"
+
+		data normal from to length compass clino
+		flags approx
+		T43	1	6	0	-90
+		
+endcenterline
+ endsurvey

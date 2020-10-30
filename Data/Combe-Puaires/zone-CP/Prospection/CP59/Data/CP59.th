@@ -9,13 +9,17 @@ survey CP59 -title "CP59"
 	centerline
 		cs lat-long
 		fix		CP59	46.11973 6.81387 2253
-		station   CP59      "CP59" entrance continuation explored 07m
+		station   CP59      "CP59" entrance #continuation explored 07m
 
 		explo-date 2008.07.12
 			explo-team "Laurent Morel"
 			explo-team "Marie-Jo Bravais"
 			explo-team "Frédéric Delègue"
 			explo-team "Hervé Frot"
+		
+		data normal from to length compass clino
+		flags approx
+		CP59	1	7	0	-90
   
 	endcenterline
 endsurvey

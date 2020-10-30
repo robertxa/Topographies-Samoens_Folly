@@ -9,10 +9,14 @@ survey LP6 -title "LP6"
 	centerline -extend right
 		cs lat-long
 		fix       LP6      46.113683     6.79906      2214
-		station   LP6      "LP6" entrance continuation explored 25m air-draught
+		station   LP6      "LP6" entrance air-draught #continuation explored 25m air-draught
 
 		explo-date  1977.08.10
 			explo-team "Yves Thoret"
+			
+		data normal from to length compass clino
+		flags approx
+		LP6	1	25	0	-90
 		
 endcenterline
 

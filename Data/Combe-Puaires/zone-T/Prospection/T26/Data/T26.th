@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T26 -title "T26"
+
+	centerline -extend right
+		cs lat-long
+		fix       T26a      46.108966     6.79418      2114	# 2109
+		fix       T26b      46.109166     6.79425      2115	# 2119
+		station   T26a      "T26a" entrance #continuation explored 08m
+		station   T26b      "T26b" entrance #continuation explored 09m
+
+		explo-date 1976.08.03
+			explo-team "Philippe Bigeard"
+		
+		data normal from to length compass clino
+		flags approx
+		T26a	1	8	0	-90
+		T26b	2	9	0	-90
+		
+endcenterline
+ endsurvey

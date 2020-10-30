@@ -9,7 +9,7 @@ survey CP57 -title "CP57"
 	centerline
 		cs lat-long
 		fix		CP57	46.11807 6.80492 2248
-		station   CP57      "CP57" entrance continuation explored 10m
+		station   CP57      "CP57" entrance #continuation explored 10m
 
 		explo-date 2008.07.12
 			explo-team "Antoine Aigueperse"
@@ -18,6 +18,10 @@ survey CP57 -title "CP57"
 			explo-team "Marie-Jo Bravais"
 			explo-team "Frédéric Delègue"
 			explo-team "Hervé Frot"
+			
+		data normal from to length compass clino
+		flags approx
+		CP57	1	10	0	-90
   
 	endcenterline
 endsurvey

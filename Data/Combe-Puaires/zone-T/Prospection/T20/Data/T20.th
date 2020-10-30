@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T20 -title "T20"
+
+	centerline -extend right
+		cs lat-long
+		fix       T20       46.110766     6.79480      2123
+		station   T20       "T20" entrance continuation explored 50m
+
+		explo-date 1976.06.18
+			explo-team "Benoît/Le Falher"
+		explo-date 1976.08.08
+			explo-team "Christian Rigaldie"
+		
+endcenterline
+ endsurvey

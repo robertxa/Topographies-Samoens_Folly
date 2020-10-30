@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T39 -title "T39"
+
+	centerline -extend right
+		cs lat-long
+		fix       T39       46.109016     6.79155      2053	# 2058
+		station   T39       "T39" entrance continuation explored 06m
+
+		explo-date 2014.08.05
+			explo-team "Stéphane Lips"
+			explo-team "Clément Baudy"
+		
+endcenterline
+ endsurvey

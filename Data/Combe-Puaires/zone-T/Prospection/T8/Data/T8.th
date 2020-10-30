@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T8 -title "T8"
+
+	centerline -extend right
+		cs lat-long
+		fix       T8       46.108716     6.79480      2140	# 2136
+		station   T8       "T8" entrance #continuation explored 10m
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+		explo-date 1976.06.15
+			explo-team "Josiane Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		T8	1	10	0	-90
+endcenterline
+ endsurvey

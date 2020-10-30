@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T58 -title "T58"
+
+	centerline -extend right
+		cs lat-long
+		fix       T58       46.109900     6.79720      2185	# 2177
+		station   T58       "T58" entrance #continuation explored 15m
+
+		explo-date 2004.09.03
+			explo-team "Bernard Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		T58	1	15	0	-90
+		
+endcenterline
+ endsurvey

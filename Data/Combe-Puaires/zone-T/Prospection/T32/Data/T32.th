@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T32 -title "T32"
+
+	centerline -extend right
+		cs lat-long
+		fix       T32       46.109300     6.79856      2245	# 2237
+		fix       T32b      46.109216     6.79836      2243	# 2236
+		station   T32       "T32a" entrance continuation explored 15m
+		station   T32b      "T32b" entrance
+
+		explo-date 1976.08.07
+			explo-team "F. Debrosse"
+		explo-date 1976.08.08
+			explo-team "Jean-Luc Thevenin"
+			explo-team "Jacques Aubert"
+		
+endcenterline
+ endsurvey

@@ -9,10 +9,14 @@ survey V1 -title "V1"
 	centerline -extend right
 		cs lat-long
 		fix       V1       46.108581     6.793033      2085	# 2090
-		station   V1       "V1" entrance continuation explored 28m
+		station   V1       "V1" entrance #continuation explored 28m
 
 		explo-date 1976.06.15
 			explo-team "Christian Rigaldie"
+		
+		data normal from to length compass clino
+		flags approx
+		V1	1	28	0	-90
 		
 endcenterline
  endsurvey

@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T33a -title "T33a"
+
+	centerline -extend right
+		cs lat-long
+		fix       T33a      46.111883     6.79741      2179	# 2175
+		station   T33a      "T33a" entrance continuation explored 30m air-draught
+
+
+		explo-date 1977.08.07
+			explo-team "Bernard Lips"
+		explo-date 2005
+			explo-team "Stéphane Lips"
+		
+endcenterline
+ endsurvey

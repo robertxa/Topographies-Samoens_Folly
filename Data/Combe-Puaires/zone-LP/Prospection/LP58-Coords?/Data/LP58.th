@@ -9,11 +9,15 @@ survey LP58 -title "LP58"
 	centerline -extend right
 		cs lat-long
 		fix       LP58      #46.113483     6.80078      2109
-		station   LP58      "LP58" entrance continuation explored 22m
+		station   LP58      "LP58" entrance #continuation explored 22m
 	
 		explo-date  2008.08.22
 			explo-team "Gaëlle Paillart"
 			explo-team "Eric Tarazona"
+			
+		data normal from to length compass clino
+		flags approx
+		LP58	1	22	0	-90
 		
 endcenterline
 

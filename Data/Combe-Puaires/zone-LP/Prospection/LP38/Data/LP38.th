@@ -9,10 +9,14 @@ survey LP38 -title "LP38"
 	centerline -extend right
 		cs lat-long
 		fix       LP38      46.114350     6.80040      2248	# 2245
-		station   LP38      "LP38" entrance continuation explored 06m
+		station   LP38      "LP38" entrance #continuation explored 06m
 	
 		explo-date  2007.12.07
 			explo-team "Christophe Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		LP38	1	6	0	-90
 		
 endcenterline
 

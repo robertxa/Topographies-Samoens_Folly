@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T30 -title "T30"
+
+	centerline -extend right
+		cs lat-long
+		fix       T30       46.109566     6.79636      2166	# 2167
+		station   T30       "T30" entrance continuation explored 16m
+
+		explo-date 1976.08.03
+			explo-team "Philippe Bigeard"
+		explo-date 2004.09.02
+			explo-team "Christophe Ferry"
+		
+endcenterline
+ endsurvey

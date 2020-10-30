@@ -10,9 +10,9 @@ survey T25a-b -title "T25a-b" -entrance "T25a" -entrance "T25b"
 centerline
 
  cs lat-long
-# fix T25b   46.109033       6.795983       2175.000000 
- fix       T25b      46.109033     006.79598      2167
- fix       T25a      46.109000     006.79590      2167
+# fix T25b   46.109033       6.795983       2175
+ fix       T25b      46.109033     006.79598      2170	# 2167
+ fix       T25a      46.109000     006.79590      2169	# 2167
    date 1976.08.04
   team "Bernard Lips"
   team "Philippe Lavabre"

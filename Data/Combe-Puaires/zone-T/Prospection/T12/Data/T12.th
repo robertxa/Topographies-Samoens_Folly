@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T12 -title "T12"
+
+	centerline -extend right
+		cs lat-long
+		fix       T12       46.109266     6.79591      2160	# 2155
+		station   T12       "T12" entrance continuation explored 60m
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+		explo-date 1976.08.03
+			explo-team "Bernard Lips"
+		explo-date 1976.08.06
+			explo-team "Jean-Luc Thevenin"
+			explo-team "Philippe Bigeard"
+			explo-team "Patrice Cahingt"
+		
+endcenterline
+ endsurvey

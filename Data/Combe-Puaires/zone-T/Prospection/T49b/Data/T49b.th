@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T49b -title "T49b"
+
+	centerline -extend right
+		cs lat-long
+		fix       T49b      46.109000     6.79666      2195	# 2219
+		station   T49b      "T49b" entrance continuation explored 08m
+
+		explo-date 2004.09.09
+			explo-team "Christophe Ohl"
+		
+endcenterline
+ endsurvey

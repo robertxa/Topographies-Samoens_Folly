@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T34a -title "T34a"
+
+	centerline -extend right
+		cs lat-long
+		fix		T34a	 46.111445	6.796458	2153	# 2157
+		station   T34a      "T34a" entrance continuation explored 25m
+		#station   T34b      "T34b" entrance continuation explored 12m
+
+		explo-date 1977.08.07
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

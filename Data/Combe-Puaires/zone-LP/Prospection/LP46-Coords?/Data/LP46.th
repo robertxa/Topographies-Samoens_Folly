@@ -9,10 +9,14 @@ survey LP46 -title "LP46"
 	centerline -extend right
 		cs lat-long
 		fix       LP46      #46.113483     006.80078      2109
-		station   LP46      "LP46" entrance continuation explored 15m
+		station   LP46      "LP46" entrance #continuation explored 15m
 	
 		explo-date  2007.08.13
 			explo-team "Arthur Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		LP46	1	15	0	-90
 		
 endcenterline
 

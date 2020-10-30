@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T6 -title "T6"
+
+	centerline -extend right
+		cs lat-long
+		fix       T6       46.108800     6.79410      2114	# 2118
+		station   T6       "T6" entrance continuation explored 30m air-draught
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+		explo-date 1996.09.14
+			explo-team "Olivier Vidal"
+			explo-team "C. Gentelet"
+		explo-date 1996.09.15
+			explo-team "Christophe Ferry"
+			explo-team "Florent Larzat"
+		
+endcenterline
+ endsurvey

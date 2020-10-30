@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T17 -title "T17"
+
+	centerline -extend right
+		cs lat-long
+		fix		T17	46.110229	6.792154	2072	# 2071
+		station   T17       "T17" entrance continuation explored 20m
+
+		explo-date 1976.11.11
+			explo-team "Josiane Sonney"
+			explo-team "P. Hauswald"
+			explo-team "A. Hauswald"
+		explo-date 1977.08.07
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

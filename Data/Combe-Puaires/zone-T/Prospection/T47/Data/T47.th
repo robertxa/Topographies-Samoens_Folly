@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T47 -title "T47"
+
+	centerline -extend right
+		cs lat-long
+		fix       T47       46.109200     6.79751      2221	# 2216
+		station   T47       "T47" entrance continuation explored 10m
+
+		explo-date 2004.09.02
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

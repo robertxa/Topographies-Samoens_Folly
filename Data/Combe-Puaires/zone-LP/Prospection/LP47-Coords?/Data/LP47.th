@@ -9,10 +9,14 @@ survey LP47 -title "LP47"
 	centerline -extend right
 		cs lat-long
 		fix       LP47      #46.113483     006.80078      2109
-		station   LP47      "LP47" entrance continuation explored 15m
+		station   LP47      "LP47" entrance #continuation explored 15m
 	
 		explo-date  2007.08.13
 			explo-team "Arthur Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		LP47	1	15	0	-90
 		
 endcenterline
 

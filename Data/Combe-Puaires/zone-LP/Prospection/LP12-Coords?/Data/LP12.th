@@ -9,10 +9,14 @@ survey LP12 -title "LP12"
 	centerline -extend right
 		cs lat-long
 		fix       LP12      #46.113483     006.80078      2109
-		station   LP12      "LP12" entrance continuation explored 10m
+		station   LP12      "LP12" entrance #continuation explored 10m
 	
 		explo-date  1978.08.02
 			explo-team "Bernard Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		LP12	1	10	0	-90
 		
 endcenterline
 

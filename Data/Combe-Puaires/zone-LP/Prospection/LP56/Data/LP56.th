@@ -9,10 +9,14 @@ survey LP56 -title "LP56"
 	centerline -extend right
 		cs lat-long
 		fix       LP56      46.115100     6.80486      2323	# 2332
-		station   LP56      "LP56" entrance continuation explored 15m
+		station   LP56      "LP56" entrance #continuation explored 15m
 	
 		explo-date  2008.08.22
 			explo-team "Stéphane Lips"
+			
+		data normal from to length compass clino
+		flags approx
+		LP56	1	15	0	-90
 		
 endcenterline
 

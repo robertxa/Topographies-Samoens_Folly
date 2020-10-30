@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T36 -title "T36"
+
+	centerline -extend right
+		cs lat-long
+		fix		T36		#46.10836	6.79392	2118
+		station T36	"T36"	entrance air-draught continuation explored 40m
+
+		explo-date 1959.08.11
+			explo-team "Michel Rattier"
+			explo-team "Michel Mollard"
+		explo-date 1976.06.15
+			explo-team "Christian Rigaldie"
+		explo-date 1996.09.09
+			explo-team "Christophe Ferry"
+		
+endcenterline
+ endsurvey

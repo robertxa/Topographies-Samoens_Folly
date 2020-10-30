@@ -9,10 +9,14 @@ survey LP60 -title "LP60"
 	centerline -extend right
 		cs lat-long
 		fix       LP60      46.113316     6.79846      2196	# 2200
-		station   LP60      "LP60" entrance continuation explored 04m
+		station   LP60      "LP60" entrance #continuation explored 04m
 	
 		explo-date  2009.08.08
 			explo-team "Stéphane Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		LP60	1	4	0	-90
 		
 endcenterline
 

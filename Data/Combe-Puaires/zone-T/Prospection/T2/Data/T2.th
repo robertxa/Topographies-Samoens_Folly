@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T2 -title "T2"
+
+	centerline -extend right
+		cs lat-long
+		fix       T2       46.108650     6.79245      2064	# 2042
+		station   T2       "T2" entrance continuation explored 15m
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

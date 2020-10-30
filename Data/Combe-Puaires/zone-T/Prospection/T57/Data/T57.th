@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T57 -title "T57"
+
+	centerline -extend right
+		cs lat-long
+		fix       T57       46.109683     6.79735      2192	# 2195
+		station   T57       "T57" entrance continuation explored 08m
+
+		explo-date 2004.09.03
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

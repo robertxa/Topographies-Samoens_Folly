@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T23 -title "T23"
+
+	centerline -extend right
+		cs lat-long
+		fix       T23       46.109166     6.79405      2111	# 2112
+		station   T23       "T23" entrance continuation explored 20m
+
+		explo-date 1976.06.18
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

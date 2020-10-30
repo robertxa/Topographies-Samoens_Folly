@@ -9,10 +9,14 @@ survey LP61 -title "LP61"
 	centerline -extend right
 		cs lat-long
 		fix       LP61      46.113050     6.79801      2190	# 2194
-		station   LP61      "LP61" entrance continuation explored 08m
+		station   LP61      "LP61" entrance #continuation explored 08m
 	
 		explo-date  2009.08.08
 			explo-team "Antoine Aigueperse"
+			
+		data normal from to length compass clino
+		flags approx
+		LP61	1	8	0	-90
 		
 endcenterline
 

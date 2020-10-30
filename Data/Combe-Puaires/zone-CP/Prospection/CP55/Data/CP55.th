@@ -10,7 +10,7 @@ survey CP55 -title "CP55"
 		cs lat-long
 
 		fix		CP55	46.11808 6.80431 2282
-		station   CP55      "CP55" entrance continuation explored 09m
+		station   CP55      "CP55" entrance #continuation explored 09m
 
 		explo-date 2011.07.12
 			explo-team "Frédéric Delègue"
@@ -19,6 +19,10 @@ survey CP55 -title "CP55"
 			explo-team "Laurent Morel"
 			explo-team "Marie-Jo Bravais"
 			explo-team "Hervé Frot"
+		
+		data normal from to length compass clino
+		flags approx
+		CP55	1	9	0	-90
   
 	endcenterline
 endsurvey

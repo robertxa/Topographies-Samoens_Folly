@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T25c-d -title "T25c-d"
+
+	centerline -extend right
+		cs lat-long
+		fix       T25c      46.109066     6.79606      2170	# 2173
+		fix       T25d      46.109116     6.79620      2172	# 2176
+		station   T25c      "T25c" entrance #continuation explored 06m
+		station   T25d      "T25d" entrance	#continuation explored 10m
+
+		#explo-date
+		#	explo-team ""
+		
+		data normal from to length compass clino
+		flags approx
+		T25c	1	6	0	-90
+		T25d	2	10	0	-90
+		
+endcenterline
+ endsurvey

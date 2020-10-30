@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T16b -title "T16b"
+
+	centerline -extend right
+		cs lat-long
+		fix       T16b       46.109150     6.79773      2232	# 2222
+		station   T16b       "T16b" entrance continuation explored 35m
+
+		explo-date 1976.08.04
+			explo-team "Bernard Séroul"
+			explo-team "Michel Decaux"
+			explo-team "F. Debrosse"
+			explo-team "Philippe Bigeard"
+		explo-date 1976.08.06
+			explo-team "Jean-Luc Thevenin"
+			explo-team "Michel Decaux"
+		
+endcenterline
+ endsurvey

@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T33b -title "T33b"
+
+	centerline -extend right
+		cs lat-long
+		fix       T33b      46.111833     6.79745      2179	# 2176
+		station   T33b      "T33b" entrance continuation explored 25m
+
+		explo-date 1977.08.07
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

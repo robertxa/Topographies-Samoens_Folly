@@ -9,10 +9,14 @@ survey LP43 -title "LP43"
 	centerline -extend right
 		cs lat-long
 		fix       LP43      #46.113483     006.80078      2109
-		station   LP43      "LP43" entrance continuation explored 12m
+		station   LP43      "LP43" entrance #continuation explored 12m
 	
 		explo-date  2007.08.13
 			explo-team "Christophe Ohl"
+			
+		data normal from to length compass clino
+		flags approx
+		LP43	1	12	0	-90
 		
 endcenterline
 

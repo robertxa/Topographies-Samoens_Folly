@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T60 -title "T60"
+
+	centerline -extend right
+		cs lat-long
+		#fix       T60       46.10828	6.79242	2065	# 2080	# Coordonnées à vérifier ?
+		fix       T60       46.108301	6.792362	2065	# 2080	# Coordonnées à vérifier ?
+		station   T60       "T60" entrance air-draught dig continuation explored 01m
+
+		explo-date 2013.08.04
+			explo-team "Xavier Robert"
+				
+endcenterline
+ endsurvey

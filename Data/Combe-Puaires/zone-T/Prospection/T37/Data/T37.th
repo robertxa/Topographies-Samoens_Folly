@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T37 -title "T37"
+
+	centerline -extend right
+		cs lat-long
+		fix		T37		46.10836	6.79392	2116	# 2118
+		station T37	"T37"	entrance #continuation explored 05m
+
+		explo-date 2014.08.05
+			explo-team "Stéphane Lips"
+			explo-team "Clément Baudy"
+			
+		data normal from to length compass clino left	right
+		flags approx
+		T37	1	5	0	-90	8	4
+		
+endcenterline
+ endsurvey

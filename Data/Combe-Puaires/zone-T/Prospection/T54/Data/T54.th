@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T54 -title "T54"
+
+	centerline -extend right
+		cs lat-long
+		fix       T54       46.109933     6.79815      2216	# 2212
+		station   T54       "T54" entrance continuation explored 05m
+
+		explo-date 2004.09.03
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

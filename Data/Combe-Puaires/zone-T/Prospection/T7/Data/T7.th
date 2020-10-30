@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T7 -title "T7"
+
+	centerline -extend right
+		cs lat-long
+		#fix       T7       46.108650     6.79460      2131	# OLD
+		fix       T7       46.109070     6.79523      2145	# 2149
+		station   T7       "T7" entrance #continuation explored 07m
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+		explo-date 1976.08.03
+			explo-team "Michel Decaux"
+		explo-date 2013.08.04
+			explo-team "Xavier Robert"
+			explo-team "Clément Baudy"
+			
+		data normal from to length compass clino
+		flags approx
+		T7	1	7	0	-90
+		
+endcenterline
+ endsurvey

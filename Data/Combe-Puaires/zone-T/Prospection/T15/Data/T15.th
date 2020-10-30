@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T15 -title "T15"
+
+	centerline -extend right
+		cs lat-long
+		fix       T15       46.109050     6.79635      2181	# 2195
+		station   T15       "T15" entrance air-draught #continuation explored 20m air-draught
+
+		explo-date 1976.08.18
+			explo-team "Bernard Lips"
+		explo-date 2004.09.02
+			explo-team "Christophe Ferry"
+			
+		data normal from to length compass clino
+		flags approx
+		T15	1	20	0	-90
+		
+endcenterline
+ endsurvey

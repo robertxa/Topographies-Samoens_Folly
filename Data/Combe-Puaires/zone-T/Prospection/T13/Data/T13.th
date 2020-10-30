@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T13 -title "T13"
+
+	centerline -extend right
+		cs lat-long
+		fix		T13	46.109632	6.794024	2118	# 2122
+		station   T13       "T13" entrance #continuation explored 13m
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+		explo-date 1976.06.17
+			explo-team "Christian Rigaldie"
+		
+		data normal from to length compass clino
+		flags approx
+		T13	1	13	0	-90
+		
+endcenterline
+ endsurvey

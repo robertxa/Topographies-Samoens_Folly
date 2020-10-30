@@ -9,7 +9,7 @@ survey CP20 -title "CP20"
 	centerline -extend right
 		cs lat-long
 		fix       CP20      46.114498     6.794954      2033
-		station   CP20      "CP20" entrance continuation explored 25m
+		station   CP20      "CP20" entrance #continuation explored 25m
 
 		explo-date 1978.08.02
 			explo-team "Frédéric Palu"
@@ -17,6 +17,10 @@ survey CP20 -title "CP20"
 		explo-date 1983.09.20
 			explo-team "Christophe Ohl"
 			explo-team "Jean-Bernard/de Chabelier"
+			
+		data normal from to length compass clino
+		flags approx
+		CP20	1	25	0	-90
 
 	endcenterline
 endsurvey

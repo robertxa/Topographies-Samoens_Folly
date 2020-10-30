@@ -1,0 +1,37 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T18 -title "T18"
+
+	centerline -extend right
+		cs lat-long
+		fix       T18       46.109250     6.79806      2234	#2223
+		station   T18       "T18" entrance continuation explored 40m air-draught
+
+		explo-date 1976.08.06
+			explo-team "Jean-Luc Thevenin"
+			explo-team "Michel Decaux"
+		explo-date 1976.08.09
+			explo-team "Jean-Luc Thevenin"
+		explo-date 1996.07.29
+			explo-team "Olivier Vidal"
+			explo-team "Bernard Lips"
+		explo-date 1996.08.21
+			explo-team "Olivier Vidal"
+			explo-team "Josiane Lips"
+		explo-date 1996.08.23
+			explo-team "Florent Larzat"
+			explo-team "Christophe Ferry"
+			explo-team "G. Mauheran"
+		explo-date 1996.08.23
+			explo-team "Josiane Lips"
+			explo-team "Bernard Lips"
+		explo-date 1996.08.24
+			explo-team "Christophe Ferry"
+			explo-team "Florent Larzat"
+		
+endcenterline
+ endsurvey

@@ -9,10 +9,14 @@ survey LP36 -title "LP36"
 	centerline -extend right
 		cs lat-long
 		fix       LP36      46.113983     6.79923      2206
-		station   LP36      "LP36" entrance continuation explored 08m
+		station   LP36      "LP36" entrance #continuation explored 08m
 	
 		explo-date  2007.08.12
 			explo-team "Arthur Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		LP36	1	8	0	-90
 		
 endcenterline
 

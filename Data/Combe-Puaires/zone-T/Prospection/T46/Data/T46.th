@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T46 -title "T46"
+
+	centerline -extend right
+		cs lat-long
+		fix       T46       46.109016     6.79736      2229	# 2217
+		station   T46       "T46" entrance #continuation explored 06m
+
+		explo-date 2004.09.02
+			explo-team "Bernard Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		T46	1	6	0	-90
+		
+endcenterline
+ endsurvey

@@ -9,11 +9,15 @@ survey CP49 -title "CP49"
 	centerline -extend right
 		cs lat-long
 		fix       CP49      46.120416     006.81368      2252
-		station   CP49      "CP49" entrance continuation explored 10m
+		station   CP49      "CP49" entrance #continuation explored 10m
 
 		explo-date 2007.07.14
 			explo-team "Philippe Sénécal"
 			explo-team "Bernard Lips"
+			
+			data normal from to length compass clino
+		flags approx
+		CP49	1	10	0	-90
   
 	endcenterline
 endsurvey

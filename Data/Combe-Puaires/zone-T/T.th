@@ -5,15 +5,16 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 survey zoneT -title "zone T"
-# Pour importer les différentes données de différents fichiers topos : 
-input T9/T9-tot.th
-input T25a-b/T25a-b-tot.th
-input T35/T35-tot.th
-input T59/T59-tot.th
-
+	# Pour importer les différentes données de différents fichiers topos : 
+		input T9/T9-tot.th
+		input T25a-b/T25a-b-tot.th
+		input T35/T35-tot.th
+		input T59/T59-tot.th
+		
+		#input Prospection/prospectionT.th
    
-input T-tot.th
+		input T-tot.th
 
-input T-maps.th
+		input T-maps.th
 
 endsurvey

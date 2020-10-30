@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T29 -title "T29"
+
+	centerline -extend right
+		cs lat-long
+		fix       T29       46.109350     6.79643      2172	# 2167
+		station   T29       "T29" entrance #continuation explored 08m
+
+		explo-date 1976.08.08
+			explo-team "Michel Heughebaert"
+		explo-date 2004.09.02
+			explo-team "Christophe Ferry"
+		
+		data normal from to length compass clino
+		flags approx
+		T29	1	8	0	-90
+		
+endcenterline
+ endsurvey

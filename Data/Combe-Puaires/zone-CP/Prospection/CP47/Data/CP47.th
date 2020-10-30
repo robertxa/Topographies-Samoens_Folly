@@ -9,10 +9,14 @@ survey CP47 -title "CP47"
 	centerline -extend right
 		cs lat-long
 		fix       CP47      46.120083     006.81285      2281
-		station   CP47      "CP47" entrance continuation explored 09m
+		station   CP47      "CP47" entrance #continuation explored 09m
 
 		explo-date 2007.07.13
 			explo-team "Bernard Lips"
+			
+		data normal from to length compass clino
+		flags approx
+		CP47	1	9	0	-90
   
 	endcenterline
 endsurvey

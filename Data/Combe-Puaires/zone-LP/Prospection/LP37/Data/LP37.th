@@ -9,10 +9,14 @@ survey LP37 -title "LP37"
 	centerline -extend right
 		cs lat-long
 		fix       LP37      46.114250     6.80045      2253	# 2267
-		station   LP37      "LP37" entrance continuation explored 10m
+		station   LP37      "LP37" entrance #continuation explored 10m
 
 		explo-date  2007.08.12
 			explo-team "Christophe Ohl"
+		
+		data normal from to length compass clino
+		flags approx
+		LP37	1	10	0	-90
 		
 endcenterline
 

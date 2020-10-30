@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T44 -title "T44"
+
+	centerline -extend right
+		cs lat-long
+		fix       T44       46.111800     6.79535      2116	# 2058
+		station   T44       "T44" entrance #continuation explored 00m
+		
+		#explo-date
+		#	explo-team ""
+		
+endcenterline
+ endsurvey

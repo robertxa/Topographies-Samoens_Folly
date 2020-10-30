@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T51 -title "T51"
+
+	centerline -extend right
+		cs lat-long
+		fix       T51       46.109800     006.79791      2206
+		station   T51       "T51" entrance #continuation explored 10m
+
+		explo-date 2004.09.03
+			explo-team "Christophe Ferry"
+		
+		data normal from to length compass clino
+		flags approx
+		T51	1	10	0	-90
+		
+endcenterline
+ endsurvey

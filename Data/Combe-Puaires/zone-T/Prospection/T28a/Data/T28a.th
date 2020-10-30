@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T28a -title "T28a"
+
+	centerline -extend right
+		cs lat-long
+		fix       T28a      46.109516     6.79573      2154	# 2149
+		station   T28a      "T28a" entrance #continuation explored 15m
+
+		explo-date 1976.08.03
+			explo-team "Bernard Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		T28a	1	15	0	-90
+		
+endcenterline
+ endsurvey

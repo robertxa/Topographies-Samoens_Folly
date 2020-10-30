@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T14 -title "T14"
+
+	centerline -extend right
+		cs lat-long
+		fix		T14	46.109802	6.793052	2096	# 2100
+		station   T14       "T14" entrance continuation explored 10m
+
+		explo-date 1976.06.17
+			explo-team "Bernard Lips"
+		
+endcenterline
+ endsurvey

@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T49a -title "T49a"
+
+	centerline -extend right
+		cs lat-long
+		fix       T49a      46.109016     6.79660      2194	# 2193
+		station   T49a      "T49a" entrance #continuation explored 65m
+
+		explo-date 2004.09.02
+			explo-team "Christophe Ohl"
+			
+		data normal from to length compass clino
+		flags approx
+		T49a	1	65	0	-90
+		
+endcenterline
+ endsurvey

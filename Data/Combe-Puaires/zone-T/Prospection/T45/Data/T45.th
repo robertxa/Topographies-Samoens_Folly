@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T45 -title "T45"
+
+	centerline -extend right
+		cs lat-long
+		fix		T45	46.111279	6.794309	2103
+		station   T45       "T45" entrance air-draught #continuation explored 20m
+
+		explo-date 1983.09.15
+			explo-team "Christophe Ohl"
+			
+		data normal from to length compass clino
+		flags approx
+		T45	1	20	0	-90
+		
+endcenterline
+ endsurvey

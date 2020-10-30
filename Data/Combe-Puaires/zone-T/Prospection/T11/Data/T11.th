@@ -1,0 +1,37 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T11 -title "T11"
+
+	centerline -extend right
+		cs lat-long
+		fix       T11a      46.109300     6.79576      2154	# 2149
+		fix       T11b      46.109266     6.79585      2157	# 2150
+		fix       T11c      46.109266     6.79593      2157	# 2153
+		fix       T11d      46.109250     6.79608      2166	# 2156
+		fix       T11e      46.109233     6.79628      2171	# 2165
+		station   T11a      "T11a" entrance #continuation explored 10m
+		station   T11b      "T11b" entrance
+		station   T11c      "T11c" entrance
+		station   T11d      "T11d" entrance
+		station   T11e      "T11e" entrance
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+			
+		data normal from to length compass clino
+		flags approx
+		T11a	1	10	0	-90
+		T11b	2	5	0	-90
+		T11c	3	2	0	-90
+		T11d	4	5	0	-90
+		T11e	5	7	0	-90
+		
+endcenterline
+ endsurvey

@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey T3 -title "T3"
+
+	centerline -extend right
+		cs lat-long
+		fix		T3	46.108389	6.792330	2064	# 2063
+		station   T3       "T3" entrance #continuation explored 04m
+
+		explo-date 1975.10.26
+			explo-team "Christian Rigaldie"
+			explo-team "Benoît/Le Falher"
+			explo-team "Jean Prud'homme"
+			explo-team "Bernard Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		T3	1	4	0	-90
+		
+endcenterline
+ endsurvey
