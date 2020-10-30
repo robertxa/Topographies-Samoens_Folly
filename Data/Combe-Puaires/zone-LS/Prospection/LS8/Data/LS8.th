@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS8 -title "LS8"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix		LS8	 46.112823 6.808412 2375	# 2377
+		station   LS8      "LS08" entrance continuation explored 28m air-draught
+
+		explo-date 1977.08.13
+			explo-team "Andr Herbepin"
+		explo-date 2012.08.21
+			explo-team "Stéphane Lips"
+		
+		#data normal from to length compass clino
+		#flags approx
+		#LS8	1	15	0	-90
+
+endcenterline
+
+ endsurvey

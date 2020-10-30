@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS10 -title "LS10"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix       LS10      46.113600     6.80990      2394	# 2399
+		station   LS10      "LS10" entrance #continuation explored 21m
+
+		explo-date 2008.09.20
+			explo-team "Bernard Lips"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS10	1	21	0	-90
+
+endcenterline
+
+ endsurvey

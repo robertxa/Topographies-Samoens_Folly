@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS2 -title "LS2"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix		LS2	46.111896 6.806419 2366	# 2370
+		station   LS2      "LS02" entrance 1 explored 11m
+
+		explo-date 1977.08.13
+			explo-team " Josiane Sonney"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS	1	11	0	-90
+
+endcenterline
+
+ endsurvey

@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS15 -title "LS15"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix       LS15      46.113116     006.81158      2430	# 2427
+		station   LS15      "LS15" entrance #continuation explored 17m
+
+		explo-date 2008.09.20
+			explo-team "Bernard Lips"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS15	1	17	0	-90
+
+endcenterline
+
+ endsurvey

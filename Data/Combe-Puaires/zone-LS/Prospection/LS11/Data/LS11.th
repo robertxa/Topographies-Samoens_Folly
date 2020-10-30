@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS11 -title "LS11"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix       LS11      46.114250     6.80891      2365	# 2374
+		station   LS11      "LS11" entrance #continuation explored 08m
+
+		explo-date 2008.09.20
+			explo-team "Christophe Ohl"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS11	1	8	0	-90
+
+endcenterline
+
+ endsurvey

@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS25 -title "LS25"
+
+	centerline -extend right
+		cs lat-long
+		fix       LS25      46.114100     6.81041      2397	# 2412
+		station   LS25      "LS25" entrance #continuation explored 16m
+
+		explo-date 2008.09.21
+			explo-team "Bernard Lips"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS25	1	16	0	-90
+
+endcenterline
+
+ endsurvey

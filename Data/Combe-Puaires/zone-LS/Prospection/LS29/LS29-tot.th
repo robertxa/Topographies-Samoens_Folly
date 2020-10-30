@@ -1,0 +1,16 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LS29 -title "LS29"
+	input Data/LS29.th
+
+	# pour le plan
+	#input Data/LS29.th2
+	# Pour la coupe et le plan
+	#input Data/LS29-coupe.th2
+
+	#input LS29-maps.th
+endsurvey

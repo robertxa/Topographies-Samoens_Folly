@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS12 -title "LS12"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix       LS12      46.113716     6.80918      2378	# 2390
+		station   LS12      "LS12" entrance continuation explored 16m air-draught
+
+		explo-date 2008.09.21
+			explo-team "Stéphane Lips"
+		#	explo-team
+		
+		#data normal from to length compass clino
+		#flags approx
+		#LS	1	15	0	-90
+
+endcenterline
+
+ endsurvey

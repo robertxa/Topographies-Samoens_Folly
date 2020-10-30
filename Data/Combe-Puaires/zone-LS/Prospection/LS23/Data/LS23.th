@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS23 -title "LS23"
+
+	centerline -extend right
+		cs lat-long
+
+		fix		LS23	46.113769 6.81121 2415	# 2413
+		station   LS23      "LS23" entrance #continuation explored 05m
+
+		explo-date 2008.09.21
+			explo-team "Pauline Evrard-Guespin"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS23	1	5	0	-90
+
+endcenterline
+
+ endsurvey

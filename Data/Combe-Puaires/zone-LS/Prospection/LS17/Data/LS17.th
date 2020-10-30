@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS17 -title "LS17"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix       LS17      46.113483     6.81148      2422	# 2427
+		station   LS17      "LS17" entrance #continuation explored 11m
+
+		explo-date 2008.09.20
+			explo-team "Christophe Ohl"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS17	1	11	0	-90
+
+endcenterline
+
+ endsurvey

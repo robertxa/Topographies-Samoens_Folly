@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS18 -title "LS18"
+
+	centerline -extend right
+		cs lat-long
+		fix       LS18      46.113183     6.81173      2433	# 2442
+		station   LS18      "LS18" entrance continuation explored 15m air-draught
+
+		explo-date 2020.09.20
+			explo-team "Bernard Lips"
+		#	explo-team
+		
+		#data normal from to length compass clino
+		#flags approx
+		#LS	1	15	0	-90
+
+endcenterline
+
+ endsurvey

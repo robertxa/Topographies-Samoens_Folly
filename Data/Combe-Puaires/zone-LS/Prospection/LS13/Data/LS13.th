@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS13 -title "LS13"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+		fix       LS13      46.113400     6.81016      2398	# 2413
+		station   LS13      "LS13" entrance continuation explored 10m
+
+		explo-date 2008.09.20
+			explo-team "Josiane Lips"
+		#	explo-team
+		
+		#data normal from to length compass clino
+		#flags approx
+		#LS	1	15	0	-90
+
+endcenterline
+
+ endsurvey

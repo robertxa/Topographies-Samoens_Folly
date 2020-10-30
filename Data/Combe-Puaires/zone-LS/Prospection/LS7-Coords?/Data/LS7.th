@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS7 -title "LS7"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
+
+	centerline -extend right
+		cs lat-long
+
+		fix		LS7	#46.111837 6.806102 2365
+		station   LS7      "LS7" entrance #continuation explored 12m
+
+		explo-date 1977.08.13
+			explo-team "Josiane Sonney"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS7	1	12	0	-90
+
+endcenterline
+
+ endsurvey

@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS24 -title "LS24"
+
+	centerline -extend right
+		cs lat-long
+		fix       LS24      46.113716     6.81091      2410	# 2416
+		station   LS24      "LS24" entrance #continuation explored 14m
+
+		explo-date 2008.09.22
+			explo-team "Christophe Ohl"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS24	1	14	0	-90
+
+endcenterline
+
+ endsurvey

@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS26 -title "LS26"
+
+	centerline -extend right
+		cs lat-long
+		fix       LS26      46.114283     6.81030      2388	#2407
+		station   LS26      "LS26" entrance #continuation explored 13m
+
+		explo-date 2008.09.21
+			explo-team "Bernard Lips"
+		
+		data normal from to length compass clino
+		flags approx
+		LS26	1	13	0	-90
+
+endcenterline
+
+ endsurvey

@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey LS21 -title "LS21"
+
+	centerline -extend right
+		cs lat-long
+		fix       LS21      46.113550     6.81138      2420	# 2427
+		station   LS21      "LS21" entrance #continuation explored 07m
+
+		explo-date 2009.09.20
+			explo-team	"Josiane Lips"
+		#	explo-team
+		
+		data normal from to length compass clino
+		flags approx
+		LS21	1	7	0	-90
+
+endcenterline
+
+ endsurvey
