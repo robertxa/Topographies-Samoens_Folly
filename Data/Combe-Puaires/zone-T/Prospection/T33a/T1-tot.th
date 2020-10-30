@@ -4,13 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey V1 -title "V1"
-	input Data/V1.th
+survey T1 -title "T1"
+	input Data/T1.th
 
 	# pour le plan
-	input Data/V1.th2
+	#input Data/T1.th2
 	# Pour la coupe et le plan
-	#input Data/V1-coupe.th2
+	#input Data/T1-coupe.th2
 
-	input V1-maps.th
+	#input T1-maps.th
 endsurvey
