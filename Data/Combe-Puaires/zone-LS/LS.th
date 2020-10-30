@@ -5,12 +5,14 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey zoneLS -title "Zone LS" 
-# Pour importer les différentes données de différents fichiers topos :
-input LS22/LS22-tot.th
-input LS30/LS30-tot.th
+	# Pour importer les différentes données de différents fichiers topos :
+	input LS22/LS22-tot.th
+	input LS30/LS30-tot.th
+    
+    #input prospection/prospectionLS.th
      
-input LS-tot.th
+	input LS-tot.th
    
-input LS-maps.th
+	input LS-maps.th
 
 endsurvey

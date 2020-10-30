@@ -5,10 +5,15 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 survey LS -title "LS"
+	# Fichier contenant les positions des entrées de la zone LS, Samoens, France
 
 	centerline -extend right
 		cs lat-long
 
+fix		LS1	46.111837 6.806102 2365
+fix		LS2	46.111896 6.806419 2370
+fix		LS6	46.113275 6.80934 2388
+fix		LS8	 46.112823 6.808412 2377
 fix		LS9	46.113027 6.808443 2373 
 fix       LS10      46.113600     006.80990      2399
 fix       LS11      46.114250     006.80891      2374
@@ -22,6 +27,7 @@ fix       LS18      46.113183     006.81173      2442
 fix       LS19      46.113150     006.81178      2439
 fix       LS20      46.113866     006.81106      2422
 fix       LS21      46.113550     006.81138      2427
+#fix       LS22      46.113833     006.81133      2422
 fix		LS23	46.113769 6.81121 2413
 fix       LS24      46.113716     006.81091      2416
 fix       LS25      46.114100     006.81041      2412
@@ -29,6 +35,7 @@ fix       LS26      46.114283     006.81030      2407
 fix       LS27      46.113983     006.81300      2442
 fix       LS28      46.114216     006.81245      2435
 fix       LS29      46.114216     006.81273      2442
+#fix       LS30      46.114316     006.81015      2395
 fix       LS31      46.114300     006.81005      2390
 fix		LS32	46.114042 6.813056 2436
 fix		LS33	46.11402 6.813145 2442
@@ -62,6 +69,10 @@ fix		LS61	46.112861 6.80828 2373
 fix		LS62	46.112758 6.808382 2376
 fix		LS63	46.117100	6.815710 2347
 
+station   LS1      "LS01" entrance continuation explored 15m
+station   LS2      "LS02" entrance continuation explored 11m
+station   LS6      "LS06" entrance continuation explored 09m
+station   LS8      "LS08" entrance continuation explored 28m air-draught
 station   LS9      "LS09" entrance continuation explored 40m
 station   LS10      "LS10" entrance continuation explored 21m
 station   LS11      "LS11" entrance continuation explored 08m
@@ -116,9 +127,14 @@ station   LS61      "LS61" entrance continuation explored 13m
 station   LS62      "LS62" entrance continuation explored 06m
 station   LS63      "LS63" entrance #continuation explored 08m
 
-		#explo-date
-		#	explo-team ""
+		#explo-date 
+		#	explo-team
+		#	explo-team
+		
+		#data normal from to length compass clino
+		#flags approx
+		#LS	1	15	0	-90
 
-	endcenterline
+endcenterline
 
-endsurvey
+ endsurvey
