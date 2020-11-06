@@ -235,6 +235,7 @@ export map -o Outputs/CP19-plan-Continuations.pdf -layout my_layout-Continuation
 export map -projection extended -layout my_layout-coupe -o Outputs/CP19-coupe.pdf
 export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP19-coupe-Continuations.pdf
 export model -o Outputs/CP19.lox
+export model -o Outputs/CP19.3d
 	
 # Export des fichiers ESRI
 #export map -proj plan -fmt esri -o Outputs/CP19 -layout my_layout
