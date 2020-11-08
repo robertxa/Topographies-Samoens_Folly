@@ -11,11 +11,11 @@ scrap SP-DR-2020 -projection plan -scale [-128.0 -128.0 2883.9 -128.0 0.0 0.0 76
 
 #point 2433.5 1523.5 label -text "<bf>DR13a" -scale xl
 
-point 2661.0 1088.0 label -text "<bf>DR14" -scale xl
+#point 2661.0 1088.0 label -text "<bf>DR14" -scale xl
 
-point 2264.5 1166.0 label -text "<bf>DR16" -scale xl
+#point 2264.5 1166.0 label -text "<bf>DR16" -scale xl
 
-point 2208.5 1067.0 label -text "<bf>DR15" -scale xl
+#point 2208.5 1067.0 label -text "<bf>DR15" -scale xl
 
 #point 2087.0 1094.75 label -text "<bf>DR8" -scale xl
 
@@ -25,7 +25,7 @@ point 2208.5 1067.0 label -text "<bf>DR15" -scale xl
 
 #point 1754.0 1016.5 label -text "<bf>DR7" -scale xl
 
-point 1294.5 661.0 label -text "<bf>DR17" -scale xl
+#point 1294.5 661.0 label -text "<bf>DR17" -scale xl
 
 #point 1339.5 818.5 label -text "<bf>DR12" -scale xl
 
@@ -43,15 +43,15 @@ point 1294.5 661.0 label -text "<bf>DR17" -scale xl
 
 #point 681.0 763.0 label -text "<bf>DR11A" -scale xl
 
-point 2665.5 1061.0 entrance -orientation 173.3
+#point 2665.5 1061.0 entrance -orientation 173.3
 
 #point 2435.0 1436.0 entrance -orientation 0.0
 
 #point 2435.5 1503.5 entrance -orientation 178.7
 
-point 2259.0 1144.5 entrance -orientation 196.3
+#point 2259.0 1144.5 entrance -orientation 196.3
 
-point 2201.5 1086.0 entrance -orientation 335.0
+#point 2201.5 1086.0 entrance -orientation 335.0
 
 #point 2088.75 1075.0 entrance -orientation 177.5
 
@@ -61,11 +61,11 @@ point 2201.5 1086.0 entrance -orientation 335.0
 
 #point 1769.0 1034.0 entrance -orientation 55.0
 
-point 1288.0 676.5 entrance -orientation 307.3
+#point 1288.0 676.5 entrance -orientation 307.3
 
 #point 1328.5 802.0 entrance -orientation 219.1
 
-point 1286.5 880.0 entrance -orientation 239.4
+#point 1286.5 880.0 entrance -orientation 239.4
 
 #point 844.5 768.5 entrance -orientation 178.6
 
@@ -83,11 +83,11 @@ point 1286.5 880.0 entrance -orientation 239.4
 
 #point 2434.6 1447.987 station -name DR13B@trousDR
 
-point 2667.08 1047.597 station -name DR14@trousDR
+#point 2667.08 1047.597 station -name DR14@trousDR
 
-point 2255.4300000000003 1132.047 station -name DR16@trousDR
+#point 2255.4300000000003 1132.047 station -name DR16@trousDR
 
-point 2196.61 1096.887 station -name DR15@trousDR
+#point 2196.61 1096.887 station -name DR15@trousDR
 
 #point 2089.17 1063.507 station -name DR08@trousDR
 
@@ -97,7 +97,7 @@ point 2196.61 1096.887 station -name DR15@trousDR
 
 #point 1812.52 1297.477 station -name DR19@trousDR
 
-point 1278.1100000000001 684.4870000000001 station -name DR17@trousDR
+#point 1278.1100000000001 684.4870000000001 station -name DR17@trousDR
 
 #point 1320.67 792.7570000000001 station -name DR12@trousDR
 

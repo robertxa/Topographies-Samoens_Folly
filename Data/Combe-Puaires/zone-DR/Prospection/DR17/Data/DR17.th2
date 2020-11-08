@@ -1,0 +1,114 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -972.0 1019 250.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} DR17.gif 0 {}
+
+
+
+scrap SP-DR17-1 -projection plan -author 2001 "Bernard Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [472.0 -567.0 745.0 -567.0 0.0 0.0 5 0.0 m]
+
+point 674.0 -834.0 altitude -align bottom
+
+point 744.0 -584.0 height -value [-6 m]
+
+point 40.0 -44.0 label -text "<bf>DR17" -scale xl
+
+point 376.0 -524.0 entrance -orientation 135.0
+
+line overhang -close on
+  504.0 -620.0
+  504.0 -620.0 462.0 -616.0 468.0 -648.0
+  474.0 -680.0 524.0 -736.0 542.0 -748.0
+  560.0 -760.0 662.0 -834.0 674.0 -834.0
+  686.0 -834.0 706.0 -806.0 656.0 -756.0
+  606.0 -706.0 566.0 -672.0 552.0 -660.0
+  538.0 -648.0 504.0 -620.0 504.0 -620.0
+  smooth off
+endline
+
+line wall -close on
+  504.0 -620.0
+  504.0 -620.0 462.0 -610.0 468.0 -648.0
+  474.0 -686.0 502.0 -714.0 542.0 -748.0
+  582.0 -782.0 652.0 -824.0 674.0 -834.0
+  696.0 -844.0 700.0 -794.0 656.0 -756.0
+  612.0 -718.0 572.0 -682.0 552.0 -660.0
+  532.0 -638.0 504.0 -620.0 504.0 -620.0
+  smooth off
+endline
+
+point 476.0 -622.0 station -name DR17@DR17
+
+endscrap
+
+
+
+scrap SC-DR17-1 -projection extended -author 2001 "Bernard Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [472.0 -567.0 745.0 -567.0 0.0 0.0 5 0.0 m]
+
+point 700.0 112.0 label -text "<bf>DR17" -scale xl
+
+point 604.0 -60.0 entrance -orientation 215.4
+
+point 176.0 -312.0 height -value [-6 m]
+
+point 224.0 -514.0 altitude -align left -value [-6 m]
+
+point 230.0 -154.0 altitude -align left
+
+line wall -close on -outline in
+  306.0 -332.0
+  306.0 -332.0 306.0 -284.0 320.0 -284.0
+  334.0 -284.0 340.0 -284.0 360.0 -284.0
+  380.0 -284.0 400.0 -270.0 414.0 -286.0
+  428.0 -302.0 442.0 -326.0 442.0 -326.0
+  smooth off
+  442.0 -326.0 440.0 -352.0 420.0 -352.0
+  400.0 -352.0 382.0 -360.0 360.0 -356.0
+  338.0 -352.0 330.0 -348.0 316.0 -344.0
+  302.0 -340.0 306.0 -332.0 306.0 -332.0
+  smooth off
+endline
+
+line wall -subtype debris
+  224.0 -514.0
+  224.0 -514.0 292.0 -512.0 312.0 -512.0
+  332.0 -512.0 362.0 -504.0 362.0 -504.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  678.0 -142.0
+  678.0 -142.0 524.0 -104.0 450.0 -114.0
+  376.0 -124.0 230.0 -154.0 230.0 -154.0
+  smooth off
+endline
+
+line wall
+  362.0 -504.0
+  362.0 -504.0 380.0 -498.0 392.0 -472.0
+  404.0 -446.0 402.0 -436.0 426.0 -436.0
+  450.0 -436.0 460.0 -442.0 468.0 -418.0
+  476.0 -394.0 480.0 -346.0 498.0 -324.0
+  516.0 -302.0 524.0 -296.0 522.0 -264.0
+  520.0 -232.0 532.0 -226.0 542.0 -204.0
+  552.0 -182.0 554.0 -168.0 574.0 -160.0
+  594.0 -152.0 604.0 -142.0 630.0 -142.0
+  656.0 -142.0 678.0 -142.0 678.0 -142.0
+  smooth off
+endline
+
+line wall
+  230.0 -154.0
+  262.0 -162.0
+  262.0 -162.0 260.0 -190.0 260.0 -218.0
+  260.0 -246.0 252.0 -290.0 258.0 -312.0
+  264.0 -334.0 262.0 -362.0 252.0 -400.0
+  242.0 -438.0 224.0 -514.0 224.0 -514.0
+  smooth off
+endline
+
+point 548.0 -152.0 station -name DR17@DR17
+
+endscrap
+
+

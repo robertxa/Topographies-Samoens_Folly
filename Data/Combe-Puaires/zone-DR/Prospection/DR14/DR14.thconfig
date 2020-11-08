@@ -144,7 +144,7 @@ endlayout
 	select MP-DR14-plan-tot@DR14
 	select MC-DR14-coupe-tot@DR14
 	  
- export map -o Outputs/DR14-plan.pdf -layout my_layout
+export map -o Outputs/DR14-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/DR14-coupe.pdf
 #export map -o Outputs/DR14-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/DR14-coupe-Continuations.pdf
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/DR14-coupe.pd
 #export map -proj plan -fmt esri -o Outputs/DR14 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/DR14.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/DR14.kml -layout my_layout
