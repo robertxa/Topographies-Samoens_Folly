@@ -82,7 +82,7 @@ layout my_layout-coupe
   
 	doc-title "DR4"
 	doc-author "Xavier Robert"
-	base-scale 1 250
+	base-scale 1 450
 	scale 1 250
 	scale-bar 25 m
 	#rotate 2.25
@@ -98,7 +98,7 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 50 80 ne
+	map-header 35 90 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/DR4-coupe.pdf
 #export map -proj plan -fmt esri -o Outputs/DR4 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/DR4.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/DR4.kml -layout my_layout

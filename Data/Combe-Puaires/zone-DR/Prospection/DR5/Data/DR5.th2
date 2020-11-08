@@ -1,0 +1,104 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -137.5 -569 582.5 242.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} DR5.gif 0 {}
+
+
+
+scrap SP-DR5-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -569 497 -569 0.0 0.0 15.875 0.0 m]
+
+line wall
+  339.0 -162.0
+  339.0 -162.0 343.0 -179.0 333.0 -180.0
+  323.0 -181.0 317.0 -186.0 305.0 -186.0
+  293.0 -186.0 250.0 -194.0 226.0 -194.0
+  202.0 -194.0 175.5 -204.5 155.5 -179.5
+  135.5 -154.5 118.5 -139.0 103.5 -124.0
+  88.5 -109.0 74.0 -94.5 72.0 -85.5
+  70.0 -76.5 69.0 -70.0 69.0 -70.0
+  smooth off
+endline
+
+point 198.5 -238.5 breakdown-choke -orientation 312.0
+
+point 261.0 -171.0 narrow-end
+
+point 208.0 -244.0 narrow-end
+
+point 345.0 -208.0 altitude -align bottom
+
+point 69.0 -70.0 altitude -align top-right
+
+point 195.5 -239.0 altitude -align bottom-left -value [-30 m]
+
+point 185.5 -146.0 height -value [-15 m]
+
+point 45.5 -118.5 height -value [-6 m]
+
+line pit
+  79.5 -91.0
+  79.5 -91.0 69.0 -85.5 65.0 -99.5
+endline
+
+line pit
+  176.0 -204.0
+  176.0 -204.0 174.0 -190.0 160.0 -196.0
+endline
+
+line pit
+  300.0 -196.5
+  300.0 -196.5 308.0 -191.5 302.0 -180.0
+endline
+
+point 452.0 -178.5 label -text "<bf>DR6" -scale xl
+
+point -7.0 111.5 label -text "<bf>DR5" -scale xl
+
+line section -close on
+  69.0 -70.0
+  69.0 -70.0 36.5 -54.5 43.0 -68.0
+  49.5 -81.5 55.0 -92.5 59.0 -91.0
+  63.0 -89.5 73.5 -89.5 72.0 -85.5
+  70.5 -81.5 69.0 -70.0 69.0 -70.0
+  smooth off
+endline
+
+point 41.0 -24.0 entrance -orientation 160.9
+
+point 393.5 -183.0 entrance -orientation 264.1
+
+line wall -subtype invisible
+  345.0 -208.0
+  345.0 -208.0 355.5 -181.5 350.5 -176.5
+  345.5 -171.5 339.0 -162.0 339.0 -162.0
+  smooth off
+endline
+
+line wall
+  199.0 -236.5
+  199.0 -236.5 159.5 -201.5 173.5 -201.5
+  187.5 -201.5 221.0 -201.0 239.0 -197.0
+  257.0 -193.0 286.5 -189.0 301.5 -191.0
+  316.5 -193.0 342.0 -199.0 342.0 -199.0
+  smooth off
+  345.0 -208.0
+endline
+
+line wall
+  69.0 -70.0
+  69.0 -70.0 37.0 -55.0 43.0 -68.0
+  49.0 -81.0 51.0 -84.0 59.0 -91.0
+  67.0 -98.0 80.0 -110.0 93.0 -121.0
+  106.0 -132.0 126.0 -156.0 137.0 -166.0
+  148.0 -176.0 166.5 -194.0 165.5 -206.0
+  164.5 -218.0 195.5 -239.0 195.5 -239.0
+  smooth off
+endline
+
+point 331.0 -192.0 station -name DR6@DR5
+
+point 51.0 -70.0 station -name DR5@DR5
+
+endscrap
+
+

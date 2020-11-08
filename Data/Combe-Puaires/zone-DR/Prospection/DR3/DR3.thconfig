@@ -142,10 +142,10 @@ endlayout
 
 # Select maps
 	select MP-DR3-plan-tot@DR3
-	select MC-DR3-coupe-tot@DR3
+#	select MC-DR3-coupe-tot@DR3
 	  
  export map -o Outputs/DR3-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/DR3-coupe.pdf
+#export map -projection extended -layout my_layout-coupe -o Outputs/DR3-coupe.pdf
 #export map -o Outputs/DR3-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/DR3-coupe-Continuations.pdf
 
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/DR3-coupe.pdf
 #export map -proj plan -fmt esri -o Outputs/DR3 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/DR3.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/DR3.kml -layout my_layout

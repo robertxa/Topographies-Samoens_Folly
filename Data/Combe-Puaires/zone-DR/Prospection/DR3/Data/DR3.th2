@@ -1,0 +1,41 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -140.0 -176.0 1984.0 1764.0
+##XTHERION## xth_me_area_zoom_to 25
+
+
+
+scrap SP-DR3-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [376.0 272.0 810.0 272.0 0.0 0.0 2 0.0 m]
+
+point 610.0 394.0 altitude -align bottom-left
+
+point 1242.0 -28.0 dig
+
+point 766.0 480.0 station -name DR3@DR3
+
+point 202.0 892.0 height -value [-2 m]
+
+point 1962.0 1756.0 label -text "<bf>DR3" -scale xl
+
+point 1154.0 908.0 entrance -orientation 213.9
+
+line overhang -close on
+  686.0 514.0
+  686.0 514.0 590.0 456.0 610.0 394.0
+  625.65 345.47 732.0 330.0 760.0 366.0
+  781.73 393.93 800.0 460.0 766.0 480.0
+  732.0 500.0 686.0 514.0 686.0 514.0
+  smooth off
+endline
+
+line wall -close on
+  686.0 514.0
+  686.0 514.0 578.0 436.0 610.0 394.0
+  642.0 352.0 732.0 320.0 760.0 366.0
+  788.0 412.0 796.0 462.0 766.0 480.0
+  736.0 498.0 686.0 514.0 686.0 514.0
+  smooth off
+endline
+
+endscrap
+
+
