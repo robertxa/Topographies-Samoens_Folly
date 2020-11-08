@@ -7,9 +7,9 @@ encoding  utf-8
 
 scrap SP-DR-2020 -projection plan -scale [-128.0 -128.0 2883.9 -128.0 0.0 0.0 76.50225999999999 0.0 m]
 
-point 2434.5 1412.0 label -text "<bf>DR13b" -scale xl
+#point 2434.5 1412.0 label -text "<bf>DR13b" -scale xl
 
-point 2433.5 1523.5 label -text "<bf>DR13a" -scale xl
+#point 2433.5 1523.5 label -text "<bf>DR13a" -scale xl
 
 point 2661.0 1088.0 label -text "<bf>DR14" -scale xl
 
@@ -27,7 +27,7 @@ point 2208.5 1067.0 label -text "<bf>DR15" -scale xl
 
 point 1294.5 661.0 label -text "<bf>DR17" -scale xl
 
-point 1339.5 818.5 label -text "<bf>DR12" -scale xl
+#point 1339.5 818.5 label -text "<bf>DR12" -scale xl
 
 #point 1297.5 900.0 label -text "<bf>DR9" -scale xl
 
@@ -45,9 +45,9 @@ point 1339.5 818.5 label -text "<bf>DR12" -scale xl
 
 point 2665.5 1061.0 entrance -orientation 173.3
 
-point 2435.0 1436.0 entrance -orientation 0.0
+#point 2435.0 1436.0 entrance -orientation 0.0
 
-point 2435.5 1503.5 entrance -orientation 178.7
+#point 2435.5 1503.5 entrance -orientation 178.7
 
 point 2259.0 1144.5 entrance -orientation 196.3
 
@@ -63,7 +63,7 @@ point 2201.5 1086.0 entrance -orientation 335.0
 
 point 1288.0 676.5 entrance -orientation 307.3
 
-point 1328.5 802.0 entrance -orientation 219.1
+#point 1328.5 802.0 entrance -orientation 219.1
 
 point 1286.5 880.0 entrance -orientation 239.4
 
@@ -79,9 +79,9 @@ point 1286.5 880.0 entrance -orientation 239.4
 
 #point 920.0 395.5 entrance -orientation 0.0
 
-point 2435.82 1491.727 station -name DR13A@trousDR
+#point 2435.82 1491.727 station -name DR13A@trousDR
 
-point 2434.6 1447.987 station -name DR13B@trousDR
+#point 2434.6 1447.987 station -name DR13B@trousDR
 
 point 2667.08 1047.597 station -name DR14@trousDR
 
@@ -99,7 +99,7 @@ point 2196.61 1096.887 station -name DR15@trousDR
 
 point 1278.1100000000001 684.4870000000001 station -name DR17@trousDR
 
-point 1320.67 792.7570000000001 station -name DR12@trousDR
+#point 1320.67 792.7570000000001 station -name DR12@trousDR
 
 #point 1277.24 874.4870000000001 station -name DR09@trousDR
 

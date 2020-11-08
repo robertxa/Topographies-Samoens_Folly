@@ -65,8 +65,8 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{15\thinspace{}m}
-		\cavedepth{-5\thinspace{}m}
+		\cavelength{35\thinspace{}m}
+		\cavedepth{-10\thinspace{}m}
 	endcode  
   
 endlayout
@@ -118,8 +118,8 @@ layout my_layout-coupe
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{15\thinspace{}m}
-		\cavedepth{-5\thinspace{}m}
+		\cavelength{35\thinspace{}m}
+		\cavedepth{-10\thinspace{}m}
 	endcode  
 
 endlayout
@@ -144,7 +144,7 @@ endlayout
 	select MP-DR13-plan-tot@DR13
 	select MC-DR13-coupe-tot@DR13
 	  
- export map -o Outputs/DR13-plan.pdf -layout my_layout
+export map -o Outputs/DR13-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/DR13-coupe.pdf
 #export map -o Outputs/DR13-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/DR13-coupe-Continuations.pdf
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/DR13-coupe.pd
 #export map -proj plan -fmt esri -o Outputs/DR13 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/DR13.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/DR13.kml -layout my_layout
