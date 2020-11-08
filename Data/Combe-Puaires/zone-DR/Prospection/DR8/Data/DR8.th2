@@ -41,7 +41,7 @@ endscrap
 
 scrap SC-DR8-1 -projection extended -author 2001 "Bernard Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [344.0 -227.0 344.0 -879.0 0.0 0.0 0 -12 m]
 
-point 328.0 -884.0 altitude -align left -value [-12 m]
+point 328.0 -884.0 altitude -align left
 
 line rope
   358.0 -216.0
@@ -51,7 +51,9 @@ endline
 
 point 354.0 -160.0 entrance -orientation 154.6
 
-point 358.0 -216.0 station -name DR8@DR8
+point 355.0 -875.0 station -name 1@DR8
+
+point 373.0 -217.0 station -name DR8@DR8
 
 line wall
   543.0 -81.0
