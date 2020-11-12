@@ -17,10 +17,10 @@ fix       CP        46.111683     006.78880      1899
 #fix       CP04      46.118050     006.79940      2197
 #fix       CP05      46.118333     006.79891      2184
 #fix       CP06      46.118666     006.79861      2163
-fix       CP08      46.111568     6.787626      1857
-fix       CP09      46.111850     006.78926      1902
-fix       CP10      46.111783     006.78843      1886
-fix       CP11      46.119783     006.80325      1900 # ALT PAR DEFAULT
+#fix       CP08      46.111568     6.787626      1857
+#fix       CP09      46.111850     006.78926      1902
+#fix       CP10      46.111783     006.78843      1886
+#fix       CP11      46.119783     006.80325      1900 # ALT PAR DEFAULT
 #fix       CP12      46.114050     006.79418      2025
 #fix       CP14      46.115066     006.79771      2135
 #fix       CP15      46.115300     006.79826      2163
@@ -85,10 +85,11 @@ station   CP        "CP?" entrance
 #station   CP02      "CP02" entrance continuation explored 51m air-draught
 #station   CP04      "CP04" entrance continuation explored 22m
 #station   CP05      "CP05" entrance continuation explored 40m
-station   CP08      "CP08" entrance continuation explored 15m air-draught
-station   CP09      "CP09" entrance continuation explored 15m air-draught
-station   CP10      "CP10" entrance continuation explored 15m air-draught
-station   CP11      "CP11" entrance continuation explored 14m
+#station   CP08      "CP08" entrance continuation explored 15m air-draught
+#station   CP09      "CP09" entrance continuation explored 15m air-draught
+#station   CP10      "CP10" entrance continuation explored 15m air-draught
+#station   CP11      "CP11" entrance continuation explored 14m
+
 station   CP18      "CP18" entrance continuation explored 42m
 station   CP20      "CP20" entrance continuation explored 25m
 station   CP22      "CP22" entrance continuation explored 60m

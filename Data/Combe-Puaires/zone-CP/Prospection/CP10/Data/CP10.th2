@@ -1,0 +1,69 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -812 653.0 353.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP10.gif 0 {}
+
+
+
+scrap SP-CP10-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [216.0 -138.0 314.0 -138.0 0.0 0.0 0 -2.0 m]
+
+line wall
+  225.0 -298.0
+  225.0 -298.0 203.0 -284.0 212.0 -281.0
+  221.0 -278.0 229.0 -264.0 231.0 -256.0
+  233.0 -248.0 230.0 -246.0 234.0 -229.0
+  238.0 -212.0 237.0 -194.0 245.0 -178.0
+  253.0 -162.0 263.0 -141.0 263.0 -141.0
+  smooth off
+endline
+
+point 250.0 -136.0 station -name CP10@CP10
+
+line pit
+  245.0 -260.0
+  245.0 -260.0 233.0 -221.0 203.0 -223.0
+  smooth off
+endline
+
+line pit -reverse on
+  209.0 -177.0
+  209.0 -177.0 242.0 -177.0 246.0 -201.0
+  smooth off
+endline
+
+point 97.0 -352.0 dig
+
+point 385.0 -530.0 air-draught -orientation 142.6 -subtype summer
+
+point 241.0 -358.0 narrow-end
+
+point 43.0 -127.0 height -value [-12 m]
+
+point 520.0 220.0 label -text "<bf>CP10" -scale xl
+
+point 309.0 -295.0 continuation -attr Code D -attr Cavite "CP10" -attr Reseau "Combe aux Puaires" -attr CA "soufflant en hiver, aspirant en été" -text "Méandre étroit à dynamiter, courant d'air"
+
+point 315.0 -42.0 entrance -orientation 214.7
+
+line overhang -close on
+  263.0 -141.0
+  263.0 -141.0 248.0 -127.0 242.0 -132.0
+  236.0 -137.0 227.0 -146.0 228.0 -156.0
+  229.0 -166.0 243.0 -185.0 245.0 -178.0
+  247.0 -171.0 263.0 -141.0 263.0 -141.0
+  smooth off
+endline
+
+line wall
+  263.0 -141.0
+  263.0 -141.0 247.0 -123.0 242.0 -132.0
+  237.0 -141.0 231.0 -136.0 228.0 -156.0
+  225.0 -176.0 214.0 -217.0 209.0 -234.0
+  204.0 -251.0 193.0 -273.0 197.0 -284.0
+  201.0 -295.0 211.0 -304.0 211.0 -304.0
+  smooth off
+endline
+
+endscrap
+
+

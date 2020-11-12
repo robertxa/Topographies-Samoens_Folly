@@ -142,10 +142,10 @@ endlayout
 
 # Select maps
 	select MP-CP8-plan-tot@CP8
-#	select MC-CP8-coupe-tot@CP8
+	select MC-CP8-coupe-tot@CP8
 	  
 export map -o Outputs/CP8-plan.pdf -layout my_layout
-#export map -projection extended -layout my_layout-coupe -o Outputs/CP8-coupe.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/CP8-coupe.pdf
 #export map -o Outputs/CP8-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP8-coupe-Continuations.pdf
 

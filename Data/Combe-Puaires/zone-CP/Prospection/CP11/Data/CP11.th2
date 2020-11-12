@@ -1,0 +1,150 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -831 823.0 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP11.gif 0 {}
+
+
+
+scrap SP-CP11-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [278.0 -167.0 278.0 -501.0 0.0 0.0 0 -14.0 m]
+
+point 559.5 -201.0 altitude -align bottom-right
+
+point 690.0 -53.5 label -text "<bf>CP11" -scale xl
+
+point 597.0 -130.5 entrance -orientation 232.3
+
+point 494.5 -211.0 continuation -attr Code D -attr Cavite "CP11" -attr Reseau "Combe aux Puaires" -text "Méandre étroit après étroiture ponctuelle à dynamiter"
+
+point 479.5 -149.5 height -value [-14 m]
+
+line overhang -close on
+  556.0 -155.0
+  556.0 -155.0 542.0 -131.0 536.0 -137.0
+  530.0 -143.0 520.5 -154.5 523.0 -168.0
+  523.55 -170.99 531.0 -191.0 531.5 -191.5
+  537.69 -197.69 539.5 -194.5 542.0 -196.0
+  544.5 -197.5 558.5 -209.0 559.5 -201.0
+  560.5 -193.0 564.5 -184.0 562.5 -176.0
+  560.5 -168.0 556.0 -155.0 556.0 -155.0
+  smooth off
+endline
+
+line pit
+  539.5 -203.0
+  539.5 -203.0 539.0 -194.0 527.0 -194.0
+endline
+
+point 512.5 -244.0 narrow-end
+
+line wall
+  533.5 -218.5
+  533.5 -218.5 536.5 -194.0 542.0 -196.0
+  547.5 -198.0 558.0 -209.5 559.5 -201.0
+  561.0 -192.5 565.0 -184.0 562.5 -176.0
+  560.0 -168.0 556.0 -155.0 556.0 -155.0
+  smooth off
+endline
+
+line wall
+  556.0 -155.0
+  556.0 -155.0 545.5 -133.5 536.0 -137.0
+  526.5 -140.5 520.0 -158.5 523.0 -168.0
+  526.0 -177.5 533.0 -186.0 531.5 -191.5
+  530.0 -197.0 521.5 -212.5 521.5 -212.5
+  smooth off
+endline
+
+point 556.0 -155.0 station -name CP11@CP11
+
+endscrap
+
+
+
+scrap SC-CP11-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [278.0 -167.0 278.0 -501.0 0.0 0.0 0 -14.0 m]
+
+line wall -close on -outline in
+  291.0 -250.0
+  291.0 -250.0 292.0 -241.0 298.0 -241.0
+  304.0 -241.0 308.0 -247.0 307.0 -254.0
+  306.0 -261.0 300.0 -270.0 298.0 -265.0
+  296.0 -260.0 291.0 -250.0 291.0 -250.0
+  smooth off
+endline
+
+line wall
+  448.0 -452.0
+  448.0 -452.0 382.0 -451.0 366.0 -442.0
+  350.0 -433.0 342.0 -428.0 339.0 -398.0
+  336.0 -368.0 331.0 -308.0 329.0 -282.0
+  327.0 -256.0 327.0 -248.0 327.0 -235.0
+  327.0 -222.0 322.0 -216.0 336.0 -203.0
+  350.0 -190.0 382.0 -160.0 382.0 -160.0
+  smooth off
+endline
+
+line wall
+  115.0 -588.0
+  115.0 -588.0 109.0 -557.0 119.0 -550.0
+  129.0 -543.0 128.0 -541.0 146.0 -543.0
+  164.0 -545.0 179.0 -548.0 197.0 -542.0
+  215.0 -536.0 219.0 -542.0 232.0 -527.0
+  245.0 -512.0 251.0 -496.0 266.0 -496.0
+  281.0 -496.0 288.0 -503.0 301.0 -497.0
+  314.0 -491.0 319.0 -498.0 332.0 -499.0
+  345.0 -500.0 353.0 -503.0 368.0 -503.0
+  383.0 -503.0 441.0 -508.0 441.0 -508.0
+  smooth off
+endline
+
+line wall
+  227.0 -170.0
+  227.0 -170.0 223.0 -219.0 230.0 -220.0
+  237.0 -221.0 244.0 -218.0 249.0 -205.0
+  254.0 -192.0 253.0 -183.0 259.0 -180.0
+  265.0 -177.0 278.0 -165.0 279.0 -173.0
+  280.0 -181.0 287.0 -178.0 285.0 -194.0
+  283.0 -210.0 267.0 -239.0 267.0 -264.0
+  267.0 -289.0 264.0 -302.0 254.0 -305.0
+  244.0 -308.0 240.0 -307.0 222.0 -308.0
+  204.0 -309.0 188.0 -308.0 185.0 -330.0
+  182.0 -352.0 184.0 -372.0 160.0 -385.0
+  136.0 -398.0 151.0 -400.0 134.0 -407.0
+  117.0 -414.0 117.0 -409.0 102.0 -428.0
+  87.0 -447.0 89.0 -434.0 74.0 -471.0
+  59.0 -508.0 59.0 -513.0 59.0 -527.0
+  59.0 -541.0 55.0 -570.0 55.0 -570.0
+  smooth off
+endline
+
+point 59.0 -527.0 altitude -align left -value [-14 m]
+
+point 227.0 -170.0 altitude -align left
+
+point 336.0 -16.0 label -text "<bf>CP11" -scale xl
+
+point 327.0 -123.0 entrance -orientation 196.8
+
+line rope
+  382.0 -160.0
+  314.0 -177.0
+  310.0 -484.0
+endline
+
+point 391.0 -302.0 height -value [-14 m]
+
+point 488.0 -482.0 narrow-end
+
+point 72.0 -618.0 continuation -attr Code D -attr Cavite "CP11" -attr Reseau "Combe aux Puaires" -text "Méandre étroit après étroiture ponctuelle à dynamiter"
+
+point 89.0 -532.0 narrow-end
+
+line wall -subtype invisible
+  382.0 -160.0
+  382.0 -160.0 251.0 -143.0 227.0 -170.0
+endline
+
+point 346.0 -170.0 station -name CP11@CP11
+
+endscrap
+
+
