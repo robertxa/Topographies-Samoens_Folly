@@ -30,8 +30,8 @@ layout my_layout
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 250
-	scale 1 250
-	scale-bar 25 m
+	scale 1 100
+	scale-bar 10 m
 	#rotate 2.25
 	# origin 12 22 0 m
 	# origin-label 100 K
@@ -83,8 +83,8 @@ layout my_layout-coupe
 	doc-title "CP68"
 	doc-author "Xavier Robert"
 	base-scale 1 250
-	scale 1 250
-	scale-bar 25 m
+	scale 1 100
+	scale-bar 10 m
 	#rotate 2.25
 	#origin 12 22 0 m
 	#origin-label 100 K
@@ -144,7 +144,7 @@ endlayout
 	select MP-CP68-plan-tot@CP68
 	select MC-CP68-coupe-tot@CP68
 	  
- export map -o Outputs/CP68-plan.pdf -layout my_layout
+export map -o Outputs/CP68-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP68-coupe.pdf
 #export map -o Outputs/CP68-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP68-coupe-Continuations.pdf
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/CP68-coupe.pd
 #export map -proj plan -fmt esri -o Outputs/CP68 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/CP68.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP68.kml -layout my_layout

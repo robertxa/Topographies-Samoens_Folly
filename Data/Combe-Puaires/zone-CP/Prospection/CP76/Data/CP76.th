@@ -8,8 +8,9 @@ survey CP76 -title "CP76"
 
 	centerline
 		cs lat-long
-		fix		CP76	46.11894 6.81031 2268
-		station   CP02      "CP02" entrance continuation explored 13m
+		#fix		CP76	46.11894 6.81031 2262	# 2268
+		fix		CP76	46.11932 6.81103 2262	# 2268
+		station   CP76      "CP76" entrance continuation explored 13m
 
 
 		explo-date 2011.07.15

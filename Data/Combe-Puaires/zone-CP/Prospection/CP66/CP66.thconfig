@@ -142,10 +142,10 @@ endlayout
 
 # Select maps
 	select MP-CP66-plan-tot@CP66
-	select MC-CP66-coupe-tot@CP66
+#	select MC-CP66-coupe-tot@CP66
 	  
- export map -o Outputs/CP66-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/CP66-coupe.pdf
+export map -o Outputs/CP66-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/CP66-coupe.pdf
 #export map -o Outputs/CP66-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP66-coupe-Continuations.pdf
 
