@@ -82,7 +82,7 @@ layout my_layout-coupe
   
 	doc-title "CP20"
 	doc-author "Xavier Robert"
-	base-scale 1 250
+	base-scale 1 450
 	scale 1 250
 	scale-bar 25 m
 	#rotate 2.25
@@ -145,7 +145,7 @@ endlayout
 	select MC-CP20-coupe-tot@CP20
 	  
 export map -o Outputs/CP20-plan.pdf -layout my_layout
-#export map -projection extended -layout my_layout-coupe -o Outputs/CP20-coupe.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/CP20-coupe.pdf
 #export map -o Outputs/CP20-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP20-coupe-Continuations.pdf
 

@@ -1,0 +1,66 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -134.0 1104.0 1310.0
+##XTHERION## xth_me_area_zoom_to 50
+
+
+
+scrap SC-CP20-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [986.0 898.0 986.0 368.0 0.0 0.0 0 -15 m]
+
+line wall -subtype invisible
+  758.0 1120.0
+  758.0 1120.0 356.0 1008.0 272.0 886.0
+endline
+
+line wall
+  914.0 176.0
+  914.0 176.0 906.0 306.0 856.0 348.0
+  806.0 390.0 750.0 366.0 734.0 452.0
+  718.0 538.0 710.0 664.0 706.0 734.0
+  702.0 804.0 684.0 890.0 682.0 930.0
+  680.0 970.0 682.0 1078.0 696.0 1088.0
+  710.0 1098.0 758.0 1120.0 758.0 1120.0
+  smooth off
+endline
+
+point 158.0 1172.0 label -text "<bf>CP20" -scale xl
+
+point 402.0 1078.0 entrance -orientation 150.2
+
+point 272.0 886.0 altitude -align left
+
+point 504.0 142.0 altitude -align bottom -value [-25 m]
+
+point 840.0 708.0 height -value [-25 m]
+
+line rope
+  340.0 900.0
+  446.0 910.0
+  482.0 226.0
+endline
+
+point 966.0 82.0 continuation -attr Code N -attr Cavite "CP20" -attr Reseau "Combe aux Puaires" -attr CA "Tube de courant d'air dans la neige ?" -text "Il faut revoir le fond en fin de saison, il semble qu'il y ait du courant d'air"
+
+line wall -subtype ice
+  504.0 142.0
+  504.0 142.0 496.0 376.0 582.0 380.0
+  668.0 384.0 636.0 368.0 680.0 338.0
+  724.0 308.0 768.0 216.0 786.0 194.0
+  804.0 172.0 866.0 130.0 866.0 130.0
+  smooth off
+endline
+
+line wall
+  272.0 886.0
+  272.0 886.0 352.0 914.0 350.0 886.0
+  348.0 858.0 336.0 776.0 344.0 742.0
+  352.0 708.0 386.0 546.0 404.0 480.0
+  422.0 414.0 438.0 312.0 454.0 264.0
+  470.0 216.0 504.0 142.0 504.0 142.0
+  smooth off
+endline
+
+point 352.0 910.0 station -name CP20@CP20
+
+endscrap
+
+

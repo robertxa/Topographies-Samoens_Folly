@@ -8,8 +8,9 @@ survey CP22 -title "CP22"
 
 	centerline -extend right
 		cs lat-long
-		fix       CP22      46.117966     006.80428      2245
-		station   CP22      "CP22" entrance continuation explored 60m
+		#fix       CP22      46.117966     6.80428      2245 # Coordonnées fausses
+		fix       CP22      46.116917     6.795609      2053	# Coordonnées approx. issues de Google Earth, mais elles sont probablement fausses
+		station   CP22      "CP22" entrance continuation explored 60m air-draught
 
 		explo-date 1985.07.08
 			explo-team "Jean-Bernard/de Chabelier"
@@ -18,7 +19,7 @@ survey CP22 -title "CP22"
 			explo-team "Christophe Ferry"
 			explo-team "Olivier Vidal"
 			explo-team "W. Bortoletto"
-		explo-date 1995.98.22
+		explo-date 1995.08.22
 			explo-team "Olivier Vidal"
 			explo-team "Christophe Ferry"
   

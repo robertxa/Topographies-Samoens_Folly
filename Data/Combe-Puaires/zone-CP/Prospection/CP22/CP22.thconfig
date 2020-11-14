@@ -144,7 +144,7 @@ endlayout
 	select MP-CP22-plan-tot@CP22
 	select MC-CP22-coupe-tot@CP22
 	  
- export map -o Outputs/CP22-plan.pdf -layout my_layout
+export map -o Outputs/CP22-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP22-coupe.pdf
 #export map -o Outputs/CP22-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP22-coupe-Continuations.pdf
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/CP22-coupe.pd
 #export map -proj plan -fmt esri -o Outputs/CP22 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/CP22.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP22.kml -layout my_layout

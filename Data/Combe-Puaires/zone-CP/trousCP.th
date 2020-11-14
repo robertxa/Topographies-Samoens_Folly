@@ -26,12 +26,12 @@ fix       CP        46.111683     006.78880      1899
 #fix       CP15      46.115300     006.79826      2163
 #fix       CP16      46.115050     006.79815      2142
 #fix       CP17      46.117083     006.79998      2193
-fix       CP18      46.119016     006.80368      1900 # ALT PAR DEFAULT
+#fix       CP18      46.119016     006.80368      1900 # ALT PAR DEFAULT
 #fix       CP19      46.112616     006.79273      1978
 #fix       CP19B     46.112616     006.79283      2022
-fix       CP20      46.115450     006.79611      1900 # ALT PAR DEFAULT
+#fix       CP20      46.115450     006.79611      1900 # ALT PAR DEFAULT
 #fix       CP21      46.114150     006.79168      1940
-fix       CP22      46.117966     006.80428      2245
+#fix       CP22      46.117966     006.80428      2245	# Coordonnées Fausses
 fix       CP23      46.114500     006.79625      1900 # ALT PAR DEFAULT
 fix       CP25      46.116700     006.80025      2183
 fix       CP26      46.115900     006.79823      2134
@@ -71,7 +71,7 @@ fix		CP56	46.11793 6.80483 2262
 #fix		CP59	46.11973 6.81387 2253
 #fix		CP60	46.11932 6.81103 2258
 #fix		CP61	46.112123 6.790502 1947
-fix		CP64	46.112614 6.789946 1909
+#fix		CP64	46.112614 6.789946 1909
 fix		CP65	46.112976 6.789483 1878
 fix		CP66	46.112704 6.789797 1914	# altitude approx
 fix		CP67	46.113415 6.789196 1901
@@ -90,9 +90,9 @@ station   CP        "CP?" entrance
 #station   CP10      "CP10" entrance continuation explored 15m air-draught
 #station   CP11      "CP11" entrance continuation explored 14m
 
-station   CP18      "CP18" entrance continuation explored 42m
-station   CP20      "CP20" entrance continuation explored 25m
-station   CP22      "CP22" entrance continuation explored 60m
+#station   CP18      "CP18" entrance continuation explored 42m
+#station   CP20      "CP20" entrance continuation explored 25m
+#station   CP22      "CP22" entrance continuation explored 60m
 station   CP23      "CP23" entrance continuation explored 02m
 station   CP25      "CP25" entrance continuation explored 40m
 station   CP26      "CP26" entrance continuation explored 04m
@@ -127,7 +127,7 @@ station   CP56      "CP56" entrance #continuation explored 00m
 #station   CP59      "CP59" entrance continuation explored 07m
 #station   CP60      "CP60" entrance continuation explored 10m
 #station   CP61      "CP61" entrance continuation explored 13m
-station   CP64      "CP64" entrance continuation explored 01m air-draught
+#station   CP64      "CP64" entrance continuation explored 01m air-draught
 station   CP65      "CP65" entrance continuation explored 15m
 station   CP66      "CP66" entrance air-draught #continuation explored 00m
 station   CP67      "CP67" entrance continuation explored 02m
