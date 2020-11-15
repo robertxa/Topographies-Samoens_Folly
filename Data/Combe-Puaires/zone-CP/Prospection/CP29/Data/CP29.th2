@@ -1,0 +1,40 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 171.25 195.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {26.6142 1 1.0} {30.0 CP29} CP29-map.xvi 0 {}
+
+
+
+scrap SP-CP29-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [1.0 1.0 40.5 1.0 0.0 0.0 10 0.0 m]
+
+point 27.25 27.25 altitude -align bottom
+
+point 9.25 36.75 height -value [-8 m]
+
+point 42.0 65.75 label -text "<bf>CP29" -scale xl
+
+point 36.25 40.75 entrance -orientation 212.7
+
+line overhang -close on
+  28.75 30.25
+  28.75 30.25 23.25 35.5 23.25 32.25
+  23.25 29.0 25.0 27.0 27.25 27.25
+  29.5 27.5 30.5 27.0 29.75 28.75
+  29.0 30.5 28.75 30.25 28.75 30.25
+  smooth off
+endline
+
+line wall -close on
+  28.75 30.25
+  28.75 30.25 22.25 35.5 23.25 32.25
+  24.25 29.0 25.75 27.75 27.25 27.25
+  28.75 26.75 31.25 27.25 29.75 28.75
+  28.25 30.25 28.75 30.25 28.75 30.25
+  smooth off
+endline
+
+point 26.6142 30.0 station -name CP29@CP29
+
+endscrap
+
+

@@ -8,13 +8,14 @@ survey CP29 -title "CP29"
 
 	centerline -extend right
 		cs lat-long
-		fix       CP29      46.116866     006.79880      2175
-		station   CP29      "CP29" entrance continuation explored 08m
+		fix       CP29      46.116866     6.79880      2175
+		station   CP29      "CP29" entrance continuation #explored 08m
 
 		explo-date 2000.07.13
 			explo-team "Pierre Cahinght"
 		
-		
+		data normal from to length compass clino
+		CP29	1	8	0	-90
   
 	endcenterline
 endsurvey

@@ -137,14 +137,14 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/CP29-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/CP29-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/CP29-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/CP29-coupe.xvi
 
 # Select maps
 	select MP-CP29-plan-tot@CP29
-	select MC-CP29-coupe-tot@CP29
+#	select MC-CP29-coupe-tot@CP29
 	  
- export map -o Outputs/CP29-plan.pdf -layout my_layout
+export map -o Outputs/CP29-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP29-coupe.pdf
 #export map -o Outputs/CP29-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP29-coupe-Continuations.pdf
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/CP29-coupe.pd
 #export map -proj plan -fmt esri -o Outputs/CP29 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/CP29.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP29.kml -layout my_layout

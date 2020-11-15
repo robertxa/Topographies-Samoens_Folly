@@ -87,7 +87,7 @@ scrap SP-CP-2-2020 -projection plan -station-names "" "@trousCP" -scale [3036.29
 
 point 7002.0 5806.0 label -text "<bf>CP40" -scale xl
 
-point 7561.5 5213.0 label -text "<bf>CP29" -scale xl
+#point 7561.5 5213.0 label -text "<bf>CP29" -scale xl
 
 point 7387.5 4919.0 label -text "<bf>CP27" -scale xl
 
@@ -109,11 +109,11 @@ point 7376.5 4757.0 entrance -orientation 358.3
 
 point 7389.0 4902.5 entrance -orientation 182.2
 
-point 7561.5 5196.0 entrance -orientation 182.2
+#point 7561.5 5196.0 entrance -orientation 182.2
 
 point 7002.5 5788.5 entrance -orientation 182.2
 
-point 7560.9800000000005 5185.75 station -name CP29
+#point 7560.9800000000005 5185.75 station -name CP29
 
 point 7002.04 5777.8 station -name CP40
 
