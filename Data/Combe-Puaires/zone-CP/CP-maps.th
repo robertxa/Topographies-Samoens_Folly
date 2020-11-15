@@ -7,38 +7,6 @@ encoding  utf-8
 map MP-zoneCP -title "Cavités de la Zone CP"
 	MP-CP23-plan-tot@CP23.prospectionCP
 	break
-	MP-ReseauCP-total@ReseauCP
-	break
-	MP-CP1-plan-tot@CP1
-	break
-	MP-CP3-plan-tot@CP3
-	break
-	MP-CP6-plan-tot@CP6
-	break
-	MP-CP7-plan-tot@CP7
-	break
-	MP-CP15-plan-tot@CP15
-	break
-	MP-CP17-plan-tot@CP17
-	break
-	MP-CP19-plan-tot@CP19
-	break
-	MP-CP21-plan-tot@CP21
-	break
-	MP-CP24-plan-tot@CP24
-	break
-	MP-CP28-plan-tot@CP28a
-	break
-	MP-CP32-plan-tot@CP32
-	break
-	MP-CP43-plan-tot@CP43
-	break
-	MP-CP3-plan-tot@CP3
-	break
-	MP-CP62-plan-tot@CP62
-	break
-	MP-CP69-plan-tot@CP69
-	break
 	MP-CP2-plan-tot@CP2.prospectionCP
 	break
 	MP-CP4-plan-tot@CP4.prospectionCP
@@ -71,12 +39,14 @@ map MP-zoneCP -title "Cavités de la Zone CP"
 	
 	break
 	MP-CP29-plan-tot@CP29.prospectionCP
-	#break
-	#MP-CP30-plan-tot@CP30.prospectionCP
-	#break
-	#MP-CP31-plan-tot@CP31.prospectionCP
-	#break
-	#MP-CP33-plan-tot@CP33.prospectionCP
+	break
+	MP-CP30-plan-tot@CP30.prospectionCP
+	break
+	MP-CP31-plan-tot@CP31.prospectionCP
+	break
+	MP-CP33-plan-tot@CP33.prospectionCP
+	break
+	MP-CP17-plan-tot@CP17
 	#break
 	#MP-CP34-plan-tot@CP34.prospectionCP
 	#break
@@ -151,6 +121,38 @@ map MP-zoneCP -title "Cavités de la Zone CP"
 	
 	break
 	MP-trousCP
+	
+	break
+	MP-CP1-plan-tot@CP1
+	break
+	MP-CP3-plan-tot@CP3
+	break
+	MP-CP6-plan-tot@CP6
+	break
+	MP-CP7-plan-tot@CP7
+	break
+	MP-CP15-plan-tot@CP15
+	break
+	MP-CP19-plan-tot@CP19
+	break
+	MP-CP21-plan-tot@CP21
+	break
+	MP-CP24-plan-tot@CP24
+	break
+	MP-CP28-plan-tot@CP28a
+	break
+	MP-CP32-plan-tot@CP32
+	break
+	MP-CP43-plan-tot@CP43
+	break
+	MP-CP3-plan-tot@CP3
+	break
+	MP-CP62-plan-tot@CP62
+	break
+	MP-CP69-plan-tot@CP69
+	break
+	MP-ReseauCP-total@ReseauCP
+	
 endmap 
 
    

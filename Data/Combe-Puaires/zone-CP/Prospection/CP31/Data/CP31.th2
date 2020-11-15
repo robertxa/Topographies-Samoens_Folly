@@ -1,0 +1,115 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -747 1072 140.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP31.gif 0 {}
+
+
+
+scrap SP-CP31-1 -projection plan -author 2000 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [136.0 -257.0 410.0 -257.0 0.0 0.0 10 0.0 m]
+
+point 99.0 -299.0 height -value [-8 m]
+
+point 7.0 -576.0 label -text "<bf>CP31" -scale xl
+
+point 125.0 -422.0 entrance -orientation 35.5
+
+line overhang -close on
+  230.0 -301.0
+  217.0 -304.0
+  234.0 -330.0
+  234.0 -330.0 239.0 -322.0 237.0 -314.0
+  235.0 -306.0 230.0 -301.0 230.0 -301.0
+  smooth off
+endline
+
+line overhang -close on
+  219.0 -320.0
+  219.0 -320.0 210.0 -308.0 204.0 -305.0
+  198.0 -302.0 166.0 -282.0 169.0 -303.0
+  172.0 -324.0 194.0 -352.0 202.0 -359.0
+  210.0 -366.0 225.0 -393.0 236.0 -378.0
+  239.55 -373.16 239.0 -358.0 235.0 -350.0
+  231.0 -342.0 219.0 -320.0 219.0 -320.0
+  smooth off
+endline
+
+line wall -close on
+  235.0 -350.0
+  235.0 -350.0 229.0 -334.0 234.0 -330.0
+  239.0 -326.0 242.0 -303.0 230.0 -301.0
+  218.0 -299.0 216.0 -312.0 204.0 -305.0
+  192.0 -298.0 161.0 -280.0 169.0 -303.0
+  177.0 -326.0 192.0 -349.0 202.0 -359.0
+  212.0 -369.0 236.0 -393.0 236.0 -378.0
+  236.0 -363.0 235.0 -350.0 235.0 -350.0
+  smooth off
+endline
+
+point 212.0 -322.0 station -name CP31@CP31
+
+endscrap
+
+
+
+scrap SC-CP31-1 -projection extended -author 2000 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [136.0 -257.0 410.0 -257.0 0.0 0.0 10 0.0 m]
+
+line wall -close on -outline in
+  713.0 -232.0
+  713.0 -232.0 727.0 -193.0 736.0 -192.0
+  745.0 -191.0 747.0 -189.0 744.0 -203.0
+  741.0 -217.0 753.0 -230.0 740.0 -231.0
+  727.0 -232.0 713.0 -232.0 713.0 -232.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  793.0 -179.0
+  793.0 -179.0 646.0 -158.0 559.0 -191.0
+endline
+
+line wall
+  723.0 -379.0
+  723.0 -379.0 723.0 -372.0 722.0 -351.0
+  721.0 -330.0 716.0 -307.0 721.0 -286.0
+  726.0 -265.0 719.0 -257.0 737.0 -246.0
+  755.0 -235.0 762.0 -230.0 768.0 -211.0
+  774.0 -192.0 783.0 -179.0 793.0 -179.0
+endline
+
+line rope
+  653.0 -189.0
+  654.0 -372.0
+endline
+
+point 682.0 -147.0 entrance -orientation 179.2
+
+point 718.0 -386.0 altitude -align bottom-right -value [-7 m]
+
+point 793.0 -179.0 altitude -align right
+
+point 571.0 -297.0 height -value [-7 m]
+
+line wall -subtype debris
+  641.0 -391.0
+  641.0 -391.0 665.0 -385.0 689.0 -385.0
+  713.0 -385.0 723.0 -387.0 723.0 -379.0
+endline
+
+line wall
+  559.0 -191.0
+  559.0 -191.0 606.0 -184.0 614.0 -192.0
+  622.0 -200.0 630.0 -194.0 627.0 -220.0
+  624.0 -246.0 629.0 -248.0 630.0 -262.0
+  631.0 -276.0 632.0 -277.0 630.0 -298.0
+  628.0 -319.0 624.0 -328.0 630.0 -338.0
+  636.0 -348.0 633.0 -353.0 634.0 -369.0
+  635.0 -385.0 630.0 -391.0 641.0 -391.0
+endline
+
+point 631.0 -185.0 station -name CP31@CP31
+
+point 678.0 -92.0 label -text "<bf>CP31" -scale xl
+
+endscrap
+
+

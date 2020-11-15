@@ -1,0 +1,111 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.0 -1226.0 1059 142.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP33.gif 0 {}
+
+
+
+scrap SP-CP33-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [544.0 -654.0 731.0 -654.0 0.0 0.0 5 0.0 m]
+
+point 368.0 -768.0 altitude -align top-right
+
+line pit
+  326.0 -652.0
+  326.0 -652.0 224.0 -614.0 206.0 -688.0
+endline
+
+point 666.0 -1088.0 label -text "<bf>CP33" -scale xl
+
+point 438.0 -944.0 entrance -orientation 326.4
+
+line overhang -close on
+  228.0 -580.0
+  228.0 -580.0 68.0 -356.0 52.0 -376.0
+  36.0 -396.0 28.0 -436.0 76.0 -484.0
+  124.0 -532.0 160.0 -568.0 168.0 -596.0
+  176.0 -624.0 254.0 -684.0 260.0 -720.0
+  266.0 -756.0 312.0 -824.0 340.0 -820.0
+  368.0 -816.0 386.0 -808.0 368.0 -768.0
+  350.0 -728.0 350.0 -734.0 332.0 -708.0
+  314.0 -682.0 228.0 -580.0 228.0 -580.0
+  smooth off
+endline
+
+line wall -close on
+  332.0 -708.0
+  332.0 -708.0 256.0 -612.0 228.0 -580.0
+  200.0 -548.0 92.0 -368.0 52.0 -376.0
+  12.0 -384.0 40.0 -452.0 76.0 -484.0
+  112.0 -516.0 144.0 -552.0 168.0 -596.0
+  192.0 -640.0 248.0 -684.0 260.0 -720.0
+  272.0 -756.0 304.0 -816.0 340.0 -820.0
+  376.0 -824.0 388.0 -800.0 368.0 -768.0
+  348.0 -736.0 332.0 -708.0 332.0 -708.0
+  smooth off
+endline
+
+point 84.0 -784.0 height -value [-11 m]
+
+point 308.0 -724.0 station -name CP33@CP33
+
+endscrap
+
+
+
+scrap SC-CP33-1 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [544.0 -654.0 731.0 -654.0 0.0 0.0 5 0.0 m]
+
+line wall -subtype invisible
+  774.0 -218.0
+  774.0 -218.0 708.0 -204.0 602.0 -198.0
+  496.0 -192.0 284.0 -200.0 284.0 -200.0
+  smooth off
+endline
+
+line wall
+  718.0 -786.0
+  718.0 -786.0 724.0 -596.0 720.0 -574.0
+  716.0 -552.0 710.0 -496.0 710.0 -452.0
+  710.0 -408.0 698.0 -388.0 720.0 -362.0
+  742.0 -336.0 746.0 -328.0 746.0 -302.0
+  746.0 -276.0 768.0 -230.0 774.0 -218.0
+endline
+
+point 434.0 -528.0 height -value [-11 m]
+
+point 556.0 -788.0 altitude -align left
+
+point 774.0 -218.0 altitude -align right
+
+line rope
+  372.0 -218.0
+  582.0 -244.0
+  592.0 -768.0
+endline
+
+point 552.0 -140.0 entrance -orientation 179.1
+
+line wall -subtype debris
+  556.0 -788.0
+  556.0 -788.0 694.0 -782.0 718.0 -786.0
+endline
+
+line wall
+  284.0 -200.0
+  284.0 -200.0 294.0 -240.0 320.0 -252.0
+  346.0 -264.0 410.0 -312.0 444.0 -330.0
+  478.0 -348.0 522.0 -378.0 532.0 -416.0
+  542.0 -454.0 526.0 -524.0 534.0 -574.0
+  542.0 -624.0 548.0 -690.0 548.0 -712.0
+  548.0 -734.0 556.0 -788.0 556.0 -788.0
+  smooth off
+endline
+
+point 660.0 -768.0 station -name 1@CP33
+
+point 670.0 -206.0 station -name CP33@CP33
+
+point 548.0 -40.0 label -text "<bf>CP33" -scale xl
+
+endscrap
+
+

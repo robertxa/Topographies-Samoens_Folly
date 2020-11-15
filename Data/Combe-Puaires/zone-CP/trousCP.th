@@ -34,14 +34,14 @@ fix       CP        46.111683     006.78880      1899
 #fix       CP22      46.117966     006.80428      2245	# Coordonnées Fausses
 #fix       CP23      46.114500     006.79625      1900 # ALT PAR DEFAULT
 #fix       CP25      46.116700     006.80025      2183
-fix       CP26      46.115900     006.79823      2134
-fix       CP27      46.116183     006.79826      2140
+fix       CP26      46.115900     6.79823      2134
+fix       CP27      46.116183     6.79826      2140
 #fix       CP28      46.115150     006.79836      2149
 #fix       CP29      46.116866     006.79880      2175
-fix       CP30      46.117666     006.79953      1900 # ALT PAR DEFAULT
-fix       CP31      46.117700     006.79926      1900 # ALT PAR DEFAULT
+#fix       CP30      46.117666     006.79953      1900 # ALT PAR DEFAULT
+#fix       CP31      46.117700     006.79926      1900 # ALT PAR DEFAULT
 #fix       CP32      46.112183     006.79086      1970
-fix       CP33      46.117383     006.79993      1900 # ALT PAR DEFAULT
+#fix       CP33      46.117383     006.79993      1900 # ALT PAR DEFAULT
 fix       CP34      46.116433     006.80111      2214
 fix       CP35      46.116716     006.80240      2250
 fix       CP36      46.118650     006.80310      1900 # ALT PAR DEFAULT
@@ -98,9 +98,9 @@ station   CP        "CP?" entrance
 station   CP26      "CP26" entrance continuation explored 04m
 station   CP27      "CP27" entrance continuation explored 08m
 #station   CP29      "CP29" entrance continuation explored 08m
-station   CP30      "CP30" entrance continuation explored 20m air-draught
-station   CP31      "CP31" entrance continuation explored 07m
-station   CP33      "CP33" entrance continuation explored 11m
+#station   CP30      "CP30" entrance continuation explored 20m air-draught
+#station   CP31      "CP31" entrance continuation explored 07m
+#station   CP33      "CP33" entrance continuation explored 11m
 station   CP34      "CP34" entrance continuation explored 35m
 station   CP35      "CP35" entrance continuation explored 20m
 station   CP36      "CP36" entrance continuation explored 08m

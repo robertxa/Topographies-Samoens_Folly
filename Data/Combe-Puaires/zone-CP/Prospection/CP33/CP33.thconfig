@@ -144,7 +144,7 @@ endlayout
 	select MP-CP33-plan-tot@CP33
 	select MC-CP33-coupe-tot@CP33
 	  
- export map -o Outputs/CP33-plan.pdf -layout my_layout
+export map -o Outputs/CP33-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP33-coupe.pdf
 #export map -o Outputs/CP33-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP33-coupe-Continuations.pdf
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/CP33-coupe.pd
 #export map -proj plan -fmt esri -o Outputs/CP33 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/CP33.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP33.kml -layout my_layout

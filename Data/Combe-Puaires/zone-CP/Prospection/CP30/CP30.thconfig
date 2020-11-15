@@ -82,7 +82,7 @@ layout my_layout-coupe
   
 	doc-title "CP30"
 	doc-author "Xavier Robert"
-	base-scale 1 250
+	base-scale 1 450
 	scale 1 250
 	scale-bar 25 m
 	#rotate 2.25
@@ -144,7 +144,7 @@ endlayout
 	select MP-CP30-plan-tot@CP30
 	select MC-CP30-coupe-tot@CP30
 	  
- export map -o Outputs/CP30-plan.pdf -layout my_layout
+export map -o Outputs/CP30-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/CP30-coupe.pdf
 #export map -o Outputs/CP30-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP30-coupe-Continuations.pdf
@@ -155,4 +155,4 @@ export map -projection extended -layout my_layout-coupe -o Outputs/CP30-coupe.pd
 #export map -proj plan -fmt esri -o Outputs/CP30 -layout my_layout
   
 # Export kml files
-#export map -proj plan -fmt kml -o Outputs/CP30.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP30.kml -layout my_layout
