@@ -21,7 +21,7 @@ endlayout
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBCHpra
+	copy Coords_Header_CPCPpra
 	copy drawingconfig
 	copy header-plan-schema
 	copy langue-fr
@@ -75,7 +75,7 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBCHpra
+	copy Coords_Header_CPCPpra
 	copy drawingconfig
 	copy header_coupe-schema
 	copy langue-fr
