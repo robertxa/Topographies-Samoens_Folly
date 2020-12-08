@@ -43,6 +43,8 @@ encoding  utf-8
 #	- plan walk/ (u:planwalk)
 #	- handrail/rambarde (u:handrail)
 #	- Surface (u:surf)
+#	- Dive line/fil d'Ariane (u:ariane)
+#	- Deviation (u:deviation)
 
 # Existing user areas:
 # 	- boue/mud (u:boue)
@@ -326,10 +328,22 @@ layout drawingconfig
 	symbol-color point station [54 7 60]
 	symbol-color line flowstone [100 60 20]
 	symbol-color line wall:flowstone [100 60 20]
+	symbol-color point flowstone [100 60 20]
+	symbol-color line rimstone-dam [100 60 20]
+	symbol-color point rimstone-dam [100 60 20]
 	symbol-color point wall-altitude [78 8 52]	# rouge-violet 199, 21, 133
 
 	####### Metapost-changes ############
 	code metapost
+
+		#<en> Modify length/depth statistics to print
+		#<fr> Modifier l'aspect et les données des statistiques de longueur affichées si besoin
+		#code tex-map
+		#	\cavelength{1330\thinspace{}m}
+		#	+ 150\thinspace{}m estimes}
+		#	\cavedepth{243\thinspace{}m}
+		#endcode
+
 
 		#<en> Change the dashed line for the line wall:presumed
 		#<fr> Changer la ligne pointillée du symbole line wall:presumed
@@ -761,9 +775,13 @@ layout drawingconfig
 
 
 		#<en> Change the altitude definition for the wall-line label (add units)
-		#	  To modify the color, you need to modify the triplets after the 3 withcolor command
+		#	  To modify the color, you need to modify the triplets after the 3 withcolor command.
+		#	  BE CAREFUL ! Sometimes, it generates mpost errors when using point wall:altitude.
+		#		If you get this kind of error, comment the whole p_wallaltitude definition.
 		#<fr> Changer la définition de l'altitude pour le label de la ligne mur (ajout de l'unité)
-		#	  Pour modifier la couleur, modifier le triplet (RGB) après les 3 commandes withcolor
+		#	  Pour modifier la couleur, modifier le triplet (RGB) après les 3 commandes withcolor.
+		#	  ATTENTION ! Parfois, cette redéfinition génère des erreurs métapost.
+		#		Si c'est le cas, commenter toute la redéfinition du point p_wallaltitude.
 		
 		def p_wallaltitude (expr pprev,pos,pnext,txt) =
 			rot:=angle(unitvector(pnext-pos)+unitvector(pos-pprev)) - 90;
@@ -852,7 +870,7 @@ layout drawingconfig
 		enddef;
 
 
-		#<en> Line symbol for Coupoles (u:strata). It works exactly as line section
+		#<en> Line symbol for Coupoles (u:coupole). It works exactly as line section
 		#<fr> Symbole de ligne pour dessiner des coupoles de plafond. 
 		#     Fonctionne comme les autres lignes
 		def l_u_coupole (expr P) = 
@@ -1111,6 +1129,15 @@ layout drawingconfig
 		#initsymbol("p_entrance_MY");
 		#let p_entrance = p_entrance_MY;
 		
+
+		#<en> Define dive line (u:ariane) in thin red
+		#<fr> Définition de la ligne file d'Ariane en rouge fin
+		def l_u_ariane (expr Path) =
+			T:=identity;
+			pickup PenD;
+			draw Path withcolor (100, 0, 0);
+		enddef;
+
 					
 		#<en> Definition of plankwalk
 		#<fr> Définition d'une ligne de main courante
@@ -1210,6 +1237,25 @@ layout drawingconfig
 			thfill (-.2u,-.2u)--(0,.2u)--(.2u,-.2u)--cycle withcolor (0.58, 0.44, 0.25); 
 		enddef;
 		initsymbol ("p_u_anchor_natural");
+
+
+		#<en> Deviation line (by Tarquin 2019)
+		#<fr> Ligne pour dessiner une déviation (D'après Tarquin 2019)
+		def l_u_deviation (expr P) =
+			begingroup;
+				save ellipse;
+				T:=identity;
+				pickup PenC;
+				path ellipse;
+				 ellipse:=fullcircle xscaled (.5u) yscaled (.25u) shifted (point (length P) of P);
+				thdraw P cutafter ellipse;
+				draw ellipse;
+			endgroup;
+		enddef;
+		initsymbol("l_u_deviation");
+		def l_u_deviation_legend =
+		l_u_deviation(((.1,.5)--(.8,.5)) inscale);
+		enddef;
 
 
 		#<en> Change rope line color
