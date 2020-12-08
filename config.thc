@@ -313,24 +313,69 @@ layout drawingconfig
 	symbol-assign point pillar AUT
 	
 	symbol-color point water-flow [17 46 100]
+	symbol-color point water-flow:intermittent [17 46 100]
+	symbol-color point water-flow:paleo [17 46 100]
+	symbol-color point water-drip [17 46 100]
 	symbol-color point water [17 46 100]
 	symbol-color line water-flow [17 46 100]
+	symbol-color line water-flow:conjectural [17 46 100]
+	symbol-color line water-flow:intermittent [17 46 100]
 	symbol-color point ice [0 0 100]
 	symbol-color line wall:ice [0 0 100]
 	symbol-color point ice-pillar [0 0 100]
 	symbol-color point ice-stalagmite [0 0 100]
+	symbol-color point ice-stalagtite [0 0 100]
 	symbol-color area ice [0 0 100]
 	symbol-color point snow [0 0 100]
+	symbol-color area snow [0 0 100]
 	symbol-color point spring [17 46 100]
 	symbol-color point root [52 33 6]
 	symbol-color point vegetable-debris [13 47 6]
+	symbol-color point seed-germination [13 47 6]
 	symbol-color point altitude [100 50 0]
 	symbol-color point station [54 7 60]
 	symbol-color line flowstone [100 60 20]
 	symbol-color line wall:flowstone [100 60 20]
 	symbol-color point flowstone [100 60 20]
+	symbol-color area flowstone [100 60 20]
+	symbol-color area moonmilk [100 60 20]	# Change the color ?
+	symbol-color point moonmilk [100 60 20]	# Change the color ?
+	symbol-color line wall:moonmilk [100 60 20]	# Change the color ?
+	symbol-color point curtains [100 60 20]
+	symbol-color point curtain [100 60 20]
+	symbol-color point disc-pillar [100 60 20]
+	symbol-color point disc-stalactite [100 60 20]
+	symbol-color point disc-stalagmite [100 60 20]
+	symbol-color point disc-pillars [100 60 20]
+	symbol-color point disc-stalactites [100 60 20]
+	symbol-color point disc-stalagmites [100 60 20]
+	symbol-color point disk [100 60 20]
+	symbol-color point wall-calcite [100 60 20]
+	symbol-color point pillar [100 60 20]
+	symbol-color point pillar-with-curtains [100 60 20]
+	symbol-color point pillars-with-curtains [100 60 20]
+	symbol-color point stalactite [100 60 20]
+	symbol-color point stalagmite [100 60 20]
+	symbol-color point stalactite-stalagmite [100 60 20]
+	symbol-color point stalactites-stalagmites [100 60 20]
+	symbol-color point flowstone-choke [100 60 20]
 	symbol-color line rimstone-dam [100 60 20]
+	symbol-color line rimstone-pool [100 60 20]
 	symbol-color point rimstone-dam [100 60 20]
+	symbol-color area stalactite [100 60 20]
+	symbol-color area stalactite-stalagmite [100 60 20]
+	symbol-color area stalagmite [100 60 20]
+	symbol-color area pillar [100 60 20]
+	symbol-color area pilllar-with-curtains [100 60 20]
+	symbol-color area mudcrack [52 33 6]	# Color to verify ; Maybe to darken
+	symbol-color area clay [52 33 6]	# Color to verify
+	symbol-color point volcano [52 33 6]	# Color to verify
+	symbol-color point mud [52 33 6]	# Color to verify
+	symbol-color point mud-crack [52 33 6]	# Color to verify
+	symbol-color point clay [52 33 6]	# Color to verify
+	symbol-color line wall:clay [52 33 6]	# Color to verify
+	symbol-color point clay-tree [52 33 6]	# Color to verify
+	symbol-color point clay-choke [52 33 6]	# Color to verify
 	symbol-color point wall-altitude [78 8 52]	# rouge-violet 199, 21, 133
 
 	####### Metapost-changes ############
