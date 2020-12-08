@@ -324,7 +324,7 @@ layout drawingconfig
 	symbol-color line wall:ice [0 0 100]
 	symbol-color point ice-pillar [0 0 100]
 	symbol-color point ice-stalagmite [0 0 100]
-	symbol-color point ice-stalagtite [0 0 100]
+	symbol-color point ice-stalactite [0 0 100]
 	symbol-color area ice [0 0 100]
 	symbol-color point snow [0 0 100]
 	symbol-color area snow [0 0 100]
@@ -366,15 +366,15 @@ layout drawingconfig
 	symbol-color area stalactite-stalagmite [100 60 20]
 	symbol-color area stalagmite [100 60 20]
 	symbol-color area pillar [100 60 20]
-	symbol-color area pilllar-with-curtains [100 60 20]
+	symbol-color area pillar-with-curtains [100 60 20]
 	symbol-color area mudcrack [52 33 6]	# Color to verify ; Maybe to darken
 	symbol-color area clay [52 33 6]	# Color to verify
 	symbol-color point volcano [52 33 6]	# Color to verify
 	symbol-color point mud [52 33 6]	# Color to verify
-	symbol-color point mud-crack [52 33 6]	# Color to verify
+	symbol-color point mudcrack [52 33 6]	# Color to verify
 	symbol-color point clay [52 33 6]	# Color to verify
 	symbol-color line wall:clay [52 33 6]	# Color to verify
-	symbol-color point clay-tree [52 33 6]	# Color to verify
+	#symbol-color point clay-tree [52 33 6]	# Color to verify
 	symbol-color point clay-choke [52 33 6]	# Color to verify
 	symbol-color point wall-altitude [78 8 52]	# rouge-violet 199, 21, 133
 
@@ -1433,54 +1433,54 @@ layout scalebar_vert-Halama
     #			{\scalebar}}
 	#		endcode
 
-	def s_scalebar (expr l, units, txt) = 
-		begingroup
-			tmpw = 3.0 bp;
-			tmp5m = 5 / Scale * units * cm;
-			tmpl = l / Scale * units * cm;
-		endgroup;
-		p := (0, 0) -- (tmpw, 0) -- (tmpw, - tmp5m) -- (0, - tmp5m) -- cycle; 
-		pickup PenD;
-		for i := 0 step 1 until (l - 1) / 5:
-			if (i mod 2) <> 0:
-				unfill p shifted - (0, i * tmp5m);
-			else:
-				fill p shifted - (0, i * tmp5m);
-			fi;
-			draw p shifted - (0, i * tmp5m);
-		endfor;    
-		pickup PenA
-		%draw (-tmpw, 0) -- (tmpw, 0);
-		%draw (-tmpw, -tmpl) -- (0, -tmpl);
-		fill (-2tmpw, tmpw) -- (-2tmpw, -tmpw) -- (0, 0) -- cycle;
-		fill (-2tmpw, -tmpl + tmpw) -- (-2tmpw, -tmpl + -tmpw) -- (0, -tmpl) -- cycle;
-		if ((l mod 10) > 5) or ((l mod 10) = 0):
-			draw (0, - tmpl) -- (tmpw, - tmpl) withcolor black;
-		else:  
-			draw (0, - tmpl) -- (tmpw, - tmpl) withcolor white;
-		fi;       
-		begingroup
-			interim labeloffset:=3.5bp + tmpw;
-			%interim defaultscale:=0.5;
-			label.rt(thTEX("\size[12]" & "0{\thinspace}m"),(0, 0));
-			for i := 1 step 1 until l / 5:
-				if (i mod 10) = 0:
-					label.rt(thTEX("\size[12]" & "-\thinspace" & decimal (i * 5)),(0, - i * tmp5m));
+	code metapost
+		def s_scalebar (expr l, units, txt) =
+			begingroup
+				tmpw = 3.0 bp;
+				tmp5m = 5 / Scale * units * cm;
+				tmpl = l / Scale * units * cm;
+			endgroup;
+			p := (0, 0) -- (tmpw, 0) -- (tmpw, - tmp5m) -- (0, - tmp5m) -- cycle; 
+			pickup PenD;
+			for i := 0 step 1 until (l - 1) / 5:
+				if (i mod 2) <> 0:
+					unfill p shifted - (0, i * tmp5m);
 				else:
-					if i * 5 = l:
+					fill p shifted - (0, i * tmp5m);
+				fi;
+				draw p shifted - (0, i * tmp5m);
+			endfor;    
+			pickup PenA
+			%draw (-tmpw, 0) -- (tmpw, 0);
+			%draw (-tmpw, -tmpl) -- (0, -tmpl);
+			fill (-2tmpw, tmpw) -- (-2tmpw, -tmpw) -- (0, 0) -- cycle;
+			fill (-2tmpw, -tmpl + tmpw) -- (-2tmpw, -tmpl + -tmpw) -- (0, -tmpl) -- cycle;
+			if ((l mod 10) > 5) or ((l mod 10) = 0):
+				draw (0, - tmpl) -- (tmpw, - tmpl) withcolor black;
+			else:  
+				draw (0, - tmpl) -- (tmpw, - tmpl) withcolor white;
+			fi;       
+			begingroup
+				interim labeloffset:=3.5bp + tmpw;
+				%interim defaultscale:=0.5;
+				label.rt(thTEX("\size[12]" & "0{\thinspace}m"),(0, 0));
+				for i := 1 step 1 until l / 5:
+					if (i mod 10) = 0:
 						label.rt(thTEX("\size[12]" & "-\thinspace" & decimal (i * 5)),(0, - i * tmp5m));
-					else:  
-						label.rt(thTEX("\size[8]" & "-\thinspace" & decimal (i * 5)),(0, - i * tmp5m));
-					fi  
-				fi;  
-        	endfor;
-			if (l mod 5) <> 0:
-				label.rt(thTEX("\size[12]" & "-\thinspace" & decimal (l)),(0, - tmpl));
-			fi;
-		endgroup
-	enddef;
-                       
-  endcode
+					else:
+						if i * 5 = l:
+							label.rt(thTEX("\size[12]" & "-\thinspace" & decimal (i * 5)),(0, - i * tmp5m));
+						else:  
+							label.rt(thTEX("\size[8]" & "-\thinspace" & decimal (i * 5)),(0, - i * tmp5m));
+						fi  
+					fi;  
+        		endfor;
+				if (l mod 5) <> 0:
+					label.rt(thTEX("\size[12]" & "-\thinspace" & decimal (l)),(0, - tmpl));
+				fi;
+			endgroup
+		enddef;                
+	endcode
 
 endlayout
 
