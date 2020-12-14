@@ -1305,6 +1305,8 @@ layout drawingconfig
 			thdraw origin withpen pencircle scaled 0.25u withcolor (0.58, 0.44, 0.25);
 		enddef;
 		initsymbol ("p_u_anchor_artificial");
+
+
 		#<en> Natural anchor point (From a post by Evaristo Quiroga)
 		#<fr> Point ancrage naturel (From a post by Evaristo Quiroga)
 		def p_u_anchor_natural(expr pos,theta,sc,al) =
@@ -1334,10 +1336,10 @@ layout drawingconfig
 		enddef;
 
 
-		#<en> Walking caver point (by Juraj Halama, 2020)
-		#	  Use "-align top" for proper alignment of the walking man when his point is on the groung.
-		#<fr> Point pour dessiner un spéléo marchant (D'après Juraj Halama, 2020)
-		#	  Utiliser l'option "-align top" pour un alignement correct quand le point est au sol
+		#<en> Climbing caver point (by Juraj Halama, 2020)
+		#	  Climbing one has center where the rope should go on the harness...
+		#<fr> Point pour dessiner un spéléo qui grimpe ou escalade (D'après Juraj Halama, 2020)
+		#	  Le point correspond au centre du spéléo au niveau du harnais, qui doit donc être sur la corde
 		picture u_man_c_pic;
 			u_man_c_pic := image (
 				draw (0cm, -0cm) -- (-8cm, 27cm) -- (-36cm, 55cm) -- (-50cm, 99cm) withpen pencircle scaled 16cm;
@@ -1351,6 +1353,7 @@ layout drawingconfig
 			T:=identity aligned A rotated R scaled S shifted P;
 			thdraw u_man_c_pic scaled (0.01 / Scale);
 		enddef;
+		initsymbol ("p_u_man_c");
 
 		#<en> The scale on the map and in the legend is matching just for 1:500...
 		#<fr> L'échelle sur la carte et sur la légende correspond au 1:500...
@@ -1359,10 +1362,10 @@ layout drawingconfig
 		enddef;
 
 
-		#<en> Climbing caver point (by Juraj Halama, 2020)
-		#	  Climbing one has center where the rope should go on the harness...
-		#<fr> Point pour dessiner un spéléo qui grimpe ou escalade (D'après Juraj Halama, 2020)
-		#	  Le point correspond au centre du spéléo au niveau du harnais, qui doit donc être sur la corde
+		#<en> Walking caver point (by Juraj Halama, 2020)
+		#	  Use "-align top" for proper alignment of the walking man when his point is on the groung.
+		#<fr> Point pour dessiner un spéléo marchant (D'après Juraj Halama, 2020)
+		#	  Utiliser l'option "-align top" pour un alignement correct quand le point est au sol
 		picture u_man_w_pic;
 			u_man_w_pic := image (
 				draw (0, 0) -- (7.5cm, 36cm) -- (0cm, 69cm) -- (9cm, 99cm) withpen pencircle scaled 16cm;
@@ -1377,6 +1380,7 @@ layout drawingconfig
 			T:=identity aligned A rotated R scaled S shifted P;
 			thdraw u_man_w_pic scaled (0.01 / Scale);
 		enddef;
+		initsymbol ("p_u_man_w");
 
 		#<en> The scale on the map and in the legend is matching just for 1:500...
 		#<fr> L'échelle sur la carte et sur la légende correspond au 1:500...
