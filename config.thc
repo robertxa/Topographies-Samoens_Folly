@@ -32,6 +32,10 @@ encoding  utf-8
 #	- Masonry/maçonnerie (u:masonry)
 #	- Ex voto/Signature (u:ex_voto)
 #	- Human bones/Ossements humains (u:human_bones)
+#	- Walking Caver/Spéléo qui marche (u:man_w)
+# 	- Climbing caver/Spéléo qui grimpe (u:man_c)
+#	- Plan view symbol/symbole de vue en plan (u:symbol_plan)
+#	- extended view symbol/symbole de vue en coupe développée (u:symbol_extend)
 
 # Existing user lines:
 #	- strate/strata (u:strata; option -clip off)
@@ -60,30 +64,39 @@ encoding  utf-8
 text en "line u:rope" "rope" #text to appear in legend
 text fr "line u:rope" "corde" #text to appear in legend
 text es "line u:rope" "cuerda" #text to appear in legend
+
 text en "line u:fault" "fault" #text to appear in legend
 text fr "line u:fault" "faille" #text to appear in legend
 text es "line u:fault" "falla" #text to appear in legend
+
 text en "line u:strata" "strata" #text to appear in legend
 text fr "line u:strata" "strate" #text to appear in legend
 text es "line u:strata" "strata" #text to appear in legend
+
 text en "line u:doline" "doline" #text to appear in legend
 text fr "line u:doline" "doline" #text to appear in legend
 text es "line u:doline" "dolina" #text to appear in legend
+
 text en "point u:bats" "bat(s)"
 text fr "point u:bats" "chauve-souris"
 text es "point u:bats" "murciélago(s)"
+
 text en "line u:bats" "bat path"
 text fr "line u:bats" "passage de chauve-souris"
 text es "line u:bats" "ruta de murciélagos"
+
 text en "area u:bats" "lot of bats"
 text fr "area u:bats" "beaucoup de chauve-souris"
 text es "area u:bats" "muchos murciélagos"
+
 text fr "area u:galerie" "départ de galerie"
 text en "area u:galerie" "tunnel departure"
 text es "area u:galerie" "salida de galeria"
+
 text en "point u:guacharos" "guacharos"
 text fr "point u:guacharos" "guacharos"
 text es "point u:guacharos" "guacharos"
+
 text fr "point danger" "danger !"
 text en "point danger" "danger !"
 text es "point danger" "danger !"
@@ -103,6 +116,7 @@ text es "point human-bones" "huesos humanos"
 text en "point u:boss" "stalagmite boss"
 text fr "point u:boss" "stalagmite boss"
 text es "point u:boss" "stalagmite boss"
+
 text fr "area u:guano" "guano"
 text en "area u:guano" "guano"
 text es "area u:guano" "guano"
@@ -156,6 +170,23 @@ text fr "point ice-stalagmite" "stalagmite de glace"
 
 text fr "point u:anchor_artificial" "Ancrage artificiel"
 text fr "point u:anchor_natural" "Ancrage naturel"
+
+text en "point u:man_w" "caver (walking)"
+text fr "point u:man_w" "spéléo (marchant)"
+text es "point u:man_w" "espeleológo (caminando)"
+
+text en "point u:man_c" "caver (climbing)"
+text fr "point u:man_c" "spéléo (grimpant)"
+text es "point u:man_c" "espeleológo (escalando)"
+
+text en "point u:symbol_plan" ""
+text fr "point u:symbol_plan" ""
+text es "point u:symbol_plan" ""
+
+text en "point u:symbol_extend" ""
+text fr "point u:symbol_extend" ""
+text es "point u:symbol_extend" ""
+
 
 ### Layouts Languages/langues
 
@@ -1300,6 +1331,95 @@ layout drawingconfig
 		initsymbol("l_u_deviation");
 		def l_u_deviation_legend =
 		l_u_deviation(((.1,.5)--(.8,.5)) inscale);
+		enddef;
+
+
+		#<en> Walking caver point (by Juraj Halama, 2020)
+		#	  Use "-align top" for proper alignment of the walking man when his point is on the groung.
+		#<fr> Point pour dessiner un spéléo marchant (D'après Juraj Halama, 2020)
+		#	  Utiliser l'option "-align top" pour un alignement correct quand le point est au sol
+		picture u_man_c_pic;
+			u_man_c_pic := image (
+				draw (0cm, -0cm) -- (-8cm, 27cm) -- (-36cm, 55cm) -- (-50cm, 99cm) withpen pencircle scaled 16cm;
+				draw (27cm, 48cm) -- (0, 64cm) -- (-29cm, 61cm) -- (-38cm, 102cm)  withpen pencircle scaled 16cm;
+				draw (-65cm, 48cm) -- (-75cm, 75cm) -- (-53cm, 106cm) -- (0, 106cm) withpen pencircle scaled 14cm;
+				draw (-44cm, 130cm) withpen pencircle scaled 27cm withcolor black;
+			) shifted (20cm, -67cm);
+
+		def p_u_man_c (expr P, R, S, A) =
+			U := (60cm, 85cm) scaled (0.01 / Scale);
+			T:=identity aligned A rotated R scaled S shifted P;
+			thdraw u_man_c_pic scaled (0.01 / Scale);
+		enddef;
+
+		#<en> The scale on the map and in the legend is matching just for 1:500...
+		#<fr> L'échelle sur la carte et sur la légende correspond au 1:500...
+		def p_u_man_c_legend =
+			draw u_man_c_pic scaled (u / 175cm) shifted ((.5, .5) inscale);
+		enddef;
+
+
+		#<en> Climbing caver point (by Juraj Halama, 2020)
+		#	  Climbing one has center where the rope should go on the harness...
+		#<fr> Point pour dessiner un spéléo qui grimpe ou escalade (D'après Juraj Halama, 2020)
+		#	  Le point correspond au centre du spéléo au niveau du harnais, qui doit donc être sur la corde
+		picture u_man_w_pic;
+			u_man_w_pic := image (
+				draw (0, 0) -- (7.5cm, 36cm) -- (0cm, 69cm) -- (9cm, 99cm) withpen pencircle scaled 16cm;
+				draw (42cm, 9cm) -- (37.5cm, 42cm) -- (13.5cm, 69cm) -- (30cm, 102cm) withpen pencircle scaled 16cm;
+				draw (21.5cm, 100.5cm) -- (6.6cm, 69cm) withpen pencircle scaled 16cm;
+				draw (-24cm, 75cm) -- (-13.5cm, 102cm) -- (9cm, 112.5cm) -- (30cm, 108cm) -- (51cm, 87cm) -- (75cm, 93cm) withpen pencircle scaled 14cm;
+				draw (30cm, 132cm) withpen pencircle scaled 27cm withcolor black;
+			) shifted (-20cm, -70cm);
+
+		def p_u_man_w (expr P, R, S, A) =
+			U := (60cm, 80cm) scaled (0.01 / Scale);
+			T:=identity aligned A rotated R scaled S shifted P;
+			thdraw u_man_w_pic scaled (0.01 / Scale);
+		enddef;
+
+		#<en> The scale on the map and in the legend is matching just for 1:500...
+		#<fr> L'échelle sur la carte et sur la légende correspond au 1:500...
+		def p_u_man_w_legend =
+			draw u_man_w_pic scaled (u / 175cm) shifted ((.5, .5) inscale);
+		enddef;
+
+
+		#<en> Plan view symbol point (by Juraj Halama, 2020)
+		#<fr> Point dessinant un symbole de "vue en plan" (D'après Juraj Halama, 2020)
+		def p_u_symbol_plan (expr pos,theta,sc,al) =
+			U := (-3.25u, 3.25u);
+			T := identity aligned al rotated theta scaled sc shifted pos;
+			pickup PenB;
+			q := ((-3.26u, -.95u) -- (1.74u, -.95u) -- (2.8u, .82u) -- (-1.49u, .82u) -- cycle);
+			thfill q withcolor .85;
+			thdraw q;
+			q := ((-.175u, .5u) -- (0u, 0u) -- (.175u, .5u) .. (0u, .45u) .. cycle);
+			thfill q withcolor .5green;
+			thdraw q withcolor .5green;
+			thdraw (0u, 0u) -- (0u, 2.31u) withcolor .5green; 
+		enddef;
+
+
+		#<en> Extended view symbol point (by Juraj Halama, 2020)
+		#<fr> Point dessinant un symbole de "vue en coupe développée" (D'après Juraj Halama, 2020)
+		def p_u_symbol_extend (expr pos,theta,sc,al) =
+			U := (-2.5u, 2.5u);
+			T := identity aligned al rotated theta scaled sc shifted pos;
+			pickup PenB;
+			q := ((-2.346u, -2.480u) -- (-.48u, -2.116u) -- (-.48u, 1.573u) -- (-2.346u, 1.354u) -- cycle);
+			thfill q withcolor .85;
+			q := ((-1.551u, -2.878u) -- (1.438u, -.766u) -- (1.438u, 2.388u) -- (-1.551u, 1.118u) -- cycle);
+			thfill q withcolor .75;
+			thdraw q;
+			thdraw (-.48u, -2.116u) -- (-.48u, 1.573u) dashed evenly;
+			q := ((.446u, -1.461u) -- (2.120u, -1.094u) -- (2.120u, 2.184u) -- (.446u, 1.965u) -- cycle);
+			thfill q withcolor .85;
+			thdraw (.446u, -1.461u) -- (.446u, 1.965u) dashed evenly;
+			q := ((-.175u, .5u) -- (0u, 0u) -- (.175u, .5u) .. (0u, .45u) .. cycle) rotated -90;
+			thfill q withcolor .5green;
+			thdraw q withcolor .5green;
+			thdraw (0u, 0u) -- (2.31u, 0u) withcolor .5green; 
 		enddef;
 
 
