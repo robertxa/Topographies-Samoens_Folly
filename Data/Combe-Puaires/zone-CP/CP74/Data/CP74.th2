@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -143.75 -128.75 164.25 321.5
+##XTHERION## xth_me_area_adjust -143.75 -128.75 213.5 329.25
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {13.461699999999999 1 1.0} {157.089 CP74} CP74-2020-map.xvi 0 {}
 
@@ -8,6 +8,8 @@ encoding  utf-8
 scrap SP-CP74-1 -projection plan -station-names "" "@CP74" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
 
 point 8.5 174.75 altitude -align top-left
+
+point 4.5 200.0 u:symbol_plan
 
 point -14.5 165.5 height -value [-10 m]
 

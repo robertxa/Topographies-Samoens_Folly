@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -131.0 410.0 735.0
+##XTHERION## xth_me_area_adjust -131.0 -131.0 474.0 735.0
 ##XTHERION## xth_me_area_zoom_to 100
 
 
@@ -35,7 +35,10 @@ point 76.0 442.0 station -name CP72@CP72
 line wall -subtype invisible
   250.0 488.0
   250.0 488.0 92.0 467.0 76.0 442.0
+  smooth off
 endline
+
+point 341.0 506.0 u:symbol_extend -scale s
 
 line wall
   254.0 179.0

@@ -40,6 +40,8 @@ line overhang -id l4-390-164 -close on
   smooth off
 endline
 
+point 96.0 433.0 u:symbol_plan -scale s
+
 line wall -close on
   230.0 319.0
   230.0 319.0 151.0 249.0 152.0 236.0

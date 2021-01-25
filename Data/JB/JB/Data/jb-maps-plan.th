@@ -385,6 +385,12 @@ map MP-chatons -title "Méandre des Chatons"
 	SP-chatons
 endmap
 
+map MP-oeufs -title "Méandre des Oeufs"
+	SP-Solitaire2020-1
+	break
+	SP-Solitaire2020-2
+endmap
+
 map MP-solitaire -title "Réseau du Solitaire"
 	SP-solitaire_plan
 	break
@@ -415,10 +421,6 @@ map MP-solitaire -title "Réseau du Solitaire"
 	SP-Solitaire-2019c4	#SPPPPPPP
 	break
 	SP-Sol2019d-1	#SPPPPPPP
-	break
-	SP-Solitaire2020-1
-	break
-	SP-Solitaire2020-2
 endmap
 
 map MP-puitsAlain -title "Puits Alain"     
@@ -691,8 +693,14 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	MP-quitombe
 endmap
 
-map MP-Jean-Dupond -title "Le début de la rivière aval"
+map MP-Solitaire-tot -title "Réseau du Solitaire"
 	MP-solitaire
+	break
+	MP-oeufs
+endmap
+
+map MP-Jean-Dupond -title "Le début de la rivière aval"
+	MP-Solitaire-tot
 	break
 	MP-puitsAlain
 	break

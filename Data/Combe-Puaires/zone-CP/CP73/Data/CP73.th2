@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 312.0 216.25
+##XTHERION## xth_me_area_adjust -128.75 -129.0 379.0 263.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {67.0866 1 1.0} {54.1732 CP73} CP73-2020-map.xvi 0 {}
 
@@ -25,6 +25,8 @@ line overhang -close on
   77.37 87.33 73.75 86.25 73.75 86.25
   smooth off
 endline
+
+point 41.25 133.75 u:symbol_plan
 
 line wall -close on
   73.75 86.25

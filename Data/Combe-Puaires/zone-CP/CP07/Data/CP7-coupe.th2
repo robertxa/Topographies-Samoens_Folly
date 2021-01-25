@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -151.162 -128.75 347.5 459.5
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -131.0 -131.0 351.0 468.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {195.74599999999998 1 1.0} {65.43500000000002 0} CP7-coupe2020a.xvi 0 {}
 
 
@@ -92,6 +92,7 @@ line wall
   206.75 77.5 207.0 91.5 204.25 97.0
   201.5 102.5 198.25 107.25 192.75 111.5
   187.25 115.75 181.25 140.5 181.0 151.75
+  smooth off
 endline
 
 point 191.0 150.0 continuation -attr Code E -attr Cavite CP7 -attr CA "?" -text "Lucarne étroite à voir, suite possible ici ?"
@@ -104,7 +105,10 @@ endline
 line wall
   181.0 151.75
   181.0 151.75 183.0 150.5 184.5 149.75
+  smooth off
 endline
+
+point 163.0 335.0 u:symbol_extend
 
 line wall
   180.5 156.5

@@ -241,6 +241,10 @@ map MC-V4 -title "V4"
       SC-V4c5
 endmap
 
+map MC-oeufs -title "Méandre des Oeufs"
+	SC-Solitaire2020-1
+endmap
+
 map MC-solitaire -title "Réseau du Solitaire"
 	SC-sol-C2
 	break
@@ -259,8 +263,6 @@ map MC-solitaire -title "Réseau du Solitaire"
 	SC-Sol2019d-1
 	break
 	SC-Sol2019d-2
-	break
-	SC-Solitaire2020-1
 endmap
 
 map MC-puitsAlain -title "Puits Alain"     
@@ -469,6 +471,8 @@ map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
 	MC-rivieredebut
 	break
 	MC-solitaire
+	break
+	MC-oeufs
 	break
 	MC-puitsAlain
 endmap

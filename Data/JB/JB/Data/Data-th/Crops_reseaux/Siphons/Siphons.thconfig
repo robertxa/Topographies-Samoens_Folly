@@ -32,7 +32,7 @@ layout my_layout
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "Siphons aval et réseau Stick, Samoëns, 74, France"
+	map-comment "<it>Plan<ss> - Siphons aval et réseau Stick, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -59,7 +59,10 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
-  
+
+	# add general view
+	map-image 45 20 nw Data/jb-Xav-2020-plan20000.pdf
+ 
  endlayout
  
  
@@ -81,7 +84,7 @@ layout my_layout-coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Siphons et réseau Stick, coupe développée, Samoëns, 74, France"
+	map-comment "<it>Coupe développée<ss> - Siphons et réseau Stick, coupe développée, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -108,7 +111,10 @@ layout my_layout-coupe
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
-  
+
+	# add general view
+	map-image 30 110 nw Data/jb-Xav-2020-coupe20000.pdf  
+
  endlayout
 
  

@@ -47,7 +47,7 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau de Sezhommes 2020"
+	map-comment "<it>Plan<ss> - Réseau de Sezhommes 2020"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -78,8 +78,8 @@ layout layout_plan
  
 	######################### 
   
-	# Ajouter une coupe développée sur le même pdf
-	#map-image 200 130 n solitaire-coupe.pdf
+	# add general view
+	map-image 65 45 nw Data/jb-Xav-2020-plan20000.pdf
   
 endlayout
   
@@ -106,7 +106,7 @@ layout layout_coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau de Sezhommes 2020"
+	map-comment "<it>Coupe développée<ss> - Réseau de Sezhommes 2020"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -136,6 +136,9 @@ layout layout_coupe
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
+	# add general view
+	map-image 55 -50 nw Data/jb-Xav-2020-coupe20000.pdf
+
 	######################### 
   
 endlayout

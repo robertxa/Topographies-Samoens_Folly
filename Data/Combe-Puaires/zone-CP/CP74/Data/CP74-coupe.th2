@@ -10,7 +10,10 @@ scrap SC-CP74-1 -projection extended -station-names "" "@CP74" -author 2020 "Xav
 line wall -subtype invisible
   185.0 100.0
   185.0 100.0 141.0 108.0 130.5 102.0
+  smooth off
 endline
+
+point 224.0 116.5 u:symbol_extend
 
 line wall
   187.5 52.5
@@ -51,6 +54,7 @@ point 201.5 50.0 water-flow -orientation 260.5
 line wall -subtype debris
   137.0 17.0
   137.0 17.0 152.0 22.0 156.5 24.0
+  smooth off
 endline
 
 line wall

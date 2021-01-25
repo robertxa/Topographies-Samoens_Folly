@@ -1,0 +1,108 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -131.0 -131.0 972.0 897.0
+##XTHERION## xth_me_area_zoom_to 100
+
+
+
+scrap SP-B41-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [540.0 468.0 877.0 468.0 0.0 0.0 10 0.0 m]
+
+line overhang -clip off
+  540.0 559.0
+  540.0 559.0 569.0 587.0 585.0 600.0
+  601.0 613.0 623.0 626.0 623.0 626.0
+  smooth off
+endline
+
+line overhang -clip off
+  681.0 672.0
+  681.0 672.0 694.0 684.0 702.0 691.0
+  710.0 698.0 754.0 722.0 767.0 733.0
+  780.0 744.0 805.0 761.0 805.0 761.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  702.0 691.0
+  702.0 691.0 642.0 674.0 623.0 626.0
+  smooth off
+endline
+
+point 719.0 638.0 altitude -align right -value [-6 m]
+
+point 677.0 583.0 altitude -align bottom -value [-15 m]
+
+point 606.0 764.0 label -text "<bf>B41" -scale xl
+
+point 630.0 702.0 entrance -orientation 140.2
+
+point 623.0 626.0 altitude -align top-left
+
+point 782.0 708.0 dig
+
+point 734.0 533.0 continuation -attr Code D -attr Cavite "B41" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air soufflant en été" -text "Désobstruction à continuer, entrée supérieure du Lavoir"
+
+point 839.0 637.0 u:symbol_plan
+
+point 741.0 574.0 air-draught -orientation 105.4 -subtype summer
+
+point 613.0 563.0 dig
+
+line pit
+  694.0 612.0
+  694.0 612.0 679.0 622.0 658.0 616.0
+  smooth off
+endline
+
+line pit
+  717.0 679.0
+  717.0 679.0 697.0 639.0 687.0 633.0
+  smooth off
+endline
+
+line pit
+  698.0 669.0
+  698.0 669.0 675.0 638.0 662.0 628.0
+  smooth off
+endline
+
+line pit -reverse on
+  644.0 636.0
+  644.0 636.0 674.0 662.0 685.0 669.0
+  smooth off
+endline
+
+line wall
+  683.0 592.0
+  683.0 592.0 666.0 594.0 672.0 599.0
+  678.0 604.0 687.0 624.0 697.0 626.0
+  707.0 628.0 712.0 629.0 719.0 638.0
+  726.0 647.0 751.0 670.0 746.0 674.0
+  741.0 678.0 738.0 680.0 719.0 672.0
+  700.0 664.0 690.0 659.0 684.0 662.0
+  678.0 665.0 675.0 667.0 681.0 672.0
+  687.0 677.0 702.0 691.0 702.0 691.0
+  smooth off
+endline
+
+line wall
+  678.0 622.0
+  678.0 622.0 656.0 601.0 649.0 594.0
+  642.0 587.0 641.98 574.32 655.0 583.0
+  658.0 585.0 667.0 589.0 677.0 583.0
+  smooth off
+endline
+
+line wall
+  623.0 626.0
+  623.0 626.0 638.0 636.0 644.0 636.0
+  650.0 636.0 657.0 633.0 665.0 633.0
+  673.0 633.0 696.0 647.0 695.0 640.0
+  694.0 633.0 687.0 628.0 678.0 622.0
+  smooth off
+endline
+
+point 650.0 649.0 station -name B41@B41
+
+endscrap
+
+

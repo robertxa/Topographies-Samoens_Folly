@@ -85,6 +85,8 @@ layout my_layout
 	symbol-hide special scale-bar
 	symbol-show line wall
 	#symbol-show point entrance
+
+	map-header 0 0 off
 	
 	layers on
   
@@ -97,3 +99,5 @@ endlayout
 # Export des fichiers pdf, plan et coupe. 
 select MP-JB-plan-tot@Jean-Bernard
  export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan20000.pdf -layout my_layout
+select MP-JB-coupe-tot@Jean-Bernard 
+export map -projection extended -fmt pdf -o Outputs/2D/jb-Xav-2020-coupe20000.pdf -layout my_layout

@@ -40,12 +40,13 @@ layout my_layout
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	map-comment "<it>Plan<ss> - Samoëns, 74, France"
+	#map-comment "<it>Plan<ss> - Samoëns, 74, France"
+	map-comment "Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 14.5 cm
+	legend-width 15 cm
 	#map-header 0 00 nw
 	map-header 0 00 nw
 
@@ -71,7 +72,10 @@ layout my_layout
 		\cavelength{8\thinspace{}m}
 		\cavedepth{-6\thinspace{}m}
 	endcode  
-  
+
+# add extended-elev on the same pdf
+ map-image 150 120 nw Outputs/B41-coupeEV.pdf
+ 
 endlayout
  
   
@@ -101,7 +105,8 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 50 80 ne
+	#map-header 50 80 ne
+	map-header 50 80 off
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -127,35 +132,10 @@ layout my_layout-coupe
 
 endlayout
 
-
-layout my_layout-Continuations
-	copy my_layout
-	copy layoutcontinuation	# Pour afficher le label des continuations
-endlayout
-
-layout my_layout-coupe-Continuations
-	copy my_layout-coupe
-	copy layoutcontinuation	# Pour afficher le label des continuations
-endlayout
-
- 
-  
-#export map -fmt xvi -layout xviexport -o Data/B41-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/B41-coupe.xvi
-
 # Select maps
 	select MP-B41-plan-tot@B41
 	select MC-B41-coupe-tot@B41
-	  
-export map -o Outputs/B41-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/B41-coupe.pdf
-#export map -o Outputs/B41-plan-Continuations.pdf -layout my_layout-Continuations
-#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/B41-coupe-Continuations.pdf
 
-#export model -o Outputs/B41.lox
-  
-# Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/B41 -layout my_layout
-  
-# Export kml files
-export map -proj plan -fmt kml -o Outputs/B41.kml -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/B41-coupeEV.pdf	  
+export map -o Outputs/B41-EV.pdf -layout my_layout
+

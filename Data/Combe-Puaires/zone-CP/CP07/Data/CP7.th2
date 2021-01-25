@@ -73,6 +73,7 @@ point 53.75 78.5 altitude -align top-right
 line wall -subtype invisible
   27.0 -6.75
   27.0 -6.75 39.25 -9.5 40.5 -4.0
+  smooth off
 endline
 
 line pit
@@ -152,6 +153,7 @@ line wall -subtype pit
   51.75 15.5
   51.75 15.5 49.25 24.5 44.75 26.0
   40.25 27.5 39.5 26.25 35.0 27.0
+  smooth off
 endline
 
 line wall
@@ -165,6 +167,7 @@ endline
 line wall
   71.75 7.5
   71.75 7.5 53.75 14.25 51.75 15.5
+  smooth off
 endline
 
 line wall
@@ -181,6 +184,7 @@ line wall
   15.0 30.5 13.5 27.25 15.0 24.25
   16.5 21.25 13.75 22.25 17.0 20.5
   20.25 18.75 17.0 16.0 20.5 13.5
+  smooth off
 endline
 
 line wall -outline none -subtype pit
@@ -202,6 +206,7 @@ line wall -outline none -subtype pit
   35.0 27.0
   35.0 27.0 29.75 24.25 27.25 21.0
   24.75 17.75 20.75 15.5 20.5 13.5
+  smooth off
 endline
 
 line pit
@@ -227,6 +232,8 @@ point 19.25 58.75 air-draught -orientation 325.2 -subtype summer
 
 point 0.25 63.0 label -text "<bf>CP7" -scale xl
 
+point 13.0 83.25 u:symbol_plan
+
 point 9.75 44.0 entrance -orientation 149.3
 
 line wall -subtype pit
@@ -234,6 +241,7 @@ line wall -subtype pit
   24.0 11.0 26.25 5.75 28.25 5.75
   30.25 5.75 32.75 4.25 36.5 5.75
   40.25 7.25 42.75 10.5 47.0 9.0
+  smooth off
 endline
 
 point 61.1832 7.168600000000005 station -name 8
