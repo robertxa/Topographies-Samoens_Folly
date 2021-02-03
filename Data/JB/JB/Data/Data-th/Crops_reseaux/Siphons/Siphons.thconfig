@@ -122,5 +122,7 @@ layout my_layout-coupe
  #export map -fmt xvi -layout xviexport -o Data/siphons-2003.xvi
  #export map -projection extended -fmt xvi -layout xviexport -o Data/siphons-coupe-2003.xvi
   
- export map  -projection plan -o Outputs/siphon-2020-plan.pdf -layout my_layout
+ export map -projection plan -o Outputs/siphon-2020-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/siphon-2020-coupe.pdf
+
+ export model -o Outputs/siphon-2020.lox

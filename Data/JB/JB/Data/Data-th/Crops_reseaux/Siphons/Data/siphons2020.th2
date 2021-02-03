@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -5968 8391 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -140.0 -5968 8391 148.0
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} ../Carnet-topo/plan2020.gif 0 {}
 
 
@@ -10,6 +10,20 @@ scrap siphons2020-SP1 -projection plan -author 2020 "Stéphane Lips" -author 202
 point 2941.0 -2981.0 label -text "environ 200 m non topo."
 
 point 2940.0 -2884.0 label -text "galerie des Topographes Dépouillées"
+
+point 1160.0 -3156.0 passage-height -value [1.5 m] -visibility off
+
+point 1648.0 -3288.0 passage-height -value [1.5 m] -visibility off
+
+point 1880.0 -2904.0 passage-height -value [1.5 m] -visibility off
+
+point 2540.0 -2924.0 passage-height -value [1.5 m] -visibility off
+
+point 3184.0 -2576.0 passage-height -value [1.5 m] -visibility off
+
+point 3640.0 -2320.0 passage-height -value [1.5 m] -visibility off
+
+point 4068.0 -2332.0 passage-height -value [1.5 m] -visibility off
 
 line wall -subtype unsurveyed
   1651.0 -3136.0
@@ -42,6 +56,7 @@ line wall -subtype clay
   1593.0 -3141.0
   1593.0 -3141.0 1599.0 -3117.0 1620.0 -3117.0
   1641.0 -3117.0 1644.0 -3121.0 1640.0 -3135.0
+  smooth off
 endline
 
 line wall -subtype clay
