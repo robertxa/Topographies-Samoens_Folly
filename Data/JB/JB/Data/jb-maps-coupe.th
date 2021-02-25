@@ -467,6 +467,12 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	MC-V4
 endmap
 
+map MC-Solitaire-tot -title "Réseau du Solitaire"
+	MC-solitaire
+	break
+	MC-oeufs
+endmap
+
 map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
 	MC-rivieredebut
 	break

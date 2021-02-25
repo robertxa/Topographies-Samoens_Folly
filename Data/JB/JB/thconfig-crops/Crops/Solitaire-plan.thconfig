@@ -75,7 +75,7 @@ layout my_layout
 	# employee, comme c'est le cas apres avoir dessine la topo
 	# sur un cheminement exporte avec le layout "xviexport"
 	# (voir en bas)
-	base-scale 1 500
+	base-scale 1 1000
 
 	# Maitenant on va mettre une ligne "scale" pour specifier l'echelle
 	# pour imprimer la topo. La combination entre scale et base-scale
@@ -87,10 +87,10 @@ layout my_layout
 	# l'imprimante ne specifie pas l'option "Fit in page"
 	# ou similaire, sinon, l'echelle sera change pendant
 	# l'impression! 
-	scale 1 500
+	scale 1 1000
 
 	# echelle graphique 100 m ampleur
-	scale-bar 50 m
+	scale-bar 100 m
 	#scale-bar 500 m
 
 	# Voici une ligne pour specifier qu'il faut imprimer une grille
@@ -135,7 +135,7 @@ layout my_layout
 	#map-header 5 50 e
 	#map-header 25 35 se
 	#map-header 53 0 sw
-	map-header 100 100 nw
+	map-header 30 35 nw
 
 	# arrière plan de la manchette
 	map-header-bg off
@@ -147,8 +147,8 @@ layout my_layout
 	legend off
 
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 15 cm
-	#legend-width 23 cm
+	#legend-width 15 cm
+	legend-width 20 cm
 
 	# Un commentaire a ajounter au titule, on pourrait indiquer ici
 	# la mairie ou est place la cavite dont le nom est probablement
@@ -205,7 +205,8 @@ layout my_layout
 	
 	# Add logos to the map
 	#map-image 0 100 sw ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf
-	map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
+	#map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
+	map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -227,7 +228,7 @@ layout my_layout-coupe
 	# employee, comme c'est le cas apres avoir dessine la topo
 	# sur un cheminement exporte avec le layout "xviexport"
 	# (voir en bas)
-	base-scale 1 500
+	base-scale 1 1000
 
 	# Maitenant on va mettre une ligne "scale" pour specifier l'echelle
 	# pour imprimer la topo. La combination entre scale et base-scale
@@ -239,10 +240,10 @@ layout my_layout-coupe
 	# l'imprimante ne specifie pas l'option "Fit in page"
 	# ou similaire, sinon, l'echelle sera change pendant
 	# l'impression! 
-	scale 1 500
+	scale 1 1000
 
 	# echelle graphique 100 m ampleur
-	scale-bar 50 m
+	scale-bar 250 m
 	#scale-bar 500 m
 
 	# Voici une ligne pour specifier qu'il faut imprimer une grille
@@ -285,7 +286,9 @@ layout my_layout-coupe
 	#map-header 0 100 nw
 	#map-header 5 50 e
 	#map-header 25 35 se
-	map-header -5 100 nw
+	#map-header -5 100 nw
+	#map-header 0 100 nw
+	map-header 30 0 sw
 	#map-header 53 0 off
 
 	# arrière plan de la manchette
@@ -298,8 +301,8 @@ layout my_layout-coupe
 	legend off
 
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 15.5 cm
-	#legend-width 23 cm
+	#legend-width 15.5 cm
+	legend-width 28 cm
 
 	# Un commentaire a ajounter au titule, on pourrait indiquer ici
 	# la mairie ou est place la cavite dont le nom est probablement
@@ -354,7 +357,8 @@ layout my_layout-coupe
 		
 	endcode   
 	
-	map-image 50 0 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-coupe20000.pdf
+	#map-image 30 20 sw ../../Outputs/2D/jb-Xav-2020-coupe20000-Solitaire.pdf
+	map-image 00 100 nw ../../Outputs/2D/jb-Xav-2020-coupe20000-Solitaire.pdf
 
 endlayout
 # Fin de la definition du Layout "normal"
@@ -384,9 +388,10 @@ endlayout
 #select JB-plan-tot@Jean-Bernard
 #select M-sezhommes@Jean-Bernard
 #select  MP-Jean-Dupond@Jean-Bernard
-#select  MP-Solitaire-tot@Jean-Bernard
-select  MP-oeufs@Jean-Bernard
-select  MC-oeufs@Jean-Bernard
+select  MP-Solitaire-tot@Jean-Bernard
+select MC-Solitaire-tot@Jean-Bernard
+#select  MP-oeufs@Jean-Bernard
+#select  MC-oeufs@Jean-Bernard
 
-export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf -layout my_layout-coupe
-export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-plan1000.pdf -layout my_layout
+export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-tot-coupe1000.pdf -layout my_layout-coupe
+export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-tot-plan1000.pdf -layout my_layout
