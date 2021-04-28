@@ -153,8 +153,8 @@ layout my_layout
   
   	# Dessin ou pas du cheminement topo
 	symbol-hide line survey
-  symbol-hide point u:sumbol_plan
-  symbol-hide point u:sumbol_extend
+  symbol-hide point u:symbol_plan
+  symbol-hide point u:symbol_extend
 
   # Un commentaire a ajouter au titule, on pourrait indiquer ici
   # la mairie ou est place la cavite dont le nom est probablement
@@ -210,14 +210,15 @@ select MP-Folly-tot@MassifFolly
  export map -projection plan -fmt pdf -o Outputs/2D/Folly-2020-plan-IGN.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
- export model -o Outputs/3D/Folly-tot-IGN-2020.lox
-# export model -o Outputs/3D/Folly-tot-Xav-20189.3d
+ export model -o Outputs/3D/Folly-tot-IGN-2021.lox
+# export model -o Outputs/3D/Folly-tot-Xav-2021.3d
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2020 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2021 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Folly-tot-2019.kml -layout my_layout
+# export map -proj plan -fmt kml -o Outputs/Folly-tot-2021.kml -layout my_layout
+# export model -fmt kml -o Outputs/Folly-tot-2021-model.kml -layout my_layout
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité

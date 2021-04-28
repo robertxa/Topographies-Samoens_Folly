@@ -85,7 +85,7 @@ endscrap
 
 scrap SP-CP-2-2020 -projection plan -station-names "" "@trousCP" -scale [3036.2900000000004 1760.03 13134.79 1760.03 0.0 0.0 256.5019 0.0 m]
 
-point 7002.0 5806.0 label -text "<bf>CP40" -scale xl
+#point 7002.0 5806.0 label -text "<bf>CP40" -scale xl
 
 #point 7561.5 5213.0 label -text "<bf>CP29" -scale xl
 
@@ -111,11 +111,11 @@ point 7389.0 4902.5 entrance -orientation 182.2
 
 #point 7561.5 5196.0 entrance -orientation 182.2
 
-point 7002.5 5788.5 entrance -orientation 182.2
+#point 7002.5 5788.5 entrance -orientation 182.2
 
 #point 7560.9800000000005 5185.75 station -name CP29
 
-point 7002.04 5777.8 station -name CP40
+#point 7002.04 5777.8 station -name CP40
 
 point 7388.46 4891.54 station -name CP27
 
@@ -213,9 +213,9 @@ scrap SP-CP-6-2020 -projection plan -station-names "" "@trousCP" -scale [3036.29
 
 #point 9894.37 5788.389999999999 station -name CP58
 
-point 8741.0 6410.5 entrance -orientation 356.3
+#point 8741.0 6410.5 entrance -orientation 356.3
 
-point 8787.0 6468.5 entrance -orientation 182.2
+#point 8787.0 6468.5 entrance -orientation 182.2
 
 #point 8950.0 6434.0 entrance -orientation 182.2
 
@@ -231,15 +231,15 @@ point 9408.5 5572.0 label -text "<bf>CP56" -scale xl
 
 #point 9251.0 5699.5 label -text "<bf>CP55" -scale xl
 
-point 8891.5 5956.5 label -text "<bf>CP36" -scale xl
+#point 8891.5 5956.5 label -text "<bf>CP36" -scale xl
 
 #point 9071.0 6110.5 label -text "<bf>CP18" -scale xl
 
 #point 8949.0 6448.5 label -text "<bf>CP11" -scale xl
 
-point 8786.5 6486.5 label -text "<bf>CP38" -scale xl
+#point 8786.5 6486.5 label -text "<bf>CP38" -scale xl
 
-point 8741.0 6395.0 label -text "<bf>CP37" -scale xl
+#point 8741.0 6395.0 label -text "<bf>CP37" -scale xl
 
 #point 8891.0 5940.0 entrance -orientation 182.2
 
@@ -269,13 +269,13 @@ point 9408.18 5600.43 station -name CP56
 
 #point 9071.49 6085.16 station -name CP18
 
-point 8890.62 5929.92 station -name CP36
+#point 8890.62 5929.92 station -name CP36
 
-point 8786.53 6458.11 station -name CP38
+#point 8786.53 6458.11 station -name CP38
 
 #point 8949.960000000001 6424.25 station -name CP11
 
-point 8739.880000000001 6422.639999999999 station -name CP37
+#point 8739.880000000001 6422.639999999999 station -name CP37
 
 endscrap
 
