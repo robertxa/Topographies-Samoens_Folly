@@ -1,0 +1,112 @@
+encoding  utf-8
+
+# 2021.06.22 created by TopoDroid v 5.1.54
+
+# Copyright (C) 2021 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CP78 -title "CP78" -entrance "CP78"
+
+  centerline
+    cs lat-long
+	  fix CP78 46.118303	6.794435	2082
+
+    explo-date 2021.06.19
+      explo-team "Xavier Robert"
+      explo-team "Constance Picque"
+    date 2021.06.19 
+      team "Xavier Robert"
+      team "Constance Picque"
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    # La station 0 est sur le premier palier, au bord de la doline ;
+    0 . 2.35 136.9 -1.6
+    0 . 2.48 103.4 -3.5
+    0 . 1.14 85.7 0.5
+    0 . 0.67 57.1 -11.8
+    0 . 1.24 38.1 -69.6
+    0 . 2.10 124.4 -69.6
+    0 . 3.37 118.6 -31.8
+    0 . 5.36 153.4 -40.4
+    0 . 7.23 136.1 -50.4
+    0 . 1.76 176.1 -48.4
+    0 . 3.13 161.2 -68.7
+    0 . 1.75 176.9 3.6
+    0 . 1.13 290.8 -17.0
+    0 . 1.27 0.7 1.3
+    0 . 2.90 329.9 -0.1
+    0 . 6.78 152.2 -64.2
+    0 . 7.47 132.8 -70.8
+    0 . 7.01 119.7 -63.6
+    0 . 4.36 113.4 -53.3
+    0 . 11.65 127.2 -64.3
+    extend right
+    0 1 11.85 125.9 -67.6 # La station 1 est au fond du puits d'entrée, au sol sur les cailloux
+    extend left
+    0 CP78 3.86 344.4 26.2 # La vraie entrée du gouffre !
+    # extend auto
+    CP78 . 5.27 160.1 -17.7
+    CP78 . 3.37 145.7 -11.1
+    CP78 . 8.43 245.3 -12.3
+    CP78 . 8.26 209.5 -13.1
+  endcenterline
+
+centerline
+    date 2021.06.26 
+      team "Xavier Robert"
+      team "Frédéric Gennerat"
+    explo-date 2021.06.26 
+      explo-team "Xavier Robert"
+      explo-team "Frédéric Gennerat"
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    # Station 3 est le fond du gouffre, salle colmatée par une trémie, pas de courant d'air
+    3 . 1.95 280.3 -78.3
+    3 . 0.94 258.7 -34.5
+    3 . 2.01 221.7 -28.3
+    3 . 2.02 190.4 -23.7
+    3 . 2.63 167.0 -25.4
+    3 . 1.62 139.9 -30.7
+    3 . 2.92 147.3 45.3
+    3 . 7.08 181.5 79.2
+    3 . 1.93 246.7 57.9
+    3 . 3.81 237.5 20.0
+    3 . 4.14 215.6 11.8
+    3 . 4.10 194.3 25.0
+    3 . 5.96 205.0 27.7
+    3 . 6.39 212.1 61.5
+    3 . 10.30 214.1 55.6
+    3 . 9.05 217.2 39.5
+    3 . 6.74 222.2 36.2
+    extend left
+    3 1 6.66 214.2 19.8
+    # extend auto
+    1 . 0.86 314.2 -7.3
+    1 . 0.44 174.6 -4.4
+    1 . 7.09 52.3 -21.6
+    1 . 6.28 52.1 5.3
+    1 . 6.18 51.9 28.0
+    1 . 9.39 49.6 33.6
+    1 . 3.90 28.5 22.9
+    1 . 2.01 81.7 28.2
+    1 . 1.56 310.7 31.3
+    1 . 2.20 214.9 70.7
+    1 . 7.39 232.7 82.4
+    1 . 5.40 21.3 81.9
+    1 . 2.11 353.9 63.4
+    1 . 1.30 250.8 19.9
+    1 . 0.47 267.0 44.5
+    1 . 3.58 279.4 66.8
+    1 . 7.97 247.8 76.7
+    1 . 9.48 276.8 79.7
+    1 . 8.32 286.0 68.6
+    extend right
+    1 2 9.69 53.2 30.9  # Départ en hauteur, non atteint, mais revient vers la surface, probablement peu intéressant
+  endcenterline
+
+endsurvey
