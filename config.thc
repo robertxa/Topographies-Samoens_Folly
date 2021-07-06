@@ -1438,20 +1438,20 @@ layout drawingconfig
 		#     A adapter en fonction de la couleur de vos galeries
 		def a_u_galerie(expr P) =
 			T:=identity;
-			# jaune chamois (208, 192, 122)
-			thfill P withcolor (0.82,0.75,0.48) withtransparency 0.5;
-			#thfill P withcolor (0.82,0.75,0.48) withalpha 0.5;
+			## jaune chamois (208, 192, 122)
+			##thfill P withcolor (0.82,0.75,0.48) withtransparency 0.5;
+			thfill P withcolor (0.82,0.75,0.48) withalpha 0.5;
 
-			# Grey
-			#thfill P withcolor (0.73,0.72,0.75) withtransparency 0.5;
+			## Grey
+			##thfill P withcolor (0.73,0.72,0.75) withtransparency 0.5;
 			#thfill P withcolor (0.73,0.72,0.75) withalpha 0.5;
 
-			# Jaune queue de vache (168, 152, 116)
-			#thfill P withcolor (0.66,0.60,0.45) withtransparency 0.5;
+			## Jaune queue de vache (168, 152, 116)
+			##thfill P withcolor (0.66,0.60,0.45) withtransparency 0.5;
 			#thfill P withcolor (0.66,0.60,0.45) withalpha 0.5;
 
-			# gris argile (239, 239, 239)
-			#thfill P withcolor (0.937,0.937,0.937) withtransparency 0.5;
+			## gris argile (239, 239, 239)
+			##thfill P withcolor (0.937,0.937,0.937) withtransparency 0.5;
 			#thfill P withcolor (0.937,0;937,0.937) withalpha 0.5;
 		enddef;
 		
