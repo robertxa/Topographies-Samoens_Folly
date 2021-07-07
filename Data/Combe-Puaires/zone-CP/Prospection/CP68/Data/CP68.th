@@ -16,7 +16,10 @@ survey CP68 -title "CP68"
 			explo-team "Max Pinard"
 			explo-team "Frédéric Alvarez"
 		
-		data normal from to length azimuth slope left rigt up down
+		units length meters
+    	units compass clino degrees
+
+		data normal from to length compass clino left right up down
 		CP68	0	0	0	0	0	0.5	0	3	# Entrée
 		CP68	1	6.02	359	-60	0.3	0.3	3	0	# Colmatage de blocs, rivière, courant d'air soufflant
   
