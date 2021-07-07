@@ -172,7 +172,9 @@ layout my_layout
   layers on
 
 	# Dessin ou pas du cheminement topo
-	symbol-hide line survey  
+	symbol-hide line survey
+  symbol-hide point u:symbol_plan
+  symbol-hide point u:symbol_extend  
                 
 # Titre                         
     code tex-map
