@@ -1,6 +1,6 @@
 # 2020.07.16 created by TopoDroid v 5.0.4c
 
-survey solitaire2020a -title "Solitaire 2020"
+survey solitaire2020a -title "Méandre des Oeufs"
 # Suite de l'affluent remontant à partir du carrefour de Daniel. Méandre des Oeufs
 # Topo en remontant.
 
@@ -8,7 +8,7 @@ survey solitaire2020a -title "Solitaire 2020"
     date 2020.07.15
     	team "Gaëtan Poschmann" 
     	team "Xavier Robert"
-	explo-date 2020.07.15
+	  explo-date 2020.07.15
     	explo-team "Gaëtan Poschmann" 
     	explo-team "Xavier Robert"
     	explo-team "Frédéric Delègue"
@@ -604,13 +604,30 @@ survey solitaire2020a -title "Solitaire 2020"
     38 . 16.74 250.4 78.4
     38 . 13.63 185.2 86.8
     extend right
+    #flags duplicate
     38 39 14.39 250.7 72.3
+    #flags not duplicate
+
+    # dev : 205 m
+
   endcenterline
 
-  # input "jb_solitaire-1p.th2"
+  #centerline 
+    # Topo à refaire, les données de pente n'ont pas été levée par manque de matériel adéquat...
+  #  date 2021.07.12
+  #  	team "Clément Baudy" 
+  #  	team "Antoine Aigueperse"
+	#  explo-date 2021.07.12
+  #  	explo-team "Clément Baudy" 
+  #  	explo-team "Antoine Aiguiperse"
+    
+  #  units length meters
+  #  units compass clino degrees
+  #  data normal from to length compass clino
+  #  2021-1  37  12.3  122 ?
+  #  2021-1  2021-2  6 252 ?
 
-  # map m1p -projection plan
-  #   jb_solitaire-1p
-  # endmap
+  #endcenterline
+  
 
 endsurvey

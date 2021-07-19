@@ -1,0 +1,17 @@
+encoding utf-8
+
+# Copyright (C) 2020 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CP79 -title "CP79"
+	input Data/CP79.th
+
+	# pour le plan
+	#input Data/CP79.th2
+	#input Data/CP79EV.th2
+	# Pour la coupe et le plan
+	#input Data/CP79-coupe.th2
+
+	#input CP79-maps.th
+endsurvey
