@@ -11,9 +11,9 @@ survey V0 -title "V0"
 	equate V12@V0 V12@V12
 
 	# pour le plan
-	#input Data/V0.th2
+	input Data/V0.th2
 	# Pour la coupe et le plan
-	#input Data/V0-coupe.th2
-
-	#input V0-maps.th
+	input Data/V0-coupe.th2
+	
+	input V0-maps.th
 endsurvey

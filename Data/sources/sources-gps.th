@@ -8,6 +8,8 @@ encoding  utf-8
 survey sources -title "Résurgences du massif du Folly"
 
 # Fichier contenant les positions des entrées de la zone B, Samoens, France
+# Attention, les coordonnées ont été prises pour la plupart directement sous Google Earth,
+# elles sont approximatives et devraient être repises en détails
 
  centerline -extend right
 cs long-lat
@@ -22,8 +24,8 @@ fix R-EF 6.7671	46.1007 1495 #ALT IGN
 #fix R-Fontaines 6.739244725649069 46.09078683978262	766 #ALT APPROX ! 
 #fix R-Mirolda 6.739536010689617 46.07875465444135	714 #ALT APPROX ! 
 
-station R-JB "Résurgence du Gouffre Jean Bernard" entrance spring
-station R-Ermoy "Résurgence de la grotte de l'Ermoy'" entrance spring
+station R-JB "Résurgence du Gouffre Jean-Bernard" entrance spring
+station R-Ermoy "Résurgence de la grotte de l'Ermoy" entrance spring
 station R-Tuet "Résurgences temporaires du Tuet" entrance spring
 station R-Allamands "Résurgence des Allamands" entrance spring
 station R-EF "Résurgence des Eaux Froides" entrance spring

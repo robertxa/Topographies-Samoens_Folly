@@ -14,7 +14,7 @@ survey V12 -title "V12" -entrance "V12"
     explo-date 2021.06.20
       explo-team "Constance Picque"
       explo-team "Xavier Robert"
-      explo-team "Khalid "
+      explo-team "Khalid Bouziani"
 
     explo-date 2021.06.27
       explo-team "Constance Picque"
@@ -107,9 +107,9 @@ survey V12 -title "V12" -entrance "V12"
     4 . 6.46 297.8 -74.1
     4 . 3.59 318.6 32.5
     4 . 3.75 318.3 32.5
-    extend left
-    4 5 3.43 318.3 32.2 # Visée dans le méandre impénétrable qui sort dans le joint de strate
     extend right
+    4 5 3.43 318.3 32.2 # Visée dans le méandre impénétrable qui sort dans le joint de strate
+    extend left
     4 6 3.36 27.9 5.7 # Base du ressaut d'entrée
     # extend auto
     6 . 0.27 242.5 -0.4
@@ -124,7 +124,7 @@ survey V12 -title "V12" -entrance "V12"
     6 . 1.45 127.2 41.8
     6 . 1.13 310.2 77.8
     6 . 1.09 66.7 77.2
-    extend right
+    extend left
     6 V12 2.61 12.0 80.5  # Entrée du V12
     # extend auto
     V12 . 1.67 100.8 -5.1

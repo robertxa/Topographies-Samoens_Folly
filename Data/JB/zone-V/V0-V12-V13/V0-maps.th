@@ -1,14 +1,22 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2021 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-V0-plan-tot -title "V0"
+map MP-V0-plan-tot -title "V0 - V12 - V13"
+	SP-V12-1
+	break
+	SP-V0-2
+	break
 	SP-V0-1
+	break
+	SP-V12-2
 endmap
 
-map MC-V0-coupe-tot -title "V0"
+map MC-V0-coupe-tot -title "V0 - V12 - V13"
+	SC-V12-1
+	break
 	SC-V0-1
 endmap
    

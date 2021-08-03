@@ -10,11 +10,11 @@ source V0-tot.th
 input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../../../../config.thc 
+input ../../../../config.thc 
   
 layout xviexport
-	scale 1 1000
-	grid-size 10 10 10 m
+	scale 1 500
+	grid-size 5 5 5 m
 	grid bottom
 endlayout
   
@@ -137,8 +137,8 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/V0-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/V0-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/V0-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/V0-coupe.xvi
 
 # Select maps
 	select MP-V0-plan-tot@V0

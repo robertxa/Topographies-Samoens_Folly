@@ -47,10 +47,10 @@ layout Coords_Header_JBCHpra
 				{\size[\thsizem]\hskip2cm \ss\thlocationJBCHpra\vss}	% The first one should be without hskip
 			\fi
 			\edef\tmp{\thlocationJBCHprb} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBCHprb\vss}
+				{\size[\thsizem]\hskip2cm \ss\thlocationJBCHprb\vss}
 			\fi
 			\edef\tmp{\thlocationJBCHprc} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBCHprc\vss}
+				{\size[\thsizem]\hskip2cm \ss\thlocationJBCHprc\vss}
 			\fi
 		}
 	endcode

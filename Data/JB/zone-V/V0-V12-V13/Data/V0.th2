@@ -1,0 +1,458 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.75 -186.8515 260.25 207.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.614599999999996 1 1.0} {58.841499999999996 0@V0.V0} V0-map.xvi 0 {}
+
+
+
+scrap SP-V0-1 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+area debris
+  l9-35-68
+endarea
+
+line label -id l9-35-68 -close on
+  21.0 57.75
+  10.25 44.5
+  13.0 40.5
+  51.5 50.25
+  65.5 64.25
+  64.25 67.75
+  62.5 74.25
+  35.5 69.0
+  21.0 57.75
+endline
+
+point 10.25 44.5 altitude -align top-left
+
+point 6.5 38.0 breakdown-choke -orientation 50.6
+
+line wall
+  62.5 74.25
+  62.5 74.25 48.5 65.0 45.25 64.75
+  42.0 64.5 36.5 66.5 33.75 62.75
+  31.0 59.0 10.25 44.5 10.25 44.5
+  smooth off
+endline
+
+line wall
+  13.0 40.5
+  13.0 40.5 30.25 52.75 34.0 53.5
+  37.75 54.25 44.0 55.75 46.5 54.0
+  49.0 52.25 51.25 53.25 55.75 58.0
+  60.25 62.75 64.25 69.5 64.25 67.75
+  smooth off
+endline
+
+point 39.6146 58.841499999999996 station -name 0@V0
+
+point 26.004600000000003 51.031499999999994 station -name 0b@V0
+
+endscrap
+
+
+
+scrap SP-V0-2 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+point 80.1046 28.841499999999993 station -name V0@V0
+
+point 67.5846 48.241499999999995 station -name 3@V0
+
+line wall
+  57.25 42.75
+  57.25 42.75 54.75 42.0 55.75 46.25
+  56.75 50.5 63.0 61.0 65.0 63.0
+  67.0 65.0 68.25 64.5 68.0 60.75
+  67.75 57.0 63.25 45.5 63.25 43.75
+  63.25 42.0 64.75 37.0 64.75 37.0
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  29.5 -8.75
+  29.5 -8.75 34.0 -8.0 38.75 -6.75
+  43.5 -5.5 39.75 -0.75 45.5 -0.5
+  51.25 -0.25 52.5 -0.5 57.25 -0.25
+  62.0 0.0 62.0 3.25 66.0 3.25
+  70.0 3.25 70.25 5.25 70.25 8.25
+  70.25 11.25 69.75 18.75 69.75 18.75
+  smooth off
+endline
+
+point 102.3446 16.051499999999994 station -name 7@V0
+
+point 97.9646 16.591499999999993 station -name 6@V0
+
+line pit
+  71.5 18.5
+  71.5 18.5 68.75 14.25 60.25 20.5
+  smooth off
+endline
+
+line pit
+  56.0 -4.5
+  56.0 -4.5 58.5 1.75 48.0 5.25
+  smooth off
+endline
+
+line pit
+  34.25 -10.5
+  34.25 -10.5 36.5 -4.75 32.25 -1.5
+  smooth off
+endline
+
+point 25.25 13.75 label -text "<bf>V13" -scale xl
+
+point 71.25 25.0 entrance -orientation 206.5
+
+line wall -subtype unsurveyed
+  65.75 19.25
+  65.75 19.25 65.75 9.5 64.0 8.25
+  62.25 7.0 54.75 5.0 51.25 4.0
+  47.75 3.0 28.0 -4.0 28.0 -4.0
+  smooth off
+endline
+
+point -0.5 -18.5 air-draught -orientation 56.7 -subtype summer
+
+line wall -subtype invisible
+  28.0 -4.0
+  29.5 -8.75
+endline
+
+line wall -subtype invisible
+  64.75 37.0
+  64.75 37.0 79.5 39.75 89.0 35.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  69.75 18.75
+  65.75 19.25
+endline
+
+point 22.5 -7.75 continuation -attr Reseau "Jean-Bernard" -attr Code D -attr Cavite "V13" -attr CA "Courant d'air soufflant froid" -text "méandre étroit à désobstruer, suite visible"
+
+line rock-border -close on -clip off -place top
+  64.75 16.5
+  60.75 16.5
+  60.75 16.5 60.25 12.0 61.25 12.0
+  62.25 12.0 66.25 12.5 66.25 12.5
+  smooth off
+  64.75 16.5
+endline
+
+line rock-border -close on -clip off -place top
+  72.75 22.5
+  67.75 23.75
+  67.75 20.5
+  73.0 20.25
+  72.75 22.5
+endline
+
+line rock-border -close on -clip off -place top
+  80.5 18.0
+  76.0 17.5
+  77.5 13.25
+  82.25 14.25
+  80.5 18.0
+endline
+
+line rock-border -close on -clip off -place top
+  72.75 18.0
+  67.5 15.0
+  67.5 15.0 68.25 11.0 70.25 11.0
+  72.25 11.0 75.5 12.75 75.5 12.75
+  smooth off
+  72.75 18.0
+endline
+
+line rock-border -close on
+  74.75 50.25
+  70.0 49.5
+  70.0 44.75
+  77.25 45.25
+  74.75 50.25
+endline
+
+line ceiling-step -clip off
+  89.0 35.0
+  89.0 35.0 72.75 40.5 64.75 37.0
+  smooth off
+endline
+
+line ceiling-step -clip off
+  85.0 17.25
+  85.0 17.25 93.25 18.75 93.25 22.25
+  93.25 25.75 91.0 31.0 91.0 31.0
+  smooth off
+endline
+
+line ceiling-step -clip off
+  117.25 14.75
+  117.25 14.75 119.5 20.5 121.0 20.75
+  122.5 21.0 128.0 26.75 122.5 27.75
+  117.0 28.75 108.75 23.75 103.0 26.25
+  97.25 28.75 89.0 35.0 89.0 35.0
+  smooth off
+endline
+
+line ceiling-step -clip off
+  64.75 37.0
+  64.75 37.0 68.0 27.5 65.75 25.0
+  63.5 22.5 62.5 17.75 63.5 16.0
+  64.5 14.25 64.0 6.75 68.75 6.25
+  73.5 5.75 85.25 9.75 90.25 10.25
+  95.25 10.75 101.5 11.5 101.5 11.5
+  smooth off
+endline
+
+point 49.5 39.25 entrance -orientation 27.6
+
+line pit
+  60.25 65.75
+  60.25 65.75 65.25 64.25 65.5 60.5
+  smooth off
+endline
+
+line pit
+  47.5 48.75
+  47.5 48.75 56.5 47.5 57.75 45.0
+  smooth off
+endline
+
+line pit
+  52.75 54.5
+  52.75 54.5 60.25 55.5 60.25 52.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  42.75 47.5
+  42.75 47.5 50.0 38.75 57.25 42.75
+  smooth off
+endline
+
+point 109.5 53.25 label -text "<bf>V0" -scale xl
+
+point 77.0 34.75 entrance -orientation 324.8
+
+point 91.5 63.25 label -text "R3"
+
+line pit
+  62.5 48.75
+  62.5 48.75 73.75 55.0 80.25 51.5
+  smooth off
+endline
+
+line pit -reverse on
+  76.25 60.25
+  76.25 60.25 73.75 64.25 68.0 60.75
+  smooth off
+endline
+
+point 89.0 35.0 altitude -align top-right
+
+line wall
+  89.0 35.0
+  89.0 35.0 85.0 40.5 81.5 45.0
+  78.0 49.5 74.25 55.25 73.75 58.75
+  73.25 62.25 71.5 63.5 74.0 68.25
+  76.5 73.0 81.0 79.0 74.75 78.5
+  68.5 78.0 62.5 74.25 62.5 74.25
+  smooth off
+endline
+
+line wall
+  64.25 67.75
+  64.25 67.75 62.5 65.75 59.75 62.25
+  57.0 58.75 49.5 47.0 47.75 47.5
+  46.0 48.0 42.75 47.5 42.75 47.5
+  smooth off
+endline
+
+point 71.4246 76.79149999999998 station -name 1@V0
+
+point 53.324600000000004 47.781499999999994 station -name 2@V0
+
+endscrap
+
+
+
+scrap SP-V12-2 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+line wall
+  82.0 -37.5
+  82.0 -37.5 78.25 -13.25 80.25 -16.25
+  82.25 -19.25 82.0 -24.25 85.0 -22.75
+  88.0 -21.25 88.5 -16.75 88.5 -16.75
+  smooth off
+endline
+
+point 78.0 -37.0 altitude -align bottom-left
+
+point 49.75 17.25 altitude -align top-left
+
+line pit
+  73.25 -17.0
+  73.25 -17.0 79.75 -16.25 81.0 -20.0
+  smooth off
+endline
+
+line rock-border -close on
+  80.5 -1.75
+  78.5 -3.0
+  80.0 -6.0
+  82.0 -4.25
+  80.5 -1.75
+endline
+
+line rock-border -close on
+  78.25 -9.0
+  73.5 -9.75
+  75.75 -14.0
+  80.0 -13.5
+  78.25 -9.0
+endline
+
+line rock-border -close on
+  73.5 -0.75
+  69.75 -4.25
+  73.0 -6.25
+  75.0 -3.75
+  73.5 -0.75
+endline
+
+line border
+  60.25 1.75
+  60.25 1.75 66.75 0.5 66.75 -4.75
+  66.75 -10.0 65.0 -14.5 65.0 -14.5
+  smooth off
+endline
+
+point 80.5 -43.75 narrow-end
+
+point 46.25 13.75 continuation -attr Code D -attr Cavite "V12" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air soufflant en été" -text "Méandre étroit à agrandir, suite visible, écho, courant d'air"
+
+line wall
+  87.75 -10.25
+  87.75 -10.25 81.75 -8.75 82.75 -6.75
+  83.75 -4.75 85.5 -0.25 82.75 0.5
+  80.0 1.25 73.25 0.5 70.25 2.25
+  67.25 4.0 62.75 7.0 61.5 9.25
+  60.25 11.5 61.0 14.5 57.75 15.75
+  54.5 17.0 54.0 18.5 49.75 17.25
+  smooth off
+endline
+
+line wall
+  50.25 13.75
+  50.25 13.75 51.5 12.75 53.75 11.75
+  56.0 10.75 55.25 12.0 57.75 9.25
+  60.25 6.5 61.75 4.25 62.25 1.75
+  62.75 -0.75 60.5 -1.5 62.5 -4.75
+  64.5 -8.0 65.0 -5.75 67.5 -9.0
+  70.0 -12.25 73.5 -11.75 74.75 -15.25
+  76.0 -18.75 78.0 -37.0 78.0 -37.0
+  smooth off
+endline
+
+point 56.3146 14.451499999999994 station -name 1@V12
+
+point 68.0346 1.3614999999999924 station -name 0@V12
+
+point 79.6946 -35.06850000000001 station -name 3@V12
+
+point 76.3946 -4.458500000000004 station -name 2@V12
+
+endscrap
+
+
+
+scrap SP-V12-1 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+point 76.4646 4.061499999999995 station -name 5@V12
+
+point 90.3946 -14.05850000000001 station -name 4@V12
+
+point 117.25 14.75 altitude -align bottom-right
+
+point 131.0 34.25 label -text "<bf>V12" -scale xl
+
+point 113.5 -8.0 label -text "R3"
+
+point 92.75 -29.0 height -value [-7 m]
+
+point 104.0 -16.75 dig
+
+point 123.5 1.5 dig
+
+point 110.5 20.75 entrance -orientation 199.8
+
+point 74.25 10.25 entrance -orientation 163.4
+
+line pit
+  92.25 -19.5
+  92.25 -19.5 95.0 -14.5 91.0 -12.25
+  87.0 -10.0 87.75 -10.25 87.75 -10.25
+  smooth off
+endline
+
+line pit
+  101.25 -1.75
+  101.25 -1.75 108.5 6.5 106.25 8.0
+  104.0 9.5 98.25 7.75 98.25 7.75
+  smooth off
+endline
+
+line wall -subtype invisible
+  77.0 6.75
+  73.0 6.75
+endline
+
+line wall -subtype invisible
+  117.25 14.75
+  117.25 14.75 105.75 13.75 101.5 11.5
+  smooth off
+endline
+
+point 116.75 35.5 air-draught -orientation 14.1 -subtype summer
+
+line wall
+  88.5 -16.75
+  88.5 -16.75 92.5 -15.0 95.0 -11.25
+  97.5 -7.5 99.5 2.75 102.25 1.5
+  105.0 0.25 109.5 -2.5 110.25 0.75
+  111.0 4.0 112.5 13.75 117.25 14.75
+  smooth off
+endline
+
+line wall
+  73.0 6.75
+  73.0 6.75 75.25 3.0 77.25 1.0
+  79.25 -1.0 87.75 -10.25 87.75 -10.25
+  smooth off
+endline
+
+line pit -reverse on
+  84.25 -8.5
+  84.25 -8.5 88.5 -4.75 88.5 -2.75
+  smooth off
+endline
+
+line wall
+  101.5 11.5
+  101.5 11.5 102.0 9.5 101.5 8.25
+  101.0 7.0 94.05 -2.44 92.5 -3.75
+  86.0 -9.25 90.25 -7.0 85.75 -1.0
+  83.21 2.39 77.0 6.75 77.0 6.75
+  smooth off
+endline
+
+point 104.3646 8.251499999999995 station -name 6@V12
+
+point 105.3046 11.511499999999995 station -name V12@V12
+
+endscrap
+
+

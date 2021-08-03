@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2019-2021 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -46,7 +46,8 @@ map MP-zoneV
 	break
 	MP-A23-plan-tot@A23.prospectionV
 	break
-	MP-V0-plan-tot@V0.prospectionV
+	#MP-V0-plan-tot@V0.prospectionV
+	MP-V0-plan-tot@V0
 	break
 	MP-V8-plan-tot@V8.prospectionV
 	break
