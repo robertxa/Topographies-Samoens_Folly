@@ -1,17 +1,18 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 1838.8199999999997 6566.410000000001 16464.87 18436.56
+##XTHERION## xth_me_area_adjust -129.5 -129.5 11346.77 18042.86
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {3543.3100000000004 1 1.0} {8145.670000000001 R-JB} trousBmap2020.xvi 0 {}
 
 
 
-scrap SP-sources-2020 -projection plan -station-names "" "@sources" -scale [-128.0 -128.0 8002.0 -128.0 0.0 0.0 206.50199999999998 0.0 m]
+scrap SP-sources-2020 -projection plan -station-names "" "@sources" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 8002.0 -128.0 0.0 0.0 206.50199999999998 0.0 m]
 
 point 3523.0 8135.0 water-flow -orientation 238.8
 
-point 4734.0 12024.0 label -text "<center><bf>Résurgences<br>temporaires<br>du Tuet" -scale xl
+#point 4734.0 12024.0 label -text "<center><bf>Résurgences<br>temporaires<br>du Tuet" -scale xl
 
 #point 14971.029999999999 10350.71 spring -orientation 306.3
+
 
 point 10355.6 11244.84 station -name R-EF
 
@@ -25,6 +26,7 @@ point 10348.5 11258.0 water-flow -orientation 329.4
 
 #point 14930.5 10308.5 label -text "<center><bf>Résurgence des<br>la Cascade des<br>Eaux Froides"
 
+
 point 10337.5 11213.0 label -text "<center><bf>Résurgence des<br>Eaux Froides"
 
 point 6358.5 17018.5 label -text "<center><bf>Résurgence<br>captée"
@@ -35,25 +37,216 @@ point 6337.0 16959.5 water-flow -orientation 240.1
 
 point 6360.16 16968.97 station -name R-Allamands
 
-point 4790.87 12002.039999999999 spring -orientation 203.7
+#point 4790.87 12002.039999999999 spring -orientation 203.7
 
-point 4780.5 11978.5 water-flow -orientation 200.3 -subtype intermittent
+#point 4780.5 11978.5 water-flow -orientation 200.3 -subtype intermittent
 
-point 4920.0 9389.5 water-flow -orientation 315.6
+#point 4920.0 9389.5 water-flow -orientation 315.6
 
-point 4911.0 9439.0 label -text "<center><bf>Résurgence de<br>la grotte de l'Ermoy" -scale xl
+#point 4911.0 9439.0 label -text "<center><bf>Résurgence de<br>la grotte de l'Ermoy" -scale xl
 
-point 4929.7300000000005 9377.48 spring -orientation 321.9
+#point 4929.7300000000005 9377.48 spring -orientation 321.9
+
 
 point 3526.0 8184.0 label -text "<center><bf>Résurgence du<br>gouffre Jean-Bernard" -scale xl
 
+point 5269.0 10115.0 water-flow -orientation 282.7 -subtype intermittent
+
+point 5369.0 10142.0 water-flow -orientation 305.8 -subtype intermittent
+
+point 5696.0 11572.0 water-flow -orientation 174.9 -subtype intermittent
+
+point 5651.0 11574.0 water-flow -orientation 126.7 -subtype intermittent
+
+point 5671.0 11632.0 water-flow -orientation 181.9 -subtype intermittent
+
+point 5538.0 11639.0 water-flow -orientation 235.6 -subtype intermittent
+
+point 5478.0 11663.0 water-flow -orientation 235.6 -subtype intermittent
+
+point 5443.0 11743.0 water-flow -orientation 235.6 -subtype intermittent
+
+point 5365.0 11850.0 water-flow -orientation 235.6 -subtype intermittent
+
+point 5268.0 11926.0 water-flow -orientation 153.8 -subtype intermittent
+
+point 5060.0 11841.0 water-flow -orientation 240.2 -subtype intermittent
+
+point 4816.0 12015.0 water-flow -orientation 240.2 -subtype intermittent
+
+point 4774.0 12026.0 water-flow -orientation 159.1 -subtype intermittent
+
+point 4770.95 12034.100000000002 spring -orientation 145.7
+
+point 4822.3099999999995 12019.510000000002 spring -orientation 233.1
+
+point 5067.11 11846.220000000001 spring -orientation 233.1
+
+point 5264.45 11932.570000000002 spring -orientation 144.0
+
+point 5371.88 11855.110000000002 spring -orientation 230.6
+
+point 5451.07 11747.800000000001 spring -orientation 230.6
+
+point 5485.36 11668.030000000002 spring -orientation 230.6
+
+point 5542.55 11644.520000000002 spring -orientation 230.6
+
+point 5670.35 11640.910000000002 spring -orientation 188.8
+
+point 5644.28 11580.360000000002 spring -orientation 142.4
+
+point 5692.96 11578.980000000001 spring -orientation 165.3
+
+point 5374.97 10134.570000000002 spring -orientation 305.6
+
+point 5276.85 10111.080000000002 spring -orientation 305.6
+
+point 4001.0 8786.0 water-flow -orientation 310.8
+
+point 4522.0 9004.0 water-flow -orientation 243.9 -subtype intermittent
+
+point 4506.0 9028.0 water-flow -orientation 207.9 -subtype intermittent
+
+point 4331.0 8989.0 water-flow -orientation 237.3
+
+point 4363.5 8987.0 water-flow -orientation 264.4
+
+point 4932.0 9604.0 water-flow -orientation 234.9 -subtype intermittent
+
+point 5130.0 9830.0 water-flow -orientation 234.9 -subtype intermittent
+
+point 5130.0 9982.0 water-flow -orientation 234.9 -subtype intermittent
+
+point 5142.41 9987.930000000002 spring -orientation 245.6
+
+point 5141.11 9834.740000000002 spring -orientation 245.6
+
+point 4942.84 9608.340000000002 spring -orientation 213.7
+
+point 4374.0599999999995 8989.670000000002 spring -orientation 257.8
+
+point 4528.0 9012.0 spring -orientation 269.2
+
+point 4515.41 9033.820000000002 spring -orientation 250.4
+
+point 4337.55 8990.710000000003 spring -orientation 239.3
+
+point 5389.0 10119.0 air-draught -orientation 318.6 -subtype summer
+
+point 5557.5 11656.5 air-draught -orientation 233.9 -subtype summer -scale xs
+
+point 5388.0 11866.0 air-draught -orientation 233.9 -subtype summer
+
+point 4838.5 12030.0 air-draught -orientation 233.9 -subtype summer
+
+line pit -clip off
+  5369.0 11803.0
+  5369.0 11803.0 5357.0 11817.5 5359.5 11824.5
+  5362.0 11831.5 5374.0 11841.5 5374.5 11845.0
+  5375.0 11848.5 5380.5 11857.0 5373.5 11857.5
+  5366.5 11858.0 5362.0 11852.5 5354.0 11851.0
+  5346.0 11849.5 5335.0 11853.5 5332.0 11858.5
+  5329.0 11863.5 5324.0 11868.5 5324.0 11868.5
+  smooth off
+endline
+
+line pit -clip off
+  4819.0 12010.0
+  4819.0 12010.0 4826.5 12009.5 4824.5 12015.0
+  4822.5 12020.5 4822.5 12025.0 4816.5 12021.5
+  4810.5 12018.0 4808.0 12014.0 4808.0 12014.0
+  smooth off
+endline
+
+line pit -clip off
+  4792.0 12015.5
+  4792.0 12015.5 4778.0 12034.0 4774.5 12036.0
+  4771.0 12038.0 4766.0 12037.0 4766.5 12032.5
+  4767.0 12028.0 4772.0 12019.0 4774.5 12014.5
+  4777.0 12010.0 4781.5 12001.0 4781.5 12001.0
+  smooth off
+endline
+
+point 4757.5 12050.0 air-draught -orientation 144.3 -subtype summer
+
+line pit -clip off
+  5787.0 11669.0
+  5787.0 11669.0 5748.0 11667.0 5714.0 11663.0
+  5680.0 11659.0 5681.0 11644.0 5659.0 11652.0
+  5637.0 11660.0 5582.0 11663.0 5582.0 11675.0
+  5582.0 11687.0 5564.0 11719.0 5564.0 11719.0
+  smooth off
+endline
+
+point 5573.0 11761.0 label -text "<bf><center>Griffons temporaires<br>du Tuet" -scale xl
+
+point 5056.0 11956.0 label -text "<bf><center>Griffons temporaires<br>du Tuet" -scale xl
+
+point 5424.0 11927.0 label -text "<bf><center>Résurgence temporaire<br>principale N°2<br>du Tuet" -scale xl
+
+point 4767.0 12129.0 label -text "<bf><center>Résurgence temporaire<br>principale N°1<br>du Tuet" -scale xl
+
+point 4434.0 8936.0 label -text "<bf><center>Griffons temporaires<br>del'Ermoy" -scale xl
+
+point 5278.0 9914.0 label -text "<bf><center>Griffons temporaires<br>del'Ermoy" -scale xl
+
+point 5434.0 10052.0 label -text "<bf><center>Résurgences temporaires<br>del'Ermoy" -scale xl
+
+point 4358.0 9064.0 label -text "<bf><center>Résurgence pérenne<br>del'Ermoy" -scale xl
+
+point 4005.73 8781.230000000001 spring -orientation 310.7
+
 point 3543.3100000000004 8145.67 spring -orientation 240.1
+
+point 5692.96 11578.980000000001 station -name R-Tuet11
+
+point 5644.28 11580.360000000002 station -name R-Tuet10
+
+point 5670.35 11640.910000000002 station -name R-Tuet9
+
+point 5542.55 11644.520000000002 station -name R-Tuet8
+
+point 5485.36 11668.030000000002 station -name R-Tuet7
+
+point 5451.07 11747.800000000001 station -name R-Tuet6
+
+point 5371.88 11855.110000000002 station -name R-Tuet2
+
+point 5264.45 11932.570000000002 station -name R-Tuet5
+
+point 5067.11 11846.220000000001 station -name R-Tuet4
+
+point 4822.3099999999995 12019.510000000002 station -name R-Tuet3
+
+point 4770.95 12034.100000000002 station -name R-Tuet1
+
+point 5374.97 10134.570000000002 station -name R-Ermoy1
+
+point 5276.85 10111.080000000002 station -name R-Ermoy2
+
+point 5142.41 9987.930000000002 station -name R-Ermoy3
+
+point 5141.11 9834.740000000002 station -name R-Ermoy5
+
+point 4942.84 9608.340000000002 station -name R-Ermoy4
+
+point 4374.0599999999995 8989.670000000002 station -name R-Ermoy7
+
+point 4526.969999999999 9011.610000000002 station -name R-Ermoy8
+
+point 4515.41 9033.820000000002 station -name R-Ermoy6
+
+point 4337.55 8990.710000000003 station -name R-Ermoy9
+
+point 4005.73 8781.230000000001 station -name R-Ermoy10
 
 point 3543.3100000000004 8145.67 station -name R-JB
 
-point 4929.7300000000005 9377.48 station -name R-Ermoy
+#point 4929.7300000000005 9377.48 station -name R-Ermoy
 
-point 4790.87 12002.039999999999 station -name R-Tuet
+#point 4790.87 12002.039999999999 station -name R-Tuet
+
 
 endscrap
 

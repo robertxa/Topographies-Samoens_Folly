@@ -1,37 +1,92 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2019 - 2021 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
 survey sources -title "Résurgences du massif du Folly"
 
-# Fichier contenant les positions des entrées de la zone B, Samoens, France
-# Attention, les coordonnées ont été prises pour la plupart directement sous Google Earth,
-# elles sont approximatives et devraient être repises en détails
+# Fichier contenant les positions des Résurgences du massif du Folly, Samoens, France
 
  centerline -extend right
-cs long-lat
-fix R-JB 6.745180928166752 46.09359826843757	783 # Altitude IGN
-fix R-Ermoy 6.749618472636953 46.09650181585388	833  #ALT IGN
-fix R-Tuet 6.748918365613179 46.10248805307734	856 # Altitude IGN
-fix R-Allamands 6.753610585688945 46.11393540358883	1164 #ALT IGN 
-#fix R-EF 6.767262	46.101117 1495 #ALT IGN
-fix R-EF 6.7671	46.1007 1495 #ALT IGN
-#fix R-CEF 6.782500058903151	46.09936969748869	2002	 #ALT APPROX !	# Dans système Eaux Froides
+    cs long-lat
+    
+    date 2021.08.12
+        team "Xavier Robert"
 
-#fix R-Fontaines 6.739244725649069 46.09078683978262	766 #ALT APPROX ! 
-#fix R-Mirolda 6.739536010689617 46.07875465444135	714 #ALT APPROX ! 
+    fix R-JB 6.745180928166752 46.09359826843757	783 # Altitude IGN
+    station R-JB "Résurgence du Gouffre Jean-Bernard" entrance spring
 
-station R-JB "Résurgence du Gouffre Jean-Bernard" entrance spring
-station R-Ermoy "Résurgence de la grotte de l'Ermoy" entrance spring
-station R-Tuet "Résurgences temporaires du Tuet" entrance spring
-station R-Allamands "Résurgence des Allamands" entrance spring
-station R-EF "Résurgence des Eaux Froides" entrance spring
-#station R-CEF "Résurgence de la Cascade des Eaux Froides" entrance	spring # Dans système Eaux Froides
-#station R-Fontaines "Résurgence des Fontaines" spring 
-#station R-Mirolda "Résurgence temporaire du Mirolda" entrance spring
+    #fix R-Ermoy 6.749618472636953 46.09650181585388	833  #ALT IGN           # OLD car coord. estimées sur Google Earth
+    #station R-Ermoy "Résurgence de la grotte de l'Ermoy" entrance spring    # OLD car coord. estimées sur Google Earth
+    # Les altitudes ci-dessous seront à reprendre avec le MNT IGN, pour l'instant, elles sont fausses
+    fix R-Ermoy1 6.75101 46.09826	834 ######ALT IGN
+    station R-Ermoy1 "Résurgence temporaire principale de l'Ermoy" entrance spring air-draught
+    fix R-Ermoy2 6.75069 46.09820	833  #ALT IGN
+    station R-Ermoy2 "Griffon temporaire" entrance spring
+    fix R-Ermoy3 6.75026 46.09791	833  #ALT IGN
+    station R-Ermoy3 "Résurgence temporaire" entrance spring
+    fix R-Ermoy4 6.74964 46.09703	805  #ALT IGN
+    station R-Ermoy4 "Griffon temporaire" entrance spring
+    fix R-Ermoy5 6.75027 46.09756	833  #ALT IGN
+    station R-Ermoy5 "Griffon temporaire" entrance spring
+    fix R-Ermoy6 6.74829 46.09569	806  #ALT IGN
+    station R-Ermoy6 "Griffon temporaire" entrance spring
+    fix R-Ermoy7 6.74783 46.09558	811  #ALT IGN
+    station R-Ermoy7 "Résurgence pérenne de l'Ermoy" entrance spring
+    fix R-Ermoy8 6.74833 46.09564	808  #ALT IGN
+    station R-Ermoy8 "Résurgence temporaire" entrance spring
+    fix R-Ermoy9 6.74771 46.09558	793  #ALT IGN
+    station R-Ermoy9 "Résurgence - bourbier temporaire" entrance spring
+    fix R-Ermoy10 6.74664 46.09508	810  #ALT IGN
+    station R-Ermoy10 "Résurgence temporaire" entrance spring
+
+
+    #fix R-Tuet 6.748918365613179 46.10248805307734	856 # Altitude IGN  # OLD car coord. estimées sur Google Earth
+    #station R-Tuet "Résurgences temporaires du Tuet" entrance spring    # OLD car coord. estimées sur Google Earth
+
+    fix R-Tuet1 6.74885 46.10256	856 # Altitude IGN
+    station R-Tuet1 "Résurgence temporaire principale du Tuet" entrance spring air-draught dig
+    fix R-Tuet2 6.75084 46.10219	847 # Altitude IGN
+    station R-Tuet2 "Résurgence temporaire principale N°2 du Tuet" entrance spring air-draught
+    fix R-Tuet3 6.74902 46.10253	859 # Altitude IGN
+    station R-Tuet3 "Griffon temporaire du Tuet" entrance spring air-draught
+    fix R-Tuet4 6.74984 46.10215	847 # Altitude IGN
+    station R-Tuet4 "Griffon temporaire du Tuet" entrance spring
+    fix R-Tuet5 6.75048 46.10236	846 # Altitude IGN
+    station R-Tuet5 "Résurgence temporaire du Tuet" entrance spring air-draught
+    fix R-Tuet6 6.75111 46.10195	847 # Altitude IGN
+    station R-Tuet6 "Griffon temporaire du Tuet" entrance spring
+    fix R-Tuet7 6.75123 46.10177	842 # Altitude IGN
+    station R-Tuet7 "Griffon temporaire du Tuet" entrance spring air-draught
+    fix R-Tuet8 6.75142 46.10172	854 # Altitude IGN
+    station R-Tuet8 "Griffon temporaire du Tuet" entrance spring
+    fix R-Tuet9 6.75184 46.10172	852 # Altitude IGN
+    station R-Tuet9 "Griffon temporaire du Tuet" entrance spring air-draught dig
+    fix R-Tuet10 6.75176 46.10158	856 # Altitude IGN
+    station R-Tuet10 "Griffon temporaire du Tuet" entrance spring
+    fix R-Tuet11 6.75192 46.10158	856 # Altitude IGN
+    station R-Tuet11 "Griffon temporaire du Tuet" entrance spring
+
+
+    fix R-Allamands 6.753610585688945 46.11393540358883	1164 #ALT IGN 
+    station R-Allamands "Résurgence des Allamands" entrance spring
+
+    #fix R-EF 6.767262	46.101117 1495 #ALT IGN
+    fix R-EF 6.7671	46.1007 1495 #ALT IGN
+    station R-EF "Résurgence des Eaux Froides" entrance spring
+    #fix R-CEF 6.782500058903151	46.09936969748869	2002	 #ALT APPROX !	# Dans système Eaux Froides
+    #station R-CEF "Résurgence de la Cascade des Eaux Froides" entrance	spring # Dans système Eaux Froides
+
+    #fix R-Fontaines 6.739244725649069 46.09078683978262	766 #ALT APPROX ! 
+    #station R-Fontaines "Résurgence des Fontaines" spring 
+    #fix R-Mirolda 6.739536010689617 46.07875465444135	714 #ALT APPROX ! 
+    #station R-Mirolda "Résurgence temporaire du Mirolda" entrance spring
+
+    
+    
+    
   
 endcenterline
 

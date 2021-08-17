@@ -1,0 +1,173 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 3316.9781000000003 1466.5834
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {2680.38 1 1.0} {944.878 xx0init@solitaire} solitaire-coupe2021.xvi 0 {}
+
+
+
+scrap SC-Solitaire-2021-1 -projection extended -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3277.608 -128.0 0.0 0.0 86.5024432 0.0 m]
+
+point 432.25 324.75 water-flow -orientation 181.3
+
+point 504.25 371.25 water-flow -orientation 191.5
+
+line rope
+  484.75 343.5
+  470.75 341.75
+  470.5 295.0
+endline
+
+line rope
+  477.5 386.5
+  491.75 380.5
+  499.0 368.0
+  498.75 349.25
+endline
+
+line rope
+  554.75 377.75
+  564.25 378.25
+endline
+
+point 481.5 363.75 height -value [+7 m]
+
+point 497.25 319.25 height -value [-10 m]
+
+point 386.0 413.25 height -value [-15? m]
+
+point 388.5 377.75 altitude -align bottom-left
+
+point 289.0 277.0 altitude -align bottom-left
+
+line wall
+  388.5 377.75
+  388.5 377.75 422.0 377.0 428.0 378.75
+  434.0 380.5 440.25 385.5 450.0 385.0
+  459.75 384.5 465.0 382.75 472.25 381.0
+  479.5 379.25 485.25 378.75 487.75 376.0
+  490.25 373.25 491.75 372.25 491.75 367.25
+  491.75 362.25 497.25 358.0 491.75 355.0
+  486.25 352.0 474.75 343.75 469.75 343.5
+  464.75 343.25 461.75 344.5 461.75 338.75
+  461.75 333.0 465.75 317.75 458.5 319.5
+  451.25 321.25 423.75 333.0 415.25 331.25
+  406.75 329.5 398.0 332.75 398.25 327.0
+  398.5 321.25 399.25 311.25 394.75 309.5
+  390.25 307.75 383.5 295.5 374.75 293.5
+  366.0 291.5 347.25 289.0 338.0 289.0
+  328.75 289.0 327.0 289.75 317.75 286.25
+  308.5 282.75 298.5 280.0 294.0 279.75
+  289.5 279.5 288.0 279.5 288.0 279.5
+  smooth off
+endline
+
+line wall
+  564.5 381.5
+  564.5 381.5 560.5 390.75 553.75 389.0
+  547.0 387.25 518.25 370.75 513.25 367.75
+  508.25 364.75 509.0 360.75 504.25 365.0
+  499.5 369.25 494.5 382.25 488.25 386.5
+  482.0 390.75 480.75 387.75 478.75 391.25
+  476.75 394.75 473.0 391.5 469.25 395.5
+  465.5 399.5 466.25 409.75 461.0 406.75
+  455.75 403.75 458.5 400.0 451.75 399.5
+  445.0 399.0 431.75 392.75 426.25 392.25
+  420.75 391.75 394.25 387.5 390.75 388.0
+  387.25 388.5 383.5 388.75 383.5 388.75
+  smooth off
+endline
+
+line wall
+  445.75 299.75
+  445.75 299.75 468.25 293.5 472.25 293.75
+  476.25 294.0 485.75 292.25 485.5 295.0
+  485.25 297.75 474.25 337.25 480.75 337.5
+endline
+
+point 351.25 390.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air" -text "P10/15 à descendre, courant d'air"
+
+point 258.75 283.75 continuation -attr Code D -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air" -text "Etroiture à dynamiter, courant d'air"
+
+point 280.75 282.75 narrow-end
+
+point 321.75 296.0 air-draught -orientation 87.6 -subtype summer
+
+point 390.0 396.5 air-draught -orientation 87.6 -subtype summer
+
+point 426.25 266.0 label -text "<center>salle des<br>Sapins d'Argile"
+
+line wall -subtype debris
+  480.75 337.5
+  487.25 337.75 487.75 335.5 491.25 338.0
+  494.75 340.5 499.75 349.5 512.5 352.5
+endline
+
+line wall
+  512.5 352.5
+  525.25 355.5 531.94 359.13 539.5 359.25
+  554.75 359.5 540.5 365.25 560.25 364.0
+  smooth off
+endline
+
+point 438.0 304.25 clay-tree
+
+point 426.5 307.0 clay-tree
+
+point 410.5 307.0 clay-tree
+
+point 402.5 308.25 clay-tree
+
+line wall -subtype debris
+  356.75 284.75
+  356.75 284.75 373.5 285.25 377.0 286.5
+  380.5 287.75 396.75 303.0 407.25 303.75
+  417.75 304.5 414.5 305.25 424.5 304.0
+  434.5 302.75 441.0 300.25 445.75 299.75
+endline
+
+line wall
+  289.0 277.0
+  289.0 277.0 306.0 274.25 310.25 276.25
+  314.5 278.25 322.5 281.0 328.75 282.25
+  335.0 283.5 350.25 284.5 356.75 284.75
+endline
+
+point 291.47 277.72800000000007 station -name 2021-FD-12@solitaire
+
+point 306.77 276.5280000000001 station -name 2021-FD-11@solitaire
+
+point 324.53 284.06800000000004 station -name 2021-FD-10@solitaire
+
+point 353.1099999999999 287.06800000000004 station -name 2021-FD-9@solitaire
+
+point 376.25 289.09800000000007 station -name 2021-FD-8@solitaire
+
+point 392.53999999999996 302.75800000000004 station -name 2021-FD-7@solitaire
+
+point 418.28 310.13800000000003 station -name 2021-FD-6@solitaire
+
+point 470.39999999999986 297.9080000000001 station -name 2021-FD-5@solitaire
+
+point 470.39999999999986 337.2780000000001 station -name 2021-FD-4@solitaire
+
+point 489.65999999999985 341.37800000000004 station -name 2021-FD-3@solitaire
+
+point 392.22 386.17800000000005 station -name 2021-FD-25@solitaire
+
+point 427.46000000000004 382.4680000000001 station -name 2021-FD-24@solitaire
+
+point 445.5799999999999 389.06800000000004 station -name 2021-FD-23@solitaire
+
+point 461.72 388.50800000000004 station -name 2021-FD-22@solitaire
+
+point 477.29999999999995 381.88800000000003 station -name 2021-FD-21@solitaire
+
+point 487.52 378.958 station -name 2021-FD-20@solitaire
+
+point 504.8699999999999 355.06800000000004 station -name 2021-FD-2@solitaire
+
+point 555.05 371.37800000000004 station -name 2021-FD-1@solitaire
+
+endscrap
+
+

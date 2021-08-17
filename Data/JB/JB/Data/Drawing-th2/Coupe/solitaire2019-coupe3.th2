@@ -93,7 +93,7 @@ line wall
   smooth off
 endline
 
-point 326.75 407.0 label -text "<center>puits du<br>Complexe"
+point 377.25 463.0 label -text "<center>puits du<br>Complexe"
 
 point 686.75 445.5 altitude -align bottom-right
 
@@ -187,7 +187,12 @@ line wall
   467.75 416.75 454.75 419.5 448.0 419.0
   441.25 418.5 422.5 414.25 413.5 408.5
   404.5 402.75 385.0 387.0 378.75 380.5
-  372.5 374.0 377.0 342.5 373.25 340.5
+  smooth off
+endline
+
+line wall
+  371.75 363.5
+  365.5 357.0 377.0 342.5 373.25 340.5
   369.5 338.5 363.75 338.5 363.75 338.5
   smooth off
 endline

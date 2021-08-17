@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2019-2021 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -242,24 +242,24 @@ endlayout
 #  select MP-JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MP-JB-plan-tot@Jean-Bernard
-export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000.pdf -layout my_layout
-#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan1000_Continuations.pdf -layout my_layout-continuations
-#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2020-plan5000.pdf -layout my_layout
+export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2021-plan1000.pdf -layout my_layout
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2021-plan1000_Continuations.pdf -layout my_layout-continuations
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2021-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
 export model -fmt esri -o Outputs/3D/JB #-layout my_layout
 export map -fmt esri -o Outputs/3D/JB-map #-layout my_layout
 
 # Export du fichier 3d pour Loch
-# export model -o Outputs/3D/jb-Xav-2020.lox
+# export model -o Outputs/3D/jb-Xav-2021.lox
 
 # Export des fichiers kml
-export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2020.kml
+export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2021.kml
 
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-#export database -o Outputs/Lists/DatabaseJB-2020.sql
-export continuation-list -o Outputs/Lists/Continuations-JB-plan-2020.html
-export survey-list -location on -o Outputs/Lists/Topographies_2020.html
-#export cave-list -location on -o Outputs/Lists/Cavites_2020.html
+#export database -o Outputs/Lists/DatabaseJB-2021.sql
+export continuation-list -o Outputs/Lists/Continuations-JB-plan-2021.html
+export survey-list -location on -o Outputs/Lists/Topographies_2021.html
+#export cave-list -location on -o Outputs/Lists/Cavites_2021.html

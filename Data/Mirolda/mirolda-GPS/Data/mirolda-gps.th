@@ -1,0 +1,48 @@
+encoding  utf-8
+
+# Copyright (C) 2021 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey mirolda -title "Entrée du massif du Criou"
+
+# Fichier contenant les positions des Résurgences du massif du Folly, Samoens, France
+
+ centerline -extend right
+    cs long-lat
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    fix R-peteret 6.745180928166752 46.09359826843757	783 # Altitude IGN, A revoir
+    station R-peteret "Résurgence temporaire de Péteret" entrance spring continuation
+    #fix R-Chaperon 6.745180928166752 46.09359826843757	783 # Altitude IGN, A revoir
+    #station R-Chaperon "Résurgence temporaire de Chaperon" entrance spring
+
+    fix CD11 6.770476 46.0888689	1880 #ALT IGN
+    station CD11 "CD11 - Mirolda" entrance air-draught continuation #explored ????m
+    fix VF3 6.79367 46.090839	2336  #ALT IGN
+    station VF3 "VF3 - Lucien Bouclier" entrance air-draught continuation #explored ????m
+    fix FLT7 6.783152 46.081747	1929  #ALT IGN
+    station FLT7 "FLT7 - L'Amine Dada" entrance air-draught continuation #explored ????m
+    
+    #fix FLT7b 6.783152 46.081747	1929  #ALT IGN
+    #station FLT7b "FLT7b" entrance air-draught continuation #explored ????m
+
+    #cs ???? (Lambert, mais lequel?)
+    #fix Morts_Vivants 943.740 129.900	1930  #ALT IGN
+    #station Morts_Vivants "G. des Morts Vivants" entrance air-draught continuation #explored ????m
+    #fix Daniel 943.50 129.830	2030  #ALT IGN
+    #station Daniel "G. Daniel" entrance air-draught continuation explored 350m
+
+    #fix F126 6.75026 46.09791	833  #ALT IGN
+    #station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
+    #fix Falaise 6.75026 46.09791	833  #ALT IGN
+    #station Falaise "Entrée Falaise" entrance air-draught continuation #explored ????m
+    
+
+  
+endcenterline
+
+ endsurvey

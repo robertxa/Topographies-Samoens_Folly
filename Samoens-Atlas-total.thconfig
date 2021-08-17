@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2019-2021 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -165,7 +165,7 @@ layout atlas_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		\newtoks\synth \synth={Xavier Robert (2020)}
-		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Grander et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 	endcode   
   
 endlayout
@@ -175,4 +175,4 @@ endlayout
 # Export du fichier pdf de l'Atlas
 select MP-Folly-tot@MassifFolly
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-export atlas -o Outputs/atlas-Folly1000-2020.pdf -layout atlas_layout
+export atlas -o Outputs/atlas-Folly1000-2021.pdf -layout atlas_layout

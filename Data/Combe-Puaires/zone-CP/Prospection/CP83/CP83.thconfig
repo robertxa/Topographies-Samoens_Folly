@@ -1,10 +1,10 @@
 encoding  utf-8
   
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2021 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-source CP40-tot.th
+source CP83-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -26,12 +26,12 @@ layout my_layout
 	copy header-plan-schema
 	copy langue-fr
   
-	doc-title "CP40"
+	doc-title "CP83"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 250
-	scale 1 250
-	scale-bar 25 m
+	base-scale 1 100
+	scale 1 100
+	scale-bar 10 m
 	#rotate 2.25
 	# origin 12 22 0 m
 	# origin-label 100 K
@@ -45,7 +45,8 @@ layout my_layout
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 0 00 nw
+	#map-header 0 00 nw
+	map-header -100 30 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -60,13 +61,13 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={CP40} 		
+			\cavename={CP83} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{10\thinspace{}m}
-		\cavedepth{-5\thinspace{}m}
+		\cavelength{1\thinspace{}m}
+		\cavedepth{-1\thinspace{}m}
 	endcode  
   
 endlayout
@@ -80,7 +81,7 @@ layout my_layout-coupe
 	copy header_coupe-schema
 	copy langue-fr
   
-	doc-title "CP40"
+	doc-title "CP83"
 	doc-author "Xavier Robert"
 	base-scale 1 250
 	scale 1 250
@@ -113,13 +114,13 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={CP40} 		
+			\cavename={CP83} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		\cavelength{10\thinspace{}m}
-		\cavedepth{-5\thinspace{}m}
+		\cavelength{1\thinspace{}m}
+		\cavedepth{-1\thinspace{}m}
 	endcode  
 
 endlayout
@@ -137,22 +138,22 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/CP40-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/CP40-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/CP83-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/CP83-coupe.xvi
 
 # Select maps
-	select MP-CP40-plan-tot@CP40
-	select MC-CP40-coupe-tot@CP40
+	select MP-CP83-plan-tot@CP83
+#	select MC-CP83-coupe-tot@CP83
 	  
- export map -o Outputs/CP40-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/CP40-coupe.pdf
-#export map -o Outputs/CP40-plan-Continuations.pdf -layout my_layout-Continuations
-#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP40-coupe-Continuations.pdf
+export map -o Outputs/CP83-plan.pdf -layout my_layout
+#export map -projection extended -layout my_layout-coupe -o Outputs/CP83-coupe.pdf
+#export map -o Outputs/CP83-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP83-coupe-Continuations.pdf
 
-#export model -o Outputs/CP40.lox
+#export model -o Outputs/CP83.lox
   
 # Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/CP40 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP83 -layout my_layout
   
 # Export kml files
-export map -proj plan -fmt kml -o Outputs/CP40.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP83.kml -layout my_layout

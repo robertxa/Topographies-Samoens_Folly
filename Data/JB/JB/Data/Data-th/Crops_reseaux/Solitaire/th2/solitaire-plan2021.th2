@@ -1,0 +1,185 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -129.5 3277.608 2647.6864
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {2598.42 1 1.0} {1653.54 xx0init@solitaire} solitaire-plan2021.xvi 0 {}
+
+
+
+scrap SP-Solitaire-2021-1 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3277.608 -128.0 0.0 0.0 86.5024432 0.0 m]
+
+line wall
+  342.5 339.5
+  342.5 339.5 346.5 346.0 350.0 346.0
+  353.5 346.0 368.0 351.5 372.0 358.5
+  376.0 365.5 387.5 386.5 404.0 387.5
+  420.5 388.5 467.5 387.0 481.5 386.0
+  495.5 385.0 528.5 375.0 543.0 371.0
+  557.5 367.0 570.5 362.5 586.5 357.0
+  602.5 351.5 658.5 326.0 673.0 328.0
+  687.5 330.0 719.0 332.0 725.0 335.0
+  731.0 338.0 745.5 345.0 762.0 354.5
+  778.5 364.0 822.5 387.5 831.0 396.0
+  839.5 404.5 856.5 427.5 856.5 427.5
+  smooth off
+endline
+
+line wall
+  695.0 344.0
+  695.0 344.0 681.0 347.0 676.0 348.0
+  671.0 349.0 625.0 367.0 609.0 374.0
+  593.0 381.0 591.0 384.5 574.5 385.5
+  573.0 385.59 574.5 377.0 569.0 377.5
+  563.5 378.0 537.5 389.5 527.5 391.5
+  517.5 393.5 507.0 391.5 495.0 393.5
+  483.0 395.5 466.0 403.0 448.5 402.0
+  431.0 401.0 397.5 399.0 388.5 392.5
+  379.5 386.0 364.0 372.5 358.0 364.5
+  352.0 356.5 338.0 343.0 338.0 343.0
+  smooth off
+endline
+
+point 853.5 398.0 traverse
+
+point 672.5 305.0 height -value [-10 m]
+
+point 716.0 316.0 height -value [+7 m]
+
+point 640.0 440.0 label -text "<center>salle des<br>Sapins d'Argile"
+
+point 319.5 317.0 continuation -attr Code D -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air soufflant en été" -text "étroiture à dynamiter"
+
+point 342.5 339.5 altitude -align bottom-right
+
+point 327.0 354.5 air-draught -orientation 39.3 -subtype summer
+
+point 332.0 335.0 narrow-end
+
+point 448.0 391.5 breakdown-choke -orientation 179.3
+
+point 558.5 370.5 breakdown-choke -orientation 194.6
+
+point 536.0 387.0 breakdown-choke -orientation 18.4
+
+point 547.5 381.0 breakdown-choke -orientation 18.4
+
+line pit
+  712.0 351.0
+  712.0 351.0 708.5 343.5 695.0 344.0
+endline
+
+line pit
+  673.0 322.0
+  673.0 322.0 669.0 341.5 676.0 348.0
+endline
+
+point 613.0 366.0 clay-tree
+
+point 601.5 371.5 clay-tree
+
+point 593.5 377.5 clay-tree
+
+point 621.5 383.0 water-flow -orientation 201.6
+
+point 707.0 364.0 water-flow -orientation 170.4
+
+area blocks
+  l18-821-373
+endarea
+
+line label -id l18-821-373 -close on
+  819.5 373.5
+  819.5 373.5 820.5 443.5 803.5 442.5
+  786.5 441.5 712.0 351.0 712.0 351.0
+  smooth off
+  695.0 344.0
+  695.0 344.0 687.0 319.0 701.0 318.0
+  715.0 317.0 819.5 373.5 819.5 373.5
+  smooth off
+endline
+
+line wall
+  842.0 432.5
+  842.0 432.5 807.0 445.0 790.0 431.0
+  773.0 417.0 749.0 363.0 737.0 360.0
+  725.0 357.0 717.0 350.0 712.0 351.0
+endline
+
+point 343.3299999999999 345.23 station -name 2021-FD-12@solitaire
+
+point 366.42999999999984 365.32000000000005 station -name 2021-FD-11@solitaire
+
+point 391.53999999999996 390.43000000000006 station -name 2021-FD-10@solitaire
+
+point 448.39999999999986 396.4 station -name 2021-FD-9@solitaire
+
+point 493.8299999999999 387.57000000000005 station -name 2021-FD-8@solitaire
+
+point 526.0799999999999 383.03999999999996 station -name 2021-FD-7@solitaire
+
+point 575.03 367.14 station -name 2021-FD-6@solitaire
+
+point 676.1899999999999 341.90999999999997 station -name 2021-FD-5@solitaire
+
+point 714.2299999999999 335.89 station -name 2021-FD-3@solitaire
+
+point 742.2399999999999 347.78 station -name 2021-FD-2@solitaire
+
+point 828.2499999999999 399.46000000000004 station -name 2021-FD-1@solitaire
+
+point 851.5099999999999 429.23 station -name 2021-FD-0b@solitaire
+
+endscrap
+
+
+
+scrap SP-Solitaire-2021-2 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3277.608 -128.0 0.0 0.0 86.5024432 0.0 m]
+
+line wall
+  570.0 390.5
+  570.0 390.5 616.5 322.5 621.5 322.0
+  626.5 321.5 630.5 319.0 634.5 329.0
+  638.5 339.0 650.5 370.5 663.5 363.0
+  676.5 355.5 674.0 352.0 685.0 347.0
+  696.0 342.0 695.0 344.0 695.0 344.0
+  smooth off
+endline
+
+point 578.0 393.5 altitude -align top
+
+point 544.5 442.0 air-draught -orientation 154.4 -subtype summer
+
+line pit
+  570.0 390.5
+  570.0 390.5 578.0 383.5 578.5 386.5
+  579.0 389.5 578.0 393.5 578.0 393.5
+  smooth off
+endline
+
+point 567.5 407.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air" -text "Arrêt sur P10/15 à équiper"
+
+line wall
+  712.0 351.0
+  712.0 351.0 706.0 345.5 699.5 347.5
+  693.0 349.5 693.0 350.0 684.0 359.5
+  675.0 369.0 674.5 379.5 664.5 375.0
+  654.5 370.5 637.0 367.5 632.0 359.0
+  627.0 350.5 625.5 339.0 617.0 347.0
+  608.5 355.0 578.0 393.5 578.0 393.5
+  smooth off
+endline
+
+point 582.03 381.34000000000003 station -name 2021-FD-25@solitaire
+
+point 625.43 325.80000000000007 station -name 2021-FD-24@solitaire
+
+point 639.0099999999999 359.4200000000001 station -name 2021-FD-23@solitaire
+
+point 668.4799999999999 372.53999999999996 station -name 2021-FD-22@solitaire
+
+point 688.5099999999999 348.65999999999997 station -name 2021-FD-21@solitaire
+
+point 707.9499999999999 342.35 station -name 2021-FD-20@solitaire
+
+endscrap
+
+

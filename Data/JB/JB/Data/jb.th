@@ -274,6 +274,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-Sol2019d-1 SP-solitaire2019-1
 	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-plan2020.th2
 		join SP-Solitaire2020-1 SP-Sol2019d-1
+	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-plan2021.th2
 
 
 ######### A MODIFIER a partir d'ici ##############     
@@ -389,7 +390,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SC-jaunissec7 SC-anou2c1
 		join SC-jaunissec7 SC-anou2c2
 		join SC-jaunissec3 SC-chatonsc1
-## Le réseau du Solitaire
+### Le réseau du Solitaire
 	input Drawing-th2/Coupe/solitaire-coupe2017.th2
 	input Drawing-th2/Coupe/solitaire-coupe2018.th2
 	input Drawing-th2/Coupe/solitaire2019-coupe1.th2
@@ -400,10 +401,12 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/solitaire2019-coupe4.th2
 		join SC-Solitaire-2019c1 SC-Sol-2019b-1
 	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-coupe2020.th2
+	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-coupe2021.th2
+		join SC-Solitaire-2021-1 SC-Solitaire-2019c1
 
 ## La rivière aval
 	input Drawing-th2/Coupe/avalc1
-		join SC-avalc1 SC-S1-c
+		join SC-avalc1 SC-S1-c	# Erreur ici ???
 		join SC-avalc5 SC-balconc1
 	input Drawing-th2/Coupe/aval400.th2
 		join SC-400c1 SC-biv500c4

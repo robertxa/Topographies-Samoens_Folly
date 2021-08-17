@@ -463,5 +463,74 @@ centerline -title "JBSolitaire 2019d : 2019-FD-31_2019-FD-31b	2019d-FD-10_2019d-
 
 endcenterline
 
+
+centerline -title "JBSolitaire 2021 : 2019-FD-70_2021-FD-0b	2021-FD-11_2021-FD-12"
+	#  Suite de l'explo 2019 vers l'aval du Solitaire, à partir du point 2019-FD-70 (sommet du puits du complexe)
+	date 2021.08.14
+		team "Frédéric Delègue"
+		team "Arne Bahr"
+		team "Jens Lassé"
+		team "Mhieddine Bourekoum"
+	explo-date 2021.08.14
+		explo-team "Frédéric Delègue"
+		explo-team "Arne Bahr"
+		explo-team "Jens Lassé"
+		explo-team "Mhieddine Bourekoum"
+	units length meters
+	units compass degrees
+  	units clino degrees
+
+	data normal from to length compass clino left right up down
+	extend left									
+		#Départ	Arrivée	L	Az	P	G	D	H	B	Rem
+		2019-FD-70	2021-FD-0b	0	0	0	0	1	2.9	12	# Départ topo au sommet du puits du complexe
+		2021-FD-0b	2021-FD-1	4.8	218	-2	0.2	7.2	5	2.2	
+		2021-FD-1	2021-FD-2	13.4	239	-18	0.5	1.3	1.7	1	# R2 ; base de l'E7 en rive gauche
+		2021-FD-2	2021-FD-3	5.2	247	-42	0.4	1.7	3.1	1	# Arrivée d'eau en rive droite ; chaos ; sommet trémie
+		2021-FD-3	2021-FD-4	5	279	-12	0.7	0.6	1.4	10	# Sommet P10
+		2021-FD-4	2021-FD-5	10	0	-90	1.9	1	4.2	1	# Base P10
+		2021-FD-5	2021-FD-6	13.6	284	13.2	0.7	2.3	6	1	# Sapins d'argile --> Salle des Sapins d'Argile ; feuille bie  visible au plafond, passage de l'eau au plafond dans la faille impénétrable ? Pas de CA
+		2021-FD-6	2021-FD-7	6.8	288	-16	0.8	1.1	1.3	0.5	# Trémie au point 7
+		2021-FD-7	2021-FD-8	5.4	278	-40	0.5	0.7	1	0.5	
+		2021-FD-8	2021-FD-9	5.9	281	-5	0.9	0.9	0.7	0.5	# Trémie et boue
+		2021-FD-9	2021-FD-10	7.3	264	-6	0.4	0.4	1.2	0.5	
+		2021-FD-10	2021-FD-11	4.9	225	-23	0.9	0.6	1.6	0	
+		2021-FD-11	2021-FD-12	3.9	229	4.5	0.2	0.2	0.2	0	# Etroiture à dynamiter
+
+		# Dev = 86.2 m
+
+	endcenterline									
+	
+	centerline -title "JBSolitaire 2021 : 2019-FD-70_2021-FD-0b	2021-FD-11_2021-FD-12"
+	#  Suite de l'explo 2019 vers l'aval du Solitaire, à partir du point 2019-FD-70 (sommet du puits du complexe)
+	date 2021.08.14
+		team "Frédéric Delègue"
+		team "Arne Bahr"
+		team "Jens Lassé"
+		team "Mhieddine Bourekoum"
+	explo-date 2021.08.14
+		explo-team "Frédéric Delègue"
+		explo-team "Arne Bahr"
+		explo-team "Jens Lassé"
+		explo-team "Mhieddine Bourekoum"
+	units length meters
+	units compass degrees
+  	units clino degrees
+
+	data normal from to length compass clino left right up down
+	extend left	
+		#0	0	0	0.5	1.3	1.7	1	
+		2021-FD-2	2021-FD-20	7.5	261	54	0.3	0.3	2.2	0.5	# Départ grand méandre en hauteur, après E7
+		2021-FD-20	2021-FD-21	2.7	288	16	0.4	0.4	3	0.5	
+		2021-FD-21	2021-FD-22	4.3	320	23	0.7	0.5	4.6	1	
+		2021-FD-22	2021-FD-23	4.1	246	2	0.8	0.6	2.5	1	
+		2021-FD-23	2021-FD-24	4.9	202	-20	0.6	1.2	2.5	1	
+		2021-FD-24	2021-FD-25	9	322	6	0	0	0	0	# Arrêt sur puits de 10-15 m, une station en amont du sommet
+									
+		# Dev = 32.5 m						
+
+	endcenterline
+
+
 endsurvey
 

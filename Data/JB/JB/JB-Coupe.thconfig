@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2019-2021 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -115,7 +115,7 @@ layout my_layout
   transparency on
 
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
-  opacity 75
+  opacity 65
   
   # Pour faire une rotation
   #rotate 2.25
@@ -227,7 +227,7 @@ endlayout
 # Export du fichier pdf de la coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MC-JB-coupe-tot@Jean-Bernard
- export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2020-coupe.pdf
- #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2020-coupe-continuations.pdf
- export continuation-list -o Outputs/Lists/Continuations-coupe2020.html
- #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2020-coupe-STATIONS.pdf
+ export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2021-coupe.pdf
+ #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2021-coupe-continuations.pdf
+ export continuation-list -o Outputs/Lists/Continuations-coupe2021.html
+ #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2021-coupe-STATIONS.pdf
