@@ -80,8 +80,13 @@ endline
 line wall
   445.75 299.75
   445.75 299.75 468.25 293.5 472.25 293.75
+endline
+
+line wall -subtype debris
+  472.25 293.75
   476.25 294.0 485.75 292.25 485.5 295.0
   485.25 297.75 474.25 337.25 480.75 337.5
+  smooth off
 endline
 
 point 351.25 390.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air" -text "P10/15 à descendre, courant d'air"
@@ -100,12 +105,33 @@ line wall -subtype debris
   480.75 337.5
   487.25 337.75 487.75 335.5 491.25 338.0
   494.75 340.5 499.75 349.5 512.5 352.5
+  smooth off
 endline
 
-line wall
+line wall -subtype debris
+  555.0 333.75
+  555.0 333.75 547.25 334.5 545.25 338.5
+  543.25 342.5 542.75 347.0 542.75 350.75
+  542.75 354.5 544.25 360.0 544.25 360.0
+  smooth off
+endline
+
+line wall -subtype debris
+  528.0 356.25
+  528.0 356.25 530.75 357.25 531.75 352.25
+  532.75 347.25 533.75 340.75 535.0 338.5
+  543.02 324.07 548.0 324.75 548.0 324.75
+  smooth off
+endline
+
+line wall -subtype debris
   512.5 352.5
-  525.25 355.5 531.94 359.13 539.5 359.25
-  554.75 359.5 540.5 365.25 560.25 364.0
+  525.25 355.5 520.44 356.13 528.0 356.25
+endline
+
+line wall -subtype debris
+  544.25 360.0
+  559.5 360.25 540.5 365.25 560.25 364.0
   smooth off
 endline
 
@@ -123,6 +149,7 @@ line wall -subtype debris
   380.5 287.75 396.75 303.0 407.25 303.75
   417.75 304.5 414.5 305.25 424.5 304.0
   434.5 302.75 441.0 300.25 445.75 299.75
+  smooth off
 endline
 
 line wall
@@ -130,6 +157,7 @@ line wall
   289.0 277.0 306.0 274.25 310.25 276.25
   314.5 278.25 322.5 281.0 328.75 282.25
   335.0 283.5 350.25 284.5 356.75 284.75
+  smooth off
 endline
 
 point 291.47 277.72800000000007 station -name 2021-FD-12@solitaire

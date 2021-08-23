@@ -1,0 +1,237 @@
+# 2021.08.21 created by TopoDroid v 5.1.54
+
+survey CP7-2021 -title "CP7 2021 : Puits de la Turbine"
+
+  centerline
+    date 2021.08.21 
+      team "Frédéric Gennerat"
+      team "Xavier Robert"
+    explo-date 2021.08.20
+      explo-team "Stéphane Lips"
+      explo-team "Xavier Robert"
+    explo-date 2021.08.21
+      explo-team "Stéphane Lips"
+      explo-team "Xavier Robert"
+      explo-team "Frédéric Gennerat"
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    0 . 0.75 54.2 2.9 # Station 0 est la base du puits de la Turbine
+    0 . 0.94 204.4 1.3
+    0 . 1.58 116.8 -85.6
+    0 . 2.08 143.0 -46.3
+    0 . 13.88 130.1 85.8
+    0 . 6.37 169.8 77.5
+    0 . 4.64 86.7 80.2
+    0 . 9.88 284.1 83.5
+    0 . 4.04 125.3 55.8
+    0 . 2.79 126.6 35.1
+    0 . 2.54 123.5 -24.9
+    0 . 2.15 142.7 -24.3
+    0 . 3.09 135.4 -19.5
+    0 . 3.66 129.4 -15.6
+    0 . 1.19 86.8 -29.0
+    0 . 4.34 129.9 -38.6
+    extend left
+    0 1 5.14 127.7 -29.8  # Visée vers le fond en cours de désobstruction
+    0 2 6.86 132.9 28.0 # Visée vers le méandre remontant avec Courant d'air, mais non travaillé pour l'instant
+    extend vertical
+    0 3 12.76 183.4 86.3  # Amarage foré de la déviation
+    # extend auto
+    3 . 1.03 302.0 7.6
+    3 . 1.02 41.9 -4.0
+    3 . 0.86 357.8 4.8
+    3 . 1.28 37.1 51.3
+    3 . 2.19 6.8 52.8
+    3 . 2.85 350.1 53.1
+    3 . 1.41 353.7 35.8
+    3 . 2.62 341.2 65.9
+    3 . 1.54 321.1 57.1
+    3 . 1.00 305.5 15.8
+    3 . 1.25 132.6 -31.6
+    3 . 3.76 127.2 -60.6
+    3 . 6.40 128.6 -72.9
+    3 . 3.23 169.3 -71.8
+    3 . 5.54 161.7 -80.9
+    3 . 7.95 139.3 -84.0
+    3 . 14.19 37.1 -87.3
+    3 . 3.59 286.1 -74.1
+    3 . 6.59 285.1 -81.6
+    3 . 2.23 336.5 -70.1
+    3 . 3.01 70.6 -71.0
+    3 . 5.18 65.3 -78.9
+    3 . 9.98 97.8 -80.6
+    3 . 0.89 121.7 -13.1
+    extend right
+    3 4 3.40 353.7 58.7 # Amarage rive gauche du puits de la Turbine
+    # extend auto
+    4 . 0.46 235.0 0.8
+    4 . 0.92 175.0 -26.9
+    4 . 1.38 188.5 -40.4
+    4 . 0.81 214.0 -52.4
+    4 . 1.53 212.8 -84.0
+    4 . 2.17 184.0 -71.1
+    4 . 1.85 159.7 -60.2
+    4 . 3.89 177.3 -50.1
+    4 . 1.11 279.3 1.3
+    4 . 2.17 297.1 1.1
+    4 . 2.63 316.2 -0.4
+    4 . 2.52 334.0 0.2
+    4 . 2.43 315.4 -21.3
+    4 . 1.60 300.3 -50.0
+    4 . 1.13 350.4 -71.6
+    4 . 3.39 333.3 38.0
+    4 . 2.71 355.0 47.6
+    4 . 2.86 355.5 71.4
+    4 . 1.94 336.6 64.6
+    4 . 3.80 338.3 45.0
+    extend right
+    4 5 2.56 326.7 6.5  # Base du P4
+    # extend auto
+    5 . 0.64 79.2 0.5
+    5 . 0.94 117.4 -0.5
+    5 . 1.40 136.7 -2.0
+    5 . 1.82 146.9 -2.4
+    5 . 2.26 167.3 -1.9
+    5 . 1.36 191.1 -4.3
+    5 . 1.25 132.9 -74.4
+    5 . 2.10 145.4 -51.1
+    5 . 3.19 150.4 -40.0
+    5 . 2.35 163.4 -40.2
+    5 . 0.27 153.4 24.7
+    5 . 2.34 154.6 26.0
+    5 . 3.27 156.6 50.3
+    5 . 2.99 158.1 77.6
+    5 . 2.27 149.4 71.6
+    5 . 5.22 74.4 86.8
+    5 . 2.94 59.2 85.5
+    extend right
+    5 6 2.94 51.0 87.2  # Sommet du P4
+    # extend auto
+    6 . 0.45 133.5 -6.5
+    6 . 1.39 36.8 -78.6
+    6 . 4.38 181.5 -79.0
+    6 . 1.91 215.0 -70.0
+    6 . 4.65 174.3 -63.1
+    6 . 1.28 43.7 -49.1
+    6 . 2.44 204.6 83.2
+    6 . 1.31 58.2 2.7
+    6 . 2.02 67.5 18.2
+    6 . 2.47 72.4 34.7
+    6 . 4.00 69.5 45.2
+    6 . 1.68 55.7 47.7
+    6 . 0.91 39.0 36.6
+    6 . 0.37 92.3 29.7
+    extend right
+    6 7 3.88 73.5 44.9  # Sommet des Ressauts, fin de la grosse désobstruction
+    # extend auto
+    7 . 6.12 252.9 -55.7
+    7 . 4.56 265.0 -61.2
+    7 . 1.07 202.3 -80.4
+    7 . 1.16 238.5 -39.8
+    7 . 1.87 246.6 -41.1
+    7 . 1.08 247.4 -53.0
+    7 . 1.70 264.7 -43.5
+    7 . 0.50 282.0 -35.6
+    7 . 0.40 301.4 -9.4
+    7 . 0.71 230.5 26.0
+    7 . 1.03 243.4 -5.7
+    7 . 0.53 255.4 76.4
+    7 . 0.91 351.6 1.1
+    7 . 0.45 46.1 -5.1
+    7 . 1.01 13.3 -36.9
+    7 . 0.65 5.4 37.5
+    7 . 1.63 7.8 40.3
+    7 . 1.62 19.3 27.2
+  endcenterline
+
+    centerline
+    date 2021.08.21 
+      team "Frédéric Gennerat"
+      team "Xavier Robert"
+    explo-date 2020.08.01
+      explo-team "Xavier Robert"
+      explo-team "Constance Picque"
+    explo-date 2020.08.08
+      explo-team "Xavier Robert"
+      explo-team "Constance Picque"
+    explo-date 2020.09.05
+      explo-team "Xavier Robert"
+      explo-team "Constance Picque"
+      explo-team "Frédéric Gennerat"
+      explo-team "Arnaud Triquet"
+    explo-date 2020.10.24
+      explo-team "Xavier Robert"
+      explo-team "Patrice Plantier"
+      explo-team "Laure Sahmaoui"
+      explo-team "Frédéric Gennerat"
+    explo-date 2021.06.26
+      explo-team "Xavier Robert"
+      explo-team "Constance Picque"
+      explo-team "Frédéric Gennerat"
+    explo-date 2021.07.13
+      explo-team "Xavier Robert"
+      explo-team "Stéphane Lips"
+      explo-team "Arne Bahr"
+      explo-team "Apolline Michel"
+
+    explo-date 2021.08.20
+      explo-team "Xavier Robert"
+      explo-team "Stéphane Lips"
+    explo-date 2021.08.21
+      explo-team "Stéphane Lips"
+      explo-team "Xavier Robert"
+      explo-team "Frédéric Gennerat"
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend right
+    7 8 1.36 11.5 34.6
+    # extend auto
+    8 . 0.40 136.1 -7.4
+    8 . 2.00 164.2 -43.4
+    8 . 1.86 171.7 -60.9
+    8 . 1.31 104.3 -84.6
+    8 . 1.09 143.3 -54.2
+    8 . 1.14 214.4 -52.5
+    8 . 1.25 190.7 -36.8
+    8 . 0.44 201.1 65.5
+    8 . 1.45 81.4 -37.2
+    8 . 1.56 67.4 -12.4
+    8 . 1.01 103.7 16.2
+    8 . 0.77 110.3 -0.5
+    8 . 1.30 91.0 45.5
+    8 . 0.68 63.4 12.7
+    extend right
+    8 9 1.44 81.7 16.4
+    # extend auto
+    9 . 0.54 292.8 -2.7
+    9 . 1.11 311.0 -80.3
+    9 . 1.17 244.6 -21.2
+    9 . 0.64 270.1 73.5
+    9 . 0.97 356.3 25.5
+    9 . 1.40 4.5 51.0
+    9 . 1.51 30.9 31.2
+    9 . 1.58 18.0 18.6
+    9 . 1.98 14.9 27.5
+    9 . 3.41 14.2 34.9
+    9 . 2.76 22.9 47.6
+    9 . 2.40 8.3 41.6
+    extend right
+    9 10 4.46 2.2 39.6
+    # extend auto
+    10 . 1.51 176.0 -4.2
+    10 . 2.72 176.7 -26.6
+    10 . 4.57 176.9 -35.4
+    10 . 2.86 181.2 -37.1
+    10 . 1.82 186.9 -30.0
+    10 . 1.88 164.3 -38.2
+    10 . 0.83 174.3 -49.4
+    extend right
+    10 11 1.92 264.4 29.0 # Base du P22 d'entrée, point topo 4 du fichier topo d'entrée
+  endcenterline
+
+  # Dev : 43 m à cause de la station 4 à 6 de CP7.th déclarée comme duplicate (3.73 m)
+
+endsurvey

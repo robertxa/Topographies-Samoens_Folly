@@ -1,0 +1,101 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 324.85990000000004 294.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7446 1 1.0} {125.9801 CP40} CP40-coupe.xvi 0 {}
+
+
+
+scrap SC-CP40-1 -projection extended -station-names "" "@CP40" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [526.0 -550.0 902.0 -550.0 0.0 0.0 10 0.0 m]
+
+point 188.0 56.5 air-draught -orientation 305.2 -subtype summer -scale s
+
+point 162.5 75.5 water-flow -orientation 188.0
+
+point 191.25 43.25 water-flow -orientation 150.1
+
+point 185.5 36.25 narrow-end
+
+point 179.25 45.5 altitude -align bottom-left
+
+point 51.75 126.5 altitude -align left
+
+point 63.0 106.25 label -text "R2"
+
+point 71.0 165.0 label -text "<bf>CP40" -scale xl
+
+point 78.5 144.5 entrance -orientation 159.9
+
+line wall -subtype invisible
+  118.75 154.75
+  118.75 154.75 112.25 138.25 107.25 137.25
+  102.25 136.25 96.25 135.5 82.75 133.5
+  69.25 131.5 51.75 126.5 51.75 126.5
+  smooth off
+endline
+
+line wall
+  194.0 40.5
+  194.0 40.5 191.5 46.25 188.25 48.75
+  185.0 51.25 169.75 60.0 166.25 64.5
+  162.75 69.0 160.75 72.0 157.5 78.0
+  154.25 84.0 144.5 88.0 139.25 90.75
+  134.0 93.5 135.75 93.5 129.75 98.0
+  123.75 102.5 113.5 106.5 112.75 111.25
+  112.0 116.0 114.0 120.75 114.5 123.0
+  115.0 125.25 117.25 125.5 117.25 130.25
+  117.25 135.0 117.75 143.75 117.75 147.0
+  117.75 150.25 118.75 154.75 118.75 154.75
+  smooth off
+endline
+
+line wall
+  51.75 126.5
+  51.75 126.5 65.5 122.75 70.25 121.75
+  75.0 120.75 77.0 122.75 76.75 116.0
+  76.5 109.25 79.25 103.5 84.25 102.25
+endline
+
+line border
+  135.5 78.75
+  135.5 78.75 147.5 74.5 150.75 74.5
+  154.0 74.5 155.75 74.25 155.75 74.25
+  smooth off
+endline
+
+line border
+  80.0 120.75
+  80.0 120.75 86.5 119.25 90.5 119.25
+  94.5 119.25 99.75 119.5 99.75 119.5
+  smooth off
+endline
+
+line wall -subtype debris
+  84.25 102.25
+  89.25 101.0 98.75 100.75 100.5 99.0
+  102.25 97.25 99.25 92.5 103.0 92.5
+  106.75 92.5 109.75 94.5 112.5 92.75
+  115.25 91.0 112.5 85.0 115.5 83.0
+  118.5 81.0 119.75 80.75 122.75 80.5
+  125.75 80.25 126.0 83.25 127.0 79.0
+endline
+
+line wall
+  127.0 79.0
+  128.0 74.75 128.75 70.25 133.75 70.5
+  138.75 70.75 142.75 71.0 146.25 67.75
+  149.75 64.5 163.5 55.25 168.25 50.75
+  173.0 46.25 174.5 46.5 179.25 45.5
+  184.0 44.5 186.25 45.25 188.5 43.75
+  190.75 42.25 192.0 39.75 192.0 39.75
+  smooth off
+endline
+
+point 185.4846 47.700099999999985 station -name 2
+
+point 122.21459999999999 94.18009999999998 station -name 1
+
+point 78.74459999999999 125.9801 station -name 0
+
+endscrap
+
+

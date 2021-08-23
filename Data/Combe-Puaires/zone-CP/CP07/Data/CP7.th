@@ -134,7 +134,9 @@ survey CP7 -title "CP7" -entrance "CP7"
     extend left
     4 5 2.79 254.9 3.0
     extend left
+    flags duplicate
     4 6 3.73 158.3 -34.4
+    flags not duplicate
     extend vertical
     4 7 22.26 359.7 87.4
     # extend auto

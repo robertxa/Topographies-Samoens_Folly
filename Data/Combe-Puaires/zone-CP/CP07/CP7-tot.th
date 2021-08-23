@@ -6,6 +6,9 @@ encoding utf-8
 
 survey CP7 -title "CP7"
 	input Data/CP7.th
+	input Data/CP7-2021.th
+	equate 4@CP7 11@CP7-2021
+
 
 	# pour le plan
 	input Data/CP7.th2

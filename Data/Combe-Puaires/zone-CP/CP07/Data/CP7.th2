@@ -1,13 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -153.25 -162.75 218.0 216.25
+##XTHERION## xth_me_area_adjust -185.6868 -238.25 227.7936 216.25
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {57.5632 1 1.0} {62.8386 0} CP7-map2020a.xvi 0 {}
+##XTHERION## xth_me_image_insert {57.4544 1 1.0} {62.146100000000004 0@CP7.CP7} CP7-map2020a.xvi 0 {}
 
 
 
 scrap SP-CP7-1 -projection plan -station-names "" "@CP7" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-146.1832 -151.4585 188.55700000000002 -151.4585 0.0 0.0 8.50240108 0.0 m]
-
-point 33.0 -0.75 breakdown-choke -orientation 354.3
 
 area pebbles
   l30-40-38
@@ -48,19 +46,11 @@ endline
 
 point -24.0 -9.25 continuation -attr Code D -attr CA "Courant d'air Soufflant en été" -attr Cavite CP7 -text "Méandre étroit à désobstruer, cela devrait jonctionner avec la galerie du P18 dans le CP12"
 
-point 31.75 -33.5 continuation -attr Code D -attr CA "Courant d'air Soufflant en été" -attr Cavite CP7 -text "Trémie à courant d'air à creuser, c'est très motivant, cela devrait jonctionner avec la galerie du P18 dnas le CP12"
-
-point 16.75 -17.5 dig
-
 point -3.0 25.5 dig
-
-point 51.25 -27.75 air-draught -orientation 338.1 -subtype summer
 
 point -13.75 10.25 air-draught -orientation 53.8 -subtype summer
 
 point -3.0 5.0 narrow-end
-
-point 36.5 -15.0 narrow-end
 
 point 50.5 87.0 narrow-end
 
@@ -69,12 +59,6 @@ point 49.25 47.25 height -value [-3 m]
 point 13.5 -1.0 height -value [-22 m]
 
 point 53.75 78.5 altitude -align top-right
-
-line wall -subtype invisible
-  27.0 -6.75
-  27.0 -6.75 39.25 -9.5 40.5 -4.0
-  smooth off
-endline
 
 line pit
   56.25 40.5
@@ -102,9 +86,9 @@ line wall
 endline
 
 line wall
-  40.5 -4.0
-  40.5 -4.0 34.0 4.75 36.5 5.75
-  39.0 6.75 44.0 7.75 47.0 9.0
+  45.25 2.75
+  45.25 2.75 42.25 8.0 44.75 9.0
+  47.25 10.0 44.0 7.75 47.0 9.0
   50.0 10.25 49.5 14.75 52.75 16.75
   56.0 18.75 64.25 21.5 66.5 23.75
   68.75 26.0 74.0 27.5 76.75 30.5
@@ -119,17 +103,20 @@ line wall
 endline
 
 line wall
+  37.75 4.25
+  37.75 4.25 38.75 0.25 38.25 -0.5
+endline
+
+line wall
   5.25 11.25
   5.25 11.25 6.5 13.75 8.75 13.75
   11.0 13.75 12.5 12.25 13.0 13.5
   13.5 14.75 13.0 15.25 15.5 14.5
   18.0 13.75 18.25 15.0 20.5 13.5
-  22.75 12.0 28.0 7.25 28.25 5.75
-  28.5 4.25 27.0 -6.75 27.0 -6.75
+  22.75 12.0 29.25 5.25 29.5 3.75
+  29.75 2.25 37.75 4.25 37.75 4.25
   smooth off
 endline
-
-point 34.7332 -4.641399999999997 station -name 6
 
 point 5.833199999999998 14.178600000000003 station -name 5
 
@@ -142,6 +129,186 @@ point 76.14320000000001 44.4986 station -name 2
 point 57.563199999999995 62.8386 station -name 0
 
 point 52.9232 74.33860000000001 station -name 1
+
+endscrap
+
+
+
+scrap SP-CP7-3 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-146.1832 -151.4585 188.55700000000002 -151.4585 0.0 0.0 8.50240108 0.0 m]
+
+point 45.7744 -83.26389999999999 station -name 2@CP7-2021
+
+point 39.4444 -71.7939 station -name 1@CP7-2021
+
+point 12.4344 -54.7739 station -name 3@CP7-2021
+
+point 13.2944 -48.353899999999996 station -name 0@CP7-2021
+
+point 2.1743999999999986 -23.383899999999997 station -name 5@CP7-2021
+
+point 11.924399999999999 -40.8739 station -name 4@CP7-2021
+
+point 3.1043999999999983 -22.7339 station -name 6@CP7-2021
+
+point 24.2444 -18.1139 station -name 7@CP7-2021
+
+point 26.6244 -9.623899999999999 station -name 8@CP7-2021
+
+point 67.75 -78.75 air-draught -orientation 287.7 -subtype summer
+
+point 75.75 -105.75 air-draught -orientation 318.1 -subtype summer
+
+point 27.25 -40.25 dig
+
+point 32.75 -23.5 dig
+
+point 52.5 -7.5 dig
+
+line pit
+  16.25 -24.25
+  16.25 -24.25 12.25 -15.25 3.0 -17.0
+endline
+
+line pit
+  25.5 -21.5
+  25.5 -21.5 23.25 -14.0 17.25 -14.25
+endline
+
+line pit
+  12.0 -29.0
+  12.0 -29.0 4.75 -19.75 -3.0 -25.75
+endline
+
+line pit
+  17.25 -42.0
+  17.25 -42.0 13.25 -43.75 7.75 -43.0
+endline
+
+line pit -reverse on
+  2.0 -46.25
+  2.0 -46.25 21.5 -49.75 24.25 -52.0
+endline
+
+point 70.25 -87.5 continuation -attr Code D -attr Cavite "CP7" -attr Reseau "Combe aux Puaires" -attr CA "Courant d'ir soufflant en été très fort qui vrombit" -text "Etroitures à désobstruer qui vrombrissent avec le courant d'air"
+
+point 63.5 -109.0 air-draught -orientation 318.1 -subtype summer
+
+point -28.25 -55.5 label -text "<center>puits de<br>la Turbine"
+
+point 5.0 -9.25 label -text "R4"
+
+point -13.0 -32.5 height -value [-4 m]
+
+point -1.0 -69.25 height -value [-15 m]
+
+point 50.25 -73.5 narrow-end
+
+point 63.0 -94.75 narrow-end
+
+point 50.5 -98.75 narrow-end
+
+point 42.0 -71.75 altitude -align top-right
+
+point 39.75 -60.5 dig
+
+area debris
+  l99-12--34
+endarea
+
+line label -id l99-12--34 -close on
+  12.75 -31.0
+  12.0 -29.0
+  12.0 -29.0 3.75 -20.25 -3.0 -25.75
+  -9.75 -31.25 -2.5 -40.25 0.5 -39.5
+  3.5 -38.75 10.75 -37.25 12.0 -34.25
+  13.25 -31.25 12.75 -31.0 12.75 -31.0
+  smooth off
+endline
+
+area debris
+  l97-33--62
+endarea
+
+line label -id l97-33--62 -close on
+  24.25 -52.0
+  24.25 -52.0 4.0 -46.0 2.0 -46.25
+  0.0 -46.5 8.25 -68.5 12.75 -68.5
+  17.25 -68.5 31.0 -66.25 32.75 -62.0
+  34.5 -57.75 24.25 -52.0 24.25 -52.0
+  smooth off
+endline
+
+line pit
+  47.5 -82.25
+  47.5 -82.25 43.0 -79.0 43.25 -76.0
+endline
+
+point 21.25 -73.75 height -value [+2 m]
+
+point 23.5 -84.75 label -text "etr."
+
+line pit
+  28.0 -68.25
+  28.0 -68.25 41.0 -80.75 35.75 -70.25
+endline
+
+line wall
+  42.0 -71.75
+  42.0 -71.75 34.75 -67.75 32.0 -64.0
+  29.25 -60.25 30.5 -59.5 26.75 -57.75
+  23.0 -56.0 20.25 -53.25 20.75 -51.0
+  21.25 -48.75 22.25 -46.75 19.75 -46.0
+  17.25 -45.25 13.5 -44.25 13.0 -40.25
+  12.5 -36.25 9.75 -30.0 9.5 -26.5
+  9.25 -23.0 9.25 -22.5 13.0 -22.25
+  16.75 -22.0 18.75 -20.25 21.25 -21.0
+  23.75 -21.75 26.25 -17.25 27.25 -18.75
+  28.25 -20.25 27.5 -15.75 29.5 -13.5
+  31.5 -11.25 32.0 -12.75 34.75 -11.75
+  37.5 -10.75 40.25 -14.75 41.0 -9.75
+  41.75 -4.75 45.25 2.75 45.25 2.75
+  smooth off
+endline
+
+line wall
+  58.25 -88.5
+  58.25 -88.5 55.25 -82.25 52.5 -81.0
+  49.75 -79.75 46.5 -78.25 44.25 -78.0
+  42.0 -77.75 32.0 -68.0 33.75 -68.5
+  35.5 -69.0 41.0 -73.5 41.0 -73.5
+  smooth off
+endline
+
+line wall
+  51.25 -88.75
+  51.25 -88.75 46.5 -87.25 47.25 -85.25
+  48.0 -83.25 44.25 -80.5 45.75 -80.5
+  47.25 -80.5 50.25 -82.5 51.25 -83.0
+  52.25 -83.5 56.75 -89.5 56.75 -89.5
+  smooth off
+endline
+
+line wall
+  38.25 -0.5
+  38.25 -0.5 39.25 -6.25 36.5 -6.5
+  33.75 -6.75 27.25 -6.5 25.75 -8.5
+  24.25 -10.5 24.5 -15.5 22.25 -16.0
+  20.0 -16.5 10.75 -16.75 7.25 -18.25
+  3.75 -19.75 -2.0 -21.25 -1.75 -24.25
+  -1.5 -27.25 -3.0 -29.0 -1.0 -32.75
+  1.0 -36.5 2.25 -39.5 4.5 -40.25
+  6.75 -41.0 8.0 -40.5 9.25 -42.75
+  10.5 -45.0 3.75 -44.75 4.25 -48.75
+  4.75 -52.75 9.25 -59.25 11.75 -61.75
+  14.25 -64.25 20.25 -64.25 22.75 -64.75
+  25.25 -65.25 26.25 -64.25 27.75 -66.25
+  29.25 -68.25 32.5 -71.75 33.75 -75.25
+  35.0 -78.75 42.0 -85.0 43.75 -86.25
+  45.5 -87.5 50.0 -90.5 50.0 -90.5
+  smooth off
+endline
+
+point 37.4744 -8.843899999999998 station -name 9@CP7-2021
 
 endscrap
 

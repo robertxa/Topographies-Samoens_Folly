@@ -99,7 +99,7 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 20 80 ne
+	map-header 20 90 ne
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -145,8 +145,8 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/CP7-coupe2020
 	select MP-CP7-plan-tot@CP7
 	select MC-CP7-coupe-tot@CP7
 	  
- export map -o Outputs/CP7-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/CP7-coupe.pdf
+ export map -o Outputs/CP7-plan2021.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP7-coupe2021.pdf
 #export map -o Outputs/CP7-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP7-coupe-Continuations.pdf
 
