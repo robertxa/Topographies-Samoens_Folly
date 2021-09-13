@@ -14,8 +14,7 @@ layout Entrances_coords_CPBApra
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationCPBApra{BA3a    --  Lat. : 46.10499 N ; Long. : 6.774266 E ; Alt. : 1578 m}
-		\def\thlocationCPBAprb{BA3b    --  Lat. : 46.10467 N ; Long. : 6.7743 E ; Alt. : 1579 m}
+		\def\thlocationCPBApra{BA5    --  Lat. : 46.105072 N ; Long. : 6.774387 E ; Alt. : 1578 m}
 	endcode 
 	
 endlayout
@@ -44,10 +43,6 @@ layout Coords_Header_CPBApra
 			\fi
 			\edef\tmp{\thlocationCPBApra} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm \ss\thlocationCPBApra\vss}	% The first one should be without hskip
-			\fi
-			%\fi
-			\edef\tmp{\thlocationCPBAprb} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm \ss\thlocationCPBAprb\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

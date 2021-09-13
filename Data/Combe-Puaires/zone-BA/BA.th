@@ -8,8 +8,14 @@ survey zoneBA -title "Zone BA"
 # Pour importer les différentes données de différents fichiers topos : 
    
    input BA2/BA2-tot.th
-   input BA3-BA5/BA3-tot.th
+   input BA3a/BA3a-tot.th
+   input BA3b/BA3b-tot.th
    input BA4/BA4-tot.th
+   input BA5/BA5-tot.th
+   input Surface/BA3-BA5-surface.th
+      equate BA3a@BA3a.BA3a BA3a@BA3-5-surface
+		equate BA3b@BA3b.BA3b BA3b@BA3-5-surface
+		equate BA5@BA5.BA5 BA5@BA3-5-surface
    input BA06/BA6-tot.th
    input BA09/BA9-tot.th
    input BA10/BA10-tot.th
