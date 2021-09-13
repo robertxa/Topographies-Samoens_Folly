@@ -37,7 +37,7 @@ survey BA5 -title "BA5"
     BA5 . 1.30 32.8 -63.1
     BA5 . 1.71 38.0 -51.5
     BA5 . 1.08 49.3 -21.6
-    extend right
+    extend left
     BA5 19 1.81 35.4 -48.7
     # extend auto
     19 . 0.29 34.8 3.9
@@ -49,7 +49,7 @@ survey BA5 -title "BA5"
     19 . 1.22 37.5 -73.2
     19 . 1.67 35.8 -64.8
     19 . 1.50 63.6 -60.1
-    extend right
+    extend left
     19 20 1.78 45.9 -51.0
     # extend auto
     20 . 0.70 159.6 39.3
@@ -74,7 +74,7 @@ survey BA5 -title "BA5"
     20 . 1.53 353.1 -18.3
     20 . 1.68 12.3 -8.4
     20 . 1.96 20.6 -19.7
-    extend vertical
+    extend left
     20 21 2.40 6.1 -25.1
     # extend auto
     21 . 0.76 317.0 -31.8
@@ -88,13 +88,13 @@ survey BA5 -title "BA5"
     21 . 1.33 147.5 25.8
     21 . 1.64 187.7 36.2
     21 . 0.68 198.2 34.1
-    extend right
+    extend left
     21 22 3.54 131.4 45.6
     extend left
     21 23 1.74 259.2 -27.7
     # extend auto
     23 . 0.72 207.9 -3.2
-    extend ignore
+    extend left
     23 24 0.87 242.5 -17.0  # Trémie sur joint de strate à désobstruer, courant d'air aspirant en été
   endcenterline
 

@@ -1,0 +1,111 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -206.735 -128.75 215.0 286.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.743 1 1.0} {125.987 BA5} BA5-coupe.xvi 0 {}
+
+
+
+scrap SC-BA5-1 -projection extended -station-names "" "@BA5" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 285.48040000000003 -128.0 0.0 0.0 10.50240216 0.0 m]
+
+point -35.25 49.75 altitude -align left
+
+point 50.5 125.75 altitude -align left
+
+point -37.0 46.5 breakdown-choke -orientation 67.7
+
+point -32.0 108.5 breakdown-choke -orientation 137.5
+
+point 27.25 108.25 breakdown-choke -orientation 127.2
+
+line wall -subtype invisible
+  86.0 126.0
+  86.0 126.0 76.25 129.25 67.25 128.75
+  58.25 128.25 50.5 125.75 50.5 125.75
+  smooth off
+endline
+
+point -45.0 35.0 continuation -attr Code D -attr Cavite "BA5" -attr Reseau "Combe aux Puaires" -attr CA "Courant d'air aspirant fort en été" -text "Jointe de strate à désobstruer, courant d'iar aspirant fort en été"
+
+point -21.25 67.25 dig
+
+point -32.75 60.25 dig
+
+point 71.75 94.5 dig
+
+point 76.25 157.5 label -text "<bf>BA5" -scale xl
+
+point 81.5 138.25 entrance -orientation 195.1
+
+point -0.75 48.75 air-draught -orientation 241.4 -subtype summer
+
+line wall -subtype debris
+  -34.75 43.5
+  -34.75 43.5 -19.0 50.75 -14.0 53.25
+  -9.0 55.75 -3.25 60.25 0.25 60.25
+  3.75 60.25 3.0 61.25 6.75 61.25
+endline
+
+line wall
+  6.75 61.25
+  10.5 61.25 12.25 60.25 18.5 63.25
+  24.75 66.25 25.75 68.0 32.5 71.5
+  39.25 75.0 35.75 77.25 46.5 80.5
+  57.25 83.75 54.25 83.5 55.0 85.25
+  55.75 87.0 58.75 92.25 59.0 95.0
+  59.25 97.75 58.5 100.25 60.25 101.75
+  62.0 103.25 64.0 106.25 67.0 106.25
+  70.0 106.25 74.25 107.75 76.5 108.25
+  78.75 108.75 79.25 113.0 79.25 116.5
+  79.25 120.0 79.0 123.75 80.75 124.75
+  82.5 125.75 86.0 126.0 86.0 126.0
+  smooth off
+endline
+
+line wall
+  -33.25 105.25
+  -33.25 105.25 -9.25 75.75 -7.75 73.5
+  -6.25 71.25 -5.0 64.0 -8.5 62.75
+  -12.0 61.5 -21.0 54.75 -24.5 54.5
+  -28.0 54.25 -32.0 51.0 -35.25 49.75
+endline
+
+line wall
+  25.75 105.0
+  25.75 105.0 37.25 93.75 37.75 93.0
+  38.25 92.25 42.5 85.5 38.5 85.5
+  34.5 85.5 21.5 87.5 19.25 87.5
+  17.0 87.5 18.25 86.25 11.0 87.75
+  3.75 89.25 -3.25 95.75 -11.0 99.75
+  -18.75 103.75 -29.0 110.0 -29.0 110.0
+  smooth off
+endline
+
+line wall
+  50.5 125.75
+  50.5 125.75 53.0 125.75 55.25 124.75
+  57.5 123.75 61.0 123.75 60.75 121.25
+  60.5 118.75 63.5 113.0 59.25 113.0
+  55.0 113.0 51.0 115.25 51.0 111.25
+  51.0 107.25 52.25 102.75 49.0 102.75
+  45.75 102.75 40.0 104.75 37.5 105.75
+  35.0 106.75 31.5 108.25 31.5 108.25
+  smooth off
+endline
+
+point -30.937000000000012 106.58699999999999 station -name 22
+
+point -29.29700000000001 50.006999999999984 station -name 24
+
+point -16.19700000000001 54.01699999999999 station -name 23
+
+point 8.062999999999992 66.75699999999999 station -name 21
+
+point 42.29299999999999 82.78699999999999 station -name 20
+
+point 59.93299999999999 104.56699999999998 station -name 19
+
+point 78.743 125.987 station -name BA5
+
+endscrap
+
+

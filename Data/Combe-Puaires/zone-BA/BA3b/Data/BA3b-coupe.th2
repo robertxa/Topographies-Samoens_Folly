@@ -1,0 +1,100 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -206.739 -128.75 214.5 309.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.745 1 1.0} {141.7362 BA3b} BA3b-coupe.xvi 0 {}
+
+
+
+scrap SC-BA3b-1 -projection extended -station-names "" "@BA3b" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+point 21.5 133.0 air-draught -orientation 226.4 -subtype summer
+
+point 72.5 154.5 entrance -orientation 175.4
+
+point 63.0 180.25 label -text "<bf>BA3b" -scale xl
+
+point 83.0 123.75 label -text "R3"
+
+point 26.25 109.75 label -text "etr."
+
+point 52.75 74.25 height -value [-4 m]
+
+point 5.25 54.75 altitude -align left
+
+point 85.25 143.0 altitude -align right
+
+line border
+  31.25 94.0
+  31.25 94.0 26.75 83.75 21.25 80.75
+  15.75 77.75 15.0 73.75 15.0 69.5
+  15.0 65.25 14.75 54.75 14.75 54.75
+  smooth off
+endline
+
+line wall -subtype invisible
+  85.25 143.0
+  85.25 143.0 83.0 145.25 78.5 145.25
+  74.0 145.25 62.75 143.0 60.25 142.25
+  57.75 141.5 54.75 140.0 54.75 140.0
+  smooth off
+endline
+
+line wall -close on -reverse on
+  67.0 141.0
+  67.0 141.0 64.75 141.5 64.0 141.0
+  63.25 140.5 62.75 138.0 63.75 138.0
+  64.75 138.0 66.0 137.25 66.75 138.25
+  67.5 139.25 67.0 141.0 67.0 141.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  5.0 32.0
+  5.0 32.0 13.25 35.5 16.75 35.75
+  20.25 36.0 29.75 39.0 33.5 39.0
+  37.25 39.0 37.0 47.5 38.5 51.5
+  40.0 55.5 40.25 63.25 40.75 69.75
+endline
+
+line wall
+  40.75 69.75
+  41.25 76.25 39.25 89.75 42.25 91.75
+  45.25 93.75 49.0 96.25 54.75 98.25
+  60.5 100.25 60.25 102.5 63.25 104.75
+  66.25 107.0 72.25 106.25 72.75 111.5
+  73.25 116.75 73.75 117.75 73.0 123.0
+  72.25 128.25 71.5 132.75 73.5 134.0
+  75.5 135.25 77.75 135.5 79.0 137.5
+  80.25 139.5 81.75 143.0 81.75 143.0
+  smooth off
+  85.25 143.0
+endline
+
+line wall
+  54.75 140.0
+  54.75 140.0 60.25 139.5 61.0 137.5
+  61.75 135.5 64.75 134.75 61.5 133.25
+  58.25 131.75 56.0 132.0 56.75 129.25
+  57.5 126.5 57.5 117.5 55.5 114.0
+  53.5 110.5 53.0 105.75 47.5 103.5
+  42.0 101.25 38.75 99.75 36.75 98.5
+  34.75 97.25 12.75 95.75 9.75 95.5
+  6.75 95.25 4.0 87.25 4.0 82.0
+  4.0 76.75 5.5 57.75 5.25 54.75
+  5.0 51.75 2.75 49.0 2.75 49.0
+  smooth off
+endline
+
+point 10.204999999999991 51.05619999999999 station -name 16
+
+point 39.285 95.83619999999999 station -name 15
+
+point 62.474999999999994 107.19619999999999 station -name 14
+
+point 65.21499999999999 133.6662 station -name 13
+
+point 78.745 141.7362 station -name BA3b
+
+endscrap
+
+

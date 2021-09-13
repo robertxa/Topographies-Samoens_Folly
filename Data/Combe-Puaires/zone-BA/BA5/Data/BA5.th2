@@ -1,0 +1,176 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 285.48040000000003 288.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {94.709 1 1.0} {78.811 BA5} BA5-map.xvi 0 {}
+
+
+
+scrap SP-BA5-1 -projection plan -station-names "" "@BA5" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 285.48040000000003 -128.0 0.0 0.0 10.50240216 0.0 m]
+
+line wall
+  95.25 121.5
+  95.25 121.5 105.0 133.25 106.5 129.25
+  108.0 125.25 111.75 120.0 112.5 116.75
+  113.25 113.5 117.75 108.5 115.0 106.0
+  112.25 103.5 111.0 103.5 109.25 100.75
+  107.5 98.0 104.5 94.5 104.5 94.5
+  smooth off
+endline
+
+line slope
+  100.0 122.25
+  100.0 122.25 105.25 137.0 96.25 143.5
+  l-size 5.0
+endline
+
+line overhang -close on
+  106.0 86.25
+  106.0 86.25 111.25 89.75 109.75 92.5
+  108.25 95.25 106.75 93.0 104.5 94.5
+  102.25 96.0 101.0 98.0 100.0 95.25
+  99.0 92.5 93.0 86.25 93.0 82.75
+  93.0 79.25 95.5 75.75 97.75 78.0
+  100.0 80.25 106.0 86.25 106.0 86.25
+  smooth off
+endline
+
+point 73.0 116.75 altitude -align left
+
+point 95.5 77.25 altitude -align bottom-right
+
+point 132.25 158.75 dig
+
+point 94.75 99.75 air-draught -orientation 49.2 -subtype summer
+
+point 151.75 104.75 breakdown-choke -orientation 278.2
+
+point 152.5 111.5 breakdown-choke -orientation 323.7
+
+point 85.5 36.5 label -text "<bf>BA5" -scale xl
+
+point 83.25 68.5 entrance -orientation 47.2
+
+point 56.5 134.25 continuation -attr Code D -attr Cavite "BA5" -attr Reseau "Combe aux Puaires" -attr CA "Courant d'air aspirant fort en été, soufflant en hiver" -text "joint de strate à déobstruer, courant d'air fort"
+
+point 86.5 154.0 dig
+
+point 122.5 85.75 dig
+
+line pit
+  104.75 97.0
+  104.75 97.0 104.5 89.25 110.25 90.0
+endline
+
+line slope
+  132.75 117.75
+  132.75 117.75 144.0 122.75 145.0 130.25
+  l-size 5.0
+endline
+
+line slope
+  109.0 111.25
+  109.0 111.25 133.75 124.0 141.25 137.75
+  l-size 5.0
+endline
+
+line slope -reverse on
+  133.75 143.25
+  133.75 143.25 119.75 122.75 113.75 120.75
+  107.75 118.75 103.75 118.25 103.75 118.25
+  smooth off
+  l-size 5.0
+endline
+
+line rock-border -close on
+  115.25 131.75
+  111.75 128.75
+  114.0 125.75
+  117.75 126.75
+  115.25 131.75
+endline
+
+line rock-border -close on
+  116.5 139.75
+  114.25 137.25
+  117.5 136.5
+  118.5 138.75
+  116.5 139.75
+endline
+
+line rock-border -close on
+  111.5 136.75
+  107.5 134.75
+  109.75 132.5
+  113.25 134.25
+  111.5 136.75
+endline
+
+point 82.5 128.75 breakdown-choke -orientation 91.7
+
+point 76.25 123.0 breakdown-choke -orientation 91.7
+
+point 78.5 134.0 breakdown-choke -orientation 111.0
+
+line wall -subtype presumed
+  73.0 116.75
+  73.0 116.75 78.75 116.5 83.75 117.25
+  88.75 118.0 95.25 121.5 95.25 121.5
+  smooth off
+endline
+
+line wall
+  154.75 113.25
+  154.75 113.25 144.0 122.0 142.5 125.5
+  141.0 129.0 144.25 131.0 140.0 134.5
+  135.75 138.0 136.5 138.75 128.75 142.25
+  121.0 145.75 121.5 149.5 115.75 147.75
+  110.0 146.0 103.0 142.0 99.75 140.5
+  96.5 139.0 94.5 137.25 90.5 136.75
+endline
+
+line wall -subtype presumed
+  90.5 136.75
+  86.5 136.25 78.25 139.25 78.25 139.25
+  smooth off
+endline
+
+line wall
+  150.5 107.5
+  150.5 107.5 129.5 108.0 125.25 107.0
+  121.0 106.0 122.75 107.25 122.75 109.0
+  122.75 110.75 127.0 113.5 129.25 117.0
+  131.5 120.5 133.5 120.0 136.5 119.75
+  139.5 119.5 148.25 113.0 148.25 113.0
+  smooth off
+endline
+
+line wall
+  104.5 94.5
+  104.5 94.5 104.5 97.0 102.25 96.5
+  100.0 96.0 93.0 86.75 93.0 82.75
+  93.0 78.75 93.0 77.25 95.5 77.25
+  98.0 77.25 103.75 84.75 106.0 86.25
+  108.25 87.75 110.75 89.0 110.25 90.0
+  109.75 91.0 108.0 91.75 109.75 92.5
+  111.5 93.25 112.25 93.0 115.75 93.5
+  119.25 94.0 125.25 101.25 129.25 101.25
+  133.25 101.25 148.0 103.25 149.75 103.5
+endline
+
+point 87.88900000000001 130.071 station -name 24
+
+point 99.679 135.791 station -name 23
+
+point 123.629 139.671 station -name 21
+
+point 152.149 113.061 station -name 22
+
+point 119.039 105.751 station -name 20
+
+point 106.02900000000001 93.831 station -name 19
+
+point 94.709 78.811 station -name BA5
+
+endscrap
+
+

@@ -1,0 +1,84 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -166.0 188.25 208.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {26.341700000000003 1 1.0} {32.7169 BA3b} BA3b-map.xvi 0 {}
+
+
+
+scrap SP-BA3b-1 -projection plan -station-names "" "@BA3b" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+point 26.341700000000003 32.7169 station -name BA3b
+
+point 59.0 36.0 label -text "R3"
+
+point 39.25 69.75 label -text "etr."
+
+line pit
+  25.5 56.5
+  25.5 56.5 30.25 47.5 33.25 49.25
+  36.25 51.0 35.25 55.75 34.5 58.5
+endline
+
+point 30.25 79.0 height -value [-4 m]
+
+line rock-border -close on -clip off
+  21.25 33.75
+  26.341700000000003 32.7169
+  25.25 27.25
+  19.0 27.75
+  21.25 33.75
+endline
+
+line rock-border -close on
+  30.25 42.75
+  26.5 44.25
+  26.25 39.0
+  30.0 38.75
+  30.25 42.75
+endline
+
+point 7.0 74.75 altitude -align bottom-left
+
+point 26.341700000000003 32.7169 altitude -align left
+
+point 36.5 -36.75 label -text "<bf>BA3b" -scale xl
+
+point 37.25 6.25 entrance -orientation 0.0
+
+line overhang -close on
+  46.25 33.0
+  46.25 33.0 45.25 40.5 40.75 40.75
+  36.25 41.0 32.25 45.0 31.5 40.25
+  30.75 35.5 26.25 36.25 27.5 32.5
+  28.75 28.75 30.25 26.0 36.75 26.5
+  43.25 27.0 47.0 19.75 47.5 24.75
+  48.0 29.75 46.25 33.0 46.25 33.0
+  smooth off
+endline
+
+line wall
+  7.0 74.75
+  7.0 74.75 26.5 59.25 27.25 56.25
+  28.0 53.25 33.75 45.5 30.5 46.0
+  27.25 46.5 27.0 51.25 25.75 46.75
+  24.5 42.25 24.68 38.68 26.341700000000003 32.7169
+  28.0 26.75 32.25 27.0 36.75 26.5
+  41.25 26.0 47.0 21.0 47.5 24.75
+  48.0 28.5 49.0 26.75 46.25 33.0
+  43.5 39.25 40.25 40.0 38.25 45.25
+  36.25 50.5 36.5 54.25 32.25 57.5
+  28.0 60.75 10.0 76.5 10.0 76.5
+  smooth off
+endline
+
+point 37.25 32.5 station -name 14
+
+point 39.801700000000004 33.996900000000004 station -name 13
+
+point 32.0917 54.6869 station -name 15
+
+point 10.721700000000002 74.3969 station -name 16
+
+endscrap
+
+
