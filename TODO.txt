@@ -14,7 +14,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 		zones A, V, B, CH, D, DR, E, F, BA --> OK
 		zones C, AV, CP, L, LP, LS, T --> A faire
 		
-- Rajouter des visées verticales fictives pour les trous sans topo verticaux
+- Rajouter des visées verticales fictives pour les trous sans topographie et verticaux
 		zones A, AV, B, BA, CH, CP, D, DR, E, F, L, LP, T, V --> OK
 		zones C, LS --> A Faire
 
@@ -32,6 +32,13 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
 	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on / debug scrap-names" des layouts, et les logs
+	* Corriger les erreurs d'aires dans :
+		o SP-Echo (excentriques.th2)
+		o SP-Russesaval (montagnesrusses.th2)
+		o SP-Russesaval2 (montagnesrusses.th2) * 2
+		o SP-Gourance5 (toussaint.th2)
+		o SP-F2-1 (F2.th2)
+		o SP-CP6-2 (CP6.th2)
 
 - Tenter de simplifier la structure de la base de dessins (i.e. utiliser les dessins directement dans les scraps-alone ?)
 
