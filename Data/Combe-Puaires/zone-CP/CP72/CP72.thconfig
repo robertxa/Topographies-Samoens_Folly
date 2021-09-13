@@ -1,16 +1,16 @@
 encoding  utf-8
   
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2020 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-source BA3-tot.th
+source CP72-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../../../../config.thc 
+input ../../../../config.thc 
   
 layout xviexport
 	scale 1 1000
@@ -21,15 +21,15 @@ endlayout
 layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_CPBApra
+	copy Coords_Header_CPCPpra
 	copy drawingconfig
 	copy header-plan-schema
 	copy langue-fr
   
-	doc-title "BA3"
+	doc-title "CP72"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 250
+	base-scale 1 450
 	scale 1 250
 	scale-bar 25 m
 	#rotate 2.25
@@ -60,13 +60,13 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={BA3} 		
+			\cavename={CP72} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		% Ajout de la spéléométrie explorée
-		\cavelength{43\thinspace{}m}
-		\cavedepth{-18\thinspace{}m}
+		#% Ajout de la spéléométrie explorée
+		#\cavelength{10\thinspace{}m}
+		#\cavedepth{-10\thinspace{}m}
 	endcode  
   
 endlayout
@@ -75,12 +75,12 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_CPBApra
+	copy Coords_Header_CPCPpra
 	copy drawingconfig
 	copy header_coupe-schema
 	copy langue-fr
   
-	doc-title "BA3"
+	doc-title "CP72"
 	doc-author "Xavier Robert"
 	base-scale 1 250
 	scale 1 250
@@ -113,13 +113,13 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={BA3} 		
+			\cavename={CP72} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		% Ajout de la spéléométrie explorée
-		\cavelength{43\thinspace{}m}
-		\cavedepth{-18\thinspace{}m}
+		#% Ajout de la spéléométrie explorée
+		#\cavelength{10\thinspace{}m}
+		#\cavedepth{-10\thinspace{}m}
 	endcode  
 
 endlayout
@@ -137,22 +137,22 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/BA3-map.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/BA3-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/CP72-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/CP72-coupe.xvi
 
 # Select maps
-	select MP-BA3-plan-tot@BA3
-	select MC-BA3-coupe-tot@BA3
+	select MP-CP72-plan-tot@CP72
+	select MC-CP72-coupe-tot@CP72
 	  
- export map -o Outputs/BA3-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/BA3-coupe.pdf
-#export map -o Outputs/BA3-plan-Continuations.pdf -layout my_layout-Continuations
-#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/BA3-coupe-Continuations.pdf
+export map -o Outputs/CP72-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP72-coupe.pdf
+#export map -o Outputs/CP72-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP72-coupe-Continuations.pdf
 
-#export model -o Outputs/BA3.lox
+#export model -o Outputs/CP72.lox
   
 # Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/BA3 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP72 -layout my_layout
   
 # Export kml files
-export map -proj plan -fmt kml -o Outputs/BA3.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/CP72.kml -layout my_layout

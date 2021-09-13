@@ -1,0 +1,82 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 210.25 192.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7418 1 1.0} {39.369299999999996 A20} A20-coupe.xvi 0 {}
+
+
+
+scrap SC-A20-1 -projection extended -station-names "" "@A20" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-127.9944 -128.0012 167.3757 -128.0012 0.0 0.0 7.502400539999999 0.0 m]
+
+line wall
+  61.5 38.5
+  61.5 38.5 61.5 32.75 60.25 31.25
+  59.0 29.75 55.0 28.25 54.25 25.25
+  53.5 22.25 53.75 22.25 51.0 18.75
+  48.25 15.25 45.0 6.75 42.5 6.25
+  40.0 5.75 37.25 4.5 37.25 4.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  81.0 40.0
+  81.0 40.0 71.75 41.25 67.75 40.75
+  63.75 40.25 61.5 38.5 61.5 38.5
+  smooth off
+endline
+
+line wall
+  78.25 32.5
+  78.25 32.5 77.5 37.25 78.75 37.5
+  80.0 37.75 81.0 40.0 81.0 40.0
+  smooth off
+endline
+
+line wall -subtype debris
+  61.0 27.75
+  61.0 27.75 61.75 28.0 65.5 29.5
+  69.25 31.0 78.0 30.0 78.25 32.5
+endline
+
+line wall
+  47.25 3.25
+  47.25 3.25 47.25 5.5 50.0 8.5
+  52.75 11.5 53.75 15.75 56.0 18.25
+  58.25 20.75 57.57 27.33 61.0 27.75
+endline
+
+point 67.5 62.75 label -text "<bf>A20" -scale xl
+
+point 77.75 50.25 entrance -orientation 192.6
+
+point 32.25 3.25 narrow-end
+
+line rope
+  62.0 30.5
+  55.75 26.5
+  46.5 5.0
+endline
+
+point 66.5 16.5 height -value [-6 m]
+
+point 47.25 3.25 altitude -align right
+
+point 81.0 40.0 altitude -align right
+
+line wall -subtype debris
+  38.25 2.75
+  38.25 2.75 40.5 2.75 43.25 3.0
+  46.0 3.25 47.25 3.25 47.25 3.25
+  smooth off
+endline
+
+point 43.8018 5.049299999999999 station -name 3
+
+point 60.071799999999996 29.0793 station -name 2
+
+point 63.571799999999996 30.609299999999998 station -name 1
+
+point 78.7418 39.369299999999996 station -name A20
+
+endscrap
+
+

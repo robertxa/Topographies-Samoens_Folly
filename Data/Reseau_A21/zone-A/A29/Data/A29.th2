@@ -1,0 +1,60 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -138.0 -128.75 192.0 232.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {28.8552 1 1.0} {46.8043 A29} A29-map.xvi 0 {}
+
+
+
+scrap SP-A29-1 -projection plan -station-names "" "@A29" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+point 15.25 39.0 altitude -align left
+
+point 40.25 48.0 altitude -align right
+
+point -8.75 102.75 label -text "<bf>A29" -scale xl
+
+point 62.75 27.5 label -text "R4"
+
+point 8.0 70.0 entrance -orientation 149.3
+
+point 42.75 56.75 narrow-end
+
+line overhang -close on
+  28.5 48.25
+  28.5 48.25 14.25 42.75 15.5 36.25
+  16.18 32.73 20.5 30.5 22.25 28.0
+  24.0 25.5 32.0 31.5 31.75 33.5
+  31.5 35.5 31.5 40.5 30.75 42.75
+  30.0 45.0 28.5 48.25 28.5 48.25
+  smooth off
+endline
+
+line wall
+  38.25 48.75
+  38.25 48.75 32.75 32.0 31.75 33.5
+  30.75 35.0 31.5 39.25 30.75 42.75
+  30.0 46.25 28.5 48.25 28.5 48.25
+  smooth off
+endline
+
+line wall
+  28.5 48.25
+  28.5 48.25 12.25 41.0 15.5 36.25
+  18.75 31.5 20.25 28.5 22.25 28.0
+  24.25 27.5 25.0 22.75 26.25 18.75
+  27.5 14.75 31.75 14.5 32.75 19.25
+  33.75 24.0 34.75 21.5 35.5 27.75
+  36.25 34.0 38.25 42.5 38.5 43.75
+  38.75 45.0 40.25 48.0 40.25 48.0
+  smooth off
+endline
+
+point 30.7652 28.1443 station -name 1
+
+point 36.6152 41.744299999999996 station -name 2
+
+point 28.8552 46.8043 station -name A29
+
+endscrap
+
+

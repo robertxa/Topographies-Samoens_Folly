@@ -1,0 +1,63 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 214.5 258.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.7443 1 1.0} {78.73949999999999 A29} A29-coupe.xvi 0 {}
+
+
+
+scrap SC-A29-1 -projection extended -station-names "" "@A29" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+line wall -subtype invisible
+  85.25 79.5
+  85.25 79.5 62.25 90.75 43.75 78.75
+endline
+
+line wall
+  78.0 16.5
+  78.0 16.5 72.5 33.25 70.0 39.5
+  67.5 45.75 63.0 48.75 66.0 51.25
+  69.0 53.75 68.25 58.75 71.5 59.75
+  74.75 60.75 74.75 60.0 77.5 62.0
+  80.25 64.0 80.5 69.5 80.5 73.0
+  80.5 76.5 79.5 77.0 81.0 78.0
+  82.5 79.0 85.25 79.5 85.25 79.5
+  smooth off
+endline
+
+point 72.25 4.75 narrow-end
+
+point 78.0 16.5 altitude -align right
+
+point 85.25 79.5 altitude -align right
+
+point 65.0 98.0 entrance -orientation 182.7
+
+point 63.75 129.5 label -text "<bf>A29" -scale xl
+
+point 34.5 58.25 label -text "R4"
+
+line wall -subtype debris
+  54.75 37.5
+  54.75 37.5 61.0 34.0 64.75 29.75
+  68.5 25.5 76.25 14.5 76.25 14.5
+  smooth off
+endline
+
+line wall
+  43.75 78.75
+  43.75 78.75 50.25 79.0 50.25 77.5
+  50.25 76.0 49.75 76.75 50.25 71.25
+  50.75 65.75 59.25 63.0 55.75 57.0
+  52.25 51.0 50.25 48.0 51.5 43.25
+  52.75 38.5 52.5 38.75 54.75 37.5
+endline
+
+point 74.79429999999999 18.739499999999992 station -name 2
+
+point 59.98429999999999 58.769499999999994 station -name 1
+
+point 78.7443 78.73949999999999 station -name A29
+
+endscrap
+
+

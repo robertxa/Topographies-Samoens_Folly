@@ -1,0 +1,26 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey BA3 -title "BA3"
+	input Data/BA3a.th
+	input Data/BA3b.th
+	input Data/BA5.th
+	input Data/BA3-BA5-surface.th
+		equate BA3a@BA3a BA3a@BA3-5-surface
+		equate BA3b@BA3b BA3b@BA3-5-surface
+		equate BA5@BA5 BA5@BA3-5-surface
+
+	# pour le plan
+	#input Data/BA3a.th2
+	#input Data/BA3b.th2
+	#input Data/BA5.th2
+	# Pour la coupe et le plan
+	#input Data/BA3a-coupe.th2
+	#input Data/BA3b-coupe.th2
+	#input Data/BA5-coupe.th2
+
+	#input BA3-maps.th
+endsurvey

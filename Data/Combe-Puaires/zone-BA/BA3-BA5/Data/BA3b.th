@@ -1,0 +1,64 @@
+# 2021.09.12 created by TopoDroid v 5.1.54
+
+survey BA3b -title "BA3b"
+
+  centerline
+
+    cs lat-long
+		#fix       BA3a       46.10499 6.774266 1578
+		fix       BA3b       46.104967 6.7743 1579 0.00005 0.00005 5
+		#station   BA3a        "BA3A" entrance air-draught
+		station   BA3b        "BA3B" entrance air-draught
+
+    date 2021.09.12
+      team "Xavier Robert" 
+      team "Constance Picque"
+      team "Frédéric Gennerat"
+    explo-date 2013.07.07
+			explo-team "David Parrot"
+			explo-team "Xavier Robert"
+    
+    # team Groupe Spéléologique Vulcain 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    flags not surface
+    # extend auto
+    BA3b . 1.06 1.4 -20.2 # Entrée, sur le rocher ouest
+    BA3b . 1.28 61.9 -21.9
+    BA3b . 1.23 89.2 -14.8
+    BA3b . 0.93 110.4 -26.1
+    BA3b . 0.28 55.4 -47.3
+    extend right
+    BA3b 13 1.00 80.4 -30.8
+    # extend auto
+    13 . 0.61 233.1 -16.7
+    13 . 0.48 275.2 -52.1
+    13 . 0.91 320.4 -0.9
+    13 . 0.58 286.9 -0.1
+    13 . 0.63 215.8 -26.2
+    13 . 0.69 190.1 -39.1
+    extend left
+    13 14 1.69 224.6 -84.1
+    # extend auto
+    14 . 0.66 343.9 39.1
+    14 . 0.61 300.4 -18.9
+    14 . 0.78 332.6 -14.0
+    14 . 0.89 359.1 -23.1
+    14 . 1.95 335.0 -31.1
+    14 . 0.75 312.1 -43.0
+    14 . 1.35 124.7 49.9
+    14 . 0.38 226.3 65.1
+    14 . 1.25 133.9 74.4
+    14 . 0.74 82.0 36.0
+    extend left
+    14 15 1.64 341.7 -26.1
+    # extend auto
+    15 . 2.18 311.9 -64.5
+    extend ignore
+    15 16 3.39 308.5 -57.0  # Visée OK, mais prise à bout de bras sans visibilité, pas sûr que ce soit le fond du puits
+  endcenterline
+
+
+
+endsurvey

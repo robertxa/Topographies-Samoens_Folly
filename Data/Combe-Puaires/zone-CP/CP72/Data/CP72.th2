@@ -1,0 +1,151 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 215.5 221.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {68.8606 1 1.0} {13.633099999999999 0} CP72-map.xvi 0 {}
+
+
+
+scrap SP-CP72-1 -projection plan -station-names "" "@CP72" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 86.25 17.75 label -text "etr."
+
+line pit
+  68.0 8.25
+  68.0 8.25 75.0 12.75 73.5 16.25
+  72.0 19.75 68.75 20.0 68.75 20.0
+  smooth off
+endline
+
+line pit
+  76.25 18.75
+  76.25 18.75 69.5 21.0 68.0 25.75
+  smooth off
+endline
+
+line pit
+  55.0 58.5
+  55.0 58.5 51.25 54.0 46.0 55.5
+  smooth off
+endline
+
+line pit
+  57.0 54.0
+  57.0 54.0 51.25 49.0 47.0 53.0
+  smooth off
+endline
+
+point 51.25 10.5 dig
+
+point 35.25 28.25 air-draught -orientation 98.6 -subtype summer
+
+point 32.75 66.25 narrow-end
+
+point 50.5 92.5 label -text "<bf>CP72" -scale xl
+
+point 77.75 34.75 entrance -orientation 204.4
+
+point 51.5 71.0 entrance -orientation 195.5
+
+point 33.25 57.5 altitude -align left
+
+point 52.25 57.0 altitude -align top-right
+
+point 76.25 22.5 altitude -align right
+
+point 53.25 22.5 altitude -align bottom-left
+
+line overhang -close on
+  49.5 39.5
+  49.5 39.5 54.5 30.25 54.25 29.25
+  54.0 28.25 54.0 28.5 55.0 26.0
+  56.0 23.5 59.75 18.25 61.5 17.75
+  63.25 17.25 69.75 17.25 68.75 20.0
+  67.75 22.75 65.5 33.75 64.25 35.0
+  63.0 36.25 61.0 44.5 60.5 46.0
+  60.0 47.5 58.0 48.75 56.0 51.0
+  54.0 53.25 53.75 57.25 52.25 57.0
+  52.0 56.96 49.25 63.0 48.25 60.25
+  47.25 57.5 50.75 52.75 49.5 51.0
+  48.25 49.25 45.25 47.5 45.25 44.0
+  45.25 43.75 49.5 39.5 49.5 39.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  76.25 22.5
+  76.25 22.5 74.5 28.0 70.0 26.5
+  smooth off
+endline
+
+point 65.75 50.75 height -value [-7 m]
+
+point 60.5 29.75 snow
+
+point 60.5 33.5 snow
+
+point 58.0 38.0 snow
+
+point 56.5 41.75 snow
+
+line wall -close on -reverse on -subtype ice -outline none
+  57.5 44.75
+  57.5 44.75 53.75 48.5 53.75 45.0
+  53.75 41.5 53.75 40.75 55.75 36.75
+  57.75 32.75 61.0 24.0 62.0 27.25
+  63.0 30.5 62.25 34.75 61.0 37.25
+  59.75 39.75 57.5 44.75 57.5 44.75
+  smooth off
+endline
+
+line wall
+  70.0 26.5
+  70.0 26.5 69.25 18.25 68.75 20.0
+  68.25 21.75 66.25 31.25 64.25 35.0
+  62.25 38.75 61.75 43.0 60.5 46.0
+  59.25 49.0 57.75 50.25 56.0 51.0
+  54.25 51.75 52.75 55.25 52.25 57.0
+  51.75 58.75 48.25 63.25 48.25 60.25
+  48.25 57.25 51.75 51.0 49.5 51.0
+  47.25 51.0 46.5 49.25 43.75 51.5
+  41.0 53.75 34.75 59.0 34.75 59.0
+  smooth off
+endline
+
+line wall
+  33.25 57.5
+  33.25 57.5 44.0 45.5 45.25 44.0
+  46.5 42.5 46.75 44.0 49.5 39.5
+  52.25 35.0 54.5 30.5 54.25 29.25
+  54.0 28.0 48.25 30.0 50.5 28.5
+  52.75 27.0 55.5 27.0 55.0 26.0
+  54.5 25.0 50.5 23.5 53.25 22.5
+  56.0 21.5 58.5 20.25 61.5 17.75
+  64.5 15.25 73.25 10.0 74.75 8.25
+  76.25 6.5 77.75 7.25 76.25 9.25
+  74.75 11.25 75.75 12.25 74.75 14.0
+  73.75 15.75 72.75 17.5 73.5 18.75
+  74.25 20.0 76.25 22.5 76.25 22.5
+  smooth off
+endline
+
+point 71.0306 22.7631 station -name 1
+
+point 68.8606 13.633099999999999 station -name 0
+
+point 65.98060000000001 24.153100000000002 station -name 2
+
+point 55.7706 23.5631 station -name 3
+
+point 53.000600000000006 38.7631 station -name 4
+
+point 49.6706 42.6131 station -name 5
+
+point 53.3706 48.2731 station -name 7
+
+point 49.4206 58.393100000000004 station -name CP72
+
+point 36.150600000000004 56.2131 station -name 6
+
+endscrap
+
+

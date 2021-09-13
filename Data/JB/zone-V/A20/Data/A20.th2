@@ -1,0 +1,66 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -136.25 174.5 193.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {21.2074 1 1.0} {32.1436 A20} A20-map.xvi 0 {}
+
+
+
+scrap SP-A20-1 -projection plan -station-names "" "@A20" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-127.9944 -128.0012 167.3757 -128.0012 0.0 0.0 7.502400539999999 0.0 m]
+
+point 41.25 -7.0 narrow-end
+
+point 45.25 21.0 height -value [-6 m]
+
+point -0.25 64.0 label -text "<bf>A20" -scale xl
+
+point 12.25 44.75 entrance -orientation 140.8
+
+point 19.75 32.75 altitude -align left
+
+point 43.75 -0.75 altitude -align right
+
+line pit
+  36.0 19.0
+  36.0 19.0 30.5 19.25 29.0 16.75
+endline
+
+line overhang -close on
+  30.5 32.0
+  29.61 32.61 26.5 33.25 25.0 33.75
+  23.5 34.25 19.75 35.75 19.75 32.75
+  19.75 29.75 18.5 26.5 21.0 26.25
+  23.5 26.0 24.0 24.0 26.0 23.25
+  28.0 22.5 29.0 20.25 29.0 20.25
+  smooth off
+  29.0 20.25 35.5 21.0 33.75 25.0
+  32.0 29.0 35.25 28.75 30.5 32.0
+endline
+
+line wall
+  43.75 -0.75
+  43.75 -0.75 39.0 8.0 38.25 9.25
+  37.5 10.5 37.5 11.0 36.25 13.25
+  35.0 15.5 33.75 17.0 33.75 19.0
+  33.75 21.0 34.5 21.5 33.75 25.0
+  33.0 28.5 32.75 31.5 30.5 32.0
+  28.25 32.5 28.0 32.5 25.0 33.75
+  22.0 35.0 20.0 34.75 19.75 32.75
+  19.5 30.75 17.75 27.0 21.0 26.25
+  24.25 25.5 24.25 25.5 26.0 23.25
+  27.75 21.0 28.0 22.25 29.0 20.25
+  30.0 18.25 32.0 15.25 33.5 11.5
+  35.0 7.75 40.75 0.5 40.75 0.5
+  smooth off
+endline
+
+point 39.0074 5.3536 station -name 3
+
+point 30.75 19.75 station -name 2
+
+point 32.6674 22.1936 station -name 1
+
+point 21.2074 32.1436 station -name A20
+
+endscrap
+
+

@@ -1,0 +1,29 @@
+# 2021.09.12 created by TopoDroid v 5.1.54
+
+survey BA3-5-surface
+
+  centerline
+
+    date 2021.09.12
+      team "Xavier Robert" 
+      team "Constance Picque"
+      team "Frédéric Gennerat"
+    
+    # team Groupe Spéléologique Vulcain 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino 
+    flags surface
+    # Du BA3a au BA3b
+    BA3a BA3b 3.24 139.8 9.8
+    # Du BA3a au BA5
+    extend right
+    BA3a 17 4.43 38.0 11.5
+    17 18 4.20 34.9 1.2
+    18 BA5 2.62 54.6 -4.8
+
+  endcenterline
+
+
+
+endsurvey

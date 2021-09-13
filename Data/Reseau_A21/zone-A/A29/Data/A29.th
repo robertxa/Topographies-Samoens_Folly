@@ -1,0 +1,45 @@
+# 2021.09.12 created by TopoDroid v 5.1.54
+
+survey A29 -title "A29" -entrance A29
+
+  centerline
+
+    cs lat-long
+    fix A29 46.10473  6.78154  1830
+
+    date 2021.09.12 
+      team "Xavier Robert"
+    explo-date 2021.09.12 
+      explo-team "Xavier Robert"
+    # team Groupe Spéléologique Vulcain 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    A29 . 1.08 235.2 -10.7  # Entrée
+    A29 . 1.34 198.1 -13.4
+    A29 . 1.88 185.7 -12.8
+    A29 . 1.53 197.1 -37.1
+    A29 . 1.09 251.4 -75.5
+    A29 . 2.06 193.4 -63.5
+    A29 . 3.13 186.2 -55.4
+    A29 . 1.49 180.1 -45.1
+    extend left
+    A29 1 1.74 173.7 -46.8
+    # extend auto
+    1 . 0.30 233.4 -8.3
+    1 . 0.34 166.5 -26.2
+    1 . 0.43 333.7 -39.2
+    1 . 0.55 323.3 -72.5
+    1 . 1.29 174.6 -58.3
+    1 . 1.42 172.6 -79.2
+    1 . 1.11 217.5 -73.8
+    1 . 1.24 96.4 -73.5
+    1 . 2.44 23.7 -69.8
+    extend right
+    1 2 2.71 22.8 -69.7 # Colmaté par blocs, pas de courant d'air
+    # extend auto
+    1 . 2.42 23.2 -70.0
+  endcenterline
+
+endsurvey
