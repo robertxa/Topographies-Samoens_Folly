@@ -56,18 +56,18 @@ endcenterline
   
 centerline
    date 2004.09.02
- 
-  team "Xavier Robert"
-  team "Stéphane Lips"
-  explo-date 2004.09.02
-  explo-team "Xavier Robert"
-  explo-team "Stéphane Lips"
+      team "Xavier Robert"
+      team "Stéphane Lips"
+   explo-date 2004.09.02
+      explo-team "Xavier Robert"
+      explo-team "Stéphane Lips"
 
    units lenght meters
    units compass degrees
    units clino degrees
    calibrate counter 0 0.500
-  units counter centimeters
+   units counter centimeters
+   
    data topofil from to fromcount tocount compass backclino left right up down
    extend left
    0.14 1 27.0 1020.0    132.0000       28.00000      0.4000000      0.4000000      0.8000000      0.6000000    

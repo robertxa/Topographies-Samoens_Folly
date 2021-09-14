@@ -43,10 +43,10 @@ survey BA3a -title "BA3a"
     0 . 0.85 167.8 27.1
     0 . 1.28 145.4 42.7
     0 . 0.43 34.9 60.9
-    extend vertical
-    0 1 1.30 351.2 -16.7
-    #station   1   continuation explored 10m air-draught
     extend left
+    0 1 1.30 351.2 -16.7
+    station   1 "A revoir"  continuation explored 10m air-draught
+    extend right
     0 2 0.89 193.8 57.1
     # extend auto
     2 . 0.78 118.3 6.4
@@ -67,7 +67,7 @@ survey BA3a -title "BA3a"
     2 . 2.71 184.7 48.8
     2 . 1.12 268.6 63.8
     2 . 1.97 229.1 62.1
-    extend left
+    extend right
     2 3 2.72 197.0 53.7
     # extend auto
     3 . 0.41 59.3 7.3
@@ -94,7 +94,7 @@ survey BA3a -title "BA3a"
     3 . 1.55 143.2 17.3
     extend right
     3 4 4.00 149.6 15.0
-    extend left
+    extend right
     3 5 2.29 279.2 72.6
     # extend auto
     5 . 1.18 261.5 65.1
@@ -111,7 +111,7 @@ survey BA3a -title "BA3a"
     5 . 3.15 113.9 -71.1
     5 . 3.28 125.4 -62.7
     5 . 1.42 138.8 -76.0
-    extend left
+    extend right
     5 6 0.69 291.4 55.8
     # extend auto
     6 . 0.81 349.0 0.5
@@ -153,9 +153,9 @@ survey BA3a -title "BA3a"
     7 . 2.35 341.6 -28.3
     extend left
     7 8 3.85 337.5 -29.4
-    extend vertical
+    extend left
     7 9 3.14 4.6 -38.5
-    extend right
+    extend left
     7 10 1.39 72.6 -3.3
     # extend auto
     10 . 0.68 329.9 0.7
@@ -183,7 +183,7 @@ survey BA3a -title "BA3a"
     10 . 8.60 75.2 29.2
     10 . 8.89 75.2 29.4
     10 . 8.63 75.3 29.4
-    extend ignore
+    extend left
     10 11 8.90 75.1 29.4
     extend right
     7 BA3a 7.04 150.8 51.6  # Entrée, sur le rocher sud

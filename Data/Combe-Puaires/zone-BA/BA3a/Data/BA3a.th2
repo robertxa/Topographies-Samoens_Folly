@@ -70,6 +70,7 @@ line pit
   92.75 206.25
   92.75 206.25 92.0 198.5 95.25 196.5
   98.5 194.5 101.5 194.25 106.0 194.75
+  smooth off
 endline
 
 line pit -close on
@@ -85,6 +86,7 @@ line pit
   116.25 135.5
   116.25 135.5 120.25 129.75 125.0 129.75
   129.75 129.75 133.0 130.75 135.0 131.5
+  smooth off
 endline
 
 point 140.0 47.5 label -text "<bf>BA3a" -scale xl
@@ -134,6 +136,7 @@ point 105.75 131.25 label -text "R3"
 line pit
   111.0 188.0
   111.0 188.0 98.0 189.25 96.5 180.25
+  smooth off
 endline
 
 line wall
@@ -180,6 +183,7 @@ scrap SP-BA3a-2 -projection plan -station-names "" "@BA3a" -author 2021 "Xavier 
 line wall -subtype invisible
   175.0 86.25
   175.0 86.25 177.5 84.0 179.0 87.5
+  smooth off
 endline
 
 point 179.0 87.5 altitude -align right
@@ -220,16 +224,19 @@ endline
 line pit
   191.25 262.0
   191.25 262.0 193.25 252.0 200.5 250.75
+  smooth off
 endline
 
 line pit
   167.25 235.25
   167.25 235.25 172.25 222.25 178.5 219.5
+  smooth off
 endline
 
 line pit
   152.0 222.0
   152.0 222.0 150.25 214.75 158.25 212.5
+  smooth off
 endline
 
 point 157.25 195.5 altitude -align left
@@ -264,6 +271,7 @@ point 170.25 195.75 dig
 line pit
   145.25 151.5
   145.25 151.5 141.5 146.75 144.5 135.5
+  smooth off
 endline
 
 line wall
@@ -276,6 +284,8 @@ line wall
   137.75 149.0 136.5 151.5 136.5 151.5
   smooth off
 endline
+
+point 181.25 141.0 label -text "R4"
 
 line wall
   179.0 87.5
