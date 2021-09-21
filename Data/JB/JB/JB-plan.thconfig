@@ -255,6 +255,7 @@ export map -fmt esri -o Outputs/3D/JB-map #-layout my_layout
 
 # Export des fichiers kml
 export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2021.kml
+export model -fmt kml -o Outputs/2D/jb_m-Xav-2021.kml
 
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent

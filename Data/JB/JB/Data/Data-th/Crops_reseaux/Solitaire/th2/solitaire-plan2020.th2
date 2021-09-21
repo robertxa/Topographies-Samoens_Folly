@@ -1,7 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -131.0 2726.4266 2568.9462
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -648.2499999999999 -276.80380000000014 2757.358 2735.1032
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2077.3199999999997 1 1.0} {1580.4 xx0init@solitaire} solitaire-plan2020.xvi 0 {}
+##XTHERION## xth_me_image_insert {2078.17 1 1.0} {1583.4761999999998 xx0init@solitaire} solitaire-plan2021.xvi 0 {}
 
 
 
@@ -467,6 +468,8 @@ endscrap
 
 scrap SP-Solitaire2020-2 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2726.4266000000002 -128.0 0.0 0.0 72.50243564 0.0 m]
 
+point 699.3599999999999 2165.5062 station -name 2021-AM-1@solitaire2020a
+
 line wall
   727.5 1954.0
   727.5 1954.0 725.0 1956.5 720.5 1959.0
@@ -482,20 +485,40 @@ line wall
   727.0 2051.5 727.5 2053.5 724.25 2061.5
   721.0 2069.5 719.75 2087.25 721.25 2092.25
   722.75 2097.25 725.75 2102.0 729.5 2105.75
-  733.25 2109.5 732.75 2114.25 729.5 2121.75
+endline
+
+line pit
+  730.25 2112.0
+  730.25 2112.0 725.5 2119.25 732.5 2120.0
+endline
+
+line wall
+  739.25 2108.75
+  739.25 2108.75 730.0 2120.75 729.5 2121.75
+endline
+
+line wall
+  729.5 2105.75
+  729.5 2105.75 727.5 2116.25 730.5 2113.25
+  733.5 2110.25 735.75 2106.75 735.75 2106.75
+  smooth off
+endline
+
+line wall
+  729.5 2121.75
   726.25 2129.25 723.25 2135.25 723.75 2141.25
   724.25 2147.25 726.75 2153.25 725.25 2158.0
   723.75 2162.75 720.75 2169.5 716.75 2170.5
   712.75 2171.5 712.5 2176.25 705.75 2174.25
   699.0 2172.25 700.75 2173.25 695.25 2168.25
   689.75 2163.25 688.5 2161.5 685.5 2160.75
-  682.5 2160.0 679.5 2159.5 679.5 2159.5
+  682.5 2160.0 680.0 2156.25 680.0 2156.25
   smooth off
 endline
 
 line wall
-  683.5 2155.0
-  683.5 2155.0 689.0 2158.25 694.25 2157.75
+  685.5 2152.5
+  685.5 2152.5 689.0 2158.25 694.25 2157.75
   699.5 2157.25 704.75 2158.0 703.25 2154.0
   701.75 2150.0 699.25 2151.0 701.75 2145.5
   704.25 2140.0 712.25 2140.75 711.0 2134.5
@@ -504,9 +527,9 @@ line wall
   smooth off
 endline
 
-point 683.5 2155.0 altitude -align bottom-left
+point 745.25 2102.0 continuation -attr Code E -attr Cavite JB -attr CA "?" -text "Départ après E ?"
 
-point 684.5 2087.25 continuation -attr Code E -attr Cavite JB -attr CA "?" -text "Départ après E15 ?"
+point 685.25 2087.25 continuation -attr Code E -attr Cavite JB -attr CA "?" -text "Départ après E15 ?"
 
 point 696.5 1992.25 height -value [+2 m]
 
@@ -535,8 +558,6 @@ line water-flow
   smooth off
 endline
 
-point 671.0 2160.5 continuation -attr Code E -attr Cavite JB -attr CA "Courant d'aspirant en été" -text "Suite du méandre à atteindre après une E10 facile (artif), courant d'air aspirant en été"
-
 area blocks
   l115-711-2179
 endarea
@@ -561,7 +582,7 @@ line pit
   smooth off
 endline
 
-point 683.25 2176.75 height -value [+10 m]
+point 738.75 2185.5 height -value [+13 m]
 
 point 740.5 2136.0 height -value [+5 m]
 
@@ -634,6 +655,229 @@ point 732.2799999999996 1984.97 station -name 32@solitaire2020a
 point 714.3299999999997 1985.6 station -name 31@solitaire2020a
 
 point 707.8699999999997 1966.38 station -name 30@solitaire2020a
+
+endscrap
+
+
+
+scrap SP-Sol2021-1 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2726.4266000000002 -128.0 0.0 0.0 72.50243564 0.0 m]
+
+line pit
+  677.5 2155.5
+  677.5 2155.5 676.25 2149.5 681.0 2142.5
+  smooth off
+endline
+
+point 667.5 2124.0 height -value [+4 m]
+
+line wall
+  659.25 2143.0
+  659.25 2143.0 667.75 2144.25 670.75 2143.25
+  673.75 2142.25 677.5 2140.75 681.0 2142.5
+  684.5 2144.25 685.5 2152.5 685.5 2152.5
+  smooth off
+endline
+
+line pit
+  676.25 2154.75
+  676.25 2154.75 670.25 2145.75 672.25 2140.0
+  smooth off
+endline
+
+point 652.0 2141.5 narrow-end
+
+line wall
+  671.5 2162.25
+  671.5 2162.25 669.25 2153.0 667.75 2149.5
+  666.25 2146.0 659.5 2145.5 658.75 2144.5
+  smooth off
+endline
+
+line wall
+  680.0 2156.25
+  680.0 2156.25 677.0 2152.25 675.75 2152.75
+  674.5 2153.25 675.75 2155.25 675.75 2157.0
+  675.75 2158.75 676.5 2161.25 676.5 2161.25
+  smooth off
+endline
+
+point 668.9699999999999 2148.2162 station -name 2021-AM-3@solitaire2020a
+
+point 675.6699999999998 2148.9161999999997 station -name 2021-AM-2@solitaire2020a
+
+endscrap
+
+
+
+scrap SP-Sol2021-2 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2726.4266000000002 -128.0 0.0 0.0 72.50243564 0.0 m]
+
+line wall
+  612.25 2257.5
+  612.25 2257.5 627.25 2248.5 635.25 2248.5
+  643.25 2248.5 671.5 2247.75 673.75 2246.25
+  676.0 2244.75 676.0 2243.25 680.5 2244.75
+  685.0 2246.25 683.5 2253.25 689.5 2247.0
+  695.5 2240.75 706.5 2224.5 708.75 2221.0
+  711.0 2217.5 717.25 2207.75 715.25 2203.5
+  713.25 2199.25 707.75 2185.5 704.25 2183.75
+  700.75 2182.0 698.25 2179.75 692.75 2179.25
+  687.25 2178.75 674.5 2177.25 671.5 2174.25
+  668.5 2171.25 670.5 2164.5 671.5 2162.25
+  smooth off
+endline
+
+line wall
+  695.5 2289.0
+  695.5 2289.0 688.0 2281.0 682.25 2280.75
+  676.5 2280.5 662.5 2289.5 654.5 2292.0
+  646.5 2294.5 639.0 2300.25 633.75 2300.75
+  628.5 2301.25 623.5 2300.0 618.0 2300.25
+  smooth off
+endline
+
+line wall
+  705.0 2155.25
+  705.0 2155.25 713.0 2169.25 713.5 2172.5
+  714.0 2175.75 716.25 2186.5 717.75 2191.5
+  719.25 2196.5 722.25 2202.25 721.0 2206.5
+  719.75 2210.75 718.75 2219.75 714.5 2225.25
+  710.25 2230.75 707.75 2234.5 707.75 2238.5
+  707.75 2242.5 707.5 2244.5 705.5 2249.5
+  703.5 2254.5 696.5 2258.75 693.75 2263.5
+  691.0 2268.25 693.25 2278.5 694.25 2280.0
+  695.25 2281.5 699.0 2286.5 699.0 2286.5
+  smooth off
+endline
+
+point 714.0 2194.25 pebbles
+
+point 718.25 2209.75 pebbles
+
+point 715.5 2216.5 pebbles
+
+point 707.5 2230.0 pebbles
+
+line rock-border -close on
+  699.0 2243.25
+  696.5 2240.5
+  699.0 2237.75
+  701.25 2239.0
+  699.0 2243.25
+endline
+
+line rock-border -close on
+  695.5 2249.0
+  693.0 2247.75
+  694.5 2244.5
+  697.0 2245.75
+  695.5 2249.0
+endline
+
+line rock-border -close on
+  698.0 2258.0
+  691.25 2258.0
+  693.75 2253.25
+  698.5 2253.25
+  698.0 2258.0
+endline
+
+line rock-border -close on
+  685.75 2255.25
+  682.5 2250.75
+  688.0 2249.25
+  692.0 2252.0
+  685.75 2255.25
+endline
+
+line rock-border -close on
+  684.75 2261.0
+  690.25 2259.75
+  690.1299999999999 2254.6462
+  681.5 2256.5
+  684.75 2261.0
+endline
+
+line pit
+  666.25 2292.75
+  666.25 2292.75 637.75 2263.5 649.0 2242.5
+  smooth off
+endline
+
+point 602.75 2281.75 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Oeufs - Solitaire" -attr CA "?" -text "La suite est là, il y a du volume !"
+
+point 706.0 2296.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Oeufs - Solitaire" -attr CA "?" -text "Départ après E non vu"
+
+line rock-border -close on
+  697.0 2170.75
+  690.25 2172.75
+  685.5 2170.25
+  692.25 2168.75
+  697.75 2167.5
+  697.0 2170.75
+endline
+
+line rock-border -close on
+  695.25 2177.75
+  690.0 2175.25
+  694.75 2173.0
+  702.0 2174.75
+  701.5 2178.25
+  695.25 2177.75
+endline
+
+line pit
+  700.25 2160.5
+  700.25 2160.5 704.75 2157.5 709.75 2160.5
+  smooth off
+endline
+
+point 701.75 2149.5 water-flow -orientation 14.9
+
+point 673.25 2345.5 label -text "<center>salle du<br>Départ"
+
+point 620.75 2230.75 height -value [+16 m]
+
+point 710.25 2269.25 height -value [+3 m]
+
+point 633.75 2300.75 altitude -align top
+
+line pit
+  645.0 2299.25
+  645.0 2299.25 634.75 2291.25 631.25 2278.0
+  627.75 2264.75 627.5 2252.75 627.5 2245.75
+  smooth off
+endline
+
+line pit
+  694.75 2267.25
+  694.75 2267.25 686.25 2272.5 683.0 2282.75
+  smooth off
+endline
+
+line wall
+  676.5 2161.25
+  676.5 2161.25 676.5 2164.5 678.75 2166.25
+  681.0 2168.0 689.75 2168.75 693.0 2166.75
+  696.25 2164.75 702.0 2161.75 702.0 2159.75
+  702.0 2157.75 701.75 2155.25 701.75 2155.25
+  smooth off
+endline
+
+point 630.43 2265.1762 station -name 2021-AM-11@solitaire2020a
+
+point 690.1299999999999 2254.6462 station -name 2021-AM-10@solitaire2020a
+
+point 709.3 2222.7461999999996 station -name 2021-AM-9@solitaire2020a
+
+point 716.5799999999999 2205.6061999999997 station -name 2021-AM-8@solitaire2020a
+
+point 712.06 2179.9762 station -name 2021-AM-7@solitaire2020a
+
+point 701.8899999999999 2168.0562 station -name 2021-AM-6@solitaire2020a
+
+point 673.75 2174.0362 station -name 2021-AM-5@solitaire2020a
+
+point 676.7299999999999 2167.9161999999997 station -name 2021-AM-4@solitaire2020a
 
 endscrap
 

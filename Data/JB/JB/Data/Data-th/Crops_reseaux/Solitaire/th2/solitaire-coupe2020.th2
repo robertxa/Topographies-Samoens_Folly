@@ -1,7 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -180.6600000000002 -128.75 2870.6171 1387.8432
+##XTHERION## xth_me_area_adjust -479.9100000000001 -196.1568 2965.0681000000004 1595.2771
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2352.12 1 1.0} {915.627 xx0init@solitaire} solitaire-coupe2020.xvi 0 {}
+##XTHERION## xth_me_image_insert {2351.89 1 1.0} {916.0921999999999 xx0init@solitaire} solitaire-coupe2021.xvi 0 {}
 
 
 
@@ -136,14 +137,14 @@ endline
 
 line wall
   1580.5 981.25
-  1588.75 990.75 1584.0 1009.25 1590.5 1015.25
-  1597.0 1021.25 1611.75 1026.75 1611.75 1026.75
+  1588.75 990.75 1579.0 1022.25 1585.5 1028.25
+  1587.32 1029.93 1588.25 1032.5 1588.25 1032.5
   smooth off
 endline
 
-point 1602.0 1059.75 air-draught -orientation 87.0 -subtype summer
+point 1532.75 1027.25 air-draught -orientation 26.4 -subtype summer
 
-point 1611.75 1026.75 altitude -align bottom-right
+point 1585.5 1028.25 altitude -align bottom-right
 
 point 1469.75 1048.75 label -text "<center>méandre<br>des Oeufs"
 
@@ -209,16 +210,14 @@ point 1527.25 913.75 height -value [+2 m]
 
 point 1592.25 960.25 height -value [+5 m]
 
-point 1610.25 996.25 height -value [+10 m]
+point 1610.25 996.25 height -value [+13 m]
 
 line rope
-  1602.5 1030.75
-  1581.0 1023.5
+  1584.51 1031.2122
+  1580.25 1031.0
   1558.75 982.0
   1559.5 938.75
 endline
-
-point 1622.0 1041.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Suite du Méandre à continuer après E10, courant d'air aspirant en été"
 
 point 1421.75 933.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Départ en hauteur à atteindre en escalade"
 
@@ -266,10 +265,11 @@ line wall -subtype presumed
   smooth off
 endline
 
+point 1570.05 1023.2022 station -name 2021-AM-1@solitaire2020a
+
 line wall
-  1610.75 1045.0
-  1610.75 1045.0 1587.0 1042.0 1578.5 1041.5
-  1570.0 1041.0 1568.0 1050.75 1561.5 1045.0
+  1575.25 1054.0
+  1570.75 1049.75 1568.0 1050.75 1561.5 1045.0
   1555.0 1039.25 1554.75 1004.0 1549.25 996.5
   smooth off
 endline
@@ -353,6 +353,209 @@ point 1126.3999999999996 739.917 station -name 2019d-FD-7@solitaire
 point 1122.4399999999998 740.437 station -name 2@solitaire2020a
 
 point 1116.6799999999998 743.627 station -name 0@solitaire2020a
+
+endscrap
+
+
+
+scrap SC-Sol2021-1 -projection extended -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2726.4266000000002 -128.0 0.0 0.0 72.50243564 0.0 m]
+
+line wall
+  1570.0 1067.25
+  1570.0 1067.25 1578.0 1057.0 1575.25 1054.0
+  smooth off
+endline
+
+line wall
+  1612.25 1096.75
+  1612.25 1096.75 1617.0 1077.5 1614.25 1071.0
+  1611.5 1064.5 1604.5 1059.0 1602.5 1058.5
+  1600.5 1058.0 1599.5 1058.75 1598.0 1059.5
+  1596.5 1060.25 1594.0 1066.0 1591.25 1064.5
+  1588.5 1063.0 1585.5 1058.75 1582.5 1060.75
+  1579.5 1062.75 1575.0 1069.75 1575.0 1069.75
+  smooth off
+endline
+
+point 1706.0 1174.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Suite du Méandre à continuer après E, courant d'air aspirant en été"
+
+point 1712.75 1089.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Méandre à continuer après E13"
+
+point 1615.0 1108.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Cheminée remontante à escalader"
+
+line wall
+  1698.75 1217.0
+  1698.75 1217.0 1694.75 1207.0 1692.0 1201.75
+  1689.25 1196.5 1683.75 1200.0 1681.5 1189.75
+  1679.25 1179.5 1672.75 1161.5 1672.75 1153.25
+  1672.75 1145.0 1672.0 1133.75 1669.25 1131.0
+  1666.5 1128.25 1664.25 1126.75 1664.25 1121.5
+  1664.25 1116.25 1666.25 1103.5 1663.75 1102.25
+  1661.25 1101.0 1655.0 1104.0 1654.75 1100.0
+  1654.5 1096.0 1653.5 1094.0 1651.25 1092.0
+  1649.0 1090.0 1644.5 1091.75 1644.25 1090.0
+  1644.0 1088.25 1643.75 1086.25 1640.75 1086.25
+  1637.75 1086.25 1638.25 1085.5 1634.0 1086.75
+  1629.75 1088.0 1626.0 1089.5 1625.0 1090.5
+  1624.0 1091.5 1621.25 1098.0 1621.25 1098.0
+  smooth off
+endline
+
+line rock-border -close on
+  1694.25 1139.5
+  1690.25 1138.5
+  1692.5 1134.75
+  1695.0 1135.5
+  1694.25 1139.5
+endline
+
+line wall
+  1705.0 1093.5
+  1705.0 1093.5 1695.5 1086.75 1695.5 1090.75
+  1695.5 1094.75 1696.25 1109.75 1696.0 1115.0
+  1695.75 1120.25 1692.75 1121.5 1695.75 1125.5
+  1698.75 1129.5 1703.75 1138.25 1703.75 1138.25
+  smooth off
+endline
+
+line wall
+  1687.25 1073.75
+  1687.25 1073.75 1690.5 1072.75 1690.75 1074.75
+  1691.0 1076.75 1690.25 1079.0 1693.0 1079.5
+  1695.75 1080.0 1693.75 1082.25 1695.75 1082.5
+  1697.75 1082.75 1703.75 1084.25 1703.75 1084.25
+  smooth off
+endline
+
+line rock-border -close on
+  1671.5 1072.0
+  1668.0 1071.25
+  1669.75 1068.5
+  1672.5 1069.0
+  1671.5 1072.0
+endline
+
+line rock-border -close on
+  1664.5 1070.75
+  1661.25 1067.25
+  1663.25 1066.25
+  1666.75 1067.25
+  1664.5 1070.75
+endline
+
+point 1629.25 1052.25 pebbles
+
+point 1615.75 1052.0 pebbles
+
+line rock-border -close on
+  1606.75 1048.75
+  1603.5 1048.5
+  1605.75 1047.0
+  1606.75 1048.75
+endline
+
+line rock-border -close on
+  1603.5 1048.5
+  1601.25 1048.0
+  1601.0 1045.5
+  1603.5 1046.5
+  1603.5 1048.5
+endline
+
+line rock-border -close on
+  1668.0 1074.0
+  1665.02 1076.0922
+  1664.5 1069.25
+  1668.0 1069.0
+  1668.0 1074.0
+endline
+
+point 1618.0 1092.75 water-flow -orientation 174.3
+
+line wall -subtype debris
+  1637.25 1049.25
+  1637.25 1049.25 1645.25 1049.25 1647.5 1051.25
+  1649.75 1053.25 1664.0 1062.5 1667.0 1063.25
+  1670.0 1064.0 1674.75 1066.25 1678.75 1066.25
+  1682.75 1066.25 1687.25 1073.75 1687.25 1073.75
+  smooth off
+endline
+
+line wall -subtype pebbles
+  1614.0 1048.75
+  1614.0 1048.75 1620.25 1050.0 1624.75 1049.75
+  1629.25 1049.5 1634.25 1049.25 1637.25 1049.25
+  smooth off
+endline
+
+point 1665.25 1183.0 air-draught -orientation 25.9 -subtype summer
+
+point 1569.25 1077.0 narrow-end
+
+line rope
+  1601.75 1053.5
+  1584.25 1050.5
+  1584.51 1031.2122
+endline
+
+line wall -subtype debris
+  1602.25 1044.5
+  1602.25 1044.5 1606.75 1046.25 1608.25 1046.75
+  1609.75 1047.25 1612.0 1047.75 1614.0 1048.75
+  smooth off
+endline
+
+line rope
+  1697.0 1088.0
+  1691.75 1088.0
+  1691.75 1079.25
+endline
+
+line rope
+  1702.25 1201.0
+  1696.25 1200.0
+  1695.33 1133.1022
+  1689.75 1132.75
+  1688.5 1077.0
+endline
+
+point 1645.75 1139.5 height -value [+16 m]
+
+point 1708.5 1066.5 height -value [+3 m]
+
+point 1689.5 1111.75 u:man_c
+
+point 1584.75 1160.25 label -text "<center>puits du<br>Départ"
+
+point 1703.75 1138.25 altitude -align right
+
+point 1542.5 1056.25 height -value [+4 m]
+
+line wall
+  1588.25 1032.5
+  1588.25 1032.5 1587.25 1041.0 1589.25 1041.0
+  1591.25 1041.0 1596.75 1041.5 1597.75 1041.75
+  1598.75 1042.0 1599.25 1043.25 1602.25 1044.5
+  smooth off
+endline
+
+point 1695.33 1133.1022 station -name 2021-AM-11@solitaire2020a
+
+point 1665.02 1076.0922 station -name 2021-AM-10@solitaire2020a
+
+point 1646.4099999999999 1056.1422 station -name 2021-AM-9@solitaire2020a
+
+point 1637.1 1054.3322 station -name 2021-AM-8@solitaire2020a
+
+point 1624.09 1055.9322 station -name 2021-AM-7@solitaire2020a
+
+point 1616.25 1055.7921999999999 station -name 2021-AM-6@solitaire2020a
+
+point 1601.87 1049.9822 station -name 2021-AM-5@solitaire2020a
+
+point 1598.47 1047.8522 station -name 2021-AM-4@solitaire2020a
+
+point 1587.8799999999999 1045.7921999999999 station -name 2021-AM-3@solitaire2020a
 
 endscrap
 
