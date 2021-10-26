@@ -1,0 +1,85 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.25 -130.25 256.25 231.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.73599999999999 1 1.0} {62.993500000000004 CP87} CP87-2020-coupe.xvi 0 {}
+
+
+
+scrap SC-CP87-1 -projection extended -station-names "" "@CP87" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+line wall -subtype invisible
+  127.25 25.5
+  127.25 25.5 122.5 39.0 113.0 41.5
+  103.5 44.0 96.5 47.0 90.5 52.5
+  84.5 58.0 82.25 60.25 78.5 69.75
+  74.75 79.25 70.75 85.25 70.75 85.25
+  smooth off
+endline
+
+line wall
+  115.25 17.0
+  115.25 17.0 116.0 24.0 115.5 26.75
+  115.0 29.5 102.25 41.75 107.75 40.25
+  113.25 38.75 118.25 34.0 121.0 31.75
+  123.75 29.5 127.25 25.5 127.25 25.5
+  smooth off
+endline
+
+point 18.5 62.5 label -text "etr."
+
+point -5.0 3.5 continuation -attr Code A -attr Cavite CP87 -attr Reseau "Combe aux Puaires" -attr CA "Courant d'air" -text "Méandre étroit à courant d'iar à continuer"
+
+point 87.25 102.25 label -text "<bf>CP87" -scale xl
+
+point 86.5 83.0 entrance -orientation 216.9
+
+point 82.5 62.25 altitude -align right
+
+point 51.5 36.0 altitude -align bottom-right
+
+point 14.75 16.25 air-draught -orientation 54.5
+
+line wall -subtype invisible
+  2.5 22.75
+  16.75 -1.25
+endline
+
+line wall -subtype debris
+  99.0 16.75
+  99.0 16.75 106.0 15.0 109.75 15.0
+  113.5 15.0 115.25 13.25 115.25 17.0
+endline
+
+line wall
+  16.75 -1.25
+  16.75 -1.25 34.0 15.75 39.0 20.0
+  44.0 24.25 48.75 34.75 51.5 36.0
+  54.25 37.25 51.25 41.75 56.0 44.25
+  60.75 46.75 64.0 49.75 68.75 52.25
+  73.5 54.75 77.75 59.5 79.0 59.0
+  80.25 58.5 79.75 60.5 83.75 56.0
+  87.75 51.5 90.0 50.0 94.75 45.25
+  99.5 40.5 100.5 36.25 101.75 30.5
+  103.0 24.75 99.0 20.25 99.0 16.75
+endline
+
+line wall
+  70.75 85.25
+  70.75 85.25 71.75 71.75 72.75 68.75
+  73.75 65.75 60.25 63.75 55.75 63.5
+  51.25 63.25 50.75 55.75 46.75 50.5
+  42.75 45.25 36.0 45.0 32.5 42.25
+  29.0 39.5 23.75 39.5 18.75 34.0
+  13.75 28.5 2.5 22.75 2.5 22.75
+  smooth off
+endline
+
+point 34.99599999999999 32.8035 station -name 2
+
+point 51.46599999999999 47.6935 station -name 1
+
+point 78.73599999999999 62.993500000000004 station -name CP87
+
+endscrap
+
+

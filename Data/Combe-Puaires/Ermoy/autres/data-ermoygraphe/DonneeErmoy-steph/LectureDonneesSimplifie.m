@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Tracé des données climatiques et de la hauteur d'eau dans l'Ermoy %%%%
+%%%% Tracï¿½ des donnï¿½es climatiques et de la hauteur d'eau dans l'Ermoy %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clc ;
@@ -13,7 +13,7 @@ Date = datenum(Data(:,1:6));
 Hauteur = Data(:,8);
 
 
-%% Ouverture du fichier des données météos
+%% Ouverture du fichier des donnï¿½es mï¿½tï¿½os
 
 %[num, txt]= xlsread('DonneeClimato.xls');
 load RawData
@@ -44,7 +44,7 @@ for NumPoint=1:NbrePoints
 end
 
 
-% Classement des données par ordre chronologique
+% Classement des donnï¿½es par ordre chronologique
 [DateDonneeClimato,IX] = sort(DateDonneeClimato);
 Temperature=Temperature(IX);
 Precipitation = Precipitation(IX);
@@ -74,17 +74,24 @@ ylim([-20 60]);
 GraduationsPrincipales = datenum(2005, 1:12, 1, 0, 0, 0);
 set(gca, 'XTick',GraduationsPrincipales, 'XTicklabel',datestr(GraduationsPrincipales,19) )
 grid on
-ylabel('Hauteur d''eau [m] - Température [°C] - Precipitation [mm]')
-legend({'Hauteur d''eau','Température ', 'Précipitation'})
+ylabel('Hauteur d''eau [m] - Tempï¿½rature [ï¿½C] - Precipitation [mm]')
+legend({'Hauteur d''eau','Tempï¿½rature ', 'Prï¿½cipitation'})
 
 
 
-%% A Développer %%%%
+%% A DÃ©velopper %%%%
 %
 
-%% Traiter les données :
-%	1) Calculer les vitesses (dérivée de la courbe initiale de l'Ermoygraphe) --> Donne les vitesses de crue et de décrue en fonction de la hauteur d'eau --> Donne des infos sur les potentielles sorties à différentes altitudes / tailles des volumes noyés ? Probablement que nous pouvons faire la simplification débit entrant proportionnel à précipitations, du moins en été. A réfléchir avec les différents graphiques
-%	2) Calculer les points d'inflexions (Dérivée seconde de la courbe initiale de l'Ermoygraphe) --> Donne les points caractérisiques ?
-%	3) Faire une transformée de Fourier de la courbe initiale de l'Ermoygraphe --> Donne les fréquences propres caractéristiques du réseau.
-%	4) Faire une transformée de Fourier sur les précipitations et les Températures --> A comparer avec le point 3)  Mets en évidence les relations entre 
+%% Traiter les donnÃ©es :
+%	1) Calculer les vitesses (dÃ©rivÃ©e de la courbe initiale de l'Ermoygraphe) 
+%       --> Donne les vitesses de crue et de dï¿½crue en fonction de la hauteur d'eau 
+%       --> Donne des infos sur les potentielles sorties Ã  diffÃ©rentes altitudes / tailles des volumes noyÃ©s ?
+%           Probablement que nous pouvons faire la simplification dÃ©bit entrant proportionnel ï¿½ prï¿½cipitations,
+%           du moins en Ã©tÃ©. A rÃ©flÃ©chir avec les diffÃ©rents graphiques
+%	2) Calculer les points d'inflexions (DÃ©rivÃ©e seconde de la courbe initiale de l'Ermoygraphe) 
+%       --> Donne les points caractÃ©ristiques ?
+%	3) Faire une transformÃ©e de Fourier de la courbe initiale de l'Ermoygraphe 
+%       --> Donne les frÃ©quences propres caractÃ©ristiques du rï¿½seau.
+%	4) Faire une transformÃ©e de Fourier sur les prÃ©cipitations et les TempÃ©ratures 
+%       --> A comparer avec le point 3)  Mets en Ã©vidence les relations entre 
 

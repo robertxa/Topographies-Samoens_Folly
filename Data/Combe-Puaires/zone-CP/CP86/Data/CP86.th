@@ -1,0 +1,60 @@
+# 2021.10.17 created by TopoDroid v 5.1.54
+
+survey CP86 -title "CP86" -entrance CP86
+
+  centerline
+
+    cs lat-long
+    fix CP86 46.11663 6.80177 2231
+
+    date 2021.10.16 
+      team "Xavier Robert"
+      team "Constance Picque"
+    explo-date 2021.10.16 
+      explo-team "Xavier Robert"
+      explo-team "Constance Picque"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    0 . 0.83 78.8 -6.9
+    0 . 1.53 194.2 2.3
+    0 . 1.27 333.3 -21.0
+    0 . 2.01 136.4 -87.5
+    0 . 1.31 89.2 -55.1
+    0 . 3.25 112.0 -44.0
+    0 . 2.44 153.9 -32.9
+    0 . 4.01 132.9 -14.3
+    0 . 5.34 123.3 22.9
+    0 . 4.43 117.7 -1.1
+    0 . 4.01 128.8 -28.5
+    0 . 5.45 121.8 23.3
+    extend right
+    0 1 5.46 122.1 25.4
+    extend left
+    0 2 4.33 299.1 -59.0
+    # extend auto
+    2 . 4.09 300.8 -59.2
+    extend left
+    0 3 1.39 12.9 52.5
+    # extend auto
+    3 . 2.46 196.8 2.0
+    3 . 2.68 160.2 -1.8
+    3 . 1.73 147.5 -1.2
+    3 . 1.47 133.7 -4.9
+    3 . 2.57 192.7 -29.5
+    3 . 1.76 204.7 -36.0
+    3 . 3.43 174.2 -44.1
+    3 . 1.17 286.8 8.5
+    3 . 1.29 233.0 0.7
+    3 . 0.58 271.1 -41.8
+    extend left
+    3 CP86 1.25 289.6 15.3
+
+    # Dèv : 12 m
+    # Den : -6 m
+
+  endcenterline
+
+endsurvey

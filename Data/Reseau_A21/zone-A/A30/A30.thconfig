@@ -14,7 +14,7 @@ encoding  utf-8
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2") 
 
-source A29-tot.th
+source A30-tot.th
  
 # Add config file
 input ../../../../config.thc 
@@ -44,7 +44,7 @@ layout my_layout
 	copy langue-fr
   
    # Titre  
-   doc-title "A29"
+   doc-title "A30"
    # Auteur
    doc-author "Xavier Robert"
   
@@ -128,7 +128,8 @@ layout my_layout
   
    # Options pour afficher le squelette topo,
    # les points et le nom des stations topos
-  #debug station-names
+	symbol-hide line survey
+	#debug station-names
   
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -154,7 +155,7 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={A29} 		
+			\cavename={A30} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -171,7 +172,7 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr
 	
-	doc-title "A29"
+	doc-title "A30"
 	base-scale 1 100
 	scale-bar 10 m
 	scale 1 100
@@ -187,7 +188,7 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend off
-	legend-width 26 cm
+	legend-width 17 cm
 	#map-header 5 50 e
 	map-header 55 10 n
 	map-header-bg off
@@ -211,7 +212,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={A29} 		
+			\cavename={A30} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -232,22 +233,22 @@ endlayout
 
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o Data/A29-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/A29-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/A30-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/A30-coupe.xvi
 
 # Select maps
-	select MP-A29-tot@A29
-	select MC-A29-tot@A29
+	select MP-A30-tot@A30
+	select MC-A30-tot@A30
 	  
-export map -o Outputs/A29-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/A29-coupe.pdf
-#export map -o Outputs/A29-plan-Continuations.pdf -layout my_layout-Continuations
-#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/A29-coupe-Continuations.pdf
+export map -o Outputs/A30-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/A30-coupe.pdf
+#export map -o Outputs/A30-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/A30-coupe-Continuations.pdf
 
-export model -o Outputs/A29.lox
+export model -o Outputs/A30.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Outputs/A29 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/A30 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/A29.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/A30.kml -layout my_layout

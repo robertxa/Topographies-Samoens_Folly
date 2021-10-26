@@ -594,5 +594,33 @@ map MC-Tr-V4-JD -title "V4b - Cascade Jean Dupont"
 endmap
 
 
+map MC-Aval -title "V4-Siphons"     
+	MC-Tr-V4-JD
+	break
+	#MC-V4-V6-Mais
+	#break
+	MC-rivieredebut
+	break
+	MC-puitsAlain
+	break   
+	#MC-Bivouac-500-Gourance
 
+	MC-bivouac-500
+	#break
+	#MC-P11
+	break
+	MC-siphon69
+	#break
+	#MC-plafond-Gourance
+	break
+	MC-gourance
+
+
+	break
+	MC-aval-800
+	break
+	MC-aval-900
+	break
+	MC-siphons
+endmap
    

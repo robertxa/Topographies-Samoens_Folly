@@ -1,0 +1,131 @@
+encoding  utf-8
+
+# Copyright (C) 2021 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+# INTRO
+
+# le signe "#" en début de ligne signifie que la ligne est commentee. Elle ne
+# sera donc pas lue lors de la compilation. 
+
+# 1-SOURCES 
+source ../../Data/jb.th
+
+# Add config file
+input config.thc 
+
+# Add the entrance coordinates
+#input legendes-Traversees/entrances_coordinates-V4-JD.th
+  
+ # 2-LAYOUT
+# Debut de la definition du Layout "xviexport"
+#layout xviexport
+#  # echele auquel on veut faire la topo
+#  scale 1 1000
+#  # taille de la grille
+#  grid-size 10 10 10 m
+#  # mettre la grille en arrière plan
+#  grid bottom
+#endlayout
+## fin de la définition du layout "xviexport"
+
+
+#debut de la definition du layout "my_layout"
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	copy drawingconfig
+	#copy headerl 			# Pour modifier le header/cartouche
+	copy header_coupe 
+	copy langue-fr
+
+  cs UTM32
+  
+  
+  base-scale 1 4000
+  scale 1 2400
+  scale-bar 400 m
+  #grid-size 250 250 1000 m  
+  grid off
+  symbol-assign point station:temporary SKBB 
+  
+  # une couleur de fond, 85% blanc = 15% noir
+  #color map-bg 90  
+  transparency on
+  # ça marche seulement si transparency est "on" 90% blanc= 10% noir
+  opacity 75
+  
+  # Auteur 
+  doc-author "Xavier Robert"
+  # Titule
+  doc-title "Gouffre Jean-Bernard - Coupe développée"
+  map-header 20 90 nw	
+  map-header-bg off
+  
+  legend off
+  legend-width 18 cm
+#  map-comment "Synthèse 2010, Coupe développée"
+ 
+  statistics explo off
+  statistics topo off
+  code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
+  statistics copyright all
+  
+  symbol-hide line survey
+	debug station-names   
+	
+	symbol-hide group all
+  symbol-show point label
+	#symbol-hide special north-arrow
+	#symbol-hide special scale-bar
+	symbol-show line wall
+	symbol-show line contour
+	symbol-show line rock-border
+	symbol-show line border
+	symbol-show point entrance
+	symbol-show point breakdown-choke
+	symbol-show point continuation
+	symbol-show point water-flow
+	symbol-show point height
+	#symbol-show point label
+	symbol-show point ice
+	symbol-show point snow
+	symbol-show line water-flow 
+	symbol-show area water 
+	symbol-show area sump 
+
+  layers on
+              
+# Titre                         
+    code tex-map
+  \edef\temp{\the\cavename}        % cavename from Therion   
+  \edef\nostring{}                 % empty string 
+  \ifx\temp\nostring             % test if cavename is empty
+        % if empty reassign cavename to describe selected maps as a group
+
+		\cavename={Gouffre Jean-Bernard} 
+		
+  \else % if not empty keep the value set by therion, or assign an override cavename here
+  \fi
+  \newtoks\club \club={Groupe Spéléologique Vulcain}
+  #\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2020)}
+  \newtoks\synth \synth={Xavier Robert (2021)}
+  #\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+  endcode   
+  
+  # Rajout des logos du club
+	#map-image 73 35	nw	../../../Logos/vulcain.jpg
+	#map-image 80 40	nw	../../../Logos/vulcain2.jpg
+  
+ endlayout
+# Fin de la definition du Layout "normal"
+
+# 3-EXPORT
+# Export du fichier pdf de la coupe. 
+# ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
+select  MC-Aval@Jean-Bernard
+ export map -projection extended -fmt pdf -layout my_layout -o ../../Outputs/2D/Traversees/JB-Classique-V4-Siphon-coupeTexte.pdf

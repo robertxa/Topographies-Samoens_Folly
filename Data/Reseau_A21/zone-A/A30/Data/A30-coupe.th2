@@ -1,0 +1,68 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 338.5 316.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {157.482 1 1.0} {141.7338 A30} A30-coupe.xvi 0 {}
+
+
+
+scrap SC-A30-1 -projection extended -station-names "" "@A30" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 130.0 186.75 label -text "<bf>A30" -scale xl
+
+point 142.75 159.5 entrance -orientation 135.1
+
+point 209.25 105.25 height -value [-6 m]
+
+point 185.25 143.5 altitude -align right
+
+point 206.5 41.0 altitude -align right
+
+line rope
+  176.5 131.25
+  184.25 128.5
+  187.5 63.25
+endline
+
+point 207.0 31.5 continuation -attr Code P -attr Cavite A30 -attr Reseau A21 -text "A voir, mais probablement bouché et peu intéressant"
+
+line wall -subtype invisible
+  193.5 161.75
+  193.5 161.75 168.75 163.75 143.5 155.0
+  118.25 146.25 98.75 143.75 87.25 139.5
+  75.75 135.25 72.25 132.0 72.25 132.0
+  smooth off
+endline
+
+line wall
+  72.25 132.0
+  72.25 132.0 82.0 131.25 87.25 128.0
+  92.5 124.75 86.5 123.25 98.25 120.5
+  110.0 117.75 128.0 116.5 138.25 117.0
+  148.5 117.5 162.25 120.5 166.25 120.25
+  170.25 120.0 169.25 119.0 170.75 111.5
+  172.25 104.0 172.5 80.5 175.75 72.0
+  179.0 63.5 190.5 60.25 194.75 55.25
+  199.0 50.25 202.25 40.75 202.25 40.75
+  smooth off
+endline
+
+line wall
+  206.5 41.0
+  206.5 41.0 200.5 58.5 198.75 65.5
+  197.0 72.5 196.0 81.75 193.25 90.25
+  190.5 98.75 188.5 106.5 188.25 114.0
+  188.0 121.5 186.75 120.75 185.75 132.5
+  184.75 144.25 186.25 155.75 187.5 158.0
+  188.75 160.25 193.5 161.75 193.5 161.75
+  smooth off
+endline
+
+point 201.882 52.63380000000001 station -name 2
+
+point 182.002 115.7138 station -name 1
+
+point 157.482 141.7338 station -name A30
+
+endscrap
+
+

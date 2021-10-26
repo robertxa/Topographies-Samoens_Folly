@@ -1,0 +1,53 @@
+# 2021.10.17 created by TopoDroid v 5.1.54
+
+survey A30 -title "A30" -entrance A30
+
+  centerline
+
+    cs lat-long
+    fix A30 46.10538  6.78332 1874
+
+    date 2021.10.17 
+      team "Xavier Robert"
+      team "Constance Picque"
+    explo-date 2021.10.17 
+      explo-team "Xavier Robert"
+      explo-team "Constance Picque"
+      
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    A30 . 1.16 24.3 -15.1
+    A30 . 1.32 70.6 -31.5
+    A30 . 2.07 101.7 -18.9
+    A30 . 1.35 146.3 -13.9
+    A30 . 1.20 211.6 -19.8
+    A30 . 4.36 263.5 -16.7
+    A30 . 2.05 262.2 -52.2
+    A30 . 1.19 46.4 -81.7
+    A30 . 1.45 97.2 -56.4
+    A30 . 3.18 70.4 -49.9
+    A30 . 1.64 44.7 -56.6
+    A30 . 3.61 58.0 -52.1
+    A30 . 1.68 59.7 -42.5
+    extend right
+    A30 1 2.27 78.0 -46.7
+    # extend auto
+    1 . 2.99 329.0 -66.4
+    1 . 3.88 61.2 -73.1
+    1 . 2.40 34.9 -63.4
+    1 . 0.85 344.7 -45.8
+    1 . 0.45 64.8 -29.0
+    1 . 0.95 88.1 -73.7
+    1 . 0.79 256.1 -19.1
+    1 . 0.29 3.4 72.2
+    extend right
+    1 2 4.20 73.7 -72.5
+
+    # Dèv : 6 m
+    # Den : -6 m
+    
+  endcenterline
+
+endsurvey

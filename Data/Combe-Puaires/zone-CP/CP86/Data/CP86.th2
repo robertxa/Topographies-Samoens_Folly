@@ -1,0 +1,112 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 212.0 277.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {50.1931 1 1.0} {108.291 0} CP86-2020-map.xvi 0 {}
+
+
+
+scrap SP-CP86-1 -projection plan -station-names "" "@CP86" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+line rock-border -close on
+  37.75 119.5
+  32.5 120.75
+  36.75 114.75
+  39.5 117.75
+  37.75 119.5
+endline
+
+line rock-border -close on
+  45.75 115.25
+  40.25 115.5
+  41.25 111.5
+  46.5 112.0
+  45.75 115.25
+endline
+
+line chimney -close on
+  79.0 90.25
+  79.0 90.25 73.0 93.0 73.0 91.0
+  73.0 89.0 75.25 82.75 78.75 84.75
+  82.25 86.75 79.0 90.25 79.0 90.25
+  smooth off
+endline
+
+point 28.25 119.75 altitude -align bottom-left
+
+point 22.0 127.25 continuation -attr Code A -attr Cavite CP86 -attr Reseau "Combe aux Puaires" -text "Méandre descendant à voir, passage entre les blocs possibles"
+
+point 82.75 86.5 altitude -align right
+
+line wall
+  28.25 119.75
+  28.25 119.75 40.25 112.5 43.0 109.0
+  45.75 105.5 50.0 99.5 52.0 97.25
+  54.0 95.0 70.75 86.0 75.0 83.75
+  79.25 81.5 82.75 82.0 82.75 86.5
+  82.75 91.0 84.0 87.25 77.5 92.5
+  71.0 97.75 63.5 104.0 58.0 107.25
+  52.5 110.5 38.25 120.5 36.5 121.25
+  34.75 122.0 31.0 125.0 31.0 125.0
+  smooth off
+endline
+
+point 81.4931 85.301 station -name 1
+
+point 35.5131 117.931 station -name 2
+
+endscrap
+
+
+
+scrap SP-CP86-2 -projection plan -station-names "" "@CP86" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 45.0 121.75 altitude -align top-right
+
+point 36.5 98.0 height -value [-4 m]
+
+point 29.25 147.75 label -text "<bf>CP86" -scale xl
+
+point 39.5 130.75 entrance -orientation 162.9
+
+line rock-border -close on
+  47.25 118.0
+  43.25 114.5
+  46.5 112.0
+  50.25 116.25
+  47.25 118.0
+endline
+
+line rock-border -close on
+  55.0 110.5
+  49.75 113.0
+  48.25 110.75
+  53.75 107.5
+  55.0 110.5
+endline
+
+line pit
+  60.75 112.0
+  60.75 112.0 52.0 103.25 45.5 102.0
+  smooth off
+endline
+
+line wall -close on -subtype pit
+  45.0 121.75
+  45.0 121.75 40.5 121.5 40.5 119.25
+  40.5 117.0 43.5 107.25 47.25 103.25
+  51.0 99.25 53.5 95.0 55.5 95.0
+  57.5 95.0 68.25 101.25 64.75 103.25
+  61.25 105.25 55.75 114.5 53.25 116.5
+  50.75 118.5 45.0 121.75 45.0 121.75
+  smooth off
+endline
+
+point 43.463100000000004 118.491 station -name CP86
+
+point 52.1531 114.661 station -name 3
+
+point 50.1931 108.291 station -name 0
+
+endscrap
+
+
