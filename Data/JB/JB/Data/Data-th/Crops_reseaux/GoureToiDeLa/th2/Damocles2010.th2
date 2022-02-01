@@ -1,0 +1,87 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 3696.5 3748.5123
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {3301.3439999999996 1 1.0} {2662.165 2014-SL-0@GoureToiDeLa.GoureToi} GoureToiDeLa-map2022.xvi 0 {}
+
+
+
+scrap SP-Damocles-3 -projection plan -station-names "" "@Damocles" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+
+point 3389.67 2653.78 station -name Gn.16
+
+point 3404.91 2648.63 station -name Gn.15
+
+point 3418.32 2659.26 station -name Gn.14
+
+point 3428.15 2654.33 station -name Gn.13
+
+point 3438.24 2667.24 station -name Gn.11
+
+point 3441.32 2657.43 station -name Gn.10
+
+point 3455.9139999999998 2662.655 station -name Gn.8
+
+point 3429.314 2666.235 station -name Gn.12
+
+point 3483.2439999999997 2657.3450000000003 station -name Gn.7
+
+line wall
+  3390.5 2657.75
+  3390.5 2657.75 3401.25 2651.25 3403.75 2651.25
+  3406.25 2651.25 3414.25 2661.25 3417.5 2660.5
+  3420.75 2659.75 3425.0 2655.5 3425.75 2658.75
+  3426.5 2662.0 3428.75 2670.25 3430.0 2669.5
+  3431.25 2668.75 3436.25 2671.5 3438.5 2669.5
+  3440.75 2667.5 3440.75 2660.75 3442.5 2660.75
+  3444.25 2660.75 3453.75 2666.0 3456.5 2665.25
+  3459.25 2664.5 3477.5 2659.0 3482.0 2659.75
+  3486.5 2660.5 3488.25 2663.0 3491.25 2663.0
+  3494.25 2663.0 3498.5 2660.0 3502.5 2661.5
+endline
+
+point 3373.5 2667.75 continuation -attr Code P -attr Cavite JB -attr Reseau "La Gourance - Damocles" -text "Arrêt sur Grand Puits ; Puits de la Gourance"
+
+point 3494.25 2642.25 label -text "E2"
+
+point 3489.25 2625.0 label -text "M. Damoclès"
+
+point 3480.75 2657.0 blocks
+
+point 3486.75 2659.5 blocks
+
+line pit
+  3388.75 2649.25
+  3388.75 2649.25 3392.5 2649.0 3393.5 2652.75
+  3394.5 2656.5 3392.75 2659.75 3392.75 2659.75
+  smooth off
+endline
+
+line pit -reverse on
+  3494.75 2656.0
+  3494.75 2656.0 3490.0 2657.5 3490.25 2660.25
+  3490.5 2663.0 3492.5 2666.5 3492.5 2666.5
+  smooth off
+endline
+
+line wall
+  3504.0 2658.25
+  3498.75 2658.25 3493.75 2658.5 3491.75 2657.5
+  3489.75 2656.5 3490.0 2654.25 3485.0 2654.5
+  3480.0 2654.75 3461.5 2661.0 3457.25 2660.25
+  3453.0 2659.5 3444.5 2653.0 3442.25 2654.5
+  3440.0 2656.0 3440.75 2664.75 3437.75 2664.75
+  3434.75 2664.75 3431.5 2667.0 3431.25 2664.5
+  3431.0 2662.0 3434.75 2654.25 3431.5 2653.25
+  3428.25 2652.25 3421.0 2658.0 3418.75 2656.25
+  3416.5 2654.5 3409.5 2646.75 3406.75 2646.75
+  3404.0 2646.75 3387.75 2653.0 3387.75 2653.0
+  smooth off
+endline
+
+point 3491.87 2659.98 station -name Gn.6
+
+point 3502.1639999999998 2660.275 station -name Gn.5
+
+endscrap
+
+

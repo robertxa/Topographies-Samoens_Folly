@@ -10,64 +10,64 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	input data-th/ReseauCP
 	
 	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12
-	equate 1.0@aval-CP12 1.0@ReseauCP
+		equate 1.0@aval-CP12 1.0@ReseauCP
 	input data-th/Scraps-alone/CP12/Data/CP12
-	equate 1.19@aval-CP12 1.19@CP12
+		equate 1.19@aval-CP12 1.19@CP12
 	
 	input data-th/Scraps-alone/CP14/Data/CP14
-	equate 9.17@ReseauCP 9.17@CP14
-	equate E.9@2xxpats E.9@CP14
+		equate 9.17@ReseauCP 9.17@CP14
+		equate E.9@2xxpats E.9@CP14
 	
 	input data-th/Scraps-alone/CP16/Data/CP16
-	equate 20.13@billy 20.13@CP16
+		equate 20.13@billy 20.13@CP16
 	
 	input data-th/Scraps-alone/CP19b/Data/CP19b
-	equate 6.23@reptiles 6.23@CP19b
+		equate 6.23@reptiles 6.23@CP19b
 	input data-th/Scraps-alone/Reptiles/Data/reptiles
-	equate 1.28@aval-CP12 1.28@reptiles	
+		equate 1.28@aval-CP12 1.28@reptiles	
 	
 	input data-th/Scraps-alone/Billy/Data/billy
-	equate 11.22@ReseauCP 11.22@billy
-	equate 11.25@billy 11.25@ReseauCP
+		equate 11.22@ReseauCP 11.22@billy
+		equate 11.25@billy 11.25@ReseauCP
 	input data-th/Scraps-alone/Diverticules_Billy/Data/Billy1
-	equate 21.34@billy Xa-2015-0@Billy1
-	equate 21.28@billy Xa-2015-9@Billy1
+		equate 21.34@billy Xa-2015-0@Billy1
+		equate 21.28@billy Xa-2015-9@Billy1
 	input data-th/Scraps-alone/Diverticules_Billy/Data/Billy2
-	equate 21.11@billy Xa-2015-14@Billy2
+		equate 21.11@billy Xa-2015-14@Billy2
 	input data-th/Scraps-alone/Diverticules_Billy/Data/Billy3
 	##equate 21.06@ReseauCP Xa-2015-25@Billy3
-	equate 21.09@billy Xa-2015-25@Billy3	# Raccord sur méandre Billy non sûr, il faudra vérifier sur le terrain !!!
+		equate 21.09@billy Xa-2015-25@Billy3	# Raccord sur méandre Billy non sûr, il faudra vérifier sur le terrain !!!
 	
 	input data-th/Scraps-alone/2xxpats/Data/2xxpats
-	equate 11.35@ReseauCP 11.35@2xxpats
+		equate 11.35@ReseauCP 11.35@2xxpats
 	
 	
 	input data-th/Scraps-alone/Espoir/Data/espoir
-	equate 16.15@ReseauCP 16.15@espoir
+		equate 16.15@ReseauCP 16.15@espoir
 	
 	input data-th/Scraps-alone/shunt_cata/Data/shunt_cata
-	equate 30.19@espoir 30.19@shunt_cata
-	equate 13.7@espoir 13.7@shunt_cata
+		equate 30.19@espoir 30.19@shunt_cata
+		equate 13.7@espoir 13.7@shunt_cata
 	
 	#input data-th/riviere_amont
 	input data-th/Scraps-alone/Riviere_amont/data/riviere_amont
-	equate 2008.S.0@espoir 2008.S.0@riviere_amont
-	equate 14.4@riviere_aval 40.0@riviere_amont
-	##equate 40.60@ReseauCP 40.60@riviere_amont
-	##equate 40.50@ReseauCP 40.50@riviere_amont
+		equate 2008.S.0@espoir 2008.S.0@riviere_amont
+		equate 14.4@riviere_aval 40.0@riviere_amont
+		##equate 40.60@ReseauCP 40.60@riviere_amont
+		##equate 40.50@ReseauCP 40.50@riviere_amont
 	#input data-th/Scraps-alone/Affluent_Steph/Data/affluent_steph 
 	input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont
-	equate 40.34@riviere_amont Xa-2014-14@affluent_Steph
+		equate 40.34@riviere_amont Xa-2014-14@affluent_Steph
 	
 	input data-th/Scraps-alone/Riviere_amont/data/rivamont2019
-	equate 52.0@riviere_amont 52.0@rivamont2019
+		equate 52.0@riviere_amont 52.0@rivamont2019
 	
 	input data-th/Scraps-alone/Riviere_aval/Data/riviere_aval
-	equate 17.13@ReseauCP 17.13@riviere_aval
-	equate 13.7@espoir 13.7@riviere_aval
+		equate 17.13@ReseauCP 17.13@riviere_aval
+		equate 13.7@espoir 13.7@riviere_aval
 	
 	input data-th/Scraps-alone/Clowns/Data/BivouacCP
-	equate 16.26@ReseauCP 16.26@BivouacCP
+		equate 16.26@ReseauCP 16.26@BivouacCP
 	
 	
    
@@ -78,52 +78,52 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	input data-th2/TeteHomme.th2
 	input data-th2/CP12.th2
 	
-	join SP-4vents-2 SP-4vents-4
-	join SP-4vents-2 SP-Massues-1
-	join SP-huit-1 SP-CP14-2
-	join SP-huit-1 SP-CP14-2
+		join SP-4vents-2 SP-4vents-4
+		join SP-4vents-2 SP-Massues-1
+		join SP-huit-1 SP-CP14-2
+		join SP-huit-1 SP-CP14-2
 
 	
 	input data-th2/clowns.th2
-	join SP-clown-1 SP-Massues-2
+		join SP-clown-1 SP-Massues-2
  
  	input data-th2/Billy1.th2
- 	join SP-billy2015_1 SP-Billy-3 #-count 2
- 	join SP-billy2015_1 SP-Billy-4
+ 		join SP-billy2015_1 SP-Billy-3 #-count 2
+ 		join SP-billy2015_1 SP-Billy-4
  	
  	input data-th2/Billy2.th2
  	
  	input data-th2/Billy3.th2
- 	join SP-Billy3-s1 SP-Billy-4 -count 2
+ 		join SP-Billy3-s1 SP-Billy-4 -count 2
  	
  	input data-th2/riv_amont.th2
- 	join SP-palm-1 SP-Pierrot-6
- 	join SP-amont-dessous-1 SP-Pierrot-6
- 	join SP-affsteph-1 SP-Pierrot-1
- 	# Homme-8 et Homme-7 à commenter !!! C'est tout pourri ! c'est ce qui a été dessiné à partir des data des Cataphiles...
- 	join SP-homjct-2 SP-Homme-3
- 	join SP-homjct-2 SP-Massues-3
+ 		join SP-palm-1 SP-Pierrot-6
+ 		join SP-amont-dessous-1 SP-Pierrot-6
+ 		join SP-affsteph-1 SP-Pierrot-1
+ 		# Homme-8 et Homme-7 à commenter !!! C'est tout pourri ! c'est ce qui a été dessiné à partir des data des Cataphiles...
+ 		join SP-homjct-2 SP-Homme-3
+ 		join SP-homjct-2 SP-Massues-3
  	
  	input data-th2/rivamont2019.th2
- 	join SP-rivamont2019-3 SP-palm-2
+ 		join SP-rivamont2019-3 SP-palm-2
  	
  	input data-th2/CP14-2011.th2
- 	join SP-CP14_2008-1 SP-CP14-2
+ 		join SP-CP14_2008-1 SP-CP14-2
 
 
 
 # Pour importer les différents fichiers de dessins en Coupe
 	
 	input data-th/Scraps-alone/Clowns/Data/clowns-coupe.th2
- 	join SC-clowns-1 SC-bivouac-2
+ 		join SC-clowns-1 SC-bivouac-2
  	
  	# le Sirocco et les 4 vents
  	input data-th/Scraps-alone/Huit/huit-coupe.th2
- 	join SC-aval-CP12-2 SC-huit-1
+ 		join SC-aval-CP12-2 SC-huit-1
  	
  	#join sirocco-SC4 rasoir-SC?
  	input data-th/Scraps-alone/2xxpats/Data/2xxpats-coupe.th2
- 	join SC-sirocco-4 SC-2xxpats-1
+ 		join SC-sirocco-4 SC-2xxpats-1
  	
  	## Le méandre Billy
  	input data-th/Scraps-alone/Billy/Data/billy-coupe.th2
@@ -134,41 +134,41 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
  	
  	# Le réseau de l'Espoir
  	input data-th/Scraps-alone/Espoir/Data/espoir-coupe.th2
- 	#join espoir-SC1 massues-SC2
+ 		#join espoir-SC1 massues-SC2
  	
  	## La rivière à Pierrot
  	input data-th/Scraps-alone/Riviere_amont/data/rivamont2014-coupe.th2
  	
  	input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont_coupe.th2
- 	join  SC-hautspots-3 SC-aff_coupe_1
+ 		join  SC-hautspots-3 SC-aff_coupe_1
  	input data-th/Scraps-alone/Riviere_amont/data/rivamont2019-coupe.th2
- 	join SC-rivamont2019-1 SC-Palmier-1
+ 		join SC-rivamont2019-1 SC-Palmier-1
  	
  	## La rivière Aval
  	input data-th/Scraps-alone/Riviere_aval/Data/riviere_aval-coupe.th2
-	join SC-RivAval-3 SC-bivouacpierrot-1
-	join SC-Massues-1 SC-massues-2
+		join SC-RivAval-3 SC-bivouacpierrot-1
+		join SC-Massues-1 SC-massues-2
 	
 	input data-th/Scraps-alone/shunt_cata/Data/shunt_cata-coupe.th2
-	#join
+		#join
 	
 	# CP16
 	input data-th/Scraps-alone/CP16/Data/CP16-coupe.th2
-	#join ???
+		#join ???
 	
 	# CP14
 	input data-th/Scraps-alone/CP14/Data/CP14-coupe.th2
-	join SC-CP14-2 SC-sirocco-1
+		join SC-CP14-2 SC-sirocco-1
 
 	# CP12, CP19b et Reptiles
 	input data-th/Scraps-alone/CP12/Data/CP12-coupe.th2
 	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12-coupe.th2
-	join SC-CP12-1 SC-aval-CP12-1
-	#join CP12-SC1 P18-SC1 ???
+		join SC-CP12-1 SC-aval-CP12-1
+		#join CP12-SC1 P18-SC1 ???
 	input data-th/Scraps-alone/Reptiles/Data/reptiles-coupe.th2
-	join SC-Reptiles-1 SC-aval-CP12-1
+		join SC-Reptiles-1 SC-aval-CP12-1
 	input data-th/Scraps-alone/CP19b/Data/CP19b-coupe.th2
-	# Pas de join ?
+		# Pas de join ?
 
 	# Add maps definition
 	input ReseauCP-maps-plan.th

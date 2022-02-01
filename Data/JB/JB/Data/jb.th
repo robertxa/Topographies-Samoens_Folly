@@ -61,7 +61,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Data-th/jb-riv.th
 		equate  Jf.14@jb-amonts2  Jf.14@jb-riv
 		equate  Kg.0@jb-riv  Kg.0@jb-riv2
-    	equate  Kg.9@jb-riv  Kg.9@jb-riv2
     	equate  Ke.29@jb-riv  Ke.29@jb-riv2
     	equate  Ke.43@jb-riv  Ke.43@jb-riv2
     	equate  Ke.33@jb-riv  Ke.33@jb-riv2
@@ -77,16 +76,21 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	## Gourance
 	input Data-th/Crops_reseaux/Gourance2013/Data/Gourance2013.th
 		equate  2013c-xa-11@Gourance2013 Kh.4@jb-riv2
+	
+	input Data-th/Crops_reseaux/GoureToiDeLa/th/Damocles2010.th
+		#equate  Kg.9@jb-riv  Kg.9@jb-riv2	# Damocles 2010 si toujours dans fichier jb-riv2.th
+		equate Kg.9@Damocles Kg.9@jb-riv	# Si dans fichier Damocles2010.th --> A faire !!!
+
 	input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa.th
 		#equate  2014-SL-35@GoureToiDeLa Kh.48@jb-riv2     # C'est celui qui a l'air de coller le mieux sur la topo, et avec le bouclage de 2022 (il y a une erreur de 15 m en Y)
-		#equate  2014-SL-35@GoureToiDeLa Kh.46@jb-riv2    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
-		equate  2014-SL-35@GoureToiDeLa Kh.47@jb-riv2 
+		#equate  2014-SL-35@GoureToiDeLa Kh.47@jb-riv2 
+		equate  2014-SL-35@GoureToiDeLa Kh.46@jb-riv2    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
 	input Data-th/Crops_reseaux/GoureToiDeLa/th/GoureToiDeLa2019.th
 		equate 2019-FD-12@Goure2019 2014-SL-24@GoureToiDeLa
 		equate 2019-FD-E15@Goure2019 2014-SL-24@GoureToiDeLa
 	input Data-th/Crops_reseaux/GoureToiDeLa/th/gour2022.th
 		equate 9@gour2022 2014-SL-15@GoureToiDeLa
-		##equate 21@gour2022 Gn.1@Damocles	# Il y a un petit décalage
+		equate 21@gour2022 Gn.1@Damocles	# Il y a un petit décalage
 		#equate 15@gour2022 Gn.4@Damocles	# A peu près OK
 		equate 15@gour2022 Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
 
@@ -109,7 +113,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	##Add Maps definitions
 	input jb-maps-plan.th
-	input jb-maps-coupe.th
+	#input jb-maps-coupe.th
 	
 	centerline -title "Explorations non topographiées ou topographies manquantes"
 	## Rajout des longueurs explorées, non topo, ou topos perdues
@@ -303,14 +307,25 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ## La zone de la Gourance
 	input Drawing-th2/Plan/gourance.th2
 		join SP-gourance-1 SP-bivouac500c
-	input Drawing-th2/Plan/GoureToiDeLa.th2
-	input Drawing-th2/Plan/GoureToiDeLa2015.th2
+	#input Drawing-th2/Plan/GoureToiDeLa.th2
+	input Data-th/Crops_reseaux/GoureToiDeLa/th2/GoureToiDeLa.th2
+	#input Drawing-th2/Plan/GoureToiDeLa2015.th2
+	input Data-th/Crops_reseaux/GoureToiDeLa/th2/GoureToiDeLa2015.th2
 		join SP-Goure2015b-4 SP-Goure2015-1
-	input Drawing-th2/Plan/GoureToiDeLa2015b.th2
+	#input Drawing-th2/Plan/GoureToiDeLa2015b.th2
+	input Data-th/Crops_reseaux/GoureToiDeLa/th2/GoureToiDeLa2015b.th2
 		join SP-Gourance2015b-1 SP-Gourance2014-4
-	input Drawing-th2/Plan/GoureToiDeLa2019.th2
+	#input Drawing-th2/Plan/GoureToiDeLa2019.th2
+	input Data-th/Crops_reseaux/GoureToiDeLa/th2/GoureToiDeLa2019.th2
 		join SP-Goure2019-2 SP-Gourance2014-4
 		join SP-Goure2019-3 SP-Gourance2014-4
+	input Data-th/Crops_reseaux/GoureToiDeLa/th2/Goure2022.th2
+	#input Drawing-th2/Plan/Goure2022.th2
+		join SP-Goure2022-3 SP-Gourance2014-2 -count 2
+	input Data-th/Crops_reseaux/GoureToiDeLa/th2/Damocles2010.th2
+	#input Drawing-th2/Plan/Damocles2010.th2
+		join SP-Damocles-3 SP-Goure2022-2
+		join SP-gourance2 SP-Goure2022-1
 
 ## L'aval de la Gourance
 	input Drawing-th2/Plan/Gourance2013.th2
@@ -335,7 +350,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Plan/siphons2020.th2
 		join SP-siphons2020-1 SP-S2S3
  
-
 ##########################################################################################
 ## Pour importer les différents fichiers de dessins en coupe développée
 
@@ -440,6 +454,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/siphons-coupe.th2
 	input Drawing-th2/Coupe/siphons-coupe2020.th2
 		join SC-Siphons2020-1 SC-S2-S3_c	# Explo du 24/01/2020
+
 
 
 endsurvey

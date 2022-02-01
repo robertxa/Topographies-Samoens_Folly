@@ -1,0 +1,122 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey sezhommes1975 -title "Réseau de Sezhommes"
+  
+ centerline -extend right -title " Ko.0_Ko.1 Ko.48_Kn.1"
+	date 1975.02.06
+		team "Pierre Rias"
+		team "Bernard Lips"
+		team "Christian Rigaldie"
+	explo-date 1975.02.06
+		explo-team "Pierre Rias"
+		explo-team "Bernard Lips"
+		explo-team "Christian Rigaldie"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length backcompass backclino right left up down
+   Ko.0 Ko.1    3.84       295.      -6.       0.       0.       0.       0.    
+   Ko.1 Ko.2    2.03       320.       7.       0.       0.       0.       0.    
+   Ko.2 Ko.3    4.75       225.       51.       0.       0.       0.       0.    
+   Ko.2 Ko.4    8.08       228.      -22.       0.       0.       0.       0.    
+   Ko.4 Ko.5    1.83       120.      -20.       0.       0.       0.       0.    
+   Ko.5 Ko.6    3.15       180.      -3.       0.       0.       0.       0.    
+   Ko.6 Ko.7    5.97       235.      -16.       0.       0.       0.       0.    
+   Ko.7 Ko.8    3.52       281.       15.       0.       0.       0.       0.    
+   Ko.8 Ko.9    2.43       305.       10.       0.       0.       0.       0.    
+   Ko.9 Ko.10    4.13       242.      -16.       0.       0.       0.       0.    
+   Ko.10 Ko.11    1.73       255.       14.       0.       0.       0.       0.    
+   Ko.11 Ko.12    6.49       200.      -24.       0.       0.       0.       0.    
+   Ko.12 Ko.13    7.71       241.      -18.       0.       0.       0.       0.    
+   Ko.13 Ko.14    1.58       325.      -13.       0.       0.       0.       0.    
+   Ko.14 Ko.15    2.56       250.      -21.       0.       0.       0.       0.    
+   Ko.15 Ko.16   0.5       155.       9.       0.       0.       0.       0.    
+   Ko.16 Ko.17    3.56       115.      -21.       0.       0.       0.       0.    
+   Ko.17 Ko.18    2.49       167.       3.       0.       0.       0.       0.    
+   Ko.18 Ko.19    3.85       257.      -17.       0.       0.       0.       0.    
+   Ko.19 Ko.20    15.31000       227.      -30.       0.       0.       0.       0.    
+   Ko.20 Ko.21    6.53       80.      -30.       0.       0.       0.       0.    
+   Ko.21 Ko.22    13.55000       236.      -19.       0.       0.       0.       0.    
+   Ko.22 Ko.23    8.3       0.      -90.       0.       0.       0.       0.    
+   Ko.23 Ko.24    2.       165.       0.       0.       0.       0.       0.    
+   Ko.24 Ko.25    9.39       256.      -23.       0.       0.       0.       0.    
+   Ko.25 Ko.26    2.06       306.       8.       0.       0.       0.       0.    
+   Ko.26 Ko.27    5.47       239.      -6.       0.       0.       0.       0.    
+   Ko.27 Ko.28    7.15       261.      -14.       0.       0.       0.       0.    
+   Ko.28 Ko.29    7.18       144.      -9.       0.       0.       0.       0.    
+   Ko.29 Ko.30    9.53       265.      -16.       0.       0.       0.       0.    
+   Ko.30 Ko.31    1.83       153.      -11.       0.       0.       0.       0.    
+   extend left
+   flags duplicate
+   Ko.31 Ko.32    3.8       145.      -1.       0.       0.       0.       0.    
+   Ko.32 Ko.33    4.55       216.      -22.       0.       0.       0.       0.    
+   Ko.33 Ko.34    3.52       155.      -19.       0.       0.       0.       0.    
+   Ko.34 Ko.35    17.16000       269.      -16.       0.       0.       0.       0.    
+	extend right
+   Ko.35 Ko.36    9.68       248.      -19.       0.       0.       0.       0.    
+   Ko.36 Ko.37    4.67       164.      -10.       0.       0.       0.       0.    
+   Ko.37 Ko.38    6.73       163.      -7.       0.       0.       0.       0.    
+   Ko.38 Ko.39    2.93       252.      -10.       0.       0.       0.       0.    
+   extend right
+   Ko.31 Ko.40    2.87       231.      -22.       0.       0.       0.       0.    
+   Ko.40 Ko.41    6.19       277.      -14.       0.       0.       0.       0.    
+   Ko.41 Ko.42    2.82       312.      -5.       0.       0.       0.       0.    
+   Ko.42 Ko.43    3.03       332.       11.       0.       0.       0.       0.    
+   Ko.43 Ko.44    3.26       267.      -14.       0.       0.       0.       0.    
+   Ko.44 Ko.45    4.12       318.      -1.       0.       0.       0.       0.    
+   Ko.45 Ko.46    6.57       250.      -23.       0.       0.       0.       0.    
+   Ko.46 Ko.47    6.5       247.      -27.       0.       0.       0.       0.    
+   Ko.47 Ko.48    4.64       242.      -22.       0.       0.       0.       0.    
+   Ko.48 Kn.1    5.62       238.       0.       0.       0.       0.       0.
+   flags not duplicate    
+ endcenterline
+  
+ centerline -extend left -title "Reseau de Sezhommes Ko.0_Kp.1 Kp.23_Kp.24"
+ date 1975.02.06
+		team "Pierre Rias"
+		team "Bernard Lips"
+		team "Christian Rigaldie"
+	explo-date 1975.02.06
+		explo-team "Pierre Rias"
+		explo-team "Bernard Lips"
+		explo-team "Christian Rigaldie"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length backcompass backclino right left up down
+   Ko.0 Kp.1    3.42       42.       21.       0.       0.       0.       0.    
+   Kp.1 Kp.2    13.93000       116.       5.       0.       0.       0.       0.    
+   Kp.2 Kp.3    7.71       51.       22.       0.       0.       0.       0.    
+   Kp.3 Kp.4    2.47       74.      -1.       0.       0.       0.       0.    
+   Kp.4 Kp.5    3.04       98.       10.       0.       0.       0.       0.    
+   Kp.5 Kp.6    3.41       51.       23.       0.       0.       0.       0.    
+   Kp.6 Kp.7    6.58       76.       11.       0.       0.       0.       0.    
+   Kp.7 Kp.8    7.18       79.       24.       0.       0.       0.       0.    
+   Kp.8 Kp.9    4.09       73.       27.       0.       0.       0.       0.    
+   Kp.9 Kp.10    7.43       92.       14.       0.       0.       0.       0.    
+   Kp.10 Kp.11    3.93       66.       13.       0.       0.       0.       0.    
+   Kp.11 Kp.12    3.81       66.       13.       0.       0.       0.       0.    
+   Kp.12 Kp.13    7.16       41.      -36.       0.       0.       0.       0.    
+   Kp.13 Kp.14    2.82       76.      -36.       0.       0.       0.       0.    
+   Kp.14 Kp.15    2.58       306.      -26.       0.       0.       0.       0.    
+   Kp.15 Kp.16    7.22       324.       50.       0.       0.       0.       0.    
+   Kp.16 Kp.17    12.98000       0.       90.       0.       0.       0.       0.    
+   Kp.17 Kp.18    7.29       94.       9.       0.       0.       0.       0.    
+   Kp.18 Kp.19    4.04       72.       16.       0.       0.       0.       0.    
+   Kp.19 Kp.20    3.81       95.      -13.       0.       0.       0.       0.    
+   Kp.20 Kp.21    1.76       59.       45.       0.       0.       0.       0.    
+   Kp.21 Kp.22    4.47       116.      -18.       0.       0.       0.       0.    
+   Kp.22 Kp.23    10.84000       0.       90.       0.       0.       0.       0.    
+   Kp.23 Kp.24    12.28000       84.       26.       0.       0.       0.       0.    
+ endcenterline
+ 
+ 
+
+endsurvey
+

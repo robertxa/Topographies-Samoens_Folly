@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -4289.0 1838.0 140.0
+##XTHERION## xth_me_area_adjust -131.0 -4289.0 2653.0 140.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} PlafondGouranceSquelette-1.png 0 {}
 
@@ -13,9 +13,9 @@ point 1256.5 -2861.5 label -text "CF"
 
 point 1277.5 -2949.5 height -value [-8 m]
 
-point 1192.0 -3267.5 continuation
+point 1192.0 -3267.5 continuation -attr Code P -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "Arrêt sur manque de matériel"
 
-point 1201.5 -2891.0 continuation
+point 1201.5 -2891.0 continuation -attr Code E -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "CF à atteindre"
 
 point 1230.5 -3010.0 blocks
 
@@ -234,10 +234,6 @@ line wall
   smooth off
 endline
 
-point 1132.5 -3213.0 altitude -align bottom-left
-
-point 1330.0 -3013.0 altitude -align top-right
-
 line wall
   1427.5 -3113.5
   1427.5 -3113.5 1381.0 -3063.5 1376.5 -3058.5
@@ -283,6 +279,24 @@ endscrap
 
 
 scrap SP-Gourance2014-2 -projection plan -author 2014 "Stéphane Lips" -author 2014 "Xavier Robert" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -4811 3440 -4811 0.0 0.0 90.6272 0.0 m]
+
+line wall -subtype presumed
+  1762.0 -3123.5
+  1762.0 -3123.5 1755.5 -3120.5 1748.0 -3112.5
+  1740.5 -3104.5 1736.5 -3104.0 1731.5 -3092.5
+  1726.5 -3081.0 1724.0 -3073.0 1719.5 -3070.0
+  1715.0 -3067.0 1704.5 -3057.5 1704.5 -3057.5
+  smooth off
+endline
+
+line wall -subtype presumed
+  1689.5 -3079.5
+  1689.5 -3079.5 1705.0 -3091.0 1709.0 -3096.0
+  1713.0 -3101.0 1725.0 -3113.0 1732.5 -3115.5
+  1740.0 -3118.0 1746.0 -3119.0 1747.0 -3121.0
+  1748.0 -3123.0 1752.5 -3127.5 1752.5 -3127.5
+  smooth off
+endline
 
 line rock-border -close on
   1621.0 -3389.5
@@ -487,6 +501,10 @@ endline
 
 point 1634.0 -3330.5 rope
 
+point 1741.0 -3151.0 label -text "CF"
+
+point 1780.5 -3119.0 continuation -attr Code A -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "CF à explorer"
+
 line wall -close on -outline in
   1480.5 -3121.0
   1480.5 -3121.0 1477.5 -3138.0 1477.5 -3146.0
@@ -502,8 +520,20 @@ line wall -close on -outline in
   smooth off
 endline
 
+line border
+  1594.5 -3013.5
+  1594.5 -3013.5 1600.0 -3004.0 1603.5 -3000.0
+  1607.0 -2996.0 1612.0 -2988.0 1617.0 -2987.0
+  1622.0 -2986.0 1631.0 -2983.0 1631.0 -2983.0
+  smooth off
+endline
+
 line wall
-  1622.5 -2985.0
+  1704.5 -3057.5
+  1704.5 -3057.5 1689.5 -3052.5 1684.0 -3044.5
+  1678.5 -3036.5 1663.0 -3021.0 1658.5 -3018.0
+  1654.0 -3015.0 1645.0 -3001.5 1640.0 -2998.0
+  1635.0 -2994.5 1618.5 -2991.0 1622.5 -2985.0
   1626.5 -2979.0 1631.83 -2963.2 1629.0 -2954.0
   smooth off
 endline
@@ -525,6 +555,11 @@ line wall
   1554.5 -3102.5 1564.5 -3077.5 1567.0 -3068.5
   1569.5 -3059.5 1579.5 -3036.5 1583.0 -3030.0
   1586.5 -3023.5 1592.0 -3007.0 1596.0 -3006.5
+  1600.0 -3006.0 1610.0 -3009.0 1613.5 -3010.0
+  1617.0 -3011.0 1630.0 -3019.0 1633.0 -3024.0
+  1636.0 -3029.0 1652.0 -3044.5 1656.5 -3049.0
+  1661.0 -3053.5 1668.5 -3063.5 1672.0 -3066.5
+  1675.5 -3069.5 1689.5 -3079.5 1689.5 -3079.5
   smooth off
 endline
 
@@ -566,12 +601,11 @@ line wall
   smooth off
 endline
 
+point 1701.0 -2942.5 station -name 2014-SL-7'@GoureToiDeLa
+
 point 1414.5 -3019.5 station -name 2014-SL-7@GoureToiDeLa
 
-line wall
-  1605.0 -2997.0
-  1614.0 -2991.0
-endline
+point 1753.0 -3121.0 station -name 2014-SL-16@GoureToiDeLa
 
 point 1567.0 -2942.0 station -name 2014-SL-15@GoureToiDeLa
 
@@ -849,8 +883,6 @@ endline
 point 1313.0 -3629.0 rope
 
 point 1320.0 -3542.0 height -value [+5 m]
-
-point 1678.0 -3617.0 altitude -align bottom-right
 
 line wall
   1252.0 -3596.0
@@ -1234,7 +1266,7 @@ scrap SP-Gourance2014-5 -projection plan -author 2014 "Stéphane Lips" -author 2
 
 point 1315.5 -3974.0 rope
 
-point 1382.0 -4135.5 continuation
+point 1382.0 -4135.5 continuation -attr Code P -attr Cavite JB -attr Reseau "La Gourance - plafonds" -text "Suite du méanre à explorer, devrait rejoindre le puits du Balcon"
 
 point 1284.0 -3902.5 label -text "R4"
 
@@ -1287,8 +1319,6 @@ line rock-border -close on
   1198.5 -3803.0
 endline
 
-point 1382.0 -4135.5 map-connection
-
 line wall -subtype presumed
   1401.5 -4117.0
   1401.5 -4117.0 1390.5 -4102.0 1388.0 -4095.0
@@ -1296,8 +1326,6 @@ line wall -subtype presumed
   1374.5 -4073.5 1373.0 -4073.5 1373.0 -4073.5
   smooth off
 endline
-
-point 1325.5 -4082.5 altitude -align bottom-left
 
 line wall -subtype presumed
   1332.0 -4104.5
@@ -1391,8 +1419,6 @@ point 1359.0 -3502.0 height -value [+15 m]
 point 1316.0 -3667.0 rope
 
 point 1111.0 -3465.0 rope
-
-point 1379.0 -3331.0 label -text "<center>puits de<br>la Gourance"
 
 line wall
   1231.0 -3763.0

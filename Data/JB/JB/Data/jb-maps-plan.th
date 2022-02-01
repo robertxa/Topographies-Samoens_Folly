@@ -516,10 +516,18 @@ map MP-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"
 	SP-Goure2015b-3
 endmap
 
+map MP-Damocles -title "Méandre Damoclès"  
+	SP-Goure2022-3
+	break
+	SP-Goure2022-2
+	break
+	SP-Goure2022-1
+	break
+	SP-Damocles-3
+endmap
+
 map MP-gourance -title "La Gourance"      
 	SP-gourance-1
-	break
-	SP-gourance-3
 	break
 	SP-gourance2      
 	break
@@ -716,13 +724,16 @@ map MP-Jean-Dupond -title "Le début de la rivière aval"
 endmap
 
 map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
-	MP-bivouac-500
-	break
 	MP-P11
+	break
+	MP-bivouac-500
 	break
 	MP-siphon69
 	break
-	MP-plafond-Gourance
+	MP-plafond-Gourance	[-60 60 m] above
+	#MP-plafond-Gourance	[-60 60 m] below
+	break
+	MP-Damocles
 	break
 	MP-gourance
 	break

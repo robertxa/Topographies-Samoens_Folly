@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 639.8113000000001 1033.5122999999999
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 639.8113000000001 1033.5122999999999
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {275.587 1 1.0} {708.665 2014-SL-0} GoureToiDeLa-map2015b.xvi 0 {}
 
 
@@ -98,7 +98,7 @@ point 191.0 596.0 height -value [-5 m]
 
 point 156.25 602.0 label -text "etr."
 
-point 146.5 578.0 continuation
+point 146.5 578.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Gourance - plafonds" -attr CA "Courant d'air" -text "Etroiture à désobstruer ?"
 
 point 141.25 593.5 narrow-end
 
@@ -119,8 +119,6 @@ line pit
   190.75 581.25 190.25 584.0 190.0 586.0
   smooth off
 endline
-
-point 185.75 585.25 altitude -align top-left
 
 line wall
   170.0 528.5
@@ -728,12 +726,6 @@ line wall
   smooth off
 endline
 
-point 111.0 280.0 altitude -align left
-
-point 96.5 215.25 altitude -align bottom
-
-point 95.697 224.235 map-connection
-
 line wall
   81.0 218.5
   81.0 218.5 92.75 215.75 96.5 215.25
@@ -859,10 +851,6 @@ point 441.5 857.75 label -text "c.a. ?"
 point 443.75 841.25 label -text "colm."
 
 point 435.25 847.75 narrow-end
-
-point 424.0 848.25 altitude -align top
-
-point 424.467 841.415 map-connection
 
 line wall
   424.0 848.25

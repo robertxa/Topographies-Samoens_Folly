@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 639.8113000000001 1033.5122999999999
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {275.592 1 1.0} {708.656 2014-SL-0@GoureToiDeLa.GoureToi} GoureToiDeLa-map2019.xvi 0 {}
+##XTHERION## xth_me_image_insert {275.592 1 1.0} {708.656 2014-SL-0@GoureToiDeLa} GoureToiDeLa-map2019.xvi 0 {}
 
 
 
@@ -98,6 +98,8 @@ point 228.75 639.5 label -text "<center>vire des<br>Marteaux"
 
 point 263.0 615.0 u:shell
 
+point 255.75 614.25 altitude -align left
+
 line wall
   272.25 630.75
   272.25 630.75 264.75 618.5 264.25 618.5
@@ -107,13 +109,13 @@ line wall
   smooth off
 endline
 
-point 272.832 611.216 station -name 2019-FD-3@Goure2019.GoureToi
+point 272.832 611.216 station -name 2019-FD-3@Goure2019
 
-point 262.642 611.736 station -name 2019-FD-2@Goure2019.GoureToi
+point 262.642 611.736 station -name 2019-FD-2@Goure2019
 
-point 291.222 582.126 station -name 2019-FD-1@Goure2019.GoureToi
+point 291.222 582.126 station -name 2019-FD-1@Goure2019
 
-point 288.662 606.806 station -name 2019-FD-0b@Goure2019.GoureToi
+point 288.662 606.806 station -name 2019-FD-0b@Goure2019
 
 endscrap
 
@@ -138,6 +140,8 @@ line flowstone
   285.5 762.0 278.0 755.75 272.5 760.75
   smooth off
 endline
+
+point 276.5 761.75 altitude -align top-left
 
 line wall
   295.5 668.75
@@ -204,15 +208,15 @@ line wall
   smooth off
 endline
 
-point 279.452 760.476 station -name 2019-FD-10@Goure2019.GoureToi
+point 279.452 760.476 station -name 2019-FD-10@Goure2019
 
-point 280.232 745.476 station -name 2019-FD-9@Goure2019.GoureToi
+point 280.232 745.476 station -name 2019-FD-9@Goure2019
 
-point 281.692 728.696 station -name 2019-FD-7@Goure2019.GoureToi
+point 281.692 728.696 station -name 2019-FD-7@Goure2019
 
-point 287.682 686.176 station -name 2019-FD-6@Goure2019.GoureToi
+point 287.682 686.176 station -name 2019-FD-6@Goure2019
 
-point 294.412 664.136 station -name 2019-FD-5@Goure2019.GoureToi
+point 294.412 664.136 station -name 2019-FD-5@Goure2019
 
 endscrap
 
@@ -272,9 +276,9 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 304.092 679.566 station -name 2019-FD-11@Goure2019.GoureToi
+point 304.092 679.566 station -name 2019-FD-11@Goure2019
 
-point 278.902 743.106 station -name 2019-FD-8@Goure2019.GoureToi
+point 278.902 743.106 station -name 2019-FD-8@Goure2019
 
 endscrap
 
