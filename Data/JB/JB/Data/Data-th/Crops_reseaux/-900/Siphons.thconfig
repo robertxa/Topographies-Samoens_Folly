@@ -3,14 +3,9 @@ encoding  utf-8
 # Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
- 
-source GoureToiDeLa-tot.th 
-#source GoureToiDeLa.th
-#source GoureToiDeLa.th2
-#source GoureToiDeLa2015.th2 
-#source GoureToiDeLa2015b.th2
-#source GoureToiDeLa2015coupe.th2
-
+  
+source Data/siphons.th
+source siphons-tot.th
 # Add config file
 input ../../../../../../../config.thc 
 
@@ -21,102 +16,113 @@ layout xviexport
 endlayout
   
 layout my_layout
-	# Call the config settings (Layout config inside the config.thc file)
+# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy headerl 
-	copy langue-fr
+	copy headerl
+	copy langue-fr 
 	  
-	doc-title "GoureToiDeLa"
+	doc-title "Siphons aval"
+	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 750
-	 scale 1 500
-	scale-bar 50 m
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	#color map-bg 85
 	color map-fg [100 100 80]
+	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "Gouffre Jean-Bernard, Samoëns, 74, France"
+	map-comment "<it>Plan<ss> - Siphons aval et réseau Stick, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	#legend-width 14 cm
-	map-header 32 39 nw
+	legend-width 16 cm
+	map-header 70 60 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
- 
+  
 	# To change the Title          
 	code tex-map
+  
 		\edef\temp{\the\cavename}   % cavename from Therion
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={GoureToiDeLa \smallbreak Zone de la Gourance} 		
+			\cavename={Gouffre Jean-Bernard} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain, EPIA, Association Spéléologique Doubs Central (ASDC)}
-	    \newtoks\synth \synth={Xavier Robert}
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
-  
-endlayout
+
+	# add general view
+	map-image 45 20 nw Data/jb-Xav-2020-plan20000.pdf
+ 
+ endlayout
  
  
  
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
-	copy langue-fr
-		
-	doc-title "Plafonds de la Gourance"
+	copy header_coupe
+	copy langue-fr 
+  
+	doc-title "Siphons et réseau Stick"
+	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 1300
-	scale 1 750
+	base-scale 1 1000
+	scale 1 1000
 	scale-bar 100 m
+	#color map-bg 85
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	map-comment "Gouffre Jean-Bernard, <it>coupe développée<ss>, Samoëns, 74, France"
+	language fr
+	map-comment "<it>Coupe développée<ss> - Siphons et réseau Stick, coupe développée, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 17 cm
-	#map-header 60 15 w
-	#map-header 00 80 w
-	map-header 57 0 sw
+	legend-width 16 cm
+	map-header 0 45 sw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
-	grid off   
+	grid off  
   
 	# To change the Title          
 	code tex-map
+  
 		\edef\temp{\the\cavename}   % cavename from Therion
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={GoureToiDeLa - zone de la Gourance} 		
+			\cavename={Gouffre Jean-Bernard} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-	    \newtoks\club \club={Groupe Spéléologique Vulcain, EPIA, Association Spéléologique Doubs Central (ASDC)}
-	    \newtoks\synth \synth={Xavier Robert}
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
 
-  
-endlayout
+	# add general view
+	map-image 30 110 nw Data/jb-Xav-2020-coupe20000.pdf  
 
-select GoureToiDeLa-Tot
- export map -fmt xvi -layout xviexport -o th2/GoureToiDeLa-map2022.xvi
- export map -projection extended -fmt xvi -layout xviexport -o th2/GoureToiDeLa-coupe2022.xvi
+ endlayout
+
+ 
   
- export map -o Outputs/GoureToiDeLa-plan2022.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/GoureToiDeLa-coupe2022.pdf
- export model -o Outputs/GoureToiDeLa.lox
+ #export map -fmt xvi -layout xviexport -o Data/siphons-2003.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/siphons-coupe-2003.xvi
+  
+ export map -projection plan -o Outputs/siphon-2020-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/siphon-2020-coupe.pdf
+
+ export model -o Outputs/siphon-2020.lox

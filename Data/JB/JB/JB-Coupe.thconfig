@@ -227,7 +227,7 @@ endlayout
 # Export du fichier pdf de la coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MC-JB-coupe-tot@Jean-Bernard
- export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2021-coupe.pdf
- #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2021-coupe-continuations.pdf
- export continuation-list -o Outputs/Lists/Continuations-coupe2021.html
- #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2021-coupe-STATIONS.pdf
+ export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2022-coupe.pdf
+ #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2022-coupe-continuations.pdf
+ export continuation-list -o Outputs/Lists/Continuations-coupe2022.html
+ #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2022-coupe-STATIONS.pdf

@@ -8,70 +8,75 @@ survey GoureToi -title "GoureToiDeLa - Zone de la Gourance"
 	
 	input th/GoureToiDeLa.th
 	input th/GoureToiDeLa2019.th
+	input th/gour2022.th
+	input th/Damocles2010.th
 	
 	centerline
 		#equate 2019-FD-12@Goure2019 2014-SL-25@GoureToiDeLa
 		equate 2019-FD-12@Goure2019 2014-SL-24@GoureToiDeLa
 		equate 2019-FD-E15@Goure2019 2014-SL-24@GoureToiDeLa
+		equate 9@gour2022 2014-SL-15@GoureToiDeLa
+		#equate 21@gour2022 Gn.1@Damocles	# Il y a un petit décalage
+		equate 15@gour2022 Gn.4@Damocles	# A peu près OK
 	endcenterline
 	
 endsurvey
 
 
 ## PLAN
-input th2/GoureToiDeLa.th2
-input th2/GoureToiDeLa2015.th2
-join  Goure2015b-4 Goure2015a
+#input th2/GoureToiDeLa.th2
+#input th2/GoureToiDeLa2015.th2
+#join  Goure2015b-4 Goure2015a
 
-input th2/GoureToiDeLa2015b.th2
-join Gourance2015b-1 Gourance2014-4
+#input th2/GoureToiDeLa2015b.th2
+#join Gourance2015b-1 Gourance2014-4
 
-input th2/GoureToiDeLa2019.th2
-join Goure2019-SP2 Gourance2014-4
-join Goure2019-SP3 Gourance2014-4
+#input th2/GoureToiDeLa2019.th2
+#join Goure2019-SP2 Gourance2014-4
+#join Goure2019-SP3 Gourance2014-4
 
-map GoureToiDeLa-Tot -title "GoureToiDeLa<br>Zone de la Gourance"
-	Goure2015b-5
-	break
-	Goure2015b-4
-	break
-	Goure2015a
-	break
-	Goure2015c
-	break
-	Goure2015b
-	break
-	Goure2019-SP1
-	break
-	Goure2019-SP2
-	break
-	Goure2019-SP3
-	break
-	Gourance2014-1
-	break
-	Gourance2014-2
-	break
-	Gourance2014-3
-	break
-	Gourance2014-4
-	break
-	Gourance2014-5
-	break
-	Gourance2014-6
-	break
-	Gourance2015b-1 # Depart souris chauve
-	break
-	Goure2015b-2
-	break
-	Gourance2014-5
-	break
-	Goure2015b-3
-endmap
+#map GoureToiDeLa-Tot -title "GoureToiDeLa<br>Zone de la Gourance"
+#	Goure2015b-5
+#	break
+#	Goure2015b-4
+#	break
+#	Goure2015a
+#	break
+#	Goure2015c
+#	break
+#	Goure2015b
+#	break
+#	Goure2019-SP1
+#	break
+#	Goure2019-SP2
+#	break
+#	Goure2019-SP3
+#	break
+#	Gourance2014-1
+#	break
+#	Gourance2014-2
+#	break
+#	Gourance2014-3
+#	break
+#	Gourance2014-4
+#	break
+#	Gourance2014-5
+#	break
+#	Gourance2014-6
+#	break
+#	Gourance2015b-1 # Depart souris chauve
+#	break
+#	Goure2015b-2
+#	break
+#	Gourance2014-5
+#	break
+#	Goure2015b-3
+#endmap
 
 
 ## COUPE
-input th2/GoureToiDeLa-coupe.th2
-input th2/GoureToiDeLa2015coupe.th2
-join Gourcoupe20151 Gourecoupesteph1
-input th2/GoureToiDeLa2019coupe.th2
+#input th2/GoureToiDeLa-coupe.th2
+#input th2/GoureToiDeLa2015coupe.th2
+#join Gourcoupe20151 Gourecoupesteph1
+#input th2/GoureToiDeLa2019coupe.th2
 

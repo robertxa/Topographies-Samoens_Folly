@@ -146,25 +146,32 @@ encoding  utf-8
 
   
  centerline -title "Méandre Damoclès Kg.9_Gn.0 Gn.15_Gn.16"
+ # Cette topo doit être migrée dans le dossier des Plafonds de la Gourance ("GoureToiDeLa")
+ #    --> Bouclage de toute la zone
+ #    --> plus logique !
+ 
    date 2010.02.24
-   team "David Parrot"
-   team "Frédéric Delègue"
-   team "Olivier Gente"
+    team "David Parrot"
+    team "Frédéric Delègue"
+    team "Olivier Gente"
 
    explo-date 2010.02.24
-   explo-team "David Parrot"
-   explo-team "Frédéric Delègue"
-   explo-team "Olivier Gente"
+    explo-team "David Parrot"
+    explo-team "Frédéric Delègue"
+    explo-team "Olivier Gente"
 
    units lenght meters
    units compass degrees
    units clino degrees
    data normal from to length compass clino left right up down
-   Kg.9 Gn.0    0.       0.       0.       0.       0.       0.       0.    
-   Gn.0 Gn.1    4.1       136.       90.       0.       0.       0.       0.    
+   # Dupliqué avec la topo des plafonds de la Gourance du 29/01/2022 ; 22.66 m dupliqués
+   Kg.9 Gn.0    0.       0.       0.       0.       0.       0.       0.    # Départ base du P5
+   Gn.0 Gn.1    4.1       136.       90.       0.       0.       0.       0.    # Point virage de la MC
    Gn.1 Gn.2    3.24       139.       1.       0.       0.       0.       0.    
-   Gn.2 Gn.3    5.37       130.       38.      0.5      0.5       15.       1.    
-   Gn.3 Gn.4    9.95       327.       18.       2.      0.5       15.       3.86    
+   Gn.2 Gn.3    5.37       130.       38.      0.5      0.5       15.       1.    # Virage à 180°
+   Gn.3 Gn.4    9.95       327.       18.       2.      0.5       15.       3.86    # Blocs
+  
+  # Fin duplication
    Gn.4 Gn.5    11.55000       250.      -2.       0.       0.       0.       0.    
    Gn.5 Gn.6    2.71       275.       2.       0.       0.       0.       0.    
    Gn.6 Gn.7    3.23       245.       44.       0.       0.       0.       0.    
@@ -177,7 +184,7 @@ encoding  utf-8
    Gn.14 Gn.15    4.35       230.       2.       0.       0.       0.       0.    
    Gn.15 Gn.16    4.74       292.      -27.       0.       0.       0.       0.    
  
- # Dev = m
+ # Dev = 71 m
  
  endcenterline
  

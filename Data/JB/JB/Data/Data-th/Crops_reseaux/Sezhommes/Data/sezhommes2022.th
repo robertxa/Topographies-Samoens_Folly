@@ -1,0 +1,34 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey sezhommes2022 -title "Réseau de Sezhommes"
+  
+centerline -title "Escalade Sezhomme : 0.2020_0b.2020 46.2020_0.2020"
+	#  A partir de la base du P8, point topo sur le cairn, en remontant vers le sommet de l'escalade
+	date 2022.01.15
+		team "Arnauld Malard"
+		team "Olivier Gente"
+	explo-date 2022.01.15
+		explo-team "Arnauld Malard"
+		explo-team "Olivier Gente"
+	units length meters
+	units compass degrees
+  	units clino degrees
+
+	data normal from to length compass clino left right up down
+	extend left 
+	0.2022	1.2022	8.2		224		54	0.9	1.9	5.5	0	# Base du P8, cairn au sol = point topo de départ = point Ko.22 de la topo du JB
+	1.2022	2.2022	1.12	131.5	22	1.4	0.2	0.4	8	
+	2.2022	3.2022	5.49	209.1	50	0	1.4	0.6	0	# Point 3 noté sur la paroi
+	3.2022	4.2022	1.87	209		35	0.5	0.3	1	1.1	
+	4.2022	5.2022	2.84	238	20.9	0	0.4	0.3	1.5	# Impénétrable, désobstruction dans le remlissage, petit courant d'air soufflant
+
+	#	Total = 19.52 m						
+   
+endcenterline
+
+endsurvey
+
