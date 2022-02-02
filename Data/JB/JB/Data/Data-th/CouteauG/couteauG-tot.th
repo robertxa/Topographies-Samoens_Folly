@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CouteauG -title "Réseau du Couteau Grenoblois"
+
+    input Data/CouteauG.th
+    # Dessins en plan
+    input Data/CouteauG.th2
+    # Dessins en coupe
+    input Data/CouteauG-coupe.th2  
+    
+    # Add maps
+    input couteauG-maps.th
+
+endsurvey

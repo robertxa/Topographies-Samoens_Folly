@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey PuitsTraverse -title "Galerie du Puits que l'on Traverse"
+
+    input Data/puitstraverse.th
+
+    # Dessins en plan
+    input Data/puitstraverse.th2
+    # Dessins en coupe
+    input Data/puitstraverse-coupe.th2
+    
+    # Add maps
+    input puitsTraverse-maps.th
+
+endsurvey

@@ -27,9 +27,9 @@ map MC-Voltigeurs -title "Méandre des Voltigeurs"
 	SC-voltic4
 endmap
 
-map MC-affluentC14 -title "Affluent du C14"
-	SC-affluent-C14_c1
-endmap
+#map MC-affluentC14 -title "Affluent du C14"
+#	SC-affluent-C14_c1
+#endmap
 
 map MC-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
 	SC-archec2
@@ -111,21 +111,21 @@ map MC-V11 -title "V11"
 	SC-V11c1
 endmap
 
-map MC-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
-	SC-CouteauG2016-1
-	break
-	SC-CouteauGc2
-	break
-	SC-CouteauG2016-2
-	break
-	SC-CouteauGc1
-endmap
+#map MC-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
+#	SC-CouteauG2016-1
+#	break
+#	SC-CouteauGc2
+#	break
+#	SC-CouteauG2016-2
+#	break
+#	SC-CouteauGc1
+#endmap
 
-map MC-traverse -title "Galerie du puits que l'on Traverse"
-	SC-traversec1
-	break
-	SC-traversec2
-endmap         
+#map MC-traverse -title "Galerie du puits que l'on Traverse"
+#	SC-traversec1
+#	break
+#	SC-traversec2
+#endmap         
 
 map MC-reseauaiguilles -title "Réseau des Aiguilles"
 	SC-V11c2
@@ -151,9 +151,9 @@ map MC-bulle -title "Affluent de la Bulle"
 	SC-bullec1
 endmap
 	
-map MC-erreur -title "Galerie de l'Erreur"
-	SC-berreurc1
-endmap
+#map MC-erreur -title "Galerie de l'Erreur"
+#	SC-berreurc1
+#endmap
 
 map MC-echo -title "salle de l'Echo'"
 	SC-echoc1
@@ -167,9 +167,9 @@ map MC-aven14J -title "Aven du 14 juillet"
 	SC-J14c3
 endmap
 
-map MC-s_branlots -title "Shunt des Branlots"
-	SC-s_branlots-c1
-endmap
+#map MC-s_branlots -title "Shunt des Branlots"
+#	SC-s_branlots-c1
+#endmap
 
 map MC-Branlots -title "Réseau des Branlots"
 	SC-russesc1
@@ -179,9 +179,9 @@ map MC-Branlots -title "Réseau des Branlots"
 	SC-pseudoc1
 endmap
 
-map MC-dino -title "Galerie du Petit Dino"
-	SC-dino-coupe
-endmap
+#map MC-dino -title "Galerie du Petit Dino"
+#	SC-dino-coupe
+#endmap
 
 map MC-bourguignons -title "Réseau des Bourguignons"
 	SC-bourguignonsc1
@@ -241,33 +241,33 @@ map MC-V4 -title "V4"
       SC-V4c5
 endmap
 
-map MC-oeufs -title "Méandre des Oeufs"
-	SC-Sol2021-1
-	break
-	SC-Solitaire2020-1
-endmap
+#map MC-oeufs -title "Méandre des Oeufs"
+#	SC-Sol2021-1
+#	break
+#	SC-Solitaire2020-1
+#endmap
 
-map MC-solitaire -title "Réseau du Solitaire"
-	SC-sol-C2
-	break
-	SC-sol-C1	# Déformation scrap
-	break
-	SC-Solitaire-c_2018-1
-	break
-	SC-Solitaire-2021-1
-	break
-	SC-solitaire2019-1
-	break
-	SC-Sol-2019b-1
-	break
-	SC-solitaire2019-2	# Déformation scrap ???
-	break
-	SC-Solitaire-2019c1
-	break
-	SC-Sol2019d-1
-	break
-	SC-Sol2019d-2
-endmap
+#map MC-solitaire -title "Réseau du Solitaire"
+#	SC-sol-C2
+#	break
+#	SC-sol-C1	# Déformation scrap
+#	break
+#	SC-Solitaire-c_2018-1
+#	break
+#	SC-Solitaire-2021-1
+#	break
+#	SC-solitaire2019-1
+#	break
+#	SC-Sol-2019b-1
+#	break
+#	SC-solitaire2019-2	# Déformation scrap ???
+#	break
+#	SC-Solitaire-2019c1
+#	break
+#	SC-Sol2019d-1
+#	break
+#	SC-Sol2019d-2
+#endmap
 
 map MC-puitsAlain -title "Puits Alain"     
 	SC-V4c1	# Scrap déformé !
@@ -309,9 +309,9 @@ map MC-siphon69 -title "Siphon 69"
 	SC-siphon69c
 endmap
 
-map MC-P11 -title "La galerie du P11"
-	SC-P11-hc1	# scrap à nettoyer ?
-endmap
+#map MC-P11 -title "La galerie du P11"
+#	SC-P11-hc1	# scrap à nettoyer ?
+#endmap
 
 #map MC-plafond-Gourance -title "Réseau GoureToiDeLa"  
 #	SC-Goure2019-1
@@ -391,7 +391,7 @@ map MC-C37-Riviera -title "Du C37 à la Riviera"
 	break
 	MC-Voltigeurs
 	break
-	MC-affluentC14
+	MC-affluentC14@AffluentC14
 	break
 	MC-arche-reverbere
 	break
@@ -427,9 +427,9 @@ map MC-B19-V11 -title "Réseaux du B19 et du V11"
 	break
 	MC-reseauaiguilles
 	break
-	MC-couteau-grenoblois
+	MC-couteau-grenoblois@CouteauG
 	break
-	MC-traverse
+	MC-traverse@PuitsTraverse
 	break
 	MC-bulle
 endmap
@@ -441,9 +441,9 @@ map MC-Branlots-J14 -title "Réseaux des Branlots et du J14"
 	break
 	MC-Branlots
 	break
-	MC-s_branlots 
+	MC-s_branlots@ShuntBranlots
 	break
-	MC-erreur
+	MC-erreur@Erreur
 endmap
 
 map MC-V4-V6-Mais -title "V4 - V5 - V6"
@@ -453,7 +453,7 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MC-mais
 	break
-	MC-dino
+	MC-dino@dino
 #	break
 #	MC-grandescalier
 	break
@@ -473,17 +473,17 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 endmap
 
 map MC-Solitaire-tot -title "Réseau du Solitaire"
-	MC-solitaire
+	MC-solitaire@Solitaire
 	break
-	MC-oeufs
+	MC-oeufs@Solitaire
 endmap
 
 map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
 	MC-rivieredebut
 	break
-	MC-solitaire
+	MC-solitaire@Solitaire
 	break
-	MC-oeufs
+	MC-oeufs@Solitaire
 	break
 	MC-puitsAlain
 endmap
@@ -491,7 +491,7 @@ endmap
 map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"
 	MC-bivouac-500
 	break
-	MC-P11
+	MC-P11@P11
 	break
 	MC-siphon69
 	break

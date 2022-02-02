@@ -1,0 +1,63 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Solitaire -title "Réseau du Solitaire"
+	# Données topos
+	input Data/solitaire.th
+	input Data/jb_solitaire2020a.th
+		equate 1@solitaire2020a 2019d-FD-10@solitaire
+
+	# 2017
+	input th2/solitaire-plan.th2
+	input th2/solitaire-plan2017.th2
+	input th2/solitaire2018.th2
+		join SP-solitaire_plan SP-sol2017-1 -count 2
+
+	input th2/solitaire-coupe2017.th2
+
+	# 2018
+		join SP-Solitaire-c-2018_2 SP-solitaire_plan
+		##join Solitaire-c-2018-1 sol2017-2
+		##join Solitaire2018-SP1 sol2017-1	# Jonction scrap avec le dessin de Clément, dessin supprimé
+
+	input th2/solitaire-coupe2018.th2
+
+	# 2019
+	input th2/solitaire2019_1.th2
+		join SP-solitaire2019-1 SP-Solitaire-c-2018_3
+	input th2/solitaire2019_2.th2
+		join SP-solitaire2019-2 SP-sol2017-1
+	input th2/solitaire2019_3.th2
+		join SP-Solitaire-2019c1 SP-Sol_2019b_1
+	input th2/solitaire2019_4.th2
+		join SP-Sol2019d-1 SP-solitaire2019-1
+
+	input th2/solitaire2019-coupe1.th2
+		#join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
+		#join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
+	input th2/solitaire2019-coupe2.th2
+		join SC-sol-C1 	SC-solitaire2019-2
+	input th2/solitaire2019-coupe3.th2
+		join SC-Solitaire-2019c1 SC-Sol-2019b-1
+	input th2/solitaire2019-coupe4.th2
+
+	# 2020
+	input th2/solitaire-plan2020.th2
+		join SP-Solitaire2020-1 SP-Sol2019d-1
+
+	input th2/solitaire-coupe2020.th2
+		#join SC-Solitaire2020-1 SC-Sol2019d-1
+
+	# 2021
+	input th2/solitaire-plan2021.th2
+		#join SP-Solitaire-2021-1 SP-Sol2019d-1
+	input th2/solitaire-coupe2021.th2
+		join SC-Solitaire-2021-1 SC-Solitaire-2019c1
+
+	# Add maps
+	input solitaire-maps.th
+	
+endsurvey

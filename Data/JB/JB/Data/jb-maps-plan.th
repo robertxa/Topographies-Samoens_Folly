@@ -24,11 +24,11 @@ map MP-Voltigeurs -title "Méandre des Voltigeurs"
 	#preview below M-C37	# A mettre ici ou à mettre dans le map final ?
 endmap
 
-map MP-affluentC14 -title "Affluent du C14"
-	SP-JB-C14-1
-	break
-	SP-affluent-C14-2
-endmap
+#map MP-affluentC14 -title "Affluent du C14"
+#	SP-JB-C14-1
+#	break
+#	SP-affluent-C14-2
+#endmap
 
 map MP-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
 	SP-reverbere
@@ -151,17 +151,17 @@ map MP-V11 -title "V11"
 	SP-V11-meandre
 endmap
 
-map MP-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
-	SP-couteauG2016
-	break
-	SP-CouteauG1
-endmap
+#map MP-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
+#	SP-couteauG2016
+#	break
+#	SP-CouteauG1
+#endmap
 
-map MP-traverse -title "Galerie du puits que l'on Traverse"
-	SP-traverse1
-	break
-	SP-traverse2
-endmap         
+#map MP-traverse -title "Galerie du puits que l'on Traverse"
+#	SP-traverse1
+#	break
+#	SP-traverse2
+#endmap         
 
 map MP-reseauaiguilles -title "Réseau des Aiguilles"
 	SP-Crawleurs
@@ -233,7 +233,7 @@ endmap
 map MP-branlots -title "Réseau des Branlots"
 	SP-P15
 	break
-	SP-s-branlots1 
+	SP-s-branlots1@ShuntBranlots
 	break
 	SP-Branlots
 	break
@@ -270,8 +270,8 @@ map MP-pseudosiphons -title "Les Pseudos Siphons"
 endmap
 
 map MP-erreur -title "Galerie de l'Erreur"
-	SP-berreur1
-	break
+#	SP-berreur1
+#	break
 	SP-Erreur
 endmap
 
@@ -279,9 +279,9 @@ map MP-aven14J -title "Aven du 14 juillet"
 	SP-J14
 endmap
 
-map MP-dino -title "Galerie du Petit Dino"
-	SP-dino-1
-endmap
+#map MP-dino -title "Galerie du Petit Dino"
+#	SP-dino-1
+#endmap
 
 map MP-P15 -title "Galerie du P15"
 	SP-P15aval
@@ -364,6 +364,7 @@ map MP-savoyards -title "Puits des Savoyards"
 endmap
 
 map MP-quitombe -title "Réseau de la Pierre qui Tombe"
+	# Revoir l'ordre pour bien gérer les superpositions
 	SP-quitombe
 	break
 	SP-quitombe2
@@ -385,51 +386,51 @@ map MP-chatons -title "Méandre des Chatons"
 	SP-chatons
 endmap
 
-map MP-oeufs -title "Méandre des Oeufs"
-	SP-Sol2021-2
-	break
-	SP-Sol2021-1
-	break
-	SP-Solitaire2020-1
-	break
-	SP-Solitaire2020-2
-endmap
+#map MP-oeufs -title "Méandre des Oeufs"
+#	SP-Sol2021-2
+#	break
+#	SP-Sol2021-1
+#	break
+#	SP-Solitaire2020-1
+#	break
+#	SP-Solitaire2020-2
+#endmap
 
-map MP-solitaire -title "Réseau du Solitaire"
-	SP-solitaire_plan
-	break
-	SP-sol2017-1
-	break
-	SP-sol2017-2
-	break
-	SP-Solitaire-c-2018_2 
-	break
-	SP-Solitaire-c-2018_3 
-	break
-	SP-solitaire2019-2	#SPPPPPPP
-	break
-	SP-solitaire2019-3	#SPPPPPPP
-	break
-	SP-solitaire2019_4	#SPPPPPPP
-	break
-	SP-solitaire2019-1	#SPPPPPPP
-	break
-	SP-Sol_2019b_1	#SPPPPPPP
-	break
-	SP-Solitaire-2019c1	#SPPPPPPP
-	break
-	SP-Solitaire-2019c2	#SPPPPPPP
-	break
-	SP-Solitaire-2021-2
-	break
-	SP-Solitaire-2021-1
-	break
-	SP-Solitaire-2019c3	#SPPPPPPP
-	break
-	SP-Solitaire-2019c4	#SPPPPPPP
-	break
-	SP-Sol2019d-1	#SPPPPPPP
-endmap
+#map MP-solitaire -title "Réseau du Solitaire"
+#	SP-solitaire_plan
+#	break
+#	SP-sol2017-1
+#	break
+#	SP-sol2017-2
+#	break
+#	SP-Solitaire-c-2018_2 
+#	break
+#	SP-Solitaire-c-2018_3 
+#	break
+#	SP-solitaire2019-2	#SPPPPPPP
+#	break
+#	SP-solitaire2019-3	#SPPPPPPP
+#	break
+#	SP-solitaire2019_4	#SPPPPPPP
+#	break
+#	SP-solitaire2019-1	#SPPPPPPP
+#	break
+#	SP-Sol_2019b_1	#SPPPPPPP
+#	break
+#	SP-Solitaire-2019c1	#SPPPPPPP
+#	break
+#	SP-Solitaire-2019c2	#SPPPPPPP
+#	break
+#	SP-Solitaire-2021-2
+#	break
+#	SP-Solitaire-2021-1
+#	break
+#	SP-Solitaire-2019c3	#SPPPPPPP
+#	break
+#	SP-Solitaire-2019c4	#SPPPPPPP
+#	break
+#	SP-Sol2019d-1	#SPPPPPPP
+#endmap
 
 map MP-puitsAlain -title "Puits Alain"     
 	SP-pAlain
@@ -472,11 +473,11 @@ map MP-siphon69 -title "Siphon 69"
 	SP-siphon69
 endmap
 
-map MP-P11 -title "La galerie du P11"
-	SP-P11-h2
-	break
-	SP-P11-h1
-endmap
+#map MP-P11 -title "La galerie du P11"
+#	SP-P11-h2
+#	break
+#	SP-P11-h1
+#endmap
 
 #map MP-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
 #	SP-Goure2015b-5
@@ -531,12 +532,9 @@ map MP-gourance -title "La Gourance"
 	break
 	SP-gourance2      
 	break
-
 	SP-Gourance2013-1@Gourance2013
 	break
 	SP-Gourance2013-2@Gourance2013     
-	#MP-Gourance2013@Gourance2013
-
 	break
 	SP-gourance-4      
 	break
@@ -607,7 +605,7 @@ map MP-C37-Riviera -title "Du C37 à la Riviera"
 		MP-Voltigeurs
 		preview below MP-C37
 	break
-	MP-affluentC14
+	MP-affluentC14@AffluentC14
 	break
 	MP-arche-reverbere
 	break
@@ -646,9 +644,9 @@ map MP-B19-V11 -title "Réseaux du B19 et du V11"
 	break
 	MP-reseauaiguilles
 	break
-	MP-couteau-grenoblois
+	MP-couteau-grenoblois@CouteauG
 	break
-	MP-traverse
+	MP-traverse@PuitsTraverse
 	break
 	MP-aspirosouffle
 	break
@@ -677,9 +675,11 @@ map MP-Branlots-J14 -title "Réseaux des Branlots et du J14"
 	break
 	MP-pseudosiphons
 	break
-	MP-dino
+	MP-dino@dino
 	break
 	MP-P15
+	break
+	MP-erreurS@Erreur
 	break
 	MP-erreur
 endmap
@@ -711,25 +711,25 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MP-savoyards
 	break
+	MP-Solitaire-tot
+	break
 	MP-quitombe
 endmap
 
 map MP-Solitaire-tot -title "Réseau du Solitaire"
-	MP-solitaire
+	MP-solitaire@Solitaire
 	break
-	MP-oeufs
+	MP-oeufs@Solitaire
 endmap
 
 map MP-Jean-Dupond -title "Le début de la rivière aval"
-	MP-Solitaire-tot
-	break
 	MP-puitsAlain
 	break
 	MP-rivieredebut
 endmap
 
 map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
-	MP-P11
+	MP-P11@P11
 	break
 	MP-bivouac-500
 	break

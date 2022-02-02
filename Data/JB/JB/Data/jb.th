@@ -7,71 +7,80 @@ encoding  utf-8
 survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 # Pour importer les différentes données de différents fichiers topos : 
-	input Data-th/jb-amonts1.th
-	input Data-th/Crops_reseaux/C37/Data/C37_2020.th
+	input Data-th/NonTriees/jb-amonts1.th
+	input Data-th/C37/Data/C37_2020.th
 		equate Aa.28@jb-amonts1 0.2020@C37_2020
-	input Data-th/Crops_reseaux/affluentC14/Data/affluentC14.th
-		equate  2013-xab-22@affluentC14 Bg.0@jb-amonts1
+	input Data-th/affluentC14/affluentC14-tot.th
+		equate  2013-xab-22@affluentC14.AffluentC14 Bg.0@jb-amonts1
 
-	input Data-th/jb-amonts2.th
+	input Data-th/NonTriees/jb-amonts2.th
 		equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
     	equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
 
-	input Data-th/Crops_reseaux/Arianes/jb-arianes.th
+	input Data-th/Arianes/jb-arianes.th
 		equate  Bc.50@jb-arianes Bc.50@jb-amonts1
     	equate  Bb.115@jb-arianes Bb.115@jb-amonts1
 
-	input Data-th/Crops_reseaux/Lavoir/Data/Lavoir.th
+	input Data-th/Lavoir/Data/Lavoir.th
 		equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
     	equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
-	input Data-th/Crops_reseaux/Lavoir/Data/FileOu.th
+	input Data-th/Lavoir/Data/FileOu.th
 		equate FD-2012-9@Lavoir 2017-FD-0@fileou
 	
-	input Data-th/Crops_reseaux/aval-aiguilles/Data/Aval-aiguilles2.th
+	input Data-th/aval-aiguilles/Data/Aval-aiguilles2.th
 		equate  2012c-xa-29@aval-aiguilles2 De.44@jb-amonts2
-	input Data-th/Crops_reseaux/aval-aiguilles/Data/Aval-aiguilles.th
+	input Data-th/aval-aiguilles/Data/Aval-aiguilles.th
 		equate  Xa-2013-11@aval-aiguilles De.23@jb-amonts2
     	equate  2012c-xa-27@aval-aiguilles De.8@jb-amonts2
     	equate  2012c-xa-0double@aval-aiguilles Da.197@jb-amonts2
 	
-	input Data-th/Crops_reseaux/Shunt-Branlots/Data/shunt-branlots.th
-		equate  2013-xac-14@shunt-branlots Fb.29@jb-amonts2
-    	equate  2013-xac-0@shunt-branlots Fd.14@jb-amonts2
-	input Data-th/Crops_reseaux/CouteauG/Data/CouteauG.th
-		equate Xa-2015f-0@CouteauG Ee.0@jb-amonts2
-	input Data-th/Crops_reseaux/puitsquelontraverse/Data/puitstraverse.th
-		equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse
-	input Data-th/Crops_reseaux/Erreur/Data/Erreur.th
-		equate Xa-2015e-0@Erreur Da.2494@jb-amonts2
-    	equate Xa-2015e-10@Erreur Da.239@jb-amonts2
-	input Data-th/Crops_reseaux/dino/Data/jb-dino.th
-		equate xa-2014a-1@jb-dino Da.248@jb-amonts2
-    	equate xa-2014a-9@jb-dino Da.253@jb-amonts2
+
+
+	input Data-th/Shunt-Branlots/shuntBranlots-tot.th
+		equate  2013-xac-14@shunt-branlots.ShuntBranlots Fb.29@jb-amonts2
+    	equate  2013-xac-0@shunt-branlots.ShuntBranlots Fd.14@jb-amonts2
 	
+	input Data-th/CouteauG/couteauG-tot.th
+		equate Xa-2015f-0@CouteauG.CouteauG Ee.0@jb-amonts2
+	
+	input Data-th/puitsquelontraverse/puitsTraverse-tot.th
+		equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse.PuitsTraverse
+	
+	input Data-th/Erreur/erreur-tot.th
+		equate Xa-2015e-0@Erreur.Erreur Da.2494@jb-amonts2
+    	equate Xa-2015e-10@Erreur.Erreur Da.239@jb-amonts2
+	
+	input Data-th/dino/dino-tot.th
+		equate xa-2014a-1@jb-dino.dino Da.248@jb-amonts2
+    	equate xa-2014a-9@jb-dino.dino Da.253@jb-amonts2
+	
+
+
 	# Réseau du Solitaire
-	input Data-th/Crops_reseaux/Solitaire/Data/solitaire.th
-		equate xx36@solitaire Jd.17@jb-amonts2
-    	equate xx36@solitaire Jd.20@jb-amonts2
+	input Data-th/Solitaire/solitaire-tot.th
+	#input Data-th/Solitaire/Data/solitaire.th
+		equate xx36@solitaire.Solitaire Jd.17@jb-amonts2
+    	equate xx36@solitaire.Solitaire Jd.20@jb-amonts2
     	##equate xx36@solitaire Jd.19@jb-amonts2
     	##equate 2019-FD-9@solitaire Jd.24@jb-amonts2	# Jction 2019 Solitaire et Base du puits Alain
     	##extend ignore 2019-FD-9 Jd.24
- 	input Data-th/Crops_reseaux/Solitaire/Data/jb_solitaire2020a.th
-		equate 1@solitaire2020a 2019d-FD-10@solitaire
+ 	#input Data-th/Solitaire/Data/jb_solitaire2020a.th
+	#	equate 1@solitaire2020a 2019d-FD-10@solitaire
 	
-	input Data-th/jb-riv.th
+	input Data-th/NonTriees/jb-riv.th
 		equate  Jf.14@jb-amonts2  Jf.14@jb-riv
 		equate  Kg.0@jb-riv  Kg.0@jb-riv2
     	equate  Ke.29@jb-riv  Ke.29@jb-riv2
     	equate  Ke.43@jb-riv  Ke.43@jb-riv2
     	equate  Ke.33@jb-riv  Ke.33@jb-riv2
-	input Data-th/jb-riv2.th
+	input Data-th/NonTriees/jb-riv2.th
 		equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
     	equate  Da.58@jb-amonts2  Da.58@jb-riv2
     	equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
 
 	# Entre le bivouac -500 et la Gourance
-	input Data-th/Crops_reseaux/P11/Data/P11.th
-		equate Xav2016-23@P11 Kg.24@jb-riv
+	input Data-th/P11/p11-tot.th
+		equate Xav2016-23@P11.P11 Kg.24@jb-riv
 
 	## Gourance
 	# Explo 2013 dans l'aval de la Gourance
@@ -142,8 +151,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Plan/JB-C37.th2
 	#input Drawing-th2/Plan/JB-C37.th2
 		# join 
-	input Drawing-th2/Plan/affluentC14.th2
-		join SP-reverbere SP-affluent-C14-2
+	#input Drawing-th2/Plan/affluentC14.th2
+		join SP-reverbere SP-affluent-C14-2@AffluentC14
 ## Le B22
 	input Drawing-th2/Plan/JB-B22.th2
 	input Drawing-th2/Plan/arianes.th2
@@ -187,12 +196,16 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-scrap146b SP-Ascension -count 2
 ## Le réseau des Aiguilles
 	input Drawing-th2/Plan/aiguilles.th2
-	input Drawing-th2/Plan/puitstraverse.th2
-		join SP-traverse2 SP-audessusbulle
-	input Drawing-th2/Plan/CouteauG.th2
-		join SP-CouteauG1 SP-oublies
+# Réseau du Puits que l'on traverse
+	#input Drawing-th2/Plan/puitstraverse.th2
+	join SP-traverse2@PuitsTraverse SP-audessusbulle
 	input Drawing-th2/Plan/aval-aiguilles2.th2
 	input Drawing-th2/Plan/aval-aiguilles.th2
+
+# Réseau du Couteau Grenoblois
+#input Drawing-th2/Plan/CouteauG.th2
+	join SP-CouteauG1@CouteauG SP-oublies
+
 ## La rivière aux Excentriques
 	input Drawing-th2/Plan/excentriques.th2
 		join SP-Frenesie SP-Montagnesrusses
@@ -201,7 +214,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 ## La zone des Branlots
 	input Drawing-th2/Plan/montagnesrusses.th2
-	input Drawing-th2/Plan/shunt-branlots.th2
+	#input Drawing-th2/Plan/shunt-branlots.th2
+	
 	input Drawing-th2/Plan/echo2010.th2
 		join SP-Echo2010-1 SP-Branlots
 		join SP-Echo2010-2 SP-Branlots
@@ -210,7 +224,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-Branlots2 SP-Echo2010-3
 		join SP-Branlots2 SP-Echo2010-2
 		join SP-Echo SP-Branlots2
-		join SP-Branlots SP-s-branlots1
+		join SP-Branlots SP-s-branlots1@ShuntBranlots
 		## Autre join Avec Branlots2?????	### A VERIF
 		join SP-Echo2010-2 SP-Colimaconaval	## Erreur dans le 3D avec cette ligne suivante... A CORRIGER
 
@@ -223,15 +237,17 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ## Le V4, V5, Mais et Solitaire
 # Mais et Erreur
 	input Drawing-th2/Plan/passibas.th2
-	input Drawing-th2/Plan/Erreur.th2
-	    join SP-Erreur SP-berreur1
-	    join SP-P15 SP-berreur1
-		join SP-P15aval SP-Bourguignons1
-		join SP-P15aval SP-Pseudosiphon2
+# Shunt de l'Erreur
+#input Drawing-th2/Plan/Erreur.th2
+	join SP-Erreur SP-berreur1@Erreur
+    join SP-P15 SP-berreur1@Erreur
+	join SP-P15aval SP-Bourguignons1
+	join SP-P15aval SP-Pseudosiphon2
+
 	input Drawing-th2/Plan/mais.th2
 		join SP-Mais SP-Mais-2010
-	input Drawing-th2/Plan/dino.th2
-		join SP-dino-1 SP-Erreur -count 2
+	# Galerie du Petit Dino
+		join SP-dino-1@dino SP-Erreur -count 2
 ## Réseau des Bourguignons	
 	input Drawing-th2/Plan/bourguignons.th2
 ## Réseaux Anou2, Jaunisse, Grand Escalier
@@ -255,24 +271,26 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-pierretombe SP-anou2bis
 		join SP-mangerjct SP-papy2
 		join SP-quitombe4 SP-pquitombeend
+
 ## Le réseau du Solitaire
-	input Drawing-th2/Plan/solitaire-plan.th2
-	input Drawing-th2/Plan/solitaire-plan2017.th2
-		join SP-solitaire_plan SP-sol2017-1 -count 2
-	input Drawing-th2/Plan/solitaire2018.th2
-		join SP-Solitaire-c-2018_2 SP-solitaire_plan
-		###join SP-Solitaire2018-SP1 SP-sol2017-1
-	input Drawing-th2/Plan/solitaire2019_1.th2
-		join SP-solitaire2019-1 SP-Solitaire-c-2018_3
-	input Drawing-th2/Plan/solitaire2019_2.th2
-		join SP-solitaire2019-2 SP-sol2017-1
-	input Drawing-th2/Plan/solitaire2019_3.th2
-		join SP-Solitaire-2019c1 SP-Sol_2019b_1
-	input Drawing-th2/Plan/solitaire2019_4.th2
-		join SP-Sol2019d-1 SP-solitaire2019-1
-	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-plan2020.th2
-		join SP-Solitaire2020-1 SP-Sol2019d-1
-	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-plan2021.th2
+#	input Drawing-th2/Plan/solitaire-plan.th2
+#	input Drawing-th2/Plan/solitaire-plan2017.th2
+#		join SP-solitaire_plan SP-sol2017-1 -count 2
+#	input Drawing-th2/Plan/solitaire2018.th2
+#		join SP-Solitaire-c-2018_2 SP-solitaire_plan
+#		###join SP-Solitaire2018-SP1 SP-sol2017-1
+#	input Drawing-th2/Plan/solitaire2019_1.th2
+#		join SP-solitaire2019-1 SP-Solitaire-c-2018_3
+#	input Drawing-th2/Plan/solitaire2019_2.th2
+#		join SP-solitaire2019-2 SP-sol2017-1
+#	input Drawing-th2/Plan/solitaire2019_3.th2
+#		join SP-Solitaire-2019c1 SP-Sol_2019b_1
+#	input Drawing-th2/Plan/solitaire2019_4.th2
+#		join SP-Sol2019d-1 SP-solitaire2019-1
+
+#	input Data-th/Solitaire/th2/solitaire-plan2020.th2
+#		join SP-Solitaire2020-1 SP-Sol2019d-1
+#	input Data-th/Solitaire/th2/solitaire-plan2021.th2
 
 
 ######### A MODIFIER a partir d'ici ##############     
@@ -287,8 +305,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-riv-3 SP-riv-4
 	input Drawing-th2/Plan/bivouac500.th2
 		join SP-bivouac500 SP-riv-5
-	input Drawing-th2/Plan/P11.th2
-		##join SP-P11-h1 ???
+
+# Galerie du P11
+	##join SP-P11-h1 ???
 
 ## La zone de la Gourance
 	input Drawing-th2/Plan/gourance.th2
@@ -321,8 +340,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/C37-coupe.th2
 	#input Drawing-th2/Coupe/C37-coupe.th2
 		#join ?? ??
-    input Drawing-th2/Coupe/affluentC14-coupe.th2
-    	join SC-affluent-C14_c1 SC-archec2 
+    #input Drawing-th2/Coupe/affluentC14-coupe.th2
+    	join SC-affluent-C14_c1@AffluentC14 SC-archec2 
     input Drawing-th2/Coupe/voltigeurs-coupe.th2
     	join SC-voltic1 SC-C37c3
 ## Le B22
@@ -351,44 +370,45 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/V11-coupe.th2
 		join SC-aiguillesc1 SC-lavoirc7
 		##join SC-excenc2 SC-excenLavoir???
-	input Drawing-th2/Coupe/CouteauG-coupe.th2
-		join SC-CouteauGc1 SC-V11c3
-	input Drawing-th2/Coupe/puitstraverse-coupe.th2
-		join SC-traversec1 SC-V11c5
+
+# Réseau du Couteau Grenoblois
+	join SC-CouteauGc1@CouteauG SC-V11c3
+# Puits que L'on Traverse
+	join SC-traversec1@PuitsTraverse SC-V11c5
 
 ## Le 14J
 	input Drawing-th2/Coupe/14J-coupe.th2
 ## Les Branlots
-	input Drawing-th2/Coupe/shunt-branlots-coupe.th2
-		join SC-J14c3 SC-s_branlots-c1
-		join SC-branlotsc1 SC-V11c5
-	input Drawing-th2/Coupe/Erreur-coupe.th2
-		##join SC-berreurc1 ??
+	join SC-J14c3 SC-s_branlots-c1@ShuntBranlots
+	join SC-branlotsc1 SC-V11c5
+	##join SC-berreurc1 ??
 ## Le V4 et le Mais
 	input Drawing-th2/Coupe/V4-coupe.th2
-		join SC-berreurc1 SC-maisc1
+		join SC-berreurc1@Erreur SC-maisc1
 		#join SC-V4c1 SC-dupontc3 	
 		join SC-maisc1 SC-V6c1
-	input Drawing-th2/Coupe/dino-coupe.th2
-		join SC-maisc1 SC-dino-coupe
+	# Galerie du Petit Dino
+		join SC-maisc1 SC-dino-coupe@dino
 	input Drawing-th2/Coupe/jaunisse-coupe.th2
 		join SC-jaunissec6 SC-anou2c3
 		join SC-jaunissec7 SC-anou2c1
 		join SC-jaunissec7 SC-anou2c2
 		join SC-jaunissec3 SC-chatonsc1
+
 ### Le réseau du Solitaire
-	input Drawing-th2/Coupe/solitaire-coupe2017.th2
-	input Drawing-th2/Coupe/solitaire-coupe2018.th2
-	input Drawing-th2/Coupe/solitaire2019-coupe1.th2
-		join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
-	input Drawing-th2/Coupe/solitaire2019-coupe2.th2
-		join SC-sol-C1 SC-solitaire2019-2
-	input Drawing-th2/Coupe/solitaire2019-coupe3.th2
-	input Drawing-th2/Coupe/solitaire2019-coupe4.th2
-		join SC-Solitaire-2019c1 SC-Sol-2019b-1
-	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-coupe2020.th2
-	input Data-th/Crops_reseaux/Solitaire/th2/solitaire-coupe2021.th2
-		join SC-Solitaire-2021-1 SC-Solitaire-2019c1
+#	input Drawing-th2/Coupe/solitaire-coupe2017.th2
+#	input Drawing-th2/Coupe/solitaire-coupe2018.th2
+#	input Drawing-th2/Coupe/solitaire2019-coupe1.th2
+#		join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
+#	input Drawing-th2/Coupe/solitaire2019-coupe2.th2
+#		join SC-sol-C1 SC-solitaire2019-2
+#	input Drawing-th2/Coupe/solitaire2019-coupe3.th2
+#	input Drawing-th2/Coupe/solitaire2019-coupe4.th2
+#		join SC-Solitaire-2019c1 SC-Sol-2019b-1
+
+#	input Data-th/Solitaire/th2/solitaire-coupe2020.th2
+#	input Data-th/Solitaire/th2/solitaire-coupe2021.th2
+#		join SC-Solitaire-2021-1 SC-Solitaire-2019c1
 
 ## La rivière aval
 	input Drawing-th2/Coupe/avalc1
@@ -398,7 +418,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SC-400c1 SC-biv500c4
 ## Le Bivouac -500
 	input Drawing-th2/Coupe/aval500.th2
-	input Drawing-th2/Coupe/P11-coupe.th2
 
 ## La Gourance	
 	join SC-balconc1 SC-GourecoupeSteph3@GoureToi

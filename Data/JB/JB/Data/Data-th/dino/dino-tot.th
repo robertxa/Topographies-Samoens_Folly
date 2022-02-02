@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey dino -title "Galerie du Petit Dino"
+
+    input Data/dino.th
+    # Dessins en plan
+    input Data/dino.th2
+    # Dessins en coupe
+    input Data/dino-coupe.th2
+
+    # Add maps
+    input dino-maps.th
+
+endsurvey
