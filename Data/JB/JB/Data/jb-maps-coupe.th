@@ -313,26 +313,27 @@ map MC-P11 -title "La galerie du P11"
 	SC-P11-hc1	# scrap à nettoyer ?
 endmap
 
-map MC-plafond-Gourance -title "Réseau GoureToiDeLa"  
-	SC-Goure2019-1
-	break
-	SC-GourecoupeSteph3
-	break
-	SC-Gourecoupesteph1
-	break
-	SC-GourecoupeSteph2
-	break
-	SC-Gourcoupe20151
-	break
-	SC-Gourecoupe2015-2 # Depart souris chauve
-endmap
+#map MC-plafond-Gourance -title "Réseau GoureToiDeLa"  
+#	SC-Goure2019-1
+#	break
+#	SC-GourecoupeSteph3
+#	break
+#	SC-Gourecoupesteph1
+#	break
+#	SC-GourecoupeSteph2
+#	break
+#	SC-Gourcoupe20151
+#	break
+#	SC-Gourecoupe2015-2 # Depart souris chauve
+#endmap
 
 map MC-gourance -title "La Gourance"      
 	SC-balconc1
 	break
 	SC-balcon2
 	break
-	SC-Gourance2013-c1
+	SC-Gourance2013-c1@Gourance2013
+	#MC-Gourance2013@Gourance2013
 endmap
 
 map MC-aval-cheneau -title "Le cheneau et la salle du Chaos"
@@ -361,21 +362,21 @@ map MC-nuitblanche -title "Réseau de la Nuit Blanche"
 	SC-avalc2
 endmap
 
-map MC-siphons -title "Les siphons terminaux"
-	SC-S1-c
-	break
-	SC-S1-S2_c
-	break
-	SC-S2-c
-	break
-	SC-S2-S3_c
-	break
-	SC-S3-c
-	break
-	SC-S3-S4_c 
-	break
-	SC-Siphons2020-1
-endmap
+#map MC-siphons -title "Les siphons terminaux"
+#	SC-S1-c
+#	break
+#	SC-S1-S2_c
+#	break
+#	SC-S2-c
+#	break
+#	SC-S2-S3_c
+#	break
+#	SC-S3-c
+#	break
+#	SC-S3-S4_c 
+#	break
+#	SC-Siphons2020-1
+#endmap
 
 #preview below JB-amontsuite # pour JB-aval-riviere à partir solitaire
 
@@ -494,7 +495,7 @@ map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"
 	break
 	MC-siphon69
 	break
-	MC-plafond-Gourance
+	MC-plafond-Gourance@GoureToi
 	break
 	MC-gourance
 endmap
@@ -510,7 +511,7 @@ map MC-aval-900 -title "Du Bivouac -900 au siphon terminal"
 	break
 	MC-sezhommes
 	break
-	MC-siphons
+	MC-siphons@Siphons
 endmap
 
 ##########################################################################
@@ -621,6 +622,6 @@ map MC-Aval -title "V4-Siphons"
 	break
 	MC-aval-900
 	break
-	MC-siphons
+	MC-siphons@Siphons
 endmap
    

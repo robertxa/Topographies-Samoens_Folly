@@ -5,12 +5,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source Data/Gourance2013.th
-source Data/Gourance2013.th2
-source Data/Gourance2013-coupe.th2
+#source Data/Gourance2013.th
+#source Data/Gourance2013.th2
+#source Data/Gourance2013-coupe.th2
+source gourance2013-tot.th
 
 # Add config file
-input ../../../../../../../config.thc 
+input ../../../../../../config.thc 
   
 layout xviexport
    scale 1 1000

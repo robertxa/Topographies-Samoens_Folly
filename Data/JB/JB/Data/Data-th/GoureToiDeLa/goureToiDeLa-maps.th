@@ -1,0 +1,115 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#map GoureToiDeLa-Tot -title "GoureToiDeLa<br>Zone de la Gourance"
+	#SP-Goure2015b-5
+	#break
+	#SP-Goure2015b-4
+	#break
+	#SP-Goure2015-1
+	#break
+	#SP-Goure2015c
+	#break
+	#SP-Goure2015b
+	#break
+	#SP-Goure2019-1
+	#break
+	#SP-Goure2019-2
+	#break
+	#SP-Goure2019-3
+	#break
+	#SP-Gourance2014-1
+	#break
+	#SP-Gourance2014-2
+	#break
+	#SP-Gourance2014-3
+	#break
+	#SP-Goure2022-3
+	#break
+	#SP-Goure2022-2
+	#break
+	#SP-Goure2022-1
+	#break
+	#SP-Damocles-3
+	#break
+	#SP-Gourance2014-4
+	#break
+	#SP-Gourance2014-5
+	#break
+	#SP-Gourance2014-6
+	#break
+	#SP-Gourance2015b-1 # Depart souris chauve
+	#break
+	#SP-Goure2015b-2
+	#break
+	#SP-Gourance2014-5
+	#break
+	#SP-Goure2015b-3
+#endmap
+
+map MP-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
+	SP-Goure2015b-5
+	break
+	SP-Goure2015b-4
+	break
+	SP-Goure2015-1	# SPPPPP
+	break
+	SP-Goure2015c
+	break
+	SP-Goure2015b
+	break
+	SP-Goure2019-1	# SPPPPP
+	break
+	SP-Goure2019-2	# SPPPPP
+	break
+	SP-Goure2019-3	# SPPPPP
+	break
+	SP-Gourance2014-1
+	break
+	SP-Gourance2014-2
+	break
+	SP-Gourance2014-3
+	break
+	SP-Gourance2014-4
+	break
+	SP-Gourance2014-5
+	break
+	SP-Gourance2014-6
+	break
+	SP-Gourance2015b-1 # Depart souris chauve
+	break
+	SP-Goure2015b-2
+	break
+	SP-Gourance2014-5
+	break
+	SP-Goure2015b-3
+endmap
+
+map MP-Damocles -title "Méandre Damoclès"  
+	SP-Goure2022-3
+	break
+	SP-Goure2022-2
+	break
+	SP-Goure2022-1
+	break
+	SP-Damocles-3
+endmap
+
+
+map MC-plafond-Gourance -title "Réseau GoureToiDeLa"  
+	SC-Goure2019-1
+	break
+	SC-GourecoupeSteph3
+	break
+	SC-Gourecoupesteph1
+	break
+	SC-GourecoupeSteph2
+	break
+	SC-Gourcoupe20151
+	break
+	SC-Gourecoupe2015-2 # Depart souris chauve
+endmap
+   

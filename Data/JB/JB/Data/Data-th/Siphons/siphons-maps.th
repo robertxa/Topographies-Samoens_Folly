@@ -1,0 +1,35 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-siphons -title "Siphons terminaux"
+	SP-S1
+	break
+	SP-S1-S2-1
+	break
+	SP-S2
+	break
+	SP-siphons2020-1
+	break
+	SP-S2S3	   
+endmap
+
+
+map MC-siphons -title "Siphons terminaux"
+	SC-S1-c
+	break
+	SC-S1-S2_c
+	break
+	SC-S2-c
+	break
+	SC-S2-S3_c
+	break
+	SC-S3-c
+	break
+	SC-S3-S4_c 
+	break
+	SC-Siphons2020-1
+endmap
+   

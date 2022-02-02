@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Siphons -title "Siphons terminaux"
+
+    input Data/siphons.th
+
+    # Dessins en plan
+    input Data/siphons.th2
+    input Data/siphons2020.th2
+        join SP-siphons2020-1 SP-S2S3
+
+    # Dessins en coupe
+    input Data/siphons-coupe.th2   
+    input Data/siphons-coupe2020.th2   
+        join SC-Siphons2020-1 SC-S2-S3_c
+    
+    # Add maps
+    input siphons-maps.th
+
+endsurvey

@@ -478,62 +478,65 @@ map MP-P11 -title "La galerie du P11"
 	SP-P11-h1
 endmap
 
-map MP-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
-	SP-Goure2015b-5
-	break
-	SP-Goure2015b-4
-	break
-	SP-Goure2015-1	# SPPPPP
-	break
-	SP-Goure2015c
-	break
-	SP-Goure2015b
-	break
-	SP-Goure2019-1	# SPPPPP
-	break
-	SP-Goure2019-2	# SPPPPP
-	break
-	SP-Goure2019-3	# SPPPPP
-	break
-	SP-Gourance2014-1
-	break
-	SP-Gourance2014-2
-	break
-	SP-Gourance2014-3
-	break
-	SP-Gourance2014-4
-	break
-	SP-Gourance2014-5
-	break
-	SP-Gourance2014-6
-	break
-	SP-Gourance2015b-1 # Depart souris chauve
-	break
-	SP-Goure2015b-2
-	break
-	SP-Gourance2014-5
-	break
-	SP-Goure2015b-3
-endmap
+#map MP-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
+#	SP-Goure2015b-5
+#	break
+#	SP-Goure2015b-4
+#	break
+#	SP-Goure2015-1	# SPPPPP
+#	break
+#	SP-Goure2015c
+#	break
+#	SP-Goure2015b
+#	break
+#	SP-Goure2019-1	# SPPPPP
+#	break
+#	SP-Goure2019-2	# SPPPPP
+#	break
+#	SP-Goure2019-3	# SPPPPP
+#	break
+#	SP-Gourance2014-1
+#	break
+#	SP-Gourance2014-2
+#	break
+#	SP-Gourance2014-3
+#	break
+#	SP-Gourance2014-4
+#	break
+#	SP-Gourance2014-5
+#	break
+#	SP-Gourance2014-6
+#	break
+#	SP-Gourance2015b-1 # Depart souris chauve
+#	break
+#	SP-Goure2015b-2
+#	break
+#	SP-Gourance2014-5
+#	break
+#	SP-Goure2015b-3
+#endmap
 
-map MP-Damocles -title "Méandre Damoclès"  
-	SP-Goure2022-3
-	break
-	SP-Goure2022-2
-	break
-	SP-Goure2022-1
-	break
-	SP-Damocles-3
-endmap
+#map MP-Damocles -title "Méandre Damoclès"  
+#	SP-Goure2022-3
+#	break
+#	SP-Goure2022-2
+#	break
+#	SP-Goure2022-1
+#	break
+#	SP-Damocles-3
+#endmap
 
 map MP-gourance -title "La Gourance"      
 	SP-gourance-1
 	break
 	SP-gourance2      
 	break
-	SP-Gourance2013-1
+
+	SP-Gourance2013-1@Gourance2013
 	break
-	SP-Gourance2013-2     
+	SP-Gourance2013-2@Gourance2013     
+	#MP-Gourance2013@Gourance2013
+
 	break
 	SP-gourance-4      
 	break
@@ -578,17 +581,17 @@ map MP-nuitblanche -title "Réseau de la Nuit Blanche"
 	SP-nuitblanche4
 endmap
 
-map MP-siphons -title "Les siphons terminaux"
-	SP-S1
-	break
-	SP-S1-S2-1
-	break
-	SP-S2
-	break
-	SP-siphons2020-1
-	break
-	SP-S2S3	 
-endmap
+#map MP-siphons -title "Les siphons terminaux"
+#	SP-S1
+#	break
+#	SP-S1-S2-1
+#	break
+#	SP-S2
+#	break
+#	SP-siphons2020-1
+#	break
+#	SP-S2S3	 
+#endmap
 
 #preview below SP-JB-amontsuite # pour JB-aval-riviere à partir solitaire
 
@@ -732,10 +735,10 @@ map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
 	break
 	MP-siphon69
 	break
-	MP-plafond-Gourance	[-60 60 m] above
-	#MP-plafond-Gourance	[-60 60 m] below
+	MP-plafond-Gourance@GoureToi	[-60 60 m] above
+	#MP-plafond-Gourance@GoureToi	[-60 60 m] below
 	break
-	MP-Damocles
+	MP-Damocles@GoureToi
 	break
 	MP-gourance
 	break
@@ -749,7 +752,7 @@ endmap
 map MP-aval-900 -title "Bivouac -900 et siphons terminaux"
 	MP-sezhommes@Sezhommes
 	break
-	MP-siphons
+	MP-siphons@Siphons
 endmap
 
 ##########################################################################

@@ -4,11 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-input Data/siphons.th2
-input Data/siphons2020.th2
-join siphons2020-SP1 SP-S2S3
+map MP-Gourance2013 -title "Gourance 2013"  
+	SP-Gourance2013-1
+	break
+	SP-Gourance2013-2     
+endmap
 
-input Data/siphons-coupe.th2   
-input Data/siphons-coupe2020.th2   
-join Siphons2020-SC1 SC-S2-S3_c
 
+map MC-Gourance2013 -title "Gourance 2013"  
+	SC-Gourance2013-c1
+endmap
+   

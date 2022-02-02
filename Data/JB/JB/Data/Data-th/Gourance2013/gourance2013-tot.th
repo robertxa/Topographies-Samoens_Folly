@@ -1,0 +1,18 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Gourance2013 -title "Gourance 2013 - Zone de la Gourance"
+	
+	input Data/Gourance2013.th
+	## PLAN
+	input Data/Gourance2013.th2
+	## COUPE
+	input Data/Gourance2013-coupe.th2
+
+	# Add maps definition
+	input gourance2013-maps.th
+		
+endsurvey
