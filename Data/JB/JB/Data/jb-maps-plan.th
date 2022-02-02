@@ -52,11 +52,11 @@ endmap
 
 #preview above JB-rev # C'était placé à la fin des maps précédentes. A replacer correctement si besoin !
  
-map MP-arianes -title "Méandre des Arianes"
-	SP-arianes1
-	break
-	SP-arianes2
-endmap
+#map MP-arianes -title "Méandre des Arianes"
+#	SP-arianes1
+#	break
+#	SP-arianes2
+#endmap
   
 map MP-champselysees -title "Les Champs Elysées"
 	SP-champs-elysees
@@ -469,7 +469,7 @@ map MP-B22-B21 -title "B21 - B22"
 	break
 	MP-champselysees
 	break
-	MP-arianes
+	MP-arianes@arianes
 	break
 	MP-gadoue
 endmap

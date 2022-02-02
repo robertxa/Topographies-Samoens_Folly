@@ -17,9 +17,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
     	equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
 
-	input Data-th/Arianes/jb-arianes.th
-		equate  Bc.50@jb-arianes Bc.50@jb-amonts1
-    	equate  Bb.115@jb-arianes Bb.115@jb-amonts1
+	input Data-th/Arianes/arianes-tot.th
+		equate  Bc.50@jb-arianes.arianes Bc.50@jb-amonts1
+    	equate  Bb.115@jb-arianes.arianes Bb.115@jb-amonts1
+
+
 
 	input Data-th/Lavoir/Data/Lavoir.th
 		equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
@@ -151,11 +153,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Plan/JB-C37.th2
 	#input Drawing-th2/Plan/JB-C37.th2
 		# join 
-	#input Drawing-th2/Plan/affluentC14.th2
-		join SP-reverbere SP-affluent-C14-2@AffluentC14
+	# Affluent du C14
+	join SP-reverbere SP-affluent-C14-2@AffluentC14
 ## Le B22
 	input Drawing-th2/Plan/JB-B22.th2
-	input Drawing-th2/Plan/arianes.th2
+	#input Drawing-th2/Plan/arianes.th2
 ## Le B21
 	input Drawing-th2/Plan/B21.th2
 ## La rivière de la Gadoue    
@@ -427,7 +429,5 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ## Le réseau de Sezhommes
 	join SC-avalc2 SC-sezhommes2020-3@Sezhommes
 ## Les siphons terminaux
-
-
 
 endsurvey

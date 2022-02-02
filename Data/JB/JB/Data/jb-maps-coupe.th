@@ -4,7 +4,6 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-
 map MC-C37 -title "C37"
 	SC-C37c1	# Metapost error
 	break
@@ -57,10 +56,6 @@ map MC-B22 -title "B22"
 	SC-B22cx
 endmap
 
-map MC-arianes -title "Méandre des Arianes"
-	SC-arianesc
-endmap
-  
 map MC-champselysees -title "Les Champs Elysées"
 	SC-elyseesc1
 endmap
@@ -301,7 +296,7 @@ map MC-B22-B21 -title "B21 - B22"
 	break
 	MC-B22
 	break
-	MC-arianes
+	MC-arianes@arianes
 	break
 	MC-gadoue
 endmap

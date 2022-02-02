@@ -1888,17 +1888,17 @@ endscrap
 
 scrap SC-elyseesc1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 2355.5099999999998 1218.66 station -name Gs.4@jb-arianes
+point 2355.5099999999998 1218.66 station -name Gs.4@jb-arianes.arianes
 
-point 2335.9399999999996 1217.02 station -name Gs.3@jb-arianes
+point 2335.9399999999996 1217.02 station -name Gs.3@jb-arianes.arianes
 
-point 2323.0099999999998 1216.12 station -name Gs.2@jb-arianes
+point 2323.0099999999998 1216.12 station -name Gs.2@jb-arianes.arianes
 
-point 2307.6499999999996 1216.5 station -name Gs.1@jb-arianes
+point 2307.6499999999996 1216.5 station -name Gs.1@jb-arianes.arianes
 
 point 2151.2599999999998 1189.56 station -name Bc.51@jb-amonts1
 
-point 2212.16 1211.56 station -name Gs.0@jb-arianes
+point 2212.16 1211.56 station -name Gs.0@jb-arianes.arianes
 
 point 2245.72 1232.94 station -name Bd.1@jb-amonts1
 
@@ -2172,7 +2172,7 @@ point 2773.3799999999997 1178.76 station -name Bb.117@jb-amonts1
 
 point 2784.6699999999996 1161.3200000000002 station -name Bb.116@jb-amonts1
 
-point 2796.74 1153.01 station -name Bb.115@jb-arianes
+point 2796.74 1153.01 station -name Bb.115@jb-arianes.arianes
 
 point 2796.74 1073.24 station -name Bb.114@jb-amonts1
 
@@ -2180,160 +2180,160 @@ endscrap
 
 
 
-scrap SC-arianesc -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+#scrap SC-arianesc -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-line wall
-  2797.0 1212.5
-  2797.0 1212.5 2756.5 1189.5 2744.5 1189.5
-  2732.5 1189.5 2706.5 1185.5 2693.0 1185.0
-  2679.5 1184.5 2645.5 1186.0 2634.0 1185.0
-  2622.5 1184.0 2572.5 1184.5 2559.5 1184.0
-  2546.5 1183.5 2526.0 1181.0 2515.0 1184.0
-  2504.0 1187.0 2504.5 1198.0 2493.0 1203.0
-  2481.5 1208.0 2456.0 1212.0 2442.5 1209.5
-  2429.0 1207.0 2417.5 1207.0 2403.5 1207.5
-  2389.5 1208.0 2377.0 1210.5 2371.5 1214.5
-  smooth off
-endline
+#line wall
+#  2797.0 1212.5
+#  2797.0 1212.5 2756.5 1189.5 2744.5 1189.5
+#  2732.5 1189.5 2706.5 1185.5 2693.0 1185.0
+#  2679.5 1184.5 2645.5 1186.0 2634.0 1185.0
+#  2622.5 1184.0 2572.5 1184.5 2559.5 1184.0
+#  2546.5 1183.5 2526.0 1181.0 2515.0 1184.0
+#  2504.0 1187.0 2504.5 1198.0 2493.0 1203.0
+#  2481.5 1208.0 2456.0 1212.0 2442.5 1209.5
+#  2429.0 1207.0 2417.5 1207.0 2403.5 1207.5
+#  2389.5 1208.0 2377.0 1210.5 2371.5 1214.5
+#  smooth off
+#endline
 
-line wall
-  2524.0 1144.0
-  2524.0 1144.0 2515.0 1147.0 2509.5 1152.0
-  2504.0 1157.0 2492.0 1166.5 2503.0 1165.0
-  2514.0 1163.5 2564.0 1165.0 2569.5 1164.5
-  2575.0 1164.0 2612.5 1165.5 2618.0 1164.0
-  2623.5 1162.5 2628.0 1154.5 2639.5 1153.0
-  2666.01 1149.54 2645.0 1153.0 2645.0 1153.0
-  smooth off
-  2645.0 1153.0 2667.0 1150.5 2673.5 1149.5
-  2680.0 1148.5 2700.5 1147.5 2711.5 1146.5
-  2722.5 1145.5 2735.0 1141.0 2746.0 1140.5
-  2757.0 1140.0 2795.5 1114.0 2795.5 1114.0
-  smooth off
-endline
+#line wall
+#  2524.0 1144.0
+#  2524.0 1144.0 2515.0 1147.0 2509.5 1152.0
+#  2504.0 1157.0 2492.0 1166.5 2503.0 1165.0
+#  2514.0 1163.5 2564.0 1165.0 2569.5 1164.5
+#  2575.0 1164.0 2612.5 1165.5 2618.0 1164.0
+#  2623.5 1162.5 2628.0 1154.5 2639.5 1153.0
+#  2666.01 1149.54 2645.0 1153.0 2645.0 1153.0
+#  smooth off
+#  2645.0 1153.0 2667.0 1150.5 2673.5 1149.5
+#  2680.0 1148.5 2700.5 1147.5 2711.5 1146.5
+#  2722.5 1145.5 2735.0 1141.0 2746.0 1140.5
+#  2757.0 1140.0 2795.5 1114.0 2795.5 1114.0
+#  smooth off
+#endline
 
-line wall
-  2408.0 1142.0
-  2408.0 1142.0 2426.0 1162.0 2437.0 1168.5
-  2448.0 1175.0 2453.0 1173.5 2461.5 1169.0
-  2470.0 1164.5 2474.5 1160.5 2481.5 1154.5
-  2496.16 1141.93 2485.5 1153.0 2485.5 1153.0
-  smooth off
-  2485.5 1153.0 2488.0 1137.0 2488.5 1127.0
-  2489.0 1117.0 2490.5 1098.5 2495.0 1095.5
-  2499.5 1092.5 2502.0 1092.5 2507.5 1092.5
-  2513.0 1092.5 2525.5 1093.5 2525.5 1093.5
-  smooth off
-endline
+#line wall
+#  2408.0 1142.0
+#  2408.0 1142.0 2426.0 1162.0 2437.0 1168.5
+#  2448.0 1175.0 2453.0 1173.5 2461.5 1169.0
+#  2470.0 1164.5 2474.5 1160.5 2481.5 1154.5
+#  2496.16 1141.93 2485.5 1153.0 2485.5 1153.0
+#  smooth off
+#  2485.5 1153.0 2488.0 1137.0 2488.5 1127.0
+#  2489.0 1117.0 2490.5 1098.5 2495.0 1095.5
+#  2499.5 1092.5 2502.0 1092.5 2507.5 1092.5
+#  2513.0 1092.5 2525.5 1093.5 2525.5 1093.5
+#  smooth off
+#endline
 
-line wall
-  2347.0 1160.5
-  2347.0 1160.5 2362.5 1156.5 2362.5 1152.5
-  2362.5 1148.5 2368.0 1141.5 2378.0 1141.5
-  2388.0 1141.5 2401.0 1142.0 2408.0 1142.0
-  smooth off
-endline
+#line wall
+#  2347.0 1160.5
+#  2347.0 1160.5 2362.5 1156.5 2362.5 1152.5
+#  2362.5 1148.5 2368.0 1141.5 2378.0 1141.5
+#  2388.0 1141.5 2401.0 1142.0 2408.0 1142.0
+#  smooth off
+#endline
 
-line wall
-  2354.0 1211.5
-  2354.0 1211.5 2366.0 1163.0 2361.5 1163.0
-  2357.0 1163.0 2351.5 1170.5 2351.5 1170.5
-  smooth off
-endline
+#line wall
+#  2354.0 1211.5
+#  2354.0 1211.5 2366.0 1163.0 2361.5 1163.0
+#  2357.0 1163.0 2351.5 1170.5 2351.5 1170.5
+#  smooth off
+#endline
 
-point 2364.1399999999994 1209.5700000000002 station -name Gs.5@jb-arianes
+#point 2364.1399999999994 1209.5700000000002 station -name Gs.5@jb-arianes
 
-point 2368.46 1153.97 station -name Gs.6@jb-arianes
+#point 2368.46 1153.97 station -name Gs.6@jb-arianes
 
-point 2371.3399999999997 1148.76 station -name Gs.7@jb-arianes
+#point 2371.3399999999997 1148.76 station -name Gs.7@jb-arianes
 
-point 2376.0099999999998 1147.83 station -name Gs.8@jb-arianes
+#point 2376.0099999999998 1147.83 station -name Gs.8@jb-arianes
 
-point 2379.5 1148.5 station -name Gs.11@jb-arianes
+#point 2379.5 1148.5 station -name Gs.11@jb-arianes
 
-point 2385.1399999999994 1149.74 station -name Gs.10@jb-arianes
+#point 2385.1399999999994 1149.74 station -name Gs.10@jb-arianes
 
-point 2391.8499999999995 1153.53 station -name Gs.11@jb-arianes
+#point 2391.8499999999995 1153.53 station -name Gs.11@jb-arianes
 
-point 2406.62 1162.0900000000001 station -name Gs.12@jb-arianes
+#point 2406.62 1162.0900000000001 station -name Gs.12@jb-arianes
 
-point 2427.3199999999997 1172.8 station -name Gs.13@jb-arianes
+#point 2427.3199999999997 1172.8 station -name Gs.13@jb-arianes
 
-point 2443.6899999999996 1179.1 station -name Gs.14@jb-arianes
+#point 2443.6899999999996 1179.1 station -name Gs.14@jb-arianes
 
-point 2453.7999999999997 1182.0900000000001 station -name Gs.15@jb-arianes
+#point 2453.7999999999997 1182.0900000000001 station -name Gs.15@jb-arianes
 
-point 2338.5 1169.75 label -text "etr."
+#point 2338.5 1169.75 label -text "etr."
 
-point 2534.5 1123.5 label -text "etr."
+#point 2534.5 1123.5 label -text "etr."
 
-line label -text "méandre des Arianes"
-  2657.5 1177.25
-  2657.5 1177.25 2698.0 1174.25 2705.5 1174.5
-  2713.0 1174.75 2751.5 1175.5 2751.5 1175.5
-  smooth off
-endline
+#line label -text "méandre des Arianes"
+#  2657.5 1177.25
+#  2657.5 1177.25 2698.0 1174.25 2705.5 1174.5
+#  2713.0 1174.75 2751.5 1175.5 2751.5 1175.5
+#  smooth off
+#endline
 
-line label -text "méandre des Arianes"
-  2383.25 1193.0
-  2383.25 1193.0 2409.5 1191.5 2418.5 1192.0
-  2427.5 1192.5 2455.5 1193.0 2462.0 1193.0
-  2468.5 1193.0 2478.75 1191.75 2478.75 1191.75
-  smooth off
-endline
+#line label -text "méandre des Arianes"
+#  2383.25 1193.0
+#  2383.25 1193.0 2409.5 1191.5 2418.5 1192.0
+#  2427.5 1192.5 2455.5 1193.0 2462.0 1193.0
+#  2468.5 1193.0 2478.75 1191.75 2478.75 1191.75
+#  smooth off
+#endline
 
-line rope
-  2480.5 1173.5
-  2487.75 1174.25
-  2494.75 1131.5
-endline
+#line rope
+#  2480.5 1173.5
+#  2487.75 1174.25
+#  2494.75 1131.5
+#endline
 
-line rope
-  2364.0 1214.75
-  2369.0 1146.75
-endline
+#line rope
+#  2364.0 1214.75
+#  2369.0 1146.75
+#endline
 
-point 2468.5699999999997 1172.55 station -name Gs.16@jb-arianes
+#point 2468.5699999999997 1172.55 station -name Gs.16@jb-arianes
 
-point 2475.08 1170.76 station -name 0@jb-arianes
+#point 2475.08 1170.76 station -name 0@jb-arianes
 
-point 2488.04 1163.12 station -name Gr.1@jb-arianes
+#point 2488.04 1163.12 station -name Gr.1@jb-arianes
 
-point 2492.3599999999997 1153.85 station -name Gr.2@jb-arianes
+#point 2492.3599999999997 1153.85 station -name Gr.2@jb-arianes
 
-point 2505.91 1134.5 station -name Gr.3@jb-arianes
+#point 2505.91 1134.5 station -name Gr.3@jb-arianes
 
-point 2511.4599999999996 1132.48 station -name Gr.4@jb-arianes
+#point 2511.4599999999996 1132.48 station -name Gr.4@jb-arianes
 
-point 2520.5099999999998 1124.89 station -name Gr.5@jb-arianes
+#point 2520.5099999999998 1124.89 station -name Gr.5@jb-arianes
 
-point 2492.7999999999997 1170.15 station -name Gr.6@jb-arianes
+#point 2492.7999999999997 1170.15 station -name Gr.6@jb-arianes
 
-point 2503.43 1169.89 station -name Gr.7@jb-arianes
+#point 2503.43 1169.89 station -name Gr.7@jb-arianes
 
-point 2514.0199999999995 1170.55 station -name Gr.8@jb-arianes
+#point 2514.0199999999995 1170.55 station -name Gr.8@jb-arianes
 
-point 2535.2799999999997 1169.97 station -name Gr.9@jb-arianes
+#point 2535.2799999999997 1169.97 station -name Gr.9@jb-arianes
 
-point 2549.43 1170.37 station -name Gr.10@jb-arianes
+#point 2549.43 1170.37 station -name Gr.10@jb-arianes
 
-point 2560.0199999999995 1171.03 station -name Gr.11@jb-arianes
+#point 2560.0199999999995 1171.03 station -name Gr.11@jb-arianes
 
-point 2588.37 1170.12 station -name Gr.12@jb-arianes
+#point 2588.37 1170.12 station -name Gr.12@jb-arianes
 
-point 2602.54 1169.78 station -name Gr.13@jb-arianes
+#point 2602.54 1169.78 station -name Gr.13@jb-arianes
 
-point 2616.7 1168.94 station -name Gr.14@jb-arianes
+#point 2616.7 1168.94 station -name Gr.14@jb-arianes
 
-point 2637.9599999999996 1167.99 station -name Gr.15@jb-arianes
+#point 2637.9599999999996 1167.99 station -name Gr.15@jb-arianes
 
-point 2673.3399999999997 1164.81 station -name Gr.16@jb-arianes
+#point 2673.3399999999997 1164.81 station -name Gr.16@jb-arianes
 
-point 2698.1499999999996 1164.08 station -name Gr.17@jb-arianes
+#point 2698.1499999999996 1164.08 station -name Gr.17@jb-arianes
 
-point 2744.18 1160.3400000000001 station -name Gr.18@jb-arianes
+#point 2744.18 1160.3400000000001 station -name Gr.18@jb-arianes
 
-endscrap
+#endscrap
 
 
 
