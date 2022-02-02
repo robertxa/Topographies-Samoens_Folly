@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -139.0 -128.75 904.402 622.4412
+##XTHERION## xth_me_area_adjust -128.75 -128.75 3109.1248 1724.8022
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {697.659 1 1.0} {336.95900000000006 0.2020} Sezhommes-plan2020.xvi 0 {}
+##XTHERION## xth_me_image_insert {1642.539 1 1.0} {730.6580000000001 Ko.0@sezhommes1975.Sezhommes} Sezhommes-plan2020.xvi 0 {}
 
 
 
@@ -79,6 +79,31 @@ line arrow
 endline
 
 point 200.75 141.5 label -text "chatière"
+
+line wall -close on -reverse on -outline in
+  108.0 217.25
+  108.0 217.25 89.5 221.75 91.0 218.0
+  92.5 214.25 95.5 212.0 100.0 213.0
+  104.5 214.0 108.0 217.25 108.0 217.25
+  smooth off
+endline
+
+line floor-step -reverse on
+  130.0 157.25
+  130.0 157.25 137.75 159.75 137.0 164.75
+  136.25 169.75 132.75 177.0 138.0 175.25
+  143.25 173.5 148.75 173.25 148.75 173.25
+  smooth off
+endline
+
+line floor-step
+  154.0 151.5
+  154.0 151.5 147.0 160.25 149.25 169.25
+endline
+
+point 159.0 186.0 dig
+
+point 318.0 172.5 air-draught -orientation 61.6 -scale xs -subtype winter
 
 line wall
   706.5 350.5
@@ -326,6 +351,8 @@ line wall
   474.75 394.25 474.5 397.75 474.5 397.75
   smooth off
 endline
+
+point 485.75 303.0 air-draught -orientation 85.9 -scale xs -subtype winter
 
 line wall
   531.5 299.25

@@ -550,19 +550,19 @@ map MP-aval-gourance -title "Rivière à l'aval de la Gourance"
 	SP-900-1
 endmap
       
-map MP-sezhommes -title "Galerie de Sezhommes"
-	SP-sezhommes2020-3
-	break
-	SP-sezhommes2020-1
-	break
-	SP-sezhommes2020-2
-	break
-	SP-sezhommes2022-1
-	break
-	SP-sezhommes-1
-	break
-	SP-sezhommes2               
-endmap
+#map MP-sezhommes -title "Galerie de Sezhommes"
+#	SP-sezhommes2020-3
+#	break
+#	SP-sezhommes2020-1
+#	break
+#	SP-sezhommes2020-2
+#	break
+#	SP-sezhommes2022-1
+#	break
+#	SP-sezhommes-1
+#	break
+#	SP-sezhommes2               
+#endmap
 
 map MP-laconscience -title "galerie de la Conscience"
 	SP-conscience-1
@@ -747,7 +747,7 @@ map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
 endmap
 
 map MP-aval-900 -title "Bivouac -900 et siphons terminaux"
-	MP-sezhommes
+	MP-sezhommes@Sezhommes
 	break
 	MP-siphons
 endmap

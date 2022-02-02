@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 13149.23 6938.0
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 13149.23 6938.0
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {13021.23 0 1.0} {6810.0 C37b@jb-amonts1} synthese_plan.xvi 0 {}
 
 
@@ -75,14 +75,15 @@ endline
 
 line wall
   1837.0 1506.25
-  1837.0 1506.25 1855.75 1520.75 1857.5 1525.0
+  1837.0 1506.25 1852.5 1515.0 1854.25 1519.25
+  smooth off
 endline
 
 point 1960.5 1572.25 altitude -align bottom-right
 
 line wall
-  1872.75 1541.25
-  1874.5 1545.5 1874.0 1541.75 1875.75 1545.5
+  1866.25 1531.0
+  1868.0 1535.25 1874.0 1541.75 1875.75 1545.5
   1877.5 1549.25 1875.25 1554.0 1877.25 1555.75
   1879.25 1557.5 1905.0 1564.0 1907.0 1562.75
   1909.0 1561.5 1909.75 1558.5 1913.25 1558.5
@@ -95,6 +96,8 @@ line wall
 endline
 
 point 1855.54 1526.78 station -name Ko.20
+
+point 1901.0 1582.5 air-draught -orientation 81.8 -scale xs -subtype winter
 
 line wall
   1942.25 1609.75
@@ -136,6 +139,7 @@ endline
 line pit
   1430.75 1349.5
   1430.75 1349.5 1429.5 1354.75 1434.75 1355.5
+  smooth off
 endline
 
 point 1317.25 1339.25 altitude -align top
@@ -150,6 +154,7 @@ point 1356.25 1356.5 height -value [-13 m]
 line pit
   1667.0 1405.25
   1667.0 1405.25 1672.5 1396.5 1675.0 1396.0
+  smooth off
 endline
 
 point 1401.0 1351.5 height -value [-13 m]
@@ -263,6 +268,7 @@ endline
 line pit
   1671.5 1427.75
   1671.5 1427.75 1665.25 1422.75 1662.0 1422.75
+  smooth off
 endline
 
 line pit
@@ -275,6 +281,7 @@ endline
 line pit
   1675.5 1409.25
   1675.5 1409.25 1670.5 1408.25 1666.75 1411.75
+  smooth off
 endline
 
 point 1664.75 1393.75 altitude -align bottom
@@ -399,6 +406,8 @@ line pit
   1745.0 1432.25 1745.25 1428.0 1745.25 1428.0
   smooth off
 endline
+
+point 1755.0 1471.5 air-draught -orientation 41.7 -scale xs -subtype winter
 
 line wall
   1828.0 1510.25

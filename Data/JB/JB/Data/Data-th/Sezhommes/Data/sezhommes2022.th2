@@ -13,8 +13,8 @@ line wall -subtype presumed
 endline
 
 line wall
-  1300.75 643.75
-  1302.5 640.25 1303.5 638.75 1301.5 637.0
+  1302.75 647.0
+  1304.5 643.5 1303.5 638.75 1301.5 637.0
   1299.5 635.25 1300.0 632.75 1294.25 628.5
   1288.5 624.25 1280.25 620.25 1280.25 620.25
   smooth off
@@ -26,24 +26,27 @@ line wall
   1305.25 634.0 1304.5 636.75 1312.0 643.75
   1319.5 650.75 1329.75 655.75 1328.25 659.0
   1326.75 662.25 1327.0 660.75 1324.75 661.75
-  1322.5 662.75 1320.75 663.25 1320.75 664.5
+  1322.5 662.75 1323.5 663.0 1323.5 664.25
+  smooth off
 endline
 
 line pit
   1299.75 642.5
   1299.75 642.5 1320.0 661.25 1323.5 664.25
+  smooth off
 endline
 
 line pit
   1300.25 639.5
   1300.25 639.5 1325.0 659.75 1326.75 663.5
+  smooth off
 endline
 
-point 1338.25 655.5 height -value [+8 m]
+point 1346.5 652.75 height -value [+8 m]
 
-point 1268.0 585.0 label -text "colm."
+point 1265.25 574.5 label -text "colm."
 
-point 1277.5 594.5 continuation -attr Code D -attr Cavite JB -attr Reseau "Sezhommes" -attr CA "Petit courant d'air soufflant en hiver" -text "colmatage de glaise à désobstruer, courant d'air soufflant en hiver"
+point 1279.0 591.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Sezhommes" -attr CA "Petit courant d'air soufflant en hiver" -text "colmatage de glaise à désobstruer, courant d'air soufflant en hiver"
 
 point 1324.5 629.25 air-draught -orientation 41.8 -scale xs -subtype winter
 
@@ -54,6 +57,7 @@ point 1283.25 616.25 altitude -align bottom-right
 line wall -subtype presumed
   1267.75 604.5
   1267.75 604.5 1280.5 614.75 1283.25 616.25
+  smooth off
 endline
 
 point 1281.94 617.759 station -name 5.2022@sezhommes2022

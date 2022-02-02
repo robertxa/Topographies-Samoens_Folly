@@ -21,6 +21,7 @@ survey Sezhommes -title "Réseau de Sezhommes"
 
 	## PLAN
 	input Data/sezhommes.th2
+		join SP-sezhommes-1 SP-sezhommes2
 	input Data/sezhommes2020.th2
 		join SP-sezhommes2020-1 SP-sezhommes-1 -count 2	# Vers l'aval 
 	input Data/sezhommes2022.th2
