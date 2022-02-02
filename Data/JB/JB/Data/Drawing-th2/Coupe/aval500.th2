@@ -343,39 +343,10 @@ point 5498.360000000001 3094.1899999999996 station -name Kg.11@jb-riv
 point 5485.46 3091.4399999999996 station -name Kg.10@jb-riv
 
 # A MODIFIER LORSQUE LA COUPE SERA DESSINEE
-point 5221.48 3108.29 station -name Gn.16@Damocles.GoureToi
 
-point 5238.110000000001 3116.7699999999995 station -name Gn.15@Damocles.GoureToi
-
-point 5255.22 3116.17 station -name Gn.14@Damocles.GoureToi
-
-point 5266.22 3116.9399999999996 station -name Gn.13@Damocles.GoureToi
-
-point 5278.73 3116.5 station -name Gn.12@Damocles.GoureToi
-
-point 5287.1900000000005 3116.9399999999996 station -name Gn.11@Damocles.GoureToi
-
-point 5297.46 3117.8399999999997 station -name Gn.10@Damocles.GoureToi
-
-point 5313.25 3120.3399999999997 station -name Gn.8@Damocles.GoureToi
-
-point 5341.1 3122.7799999999997 station -name Gn.7@Damocles.GoureToi
-
-point 5350.24 3113.9399999999996 station -name Gn.6@Damocles.GoureToi
-
-point 5360.91 3113.5699999999997 station -name Gn.5@Damocles.GoureToi
-
-point 5406.35 3115.16 station -name Gn.4@Damocles.GoureToi
-
-point 5443.610000000001 3103.0499999999997 station -name Gn.3@Damocles.GoureToi
-
-point 5460.27 3090.04 station -name Gn.2@Damocles.GoureToi
 
 line wall
-  5342.5 3105.0
-  5342.5 3105.0 5358.5 3111.0 5364.0 3111.0
-  5369.5 3111.0 5396.5 3099.0 5403.0 3099.0
-  5409.5 3099.0 5437.5 3100.0 5442.0 3097.0
+  5442.0 3097.0
   5446.5 3094.0 5463.5 3089.0 5457.0 3088.0
   5450.5 3087.0 5440.0 3084.5 5434.0 3082.5
   5428.0 3080.5 5414.5 3083.5 5414.0 3076.5
@@ -384,39 +355,12 @@ line wall
   smooth off
 endline
 
-line wall -subtype presumed
-  5250.0 3069.0
-  5250.0 3069.0 5265.5 3085.5 5273.5 3087.5
-  5281.5 3089.5 5294.0 3107.5 5303.5 3107.5
-  5313.0 3107.5 5332.0 3103.0 5342.5 3105.0
-  smooth off
-endline
-
-line wall -subtype presumed
-  5329.5 3152.5
-  5329.5 3152.5 5282.0 3149.0 5271.0 3146.5
-  5260.0 3144.0 5218.5 3141.5 5214.5 3141.5
-  smooth off
-endline
-
 line wall
   5506.5 3133.0
   5506.5 3133.0 5496.0 3110.5 5494.0 3104.5
   5492.0 3098.5 5491.5 3097.5 5486.5 3097.5
   5481.5 3097.5 5477.0 3097.5 5472.5 3097.5
-  5468.0 3097.5 5461.5 3097.0 5460.0 3103.5
-  5458.5 3110.0 5447.5 3160.0 5435.0 3160.5
-  5422.5 3161.0 5342.5 3155.5 5329.5 3152.5
-  smooth off
-endline
-
-line rope
-  5341.5 3128.5
-  5313.0 3126.5
-  5287.0 3124.0
-  5256.0 3124.0
-  5236.0 3124.0
-  5221.0 3117.5
+  5468.0 3097.5 5459.25 3098.5 5457.75 3105.0
 endline
 
 line rope
@@ -434,13 +378,6 @@ endline
 point 5465.0 3124.5 height -value [+5 m]
 
 point 5498.0 3078.5 height -value [-5 m]
-
-line label -text "méandre Damoclès"
-  5255.5 3130.5
-  5408.0 3142.0
-endline
-
-point 5208.0 3124.5 continuation -attr Code B -text "Gros volume difficile à équiper, sommet puits de la Gourance ?"
 
 point 5771.5 3173.0 height -value [-11 m]
 
@@ -552,10 +489,6 @@ line wall
   5485.0 3072.0 5488.63 3066.51 5489.0 3072.0
   smooth off
 endline
-
-point 5473.02 3089.8199999999997 station -name Gn.1@Damocles.GoureToi
-
-point 5473.02 3073.67 station -name Gn.0@Damocles.GoureToi
 
 point 5464.27 3065.22 station -name Kg.8@jb-riv
 

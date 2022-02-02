@@ -4,10 +4,9 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source Data/siphons.th
-source siphons-tot.th
+source neufcent-tot.th
 # Add config file
-input ../../../../../../../config.thc 
+input ../../../../../../config.thc 
 
 layout xviexport
 	scale 1 1000
@@ -21,7 +20,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
 	  
-	doc-title "Siphons aval"
+	doc-title "Zone -900 m"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -32,7 +31,7 @@ layout my_layout
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "<it>Plan<ss> - Siphons aval et réseau Stick, Samoëns, 74, France"
+	map-comment "<it>Plan<ss> - Puits du Cheneau et Bivouac -900 m, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -41,8 +40,8 @@ layout my_layout
 	map-header 70 60 nw
 	map-header-bg off
 	layers on
-	symbol-hide line survey
-	#debug station-names
+	#symbol-hide line survey
+	debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
@@ -61,7 +60,7 @@ layout my_layout
 	endcode  
 
 	# add general view
-	map-image 45 20 nw Data/jb-Xav-2020-plan20000.pdf
+	#map-image 45 20 nw Data/jb-Xav-2020-plan20000.pdf
  
  endlayout
  
@@ -73,7 +72,7 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-	doc-title "Siphons et réseau Stick"
+	doc-title "Cheneau et -900"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -84,7 +83,7 @@ layout my_layout-coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "<it>Coupe développée<ss> - Siphons et réseau Stick, coupe développée, Samoëns, 74, France"
+	map-comment "<it>Coupe développée<ss> - Puits du Cheneau et Bivouac -900 m, coupe développée, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -93,8 +92,8 @@ layout my_layout-coupe
 	map-header 0 45 sw
 	map-header-bg off
 	layers on
-	symbol-hide line survey
-	#debug station-names
+	#symbol-hide line survey
+	debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  
@@ -113,16 +112,16 @@ layout my_layout-coupe
 	endcode  
 
 	# add general view
-	map-image 30 110 nw Data/jb-Xav-2020-coupe20000.pdf  
+	#map-image 30 110 nw Data/jb-Xav-2020-coupe20000.pdf  
 
  endlayout
 
  
   
- #export map -fmt xvi -layout xviexport -o Data/siphons-2003.xvi
- #export map -projection extended -fmt xvi -layout xviexport -o Data/siphons-coupe-2003.xvi
+ export map -fmt xvi -layout xviexport -o Data/cheneau-2012.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/cheneau-coupe-2012.xvi
   
- export map -projection plan -o Outputs/siphon-2020-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/siphon-2020-coupe.pdf
+ export map -projection plan -o Outputs/cheneau-2012-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/cheneau-2012-coupe.pdf
 
- export model -o Outputs/siphon-2020.lox
+ export model -o Outputs/cheneau-2012.lox

@@ -42,7 +42,8 @@ survey GoureToi -title "GoureToiDeLa - Zone de la Gourance"
 	input th2/GoureToiDeLa2015coupe.th2
 		join SC-Gourcoupe20151 SC-Gourecoupesteph1
 	input th2/GoureToiDeLa2019coupe.th2
-	#input th2/GoureToiDeLa2019coupe.th2
+	input th2/GoureToiDeLa2022coupe.th2
+		join SC-Gourance2022-1 SC-Gourecoupesteph1
 
 	# Add maps definition
 	input goureToiDeLa-maps.th

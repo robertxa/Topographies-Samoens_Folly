@@ -4,11 +4,19 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-input Data/siphons.th2
-input Data/siphons2020.th2
-join siphons2020-SP1 SP-S2S3
+survey Cheneau -title "Puits du Cheneau et -900"
 
-input Data/siphons-coupe.th2   
-input Data/siphons-coupe2020.th2   
-join Siphons2020-SC1 SC-S2-S3_c
+    input Data/bivouac900.th
 
+    ## Plan
+    #input Data/siphons2020.th2
+    #    join siphons2020-SP1 SP-S2S3
+    ## Coupe
+    #input Data/siphons-coupe.th2   
+    #input Data/siphons-coupe2020.th2   
+    #   join Siphons2020-SC1 SC-S2-S3_c
+
+    ## Maps
+    #input neufcent-maps.th
+
+endsurvey
