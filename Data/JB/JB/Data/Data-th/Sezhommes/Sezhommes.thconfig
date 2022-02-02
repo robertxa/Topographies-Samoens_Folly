@@ -45,7 +45,7 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "<it>Plan<ss> - Réseau de Sezhommes 2020"
+	map-comment "<it>Plan<ss> - Réseau de Sezhommes 2022"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -104,13 +104,13 @@ layout layout_coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "<it>Coupe développée<ss> - Réseau de Sezhommes 2020"
+	map-comment "<it>Coupe développée<ss> - Réseau de Sezhommes 2022"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 26  cm
-	map-header 0 0 nw
+	legend-width 28  cm
+	map-header 0 100 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -135,7 +135,7 @@ layout layout_coupe
 	endcode  
   
 	# add general view
-	map-image 55 -50 nw Data/jb-Xav-2020-coupe20000.pdf
+	map-image 5 60 nw Data/jb-Xav-2020-coupe20000.pdf
 
 	######################### 
   

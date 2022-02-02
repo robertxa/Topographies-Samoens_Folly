@@ -264,16 +264,6 @@ map MC-aval-cheneau -title "Le cheneau et la salle du Chaos"
 	break
 	SC-avalc3
 endmap
-      
-map MC-sezhommes -title "Galerie de Sezhommes"
-	SC-sezhommes2020-1
-	break
-	SC-sezhommes2020-2
-	break
-	SC-sezhommes2020-3
-	break
-	SC-avalc1         
-endmap
 
 map MC-laconscience -title "galerie de la Conscience"
 	SC-consciencec1
@@ -415,7 +405,7 @@ endmap
 map MC-aval-900 -title "Du Bivouac -900 au siphon terminal"
 	MC-nuitblanche
 	break
-	MC-sezhommes
+	MC-sezhommes@Sezhommes
 	break
 	MC-siphons@Siphons
 endmap

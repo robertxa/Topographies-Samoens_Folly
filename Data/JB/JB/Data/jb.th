@@ -412,7 +412,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 ## La rivière aval
 	input Drawing-th2/Coupe/avalc1
-		join SC-avalc1 SC-S1-c@Siphons	# Erreur ici ???
+		join SC-avalc1@Sezhommes SC-S1-c@Siphons	# Erreur ici ???
 		join SC-avalc5 SC-balconc1
 	input Drawing-th2/Coupe/aval400.th2
 		join SC-400c1 SC-biv500c4
@@ -425,10 +425,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	join SC-Gourance2013-c1@Gourance2013 SC-balcon2	# Escalade 2013 dans l'aval de la Gourance
 
 ## Le réseau de Sezhommes
-	input Drawing-th2/Coupe/sezhommes2020-coupe.th2
-		join SC-avalc1 SC-sezhommes2020-3
-		join SC-avalc1 SC-sezhommes2020-2
-		join SC-avalc2 SC-sezhommes2020-3
+	join SC-avalc2 SC-sezhommes2020-3@Sezhommes
 ## Les siphons terminaux
 
 

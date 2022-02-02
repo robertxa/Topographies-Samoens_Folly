@@ -28,9 +28,12 @@ survey Sezhommes -title "Réseau de Sezhommes"
 		join SP-sezhommes2022-1 SP-sezhommes-1
 	
 	## COUPE
-	#input Data/sezhommes2020-coupe.th2
-	
-		#join SC-Gourcoupe20151 SC-Gourecoupesteph1	
+	input Data/sezhommes2020-coupe.th2
+	input Data/Sezhommes1975-coupe.th2
+		join SC-avalc1 SC-sezhommes2020-3
+		join SC-avalc1 SC-sezhommes2020-2
+	input Data/Sezhommes2022-coupe.th2
+		join SC-avalc1 SC-Sezhommes2022-1
 	
 	# Add maps definition
 	input sezhommes-maps.th
