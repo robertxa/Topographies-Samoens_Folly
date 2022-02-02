@@ -1,0 +1,43 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Sezhommes -title "Réseau de Sezhommes"
+	
+	input Data/sezhommes1975.th
+	input Data/sezhommes2020.th
+	input Data/sezhommes2022.th
+	
+	
+	centerline
+		equate 12.2020@sezhommes2020 Ko.31@sezhommes1975	# carrefour vers l'aval
+		equate 18.2020@sezhommes2020 Ko.39@sezhommes1975	# ancien terminus amont de l'affluent
+		#equate 46.2020@sezhommes2020 Kn.4@sezhommes1975	# sommet du P6 juste avant le bivouac -900 m
+		equate 0.2022@sezhommes2022 Ko.22@sezhommes1975	# Escalade dans le P8
+
+	endcenterline
+
+	## PLAN
+	input Data/sezhommes.th2
+	input Data/sezhommes2020.th2
+		join SP-sezhommes2020-1 SP-sezhommes-1 -count 2	# Vers l'aval 
+	input Data/sezhommes2022.th2
+		join SP-sezhommes2022-1 SP-sezhommes-1
+	
+	## COUPE
+	#input Data/sezhommes2020-coupe.th2
+	
+		#join SC-Gourcoupe20151 SC-Gourecoupesteph1	
+	
+	# Add maps definition
+	input sezhommes-maps.th
+		
+endsurvey
+
+
+
+
+
+

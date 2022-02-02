@@ -1,0 +1,71 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 2411.4658 1387.8432
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {944.8800000000001 1 1.0} {393.699 Ko.0@sezhommes1975.Sezhommes} Sezhommes-plan2022.xvi 0 {}
+
+
+
+scrap SP-sezhommes2022-1 -projection plan -author 2022 "Xavier Robert" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+line wall -subtype presumed
+  1280.25 620.25
+  1266.75 606.25
+endline
+
+line wall
+  1300.75 643.75
+  1302.5 640.25 1303.5 638.75 1301.5 637.0
+  1299.5 635.25 1300.0 632.75 1294.25 628.5
+  1288.5 624.25 1280.25 620.25 1280.25 620.25
+  smooth off
+endline
+
+line wall
+  1283.25 616.25
+  1283.25 616.25 1300.75 621.5 1303.0 627.75
+  1305.25 634.0 1304.5 636.75 1312.0 643.75
+  1319.5 650.75 1329.75 655.75 1328.25 659.0
+  1326.75 662.25 1327.0 660.75 1324.75 661.75
+  1322.5 662.75 1320.75 663.25 1320.75 664.5
+endline
+
+line pit
+  1299.75 642.5
+  1299.75 642.5 1320.0 661.25 1323.5 664.25
+endline
+
+line pit
+  1300.25 639.5
+  1300.25 639.5 1325.0 659.75 1326.75 663.5
+endline
+
+point 1338.25 655.5 height -value [+8 m]
+
+point 1268.0 585.0 label -text "colm."
+
+point 1277.5 594.5 continuation -attr Code D -attr Cavite JB -attr Reseau "Sezhommes" -attr CA "Petit courant d'air soufflant en hiver" -text "colmatage de glaise à désobstruer, courant d'air soufflant en hiver"
+
+point 1324.5 629.25 air-draught -orientation 41.8 -scale xs -subtype winter
+
+point 1264.0 599.0 narrow-end
+
+point 1283.25 616.25 altitude -align bottom-right
+
+line wall -subtype presumed
+  1267.75 604.5
+  1267.75 604.5 1280.5 614.75 1283.25 616.25
+endline
+
+point 1281.94 617.759 station -name 5.2022@sezhommes2022
+
+point 1299.66 628.829 station -name 4.2022@sezhommes2022
+
+point 1305.5 639.379 station -name 3.2022@sezhommes2022
+
+point 1319.02 663.659 station -name 2.2022@sezhommes2022
+
+point 1312.89 669.079 station -name 1.2022@sezhommes2022
+
+endscrap
+
+
