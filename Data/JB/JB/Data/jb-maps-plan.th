@@ -24,12 +24,6 @@ map MP-Voltigeurs -title "Méandre des Voltigeurs"
 	#preview below M-C37	# A mettre ici ou à mettre dans le map final ?
 endmap
 
-#map MP-affluentC14 -title "Affluent du C14"
-#	SP-JB-C14-1
-#	break
-#	SP-affluent-C14-2
-#endmap
-
 map MP-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
 	SP-reverbere
 	break
@@ -151,18 +145,6 @@ map MP-V11 -title "V11"
 	SP-V11-meandre
 endmap
 
-#map MP-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
-#	SP-couteauG2016
-#	break
-#	SP-CouteauG1
-#endmap
-
-#map MP-traverse -title "Galerie du puits que l'on Traverse"
-#	SP-traverse1
-#	break
-#	SP-traverse2
-#endmap         
-
 map MP-reseauaiguilles -title "Réseau des Aiguilles"
 	SP-Crawleurs
 	break
@@ -270,18 +252,12 @@ map MP-pseudosiphons -title "Les Pseudos Siphons"
 endmap
 
 map MP-erreur -title "Galerie de l'Erreur"
-#	SP-berreur1
-#	break
 	SP-Erreur
 endmap
 
 map MP-aven14J -title "Aven du 14 juillet"
 	SP-J14
 endmap
-
-#map MP-dino -title "Galerie du Petit Dino"
-#	SP-dino-1
-#endmap
 
 map MP-P15 -title "Galerie du P15"
 	SP-P15aval
@@ -386,52 +362,6 @@ map MP-chatons -title "Méandre des Chatons"
 	SP-chatons
 endmap
 
-#map MP-oeufs -title "Méandre des Oeufs"
-#	SP-Sol2021-2
-#	break
-#	SP-Sol2021-1
-#	break
-#	SP-Solitaire2020-1
-#	break
-#	SP-Solitaire2020-2
-#endmap
-
-#map MP-solitaire -title "Réseau du Solitaire"
-#	SP-solitaire_plan
-#	break
-#	SP-sol2017-1
-#	break
-#	SP-sol2017-2
-#	break
-#	SP-Solitaire-c-2018_2 
-#	break
-#	SP-Solitaire-c-2018_3 
-#	break
-#	SP-solitaire2019-2	#SPPPPPPP
-#	break
-#	SP-solitaire2019-3	#SPPPPPPP
-#	break
-#	SP-solitaire2019_4	#SPPPPPPP
-#	break
-#	SP-solitaire2019-1	#SPPPPPPP
-#	break
-#	SP-Sol_2019b_1	#SPPPPPPP
-#	break
-#	SP-Solitaire-2019c1	#SPPPPPPP
-#	break
-#	SP-Solitaire-2019c2	#SPPPPPPP
-#	break
-#	SP-Solitaire-2021-2
-#	break
-#	SP-Solitaire-2021-1
-#	break
-#	SP-Solitaire-2019c3	#SPPPPPPP
-#	break
-#	SP-Solitaire-2019c4	#SPPPPPPP
-#	break
-#	SP-Sol2019d-1	#SPPPPPPP
-#endmap
-
 map MP-puitsAlain -title "Puits Alain"     
 	SP-pAlain
 	break
@@ -473,60 +403,6 @@ map MP-siphon69 -title "Siphon 69"
 	SP-siphon69
 endmap
 
-#map MP-P11 -title "La galerie du P11"
-#	SP-P11-h2
-#	break
-#	SP-P11-h1
-#endmap
-
-#map MP-plafond-Gourance -title "Réseau GoureToiDeLa, plafonds de la Gourance"  
-#	SP-Goure2015b-5
-#	break
-#	SP-Goure2015b-4
-#	break
-#	SP-Goure2015-1	# SPPPPP
-#	break
-#	SP-Goure2015c
-#	break
-#	SP-Goure2015b
-#	break
-#	SP-Goure2019-1	# SPPPPP
-#	break
-#	SP-Goure2019-2	# SPPPPP
-#	break
-#	SP-Goure2019-3	# SPPPPP
-#	break
-#	SP-Gourance2014-1
-#	break
-#	SP-Gourance2014-2
-#	break
-#	SP-Gourance2014-3
-#	break
-#	SP-Gourance2014-4
-#	break
-#	SP-Gourance2014-5
-#	break
-#	SP-Gourance2014-6
-#	break
-#	SP-Gourance2015b-1 # Depart souris chauve
-#	break
-#	SP-Goure2015b-2
-#	break
-#	SP-Gourance2014-5
-#	break
-#	SP-Goure2015b-3
-#endmap
-
-#map MP-Damocles -title "Méandre Damoclès"  
-#	SP-Goure2022-3
-#	break
-#	SP-Goure2022-2
-#	break
-#	SP-Goure2022-1
-#	break
-#	SP-Damocles-3
-#endmap
-
 map MP-gourance -title "La Gourance"      
 	SP-gourance-1
 	break
@@ -550,20 +426,6 @@ map MP-aval-gourance -title "Rivière à l'aval de la Gourance"
 	break
 	SP-900-1
 endmap
-      
-#map MP-sezhommes -title "Galerie de Sezhommes"
-#	SP-sezhommes2020-3
-#	break
-#	SP-sezhommes2020-1
-#	break
-#	SP-sezhommes2020-2
-#	break
-#	SP-sezhommes2022-1
-#	break
-#	SP-sezhommes-1
-#	break
-#	SP-sezhommes2               
-#endmap
 
 map MP-laconscience -title "galerie de la Conscience"
 	SP-conscience-1
@@ -578,18 +440,6 @@ map MP-nuitblanche -title "Réseau de la Nuit Blanche"
 	break
 	SP-nuitblanche4
 endmap
-
-#map MP-siphons -title "Les siphons terminaux"
-#	SP-S1
-#	break
-#	SP-S1-S2-1
-#	break
-#	SP-S2
-#	break
-#	SP-siphons2020-1
-#	break
-#	SP-S2S3	 
-#endmap
 
 #preview below SP-JB-amontsuite # pour JB-aval-riviere à partir solitaire
 

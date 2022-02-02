@@ -27,10 +27,6 @@ map MC-Voltigeurs -title "Méandre des Voltigeurs"
 	SC-voltic4
 endmap
 
-#map MC-affluentC14 -title "Affluent du C14"
-#	SC-affluent-C14_c1
-#endmap
-
 map MC-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
 	SC-archec2
 	break
@@ -109,23 +105,7 @@ endmap
 
 map MC-V11 -title "V11"
 	SC-V11c1
-endmap
-
-#map MC-couteau-grenoblois -title "Réseau du Couteau Grenoblois"
-#	SC-CouteauG2016-1
-#	break
-#	SC-CouteauGc2
-#	break
-#	SC-CouteauG2016-2
-#	break
-#	SC-CouteauGc1
-#endmap
-
-#map MC-traverse -title "Galerie du puits que l'on Traverse"
-#	SC-traversec1
-#	break
-#	SC-traversec2
-#endmap         
+endmap      
 
 map MC-reseauaiguilles -title "Réseau des Aiguilles"
 	SC-V11c2
@@ -150,10 +130,6 @@ endmap
 map MC-bulle -title "Affluent de la Bulle"
 	SC-bullec1
 endmap
-	
-#map MC-erreur -title "Galerie de l'Erreur"
-#	SC-berreurc1
-#endmap
 
 map MC-echo -title "salle de l'Echo'"
 	SC-echoc1
@@ -167,10 +143,6 @@ map MC-aven14J -title "Aven du 14 juillet"
 	SC-J14c3
 endmap
 
-#map MC-s_branlots -title "Shunt des Branlots"
-#	SC-s_branlots-c1
-#endmap
-
 map MC-Branlots -title "Réseau des Branlots"
 	SC-russesc1
 	break
@@ -178,10 +150,6 @@ map MC-Branlots -title "Réseau des Branlots"
 	break
 	SC-pseudoc1
 endmap
-
-#map MC-dino -title "Galerie du Petit Dino"
-#	SC-dino-coupe
-#endmap
 
 map MC-bourguignons -title "Réseau des Bourguignons"
 	SC-bourguignonsc1
@@ -241,34 +209,6 @@ map MC-V4 -title "V4"
       SC-V4c5
 endmap
 
-#map MC-oeufs -title "Méandre des Oeufs"
-#	SC-Sol2021-1
-#	break
-#	SC-Solitaire2020-1
-#endmap
-
-#map MC-solitaire -title "Réseau du Solitaire"
-#	SC-sol-C2
-#	break
-#	SC-sol-C1	# Déformation scrap
-#	break
-#	SC-Solitaire-c_2018-1
-#	break
-#	SC-Solitaire-2021-1
-#	break
-#	SC-solitaire2019-1
-#	break
-#	SC-Sol-2019b-1
-#	break
-#	SC-solitaire2019-2	# Déformation scrap ???
-#	break
-#	SC-Solitaire-2019c1
-#	break
-#	SC-Sol2019d-1
-#	break
-#	SC-Sol2019d-2
-#endmap
-
 map MC-puitsAlain -title "Puits Alain"     
 	SC-V4c1	# Scrap déformé !
 	break
@@ -309,31 +249,12 @@ map MC-siphon69 -title "Siphon 69"
 	SC-siphon69c
 endmap
 
-#map MC-P11 -title "La galerie du P11"
-#	SC-P11-hc1	# scrap à nettoyer ?
-#endmap
-
-#map MC-plafond-Gourance -title "Réseau GoureToiDeLa"  
-#	SC-Goure2019-1
-#	break
-#	SC-GourecoupeSteph3
-#	break
-#	SC-Gourecoupesteph1
-#	break
-#	SC-GourecoupeSteph2
-#	break
-#	SC-Gourcoupe20151
-#	break
-#	SC-Gourecoupe2015-2 # Depart souris chauve
-#endmap
-
 map MC-gourance -title "La Gourance"      
 	SC-balconc1
 	break
 	SC-balcon2
 	break
 	SC-Gourance2013-c1@Gourance2013
-	#MC-Gourance2013@Gourance2013
 endmap
 
 map MC-aval-cheneau -title "Le cheneau et la salle du Chaos"
@@ -362,21 +283,6 @@ map MC-nuitblanche -title "Réseau de la Nuit Blanche"
 	SC-avalc2
 endmap
 
-#map MC-siphons -title "Les siphons terminaux"
-#	SC-S1-c
-#	break
-#	SC-S1-S2_c
-#	break
-#	SC-S2-c
-#	break
-#	SC-S2-S3_c
-#	break
-#	SC-S3-c
-#	break
-#	SC-S3-S4_c 
-#	break
-#	SC-Siphons2020-1
-#endmap
 
 #preview below JB-amontsuite # pour JB-aval-riviere à partir solitaire
 
