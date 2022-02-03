@@ -6,7 +6,7 @@ survey BA3b -title "BA3b"
 
     cs lat-long
 		#fix       BA3a       46.10499 6.774266 1578
-		fix       BA3b       46.104967 6.7743 1579 0.00005 0.00005 5
+		fix       BA3b       46.104967 6.7743 1579 #0.00005 0.00005 5 # erreur enlevée car ça crée un artéfact en altitude sur le 3D. Est-ce un problème d'unités ?
 		#station   BA3a        "BA3A" entrance air-draught
 		station   BA3b        "BA3B" entrance air-draught
 

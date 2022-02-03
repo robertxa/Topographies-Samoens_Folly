@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 12554.68 5981.0
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -131.0 -131.0 12554.68 5981.0
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {12426.68 1 1.0} {5853.0 Cc.0@jb-amonts2} coupe-aval-2.xvi 0 {}
 
 
@@ -143,7 +143,6 @@ endline
 line rope
   5377.0 3045.0
   5363.0 3042.0
-  5363.0 3019.0
   5348.0 3019.0
   5339.5 3012.0
   5340.0 2922.5
@@ -345,6 +344,16 @@ point 5485.46 3091.4399999999996 station -name Kg.10@jb-riv
 # A MODIFIER LORSQUE LA COUPE SERA DESSINEE
 
 
+point 5551.25 3096.5 air-draught -orientation 74.2 -scale xs -subtype winter
+
+point 5622.0 3138.75 gypsum
+
+point 5453.25 3066.0 gypsum
+
+point 5516.25 3108.5 gypsum
+
+point 5429.75 3057.75 gypsum
+
 line wall
   5442.0 3097.0
   5446.5 3094.0 5463.5 3089.0 5457.0 3088.0
@@ -361,6 +370,7 @@ line wall
   5492.0 3098.5 5491.5 3097.5 5486.5 3097.5
   5481.5 3097.5 5477.0 3097.5 5472.5 3097.5
   5468.0 3097.5 5459.25 3098.5 5457.75 3105.0
+  smooth off
 endline
 
 line rope

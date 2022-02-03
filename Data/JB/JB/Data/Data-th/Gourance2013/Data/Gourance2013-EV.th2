@@ -219,11 +219,12 @@ line wall
   smooth off
 endline
 
+point 90.25 48.25 label -text "Gourance"
 
-#line arrow
-#  78.25 55.25
-#  102.5 56.75
-#endline
+line arrow
+  78.25 55.25
+  102.5 56.75
+endline
 
 line wall
   75.0 58.0

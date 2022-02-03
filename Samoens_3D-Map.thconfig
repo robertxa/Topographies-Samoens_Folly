@@ -213,27 +213,27 @@ endlayout
 select MP-Folly-tot@MassifFolly
 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/Folly-2021-plan-Map.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/Folly-2022-plan-Map.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
- export model -o Outputs/3D/Folly-tot-Map-2021.lox
- #export model -o Outputs/3D/Folly-tot-Xav-2018.3d
+ export model -o Outputs/3D/Folly-tot-Map-2022.lox
+ #export model -o Outputs/3D/Folly-tot-Xav-2022.3d
 
-##export model -o Outputs/vrml/Folly2014.vrml
+##export model -o Outputs/vrml/Folly2022.vrml
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2021 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Folly-tot-2014.kml -layout my_layout
+# export map -proj plan -fmt kml -o Outputs/Folly-tot-2022.kml -layout my_layout
 
 # Export de la database sql
-#export database -o Outputs/database_Folly-2015.sql
+#export database -o Outputs/database_Folly-2022.sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-#export database -o Outputs/Lists/databaseJB-2020.sql
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2021.html
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2021.kml
-export survey-list -location on -o Outputs/Lists/Surveys2021.html
-export cave-list -location on -o Outputs/Lists/Caves2021.html
+#export database -o Outputs/Lists/databaseJB-2022.sql
+export continuation-list -o Outputs/Lists/ContinuationsJB2-2022.html
+export continuation-list -o Outputs/Lists/ContinuationsJB2-2022.kml
+export survey-list -location on -o Outputs/Lists/Surveys2022.html
+export cave-list -location on -o Outputs/Lists/Caves2022.html

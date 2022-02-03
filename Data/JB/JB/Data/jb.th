@@ -8,8 +8,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 # Pour importer les différentes données de différents fichiers topos : 
 	input Data-th/NonTriees/jb-amonts1.th
+
 	input Data-th/C37/Data/C37_2020.th
 		equate Aa.28@jb-amonts1 0.2020@C37_2020
+	
 	input Data-th/affluentC14/affluentC14-tot.th
 		equate  2013-xab-22@affluentC14.AffluentC14 Bg.0@jb-amonts1
 
@@ -425,7 +427,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	join SC-balconc1 SC-GourecoupeSteph3@GoureToi
 	join SC-GourecoupeSteph3@GoureToi SC-balcon2 # Plafonds de la Gourance
 	join SC-Gourance2013-c1@Gourance2013 SC-balcon2	# Escalade 2013 dans l'aval de la Gourance
-	join SC-balcon3 SC-Gourance2022-1
+	join SC-balcon3 SC-Gourance2022-1@GoureToi
 
 ## Le réseau de Sezhommes
 	join SC-avalc2 SC-sezhommes2020-3@Sezhommes
