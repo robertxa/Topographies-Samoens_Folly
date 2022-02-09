@@ -157,3 +157,6 @@ export model -o Outputs/CP7.lox
   
 # Export kml files
 export map -proj plan -fmt kml -o Outputs/CP7.kml -layout my_layout
+
+# Export database sql
+export database -fmt sql -o Outputs/databaseCP7-2022.sql
