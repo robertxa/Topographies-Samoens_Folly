@@ -35,6 +35,7 @@ line wall -subtype debris
   61.0 27.75
   61.0 27.75 61.75 28.0 65.5 29.5
   69.25 31.0 78.0 30.0 78.25 32.5
+  smooth off
 endline
 
 line wall
@@ -42,7 +43,10 @@ line wall
   47.25 3.25 47.25 5.5 50.0 8.5
   52.75 11.5 53.75 15.75 56.0 18.25
   58.25 20.75 57.57 27.33 61.0 27.75
+  smooth off
 endline
+
+point 47.0 53.0 u:symbol_extend -scale s
 
 point 67.5 62.75 label -text "<bf>A20" -scale xl
 

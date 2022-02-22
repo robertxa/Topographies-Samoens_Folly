@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.75 -186.8515 260.25 207.5
+##XTHERION## xth_me_area_adjust -129.75 -186.8515 284.75 207.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.614599999999996 1 1.0} {58.841499999999996 0@V0.V0} V0-map.xvi 0 {}
 
@@ -187,6 +187,8 @@ line ceiling-step -clip off
   93.25 25.75 91.0 31.0 91.0 31.0
   smooth off
 endline
+
+point 155.5 -24.25 u:symbol_plan -scale s
 
 line ceiling-step -clip off
   117.25 14.75

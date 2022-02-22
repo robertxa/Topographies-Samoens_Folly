@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 257.75 245.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 300.75 245.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {79.84049999999999 1 1.0} {74.2163 A30} A30-map.xvi 0 {}
 
@@ -12,6 +12,7 @@ line wall
   128.5 94.25 121.5 92.25 110.5 92.5
   99.5 92.75 97.25 94.25 92.0 92.75
   86.75 91.25 95.25 89.75 77.0 86.0
+  smooth off
 endline
 
 point 96.0 116.5 height -value [-6 m]
@@ -59,6 +60,7 @@ endline
 line pit
   87.5 92.75
   87.5 92.75 88.0 72.25 108.0 74.5
+  smooth off
 endline
 
 line wall -subtype pit
@@ -68,7 +70,10 @@ line wall -subtype pit
   51.5 60.75 53.5 58.5 66.75 58.25
   80.0 58.0 81.25 51.25 92.75 56.75
   104.25 62.25 113.5 61.5 109.25 66.75
+  smooth off
 endline
+
+point 171.5 78.0 u:symbol_plan -scale s
 
 line wall
   109.25 66.75

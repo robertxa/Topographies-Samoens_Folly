@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 212.0 277.0
+##XTHERION## xth_me_area_adjust -128.75 -128.75 218.5 277.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {50.1931 1 1.0} {108.291 0} CP86-2020-map.xvi 0 {}
 
@@ -65,6 +65,8 @@ point 45.0 121.75 altitude -align top-right
 point 36.5 98.0 height -value [-4 m]
 
 point 29.25 147.75 label -text "<bf>CP86" -scale xl
+
+point 89.25 141.25 u:symbol_plan -scale s
 
 point 39.5 130.75 entrance -orientation 162.9
 

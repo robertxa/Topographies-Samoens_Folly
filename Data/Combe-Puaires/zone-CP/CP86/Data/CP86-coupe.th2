@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 267.0 251.5
+##XTHERION## xth_me_area_adjust -128.75 -128.75 289.0 251.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {94.8934 1 1.0} {75.3306 0} CP86-2020-coupe.xvi 0 {}
 
@@ -10,11 +10,13 @@ scrap SC-CP86-1 -projection extended -station-names "" "@CP86" -author 2021 "Xav
 line wall -subtype invisible
   106.0 102.0
   106.0 102.0 78.25 89.5 75.75 85.0
+  smooth off
 endline
 
 line wall
   74.0 68.0
   74.0 68.0 70.75 64.0 65.25 62.0
+  smooth off
 endline
 
 line wall -subtype debris
@@ -23,6 +25,7 @@ line wall -subtype debris
   83.75 80.0 87.0 71.25 87.0 71.25
   smooth off
   87.0 71.25 77.5 69.75 74.0 68.0
+  smooth off
 endline
 
 line wall -subtype invisible
@@ -33,11 +36,13 @@ endline
 line wall -clip off -outline none
   136.0 117.75
   136.0 117.75 131.0 114.5 130.5 111.75
+  smooth off
 endline
 
 line wall -clip off -outline none
   106.0 102.0
   106.0 102.0 123.5 109.75 128.25 109.25
+  smooth off
 endline
 
 line wall
@@ -63,6 +68,7 @@ endline
 line wall -subtype invisible
   65.25 62.0
   65.25 62.0 57.0 39.0 72.25 27.0
+  smooth off
 endline
 
 point 92.25 43.75 altitude -align bottom-right
@@ -72,6 +78,8 @@ point 75.75 85.0 altitude -align left
 point 137.5 96.25 altitude -align right
 
 point 55.75 41.0 continuation -attr Code A -attr Cavite CP86 -attr Reseau "Combe aux Puraires" -attr CA "A vérifier" -text "Méandre descendant, passage dans les blocs possibles"
+
+point 159.75 56.5 u:symbol_extend -scale s
 
 point 124.25 59.5 height -value [-4 m]
 
@@ -129,6 +137,7 @@ line wall -subtype debris
   72.25 27.0
   72.25 27.0 87.25 22.5 90.25 31.75
   93.25 41.0 92.5 54.75 95.5 56.0
+  smooth off
 endline
 
 point 133.73340000000002 93.7706 station -name 1

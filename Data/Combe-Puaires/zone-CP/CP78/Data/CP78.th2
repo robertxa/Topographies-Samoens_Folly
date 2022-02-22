@@ -16,18 +16,21 @@ point 206.0 120.75 altitude -align bottom-right
 line slope
   162.5 119.0
   162.5 119.0 164.75 101.0 169.75 95.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   154.5 115.0
   154.5 115.0 154.25 93.0 162.75 86.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   145.0 106.0
   145.0 106.0 147.25 83.25 157.5 76.75
+  smooth off
   l-size 5.0
 endline
 
@@ -35,6 +38,8 @@ line gradient
   143.25 82.75
   171.75 115.25
 endline
+
+point 52.5 167.5 u:symbol_plan -scale s
 
 line border
   89.75 76.25
@@ -48,6 +53,7 @@ line border
   88.25 129.75
   88.25 129.75 81.75 121.5 85.5 111.5
   89.25 101.5 97.5 88.25 96.75 79.75
+  smooth off
 endline
 
 point 106.5 174.5 label -text "<bf>CP78" -scale xl
@@ -77,21 +83,25 @@ point 118.0 62.25 height -value [-12 m]
 line pit
   176.0 97.0
   176.0 97.0 181.25 107.75 179.25 115.5
+  smooth off
 endline
 
 line pit
   140.75 89.25
   140.75 89.25 137.0 80.0 142.75 74.25
+  smooth off
 endline
 
 line pit
   135.75 93.75
   135.75 93.75 116.25 95.0 119.0 78.25
+  smooth off
 endline
 
 line pit
   126.0 108.25
   126.0 108.25 113.5 107.25 113.5 88.5
+  smooth off
 endline
 
 line overhang -close on

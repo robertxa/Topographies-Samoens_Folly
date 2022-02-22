@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -166.0 188.25 208.25
+##XTHERION## xth_me_area_adjust -128.75 -165.75 202.25 208.25
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {26.341700000000003 1 1.0} {32.7169 BA3b} BA3b-map.xvi 0 {}
 
@@ -17,6 +17,7 @@ line pit
   25.5 56.5
   25.5 56.5 30.25 47.5 33.25 49.25
   36.25 51.0 35.25 55.75 34.5 58.5
+  smooth off
 endline
 
 point 30.25 79.0 height -value [-4 m]
@@ -41,7 +42,7 @@ point 7.0 74.75 altitude -align bottom-left
 
 point 26.341700000000003 32.7169 altitude -align left
 
-point 36.5 -36.75 label -text "<bf>BA3b" -scale xl
+point 73.0 -36.5 label -text "<bf>BA3b" -scale xl
 
 point 37.25 6.25 entrance -orientation 0.0
 

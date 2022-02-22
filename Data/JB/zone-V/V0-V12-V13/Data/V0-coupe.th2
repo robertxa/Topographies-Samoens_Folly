@@ -51,6 +51,8 @@ line wall -subtype debris
   smooth off
 endline
 
+point 0.0 140.5 u:symbol_extend -scale s
+
 line wall
   25.75 107.75
   25.75 107.75 28.0 111.75 29.0 109.5
@@ -130,12 +132,14 @@ line wall -subtype invisible
   121.25 129.5
   121.25 129.5 116.0 131.75 114.0 127.75
   112.0 123.75 114.25 123.0 115.0 122.5
+  smooth off
 endline
 
 line wall
   115.0 122.5
   115.0 122.5 114.25 127.0 116.0 124.5
   117.75 122.0 117.75 101.75 121.0 101.25
+  smooth off
 endline
 
 point 51.5 46.25 continuation -attr Code D -attr Cavite "V13" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air soufflant en été" -text "Méandre étroit à désobstruer, courant d'air"
@@ -150,6 +154,7 @@ line wall -subtype debris
   121.0 101.25
   124.25 100.75 125.75 101.5 128.0 99.25
   130.25 97.0 132.25 93.5 135.0 94.5
+  smooth off
 endline
 
 line wall
@@ -170,6 +175,7 @@ endline
 line wall -subtype invisible
   174.25 112.5
   174.25 112.5 175.75 119.0 170.5 120.5
+  smooth off
 endline
 
 line wall -outline none -clip off
@@ -253,6 +259,7 @@ line wall -subtype unsurveyed
   96.5 86.0 100.0 86.5 102.25 86.5
   104.5 86.5 105.25 92.75 105.0 97.5
   104.75 102.25 102.5 105.75 106.5 106.5
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -267,6 +274,7 @@ line wall -outline none -clip off
   93.75 112.75
   93.75 112.75 100.0 120.75 100.75 117.75
   101.5 114.75 99.75 112.25 99.25 110.75
+  smooth off
 endline
 
 line rock-border -close on
@@ -286,16 +294,19 @@ endline
 line border
   133.25 51.5
   133.25 51.5 122.25 51.25 119.0 51.25
+  smooth off
 endline
 
 line border
   138.75 97.75
   138.75 97.75 143.75 97.5 145.0 97.5
+  smooth off
 endline
 
 line border
   123.25 118.5
   123.25 118.5 136.0 110.0 141.75 108.75
+  smooth off
 endline
 
 point 113.0 135.0 entrance -orientation 142.4
@@ -316,6 +327,7 @@ line wall
   148.5 109.75 144.0 117.5 139.5 119.25
   135.0 121.0 124.75 123.0 123.5 124.75
   122.25 126.5 121.0 128.75 121.25 129.5
+  smooth off
 endline
 
 line wall

@@ -30,3 +30,21 @@ map MP-zoneBA
 	#break
 	#MP-trousBA
 endmap 
+
+
+map MP-BA3_5
+	MP-BA5-plan-tot@BA5
+	break
+	MP-BA3b-plan-tot@BA3b
+	break
+	MP-BA3a-plan-tot@BA3a
+endmap
+
+map MC-BA3_5
+	MC-BA3a-coupe-tot@BA3a
+	break
+	MC-BA3b-coupe-tot@BA3b
+	break
+	MC-BA5-coupe-tot@BA5
+endmap
+

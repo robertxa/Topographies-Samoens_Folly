@@ -1,11 +1,15 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 215.5 221.75
+##XTHERION## xth_me_area_adjust -128.75 -128.75 237.5 221.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {68.8606 1 1.0} {13.633099999999999 0} CP72-map.xvi 0 {}
 
 
 
 scrap SP-CP72-1 -projection plan -station-names "" "@CP72" -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 108.25 70.75 u:symbol_plan -scale s
+
+point 92.75 47.25 label -text "<bf>CP73" -scale xl
 
 point 86.25 17.75 label -text "etr."
 

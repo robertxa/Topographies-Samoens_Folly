@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -138.0 -128.75 192.0 232.0
+##XTHERION## xth_me_area_adjust -185.6045 -180.9273 192.0 235.75
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {28.8552 1 1.0} {46.8043 A29} A29-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {28.855199999999996 1 1.0} {46.8043 A29} A29-map.xvi 0 {}
 
 
 
@@ -14,6 +14,8 @@ point 40.25 48.0 altitude -align right
 point -8.75 102.75 label -text "<bf>A29" -scale xl
 
 point 62.75 27.5 label -text "R4"
+
+point 40.25 106.5 u:symbol_plan -scale s
 
 point 8.0 70.0 entrance -orientation 149.3
 

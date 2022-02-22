@@ -135,7 +135,7 @@ layout my_layout
 	#map-header 5 50 e
 	#map-header 25 35 se
 	#map-header 53 0 sw
-	map-header 30 35 nw
+	map-header 40 35 nw
 
 	# arrière plan de la manchette
 	map-header-bg off
@@ -206,7 +206,8 @@ layout my_layout
 	# Add logos to the map
 	#map-image 0 100 sw ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf
 	#map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
-	map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
+	#map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
+	map-image 0 90 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -288,7 +289,7 @@ layout my_layout-coupe
 	#map-header 25 35 se
 	#map-header -5 100 nw
 	#map-header 0 100 nw
-	map-header 30 0 sw
+	map-header 35 0 sw
 	#map-header 53 0 off
 
 	# arrière plan de la manchette
@@ -358,7 +359,7 @@ layout my_layout-coupe
 	endcode   
 	
 	#map-image 30 20 sw ../../Outputs/2D/jb-Xav-2020-coupe20000-Solitaire.pdf
-	map-image 00 100 nw ../../Outputs/2D/jb-Xav-2020-coupe20000-Solitaire.pdf
+	map-image 00 90 nw ../../Outputs/2D/jb-Xav-2020-coupe20000-Solitaire.pdf
 
 endlayout
 # Fin de la definition du Layout "normal"
@@ -393,5 +394,5 @@ select MC-Solitaire-tot@Jean-Bernard
 #select  MP-oeufs@Jean-Bernard
 #select  MC-oeufs@Jean-Bernard
 
-export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-tot-coupe1000.pdf -layout my_layout-coupe
-export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-tot-plan1000.pdf -layout my_layout
+export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2021-tot-coupe1000.pdf -layout my_layout-coupe
+export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-Xav-2021-tot-plan1000.pdf -layout my_layout

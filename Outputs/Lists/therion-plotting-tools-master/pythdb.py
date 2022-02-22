@@ -241,7 +241,7 @@ def PlotExploYears(conn, graphpath,
 
 
 #################################################################################################
-def ExtratSummary(datadb, graphpath):
+def ExtratSummary(datadb, graphpath, rangeyear = [1959, datetime.date.today().year, 1]):
 	# to build a table with, for each year :
 	# 	- each centerline surveyed
 	#	- Date of the survey
@@ -255,6 +255,50 @@ def ExtratSummary(datadb, graphpath):
 	# Needs to play with different queries to get right info and build the right table
 
 	print('\t\tNot Implemented Yet...')
+
+	# extract data
+	# 	- each centerline surveyed
+	#	- Date of the survey
+	#	- The network/cave/survey/system
+	#	- length surveyed, by centreline, with the sum by year for the last line of the given year, by system
+	#	- length estimated, summed by year/day to avoid multiple lines for each explored cave ? --> Non disponible...
+	#	- length duplicated
+	#	- Persons who did the exploration/the survey
+	# Need to be ordered by year, then by system, then by caves, and then by network if needed,
+	# Build the query
+	lquery = "test" # To build; do some test !
+	
+	#lquery = "select NAME, TOPO_DATE, LENGTH, DUPLICATE_LENGHT, NAME, SURNAME from SURVEY, CENTRELINE, TOPO, PERSON group by TOPO_DATE order by 1 desc;"
+	#lquery = "select NAME, TOPO_DATE, LENGTH, NAME, SURNAME from SURVEY, CENTRELINE, TOPO, PERSON;"
+	
+	# Read the database
+	#junk = pd.read_sql_query(lquery, conn)
+
+	# Build the structure of the table
+	# 1 line = 1 centreline
+	# 1 Row = 1 field
+	# Do a filter to choose to plot for a specific time-range with a specific bin ?
+	#	--> Do a function to extract data ?
+	# Do a filter to extract only a single system?
+
+	# Do we need to use/build a dictionnary to write in the table 
+	# only the first letters of the name of the people instead of the full names ?
+	#	--> Smaller table, much easier to import in a text document ?
+	# HEADERS
+	# Date / Système / Cavité / Centreline Name / Topographes / L topo / L estimée / L dupliquée / 
+	# 			Total JB topo (A la fin de chaque année) / Total JB Estimé (A la fin de chaque année) / 
+	# 			Total CP topo (A la fin de chaque année) / Total CP estimé (A la fin de chaque année) / 
+	# 			Total A21 topo (A la fin de chaque année) / Total A21 estimé (A la fin de chaque année) / 
+	# 			Total AV topo (A la fin de chaque année) / Total AV estimé (A la fin de chaque année) 
+	# DERNIEREs LIGNEs si tableau généré pour toute la période d'exploration des Vulcains
+	# Total topo/estimé cumulé : sur le Jb, sur la CP, sur le A21, sur les AV et au total sur tout le massif (JB + CP + A21)
+
+	# save the table
+	#	Which format ? xlsx ? Pdf ? txt ? Html ?
+	#		--> Xlsx OK
+	#	sumtable.to_excel(graphpath + "-SummaryTable.xlsx", index = False)
+	#		--> Pdf OK
+
 
 	return
 #
@@ -345,7 +389,6 @@ def PlotThStats(inputfile, graphfolder = "Graphs/",
 		PlotExploYears(datadb, graphpath, rangeyear = rangeyear)
 		# Update the progress-bar
 		bar()
-
 		if systems:
 			# Plot the length over years per karstic system
 			print('\tPlotting survey evolution system by system')
@@ -353,10 +396,9 @@ def PlotThStats(inputfile, graphfolder = "Graphs/",
 			# Update the progress-bar
 			bar()
 
-
 		# Extrat summary table
 		print('\tExtract summary table')
-		ExtratSummary(datadb, graphpath)
+		ExtratSummary(datadb, graphpath, rangeyear = [1959, datetime.date.today().year, 1])
 		# Update the progress-bar
 		bar()
 

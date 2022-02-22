@@ -48,6 +48,7 @@ line wall -subtype debris
   99.0 16.75
   99.0 16.75 106.0 15.0 109.75 15.0
   113.5 15.0 115.25 13.25 115.25 17.0
+  smooth off
 endline
 
 line wall
@@ -61,7 +62,10 @@ line wall
   87.75 51.5 90.0 50.0 94.75 45.25
   99.5 40.5 100.5 36.25 101.75 30.5
   103.0 24.75 99.0 20.25 99.0 16.75
+  smooth off
 endline
+
+point 33.75 89.75 u:symbol_extend -scale s
 
 line wall
   70.75 85.25

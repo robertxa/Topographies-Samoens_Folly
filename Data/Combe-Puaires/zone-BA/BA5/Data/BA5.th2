@@ -20,6 +20,7 @@ endline
 line slope
   100.0 122.25
   100.0 122.25 105.25 137.0 96.25 143.5
+  smooth off
   l-size 5.0
 endline
 
@@ -46,9 +47,9 @@ point 151.75 104.75 breakdown-choke -orientation 278.2
 
 point 152.5 111.5 breakdown-choke -orientation 323.7
 
-point 85.5 36.5 label -text "<bf>BA5" -scale xl
+point 29.0 73.25 label -text "<bf>BA5" -scale xl
 
-point 83.25 68.5 entrance -orientation 47.2
+point 70.25 73.75 entrance -orientation 69.8
 
 point 56.5 134.25 continuation -attr Code D -attr Cavite "BA5" -attr Reseau "Combe aux Puaires" -attr CA "Courant d'air aspirant fort en été, soufflant en hiver" -text "joint de strate à déobstruer, courant d'air fort"
 
@@ -59,17 +60,20 @@ point 122.5 85.75 dig
 line pit
   104.75 97.0
   104.75 97.0 104.5 89.25 110.25 90.0
+  smooth off
 endline
 
 line slope
   132.75 117.75
   132.75 117.75 144.0 122.75 145.0 130.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   109.0 111.25
   109.0 111.25 133.75 124.0 141.25 137.75
+  smooth off
   l-size 5.0
 endline
 
@@ -126,6 +130,7 @@ line wall
   121.0 145.75 121.5 149.5 115.75 147.75
   110.0 146.0 103.0 142.0 99.75 140.5
   96.5 139.0 94.5 137.25 90.5 136.75
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -155,6 +160,7 @@ line wall
   111.5 93.25 112.25 93.0 115.75 93.5
   119.25 94.0 125.25 101.25 129.25 101.25
   133.25 101.25 148.0 103.25 149.75 103.5
+  smooth off
 endline
 
 point 87.88900000000001 130.071 station -name 24

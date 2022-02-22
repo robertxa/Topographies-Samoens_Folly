@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -206.739 -128.75 214.5 309.5
+##XTHERION## xth_me_area_adjust -206.739 -128.75 214.75 310.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {78.745 1 1.0} {141.7362 BA3b} BA3b-coupe.xvi 0 {}
 
@@ -11,7 +11,7 @@ point 21.5 133.0 air-draught -orientation 226.4 -subtype summer
 
 point 72.5 154.5 entrance -orientation 175.4
 
-point 63.0 180.25 label -text "<bf>BA3b" -scale xl
+point 85.5 180.75 label -text "<bf>BA3b" -scale xl
 
 point 83.0 123.75 label -text "R3"
 
@@ -54,6 +54,7 @@ line wall -subtype presumed
   20.25 36.0 29.75 39.0 33.5 39.0
   37.25 39.0 37.0 47.5 38.5 51.5
   40.0 55.5 40.25 63.25 40.75 69.75
+  smooth off
 endline
 
 line wall
