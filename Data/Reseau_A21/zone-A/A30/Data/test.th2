@@ -1,0 +1,42 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 206.74020000000002 206.74020000000002
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {79.84049999999999 1 1.0} {74.2163 A30} A30-map.xvi 0 {}
+
+
+
+scrap SP-A30-1 -projection plan -station-names "" "@A30" -author 2022 "Xavier Robert" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+line pit
+  115.25 48.0
+  115.25 48.0 84.25 77.25 88.75 99.25
+endline
+
+point 70.75 95.0 air-draught -orientation 260.5 -subtype summer -scale xl
+
+point 51.75 69.5 entrance -orientation 87.9
+
+line wall
+  67.0 59.75
+  67.0 59.75 80.0 53.75 90.75 56.5
+  101.5 59.25 100.25 56.75 107.25 64.0
+  114.25 71.25 111.0 77.25 122.0 79.75
+  133.0 82.25 130.0 83.75 130.0 83.75
+  smooth off
+  130.0 83.75 126.0 81.75 121.25 85.75
+  116.5 89.75 121.0 90.75 110.5 92.0
+  100.0 93.25 101.75 99.0 93.0 94.25
+  84.25 89.5 87.0 89.0 79.0 84.0
+  71.0 79.0 64.5 77.75 64.5 77.75
+  smooth off
+endline
+
+point 123.5705 81.7163 station -name 2
+
+point 104.1305 77.5463 station -name 1
+
+point 79.84049999999999 74.2163 station -name A30
+
+endscrap
+
+

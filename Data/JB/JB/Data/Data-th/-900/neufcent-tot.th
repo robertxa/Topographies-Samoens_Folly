@@ -9,14 +9,14 @@ survey Cheneau -title "Puits du Cheneau et -900"
     input Data/bivouac900.th
 
     ## Plan
-    #input Data/siphons2020.th2
+    input Data/bivouac900.th2
     #    join siphons2020-SP1 SP-S2S3
     ## Coupe
-    #input Data/siphons-coupe.th2   
-    #input Data/siphons-coupe2020.th2   
+    #input Data/bivouac900-coupe.th2   
+    #input Data/bivouac900-coupe2020.th2   
     #   join Siphons2020-SC1 SC-S2-S3_c
 
     ## Maps
-    #input neufcent-maps.th
+    input neufcent-maps.th
 
 endsurvey

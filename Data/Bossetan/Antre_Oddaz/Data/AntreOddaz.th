@@ -1,0 +1,194 @@
+encoding utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr> & Bruno Hugon
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey AntreOddaz -title "Antre d'Oddaz" -entrance Antre
+
+  # Données topographiques partagées par Bruno Hugon (GSHL et SCASSE) le 04/04/2022 ; 
+
+  centerline
+    
+    #cs lat-long
+    cs UTM32  #32T
+    #fix Antre 46.11654 6.80183 2228
+    fix Antre 327416   5109147   1623
+
+    station Antre "Antre d'Oddaz" entrance
+
+    date 2021.08.08 
+      team "Bruno Hugon"
+      team "Christophe Bron"
+      team "Pierre Flochon"
+      team "Guy Pesenti"
+    explo-date 2021.08.08
+      explo-team "Bruno Hugon"
+      explo-team "Christophe Bron"
+      explo-team "Pierre Flochon"
+      explo-team "Guy Pesenti"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino left  right  up  down
+    #Param Deca Degd Clino Degd 0.0000 Dir,Dir,Dir Inc Std 08/08/2021 M
+    extend left
+    Antre          0                         0.00    0.00    0.00   0.50   1.50   0.30   0.20 
+    0          0.1                       6.00  223.00  -33.00   1.40   1.20   0.80   0.10 
+    0.1        0.2                       5.30  200.00  -28.00   0.80   0.70   0.00   1.60 
+    0.2        0.3                       7.40  221.00  -42.00  14.00   1.00   2.00   1.00 
+    0.3        0.4                      17.40  162.00  -24.00   4.50   5.00   3.00   0.80 
+    0.4        0.5                      24.30  231.00  -19.00   7.70   5.00   2.50   1.10 
+    0.5        0.6                      18.90  221.00  -23.00   2.00   1.50   0.30   0.40 
+    0.3        03a                      11.40   80.00   16.00   1.50   1.20   0.00   1.20 # Galerie de la souris. galerie à gauche dans la première salle prennant la direction de l'extérieur
+    03a        03b                      10.50   52.00   12.00   2.00   2.00   1.00   1.00 
+    0.5        05a                      16.50  287.00   31.00   1.00   1.00   0.30   0.90 # Galerie remontante à droite, juste avant "la gouille". étroiture à désober
+    0.6        0.7                       6.60  224.00   -3.00   3.50   4.00   4.00   0.00 
+    0.7        0.8                       9.10  273.00   32.00   3.00   7.50   3.50   0.40 # Point bas avec eau nommé la gouille
+    0.8        0.9                      14.20  271.00   43.00   3.80   2.00   2.00   0.50 
+    0.9        0.10                     12.20  231.00   -2.00   0.70   0.50   1.00   0.30 
+    0.10       0.11                      6.60  243.00    2.50   1.20   0.50   1.00   0.50 
+    0.11       0.12                      0.10  243.00    0.00   6.40   0.50   1.00   0.50 
+    0.12       0.13                      6.50  244.00    0.00   3.40   4.00   2.80   1.20 
+    0.13       0.14                     27.90  245.00   -3.00   5.80   0.50   1.20   1.50 
+    0.14       0.15                      7.90  221.00    8.00   3.50   1.10   0.70   1.80 
+    0.3        0.3k                      9.70  351.00   55.00   0.20   0.30   0.30   0.20 # Galerie remontante au niveau du plafond à droite;
+    0.4        1.1                       8.90   61.00   45.00   3.20   1.00   0.00   1.20 # Galerie remontante à gauche à atteindre par une escalade inclinée glissante. Arret sur trémie. Pourrait etre l'arrivée des yeux d'Oddaz
+    1.1        1.2                       2.10  331.00   23.00   3.00   2.00   1.20   0.00 
+    1.2        1.3                       9.70   53.00   21.00   1.50   1.50   1.00   1.00 
+    1.2        1.3a                      8.00  299.00   50.00   0.70   0.60   0.50   0.50 # Cheminée dans galerie remontante
+    0.4        2.1                       5.90  166.00  -25.00   0.60   0.60   0.50   0.50 # Galerie de la ronflette. Boyau descendant à gauche ou on aurait entendu un ronflement ?
+    2.1        2.2                       6.40   96.00  -36.00   0.50   0.50   0.60   0.00 
+    2.2        2.3                       1.85  193.00  -40.00   1.00   0.70   1.80   0.10 
+    2.3        2.4                       3.60  138.00  -58.00   0.70   0.50   0.00   0.70 
+    2.4        2.5                       2.10   74.00    7.00   0.20   0.30   0.40   0.00 
+    2.5        2.6                       5.70  118.00  -52.00   0.30   0.40   2.00   0.00 
+
+  endcenterline
+
+  centerline
+    
+    cs lat-long
+    #fix Yeux 46.11654 6.80183 2228
+
+    date 2021.08.21 
+      team "Bruno Hugon"
+      team "Christophe Bron"
+      team "Pierre Flochon"
+      team "Guy Pesenti"
+    explo-date 2021.08.21
+      explo-team "Bruno Hugon"
+      explo-team "Christophe Bron"
+      explo-team "Pierre Flochon"
+      explo-team "Guy Pesenti"
+
+    station Yeux "Yeux d'Oddaz" entrance
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino left  right  up  down
+    #Param Deca Degd Clino Degd 0.0000 Dir,Dir,Dir Inc Std 21/08/2021 M
+    extend right
+    3.0        3.1                       8.70   88.00   21.00   0.30   1.50   0.20   0.50 # fond à - 76;
+    3.1        3.2                       7.20   71.00   26.00   1.50   1.50   1.20   1.20 
+    3.2        3.3                      12.50    8.00   15.00   6.50   1.50   2.00   1.40 
+    3.3        3.4                      29.15   43.00   24.00   2.40   3.20   2.00   1.40 
+    3.4        3.5                       8.00  355.00   24.50   6.70   5.00   2.20   1.40 
+    3.5        3.6                      34.30   65.00   21.00   2.00   4.50   1.50   0.70 
+    3.6        3.7                      10.80   47.00   13.00   5.00   6.50   1.00   0.00 
+    3.7        3.8                       8.40    0.50    8.00   7.00   2.60   0.80   0.00 
+    3.8        3.9                      26.20   56.50   16.50   4.20   4.00   0.60   0.00 
+    3.9        3.10                      5.20  121.50   21.00   3.20   2.50   0.40   0.00 
+    3.10       3.11                      0.10  121.50   21.00   0.40   0.30   0.20   0.00 
+    3.11       3.12                      3.00  103.00   17.00   0.40   0.30   0.20   2.00 
+    3.12       3.13                      0.10  103.00   17.00   0.40   0.30   0.70   1.00 
+    3.13       3.14                     10.80  120.00  -18.00   5.50   2.00   1.80   1.40 
+    3.14       3.15                     13.00   68.00    1.00   2.00   2.50  10.30   1.40 
+    3.15       3.16                     19.30   76.00   24.00   5.20   3.00   5.00   1.40 
+    3.16       3.17                      7.30   68.00   25.00   3.00   3.40   0.70   0.30 
+    3.17       3.18                      8.80   87.00  -14.00   4.20   4.00   4.50   0.40 
+    3.18       3.19                      3.80   70.00   -7.00   0.50   0.50   4.50   0.40 
+    3.19       0.15                      8.40   56.50    4.00   0.80   0.30   1.50   1.00 
+    3.7        4.1                       7.80   58.00   24.00   1.10   0.40   0.30   1.00 # galerie remontante à gauche peu apres la premiere désob
+    4.1        4.2                       4.00  108.00   24.00   1.20   0.60   0.80   0.40 
+    4.2        4.3                       4.25   48.00   30.00   1.00   1.50   0.30   0.80 
+    4.3        4.5                       6.90   21.00   19.00   0.80   2.00   0.30   1.20 
+    4.5        4.6                       3.60  151.00   12.00   1.50   0.50   0.30   0.80 
+    4.6        4.7                       6.00   85.00   23.00   1.00   1.00   0.10   0.10 
+    extend left
+    3.13       3.13a                     9.60  357.50   27.00   1.00   1.00   0.30   0.30 # trémie
+    3.15       5.1                       4.50    3.00   22.00   0.50   0.50   0.40   0.00 # Galerie remontante désobstruée vers la salle du Bon Pierre
+    5.1        5.2                       3.70  359.00   48.50   1.00   1.00   0.60   0.60 
+    5.2        5.3                       4.80   55.00   41.50   5.00   0.00   1.20   1.60 
+    5.3        5.4                       9.60  353.00   59.00   3.00   1.50   0.20   0.50 
+    5.4        5.5                       3.60   32.00   64.00   1.30   0.50   0.20   0.20 
+    extend left
+    0.15       6.1                       1.20  325.00    5.00   0.60   0.70   0.50   0.50 # Petite galerie remontante;
+    6.1        6.2                       4.40  347.00   52.00   0.50   0.60   0.30   0.30 
+    6.2        6.3                       1.40   48.00   10.00   0.40   0.40   0.20   0.30 
+    6.3        6.4                      12.00  347.00   56.00   0.70   1.00   0.60   0.50 
+    6.4        6.5                       5.50   20.50   22.00   0.20   0.20   0.10   0.20 
+
+    data normal from to length compass clino
+    flags surface
+    extend right
+    Antre          7.1                       6.00   74.00   15.00 # Cheminement exterieur vers les yeux d'Oddaz
+    7.1        7.2                       6.70   66.00    4.00
+    7.2        7.3                       5.05   87.00  -25.00
+    7.3        7.4                       3.55    2.00   38.00
+    7.4        7.5                       5.05   57.00   13.00
+    7.5        Yeux                       3.80   55.00  -14.00
+    flags not surface
+
+    data normal from to length compass clino left  right  up  down
+    extend left
+    Yeux        7.7                       7.50  207.00  -30.00   3.00   2.00   1.00   1.00 # entrée des yeux d'Oddaz
+    extend right
+    Yeux        7.8                       3.30  106.00  -17.00   2.00   1.00   0.50   0.50 
+    extend right
+    7.8        7.9                      12.50   69.00   13.00   4.50   3.30   1.50   1.50 
+    7.9        7.10                      8.00   69.00   13.00   1.00   1.00   1.00   1.00 
+    #7.8        44                        8.50  229.00  -21.00   2.00   1.00   0.50   0.50 
+    extend left
+    7.8        7.7                        8.50  229.00  -21.00   2.00   1.00   0.50   0.50 
+    extend left
+
+    0.8        8.1                      10.70  164.50   28.00   1.00   2.00   1.00   0.90 # Galerie de cailloux mous
+    8.1        8.2                       3.20   68.00   13.00   2.00   1.50   0.80   1.00 
+    8.2        8.3                       9.10  201.00  -24.00   2.10   3.30   0.70   0.50 
+    8.3        8.4                      12.50  217.00  -14.00   2.00   1.50   0.80   0.30 
+    8.4        8.5                      10.80  222.00  -17.00   1.00   1.50   0.50   0.80 
+    8.5        8.6                       4.20  277.00  -11.50   1.40   0.50   0.00   0.80 
+    8.6        8.7                       4.50  218.50  -19.00   1.10   0.60   0.00   1.40 
+    8.7        8.8                       4.50  205.50  -21.00   0.30   0.20   0.40   0.30 
+    8.8        8.9                       2.80  246.00  -19.00   4.80   0.20   0.20   1.30 
+    8.9        8.10                      3.80  163.00  -27.00   0.50   3.80   1.00   0.60 
+    8.10       8.11                      5.10  258.00  -24.00   1.80   2.00   0.80   0.00 
+    8.11       8.12                     10.10  285.00   -7.00   5.00   4.50   1.50   1.20 
+    8.10       8.10a                     7.00   66.00   21.00   2.00   1.20   0.70   0.00 
+    8.10a      8.10b                     2.50  108.00   19.00   1.00   0.50   0.70   0.00 
+    8.10b      8.10c                     3.50   54.00   20.00   0.00   1.00   0.10   0.10 
+    8.12       9.1                       2.30  228.50   18.00   4.00   1.30   2.50   1.50 
+    9.1        9.2                       3.30  208.00  -30.00   4.00   1.80   1.00   0.00 
+    9.2        9.3                       2.80  195.00  -29.00   0.40   0.30   0.00   0.40 
+    9.3        9.4                       2.30  248.00  -19.50   1.60   1.40   0.90   0.00 
+    9.4        9.5                       3.00  257.50  -10.00   0.50   1.10   0.00   1.00 
+    9.5        9.6                       9.30  244.00  -12.00   0.50   0.90   0.20   0.60 
+    9.6        9.7                       7.30  228.00  -11.00   1.20   1.40   0.00   0.80 
+    9.7        9.8                       2.50  199.00  -33.50   0.50   1.90   0.20   1.10 
+    9.8        9.9                       3.30  281.00  -29.00   1.20   2.10   0.00   0.60 
+    9.9        9.10                      1.70  318.00  -52.00   0.40   0.40   0.30   0.10 
+    8.12       8.50                      6.00   56.00   32.00   2.70   4.30   1.50   1.50 # galerie remontante dans la salle du Shitmilch
+    8.50       8.51                      6.30   82.00   33.00   1.50   2.00   0.20   0.10 
+    extend right
+    8.2        8.2a                      6.00   52.00   28.00   0.30   0.40   0.20   0.50 
+    extend right
+    8.1        8.a                      11.00  290.00   30.00   0.80   0.60   0.20   0.80 
+    8.a        8.b                       3.00  340.00   25.00   0.30   0.30   0.10   0.10 
+
+    # dèv : 7 m
+    # Den : -4 m
+    
+  endcenterline
+
+endsurvey

@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey SystemeBossetan -title "Système de Bossetan"
+# Pour importer les différentes données de différents fichiers topos : 
+	input Antre_Oddaz/AntreOddaz-tot.th
+	#input zone-BA/BA.th
+	#input zone-CP/CP.th
+	#input zone-DR/DR.th
+	#input zone-LP/LP.th
+	#input zone-LS/LS
+	#input zone-T/T.th
+	#input zone-L/L.th
+
+	#input Bossetan-maps.th
+endsurvey
+ 
