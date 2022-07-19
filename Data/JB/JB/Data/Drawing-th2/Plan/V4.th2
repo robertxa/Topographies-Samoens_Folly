@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -275.21000000000004 -129.0 14508.356899999999 8357.3706
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {12874.02 0 1.0} {6929.13 C37b@jb-amonts1} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_area_adjust -128.75 -128.75 27529.586900000002 15167.370600000002
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {25895.25 0 1.0} {13739.130000000001 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
 
 
@@ -34,6 +34,8 @@ line wall
   7288.75 5261.0 7277.75 5254.5 7277.75 5254.5
   smooth off
 endline
+
+point 7318.5 5268.75 altitude -align bottom-right
 
 line wall
   7281.0 5250.25
@@ -299,6 +301,7 @@ line wall -subtype unsurveyed
   7098.0 5376.0 7061.5 5372.5 7052.5 5371.5
   7043.5 5370.5 7015.0 5371.0 7011.5 5371.0
   7008.0 5371.0 7001.0 5372.5 7001.0 5375.0
+  smooth off
 endline
 
 line wall
@@ -313,6 +316,10 @@ line wall
   7103.5 5378.0 7098.0 5376.0 7098.0 5376.0
   smooth off
 endline
+
+point 7113.5 5419.0 altitude -align top-right
+
+point 7241.75 5388.25 altitude -align top
 
 line wall
   7262.5 5397.75
@@ -466,13 +473,40 @@ endscrap
 
 scrap SP-V4 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 7018.75 5024.25 label -text "Salle Delacour"
+point 6949.75 5084.0 label -text "Salle Delacour"
 
-point 6993.5 5088.5 label -text "R3"
+line pit
+  7030.75 5104.5
+  7029.25 5104.5 7024.25 5107.5 7018.75 5105.5
+endline
+
+line pit
+  7015.5 5086.5
+  7015.5 5086.5 7021.25 5073.0 7016.75 5068.25
+endline
+
+point 6985.0 5080.0 label -text "R3"
 
 point 6994.25 5107.5 label -text "R3"
 
-point 6985.25 5048.75 narrow-end
+point 6824.75 5125.75 altitude -align bottom
+
+point 7030.5 5138.75 ice
+
+point 7043.25 5155.0 ice
+
+point 7009.75 5079.0 ice
+
+point 7011.25 5100.5 ice
+
+line floor-meander
+  7008.5 5072.5
+  7008.5 5072.5 7010.5 5055.25 7009.25 5049.0
+  7008.0 5042.75 7005.75 5036.5 7005.75 5036.5
+  smooth off
+endline
+
+point 7005.0 5027.5 continuation -attr Code P -attr Cavite JB -attr Reseau "V4" -attr CA "Courant d'air Soufflant ?" -text "Départ de méandre, puits, à voir, peut-être un courant d'air soufflant en hiver"
 
 line pit
   7030.0 5083.5
@@ -503,9 +537,9 @@ point 6998.75 5093.75 rope
 point 7035.5 5110.25 rope
 
 line wall
-  6992.5 5046.0
-  6992.5 5046.0 6997.0 5045.5 7000.75 5045.25
-  7004.5 5045.0 7056.75 5039.5 7061.5 5039.5
+  7009.25 5035.5
+  7009.25 5035.5 7011.0 5044.5 7014.75 5044.25
+  7018.5 5044.0 7056.75 5039.5 7061.5 5039.5
   smooth off
 endline
 
@@ -555,8 +589,8 @@ endline
 line wall
   7005.75 5105.0
   7005.75 5105.0 7004.5 5091.5 7004.0 5082.25
-  7003.5 5073.0 7003.25 5052.25 7000.0 5051.75
-  6996.75 5051.25 6992.0 5050.75 6992.0 5050.75
+  7003.5 5073.0 7007.75 5048.5 7004.5 5048.0
+  7001.25 5047.5 7000.75 5035.5 7000.75 5035.5
   smooth off
 endline
 
@@ -567,6 +601,7 @@ point 7022.87 5079.47 station -name Ja.9@jb-amonts2
 #point 7029.62 5096.15 station -name Ja.8@jb-amonts2
 
 #point 7009.28 5102.76 station -name Ja.7@jb-amonts2
+
 
 point 6953.31 5140.84 station -name Ih.6@jb-amonts2
 
@@ -596,15 +631,18 @@ point 7014.38 5116.13 station -name Ih.14@jb-amonts2
 
 #point 7012.45 5125.31 station -name Ja.6@jb-amonts2
 
+
 point 7036.11 5145.07 station -name Ih.15@jb-amonts2
 
 #point 7026.56 5142.12 station -name Ja.5@jb-amonts2
+
 
 point 7011.98 5141.52 station -name Ih.12@jb-amonts2
 
 point 7047.19 5151.75 station -name Ih.13@jb-amonts2
 
 #point 7052.07 5159.98 station -name Ja.4@jb-amonts2
+
 
 point 7050.02 5156.19 station -name Ih.16@jb-amonts2
 
@@ -613,6 +651,7 @@ point 7050.02 5156.19 station -name Ih.16@jb-amonts2
 #point 7053.04 5177.48 station -name Ja.3@jb-amonts2
 
 #point 7022.63 5211.54 station -name Ja.1@jb-amonts2
+
 
 line wall -close on -outline in
   7009.0 5128.0
@@ -826,6 +865,7 @@ point 6817.25 5140.5 entrance -orientation 113.9
 
 #point 7057.83 5233.53 station -name Ja.0@jb-amonts2
 
+
 endscrap
 
 
@@ -984,6 +1024,8 @@ line wall
   smooth off
 endline
 
+point 7051.75 5238.75 altitude -align left
+
 line wall -reverse on
   7072.5 5229.25
   7072.5 5229.25 7068.0 5223.5 7068.75 5219.75
@@ -1004,6 +1046,8 @@ line wall -reverse on
   7053.75 5236.25 7051.75 5238.75 7051.75 5238.75
   smooth off
 endline
+
+point 6970.0 5230.25 altitude -align bottom-left
 
 line wall -reverse on
   7047.25 5162.25
@@ -1031,9 +1075,10 @@ endline
 endscrap
 
 
+
 scrap SP-V4-2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 7444.0 4690.25 rope
+point 7445.0 4693.25 rope
 
 point 7344.55 4795.73 station -name Ja.22@jb-amonts2
 
@@ -1059,15 +1104,17 @@ point 7373.5 4774.5 rope
 
 point 7386.0 4771.0 traverse
 
-point 7445.0 4668.25 traverse
+point 7443.5 4665.25 traverse
 
-point 7335.25 4717.5 label -text "Puits des Savoyards"
+point 7295.5 4761.25 label -text "<center>Puits des<br>Savoyards"
 
-point 7358.75 4752.5 label -text "P28"
+point 7198.25 5030.0 altitude -align right
+
+point 7338.75 4744.25 label -text "P28"
 
 point 7457.25 4686.25 label -text "P4"
 
-point 7415.0 4669.75 label -text "Téléphérique"
+point 7489.75 4698.25 label -text "Téléphérique"
 
 point 7390.5 4788.75 label -text "-564 m"
 
@@ -1137,6 +1184,8 @@ line wall
   smooth off
 endline
 
+point 7437.5 4719.5 altitude -align right
+
 line pit
   7426.75 4737.5
   7426.75 4737.5 7413.25 4742.5 7409.75 4747.0
@@ -1144,7 +1193,7 @@ line pit
   7397.5 4764.25 7386.75 4766.25 7383.0 4766.0
   7379.25 4765.75 7375.5 4766.0 7373.0 4762.75
   7370.5 4759.5 7369.0 4756.75 7368.5 4754.75
-  7368.0 4752.75 7366.5 4749.0 7366.5 4749.0
+  7368.0 4752.75 7362.5 4742.0 7362.5 4742.0
   smooth off
 endline
 
@@ -1351,9 +1400,12 @@ line wall
   7293.25 4848.0 7303.25 4821.25 7308.0 4817.0
   7312.75 4812.75 7336.25 4798.25 7340.0 4793.25
   7343.75 4788.25 7355.0 4775.75 7356.5 4772.0
-  7358.0 4768.25 7371.25 4756.0 7371.25 4750.0
-  7371.25 4744.0 7378.25 4737.25 7381.25 4732.5
-  7384.25 4727.75 7389.75 4723.5 7396.75 4720.5
+  smooth off
+endline
+
+line wall
+  7374.75 4744.75
+  7377.75 4740.0 7389.75 4723.5 7396.75 4720.5
   7403.75 4717.5 7409.25 4722.0 7411.25 4717.0
   7413.25 4712.0 7418.5 4706.5 7420.0 4703.25
   7421.5 4700.0 7424.75 4694.75 7425.5 4699.25
@@ -1396,6 +1448,8 @@ line wall -reverse on
   7397.5 4760.75 7400.5 4758.25 7402.5 4753.5
   smooth off
 endline
+
+point 7395.75 4773.5 altitude -align top-right
 
 line wall -reverse on
   7400.75 4749.75

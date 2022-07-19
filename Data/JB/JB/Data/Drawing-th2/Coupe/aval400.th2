@@ -1019,9 +1019,9 @@ line water-flow
   smooth off
 endline
 
-point 11319.0 4390.0 label -text "<center>arrivée du<br>collecteur"
+point 11319.0 4647.0 label -text "<center>arrivée du<br>collecteur"
 
-point 11275.0 4711.0 label -text "<center>cascade<br>Jean Dupont"
+point 11244.0 4443.0 label -text "<center>cascade<br>Jean Dupont"
 
 point 11093.0 4407.0 label -text "<center>Grande<br>Cascade"
 
@@ -1298,9 +1298,11 @@ endline
 
 point 11404.0 4639.5 height -value [+10 m]
 
-point 11342.0 4527.5 height -value [-10 m]
+point 11350.0 4519.5 height -value [-10 m]
 
-point 11378.5 4541.5 height -value [-3 m]
+point 11373.0 4477.0 label -text "<center>cascatelle<br>Marie Françoise"
+
+point 11384.5 4537.5 height -value [-3 m]
 
 line rock-edge
   11428.0 4564.5
@@ -1395,10 +1397,10 @@ line wall -subtype presumed
 endline
 
 line wall -subtype presumed
-  11929.0 4803.5
-  11929.0 4803.5 11813.0 4802.5 11797.5 4801.0
-  11782.0 4799.5 11643.5 4805.5 11636.5 4800.5
-  11629.5 4795.5 11582.5 4698.5 11578.5 4682.5
+  11939.0 4758.0
+  11939.0 4758.0 11820.5 4728.5 11805.0 4727.0
+  11789.5 4725.5 11699.0 4713.0 11692.0 4708.0
+  11685.0 4703.0 11582.5 4698.5 11578.5 4682.5
   11574.5 4666.5 11456.0 4612.5 11454.0 4608.5
   smooth off
 endline

@@ -127,6 +127,8 @@ line wall
   smooth off
 endline
 
+point 402.75 240.0 map-connection
+
 line wall
   363.0 258.0
   363.0 258.0 358.0 256.75 351.75 258.25
@@ -213,36 +215,34 @@ point 228.25 196.75 height -value [-9 m]
 
 point 801.5 236.75 height -value [-7 m]
 
-line u:rope
+line rope
   783.5 257.0
-  783.5 257.0 769.25 248.5 768.75 254.25
-  768.73 254.5 770.0 223.25 770.0 223.25
-  smooth off
+  768.75 254.25
+  768.75 222.75
 endline
 
-line u:rope
+line rope
   610.0 230.0
-  610.0 230.0 591.25 222.25 586.0 227.25
-  585.49 227.74 579.25 223.0 570.5 228.0
-  smooth off
+  586.0 227.25
+  560.0 228.25
+  570.5 228.0
 endline
 
 point 758.5 220.75 water-flow -orientation 152.1
 
 point 739.5 253.25 water-flow -orientation 152.1
 
-line u:rope
+line rope
   255.0 240.5
-  255.0 240.5 241.0 235.5 234.75 237.5
-  234.41 237.61 225.25 231.25 220.0 234.5
-  smooth off
+  240.75 237.75
+  220.0 234.5
+  225.5 235.5
 endline
 
-line u:rope
+line rope
   220.0 234.5
-  220.0 234.5 204.0 224.5 204.25 229.75
-  204.5 235.0 205.0 188.25 205.0 188.25
-  smooth off
+  204.25 229.75
+  205.0 188.25
 endline
 
 line wall -outline in
@@ -374,25 +374,22 @@ point 92.25 -77.25 continuation -attr Code D -text "Galerie à explorer après d
 
 point -43.0 -48.0 continuation -attr Code P -text "Puits à descendre"
 
-line u:rope
+line rope
   -110.75 28.0
-  -110.75 28.0 -127.5 14.25 -127.5 24.25
-  -127.5 26.07 -127.5 -28.25 -127.5 -28.25
-  smooth off
+  -127.5 24.25
+  -127.5 -28.25
 endline
 
-line u:rope
+line rope
   44.25 115.25
-  44.25 115.25 32.75 107.75 32.75 114.0
-  32.75 114.25 31.5 78.25 31.5 78.25
-  smooth off
+  32.75 114.0
+  31.5 78.25
 endline
 
-line u:rope
+line rope
   76.0 165.25
-  76.0 165.25 55.75 154.75 55.75 161.75
-  55.75 162.5 55.75 112.75 55.75 112.75
-  smooth off
+  55.75 161.75
+  55.75 112.75
 endline
 
 line wall

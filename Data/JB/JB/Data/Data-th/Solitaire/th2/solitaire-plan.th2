@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -365.0 -206.0 914.6226 994.8824
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {472.44000000000005 1 1.0} {551.182 xx0init} solitaire-plan.xvi 0 {}
 ##XTHERION## xth_me_image_insert {471.66599999999994 1 1.0} {551.919 xx0init} solitaire-plan2017.xvi 0 {}
 
@@ -9,6 +9,7 @@ encoding  utf-8
 scrap SP-solitaire_plan -projection plan -author 2016 "Vincent Sordel" -copyright 2016 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 757.9216 -128.0 0.0 0.0 22.50240864 0.0 m]
 
 #point 560.25 565.5 label -text Puits<br>Alain
+
 
 line wall -reverse on
   508.0 542.5
@@ -66,8 +67,6 @@ point 404.0 430.0 label -text colm.
 point 201.25 99.25 continuation -text "Puits à descendre" -attr Code P -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 point 275.0 562.5 continuation -text "Départ à atteindre" -attr Code E -attr Cavite JB -attr Reseau "Réseau du Solitaire"
-
-point 298.25 799.5 continuation -text "Colmatage à creuser" -attr Code D -attr Cavite JB -attr Reseau "Réseau du Solitaire"
 
 point 183.75 759.25 blocks
 
@@ -523,9 +522,7 @@ point 130.5 767.75 height -value [+2.5]
 
 point 186.25 757.0 continuation
 
-point 284.5 769.25 label -text colm.
-
-point 267.25 824.75 air-draught -orientation 261.3
+point 170.0 711.25 air-draught -orientation 144.7
 
 line pit
   291.5 558.5
@@ -644,14 +641,14 @@ line pit -reverse on
   smooth off
 endline
 
-line wall -subtype unsurveyed
+line wall
   270.25 795.25
   270.25 794.0 269.25 793.5 266.75 793.5
   264.25 793.5 259.5 794.0 258.5 793.75
   smooth off
 endline
 
-line wall -subtype unsurveyed
+line wall
   259.0 789.25
   264.0 789.75 267.25 790.0 271.0 791.5
   273.43 792.47 272.75 793.25 273.0 794.25
@@ -688,8 +685,6 @@ endline
 point 125.25 212.0 rope
 
 point 227.0 201.75 rope
-
-point 276.5 782.5 narrow-end
 
 point 414.5 417.75 narrow-end
 
@@ -846,7 +841,7 @@ point 373.36000000000007 385.572 station -name xx10@solitaire
 
 point 384.72 381.882 station -name xx9@solitaire
 
-point 270.25 795.25 altitude -align top-left
+point 246.75 793.0 altitude -align top-left
 
 point 224.25 581.5 label -text "<center>g. du<br>Solitaire"
 

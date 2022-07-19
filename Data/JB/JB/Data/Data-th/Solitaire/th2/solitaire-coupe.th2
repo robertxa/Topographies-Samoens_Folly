@@ -113,13 +113,11 @@ endline
 
 point 390.75 155.0 air-draught -orientation 250.4
 
-point 77.5 290.5 air-draught -orientation 94.4
+point 144.5 279.75 air-draught -orientation 121.1
 
 point 529.5 181.25 label -text puits<br>Alain
 
-point 77.75 271.0 label -text colm.
-
-point 65.75 287.25 continuation -text "Petit départ" -attr Code Q
+point 74.25 267.0 dig
 
 point 449.25 129.0 continuation -text "A descendre" -attr code Q
 
@@ -197,8 +195,6 @@ line wall
   smooth off
 endline
 
-point 71.5 280.25 narrow-end
-
 point 384.5 145.5 narrow-end
 
 line wall
@@ -251,10 +247,10 @@ point 380.75 138.5 stalagmites
 
 point 332.0 152.25 stalagmites
 
-line u:rope -clip off
+line rope
   145.0 260.5
-  145.0 259.5 147.41 256.51 148.25 259.5
-  149.08 262.49 148.25 262.5 148.5 252.25
+  148.25 259.5
+  148.25 259.5 148.25 262.5 148.5 252.25
   148.75 242.0 149.25 242.25 149.25 242.25
   smooth off
 endline

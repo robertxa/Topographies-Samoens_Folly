@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.0 -129.0 14596.511750000001 8340.602859999999
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1} jb-Xav-2010.xvi 0 {}
+##XTHERION## xth_me_image_insert {25755.9 0 1.0} {13811.02 C37b@jb-amonts1.Jean-Bernard} jb-Xav-2010.xvi 0 {}
 
 
 
@@ -92,6 +92,8 @@ line pit
   7348.5 5041.75
 endline
 
+point 7407.0 5135.0 altitude -align left
+
 point 7401.75 5158.0 label -text "V5" -scale xl
 
 point 7409.5 5144.25 entrance -orientation 148.6
@@ -158,6 +160,8 @@ line wall
   7324.5 5015.5 7326.75 5003.5 7326.75 5003.5
   smooth off
 endline
+
+point 7354.25 5202.25 altitude -align top
 
 line wall
   7355.5 5050.75
@@ -348,6 +352,8 @@ line wall -reverse on
   smooth off
 endline
 
+point 7389.25 4906.75 altitude -align bottom
+
 line wall -reverse on
   7386.25 4912.0
   7386.25 4912.0 7386.0 4910.0 7388.25 4911.75
@@ -371,7 +377,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 7390.5 4890.75 label -text "-578 m"
+point 7361.75 4892.5 label -text "-578 m"
 
 point 7377.5 4910.25 label -text "Etr."
 

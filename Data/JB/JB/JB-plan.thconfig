@@ -240,7 +240,7 @@ endlayout
 #  select MP-JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MP-JB-plan-tot@Jean-Bernard
-export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2022-plan1000.pdf -layout my_layout
+export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2022-plan1000b.pdf -layout my_layout
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2021-plan1000_Continuations.pdf -layout my_layout-continuations
 #export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2021-plan5000.pdf -layout my_layout
 
@@ -249,7 +249,7 @@ export model -fmt esri -o Outputs/3D/JB #-layout my_layout
 export map -fmt esri -o Outputs/3D/JB-map #-layout my_layout
 
 # Export du fichier 3d pour Loch
-# export model -o Outputs/3D/jb-Xav-2022.lox
+export model -o Outputs/3D/jb-Xav-2022.lox
 
 # Export des fichiers kml
 export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2022.kml

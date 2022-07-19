@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -275.21 -8.87 14508.3569 8357.3706
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {12874.02 0 1.0} {6929.13 C37b@jb-amonts1} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_image_insert {25895.25 0 1.0} {13739.130000000001 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
 
 
@@ -43,7 +43,9 @@ point 7298.0 4336.5 label -text "R4"
 
 point 7215.25 4306.75 label -text "-764 m"
 
-point 7248.25 4347.0 label -text "Cascade Jean Dupont"
+point 7261.75 4352.25 label -text "<center>Cascatelle<br>Marie Françoise"
+
+point 7209.25 4287.0 label -text "<center>Cascade<br>Jean Dupont"
 
 point 7239.0 4271.75 label -text "Collecteur"
 
@@ -615,6 +617,14 @@ point 7416.37 4238.43 station -name Jf.2@jb-amonts2
 
 point 7342.5 4329.5 label -text "Les Cascatelles"
 
+point 7220.0 4331.25 altitude -align top
+
+point 7667.0 4321.75 altitude -align top-left
+
+point 7619.0 4408.5 altitude -align top
+
+point 7400.5 4244.0 altitude -align top
+
 line wall
   7477.5 4304.25
   7477.5 4304.25 7438.25 4293.25 7436.5 4289.5
@@ -846,11 +856,20 @@ point 7528.0 4522.5 blocks
 
 point 7568.25 4485.5 label -orientation 90.0 -text "Galerie du Séchoir"
 
-point 7482.25 4546.0 label -text "P15"
+point 7495.25 4505.5 altitude -align top-left
 
-point 7455.75 4585.75 label -text "Puits Alain"
+point 7488.0 4609.5 altitude -align bottom-left
 
-point 7513.5 4595.25 label -text "P14"
+line pit
+  7512.5 4504.75
+  7512.5 4504.75 7514.0 4517.75 7501.5 4516.75
+endline
+
+point 7475.75 4543.5 label -text "P15"
+
+point 7448.5 4589.25 label -text "Puits Alain"
+
+point 7514.0 4599.75 label -text "P14"
 
 point 7487.5 4575.5 water-flow -orientation 123.3
 
@@ -937,8 +956,11 @@ line wall
   7480.5 4625.25 7487.25 4613.75 7488.0 4609.5
   7488.75 4605.25 7494.5 4593.25 7493.25 4589.0
   7492.0 4584.75 7495.0 4581.0 7495.0 4576.75
-  7495.0 4572.5 7489.5 4561.0 7490.75 4556.75
-  7492.0 4552.5 7490.75 4547.75 7494.0 4543.0
+endline
+
+line wall
+  7489.25 4546.25
+  7490.5 4542.0 7490.75 4547.75 7494.0 4543.0
   7497.25 4538.25 7502.75 4525.5 7503.25 4521.25
   7503.75 4517.0 7499.25 4508.75 7495.25 4505.5
   7491.25 4502.25 7487.0 4498.75 7486.5 4496.5

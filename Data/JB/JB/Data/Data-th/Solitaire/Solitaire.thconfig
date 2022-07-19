@@ -50,7 +50,7 @@ layout layout_plan
 	legend off
 	#legend-width 22 cm
 	legend-width 18 cm
-	map-header 30 40 nw
+	map-header 40 40 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -109,7 +109,7 @@ layout layout_coupe
 	statistics copyright all
 	legend off
 	legend-width 26  cm
-	map-header 35 45 nw
+	map-header 38 40 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -138,12 +138,12 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2021.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2021.xvi
+	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2022.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2022.xvi
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2022.pdf
-	export map -layout layout_plan -o Outputs/2D/solitaire-plan2022.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2022b.pdf
+	export map -layout layout_plan -o Outputs/2D/solitaire-plan2022b.pdf
  
 # Export des modeles 3D
 	export model -o Outputs/3D/solitaire.lox

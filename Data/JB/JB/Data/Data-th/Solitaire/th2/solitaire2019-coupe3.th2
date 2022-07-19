@@ -15,11 +15,10 @@ point 361.75 323.25 altitude -align bottom
 
 point 522.5 278.25 altitude -align right
 
-line u:rope
+line rope
   498.0 288.25
-  498.0 288.25 512.75 277.5 513.0 283.25
-  513.03 284.04 513.0 248.25 513.0 248.25
-  smooth off
+  513.0 283.25
+  513.0 248.25
 endline
 
 line rope
@@ -28,32 +27,29 @@ line rope
   386.25 324.5
 endline
 
-line u:rope
+line rope
   447.75 386.75
-  447.75 386.75 437.25 380.75 433.0 387.0
-  432.56 387.65 420.0 377.5 416.5 385.5
-  smooth off
+  437.75 386.75
+  410.25 384.75
+  424.25 386.0
 endline
 
-line u:rope
+line rope
   585.0 446.75
-  585.0 446.75 575.75 437.0 576.0 444.0
-  576.01 444.35 576.0 389.25 576.0 389.25
-  smooth off
+  576.0 444.0
+  576.0 389.25
 endline
 
-line u:rope
+line rope
   677.75 447.75
-  677.75 447.75 668.0 438.25 668.0 443.75
-  668.0 449.25 668.0 398.0 668.0 398.0
-  smooth off
+  668.0 443.75
+  668.0 398.0
 endline
 
-line u:rope
+line rope
   633.25 524.25
-  633.25 524.25 623.5 517.0 623.0 521.25
-  622.5 525.5 622.0 445.5 622.0 445.5
-  smooth off
+  623.0 521.25
+  622.0 445.5
 endline
 
 point 636.75 501.75 water-flow -orientation 253.5
@@ -68,7 +64,7 @@ point 513.75 239.75 continuation -attr Code P -text "P6 à descendre ; vers acti
 
 point 696.5 452.0 continuation -attr Code E -text "Puits remontant de 11 m à escalader ;  Revient vers point 2019-FD 562 ?"
 
-point 687.25 417.5 height -value [+11 m]
+point 695.5 410.0 height -value [+11 m]
 
 point 429.0 296.5 height -value [-6 m]
 
@@ -191,6 +187,7 @@ line wall
   467.75 416.75 454.75 419.5 448.0 419.0
   441.25 418.5 422.5 414.25 413.5 408.5
   404.5 402.75 385.0 387.0 378.75 380.5
+  smooth off
 endline
 
 line rope
@@ -241,6 +238,8 @@ point 580.9800000000002 386.09900000000005 station -name 2019-FD-64@solitaire
 point 580.9800000000002 438.22900000000004 station -name 2019-FD-62@solitaire
 
 point 631.4800000000002 428.4290000000001 station -name 2019-FD-63@solitaire
+
+point 516.25 251.0 map-connection
 
 point 600.4400000000003 448.57900000000006 station -name 2019-FD-61@solitaire
 

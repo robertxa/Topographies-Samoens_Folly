@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -326.35699999999997 -129.5 1189.4862 1104.8755
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -326.35699999999997 -128.75 1189.4862 1104.8755
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {816.686 1 1.0} {314.965 xx0init} solitaire-coupe2017.xvi 0 {}
 ##XTHERION## xth_me_image_insert {816.686 1 1.0} {314.956 xx0init} solitaire-coupe2018.xvi 0 {}
 ##XTHERION## xth_me_image_insert {815.186 1 1.0} {819.3972 xx0init} solitaire-coupe2018b.xvi 0 {}
@@ -194,11 +194,10 @@ line border -id l147-381-150 -close on
   386.0 145.5 390.0 146.5 379.5 149.5
 endline
 
-line u:rope
+line rope
   115.0 141.0
-  115.0 141.0 102.5 134.5 98.0 134.5
-  93.5 134.5 88.0 135.0 88.0 135.0
-  smooth off
+  98.0 134.5
+  88.0 135.0
 endline
 
 point 78.25 153.0 traverse
@@ -207,48 +206,41 @@ point 182.5 111.25 label -text "R3"
 
 point 875.0 183.0 label -text "R3"
 
-line u:rope -clip off
+line rope
   551.25 199.75
-  551.25 199.75 548.0 194.5 547.0 198.0
-  546.78 198.76 532.75 180.25 532.75 180.25
-  smooth off
+  547.0 198.0
+  532.75 180.25
 endline
 
-line u:rope -clip off
+line rope
   536.75 209.0
-  536.75 209.0 532.5 204.25 530.25 208.0
-  529.96 208.48 511.25 190.75 511.25 190.75
-  smooth off
+  530.25 208.0
+  511.25 190.75
 endline
 
-line u:rope -clip off
+line rope
   784.5 224.75
-  784.5 224.75 788.25 221.25 802.0 230.75
-  803.05 231.47 804.0 229.75 808.0 231.0
-  smooth off
+  802.0 230.75
+  808.0 231.0
 endline
 
-line u:rope -clip off
+line rope
   758.5 246.5
-  758.5 246.5 766.25 238.25 766.5 244.25
-  766.52 244.75 785.0 212.25 784.5 224.75
-  784.0 237.25 784.75 191.25 784.75 191.25
-  smooth off
+  766.5 244.25
+  784.5 224.75
+  784.75 191.25
 endline
 
 point 771.5 207.5 height -value [-8 m]
 
 point 761.25 226.75 label -text "R5"
 
-point 856.75 262.5 label -text "puits Alain"
-
-line u:rope -clip off
+line rope -clip off
   853.0 285.0
-  853.0 285.0 846.75 283.0 844.25 285.25
-  843.51 285.92 832.25 282.5 832.25 290.25
-  832.25 290.6 826.0 293.5 824.75 317.25
-  824.72 317.81 821.0 314.75 819.5 317.5
-  smooth off
+  844.25 285.25
+  832.25 290.25
+  824.75 317.25
+  819.5 317.5
 endline
 
 line wall -subtype invisible
@@ -412,6 +404,8 @@ line wall
   smooth off
 endline
 
+point 827.0 314.5 map-connection
+
 line wall
   840.5 328.0
   840.5 328.0 831.5 325.5 817.0 319.0
@@ -474,12 +468,11 @@ point 924.0 363.75 height -value [+2.5 m]
 
 point 777.25 331.5 continuation -attr Code E -text "Départ en plafond à atteindre"
 
-line u:rope
+line rope
   902.25 385.75
-  902.25 385.75 896.0 377.0 896.0 383.25
-  896.0 383.75 885.0 368.5 885.25 376.75
-  885.28 377.87 883.5 357.25 883.5 357.25
-  smooth off
+  896.0 383.25
+  885.25 376.75
+  883.5 357.25
 endline
 
 line wall -close on -reverse on -outline in
@@ -491,13 +484,9 @@ line wall -close on -reverse on -outline in
   smooth off
 endline
 
-point 948.0 402.25 altitude -align top
+point 947.75 402.25 altitude -align top-left
 
-point 1013.5 401.5 air-draught -orientation 269.1
-
-point 976.5 415.75 continuation -attr Code D -text "CF colmatée à creuser"
-
-point 960.75 399.25 narrow-end
+point 873.5 408.0 air-draught -orientation 234.4
 
 point 639.25 268.0 narrow-end
 
@@ -508,7 +497,7 @@ line wall
   smooth off
 endline
 
-point 942.0 379.25 label -text "colm."
+point 961.75 367.75 dig
 
 point 659.75 284.0 label -text "colm."
 
@@ -526,8 +515,8 @@ line wall
 endline
 
 line wall
-  948.0 402.25
-  948.0 402.25 942.75 401.75 936.75 401.25
+  947.75 402.25
+  947.75 402.25 942.75 401.75 936.75 401.25
   930.75 400.75 920.25 401.25 917.5 399.25
   914.75 397.25 907.25 390.75 902.25 389.0
   897.25 387.25 890.25 384.75 884.75 381.0
@@ -574,8 +563,6 @@ point 676.196 254.415 station -name xx18@solitaire
 
 endscrap
 
-
-
 #scrap SC-Solitaire2018-SC1 -projection extended -author 2018 "Xavier Robert" -copyright 2018 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
 #
 #point 826.25 222.25 height -value [+10 m]
@@ -609,5 +596,6 @@ endscrap
 #point 827.356 235.86599999999999 station -name 2018-CBa-01@solitaire
 #
 #endscrap
+
 
 

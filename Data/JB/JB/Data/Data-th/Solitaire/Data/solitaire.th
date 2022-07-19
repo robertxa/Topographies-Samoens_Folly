@@ -25,7 +25,7 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
 
 	data normal from to length compass clino left right up down
  	extend left
-	xx0init  xx0    0    246  0  0  1.2  1.6  1.1    # 0 à la fin de la vire au sommet du puits Alain
+	xx0init  xx0    0    246  90  0  1.2  1.6  1.1    # xx0 à la fin de la vire au sommet du puits Alain; Visée fictive
 	xx0  xx1    6.6    246  -32  0.6  1.1  1.3  0.5    # sur bloc coincé
 	xx1  xx1b    0    246  0  0.6  1.1  1.3  2.5  
 	xx1b  xx2    6.6    234  -44  1  0.4  2.8  1.6  
@@ -105,7 +105,7 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
 	xx27  xx34    1.46  303  -20  2.5  1  1  0.5    # Bouclage en haut de l'escalade
 
 	extend right
-	xx0  xx35    1.74  63  -33  0.5  0.75  3.1  1.5    # Visée pour relier topo du réseau du solitaire à la topo globlale
+	xx0  xx35    1.74  63  -33  0.5  0.75  3.1  1.5    # Visée pour relier topo du réseau du solitaire à la topo globale
 	xx35  xx36    11    53  -46  -  -  -  -    # point 36 sur le nœud de la tête du puits Alain
 
 # Dev = 215 m
@@ -129,7 +129,7 @@ centerline -title "JBSolitaire : xx0init_2017-FD-00 2017-FD-32_2017-FD-33"
 
 	data normal from to length compass clino left right up down
  	
-
+	extend right
 	xx7	2017-FD-00	0	0	0	1.3	1.5	0.7	0.5	# Jonction topo 2016 de la galerie du Solitaire (xx7)
 	2017-FD-00	2017-FD-01	3.4	112	-17	1.4	2.8	1	1.4	
 	2017-FD-01	2017-FD-02	7.7	105	-46	1	0.8	6.6	7.9	# Butte d'argile

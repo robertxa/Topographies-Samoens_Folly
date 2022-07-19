@@ -15,6 +15,8 @@ map MP-oeufs -title "Méandre des Oeufs"
 endmap
 
 map MP-solitaire -title "Réseau du Solitaire"
+	SP-Pixa-1
+	break
 	SP-solitaire_plan
 	break
 	SP-sol2017-1
@@ -57,6 +59,8 @@ map MC-oeufs -title "Méandre des Oeufs"
 endmap
 
 map MC-solitaire -title "Réseau du Solitaire"
+	SC-Pixa-1
+	break
 	SC-sol-C2
 	break
 	SC-sol-C1	# Déformation scrap

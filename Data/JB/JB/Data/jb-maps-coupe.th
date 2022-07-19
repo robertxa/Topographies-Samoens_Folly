@@ -356,11 +356,11 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MC-chatons
 	break
-	MC-V5
-	break
 	MC-V6
 	break
 	MC-V4
+	break
+	MC-V5
 endmap
 
 map MC-Solitaire-tot -title "Réseau du Solitaire"
@@ -372,11 +372,12 @@ endmap
 map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
 	MC-rivieredebut
 	break
-	MC-solitaire@Solitaire
+	MC-puitsAlain
+	break
+	#MC-Solitaire-tot 	[-150 150 m] below
+	MC-solitaire@Solitaire 	[-150 150 m] below
 	break
 	MC-oeufs@Solitaire
-	break
-	MC-puitsAlain
 endmap
 
 map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"

@@ -1,0 +1,71 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 3345.3280000000004 1663.4339
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {2703.8 1 1.0} {984.2489999999999 xx0init@solitaire.Solitaire} solitaire-coupe2022.xvi 0 {}
+
+
+
+scrap SC-Pixa-1 -projection extended -author 2022 "Xavier Robert" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
+
+point 2873.0 1109.25 guano -clip off
+
+point 2880.0 1089.75 gypsum
+
+point 2821.75 1136.75 label -text "<center>galerie<br>Pixa"
+
+line wall -subtype clay
+  2824.2 1066.899
+  2825.5 1066.0 2830.0 1066.5 2832.75 1068.75
+  2835.5 1071.0 2836.0 1071.25 2842.0 1072.5
+  2848.0 1073.75 2847.25 1074.0 2852.5 1076.75
+  2857.75 1079.5 2862.75 1082.25 2867.0 1084.5
+  2871.25 1086.75 2870.5 1086.0 2875.75 1086.0
+  2881.0 1086.0 2883.5 1087.25 2886.25 1090.0
+  smooth off
+endline
+
+line wall
+  2886.25 1090.0
+  2889.0 1092.75 2888.75 1094.5 2896.25 1096.75
+  2903.75 1099.0 2903.75 1099.5 2908.0 1102.25
+  2912.25 1105.0 2917.5 1107.5 2919.5 1109.25
+  2921.5 1111.0 2925.0 1117.25 2927.0 1116.75
+  smooth off
+endline
+
+point 2923.75 1122.5 map-connection
+
+line wall
+  2933.5 1144.25
+  2933.5 1144.25 2923.25 1134.5 2914.5 1127.5
+  2905.75 1120.5 2907.5 1121.0 2900.25 1115.0
+  2893.0 1109.0 2887.75 1100.25 2881.5 1099.75
+  2875.25 1099.25 2871.5 1098.25 2864.5 1093.5
+  2857.5 1088.75 2854.75 1084.0 2851.25 1082.5
+  2847.75 1081.0 2837.75 1078.25 2836.25 1076.0
+  2834.75 1073.75 2835.25 1073.25 2831.5 1072.0
+  2827.75 1070.75 2824.25 1069.25 2824.25 1069.25
+  smooth off
+endline
+
+point 2970.1899999999996 1170.569 station -name 8@savoyards
+
+point 2921.12 1120.809 station -name 7@savoyards
+
+point 2903.6 1106.049 station -name 6@savoyards
+
+point 2890.08 1099.4589999999998 station -name 5@savoyards
+
+point 2869.04 1089.059 station -name 4@savoyards
+
+point 2853.21 1082.039 station -name 3@savoyards
+
+point 2846.31 1077.929 station -name 2@savoyards
+
+point 2834.72 1072.2289999999998 station -name 0@savoyards
+
+point 2824.2 1067.999 station -name 1@savoyards
+
+endscrap
+
+

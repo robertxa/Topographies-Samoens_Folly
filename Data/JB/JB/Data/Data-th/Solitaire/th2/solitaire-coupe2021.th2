@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 3316.9781000000003 1466.5834
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {2680.38 1 1.0} {944.878 xx0init@solitaire} solitaire-coupe2021.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {5384.18 1 1.0} {1929.127 xx0init@solitaire.Solitaire} solitaire-coupe2021.xvi 0 {}
 
 
 
@@ -80,6 +80,7 @@ endline
 line wall
   445.75 299.75
   445.75 299.75 468.25 293.5 472.25 293.75
+  smooth off
 endline
 
 line wall -subtype debris
@@ -127,6 +128,7 @@ endline
 line wall -subtype debris
   512.5 352.5
   525.25 355.5 520.44 356.13 528.0 356.25
+  smooth off
 endline
 
 line wall -subtype debris
@@ -193,6 +195,8 @@ point 477.29999999999995 381.88800000000003 station -name 2021-FD-21@solitaire
 point 487.52 378.958 station -name 2021-FD-20@solitaire
 
 point 504.8699999999999 355.06800000000004 station -name 2021-FD-2@solitaire
+
+point 291.47 277.72800000000007 map-connection
 
 point 555.05 371.37800000000004 station -name 2021-FD-1@solitaire
 
