@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -479.9100000000001 -196.1568 2965.0681000000004 1595.2771
+##XTHERION## xth_me_area_adjust -180.6600000000002 -128.75 5668.8681 2579.5261
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2352.12 1 1.0} {915.627 xx0init@solitaire} solitaire-coupe2020.xvi 0 {}
 ##XTHERION## xth_me_image_insert {5055.69 1 1.0} {1900.3411999999998 xx0init@solitaire.Solitaire} solitaire-coupe2021.xvi 0 {}
@@ -377,70 +377,14 @@ line wall
   smooth off
 endline
 
-point 1706.0 1174.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Suite du Méandre à continuer après E, courant d'air aspirant en été"
-
-point 1712.75 1089.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Méandre à continuer après E13"
-
 point 1615.0 1108.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Solitaire" -text "Cheminée remontante à escalader"
 
 line wall
-  1698.75 1217.0
-  1698.75 1217.0 1694.75 1207.0 1692.0 1201.75
-  1689.25 1196.5 1683.75 1200.0 1681.5 1189.75
-  1679.25 1179.5 1672.75 1161.5 1672.75 1153.25
-  1672.75 1145.0 1672.0 1133.75 1669.25 1131.0
-  1666.5 1128.25 1664.25 1126.75 1664.25 1121.5
-  1664.25 1116.25 1666.25 1103.5 1663.75 1102.25
-  1661.25 1101.0 1655.0 1104.0 1654.75 1100.0
-  1654.5 1096.0 1653.5 1094.0 1651.25 1092.0
-  1649.0 1090.0 1644.5 1091.75 1644.25 1090.0
-  1644.0 1088.25 1643.75 1086.25 1640.75 1086.25
+  1640.75 1086.25
   1637.75 1086.25 1638.25 1085.5 1634.0 1086.75
   1629.75 1088.0 1626.0 1089.5 1625.0 1090.5
   1624.0 1091.5 1621.25 1098.0 1621.25 1098.0
   smooth off
-endline
-
-line rock-border -close on
-  1694.25 1139.5
-  1690.25 1138.5
-  1692.5 1134.75
-  1695.0 1135.5
-  1694.25 1139.5
-endline
-
-line wall
-  1705.0 1093.5
-  1705.0 1093.5 1695.5 1086.75 1695.5 1090.75
-  1695.5 1094.75 1696.25 1109.75 1696.0 1115.0
-  1695.75 1120.25 1692.75 1121.5 1695.75 1125.5
-  1698.75 1129.5 1703.75 1138.25 1703.75 1138.25
-  smooth off
-endline
-
-line wall
-  1687.25 1073.75
-  1687.25 1073.75 1690.5 1072.75 1690.75 1074.75
-  1691.0 1076.75 1690.25 1079.0 1693.0 1079.5
-  1695.75 1080.0 1693.75 1082.25 1695.75 1082.5
-  1697.75 1082.75 1703.75 1084.25 1703.75 1084.25
-  smooth off
-endline
-
-line rock-border -close on
-  1671.5 1072.0
-  1668.0 1071.25
-  1669.75 1068.5
-  1672.5 1069.0
-  1671.5 1072.0
-endline
-
-line rock-border -close on
-  1664.5 1070.75
-  1661.25 1067.25
-  1663.25 1066.25
-  1666.75 1067.25
-  1664.5 1070.75
 endline
 
 point 1629.25 1052.25 pebbles
@@ -462,23 +406,11 @@ line rock-border -close on
   1603.5 1048.5
 endline
 
-line rock-border -close on
-  1668.0 1074.0
-  1665.02 1076.0922
-  1664.5 1069.25
-  1668.0 1069.0
-  1668.0 1074.0
-endline
-
 point 1618.0 1092.75 water-flow -orientation 174.3
 
 line wall -subtype debris
   1637.25 1049.25
   1637.25 1049.25 1645.25 1049.25 1647.5 1051.25
-  1649.75 1053.25 1664.0 1062.5 1667.0 1063.25
-  1670.0 1064.0 1674.75 1066.25 1678.75 1066.25
-  1682.75 1066.25 1687.25 1073.75 1687.25 1073.75
-  smooth off
 endline
 
 line wall -subtype pebbles
@@ -487,8 +419,6 @@ line wall -subtype pebbles
   1629.25 1049.5 1634.25 1049.25 1637.25 1049.25
   smooth off
 endline
-
-point 1665.25 1183.0 air-draught -orientation 25.9 -subtype summer
 
 point 1569.25 1077.0 narrow-end
 
@@ -505,31 +435,7 @@ line wall -subtype debris
   smooth off
 endline
 
-line rope
-  1697.0 1088.0
-  1691.75 1088.0
-  1691.75 1079.25
-endline
-
-line rope
-  1702.25 1201.0
-  1696.25 1200.0
-  1695.33 1133.1022
-  1689.75 1132.75
-  1688.5 1077.0
-endline
-
-point 1645.75 1139.5 height -value [+16 m]
-
-point 1708.5 1066.5 height -value [+3 m]
-
-point 1689.5 1111.75 u:man_c
-
 point 1584.75 1160.25 label -text "<center>salle du<br>Départ"
-
-point 1702.5 1152.5 map-connection
-
-point 1703.75 1138.25 altitude -align right
 
 point 1542.5 1056.25 height -value [+4 m]
 
@@ -540,8 +446,6 @@ line wall
   1598.75 1042.0 1599.25 1043.25 1602.25 1044.5
   smooth off
 endline
-
-point 1695.33 1133.1022 station -name 2021-AM-11@solitaire2020a
 
 point 1665.02 1076.0922 station -name 2021-AM-10@solitaire2020a
 

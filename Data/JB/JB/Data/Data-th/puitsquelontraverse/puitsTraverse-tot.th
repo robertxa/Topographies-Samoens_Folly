@@ -7,6 +7,8 @@ encoding  utf-8
 survey PuitsTraverse -title "Galerie du Puits que l'on Traverse"
 
     input Data/puitstraverse.th
+    input Data/pqt2022.th
+        equate 4@pqt2022 XR-2015d-28@puitstraverse
 
     # Dessins en plan
     input Data/puitstraverse.th2

@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 609.5 387.75
+##XTHERION## xth_me_area_adjust -128.75 -129.152 640.1463 402.43870000000004
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {140.335 1 1.0} {196.848 XR-2015d-0bis} puitstraverse-coupe.xvi 0 {}
+##XTHERION## xth_me_image_insert {140.67000000000002 1 1.0} {195.69600000000003 XR-2015d-0bis@puitstraverse.PuitsTraverse} puitstraverse-coupe.xvi 0 {}
 
 
 
@@ -28,7 +28,7 @@ point 358.0 108.5 soda-straw
 
 point 336.5 99.75 soda-straw
 
-point 277.25 104.0 label -text "colm."
+point 256.75 102.0 label -text "colm."
 
 point 425.5 123.25 height -value [+4 m]
 
@@ -48,7 +48,7 @@ point 135.25 193.5 breakdown-choke
 
 point 120.25 194.75 breakdown-choke
 
-point 298.0 93.25 continuation -attr Code D -text "A désobstruer"
+point 267.0 119.0 continuation -attr Code D -text "A désobstruer"
 
 point 86.75 241.5 continuation -attr Code E -text "A escalader"
 
@@ -147,12 +147,14 @@ line wall
   smooth off
 endline
 
-point 284.75 89.75 air-draught -orientation 274.4 -subtype summer
+point 308.5 77.75 dig
+
+point 284.5 73.75 air-draught -orientation 296.9 -subtype summer -scale s
 
 line wall
-  302.5 87.0
-  302.5 87.0 308.0 87.25 310.25 87.5
-  312.5 87.75 313.0 89.0 316.0 89.25
+  302.5 91.25
+  302.5 91.25 306.75 89.0 309.0 89.25
+  311.25 89.5 313.0 89.0 316.0 89.25
   319.0 89.5 319.0 89.75 324.25 90.0
   329.5 90.25 330.25 89.75 335.5 90.75
   340.75 91.75 352.0 94.25 355.0 94.25
@@ -162,6 +164,35 @@ line wall
   397.75 90.25 401.25 88.5 401.25 88.5
   smooth off
 endline
+
+line wall -subtype clay
+  277.25 108.0
+  277.25 108.0 293.5 98.5 294.5 96.5
+  295.5 94.5 301.5 92.0 302.5 91.25
+endline
+
+line wall
+  295.75 103.5
+  295.75 103.5 296.25 102.0 296.25 100.5
+  296.25 99.0 284.75 107.25 282.75 108.0
+  280.75 108.75 278.75 110.25 278.75 110.25
+  smooth off
+endline
+
+line wall
+  305.75 94.75
+  305.75 94.75 301.25 98.5 300.75 99.25
+  300.25 100.0 299.0 103.0 299.0 103.0
+  smooth off
+endline
+
+point 283.18000000000006 106.25600000000003 station -name 1@pqt2022
+
+point 296.2300000000001 97.02600000000002 station -name 0@pqt2022
+
+point 304.37000000000006 93.06600000000003 station -name 2@pqt2022
+
+point 312.95000000000005 90.17600000000003 station -name 3@pqt2022
 
 line wall
   199.5 155.25
@@ -182,7 +213,7 @@ line wall
   349.5 97.5 337.0 96.25 333.75 95.0
   330.5 93.75 320.0 92.0 318.0 92.0
   316.0 92.0 314.75 91.5 312.75 91.5
-  310.75 91.5 308.25 95.5 308.25 95.5
+  310.75 91.5 305.75 94.75 305.75 94.75
   smooth off
 endline
 

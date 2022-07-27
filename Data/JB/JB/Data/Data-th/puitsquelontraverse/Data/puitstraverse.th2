@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 376.25 419.0
+##XTHERION## xth_me_area_adjust -128.75 -128.75 403.8267000000001 442.5558000000001
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {78.73600000000002 1 1.0} {275.595 XR-2015d-0bis} puitstraverse-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {78.97200000000004 1 1.0} {275.19000000000005 XR-2015d-0bis@puitstraverse.PuitsTraverse} puitstraverse-map.xvi 0 {}
 
 
 
@@ -136,6 +136,8 @@ line wall
   smooth off
 endline
 
+point 86.5 289.75 altitude -align top
+
 line wall
   122.25 226.0
   122.25 226.0 119.5 231.25 119.25 233.75
@@ -202,8 +204,6 @@ point 162.5 145.75 air-draught -orientation 337.6 -subtype summer
 
 point 212.75 91.0 air-draught -orientation 295.5 -subtype summer
 
-point 133.25 89.75 air-draught -orientation 233.1 -subtype summer
-
 point 189.25 100.5 clay
 
 point 171.25 107.25 clay
@@ -216,7 +216,19 @@ point 142.0 107.75 clay
 
 point 103.0 89.5 clay
 
-point 106.25 98.0 clay
+point 85.54200000000003 86.93000000000004 station -name 1@pqt2022
+
+point 98.54200000000003 85.84000000000003 station -name 0@pqt2022
+
+point 105.86200000000002 90.14000000000003 station -name 2@pqt2022
+
+point 113.84200000000004 92.31000000000003 station -name 3@pqt2022
+
+point 88.5 68.0 narrow-end
+
+point 120.5 77.5 dig
+
+point 91.5 90.25 clay
 
 point 115.75 92.75 clay
 
@@ -234,7 +246,7 @@ point 154.0 137.0 clay
 
 point 195.25 75.25 height -value [+4 m]
 
-point 93.0 101.0 continuation -attr Code D -attr CA "Courant d'air" -attr Cavite JB -attr reseau "Puits qu'on Traverse" -text "Moins de 1 m de colmatage d'argile à désobstruer, derrière, c'est grand"
+point 66.25 85.75 continuation -attr Code D -attr CA "Courant d'air" -attr Cavite JB -attr reseau "Puits qu'on Traverse" -text "Moins de 1 m de colmatage d'argile à désobstruer, derrière, c'est grand"
 
 point 139.5 139.75 label -text "bloc"
 
@@ -249,9 +261,35 @@ line rock-border -close on
   154.5 143.75
 endline
 
-point 102.0 113.25 label -text "C.F."
+line wall
+  96.25 79.25
+  96.25 79.25 100.5 84.5 102.0 85.75
+  103.5 87.0 106.75 88.0 109.75 88.5
+  112.75 89.0 110.5 89.0 111.75 88.0
+  113.0 87.0 114.75 89.25 114.75 89.25
+  smooth off
+endline
 
-point 116.75 80.25 label -text "colm."
+line wall
+  79.0 81.25
+  79.0 81.25 91.0 84.0 93.0 83.25
+  95.0 82.5 98.5 86.5 96.0 83.0
+  93.5 79.5 94.25 80.25 94.25 80.25
+  smooth off
+endline
+
+line wall
+  118.75 98.0
+  118.75 98.0 116.25 95.0 112.0 94.75
+  107.75 94.5 106.5 92.5 103.0 94.0
+  99.5 95.5 99.5 94.25 96.5 94.25
+  93.5 94.25 80.25 91.75 80.25 91.75
+  smooth off
+endline
+
+point 134.0 89.25 air-draught -orientation 233.3 -subtype summer -scale s
+
+point 81.75 110.25 label -text "colm."
 
 point 197.75 111.75 label -text "colm."
 
@@ -290,22 +328,8 @@ line pit -reverse on
 endline
 
 line wall -subtype presumed
-  106.25 88.0
-  106.25 88.0 106.75 95.5 108.25 93.75
-  109.75 92.0 111.5 88.75 114.75 89.25
+  114.75 89.25
   118.0 89.75 122.75 92.75 122.75 92.75
-  smooth off
-endline
-
-line wall -subtype presumed
-  103.0 102.5
-  100.0 87.75
-endline
-
-line wall -subtype presumed
-  118.75 98.0
-  118.75 98.0 117.0 94.5 115.0 95.0
-  113.0 95.5 112.25 99.75 112.25 99.75
   smooth off
 endline
 
@@ -387,16 +411,6 @@ point 187.086 84.05500000000004 station -name XR-2015d-31@puitstraverse
 point 176.306 83.86500000000004 station -name XR-2015d-30@puitstraverse
 
 point 159.376 100.79500000000003 station -name XR-2015d-29@puitstraverse
-
-line wall -subtype invisible
-  100.0 87.75
-  106.25 88.0
-endline
-
-line wall -subtype invisible
-  112.25 99.75
-  103.0 102.5
-endline
 
 line wall -subtype invisible
   192.75 105.25

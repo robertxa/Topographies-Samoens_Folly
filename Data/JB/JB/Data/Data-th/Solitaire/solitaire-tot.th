@@ -11,6 +11,8 @@ survey Solitaire -title "Réseau du Solitaire"
 		equate 1@solitaire2020a 2019d-FD-10@solitaire
 	input Data/savoyards.th
 		equate 1@savoyards xxInterrogation4@solitaire
+	input Data/oeufs2022.th
+		equate 2021-AM-10@solitaire2020a 26@oeufs2022
 
 	# 2017
 	input th2/solitaire-plan.th2
@@ -64,6 +66,10 @@ survey Solitaire -title "Réseau du Solitaire"
 		join SP-Pixa-1 SP-solitaire_plan
 	input th2/savoie-solitaire-coupe.th2
 		join SC-Pixa-1 SC-sol-C2
+	input th2/oeufs2022.th2
+		join SP-Oeufs2022-1 SP-Sol2021-2
+	input th2/oeufs2022-coupe.th2
+		join SC-Oeufs2022-1 SC-Sol2021-1
 
 	# Add maps
 	input solitaire-maps.th

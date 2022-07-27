@@ -1,8 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -648.2499999999999 -276.80380000000014 2757.358 2735.1032
+##XTHERION## xth_me_area_adjust -128.75 -128.75 5355.778 4467.3832
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2077.3199999999997 1 1.0} {1580.4 xx0init@solitaire} solitaire-plan2020.xvi 0 {}
-##XTHERION## xth_me_image_insert {2078.17 1 1.0} {1583.4761999999998 xx0init@solitaire} solitaire-plan2021.xvi 0 {}
+##XTHERION## xth_me_image_insert {4676.59 1 1.0} {3315.7562 xx0init@solitaire.Solitaire} solitaire-plan2021.xvi 0 {}
 
 
 
@@ -402,7 +402,7 @@ point 827.75 1528.75 pebbles
 
 point 869.5 1576.0 pebbles
 
-point 794.0 1617.25 label -text "<center>galet de<br>granite"
+point 976.25 1613.5 label -text "<center>galet du<br>faux granite"
 
 point 795.25 1529.25 breakdown-choke -orientation 90.0
 
@@ -485,16 +485,19 @@ line wall
   727.0 2051.5 727.5 2053.5 724.25 2061.5
   721.0 2069.5 719.75 2087.25 721.25 2092.25
   722.75 2097.25 725.75 2102.0 729.5 2105.75
+  smooth off
 endline
 
 line pit
   730.25 2112.0
   730.25 2112.0 725.5 2119.25 732.5 2120.0
+  smooth off
 endline
 
 line wall
   739.25 2108.75
   739.25 2108.75 730.0 2120.75 729.5 2121.75
+  smooth off
 endline
 
 line wall
@@ -712,26 +715,13 @@ endscrap
 scrap SP-Sol2021-2 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2726.4266000000002 -128.0 0.0 0.0 72.50243564 0.0 m]
 
 line wall
-  612.25 2257.5
-  612.25 2257.5 627.25 2248.5 635.25 2248.5
-  643.25 2248.5 671.5 2247.75 673.75 2246.25
-  676.0 2244.75 676.0 2243.25 680.5 2244.75
-  685.0 2246.25 683.5 2253.25 689.5 2247.0
-  695.5 2240.75 706.5 2224.5 708.75 2221.0
+  694.75 2239.5
+  700.75 2233.25 706.5 2224.5 708.75 2221.0
   711.0 2217.5 717.25 2207.75 715.25 2203.5
   713.25 2199.25 707.75 2185.5 704.25 2183.75
   700.75 2182.0 698.25 2179.75 692.75 2179.25
   687.25 2178.75 674.5 2177.25 671.5 2174.25
   668.5 2171.25 670.5 2164.5 671.5 2162.25
-  smooth off
-endline
-
-line wall
-  695.5 2289.0
-  695.5 2289.0 688.0 2281.0 682.25 2280.75
-  676.5 2280.5 662.5 2289.5 654.5 2292.0
-  646.5 2294.5 639.0 2300.25 633.75 2300.75
-  628.5 2301.25 623.5 2300.0 618.0 2300.25
   smooth off
 endline
 
@@ -743,10 +733,6 @@ line wall
   719.75 2210.75 718.75 2219.75 714.5 2225.25
   710.25 2230.75 707.75 2234.5 707.75 2238.5
   707.75 2242.5 707.5 2244.5 705.5 2249.5
-  703.5 2254.5 696.5 2258.75 693.75 2263.5
-  691.0 2268.25 693.25 2278.5 694.25 2280.0
-  695.25 2281.5 699.0 2286.5 699.0 2286.5
-  smooth off
 endline
 
 point 714.0 2194.25 pebbles
@@ -764,48 +750,6 @@ line rock-border -close on
   701.25 2239.0
   699.0 2243.25
 endline
-
-line rock-border -close on
-  695.5 2249.0
-  693.0 2247.75
-  694.5 2244.5
-  697.0 2245.75
-  695.5 2249.0
-endline
-
-line rock-border -close on
-  698.0 2258.0
-  691.25 2258.0
-  693.75 2253.25
-  698.5 2253.25
-  698.0 2258.0
-endline
-
-line rock-border -close on
-  685.75 2255.25
-  682.5 2250.75
-  688.0 2249.25
-  692.0 2252.0
-  685.75 2255.25
-endline
-
-line rock-border -close on
-  684.75 2261.0
-  690.25 2259.75
-  690.1299999999999 2254.6462
-  681.5 2256.5
-  684.75 2261.0
-endline
-
-line pit
-  666.25 2292.75
-  666.25 2292.75 637.75 2263.5 649.0 2242.5
-  smooth off
-endline
-
-point 602.75 2281.75 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Oeufs - Solitaire" -attr CA "?" -text "La suite est là, il y a du volume !"
-
-point 706.0 2296.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Oeufs - Solitaire" -attr CA "?" -text "Départ après E non vu"
 
 line rock-border -close on
   697.0 2170.75
@@ -833,27 +777,6 @@ endline
 
 point 701.75 2149.5 water-flow -orientation 14.9
 
-point 673.25 2345.5 label -text "<center>salle du<br>Départ"
-
-point 620.75 2230.75 height -value [+16 m]
-
-point 710.25 2269.25 height -value [+3 m]
-
-point 633.75 2300.75 altitude -align top
-
-line pit
-  645.0 2299.25
-  645.0 2299.25 634.75 2291.25 631.25 2278.0
-  627.75 2264.75 627.5 2252.75 627.5 2245.75
-  smooth off
-endline
-
-line pit
-  694.75 2267.25
-  694.75 2267.25 686.25 2272.5 683.0 2282.75
-  smooth off
-endline
-
 line wall
   676.5 2161.25
   676.5 2161.25 676.5 2164.5 678.75 2166.25
@@ -862,8 +785,6 @@ line wall
   702.0 2157.75 701.75 2155.25 701.75 2155.25
   smooth off
 endline
-
-point 630.43 2265.1762 station -name 2021-AM-11@solitaire2020a
 
 point 690.1299999999999 2254.6462 station -name 2021-AM-10@solitaire2020a
 
