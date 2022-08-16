@@ -1426,12 +1426,13 @@ point 675.0 1369.5 breakdown-choke -orientation 299.1
 
 point 677.75 1375.5 breakdown-choke -orientation 299.1
 
-area blocks
-  l388-998-1273
-  l402-673-1371
-  l386-983-1264
-  l389-774-1340
-endarea
+#area blocks
+#  l388-998-1273
+#  l402-673-1371
+#  l386-983-1264
+#  l389-774-1340
+#endarea
+
 
 line label -id l402-673-1371
   679.0 1384.75
@@ -1460,24 +1461,13 @@ line floor-meander
   smooth off
 endline
 
-area blocks
-  l396-1011-1268
-  l388-998-1273
-  l395-980-1285
-  l386-983-1264
-endarea
+#area blocks
+#  l396-1011-1268
+#  l388-998-1273
+#  l395-980-1285
+#  l386-983-1264
+#endarea
 
-line label -id l396-1011-1268
-  1001.75 1273.75
-  1001.75 1273.75 1007.0 1274.0 1010.5 1267.5
-  1014.0 1261.0 1003.0 1248.75 1000.75 1247.0
-  smooth off
-endline
-
-line label -id l395-980-1285
-  987.5 1292.5
-  972.25 1275.5
-endline
 
 line pit
   1044.5 1275.5
@@ -1528,17 +1518,48 @@ point 641.0 1388.0 continuation -attr Code T -attr Cavite ReseauCP -attr Reseau 
 
 point 661.25 1379.25 air-draught -orientation 293.5 -subtype summer
 
-line wall -id l388-998-1273
+line wall
   1060.0 1306.25
   1060.0 1306.25 1047.25 1294.5 1042.25 1292.5
   1037.25 1290.5 1003.0 1268.5 999.25 1271.75
   995.5 1275.0 983.25 1290.0 983.25 1292.75
+endline
+
+line wall -subtype pit
+  983.25 1292.75
   983.25 1295.5 985.0 1307.25 981.25 1308.75
   977.5 1310.25 976.0 1317.0 972.5 1313.75
   969.0 1310.5 969.25 1308.0 971.75 1304.75
   974.25 1301.5 979.75 1296.75 976.5 1296.75
+endline
+
+line wall
+  976.5 1296.75
   973.25 1296.75 956.25 1301.25 950.75 1300.5
-  945.25 1299.75 921.5 1295.0 914.25 1297.0
+  smooth off
+endline
+
+point 946.0 1318.0 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "aval CP12" -text "Conduite Forcée à atteindre en pendule"
+
+line pit
+  950.75 1300.5
+  950.75 1300.5 951.5 1299.0 946.0 1300.0
+  smooth off
+endline
+
+line wall
+  944.5 1307.0
+  946.0 1300.0
+endline
+
+line wall
+  950.75 1300.5
+  950.5 1306.5
+endline
+
+line wall
+  946.0 1300.0
+  940.5 1299.25 921.5 1295.0 914.25 1297.0
   907.0 1299.0 880.5 1312.5 877.5 1315.0
   874.5 1317.5 868.25 1329.75 861.75 1330.75
   855.25 1331.75 827.0 1351.25 822.0 1352.0
@@ -1554,6 +1575,21 @@ line wall
   1052.75 1275.0
   1052.75 1275.0 1048.75 1278.5 1051.5 1280.5
   1054.25 1282.5 1068.5 1291.25 1068.5 1291.25
+  smooth off
+endline
+
+point 960.0 1260.5 height -value [+15 m]
+
+area blocks
+  l733-1002-1288
+endarea
+
+line label -id l733-1002-1288 -close on
+  1003.0 1288.0
+  1003.0 1288.0 970.5 1287.5 970.5 1271.0
+  970.5 1254.5 988.0 1233.5 998.0 1237.5
+  1008.0 1241.5 1022.5 1276.5 1013.0 1282.5
+  1003.5 1288.5 1003.0 1288.0 1003.0 1288.0
   smooth off
 endline
 
@@ -1751,7 +1787,7 @@ scrap SP-Reptiles-2 -projection plan -author 1977 "Pierre Rias" -author 1988 "Ch
 
 point 853.75 866.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
-point 895.25 969.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "Puits remontant à escalader"
+point 895.25 969.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "Puits remontant à escalader, gros courant d'air aspirant, est-ce la suite vers l'aval ?"
 
 line pit -close on
   881.75 943.75
@@ -1770,6 +1806,12 @@ line pit
   899.75 923.0 898.75 932.5 898.75 932.5
   smooth off
 endline
+
+point 826.5 918.0 air-draught -orientation 187.9 -scale xs -subtype summer
+
+point 864.5 964.5 height -value [+30 m]
+
+point 881.0 986.0 air-draught -orientation 326.2 -subtype summer
 
 line wall
   893.5 963.0
@@ -2402,28 +2444,11 @@ line floor-meander
   smooth off
 endline
 
-line contour
-  960.75 922.5
-  960.75 922.5 967.25 914.5 973.75 915.0
-  980.25 915.5 984.5 915.25 985.75 920.75
-  987.0 926.25 988.75 933.75 988.75 933.75
-  smooth off
-endline
-
 point 964.25 1055.5 rope
 
 point 970.25 983.25 rope
 
 point 976.75 947.25 rope
-
-line contour
-  963.25 929.0
-  963.25 929.0 964.5 924.25 968.5 923.5
-  972.5 922.75 975.0 919.0 979.5 922.5
-  984.0 926.0 984.0 930.75 984.0 932.0
-  984.0 933.25 984.0 935.5 984.0 935.5
-  smooth off
-endline
 
 point 969.25 1029.25 height -value [-15 m]
 
@@ -2431,43 +2456,7 @@ point 975.0 975.5 height -value [-8 m]
 
 point 976.0 967.5 height -value [-16 m]
 
-point 985.25 945.75 height -value [-42 m]
-
-line arrow
-  992.25 893.25
-  975.75 932.5
-endline
-
-line arrow
-  971.25 887.25
-  972.25 931.75
-endline
-
-line contour
-  956.25 902.0
-  956.25 902.0 962.5 892.75 974.75 891.25
-  987.0 889.75 992.25 897.75 994.25 902.0
-  996.25 906.25 1001.0 915.75 1001.0 915.75
-  smooth off
-endline
-
-line contour
-  958.25 916.0
-  958.25 916.0 968.75 903.5 977.75 905.5
-  986.75 907.5 995.5 929.25 995.5 929.25
-  smooth off
-endline
-
-point 992.75 861.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
-
-line contour -reverse on
-  978.0 942.0
-  978.0 942.0 978.5 939.5 978.0 935.25
-  977.5 931.0 978.75 928.75 975.25 929.25
-  971.75 929.75 970.75 929.5 969.25 931.25
-  967.75 933.0 965.0 937.75 965.0 937.75
-  smooth off
-endline
+point 991.75 941.25 height -value [-42 m]
 
 line contour -reverse on
   973.5 944.0
@@ -2497,11 +2486,8 @@ line wall
 endline
 
 line wall
-  992.0 871.0
-  992.0 871.0 989.75 875.5 992.0 880.25
-  994.25 885.0 998.0 903.0 995.75 910.0
-  993.5 917.0 992.0 925.5 986.75 931.75
-  981.5 938.0 974.75 944.25 973.5 945.5
+  977.0 941.0
+  971.75 947.25 974.75 944.25 973.5 945.5
   972.25 946.75 974.25 950.25 974.25 950.25
   smooth off
 endline
@@ -2517,9 +2503,8 @@ line wall
   958.25 963.0 956.5 959.25 957.5 956.75
   958.5 954.25 959.75 950.0 961.5 947.75
   963.25 945.5 965.0 948.75 966.0 945.25
-  967.0 941.75 959.5 923.25 964.25 909.75
-  969.0 896.25 967.0 877.25 973.75 874.75
-  980.5 872.25 985.0 871.75 986.25 868.75
+  967.0 941.75 963.75 945.5 968.5 932.0
+  973.25 918.5 974.88 934.11 977.0 941.0
   smooth off
 endline
 
@@ -2570,7 +2555,7 @@ line pit
   smooth off
 endline
 
-line pit
+line pit -reverse on
   1058.0 1270.75
   1057.75 1269.5 1053.5 1269.25 1053.5 1267.0
   1053.5 1264.75 1053.0 1261.25 1053.0 1261.25
@@ -2654,7 +2639,7 @@ line wall
   smooth off
 endline
 
-point 1068.25 1183.75 air-draught -orientation 170.2 -subtype summer
+point 1068.25 1183.75 air-draught -orientation 170.2 -scale l -subtype summer
 
 line wall
   1048.25 1272.25
@@ -2662,7 +2647,23 @@ line wall
   1043.0 1268.5 1041.5 1264.0 1044.5 1264.0
   1047.5 1264.0 1051.25 1266.5 1053.25 1264.5
   1055.25 1262.5 1066.25 1257.0 1066.25 1254.25
-  1066.25 1251.5 1066.0 1250.25 1068.0 1248.75
+endline
+
+line wall
+  1066.25 1254.25
+  1057.5 1253.5
+endline
+
+line pit
+  1062.0 1256.5
+  1062.0 1256.5 1068.5 1251.5 1067.5 1245.5
+endline
+
+point 1047.5 1251.0 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "aval CP12" -attr CA "Courant d'air léger" -text "méandre remontant, courant d'air"
+
+line wall
+  1058.5 1248.5
+  1058.5 1245.75 1066.0 1250.25 1068.0 1248.75
   1070.0 1247.25 1085.5 1239.5 1085.0 1234.75
   1084.5 1230.0 1074.5 1211.25 1074.25 1207.0
   1074.0 1202.75 1075.5 1174.25 1077.25 1168.5

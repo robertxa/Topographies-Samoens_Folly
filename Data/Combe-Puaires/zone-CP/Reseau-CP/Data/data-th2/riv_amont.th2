@@ -436,7 +436,7 @@ point 4495.25 1117.0 rope
 
 point 4459.0 1119.75 height -value [+20 m]
 
-point 4487.0 1135.75 altitude -align right
+point 4480.0 1133.75 altitude -align right
 
 area water
   l102-4478-1132
@@ -465,9 +465,11 @@ line label -id l102-4478-1132 -close on
   smooth off
 endline
 
-point 4485.25 1164.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Affluent Amont" -attr CA "Courant d'air'" -text "C20 à escalader, c.a."
+point 4536.75 1119.75 label -text "<center>Cascade de<br>la Pinaille"
 
-point 4483.25 1146.0 water-flow -orientation 195.0
+point 4485.25 1164.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Affluent Amont" -attr CA "Courant d'air'" -text "Gros méandre à atteindre au dessus de l'arrivée d'eau, c.a."
+
+point 4480.5 1144.0 water-flow -orientation 191.1
 
 line pit
   4464.25 1057.0
@@ -522,14 +524,14 @@ line wall
   4492.0 1060.5 4502.0 1069.25 4494.5 1074.0
   4487.0 1078.75 4496.25 1085.25 4494.25 1091.5
   4492.25 1097.75 4490.25 1105.25 4488.5 1109.0
-  4486.75 1112.75 4482.25 1115.5 4484.0 1120.0
-  4485.75 1124.5 4487.0 1135.75 4487.0 1135.75
+  4486.75 1112.75 4486.41 1115.81 4484.0 1120.0
+  4477.25 1131.75 4480.0 1133.75 4480.0 1133.75
   smooth off
 endline
 
 line wall
-  4475.5 1136.5
-  4475.5 1136.5 4470.25 1122.5 4470.25 1117.25
+  4477.5 1134.25
+  4476.98 1129.04 4470.25 1122.5 4470.25 1117.25
   4470.25 1112.0 4470.75 1105.75 4474.5 1101.25
   4478.25 1096.75 4483.0 1093.5 4478.25 1088.75
   4473.5 1084.0 4463.0 1077.0 4460.5 1073.75

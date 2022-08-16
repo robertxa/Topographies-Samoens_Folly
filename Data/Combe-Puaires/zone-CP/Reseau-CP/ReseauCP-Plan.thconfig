@@ -128,6 +128,7 @@ layout my_layout
    symbol-hide line survey
    # les points et le nom des stations topos
    #debug station-names
+   #debug scrap-names
   
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -174,20 +175,20 @@ endlayout
 # Select maps
 	select MP-ReseauCP-total@ReseauCP
 	
-export map -o Outputs/2D/ReseauCP-plan2020.pdf -layout my_layout
-#export map -o Outputs/2D/ReseauCP-plan2020-Continuations.pdf -layout my_layout
+export map -o Outputs/2D/ReseauCP-plan2022.pdf -layout my_layout
+#export map -o Outputs/2D/ReseauCP-plan2022-Continuations.pdf -layout my_layout
   
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/3D/ReseauCP2020 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/3D/ReseauCP2022 -layout my_layout
  
 # Export du fichier 3d pour Loch
-export model -o Outputs/3D/reseauCP-2020.lox
+export model -o Outputs/3D/reseauCP-2022.lox
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2020.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2022.kml -layout my_layout
  
 # Export des listes:
-export database -o Outputs/Lists/databaseCP-2020.sql
-export continuation-list -o Outputs/Lists/ContinuationsCPPlan-2020.html
-export survey-list -location on -o Outputs/Lists/SurveysCP2020.html
-export cave-list -location on -o Outputs/Lists/CavesCP2020.html
+export database -o Outputs/Lists/databaseCP-2022.sql
+export continuation-list -o Outputs/Lists/ContinuationsCPPlan-2022.html
+export survey-list -location on -o Outputs/Lists/SurveysCP2022.html
+export cave-list -location on -o Outputs/Lists/CavesCP2022.html

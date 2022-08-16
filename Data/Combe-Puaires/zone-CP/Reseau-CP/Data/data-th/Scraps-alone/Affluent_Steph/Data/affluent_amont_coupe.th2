@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -206.73399999999998 -324.856 600.4474 403.5852
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -206.73899999999998 -324.856 643.5 524.5
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {78.74300000000002 1 1.0} {196.847 Xa-2014-0} CP16-affluent_amont_coupe.xvi 0 {}
 
 
@@ -40,10 +40,28 @@ point 84.5 184.0 blocks -scale xs
 point 90.5 183.5 blocks -scale xs
 
 line wall
-  318.0 247.5
-  318.0 247.5 283.0 248.5 270.5 247.5
-  258.0 246.5 247.5 247.0 231.5 246.0
-  215.5 245.0 212.5 245.0 204.0 245.0
+  334.0 394.5
+  334.0 394.5 271.5 390.5 260.5 387.5
+  249.5 384.5 231.5 364.5 223.5 337.0
+  215.5 309.5 204.0 245.0 204.0 245.0
+  smooth off
+endline
+
+line wall
+  311.0 183.5
+  311.0 183.5 312.75 185.75 309.5 186.75
+  306.25 187.75 292.5 186.25 288.5 188.25
+  284.5 190.25 289.75 204.5 283.0 205.5
+  276.25 206.5 266.5 209.75 262.75 209.75
+  259.0 209.75 250.75 209.25 250.5 215.75
+  250.25 222.25 263.25 220.25 269.0 220.75
+  274.75 221.25 291.75 222.5 301.0 223.25
+  310.25 224.0 325.25 228.25 325.25 228.25
+  smooth off
+endline
+
+line wall
+  204.0 245.0
   195.5 245.0 187.0 250.0 181.0 246.5
   175.0 243.0 176.0 230.5 174.0 226.5
   172.0 222.5 169.5 222.5 163.5 222.5
@@ -240,7 +258,24 @@ line wall -close on -outline in
   smooth off
 endline
 
-point 334.0 224.0 continuation -attr Cavite "RéseauCP" -attr Reseau "Rivière amont - Affluent" -attr CA "Courant d'air" -attr Code E -text "E20 à faire, grosse galerie au sommet"
+point 425.5 148.5 label -text "<center>escalade de<br>la Pinaille"
+
+line wall -subtype invisible
+  325.25 228.25
+  334.0 394.5
+endline
+
+line rope
+  286.0 185.5
+  246.0 185.0
+  216.5 141.5
+  235.5 108.5
+  235.5 24.0
+endline
+
+point 356.5 185.5 label -text "imp."
+
+point 344.5 321.0 continuation -attr Cavite "RéseauCP" -attr Reseau "Rivière amont - Affluent" -attr CA "Courant d'air" -attr Code E -text "E15 puis traversée à faire, gros méandre au dessus de l'arrivée d'eau"
 
 point 124.5 -76.5 water-flow -orientation 240.5
 
@@ -275,10 +310,10 @@ line water-flow
 endline
 
 line water-flow
-  311.5 188.0
-  311.5 188.0 293.0 185.0 287.5 183.0
-  282.0 181.0 278.0 182.5 277.5 176.5
-  277.0 170.5 275.5 126.0 276.0 106.0
+  310.0 182.25
+  310.0 182.25 293.25 182.5 287.75 180.5
+  282.25 178.5 277.75 180.0 277.25 174.0
+  276.75 168.0 275.5 126.0 276.0 106.0
   276.5 86.0 276.5 70.0 276.5 61.0
   276.5 52.0 276.5 44.5 276.5 37.5
   276.5 30.5 277.0 22.0 275.5 19.0
@@ -287,16 +322,13 @@ line water-flow
 endline
 
 line wall -subtype invisible
-  315.0 183.5
-  318.0 247.5
-endline
-
-line wall -subtype invisible
   10.5 181.0
   5.0 -121.0
 endline
 
-point 315.0 183.5 altitude -align right
+point 305.843 179.537 station -name Xa-2022-01@affluent_Steph
+
+point 307.0 177.5 altitude -align bottom-right
 
 line wall -id l18-258-2
   161.5 -57.0
@@ -314,8 +346,8 @@ line wall -id l18-258-2
   284.5 66.0 284.5 98.5 284.5 111.0
   284.5 123.5 282.0 151.5 282.0 159.0
   282.0 166.5 276.5 174.5 283.0 177.5
-  289.5 180.5 294.5 179.5 300.5 181.5
-  306.5 183.5 315.0 183.5 315.0 183.5
+  289.5 180.5 301.0 175.5 307.0 177.5
+  313.0 179.5 310.75 181.0 310.75 181.0
   smooth off
 endline
 

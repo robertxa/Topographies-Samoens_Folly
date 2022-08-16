@@ -108,11 +108,11 @@ endlayout
 	#select MC-Rivamont@ReseauCP 
 	#select MC-Billy-tot@ReseauCP
 	
-export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2020.pdf
-#export map -projection extended -layout my_layout-coupe-continuations -o Outputs/2D/ReseauCP-coupe2020-Continuations.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2022.pdf
+#export map -projection extended -layout my_layout-coupe-continuations -o Outputs/2D/ReseauCP-coupe2022-Continuations.pdf
  
 # Export du fichier 3d pour Loch
-export model -o Outputs/3D/reseauCP-2020.lox
+export model -o Outputs/3D/reseauCP-2022.lox
    
 # Export des listes:
-export continuation-list -o Outputs/Lists/ContinuationsCPCoupe-2020.html
+export continuation-list -o Outputs/Lists/ContinuationsCPCoupe-2022.html

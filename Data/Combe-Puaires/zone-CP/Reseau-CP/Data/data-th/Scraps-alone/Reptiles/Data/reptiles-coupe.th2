@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 3277.608 1151.6226000000001
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -131.0 -131.0 3277.608 1151.6216
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {2903.18 1 1.0} {314.95599999999996 1.28} reptiles-coupe.xvi 0 {}
 
 
@@ -123,7 +123,7 @@ line border
   smooth off
 endline
 
-point 1804.5 682.0 air-draught -orientation 260.9 -subtype summer
+point 1804.5 682.0 air-draught -orientation 260.9 -scale l -subtype summer
 
 point 1920.5 717.0 air-draught -orientation 52.3 -subtype summer
 
@@ -141,7 +141,7 @@ point 2157.0 716.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Rese
 
 point 1945.5 707.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA "Courant d'air" -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
 
-point 1639.0 754.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Puits remonant"
+point 1639.0 754.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Puits remonant, gros courant d'air aspirant, est-ce la suite vers l'aval ?"
 
 point 412.0 785.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Départ en hauteur à voir ?"
 
@@ -262,9 +262,17 @@ line wall
   2148.0 663.5 2156.5 669.0 2164.0 664.5
   2171.5 660.0 2174.0 662.0 2186.0 662.5
   2198.0 663.0 2207.5 666.0 2216.5 662.5
+endline
+
+line wall -subtype clay
+  2216.5 662.5
   2225.5 659.0 2231.0 650.0 2242.0 640.5
   2253.0 631.0 2275.0 620.5 2286.0 620.5
   2297.0 620.5 2364.0 638.0 2376.5 638.5
+endline
+
+line wall
+  2376.5 638.5
   2389.0 639.0 2396.0 632.0 2409.5 625.5
   2423.0 619.0 2423.0 620.5 2424.0 610.5
   2425.0 600.5 2438.5 583.0 2450.0 581.5
@@ -416,6 +424,12 @@ point 2481.6 582.126 station -name 6.8@reptiles
 point 2555.99 535.6659999999999 station -name 6.7@reptiles
 
 point 2630.94 477.08599999999996 station -name 6.6@reptiles
+
+point 2050.0 671.0 air-draught -orientation 266.3 -scale l -subtype summer
+
+point 1478.0 661.0 air-draught -orientation 294.3 -scale xs -subtype summer
+
+point 1614.0 763.0 air-draught -orientation 0.0 -subtype summer
 
 point 2704.02 425.90599999999995 station -name 6.5@reptiles
 

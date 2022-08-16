@@ -50,8 +50,30 @@ extend right
 extend left
 	Xa-2014-10 Xa-2014-13	6.87	208	-24	0.5	2.5	3	7 # sommet de la cascade
 	Xa-2014-13 Xa-2014-14	10.40	238	-47	5	5	20	1.5 # cairn de jonction dans la salle sous la cascade
+  flags approximate
 	Xa-2014-14 Xa-2014-15	14	120	32	2	3	4	1	# Cloche qui a permis l'escalade de la première cascade
+  flags not approximate
 
+endcenterline
+
+centerline -title "Affluent Amont Xa-2014-0_Xa-2014-0bis Xa-2014-14_Xa-2014-15"
+  
+   date 2022.08.14
+#   declination 0.0000  degrees
+  team "Xavier Robert"
+  team "Théo Prévot"
+  explo-date 2022.08.14
+  explo-team "Xavier Robert"
+  explo-team "Théo Prévot"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+extend right
+  flags approximate
+	Xa-2014-12 Xa-2022-01	5	341	0	0.5	0.5	0.1	0.1	# visée fictive ; arrivée actif, impénétrable
+  flags not approximate
 endcenterline
 
 endsurvey	

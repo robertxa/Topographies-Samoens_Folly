@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 2332.7256 2253.9854
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -131.0 -131.0 2332.7256 2253.9854
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {1968.5100000000002 1 1.0} {1921.26 CP19b} CP19b-coupe.xvi 0 {}
 
 
@@ -276,25 +276,18 @@ endscrap
 scrap SC-CP19b-2 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
 
 line wall
-  464.0 641.5
-  464.0 641.5 469.0 627.0 477.5 607.0
-  486.0 587.0 514.0 569.5 524.0 540.5
-  534.0 511.5 544.5 407.0 550.5 381.0
+  547.0 698.0
+  547.0 698.0 539.5 639.0 548.0 619.0
+  556.5 599.0 545.0 572.0 555.0 543.0
+  565.0 514.0 544.5 407.0 550.5 381.0
   556.5 355.0 595.0 302.5 608.5 295.0
   622.0 287.5 630.0 296.5 632.0 280.0
   smooth off
 endline
 
 line wall
-  360.5 710.0
-  360.5 710.0 430.0 701.0 443.0 690.5
-  456.0 680.0 464.0 653.0 464.0 641.5
-  smooth off
-endline
-
-line wall
-  524.0 783.5
-  364.5 785.0
+  586.0 783.0
+  547.0 698.0
 endline
 
 point 747.5 1146.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Galerie à Atteindre et à explorer"
@@ -329,7 +322,7 @@ line wall
   822.0 817.5 757.0 801.0 743.0 795.0
   729.0 789.0 710.5 792.5 695.0 791.5
   679.5 790.5 650.5 783.0 632.0 782.0
-  613.5 781.0 527.5 783.0 524.0 783.5
+  613.5 781.0 589.5 782.5 586.0 783.0
   smooth off
 endline
 
@@ -477,22 +470,19 @@ line border
 endline
 
 line border
-  542.0 540.0
-  542.0 540.0 566.5 537.0 581.5 535.5
+  581.5 535.5
   596.5 534.0 640.5 532.5 651.5 532.5
   smooth off
 endline
 
 line border
-  487.0 616.0
-  487.0 616.0 527.5 602.5 545.5 602.5
+  545.5 602.5
   563.5 602.5 617.0 599.0 617.0 599.0
   smooth off
 endline
 
 line border
-  487.5 708.5
-  487.5 708.5 533.0 698.0 554.0 696.0
+  554.0 696.0
   575.0 694.0 619.0 698.5 635.5 699.0
   smooth off
 endline
@@ -514,8 +504,6 @@ line wall -close on -outline in
   680.5 753.5 690.5 764.5 690.5 764.5
   smooth off
 endline
-
-point 473.5 735.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Départ dans le puits ?"
 
 point 1393.5 1469.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Départ dans le puits ?"
 
@@ -555,8 +543,6 @@ point 950.5 766.0 label -text "R3"
 
 point 962.5 810.5 label -text "R3"
 
-point 348.0 752.0 label -text "<center>méandre"
-
 point 508.0 863.5 label -text "<center>méandre des<br>Sabres"
 
 point 679.0 904.5 label -text "<center>ressauts de<br>la Mort"
@@ -575,9 +561,13 @@ point 1093.0 860.0 label -text "<center>puits des<br>Forceps"
 
 point 1068.5 705.0 label -text "<center>puits du<br>Disque"
 
-point 341.5 630.5 label -text "<center>puits de<br>l'Echo"
+point 387.5 633.5 label -text "<center>puits de<br>l'Echo"
 
-point 342.5 482.5 label -text "<center>puits de<br>la Résonnance"
+point 745.0 667.0 label -text "etr."
+
+point 1005.0 900.0 label -text "etr."
+
+point 386.5 521.5 label -text "<center>puits de<br>la Résonnance"
 
 line wall
   638.5 241.0
@@ -641,9 +631,9 @@ point 850.5 1050.5 height -value [-25 m]
 
 point 790.0 897.5 height -value [-18 m]
 
-point 576.5 738.0 height -value [-15 m]
+point 612.5 739.0 height -value [-15 m]
 
-point 547.0 637.5 height -value [-9 m]
+point 582.0 639.5 height -value [-9 m]
 
 point 470.0 451.5 height -value [-42 m]
 

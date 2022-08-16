@@ -30,18 +30,53 @@ survey mirolda -title "Entrée du massif du Criou"
     #fix FLT7b 6.783152 46.081747	1929  #ALT IGN
     #station FLT7b "FLT7b" entrance air-draught continuation #explored ????m
 
-    #cs ???? (Lambert, mais lequel?)
-    #fix Morts_Vivants 943.740 129.900	1930  #ALT IGN
-    #station Morts_Vivants "G. des Morts Vivants" entrance air-draught continuation #explored ????m
-    #fix Daniel 943.50 129.830	2030  #ALT IGN
-    #station Daniel "G. Daniel" entrance air-draught continuation explored 350m
-
     #fix F126 6.75026 46.09791	833  #ALT IGN
     #station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
     #fix Falaise 6.75026 46.09791	833  #ALT IGN
     #station Falaise "Entrée Falaise" entrance air-draught continuation #explored ????m
-    
 
+
+    #cs ???? (Lambert, mais lequel?)
+    
+    #fix Morts_Vivants 943.740 129.900	1930  #ALT IGN
+    #station Morts_Vivants "G. des Morts Vivants - FLT5" entrance air-draught continuation #explored ????m
+    
+    #fix Daniel 943.50 129.830	2030  #ALT IGN
+    #Gouffre Daniel		943.95	129.83	2030
+    #station Daniel "G. Daniel" entrance air-draught continuation explored 350m
+
+    #fix Babet	GU841	944.12	130.32	2060
+    #station Babet "G. Babet (GU841)" entrance air-draught
+
+    #fix EU841	944.1	130.36	2080
+    #station EU841 "G. du Petit Vieux (EU841)" entrance air-draught
+    
+    #fix EU842	943.93	130.3	2015
+    #station EU842 "G. de la Petite Vieille (EU842)" entrance air-draught
+    
+    #fix GU847	844.04	130.17	2010
+    #station GU847 "G. du Nouveau Né (GU847)" entrance air-draught
+    
+    #fix Innomable	944.11	130.67	2200
+    #station Innomable "G. Innomable" entrance air-draught
+    
+    #fix Frigo	944.2	130.55	2164
+    #station Frigo "G. du Frigo (EU836)" entrance air-draught
+    
+    #fix U835	943.7491	129.922	1946
+    #station U835 "G. du Cul-Tané (U835)" entrance air-draught
+	
+    #fix CE10	943.96	130.37	2070
+    #station CE10 "CE10" entrance air-draught
+    
+    #fix U6	943.95	130.67	2140
+    #station U6 "G. de l'Ecorchoir (U6)" entrance air-draught
+	
+    #fix CF2	944.12	130.2	2100
+    #station CF2 "CF2" entrance air-draught
+    
+    #fix Jockers		944.51	2131.98	2339
+    #station Jockers "G. des Jockers" entrance air-draught
   
 endcenterline
 

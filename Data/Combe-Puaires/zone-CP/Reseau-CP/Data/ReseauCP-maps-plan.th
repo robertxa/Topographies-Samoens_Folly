@@ -106,15 +106,17 @@ map MP-CP16 -title "CP16"
 endmap
 
 map MP-CP14 -title "CP14"
-	SP-CP14-1 #@ReseauCP
-	break
+	#SP-CP14-1 #@ReseauCP
+	#break
 	SP-CP14-2 #@ReseauCP
 	break
 	SP-CP14-3 #@ReseauCP
 	break
-	SP-CP14_2008-1 #@ReseauCP
+	SP-CP14_2008-1 #@ReseauCP	# Réseau des 2xxpats
 	break
 	SP-CP14_2011-2 #@ReseauCP
+	break
+	SP-CP14-1 #@ReseauCP
 endmap
 
 map MP-Billy -title "Méandre Billy"
