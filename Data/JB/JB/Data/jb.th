@@ -25,21 +25,28 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 
 
-	input Data-th/Lavoir/Data/Lavoir.th
+	#input Data-th/Lavoir/Data/Lavoir.th
+	input Data-th/Lavoir/Lavoir-tot.th
 		equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
     	equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
-	input Data-th/Lavoir/Data/FileOu.th
-		equate FD-2012-9@Lavoir 2017-FD-0@fileou
+		#equate Da.81@jb-amonts2.Lavoir	Da.81@jb-amonts2
+	#input Data-th/Lavoir/Data/FileOu.th
+	#	equate FD-2012-9@Lavoir 2017-FD-0@fileou
 	
-	input Data-th/aval-aiguilles/Data/Aval-aiguilles2.th
-		equate  2012c-xa-29@aval-aiguilles2 De.44@jb-amonts2
-	input Data-th/aval-aiguilles/Data/Aval-aiguilles.th
-		equate  Xa-2013-11@aval-aiguilles De.23@jb-amonts2
-    	equate  2012c-xa-27@aval-aiguilles De.8@jb-amonts2
-    	equate  2012c-xa-0double@aval-aiguilles Da.197@jb-amonts2
+	# L'aspiro-souffle
+	#input Data-th/aval-aiguilles/Data/Aval-aiguilles2.th
+	#	equate  2012c-xa-29@aval-aiguilles2 De.44@jb-amonts2
+	#input Data-th/AspiroSouffle/Data/Aval-aiguilles2.th
+	input Data-th/AspiroSouffle/AspiroSouffle-tot.th
+		equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
+
+	# L'aval des Aiguilles
+	#input Data-th/aval-aiguilles/Data/Aval-aiguilles.th
+	input Data-th/aval-aiguilles/AvalAiguilles-tot.th
+		equate  Xa-2013-11@aval-aiguilles.AvalAiguilles De.23@jb-amonts2
+    	equate  2012c-xa-27@aval-aiguilles.AvalAiguilles De.8@jb-amonts2
+    	equate  2012c-xa-0double@aval-aiguilles.AvalAiguilles Da.197@jb-amonts2
 	
-
-
 	input Data-th/Shunt-Branlots/shuntBranlots-tot.th
 		equate  2013-xac-14@shunt-branlots.ShuntBranlots Fb.29@jb-amonts2
     	equate  2013-xac-0@shunt-branlots.ShuntBranlots Fd.14@jb-amonts2
@@ -173,24 +180,25 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-Gadoue SP-champs-elysees2
 ## Le B19       
 	input Drawing-th2/Plan/B19.th2
-		join SP-base-racc SP-Excentriques1 
-		join SP-Raccourci SP-rac1
-		join SP-Racc5 SP-gadouejonction
-		join SP-B19 SP-Racc5
-		join SP-gadouejonction SP-Racc5
+		join SP-base-racc@Lavoir SP-Excentriques1 
+		join SP-Raccourci SP-rac1@Lavoir
+		join SP-Racc5@Lavoir SP-gadouejonction
+		join SP-B19 SP-Racc5@Lavoir
+		join SP-gadouejonction SP-Racc5@Lavoir
 ## Le Lavoir
-	input Drawing-th2/Plan/Lavoir.th2
-	input Drawing-th2/Plan/Lavoir-boeuf.th2
-	input Drawing-th2/Plan/Arva.th2
-	input Drawing-th2/Plan/Brownies.th2
-	input Drawing-th2/Plan/fileOu.th2
-	input Drawing-th2/Plan/fileOu2019.th2
-		join SP-brownies1 SP-Arva2 
-		join SP-Lavoir-new1 SP-Lavoir7
-		join SP-fileou2019-1 SP-filou2
-		join SP-lavoir-sec SP-Boeuf2
-		join SP-base-racc SP-Racc5
-		join SP-Lavoir3old SP-B19
+	#input Drawing-th2/Plan/Lavoir.th2
+	#input Drawing-th2/Plan/Lavoir-boeuf.th2
+	#input Drawing-th2/Plan/Arva.th2
+	#input Drawing-th2/Plan/Brownies.th2
+	#input Drawing-th2/Plan/fileOu.th2
+	#input Drawing-th2/Plan/fileOu2019.th2
+	#	join SP-brownies1 SP-Arva2 
+	#	join SP-Lavoir-new1 SP-Lavoir7
+	#	join SP-fileou2019-1 SP-filou2
+	#	join SP-lavoir-sec SP-Boeuf2
+	#	join SP-base-racc SP-Racc5
+	#input Drawing-th2/Plan/Lavoir3old.th2
+		#join SP-Lavoir3old SP-B19	# A MODIFIER, IL FAUT LE REINTEGRER
 		##join SP-Lavoir3old SP-gadouejonction
 
 ## La zone des Aiguilles   
@@ -202,15 +210,15 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-V11 SP-Aiguilles
 		join SP-oublies SP-Ascension -count 2
 		join SP-oublies SP-audessusbulle
-		##join SP-scrap146 SP-Ascension
-		join SP-scrap146b SP-Ascension -count 2
+		##join SP-scrap146@AvalAiguilles SP-Ascension
+		join SP-scrap146b@AvalAiguilles SP-Ascension -count 2
 ## Le réseau des Aiguilles
 	input Drawing-th2/Plan/aiguilles.th2
 # Réseau du Puits que l'on traverse
 	#input Drawing-th2/Plan/puitstraverse.th2
 	join SP-traverse2@PuitsTraverse SP-audessusbulle
-	input Drawing-th2/Plan/aval-aiguilles2.th2
-	input Drawing-th2/Plan/aval-aiguilles.th2
+	#input Drawing-th2/Plan/aval-aiguilles2.th2
+	#input Drawing-th2/Plan/aval-aiguilles.th2
 
 # Réseau du Couteau Grenoblois
 #input Drawing-th2/Plan/CouteauG.th2
@@ -377,18 +385,18 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/B19senecaliens-coupe.th2
 		join SC-B19c1 SC-B19c2
 ## Le Lavoir
-	input Drawing-th2/Coupe/lavoirsommet-coupe.th2
-	input Drawing-th2/Coupe/lavoir-coupe2015.th2
-		join SC-lavoirc1 SC-lavoirc2 
-	input Drawing-th2/Coupe/brownies-coupe.th2
-		join SC-lavoirc2 SC-browniesc1
-	input Drawing-th2/Coupe/fileOu-coupe2019.th2
-		join SC-fileouc1 SC-fileOu2019-1
-	input Drawing-th2/Coupe/FileOu-coupe.th2
-		join SC-fileouc1 SC-lavoirc5
+	#input Drawing-th2/Coupe/lavoirsommet-coupe.th2
+	#input Drawing-th2/Coupe/lavoir-coupe2015.th2
+	#	join SC-lavoirc1 SC-lavoirc2 
+	#input Drawing-th2/Coupe/brownies-coupe.th2
+	#	join SC-lavoirc2 SC-browniesc1
+	#input Drawing-th2/Coupe/fileOu-coupe2019.th2
+	#	join SC-fileouc1 SC-fileOu2019-1
+	#input Drawing-th2/Coupe/FileOu-coupe.th2
+	#	join SC-fileouc1 SC-lavoirc5
 ## Le V11 et les Aiguilles
 	input Drawing-th2/Coupe/V11-coupe.th2
-		join SC-aiguillesc1 SC-lavoirc7
+		join SC-aiguillesc1 SC-lavoirc7@Lavoir
 		##join SC-excenc2 SC-excenLavoir???
 
 # Réseau du Couteau Grenoblois

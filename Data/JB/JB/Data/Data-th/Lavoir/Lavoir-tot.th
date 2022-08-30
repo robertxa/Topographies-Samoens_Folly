@@ -4,18 +4,44 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-input Data/Lavoir.th
-input Data/fileOu.th
+survey Lavoir -title "Le Lavoir"
+    # Données topo
+    #input Data/jb-amonts2.th
+    input Data/Lavoir.th
+    #    equate xxx@Lavoir xxx@jb-amonts2
+    input Data/fileOu.th
+        equate FD-2012-9@Lavoir 2017-FD-0@fileou
 
-equate FD-2012-9@Lavoir 2017-FD-0@fileou
+    # Données de dessin en plan
+    input Data/Lavoir.th2
+    input Data/Lavoir-boeuf.th2
+    input Data/Arva.th2
+    input Data/Brownies.th2
+        join SP-brownies1 SP-Arva2 
+    input Data/fileOu.th2
+    input Data/fileOu2019.th2
+        join SP-fileou2019-1 SP-filou2
+        #join fileou2019-SP1 fileou2    # OLD --> A changer...
+        join SP-Lavoir-new1 SP-Lavoir7
+		join SP-lavoir-sec SP-Boeuf2
+		join SP-base-racc SP-Racc5
+		#join SP-Lavoir3old SP-B19
+    
+    # Données de dessin en coupe
+    input Data/lavoirsommet-coupe.th2
+	input Data/lavoir-coupe2015.th2
+		join SC-lavoirc1 SC-lavoirc2 
+	input Data/brownies-coupe.th2
+		join SC-lavoirc2 SC-browniesc1
+	input Data/fileOu-coupe2019.th2
+		join SC-fileouc1 SC-fileOu2019-1
+	input Data/FileOu-coupe.th2
+		join SC-fileouc1 SC-lavoirc5
 
-input Data/Lavoir.th2
-input Data/Lavoir-boeuf.th2
-input Data/Arva.th2
-input Data/Brownies.th2
-input Data/fileOu.th2
-input Data/fileOu2019.th2
-join fileou2019-SP1 fileou2
+    # Ajout des Maps
+    input Lavoir-maps.th
+
+endsurvey
 
 
 

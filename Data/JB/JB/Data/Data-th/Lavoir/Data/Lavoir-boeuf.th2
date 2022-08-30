@@ -7,7 +7,7 @@ encoding  utf-8
 
 
 
-scrap SP-Lavoir1 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Lavoir1 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 point 129.0 142.75 label -text "Imp."
 
@@ -134,7 +134,7 @@ endscrap
 
 
 
-scrap SP-Lavoir-FD -projection plan -author 2012 "Xavier Robert" -author 2012 "Frédéric Delègue" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Lavoir-FD -projection plan -station-names "" "" -author 2012 "Xavier Robert" -author 2012 "Frédéric Delègue" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 line wall
   169.75 305.25
@@ -271,7 +271,7 @@ endscrap
 
 
 
-scrap SP-Lavoir2 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Lavoir2 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 point 132.91400000000002 119.03299999999999 station -name 2012b-xa-29b@Lavoir
 
@@ -289,7 +289,7 @@ point 112.5 97.0 water-flow -orientation 27.0
 
 point 100.0 121.25 water-flow -orientation 309.8
 
-point 139.5 136.75 continuation
+point 139.5 136.75 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
 point 98.75 79.0 continuation
 
@@ -412,7 +412,7 @@ endscrap
 
 
 
-scrap SP-Lavoir3 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Lavoir3 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 point 177.324 209.593 station -name 2012b-xa-39@Lavoir
 
@@ -495,9 +495,9 @@ endline
 
 point 162.25 188.25 blocks -scale xs
 
-point 139.0 176.5 continuation
+point 139.0 176.5 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
-point 154.0 209.0 continuation
+point 154.0 209.0 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
 line wall
   142.5 207.5
@@ -530,7 +530,7 @@ endscrap
 
 
 
-scrap SP-Lavoir5 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Lavoir5 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 line wall
   136.5 243.5
@@ -569,7 +569,7 @@ line contour
   smooth off
 endline
 
-point 161.25 259.75 continuation
+point 161.25 259.75 continuation -attr Code E -attr Cavite JB -attr reseau "Lavoir - Boeufs" -text "Départ à voir en hauteur"
 
 point 183.0 240.0 traverse
 
@@ -621,7 +621,7 @@ endscrap
 
 
 
-scrap SP-Boeuf1 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Boeuf1 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 line pit -reverse on
   136.25 261.0
@@ -738,7 +738,7 @@ endscrap
 
 
 
-scrap SP-Boeuf2 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Boeuf2 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 line pit
   123.75 175.5
@@ -861,7 +861,7 @@ endscrap
 
 
 
-scrap SP-Lavoir7 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+scrap SP-Lavoir7 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
 point 167.5 224.75 water-flow -orientation 247.0
 
@@ -930,7 +930,7 @@ point 146.244 215.783 station -name 2012-SL15@Lavoir
 
 endscrap
 
-#scrap SP-Lavoir8 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+#scrap SP-Lavoir8 -projection plan -station-names "" "" -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 ## Commenté par Xav le 10/02/2013 car la topo ext fausse, et est remplacé par la nouvelle topo
 #point 200.75 187.5 water-flow -orientation 178.6
 
@@ -989,6 +989,3 @@ endscrap
  join SP-base-racc SP-Racc5
  join SP-Lavoir-new1 SP-Lavoir7
  join SP-lavoir-sec SP-Boeuf2
-
-
-

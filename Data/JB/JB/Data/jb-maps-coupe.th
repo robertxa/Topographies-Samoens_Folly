@@ -70,33 +70,33 @@ map MC-B19 -title "B19"
 	SC-B19c1
 endmap
 
-map MC-lavoir-principal -title "Réseau du Lavoir"
-	SC-browniesc1	# Erreur sur le scrap ???
-	break
-	SC-lavoirc3
-	break
-	SC-lavoirc1
-	break
-	SC-lavoirc2
-	break
-	SC-lavoirc4
-	#break
-	#SC-lavoirc5
-	break
-	SC-lavoirc6
-	break
-	SC-lavoirc7	# Problème de déformation du scrap
-	break
-	SC-lavoirc8
-endmap
+# map MC-lavoir-principal -title "Réseau du Lavoir"
+# 	SC-browniesc1	# Erreur sur le scrap ???
+# 	break
+# 	SC-lavoirc3
+# 	break
+# 	SC-lavoirc1
+# 	break
+# 	SC-lavoirc2
+# 	break
+# 	SC-lavoirc4
+# 	#break
+# 	#SC-lavoirc5
+# 	break
+# 	SC-lavoirc6
+# 	break
+# 	SC-lavoirc7	# Problème de déformation du scrap
+# 	break
+# 	SC-lavoirc8
+# endmap
 
-map MC-Filou -title "Réseau Qui File Ou"
-	SC-lavoirc5
-	break
-	SC-fileouc1
-	break
-	SC-fileOu2019-1
-endmap
+# map MC-Filou -title "Réseau Qui File Ou"
+# 	SC-lavoirc5
+# 	break
+# 	SC-fileouc1
+# 	break
+# 	SC-fileOu2019-1
+# endmap
 
 map MC-V11 -title "V11"
 	SC-V11c1
@@ -302,9 +302,9 @@ map MC-B22-B21 -title "B21 - B22"
 endmap
 
 map MC-lavoir -title "Réseau du Lavoir"
-	MC-lavoir-principal
+	MC-lavoir-principal@Lavoir
 	break
-	MC-Filou
+	MC-Filou@Lavoir
 endmap
 
 map MC-B19-V11 -title "Réseaux du B19 et du V11"

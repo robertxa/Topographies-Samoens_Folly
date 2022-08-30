@@ -5,11 +5,12 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
- source Data/Aval-aiguilles.th
- source Data/aval-aiguilles.th2
+#source Data/Aval-aiguilles.th
+#source Data/aval-aiguilles.th2
+source AvalAiguilles-tot.th
 
 # Add config file
-input ../../../../../../../config.thc 
+input ../../../../../../config.thc 
   
 layout xviexport
    scale 1 1000
@@ -33,7 +34,7 @@ layout my_layout
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  map-comment "Aval Aiguilles plan, Projection UTM32, Samoëns, 74, France"
+  map-comment "Gouffre Jean-Bernard, plan, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
@@ -80,7 +81,7 @@ layout my_layout-coupe
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  map-comment "Aval Aiguilles, coupe développée, Samoëns, 74, France"
+  map-comment "Gouffre Jean-Bernard, coupe développée, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all

@@ -4,6 +4,11 @@ A FAIRE sur la base de données topographiques de Samoëns
 		Revoir l'indexation des Maps pour les mettre directement dans les scraps alone --> faciliter le travail
 		Debug Coupe développée
 
+- JB : Vérifier l'intégration du Lavoir, il y a visiblement un problème avec l'arrivée du B19 (2022-08-30, après découpag LAvoir, AspiroSouffle et AvalAiguilles)
+		--> Manque 1 scrap, et aussi 27331 - 27076 = 255 m de topo --> A voir si c'est parce qu'on a intégré la vieille topo du Lavoir ? Bizarre
+
+- JB : Retravailler la coupe développée, elle contient de grosses erreurs (Lavoir, Branlots, Echo)
+
 - Corriger les altitudes des entrées avec le MNT IGN :
 		zones A-JB-V, A-A21, AV, B, BA, CH, CP (revoir pour Cartouche au cas par cas) D, DR, E, F, L, LP, PV, T --> OK total (data + cartouche)
 		zones C, LS --> A faire (Data + Cartouche)

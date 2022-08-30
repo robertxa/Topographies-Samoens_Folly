@@ -396,7 +396,7 @@ def PlotThStats(inputfile, graphfolder = "Graphs/",
 			# Update the progress-bar
 			bar()
 
-		# Extrat summary table
+		# Extract summary table
 		print('\tExtract summary table')
 		ExtratSummary(datadb, graphpath, rangeyear = [1959, datetime.date.today().year, 1])
 		# Update the progress-bar
@@ -410,10 +410,11 @@ def PlotThStats(inputfile, graphfolder = "Graphs/",
 if __name__ == u'__main__':	
 	###################################################
 	# initiate variables
-	inputfile = 'TestJB.sql'
+	#inputfile = 'TestJB.sql'
 	#inputfile = 'TestCP7.sql'
+	inputfile = 'databaseLDB.sql'
 
-	graphfolder = "Graphs/" 
+	graphfolder = "Graphs-LDB/" 
 	#graphprefix = None
 	#bins = 144
 	#log = "log"
@@ -422,8 +423,8 @@ if __name__ == u'__main__':
 	#rangeyear = None
 
 	#systems = ['SynclinalJB.MassifFolly', 'SystemeCP.MassifFolly', 'SystemeA21.MassifFolly', 'SystemeAV.MassifFolly']
-	systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV']
-	#systems = None
+	#systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV']
+	systems = None
 
 	###################################################
 	# Run the plots

@@ -5,11 +5,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
- source Aval-aiguilles2.th
- source aval-aiguilles2.th2
+ #source Aval-aiguilles2.th
+ #source aval-aiguilles2.th2
+ 
+ source AspiroSouffle-tot.th
 
 # Add config file
-input ../../../../../../../config.thc 
+input ../../../../../../config.thc 
   
 layout xviexport
    scale 1 1000
@@ -34,7 +36,7 @@ layout my_layout
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  map-comment "L'Aspiro-souffle plan, Projection UTM32, Samoëns, 74, France"
+  map-comment "L'Aspiro-souffle, plan, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
@@ -45,6 +47,7 @@ layout my_layout
   layers on
   symbol-hide line survey
   #debug station-names
+  #debug scrap-names
 
  # grid-size 100 100 100 m
    grid off
@@ -74,15 +77,15 @@ layout my_layout-coupe
    doc-title "Aval Aiguilles"
    doc-author "Xavier Robert"
    cs UTM32
-   base-scale 1 1000
-  scale 1 1000
-   scale-bar 100 m
+   base-scale 1 200
+  scale 1 500
+   scale-bar 50 m
 
   #color map-bg 85
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  map-comment "Aval Aiguilles, coupe développée, Samoëns, 74, France"
+  map-comment "L'Aspiro-Souffle, coupe développée, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
@@ -91,8 +94,8 @@ layout my_layout-coupe
   map-header 0 00 nw
   map-header-bg off
   layers on
-	symbol-hide line survey
-  #debug station-names
+	#symbol-hide line survey
+  debug station-names
 
  # grid-size 100 100 100 m
    grid off

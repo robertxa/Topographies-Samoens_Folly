@@ -1,0 +1,74 @@
+encoding utf8
+
+survey jb-amonts2
+
+    centerline -extend left -title "g. du Lavoir Db.0_Db.1 Db.12_Da.81"
+
+   date 1976.03.01
+ #  declination -3.0146 degrees
+
+  #team "G.S. Vulcain"
+  team "Bernard Lips"
+  team "Josiane Lips"
+  team "Pierre Cahingt"
+
+  explo-date 1976.03.05
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+    explo-team "Paul Courbon"
+  explo-date 1977.01.01
+    explo-team "Jean-Luc Thevenin"
+    explo-team "Yves Bally"
+    explo-team "Jean-Pierre Stéphanato"
+  explo-date 1977.11.08
+    explo-team "Benoît/Le Falher"
+    explo-team "Gérard Protat"
+  explo-date 1977.11.08
+    explo-team "Bernard Lips"  
+    explo-team "Benoît/Le Falher"
+
+  explo-date 1979.02.23
+    explo-team "Bernard Lips"  
+    explo-team "Benoît/Le Falher"
+
+  explo-date 1979.02.24
+    explo-team "Pierre Rias"  
+    explo-team "Christian Rigaldie"
+
+  explo-date 1979.02.25
+    explo-team "Bernard Lips"  
+    explo-team "Josiane Lips"
+    explo-team "Benoît/Le Falher"
+
+    explo-date 1979.03.04
+    explo-team "Bernard Lips"  
+    explo-team "Josiane Lips"
+    explo-team "Jean-Philippe Faubert"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Db.0 Db.1    5.2       327.       63.       0.       0.       0.       0.    
+   Db.1 Db.2    4.22       250.       29.       0.       0.       0.       0.    
+   Db.2 Db.3    2.83       317.       23.       0.       0.       0.       0.    
+   Db.3 Db.4    2.5       10.       24.       0.       0.       0.       0.    
+   Db.4 Db.5    6.02       0.       90.       0.       0.       0.       0.    
+   Db.5 Db.6    5.06       238.       8.       0.       0.       0.       0.    
+
+   extend right
+   Db.6 Db.7    2.43       185.       17.       0.       0.       0.       0.    
+   Db.7 Db.8    4.9       310.       52.       0.       0.       0.       0.    
+   Db.8 Db.9    6.47       292.       26.       0.       0.       0.       0.    
+   Db.9 Db.10    2.92       78.       42.       0.       0.       0.       0.    
+   Db.10 Db.11    5.08       9.       36.       0.       0.       0.       0.    
+   Db.11 Db.12    3.87       359.       45.       0.       0.       0.       0.    
+   Db.12 Da.81    6.3       342.      -14.       0.       0.       0.       0.
+
+# Dev = 57.8 m
+
+ endcenterline
+ 
+endsurvey

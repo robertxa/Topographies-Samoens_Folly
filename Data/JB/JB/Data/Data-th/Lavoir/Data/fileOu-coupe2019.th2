@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -167.36700000000002 -128.75 260.5 482.33090000000004
+##XTHERION## xth_me_area_adjust -142.5 -128.75 264.75 482.326
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.36999999999999 1 1.0} {354.326 2017-FD-0} fileOu-coupe-2019.xvi 0 {}
 
@@ -60,18 +60,17 @@ line rope -clip off
   119.25 196.5
   114.0 180.25
   100.5 176.25
-  93.75 156.25
+  91.5 154.5
   80.75 146.75
-  72.5 136.5
-  64.5 126.5
-  63.25 96.0
+  64.0 127.5
+  63.0 96.5
 endline
 
-point 131.25 183.5 label -text "R3"
+point 135.5 184.0 label -text "R3"
 
-point -8.75 64.0 air-draught -orientation 82.7 -subtype summer
+point -13.25 62.25 air-draught -orientation 76.1 -subtype summer
 
-point 15.75 46.0 label -text "etr."
+point 16.5 40.5 label -text "etr."
 
 point 81.25 116.75 height -value [-8 m]
 
@@ -79,7 +78,7 @@ point 18.75 84.5 height -value [-7 m]
 
 point 15.25 63.5 altitude -align bottom
 
-point 8.0 67.0 continuation -attr Code E -text "Etroiture, courant d'air, bruit de rivière (lavoir humide ?)"
+point 8.0 67.0 continuation -attr Code E -text "Etroiture, courant d'air, bruit de rivière (Lavoir Humide ?)"
 
 line wall -subtype presumed
   54.25 67.25

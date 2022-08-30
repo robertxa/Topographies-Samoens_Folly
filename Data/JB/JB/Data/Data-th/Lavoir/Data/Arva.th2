@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -2582.0 1650.0 140.0
+##XTHERION## xth_me_area_adjust -128 -2534.0 1654.0 128
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} SommetLavoirSquelette.gif 0 {}
 
@@ -36,11 +36,6 @@ line wall -close on -reverse on -outline in
   982.5 -2137.5 974.5 -2129.5 973.0 -2127.0
   971.5 -2124.5 965.0 -2112.5 965.0 -2112.5
   smooth off
-endline
-
-line wall -subtype invisible
-  898.0 -2200.5
-  898.0 -2200.5 929.0 -2247.0 960.5 -2248.5
 endline
 
 line wall
@@ -113,8 +108,6 @@ line wall
   1231.0 -2304.0 1225.5 -2305.0 1225.5 -2305.0
   smooth off
 endline
-
-point 960.5 -2248.5 altitude -align top-right
 
 line wall
   902.5 -1599.5
@@ -258,7 +251,7 @@ line label -text "G. de l'Arva"
   smooth off
 endline
 
-point 1249.0 -2449.0 label -text "trémie"
+point 1248.0 -2388.0 label -text "trémie"
 
 point 827.5 -2200.0 label -orientation 59.4 -text "trémie."
 
@@ -296,9 +289,17 @@ point 808.5 -1998.0 air-draught -orientation 128.7 -subtype summer -scale s
 
 point 977.5 -2333.0 air-draught -orientation 332.1 -subtype summer -scale s
 
-point 892.0 -2300.0 continuation
+point 1168.0 -2298.0 continuation -attr Code T -attr Cavite JB -attr Reseau "Lavoir - Arva" -attr CA "Soufflant en été" -text "Trémie à désobstruer, entrée supérieure du Lavoir"
 
-point 1174.0 -2293.0 continuation
+point 892.0 -2300.0 continuation -attr Code T -attr Cavite JB -attr Reseau "Lavoir - Arva" -attr CA "Soufflant en été" -text "Trémie à désobstruer, entrée supérieure du Lavoir"
+
+line wall -subtype invisible
+  898.0 -2200.5
+  898.0 -2200.5 935.0 -2243.0 960.5 -2248.5
+  smooth off
+endline
+
+point 960.5 -2248.5 altitude -align top-right
 
 point 1233.0 -2313.0 breakdown-choke -orientation 67.0
 
@@ -544,20 +545,20 @@ endline
 point 955.5 -1123.0 narrow-end -orientation 218.1
 
 line arrow
-  402.0 -1768.0
-  702.0 -1332.0
+  474.0 -1528.0
+  656.0 -1324.0
 endline
 
-point 355.5 -1801.0 label -text "<center>ressauts <br> de l'Espérance"
+point 365.5 -1589.0 label -text "<center>ressauts <br> de l'Espérance"
 
 line arrow
-  1198.0 -1608.0
+  1016.0 -1386.0
   890.0 -1354.0
 endline
 
-point 1292.0 -1665.0 label -text "<center>puits <br> du LSD"
+point 1076.0 -1405.0 label -text "<center>p. du LSD"
 
-point 938.0 -1338.5 height -value [+34 m]
+point 1016.0 -1304.5 height -value [+34 m]
 
 point 941.5 -1476.0 water-flow -orientation 339.0
 
@@ -565,9 +566,7 @@ point 764.5 -1458.0 water-flow -orientation 92.5
 
 point 752.0 -1380.0 water-flow -orientation 56.2
 
-point 738.5 -1230.0 water-flow -orientation 129.1
-
-point 578.0 -1332.5 air-draught -orientation 92.3 -subtype summer
+point 724.5 -1252.0 water-flow -orientation 99.5
 
 line wall -subtype unsurveyed
   686.0 -1293.5
@@ -578,7 +577,7 @@ endline
 
 line wall -subtype unsurveyed
   740.5 -1273.5
-  700.0 -1244.0
+  687.0 -1269.0
 endline
 
 line pit

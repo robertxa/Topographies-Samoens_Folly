@@ -4,112 +4,186 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map JB-rev
-#		Voltigeurs-amonts
+##########  COUPE  ################
+#map MC-lavoir -title "Réseau du Lavoir"
+#	browniesc1	# Erreur sur le scrap ???
 #	break
-#		voltigeurs
-#		preview below JB-amonts
+#	lavoirc3
+#	break
+#	lavoirc1
+#	break
+#	lavoirc2
+#	break
+#	lavoirc4
+#	#break
+#	#lavoirc5
+#	break
+#	lavoirc6
+#	break
+#	lavoirc7	# Problème de déformation du scrap
+#	break
+#	lavoirc8
 #endmap
 
-##########  COUPE  ################
-map MC-lavoir -title "Réseau du Lavoir"
-	browniesc1	# Erreur sur le scrap ???
+#map MC-Filou -title "Réseau Qui File Ou"
+#	lavoirc5
+#	break
+#	fileouc1
+#	break
+#	fileOu2019-SC1
+#endmap
+
+map MC-lavoir-principal -title "Réseau du Lavoir"
+	SC-browniesc1	# Erreur sur le scrap ???
 	break
-	lavoirc3
+	SC-lavoirc3
 	break
-	lavoirc1
+	SC-lavoirc1
 	break
-	lavoirc2
+	SC-lavoirc2
 	break
-	lavoirc4
+	SC-lavoirc4
 	#break
-	#lavoirc5
+	#SC-lavoirc5
 	break
-	lavoirc6
+	SC-lavoirc6
 	break
-	lavoirc7	# Problème de déformation du scrap
+	SC-lavoirc7	# Problème de déformation du scrap
 	break
-	lavoirc8
+	SC-lavoirc8
 endmap
 
 map MC-Filou -title "Réseau Qui File Ou"
-	lavoirc5
+	SC-lavoirc5
 	break
-	fileouc1
+	SC-fileouc1
 	break
-	fileOu2019-SC1
+	SC-fileOu2019-1
 endmap
 
 ##########  PLAN  ################
-map M-lavoir-haut -title "Réseau du Lavoir"
-	brownies1
+#map M-lavoir-haut -title "Réseau du Lavoir"
+#	brownies1
+#	break
+#	Arva1
+#	break
+#	Arva2
+#	break
+#	Lavoir2
+#	break
+#	Lavoir1
+#	break
+#	Lavoir3
+#endmap
+
+#map M-filou -title "Réseau Qui File ou"
+#	Lavoir5
+#	break	
+#	Lavoir-FD
+#	break
+#	Boeuf1
+#	break
+#	filou1
+#	break
+#	fileou2
+#	break
+#	fileou2019-SP1
+#endmap
+
+#map M-lavoir-bas
+#	Lavoir7
+#	break
+#	Boeuf2  
+#	break
+#	lavoir-sec   
+#	break
+#	Racc3
+#	break
+#	Racc2
+#	break
+#	rac1
+#	break
+#	racc4
+#	break
+#	Racc
+#	break
+#	Racc4
+#	break
+#	Racc5
+#	break
+#	base-racc
+#	break
+#	Lavoir3old
+#endmap
+
+map MP-lavoir-haut -title "Réseau du Lavoir"
+	SP-brownies1
 	break
-	Arva1
+	SP-Arva1
 	break
-	Arva2
+	SP-Arva2
 	break
-	Lavoir2
+	SP-Lavoir2
 	break
-	Lavoir1
+	SP-Lavoir1
 	break
-	Lavoir3
+	SP-Lavoir3
 endmap
 
-map M-filou -title "Réseau Qui File ou"
-	Lavoir5
-	break	
-	Lavoir-FD
+map MP-filou -title "Réseau Qui File Ou"
 	break
-	Boeuf1
+	SP-Lavoir5
 	break
-	filou1
+	SP-Lavoir-FD
 	break
-	fileou2
+	SP-Boeuf1
 	break
-	fileou2019-SP1
+	SP-filou1
+	break
+	SP-filou2
+	break
+	SP-fileou2019-1
 endmap
 
-map M-lavoir-bas
-	Lavoir7
+map MP-lavoir-bas -title "Réseau du Lavoir"
+	SP-Lavoir7
 	break
-	Boeuf2  
+	SP-Boeuf2  
 	break
-	lavoir-sec   
+	SP-lavoir-sec   
 	break
-	Racc3
+	SP-Racc3
 	break
-	Racc2
+	SP-Racc2
 	break
-	rac1
+	SP-rac1
 	break
-	racc4
+	SP-racc4
 	break
-	Racc
+	SP-Racc
 	break
-	Racc4
+	SP-Racc4
 	break
-	Racc5
+	SP-Racc5
 	break
-	base-racc
-	break
-	Lavoir3old
+	SP-base-racc
+	#break
+	#SP-Lavoir3old
 endmap
-
-
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
-map MC-lavoir-tot
-	MC-lavoir
+map MC-Lavoir-tot
+	MC-lavoir-principal
 	break
 	MC-Filou
 endmap
 
-map M-lavoir
-	M-lavoir-haut
+map MP-Lavoir
+	MP-lavoir-haut
 	break
-	M-filou
+	MP-filou
 	break
-	M-lavoir-bas
+	MP-lavoir-bas
 endmap
    

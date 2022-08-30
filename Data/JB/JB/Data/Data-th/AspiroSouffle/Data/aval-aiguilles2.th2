@@ -1,8 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -127.99999999999999 -128.0 421.5 320.5
+##XTHERION## xth_me_area_adjust -127.99999999999999 -128.0 497.0 320.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {275.591 1 1.0} {118.1062 2012c-xa-28} aval_aiguilles2-map.xvi 0 {}
-
 
 
 scrap SP-aval-aiguille2-1 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
@@ -49,8 +48,8 @@ line wall
 endline
 
 line wall
-  246.5 181.5
-  246.5 181.5 260.5 173.0 260.75 167.25
+  260.25 176.75
+  260.25 176.75 260.5 173.0 260.75 167.25
   261.0 161.5 265.25 157.25 265.25 153.75
   265.25 150.25 261.0 146.25 261.0 146.25
   smooth off
@@ -66,7 +65,7 @@ point 213.5 144.75 label -text "Imp."
 
 point 249.75 148.0 label -text "Colm."
 
-point 246.25 191.25 label -text "Colm."
+point 300.75 152.0 label -text "Colm."
 
 point 274.25 191.25 label -text "Colm."
 
@@ -107,20 +106,36 @@ line wall
   271.75 181.75
   271.75 181.75 271.5 176.75 269.75 175.75
   268.0 174.75 261.5 175.0 260.25 176.75
-  259.0 178.5 254.75 184.75 254.75 184.75
-  smooth off
 endline
 
 point 263.25 127.25 rope
 
 point 292.25 143.75 rope
 
+#point 367.75 128.75 label -text "Puits que l'on Traverse"
+
+#line arrow
+#  294.5 105.25
+#  337.25 118.0
+#endline
+
+#point 315.25 62.0 label -text "g. de la Frénésie"
+
+#line arrow
+#  290.0 104.25
+#  315.75 73.25
+#endline
+
 line wall
   285.0 119.0
   285.0 119.0 285.75 127.25 285.75 131.0
   285.75 134.75 284.25 141.5 283.0 143.75
-  281.75 146.0 278.25 148.25 278.25 153.5
-  278.25 158.75 281.75 162.75 280.5 167.0
+  281.75 146.0 272.75 157.0 283.0 151.0
+endline
+
+line wall
+  285.0 153.75
+  278.25 157.75 281.75 162.75 280.5 167.0
   279.25 171.25 274.0 173.25 274.0 174.75
   274.0 176.25 274.25 181.25 274.25 181.25
   smooth off
@@ -190,7 +205,7 @@ line floor-meander
   smooth off
 endline
 
-point 210.5 90.5 label -orientation 359.3 -text "L'Aspiro-souffle "
+point 223.0 93.75 label -orientation 359.3 -text "L'Aspiro-souffle "
 
 line wall
   264.75 122.0
@@ -503,9 +518,9 @@ point 88.0 106.5 narrow-end -orientation 156.7
 
 point 99.75 67.0 continuation
 
-point 108.75 51.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Aspiro Souffle" -text "Départ à atteindre après petite escalade"
+point 108.75 51.25 continuation
 
-point 114.75 31.75 continuation -attr Code E -attr Cavite JB -attr Reseau "Aspiro Souffle" -text "Départ à atteindre après petite escalade"
+point 113.5 34.0 continuation
 
 line pit
   126.0 49.75
@@ -703,18 +718,25 @@ endscrap
 
 scrap SP-aval-aiguilles2-4 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
+point 104.75 57.25 continuation
+
 line pit
-  106.0 66.25
-  106.0 66.25 103.0 69.0 99.5 73.5
+  107.0 69.0
+  107.0 69.0 103.0 69.0 99.5 73.5
   96.0 78.0 94.75 81.25 94.75 81.25
   smooth off
 endline
 
 line wall
-  53.25 39.75
-  53.25 39.75 95.75 69.0 98.25 69.0
-  100.75 69.0 104.0 67.5 104.75 69.5
-  105.5 71.5 106.5 73.75 106.5 75.0
+  56.75 33.75
+  56.75 33.75 72.75 39.0 79.0 56.75
+  79.82 59.07 96.5 68.0 99.0 68.0
+  101.5 68.0 103.25 61.75 104.0 63.75
+endline
+
+line wall
+  106.0 66.25
+  106.75 68.25 106.5 73.75 106.5 75.0
   106.5 76.25 105.5 81.75 105.5 81.75
   smooth off
 endline
@@ -723,19 +745,29 @@ line wall
   103.25 78.5
   103.25 78.5 104.75 77.0 103.75 76.5
   102.75 76.0 100.5 77.75 98.75 77.25
-  97.0 76.75 45.25 46.75 45.25 46.75
+  97.0 76.75 76.74 63.74 75.0 64.25
+  64.75 67.25 47.0 52.5 47.0 52.5
   smooth off
 endline
 
-point 90.5 84.5 rope
+point 82.0 75.25 rope
 
 point 112.75 83.25 height -value [+3 m]
 
-point 82.25 51.5 height -value [-30 m]
+line pit
+  98.0 64.5
+  98.0 64.5 97.75 71.25 95.75 72.75
+  93.75 74.25 90.25 76.0 90.25 76.0
+  smooth off
+endline
 
-point 62.0 38.0 air-draught -orientation 58.6 -subtype winter
+point 90.75 82.25 height -value [-4 m]
 
-point 41.75 40.25 continuation -attr Code P -attr Cavite JB -attr Reseau "Aspiro Souffle" -attr CA "Aspirant en été" -text "Puits à descendre"
+point 82.25 51.5 height -value [-40 m]
+
+point 55.5 66.0 air-draught -orientation 58.6 -subtype winter
+
+point 41.75 40.25 continuation
 
 point 103.881 79.8562 station -name 2012c-xa-68@aval-aiguilles2
 

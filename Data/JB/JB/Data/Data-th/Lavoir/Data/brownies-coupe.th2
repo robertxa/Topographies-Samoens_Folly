@@ -1,13 +1,13 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.68299999999994 -141.36299999999994 1424.5303000000001 1610.7008
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -128.75 -128.75 1321.0 1488.25
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {290.90400000000005 1 1.0} {340.969 2012-xa-0} Lavoir-coupe2015b.xvi 0 {}
 
 
 
 scrap SC-browniesc1 -projection extended -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
-line label -text "galerie des Cookies"
+line label -text "galerie des Brownies"
   1092.5 1130.5
   1092.5 1130.5 1156.5 1180.5 1167.0 1199.0
   1177.5 1217.5 1191.0 1312.5 1192.0 1314.5
@@ -15,9 +15,10 @@ line label -text "galerie des Cookies"
 endline
 
 line rope
-  1009.5 1116.5
-  994.0 1111.5
-  983.5 1108.5
+  1008.5 1117.0
+  992.0 1110.5
+  980.0 1109.0
+  973.0 1109.0
 endline
 
 line rope
@@ -75,8 +76,8 @@ line wall
   1053.0 1173.5 1050.5 1160.0 1045.5 1155.5
   1040.5 1151.0 1029.5 1138.5 1026.5 1135.0
   1023.5 1131.5 1018.0 1127.0 1013.5 1123.5
-  1009.0 1120.0 1009.0 1116.5 1001.5 1116.5
-  994.0 1116.5 991.0 1116.0 991.0 1116.0
+  1009.0 1120.0 1008.96 1117.25 1001.5 1116.5
+  999.0 1116.25 991.0 1116.0 991.0 1116.0
   smooth off
 endline
 
