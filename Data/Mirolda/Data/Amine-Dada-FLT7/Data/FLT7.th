@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey FLT7 -title "Gouffre Amine Dada - FLT7"
+
+ centerline -extend right
+    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    cs long-lat
+    fix FLT7 6.783152 46.081747	1929  #ALT IGN
+    station FLT7 "FLT7 - L'Amine Dada" entrance air-draught continuation #explored ????m
+    
+    fix FLT7b 6.783152 46.081747	1929  #ALT IGN
+    station FLT7b "FLT7b" entrance air-draught continuation #explored ????m
+
+  
+endcenterline
+
+ endsurvey

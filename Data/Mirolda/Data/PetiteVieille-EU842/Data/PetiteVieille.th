@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey PetiteVieille -title "Gouffre de la Petite Vieille - EU842"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    
+    ##fix EU842	943.93	130.3	2015
+    fix EU842	943930	2130300	2015
+    station EU842 "G. de la Petite Vieille (EU842)" entrance air-draught
+    
+endcenterline
+
+ endsurvey

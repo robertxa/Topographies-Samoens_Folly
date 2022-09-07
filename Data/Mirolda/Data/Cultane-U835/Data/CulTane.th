@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey CulTane -title "Gouffre Cul Tané - U835"
+
+ centerline -extend right
+    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    
+    #fix U835	943.7491	129.922	1946
+    fix U835	943749.1	2129922	1946
+    station U835 "G. du Cul-Tané (U835)" entrance air-draught
+  
+endcenterline
+
+ endsurvey

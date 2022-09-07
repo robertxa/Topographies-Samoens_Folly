@@ -1,0 +1,100 @@
+encoding  utf-8
+
+# Copyright (C) 2021 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey mirolda -title "Entrée du massif du Criou"
+
+# Fichier contenant les positions des Résurgences du massif du Folly, Samoens, France
+
+ centerline -extend right
+    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    cs long-lat
+    fix R-peteret 6.745180928166752 46.09359826843757	783 # Altitude IGN, A revoir
+    station R-peteret "Résurgence temporaire de Péteret" entrance spring continuation
+    #fix R-Chaperon 6.745180928166752 46.09359826843757	783 # Altitude IGN, A revoir
+    #station R-Chaperon "Résurgence temporaire de Chaperon" entrance spring
+
+    fix CD11 6.770476 46.0888689	1880 #ALT IGN
+    station CD11 "CD11 - Mirolda" entrance air-draught continuation #explored ????m
+    fix VF3 6.79367 46.090839	2336  #ALT IGN
+    station VF3 "VF3 - Lucien Bouclier" entrance air-draught continuation #explored ????m
+    fix FLT7 6.783152 46.081747	1929  #ALT IGN
+    station FLT7 "FLT7 - L'Amine Dada" entrance air-draught continuation #explored ????m
+    
+
+    fix FLT7b 6.783152 46.081747	1929  #ALT IGN
+    station FLT7b "FLT7b" entrance air-draught continuation #explored ????m
+
+    fix F126 6.75026 46.09791	833  #ALT IGN
+    station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
+    fix Falaise 6.75026 46.09791	833  #ALT IGN
+    station Falaise "Entrée Falaise" entrance air-draught continuation #explored ????m
+
+
+    #cs ???? (Lambert, mais lequel?)
+    
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    #fix Morts_Vivants 943.740 129.900	1930  #ALT IGN
+    fix Morts_Vivants 943740 1129900	1930  #ALT IGN
+    station Morts_Vivants "G. des Morts Vivants - FLT5" entrance air-draught continuation #explored ????m
+    
+    ##fix Daniel 943.50 129.830	2030  #ALT IGN
+    fix Daniel 943500 2129830	2030  #ALT IGN  --> Coordonnées à vérifier ! Pas les mêmes qu'en dessous
+    #Gouffre Daniel		943.95	129.83	2030
+    station Daniel "G. Daniel" entrance air-draught continuation explored 350m
+
+    #fix Babet	944.12	130.32	2060
+    fix Babet	944120	130320	2060
+    station Babet "G. Babet (GU841)" entrance air-draught
+
+    #fix EU841	944.1	130.36	2080
+    fix EU841	944100	2130360	2080
+    station EU841 "G. du Petit Vieux (EU841)" entrance air-draught
+    
+    #fix EU842	943.93	130.3	2015
+    fix EU842	943930	2130300	2015
+    station EU842 "G. de la Petite Vieille (EU842)" entrance air-draught
+    
+    #fix GU847	844.04	130.17	2010
+    fix GU847	844040	2130170	2010
+    station GU847 "G. du Nouveau Né (GU847)" entrance air-draught
+    
+    #fix Innomable	944.11	130.67	2200
+    fix Innomable	944110	2130670	2200
+    station Innomable "G. Innomable" entrance air-draught
+    
+    #fix Frigo	944.2	130.55	2164
+    fix Frigo	944200	2130550	2164
+    station Frigo "G. du Frigo (EU836)" entrance air-draught
+    
+    #fix U835	943.7491	129.922	1946
+    fix U835	943749.1	2129922	1946
+    station U835 "G. du Cul-Tané (U835)" entrance air-draught
+	
+    #fix CE10	943.96	130.37	2070
+    fix CE10	943960	2130370	2070
+    station CE10 "CE10" entrance air-draught
+    
+    #fix U6	943.95	130.67	2140
+    fix U6	943905	2130670	2140
+    station U6 "G. de l'Ecorchoir (U6)" entrance air-draught
+	
+    #fix CF2	944.12	130.2	2100
+    fix CF2	944120	2130200	2100
+    station CF2 "CF2" entrance air-draught
+    
+
+    cs EPSG:27572   # Lambert II étendu --> OK
+    fix Jockers		944510	2131980	2339
+    station Jockers "G. des Jockers" entrance air-draught
+  
+endcenterline
+
+ endsurvey

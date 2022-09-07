@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey CE10 -title "Gouffre CE10"
+
+ centerline -extend right
+    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+	
+    #fix CE10	943.96	130.37	2070
+    fix CE10	943960	2130370	2070
+    station CE10 "CE10" entrance air-draught
+  
+endcenterline
+
+ endsurvey

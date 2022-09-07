@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Ecorchoir -title "Gouffre de l'Ecorchoir - U6"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)    
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    
+    #fix U6	943.95	130.67	2140
+    fix U6	943905	2130670	2140
+    station U6 "G. de l'Ecorchoir (U6)" entrance air-draught
+  
+endcenterline
+
+ endsurvey

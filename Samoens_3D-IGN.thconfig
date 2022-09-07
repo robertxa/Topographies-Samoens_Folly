@@ -218,7 +218,7 @@ select MP-Folly-tot@MassifFolly
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Folly-tot-2022.kml -layout my_layout
-# export model -fmt kml -o Outputs/Folly-tot-2022-model.kml -layout my_layout
+# export model -fmt kml -o Outputs/Folly-tot-2022-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité

@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Babet -title "Gouffre Babet - GU841"
+
+ centerline -extend right
+    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+    #cs ???? (Lambert, mais lequel?)    
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+
+    #fix Babet	944.12	130.32	2060
+    fix Babet	944120	130320	2060
+    station Babet "G. Babet (GU841)" entrance air-draught
+  
+endcenterline
+
+ endsurvey

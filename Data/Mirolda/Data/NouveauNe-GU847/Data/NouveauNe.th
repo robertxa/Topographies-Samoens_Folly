@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey NouveauNe -title "Gouffre du NouveauNe - GU847"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    
+    ##fix GU847	844.04	130.17	2010
+    fix GU847	844040	2130170	2010
+    station GU847 "G. du Nouveau Né (GU847)" entrance air-draught
+  
+endcenterline
+
+ endsurvey

@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Mirolda -title "Gouffre Mirolda - Réseau Lucien Bouclier"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/CD11/CD11-tot.th
+	input Data/Falaise/Falaise-tot.th
+	input Data/Jockers/Jockers-tot.th
+	input Data/Rondelle-Jaune-F126/F126-tot.th
+	input Data/VF3/VF3-tot.th
+
+	# Import des maps
+	#input Mirolda-maps.th
+ 
+ endsurvey
+ 

@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey CF2 -title "Gouffre CF2"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+ 	
+    ##fix CF2	944.12	130.2	2100
+    fix CF2	944120	2130200	2100
+    station CF2 "CF2" entrance air-draught
+  
+endcenterline
+
+ endsurvey

@@ -4,11 +4,39 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey SystemMirolda -title "Sytème du Mirolda - Lucien Bouclier"
+survey SystemMirolda -title "Système du Mirolda - Lucien Bouclier"
 # Pour importer les différentes données de différents fichiers topos : 
-	input mirolda-GPS/mirolda-tot.th
+	#input mirolda-GPS/mirolda-tot.th	# Depreciated
+
+	#input Data/125-Pic-F40/F40-tot.th	# --> Coordonnées à trouver
+	input Data/Amine-Dada-FLT7/FLT7-tot.th
+	input Data/Babet-GU841/Babet-tot.th
+	input Data/CE10/CE10-tot.th
+
+	input Data/CF2/CF2-tot.th
+	#input Data/Chaperon-exurgence/Chaperon-tot.th	# --> Coordonnées à trouver !
+
+	input Data/Cultane-U835/CulTane-tot.th
+	input Data/Daniel/Daniel-tot.th
+	input Data/Ecorchoir-U6/Ecorchoir-tot.th
+	input Data/Frigo-EU836/Frigo-tot.th
+	input Data/Innomable-EU831/Innomable-tot.th
+
+	input Data/Mirolda/Mirolda-tot.th
 	
-	input mirolda-maps.th
+	#input Data/Mobylette-FU891/Mobylette-tot.th	# --> Coordonnées à trouver !
+	
+	input Data/Morts-Vivants-FLT5/Morts-Vivants-tot.th
+	input Data/NouveauNe-GU847/NouveauNe-tot.th
+	
+	input Data/Peterets-exurgence/Peterets-tot.th
+	input Data/PetiteVieille-EU842/PetiteVieille-tot.th
+	input Data/PetitVieux-EU841/PetitVieux-tot.th
+
+	
+	#input Data/Prospection/prospection.th
+
+	#input mirolda-maps.th
  
  endsurvey
  

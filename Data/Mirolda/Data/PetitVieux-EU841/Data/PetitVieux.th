@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey PetitVieux -title "Gouffre du Petit Vieux - EU841"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+
+    ##fix EU841	944.1	130.36	2080
+    fix EU841	944100	2130360	2080
+    station EU841 "G. du Petit Vieux (EU841)" entrance air-draught
+  
+endcenterline
+
+ endsurvey

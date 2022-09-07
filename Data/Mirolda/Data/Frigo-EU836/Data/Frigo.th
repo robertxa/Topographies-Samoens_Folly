@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Frigo -title "Gouffre du Frigo - EU836"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    
+    ##fix Frigo	944.2	130.55	2164
+    fix Frigo	944200	2130550	2164
+    station Frigo "G. du Frigo (EU836)" entrance air-draught
+  
+endcenterline
+
+ endsurvey

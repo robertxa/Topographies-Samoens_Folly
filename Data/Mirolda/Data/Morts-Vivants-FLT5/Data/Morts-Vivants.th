@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Morts-Vivants -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)    
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    
+    #fix Morts_Vivants 943.740 129.900	1930  #ALT IGN
+    fix Morts_Vivants 943740 1129900	1930  #ALT IGN
+    station Morts_Vivants "G. des Morts Vivants - FLT5" entrance air-draught continuation #explored ????m
+  
+endcenterline
+
+ endsurvey

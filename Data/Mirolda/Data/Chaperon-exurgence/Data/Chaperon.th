@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Chaperon -title "Résurgence temporaire de Chaperon"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    cs long-lat
+    #fix R-Chaperon 6.745180928166752 46.09359826843757	783 # Altitude IGN, Coords A revoir
+    #station R-Chaperon "Résurgence temporaire de Chaperon" entrance spring
+  
+endcenterline
+
+ endsurvey

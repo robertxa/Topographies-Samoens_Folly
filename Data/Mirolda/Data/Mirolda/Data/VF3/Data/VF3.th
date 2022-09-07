@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey VF3 -title "VF3 - Mirolda - Réseau Lucien Bouclier"
+
+ centerline -extend right    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    cs long-lat
+
+    fix VF3 6.79367 46.090839	2336  #ALT IGN
+    station VF3 "VF3 - Lucien Bouclier" entrance air-draught continuation #explored ????m
+
+endcenterline
+
+ endsurvey

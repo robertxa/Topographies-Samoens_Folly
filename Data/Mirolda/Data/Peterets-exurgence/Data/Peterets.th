@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 202é Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Peterets -title "Résurgence temporaire des Péterets"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    cs long-lat
+    fix R-peteret 6.745180928166752 46.09359826843757	783 # Altitude IGN, A revoir
+    station R-peteret "Résurgence temporaire de Péteret" entrance spring continuation
+  
+endcenterline
+
+ endsurvey

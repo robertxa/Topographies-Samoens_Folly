@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey VF3 -title "Gouffre VF3"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/VF3.th
+	
+	# Import du dessin en plan
+	#input Data/VF3.th2
+
+	# Import du dessin en coupe
+	#input Data/VF3-coupe.th2
+
+	# Import des maps
+	#input VF3-maps.th
+ 
+ endsurvey
+ 
