@@ -14,7 +14,9 @@ survey F126 -title "Gouffre de la Rondelle Jaune - F126"
 
     cs long-lat   
 
-    fix F126 6.75026 46.09791	833  #ALT IGN
+    #fix F126 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses
+    cs EPSG:27572   # LII étendu
+    fix F126 944110 2130860	2330
     station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
   
 endcenterline

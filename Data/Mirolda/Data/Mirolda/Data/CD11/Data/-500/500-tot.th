@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey 500 -title "Gouffre Mirolda - La Tonitruante"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/mirolda_coulee_calcite_remonte.th
+	input Data/mirolda_de-500a-460.th
+		equate 0@coulee_calcite	27@mirolda_400
+	input Data/mirolda_rivier_e_tonitruante.th
+		equate 0@mirolda_400 0@riviere_tonitruante
+
+	
+	# Import du dessin en plan
+	input Data/mirolda_coulee_calcite_remonte-1p.th2
+	input Data/mirolda_de-500a-460-1p.th2
+		join SP-mirolda_coulee_calcite_remonte-1p SP-400-1
+	input Data/mirolda_rivier_e_tonitruante-1p.th2
+		join SP-riviere_tonitruante-1 SP-400-1
+
+
+	# Import du dessin en coupe
+	#input Data/500-coupe.th2
+
+	# Import des maps
+	input 500-maps.th
+ 
+ endsurvey
+ 

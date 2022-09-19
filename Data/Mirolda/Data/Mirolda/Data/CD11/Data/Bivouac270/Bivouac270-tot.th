@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Bivouac270 -title "Gouffre Mirolda - La Majestueuse"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/madg0.th
+	input Data/20220912miroldaXR1.th
+		equate PTRMAXR0@madg0 PTRMAXR0@20220912miroldaXR1
+	
+	# Import du dessin en plan
+	input Data/20220912miroldaXR1.th2
+
+	# Import du dessin en coupe
+	#input Data/Bivouac270-coupe.th2
+
+	# Import des maps
+	input Bivouac270-maps.th
+ 
+ endsurvey
+ 

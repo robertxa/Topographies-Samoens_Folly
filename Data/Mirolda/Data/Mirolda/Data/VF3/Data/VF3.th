@@ -15,6 +15,8 @@ survey VF3 -title "VF3 - Mirolda - Réseau Lucien Bouclier"
     cs long-lat
 
     fix VF3 6.79367 46.090839	2336  #ALT IGN
+    #cs EPSG:27572 LII étendu
+    #fix VF3 944520 2130930	2335  #ALT IGN
     station VF3 "VF3 - Lucien Bouclier" entrance air-draught continuation #explored ????m
 
 endcenterline

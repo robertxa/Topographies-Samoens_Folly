@@ -859,48 +859,48 @@ layout drawingconfig
 		#	  ATTENTION ! Parfois, cette redéfinition génère des erreurs métapost.
 		#		Si c'est le cas, commenter toute la redéfinition du point p_wallaltitude.
 		
-		def p_wallaltitude (expr pprev,pos,pnext,txt) =
-			rot:=angle(unitvector(pnext-pos)+unitvector(pos-pprev)) - 90;
-			pickup PenD;
-			pair zz;
-			%zz:=(pos + 3*unitvector(dir rot));
-			zz:=(pos + (u/4)*unitvector(dir rot));
-			%draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in black
-			draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in color
-			% add the unit (here, meters as m)
-			txtm:=image(
-					%draw txt; % altitude in black
-					draw txt withcolor (0.78, 0.08, 0.52); % altitude in color
-					%interim labeloffset:=0;
-					%label.urt(btex \thaltitude { m} etex, lrcorner txt); % unit in black
-					label.urt(btex \thaltitude { m} etex, lrcorner txt) withcolor (0.78, 0.08, 0.52); % unit in color
-				);
-			begingroup 
-				%    interim labeloffset:=2pt;
-				interim labeloffset:=(u/12);
-				if horiz_labels:
-					rot:=rot mod 360;
-					if rot<=22.5: lab:=thelabel.rt(txtm, zz);
-					elseif rot<=67.5: lab:=thelabel.urt(txtm, zz);
-					elseif rot<=112.5: lab:=thelabel.top(txtm, zz);
-					elseif rot<=157.5: lab:=thelabel.ulft(txtm, zz);
-					elseif rot<=202.5: lab:=thelabel.lft(txtm, zz);
-					elseif rot<=247.5: lab:=thelabel.llft(txtm, zz);
-					elseif rot<=292.5: lab:=thelabel.bot(txtm, zz);
-					elseif rot<=337.5: lab:=thelabel.lrt(txtm, zz);
-					else: lab:=thelabel.rt(txtm, zz);
-					fi;
-				else:
-					if (abs rot>90) and (abs rot <=270):
-						rot:=rot-180;
-						lab:=thelabel.lft(txtm, pos);
-					else:
-						lab:=thelabel.rt(txtm, pos);
-						fi;
-				fi;
-				process_label(pos, if horiz_labels: 0 else: rot fi);		
-			endgroup;
-		enddef;
+		# def p_wallaltitude (expr pprev,pos,pnext,txt) =
+		# 	rot:=angle(unitvector(pnext-pos)+unitvector(pos-pprev)) - 90;
+		# 	pickup PenD;
+		# 	pair zz;
+		# 	%zz:=(pos + 3*unitvector(dir rot));
+		# 	zz:=(pos + (u/4)*unitvector(dir rot));
+		# 	%draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in black
+		# 	draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in color
+		# 	% add the unit (here, meters as m)
+		# 	txtm:=image(
+		# 			%draw txt; % altitude in black
+		# 			draw txt withcolor (0.78, 0.08, 0.52); % altitude in color
+		# 			%interim labeloffset:=0;
+		# 			%label.urt(btex \thaltitude { m} etex, lrcorner txt); % unit in black
+		# 			label.urt(btex \thaltitude { m} etex, lrcorner txt) withcolor (0.78, 0.08, 0.52); % unit in color
+		# 		);
+		# 	begingroup 
+		# 		%    interim labeloffset:=2pt;
+		# 		interim labeloffset:=(u/12);
+		# 		if horiz_labels:
+		# 			rot:=rot mod 360;
+		# 			if rot<=22.5: lab:=thelabel.rt(txtm, zz);
+		# 			elseif rot<=67.5: lab:=thelabel.urt(txtm, zz);
+		# 			elseif rot<=112.5: lab:=thelabel.top(txtm, zz);
+		# 			elseif rot<=157.5: lab:=thelabel.ulft(txtm, zz);
+		# 			elseif rot<=202.5: lab:=thelabel.lft(txtm, zz);
+		# 			elseif rot<=247.5: lab:=thelabel.llft(txtm, zz);
+		# 			elseif rot<=292.5: lab:=thelabel.bot(txtm, zz);
+		# 			elseif rot<=337.5: lab:=thelabel.lrt(txtm, zz);
+		# 			else: lab:=thelabel.rt(txtm, zz);
+		# 			fi;
+		# 		else:
+		# 			if (abs rot>90) and (abs rot <=270):
+		# 				rot:=rot-180;
+		# 				lab:=thelabel.lft(txtm, pos);
+		# 			else:
+		# 				lab:=thelabel.rt(txtm, pos);
+		# 				fi;
+		# 		fi;
+		# 		process_label(pos, if horiz_labels: 0 else: rot fi);		
+		# 	endgroup;
+		# enddef;
 		
 		
 		
