@@ -41,7 +41,7 @@ Une convention a été mise en place pour la gestion des points d'interrogation,
 		
 		* P : Puits non descendu,
 		
-		* Q : non renseigné sur les topographie anciennes, c'est à voir/vérifier,
+		* Q : non renseigné sur les topographies anciennes, c'est à voir/vérifier,
 		
 		* S : Siphon à plonger, 
 		
