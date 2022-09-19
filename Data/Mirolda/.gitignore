@@ -1,0 +1,129 @@
+# Ignore files:
+# Compiled python modules.
+**.pyc
+**.zip
+**.tar.gz
+**.rar
+**.php
+**.xls
+**.xlsx
+**.XLS
+
+# old Files
+**.ai
+**.dxf
+**.txt
+**.eml
+**.ppt
+**.dwg
+**.dgn
+**.cvx
+
+# Images.
+**.jpg
+**.JPG
+**.png
+#**.gif
+**.tif
+**.ppm
+**.dxf
+**.bmp
+**.pcx
+**.PCX
+**.NEF
+
+# Therion outputs (avec un/ ou non ?).
+**.pdf
+**.kml
+**.kmz
+**.lox
+**.log
+**.xml
+**.html
+**.sql
+**.3d
+**.3dmf
+**.vrml
+**.vtk
+**.db
+**.sql
+**.xvi
+**.log
+**.dat
+**.svg
+
+# Therion shp outputs
+**.dbf
+**.prj
+**.shp
+**.shx
+**.sbx
+**.sbn
+
+# LaTeX
+**.aux
+**.out
+**.synctex.gz
+**.sbn
+**.sbx
+**.maf
+**.mtc
+**.mtc0
+
+# Descriptions
+**.rtf
+**.RTF
+**.doc
+**.docx
+
+# GIS
+**.xml
+**.ovr
+**.tiff
+**.mxd
+**.qgs
+**.wpt
+**.GPX
+**.gpx
+**.gpi
+**.vrt
+**.jp2
+**.prn
+**.dbf
+**.qpj
+**.trk
+**.jgw
+**.lyr
+**.aux
+**.rrd
+**.img
+**.xml
+**.html
+**.gxw
+**.ini
+**.dir
+**.dat
+**.nit
+**.OO1
+**.adf
+**.TRO
+**.swp
+**.sbn
+**.sdx
+
+
+# Autres
+**.php
+**.error2
+**.tar.gz
+**.backup
+
+# Folders
+**/Docs/
+**/OLD/
+
+# Exceptions dans le dossier Samoens-GIS
+!/Samoens-GIS/dem/IGN_JB_10m-IGN.th
+!TODO.txt
+
+
