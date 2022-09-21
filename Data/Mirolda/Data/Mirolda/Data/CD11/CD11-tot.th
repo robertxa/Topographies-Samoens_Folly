@@ -20,21 +20,20 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	input Data/Yougo/Yougo-tot.th
 		equate PTRMADG0@Yougo.Yougo PTRMADG0@madg0.Bivouac270
 	
-	# Import du dessin en plan
-	#input Data/CD11.th2
+	# Jonctions des dessins en plan
 	# Jonction au niveau de -97 m
-	#join ?? SP-MA-6
+	join SP-CD11-1@CD11 SP-MA-6@Bivouac270
 	# Jonction des Yougoslaves
-	#join ?? SP-MA-6
+	join SP-Yougo-1@Yougo SP-MA-6@Bivouac270
 	# Jonction au niveau de -250 m
 	join SP-Bivouac-1@Bivouac270 SP-Conf-3@Confluence
 	# Jonction au niveau de -370 m
 	join SP-SA-1@Confluence SP-mirolda_coulee_calcite_remonte-1p@500
 
-	# Import du dessin en coupe
-	#input Data/CD11-coupe.th2
+	# Jonctions des dessins en coupe
+	# join ??@?? ??@??
 
-	# Import des maps
+	# Import des maps, plan et coupe
 	input CD11-maps.th
  
  endsurvey

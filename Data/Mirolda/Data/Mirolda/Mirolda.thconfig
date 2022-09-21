@@ -257,6 +257,14 @@ layout layout_coupe
  endlayout
 # Fin de la definition du Layout "normal"
 
+layout my_layout-continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+layout layout-coupe-continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
 
 
 
@@ -273,7 +281,9 @@ select MC-Mirolda-coupe-tot
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan-continuations.pdf -layout my_layout-continuations
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
+ #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Criou-2022-coupe-continuations.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

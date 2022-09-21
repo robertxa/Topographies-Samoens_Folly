@@ -170,7 +170,7 @@ layout my_layout
 
 
 
-layout atlas_layout
+layout layout-coupe
 	
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
@@ -184,8 +184,12 @@ layout atlas_layout
   base-scale 1 1000
 
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
-  scale 1 1000
+  scale 1 1500
 
+  # echelle graphique 150 m ampleur
+  scale-bar 150 m
+
+  
   # Une grille ?
   #grid-size 250 250 250 m  
   grid off
@@ -205,7 +209,7 @@ layout atlas_layout
   doc-title "Confluence coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  #map-header 0 0 s
+  map-header -10 10 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -216,16 +220,13 @@ layout atlas_layout
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
 
-  # echelle graphique 100 m ampleur
-  scale-bar 100 m
-
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
 
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
-  statistics topo-length on
+  statistics topo-length off
   
   # Afficher un copyright
   statistics copyright 2
@@ -247,7 +248,7 @@ layout atlas_layout
 			\cavename={Gouffre Mirolda - Confluence} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou}
+		\newtoks\club \club={Interclub Criou 2022}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -260,7 +261,7 @@ layout atlas_layout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/Confluence-map.xvi
+#export map -fmt xvi -layout xviexport -o Data/Confluence-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Confluence-coupe.xvi
 
 # Selection des Maps à exporter
@@ -270,7 +271,7 @@ select MC-Confluence-coupe-tot@Confluence
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

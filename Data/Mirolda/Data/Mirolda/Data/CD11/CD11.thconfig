@@ -165,6 +165,7 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Interclub Criou 2022}
 		%\newtoks\synth \synth={Xavier Robert}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. QUI METTRE D'AUTRE ?}
 	endcode   
   
  endlayout
@@ -186,14 +187,16 @@ layout my_layout-coupe
   base-scale 1 1000
 
   # scale : pour specifier l'échelle pour imprimer la topo. Voir layout ci-dessus.
-  scale 1 1000
+  scale 1 1500
 
-  # echelle graphique 100 m ampleur
-  scale-bar 100 m
+  # echelle graphique 150 m ampleur
+  scale-bar 150 m
 
   # Une grille ?
+  #grid-origin 6.770476 46.0888689 1880 m
   grid-size 100 100 100 m  
   grid bottom
+  grid-coords border
   # Forcer le démarrage de la grille à l'altitude de l'entrée
  
   # la topo est transparente
@@ -211,7 +214,7 @@ layout my_layout-coupe
   doc-title "CD11 coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 100 nw
+  map-header 3 60 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -250,14 +253,32 @@ layout my_layout-coupe
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Interclub Criou 2022}
-		%\newtoks\synth \synth={Xavier Robert}		
+		%\newtoks\synth \synth={Xavier Robert}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. QUI METTRE D'AUTRE ?}
 	endcode   
 
  endlayout
 # Fin de la definition du Layout "normal"
 
+layout my_layout-continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+layout my_layout-coupe-continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
 
-
+layout layout-kml
+  # Définition du système de projection du plan
+  cs UTM32
+  # Couleur de la topographie
+  # Rouge-Orange = 255,69,0 -->
+  # Orange = 255,165,0 -->
+  # Orange Sombre = 255,140,0 -->
+  # Bleu --> 0, 0 255
+  color map-fg [0 0 100]
+endlayout
 
 # 3-EXPORT
 
@@ -271,9 +292,11 @@ select MC-CD11-coupe-tot@CD11
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/Criou-2022-coupe.pdf
-#export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/CD11-2022-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/CD11-2022-plan-continuations.pdf -layout my_layout-continuations
+ export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/CD11-2022-coupe.pdf
+ #export map -projection extended -fmt pdf -layout my_layout-coupe-continuations -o Outputs/CD11-2022-coupe-continuations.pdf
+#export atlas -o Outputs/CD11-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/CD11-2022.lox
@@ -282,7 +305,7 @@ select MC-CD11-coupe-tot@CD11
 # export map -proj plan -fmt esri -o Outputs/CD11-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/CD11-2022.kml -layout my_layout
+ export map -proj plan -fmt kml -o Outputs/CD11-2022.kml -layout layout-kml
  export model -fmt kml -o Outputs/CD11-2022-model.kml -enable all
 
 # Export de la database sql

@@ -31,7 +31,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     0 . 5.99 153.2 -7.3
     0 . 6.19 168.1 -10.0
     0 . 17.07 77.9 74.2
-    extend ignore
+    extend right
     0 1 18.08 77.9 74.2 # depart meandre ?
     # extend auto
     0 . 16.15 76.9 74.5
@@ -50,7 +50,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     2 . 1.89 309.9 44.9
     2 . 4.94 347.7 -49.6
     2 . 5.18 355.4 -27.5
-    extend left
+    extend right
     2 3 8.70 200.4 -29.2  # pont rocheux 5 m av
     # extend auto
     3 . 3.73 68.8 23.7
@@ -84,7 +84,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     4 . 2.77 287.6 -26.3
     4 . 11.27 331.7 63.7
     4 . 14.16 322.3 81.6
-    extend vertical
+    extend right
     4 5 6.22 187.9 -11.9
     # extend auto
     5 . 0.54 87.6 9.4
@@ -118,7 +118,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     6 . 6.52 173.9 0.3
     6 . 6.65 153.3 30.1
     6 . 8.06 296.7 -46.3
-    extend left
+    extend right
     6 7 7.64 297.1 -46.2
     extend right
     6 PTRBXR01 2.71 118.5 25.3
@@ -133,7 +133,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     PTRBXR01 . 6.68 181.5 -10.5
     PTRBXR01 . 1.94 184.2 -35.2
     PTRBXR01 . 2.36 309.8 -41.6
-    extend vertical
+    extend right
     PTRBXR01 9 7.58 178.7 -11.2 # fin bivouac, fistuleuses
     # extend auto
     9 . 1.54 88.1 -83.5
@@ -164,7 +164,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     10 . 2.30 217.0 -4.9
     10 . 1.27 125.9 -29.1
     10 . 1.69 140.9 -76.1
-    extend vertical
+    extend right
     10 11 3.31 172.9 -21.4  # col sol glaise
     # extend auto
     11 . 2.19 295.4 21.4
@@ -178,7 +178,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     11 . 4.01 192.6 -38.5
     11 . 5.66 197.7 29.6
     11 . 3.51 209.9 -3.5
-    extend left
+    extend right
   # ca souflant
     11 12 4.06 194.9 -19.6
     # extend auto
@@ -191,7 +191,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     12 . 4.25 207.6 73.5
     12 . 5.43 303.7 86.8
     12 . 4.99 6.5 67.4
-    extend vertical
+    extend right
     12 13 6.18 181.1 -39.6
     # extend auto
     13 . 0.65 66.7 17.6
@@ -217,7 +217,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     14 . 1.20 169.7 -40.3
     14 . 0.95 190.0 -55.6
     14 . 1.15 187.3 -23.7
-    extend vertical
+    extend right
     14 15 2.63 189.6 -36.7  # sommet P3
     # extend auto
     15 . 0.60 67.2 -0.5
@@ -250,7 +250,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     16 . 2.68 212.3 -49.2
     16 . 1.78 214.4 -34.9
     16 . 1.75 198.0 -39.4
-    extend left
+    extend right
     16 17 3.03 203.5 -33.0
     # extend auto
     17 . 0.39 73.8 -3.7
@@ -276,7 +276,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     18 . 0.35 197.4 -29.1
     18 . 2.92 162.0 -48.2
     18 . 6.45 180.9 -32.6
-    extend vertical
+    extend right
     18 19 7.97 174.0 -39.0  # base p5, sommet p4
     # extend auto
     19 . 0.96 101.2 -2.7
@@ -293,8 +293,8 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     19 . 1.46 23.1 19.8
     19 . 4.72 359.9 20.8
     19 . 6.64 353.5 33.0
-    extend vertical
-    19 20 6.19 172.0 -22.9  # arrivée eau, calcite sur paroi, excentriques haut, arrivée en hteur ?
+    extend right
+    19 20 6.19 172.0 -22.9  # arrivée eau, calcite sur paroi, excentriques haut, arrivée en hauteur ?
     # extend auto
     20 . 3.83 48.2 -80.4
     20 . 0.97 275.6 2.7
@@ -308,7 +308,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     20 . 2.46 172.6 -14.1
     20 . 2.49 190.5 -28.3
     20 . 5.35 172.1 -60.2
-    extend vertical
+    extend right
     20 21 5.10 178.5 -39.4
     # extend auto
     21 . 0.45 71.1 -0.1
@@ -347,7 +347,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     23 . 3.23 335.5 29.0
     23 . 3.01 358.0 34.0
     23 . 4.54 328.5 72.9
-    extend left
+    extend right
     23 PTRCXR1 14.95 208.2 -39.4  # bloc, sol milieu mc, salle du confluent,
     # extend auto
     PTRCXR1 . 6.24 290.8 33.1
@@ -384,10 +384,11 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     PTRCXR1 . 14.44 193.0 14.5
     extend left
     PTRCXR1 25 20.31 319.7 64.7 # escalde, corde, eau
+    extend right
     PTRCXR1 26 17.37 264.5 51.6 # escalade, calcite, ?
-    extend vertical
-    PTRCXR1 27 10.64 2.9 30.9 # eau, riv
     extend left
+    PTRCXR1 27 10.64 2.9 30.9 # eau, riv
+    extend right
     PTRCXR1 29 7.43 245.7 -15.4 # sapins
     # extend auto
     29 . 5.26 247.2 32.8
@@ -407,8 +408,9 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     29 . 15.33 119.7 22.1
     extend right
     29 30 15.88 120.2 20.8  # E8, gros départ
+    extend left
     29 31 24.29 68.3 56.5 # E10, gros depart
-    extend vertical
+    extend right
     29 32 18.87 179.2 -29.2
     # extend auto
     32 . 4.45 333.0 20.4
@@ -423,7 +425,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     32 . 32.44 33.1 53.9
     extend right
     32 33 13.42 90.1 55.7 # depart, eau
-    extend left
+    extend right
     32 34 2.18 214.1 -14.8  # sommet puits
     # extend auto
     34 . 3.00 313.6 4.5
@@ -435,7 +437,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     34 . 0.29 273.6 -60.7
     34 . 5.15 203.9 -56.1
     34 . 7.84 244.9 -56.7
-    extend left
+    extend right
     34 PTRIXR1 9.24 245.2 -45.9 # sur vire, sapins calcités, arrivée riv impétueuse
     # extend auto
     PTRIXR1 . 2.04 333.7 7.7
@@ -456,9 +458,9 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     PTRIXR1 . 8.74 344.9 -41.8
     PTRIXR1 . 4.46 341.5 -23.0
     PTRIXR1 . 1.45 357.3 -60.0
-    extend right
-    PTRIXR1 35 14.30 37.2 -14.5 # arrivee impetueuse
     extend left
+    PTRIXR1 35 14.30 37.2 -14.5 # arrivee impetueuse
+    extend right
     PTRIXR1 36 8.68 280.5 -37.5
     # extend auto
     36 . 3.98 163.2 14.0
@@ -474,7 +476,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     36 . 11.97 73.9 21.4
     36 . 16.67 66.3 20.8
     36 . 9.11 65.5 12.4
-    extend left
+    extend right
     36 37 8.85 242.5 -27.6
     # extend auto
     37 . 0.56 328.2 6.3
@@ -490,7 +492,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     37 . 3.50 44.1 -17.1
     37 . 9.40 87.6 42.5
     37 . 8.92 102.1 63.1
-    extend left
+    extend right
     37 38 9.94 243.2 -7.8 # vire
     # extend auto
     38 . 0.68 164.2 -15.7
@@ -502,7 +504,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     38 . 2.45 67.4 0.2
     38 . 9.15 62.6 4.5
     38 . 9.21 50.1 -18.3
-    extend left
+    extend right
     38 39 3.73 256.7 -32.5  # R2
     # extend auto
     39 . 3.60 116.4 55.8
@@ -515,7 +517,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     39 . 1.86 239.8 -33.9
     39 . 2.98 254.7 -38.4
     39 . 1.34 226.4 33.8
-    extend left
+    extend right
     39 40 5.18 249.9 -14.8  # blocs calcites en plafond, méandre haut
     # extend auto
     40 . 1.25 167.5 12.9
@@ -525,7 +527,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     40 . 1.98 237.8 -10.0
     40 . 4.00 228.9 -11.9
     40 . 5.53 245.4 -33.5
-    extend left
+    extend right
     40 41 4.74 234.8 -14.1  # angle droit
     # extend auto
     41 . 1.42 241.6 -36.0
@@ -542,7 +544,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     41 . 0.45 118.9 2.4
     41 . 0.72 175.8 0.6
     extend right
-    41 42 5.98 164.9 -5.5 # riv au sol, pissou rive dte, depart en hauteur ?
+    41 42 5.98 164.9 -5.5 # rivière au sol, pissou en rive droite, départ en hauteur ?
     # extend auto
     42 . 1.01 261.5 -5.6
     42 . 1.66 234.7 -64.9
@@ -558,7 +560,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     42 . 8.18 186.0 -36.8
     42 . 1.93 307.6 11.0
     42 . 1.66 358.2 44.6
-    extend left
+    extend right
     42 43 7.24 196.1 -22.0
     # extend auto
     43 . 1.62 289.2 5.4
@@ -569,7 +571,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     43 . 3.58 36.6 -9.6
     43 . 3.85 43.1 0.6
     43 . 1.91 264.4 -66.5
-    extend left
+    extend right
     43 44 1.28 203.0 -57.4  # depart lac
     # extend auto
     44 . 2.26 149.7 -1.3
@@ -580,7 +582,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     44 . 1.80 140.8 -52.8
     44 . 5.46 214.3 -20.1
     44 . 8.11 224.2 61.7
-    extend left
+    extend right
     44 45 6.33 227.9 -6.5 # sortie lac, devtsoir à 1 m
     # extend auto
     45 . 4.42 86.5 -1.2
@@ -593,7 +595,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     45 . 11.86 0.2 58.8
     45 . 16.98 356.7 58.7
     45 . 5.93 321.2 26.0
-    extend left
+    extend right
     45 46 6.73 333.1 17.8 # sommet p6
     # extend auto
     46 . 0.60 28.6 -7.5
@@ -605,7 +607,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     46 . 5.09 134.6 -34.0
     46 . 3.82 140.2 -59.5
     46 . 4.11 110.8 -0.2
-    extend left
+    extend right
     46 47 8.34 273.7 -76.2  # palier, eau
     # extend auto
     47 . 2.90 326.7 7.5
@@ -623,7 +625,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     47 . 6.31 111.0 31.8
     47 . 7.14 113.4 46.0
     47 . 19.01 44.9 86.7
-    extend left
+    extend right
     47 48 13.44 241.1 -44.6 # base puits, eau, rivière sous les blocs
     # extend auto
     48 . 1.01 319.0 8.9
@@ -642,7 +644,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     48 . 7.77 227.3 -13.5
     48 . 3.65 216.1 -26.1
     48 . 2.93 233.8 -9.6
-    extend left
+    extend right
     48 49 9.47 226.7 6.4  # sommet gros blocs
     # extend auto
     49 . 0.85 337.6 -1.4
@@ -660,7 +662,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     49 . 13.52 241.5 -31.1
     49 . 9.05 248.4 33.3
     49 . 12.91 239.3 -15.9
-    extend left
+    extend right
     49 50 12.64 239.0 -17.5 # mc
     # extend auto
     50 . 6.25 320.6 -73.6
@@ -674,7 +676,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     50 . 7.01 47.7 -52.4
     50 . 7.61 56.0 -14.3
     50 . 3.12 73.6 0.9
-    extend left
+    extend right
     50 51 6.64 247.2 -24.5  # sommet p12
     # extend auto
     51 . 6.65 251.9 -22.5
@@ -690,7 +692,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     51 . 10.57 316.8 -69.3
     51 . 5.61 325.8 -75.0
     51 . 12.02 315.4 -71.2
-    extend left
+    extend right
     51 52 12.50 279.3 -62.6 # base p12, eau
     # extend auto
     52 . 1.88 136.8 -4.6
@@ -705,8 +707,8 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     52 . 11.13 192.9 69.2
     52 . 8.18 228.4 -8.4
     52 . 8.47 233.3 -19.0
-    extend left
-    52 53 6.98 226.5 -8.9 # sommet r5, avec eau en bas
+    extend right
+    52 53 6.98 226.5 -8.9 # sommet R5, avec eau en bas
     # extend auto
     53 . 1.00 327.6 -15.0
     53 . 6.16 287.3 -57.5
@@ -717,7 +719,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     53 . 7.49 245.2 54.5
     53 . 5.65 249.8 -4.9
     53 . 1.73 15.3 0.7
-    extend left
+    extend right
     53 54 9.74 255.4 -21.6
     # extend auto
     54 . 0.94 160.1 3.5
@@ -730,7 +732,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     54 . 2.88 78.0 5.4
     54 . 11.23 79.6 37.8
     54 . 6.02 236.6 -21.5
-    extend left
+    extend right
     54 PTRIXR2 9.27 241.4 -9.6  # sommet R2, arrivée eau en rive droite, calcite
     # extend auto
     PTRIXR2 . 2.02 333.3 0.6
@@ -743,7 +745,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     PTRIXR2 . 1.49 36.8 7.0
     PTRIXR2 . 1.25 152.3 -80.8
     PTRIXR2 . 0.92 47.2 -55.2
-    extend left
+    extend right
     PTRIXR2 56 5.82 270.9 -14.9
     # extend auto
     56 . 0.57 168.8 -1.1
@@ -758,7 +760,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     56 . 1.60 109.1 9.0
     56 . 5.89 74.6 9.5
     56 . 5.52 79.5 -2.6
-    extend left
+    extend right
     56 57 12.09 254.6 -25.6
     # extend auto
     57 . 1.12 150.2 1.1
@@ -777,7 +779,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     57 . 5.89 77.1 19.9
     57 . 5.51 69.0 20.6
     57 . 10.13 244.5 -15.0
-    extend left
+    extend right
     57 58 10.70 245.3 -14.0
     # extend auto
     58 . 0.73 355.2 23.9
@@ -791,7 +793,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     58 . 2.74 262.9 -32.4
     58 . 5.32 251.8 -10.0
     58 . 2.49 257.9 12.2
-    extend left
+    extend right
     58 59 5.71 249.6 23.1
     # extend auto
     59 . 0.94 176.5 -0.3
@@ -805,7 +807,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     59 . 2.86 109.1 -4.6
     59 . 3.00 86.5 -7.3
     59 . 3.29 70.4 -40.8
-    extend left
+    extend right
     59 60 4.64 238.8 -26.7  # sommet P12, tremie
     # extend auto
     60 . 1.69 13.9 24.6
@@ -820,7 +822,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     60 . 10.11 155.9 -84.6
     60 . 1.83 254.2 -73.4
     60 . 5.61 113.1 -76.7
-    extend left
+    extend right
     60 61 10.16 223.2 -77.4
     # extend auto
     61 . 6.76 231.5 65.3
@@ -834,7 +836,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     61 . 4.12 267.0 -39.7
     61 . 3.24 280.8 -26.5
     61 . 4.00 269.7 -19.3
-    extend left
+    extend right
     61 62 7.10 261.1 -22.4
     # extend auto
     62 . 0.92 173.7 15.2
@@ -851,7 +853,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     62 . 4.22 230.6 21.3
     62 . 5.61 238.2 6.8
     62 . 7.01 196.1 61.8
-    extend left
+    extend right
     62 63 6.50 233.5 18.9 # blocs, mc
     # extend auto
     63 . 0.66 326.6 9.2
@@ -861,7 +863,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     63 . 3.30 148.5 74.0
     63 . 2.21 269.3 -53.2
     63 . 2.20 254.3 -53.3
-    extend left
+    extend right
     63 64 6.36 246.7 -18.9
     # extend auto
     64 . 0.65 149.2 14.7
@@ -872,8 +874,8 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     64 . 7.50 241.3 -34.0
     64 . 4.05 249.7 -26.4
     64 . 5.01 232.7 -21.9
-    extend left
-    64 65 7.80 237.8 -19.8  # sommet P5, ca aspirant vers fond
+    extend right
+    64 65 7.80 237.8 -19.8  # sommet P5, c.a. aspirant vers fond
     # extend auto
     65 . 0.77 357.8 -3.3
     65 . 3.01 332.0 -30.3
@@ -884,7 +886,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     65 . 1.72 41.7 7.3
     65 . 1.88 295.1 -61.3
     65 . 5.49 320.8 -52.5
-    extend left
+    extend right
     65 PTRIXR3 5.02 309.9 -52.1 # bitte
     # extend auto
     PTRIXR3 . 0.48 175.2 2.0
@@ -899,7 +901,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     PTRIXR3 . 0.95 272.1 58.8
     PTRIXR3 . 9.39 236.3 34.1
     PTRIXR3 . 8.46 225.9 59.5
-    extend left
+    extend right
     PTRIXR3 66 6.32 247.3 7.9 # sommet puits apres blocs
     # extend auto
     66 . 0.88 150.3 6.3
@@ -913,7 +915,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     66 . 7.61 252.5 -76.3
     66 . 4.25 15.7 -84.7
     66 . 1.42 91.1 -59.8
-    extend left
+    extend right
     66 67 13.09 232.2 -71.0 # base p13, bloc vertical
     # extend auto
     67 . 1.91 141.6 32.1
@@ -924,7 +926,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     67 . 2.73 288.6 36.7
     67 . 2.43 217.7 20.9
     67 . 5.74 255.5 56.0
-    extend ignore
+    extend left
     67 68 1.91 102.9 20.9
     # extend auto
     67 . 1.92 102.1 20.1
@@ -932,9 +934,9 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     67 . 1.34 18.1 -71.9
     67 . 4.45 158.4 -79.0
     67 . 2.13 85.6 -47.2
-    extend right
-    68 69 6.47 91.5 -55.6 # riviere
     extend left
+    68 69 6.47 91.5 -55.6 # riviere
+    extend right
     67 70 2.86 270.9 18.8
     # extend auto
     70 . 2.45 166.4 16.2
@@ -948,7 +950,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     70 . 3.70 211.4 3.9
     70 . 5.07 235.4 -22.3
     70 . 9.64 238.3 -19.6
-    extend left
+    extend right
     70 71 8.17 238.6 -5.7
     # extend auto
     71 . 0.85 332.7 3.4
@@ -957,7 +959,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     71 . 6.81 249.0 -27.6
     71 . 6.11 73.7 -18.8
     71 . 3.52 76.7 -31.9
-    extend ignore
+    extend right
     71 72 6.04 249.7 -11.8
     # extend auto
     71 . 6.48 249.9 -11.7
@@ -973,7 +975,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     72 . 5.42 244.6 -31.1
     72 . 6.31 217.8 57.0
     72 . 9.48 238.2 21.6
-    extend left
+    extend right
     72 73 7.36 244.9 -12.4
     # extend auto
     73 . 0.41 328.9 -0.1
@@ -983,7 +985,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     73 . 7.95 239.1 0.0
     73 . 10.32 228.3 54.9
     73 . 12.84 239.8 15.5
-    extend left
+    extend right
     73 74 11.03 243.1 1.7 # arrivée eau rive gauche au plafond
     # extend auto
     74 . 0.83 164.8 5.7
@@ -1000,7 +1002,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     74 . 9.37 74.8 40.1
     74 . 5.50 60.5 -11.8
     74 . 7.77 249.1 -17.9
-    extend left
+    extend right
     74 75 7.40 250.0 -18.3
     # extend auto
     75 . 0.70 345.2 -5.9
@@ -1016,7 +1018,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     75 . 3.33 66.3 22.8
     75 . 4.20 62.3 -40.1
     75 . 4.53 66.1 -18.0
-    extend left
+    extend right
     75 76 6.53 282.8 -7.5
     # extend auto
     76 . 0.58 194.4 6.8
@@ -1030,7 +1032,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     76 . 5.85 289.3 18.7
     76 . 3.02 274.9 -6.4
     76 . 5.20 281.6 -27.6
-    extend left
+    extend right
     76 77 4.97 279.7 -1.6 # marmittes, galets
     # extend auto
     77 . 0.89 172.3 -2.0
@@ -1045,7 +1047,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     77 . 2.42 62.1 10.9
     77 . 3.91 86.3 9.0
     77 . 1.44 109.4 21.3
-    extend left
+    extend right
     77 78 7.24 254.9 -10.0
     # extend auto
     78 . 0.96 160.4 -10.3
@@ -1057,7 +1059,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     78 . 1.09 98.3 21.9
     78 . 2.47 50.2 8.9
     78 . 1.69 74.0 -21.2
-    extend left
+    extend right
     78 79 4.20 251.5 -9.1
     # extend auto
     79 . 0.85 348.5 7.7
@@ -1071,7 +1073,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     79 . 6.65 356.8 68.0
     79 . 5.88 281.3 32.1
     79 . 9.77 275.0 22.6
-    extend left
+    extend right
     79 80 4.60 273.6 -6.1
     # extend auto
     80 . 0.54 188.1 -3.0
@@ -1086,7 +1088,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     80 . 2.78 99.1 -0.8
     80 . 3.67 95.0 -26.5
     80 . 4.55 260.9 -7.7
-    extend left
+    extend right
     80 81 5.06 262.0 -6.2
     # extend auto
     81 . 0.92 332.2 5.9
@@ -1097,7 +1099,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     81 . 4.16 283.7 78.6
     81 . 1.35 277.0 3.3
     81 . 4.81 263.3 42.7
-    extend left
+    extend right
     81 82 2.25 259.3 21.8
     # extend auto
     82 . 0.38 171.4 3.8
@@ -1113,7 +1115,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     82 . 2.10 68.2 8.6
     82 . 4.28 71.7 5.2
     82 . 6.04 238.3 -33.1
-    extend left
+    extend right
     82 83 4.42 239.4 -12.2  # coulee calcite rive dte
     # extend auto
     83 . 1.95 296.6 -69.0
@@ -1129,7 +1131,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     83 . 4.01 218.0 -17.7
     83 . 5.45 228.5 -14.1
     83 . 2.06 248.2 -12.6
-    extend left
+    extend right
     83 84 7.43 240.8 -4.8 # c.a. aspirant fort
     # extend auto
     84 . 1.42 341.3 -0.7
@@ -1146,7 +1148,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     84 . 3.70 274.1 13.4
     84 . 6.36 263.3 13.5
     84 . 5.17 254.6 16.0
-    extend left
+    extend right
     84 85 10.45 256.5 17.6
     # extend auto
     85 . 0.78 163.8 -0.5
@@ -1162,7 +1164,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     85 . 2.26 86.3 -18.2
     85 . 6.59 77.2 -33.3
     85 . 3.49 81.3 -19.1
-    extend left
+    extend right
     85 86 5.90 225.9 -37.8  # arrivée eau rive dte
     # extend auto
     86 . 0.77 346.3 -4.9
@@ -1172,7 +1174,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     86 . 4.70 271.0 4.0
     86 . 7.70 344.3 64.9
     86 . 9.93 285.1 50.4
-    extend left
+    extend right
     86 87 4.30 266.3 -10.7
     # extend auto
     87 . 0.63 188.2 7.0
@@ -1184,7 +1186,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     87 . 2.06 106.8 -29.9
     87 . 2.37 98.0 4.5
     87 . 6.32 71.9 53.3
-    extend left
+    extend right
     87 88 5.41 260.0 -4.4
     # extend auto
     88 . 0.89 349.3 1.9
@@ -1196,14 +1198,14 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     88 . 1.33 61.5 -1.4
     88 . 2.40 73.7 -10.8
     88 . 2.63 73.8 -36.5
-    extend left
+    extend right
     88 89 0.77 298.2 -37.9
     # extend auto
     89 . 0.60 3.8 0.5
     89 . 1.94 284.5 -21.6
     89 . 5.01 263.9 -36.8
     89 . 1.93 251.9 -9.1
-    extend left
+    extend right
     89 PTRSAXR1 5.82 265.2 -15.8  # sommet R5
     # extend auto
     PTRSAXR1 . 2.50 74.5 -4.4
@@ -1216,7 +1218,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     PTRSAXR1 . 4.63 4.3 -70.3
     PTRSAXR1 . 2.56 276.2 -10.3
     PTRSAXR1 . 2.72 305.9 -20.7
-    extend left
+    extend right
     PTRSAXR1 91 5.48 292.4 4.4  # depart au dessus
     extend right
     PTRSAXR1 92 3.93 17.4 -72.3 # base p5
@@ -1243,7 +1245,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     93 . 3.20 277.0 -8.6
     93 . 2.32 286.2 -13.1
     93 . 6.19 285.4 -2.7
-    extend left
+    extend right
     93 94 4.01 284.3 -20.0
     # extend auto
     94 . 0.74 10.5 -5.7
@@ -1254,7 +1256,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     94 . 0.86 359.9 -63.4
     94 . 2.35 315.9 -52.9
     94 . 3.57 311.1 -46.5
-    extend left
+    extend right
     94 95 2.12 317.8 -30.8
     # extend auto
     95 . 1.31 280.4 9.5
@@ -1264,7 +1266,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     95 . 2.11 242.0 -65.6
     95 . 3.42 245.8 61.9
     95 . 3.44 233.7 -59.4
-    extend left
+    extend right
     95 96 5.80 234.1 -58.5  # siphon
     93 97 1.20 203.6 41.4
     # extend auto
@@ -1276,7 +1278,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     97 . 3.81 174.7 51.7
     97 . 3.80 181.2 61.3
     97 . 1.36 223.5 43.5
-    extend vertical
+    extend right
     97 98 5.03 170.2 50.6
     # extend auto
     98 . 0.95 322.1 9.5
@@ -1288,7 +1290,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     98 . 0.91 283.3 4.6
     98 . 2.39 281.0 56.4
     98 . 3.61 273.4 23.4
-    extend left
+    extend right
     98 99 5.90 276.4 -9.5 # depart au dessus, puits en dessous
     # extend auto
     99 . 1.21 245.5 1.1
@@ -1311,7 +1313,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     100 . 2.21 236.4 75.3
     100 . 3.39 273.7 35.1
     100 . 3.54 331.6 14.9
-    extend left
+    extend right
     100 101 2.86 264.2 4.8
     # extend auto
     101 . 0.88 27.5 5.0
@@ -1321,7 +1323,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     101 . 2.80 94.3 -0.3
     101 . 3.43 78.7 15.8
     101 . 2.48 337.4 -38.4
-    extend left
+    extend right
     101 102 3.35 317.9 12.4 # sommet P10
     # extend auto
     102 . 0.46 211.1 0.5
@@ -1347,7 +1349,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     103 . 1.48 120.7 -54.1
     103 . 3.14 86.0 -67.0
     103 . 3.31 84.2 -51.6
-    extend right
+    extend left
     103 104 3.31 84.3 -49.3 # siphon
     # extend auto
     104 . 3.60 171.2 -4.1
@@ -1363,7 +1365,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     105 . 4.35 342.2 6.9
     105 . 2.34 11.6 3.0
     105 . 2.10 330.5 -19.6
-    extend left
+    extend right
     105 106 4.40 214.9 -51.8  # base puits
     # extend auto
     106 . 2.16 352.3 -36.8
@@ -1377,7 +1379,7 @@ survey 20220913MiroldaXR1 -title "20220913MiroldaXR1"
     106 . 6.97 240.7 71.5
     106 . 6.34 300.6 73.7
     106 . 1.95 238.9 17.7
-    extend left
+    extend right
     106 PTRXR1 1.58 289.9 10.6  # arret topo
   endcenterline
 

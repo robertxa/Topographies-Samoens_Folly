@@ -22,7 +22,7 @@ survey Yougo -title "Yougo"
     PTRMADG0 . 0.57 286.6 -4.5
     PTRMADG0 . 0.93 73.3 83.0
     PTRMADG0 . 1.45 133.2 -83.7
-    extend ignore
+    extend left
     PTRMADG0 01 1.88 155.0 1.1  # départ ptrmadg 0 du 12/09/22
     # extend auto
     01 . 1.78 154.5 1.5
@@ -34,28 +34,28 @@ survey Yougo -title "Yougo"
     01 . 2.30 194.8 -70.6
     01 . 4.83 253.9 -1.2
     01 . 4.71 253.7 -0.8
-    extend ignore
+    extend left
     01 2 4.72 253.6 -0.9  # stalagmites 
     # extend auto
     2 . 10.49 340.6 28.1
     2 . 0.81 175.0 7.7
     2 . 0.80 287.7 81.3
     2 . 0.84 173.5 -88.0
-    extend vertical
+    extend left
     2 3 4.05 262.6 15.0
     # extend auto
     3 . 2.93 331.9 12.2
     3 . 0.65 158.5 2.2
     3 . 1.29 319.4 52.9
     3 . 1.46 326.7 -77.3
-    extend vertical
+    extend left
     3 4 5.51 263.3 -11.0
     # extend auto
     4 . 2.20 189.8 -3.6
     4 . 1.33 0.9 5.4
     4 . 0.55 124.7 84.2
     4 . 1.55 142.0 -84.9
-    extend vertical
+    extend left
     4 5 5.91 270.0 16.4
     # extend auto
     5 . 1.01 43.4 33.3
@@ -69,22 +69,22 @@ survey Yougo -title "Yougo"
     6 . 2.23 286.2 -17.1
     6 . 0.54 16.0 83.0
     6 . 1.56 96.2 -85.7
-    extend right
-    6 7 11.39 350.5 24.9  # conduite forcé
+    extend left
+    6 7 11.39 350.5 24.9  # conduite forcée
     # extend auto
     7 . 1.65 265.1 11.7
     7 . 0.57 82.4 1.7
     7 . 0.45 307.6 80.1
     7 . 0.60 38.7 -86.1
-    extend right
-    7 8 8.86 323.2 10.8 # conduite forcé concrétion poubelle 
+    extend left
+    7 8 8.86 323.2 10.8 # conduite forcée concrétion poubelle 
     # extend auto
     8 . 2.75 212.0 -2.1
     8 . 0.95 25.7 7.3
     8 . 0.56 263.4 83.0
     8 . 1.38 208.7 -76.0
-    extend vertical
-    8 9 12.69 273.6 -12.8 # grosse conduite forcé 
+    extend left
+    8 9 12.69 273.6 -12.8 # grosse conduite forcée 
     # extend auto
     9 . 5.41 69.0 13.3
     9 . 0.56 250.1 -4.2
@@ -95,7 +95,7 @@ survey Yougo -title "Yougo"
     9 . 8.86 345.0 8.6
     9 . 7.41 345.0 8.6
     9 . 8.53 344.8 8.5
-    extend right
+    extend left
     9 10 7.42 343.7 8.9
     # extend auto
     10 . 2.36 250.5 14.8
@@ -105,22 +105,22 @@ survey Yougo -title "Yougo"
     10 . 2.67 152.0 17.0
     10 . 3.81 114.7 30.0
     10 . 2.81 88.0 30.3
-    extend right
-    10 11 10.57 318.3 17.1  # ptr yolrap02
+    extend left
+    10 PTRYOLRAP02 10.57 318.3 17.1  # ptr yolrap02
     # extend auto
-    11 . 1.58 243.4 -10.1
-    11 . 0.77 38.9 -0.7
-    11 . 0.26 328.3 78.9
-    11 . 0.55 215.3 -81.6
-    11 . 1.01 318.4 16.8
-    extend right
-    11 12 9.37 324.9 18.1 # sorties passage étroit 
+    PTRYOLRAP02 . 1.58 243.4 -10.1
+    PTRYOLRAP02 . 0.77 38.9 -0.7
+    PTRYOLRAP02 . 0.26 328.3 78.9
+    PTRYOLRAP02 . 0.55 215.3 -81.6
+    PTRYOLRAP02 . 1.01 318.4 16.8
+    extend left
+    PTRYOLRAP02 12 9.37 324.9 18.1 # sorties passage étroit 
     # extend auto
     12 . 0.65 197.2 2.8
     12 . 0.38 11.1 -4.6
     12 . 0.64 352.2 77.9
     12 . 0.47 184.0 -71.6
-    extend right
+    extend left
     12 13 1.68 281.6 3.0  # main courante vieille corde en place.
     # extend auto
     13 . 0.34 18.4 -1.3
@@ -128,7 +128,7 @@ survey Yougo -title "Yougo"
     13 . 0.39 288.9 85.5
     13 . 0.98 273.7 -63.4
     13 . 2.59 293.5 -0.2
-    extend right
+    extend left
     13 14 2.17 293.6 -0.9 # sommet P6 corde vieille 
     # extend auto
     14 . 0.85 222.8 -0.8
@@ -139,8 +139,8 @@ survey Yougo -title "Yougo"
     14 . 1.56 190.5 -79.8
     14 . 7.68 275.3 -41.4
     14 . 7.67 274.4 -43.0
-    extend ignore
-    14 15 7.74 274.3 -43.1  # bas du puits non descendu ptr yo le ap 03
+    extend left
+    14 PTRYOLEAP03 7.74 274.3 -43.1  # bas du puits non descendu ptr yo le ap 03
     extend left
     5 5A 5.35 196.7 -37.6
     # extend auto
@@ -149,16 +149,16 @@ survey Yougo -title "Yougo"
     5A . 2.65 225.5 85.8
     5A . 0.54 245.2 -69.5
     5A . 4.03 201.9 0.2
-    extend ignore
-    5A 5B 3.36 183.2 -12.3  # ptr yo LRAP 04
+    extend left
+    5A PTRYOLRAP04 3.36 183.2 -12.3  # ptr yo LRAP 04
     # extend auto
-    5B . 3.41 184.0 -12.1
-    5B . 0.60 215.9 3.6
-    5B . 2.62 321.0 5.5
-    5B . 2.46 337.0 80.1
-    5B . 1.38 78.6 -81.9
-    extend ignore
-    5B 5C 2.52 325.0 -6.0 # sommet r4 vieille échelle 
+    PTRYOLRAP04 . 3.41 184.0 -12.1
+    PTRYOLRAP04 . 0.60 215.9 3.6
+    PTRYOLRAP04 . 2.62 321.0 5.5
+    PTRYOLRAP04 . 2.46 337.0 80.1
+    PTRYOLRAP04 . 1.38 78.6 -81.9
+    extend left
+    PTRYOLRAP04 5C 2.52 325.0 -6.0 # sommet r4 vieille échelle 
     # extend auto
     5C . 2.52 320.7 -4.1
     5C . 2.59 182.9 1.6
@@ -211,7 +211,7 @@ survey Yougo -title "Yougo"
     2.5 . 0.41 336.0 16.5
     2.5 . 7.57 118.6 77.6
     2.5 . 1.54 3.0 -88.1
-    extend vertical
+    extend right
     2.5 2.6 3.78 88.2 27.7
     # extend auto
     2.6 . 0.56 188.8 17.9
@@ -227,7 +227,7 @@ survey Yougo -title "Yougo"
     2.7 . 3.15 266.2 8.1
     2.7 . 12.88 148.2 70.8
     2.7 . 1.94 173.4 -76.5
-    extend left
+    extend right
     2.7 2.8 3.37 149.2 2.1  # base de puits et ressauts remontant 
     # extend auto
     2.8 . 2.60 2.7 8.8
@@ -237,7 +237,7 @@ survey Yougo -title "Yougo"
     2.8 . 5.45 280.5 -1.4
     2.8 . 10.49 243.2 71.8
     2.8 . 1.69 290.4 -84.1
-    extend ignore
+    extend right
     2.8 2.9 18.85 55.2 55.3 # vers sommet du puits non remonté
   endcenterline
 
