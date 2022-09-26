@@ -26,8 +26,8 @@ survey Lambourdin -title "Perte du Lambourdin" -entrance Lambourdin
     units compass clino degrees
     data normal from to length compass clino left right up down
     flags approximate
-    Lambourdin   1   8 30   80  0.3 0.3 0   4
-    1   2   20  230 45  0.2 0.2 0.3 0.3
+    Lambourdin   1   8 30   -80  0.3 0.3 0   4
+    1   2   20  230 -45  0.2 0.2 0.3 0.3
     2   3   3   210 0   0.2 0.2 0.1 0.1
     flags not approximate
   

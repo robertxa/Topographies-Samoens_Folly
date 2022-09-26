@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-layout Entrances_coords_JBBa
+layout Entrances_coords_Peterets
 # Layout where we define the different variables that contain the text with 
 # the entrance coordinates we want to print in the header.
 # We need one variable per entrance.
@@ -14,16 +14,17 @@ layout Entrances_coords_JBBa
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationJBBa{B3    --  Lat. : 46.101166 N ; Long. : 6.788412 E ; Alt. : 2090 m}
+		%\def\thlocationPeterets{Peterets    --  Lat. : 46.07892 N ; Long. : 6.73975 E ; Alt. : 724 m}
+		\def\thlocationPeterets{Lat. : 46.07892 N ; Long. : 6.73975 E ; Alt. : 724 m}
 	endcode 
 	
 endlayout
 
 
-layout Coords_Header_JBBa
+layout Coords_Header_Peterets
 # Layout that set the presentation for the entrance coordinates.
 	
-	copy Entrances_coords_JBBa
+	copy Entrances_coords_Peterets
 	# it calls the layout above Entrances_coords where we defined the different 
 	# variables that contain the text with 
 	# the entrance coordinates we want to print in the header.
@@ -41,8 +42,8 @@ layout Coords_Header_JBBa
 			\edef\tmp{\thjunk} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thjunk\vss}
 			\fi
-			\edef\tmp{\thlocationJBBa} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm  \ss\thlocationJBBa\vss}	% The first one should be without hskip
+			\edef\tmp{\thlocationPeterets} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationPeterets\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode

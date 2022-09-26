@@ -5,20 +5,435 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
-survey F126 -title "Gouffre de la Rondelle Jaune - F126"
+survey F126 -title "Gouffre de la Rondelle Jaune - F126" -entrance F126
 
  centerline -extend right    
     
-    date 2021.08.12
-        team "Xavier Robert"
+    #date 2021.08.12
+        #team "Xavier Robert"
 
     cs long-lat   
 
     #fix F126 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses
     cs EPSG:27572   # LII étendu
-    fix F126 944110 2130860	2330
-    station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
-  
+    fix F126 944110 2130860	2230
+    #station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    #	??	0	0	-90	# VF58 - F126 départ du haut du P37
+    flags approximate
+    F126	0	20	100	10	# Forçage fictif par Xavier le 26/09/2022
+    flags not approximate
+    0	VF3-28-1	25.17	74.7	73.8	
+    VF3-28-1	VF3-28-2	3.95	73.8	3.6	
+    VF3-28-2	VF3-28-3	3.48	107.1	40.5	
+    VF3-28-3	VF3-28-4	5.35	99	-9.45	
+    VF3-28-4	VF3-28-5	2.08	167.4	27	
+    #VF3-28-5	VF3-28-6	6.76	0	90	
+    VF3-28-5	VF3-28-6	6.76	0	90	
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    #		0	0	-90	# Je ne comprends pas la numérotation des stations, ni comment ça va s'intégrer à la série précédente
+VF3-28-6	VF3-28-7	4.96	112.5	-16.2	#1
+VF3-28-7	VF3-28-8	29.84	128.7	88.2	#2
+VF3-28-8	VF3-28-9	16.24	68.4	78.3	#3
+VF3-28-9	VF3-28-10	3.52	26.1	9.9	#4
+VF3-28-10	VF3-28-11	21.47	354.6	73.8	#5
+VF3-28-11	VF3-28-12	5.7	55.8	70.2	#6
+VF3-28-12	VF3-28-13	3.78	139.5	64.8	#7
+VF3-28-13	VF3-28-14	3.6	55.8	0.9	#8
+VF3-28-14	VF3-28-15	7.43	113.4	54	#9
+VF3-28-15	VF3-28-16	1.47	76.5	38.7	#10
+VF3-28-16	VF3-28-17	2.76	0	90	#11
+VF3-28-17	VF3-28-18	3.76	22.5	22.5	#12
+VF3-28-18	VF3-28-19	4.94	29.7	51.3	#13
+VF3-28-19	VF3-28-20	3.62	63	41.4	#14
+VF3-28-20	VF3-28-21	3.88	108	29.7	#15
+VF3-28-21	VF3-28-22	11.55	99	88.2	#16
+VF3-28-22	VF3-28-23	0	0	-90	#nouveau compteur
+VF3-28-23	VF3-28-24	5.24	277.2	4.5	#17
+VF3-28-24	VF3-28-25	5.41	288.9	9.9	#18
+VF3-28-25	VF3-28-26	5.67	270	16.2	#19
+VF3-28-26	VF3-28-27	6.59	279	9.9	#20
+#Cette partie de topo de VF58 doit être sur un autre fichier … à recopier ici (car VF58 figure déjà sur Criou3D)
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#	???	0	0	-90	# VF53, Jonction topo François/VF3, départ base puits étroit VF3
+VF3-28-27	VF3-23-1	8.5	241.2	-57.6	
+VF3-23-1	VF3-23-2	3.08	225	32.4	
+VF3-23-2	Francois7	9.89	316.8	0.9	# station 7 de François
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+
+#	55		0	-90	# VF54 fin galerie fossile F126 avec paléo-siphon
+Francois7	VF3-34-56	7.69	252	-36	
+VF3-34-56	VF3-34-57	5.79	329.4	-50.4	
+VF3-34-57	VF3-34-58	4.49	263.7	7.2	
+VF3-34-58	VF3-34-59	2.46	2.7	0	
+VF3-34-59	VF3-34-60	3.36	328.5	-59.4	
+VF3-34-60	VF3-34-61	3.07	3.6	1.8	
+VF3-34-61	VF3-34-62	5.66	306	0.9	
+VF3-34-62	VF3-34-63	1.18	279	-11.7	
+VF3-34-63	VF3-34-64	2.5	311.4	-19.8	
+VF3-34-64	VF3-34-65	2.4	321.3	62.1	
+VF3-34-65	VF3-34-66	3.05	90	-26.1	
+VF3-34-66	VF3-34-67	3.19	36	-30.6	
+#					
+VF3-34-65	VF3-34-68	4.5	264.6	49.5	# Départ de 65
+VF3-34-68	VF3-34-69	7.35	27.9	11.7	
+VF3-34-69	VF3-34-70	2.1	298.8	-39.15	
+VF3-34-70	VF3-34-71	6.83	256.5	38.7	
+VF3-34-71	VF3-34-72	0.8	262.8	18	
+VF3-34-72	VF3-34-73	9.41	246.6	36.9	
+VF3-34-73	VF3-34-74	7.13	266.4	23.4	
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    #	33				# VF55, Fond trémie désob. départ station 33
+VF3-34-74	VF3-35-1	3.93	309.6	30.6	# PAS 0 LA BONNE PLACE !!!
+VF3-35-1	VF3-35-2	6.87	249.3	33.3	
+VF3-35-2	VF3-35-3	5.9	210.6	33.3	
+VF3-35-3	VF3-35-4	3.25	213.3	30.6	
+VF3-35-4	VF3-35-5	1.79	170.1	36	
+VF3-35-5	X	2.16	197.1	81.9	#X
+X	Y	3.22	184.5	32.4	#Y
+Y	VF3-35-6	2.99	260.1	35.1	# sommet du P8 (t rouge)Z
+VF3-35-6	V	2.34	162	2.7	#V
+V	W	2.38	287.1	-1.8	#W
+W	J	6.78	216.9	44.1	#J
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+0	VF3-26-0	0.55	229.5	0	# VF56, F126, après l'étroiture en Z du méandre des mille marches et plus! (topo en emontant boite devant de 10 à 0, puis en descendant de 11 à 36 boite derrière)
+VF3-26-0	VF3-26-1	1.72	277.2	51.3	
+VF3-26-1	VF3-26-2	4.68	214.2	4.5	
+VF3-26-2	VF3-26-3	0.66	153	-17.1	
+VF3-26-3	VF3-26-4	3.99	207	17.1	
+VF3-26-4	VF3-26-5	1.17	159.3	3.6	
+VF3-26-5	VF3-26-6	2.01	235.8	28.8	
+VF3-26-6	VF3-26-7	1.04	189	32.4	
+VF3-26-7	VF3-26-8	2.04	208.8	13.5	
+VF3-26-8	VF3-26-9	3.22	162	72.9	
+VF3-26-9	VF3-26-10		0   0	-90	
+
+VF3-26-10	VF3-26-11	4.03	159.3	10.8	
+VF3-26-11	VF3-26-12	2.94	200.7	13.5	
+VF3-26-12	VF3-26-13	2.62	207	20.7	
+VF3-26-13	VF3-26-14	2.23	166.5	11.7	
+VF3-26-14	VF3-26-15	1.81	155.7	18	
+VF3-26-15	VF3-26-16	3.55	117.9	45	
+VF3-26-16	VF3-26-17	0.48	213.3	0	
+VF3-26-17	VF3-26-18	1.65	234	19.8	
+VF3-26-18	VF3-26-19	2.03	189	31.5	
+VF3-26-19	VF3-26-20	4.32	270	38.7	
+VF3-26-20	VF3-26-21	0.96	294.3	13.5	
+VF3-26-21	VF3-26-22	1.33	211.5	8.1	
+VF3-26-22	VF3-26-23	4.76	220.5	22.5	
+VF3-26-23	VF3-26-24	2.69	158.4	54	
+VF3-26-24	VF3-26-25	3.82	243	14.4	
+VF3-26-25	VF3-26-26	1.19	207	31.5	
+VF3-26-26	VF3-26-27	0.57	266.4	0	
+VF3-26-27	VF3-26-28	1.73	234	18	
+VF3-26-28	VF3-26-29	2.9	216	54	
+VF3-26-29	VF3-26-30	2.68	261	37.8	
+VF3-26-30	VF3-26-31	3.28	171	2.7	
+VF3-26-31	VF3-26-32	2.8	216	28.8	
+VF3-26-32	VF3-26-33	4.1	281.7	41.4	
+VF3-26-33	VF3-26-34	2.75	234	18.9	
+VF3-26-34	VF3-26-35	4.61	0	90	
+VF3-26-35	VF3-26-36	6.52	202.5	11.7	
+
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    #???			0	-90	# VF57, F126 de l'étroiture au début de la galerie de la bricole
+VF3-26-36	VF-27-50	1.2	184.5	12.6	
+VF-27-50	VF-27-51	0.96	147.6	23.85	
+VF-27-51	VF-27-52	1.99	184.5	32.4	
+VF-27-52	VF-27-53	1.6	189	8.1	
+VF-27-53	VF-27-54	3.05	171	14.4	
+VF-27-54	VF-27-55	1.09	130.5	32.4	
+VF-27-55	VF-27-56	4.67	167.4	23.4	
+
+VF-27-56	VF-27-57	1.84	141.3	26.1	
+VF-27-57	VF-27-58	4.68	0	90	
+VF-27-58	VF-27-59	4.43	130.5	6.3	
+
+VF-27-59	VF-27-60	1.94	194.4	27.9	
+VF-27-60	VF-27-61	1.66	229.5	15.3	
+
+VF-27-61	VF-27-62	2.37	199.8	36.9	
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#???	???		0	-90	# Départ de la bifurque F126 avec galerie de la bricole en direction de l'amont
+VF-27-62	2.1	3.31	157.5	12.6	
+2.1	2.2	4.61	99.9	3.6	
+2.2	2.3	1.57	84.6	-0.9	
+#			0	-90	
+2.3	2.4	10.86	69.3	28.8	
+#			0	-90	
+2.4	2.5	7.46	72.9	13.5	
+#			0	-90	
+2.5	2.6	7.74	63	6.3	
+2.6	2.7	2.94	72	-11.7	
+2.7	2.8	9.43	81.9	27.9	
+#			0	-90	
+2.8	2.9	11.6	55.8	-8.1	
+					
+VF-27-62	1.63	0	0	-90	# Départ de la bifurque F126 avec galerie de la bricole en direction de l'aval
+1.63	1.64	5.29	276.3	-19.8	
+1.64	1.65	5.2	215.1	-34.2	
+1.65	1.66	6.63	228.6	21.6	
+1.66	1.67	8.28	307.8	9	
+#			0	-90	
+1.67	1.68	8.39	271.8	0.9	
+1.68	1.69	5.85	323.1	15.3	
+1.69	1.7	2.62	305.1	5.4	
+1.7	1.71	4.61	258.3	-1.8	
+1.71	1.72	5.61	292.5	11.7	
+1.72	1.73	8.48	162.9	40.5	
+#1.73	1.74	7.49	253.8	-17.1	
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    #???	1.73		0	-90	#F126 aval galerie de la bricole
+1.73	1.74	9.13	233.1	24.3	
+1.74	1.75	4.23	201.6	49.5	
+1.75	1.76	2.05	175.5	-0.9	
+1.76	1.77	2.92	209.7	6.3	
+1.77	1.78	4.34	135.9	-1.8	
+1.78	1.79	3.65	159.3	-6.3	
+1.79	1.80	2.09	121.5	-5.4	
+1.80	1.81	7.08	98.1	31.5	
+1.81	1.82	2.75	141.3	20.7	
+1.82	1.83	2.1	162.9	7.2	
+1.83	1.84	4.43	0	90	
+1.84	1.85	2.06	171.9	16.2	
+#			0	-90	
+1.85	1.86	5.18	186.3	19.8	
+1.86	1.87	19.09	214.2	43.2	
+1.87	1.88	6.87	192.6	36	
+1.88	1.89	5.38	215.1	34.2	
+1.89	1.90	3.45	241.2	10.8	
+1.90	1.91	3.4	221.4	15.3	
+1.91	1.92	14.06	207	17.1	
+1.92	1.93	6.24	199.8	50.4	
+1.93	1.94	4.87	46.8	46.8	
+1.94	1.95	4.01	124.2	36.9	
+1.95	1.96	2.9	91.8	68.4	
+1.96	1.97	5.16	253.8	20.7	
+1.97	1.98	2.11	288	-6.3	
+1.98	1.99	4.04	195.3	-27	
+1.99	1.100	7	210.6	8.1	
+1.100	1.101	6.51	253.8	15.3	
+1.101	1.102	2.64	241.2	44.1	
+1.102	1.103	3.37	279	29.7	
+1.103	1.104	5.72	223.2	60.3	
+1.104	1.105	3.61	225.9	7.2	
+1.105	1.106	2.64	0	90	
+1.106	1.107	9	205.2	10.8	
+1.107	1.108	14.01	179.1	29.7	
+1.108	1.109	5.74	185.4	36	
+1.109	1.110	7.12	203.4	29.7	
+1.110	1.111	4.36	185.4	5.4	
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#	???		0		# F126 amont galerie de la bricole
+2.9	1	11.67	54.9	-20.7	
+1	2	5.89	49.5	-50.4	
+2	3	2.29	38.7	-42.3	
+3	4	6.8	61.2	-36.9	
+4	5	10.22	70.2	22.5	
+5	6	8.05	69.3	8.1	
+6	7	8.72	56.7	-26.1	
+7	8	5.83	149.4	20.7	
+8	9	10.6	170.1	15.3	
+9	10	8.46	92.7	10.8	
+#			0	-90	
+10	11	15.29	150.3	5.4	
+11	12	8.79	76.5	-29.7	
+12	13	6.64	45	-28.8	
+13	14	4.31	35.1	37.8	
+14	15	4.76	7.2	-5.4	
+15	16	4.15	190.8	-35.1	
+16	17	3.65	153.9	-43.2	
+17	18	3.29	151.2	-9	
+18	19	10.12	116.1	20.7	
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#???	1.111		0	-90	
+1.111	1.112	3.34	193.5	20.7	
+1.112	1.113	2.97	234.9	22.5	
+1.113	1.114	3.8	180	4.5	
+1.114	1.115	2.31	178.2	10.8	
+1.115	1.116	3.24	218.7	36.9	
+1.116	1.117	2.96	184.5	40.5	
+1.117	1.118	2.52	193.5	2.7	
+1.118	1.119	3.52	135.9	-43.2	
+1.119	1.120	4.71	175.5	31.5	
+1.120	1.121	5.87	171	53.1	
+#					
+1.121	1.122	7.25	0	90	
+1.122	1.123	4.64	203.4	4.5	
+1.123	1.124	3.55	178.2	-24.3	
+1.124	1.125	3.54	261	-9	
+1.125	1.126	8.51	217.8	0.9	
+1.126	1.127	4.8	212.4	43.2	
+
 endcenterline
 
  endsurvey

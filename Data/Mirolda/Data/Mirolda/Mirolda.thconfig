@@ -187,11 +187,15 @@ layout layout_coupe
   base-scale 1 1000
 
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
-  scale 1 1000
+  scale 1 1500
+
+  # echelle graphique 100 m ampleur
+  scale-bar 100 m
+
 
   # Une grille ?
-  #grid-size 250 250 250 m  
-  grid off
+  grid-size 200 200 200 m  
+  grid bottom
  
   # la topo est transparente
   transparency on
@@ -219,16 +223,12 @@ layout layout_coupe
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
 
-  # echelle graphique 100 m ampleur
-  scale-bar 100 m
-
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
-
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
-  statistics topo-length on
+  statistics topo-length off
   
   # Afficher un copyright
   statistics copyright 2
@@ -266,7 +266,16 @@ layout layout-coupe-continuations
 	copy layoutcontinuation	# Pour afficher le label des continuations
 endlayout
 
-
+layout layout-kml
+  # Définition du système de projection du plan
+  cs UTM32
+  # Couleur de la topographie
+  # Rouge-Orange = 255,69,0 -->
+  # Orange = 255,165,0 -->
+  # Orange Sombre = 255,140,0 -->
+  # Bleu --> 0, 0 255
+  color map-fg [0 0 100]
+endlayout
 
 # 3-EXPORT
 
@@ -275,14 +284,14 @@ endlayout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Mirolda-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Mirolda-plan-tot
-select MC-Mirolda-coupe-tot
+select MP-Mirolda-plan-tot@Mirolda
+select MC-Mirolda-coupe-tot@Mirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
  export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan-continuations.pdf -layout my_layout-continuations
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
+ #export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
  #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Criou-2022-coupe-continuations.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
@@ -293,7 +302,7 @@ select MC-Mirolda-coupe-tot
 # export map -proj plan -fmt esri -o Outputs/Mirolda-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Mirolda-2022.kml -layout my_layout
+ export map -proj plan -fmt kml -o Outputs/Mirolda.kml -layout layout-kml
  export model -fmt kml -o Outputs/Mirolda-2022-model.kml -enable all
 
 # Export de la database sql

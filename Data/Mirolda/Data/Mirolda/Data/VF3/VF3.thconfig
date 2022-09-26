@@ -111,7 +111,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 0 0 s
+  map-header 0 -50 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -129,7 +129,7 @@ layout my_layout
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif cu Criou, Samoëns, 74, France"
+  map-comment "Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -142,8 +142,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
 
   layers on
 
@@ -161,7 +161,7 @@ layout my_layout
 			\cavename={Gouffre VF3} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou}
+		\newtoks\club \club={Interclub Criou 2022}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -205,7 +205,7 @@ layout atlas_layout
   doc-title "VF3 coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  #map-header 0 0 s
+  map-header 0 -50 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -233,8 +233,8 @@ layout atlas_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
   
   layers on
                 
@@ -247,7 +247,7 @@ layout atlas_layout
 			\cavename={Gouffre VF3} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou}
+		\newtoks\club \club={Interclub Criou 2022}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -269,8 +269,8 @@ select MC-VF3-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
+ #export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

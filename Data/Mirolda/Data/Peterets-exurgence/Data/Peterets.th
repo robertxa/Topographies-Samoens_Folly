@@ -5,16 +5,41 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
-survey Peterets -title "Résurgence temporaire des Péterets"
+survey Peterets -title "Résurgence temporaire des Péterets" -entrance R-peterets
 
  centerline -extend right
     
-    date 2021.08.12
-        team "Xavier Robert"
+    date 1993.05.08
+        team "Jacques Gudefin"
+        team "Sylvain Matricon"
+    explo-date 1993.05.08
+        explo-team "Groupe Spéléo/Ursus"
 
     cs long-lat
-    fix R-peteret 6.73975 46.07892	724 # Altitude IGN, A revoir
-    station R-peteret "Résurgence temporaire de Péteret" entrance spring continuation
+    fix R-peterets 6.73975 46.07892	724 # Altitude IGN, A revoir
+    #station R-peterets "Résurgence temporaire de Péteret" entrance spring continuation
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+        extend left
+        R-peterets   1	2.42	0.0	90.0    # Entrée
+        1   2	3.47	96.3	45.9
+        2   3	5.19	85.5	19.8
+        3   4	5.30	112.5	16.2
+        4   5	2.46	112.5	2.7
+        5   6	5.38	77.4	6.3
+        6   7	10.73	95.4	6.3
+        7   8	4.63	139.5	7.2
+        8   9	5.51	126.9	30.6
+        9   10	7.81	92.7	-9.0
+        10  11	3.87	29.7	21.6
+        11  12 6.28	81.9	30.6    #Point rouge, Siphon
+    data normal from to length compass backclino left right up down
+        flags approximate
+        12  13 90  90  30 0.7   0.7 0.7 0.7 # Terminus siphon, visée estimée à partir du CR de Bozzo, pas de topographie, arrêt à -50 m
+        flags not approximate
+
   
 endcenterline
 
