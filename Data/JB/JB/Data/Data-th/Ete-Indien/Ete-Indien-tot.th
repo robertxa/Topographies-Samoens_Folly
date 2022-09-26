@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Ete-Indien -title "Réseau de l'Eté Indien"
+	# Données topos
+	input Data/Ete-Indien.th
+	#input Data/jb_Ete-Indien2020a.th
+	#	equate 1@Ete-Indien2020a 2019d-FD-10@Ete-Indien
+	
+	# Dessins
+	#input Data/Ete-Indien-plan.th2
+	
+	#input Data/Ete-Indien-coupe.th2
+
+	# Add maps
+	#input Ete-Indien-maps.th
+	
+endsurvey

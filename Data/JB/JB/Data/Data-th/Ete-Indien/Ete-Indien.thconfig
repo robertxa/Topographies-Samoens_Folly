@@ -1,0 +1,154 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+# Import DATA  
+source Ete-Indien-tot.th
+
+# Add config file
+input ../../../../../../config.thc 
+  
+ 
+  
+layout xviexport_plan
+	scale 1 500
+	grid-size 10 10 10 m
+	grid bottom
+endlayout  
+ 
+layout xviexport_coupe
+   scale 1 1000
+   grid-size 10 10 10 m
+   grid bottom
+endlayout
+  
+layout layout_plan
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl 
+	copy langue-fr
+	
+	#debug scrap-names
+	  
+	doc-title "Réseau de l'Eté Indien - plan"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "Réseau de l'Eté Indien"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	#legend-width 22 cm
+	legend-width 18 cm
+	map-header 40 37 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#debug scrap-names
+	# grid bottom
+	# grid-size 100 100 100 m
+	grid off
+  
+	######## Code Metapost pour modifier l aspect des symboles ####### 
+
+	# Titre          
+	code tex-map
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+ 
+	######################### 
+  
+	# Ajouter une coupe développée sur le même pdf
+	#map-image 200 130 n Ete-Indien-coupe.pdf
+  
+endlayout
+  
+  
+layout layout_coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe 
+	copy langue-fr
+	
+	#debug scrap-names
+
+	doc-title "Réseau de l'Eté Indien - coupe"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 2000
+	scale 1 1400
+	scale-bar 150 m
+	#color map-bg 85 
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "Réseau de l'Eté Indien"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 26  cm
+	map-header 38 37 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names	
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off  
+  
+	######## Code Metapost pour modifier l aspect des symboles ####### 
+
+	# Titre          
+	code tex-map  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard}
+			
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+	######################### 
+  
+endlayout
+
+# Export des fichiers xvi  
+	export map -fmt xvi -layout xviexport_plan -o th2/Ete-Indien-plan2022.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/Ete-Indien-coupe2022.xvi
+
+# Export des fichiers pdf  
+	export map -projection extended -layout layout_coupe -o Outputs/2D/Ete-Indien-coupe2022b.pdf
+	export map -layout layout_plan -o Outputs/2D/Ete-Indien-plan2022b.pdf
+ 
+# Export des modeles 3D
+	export model -o Outputs/3D/Ete-Indien.lox
+  
+# Export des fichiers ESRI
+	#export map -proj plan -fmt esri -o Outputs/3D/Ete-Indien -layout layout_plan
+  
+# Export des fichiers kml
+	#export map -proj plan -fmt kml -o Outputs/3D/Ete-Indien.kml -layout layout_plan

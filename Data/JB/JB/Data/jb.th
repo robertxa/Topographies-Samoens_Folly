@@ -65,7 +65,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		equate xa-2014a-1@jb-dino.dino Da.248@jb-amonts2
     	equate xa-2014a-9@jb-dino.dino Da.253@jb-amonts2
 	
-
+	# Réseau de l'Eté Indien
+	input Data-th/Ete-Indien/Ete-Indien-tot.th
+		equate 18@Ete-Indien.Ete-Indien Ja.10@jb-amonts2	# Carrefour V4/V4b
+		equate 14@Ete-Indien.Ete-Indien Ja.6@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
 
 	# Réseau du Solitaire
 	input Data-th/Solitaire/solitaire-tot.th
