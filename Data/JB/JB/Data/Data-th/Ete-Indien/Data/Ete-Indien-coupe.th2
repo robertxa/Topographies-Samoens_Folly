@@ -1,0 +1,147 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -178.8995 -128.75 280.25 324.8505
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {31.0505 1 1.0} {78.739 0} Ete-Indien-coupe2022.xvi 0 {}
+
+
+
+scrap SC-EteIndien-1 -projection extended -station-names "" "@Ete-Indien"-author 2022 "Xavier Robert" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 364.2206 -128.0 0.0 0.0 12.50240324 0.0 m]
+
+point 17.0 54.0 water-flow -orientation 260.0
+
+point -12.0 57.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Ete Indien" -attr CA "Courant d'air aspirant léger lors de l'exploration" -text "P5 à descendre, méandre qui continue, c.a. aspirant"
+
+line rope
+  37.25 87.75
+  26.75 85.75
+  27.0205 60.71900000000001
+endline
+
+line rope
+  76.0 118.25
+  70.25 116.75
+  70.0 101.25
+endline
+
+line rope
+  88.5 156.5
+  95.25 157.25
+  96.25 121.25
+endline
+
+point 105.5 52.0 label -text "<center>puits du<br>Chicot"
+
+point 151.0 106.0 label -text "<center>puits de la<br>Manicure"
+
+point 91.0 96.0 label -text "R4"
+
+point 52.0 55.5 height -value [-5 m]
+
+point 117.5 151.5 height -value [-10 m]
+
+line wall
+  107.5 169.75
+  107.5 169.75 109.0 168.5 107.25 167.25
+  105.5 166.0 101.25 167.75 101.25 167.75
+  smooth off
+endline
+
+line wall
+  93.75 163.25
+  93.75 163.25 101.75 159.5 98.5 159.5
+  95.25 159.5 93.25 159.0 90.75 159.0
+  88.25 159.0 81.75 159.25 81.75 159.25
+  smooth off
+endline
+
+line wall
+  140.25 172.75
+  140.25 172.75 128.0 162.75 124.25 164.0
+  120.5 165.25 118.0 167.75 118.0 167.75
+  smooth off
+endline
+
+line wall
+  -0.25 33.25
+  -0.25 33.25 5.75 48.75 9.25 50.0
+endline
+
+point 9.5 81.5 air-draught -orientation 229.3 -subtype summer -scale s
+
+line wall -subtype debris
+  9.25 50.0
+  12.75 51.25 21.0 49.25 21.75 51.75
+  22.5 54.25 22.75 57.25 25.75 57.75
+endline
+
+line wall
+  25.75 57.75
+  28.75 58.25 32.0 59.25 31.75 62.0
+  31.5 64.75 31.75 73.75 33.25 75.5
+  34.75 77.25 34.75 79.25 40.75 81.0
+endline
+
+line wall -subtype debris
+  40.75 81.0
+  46.75 82.75 49.25 83.25 51.75 85.25
+  54.25 87.25 55.5 91.25 60.0 92.25
+  64.5 93.25 66.5 98.75 68.25 99.25
+  70.0 99.75 74.0 99.0 74.0 101.0
+endline
+
+line wall
+  74.0 101.0
+  74.0 103.0 73.0 107.75 76.25 109.0
+endline
+
+line wall -subtype debris
+  76.25 109.0
+  79.5 110.25 84.0 112.5 90.5 117.25
+  97.0 122.0 99.75 121.25 103.5 122.75
+endline
+
+line wall
+  103.5 122.75
+  107.25 124.25 109.5 128.25 113.0 131.5
+  116.5 134.75 131.5 145.25 131.5 145.25
+  smooth off
+  141.25 152.0
+endline
+
+line wall
+  77.5 155.5
+  77.5 155.5 88.5 155.0 88.25 153.5
+  88.0 152.0 84.0 149.0 75.75 142.5
+  67.5 136.0 35.25 112.75 26.75 105.75
+  18.25 98.75 -6.75 90.0 -12.0 82.5
+  -17.25 75.0 -27.5 61.75 -27.5 61.75
+  smooth off
+endline
+
+point 113.1005 170.599 station -name 17
+
+point 65.0305 159.769 station -name 12
+
+point 94.3305 155.599 station -name 11
+
+point 106.2405 160.309 station -name 8
+
+point 96.2305 128.749 station -name 7
+
+point 72.6005 114.269 station -name 6
+
+point 63.710499999999996 102.769 station -name 5
+
+point 50.8005 91.82900000000001 station -name 4
+
+point 37.5005 84.629 station -name 3
+
+point 31.0505 78.739 station -name 0
+
+point 27.0205 60.71900000000001 station -name 1
+
+point -2.569500000000005 48.46900000000001 station -name 2
+
+endscrap
+
+

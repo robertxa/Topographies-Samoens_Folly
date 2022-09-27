@@ -11,11 +11,10 @@ survey Ete-Indien -title "Réseau de l'Eté Indien"
 	#	equate 1@Ete-Indien2020a 2019d-FD-10@Ete-Indien
 	
 	# Dessins
-	#input Data/Ete-Indien-plan.th2
-	
-	#input Data/Ete-Indien-coupe.th2
+	input Data/Ete-Indien.th2
+	input Data/Ete-Indien-coupe.th2
 
 	# Add maps
-	#input Ete-Indien-maps.th
+	input Ete-Indien-maps.th
 	
 endsurvey

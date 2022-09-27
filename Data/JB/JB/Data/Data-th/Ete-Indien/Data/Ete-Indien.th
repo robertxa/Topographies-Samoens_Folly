@@ -29,10 +29,11 @@ survey Ete-Indien -title "L'Eté Indien"
     0 . 7.48 352.8 84.3
     0 . 0.54 130.7 20.3
     0 . 0.50 65.9 29.3
-    extend vertical
+    extend left
     0 1 4.69 189.2 -77.4  # puits du Chicot, P5
-    extend right
+    extend left
     0 2 11.49 154.3 -42.0
+    extend right
     0 3 2.22 97.5 42.4
     # extend auto
     3 . 0.88 336.1 -1.2
@@ -45,7 +46,7 @@ survey Ete-Indien -title "L'Eté Indien"
     3 . 8.11 7.0 81.9
     3 . 1.96 281.9 24.2
     3 . 0.99 264.6 6.4
-    extend vertical
+    extend right
     3 4 3.84 1.8 28.4
     # extend auto
     4 . 7.16 151.7 85.4
@@ -57,7 +58,7 @@ survey Ete-Indien -title "L'Eté Indien"
     4 . 0.61 11.0 18.4
     4 . 1.04 5.2 34.1
     4 . 2.30 11.7 37.6
-    extend vertical
+    extend right
     4 5 4.30 5.3 40.3
     # extend auto
     5 . 7.51 345.9 87.3
@@ -75,7 +76,7 @@ survey Ete-Indien -title "L'Eté Indien"
     5 . 1.71 310.6 48.3
     5 . 2.16 326.2 28.6
     5 . 1.92 319.9 -26.8
-    extend left
+    extend right
     5 6 3.69 316.9 52.3
     # extend auto
     6 . 0.83 93.8 -6.9
@@ -119,7 +120,7 @@ survey Ete-Indien -title "L'Eté Indien"
     7 . 1.81 313.9 -42.0
     7 . 3.11 297.8 -1.9
     7 . 8.90 292.3 74.5
-    extend left
+    extend right
     7 8 8.41 288.5 72.4 # Sommet P10 de la Manicure
     # extend auto
     8 . 9.51 151.1 -86.8
@@ -142,7 +143,7 @@ survey Ete-Indien -title "L'Eté Indien"
     8 9 4.05 346.9 45.3
     # extend auto
     9 . 5.43 60.0 28.5
-    extend right
+    extend left
     8 10 7.37 58.4 28.3
     8 11 3.25 132.2 -21.4
     # extend auto
@@ -159,18 +160,18 @@ survey Ete-Indien -title "L'Eté Indien"
     11 . 1.07 276.9 9.2
     11 . 1.18 337.6 11.4
     11 . 1.92 226.3 -35.8
-    extend right
+    extend left
     11 12 7.52 82.5 8.3
     flags duplicate
     # Visées jusque départ de la CF horizontale vers l'aval
     12 13 3.28 151.1 -43.9
     13 14 5.96 137.6 -31.2
-    extend left
+    extend right
     # Visées jusque vers la tête de puits amont, au carrefour V4/V4b
     12 15 3.11 290.3 7.3
     15 16 5.16 309.0 26.7
     16 9 3.52 268.9 5.7
-    extend vertical
+    extend right
     9 17 1.05 359.8 -15.5
     17 18 11.74 1.4 44.7  # Le point est 50 cm sous le plafond au niveau de l'amarrage 2022
     flags not duplicate

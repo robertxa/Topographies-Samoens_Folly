@@ -233,8 +233,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
