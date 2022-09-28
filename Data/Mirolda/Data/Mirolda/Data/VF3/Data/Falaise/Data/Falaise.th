@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Falaise -title "Gouffre de la Falaise - Mirolda"
+
+ centerline -extend right    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    cs long-lat
+
+    fix Falaise 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses !
+    station Falaise "Entrée Falaise" entrance air-draught continuation #explored ????m
+  
+endcenterline
+
+ endsurvey

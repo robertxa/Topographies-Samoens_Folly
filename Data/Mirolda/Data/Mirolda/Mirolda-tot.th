@@ -5,12 +5,15 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey Mirolda -title "Gouffre Mirolda - Réseau Lucien Bouclier"
-	# Pour importer les différentes données de différents fichiers topos : 
+	## Le CD11 vers l'aval, ainsi que le réseau des Yougoslaves
 	input Data/CD11/CD11-tot.th
-	#input Data/Falaise/Falaise-tot.th	# --> Coordonnées à trouver !
-	input Data/Jockers/Jockers-tot.th
+	## Le réseau Lucien Bouclier
 	input Data/Rondelle-Jaune-F126/F126-tot.th
+		#equate ??@??.CD11 ??@??.F126
 	input Data/VF3/VF3-tot.th
+		#equate Francois7@F126.F126.F126 ??@??.VF3	--> Nom de station de jonction dans VF3 à trouver !
+	input Data/Jockers/Jockers-tot.th
+		#equate ??@?? ??@??	--> Trouver la bonne station de jonction ! Est-ce aussi François7 ?
 
 	# Import des maps
 	#input Mirolda-maps.th

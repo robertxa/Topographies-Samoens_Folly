@@ -6,7 +6,13 @@ encoding  utf-8
 
 survey F126 -title "Gouffre de la Rondelle Jaune - F126"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/F126.th
+	input Data/F126/F126-tot.th
+	input Data/Marches/Marches-tot.th
+		equate 0@Marches.Marches 0@F126.F126	# Sommet du P30 ? Ca a l'air de coller avec la vieille topo !
+	input Data/Bricole_Amont/Bricole_Amont-tot.th
+		equate VF-27-62@Bricole_Amont.Bricole_Amont VF-27-62@Marches.Marches
+	input Data/Bricole_Aval/Bricole_Aval-tot.th
+		equate 1.73@Bricole_Aval.Bricole_Aval 1.73@Bricole_Amont.Bricole_Amont
 	
 	# Import du dessin en plan
 	#input Data/F126.th2

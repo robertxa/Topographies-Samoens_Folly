@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Bricole_Amont -title "Gouffre Mirolda - F126 - Bricole Amont"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/Bricole_Amont.th
+	
+	# Import du dessin en plan
+	#input Data/Bricole_Amont.th2
+
+	# Import du dessin en coupe
+	#input Data/Bricole_Amont-coupe.th2
+
+	# Import des maps
+	#input Bricole_Amont-maps.th
+ 
+ endsurvey
+ 
