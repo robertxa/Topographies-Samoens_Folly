@@ -1,27 +1,24 @@
 encoding  utf-8
 
-# Copyright (C) 2021 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2022 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
 survey Mobylette -title "Gouffre de la Mobylette - FU891" -entrance FU891
 
-# Fichier contenant les positions des Résurgences du massif du Folly, Samoens, France
-
  centerline -extend right
     
     
-    date 1992.08
-        team "Jacques Gudefin"
+    date 1992
+        #team "Jacques Gudefin"
     explo-date 1992
         explo-team "Groupe Spéléo/Ursus"
     
-
     cs EPSG:27572   # LII étendu
     #cs EPSG:7402   # LII
     #fix FU891 979700    2137066	2272 # Altitude IGN, A revoir
-    fix FU891 944215    2131026	2272 # Altitude IGN, A revoir
+    fix FU891 944215    2131026	2272 # Coordonnées approx, à reprendre sur le terrain
     #station FU891 "Gouffre de la Mobylette - FU891" entrance continuation
 
     units length meters
@@ -46,5 +43,21 @@ survey Mobylette -title "Gouffre de la Mobylette - FU891" -entrance FU891
         15	16	4.16	0.9	81.9
   
 endcenterline
+
+
+# centerline -extend right
+    
+#     date 1995
+#         #team "Jacques Gudefin"
+#     explo-date 1995
+#         explo-team "Groupe Spéléo/Ursus"
+    
+#     units length meters
+#     units compass clino degrees
+#     data normal from to length compass backclino
+#     extend left
+# # Il faut trouver la topographie de la galerie fossile en sommet de P30, qui va vers le sud....
+
+# endcenterline
 
  endsurvey
