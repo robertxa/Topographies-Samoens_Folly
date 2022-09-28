@@ -6,7 +6,15 @@ encoding  utf-8
 
 survey VF3 -title "Gouffre VF3"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/VF3.th
+	input Data/VF3/VF3-tot.th
+	input Data/Falaise/Falaise-tot.th
+		equate VF3-2-10@VF3.VF3 VF3-2-10@Falaise.Falaise
+	input Data/Chauves-Souris/Chauves-Souris-tot.th
+		equate VF3-3-17@Chauves-Souris.Chauves-Souris VF3-3-17@Falaise.Falaise
+	
+
+
+
 	
 	# Import du dessin en plan
 	#input Data/VF3.th2

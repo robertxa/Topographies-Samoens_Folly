@@ -5,18 +5,165 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
-survey Falaise -title "Gouffre de la Falaise - Mirolda"
+survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda"
 
  centerline -extend right    
-    
-    date 2021.08.12
-        team "Xavier Robert"
 
     cs long-lat
 
-    fix Falaise 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses !
+    #fix Falaise 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses !
     station Falaise "Entrée Falaise" entrance air-draught continuation #explored ????m
-  
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+     
+    cs long-lat
+    #fix Falaise 6.79367 46.090839	2336  #ALT IGN
+    #cs EPSG:27572 LII étendu
+    #fix VF3 944520 2130930	2335  #ALT IGN
+    station Falaise "Entrée de la Falaise" entrance air-draught #continuation #explored ????m
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+        #VF3-3-22	VF3-3-22	0	180	90	# Départ de 22
+        VF3-3-22	VF3-3-22c	7.29	193	6	
+        VF3-3-22c	VF3-3-23c	3.6	510	-14	
+        VF3-3-23c	VF3-3-24c	3.55	495	-14	
+        VF3-3-24c	VF3-3-25c	10.46	465	-7	
+        VF3-3-25c	VF3-3-26c	3.46	430	8	
+        VF3-3-26c	VF3-3-27c	3.5	412	-14	
+        VF3-3-27c	VF3-3-28c	5.3	475	-16	
+        VF3-3-28c	VF3-3-29c	3.09	191	-28	
+        VF3-3-29c	VF3-3-30c	3.16	496	2	
+        VF3-3-30c	VF3-3-31c	5.65	195	2	
+        VF3-3-31c	VF3-3-32c	7.93	180	7	
+        VF3-3-32c	VF3-3-33c	3.43	465	-24	
+        VF3-3-33c	VF3-3-34c	4.42	466	-15	
+        VF3-3-34c	Falaise	6.34	536	-4	# 35c (falaise)
+
 endcenterline
+  
+centerline -extend right    
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+        #VF3-3-0	VF3-3-0	0	0	-90	
+        VF3-3-0	VF3-3-1	5.42	251	-4	
+        VF3-3-1	VF3-3-2	6.47	210	26	
+					
+        VF3-3-2	VF3-3-3b	6.38	220	30	# Depart de 2
+        VF3-3-3b	VF3-3-3	12.14	299	24	
+        VF3-3-3	VF3-3-4	6.3	320	-1	
+        VF3-3-4	VF3-3-5	0	180	90	# verticale
+        VF3-3-5	VF3-3-6	17.69	321	-4	
+        VF3-3-6	VF3-3-7	7.8	327	-21	
+        VF3-3-7	VF3-3-8	5.24	340	9	
+        VF3-3-8	VF3-3-9	3.08	275	10	
+        VF3-3-9	VF3-3-10	3.35	195	-12	
+        VF3-3-10	VF3-3-11	3.33	303	-6	
+        VF3-3-11	VF3-3-12	18.72	317	0	
+        VF3-3-12	VF3-3-13	13.71	302	6	
+        VF3-3-13	VF3-3-14	4.98	280	32	
+        VF3-3-14	VF3-3-15	7.52	320	-11	
+        VF3-3-15	VF3-3-16	6.24	320	2	
+        VF3-3-16	VF3-3-17	5.62	286	18	
+					
+        #VF3-3-3b	VF3-3-3b	0	180	90	
+        VF3-3-3b	VF3-3-18	7.24	241	37	# Départ de 3b
+        VF3-3-18	VF3-3-19	4.53	206	38	
+        VF3-3-19	VF3-3-20	2.25	498	39	
+        VF3-3-20	VF3-3-21	3.78	224	37	
+        VF3-3-21	VF3-3-22	1.83	311	-15	
+					
+        #VF3-3-22	VF3-3-22	0	180	90	# depart de 22
+        VF3-3-22	VF3-3-23	6.01	270	53	# depart de 22
+        VF3-3-23	VF3-3-24	4.77	322	8	
+        VF3-3-24	VF3-3-26	6.93	350	-22	
+        VF3-3-26	VF3-3-27	4.24	305	30	
+        VF3-3-27	VF3-3-28	2.93	328	-36	
+        VF3-3-28	VF3-3-29	2.92	205	6	
+        VF3-3-29	VF3-3-30	12.39	306	9	
+        VF3-3-30	VF3-3-31	5.56	260	16	
+        VF3-3-31	VF3-3-32	4.94	313	15	
+        VF3-3-32	VF3-3-33	4.23	334	-7	
+        VF3-3-33	VF3-3-34	6.39	353	-27	
+        VF3-3-34	VF3-3-35	5.8	342	-15	
+        VF3-3-35	VF3-3-36	9.02	344	-23	
+        VF3-3-36	VF3-3-37	3.78	340	58	
+        VF3-3-37	VF3-3-38	3.6	296	-57	
+        VF3-3-38	VF3-3-39	5.18	295	-2	
+        VF3-3-39	VF3-3-40	2.09	260	19	
+        VF3-3-40	VF3-3-41	2.74	314	5	
+        VF3-3-41	VF3-3-42	5.39	350	1	
+        VF3-3-42	VF3-3-43	2.8	258	-2	
+        VF3-3-43	VF3-3-44	5.5	305	36	
+        VF3-3-44	VF3-3-45	6.63	306	41	
+        VF3-3-45	VF3-3-45b	5	26	0	# 1°visée jonction p40
+        VF3-3-45b	VF3-2-10	6	0	-90	# 2°visée jonction p40 ; VF3-2-10 ?
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino    
+        #		0	180	90	# nouveau compteur
+        VF3-3-45	VF3-3-46	1.41	294	-10	
+        VF3-3-46	VF3-3-47	2.23	270	-6	
+        VF3-3-47	VF3-3-48	2.73	337	52	
+        VF3-3-48	VF3-3-49	2.36	272	-2	
+        VF3-3-49	VF3-3-50	9.04	207	20	
+        VF3-3-50	VF3-3-51	4.29	181	29	
+        VF3-3-51	VF3-3-52	8.4	260	33	
+        VF3-3-52	VF3-3-53	3.84	322	0	
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+        #VF3-3-3b	VF3-3-3b	656.12	180	90	# Depart de 3b
+        VF3-3-3b	VF3-3-4b	10.62	266	1	# Depart de 3b
+
+endcenterline
+
 
  endsurvey

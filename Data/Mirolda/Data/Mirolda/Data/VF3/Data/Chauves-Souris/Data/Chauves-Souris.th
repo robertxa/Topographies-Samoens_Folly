@@ -1,0 +1,56 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Chauves-Souris -title "VF3 - Mirolda - Réseau Lucien Bouclier - Chauves-Souris"
+
+centerline -extend right    
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    #VF34 SOUS TERRE A PARTIR DE STATION N°17
+        #VF3-3-17	VF3-3-17	0	0	-90
+        VF3-3-17	VF3-4-1	2.72	242	25	
+        VF3-4-1	VF3-4-2	5.44	0	90	
+        VF3-4-2	VF3-4-3	9.46	255	4	
+        VF3-4-3	VF3-4-4	7.84	297	6	
+        VF3-4-4	VF3-4-5	6.56	305	35	
+        VF3-4-5	VF3-4-6	10.84	286	15	
+        VF3-4-6	VF3-4-7	8.35	348	-21	
+        VF3-4-7	VF3-4-8	17.03	268	17	# cairn
+        VF3-4-8	VF3-4-9	14.98	252	2	
+        VF3-4-9	VF3-4-10	10.18	238	4	
+        VF3-4-10	VF3-4-11	10.76	258	-8	# sommet p40
+        VF3-4-11	VF3-4-12	10.1	0	90	
+        VF3-4-12	VF3-4-13	1	120	0	
+        VF3-4-13	VF3-4-14	8.06	70	77	
+        VF3-4-14	VF3-4-15	7.24	168	58	
+        VF3-4-15	VF3-4-16	2.69	125	40	
+        VF3-4-16	VF3-4-17	9.79	0	90	
+        VF3-4-17	VF3-4-18	2.55	100	-5	
+        VF3-4-18	VF3-4-19	7.83	166	9	
+        VF3-4-19	VF3-4-20	2.56	194	24	
+        VF3-4-20	VF3-4-21	4.54	0	90	
+        VF3-4-21	VF3-4-22	0	0	-90	
+        VF3-4-22	VF3-4-23	4.03	200	38	
+        VF3-4-23	VF3-4-24	2.39	245	-16	
+        VF3-4-24	VF3-4-25	8.03	192	51	
+        VF3-4-25	VF3-4-26	2.3	235	46	
+        VF3-4-26	VF3-4-27	1.46	270	21	
+
+endcenterline
+
+endsurvey
