@@ -18,9 +18,11 @@ survey Mobylette -title "Gouffre de la Mobylette - FU891" -entrance FU891
         explo-team "Groupe Spéléo/Ursus"
     
 
-    cs long-lat
-    #fix FU891 6.745180928166752 46.09359826843757	2272 # Altitude IGN, A revoir
-    #station FU891 "Gouffre de la Mobylette - FU891" entrance spring continuation
+    cs EPSG:27572   # LII étendu
+    #cs EPSG:7402   # LII
+    #fix FU891 979700    2137066	2272 # Altitude IGN, A revoir
+    fix FU891 944215    2131026	2272 # Altitude IGN, A revoir
+    #station FU891 "Gouffre de la Mobylette - FU891" entrance continuation
 
     units length meters
     units compass clino degrees
