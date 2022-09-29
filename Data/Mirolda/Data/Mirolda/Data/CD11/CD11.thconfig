@@ -211,7 +211,7 @@ layout my_layout-coupe
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "CD11 coupe développée - 1:1000"
+  doc-title "CD11 coupe développée - 1:1500"
 
   # Position de la manchette. Voir layout ci-dessus.
   map-header 3 60 nw
@@ -238,8 +238,8 @@ layout my_layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
