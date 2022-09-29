@@ -6,16 +6,51 @@ encoding  utf-8
 
 survey VF3 -title "Gouffre VF3"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/VF3/VF3-tot.th
-	input Data/Falaise/Falaise-tot.th
+	input Data/VF3/VF3-tot.th	# Données des puits d'entrée du VF3
+	input Data/Falaise/Falaise-tot.th	# Galeries qui partent du sommet du P40 en direction de l'entrée de la Falaise
 		equate VF3-2-10@VF3.VF3 VF3-2-10@Falaise.Falaise
-	input Data/Chauves-Souris/Chauves-Souris-tot.th
+	input Data/Chauves-Souris/Chauves-Souris-tot.th	# Galerie des Chauves Souris
 		equate VF3-3-17@Chauves-Souris.Chauves-Souris VF3-3-17@Falaise.Falaise
+	input Data/Danton/Danton-tot.th	#	Réseau du Puits Danton, il doit jonctionner aussi avec la Bricole Amont, mais il manque un bout de topo pour l'instant
+		equate VF3-4-27@Chauves-Souris.Chauves-Souris VF3-4-27@Danton.Danton
+	input Data/Prof-Blanchon/Prof-Blanchon-tot.th	# Réseau du Professeur Blanchon
+		equate VF3-4-11@Blanchon.Prof-Blanchon VF3-4-11@Chauves-Souris.Chauves-Souris
+	input Data/Tremie/Tremie-tot.th	# Galerie de la Trémie
+		equate VF3-4-11@Tremie.Tremie VF3-4-11@Chauves-Souris.Chauves-Souris
+	input Data/Sous-Jumeaux/Sous-Jumeaux-tot.th	# Petit réseau sous galerie qui va aux Puits Jumeaux
+		equate	VF3-8-10@Sous-Jumeaux.Sous-Jumeaux	VF3-8-10@Tremie.Tremie
+	input Data/Puits-jumeaux/Puits-jumeaux-tot.th	# Puits Jumeaux et galerie Discovery
+		equate	VF3-8-10@Puits-jumeaux.Puits-jumeaux	VF3-8-10@Tremie.Tremie
+	input Data/DDiscovery/DDiscovery-tot.th
+		equate VF3-10-52@DDiscovery.DDiscovery VF3-10-52@Puits-jumeaux.Puits-jumeaux
+
+	## D'après les anciens dessins du plan, le découpage ci-dessus parait majoritairement OK.
+
+	## Ensuite, les jonctions des différents réseaux ci-dessous ne sont pas bonnes pour la plupart.
+	##		Il faut les retrouver. Comment ?
+
+	input Data/Sado-Bozzo/Sado-Bozzo-tot.th	# Réseau Sado-Bozzo. 
+		#equate VF3-11-60@Sado-Bozzo.Sado-Bozzo VF3-11-60@DDiscovery.DDiscovery
+		equate VF3-11-60@Sado-Bozzo.Sado-Bozzo VF3-22-19@DDiscovery2.DDiscovery2
+		#equate VF3-11-60@Sado-Bozzo.Sado-Bozzo VF3-15-16@DDiscovery2.DDiscovery2
+			# Est-ce que la jonction est OK ???? Je n'ai pas l'impression, il manque une ligne droite direction N300 environ
+	
+	input Data/DDiscovery2/DDiscovery2-tot.th	# Jonction Chauves-Souris - Sado Bozzo
+		#equate VF3-16-0@DDiscovery2.DDiscovery2 VF3-4-11@Chauves-Souris.Chauves-Souris
+			# Equate ci-dessus Probablement pas OK, il y a un décalage par rapport au dessin publié, et il manque une 20aine de m de déniv pour boucler
+		equate VF3-20-5@DDiscovery2.DDiscovery2 VF3-11-60@DDiscovery.DDiscovery
+			# Cet equate a l'air à peu près OK. A vérifier quand même
+
+	input Data/Combattant/Combattant-tot.th	# Réseau du Combattant à partir Sado Bozzo
+		equate VF3-18-0@Combattant.Combattant VF3-11-60@Sado-Bozzo.Sado-Bozzo
+			# Jonction OK avec réseau Sado-Bozzo. C'est l'ensemble Sado-Bozzo/Combatant qui est décalé
 	
 
 
 
-	
+
+
+
 	# Import du dessin en plan
 	#input Data/VF3.th2
 

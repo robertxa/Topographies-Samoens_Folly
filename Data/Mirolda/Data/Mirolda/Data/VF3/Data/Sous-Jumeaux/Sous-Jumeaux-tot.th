@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Sous-Jumeaux -title "VF3 - Réseau Sous-Jumeaux"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/Sous-Jumeaux.th
+	
+	# Import du dessin en plan
+	#input Data/Sous-Jumeaux.th2
+
+	# Import du dessin en coupe
+	#input Data/Sous-Jumeaux-coupe.th2
+
+	# Import des maps
+	#input Sous-Jumeaux-maps.th
+ 
+ endsurvey
+ 

@@ -27,13 +27,13 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera 
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-source Mirolda-tot.th
+source DDiscovery-tot.th
 
 # Add Coordinates
-input legendes/entrances_coordinates.th
+#input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../config.thc 
+input ../../../../../../config.thc 
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles à utiliser (UIS, etc)
@@ -55,8 +55,6 @@ endlayout
 #debut de la definition du layout "my_layout"
 layout my_layout
 
-  # Rajout des coordonnées de l'entrée
-  copy Coords_Header_CDa
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl 
@@ -104,7 +102,7 @@ layout my_layout
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Mirolda plan - 1:1000"
+  doc-title "Gouffre de la Discovery plan - 1:1000"
 
   # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
   # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
@@ -144,8 +142,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -160,11 +158,11 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda} 
+			\cavename={Gouffre de la Discovery} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Interclub Criou}
-		\newtoks\synth \synth={Xavier Robert}
+		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
  endlayout
@@ -172,9 +170,8 @@ layout my_layout
 
 
 
-layout layout_coupe
-	# Rajout des coordonnées de l'entrée
-  copy Coords_Header_CDa
+layout atlas_layout
+	
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe 
@@ -187,15 +184,11 @@ layout layout_coupe
   base-scale 1 1000
 
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
-  scale 1 1500
-
-  # echelle graphique 100 m ampleur
-  scale-bar 100 m
-
+  scale 1 1000
 
   # Une grille ?
-  grid-size 200 200 200 m  
-  grid bottom
+  #grid-size 250 250 250 m  
+  grid off
  
   # la topo est transparente
   transparency on
@@ -209,7 +202,7 @@ layout layout_coupe
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Mirolda coupe développée - 1:1000"
+  doc-title "Gouffre de la Discovery coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
   #map-header 0 0 s
@@ -223,12 +216,16 @@ layout layout_coupe
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
 
+  # echelle graphique 100 m ampleur
+  scale-bar 100 m
+
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
+
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
-  statistics topo-length off
+  statistics topo-length on
   
   # Afficher un copyright
   statistics copyright 2
@@ -247,71 +244,52 @@ layout layout_coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda} 
+			\cavename={Gouffre de la Discovery} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Interclub Criou}
-		\newtoks\synth \synth={Xavier Robert}		
+		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
  endlayout
 # Fin de la definition du Layout "normal"
 
-layout my_layout-continuations
-	copy my_layout
-	copy layoutcontinuation	# Pour afficher le label des continuations
-endlayout
-layout layout-coupe-continuations
-	copy my_layout-coupe
-	copy layoutcontinuation	# Pour afficher le label des continuations
-endlayout
 
-layout layout-kml
-  # Définition du système de projection du plan
-  cs UTM32
-  # Couleur de la topographie
-  # Rouge-Orange = 255,69,0 -->
-  # Orange = 255,165,0 -->
-  # Orange Sombre = 255,140,0 -->
-  # Bleu --> 0, 0 255
-  color map-fg [0 0 100]
-endlayout
+
 
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Mirolda-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Mirolda-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/Discovery-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/Discovery-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Mirolda-plan-tot@Mirolda
-select MC-Mirolda-coupe-tot@Mirolda
+select MP-Discovery-plan-tot
+select MC-Discovery-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan-continuations.pdf -layout my_layout-continuations
- #export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
- #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Criou-2022-coupe-continuations.pdf
+# export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Mirolda-2022.lox
+ export model -enable all -o Outputs/Discovery-2022.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Mirolda-2022 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/Discovery-2022 -layout my_layout
 
 # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/Mirolda.kml -layout layout-kml
- export model -fmt kml -o Outputs/Mirolda-2022-model.kml -enable all
+# export map -proj plan -fmt kml -o Outputs/Discovery-2022.kml -layout my_layout
+ export model -fmt kml -o Outputs/Discovery-2022-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseMirolda-2022.sql
+export database -fmt sql -o Outputs/databaseDiscovery-2022.sql
 
-export continuation-list -o Outputs/ContinuationsMirolda-2022.html
-#export continuation-list -o Outputs/ContinuationsMirolda-2022.kml
-export survey-list -location on -o Outputs/SurveysMirolda2022.html
-#export cave-list -location on -o Outputs/CavesMirolda2022.html
+export continuation-list -o Outputs/ContinuationsDiscovery-2022.html
+#export continuation-list -o Outputs/ContinuationsDiscovery-2022.kml
+export survey-list -location on -o Outputs/SurveysDiscovery2022.html
+#export cave-list -location on -o Outputs/CavesDiscovery2022.html

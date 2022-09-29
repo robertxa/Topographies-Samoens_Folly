@@ -1,0 +1,163 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Combattant -title "VF3 - Mirolda - Réseau Lucien Bouclier - Réseau du Combattant"
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+# VF3-12-34	VF3-12-34	0	0	-90	# VF48 Départ station 66
+#VF3-11-60	VF3-18-1	6.48	348.3	6.3	# Station départ OK ?
+VF3-18-0	VF3-18-1	6.48	348.3	6.3	# Station de départ au début du réseau Sado-Bozzo
+VF3-18-1	VF3-18-2	4.82	67.5	-22.5	
+VF3-18-2	VF3-18-3	12.79	342	-60.3	
+VF3-18-3	VF3-18-4	6.19	44.1	-64.8	
+VF3-18-4	VF3-18-5	7.4	64.8	-3.6	
+VF3-18-5	VF3-18-6	4.75	76.5	-13.5	
+VF3-18-6	VF3-18-7	3.84	0	-90	
+VF3-18-7	VF3-18-8	6.46	18.9	-44.1	
+VF3-18-8	VF3-18-9	5.58	73.8	7.2	
+VF3-18-9	VF3-18-10	10.33	56.7	-35.1	
+VF3-18-10	VF3-18-11	10.46	82.8	-42.3	
+VF3-18-11	VF3-18-12	5.33	49.5	1.8	
+VF3-18-12	VF3-18-13	6.08	65.7	5.4	
+VF3-18-13	VF3-18-14	7.49	63	20.7	
+VF3-18-14	VF3-18-15	5.17	58.5	15.3	
+VF3-18-15	VF3-18-16	3.93	60.3	-2.7	
+VF3-18-16	VF3-18-17	8.69	46.8	26.1	
+VF3-18-17	VF3-18-18	5.36	74.7	-23.4	
+VF3-18-18	VF3-18-19	3.11	4.5	-30.6	
+VF3-18-19	VF3-18-20	5.5	30.6	31.5	
+VF3-18-20	VF3-18-21	12.7	22.1	9	
+VF3-18-21	VF3-18-22	9.15	318.6	-9	
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+
+    #VF3-18-21	VF3-18-21	0	0	-90	# Départ station 21
+VF3-18-21	VF3-18-26	9.29	261	14.4	
+VF3-18-26	VF3-18-27	1.49	0	90	
+VF3-18-27	VF3-18-28	7.83	274.5	18	
+VF3-18-28	VF3-18-29	5.17	295.2	1.8	
+VF3-18-29	VF3-18-30	2.37	329.4	-19.8	
+VF3-18-30	VF3-18-31	3.13	313.2	-8.1	
+VF3-18-31	VF3-18-32	4.09	31.5	-30.6	
+VF3-18-32	VF3-18-33	6.75	326.7	-13.5	
+VF3-18-33	VF3-18-34	4.39	32.4	-31.5	
+VF3-18-34	VF3-18-35	4.98	324.9	-24.3	
+VF3-18-35	VF3-18-36	7.01	310.5	-14.4	
+VF3-18-36	VF3-18-37	9.62	260.1	29.7	
+VF3-18-37	VF3-18-38	10.52	306	6.3	
+VF3-18-38	VF3-18-39	5.73	276.3	44.1	
+VF3-18-39	VF3-18-40	1.98	315	-2.7	
+VF3-18-40	VF3-18-41	4.93	234.9	37.8	
+VF3-18-41	VF3-18-42	3.4	121.5	27	
+VF3-18-42	VF3-18-43	3.74	220.5	3.6	
+VF3-18-43	VF3-18-44	9.62	304.2	4.5	
+VF3-18-44	VF3-18-45	6.18	279	9	
+VF3-18-45	VF3-18-46	2.91	304.2	26.1	
+VF3-18-46	VF3-18-47	2.68	274.5	-6.3	
+VF3-18-47	VF3-18-48	3.93	189	3.6	
+VF3-18-48	VF3-18-49	8.59	278.1	15.3	
+VF3-18-49	VF3-18-50	6.92	329.4	-11.7	
+VF3-18-50	VF3-18-51	9.32	300.6	0.9	
+VF3-18-51	VF3-18-52	10.84	312.3	-8.1	
+VF3-18-52	VF3-18-53	14	244.8	24.3	
+VF3-18-53	VF3-18-54	11.51	312.3	6.3	
+VF3-18-54	VF3-18-55	9.38	297.9	8.1	
+VF3-18-55	VF3-18-56	15.02	335.7	-11.7	
+VF3-18-56	VF3-18-57	3.16	316.8	7.2	
+VF3-18-57	VF3-18-58	7.37	234	21.6	
+VF3-18-58	VF3-18-59	8.63	280.8	-3.6	
+VF3-18-59	VF3-18-60	6.71	229.5	-27.9	
+VF3-18-60	VF3-18-61	5.91	223.2	5.4	
+VF3-18-61	VF3-18-62	10.88	0	90	
+VF3-18-62	VF3-18-62b	1	198	0	
+VF3-18-62b	VF3-18-63	3.57	189	9.9	
+VF3-18-63	VF3-18-64	6.58	219.6	18	
+VF3-18-64	VF3-18-65	3	0	-90	
+VF3-18-65	VF3-18-66	3.31	216	6.3	
+VF3-18-66	VF3-18-67	12.17	210.6	40.5	
+VF3-18-67	VF3-18-68	8.64	189	17.1	
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+VF3-18-68	VF3-19-1	2.69	274.5	-10.8	
+VF3-19-1	VF3-19-2	5	0	-90	
+VF3-19-2	VF3-19-3	1.32	275.4	-52.2	
+VF3-19-3	VF3-19-4	8.96	219.6	2.7	
+VF3-19-4	VF3-19-5	6	212.4	27	
+VF3-19-5	VF3-19-6	6	207.9	25.2	
+VF3-19-6	VF3-19-7	3.67	233.1	18.9	
+VF3-19-7	VF3-19-8	7.82	265.5	6.3	
+VF3-19-8	VF3-19-9	6	208.8	33.3	
+VF3-19-9	VF3-19-10	6	257.4	17.1	
+VF3-19-10	VF3-19-11	6	238.5	23.4	
+VF3-19-11	VF3-19-12	7.79	215.1	24.3	
+VF3-19-12	VF3-19-13	19.79	285.3	4.5	
+VF3-19-13	VF3-19-14	6	302.4	-0.9	
+VF3-19-14	VF3-19-15	6	286.2	7.2	
+VF3-19-15	VF3-19-16	6	278.1	15.3	
+VF3-19-16	VF3-19-17	6	282.6	4.5	
+VF3-19-17	VF3-19-18	6	284.4	8.1	
+VF3-19-18	VF3-19-19	8	293.4	4.5	
+VF3-19-19	VF3-19-20	1.5	0	-40.5	
+VF3-19-20	VF3-19-21	8	277.2	13.5	
+VF3-19-21	VF3-19-22	8	285.3	9	
+VF3-19-22	VF3-19-23	8	292.5	2.7	
+VF3-19-23	VF3-19-24	8	253.8	15.3	
+VF3-19-24	VF3-19-25	6.5	210.6	39.6	
+VF3-19-25	VF3-19-26	5.22	284.4	1.8	
+VF3-19-26	VF3-19-27	8	290.7	-1.8	
+VF3-19-27	VF3-19-28	8	316.8	-3.6	
+VF3-19-28	VF3-19-29	8	315	-7.2	
+VF3-19-29	VF3-19-31	8	271.8	16.2	
+VF3-19-31	VF3-19-32	4	290.7	9	
+VF3-19-32	VF3-19-33	6.5	297	4.5	
+
+endcenterline
+
+endsurvey

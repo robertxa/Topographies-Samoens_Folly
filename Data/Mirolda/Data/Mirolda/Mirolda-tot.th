@@ -11,7 +11,7 @@ survey Mirolda -title "Gouffre Mirolda - Réseau Lucien Bouclier"
 	input Data/Rondelle-Jaune-F126/F126-tot.th
 		#equate ??@??.CD11 ??@??.F126
 	input Data/VF3/VF3-tot.th
-		#equate Francois7@F126.F126.F126 ??@??.VF3	--> Nom de station de jonction dans VF3 à trouver !
+		equate Francois7@F126.F126.F126 VF3-22-7@DDiscovery2.DDiscovery2.VF3	# --> Nom de station de jonction dans VF3 à trouver !
 	input Data/Jockers/Jockers-tot.th
 		#equate ??@?? ??@??	--> Trouver la bonne station de jonction ! Est-ce aussi François7 ?
 

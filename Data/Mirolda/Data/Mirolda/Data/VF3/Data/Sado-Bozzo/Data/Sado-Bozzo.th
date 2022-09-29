@@ -1,0 +1,173 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Sado-Bozzo -title "VF3 - Mirolda - Réseau Lucien Bouclier - Réseau Sado-Bozzo"
+
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    # PROBLEME DE JONCTION !!!!
+#	????	0	0	-91.5	# VF42 du"puit galerie" non descendu(st90) non descendu(st90)
+#VF3-11-60	VF3-12-1	6.2	104	-25.3	# VF42 du"puit galerie" non descendu(st90) non descendu(st90)
+VF3-12-0	VF3-12-1	6.2	104	-25.3	# VF42 du"puit galerie" non descendu(st90) non descendu(st90)
+VF3-12-1	VF3-12-2	6.95	107	-19.5	
+VF3-12-2	VF3-12-3	13.13	85	-15	
+VF3-12-3	VF3-12-4	11.43	66	3.9	
+VF3-12-4	VF3-12-5	5.8	128	-18.6	
+VF3-12-5	VF3-12-6	8.14	108	3	
+VF3-12-6	VF3-12-7	5.81	103	-6.9	
+VF3-12-7	VF3-12-8	1.65	87	-1.5	
+VF3-12-8	VF3-12-9	11.12	71	0.3	
+VF3-12-9	VF3-12-10	3.76	99	20.1	
+VF3-12-10	VF3-12-11	9.18	159	9.3	
+VF3-12-11	VF3-12-12	6.32	138	2.1	
+VF3-12-12	VF3-12-13	0.5	0	90	
+VF3-12-13	VF3-12-14	3.3	99	4.8	
+VF3-12-14	VF3-12-15	7.14	163	-10.5	
+VF3-12-15	VF3-12-16	6.01	143	-3.3	
+VF3-12-16	VF3-12-17	5.05	180	12	
+VF3-12-17	VF3-12-18	6.73	142	-9.6	
+VF3-12-18	VF3-12-19	4.89	208	44.4	
+VF3-12-19	VF3-12-20	10.82	62	30.9	
+VF3-12-20	VF3-12-21	9.33	54	12	
+VF3-12-21	VF3-12-22	5.45	56	-49.2	
+VF3-12-22	VF3-12-23	5.87	55	41.7	
+#		0	0	-91.5	# nouveau compteur
+VF3-12-23	VF3-12-24	8.69	57	-5.1	
+VF3-12-24	VF3-12-25	10.41	68	23.7	
+VF3-12-25	VF3-12-26	7.49	53	-15.9	
+VF3-12-26	VF3-12-27	14.18	73	71.4	
+VF3-12-27	VF3-12-28	4.14	22	-66.3	
+VF3-12-28	VF3-12-29	6.59	94	63.3	
+VF3-12-29	VF3-12-30	4.99	0	20	
+VF3-12-30	VF3-12-31	3.58	186	-3.3	
+VF3-12-31	VF3-12-32	3.05	259	40.8	
+VF3-12-32	VF3-12-33	5.51	148	7.5	
+#VF3-12-33	VF3-12-34	1	235	10	# station 66 ; Nom OK ???
+VF3-12-33	VF3-11-60	1	235	10	# station 66 ; Nom OK ???
+
+endcenterline
+
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+
+#		0	0	-90	# VF43 DEPART DU LAC
+#VF3-12-34	VF3-13-1	7.14	28	-13	# VF43 DEPART DU LAC
+#VF3-12-0	VF3-13-1	7.14	28	-13	# VF43 DEPART DU LAC
+#VF3-12-0	VF3-13-0	0	28	-13	# VF43 DEPART DU LAC
+VF3-13-0	VF3-13-1	7.14	28	-13	# VF43 DEPART DU LAC
+VF3-13-1	VF3-13-2	12.21	64	-51	
+VF3-13-2	VF3-13-3	7.06	342	-18	
+VF3-13-3	VF3-13-4	3.71	317	-14	
+VF3-13-4	VF3-13-5	2.88	358	-29	
+VF3-13-5	VF3-13-6	4.13	309	-12	
+VF3-13-6	VF3-13-7	1.39	358	-22	
+VF3-13-7	VF3-13-8	2.9	312	-3	
+VF3-13-8	VF3-13-9	2.78	340	-31	
+VF3-13-9	VF3-13-10	4.87	79	-9	
+VF3-13-10	VF3-13-11	3.07	347	-28	
+VF3-13-11	VF3-13-12	2.34	78	-10	
+VF3-13-12	VF3-13-13	2.62	312	-1	
+VF3-13-13	VF3-13-14	3.16	276	-16	
+VF3-13-14	VF3-13-15	2.64	304	-10	
+VF3-13-15	VF3-13-16	3.06	1	-30	
+VF3-13-16	VF3-13-17	5.08	95	0	
+VF3-13-17	VF3-13-18	2.9	355	-20	
+VF3-13-18	VF3-13-19	2.76	355	-38	
+VF3-13-19	VF3-13-20	8.19	68	-25	
+VF3-13-20	VF3-13-21	1.47	30	-28	
+VF3-13-21	VF3-13-22	1.9	276	-20	
+VF3-13-22	VF3-13-23	2.65	46	-40	
+#		0	0	-90	
+VF3-13-23	VF3-13-24	4.11	102	-17	
+VF3-13-24	VF3-13-25	5.92	0	-48	
+VF3-13-25	VF3-13-26	1.49	32	-16	
+VF3-13-26	VF3-13-27	1.55	357	-36	
+VF3-13-27	VF3-13-28	1.44	20	-25	
+VF3-13-28	VF3-13-29	2.99	82	-20	
+VF3-13-29	VF3-13-30	2.04	38	-42	
+VF3-13-30	VF3-13-31	2.05	133	12	
+VF3-13-31	VF3-13-32	3.81	90	-2	
+VF3-13-32	VF3-12-0	12.1	0	-90	
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+
+#		0	0	-90	# VF44 DEPART SIPHON 
+VF3-14-0	VF3-14-1	7.66	260	-31	# AMONT 1
+VF3-14-1	VF3-14-2	17.33	252	8	
+VF3-14-2	VF3-14-3	3.3	265	13	
+VF3-14-3	VF3-14-4	2.9	205	48	
+
+VF3-14-1	VF3-14-6	0	0	-90	# DEPART DE 1; # Old L = 609.9
+VF3-14-6	VF3-14-7	7.73	273	-37	
+VF3-14-7	VF3-14-8	11.43	255	-4	
+VF3-14-8	VF3-14-9	0.5	0	90	
+VF3-14-9	VF3-14-10	12.06	260	8	# STATION 7
+VF3-14-10	VF3-14-11	2.8	245	33	
+VF3-14-11	VF3-14-12	2.4	275	21	
+VF3-14-12	VF3-14-13	4.49	260	47	
+VF3-14-13	VF3-14-14	3.17	185	23	
+#		-653.98	0	-90	
+#		657.22	0	-90	# DEPART DE 7
+VF3-14-10	VF3-14-15	4.51	280	-40	# DEPART DE 7 ; OK ????
+VF3-14-15	VF3-14-16	4.05	275	-62	
+VF3-14-16	VF3-14-17	2.41	355	8	
+VF3-14-17	VF3-14-18	6.63	328	0	
+VF3-14-18	VF3-14-19	3.63	338	-32	
+VF3-14-19	VF3-14-20	4.3	318	-9	
+VF3-14-20	VF3-14-21	0.86	222	0	
+VF3-14-21	VF3-14-22	3.5	290	18	
+VF3-14-22	VF3-14-23	5.74	220	1	
+VF3-14-23	VF3-14-24	2.75	230	18	
+VF3-14-24	VF3-14-25	6.23	155	9	
+VF3-14-25	VF3-14-26	3.1	250	20	
+VF3-14-26	VF3-14-27	3.09	220	46	
+VF3-14-27	VF3-14-28	4.79	265	-14	
+#VF3-14-28	VF3-14-29	2.71	245	18	
+VF3-14-28	VF3-13-0	2.71	245	18	
+endcenterline
+
+endsurvey

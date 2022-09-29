@@ -1,0 +1,46 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey DDiscovery -title "VF3 - Mirolda - Réseau Lucien Bouclier - Départ dans g. Discovery"
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#VF3-10-69	VF3-10-69	0	0	-91.5	# VF41 DEPART DE LA STATION "60"
+VF3-11-60	VF3-11-1	5.56	266	-40	# VF41 DEPART DE LA STATION "60"
+VF3-11-1	VF3-11-2	4.44	336	-48	
+VF3-11-2	VF3-11-3	0	0	-90	
+VF3-11-3	VF3-11-4	5.17	328	-55.5	
+VF3-11-4	VF3-11-5	5.16	10	-60	
+VF3-11-5	VF3-11-6	7.27	60	-6	
+#		0	0	-90	
+VF3-11-6	VF3-11-7	10.07	57	-37.5	
+VF3-11-7	VF3-11-8	9.25	55	-73.5	
+VF3-11-8	VF3-11-9	12.06	53	-5	
+VF3-11-9	VF3-11-10	6.08	54	-22.5	
+VF3-11-10	VF3-11-11	9.03	60	2.5	
+VF3-11-11	VF3-11-12	25.65	0	-90	
+VF3-11-12	VF3-11-13	1.5	225	10	
+VF3-11-13	VF3-11-14	11.71	0	-90	
+VF3-11-14	VF3-11-15	2.48	305	-6	
+VF3-11-15	VF3-11-16	3.16	196	-31.5	
+VF3-11-16	VF3-10-52	5.4	275	-13.5	
+
+endcenterline
+
+endsurvey
