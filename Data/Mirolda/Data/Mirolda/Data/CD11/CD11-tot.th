@@ -31,7 +31,12 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	join SP-SA-1@Confluence SP-mirolda_coulee_calcite_remonte-1p@500
 
 	# Jonctions des dessins en coupe
-	# join ??@?? ??@??
+	# Jonction au niveau de -97 m
+	join SC-CD11-1@CD11 SC-Aven-1@Bivouac270
+	#jonction au niveau de -250 m
+	#join SC-???@Bivouac270	SC-Bivouac-1@Confluence
+	# Jonction au niveau de -370 m
+	#join SC-Intrepide-3@Confluence SC-???@500
 
 	# Import des maps, plan et coupe
 	input CD11-maps.th

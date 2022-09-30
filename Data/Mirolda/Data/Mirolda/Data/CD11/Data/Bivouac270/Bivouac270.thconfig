@@ -205,10 +205,10 @@ layout layout-coupe
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Bivouac270 coupe développée - 1:1000"
+  doc-title "Bivouac270 coupe développée - 1:1500"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 0 nw
+  map-header 0 -50 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -233,8 +233,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -247,7 +247,7 @@ layout layout-coupe
 			\cavename={Gouffre Mirolda - La Majestueuse} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou2022}
+		\newtoks\club \club={Interclub Criou 2022}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -261,7 +261,7 @@ layout layout-coupe
 
 # Export des xvi pour le dessin si besoin
 export map -fmt xvi -layout xviexport -o Data/Bivouac270-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Bivouac270-coupe.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Bivouac270-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Bivouac270-plan-tot@Bivouac270

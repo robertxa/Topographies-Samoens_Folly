@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 1410.5 1097.0
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {157.485 1 1.0} {866.14 CD11} CD11-coupe.xvi 0 {}
 
 
@@ -13,8 +13,8 @@ point 180.25 892.75 gate
 
 line label -text [Puits Aven]
   1059.0 680.0
-  1059.0 680.0 1150.5 522.5 1165.5 490.5
-  1180.5 458.5 1216.75 334.25 1216.75 334.25
+  1059.0 680.0 1173.0 536.0 1188.0 504.0
+  1203.0 472.0 1265.0 341.0 1265.0 341.0
   smooth off
 endline
 
@@ -73,43 +73,6 @@ point 631.75 659.5 blocks -scale xs
 
 point 606.25 685.0 blocks -scale xs
 
-line border -visibility on
-  1147.5 302.25
-  1143.75 290.75 1133.5 278.75 1133.25 267.0
-  1133.0 255.25 1133.75 241.25 1133.75 241.25
-  smooth off
-endline
-
-line border -visibility on
-  1032.75 313.5
-  1032.75 313.5 1048.25 294.0 1049.25 286.0
-  1050.25 278.0 1056.25 254.75 1055.75 242.5
-  smooth off
-endline
-
-line border -visibility on
-  996.75 535.75
-  996.75 535.75 981.25 521.75 980.25 508.5
-  979.25 495.25 976.75 441.0 976.75 437.25
-  976.75 433.5 979.5 404.75 980.0 401.0
-  smooth off
-endline
-
-line border -visibility on
-  830.75 485.75
-  830.75 485.75 845.5 474.5 849.75 462.0
-  854.0 449.5 853.0 420.5 854.0 412.5
-  smooth off
-endline
-
-point 835.25 541.5 blocks -scale xs
-
-point 1124.75 159.5 blocks -scale xs
-
-point 1085.25 201.25 blocks -scale xs
-
-point 1046.25 207.5 blocks -scale xs
-
 point 577.5 690.0 blocks -scale xs
 
 point 545.0 713.5 blocks -scale xs
@@ -143,7 +106,7 @@ point 226.25 809.25 air-draught -orientation 281.0 -subtype summer
 line border -visibility on
 endline
 
-line border -visibility off
+line border -visibility on
   161.25 867.75
   155.0 865.75
 endline
@@ -200,7 +163,7 @@ endline
 
 point 901.5 687.5 label -text "Vers CD5"
 
-line border -reverse on -visibility off
+line border -reverse on
   873.75 661.25
   892.5 657.25
 endline
@@ -217,7 +180,7 @@ line wall -reverse on
   smooth off
 endline
 
-line border -reverse on -visibility off
+line border -reverse on -visibility on
   979.5 587.5
   1005.25 588.75
 endline
@@ -240,7 +203,7 @@ line wall -reverse on
   smooth off
 endline
 
-line border -reverse on -visibility off
+line border -reverse on -visibility on
   1123.5 343.0
   1133.5 341.75 1150.25 339.25 1158.25 336.5
   smooth off
@@ -255,6 +218,10 @@ line wall -reverse on
   1192.5 237.75 1222.75 208.25 1225.25 207.75
   1227.75 207.25 1241.5 203.25 1241.5 203.25
   smooth off
+  1241.5 203.25 1256.75 208.75 1258.25 209.0
+  1259.75 209.25 1266.75 207.5 1271.0 207.25
+  1275.25 207.0 1276.75 207.0 1280.25 207.5
+  smooth off
 endline
 
 line wall
@@ -264,7 +231,6 @@ line wall
   155.5 862.75 155.25 861.75 155.75 859.75
   156.25 857.75 154.5 855.75 157.75 853.5
   161.0 851.25 169.25 844.75 174.5 842.0
-  smooth off
 endline
 
 line wall -subtype debris
@@ -302,7 +268,6 @@ line wall -subtype debris
   660.75 618.5 663.5 618.25 668.0 618.25
   672.5 618.25 697.0 616.75 704.75 617.0
   712.5 617.25 723.75 612.75 733.5 608.5
-  smooth off
 endline
 
 line rope
@@ -310,9 +275,8 @@ line rope
   1109.5 234.0
   1137.5 232.5
   1176.5 216.5
-  1196.75 209.25
-  1216.0 201.25
-  1236.75 199.0
+  1218.0 203.0
+  1270.0 199.0
 endline
 
 line rope
@@ -408,6 +372,10 @@ line wall
   1143.25 179.25 1145.5 185.25 1148.25 186.75
   1151.0 188.25 1154.25 188.5 1173.5 188.25
   1192.75 188.0 1228.25 187.25 1232.5 188.0
+  1236.75 188.75 1246.5 188.75 1253.5 187.5
+  1260.5 186.25 1261.75 186.75 1266.0 184.5
+  1270.25 182.25 1277.0 177.5 1277.0 177.5
+  smooth off
 endline
 
 point 507.75 794.0 label -text R2
@@ -425,6 +393,8 @@ line rope
   464.0 779.5
   464.5 734.5
 endline
+
+point 1264.75 229.75 station-name -scale xs
 
 point 1265.155 205.12 station -name 46@CD11
 

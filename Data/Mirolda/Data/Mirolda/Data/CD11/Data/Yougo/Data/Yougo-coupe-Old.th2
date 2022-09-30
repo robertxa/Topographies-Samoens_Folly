@@ -7,24 +7,18 @@ encoding  utf-8
 
 scrap SC-Yougo-1 -projection extended -station-names "" "@Yougo" -author 2022 "Alexandre Pont" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 994.1422 -128.0 0.0 0.0 28.50241188 0.0 m]
 
-line wall -subtype clay
-  893.25 254.25
-  886.75 250.0 882.5 251.0 887.5 254.25
-  892.5 257.5 929.0 272.5 934.75 274.0
-  smooth off
-endline
-
 line wall
-  934.75 274.0
+  904.0 243.5
+  904.0 243.5 896.5 243.0 892.0 246.0
+  887.5 249.0 884.5 248.75 889.5 252.0
+  894.5 255.25 929.0 272.5 934.75 274.0
   940.5 275.5 966.0 290.75 972.5 292.5
-  smooth off
 endline
 
 line wall -subtype debris
   972.5 292.5
   979.0 294.25 982.0 295.5 986.75 295.0
   991.5 294.5 1000.5 295.75 1002.75 290.25
-  smooth off
 endline
 
 line wall
@@ -35,35 +29,31 @@ line wall
   smooth off
 endline
 
-line border -visibility off
+line border -visibility on
   1005.0 282.25
   1006.25 278.5 1010.75 277.25 1011.5 280.75
   smooth off
 endline
 
-line wall -subtype clay
+line wall
   1011.5 280.75
   1012.25 284.25 1011.5 283.75 1014.75 285.5
   smooth off
 endline
 
-point 528.25 157.5 continuation
-
-point 208.0 386.75 continuation
-
 point 528.25 157.5 continuation -attr Code P -attr Cavite "yougosdslaves" -text "Imp ?"
 
-point 1008.75 262.0 continuation -attr Code P -attr Cavite "yougosdslaves" -text "Imp ?"
+point 1012.75 271.75 continuation -attr Code P -attr Cavite "yougosdslaves" -text "Imp ?"
 
 point 966.5 343.25 continuation -attr Code P -attr Cavite "yougosdslaves" -text "Escalade ?"
 
 point 1018.75 371.5 continuation -attr Code P -attr Cavite "yougosdslaves" -text "Escalade ?"
 
 line label -text [Réseau des Yougoslaves]
-  870.0 404.25
-  870.0 404.25 937.81 434.54 1035.0 478.0
-  1158.0 533.0 1185.5 558.0 1194.5 560.0
-  1203.5 562.0 1252.75 577.5 1275.75 580.5
+  837.0 448.0
+  837.0 448.0 826.0 453.0 949.0 508.0
+  1072.0 563.0 1149.0 582.0 1158.0 584.0
+  1167.0 586.0 1232.0 609.0 1255.0 612.0
   smooth off
 endline
 
@@ -97,9 +87,9 @@ line rope
 endline
 
 line rope
-  917.5 274.5
-  883.0 254.0
-  883.0 241.5
+  900.5 266.25
+  874.75 260.5
+  874.5 229.0
 endline
 
 line rope
@@ -109,7 +99,7 @@ line rope
   1244.0 384.75
 endline
 
-line wall -subtype clay
+line wall
   1014.75 285.5
   1018.0 287.25 1020.5 288.5 1028.0 289.25
   1035.5 290.0 1041.0 295.0 1044.5 295.75
@@ -126,12 +116,6 @@ line wall -subtype clay
   1196.75 372.0 1212.5 376.0 1220.0 376.75
   1227.5 377.5 1240.25 380.0 1247.5 380.5
   1254.75 381.0 1270.42 379.83 1277.25 386.5
-  smooth off
-  altitude .
-endline
-
-line wall
-  1277.25 386.5
   altitude .
   1287.75 396.75 1280.13 407.09 1302.25 419.5
   1326.75 433.25 1335.0 441.75 1339.0 458.75
@@ -139,8 +123,6 @@ line wall
   smooth off
   altitude .
 endline
-
-point 160.25 288.75 continuation
 
 line wall -subtype invisible
   1342.75 499.5
@@ -160,7 +142,7 @@ line wall
   smooth off
 endline
 
-line border -visibility off
+line border -visibility on
   1027.0 352.25
   1019.5 351.5
 endline
@@ -174,12 +156,12 @@ line wall
   smooth off
 endline
 
-line border -reverse on -visibility off
-  893.25 254.25
-  897.0 231.75
+line border -reverse on -visibility on
+  904.0 243.5
+  903.75 230.0
 endline
 
-line border -visibility off
+line border -visibility on
   974.75 327.0
   971.25 330.5 967.5 326.25 967.5 326.25
   smooth off
@@ -214,7 +196,7 @@ line wall
   smooth off
 endline
 
-line border -visibility off
+line border -visibility on
   211.5 372.0
   209.22 375.91 201.0 374.5 200.25 372.25
   smooth off
@@ -230,7 +212,7 @@ line wall
   smooth off
 endline
 
-line border -visibility off
+line border -visibility on
   169.25 302.25
   169.5 299.75 175.5 294.75 176.75 295.75
   smooth off
@@ -253,7 +235,6 @@ line wall
   217.23 335.02 226.0 336.5 226.5 340.5
   226.85 343.34 236.25 338.5 238.0 338.0
   239.75 337.5 250.25 340.0 252.25 340.0
-  smooth off
 endline
 
 line wall -subtype clay
@@ -276,7 +257,6 @@ line wall -subtype clay
   630.25 289.0 661.0 263.75 669.25 263.0
   677.54 262.25 692.82 263.68 700.0 256.5
   701.75 254.75 706.0 250.25 707.5 248.75
-  smooth off
 endline
 
 line wall
@@ -293,14 +273,14 @@ line wall
   smooth off
 endline
 
-line border -visibility off
+line border -visibility on
   547.0 183.25
   546.5 180.0 552.75 174.0 555.0 171.5
   557.25 169.0 558.25 161.75 563.25 160.75
   smooth off
 endline
 
-line wall -subtype clay
+line wall
   563.25 160.75
   altitude .
   568.25 159.75 572.5 168.25 576.25 169.0
@@ -311,7 +291,6 @@ line wall -subtype clay
   695.25 213.75 692.5 218.25 694.5 219.75
   696.5 221.25 704.0 227.75 707.25 228.0
   710.5 228.25 714.75 231.75 721.75 232.25
-  smooth off
 endline
 
 line wall -subtype clay
@@ -324,7 +303,9 @@ line wall -subtype clay
   824.0 233.5 835.75 230.75 840.25 230.75
   844.75 230.75 853.75 228.75 861.75 227.75
   869.75 226.75 874.75 227.0 879.5 225.25
-  884.25 223.5 890.0 231.5 897.0 231.75
+  884.25 223.5 885.0 226.75 892.0 227.0
+  899.0 227.25 902.5 230.0 903.75 230.0
+  smooth off
 endline
 
 point 178.231 303.623 station -name PTRYOLEAP03
