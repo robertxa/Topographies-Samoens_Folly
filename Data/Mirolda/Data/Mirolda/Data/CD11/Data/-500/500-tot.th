@@ -22,7 +22,9 @@ survey 500 -title "Gouffre Mirolda - La Tonitruante"
 
 
 	# Import du dessin en coupe
-	#input Data/500-coupe.th2
+	
+	input Data/mirolda_rivier_e_tonitruante-1s.th2
+		#join SC-Tonitruante-1
 
 	# Import des maps
 	input 500-maps.th
