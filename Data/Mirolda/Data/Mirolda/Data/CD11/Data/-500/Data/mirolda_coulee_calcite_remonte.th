@@ -15,14 +15,14 @@ survey coulee_calcite -title "mirolda coulee calcite remonte"
     units compass clino degrees
     data normal from to length compass clino
     extend left
-    0 1 11.97 335.0 3.1
+    0 1 11.97 335.0 3.1 # Au dessus 0, arrivée coulée calcite en palfond ???
     # extend auto
     0 . 17.27 335.6 72.1
     0 . 1.79 302.2 -70.1
     0 . 0.98 289.1 -12.2
     0 . 0.52 61.5 -17.2
     extend left
-    1 2 8.00 287.8 2.5
+    1 2 8.00 287.8 2.5  # entre 1 et 2 , pont rocheux
     # extend auto
     1 . 4.39 214.6 74.4
     1 . 2.49 277.4 -55.5
@@ -43,7 +43,7 @@ survey coulee_calcite -title "mirolda coulee calcite remonte"
     3 . 0.32 257.6 -0.6
     3 . 0.79 54.3 12.6
     extend left
-    4 5 4.98 305.9 6.8
+    4 5 4.98 305.9 6.8  # Arrivée en plafond ?
     # extend auto
     4 . 6.99 87.5 85.7
     4 . 1.51 253.2 -73.9
@@ -86,7 +86,7 @@ survey coulee_calcite -title "mirolda coulee calcite remonte"
     9 . 0.75 26.6 -0.9
     9 . 0.65 175.9 19.7
     extend left
-    10 11 3.66 40.8 -25.0
+    10 11 3.66 40.8 -25.0  # Station 11, arrivée d'eau en plafond
     # extend auto
     10 . 9.13 43.7 74.8
     10 . 3.72 50.6 -67.1
