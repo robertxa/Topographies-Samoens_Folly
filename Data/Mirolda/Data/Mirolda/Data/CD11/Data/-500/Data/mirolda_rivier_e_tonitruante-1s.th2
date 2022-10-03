@@ -27,16 +27,19 @@ endline
 line wall
   2052.0 -152.0
   2052.0 -152.0 2083.96 -214.56 2061.98 -237.28
+  smooth off
 endline
 
 line wall
   1912.16 -234.61
   1912.16 -234.61 1904.0 -168.0 1904.0 -152.0
+  smooth off
 endline
 
 line wall
   1788.0 -136.0
   1788.0 -136.0 1779.98 -235.3 1765.99 -237.65
+  smooth off
 endline
 
 line wall
@@ -64,6 +67,11 @@ line wall -reverse on
   618.2 -171.54 640.78 -170.58 663.12 -172.96
   725.78 -179.64 785.72 -197.63 847.58 -208.25
   smooth off
+endline
+
+line rope
+  -240.0 -244.0
+  156.0 -228.0
 endline
 
 line wall -subtype debris
@@ -95,6 +103,7 @@ line wall -reverse on
   1011.08 -186.82 1024.4 -182.5 1038.08 -179.79
   1083.19 -170.86 1132.87 -172.43 1174.4 -150.34
   1184.73 -144.84 1208.21 -119.67 1217.84 -113.03
+  smooth off
 endline
 
 line wall -reverse on
@@ -328,6 +337,7 @@ line wall
   1817.82 -1231.36 1798.02 -1230.59 1778.5 -1227.6
   1614.14 -1202.4 1826.32 -1226.52 1635.58 -1199.16
   1578.16 -1190.92 1562.33 -1195.81 1503.9 -1191.54
+  smooth off
 endline
 
 line wall -subtype debris
@@ -418,6 +428,7 @@ line water-flow
   2737.15 -1324.11 2756.27 -1340.14 2778.68 -1348.32
   2815.77 -1361.85 2881.66 -1368.2 2918.17 -1365.99
   2939.73 -1364.69 2982.8 -1408.13 3004.0 -1404.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -552,21 +563,25 @@ endline
 line water-flow
   6402.0 -2752.0
   6402.0 -2752.0 6488.0 -3092.0 6490.0 -3154.0
+  smooth off
 endline
 
 line water-flow
   6386.0 -2632.0
   6386.0 -2632.0 6506.0 -3028.0 6514.0 -3088.0
+  smooth off
 endline
 
 line water-flow
   6366.0 -2644.0
   6366.0 -2644.0 6468.0 -3022.0 6466.0 -3130.0
+  smooth off
 endline
 
 line water-flow
   5688.0 -2214.0
   5688.0 -2214.0 5740.0 -2500.0 5740.0 -2490.0
+  smooth off
 endline
 
 line water-flow
@@ -673,6 +688,7 @@ line wall -reverse on
   5656.6 -2048.14 5727.49 -2078.12 5813.62 -2107.88
   5868.08 -2126.7 5925.64 -2135.69 5979.99 -2154.82
   6040.17 -2176.0 6088.76 -2203.71 6146.39 -2229.82
+  smooth off
 endline
 
 line water-flow
@@ -765,6 +781,7 @@ line wall
   6795.85 -2775.02
   6846.82 -2793.91 6904.6 -2789.09 6955.25 -2808.66
   6983.51 -2819.58 7050.79 -2879.63 7074.3 -2894.06
+  smooth off
 endline
 
 point 7448.0 -3212.0 clay
@@ -773,6 +790,7 @@ line wall -subtype debris
   7074.3 -2894.06
   7122.47 -2923.62 7203.91 -2949.38 7260.1 -2957.18
   7281.26 -2960.12 7302.76 -2959.63 7324.11 -2960.12
+  smooth off
 endline
 
 line wall
@@ -940,7 +958,7 @@ line wall -subtype debris
   smooth off
 endline
 
-point 10347.30 -2919.16 label -text "?"
+point 10392.0 -1996.0 label -text "<center>arrivée de la rivière<br>Dragounet"
 
 point 490.0 -582.0 label -text "faille"
 
@@ -948,6 +966,7 @@ line label -text "rivière La Tonitruante"
   692.0 -2304.0
   692.0 -2304.0 2796.0 -2836.0 3128.0 -2872.0
   3379.67 -2899.29 5112.0 -3344.0 5192.0 -3440.0
+  smooth off
 endline
 
 line label -text "rivière Dragounet"
@@ -1200,6 +1219,7 @@ line water-flow
   13086.0 -4534.0 13196.0 -4542.0 13330.0 -4566.0
   13464.0 -4590.0 13530.0 -4608.0 13594.0 -4650.0
   13658.0 -4692.0 13792.0 -4732.0 13812.0 -4736.0
+  smooth off
 endline
 
 area water
@@ -1664,6 +1684,7 @@ line wall
   20743.42 -5963.29 20783.56 -5974.74 20805.53 -5963.24
   20815.17 -5958.19 20817.43 -5954.28 20825.54 -5947.79
   20831.49 -5943.03 20838.8 -5939.9 20844.06 -5934.39
+  smooth off
 endline
 
 line wall -subtype flowstone

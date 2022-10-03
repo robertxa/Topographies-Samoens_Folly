@@ -36,12 +36,12 @@ line wall
   457.54 -580.04 427.13 -558.86 409.88 -534.8
   402.49 -524.49 384.77 -487.84 380.57 -478.1
   376.21 -467.98 374.01 -456.92 368.84 -447.18
-  331.67 -377.2 369.02 -467.73 332.44 -392.33
-  322.75 -372.37 319.11 -365.41 312.87 -344.06
+  348.41 -408.7 354.0 -445.0 332.44 -392.33
+  324.03 -371.79 319.11 -365.41 312.87 -344.06
   smooth off
 endline
 
-line wall
+line wall -reverse on
   180.28 -186.43
   182.21 -190.67 183.22 -195.48 186.08 -199.16
   199.12 -215.95 220.63 -227.92 237.53 -240.07
@@ -51,7 +51,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   139.28 -251.66
   123.03 -241.07 79.16 -228.79 61.36 -223.69
   smooth off
@@ -86,7 +86,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   -98.83 -168.08
   -136.05 -217.53 -167.65 -243.63 -229.61 -255.37
   -244.29 -258.15 -258.19 -260.89 -270.86 -249.69
@@ -95,7 +95,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   -231.08 -76.99
   -232.1 -30.36 -233.17 9.05 -256.67 50.95
   smooth off
@@ -132,7 +132,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   -197.3 40.08
   -190.95 2.06 -171.8 -24.64 -141.54 -45.97
   -132.26 -52.51 -125.42 -61.61 -116.02 -68.04
@@ -148,13 +148,13 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   -393.3 155.15
   -388.96 176.22 -391.57 195.49 -380.85 213.85
   smooth off
 endline
 
-line wall
+line wall -reverse on
   -380.85 213.85
   -377.24 221.26 -374.23 229.01 -370.01 236.09
   -337.55 290.55 -358.23 248.14 -331.21 296.23
@@ -165,7 +165,7 @@ endline
 
 line wall
   -340.62 187.75
-  -308.14 251.98 -279.76 318.06 -254.43 385.4
+  -308.14 251.98 -282.53 304.23 -257.2 371.57
   smooth off
 endline
 
@@ -183,7 +183,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   -260.61 435.26
   -253.01 439.44 -246.31 446.08 -237.81 447.8
   altitude .
@@ -218,7 +218,7 @@ line water-flow
   smooth off
 endline
 
-line wall
+line wall -reverse on
   104.48 432.99
   117.12 448.06 119.98 479.32 132.33 490.89
   146.87 504.51 160.55 514.65 177.66 524.21
@@ -238,7 +238,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   177.66 524.21
   185.68 521.98 193.46 518.51 201.72 517.53
   226.91 514.53 252.55 517.85 277.79 515.31
@@ -246,7 +246,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   395.81 492.29
   400.42 490.54 404.89 488.38 409.63 487.04
   435.31 479.77 465.03 481.37 491.59 479.81
@@ -273,7 +273,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   552.31 487.46
   600.55 471.8 636.58 436.31 674.76 404.83
   685.3 396.14 698.1 383.1 711.7 379.62
@@ -311,7 +311,7 @@ line water-flow
   smooth off
 endline
 
-line wall
+line wall -reverse on
   906.16 629.73
   950.22 628.57 988.9 619.37 1033.0 618.97
   1042.93 618.88 1052.78 620.76 1062.67 621.66
@@ -335,13 +335,13 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   810.46 468.3
   813.78 496.12 813.53 498.68 821.0 528.0
   smooth off
 endline
 
-line wall
+line wall -reverse on
   827.32 563.37
   835.37 581.35 831.87 609.33 850.02 622.16
   864.87 632.66 889.1 628.62 906.16 629.73
@@ -374,14 +374,14 @@ endline
 
 point 769.76 564.61 water-flow -orientation 110.0
 
-line wall
+line wall -reverse on
   867.86 554.44
   864.67 537.96 864.22 524.18 858.9 508.25
   smooth off
   altitude .
 endline
 
-line wall
+line wall -reverse on
   1062.67 621.66
   1068.27 625.7 1083.46 634.98 1089.51 638.31
   1097.4 642.64 1106.41 644.68 1114.28 649.04
@@ -395,7 +395,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   1174.14 685.22
   1184.13 688.01 1194.0 691.29 1204.12 693.58
   1210.99 695.13 1218.05 695.67 1225.02 696.71
@@ -421,7 +421,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   1525.49 741.36
   1571.38 748.16 1599.45 747.36 1643.54 735.81
   smooth off
