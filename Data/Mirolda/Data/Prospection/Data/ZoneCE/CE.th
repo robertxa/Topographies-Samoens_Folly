@@ -1,0 +1,48 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousCE -title "trous CE"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+
+fix       CE1       943090     2130740     2030
+fix       CE2       943690     2130820     2020
+fix       CE3       943150     2130840     1990
+fix       CE4       943400     2130610     1900
+fix       CE5       943480     2130690     2060
+fix       CE6       943430     2130690     2060
+fix       CE7       943490     2130660     2050
+fix       CE8       943530     2130520     2010
+fix       CE9       943820     2130720     2180
+
+fix       CE11       943980     2130600     2080
+fix       CE12       943760     2130570     2080
+fix       CE13       943750     2130550     2080
+fix       CE14       943770     2130470     2040
+
+station   CE1       "CE1" entrance air-draught continuation explored 26m
+station   CE2       "CE2" entrance continuation explored 09m
+station   CE3       "CE3" entrance continuation explored 21m
+station   CE4       "CE4" entrance continuation explored 20m
+station   CE5       "CE5" entrance continuation explored 51m
+station   CE6       "CE6" entrance continuation explored 20m
+station   CE7       "CE7" entrance continuation explored 21m
+station   CE8       "CE8" entrance air-draught continuation explored 121m
+station   CE9       "CE9" entrance continuation explored 40m
+
+station   CE11       "CE11" entrance continuation explored 250m
+station   CE12       "CE12" entrance #continuation explored 40m
+station   CE13       "CE13" entrance #continuation explored 40m
+station   CE14       "CE14" entrance #continuation explored 40m
+
+
+endcenterline
+
+endsurvey

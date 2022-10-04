@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousCF -title "trous CF"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+
+fix       CF1       944240     2130980     2260
+#fix       CF2       944120     2130200     2100
+fix       CF3       944140     2130630     2200
+fix       CF4       944230     2130720     2240
+fix       CF5       944490     2130940     2340
+fix       CF6       944530     2130940     2345
+
+station   CF1       "CF1" entrance #air-draught continuation explored 28m
+#station   CF2       "CF2" entrance air-draught continuation explored 28m
+station   CF3       "CF3" entrance #air-draught continuation explored 28m
+station   CF4       "CF4/F105" entrance continuation explored 70m
+station   CF5       "CF5" entrance air-draught #continuation explored 28m
+station   CF6       "CF6" entrance #air-draught #continuation explored 28m
+
+endcenterline
+
+endsurvey

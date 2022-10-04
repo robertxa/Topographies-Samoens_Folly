@@ -4,9 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey F40 -title "Gouffre du Pic - F40"
+survey prospectionCriou -title "Prospection Criou"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/F40.th
+	input Data/ZoneCA/CA-tot.th
+	input Data/ZoneCB/CB-tot.th
+	input Data/ZoneCD/CD-tot.th
+	input Data/ZoneCE/CE-tot.th
+	input Data/ZoneCF/CF-tot.th
+	input Data/ZoneE/E-tot.th
+	input Data/ZoneEU/EU-tot.th
+	input Data/ZoneGU/GU-tot.th
 	
 	# Import du dessin en plan
 	#input Data/F40.th2

@@ -1,0 +1,102 @@
+encoding  utf-8
+  
+  
+ # File written by tro2therion.f90 (Xavier Robert) 
+  
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
+  
+ # 1-SOURCES 
+source CE-tot.th
+   
+ # 2-LAYOUT   
+ # Debut de la definition du Layout "xviexport"
+ layout xviexport
+   cs UTM32
+   # echelle a laquelle on veut dessiner la topo
+   scale 1 1000
+   # taille de la grille
+   grid-size 50 50 50 m
+   # mettre la grille en arrière plan
+   grid bottom
+ endlayout
+ # fin de la définition du layout "xviexport" 
+  
+ layout my_layout  
+   doc-title "zone CE"
+   doc-author "Xavier Robert"
+   cs UTM32
+   base-scale 1 1000
+  scale 1 5000   
+    #color map-bg 85
+  color map-fg [100 100 80]
+  transparency on
+  opacity 75
+  language fr
+   scale-bar 100 m
+  map-comment "Plan, Projection UTM32, Samoëns, 74, France"
+   statistics explo off
+   statistics topo-length off
+
+
+  legend on
+  
+   # Par defaut, la legende est de 14 cm de largeur
+   #  legend-width 14 cm
+  
+   # Specification la position de la manchette : interieur
+   # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
+   # les cordonnes du point de la topo ou l on veut la manchette :
+   # 0 0, c est en bas, a gauche
+   # 100 100, c est en haut, a droite
+   # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
+   # Il faut specifier un de ces points 
+  map-header 0 00 nw
+  
+   # arrière plan de la manchette
+  map-header-bg off
+  
+  layers on
+
+  #symbol-hide line survey
+  debug station-names
+ 
+  symbol-assign point station:temporary SKBB
+ 
+  grid bottom
+  
+  grid-size 100 100 100 m
+ #  grid off
+     statistics copyright all
+  
+ 
+  
+
+  
+ # Titre          
+     code tex-map
+    % Output map title as determined by Therion 5.3 is stored in cavename. 
+    % It will be empty if there are multiple maps selected for any one projection
+    % AND there are multiple source surveys identified in the thconfig file 
+    % ie Therion can not infer a unique title from the input data given.
+    % This code allows you to define an output map title {cavename} if it happens to be empty
+  
+   \edef\temp{\the\cavename}   % cavename from Therion
+   \edef\nostring{}            % empty string
+   \ifx\temp\nostring          % test if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+ 		\cavename={Trous CE} 		
+   \else % if not empty keep the value set by therion, or assign an override cavename here
+   \fi
+   endcode  
+  
+ ######################### 
+  
+ endlayout
+    
+  
+ # 3-EXPORTS   
+ export map -fmt xvi -layout xviexport -o trousCEmap.xvi
+   
+ export map -o trouCEplan.pdf -layout my_layout

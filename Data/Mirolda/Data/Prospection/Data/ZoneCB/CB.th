@@ -1,0 +1,37 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousCB -title "trous CB"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+
+fix       CB1       943270     2131140     2140
+fix       CB2       943320     2131180     2170
+fix       CB3       943320     2131140     2170
+fix       CB4       943500     2131960     2140
+fix       CB5       943420     2131010     2150
+fix       CB6       943390     2131050     2155
+fix       CB7       943480     2131100     2190
+fix       CB8       943440     2131260     2200
+fix       CB9       943390     2131220     2190
+
+station   CB1       "CB1" entrance continuation explored 24m
+station   CB2       "CB2" entrance continuation explored 35m
+station   CB3       "CB3" entrance continuation explored 54m
+station   CB4       "CB4" entrance air-draught continuation explored 45m
+station   CB5       "CB5" entrance continuation explored 30m
+station   CB6       "CB6" entrance continuation explored 42m
+station   CB7       "CB7" entrance continuation explored 27m
+station   CB8       "CB8" entrance continuation explored 24m
+station   CB9       "CB9" entrance continuation explored 70m
+
+endcenterline
+
+endsurvey

@@ -1,0 +1,43 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousCD -title "trous CD"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+
+fix       CD1       942430     2130810     1910
+fix       CD2       942780     2130880     1980
+fix       CD3       942800     2130860     1980
+fix       CD4       942470     2130880     1900
+fix       CD5       942690     2130690     1920
+fix       CD6       942730     2130740     1940
+fix       CD7       942330     2130640     1880
+fix       CD8       942830     2130650     1890
+fix       CD9       942700     2130670     1910
+
+fix       CD10      942700     2130670     1920
+fix       CD20      942950     2131320     2210
+
+station   CD1       "CD1" entrance continuation explored 30m
+station   CD2       "CD2" entrance continuation explored 40m
+station   CD3       "CD3" entrance #air-draught continuation explored 40m
+station   CD4       "CD4" entrance continuation explored 63m
+station   CD5       "CD5" entrance air-draught continuation explored 60m
+station   CD6       "CD6" entrance continuation explored 18m
+station   CD7       "CD7" entrance continuation explored 32m
+station   CD8       "CD8" entrance air-draught continuation explored 05m
+station   CD9       "CD9" entrance continuation explored 50m
+
+station   CD10      "CD10" entrance air-draught continuation explored 20m
+station   CD20      "CD20" entrance #air-draught continuation explored 40m
+
+endcenterline
+
+endsurvey
