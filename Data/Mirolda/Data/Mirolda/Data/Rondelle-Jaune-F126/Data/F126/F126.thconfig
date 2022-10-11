@@ -142,8 +142,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
 
   layers on
 
@@ -161,7 +161,7 @@ layout my_layout
 			\cavename={Gouffre Mirolda - Entrée F126} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou 2022}
+		\newtoks\club \club={Collectif Criou 2022}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -232,8 +232,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
   
   layers on
                 
@@ -246,7 +246,7 @@ layout layout-coupe
 			\cavename={Gouffre Mirolda - Entrée F126} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou 2022}
+		\newtoks\club \club={Collectif Criou 2022}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -259,7 +259,7 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/F126-map.xvi
+#export map -fmt xvi -layout xviexport -o Data/F126-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/F126-coupe.xvi
 
 # Selection des Maps à exporter
@@ -268,7 +268,7 @@ select MC-F126-coupe-tot@F126
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 

@@ -162,7 +162,8 @@ layout my_layout
 			\cavename={Résurgence temporaire des Péterets} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou 2022}
+		#\newtoks\club \club={Collectif Criou 2022}
+    \newtoks\club \club={G.S.\Ursus}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -249,7 +250,8 @@ layout atlas_layout
 			\cavename={Résurgence temporaire des Péterets} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Interclub Criou 2022}
+		#\newtoks\club \club={Collectif Criou 2022}
+    \newtoks\club \club={G.S.\Ursus}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
