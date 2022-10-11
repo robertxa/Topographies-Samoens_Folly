@@ -22,7 +22,7 @@ centerline -extend right
     units compass clino degrees
     data normal from to length compass backclino
     #VF34 SOUS TERRE A PARTIR DE STATION N°17
-        #VF3-3-17	VF3-3-17	0	0	-90
+        #VF3-3-17	VF3-3-17	0	0	-90         # [Note Alex : Raccord ?]
         VF3-3-17	VF3-4-1	2.72	242	25	
         VF3-4-1	VF3-4-2	5.44	0	90	
         VF3-4-2	VF3-4-3	9.46	255	4	
@@ -50,6 +50,28 @@ centerline -extend right
         VF3-4-24	VF3-4-25	8.03	192	51	
         VF3-4-25	VF3-4-26	2.3	235	46	
         VF3-4-26	VF3-4-27	1.46	270	21	
+
+endcenterline
+
+centerline -extend right     # [Note Alex: Ajout]
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length backcompass clino				   # [Note Alex: inversé pour être comme sur acad]
+        VF3-4-11	VF3-E1	3.16 	 164.0   	 6.0   #	à p. du spit p40 [Note Alex: Raccord sur VF3-4-11 OK, inversé pour être comme sur acad]
+        VF3-E1	VF3-E2	5.95 	 179.0   	-30.0   	
+        VF3-E2	VF3-E3	2.29 	 180.0   	-28.0   	
+        VF3-E3	VF3-E4	10.17 	 165.0   	-47.0   	
+        VF3-E4	VF3-E5	8.77 	 204.0   	-47.0   	
 
 endcenterline
 

@@ -9,7 +9,7 @@ survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda
 
  centerline -extend right    
 
-    cs long-lat
+    #cs long-lat
 
     #fix Falaise 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses !
     station Falaise "Entrée Falaise" entrance air-draught continuation #explored ????m
@@ -160,8 +160,12 @@ centerline -extend right
     units length meters
     units compass clino degrees
     data normal from to length compass backclino
+        VF3-3-2 	VF3-3-2a	4.51	88	2	    # [Note Alex: Ajout]
+		VF3-3-2a	VF3-3-3a	5.77	136	33  	# [Note Alex: Ajout]
+		VF3-3-3a	VF3-3-4a	11.04	20	-10 	# [Note Alex: Ajout]
+
         #VF3-3-3b	VF3-3-3b	656.12	180	90	# Depart de 3b
-        VF3-3-3b	VF3-3-4b	10.62	266	1	# Depart de 3b
+        VF3-3-3b	VF3-3-4b	10.62	266	1	# Depart de 3b  [Note Alex : Pas sur Acad... ?]
 
 endcenterline
 

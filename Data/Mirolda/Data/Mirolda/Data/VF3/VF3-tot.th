@@ -18,7 +18,8 @@ survey VF3 -title "Gouffre VF3"
 	input Data/Tremie/Tremie-tot.th	# Galerie de la Trémie
 		equate VF3-4-11@Tremie.Tremie VF3-4-11@Chauves-Souris.Chauves-Souris
 	input Data/Sous-Jumeaux/Sous-Jumeaux-tot.th	# Petit réseau sous galerie qui va aux Puits Jumeaux
-		equate	VF3-8-10@Sous-Jumeaux.Sous-Jumeaux	VF3-8-10@Tremie.Tremie
+		#equate	VF3-8-10@Sous-Jumeaux.Sous-Jumeaux	VF3-8-10@Tremie.Tremie
+		equate	VF3-8-11@Sous-Jumeaux.Sous-Jumeaux	VF3-8-11@Tremie.Tremie		# Pour que ce soit comme sur le vieux Acad
 	input Data/Puits-jumeaux/Puits-jumeaux-tot.th	# Puits Jumeaux et galerie Discovery
 		equate	VF3-8-10@Puits-jumeaux.Puits-jumeaux	VF3-8-10@Tremie.Tremie
 	input Data/DDiscovery/DDiscovery-tot.th
@@ -32,6 +33,7 @@ survey VF3 -title "Gouffre VF3"
 	input Data/Sado-Bozzo/Sado-Bozzo-tot.th	# Réseau Sado-Bozzo. 
 		#equate VF3-11-60@Sado-Bozzo.Sado-Bozzo VF3-11-60@DDiscovery.DDiscovery
 		equate VF3-11-60@Sado-Bozzo.Sado-Bozzo VF3-22-19@DDiscovery2.DDiscovery2
+			#[By Alex: Raccord VF3-12-33@Sado-Bozzo.Sado-Bozzo sur VF3-17-20 ou ? VF3-10-69]
 		#equate VF3-11-60@Sado-Bozzo.Sado-Bozzo VF3-15-16@DDiscovery2.DDiscovery2
 			# Est-ce que la jonction est OK ???? Je n'ai pas l'impression, il manque une ligne droite direction N300 environ
 	
@@ -45,7 +47,9 @@ survey VF3 -title "Gouffre VF3"
 		equate VF3-18-0@Combattant.Combattant VF3-11-60@Sado-Bozzo.Sado-Bozzo
 			# Jonction OK avec réseau Sado-Bozzo. C'est l'ensemble Sado-Bozzo/Combatant qui est décalé
 	
-
+	#input Data/Hongroise/Hongroise-tot.th	# Galirie Hongroise
+		#equate ???@Hongroise.Hongroise ???@???.???
+		# A FAIRE
 
 
 

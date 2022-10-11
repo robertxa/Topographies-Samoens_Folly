@@ -22,7 +22,7 @@ centerline -extend right
     units compass clino degrees
     data normal from to length compass backclino
 #VF3-4-11	VF3-4-11	0	0	-90	# a partir du P40 
-VF3-4-11	VF3-8-1	0.99	255	14.4	# galerie sup.fossile
+VF3-4-11	VF3-8-1	0.99	255	14.4	# galerie sup.fossile   [Note Alex : Raccord VF3-4-11]
 VF3-8-1	VF3-8-2	4.51	184	27	
 VF3-8-2	VF3-8-3	1.83	198	-11.7	
 VF3-8-3	VF3-8-4	9.62	0	-90	# remontee vert.
@@ -77,7 +77,7 @@ VF3-8-25b	VF3-8-26b	6.31	50	-28.8
 VF3-8-26b	VF3-8-27b	6.6	78	-9.9	
 VF3-8-27b	VF3-8-28b	7.98	58	3.6	
 VF3-8-28b	VF3-8-29b	9.63	126	36	
-VF3-8-29b	VF3-8-20	1.2	56	0	
+VF3-8-29b	VF3-8-20	1.2	56	0	            #  [Note Alex : raccord fermeture boucle sur VF-8-20]
 endcenterline
 
 endsurvey

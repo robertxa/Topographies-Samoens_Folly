@@ -25,7 +25,7 @@ centerline -extend right
     data normal from to length compass backclino
 #		0	0	-90	# VF45 DEPART ETROITURE
 #VF3-11-60	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????
-VF3-17-21	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????
+VF3-17-21	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????  [Note Alex: Raccord sur VF3-11-0 NOK a voir ???]
 VF3-15-1	VF3-15-2	1.62	130	-30	
 VF3-15-2	VF3-15-3	6.33	312	-66	
 VF3-15-3	VF3-15-4	5.13	240	7	
@@ -59,6 +59,7 @@ centerline -extend right
     data normal from to length compass backclino
 #		0	0	-90	# VF46 - DEPART GALERIE CHAUVE SOURIS
 VF3-16-0	VF3-16-1	8.13	219	72.5	# Départ ????? -- Au sommet du P36 ?
+                # [Note Alex: raccord NOK a voir ???sur VF3-15-16]
 VF3-16-1	VF3-16-2	3.02	202	30	
 VF3-16-2	VF3-16-3	14.12	46	79	
 VF3-16-3	VF3-16-4	1.37	281	7	
@@ -105,7 +106,7 @@ centerline -extend right
     data normal from to length compass backclino
 #	VF3-16-26	0	0	-90	# VF47 DEPART ST. 72
 #	VF3-16-26	0	0	-90	# VF47 DEPART ST. 72
-VF3-16-26	VF3-17-1	3.34	277	7.2	# Depart OK ?
+VF3-16-26	VF3-17-1	3.34	277	7.2	# Depart OK ?  [Note Alex: raccord NOK a voir ??? sur VF3-16-26]
 VF3-17-1	VF3-17-2	3.26	259	12.6	
 VF3-17-2	VF3-17-3	4.66	295	-7.2	
 #		0	0	-90	# FIL CASSE
@@ -208,7 +209,7 @@ centerline -extend right
     units compass clino degrees
     data normal from to length compass backclino
     #data normal from to length compass clino    # backclino ou pas ?
-VF3-21-5	VF3-22-1	0	0   0		# Départ du fond du réseau
+VF3-21-5	VF3-22-1	0	0   0		# Départ du fond du réseau   [Note Alex: Origine NOK]
 VF3-22-1	VF3-22-2	7.4	315	3.5	
 VF3-22-2	VF3-22-3	6.88	234	9	
 VF3-22-3	VF3-22-4	13.04	200	33.5	
