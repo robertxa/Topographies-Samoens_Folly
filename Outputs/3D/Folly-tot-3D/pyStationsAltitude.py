@@ -28,17 +28,17 @@ from __future__ import division
 # Import Python modules
 #import numpy as np
 import fiona
-#from shapely.geometry import Point, mapping
-#from fiona import collection
-#from fiona.crs import from_epsg
-#{'init': 'epsg:3857', 'no_defs': True}
-
-#import pandas as pd
-#import matplotlib.pyplot as plt
-#import sqlite3
 import sys, os, copy
-#import datetime
 from alive_progress import alive_bar              # https://github.com/rsalmei/alive-progress	
+
+###### TO DO #####
+
+#	- Rajouter champ Profondeur/entrée sup
+#	- Rajouter champ Cavité
+#	- Rajouter champ Système hydrologique
+#	- 
+
+##### End TO DO #####
 
 #################################################################################################
 #################################################################################################

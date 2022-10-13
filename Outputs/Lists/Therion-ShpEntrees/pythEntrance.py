@@ -29,16 +29,18 @@ from __future__ import division
 #import numpy as np
 import fiona
 from shapely.geometry import Point, mapping
-#from fiona import collection
 from fiona.crs import from_epsg
-#{'init': 'epsg:3857', 'no_defs': True}
-
-#import pandas as pd
-#import matplotlib.pyplot as plt
-#import sqlite3
 import sys, os, copy
-#import datetime
 from alive_progress import alive_bar              # https://github.com/rsalmei/alive-progress	
+
+###### TO DO #####
+
+#	- Rajouter champ Cavité/réseau si plusieurs entrées jonctionnées
+#	- Rajouter champ Système hydrologique
+#	- 
+
+##### End TO DO #####
+
 
 #################################################################################################
 #################################################################################################
@@ -107,6 +109,7 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 	# Créer le schéma des shapefiles
 	schema = { 'geometry': 'Point', 'properties': { 'LocationID': 'str',
 													'Nom': 'str',
+													'Reseau': 'str',
 													'System': 'str', 
 													'Easting' : 'float', 
 													'Northing': 'float',
@@ -123,7 +126,7 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 	LP9_entrances = ['LP9a', 'CP39']
 	A21_entrances = ['A21', 'A24']
 
-	with alive_bar(len(systems), title = "\x1b[32;1m- Processing shapefiles...\x1b[0m", length = 35) as bar:
+	with alive_bar(len(systems), title = "\x1b[32;1m- Processing Entrances...\x1b[0m", length = 35) as bar:
 		# For each system
 		for system in systems:
 			print('\tCavités présentes dans le shapefile : %s' %(caves[system]))
@@ -139,27 +142,32 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 					for line in f:
 						if cave == line.split()[0] and (line.split('\t')[5]) != '':
 							if cave in JB_entrances:
-								cavename = cave + ' - Jean-Bernard'
+								#cavename = cave + ' - Jean-Bernard'
+								reseau = 'Jean-Bernard'
 								devel = float(develJB)
 								deniv = float(denivJB)
 								explored = float(exploredJB)
 							elif cave in CPres_entrances:
-								cavename = cave + ' - Réseau CP'
+								#cavename = cave + ' - Réseau CP'
+								reseau = 'Combe aux Puaires'
 								devel = float(develCP)
 								deniv = float(denivCP)
 								explored = float(exploredCP)
 							elif cave in LP9_entrances:
-								cavename = cave + ' - LP9-CP39'
+								#cavename = cave + ' - LP9-CP39'
+								reseau : 'LP9 - CP39'
 								devel = float(develLP9)
 								deniv = float(develLP9)
 								explored = float(exploredLP9)
 							elif cave in A21_entrances:
-								cavename = cave + ' - A21-A24'
+								#cavename = cave + ' - A21-A24'
+								reseau = 'A21 - A24'
 								devel = float(develA21)
 								deniv = float(denivA21)
 								explored = float(exploredA21)
 							else:
-								cavename = cave
+								#cavename = cave
+								reseau = ''
 								devel = float(line.split('\t')[1])
 								deniv = float(line.split('\t')[2])
 								if line.split('\t')[3] != '':
@@ -169,8 +177,9 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 
 							# Extract coordinates, alt, length, depth
 							point = Point(float(line.split('\t')[4]), float(line.split('\t')[5]))
-							prop = {'LocationID': cavename,
-									'Nom': cavename, 
+							prop = {'LocationID': cave,
+									'Nom': cave, 
+									'Reseau': reseau,
 									'System': system,
 									'Easting': float(line.split('\t')[4]), 
 									'Northing': float(line.split('\t')[5]),
