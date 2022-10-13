@@ -22,7 +22,7 @@ therion SamoensGIS.thconfig
 echo ''
 # 2- Construire ou mettre à jour les shapefiles des entrées de cavités majeures
 echo '    2- Travail sur les shapefiles des entrées de cavités majeures....'
-cd Outputs/Lists/Therion-ShpEntree
+cd Outputs/Lists/Therion-ShpEntrees
 python pythEntrance.py
 cd -
 echo ''
