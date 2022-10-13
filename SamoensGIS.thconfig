@@ -35,7 +35,7 @@ source Data/Folly-Total.th
 
 # MNT de la zone, avec wrappage des images (éditer le fichier Samoens-GIS/dem/samoens.th pour choisir l'image !)
 #source Samoens-GIS/dem/samoens.th
-source Samoens-GIS/dem/IGN_JB_10m-IGN.th
+#source Samoens-GIS/dem/IGN_JB_10m-IGN.th
 #source Samoens-GIS/dem/DEM_10m-L93-cutFolly.th # Pour l'instant, il y a un problème avec le DEM, il y a un décalage !
 #source Samoens-GIS/dem/IGN_JB.th
 
@@ -198,8 +198,8 @@ layout my_layout
 
 	# Add logos to the map
 	# Ajout des logos du club
-	map-image 80 0	se	Logos/vulcain.jpg
-	map-image 100 0	se	Logos/vulcain2.jpg
+	#map-image 80 0	se	Logos/vulcain.jpg
+	#map-image 100 0	se	Logos/vulcain2.jpg
 	
 endlayout
 
@@ -208,26 +208,32 @@ endlayout
 select MP-Folly-tot@MassifFolly
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/Folly-2022-plan-IGN.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/Folly-2022-plan-NU.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
- export model -o Outputs/3D/Folly-tot-IGN-2022.lox
+ #export model -o Outputs/3D/Folly-tot-IGN-2022.lox
 # export model -o Outputs/3D/Folly-tot-Xav-2022.3d
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2022 -layout my_layout
+  # Export en 2D
+  export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2D -layout my_layout
+  # Export en 3D
+  export model -fmt esri -o Outputs/3D/Folly-tot-3D
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Folly-tot-2022.kml -layout my_layout
 # export model -fmt kml -o Outputs/Folly-tot-2022-model.kml -enable all
 
+
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/Lists/databaseJB-2022.sql
+#export database -fmt sql -o Outputs/Lists/databaseJB-2022.sql
 
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2022.html
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2022.kml
-export survey-list -location on -o Outputs/Lists/Surveys2022.html
-export cave-list -location on -o Outputs/Lists/Caves2022.html
+#export continuation-list -o Outputs/Lists/ContinuationsJB2-2022.html
+#export continuation-list -o Outputs/Lists/ContinuationsJB2-2022.kml
+#export survey-list -location on -o Outputs/Lists/Surveys2022.html
+#export cave-list -location on -o Outputs/Lists/Caves2022.html
+#export cave-list -location on -o Outputs/Lists/Caves2022.kml
+export cave-list -location on -o Outputs/Lists/Therion-ShpEntrees/Caves.txt

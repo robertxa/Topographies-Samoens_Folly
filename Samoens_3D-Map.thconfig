@@ -222,7 +222,7 @@ select MP-Folly-tot@MassifFolly
 ##export model -o Outputs/vrml/Folly2022.vrml
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2022 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2022 -layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Folly-tot-2022.kml -layout my_layout

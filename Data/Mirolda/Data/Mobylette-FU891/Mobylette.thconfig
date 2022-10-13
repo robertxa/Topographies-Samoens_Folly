@@ -119,7 +119,7 @@ layout my_layout
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
 
   # Par défaut, la légende est de 14 cm de largeur
   legend-width 21 cm
@@ -162,7 +162,7 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		#\newtoks\club \club={Collectif Criou 2022}
-    \newtoks\club \club={G.S.\Ursus}
+    \newtoks\club \club={G.S. Ursus}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -249,7 +249,7 @@ layout atlas_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		#\newtoks\club \club={Collectif Criou 0222}
-    \newtoks\club \club={G.S.\Ursus}
+    \newtoks\club \club={G.S. Ursus}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -271,8 +271,9 @@ select MC-Mobylette-coupe-tot@Mobylette
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ #export map -proj plan -fmt xhtml -o Outputs/Mobylette-plan.xhtml -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/Mobylette-plan.pdf -layout my_layout
+ #export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
