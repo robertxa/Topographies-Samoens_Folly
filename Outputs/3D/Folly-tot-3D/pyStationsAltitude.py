@@ -48,7 +48,6 @@ def ThAddAltStations(inputfile):
 	Args:
 		inputfile (str): path and name of the original station3d.shp
 		
-
 	Raises:
 		NameError: error with the input file; see the description when the error is raised.
 	"""
@@ -106,8 +105,7 @@ def ThAddAltStations(inputfile):
 						system = 'Système de Bossetan'
 					if system == 'Sources':
 						system = 'Résurgences'
-					g['properties']['_SYSTEM'] = system
-					
+					g['properties']['_SYSTEM'] = system					
 					
 					# Find Cave
 					xxx = rec['properties']['_SURVEY'].split('.')
