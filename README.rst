@@ -18,18 +18,22 @@ Description
 
 Ce dépôt sauvegarde les données topographiques et de dessin. Ces fichiers sont pour les logiciels Visual Topo (données) et/ou Therion (data + dessins).
 
-Uniquement les fichiers sources sont sauvegardés pour des raisons de taille ; j'ai aussi choisi de ne pas uploader les dessins dessinés à la main sur papier :
+Uniquement les fichiers sources sont sauvegardés pour des raisons de taille ; j'ai aussi choisi de ne pas uploader ni les dessins dessinés à la main sur papier, ni les différents xvi issus de Therion :
 
 	* les anciens fichiers .tro pour le logiciel Visual Topo
 	
 	* .thc, .th, .th2 et .thconfig pour le logiciel Therion
 	
-Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fichiers Therion.
+Cette base de données est hierarchisée en systèmes hydrologiques, puis par zone, puis par cavités, et enfin, pour les cavités importantes, par petits réseaux.
+Pour obtenir les topographies en plan, coupe et/ou 3D de chaque élément, il faut compiler les différents fichiers Therion thconfig.
+Pour obtenir les topographies en plan et/ou 3D de l'ensemble d'un système ou de la base de données, il faut compiler les fichiers Therion thconfig parents. Il n'est pas nécessaire d'avoir compilé chaque petite entité auparavant.
+
+Aussi, cette base de données topographique est à la base de projets SIG, que ce soit pour la production de cartes propres, ou pour la mise en place d'une application portable sur appareils Android ou iOS. Pour générer ou mettre à jours les différents champs non produits directement par Therion, il faut lancer dans un Terminal le script shell Build-Samoens-SIG.sh
 
 L'ensemble de ces topographies est publié et décrit dans les différents Echos des Vulcains, revue annuelle du club Vulcain disponible sur le site internet (https://www.groupe-speleo-vulcain.com/publications/echo-des-vulcains/). Les topographies compilées peuvent aussi être téléchargées sur les pages https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/topographies-du-synclinal-du-jean-bernard-samoens-france/ et https://www.groupe-speleo-vulcain.com/explorations/explorations-a-samoens/explorations-a-samoenstopographies-du-systeme-de-la-combe-aux-puaires/ .
-Le scan des notes topographiques de terrain est disponible sur demande.
+Le scan des notes topographiques de terrain n'est pas inclus dans ce repository pour en limiter sa taille, mais tout est disponible sur demande.
 
-Une convention a été mise en place pour la gestion des points d'interrogation, avec la définition de différents champs :
+Une convention a aussi été mise en place pour la gestion des points d'interrogation, avec la définition de différents champs :
 
 	* le champ "Code" qui décrit le type de terminus. Il peut prendre les valeurs : 
 	
