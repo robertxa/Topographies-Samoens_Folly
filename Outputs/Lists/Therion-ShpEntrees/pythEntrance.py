@@ -45,12 +45,12 @@ from alive_progress import alive_bar              # https://github.com/rsalmei/a
 
 def ThExtractEntrances(inputfile, systems, caves, crs):
 	"""
-	Function to ...
+	Function to build a point shapefile with the entrances of the main caves,
+	with the Easting/Northing/Altitude as attributs' table.
 
 	Args:
 		inputfile (str): path and name of the sql database to analyse/plot
 		
-
 	Raises:
 		NameError: error with the input file; see the description when the error is raised.
 	"""
@@ -209,7 +209,6 @@ if __name__ == u'__main__':
 							'T35',
 			 				'LP9a', 'CP39',
 							'DR09'],
-							# Remarques : le CP1 ne possède qu'une entrée dans le fichier topo... A revoir !
 			 'SystemeA21' : ['A21', 'A22', 'A24'],
 			 'SystemeAV' : ['AV8'],
 			 'SystemeMirolda' : ['CD11', 'VF3', 'F126', 'Jockers', 'Falaise'],
