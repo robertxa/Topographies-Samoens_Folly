@@ -10,7 +10,7 @@ centerline
  cs lat-long
   fix CP6  46.118667  6.798617  2163
 #  fix CP6  46.118666     006.79861      2163
-	station CP6 entrance
+	station CP6 "CP6" entrance
    date 2007.01.22
   team "Bernard Lips"
   team "Josiane Lips"
@@ -96,7 +96,7 @@ endcenterline
 centerline
   cs lat-long
   fix CP53  46.118779    6.799310  2182
-  station CP53 entrance
+  station CP53 "CP53" entrance
    date 2008.07.19
   explo-team "Frédéric Alvarez "
   explo-team "Cédric Chambe"

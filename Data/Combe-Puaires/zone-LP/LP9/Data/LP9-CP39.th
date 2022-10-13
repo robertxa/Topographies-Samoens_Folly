@@ -10,7 +10,7 @@ survey LP9-CP39 -title "LP9 - CP39"
    date 1978.09.02
  cs lat-long
  fix LP9    46.115450       6.802333       2299	# 2308
- station LP9 entrance
+ station LP9 "LP9" entrance
  #  declination -2.4000 degrees
    calibrate counter 0 1.000
   team "Bernard Séroul"
@@ -256,7 +256,7 @@ centerline
  # CP39 de l'entrée à la salle du Ouf
  cs lat-long
  fix CP39     46.115193   6.798445       2160	# 2166
- station CP39 entrance
+ station CP39 "CP39" entrance
    date 2006.07.09
  #  declination 0.4000  degrees
    calibrate counter 0 0.500

@@ -33,9 +33,6 @@ from alive_progress import alive_bar              # https://github.com/rsalmei/a
 
 ###### TO DO #####
 
-#	- Rajouter champ Profondeur/entrée sup
-#	- Rajouter champ Cavité
-#	- Rajouter champ Système hydrologique
 #	- 
 
 ##### End TO DO #####
@@ -68,22 +65,92 @@ def ThAddAltStations(inputfile):
 	# check if input file exists
 	if not os.path.isfile(inputfile):
 		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(inputfile)))
+
+	# Open the text file with the coordinates of the caves
+	f = open('../../Lists/Therion-ShpEntrees/Caves.txt', 'r').readlines() 
 							
 	# Make a new shapefile instance
 	with fiona.open(inputfile, 'r') as inputshp:
 		# Créer le nouveau schéma des shapefiles
 		newschema = inputshp.schema
+		newschema['properties']['_CAVE'] = 'str'
+		newschema['properties']['_SYSTEM'] = 'str'
 		newschema['properties']['_ALT'] = 'str:4'
+		newschema['properties']['_DEPTH'] = 'float'
 		newschema['properties']['_EASTING'] = 'float'
 		newschema['properties']['_NORTHING'] = 'float'
+		# Open the output shapefile
 		with fiona.open(inputfile[:-4] + 'Alt.shp', 'w', crs=inputshp.crs, driver='ESRI Shapefile', schema=newschema) as ouput:
 			with alive_bar(len(inputshp), title = "\x1b[32;1m- Processing stations...\x1b[0m", length = 20) as bar:
 				# do a loop on the stations
 				for rec in inputshp:
+					# Copy the schema from the input data
 					g = rec
+					# Add Alt, Estaing, Northing
 					g['properties']['_ALT'] = str(round(float(rec['geometry']['coordinates'][2])))
 					g['properties']['_EASTING'] = float(rec['geometry']['coordinates'][0])
 					g['properties']['_NORTHING'] = float(rec['geometry']['coordinates'][1])
+					# Find system
+					system = rec['properties']['_SURVEY'].split('.')[-2]
+					if system == 'SynclinalJB':
+						system = 'Système du Jean-Bernard'
+					if system == 'SystemeCP':
+						system = 'Système de la Combe aux Puaires'
+					if system == 'SystemeAV':
+						system = 'Système des Avoudrues'
+					if system == 'SystemeA21':
+						system = 'Système du A21'
+					if system == 'SystemeMirolda':
+						system = 'Système du Criou - Mirolda'
+					if system == 'SystemeBossetan':
+						system = 'Système de Bossetan'
+					if system == 'Sources':
+						system = 'Résurgences'
+					g['properties']['_SYSTEM'] = system
+					
+					
+					# Find Cave
+					xxx = rec['properties']['_SURVEY'].split('.')
+					while len(xxx) < 4:
+						xxx.append('junk')
+					if 'trous' in xxx[0] or system == 'Résurgences':
+						g['properties']['_CAVE'] = rec['properties']['_NAME']
+						g['properties']['_DEPTH'] = 0
+					
+					elif 'eauxfroides' in xxx[-3]:
+						g['properties']['_CAVE'] = 'Résurgence des Eaux Froides'
+						g['properties']['_DEPTH'] = 0
+
+					elif 'ReseauCP' in xxx[-4]:
+						g['properties']['_CAVE'] = 'Réseau de la Combe aux Puaires'
+						g['properties']['_DEPTH'] = 2136 - float(rec['geometry']['coordinates'][2])
+					
+					elif 'LP9' in xxx[-4]:
+						g['properties']['_CAVE'] = 'LP9 - CP39'
+						g['properties']['_DEPTH'] = 2299 - float(rec['geometry']['coordinates'][2])
+					
+					elif 'CP6' in xxx[-4]:
+						g['properties']['_CAVE'] = 'CP6 - CP53'
+						g['properties']['_DEPTH'] = 2182 - float(rec['geometry']['coordinates'][2])
+					
+					elif xxx[-3] == 'Jean-Bernard':
+						g['properties']['_CAVE'] = rec['properties']['_SURVEY'].split('.')[-3]
+						g['properties']['_DEPTH'] = 2333 - float(rec['geometry']['coordinates'][2])
+					
+					elif 'A21' in xxx[-4]:
+						g['properties']['_CAVE'] = 'A21 - A24'
+						g['properties']['_DEPTH'] = 1797 - float(rec['geometry']['coordinates'][2])
+					
+					else:
+						g['properties']['_CAVE'] = xxx[-4]
+						if g['properties']['_CAVE'] == 'A22':
+							g['properties']['_CAVE'] = 'A(V)22'
+						#g['properties']['_DEPTH'] = 0
+						# Trouver l'altitude de l'entrée !!!!
+						for line in f:
+							if g['properties']['_CAVE'] in line and line.split('\t')[6] != '\n':
+								altmax = float(line.split('\t')[6])
+						g['properties']['_DEPTH'] = altmax - float(rec['geometry']['coordinates'][2])					
 
 					# Write record
 					ouput.write (g)
@@ -93,16 +160,12 @@ def ThAddAltStations(inputfile):
 	print('Update stations done.')
 	print('')
 
-
-
+######################################################################################################
 if __name__ == u'__main__':	
 	###################################################
 	# initiate variables
 	inputfile = 'stations3d.shp'
-	#crs = 32632	# UTM32N
-
 	###################################################
 	# Run the transformation
-
 	ThAddAltStations(inputfile)
 	# End...

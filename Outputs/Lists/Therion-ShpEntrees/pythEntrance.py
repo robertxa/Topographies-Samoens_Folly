@@ -33,14 +33,6 @@ from fiona.crs import from_epsg
 import sys, os, copy
 from alive_progress import alive_bar              # https://github.com/rsalmei/alive-progress	
 
-###### TO DO #####
-
-#	- Rajouter champ Cavité/réseau si plusieurs entrées jonctionnées
-#	- Rajouter champ Système hydrologique
-#	- 
-
-##### End TO DO #####
-
 
 #################################################################################################
 #################################################################################################
