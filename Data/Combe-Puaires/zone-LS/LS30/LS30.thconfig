@@ -145,6 +145,8 @@ export map -o Outputs/LS30-plan-Continuations.pdf -layout my_layout-Continuation
 export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/LS30-coupe-Continuations.pdf
 
 export model -o Outputs/LS30.lox
+
+export map -proj plan -fmt esri -o Outputs/LS30
   
 # Export des fichiers ESRI
 #export map -proj plan -fmt esri -o Outputs/LS30 -layout my_layout

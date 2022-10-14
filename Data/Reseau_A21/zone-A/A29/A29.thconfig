@@ -247,7 +247,7 @@ export map -projection extended -layout my_layout-coupe -o Outputs/A29-coupe.pdf
 export model -o Outputs/A29.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Outputs/A29 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/A29 -layout my_layout
   
 # Export des fichiers kml
 export map -proj plan -fmt kml -o Outputs/A29.kml -layout my_layout

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -5034 8026 138.5
+##XTHERION## xth_me_area_adjust -129.5 -1621.5 7685.5 139.0
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} ../autres/ermoy6.png 0 {}
 
@@ -1955,6 +1955,11 @@ line wall -id l418-5512--886
   smooth off
 endline
 
+line wall -subtype invisible
+  5655.0 -821.5
+  5639.75 -820.25
+endline
+
 line wall
   5642.25 -800.5
   5642.25 -800.5 5645.75 -801.75 5648.5 -803.0
@@ -1962,7 +1967,7 @@ line wall
   5660.25 -807.75 5657.5 -806.25 5658.5 -810.25
   5659.5 -814.25 5659.75 -815.0 5659.75 -818.0
   5659.75 -821.0 5658.75 -826.5 5657.25 -826.5
-  5655.75 -826.5 5655.25 -824.25 5655.25 -824.25
+  5655.75 -826.5 5655.0 -821.5 5655.0 -821.5
   smooth off
 endline
 
@@ -2033,6 +2038,11 @@ line wall -id l378-5598--732
   smooth off
 endline
 
+line wall -subtype invisible
+  5616.5 -728.25
+  5616.5 -728.25 5607.0 -723.5 5598.75 -730.5
+endline
+
 line wall -id l377-5612--736
   5719.5 -647.25
   5719.5 -647.25 5720.75 -652.75 5719.25 -654.5
@@ -2072,11 +2082,11 @@ line wall
   smooth off
 endline
 
-point 5714.5 -658.5 station -name 9b.3@Ermoy
+point 5714.5 -658.5 station -name 9a.4@Ermoy
 
-point 5711.25 -679.0 station -name 9b.2@Ermoy
+point 5711.25 -679.0 station -name 9a.3@Ermoy
 
-point 5699.75 -694.75 station -name 9b.1@Ermoy
+point 5699.75 -694.75 station -name 9a.2@Ermoy
 
 point 5600.25 -738.75 station -name 5b.19@Ermoy
 
@@ -2168,8 +2178,8 @@ line wall -subtype unsurveyed
 endline
 
 line wall
-  5655.25 -824.25
-  5655.25 -824.25 5654.0 -822.75 5655.25 -817.0
+  5655.0 -821.5
+  5655.0 -821.5 5654.0 -822.75 5655.25 -817.0
   5656.5 -811.25 5662.25 -801.25 5664.25 -797.5
   5666.25 -793.75 5674.25 -789.75 5679.5 -788.25
   5684.75 -786.75 5691.5 -783.0 5691.5 -783.0
@@ -2185,11 +2195,9 @@ line wall
   smooth off
 endline
 
-point 5684.0 -781.5 station -name 9a.3@Ermoy
+point 5684.0 -781.5 station -name 9b.3@Ermoy
 
-point 5656.5 -793.25 station -name 9a.2@Ermoy
-
-point 5640.0 -850.75 station -name 9a.1@Ermoy
+point 5656.5 -793.25 station -name 9b.2@Ermoy
 
 endscrap
 

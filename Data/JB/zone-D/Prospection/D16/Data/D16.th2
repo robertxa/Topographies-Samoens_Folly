@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -1215.0 891 140.0
+##XTHERION## xth_me_area_adjust -131.0 -1343.0 891 140.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D16.gif 0 {}
 
@@ -41,7 +41,7 @@ point 539.0 -1210.0 label -text "<bf>D16" -scale xl
 
 point 524.0 -1030.0 entrance
 
-line wall -subtype pit -outline in
+line wall -subtype pit -outline none
   524.0 -798.0
   524.0 -798.0 524.0 -782.0 506.0 -801.0
   488.0 -820.0 489.0 -819.0 483.0 -846.0

@@ -201,6 +201,11 @@ point 7956.22 5020.29 station -name Gi.4@jb-amonts2
 
 point 7952.11 4990.55 station -name Gi.3@jb-amonts2
 
+line wall -outline in -subtype invisible
+  7995.75 5055.5
+  8005.25 5055.25
+endline
+
 line wall -outline in
   7966.5 4984.0
   7966.5 4984.0 7971.0 4983.0 7971.5 4981.0
@@ -214,8 +219,6 @@ line wall -outline in
   smooth off
   8009.25 5081.5 8007.5 5076.5 8007.25 5073.25
   8007.0 5070.0 8005.25 5055.25 8005.25 5055.25
-  smooth off
-  8005.25 5055.25 8006.0 5063.5 8006.0 5061.0
   smooth off
 endline
 

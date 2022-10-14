@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -187.843 -234.279 408.5 469.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {59.85300000000001 1 1.0} {106.279 CP1b} CP1-map.xvi 0 {}
 
 
@@ -360,6 +360,12 @@ point 278.0 78.5 height -value [+15 m]
 point 190.0 236.5 height -value [-15 m]
 
 point 45.5 186.5 height -value [-4 m]
+
+line wall -subtype invisible
+  53.0 158.0
+  53.0 158.0 50.0 160.75 49.25 155.75
+  48.5 150.75 48.5 149.5 51.0 147.5
+endline
 
 line wall -id l19-60-236
   43.0 263.0

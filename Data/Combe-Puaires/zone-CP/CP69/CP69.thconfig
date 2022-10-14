@@ -314,7 +314,7 @@ export map -o Outputs/CP69-plan2015.pdf -layout my_layout
  #export model -o Outputs/CP69.lox
   
  # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/CP69 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CP69 -layout my_layout
   
  # Export des fichiers kml
  #export map -proj plan -fmt kml -o Outputs/CP69-2015.kml -layout my_layout

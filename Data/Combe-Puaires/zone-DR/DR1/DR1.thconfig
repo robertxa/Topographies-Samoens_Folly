@@ -251,7 +251,7 @@ export map -projection extended -layout my_layout-coupe-Continuations -o Outputs
 export model -o Outputs/DR1.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Outputs/DR1 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/DR1 -layout my_layout
   
 # Export des fichiers kml
 export map -proj plan -fmt kml -o Outputs/DR1.kml -layout my_layout

@@ -152,7 +152,7 @@ endlayout
 #export model -o Outputs/A28.lox
   
 # Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/A28 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/A28 -layout my_layout
   
 # Export kml files
 export map -proj plan -fmt kml -o Outputs/A28.kml -layout my_layout

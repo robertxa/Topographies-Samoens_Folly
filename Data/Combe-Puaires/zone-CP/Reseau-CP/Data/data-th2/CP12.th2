@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 7259.2441 5106.8984
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {3327.0299999999997 1 1.0} {3126.7799999999997 1.0@ReseauCP.ReseauCP} ReseauCP-map.xvi 0 {}
 
 
@@ -997,8 +997,8 @@ line wall
   1206.5 1350.0 1167.5 1355.0 1164.25 1357.75
   1161.0 1360.5 1157.0 1371.5 1155.0 1374.5
   1153.0 1377.5 1148.5 1382.75 1147.5 1385.0
-  1146.5 1387.25 1138.68 1400.16 1139.25 1401.5
-  1140.0 1403.25 1138.5 1403.75 1138.5 1403.75
+  1146.5 1387.25 1139.25 1394.79 1139.25 1396.25
+  1139.25 1397.5 1138.5 1403.75 1138.5 1403.75
   smooth off
 endline
 
@@ -1523,6 +1523,7 @@ line wall
   1060.0 1306.25 1047.25 1294.5 1042.25 1292.5
   1037.25 1290.5 1003.0 1268.5 999.25 1271.75
   995.5 1275.0 983.25 1290.0 983.25 1292.75
+  smooth off
 endline
 
 line wall -subtype pit
@@ -1531,6 +1532,7 @@ line wall -subtype pit
   977.5 1310.25 976.0 1317.0 972.5 1313.75
   969.0 1310.5 969.25 1308.0 971.75 1304.75
   974.25 1301.5 979.75 1296.75 976.5 1296.75
+  smooth off
 endline
 
 line wall
@@ -2647,6 +2649,7 @@ line wall
   1043.0 1268.5 1041.5 1264.0 1044.5 1264.0
   1047.5 1264.0 1051.25 1266.5 1053.25 1264.5
   1055.25 1262.5 1066.25 1257.0 1066.25 1254.25
+  smooth off
 endline
 
 line wall
@@ -2657,6 +2660,7 @@ endline
 line pit
   1062.0 1256.5
   1062.0 1256.5 1068.5 1251.5 1067.5 1245.5
+  smooth off
 endline
 
 point 1047.5 1251.0 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "aval CP12" -attr CA "Courant d'air léger" -text "méandre remontant, courant d'air"

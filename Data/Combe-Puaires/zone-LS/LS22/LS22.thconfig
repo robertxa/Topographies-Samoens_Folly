@@ -137,6 +137,8 @@ endlayout
 # Select maps
 	select MP-LS22-plan-tot@LS22
 	select MC-LS22-coupe-tot@LS22
+
+export map -proj plan -fmt esri -o Outputs/LS22
   
 export map -o Outputs/LS22-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS22-coupe.pdf

@@ -175,9 +175,14 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  8584.25 5097.5
+  8590.5 5102.0
+endline
+
 line wall
   8582.5 5098.5
-  8583.75 5094.75 8584.25 5097.5 8584.25 5097.5
+  8582.75 5097.5 8584.25 5097.5 8584.25 5097.5
   smooth off
 endline
 

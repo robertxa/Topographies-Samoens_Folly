@@ -34,11 +34,13 @@ A FAIRE sur la base de données topographiques de Samoëns
 			1- générer les shp 2D
 			2- Dans QGis, vecteur --> Vérfier la validité
 			3- Dans xtherion, corriger aux points problématiques au cas par cas
-				DONE : JB    : ZoneCH, ZoneB, ZoneC, ZoneD, ZoneE, ZoneF,
-					   CP    : 
-					   A21   :
-					   Criou : CD11, 
-			4- Verifier les Aires...
+				DONE : JB    : JB, ZoneCH, ZoneB, ZoneC, ZoneD, ZoneE, ZoneF,
+					   AV    : ZoneAV
+					   CP    : ZoneLS,
+					   		Ermoy --> Pb au niveau Bivouac... ????
+					   A21   : ZoneA, ZonePV
+					   Criou : CD11
+			4- Verifier les Aires... Sinon, Erreur dans découpage
 		* Ecrire un script pour couper les aires avec l'Outline 2D (Sous QGIS, manuellement = Vecteur --> Couper)
 		* Faire pareil pour les lignes --> Mais attention, certaines lignes DOIVENT exister à l'extérieur (ligne de texte, ligne d'écoulement, lignes avec l'option -clip off...)
 			1- Charger lines2d.shp
