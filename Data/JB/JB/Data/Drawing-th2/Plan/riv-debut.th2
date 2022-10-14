@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -275.21 -8.87 14508.3569 8357.3706
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {12874.02 0 1.0} {6929.13 C37b@jb-amonts1} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {25895.25 0 1.0} {13739.130000000001 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
 
 
@@ -285,7 +285,7 @@ line wall
   smooth off
 endline
 
-line wall -outline in
+line wall
   6785.25 3809.5
   6785.25 3809.5 6786.75 3805.75 6786.75 3803.75
   6786.75 3801.75 6785.75 3801.5 6785.75 3801.5
@@ -831,11 +831,6 @@ line wall
   smooth off
 endline
 
-line wall -subtype invisible
-  6787.75 3790.5
-  6785.75 3801.5
-endline
-
 line wall
   6722.75 3690.5
   6722.75 3690.5 6721.75 3674.5 6720.0 3669.5
@@ -845,7 +840,7 @@ line wall
   smooth off
 endline
 
-line wall -outline in
+line wall
   6785.75 3801.5
   6781.93 3801.74 6780.25 3803.25 6781.0 3805.25
   6781.75 3807.25 6785.0 3816.75 6785.0 3816.75

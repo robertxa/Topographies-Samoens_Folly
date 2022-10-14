@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 3277.608 2647.6864
+##XTHERION## xth_me_area_adjust -129.5 -129.5 5876.028 4537.447
 ##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {2598.42 1 1.0} {1653.54 xx0init@solitaire} solitaire-plan2021.xvi 0 {}
+##XTHERION## xth_me_image_insert {5196.84 1 1.0} {3385.8199999999997 xx0init@solitaire.Solitaire} solitaire-plan2021.xvi 0 {}
 
 
 
@@ -65,11 +65,13 @@ point 547.5 381.0 breakdown-choke -orientation 18.4
 line pit
   712.0 351.0
   712.0 351.0 708.5 343.5 695.0 344.0
+  smooth off
 endline
 
 line pit
   673.0 322.0
   673.0 322.0 669.0 341.5 676.0 348.0
+  smooth off
 endline
 
 point 613.0 366.0 clay-tree
@@ -102,6 +104,7 @@ line wall
   842.0 432.5 807.0 445.0 790.0 431.0
   773.0 417.0 749.0 363.0 737.0 360.0
   725.0 357.0 717.0 350.0 712.0 351.0
+  smooth off
 endline
 
 point 343.3299999999999 345.23 station -name 2021-FD-12@solitaire
@@ -159,8 +162,8 @@ point 567.5 407.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Re
 
 line wall
   712.0 351.0
-  712.0 351.0 706.0 345.5 699.5 347.5
-  693.0 349.5 693.0 350.0 684.0 359.5
+  712.0 351.0 703.0 347.5 696.5 349.5
+  690.0 351.5 689.72 353.46 684.0 359.5
   675.0 369.0 674.5 379.5 664.5 375.0
   654.5 370.5 637.0 367.5 632.0 359.0
   627.0 350.5 625.5 339.0 617.0 347.0

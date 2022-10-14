@@ -246,7 +246,7 @@ export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2022-plan1000b.pdf -la
 
 # Export des fichiers ESRI
 export model -fmt esri -o Outputs/3D/JB #-layout my_layout
-export map -fmt esri -o Outputs/3D/JB-map #-layout my_layout
+export map -proj plan -fmt esri -o Outputs/3D/JB-map #-layout my_layout
 
 # Export du fichier 3d pour Loch
 export model -o Outputs/3D/jb-Xav-2022.lox

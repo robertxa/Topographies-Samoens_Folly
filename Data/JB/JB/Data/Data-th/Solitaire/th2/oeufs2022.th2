@@ -10,6 +10,7 @@ scrap SP-Oeufs2022-1 -projection plan -author 2022 "Xavier Robert" -copyright 20
 line pit -reverse on
   1079.25 2519.75
   1079.25 2519.75 1066.0 2527.75 1058.75 2529.0
+  smooth off
 endline
 
 area blocks
@@ -145,27 +146,32 @@ point 1088.25 2722.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr
 line pit
   1074.5 2704.5
   1074.5 2704.5 1068.5 2697.25 1071.5 2691.5
+  smooth off
 endline
 
 line pit
   1087.5 2700.0
   1087.5 2700.0 1081.0 2699.0 1077.0 2703.5
+  smooth off
 endline
 
 line pit
   1098.0 2705.25
   1098.0 2705.25 1095.0 2700.5 1094.25 2695.0
+  smooth off
 endline
 
 line pit
   1101.25 2695.75
   1101.25 2695.75 1096.0 2697.25 1092.75 2693.5
+  smooth off
 endline
 
 line pit
   1085.5 2620.0
   1085.5 2620.0 1092.25 2627.75 1089.5 2631.5
   1086.75 2635.25 1085.0 2639.75 1079.5 2642.0
+  smooth off
 endline
 
 line pit
@@ -179,6 +185,7 @@ endline
 line pit
   1081.5 2572.75
   1081.5 2572.75 1068.0 2571.0 1067.75 2561.75
+  smooth off
 endline
 
 line pit
@@ -200,26 +207,31 @@ endline
 line pit
   1203.25 2431.0
   1203.25 2431.0 1217.25 2427.25 1219.75 2434.0
+  smooth off
 endline
 
 line pit
   1192.5 2515.25
   1192.5 2515.25 1173.75 2510.75 1173.5 2493.5
+  smooth off
 endline
 
 line pit
   1145.25 2466.5
   1145.25 2466.5 1140.0 2460.75 1153.5 2458.5
+  smooth off
 endline
 
 line pit
   1154.5 2438.75
   1154.5 2438.75 1151.5 2469.0 1130.75 2455.0
+  smooth off
 endline
 
 line pit
   1173.5 2425.5
   1173.5 2425.5 1150.0 2416.75 1156.5 2400.0
+  smooth off
 endline
 
 line pit
@@ -240,6 +252,7 @@ endline
 line pit -reverse on
   1182.5 2484.75
   1182.5 2484.75 1198.75 2478.25 1200.75 2494.5
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -250,6 +263,7 @@ endline
 line wall -outline in -subtype presumed
   1172.5 2499.25
   1172.5 2499.25 1186.0 2497.25 1186.0 2483.5
+  smooth off
 endline
 
 line wall -outline in
@@ -264,6 +278,7 @@ line wall -outline in
   1153.25 2465.75 1153.0 2469.25 1152.25 2472.75
   1151.5 2476.25 1157.0 2483.75 1160.75 2487.75
   1164.5 2491.75 1171.0 2497.5 1172.5 2499.25
+  smooth off
 endline
 
 line wall -close on -reverse on -outline in
@@ -280,6 +295,7 @@ line wall
   1082.75 2704.25
   1082.75 2704.25 1082.25 2702.5 1076.0 2702.25
   1069.75 2702.0 1066.0 2701.75 1064.5 2702.25
+  smooth off
 endline
 
 line wall
@@ -322,6 +338,7 @@ line wall
   1219.75 2426.25 1219.25 2422.5 1218.0 2430.5
   1216.75 2438.5 1216.25 2454.5 1211.75 2464.0
   1207.25 2473.5 1202.25 2486.0 1199.25 2490.25
+  smooth off
 endline
 
 line wall
@@ -433,16 +450,17 @@ point 1013.25 2616.75 breakdown-choke -orientation 320.4
 
 point 995.0 2604.5 breakdown-choke -orientation 320.4
 
-line wall
+line pit
   1040.25 2667.5
   1040.25 2667.5 1031.0 2665.75 1035.5 2664.0
   1040.0 2662.25 1045.25 2666.5 1045.25 2666.5
   smooth off
 endline
 
-line wall
+line pit
   1034.5 2673.25
   1034.5 2673.25 1034.75 2669.0 1042.75 2669.0
+  smooth off
 endline
 
 line wall -reverse on
