@@ -151,7 +151,7 @@ export map -projection extended -layout my_layout-coupe-Continuations -o Outputs
 export model -o Outputs/C51.lox
   
  # Export ESRI files
- #export map -proj plan -fmt esri -o Outputs/C51 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/C51 -layout my_layout
   
  # Export kml files
  export map -proj plan -fmt kml -o Outputs/C51.kml -layout my_layout

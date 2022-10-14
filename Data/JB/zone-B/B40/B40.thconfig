@@ -67,7 +67,7 @@ layout my_layout
 
 # add extended-elev on the same pdf
 #map-image 180 140 n Outputs/B40-coupe.pdf
-map-image 180 140 n Outputs/B40-coupe-Continuations.pdf
+#map-image 180 140 n Outputs/B40-coupe-Continuations.pdf
   
 endlayout
  
@@ -147,6 +147,7 @@ export map -o Outputs/B40-plan.pdf -layout my_layout
 
 export model -o Outputs/B40.lox
 export map -proj plan -fmt kml -o Outputs/B40.kml -layout my_layout
+export map -proj plan -fmt esri -o Outputs/B40
 #export model -o Outputs/B40.vrml
 #export model -o Outputs/B40.3dmf
 #export survey-list -o Outputs/B40-seances.html

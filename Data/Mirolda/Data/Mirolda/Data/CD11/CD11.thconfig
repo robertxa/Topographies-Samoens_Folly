@@ -304,7 +304,7 @@ select MC-CD11-coupe-tot@CD11
  export model -enable all -o Outputs/CD11-2022.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/CD11-2022 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CD11-2022 -layout my_layout
 
 # Export des fichiers kml
  export map -proj plan -fmt kml -o Outputs/CD11-2022.kml -layout layout-kml

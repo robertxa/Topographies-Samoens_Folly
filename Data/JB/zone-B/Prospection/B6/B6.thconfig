@@ -152,7 +152,7 @@ export map -o Outputs/B6-plan.pdf -layout my_layout
 #export model -o Outputs/B6.lox
   
 # Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/B6 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/B6 -layout my_layout
   
 # Export kml files
 export map -proj plan -fmt kml -o Outputs/B6.kml -layout my_layout

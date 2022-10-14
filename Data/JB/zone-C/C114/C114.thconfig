@@ -257,6 +257,7 @@ export map -projection extended -fmt pdf -o Outputs/C114-2012-coupe.pdf -layout 
 
 # Export des fichiers ESRI
 export model -fmt esri -o Outputs/C114-2012
+export map -fmt esri -o Outputs/C114-2012-2D
 
 # Export du fichier 3d pour Loch
 export model -o Outputs/C114-2012.lox

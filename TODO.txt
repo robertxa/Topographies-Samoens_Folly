@@ -4,7 +4,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 		Revoir l'indexation des Maps pour les mettre directement dans les scraps alone --> faciliter le travail
 		Debug Coupe développée
 
-- JB : Vérifier l'intégration du Lavoir, il y a visiblement un problème avec l'arrivée du B19 (2022-08-30, après découpag LAvoir, AspiroSouffle et AvalAiguilles)
+- JB : Vérifier l'intégration du Lavoir, il y a visiblement un problème avec l'arrivée du B19 (2022-08-30, après découpage Lavoir, AspiroSouffle et AvalAiguilles)
 		--> Manque 1 scrap, et aussi 27331 - 27076 = 255 m de topo --> A voir si c'est parce qu'on a intégré la vieille topo du Lavoir ? Bizarre
 
 - JB : Retravailler la coupe développée, elle contient de grosses erreurs (Lavoir, Branlots, Echo)
@@ -29,7 +29,28 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 - Rajouter coordonnées A14 + station topo dans le V11 ? OK pour le Cartouche...
 
-- Préparer un dossier GIS/QGIS complet, prêt à l'emploi pour pouvoir mettre la BD sur smartphone/QField
+- Préparer un dossier GIS/QGIS complet, prêt à l'emploi pour pouvoir mettre la BD sur smartphone/QField/MergingMaps
+		* Corriger TOUS les scraps pour trouver les erreurs topologiques 
+			1- générer les shp 2D
+			2- Dans QGis, vecteur --> Vérfier la validité
+			3- Dans xtherion, corriger aux points problématiques au cas par cas
+				DONE : JB    : ZoneCH, ZoneB, ZoneC, ZoneD, ZoneE, ZoneF,
+					   CP    : 
+					   A21   :
+					   Criou : CD11, 
+			4- Verifier les Aires...
+		* Ecrire un script pour couper les aires avec l'Outline 2D (Sous QGIS, manuellement = Vecteur --> Couper)
+		* Faire pareil pour les lignes --> Mais attention, certaines lignes DOIVENT exister à l'extérieur (ligne de texte, ligne d'écoulement, lignes avec l'option -clip off...)
+			1- Charger lines2d.shp
+			2- Diviser lines2d.shp en 2 en fonction de la valeur d'attribut (On, Off, Null) et de type (Wall or not)
+			3- Découper le shp clip off avec l'outline2d.shp
+		* Faire un sript QGis global pour traiter couper les shp lines2d et areas2d ?
+		* Construire un fichier de style svg/QGis avec les symboles Therion --> Voir si ça existe déjà ? Demander sur la liste Therion ?
+			o Faire les symboles,
+			o afficher les symboles en fonction de la valeur de zoom/echelle ? 
+		* Rajouter terrain mais avec un fichier allegé --> Alex ?
+		* Faire un export des shp en gpkg par lot pour mise à jour auto avec Merging Maps
+
 
 - Révisions des points d'interrogation (rajout des commentaires et des Codes) pour le JB Coupe (zonation pour le tableau)
 
@@ -40,7 +61,9 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Coordonnées du C52 et L17 à re-trouver
 	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
-	* Corriger les erreurs de scraps dans le JB (a minima...) ; Utiliser l'option "debug on / debug scrap-names" des layouts, et les logs
+	* Corriger les erreurs de scraps dans le JB (a minima...) 
+		o Utiliser l'option "debug on / debug scrap-names" des layouts, et les logs
+		o et/ou utiliser la fonction vector --> Verifier la validite de QGIS
 	* Corriger les erreurs d'aires dans :
 		o SP-Echo (excentriques.th2)
 		o SP-Russesaval (montagnesrusses.th2)

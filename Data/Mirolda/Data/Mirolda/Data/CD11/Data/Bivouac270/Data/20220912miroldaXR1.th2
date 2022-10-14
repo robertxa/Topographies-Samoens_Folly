@@ -1233,7 +1233,7 @@ line pit
   smooth off
 endline
 
-line wall
+line wall -outline in
   302.75 2067.0
   302.75 2067.0 317.75 2072.5 320.75 2074.25
   323.75 2076.0 324.75 2084.25 327.5 2078.75
@@ -1393,7 +1393,7 @@ line pit -reverse on
   smooth off
 endline
 
-line wall -subtype presumed
+line wall -subtype presumed -outline in
   334.5 1997.75
   334.5 1997.75 322.25 1983.0 305.25 1987.75
   288.25 1992.5 283.0 2000.5 268.5 2004.25
@@ -1410,7 +1410,7 @@ line wall -subtype presumed
   smooth off
 endline
 
-line wall
+line wall -outline in
   245.75 2022.25
   245.75 2022.25 240.0 2026.0 240.25 2027.75
   smooth off
@@ -1429,7 +1429,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   240.25 2027.75
   240.25 2027.75 244.75 2035.25 254.75 2041.75
   264.75 2048.25 274.75 2051.5 285.5 2057.5
@@ -1497,7 +1497,12 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -subtype invisible -outline in
+  330.0 2049.5
+  323.0 2046.25
+endline
+
+line wall -outline in
   323.0 2046.25
   323.0 2046.25 329.5 2040.5 330.25 2036.5
   331.0 2032.5 331.25 2029.75 332.75 2024.0

@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128 -1412 1003 128
+##XTHERION## xth_me_area_adjust -151.0 -1466.0 1003 140.0
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} F2.gif 0 {}
 
@@ -57,14 +57,17 @@ point 577.0 -1181.0 snow
 point 397.0 -1108.0 snow
 
 area snow
-  l23-436--1084
-  l6-391--1073
-  l15-421--1141
+  l29-394--1056
 endarea
 
-line label -id l23-436--1084
-  453.0 -1125.0
-  453.0 -1125.0 444.0 -1088.0 437.0 -1084.0
+line label -id l29-394--1056 -close on
+  447.0 -1131.0
+  447.0 -1131.0 455.0 -1103.0 439.0 -1083.0
+  423.0 -1063.0 390.0 -1049.0 371.0 -1063.0
+  352.0 -1077.0 345.0 -1127.0 361.0 -1136.0
+  377.0 -1145.0 388.0 -1149.0 388.0 -1149.0
+  smooth off
+  447.0 -1131.0
 endline
 
 point 228.0 -1214.0 altitude -align bottom-left -value [-20 m]
@@ -80,11 +83,13 @@ point 641.0 -1105.0 height -value [-20 m]
 line pit
   406.0 -1169.0
   406.0 -1169.0 435.0 -1188.0 474.0 -1160.0
+  smooth off
 endline
 
 line pit -id l15-421--1141
   388.0 -1149.0
   388.0 -1149.0 431.0 -1145.0 447.0 -1131.0
+  smooth off
 endline
 
 line u:fault -clip off
@@ -111,6 +116,7 @@ line wall -subtype pit
   639.0 -1186.0 650.0 -1175.0 636.0 -1165.0
   622.0 -1155.0 606.0 -1140.0 594.0 -1144.0
   582.0 -1148.0 571.0 -1156.0 562.0 -1159.0
+  smooth off
 endline
 
 point 622.0 -1178.0 station -name F2@F2

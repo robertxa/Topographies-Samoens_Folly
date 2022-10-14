@@ -159,5 +159,7 @@ export map -projection extended -o Outputs/C75-coupe-Continuations.pdf -layout m
 
 #export atlas -o Outputs/atlas.pdf -layout my_layout
 export model -o Outputs/C75.lox
+
+export map -proj plan -fmt esri -o Outputs/C75
 # Export des fichiers kml
 export map -proj plan -fmt kml -o Outputs/C75.kml -layout my_layout
