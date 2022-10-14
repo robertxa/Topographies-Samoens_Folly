@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 5157.0 3015.5
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 5158.5 3017.0
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1580.06 1 1.0} {1671.81 CP12} ../billy-map.xvi 0 {}
 
 
@@ -2268,8 +2268,13 @@ endline
 
 area water
   l691-3063-2067
-  l687-3062-2072
+  l1115-3064-2076
 endarea
+
+line label -id l1115-3064-2076
+  3063.0 2076.25
+  3062.5 2074.5 3056.5 2075.5 3059.5 2065.5
+endline
 
 line label -id l691-3063-2067 -reverse on
   3063.0 2076.25
@@ -4346,6 +4351,7 @@ endline
 line pit
   2832.5 2037.0
   2832.5 2037.0 2828.25 2044.25 2831.25 2045.0
+  smooth off
 endline
 
 line wall -outline in
@@ -4353,6 +4359,7 @@ line wall -outline in
   2845.5 2020.0 2844.5 2014.25 2843.0 2015.25
   2841.5 2016.25 2834.5 2023.5 2833.75 2025.75
   2833.0 2028.0 2831.25 2037.5 2831.0 2039.25
+  smooth off
 endline
 
 line wall

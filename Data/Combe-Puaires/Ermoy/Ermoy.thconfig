@@ -129,7 +129,7 @@ layout my_layout
    # Options pour afficher le squelette topo,
    # les points et le nom des stations topos
   symbol-hide line survey
-  debug station-names
+  #debug station-names
 
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -241,16 +241,16 @@ endlayout
 	select MC-Ermoy-coupe-tot@Ermoy
   
 export map -o Outputs/Ermoy-MARS-2014-plan.pdf -layout my_layout
-export map -o Outputs/Ermoy-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -o Outputs/Ermoy-plan-Continuations.pdf -layout my_layout-Continuations
 export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-MARS-2009-coupe.pdf
-export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/Ermoy-coupe-Continuations.pdf
-export model -o Outputs/Ermoy-MARS-2009.lox
+#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/Ermoy-coupe-Continuations.pdf
+#export model -o Outputs/Ermoy-MARS-2009.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Outputs/Ermoy-MARS-2009 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/Ermoy-MARS-2009 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/Ermoy-MARS-2009.kml -layout my_layout
+#export map -proj plan -fmt kml -o Outputs/Ermoy-MARS-2009.kml -layout my_layout
 
 # Export Listes
-export continuation-list -o Outputs/Continuations-Ermoy-2020.html
+#export continuation-list -o Outputs/Continuations-Ermoy-2020.html

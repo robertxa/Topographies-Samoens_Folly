@@ -30,17 +30,9 @@ A FAIRE sur la base de données topographiques de Samoëns
 - Rajouter coordonnées A14 + station topo dans le V11 ? OK pour le Cartouche...
 
 - Préparer un dossier GIS/QGIS complet, prêt à l'emploi pour pouvoir mettre la BD sur smartphone/QField/MergingMaps
-		* Corriger TOUS les scraps pour trouver les erreurs topologiques 
-			1- générer les shp 2D
-			2- Dans QGis, vecteur --> Vérfier la validité
-			3- Dans xtherion, corriger aux points problématiques au cas par cas
-				DONE : JB    : JB, ZoneCH, ZoneB, ZoneC, ZoneD, ZoneE, ZoneF,
-					   AV    : ZoneAV
-					   CP    : ZoneLS,
-					   		Ermoy --> Pb au niveau Bivouac... ????
-					   A21   : ZoneA, ZonePV
-					   Criou : CD11
-			4- Verifier les Aires... Sinon, Erreur dans découpage
+		* Verifier les Aires... Sinon, Erreur dans découpage
+			- Rechercher les autointersections ? (44 erreurs ?)
+				DONE : Reseau CP
 		* Ecrire un script pour couper les aires avec l'Outline 2D (Sous QGIS, manuellement = Vecteur --> Couper)
 		* Faire pareil pour les lignes --> Mais attention, certaines lignes DOIVENT exister à l'extérieur (ligne de texte, ligne d'écoulement, lignes avec l'option -clip off...)
 			1- Charger lines2d.shp
