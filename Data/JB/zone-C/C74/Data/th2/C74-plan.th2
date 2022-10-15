@@ -3476,11 +3476,26 @@ point 454.25 415.75 narrow-end -orientation 166.2
 point 535.5 453.75 narrow-end -orientation 95.7
 
 area pebbles
-  l453-504-453
+  l849-502-466
   l503-482-460
-  l449-477-445
+  l850-474-453
   l504-500-439
 endarea
+
+line label -id l850-474-453
+  477.0 456.75
+  477.0 456.75 472.0 450.75 474.25 446.25
+  476.5 441.75 477.75 439.75 478.75 435.0
+  479.75 430.25 480.5 424.25 484.5 424.5
+  488.5 424.75 493.75 432.25 493.75 432.25
+  smooth off
+endline
+
+line label -id l849-502-466
+  505.25 443.25
+  505.25 443.25 507.25 462.75 501.0 465.75
+  494.75 468.75 481.25 464.25 487.5 466.0
+endline
 
 line label -id l504-500-439
   493.75 432.25
@@ -4015,16 +4030,33 @@ endscrap
 
 scrap SP-C74-13 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 561.0711 -128.0 0.0 0.0 17.50240594 0.0 m]
 
+point 472.25 111.5 entrance -orientation 10.8
+
 area pebbles
-  l362-476-191
-  l347-471-182
-  l360-476-120
-  l348-482-130
+  l847-485-147
   l361-484-160
-  l349-486-179
+  l845-489-180
+  l362-476-191
+  l846-463-166
+  l360-476-120
 endarea
 
-point 472.25 111.5 entrance -orientation 10.8
+line label -id l847-485-147
+  482.0 120.5
+  482.0 120.5 486.75 142.75 485.0 147.0
+  483.25 151.25 482.5 154.25 482.5 154.25
+  smooth off
+endline
+
+line label -id l846-463-166
+  462.25 185.5
+  466.25 122.25
+endline
+
+line label -id l845-489-180
+  491.0 173.5
+  484.75 191.5
+endline
 
 line label -id l362-476-191
   484.75 191.5

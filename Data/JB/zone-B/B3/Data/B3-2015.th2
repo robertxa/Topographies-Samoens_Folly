@@ -231,11 +231,21 @@ point 159.43490000000003 130.1376 station -name 2015fd2-1@B3
 point 148.0 165.5 continuation -attr Code A -attr Cavite B3 -attr CA "Courant d'air'" -text "méandre étroit à explorer ; arrêt sur rien"
 
 area water
+  l79-215-91
   l59-212-94
-  l50-202-84
+  l80-198-82
   l60-210-82
-  l54-211-90
 endarea
+
+line label -id l80-198-82
+  195.25 86.25
+  201.0 77.75
+endline
+
+line label -id l79-215-91
+  217.0 88.0
+  211.25 94.5
+endline
 
 line label -id l60-210-82
   201.0 77.75
