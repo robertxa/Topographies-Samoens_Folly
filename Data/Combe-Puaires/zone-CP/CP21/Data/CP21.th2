@@ -502,9 +502,7 @@ point 36.0 274.25 label -text "-235 m"
 
 area sump
   l143-62-278
-  l130-62-271
   l142-65-272
-  l129-63-274
 endarea
 
 line label -id l142-65-272
@@ -513,10 +511,10 @@ line label -id l142-65-272
 endline
 
 line label -id l143-62-278
-  62.5 279.0
+  66.25 274.0
   60.75 275.5
   59.5 271.75
-  56.75 269.5
+  61.0 267.0
 endline
 
 line wall -id l129-63-274 -subtype unsurveyed

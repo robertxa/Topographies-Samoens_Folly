@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 836.6687999999999 576.0
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {640.908 1 1.0} {126.274 CH24} CH24-map.xvi 0 {}
 
 
@@ -98,16 +98,26 @@ endline
 point 511.0 168.5 camp
 
 area sand
-  l14-203-336
+  l115-502-196
   l84-483-186
-  l17-174-336
+  l116-500-140
   l85-595-124
 endarea
+
+line label -id l116-500-140
+  471.75 155.25
+  579.25 98.0
+endline
+
+line label -id l115-502-196
+  598.0 141.0
+  492.5 201.0
+endline
 
 line label -id l85-595-124
   579.25 98.0
   579.25 98.0 590.75 106.5 593.25 115.25
-  595.75 124.0 597.75 140.75 597.75 140.75
+  595.75 124.0 598.0 141.0 598.0 141.0
   smooth off
 endline
 
@@ -141,11 +151,21 @@ point 276.75 267.25 sand
 point 253.75 285.75 sand
 
 area sand
-  l14-203-336
+  l118-248-312
   l70-204-304
-  l17-174-336
+  l119-215-281
   l71-292-251
 endarea
+
+line label -id l119-215-281
+  197.0 292.0
+  277.25 239.75
+endline
+
+line label -id l118-248-312
+  299.25 279.5
+  224.5 327.75
+endline
 
 line label -id l71-292-251
   277.25 239.75
@@ -161,12 +181,22 @@ line label -id l70-204-304
   smooth off
 endline
 
-area pebbles
+area sand
+  l121-199-362
   l67-192-374
-  l17-174-336
+  l122-164-338
   l68-198-309
-  l14-203-336
 endarea
+
+line label -id l122-164-338
+  154.5 355.25
+  188.0 303.0
+endline
+
+line label -id l121-199-362
+  214.5 332.5
+  191.0 374.5
+endline
 
 line label -id l68-198-309
   188.0 303.0

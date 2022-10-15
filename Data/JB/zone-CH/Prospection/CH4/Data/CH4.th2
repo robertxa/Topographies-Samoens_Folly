@@ -8,17 +8,24 @@ encoding  utf-8
 scrap SP-CH4-1 -projection plan -author 1991 "Christophe Ohl" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [178.0 -381.0 289.5 -381.0 0.0 0.0 10 0.0 m]
 
 area blocks
-  l12-596--44
-  l13-596--84
+  l15-604--24
   l14-652--88
-  l6-633--70
 endarea
+
+line label -id l15-604--24
+  686.0 -80.0
+  676.0 -55.0 640.0 -15.0 603.0 -24.0
+  566.0 -33.0 537.0 -51.0 560.0 -79.0
+  583.0 -107.0 630.0 -117.0 630.0 -117.0
+  smooth off
+endline
 
 point 717.0 -65.0 height -value [-15 m]
 
 line pit -id l14-652--88
   686.0 -80.0
   686.0 -80.0 630.0 -87.0 630.0 -117.0
+  smooth off
 endline
 
 point 511.0 70.0 label -text "<bf>CH4" -scale xl
@@ -44,6 +51,7 @@ line wall -id l12-596--44 -subtype invisible
   612.0 -40.5
   612.0 -40.5 573.0 -47.5 573.0 -57.5
   573.0 -67.5 568.0 -70.5 580.5 -71.5
+  smooth off
 endline
 
 line wall -id l13-596--84

@@ -180,8 +180,27 @@ line floor-step
   304.75 118.0
 endline
 
+area blocks
+  l69-166-191
+  l45-155-187
+  l70-165-174
+  l49-175-177
+endarea
+
+line label -id l70-165-174
+  157.0 182.0
+  157.0 182.0 162.25 174.5 165.25 173.5
+  168.25 172.5 170.5 171.25 170.5 171.25
+  smooth off
+endline
+
+line label -id l69-166-191
+  177.5 183.75
+  161.0 193.5
+endline
+
 line label -id l49-175-177
-  169.0 171.5
+  170.5 171.25
   174.5 176.75
   178.25 179.0
   177.5 183.75
@@ -218,13 +237,6 @@ point 36.5 254.5 label -text "etr."
 point 83.0 297.75 label -text "<bf>CH22" -scale xl
 
 point 81.75 281.25 entrance -orientation 196.8
-
-area blocks
-  l49-175-177
-  l28-172-187
-  l45-155-187
-  l33-162-178
-endarea
 
 line floor-step -id l45-155-187
   161.0 193.5
