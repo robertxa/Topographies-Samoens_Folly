@@ -162,59 +162,49 @@ def ThCutAreas():
         #   Read the Line Shapefile
         with fiona.open('lines2d.shp', 'r') as lines:
             with fiona.open('lines2dInside.shp', 'w', crs=lines.crs, driver='ESRI Shapefile', schema=lines.schema) as linesInside:
-                with fiona.open('lines2dOutside.shp', 'w', crs=lines.crs, driver='ESRI Shapefile', schema=lines.schema) as linesOutside:
-                    counter = 0
-                    ids = []
-                    for line in lines:
-                        #   Make a new shapefile with all the features possibly outside of the outline,
-                        #       and that are not to be omitted int the drawing : 
-                        #           walls, text, doline, écoulement, clip = off
-                        #   Make a new shapefile with only the lines that have 
-                        #       to be inside the outline only
+                #with fiona.open('lines2dOutside.shp', 'w', crs=lines.crs, driver='ESRI Shapefile', schema=lines.schema) as linesOutside:
+                counter = 0
+                ids = []
+                for line in lines:
+                    #   Make a new shapefile with all the features possibly outside of the outline,
+                    #       and that are not to be omitted int the drawing : 
+                    #           walls, text, doline, écoulement, clip = off
+                    #   Make a new shapefile with only the lines that have 
+                    #       to be inside the outline only
+                    #if line['properties']['_CLIP'] == 'off' or \
+                    #   line['properties']['_TYPE'] in ['wall', 'text', 'label', 'water_flow', 'centerline']:
+                    #    linesOutside.write (line)
+                    #else:
+                    for outline in outlines:
+                        # Initiate new record
+                        lineInside = line
                         if line['properties']['_CLIP'] == 'off' or \
-                           line['properties']['_TYPE'] in ['wall', 'text', 'label', 'water_flow', 'centerline']:
-                            linesOutside.write (line)
+                            line['properties']['_TYPE'] in ['wall', 'label', 'water_flow', 'centerline']:
+                            linesInside.write (line)
                         else:
-                            for outline in outlines:
-                                # Initiate new record
-                                lineInside = line
-                                # check if the area crosses the outline
-                                #print(line)
-                                if LineString(line['geometry']['coordinates']).intersects(Polygon(outline['geometry']['coordinates'][0])) and line['properties']['_SCRAP_ID'] == outline['properties']['_ID']:
-                                    # make the difference
-                                    junk = LineString(line['geometry']['coordinates']).intersection(Polygon(outline['geometry']['coordinates'][0]))
-                                    #areaInside = area - outline
-                                    #if line['properties']['_TYPE'] == 'pit':
-                                    #    print(line)
-                                    #    print(list(junk.coords))
+                            # check if the line crosses the outline
+                            if LineString(line['geometry']['coordinates']).intersects(Polygon(outline['geometry']['coordinates'][0])) and line['properties']['_SCRAP_ID'] == outline['properties']['_ID']:
+                                # make the difference
+                                junk = LineString(line['geometry']['coordinates']).intersection(Polygon(outline['geometry']['coordinates'][0]))
+                                #lineInside = line - outline
 
-                                    # Save the difference if the lineInside is not null
-                                    if not junk.is_empty:
-                                        if junk.type == 'LineString':
-                                            #lineInside['geometry']['coordinates'] = [junk.coords[0],junk.coords[1]]
-                                            lineInside['geometry']['coordinates'] = list(junk.coords)
+                                # Save the difference if the lineInside is not null
+                                if not junk.is_empty:
+                                    if junk.type == 'LineString':
+                                        lineInside['geometry']['coordinates'] = list(junk.coords)
+                                        linesInside.write (lineInside)
+                                    elif junk.type == 'GeometryCollection':
+                                        lineInside['geometry']['coordinates'] = list(junk[0].coords)
+                                    elif junk.type == 'MultiLineString':
+                                        print(line)
+                                        junkx = []
+                                        junky = []
+                                        for i in range (len(junk)):
+                                            junkx.append(list(junk[i].coords))
                                             linesInside.write (lineInside)
-                                        elif junk.type == 'GeometryCollection':
-                                            #print(junk)
-                                            #lineInside['geometry']['coordinates'] = [junk[0].coords[0],junk[0].coords[1]]
-                                            lineInside['geometry']['coordinates'] = list(junk[0].coords)
-                                        elif junk.type == 'MultiLineString':
-                                            print(line)
-                                            junkx = []
-                                            junky = []
-                                            for i in range (len(junk)):
-                                                #junkx.append(junk[i].coords[0])
-                                                #junky.append(junk[i].coords[1])
-                                                #lineInside['geometry']['coordinates'] = [junkx[0], junky[0]]
-                                                junkx.append(list(junk[i].coords))
-                                                #junky.append(junk[i].coords[1])
-                                                
-                                                #lineInside['geometry']['coordinates'] = [junk[i].coords[0],junk[i].coords[1]]
-                                                #lineInside['id'] = lineInside['id'] + '_' + str(i)
-                                                linesInside.write (lineInside)
-                                        else:
-                                            counter+=1
-                                            ids.append(line['id'])
+                                    else:
+                                        counter+=1
+                                        ids.append(line['id'])
                                             
     if counter !=0:
         print('\x1b[32;1mWARNING:\x1b[0m %s lines have generated an error, these are the lines with "id" number(s):\n\t%s' %(str(counter), str(ids)))

@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 5210.5 1799.81
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {1580.06 1 1.0} {1671.81 CP12} ../ReseauCP-map.xvi 0 {}
 
 
@@ -1857,6 +1857,7 @@ line label -id l686-3524-714 -close off
   3535.5 706.5 3534.75 711.0 3532.25 714.25
   3529.75 717.5 3528.0 721.5 3528.0 724.75
   3528.0 728.0 3523.0 732.0 3519.5 730.5
+  smooth off
 endline
 
 point 3573.5 695.25 blocks
@@ -3006,6 +3007,7 @@ endarea
 line label -id l1244-3996-888
   4054.75 895.75
   4054.75 895.75 4005.5 900.5 3964.25 873.0
+  smooth off
 endline
 
 line label -id l1243-4008-820
@@ -5533,20 +5535,6 @@ line label -id l1223-3559-601 -close on
   smooth off
 endline
 
-area sump
-  l512-3531-526
-  l509-3524-535
-  l511-3522-530
-  l506-3587-563
-endarea
-
-area sump
-  l513-3599-566
-  l507-3592-567
-  l514-3586-568
-  l506-3587-563
-endarea
-
 line label -id l514-3586-568
   3592.25 569.75
   3592.25 569.75 3586.75 570.75 3585.75 568.5
@@ -5554,11 +5542,16 @@ line label -id l514-3586-568
   smooth off
 endline
 
+area sump
+  l513-3599-566
+  l514-3586-568
+endarea
+
 line label -id l513-3599-566
-  3584.0 555.25
+  3584.0 560.75
   3589.0 561.25
   3594.0 565.75
-  3599.0 566.25
+  3592.25 569.75
 endline
 
 line label -id l512-3531-526
@@ -5568,13 +5561,18 @@ line label -id l512-3531-526
   smooth off
 endline
 
+area sump
+  l511-3522-530
+  l512-3531-526
+endarea
+
 line label -id l511-3522-530 -reverse on
-  3524.75 521.5
-  3524.75 521.5 3525.5 523.5 3524.75 524.75
+  3530.25 524.75
+  3530.25 524.75 3525.5 523.5 3524.75 524.75
   3524.0 526.0 3523.25 527.25 3523.25 527.25
   smooth off
   3520.75 532.75
-  3515.25 535.5
+  3524.0 536.5
 endline
 
 point 3520.75 532.75 altitude -align top-left

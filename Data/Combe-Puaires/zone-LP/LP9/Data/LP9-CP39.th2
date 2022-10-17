@@ -1988,6 +1988,7 @@ scrap SP-LP9-5 -projection plan -author 2009 "Stéphane Lips" -author 2011 "Xavi
 line pit
   597.5 635.25
   597.5 635.25 608.25 634.0 611.0 636.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -2010,6 +2011,7 @@ line wall
   630.25 611.25
   630.25 611.25 624.75 608.5 622.75 611.25
   620.75 614.0 615.5 625.5 609.75 625.0
+  smooth off
 endline
 
 line wall
@@ -2488,21 +2490,16 @@ point 503.25 676.25 altitude -align left
 point 538.0 700.0 label -text "<center>collecteur<br> de la Combe aux Puaires"
 
 area water
-  l695-559-651
   l690-555-654
-  l684-505-677
   l691-501-680
-  l685-512-671
   l692-522-670
-  l683-555-650
+  l695-559-651
 endarea
 
 line label -id l695-559-651
-  556.0 648.0
+  553.5 648.25
   558.25 648.5
   558.25 648.5 559.0 651.5 559.25 652.5
-  559.5 653.5 559.5 656.5 559.5 656.5
-  smooth off
 endline
 
 line label
@@ -2519,10 +2516,10 @@ line label -id l692-522-670
 endline
 
 line label -id l691-501-680
-  501.0 679.75
+  505.0 679.0
   503.25 676.25
   503.25 676.25 507.0 670.75 505.5 667.75
-  504.0 664.75 503.75 660.5 503.75 660.5
+  504.0 664.75 522.25 669.75 522.25 669.75
   smooth off
 endline
 

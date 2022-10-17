@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 4379.9708 2135.8750999999997
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {3905.69 1 1.0} {1633.83 1a.0} ../Ermoy-MARS-2009-map.xvi 0 {}
 
 
@@ -15,18 +15,42 @@ line wall
 endline
 
 area blocks
-  l33-587-982
+  l191-579-986
   l41-528-978
-  l24-493-947
+  l192-564-963
   l42-598-980
 endarea
 
+line label -id l192-564-963
+  535.0 964.75
+  590.5 962.25
+endline
+
+line label -id l191-579-986
+  598.0 980.5
+  598.0 980.5 589.75 985.75 579.0 986.0
+  568.25 986.25 539.5 986.5 539.5 986.5
+  smooth off
+endline
+
 area blocks
-  l35-423-1013
+  l194-461-994
   l62-398-1022
-  l23-408-1009
+  l195-432-982
   l63-471-978
 endarea
+
+line label -id l195-432-982
+  396.25 1016.0
+  396.25 1016.0 440.25 971.0 446.75 971.5
+  453.25 972.0 461.0 972.0 461.0 972.0
+  smooth off
+endline
+
+line label -id l194-461-994
+  471.0 987.25
+  406.0 1029.0
+endline
 
 line label -id l63-471-978
   461.0 972.0
