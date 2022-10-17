@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {13021.23 0 1.0} {6810.0 C37b@jb-amonts1} synthese_plan.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {26042.46 0 1.0} {13620.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
 
 
@@ -51,27 +51,6 @@ point 3435.25 2425.5 water-flow -orientation 237.8
 
 point 3511.75 2401.5 water-flow -orientation 338.2
 
-area water
-  l170-3446-2432
-  l157-3505-2409
-  l169-3458-2423
-  l158-3512-2411
-endarea
-
-area water
-  l168-3481-2427
-  l157-3505-2409
-  l167-3493-2415
-  l158-3512-2411
-endarea
-
-area sump
-  l165-3514-2414
-  l157-3505-2409
-  l166-3510-2407
-  l158-3512-2411
-endarea
-
 point 3358.5 2554.0 rope
 
 point 3452.0 2445.0 rope
@@ -101,10 +80,63 @@ endline
 
 point 3493.0 2396.75 altitude
 
+area sump
+  l166-3510-2407
+  l227-3515-2410
+  l165-3514-2414
+  l228-3504-2407
+endarea
+
+area water
+  l223-3483-2425
+  l168-3481-2427
+  l224-3476-2409
+  l167-3493-2415
+endarea
+
+area water
+  l225-3453-2431
+  l170-3446-2432
+  l226-3448-2417
+  l169-3458-2423
+endarea
+
+line label -id l228-3504-2407
+  3503.25 2408.75
+  3503.75 2404.5
+endline
+
+line label -id l227-3515-2410
+  3516.0 2408.5
+  3513.25 2414.25
+endline
+
+line label -id l226-3448-2417
+  3441.0 2423.0
+  3441.0 2423.0 3455.0 2410.0 3457.75 2409.75
+  3460.5 2409.5 3461.75 2411.0 3461.75 2411.0
+  smooth off
+endline
+
+line label -id l225-3453-2431
+  3458.75 2427.0
+  3448.75 2433.25
+endline
+
+line label -id l224-3476-2409
+  3472.5 2417.5
+  3472.5 2417.5 3475.0 2402.5 3487.25 2406.5
+endline
+
+line label -id l223-3483-2425
+  3491.25 2417.5
+  3480.5 2426.75
+endline
+
 line label -id l167-3493-2415
   3487.25 2406.5
   3487.25 2406.5 3493.0 2410.5 3492.25 2413.75
-  3491.5 2417.0 3490.5 2421.5 3490.5 2421.5
+  3491.5 2417.0 3491.25 2417.5 3491.25 2417.5
   smooth off
 endline
 
@@ -288,19 +320,17 @@ endscrap
 scrap SP-riv-10 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 area water
-  l241-2871-2175
-  l270-2874-2175
-  l240-2858-2182
   l270-2874-2175
 endarea
 
-line label -id l270-2874-2175
+line label -id l270-2874-2175 -close off
   2872.75 2171.25
   2872.75 2171.25 2875.25 2176.75 2872.75 2177.5
   2870.25 2178.25 2868.75 2178.25 2865.75 2180.25
   2862.75 2182.25 2855.5 2183.75 2855.5 2183.75
   smooth off
-  2859.75 2177.5
+  2859.75 2176.75
+  2872.75 2171.25
 endline
 
 point 3130.25 2305.0 label -text "Cascade de la Toussaint"

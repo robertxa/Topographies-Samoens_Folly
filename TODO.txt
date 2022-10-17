@@ -32,13 +32,7 @@ A FAIRE sur la base de données topographiques de Samoëns
 - Préparer un dossier GIS/QGIS complet, prêt à l'emploi pour pouvoir mettre la BD sur smartphone/QField/MergingMaps
 		* Verifier les Aires... Sinon, Erreur dans découpage
 			- Rechercher les autointersections ? (17 erreurs ?)
-				DONE : Reseau CP
-		* Ecrire un script pour couper les aires avec l'Outline 2D (Sous QGIS, manuellement = Vecteur --> Couper)
-		* Faire pareil pour les lignes --> Mais attention, certaines lignes DOIVENT exister à l'extérieur (ligne de texte, ligne d'écoulement, lignes avec l'option -clip off...)
-			1- Charger lines2d.shp
-			2- Diviser lines2d.shp en 2 en fonction de la valeur d'attribut (On, Off, Null) et de type (Wall or not)
-			3- Découper le shp clip off avec l'outline2d.shp
-		* Faire un sript QGis global pour traiter couper les shp lines2d et areas2d ?
+				DONE : Tout sauf JB
 		* Construire un fichier de style svg/QGis avec les symboles Therion --> Voir si ça existe déjà ? Demander sur la liste Therion ?
 			o Faire les symboles,
 			o afficher les symboles en fonction de la valeur de zoom/echelle ? 
@@ -47,8 +41,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 
 
 - Révisions des points d'interrogation (rajout des commentaires et des Codes) pour le JB Coupe (zonation pour le tableau)
-
-- Reprendre les coordonnées du CP22 (fausses dans la BDs, n'est pas au niveau du col, mais vers les 3 Gouilles)
 
 - Erreurs dessins à corriger
 	* Coupe développée du réseau de la Pierre Qui Tombe (JB) : couper en 2 scraps (OK) et rajouter l'option dans le scrap problématique : -flip horizontal (bug) --> Continuer à le retravailler. Le redessiner complètement ?
@@ -62,9 +54,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 		o SP-Echo (excentriques.th2)
 		o SP-Russesaval (montagnesrusses.th2)
 		o SP-Russesaval2 (montagnesrusses.th2) * 2
-		o SP-Gourance5 (toussaint.th2)
-		o SP-F2-1 (F2.th2)
-		o SP-CP6-2 (CP6.th2)
 
 - Tenter de simplifier la structure de la base de dessins (i.e. utiliser les dessins directement dans les scraps-alone ?)
 

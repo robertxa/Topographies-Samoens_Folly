@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1} jb-Xav-2010.xvi 0 {}
 
@@ -175,17 +175,27 @@ point 9183.25 5098.75 label -text "-511 m"
 
 point 9199.0 5072.25 label -text "Siphon"
 
-area sump
-  l2532-9183-5073
-  l2532-9183-5073
-  l2534-9175-5073
-  l2531-9179-5070
-endarea
+line label -id l153-9177-5070
+  9174.25 5071.75
+  9179.25 5067.5
+endline
 
-line label
+line label -id l152-9182-5076
+  9184.0 5075.0
+  9178.5 5078.25
+endline
+
+line label -id l47-9182-5071 -reverse on
   9184.0 5075.0
   9179.25 5067.5
 endline
+
+area sump
+  l152-9182-5076
+  l2534-9175-5073
+  l153-9177-5070
+  l47-9182-5071
+endarea
 
 line label -id l2534-9175-5073
   9178.5 5078.25
@@ -299,11 +309,21 @@ point 9099.25 5146.0 label -text "P25"
 point 9113.25 5094.5 label -text "Siphon"
 
 area sump
-  l2552-9117-5107
-  l2550-9112-5109
+  l149-9114-5114
   l2551-9114-5114
-  l2549-9108-5106
+  l150-9106-5104
+  l2552-9117-5107
 endarea
+
+line label -id l150-9106-5104
+  9104.0 5107.75
+  9107.25 5102.0
+endline
+
+line label -id l149-9114-5114
+  9116.5 5107.0
+  9113.5 5114.25
+endline
 
 line label -id l2552-9117-5107
   9116.5 5107.0

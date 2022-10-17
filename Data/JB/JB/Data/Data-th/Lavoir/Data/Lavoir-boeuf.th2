@@ -25,25 +25,55 @@ line pit -reverse on
 endline
 
 area sump
-  l14-92-164
-  l8-90-160
-  l15-89-158
-  l7-107-161
+  l213-130-136
+  l17-126-132
+  l214-125-125
+  l16-133-135
 endarea
 
 area sump
   l12-112-165
-  l7-107-161
+  l216-102-161
   l13-109-159
-  l11-128-132
+  l215-113-162
 endarea
 
 area sump
-  l16-133-135
-  l11-128-132
-  l17-126-132
-  l10-126-129
+  l218-90-164
+  l15-89-158
+  l217-93-154
+  l14-92-164
 endarea
+
+line label -id l218-90-164
+  92.5 164.75
+  87.25 162.0
+endline
+
+line label -id l217-93-154
+  91.5 154.5
+  94.25 154.25
+endline
+
+line label -id l216-102-161
+  101.5 163.75
+  102.75 158.5
+endline
+
+line label -id l215-113-162
+  114.0 160.0
+  111.5 164.0
+endline
+
+line label -id l214-125-125
+  123.25 127.5
+  123.25 127.5 120.25 121.25 126.75 125.5
+endline
+
+line label -id l213-130-136
+  132.5 134.25
+  128.5 136.5
+endline
 
 line label -id l17-126-132
   128.5 136.5
@@ -456,12 +486,22 @@ line pit
   smooth off
 endline
 
+line label -id l211-155-192
+  152.75 192.0
+  156.75 192.25
+endline
+
 area sump
+  l210-158-200
   l87-156-202
-  l75-155-194
+  l211-155-192
   l88-157-192
-  l74-158-198
 endarea
+
+line label -id l210-158-200
+  159.75 199.5
+  156.0 201.75
+endline
 
 line label -id l88-157-192
   156.75 192.25
@@ -989,3 +1029,6 @@ endscrap
  join SP-base-racc SP-Racc5
  join SP-Lavoir-new1 SP-Lavoir7
  join SP-lavoir-sec SP-Boeuf2
+
+
+
