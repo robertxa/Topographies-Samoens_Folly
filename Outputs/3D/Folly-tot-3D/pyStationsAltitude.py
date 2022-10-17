@@ -79,7 +79,8 @@ def ThAddAltStations(inputfile):
 		newschema['properties']['_EASTING'] = 'float'
 		newschema['properties']['_NORTHING'] = 'float'
 		# Open the output shapefile
-		with fiona.open(inputfile[:-4] + 'Alt.shp', 'w', crs=inputshp.crs, driver='ESRI Shapefile', schema=newschema) as ouput:
+		#with fiona.open(inputfile[:-4] + 'Alt.shp', 'w', crs=inputshp.crs, driver='ESRI Shapefile', schema=newschema) as ouput:
+		with fiona.open(inputfile[:-4] + 'Alt.gpkg', 'w', crs=inputshp.crs, driver='GPKG', schema=newschema) as ouput:
 			with alive_bar(len(inputshp), title = "\x1b[32;1m- Processing stations...\x1b[0m", length = 20) as bar:
 				# do a loop on the stations
 				for rec in inputshp:

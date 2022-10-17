@@ -34,15 +34,14 @@ cd -
 echo ''
 # 4- Mise à jour des shapefiles stations3D pour rajouter les informations d'altitudes
 echo '    3- Découpe les shapefiles aires et lignes au regard de l Outline'
-echo '         A faire manuellement ! tant que toutes les aires ne sont pas corrigées'
-#cd Outputs/3D/Folly-tot-2D
-#python CleanShp2d.py
-#cd -
-#echo ''
+echo '          Attention, cette étape est longue si travail sur tout un système en entier !!!'
+cd Outputs/3D/Folly-tot-2D
+python CleanShp2d.py
+cd -
+echo ''
 
 # 5- Mise à jour du projet QGis et du repository Merging Maps
 echo '    5- Mise à jour du projet QGis et du repository Merging Maps...'
-echo '         A faire manuellement !'
-echo '         transformer les shp en g???'
+echo '         A faire manuellement !?'
 echo ''
 

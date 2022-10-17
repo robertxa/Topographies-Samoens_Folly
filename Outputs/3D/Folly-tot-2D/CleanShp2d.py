@@ -30,9 +30,10 @@ from __future__ import division
 import fiona
 import shapely
 from shapely.geometry import Polygon, LineString
+import geopandas as gpd
 import sys, os, copy
 #from functools import wraps
-#from alive_progress import alive_bar              # https://github.com/rsalmei/alive-progress	
+from alive_progress import alive_bar              # https://github.com/rsalmei/alive-progress	
 
 ###### TO DO #####
 
@@ -112,6 +113,62 @@ def validate(inputfile, rec):
 
     return rec2
 
+#################################################################################################
+def cutareas(outlines):
+
+    # 2- Validate the outline and Areas shapefile
+    #for rec in outlines:
+    #    rec2 = validate('outline2d.shp', rec)
+    #    # update correction --> To do ?
+    #    #if rec2 != rec:
+    #for rec in areas:
+    #    rec2 = validate('areas2d.shp', rec)
+    #    # update correction
+    #    #if rec2 != rec:
+
+
+    #   Read the Line Shapefile
+    areas = gpd.read_file('areas2d.shp', driver = 'ESRI shapefile')
+
+    # Extract the intersections between outlines and lines
+    areasIN = areas.overlay(outlines, how = 'intersection')
+
+    # Removes inner lines that have different id and scrap_id
+    areasIN = areasIN[areasIN['_SCRAP_ID'] == areasIN ['_ID']]
+
+    # Save output
+    areasIN.to_file("areas2dMasekd.gpkg", driver = "GPKG")
+
+    return
+
+#################################################################################################
+def cutLines(outlines):
+    #   Read the Line Shapefile
+    lines = gpd.read_file('lines2d.shp', driver = 'ESRI shapefile')
+    # Extract lines that are not masked by the outline
+    linesOUT = lines[lines['_TYPE'] == 'centerline']. \
+                append(lines[lines['_TYPE'] == 'water_flow']).\
+                append(lines[lines['_TYPE'] == 'label']).\
+                append(lines[lines['_CLIP'] == 'off'])
+    # Extract lines will be masked by the outline
+    linesIN = lines[lines['_CLIP'] != 'off']
+    linesIN = linesIN[linesIN['_TYPE'] != 'centerline']
+    linesIN = linesIN[linesIN['_TYPE'] != 'water_flow']
+    linesIN = linesIN[linesIN['_TYPE'] != 'label']
+
+    # Extract the intersections between outlines and lines
+    linesIN = linesIN.overlay(outlines, how = 'intersection')
+
+    # Removes inner lines that have different id and scrap_id
+    linesIN = linesIN[linesIN['_SCRAP_ID'] == linesIN ['_ID']]
+
+    # Merge the IN and OUT database 
+    linesTOT = linesOUT.append(linesIN)
+
+    # Save output
+    linesTOT.to_file("lines2dMasekd.gpkg", driver="GPKG")
+
+    return
 
 #################################################################################################
 def ThCutAreas():
@@ -130,85 +187,15 @@ def ThCutAreas():
             raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(fname)))
 
     #1- Read the outline shapefile
-    with fiona.open('outline2d.shp', 'r') as outlines:        
-        
-        #   Read the Areas shapefile
-        with fiona.open('areas2d.shp', 'r') as areas:
-            with fiona.open('areas2dInside.shp', 'w', crs=areas.crs, driver='ESRI Shapefile', schema=areas.schema) as areasInside:
-                # 2- Validate the outline and Areas shapefile
-                for rec in outlines:
-                    rec2 = validate('outline2d.shp', rec)
-                    # update correction --> To do ?
-                    #if rec2 != rec:
-                for rec in areas:
-                    rec2 = validate('areas2d.shp', rec)
-                    # update correction
-                    #if rec2 != rec:
-
-                for outline in outlines:
-                    for area in areas:
-                        # Initiate new record
-                        areaInside = area
-                        # check if the area crosses the outline
-                        if Polygon(area['geometry']['coordinates'][0]).intersects(Polygon(outline['geometry']['coordinates'][0]))  and area['properties']['_SCRAP_ID'] == outline['properties']['_ID']:
-                            # make the difference
-                            junk = Polygon(area['geometry']['coordinates'][0]).intersection(Polygon(outline['geometry']['coordinates'][0]))
-                            #areaInside = area - outline
-                            # Save the difference if the areaInside is not null
-                            if not junk.is_empty:
-                                areaInside['geometry']['coordinates'][0] = list(junk.exterior.coords)
-                                areasInside.write (areaInside)
-
-        #   Read the Line Shapefile
-        with fiona.open('lines2d.shp', 'r') as lines:
-            with fiona.open('lines2dInside.shp', 'w', crs=lines.crs, driver='ESRI Shapefile', schema=lines.schema) as linesInside:
-                #with fiona.open('lines2dOutside.shp', 'w', crs=lines.crs, driver='ESRI Shapefile', schema=lines.schema) as linesOutside:
-                counter = 0
-                ids = []
-                for line in lines:
-                    #   Make a new shapefile with all the features possibly outside of the outline,
-                    #       and that are not to be omitted int the drawing : 
-                    #           walls, text, doline, écoulement, clip = off
-                    #   Make a new shapefile with only the lines that have 
-                    #       to be inside the outline only
-                    #if line['properties']['_CLIP'] == 'off' or \
-                    #   line['properties']['_TYPE'] in ['wall', 'text', 'label', 'water_flow', 'centerline']:
-                    #    linesOutside.write (line)
-                    #else:
-                    for outline in outlines:
-                        # Initiate new record
-                        lineInside = line
-                        if line['properties']['_CLIP'] == 'off' or \
-                            line['properties']['_TYPE'] in ['wall', 'label', 'water_flow', 'centerline']:
-                            linesInside.write (line)
-                        else:
-                            # check if the line crosses the outline
-                            if LineString(line['geometry']['coordinates']).intersects(Polygon(outline['geometry']['coordinates'][0])) and line['properties']['_SCRAP_ID'] == outline['properties']['_ID']:
-                                # make the difference
-                                junk = LineString(line['geometry']['coordinates']).intersection(Polygon(outline['geometry']['coordinates'][0]))
-                                #lineInside = line - outline
-
-                                # Save the difference if the lineInside is not null
-                                if not junk.is_empty:
-                                    if junk.type == 'LineString':
-                                        lineInside['geometry']['coordinates'] = list(junk.coords)
-                                        linesInside.write (lineInside)
-                                    elif junk.type == 'GeometryCollection':
-                                        lineInside['geometry']['coordinates'] = list(junk[0].coords)
-                                    elif junk.type == 'MultiLineString':
-                                        print(line)
-                                        junkx = []
-                                        junky = []
-                                        for i in range (len(junk)):
-                                            junkx.append(list(junk[i].coords))
-                                            linesInside.write (lineInside)
-                                    else:
-                                        counter+=1
-                                        ids.append(line['id'])
-                                            
-    if counter !=0:
-        print('\x1b[32;1mWARNING:\x1b[0m %s lines have generated an error, these are the lines with "id" number(s):\n\t%s' %(str(counter), str(ids)))
-
+    #with fiona.open('outline2d.shp', 'r') as outlines:
+    outlines = gpd.read_file('outline2d.shp', driver = 'ESRI shapefile')
+    with alive_bar(2, title = "\x1b[32;1m- Processing lines...\x1b[0m", length = 20) as bar:
+        # Work with areas
+        cutareas(outlines)
+        bar()
+        # Work with lines
+        cutLines(outlines)
+        bar()
 
     #5- End ?
 
