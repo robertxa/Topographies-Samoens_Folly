@@ -118,17 +118,19 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 	LP9_entrances = ['LP9a', 'CP39']
 	A21_entrances = ['A21', 'A24']
 
-	with alive_bar(len(systems), title = "\x1b[32;1m- Processing Entrances...\x1b[0m", length = 35) as bar:
+	with alive_bar(len(systems), title = "\x1b[32;1m- Processing Entrances...\x1b[0m", length = 20) as bar:
 		# For each system
 		for system in systems:
 			print('\tCavités présentes dans le shapefile : %s' %(caves[system]))
 			# Create the output folder
 			if not os.path.exists(outputdir + "/" + system):
 				os.mkdir(outputdir + "/" + system)
-			shpout = outputdir + "/" + system + '/' + system + '-Entrances.shp'
+			#shpout = outputdir + "/" + system + '/' + system + '-Entrances.shp'
+			shpout = outputdir + "/" + system + '/' + system + '-Entrances.gpkg'
 
 			# Make a new shapefile instance
-			with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='ESRI Shapefile', schema=schema) as ouput:
+			#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='ESRI Shapefile', schema=schema) as ouput:
+			with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='gpkg', schema=schema) as ouput:
 				# Find the line corresponding to each big cave
 				for cave in caves[system]:
 					for line in f:
@@ -183,12 +185,74 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 							ouput.write ({'geometry':mapping(point),'properties': prop})
 			# Update the progress-bar
 			bar()
+		
+	# Make a shapefile with the systems caracteristics
+	# Create the output folder
+	if not os.path.exists("Systems-info"):
+		os.mkdir("Systems-info")
+	shpout ='Systems-info.pgkg'
+
+	# Créer le schéma des shapefiles
+	Newschema = { 'geometry': 'Point', 
+				  'properties': { 'LocationID': 'str',
+								  'Nom': 'str',
+								  'System': 'str', 
+								  'Devel': 'float',
+								  'Explored': 'float',
+								  'Deniv': 'float'}}
+	# Make a new shapefile instance
+	with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='gpkg', schema=Newschema) as ouput:
+		# Find the line corresponding to each big cave
+		for cave in caves[system]:
+			for line in f:
+				if cave == line.split()[0] and (line.split('\t')[5]) != '':
+					if cave in JB_entrances:
+						#cavename = cave + ' - Jean-Bernard'
+						reseau = 'Jean-Bernard'
+						devel = float(develJB)
+						deniv = float(denivJB)
+						explored = float(exploredJB)
+					elif cave in CPres_entrances:
+						#cavename = cave + ' - Réseau CP'
+						reseau = 'Combe aux Puaires'
+						devel = float(develCP)
+						deniv = float(denivCP)
+						explored = float(exploredCP)
+					elif cave in LP9_entrances:
+						#cavename = cave + ' - LP9-CP39'
+						reseau : 'LP9 - CP39'
+						devel = float(develLP9)
+						deniv = float(develLP9)
+						explored = float(exploredLP9)
+					elif cave in A21_entrances:
+						#cavename = cave + ' - A21-A24'
+						reseau = 'A21 - A24'
+						devel = float(develA21)
+						deniv = float(denivA21)
+						explored = float(exploredA21)
+					
+
+
+					# Extract coordinates, alt, length, depth
+					point = Point(float(line.split('\t')[4]), float(line.split('\t')[5]))
+					prop = {'LocationID': cave,
+							'Nom': cave, 
+							'System': system,
+							'Devel': devel,
+							'Deniv': deniv,
+							'Explored': explored}
+					
+					# write Name, alt, length, depth in the shapefile as a new attribute
+					ouput.write ({'geometry':mapping(point),'properties': prop})
+			
 
 	print('')
 	print('')
 
+	return
 
 
+#################################################################################################
 if __name__ == u'__main__':	
 	###################################################
 	# initiate variables

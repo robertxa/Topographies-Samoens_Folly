@@ -136,6 +136,10 @@ def ThAddAltStations(inputfile):
 						g['properties']['_CAVE'] = rec['properties']['_SURVEY'].split('.')[-3]
 						g['properties']['_DEPTH'] = 2333 - float(rec['geometry']['coordinates'][2])
 					
+					elif xxx[-3] == 'Mirolda':
+						g['properties']['_CAVE'] = rec['properties']['_SURVEY'].split('.')[-3]
+						g['properties']['_DEPTH'] = 2330 - float(rec['geometry']['coordinates'][2])
+					
 					elif 'A21' in xxx[-4]:
 						g['properties']['_CAVE'] = 'A21 - A24'
 						g['properties']['_DEPTH'] = 1797 - float(rec['geometry']['coordinates'][2])

@@ -4,12 +4,12 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CP62 -title "CP62 - CP63" -entrance "CP62" -entrance "CP63"
+survey CP62 -title "CP62 - CP63"
   
 centerline -title "La Piscine CP62_0 17_18"
  cs lat-long
  fix CP62   46.112070 6.790722 1960.000
- station CP62 entrance    
+ station CP62 "CP62" entrance    
  date 2012.08.18
     team "Bernard Lips"
     team "Stéphane Lips"
@@ -72,7 +72,7 @@ endcenterline
 centerline -title "CP63 2.0_2.0b 2.43_CP63"
   cs lat-long
   fix CP63   46.112429    6.790076  1925
-  station CP63 entrance
+  station CP63 "CP63" entrance
   
   date 2014.07.16
     team "Frédéric Alvarez"
