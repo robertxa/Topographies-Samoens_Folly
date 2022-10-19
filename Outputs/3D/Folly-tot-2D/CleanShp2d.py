@@ -31,6 +31,7 @@ import fiona
 import shapely
 from shapely.geometry import Polygon, LineString
 import geopandas as gpd
+import pandas as pd
 import sys, os, copy
 #from functools import wraps
 from alive_progress import alive_bar              # https://github.com/rsalmei/alive-progress	
@@ -116,6 +117,7 @@ def validate(inputfile, rec):
 #################################################################################################
 def cutareas(outlines):
 
+    print('Working with areas...')
     # 2- Validate the outline and Areas shapefile
     #for rec in outlines:
     #    rec2 = validate('outline2d.shp', rec)
@@ -147,13 +149,17 @@ def cutareas(outlines):
 
 #################################################################################################
 def cutLines(outlines):
+
+    print('Working with lines...')
     #   Read the Line Shapefile
     lines = gpd.read_file('lines2d.shp', driver = 'ESRI shapefile')
     # Extract lines that are not masked by the outline
-    linesOUT = lines[lines['_TYPE'] == 'centerline']. \
-                append(lines[lines['_TYPE'] == 'water_flow']).\
-                append(lines[lines['_TYPE'] == 'label']).\
-                append(lines[lines['_CLIP'] == 'off'])
+    linesOUT = pd.concat((lines[lines['_TYPE'] == 'centerline'],
+                           lines[lines['_TYPE'] == 'water_flow'],
+                           lines[lines['_TYPE'] == 'label'],
+                           lines[lines['_CLIP'] == 'off']),
+                           ignore_index=True)
+
     # Extract lines will be masked by the outline
     linesIN = lines[lines['_CLIP'] != 'off']
     linesIN = linesIN[linesIN['_TYPE'] != 'centerline']
@@ -164,7 +170,7 @@ def cutLines(outlines):
     # be careful, for this operation, geopandas needs to work with rtree and not pygeos
     #   --> uninstall pygeos and install rtree
     try:
-        linesIN = linesIN.overlay(outlines, how = 'intersection')
+        linesIN = linesIN.overlay(outlines, how = 'intersection', keep_geom_type=True)
     except:
         print('ERROR: 1) uninstall pygeos and install rtree\n\t2) check your polygons validity')
 
@@ -172,7 +178,8 @@ def cutLines(outlines):
     linesIN = linesIN[linesIN['_SCRAP_ID'] == linesIN ['_ID']]
 
     # Merge the IN and OUT database 
-    linesTOT = linesOUT.append(linesIN)
+    linesTOT = pd.concat((linesOUT, linesIN),
+                           ignore_index=True)
 
     # Save output
     linesTOT.to_file("lines2dMasekd.gpkg", driver="GPKG", encoding = 'utf8')
@@ -181,6 +188,8 @@ def cutLines(outlines):
 
 #################################################################################################
 def AddAltPoint():
+
+    print('Working with points...')
 
     # Definition des altitudes des entrées supérieures des réseaux à plusieurs entrées
     EntreeSupp = {'JB'     : 2333,  # Entrée C37
@@ -362,9 +371,9 @@ def ThCutAreas():
     outlines = gpd.read_file('outline2d.shp', driver = 'ESRI shapefile')
     #with alive_bar(3, title = "\x1b[32;1m- Processing lines...\x1b[0m", length = 20) as bar:
     # Change SHP to gpkg
-    shp2gpkg()
+    #shp2gpkg()
     # Work with points
-    AddAltPoint()
+    #AddAltPoint()
     #bar()
     # Work with lines
     cutLines(outlines)

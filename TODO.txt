@@ -34,7 +34,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 			o Faire les symboles,
 			o afficher les symboles en fonction de la valeur de zoom/echelle ? 
 		* Rajouter terrain mais avec un fichier allegé --> Alex ?
-		* Faire un export des shp en gpkg par lot pour mise à jour auto avec Merging Maps
 
 - Révisions des points d'interrogation (rajout des commentaires et des Codes) pour le JB Coupe (zonation pour le tableau)
 
@@ -43,13 +42,6 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Coordonnées du C52 et L17 à re-trouver
 	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
-	* Corriger les erreurs de scraps dans le JB (a minima...) 
-		o Utiliser l'option "debug on / debug scrap-names" des layouts, et les logs
-		o et/ou utiliser la fonction vector --> Verifier la validite de QGIS
-	* Corriger les erreurs d'aires dans :
-		o SP-Echo (excentriques.th2)
-		o SP-Russesaval (montagnesrusses.th2)
-		o SP-Russesaval2 (montagnesrusses.th2) * 2
 
 - Tenter de simplifier la structure de la base de dessins (i.e. utiliser les dessins directement dans les scraps-alone ?)
 
