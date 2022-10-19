@@ -37,7 +37,7 @@ from alive_progress import alive_bar              # https://github.com/rsalmei/a
 #################################################################################################
 #################################################################################################
 
-def ThExtractEntrances(inputfile, systems, caves, crs):
+def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
 	"""
 	Function to build a point shapefile with the entrances of the main caves,
 	with the Easting/Northing/Altitude as attributs' table.
@@ -59,11 +59,11 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 	
 	outputdir = 'Entrances-shp'
 	# check if input file exists
-	if not os.path.isfile(inputfile):
-		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(inputfile)))
+	if not os.path.isfile(pathshp + inputfile):
+		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(pathshp + inputfile)))
 	
 	# open the input file
-	f = open(inputfile, 'r').readlines()
+	f = open(pathshp + inputfile, 'r').readlines()
 	for line in f:
 		if 'Gouffre Jean Bernard' in line:
 			develJB = line.split('\t')[1]
@@ -193,9 +193,44 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 				exploredOddaz = line.split('\t')[3]
 			else:
 				exploredOddaz = 0
-		
+		# Now, get the data for each entire system
+		elif 'Réseau du Jean-Bernard' in line:
+			develsJB = line.split('\t')[1]
+			denivsJB = line.split('\t')[2]
+			if line.split('\t')[3] != '':
+				exploredsJB = line.split('\t')[3]
+			else:
+				exploredsJB = 0
+		elif 'Système de la Combe aux Puaires' in line:
+			develsCP = line.split('\t')[1]
+			denivsCP = line.split('\t')[2]
+			if line.split('\t')[3] != '':
+				exploredsCP = line.split('\t')[3]
+			else:
+				exploredsCP = 0
+		elif 'Système des Avoudrues' in line:
+			develsAV = line.split('\t')[1]
+			denivsAV = line.split('\t')[2]
+			if line.split('\t')[3] != '':
+				exploredsAV = line.split('\t')[3]
+			else:
+				exploredsAV = 0
+		elif 'Système du A21' in line:
+			develsA = line.split('\t')[1]
+			denivsA = line.split('\t')[2]
+			if line.split('\t')[3] != '':
+				exploredsA = line.split('\t')[3]
+			else:
+				exploredsA = 0
+		elif 'Système du Mirolda - Lucien Bouclier' in line:
+			develsCriou = line.split('\t')[1]
+			denivsCriou = line.split('\t')[2]
+			if line.split('\t')[3] != '':
+				exploredsCriou = line.split('\t')[3]
+			else:
+				exploredsCriou = 0
 
-	systinfo = {'JB' : {'Nom'     : 'Gouffre Jean Bernard',
+	cavesinfo = {'JB' : {'Nom'     : 'Gouffre Jean Bernard',
 						'System'  : 'Système du Jean Bernard', 
 						'Devel'   : develJB,
 						'Explored': exploredJB,
@@ -224,7 +259,7 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 						'Devel'   : develCH3,
 						'Explored': exploredCH3,
 						'Deniv'   : denivCH3,
-						'Point'   : [3305441, 5107569]},	#crs = 32632	# UTM32N
+						'Point'   : [330544, 5107569]},	#crs = 32632	# UTM32N
 				'D11' : {'Nom'    : 'Gouffre D11',
 						'System'  : 'Système du Jean Bernard', 
 						'Devel'   : develD11,
@@ -236,7 +271,7 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 						'Devel'   : develD33,
 						'Explored': exploredD33,
 						'Deniv'   : denivD33,
-						'Point'   : [39386, 5108204]},	#crs = 32632	# UTM32N
+						'Point'   : [329386, 5108204]},	#crs = 32632	# UTM32N
 				'CP' : {'Nom'     : 'Réseau de la Combe aux Puaires',
 						'System'  : 'Système de la Combe aux Puaires', 
 						'Devel'   : develCP,
@@ -290,7 +325,7 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 						'Devel'   : develA21,
 						'Explored': exploredA21,
 						'Deniv'   : denivA21,
-						'Point'   : [328542, 51081119]},	#crs = 32632	# UTM32N
+						'Point'   : [328542, 5108119]},	#crs = 32632	# UTM32N
 				'Mirolda': {'Nom' : 'Gouffre Mirolda - Réseau Lucien Bouclier',
 						'System'  : 'Système du Criou', 
 						'Devel'   : develMirolda,
@@ -305,9 +340,42 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 						   'Point'   : [327265, 5109190]}	#crs = 32632	# UTM32N
 				}
 
+	systsinfo = {'JB' : {'Nom'     : 'Système du Jean Bernard',
+						'System'  : 'Système du Jean Bernard', 
+						'Devel'   : develsJB,
+						'Explored': exploredsJB,
+						'Deniv'   : denivsJB,
+						#'Point'   : [328750, 5107082]},	#crs = 32632	# UTM32N
+						'Point'   : [328750, 5107265]},	#crs = 32632	# UTM32N
+				'CP' : {'Nom'     : 'Système de la Combe aux Puaires',
+						'System'  : 'Système de la Combe aux Puaires', 
+						'Devel'   : develsCP,
+						'Explored': exploredsCP,
+						'Deniv'   : denivsCP,
+						'Point'   : [327827, 5108791]},	#crs = 32632	# UTM32N}
+				'AV' : {'Nom'     : 'Système des Avoudrues',
+						'System'  : 'Système des Avoudrues', 
+						'Devel'   : develsAV,
+						'Explored': exploredsAV,
+						'Deniv'   : denivsAV,
+						'Point'   : [331299, 5107449]},	#crs = 32632	# UTM32N}
+				'A'  : {'Nom'     : 'Système du A21',
+						'System'  : 'Système du A21', 
+						'Devel'   : develsA,
+						'Explored': exploredsA,
+						'Deniv'   : denivsA,
+						'Point'   : [328560, 5108128]},	#crs = 32632	# UTM32N}
+				'Criou':{'Nom'    : 'Système du Mirolda - Lucien Bouclier',
+						'System'  : 'Système du Criou', 
+						'Devel'   : develsCriou,
+						'Explored': exploredsCriou,
+						'Deniv'   : denivsCriou,
+						'Point'   : [327980, 5105701]}	#crs = 32632	# UTM32N}
+				}
+
 	# Create the output folder
-	if not os.path.exists(outputdir):
-		os.mkdir(outputdir)
+	#if not os.path.exists(outputdir):
+	#	os.mkdir(outputdir)
 
 	# Créer le schéma des shapefiles
 	schema = { 'geometry': 'Point', 'properties': { 'LocationID': 'str',
@@ -333,14 +401,15 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 		for system in systems:
 			print('\tCavités présentes dans le shapefile : %s' %(caves[system]))
 			# Create the output folder
-			if not os.path.exists(outputdir + "/" + system):
-				os.mkdir(outputdir + "/" + system)
+			#if not os.path.exists(outputdir + "/" + system):
+			#	os.mkdir(outputdir + "/" + system)
 			#shpout = outputdir + "/" + system + '/' + system + '-Entrances.shp'
-			shpout = outputdir + "/" + system + '/' + system + '-Entrances.gpkg'
+			shpout = pathshp[:-8] + system + '-Entrances.gpkg'
 
 			# Make a new shapefile instance
 			#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='ESRI Shapefile', schema=schema) as ouput:
-			with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=schema, encoding = 'utf8') as ouput:
+			#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=schema, encoding = 'utf8') as ouput:
+			with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=schema) as ouput:
 				# Find the line corresponding to each big cave
 				for cave in caves[system]:
 					for line in f:
@@ -410,9 +479,9 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 		
 	# Make a shapefile with the systems caracteristics
 	# Create the output folder
-	if not os.path.exists("Systems-info"):
-		os.mkdir("Systems-info")
-	shpout ='Systems-info/BigCaves-info.pgkg'
+	#if not os.path.exists("Systems-info"):
+	#	os.mkdir("Systems-info")
+	shpout = pathshp[:-8] + 'BigCaves-info.pgkg'
 				
 	# Créer le schéma des shapefiles
 	Newschema = { 'geometry': 'Point', 
@@ -423,22 +492,41 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 								  'Explored': 'float',
 								  'Deniv': 'float'}}
 	# Make a new shapefile instance
-	with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema, encoding = 'utf8') as ouput:
+	#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema, encoding = 'utf8') as ouput:
+	with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema) as ouput:
 		# Find the line corresponding to each big cave
-		for cave in list(systinfo.keys()):
+		for cave in list(cavesinfo.keys()):
 			# Extract coordinates, alt, length, depth
 			#point = Point(float(line.split('\t')[4]), float(line.split('\t')[5]))
-			point = Point(systinfo[cave]['Point'][0], systinfo[cave]['Point'][1])
-			prop = {'LocationID': systinfo[cave]['Nom'],
-					'Nom': systinfo[cave]['Nom'], 
-					'System': systinfo[cave]['System'],
-					'Devel': float(systinfo[cave]['Devel']),
-					'Deniv': float(systinfo[cave]['Deniv']),
-					'Explored': float(systinfo[cave]['Explored'])}
+			point = Point(cavesinfo[cave]['Point'][0], cavesinfo[cave]['Point'][1])
+			prop = {'LocationID': cavesinfo[cave]['Nom'],
+					'Nom': cavesinfo[cave]['Nom'], 
+					'System': cavesinfo[cave]['System'],
+					'Devel': float(cavesinfo[cave]['Devel']),
+					'Deniv': float(cavesinfo[cave]['Deniv']),
+					'Explored': float(cavesinfo[cave]['Explored'])}
 					
 			# write Name, alt, length, depth in the shapefile as a new attribute
 			ouput.write ({'geometry':mapping(point),'properties': prop})
 			
+	# Make a new shapefile instance
+	shpout = pathshp[:-8] + 'Systems-info.pgkg'
+	#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema, encoding = 'utf8') as ouput:
+	with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema) as ouput:
+		# Find the line corresponding to each big cave
+		for system in list(systsinfo.keys()):
+			# Extract coordinates, alt, length, depth
+			#point = Point(float(line.split('\t')[4]), float(line.split('\t')[5]))
+			point = Point(systsinfo[system]['Point'][0], systsinfo[system]['Point'][1])
+			prop = {'LocationID': systsinfo[system]['Nom'],
+					'Nom': systsinfo[system]['Nom'], 
+					'System': systsinfo[system]['System'],
+					'Devel': float(systsinfo[system]['Devel']),
+					'Deniv': float(systsinfo[system]['Deniv']),
+					'Explored': float(systsinfo[system]['Explored'])}
+					
+			# write Name, alt, length, depth in the shapefile as a new attribute
+			ouput.write ({'geometry':mapping(point),'properties': prop})
 
 	print('')
 	print('')
@@ -451,6 +539,8 @@ if __name__ == u'__main__':
 	###################################################
 	# initiate variables
 	inputfile = 'Caves.txt'
+
+	pathshp = '../../Outputs/SHP/therion/'
 
 	systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV']
 
@@ -478,5 +568,5 @@ if __name__ == u'__main__':
 
 	###################################################
 	# Run the extraction
-	ThExtractEntrances(inputfile, systems = systems, caves = caves, crs = crs)
+	ThExtractEntrances(inputfile, pathshp, systems = systems, caves = caves, crs = crs)
 	# End...

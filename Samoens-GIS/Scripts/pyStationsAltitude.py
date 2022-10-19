@@ -40,7 +40,7 @@ from alive_progress import alive_bar              # https://github.com/rsalmei/a
 #################################################################################################
 #################################################################################################
 
-def ThAddAltStations(inputfile):
+def ThAddAltStations(pathshp, inputfile):
 	"""
 	Function that read the station3d.shp, and produce a new shapefile
 	  similar to station3d.shp, but also with the coordinates and altitude of each station
@@ -60,16 +60,16 @@ def ThAddAltStations(inputfile):
 	print('*************************************************')
 	print(' ')
 	
-	outputdir = 'Entrances-shp'
 	# check if input file exists
-	if not os.path.isfile(inputfile):
-		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(inputfile)))
+	if not os.path.isfile(pathshp + inputfile):
+		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(pathshp + inputfile)))
 
 	# Open the text file with the coordinates of the caves
-	f = open('../../Lists/Therion-ShpEntrees/Caves.txt', 'r').readlines() 
+	#f = open('../../Lists/Therion-ShpEntrees/Caves.txt', 'r').readlines()
+	f = open(pathshp + 'Caves.txt', 'r').readlines() 
 							
 	# Make a new shapefile instance
-	with fiona.open(inputfile, 'r') as inputshp:
+	with fiona.open(pathshp + inputfile, 'r') as inputshp:
 		# Créer le nouveau schéma des shapefiles
 		newschema = inputshp.schema
 		newschema['properties']['_CAVE'] = 'str'
@@ -80,7 +80,7 @@ def ThAddAltStations(inputfile):
 		newschema['properties']['_NORTHING'] = 'float'
 		# Open the output shapefile
 		#with fiona.open(inputfile[:-4] + 'Alt.shp', 'w', crs=inputshp.crs, driver='ESRI Shapefile', schema=newschema) as ouput:
-		with fiona.open(inputfile[:-4] + 'Alt.gpkg', 'w', crs=inputshp.crs, driver='GPKG', schema=newschema) as ouput:
+		with fiona.open(pathshp[:-8] + inputfile[:-4] + 'Alt.gpkg', 'w', crs=inputshp.crs, driver='GPKG', schema=newschema) as ouput:
 			with alive_bar(len(inputshp), title = "\x1b[32;1m- Processing stations...\x1b[0m", length = 20) as bar:
 				# do a loop on the stations
 				for rec in inputshp:
@@ -168,7 +168,8 @@ if __name__ == u'__main__':
 	###################################################
 	# initiate variables
 	inputfile = 'stations3d.shp'
+	pathshp = '../../Outputs/SHP/therion/'
 	###################################################
 	# Run the transformation
-	ThAddAltStations(inputfile)
+	ThAddAltStations(pathshp, inputfile)
 	# End...

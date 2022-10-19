@@ -12,7 +12,8 @@ survey trousGU -title "trous GU"
 #cs lat-long
 cs EPSG:27572 # LII Etendu
 
-fix       GU844       843630     2129950     1870
+#fix       GU844       843630     2129950     1870
+fix       GU844       843830     2129950     1870   # X meilleur ?
 fix       GU845       843800     2129830     1900
 
 station   GU844       "GU844" entrance continuation explored 20m

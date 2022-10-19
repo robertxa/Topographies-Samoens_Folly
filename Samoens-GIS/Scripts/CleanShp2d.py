@@ -32,7 +32,7 @@ import shapely
 from shapely.geometry import Polygon, LineString
 import geopandas as gpd
 import pandas as pd
-import sys, os, copy
+import sys, os, copy, shutil
 #from functools import wraps
 from alive_progress import alive_bar              # https://github.com/rsalmei/alive-progress	
 
@@ -115,7 +115,7 @@ def validate(inputfile, rec):
     return rec2
 
 #################################################################################################
-def cutareas(outlines):
+def cutareas(pathshp, outlines):
 
     print('Working with areas...')
     # 2- Validate the outline and Areas shapefile
@@ -129,7 +129,7 @@ def cutareas(outlines):
     #    #if rec2 != rec:
 
     #   Read the Line Shapefile
-    areas = gpd.read_file('areas2d.shp', driver = 'ESRI shapefile')
+    areas = gpd.read_file(pathshp + 'areas2d.shp', driver = 'ESRI shapefile')
 
     # Extract the intersections between outlines and lines
     # be careful, for this operation, geopandas needs to work with rtree and not pygeos
@@ -143,16 +143,17 @@ def cutareas(outlines):
     areasIN = areasIN[areasIN['_SCRAP_ID'] == areasIN ['_ID']]
 
     # Save output
-    areasIN.to_file("areas2dMasekd.gpkg", driver = "GPKG", encoding = 'utf8')
+    #areasIN.to_file("areas2dMasekd.gpkg", driver = "GPKG", encoding = 'utf8')
+    areasIN.to_file(pathshp[:-8] + "areas2dMasekd.gpkg", driver = "GPKG")
 
     return
 
 #################################################################################################
-def cutLines(outlines):
+def cutLines(pathshp, outlines):
 
     print('Working with lines...')
     #   Read the Line Shapefile
-    lines = gpd.read_file('lines2d.shp', driver = 'ESRI shapefile')
+    lines = gpd.read_file(pathshp + 'lines2d.shp', driver = 'ESRI shapefile')
     # Extract lines that are not masked by the outline
     linesOUT = pd.concat((lines[lines['_TYPE'] == 'centerline'],
                            lines[lines['_TYPE'] == 'water_flow'],
@@ -182,12 +183,13 @@ def cutLines(outlines):
                            ignore_index=True)
 
     # Save output
-    linesTOT.to_file("lines2dMasekd.gpkg", driver="GPKG", encoding = 'utf8')
+    #linesTOT.to_file("lines2dMasekd.gpkg", driver="GPKG", encoding = 'utf8')
+    linesTOT.to_file(pathshp[:-8] + "lines2dMasekd.gpkg", driver="GPKG")
 
     return
 
 #################################################################################################
-def AddAltPoint():
+def AddAltPoint(pathshp):
 
     print('Working with points...')
 
@@ -210,10 +212,11 @@ def AddAltPoint():
               'Mirolda': 'Réseau Lucien-Bouclier - Mirolda'  
               }
     # Open the text file with the coordinates of the caves
-    f = open('../../Lists/Therion-ShpEntrees/Caves.txt', 'r').readlines() 
+    #f = open('../../Lists/Therion-ShpEntrees/Caves.txt', 'r').readlines() 
+    f = open(pathshp + 'Caves.txt', 'r').readlines() 
 
     # Make a new shapefile instance
-    with fiona.open('points2d.shp', 'r') as inputshp:
+    with fiona.open(pathshp + 'points2d.shp', 'r') as inputshp:
         # Créer le nouveau schéma des shapefiles
         newschema = inputshp.schema
         newschema['properties']['_CAVE'] = 'str'
@@ -224,7 +227,8 @@ def AddAltPoint():
         newschema['properties']['_NORTHING'] = 'float'
         # Open the output shapefile
         #with fiona.open(inputfile[:-4] + 'Alt.shp', 'w', crs=inputshp.crs, driver='ESRI Shapefile', schema=newschema) as ouput:
-        with fiona.open('points2dAlt.gpkg', 'w', crs=inputshp.crs, driver='GPKG', schema=newschema, encoding = 'utf8') as ouput:
+        #with fiona.open('points2dAlt.gpkg', 'w', crs=inputshp.crs, driver='GPKG', schema=newschema, encoding = 'utf8') as ouput:
+        with fiona.open(pathshp[:-8] + 'points2dAlt.gpkg', 'w', crs=inputshp.crs, driver='GPKG', schema=newschema) as ouput:
             with alive_bar(len(inputshp), title = "\x1b[32;1m- Processing stations...\x1b[0m", length = 20) as bar:
                 # do a loop on the stations
                 for rec in inputshp:
@@ -324,15 +328,17 @@ def AddAltPoint():
 
 
 #################################################################################################
-def shp2gpkg():
+def shp2gpkg(pathshp):
 
-    files = ['outline2d', '../Folly-tot-3D/shots3d','../Folly-tot-3D/walls3d']
+    files = ['outline2d', 'shots3d','walls3d']
 
     print('shp2gpkg : ', files)
     with alive_bar(len(files), title = "\x1b[32;1m- Processing shp2pkg...\x1b[0m", length = 20) as bar:
         for fname in files :
-            if fname == '../Folly-tot-3D/walls3d':
-                pass
+            if fname == 'walls3d':
+                print('shp2gpkg does not support walls3d files...\n\t I am only copying the shp file into the right folder')
+                shutil.copy2(pathshp + fname + '.shp', pathshp[:-8] + fname + '.shp')
+                #pass
                 #input = gpd.read_file(fname + '.shp', layer = 'walls3d', driver = 'ESRI shapefile')
                 #input.to_file(fname + ".gpkg", driver="GPKG", encoding = 'utf8')
                 #with fiona.open(fname + '.shp', 'r') as inputshp:
@@ -341,8 +347,9 @@ def shp2gpkg():
                 #            # Write record
                 #            ouput.write (g)
             else:
-                input = gpd.read_file(fname + '.shp', driver = 'ESRI shapefile')
-                input.to_file(fname + ".gpkg", driver="GPKG", encoding = 'utf8')
+                input = gpd.read_file(pathshp + fname + '.shp', driver = 'ESRI shapefile')
+                #input.to_file(fname + ".gpkg", driver="GPKG", encoding = 'utf8')
+                input.to_file(pathshp[:-8] + fname + ".gpkg", driver="GPKG")
             #input.to_file(fname + ".gpkg", driver="GPKG")
             #update bar
             bar()
@@ -350,7 +357,7 @@ def shp2gpkg():
     return
 
 #################################################################################################
-def ThCutAreas():
+def ThCutAreas(pathshp):
 
     print(' ')
     print('****************************************************************')
@@ -362,24 +369,24 @@ def ThCutAreas():
 
     # Check if areas, lines and outline shapefiles exists...
     for fname in ['outline2d', 'lines2d', 'areas2d', 
-                  '../Folly-tot-3D/shots3d','../Folly-tot-3D/walls3d']:
-        if not os.path.isfile(fname + '.shp'):
-            raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(fname)))
+                  'shots3d','walls3d']:
+        if not os.path.isfile(pathshp + fname + '.shp'):
+            raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(pathshp + fname + '.shp')))
 
     #1- Read the outline shapefile
     #with fiona.open('outline2d.shp', 'r') as outlines:
-    outlines = gpd.read_file('outline2d.shp', driver = 'ESRI shapefile')
+    outlines = gpd.read_file(pathshp + 'outline2d.shp', driver = 'ESRI shapefile')
     #with alive_bar(3, title = "\x1b[32;1m- Processing lines...\x1b[0m", length = 20) as bar:
     # Change SHP to gpkg
-    #shp2gpkg()
+    shp2gpkg(pathshp)
     # Work with points
-    #AddAltPoint()
+    AddAltPoint(pathshp)
     #bar()
     # Work with lines
-    cutLines(outlines)
+    cutLines(pathshp,outlines)
     #bar()
     # Work with areas
-    cutareas(outlines)
+    cutareas(pathshp,outlines)
     #bar()
     
 
@@ -392,10 +399,11 @@ def ThCutAreas():
 ######################################################################################################
 if __name__ == u'__main__':	
 	###################################################
-	# initiate variables
-	inputfile = 'stations3d.shp'
-	###################################################
-	# Run the transformation
-	ThCutAreas()
-	# End...
+    # initiate variables
+    inputfile = 'stations3d.shp'
+    pathshp = '../../Outputs/SHP/therion/'
+    ###################################################
+    # Run the transformation
+    ThCutAreas(pathshp)
+    # End...
 
