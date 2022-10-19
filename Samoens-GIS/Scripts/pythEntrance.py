@@ -481,7 +481,7 @@ def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
 	# Create the output folder
 	#if not os.path.exists("Systems-info"):
 	#	os.mkdir("Systems-info")
-	shpout = pathshp[:-8] + 'BigCaves-info.pgkg'
+	shpout = pathshp[:-8] + 'BigCaves-info.gpkg'
 				
 	# Créer le schéma des shapefiles
 	Newschema = { 'geometry': 'Point', 
@@ -510,7 +510,7 @@ def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
 			ouput.write ({'geometry':mapping(point),'properties': prop})
 			
 	# Make a new shapefile instance
-	shpout = pathshp[:-8] + 'Systems-info.pgkg'
+	shpout = pathshp[:-8] + 'Systems-info.gpkg'
 	#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema, encoding = 'utf8') as ouput:
 	with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema) as ouput:
 		# Find the line corresponding to each big cave

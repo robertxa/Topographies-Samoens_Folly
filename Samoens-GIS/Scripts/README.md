@@ -43,6 +43,6 @@ Before to run this script, you must build the files outline2d.shp, lines2d.shp a
 THis script is under the open-source licence Creative Commons Attribution-ShareAlike-NonCommercial:
 	http://creativecommons.org/licenses/by-nc-sa/4.0/
 
-## Autor
+## Author
 
 Xavier Robert (xavier.robert@ird.fr)
