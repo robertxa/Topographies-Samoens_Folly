@@ -457,8 +457,10 @@ centerline -title "JBSolitaire 2019d : 2019-FD-31_2019-FD-31b	2019d-FD-10_2019d-
 	2019d-FD-7	2019d-FD-8	2	0	90	0.3	0.3	2.2	2.5	
 	2019d-FD-8	2019d-FD-9	4.04	356	0	0.4	0.3	2.6	3.5	
 	2019d-FD-9	2019d-FD-10	3.63	310	1	0.8	0.7	1.5	1	# Suite du méandre à équiper, pas de courant d'air, nombreux points à poser
+	flags duplicate
 	2019d-FD-10	2019d-FD-11	11	10	25	2	1	1	1	# Difficilement pénétrable ; etr.	
-																			
+	flags not duplicate
+																		
 # Dev = 43.42 m
 
 endcenterline
@@ -470,12 +472,12 @@ centerline -title "JBSolitaire 2021 : 2019-FD-70_2021-FD-0b	2021-FD-11_2021-FD-1
 		team "Frédéric Delègue"
 		team "Arne Bahr"
 		team "Jens Lassé"
-		team "Mhieddine Bourekoum"
+		team "Mahieddine Bourekoum"
 	explo-date 2021.08.14
 		explo-team "Frédéric Delègue"
 		explo-team "Arne Bahr"
 		explo-team "Jens Lassé"
-		explo-team "Mhieddine Bourekoum"
+		explo-team "Mahieddine Bourekoum"
 	units length meters
 	units compass degrees
   	units clino degrees
@@ -507,12 +509,12 @@ centerline -title "JBSolitaire 2021 : 2019-FD-70_2021-FD-0b	2021-FD-11_2021-FD-1
 		team "Frédéric Delègue"
 		team "Arne Bahr"
 		team "Jens Lassé"
-		team "Mhieddine Bourekoum"
+		team "Mahieddine Bourekoum"
 	explo-date 2021.08.14
 		explo-team "Frédéric Delègue"
 		explo-team "Arne Bahr"
 		explo-team "Jens Lassé"
-		explo-team "Mhieddine Bourekoum"
+		explo-team "Mahieddine Bourekoum"
 	units length meters
 	units compass degrees
   	units clino degrees
