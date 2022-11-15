@@ -572,6 +572,8 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 endmap
 
 map MP-Solitaire-tot -title "Réseau du Solitaire"
+	MP-rubis@Solitaire
+	break
 	MP-solitaire@Solitaire
 	break
 	MP-oeufs@Solitaire

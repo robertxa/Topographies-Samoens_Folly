@@ -14,8 +14,8 @@ survey Solitaire -title "Réseau du Solitaire"
 	input Data/oeufs2022.th
 		equate 2021-AM-10@solitaire2020a 26@oeufs2022
 	input Data/221112-jb-oeufs1.th
-		equate 1@rubys 2019d-FD-10@solitaire
-		equate 25@rubys 13@solitaire2020a
+		equate 1@rubis 2019d-FD-10@solitaire
+		equate 25@rubis 13@solitaire2020a
 	input Data/puitsparalleles.th
 		#equate 1@puitsparalleles 2019-FD-65@solitaire
 		equate 2@puitsparalleles 2019-FD-77@solitaire
@@ -80,12 +80,12 @@ survey Solitaire -title "Réseau du Solitaire"
 	input th2/oeufs2022-coupe.th2
 		join SC-Oeufs2022-1 SC-Sol2021-1
 	
-	# Rivière aux Rubys
-	input th2/rubys2022.th2
-		join SP-Rubys-1 SP-Sol2019d-1
+	# Rivière aux rubis
+	input th2/rubis2022.th2
+		join SP-Rubis-1 SP-Sol2019d-1
 	# Puits parallèles
 	input th2/puitsparalleles.th2
-		#join 
+		join SP-puitsparalleles-1 SP-Sol_2019b_1
 
 	# Add maps
 	input solitaire-maps.th

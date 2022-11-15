@@ -6,8 +6,8 @@ encoding  utf-8
 
 #### Plan
 
-map MP-Rubys -title "Rivière aux Rubys"
-	SP-Rubys-2
+map MP-rubis -title "Rivière aux rubis"
+	SP-Rubis-2
 endmap
 
 map MP-oeufs -title "Méandre des Oeufs"
@@ -15,7 +15,7 @@ map MP-oeufs -title "Méandre des Oeufs"
 	break
 	SP-Oeufs2022-1
 	break
-	SP-Rubys-1
+	SP-Rubis-1
 	break
 	SP-Sol2021-2
 	break
@@ -39,8 +39,6 @@ map MP-solitaire -title "Réseau du Solitaire"
 	break
 	SP-Solitaire-c-2018_3
 	break
-	SP-puitsparalleles-1 
-	break
 	SP-solitaire2019-2	#SPPPPPPP
 	break
 	SP-solitaire2019-3	#SPPPPPPP
@@ -48,6 +46,8 @@ map MP-solitaire -title "Réseau du Solitaire"
 	SP-solitaire2019_4	#SPPPPPPP
 	break
 	SP-solitaire2019-1	#SPPPPPPP
+	break
+	SP-puitsparalleles-1 
 	break
 	SP-Sol_2019b_1	#SPPPPPPP
 	break
@@ -67,13 +67,13 @@ map MP-solitaire -title "Réseau du Solitaire"
 endmap
 
 map MP-solitaire-tot -title "Réseau du Solitaire"
-	MP-Rubys
+	MP-rubis
 	break
-	preview below MP-Rubys
+	preview below MP-rubis
 	MP-oeufs
 	break
 	MP-solitaire
-	preview below MP-Rubys
+	preview below MP-rubis
 endmap
 
 

@@ -1,0 +1,15 @@
+encoding utf-8
+
+layout local
+  debug off
+  #map-header 0 0 off
+  # symbol-hide group cave-centreline
+endlayout
+
+source "221112-jb-oeufs1.th"
+
+#export model -fmt survex -o "221112-jb-oeufs1-th.3d"
+
+export map -proj plan -layout local -o "221112-jb-oeufs1-plan.pdf"
+
+export map -proj extended -layout local -o "221112-jb-oeufs1-ee.pdf"

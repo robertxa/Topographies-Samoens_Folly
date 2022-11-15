@@ -1,10 +1,10 @@
 encoding utf-8
 # created with SexyTopo 1.6.1
 
-survey rubis -title "Rivière aux rubis"
+survey Rubis -title "Rivière aux Rubis"
 
-#input "221112-jb-oeufs1 plan.th2"
-#input "221112-jb-oeufs1 ee.th2"
+input "221112-jb-oeufs1 plan.th2"
+input "221112-jb-oeufs1 ee.th2"
 
 	
 	centreline
@@ -12,19 +12,14 @@ survey rubis -title "Rivière aux rubis"
 		date 2022.11.12
 			# départ pt10 31082019
 			team "Arnauld Malard"
-			team "Théophile Cailhol"
+			team "Théo Caihol"
 		explo-date 2022.11.12
 			# départ pt10 31082019
 			explo-team "Arnauld Malard"
-			explo-team "Théophile Cailhol"
+			explo-team "Théo Caihol"
 		
-		units length meters
-		units compass degrees
-  		units clino degrees
-
 		data normal from to length compass clino
-		#extend start 1
-		extend right
+		
 		1	-	1.060	291.08	16.39	# Station 1 = station n°10 de Fred D. du 31/08/2019
 		1	-	3.432	119.20	-0.66	
 		1	-	1.392	237.88	85.53	
@@ -109,16 +104,13 @@ survey rubis -title "Rivière aux rubis"
 		20	-	0.652	169.81	3.96	
 		20	-	0.396	232.90	85.72	
 		20	-	0.233	271.55	-86.39	
-		#extend left 20
-		extend right 20
 		20	21	3.554	105.43	-11.22		#  {from: 3.541 105.30 -11.17, 3.561 105.54 -11.32, 3.561 105.46 -11.16}
 		21	-	0.650	351.16	-8.94	
 		21	-	0.407	5.48	76.67	
 		21	-	3.172	48.71	-83.82	
 		#21	22	4.434	64.80	-54.53		#  {from: 4.430 64.75 -54.52, 4.436 64.78 -54.54, 4.437 64.88 -54.54}
 		21	9	4.434	64.80	-54.53		#  {from: 4.430 64.75 -54.52, 4.436 64.78 -54.54, 4.437 64.88 -54.54}
-			# bouclage avec la station 9
-
+		
 		13	23	4.650	322.06	-81.90		#  {from: 4.654 323.14 -81.72, 4.651 321.55 -82.02, 4.644 321.50 -81.97}
 		23	-	1.157	42.40	12.91	
 		23	-	0.552	130.08	6.49	
@@ -131,9 +123,8 @@ survey rubis -title "Rivière aux rubis"
 		24	-	1.251	167.98	10.06	
 		24	-	4.203	310.59	77.98	
 		24	-	1.835	340.01	-72.03	
-		24	25b	1.211	165.83	14.54		#  {from: 1.211 165.71 14.58, 1.209 165.91 14.51, 1.214 165.88 14.53}
+		24	25	1.211	165.83	14.54		#  {from: 1.211 165.71 14.58, 1.209 165.91 14.51, 1.214 165.88 14.53}
 			# ce point 25 boucle avec un des points du méandre des oeufs, en paroi Est, à 2 m du sol.
-		25b	25	1.5	0	-90	# Visée fictive pour raccorder au mieux le bouclage
 
 		# Début de la rivière aux Rubis
 		4	26	8.186	39.77	48.00		#  {from: 8.177 39.96 47.97, 8.187 39.68 47.98, 8.193 39.66 48.05}
@@ -141,8 +132,6 @@ survey rubis -title "Rivière aux rubis"
 		26	-	0.974	99.54	1.27	
 		26	-	0.661	12.75	87.21	
 		26	-	1.696	242.29	-86.75	
-		#extend left 26
-		extend right 26
 		26	27	6.450	6.51	31.39		#  {from: 6.451 6.41 31.42, 6.440 6.48 31.36, 6.458 6.64 31.39}
 		27	-	1.413	255.31	6.86	
 		27	-	0.296	92.19	12.83	
@@ -213,8 +202,6 @@ survey rubis -title "Rivière aux rubis"
 		42	-	2.900	223.00	14.50	
 		42	-	2.000	226.00	89.70	
 		42	-	1.770	125.20	-90.00	
-		#extend right 42
-		extend left 42
 		42	43	4.690	180.60	39.20	# Base E10, ça continue au dessus !
 		43	-	4.620	0.00	0.00	
 		43	-	3.680	87.80	8.60	
@@ -223,10 +210,10 @@ survey rubis -title "Rivière aux rubis"
 		43	-	9.780	51.50	89.20	
 	
 	
-		
-		
-		
-		
+		extend start 1
+		extend left 20
+		extend left 26
+		extend right 42
 	
 	# Dev : 177 m
 
