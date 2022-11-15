@@ -80,8 +80,12 @@ survey Solitaire -title "Réseau du Solitaire"
 	input th2/oeufs2022-coupe.th2
 		join SC-Oeufs2022-1 SC-Sol2021-1
 	
+	# Rivière aux Rubys
 	input th2/rubys2022.th2
-		#join SP-Rubys-1 ???
+		join SP-Rubys-1 SP-Sol2019d-1
+	# Puits parallèles
+	input th2/puitsparalleles.th2
+		#join 
 
 	# Add maps
 	input solitaire-maps.th

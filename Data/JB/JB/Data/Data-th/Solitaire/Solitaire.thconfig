@@ -141,6 +141,8 @@ endlayout
 	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2022.xvi
 	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2022.xvi
 
+select MP-solitaire-tot
+
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2022b.pdf
 	export map -layout layout_plan -o Outputs/2D/solitaire-plan2022b.pdf

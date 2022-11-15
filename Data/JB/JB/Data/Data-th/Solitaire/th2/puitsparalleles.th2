@@ -1,0 +1,112 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 4694.9316 4143.7502
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {3858.26 1 1.0} {2598.4300000000003 xx0init@solitaire.Solitaire} solitaire-plan2022.xvi 0 {}
+
+
+
+scrap SP-puitsparalleles-1 -projection plan -author 2022 "Xavier Robert" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2647.6864 -128.0 0.0 0.0 70.50243456 0.0 m]
+
+line wall
+  2230.75 1689.0
+  2230.75 1689.0 2230.0 1682.25 2234.5 1683.0
+  2239.0 1683.75 2241.75 1690.5 2245.75 1686.75
+  2249.75 1683.0 2256.25 1683.5 2262.5 1685.0
+  2268.75 1686.5 2266.5 1686.25 2270.5 1696.25
+  2274.5 1706.25 2272.75 1702.0 2276.5 1714.75
+  2280.25 1727.5 2284.0 1742.0 2288.0 1743.0
+  2292.0 1744.0 2298.75 1754.5 2298.75 1754.5
+  smooth off
+endline
+
+line rock-border -close on
+  2264.25 1695.25
+  2260.0 1693.75
+  2261.75 1688.25
+  2266.5 1689.75
+  2264.25 1695.25
+endline
+
+point 2301.75 1731.5 label -text "R3"
+
+point 2336.75 1653.75 label -text "<center>les Puits<br>Parallèles"
+
+point 2211.75 1674.5 label -text "R1.5"
+
+point 2238.0 1723.25 height -value [-7 m]
+
+point 2238.75 1663.25 height -value [-6 m]
+
+point 2293.5 1696.5 height -value [-7 m]
+
+line chimney -close on
+  2273.25 1723.25
+  2273.25 1723.25 2264.0 1726.75 2263.5 1722.5
+  2263.0 1718.25 2264.5 1704.25 2269.25 1709.0
+  2274.0 1713.75 2274.0 1714.75 2274.0 1718.0
+  2274.0 1721.25 2273.25 1723.25 2273.25 1723.25
+  smooth off
+endline
+
+line pit
+  2288.75 1738.5
+  2288.75 1738.5 2279.0 1755.0 2263.5 1755.0
+endline
+
+line pit
+  2244.5 1684.25
+  2244.5 1684.25 2253.25 1704.5 2250.5 1711.25
+endline
+
+line pit
+  2276.75 1703.25
+  2276.75 1703.25 2260.75 1708.25 2256.75 1715.75
+endline
+
+line pit
+  2251.25 1681.0
+  2251.25 1681.0 2260.75 1704.25 2256.75 1708.0
+endline
+
+line pit
+  2228.75 1686.0
+  2228.75 1686.0 2232.25 1689.75 2232.25 1696.25
+endline
+
+line wall -subtype pit
+  2231.25 1694.0
+  2231.25 1694.0 2232.25 1699.75 2228.0 1697.75
+  2223.75 1695.75 2222.0 1692.5 2224.25 1690.75
+  2226.5 1689.0 2229.75 1688.75 2230.75 1689.0
+endline
+
+line wall
+  2281.75 1766.0
+  2281.75 1766.0 2273.5 1763.25 2268.25 1753.5
+  2263.0 1743.75 2262.25 1719.75 2260.0 1713.75
+  2257.75 1707.75 2258.5 1703.5 2254.0 1705.25
+  2249.5 1707.0 2251.75 1710.75 2245.0 1707.75
+  2238.25 1704.75 2238.0 1699.0 2235.75 1696.0
+  2233.5 1693.0 2231.25 1694.0 2231.25 1694.0
+  smooth off
+endline
+
+point 2235.42 1687.1500000000005 station -name 1@puitsparalleles
+
+point 2246.08 1693.8200000000004 station -name 2@puitsparalleles
+
+point 2247.0099999999998 1693.0500000000004 station -name 3@puitsparalleles
+
+point 2255.89 1697.6400000000006 station -name 4@puitsparalleles
+
+point 2256.64 1697.0200000000004 station -name 5@puitsparalleles
+
+point 2258.5 1687.5500000000004 station -name 6@puitsparalleles
+
+point 2266.92 1711.7000000000005 station -name 7@puitsparalleles
+
+point 2281.8 1747.4500000000005 station -name 9@puitsparalleles
+
+endscrap
+
+
