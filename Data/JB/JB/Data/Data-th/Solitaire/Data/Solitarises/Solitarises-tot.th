@@ -1,0 +1,16 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Solitarises -title "Réseau des Solitarisés"
+	# Données topos
+	input Data/solitaire2022.th
+
+	input Data/Solitarises.th2
+
+	# Add maps
+	input Solitarises-maps.th
+	
+endsurvey

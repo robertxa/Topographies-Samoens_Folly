@@ -566,18 +566,19 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MP-savoyards
 	break
-	MP-Solitaire-tot
+	#MP-Solitaire-tot
+	MP-solitaire-tot@Solitaire
 	break
 	MP-quitombe
 endmap
 
-map MP-Solitaire-tot -title "Réseau du Solitaire"
-	MP-rubis@Solitaire
-	break
-	MP-solitaire@Solitaire
-	break
-	MP-oeufs@Solitaire
-endmap
+#map MP-Solitaire-tot -title "Réseau du Solitaire"
+#	MP-rubis@Solitaire
+#	break
+#	MP-solitaire@Solitaire
+#	break
+#	MP-oeufs@Solitaire
+#endmap
 
 map MP-Jean-Dupond -title "Le début de la rivière aval"
 	MP-puitsAlain

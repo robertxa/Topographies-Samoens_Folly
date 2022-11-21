@@ -138,8 +138,8 @@ endscrap
 scrap SP-Solitaire-2021-2 -projection plan -author 2021 "Xavier Robert" -copyright 2021 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3277.608 -128.0 0.0 0.0 86.5024432 0.0 m]
 
 line wall
-  570.0 390.5
-  570.0 390.5 616.5 322.5 621.5 322.0
+  578.0 378.5
+  578.0 378.5 616.5 322.5 621.5 322.0
   626.5 321.5 630.5 319.0 634.5 329.0
   638.5 339.0 650.5 370.5 663.5 363.0
   676.5 355.5 674.0 352.0 685.0 347.0
@@ -147,18 +147,7 @@ line wall
   smooth off
 endline
 
-point 578.0 393.5 altitude -align top
-
-point 544.5 442.0 air-draught -orientation 154.4 -subtype summer
-
-line pit
-  570.0 390.5
-  570.0 390.5 578.0 383.5 578.5 386.5
-  579.0 389.5 578.0 393.5 578.0 393.5
-  smooth off
-endline
-
-point 567.5 407.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air" -text "Arrêt sur P10/15 à équiper"
+point 585.5 381.5 altitude -align top
 
 line wall
   712.0 351.0
@@ -167,7 +156,7 @@ line wall
   675.0 369.0 674.5 379.5 664.5 375.0
   654.5 370.5 637.0 367.5 632.0 359.0
   627.0 350.5 625.5 339.0 617.0 347.0
-  608.5 355.0 578.0 393.5 578.0 393.5
+  608.5 355.0 585.5 381.5 585.5 381.5
   smooth off
 endline
 

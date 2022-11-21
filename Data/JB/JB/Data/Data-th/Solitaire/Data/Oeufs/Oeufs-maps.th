@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#### Plan
+
+map MP-oeufs -title "Méandre des Oeufs"
+	SP-Oeufs2022-2
+	break
+	SP-Oeufs2022-1
+	break
+	SP-Sol2021-2
+	break
+	SP-Sol2021-1
+	break
+	SP-Solitaire2020-1
+	break
+	SP-Solitaire2020-2
+endmap
+
+########## Coupe
+
+map MC-oeufs -title "Méandre des Oeufs"
+	SC-Oeufs2022-1
+	break
+	SC-Sol2021-1
+	break
+	SC-Solitaire2020-1
+endmap

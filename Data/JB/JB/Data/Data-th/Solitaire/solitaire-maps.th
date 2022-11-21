@@ -6,107 +6,111 @@ encoding  utf-8
 
 #### Plan
 
-map MP-rubis -title "Rivière aux rubis"
-	SP-Rubis-2
-endmap
+#map MP-oeufs -title "Méandre des Oeufs"
+	#SP-Oeufs2022-2
+	#break
+	#SP-Oeufs2022-1
+	#break
+	#SP-Rubis-1@Rubis
+	#break
+	#SP-Sol2021-2
+	#break
+	#SP-Sol2021-1
+	#break
+	#SP-Solitaire2020-1
+	#break
+	#SP-Solitaire2020-2
+#endmap
 
-map MP-oeufs -title "Méandre des Oeufs"
-	SP-Oeufs2022-2
-	break
-	SP-Oeufs2022-1
-	break
-	SP-Rubis-1
-	break
-	SP-Sol2021-2
-	break
-	SP-Sol2021-1
-	break
-	SP-Solitaire2020-1
-	break
-	SP-Solitaire2020-2
-endmap
+# map MP-solitaire1 -title "Réseau du Solitaire"
+# 	SP-Pixa-1@Pixa
+# 	break
+# 	SP-solitaire_plan
+# 	break
+# 	SP-sol2017-1
+# 	break
+# 	SP-sol2017-2
+# 	break
+# 	SP-Solitaire-c-2018_2 
+# 	break
+# 	SP-Solitaire-c-2018_3
+# 	break
+# 	SP-solitaire2019-2	#SPPPPPPP
+# 	break
+# 	SP-solitaire2019-3	#SPPPPPPP
+# 	break
+# 	SP-solitaire2019_4	#SPPPPPPP
+# 	break
+# 	SP-solitaire2019-1	#SPPPPPPP
+# endmap
 
-map MP-solitaire -title "Réseau du Solitaire"
-	SP-Pixa-1
-	break
-	SP-solitaire_plan
-	break
-	SP-sol2017-1
-	break
-	SP-sol2017-2
-	break
-	SP-Solitaire-c-2018_2 
-	break
-	SP-Solitaire-c-2018_3
-	break
-	SP-solitaire2019-2	#SPPPPPPP
-	break
-	SP-solitaire2019-3	#SPPPPPPP
-	break
-	SP-solitaire2019_4	#SPPPPPPP
-	break
-	SP-solitaire2019-1	#SPPPPPPP
-	break
-	SP-puitsparalleles-1 
-	break
-	SP-Sol_2019b_1	#SPPPPPPP
-	break
-	SP-Solitaire-2019c1	#SPPPPPPP
-	break
-	SP-Solitaire-2019c2	#SPPPPPPP
-	break
-	SP-Solitaire-2021-2
-	break
-	SP-Solitaire-2021-1
-	break
-	SP-Solitaire-2019c3	#SPPPPPPP
-	break
-	SP-Solitaire-2019c4	#SPPPPPPP
-	break
-	SP-Sol2019d-1	#SPPPPPPP
-endmap
+# map MP-solitaire2 -title "Réseau du Solitaire"
+# 	#break
+# 	SP-Sol_2019b_1	#SPPPPPPP
+# 	break
+# 	SP-Solitaire-2019c1	#SPPPPPPP
+# 	break
+# 	SP-Solitaire-2019c2	#SPPPPPPP
+# 	break
+# 	SP-Solitaire-2021-2
+# 	break
+# 	SP-Solitaire-2021-1
+# 	break
+# 	SP-Solitaire-2019c3	#SPPPPPPP
+# 	break
+# 	SP-Solitaire-2019c4	#SPPPPPPP
+# 	break
+# 	SP-Sol2019d-1	#SPPPPPPP
+# endmap
 
-map MP-solitaire-tot -title "Réseau du Solitaire"
-	MP-rubis
+ map MP-solitaire-tot -title "Réseau du Solitaire"
+ 	MP-Pixa@Pixa
 	break
-	preview below MP-rubis
-	MP-oeufs
+	MP-rubis@Rubis
+ 	break
+ 	preview below MP-rubis@Rubis
+ 	MP-oeufs@Oeufs
+ 	break
+ 	MP-solitaire1@Solitaire
+ 	preview below MP-rubis@Rubis
+ 	break
+ 	MP-PuitsParalleles@PuitsParalleles
+ 	break
+	#preview above MP-solitaire2@Solitaire
+ 	MP-Solitarises@Solitarises
 	break
-	MP-solitaire
-	preview below MP-rubis
-endmap
+	#preview below MP-Solitarises@Solitarises
+ 	MP-solitaire2@Solitaire
+ 	
+ endmap
 
 
 ########## Coupe
 
 map MC-oeufs -title "Méandre des Oeufs"
-	SC-Oeufs2022-1
-	break
-	SC-Sol2021-1
-	break
-	SC-Solitaire2020-1
+	MC-oeufs@Oeufs
 endmap
 
-map MC-solitaire -title "Réseau du Solitaire"
-	SC-Pixa-1
-	break
-	SC-sol-C2
-	break
-	SC-sol-C1	# Déformation scrap
-	break
-	SC-Solitaire-c_2018-1
-	break
-	SC-Solitaire-2021-1
-	break
-	SC-solitaire2019-1
-	break
-	SC-Sol-2019b-1
-	break
-	SC-solitaire2019-2	# Déformation scrap ???
-	break
-	SC-Solitaire-2019c1
-	break
-	SC-Sol2019d-1
-	break
-	SC-Sol2019d-2
-endmap   
+# map MC-solitaire -title "Réseau du Solitaire"
+# 	SC-Pixa-1@Pixa
+# 	break
+# 	SC-sol-C2
+# 	break
+# 	SC-sol-C1	# Déformation scrap
+# 	break
+# 	SC-Solitaire-c_2018-1
+# 	break
+# 	SC-Solitaire-2021-1
+# 	break
+# 	SC-solitaire2019-1
+# 	break
+# 	SC-Sol-2019b-1
+# 	break
+# 	SC-solitaire2019-2	# Déformation scrap ???
+# 	break
+# 	SC-Solitaire-2019c1
+# 	break
+# 	SC-Sol2019d-1
+# 	break
+# 	SC-Sol2019d-2
+# endmap   

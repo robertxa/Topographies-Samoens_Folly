@@ -1,0 +1,30 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#### Plan
+
+
+map MP-Solitarises -title "Réseau des Solitarises"
+	SP-Solitarises-4
+	break
+	SP-Solitarises-5
+	break
+	#SP-Solitarises-3	# Pas à représenter, c'est fait en fait dans le SP-Solitarises-2
+	#break
+	SP-Solitarises-1
+	break
+	SP-Solitarises-2
+	
+endmap
+
+
+########## Coupe
+
+#map MC-Solitarises -title "Réseau des Solitarises"
+#	SC-
+	#break
+	
+#endmap   

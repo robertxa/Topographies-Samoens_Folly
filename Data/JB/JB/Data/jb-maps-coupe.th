@@ -365,11 +365,13 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	MC-Ete-Indien@Ete-Indien
 endmap
 
-map MC-Solitaire-tot -title "Réseau du Solitaire"
-	MC-solitaire@Solitaire
-	break
-	MC-oeufs@Solitaire
-endmap
+############## A REVOIR
+#map MC-Solitaire-tot -title "Réseau du Solitaire"
+#	MC-solitaire@Solitaire
+#	break
+#	MC-oeufs@Solitaire
+#endmap
+############## A REVOIR
 
 map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
 	MC-rivieredebut
@@ -377,9 +379,13 @@ map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
 	MC-puitsAlain
 	break
 	#MC-Solitaire-tot 	[-150 150 m] below
-	MC-solitaire@Solitaire 	[-200 200 m] below
-	break
-	MC-oeufs@Solitaire
+	
+	############## A REVOIR
+	#MC-solitaire@Solitaire 	[-200 200 m] below
+	#break
+	#MC-oeufs@Solitaire
+	############## A REVOIR
+
 endmap
 
 map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"

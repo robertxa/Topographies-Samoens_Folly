@@ -5,87 +5,100 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey Solitaire -title "Réseau du Solitaire"
+	# Galerie PIXA
+	input Data/Pixa/Pixa-tot.th #savoyards.th
+		equate 1@savoyards.Pixa xxInterrogation4@solitaire.Solitaire
+
 	# Données topos
-	input Data/solitaire.th
-	input Data/jb_solitaire2020a.th
-		equate 1@solitaire2020a 2019d-FD-10@solitaire
-	input Data/savoyards.th
-		equate 1@savoyards xxInterrogation4@solitaire
-	input Data/oeufs2022.th
-		equate 2021-AM-10@solitaire2020a 26@oeufs2022
-	input Data/221112-jb-oeufs1.th
-		equate 1@rubis 2019d-FD-10@solitaire
-		equate 25@rubis 13@solitaire2020a
-	input Data/puitsparalleles.th
+	input Data/Solitaire/Solitaire-tot.th
+
+	# Puits Paralleles
+	input Data/PuitsParalleles/PuitsParalleles-tot.th #puitsparalleles.th
 		#equate 1@puitsparalleles 2019-FD-65@solitaire
-		equate 2@puitsparalleles 2019-FD-77@solitaire
-		equate 10@puitsparalleles 2019-FD-562@solitaire
-	input Data/solitaire2022.th
-		equate 57@solitaire2022 2021-FD-25@solitaire
+		equate 2@puitsparalleles.PuitsParalleles 2019-FD-77@solitaire.Solitaire
+		equate 10@puitsparalleles.PuitsParalleles 2019-FD-562@solitaire.Solitaire
+		# Join puits paralleles avec Solitaire, côté amont
+		join SP-puitsparalleles-1@PuitsParalleles SP-Sol_2019b_1@Solitaire
+	
+	# Galerie des Solitarisés
+	input Data/Solitarises/Solitarises-tot.th #solitaire2022.th
+		equate 57@solitaire2022.Solitarises 2021-FD-25@solitaire.Solitaire
+		join SP-Solitarises-4@Solitarises SP-Solitaire-2021-2@Solitaire
+	
+	# Méandre des Oeufs
+	input Data/Oeufs/Oeufs-tot.th	#input Data/jb_solitaire2020a.th
+		equate 1@solitaire2020a.Oeufs 2019d-FD-10@solitaire.Solitaire
+	#input Data/oeufs2022.th
+	#	equate 2021-AM-10@solitaire2020a 26@oeufs2022
 
+	# Rivière aux Rubis
+	input Data/Rubis/Rubis-tot.th #221112-jb-oeufs1.th
+		equate 1@rubis.Rubis 2019d-FD-10@solitaire.Solitaire
+		equate 25@rubis.Rubis 13@solitaire2020a.Oeufs
+	
 	# 2017
-	input th2/solitaire-plan.th2
-	input th2/solitaire-plan2017.th2
-	input th2/solitaire2018.th2
-		join SP-solitaire_plan SP-sol2017-1 -count 2
+	#input th2/solitaire-plan.th2
+	#input th2/solitaire-plan2017.th2
+	#input th2/solitaire2018.th2
+	#	join SP-solitaire_plan.Solitaire SP-sol2017-1.Solitaire -count 2
 
-	input th2/solitaire-coupe2017.th2
+	#input th2/solitaire-coupe2017.th2
 
 	# 2018
-		join SP-Solitaire-c-2018_2 SP-solitaire_plan
+	#	join SP-Solitaire-c-2018_2 SP-solitaire_plan
 		##join Solitaire-c-2018-1 sol2017-2
 		##join Solitaire2018-SP1 sol2017-1	# Jonction scrap avec le dessin de Clément, dessin supprimé
 
-	input th2/solitaire-coupe2018.th2
+	#input th2/solitaire-coupe2018.th2
 
 	# 2019
-	input th2/solitaire2019_1.th2
-		join SP-solitaire2019-1 SP-Solitaire-c-2018_3
-	input th2/solitaire2019_2.th2
-		join SP-solitaire2019-2 SP-sol2017-1
-	input th2/solitaire2019_3.th2
-		join SP-Solitaire-2019c1 SP-Sol_2019b_1
-	input th2/solitaire2019_4.th2
-		join SP-Sol2019d-1 SP-solitaire2019-1
+	#input th2/solitaire2019_1.th2
+	#	join SP-solitaire2019-1 SP-Solitaire-c-2018_3
+	#input th2/solitaire2019_2.th2
+	#	join SP-solitaire2019-2 SP-sol2017-1
+	#input th2/solitaire2019_3.th2
+	#	join SP-Solitaire-2019c1 SP-Sol_2019b_1
+	#input th2/solitaire2019_4.th2
+	#	join SP-Sol2019d-1 SP-solitaire2019-1
 
-	input th2/solitaire2019-coupe1.th2
-		#join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
-		#join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
-	input th2/solitaire2019-coupe2.th2
-		join SC-sol-C1 	SC-solitaire2019-2
-	input th2/solitaire2019-coupe3.th2
-		join SC-Solitaire-2019c1 SC-Sol-2019b-1
-	input th2/solitaire2019-coupe4.th2
+	#input th2/solitaire2019-coupe1.th2
+	#	#join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
+	#	#join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
+	#input th2/solitaire2019-coupe2.th2
+	#	join SC-sol-C1 	SC-solitaire2019-2
+	#nput th2/solitaire2019-coupe3.th2
+	#	join SC-Solitaire-2019c1 SC-Sol-2019b-1
+	#input th2/solitaire2019-coupe4.th2
 
 	# 2020
-	input th2/solitaire-plan2020.th2
-		join SP-Solitaire2020-1 SP-Sol2019d-1
+	#input th2/solitaire-plan2020.th2
+		join SP-Solitaire2020-1@Oeufs SP-Sol2019d-1@Solitaire
 
-	input th2/solitaire-coupe2020.th2
-		#join SC-Solitaire2020-1 SC-Sol2019d-1
+	#input th2/solitaire-coupe2020.th2
+	#	#join SC-Solitaire2020-1 SC-Sol2019d-1
 
 	# 2021
-	input th2/solitaire-plan2021.th2
+	#input th2/solitaire-plan2021.th2
 		#join SP-Solitaire-2021-1 SP-Sol2019d-1
-	input th2/solitaire-coupe2021.th2
-		join SC-Solitaire-2021-1 SC-Solitaire-2019c1
+	#input th2/solitaire-coupe2021.th2
+	#	join SC-Solitaire-2021-1 SC-Solitaire-2019c1
 	
 	# 2022
-	input th2/savoie-solitaire.th2
-		join SP-Pixa-1 SP-solitaire_plan
-	input th2/savoie-solitaire-coupe.th2
-		join SC-Pixa-1 SC-sol-C2
-	input th2/oeufs2022.th2
-		join SP-Oeufs2022-1 SP-Sol2021-2
-	input th2/oeufs2022-coupe.th2
-		join SC-Oeufs2022-1 SC-Sol2021-1
+	#input th2/savoie-solitaire.th2
+		join SP-Pixa-1@Pixa SP-solitaire_plan@Solitaire
+	#input th2/savoie-solitaire-coupe.th2
+		join SC-Pixa-1@Pixa SC-sol-C2@Solitaire
+	#input th2/oeufs2022.th2
+	#	join SP-Oeufs2022-1@Oeufs SP-Sol2021-2@Oeufs
+	#input th2/oeufs2022-coupe.th2
+	#	join SC-Oeufs2022-1@Oeufs SC-Sol2021-1@Oeufs
 	
 	# Rivière aux rubis
-	input th2/rubis2022.th2
-		join SP-Rubis-1 SP-Sol2019d-1
+	#input th2/rubis2022.th2
+		join SP-Rubis-1@Rubis SP-Sol2019d-1@Solitaire
 	# Puits parallèles
-	input th2/puitsparalleles.th2
-		join SP-puitsparalleles-1 SP-Sol_2019b_1
+	#input th2/puitsparalleles.th2
+		
 
 	# Add maps
 	input solitaire-maps.th

@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Rubis -title "Rivière aux Rubis"
+	# Données topos
+	input Data/221112-jb-oeufs1.th
+	
+	# Rivière aux rubis
+	input Data/rubis2022.th2
+	#	join SP-puitsparalleles-1 SP-Sol_2019b_1
+
+	# Add maps
+	input Rubis-maps.th
+	
+endsurvey

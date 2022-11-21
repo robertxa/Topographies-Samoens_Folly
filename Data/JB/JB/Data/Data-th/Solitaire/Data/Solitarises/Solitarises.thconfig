@@ -5,11 +5,11 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 # Import DATA  
-#source solitaire.th
-source solitaire-tot.th
+#source Solitarises.th
+source Solitarises-tot.th
 
 # Add config file
-input ../../../../../../config.thc 
+input ../../../../../../../../config.thc 
   
  
   
@@ -33,7 +33,7 @@ layout layout_plan
 	
 	#debug scrap-names
 	  
-	doc-title "Réseau du Solitaire-plan"
+	doc-title "Réseau du Solitarises-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -43,14 +43,14 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau du solitaire"
+	map-comment "Réseau des Solitarises"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
 	#legend-width 22 cm
 	legend-width 18 cm
-	map-header 5 90 nw
+	map-header 40 37 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -79,7 +79,7 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 200 130 n solitaire-coupe.pdf
+	#map-image 200 130 n Solitarises-coupe.pdf
   
 endlayout
   
@@ -92,7 +92,7 @@ layout layout_coupe
 	
 	#debug scrap-names
 
-	doc-title "Réseau du solitaire-coupe"
+	doc-title "Réseau du Solitarises-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 2000
@@ -103,7 +103,7 @@ layout layout_coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau du solitaire"
+	map-comment "Réseau des Solitarises"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -138,20 +138,20 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o th2/solitaire-plan2022.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2022.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2022.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2022.xvi
 
-select MP-solitaire-tot@Solitaire
+select MP-Solitarises-tot
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2022b.pdf
-	export map -layout layout_plan -o Outputs/2D/solitaire-plan2022b.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2022b.pdf
+	export map -layout layout_plan -o Outputs/Solitarises-plan2022b.pdf
  
 # Export des modeles 3D
-	export model -o Outputs/3D/solitaire.lox
+	export model -o Outputs/Solitarises.lox
   
 # Export des fichiers ESRI
-	#export map -proj plan -fmt esri -o Outputs/3D/solitaire -layout layout_plan
+	#export map -proj plan -fmt esri -o Outputs/3D/Solitarises -layout layout_plan
   
 # Export des fichiers kml
-	#export map -proj plan -fmt kml -o Outputs/3D/solitaire.kml -layout layout_plan
+	#export map -proj plan -fmt kml -o Outputs/3D/Solitarises.kml -layout layout_plan

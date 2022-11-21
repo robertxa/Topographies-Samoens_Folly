@@ -74,12 +74,12 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Data-th/Solitaire/solitaire-tot.th
 	#input Data-th/Solitaire/Data/solitaire.th
 		# Jonction Solitaire et Sommet Puits Alain (2016)
-		equate xx36@solitaire.Solitaire Jd.17@jb-amonts2
+		equate xx36@solitaire.Solitaire.Solitaire Jd.17@jb-amonts2
 		##equate xx36@solitaire.Solitaire Jd.18@jb-amonts2
     	##equate xx36@solitaire Jd.19@jb-amonts2
 		##equate xx36@solitaire.Solitaire Jd.20@jb-amonts2
 		# Jonction Solitaire et Sommet Savoyards (2022)
-		equate 8@savoyards.Solitaire Ja.24@jb-amonts2
+		equate 8@savoyards.Pixa.Solitaire Ja.24@jb-amonts2
 		#equate 8@savoyards.Solitaire Ja.23@jb-amonts2
 		# Jonction Solitaire et Base du puits Alain (2019)
     	##equate 2019-FD-9@solitaire Jd.24@jb-amonts2
@@ -301,11 +301,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 ## Le réseau du Solitaire
 	# Jointure dessins Puits des Savoyards, galerie Pixa
-	join SP-Pixa-1@Solitaire SP-V4-2
-	join SC-Pixa-1@Solitaire SC-V4c1
+	join SP-Pixa-1@Pixa.Solitaire SP-V4-2
+	join SC-Pixa-1@Pixa.Solitaire SC-V4c1
 
 	# Jointure Puits Alain et Solitaire
-	join SP-pAlain SP-solitaire_plan@Solitaire
+	join SP-pAlain SP-solitaire_plan@Solitaire.Solitaire
 #	input Drawing-th2/Plan/solitaire-plan.th2
 #	input Drawing-th2/Plan/solitaire-plan2017.th2
 #		join SP-solitaire_plan SP-sol2017-1 -count 2
