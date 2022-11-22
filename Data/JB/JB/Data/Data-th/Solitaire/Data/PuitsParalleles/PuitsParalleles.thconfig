@@ -43,14 +43,13 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau du PuitsParalleles"
+	map-comment "Gouffre Jean-Bernard"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	#legend-width 22 cm
-	legend-width 18 cm
-	map-header 40 37 nw
+	legend-width 14 cm
+	map-header 100 100 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -103,13 +102,13 @@ layout layout_coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau du PuitsParalleles"
+	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 26  cm
-	map-header 38 37 nw
+	legend-width 14  cm
+	map-header 100 100 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -141,7 +140,8 @@ endlayout
 	export map -fmt xvi -layout xviexport_plan -o Data/PuitsParalleles-plan2022.xvi
 	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/PuitsParalleles-coupe2022.xvi
 
-select MP-PuitsParalleles-tot
+select MP-PuitsParalleles@PuitsParalleles
+select MC-PuitsParalleles@PuitsParalleles
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/PuitsParalleles-coupe2022b.pdf

@@ -8,8 +8,10 @@ survey Solitaire -title "Réseau du Solitaire"
 	# Galerie PIXA
 	input Data/Pixa/Pixa-tot.th #savoyards.th
 		equate 1@savoyards.Pixa xxInterrogation4@solitaire.Solitaire
+		join SP-Pixa-1@Pixa SP-solitaire_plan@Solitaire
+		join SC-Pixa-1@Pixa SC-sol-C2@Solitaire
 
-	# Données topos
+	# Données topos Solitaire
 	input Data/Solitaire/Solitaire-tot.th
 
 	# Puits Paralleles
@@ -19,11 +21,13 @@ survey Solitaire -title "Réseau du Solitaire"
 		equate 10@puitsparalleles.PuitsParalleles 2019-FD-562@solitaire.Solitaire
 		# Join puits paralleles avec Solitaire, côté amont
 		join SP-puitsparalleles-1@PuitsParalleles SP-Sol_2019b_1@Solitaire
+		join SC-PuitsParalleles-1@PuitsParalleles SC-Sol-2019b-1@Solitaire
 	
 	# Galerie des Solitarisés
 	input Data/Solitarises/Solitarises-tot.th #solitaire2022.th
 		equate 57@solitaire2022.Solitarises 2021-FD-25@solitaire.Solitaire
 		join SP-Solitarises-4@Solitarises SP-Solitaire-2021-2@Solitaire
+		join SC-Solitarises-1@Solitarises SC-Solitaire-2021-1@Solitaire
 	
 	# Méandre des Oeufs
 	input Data/Oeufs/Oeufs-tot.th	#input Data/jb_solitaire2020a.th
@@ -35,6 +39,7 @@ survey Solitaire -title "Réseau du Solitaire"
 	input Data/Rubis/Rubis-tot.th #221112-jb-oeufs1.th
 		equate 1@rubis.Rubis 2019d-FD-10@solitaire.Solitaire
 		equate 25@rubis.Rubis 13@solitaire2020a.Oeufs
+		join SP-Rubis-1@Rubis SP-Sol2019d-1@Solitaire
 	
 	# 2017
 	#input th2/solitaire-plan.th2
@@ -84,10 +89,7 @@ survey Solitaire -title "Réseau du Solitaire"
 	#	join SC-Solitaire-2021-1 SC-Solitaire-2019c1
 	
 	# 2022
-	#input th2/savoie-solitaire.th2
-		join SP-Pixa-1@Pixa SP-solitaire_plan@Solitaire
-	#input th2/savoie-solitaire-coupe.th2
-		join SC-Pixa-1@Pixa SC-sol-C2@Solitaire
+	
 	#input th2/oeufs2022.th2
 	#	join SP-Oeufs2022-1@Oeufs SP-Sol2021-2@Oeufs
 	#input th2/oeufs2022-coupe.th2
@@ -95,7 +97,7 @@ survey Solitaire -title "Réseau du Solitaire"
 	
 	# Rivière aux rubis
 	#input th2/rubis2022.th2
-		join SP-Rubis-1@Rubis SP-Sol2019d-1@Solitaire
+		
 	# Puits parallèles
 	#input th2/puitsparalleles.th2
 		

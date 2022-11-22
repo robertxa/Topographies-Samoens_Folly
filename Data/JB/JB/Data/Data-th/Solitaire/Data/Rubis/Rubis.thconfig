@@ -43,7 +43,7 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau du Rubis"
+	map-comment "Gouffre Jean-Bernard"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -95,21 +95,24 @@ layout layout_coupe
 	doc-title "Réseau du Rubis-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 2000
+	#base-scale 1 2000
+	base-scale 1 1400
+	#base-scale 1 300
 	scale 1 1400
+	#scale 1 400
 	scale-bar 150 m
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
-	opacity 75
+	opacity 65
 	language fr
-	map-comment "Réseau du Rubis"
+	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 26  cm
-	map-header 38 37 nw
+	legend-width 14.5 cm
+	map-header 100 100 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey

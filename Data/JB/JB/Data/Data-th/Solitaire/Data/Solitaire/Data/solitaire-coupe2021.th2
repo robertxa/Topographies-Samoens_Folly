@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 3316.9781000000003 1466.5834
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {5384.18 1 1.0} {1929.127 xx0init@solitaire.Solitaire} solitaire-coupe2021.xvi 0 {}
 
 
@@ -33,14 +33,11 @@ point 481.5 363.75 height -value [+7 m]
 
 point 497.25 319.25 height -value [-10 m]
 
-point 386.0 413.25 height -value [-15? m]
-
-point 388.5 377.75 altitude -align bottom-left
-
 point 289.0 277.0 altitude -align bottom-left
 
 line wall
   388.5 377.75
+  altitude .
   388.5 377.75 422.0 377.0 428.0 378.75
   434.0 380.5 440.25 385.5 450.0 385.0
   459.75 384.5 465.0 382.75 472.25 381.0
@@ -72,9 +69,7 @@ line wall
   465.5 399.5 466.25 409.75 461.0 406.75
   455.75 403.75 458.5 400.0 451.75 399.5
   445.0 399.0 431.75 392.75 426.25 392.25
-  420.75 391.75 394.25 387.5 390.75 388.0
-  387.25 388.5 383.5 388.75 383.5 388.75
-  smooth off
+  420.75 391.75 391.5 388.0 388.0 388.5
 endline
 
 line wall
@@ -90,15 +85,13 @@ line wall -subtype debris
   smooth off
 endline
 
-point 351.25 390.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air" -text "P10/15 à descendre, courant d'air"
-
 point 258.75 283.75 continuation -attr Code D -attr Cavite "Jean-Bernard" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air" -text "Etroiture à dynamiter, courant d'air"
 
 point 280.75 282.75 narrow-end
 
 point 321.75 296.0 air-draught -orientation 87.6 -subtype summer
 
-point 390.0 396.5 air-draught -orientation 87.6 -subtype summer
+point 427.5 412.5 air-draught -orientation 260.6 -subtype summer
 
 point 426.25 266.0 label -text "<center>salle des<br>Sapins d'Argile"
 

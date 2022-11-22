@@ -43,7 +43,7 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau des Solitarises"
+	map-comment "Gouffre Jean-Bernard"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -103,13 +103,13 @@ layout layout_coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau des Solitarises"
+	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 26  cm
-	map-header 38 37 nw
+	legend-width 14.5  cm
+	map-header 0 0 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -138,10 +138,11 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2022.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2022.xvi
+	#export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2022.xvi
+	#export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2022.xvi
 
-select MP-Solitarises-tot
+select MP-Solitarises-tot@Solitarises
+select MC-Solitarises-tot@Solitarises
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2022b.pdf

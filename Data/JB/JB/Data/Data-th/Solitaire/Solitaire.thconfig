@@ -59,8 +59,6 @@ layout layout_plan
 	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
-  
-	######## Code Metapost pour modifier l aspect des symboles ####### 
 
 	# Titre          
 	code tex-map
@@ -109,11 +107,12 @@ layout layout_coupe
 	statistics copyright all
 	legend off
 	legend-width 26  cm
-	map-header 38 37 nw
+	map-header 5 100 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
 	#debug station-names	
+	#debug scrap-names	
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  
@@ -142,6 +141,9 @@ endlayout
 	export map -projection extended -fmt xvi -layout xviexport_coupe -o th2/solitaire-coupe2022.xvi
 
 select MP-solitaire-tot@Solitaire
+select MC-solitaire-tot@Solitaire
+
+#select MC-solitaire-JB@Solitaire
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2022b.pdf
