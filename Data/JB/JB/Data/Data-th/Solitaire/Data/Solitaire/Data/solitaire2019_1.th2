@@ -40,7 +40,9 @@ point 816.0 582.5 narrow-end
 
 point 682.5 350.0 narrow-end
 
-point 400.0 420.5 narrow-end
+point 381.5 489.5 label -text "La Douche"
+
+point 382.5 459.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Solitaire" -text "Cheminée avec grosse arrivée d'eau, c'est à escalader pour voir s'il y a une suite"
 
 point 754.0 505.0 stalactites
 
@@ -537,11 +539,42 @@ endline
 
 line wall
   67.0 -131.5
-  67.0 -131.5 62.5 -66.5 56.5 -57.0
-  50.5 -47.5 29.5 -10.0 44.5 -9.5
+  67.0 -131.5 62.0 -71.0 56.0 -61.5
+endline
+
+line pit
+  102.5 -34.5
+  102.5 -34.5 100.0 -76.0 96.5 -94.0
+endline
+
+line pit
+  63.5 -37.0
+  63.5 -37.0 71.0 -71.0 69.0 -80.0
+endline
+
+line wall -outline in
+  51.0 -41.5
+  45.0 -32.0 29.5 -10.0 44.5 -9.5
   59.5 -9.0 97.5 1.5 107.5 -9.0
-  117.5 -19.5 134.0 -41.0 140.0 -56.5
-  146.0 -72.0 173.0 -124.5 164.5 -125.5
+  117.5 -19.5 124.5 -26.0 130.5 -41.5
+endline
+
+line wall -subtype presumed
+  56.0 -61.5
+  56.0 -61.5 95.5 -91.5 115.5 -90.0
+  135.5 -88.5 144.0 -89.0 150.0 -86.0
+endline
+
+line wall -reverse on -subtype presumed -outline in
+  51.0 -41.5
+  51.0 -41.5 70.0 -41.5 87.0 -41.5
+  104.0 -41.5 126.5 -42.5 130.5 -41.5
+endline
+
+line wall
+  150.0 -86.0
+  156.0 -101.5 173.0 -124.5 164.5 -125.5
+  smooth off
 endline
 
 point 347.0 -233.5 altitude -align bottom-left

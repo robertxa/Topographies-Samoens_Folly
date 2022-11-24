@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -206.74 4694.9416 4065.0101999999997
+##XTHERION## xth_me_area_adjust -128.75 -128.75 3986.2700000000004 2949.25
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {3858.2700000000004 1 1.0} {2519.69 xx0init@solitaire.Solitaire} solitaire-plan2022.xvi 0 {}
 
@@ -61,18 +61,23 @@ endline
 line slope
   2805.0 2439.75
   2805.0 2439.75 2788.0 2454.0 2786.0 2459.0
+  smooth off
   l-size 5.0
 endline
 
 line slope
   2802.25 2430.5
   2802.25 2430.5 2785.25 2440.25 2784.0 2451.75
+  smooth off
   l-size 5.0
 endline
+
+point 2817.0 2411.5 height -value [+6 m]
 
 line slope
   2798.0 2401.5
   2798.0 2401.5 2782.25 2427.75 2781.0 2443.75
+  smooth off
   l-size 5.0
 endline
 
@@ -91,18 +96,21 @@ point 2767.0 2482.5 blocks -scale xs
 line slope
   2701.0 2585.5
   2701.0 2585.5 2689.0 2588.75 2688.25 2593.0
+  smooth off
   l-size 5.0
 endline
 
 line slope
   2702.25 2572.75
   2702.25 2572.75 2691.25 2579.5 2688.25 2585.75
+  smooth off
   l-size 5.0
 endline
 
 line slope
   2697.75 2558.5
   2697.75 2558.5 2687.0 2570.5 2686.25 2577.5
+  smooth off
   l-size 5.0
 endline
 
@@ -121,77 +129,90 @@ point 2659.25 2535.25 blocks -scale xs
 line slope
   2684.25 2539.75
   2684.0 2537.75 2681.5 2528.75 2683.5 2525.0
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2709.5 2537.0
   2709.5 2537.0 2700.25 2532.25 2702.5 2527.0
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2698.0 2539.0
   2698.0 2539.0 2690.0 2532.0 2694.0 2526.0
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2681.25 2516.25
   2681.25 2516.25 2678.75 2508.75 2684.0 2507.25
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2687.75 2522.5
   2687.75 2522.5 2686.25 2517.5 2692.0 2516.0
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2695.75 2526.0
   2695.75 2526.0 2692.0 2519.5 2697.75 2517.5
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2773.25 2472.0
   2773.25 2472.0 2762.5 2474.0 2756.75 2475.0
+  smooth off
   l-size 5.0
 endline
 
 line slope
   2773.75 2504.25
   2773.75 2504.25 2767.5 2502.0 2761.25 2501.5
+  smooth off
   l-size 5.0
 endline
 
 line slope
   2762.0 2523.5
   2762.0 2523.5 2756.0 2516.0 2752.75 2515.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   2750.75 2533.5
   2750.75 2533.5 2750.0 2526.75 2747.0 2523.75
+  smooth off
   l-size 5.0
 endline
 
 line slope -reverse on
   2730.5 2523.5
   2730.5 2523.5 2737.75 2534.25 2734.75 2539.75
+  smooth off
   l-size 5.0
 endline
 
 line pit
   2680.75 2574.0
   2680.75 2574.0 2685.5 2569.5 2685.25 2579.5
+  smooth off
 endline
 
 line pit
   2731.25 2535.5
   2731.25 2535.5 2715.75 2527.75 2704.25 2526.0
+  smooth off
 endline
 
 line pit
@@ -217,6 +238,7 @@ line wall
   2669.25 2543.5 2666.5 2551.25 2678.25 2552.25
   2690.0 2553.25 2697.52 2558.36 2698.25 2568.0
   2699.5 2584.5 2695.0 2592.25 2695.75 2600.0
+  smooth off
 endline
 
 line wall
@@ -243,6 +265,7 @@ line wall
   2758.25 2450.75 2764.25 2432.25 2769.75 2427.25
   2775.25 2422.25 2778.25 2408.25 2777.0 2405.75
   2775.75 2403.25 2741.0 2394.25 2737.0 2393.5
+  smooth off
 endline
 
 line wall
@@ -340,12 +363,14 @@ line wall
   2787.5 2535.75 2791.25 2532.25 2794.75 2527.25
   2798.25 2522.25 2797.5 2513.5 2799.25 2501.75
   2801.0 2490.0 2802.25 2484.0 2799.25 2478.75
+  smooth off
 endline
 
 line water-flow
   2825.25 2520.5
   2825.25 2520.5 2814.75 2503.0 2813.5 2500.75
   2812.25 2498.5 2809.5 2488.75 2809.25 2484.25
+  smooth off
 endline
 
 line rock-border -close on
@@ -515,48 +540,56 @@ endline
 line slope
   2818.0 2479.25
   2818.0 2479.25 2802.25 2476.5 2797.0 2481.25
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2780.75 2557.5
   2780.75 2557.5 2785.25 2548.0 2777.75 2543.75
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2753.75 2755.5
   2753.75 2755.5 2737.75 2750.25 2729.75 2752.25
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2717.25 2667.25
   2717.25 2667.25 2706.25 2666.0 2702.0 2668.75
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2718.5 2673.75
   2718.5 2673.75 2706.25 2672.5 2702.0 2676.0
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2750.0 2596.5
   2750.0 2596.5 2748.0 2589.25 2742.0 2588.0
+  smooth off
   l-size 4.0
 endline
 
 line slope
   2726.25 2623.0
   2726.25 2623.0 2719.5 2616.75 2713.25 2619.25
+  smooth off
   l-size 4.0
 endline
 
 line slope -reverse on
   2710.5 2627.75
   2710.5 2627.75 2720.0 2621.75 2721.75 2632.75
+  smooth off
   l-size 4.0
 endline
 
@@ -572,36 +605,42 @@ endline
 line slope
   2814.5 2769.25
   2814.5 2769.25 2795.25 2790.75 2793.75 2798.5
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2819.25 2785.75
   2819.25 2785.75 2808.5 2796.75 2807.25 2800.5
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2697.5 2721.0
   2697.5 2721.0 2696.0 2706.5 2691.25 2697.75
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2736.0 2711.25
   2736.0 2711.25 2756.25 2706.75 2758.75 2728.0
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2732.75 2789.25
   2732.75 2789.25 2730.25 2777.0 2725.0 2770.25
+  smooth off
   l-size 3.0
 endline
 
 line slope
   2737.5 2789.5
   2737.5 2789.5 2739.0 2771.0 2728.0 2762.25
+  smooth off
   l-size 3.0
 endline
 
@@ -621,13 +660,19 @@ line border
   2738.75 2790.75
 endline
 
-point 2701.5 2732.25 height -value [-6 m]
+#point 2701.5 2732.25 height -value [-6 m]
+
+
+point 2744.75 2815.0 height -value [+7 m]
+
+point 2698.0 2735.0 height -value [+6 m]
 
 point 2830.5 2771.75 height -value [+10 m]
 
 line pit
   2709.0 2707.75
   2709.0 2707.75 2711.0 2720.25 2703.25 2721.75
+  smooth off
 endline
 
 line water-flow
@@ -640,6 +685,7 @@ endline
 line water-flow
   2711.25 2657.0
   2711.25 2657.0 2715.25 2638.25 2716.25 2634.5
+  smooth off
 endline
 
 line water-flow
@@ -653,6 +699,7 @@ line water-flow
   2785.0 2778.0
   2785.0 2778.0 2784.75 2786.75 2778.25 2784.5
   2771.75 2782.25 2755.75 2777.25 2753.75 2775.0
+  smooth off
 endline
 
 line water-flow
@@ -674,6 +721,7 @@ endline
 line pit
   2816.25 2497.25
   2816.25 2497.25 2811.5 2503.75 2811.25 2510.0
+  smooth off
 endline
 
 point 2830.75 2531.75 narrow-end
@@ -685,6 +733,7 @@ point 2834.75 2805.75 continuation -attr Code E -attr Cavite "Jean-Bernard" -att
 line pit
   2816.75 2780.5
   2816.75 2780.5 2803.5 2788.5 2800.5 2799.0
+  smooth off
 endline
 
 line wall

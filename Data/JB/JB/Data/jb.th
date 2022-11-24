@@ -72,7 +72,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	# Réseau du Solitaire
 	input Data-th/Solitaire/solitaire-tot.th
-	#input Data-th/Solitaire/Data/solitaire.th
 		# Jonction Solitaire et Sommet Puits Alain (2016)
 		equate xx36@solitaire.Solitaire.Solitaire Jd.17@jb-amonts2
 		##equate xx36@solitaire.Solitaire Jd.18@jb-amonts2
@@ -84,8 +83,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		# Jonction Solitaire et Base du puits Alain (2019)
     	##equate 2019-FD-9@solitaire Jd.24@jb-amonts2
     	##extend ignore 2019-FD-9 Jd.24
- 	#input Data-th/Solitaire/Data/jb_solitaire2020a.th
-	#	equate 1@solitaire2020a 2019d-FD-10@solitaire
 	
 	input Data-th/NonTriees/jb-riv.th
 		equate  Jf.14@jb-amonts2  Jf.14@jb-riv
@@ -303,7 +300,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	# Jointure dessins Puits des Savoyards, galerie Pixa
 	join SP-Pixa-1@Pixa.Solitaire SP-V4-2
 	join SC-Pixa-1@Pixa.Solitaire SC-V4c1
-
 	# Jointure Puits Alain et Solitaire
 	join SP-pAlain SP-solitaire_plan@Solitaire.Solitaire
 #	input Drawing-th2/Plan/solitaire-plan.th2
@@ -357,7 +353,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	# Il faut la remplacer par la retopographie de 2012 par l'USAN.
 	input Drawing-th2/Plan/chaos.th2
 		join SP-cingles SP-riv-11
-## Galerie de la nuit blanche
+## Galerie de la Nuit Blanche
 	input Drawing-th2/Plan/JB-nuitblanche.th2
 
 ## Galerie de Sezhommes avec zone de -900 m
@@ -372,7 +368,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 ## Le C37
 	input Drawing-th2/Coupe/C37-coupe.th2
-	#input Drawing-th2/Coupe/C37-coupe.th2
 		#join ?? ??
     #input Drawing-th2/Coupe/affluentC14-coupe.th2
     	join SC-affluent-C14_c1@AffluentC14 SC-archec2 
