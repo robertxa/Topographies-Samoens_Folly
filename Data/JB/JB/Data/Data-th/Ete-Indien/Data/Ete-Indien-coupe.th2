@@ -1,15 +1,12 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -178.8995 -128.75 280.25 324.8505
+##XTHERION## xth_me_area_adjust -257.8995 -136.25 280.25 325.201
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {31.0505 1 1.0} {78.739 0} Ete-Indien-coupe2022.xvi 0 {}
+##XTHERION## xth_me_image_insert {30.7885 1 1.0} {79.09450000000001 0@Ete-Indien.Ete-Indien} Ete-Indien-coupe2022b.xvi 0 {}
 
 
 
 scrap SC-EteIndien-1 -projection extended -station-names "" "@Ete-Indien"-author 2022 "Xavier Robert" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 364.2206 -128.0 0.0 0.0 12.50240324 0.0 m]
-
-point 17.0 54.0 water-flow -orientation 260.0
-
-point -12.0 57.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Ete Indien" -attr CA "Courant d'air aspirant léger lors de l'exploration" -text "P5 à descendre, méandre qui continue, c.a. aspirant"
 
 line rope
   37.25 87.75
@@ -31,7 +28,9 @@ endline
 
 point 105.5 52.0 label -text "<center>puits du<br>Chicot"
 
-point 151.0 106.0 label -text "<center>puits de la<br>Manicure"
+point 151.0 106.0 label -text "<center>puits de la<br>Manucure"
+
+point 75.0 80.75 dig
 
 point 91.0 96.0 label -text "R4"
 
@@ -61,24 +60,14 @@ line wall
   smooth off
 endline
 
-line wall
-  -0.25 33.25
-  -0.25 33.25 5.75 48.75 9.25 50.0
-endline
-
-point 9.5 81.5 air-draught -orientation 229.3 -subtype summer -scale s
-
-line wall -subtype debris
-  9.25 50.0
-  12.75 51.25 21.0 49.25 21.75 51.75
-  22.5 54.25 22.75 57.25 25.75 57.75
-endline
+point 31.25 119.0 air-draught -orientation 234.1 -subtype summer -scale s
 
 line wall
   25.75 57.75
   28.75 58.25 32.0 59.25 31.75 62.0
   31.5 64.75 31.75 73.75 33.25 75.5
   34.75 77.25 34.75 79.25 40.75 81.0
+  smooth off
 endline
 
 line wall -subtype debris
@@ -87,17 +76,20 @@ line wall -subtype debris
   54.25 87.25 55.5 91.25 60.0 92.25
   64.5 93.25 66.5 98.75 68.25 99.25
   70.0 99.75 74.0 99.0 74.0 101.0
+  smooth off
 endline
 
 line wall
   74.0 101.0
   74.0 103.0 73.0 107.75 76.25 109.0
+  smooth off
 endline
 
 line wall -subtype debris
   76.25 109.0
   79.5 110.25 84.0 112.5 90.5 117.25
   97.0 122.0 99.75 121.25 103.5 122.75
+  smooth off
 endline
 
 line wall
@@ -113,9 +105,7 @@ line wall
   77.5 155.5 88.5 155.0 88.25 153.5
   88.0 152.0 84.0 149.0 75.75 142.5
   67.5 136.0 35.25 112.75 26.75 105.75
-  18.25 98.75 -6.75 90.0 -12.0 82.5
-  -17.25 75.0 -27.5 61.75 -27.5 61.75
-  smooth off
+  24.57 103.95 24.75 106.25 13.75 97.5
 endline
 
 point 113.1005 170.599 station -name 17
@@ -141,6 +131,105 @@ point 31.0505 78.739 station -name 0
 point 27.0205 60.71900000000001 station -name 1
 
 point -2.569500000000005 48.46900000000001 station -name 2
+
+endscrap
+
+
+
+scrap SC-Chicot-1 -projection extended -station-names "" "@chicot"-author 2022 "Xavier Robert" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 364.2206 -128.0 0.0 0.0 12.50240324 0.0 m]
+
+point -78.75 65.0 label -text "etr."
+
+point -51.5 33.75 narrow-end
+
+point 23.25 39.5 label -text "R3"
+
+line rock-border -close on -reverse on
+  7.75 57.75
+  10.25 60.0
+  13.75 58.5
+  10.75 57.5
+  7.75 57.75
+endline
+
+line border
+  -20.75 64.0
+  -20.75 64.0 -14.75 64.0 -9.25 64.25
+  -3.75 64.5 0.5 64.5 4.25 65.0
+endline
+
+line border
+  -49.0 41.75
+  -46.0 41.75 -46.75 41.25 -41.75 40.25
+  -36.75 39.25 -34.25 38.75 -31.75 38.75
+endline
+
+line border
+  -48.5 52.25
+  -48.5 52.25 -42.5 55.5 -39.5 55.0
+  -36.5 54.5 -29.5 50.75 -29.5 50.75
+  smooth off
+endline
+
+line border
+  -76.75 42.5
+  -76.75 43.5 -79.0 45.0 -76.0 46.0
+  -73.0 47.0 -70.25 49.5 -67.25 50.0
+  -64.25 50.5 -63.5 51.0 -62.75 46.75
+  -62.0 42.5 -62.0 39.75 -62.0 39.75
+  smooth off
+endline
+
+point -87.75 -1.5 water-flow -orientation 245.3
+
+point -81.75 22.25 air-draught -orientation 256.5 -subtype winter
+
+line wall
+  -87.5 -7.25
+  -87.5 -7.25 -61.25 -3.75 -55.25 -1.25
+  -49.25 1.25 -51.5 8.5 -48.0 12.75
+  -44.5 17.0 -43.25 12.5 -39.75 17.75
+  -36.25 23.0 -39.75 30.25 -32.25 32.25
+  -24.75 34.25 -32.75 39.25 -27.0 40.5
+  -21.25 41.75 -20.5 41.75 -15.5 41.75
+  -10.5 41.75 -11.75 42.0 -4.5 42.0
+  2.75 42.0 3.75 43.25 3.75 46.5
+  3.75 49.75 4.5 51.25 8.25 51.75
+  12.0 52.25 10.0 55.75 14.5 56.75
+  19.0 57.75 25.75 57.75 25.75 57.75
+  smooth off
+endline
+
+line wall
+  13.75 97.5
+  13.75 97.5 -1.75 93.75 -9.0 91.0
+  -16.25 88.25 -18.75 87.75 -25.75 84.0
+  -32.75 80.25 -34.75 84.25 -37.5 78.25
+  -40.25 72.25 -54.0 60.5 -62.0 57.25
+  -70.0 54.0 -91.75 45.5 -91.75 45.5
+  smooth off
+  altitude .
+endline
+
+point -86.17150000000001 44.98450000000001 station -name 1
+
+point -61.5215 53.90450000000001 station -name 0
+
+point -49.50150000000001 60.15450000000001 station -name 2
+
+point -35.201499999999996 58.754500000000014 station -name 3
+
+point -28.7515 54.744500000000016 station -name 4
+
+point -23.3915 44.03450000000002 station -name 5
+
+point -13.831500000000005 43.854500000000016 station -name 6
+
+point -7.021500000000003 47.80450000000002 station -name 7
+
+point 8.2685 61.714500000000015 station -name 8
+
+point -103.25 29.25 continuation -attr Code PD -attr Cavite "Jean-Bernard" -attr Reseau "Ete Indien" -attr CA "Courant d'air aspirant léger lors de l'exploration" -text "P11 à descendre après étroiture de 1 m à claquer, méandre qui continue, c.a. aspirant hivernal"
 
 endscrap
 

@@ -137,8 +137,8 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Ete-Indien-plan2022.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Ete-Indien-coupe2022.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Ete-Indien-plan2022b.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Ete-Indien-coupe2022b.xvi
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/Ete-Indien-coupe2022b.pdf

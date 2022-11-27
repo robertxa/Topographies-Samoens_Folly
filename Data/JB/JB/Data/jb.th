@@ -6,127 +6,450 @@ encoding  utf-8
  
 survey Jean-Bernard -title "Gouffre Jean Bernard"
 
+## Pour importer les différents fichiers de dessins
+## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
+## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). 
+## C'est tout simple !
+
 # Pour importer les différentes données de différents fichiers topos : 
 	input Data-th/NonTriees/jb-amonts1.th
 
-	input Data-th/C37/Data/C37_2020.th
-		equate Aa.28@jb-amonts1 0.2020@C37_2020
 	
+	# Le C37
+	input Data-th/C37/Data/C37_2020.th
+		### Equates data
+			equate Aa.28@jb-amonts1 0.2020@C37_2020
+	input Drawing-th2/Plan/JB-C37.th2
+		### Joins dessins Plan
+			#join ?? ??
+	input Drawing-th2/Coupe/C37-coupe.th2
+		### Joins dessins Coupe
+			#join ?? ??
+	
+	# Affluent du C14
 	input Data-th/affluentC14/affluentC14-tot.th
-		equate  2013-xab-22@affluentC14.AffluentC14 Bg.0@jb-amonts1
+		### Equates data
+			equate  2013-xab-22@affluentC14.AffluentC14 Bg.0@jb-amonts1
+		### Joins dessins Plan
+			join SP-reverbere SP-affluent-C14-2@AffluentC14
+		### Joins dessins Coupe
+			join SC-affluent-C14_c1@AffluentC14 SC-archec2 
 
 	input Data-th/NonTriees/jb-amonts2.th
-		equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
-    	equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
+		### Equates data
+			equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
+    		equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
+	input Drawing-th2/Coupe/voltigeurs-coupe.th2
+		### Joins dessins Coupe
+    		join SC-voltic1 SC-C37c3
+		
+	# Le B22
+	input Drawing-th2/Plan/JB-B22.th2
+		### Joins dessins Plan
+	input Drawing-th2/Coupe/B22-coupe.th2
+		### Joins dessins Coupe
+			join SC-B22c1 SC-B22cx
+			join SC-B22c2 SC-elyseesc1 
+
+	## Le B21
+	input Drawing-th2/Plan/B21.th2
+		### Joins dessins Plan
+	input Drawing-th2/Coupe/B21-coupe.th2
+		### Joins dessins Coupe
+			##join SC-B21c SC-B22c3
 
 	input Data-th/Arianes/arianes-tot.th
-		equate  Bc.50@jb-arianes.arianes Bc.50@jb-amonts1
-    	equate  Bb.115@jb-arianes.arianes Bb.115@jb-amonts1
+		### Equates data
+			equate  Bc.50@jb-arianes.arianes Bc.50@jb-amonts1
+    		equate  Bb.115@jb-arianes.arianes Bb.115@jb-amonts1
+	
+	## La rivière de la Gadoue    
+	input Drawing-th2/Plan/gadoue.th2
+		### Joins dessins Plan
+			join SP-Gadoue SP-champs-elysees2
+		### Joins dessins Coupe
 
+	## Le B19       
+	input Drawing-th2/Plan/B19.th2
+		### Joins dessins Plan
+			join SP-base-racc@Lavoir SP-Excentriques1 
+			join SP-Raccourci SP-rac1@Lavoir
+			join SP-Racc5@Lavoir SP-gadouejonction
+			join SP-B19 SP-Racc5@Lavoir
+			join SP-gadouejonction SP-Racc5@Lavoir
+	input Drawing-th2/Coupe/B19-coupe.th2 
+	input Drawing-th2/Coupe/B19senecaliens-coupe.th2
+		### Joins dessins Coupe
+			join SC-B19c1 SC-B19c2
 
-
+	## Le Lavoir	--> A REVOIR ENTIEREMENT POUR LE VERIFIER, SURTOUT LA COUPE DEVELOPPEE
 	#input Data-th/Lavoir/Data/Lavoir.th
 	input Data-th/Lavoir/Lavoir-tot.th
-		equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
-    	equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
-		#equate Da.81@jb-amonts2.Lavoir	Da.81@jb-amonts2
+		### Equates data
+			equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
+    		equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
+			#equate Da.81@jb-amonts2.Lavoir	Da.81@jb-amonts2
+	#input Drawing-th2/Plan/Lavoir.th2
+	#input Drawing-th2/Plan/Lavoir-boeuf.th2
+	#input Drawing-th2/Plan/Arva.th2
+	#input Drawing-th2/Plan/Brownies.th2
+	#input Drawing-th2/Plan/Lavoir3old.th2
+		### Joins dessins Plan
+			#join SP-Lavoir3old SP-B19	# A MODIFIER, IL FAUT LE REINTEGRER
+			##join SP-Lavoir3old SP-gadouejonction
+		#	join SP-brownies1 SP-Arva2 
+		#	join SP-Lavoir-new1 SP-Lavoir7
+		#	join SP-lavoir-sec SP-Boeuf2
+		#	join SP-base-racc SP-Racc5
+		### Joins dessins Coupe
 	#input Data-th/Lavoir/Data/FileOu.th
-	#	equate FD-2012-9@Lavoir 2017-FD-0@fileou
-	
+		### Equates data
+		#	equate FD-2012-9@Lavoir 2017-FD-0@fileou
+	#input Drawing-th2/Plan/fileOu.th2
+	#input Drawing-th2/Plan/fileOu2019.th2
+		### Joins dessins Plan
+			#	join SP-fileou2019-1 SP-filou2
+		### Joins dessins Coupe
+	#input Drawing-th2/Coupe/lavoirsommet-coupe.th2
+	#input Drawing-th2/Coupe/lavoir-coupe2015.th2
+			#	join SC-lavoirc1 SC-lavoirc2 
+	#input Drawing-th2/Coupe/brownies-coupe.th2
+			#	join SC-lavoirc2 SC-browniesc1
+	#input Drawing-th2/Coupe/fileOu-coupe2019.th2
+			#	join SC-fileouc1 SC-fileOu2019-1
+	#input Drawing-th2/Coupe/FileOu-coupe.th2
+			#	join SC-fileouc1 SC-lavoirc5
+			join SC-aiguillesc1 SC-lavoirc7@Lavoir
+			##join SC-excenc2 SC-excenLavoir???
+
 	# L'aspiro-souffle
-	#input Data-th/aval-aiguilles/Data/Aval-aiguilles2.th
-	#	equate  2012c-xa-29@aval-aiguilles2 De.44@jb-amonts2
-	#input Data-th/AspiroSouffle/Data/Aval-aiguilles2.th
 	input Data-th/AspiroSouffle/AspiroSouffle-tot.th
-		equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
+		### Equates data
+			equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
+		### Joins dessins Plan
+		### Joins dessins Coupe
+
+	## Le méandre des Crawleurs
+	input Drawing-th2/Plan/crawleurs.th2
+		### Joins dessins Plan
+			join SP-Crawleuraval SP-Excentriques1
+
+	## Le V11
+	input Drawing-th2/Plan/V11.th2
+		### Joins dessins Plan
+			join SP-V11 SP-Aiguilles
+			join SP-oublies SP-Ascension -count 2
+	input Drawing-th2/Coupe/V11-coupe.th2
+
+	## Le réseau des Aiguilles
+	input Drawing-th2/Plan/aiguilles.th2
 
 	# L'aval des Aiguilles
-	#input Data-th/aval-aiguilles/Data/Aval-aiguilles.th
 	input Data-th/aval-aiguilles/AvalAiguilles-tot.th
-		equate  Xa-2013-11@aval-aiguilles.AvalAiguilles De.23@jb-amonts2
-    	equate  2012c-xa-27@aval-aiguilles.AvalAiguilles De.8@jb-amonts2
-    	equate  2012c-xa-0double@aval-aiguilles.AvalAiguilles Da.197@jb-amonts2
-	
+		### Equates data
+			equate  Xa-2013-11@aval-aiguilles.AvalAiguilles De.23@jb-amonts2
+    		equate  2012c-xa-27@aval-aiguilles.AvalAiguilles De.8@jb-amonts2
+    		equate  2012c-xa-0double@aval-aiguilles.AvalAiguilles Da.197@jb-amonts2
+		### Joins dessins Plan
+			join SP-oublies SP-audessusbulle
+			##join SP-scrap146@AvalAiguilles SP-Ascension
+			join SP-scrap146b@AvalAiguilles SP-Ascension -count 2
+		### Joins dessins Coupe
+
+	## La rivière aux Excentriques
+	input Drawing-th2/Plan/excentriques.th2
+		### Joins dessins Plan
+			join SP-Frenesie SP-Montagnesrusses
+			join SP-Pseudosiphon2 SP-Cristal
+			join SP-Echo SP-Colimaconaval
+
+	## La zone des Branlots
+	input Drawing-th2/Plan/montagnesrusses.th2
+	input Drawing-th2/Plan/echo2010.th2
+		### Joins dessins Plan
+			join SP-Echo2010-1 SP-Branlots
+			join SP-Echo2010-2 SP-Branlots
+			join SP-Echo2010-2 SP-Branlots
+			join SP-Echo2010-3 SP-Branlots
+			join SP-Branlots2 SP-Echo2010-3
+			join SP-Branlots2 SP-Echo2010-2
+			join SP-Echo SP-Branlots2
+			## Autre join Avec Branlots2?????	### A VERIF
+			join SP-Echo2010-2 SP-Colimaconaval	## Erreur dans le 3D avec cette ligne suivante... A CORRIGER
+		### Joins dessins Coupe
+			join SC-branlotsc1 SC-V11c5
+
+	# Shunt des Branlots
 	input Data-th/Shunt-Branlots/shuntBranlots-tot.th
-		equate  2013-xac-14@shunt-branlots.ShuntBranlots Fb.29@jb-amonts2
-    	equate  2013-xac-0@shunt-branlots.ShuntBranlots Fd.14@jb-amonts2
+		### Equates data
+			equate  2013-xac-14@shunt-branlots.ShuntBranlots Fb.29@jb-amonts2
+    		equate  2013-xac-0@shunt-branlots.ShuntBranlots Fd.14@jb-amonts2
+		### Joins dessins Plan
+			join SP-Branlots SP-s-branlots1@ShuntBranlots
+		### Joins dessins Coupe
+				join SC-J14c3 SC-s_branlots-c1@ShuntBranlots
+				##join SC-berreurc1 ??
 	
+	# Réseau du Couteau Grenoblois
 	input Data-th/CouteauG/couteauG-tot.th
-		equate Xa-2015f-0@CouteauG.CouteauG Ee.0@jb-amonts2
+		### Equates data
+			equate Xa-2015f-0@CouteauG.CouteauG Ee.0@jb-amonts2	
+		### Joins dessins Plan
+			join SP-CouteauG1@CouteauG SP-oublies
+		### Joins dessins Coupe
+			join SC-CouteauGc1@CouteauG SC-V11c3
 	
+	# Réseau du Puits que l'on traverse
 	input Data-th/puitsquelontraverse/puitsTraverse-tot.th
-		equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse.PuitsTraverse
+		### Equates data
+			equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse.PuitsTraverse
+		### Joins dessins Plan
+			join SP-traverse2@PuitsTraverse SP-audessusbulle
+		### Joins dessins Coupe
+			join SC-traversec1@PuitsTraverse SC-V11c5
 	
+	## Le 14 Juillet
+	input Drawing-th2/Plan/J14.th2
+		### Joins dessins Plan
+			join SP-Pourquedalle SP-Passibas
+			join SP-J14 SP-P15
+		### Joins dessins Coupe
+			input Drawing-th2/Coupe/14J-coupe.th2
+
+	# Le Passibas
+	input Drawing-th2/Plan/passibas.th2
+
+	# Galerie du P15
+	input Drawing-th2/Plan/P15.th2
+		### Joins dessins Plan
+			join SP-P15aval SP-Bourguignons1
+			join SP-P15aval SP-Pseudosiphon2
+
+	# Shunt de l'Erreur
 	input Data-th/Erreur/erreur-tot.th
-		equate Xa-2015e-0@Erreur.Erreur Da.2494@jb-amonts2
-    	equate Xa-2015e-10@Erreur.Erreur Da.239@jb-amonts2
+		### Equates data
+			equate Xa-2015e-0@Erreur.Erreur Da.2494@jb-amonts2
+    		equate Xa-2015e-10@Erreur.Erreur Da.239@jb-amonts2
+		### Joins dessins Plan
+			join SP-Erreur SP-berreur1@Erreur
+    		join SP-P15 SP-berreur1@Erreur
+		### Joins dessins Coupe
+			join SC-berreurc1@Erreur SC-maisc1
 	
+	## Réseau des Bourguignons	
+	input Drawing-th2/Plan/bourguignons.th2
+	
+	## Réseaux Anou2, Jaunisse, Grand Escalier
+	input Drawing-th2/Plan/anou2.th2
+		### Joins dessins Plan
+			join SP-Anou2 SP-Mais
+			join SP-flash SP-Mais
+			join SP-anou2bis SP-Mais
+	input Drawing-th2/Plan/gd-escalier.th2
+		### Joins dessins Plan
+			join SP-anou2bis SP-grdescalier
+			join SP-grdescalier SP-Mais
+	input Drawing-th2/Coupe/jaunisse-coupe.th2
+		### Joins dessins Coupe
+			join SC-jaunissec6 SC-anou2c3
+			join SC-jaunissec7 SC-anou2c1
+			join SC-jaunissec7 SC-anou2c2
+			join SC-jaunissec3 SC-chatonsc1
+
+	# Galerie du Petit Dino
 	input Data-th/dino/dino-tot.th
-		equate xa-2014a-1@jb-dino.dino Da.248@jb-amonts2
-    	equate xa-2014a-9@jb-dino.dino Da.253@jb-amonts2
+		### Equates data
+			equate xa-2014a-1@jb-dino.dino Da.248@jb-amonts2
+    		equate xa-2014a-9@jb-dino.dino Da.253@jb-amonts2
+		### Joins dessins Plan
+			join SP-dino-1@dino SP-Erreur -count 2
+		### Joins dessins Coupe
+			join SC-maisc1 SC-dino-coupe@dino
 	
+	# Mais et Erreur
+	input Drawing-th2/Plan/mais.th2
+		### Joins dessins Plan
+			join SP-Mais SP-Mais-2010
+	
+	## Le V4 et le V6	
+	input Drawing-th2/Plan/V4.th2
+		### Joins dessins Plan
+			join SP-V4-2 SP-quitombea
+			join SP-V6 SP-Mais
+	input Drawing-th2/Coupe/V4-coupe.th2
+		### Joins dessins Coupe
+			#join SC-V4c1 SC-dupontc3 	
+			join SC-maisc1 SC-V6c1
+	
+	## Le V5
+	input Drawing-th2/Plan/V5.th2
+		### Joins dessins Plan
+			join SP-V6 SP-V5
+
 	# Réseau de l'Eté Indien
 	input Data-th/Ete-Indien/Ete-Indien-tot.th
-		equate 18@Ete-Indien.Ete-Indien Ih.14@jb-amonts2	# Carrefour V4/V4b
-		equate 14@Ete-Indien.Ete-Indien Ja.10@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
+		### Equates data
+			equate 18@Ete-Indien.Ete-Indien Ih.14@jb-amonts2	# Carrefour V4/V4b
+			equate 14@Ete-Indien.Ete-Indien Ja.10@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
+		### Joins dessins Plan
+			join SP-V4 SP-EteIndien-1@Ete-Indien -count 3	# Le V4 et l'Eté Indien
+		### Joins dessins Coupe
+			##join SC-V4c4 SC-EteIndien-1@Ete-Indien -count 3	# Le V4 et l'Eté Indien
+	
+	## La Pierre Qui Tombe
+	input Drawing-th2/Plan/pierrequitombe.th2
+		### Joins dessins Plan
+			join SP-pierretombe SP-anou2bis
+			join SP-mangerjct SP-papy2
+			join SP-quitombe4 SP-pquitombeend
+
+	## V4 - Puits Alain
+		### Joins dessins Plan
+			join SP-pAlain SP-V4-2
 
 	# Réseau du Solitaire
 	input Data-th/Solitaire/solitaire-tot.th
-		# Jonction Solitaire et Sommet Puits Alain (2016)
-		equate xx36@solitaire.Solitaire.Solitaire Jd.17@jb-amonts2
-		##equate xx36@solitaire.Solitaire Jd.18@jb-amonts2
-    	##equate xx36@solitaire Jd.19@jb-amonts2
-		##equate xx36@solitaire.Solitaire Jd.20@jb-amonts2
-		# Jonction Solitaire et Sommet Savoyards (2022)
-		equate 8@savoyards.Pixa.Solitaire Ja.24@jb-amonts2
-		#equate 8@savoyards.Solitaire Ja.23@jb-amonts2
-		# Jonction Solitaire et Base du puits Alain (2019)
-    	##equate 2019-FD-9@solitaire Jd.24@jb-amonts2
-    	##extend ignore 2019-FD-9 Jd.24
-	
+		### Equates data
+			# Jonction Solitaire et Sommet Puits Alain (2016)
+			equate xx36@solitaire.Solitaire.Solitaire Jd.17@jb-amonts2
+			##equate xx36@solitaire.Solitaire Jd.18@jb-amonts2
+    		##equate xx36@solitaire Jd.19@jb-amonts2
+			##equate xx36@solitaire.Solitaire Jd.20@jb-amonts2
+			# Jonction Solitaire et Sommet Savoyards (2022)
+			equate 8@savoyards.Pixa.Solitaire Ja.24@jb-amonts2
+			#equate 8@savoyards.Solitaire Ja.23@jb-amonts2
+			# Jonction Solitaire et Base du puits Alain (2019)
+    		##equate 2019-FD-9@solitaire Jd.24@jb-amonts2
+    		##extend ignore 2019-FD-9 Jd.24
+		### Joins dessins Plan
+			# Jointure dessins Puits des Savoyards, galerie Pixa
+			join SP-Pixa-1@Pixa.Solitaire SP-V4-2
+			join SC-Pixa-1@Pixa.Solitaire SC-V4c1
+			# Jointure Puits Alain et Solitaire
+			join SP-pAlain SP-solitaire_plan@Solitaire.Solitaire
+		### Joins dessins Coupe
+
+	##################################################################################################
+	######### DESSINS A MODIFIER a partir d'ici ##############     
+	### La rivière vers l'aval	###
+
 	input Data-th/NonTriees/jb-riv.th
-		equate  Jf.14@jb-amonts2  Jf.14@jb-riv
-		equate  Kg.0@jb-riv  Kg.0@jb-riv2
-    	equate  Ke.29@jb-riv  Ke.29@jb-riv2
-    	equate  Ke.43@jb-riv  Ke.43@jb-riv2
-    	equate  Ke.33@jb-riv  Ke.33@jb-riv2
+		### Equates data
+			equate  Jf.14@jb-amonts2  Jf.14@jb-riv
+			equate  Kg.0@jb-riv  Kg.0@jb-riv2
+    		equate  Ke.29@jb-riv  Ke.29@jb-riv2
+    		equate  Ke.43@jb-riv  Ke.43@jb-riv2
+    		equate  Ke.33@jb-riv  Ke.33@jb-riv2
+		### Joins dessins Plan
+		### Joins dessins Coupe
 	input Data-th/NonTriees/jb-riv2.th
-		equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
-    	equate  Da.58@jb-amonts2  Da.58@jb-riv2
-    	equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
+		### Equates data
+			equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
+    		equate  Da.58@jb-amonts2  Da.58@jb-riv2
+    		equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
+	## L'arrivée à la cascade Jean Dupont
+	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
+		### Joins dessins Plan
+			#join V4-2 pAlain # au niveau du Téléphérique
+			join SC-V4c1 SC-dupontc2
+	## Rivière à l'aval de la Jean Dupont
+	input Drawing-th2/Plan/riv-debut.th2
+	input Drawing-th2/Plan/riviere.th2
+		### Joins dessins Plan
+			join SP-riv-3 SP-riv-4
+	input Drawing-th2/Plan/bivouac500.th2
+		### Joins dessins Plan
+			join SP-bivouac500 SP-riv-5
+	input Drawing-th2/Coupe/aval400.th2
+		### Joins dessins Coupe
+			join SC-400c1 SC-biv500c4
+	## Le Bivouac -500
+	input Drawing-th2/Coupe/aval500.th2
 
 	# Entre le bivouac -500 et la Gourance
+	# Galerie du P11
 	input Data-th/P11/p11-tot.th
-		equate Xav2016-23@P11.P11 Kg.24@jb-riv
+		### Equates data
+			equate Xav2016-23@P11.P11 Kg.24@jb-riv
+		### Joins dessins Plan		
+			##join SP-P11-h1 ???
+		### Joins dessins Coupe
 
-	## Gourance
+	## La zone de la Gourance
+	input Drawing-th2/Plan/gourance.th2
+		### Joins dessins Plan
+			join SP-gourance-1 SP-bivouac500c
 	# Explo 2013 dans l'aval de la Gourance
 	input Data-th/Gourance2013/gourance2013-tot.th
-		equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@jb-riv2
+		### Equates data
+			equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@jb-riv2
+		### Joins dessins Plan
+		### Joins dessins Coupe
+			join SC-Gourance2013-c1@Gourance2013 SC-balcon2	# Escalade 2013 dans l'aval de la Gourance
 	# Plafonds de la Gourance
 	input Data-th/GoureToiDeLa/goureToiDeLa-tot.th
-		# Damocles
-		equate Kg.9@Damocles.GoureToi Kg.9@jb-riv	# Si dans fichier Damocles2010.th --> A faire !!!
-		# Plafonds de la Gourance
-		equate  2014-SL-35@GoureToiDeLa.GoureToi Kh.46@jb-riv2    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
-		equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
+		### Equates data
+			# Damocles
+			equate Kg.9@Damocles.GoureToi Kg.9@jb-riv	# Si dans fichier Damocles2010.th --> A faire !!!
+			# Plafonds de la Gourance
+			equate  2014-SL-35@GoureToiDeLa.GoureToi Kh.46@jb-riv2    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
+			equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
+		### Joins dessins Plan
+		### Joins dessins Coupe
+			join SC-balconc1 SC-GourecoupeSteph3@GoureToi
+			join SC-GourecoupeSteph3@GoureToi SC-balcon2 # Plafonds de la Gourance
+			join SC-balcon3 SC-Gourance2022-1@GoureToi
+
+	## Riviere de la base de la Gourance aux Cinglés
+	input Drawing-th2/Plan/toussaint.th2
+		### Joins dessins Plan
+			####join SP-gourance5 SP-gourance2	#### A REVOIR ????
+	input Drawing-th2/Coupe/avalc1
+		### Joins dessins Coupe
+			join SC-avalc1@Sezhommes SC-S1-c@Siphons	# Erreur ici ???
+			join SC-avalc5 SC-balconc1
 
 	## Cheneau, Bivouac -900
 	#input Data-th/bivouac900.th
+		### Equates data
+		
+	## Des Cinglés au Bivouac -900
+	# Cette topographie est pour l'instant la topo originale de 1991.
+	# Il faut la remplacer par la retopographie de 2012 par l'USAN.
+	input Drawing-th2/Plan/chaos.th2
+		### Joins dessins Plan
+			join SP-cingles SP-riv-11
+	## Galerie de la Nuit Blanche
+	input Drawing-th2/Plan/JB-nuitblanche.th2
+		### Joins dessins Plan
+		### Joins dessins Coupe
 
-	## Sezhommes
+	## Galerie de Sezhommes avec zone de -900 m
 	input Data-th/Sezhommes/sezhommes-tot.th
-		equate Kn.1@sezhommes1975.Sezhommes Kn.1@jb-riv2
-		equate 46.2020@sezhommes2020.Sezhommes Kn.4@jb-riv2	# sommet du P6 juste avant le bivouac -900 m
-   
-	#input Data-th/Siphons/Data/siphons.th
-	input Data-th/Siphons/siphons-tot.th
-		equate S1-0@siphons_aval.Siphons Kp.24@sezhommes1975.Sezhommes
+		### Equates data
+			equate Kn.1@sezhommes1975.Sezhommes Kn.1@jb-riv2
+			equate 46.2020@sezhommes2020.Sezhommes Kn.4@jb-riv2	# sommet du P6 juste avant le bivouac -900 m
+		### Joins dessins Plan
+			join SP-sezhommes2020-1@Sezhommes SP-900-1	# au niveau bivouac -900 m
+		### Joins dessins Coupe
+			join SC-avalc2 SC-sezhommes2020-3@Sezhommes
 
+	## Zone des siphons terminaux
+	input Data-th/Siphons/siphons-tot.th
+		### Equates data
+			equate S1-0@siphons_aval.Siphons Kp.24@sezhommes1975.Sezhommes
+		### Joins dessins Plan
+			join SP-sezhommes2@Sezhommes SP-S1@Siphons
+		### Joins dessins Coupe
+
+
+	##################################################################################################
 	##Add Maps definitions
 	input jb-maps-plan.th
 	input jb-maps-coupe.th
 	
+
+	##################################################################################################
 	centerline -title "Explorations non topographiées ou topographies manquantes"
 	## Rajout des longueurs explorées, non topo, ou topos perdues
 		station Ca.31@jb-amonts1 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
@@ -135,8 +458,13 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		station Ib.23@jb-amonts2 "+20 m non topographiés (V6 ter)" continuation explored 20m	# Entrée du V6 ter
 		station Ib.23@jb-amonts2 "+80 m non topographiés (A14)" continuation explored 80m	# Entrée du A14
 	endcenterline
-              
-     ## Pour boucler toute la topo du JB, de façon à supprimer les choix de coupage de Steph
+    
+
+	##################################################################################################
+    ## Pour boucler toute la topo du JB, de façon à supprimer les choix de coupage de Steph
+	## Peut être à re-tester/modifier lorsque j'aurai découpé correctement les différents bouts
+	## de topographies et de dessins associés.		--> A FAIRE
+	
     #    # Zone de la rivière aux excentriques
     #      #equate  Da.179@jb-amonts1  Da.180'@jb-amonts1
     #      #equate  Da.99@jb-amonts1  Da.100'@jb-amonts1
@@ -154,311 +482,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     #    # Zone de la galerie du P15-colimaçon
     #      #equate  Fm.0@jb-amonts1  Da.257@jb-amonts1 #(ou 259 ?)
     #      #equate  Fd.41@jb-amonts1  Da.240@jb-amonts1
- 
- 
- #endsurvey
- 
-##########################################################################################
-## Pour importer les différents fichiers de dessins en plan
-	## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
-	## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). C'est tout simple !
-
-## Les Amonts (C37 - B19)    
-## Le C37
-	input Drawing-th2/Plan/JB-C37.th2
-	#input Drawing-th2/Plan/JB-C37.th2
-		# join 
-	# Affluent du C14
-	join SP-reverbere SP-affluent-C14-2@AffluentC14
-## Le B22
-	input Drawing-th2/Plan/JB-B22.th2
-	#input Drawing-th2/Plan/arianes.th2
-## Le B21
-	input Drawing-th2/Plan/B21.th2
-## La rivière de la Gadoue    
-	input Drawing-th2/Plan/gadoue.th2
-		join SP-Gadoue SP-champs-elysees2
-## Le B19       
-	input Drawing-th2/Plan/B19.th2
-		join SP-base-racc@Lavoir SP-Excentriques1 
-		join SP-Raccourci SP-rac1@Lavoir
-		join SP-Racc5@Lavoir SP-gadouejonction
-		join SP-B19 SP-Racc5@Lavoir
-		join SP-gadouejonction SP-Racc5@Lavoir
-## Le Lavoir
-	#input Drawing-th2/Plan/Lavoir.th2
-	#input Drawing-th2/Plan/Lavoir-boeuf.th2
-	#input Drawing-th2/Plan/Arva.th2
-	#input Drawing-th2/Plan/Brownies.th2
-	#input Drawing-th2/Plan/fileOu.th2
-	#input Drawing-th2/Plan/fileOu2019.th2
-	#	join SP-brownies1 SP-Arva2 
-	#	join SP-Lavoir-new1 SP-Lavoir7
-	#	join SP-fileou2019-1 SP-filou2
-	#	join SP-lavoir-sec SP-Boeuf2
-	#	join SP-base-racc SP-Racc5
-	#input Drawing-th2/Plan/Lavoir3old.th2
-		#join SP-Lavoir3old SP-B19	# A MODIFIER, IL FAUT LE REINTEGRER
-		##join SP-Lavoir3old SP-gadouejonction
-
-## La zone des Aiguilles   
-## Le méandre des Crawleurs
-	input Drawing-th2/Plan/crawleurs.th2
-		join SP-Crawleuraval SP-Excentriques1
-## Le V11
-	input Drawing-th2/Plan/V11.th2
-		join SP-V11 SP-Aiguilles
-		join SP-oublies SP-Ascension -count 2
-		join SP-oublies SP-audessusbulle
-		##join SP-scrap146@AvalAiguilles SP-Ascension
-		join SP-scrap146b@AvalAiguilles SP-Ascension -count 2
-## Le réseau des Aiguilles
-	input Drawing-th2/Plan/aiguilles.th2
-# Réseau du Puits que l'on traverse
-	#input Drawing-th2/Plan/puitstraverse.th2
-	join SP-traverse2@PuitsTraverse SP-audessusbulle
-	#input Drawing-th2/Plan/aval-aiguilles2.th2
-	#input Drawing-th2/Plan/aval-aiguilles.th2
-
-# Réseau du Couteau Grenoblois
-#input Drawing-th2/Plan/CouteauG.th2
-	join SP-CouteauG1@CouteauG SP-oublies
-
-## La rivière aux Excentriques
-	input Drawing-th2/Plan/excentriques.th2
-		join SP-Frenesie SP-Montagnesrusses
-		join SP-Pseudosiphon2 SP-Cristal
-		join SP-Echo SP-Colimaconaval
-
-## La zone des Branlots
-	input Drawing-th2/Plan/montagnesrusses.th2
-	#input Drawing-th2/Plan/shunt-branlots.th2
-	
-	input Drawing-th2/Plan/echo2010.th2
-		join SP-Echo2010-1 SP-Branlots
-		join SP-Echo2010-2 SP-Branlots
-		join SP-Echo2010-2 SP-Branlots
-		join SP-Echo2010-3 SP-Branlots
-		join SP-Branlots2 SP-Echo2010-3
-		join SP-Branlots2 SP-Echo2010-2
-		join SP-Echo SP-Branlots2
-		join SP-Branlots SP-s-branlots1@ShuntBranlots
-		## Autre join Avec Branlots2?????	### A VERIF
-		join SP-Echo2010-2 SP-Colimaconaval	## Erreur dans le 3D avec cette ligne suivante... A CORRIGER
-
-## Le 14 Juillet
-	input Drawing-th2/Plan/J14.th2
-		join SP-Pourquedalle SP-Passibas
-		join SP-J14 SP-P15
-	input Drawing-th2/Plan/P15.th2
-
-## Le V4, V5, Mais et Solitaire
-# Mais et Erreur
-	input Drawing-th2/Plan/passibas.th2
-# Shunt de l'Erreur
-#input Drawing-th2/Plan/Erreur.th2
-	join SP-Erreur SP-berreur1@Erreur
-    join SP-P15 SP-berreur1@Erreur
-	join SP-P15aval SP-Bourguignons1
-	join SP-P15aval SP-Pseudosiphon2
-
-	input Drawing-th2/Plan/mais.th2
-		join SP-Mais SP-Mais-2010
-	# Galerie du Petit Dino
-		join SP-dino-1@dino SP-Erreur -count 2
-## Réseau des Bourguignons	
-	input Drawing-th2/Plan/bourguignons.th2
-## Réseaux Anou2, Jaunisse, Grand Escalier
-	input Drawing-th2/Plan/anou2.th2
-		join SP-Anou2 SP-Mais
-		join SP-flash SP-Mais
-		join SP-anou2bis SP-Mais
-	input Drawing-th2/Plan/gd-escalier.th2
-		join SP-anou2bis SP-grdescalier
-		join SP-grdescalier SP-Mais
-
-## Le V4 et le V6	
-	input Drawing-th2/Plan/V4.th2
-		join SP-V4-2 SP-quitombea
-		join SP-V6 SP-Mais
-## Le V5
-	input Drawing-th2/Plan/V5.th2
-		join SP-V6 SP-V5
-## Le V4 et l'Eté Indien
-	join SP-V4 SP-EteIndien-1@Ete-Indien -count 3
-
-## La Pierre Qui Tombe
-	input Drawing-th2/Plan/pierrequitombe.th2
-		join SP-pierretombe SP-anou2bis
-		join SP-mangerjct SP-papy2
-		join SP-quitombe4 SP-pquitombeend
-
-## V4 - Puits Alain
-	join SP-pAlain SP-V4-2
-
-## Le réseau du Solitaire
-	# Jointure dessins Puits des Savoyards, galerie Pixa
-	join SP-Pixa-1@Pixa.Solitaire SP-V4-2
-	join SC-Pixa-1@Pixa.Solitaire SC-V4c1
-	# Jointure Puits Alain et Solitaire
-	join SP-pAlain SP-solitaire_plan@Solitaire.Solitaire
-#	input Drawing-th2/Plan/solitaire-plan.th2
-#	input Drawing-th2/Plan/solitaire-plan2017.th2
-#		join SP-solitaire_plan SP-sol2017-1 -count 2
-#	input Drawing-th2/Plan/solitaire2018.th2
-#		join SP-Solitaire-c-2018_2 SP-solitaire_plan
-#		###join SP-Solitaire2018-SP1 SP-sol2017-1
-#	input Drawing-th2/Plan/solitaire2019_1.th2
-#		join SP-solitaire2019-1 SP-Solitaire-c-2018_3
-#	input Drawing-th2/Plan/solitaire2019_2.th2
-#		join SP-solitaire2019-2 SP-sol2017-1
-#	input Drawing-th2/Plan/solitaire2019_3.th2
-#		join SP-Solitaire-2019c1 SP-Sol_2019b_1
-#	input Drawing-th2/Plan/solitaire2019_4.th2
-#		join SP-Sol2019d-1 SP-solitaire2019-1
-
-#	input Data-th/Solitaire/th2/solitaire-plan2020.th2
-#		join SP-Solitaire2020-1 SP-Sol2019d-1
-#	input Data-th/Solitaire/th2/solitaire-plan2021.th2
-
-
-######### A MODIFIER a partir d'ici ##############     
-## La rivière vers l'aval
-## L'arrivée à la cascade Jean Dupont
-	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
-		#join V4-2 pAlain # au niveau du Téléphérique
-		join SC-V4c1 SC-dupontc2
-	
-## Rivière à l'aval de la Jean Dupont
-	input Drawing-th2/Plan/riv-debut.th2
-	input Drawing-th2/Plan/riviere.th2
-		join SP-riv-3 SP-riv-4
-	input Drawing-th2/Plan/bivouac500.th2
-		join SP-bivouac500 SP-riv-5
-
-# Galerie du P11
-	##join SP-P11-h1 ???
-
-## La zone de la Gourance
-	input Drawing-th2/Plan/gourance.th2
-		join SP-gourance-1 SP-bivouac500c
-
-## Riviere de la base de la Gourance aux Cinglés
-	input Drawing-th2/Plan/toussaint.th2
-		####join SP-gourance5 SP-gourance2	#### A REVOIR ????
-		
-## Zone du Bivouac -900 et Sezhommes
-## Des Cinglés au Bivouac -900
-	# Cette topographie est pour l'instant la topo originale de 1991.
-	# Il faut la remplacer par la retopographie de 2012 par l'USAN.
-	input Drawing-th2/Plan/chaos.th2
-		join SP-cingles SP-riv-11
-## Galerie de la Nuit Blanche
-	input Drawing-th2/Plan/JB-nuitblanche.th2
-
-## Galerie de Sezhommes avec zone de -900 m
-	join SP-sezhommes2020-1@Sezhommes SP-900-1	# au niveau bivouac -900 m
-
-## Zone des siphons terminaux
-	join SP-sezhommes2@Sezhommes SP-S1@Siphons
-
- 
-##########################################################################################
-## Pour importer les différents fichiers de dessins en coupe développée
-
-## Le C37
-	input Drawing-th2/Coupe/C37-coupe.th2
-		#join ?? ??
-    #input Drawing-th2/Coupe/affluentC14-coupe.th2
-    	join SC-affluent-C14_c1@AffluentC14 SC-archec2 
-    input Drawing-th2/Coupe/voltigeurs-coupe.th2
-    	join SC-voltic1 SC-C37c3
-## Le B22
-	input Drawing-th2/Coupe/B22-coupe.th2
-		join SC-B22c1 SC-B22cx
-		join SC-B22c2 SC-elyseesc1 
-## Le B21
-	input Drawing-th2/Coupe/B21-coupe.th2
-		##join SC-B21c SC-B22c3
-
-# Le B19	
-	input Drawing-th2/Coupe/B19-coupe.th2 
-	input Drawing-th2/Coupe/B19senecaliens-coupe.th2
-		join SC-B19c1 SC-B19c2
-## Le Lavoir
-	#input Drawing-th2/Coupe/lavoirsommet-coupe.th2
-	#input Drawing-th2/Coupe/lavoir-coupe2015.th2
-	#	join SC-lavoirc1 SC-lavoirc2 
-	#input Drawing-th2/Coupe/brownies-coupe.th2
-	#	join SC-lavoirc2 SC-browniesc1
-	#input Drawing-th2/Coupe/fileOu-coupe2019.th2
-	#	join SC-fileouc1 SC-fileOu2019-1
-	#input Drawing-th2/Coupe/FileOu-coupe.th2
-	#	join SC-fileouc1 SC-lavoirc5
-## Le V11 et les Aiguilles
-	input Drawing-th2/Coupe/V11-coupe.th2
-		join SC-aiguillesc1 SC-lavoirc7@Lavoir
-		##join SC-excenc2 SC-excenLavoir???
-
-# Réseau du Couteau Grenoblois
-	join SC-CouteauGc1@CouteauG SC-V11c3
-# Puits que L'on Traverse
-	join SC-traversec1@PuitsTraverse SC-V11c5
-
-## Le 14J
-	input Drawing-th2/Coupe/14J-coupe.th2
-## Les Branlots
-	join SC-J14c3 SC-s_branlots-c1@ShuntBranlots
-	join SC-branlotsc1 SC-V11c5
-	##join SC-berreurc1 ??
-## Le V4 et le Mais
-	input Drawing-th2/Coupe/V4-coupe.th2
-		join SC-berreurc1@Erreur SC-maisc1
-		#join SC-V4c1 SC-dupontc3 	
-		join SC-maisc1 SC-V6c1
-	# Galerie du Petit Dino
-		join SC-maisc1 SC-dino-coupe@dino
-	input Drawing-th2/Coupe/jaunisse-coupe.th2
-		join SC-jaunissec6 SC-anou2c3
-		join SC-jaunissec7 SC-anou2c1
-		join SC-jaunissec7 SC-anou2c2
-		join SC-jaunissec3 SC-chatonsc1
-## Le V4 et l'Eté Indien
-	#join SC-V4c4 SC-EteIndien-1@Ete-Indien -count 3
-
-
-### Le réseau du Solitaire
-#	input Drawing-th2/Coupe/solitaire-coupe2017.th2
-#	input Drawing-th2/Coupe/solitaire-coupe2018.th2
-#	input Drawing-th2/Coupe/solitaire2019-coupe1.th2
-#		join SC-Solitaire-c_2018-1 SC-solitaire2019-1 #Solitaire2018-SC1
-#	input Drawing-th2/Coupe/solitaire2019-coupe2.th2
-#		join SC-sol-C1 SC-solitaire2019-2
-#	input Drawing-th2/Coupe/solitaire2019-coupe3.th2
-#	input Drawing-th2/Coupe/solitaire2019-coupe4.th2
-#		join SC-Solitaire-2019c1 SC-Sol-2019b-1
-
-#	input Data-th/Solitaire/th2/solitaire-coupe2020.th2
-#	input Data-th/Solitaire/th2/solitaire-coupe2021.th2
-#		join SC-Solitaire-2021-1 SC-Solitaire-2019c1
-
-## La rivière aval
-	input Drawing-th2/Coupe/avalc1
-		join SC-avalc1@Sezhommes SC-S1-c@Siphons	# Erreur ici ???
-		join SC-avalc5 SC-balconc1
-	input Drawing-th2/Coupe/aval400.th2
-		join SC-400c1 SC-biv500c4
-## Le Bivouac -500
-	input Drawing-th2/Coupe/aval500.th2
-
-## La Gourance	
-	join SC-balconc1 SC-GourecoupeSteph3@GoureToi
-	join SC-GourecoupeSteph3@GoureToi SC-balcon2 # Plafonds de la Gourance
-	join SC-Gourance2013-c1@Gourance2013 SC-balcon2	# Escalade 2013 dans l'aval de la Gourance
-	join SC-balcon3 SC-Gourance2022-1@GoureToi
-
-## Le réseau de Sezhommes
-	join SC-avalc2 SC-sezhommes2020-3@Sezhommes
-## Les siphons terminaux
+	##################################################################################################
 
 endsurvey

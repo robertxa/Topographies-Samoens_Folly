@@ -30,9 +30,11 @@ survey Ete-Indien -title "L'Eté Indien"
     0 . 0.54 130.7 20.3
     0 . 0.50 65.9 29.3
     extend left
+    flags duplicate
     0 1 4.69 189.2 -77.4  # puits du Chicot, P5
     extend left
     0 2 11.49 154.3 -42.0
+    flags not duplicate
     extend right
     0 3 2.22 97.5 42.4
     # extend auto

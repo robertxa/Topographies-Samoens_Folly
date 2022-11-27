@@ -7,8 +7,8 @@ encoding  utf-8
 survey Ete-Indien -title "Réseau de l'Eté Indien"
 	# Données topos
 	input Data/Ete-Indien.th
-	#input Data/jb_Ete-Indien2020a.th
-	#	equate 1@Ete-Indien2020a 2019d-FD-10@Ete-Indien
+	input Data/chicot.th
+		equate 3@Ete-Indien 11@chicot
 	
 	# Dessins
 	input Data/Ete-Indien.th2
