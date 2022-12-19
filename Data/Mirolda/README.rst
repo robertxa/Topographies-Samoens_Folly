@@ -62,4 +62,4 @@ Xavier Robert (xavier.robert@ird.fr)
 How to cite
 -----------
 
-Robert, X., Interclub Criou, Base de données Topographiques des systèmes karstiques du massif du Criou (Samoëns, 74, France), https://github.com/robertxa/Mirolda , 2022. 
+Robert, X. et Collectif Criou, Base de données Topographiques des systèmes karstiques du massif du Criou (Samoëns, 74, France), https://github.com/robertxa/Mirolda , 2022. 
