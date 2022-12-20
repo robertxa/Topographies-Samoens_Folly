@@ -1307,7 +1307,7 @@ centerline
 
     date 1989.02.13 
      team "GS URSUS"
-     team "Sylvain MAtricon"
+     team "Sylvain Matricon"
      team "Pierre ?"
      team "Jacques Gudefin"
 
@@ -1354,7 +1354,32 @@ centerline
 721	722	29780.0   30344.0  170.00  -42.00   1.00   1.00   2.00		2	#
 722	723	30344.0   32070.0  171.00    0.00   1.00   1.00   2.00		2	#
 723	724	32070.0   33828.0  175.00  -24.00   1.00   1.00   2.00		2	#
-# Il en manque, est-ce à rajouter ????
+
+endcenterline
+
+centerline
+
+    date 1989.02.13 
+     team "GS URSUS"
+     team "Sylvain Matricon"
+     team "Pierre ?"
+     team "Jacques Gudefin"
+
+    units length meters
+    units compass clino degrees
+    units counter centimeters
+    calibrate counter 0 1.000
+    data topofil from to fromcount tocount compass clino #left right up down
+    #data normal from to fromcount tocount compass clino left right up down	
+    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std		
+    # Post-trémie, rajout des dernières lignes du listing URSUS par Xavier Robert
+    flags duplicate
+    724 724b    33828   34618   82  -12 # 102
+    724b    724c   34618    35130   186  -11    #101
+    724c    724d   35130    35807   178  -21    #111
+    724d    724e   35807    36478   187  -10    #100
+    724e    724f   36478    38113   173  -8 #98
+    flags not duplicate
 
 endcenterline
 
