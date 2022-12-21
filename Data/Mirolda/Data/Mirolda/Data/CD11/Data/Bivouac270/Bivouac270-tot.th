@@ -9,6 +9,9 @@ survey Bivouac270 -title "Gouffre Mirolda - La Majestueuse"
 	input Data/madg0.th
 	input Data/20220912miroldaXR1.th
 		equate PTRMAXR0@madg0 PTRMAXR0@20220912miroldaXR1
+	input Data/VieuxTRO.th
+		equate 117@CD11-Affluents 16@20220912miroldaXR1
+		equate 64@CD11-Affluents 6@madg0
 	
 	# Import du dessin en plan
 	input Data/20220912miroldaXR1.th2

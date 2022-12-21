@@ -24,8 +24,27 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	#	Il faudra mettre à jour ce fichier topo, 
 	#	en indiquant à chaque fois les visées qui seront dupliquées par notre topo 
 	#	au fur et à mesure de l'avancement !
-	input Data/TRO/CD11-tot.th
-	
+	#TOUTE LA TOPO DES CAVERNICOLES
+	#input Data/TRO/CD11-tot.th
+	# Amont de la rivière Majestueuse, vers le VF3
+	input Data/Amont-Majestueuse/Amont-Majestueuse-tot.th
+		equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
+	# Amont de la salle de la Confluence:
+	input Data/Amont-Confluence/AmontConfluence-tot.th
+		equate 181@AmontConfluence.AmontConfluence 33@20220913MiroldaXR1.Confluence
+	# Départ Bivouac -600
+	input Data/Bivouac-600/Bivouac-600-tot.th
+		equate 354@Bivouac-600.Bivouac-600 PTRRDBF1@riviere_tonitruante.500
+	# Aval de la rivière Dragounet
+	input Data/Aval-Dragounet/Aval-Dragounet-tot.th
+		equate 384@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
+
+	# Aval du CD11
+	input Data/AvalTRO/AvalTRO-tot.th
+		equate 423@AvalTRO.AvalTRO PTRMFBF0@riviere_tonitruante.500
+
+
+
 	# Jonctions des dessins en plan
 	# Jonction au niveau de -97 m
 	join SP-CD11-1@CD11 SP-MA-6@Bivouac270

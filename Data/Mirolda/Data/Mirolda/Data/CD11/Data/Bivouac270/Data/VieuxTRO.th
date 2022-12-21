@@ -1,0 +1,49 @@
+encoding  utf-8				
+					
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>			
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:	
+#   "<http://creativecommons.org/licenses/by-nc-sa/4.0/>"
+					
+# Ce fichier topo a été construit par Xavier Robert (09/2022), à partir des données Visual Topo du CD11,
+#   données levées par l'ASE et les Cavernicoles et retrouvées tout à fait par hasard.			
+#   Ce fichier correspond à l'état de la topographie en mai 2003.			
+#   Il est à noter qu'aucune des sessions topographiques n'est datée,			
+#   ce qui fait que les données d'azimuth ne peuvent pas être corrigées de la déclinaison magnétique.
+#   Le positionnement des galeries du fond sont donc assez approximatives.	
+#   Aussi, les LRUD paraissent complètement arbitraires, il ne faut probablement pas les prendre en considération
+					
+survey	CD11-Affluents -title "CD11-Affluents, version Tro de 2003"
+
+centerline
+
+    #date 2022.09.13 
+     team "GS Cavernicoles"
+
+    units length meters
+    units compass clino degrees
+    units counter centimeters
+    calibrate counter 0 1.000
+    data topofil from to fromcount tocount compass backclino left right up down
+    #data normal from to fromcount tocount compass clino left right up down	
+    # Param Topof 1.000 Deg Vulc Deg 0.0000 Dir,Dir,Dir Inc Std						
+    
+    64	65	98789	100003	192	0	1	1	2	2	#	Station 64 ici = Station 6 Mag0						
+    65	66	3	458	195	0	1	1	2	2	#		
+
+
+    106	107	15509	16423	0	90	1	1	2	2	#	départ de 117 ; Modifé par Xav
+    107	108	16423	16634	298	22	1	1	2	2	#							
+    108	109	16634	16989	170	22	1	1	2	2	#							
+    109	110	16989	17739	185	16	1	1	2	2	#							
+    110	111	17739	18039	131	8	1	1	2	2	#							
+    111	112	18039	18780	195	32	1	1	2	2	#							
+    112	113	18780	19539	196	21	1	1	2	2	#							
+    113	114	19539	19845	147	28	1	1	2	2	#							
+    114	115	19845	20440	148	19	1	1	2	2	#							
+    115	116	20440	20842	136	30	1	1	2	2	#
+
+    107	117	84737	84875	247	33	1	1	2	2	#	Se	rattache	à	107 ; 117 ici = 16 de XR
+
+endcenterline
+
+endsurvey				

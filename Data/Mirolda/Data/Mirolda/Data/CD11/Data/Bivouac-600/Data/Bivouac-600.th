@@ -1,0 +1,66 @@
+encoding  utf-8				
+					
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>			
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:	
+#   "<http://creativecommons.org/licenses/by-nc-sa/4.0/>"
+					
+# Ce fichier topo a été construit par Xavier Robert (09/2022), à partir des données Visual Topo du CD11,
+#   données levées par l'ASE et les Cavernicoles et retrouvées tout à fait par hasard.			
+#   Ce fichier correspond à l'état de la topographie en mai 2003.			
+#   Il est à noter qu'aucune des sessions topographiques n'est datée,			
+#   ce qui fait que les données d'azimuth ne peuvent pas être corrigées de la déclinaison magnétique.
+#   Le positionnement des galeries du fond sont donc assez approximatives.	
+#   Aussi, les LRUD paraissent complètement arbitraires, il ne faut probablement pas les prendre en considération
+					
+survey	Bivouac-600 -title "CD11-Bivouac-600, version Tro de 2003"
+
+centerline
+
+    #date 2022.09.13 
+     team "GS Cavernicoles"
+
+    units length meters
+    units compass clino degrees
+    units counter centimeters
+    calibrate counter 0 1.000
+    data topofil from to fromcount tocount compass clino left right up down
+    #data normal from to fromcount tocount compass clino left right up down	
+    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std			
+354	578	79550.0   80328.0  260.00   15.00   1.00   1.00   2.00		2	# Station 354 correspond à station PTRRDBF1
+578	579	80328.0   81116.0  245.00   40.00   1.00   1.00   2.00		2	#
+579	580	81116.0   82224.0  285.00   10.00   1.00   1.00   2.00		2	#
+580	581	82224.0   82763.0  288.00    7.00   1.00   1.00   2.00		2	#
+581	582	82763.0   83300.0    0.00   34.00   1.00   1.00   2.00		2	#
+582	583	83300.0   84066.0  305.00   13.00   1.00   1.00   2.00		2	#
+583	584	84066.0   85370.0   42.00   40.00   1.00   1.00   2.00		2	#
+584	585	85370.0   86100.0   85.00   22.00   1.00   1.00   2.00		2	#
+585	586	86100.0   86607.0   75.00   20.00   1.00   1.00   2.00		2	#
+586	587	86607.0   87108.0   65.00    3.00   1.00   1.00   2.00		2	#
+587	588	87108.0   88734.0    7.00   12.00   1.00   1.00   2.00		2	#
+588	589	88734.0   89289.0  325.00   12.00   1.00   1.00   2.00		2	#
+589	590	89289.0   90203.0   80.00   51.00   1.00   1.00   2.00		2	#
+590	591	90203.0   91361.0   75.00   20.00   1.00   1.00   2.00		2	#
+591	592	91361.0   91754.0  105.00   28.00   1.00   1.00   2.00		2	#
+592	593	91754.0   92233.0  115.00   50.00   1.00   1.00   2.00		2	#
+593	594	92233.0   92652.0  110.00   32.00   1.00   1.00   2.00		2	#
+594	595	92652.0   93525.0  115.00    3.00   1.00   1.00   2.00		2	#
+595	596	93525.0   93934.0   95.00    8.00   1.00   1.00   2.00		2	#
+596	597	93934.0   95400.0  120.00    5.00   1.00   1.00   2.00		2	#
+597	598	95400.0   95996.0  358.00   30.00   1.00   1.00   2.00		2	#
+598	599	95996.0   97145.0  112.00    9.00   1.00   1.00   2.00		2	#
+599	600	97145.0   97825.0   10.00   37.00   1.00   1.00   2.00		2	#
+600	601	97825.0   99413.0   95.00    0.00   1.00   1.00   2.00		2	#
+601	602	99413.0   99905.0  170.00    0.00   1.00   1.00   2.00		2	#
+602	603	0.0    1644.0   90.00  -17.00   1.00   1.00   2.00		2	#
+603	604	1549.0    3477.0   75.00   15.00   1.00   1.00   2.00		2	#
+604	605	3477.0    5068.0   80.00    5.00   1.00   1.00   2.00		2	#
+605	606	5068.0    6068.0   80.00   52.00   1.00   1.00   2.00		2	#
+606	607	6068.0    6720.0   45.00  -40.00   1.00   1.00   2.00		2	#
+607	608	6720.0    6998.0   80.00   -4.00   1.00   1.00   2.00		2	#
+608	609	6998.0    7572.0   95.00   50.00   1.00   1.00   2.00		2	#
+609	610	7743.0    8232.0   65.00    0.00   1.00   1.00   2.00		2	#
+610	611	8232.0    8762.0   45.00  -42.00   1.00   1.00   2.00		2	#
+
+endcenterline
+
+endsurvey				

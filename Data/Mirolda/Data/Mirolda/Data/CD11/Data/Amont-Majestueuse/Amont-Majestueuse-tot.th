@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Amont-Majestueuse -title "Gouffre Mirolda - Amont Majestueuse"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/Amont-Majestueuse.th
+	
+	# Import du dessin en plan
+	#input Data/Amont-Majestueuse.th2
+
+	# Import du dessin en coupe
+	#input Data/Amont-Majestueuse-coupe.th2
+
+	# Import des maps
+	#input Amont-Majestueuse-maps.th
+ 
+ endsurvey
+ 

@@ -1,0 +1,68 @@
+encoding  utf-8				
+					
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>			
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:	
+#   "<http://creativecommons.org/licenses/by-nc-sa/4.0/>"
+					
+# Ce fichier topo a été construit par Xavier Robert (09/2022), à partir des données Visual Topo du CD11,
+#   données levées par l'ASE et les Cavernicoles et retrouvées tout à fait par hasard.			
+#   Ce fichier correspond à l'état de la topographie en mai 2003.			
+#   Il est à noter qu'aucune des sessions topographiques n'est datée,			
+#   ce qui fait que les données d'azimuth ne peuvent pas être corrigées de la déclinaison magnétique.
+#   Le positionnement des galeries du fond sont donc assez approximatives.	
+#   Aussi, les LRUD paraissent complètement arbitraires, il ne faut probablement pas les prendre en considération
+					
+survey	AmontConfluence -title "Amont de la salle de la Confluence, version Tro de 2003"
+
+centerline
+
+    #date 2022.09.13 
+     team "GS Cavernicoles"
+
+    units length meters
+    units compass clino degrees
+    units counter centimeters
+    calibrate counter 0 1.000
+    data topofil from to fromcount tocount compass clino left right up down
+    #data normal from to fromcount tocount compass clino left right up down		
+    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std	
+    # Amonts dans le bas de la salle de la Confluence. 
+    #   Est-ce l'amont de la rivière l'Impétueuse ?
+    #   D'après les topos, ça n'a pas l'air !
+181	5500	59601.0   60219.0  340.00  -49.00   1.00   1.00   2.00		2	#   Station 181 ici = station 33 XR
+5500	5501	60219.0   61285.0   70.00   -7.00   1.00   1.00   2.00		2	#
+5501	5502	61285.0   61963.0   94.00   15.00   1.00   1.00   2.00		2	#
+5502	5503	61963.0   62683.0   71.00    1.00   1.00   1.00   2.00		2	#
+5503	5504	62906.0   63294.0   72.00   40.00   1.00   1.00   2.00		2	#
+5504	5505	63294.0   63795.0   54.00  -17.00   1.00   1.00   2.00		2	#
+5505	5506	63795.0   64356.0   56.00   30.00   1.00   1.00   2.00		2	#
+5506	5507	64356.0   64858.0   75.00   28.00   1.00   1.00   2.00		2	#
+5507	5508	64858.0   65565.0   79.00    7.00   1.00   1.00   2.00		2	#
+5508	5509	65565.0   66650.0   76.00   13.00   1.00   1.00   2.00		2	#
+5509	5510	77989.0   79259.0    0.00   90.00   1.00   1.00   2.00		2	#
+5510	5511	66651.0   67042.0    4.00  -11.00   1.00   1.00   2.00		2	#
+5511	5512	67042.0   67709.0  330.00  -35.00   1.00   1.00   2.00		2	#
+5512	5513	67709.0   67944.0  352.00   21.00   1.00   1.00   2.00		2	#
+5513	5514	67944.0   68059.0  310.00   14.00   1.00   1.00   2.00		2	#
+5514	5515	68059.0   68301.0   12.00    7.00   1.00   1.00   2.00		2	#
+5515	5516	68515.0   68764.0   38.00   38.00   1.00   1.00   2.00		2	#
+5516	5517	68977.0   69199.0  323.00   60.00   1.00   1.00   2.00		2	#
+5517	5518	69595.0   70378.0    2.00   34.00   1.00   1.00   2.00		2	#
+5518	5519	70378.0   70583.0  241.00  -18.00   1.00   1.00   2.00		2	#
+5519	5520	70583.0   71255.0    6.00   40.00   1.00   1.00   2.00		2	#
+5520	5521	71255.0   71602.0   14.00  -18.00   1.00   1.00   2.00		2	#
+5521	5522	71602.0   71968.0  319.00   16.00   1.00   1.00   2.00		2	#
+5522	5523	71968.0   72234.0  290.00   40.00   1.00   1.00   2.00		2	#
+5523	5524	72234.0   72410.0   15.00   25.00   1.00   1.00   2.00		2	#
+5524	5525	72410.0   72605.0  341.00   35.00   1.00   1.00   2.00		2	#
+5525	5526	72605.0   73238.0   24.00   21.00   1.00   1.00   2.00		2	#
+5526	5527	73238.0   73634.0  304.00    5.00   1.00   1.00   2.00		2	#
+5527	5528	73634.0   74036.0   12.00   32.00   1.00   1.00   2.00		2	#
+5528	5529	74036.0   75051.0   26.00   30.00   1.00   1.00   2.00		2	#
+5529	5530	75051.0   76126.0  336.00   27.00   1.00   1.00   2.00		2	#
+5530	5531	76126.0   77045.0  344.00   48.00   1.00   1.00   2.00		2	#
+5531	5532	77045.0   77977.0  349.00   19.00   1.00   1.00   2.00		2	#
+
+endcenterline
+
+endsurvey				
