@@ -6,9 +6,11 @@ encoding  utf-8
 
 survey prospectionCriou -title "Prospection Criou"
 	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/ZoneB/B-tot.th
 	input Data/ZoneCA/CA-tot.th
 	input Data/ZoneCB/CB-tot.th
 	input Data/ZoneCD/CD-tot.th
+	input Data/ZoneCM/CM-tot.th
 	input Data/ZoneCE/CE-tot.th
 	input Data/ZoneCF/CF-tot.th
 	input Data/ZoneE/E-tot.th

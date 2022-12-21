@@ -18,13 +18,15 @@ fix       CF3       944140     2130630     2200
 fix       CF4       944230     2130720     2240
 fix       CF5       944490     2130940     2340
 fix       CF6       944530     2130940     2345
+#fix       CF6       944490     2130980     2350 # Data Colliard - Spelealpes 08
 
 station   CF1       "CF1" entrance #air-draught continuation explored 28m
 #station   CF2       "CF2" entrance air-draught continuation explored 28m
 station   CF3       "CF3" entrance #air-draught continuation explored 28m
 station   CF4       "CF4/F105" entrance continuation explored 70m
 station   CF5       "CF5" entrance air-draught #continuation explored 28m
-station   CF6       "CF6" entrance #air-draught #continuation explored 28m
+#station   CF6       "CF6" entrance #air-draught #continuation explored 28m
+station   CF6       "CF6" entrance continuation explored 447m #profondeur -140 m
 
 endcenterline
 

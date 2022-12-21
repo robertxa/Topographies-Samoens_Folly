@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Superieur -title "Gouffre Le Supérieur"
+
+ centerline -extend right
+    
+    date 2021.08.12
+        team "Xavier Robert"
+    explo-team 1981
+        explo-team "Spéléo Club/Cavernicoles"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+
+    ##fix EU841	944.1	130.36	2080
+    fix Superieur	943120	2130630	1950
+    station Superieur "G. Le Supérieur" entrance #air-draught
+  
+endcenterline
+
+ endsurvey
