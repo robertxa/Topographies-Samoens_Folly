@@ -33,9 +33,10 @@ encoding  utf-8
 
 # DEM
 # source dem_Samoens.th
-
-source Bossetan.th
-
+source SanBet.th
+ #source Data/LaGouille/LaGouille-tot.th
+ #source Data/Prospection/Prospection-tot.th
+ 
 # Add config file
 input ../../config.thc 
   
@@ -101,6 +102,7 @@ layout my_layout
   surface bottom
   surface-opacity 100
   
+  
   # Pour faire une rotation
   #rotate 2.25
   
@@ -108,7 +110,7 @@ layout my_layout
   doc-author "Xavier Robert"
 
   # Titule
-  doc-title "Massif du Gouffre Jean-Bernard - 1:1000"
+  doc-title "Massif de San Bet - 1:1000"
 
   # Maitenant on va specifier la position de la manchette, dont l'interieur
   # sera ocuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -160,8 +162,7 @@ layout my_layout
   
   # Dessin ou pas du cheminement topo
 #  symbol-hide point station        
-#  symbol-hide line survey
-debug station-names
+  symbol-hide line survey
   
  # origin 12 22 0 m
  # origin-label 100 K
@@ -181,11 +182,11 @@ debug station-names
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau du Gouffre Jean-Bernard} 
+			\cavename={Réseau de San Bet} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		\newtoks\synth \synth={Xavier Robert (2022)}
 	endcode   
  
 
@@ -199,15 +200,15 @@ debug station-names
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Folly-Xav-2010-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Folly-Xav-2010-coupe.pdf
-#export atlas -o Outputs/atlas-JB.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/SanBet-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout my_layout -o Outputs/SanBet-coupe.pdf
+#export atlas -o Outputs/atlas-SanBet.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
-# export model -enable all -o Outputs/Folly-Xav-2010.lox
+# export model -enable all -o Outputs/SanBet.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Folly-Xav-2010 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/SanBet -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Folly-Xav-2010.kml -layout my_layout
+# export map -proj plan -fmt kml -o Outputs/SanBet.kml -layout my_layout

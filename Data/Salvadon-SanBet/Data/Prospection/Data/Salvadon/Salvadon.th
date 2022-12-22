@@ -1,0 +1,29 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey Salvadon -title "Zone Salvadon"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+fix       Deux-Dedes       946250     2130650     1900
+fix       Marmotte       946100     2130700     1870
+fix       Revenants       945806     2130698     1844
+fix       FLT44       945793     2130701     1813
+
+#cs UTM32
+#fix A3   328955 5110647 1969
+
+station Deux-Dedes  "T. des 2 Dédés" entrance continuation explored 60m
+station   Marmotte      "T. de la Marmotte" entrance continuation explored 200m
+station   Revenants      "T. des Revenants (FLT33)" entrance air-draught continuation explored 330m
+station   FLT44      "T. des Revenants (FLT44" entrance air-draught #continuation explored 200m
+
+endcenterline
+
+endsurvey

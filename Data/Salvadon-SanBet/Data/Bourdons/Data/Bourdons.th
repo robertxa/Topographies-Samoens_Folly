@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Bourdons -title "Tanne des Bourdons"
+
+ centerline -extend right
+    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+	
+    fix Bourdons	945320	2130560	1750
+    station Bourdons "T. des Bourdons" entrance air-draught continuation explored 1400m    # Scialet 10
+    
+  
+endcenterline
+
+ endsurvey

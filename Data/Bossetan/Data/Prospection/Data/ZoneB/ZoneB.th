@@ -1,0 +1,29 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey ZoneB -title "Zone B"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+fix       B100       943590     2134900     1908
+
+cs UTM32
+fix B125    328097  5110273 1775
+fix B126    327599  5109954 1590
+fix B135    327541  5110408 1760
+
+
+station   B100      "T. des Gogalets - B100" entrance air-draught continuation explored 1150m    # Spéléalpes 10 + 26
+station   B125      "B125" entrance #air-draught continuation explored 1150m
+station   B126      "B126" entrance #air-draught continuation explored 1150m
+station   B135      "B135" entrance #air-draught continuation explored 1150m
+
+endcenterline
+
+endsurvey

@@ -4,20 +4,20 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey Cathedrale -title "La Cathédrale"
+survey ZoneA -title "Zone A"
 
 # Fichier contenant les positions des entrées de la zone AV, Samoens, France
 
  centerline
 #cs lat-long
-#cs EPSG:27572 # LII Etendu
+cs EPSG:27572 # LII Etendu
+fix       A9       943530     2134740     1850
+
 cs UTM32
+fix A3   328955 5110647 1969
 
-fix       Cathedrale       329192     5110925     2109
-fix       T5-D       328035.78     5110094.28     1702
-
-station   Cathedrale       "La Cathedrale - B11" entrance continuation explored 60m
-station   T5-D      "T5-D" entrance air-draught #continuation explored 60m
+station A3  "G. A3" entrance air-draught continuation explored 5000m
+station   A9      "G. de Bossetan - A9" entrance air-draught continuation explored 200m
 
 endcenterline
 

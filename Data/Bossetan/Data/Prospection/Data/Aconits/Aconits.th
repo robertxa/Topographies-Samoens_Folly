@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey Cathedrale -title "La Cathédrale"
+survey Aconits -title "Gouffre des Aconits et des Orages"
 
 # Fichier contenant les positions des entrées de la zone AV, Samoens, France
 
@@ -13,11 +13,11 @@ survey Cathedrale -title "La Cathédrale"
 #cs EPSG:27572 # LII Etendu
 cs UTM32
 
-fix       Cathedrale       329192     5110925     2109
-fix       T5-D       328035.78     5110094.28     1702
+fix       Aconits       328578     5110383     1871
+fix       Orages       328567     5110372     1855
 
-station   Cathedrale       "La Cathedrale - B11" entrance continuation explored 60m
-station   T5-D      "T5-D" entrance air-draught #continuation explored 60m
+station   Aconits       "G. des Aconits" entrance air-draught continuation explored 1050m
+station   Orages       "G. des Orages" entrance air-draught #continuation explored 60m
 
 endcenterline
 

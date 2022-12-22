@@ -4,16 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey prospectionCriou -title "Prospection Criou"
+survey Artistes -title "Tanne Artistes"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/ZoneA/ZoneA-tot.th
-	input Data/ZoneB/ZoneB-tot.th
-	input Data/Cathedrale/Cathedrale-tot.th
-	input Data/Aconits/Aconits-tot.th
-	input Data/Bizolet/Bizolet-tot.th
+	input Data/Artistes.th
+	
+	# Import du dessin en plan
+	#input Data/Artistes.th2
+
+	# Import du dessin en coupe
+	#input Data/Artistes-coupe.th2
 
 	# Import des maps
-	#input Prospection-maps.th
+	#input Artistes-maps.th
  
  endsurvey
  

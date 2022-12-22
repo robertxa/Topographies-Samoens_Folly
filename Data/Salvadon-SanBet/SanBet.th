@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey SystemeSanBet -title "Système de San Bet"
+# Pour importer les différentes données de différents fichiers topos : 
+	input Data/LaGouille/LaGouille-tot.th
+	input Data/Cassina/Cassina-tot.th
+	input Data/Beliers/Beliers-tot.th
+	input Data/Bourdons/Bourdons-tot.th
+	input Data/Artistes/Artistes-tot.th
+ 	
+	input Data/Prospection/Prospection-tot.th
+
+	#input Bossetan-maps.th
+endsurvey
+ 

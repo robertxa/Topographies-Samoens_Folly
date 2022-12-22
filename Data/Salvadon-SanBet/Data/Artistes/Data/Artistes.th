@@ -1,0 +1,28 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Artistes -title "Tanne Artistes"
+
+ centerline -extend right
+    
+    
+    date 2021.08.12
+        team "Xavier Robert"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+	
+    fix Artistes	945680	2130690	1775
+    fix Inaccessible 945500	2130660	1750
+    station Artistes "T. Artistes" entrance air-draught continuation explored 3020m    # Scialet 10
+    station Inaccessible "T. Inaccessible" entrance air-draught #continuation explored 3020m    # Scialet 10
+    #fix E74	943960	2130370	2070
+    #station E74 "Artistes" entrance air-draught
+  
+endcenterline
+
+ endsurvey

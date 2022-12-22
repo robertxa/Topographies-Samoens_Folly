@@ -4,20 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey Cathedrale -title "La Cathédrale"
+survey Pisse-Froid -title "Tanne des Pisse-Froid"
 
 # Fichier contenant les positions des entrées de la zone AV, Samoens, France
 
  centerline
 #cs lat-long
-#cs EPSG:27572 # LII Etendu
-cs UTM32
+cs EPSG:27572 # LII Etendu
+#cs UTM32
 
-fix       Cathedrale       329192     5110925     2109
-fix       T5-D       328035.78     5110094.28     1702
+fix       Pisse-Froid       94372   2133400     2000
 
-station   Cathedrale       "La Cathedrale - B11" entrance continuation explored 60m
-station   T5-D      "T5-D" entrance air-draught #continuation explored 60m
+station   Pisse-Froid       "T. des Pisse-Froid" entrance #air-draught continuation explored 1050m  # Scialet 04
 
 endcenterline
 
