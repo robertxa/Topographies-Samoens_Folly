@@ -199,15 +199,16 @@ debug station-names
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Folly-Xav-2010-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Folly-Xav-2010-coupe.pdf
-#export atlas -o Outputs/atlas-JB.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/Bossetan-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Bossetan-coupe.pdf
+#export atlas -o Outputs/atlas-Bossetan.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
-# export model -enable all -o Outputs/Folly-Xav-2010.lox
+# export model -enable all -o Outputs/Bossetan.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Folly-Xav-2010 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/Bossetan -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Folly-Xav-2010.kml -layout my_layout
+# export map -proj plan -fmt kml -o Outputs/Bossetan.kml -layout my_layout
+export model -fmt kml -o Outputs/Bossetan-model.kml -enable all

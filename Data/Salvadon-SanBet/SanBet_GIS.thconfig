@@ -212,3 +212,4 @@ layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/SanBet.kml -layout my_layout
+export model -fmt kml -o Outputs/SanBet-model.kml -enable all

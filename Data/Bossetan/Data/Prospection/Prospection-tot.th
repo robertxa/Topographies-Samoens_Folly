@@ -4,13 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey prospectionCriou -title "Prospection Criou"
+survey prospectionBossetan -title "Prospection Bossetan"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/ZoneA/ZoneA-tot.th
 	input Data/ZoneB/ZoneB-tot.th
 	input Data/Cathedrale/Cathedrale-tot.th
 	input Data/Aconits/Aconits-tot.th
 	input Data/Bizolet/Bizolet-tot.th
+	input Data/Pisse-Froid/Pisse-Froid-tot.th
 
 	# Import des maps
 	#input Prospection-maps.th
