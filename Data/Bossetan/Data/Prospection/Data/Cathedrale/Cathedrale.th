@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey Cathedrale -title "La Cathédrale"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+#cs EPSG:27572 # LII Etendu
+cs UTM32
+
+fix       Cathedrale       329192     5116925     2109
+#fix       Cathedrale       329192     5110925     2109 # Vérifier quel est le bon chiffre
+
+station   Cathedrale       "La Cathedrale" entrance continuation explored 60m
+
+endcenterline
+
+endsurvey

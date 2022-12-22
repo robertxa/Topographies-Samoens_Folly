@@ -1,0 +1,30 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey prospectionCriou -title "Prospection Criou"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/ZoneB/B-tot.th
+	input Data/ZoneCA/CA-tot.th
+	input Data/ZoneCB/CB-tot.th
+	input Data/ZoneCD/CD-tot.th
+	input Data/ZoneCM/CM-tot.th
+	input Data/ZoneCE/CE-tot.th
+	input Data/ZoneCF/CF-tot.th
+	input Data/ZoneE/E-tot.th
+	input Data/ZoneEU/EU-tot.th
+	#input Data/ZoneGU/GU-tot.th	# Problème de positionnement !!!!
+	
+	# Import du dessin en plan
+	#input Data/F40.th2
+
+	# Import du dessin en coupe
+	#input Data/F40-coupe.th2
+
+	# Import des maps
+	#input F40-maps.th
+ 
+ endsurvey
+ 
