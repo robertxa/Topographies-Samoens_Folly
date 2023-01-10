@@ -1,0 +1,266 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+# 1-SOURCES 
+
+source ../../Data/jb.th
+# Add config file
+input ../../../../../config.thc 
+  
+# 2-LAYOUT
+
+#debut de la definition du layout "my_layout"
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig		# Pour modifier les symboles
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	copy headerl 			# Pour modifier le header/cartouche
+	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
+
+	cs UTM32
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	#grid bottom
+	#grid-size 1000 1000 1000 m  
+	grid off
+ 
+  	#color map-fg [100 100 80] # Jaune
+	#color map-fg [100 100 100] # Blanc
+	color map-fg [67 67 67] # Gris 
+  	transparency on
+	opacity 75
+	layers on
+
+	# Titule
+	doc-title "Gouffre Jean-Bernard - 1:1000"
+	map-header 40 35 nw
+	map-header-bg off
+  	legend off
+	legend-width 20 cm
+	map-comment "<it>Plan<ss> - Gouffre Jean-Bernard - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+  
+	# Modifier l'aspect et les données des statistiques de longueur affichees
+	#code tex-map
+	#     \cavelength{21460\thinspace{}m} 
+	#+ 150\thinspace{}m estimés}
+	#     \cavedepth{-1602\thinspace{}m}
+	#   endcode  
+  
+	symbol-hide line survey
+	#debug station-names
+                
+	# Titre                         
+    code tex-map
+		\edef\temp{\the\cavename}        % cavename from Therion   
+		\edef\nostring{}                 % empty string 
+		\ifx\temp\nostring             % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Réseau du Solitaire} 
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}		
+	endcode   
+	
+	# Add logos to the map
+	#map-image 0 100 sw ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf
+	#map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
+	#map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
+	map-image 0 90 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
+  
+endlayout
+# Fin de la definition du Layout "normal"
+
+layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig		# Pour modifier les symboles
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	copy header_coupe
+	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
+
+	base-scale 1 1000 
+	scale 1 1000
+	scale-bar 250 m
+	#grid bottom
+	#grid-size 1000 1000 1000 m  
+	grid off
+	color map-fg [100 100 80]  
+	transparency on
+	opacity 75
+	layers on
+  
+	# Titule
+	doc-title "Gouffre Jean-Bernard - 1:1000"
+	map-header 35 0 sw
+	map-header-bg off
+	legend off
+	legend-width 28 cm
+	map-comment "<it>Coupe développée<ss> - Gouffre Jean-Bernard - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	# Modifier l'aspect et les données des statistiques de longueur affichees
+	#code tex-map
+	#     \cavelength{21460\thinspace{}m} 
+	#+ 150\thinspace{}m estimés}
+	#     \cavedepth{-1602\thinspace{}m}
+	#   endcode  
+	symbol-hide line survey
+	#debug station-names
+                
+	# Titre                         
+    code tex-map
+		\edef\temp{\the\cavename}        % cavename from Therion   
+		\edef\nostring{}                 % empty string 
+		\ifx\temp\nostring             % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Réseau du Solitaire} 
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+	endcode   
+	
+	map-image 00 90 nw ../../Outputs/2D/jb-Xav-2020-coupe20000-Solitaire.pdf
+
+endlayout
+# Fin de la definition du Layout "normal"
+
+layout AtlasPlan
+	# Call the config settings (Layout config inside the config.thc file)
+	copy LayoutAtlasNorthArrow	# This line should be BEFORE the line copy drawingconfig, 
+	                           	# otherwise the North Arrow size does not fit well
+	#copy Coords_Header_JBJB		# Pour rajouter les coordonnées des entrées
+	copy drawingconfig			# Pour modifier les symboles
+	copy AtlasSetUp				# pour faire le setup de l'Atlas
+	copy headeratlas 			# Gere le header de l'Atlas
+	copy langue-fr				# Pour avoir la langue française dans le header et les légendes
+
+	cs UTM32
+	base-scale 1 1000
+	scale 1 1600
+	scale-bar 150 m
+	#grid bottom
+	#grid-size 1000 1000 1000 m  
+	grid off
+
+	#<fr> "size", c'est pour l'atlas. Ce sont les dimensions du carré dont
+	#     l'interieur sera occupé par la partie de la topo correspondante à
+	#     chaque une des pagines. 15 x 20, ça va bien pour imprimer A4.
+	size 18 20 cm
+
+	#<en> In the atlas, we choose an overlap of 1 cm with the neibourghood pages
+	#<fr> Dans l'atlas, on va superposer 1 cm de chaque page voisine
+	overlap 1 cm
+
+	#<fr> "page-setup", ça sert pour le map et pour l'atlas aussi.
+	#     on spécifie les dimensions de la feuille de papier : 21 X 29,7 (A4)
+	#     la surface imprimible du papier, ce sont 17 X 28,2
+	#     Alors, on peut indiquer une marge à gauche de 3 (21-17-1=3)
+	#     et une marge en haut de 1,5 (29,7-27,2-1=1,5)
+	#     en centimetres  
+	page-setup 21 29.7 17 27.2 2 1.5 cm  
+	
+	#<en> Print (or not) the title of the pages before each capter of the Atlas
+	#<fr> Affiche (ou non) le titre des pages avant chaque chapitre de l’atlas
+	title-pages off
+	
+	#<en> Zoom factor of the navigation pannel; by default, 30
+	#<fr> Facteur de zoom du panneau de navigation ; Par défault, 30
+	nav-factor 15
+	
+	#<en> Define the number of pages in the 2 directions of the navigation pannel
+	#<fr> Définir le nombre de pages de l'atlas dans les 2 directions du panneau de navigation
+	nav-size 1 1
+	#origin 60 -125 0 m	# Sans rotation
+	origin -20 -95 0 m
+	rotate 20
+
+  	#color map-fg [100 100 80] # Jaune
+	#color map-fg [100 100 100] # Blanc
+	color map-fg [67 67 67] # Gris 
+  	transparency on
+	opacity 75
+	layers on
+
+	# Titule
+	doc-title "Gouffre Jean-Bernard - 1:1000"
+	map-header 40 35 nw
+	map-header-bg off
+  	legend off
+	legend-width 20 cm
+	#map-comment "<it>Plan<ss> - Gouffre Jean-Bernard - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics explo off
+	statistics topo off
+	#statistics copyright all
+	statistics copyright off
+  
+	# Modifier l'aspect et les données des statistiques de longueur affichees
+	#code tex-map
+	#     \cavelength{21460\thinspace{}m} 
+	#+ 150\thinspace{}m estimés}
+	#     \cavedepth{-1602\thinspace{}m}
+	#   endcode  
+  
+	symbol-hide line survey
+	#debug station-names
+                
+	# Titre                         
+    code tex-map
+		\edef\temp{\the\cavename}        % cavename from Therion   
+		\edef\nostring{}                 % empty string 
+		\ifx\temp\nostring             % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Réseau du Solitaire} 
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}		
+	endcode   
+endlayout
+
+# 3-EXPORT
+
+#select M-C37-Riviera@Jean-Bernard
+#select M-B22-B21@Jean-Bernard
+#select M-B19-V11@Jean-Bernard
+#select M-Branlots-J14@Jean-Bernard
+#select M-V4-V6-Mais@Jean-Bernard
+#select M-Jean-Dupond@Jean-Bernard
+#select M-Bivouac-500-Gourance@Jean-Bernard
+#select M-aval-900@Jean-Bernard
+
+
+# Export des fichiers pdf, plan et coupe. 
+#select aspiro 
+#  select JB-total@jb.th -map-level 0
+#  select JB-rev@jb -map-level 0
+# ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
+#select JB-plan-tot@Jean-Bernard
+#select M-sezhommes@Jean-Bernard
+#select  MP-Jean-Dupond@Jean-Bernard
+
+#select  MP-Solitaire-tot@Jean-Bernard
+select MP-SolitaireEV@Jean-Bernard
+select MP-solitaire-tot@Solitaire.Jean-Bernard -color [100 100 80]
+select MP-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+#select MC-Solitaire-tot@Jean-Bernard
+
+#select  MP-oeufs@Jean-Bernard
+#select  MC-oeufs@Jean-Bernard
+
+#export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-coupe1000.pdf -layout my_layout-coupe
+#export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-plan1000.pdf -layout my_layout
+export atlas -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-atlas.pdf -layout AtlasPlan

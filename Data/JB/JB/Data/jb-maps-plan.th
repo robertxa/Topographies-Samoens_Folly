@@ -666,10 +666,35 @@ endmap
 
    
    
-   
-   
-   
-   
+##################### Maps pour le Solitaire, la Rivière et le V4
+map MP-rivieredebutSol -title "La rivière entre la Cascade Jean Dupont et -500 m"
+# Regarder si on peut sortir les plafonds
+	SP-riv-1
+	break
+	SP-riv-2b
+	break
+	SP-riv-2
+	break
+	SP-riv-3
+	break
+	SP-riv-4
+	#break
+	#SP-riv-5
+endmap
+
+map MP-SolitaireEV -title "Réseau du Solitaire"
+	MP-V4
+	break
+	MP-Ete-Indien@Ete-Indien
+	break
+	MP-savoyards
+	break
+	MP-solitaire-tot@Solitaire
+	break
+	MP-puitsAlain
+	break
+	MP-rivieredebutSol
+endmap   
    
    
    

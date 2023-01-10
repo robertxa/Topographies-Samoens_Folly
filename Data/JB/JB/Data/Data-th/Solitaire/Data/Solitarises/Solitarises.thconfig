@@ -14,7 +14,7 @@ input ../../../../../../../../config.thc
  
   
 layout xviexport_plan
-	scale 1 500
+	scale 1 350
 	grid-size 10 10 10 m
 	grid bottom
 endlayout  
@@ -43,14 +43,14 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Gouffre Jean-Bernard"
+	map-comment "Gouffre Jean-Bernard - <it>Plan"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
 	#legend-width 22 cm
-	legend-width 18 cm
-	map-header 40 37 nw
+	legend-width 15 cm
+	map-header 35 45 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -79,7 +79,8 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 200 130 n Solitarises-coupe.pdf
+	#map-image 0 100 sw Outputs/Solitarises-coupe2022b.pdf
+	map-image 0 100 sw Outputs/Solitarises-coupe2023.pdf
   
 endlayout
   
@@ -87,7 +88,7 @@ endlayout
 layout layout_coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
+	#copy header_coupe 
 	copy langue-fr
 	
 	#debug scrap-names
@@ -103,20 +104,34 @@ layout layout_coupe
 	transparency on
 	opacity 75
 	language fr
+	grid bottom
+	grid-coords border
+	grid-size 10 10 50 m
+	#grid-origin 0 0 0 m
 	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
-	statistics explo-length off
-	statistics topo-length off
-	statistics copyright all
+	#statistics explo-length off
+	#statistics topo-length off
+	#statistics copyright all
+	statistics explo off
+	statistics topo off
+	statistics carto off
+	statistics copyright off
+	# To suppress the displaY of cave length/depth in map header
+	code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
 	legend off
-	legend-width 14.5  cm
-	map-header 0 0 nw
-	map-header-bg off
+	#legend-width 14.5  cm
+	legend-width 10  cm
+	map-header 60 36 nw
+	map-header-bg on
 	layers on
 	symbol-hide line survey
 	#debug station-names	
 	#grid bottom
 	#grid-size 100 100 100 m
-	grid off  
+	#grid off  
   
 	######## Code Metapost pour modifier l aspect des symboles ####### 
 
@@ -130,7 +145,7 @@ layout layout_coupe
 			
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		%\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
 	######################### 
@@ -138,15 +153,15 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	#export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2022.xvi
-	#export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2022.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2023.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2023.xvi
 
 select MP-Solitarises-tot@Solitarises
 select MC-Solitarises-tot@Solitarises
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2022b.pdf
-	export map -layout layout_plan -o Outputs/Solitarises-plan2022b.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2023.pdf
+	export map -layout layout_plan -o Outputs/Solitarises-plan2023.pdf
  
 # Export des modeles 3D
 	export model -o Outputs/Solitarises.lox

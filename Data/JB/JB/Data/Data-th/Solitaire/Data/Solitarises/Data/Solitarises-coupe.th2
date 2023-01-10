@@ -211,10 +211,7 @@ line wall
   299.5 -2101.0 284.5 -2102.0 274.5 -2111.0
   264.5 -2120.0 248.5 -2130.5 231.5 -2134.5
   214.5 -2138.5 213.5 -2135.5 195.0 -2136.5
-  176.5 -2137.5 119.5 -2134.0 108.0 -2131.5
-  96.5 -2129.0 59.5 -2134.5 59.5 -2134.5
-  smooth off
-  59.5 -2134.5 53.5 -2137.0 48.5 -2137.0
+  176.5 -2137.5 136.5 -2135.5 125.0 -2133.0
   smooth off
 endline
 
@@ -285,7 +282,6 @@ endline
 
 line rope
   268.0 -2138.0
-  222.0 -2149.0
   169.0 -2148.0
 endline
 
@@ -363,10 +359,6 @@ point 480.0 -1991.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr 
 point 614.5 -2302.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Les Solitarisés" -attr CA "?" -text "Puits/Méandre à descendre, accessible entre les blocs"
 
 point 220.5 -2249.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Les Solitarisés" -attr CA "?" -text "Puits/Méandre à descendre"
-
-point 79.5 -2229.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Les Solitarisés" -attr CA "?" -text "Puits/Méandre à descendre"
-
-point 22.5 -2149.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Les Solitarisés" -attr CA "Courant d'air aspirant fort en été" -text "Suite logique à continuer, courant d'air aspirant en été"
 
 point 156.0 -2088.0 air-draught -orientation 264.3 -subtype summer
 
@@ -810,9 +802,9 @@ line wall
 endline
 
 line wall
-  139.0 -2163.0
+  153.0 -2164.0
   altitude .
-  139.0 -2163.0 156.0 -2165.5 163.5 -2167.0
+  153.0 -2164.0 156.0 -2165.5 163.5 -2167.0
   171.0 -2168.5 179.5 -2168.0 185.5 -2169.5
   191.5 -2171.0 200.0 -2175.0 202.5 -2181.0
   205.0 -2187.0 204.0 -2222.5 204.0 -2222.5
@@ -820,21 +812,8 @@ line wall
 endline
 
 line wall
-  96.5 -2165.5
-  96.5 -2165.5 133.0 -2161.5 139.0 -2163.0
-  smooth off
-endline
-
-line wall
-  89.5 -2199.0
-  89.5 -2199.0 92.5 -2165.5 96.5 -2165.5
-  smooth off
-endline
-
-line wall
-  47.5 -2158.5
-  47.5 -2158.5 71.0 -2153.0 71.0 -2163.5
-  71.0 -2174.0 72.0 -2199.0 72.0 -2199.0
+  124.0 -2156.0
+  124.0 -2156.0 147.0 -2162.5 153.0 -2164.0
   smooth off
 endline
 

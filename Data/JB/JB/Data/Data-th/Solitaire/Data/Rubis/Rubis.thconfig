@@ -36,9 +36,9 @@ layout layout_plan
 	doc-title "Réseau du Rubis-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 1000
-	scale 1 1000
-	scale-bar 100 m
+	base-scale 1 500
+	scale 1 500
+	scale-bar 50 m
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
@@ -49,8 +49,8 @@ layout layout_plan
 	statistics copyright all
 	legend off
 	#legend-width 22 cm
-	legend-width 18 cm
-	map-header 40 37 nw
+	legend-width 15 cm
+	map-header 100 100 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -79,7 +79,7 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 200 130 n Rubis-coupe.pdf
+	map-image 0 100 sw Outputs/Rubis-coupe2022b.pdf
   
 endlayout
   
@@ -87,7 +87,7 @@ endlayout
 layout layout_coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
+	#copy header_coupe 
 	copy langue-fr
 	
 	#debug scrap-names
@@ -96,30 +96,43 @@ layout layout_coupe
 	doc-author "Xavier Robert"
 	cs UTM32
 	#base-scale 1 2000
-	base-scale 1 1400
+	#base-scale 1 1400
+	base-scale 1 1000
 	#base-scale 1 300
-	scale 1 1400
+	#scale 1 1400
+	scale 1 1000
 	#scale 1 400
-	scale-bar 150 m
+	scale-bar 50 m
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
 	opacity 65
 	language fr
 	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
-	statistics explo-length off
-	statistics topo-length off
-	statistics copyright all
+	#statistics explo-length off
+	#statistics topo-length off
+	#statistics copyright all
+	statistics explo off
+	statistics topo off
+	statistics carto off
+	statistics copyright off
+	# To suppress the displaY of cave length/depth in map header
+	code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
 	legend off
-	legend-width 14.5 cm
-	map-header 100 100 nw
-	map-header-bg off
+	#legend-width 14.5 cm
+	legend-width 10 cm
+	map-header 80 39 nw
+	map-header-bg on
 	layers on
 	symbol-hide line survey
 	#debug station-names	
-	#grid bottom
-	#grid-size 100 100 100 m
-	grid off  
+	grid bottom
+	grid-size 100 100 20 m
+	grid-coords border
+	#grid off
   
 	######## Code Metapost pour modifier l aspect des symboles ####### 
 
@@ -133,7 +146,7 @@ layout layout_coupe
 			
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		%\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
 	######################### 

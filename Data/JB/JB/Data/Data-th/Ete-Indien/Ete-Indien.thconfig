@@ -9,7 +9,6 @@ source Ete-Indien-tot.th
 
 # Add config file
 input ../../../../../../config.thc 
-  
  
   
 layout xviexport_plan
@@ -42,14 +41,15 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau de l'Eté Indien"
+	map-comment "Gouffre Jean-Bernard <it>- Plan"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
 	#legend-width 22 cm
-	legend-width 18 cm
-	map-header 100 100 nw
+	legend-width 14.5 cm
+	#map-header 100 100 nw
+	map-header 0 0 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -74,11 +74,9 @@ layout layout_plan
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
- 
 	######################### 
-  
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 200 130 n Ete-Indien-coupe.pdf
+	map-image 100 100 nw Outputs/Ete-Indien-coupe2022b.pdf
   
 endlayout
   
@@ -86,7 +84,7 @@ endlayout
 layout layout_coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
+	#copy header_coupe 
 	copy langue-fr
 	
 	#debug scrap-names
@@ -94,28 +92,42 @@ layout layout_coupe
 	doc-title "Réseau de l'Eté Indien - coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 500
-	scale 1 250
-	scale-bar 25 m
+	#base-scale 1 500
+	#scale 1 250
+	#scale-bar 25 m
+	base-scale 1 1500
+	scale 1 750
+	scale-bar 50 m
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Réseau de l'Eté Indien"
-	statistics explo-length off
-	statistics topo-length off
-	statistics copyright all
+	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
+	#statistics explo-length off
+	#statistics topo-length off
+	#statistics copyright all
+	statistics explo off
+	statistics topo off
+	statistics carto off
+	statistics copyright off
+	# To suppress the displaY of cave length/depth in map header
+	code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
 	legend off
 #	legend-width 26  cm
-	map-header 100 100 nw
-	map-header-bg off
+	legend-width 11  cm
+	map-header 0 14 nw
+	map-header-bg on
 	layers on
 	symbol-hide line survey
 	#debug station-names	
-	#grid bottom
-	#grid-size 100 100 100 m
-	grid off  
+	grid bottom
+	grid-coords border
+	grid-size 10 10 20 m
+	#grid off  
   
 	######## Code Metapost pour modifier l aspect des symboles ####### 
 
@@ -129,7 +141,7 @@ layout layout_coupe
 			
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		%\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
 	######################### 

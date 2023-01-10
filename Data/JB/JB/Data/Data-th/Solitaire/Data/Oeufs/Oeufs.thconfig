@@ -43,14 +43,14 @@ layout layout_plan
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Gouffre Jean-Bernard"
+	map-comment "Gouffre Jean-Bernard <it>- Plan"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
 	#legend-width 22 cm
-	legend-width 18 cm
-	map-header 40 37 nw
+	legend-width 14.5 cm
+	map-header 100 0 sw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -79,7 +79,7 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 200 130 n solitaire-coupe.pdf
+	map-image 0 100 sw Outputs/Oeufs-coupe2022b.pdf
   
 endlayout
   
@@ -87,7 +87,7 @@ endlayout
 layout layout_coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
+	#copy header_coupe 
 	copy langue-fr
 	
 	#debug scrap-names
@@ -97,26 +97,37 @@ layout layout_coupe
 	cs UTM32
 	base-scale 1 2000
 	scale 1 1400
-	scale-bar 150 m
+	scale-bar 100 m
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
 	language fr
 	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
-	statistics explo-length off
-	statistics topo-length off
-	statistics copyright all
+	#statistics explo-length off
+	#statistics topo-length off
+	#statistics copyright all
+	statistics explo off
+	statistics topo off
+	statistics carto off
+	statistics copyright off
+	# To suppress the displaY of cave length/depth in map header
+	code tex-map
+		\cavelength={} %empty
+		\cavedepth={}  %empty
+	endcode
 	legend off
-	legend-width 26  cm
-	map-header 38 37 nw
-	map-header-bg off
+	legend-width 10 cm
+	#map-header 60 37 nw
+	map-header 45 25 nw
+	map-header-bg on
 	layers on
 	symbol-hide line survey
 	#debug station-names	
-	#grid bottom
-	#grid-size 100 100 100 m
-	grid off  
+	grid bottom
+	grid-coords border
+	grid-size 10 10 50 m
+	#grid off  
   
 	######## Code Metapost pour modifier l aspect des symboles ####### 
 
