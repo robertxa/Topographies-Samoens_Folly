@@ -11,18 +11,30 @@ survey Salvadon -title "Zone Salvadon"
  centerline
 #cs lat-long
 cs EPSG:27572 # LII Etendu
-fix       Deux-Dedes       946250     2130650     1900
-fix       Marmotte       946100     2130700     1870
-fix       Revenants       945806     2130698     1844
-fix       FLT44       945793     2130701     1813
+fix       FLT1       945850     2130630     1860    # Spelealpes n°2
+station FLT1  "FLT1" entrance continuation explored 10m
+fix       FLT2       945920     2130680     1850    # Spelealpes n°2
+station FLT2  "FLT2" entrance air-draught continuation explored 16m
+fix       FLT3       946000     2130450     185    # Spelealpes n°2
+station FLT3  "FLT3" entrance continuation explored 07m
+fix       FLT5       946030     2130350     1860    # Spelealpes n°2
+station FLT5  "FLT5" entrance continuation explored 13m
+fix       FLT7       946050     2130320     1887    # Spelealpes n°2
+station FLT7  "FLT7" entrance continuation explored 32m
+fix       FLT9       946040     2130320     1887    # Spelealpes n°2
+station FLT9  "FLT9" entrance #continuation explored 13m
+fix       FLT11       946070     2130220     1877    # Spelealpes n°2
+station FLT11  "FLT11" entrance #continuation explored 13m
+fix       FLT13       946100     2130280     1890    # Spelealpes n°2
+station FLT13  "FLT13" entrance #continuation explored 13m
+fix       FLT15       946130     2130220     1910    # Spelealpes n°2
+station FLT15  "FLT15" entrance #continuation explored 13m
+fix       FLT17       946180     2130250     1920    # Spelealpes n°2
+station FLT17  "FLT17" entrance #continuation explored 13m
+
 
 #cs UTM32
 #fix A3   328955 5110647 1969
-
-station Deux-Dedes  "T. des 2 Dédés" entrance continuation explored 60m
-station   Marmotte      "T. de la Marmotte" entrance continuation explored 200m
-station   Revenants      "T. des Revenants (FLT33)" entrance air-draught continuation explored 330m
-station   FLT44      "T. des Revenants (FLT44" entrance air-draught #continuation explored 200m
 
 endcenterline
 

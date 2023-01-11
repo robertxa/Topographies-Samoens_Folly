@@ -1,0 +1,90 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey Vogeale -title "Zone Vogeale"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+fix       4       947960     2133620     1940   # Spelealpes N°14 ; 16
+station   4      "4" entrance continuation explored 15m
+
+fix       12       947800     2133825     2020   # Spelealpes N°16
+station   12      "12" entrance continuation explored 12m
+fix       14       947750     2133700     1965   # Spelealpes N°16
+station   14      "14" entrance continuation explored 11m
+fix       16       947675     2133750     1968   # Spelealpes N°16
+station   16      "16" entrance continuation explored 14m
+fix       22       947600     2133800     2000   # Spelealpes N°16
+station   22      "22" entrance continuation explored 10m
+
+fix       18       947950     2134025     2120   # Spelealpes N°16
+station   18      "18" entrance continuation explored 21m
+fix       21       947625     2134025     2040   # Spelealpes N°16
+station   21      "21" entrance air-draught continuation explored 06m
+
+fix       20       948250     2134050     2150   # Spelealpes N°16
+station   20      "20" entrance continuation explored 10m
+fix       19       948150     2133500     1850   # Spelealpes N°16
+station   19      "19 - G. de la Vogealle" entrance continuation explored 250m
+fix       23       948125     2133950     2050   # Spelealpes N°18
+station   23      "23" entrance continuation explored 05m
+
+
+fix       Vo1       947160     2134625     2180   # Spelealpes N°16
+station   Vo1      "Vo1" entrance continuation explored 14m
+fix       Vo2       947125     2134600     2170   # Spelealpes N°16
+station   Vo2      "Vo2" entrance continuation explored 35m
+fix       Vo3       947100     2134500     2120   # Spelealpes N°16
+station   Vo3      "Vo3" entrance continuation explored 05m
+
+fix       Sa2       947750     2134375     2230   # Spelealpes N°16
+station   Sa2      "Sa2" entrance continuation explored 18m
+fix       Sa3       947925     2134400     2235   # Spelealpes N°16
+station   Sa3      "Sa3 - Perte Sageroux" entrance continuation explored 10m
+fix       Sa3b      947875     2134425     2235   # Spelealpes N°16
+station   Sa3b     "Sa3b - Pertes" entrance #continuation explored 10m
+fix       Sa3t      947600     2134450     2235   # Spelealpes N°16
+station   Sa3t     "Sa3t - Pertes" entrance #continuation explored 10m
+fix       Sa4       948175     2134500     2280   # Spelealpes N°18
+station   Sa4      "Sa4" entrance continuation explored 06m
+fix       Sa5       948075     2135175     2560   # Spelealpes N°18
+station   Sa5      "Sa5" entrance continuation explored 06m
+fix       Sa6       948100     2134970     2490   # Spelealpes N°18
+station   Sa6      "Sa6" entrance continuation explored 25m
+
+fix       A1       947525     2133400     2070   # Spelealpes N°16
+station   A1      "A1" entrance continuation explored 38m
+fix       A2       947675     2133200     2000   # Spelealpes N°16
+station   A2      "A2" entrance continuation explored 07m
+fix       A3       947550     2133100     2015   # Spelealpes N°16
+station   A3      "A3" entrance continuation explored 10m
+fix       A4       947450     2133100     2010   # Spelealpes N°16
+station   A4      "A4" entrance continuation explored 07m
+fix       A5       947425     2133025     2010   # Spelealpes N°16
+station   A5      "A5" entrance continuation explored 22m
+fix       A6       947575     2133050     2025   # Spelealpes N°16
+station   A6      "A6" entrance continuation explored 07m
+fix       A7       947500     2133000     2020   # Spelealpes N°16
+station   A7      "A7" entrance continuation explored 11m
+fix       A8       947550     2132975     2005   # Spelealpes N°16
+station   A8      "A8" entrance continuation explored 08m
+fix       A9       947450     2133150     2010   # Spelealpes N°16
+station   A9      "A9" entrance continuation explored 05m
+fix       A10       947450     2133500     2110   # Spelealpes N°16
+station   A10      "A10" entrance continuation explored 05m
+
+
+#cs UTM32
+#fix A3   328955 5110647 1969
+#station   FLT44      "T. des Revenants (FLT44" entrance air-draught #continuation explored 200m
+
+
+endcenterline
+
+endsurvey

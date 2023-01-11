@@ -412,9 +412,10 @@ if __name__ == u'__main__':
 	# initiate variables
 	#inputfile = 'TestJB.sql'
 	#inputfile = 'TestCP7.sql'
-	inputfile = 'databaseLDB.sql'
+	#inputfile = 'databaseLDB.sql'
+	inputfile = 'databaseJB-2022_new.sql'
 
-	graphfolder = "Graphs-LDB/" 
+	graphfolder = "Graphs/" 
 	#graphprefix = None
 	#bins = 144
 	#log = "log"
@@ -423,8 +424,9 @@ if __name__ == u'__main__':
 	#rangeyear = None
 
 	#systems = ['SynclinalJB.MassifFolly', 'SystemeCP.MassifFolly', 'SystemeA21.MassifFolly', 'SystemeAV.MassifFolly']
-	#systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV']
-	systems = None
+	systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV']
+	#systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV', 'SystemMirolda']
+	#systems = None
 
 	###################################################
 	# Run the plots

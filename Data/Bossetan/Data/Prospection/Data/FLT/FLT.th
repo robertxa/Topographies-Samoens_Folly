@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey ZoneA -title "Zone A"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+fix       FLT1       943720     2133400     2000    # Spelealpes n°2
+station   FLT1      "FLT1" entrance continuation explored 232m  
+#station   FLT1      "FLT1" entrance air-draught continuation explored 232m  
+
+#cs UTM32
+#fix A3   328955 5110647 1969
+
+#station A3  "G. A3" entrance air-draught continuation explored 5000m
+
+
+endcenterline
+
+endsurvey

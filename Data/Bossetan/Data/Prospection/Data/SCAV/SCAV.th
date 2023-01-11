@@ -1,0 +1,49 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey ZoneA -title "Zone A"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etendu
+fix       SCAV0       942480     2134510     1750    # Spelealpes n°2
+station   SCAV0      "SCAV0" entrance continuation explored 64m  
+fix       SCAV1       942460     2134600     1770    # Spelealpes n°2
+station   SCAV1      "SCAV1" entrance continuation explored 15m  
+fix       SCAV2       942490     2134700     1770    # Spelealpes n°2
+station   SCAV2      "SCAV2" entrance continuation explored 08m  
+fix       SCAV3       942500     2134650     1760    # Spelealpes n°2
+station   SCAV3      "SCAV3" entrance continuation explored 15m  
+fix       SCAV4       942380     2135250     1770    # Spelealpes n°2
+station   SCAV4      "SCAV4" entrance continuation explored 40m  
+fix       SCAV5       942880     2135400     1980    # Spelealpes n°2
+station   SCAV5      "SCAV5" entrance continuation explored 05m  
+fix       SCAV6       943750     2135370     2080    # Spelealpes n°2
+station   SCAV6      "SCAV6" entrance continuation explored 23m  
+fix       SCAV7       943380     2135380     2090    # Spelealpes n°2
+station   SCAV7      "SCAV7" entrance continuation explored 21m  
+fix       SCAV8       943400     2135450     2140    # Spelealpes n°2
+station   SCAV8      "SCAV8" entrance continuation explored 45m  
+fix       SCAV9       943150     2135430     2090    # Spelealpes n°2
+station   SCAV9      "SCAV9" entrance continuation explored 15m  
+fix       SCAV10       943150     2135400     2090    # Spelealpes n°2
+station   SCAV10      "SCAV10" entrance continuation explored 08m  
+fix       SCAV11       943100     2135410     2095    # Spelealpes n°2
+station   SCAV11      "SCAV11" entrance continuation explored 10m  
+fix       SCAV12       942780     2135410     2090    # Spelealpes n°2
+station   SCAV12      "SCAV12" entrance continuation explored 12m  
+
+#cs UTM32
+#fix A3   328955 5110647 1969
+
+#station A3  "G. A3" entrance air-draught continuation explored 5000m
+
+
+endcenterline
+
+endsurvey
