@@ -21,8 +21,8 @@ layout my_layout
 	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
 
 	cs UTM32
-	base-scale 1 1000
-	scale 1 1000
+	base-scale 1 1300
+	scale 1 1250
 	scale-bar 100 m
 	#grid bottom
 	#grid-size 1000 1000 1000 m  
@@ -37,21 +37,27 @@ layout my_layout
 
 	# Titule
 	doc-title "Gouffre Jean-Bernard - 1:1000"
-	map-header 40 35 nw
+	map-header 70 45 nw
 	map-header-bg off
   	legend off
 	legend-width 20 cm
 	map-comment "<it>Plan<ss> - Gouffre Jean-Bernard - Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
+	statistics explo off
+	statistics topo off
 	statistics copyright all
   
 	# Modifier l'aspect et les données des statistiques de longueur affichees
 	#code tex-map
 	#     \cavelength{21460\thinspace{}m} 
-	#+ 150\thinspace{}m estimés}
+	#+ 150\thinspace{m estimés}
 	#     \cavedepth{-1602\thinspace{}m}
-	#   endcode  
+	#endcode  
+	code tex-map
+	     \cavelength{} 
+	     \cavedepth{}
+	   endcode  
   
 	symbol-hide line survey
 	#debug station-names
@@ -59,14 +65,14 @@ layout my_layout
 	# Titre                         
     code tex-map
 		\edef\temp{\the\cavename}        % cavename from Therion   
-		\edef\nostring{}                 % empty string 
-		\ifx\temp\nostring             % test if cavename is empty
+		#\edef\nostring{}                 % empty string 
+		#\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
 			\cavename={Réseau du Solitaire} 
-		\else % if not empty keep the value set by therion, or assign an override cavename here
-		\fi
+		#\else % if not empty keep the value set by therion, or assign an override cavename here
+		#\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
 		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}		
 	endcode   
 	
@@ -74,7 +80,7 @@ layout my_layout
 	#map-image 0 100 sw ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf
 	#map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
 	#map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
-	map-image 0 90 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
+	map-image 70 23 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -87,12 +93,13 @@ layout my_layout-coupe
 	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
 
 	base-scale 1 1000 
-	scale 1 1000
-	scale-bar 250 m
-	#grid bottom
-	#grid-size 1000 1000 1000 m  
-	grid off
-	color map-fg [100 100 80]  
+	scale 1 1250
+	scale-bar 100 m
+	grid bottom
+	grid-size 1000 1000 100 m  
+	#grid off
+	#color map-fg [100 100 80]  
+	color map-fg [67 67 67] # Gris 
 	transparency on
 	opacity 75
 	layers on
@@ -106,6 +113,8 @@ layout my_layout-coupe
 	map-comment "<it>Coupe développée<ss> - Gouffre Jean-Bernard - Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
+	statistics explo off
+	statistics topo off
 	statistics copyright all
 	# Modifier l'aspect et les données des statistiques de longueur affichees
 	#code tex-map
@@ -113,20 +122,24 @@ layout my_layout-coupe
 	#+ 150\thinspace{}m estimés}
 	#     \cavedepth{-1602\thinspace{}m}
 	#   endcode  
+	code tex-map
+	     \cavelength{} 
+	     \cavedepth{}
+	endcode  
 	symbol-hide line survey
 	#debug station-names
                 
 	# Titre                         
     code tex-map
 		\edef\temp{\the\cavename}        % cavename from Therion   
-		\edef\nostring{}                 % empty string 
-		\ifx\temp\nostring             % test if cavename is empty
+		#\edef\nostring{}                 % empty string 
+		#\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
 			\cavename={Réseau du Solitaire} 
-		\else % if not empty keep the value set by therion, or assign an override cavename here
-		\fi
+		#\else % if not empty keep the value set by therion, or assign an override cavename here
+		#\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
 		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 	endcode   
 	
@@ -256,11 +269,17 @@ endlayout
 select MP-SolitaireEV@Jean-Bernard
 select MP-solitaire-tot@Solitaire.Jean-Bernard -color [100 100 80]
 select MP-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+
 #select MC-Solitaire-tot@Jean-Bernard
+select MC-V4@Jean-Bernard
+select MC-puitsAlain@Jean-Bernard
+select MC-rivieredebut@Jean-Bernard
+select MC-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+select MC-solitaire-JB@Solitaire.Jean-Bernard -color [100 100 80]
 
 #select  MP-oeufs@Jean-Bernard
 #select  MC-oeufs@Jean-Bernard
 
-#export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-coupe1000.pdf -layout my_layout-coupe
-#export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-plan1000.pdf -layout my_layout
-export atlas -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-atlas.pdf -layout AtlasPlan
+export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2023-coupe1000.pdf -layout my_layout-coupe
+export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2023-plan1000.pdf -layout my_layout
+#export atlas -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-atlas.pdf -layout AtlasPlan
