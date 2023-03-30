@@ -1,0 +1,86 @@
+
+AlexPONT
+14/03/23
+V 1
+
+VF3	
+  # VF3.th # 1     1    0       1   25      25   3 0 1   1   1 Entrée	VF3	grand	méchant	loup
+  # Falaise.th # 2    31    5      54   10      14   3 0 
+  # Falaise.th # 3    33    2       3    3       3   3 0 
+  # Falaise.th # 4     3    2      33    3       1   3 0 
+  # Tremie.th # 5    38   24       5    7       7   3 0 
+  # Hongroise.th # 11    11    0      13    0      21   3 0 VFH1
+  # Hongroise.th # 12    13    0      12    4       4   3 0 VFH2
+  # Hongroise.th # 13    13    0      41    0       8   3 0 VH3
+  # Hongroise.th # 14    15    0      14    7       7   3 0 VFH4
+  # Hongroise.th # 15    15    0      13    0      13   3 0 VFH5
+  # Hongroise.th # 16    12    4      15    1       3   3 0 VFH6
+  # Hongroise.th # 17    17    0      17    8       8   3 0 VFH7
+  # Hongroise.th # 18    17    1      11    0      13   3 0 VFH8
+  # Chauves-souris.th # 19    34   11      19    5       5   3 0 1   1   1 a partir	spit	P40
+  # Sado-Bozzo.th # 20    20    0      20    4       4   3 0 1   1   1 siphon	amont	sado-bozzo
+  # Sado-Bozzo.th # 21    44    4      21    4       4   3 0 
+  # Combattant.th # 22    48   21      22   44      44   3 0 1   1   1 suite	parcours	du	combattant
+  # Combattant.th # 23    22   44      23   33      33   3 0 1   1   1 Galerie	du	bivouac
+  # Falaise.th # 31    33    3      31   35      35   3 0 
+  # VF3.th # 32     1   25      32   17      17   3 0 
+  # Falaise.th # 33    33    0      53    3      17   3 0 
+  # Chauves-souris.th # 34    53    3      34   11      11   3 0 
+  # Chauves-souris.th # 35    34   11      35   45      45   3 0 1   1   1 Reseau	Danton
+  # Danton.th # 35    34   11      35   45      45   3 0 1   1   1 Reseau	Danton
+  # Prof-Blanchon.th # 36    34   11      36   24      24   3 0 1   1   1 Reseau	Professeur	Blanchon
+  # Prof-Blanchon.th # 37    36   24      37   36      36   3 0 
+  # Tremie.th # 38    34   11      38   32      32   3 0 1   1   1 Galerie	de	la trémie
+  # Puits-jumeaux.th # 40    38    9      40   68      68   3 0 1   1   1 fini	au	fond	discovery
+  # DDiscovery.th # 41    41    0      40   51      16   3 0 
+  # Sado-Bozzo.th # 42    42    0      14    7      34   3 0 
+  # Sado-Bozzo.th # 43    43    0      42    0      34   3 0 sado-bozzo
+  # Sado-Bozzo.th # 44    20    1      43    2      19   3 0 1   1   1 amont	réseau	du	lac
+  # DDiscovery2.th # 47    47    0      17    0      22   3 0 1   1   1 amont	hongroise
+  # Combattant.th # 48    14    7      48   22      22   3 0 1   1   1 parcours	du	combattant
+  # DDiscovery.th # 50    41    0      50   17      17   3 0 1   1   1 boyau	non	topo
+  # Puits-jumeaux.th # 51    40   21      51    5       5   3 0 1   1   1 puits	des	Gpa
+  # Puits-jumeaux.th # 52    52    0      40   39      17   3 0 1   1   1 puits	jumeaux
+  # Chauves-souris.th # 53    32    4      53    3       3   3 0 
+  # Extérieur # 54     1    0      54   10      10   3 0 topo de surface
+  # Tremie.th # 55    38   32      55   11      11   3 0 1   1   1 fond	trémie
+  # Combattant.th # 59    23   13      43   32      25   3 0 
+  # Prof-Blanchon # 60    38   32      37   13      19   3 0 1   1   1 jonction	blanchon
+  # Prof-Blanchon # 61    60    6      61   10      10   3 0 1   1   1 puits	de	la	taille
+  # DDiscovery2.th # 62    62    0      47    8      82   3 0 1   1   1 fenetre	falaise
+  # Hongroise.th # 63    11   17      11   18       5   3 0 boucle dans la hongroise
+
+ F126 
+  # F126.th # 64    64    0      64    7       7   3 1 
+  # Marches.th# 65    64    7      65   16      16   3 0 
+  # Marches.th# 66    66    0      65   16      11   3 0 
+  # Marches.th# 67    66    8      67   51      51   3 0 
+  # Marches.th# 68    67   51      68   10      10   3 0 
+  # Marches.th# 69    68   10      69  112     112   3 0 
+  # Bricole-Aval.th# 69    68   10      69  112     112   3 0 
+  # Bricole-Aval.th# 70    70    0      69  112      80   3 0 
+  # Bricole-Aval.th# 71    70    0      71   55      55   3 0 
+  # Jonction-VF3.th# 72    64    7      72    6       6   3 0 1   1   1 Cote	VF3
+  # Jonction-VF3.th# 73    72    6      42   26      30   3 0 f126 jonction escalade vf3
+  # Jonction-VF3.th# 74    73   27      73   20       9   3 0 
+  # Jonction-VF3.th# 75    74    2      75   16      16   3 0 
+  # Jonction-VF3.th# 76    75   16      76   12      12   3 0 
+  # Jonction-VF3.th# 77    76   10      77    7       7   3 0 
+  # Bricole-Amont.th# 78    69   47      78    9       9   3 0 
+  # Bricole-Amont.th# 79    78    9      79   41      41   3 0 
+  # Bricole-Amont.th# 80    79   41      35   45      27   3 0 jonction danton
+  # Bricole-Amont.th# 81    80   19      81   18      18   3 0 
+  
+Jocker  
+  # Jockers.th # 82    82    0      82   11      11   3 3 
+  # Jockers.th # 83    82   10      83   54      54   3 0 
+  # Jockers.th #   84    84    0      83   54       4   3 0 
+  # Jockers.th # 85    84    0      85   10      10   1 3 
+  # Jockers.th # 86    84    0      86   24      24   1 6 
+  # Jockers.th # 87    86    2      87   40      40   3 2 
+  # Jockers.th # 88    88    0      85    8       7   1 2 
+  # Jockers.th # 89    84    3      89    1       1   3 0 
+  # Jockers.th # 90    87   40      90   40      40   1 8 
+  # Jockers.th # 91    87   36      52    0       6   3 0 
+  # Jockers.th # 92    90   38      11   17       8   3 0 
+  # Jockers.th # 93    92    6      93   27      27   3 2 

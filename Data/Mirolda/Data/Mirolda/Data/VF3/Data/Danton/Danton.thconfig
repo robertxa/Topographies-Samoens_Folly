@@ -147,10 +147,10 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre de la Danton} 
+			\cavename={Réseau Danton} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Criou}
+		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
 		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
 	endcode   
   
@@ -220,10 +220,10 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre de la Danton} 
+			\cavename={Réseau Danton} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Criou}
+		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
 		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
 	endcode   
 

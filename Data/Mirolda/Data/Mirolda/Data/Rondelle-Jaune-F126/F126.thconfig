@@ -151,8 +151,8 @@ layout my_layout
 			\cavename={Gouffre de la Rondelle Jaune - F126} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Criou}
-		%\newtoks\synth \synth={Xavier Robert}
+		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
+		%\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
 	endcode   
   
  endlayout
@@ -225,7 +225,7 @@ layout layout-coupe
 			\cavename={Gouffre de la Rondelle Jaune - F126} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Criou}
+		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
 		\newtoks\synth \synth={Laurent Mangel, Vincent Vieillerobe (1999), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
 
