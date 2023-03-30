@@ -1,0 +1,81 @@
+
+centerline -extend right     #[Note Alex: A raccorder VF45]
+     
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#		0	0	-90	# VF45 DEPART ETROITURE
+VF3-11-0	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????  [Note Alex: Raccord sur VF3-11-0 NOK a voir ???]
+VF3-15-1	VF3-15-2	1.62	130	-30	
+VF3-15-2	VF3-15-3	6.33	312	-66	
+VF3-15-3	VF3-15-4	5.13	240	7	
+VF3-15-4	VF3-15-5	2.46	190	3	
+VF3-15-5	VF3-15-6	5.6	242	-67	
+VF3-15-6	VF3-15-7	2.73	300	-11	
+VF3-15-7	VF3-15-8	7.52	349	-65	
+VF3-15-8	VF3-15-9	5.5	244	-57	
+VF3-15-9	VF3-15-10	6.86	256	-72	
+VF3-15-10	VF3-15-11	9.96	225	-66	
+VF3-15-11	VF3-15-12	9.85	250	-73	
+VF3-15-12	VF3-15-13	6.52	264	-54	
+VF3-15-13	VF3-15-14	6.05	61	-44	
+VF3-15-14	VF3-15-15	2.07	357	-26	
+VF3-15-15	VF3-15-16	8.78	269	2	
+endcenterline
+
+
+centerline -extend right    #[Note Alex: A raccorder VF46]
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#		0	0	-90	# VF46 - DEPART GALERIE CHAUVE SOURIS
+VF3-15-16	VF3-16-1	8.13	219	72.5	# Départ ????? [Note Alex: raccord NOK a voir ???sur VF3-15-16]
+VF3-16-1	VF3-16-2	3.02	202	30	
+VF3-16-2	VF3-16-3	14.12	46	79	
+VF3-16-3	VF3-16-4	1.37	281	7	
+VF3-16-4	VF3-16-5	4.33	280	10	
+VF3-16-5	VF3-16-6	1.46	10	7	
+VF3-16-6	VF3-16-7	3.96	312	-35	
+VF3-16-7	VF3-16-8	27.49	270	85	
+VF3-16-8	VF3-16-9	19.56	190	85	
+VF3-16-9	VF3-16-10	11.02	164	40	
+VF3-16-10	VF3-16-11	4.01	135	35	
+VF3-16-11	VF3-16-12	4.06	238	5	
+VF3-16-12	VF3-16-13	7.13	181	48	
+VF3-16-13	VF3-16-14	4.33	217	16	
+#		0	0	-90	# NOUVEAU COMPTEUR
+VF3-16-14	VF3-16-15	10.82	207	25	
+VF3-16-15	VF3-16-16	5.89	208	60	
+VF3-16-16	VF3-16-17	4.54	292	24	
+VF3-16-17	VF3-16-18	3.62	261	31	
+#		0	0	-90	# NOUVEAU COMPTEUR
+VF3-16-18	VF3-16-19	4.61	277	26	
+VF3-16-19	VF3-16-20	2.57	272	18	
+VF3-16-20	VF3-16-21	4.48	228	30	
+VF3-16-21	VF3-16-22	3.55	245	34	
+VF3-16-22	VF3-16-23	4.19	188	40	
+VF3-16-23	VF3-16-24	2.6	249	9	
+VF3-16-24	VF3-16-25	2.61	186	24	
+VF3-16-25	VF3-16-26	4.37	210	33	
+endcenterline
+
+

@@ -1,68 +1,78 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1988 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
  
 survey VF3 -title "VF3 - Mirolda - Réseau Lucien Bouclier" -entrance VF3
 
  centerline -extend right    
-    
-    #date 2021.08.12
-    #    team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
+
+	#=========================================
+	# Serie: 1 - Entrée	VF3	Grand méchant loup
+	#=========================================
+	# [note Alex] explo URSUS 1
+	
+    date 1988.08.01
+		team "Sylvain Matricon"
+		team "Isabelle Matricon"
+		
     explo-date 1972
         explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1978
         explo-team "Groupe Spéléo/Ursus"
 
     cs long-lat
+	#cs utm32
+	#cs EPSG:27572 LII étendu
 
-    fix VF3 6.79367 46.090839	2336  #ALT IGN
-    #cs EPSG:27572 LII étendu
-    #fix VF3 944520 2130930	2335  #ALT IGN
+     fix VF3 6.79367 46.090839	2336  #ALT IGN
+	# fix VF3 944487.00 2130974.00 2324.00 #   Coordonnées URSUS (LT2 Etendue) 
+	# fix VF3 329440.10087 5106506.86582 2324.00 #   Coordonnées URSUS
+    # fix VF3 944520 2130930	2335  #ALT IGN
+	
     station VF3 "VF3 - Lucien Bouclier" entrance air-draught #continuation #explored ????m
 
     units length meters
     units compass clino degrees
-    data normal from to length compass backclino
-        VF3	2	3.88	300	56
-        2	3	26.3	220	80
-        3	4	4.14	205	-6.5
-        4	5	2.11	180	-12
-        5	6	1.77	245	14
-        6	6B	3.76	201	24.5
-        #6B	7	0	0	-90             [By Alex ; Supprimé, cette région ne ressemble pas à l'Acad]
-        6B	7	11.81	0	90
-        7	8	3.23	254	3
-        8	9	27.8	0	90
-        9	10	3.13	98	3
-        10	11	4.8	140	22
-        11	12	8.58	0	90
-        12	13	2.34	150	3
-        13	14	4.53	0	90
-        14	15	3.98	210	34
-        15	16	1.33	106	16
-        16	17	1.86	230	20
-        17	18	2.34	180	41
-        18	19	2.83	215	46
-        19	20	1.3	215	32
-        20	21	0.77	268	20
-        21	22	3.2	220	30
-        22	23	4.39	0	90
-        23	24	2.77	255	-1
-        24	25	8.44	218	42
+	data normal from to length compass clino right left up down
+       VF3 s1_1 3.88 300.00 -56.00  0.25 0.25  1.00 2.00  # Entrée VF3
+       s1_1 s1_2 26.30 220.00 -80.00  0.25 0.25  1.00 2.00  
+       s1_2 s1_3 4.14 205.00 6.50 0.25 0.25  1.00 2.00  
+       s1_3 s1_4 2.11 180.00 12.00 0.25 0.25  2.00 1.00  
+       s1_4 s1_5 1.77 245.00 -14.00 0.25 0.25  1.00 1.00  
+       s1_5 s1_6 3.76 201.00 -24.50 0.25 0.25  3.00 1.00  
+       s1_6 s1_7 11.81 0.00 -90.00 0.25 0.25  11.00 1.00    
+       s1_7 s1_8 3.23 254.00 -3.00 1.00 1.00  3.00 1.00    
+       s1_8 s1_9 27.80 0.00 -90.00  0.25 0.25  30.00 1.00  
+       s1_9 s1_10 3.13 98.00 -3.00  2.00 2.00  3.00 1.000  
+       s1_10 s1_11 4.80 140.00 -22.00  0.50 0.50  5.00 1.00  
+       s1_11 s1_12 8.58 0.00 -90.00  0.50 0.50  9.00 1.00  
+       s1_12 s1_13 2.34 150.00 -3.00  0.50 0.50  2.00 1.00
+       s1_13 s1_14 4.53 0.00 -90.00  0.50 0.50  5.00 1.00  
+       s1_14 s1_15 3.98 210.00 -34.00  0.50 0.50  4.00 1.00  
+       s1_15 s1_16 1.33 106.00 -16.00  0.50 0.50  1.00 1.00  
+       s1_16 s1_17 1.86 230.00 -20.00  0.50 0.50  2.00 1.00  
+       s1_17 s1_18 2.34 180.00 -41.00  0.50 0.50  2.00 1.00  
+       s1_18 s1_19 2.83 215.00 -46.00  0.50 0.50  3.00 1.00  
+       s1_19 s1_20 1.30 215.00 -32.00  0.50 0.50  1.00 1.00  
+       s1_20 s1_21 0.77 268.00 -20.00  0.50 0.50  1.00 1.00  
+       s1_21 s1_22 3.20 220.00 -30.00  0.50 0.50  3.00 1.00  
+       s1_22 s1_23 4.39 0.00 -90.00  0.50 0.50  4.00 1.00  
+       s1_23 s1_24 2.77 255.00 1.00  0.50 0.50  2.00 1.00  
+       s1_24 s1_25 8.44 218.00 -42.00  0.25 0.25  9.00 1.00  # Observ: l'étroiture!
 
 endcenterline
 
 centerline -extend right    
     
-    #date 2021.08.12
-    #    team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
+	# [note Alex] explo URSUS 2
+	
+    date 1988 09 10
+		team "Sylvain Matricon"
+	
     explo-date 1972
         explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1978
@@ -70,25 +80,110 @@ centerline -extend right
 
     units length meters
     units compass clino degrees
-    data normal from to length compass backclino
-        25	VF3-2-2	1.6	240	52	
-        VF3-2-2	VF3-2-3	1.96	285	85	
-        VF3-2-3	VF3-2-4	0	0	-90	
-        VF3-2-4	VF3-2-5	4.55	298	6	
-        VF3-2-5	VF3-2-6	9.9	0	90	
-        VF3-2-6	VF3-2-7	4.34	254	47	
-        VF3-2-7	VF3-2-8	3.81	205	0	
-        VF3-2-8	VF3-2-9	1.63	273	-20	
-        VF3-2-9	VF3-2-10	2.53	177	0	# amarrage Y du P40
-        VF3-2-10	VF3-2-11	33	0	90	
-        VF3-2-11	VF3-2-12	3.91	158	3	
-        VF3-2-12	VF3-2-13	7.86	155	71	
-        VF3-2-13	VF3-2-14	2.1	241	14	
-        VF3-2-14	VF3-2-15	12.62	288	10	
-        VF3-2-15	VF3-2-16	14.4	0	90	
-		VF3-2-16	VF3-2-17	12.96	265	32	
-        VF3-2-17	VF3-2-18	12.16	235	63	
+	data normal from to length compass clino right left up down
+	   s1_25 s32_1 1.60 240.00 -38.00  0.50 0.50  2.00 1.00  
+       s32_1 s32_2 1.96 285.00 -5.00  0.50 0.50  2.00 1.00  
+       s32_2 s32_3 4.55 298.00 -6.00  0.50 0.50  5.00 1.00  
+       s32_3 s32_4 9.90 0.00 -90.00  0.50 0.50  10.00 1.00  # Observ: =53.0
+       s32_4 s32_5 4.34 254.00 -47.00  0.50 0.50  5.00 1.00  
+       s32_5 s32_6 3.81 205.00 0.00  0.50 0.50  4.00 1.00  
+       s32_6 s32_7 1.63 273.00 20.00  0.50 0.50  2.00 1.00  
+       s32_7 s32_8 2.53 177.00 0.00  0.50 0.50  2.00 1.00  # Observ: amarrage Y du P40
+       s32_8 s32_9 33.00 0.00 -90.00  0.50 0.50  33.00 1.00  
+       s32_9 s32_10 3.91 158.00 -3.00  0.50 0.50  4.00 1.00  
+       s32_10 s32_11 7.86 155.00 -71.00  0.50 0.50  8.00 1.00  
+       s32_11 s32_12 2.10 241.00 -14.00  0.50 0.50  2.00 1.00  
+       s32_12 s32_13 7.85 0.00 -90.00  0.50 0.50  8.00 1.00  
+       s32_13 s32_14 12.62 288.00 -10.00  0.50 0.50  12.00 1.00  
+       s32_14 s32_15 14.40 0.00 -90.00  0.50 0.50  14.00 1.00  
+       s32_15 s32_16 12.96 265.00 -32.00  0.50 0.50  13.00 1.00  
+       s32_16 s32_17 12.16 235.00 -63.00  0.50 0.50  13.00 1.00  
 
 endcenterline
+
+ # centerline -extend right    
+    
+    # #date 2021.08.12
+    # #    team "Xavier Robert"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
+
+    # cs long-lat
+
+    # fix VF3 6.79367 46.090839	2336  #ALT IGN
+    # #cs EPSG:27572 LII étendu
+    # #fix VF3 944520 2130930	2335  #ALT IGN
+    # station VF3 "VF3 - Lucien Bouclier" entrance air-draught #continuation #explored ????m
+
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+        # VF3	2	3.88	300	56
+        # 2	3	26.3	220	80
+        # 3	4	4.14	205	-6.5
+        # 4	5	2.11	180	-12
+        # 5	6	1.77	245	14
+        # 6	6B	3.76	201	24.5
+        # #6B	7	0	0	-90             [By Alex ; Supprimé, cette région ne ressemble pas à l'Acad]
+        # 6B	7	11.81	0	90
+        # 7	8	3.23	254	3
+        # 8	9	27.8	0	90
+        # 9	10	3.13	98	3
+        # 10	11	4.8	140	22
+        # 11	12	8.58	0	90
+        # 12	13	2.34	150	3
+        # 13	14	4.53	0	90
+        # 14	15	3.98	210	34
+        # 15	16	1.33	106	16
+        # 16	17	1.86	230	20
+        # 17	18	2.34	180	41
+        # 18	19	2.83	215	46
+        # 19	20	1.3	215	32
+        # 20	21	0.77	268	20
+        # 21	22	3.2	220	30
+        # 22	23	4.39	0	90
+        # 23	24	2.77	255	-1
+        # 24	25	8.44	218	42
+
+# endcenterline
+
+# centerline -extend right    
+    
+    # #date 2021.08.12
+    # #    team "Xavier Robert"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
+
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+        # 25	VF3-2-2	1.6	240	52	
+        # VF3-2-2	VF3-2-3	1.96	285	85	
+        # VF3-2-3	VF3-2-4	0	0	-90	
+        # VF3-2-4	VF3-2-5	4.55	298	6	
+        # VF3-2-5	VF3-2-6	9.9	0	90	
+        # VF3-2-6	VF3-2-7	4.34	254	47	
+        # VF3-2-7	VF3-2-8	3.81	205	0	
+        # VF3-2-8	VF3-2-9	1.63	273	-20	
+        # VF3-2-9	VF3-2-10	2.53	177	0	# amarrage Y du P40
+        # VF3-2-10	VF3-2-11	33	0	90	
+        # VF3-2-11	VF3-2-12	3.91	158	3	
+        # VF3-2-12	VF3-2-13	7.86	155	71	
+        # VF3-2-13	VF3-2-14	2.1	241	14	
+        # VF3-2-14	VF3-2-15	12.62	288	10	
+        # VF3-2-15	VF3-2-16	14.4	0	90	
+		# VF3-2-16	VF3-2-17	12.96	265	32	
+        # VF3-2-17	VF3-2-18	12.16	235	63	
+
+# endcenterline
+
 
 endsurvey

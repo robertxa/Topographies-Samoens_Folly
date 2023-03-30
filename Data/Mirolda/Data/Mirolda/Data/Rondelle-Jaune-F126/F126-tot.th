@@ -8,12 +8,23 @@ survey F126 -title "Gouffre de la Rondelle Jaune - F126"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/F126/F126-tot.th
 	input Data/Marches/Marches-tot.th
-		equate 0@Marches.Marches 0@F126.F126	# Sommet du P30 ? Ca a l'air de coller avec la vieille topo !
+		equate s64_7@Marches.Marches s64_7@F126.F126	
 	input Data/Bricole_Amont/Bricole_Amont-tot.th
-		equate VF-27-62@Bricole_Amont.Bricole_Amont VF-27-62@Marches.Marches
+		equate s69_47@Bricole_Amont.Bricole_Amont s69_47@Marches.Marches
 	input Data/Bricole_Aval/Bricole_Aval-tot.th
-		equate 1.73@Bricole_Aval.Bricole_Aval 1.73@Bricole_Amont.Bricole_Amont
+		equate s69_47@Bricole_Aval.Bricole_Aval s69_47@Bricole_Amont.Bricole_Amont
+	input Data/Jonction-VF3/Jonction-VF3-tot.th
+		equate s64_7@Jonction-VF3.Jonction-VF3 s64_7@F126.F126
 	
+	### OLD
+	#input Data/Marches/Marches-tot.th
+	#	equate 0@Marches.Marches 0@F126.F126	# Sommet du P30 ? Ca a l'air de coller avec la vieille topo !
+	#input Data/Bricole_Amont/Bricole_Amont-tot.th
+	#	equate VF-27-62@Bricole_Amont.Bricole_Amont VF-27-62@Marches.Marches
+	#input Data/Bricole_Aval/Bricole_Aval-tot.th
+	#	equate 1.73@Bricole_Aval.Bricole_Aval 1.73@Bricole_Amont.Bricole_Amont
+	### END OLD
+
 	# Import du dessin en plan
 	#input Data/F126.th2
 

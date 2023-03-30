@@ -1,45 +1,109 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1992 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
  
 survey DDiscovery -title "VF3 - Mirolda - Réseau Lucien Bouclier - Départ dans g. Discovery"
 
 centerline -extend right    
     
-    #date 2021.08.12
-        #team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
+	# Serie: 41 - 
+    #========================
+	# [note Alex] explo URSUS 10
+	
+    date 1990 09 01
+		team "Jean Bottazzi"
+		team "Pascale Bottazzi"
+	
     explo-date 1972
         explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1978
         explo-team "Groupe Spéléo/Ursus"
-
-    units length meters
+		
+	units length meters
     units compass clino degrees
-    data normal from to length compass backclino
-#VF3-10-69	VF3-10-69	0	0	-91.5	# VF41 DEPART DE LA STATION "60"
-VF3-11-60	VF3-11-1	5.56	266	-40	# VF41 DEPART DE LA STATION "60"
-VF3-11-1	VF3-11-2	4.44	336	-48	
-VF3-11-2	VF3-11-3	0	0	-90	
-VF3-11-3	VF3-11-4	5.17	328	-55.5	
-VF3-11-4	VF3-11-5	5.16	10	-60	
-VF3-11-5	VF3-11-6	7.27	60	-6	
-#		0	0	-90	
-VF3-11-6	VF3-11-7	10.07	57	-37.5	
-VF3-11-7	VF3-11-8	9.25	55	-73.5	
-VF3-11-8	VF3-11-9	12.06	53	-5	
-VF3-11-9	VF3-11-10	6.08	54	-22.5	
-VF3-11-10	VF3-11-11	9.03	60	2.5	
-VF3-11-11	VF3-11-12	25.65	0	-90	
-VF3-11-12	VF3-11-13	1.5	225	10	
-VF3-11-13	VF3-11-14	11.71	0	-90	
-VF3-11-14	VF3-11-15	2.48	305	-6	
-VF3-11-15	VF3-11-16	3.16	196	-31.5	
-VF3-11-16	VF3-10-52	5.4	275	-13.5	    # [Note Alex : Raccord sur VF3-10-52]
+	data normal from to length compass clino right left up down			
+       s41_0 s41_1 5.56 266.00 40.00  0.00 0.00  0.00 0.00  
+       s41_1 s41_2 4.44 336.00 48.00  0.00 0.00  0.00 0.00  
+       s41_2 s41_3 5.17 328.00 55.50  0.00 0.00  0.00 0.00  
+       s41_3 s41_4 5.16 10.00 60.00  0.00 0.00  0.00 0.00  
+       s41_4 s41_5 7.27 60.00 6.00  0.00 0.00  0.00 0.00  
+       s41_5 s41_6 10.07 57.00 37.50  0.00 0.00  0.00 0.00  
+       s41_6 s41_7 9.25 55.00 73.50  0.00 0.00  0.00 0.00  
+       s41_7 s41_8 12.06 53.00 5.00  0.00 0.00  0.00 0.00  
+       s41_8 s41_9 6.08 54.00 22.50  0.00 0.00  0.00 0.00  
+       s41_9 s41_10 9.03 60.00 -2.50  0.00 0.00  0.00 0.00  
+       s41_10 s41_11 25.65 0.00 90.00  0.00 0.00  0.00 0.00  
+       s41_11 s41_12 1.50 225.00 -10.00  0.00 0.00  0.00 0.00  
+       s41_12 s41_13 11.71 0.00 90.00  0.00 0.00  0.00 0.00  
+       s41_13 s41_14 2.48 305.00 6.00  0.00 0.00  0.00 0.00  
+       s41_14 s41_15 3.16 196.00 31.50  0.00 0.00  0.00 0.00  
+       s41_15 s40_51 5.40 275.00 13.50  0.00 0.00  0.00 0.00  # Observ: =40.51
+
+
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #VF3-10-69	VF3-10-69	0	0	-91.5	# VF41 DEPART DE LA STATION "60"
+# VF3-11-60	VF3-11-1	5.56	266	-40	# VF41 DEPART DE LA STATION "60"
+# VF3-11-1	VF3-11-2	4.44	336	-48	
+# VF3-11-2	VF3-11-3	0	0	-90	
+# VF3-11-3	VF3-11-4	5.17	328	-55.5	
+# VF3-11-4	VF3-11-5	5.16	10	-60	
+# VF3-11-5	VF3-11-6	7.27	60	-6	
+# #		0	0	-90	
+# VF3-11-6	VF3-11-7	10.07	57	-37.5	
+# VF3-11-7	VF3-11-8	9.25	55	-73.5	
+# VF3-11-8	VF3-11-9	12.06	53	-5	
+# VF3-11-9	VF3-11-10	6.08	54	-22.5	
+# VF3-11-10	VF3-11-11	9.03	60	2.5	
+# VF3-11-11	VF3-11-12	25.65	0	-90	
+# VF3-11-12	VF3-11-13	1.5	225	10	
+# VF3-11-13	VF3-11-14	11.71	0	-90	
+# VF3-11-14	VF3-11-15	2.48	305	-6	
+# VF3-11-15	VF3-11-16	3.16	196	-31.5	
+# VF3-11-16	VF3-10-52	5.4	275	-13.5	    # [Note Alex : Raccord sur VF3-10-52]
+
+endcenterline
+
+centerline -extend right    #[Ajout Alex]
+    
+    # Serie: 50 - boyau	non	topo
+    #========================
+	# [note Alex] explo URSUS 19
+    date 1992 08 24
+		team "Laurent Mangel "
+		team "Cédric Felices"
+		team "Ptit Laurent"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down	
+       s41_0 s50_1 7.71 27.00 36.90  0.00 0.00  0.00 0.00     
+       s50_1 s50_2 3.02 45.90 -19.80  0.00 0.00  0.00 0.00  
+       s50_2 s50_3 4.30 54.00 15.30  0.00 0.00  0.00 0.00  
+       s50_3 s50_4 8.36 47.70 8.10  0.00 0.00  0.00 0.00  
+       s50_4 s50_5 12.72 42.30 18.00  0.00 0.00  0.00 0.00  
+       s50_5 s50_6 4.57 58.50 16.20  0.00 0.00  0.00 0.00  
+       s50_6 s50_7 2.66 328.50 -27.90  0.00 0.00  0.00 0.00  
+       s50_7 s50_8 3.09 288.90 1.80  0.00 0.00  0.00 0.00  
+       s50_8 s50_9 3.28 19.80 -1.80  0.00 0.00  0.00 0.00  
+       s50_9 s50_10 5.16 40.50 9.00  0.00 0.00  0.00 0.00  
+       s50_10 s50_11 2.90 52.20 -2.70  0.00 0.00  0.00 0.00  
+       s50_11 s50_12 2.18 9.00 -17.10  0.00 0.00  0.00 0.00  
+       s50_12 s50_13 3.65 54.00 3.60  0.00 0.00  0.00 0.00  
+       s50_13 s50_14 3.87 81.90 -5.40  0.00 0.00  0.00 0.00  
+       s50_14 s50_15 7.01 107.10 -2.70  0.00 0.00  0.00 0.00  
+       s50_15 s50_16 3.30 82.80 16.20  0.00 0.00  0.00 0.00  
+       s50_16 s50_17 2.68 45.00 -13.50  0.00 0.00  0.00 0.00  	
 
 endcenterline
 

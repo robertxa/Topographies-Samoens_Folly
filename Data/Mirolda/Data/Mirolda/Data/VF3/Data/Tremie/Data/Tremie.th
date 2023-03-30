@@ -1,83 +1,180 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1993 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
- 
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
+
 survey Tremie -title "VF3 - Mirolda - Réseau Lucien Bouclier - g. de la Trémie"
 
 centerline -extend right    
     
-    #date 2021.08.12
-    #    team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
+	# Serie: 38 - Galerie de la Trémie
+    #========================
+	# [note Alex] explo URSUS 7
+	
+    date 1989 08 15
+		team "Michel Dussurget"
+		team "Anne-Sophie Mercandalli"
+		team "Sylvain Matricon" 
+	
     explo-date 1972
         explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1978
         explo-team "Groupe Spéléo/Ursus"
-
-    units length meters
+		
+	units length meters
     units compass clino degrees
-    data normal from to length compass backclino
-#VF3-4-11	VF3-4-11	0	0	-90	# a partir du P40 
-VF3-4-11	VF3-8-1	0.99	255	14.4	# galerie sup.fossile   [Note Alex : Raccord VF3-4-11]
-VF3-8-1	VF3-8-2	4.51	184	27	
-VF3-8-2	VF3-8-3	1.83	198	-11.7	
-VF3-8-3	VF3-8-4	9.62	0	-90	# remontee vert.
-VF3-8-4	VF3-8-5	12.35	194	-9.9	
-VF3-8-5	VF3-8-6	12.99	286	-8.1	
-VF3-8-6	VF3-8-7	4.95	310	27.9	
-VF3-8-7	VF3-8-8	3.43	277	-3.6	
-VF3-8-8	VF3-8-10	8.9	257	22.5	# station 10
-VF3-8-10	VF3-8-11	7.67	249	-26.1	
-VF3-8-11	VF3-8-12	4.5	222	-7.2	
-VF3-8-12	VF3-8-13	5.78	230	27	
-VF3-8-13	VF3-8-14	5.83	329	-3.6	
-VF3-8-14	VF3-8-15	11.67	246	3.6	
-VF3-8-15	VF3-8-16	8.28	213	0	
-VF3-8-16	VF3-8-17	8.49	212	-6.3	
-VF3-8-17	VF3-8-18	7.36	210	23.4	
-VF3-8-18	VF3-8-19	13.34	184	-0.9	
-VF3-8-19	VF3-8-20	3.03	279	-7.2	
-VF3-8-20	VF3-8-21	6.75	208	7.2	
-VF3-8-21	VF3-8-22	16.57	190	27.9	
-VF3-8-22	VF3-8-23	5.48	250	11.7	
-VF3-8-23	VF3-8-24	10.38	232	12.6	
-VF3-8-24	VF3-8-25	13.62	217	22.5	
-VF3-8-25	VF3-8-26	3.94	187	1.8	
-VF3-8-26	VF3-8-27	4.49	105	23.4	
-VF3-8-27	VF3-8-28	11.99	208	33.3	
-VF3-8-28	VF3-8-29	22.61	196	34.2	
-VF3-8-29	VF3-8-30	6.35	205	25.2	
-VF3-8-30	VF3-8-31	11.6	218	28.4	
-VF3-8-31	VF3-8-32	6.62	257	4.5	
-VF3-8-32	VF3-8-33	13.82	207	18.9	
+	data normal from to length compass clino right left up down		
+       s34_11 s38_1 0.99 255.00 -14.40  0.00 0.00  0.00 0.00  
+       s38_1 s38_2 4.51 184.00 -27.00  0.00 0.00  0.00 0.00  
+       s38_2 s38_3 1.83 198.00 11.70  0.00 0.00  0.00 0.00  
+       s38_3 s38_4 9.62 0.00 90.00  0.00 0.00  0.00 0.00  
+       s38_4 s38_5 12.35 194.00 9.90  0.00 0.00  0.00 0.00  
+       s38_5 s38_6 12.99 286.00 8.10  0.00 0.00  0.00 0.00  
+       s38_6 s38_7 4.95 310.00 -27.90  0.00 0.00  0.00 0.00  
+       s38_7 s38_8 3.43 277.00 3.60  0.00 0.00  0.00 0.00  
+       s38_8 s38_9 8.90 257.00 -22.50  0.00 0.00  0.00 0.00  # Observ: station 10
+       s38_9 s38_10 7.67 249.00 26.10  0.00 0.00  0.00 0.00  
+       s38_10 s38_11 4.50 222.00 7.20  0.00 0.00  0.00 0.00  
+       s38_11 s38_12 5.78 230.00 -27.00  0.00 0.00  0.00 0.00  
+       s38_12 s38_13 5.83 329.00 3.60  0.00 0.00  0.00 0.00  
+       s38_13 s38_14 11.67 246.00 -3.60  0.00 0.00  0.00 0.00  
+       s38_14 s38_15 8.28 213.00 0.00  0.00 0.00  0.00 0.00  
+       s38_15 s38_16 8.49 212.00 6.30  0.00 0.00  0.00 0.00  
+       s38_16 s38_17 7.36 210.00 -23.40  0.00 0.00  0.00 0.00  
+       s38_17 s38_18 13.34 184.00 0.90  0.00 0.00  0.00 0.00  
+       s38_18 s38_19 3.03 279.00 7.20  0.00 0.00  0.00 0.00  # Observ: station 20
+       s38_19 s38_20 6.75 208.00 -7.20  0.00 0.00  0.00 0.00  
+       s38_20 s38_21 16.57 190.00 -27.90  0.00 0.00  0.00 0.00  
+       s38_21 s38_22 5.48 250.00 -11.70  0.00 0.00  0.00 0.00  
+       s38_22 s38_23 10.38 232.00 -12.60  0.00 0.00  0.00 0.00  # Observ: station 24
+       s38_23 s38_24 13.62 217.00 -22.50  0.00 0.00  0.00 0.00  
+       s38_24 s38_25 3.94 187.00 -1.80  0.00 0.00  0.00 0.00  
+       s38_25 s38_26 4.49 105.00 -23.40  0.00 0.00  0.00 0.00  
+       s38_26 s38_27 11.99 208.00 -33.30  0.00 0.00  0.00 0.00  
+       s38_27 s38_28 22.61 196.00 -34.20  0.00 0.00  0.00 0.00  
+       s38_28 s38_29 6.35 205.00 -25.20  0.00 0.00  0.00 0.00  
+       s38_29 s38_30 11.60 218.00 -28.35  0.00 0.00  0.00 0.00  
+       s38_30 s38_31 6.62 257.00 -4.50  0.00 0.00  0.00 0.00  # Observ: station 32
+       s38_31 s38_32 13.82 207.00 -18.90  0.00 0.00  0.00 0.00  # Observ: station 33	
+		
+
+	# units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #VF3-4-11	VF3-4-11	0	0	-90	# a partir du P40 
+# VF3-4-11	VF3-8-1	0.99	255	14.4	# galerie sup.fossile   [Note Alex : Raccord VF3-4-11]
+# VF3-8-1	VF3-8-2	4.51	184	27	
+# VF3-8-2	VF3-8-3	1.83	198	-11.7	
+# VF3-8-3	VF3-8-4	9.62	0	-90	# remontee vert.
+# VF3-8-4	VF3-8-5	12.35	194	-9.9	
+# VF3-8-5	VF3-8-6	12.99	286	-8.1	
+# VF3-8-6	VF3-8-7	4.95	310	27.9	
+# VF3-8-7	VF3-8-8	3.43	277	-3.6	
+# VF3-8-8	VF3-8-10	8.9	257	22.5	# station 10
+# VF3-8-10	VF3-8-11	7.67	249	-26.1	
+# VF3-8-11	VF3-8-12	4.5	222	-7.2	
+# VF3-8-12	VF3-8-13	5.78	230	27	
+# VF3-8-13	VF3-8-14	5.83	329	-3.6	
+# VF3-8-14	VF3-8-15	11.67	246	3.6	
+# VF3-8-15	VF3-8-16	8.28	213	0	
+# VF3-8-16	VF3-8-17	8.49	212	-6.3	
+# VF3-8-17	VF3-8-18	7.36	210	23.4	
+# VF3-8-18	VF3-8-19	13.34	184	-0.9	
+# VF3-8-19	VF3-8-20	3.03	279	-7.2	
+# VF3-8-20	VF3-8-21	6.75	208	7.2	
+# VF3-8-21	VF3-8-22	16.57	190	27.9	
+# VF3-8-22	VF3-8-23	5.48	250	11.7	
+# VF3-8-23	VF3-8-24	10.38	232	12.6	
+# VF3-8-24	VF3-8-25	13.62	217	22.5	
+# VF3-8-25	VF3-8-26	3.94	187	1.8	
+# VF3-8-26	VF3-8-27	4.49	105	23.4	
+# VF3-8-27	VF3-8-28	11.99	208	33.3	
+# VF3-8-28	VF3-8-29	22.61	196	34.2	
+# VF3-8-29	VF3-8-30	6.35	205	25.2	
+# VF3-8-30	VF3-8-31	11.6	218	28.4	
+# VF3-8-31	VF3-8-32	6.62	257	4.5	
+# VF3-8-32	VF3-8-33	13.82	207	18.9	
+
+
 endcenterline
 
 centerline -extend right    
     
-    #date 2021.08.12
-    #    team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
+    # [note Alex] explo URSUS 3
+	date 1988 07 01
+		team "Michel Dussurget"
+		team "François Daniere"
+	
     explo-date 1972
         explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1978
         explo-team "Groupe Spéléo/Ursus"
-
+		
     units length meters
     units compass clino degrees
-    data normal from to length compass backclino
-#VF3-8-24	VF3-8-24	0	0	-90	# recoupement de la station 24 à la station 20
-VF3-8-24	VF3-8-24b	20.65	335	-26.1	
-VF3-8-24b	VF3-8-25b	4.42	2	-28.8	
-VF3-8-25b	VF3-8-26b	6.31	50	-28.8	
-VF3-8-26b	VF3-8-27b	6.6	78	-9.9	
-VF3-8-27b	VF3-8-28b	7.98	58	3.6	
-VF3-8-28b	VF3-8-29b	9.63	126	36	
-VF3-8-29b	VF3-8-20	1.2	56	0	            #  [Note Alex : raccord fermeture boucle sur VF-8-20]
+	data normal from to length compass clino right left up down		
+		s38_24 s5_1 20.65 335.00 26.10  0.00 0.00  0.00 0.00  
+		s5_1 s5_2 4.42 2.00 28.80  0.00 0.00  0.00 0.00  
+		s5_2 s5_3 6.31 50.00 28.80  0.00 0.00  0.00 0.00  
+		s5_3 s5_4 6.60 78.00 9.90  0.00 0.00  0.00 0.00  
+		s5_4 s5_5 7.98 58.00 -3.60  0.00 0.00  0.00 0.00  
+		s5_5 s5_6 9.63 126.00 -36.00  0.00 0.00  0.00 0.00  
+		s5_6 s5_7 1.20 56.00 0.00  0.00 0.00  0.00 0.00  # Observ: =38.20	
+
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #VF3-8-24	VF3-8-24	0	0	-90	# recoupement de la station 24 à la station 20
+# VF3-8-24	VF3-8-24b	20.65	335	-26.1	
+# VF3-8-24b	VF3-8-25b	4.42	2	-28.8	
+# VF3-8-25b	VF3-8-26b	6.31	50	-28.8	
+# VF3-8-26b	VF3-8-27b	6.6	78	-9.9	
+# VF3-8-27b	VF3-8-28b	7.98	58	3.6	
+# VF3-8-28b	VF3-8-29b	9.63	126	36	
+# VF3-8-29b	VF3-8-20	1.2	56	0	            #  [Note Alex : raccord fermeture boucle sur VF-8-20]
+endcenterline
+
+centerline -extend right    # [Ajout Alex]
+    
+    # [note Alex] explo URSUS 21
+	date 1993 09 01
+		team "Laurent Mangel"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+    units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down	
+       s38_32 s55_1 3.93 309.60 -30.60  0.00 0.00  0.00 0.00  
+       s55_1 s55_2 6.87 249.30 -33.30  0.00 0.00  0.00 0.00  
+       s55_2 s55_3 5.90 210.60 -33.30  0.00 0.00  0.00 0.00  
+       s55_3 s55_4 3.25 213.30 -30.60  0.00 0.00  0.00 0.00  
+       s55_4 s55_5 1.79 170.10 -36.00  0.00 0.00  0.00 0.00  
+       s55_5 s55_6 2.16 197.10 -81.90  0.00 0.00  0.00 0.00  
+       s55_6 s55_7 3.22 184.50 -32.40  0.00 0.00  0.00 0.00  
+       s55_7 s55_8 2.99 260.10 -35.10  0.00 0.00  0.00 0.00  # Observ: T rouge sommet P8
+       s55_8 s55_9 2.34 162.00 -2.70  0.00 0.00  0.00 0.00  
+       s55_9 s55_10 2.38 287.10 1.80  0.00 0.00  0.00 0.00  
+       s55_10 s55_11 6.78 216.90 -44.10  0.00 0.00  0.00 0.00  	
+	   
+	   s38_32 s55_1 3.93 309.60 -30.60  0.00 0.00  0.00 0.00  
+       s55_1 s55_2 6.87 249.30 -33.30  0.00 0.00  0.00 0.00  
+       s55_2 s55_3 5.90 210.60 -33.30  0.00 0.00  0.00 0.00  
+       s55_3 s55_4 3.25 213.30 -30.60  0.00 0.00  0.00 0.00  
+       s55_4 s55_5 1.79 170.10 -36.00  0.00 0.00  0.00 0.00  
+       s55_5 s55_6 2.16 197.10 -81.90  0.00 0.00  0.00 0.00  
+       s55_6 s55_7 3.22 184.50 -32.40  0.00 0.00  0.00 0.00  
+       s55_7 s55_8 2.99 260.10 -35.10  0.00 0.00  0.00 0.00  # Observ: T rouge sommet P8
+       s55_8 s55_9 2.34 162.00 -2.70  0.00 0.00  0.00 0.00  
+       s55_9 s55_10 2.38 287.10 1.80  0.00 0.00  0.00 0.00  
+       s55_10 s55_11 6.78 216.90 -44.10  0.00 0.00  0.00 0.00  
+	   
 endcenterline
 
 endsurvey

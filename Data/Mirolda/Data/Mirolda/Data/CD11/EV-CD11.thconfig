@@ -55,6 +55,7 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   symbol-hide line survey
+  symbol-hide point station-name
 
   layers on
 
@@ -114,6 +115,7 @@ layout my_layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   symbol-hide line survey
+  symbol-hide point station-name
   
   layers on
                 
@@ -217,6 +219,7 @@ layout AtlasPlan
 	#   endcode  
   
 	symbol-hide line survey
+	symbol-hide point station-name
 	#debug station-names
                 
 	# Titre                         
@@ -241,7 +244,7 @@ select MC-CD11-coupe-tot@CD11
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- #export map -proj plan -fmt pdf -o Outputs/CD11-2022-planEV.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/CD11-2022-planEV.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/CD11-2022-coupeEV.pdf
  #export atlas -projection plan -fmt pdf -o Outputs/CD11-2022-atlasEV.pdf -layout AtlasPlan
 #export atlas -projection extended -fmt pdf -o Outputs/CD11-2022-Coupe-atlasEV.pdf -layout AtlasPlan

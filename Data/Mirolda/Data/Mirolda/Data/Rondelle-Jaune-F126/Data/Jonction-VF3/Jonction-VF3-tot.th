@@ -4,18 +4,20 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Sous-Jumeaux -title "VF3 - Réseau Sous-Jumeaux"
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
+
+survey Jonction-VF3 -title "Gouffre Mirolda - F126 - 1000 Jonction-VF3"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/Sous-Jumeaux.th
+	input Data/Jonction-VF3.th
 	
 	# Import du dessin en plan
-	#input Data/Sous-Jumeaux.th2
+	#input Data/Jonction-VF3.th2
 
 	# Import du dessin en coupe
-	#input Data/Sous-Jumeaux-coupe.th2
+	#input Data/Jonction-VF3-coupe.th2
 
 	# Import des maps
-	#input Sous-Jumeaux-maps.th
+	#input Jonction-VF3-maps.th
  
  endsurvey
  

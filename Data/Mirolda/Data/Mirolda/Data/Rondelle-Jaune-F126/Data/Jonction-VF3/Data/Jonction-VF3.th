@@ -1,0 +1,180 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
+ 
+survey Jonction-VF3 -title "Gouffre de la Rondelle Jaune - F126 - 1000 Jonction-VF3"
+
+centerline -extend right    
+    
+	# Serie: 72 - cote VF3
+    #========================
+	# [note Alex] explo URSUS 32
+	
+    date 1992 08 20
+		team "Laurent Flandrin"
+		team "Jacques Gudefin"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down
+       s64_7 s72_1 25.17 105.30 -73.80  0.00 0.00  0.00 0.00  # Observ: pendule
+       s72_1 s72_2 3.95 73.80 -3.60  0.00 0.00  0.00 0.00  
+       s72_2 s72_3 3.48 107.10 -40.50  0.00 0.00  0.00 0.00  
+       s72_3 s72_4 5.35 99.00 9.45  0.00 0.00  0.00 0.00  
+       s72_4 s72_5 2.08 167.40 -27.00  0.00 0.00  0.00 0.00  
+       s72_5 s72_6 6.76 0.00 -90.00  0.00 0.00  0.00 0.00   	
+
+endcenterline
+
+centerline -extend right    
+    
+	# Serie: 73   F123 Jonction escalade VF3
+    #========================
+	# [note Alex] explo URSUS 33
+	
+    date 1998 02 15
+		team "Laurent Flandrin"
+		team "Jacques Gudefin"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down
+	   s72_6 s73_1 4.96 112.50 16.20  0.00 0.00  0.00 0.00  
+       s73_1 s73_2 29.84 128.70 -88.20  0.00 0.00  0.00 0.00  
+       s73_2 s73_3 16.24 68.40 -78.30  0.00 0.00  0.00 0.00  
+       s73_3 s73_4 3.52 26.10 -9.90  0.00 0.00  0.00 0.00  
+       s73_4 s73_5 21.47 354.60 -73.80  0.00 0.00  0.00 0.00  
+       s73_5 s73_6 5.70 55.80 -70.20  0.00 0.00  0.00 0.00  
+       s73_6 s73_7 3.78 139.50 -64.80  0.00 0.00  0.00 0.00  
+       s73_7 s73_8 3.60 55.80 -0.90  0.00 0.00  0.00 0.00  
+       s73_8 s73_9 7.43 113.40 -54.00  0.00 0.00  0.00 0.00  
+       s73_9 s73_10 1.47 76.50 -38.70  0.00 0.00  0.00 0.00  
+       s73_10 s73_11 2.76 0.00 -90.00  0.00 0.00  0.00 0.00  
+       s73_11 s73_12 3.76 22.50 -22.50  0.00 0.00  0.00 0.00  
+       s73_12 s73_13 4.94 29.70 -51.30  0.00 0.00  0.00 0.00  
+       s73_13 s73_14 3.62 63.00 -41.40  0.00 0.00  0.00 0.00  
+       s73_14 s73_15 3.88 108.00 -29.70  0.00 0.00  0.00 0.00  
+       s73_15 s73_16 11.55 99.00 -88.20  0.00 0.00  0.00 0.00  
+       s73_16 s73_17 5.24 277.20 -4.50  0.00 0.00  0.00 0.00  
+       s73_17 s73_18 5.41 288.90 -9.90  0.00 0.00  0.00 0.00  
+       s73_18 s73_19 5.67 270.00 -16.20  0.00 0.00  0.00 0.00  
+       s73_19 s73_20 6.59 279.00 -9.90  0.00 0.00  0.00 0.00  
+       s73_20 s73_21 7.95 344.70 10.80  0.00 0.00  0.00 0.00  
+       s73_21 s73_22 10.39 274.50 -22.50  0.00 0.00  0.00 0.00  
+       s73_22 s73_23 5.05 306.00 35.10  0.00 0.00  0.00 0.00  
+       s73_23 s73_24 5.38 306.00 9.90  0.00 0.00  0.00 0.00  
+       s73_24 s73_25 1.18 299.70 -20.70  0.00 0.00  0.00 0.00  
+       s73_25 s73_26 6.13 297.00 -45.90  0.00 0.00  0.00 0.00  
+       s73_26 s73_27 4.63 306.00 -34.20  0.00 0.00  0.00 0.00  # Observ: Spit du puits faille
+       s73_27 s73_28 5.62 75.60 -68.40  0.00 0.00  0.00 0.00  
+       s73_28 s73_29 13.27 49.50 -80.10  0.00 0.00  0.00 0.00  
+       s73_29 s42_26 13.54 65.70 -78.30  0.00 0.00  0.00 0.00  # Observ: Jonction sadobozzo
+ 	
+
+endcenterline
+
+centerline -extend right    
+    
+	# Serie: 74 - 75  
+    #========================
+	# [note Alex] explo URSUS 33
+	
+    date 1992 08 22
+		team "Aymeric Bougnol"
+		team "Nicolas Faure"
+		team "Sylvain Matricon"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down
+	   s73_27 s74_1 3.17 22.50 -88.20  0.00 0.00  0.00 0.00  
+       s74_1 s74_2 5.95 254.70 10.80  0.00 0.00  0.00 0.00  # Observ: Station 32 JG
+       s74_2 s74_3 3.84 160.20 -47.70  0.00 0.00  0.00 0.00  
+       s74_3 s74_4 6.44 125.10 12.60  0.00 0.00  0.00 0.00  
+       s74_4 s74_5 5.78 124.20 13.50  0.00 0.00  0.00 0.00  
+       s74_5 s74_6 3.63 131.40 -15.30  0.00 0.00  0.00 0.00  
+       s74_6 s74_7 9.21 102.60 36.00  0.00 0.00  0.00 0.00  
+       s74_7 s74_8 4.70 112.50 18.90  0.00 0.00  0.00 0.00  
+       s74_8 s73_20 5.93 121.50 29.70  0.00 0.00  0.00 0.00  # Observ: =611.20
+
+       s74_2 s75_1 3.95 207.00 -15.30  0.00 0.00  0.00 0.00  
+       s75_1 s75_2 6.68 337.50 73.80  0.00 0.00  0.00 0.00  
+       s75_2 s75_3 3.75 342.00 44.10  0.00 0.00  0.00 0.00  
+       s75_3 s75_4 9.26 279.90 -11.70  0.00 0.00  0.00 0.00  
+       s75_4 s75_5 14.88 292.50 -35.10  0.00 0.00  0.00 0.00  
+       s75_5 s75_6 4.69 323.10 -72.00  0.00 0.00  0.00 0.00  
+       s75_6 s75_7 3.97 292.50 4.50  0.00 0.00  0.00 0.00  
+       s75_7 s75_8 5.41 324.00 -33.30  0.00 0.00  0.00 0.00  
+       s75_8 s75_9 6.07 226.80 1.80  0.00 0.00  0.00 0.00  
+       s75_9 s75_10 4.58 301.50 51.30  0.00 0.00  0.00 0.00  
+       s75_10 s75_11 4.25 247.50 18.00  0.00 0.00  0.00 0.00  
+       s75_11 s75_12 6.81 63.00 51.30  0.00 0.00  0.00 0.00  
+       s75_12 s75_13 4.03 302.40 3.60  0.00 0.00  0.00 0.00  
+       s75_13 s75_14 6.55 294.30 -7.20  0.00 0.00  0.00 0.00  
+       s75_14 s75_15 5.32 328.50 -12.60  0.00 0.00  0.00 0.00  
+       s75_15 s75_16 6.41 79.20 42.30  0.00 0.00  0.00 0.00  # Observ: station 55 JG
+
+endcenterline
+
+centerline -extend right    
+    
+	# Serie: 76 - 77
+    #========================
+	# [note Alex] explo URSUS 34
+	
+    date 1992 09 12
+		team "Laurent Mangel"
+		team "Laurent Guizard"
+		team "Jacques Gudefin"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down
+       s75_16 s76_1 7.69 252.00 36.00  0.00 0.00  0.00 0.00  # Observ: =613.16
+       s76_1 s76_2 5.79 329.40 50.40  0.00 0.00  0.00 0.00  
+       s76_2 s76_3 4.49 263.70 -7.20  0.00 0.00  0.00 0.00  
+       s76_3 s76_4 2.46 2.70 0.00  0.00 0.00  0.00 0.00  
+       s76_4 s76_5 3.36 328.50 59.40  0.00 0.00  0.00 0.00  
+       s76_5 s76_6 3.07 3.60 -1.80  0.00 0.00  0.00 0.00  
+       s76_6 s76_7 5.66 306.00 -0.90  0.00 0.00  0.00 0.00  
+       s76_7 s76_8 1.18 279.00 11.70  0.00 0.00  0.00 0.00  
+       s76_8 s76_9 2.50 311.40 19.80  0.00 0.00  0.00 0.00  
+       s76_9 s76_10 2.40 321.30 -62.10  0.00 0.00  0.00 0.00  # Observ: Station 65 JG
+       s76_10 s76_11 3.05 90.00 26.10  0.00 0.00  0.00 0.00  
+       s76_11 s76_12 3.19 36.00 30.60  0.00 0.00  0.00 0.00  # Observ: grand puits avec méandre station JG67
+
+       s76_10 s77_1 4.50 264.60 -49.50  0.00 0.00  0.00 0.00  
+       s77_1 s77_2 7.35 27.90 -11.70  0.00 0.00  0.00 0.00  
+       s77_2 s77_3 2.10 298.80 39.15  0.00 0.00  0.00 0.00  
+       s77_3 s77_4 6.83 256.50 -38.70  0.00 0.00  0.00 0.00  
+       s77_4 s77_5 0.80 262.80 -18.00  0.00 0.00  0.00 0.00  
+       s77_5 s77_6 9.41 246.60 -36.90  0.00 0.00  0.00 0.00  
+       s77_6 s77_7 7.13 266.40 -23.40  0.00 0.00  0.00 0.00  
+
+endcenterline
+
+ endsurvey

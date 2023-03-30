@@ -1,222 +1,359 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1998 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
- 
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
+
 survey DDiscovery2 -title "VF3 - Mirolda - Réseau Lucien Bouclier - DDiscovery2"
 
 centerline -extend right    
+
+    # Serie: 47 - amont	Hongroise
+    #========================
+	# [note Alex] explo URSUS 15
+	
+    date 1991 08 07
+		team "Michel Dussurget"
+		team "Laurent Flandrin"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down				
+       s47_0 s47_1 3.34 277.00 -7.20  0.00 0.00  0.00 0.00  
+       s47_1 s47_2 3.26 259.00 -12.60  0.00 0.00  0.00 0.00  
+       s47_2 s47_3 4.66 295.00 7.20  0.00 0.00  0.00 0.00  
+       s47_3 s47_4 3.95 252.00 -26.10  0.00 0.00  0.00 0.00  
+       s47_4 s47_5 5.42 316.00 -17.10  0.00 0.00  0.00 0.00  
+       s47_5 s47_6 4.89 276.00 -37.80  0.00 0.00  0.00 0.00  
+       s47_6 s47_7 9.07 346.00 22.50  0.00 0.00  0.00 0.00  
+       s47_7 s47_8 2.30 312.00 20.70  0.00 0.00  0.00 0.00  # Observ: =62,82 station 71prime
+       s47_8 s47_9 3.82 288.00 -11.70  0.00 0.00  0.00 0.00  
+       s47_9 s47_10 2.85 330.00 23.40  0.00 0.00  0.00 0.00  
+       s47_10 s47_11 3.15 243.00 9.00  0.00 0.00  0.00 0.00  
+       s47_11 s47_12 1.36 260.00 52.20  0.00 0.00  0.00 0.00  
+       s47_12 s47_13 3.55 245.00 -5.40  0.00 0.00  0.00 0.00  
+       s47_13 s47_14 2.21 296.00 34.20  0.00 0.00  0.00 0.00  
+       s47_14 s47_15 4.33 289.00 1.80  0.00 0.00  0.00 0.00  
+       s47_15 s47_16 2.31 23.00 31.50  0.00 0.00  0.00 0.00  
+       s47_16 s47_17 2.62 302.00 3.60  0.00 0.00  0.00 0.00  
+       s47_17 s47_18 3.24 265.00 -36.90  0.00 0.00  0.00 0.00  
+       s47_18 s47_19 1.96 235.00 -38.70  0.00 0.00  0.00 0.00  
+       s47_19 s47_20 2.76 290.00 -69.30  0.00 0.00  0.00 0.00  
+       s47_20 s47_21 5.97 102.00 -74.70  0.00 0.00  0.00 0.00  
+       s47_21 s17_0 2.00 18.00 0.00  0.00 0.00  0.00 0.00  # Observ: =17.0
+
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #	VF3-16-26	0	0	-90	# VF47 DEPART ST. 72
+# #	VF3-16-26	0	0	-90	# VF47 DEPART ST. 72
+# VF3-16-26	VF3-17-1	3.34	277	7.2	# Depart OK ?  [Note Alex: raccord NOK a voir ??? sur VF3-16-26]
+# VF3-17-1	VF3-17-2	3.26	259	12.6	
+# VF3-17-2	VF3-17-3	4.66	295	-7.2	
+# #		0	0	-90	# FIL CASSE
+# VF3-17-3	VF3-17-4	3.95	252	26.1	
+# #		0	0	-90	# FIL CASSE
+# VF3-17-4	VF3-17-5	5.42	316	17.1	
+# VF3-17-5	VF3-17-6	4.89	276	37.8	
+# VF3-17-6	VF3-17-7	9.07	346	-22.5	
+# VF3-17-7	VF3-17-8	2.3	312	-20.7	# STATION 71; To OK ????
+
+# VF3-17-8	VF3-17-9	3.82	288	11.7	
+# VF3-17-9	VF3-17-10	2.85	330	-23.4	
+# VF3-17-10	VF3-17-11	3.15	243	-9	
+# VF3-17-11	VF3-17-12	1.36	260	-52.2	
+# VF3-17-12	VF3-17-13	3.55	245	5.4	
+# VF3-17-13	VF3-17-14	2.21	296	-34.2	
+# VF3-17-14	VF3-17-15	4.33	289	-1.8	
+# VF3-17-15	VF3-17-16	2.31	23	-31.5	
+# VF3-17-16	VF3-17-17	2.62	302	-3.6	
+# VF3-17-17	VF3-17-18	3.24	265	36.9	
+# VF3-17-18	VF3-17-19	1.96	235	38.7	
+# VF3-17-19	VF3-17-20	2.76	290	69.3	
+# VF3-17-20	VF3-17-21	5.97	102	74.7	# ARRIVEE ST. 70
+
+endcenterline
+
+
+centerline -extend right    # [Ajout Alex]
+
+    # Serie: 62 - fenetre	falaise
+    #========================
+   	# [note Alex] explo URSUS 24
+    date 1998 08 06
+		team "Vincent Vieillerobe"
+		team "Aymeric Bougnol"
+		team "Sylvain Matricon"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down
+       s62_0 s62_1 3.88 288.00 -7.20  0.10 1.00  1.20 1.50  
+       s62_1 s62_2 3.88 234.00 -43.20  0.50 0.50  3.00 1.00  
+       s62_2 s62_3 3.88 238.50 -9.00  0.50 0.50  2.00 1.00  
+       s62_3 s62_4 3.88 243.00 13.50  0.10 0.40  3.00 0.80  
+       s62_4 s62_5 3.88 256.50 27.00  0.40 0.40  1.00 3.00  
+       s62_5 s62_6 3.88 232.20 -46.80  0.40 0.50  1.50 2.00  
+       s62_6 s62_7 3.88 252.00 -16.20  0.30 0.50  1.20 3.00  
+       s62_7 s62_8 4.74 252.00 36.00  6.00 1.00  3.00 1.50  # Observ: Salle deffondrement
+       s62_8 s62_9 4.74 189.00 5.40  2.50 1.00  1.80 1.50  
+       s62_9 s62_10 6.34 202.50 -31.50  1.00 0.50  0.20 0.20  # Observ: trémie
+       s62_10 s62_11 2.84 162.00 0.00  1.50 0.50  0.60 0.10  # Observ: étroiture
+       s62_11 s62_12 4.96 261.00 -21.60  0.80 0.80  0.80 0.00  
+       s62_12 s62_13 5.42 288.00 -4.50  0.50 0.50  0.20 0.20  # Observ: étroiture
+       s62_13 s62_14 5.91 283.50 -19.80  1.00 1.20  0.70 0.40  
+       s62_14 s62_15 5.91 252.00 -30.60  1.50 0.80  0.50 0.10  
+       s62_15 s62_16 5.91 297.00 -10.80  1.00 0.80  0.30 0.10  # Observ: étroiture
+       s62_16 s62_17 2.75 324.00 13.50  1.50 0.10  0.80 1.00  
+       s62_17 s62_18 2.75 54.00 22.50  1.00 2.00  0.50 1.00  
+       s62_18 s62_19 2.75 9.00 20.70  1.00 1.50  0.80 0.60  
+       s62_19 s62_20 2.75 0.00 27.00  1.50 1.00  0.30 0.70  
+       s62_20 s62_21 2.75 306.00 0.00  0.80 1.20  0.50 2.00  # Observ: arrivée a droite
+       s62_21 s62_22 1.45 0.00 -90.00  1.60 0.30  2.00 0.40  
+       s62_22 s62_23 6.95 324.00 -19.80  0.60 0.40  2.00 1.60  
+       s62_23 s62_24 5.77 288.00 4.50  0.40 0.40  0.80 0.40  
+       s62_24 s62_25 2.49 234.00 -9.00  0.40 0.30  1.20 0.20  
+       s62_25 s62_26 6.31 225.00 -27.90  0.50 0.20  2.00 3.00  
+       s62_26 s62_27 2.73 234.00 -63.00  0.10 0.20  4.00 0.80  
+       s62_27 s62_28 2.28 301.50 -22.50  0.20 0.40  2.00 0.40  # Observ: étroiture
+       s62_28 s62_29 2.28 337.50 0.00  0.70 0.20  3.00 1.00  
+       s62_29 s62_30 4.08 265.50 7.20  0.50 0.50  1.00 1.20  
+       s62_30 s62_31 6.36 328.50 7.20  0.20 0.50  2.00 3.00  
+       s62_31 s62_32 1.96 288.00 9.00  0.50 0.50  1.20 0.70  
+       s62_32 s62_33 1.96 342.00 11.70  0.20 0.30  2.00 1.00  
+       s62_33 s62_34 1.96 315.00 11.70  0.50 0.60  2.00 1.00  
+       s62_34 s62_35 1.96 252.00 27.00  0.60 0.10  2.00 3.00  
+       s62_35 s62_36 3.07 252.00 -25.20  1.00 0.20  3.00 2.50  
+       s62_36 s62_37 3.07 252.00 -23.40  1.00 0.00  1.50 3.00  
+       s62_37 s62_38 3.07 243.00 -18.00  0.20 0.30  3.00 4.00  
+       s62_38 s62_39 4.93 229.50 -54.90  1.00 1.20  0.20 0.80  
+       s62_39 s62_40 3.10 261.00 0.00  1.10 1.50  0.80 0.10  
+       s62_40 s62_41 3.10 274.50 -30.60  2.00 2.50  1.50 1.50  
+       s62_41 s62_42 8.06 252.00 -22.50  2.50 0.70  0.70 1.20  
+       s62_42 s62_43 8.06 225.00 -4.50  0.50 0.00  4.00 1.50  
+       s62_43 s62_44 1.89 225.00 -12.60  0.50 0.60  4.00 1.00  
+       s62_44 s62_45 3.20 171.00 -27.00  0.30 0.40  5.00 1.50  
+       s62_45 s62_46 3.20 216.00 -9.00  1.00 0.50  3.50 1.10  
+       s62_46 s62_47 3.20 238.50 0.00  0.70 0.70  0.40 1.20  
+       s62_47 s62_48 3.20 171.00 -22.50  2.00 1.70  1.00 1.50  
+       s62_48 s62_49 3.20 247.50 -10.80  1.20 1.20  0.80 1.00  
+       s62_49 s62_50 7.21 324.00 2.70  1.50 1.20  1.00 0.50  
+       s62_50 s62_51 7.21 328.50 13.50  1.10 0.70  0.90 0.40  
+       s62_51 s62_52 4.17 319.50 12.60  1.10 1.50  0.30 0.20  
+       s62_52 s62_53 4.17 4.50 27.00  1.00 1.00  0.40 0.60  
+       s62_53 s62_54 4.17 288.00 -1.80  1.00 2.00  0.30 0.40  
+       s62_54 s62_55 4.17 333.00 13.50  1.00 2.00  0.50 2.00  
+       s62_55 s62_56 6.86 0.00 20.70  4.00 2.00  1.20 0.00  
+       s62_56 s62_57 7.62 238.50 -29.70  0.90 0.80  1.00 1.00  
+       s62_57 s62_58 2.76 216.00 -22.50  1.50 1.00  0.30 0.30  
+       s62_58 s62_59 2.76 270.00 0.00  0.50 0.50  0.50 0.50  
+       s62_59 s62_60 6.12 306.00 0.00  0.20 0.30  0.50 0.20  
+       s62_60 s62_61 4.08 216.00 -1.80  0.40 0.80  1.20 0.30  
+       s62_61 s62_62 8.80 243.00 0.00  0.10 0.70  2.50 0.40  
+       s62_62 s62_63 7.40 54.00 36.00  0.10 0.40  1.00 0.50  
+       s62_63 s62_64 7.40 67.50 4.50  0.30 0.60  2.00 1.00  
+       s62_64 s62_65 8.40 72.00 31.50  0.50 0.70  0.70 10.00  
+       s62_65 s62_66 6.51 108.00 -76.50  0.50 0.50  7.00 0.20  
+       s62_66 s62_67 6.51 18.00 27.00  1.00 2.00  0.20 0.20  
+       s62_67 s62_68 6.51 54.00 31.50  1.50 1.50  0.30 0.30  
+       s62_68 s62_69 6.51 58.50 36.00  1.00 1.00  0.10 0.60  
+       s62_69 s62_70 6.70 99.00 27.00  0.70 0.50  1.30 0.20  
+       s62_70 s62_71 12.05 81.00 13.50  0.30 0.30  0.30 0.60  
+       s62_71 s62_72 6.00 54.00 18.00  0.50 1.00  0.10 2.50  
+       s62_72 s62_73 2.00 351.00 45.00  0.30 0.30  0.20 0.30  
+       s62_73 s62_74 6.00 283.50 9.00  0.60 0.50  0.40 0.60  
+       s62_74 s62_75 3.00 265.50 0.00  0.50 1.00  0.20 0.80  
+       s62_75 s62_76 2.00 252.00 -9.00  0.50 0.50  0.50 0.50  
+       s62_76 s62_77 4.00 297.00 9.00  0.50 0.70  0.50 0.40  
+       s62_77 s62_78 3.80 247.50 -18.00  0.60 0.30  0.50 0.40  
+       s62_78 s62_79 4.00 310.50 -9.00  0.60 0.80  1.00 0.50  
+       s62_79 s62_80 4.00 261.00 -36.00  1.50 0.40  0.70 0.40  
+       s62_80 s62_81 5.00 342.00 36.00  1.00 0.60  0.50 0.20  
+       s62_81 s47_8 5.00 324.00 18.00  0.50 1.80  0.40 0.30  # Observ: =47.8   
+
+endcenterline
+
+# centerline -extend right    
     
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
-#		0	0	-90	# VF45 DEPART ETROITURE
-#VF3-11-60	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????
-VF3-17-21	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????  [Note Alex: Raccord sur VF3-11-0 NOK a voir ???]
-VF3-15-1	VF3-15-2	1.62	130	-30	
-VF3-15-2	VF3-15-3	6.33	312	-66	
-VF3-15-3	VF3-15-4	5.13	240	7	
-VF3-15-4	VF3-15-5	2.46	190	3	
-VF3-15-5	VF3-15-6	5.6	242	-67	
-VF3-15-6	VF3-15-7	2.73	300	-11	
-VF3-15-7	VF3-15-8	7.52	349	-65	
-VF3-15-8	VF3-15-9	5.5	244	-57	
-VF3-15-9	VF3-15-10	6.86	256	-72	
-VF3-15-10	VF3-15-11	9.96	225	-66	
-VF3-15-11	VF3-15-12	9.85	250	-73	
-VF3-15-12	VF3-15-13	6.52	264	-54	
-VF3-15-13	VF3-15-14	6.05	61	-44	
-VF3-15-14	VF3-15-15	2.07	357	-26	
-VF3-15-15	VF3-15-16	8.78	269	2	
-endcenterline
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #		0	0	-90	# VF46 - DEPART GALERIE CHAUVE SOURIS
+# s17_0	VF3-16-1	8.13	219	72.5	# Départ ????? -- Au sommet du P36 ?   # Raccord à trouver
+                # # [Note Alex: raccord NOK a voir ???sur VF3-15-16]
+                # # [Réponse Xav : Si on force ce bouclage avec VF3_15-16, ça fait une énorme erreur de bouclage]
+# #VF3-15-16	VF3-16-1	8.13	219	72.5
+# VF3-16-1	VF3-16-2	3.02	202	30	
+# VF3-16-2	VF3-16-3	14.12	46	79	
+# VF3-16-3	VF3-16-4	1.37	281	7	
+# VF3-16-4	VF3-16-5	4.33	280	10	
+# VF3-16-5	VF3-16-6	1.46	10	7	
+# VF3-16-6	VF3-16-7	3.96	312	-35	
+# VF3-16-7	VF3-16-8	27.49	270	85	
+# VF3-16-8	VF3-16-9	19.56	190	85	
+# VF3-16-9	VF3-16-10	11.02	164	40	
+# VF3-16-10	VF3-16-11	4.01	135	35	
+# VF3-16-11	VF3-16-12	4.06	238	5	
+# VF3-16-12	VF3-16-13	7.13	181	48	
+# VF3-16-13	VF3-16-14	4.33	217	16	
+# #		0	0	-90	# NOUVEAU COMPTEUR
+# VF3-16-14	VF3-16-15	10.82	207	25	
+# VF3-16-15	VF3-16-16	5.89	208	60	
+# VF3-16-16	VF3-16-17	4.54	292	24	
+# VF3-16-17	VF3-16-18	3.62	261	31	
+# #		0	0	-90	# NOUVEAU COMPTEUR
+# VF3-16-18	VF3-16-19	4.61	277	26	
+# VF3-16-19	VF3-16-20	2.57	272	18	
+# VF3-16-20	VF3-16-21	4.48	228	30	
+# VF3-16-21	VF3-16-22	3.55	245	34	
+# VF3-16-22	VF3-16-23	4.19	188	40	
+# VF3-16-23	VF3-16-24	2.6	249	9	
+# VF3-16-24	VF3-16-25	2.61	186	24	
+# VF3-16-25	VF3-16-26	4.37	210	33	
+# endcenterline
 
-centerline -extend right    
+# centerline -extend right    
     
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
-#		0	0	-90	# VF46 - DEPART GALERIE CHAUVE SOURIS
-VF3-16-0	VF3-16-1	8.13	219	72.5	# Départ ????? -- Au sommet du P36 ?
-                # [Note Alex: raccord NOK a voir ???sur VF3-15-16]
-                # [Réponse Xav : Si on force ce bouclage avec VF3_15-16, ça fait une énorme erreur de bouclage]
-#VF3-15-16	VF3-16-1	8.13	219	72.5
-VF3-16-1	VF3-16-2	3.02	202	30	
-VF3-16-2	VF3-16-3	14.12	46	79	
-VF3-16-3	VF3-16-4	1.37	281	7	
-VF3-16-4	VF3-16-5	4.33	280	10	
-VF3-16-5	VF3-16-6	1.46	10	7	
-VF3-16-6	VF3-16-7	3.96	312	-35	
-VF3-16-7	VF3-16-8	27.49	270	85	
-VF3-16-8	VF3-16-9	19.56	190	85	
-VF3-16-9	VF3-16-10	11.02	164	40	
-VF3-16-10	VF3-16-11	4.01	135	35	
-VF3-16-11	VF3-16-12	4.06	238	5	
-VF3-16-12	VF3-16-13	7.13	181	48	
-VF3-16-13	VF3-16-14	4.33	217	16	
-#		0	0	-90	# NOUVEAU COMPTEUR
-VF3-16-14	VF3-16-15	10.82	207	25	
-VF3-16-15	VF3-16-16	5.89	208	60	
-VF3-16-16	VF3-16-17	4.54	292	24	
-VF3-16-17	VF3-16-18	3.62	261	31	
-#		0	0	-90	# NOUVEAU COMPTEUR
-VF3-16-18	VF3-16-19	4.61	277	26	
-VF3-16-19	VF3-16-20	2.57	272	18	
-VF3-16-20	VF3-16-21	4.48	228	30	
-VF3-16-21	VF3-16-22	3.55	245	34	
-VF3-16-22	VF3-16-23	4.19	188	40	
-VF3-16-23	VF3-16-24	2.6	249	9	
-VF3-16-24	VF3-16-25	2.61	186	24	
-VF3-16-25	VF3-16-26	4.37	210	33	
-endcenterline
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
 
+    # #VF3-10-69	VF3-10-69	0	0	0	# VF50 Départ station 60 à 1.3 m sous l'anneau
+# #VF3-10-60	VF3-20-1	7.71	27	-36.9
+# s17_0	VF3-20-1	7.71	27	-36.9   # OK ? Ou VF3-17-17 Plutôt 8, on dirait
+# VF3-20-1	VF3-20-2	3.02	45.9	19.8
+# VF3-20-2	VF3-20-3	4.3	54	-15.3
+# VF3-20-3	VF3-20-4	8.36	47.7	-8.1
+# VF3-20-4	VF3-20-5	12.72	42.3	-18
+# VF3-20-5	VF3-20-6	4.57	58.5	-16.2
+# VF3-20-6	VF3-20-7	2.66	328.5	27.9
+# VF3-20-7	VF3-20-8	3.09	288.9	-1.8
+# VF3-20-8	VF3-20-9	3.28	19.8	1.8
+# VF3-20-9	VF3-20-10	5.16	40.5	-9
+# VF3-20-10	VF3-20-11	2.9	52.2	2.7
+# VF3-20-11	VF3-20-12	2.18	9	17.1
+# VF3-20-12	VF3-20-13	3.65	54	-3.6
+# VF3-20-13	VF3-20-14	3.87	81.9	5.4
+# VF3-20-14	VF3-20-15	7.01	107.1	2.7
+# VF3-20-15	VF3-20-16	3.3	82.8	-16.2
+# VF3-20-16	VF3-20-17	2.68	45	13.5	
 
-centerline -extend right    
+# endcenterline
 
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
-
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
-#	VF3-16-26	0	0	-90	# VF47 DEPART ST. 72
-#	VF3-16-26	0	0	-90	# VF47 DEPART ST. 72
-VF3-16-26	VF3-17-1	3.34	277	7.2	# Depart OK ?  [Note Alex: raccord NOK a voir ??? sur VF3-16-26]
-VF3-17-1	VF3-17-2	3.26	259	12.6	
-VF3-17-2	VF3-17-3	4.66	295	-7.2	
-#		0	0	-90	# FIL CASSE
-VF3-17-3	VF3-17-4	3.95	252	26.1	
-#		0	0	-90	# FIL CASSE
-VF3-17-4	VF3-17-5	5.42	316	17.1	
-VF3-17-5	VF3-17-6	4.89	276	37.8	
-VF3-17-6	VF3-17-7	9.07	346	-22.5	
-VF3-17-7	VF3-17-8	2.3	312	-20.7	# STATION 71; To OK ????
-
-VF3-17-8	VF3-17-9	3.82	288	11.7	
-VF3-17-9	VF3-17-10	2.85	330	-23.4	
-VF3-17-10	VF3-17-11	3.15	243	-9	
-VF3-17-11	VF3-17-12	1.36	260	-52.2	
-VF3-17-12	VF3-17-13	3.55	245	5.4	
-VF3-17-13	VF3-17-14	2.21	296	-34.2	
-VF3-17-14	VF3-17-15	4.33	289	-1.8	
-VF3-17-15	VF3-17-16	2.31	23	-31.5	
-VF3-17-16	VF3-17-17	2.62	302	-3.6	
-VF3-17-17	VF3-17-18	3.24	265	36.9	
-VF3-17-18	VF3-17-19	1.96	235	38.7	
-VF3-17-19	VF3-17-20	2.76	290	69.3	
-VF3-17-20	VF3-17-21	5.97	102	74.7	# ARRIVEE ST. 70
-endcenterline
-
-
-centerline -extend right    
+# centerline -extend right    
     
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #		0	0	0	# VF51 Départ sommet du puits
+# #VF3-20-17	VF3-21-1	7.44	0	-90	# puits
+# VF3-15-16	VF3-21-1	7.44	0	-90	# puits
+# VF3-21-1	VF3-21-2	1.55	253.8	14.9	
+# VF3-21-2	VF3-21-3	2.02	39.2	-18	
+# VF3-21-3	VF3-21-4	18.13	302.9	71.1	
+# VF3-21-4	VF3-21-5	11.63	297.9	52.7	
 
-    #VF3-10-69	VF3-10-69	0	0	0	# VF50 Départ station 60 à 1.3 m sous l'anneau
-#VF3-10-60	VF3-20-1	7.71	27	-36.9
-VF3-17-8	VF3-20-1	7.71	27	-36.9   # OK ? Ou VF3-17-17 Plutôt 8, on dirait
-VF3-20-1	VF3-20-2	3.02	45.9	19.8
-VF3-20-2	VF3-20-3	4.3	54	-15.3
-VF3-20-3	VF3-20-4	8.36	47.7	-8.1
-VF3-20-4	VF3-20-5	12.72	42.3	-18
-VF3-20-5	VF3-20-6	4.57	58.5	-16.2
-VF3-20-6	VF3-20-7	2.66	328.5	27.9
-VF3-20-7	VF3-20-8	3.09	288.9	-1.8
-VF3-20-8	VF3-20-9	3.28	19.8	1.8
-VF3-20-9	VF3-20-10	5.16	40.5	-9
-VF3-20-10	VF3-20-11	2.9	52.2	2.7
-VF3-20-11	VF3-20-12	2.18	9	17.1
-VF3-20-12	VF3-20-13	3.65	54	-3.6
-VF3-20-13	VF3-20-14	3.87	81.9	5.4
-VF3-20-14	VF3-20-15	7.01	107.1	2.7
-VF3-20-15	VF3-20-16	3.3	82.8	-16.2
-VF3-20-16	VF3-20-17	2.68	45	13.5	
+# endcenterline
 
-endcenterline
-
-centerline -extend right    
+# centerline -extend right    
     
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
-#		0	0	0	# VF51 Départ sommet du puits
-#VF3-20-17	VF3-21-1	7.44	0	-90	# puits
-VF3-15-16	VF3-21-1	7.44	0	-90	# puits
-VF3-21-1	VF3-21-2	1.55	253.8	14.9	
-VF3-21-2	VF3-21-3	2.02	39.2	-18	
-VF3-21-3	VF3-21-4	18.13	302.9	71.1	
-VF3-21-4	VF3-21-5	11.63	297.9	52.7	
+    # units length meters
+    # units compass clino degrees
+    # #data normal from to length compass backclino
+    # data normal from to length compass backclino    # backclino ou pas ?
+# VF3-21-5	VF3-22-1	0	0   0		# Départ du fond du réseau   [Note Alex: Origine NOK]
+# VF3-22-1	VF3-22-2	7.4	315	3.5	
+# VF3-22-2	VF3-22-3	6.88	234	9	
+# VF3-22-3	VF3-22-4	13.04	200	33.5	
+# VF3-22-4	VF3-22-5	2.59	204.5	11	
+# VF3-22-5	VF3-22-6	2.22	243	-2	
+# VF3-22-6	VF3-22-7	2.06	315	0	
+# VF3-22-7	VF3-22-8	5.71	0	-90	
+# VF3-22-8	VF3-22-9	0	0	-90	
+# VF3-22-9	VF3-22-10	4.72	130	-19	
+# VF3-22-10	VF3-22-11	21.13	0	-90	
+# VF3-22-11	VF3-22-12	6.72	210	-24	
+# VF3-22-12	VF3-22-13	26.64	0	-90	
+# VF3-22-13	VF3-22-14	0	0	-90	
+# VF3-22-14	VF3-22-15	9.56	80	55	
+# VF3-22-15	VF3-22-16	5.16	242	10.5	
+# VF3-22-16	VF3-22-17	10.22	0	-90	
+# VF3-22-17	VF3-22-18	15.54	255	2	
+# VF3-22-18	VF3-22-19	9.75	25	5	# Bas du puits de la petite lucarne (base du P100)
 
-endcenterline
+# endcenterline
 
-centerline -extend right    
+
+# centerline -extend right    
     
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    #data normal from to length compass backclino
-    data normal from to length compass backclino    # backclino ou pas ?
-VF3-21-5	VF3-22-1	0	0   0		# Départ du fond du réseau   [Note Alex: Origine NOK]
-VF3-22-1	VF3-22-2	7.4	315	3.5	
-VF3-22-2	VF3-22-3	6.88	234	9	
-VF3-22-3	VF3-22-4	13.04	200	33.5	
-VF3-22-4	VF3-22-5	2.59	204.5	11	
-VF3-22-5	VF3-22-6	2.22	243	-2	
-VF3-22-6	VF3-22-7	2.06	315	0	
-VF3-22-7	VF3-22-8	5.71	0	-90	
-VF3-22-8	VF3-22-9	0	0	-90	
-VF3-22-9	VF3-22-10	4.72	130	-19	
-VF3-22-10	VF3-22-11	21.13	0	-90	
-VF3-22-11	VF3-22-12	6.72	210	-24	
-VF3-22-12	VF3-22-13	26.64	0	-90	
-VF3-22-13	VF3-22-14	0	0	-90	
-VF3-22-14	VF3-22-15	9.56	80	55	
-VF3-22-15	VF3-22-16	5.16	242	10.5	
-VF3-22-16	VF3-22-17	10.22	0	-90	
-VF3-22-17	VF3-22-18	15.54	255	2	
-VF3-22-18	VF3-22-19	9.75	25	5	# Bas du puits de la petite lucarne (base du P100)
-
-endcenterline
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #		0	0	-90	# VF45 DEPART ETROITURE
+# #VF3-11-60	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????
+# s17_0	VF3-15-1	5.58	220	6	# VF45 DEPART ETROITURE	# Départ ?????  [Note Alex: Raccord sur VF3-11-0 NOK a voir ???]
+# VF3-15-1	VF3-15-2	1.62	130	-30	
+# VF3-15-2	VF3-15-3	6.33	312	-66	
+# VF3-15-3	VF3-15-4	5.13	240	7	
+# VF3-15-4	VF3-15-5	2.46	190	3	
+# VF3-15-5	VF3-15-6	5.6	242	-67	
+# VF3-15-6	VF3-15-7	2.73	300	-11	
+# VF3-15-7	VF3-15-8	7.52	349	-65	
+# VF3-15-8	VF3-15-9	5.5	244	-57	
+# VF3-15-9	VF3-15-10	6.86	256	-72	
+# VF3-15-10	VF3-15-11	9.96	225	-66	
+# VF3-15-11	VF3-15-12	9.85	250	-73	
+# VF3-15-12	VF3-15-13	6.52	264	-54	
+# VF3-15-13	VF3-15-14	6.05	61	-44	
+# VF3-15-14	VF3-15-15	2.07	357	-26	
+# VF3-15-15	VF3-15-16	8.78	269	2	
+# endcenterline
 
 endsurvey

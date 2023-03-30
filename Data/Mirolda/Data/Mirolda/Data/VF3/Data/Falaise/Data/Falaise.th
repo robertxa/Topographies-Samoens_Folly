@@ -1,9 +1,10 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1987 Ursus -  2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
  
 survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda"
 
@@ -12,18 +13,19 @@ survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda
     #cs long-lat
 
     #fix Falaise 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses !
-    station Falaise "Entrée Falaise" entrance air-draught continuation #explored ????m
+	# [note Alex] toujours pas de coordonnées chez les URSUS
+	# [note Alex] explo URSUS 3
     
-    #date 2021.08.12
-    #    team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
+    date 1988 07 01
+		team "Michel Dussurget"
+		team "François Daniere"
+	
     explo-date 1972
         explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1978
         explo-team "Groupe Spéléo/Ursus"
      
-    cs long-lat
+    #cs long-lat
     #fix Falaise 6.79367 46.090839	2336  #ALT IGN
     #cs EPSG:27572 LII étendu
     #fix VF3 944520 2130930	2335  #ALT IGN
@@ -31,143 +33,206 @@ survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda
 
     units length meters
     units compass clino degrees
-    data normal from to length compass backclino
-        #VF3-3-22	VF3-3-22	0	180	90	# Départ de 22
-        VF3-3-22	VF3-3-22c	7.29	193	6	
-        VF3-3-22c	VF3-3-23c	3.6	510	-14	
-        VF3-3-23c	VF3-3-24c	3.55	495	-14	
-        VF3-3-24c	VF3-3-25c	10.46	465	-7	
-        VF3-3-25c	VF3-3-26c	3.46	430	8	
-        VF3-3-26c	VF3-3-27c	3.5	412	-14	
-        VF3-3-27c	VF3-3-28c	5.3	475	-16	
-        VF3-3-28c	VF3-3-29c	3.09	191	-28	
-        VF3-3-29c	VF3-3-30c	3.16	496	2	
-        VF3-3-30c	VF3-3-31c	5.65	195	2	
-        VF3-3-31c	VF3-3-32c	7.93	180	7	
-        VF3-3-32c	VF3-3-33c	3.43	465	-24	
-        VF3-3-33c	VF3-3-34c	4.42	466	-15	
-        VF3-3-34c	Falaise	6.34	536	-4	# 35c (falaise)
+	data normal from to length compass clino right left up down
+	   s31_5 s2_1 7.29 193.00 -6.00  0.00 0.00  0.00 0.00  
+       s2_1 s2_2 3.60 150.00 14.00  0.00 0.00  0.00 0.00  
+       s2_2 s2_3 3.55 135.00 14.00  0.00 0.00  0.00 0.00  
+       s2_3 s2_4 10.46 105.00 7.00  0.00 0.00  0.00 0.00  
+       s2_4 s2_5 3.46 70.00 -8.00  0.00 0.00  0.00 0.00  
+       s2_5 s2_6 3.50 52.00 14.00  0.00 0.00  0.00 0.00  
+       s2_6 s2_7 5.30 115.00 16.00  0.00 0.00  0.00 0.00  
+       s2_7 s2_8 3.09 191.00 28.00  0.00 0.00  0.00 0.00  
+       s2_8 s2_9 3.16 136.00 -2.00  0.00 0.00  0.00 0.00  
+       s2_9 s2_10 5.65 195.00 -2.00  0.00 0.00  0.00 0.00  
+       s2_10 s2_11 7.93 180.00 -7.00  0.00 0.00  0.00 0.00  
+       s2_11 s2_12 3.43 105.00 24.00  0.00 0.00  0.00 0.00  
+       s2_12 s2_13 4.42 106.00 15.00  0.00 0.00  0.00 0.00  
+       s2_13 Falaise 6.34 176.00 4.00  0.00 0.00  0.00 0.00  # Observ: sortie falaise  
+
+       s33_2 s3_1 4.51 88.00 -2.00  0.00 0.00  0.00 0.00  
+       s3_1 s3_2 5.77 136.00 -33.00  0.00 0.00  0.00 0.00  
+       s3_2 s3_3 11.04 20.00 10.00  0.00 0.00  0.00 0.00  	   
+	   
+	   s3_2 s33_3 10.62 266.00 -1.00  0.00 0.00  0.00 0.00  
+	   
+	   s33_0 s33_1 5.42 251.00 4.00  0.00 0.00  0.00 0.00  
+       s33_1 s33_2 6.47 210.00 -26.00  0.00 0.00  0.00 0.00  
+       s33_2 s33_3 6.38 220.00 -30.00  0.00 0.00  0.00 0.00  
+       s33_3 s33_4 12.14 299.00 -24.00  0.00 0.00  0.00 0.00  
+       s33_4 s33_5 6.30 320.00 1.00  0.00 0.00  0.00 0.00  
+       s33_5 s33_6 17.69 321.00 4.00  0.00 0.00  0.00 0.00  
+       s33_6 s33_7 7.80 327.00 21.00  0.00 0.00  0.00 0.00  
+       s33_7 s33_8 5.24 340.00 -9.00  0.00 0.00  0.00 0.00  
+       s33_8 s33_9 3.08 275.00 -10.00  0.00 0.00  0.00 0.00  
+       s33_9 s33_10 3.35 195.00 12.00  0.00 0.00  0.00 0.00  
+       s33_10 s33_11 3.33 303.00 6.00  0.00 0.00  0.00 0.00  
+       s33_11 s33_12 18.72 317.00 0.00  0.00 0.00  0.00 0.00  
+       s33_12 s33_13 13.71 302.00 -6.00  0.00 0.00  0.00 0.00  
+       s33_13 s33_14 4.98 280.00 -32.00  0.00 0.00  0.00 0.00  
+       s33_14 s33_15 7.52 320.00 11.00  0.00 0.00  0.00 0.00  
+       s33_15 s33_16 6.24 320.00 -2.00  0.00 0.00  0.00 0.00  
+       s33_16 s53_3 5.62 286.00 -18.00  0.00 0.00  0.00 0.00  # Observ: repéré sous terre par françois = 53.3 sous terre pa- françois 53,3
+	   
+	   s33_3 s31_1 7.24 241.00 -37.00  0.00 0.00  0.00 0.00  # Observ: =33.3
+       s31_1 s31_2 4.53 206.00 -38.00  0.00 0.00  0.00 0.00  
+       s31_2 s31_3 2.25 138.00 -39.00  0.00 0.00  0.00 0.00  
+       s31_3 s31_4 3.78 224.00 -37.00  0.00 0.00  0.00 0.00  
+       s31_4 s31_5 1.83 311.00 15.00  0.00 0.00  0.00 0.00  
+       s31_5 s31_6 6.01 270.00 -53.00  0.00 0.00  0.00 0.00  
+       s31_6 s31_7 4.77 322.00 -8.00  0.00 0.00  0.00 0.00  
+       s31_7 s31_8 6.93 350.00 22.00  0.00 0.00  0.00 0.00  
+       s31_8 s31_9 4.24 305.00 -30.00  0.00 0.00  0.00 0.00  
+       s31_9 s31_10 2.93 328.00 36.00  0.00 0.00  0.00 0.00  
+       s31_10 s31_11 2.92 205.00 -6.00  0.00 0.00  0.00 0.00  
+       s31_11 s31_12 12.39 306.00 -9.00  0.00 0.00  0.00 0.00  
+       s31_12 s31_13 5.56 260.00 -16.00  0.00 0.00  0.00 0.00  
+       s31_13 s31_14 4.94 313.00 -15.00  0.00 0.00  0.00 0.00  
+       s31_14 s31_15 4.23 334.00 7.00  0.00 0.00  0.00 0.00  
+       s31_15 s31_16 6.39 353.00 27.00  0.00 0.00  0.00 0.00  
+       s31_16 s31_17 5.80 342.00 15.00  0.00 0.00  0.00 0.00  
+       s31_17 s31_18 9.02 344.00 23.00  0.00 0.00  0.00 0.00  
+       s31_18 s31_19 3.78 340.00 -58.00  0.00 0.00  0.00 0.00  
+       s31_19 s31_20 3.60 296.00 57.00  0.00 0.00  0.00 0.00  
+       s31_20 s31_21 5.18 295.00 2.00  0.00 0.00  0.00 0.00  
+       s31_21 s31_22 2.09 260.00 -19.00  0.00 0.00  0.00 0.00  
+       s31_22 s31_23 2.74 314.00 -5.00  0.00 0.00  0.00 0.00  
+       s31_23 s31_24 5.39 350.00 -1.00  0.00 0.00  0.00 0.00  
+       s31_24 s31_25 2.80 258.00 2.00  0.00 0.00  0.00 0.00  
+       s31_25 s31_26 5.50 305.00 -36.00  0.00 0.00  0.00 0.00  
+       s31_26 s31_27 6.63 306.00 -41.00  0.00 0.00  0.00 0.00     
+       s31_27 s31_28 1.41 294.00 10.00  0.00 0.00  0.00 0.00  
+       s31_28 s31_29 2.23 270.00 6.00  0.00 0.00  0.00 0.00  
+       s31_29 s31_30 2.73 337.00 -52.00  0.00 0.00  0.00 0.00  
+       s31_30 s31_31 2.36 272.00 2.00  0.00 0.00  0.00 0.00  
+       s31_31 s31_32 9.04 207.00 -20.00  0.00 0.00  0.00 0.00  
+       s31_32 s31_33 4.29 181.00 -29.00  0.00 0.00  0.00 0.00  
+       s31_33 s31_34 8.40 260.00 -33.00  0.00 0.00  0.00 0.00  
+       s31_34 s31_35 3.84 322.00 0.00  0.00 0.00  0.00 0.00  
+	   
 
 endcenterline
   
-centerline -extend right    
+# centerline -extend right    
     
     #date 2021.08.12
     #    team "Xavier Robert"
-    date 1995
+    # date 1995
         #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
         #VF3-3-0	VF3-3-0	0	0	-90	
-        VF3-3-0	VF3-3-1	5.42	251	-4	
-        VF3-3-1	VF3-3-2	6.47	210	26	
+        # VF3-3-0	VF3-3-1	5.42	251	-4	
+        # VF3-3-1	VF3-3-2	6.47	210	26	
 					
-        VF3-3-2	VF3-3-3b	6.38	220	30	# Depart de 2
-        VF3-3-3b	VF3-3-3	12.14	299	24	
-        VF3-3-3	VF3-3-4	6.3	320	-1	
-        VF3-3-4	VF3-3-5	0	180	90	# verticale
-        VF3-3-5	VF3-3-6	17.69	321	-4	
-        VF3-3-6	VF3-3-7	7.8	327	-21	
-        VF3-3-7	VF3-3-8	5.24	340	9	
-        VF3-3-8	VF3-3-9	3.08	275	10	
-        VF3-3-9	VF3-3-10	3.35	195	-12	
-        VF3-3-10	VF3-3-11	3.33	303	-6	
-        VF3-3-11	VF3-3-12	18.72	317	0	
-        VF3-3-12	VF3-3-13	13.71	302	6	
-        VF3-3-13	VF3-3-14	4.98	280	32	
-        VF3-3-14	VF3-3-15	7.52	320	-11	
-        VF3-3-15	VF3-3-16	6.24	320	2	
-        VF3-3-16	VF3-3-17	5.62	286	18	
+        # VF3-3-2	VF3-3-3b	6.38	220	30	# Depart de 2
+        # VF3-3-3b	VF3-3-3	12.14	299	24	
+        # VF3-3-3	VF3-3-4	6.3	320	-1	
+        # VF3-3-4	VF3-3-5	0	180	90	# verticale
+        # VF3-3-5	VF3-3-6	17.69	321	-4	
+        # VF3-3-6	VF3-3-7	7.8	327	-21	
+        # VF3-3-7	VF3-3-8	5.24	340	9	
+        # VF3-3-8	VF3-3-9	3.08	275	10	
+        # VF3-3-9	VF3-3-10	3.35	195	-12	
+        # VF3-3-10	VF3-3-11	3.33	303	-6	
+        # VF3-3-11	VF3-3-12	18.72	317	0	
+        # VF3-3-12	VF3-3-13	13.71	302	6	
+        # VF3-3-13	VF3-3-14	4.98	280	32	
+        # VF3-3-14	VF3-3-15	7.52	320	-11	
+        # VF3-3-15	VF3-3-16	6.24	320	2	
+        # VF3-3-16	VF3-3-17	5.62	286	18	
 					
         #VF3-3-3b	VF3-3-3b	0	180	90	
-        VF3-3-3b	VF3-3-18	7.24	241	37	# Départ de 3b
-        VF3-3-18	VF3-3-19	4.53	206	38	
-        VF3-3-19	VF3-3-20	2.25	498	39	
-        VF3-3-20	VF3-3-21	3.78	224	37	
-        VF3-3-21	VF3-3-22	1.83	311	-15	
+        # VF3-3-3b	VF3-3-18	7.24	241	37	# Départ de 3b
+        # VF3-3-18	VF3-3-19	4.53	206	38	
+        # VF3-3-19	VF3-3-20	2.25	498	39	
+        # VF3-3-20	VF3-3-21	3.78	224	37	
+        # VF3-3-21	VF3-3-22	1.83	311	-15	
 					
         #VF3-3-22	VF3-3-22	0	180	90	# depart de 22
-        VF3-3-22	VF3-3-23	6.01	270	53	# depart de 22
-        VF3-3-23	VF3-3-24	4.77	322	8	
-        VF3-3-24	VF3-3-26	6.93	350	-22	
-        VF3-3-26	VF3-3-27	4.24	305	30	
-        VF3-3-27	VF3-3-28	2.93	328	-36	
-        VF3-3-28	VF3-3-29	2.92	205	6	
-        VF3-3-29	VF3-3-30	12.39	306	9	
-        VF3-3-30	VF3-3-31	5.56	260	16	
-        VF3-3-31	VF3-3-32	4.94	313	15	
-        VF3-3-32	VF3-3-33	4.23	334	-7	
-        VF3-3-33	VF3-3-34	6.39	353	-27	
-        VF3-3-34	VF3-3-35	5.8	342	-15	
-        VF3-3-35	VF3-3-36	9.02	344	-23	
-        VF3-3-36	VF3-3-37	3.78	340	58	
-        VF3-3-37	VF3-3-38	3.6	296	-57	
-        VF3-3-38	VF3-3-39	5.18	295	-2	
-        VF3-3-39	VF3-3-40	2.09	260	19	
-        VF3-3-40	VF3-3-41	2.74	314	5	
-        VF3-3-41	VF3-3-42	5.39	350	1	
-        VF3-3-42	VF3-3-43	2.8	258	-2	
-        VF3-3-43	VF3-3-44	5.5	305	36	
-        VF3-3-44	VF3-3-45	6.63	306	41	
-        VF3-3-45	VF3-3-45b	5	26	0	# 1°visée jonction p40
-        VF3-3-45b	VF3-2-10	6	0	-90	# 2°visée jonction p40 ; VF3-2-10 ?
+        # VF3-3-22	VF3-3-23	6.01	270	53	# depart de 22
+        # VF3-3-23	VF3-3-24	4.77	322	8	
+        # VF3-3-24	VF3-3-26	6.93	350	-22	
+        # VF3-3-26	VF3-3-27	4.24	305	30	
+        # VF3-3-27	VF3-3-28	2.93	328	-36	
+        # VF3-3-28	VF3-3-29	2.92	205	6	
+        # VF3-3-29	VF3-3-30	12.39	306	9	
+        # VF3-3-30	VF3-3-31	5.56	260	16	
+        # VF3-3-31	VF3-3-32	4.94	313	15	
+        # VF3-3-32	VF3-3-33	4.23	334	-7	
+        # VF3-3-33	VF3-3-34	6.39	353	-27	
+        # VF3-3-34	VF3-3-35	5.8	342	-15	
+        # VF3-3-35	VF3-3-36	9.02	344	-23	
+        # VF3-3-36	VF3-3-37	3.78	340	58	
+        # VF3-3-37	VF3-3-38	3.6	296	-57	
+        # VF3-3-38	VF3-3-39	5.18	295	-2	
+        # VF3-3-39	VF3-3-40	2.09	260	19	
+        # VF3-3-40	VF3-3-41	2.74	314	5	
+		
+        # VF3-3-41	VF3-3-42	5.39	350	1	
+        # VF3-3-42	VF3-3-43	2.8	258	-2	
+        # VF3-3-43	VF3-3-44	5.5	305	36	
+        # VF3-3-44	VF3-3-45	6.63	306	41	
+        # VF3-3-45	VF3-3-45b	5	26	0	# 1°visée jonction p40
+       # VF3-3-45b	VF3-2-10	6	0	-90	# 2°visée jonction p40 ; VF3-2-10 ?
 
-endcenterline
+# endcenterline
 
-centerline -extend right    
+# centerline -extend right    
     
-    #date 2021.08.12
-    #    team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # #date 2021.08.12
+    # #    team "Xavier Robert"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino    
-        #		0	180	90	# nouveau compteur
-        VF3-3-45	VF3-3-46	1.41	294	-10	
-        VF3-3-46	VF3-3-47	2.23	270	-6	
-        VF3-3-47	VF3-3-48	2.73	337	52	
-        VF3-3-48	VF3-3-49	2.36	272	-2	
-        VF3-3-49	VF3-3-50	9.04	207	20	
-        VF3-3-50	VF3-3-51	4.29	181	29	
-        VF3-3-51	VF3-3-52	8.4	260	33	
-        VF3-3-52	VF3-3-53	3.84	322	0	
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino    
+        # #		0	180	90	# nouveau compteur
+        # VF3-3-45	VF3-3-46	1.41	294	-10	
+        # VF3-3-46	VF3-3-47	2.23	270	-6	
+        # VF3-3-47	VF3-3-48	2.73	337	52	
+        # VF3-3-48	VF3-3-49	2.36	272	-2	
+        # VF3-3-49	VF3-3-50	9.04	207	20	
+        # VF3-3-50	VF3-3-51	4.29	181	29	
+        # VF3-3-51	VF3-3-52	8.4	260	33	
+        # VF3-3-52	VF3-3-53	3.84	322	0	
 
-endcenterline
+# endcenterline
 
-centerline -extend right    
+# centerline -extend right    
     
-    #date 2021.08.12
-    #    team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # #date 2021.08.12
+    # #    team "Xavier Robert"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
-        VF3-3-2 	VF3-3-2a	4.51	88	2	    # [Note Alex: Ajout]
-		VF3-3-2a	VF3-3-3a	5.77	136	33  	# [Note Alex: Ajout]
-		VF3-3-3a	VF3-3-4a	11.04	20	-10 	# [Note Alex: Ajout]
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+        # # VF3-3-2 	VF3-3-2a	4.51	88	2	    # [Note Alex: Ajout]
+		# # VF3-3-2a	VF3-3-3a	5.77	136	33  	# [Note Alex: Ajout]
+		# # VF3-3-3a	VF3-3-4a	11.04	20	-10 	# [Note Alex: Ajout]
 
-        #VF3-3-3b	VF3-3-3b	656.12	180	90	# Depart de 3b
-        VF3-3-3b	VF3-3-4b	10.62	266	1	# Depart de 3b  [Note Alex : Pas sur Acad... ?]
+        # #VF3-3-3b	VF3-3-3b	656.12	180	90	# Depart de 3b
+        # # VF3-3-3b	VF3-3-4b	10.62	266	1	# Depart de 3b  [Note Alex : Pas sur Acad... ?]
 
-endcenterline
+# endcenterline
+
+ 
 
 
  endsurvey

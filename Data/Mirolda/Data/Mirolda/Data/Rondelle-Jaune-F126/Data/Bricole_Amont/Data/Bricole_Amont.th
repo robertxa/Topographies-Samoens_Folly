@@ -1,94 +1,263 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1994 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
  
-survey Bricole_Amont -title "Gouffre de la Rondelle Jaune - F126 - Bricole_Amont"
+survey Bricole_Amont -title "Gouffre de la Rondelle Jaune - F126 - Bricole Amont"
 
 centerline -extend right    
     
-    #date 2021.08.12
-        #team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
+	# Serie: 69 - 78
+    #========================
+	# [note Alex] explo URSUS 29
+	
+    date 1994 08 04
+		team "Aymeric Bougnol"
+		team "Jacques Gudefin"
+		team "Laurent Mangel"
+	
     explo-date 1972
         explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1978
         explo-team "Groupe Spéléo/Ursus"
-
-    units length meters
+		
+	units length meters
     units compass clino degrees
-    data normal from to length compass backclino
-#???	???		0	-90	# Départ de la bifurque F126 avec galerie de la bricole en direction de l'amont
-VF-27-62	2.1	3.31	157.5	12.6	
-2.1	2.2	4.61	99.9	3.6	
-2.2	2.3	1.57	84.6	-0.9	
-#			0	-90	
-2.3	2.4	10.86	69.3	28.8	
-#			0	-90	
-2.4	2.5	7.46	72.9	13.5	
-#			0	-90	
-2.5	2.6	7.74	63	6.3	
-2.6	2.7	2.94	72	-11.7	
-2.7	2.8	9.43	81.9	27.9	
-#			0	-90	
-2.8	2.9	11.6	55.8	-8.1	
+	data normal from to length compass clino right left up down   
+	   s69_47 s78_1 3.31 157.50 -12.60  1.30 1.00  1.20 20.00  
+       s78_1 s78_2 4.61 99.90 -3.60  0.20 0.90  2.00 1.00  
+       s78_2 s78_3 1.57 84.60 0.90  0.20 0.90  2.00 1.00  
+       s78_3 s78_4 10.86 69.30 -28.80  1.50 0.60  4.00 3.00  
+       s78_4 s78_5 7.46 72.90 -13.50  0.50 0.00  3.00 0.20  
+       s78_5 s78_6 7.74 63.00 -6.30  0.00 1.50  1.00 1.00  
+       s78_6 s78_7 2.94 72.00 11.70  0.50 0.50  2.00 0.70  
+       s78_7 s78_8 9.43 81.90 -27.90  0.00 1.00  2.00 2.00  
+       s78_8 s78_9 11.60 55.80 8.10  1.20 0.50  1.50 1.00 
+
+endcenterline
+
+
+centerline -extend right    
+    
+	# Serie: 79 
+    #========================
+	# [note Alex] explo URSUS 35
+	
+    date 1994 09 02
+		team "Laurent Mangel"
+		team "Laurent Guizard"  #Laur XXX
+		team "Jacques Gudefin"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass clino degrees
+	data normal from to length compass clino right left up down
+       s78_9 s79_1 11.67 54.90 20.70  0.10 0.40  2.00 4.00  
+       s79_1 s79_2 5.89 49.50 50.40  0.20 0.10  1.50 1.50  
+       s79_2 s79_3 2.29 38.70 42.30  0.30 0.50  1.00 5.00  
+       s79_3 s79_4 6.80 61.20 36.90  0.20 0.50  1.50 4.00  
+       s79_4 s79_5 10.22 70.20 -22.50  0.50 0.50  1.20 1.00  
+       s79_5 s79_6 8.05 69.30 -8.10  2.00 0.20  5.00 4.00  # Observ: marquée
+       s79_6 s79_7 8.72 56.70 26.10  0.70 0.40  1.00 1.80  
+       s79_7 s79_8 5.83 149.40 -20.70  1.20 0.20  1.00 0.40  
+       s79_8 s79_9 10.60 170.10 -15.30  2.00 0.80  1.70 1.30  # Observ: marquée
+       s79_9 s79_10 8.46 92.70 -10.80  1.20 1.00  1.20 1.20  
+       s79_10 s79_11 15.29 150.30 -5.40  0.50 1.30  0.50 0.40  
+       s79_11 s79_12 8.79 76.50 29.70  1.20 0.20  1.50 5.00  
+       s79_12 s79_13 6.64 45.00 28.80  0.40 1.00  1.70 4.00  
+       s79_13 s79_14 4.31 35.10 -37.80  1.50 0.20  2.00 1.50  
+       s79_14 s79_15 4.76 7.20 5.40  1.50 0.20  2.00 5.00  
+       s79_15 s79_16 4.15 190.80 35.10  0.30 0.40  2.00 5.00  
+       s79_16 s79_17 3.65 153.90 43.20  0.70 0.00  1.50 1.50  
+       s79_17 s79_18 3.29 151.20 9.00  0.60 0.00  2.00 1.50  # Observ: marqué
+       s79_18 s79_19 10.12 116.10 -20.70  0.50 0.20  30.00 1.50  
+       s79_19 s79_20 2.76 106.20 16.20  0.50 0.20  30.00 1.50  
+       s79_20 s79_21 2.33 0.00 90.00  1.00 0.50  0.60 3.50  
+       s79_21 s79_22 4.79 142.20 -0.90  1.00 0.40  1.00 3.00  
+       s79_22 s79_23 11.74 85.50 3.60  0.00 0.40  3.00 0.50  
+       s79_23 s79_24 11.93 81.90 15.30  0.80 0.20  0.60 0.60  
+       s79_24 s79_25 7.04 81.90 6.30  0.50 0.60  1.20 10.00  
+       s79_25 s79_26 4.58 105.30 -52.20  0.20 0.80  8.00 1.50  
+       s79_26 s79_27 2.68 99.00 4.50  1.40 0.80  6.00 1.40  
+       s79_27 s79_28 6.45 53.10 22.50  1.20 1.70  10.00 1.20  
+       s79_28 s79_29 8.69 91.80 41.40  0.30 2.00  2.00 1.70  
+       s79_29 s79_30 5.19 45.00 4.50  1.00 1.00  5.00 1.40  
+       s79_30 s79_31 3.89 78.30 25.20  0.30 0.50  2.50 3.00  
+       s79_31 s79_32 4.48 13.50 23.40  1.20 1.00  2.00 3.00  
+       s79_32 s79_33 6.74 81.00 37.80  1.20 1.50  3.00 1.20  
+       s79_33 s79_34 5.44 168.30 -15.30  0.80 0.20  6.00 1.00  
+       s79_34 s79_35 5.50 85.50 34.20  1.00 0.50  1.80 6.00  
+       s79_35 s79_36 4.06 78.30 -6.30  1.20 0.20  5.00 0.80  
+       s79_36 s79_37 3.22 94.50 34.20  0.60 0.20  1.20 1.50  
+       s79_37 s79_38 5.08 73.80 19.80  0.50 0.30  2.00 3.00  
+       s79_38 s79_39 5.96 24.30 27.90  0.30 1.00  2.00 1.80  
+       s79_39 s79_40 10.00 91.80 3.60  1.30 1.20  5.00 1.40  # Observ: début gros volume
+       s79_40 s79_41 10.41 72.00 32.40  3.00 4.00  4.00 1.40  
+endcenterline
+
+centerline -extend right    
+    
+	# Serie: 80 - 81    Jonction danton
+    #========================
+	# [note Alex] explo URSUS 36
+	# Matériel topo code 5
+	
+    date 1997 02 15
+		team "Aymeric Bougnol"
+		team "Nicolas Faure"
+		team "Sylvain Matricon"
+	
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+		
+	units length meters
+    units compass grads
+	units clino grads
+	data normal from to length compass clino right left up down
+		s79_41	s80_0	0.00	0.0000	0.00	2.50	3.50	6.00	0.00		
+		s80_0	s80_1	7.31	385.00	47.000	1.00	8.00	10.00	1.30		#{2.73}
+		s80_1	s80_2	5.55	145.00	10.000	6.00	10.00	0.00	1.20		
+		s80_2	s80_3	9.11	70.000	-30.00	0.40	0.60	3.00	2.50		
+		s80_3	s80_4	6.25	60.000	0.0000	0.60	0.40	3.00	0.60		
+		s80_4	s80_5	1.00	0.0000	100.00	1.20	0.20	2.00	1.60		
+		s80_5	s80_6	2.19	58.000	4.0000	0.00	1.00	0.50	1.00		
+		s80_6	s80_7	7.01	115.00	15.000	0.10	1.00	5.00	2.50		
+		s80_7	s80_8	5.36	50.000	35.000	0.50	0.00	4.00	2.00		
+		s80_8	s80_9	2.06	20.000	15.000	0.20	0.80	3.50	1.50		
+		s80_9	s80_10	4.39	70.000	35.000	0.00	0.50	0.30	1.00		
+		s80_10	s80_11	9.07	45.000	0.0000	0.30	0.40	0.30	0.50		
+		s80_11	s80_12	3.10	55.000	20.000	0.80	6.00	20.00	0.60		
+		s80_12	s80_13	5.14	20.000	15.000	2.60	0.20	0.40	0.50		
+		s80_13	s80_14	3.53	130.00	0.0000	0.70	0.10	1.50	2.00		
+		s80_14	s80_15	2.79	50.000	-15.00	0.60	0.00	3.00	1.50		
+		s80_15	s80_16	1.83	350.00	-22.00	0.30	0.20	3.50	0.60		
+		s80_16	s80_17	5.54	390.00	35.000	0.00	0.60	1.50	1.50		
+		s80_17	s80_18	8.82	30.000	17.000	0.20	0.70	10.00	2.50		
+		s80_18	s80_19	6.72	45.000	5.0000	0.80	0.80	2.50	2.00		
+		s80_19	s80_20	7.59	40.000	4.0000	0.60	0.80	7.50	1.30		
+		s80_20	s80_21	6.37	55.000	57.000	0.40	0.20	3.00	1.70		
+		s80_21	s80_22	3.48	105.00	44.000	1.50	0.50	2.00	0.30		
+		s80_22	s80_23	8.82	375.00	27.000	0.30	0.20	2.00	6.00		
+		s80_23	s80_24	3.43	40.000	-5.000	0.00	0.60	0.50	0.20		
+		s80_24	s80_25	9.37	40.000	30.000	0.40	0.60	6.00	0.50		
+		s80_25	s80_26	4.24	60.000	28.000	0.50	0.40	20.00	2.50		
+		s80_26	s35_45	2.20	0.0000	100.00	0.50	5.00	20.00	5.00		#jonction danton =35,45
+
+
+		s80_19	s81_0	0.00	0.0000	0.00	1.20	1.20	2.50	2.50		
+		s81_0	s81_1	4.36	140.00	10.000	0.00	0.50	2.00	1.50		#{142.80}
+		s81_1	s81_2	4.19	125.00	20.000	0.80	2.00	4.00	0.70		
+		s81_2	s81_3	6.99	120.00	22.000	1.00	0.50	0.50	1.50		
+		s81_3	s81_4	3.01	375.00	80.000	1.20	0.60	1.00	3.00		
+		s81_4	s81_5	6.72	95.000	43.000	0.30	0.20	0.60	0.20		#{169.14}
+		s81_5	s81_6	6.33	110.00	20.000	0.60	0.50	0.20	1.00		#CONDUITE FORCƒE PETIT AFFLUENT FOSSILE TROP ETROIT
+		s81_6	s81_7	2.09	150.00	0.0000	0.20	0.30	0.40	0.40		
+		s81_7	s81_8	6.43	135.00	-5.000	1.00	0.40	0.70	8.00		
+		s81_8	s81_9	2.51	40.000	0.0000	0.30	0.60	4.00	0.60		#{191.21}
+		s81_9	s81_10	2.68	10.000	35.000	0.30	0.40	3.00	1.00		
+		s81_10	s81_11	4.16	40.000	42.000	0.20	0.20	2.50	0.50		
+		s81_11	s81_12	5.96	395.00	22.000	0.10	0.70	2.50	0.80		
+		s81_12	s81_13	3.30	25.000	0.0000	0.80	0.20	3.00	1.30		#SORTIE D'UN ACTIF
+		s81_13	s81_14	5.67	85.000	0.0000	0.50	0.60	1.30	1.50		#sur concrétion
+		s81_14	s81_15	7.53	125.00	10.000	0.20	0.60	0.70	1.00		
+		s81_15	s81_16	4.47	20.000	35.000	2.00	3.00	15.00	1.80		#carrefour
+		s81_16	s81_17	5.99	135.00	21.000	0.70	0.00	4.00	0.50		
+		s81_17	s81_18	6.42	138.00	-16.00	5.00	2.00	4.00	2.00		#base du puits
+  
+
+endcenterline
+
+# centerline -extend right    
+    
+    # #date 2021.08.12
+        # #team "Xavier Robert"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
+
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #???	???		0	-90	# Départ de la bifurque F126 avec galerie de la bricole en direction de l'amont
+# VF-27-62	2.1	3.31	157.5	12.6	
+# 2.1	2.2	4.61	99.9	3.6	
+# 2.2	2.3	1.57	84.6	-0.9	
+# #			0	-90	
+# 2.3	2.4	10.86	69.3	28.8	
+# #			0	-90	
+# 2.4	2.5	7.46	72.9	13.5	
+# #			0	-90	
+# 2.5	2.6	7.74	63	6.3	
+# 2.6	2.7	2.94	72	-11.7	
+# 2.7	2.8	9.43	81.9	27.9	
+# #			0	-90	
+# 2.8	2.9	11.6	55.8	-8.1	
 					
-VF-27-62	1.63	0	0	-90	# Départ de la bifurque F126 avec galerie de la bricole en direction de l'aval
-1.63	1.64	5.29	276.3	-19.8	
-1.64	1.65	5.2	215.1	-34.2	
-1.65	1.66	6.63	228.6	21.6	
-1.66	1.67	8.28	307.8	9	
-#			0	-90	
-1.67	1.68	8.39	271.8	0.9	
-1.68	1.69	5.85	323.1	15.3	
-1.69	1.7	2.62	305.1	5.4	
-1.7	1.71	4.61	258.3	-1.8	
-1.71	1.72	5.61	292.5	11.7	
-1.72	1.73	8.48	162.9	40.5	
-#1.73	1.74	7.49	253.8	-17.1	
+# VF-27-62	1.63	0	0	-90	# Départ de la bifurque F126 avec galerie de la bricole en direction de l'aval
+# 1.63	1.64	5.29	276.3	-19.8	
+# 1.64	1.65	5.2	215.1	-34.2	
+# 1.65	1.66	6.63	228.6	21.6	
+# 1.66	1.67	8.28	307.8	9	
+# #			0	-90	
+# 1.67	1.68	8.39	271.8	0.9	
+# 1.68	1.69	5.85	323.1	15.3	
+# 1.69	1.7	2.62	305.1	5.4	
+# 1.7	1.71	4.61	258.3	-1.8	
+# 1.71	1.72	5.61	292.5	11.7	
+# 1.72	1.73	8.48	162.9	40.5	
+# #1.73	1.74	7.49	253.8	-17.1	
 
-endcenterline
+# endcenterline
 
 
-centerline -extend right    
+# centerline -extend right    
     
-    #date 2021.08.12
-        #team "Xavier Robert"
-    date 1995
-        #team "Xavier Robert"
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
-        explo-team "Groupe Spéléo/Ursus"
+    # #date 2021.08.12
+        # #team "Xavier Robert"
+    # date 1995
+        # #team "Xavier Robert"
+    # explo-date 1972
+        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    # explo-date 1978
+        # explo-team "Groupe Spéléo/Ursus"
 
-    units length meters
-    units compass clino degrees
-    data normal from to length compass backclino
-#	???		0		# F126 amont galerie de la bricole
-2.9	1	11.67	54.9	-20.7	
-1	2	5.89	49.5	-50.4	
-2	3	2.29	38.7	-42.3	
-3	4	6.8	61.2	-36.9	
-4	5	10.22	70.2	22.5	
-5	6	8.05	69.3	8.1	
-6	7	8.72	56.7	-26.1	
-7	8	5.83	149.4	20.7	
-8	9	10.6	170.1	15.3	
-9	10	8.46	92.7	10.8	
-#			0	-90	
-10	11	15.29	150.3	5.4	
-11	12	8.79	76.5	-29.7	
-12	13	6.64	45	-28.8	
-13	14	4.31	35.1	37.8	
-14	15	4.76	7.2	-5.4	
-15	16	4.15	190.8	-35.1	
-16	17	3.65	153.9	-43.2	
-17	18	3.29	151.2	-9	
-18	19	10.12	116.1	20.7	
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+# #	???		0		# F126 amont galerie de la bricole
+# 2.9	1	11.67	54.9	-20.7	
+# 1	2	5.89	49.5	-50.4	
+# 2	3	2.29	38.7	-42.3	
+# 3	4	6.8	61.2	-36.9	
+# 4	5	10.22	70.2	22.5	
+# 5	6	8.05	69.3	8.1	
+# 6	7	8.72	56.7	-26.1	
+# 7	8	5.83	149.4	20.7	
+# 8	9	10.6	170.1	15.3	
+# 9	10	8.46	92.7	10.8	
+# #			0	-90	
+# 10	11	15.29	150.3	5.4	
+# 11	12	8.79	76.5	-29.7	
+# 12	13	6.64	45	-28.8	
+# 13	14	4.31	35.1	37.8	
+# 14	15	4.76	7.2	-5.4	
+# 15	16	4.15	190.8	-35.1	
+# 16	17	3.65	153.9	-43.2	
+# 17	18	3.29	151.2	-9	
+# 18	19	10.12	116.1	20.7	
 
-endcenterline
+# endcenterline
 
  endsurvey

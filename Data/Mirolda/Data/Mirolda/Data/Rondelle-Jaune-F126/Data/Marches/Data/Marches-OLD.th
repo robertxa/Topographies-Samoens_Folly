@@ -1,0 +1,100 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Marches -title "Gouffre de la Rondelle Jaune - F126 - 1000 Marches"
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+0	VF3-26-0	0.55	229.5	0	# VF56, F126, après l'étroiture en Z du méandre des mille marches et plus! (topo en emontant boite devant de 10 à 0, puis en descendant de 11 à 36 boite derrière)
+VF3-26-0	VF3-26-1	1.72	277.2	51.3	
+VF3-26-1	VF3-26-2	4.68	214.2	4.5	
+VF3-26-2	VF3-26-3	0.66	153	-17.1	
+VF3-26-3	VF3-26-4	3.99	207	17.1	
+VF3-26-4	VF3-26-5	1.17	159.3	3.6	
+VF3-26-5	VF3-26-6	2.01	235.8	28.8	
+VF3-26-6	VF3-26-7	1.04	189	32.4	
+VF3-26-7	VF3-26-8	2.04	208.8	13.5	
+VF3-26-8	VF3-26-9	3.22	162	72.9	
+VF3-26-9	VF3-26-10		0   0	-90	
+
+VF3-26-10	VF3-26-11	4.03	159.3	10.8	
+VF3-26-11	VF3-26-12	2.94	200.7	13.5	
+VF3-26-12	VF3-26-13	2.62	207	20.7	
+VF3-26-13	VF3-26-14	2.23	166.5	11.7	
+VF3-26-14	VF3-26-15	1.81	155.7	18	
+VF3-26-15	VF3-26-16	3.55	117.9	45	
+VF3-26-16	VF3-26-17	0.48	213.3	0	
+VF3-26-17	VF3-26-18	1.65	234	19.8	
+VF3-26-18	VF3-26-19	2.03	189	31.5	
+VF3-26-19	VF3-26-20	4.32	270	38.7	
+VF3-26-20	VF3-26-21	0.96	294.3	13.5	
+VF3-26-21	VF3-26-22	1.33	211.5	8.1	
+VF3-26-22	VF3-26-23	4.76	220.5	22.5	
+VF3-26-23	VF3-26-24	2.69	158.4	54	
+VF3-26-24	VF3-26-25	3.82	243	14.4	
+VF3-26-25	VF3-26-26	1.19	207	31.5	
+VF3-26-26	VF3-26-27	0.57	266.4	0	
+VF3-26-27	VF3-26-28	1.73	234	18	
+VF3-26-28	VF3-26-29	2.9	216	54	
+VF3-26-29	VF3-26-30	2.68	261	37.8	
+VF3-26-30	VF3-26-31	3.28	171	2.7	
+VF3-26-31	VF3-26-32	2.8	216	28.8	
+VF3-26-32	VF3-26-33	4.1	281.7	41.4	
+VF3-26-33	VF3-26-34	2.75	234	18.9	
+VF3-26-34	VF3-26-35	4.61	0	90	
+VF3-26-35	VF3-26-36	6.52	202.5	11.7	
+
+
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+        #team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+    #???			0	-90	# VF57, F126 de l'étroiture au début de la galerie de la bricole
+VF3-26-36	VF-27-50	1.2	184.5	12.6	
+VF-27-50	VF-27-51	0.96	147.6	23.85	
+VF-27-51	VF-27-52	1.99	184.5	32.4	
+VF-27-52	VF-27-53	1.6	189	8.1	
+VF-27-53	VF-27-54	3.05	171	14.4	
+VF-27-54	VF-27-55	1.09	130.5	32.4	
+VF-27-55	VF-27-56	4.67	167.4	23.4	
+
+VF-27-56	VF-27-57	1.84	141.3	26.1	
+VF-27-57	VF-27-58	4.68	0	90	
+VF-27-58	VF-27-59	4.43	130.5	6.3	
+
+VF-27-59	VF-27-60	1.94	194.4	27.9	
+VF-27-60	VF-27-61	1.66	229.5	15.3	
+
+VF-27-61	VF-27-62	2.37	199.8	36.9	
+
+endcenterline
+
+ endsurvey

@@ -13,29 +13,19 @@
 	
    date 2000.12.29
  #  declination -0.1000 grad
-   calibrate counter 0 1.00
-  team "Frédéric Chambat"
-  team "Bernard Lips"
-  team "Stéphane Lips"
+    team "Frédéric Chambat"
+    team "Bernard Lips"
+    team "Stéphane Lips"
 
-  explo-date 1973.02.01
-  #explo-team "G. Aven"
-  #explo-team "S.C. Duchère"
-  #explo-team "G.S. INSA"
-  #explo-team "S.C. Villeurbanne"
-  #explo-team "S.C Lyon"
-  explo-date 1974.02.01
-  #explo-team "G. Aven"
-  #explo-team "S.C. Duchère"
-  #explo-team "G.S. INSA"
-  #explo-team "S.C. Villeurbanne"
-  #explo-team "S.C Lyon"
+   explo-date 1973.02.01
+   explo-date 1974.02.01
   
    units lenght meters
    units compass grad
    units clino grad
+   units counter centimeters
+   calibrate counter 0 1.00
 
-  units counter centimeters
    data topofil from to fromcount tocount compass clino left right up down
    1a.0 1a.0double 0.0 0.0    0.00       100.      0.300      0.300      0.300      0.300   # dynamitage 
    1a.0double 1a.1 90.0 645.0    238.      -52.0      0.300      0.300      0.200      0.200    # dynamitage 
@@ -757,21 +747,12 @@ centerline
    declination 0.1500  grad
 
   explo-date 1973.02.01
-  #explo-team "G. Aven"
-  #explo-team "S.C. Duchère"
-  #explo-team "G.S. INSA"
-  #explo-team "S.C. Villeurbanne"
-  #explo-team "S.C Lyon"
   explo-date 1974.02.01
-  #explo-team "G. Aven"
-  #explo-team "S.C. Duchère"
-  #explo-team "G.S. INSA"
-  #explo-team "S.C. Villeurbanne"
-  #explo-team "S.C Lyon"
 
    units lenght meters
    units compass grad
    units clino grad
+   
    data normal from to length compass clino left right up down
    6.15 6.16    2.91       283.      -57.0      0.300      0.300      0.500      0.500    
    6.16 6.17    4.63       342.      -24.0       1.00       1.00      0.400      0.400    
@@ -1008,18 +989,14 @@ centerline
 	# siphon du luirographe
 
    date 2009.01.18
-  team "Stéphane Lips"
-  team "Xavier Robert"
-  explo-date 2009.01.18
-  explo-team "Stéphane Lips"
-  explo-team "Xavier Robert"
+    team "Stéphane Lips"
+    team "Xavier Robert"
+   explo-date 2009.01.18
+    explo-team "Stéphane Lips"
+    explo-team "Xavier Robert"
 
   explo-date 1973.02.01
-  #explo-team "G. Aven"
-  #explo-team "S.C. Duchère"
-  #explo-team "G.S. INSA"
-  #explo-team "S.C. Villeurbanne"
-  #explo-team "S.C Lyon"
+  
   explo-date 1974.02.01
   #explo-team "G. Aven"
   #explo-team "S.C. Duchère"
