@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap SP-Chauves-Souris-1 -projection plan -station-names "" "@Chauves-Souris" -author 1998 "Groupe Spéléo/Ursus" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
+scrap SP-Chauves-Souris-1 -projection plan -station-names "" "@Chauves-Souris" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
 
 point 472.75 483.25 label -text "cairn"
 
@@ -305,7 +305,7 @@ endscrap
 
 
 
-scrap SP-Chauves-Souris-2 -projection plan -station-names "" "@Chauves-Souris" -author 1998 "Groupe Spéléo/Ursus" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
+scrap SP-Chauves-Souris-2 -projection plan -station-names "" "@Chauves-Souris" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
 
 line pit -reverse on
   742.25 328.25
@@ -382,8 +382,8 @@ line wall
   813.5 331.5 769.0 326.0 766.5 323.0
   764.0 320.0 763.25 315.25 755.5 318.0
   747.75 320.75 708.25 339.5 702.5 344.0
-  696.75 348.5 675.5 360.25 679.75 361.0
-  684.0 361.75 686.5 362.0 686.5 362.0
+  696.75 348.5 680.75 359.75 679.75 361.0
+  679.44 361.39 675.0 364.5 675.0 364.5
   smooth off
 endline
 
@@ -423,10 +423,14 @@ line wall
 endline
 
 line wall
-  685.75 366.0
-  685.75 366.0 673.25 368.0 666.75 370.5
-  660.25 373.0 672.0 383.5 660.75 384.0
-  649.5 384.5 605.25 386.25 601.0 389.75
+  675.0 364.5
+  675.0 364.5 643.32 377.25 636.5 378.5
+  609.25 383.5 623.0 383.5 631.0 385.25
+endline
+
+line wall
+  631.25 389.75
+  620.0 390.25 605.25 386.25 601.0 389.75
   596.75 393.25 588.0 453.0 580.25 453.5
   altitude .
   572.5 454.0 547.25 450.75 538.5 450.75
@@ -458,7 +462,7 @@ endscrap
 
 
 
-scrap SP-Chauves-Souris-3 -projection plan -station-names "" "@Chauves-Souris" -author 1998 "Groupe Spéléo/Ursus" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
+scrap SP-Chauves-Souris-3 -projection plan -station-names "" "@Chauves-Souris" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
 
 line wall
   897.75 395.5
@@ -475,8 +479,8 @@ line wall
   727.25 336.0 712.25 334.75 715.5 336.25
   718.75 337.75 739.75 346.25 739.75 349.5
   739.75 352.75 743.5 367.0 738.0 367.0
-  732.5 367.0 699.0 368.25 695.75 367.75
-  692.5 367.25 685.75 366.0 685.75 366.0
+  732.5 367.0 722.5 367.5 719.25 367.0
+  716.0 366.5 707.0 367.0 707.0 367.0
   smooth off
 endline
 
@@ -536,8 +540,8 @@ line wall -subtype pit
 endline
 
 line wall
-  686.5 362.0
-  686.5 362.0 732.0 364.0 733.25 362.25
+  707.5 363.25
+  707.5 363.25 732.0 364.0 733.25 362.25
   734.5 360.5 736.0 352.0 732.0 350.25
   728.0 348.5 703.25 337.5 704.75 334.25
   706.25 331.0 710.0 332.25 716.5 332.75

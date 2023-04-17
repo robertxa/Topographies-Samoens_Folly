@@ -147,7 +147,7 @@ layout my_layout
 			\cavename={Gouffre des Jockers} 
 		\else
 		\fi
-		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
+		\newtoks\club \club={URSUS, Collectif Criou}
 		\newtoks\synth \synth={Laurent Mangel, Vincent Vieillerobe (1999), Alexandre Pont, Xavier Robert (2023)}
 	endcode   
   
@@ -197,7 +197,7 @@ layout layout-coupe
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
@@ -222,7 +222,7 @@ layout layout-coupe
 			\cavename={Gouffre des Jockers} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
+		\newtoks\club \club={URSUS, Collectif Criou}
 		\newtoks\synth \synth={Laurent Mangel, Vincent Vieillerobe (1999), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
 

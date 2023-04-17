@@ -10,6 +10,7 @@ survey Chauves-Souris -title "Galerie des Chauves-Souris"
 	
 	# Import du dessin en plan
 	input Data/Chauves-Souris.th2
+	join SP-Chauves-Souris-2 SP-Chauves-Souris-3
 
 	# Import du dessin en coupe
 	#input Data/Chauves-Souris-coupe.th2

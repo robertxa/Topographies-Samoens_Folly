@@ -15,7 +15,7 @@ centerline -extend right     # [Note Alex: Ajout]
 	# Pas de team 
 
     explo-date 1991
-        explo-team "Groupe Spéléo/Ursus"
+        explo-team "URSUS"
 		
 	units length meters
     units compass clino degrees
@@ -34,7 +34,7 @@ centerline -extend right
 		team "Didier Gaudin"
 	
     explo-date 1989
-        explo-team "Groupe Spéléo/Ursus"
+        explo-team "URSUS"
 
     units length meters
     units compass clino degrees
@@ -109,7 +109,7 @@ centerline -extend right     # [Note Alex: Ajout]
 		team "Jean Bottazzi"
 	
     explo-date 1990
-        explo-team "Groupe Spéléo/Ursus"
+        explo-team "URSUS"
 		
 	units length meters
     units compass clino degrees
@@ -143,7 +143,7 @@ centerline -extend left     #[Note Alex: VF45]
 		#team "Aymeric Bougnol"
 		
     explo-date 1991
-        explo-team "Groupe Spéléo/Ursus"
+        explo-team "URSUS"
 
     units length meters
     units compass clino degrees
@@ -165,7 +165,8 @@ centerline -extend left     #[Note Alex: VF45]
 	VF3-15-12	VF3-15-13	6.52	264	-54	
 	VF3-15-13	VF3-15-14	6.05	61	-44	# départ P50
 	VF3-15-14	VF3-15-15	2.07	357	-26	
-    VF3-15-15	s34_5	8.78	269	2   #[Note Xav : A priori, ce serait le départ]
+    #VF3-15-15	s34_5	8.78	269	2   #[Note Xav : A priori, ce serait le départ]
+    VF3-15-15	s34_6	8.78	269	2   #[Note Bozzo : C'est celui-ci, le départ]
 	#VF3-15-15	VF3-15-16	8.78	269	2	# Commenté par Xav
 endcenterline
 
