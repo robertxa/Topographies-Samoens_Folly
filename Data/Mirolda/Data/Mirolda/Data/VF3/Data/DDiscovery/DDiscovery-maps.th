@@ -4,19 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-Discovery-plan-tot -title "Gouffre de la Discovery"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
-#endmap
+map MP-Discovery-plan-tot -title "Réseau Discovery inférieur"
+	SP-Discovery-4
+	break
+	SP-Discovery-3
+	break
+	SP-Discovery-1
+	break
+	SP-Discovery-2
+endmap
 
-#map MC-Discovery-coupe-tot -title "Gouffre de la Discovery"
+#map MC-Discovery-coupe-tot -title "Réseau Discovery inférieur"
 #	SC-coupeB3-1
 #	break
 #	SC-B3c2

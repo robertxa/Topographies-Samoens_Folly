@@ -15,6 +15,7 @@ layout Entrances_coords_CDa
 	code tex-map
 		\def\thjunk{ }
 		\def\thlocationCDa{CD11    --  Lat. : 46.08887 N ; Long. : 6.77048 E ; Alt. : 1880 m}
+		\def\thlocationFenetre{Fenêtre dans la Falaise    --  Lat. : 46.09005 N ; Long. : 6.79529 E ; Alt. : 2104 m}
 		\def\thlocationRondelle{F126 (Rondelle Jaune)    --  Lat. : 46.09023 N ; Long. : 6.78857 E ; Alt. : 2230 m}
 		\def\thlocationVF{VF3    --  Lat. : 46.09084 N ; Long. : 6.79367 E ; Alt. : 2336 m}
 		\def\thlocationFalaise{Entrée de la Falaise    --  Lat. : 46.08952 N ; Long. : 6.79443 E ; Alt. : 2225 m}
@@ -45,25 +46,69 @@ layout Coords_Header_CDa
 			\edef\tmp{\thjunk} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thjunk\vss}
 			\fi
-			\edef\tmp{\thlocationCDa} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm  \ss\thlocationCDa\vss}	% The first one should be without hskip
+			\edef\tmp{\thlocationJockers} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationJockers\vss}	% The first one should be without hskip
 			\fi
 			\edef\tmp{\thlocationVF} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm  \ss\thlocationVF\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationFalaise} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm  \ss\thlocationFalaise\vss}	% The first one should be without hskip
-			\fi
 			\edef\tmp{\thlocationRondelle} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip2cm  \ss\thlocationRondelle\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationJockers} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm  \ss\thlocationJockers\vss}	% The first one should be without hskip
+			\edef\tmp{\thlocationFalaise} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFalaise\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationFenetre} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFenetre\vss}
+			\fi
+			\edef\tmp{\thlocationCDa} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationCDa\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode
 
 endlayout
 
+
+layout Coords_Header_LB
+# Layout that set the presentation for the entrance coordinates.
+	
+	copy Entrances_coords_CDa
+	# it calls the layout above Entrances_coords where we defined the different 
+	# variables that contain the text with 
+	# the entrance coordinates we want to print in the header.
+	
+	code tex-map
+		\def\nostring{}
+		\def\thsizexl{}
+		\def\thsizel{}
+		\def\thsizem{}
+		\ifx\thsizexl\nostring\def\thsizexl{30}\else\fi
+		\ifx\thsizel\nostring\def\thsizel{24}\else\fi
+		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
+		
+		\ECoordinates={
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}
+			\fi
+			\edef\tmp{\thlocationJockers} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationJockers\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationVF} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationVF\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationRondelle} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationRondelle\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationFalaise} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFalaise\vss}	% The first one should be without hskip
+			\fi
+			\edef\tmp{\thlocationFenetre} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFenetre\vss}
+			\fi
+		}
+	endcode
+
+endlayout
 
 

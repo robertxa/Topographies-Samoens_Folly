@@ -1,0 +1,34 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Mirolda -title "Gouffre Mirolda - Réseau Lucien Bouclier"
+	## Le réseau Lucien Bouclier
+	input Data/Rondelle-Jaune-F126/F126-tot.th
+		#equate s42_26@Jonction-VF3.Jonction-VF3.F126 s42_26@Sado-Bozzo.Sado-Bozzo.VF3
+			# Par Alex, à partir des données TopoRobot
+		equate s42_26@Jonction-VF3.Jonction-VF3.F126 s14_7@Sado-Bozzo.Sado-Bozzo.VF3
+			# Modifié par Xa, semble meilleur ! En tout cas, ça colle plus avec le dessin.
+		join SP-jctF126_VF3-2@Jonction-VF3.F126 SP-Sado-Bozzo-4@Sado-Bozzo.VF3
+		equate s35_45@Bricole_Amont.Bricole_Amont.F126 s35_45@Danton.Danton.VF3	
+			#Bouclage : 1.54%   23.4m 1519.0m 300   -5.0m   -8.0m  -21.4m
+			# Est-ce OK ? J'ai l'impression qu'il y a 3 visées en doubles
+		join SP-Bricole_Amont-2@Bricole_Amont.F126 SP-Danton-1@Danton.VF3
+		
+
+	input Data/VF3/VF3-tot.th
+
+	input Data/Jockers/Jockers-tot.th
+		equate s11_17@Jockers.Jockers s11_17@Hongroise.Hongroise.VF3
+		join SP-Jockers-7@Jockers SP-Hongroise-4@Hongroise.VF3
+		join SP-Jockers-9@Jockers SP-Hongroise-4@Hongroise.VF3
+		equate s52_0@Jockers.Jockers  s52_0@Puits-Jumeaux.Puits-Jumeaux.VF3
+		#join
+
+	# Import des maps
+	input Amonts-maps.th
+ 
+ endsurvey
+ 

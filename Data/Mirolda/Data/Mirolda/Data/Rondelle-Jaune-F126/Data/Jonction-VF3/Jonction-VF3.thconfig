@@ -128,8 +128,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -230,7 +230,7 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Jonction-VF3-map.xvi
+export map -fmt xvi -layout xviexport -o Data/Jonction-VF3-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Marches-coupe.xvi
 
 # Selection des Maps à exporter
@@ -239,20 +239,20 @@ select MC-Jonction-VF3-coupe-tot@Jonction-VF3
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Jct-VF3-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Jct-VF3-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Jonction-VF3-2023.lox
- export model -enable all -o Outputs/Jonction-VF3-2023.plt
+# export model -enable all -o Outputs/Jonction-VF3-2023.plt
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/Marches-2022 -layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Marches-2022.kml -layout my_layout
- export model -fmt kml -o Outputs/Jonction-VF3-2023-model.kml -enable all
+# export model -fmt kml -o Outputs/Jonction-VF3-2023-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité

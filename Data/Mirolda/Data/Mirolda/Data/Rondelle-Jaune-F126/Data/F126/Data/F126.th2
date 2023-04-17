@@ -1,0 +1,73 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -134.75 -128.75 472.0 297.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.73599999999999 1 1.0} {157.478 F126} F126-map.xvi 0 {}
+
+
+
+scrap SP-F126-1 -projection plan -station-names "" "@F126" -author 1998 "Groupe Spéléo/Ursus" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+point 17.0 84.5 label -text "<center>F126<br>g. de la<br>Rondelle Jaune" -scale xl
+
+point 52.0 151.0 entrance -orientation 71.3
+
+line wall -subtype invisible
+  78.0 168.5
+  78.0 168.5 73.5 157.25 77.25 149.0
+  smooth off
+endline
+
+line wall
+  77.25 149.0
+  77.25 149.0 78.5 155.25 81.5 154.5
+  84.5 153.75 166.0 144.0 167.5 141.25
+  169.0 138.5 172.0 133.5 181.5 131.5
+  191.0 129.5 205.0 127.75 209.25 125.75
+  213.5 123.75 226.5 106.5 236.25 104.5
+  246.0 102.5 322.5 95.25 327.75 95.0
+  333.0 94.75 333.75 94.25 334.75 91.0
+  335.75 87.75 336.75 85.75 336.75 85.75
+  smooth off
+endline
+
+line pit
+  343.0 90.0
+  343.0 90.0 336.25 94.25 336.75 85.75
+  smooth off
+endline
+
+point 78.0 168.5 altitude -align top-right
+
+line wall
+  343.0 90.0
+  343.0 90.0 340.0 97.5 335.5 98.25
+  331.0 99.0 275.75 106.75 268.0 107.75
+  260.25 108.75 242.25 107.25 237.25 110.5
+  232.25 113.75 218.5 130.75 212.5 131.25
+  206.5 131.75 203.75 129.5 197.0 132.25
+  190.25 135.0 179.25 140.0 174.75 141.75
+  170.25 143.5 171.75 145.75 166.25 146.0
+  160.75 146.25 80.25 158.75 79.25 161.0
+  78.25 163.25 78.0 168.5 78.0 168.5
+  smooth off
+endline
+
+point 337.916 89.518 station -name s64_7
+
+point 334.486 96.858 station -name s64_6
+
+point 236.61599999999999 108.018 station -name s64_5
+
+point 212.166 128.388 station -name s64_4
+
+point 200.636 128.788 station -name s64_3
+
+point 176.786 136.62800000000001 station -name s64_2
+
+point 168.08599999999998 143.008 station -name s64_1
+
+point 78.73599999999999 157.478 station -name F126
+
+endscrap
+
+

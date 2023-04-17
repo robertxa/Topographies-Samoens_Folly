@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 1993 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1993 Ursus - 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -19,9 +19,7 @@ centerline -extend right
 		team "Anne-Sophie Mercandalli"
 		team "Sylvain Matricon" 
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1989
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
@@ -108,21 +106,23 @@ centerline -extend right
 		team "Michel Dussurget"
 		team "François Daniere"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1988
         explo-team "Groupe Spéléo/Ursus"
 		
     units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down		
-		s38_24 s5_1 20.65 335.00 26.10  0.00 0.00  0.00 0.00  
+		#s38_24 s5_1 20.65 335.00 26.10  0.00 0.00  0.00 0.00  
+        s38_23 s5_1 20.65 335.00 26.10  0.00 0.00  0.00 0.00  # [Modifié par Xav pour coller au dessin de 1998]
+        extend left
 		s5_1 s5_2 4.42 2.00 28.80  0.00 0.00  0.00 0.00  
 		s5_2 s5_3 6.31 50.00 28.80  0.00 0.00  0.00 0.00  
 		s5_3 s5_4 6.60 78.00 9.90  0.00 0.00  0.00 0.00  
 		s5_4 s5_5 7.98 58.00 -3.60  0.00 0.00  0.00 0.00  
 		s5_5 s5_6 9.63 126.00 -36.00  0.00 0.00  0.00 0.00  
-		s5_6 s5_7 1.20 56.00 0.00  0.00 0.00  0.00 0.00  # Observ: =38.20	
+		#s5_6 s5_7 1.20 56.00 0.00  0.00 0.00  0.00 0.00  # Observ: =38.20
+        extend ignore s38_20 s5_6
+        s5_6 s38_20 1.20 56.00 0.00  0.00 0.00  0.00 0.00  # Observ: =38.20	
 
     # units length meters
     # units compass clino degrees
@@ -143,9 +143,7 @@ centerline -extend right    # [Ajout Alex]
 	date 1993 09 01
 		team "Laurent Mangel"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1993
         explo-team "Groupe Spéléo/Ursus"
 		
     units length meters
@@ -163,17 +161,17 @@ centerline -extend right    # [Ajout Alex]
        s55_9 s55_10 2.38 287.10 1.80  0.00 0.00  0.00 0.00  
        s55_10 s55_11 6.78 216.90 -44.10  0.00 0.00  0.00 0.00  	
 	   
-	   s38_32 s55_1 3.93 309.60 -30.60  0.00 0.00  0.00 0.00  
-       s55_1 s55_2 6.87 249.30 -33.30  0.00 0.00  0.00 0.00  
-       s55_2 s55_3 5.90 210.60 -33.30  0.00 0.00  0.00 0.00  
-       s55_3 s55_4 3.25 213.30 -30.60  0.00 0.00  0.00 0.00  
-       s55_4 s55_5 1.79 170.10 -36.00  0.00 0.00  0.00 0.00  
-       s55_5 s55_6 2.16 197.10 -81.90  0.00 0.00  0.00 0.00  
-       s55_6 s55_7 3.22 184.50 -32.40  0.00 0.00  0.00 0.00  
-       s55_7 s55_8 2.99 260.10 -35.10  0.00 0.00  0.00 0.00  # Observ: T rouge sommet P8
-       s55_8 s55_9 2.34 162.00 -2.70  0.00 0.00  0.00 0.00  
-       s55_9 s55_10 2.38 287.10 1.80  0.00 0.00  0.00 0.00  
-       s55_10 s55_11 6.78 216.90 -44.10  0.00 0.00  0.00 0.00  
+	   #s38_32 s55_1 3.93 309.60 -30.60  0.00 0.00  0.00 0.00  
+       #s55_1 s55_2 6.87 249.30 -33.30  0.00 0.00  0.00 0.00  
+       #s55_2 s55_3 5.90 210.60 -33.30  0.00 0.00  0.00 0.00  
+       #s55_3 s55_4 3.25 213.30 -30.60  0.00 0.00  0.00 0.00  
+       #s55_4 s55_5 1.79 170.10 -36.00  0.00 0.00  0.00 0.00  
+       #s55_5 s55_6 2.16 197.10 -81.90  0.00 0.00  0.00 0.00  
+       #s55_6 s55_7 3.22 184.50 -32.40  0.00 0.00  0.00 0.00  
+       #s55_7 s55_8 2.99 260.10 -35.10  0.00 0.00  0.00 0.00  # Observ: T rouge sommet P8
+       #s55_8 s55_9 2.34 162.00 -2.70  0.00 0.00  0.00 0.00  
+       #s55_9 s55_10 2.38 287.10 1.80  0.00 0.00  0.00 0.00  
+       #s55_10 s55_11 6.78 216.90 -44.10  0.00 0.00  0.00 0.00  
 	   
 endcenterline
 

@@ -160,7 +160,7 @@ layout my_layout
  endlayout
 # Fin de la definition du Layout "normal"
 
-layout layout_coupe
+layout layout-coupe
 	# Rajout des coordonnées de l'entrée
   copy Coords_Header_CDa
 	# Call the config settings (Layout config inside the config.thc file)
@@ -239,7 +239,7 @@ layout my_layout-continuations
 	copy layoutcontinuation	# Pour afficher le label des continuations
 endlayout
 layout layout-coupe-continuations
-	copy my_layout-coupe
+	copy layout-coupe
 	copy layoutcontinuation	# Pour afficher le label des continuations
 endlayout
 
@@ -266,11 +266,11 @@ select MC-Mirolda-coupe-tot@Mirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-plan.pdf -layout my_layout
- #export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan-continuations.pdf -layout my_layout-continuations
- export map -projection extended -fmt pdf -layout layout_coupe -o Outputs/Criou-coupe.pdf
- #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Criou-2022-coupe-continuations.pdf
-#export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/Mirolda-plan.pdf -layout my_layout
+ #export map -proj plan -fmt pdf -o Outputs/Mirolda-plan-continuations.pdf -layout my_layout-continuations
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Mirolda-coupe.pdf
+ #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Mirolda-coupe-continuations.pdf
+#export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Mirolda-2022.lox
@@ -281,6 +281,7 @@ select MC-Mirolda-coupe-tot@Mirolda
 # Export des fichiers kml
  export map -proj plan -fmt kml -o Outputs/Mirolda.kml -layout layout-kml
  export model -fmt kml -o Outputs/Mirolda-2022-model.kml -enable all
+ export continuation-list -fmt kml -o Outputs/ContinuationsMirolda-2022.kml
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité

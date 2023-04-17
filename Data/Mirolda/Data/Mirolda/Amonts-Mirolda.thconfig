@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -27,13 +27,13 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera 
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-source DDiscovery2-tot.th
+source Amonts-tot.th
 
 # Add Coordinates
-#input legendes/entrances_coordinates.th
+input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../../../../../config.thc 
+input ../../config.thc 
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles à utiliser (UIS, etc)
@@ -55,6 +55,8 @@ endlayout
 #debut de la definition du layout "my_layout"
 layout my_layout
 
+  # Rajout des coordonnées de l'entrée
+  copy Coords_Header_LB
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl 
@@ -75,9 +77,9 @@ layout my_layout
   # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
   # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
-  scale 1 250
-  # echelle graphique 100 m ampleur
-  scale-bar 25 m
+  scale 1 1000
+  # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
+  scale-bar 200 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
   #grid bottom
@@ -99,7 +101,7 @@ layout my_layout
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Gouffre de la Discovery plan - 1:1000"
+  doc-title "Mirolda plan - 1:1000"
 
   # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
   # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
@@ -108,18 +110,19 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 -100 nw
+  map-header 50 45 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend off
+  legend on
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 26 cm
+  legend-columns 3
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -131,8 +134,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -147,37 +150,36 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau Discovery} 
+			\cavename={Gouffre Mirolda - Réseau Lucien Bouclier} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\club \club={Collectif Criou}
+		\newtoks\synth \synth={Groupe Spéléologique Ursus (1998), Alexandre Pont, Xavier Robert (2023)}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
   
  endlayout
 # Fin de la definition du Layout "normal"
 
-
 layout layout-coupe
-	
+	# Rajout des coordonnées de l'entrée
+  copy Coords_Header_LB
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe 
 	copy langue-fr
 	
-  #cs UTM32
-  
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
   base-scale 1 1000
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
-  scale 1 1000
+  scale 1 1500
   # echelle graphique 100 m ampleur
-  scale-bar 100 m
+  scale-bar 150 m
 
   # Une grille ?
-  #grid-size 250 250 250 m  
-  grid off
+  grid-size 200 200 200 m  
+  grid bottom
  
   # la topo est transparente
   transparency on
@@ -185,27 +187,26 @@ layout layout-coupe
   color map-fg [100 100 80]
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
-
+    
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Gouffre de la Discovery coupe développée - 1:1000"
+  doc-title "Mirolda coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
   #map-header 0 0 s
   # arrière plan de la manchette
   map-header-bg on
   # Légende. Voir layout ci-dessus.
-  legend off
+  legend on
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
-
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
-  statistics topo-length on
+  statistics topo-length off
   # Afficher un copyright
   statistics copyright 2
   
@@ -223,50 +224,73 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau Discovery} 
+			\cavename={Gouffre Mirolda - Réseau Lucien Bouclier} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\club \club={Collectif Criou}
+		\newtoks\synth \synth={Groupe Spéléologique Ursus (1998), Alexandre Pont, Xavier Robert (2023)}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}		
 	endcode   
 
  endlayout
 # Fin de la definition du Layout "normal"
 
+layout my_layout-continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+layout layout-coupe-continuations
+	copy layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout layout-kml
+  # Définition du système de projection du plan
+  cs UTM32
+  # Couleur de la topographie
+  # Rouge-Orange = 255,69,0 -->
+  # Orange = 255,165,0 -->
+  # Orange Sombre = 255,140,0 -->
+  # Bleu --> 0, 0 255
+  color map-fg [0 0 100]
+endlayout
 
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Discovery-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Discovery-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/Mirolda-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/Mirolda-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Discovery-plan-tot
-select MC-Discovery-coupe-tot
+select MP-Amonts-Mirolda-plan@Mirolda
+select MC-Amonts-Mirolda-plan@Mirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2023-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2023-coupe.pdf
-#export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/Lucien_Bouclier-plan.pdf -layout my_layout
+ #export map -proj plan -fmt pdf -o Outputs/Mirolda-plan-continuations.pdf -layout my_layout-continuations
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Lucien_Bouclier-coupe.pdf
+ #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Mirolda-coupe-continuations.pdf
+#export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Discovery-2023.lox
+# export model -enable all -o Outputs/Lucien_Bouclier.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Discovery-2023 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/Mirolda-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Discovery-2023.kml -layout my_layout
-# export model -fmt kml -o Outputs/Discovery-2023-model.kml -enable all
+ export map -proj plan -fmt kml -o Outputs/Lucien_Bouclier.kml -layout layout-kml
+ export model -fmt kml -o Outputs/Lucien_Bouclier-model.kml -enable all
+ #export continuation-list -fmt kml -o Outputs/ContinuationsLucien_Bouclier-2022.kml
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-#export database -fmt sql -o Outputs/databaseDiscovery-2023.sql
+#export database -fmt sql -o Outputs/databaseMirolda-2022.sql
 
-#export continuation-list -o Outputs/ContinuationsDiscovery-2023.html
-#export continuation-list -o Outputs/ContinuationsDiscovery-2023.kml
-#export survey-list -location on -o Outputs/SurveysDiscovery-2023.html
-#export cave-list -location on -o Outputs/CavesDiscovery-2023.html
+#export continuation-list -o Outputs/ContinuationsMirolda-2022.html
+#export continuation-list -o Outputs/ContinuationsMirolda-2022.kml
+#export survey-list -location on -o Outputs/SurveysMirolda2022.html
+#export cave-list -location on -o Outputs/CavesMirolda2022.html

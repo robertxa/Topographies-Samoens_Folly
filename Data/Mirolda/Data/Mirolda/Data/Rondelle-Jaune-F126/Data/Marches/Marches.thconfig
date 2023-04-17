@@ -105,7 +105,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 -100 nw
+  map-header 85 75 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
@@ -113,8 +113,8 @@ layout my_layout
   # "legend off" = pas de legende
   legend off
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
-  # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
+  legend-width 17 cm
+  # Un commentaire à ajouter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
   map-comment "Massif du Criou, Samoëns, 74, France"
  
@@ -128,8 +128,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -143,7 +143,7 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Laurent Mangel, Vincent Vieillerobe (1999), Alexandre Pont, Xavier Robert (2023)}	
+		\newtoks\synth \synth={G.S. Ursus (1999), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
   
  endlayout
@@ -217,7 +217,7 @@ layout layout-coupe
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Laurent Mangel, Vincent Vieillerobe (1999), Alexandre Pont, Xavier Robert (2023)}	
+		\newtoks\synth \synth={G.S Ursus (1999), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
 
  endlayout
@@ -241,7 +241,7 @@ select MC-Marches-coupe-tot@Marches
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Marches-2022.lox
+ export model -enable all -o Outputs/Marches.lox
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/Marches-2022 -layout my_layout

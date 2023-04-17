@@ -1,12 +1,12 @@
 encoding  utf-8
 
-# Copyright (C) 1998 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1998 Ursus - 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 #[Note: Version Alex 2023 03 19 - import Données URSUS]
 
-survey DDiscovery2 -title "VF3 - Mirolda - Réseau Lucien Bouclier - DDiscovery2"
+survey Hongroise2 -title "VF3 - Mirolda - Réseau Lucien Bouclier - MP-Hongroise-plan-tot@Hongroise2"
 
 centerline -extend right    
 
@@ -18,14 +18,14 @@ centerline -extend right
 		team "Michel Dussurget"
 		team "Laurent Flandrin"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1991
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down				
+       
+       flags duplicate
        s47_0 s47_1 3.34 277.00 -7.20  0.00 0.00  0.00 0.00  
        s47_1 s47_2 3.26 259.00 -12.60  0.00 0.00  0.00 0.00  
        s47_2 s47_3 4.66 295.00 7.20  0.00 0.00  0.00 0.00  
@@ -34,6 +34,8 @@ centerline -extend right
        s47_5 s47_6 4.89 276.00 -37.80  0.00 0.00  0.00 0.00  
        s47_6 s47_7 9.07 346.00 22.50  0.00 0.00  0.00 0.00  
        s47_7 s47_8 2.30 312.00 20.70  0.00 0.00  0.00 0.00  # Observ: =62,82 station 71prime
+       flags not duplicate
+
        s47_8 s47_9 3.82 288.00 -11.70  0.00 0.00  0.00 0.00  
        s47_9 s47_10 2.85 330.00 23.40  0.00 0.00  0.00 0.00  
        s47_10 s47_11 3.15 243.00 9.00  0.00 0.00  0.00 0.00  
@@ -45,8 +47,8 @@ centerline -extend right
        s47_16 s47_17 2.62 302.00 3.60  0.00 0.00  0.00 0.00  
        s47_17 s47_18 3.24 265.00 -36.90  0.00 0.00  0.00 0.00  
        s47_18 s47_19 1.96 235.00 -38.70  0.00 0.00  0.00 0.00  
-       s47_19 s47_20 2.76 290.00 -69.30  0.00 0.00  0.00 0.00  
-       s47_20 s47_21 5.97 102.00 -74.70  0.00 0.00  0.00 0.00  
+       s47_19 s47_20 2.76 290.00 -69.30  0.00 0.00  0.00 0.00  # R2
+       s47_20 s47_21 5.97 102.00 -74.70  0.00 0.00  0.00 0.00  # P6
        s47_21 s17_0 2.00 18.00 0.00  0.00 0.00  0.00 0.00  # Observ: =17.0
 
     # units length meters
@@ -87,20 +89,21 @@ centerline -extend right    # [Ajout Alex]
     # Serie: 62 - fenetre	falaise
     #========================
    	# [note Alex] explo URSUS 24
+
+    station fenetre "Fenêtre" entrance
+
     date 1998 08 06
 		team "Vincent Vieillerobe"
 		team "Aymeric Bougnol"
 		team "Sylvain Matricon"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1998
         explo-team "Groupe Spéléo/Ursus"
 
     units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down
-       s62_0 s62_1 3.88 288.00 -7.20  0.10 1.00  1.20 1.50  
+       fenetre s62_1 3.88 288.00 -7.20  0.10 1.00  1.20 1.50  # Fenêtre dans la falaise
        s62_1 s62_2 3.88 234.00 -43.20  0.50 0.50  3.00 1.00  
        s62_2 s62_3 3.88 238.50 -9.00  0.50 0.50  2.00 1.00  
        s62_3 s62_4 3.88 243.00 13.50  0.10 0.40  3.00 0.80  
@@ -121,7 +124,7 @@ centerline -extend right    # [Ajout Alex]
        s62_18 s62_19 2.75 9.00 20.70  1.00 1.50  0.80 0.60  
        s62_19 s62_20 2.75 0.00 27.00  1.50 1.00  0.30 0.70  
        s62_20 s62_21 2.75 306.00 0.00  0.80 1.20  0.50 2.00  # Observ: arrivée a droite
-       s62_21 s62_22 1.45 0.00 -90.00  1.60 0.30  2.00 0.40  
+       s62_21 s62_22 1.45 0.00 -90.00  1.60 0.30  2.00 0.40  # R2
        s62_22 s62_23 6.95 324.00 -19.80  0.60 0.40  2.00 1.60  
        s62_23 s62_24 5.77 288.00 4.50  0.40 0.40  0.80 0.40  
        s62_24 s62_25 2.49 234.00 -9.00  0.40 0.30  1.20 0.20  

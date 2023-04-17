@@ -108,7 +108,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 0 0 s
+  map-header 0 -40 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
@@ -116,10 +116,10 @@ layout my_layout
   # "legend off" = pas de legende
   legend off
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -131,8 +131,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -147,11 +147,11 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Galerie de la Tremie} 
+			\cavename={Galerie de la Trémie} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\synth \synth={G.S. Ursus (1998), Alexandre Pont, Xavier Robert (2023)}
 	endcode   
   
  endlayout
@@ -190,15 +190,15 @@ layout layout-coupe
   doc-title "Gouffre de la Tremie coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  #map-header 0 0 s
+  map-header 0 -40 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
 
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
@@ -220,11 +220,11 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Galerie de la Tremie} 
+			\cavename={Galerie de la Trémie} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\synth \synth={G.S. Ursus (1998), Alexandre Pont, Xavier Robert (2023)}
 	endcode   
 
  endlayout
@@ -234,17 +234,17 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Tremie-map.xvi
+export map -fmt xvi -layout xviexport -o Data/Tremie-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Tremie-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Tremie-plan-tot
-select MC-Tremie-coupe-tot
+select MP-Tremie-plan-tot@Tremie
+select MC-Tremie-coupe-tot@Tremie
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2023-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2023-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Tremie-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Tremie-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

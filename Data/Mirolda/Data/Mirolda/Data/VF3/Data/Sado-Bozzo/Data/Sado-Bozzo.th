@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 1991 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1991 Ursus - 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -8,7 +8,7 @@ encoding  utf-8
 
 survey Sado-Bozzo -title "VF3 - Mirolda - Réseau Lucien Bouclier - Réseau Sado-Bozzo"
 
-centerline -extend right    
+centerline -extend left    
     
 	#========================
 	# [note Alex] explo URSUS 14
@@ -16,9 +16,7 @@ centerline -extend right
 		team "Sylvain Matricon"
 		team "Jean Bottazzi"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1990
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
@@ -46,15 +44,18 @@ centerline -extend right
        s42_18 s42_19 4.89 208.00 -44.40  0.00 0.00  0.00 0.00  
        s42_19 s42_20 10.82 62.00 -30.90  0.00 0.00  0.00 0.00  
        s42_20 s42_21 9.33 54.00 -12.00  0.00 0.00  0.00 0.00  
-       s42_21 s42_22 5.45 56.00 49.20  0.00 0.00  0.00 0.00  
+       s42_21 s42_22 5.45 56.00 49.20  0.00 0.00  0.00 0.00  # R3
        s42_22 s42_23 5.87 55.00 -41.70  0.00 0.00  0.00 0.00  
        s42_23 s42_24 8.69 57.00 5.10  0.00 0.00  0.00 0.00  
-       s42_24 s42_25 10.41 68.00 -23.70  0.00 0.00  0.00 0.00  
+       s42_24 s42_25 10.41 68.00 -23.70  0.00 0.00  0.00 0.00
+       extend ignore   s42_25 s42_26
        s42_25 s42_26 7.49 53.00 15.90  0.00 0.00  0.00 0.00  
+        #extend right
        s42_26 s42_27 14.18 73.00 -71.40  0.00 0.00  0.00 0.00  
-       s42_27 s42_28 4.14 22.00 66.30  0.00 0.00  0.00 0.00  
-       s42_28 s42_29 6.59 94.00 -63.30  0.00 0.00  0.00 0.00  
-       s42_29 s42_30 4.99 0.00 -90.00  0.00 0.00  0.00 0.00  
+       s42_27 s42_28 4.14 22.00 66.30  0.00 0.00  0.00 0.00  # R3
+       s42_28 s42_29 6.59 94.00 -63.30  0.00 0.00  0.00 0.00  # R5
+       s42_29 s42_30 4.99 0.00 -90.00  0.00 0.00  0.00 0.00  # P5
+       extend left
        s42_30 s42_31 3.58 186.00 3.30  0.00 0.00  0.00 0.00  
        s42_31 s42_32 3.05 259.00 -40.80  0.00 0.00  0.00 0.00  
        s42_32 s42_33 5.51 148.00 -7.50  0.00 0.00  0.00 0.00  
@@ -116,16 +117,14 @@ centerline -extend right
 		team "Michel Dussurget" 
 		team "Laurent Flandrin"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1991
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down	
        s43_0 s43_1 7.14 28.00 13.00  0.00 0.00  0.00 0.00  
-       s43_1 s43_2 12.21 64.00 51.00  0.00 0.00  0.00 0.00  
+       s43_1 s43_2 12.21 64.00 51.00  0.00 0.00  0.00 0.00  # P9
        s43_2 s43_3 7.06 342.00 18.00  0.00 0.00  0.00 0.00  
        s43_3 s43_4 3.71 317.00 14.00  0.00 0.00  0.00 0.00  
        s43_4 s43_5 2.88 358.00 29.00  0.00 0.00  0.00 0.00  
@@ -149,7 +148,7 @@ centerline -extend right
        s43_22 s43_23 2.65 46.00 40.00  0.00 0.00  0.00 0.00  
        s43_23 s43_24 0.01 0.00 90.00  0.00 0.00  0.00 0.00  
        s43_24 s43_25 4.11 102.00 17.00  0.00 0.00  0.00 0.00  
-       s43_25 s43_26 5.92 0.00 48.00  0.00 0.00  0.00 0.00  
+       s43_25 s43_26 5.92 0.00 48.00  0.00 0.00  0.00 0.00  # R4
        s43_26 s43_27 1.49 32.00 16.00  0.00 0.00  0.00 0.00  
        s43_27 s43_28 1.55 357.00 36.00  0.00 0.00  0.00 0.00  
        s43_28 s43_29 1.44 20.00 25.00  0.00 0.00  0.00 0.00  
@@ -157,7 +156,7 @@ centerline -extend right
        s43_30 s43_31 2.04 38.00 42.00  0.00 0.00  0.00 0.00  
        s43_31 s43_32 2.05 133.00 -12.00  0.00 0.00  0.00 0.00  
        s43_32 s43_33 3.81 90.00 2.00  0.00 0.00  0.00 0.00  
-       s43_33 s42_0 12.10 0.00 90.00  0.00 0.00  0.00 0.00  # Observ: =42.0	
+       s43_33 s42_0 12.10 0.00 90.00  0.00 0.00  0.00 0.00  # Observ: =42.0	; P12
 		
 
     # units length meters
@@ -218,9 +217,7 @@ centerline -extend right
 		team "Aymeric Bougnol"
 		team "Jean Bottazzi"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1991
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
@@ -229,11 +226,11 @@ centerline -extend right
        s20_0 s20_1 7.66 260.00 31.00  0.00 0.00  0.00 0.00  # Observ: =44.0
        s20_1 s20_2 17.33 252.00 -8.00  0.00 0.00  0.00 0.00  
        s20_2 s20_3 3.30 265.00 -13.00  0.00 0.00  0.00 0.00  
-       s20_3 s20_4 2.90 205.00 -48.00  0.00 0.00  0.00 0.00 	
+       s20_3 s20_4 2.90 205.00 -48.00  0.00 0.00  0.00 0.00 	# R2
 
        s44_4 s21_1 2.80 245.00 -33.00  0.00 0.00  0.00 0.00  
        s21_1 s21_2 2.40 275.00 -21.00  0.00 0.00  0.00 0.00  
-       s21_2 s21_3 4.49 260.00 -47.00  0.00 0.00  0.00 0.00  
+       s21_2 s21_3 4.49 260.00 -47.00  0.00 0.00  0.00 0.00     # R3
        s21_3 s21_4 3.17 185.00 -23.00  0.00 0.00  0.00 0.00  
 	   
 	   s20_1 s44_1 7.73 273.00 37.00  0.00 0.00  0.00 0.00  
@@ -241,7 +238,7 @@ centerline -extend right
        s44_2 s44_3 0.50 0.00 -90.00  0.00 0.00  0.00 0.00  
        s44_3 s44_4 12.06 260.00 -8.00  0.00 0.00  0.00 0.00  # Observ: station 7 bozzo$
        s44_4 s44_5 4.51 280.00 40.00  0.00 0.00  0.00 0.00  
-       s44_5 s44_6 4.05 275.00 62.00  0.00 0.00  0.00 0.00  
+       s44_5 s44_6 4.05 275.00 62.00  0.00 0.00  0.00 0.00  # R3
        s44_6 s44_7 2.41 355.00 -8.00  0.00 0.00  0.00 0.00  
        s44_7 s44_8 6.63 328.00 0.00  0.00 0.00  0.00 0.00  
        s44_8 s44_9 3.63 338.00 32.00  0.00 0.00  0.00 0.00  

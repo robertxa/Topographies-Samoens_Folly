@@ -16,6 +16,7 @@ layout Entrances_coords_VF
 		\def\thjunk{ }
 		\def\thlocationVF{VF3    --  Lat. : 46.09084 N ; Long. : 6.79367 E ; Alt. : 2336 m}
 		\def\thlocationFalaise{Entrée de la Falaise    --  Lat. : 46.08952 N ; Long. : 6.79443 E ; Alt. : 2225 m}
+		\def\thlocationFenetre{Fenêtre dans la Falaise    --  Lat. : 46.09005 N ; Long. : 6.79529 E ; Alt. : 2104 m}
 	endcode 
 	
 endlayout
@@ -43,10 +44,13 @@ layout Coords_Header_VF
 				{\size[\thsizem] \ss\thjunk\vss}
 			\fi
 			\edef\tmp{\thlocationVF} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm  \ss\thlocationVF\vss}	% The first one should be without hskip
+				{\size[\thsizem]\hskip2cm  \ss\thlocationVF\vss}
 			\fi
 			\edef\tmp{\thlocationFalaise} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm  \ss\thlocationFalaise\vss}	% The first one should be without hskip
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFalaise\vss}
+			\fi
+			\edef\tmp{\thlocationFenetre} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFenetre\vss}
 			\fi
 		}
 	endcode

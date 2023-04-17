@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 1987 Ursus -  2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1987 Ursus -  2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -20,9 +20,7 @@ survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda
 		team "Michel Dussurget"
 		team "François Daniere"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1988
         explo-team "Groupe Spéléo/Ursus"
      
     #cs long-lat
@@ -34,6 +32,7 @@ survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda
     units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down
+        extend left
 	   s31_5 s2_1 7.29 193.00 -6.00  0.00 0.00  0.00 0.00  
        s2_1 s2_2 3.60 150.00 14.00  0.00 0.00  0.00 0.00  
        s2_2 s2_3 3.55 135.00 14.00  0.00 0.00  0.00 0.00  
@@ -49,30 +48,39 @@ survey Falaise -title "Entrée de la Falaise - Réseau Lucien Bouclier - Mirolda
        s2_12 s2_13 4.42 106.00 15.00  0.00 0.00  0.00 0.00  
        s2_13 Falaise 6.34 176.00 4.00  0.00 0.00  0.00 0.00  # Observ: sortie falaise  
 
+        extend left
        s33_2 s3_1 4.51 88.00 -2.00  0.00 0.00  0.00 0.00  
        s3_1 s3_2 5.77 136.00 -33.00  0.00 0.00  0.00 0.00  
+        #extend right
        s3_2 s3_3 11.04 20.00 10.00  0.00 0.00  0.00 0.00  	   
-	   
+	    extend right
 	   s3_2 s33_3 10.62 266.00 -1.00  0.00 0.00  0.00 0.00  
-	   
+
+	    extend right
 	   s33_0 s33_1 5.42 251.00 4.00  0.00 0.00  0.00 0.00  
        s33_1 s33_2 6.47 210.00 -26.00  0.00 0.00  0.00 0.00  
        s33_2 s33_3 6.38 220.00 -30.00  0.00 0.00  0.00 0.00  
        s33_3 s33_4 12.14 299.00 -24.00  0.00 0.00  0.00 0.00  
        s33_4 s33_5 6.30 320.00 1.00  0.00 0.00  0.00 0.00  
+       # Départ de la série VF46 entre les stations 33_5 et 33_10, probablement à 33.9
        s33_5 s33_6 17.69 321.00 4.00  0.00 0.00  0.00 0.00  
        s33_6 s33_7 7.80 327.00 21.00  0.00 0.00  0.00 0.00  
        s33_7 s33_8 5.24 340.00 -9.00  0.00 0.00  0.00 0.00  
-       s33_8 s33_9 3.08 275.00 -10.00  0.00 0.00  0.00 0.00  
+       s33_8 s33_9 3.08 275.00 -10.00  0.00 0.00  0.00 0.00  # [Par Xav : Départ de la série VF46 ?]
        s33_9 s33_10 3.35 195.00 12.00  0.00 0.00  0.00 0.00  
+       
        s33_10 s33_11 3.33 303.00 6.00  0.00 0.00  0.00 0.00  
        s33_11 s33_12 18.72 317.00 0.00  0.00 0.00  0.00 0.00  
        s33_12 s33_13 13.71 302.00 -6.00  0.00 0.00  0.00 0.00  
        s33_13 s33_14 4.98 280.00 -32.00  0.00 0.00  0.00 0.00  
-       s33_14 s33_15 7.52 320.00 11.00  0.00 0.00  0.00 0.00  
+       s33_14 s33_15 7.52 320.00 11.00  0.00 0.00  0.00 0.00
+       
+       # Duplication de la jonction avec la galerie des Chauves Souris
+       flags duplicate  
        s33_15 s33_16 6.24 320.00 -2.00  0.00 0.00  0.00 0.00  
-       s33_16 s53_3 5.62 286.00 -18.00  0.00 0.00  0.00 0.00  # Observ: repéré sous terre par françois = 53.3 sous terre pa- françois 53,3
-	   
+       s33_16 s53_3 5.62 286.00 -18.00  0.00 0.00  0.00 0.00  # Observ: repéré sous terre par françois = 53.3 sous terre par françois 53,3
+	   flags not duplicate
+
 	   s33_3 s31_1 7.24 241.00 -37.00  0.00 0.00  0.00 0.00  # Observ: =33.3
        s31_1 s31_2 4.53 206.00 -38.00  0.00 0.00  0.00 0.00  
        s31_2 s31_3 2.25 138.00 -39.00  0.00 0.00  0.00 0.00  

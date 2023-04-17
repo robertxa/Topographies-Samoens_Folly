@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 1989 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1989 Ursus - 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -14,9 +14,7 @@ centerline -extend right
     date 1989 07 01
 		team "Didier Mas"   # Didier XXX
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1989
         explo-team "Groupe Spéléo/Ursus"
 
     units length meters
@@ -24,7 +22,7 @@ centerline -extend right
 	data normal from to length compass clino right left up down	
        s35_15 s35_16 6.19 200.00 -18.00  0.00 0.00  0.00 0.00      
        s35_16 s35_17 2.36 160.00 11.70  0.00 0.00  0.00 0.00 
-       s35_17 s35_18 13.76 0.00 -90.00  0.00 0.00  0.00 0.00  
+       s35_17 s35_18 13.76 0.00 -90.00  0.00 0.00  0.00 0.00  # P14
        s35_18 s35_19 5.39 162.00 -11.70  0.00 0.00  0.00 0.00  
        s35_19 s35_20 5.28 193.00 -15.30  0.00 0.00  0.00 0.00  
        s35_20 s35_21 2.05 266.00 -8.10  0.00 0.00  0.00 0.00  
@@ -47,10 +45,10 @@ centerline -extend right
        s35_37 s35_38 5.11 195.00 -28.80  0.00 0.00  0.00 0.00  
        s35_38 s35_39 6.85 257.00 2.70  0.00 0.00  0.00 0.00  
        s35_39 s35_40 3.32 271.00 29.70  0.00 0.00  0.00 0.00  
-       s35_40 s35_41 9.47 0.00 -90.00  0.00 0.00  0.00 0.00  
+       s35_40 s35_41 9.47 0.00 -90.00  0.00 0.00  0.00 0.00  #  P10
        s35_41 s35_42 8.21 217.00 -21.60  0.00 0.00  0.00 0.00  
 	   
-       s35_42 s35_43 9.62 190.00 -50.40  0.00 0.00  0.00 0.00  
+       s35_42 s35_43 9.62 190.00 -50.40  0.00 0.00  0.00 0.00  # P6
        s35_43 s35_44 1.64 278.00 1.35  0.00 0.00  0.00 0.00  
        s35_44 s35_45 2.47 231.00 24.30  0.00 0.00  0.00 0.00     
 

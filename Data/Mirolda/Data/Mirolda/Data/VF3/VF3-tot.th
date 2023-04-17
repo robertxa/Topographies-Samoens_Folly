@@ -1,74 +1,70 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey VF3 -title "Gouffre VF3"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/VF3/VF3-tot.th	# Données des puits d'entrée du VF3
-	input Data/Falaise/Falaise-tot.th	# Galeries qui partent du sommet du P40 en direction de l'entrée de la Falaise
-		equate s32_4@VF3.VF3 s32_4@Chauves-Souris.Chauves-Souris
-		#equate VF3-2-10@VF3.VF3 VF3-2-10@Falaise.Falaise
+	
 	input Data/Chauves-Souris/Chauves-Souris-tot.th	# Galerie des Chauves Souris
-		equate s53_3@Chauves-Souris.Chauves-Souris s53_3@Falaise.Falaise	
-		#equate VF3-3-17@Chauves-Souris.Chauves-Souris VF3-3-17@Falaise.Falaise
+		equate s32_4@VF3.VF3 s32_4@Chauves-Souris.Chauves-Souris
+		join SP-VF3-1@VF3 SP-Chauves-Souris-2@Chauves-Souris
+		join SP-VF3-2@VF3 SP-Chauves-Souris-2@Chauves-Souris	# Jction au sommet du P40
+
+	input Data/Falaise/Falaise-tot.th	# Galeries qui partent du sommet du P40 en direction de l'entrée de la Falaise
+		equate s53_3@Chauves-Souris.Chauves-Souris s53_3@Falaise.Falaise
+		join SP-Falaise-1@Falaise SP-Chauves-Souris-2@Chauves-Souris
+		join SP-Falaise-3@Falaise SP-VF3-2@VF3
+	
+	input Data/VF46/VF46-tot.th
+		equate s46_0@VF46.VF46 s33_9@Falaise.Falaise
+		#join SP-VF46-1@VF46 SP-Falaise-3@Falaise
+	
 	input Data/Danton/Danton-tot.th	#	Réseau du Puits Danton, il doit jonctionner aussi avec la Bricole Amont, mais il manque un bout de topo pour l'instant
 		equate s35_15@Chauves-Souris.Chauves-Souris s35_15@Danton.Danton
-		#equate VF3-4-27@Chauves-Souris.Chauves-Souris VF3-4-27@Danton.Danton
+		join SP-Danton-1@Danton SP-Chauves-Souris-1@Chauves-Souris
+	
 	input Data/Prof-Blanchon/Prof-Blanchon-tot.th	# Réseau du Professeur Blanchon
 		equate s34_11@Blanchon.Prof-Blanchon s34_11@Chauves-Souris.Chauves-Souris
-		#equate VF3-4-11@Blanchon.Prof-Blanchon VF3-4-11@Chauves-Souris.Chauves-Souris
+		join SP-Tremie-1@Tremie SP-Blanchon-4@Prof-Blanchon
+		join SP-Puits-Jumeaux-3@Puits-Jumeaux SP-Blanchon-4@Prof-Blanchon
+	
 	input Data/Tremie/Tremie-tot.th	# Galerie de la Trémie
 		equate s34_11@Tremie.Tremie s34_11@Chauves-Souris.Chauves-Souris	
 		equate s38_32@Tremie.Tremie s38_32@Blanchon.Prof-Blanchon
-		#equate VF3-4-11@Tremie.Tremie VF3-4-11@Chauves-Souris.Chauves-Souris
+		join SP-Tremie-2@Tremie SP-Blanchon-1@Prof-Blanchon
+		join SP-Tremie-1@Tremie SP-Chauves-Souris-1@Chauves-Souris
+	
 	input Data/Puits-jumeaux/Puits-jumeaux-tot.th	# Puits Jumeaux et galerie Discovery
-		equate	s38_9@Puits-jumeaux.Puits-jumeaux	s38_9@Tremie.Tremie
-		#equate	VF3-8-10@Puits-jumeaux.Puits-jumeaux	VF3-8-10@Tremie.Tremie
+		equate	s38_9@Puits-Jumeaux.Puits-Jumeaux	s38_9@Tremie.Tremie
+		join SP-Puits-Jumeaux-3@Puits-Jumeaux SP-Tremie-1@Tremie
+	
 	input Data/DDiscovery/DDiscovery-tot.th
-		equate s40_51@DDiscovery.DDiscovery s40_51@Puits-jumeaux.Puits-jumeaux
-		#equate VF3-10-52@DDiscovery.DDiscovery VF3-10-52@Puits-jumeaux.Puits-jumeaux
+		equate s40_51@DDiscovery.DDiscovery s40_51@Puits-Jumeaux.Puits-Jumeaux
+		join SP-Discovery-4@DDiscovery SP-Discovery-1@Puits-Jumeaux
 
 	input Data/Sado-Bozzo/Sado-Bozzo-tot.th	# Réseau Sado-Bozzo. 
 		equate  s14_7@Sado-Bozzo.Sado-Bozzo s14_7@Hongroise.Hongroise
-	
-	input Data/DDiscovery2/DDiscovery2-tot.th	# Jonction Chauves-Souris - Sado Bozzo
-		equate s17_0@DDiscovery2.DDiscovery2 s17_0@Hongroise.Hongroise
+		join SP-Sado-Bozzo-4@Sado-Bozzo SP-Hongroise-1@Hongroise
 		
 	input Data/Combattant/Combattant-tot.th	# Réseau du Combattant à partir Sado Bozzo
 		equate  s14_7@Combattant.Combattant s14_7@Hongroise.Hongroise
 		equate  s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo
-		#equate VF3-18-0@Combattant.Combattant VF3-11-60@Sado-Bozzo.Sado-Bozzo
+		join SP-Combattant-1@Combattant SP-Sado-Bozzo-4@Sado-Bozzo
+		join SP-Combattant-2@Combattant SP-Sado-Bozzo-4@Sado-Bozzo
 	
 	input Data/Hongroise/Hongroise-tot.th	# Galerie Hongroise
 		equate s41_0@Hongroise.Hongroise s41_0@DDiscovery.DDiscovery
-		#equate s14_7@Hongroise.Hongroise s14_7@Sado-Bozzo.Sado-Bozzo
-		#equate s17_0@Hongroise.Hongroise s17_0@DDiscovery2.DDiscovery2 
-		#equate VF3_Erreur@Hongroise.Hongroise VF3-11-60@DDiscovery.DDiscovery
-		##equate VF3_Erreur@Hongroise.Hongroise VF3-11-60@Sado-Bozzo.Sado-Bozzo
+		join SP-Hongroise-2@Hongroise SP-Discovery-1@DDiscovery
+
+	input Data/Hongroise2/Hongroise2-tot.th	# Jonction Hongroise22 - Hongroise
+		equate s17_0@Hongroise2.Hongroise2 s17_0@Hongroise.Hongroise
+		join SP-Hongroise-5@Hongroise SP-Hongroise2-1@Hongroise2
 		
-		# Test
-		#equate VF3-ST-66@Hongroise.Hongroise VF3-11-60@Sado-Bozzo.Sado-Bozzo
-		###equate VF3_Erreur@Hongroise.Hongroise VF3-22-19@DDiscovery2.DDiscovery2
-		###equate VF3-ST-65@Hongroise.Hongroise VF3-22-19@DDiscovery2.DDiscovery2
-		##equate VF3-ST-21@Hongroise.Hongroise VF3-22-19@DDiscovery2.DDiscovery2
-		# End Test
-		
-		# A FAIRE ????
-
-
-
-
-
-	# Import du dessin en plan
-	#input Data/VF3.th2
-
-	# Import du dessin en coupe
-	#input Data/VF3-coupe.th2
-
 	# Import des maps
-	#input VF3-maps.th
+	input VF3-maps.th
  
  endsurvey
  

@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -11,28 +11,15 @@ survey F126 -title "Gouffre de la Rondelle Jaune - F126"
 		equate s64_7@Marches.Marches s64_7@F126.F126	
 	input Data/Bricole_Amont/Bricole_Amont-tot.th
 		equate s69_47@Bricole_Amont.Bricole_Amont s69_47@Marches.Marches
+		join SP-Marches-5@Marches SP-Bricole_Amont-1@Bricole_Amont
 	input Data/Bricole_Aval/Bricole_Aval-tot.th
 		equate s69_47@Bricole_Aval.Bricole_Aval s69_47@Bricole_Amont.Bricole_Amont
+		join SP-Marches-5@Marches SP-Bricole_Aval-1@Bricole_Aval
 	input Data/Jonction-VF3/Jonction-VF3-tot.th
 		equate s64_7@Jonction-VF3.Jonction-VF3 s64_7@F126.F126
-	
-	### OLD
-	#input Data/Marches/Marches-tot.th
-	#	equate 0@Marches.Marches 0@F126.F126	# Sommet du P30 ? Ca a l'air de coller avec la vieille topo !
-	#input Data/Bricole_Amont/Bricole_Amont-tot.th
-	#	equate VF-27-62@Bricole_Amont.Bricole_Amont VF-27-62@Marches.Marches
-	#input Data/Bricole_Aval/Bricole_Aval-tot.th
-	#	equate 1.73@Bricole_Aval.Bricole_Aval 1.73@Bricole_Amont.Bricole_Amont
-	### END OLD
-
-	# Import du dessin en plan
-	#input Data/F126.th2
-
-	# Import du dessin en coupe
-	#input Data/F126-coupe.th2
 
 	# Import des maps
-	#input F126-maps.th
+	input F126-maps.th
  
  endsurvey
  

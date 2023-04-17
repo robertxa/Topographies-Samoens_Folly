@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 1995 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1995 Ursus - 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -15,11 +15,8 @@ centerline -extend right
 		team "Jean Bottazzi"
 		team "Xavier Julliard"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1989
         explo-team "Groupe Spéléo/Ursus"
-		
 		
 	units length meters
     units compass clino degrees
@@ -181,23 +178,33 @@ centerline
        # Seance 22: -nzoü2
 	   # [note Alex] explo URSUS 22
        date 1995 08 01
-	   team "Vincent Philis"
-	   team "Sylvain Matricon"
-	   team "Laurent Guizard"
-	   
+	    team "Vincent Philis"
+	    team "Sylvain Matricon"
+	    team "Laurent Guizard"
+    explo-date 1995
+	   explo-team "Groupe Spéléo/Ursus"
+       
        #-------------------
        # Code 1: 
     units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down	
+        flags duplicate
+        # Appartient déjà à la topo de la galerie de la Trémie
+        extend left
        s38_32 s60_1 13.20 31.50 24.30  1.50 3.00  2.00 1.00  
        s60_1 s60_2 13.20 59.40 16.20  2.50 1.00  0.60 2.00  
        s60_2 s60_3 13.20 33.30 26.10  5.00 2.00  1.00 1.30  
        s60_3 s60_4 13.20 8.10 36.00  0.50 3.50  2.00 0.50  
+       flags not duplicate
+        #extend right
        s60_4 s60_5 6.42 122.40 -27.90  0.60 0.60  0.30 0.50  
        s60_5 s60_6 8.50 58.50 2.70  0.60 0.50  1.00 0.50  
        s60_6 s60_7 2.73 78.30 -2.70  0.50 0.10  0.50 0.50  
        s60_7 s60_8 4.46 51.30 -2.70  0.70 0.10  1.60 1.00  
+
+       s60_8 s60_8b 25 0 -90  1 1  27 0  # [Ajour par Xav : Visée fictive fond du puits de 25 m sondé et impénétralbe]
+       
        s60_8 s60_9 10.60 37.80 5.40  0.50 0.20  0.60 0.40  
        s60_9 s60_10 9.26 36.00 -1.80  0.40 0.30  0.50 0.40  
        s60_10 s60_11 5.59 36.00 -7.20  1.50 0.30  0.80 1.00  
@@ -208,10 +215,11 @@ centerline
        s60_15 s60_16 5.47 73.80 -24.30  2.20 0.60  0.40 0.10  
        s60_16 s60_17 6.15 93.60 -4.50  0.50 0.50  0.40 0.20  
        s60_17 s60_18 4.39 125.10 -3.60  0.50 0.50  15.00 15.00  # Observ: 10 mètres au dessus du Blanchon
-       s60_18 s37_13 12.00 11.80 -80.00  0.00 0.00  0.00 0.00  # Observ: VISƒE FICTIVE
+       s60_18 s37_13 12.00 11.80 -80.00  0.00 0.00  0.00 0.00  # Observ: VISéE FICTIVE
 	   
+        extend right
 	   s60_6 s61_1 2.39 144.90 -58.50  0.00 0.00  0.00 0.00  
-       s61_1 s61_2 3.74 133.20 -73.80  0.00 0.00  0.00 0.00  
+       s61_1 s61_2 3.74 133.20 -73.80  0.00 0.00  0.00 0.00  # P17
        s61_2 s61_3 15.54 0.00 -90.00  0.00 0.00  0.00 0.00  
        s61_3 s61_4 3.59 180.00 -6.30  0.20 0.40  0.60 1.00  
        s61_4 s61_5 4.53 145.80 -54.00  1.50 1.00  0.70 2.00  

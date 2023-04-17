@@ -108,7 +108,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 0 0 s
+  map-header 0 -40 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
@@ -116,10 +116,10 @@ layout my_layout
   # "legend off" = pas de legende
   legend off
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -131,8 +131,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -147,11 +147,11 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Galerie de la Chauves-Souris} 
+			\cavename={Galerie des Chauves-Souris} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\synth \synth={G.S. Ursus (1998), Alexandre Pont, Xavier Robert (2023)}
 	endcode   
   
  endlayout
@@ -190,15 +190,15 @@ layout layout-coupe
   doc-title "Gouffre de la Chauves-Souris coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  #map-header 0 0 s
+  map-header 0 -40 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
 
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
@@ -220,11 +220,11 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Galerie de la Chauves-Souris} 
+			\cavename={Galerie des Chauves-Souris} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\synth \synth={G.S. Ursus (1998), Alexandre Pont, Xavier Robert (2023)}
 	endcode   
 
  endlayout
@@ -238,25 +238,25 @@ layout layout-coupe
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Chauves-Souris-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Chauves-Souris-plan-tot
-select MC-Chauves-Souris-coupe-tot
+select MP-Chauves-Souris-plan-tot@Chauves-Souris
+select MC-Chauves-Souris-coupe-tot@Chauves-Souris
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/ChauvesSouris-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/ChauvesSouris-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Chauves-Souris-2023.lox
- export model -enable all -o Outputs/Chauves-Souris-2023.plt
+ #export model -enable all -o Outputs/Chauves-Souris-2023.plt
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/Chauves-Souris-2023 -layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Chauves-Souris-2023.kml -layout my_layout
- export model -fmt kml -o Outputs/Chauves-Souris-2023-model.kml -enable all
+ #export model -fmt kml -o Outputs/Chauves-Souris-2023-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité

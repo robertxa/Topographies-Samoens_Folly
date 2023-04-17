@@ -4,18 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Danton -title "Gouffre de la Danton"
+survey Danton -title "Réseau du Puits Danton"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/Danton.th
 	
 	# Import du dessin en plan
-	#input Data/Danton.th2
+	input Data/Danton.th2
 
 	# Import du dessin en coupe
 	#input Data/Danton-coupe.th2
 
 	# Import des maps
-	#input Danton-maps.th
+	input Danton-maps.th
  
  endsurvey
  

@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -9,13 +9,13 @@ survey Jockers -title "Gouffre des Jockers"
 	input Data/Jockers.th
 	
 	# Import du dessin en plan
-	#input Data/Jockers.th2
+	input Data/Jockers.th2
 
 	# Import du dessin en coupe
 	#input Data/Jockers-coupe.th2
 
 	# Import des maps
-	#input Jockers-maps.th
+	input Jockers-maps.th
  
  endsurvey
  

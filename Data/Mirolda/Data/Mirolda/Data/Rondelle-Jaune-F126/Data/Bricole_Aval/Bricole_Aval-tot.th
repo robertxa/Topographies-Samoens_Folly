@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -9,13 +9,13 @@ survey Bricole_Aval -title "Gouffre Mirolda - F126 - Bricole Aval"
 	input Data/Bricole_Aval.th
 	
 	# Import du dessin en plan
-	#input Data/Bricole_Aval.th2
+	input Data/Bricole_Aval.th2
 
 	# Import du dessin en coupe
 	#input Data/Bricole_Aval-coupe.th2
 
 	# Import des maps
-	#input Bricole_Aval-maps.th
+	input Bricole_Aval-maps.th
  
  endsurvey
  

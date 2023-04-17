@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -8,7 +8,7 @@ encoding  utf-8
  
 survey Jonction-VF3 -title "Gouffre de la Rondelle Jaune - F126 - 1000 Jonction-VF3"
 
-centerline -extend right    
+centerline -extend left    
     
 	# Serie: 72 - cote VF3
     #========================
@@ -18,9 +18,7 @@ centerline -extend right
 		team "Laurent Flandrin"
 		team "Jacques Gudefin"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1992
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
@@ -35,7 +33,7 @@ centerline -extend right
 
 endcenterline
 
-centerline -extend right    
+centerline -extend left    
     
 	# Serie: 73   F123 Jonction escalade VF3
     #========================
@@ -45,9 +43,7 @@ centerline -extend right
 		team "Laurent Flandrin"
 		team "Jacques Gudefin"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1998
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
@@ -87,7 +83,7 @@ centerline -extend right
 
 endcenterline
 
-centerline -extend right    
+centerline -extend right   
     
 	# Serie: 74 - 75  
     #========================
@@ -98,9 +94,7 @@ centerline -extend right
 		team "Nicolas Faure"
 		team "Sylvain Matricon"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1992
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
@@ -115,7 +109,7 @@ centerline -extend right
        s74_6 s74_7 9.21 102.60 36.00  0.00 0.00  0.00 0.00  
        s74_7 s74_8 4.70 112.50 18.90  0.00 0.00  0.00 0.00  
        s74_8 s73_20 5.93 121.50 29.70  0.00 0.00  0.00 0.00  # Observ: =611.20
-
+        extend left
        s74_2 s75_1 3.95 207.00 -15.30  0.00 0.00  0.00 0.00  
        s75_1 s75_2 6.68 337.50 73.80  0.00 0.00  0.00 0.00  
        s75_2 s75_3 3.75 342.00 44.10  0.00 0.00  0.00 0.00  
@@ -127,7 +121,9 @@ centerline -extend right
        s75_8 s75_9 6.07 226.80 1.80  0.00 0.00  0.00 0.00  
        s75_9 s75_10 4.58 301.50 51.30  0.00 0.00  0.00 0.00  
        s75_10 s75_11 4.25 247.50 18.00  0.00 0.00  0.00 0.00  
+       
        s75_11 s75_12 6.81 63.00 51.30  0.00 0.00  0.00 0.00  
+       
        s75_12 s75_13 4.03 302.40 3.60  0.00 0.00  0.00 0.00  
        s75_13 s75_14 6.55 294.30 -7.20  0.00 0.00  0.00 0.00  
        s75_14 s75_15 5.32 328.50 -12.60  0.00 0.00  0.00 0.00  
@@ -135,7 +131,7 @@ centerline -extend right
 
 endcenterline
 
-centerline -extend right    
+centerline -extend left    
     
 	# Serie: 76 - 77
     #========================
@@ -146,9 +142,7 @@ centerline -extend right
 		team "Laurent Guizard"
 		team "Jacques Gudefin"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1992
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters

@@ -1,22 +1,16 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-Tremie-plan-tot -title "Gouffre de la Tremie"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
-#endmap
+map MP-Tremie-plan-tot -title "Galerie de la Trémie"
+	SP-Tremie-1
+	break
+	SP-Tremie-2
+endmap
 
-#map MC-Tremie-coupe-tot -title "Gouffre de la Tremie"
+#map MC-Tremie-coupe-tot -title "Galerie de la Trémie"
 #	SC-coupeB3-1
 #	break
 #	SC-B3c2

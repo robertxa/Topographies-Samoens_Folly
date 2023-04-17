@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 1998 Ursus - 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1998 Ursus - 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -18,25 +18,26 @@ centerline -extend right
 		team "Michel Dussurget"
 		team "Gérard Gudefin"
 		
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1992
         explo-team "Groupe Spéléo/Ursus"
 
 	units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down
+       #extend left
        s14_7 s48_1 6.48 348.30 -6.30  0.00 0.00  0.00 0.00  
-       s48_1 s48_2 4.82 67.50 22.50  0.00 0.00  0.00 0.00  
-       s48_2 s48_3 12.79 342.00 60.30  0.00 0.00  0.00 0.00  
-       s48_3 s48_4 6.19 44.10 64.80  0.00 0.00  0.00 0.00  
+       s48_1 s48_2 4.82 67.50 22.50  0.00 0.00  0.00 0.00 
+       extend left 
+       s48_2 s48_3 12.79 342.00 60.30  0.00 0.00  0.00 0.00  # E12
+       s48_3 s48_4 6.19 44.10 64.80  0.00 0.00  0.00 0.00  # E7
        s48_4 s48_5 7.40 64.80 3.60  0.00 0.00  0.00 0.00  
        s48_5 s48_6 4.75 76.50 13.50  0.00 0.00  0.00 0.00  
-       s48_6 s48_7 3.84 0.00 90.00  0.00 0.00  0.00 0.00  
+    s48_6 s48_7 3.84 0.00 90.00  0.00 0.00  0.00 0.00   # P4
        s48_7 s48_8 6.46 18.90 44.10  0.00 0.00  0.00 0.00  
        s48_8 s48_9 5.58 73.80 -7.20  0.00 0.00  0.00 0.00  
        s48_9 s48_10 10.33 56.70 35.10  0.00 0.00  0.00 0.00  
-       s48_10 s48_11 10.46 82.80 42.30  0.00 0.00  0.00 0.00  
+       s48_10 s48_11 10.46 82.80 42.30  0.00 0.00  0.00 0.00
+        extend right  
        s48_11 s48_12 5.33 49.50 -1.80  0.00 0.00  0.00 0.00  
        s48_12 s48_13 6.08 65.70 -5.40  0.00 0.00  0.00 0.00  
        s48_13 s48_14 7.49 63.00 -20.70  0.00 0.00  0.00 0.00  
@@ -49,8 +50,11 @@ centerline -extend right
        s48_20 s48_21 12.70 22.04 -9.00  0.00 0.00  0.00 0.00  
        s48_21 s48_22 9.15 318.60 9.00  0.00 0.00  0.00 0.00 
 
-	   s48_21 s22_1 9.29 261.00 -14.40  0.00 0.00  0.00 0.00  
-       s22_1 s22_2 1.49 0.00 -90.00  0.00 0.00  0.00 0.00  
+	   s48_21 s22_1 9.29 261.00 -14.40  0.00 0.00  0.00 0.00
+            #3.65%   32.4m  889.4m 140   15.7m   -7.4m   27.4m
+       #s48_22 s22_1 9.29 261.00 -14.40  0.00 0.00  0.00 0.00  # Suggéré par Xavier d'après dessin 1998
+            #4.08%   36.7m  898.5m 141   21.6m  -14.2m   26.0m
+       s22_1 s22_2 1.49 0.00 -90.00  0.00 0.00  0.00 0.00  # P2
        s22_2 s22_3 7.83 274.50 -18.00  0.00 0.00  0.00 0.00  
        s22_3 s22_4 5.17 295.20 -1.80  0.00 0.00  0.00 0.00  
        s22_4 s22_5 2.37 329.40 19.80  0.00 0.00  0.00 0.00  
@@ -85,7 +89,7 @@ centerline -extend right
        s22_33 s22_34 8.63 280.80 3.60  0.00 0.00  0.00 0.00  
        s22_34 s22_35 6.71 229.50 27.90  0.00 0.00  0.00 0.00  
        s22_35 s22_36 5.91 223.20 -5.40  0.00 0.00  0.00 0.00  
-       s22_36 s22_37 10.88 0.00 -90.00  0.00 0.00  0.00 0.00  
+       s22_36 s22_37 10.88 0.00 -90.00  0.00 0.00  0.00 0.00  # P11
        s22_37 s22_38 1.00 198.00 0.00  0.00 0.00  0.00 0.00  
        s22_38 s22_39 3.57 189.00 -9.90  0.00 0.00  0.00 0.00  
        s22_39 s22_40 6.58 219.60 -18.00  0.00 0.00  0.00 0.00  
@@ -199,16 +203,14 @@ centerline -extend right
 		team "Michel Dussurget" 
 		team "Laurent Mangel"
 	
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1992
         explo-team "Groupe Spéléo/Ursus"
 		
 	units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down	
 	   s22_44 s23_1 2.69 274.50 10.80  0.00 0.00  0.00 0.00  
-       s23_1 s23_2 5.00 0.00 90.00  0.00 0.00  0.00 0.00  
+       s23_1 s23_2 5.00 0.00 90.00  0.00 0.00  0.00 0.00  # P5
        s23_2 s23_3 1.32 275.40 52.20  0.00 0.00  0.00 0.00  
        s23_3 s23_4 8.96 219.60 -2.70  0.00 0.00  0.00 0.00  
        s23_4 s23_5 6.00 212.40 -27.00  0.00 0.00  0.00 0.00  
@@ -280,7 +282,7 @@ centerline -extend right
 
 endcenterline
 
-centerline -extend right    # [Ajout Alex]
+centerline -extend left    # [Ajout Alex]
     
 	# Serie: 59 - Jonction SadoBozzo Galerie du bivouac 
     #========================
@@ -290,9 +292,7 @@ centerline -extend right    # [Ajout Alex]
 		team "Vincent Vieillerobe"
 		team "Gaëlle Denavit"
 
-    explo-date 1972
-        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
-    explo-date 1978
+    explo-date 1998
         explo-team "Groupe Spéléo/Ursus"
 		
     units length meters
@@ -300,7 +300,7 @@ centerline -extend right    # [Ajout Alex]
 	data normal from to length compass clino right left up down	
 		s23_13	s59_0	0.00	0.0000	0.00	0.00	2.50	0.30	0.60		#=23.13
 		s59_0	s59_1	5.79	332.10	0.0000	3.00	2.00	23.00	0.10		
-		s59_1	s59_2	21.56	227.70	76.500	1.50	0.00	22.00	1.10		#puits sur spit
+		s59_1	s59_2	21.56	227.70	76.500	1.50	0.00	22.00	1.10		# puits sur spit (P22)
 		s59_2	s59_3	3.53	214.20	25.200	0.50	0.60	0.50	0.20		
 		s59_3	s59_4	5.17	230.40	37.800	0.70	0.20	4.00	2.00		
 		s59_4	s59_5	4.00	213.30	3.6000	2.50	1.50	1.50	0.50		
@@ -313,7 +313,7 @@ centerline -extend right    # [Ajout Alex]
 		s59_11	s59_12	5.45	117.00	-2.700	0.40	0.40	0.40	0.40		
 		s59_12	s59_13	3.23	153.00	-21.60	0.50	0.50	0.40	0.40		
 		s59_13	s59_14	3.67	119.70	-6.300	0.40	0.40	0.40	4.00		
-		s59_14	s59_15	2.35	0.0000	-90.00	0.40	0.30	7.00	0.20		
+		s59_14	s59_15	2.35	0.0000	-90.00	0.40	0.30	7.00	0.20		# P3
 		s59_15	s59_16	3.28	126.00	0.0000	0.40	0.40	0.10	0.40		
 		s59_16	s59_17	8.31	99.000	17.100	0.30	0.30	0.30	0.30		
 		s59_17	s59_18	4.02	99.000	6.3000	5.00	5.00	0.40	0.80		

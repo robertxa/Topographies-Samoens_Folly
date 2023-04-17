@@ -1,0 +1,48 @@
+encoding utf-8
+
+survey VF46
+
+centerline -extend right    #[Note Alex: A raccorder VF46]
+    
+    date 1991 08
+        team "Cédric Felices"
+        team "Jean Bottazzi"
+    explo-date 1991
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#		0	0	-90	# VF46 - DEPART GALERIE CHAUVE SOURIS
+# Départ entre les stations entre les points 33_5 et 33_10 (VF33, réseau de la Falaise)
+s46_0	s46_1	8.13	219	72.5	# Départ ????? [Note Alex: raccord NOK a voir ???sur VF3-15-16]
+s46_1	s46_2	3.02	202	30	# P25
+s46_2	s46_3	14.12	46	79	
+s46_3	s46_4	1.37	281	7	
+s46_4	s46_5	4.33	280	10	
+s46_5	s46_6	1.46	10	7	
+s46_6	s46_7	3.96	312	-35	
+s46_7	s46_8	27.49	270	85	
+s46_8	s46_9	19.56	190	85	
+s46_9	s46_10	11.02	164	40	
+s46_10	s46_11	4.01	135	35	
+s46_11	s46_12	4.06	238	5	
+s46_12	s46_13	7.13	181	48	
+s46_13	s46_14	4.33	217	16	
+#		0	0	-90	# NOUVEAU COMPTEUR
+s46_14	s46_15	10.82	207	25	
+s46_15	s46_16	5.89	208	60	
+s46_16	s46_17	4.54	292	24	
+s46_17	s46_18	3.62	261	31	
+#		0	0	-90	# NOUVEAU COMPTEUR
+s46_18	s46_19	4.61	277	26	
+s46_19	s46_20	2.57	272	18	
+s46_20	s46_21	4.48	228	30	
+s46_21	s46_22	3.55	245	34	
+s46_22	s46_23	4.19	188	40	
+s46_23	s46_24	2.6	249	9	
+s46_24	s46_25	2.61	186	24	
+s46_25	s46_26	4.37	210	33	
+endcenterline
+
+endsurvey

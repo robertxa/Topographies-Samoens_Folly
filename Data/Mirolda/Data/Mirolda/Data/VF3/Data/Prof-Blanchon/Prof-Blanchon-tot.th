@@ -4,18 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Prof-Blanchon -title "Gouffre de la Prof-Blanchon"
+survey Prof-Blanchon -title "Galerie du Prof Blanchon"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/Prof-Blanchon.th
 	
 	# Import du dessin en plan
-	#input Data/Prof-Blanchon.th2
+	input Data/Prof-Blanchon.th2
 
 	# Import du dessin en coupe
 	#input Data/Prof-Blanchon-coupe.th2
 
 	# Import des maps
-	#input Prof-Blanchon-maps.th
+	input Prof-Blanchon-maps.th
  
  endsurvey
  

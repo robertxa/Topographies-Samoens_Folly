@@ -4,19 +4,20 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-Hongroise-plan-tot -title "Gouffre de la Hongroise"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
-#endmap
+map MP-Hongroise-plan-tot -title "Galerie Hongroise"
+	SP-Hongroise-5
+    break
+    SP-Hongroise-2
+    break
+    SP-Hongroise-3
+    break
+    SP-Hongroise-4
+    break
+    SP-Hongroise-1
 
-#map MC-Hongroise-coupe-tot -title "Gouffre de la Hongroise"
+endmap
+
+#map MC-Hongroise-coupe-tot -title "Galerie Hongroise"
 #	SC-coupeB3-1
 #	break
 #	SC-B3c2

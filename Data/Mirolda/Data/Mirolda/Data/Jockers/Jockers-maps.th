@@ -1,20 +1,88 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-Jockers-plan-tot -title "Gouffre des Jockers"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
-#endmap
+map MP-Jockers-sup -title "Gouffre des Jockers"
+    SP-Jockers-1
+	break
+	SP-Jockers-2
+	break
+	SP-Jockers-3
+	break
+	SP-Jockers-4
+    break
+    SP-Gelifract-2
+    break
+    SP-Gelifract-1
+    break
+	SP-Jockers-5
+    break
+    SP-Hope-1
+endmap
+
+map MP-Jockers-milieu -title "Gouffre des Jockers"
+	SP-Jockers-5b
+    break
+    SP-Cairn-1
+    break
+	SP-Jockers-6
+    break
+    SP-Jockers-7b
+endmap
+
+map MP-Jockers-inf -title "Gouffre des Jockers"
+    SP-Jockers-7
+    break
+	SP-Jockers-8
+    break
+	SP-Jockers-9
+endmap
+
+map MP-Jockers-Hongroise
+    SP-Jockers-Hongroise-1
+endmap
+
+map MP-Jockers-plan-tot -title "Gouffre des Jockers"
+	MP-Jockers-sup
+    break
+    MP-Jockers-milieu
+    break
+    MP-Jockers-inf
+    break
+    MP-Jockers-Hongroise # Attention, doublon avec la galerie Hongroise
+
+    #SP-Jockers-1
+	#break
+	#SP-Jockers-2
+	#break
+	#SP-Jockers-3
+	#break
+	#SP-Jockers-4
+    #break
+    #SP-Gelifract-2
+    #break
+    #SP-Gelifract-1
+	#break
+	#SP-Jockers-5
+    #break
+	#SP-Jockers-5b
+    #break
+    #SP-Cairn-1
+    #break
+    #SP-Hope-1
+    #break
+	#SP-Jockers-6
+    #break
+	#SP-Jockers-7b
+    #break
+	#SP-Jockers-7
+    #break
+	#SP-Jockers-8
+    #break
+	#SP-Jockers-9
+endmap
 
 #map MC-Jockers-coupe-tot -title "Gouffre des Jockers"
 #	SC-coupeB3-1

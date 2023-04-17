@@ -1,20 +1,20 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-F126-plan-tot -title "Gouffre de la Rondelle Jaune - F126"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
-#endmap
+map MP-F126-plan-tot -title "Gouffre de la Rondelle Jaune - F126"
+	MP-F126-plan-tot@F126
+	break
+    MP-Jonction-VF3-plan-tot@Jonction-VF3
+	break
+	MP-Marches-plan-tot@Marches
+	break
+	MP-Bricole_Amont-plan-tot@Bricole_Amont
+	break
+	MP-Bricole_Aval-plan-tot@Bricole_Aval
+endmap
 
 #map MC-F126-coupe-tot -title "Gouffre de la Rondelle Jaune - F126"
 #	SC-coupeB3-1

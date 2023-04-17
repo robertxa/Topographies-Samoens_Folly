@@ -4,19 +4,32 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Mirolda-plan-tot -title "Gouffre Mirolda"
-#	SP-B3-1
-#	break
-	MP-CD11-plan-tot@CD11
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
+map MP-Amonts-Mirolda-plan -title "Réseau Lucien Bouclier : Jockers, VF3 & F126"
+	# Plan du VF3, partie supérieure
+	MP-VF3-sup@VF3
+	break
+	# Plan des Jockers
+	MP-Jockers-sup@Jockers
+    break
+    MP-Jockers-milieu@Jockers [-20 50 m] below # déplace le dessin topographié de 50 m vers le N et 20 m vers l'ouest pour faciliter la lecture de la topographie
+    break
+    MP-Jockers-inf@Jockers
+	break
+	# Plan du F126
+	MP-F126-plan-tot@F126
+	break
+	# Plan du VF3, partie inférieure
+	MP-VF3-inf@VF3
 endmap
 
-#map MC-Mirolda-coupe-tot -title "Gouffre Mirolda"
+map MP-Mirolda-plan-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
+	MP-Amonts-Mirolda-plan
+	break
+	MP-CD11-plan-tot@CD11
+endmap
+
+
+#map MC-Mirolda-coupe-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
 #	SC-coupeB3-1
 #	break
 #	SC-B3c2
