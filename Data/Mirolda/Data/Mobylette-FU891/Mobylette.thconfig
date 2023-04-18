@@ -116,10 +116,10 @@ layout my_layout
   # "legend off" = pas de legende
   legend off
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "<i>Plan - <ss>Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
 
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -131,8 +131,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -151,7 +151,7 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		#\newtoks\club \club={Collectif Criou 2022}
-    \newtoks\club \club={G.S. Ursus}
+    \newtoks\club \club={URSUS}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -198,7 +198,7 @@ layout layout-coupe
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
 
@@ -226,7 +226,7 @@ layout layout-coupe
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		#\newtoks\club \club={Collectif Criou 0222}
-    \newtoks\club \club={G.S. Ursus}
+    \newtoks\club \club={URSUS}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -259,26 +259,26 @@ select MC-Mobylette-coupe-tot@Mobylette
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  #export map -proj plan -fmt xhtml -o Outputs/Mobylette-plan.xhtml -layout my_layout
  export map -proj plan -fmt pdf -o Outputs/Mobylette-plan.pdf -layout my_layout
- #export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Mobylette-coupe.pdf
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Mobylette-coupe.pdf
 #export atlas -o Outputs/Mobylette-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Mobylette-2022.lox
+ export model -enable all -o Outputs/Mobylette.lox
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/Mobylette-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Mobylette.kml -layout layout-kml
+ export map -proj plan -fmt kml -o Outputs/Mobylette.kml -layout layout-kml
  export model -fmt kml -o Outputs/Mobylette-2022-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseMobylette-2022.sql
+#export database -fmt sql -o Outputs/databaseMobylette-2022.sql
 
 export continuation-list -o Outputs/ContinuationsMobylette-2022.html
 #export continuation-list -o Outputs/ContinuationsMobylette-2022.kml
-export survey-list -location on -o Outputs/SurveysMobylette2022.html
+#export survey-list -location on -o Outputs/SurveysMobylette2022.html
 #export cave-list -location on -o Outputs/CavesMobylette2022.html

@@ -36,10 +36,6 @@ encoding  utf-8
 #source Data/DEM_10m-UTM32-Criou.th
 source Data/DEM_10m-L93-Criou.th
 
-# DEM
- #source dem_Samoens.th
-  #source ../../Samoens-GIS/dem/samoens.th
-
 # source JB/jb-atlas.th
  source Mirolda.th
  #source zone-A/A.th
@@ -201,7 +197,7 @@ layout my_layout
 		\fi
 		\newtoks\club \club={URSUS, Collectif Criou}
 		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
-    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession ! QUI METTRE D'AUTRE ?}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
   
  endlayout
@@ -338,7 +334,7 @@ layout atlas_layout
 		\fi
 		\newtoks\club \club={URSUS, Collectif Criou}
 		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
-    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession ! QUI METTRE D'AUTRE ?}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
 
  endlayout
@@ -349,8 +345,8 @@ layout atlas_layout
 
 # 3-EXPORT
 
-select MP-Criou-plan-tot
-select MC-Criou-coupe-tot
+select MP-Criou@SystemMirolda
+#select MC-Criou-coupe-tot@SystemMirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
@@ -359,10 +355,11 @@ select MC-Criou-coupe-tot
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Criou-2022.lox
+ export model -enable all -o Outputs/Criou-2023.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Criou-2022 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/Criou -layout my_layout
+ export model -fmt esri -o Outputs/Criou
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Criou-2022.kml -layout my_layout

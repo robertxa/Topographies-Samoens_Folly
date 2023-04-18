@@ -1,0 +1,256 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -170.0 -219.0 402.5 334.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {118.1089 1 1.0} {125.983 FU891} Mobylette-map.xvi 0 {}
+
+
+
+scrap SP-Mobylette-1 -projection plan -station-names "" "@Mobylette" -author 1994 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+line wall
+  66.0 82.0
+  66.0 82.0 70.5 58.25 70.5 53.25
+  70.5 48.25 70.0 41.25 70.75 37.5
+  71.5 33.75 74.25 32.5 75.0 32.75
+  75.75 33.0 79.75 32.75 79.75 35.0
+  79.75 37.25 79.5 40.5 82.0 39.75
+  84.5 39.0 85.75 37.5 86.0 36.75
+  86.25 36.0 89.75 34.5 91.25 35.0
+  92.75 35.5 90.0 40.75 94.0 39.75
+endline
+
+line wall -subtype pit
+  57.75 106.5
+  57.75 106.5 64.75 109.5 65.75 103.25
+  66.75 97.0 65.25 86.5 66.0 82.0
+endline
+
+line wall
+  42.25 162.75
+  42.25 162.75 42.5 143.0 42.75 136.5
+  43.0 130.0 41.0 95.5 40.75 90.75
+  40.5 86.0 42.5 76.0 44.25 73.0
+  46.0 70.0 49.75 73.5 51.75 79.75
+  53.75 86.0 53.0 96.75 54.25 99.5
+  55.5 102.25 57.75 106.5 57.75 106.5
+  smooth off
+endline
+
+line wall -subtype pit
+  102.75 187.25
+  102.75 187.25 94.75 193.75 87.5 194.25
+  80.25 194.75 73.0 190.75 69.5 190.5
+  66.0 190.25 52.25 191.0 44.0 188.5
+  35.75 186.0 34.25 177.5 36.25 172.5
+  38.25 167.5 40.75 165.0 42.25 162.75
+endline
+
+line wall
+  130.75 123.5
+  130.75 123.5 123.75 121.5 123.5 126.25
+  123.25 131.0 126.0 157.5 125.75 164.5
+  125.5 171.5 127.75 173.25 123.0 176.75
+  118.25 180.25 105.5 186.25 102.75 187.25
+endline
+
+line wall -subtype invisible
+  107.75 126.0
+  107.75 126.0 113.5 121.0 119.25 121.25
+  125.0 121.5 128.75 119.75 130.75 123.5
+endline
+
+line wall
+  96.0 173.5
+  96.0 173.5 112.0 167.5 116.5 167.25
+  121.0 167.0 119.25 161.75 118.25 151.75
+  117.25 141.75 118.25 128.75 115.75 127.5
+  113.25 126.25 107.75 126.0 107.75 126.0
+  smooth off
+endline
+
+line wall -subtype pit
+  53.75 162.5
+  53.75 162.5 56.25 166.25 59.0 169.0
+  61.75 171.75 59.75 177.75 67.5 177.0
+  75.25 176.25 75.0 172.0 81.0 172.0
+  87.0 172.0 92.75 171.5 96.0 173.5
+endline
+
+line wall
+  56.0 120.75
+  56.0 120.75 54.75 127.5 53.25 135.75
+  51.75 144.0 53.0 158.75 53.75 162.5
+endline
+
+line wall -subtype pit
+  84.0 82.25
+  84.0 82.25 94.0 110.0 89.0 116.0
+  84.0 122.0 73.5 127.5 65.25 128.0
+  57.0 128.5 58.75 122.5 56.0 120.75
+endline
+
+line wall
+  84.5 62.25
+  84.0 82.25
+endline
+
+line wall
+  86.5 48.0
+  86.5 48.0 81.75 46.5 81.25 48.5
+  80.75 50.5 80.5 53.5 80.5 55.75
+  80.5 58.0 82.0 59.5 82.0 59.5
+  smooth off
+endline
+
+line wall
+  82.0 59.5
+  82.0 59.5 84.25 54.25 85.0 52.75
+  85.75 51.25 86.5 48.0 86.5 48.0
+  smooth off
+endline
+
+line wall
+  90.75 47.5
+  90.75 47.5 89.25 51.75 87.75 54.25
+  86.25 56.75 84.5 59.5 84.5 62.25
+endline
+
+line wall -subtype pit
+  114.25 52.5
+  114.25 52.5 109.5 53.0 102.75 52.0
+  96.0 51.0 94.25 47.5 90.75 47.5
+endline
+
+point 271.75 125.5 label -text "<bf><center>g. de la<br>Mobylette<br>(FU891)" -scale xl
+
+point 189.5 49.0 air-draught -orientation 277.5 -scale s -subtype summer
+
+point 119.0 103.25 entrance -orientation 0.0
+
+point -16.25 80.75 label -text "etr. vert."
+
+point -39.5 121.5 label -text "<center>puits du<br>Pendule"
+
+point -4.0 27.25 label -text "<center>puits de<br>la Courante"
+
+point 169.0 21.5 label -text "imp."
+
+point 130.75 123.5 altitude -align top-right
+
+line arrow
+  112.0 13.5
+  129.5 -23.0
+endline
+
+point 119.75 -88.25 label -text "<center>vers m. aux 1000 et une concrétions<br>et méandre Heu-Heu"
+
+line wall
+  142.5 55.5
+  altitude .
+  142.5 55.5 134.5 57.5 128.75 56.25
+  123.0 55.0 116.5 53.0 114.25 52.5
+endline
+
+line wall
+  118.75 46.25
+  118.75 46.25 125.25 52.25 130.5 53.0
+  135.75 53.75 142.75 51.5 142.75 51.5
+  smooth off
+endline
+
+line pit
+  113.0 36.75
+  113.0 36.75 99.5 43.75 99.5 54.5
+endline
+
+point 133.75 31.25 height -value [-44 m]
+
+point 75.0 22.0 height -value [-34 m]
+
+point 16.75 155.5 height -value [-62 m]
+
+point 35.75 203.75 height -value [-22 m]
+
+line pit
+  94.75 170.75
+  94.75 170.75 102.25 183.75 101.75 191.5
+endline
+
+line pit
+  56.0 157.0
+  56.0 157.0 45.5 161.25 40.75 155.5
+endline
+
+line pit
+  97.75 22.5
+  97.75 22.5 114.5 21.5 114.75 27.25
+endline
+
+line pit
+  94.25 51.75
+  94.25 51.75 90.5 47.5 92.75 37.5
+endline
+
+line pit
+  58.25 127.0
+  58.25 127.0 54.5 113.0 58.5 101.75
+endline
+
+line wall -subtype pit
+  112.5 25.25
+  112.5 25.25 106.5 38.0 111.0 39.5
+  115.5 41.0 115.25 43.0 118.75 46.25
+endline
+
+line wall
+  118.0 18.25
+  112.5 25.25
+endline
+
+line wall
+  103.0 23.5
+  103.0 23.5 105.0 18.5 105.25 17.0
+endline
+
+line wall -subtype pit
+  94.0 39.75
+  94.0 39.75 95.25 31.75 97.75 28.0
+  100.25 24.25 103.0 23.5 103.0 23.5
+  smooth off
+endline
+
+point 113.8989 49.26299999999999 station -name 16
+
+point 114.1789 44.663 station -name 15
+
+point 79.30890000000001 46.423 station -name 14
+
+point 78.22890000000001 49.973 station -name 13
+
+point 78.8889 62.852999999999994 station -name 12
+
+point 83.0789 113.813 station -name 11
+
+point 63.9089 121.133 station -name 10
+
+point 44.0489 88.983 station -name 9
+
+point 48.398900000000005 84.173 station -name 8
+
+point 50.76890000000001 98.803 station -name 7
+
+point 49.898900000000005 170.613 station -name 6
+
+point 67.83890000000001 184.88299999999998 station -name 4
+
+point 82.9889 180.94299999999998 station -name 3
+
+point 99.5489 180.623 station -name 2
+
+point 122.44890000000001 170.19299999999998 station -name 1
+
+point 118.1089 125.983 station -name FU891
+
+endscrap
+
+

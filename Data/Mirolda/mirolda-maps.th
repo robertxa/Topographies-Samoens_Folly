@@ -1,15 +1,12 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map JB-rev
-#		Voltigeurs-amonts
-#	break
-#		voltigeurs
-#		preview below JB-amonts
-#endmap
-map MP-Criou -title "Système des Avoudrues"
+map MP-Criou -title "Système du Criou"
+	MP-Mobylette-plan-tot@Mobylette
+	break
 	MP-Mirolda-plan-tot@Mirolda
 endmap
+
