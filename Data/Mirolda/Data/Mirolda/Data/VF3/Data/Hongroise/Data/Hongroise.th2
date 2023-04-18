@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 2883.907 1230.3628
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -129.5 -129.5 2883.907 1230.3628
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {2204.7200000000003 1 1.0} {472.44100000000003 s11_0} Hongroise-map.xvi 0 {}
 
 
@@ -88,6 +88,23 @@ line wall -outline in
   634.0 437.0 653.75 440.75 653.75 440.75
   smooth off
 endline
+
+point 770.0 238.0 label -text "temp."
+
+area sump
+  l173-773-282
+endarea
+
+line label -id l173-773-282 -close on
+  783.0 268.0
+  783.0 270.5 783.0 281.5 772.0 281.5
+  761.0 281.5 754.0 264.0 764.0 264.0
+  774.0 264.0 783.0 265.5 783.0 268.0
+endline
+
+point 894.0 327.0 bones
+
+point 836.5 357.0 bones
 
 line wall -outline in
   840.25 391.5
@@ -353,6 +370,38 @@ line wall
   993.5 463.0 964.0 437.0 955.0 433.0
   946.0 429.0 938.0 417.5 938.0 417.5
   smooth off
+endline
+
+line pit -reverse on
+  1286.0 763.5
+  1286.0 763.5 1274.5 767.0 1267.5 770.5
+endline
+
+point 993.5 431.0 helictites
+
+point 1004.5 501.0 helictites
+
+point 1097.5 577.0 helictites
+
+point 1158.5 587.0 helictites
+
+point 1092.5 512.5 air-draught -orientation 226.3 -scale s -subtype summer
+
+point 1195.5 728.0 traverse
+
+line pit
+  1256.5 744.5
+  1256.5 744.5 1256.0 736.0 1273.5 735.0
+endline
+
+line pit
+  1280.0 748.0
+  1280.0 748.0 1266.0 756.0 1260.0 752.0
+endline
+
+line pit
+  1293.0 775.5
+  1293.0 775.5 1275.0 786.0 1270.0 777.0
 endline
 
 line wall -subtype pit

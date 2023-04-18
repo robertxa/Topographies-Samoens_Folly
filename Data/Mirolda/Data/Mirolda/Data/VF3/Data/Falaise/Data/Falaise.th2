@@ -39,7 +39,7 @@ line wall -close on -outline in
   smooth off
 endline
 
-line wall
+line wall -subtype blocks
   969.5 642.5
   969.5 642.5 959.5 615.25 958.0 607.5
   956.5 599.75 947.0 578.0 942.0 577.75
@@ -88,8 +88,12 @@ endline
 
 line wall
   832.5 522.0
-  832.5 522.0 849.25 534.25 861.5 534.75
-  873.75 535.25 943.5 537.75 948.75 542.25
+  832.5 522.0 849.25 535.0 861.5 535.5
+endline
+
+line wall -subtype blocks
+  861.5 535.5
+  873.75 536.0 943.5 537.75 948.75 542.25
   954.0 546.75 963.5 555.75 961.25 564.0
   959.0 572.25 962.5 586.25 963.75 592.25
   965.0 598.25 983.0 620.0 983.75 622.75
@@ -152,13 +156,17 @@ line pit -close on
   smooth off
 endline
 
-line wall
+line wall -subtype blocks
   945.75 632.75
   altitude .
   945.75 632.75 946.25 627.25 939.75 625.0
   933.25 622.75 908.0 620.5 902.25 612.5
   896.5 604.5 886.75 602.5 882.5 591.0
   878.25 579.5 880.25 568.25 876.75 565.25
+endline
+
+line wall
+  876.75 565.25
   873.25 562.25 861.0 546.25 853.0 548.75
   845.0 551.25 795.0 579.0 786.5 584.75
   778.0 590.5 759.25 614.5 752.0 623.25
@@ -308,7 +316,15 @@ endline
 
 point 802.75 356.25 air-draught -orientation 112.5 -subtype summer -scale s
 
-point 1052.0 225.5 height -value [+? m]
+line pit -clip off
+  1059.75 189.25
+  1059.75 189.25 1056.0 178.25 1048.5 165.25
+  1041.0 152.25 1034.0 147.5 1027.25 139.75
+  1020.5 132.0 1010.75 129.75 1010.75 129.75
+  smooth off
+endline
+
+point 1052.0 225.5 height -value [-? m]
 
 line wall -subtype pit
   1029.5 197.75
@@ -335,9 +351,9 @@ point 1157.75 124.75 label -text "<center><bf>Entrée de<br>la Falaise" -scale x
 
 point 1010.75 129.75 altitude -align bottom
 
-point 1061.5 156.0 entrance -orientation 308.1
+point 1064.0 153.75 entrance -orientation 308.1
 
-point 1041.75 138.0 entrance -orientation 308.1
+point 1045.25 134.75 entrance -orientation 308.1
 
 line wall -subtype pit -clip off -outline none
   1022.5 147.25
@@ -369,6 +385,21 @@ line wall
   1026.25 175.25 1024.0 161.0 1023.25 155.75
   1022.5 150.5 1022.5 147.25 1022.5 147.25
   smooth off
+endline
+
+line pit
+  998.25 202.0
+  998.25 202.0 1009.75 203.75 1015.25 202.75
+  1020.75 201.75 1029.5 198.75 1034.0 196.75
+endline
+
+point 808.25 498.75 breakdown-choke -orientation 26.3
+
+point 811.75 508.0 breakdown-choke -orientation 26.3
+
+line pit -reverse on
+  978.5 231.0
+  978.5 231.0 966.5 225.75 961.25 236.5
 endline
 
 line wall
@@ -449,6 +480,20 @@ line wall
   smooth off
 endline
 
+point 648.5 589.0 breakdown-choke -orientation 41.9
+
+point 650.25 540.25 dig
+
+point 448.25 806.75 dig
+
+point 109.0 824.25 label -text "colm."
+
+point 143.0 881.25 clay
+
+point 139.75 870.75 clay
+
+point 137.25 860.75 clay
+
 line wall
   287.5 958.75
   282.5 961.0 284.25 970.0 276.0 969.0
@@ -502,6 +547,12 @@ line wall -subtype unsurveyed
   695.75 588.25 692.25 593.0 691.0 599.0
   689.75 605.0 687.25 609.25 687.25 609.25
   smooth off
+endline
+
+line pit
+  687.25 587.0
+  687.25 587.0 687.75 576.0 692.75 576.75
+  697.75 577.5 699.75 584.25 700.0 589.5
 endline
 
 line wall

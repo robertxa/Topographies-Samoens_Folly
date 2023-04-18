@@ -47,6 +47,13 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
+point 41.0 102.5 height -value [-? m]
+
+line pit -reverse on
+  81.25 132.0
+  81.25 132.0 88.5 135.5 87.0 123.25
+endline
+
 line wall
   121.75 152.5
   121.75 152.5 107.0 143.75 102.0 141.0
@@ -71,18 +78,21 @@ endline
 line slope
   114.0 120.5
   114.0 120.5 106.0 111.25 94.75 111.75
+  smooth off
   l-size 3.0
 endline
 
 line slope
   120.25 109.0
   120.25 109.0 114.0 99.0 103.25 97.25
+  smooth off
   l-size 3.0
 endline
 
 line slope
   126.5 98.5
   126.5 98.5 127.5 82.5 112.25 83.75
+  smooth off
   l-size 3.0
 endline
 
@@ -196,6 +206,7 @@ scrap SP-Discovery-3 -projection plan -station-names "" "@DDiscovery" -author 19
 line wall
   150.75 172.25
   150.75 172.25 126.75 156.0 121.75 152.5
+  smooth off
 endline
 
 line wall -subtype pit
@@ -203,6 +214,7 @@ line wall -subtype pit
   226.25 217.5 206.75 210.0 200.5 203.5
   194.25 197.0 186.75 193.25 177.0 186.5
   167.25 179.75 153.25 175.0 150.75 172.25
+  smooth off
 endline
 
 line wall
@@ -213,7 +225,7 @@ line wall
   smooth off
 endline
 
-point 419.75 302.5 height -value [-40 m]
+point 371.75 258.5 height -value [-40 m]
 
 line wall -subtype pit
   336.0 289.75
@@ -232,6 +244,7 @@ line wall
   231.25 211.0 238.25 219.5 246.5 225.0
   254.75 230.5 295.25 257.0 301.25 261.25
   307.25 265.5 332.5 288.0 336.0 289.75
+  smooth off
 endline
 
 point 176.25 222.25 traverse
@@ -241,11 +254,13 @@ line wall -subtype pit
   157.25 159.5 167.25 159.5 177.75 165.5
   188.25 171.5 199.25 179.75 207.75 186.75
   216.25 193.75 228.75 207.0 231.25 211.0
+  smooth off
 endline
 
 line wall
   128.0 144.75
   128.0 144.75 153.5 157.0 157.25 159.5
+  smooth off
 endline
 
 point 397.677 330.369 station -name s41_11
@@ -275,11 +290,13 @@ scrap SP-Discovery-4 -projection plan -station-names "" "@DDiscovery" -author 19
 line wall -subtype invisible
   367.75 309.75
   367.75 309.75 396.75 328.5 399.0 331.75
+  smooth off
 endline
 
 line pit
   392.0 330.0
   392.0 330.0 374.0 319.25 367.75 309.75
+  smooth off
 endline
 
 line wall
@@ -294,6 +311,7 @@ endline
 line wall
   344.5 312.25
   344.5 312.25 365.25 309.75 367.75 309.75
+  smooth off
 endline
 
 point 326.507 316.48900000000003 station -name s40_51

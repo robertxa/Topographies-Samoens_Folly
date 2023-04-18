@@ -10,14 +10,34 @@ scrap SP-VF3-1 -projection plan -station-names "" "@VF3" -author 1998 "URSUS" -a
 line wall
   482.75 321.5
   482.75 321.5 485.25 324.25 487.5 324.25
+  smooth off
 endline
 
 line wall
   484.25 327.75
   484.25 327.75 482.25 324.75 480.25 322.75
+  smooth off
 endline
 
-line wall
+line wall -subtype unsurveyed
+  480.25 322.75
+  480.25 322.75 452.75 296.75 445.25 289.25
+  437.75 281.75 429.5 278.25 417.5 266.25
+  405.5 254.25 398.0 248.0 389.0 234.25
+  380.0 220.5 380.5 219.5 374.5 207.5
+  368.5 195.5 362.5 187.75 362.5 187.75
+  smooth off
+endline
+
+line wall -subtype unsurveyed -outline in
+  366.0 186.75
+  366.0 186.75 382.25 219.0 394.75 234.75
+  407.25 250.5 425.5 268.75 441.0 279.0
+  456.5 289.25 482.75 321.5 482.75 321.5
+  smooth off
+endline
+
+line wall -outline in
   487.5 324.25
   487.5 324.25 495.25 317.25 497.75 312.75
   500.25 308.25 506.5 304.75 500.75 294.0
@@ -34,7 +54,8 @@ line wall
   391.75 170.75 389.25 169.25 388.75 170.75
   388.25 172.25 392.0 174.75 388.25 176.25
   384.5 177.75 381.75 184.5 377.25 184.25
-  372.75 184.0 366.25 187.25 362.5 187.75
+  372.75 184.0 369.75 186.25 366.0 186.75
+  smooth off
 endline
 
 line wall -subtype pit
@@ -51,6 +72,7 @@ line wall -subtype pit
   449.25 344.25 450.75 343.5 455.25 337.5
   459.75 331.5 464.75 326.75 470.0 326.5
   475.25 326.25 481.25 330.25 484.25 327.75
+  smooth off
 endline
 
 line wall
@@ -59,6 +81,7 @@ line wall
   497.75 390.25 498.75 383.5 495.75 382.75
   492.75 382.0 489.0 383.75 485.75 377.5
   482.5 371.25 480.0 359.0 475.0 356.75
+  smooth off
 endline
 
 point 433.0 368.75 height -value [-40 m]
@@ -99,6 +122,7 @@ line wall
   487.5 371.25 486.0 374.75 491.5 377.25
   497.0 379.75 503.5 383.75 503.0 386.0
   502.5 388.25 500.0 396.25 505.25 404.5
+  smooth off
 endline
 
 point 411.5 205.0 label -text "etr."
@@ -110,11 +134,13 @@ point 536.0 276.25 height -value [-4.5 m]
 line pit
   511.5 276.25
   511.5 276.25 496.75 280.5 491.5 272.5
+  smooth off
 endline
 
 line pit
   520.5 296.5
   520.5 296.5 510.25 308.75 499.25 296.5
+  smooth off
 endline
 
 point 538.25 302.75 height -value [-5 m]
@@ -124,30 +150,35 @@ point 527.0 324.0 height -value [-9 m]
 line pit
   507.0 319.75
   507.0 319.75 495.5 322.5 493.25 311.25
+  smooth off
 endline
 
 line pit
   487.25 355.0
   487.25 355.0 476.0 349.75 475.25 360.0
+  smooth off
 endline
 
 line pit
   533.5 436.5
   533.5 436.5 528.25 453.25 515.5 446.25
+  smooth off
 endline
 
 line wall -subtype pit
   493.75 334.0
   493.75 334.0 488.0 334.5 488.0 340.5
   488.0 346.5 487.5 346.75 487.0 351.75
+  smooth off
 endline
 
 line wall -subtype pit
   349.0 179.5
   349.0 179.5 352.25 183.0 361.0 178.25
+  smooth off
 endline
 
-point 362.75 151.75 height
+point 362.75 151.75 height -value [-10 m]
 
 line wall
   361.0 178.25
@@ -248,16 +279,19 @@ line wall
   351.75 186.25
   351.75 186.25 339.0 188.0 333.0 183.25
   327.0 178.5 323.0 157.5 316.75 157.25
+  smooth off
 endline
 
 line wall -subtype pit
   316.75 157.25
   310.5 157.0 306.25 163.5 305.5 152.5
+  smooth off
 endline
 
 line wall -subtype pit
   305.5 152.5
   304.75 141.5 305.38 119.85 312.75 107.75
+  smooth off
 endline
 
 line wall
@@ -267,19 +301,24 @@ line wall
   313.25 83.75 303.5 87.25 294.5 90.25
   285.5 93.25 240.5 109.25 227.5 111.25
   214.5 113.25 175.75 109.25 165.5 108.5
+  smooth off
 endline
 
 line wall -subtype pit
   165.5 108.5
   155.25 107.75 136.25 114.25 128.5 107.0
   120.75 99.75 98.25 82.75 96.25 75.25
+  smooth off
   altitude .
 endline
 
+point 74.25 52.0 label -text "<center>etr. dans<br>l'Hauterivien"
+
 line wall -subtype pit
-  99.0 71.0
-  99.0 71.0 105.25 77.75 114.25 83.0
+  98.25 72.5
+  98.25 72.5 105.25 77.75 114.25 83.0
   123.25 88.25 141.0 96.25 164.0 100.5
+  smooth off
 endline
 
 point 276.5 145.0 height -value [-40 m]
@@ -295,21 +334,25 @@ point 121.0 129.5 height -value [-11 m]
 line pit
   150.5 90.0
   150.5 90.0 175.0 105.25 163.25 112.0
+  smooth off
 endline
 
 line pit
   217.25 93.75
   217.25 93.75 228.25 106.25 222.0 115.25
+  smooth off
 endline
 
 line pit
   335.0 78.0
   335.0 78.0 327.75 88.5 319.0 89.5
+  smooth off
 endline
 
 line pit
   331.5 106.0
   331.5 106.0 315.25 106.0 314.0 99.0
+  smooth off
 endline
 
 line pit
@@ -325,18 +368,21 @@ line wall
   286.5 84.0 308.75 71.5 318.5 75.5
   328.25 79.5 336.75 81.25 332.5 90.0
   328.25 98.75 329.0 97.5 322.75 111.5
+  smooth off
 endline
 
 line wall -subtype pit
   322.75 111.5
   316.5 125.5 327.5 132.5 327.75 140.5
   328.0 148.5 323.3 142.04 321.75 149.25
+  smooth off
 endline
 
 line wall
   321.75 149.25
   321.0 152.75 331.0 173.5 336.25 176.25
   341.5 179.0 350.0 181.5 352.75 181.5
+  smooth off
 endline
 
 endscrap
