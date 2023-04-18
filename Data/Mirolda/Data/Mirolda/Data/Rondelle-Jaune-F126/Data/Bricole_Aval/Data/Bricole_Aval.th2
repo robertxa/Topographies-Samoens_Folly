@@ -10,11 +10,13 @@ scrap SP-Bricole_Aval-1 -projection plan -station-names "" "@Bricole_Aval" -auth
 line pit
   3136.0 4532.25
   3136.0 4532.25 3133.75 4545.25 3134.25 4548.75
+  smooth off
 endline
 
 line pit
   3130.5 4477.0
   3130.5 4477.0 3131.75 4459.5 3128.5 4457.0
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -28,15 +30,28 @@ line wall -close on -outline in
   smooth off
 endline
 
+point 3172.0 4720.5 stalactites-stalagmites
+
+point 3067.0 4519.0 continuation -attr Code A -attr Cavite "F126" -attr Reseau "Criou" -text "vers réseau aval court-circuit ? A voir"
+
+line pit
+  3157.0 4464.0
+  3157.0 4464.0 3155.5 4485.0 3147.5 4485.0
+  3139.5 4485.0 3132.5 4480.0 3132.5 4480.0
+  smooth off
+endline
+
 line pit -reverse on
   3133.0 4501.5
-  3133.0 4501.5 3142.25 4501.5 3146.5 4511.0
+  3133.0 4501.5 3141.5 4500.0 3141.5 4510.0
+  smooth off
 endline
 
 line pit -reverse on
   3132.5 4513.25
   3132.5 4513.25 3129.5 4524.25 3129.5 4527.25
   3129.5 4530.25 3129.5 4539.75 3126.75 4546.0
+  smooth off
 endline
 
 point 3359.0 4697.25 water-flow -orientation 219.1
@@ -44,11 +59,13 @@ point 3359.0 4697.25 water-flow -orientation 219.1
 line pit
   3350.75 4695.0
   3350.75 4695.0 3336.25 4686.75 3334.5 4676.0
+  smooth off
 endline
 
 line pit
   3344.75 4667.25
   3346.25 4667.75 3359.0 4679.5 3358.5 4687.0
+  smooth off
 endline
 
 line wall
@@ -99,11 +116,13 @@ point 3116.0 4750.75 label -text "R4"
 line wall -subtype pit
   3143.25 4750.0
   3143.25 4750.0 3134.25 4759.0 3131.75 4748.0
+  smooth off
 endline
 
 line wall -subtype pit
   3038.75 4637.25
   3038.75 4637.25 3031.25 4644.25 3026.25 4639.0
+  smooth off
 endline
 
 point 3008.5 4636.75 label -text "R2"
@@ -127,7 +146,16 @@ line wall -subtype pit
   3158.0 4486.75 3164.0 4495.25 3162.25 4497.0
   altitude .
   3160.5 4498.75 3154.5 4511.25 3149.5 4510.5
-  3144.5 4509.75 3144.0 4508.75 3141.5 4510.0
+endline
+
+line wall
+  3144.5 4521.0
+  3141.5 4510.0
+endline
+
+line wall
+  3149.5 4510.5
+  3150.5 4521.5
 endline
 
 line wall
@@ -146,6 +174,7 @@ line wall
   3078.25 4365.0 3080.25 4366.75 3087.5 4376.75
   3094.75 4386.75 3134.25 4435.5 3140.0 4442.0
   3145.75 4448.5 3144.0 4453.75 3146.75 4456.75
+  smooth off
 endline
 
 line wall
@@ -328,6 +357,7 @@ line water-flow
   2470.5 2784.0 2443.5 2773.5 2425.5 2767.0
   2407.5 2760.5 2401.5 2770.0 2389.0 2753.0
   2376.5 2736.0 2351.5 2719.0 2347.5 2716.0
+  smooth off
 endline
 
 line water-flow
@@ -341,6 +371,7 @@ endline
 line pit
   2531.0 3228.25
   2531.0 3228.25 2522.5 3240.75 2516.0 3227.75
+  smooth off
 endline
 
 line wall
@@ -382,16 +413,19 @@ endline
 line pit
   2554.75 3342.25
   2554.75 3342.25 2557.75 3354.0 2547.75 3350.0
+  smooth off
 endline
 
 line pit
   2712.0 3584.0
   2712.0 3584.0 2699.75 3594.75 2695.75 3578.25
+  smooth off
 endline
 
 line pit
   2111.25 2574.75
   2111.25 2574.75 2109.0 2587.25 2098.0 2580.75
+  smooth off
 endline
 
 point 2148.29 2607.14 station -name s70_47
@@ -516,6 +550,7 @@ line flowstone
   2754.0 3956.0
   2754.0 3956.0 2753.5 3952.0 2752.25 3947.25
   2751.0 3942.5 2750.5 3941.75 2749.5 3940.0
+  smooth off
 endline
 
 point 2073.0 2591.5 label -text "R5"
@@ -526,31 +561,37 @@ line pit
   2717.5 3517.5
   2717.5 3517.5 2717.75 3526.5 2714.5 3527.5
   2711.25 3528.5 2707.0 3531.75 2702.0 3527.25
+  smooth off
 endline
 
 line pit
   2712.25 3690.75
   2712.25 3690.75 2710.5 3698.75 2704.0 3696.75
+  smooth off
 endline
 
 line flowstone
   2692.0 3637.75
   2692.0 3637.75 2693.75 3629.25 2691.75 3624.25
+  smooth off
 endline
 
 line flowstone
   2710.75 3677.0
   2710.75 3677.0 2709.25 3684.75 2711.5 3688.75
+  smooth off
 endline
 
 line flowstone -reverse on
   2705.0 3679.0
   2705.0 3679.0 2706.0 3680.5 2705.75 3683.5
+  smooth off
 endline
 
 line flowstone
   2705.25 3696.75
   2705.25 3696.75 2706.75 3693.75 2705.75 3691.25
+  smooth off
 endline
 
 line wall
@@ -575,18 +616,21 @@ line water-flow
   2584.5 3347.0
   2584.5 3347.0 2556.5 3335.5 2550.0 3314.0
   2543.5 3292.5 2542.0 3277.5 2541.5 3266.5
+  smooth off
 endline
 
 line water-flow
   2710.0 3445.5
   2710.0 3445.5 2687.0 3454.0 2667.5 3432.0
   2648.0 3410.0 2640.0 3396.0 2631.0 3383.5
+  smooth off
 endline
 
 line water-flow
   2720.5 3591.0
   2720.5 3591.0 2739.5 3556.0 2737.5 3541.5
   2735.5 3527.0 2717.0 3503.5 2713.5 3498.5
+  smooth off
 endline
 
 line wall
@@ -712,6 +756,7 @@ line wall -subtype pit
   2754.0 3956.0 2751.75 3954.0 2747.5 3952.75
   2743.25 3951.5 2742.0 3949.75 2743.5 3947.0
   2745.0 3944.25 2749.5 3943.25 2749.5 3940.0
+  smooth off
 endline
 
 line wall
@@ -777,9 +822,35 @@ line wall
   2727.25 3729.25 2723.0 3716.5 2719.75 3713.0
   2716.5 3709.5 2707.5 3703.5 2705.25 3696.75
   2704.67 3695.02 2700.75 3694.75 2700.0 3692.25
+  smooth off
 endline
 
-point 2814.5 4067.0 water-flow -orientation 174.9
+point 2726.0 3952.0 water-flow -orientation 96.7
+
+point 2818.0 3994.5 height -value [-3 m]
+
+line pit
+  2817.0 4014.5
+  2817.0 4014.5 2812.0 4037.5 2796.0 4032.5
+endline
+
+point 2788.5 4122.5 continuation -attr Code E -attr Cavite "F126" -attr Reseau "Criou" -text "Affluent à explorer après E12 à faire"
+
+point 2849.0 4016.0 height -value [-12 m]
+
+point 2783.5 4060.5 height -value [+12 m]
+
+point 2802.5 4092.5 water-flow -orientation 155.5
+
+line pit
+  2825.0 4036.5
+  2825.0 4036.5 2830.0 4052.5 2826.5 4056.5
+endline
+
+line pit
+  2823.0 4076.5
+  2823.0 4076.5 2818.5 4056.0 2807.5 4063.0
+endline
 
 line wall
   2993.5 4143.0
@@ -792,8 +863,12 @@ line wall
   2889.75 4064.0 2864.0 4055.0 2856.5 4051.25
   2849.0 4047.5 2846.75 4041.75 2841.25 4043.75
   2835.75 4045.75 2827.0 4047.25 2824.5 4051.5
-  2822.0 4055.75 2816.75 4081.0 2813.25 4076.0
-  2809.75 4071.0 2810.5 4060.25 2811.0 4056.0
+  2822.0 4055.75 2817.5 4073.5 2813.25 4076.0
+endline
+
+line wall
+  2808.5 4072.0
+  2809.5 4066.0 2810.5 4060.25 2811.0 4056.0
   2811.5 4051.75 2818.0 4049.0 2808.25 4040.0
   2798.5 4031.0 2789.5 4021.75 2786.25 4016.25
   2783.0 4010.75 2782.75 4006.0 2781.5 4000.0
@@ -827,11 +902,13 @@ line pit
   1222.0 751.0
   1222.0 751.0 1247.5 776.0 1238.0 780.5
   1228.5 785.0 1217.5 781.5 1208.0 782.0
+  smooth off
 endline
 
 line pit
   1323.5 978.5
   1323.5 978.5 1310.0 968.5 1293.5 977.5
+  smooth off
 endline
 
 point 1355.5 973.0 height -value [-2 m]
@@ -841,6 +918,7 @@ point 1211.0 895.5 height -value [-3 m]
 line pit
   1284.0 859.5
   1284.0 859.5 1280.5 887.5 1251.5 878.0
+  smooth off
 endline
 
 point 1160.0 648.0 label -text "R15"
@@ -850,16 +928,19 @@ point 1090.5 770.5 height -value [-7 m]
 line pit
   1122.5 642.0
   1122.5 642.0 1120.5 661.0 1104.0 647.5
+  smooth off
 endline
 
 line pit
   1130.0 668.5
   1130.0 668.5 1132.5 716.5 1114.5 679.5
+  smooth off
 endline
 
 line pit
   1143.0 730.5
   1143.0 730.5 1135.5 752.5 1116.5 743.0
+  smooth off
 endline
 
 point 900.5 740.75 label -text "<center>rivière de la<br>Bricole Aval"
@@ -869,11 +950,13 @@ point 1059.75 538.75 label -text "R3"
 line pit
   1011.75 539.0
   1011.75 539.0 1017.0 560.0 998.0 560.5
+  smooth off
 endline
 
 line pit
   1040.25 548.75
   1040.25 548.75 1039.75 573.5 1021.75 570.5
+  smooth off
 endline
 
 line water-flow
@@ -1060,6 +1143,7 @@ line water-flow
   1872.5 1899.0 1855.5 1887.5 1855.5 1887.5
   smooth off
   1855.5 1887.5 1852.5 1864.0 1851.0 1854.5
+  smooth off
 endline
 
 line water-flow
@@ -1082,21 +1166,25 @@ line water-flow
   1580.5 1413.0 1539.0 1402.0 1519.0 1399.0
   1499.0 1396.0 1483.0 1395.5 1478.0 1399.5
   1473.0 1403.5 1454.0 1405.5 1445.0 1394.5
+  smooth off
 endline
 
 line pit
   1779.75 1736.5
   1779.75 1736.5 1776.25 1748.25 1769.5 1737.5
+  smooth off
 endline
 
 line pit
   1779.5 1751.75
   1779.5 1751.75 1774.0 1763.25 1767.75 1753.0
+  smooth off
 endline
 
 line pit
   1321.0 1024.0
   1321.0 1024.0 1319.0 1041.0 1311.0 1028.5
+  smooth off
 endline
 
 line wall

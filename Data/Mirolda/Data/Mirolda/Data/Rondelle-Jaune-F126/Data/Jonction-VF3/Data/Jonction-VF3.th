@@ -151,7 +151,7 @@ centerline -extend left
        s75_16 s76_1 7.69 252.00 36.00  0.00 0.00  0.00 0.00  # Observ: =613.16
        s76_1 s76_2 5.79 329.40 50.40  0.00 0.00  0.00 0.00  
        s76_2 s76_3 4.49 263.70 -7.20  0.00 0.00  0.00 0.00  
-       s76_3 s76_4 2.46 2.70 0.00  0.00 0.00  0.00 0.00  
+       s76_3 s76_4 2.46 2.70 0.00  0.00 0.00  0.00 0.00  # Départ avec R5, étroiture au sommet et derrière, c'est grand
        s76_4 s76_5 3.36 328.50 59.40  0.00 0.00  0.00 0.00  
        s76_5 s76_6 3.07 3.60 -1.80  0.00 0.00  0.00 0.00  
        s76_6 s76_7 5.66 306.00 -0.90  0.00 0.00  0.00 0.00  
@@ -165,9 +165,15 @@ centerline -extend left
        s77_1 s77_2 7.35 27.90 -11.70  0.00 0.00  0.00 0.00  
        s77_2 s77_3 2.10 298.80 39.15  0.00 0.00  0.00 0.00  
        s77_3 s77_4 6.83 256.50 -38.70  0.00 0.00  0.00 0.00  
+       flags approximate
+       s77_4 s77_4b 8 0 -90  0.00 0.00  0.00 0.00   # pour matérialiser le puits qu'on traverse, étroit à la base
+       flags not approximate
        s77_4 s77_5 0.80 262.80 -18.00  0.00 0.00  0.00 0.00  
        s77_5 s77_6 9.41 246.60 -36.90  0.00 0.00  0.00 0.00  
-       s77_6 s77_7 7.13 266.40 -23.40  0.00 0.00  0.00 0.00  
+       s77_6 s77_7 7.13 266.40 -23.40  0.00 0.00  0.00 0.00  # sur la colonne
+        flags approximate
+       s77_7 s77_7b 12 266 -23.4  0.00 0.00  0.00 0.00   # Visée fictive après étroiture, il faut creuser, léger c.a. soufflant en été
+       flags not approximate
 
 endcenterline
 

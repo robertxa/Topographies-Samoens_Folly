@@ -495,6 +495,14 @@ point 583.155 585.384 station -name s75_8
 
 point 604.085 556.574 station -name s75_7
 
+point 496.0 612.25 scallop
+
+point 676.5 505.25 scallop
+
+point 613.75 536.75 scallop
+
+point 680.25 536.0 air-draught -orientation 291.5 -scale s -subtype summer
+
 point 632.875 544.654 station -name s75_6
 
 point 639.725 535.524 station -name s75_5
@@ -533,15 +541,11 @@ line pit
   smooth off
 endline
 
-line pit
-  212.75 790.5
-  212.75 790.5 210.5 781.0 219.0 777.75
-  smooth off
-endline
-
-line pit
-  227.25 798.25
-  227.25 798.25 222.5 788.0 231.25 783.5
+line pit -close on
+  258.25 794.5
+  258.25 794.5 260.0 805.5 255.5 805.75
+  251.0 806.0 239.5 795.0 248.0 792.0
+  256.5 789.0 258.25 794.5 258.25 794.5
   smooth off
 endline
 
@@ -552,11 +556,26 @@ line wall
   283.25 810.5 260.0 804.0 257.0 803.75
   254.0 803.5 233.75 797.75 226.5 794.0
   219.25 790.25 202.25 779.75 194.75 779.5
-  187.25 779.25 159.75 776.25 155.5 775.75
-  151.25 775.25 142.25 777.75 142.75 773.75
+  187.25 779.25 150.0 775.75 145.75 775.25
+endline
+
+line wall -subtype unsurveyed
+  145.75 775.25
+  141.5 774.75 48.75 763.75 41.75 761.5
+endline
+
+line wall -subtype unsurveyed
+endline
+
+line wall -subtype unsurveyed
+  42.0 756.0
   altitude .
-  143.25 769.75 143.0 769.75 150.5 769.0
-  158.0 768.25 191.5 770.25 198.5 772.25
+  45.98 756.45 139.0 768.5 146.5 767.75
+endline
+
+line wall
+  146.5 767.75
+  154.0 767.0 191.5 770.25 198.5 772.25
   205.5 774.25 216.5 779.25 224.5 783.5
   232.5 787.75 248.0 796.25 253.75 796.5
   259.5 796.75 294.5 804.0 297.5 802.25
@@ -593,19 +612,32 @@ line wall
   smooth off
 endline
 
+point 273.75 778.25 helictites
+
+line wall -subtype pit
+  346.75 771.25
+  348.0 773.75 371.25 814.25 365.0 816.75
+  358.75 819.25 348.25 823.25 346.25 818.5
+  344.25 813.75 335.25 775.0 335.25 775.0
+  smooth off
+endline
+
 line wall -subtype pit
   321.25 752.5
   321.25 752.5 329.25 750.5 334.5 753.25
-  339.75 756.0 347.0 768.5 345.5 774.0
-  344.0 779.5 337.75 780.0 335.25 775.0
+  339.75 756.0 344.5 766.25 346.75 771.25
+endline
+
+line wall -subtype pit
+  335.25 775.0
   332.75 770.0 328.25 761.25 326.5 760.75
   324.75 760.25 319.25 759.0 319.25 759.0
   smooth off
 endline
 
 line wall
-  388.75 667.75
-  388.75 667.75 384.0 657.75 382.25 658.0
+  389.5 673.75
+  389.5 673.75 384.0 657.75 382.25 658.0
   380.5 658.25 379.25 662.5 379.25 667.25
   379.25 672.0 380.75 673.0 378.0 678.75
   375.25 684.5 372.25 686.75 373.25 695.75
@@ -617,6 +649,29 @@ line wall
   smooth off
 endline
 
+point 409.75 675.0 label -text "R5"
+
+line pit
+  393.75 663.75
+  393.75 663.75 388.0 660.25 386.0 667.5
+endline
+
+point 146.015 771.894 u:boss -scale xs
+
+point 304.75 831.0 label -text "etr."
+
+point 380.75 828.25 continuation -attr Code P -attr Cavite "F126" -attr Reseau "Criou" -text "Grand puits avec méandre" -attr CA "Courant d'air aspirant en été"
+
+point 253.25 779.5 traverse
+
+point 248.75 821.0 height -value [-4 m]
+
+point 38.0 783.5 label -text "colm."
+
+point 30.75 758.0 continuation -attr Code D -attr Cavite "F126" -attr Reseau "Criou" -text "colmatage à désobtruer, léger courant d'air soufflant estival"
+
+point 396.0 688.75 continuation -attr Code D -attr Cavite "F126" -attr Reseau "Criou" -text "R5 remontant, puis étroiture et derrière, c'est large !!!"
+
 line wall
   455.75 643.0
   455.75 643.0 451.0 642.5 447.0 641.0
@@ -624,7 +679,7 @@ line wall
   424.5 638.75 419.75 651.0 417.25 655.25
   414.75 659.5 416.5 661.0 410.5 661.0
   404.5 661.0 390.5 658.5 391.0 660.5
-  391.5 662.5 392.75 667.0 392.75 667.0
+  391.5 662.5 393.75 672.75 393.75 672.75
   smooth off
 endline
 
