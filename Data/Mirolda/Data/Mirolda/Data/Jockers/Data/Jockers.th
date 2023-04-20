@@ -339,7 +339,8 @@ centerline -extend right
 		s92_4	s92_5	4.26	110.00	0.0000	0.40	0.40	1.00	0.50		# {342.81}
 		s92_5	s92_6	2.94	235.00	-22.00	0.50	0.50	2.20	1.00
 		extend left		
-		s92_6	s92_7	28.86	305.00	-4.000	0.50	1.30	1.20	0.70		
+		s92_6	s92_7	28.86	305.00	-4.000	0.50	1.30	1.20	0.70
+		extend ignore 	s92_7	s11_17	
 		s92_7	s11_17	1.00	0.0000	0.0000	0.00	0.00	0.00	0.00		# Visée fictive pour jonctionner avec le point 17 Bozzo hongroise
 
 endcenterline

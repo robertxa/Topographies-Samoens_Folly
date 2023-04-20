@@ -14,9 +14,11 @@ map MP-Sado-Bozzo-plan-tot -title "VF3 - réseau Sado-Bozzo"
 	SP-Sado-Bozzo-1
 endmap
 
-#map MC-Sado-Bozzo-coupe-tot -title "VF3 - réseau Sado-Bozzo"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Sado-Bozzo-coupe-tot -title "VF3 - réseau Sado-Bozzo"
+	SC-Sado-Bozzo-3
+	break
+	SC-Sado-Bozzo-2
+	break
+	SC-Sado-Bozzo-1
+endmap
    

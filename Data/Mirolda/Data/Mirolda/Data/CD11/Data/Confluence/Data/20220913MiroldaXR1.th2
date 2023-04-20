@@ -453,7 +453,7 @@ line rock-border -close on
   1221.75 643.5
 endline
 
-point 1297.0 627.75 continuation -attr Code P -attr Cavite "CD11" -text "Rivière à continuer ?
+point 1297.0 627.75 continuation -attr Code P -attr Cavite "CD11" -text "Rivière à continuer ?"
 
 point 604.0 491.25 air-draught -orientation 244.4 -subtype summer
 
@@ -1341,7 +1341,7 @@ scrap SP-Conf-1 -projection plan -station-names "" "@20220913MiroldaXR1" -author
 
 point 2401.25 1239.25 air-draught -orientation 55.6 -subtype summer
 
-point 2350.5 1162.5 continuation -attr Code E -attr Cvite "CD11" -text "Arrivé d'eau en hauteur, calcite, départ ?"
+point 2350.5 1162.5 continuation -attr Code E -attr Cavite "CD11" -text "Arrivé d'eau en hauteur, calcite, départ ?"
 
 line pit
   2373.25 1169.25
@@ -1727,7 +1727,7 @@ point 2836.25 1414.0 continuation -attr Code E -attr Cavite "CD11" -text "Méand
 
 point 2833.0 1511.5 continuation -attr Code E -attr Cavite "CD11" -text "Méandre à 8 m de haut, à escalader"
 
-point 2709.5 1569.0 continuation -attr Code E -attr Cavite "CD11" -text "Arrivée de la rivière Impétueuse, à revoir et à topographier"
+point 2709.5 1569.0 continuation -attr Code E -attr Cavite "CD11" -text "Arrivée de la rivière Intrépide, à revoir et à topographier"
 
 point 2743.0 1791.5 rope-ladder
 
@@ -1798,7 +1798,7 @@ line pit -reverse on
   smooth off
 endline
 
-point 2638.0 1582.75 label -text "<center>Arrivée de<br>l'Impétueuse"
+point 2638.0 1582.75 label -text "<center>Arrivée de<br>l'Intrépide"
 
 line water-flow
   2759.25 1580.0

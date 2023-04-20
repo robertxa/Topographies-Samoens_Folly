@@ -12,9 +12,13 @@ map MP-Combattant-plan-tot -title "Parcours du Combattant"
 	SP-Marmotte-1
 endmap
 
-#map MC-Combattant-coupe-tot -title "Parcours du Combattant"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Combattant-coupe-tot -title "Parcours du Combattant"
+	SC-Combattant-2
+	break
+	SC-Combattant-3
+	break
+	SC-Combattant-1
+	break
+	SC-Combattant-4	# Vers la Marmotte
+endmap
    

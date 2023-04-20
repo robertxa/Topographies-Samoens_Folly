@@ -29,9 +29,6 @@ encoding  utf-8
 # "jb-dessin.th2")
 source VF46-tot.th
 
-# Add Coordinates
-input legendes/entrances_coordinates.th
-
 # Add config file
 input ../../../../../../config.thc 
   
@@ -164,7 +161,7 @@ layout layout-coupe
 	
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
-  base-scale 1 1000
+  base-scale 1 1250
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
   scale 1 1500
   # echelle graphique 100 m ampleur
@@ -200,15 +197,15 @@ layout layout-coupe
 
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
-  statistics topo-length on
+  statistics topo-length off
   # Afficher un copyright
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -235,7 +232,7 @@ layout layout-coupe
 
 # Export des xvi pour le dessin si besoin
 #export map -fmt xvi -layout xviexport -o Data/VF46-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/VF46-coupe.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/VF46-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-VF46-plan-tot@VF46

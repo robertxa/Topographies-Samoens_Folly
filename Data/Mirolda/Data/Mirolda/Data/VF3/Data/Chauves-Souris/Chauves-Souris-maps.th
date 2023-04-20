@@ -12,9 +12,20 @@ map MP-Chauves-Souris-plan-tot -title "Galerie des Chauves-Souris"
 	SP-Chauves-Souris-1
 endmap
 
-#map MC-Chauves-Souris-coupe-tot -title "Galerie des Chauves-Souris"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+
+map MC-Chauves-Souris-1
+	SC-Chauves-Souris-1
+	break
+	SC-Chauves-Souris-2
+endmap
+
+map MC-Chauves-Souris-2
+	SC-Chauves-Souris-3
+endmap
+
+map MC-Chauves-Souris-coupe-tot -title "Galerie des Chauves-Souris"
+	MC-Chauves-Souris-1
+	break
+	MC-Chauves-Souris-2
+endmap
    

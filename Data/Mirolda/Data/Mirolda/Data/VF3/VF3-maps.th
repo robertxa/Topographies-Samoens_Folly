@@ -1,9 +1,10 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+########## Maps pour le plan #############
 map MP-VF3-sup -title "Réseaux supérieurs du VF3"
     MP-VF3-sup@VF3
     break
@@ -42,9 +43,43 @@ map MP-VF3-plan-tot -title "Gouffre VF3"
     MP-VF3-inf
 endmap
 
-#map MC-VF3-coupe-tot -title "Gouffre VF3"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+########## Maps pour la coupe développée #############
+
+map MC-VF3-coupe-tot -title "Gouffre VF3"
+	
+    MC-VF3-coupe-tot@VF3
+    break
+    MC-Falaise-coupe-tot@Falaise
+    MC-VF46-coupe-tot@VF46
+    break
+    MC-Chauves-Souris-coupe-tot@Chauves-Souris
+    
+    break
+    MC-Sado-Bozzo-coupe-tot@Sado-Bozzo
+    break
+    MC-Combattant-coupe-tot@Combattant
+
+    break
+    MC-Danton-coupe-tot@Danton [80 -200] below
+    break
+    MC-Tremie-coupe-tot@Tremie
+    break
+    MC-Prof-Blanchon-coupe-tot@Prof-Blanchon
+    break
+    MC-Puits-Jumeaux-2@Puits-Jumeaux
+    break
+    MC-Puits-Jumeaux-3@Puits-Jumeaux    # [-300 50 m] below # déplace le dessin topographié de 50 m vers le N et 200 m vers l'ouest pour faciliter la lecture de la topographie
+    break
+    MC-Puits-Jumeaux-1@Puits-Jumeaux [-300 50 m] below # déplace le dessin topographié de 50 m vers le N et 300 m vers l'ouest pour faciliter la lecture de la topographie
+    break
+    MC-Discovery-1@Puits-Jumeaux
+    break
+    MC-Discovery-coupe-tot@DDiscovery
+    break
+    MC-Hongroise-coupe-tot@Hongroise
+    break
+    MC-Hongroise2-coupe-tot@Hongroise2
+    
+
+endmap
    

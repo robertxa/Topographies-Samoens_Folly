@@ -167,11 +167,11 @@ layout layout-coupe
 	
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
-  base-scale 1 1000
+  base-scale 1 1250
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
-  scale 1 1000
+  scale 1 1500
   # echelle graphique 100 m ampleur
-  scale-bar 100 m
+  scale-bar 150 m
 
   # Une grille ?
   #grid-size 250 250 250 m  
@@ -192,7 +192,7 @@ layout layout-coupe
   # Position de la manchette. Voir layout ci-dessus.
   map-header 0 -40 nw
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
@@ -209,8 +209,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -235,7 +235,7 @@ layout layout-coupe
 
 # Export des xvi pour le dessin si besoin
 #export map -fmt xvi -layout xviexport -o Data/Chauves-Souris-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Chauves-Souris-coupe.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Chauves-Souris-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Chauves-Souris-plan-tot@Chauves-Souris
@@ -243,8 +243,8 @@ select MC-Chauves-Souris-coupe-tot@Chauves-Souris
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/ChauvesSouris-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/ChauvesSouris-coupe.pdf
+# export map -proj plan -fmt pdf -o Outputs/ChauvesSouris-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/ChauvesSouris-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

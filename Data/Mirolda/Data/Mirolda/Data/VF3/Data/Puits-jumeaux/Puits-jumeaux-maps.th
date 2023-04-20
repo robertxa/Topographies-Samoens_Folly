@@ -1,12 +1,12 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+
+############# Maps pour le plan ################
 map MP-Puits-Jumeaux-plan-tot -title "Les Puits Jumeaux"
-#	SP-B3-1
-#	break
 	SP-Puits-Jumeaux-3
 	break
 	SP-Puits-Jumeaux-4
@@ -18,9 +18,33 @@ map MP-Puits-Jumeaux-plan-tot -title "Les Puits Jumeaux"
 	SP-Discovery-1
 endmap
 
-#map MC-Puits-jumeaux-coupe-tot -title "Les Puits Jumeaux"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+
+############# Maps pour la coupe développée ################
+map MC-Puits-Jumeaux-1 -title "Les Puits Jumeaux"
+	SC-Puits-Jumeaux-1
+endmap
+map MC-Puits-Jumeaux-2 -title "Les Puits Jumeaux"
+	SC-Puits-Jumeaux-2
+	break
+	SC-Puits-Jumeaux-5
+endmap
+map MC-Puits-Jumeaux-3 -title "Les Puits Jumeaux"
+	SC-Puits-Jumeaux-3
+	break
+	SC-Puits-Jumeaux-4
+endmap
+
+map MC-Discovery-1 -title "Galerie Discovery"
+	SC-Discovery-1
+endmap
+
+map MC-Puits-Jumeaux-coupe-tot -title "Les Puits Jumeaux"
+	MC-Puits-Jumeaux-2
+	break
+	MC-Puits-Jumeaux-3
+	break
+	MC-Puits-Jumeaux-1
+	break
+	MC-Discovery-1
+endmap
    

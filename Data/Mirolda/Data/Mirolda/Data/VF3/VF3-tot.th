@@ -12,6 +12,7 @@ survey VF3 -title "Gouffre VF3"
 		equate s32_4@VF3.VF3 s32_4@Chauves-Souris.Chauves-Souris
 		join SP-VF3-1@VF3 SP-Chauves-Souris-2@Chauves-Souris
 		join SP-VF3-2@VF3 SP-Chauves-Souris-2@Chauves-Souris	# Jction au sommet du P40
+		join SC-VF3-1@VF3 SC-Chauves-Souris-1@Chauves-Souris	# Jction au sommet du P40
 
 	input Data/Falaise/Falaise-tot.th	# Galeries qui partent du sommet du P40 en direction de l'entrée de la Falaise
 		equate s53_3@Chauves-Souris.Chauves-Souris s53_3@Falaise.Falaise
@@ -20,15 +21,17 @@ survey VF3 -title "Gouffre VF3"
 	
 	input Data/VF46/VF46-tot.th
 		equate s46_0@VF46.VF46 s33_9@Falaise.Falaise
-		#join SP-VF46-1@VF46 SP-Falaise-3@Falaise
+		join SC-VF46-1@VF46 SC-Falaise-2@Falaise
 	
 	input Data/Danton/Danton-tot.th	#	Réseau du Puits Danton, il doit jonctionner aussi avec la Bricole Amont, mais il manque un bout de topo pour l'instant
 		equate s35_15@Chauves-Souris.Chauves-Souris s35_15@Danton.Danton
 		join SP-Danton-1@Danton SP-Chauves-Souris-1@Chauves-Souris
+		join SC-Danton-1@Danton SC-Chauves-Souris-3@Chauves-Souris
 	
 	input Data/Prof-Blanchon/Prof-Blanchon-tot.th	# Réseau du Professeur Blanchon
 		equate s34_11@Blanchon.Prof-Blanchon s34_11@Chauves-Souris.Chauves-Souris
 		join SP-Tremie-1@Tremie SP-Blanchon-4@Prof-Blanchon
+		#join SC-Tremie-2@Tremie SC-Blanchon-2@Prof-Blanchon
 		join SP-Puits-Jumeaux-3@Puits-Jumeaux SP-Blanchon-4@Prof-Blanchon
 	
 	input Data/Tremie/Tremie-tot.th	# Galerie de la Trémie
@@ -48,20 +51,30 @@ survey VF3 -title "Gouffre VF3"
 	input Data/Sado-Bozzo/Sado-Bozzo-tot.th	# Réseau Sado-Bozzo. 
 		equate  s14_7@Sado-Bozzo.Sado-Bozzo s14_7@Hongroise.Hongroise
 		join SP-Sado-Bozzo-4@Sado-Bozzo SP-Hongroise-1@Hongroise
+		join SC-Sado-Bozzo-3@Sado-Bozzo SC-Hongroise-2@Hongroise
 		
 	input Data/Combattant/Combattant-tot.th	# Réseau du Combattant à partir Sado Bozzo
 		equate  s14_7@Combattant.Combattant s14_7@Hongroise.Hongroise
-		equate  s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo
+		equate  s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo extend ignore
+		#centerline
+		#	#extend ignore s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo
+		#	equate  s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo
+		#	extend ignore s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo
+		#endcenterline
 		join SP-Combattant-1@Combattant SP-Sado-Bozzo-4@Sado-Bozzo
 		join SP-Combattant-2@Combattant SP-Sado-Bozzo-4@Sado-Bozzo
+		join SC-Sado-Bozzo-2@Sado-Bozzo SC-Combattant-1@Combattant
+		join SC-Sado-Bozzo-3@Sado-Bozzo SC-Combattant-2@Combattant
 	
 	input Data/Hongroise/Hongroise-tot.th	# Galerie Hongroise
 		equate s41_0@Hongroise.Hongroise s41_0@DDiscovery.DDiscovery
 		join SP-Hongroise-2@Hongroise SP-Discovery-1@DDiscovery
+		join SC-Hongroise-1@Hongroise SC-Discovery-1@DDiscovery
 
 	input Data/Hongroise2/Hongroise2-tot.th	# Jonction Hongroise22 - Hongroise
 		equate s17_0@Hongroise2.Hongroise2 s17_0@Hongroise.Hongroise
 		join SP-Hongroise-5@Hongroise SP-Hongroise2-1@Hongroise2
+		join SC-Hongroise-3@Hongroise SC-Hongroise2-1@Hongroise2
 		
 	# Import des maps
 	input VF3-maps.th

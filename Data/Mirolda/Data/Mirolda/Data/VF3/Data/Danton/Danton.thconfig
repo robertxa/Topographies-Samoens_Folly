@@ -167,11 +167,11 @@ layout layout-coupe
 
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
-  base-scale 1 1000
+  base-scale 1 1250
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
-  scale 1 1000
+  scale 1 1500
   # echelle graphique 100 m ampleur
-  scale-bar 100 m
+  scale-bar 150 m
 
   # Une grille ?
   #grid-size 250 250 250 m  
@@ -196,21 +196,21 @@ layout layout-coupe
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
 
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
-  statistics topo-length on  
+  statistics topo-length off  
   # Afficher un copyright
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -234,7 +234,7 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/Danton-map.xvi
+#export map -fmt xvi -layout xviexport -o Data/Danton-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Danton-coupe.xvi
 
 # Selection des Maps à exporter
@@ -243,7 +243,7 @@ select MC-Danton-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Danton-plan.pdf -layout my_layout
+# export map -proj plan -fmt pdf -o Outputs/Danton-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Danton-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 

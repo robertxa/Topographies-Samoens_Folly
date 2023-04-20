@@ -17,9 +17,11 @@ map MP-Hongroise-plan-tot -title "Galerie Hongroise"
 
 endmap
 
-#map MC-Hongroise-coupe-tot -title "Galerie Hongroise"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Hongroise-coupe-tot -title "Galerie Hongroise"
+	SC-Hongroise-2
+	break
+	SC-Hongroise-1
+    break
+    SC-Hongroise-3
+endmap
    

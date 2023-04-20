@@ -298,7 +298,8 @@ centerline -extend left    # [Ajout Alex]
     units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down	
-		s23_13	s59_0	0.00	0.0000	0.00	0.00	2.50	0.30	0.60		#=23.13
+		extend ignore s23_13 s59_0
+        s23_13	s59_0	0.00	0.0000	0.00	0.00	2.50	0.30	0.60		#=23.13
 		s59_0	s59_1	5.79	332.10	0.0000	3.00	2.00	23.00	0.10		
 		s59_1	s59_2	21.56	227.70	76.500	1.50	0.00	22.00	1.10		# puits sur spit (P22)
 		s59_2	s59_3	3.53	214.20	25.200	0.50	0.60	0.50	0.20		

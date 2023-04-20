@@ -4,6 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+########### Maps pour le plan ################
 map MP-Jockers-sup -title "Gouffre des Jockers"
     SP-Jockers-1
 	break
@@ -41,6 +42,8 @@ map MP-Jockers-inf -title "Gouffre des Jockers"
 endmap
 
 map MP-Jockers-Hongroise
+    # Map qui ne doit pas être intégrée à la topo générale des Amonts,
+    #   A utiliser uniquement pour le gouffre des Jockers spécifiquement car doublon
     SP-Jockers-Hongroise-1
 endmap
 
@@ -51,42 +54,38 @@ map MP-Jockers-plan-tot -title "Gouffre des Jockers"
     break
     MP-Jockers-inf
     break
-    MP-Jockers-Hongroise # Attention, doublon avec la galerie Hongroise
-
-    #SP-Jockers-1
-	#break
-	#SP-Jockers-2
-	#break
-	#SP-Jockers-3
-	#break
-	#SP-Jockers-4
-    #break
-    #SP-Gelifract-2
-    #break
-    #SP-Gelifract-1
-	#break
-	#SP-Jockers-5
-    #break
-	#SP-Jockers-5b
-    #break
-    #SP-Cairn-1
-    #break
-    #SP-Hope-1
-    #break
-	#SP-Jockers-6
-    #break
-	#SP-Jockers-7b
-    #break
-	#SP-Jockers-7
-    #break
-	#SP-Jockers-8
-    #break
-	#SP-Jockers-9
+    MP-Jockers-Hongroise # Attention, doublon avec la galerie Hongroise, ne pas mettre dans la topo de tous les amonts, ne garder que pour les Jockers
 endmap
 
-#map MC-Jockers-coupe-tot -title "Gouffre des Jockers"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+########### Maps pour la coupe ################
+map MC-Jockers-coupe -title "Gouffre des Jockers"
+    SC-Jockers-2
+    break
+    SC-Jockers-1
+    break
+	SC-Gelifract-1
+    break
+    SC-Jockers-3
+    break
+    SC-Cairn
+    break
+    SC-Jockers-4
+endmap
+
+map MC-Hongroise-part -title "Galerie Hongroise"
+    SC-Hongroise
+endmap
+
+map MC-Hongroise-Jockers -title "Galerie Hongroise"
+    SC-Hongroise-2
+endmap
+
+# Définition de la Map coupe développée pour afficher uniquement le gouffre des Jockers
+map MC-Jockers-coupe-tot -title "Gouffre des Jockers"
+	MC-Hongroise-part
+   break	
+    MC-Jockers-coupe
+	break
+	MC-Hongroise-Jockers
+endmap
    

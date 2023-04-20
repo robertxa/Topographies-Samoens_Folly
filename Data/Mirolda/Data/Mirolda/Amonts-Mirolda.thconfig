@@ -171,7 +171,7 @@ layout layout-coupe
 	
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
-  base-scale 1 1000
+  base-scale 1 1250
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
   scale 1 1500
   # echelle graphique 100 m ampleur
@@ -194,13 +194,14 @@ layout layout-coupe
   doc-title "Mirolda coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  #map-header 0 0 s
+  map-header 0 0 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende. Voir layout ci-dessus.
   legend on
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
+  legend-columns 3
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
@@ -213,8 +214,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -263,11 +264,11 @@ endlayout
 
 # Selection des Maps à exporter
 select MP-Amonts-Mirolda-plan@Mirolda
-select MC-Amonts-Mirolda-plan@Mirolda
+select MC-Amonts-Mirolda-coupe-tot@Mirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Lucien_Bouclier-plan.pdf -layout my_layout
+# export map -proj plan -fmt pdf -o Outputs/Lucien_Bouclier-plan.pdf -layout my_layout
  #export map -proj plan -fmt pdf -o Outputs/Mirolda-plan-continuations.pdf -layout my_layout-continuations
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Lucien_Bouclier-coupe.pdf
  #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Mirolda-coupe-continuations.pdf
@@ -280,8 +281,8 @@ select MC-Amonts-Mirolda-plan@Mirolda
 # export map -proj plan -fmt esri -o Outputs/Mirolda-2022 -layout my_layout
 
 # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/Lucien_Bouclier.kml -layout layout-kml
- export model -fmt kml -o Outputs/Lucien_Bouclier-model.kml -enable all
+# export map -proj plan -fmt kml -o Outputs/Lucien_Bouclier.kml -layout layout-kml
+# export model -fmt kml -o Outputs/Lucien_Bouclier-model.kml -enable all
  #export continuation-list -fmt kml -o Outputs/ContinuationsLucien_Bouclier-2022.kml
 
 # Export de la database sql

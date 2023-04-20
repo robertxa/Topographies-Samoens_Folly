@@ -121,7 +121,8 @@ centerline -extend right
 		s5_4 s5_5 7.98 58.00 -3.60  0.00 0.00  0.00 0.00  
 		s5_5 s5_6 9.63 126.00 -36.00  0.00 0.00  0.00 0.00  
 		#s5_6 s5_7 1.20 56.00 0.00  0.00 0.00  0.00 0.00  # Observ: =38.20
-        extend ignore s38_20 s5_6
+        #extend ignore s38_20 s5_6
+        extend ignore s5_6 s38_20
         s5_6 s38_20 1.20 56.00 0.00  0.00 0.00  0.00 0.00  # Observ: =38.20	
 
     # units length meters
