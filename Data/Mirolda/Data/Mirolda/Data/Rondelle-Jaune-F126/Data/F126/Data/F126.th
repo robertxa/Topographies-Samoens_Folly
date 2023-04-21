@@ -18,8 +18,11 @@ survey F126 -title "Gouffre de la Rondelle Jaune - F126" -entrance F126
 
     #fix F126 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses
     cs EPSG:27572   # LII étendu
-    fix F126 944110 2130860	2230
-    # fix F125 944150.00 2130939.00 2220.00 #  F126 entrée Coordonnées URSUS
+    #fix F126 944110 2130860	2230
+    #944150.00  2130939.00 # Données URSUS
+    #fix F126 944150 2130939	2220    # Données URSUS
+    fix F126 944110 2130860	2220
+    # fix F126 944150.00 2130939.00 2220.00 #  F126 entrée Coordonnées URSUS
     #station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
 		
     date 1992 08 16

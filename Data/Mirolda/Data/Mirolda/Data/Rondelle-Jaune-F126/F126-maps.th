@@ -16,9 +16,11 @@ map MP-F126-plan-tot -title "Gouffre de la Rondelle Jaune - F126"
 	MP-Bricole_Aval-plan-tot@Bricole_Aval
 endmap
 
-#map MC-F126-coupe-tot -title "Gouffre de la Rondelle Jaune - F126"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-F126-coupe-tot -title "Gouffre de la Rondelle Jaune - F126"
+	MC-Marches-coupe-tot@Marches
+	break
+	MC-Jonction-VF3-coupe-tot@Jonction-VF3
+	break
+	MC-F126-coupe-tot@F126
+endmap
    

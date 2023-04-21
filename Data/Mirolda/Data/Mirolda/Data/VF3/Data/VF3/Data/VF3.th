@@ -27,8 +27,11 @@ survey VF3 -title "VF3 - Mirolda - Réseau Lucien Bouclier" -entrance VF3
     cs long-lat
 	#cs utm32
 	#cs EPSG:27572 LII étendu
-
-     fix VF3 6.79367 46.090839	2336  #ALT IGN
+     #fix VF3 6.79367 46.090839	2336  #ALT IGN
+     fix VF3 6.79367 46.090839	2324  #ALT IGN
+     #cs EPSG:27572 LII étendu
+     #fix VF3 944487 2130974	2324  # Données URSUS
+     #944487.00  2130974.00     2324.00   entrée VF3 # Données URSUS
 	# fix VF3 944487.00 2130974.00 2324.00 #   Coordonnées URSUS (LT2 Etendue) 
 	# fix VF3 329440.10087 5106506.86582 2324.00 #   Coordonnées URSUS
     # fix VF3 944520 2130930	2335  #ALT IGN

@@ -144,8 +144,8 @@ layout my_layout
 			\cavename={Gouffre Mirolda - Entrée F126} 
 		\else
 		\fi
-		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={Laurent Mangel, Vincent Vieillerobe (1999), Alexandre Pont, Xavier Robert (2023)}	
+		\newtoks\club \club={URUSU, Collectif Criou}
+		\newtoks\synth \synth={URSUS (1998), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
   
  endlayout
@@ -192,7 +192,7 @@ layout layout-coupe
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 19 cm
+  legend-width 17 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
  
@@ -205,8 +205,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -216,11 +216,11 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Groupe Spéléo Ursus, Gouffre Mirolda - Entrée F126} 
+			\cavename={Entrée F126} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={G.S. Ursus, Collectif Criou}
-		\newtoks\synth \synth={G.S Ursus (1998), Alexandre Pont, Xavier Robert (2023)}	
+		\newtoks\club \club={Ursus, Collectif Criou}
+		\newtoks\synth \synth={Ursus (1998), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
 
  endlayout
@@ -230,7 +230,7 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/F126-map.xvi
+#export map -fmt xvi -layout xviexport -o Data/F126-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/F126-coupe.xvi
 
 # Selection des Maps à exporter
@@ -239,8 +239,8 @@ select MC-F126-coupe-tot@F126
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/F126-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/F126-coupe.pdf
+# export map -proj plan -fmt pdf -o Outputs/F126-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/F126-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

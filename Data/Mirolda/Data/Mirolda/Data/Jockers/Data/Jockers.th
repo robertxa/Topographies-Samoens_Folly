@@ -16,7 +16,8 @@ survey Jockers -title "Gouffre des Jockers (FU982) - Mirolda"
     
 
     cs EPSG:27572   # Lambert II étendu --> OK
-    fix Jockers		944510	2131080	2330
+    #fix Jockers		944510	2131080	2330 # Données URSUS
+	fix Jockers		944510	2131080	2330
     station Jockers "G. des Jockers" entrance air-draught #continuation explored 1178m
 
 	

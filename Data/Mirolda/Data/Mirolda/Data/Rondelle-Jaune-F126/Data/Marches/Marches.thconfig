@@ -116,7 +116,7 @@ layout my_layout
   legend-width 17 cm
   # Un commentaire à ajouter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -189,9 +189,9 @@ layout layout-coupe
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 19 cm
+  legend-width 17 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
@@ -202,8 +202,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -213,11 +213,11 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda - Entrée Marches} 
+			\cavename={Gouffre Mirolda - F126 - Les Milles Marches} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={G.S Ursus (1999), Alexandre Pont, Xavier Robert (2023)}	
+		\newtoks\club \club={URSUS, Collectif Criou}
+		\newtoks\synth \synth={URSUS (1998), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
 
  endlayout
@@ -227,8 +227,8 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/Marches-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Marches-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/Marches-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Marches-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Marches-plan-tot@Marches
@@ -236,7 +236,7 @@ select MC-Marches-coupe-tot@Marches
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/F126_Marches-plan.pdf -layout my_layout
+# export map -proj plan -fmt pdf -o Outputs/F126_Marches-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/F126_Marches-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 

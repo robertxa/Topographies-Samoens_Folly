@@ -1,0 +1,84 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 484.75 332.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.73599999999999 1 1.0} {78.7434 F126} F126-coupe.xvi 0 {}
+
+
+
+scrap SC-F126-1 -projection extended -station-names "" "@F126" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+line wall -outline none -clip off
+  79.25 76.0
+  79.25 76.0 79.75 78.25 74.75 73.0
+  69.75 67.75 68.5 64.25 63.75 63.75
+  59.0 63.25 52.5 61.25 52.5 61.25
+  smooth off
+endline
+
+point 79.25 76.0 altitude -align bottom-right
+
+point 72.25 224.5 label -text "<bf><center>g. de la<br>Rondelle Jaune<br>(F126)" -scale xl
+
+point 44.5 84.5 entrance -orientation 106.1
+
+line wall
+  79.25 76.0
+  79.25 76.0 97.0 77.0 103.5 77.75
+  110.0 78.5 123.75 79.75 132.0 80.5
+  140.25 81.25 157.25 82.25 163.0 82.5
+  168.75 82.75 169.75 82.25 172.75 85.5
+  175.75 88.75 176.5 94.0 180.75 91.5
+  185.0 89.0 186.75 92.5 186.75 87.5
+  186.75 82.5 181.5 72.25 186.75 72.25
+  192.0 72.25 206.0 74.5 214.0 73.0
+  222.0 71.5 238.0 65.75 249.0 65.75
+  260.0 65.75 305.0 66.0 320.75 66.75
+  336.5 67.5 343.0 66.25 348.0 66.75
+  353.0 67.25 355.75 68.0 355.75 68.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  78.5 81.25
+  78.5 81.25 75.0 77.75 79.25 76.0
+endline
+
+line wall -outline none -clip off
+  78.5 81.25
+  78.5 81.25 79.25 89.75 79.25 94.75
+  79.25 99.75 80.75 109.75 84.5 111.0
+  88.25 112.25 100.25 113.75 100.25 113.75
+  smooth off
+endline
+
+line wall
+  355.5 73.25
+  355.5 73.25 353.75 74.0 346.75 75.0
+  339.75 76.0 263.25 83.75 250.0 85.75
+  236.75 87.75 225.0 91.25 218.0 88.5
+  211.0 85.75 214.25 79.0 205.75 83.75
+  197.25 88.5 187.0 97.75 181.25 97.75
+  175.5 97.75 177.5 91.0 167.75 88.25
+  158.0 85.5 117.75 85.5 109.75 84.5
+  101.75 83.5 80.0 81.75 78.5 81.25
+endline
+
+point 355.116 70.4934 station -name s64_7
+
+point 347.006 70.87339999999999 station -name s64_6
+
+point 248.50599999999997 70.87339999999999 station -name s64_5
+
+point 216.676 81.2134 station -name s64_4
+
+point 205.136 77.76339999999999 station -name s64_3
+
+point 180.036 95.9934 station -name s64_2
+
+point 169.24599999999998 85.8634 station -name s64_1
+
+point 78.73599999999999 78.7434 station -name F126
+
+endscrap
+
+
