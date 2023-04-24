@@ -113,13 +113,13 @@ endline
 
 point 3116.0 4750.75 label -text "R4"
 
-line wall -subtype pit
+line pit
   3143.25 4750.0
   3143.25 4750.0 3134.25 4759.0 3131.75 4748.0
   smooth off
 endline
 
-line wall -subtype pit
+line pit
   3038.75 4637.25
   3038.75 4637.25 3031.25 4644.25 3026.25 4639.0
   smooth off
@@ -146,6 +146,7 @@ line wall -subtype pit
   3158.0 4486.75 3164.0 4495.25 3162.25 4497.0
   altitude .
   3160.5 4498.75 3154.5 4511.25 3149.5 4510.5
+  smooth off
 endline
 
 line wall
@@ -832,6 +833,7 @@ point 2818.0 3994.5 height -value [-3 m]
 line pit
   2817.0 4014.5
   2817.0 4014.5 2812.0 4037.5 2796.0 4032.5
+  smooth off
 endline
 
 point 2788.5 4122.5 continuation -attr Code E -attr Cavite "F126" -attr Reseau "Criou" -text "Affluent à explorer après E12 à faire"
@@ -845,11 +847,13 @@ point 2802.5 4092.5 water-flow -orientation 155.5
 line pit
   2825.0 4036.5
   2825.0 4036.5 2830.0 4052.5 2826.5 4056.5
+  smooth off
 endline
 
 line pit
   2823.0 4076.5
   2823.0 4076.5 2818.5 4056.0 2807.5 4063.0
+  smooth off
 endline
 
 line wall
@@ -864,6 +868,7 @@ line wall
   2849.0 4047.5 2846.75 4041.75 2841.25 4043.75
   2835.75 4045.75 2827.0 4047.25 2824.5 4051.5
   2822.0 4055.75 2817.5 4073.5 2813.25 4076.0
+  smooth off
 endline
 
 line wall

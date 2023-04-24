@@ -22,6 +22,7 @@ centerline -extend right
     units length meters
     units compass clino degrees
 	data normal from to length compass clino right left up down	
+        extend ignore s35_16 s35_15
        s35_15 s35_16 6.19 200.00 -18.00  0.00 0.00  0.00 0.00      
        s35_16 s35_17 2.36 160.00 11.70  0.00 0.00  0.00 0.00 
        s35_17 s35_18 13.76 0.00 -90.00  0.00 0.00  0.00 0.00  # P14

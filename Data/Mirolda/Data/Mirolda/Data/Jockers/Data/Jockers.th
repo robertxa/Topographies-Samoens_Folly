@@ -20,7 +20,6 @@ survey Jockers -title "Gouffre des Jockers (FU982) - Mirolda"
 	fix Jockers		944510	2131080	2330
     station Jockers "G. des Jockers" entrance air-draught #continuation explored 1178m
 
-	
     date 1999 08 08
 		team "Vincent Vieillerobe"
 		team "Laurent Mangel"
@@ -29,8 +28,6 @@ survey Jockers -title "Gouffre des Jockers (FU982) - Mirolda"
 		team "Richard Chatain"
 		team "Nicolas Faure"
 	
-    #explo-date 1998
-    #    explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     explo-date 1998
         explo-team "URSUS"
 	#explo-date 1999 08 08
@@ -240,14 +237,17 @@ centerline -extend right
 		s87_32	s87_33	4.93	275.00	-100.0	0.40	1.50	14.00	1.00		
 		s87_33	s87_34	2.88	327.00	-22.00	0.05	0.10	0.50	0.80		# {64.22}
 		s87_34	s87_35	7.39	218.00	-100.0	1.20	1.20	1.00	0.50		
-		s87_35	s87_36	3.95	159.00	-64.00	0.50	0.80	0.50	0.50		
-		extend right
+		s87_35	s87_36	3.95	159.00	-64.00	0.50	0.80	0.50	0.50	# départ vers le réseau du cairn	
+		##extend right
+		#extend ignore s87_37 s87_36
+		##extend ignore s87_38 s87_37
 		s87_36	s87_37	3.27	238.00	-32.00	1.10	0.50	0.50	0.40		
+		extend right
 		s87_37	s87_38	2.93	209.00	-27.00	1.20	1.00	0.50	1.00		
 		s87_38	s87_39	3.68	285.00	-22.00	0.00	1.00	1.00	3.00		
 		s87_39	s87_40	8.52	303.00	-5.000	3.00	0.50	5.00	1.00	
 
-		#extend left
+		##extend left
 		# Amonts Gélifract
 		s88_00	s88_0	0.00	0.0000	0.00	1.50	1.00	2.00	1.40		
 		s88_0	s88_1	3.49	215.00	-36.00	0.20	0.20	0.40	0.70		# {906.45}
@@ -264,6 +264,27 @@ centerline -extend right
 
 endcenterline
 
+
+# centerline -extend right    
+    
+# 	# Serie: 86 - 87 - 88
+#     #========================
+# 	# [note Alex] explo URSUS 65 66
+	
+#     date 1999 08 10
+# 		team "Sylvain Matricon"
+# 		team "Laurent Mangel"
+	
+#     explo-date 1999
+#         explo-team "URSUS"
+		
+# 	units length meters
+#     units compass clino grads
+# 	data normal from to length compass clino right left up down
+# 		extend left
+
+# endcenterline
+		
 centerline -extend right    
     
 	# Serie: 90 - 91  - 92
@@ -323,28 +344,58 @@ centerline -extend right
 		s90_38	s90_39	5.49	245.00	-42.00	1.20	0.30	7.00	1.00		# haut de plafond.
 		s90_39	s90_40	6.93	190.00	-32.00	2.00	1.00	0.70	0.20		# Sur cairn. Début laminoir.
 
-		# Réseau du Cairn
-		s87_36	s91_0	0.00	0.0000	0.00	1.50	0.60	0.70	0.60		# =6.36
-		s91_0	s91_1	1.85	34.000	40.000	0.20	0.60	1.00	1.20		# {100.08}
-		s91_1	s91_2	2.58	38.000	25.000	0.00	0.50	2.20	1.50		
-		s91_2	s91_3	8.69	20.000	38.000	0.20	0.40	3.00	1.60		# {104.81}
-		s91_3	s91_4	4.48	20.000	29.000	0.20	0.20	10.00	1.50		
-		s91_4	s91_5	7.00	48.000	9.0000	1.80	1.20	0.00	1.50		# {118.98}
-		s91_5	s52_0	7.99	140.00	2.0000	2.00	1.30	1.00	1.00
-
 		s90_38	s92_0	0.00	0.0000	0.00	0.40	0.50	0.60	0.40		# =9.38
+		#extend ignore s92_1	s92_0
 		s92_0	s92_1	3.57	240.00	-9.000	0.50	0.40	2.00	5.00		# {326.67}
 		s92_1	s92_2	1.75	220.00	40.000	0.40	0.60	0.60	6.00		
 		s92_2	s92_3	1.04	180.00	-9.000	1.00	0.20	0.50	7.00		
 		s92_3	s92_4	8.78	265.00	-16.00	2.00	0.20	0.60	5.00		
 		s92_4	s92_5	4.26	110.00	0.0000	0.40	0.40	1.00	0.50		# {342.81}
+		##extend ignore s92_5	s92_6
 		s92_5	s92_6	2.94	235.00	-22.00	0.50	0.50	2.20	1.00
-		extend left		
+		extend left
+		#extend right		
+		##extend ignore 	s92_6	s92_7
 		s92_6	s92_7	28.86	305.00	-4.000	0.50	1.30	1.20	0.70
-		extend ignore 	s92_7	s11_17	
+		flags duplicate
+		#extend ignore 	s92_7	s11_17	
+		##extend ignore	s11_17	s92_7
 		s92_7	s11_17	1.00	0.0000	0.0000	0.00	0.00	0.00	0.00		# Visée fictive pour jonctionner avec le point 17 Bozzo hongroise
+		flags not duplicate
 
 endcenterline
+
+
+centerline -extend right    
+    
+	# Serie: 90 - 91  - 92
+    #========================
+	# [note Alex] explo URSUS 65 66
+	
+    date 1999 08 13
+		team "Nicolas Faure"
+		team "Laurent Mangel"
+	
+    explo-date 1999
+        explo-team "URSUS"
+		
+	units length meters
+    units compass clino grads
+	data normal from to length compass clino right left up down
+		extend right
+		# Réseau du Cairn
+		#extend ignore s87_36	s91_0
+		s87_36	s91_0	0.00	0.0000	0.00	1.50	0.60	0.70	0.60		# =6.36
+		#extend ignore s91_0	s91_1
+		s91_0	s91_1	1.85	34.000	40.000	0.20	0.60	1.00	1.20		# {100.08}
+		s91_1	s91_2	2.58	38.000	25.000	0.00	0.50	2.20	1.50		
+		s91_2	s91_3	8.69	20.000	38.000	0.20	0.40	3.00	1.60		# {104.81}
+		s91_3	s91_4	4.48	20.000	29.000	0.20	0.20	10.00	1.50		
+		s91_4	s91_5	7.00	48.000	9.0000	1.80	1.20	0.00	1.50		# {118.98}
+		s91_5	s52_0	7.99	140.00	2.0000	2.00	1.30	1.00	1.00	# Jonctionne avec les Puits Jumeaux en s52_0
+		# Fin du réseau du Cairn
+endcenterline
+
 
 centerline -extend right    
     
@@ -362,9 +413,12 @@ centerline -extend right
 	units length meters
     units compass clino grads
 	data normal from to length compass clino right left up down
-		extend right
+		extend left
+		#extend ignore s92_6	s93_0
 		s92_6	s93_0	0.00	0.0000	0.00	0.50	1.50	2.00	2.00		
+		#extend ignore	s93_0 s93_1
 		s93_0	s93_1	3.79	100.00	23.000	1.00	1.50	1.00	1.20		# {411.63}
+		extend right
 		s93_1	s93_2	8.68	160.00	-4.000	0.40	0.50	1.40	4.40		
 		s93_2	s93_3	2.22	225.00	-1.000	1.00	0.50	1.20	0.40		
 		s93_3	s93_4	4.40	140.00	-5.000	1.00	0.40	0.60	3.00		

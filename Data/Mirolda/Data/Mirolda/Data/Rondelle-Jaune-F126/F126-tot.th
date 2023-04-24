@@ -9,12 +9,16 @@ survey F126 -title "Gouffre de la Rondelle Jaune - F126"
 	input Data/F126/F126-tot.th
 	input Data/Marches/Marches-tot.th
 		equate s64_7@Marches.Marches s64_7@F126.F126	
+		join SC-Marches-1@Marches SC-F126-1@F126
+		join SC-Marches-1@Marches SC-Jonction-VF3-1@Jonction-VF3
 	input Data/Bricole_Amont/Bricole_Amont-tot.th
 		equate s69_47@Bricole_Amont.Bricole_Amont s69_47@Marches.Marches
 		join SP-Marches-5@Marches SP-Bricole_Amont-1@Bricole_Amont
 	input Data/Bricole_Aval/Bricole_Aval-tot.th
 		equate s69_47@Bricole_Aval.Bricole_Aval s69_47@Bricole_Amont.Bricole_Amont
 		join SP-Marches-5@Marches SP-Bricole_Aval-1@Bricole_Aval
+		join SC-Bricole-Amont-2@Bricole_Amont SC-Bricole-Aval-1@Bricole_Aval
+
 	input Data/Jonction-VF3/Jonction-VF3-tot.th
 		equate s64_7@Jonction-VF3.Jonction-VF3 s64_7@F126.F126
 

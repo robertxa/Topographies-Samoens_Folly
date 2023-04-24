@@ -16,11 +16,48 @@ map MP-F126-plan-tot -title "Gouffre de la Rondelle Jaune - F126"
 	MP-Bricole_Aval-plan-tot@Bricole_Aval
 endmap
 
-map MC-F126-coupe-tot -title "Gouffre de la Rondelle Jaune - F126"
-	MC-Marches-coupe-tot@Marches
+map MC-F126-coupe -title "Gouffre de la Rondelle Jaune - F126"	
+	#MC-Marches-coupe-tot@Marches
+	MC-Marches-1@Marches
+	break
+	MC-Marches-2@Marches [0 40] below
+	break 
+	MC-Marches-3@Marches
 	break
 	MC-Jonction-VF3-coupe-tot@Jonction-VF3
 	break
 	MC-F126-coupe-tot@F126
+	#break
+    #MC-Bricole_Amont-coupe-tot@Bricole_Amont
+endmap
+
+map MC-Bricole-Amont-coupe -title "Gouffre de la Rondelle Jaune - F126"	
+    MC-Bricole_Amont-coupe-tot@Bricole_Amont
+endmap
+
+
+map MC-F126-coupe-tot -title "Gouffre de la Rondelle Jaune - F126"
+	
+	##MC-Marches-coupe-tot@Marches
+	#MC-Marches-1@Marches
+	#break
+	#MC-Marches-2@Marches [0 40] below
+	#break 
+	#MC-Marches-3@Marches
+	#break
+	#MC-Jonction-VF3-coupe-tot@Jonction-VF3
+	#break
+	#MC-F126-coupe-tot@F126
+	#break
+    #MC-Bricole_Amont-coupe-tot@Bricole_Amont
+	MC-Bricole-Amont-coupe-2@Bricole_Amont
+	break
+	MC-F126-coupe
+	break
+	MC-Bricole-Amont-coupe-1@Bricole_Amont [80 -200 m] below
+	break
+	MC-Bricole_Aval-coupe-tot@Bricole_Aval
+	
+
 endmap
    

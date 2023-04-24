@@ -184,13 +184,13 @@ layout layout-coupe
   # Position de la manchette. Voir layout ci-dessus.
   map-header 0 -50 nw
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   # Légende. Voir layout ci-dessus.
   legend off
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 19 cm
+  legend-width 17 cm
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "<it>COupe développée - <ss>Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
@@ -201,8 +201,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -215,8 +215,8 @@ layout layout-coupe
 			\cavename={Gouffre Mirolda - Bricole Amont} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléo Ursus, Collectif Criou}
-		\newtoks\synth \synth={G.S. Ursus (1998), Alexandre Pont, Xavier Robert (2023)}	
+		\newtoks\club \club={URSUS, Collectif Criou}
+		\newtoks\synth \synth={URSUS (1998), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
 
  endlayout
@@ -235,7 +235,7 @@ select MC-Bricole_Amont-coupe-tot@Bricole_Amont
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/BricoleAmont-plan.pdf -layout my_layout
+# export map -proj plan -fmt pdf -o Outputs/BricoleAmont-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/BricoleAmont-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 

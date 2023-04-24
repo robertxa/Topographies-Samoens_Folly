@@ -26,7 +26,7 @@ survey VF3 -title "Gouffre VF3"
 	input Data/Danton/Danton-tot.th	#	Réseau du Puits Danton, il doit jonctionner aussi avec la Bricole Amont, mais il manque un bout de topo pour l'instant
 		equate s35_15@Chauves-Souris.Chauves-Souris s35_15@Danton.Danton
 		join SP-Danton-1@Danton SP-Chauves-Souris-1@Chauves-Souris
-		join SC-Danton-1@Danton SC-Chauves-Souris-3@Chauves-Souris
+		#join SC-Danton-1@Danton SC-Chauves-Souris-3@Chauves-Souris
 	
 	input Data/Prof-Blanchon/Prof-Blanchon-tot.th	# Réseau du Professeur Blanchon
 		equate s34_11@Blanchon.Prof-Blanchon s34_11@Chauves-Souris.Chauves-Souris
@@ -55,7 +55,7 @@ survey VF3 -title "Gouffre VF3"
 		
 	input Data/Combattant/Combattant-tot.th	# Réseau du Combattant à partir Sado Bozzo
 		equate  s14_7@Combattant.Combattant s14_7@Hongroise.Hongroise
-		equate  s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo extend ignore
+		equate  s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo #extend ignore
 		#centerline
 		#	#extend ignore s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo
 		#	equate  s43_32@Combattant.Combattant s43_32@Sado-Bozzo.Sado-Bozzo

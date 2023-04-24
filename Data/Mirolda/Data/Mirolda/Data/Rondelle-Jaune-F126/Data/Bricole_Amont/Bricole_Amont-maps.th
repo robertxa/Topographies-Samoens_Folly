@@ -12,9 +12,20 @@ map MP-Bricole_Amont-plan-tot -title "Gouffre Mirolda - F126 - Bricole Amont"
 	SP-Bricole_Amont-1
 endmap
 
-#map MC-Bricole_Amont-coupe-tot -title "Gouffre Mirolda - F126 - Bricole Amont"
-#	SC-Bricole_Amont-1
-#	break
-#	SC-B3c2
-#endmap
+
+map MC-Bricole-Amont-coupe-1 -title "Gouffre Mirolda - F126 - Bricole Amont"
+	SC-Bricole-Amont-1
+	break
+	SC-Secours-1
+endmap
+
+map MC-Bricole-Amont-coupe-2 -title "Gouffre Mirolda - F126 - Bricole Amont"
+	SC-Bricole-Amont-2
+endmap
+
+map MC-Bricole_Amont-coupe-tot -title "Gouffre Mirolda - F126 - Bricole Amont"
+	MC-Bricole-Amont-coupe-1
+	break
+	MC-Bricole-Amont-coupe-2
+endmap
    

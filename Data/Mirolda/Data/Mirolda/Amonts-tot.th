@@ -16,6 +16,7 @@ survey Mirolda -title "Gouffre Mirolda - Réseau Lucien Bouclier"
 			#Bouclage : 1.54%   23.4m 1519.0m 300   -5.0m   -8.0m  -21.4m
 			# Est-ce OK ? J'ai l'impression qu'il y a 3 visées en doubles
 		join SP-Bricole_Amont-2@Bricole_Amont.F126 SP-Danton-1@Danton.VF3
+		join SC-Bricole-Amont-1@Bricole_Amont.F126 SC-Danton-1@Danton.VF3
 
 	input Data/VF3/VF3-tot.th
 
@@ -24,6 +25,7 @@ survey Mirolda -title "Gouffre Mirolda - Réseau Lucien Bouclier"
 		join SP-Jockers-7@Jockers SP-Hongroise-4@Hongroise.VF3
 		join SP-Jockers-9@Jockers SP-Hongroise-4@Hongroise.VF3
 		equate s52_0@Jockers.Jockers  s52_0@Puits-Jumeaux.Puits-Jumeaux.VF3
+			# Jonction Réseau du Cairn et Puits Jumeaux
 		#join
 
 	# Import des maps

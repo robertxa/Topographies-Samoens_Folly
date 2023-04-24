@@ -29,13 +29,22 @@ map MP-Mirolda-plan-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
 endmap
 
 
+map MC-Amonts-Mirolda-coupe -title "Réseau Lucien Bouclier : Jockers, VF3 & F126"
+#map MC-Mirolda-coupe-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
+	##MC-Jockers-coupe@Jockers [-300 -300] above
+	MC-Jockers-coupe@Jockers [900 0 m] above
+	break
+	MC-Jockers-Jction@Jockers
+	break
+	MC-VF3-coupe-tot@VF3
+	MC-Hongroise-Jockers@Jockers [-40 -50 m] below # déplace le dessin topographié de 50 m vers le bas pour faciliter la lecture de la topographie
+	break
+	MC-F126-coupe-tot@F126
+endmap   
+
 map MC-Mirolda-coupe-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
-
-#	MC-Jockers-coupe@Jockers
-#	break
-#	MC-Hongroise-Jockers
-#	break
-
-	MC-VF3-coupe-tot
+	MC-Amonts-Mirolda-coupe
+	break
+	MC-CD11-coupe-tot@CD11
 endmap
    

@@ -19,9 +19,22 @@ endmap
 
 
 ############ Maps pour la coupe développée ##########
-map MC-Marches-coupe-tot -title "Gouffre Mirolda - F126 - 1000 Marches"
+map MC-Marches-1 -title "Gouffre Mirolda - F126 - 1000 Marches"
 	SC-Marches-1
-#	break
-#	SC-B3c2
+endmap
+map MC-Marches-2 -title "Gouffre Mirolda - F126 - 1000 Marches"
+	# Decalable, map jonctions OK
+	SC-Marches-2
+endmap
+map MC-Marches-3 -title "Gouffre Mirolda - F126 - 1000 Marches"
+	SC-Marches-3
+endmap
+
+map MC-Marches-coupe-tot -title "Gouffre Mirolda - F126 - 1000 Marches"
+	MC-Marches-1
+	break
+	MC-Marches-2
+	break
+	MC-Marches-2
 endmap
    

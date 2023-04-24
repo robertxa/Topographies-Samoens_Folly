@@ -175,11 +175,12 @@ layout layout-coupe
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
   scale 1 1500
   # echelle graphique 100 m ampleur
-  scale-bar 150 m
+  scale-bar 200 m
 
   # Une grille ?
   grid-size 200 200 200 m  
   grid bottom
+  #grid off
  
   # la topo est transparente
   transparency on
@@ -194,7 +195,7 @@ layout layout-coupe
   doc-title "Mirolda coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 0 nw
+  map-header 0 50 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende. Voir layout ci-dessus.
@@ -268,7 +269,7 @@ select MC-Amonts-Mirolda-coupe-tot@Mirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Lucien_Bouclier-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/Lucien_Bouclier-plan.pdf -layout my_layout
  #export map -proj plan -fmt pdf -o Outputs/Mirolda-plan-continuations.pdf -layout my_layout-continuations
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Lucien_Bouclier-coupe.pdf
  #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Mirolda-coupe-continuations.pdf

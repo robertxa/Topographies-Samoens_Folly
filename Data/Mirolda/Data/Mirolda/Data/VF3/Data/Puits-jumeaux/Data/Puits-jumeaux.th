@@ -102,12 +102,6 @@ endcenterline
 
 # centerline -extend right    
     
-    # #date 2021.08.12
-        # #team "Xavier Robert"
-    # date 1995
-        # #team "Xavier Robert"
-    # explo-date 1972
-        # explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
     # explo-date 1978
         # explo-team "URSUS"
 
@@ -234,6 +228,7 @@ centerline -extend right    #[Ajout Alex]
        flags approximate
        s52_16   s52_16b 100 0   90  0   0   0   0   # E100 ?
        flags not approximate
+       #extend ignore s52_16 s40_39 # pour que dessin soit non déformé avec ajout Jockers
        s52_16 s40_39 9.75 25.00 -5.00  0.00 0.00  0.00 0.00  # Observ: =40.39
 
 endcenterline
