@@ -70,7 +70,8 @@ map MC-VF3-coupe-tot -title "Gouffre VF3"
     break
     MC-Puits-Jumeaux-3@Puits-Jumeaux    # [-300 50 m] below # déplace le dessin topographié de 50 m vers le N et 200 m vers l'ouest pour faciliter la lecture de la topographie
     break
-    MC-Puits-Jumeaux-1@Puits-Jumeaux [-270 30 m] below # déplace le dessin topographié de 50 m vers le N et 300 m vers l'ouest pour faciliter la lecture de la topographie
+    #MC-Puits-Jumeaux-1@Puits-Jumeaux [-270 30 m] below # déplace le dessin topographié de 50 m vers le N et 300 m vers l'ouest pour faciliter la lecture de la topographie
+    MC-Puits-Jumeaux-1@Puits-Jumeaux [-200 -250 m] below # déplace le dessin topographié de 50 m vers le N et 300 m vers l'ouest pour faciliter la lecture de la topographie
     break
     MC-Discovery-1@Puits-Jumeaux
     break

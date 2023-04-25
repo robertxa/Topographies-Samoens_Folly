@@ -213,7 +213,7 @@ line border -id l64-2414-380 -close on
   smooth off
 endline
 
-point 2736.5 282.5 label -text "galerie Hongroise"
+point 3243.5 424.0 label -text "galerie Hongroise"
 
 point 3046.5 525.5 air-draught -orientation 72.4 -scale s -subtype summer
 
@@ -245,11 +245,11 @@ line wall
 endline
 
 line arrow -place bottom
-  2337.5 286.0
+  2303.0 228.0
   2391.5 358.5
 endline
 
-point 2328.0 258.0 label -text "<center>arrivée du<br>VF3"
+point 2300.0 190.5 label -text "<center>arrivée du<br>VF3"
 
 line wall
   3215.5 531.0
@@ -542,6 +542,21 @@ area u:galerie
   l113-1823-422
 endarea
 
+line map-connection
+  1861.5 429.0
+  2153.5 415.5
+endline
+
+line map-connection
+  1817.0 421.5
+  1861.5 429.0
+endline
+
+line map-connection
+  1716.0 436.0
+  1861.5 429.0
+endline
+
 line border -id l113-1823-422 -close on
   1813.5 428.0
   1813.5 428.0 1804.0 419.5 1806.0 415.5
@@ -554,11 +569,11 @@ endline
 point 1235.5 492.5 label -orientation 10.8 -text "galerie Hongroise"
 
 line arrow -place bottom
-  1802.0 331.5
+  1794.0 234.0
   1812.0 391.0
 endline
 
-point 1800.0 296.5 label -text "<center>arrivée du<br>gouffre des Jockers"
+point 1793.5 210.5 label -text "<center>arrivée du<br>gouffre des Jockers"
 
 point 1814.7900000000002 413.746 station -name s11_14
 

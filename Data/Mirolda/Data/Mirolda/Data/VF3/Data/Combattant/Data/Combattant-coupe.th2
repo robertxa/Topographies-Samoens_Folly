@@ -462,6 +462,13 @@ area u:galerie
   l157-3593-540
 endarea
 
+point 3637.0 641.0 label -text "<center>arrivée du réseau<br>Sado Bozzo"
+
+line arrow
+  3633.0 591.0
+  3593.5 540.75
+endline
+
 line border -id l157-3593-540 -close on
   3593.5 540.75
   3593.5 540.75 3589.5 542.75 3589.5 539.25

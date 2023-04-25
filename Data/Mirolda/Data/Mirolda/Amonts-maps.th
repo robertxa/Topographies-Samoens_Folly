@@ -27,7 +27,9 @@ map MC-Amonts-Mirolda-coupe-tot -title "Réseau Lucien Bouclier : Jockers, VF3 &
 #map MC-Mirolda-coupe-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
 
 	##MC-Jockers-coupe@Jockers [-300 -300] above
-	MC-Jockers-coupe@Jockers [900 0 m] above
+	#MC-Jockers-coupe@Jockers [900 0 m] above
+	#MC-Jockers-coupe@Jockers [900 0 m] below
+	MC-Jockers-coupe@Jockers [780 50 m] below
 	break
 	MC-Jockers-Jction@Jockers
 	break

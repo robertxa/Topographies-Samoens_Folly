@@ -152,7 +152,7 @@ layout my_layout
 			\cavename={Gouffre Mirolda} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={URSUS, Collectif Criou}
+		\newtoks\club \club={URSUS, Collectif Mirolda}
 		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), URSUS (1991, 1998), Alexandre Pont, Xavier Robert (2023)}
     \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
@@ -179,6 +179,7 @@ layout layout-coupe
   # Une grille ?
   grid-size 200 200 200 m  
   grid bottom
+  grid-coords border
  
   # la topo est transparente
   transparency on
@@ -226,7 +227,7 @@ layout layout-coupe
 			\cavename={Gouffre Mirolda} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={URSUS, Collectif Criou}
+		\newtoks\club \club={URSUS, Collectif Mirolda}
 		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), URSUS (1991, 1998),Alexandre Pont, Xavier Robert (2023)}
     \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession ! QUI METTRE D'AUTRE ?}		
 	endcode   

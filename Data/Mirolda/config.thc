@@ -187,6 +187,10 @@ text en "point u:symbol_extend" ""
 text fr "point u:symbol_extend" ""
 text es "point u:symbol_extend" ""
 
+text en "point wall-altitude" "altitude (m)"
+text fr "point wall-altitude" "altitude (m)"
+text es "point wall-altitude" "altura (m)"
+
 
 ### Layouts Languages/langues
 
@@ -409,7 +413,12 @@ layout drawingconfig
 	symbol-color line wall:clay [52 33 6]	# Color to verify
 	#symbol-color point clay-tree [52 33 6]	# Color to verify
 	symbol-color point clay-choke [52 33 6]	# Color to verify
-	symbol-color point wall-altitude [78 8 52]	# rouge-violet 199, 21, 133
+	#symbol-color point wall-altitude [78 8 52]	# rouge-violet 199, 21, 133
+	symbol-color point wall-altitude [100 50 0]	
+	
+
+	#symbol-color line map-connection [81 81 81]	# gris argent (206, 206, 206)
+	symbol-color line map-connection [69 69 69]	# gris acier (175, 175, 175)
 
 	####### Metapost-changes ############
 	code metapost
@@ -2770,5 +2779,73 @@ layout test
  		enddef;
 
 	endcode
+
+endlayout
+
+
+
+layout depth
+
+	code metapost
+		#<en> Change the altitude definition
+		#     This label requires to specify the position of text relative to point with
+		#     help of -align in the options box.
+		#<fr> Changer la définition du point altitude
+		#     Ce label nécessite la position spécifique de l'étiquette de texte de façon relative
+		#      au point avec l'aide de l'option -align.
+		#ex: -align bottom-right/top-left/top-right/bottom-left/top/bottom/left/right...
+		
+		#def p_altitude_depth (expr pos) =
+		def p_u_prof (expr pos) =
+			T:=identity shifted pos;
+			pickup PenD;
+			p:=(-.3u,0)--(.3u,0);
+			thdraw p; thdraw p rotated 90;
+			p:=fullcircle scaled .2u;
+			thclean p; thdraw p;
+		enddef;
+		# vardef p_label@#(expr txt,pos,rot,mode) =
+		# 	if mode=1:
+		# 		thdrawoptions(withcolor .8red + .4blue);
+		# 		p_u_prof(pos);
+		# 		#%% append "m" to label
+		# 		picture txtm;
+		# 		txtm:=image(
+		# 			draw txt;
+		# 			interim labeloffset:=0;
+		# 			label.urt(btex \thaltitude { m} etex, lrcorner txt);
+		# 			#label.urt(btex \thheight m etex, lrcorner txt);
+		# 		);
+		# 		#%% give extra offset in case of l/r/t/b alignment
+		# 		pair ctmp;
+		# 		ctmp:=center thelabel@#("x", (0,0));
+		# 		if (xpart ctmp * ypart ctmp)=0:
+		# 			interim labeloffset:=(.4u);
+		# 		else: % diagonal alignment
+		# 			interim labeloffset:=(.2u);
+		# 		fi;
+		# 		#% draw label
+		# 		lab:=thelabel@#(txtm, pos);
+		# 		draw lab _thop_; % use color
+		# 		thdrawoptions();
+		# 		bboxmargin:=0.8bp;
+		# 		write_circ_bbox((bbox lab) smoothed 2);
+		# 	else:
+		# 		if mode=7: interim labeloffset:=(u/8) fi;
+		# 		lab:=thelabel@#(txt, pos);
+		# 		if mode>1: pickup PenD fi;
+		# 		if mode=2: process_uplabel;
+		# 		elseif mode=3: process_downlabel;
+		# 		elseif mode=4: process_updownlabel;
+		# 		elseif mode=5: process_circledlabel;
+		# 		elseif mode=6: process_boxedlabel;
+		# 		elseif mode=7: process_label(pos,rot);  % station name
+		# 		elseif mode=8: process_filledlabel(pos, rot);
+		# 		else: process_label(pos,rot); fi;
+    	# 	fi;
+	  	# enddef;
+	endcode
+
+	#symbol-color point altitude_depth [100 100 100]
 
 endlayout
