@@ -22,7 +22,7 @@ survey Peterets -title "Résurgence temporaire des Péterets" -entrance R-petere
     units length meters
     units compass clino degrees
     data normal from to length compass backclino
-        extend left
+        extend right
         R-peterets   1	2.42	0.0	90.0    # Entrée
         1   2	3.47	96.3	45.9
         2   3	5.19	85.5	19.8

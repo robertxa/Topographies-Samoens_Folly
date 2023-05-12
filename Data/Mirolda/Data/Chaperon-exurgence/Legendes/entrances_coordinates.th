@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-layout Entrances_coords_JBBa
+layout Entrances_coords_Chaperon
 # Layout where we define the different variables that contain the text with 
 # the entrance coordinates we want to print in the header.
 # We need one variable per entrance.
@@ -14,16 +14,16 @@ layout Entrances_coords_JBBa
 
 	code tex-map
 		\def\thjunk{ }
-		\def\thlocationJBBa{B3    --  Lat. : 46.101166 N ; Long. : 6.788412 E ; Alt. : 2090 m}
+		\def\thlocationChaperon{Résurgence temp. de Chaperon    --  Lat. : 46.101166 N ; Long. : 6.788412 E ; Alt. : 2090 m}
 	endcode 
 	
 endlayout
 
 
-layout Coords_Header_JBBa
+layout Coords_Header_Chaperon
 # Layout that set the presentation for the entrance coordinates.
 	
-	copy Entrances_coords_JBBa
+	copy Entrances_coords_Chaperon
 	# it calls the layout above Entrances_coords where we defined the different 
 	# variables that contain the text with 
 	# the entrance coordinates we want to print in the header.
@@ -41,8 +41,8 @@ layout Coords_Header_JBBa
 			\edef\tmp{\thjunk} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thjunk\vss}
 			\fi
-			\edef\tmp{\thlocationJBBa} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip2cm  \ss\thlocationJBBa\vss}	% The first one should be without hskip
+			\edef\tmp{\thlocationChaperon} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationChaperon\vss}	% The first one should be without hskip
 			\fi
 		}
 	endcode
