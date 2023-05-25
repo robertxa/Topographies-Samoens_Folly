@@ -231,6 +231,17 @@ layout my_layout-coupe-Continuations
 	copy layoutcontinuation	# Pour afficher le label des continuations
 endlayout
 
+layout layout-kml
+  # Définition du système de projection du plan
+  cs UTM32
+  # Couleur de la topographie
+  # Rouge-Orange = 255,69,0 -->
+  color map-fg [100 27 0]
+  # Orange = 255,165,0 -->
+  # Orange Sombre = 255,140,0 -->
+  # Bleu --> 0, 0 255
+  #color map-fg [0 0 100]
+endlayout
   
 # 3-EXPORTS   
 #export map -fmt xvi -layout xviexport -o Data/A21-map.xvi
@@ -255,4 +266,4 @@ export model -o Outputs/A21.lox
 export map -proj plan -fmt esri -o Outputs/A21 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/A21.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/A21.kml -layout layout-kml

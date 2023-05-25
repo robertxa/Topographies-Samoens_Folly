@@ -217,6 +217,16 @@ layout my_layout-continuations
 	copy layoutcontinuation	# Pour afficher le label des continuations
 endlayout
 
+layout layout-kml
+  # Définition du système de projection du plan
+  cs UTM32
+  # Couleur de la topographie
+  # Rouge-Orange = 255,69,0 -->
+  # Orange = 255,165,0 -->
+  # Orange Sombre = 255,140,0 -->
+  # Bleu --> 0, 0 255
+  color map-fg [0 0 100]
+endlayout
 
 # 3-EXPORT
 # Voici les lignes pour exporter le cheminement au format xvi
@@ -252,8 +262,8 @@ export map -proj plan -fmt esri -o Outputs/3D/JB-map #-layout my_layout
 export model -o Outputs/3D/jb-Xav-2022.lox
 
 # Export des fichiers kml
-export map -fmt kml -layout my_layout -o Outputs/2D/jb-Xav-2022.kml
-export model -fmt kml -o Outputs/2D/jb_m-Xav-2022.kml
+export map -fmt kml -layout layout-kml -o Outputs/2D/jb-Xav-2022.kml
+export model -fmt kml -o Outputs/2D/jb_m-Xav-2022.kml -enable all
 
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent

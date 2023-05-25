@@ -1,0 +1,153 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -170.0 -157.6708 198.5 242.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {40.4387 1 1.0} {29.6709 0} A27-map.xvi 0 {}
+
+
+
+scrap SP-A27-1 -projection plan -station-names "" "@A27" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-168.4288 -157.6708 166.3114 -157.6708 0.0 0.0 8.502401079999999 0.0 m]
+
+line pit -close on
+  22.5 27.0
+  22.5 27.0 19.25 30.5 17.75 27.75
+  16.25 25.0 15.25 20.5 17.0 19.5
+  18.75 18.5 24.75 18.0 24.5 20.5
+  24.25 23.0 22.5 27.0 22.5 27.0
+  smooth off
+endline
+
+point -40.75 113.0 label -text "<bf>A27" -scale xl
+
+point -8.5 73.75 entrance -orientation 148.1
+
+line wall -subtype invisible
+  18.75 62.75
+  18.75 62.75 14.0 62.75 8.5 58.25
+  3.0 53.75 -2.25 49.25 -3.25 46.75
+  smooth off
+endline
+
+line slope
+  26.25 37.25
+  26.25 37.25 19.0 27.75 8.25 27.5
+  l-size 6.0
+endline
+
+line slope
+  23.75 45.75
+  23.75 45.75 15.0 35.5 5.25 35.0
+  l-size 6.0
+endline
+
+line slope
+  18.5 54.25
+  18.5 54.25 13.5 45.25 3.5 43.75
+  l-size 6.0
+endline
+
+point -3.25 46.75 altitude -align left
+
+point -1.75 13.25 height -value [-7 m]
+
+point 32.25 7.0 pebbles
+
+point 34.5 11.5 pebbles
+
+point 25.5 12.25 pebbles
+
+point 31.25 16.5 pebbles
+
+line wall
+  38.5 9.5
+  38.5 9.5 36.75 18.25 32.75 22.75
+  28.75 27.25 23.5 34.75 22.0 39.5
+  20.5 44.25 16.5 50.5 15.75 52.0
+  15.0 53.5 12.75 55.5 14.75 58.0
+  16.75 60.5 18.75 62.75 18.75 62.75
+  smooth off
+endline
+
+line wall
+  -3.25 46.75
+  -3.25 46.75 3.25 51.75 4.25 49.0
+  5.25 46.25 4.0 45.75 6.25 39.75
+  8.5 33.75 11.75 29.0 13.75 25.0
+  15.75 21.0 17.25 16.0 20.0 12.0
+  22.75 8.0 32.5 5.0 32.5 5.0
+  smooth off
+endline
+
+point 19.838699999999996 22.2509 station -name 3
+
+point 13.328699999999996 51.2809 station -name 4
+
+point 6.168699999999994 50.5309 station -name A27
+
+endscrap
+
+
+
+scrap SP-A27-2 -projection plan -station-names "" "@A27" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-168.4288 -157.6708 166.3114 -157.6708 0.0 0.0 8.502401079999999 0.0 m]
+
+point 44.5 5.25 pebbles
+
+point 42.75 8.75 pebbles
+
+point 49.75 7.25 pebbles
+
+line wall
+  43.0 10.0
+  43.0 10.0 35.0 30.25 38.0 27.25
+  41.0 24.25 43.5 16.5 45.0 12.25
+  46.5 8.0 49.5 4.75 49.5 4.75
+  smooth off
+endline
+
+line wall
+  24.5 20.5
+  24.5 20.5 23.5 28.0 26.0 29.25
+  28.5 30.5 29.75 32.5 31.5 29.75
+  33.25 27.0 34.5 23.25 34.5 23.25
+  smooth off
+  40.75 8.5
+endline
+
+point 69.25 -3.25 continuation -attr  Code D -attr Cavite "A27" -attr Reseau "A21" -attr CA "Couant d'air soufflant en été" -text "méandre colmaté par des galets, courant d'air, devrait donner accès à l'amont de la trémie des frayeurs (A21)"
+
+point 64.75 -21.75 air-draught -orientation 331.3 -subtype summer -scale s
+
+point 21.75 62.0 water-flow -orientation 155.4
+
+point 52.5 6.0 altitude -align right
+
+line pit
+  34.5 45.75
+  34.5 45.75 30.25 49.25 26.5 44.75
+endline
+
+line wall
+  23.75 53.5
+  23.75 53.5 28.75 46.25 26.5 44.75
+  24.25 43.25 24.5 42.25 20.25 42.75
+  16.0 43.25 12.75 47.25 13.25 42.0
+  13.75 36.75 13.5 33.5 13.0 31.25
+  12.5 29.0 16.0 22.0 16.0 22.0
+  smooth off
+endline
+
+line wall
+  52.5 6.0
+  52.5 6.0 46.25 20.0 44.75 24.25
+  43.25 28.5 42.0 30.75 39.75 34.5
+  37.5 38.25 27.25 53.0 26.0 55.0
+endline
+
+point 48.81869999999999 9.1909 station -name 1
+
+point 40.4387 29.6709 station -name 0
+
+point 20.618699999999997 32.6609 station -name 2
+
+endscrap
+
+
