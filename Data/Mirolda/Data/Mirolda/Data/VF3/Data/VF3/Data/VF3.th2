@@ -7,15 +7,15 @@ encoding  utf-8
 
 scrap SP-VF3-1 -projection plan -station-names "" "@VF3" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 679.1814 -128.0 0.0 0.0 20.50240756 0.0 m]
 
-line wall
+line wall -outline in
   482.75 321.5
-  482.75 321.5 485.25 324.25 487.5 324.25
+  482.75 321.5 486.25 323.75 487.5 324.25
   smooth off
 endline
 
 line wall
   484.25 327.75
-  484.25 327.75 482.25 324.75 480.25 322.75
+  484.25 327.75 481.25 323.75 480.25 322.75
   smooth off
 endline
 

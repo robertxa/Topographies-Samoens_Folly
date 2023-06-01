@@ -18,7 +18,7 @@ echo ''
 # 1- Générer les shapefiles 3D des différentes topographies de tout le système
 echo '    1- Construction des shapefiles 3D et des listes de cavités...'
 echo '          Attention, cette étape est longue !!!'
-therion SamoensGIS.thconfig
+#therion SamoensGIS.thconfig
 echo ''
 # 2- Construire ou mettre à jour les shapefiles des entrées de cavités majeures
 echo '    2- Travail sur les shapefiles des entrées de cavités majeures....'

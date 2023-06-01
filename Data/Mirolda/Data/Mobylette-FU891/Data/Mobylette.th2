@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -170.0 -219.0 402.5 334.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {118.1089 1 1.0} {125.983 FU891} Mobylette-map.xvi 0 {}
 
 
@@ -17,12 +17,14 @@ line wall
   84.5 39.0 85.75 37.5 86.0 36.75
   86.25 36.0 89.75 34.5 91.25 35.0
   92.75 35.5 90.0 40.75 94.0 39.75
+  smooth off
 endline
 
 line wall -subtype pit
   57.75 106.5
   57.75 106.5 64.75 109.5 65.75 103.25
   66.75 97.0 65.25 86.5 66.0 82.0
+  smooth off
 endline
 
 line wall
@@ -43,6 +45,7 @@ line wall -subtype pit
   66.0 190.25 52.25 191.0 44.0 188.5
   35.75 186.0 34.25 177.5 36.25 172.5
   38.25 167.5 40.75 165.0 42.25 162.75
+  smooth off
 endline
 
 line wall
@@ -51,12 +54,14 @@ line wall
   123.25 131.0 126.0 157.5 125.75 164.5
   125.5 171.5 127.75 173.25 123.0 176.75
   118.25 180.25 105.5 186.25 102.75 187.25
+  smooth off
 endline
 
 line wall -subtype invisible
   107.75 126.0
   107.75 126.0 113.5 121.0 119.25 121.25
   125.0 121.5 128.75 119.75 130.75 123.5
+  smooth off
 endline
 
 line wall
@@ -74,12 +79,14 @@ line wall -subtype pit
   61.75 171.75 59.75 177.75 67.5 177.0
   75.25 176.25 75.0 172.0 81.0 172.0
   87.0 172.0 92.75 171.5 96.0 173.5
+  smooth off
 endline
 
 line wall
   56.0 120.75
   56.0 120.75 54.75 127.5 53.25 135.75
   51.75 144.0 53.0 158.75 53.75 162.5
+  smooth off
 endline
 
 line wall -subtype pit
@@ -87,6 +94,7 @@ line wall -subtype pit
   84.0 82.25 94.0 110.0 89.0 116.0
   84.0 122.0 73.5 127.5 65.25 128.0
   57.0 128.5 58.75 122.5 56.0 120.75
+  smooth off
 endline
 
 line wall
@@ -94,7 +102,7 @@ line wall
   84.0 82.25
 endline
 
-line wall
+line wall -outline in
   86.5 48.0
   86.5 48.0 81.75 46.5 81.25 48.5
   80.75 50.5 80.5 53.5 80.5 55.75
@@ -102,10 +110,10 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   82.0 59.5
-  82.0 59.5 84.25 54.25 85.0 52.75
-  85.75 51.25 86.5 48.0 86.5 48.0
+  82.0 59.5 84.77 55.29 85.0 52.75
+  85.25 50.0 86.5 48.0 86.5 48.0
   smooth off
 endline
 
@@ -113,12 +121,14 @@ line wall
   90.75 47.5
   90.75 47.5 89.25 51.75 87.75 54.25
   86.25 56.75 84.5 59.5 84.5 62.25
+  smooth off
 endline
 
 line wall -subtype pit
   114.25 52.5
   114.25 52.5 109.5 53.0 102.75 52.0
   96.0 51.0 94.25 47.5 90.75 47.5
+  smooth off
 endline
 
 point 271.75 125.5 label -text "<bf><center>g. de la<br>Mobylette<br>(FU891)" -scale xl
@@ -149,6 +159,7 @@ line wall
   altitude .
   142.5 55.5 134.5 57.5 128.75 56.25
   123.0 55.0 116.5 53.0 114.25 52.5
+  smooth off
 endline
 
 line wall
@@ -161,6 +172,7 @@ endline
 line pit
   113.0 36.75
   113.0 36.75 99.5 43.75 99.5 54.5
+  smooth off
 endline
 
 point 133.75 31.25 height -value [-44 m]
@@ -174,32 +186,38 @@ point 35.75 203.75 height -value [-22 m]
 line pit
   94.75 170.75
   94.75 170.75 102.25 183.75 101.75 191.5
+  smooth off
 endline
 
 line pit
   56.0 157.0
   56.0 157.0 45.5 161.25 40.75 155.5
+  smooth off
 endline
 
 line pit
   97.75 22.5
   97.75 22.5 114.5 21.5 114.75 27.25
+  smooth off
 endline
 
 line pit
   94.25 51.75
   94.25 51.75 90.5 47.5 92.75 37.5
+  smooth off
 endline
 
 line pit
   58.25 127.0
   58.25 127.0 54.5 113.0 58.5 101.75
+  smooth off
 endline
 
 line wall -subtype pit
   112.5 25.25
   112.5 25.25 106.5 38.0 111.0 39.5
   115.5 41.0 115.25 43.0 118.75 46.25
+  smooth off
 endline
 
 line wall
@@ -210,6 +228,7 @@ endline
 line wall
   103.0 23.5
   103.0 23.5 105.0 18.5 105.25 17.0
+  smooth off
 endline
 
 line wall -subtype pit

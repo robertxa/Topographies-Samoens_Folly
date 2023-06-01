@@ -89,6 +89,7 @@ endline
 line wall
   832.5 522.0
   832.5 522.0 849.25 535.0 861.5 535.5
+  smooth off
 endline
 
 line wall -subtype blocks
@@ -163,6 +164,7 @@ line wall -subtype blocks
   933.25 622.75 908.0 620.5 902.25 612.5
   896.5 604.5 886.75 602.5 882.5 591.0
   878.25 579.5 880.25 568.25 876.75 565.25
+  smooth off
 endline
 
 line wall
@@ -266,16 +268,16 @@ line wall -reverse on -subtype invisible
   1040.25 165.5
 endline
 
-line wall -outline in
+line wall -outline none -clip off -subtype pit
   1040.25 165.5
   1040.25 165.5 1037.0 160.75 1033.0 160.25
   smooth off
 endline
 
-line wall -reverse on -outline in
+line wall -reverse on
   1040.25 165.5
   1040.25 165.5 1037.0 168.5 1036.25 167.75
-  1035.5 167.0 1031.75 161.75 1033.0 160.25
+  1035.5 167.0 1032.5 163.75 1033.0 160.25
   smooth off
 endline
 
@@ -318,8 +320,8 @@ point 802.75 356.25 air-draught -orientation 112.5 -subtype summer -scale s
 
 line pit -clip off
   1059.75 189.25
-  1059.75 189.25 1056.0 178.25 1048.5 165.25
-  1041.0 152.25 1034.0 147.5 1027.25 139.75
+  1059.75 189.25 1056.5 178.75 1049.0 165.75
+  1041.5 152.75 1034.0 147.5 1027.25 139.75
   1020.5 132.0 1010.75 129.75 1010.75 129.75
   smooth off
 endline
@@ -391,6 +393,7 @@ line pit
   998.25 202.0
   998.25 202.0 1009.75 203.75 1015.25 202.75
   1020.75 201.75 1029.5 198.75 1034.0 196.75
+  smooth off
 endline
 
 point 808.25 498.75 breakdown-choke -orientation 26.3
@@ -400,6 +403,7 @@ point 811.75 508.0 breakdown-choke -orientation 26.3
 line pit -reverse on
   978.5 231.0
   978.5 231.0 966.5 225.75 961.25 236.5
+  smooth off
 endline
 
 line wall
@@ -553,6 +557,7 @@ line pit
   687.25 587.0
   687.25 587.0 687.75 576.0 692.75 576.75
   697.75 577.5 699.75 584.25 700.0 589.5
+  smooth off
 endline
 
 line wall

@@ -72,11 +72,25 @@ point -3.75 247.5 label -text "<center>puits<br>de la<br>Manucure"
 
 point 28.75 155.0 label -text "<center>puits<br>du Chicot"
 
+line wall -subtype invisible
+  140.0 245.75
+  140.5 252.25
+endline
+
+line wall -subtype invisible
+  112.25 265.75
+  108.0 269.25
+endline
+
+line wall -subtype invisible
+  100.0 280.0
+  100.0 280.0 88.5 280.25 85.5 278.75
+endline
+
 line wall
   96.25 150.5
-  90.0 153.25 81.75 155.0 81.75 155.0
-  smooth off
-  81.75 155.0 83.0 154.5 85.75 154.5
+  90.0 153.25 84.25 151.75 81.5 152.5
+  78.85 153.22 83.0 154.5 85.75 154.5
   88.5 154.5 92.5 152.75 93.25 155.5
   94.0 158.25 95.75 160.75 95.0 165.75
   94.25 170.75 94.25 172.75 94.25 177.0
@@ -303,6 +317,7 @@ point 166.0 -39.0 water-flow -orientation 180.7
 line pit
   141.25 3.75
   141.25 3.75 143.0 9.75 139.75 15.25
+  smooth off
 endline
 
 point 150.5 11.25 water-flow -orientation 258.2

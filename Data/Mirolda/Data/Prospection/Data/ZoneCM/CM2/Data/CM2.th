@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey CM2 -title "Gouffre CM2"
+
+ centerline -extend right
+    
+    date 2022.06.12
+        team "John Dénarié"
+    explo-date 2022.06.12
+        explo-team "John Dénarié"
+
+    cs lat-long
+
+    fix       CM2  46.080169 6.75416 1170 # Altitude issue de Google Earth
+    station   CM2       "CM2" entrance #continuation explored 3m #air-draught # Info John Denerié ; -3 m
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    flags approx
+    CM2 1   3 0 -90 # P3 d'entrée
+    flags not approx
+    
+endcenterline
+
+ endsurvey
