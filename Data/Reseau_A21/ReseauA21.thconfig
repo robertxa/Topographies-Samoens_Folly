@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -31,19 +31,13 @@ encoding  utf-8
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
 
-# DEM
- #source dem_Samoens.th
-#  source Samoens-GIS/dem/samoens.th
+# MNT de la zone, avec wrappage des images 
+#   (éditer le fichier Data/DEM_10m-UTM32-Criou.th pour choisir l'image !)
+#source Data/DEM_10m-UTM32-Criou.th
+#source Data/DEM_10m-L93-Criou.th
 
-# source JB/jb-atlas.th
-# source JB/jb.th
-# source zone-A/A.th
-# source zone-AV/AV.th
-# source zone-B/B.th
-# source zone-C/C.th
-# source zone-CH/CH.th
-source Synclinal_JB.th
-
+ source Synclinal_A21.th
+ 
 # Add config file
 input ../../config.thc 
   
@@ -110,7 +104,7 @@ layout my_layout
   doc-author "Xavier Robert"
 
   # Titule
-  doc-title "Massif du Gouffre Jean-Bernard - 1:1000"
+  doc-title "Système du Criou - 1:5000"
 
   # Maitenant on va specifier la position de la manchette, dont l'interieur
   # sera ocuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -175,11 +169,13 @@ layout my_layout
   
   # Dessin ou pas du cheminement topo
 #  symbol-hide point station        
+#  debug scrap-names
+#  debug station-names
   symbol-hide line survey
 
   layers on
 
-#  debug station-names
+
 
        
                 
@@ -194,11 +190,12 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau du Gouffre Jean-Bernard} 
+			\cavename={Réseau du Criou} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
+		\newtoks\club \club={URSUS, Collectif Criou}
+		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
   
  endlayout
@@ -258,7 +255,7 @@ layout atlas_layout
   doc-author "Xavier Robert"
 
   # Titule
-  doc-title "Massif du Gouffre Jean-Bernard - 1:5000"
+  doc-title "Massif du Criou - 1:5000"
 
   # Maitenant on va specifier la position de la manchette, dont l'interieur
   # sera ocuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -299,20 +296,25 @@ layout atlas_layout
   # Afficher les statistiques d'explo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs
   statistics explo-length off
+
   # Afficher le developpement et la profondeur de la cavite
-  statistics topo-length off
+  statistics topo-length on
+  
   # Afficher un copyright
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
-#  symbol-hide point station
-#  debug station-names        
+#  symbol-hide point station        
+#  debug scrap-names
+#  debug station-names
   symbol-hide line survey
   
  # origin 12 22 0 m
  # origin-label 100 K
 
-  layers on     
+  layers on
+
+     
                 
 	# Titre                         
 	code tex-map
@@ -325,11 +327,12 @@ layout atlas_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau du Gouffre Jean-Bernard} 
+			\cavename={Réseau du Criou} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}		
+		\newtoks\club \club={URSUS, Collectif Criou}
+		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
 
  endlayout
@@ -340,21 +343,34 @@ layout atlas_layout
 
 # 3-EXPORT
 
+select MP-Criou@SystemMirolda
+#select MC-Criou-coupe-tot@SystemMirolda
+
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Folly-Xav-2010-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Folly-Xav-2010-coupe.pdf
-#export atlas -o Outputs/atlas-JB.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/ReseauA21-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout my_layout -o Outputs/ReseauA21-coupe.pdf
+#export atlas -o Outputs/ReseauA21-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/SynclinalJB.lox
+ export model -enable all -o Outputs/ReseauA21.lox
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/JB -layout my_layout
- export model -fmt esri -o Outputs/JB
-export cave-list -location on -o Outputs/JB/Caves.txt
+ export map -proj plan -fmt esri -o Outputs/ReseauA21 -layout my_layout
+ export model -fmt esri -o Outputs/ReseauA21
+ export cave-list -location on -o Outputs/ReseauA21/Caves.txt
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Folly-Xav-2010.kml -layout my_layout
+# export map -proj plan -fmt kml -o Outputs/ReseauA21.kml -layout my_layout
+ #export model -fmt kml -o Outputs/ReseauA21-model.kml -enable all
 
-#export model -fmt vrml -o Outputs/Folly.vrml
+# Export de la database sql
+# export des statistiques de l'ensemble de la cavité
+#    Attention, les points de départ et d'arrivée de chaque centreline correspondent
+#    au second point et à l'avant dernier point de la série.
+#export database -fmt sql -o Outputs/database-ReseauA21.sql
+
+#export continuation-list -o Outputs/ContinuationsReseauA21.html
+#export continuation-list -o Outputs/ContinuationsReseauA21.kml
+#export survey-list -location on -o Outputs/SurveysReseauA21.html
+#export cave-list -location on -o Outputs/CavesReseauA21.html

@@ -37,7 +37,7 @@ from alive_progress import alive_bar              # https://github.com/rsalmei/a
 #################################################################################################
 #################################################################################################
 
-def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
+def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 	"""
 	Function to build a point shapefile with the entrances of the main caves,
 	with the Easting/Northing/Altitude as attributs' table.
@@ -61,6 +61,9 @@ def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
 	# check if input file exists
 	if not os.path.isfile(pathshp + inputfile):
 		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(pathshp + inputfile)))
+	if not os.path.exists(outpath):
+        print ('\033[91mWARNING:\033[00m ' + outpath + ' does not exist, I am creating it...')
+        os.mkdir(outpath)
 	
 	# open the input file
 	f = open(pathshp + inputfile, 'r').readlines()
@@ -393,18 +396,21 @@ def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
 	CPres_entrances = ['CP12', 'CP14', 'CP16', 'CP19b']
 	CP6_entrances = ['CP6', 'CP53']
 	LP9_entrances = ['LP9a', 'CP39']
-	A21_entrances = ['A21', 'A24']
-	Mirolda_entrances = ['CD11', 'VF3', 'F126', 'Jockers', 'Falaise']
+	A21_entrances = ['A(V)21', 'A24']
+	Mirolda_entrances = ['CD11', 'VF3 - Mirolda - Réseau Lucien Bouclier', 
+						 'Gouffre de la Rondelle Jaune - F126', 'G. des Jockers',
+						 'Entrée de la Falaise', 'Fenêtre']
 
 	with alive_bar(len(systems), title = "\x1b[32;1m- Processing Entrances...\x1b[0m", length = 20) as bar:
 		# For each system
 		for system in systems:
+			#print (systems, system)
 			print('\tCavités présentes dans le shapefile : %s' %(caves[system]))
 			# Create the output folder
 			#if not os.path.exists(outputdir + "/" + system):
 			#	os.mkdir(outputdir + "/" + system)
 			#shpout = outputdir + "/" + system + '/' + system + '-Entrances.shp'
-			shpout = pathshp[:-8] + system + '-Entrances.gpkg'
+			shpout = outpath + system + '-Entrances.gpkg'
 
 			# Make a new shapefile instance
 			#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='ESRI Shapefile', schema=schema) as ouput:
@@ -481,7 +487,7 @@ def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
 	# Create the output folder
 	#if not os.path.exists("Systems-info"):
 	#	os.mkdir("Systems-info")
-	shpout = pathshp[:-8] + 'BigCaves-info.gpkg'
+	shpout = outpath + 'BigCaves-info.gpkg'
 				
 	# Créer le schéma des shapefiles
 	Newschema = { 'geometry': 'Point', 
@@ -510,7 +516,7 @@ def ThExtractEntrances(inputfile, pathshp, systems, caves, crs):
 			ouput.write ({'geometry':mapping(point),'properties': prop})
 			
 	# Make a new shapefile instance
-	shpout = pathshp[:-8] + 'Systems-info.gpkg'
+	shpout = outpath + 'Systems-info.gpkg'
 	#with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema, encoding = 'utf8') as ouput:
 	with fiona.open(shpout, 'w',crs=from_epsg(crs), driver='GPKG', schema=Newschema) as ouput:
 		# Find the line corresponding to each big cave
@@ -542,7 +548,9 @@ if __name__ == u'__main__':
 
 	pathshp = '../../Outputs/SHP/therion/'
 
-	systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV']
+	outpath = '../../Outputs/SHP/GPKG/'
+
+	systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV', 'SystemMirolda']
 
 	caves = {'SynclinalJB' : ['V4', 'V4bis', 'V6', 'V6b', 'V6ter', 'J14', 'V11', 
 							  'A14',
@@ -560,7 +568,11 @@ if __name__ == u'__main__':
 							'DR09'],
 			 'SystemeA21' : ['A21', 'A22', 'A24'],
 			 'SystemeAV' : ['AV8'],
-			 'SystemeMirolda' : ['CD11', 'VF3', 'F126', 'Jockers', 'Falaise'],
+			 'SystemMirolda' : ['CD11', 'VF3', 'F126', 'Jockers', 'Falaise', 'Fenêtre',
+			 					"L'Amine Dada -FLT7"],
+			#Mirolda_entrances = ['CD11', 'VF3 - Mirolda - Réseau Lucien Bouclier', 
+			#			 'Gouffre de la Rondelle Jaune - F126', 'G. des Jockers',
+			#			 'Entrée de la Falaise', 'Fenêtre']
 			 'SystemeBossetan' : ["Antre d'Oddaz"]}
 
 
@@ -568,5 +580,5 @@ if __name__ == u'__main__':
 
 	###################################################
 	# Run the extraction
-	ThExtractEntrances(inputfile, pathshp, systems = systems, caves = caves, crs = crs)
+	ThExtractEntrances(inputfile, pathshp, outpath, systems = systems, caves = caves, crs = crs)
 	# End...

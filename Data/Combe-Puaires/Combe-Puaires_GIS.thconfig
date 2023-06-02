@@ -32,15 +32,8 @@ encoding  utf-8
 # "jb-dessin.th2")
 
 # DEM
- source dem_Samoens.th
-
-# source JB/jb-atlas.th
- source JB/jb.th
- source zone-A/A.th
- source zone-AV/AV.th
- source zone-B/B.th
- source zone-C/C.th
- source zone-CH/CH.th
+# source dem_Samoens.th
+source Combe-Puaires.th
 ## source zone-CP/CP.th
 # source zone-D/D.th
 ## source Ermoy/ermoy.th
@@ -54,7 +47,7 @@ encoding  utf-8
 # source JB/jb.th
 
 # Add config file
-input ../config.thc 
+input ../../config.thc 
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles
@@ -80,23 +73,22 @@ layout my_layout
   # sur un cheminement exporte avec le layout "xviexport"
   # (voir en bas)
   base-scale 1 1000
-
   # Maitenant on va mettre une ligne "scale" pour specifier l'echelle
   # pour imprimer la topo. La combination entre scale et base-scale
   # controlle le gros des lignes, rotation, etc, convenable
   # pour faire l'ampliation-reduction entre dessin et
   # le resultat de l'imprimante
-
   # C'est tres important s'assurer que la configuration de
   # l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'echelle sera change pendant
   # l'impression! 
   scale 1 5000
+  # echelle graphique 100 m ampleur
+  scale-bar 500 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille
   # au dessous de la topo
   grid bottom
-
   # Une ligne pour specifier que la grille est 1000x1000x1000 metres
   # (Trois dimensions, oui, ça sert pour la coupe aussi)
   grid-size 250 250 250 m  
@@ -106,15 +98,11 @@ layout my_layout
   #color map-bg 90
 #  color map-bg 85
    color map-fg [100 100 80]  
-  
   # la topo est transparente (on peut voir les galeries sousjacentes)
   # C'est on par defaut, donc, pas vraiment besoin de specifier
   transparency on
-
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
-  
-  
   surface bottom
   surface-opacity 100
   
@@ -124,10 +112,8 @@ layout my_layout
   
   # Auteur 
   doc-author "Xavier Robert"
-
   # Titule
   doc-title "Massif du Gouffre Jean-Bernard - 1:1000"
-
   # Maitenant on va specifier la position de la manchette, dont l'interieur
   # sera ocuppe par le titule, auteurs, etc. Nous pouvons indiquer
   # les cordonnes du point de la topo ou l'on veut la manchette:
@@ -140,7 +126,7 @@ layout my_layout
   # soit place en bas, a gauche, ou une autre combination
 #  map-header 0 100 nw
   # map-header 5 50 e
-#  map-header 0 0 s
+  map-header 0 100 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -150,15 +136,9 @@ layout my_layout
   # pour tous les symboles, utilises ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
   legend on
-
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 21 cm
-
-  # Il faut s'exprimer avec la langue de Voltaire...
-  language fr
-
-  # echelle graphique 100 m ampleur
-  scale-bar 500 m
+  legend-width 40 cm
+  legend-columns 4
 
   # Un commentaire a ajounter au titule, on pourrait indiquer ici
   # la mairie ou est place la cavite dont le nom est probablement
@@ -169,23 +149,20 @@ layout my_layout
   # Afficher les statistiques d'explo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs
   statistics explo-length off
-
   # Afficher le developpement et la profondeur de la cavite
   statistics topo-length off
-  
   # Afficher un copyright
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
-#  symbol-hide point station        
+#  symbol-hide point station 
+#  debug station-names       
   symbol-hide line survey
   
  # origin 12 22 0 m
  # origin-label 100 K
 
-  layers on
-
-#  debug station-names      
+  layers on      
                 
 	# Titre                         
 	code tex-map
@@ -198,11 +175,11 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Réseau du Gouffre Jean-Bernard} 
+			\cavename={Réseau de la Combe aux Puaires} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2019)}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
 	endcode   
  
 
@@ -216,15 +193,17 @@ layout my_layout
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Folly-Xav-2010-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/CombePuaires-plan.pdf -layout my_layout
 # export map -projection extended -fmt pdf -layout my_layout -o Outputs/Folly-Xav-2010-coupe.pdf
 #export atlas -o Outputs/atlas-JB.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
-# export model -enable all -o Outputs/Folly-Xav-2010.lox
+ export model -enable all -o Outputs/CombePuaires.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Folly-Xav-2010 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CombePuaires -layout my_layout
+ export model -fmt esri -o Outputs/CombePuaires
+ export cave-list -location on -o Outputs/CombePuaires/Caves.txt
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Folly-Xav-2010.kml -layout my_layout

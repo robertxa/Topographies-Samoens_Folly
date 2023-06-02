@@ -207,7 +207,9 @@ debug station-names
 # export model -enable all -o Outputs/Bossetan.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Bossetan -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/Bossetan -layout my_layout
+ export model -fmt esri -o Outputs/Bossetan
+export cave-list -location on -o Outputs/Bossetan/Caves.txt
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Bossetan.kml -layout my_layout

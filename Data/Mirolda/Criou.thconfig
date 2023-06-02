@@ -360,6 +360,7 @@ select MP-Criou@SystemMirolda
 # Export des fichiers ESRI
  export map -proj plan -fmt esri -o Outputs/Criou -layout my_layout
  export model -fmt esri -o Outputs/Criou
+ export cave-list -location on -o Outputs/Criou/Caves.txt
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Criou-2022.kml -layout my_layout
