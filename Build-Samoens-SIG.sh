@@ -15,6 +15,14 @@ echo '##########################################################################
 echo ''
 echo ''
 
+#0 Synchronise la base de données avec le serveur Merging Maps
+echo '    0- Synchronise la base de données avec le serveur Merging Maps...'
+echo '          A implémenter !! '
+#https://merginmaps.com/docs/dev/integration/
+#cd Samoens-GIS/MergingMaps
+#merging --username ??? --password ??? --url ??? sync
+#cd -
+echo ''
 # 1- Générer les shapefiles 3D des différentes topographies de tout le système
 echo '    1- Construction des shapefiles 3D et des listes de cavités...'
 echo '          Attention, cette étape est longue !!!'
@@ -47,4 +55,7 @@ echo ''
 echo '    5- Mise à jour du projet QGis et du repository Merging Maps...'
 echo '         A faire manuellement !?'
 echo ''
+#cd Samoens-GIS/MergingMaps
+#merging --username ??? --password ??? --url ??? sync
+#cd -
 
