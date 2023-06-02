@@ -43,7 +43,12 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 	with the Easting/Northing/Altitude as attributs' table.
 
 	Args:
-		inputfile (str): path and name of the sql database to analyse/plot
+		inputfile (str)       : path and name of the sql database to analyse/plot
+		pathshp (str)         : path where the shp produced by Therion are stored
+		outpath (str)         : path where to copy the gpkg files
+		systems (list of str) : Cave systems to consider
+		caves (dictionnary)   : Names of main caves for each cave system
+		crs (integer)         : ESPG code of the coordinates' system
 		
 	Raises:
 		NameError: error with the input file; see the description when the error is raised.
@@ -376,10 +381,6 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 						'Point'   : [327980, 5105701]}	#crs = 32632	# UTM32N}
 				}
 
-	# Create the output folder
-	#if not os.path.exists(outputdir):
-	#	os.mkdir(outputdir)
-
 	# Créer le schéma des shapefiles
 	schema = { 'geometry': 'Point', 'properties': { 'LocationID': 'str',
 													'Nom': 'str',
@@ -404,12 +405,7 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 	with alive_bar(len(systems), title = "\x1b[32;1m- Processing Entrances...\x1b[0m", length = 20) as bar:
 		# For each system
 		for system in systems:
-			#print (systems, system)
 			print('\tCavités présentes dans le shapefile : %s' %(caves[system]))
-			# Create the output folder
-			#if not os.path.exists(outputdir + "/" + system):
-			#	os.mkdir(outputdir + "/" + system)
-			#shpout = outputdir + "/" + system + '/' + system + '-Entrances.shp'
 			shpout = outpath + system + '-Entrances.gpkg'
 
 			# Make a new shapefile instance
@@ -484,9 +480,6 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 			bar()
 		
 	# Make a shapefile with the systems caracteristics
-	# Create the output folder
-	#if not os.path.exists("Systems-info"):
-	#	os.mkdir("Systems-info")
 	shpout = outpath + 'BigCaves-info.gpkg'
 				
 	# Créer le schéma des shapefiles

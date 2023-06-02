@@ -116,6 +116,14 @@ def validate(inputfile, rec):
 
 #################################################################################################
 def cutareas(pathshp, outlines, outputspath):
+    """
+    Function to cut shapefiles areas with the outline to only keep the lines inside the outline
+
+    Args:
+        pathshp (str)           : path where are stored output shp from Therion
+        outlines (geopandas obj): the outline shapefile
+        outputspath (str)       : path where to copy the gpkg files
+    """
 
     print('Working with areas...')
     # 2- Validate the outline and Areas shapefile
@@ -138,6 +146,9 @@ def cutareas(pathshp, outlines, outputspath):
         areasIN = areas.overlay(outlines, how = 'intersection')
     except:
         print('ERROR: 1) uninstall pygeos and install rtree\n\t2) check your polygons validity')
+        import rtree
+        print ('\tYou may check the validity of your polygons with the verify function in QGIS')
+        areasIN = areas.overlay(outlines, how = 'intersection')
         
     # Removes inner lines that have different id and scrap_id
     areasIN = areasIN[areasIN['_SCRAP_ID'] == areasIN ['_ID']]
@@ -150,6 +161,14 @@ def cutareas(pathshp, outlines, outputspath):
 
 #################################################################################################
 def cutLines(pathshp, outlines, outputspath):
+    """
+    Function to cut shapefiles lines with the outline to only keep the lines inside the outline
+
+    Args:
+        pathshp (str)           : path where are stored output shp from Therion
+        outlines (geopandas obj): the outline shapefile
+        outputspath (str)       : path where to copy the gpkg files
+    """
 
     print('Working with lines...')
     #   Read the Line Shapefile
@@ -175,6 +194,7 @@ def cutLines(pathshp, outlines, outputspath):
     except:
         print('\033[91mERROR: 1\033[00m) uninstall pygeos and install rtree\n\t2) check your polygons validity')
         import rtree
+        print ('\tYou may check the validity of your polygons with the verify function in QGIS')
         linesIN = linesIN.overlay(outlines, how = 'intersection', keep_geom_type=True)
 
     # Removes inner lines that have different id and scrap_id
@@ -192,6 +212,14 @@ def cutLines(pathshp, outlines, outputspath):
 
 #################################################################################################
 def AddAltPoint(pathshp, outputspath):
+    """
+    Function to add the altitude of the stations and entrances in the attribut table
+
+    Args:
+        pathshp (str)    : path where are stored output shp from Therion
+        outputspath (str): path where to copy the gpkg files
+    """
+
 
     print('Working with points...')
 
@@ -213,8 +241,21 @@ def AddAltPoint(pathshp, outputspath):
               'A21'    : 'A21 -A24',
               'Mirolda': 'Réseau Lucien-Bouclier - Mirolda'  
               }
+    # Définition des noms de systèmes
+    SNames = {'SynclinalJB'    : 'Système du Jean-Bernard',
+              'SystemeCP'      : 'Système de la Combe aux Puaires',
+              'SystemeAV'      : 'Système des Avoudrues',
+              'SystemeA21'     : 'Système du A21',
+              'SystemMirolda'  : 'Système du Criou - Mirolda',
+              'SystemeBossetan': 'Système de Bossetan',
+              'sources'        : 'Résurgences',
+              'tuet'           : 'Système du Tuet',
+              'eauxfroides'    : 'Système des Eaux Froides'
+              }
     # Open the text file with the coordinates of the caves
-    #f = open('../../Lists/Therion-ShpEntrees/Caves.txt', 'r').readlines() 
+    #   This text file (Caves.txt) should be build with Therion compilation
+    #   and stored in the output's shapefiles folder
+    #      export cave-list -location on -o Outputs/SHP/Caves.txt
     f = open(pathshp + 'Caves.txt', 'r').readlines() 
 
     # Make a new shapefile instance
@@ -240,7 +281,7 @@ def AddAltPoint(pathshp, outputspath):
                     g['properties']['_SYSTEM'] = ''
                     g['properties']['_DEPTH'] = ''
 
-                    # Add Alt, Estaing, Northing
+                    # Add Alt, Easting, Northing
                     g['properties']['_ALT'] = str(round(float(rec['geometry']['coordinates'][2])))
                     g['properties']['_EASTING'] = float(rec['geometry']['coordinates'][0])
                     g['properties']['_NORTHING'] = float(rec['geometry']['coordinates'][1])
@@ -248,29 +289,13 @@ def AddAltPoint(pathshp, outputspath):
                     if rec['properties']['_TYPE'] == 'station' and rec['properties']['_STSURVEY'] != None:
                         # Find system
                         system = rec['properties']['_STSURVEY'].split('.')[-2]
-                        if system == 'SynclinalJB':
-                    	    system = 'Système du Jean-Bernard'
-                        if system == 'SystemeCP':
-                    	    system = 'Système de la Combe aux Puaires'
-                        if system == 'SystemeAV':
-                    	    system = 'Système des Avoudrues'
-                        if system == 'SystemeA21':
-                    	    system = 'Système du A21'
-                        if system == 'SystemeMirolda':
-                    	    system = 'Système du Criou - Mirolda'
-                        if system == 'SystemeBossetan':
-                    	    system = 'Système de Bossetan'
-                        if system == 'Sources':
-                    	    system = 'Résurgences'
-                        if system == 'Tuet':
-                    	    system = 'Système du Tuet'
-                        g['properties']['_SYSTEM'] = system					
+                        g['properties']['_SYSTEM'] = SNames[system]
                     
                         # Find Cave
                         xxx = rec['properties']['_STSURVEY'].split('.')
                         while len(xxx) < 4:
                     	    xxx.append('junk')
-                        if 'trous' in xxx[0] or system == 'Résurgences' or 'sources' in xxx[0]:
+                        if 'trous' in xxx[0] or SNames[system] == 'Résurgences' or 'sources' in xxx[0]:
                     	    g['properties']['_CAVE'] = rec['properties']['_STNAME']
                     	    g['properties']['_DEPTH'] = 0
                     
@@ -331,15 +356,24 @@ def AddAltPoint(pathshp, outputspath):
 
 #################################################################################################
 def shp2gpkg(pathshp, outputspath):
+    """
+    function to convert shp files into gpkg files
 
-    files = ['outline2d', 'shots3d','walls3d']
+    Args:
+        pathshp (str)    : path where are stored output shp from Therion
+        outputspath (str): path where to copy the gpkg files
+    """
+
+    # files to be converted
+    files = ['outline2d', 'shots3d', 'walls3d']
 
     print('shp2gpkg : ', files)
     with alive_bar(len(files), title = "\x1b[32;1m- Processing shp2pkg...\x1b[0m", length = 20) as bar:
         for fname in files :
             if fname == 'walls3d':
                 print('shp2gpkg does not support walls3d files...\n\t I am only copying the shp file into the right folder')
-                shutil.copy2(pathshp + fname + '.shp', outputspath + fname + '.shp')
+                for ftype in ['.shp', '.dbf', '.prj', '.shx']:
+                    shutil.copy2(pathshp + fname + ftype, outputspath + fname + ftype)
                 #pass
                 #input = gpd.read_file(fname + '.shp', layer = 'walls3d', driver = 'ESRI shapefile')
                 #input.to_file(fname + ".gpkg", driver="GPKG", encoding = 'utf8')
@@ -384,25 +418,20 @@ def ThCutAreas(pathshp, outputspath):
         os.mkdir(outputspath)
 
     #1- Read the outline shapefile
-    #with fiona.open('outline2d.shp', 'r') as outlines:
     outlines = gpd.read_file(pathshp + 'outline2d.shp', driver = 'ESRI shapefile')
-    #with alive_bar(3, title = "\x1b[32;1m- Processing lines...\x1b[0m", length = 20) as bar:
     # Change SHP to gpkg
     shp2gpkg(pathshp, outputspath)
     # Work with points
     AddAltPoint(pathshp, outputspath)
-    #bar()
     # Work with lines
     cutLines(pathshp, outlines, outputspath)
-    #bar()
+    # Work with Areas
     if areaOK:
         print ('Cuting areas...')
         cutareas(pathshp, outlines, outputspath)
     else:
         print ("No areas to process...")
-    #bar()
     
-
     #5- End ?
 
     print('')
@@ -413,7 +442,7 @@ def ThCutAreas(pathshp, outputspath):
 if __name__ == u'__main__':	
 	###################################################
     # initiate variables
-    inputfile = 'stations3d.shp'
+    #inputfile = 'stations3d.shp'
     pathshp = '../../Outputs/SHP/therion/'
     outputspath = '../../Outputs/SHP/GPKG/'
     ###################################################
