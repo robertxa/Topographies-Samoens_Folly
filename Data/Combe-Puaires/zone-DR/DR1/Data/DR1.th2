@@ -12,9 +12,19 @@ point 235.75 124.25 label -text "R2"
 point 359.0 47.5 label -text "Colm."
 
 line wall -subtype invisible
+  359.25 55.25
+  363.5 62.75
+endline
+
+line wall -subtype invisible
+  150.75 221.5
+  149.5 215.0
+endline
+
+line wall -subtype invisible
   52.5 153.75
-  52.5 153.75 64.75 141.75 68.75 141.75
-  72.75 141.75 77.25 142.0 77.25 142.0
+  52.5 153.75 60.75 139.0 64.75 139.0
+  68.75 139.0 77.25 142.0 77.25 142.0
   smooth off
 endline
 

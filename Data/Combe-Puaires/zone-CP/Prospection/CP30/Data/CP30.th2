@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -134.0 -1059 1114.0 142.0
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP30.gif 0 {}
 
 
@@ -87,7 +87,7 @@ endline
 
 line wall -subtype invisible
   591.0 -586.0
-  591.0 -586.0 545.0 -574.0 509.0 -599.0
+  591.0 -586.0 545.0 -561.0 509.0 -599.0
   smooth off
 endline
 
@@ -110,6 +110,16 @@ line wall
   771.0 -657.0 777.0 -650.0 771.0 -642.0
   765.0 -634.0 755.0 -620.0 755.0 -620.0
   smooth off
+endline
+
+line wall -subtype invisible
+  755.0 -620.0
+  718.0 -624.0
+endline
+
+line wall -subtype invisible
+  845.0 -701.0
+  847.0 -692.0
 endline
 
 line wall

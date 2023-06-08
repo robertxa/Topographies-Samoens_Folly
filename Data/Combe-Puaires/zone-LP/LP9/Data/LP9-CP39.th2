@@ -108,9 +108,29 @@ line pit
   smooth off
 endline
 
+line wall -subtype invisible
+  584.0 217.5
+  584.5 220.75
+endline
+
+line wall -subtype invisible
+  385.75 215.75
+  382.0 213.75
+endline
+
+line wall -subtype invisible
+  242.25 168.75
+  245.0 169.75
+endline
+
+line wall -subtype invisible
+  237.75 193.25
+  236.25 192.75
+endline
+
 line wall
   236.25 192.75
-  236.25 192.75 238.75 191.0 237.0 189.25
+  236.25 192.75 237.88 190.13 237.0 189.25
   235.25 187.5 232.75 182.0 230.0 183.0
   227.25 184.0 221.25 193.75 218.0 192.75
   214.75 191.75 210.0 184.75 207.5 183.5
@@ -2500,6 +2520,7 @@ line label -id l695-559-651
   553.5 648.25
   558.25 648.5
   558.25 648.5 559.0 651.5 559.25 652.5
+  smooth off
 endline
 
 line label

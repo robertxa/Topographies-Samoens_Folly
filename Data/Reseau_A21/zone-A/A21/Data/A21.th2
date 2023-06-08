@@ -1388,6 +1388,41 @@ point 593.382 229.376 station -name 3.7@A21
 
 point 596.962 221.836 station -name 3.9@A21
 
+line wall -subtype invisible
+  688.5 286.75
+  688.5 289.75
+endline
+
+line wall -subtype invisible
+  643.75 274.25
+  641.0 275.5
+endline
+
+line wall -subtype invisible
+  627.5 268.25
+  625.5 265.5
+endline
+
+line wall -subtype invisible
+  529.5 246.75
+  527.75 239.25
+endline
+
+line wall -subtype invisible
+  575.5 253.75
+  575.5 253.75 575.25 257.0 571.75 254.5
+endline
+
+line wall -subtype invisible
+  599.5 271.0
+  598.0 272.75
+endline
+
+line wall -subtype invisible
+  603.75 215.75
+  605.0 219.0
+endline
+
 line floor-meander
   572.75 248.5
   572.75 248.5 573.0 245.0 568.5 242.25
@@ -1440,8 +1475,8 @@ endline
 line wall
   590.25 235.0
   590.25 235.0 580.25 240.25 585.0 241.25
-  589.75 242.25 595.0 242.5 595.0 244.5
-  595.0 246.5 595.5 250.5 596.0 255.0
+  589.75 242.25 595.0 243.25 595.0 245.25
+  595.0 247.25 595.5 250.5 596.0 255.0
   596.5 259.5 596.5 266.5 597.25 267.5
   598.0 268.5 599.5 271.0 599.5 271.0
   smooth off
@@ -1535,6 +1570,11 @@ line wall
   581.75 218.5 593.75 219.75 596.75 218.5
   599.75 217.25 603.75 215.75 603.75 215.75
   smooth off
+endline
+
+line wall -subtype invisible
+  492.75 221.0
+  492.0 215.0
 endline
 
 line wall

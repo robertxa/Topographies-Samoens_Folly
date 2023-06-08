@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 5158.5 3017.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -128.75 -128.75 5157.0 3015.5
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {1580.06 1 1.0} {1671.81 CP12} ../billy-map.xvi 0 {}
 
 
@@ -1431,6 +1431,61 @@ endscrap
 
 scrap SP-CP16-5 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
+line wall -subtype invisible
+  3065.5 2000.75
+  3058.25 2001.5
+endline
+
+line wall -subtype invisible
+  3050.0 1992.5
+  3051.5 1991.25
+endline
+
+line wall -subtype invisible
+  3054.25 1968.0
+  3056.5 1960.75
+endline
+
+line wall -subtype invisible
+  3042.75 1937.75
+  3039.5 1939.0
+endline
+
+line wall -subtype invisible
+  3004.75 1936.5
+  3003.5 1932.75
+endline
+
+line wall -subtype invisible
+  3069.75 1912.0
+  3071.0 1913.75
+endline
+
+line wall -subtype invisible
+  2983.25 1891.25
+  2981.0 1888.0
+endline
+
+line wall -subtype invisible
+  3049.75 1830.25
+  3051.75 1823.25
+endline
+
+line wall -subtype invisible
+  2959.5 1832.0
+  2958.0 1829.75
+endline
+
+line wall -subtype invisible
+  2933.5 1812.25
+  2940.75 1821.25
+endline
+
+line wall -subtype invisible
+  2892.75 1841.5
+  2886.0 1827.75
+endline
+
 point 2889.02 1834.9 station -name 11.26@ReseauCP
 
 point 2909.68 1824.33 station -name 11.25@ReseauCP
@@ -2274,6 +2329,7 @@ endarea
 line label -id l1115-3064-2076
   3063.0 2076.25
   3062.5 2074.5 3056.5 2075.5 3059.5 2065.5
+  smooth off
 endline
 
 line label -id l691-3063-2067 -reverse on

@@ -49,9 +49,14 @@ endline
 
 line wall -id l12-596--44 -subtype invisible
   612.0 -40.5
-  612.0 -40.5 573.0 -47.5 573.0 -57.5
-  573.0 -67.5 568.0 -70.5 580.5 -71.5
+  612.0 -40.5 590.0 -38.0 571.0 -57.0
+  563.73 -64.27 575.0 -68.0 580.5 -71.5
   smooth off
+endline
+
+line wall -subtype invisible
+  726.0 -168.0
+  731.0 -157.0
 endline
 
 line wall -id l13-596--84

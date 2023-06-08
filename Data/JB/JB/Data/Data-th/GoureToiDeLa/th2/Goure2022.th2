@@ -333,6 +333,26 @@ point 315.5 756.75 altitude -align top-right
 
 point 447.25 745.0 altitude -align right
 
+line wall -subtype invisible
+  568.0 701.25
+  562.25 709.75
+endline
+
+line wall -subtype invisible
+  536.0 692.25
+  545.5 684.75
+endline
+
+line wall -subtype invisible
+  414.0 756.5
+  412.75 755.0
+endline
+
+line wall -subtype invisible
+  406.75 748.75
+  410.5 752.0
+endline
+
 line wall
   562.25 709.75
   562.25 709.75 550.0 702.25 546.5 702.25

@@ -340,9 +340,19 @@ line wall
 endline
 
 line wall -subtype invisible
+  101.5 413.0
+  101.5 413.0 87.5 404.5 89.5 391.0
+endline
+
+line wall -subtype invisible
+  191.0 419.75
+  187.75 421.0
+endline
+
+line wall -subtype invisible
   650.0 110.0
-  650.0 110.0 647.5 122.25 645.25 126.75
-  643.0 131.25 637.5 139.75 637.5 139.75
+  650.0 110.0 654.5 124.5 652.25 129.0
+  650.0 133.5 637.5 139.75 637.5 139.75
   smooth off
 endline
 

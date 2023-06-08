@@ -36,9 +36,15 @@ point 132.0 58.0 air-draught -orientation 238.1 -subtype winter
 point 117.25 48.75 breakdown-choke -orientation 59.4
 
 line wall -subtype invisible
+  118.5 43.75
+  118.5 43.75 120.0 52.5 114.75 52.75
+endline
+
+line wall -subtype invisible
   43.5 54.25
-  43.5 54.25 35.5 40.75 34.25 37.0
-  33.0 33.25 30.75 25.75 32.5 24.0
+  43.5 54.25 28.5 50.25 27.25 39.75
+  26.28 31.58 30.75 25.75 32.5 24.0
+  smooth off
 endline
 
 line wall
@@ -47,6 +53,7 @@ line wall
   92.25 43.0 73.25 36.75 67.5 37.75
   61.75 38.75 47.0 45.75 45.5 46.25
   44.0 46.75 42.75 51.25 43.5 54.25
+  smooth off
 endline
 
 line wall

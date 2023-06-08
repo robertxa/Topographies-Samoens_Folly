@@ -27,6 +27,11 @@ point 10.25 44.5 altitude -align top-left
 
 point 6.5 38.0 breakdown-choke -orientation 50.6
 
+line wall -subtype invisible
+  10.25 44.5
+  13.0 40.5
+endline
+
 line wall
   62.5 74.25
   62.5 74.25 48.5 65.0 45.25 64.75
@@ -254,6 +259,11 @@ line pit -reverse on
 endline
 
 point 89.0 35.0 altitude -align top-right
+
+line wall -subtype invisible
+  62.5 74.25
+  64.25 67.75
+endline
 
 line wall
   89.0 35.0

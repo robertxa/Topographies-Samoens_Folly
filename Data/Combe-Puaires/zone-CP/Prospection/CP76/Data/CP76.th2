@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -131.0 -634 886 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP76.gif 0 {}
 
 
@@ -53,6 +53,11 @@ line wall
   733.5 -271.5 731.5 -261.5 719.0 -258.0
   706.5 -254.5 686.5 -253.0 686.5 -253.0
   smooth off
+endline
+
+line wall -subtype invisible
+  618.5 -312.5
+  637.5 -320.0
 endline
 
 line wall

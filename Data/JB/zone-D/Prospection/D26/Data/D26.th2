@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -131.0 -737 1522 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} D26.gif 0 {}
 
 
@@ -36,11 +36,13 @@ point 281.0 -131.0 narrow-end
 line pit
   447.0 -366.0
   447.0 -366.0 449.0 -333.0 418.0 -302.0
+  smooth off
 endline
 
 line wall -subtype invisible
   484.0 -165.0
   484.0 -165.0 442.0 -140.0 399.0 -151.0
+  smooth off
 endline
 
 line wall
@@ -77,6 +79,16 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  537.0 -376.0
+  528.0 -367.0
+endline
+
+line wall -subtype invisible
+  171.0 -202.0
+  161.0 -208.0
+endline
+
 line wall
   275.0 -180.0
   275.0 -180.0 286.0 -215.0 276.0 -228.0
@@ -84,6 +96,11 @@ line wall
   232.0 -254.0 199.0 -234.0 189.0 -223.0
   179.0 -212.0 171.0 -202.0 171.0 -202.0
   smooth off
+endline
+
+line wall -subtype invisible
+  295.0 -186.0
+  275.0 -180.0
 endline
 
 line wall
@@ -95,6 +112,7 @@ line wall
   358.0 -284.0 350.0 -272.0 334.0 -265.0
   318.0 -258.0 303.0 -257.0 300.0 -245.0
   297.0 -233.0 296.0 -193.0 295.0 -186.0
+  smooth off
 endline
 
 point 454.0 -158.0 station -name D26@D26

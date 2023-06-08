@@ -195,6 +195,16 @@ point 44.250999999999976 432.79100000000005 station -name 2017-JR-14@F3
 
 point 47.250999999999976 425.55100000000004 station -name 2017-JR-13@F3
 
+line wall -subtype invisible
+  3.5 436.75
+  5.25 435.5
+endline
+
+line wall -subtype invisible
+  36.5 448.75
+  32.5 449.5
+endline
+
 point 58.02099999999999 423.761 station -name 2017-JR-12@F3
 
 endscrap

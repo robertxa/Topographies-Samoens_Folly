@@ -961,10 +961,15 @@ line pit -reverse on
   smooth off
 endline
 
+line wall -subtype invisible
+  9392.75 4876.75
+  9387.25 4885.25
+endline
+
 line wall
   9267.0 4844.25
-  9267.0 4844.25 9270.5 4841.5 9269.5 4838.75
-  9268.5 4836.0 9270.5 4826.25 9266.75 4828.5
+  9267.0 4844.25 9269.75 4839.75 9269.5 4838.75
+  9268.79 4835.92 9270.5 4826.25 9266.75 4828.5
   9263.0 4830.75 9240.25 4836.25 9237.5 4832.5
   9234.75 4828.75 9219.59 4760.77 9223.25 4792.5
   9224.0 4799.0 9207.5 4828.25 9207.0 4829.75
@@ -1100,6 +1105,56 @@ line wall
   9135.0 4814.75 9134.5 4814.25 9138.25 4815.25
   9142.0 4816.25 9141.5 4822.75 9141.5 4822.75
   smooth off
+endline
+
+line wall -subtype invisible
+  9406.5 4735.0
+  9406.5 4743.5
+endline
+
+line wall -subtype invisible
+  9375.25 4728.5
+  9379.75 4728.5
+endline
+
+line wall -subtype invisible
+  9343.5 4713.75
+  9345.5 4718.5
+endline
+
+line wall -subtype invisible
+  9251.5 4695.25
+  9257.75 4693.75
+endline
+
+line wall -subtype invisible
+  9240.25 4706.75
+  9242.75 4703.25
+endline
+
+line wall -subtype invisible
+  9286.75 4770.0
+  9280.75 4768.25
+endline
+
+line wall -subtype invisible
+  9362.25 4879.25
+  9358.75 4876.75
+endline
+
+line wall -subtype invisible
+  9270.75 4846.75
+  9267.0 4844.25
+endline
+
+line wall -subtype invisible
+  9113.75 4888.75
+  9105.5 4886.0
+endline
+
+line wall -subtype invisible
+  9141.5 4822.75
+  9137.5 4821.5
 endline
 
 line wall

@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 3513.8286000000003 1781.5442
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2519.69 1 1.0} {314.962 s14_7} Combattant-map.xvi 0 {}
 
 
@@ -56,6 +56,27 @@ line wall
   976.75 997.0 976.0 990.25 981.25 988.75
   986.5 987.25 1031.5 966.25 1037.5 965.0
   1043.5 963.75 1062.75 957.75 1065.0 956.75
+  smooth off
+endline
+
+line wall -subtype invisible
+  1498.5 931.0
+  1497.0 937.5
+endline
+
+line wall -subtype invisible
+  1258.5 928.25
+  1231.0 929.75
+endline
+
+line wall -subtype invisible
+  1125.0 941.0
+  1122.75 942.75
+endline
+
+line wall -subtype invisible
+  720.25 992.5
+  723.0 992.0
 endline
 
 line wall
@@ -202,16 +223,19 @@ point 1261.5 974.25 water-flow -orientation 194.0
 line pit
   1217.0 955.75
   1217.0 955.75 1218.5 931.5 1231.5 932.5
+  smooth off
 endline
 
 line pit
   1259.75 947.25
   1259.75 947.25 1253.25 946.5 1249.5 955.0
+  smooth off
 endline
 
 line pit
   1124.25 727.25
   1124.25 727.25 1114.0 732.0 1116.5 717.5
+  smooth off
 endline
 
 line wall
@@ -243,6 +267,7 @@ line wall
   1154.75 614.75 1157.75 607.75 1164.75 599.0
   1171.75 590.25 1179.75 580.25 1188.5 576.75
   1197.25 573.25 1265.75 540.75 1270.75 538.0
+  smooth off
 endline
 
 line wall
@@ -359,6 +384,7 @@ line wall -subtype pit
   2639.5 511.5
   2639.5 511.5 2629.5 514.0 2625.5 504.0
   2621.5 494.0 2623.5 482.5 2622.0 479.0
+  smooth off
 endline
 
 point 2689.5 455.5 height -value [+8 m]
@@ -368,21 +394,25 @@ point 2565.5 501.0 height -value [+9 m]
 line pit
   2654.0 494.5
   2654.0 494.5 2635.0 522.5 2616.0 509.0
+  smooth off
 endline
 
 line pit
   2642.5 457.0
   2642.5 457.0 2631.0 490.0 2609.5 482.5
+  smooth off
 endline
 
 line pit
   2604.5 444.0
   2604.5 444.0 2609.5 482.0 2568.0 472.5
+  smooth off
 endline
 
 line pit
   2553.5 413.5
   2553.5 413.5 2533.5 431.0 2513.5 415.0
+  smooth off
 endline
 
 point 2612.5 552.0 height -value [+6 m]
@@ -397,6 +427,7 @@ line wall
   2730.5 560.5 2726.5 556.0 2717.0 550.5
   2707.5 545.0 2685.0 528.0 2679.0 522.5
   2673.0 517.0 2644.0 513.0 2639.5 511.5
+  smooth off
 endline
 
 line wall
@@ -414,12 +445,14 @@ endline
 line pit
   3074.25 711.75
   3074.25 711.75 3064.25 736.25 3049.75 734.0
+  smooth off
 endline
 
 line wall -subtype pit
   3060.25 733.0
   3060.25 733.0 3054.75 735.25 3049.75 732.75
   3044.75 730.25 3034.5 722.5 3031.75 720.25
+  smooth off
 endline
 
 line wall
@@ -433,6 +466,7 @@ line wall
   3069.25 756.75 3065.25 750.75 3064.75 747.0
   altitude .
   3064.25 743.25 3061.0 735.0 3060.25 733.0
+  smooth off
 endline
 
 line wall
@@ -455,6 +489,7 @@ line wall
   2928.0 989.25 2940.0 1003.75 2935.75 1006.25
   2931.5 1008.75 2919.75 1027.75 2914.25 1032.75
   2908.75 1037.75 2881.5 1067.5 2875.5 1069.5
+  smooth off
 endline
 
 line wall
@@ -470,6 +505,7 @@ line wall -subtype pit
   3044.0 854.5
   3044.0 854.5 3046.0 850.0 3051.5 850.5
   3057.0 851.0 3057.5 856.0 3064.0 856.0
+  smooth off
 endline
 
 line wall
@@ -570,6 +606,7 @@ line wall
   1765.5 1178.5 1753.5 1181.5 1758.0 1188.5
   1762.5 1195.5 1786.5 1238.5 1791.0 1237.5
   1795.5 1236.5 1804.0 1227.5 1807.0 1226.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -592,6 +629,7 @@ line wall -outline in -subtype unsurveyed
   1726.5 1014.5 1728.0 1003.5 1717.0 997.0
   1706.0 990.5 1693.5 983.5 1680.0 977.0
   1666.5 970.5 1646.0 967.5 1640.5 956.5
+  smooth off
 endline
 
 line wall -outline in
@@ -609,11 +647,13 @@ endline
 line pit
   1586.0 962.0
   1586.0 962.0 1583.0 968.0 1596.0 966.0
+  smooth off
 endline
 
 line wall -subtype pit -outline in
   1592.5 967.5
   1592.5 967.5 1603.0 966.0 1605.5 972.5
+  smooth off
 endline
 
 line wall -outline in
@@ -686,16 +726,19 @@ line wall
   1644.5 1054.5 1648.5 1055.0 1645.0 1047.5
   1641.5 1040.0 1626.5 1020.0 1620.0 1008.0
   1613.5 996.0 1605.5 986.0 1598.5 985.5
+  smooth off
 endline
 
 line pit
   1604.5 967.5
   1604.5 967.5 1607.5 990.0 1596.5 993.5
+  smooth off
 endline
 
 line pit
   1726.0 1134.5
   1726.0 1134.5 1721.5 1124.5 1729.0 1107.0
+  smooth off
 endline
 
 point 1711.5 1201.0 water-flow -orientation 110.3
@@ -709,6 +752,7 @@ point 1755.0 1159.5 blocks
 line pit
   1778.5 1255.5
   1778.5 1255.5 1804.0 1248.0 1794.0 1275.5
+  smooth off
 endline
 
 line wall
@@ -727,12 +771,14 @@ point 1791.0 1386.0 height -value [-11 m]
 line pit
   1858.5 1349.5
   1858.5 1349.5 1853.0 1364.5 1837.5 1362.0
+  smooth off
 endline
 
 line wall -subtype pit
   1847.0 1359.0
   1847.0 1359.0 1826.5 1359.5 1825.0 1350.0
   1823.5 1340.5 1828.5 1334.0 1828.5 1329.0
+  smooth off
 endline
 
 line wall
@@ -832,6 +878,7 @@ line wall -subtype pit
   3063.25 862.0
   3063.25 862.0 3057.25 866.75 3053.75 866.0
   3050.25 865.25 3050.0 863.0 3045.25 863.0
+  smooth off
 endline
 
 line wall
@@ -888,11 +935,13 @@ line wall
   2928.0 631.0 2969.5 658.0 2977.5 663.5
   2985.5 669.0 2997.0 676.25 3001.75 680.25
   3006.5 684.25 3026.5 711.5 3030.25 711.0
+  smooth off
 endline
 
 line wall -subtype pit
   2645.0 486.5
   2645.0 486.5 2638.0 501.0 2649.5 506.0
+  smooth off
 endline
 
 line wall
@@ -900,12 +949,14 @@ line wall
   2661.0 511.0 2681.0 513.0 2693.0 516.0
   2705.0 519.0 2731.5 536.5 2738.5 541.5
   2745.5 546.5 2762.5 558.5 2774.0 559.0
+  smooth off
 endline
 
 line wall -subtype pit
   2633.5 461.0
   2633.5 461.0 2646.5 457.0 2646.5 466.5
   2646.5 476.0 2646.0 482.5 2645.0 486.5
+  smooth off
 endline
 
 line wall
@@ -913,6 +964,7 @@ line wall
   2545.0 413.0 2538.5 432.0 2548.0 435.0
   2557.5 438.0 2573.0 446.5 2588.5 450.0
   2604.0 453.5 2628.0 458.5 2633.5 461.0
+  smooth off
 endline
 
 point 2519.69 314.962 station -name s14_7

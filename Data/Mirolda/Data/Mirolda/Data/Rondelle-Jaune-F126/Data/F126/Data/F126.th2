@@ -12,8 +12,13 @@ point 17.0 84.5 label -text "<center>F126<br>g. de la<br>Rondelle Jaune" -scale 
 point 52.0 151.0 entrance -orientation 71.3
 
 line wall -subtype invisible
+  336.75 85.75
+  336.75 85.75 343.25 86.75 343.0 90.0
+endline
+
+line wall -subtype invisible
   78.0 168.5
-  78.0 168.5 73.5 157.25 77.25 149.0
+  78.0 168.5 67.75 158.75 77.25 149.0
   smooth off
 endline
 

@@ -946,6 +946,7 @@ endline
 line pit
   11994.25 5810.75
   11994.25 5810.75 11988.5 5813.75 11988.25 5821.0
+  smooth off
 endline
 
 point 12000.75 5822.5 continuation -attr Code E -attr Cavite JB -attr Reseau "B22 - Champs Elysées" -text "CF à atteindre en face, accès probable aux Plafond de la Riviera"
@@ -1361,6 +1362,51 @@ point 11209.52 5688.51 station -name Bd.14@jb-amonts1
 point 11221.43 5695.96 station -name Bd.16@jb-amonts1
 
 point 11258.38 5671.99 station -name Bd.17@jb-amonts1
+
+line wall -subtype invisible
+  11024.5 5579.75
+  11004.0 5585.0
+endline
+
+line wall -subtype invisible
+  11126.5 5486.0
+  11126.5 5486.0 11126.5 5493.25 11124.75 5494.5
+endline
+
+line wall -subtype invisible
+  11153.0 5416.0
+  11153.0 5416.0 11154.5 5409.5 11160.5 5412.25
+endline
+
+line wall -subtype invisible
+  11244.25 5723.75
+  11237.25 5726.0
+endline
+
+line wall -subtype invisible
+  11305.75 5629.25
+  11308.75 5626.25
+endline
+
+line wall -subtype invisible
+  11384.5 5607.75
+  11390.0 5623.5
+endline
+
+line wall -subtype invisible
+  11385.5 5582.75
+  11386.25 5588.5
+endline
+
+line wall -subtype invisible
+  11341.75 5606.0
+  11339.25 5606.25
+endline
+
+line wall -subtype invisible
+  11333.5 5599.75
+  11331.75 5594.5
+endline
 
 point 11316.19 5631.56 station -name Bd.18@jb-amonts1
 

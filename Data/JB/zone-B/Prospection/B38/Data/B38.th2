@@ -53,11 +53,13 @@ point 95.0 -627.0 dig
 line pit
   116.0 -684.0
   116.0 -684.0 144.0 -711.0 136.0 -749.0
+  smooth off
 endline
 
 line pit -reverse on
   457.0 -503.0
   457.0 -503.0 466.0 -465.0 446.0 -451.0
+  smooth off
 endline
 
 line rock-border -close on
@@ -109,6 +111,28 @@ line wall
   535.0 -510.0 554.0 -510.0 563.0 -502.0
   572.0 -494.0 582.0 -472.0 595.0 -465.0
   608.0 -458.0 617.0 -447.0 617.0 -447.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  617.0 -447.0
+  617.0 -447.0 630.0 -423.0 592.0 -437.0
+endline
+
+line wall -subtype invisible
+  479.0 -539.0
+  495.0 -542.0
+endline
+
+line wall -subtype invisible
+  244.0 -667.0
+  233.0 -656.0
+endline
+
+line wall -subtype invisible
+  100.0 -691.0
+  100.0 -691.0 92.0 -707.0 97.0 -723.0
+  102.0 -739.0 116.0 -750.0 116.0 -750.0
   smooth off
 endline
 

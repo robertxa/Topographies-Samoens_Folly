@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 3198.8678 2726.4266000000002
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2677.16 1 1.0} {2283.46 0} Confluence-map.xvi 0 {}
 
 
@@ -510,6 +510,41 @@ line label -id l132-1337-671 -close on
   1320.75 648.25 1344.75 665.0 1348.25 666.75
   1351.75 668.5 1356.5 671.75 1356.5 671.75
   smooth off
+endline
+
+line wall -subtype invisible
+  444.25 429.5
+  447.5 425.0
+endline
+
+line wall -subtype invisible
+  539.5 462.5
+  533.25 460.25
+endline
+
+line wall -subtype invisible
+  678.5 518.25
+  677.25 515.75
+endline
+
+line wall -subtype invisible
+  1053.0 542.5
+  1056.0 544.5
+endline
+
+line wall -subtype invisible
+  1311.5 675.75
+  1303.75 685.75
+endline
+
+line wall -subtype invisible
+  1357.25 677.75
+  1352.25 682.5
+endline
+
+line wall -subtype invisible
+  1315.75 653.5
+  1320.75 648.25
 endline
 
 line wall

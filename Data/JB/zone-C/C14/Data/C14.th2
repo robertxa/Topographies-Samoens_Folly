@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 797.2877 836.6638
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {117.118 1 1.0} {533.077 C14} C14-map.xvi 0 {}
 
 
@@ -676,6 +676,16 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  577.0 201.0
+  575.75 208.0
+endline
+
+line wall -subtype invisible
+  552.5 172.0
+  550.75 170.25
+endline
+
 line wall
   570.0 117.75
   570.0 117.75 567.75 127.75 567.0 130.0
@@ -694,6 +704,11 @@ line floor-meander
   557.75 162.75 556.75 153.25 557.25 150.25
   557.75 147.25 562.0 133.75 562.0 133.75
   smooth off
+endline
+
+line wall -subtype invisible
+  556.25 251.5
+  556.25 251.5 552.0 256.25 545.75 252.25
 endline
 
 line wall -subtype invisible

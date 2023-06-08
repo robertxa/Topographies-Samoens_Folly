@@ -17,9 +17,14 @@ point 1198.0 575.0 air-draught -orientation 330.6 -subtype summer
 point 1069.0 274.0 narrow-end
 
 line wall -subtype invisible
+  925.0 444.0
+  932.0 455.0
+endline
+
+line wall -subtype invisible
   870.0 725.0
-  870.0 725.0 776.0 716.0 743.0 695.0
-  710.0 674.0 652.0 629.0 652.0 629.0
+  870.0 725.0 764.0 743.0 731.0 722.0
+  698.0 701.0 652.0 629.0 652.0 629.0
   smooth off
 endline
 

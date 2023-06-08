@@ -21,27 +21,35 @@ point -40.75 113.0 label -text "<bf>A27" -scale xl
 point -8.5 73.75 entrance -orientation 148.1
 
 line wall -subtype invisible
+  32.5 5.0
+  38.5 9.5
+endline
+
+line wall -subtype invisible
   18.75 62.75
-  18.75 62.75 14.0 62.75 8.5 58.25
-  3.0 53.75 -2.25 49.25 -3.25 46.75
+  18.75 62.75 10.75 64.5 5.25 60.0
+  -0.25 55.5 -2.25 49.25 -3.25 46.75
   smooth off
 endline
 
 line slope
   26.25 37.25
   26.25 37.25 19.0 27.75 8.25 27.5
+  smooth off
   l-size 6.0
 endline
 
 line slope
   23.75 45.75
   23.75 45.75 15.0 35.5 5.25 35.0
+  smooth off
   l-size 6.0
 endline
 
 line slope
   18.5 54.25
   18.5 54.25 13.5 45.25 3.5 43.75
+  smooth off
   l-size 6.0
 endline
 
@@ -123,6 +131,7 @@ point 52.5 6.0 altitude -align right
 line pit
   34.5 45.75
   34.5 45.75 30.25 49.25 26.5 44.75
+  smooth off
 endline
 
 line wall
@@ -140,6 +149,7 @@ line wall
   52.5 6.0 46.25 20.0 44.75 24.25
   43.25 28.5 42.0 30.75 39.75 34.5
   37.5 38.25 27.25 53.0 26.0 55.0
+  smooth off
 endline
 
 point 48.81869999999999 9.1909 station -name 1

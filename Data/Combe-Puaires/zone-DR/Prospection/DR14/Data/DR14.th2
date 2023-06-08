@@ -8,6 +8,11 @@ encoding  utf-8
 scrap SP-DR14-1 -projection plan -author 2001 "Bernard Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [1314.0 -449.0 1583.0 -449.0 0.0 0.0 5 0.0 m]
 
 line wall -subtype invisible
+  1092.0 -1048.0
+  1110.0 -1046.0
+endline
+
+line wall -subtype invisible
   630.0 -154.0
   630.0 -154.0 442.0 -120.0 354.0 -186.0
   smooth off

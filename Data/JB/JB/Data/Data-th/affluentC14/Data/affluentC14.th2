@@ -158,6 +158,11 @@ endscrap
 
 scrap SP-affluent-C14-2 -projection plan -author 2014 "Xavier Robert" -copyright 2014 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
 
+line wall -subtype invisible
+  72.75 48.25
+  75.0 52.75
+endline
+
 point 61.25 45.25 rope
 
 point 43.0 35.75 rope

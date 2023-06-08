@@ -16,6 +16,11 @@ line floor-meander
   smooth off
 endline
 
+line wall -subtype invisible
+  75.0 140.75
+  75.0 140.75 85.25 151.5 96.25 150.5
+endline
+
 line wall
   108.0 269.25
   108.0 269.25 102.75 265.25 102.5 267.25
@@ -85,6 +90,7 @@ endline
 line wall -subtype invisible
   100.0 280.0
   100.0 280.0 88.5 280.25 85.5 278.75
+  smooth off
 endline
 
 line wall

@@ -20,9 +20,14 @@ point 805.0 196.0 altitude -align top-right -value [+6 m]
 
 line wall -subtype invisible
   392.0 610.0
-  392.0 610.0 347.0 591.0 344.0 584.0
-  341.0 577.0 337.0 560.0 337.0 560.0
+  392.0 610.0 362.0 614.0 344.0 597.0
+  327.67 581.57 337.0 560.0 337.0 560.0
   smooth off
+endline
+
+line wall -subtype invisible
+  797.0 171.0
+  805.0 196.0
 endline
 
 line wall

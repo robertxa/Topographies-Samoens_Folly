@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 4065.01 5403.5934
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {3464.57 1 1.0} {4724.41 s69_47} Bricole_Aval-map.xvi 0 {}
 
 
@@ -367,6 +367,51 @@ line water-flow
   2490.5 2993.0 2493.5 2990.0 2491.0 2977.0
   2488.5 2964.0 2483.5 2944.0 2483.5 2944.0
   smooth off
+endline
+
+line wall -subtype invisible
+  2990.25 4143.5
+  2992.5 4142.25
+endline
+
+line wall -subtype invisible
+  2813.25 4076.0
+  2808.5 4072.0
+endline
+
+line wall -subtype invisible
+  2700.75 3682.0
+  2701.25 3680.0
+endline
+
+line wall -subtype invisible
+  2700.0 3692.25
+  2702.75 3691.5
+endline
+
+line wall -subtype invisible
+  2718.25 3688.5
+  2717.0 3690.5
+endline
+
+line wall -subtype invisible
+  2688.25 3639.5
+  2687.25 3633.5
+endline
+
+line wall -subtype invisible
+  2719.25 3459.75
+  2719.25 3464.0
+endline
+
+line wall -subtype invisible
+  2504.0 2883.0
+  2504.75 2888.25
+endline
+
+line wall -subtype invisible
+  2011.75 2354.0
+  2016.0 2353.25
 endline
 
 line pit
@@ -857,8 +902,8 @@ line pit
 endline
 
 line wall
-  2993.5 4143.0
-  2990.98 4142.77 2978.0 4141.5 2969.75 4139.75
+  2992.5 4142.25
+  2989.98 4142.02 2978.0 4141.5 2969.75 4139.75
   2961.5 4138.0 2956.25 4136.0 2952.75 4139.0
   2949.25 4142.0 2946.25 4147.75 2939.0 4143.75
   2931.75 4139.75 2931.5 4144.0 2930.0 4134.25

@@ -38,6 +38,18 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  2321.25 1690.0
+  2321.25 1690.0 2319.0 1677.75 2319.75 1673.75
+  2320.5 1669.75 2323.75 1664.25 2323.75 1664.25
+  smooth off
+endline
+
+line wall -subtype invisible
+  2364.5 1680.75
+  2361.75 1685.25
+endline
+
 line wall -reverse on
   2339.5 1689.5
   2339.5 1689.5 2342.5 1682.75 2345.5 1682.75
@@ -71,6 +83,21 @@ line pit
 endline
 
 point 2449.75 1723.75 water-flow -orientation 343.7
+
+line wall -subtype invisible
+  2393.75 1718.0
+  2389.75 1719.0
+endline
+
+line wall -subtype invisible
+  2453.0 1722.0
+  2448.75 1720.0
+endline
+
+line wall -subtype invisible
+  2438.0 1719.75
+  2438.0 1719.75 2434.5 1720.25 2435.75 1716.75
+endline
 
 line wall
   2438.0 1719.75

@@ -16,8 +16,14 @@ point -379.0 -68.0 label -text "<bf>A19" -scale xl
 point -115.0 -101.0 entrance -orientation 90.0
 
 line wall -subtype invisible
+  457.0 -124.0
+  462.0 -115.0
+endline
+
+line wall -subtype invisible
   43.0 -46.0
-  43.0 -46.0 14.0 -107.0 32.0 -147.0
+  43.0 -46.0 -11.0 -65.0 32.0 -147.0
+  smooth off
 endline
 
 line wall

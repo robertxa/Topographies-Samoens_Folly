@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 1702.804 915.402
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {551.178 1 1.0} {551.182 s47_0} Hongroise2-map.xvi 0 {}
 
 
@@ -307,6 +307,11 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  980.25 356.25
+  980.5 354.0
+endline
+
 line wall
   193.25 391.75
   193.25 391.75 216.75 398.75 223.75 407.5
@@ -565,6 +570,11 @@ point 299.908 410.102 station -name s62_58
 point 278.178 410.102 station -name s62_59
 
 point 239.188 438.432 station -name s62_60
+
+line wall -subtype invisible
+  191.25 399.0
+  193.25 391.75
+endline
 
 point 220.31799999999998 412.452 station -name s62_61
 

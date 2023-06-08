@@ -158,6 +158,11 @@ point 91.0 340.25 breakdown-choke -orientation 39.8
 
 point 84.75 342.5 breakdown-choke -orientation 39.8
 
+line wall -subtype invisible
+  265.25 198.25
+  260.0 198.5
+endline
+
 line wall
   260.0 198.5
   260.0 198.5 263.25 187.0 260.0 189.25
@@ -208,9 +213,34 @@ line pit
 endline
 
 line wall -subtype invisible
+  38.75 387.5
+  34.25 385.0
+endline
+
+line wall -subtype invisible
+  117.75 290.5
+  119.5 288.75
+endline
+
+line wall -subtype invisible
+  114.25 295.25
+  116.0 293.0
+endline
+
+line wall -subtype invisible
+  144.5 315.5
+  141.25 318.5
+endline
+
+line wall -subtype invisible
+  269.75 169.0
+  298.0 171.75
+endline
+
+line wall -subtype invisible
   304.25 171.75
-  304.25 171.75 308.25 179.25 308.25 182.75
-  308.25 186.25 308.25 191.25 308.25 191.25
+  304.25 171.75 313.0 178.5 313.0 182.0
+  313.0 185.5 308.25 191.25 308.25 191.25
   smooth off
 endline
 
@@ -325,8 +355,8 @@ endline
 line wall
   116.0 293.0
   116.0 293.0 118.75 297.75 120.5 296.5
-  122.25 295.25 121.75 293.25 121.0 292.5
-  120.25 291.75 117.75 290.5 117.75 290.5
+  122.25 295.25 121.25 294.25 120.5 293.5
+  119.75 292.75 117.75 290.5 117.75 290.5
   smooth off
 endline
 

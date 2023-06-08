@@ -184,9 +184,14 @@ line overhang -clip off
 endline
 
 line wall -subtype invisible
+  45.0 12.25
+  46.25 14.25
+endline
+
+line wall -subtype invisible
   38.5 127.25
-  38.5 127.25 28.5 125.25 27.5 123.0
-  26.5 120.75 23.75 117.25 23.75 117.25
+  38.5 127.25 28.5 126.75 27.5 124.5
+  26.5 122.25 23.75 117.25 23.75 117.25
   smooth off
 endline
 

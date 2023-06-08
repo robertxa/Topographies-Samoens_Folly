@@ -512,10 +512,8 @@ scrap SP-C74-3 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "li
 
 line wall -reverse on
   423.5 564.25
-  425.5 563.25
-  427.5 562.5
-  428.5 564.25
-  428.75 566.0
+  426.75 562.35 428.17 561.91 428.75 566.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -616,6 +614,61 @@ line wall
   281.25 518.25
   281.25 518.25 280.25 519.0 280.75 520.75
   smooth off
+endline
+
+line wall -subtype invisible
+  423.5 564.25
+  423.25 562.75
+endline
+
+line wall -subtype invisible
+  430.25 564.75
+  428.75 566.0
+endline
+
+line wall -subtype invisible
+  448.25 537.5
+  448.5 540.25
+endline
+
+line wall -subtype invisible
+  417.0 521.75
+  415.0 520.25
+endline
+
+line wall -subtype invisible
+  405.25 469.0
+  408.25 467.75
+endline
+
+line wall -subtype invisible
+  387.5 472.75
+  397.75 464.0
+endline
+
+line wall -subtype invisible
+  278.25 510.5
+  279.75 507.0
+endline
+
+line wall -subtype invisible
+  285.5 492.25
+  288.0 489.25
+endline
+
+line wall -subtype invisible
+  313.25 539.0
+  311.5 537.75
+endline
+
+line wall -subtype invisible
+  280.75 520.75
+  279.5 522.25
+endline
+
+line wall -subtype invisible
+  329.0 423.0
+  336.5 427.25
 endline
 
 line wall
@@ -932,16 +985,16 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  412.5 501.75
+  411.25 496.5
+endline
+
 line wall
   415.0 520.25
-  416.75 517.25
-  417.5 515.5
-  413.0 514.0
-  410.25 510.75
-  407.25 509.5
-  404.5 508.75
-  402.5 511.0
-  401.0 513.25
+  418.33 514.5 418.04 517.3 413.0 514.0
+  407.46 510.37 405.83 506.01 401.0 513.25
+  smooth off
 endline
 
 line wall
@@ -998,17 +1051,11 @@ endline
 
 line wall -reverse on
   430.25 564.75
-  430.0 563.0
-  430.5 560.0
-  432.5 556.25
-  434.25 552.5
-  436.5 548.5
-  437.75 545.75
-  437.0 543.5
-  440.25 544.25
-  443.5 542.75
-  445.75 541.25
-  448.5 540.25
+  428.4 557.51 437.09 552.34 437.75 545.75
+  437.83 544.96 436.32 543.91 437.0 543.5
+  437.95 542.93 439.15 544.38 440.25 544.25
+  442.84 543.95 445.99 541.16 448.5 540.25
+  smooth off
 endline
 
 point 332.837 425.246 station -name Xav5-09-35@C74
@@ -1370,6 +1417,51 @@ line wall
   363.75 408.25
   362.0 411.0
   361.5 414.5
+endline
+
+line wall -subtype invisible
+  336.5 427.25
+  329.0 423.0
+endline
+
+line wall -subtype invisible
+  339.0 400.0
+  339.0 400.0 339.0 398.0 342.0 398.5
+endline
+
+line wall -subtype invisible
+  361.5 414.5
+  361.5 414.5 359.25 416.75 358.25 413.75
+endline
+
+line wall -subtype invisible
+  428.75 282.5
+  427.25 286.75
+endline
+
+line wall -subtype invisible
+  425.25 240.25
+  425.25 240.25 428.0 239.25 427.5 242.5
+endline
+
+line wall -subtype invisible
+  416.75 242.5
+  419.25 243.0
+endline
+
+line wall -subtype invisible
+  405.75 264.0
+  404.0 261.25
+endline
+
+line wall -subtype invisible
+  379.75 336.75
+  379.25 333.5
+endline
+
+line wall -subtype invisible
+  379.5 369.5
+  376.75 370.0
 endline
 
 line wall
@@ -4059,6 +4151,26 @@ line label -id l845-489-180
   484.75 191.5
 endline
 
+line wall -subtype invisible
+  429.25 313.25
+  424.75 312.75
+endline
+
+line wall -subtype invisible
+  434.25 312.75
+  432.0 311.5
+endline
+
+line wall -subtype invisible
+  470.25 235.5
+  466.5 236.0
+endline
+
+line wall -subtype invisible
+  432.0 240.5
+  434.0 238.25
+endline
+
 line label -id l362-476-191
   484.75 191.5
   479.5 190.5
@@ -4186,8 +4298,8 @@ endline
 
 line wall -reverse on
   464.0 236.0
-  464.5 234.75 465.5 229.5 466.0 231.5
-  466.5 233.5 466.5 236.0 466.5 236.0
+  464.5 234.75 465.75 230.5 466.0 231.5
+  466.5 233.51 466.5 236.0 466.5 236.0
   smooth off
 endline
 
@@ -4316,9 +4428,14 @@ line overhang -clip off
 endline
 
 line wall -subtype invisible
+  496.0 172.25
+  494.0 174.25
+endline
+
+line wall -subtype invisible
   464.75 116.25
-  464.75 116.25 472.25 115.25 475.5 115.25
-  478.75 115.25 483.25 114.0 483.75 115.25
+  464.75 116.25 468.25 114.0 471.5 114.0
+  474.75 114.0 483.25 114.0 483.75 115.25
   484.25 116.5 484.75 118.25 484.75 118.25
   smooth off
 endline

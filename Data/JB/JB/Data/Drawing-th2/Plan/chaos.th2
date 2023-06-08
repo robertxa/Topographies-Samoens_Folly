@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
+##XTHERION## xth_me_area_adjust -128.75 -128.75 2624.0 2019.0
 ##XTHERION## xth_me_area_zoom_to 400
 
 
@@ -440,6 +440,36 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  2328.25 1765.0
+  2324.25 1762.5
+endline
+
+line wall -subtype invisible
+  2362.5 1772.5
+  2353.5 1765.0
+endline
+
+line wall -subtype invisible
+  2301.0 1714.25
+  2304.5 1717.0
+endline
+
+line wall -subtype invisible
+  2267.25 1672.5
+  2267.25 1665.75
+endline
+
+line wall -subtype invisible
+  2339.25 1646.0
+  2339.25 1651.75
+endline
+
+line wall -subtype invisible
+  2330.75 1698.0
+  2330.75 1698.0 2316.5 1705.5 2310.0 1703.25
+endline
+
 line wall
   2339.25 1651.75
   2339.25 1651.75 2334.25 1650.75 2332.25 1652.0
@@ -466,6 +496,11 @@ endline
 
 line wall
   2272.5 1686.75
+  2271.75 1684.75
+endline
+
+line wall
+  2271.75 1684.75
   2276.75 1679.5
   2276.75 1679.5 2289.5 1676.0 2287.0 1674.75
   2284.5 1673.5 2276.75 1671.75 2274.75 1672.0

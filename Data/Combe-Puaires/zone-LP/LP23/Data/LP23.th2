@@ -548,6 +548,41 @@ endscrap
 
 scrap SP-LP23-6 -projection plan -author 1989 "Bernard Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 159.49608 -128.0 0.0 0.0 7.302400432 0.0 m]
 
+line wall -subtype invisible
+  43.5 314.75
+  41.75 311.75
+endline
+
+line wall -subtype invisible
+  66.5 300.0
+  68.25 302.5
+endline
+
+line wall -subtype invisible
+  93.75 263.25
+  93.75 263.25 96.5 265.5 94.25 268.0
+endline
+
+line wall -subtype invisible
+  94.5 252.5
+  90.25 252.75
+endline
+
+line wall -subtype invisible
+  114.75 268.0
+  112.25 265.0
+endline
+
+line wall -subtype invisible
+  187.0 168.25
+  188.5 170.25
+endline
+
+line wall -subtype invisible
+  168.5 214.75
+  174.75 220.75
+endline
+
 point 58.898 302.223 station -name 2.1@LP23
 
 point 62.768 286.863 station -name 2.2@LP23

@@ -71,6 +71,7 @@ line pit
   196.5 59.75
   196.5 59.75 203.5 60.75 204.25 63.0
   205.0 65.25 204.5 71.75 208.5 72.0
+  smooth off
 endline
 
 point 11.0 126.25 label -text "<bf>T35" -scale xl
@@ -268,6 +269,36 @@ point 122.0 105.25 snow
 
 point 107.25 122.25 continuation -attr Code D -attr Cavite T35 -attr Reseau " " -attr CA " " -text "Diaclase remontante étroite"
 
+line wall -subtype invisible
+  266.75 171.75
+  265.25 169.0
+endline
+
+line wall -subtype invisible
+  301.5 157.25
+  299.75 160.0
+endline
+
+line wall -subtype invisible
+  210.5 65.5
+  211.75 68.75
+endline
+
+line wall -subtype invisible
+  204.5 57.75
+  206.0 60.0
+endline
+
+line wall -subtype invisible
+  117.0 121.25
+  116.75 117.75
+endline
+
+line wall -subtype invisible
+  194.5 111.5
+  192.25 113.0
+endline
+
 line wall
   192.25 113.0
   192.25 113.0 187.5 107.75 186.75 106.5
@@ -298,8 +329,8 @@ line wall
   197.5 80.75 195.25 78.25 191.0 76.75
   186.75 75.25 182.75 75.25 181.0 73.0
   179.25 70.75 173.25 67.75 171.75 67.0
-  170.25 66.25 164.5 61.0 166.5 64.25
-  168.5 67.5 169.75 69.25 171.25 71.25
+  170.25 66.25 165.25 62.75 166.5 64.25
+  168.94 67.17 169.75 69.25 171.25 71.25
   172.75 73.25 176.0 73.5 177.75 74.25
   179.5 75.0 184.75 76.0 184.0 77.5
   183.25 79.0 178.25 78.25 178.25 80.25

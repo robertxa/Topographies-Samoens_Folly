@@ -645,6 +645,29 @@ line pit
   13077.5 6454.25
 endline
 
+line wall -subtype invisible
+  13040.75 6483.0
+  13029.0 6482.5
+endline
+
+line wall -subtype invisible
+  13063.25 6480.5
+  13065.75 6481.75
+endline
+
+line wall -subtype invisible
+endline
+
+line wall -subtype invisible
+  13106.0 6404.25
+  13108.75 6407.25
+endline
+
+line wall -subtype invisible
+  13060.75 6361.25
+  13060.75 6361.25 13072.25 6360.25 13073.5 6364.0
+endline
+
 line pit
   13072.75 6456.5
   13072.75 6456.5 13069.25 6456.75 13069.25 6455.25
@@ -988,9 +1011,29 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  12997.0 6575.25
+  12997.0 6575.25 12996.25 6572.5 12999.0 6573.0
+endline
+
+line wall -subtype invisible
+  13026.75 6551.25
+  13024.25 6551.75
+endline
+
+line wall -subtype invisible
+  13034.0 6545.0
+  13032.75 6547.5
+endline
+
+line wall -subtype invisible
+  13027.5 6526.5
+  13024.75 6524.5
+endline
+
 line wall -subtype unsurveyed
-  13025.0 6525.0
-  13025.0 6525.0 13023.5 6523.75 13025.0 6520.75
+  13024.75 6524.5
+  13024.75 6524.5 13023.5 6523.75 13025.0 6520.75
   13026.5 6517.75 13031.5 6515.5 13031.5 6515.5
   smooth off
 endline
@@ -1071,8 +1114,8 @@ endline
 
 line wall
   12948.5 6683.5
-  12948.5 6683.5 12949.75 6676.75 12951.25 6676.75
-  12952.75 6676.75 12955.25 6676.75 12955.75 6674.25
+  12948.5 6683.5 12952.16 6678.05 12953.66 6678.05
+  12955.16 6678.05 12955.25 6676.75 12955.75 6674.25
   12956.25 6671.75 12958.25 6667.0 12958.5 6665.0
   12958.75 6663.0 12958.0 6660.5 12959.5 6658.0
   12961.0 6655.5 12975.75 6636.25 12977.5 6633.5
@@ -1191,8 +1234,9 @@ line wall
   12909.0 6700.25 12906.0 6700.0 12904.25 6699.5
   12902.5 6699.0 12893.25 6693.5 12893.5 6691.25
   12893.75 6689.0 12896.5 6687.5 12899.25 6687.5
-  12902.0 6687.5 12904.5 6687.5 12904.75 6686.25
-  12905.0 6685.0 12903.75 6690.0 12905.0 6690.25
+  12902.0 6687.5 12904.75 6686.25 12904.75 6686.25
+  smooth off
+  12904.75 6686.25 12903.75 6690.0 12905.0 6690.25
   12906.25 6690.5 12907.25 6686.0 12908.0 6687.5
   12908.75 6689.0 12910.25 6690.0 12912.0 6692.0
   12913.75 6694.0 12912.75 6703.0 12914.25 6701.25
@@ -1209,6 +1253,21 @@ line wall
   12961.0 6584.25 12978.0 6551.25 12975.0 6553.25
   12972.0 6555.25 12970.0 6557.75 12970.0 6557.75
   smooth off
+endline
+
+line wall -subtype invisible
+  12936.0 6698.5
+  12939.0 6698.75
+endline
+
+line wall -subtype invisible
+  12970.0 6557.75
+  12968.5 6554.75
+endline
+
+line wall -subtype invisible
+  13029.5 6433.0
+  13031.5 6443.75
 endline
 
 line wall
@@ -2446,6 +2505,26 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  12428.5 5886.0
+  12432.0 5887.75
+endline
+
+line wall -subtype invisible
+  12468.25 5960.25
+  12464.0 5956.25
+endline
+
+line wall -subtype invisible
+  12747.5 6038.25
+  12741.75 6038.25
+endline
+
+line wall -subtype invisible
+  12883.25 5967.5
+  12891.5 5967.5
+endline
+
 line wall
   12891.5 5967.5
   12891.5 5967.5 12891.5 5967.25 12889.5 5969.75
@@ -2498,6 +2577,21 @@ endscrap
 
 
 scrap SP-voltigeurs -projection plan -station-names "" "@jb-amonts1" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
+
+line wall -subtype invisible
+  12883.25 6051.5
+  12888.0 6060.0
+endline
+
+line wall -subtype invisible
+  12777.25 6188.0
+  12777.75 6184.75
+endline
+
+line wall -subtype invisible
+  13008.75 6170.75
+  13011.5 6174.75
+endline
 
 line wall
   12777.25 6188.0
@@ -3319,6 +3413,26 @@ line wall
   13064.75 6304.5 13065.0 6306.5 13066.0 6308.0
   13067.0 6309.5 13073.25 6317.25 13073.25 6317.25
   smooth off
+endline
+
+line wall -subtype invisible
+  13011.5 6174.75
+  13008.75 6170.75
+endline
+
+line wall -subtype invisible
+  13105.0 6271.75
+  13104.5 6277.0
+endline
+
+line wall -subtype invisible
+  13076.5 6313.0
+  13073.25 6317.25
+endline
+
+line wall -subtype invisible
+  13083.5 6304.0
+  13079.75 6309.25
 endline
 
 line wall

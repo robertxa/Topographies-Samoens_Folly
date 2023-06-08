@@ -522,6 +522,21 @@ endscrap
 
 scrap SP-aval-aiguilles2013-2 -projection plan -author 2013 "Xavier Robert" -copyright 2013 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
 
+line wall -subtype invisible
+  223.0 107.0
+  209.25 108.0
+endline
+
+line wall -subtype invisible
+  192.5 77.75
+  204.5 69.25
+endline
+
+line wall -subtype invisible
+  232.25 59.25
+  231.25 71.5
+endline
+
 line wall -reverse on
   232.25 59.25
   232.25 59.25 225.75 61.25 221.5 62.0
@@ -602,8 +617,8 @@ point 203.25 88.0 gypsum
 line wall -reverse on
   192.5 77.75
   192.5 77.75 196.0 80.25 198.0 82.0
-  200.0 83.75 203.75 84.25 200.5 86.0
-  197.25 87.75 195.5 86.25 197.25 91.0
+  200.0 83.75 204.08 85.11 200.5 86.0
+  198.5 86.5 195.5 86.25 197.25 91.0
   199.0 95.75 204.25 99.5 207.75 100.75
   211.25 102.0 210.75 103.25 209.25 108.0
   smooth off

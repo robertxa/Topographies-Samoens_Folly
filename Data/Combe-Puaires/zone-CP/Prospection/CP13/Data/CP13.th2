@@ -19,20 +19,22 @@ point 367.0 -201.0 label -text "R7"
 
 line wall -close on -outline in
   532.0 -395.0
-  532.0 -395.0 524.0 -359.0 532.0 -366.0
-  540.0 -373.0 553.0 -401.0 543.0 -400.0
-  533.0 -399.0 532.0 -395.0 532.0 -395.0
+  532.0 -395.0 526.0 -364.0 532.0 -366.0
+  542.08 -369.36 554.0 -395.0 543.0 -400.0
+  533.84 -404.16 532.0 -395.0 532.0 -395.0
   smooth off
 endline
 
 line pit
   570.0 -406.0
   570.0 -406.0 552.0 -437.0 523.0 -438.0
+  smooth off
 endline
 
 line pit
   549.0 -293.0
   549.0 -293.0 507.0 -282.0 483.0 -296.0
+  smooth off
 endline
 
 line pit -close on
@@ -46,6 +48,7 @@ endline
 line pit
   523.0 -141.0
   523.0 -141.0 460.0 -129.0 443.0 -154.0
+  smooth off
 endline
 
 point 630.0 -603.0 altitude -align right -value [-30 m]
@@ -63,6 +66,7 @@ point 458.0 -38.0 entrance -orientation 159.5
 line wall -subtype invisible
   515.0 -112.0
   515.0 -112.0 455.0 -101.0 440.0 -134.0
+  smooth off
 endline
 
 line wall
@@ -76,6 +80,11 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  611.0 -614.0
+  630.0 -603.0
+endline
+
 line wall
   440.0 -134.0
   440.0 -134.0 454.0 -146.0 462.0 -161.0
@@ -83,7 +92,7 @@ line wall
   474.0 -227.0 481.0 -236.0 482.0 -247.0
   483.0 -258.0 477.0 -254.0 485.0 -283.0
   493.0 -312.0 548.0 -463.0 555.0 -508.0
-  562.0 -553.0 611.0 -616.0 611.0 -616.0
+  562.0 -553.0 611.0 -614.0 611.0 -614.0
   smooth off
 endline
 
@@ -146,6 +155,7 @@ point 161.0 -162.0 entrance -orientation 139.9
 line wall -outline in -subtype invisible
   205.0 -164.0
   205.0 -164.0 132.0 -224.0 106.0 -230.0
+  smooth off
 endline
 
 line wall -outline in
@@ -216,6 +226,7 @@ endline
 line wall -outline in -subtype debris
   286.0 -516.0
   286.0 -516.0 341.0 -525.0 348.0 -523.0
+  smooth off
 endline
 
 line wall -outline in
@@ -241,6 +252,7 @@ line wall -outline in
   106.0 -230.0
   106.0 -230.0 134.0 -236.0 149.0 -225.0
   164.0 -214.0 192.0 -211.0 200.0 -214.0
+  smooth off
 endline
 
 point 191.0 -196.0 station -name CP13@CP13

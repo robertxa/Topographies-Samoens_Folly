@@ -1,13 +1,18 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -110.75 -139.4415 227.5 197.0
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {45.8765 1 1.0} {50.0943 0} B3-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {85.2431 1 1.0} {89.4618 1} B3-map.xvi 0 {}
 
 
 
 scrap SP-B3-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
 
 point 30.7065 52.6243 station -name 2@B3
+
+line wall -subtype invisible
+  41.5 44.75
+  41.5 44.75 50.25 42.0 58.0 54.5
+endline
 
 line wall
   41.25 53.0

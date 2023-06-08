@@ -18,7 +18,8 @@ endline
 
 line wall
   1010.0 -448.0
-  1010.0 -448.0 1068.0 -280.0 1006.0 -210.0
+  1010.0 -448.0 1128.0 -316.0 1006.0 -210.0
+  smooth off
 endline
 
 line wall
@@ -28,6 +29,7 @@ line wall
   854.0 -214.0 820.0 -210.0 772.0 -178.0
   724.0 -146.0 586.0 -136.0 516.0 -124.0
   446.0 -112.0 374.0 -118.0 350.0 -88.0
+  smooth off
 endline
 
 line wall -close on -subtype ice -outline none
@@ -56,6 +58,7 @@ line wall -subtype pit
   166.0 -20.0 90.0 -2.0 94.0 -56.0
   98.0 -110.0 92.0 -184.0 136.0 -200.0
   180.0 -216.0 302.0 -220.0 342.0 -216.0
+  smooth off
 endline
 
 point 1010.0 -448.0 altitude -align bottom

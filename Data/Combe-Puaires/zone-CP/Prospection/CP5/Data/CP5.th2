@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -131.0 -972 800 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CP05.gif 0 {}
 
 
@@ -61,11 +61,16 @@ line overhang -close on
   smooth off
 endline
 
+line wall -subtype invisible
+  162.5 -338.0
+  165.0 -345.5
+endline
+
 line wall
   220.5 -281.0
   220.5 -281.0 189.0 -293.0 182.5 -306.0
   176.0 -319.0 173.0 -334.0 168.0 -334.0
-  163.0 -334.0 162.5 -338.0 162.5 -338.0
+  164.99 -334.0 162.5 -338.0 162.5 -338.0
   smooth off
 endline
 

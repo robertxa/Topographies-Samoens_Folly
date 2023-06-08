@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -5034 8026 138.5
+##XTHERION## xth_me_area_adjust -129.5 -3210.0 2099.0 139.0
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} ../autres/ermoy6.png 0 {}
 
@@ -35,7 +35,7 @@ line wall
   1140.0 -1966.75 1139.25 -1960.75 1139.25 -1955.5
   1139.25 -1950.25 1134.0 -1925.5 1133.5 -1921.5
   1133.0 -1917.5 1129.75 -1914.25 1131.5 -1912.5
-  1133.25 -1910.75 1136.75 -1906.5 1136.75 -1906.5
+  1134.26 -1909.74 1136.75 -1906.5 1136.75 -1906.5
   smooth off
   1138.25 -1904.0
 endline
@@ -50,6 +50,26 @@ line wall -outline in
   1243.75 -2110.25 1241.0 -2104.75 1241.0 -2099.25
   1241.0 -2093.75 1245.0 -2090.5 1245.0 -2090.5
   smooth off
+endline
+
+line wall -subtype invisible
+  1411.75 -2491.0
+  1430.5 -2490.0
+endline
+
+line wall -subtype invisible
+  1108.25 -1925.5
+  1109.5 -1938.5
+endline
+
+line wall -subtype invisible
+  1138.25 -1904.0
+  1128.25 -1896.75
+endline
+
+line wall -subtype invisible
+  1314.0 -2264.0
+  1315.25 -2277.5
 endline
 
 line wall
@@ -174,6 +194,16 @@ line wall -id l57-1390--2357 -subtype unsurveyed
   1411.5 -2376.25 1417.0 -2373.25 1420.75 -2376.75
   1424.5 -2380.25 1427.75 -2384.5 1427.75 -2384.5
   smooth off
+endline
+
+line wall -subtype invisible
+  1477.5 -2149.0
+  1460.5 -2142.5
+endline
+
+line wall -subtype invisible
+  1561.25 -2185.0
+  1541.25 -2165.5
 endline
 
 line wall
@@ -507,7 +537,7 @@ endline
 
 line wall
   1109.5 -1938.5
-  1109.5 -1938.5 1112.0 -1932.75 1114.0 -1934.5
+  1109.5 -1938.5 1112.08 -1932.82 1114.0 -1934.5
   1116.0 -1936.25 1115.25 -1939.0 1115.75 -1944.75
   1116.25 -1950.5 1122.0 -1970.25 1125.25 -1974.5
   1128.5 -1978.75 1157.25 -1998.25 1161.0 -2003.5

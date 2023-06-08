@@ -10,6 +10,7 @@ scrap SP-D24-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "li
 line wall -subtype invisible
   110.0 -184.0
   110.0 -184.0 78.0 -186.0 70.0 -217.0
+  smooth off
 endline
 
 line wall
@@ -19,6 +20,7 @@ line wall
   124.0 -334.0 141.0 -290.0 128.0 -269.0
   115.0 -248.0 104.0 -221.0 103.0 -216.0
   102.0 -211.0 105.0 -190.0 110.0 -184.0
+  smooth off
 endline
 
 line wall
@@ -36,6 +38,11 @@ point 211.0 -470.0 continuation -attr Code D -attr Cavite D24 -attr CA "Léger c
 point 100.0 -539.0 narrow-end
 
 point 175.0 -523.0 air-draught -orientation 306.2 -scale s -subtype summer
+
+line wall -subtype invisible
+  119.0 -488.0
+  121.0 -480.0
+endline
 
 point 110.0 -184.0 altitude -align right
 

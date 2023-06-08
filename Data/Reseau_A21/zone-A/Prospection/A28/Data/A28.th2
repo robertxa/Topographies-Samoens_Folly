@@ -28,6 +28,7 @@ line wall
   226.0 -285.0 214.0 -273.0 207.0 -264.0
   200.0 -255.0 186.0 -252.0 170.0 -255.0
   154.0 -258.0 139.0 -273.0 131.0 -254.0
+  smooth off
 endline
 
 line wall -subtype pit
@@ -50,6 +51,7 @@ point -23.0 -431.0 entrance -orientation 52.9
 line pit
   242.0 -520.0
   242.0 -520.0 273.0 -528.0 278.0 -510.0
+  smooth off
 endline
 
 line contour
@@ -90,6 +92,12 @@ endline
 line wall -subtype pit
   175.0 -394.0
   175.0 -394.0 167.0 -369.0 167.0 -360.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  254.0 -528.0
+  254.0 -528.0 272.0 -532.0 277.0 -523.0
 endline
 
 line wall

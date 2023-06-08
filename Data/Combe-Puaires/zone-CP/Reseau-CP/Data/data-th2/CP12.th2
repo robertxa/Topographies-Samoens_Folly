@@ -1728,6 +1728,11 @@ line pit
   smooth off
 endline
 
+line wall -subtype invisible
+  1085.75 1035.0
+  1086.75 1031.75
+endline
+
 point 1159.25 1049.0 air-draught -orientation 248.5 -subtype winter
 
 point 1152.75 1067.75 air-draught -orientation 60.3 -subtype summer
@@ -1760,8 +1765,8 @@ point 1115.5 1045.5 continuation
 
 line wall -subtype invisible
   1153.25 1052.25
-  1153.25 1052.25 1156.0 1057.75 1154.25 1058.75
-  1152.5 1059.75 1150.75 1060.0 1150.75 1060.0
+  1153.25 1052.25 1157.5 1058.5 1155.75 1059.5
+  1154.0 1060.5 1150.75 1060.0 1150.75 1060.0
   smooth off
 endline
 
@@ -2175,6 +2180,41 @@ endline
 point 932.25 991.5 rope
 
 point 1077.0 1047.0 rope
+
+line wall -subtype invisible
+  965.5 980.75
+  960.5 982.5
+endline
+
+line wall -subtype invisible
+  958.25 974.0
+  958.25 971.5
+endline
+
+line wall -subtype invisible
+  956.5 943.0
+  959.0 942.75
+endline
+
+line wall -subtype invisible
+  922.5 982.25
+  920.25 980.5
+endline
+
+line wall -subtype invisible
+  957.0 991.0
+  954.5 992.75
+endline
+
+line wall -subtype invisible
+  1048.75 1021.25
+  1046.5 1019.25
+endline
+
+line wall -subtype invisible
+  1056.5 1023.25
+  1053.75 1023.5
+endline
 
 line wall
   957.0 991.0

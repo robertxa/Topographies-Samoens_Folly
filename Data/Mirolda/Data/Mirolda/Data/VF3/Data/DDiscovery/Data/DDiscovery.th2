@@ -52,6 +52,7 @@ point 41.0 102.5 height -value [-? m]
 line pit -reverse on
   81.25 132.0
   81.25 132.0 88.5 135.5 87.0 123.25
+  smooth off
 endline
 
 line wall
@@ -278,18 +279,16 @@ point 155.127 165.799 station -name s41_5
 endscrap
 
 
-
-scrap scrap56 -projection plan -station-names "" "@DDiscovery" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 679.1814 -128.0 0.0 0.0 20.50240756 0.0 m]
-
-endscrap
-
-
-
 scrap SP-Discovery-4 -projection plan -station-names "" "@DDiscovery" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 679.1814 -128.0 0.0 0.0 20.50240756 0.0 m]
 
 line wall -subtype invisible
+  345.75 317.0
+  344.5 312.25
+endline
+
+line wall -subtype invisible
   367.75 309.75
-  367.75 309.75 396.75 328.5 399.0 331.75
+  367.75 309.75 396.75 323.25 399.0 331.75
   smooth off
 endline
 
@@ -301,8 +300,8 @@ endline
 
 line wall
   399.0 331.75
-  399.0 331.75 391.25 325.5 386.0 329.0
-  380.75 332.5 377.25 338.0 373.5 335.75
+  399.0 331.75 389.25 326.75 384.0 330.25
+  378.75 333.75 377.25 338.0 373.5 335.75
   369.75 333.5 366.75 318.0 360.5 317.25
   354.25 316.5 345.75 317.0 345.75 317.0
   smooth off

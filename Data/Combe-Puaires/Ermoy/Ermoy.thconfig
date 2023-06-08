@@ -161,6 +161,8 @@ layout my_layout
    \fi
    \newtoks\club \club={Groupe Spéléologique Vulcain, Groupe Aven, Spéléo Club de la Duchère, Groupe Spéléologique INSA, Spéléo Club de Villeurbanne, Spéléo Club de Lyon}
    endcode  
+   
+#   debug on
  
 endlayout
 
@@ -199,6 +201,7 @@ layout my_layout-coupe
 	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
+	#debug on
  
 	# Titre          
 	code tex-map

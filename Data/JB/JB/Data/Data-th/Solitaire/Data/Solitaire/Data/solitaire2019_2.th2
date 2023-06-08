@@ -64,6 +64,16 @@ endline
 
 point 2010.0 708.5 height -value [-24 m]
 
+line wall -subtype invisible
+  1958.5 710.0
+  1959.5 697.0
+endline
+
+line wall -subtype invisible
+  1972.0 720.5
+  1956.0 719.0
+endline
+
 line wall
   1966.0 665.0
   1966.0 665.0 1962.0 674.0 1965.5 681.0
@@ -97,6 +107,11 @@ endline
 
 point 1930.0 506.0 traverse
 
+line wall -subtype invisible
+  1831.25 518.0
+  1873.75 507.75
+endline
+
 line wall
   1873.75 507.75
   1873.75 507.75 1895.5 506.0 1904.0 515.0
@@ -124,6 +139,7 @@ scrap SP-solitaire2019-3 -projection plan -author 2019 "Xavier Robert" -copyrigh
 line pit
   1896.0 585.0
   1896.0 585.0 1900.5 572.0 1894.5 568.5
+  smooth off
 endline
 
 line slope
@@ -147,9 +163,14 @@ line pit
 endline
 
 line wall -subtype invisible
+  1896.75 579.25
+  1896.75 579.25 1891.0 576.5 1895.5 573.75
+endline
+
+line wall -subtype invisible
   1901.0 705.0
-  1901.0 705.0 1882.25 679.0 1890.75 667.25
-  1899.25 655.5 1907.5 652.5 1907.5 652.5
+  1901.0 705.0 1882.5 679.75 1891.0 668.0
+  1899.5 656.25 1907.5 652.5 1907.5 652.5
   smooth off
 endline
 
@@ -200,6 +221,7 @@ scrap SP-solitaire2019_4 -projection plan -author 2019 "Xavier Robert" -copyrigh
 point 1918.0 874.5 altitude -align top
 
 #point 1927.25 933.0 label -text "<center>réseau de la<br>Pierre Qui Tombe"
+
 
 line floor-meander
   1910.25 813.0

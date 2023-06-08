@@ -25,8 +25,8 @@ point 64.5 -647.5 narrow-end
 
 line wall -subtype invisible
   68.0 -730.0
-  68.0 -730.0 125.5 -818.0 146.0 -821.0
-  166.5 -824.0 180.0 -824.0 180.0 -824.0
+  68.0 -730.0 78.5 -806.5 99.0 -809.5
+  119.5 -812.5 180.0 -824.0 180.0 -824.0
   smooth off
 endline
 
@@ -54,6 +54,16 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  115.0 -642.5
+  114.0 -656.0
+endline
+
+line wall -subtype invisible
+  284.5 -505.0
+  284.5 -505.0 258.0 -516.5 258.0 -531.5
+endline
+
 line wall
   467.0 -501.5
   467.0 -501.5 453.0 -511.0 441.0 -517.5
@@ -61,6 +71,7 @@ line wall
   394.5 -552.0 373.0 -555.5 363.0 -547.5
   353.0 -539.5 331.0 -517.5 319.5 -514.0
   308.0 -510.5 289.5 -506.0 284.5 -505.0
+  smooth off
 endline
 
 area blocks
@@ -84,6 +95,7 @@ line floor-meander
   362.0 -571.5
   362.0 -571.5 318.5 -552.0 305.0 -541.5
   291.5 -531.0 277.0 -519.5 270.0 -519.0
+  smooth off
 endline
 
 point 227.5 -481.5 continuation -attr Code A -attr Cavite CH31 -attr CA " " -text "A revoir avec uen combinaison, départ de méandre"
@@ -107,6 +119,7 @@ line wall
   433.0 -613.5 465.5 -591.0 470.0 -573.0
   474.5 -555.0 472.0 -543.0 473.5 -535.0
   475.0 -527.0 479.5 -518.0 486.0 -518.0
+  smooth off
 endline
 
 point 100.0 -753.0 station -name CH31@CH31

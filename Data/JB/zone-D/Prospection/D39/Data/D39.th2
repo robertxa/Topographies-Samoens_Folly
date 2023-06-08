@@ -99,6 +99,11 @@ line wall -subtype presumed
   smooth off
 endline
 
+line wall -subtype invisible
+  1020.0 -1765.0
+  1107.0 -1680.0
+endline
+
 line wall
   532.0 -1328.0
   532.0 -1328.0 558.0 -1324.0 559.0 -1339.0
@@ -112,6 +117,7 @@ line wall
   891.0 -1549.0 895.0 -1568.0 902.0 -1578.0
   909.0 -1588.0 920.0 -1610.0 923.0 -1625.0
   926.0 -1640.0 925.0 -1656.0 927.0 -1665.0
+  smooth off
 endline
 
 point 566.0 -1312.0 station -name D39@D39

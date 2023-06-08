@@ -10,6 +10,7 @@ scrap SP-A16-1 -projection plan -author 2020 "Xavier Robert" -copyright 2020 "li
 line wall
   327.0 -264.0
   327.0 -264.0 257.0 -216.0 243.0 -210.0
+  smooth off
 endline
 
 point -231.0 248.0 label -text "<bf>A16" -scale xl
@@ -17,6 +18,7 @@ point -231.0 248.0 label -text "<bf>A16" -scale xl
 line pit
   249.0 -187.0
   249.0 -187.0 196.0 -205.0 196.0 -237.0
+  smooth off
 endline
 
 point 388.0 -300.0 narrow-end
@@ -33,10 +35,16 @@ line wall -subtype pit
   smooth off
 endline
 
+line wall -subtype invisible
+  317.0 -281.0
+  317.0 -281.0 344.0 -288.0 327.0 -264.0
+endline
+
 line wall -subtype pit
   134.0 -116.0
   134.0 -116.0 129.0 -131.0 149.0 -157.0
   169.0 -183.0 199.0 -200.0 221.0 -217.0
+  smooth off
 endline
 
 line wall

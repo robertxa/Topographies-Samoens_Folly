@@ -106,6 +106,26 @@ endline
 
 point 1264.0 -1583.0 continuation -attr Code D -attr Cavite CP62-CP63 -attr Reseau " " -attr CA "Courant d'air" -text "m. étroit à désobstruer ; courant d'air"
 
+line wall -subtype invisible
+  1270.0 -1618.0
+  1254.0 -1612.5
+endline
+
+line wall -subtype invisible
+  1398.0 -1794.5
+  1394.5 -1759.0
+endline
+
+line wall -subtype invisible
+  1141.0 -1866.5
+  1122.5 -1842.0
+endline
+
+line wall -subtype invisible
+  1054.5 -1810.5
+  987.5 -1831.0
+endline
+
 line wall
   1122.5 -1842.0
   1122.5 -1842.0 1116.0 -1848.5 1110.0 -1844.5
@@ -495,6 +515,21 @@ point 750.5 -1289.0 station -name 16@CP62
 point 769.5 -1409.0 station -name 15@CP62
 
 point 784.5 -1467.0 station -name 13@CP62
+
+line wall -subtype invisible
+  987.5 -1831.0
+  1054.5 -1810.5
+endline
+
+line wall -subtype invisible
+  606.0 -1055.5
+  598.0 -1063.0
+endline
+
+line wall -subtype invisible
+  646.5 -1059.5
+  638.5 -1052.5
+endline
 
 point 846.0 -1520.5 station -name 11@CP62
 
