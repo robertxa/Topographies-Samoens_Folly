@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
@@ -50,7 +50,8 @@ layout layout_plan
 	legend off
 	#legend-width 22 cm
 	legend-width 15 cm
-	map-header 35 45 nw
+#	map-header 35 45 nw
+	map-header 0 100 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -80,7 +81,8 @@ layout layout_plan
   
 	# Ajouter une coupe développée sur le même pdf
 	#map-image 0 100 sw Outputs/Solitarises-coupe2022b.pdf
-	map-image 0 100 sw Outputs/Solitarises-coupe2023.pdf
+	#map-image 0 100 sw Outputs/Solitarises-coupe2023.pdf
+	map-image 0 0 nw Outputs/Solitarises-coupe2023b.pdf
   
 endlayout
   
@@ -124,7 +126,7 @@ layout layout_coupe
 	legend off
 	#legend-width 14.5  cm
 	legend-width 10  cm
-	map-header 60 36 nw
+	map-header 100 36 ne
 	map-header-bg on
 	layers on
 	symbol-hide line survey
@@ -145,7 +147,7 @@ layout layout_coupe
 			
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		%\newtoks\club \club={Groupe Spéléologique Vulcain}
+		#\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
 	######################### 
@@ -153,15 +155,15 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2023.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2023.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2023b.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2023b.xvi
 
 select MP-Solitarises-tot@Solitarises
 select MC-Solitarises-tot@Solitarises
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2023.pdf
-	export map -layout layout_plan -o Outputs/Solitarises-plan2023.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2023b.pdf
+	export map -layout layout_plan -o Outputs/Solitarises-plan2023b.pdf
  
 # Export des modeles 3D
 	export model -o Outputs/Solitarises.lox

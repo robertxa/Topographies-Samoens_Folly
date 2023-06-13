@@ -9,12 +9,17 @@ survey Solitarises -title "Réseau des Solitarisés"
 	input Data/solitaire2022.th
 	input Data/solitaire2023a.th
 		equate 19@solitaire2023a 0@solitaire2022
+	input Data/solitaire2023b.th
+		equate 0@solitaire2023a 0@solitaire2023b
 
 	input Data/Solitarises.th2
 	
 	input Data/Solitarises-coupe.th2
 	input Data/Solitarises2023-coupe.th2
 		join SC-Solitarises2023-1 SC-Solitarises-1
+	input Data/Solitaire2023b-coupe.th2
+		join SC-Solitarises2023-1 SC-Solitarises2023b-1
+		join SC-Solitarises2023-1 SC-Solitarises2023b-4
 
 	# Add maps
 	input Solitarises-maps.th

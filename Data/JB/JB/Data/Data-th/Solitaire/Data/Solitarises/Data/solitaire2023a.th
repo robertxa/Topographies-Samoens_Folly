@@ -33,7 +33,9 @@ survey solitaire2023a -title "solitaire2023a"
     0 . 1.52 225.2 -23.5
     0 . 1.96 92.7 11.5
     extend left
+    flags duplicate
     0 1 6.20 221.6 -14.1  # en 0, gypse, carreaux de chocolat
+    flags not duplicate
     extend right
     0 2 4.52 39.5 7.7 # os de chauve-souris
     # extend auto
@@ -176,6 +178,14 @@ survey solitaire2023a -title "solitaire2023a"
     8 . 5.49 257.3 -3.4
     extend left
     8 9 13.11 5.2 46.5  # Conduite Forcée au sommet E8, à voir, c'est intéressant
+    flags approximate
+    # Données estimées à partir de l'escalade du 10/06/2023 (C. Baudy, S. Lips, C. Lacharmoise et X. Robert)
+    9 9b  10 7 40
+    9b  9c  10 310  40
+    extend right
+    9b  9d  5 35  40
+    # Fin de l'estimation
+    flags not approximate
     extend right
     7 10 6.56 42.1 -1.4
     # extend auto
