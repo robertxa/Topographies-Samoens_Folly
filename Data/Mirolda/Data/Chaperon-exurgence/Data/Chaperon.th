@@ -9,12 +9,12 @@ survey Chaperon -title "Résurgence temporaire de Chaperon"
 
  centerline -extend right
     
-    date 2021.08.12
-        team "Xavier Robert"
+    date 2023.06.12
+        team "John Dénarié"
 
     cs long-lat
-    #fix R-Chaperon 6.745180928166752 46.09359826843757	783 # Altitude IGN, Coords A revoir
-    #station R-Chaperon "Résurgence temporaire de Chaperon" entrance spring
+    fix R-Chaperon 6:44:30.9    46:04:40.4  732 # Altitude Google Earth, Coords fournies par John Dénarié
+    station R-Chaperon "Résurgence temporaire de Chaperon" entrance spring
   
 endcenterline
 
