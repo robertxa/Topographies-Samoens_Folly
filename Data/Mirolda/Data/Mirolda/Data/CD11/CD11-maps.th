@@ -7,7 +7,11 @@ encoding  utf-8
 map MP-CD11-plan-tot -title "Gouffre Mirolda - CD11"
 	MP-CD11-plan-tot@CD11
     break
-    MP-Yougo-plan-tot@Yougo  [0 50 m] below # déplace le dessin topographié de 50 m vers le N pour faciliter la lecture de la topographie
+    MP-Yougo-plan-tot@Yougo  [0 70 m] below # déplace le dessin topographié de 50 m vers le N pour faciliter la lecture de la topographie
+    break
+    MP-Yougo-Aval-2@Yougo-Aval  [0 70 m] below
+    break
+    MP-Yougo-Aval-1@Yougo-Aval
     break
     MP-Bivouac270-plan-tot@Bivouac270
     break
@@ -22,6 +26,8 @@ map MC-CD11-coupe-tot -title "Gouffre Mirolda - CD11"
     MC-Bivouac270-coupe-tot@Bivouac270
     break
     MC-Yougo-coupe-tot@Yougo
+    break
+    MC-Yougo-Aval-coupe-tot@Yougo-Aval
     break
 	MC-Confluence-coupe-tot@Confluence
     break

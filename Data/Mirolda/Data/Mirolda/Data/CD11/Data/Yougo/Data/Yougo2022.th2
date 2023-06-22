@@ -187,72 +187,84 @@ point 596.5 216.0 stalactite
 line slope
   733.75 475.75
   733.75 477.0 723.75 509.25 707.0 510.5
+  smooth off
   l-size 6.0
 endline
 
 line slope
   744.5 485.0
   744.5 485.0 739.5 520.25 716.0 522.0
+  smooth off
   l-size 6.0
 endline
 
 line slope
   668.75 413.75
   662.25 414.25 654.0 419.5 648.75 429.25
+  smooth off
   l-size 6.0
 endline
 
 line slope
   678.0 431.25
   678.0 431.25 664.75 436.75 656.5 443.0
+  smooth off
   l-size 6.0
 endline
 
 line slope
   681.5 439.25
   681.5 439.25 670.25 447.0 663.25 455.25
+  smooth off
   l-size 6.0
 endline
 
 line slope
   604.25 269.5
   604.25 269.5 579.75 264.5 570.5 269.75
+  smooth off
   l-size 6.0
 endline
 
 line slope
   603.75 289.75
   602.75 289.5 586.25 287.5 572.0 291.25
+  smooth off
   l-size 6.0
 endline
 
 line slope -reverse on
   562.75 309.5
   563.75 309.5 590.5 299.25 605.0 308.0
+  smooth off
   l-size 6.0
 endline
 
 line slope
   482.5 247.5
   482.5 247.5 443.75 222.75 424.5 224.75
+  smooth off
   l-size 8.0
 endline
 
 line slope
   465.0 277.25
   465.0 277.25 423.25 244.5 409.5 246.25
+  smooth off
   l-size 8.0
 endline
 
 line slope -reverse on
   255.0 421.25
   257.5 422.5 275.5 428.5 276.75 438.25
+  smooth off
   l-size 8.0
 endline
 
 line slope
   375.75 315.0
   375.75 315.0 373.25 344.25 386.25 346.5
+  smooth off
   l-size 8.0
 endline
 
@@ -490,11 +502,13 @@ endline
 line wall
   634.75 346.5
   634.75 346.5 626.5 352.75 625.5 354.5
+  smooth off
 endline
 
 line wall
   621.5 349.0
   621.5 349.0 627.75 342.25 630.0 341.5
+  smooth off
 endline
 
 line wall
@@ -504,6 +518,7 @@ line wall
   599.25 272.5 596.75 293.25 600.25 310.75
   603.75 328.25 603.0 329.25 608.0 337.5
   613.0 345.75 612.75 339.25 621.5 349.0
+  smooth off
 endline
 
 line wall
@@ -534,12 +549,6 @@ endscrap
 
 scrap SP-Yougo-2 -projection plan -station-names "" "@Yougo" -author 2022 "Xavier Robert" -author 2022 "Alexandre Pont" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 994.1422 -128.0 0.0 0.0 28.50241188 0.0 m]
 
-point 372.5 123.0 continuation -attr code P -attr Cavite CD11 -text "???"
-
-point 449.75 125.0 rope-ladder
-
-point 495.5 141.25 height -value [-4 m]
-
 line border -reverse on
   460.5 175.5
   466.25 175.25
@@ -547,15 +556,10 @@ line border -reverse on
   smooth off
 endline
 
-line pit
-  457.0 137.5
-  457.0 137.5 453.5 161.5 436.5 167.0
-  smooth off
-endline
-
-line border -id scap2 -visibility on
-  386.75 136.5
-  388.25 134.75 391.75 123.25 391.75 123.25
+line wall -subtype invisible
+  467.75 171.0
+  467.75 171.0 456.0 167.0 461.5 149.0
+  467.0 131.0 474.5 132.25 474.5 132.25
   smooth off
 endline
 
@@ -564,31 +568,15 @@ line wall -reverse on
   479.75 176.0 477.0 174.75 477.0 166.75
   477.0 158.75 478.0 157.5 475.5 145.0
   473.0 132.5 474.25 139.75 474.5 132.25
-  474.57 130.23 474.25 119.0 466.25 128.75
-  458.25 138.5 466.75 140.25 460.5 141.0
-  454.25 141.75 457.0 141.75 445.5 142.75
-  434.0 143.75 426.0 138.25 416.75 131.75
-  407.5 125.25 394.0 123.5 391.75 123.25
-  smooth off
-  altitude .
 endline
 
 line wall
   472.75 191.25
   473.25 188.25 470.75 179.0 470.25 177.75
   469.75 176.5 471.5 173.25 467.75 171.0
-  464.0 168.75 461.0 172.25 457.75 172.75
-  454.5 173.25 450.75 181.5 447.25 178.75
-  443.75 176.0 442.0 170.5 442.5 169.0
-  443.0 167.5 440.75 157.25 439.0 156.0
-  437.25 154.75 401.5 144.75 399.75 143.5
-  398.0 142.25 388.0 136.5 386.75 136.5
-  smooth off
 endline
 
-point 525.5 121.75 station-name -scale xs
-
-point 392.385 132.214 station -name 5D
+point 548.0 138.75 station-name -scale xs
 
 point 460.68499999999995 161.764 station -name 5C
 

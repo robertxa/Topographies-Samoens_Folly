@@ -159,6 +159,9 @@ survey Yougo -title "Yougo"
     PTRYOLRAP04 . 2.46 337.0 80.1
     PTRYOLRAP04 . 1.38 78.6 -81.9
     extend left
+    
+    flags duplicate
+    # Dupliqué car topo reprise en juin 2023 par Alex et Emma Pont (Voir Yougo-Aval)
     PTRYOLRAP04 5C 2.52 325.0 -6.0 # sommet r4 vieille échelle 
     # extend auto
     5C . 2.52 320.7 -4.1
@@ -168,6 +171,8 @@ survey Yougo -title "Yougo"
     5C . 1.88 149.5 -51.9
     extend left
     5C 5D 11.05 246.6 -31.2
+    flags not duplicate
+
     extend right
     2 2.1 19.73 352.8 28.7
     # extend auto
