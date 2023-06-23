@@ -1,0 +1,29 @@
+# 2021.09.12 created by TopoDroid v 5.1.54
+
+# Copyright (C) 2023 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+
+survey V14 -title "V14"
+
+  centerline
+    
+    cs lat-long
+		#fix A20    46.1036667 6.7842167  1920	# 1937  # Anciennes coordonnées
+    fix V14    46.101167 6.77720  1769	# Altitude Google Earth
+		station V14 "V14" entrance continuation explored 5m
+		
+		explo-date 2023.03
+      explo-team "xavier Robert"
+      explo-team "Frédéric Gennerat"
+    
+    #date 2021.09.12
+    #  team "Xavier Robert"
+     
+    #units length meters
+    #units compass clino degrees
+    #data normal from to length compass clino
+  endcenterline
+
+endsurvey

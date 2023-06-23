@@ -16,7 +16,7 @@ Un article sur cette base de données topographiques, publié dans l'Echo des Vu
 Description
 -----------
 
-Ce dépôt sauvegarde les données topographiques et de dessin. Ces fichiers sont pour les logiciels Visual Topo (données) et/ou Therion (data + dessins).
+Ce dépôt sauvegarde les données topographiques et de dessin. Ces fichiers sont pour les logiciels Visual Topo (données ; incomplet, outdated) et/ou Therion (data + dessins ; complet).
 
 Uniquement les fichiers sources sont sauvegardés pour des raisons de taille ; j'ai aussi choisi de ne pas uploader ni les dessins dessinés à la main sur papier, ni les différents xvi issus de Therion :
 
