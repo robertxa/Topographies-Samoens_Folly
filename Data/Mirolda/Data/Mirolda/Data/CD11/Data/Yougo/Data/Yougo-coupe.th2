@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 1520.25 741.0
+##XTHERION## xth_me_area_adjust -128.75 -128.75 1520.25 709.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {897.0409999999999 1 1.0} {236.223 PTRMADG0} Yougo-coupe.xvi 0 {}
 
@@ -47,11 +47,7 @@ line wall -subtype clay
   smooth off
 endline
 
-point 528.25 157.5 continuation
-
 point 208.0 386.75 continuation
-
-point 528.25 157.5 continuation -attr Code P -attr Cavite "yougosdslaves" -text "Imp ?"
 
 point 1008.75 262.0 continuation -attr Code P -attr Cavite "yougosdslaves" -text "Imp ?"
 
@@ -88,12 +84,6 @@ line rope
   219.75 348.0
   205.5 349.0
   204.75 315.75
-endline
-
-line rope
-  650.75 221.25
-  627.5 214.5
-  627.25 179.0
 endline
 
 line rope
@@ -238,8 +228,6 @@ endline
 
 point 153.25 336.5 height -value [-6 m]
 
-point 662.25 184.5 height -value [-4 m]
-
 point 1391.0 455.25 height -value [+10 m]
 
 point 670.25 270.5 camp
@@ -285,28 +273,10 @@ line wall
   711.0 242.5 706.0 239.5 703.0 240.25
   700.0 241.0 693.25 246.25 690.25 244.75
   687.25 243.25 665.0 238.25 661.5 237.5
-  658.0 236.75 648.25 234.25 645.0 232.5
-  641.75 230.75 622.0 220.0 618.5 218.0
-  615.0 216.0 596.25 204.75 588.25 202.0
-  580.25 199.25 569.25 193.5 564.25 192.75
-  559.25 192.0 547.5 186.5 547.0 183.25
-  smooth off
-endline
-
-line border -visibility off
-  547.0 183.25
-  546.5 180.0 552.75 174.0 555.0 171.5
-  557.25 169.0 558.25 161.75 563.25 160.75
-  smooth off
 endline
 
 line wall -subtype clay
-  563.25 160.75
-  altitude .
-  568.25 159.75 572.5 168.25 576.25 169.0
-  580.0 169.75 627.5 174.25 634.5 178.0
-  641.5 181.75 640.75 202.25 645.25 203.25
-  649.75 204.25 665.25 203.5 669.5 206.0
+  669.5 206.0
   673.75 208.5 680.25 207.75 687.75 210.75
   695.25 213.75 692.5 218.25 694.5 219.75
   696.5 221.25 704.0 227.75 707.25 228.0
@@ -325,6 +295,7 @@ line wall -subtype clay
   844.75 230.75 853.75 228.75 861.75 227.75
   869.75 226.75 874.75 227.0 879.5 225.25
   884.25 223.5 890.0 231.5 897.0 231.75
+  smooth off
 endline
 
 point 178.231 303.623 station -name PTRYOLEAP03
@@ -346,8 +317,6 @@ point 557.861 310.553 station -name 8
 point 626.0 300.5 station -name 7
 
 point 707.741 259.683 station -name 6
-
-point 572.5 172.5 station -name 5D
 
 point 648.081 215.59300000000002 station -name 5C
 

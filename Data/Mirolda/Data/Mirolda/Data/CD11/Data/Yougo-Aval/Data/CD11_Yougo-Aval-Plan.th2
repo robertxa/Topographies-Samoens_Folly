@@ -336,9 +336,9 @@ line floor-meander
   smooth off
 endline
 
-point 360.75 581.0 label -text "Escalade"
+point 360.75 581.0 height -value [+? m]
 
-point 401.75 679.25 label -text "Etr.  ?"
+point 401.75 679.25 label -text "Etr. "
 
 point 482.75 588.75 height -value [-8 m]
 
@@ -455,11 +455,11 @@ endline
 
 point 494.0 790.0 height -value [-5 m]
 
-point 306.0 205.75 continuation
+point 306.0 205.75 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Affluent à voir ?"
 
-point 386.25 600.0 continuation
+point 386.25 600.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Affluent à voir après escalade"
 
-point 416.5 682.5 continuation
+point 416.5 682.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Affluent à voir après escalade"
 
 point 413.75 927.5 height -value [-6 m]
 

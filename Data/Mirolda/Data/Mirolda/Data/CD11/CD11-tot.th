@@ -22,6 +22,10 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	input Data/Yougo-Aval/Yougo-Aval-tot.th
 		equate PTRYOLRAP04@Yougo.Yougo PTRYOLRAP04@Yougo-Aval.Yougo-Aval
 		join SP-Yougo-Aval-2@Yougo-Aval SP-Yougo-2@Yougo
+		join SC-Yougo-Aval-01@Yougo-Aval SC-Yougo-1@Yougo
+	
+	input Data/Ardeche/Ardeche-tot.th
+		equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.Ardeche
 	
 	# Anciennes Données topos des Cavernicoles
 	#	Il faudra mettre à jour ce fichier topo, 

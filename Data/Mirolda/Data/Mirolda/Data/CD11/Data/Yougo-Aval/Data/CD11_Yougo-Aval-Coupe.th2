@@ -47,7 +47,7 @@ line wall -reverse on
   smooth off
 endline
 
-point -1430.5 169.75 label -text "P30"
+point -1430.5 169.75 height -value [-30 m]
 
 line wall -close on
   -1325.5 195.0
@@ -78,7 +78,7 @@ line wall -reverse on
   smooth off
 endline
 
-point -1287.5 251.5 label -text "P10"
+point -1287.5 251.5 height -value [-10 m]
 
 point -1313.319 285.9849999999999 station -name YO39
 
@@ -92,7 +92,7 @@ point -1113.399 305.43499999999995 station -name YO33
 
 point -1071.5189999999998 301.7349999999999 station -name YO32
 
-point -977.5 302.25 label -text "P5"
+point -977.5 302.25 height -value [-5 m]
 
 point -995.3889999999999 332.9149999999999 station -name YO31
 
@@ -100,7 +100,7 @@ point -935.0 277.0 station-name
 
 point -934.7089999999998 334.56499999999994 station -name PTRYOEPAP03
 
-point -851.5 331.0 label -text "P8"
+point -851.5 331.0 height -value [-8 m]
 
 point -889.7989999999999 375.9849999999999 station -name YO29
 
@@ -175,6 +175,7 @@ line wall -subtype presumed
   -1278.5 148.0 -1271.5 149.0 -1264.75 149.0
   -1258.0 149.0 -1247.75 149.5 -1240.5 149.5
   smooth off
+  altitude .
 endline
 
 line wall -reverse on
@@ -279,7 +280,7 @@ line rope
   -631.25 491.75
 endline
 
-point -631.5 419.25 label -text "P5"
+point -631.5 419.25 height -value [-5 m]
 
 point -673.9389999999999 458.8949999999999 station -name YO25
 
@@ -289,9 +290,9 @@ point -655.8389999999998 558.665 station -name B01
 
 point -614.8689999999998 487.4049999999999 station -name YO23
 
-point -581.0 453.5 label -text "P5"
+point -581.0 453.5 height -value [-5 m]
 
-point -522.75 507.5 label -text "P8"
+point -522.75 507.5 height -value [-8 m]
 
 point -582.1189999999998 551.415 station -name YO22
 
@@ -305,7 +306,7 @@ point -521.4389999999999 573.0749999999999 station -name YO20
 
 point -489.47899999999987 594.9649999999999 station -name YO19
 
-point -442.0 583.25 label -text "P4"
+point -442.0 583.25 height -value [-4 m]
 
 point -473.11899999999986 609.7649999999999 station -name YO18
 
@@ -315,7 +316,7 @@ point -380.7689999999999 648.5849999999999 station -name YO16
 
 point -352.8389999999998 661.5749999999999 station -name YO15
 
-point -332.25 614.0 label -text "P5"
+point -332.25 614.0 height -value [-5 m]
 
 point -323.99899999999985 665.665 station -name YO14
 
@@ -579,6 +580,7 @@ line wall -reverse on
   -643.0 448.0 -646.0 450.25 -654.0 445.0
   -662.0 439.75 -659.5 435.0 -659.5 433.5
   -659.5 432.0 -658.5 418.75 -662.75 418.0
+  altitude .
   -667.0 417.25 -680.75 416.0 -681.75 416.5
   -682.75 417.0 -703.5 418.75 -707.25 418.25
   -711.0 417.75 -717.25 418.0 -725.5 413.75
