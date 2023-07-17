@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Poncho -title "Puits du Poncho"
+	# Données topos
+	input Data/Poncho.th
+	
+	# Rivière aux Poncho
+	#input Data/Poncho2023.th2
+	#	join SP-puitsparalleles-1 SP-Sol_2019b_1
+	#input Data/Poncho2023-coupe.th2
+
+	# Add maps
+	#input Poncho-maps.th
+	
+endsurvey

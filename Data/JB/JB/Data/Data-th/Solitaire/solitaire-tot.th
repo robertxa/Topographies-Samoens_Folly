@@ -14,6 +14,12 @@ survey Solitaire -title "Réseau du Solitaire"
 	# Données topos Solitaire
 	input Data/Solitaire/Solitaire-tot.th
 
+	# Puits du Poncho
+	input Data/Poncho/Poncho-tot.th
+		 equate 13@Poncho.Poncho 2019-FD-40@solitaire.Solitaire
+		 #join @Poncho @Solitaire
+		 #join @Poncho @Solitaire
+
 	# Puits Paralleles
 	input Data/PuitsParalleles/PuitsParalleles-tot.th #puitsparalleles.th
 		#equate 1@puitsparalleles 2019-FD-65@solitaire

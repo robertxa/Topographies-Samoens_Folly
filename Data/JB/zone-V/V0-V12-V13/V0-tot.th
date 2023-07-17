@@ -7,8 +7,9 @@ encoding utf-8
 survey V0 -title "V0"
 	input Data/V0.th
 	input Data/V12.th
+		equate V12@V0 V12@V12
 
-	equate V12@V0 V12@V12
+	input Data/V13.th
 
 	# pour le plan
 	input Data/V0.th2

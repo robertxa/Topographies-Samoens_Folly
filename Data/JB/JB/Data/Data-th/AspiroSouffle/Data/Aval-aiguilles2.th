@@ -76,9 +76,12 @@ extend right
 2012c-xa-66	2012c-xa-67	4	323	2	0.1	0.1	0.1	0.1
 #extend left
 2012c-xa-66	2012c-xa-68	2.7	157	52	0.3	0.3	2	3 # Etr. sommet ressaut / amarrage douteux
+
+flags duplicate
 extend left
 2012c-xa-68	2012c-xa-69	1.62	226	-20	1.5	0.3	2	4 # AN sommet puits
 2012c-xa-69	2012c-xa-70	23	237	-50	1	1	20	30 # visee dans puits
+flags not duplicate
 
 
 # dev = 194 m

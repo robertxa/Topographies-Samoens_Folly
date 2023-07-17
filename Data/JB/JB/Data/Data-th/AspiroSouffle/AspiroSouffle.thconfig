@@ -116,9 +116,9 @@ endlayout
 
  
   
- export map -fmt xvi -layout xviexport -o Data/aval_aiguilles2-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Data/aval_aiguilles2-coupe.xvi
+ export map -fmt xvi -layout xviexport -o Data/aspirosouffle-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/asipirosouffle-coupe.xvi
   
- export map -o Outputs/aval_aiguilles2-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/aval_aiguilles2-coupe.pdf
- export model -o Outputs/aval_aiguilles.lox
+ export map -o Outputs/aspirosouffle-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/AspiroSouffle-coupe.pdf
+ export model -o Outputs/aspirosouffle.lox

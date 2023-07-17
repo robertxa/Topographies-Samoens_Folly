@@ -126,6 +126,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Data-th/AspiroSouffle/AspiroSouffle-tot.th
 		### Equates data
 			equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
+			equate 16@aspiro2023.AspiroSouffle Fb.30@jb-amonts2
 		### Joins dessins Plan
 		### Joins dessins Coupe
 
@@ -285,6 +286,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Plan/V5.th2
 		### Joins dessins Plan
 			join SP-V6 SP-V5
+	
+	## Le V15
+	input Data-th/V15/V15-tot
+		equate 43@V15.V15 Ih.9@jb-amonts2 # jonction V15 à l'entrée du laminoir du V4, côté salle Delacour
 
 	# Réseau de l'Eté Indien
 	input Data-th/Ete-Indien/Ete-Indien-tot.th
@@ -296,6 +301,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Joins dessins Coupe
 			##join SC-V4c4 SC-EteIndien-1@Ete-Indien -count 3	# Le V4 et l'Eté Indien
 	
+	## Galerie des Stalactites
+	input Data-th/Stalactites/Stalactites-tot.th
+		equate 1@Stalactites.Stalactites Jb.3@jb-amonts2
+
 	## La Pierre Qui Tombe
 	input Drawing-th2/Plan/pierrequitombe.th2
 		### Joins dessins Plan

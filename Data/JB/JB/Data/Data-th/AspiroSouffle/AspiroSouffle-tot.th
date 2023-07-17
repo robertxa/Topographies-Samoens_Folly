@@ -7,6 +7,8 @@ encoding  utf-8
 survey AspiroSouffle -title "L'Aspiro-Souffle"
 
     input Data/Aval-aiguilles2.th
+    input Data/Aspiro2023.th
+        equate 2012c-xa-68@aval-aiguilles2 1@aspiro2023
 
     # Dessins en plan
     input Data/Aval-aiguilles2.th2

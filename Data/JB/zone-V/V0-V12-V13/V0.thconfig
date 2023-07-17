@@ -156,3 +156,4 @@ export model -o Outputs/V0.lox
   
 # Export kml files
 export map -proj plan -fmt kml -o Outputs/V0.kml -layout my_layout
+export model -fmt kml -o Outputs/V0-model.kml

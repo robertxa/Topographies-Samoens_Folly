@@ -216,8 +216,13 @@ def PlotExploYears(conn, graphpath,
 		for date in range(rangeyear[0], rangeyear[1]):
 			lquery = "select sum(LENGTH) from CENTRELINE where TOPO_DATE between '%s-01-01' and '%s-12-31';" %(str(date), str(date))	
 			junk = pd.read_sql_query(lquery, conn)
-			somme = somme.append({'Year' : int(date),
-							 	  'Longueur' : junk.to_numpy()[0][0]}, ignore_index = True)
+			
+			## Depreciated depuis Pandas 2.0
+			#somme = somme.append({'Year' : int(date),
+			#				 	  'Longueur' : junk.to_numpy()[0][0]}, ignore_index = True)
+			somme = pd.concat([somme, pd.DataFrame({'Year' : int(date),
+							 	  'Longueur' : junk.to_numpy()[0][0]})], ignore_index = True)
+
 
 		# plot the histogram since the first survey
 		plt.bar(somme["Year"], somme["Longueur"], width = 0.5)
@@ -413,7 +418,7 @@ if __name__ == u'__main__':
 	#inputfile = 'TestJB.sql'
 	#inputfile = 'TestCP7.sql'
 	#inputfile = 'databaseLDB.sql'
-	inputfile = 'databaseJB-2022_new.sql'
+	inputfile = 'databaseJB-2023_new.sql'
 
 	graphfolder = "Graphs/" 
 	#graphprefix = None

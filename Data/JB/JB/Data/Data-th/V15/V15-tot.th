@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey V15 -title "V15"
+	# Données topos
+	input Data/V15.th
+	input Data/V15b.th
+		equate 28@V15 21@V15b
+	
+	# Rivière aux rubis
+	#input Data/V15.th2
+	#	join SP-puitsparalleles-1 SP-Sol_2019b_1
+	#input Data/V15-coupe.th2
+
+	# Add maps
+	#input V15-maps.th
+	
+endsurvey
