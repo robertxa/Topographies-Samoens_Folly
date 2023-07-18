@@ -77,8 +77,9 @@ survey V15b -title "V15"
     2 . 1.68 205.9 55.0
     2 . 2.06 225.7 -42.4
     2 . 1.65 229.9 -59.5
-    extend right
+    extend left
     2 3 3.98 286.6 -38.3
+    extend right
     2 4 2.04 349.4 16.1
     # extend auto
     4 . 1.73 330.1 -76.0
@@ -142,11 +143,14 @@ survey V15b -title "V15"
     7 . 3.57 293.7 20.0
     7 . 0.81 333.4 44.1
     7 . 2.13 357.5 44.3
-    extend right
+    extend left
     7 8 6.15 287.0 12.7
+    flags approximate
+    8 8b  6 287 0 # léger c.a.; a désober ; 
+    flags not approximate
     # extend auto
     8 . 5.64 83.1 0.1
-    extend ignore
+    extend right
     7 9 5.56 83.3 0.2
     # extend auto
     8 . 5.49 83.1 0.2

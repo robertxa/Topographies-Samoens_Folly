@@ -118,17 +118,26 @@ def PlotExploYears(conn, graphpath,
 	
 	if systems:
 		# Initiate variables
-		somme = pd.DataFrame(columns = ['System', 'Year', 'Longueur'])
+		#somme = pd.DataFrame(columns = ['System', 'Year', 'Longueur'])
+		Sy = []
+		Yr = []
+		Lg = []
 		# Loop on the systems and the years
 		for system in systems:
-			for date in range(rangeyear[0], rangeyear[1]):
+			for date in range(rangeyear[0], rangeyear[1]+1):
 				# Define SQL query
 				lquery = "select sum(LENGTH) from CENTRELINE where SURVEY_ID in (select ID from SURVEY where FULL_NAME LIKE '%s%s%s') and TOPO_DATE between '%s-01-01' and '%s-12-31';" %(chr(37), str(system),chr(37), str(date), str(date))
 				junk = pd.read_sql_query(lquery, conn)
-				# Update the DataFrame line to line
-				somme = somme.append({'System' : system,
-								  'Year' : int(date),
-							 	  'Longueur' : junk.to_numpy()[0][0]}, ignore_index = True)
+				# Update the DataFrame line to line; DEPRECIATED since pandas 2.0
+				#somme = somme.append({'System' : system,
+				#				  'Year' : int(date),
+				#			 	  'Longueur' : junk.to_numpy()[0][0]}, ignore_index = True)
+				Sy.append(system)
+				Yr.append(int(date))
+				Lg.append(junk.to_numpy()[0][0])
+				#print(junk)
+		somme = pd.DataFrame(list(zip(Sy, Yr, Lg)), columns = ['System', 'Year', 'Longueur'])
+		print(max(somme['Longueur']))
 
 		# plot the histogram since the first survey
 		fig = plt.figure(1)
@@ -143,6 +152,7 @@ def PlotExploYears(conn, graphpath,
 		sommeplot = sommesys.fillna(0)
 		# Remove the column with the names of the systems
 		del sommeplot["System"]
+		print(sommeplot)
 
 		ax1.bar(sommeplot["Year"], 
 		        sommeplot["Longueur"], 
@@ -212,16 +222,19 @@ def PlotExploYears(conn, graphpath,
 		plt.close(plt.figure(1))
 
 	else:
-		somme = pd.DataFrame(columns = ['Year', 'Longueur'])
+		#somme = pd.DataFrame(columns = ['Year', 'Longueur'])
+		Yr = []
+		Lg = []
 		for date in range(rangeyear[0], rangeyear[1]):
 			lquery = "select sum(LENGTH) from CENTRELINE where TOPO_DATE between '%s-01-01' and '%s-12-31';" %(str(date), str(date))	
 			junk = pd.read_sql_query(lquery, conn)
-			
 			## Depreciated depuis Pandas 2.0
 			#somme = somme.append({'Year' : int(date),
 			#				 	  'Longueur' : junk.to_numpy()[0][0]}, ignore_index = True)
-			somme = pd.concat([somme, pd.DataFrame({'Year' : int(date),
-							 	  'Longueur' : junk.to_numpy()[0][0]})], ignore_index = True)
+			Yr.append(int(date))
+			Lg.append(junk.to_numpy()[0][0])
+		
+		somme = pd.DataFrame(list(zip(Yr, Lg)), columns = ['Year', 'Longueur'])
 
 
 		# plot the histogram since the first survey

@@ -10,6 +10,8 @@ survey V0 -title "V0"
 		equate V12@V0 V12@V12
 
 	input Data/V13.th
+		#equate 0@V13 6@V0
+		equate V13@V13 V13@V0
 
 	# pour le plan
 	input Data/V0.th2

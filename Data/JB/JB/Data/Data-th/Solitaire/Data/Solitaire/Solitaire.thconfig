@@ -59,6 +59,8 @@ layout layout_plan
 	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
+	
+	symbol-hide point rope
   
 	######## Code Metapost pour modifier l aspect des symboles ####### 
 
@@ -141,7 +143,7 @@ endlayout
 	export map -fmt xvi -layout xviexport_plan -o Data/solitaire-plan2022.xvi
 	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/solitaire-coupe2022.xvi
 
-select MP-solitaire-tot
+select MP-solitaire-tot@Solitaire
 
 # Export des fichiers pdf  
 	export map -projection extended -layout layout_coupe -o Outputs/solitaire-coupe2022b.pdf

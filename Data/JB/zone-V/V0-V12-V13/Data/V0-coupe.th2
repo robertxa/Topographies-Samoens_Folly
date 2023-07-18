@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -167.3628 -128.75 305.0 288.0
+##XTHERION## xth_me_area_adjust -167.3628 -167.3779 305.0 288.0
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {27.006200000000007 1 1.0} {57.568099999999994 0@V0.V0} V0-coupe.xvi 0 {}
+##XTHERION## xth_me_image_insert {27.006200000000007 1 1.0} {57.5681 0@V0.V0} V0-coupe.xvi 0 {}
 
 
 
@@ -142,13 +142,9 @@ line wall
   smooth off
 endline
 
-point 51.5 46.25 continuation -attr Code D -attr Cavite "V13" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air soufflant en été" -text "Méandre étroit à désobstruer, courant d'air"
-
 point 85.75 31.75 continuation -attr Code D -attr Cavite "V12" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air soufflant en été" -text "Méandre étroit à désobstruer, courant d'air"
 
 point 130.5 34.75 air-draught -orientation 53.2 -subtype summer
-
-point 82.0 92.75 air-draught -orientation 34.7 -subtype summer
 
 line wall -subtype debris
   121.0 101.25
@@ -201,30 +197,7 @@ point 175.75 87.25 narrow-end
 
 point 93.5 35.25 narrow-end
 
-point 60.0 50.25 narrow-end
-
 point 116.0 158.75 label -text "<bf>V12" -scale xl
-
-point 95.0 155.5 label -text "<bf>V13" -scale xl
-
-point 102.25 130.5 entrance -orientation 177.6
-
-line wall -close on -outline in -subtype unsurveyed
-  75.0 68.5
-  75.0 68.5 80.0 74.75 80.5 74.0
-  81.0 73.25 84.75 70.25 80.25 68.25
-  75.75 66.25 70.25 63.5 72.25 65.5
-  74.25 67.5 75.0 68.5 75.0 68.5
-  smooth off
-endline
-
-line wall -close on -outline in -subtype unsurveyed
-  92.0 93.0
-  92.0 93.0 95.25 93.0 95.25 91.75
-  95.25 90.5 91.5 86.75 91.5 88.75
-  91.5 90.75 92.0 93.0 92.0 93.0
-  smooth off
-endline
 
 line rock-border -close on -clip off
   107.25 124.0
@@ -242,39 +215,9 @@ line rock-border -close on -clip off
   100.75 123.25
 endline
 
-line wall -subtype debris
-  106.5 106.5
-  106.5 106.5 109.25 106.75 107.5 112.0
-  105.75 117.25 105.75 119.5 105.75 119.5
-  smooth off
-endline
-
-line wall -subtype unsurveyed
-  63.75 44.0
-  63.75 44.0 70.75 45.25 73.0 45.25
-  75.25 45.25 74.25 51.5 75.0 55.75
-  75.75 60.0 81.5 60.75 85.75 60.75
-  90.0 60.75 93.25 59.25 93.25 62.5
-  93.25 65.75 90.0 83.5 93.25 84.75
-  96.5 86.0 100.0 86.5 102.25 86.5
-  104.5 86.5 105.25 92.75 105.0 97.5
-  104.75 102.25 102.5 105.75 106.5 106.5
-  smooth off
-endline
-
-line wall -subtype unsurveyed
-  99.25 110.75
-  99.25 110.75 87.0 89.25 83.5 84.0
-  80.0 78.75 64.25 60.0 64.25 60.0
-  smooth off
-  60.5 57.25
-endline
-
 line wall -outline none -clip off
   93.75 112.75
   93.75 112.75 100.0 120.75 100.75 117.75
-  101.5 114.75 99.75 112.25 99.25 110.75
-  smooth off
 endline
 
 line rock-border -close on
@@ -363,6 +306,71 @@ point 118.11619999999999 127.3581 station -name V12@V12
 point 112.6962 126.37809999999999 station -name 7@V0
 
 point 108.27619999999999 125.56809999999999 station -name 6@V0
+
+endscrap
+
+
+
+scrap SC-V13-1 -projection extended -station-names "" "@V13" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+point 82.0 92.75 air-draught -orientation 34.7 -subtype summer
+
+point 60.0 50.25 narrow-end
+
+point 46.25 9.0 continuation -attr Code D -attr Cavite "V13" -attr Reseau "Jean-Bernard" -attr CA "Courant d'air soufflant en été" -text "Méandre étroit à désobstruer, courant d'air"
+
+point 102.25 130.5 entrance -orientation 177.6
+
+point 95.0 155.5 label -text "<bf>V13" -scale xl
+
+line wall -close on -outline in
+  79.0 73.5
+  79.0 73.5 81.0 78.25 82.5 76.75
+  84.0 75.25 84.25 73.25 81.5 71.0
+  78.75 68.75 79.0 73.5 79.0 73.5
+  smooth off
+endline
+
+line wall
+  63.0 9.75
+  63.0 9.75 64.5 43.5 68.25 46.5
+  72.0 49.5 71.25 50.75 77.5 51.75
+  83.75 52.75 85.0 55.0 89.5 56.0
+  94.0 57.0 89.75 68.25 93.75 70.75
+  97.75 73.25 97.25 74.75 100.75 76.25
+  104.25 77.75 106.75 81.0 109.25 82.25
+  111.75 83.5 111.75 89.75 112.0 92.75
+  112.25 95.75 114.75 96.25 115.0 99.75
+  115.25 103.25 113.5 108.75 112.5 110.25
+  111.5 111.75 105.75 119.5 105.75 119.5
+  smooth off
+endline
+
+line wall
+  100.75 117.75
+  100.75 117.75 105.75 105.0 105.75 100.0
+  105.75 95.0 107.5 88.75 103.0 86.5
+  98.5 84.25 96.25 84.25 90.5 83.5
+  84.75 82.75 80.5 85.25 77.25 79.75
+  74.0 74.25 70.25 73.5 69.0 68.0
+  67.75 62.5 69.25 66.0 66.25 62.25
+  63.25 58.5 53.75 58.5 51.0 54.75
+  48.25 51.0 43.25 38.75 42.75 34.75
+  42.25 30.75 35.0 13.0 35.0 13.0
+  smooth off
+endline
+
+point 108.2762 86.60810000000001 station -name V13
+
+point 97.67620000000001 80.8981 station -name 2
+
+point 92.4662 78.10810000000001 station -name 3
+
+point 75.7962 60.6081 station -name 4
+
+point 67.84620000000001 58.3181 station -name 5
+
+point 47.60620000000001 19.588100000000004 station -name 6
 
 endscrap
 

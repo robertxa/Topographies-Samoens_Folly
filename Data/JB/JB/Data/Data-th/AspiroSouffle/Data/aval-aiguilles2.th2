@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -127.99999999999999 -128.0 497.0 320.5
+##XTHERION## xth_me_area_adjust -128.75 -128.75 430.0 320.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {275.591 1 1.0} {118.1062 2012c-xa-28} aval_aiguilles2-map.xvi 0 {}
 
@@ -14,6 +14,7 @@ line wall
   222.5 113.0 221.5 117.0 223.0 118.5
   224.5 120.0 227.25 120.25 228.25 118.5
   229.25 116.75 242.0 113.0 245.5 111.75
+  altitude .
   249.0 110.5 254.75 113.0 257.0 111.75
   259.25 110.5 263.5 108.25 265.5 108.75
   267.5 109.25 278.5 108.0 279.5 109.5
@@ -295,6 +296,7 @@ endline
 line wall -subtype invisible
   125.75 45.75
   125.75 45.75 125.0 34.0 125.25 31.5
+  smooth off
 endline
 
 line wall
@@ -396,6 +398,7 @@ line wall
   169.25 72.5
   169.25 72.5 166.0 77.75 167.5 78.5
   169.0 79.25 173.75 78.5 173.75 80.5
+  altitude .
   173.75 82.5 174.0 84.5 174.0 87.0
   174.0 89.5 176.5 97.5 175.75 99.75
   175.0 102.0 171.75 104.0 173.0 105.0
@@ -617,6 +620,7 @@ line wall
   105.5 81.75
   105.5 81.75 104.5 84.5 103.5 86.5
   102.5 88.5 98.25 98.25 96.75 98.25
+  altitude .
   95.25 98.25 94.25 97.25 93.75 98.25
   93.25 99.25 91.5 100.5 91.5 100.5
   smooth off
@@ -742,6 +746,12 @@ endscrap
 
 scrap SP-aval-aiguilles2-4 -projection plan -author 2012 "Xavier Robert" -copyright 2012 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 403.5907 -128.0 0.0 0.0 13.502403779999998 0.0 m]
 
+line wall -subtype invisible
+  92.25 73.0
+  92.25 73.0 91.75 67.0 96.25 66.0
+  smooth off
+endline
+
 point 104.75 57.25 continuation
 
 line pit
@@ -752,9 +762,8 @@ line pit
 endline
 
 line wall
-  56.75 33.75
-  56.75 33.75 72.75 39.0 79.0 56.75
-  79.82 59.07 96.5 68.0 99.0 68.0
+  96.25 66.0
+  104.75 69.25 96.5 68.0 99.0 68.0
   101.5 68.0 103.25 61.75 104.0 63.75
   smooth off
 endline
@@ -770,12 +779,9 @@ line wall
   103.25 78.5
   103.25 78.5 104.75 77.0 103.75 76.5
   102.75 76.0 100.5 77.75 98.75 77.25
-  97.0 76.75 76.74 63.74 75.0 64.25
-  64.75 67.25 47.0 52.5 47.0 52.5
+  97.0 76.75 93.88 72.18 92.25 73.0
   smooth off
 endline
-
-point 82.0 75.25 rope
 
 point 112.75 83.25 height -value [+3 m]
 
@@ -785,14 +791,6 @@ line pit
   93.75 74.25 90.25 76.0 90.25 76.0
   smooth off
 endline
-
-point 90.75 82.25 height -value [-4 m]
-
-point 82.25 51.5 height -value [-40 m]
-
-point 55.5 66.0 air-draught -orientation 58.6 -subtype winter
-
-point 41.75 40.25 continuation
 
 point 103.881 79.8562 station -name 2012c-xa-68@aval-aiguilles2
 

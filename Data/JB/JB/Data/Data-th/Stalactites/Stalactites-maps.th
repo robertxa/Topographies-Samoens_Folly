@@ -8,15 +8,15 @@ encoding  utf-8
 
 map MP-Stalactites -title "Galerie des Stalactites"
 	SP-Stalactites-1
-	#break
-	#SP-Stalactites-1
+	break
+	SP-Stalactites-2
 endmap
 
 ########## Coupe
 
-#map MC-Stalactites -title "Galerie des Stalactites"
-#	SC-Stalactites-1
-#	break
-#	SC-Stalactites-2
-#endmap
+map MC-Stalactites -title "Galerie des Stalactites"
+	SC-Stalactites-1
+	break
+	SC-Stalactites-2
+endmap
 

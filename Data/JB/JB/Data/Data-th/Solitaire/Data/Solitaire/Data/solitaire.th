@@ -64,7 +64,8 @@ centerline -title "JBSolitaire : xx0init_xx0 xx35_xx36"
 	flags not splay
 	xx15  xx17    8.18  268  -3  2  0.3  0.3  0.7    # Arrêt point 17 sur la µstalagtite droite (1 mètre à gauche d'une excentrique isolée)
 	flags splay
-	xx17  xxInterrogation3    8    195  -45  -  -  -  -    # semble rejoindre le point ?2
+	#xx17  xxInterrogation3    8    195  -45  -  -  -  -    # semble rejoindre le point ?2X
+	xx17  2018-FD-11    8    195  -45  -  -  -  -    # semble rejoindre le point ?2X
 	extend ignore xx17
 	flags not splay
 	

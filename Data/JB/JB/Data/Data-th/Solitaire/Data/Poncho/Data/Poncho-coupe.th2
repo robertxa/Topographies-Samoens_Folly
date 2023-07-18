@@ -1,0 +1,150 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 595.4998 246.1103
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {253.434 1 1.0} {78.738 0} Poncho-coupe2023.xvi 0 {}
+
+
+
+scrap SC-Poncho-1 -projection extended -station-names "" "@Poncho" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
+
+line wall -subtype invisible
+  193.0 50.25
+  232.25 50.25
+endline
+
+line wall -subtype invisible
+  404.25 65.5
+  404.25 65.5 443.0 55.0 452.5 60.25
+  462.0 65.5 462.0 76.5 462.0 84.25
+  462.0 92.0 460.25 97.5 460.25 97.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  378.75 71.75
+  379.25 68.5
+endline
+
+line wall -subtype clay
+  379.25 68.5
+  379.25 68.5 388.75 69.75 392.5 69.75
+  396.25 69.75 395.75 67.25 399.25 67.75
+  402.75 68.25 404.25 65.5 404.25 65.5
+  smooth off
+endline
+
+line wall
+  232.25 50.25
+  232.25 50.25 233.75 62.25 237.0 62.5
+  240.25 62.75 245.0 61.0 245.0 65.75
+  245.0 70.5 243.5 72.0 249.75 73.25
+endline
+
+line border
+  437.25 67.75
+  437.25 67.75 442.5 66.75 446.5 67.25
+  450.5 67.75 456.0 68.25 456.0 68.25
+  smooth off
+endline
+
+line border
+  409.25 72.75
+  409.25 72.75 414.5 72.25 418.25 72.25
+  422.0 72.25 425.75 71.25 425.75 71.25
+  smooth off
+endline
+
+line rope
+  253.75 82.25
+  233.0 73.5
+  217.25 59.75
+  217.5 43.75
+endline
+
+point 209.0 32.25 continuation -attr Code P -attr Cavite "Jean Bernard" -attr Reseau "Solitaire - Poncho" -text "Grand puits à descendre"
+
+point 371.5 70.0 continuation -attr Code A -attr Cavite "Jean Bernard" -attr Reseau "Solitaire - Poncho" -text "CF à aller voir"
+
+line rope
+  389.75 92.75
+  404.0 89.75
+  411.5 78.0
+  425.5 77.0
+  439.5 74.75
+  455.75 75.5
+endline
+
+point 407.5 118.75 height -value [+5 m]
+
+point 321.25 115.75 label -text "g. du Poncho"
+
+line wall -subtype clay
+  249.75 73.25
+  256.0 74.5 263.25 74.75 269.75 76.0
+  276.25 77.25 287.0 80.25 297.0 81.5
+  307.0 82.75 313.75 83.25 322.75 84.25
+  331.75 85.25 336.0 87.25 344.0 86.5
+  352.0 85.75 356.0 87.25 360.25 87.25
+  364.5 87.25 370.25 87.5 377.5 87.25
+  384.75 87.0 385.5 88.75 390.25 85.75
+  395.0 82.75 401.0 81.75 401.75 79.5
+endline
+
+line wall
+  401.75 79.5
+  402.5 77.25 403.5 75.75 400.75 75.75
+  398.0 75.75 378.75 71.75 378.75 71.75
+  smooth off
+endline
+
+line wall
+  460.25 97.5
+  460.25 97.5 441.5 95.75 435.75 94.5
+  430.0 93.25 425.25 92.5 421.0 93.5
+  416.75 94.5 416.5 95.75 408.25 95.75
+  400.0 95.75 388.0 95.5 383.25 95.5
+  378.5 95.5 371.25 95.5 366.75 95.5
+  362.25 95.5 357.5 96.0 353.75 97.5
+  350.0 99.0 340.0 101.25 335.5 99.25
+  331.0 97.25 325.0 96.0 318.25 95.0
+  311.5 94.0 312.25 95.25 301.75 93.75
+  291.25 92.25 284.0 90.75 275.5 90.5
+  267.0 90.25 263.25 90.5 256.5 90.25
+  249.75 90.0 242.5 92.0 236.25 89.5
+  230.0 87.0 225.75 84.25 218.5 79.0
+  211.25 73.75 203.0 71.25 201.0 67.5
+  199.0 63.75 193.0 50.25 193.0 50.25
+  smooth off
+endline
+
+point 455.61400000000003 70.858 station -name 13
+
+point 443.504 70.22800000000001 station -name 12
+
+point 438.394 69.558 station -name 11
+
+point 424.754 74.098 station -name 10
+
+point 383.894 70.558 station -name 9
+
+point 411.804 75.528 station -name 8
+
+point 395.584 89.988 station -name 7
+
+point 389.004 90.078 station -name 6
+
+point 349.394 91.598 station -name 5
+
+point 324.984 91.128 station -name 4
+
+point 310.074 89.138 station -name 3
+
+point 276.564 82.44800000000001 station -name 2
+
+point 253.434 78.738 station -name 0
+
+point 202.184 57.718 station -name 1
+
+endscrap
+
+

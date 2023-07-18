@@ -11,11 +11,10 @@ survey V15 -title "V15"
 		equate 28@V15 21@V15b
 	
 	# Rivière aux rubis
-	#input Data/V15.th2
-	#	join SP-puitsparalleles-1 SP-Sol_2019b_1
-	#input Data/V15-coupe.th2
+	input Data/V15.th2
+	input Data/V15-coupe.th2
 
 	# Add maps
-	#input V15-maps.th
+	input V15-maps.th
 	
 endsurvey

@@ -29,7 +29,6 @@ survey V15 -title "V15" -entrance "V15"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    # extend auto
     V15 . 1.36 116.5 -7.0 # entree du V15 ; désobstruction sur 3 m
     V15 . 1.12 127.8 -56.8
     V15 . 1.11 101.3 -25.0
@@ -57,7 +56,7 @@ survey V15 -title "V15" -entrance "V15"
     1 . 1.71 44.8 -79.1
     1 . 5.61 315.1 -68.1
     1 . 3.89 347.9 -65.3
-    extend right
+    extend left
     1 2 4.27 282.2 -75.7  # Base du P4
     # extend auto
     2 . 0.83 252.1 14.4
@@ -75,7 +74,7 @@ survey V15 -title "V15" -entrance "V15"
     2 . 1.00 3.2 -62.6
     2 . 1.91 332.2 -46.4
     2 . 3.75 331.5 -37.5
-    extend right
+    extend left
     2 3 3.45 332.1 -24.0
     # extend auto
     3 . 0.49 348.8 3.3
@@ -90,7 +89,7 @@ survey V15 -title "V15" -entrance "V15"
     3 . 0.65 182.5 23.4
     3 . 1.13 166.1 36.4
     3 . 0.63 112.5 23.1
-    extend right
+    extend left
     3 4 4.09 38.3 -30.8 # debut Main Courante en plafond
     # extend auto
     4 . 0.32 145.3 -1.7
@@ -101,7 +100,7 @@ survey V15 -title "V15" -entrance "V15"
     4 . 2.63 46.8 -32.6
     4 . 0.74 76.4 -25.9
     4 . 2.39 66.1 -28.1
-    extend right
+    extend left
     4 5 2.83 55.4 -35.8 # début de la lucarne en face, départ du P5
     # extend auto
     5 . 1.55 242.7 5.9
@@ -129,7 +128,9 @@ survey V15 -title "V15" -entrance "V15"
     5 . 4.32 55.8 -35.4
     5 . 1.15 100.4 -76.7
     5 . 1.23 64.0 -67.0
-    extend vertical
+    
+    extend right
+    #extend ignore
     5 6 4.96 268.4 -55.7  # base P5
     # extend auto
     6 . 0.61 39.4 -57.7
@@ -140,9 +141,16 @@ survey V15 -title "V15" -entrance "V15"
     6 . 2.39 309.3 61.8
     6 . 1.64 330.2 47.4
     extend right
+    #extend ignore
     6 7 3.84 19.9 -2.4
+    #extend left
+    extend left
     6 8 1.26 66.7 41.0
+
+    #extend ignore 9 8
     8 9 2.04 53.7 -8.2
+    #extend right
+    extend right
     8 10 1.95 287.0 20.9
     # extend auto
     10 . 1.07 335.6 -73.1
@@ -151,6 +159,7 @@ survey V15 -title "V15" -entrance "V15"
     10 . 0.60 193.7 -53.6
     10 . 0.87 110.5 -55.2
     10 . 0.96 298.3 -48.5
+    #extend right
     extend right
     10 11 0.96 298.8 -46.7  # Courant d'air très léger soufflant
     # extend auto
@@ -161,10 +170,15 @@ survey V15 -title "V15" -entrance "V15"
     11 . 0.78 18.9 -12.0
     11 . 0.63 53.0 -2.3
     11 . 1.58 19.0 -56.2
-    extend left
-    11 12 3.13 233.6 -4.9
     extend right
+    #extend ignore
+    11 12 3.13 233.6 -4.9
+    extend left
+    #extend ignore
     11 13 1.12 41.7 -1.9
+    
+    
+    extend left
     5 14 2.57 58.8 -25.3  # On repart de la lucarne au sommet du P5 pour arriver au sommet du P4
     # extend auto
     14 . 0.85 260.7 37.2
@@ -182,7 +196,7 @@ survey V15 -title "V15" -entrance "V15"
     14 . 1.15 174.9 -46.5
     14 . 2.04 70.9 -18.6
     14 . 1.58 124.6 -2.3
-    extend right
+    extend left
     14 15 4.06 302.1 -70.4  # salle, puits sur la lame au sommet du puits suivant
     # extend auto
     15 . 1.66 185.6 12.1
@@ -207,11 +221,12 @@ survey V15 -title "V15" -entrance "V15"
     15 . 2.04 243.2 -75.4
     15 . 2.48 346.6 -73.6
     15 . 5.47 354.8 -81.8
-    extend left
+    extend ignore
     15 16 1.02 235.7 64.6
-    extend vertical
+    #extend right
+    extend ignore 16 9
     16 9 1.08 264.2 33.8  # Bouclage avec le petit méandre impénétrable vu à la base du P5
-    extend left
+    extend right
     15 17 4.81 107.0 45.4
     # extend auto
     17 . 3.31 343.7 -74.9
@@ -228,9 +243,9 @@ survey V15 -title "V15" -entrance "V15"
     17 . 2.02 124.4 82.4
     17 . 2.09 267.0 67.9
     17 . 2.83 215.4 65.0
-    extend left
+    extend right
     17 18 4.48 227.6 74.5 # Cheminée visitée, méandre étroit au sommet, arrivée V12 ou V13 ?
-    extend ignore
+    extend right
     17 19 1.93 74.5 7.1 # lucarne étroitre
     # extend auto
     18 . 0.35 74.6 7.1
@@ -252,9 +267,9 @@ survey V15 -title "V15" -entrance "V15"
     19 . 0.86 39.1 -34.9
     19 . 4.47 159.8 60.7
     19 . 4.09 177.2 64.9
-    extend left
-    19 20 6.72 162.3 61.9 # arrivée d'un méandre, courant d'air aspirant, arrivée du V13 ou V12 ?
     extend right
+    19 20 6.72 162.3 61.9 # arrivée d'un méandre, courant d'air aspirant, arrivée du V13 ou V12 ?
+    extend left
     19 21 2.09 61.5 -16.4
     # extend auto
     21 . 0.92 288.5 -2.0
@@ -269,7 +284,7 @@ survey V15 -title "V15" -entrance "V15"
     21 . 1.92 211.5 -72.2
     21 . 2.68 273.5 -82.5
     21 . 4.83 342.4 -75.7
-    extend right
+    extend left
     21 22 5.00 349.5 -67.6
     # extend auto
     22 . 0.38 139.3 0.8
@@ -283,7 +298,7 @@ survey V15 -title "V15" -entrance "V15"
     22 . 1.39 54.7 -56.1
     22 . 1.06 24.6 -22.3
     22 . 2.51 357.3 -62.1
-    extend right
+    extend left
     22 23 1.78 306.2 -64.0
     # extend auto
     23 . 1.09 18.3 13.4
@@ -296,7 +311,7 @@ survey V15 -title "V15" -entrance "V15"
     23 . 1.19 274.7 -34.3
     23 . 1.13 315.9 -65.4
     23 . 1.80 284.9 -55.0
-    extend right
+    extend left
     23 24 3.33 299.7 -30.8
     # extend auto
     24 . 1.30 254.7 -75.9
@@ -313,7 +328,7 @@ survey V15 -title "V15" -entrance "V15"
     24 . 0.64 90.3 -15.0
     24 . 1.21 321.8 -38.0
     24 . 1.45 231.2 -62.5
-    extend right
+    extend left
     24 25 1.09 325.6 -55.4
     # extend auto
     25 . 0.36 127.4 -82.8
@@ -343,7 +358,7 @@ survey V15 -title "V15" -entrance "V15"
     26 . 0.68 311.7 6.5
     26 . 1.60 324.5 7.3
     26 . 0.91 345.4 1.7
-    extend right
+    extend left
     26 27 1.71 306.5 27.0 # Bécquet dans la salle Delacour, n'existe plus suite à la désob.
     extend left
     26 28 4.97 242.5 -31.4  # Salle, départs ves l'aval et vers l'amont
@@ -375,7 +390,7 @@ survey V15 -title "V15" -entrance "V15"
     28 . 1.24 176.6 26.3
     28 . 1.68 168.2 -16.5
     28 . 2.37 166.5 -27.9
-    extend left
+    extend right
     28 29 3.78 162.3 -33.9  # +visée +6 m ; joint de strate avec méandre entièrement bouché par la désobstruction
     flags approximate
     29 29b 6 200 -43  # visée 6 m approx, non pénétrable, maintenant colmatée par la dsobstruction
@@ -413,7 +428,7 @@ survey V15 -title "V15" -entrance "V15"
     
     # extend auto
     #32 . 7.46 106.4 69.1
-    extend left
+    extend right
     28 33 5.93 102.0 68.3
     # extend auto
     33 . 6.19 292.0 -66.8
@@ -433,11 +448,11 @@ survey V15 -title "V15" -entrance "V15"
     33 . 3.40 211.2 72.4
     33 . 3.42 168.7 69.5
     33 . 1.49 115.5 50.6
-    extend left
+    extend right
     33 34 1.23 167.4 39.8
     # extend auto
     34 . 3.38 181.0 85.0
-    extend left
+    extend right
     34 15 3.38 135.1 86.4
     # extend auto
     15 . 1.44 27.4 -22.2
@@ -445,7 +460,8 @@ survey V15 -title "V15" -entrance "V15"
     15 35 1.47 27.0 -22.1
     # extend auto
     15 . 1.48 26.9 -21.9
-    extend ignore
+    
+    extend left
     15 35 1.48 26.8 -21.8
     # extend auto
     35 . 0.74 295.3 7.2
@@ -458,7 +474,7 @@ survey V15 -title "V15" -entrance "V15"
     35 . 1.22 342.9 -52.8
     35 . 2.51 0.7 -38.9
     35 . 1.83 12.2 -36.5
-    extend right
+    extend left
     35 36 2.64 4.1 -31.8
     # extend auto
     36 . 0.70 349.4 -39.4
@@ -476,7 +492,7 @@ survey V15 -title "V15" -entrance "V15"
     36 . 1.32 325.3 56.8
     36 . 1.89 36.1 -3.5
     36 . 2.88 47.4 9.5
-    extend right
+    extend left
     36 37 3.35 46.7 30.7
     # extend auto
     37 . 0.53 319.4 1.6
@@ -496,24 +512,25 @@ survey V15 -title "V15" -entrance "V15"
     37 . 2.13 200.7 -8.2
     37 . 3.78 226.9 -20.1
     37 . 1.98 221.3 -2.0
-    extend left
-    37 38 5.73 102.8 37.2
-    extend vertical
-    37 39 0.38 265.2 50.2
     extend right
+    37 38 5.73 102.8 37.2
+    extend left
+    37 39 0.38 265.2 50.2
+    extend left
     39 40 3.20 11.3 -3.6
     
     flags surface
+    extend right
     V15 41 1.68 78.8 22.0
     flags not surface
 
-    extend vertical
+    extend left
     27 42 1.76 276.2 17.6 # Départ dans l'étroiture de jonction ; point 42 juste derrière la concrétion de glace
     # extend auto
     42 . 15.04 269.9 -0.7
     42 . 12.23 268.7 -1.3
     42 . 12.71 268.6 -1.3
-    extend ignore
+    extend left
     42 43 12.66 268.6 -1.2  # point à l'entrée du lamnoir du V4, au sol, position approx.
     
     # Dev : 139 m

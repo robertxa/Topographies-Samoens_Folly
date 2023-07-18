@@ -38,9 +38,9 @@ survey Poncho -title "Puits du Poncho"
     0 . 2.15 28.0 1.5
     0 . 2.99 59.6 51.2
     0 . 8.52 57.0 15.0
-    extend right
-    0 1 14.07 253.1 -22.3
     extend left
+    0 1 14.07 253.1 -22.3
+    extend right
     0 2 5.95 49.6 9.1
     # extend auto
     2 . 0.78 168.1 1.4
@@ -58,7 +58,7 @@ survey Poncho -title "Puits du Poncho"
     2 . 3.94 74.4 18.6
     2 . 2.40 87.2 -22.4
     2 . 5.71 84.5 -3.8
-    extend left
+    extend right
     2 3 8.68 82.9 11.3
     # extend auto
     3 . 1.60 10.9 3.6
@@ -77,7 +77,7 @@ survey Poncho -title "Puits du Poncho"
     3 . 2.43 272.0 -6.8
     3 . 1.13 291.6 1.9
     3 . 1.80 260.1 39.0
-    extend left
+    extend right
     3 4 3.82 91.2 7.6
     # extend auto
     4 . 2.46 313.4 -1.7
@@ -95,7 +95,7 @@ survey Poncho -title "Puits du Poncho"
     4 . 2.54 290.0 -6.2
     4 . 2.58 307.1 -9.5
     4 . 2.29 282.2 -50.9
-    extend left
+    extend right
     4 5 6.20 354.1 1.1
     # extend auto
     5 . 0.92 84.3 -2.0
@@ -111,7 +111,7 @@ survey Poncho -title "Puits du Poncho"
     5 . 3.53 27.1 -2.3
     5 . 2.85 34.8 -4.6
     5 . 5.11 9.7 -4.8
-    extend left
+    extend right
     5 6 10.07 15.2 -2.2
     # extend auto
     6 . 1.64 183.4 -31.1
@@ -130,7 +130,7 @@ survey Poncho -title "Puits du Poncho"
     6 . 1.66 158.9 2.3
     6 . 3.39 181.5 10.1
     6 . 2.86 196.7 7.1
-    extend left
+    extend right
     6 7 1.67 56.5 -0.8
     # extend auto
     7 . 1.24 293.7 -8.8
@@ -144,7 +144,7 @@ survey Poncho -title "Puits du Poncho"
     7 . 8.42 358.2 -3.2
     7 . 5.93 349.1 5.4
     7 . 1.29 307.9 -7.0
-    extend left
+    extend right
     7 8 5.52 357.8 -41.7
     # extend auto
     8 . 1.24 163.2 -14.7
@@ -167,9 +167,9 @@ survey Poncho -title "Puits du Poncho"
     8 . 5.33 0.9 42.4
     8 . 1.61 23.3 11.1
     8 . 2.53 10.3 -50.3
-    extend right
-    8 9 7.20 284.4 -10.1  # Conduite Forcée, paraît colmatée, mais à aller voir tout de même
     extend left
+    8 9 7.20 284.4 -10.1  # Conduite Forcée, paraît colmatée, mais à aller voir tout de même
+    extend right
     8 10 3.31 7.3 -6.3
     # extend auto
     10 . 0.94 82.4 9.1
@@ -183,7 +183,7 @@ survey Poncho -title "Puits du Poncho"
     10 . 6.86 20.7 54.2
     10 . 3.09 11.0 13.3
     10 . 1.12 355.6 -1.1
-    extend left
+    extend right
     10 11 3.65 22.5 -18.4
     # extend auto
     11 . 0.61 335.2 -2.9
@@ -198,7 +198,7 @@ survey Poncho -title "Puits du Poncho"
     11 . 1.09 238.2 6.1
     11 . 1.95 214.4 3.9
     11 . 6.50 199.7 65.6
-    extend left
+    extend right
     11 12 1.31 45.3 7.4
     # extend auto
     12 . 0.89 142.4 0.5
@@ -207,7 +207,7 @@ survey Poncho -title "Puits du Poncho"
     12 . 2.65 40.3 1.6
     12 . 7.82 43.8 64.3
     12 . 6.22 48.2 19.8
-    extend left
+    extend right
     12 13 3.08 60.9 3.0 # Sommet du puits qui part en direction de la zone du Complexe
 
     # Dev : 75 m

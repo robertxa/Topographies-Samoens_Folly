@@ -162,22 +162,7 @@ map MP-reseauaiguilles -title "Réseau des Aiguilles"
 	SP-audessusbulle
 	break
 	SP-Crawleuraval
-endmap   	
-     
-#map MP-aspirosouffle -title "Réseau de l'AspiroSouffle"
-#	# Begin Réseau de l'AspiroSouflle
-#	SP-aval-aiguille2-1
-#	break
-#	SP-aval-aiguilles2-2
-#	break
-#	SP-aval-aiguilles2-3
-#	break
-#	SP-aval-aiguilles2-5
-#	break
-#	SP-aval-aiguilles2-6
-#	break
-#	SP-aval-aiguilles2-4
-#endmap   
+endmap   	   
 
 #map MP-avalaiguilles -title "Aval des Aiguilles"
 #	SP-aval-aiguilles4  
@@ -564,9 +549,13 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MP-V6
 	break
+	MP-V15@V15 [-60 60] below
+	break
 	MP-V4
 	break
 	MP-Ete-Indien@Ete-Indien
+	break
+	MP-Stalactites@Stalactites
 	break
 	MP-savoyards
 	break

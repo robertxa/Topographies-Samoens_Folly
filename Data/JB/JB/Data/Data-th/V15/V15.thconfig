@@ -38,9 +38,9 @@ layout layout_plan
 	doc-title "V15-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 500
-	scale 1 500
-	scale-bar 50 m
+	base-scale 1 250
+	scale 1 250
+	scale-bar 25 m
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
@@ -98,11 +98,11 @@ layout layout_coupe
 	doc-author "Xavier Robert"
 	cs UTM32
 	#base-scale 1 2000
-	base-scale 1 1400
-	#base-scale 1 1000
+	#base-scale 1 1400
+	base-scale 1 500
 	#base-scale 1 300
-	scale 1 1400
-	#scale 1 1000
+	#scale 1 1400
+	scale 1 500
 	#scale 1 400
 	scale-bar 50 m
 	#color map-bg 85 
@@ -126,7 +126,7 @@ layout layout_coupe
 	legend off
 	#legend-width 14.5 cm
 	legend-width 10 cm
-	map-header 80 39 nw
+	map-header 0 -5 nw
 	map-header-bg on
 	layers on
 	symbol-hide line survey

@@ -38,9 +38,9 @@ layout layout_plan
 	doc-title "Stalactites-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 500
-	scale 1 500
-	scale-bar 50 m
+	base-scale 1 1250
+	scale 1 1000
+	scale-bar 100 m
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
@@ -55,8 +55,8 @@ layout layout_plan
 	map-header 100 100 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#debug scrap-names
 	# grid bottom
 	# grid-size 100 100 100 m
@@ -99,12 +99,12 @@ layout layout_coupe
 	cs UTM32
 	#base-scale 1 2000
 	base-scale 1 1400
-	#base-scale 1 1000
-	#base-scale 1 300
+	##base-scale 1 1000
+	##base-scale 1 300
 	scale 1 1400
-	#scale 1 1000
+	##scale 1 1000
 	#scale 1 400
-	scale-bar 50 m
+	scale-bar 100 m
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
@@ -126,11 +126,11 @@ layout layout_coupe
 	legend off
 	#legend-width 14.5 cm
 	legend-width 10 cm
-	map-header 80 39 nw
+	map-header 0 -5 nw
 	map-header-bg on
 	layers on
-	#symbol-hide line survey
-	debug station-names	
+	symbol-hide line survey
+	#debug station-names	
 	grid bottom
 	grid-size 100 100 20 m
 	grid-coords border

@@ -12,25 +12,38 @@ survey Stalactites -title "Galerie des Stalactites"
       team "Théo Prévot" 
       team "Thomas Rispal"
   
-    #explo-date 1961
-      #explo-team "Xavier Robert" 
-      #explo-team "Stéphane Lips"
+    explo-date 1968.08.09
+      explo-team "Jacques Dill"
+      explo-team "Marcel Salort"
+      explo-team "Thérèse Desbordes"
+      explo-team "Pierre Rias"
+    explo-date 1975.08.15
+      explo-team "Pierre Rias"
+      explo-team "Jean-Charles Chouquet"
+    explo-date 2022.07.14 
+      explo-team "Théo Prévot" 
+      explo-team "Stéphane Lips"
+      explo-team "Olivier Gradot"
     explo-date 2023.07.10 
       explo-team "Théo Prévot" 
       explo-team "Thomas Rispal"
       explo-team "Olivier Gradot"
-      explo-team "Charles ??"
+      explo-team "Charles Rouyer"
 
     units length meters
     units compass clino degrees
     data normal from to compass length clino up down left right
+      # Galerie des Stalactites
+      extend left
       flags duplicate
       #1	0	50	9.5	-80	.	.	.	.	# Bouclage avec sommet
       1	0	230	9.5	-80	.	.	.	.	# Correction Az par Xav : 50 + 180 = 230 ; bouclage avec sommet Savoyards ?
+      extend right
       1	0b	50	16.5	10	.	.	.	.	
       #1	0b	230	16.5	10	.	.	.	.	# Correction Az par Xav : 50 + 180 = 230 ; bouclage avec sommet Savoyards ?
       flags not duplicate
       
+      extend right
       1	2	90	7.2	30	2	0.8	4.6	0.7	
       2	3	55	12.1	28	2.2	0.9	1.3	0.6	
       3	4	30	7	15	0.7	0.9	0.8	1	
@@ -42,20 +55,27 @@ survey Stalactites -title "Galerie des Stalactites"
       8	9	85	6.3	10	0.6	0.9	1.6	0.5	
       9	10	40	6.7	35	0.9	0.9	1.2	1.9	
       
+      extend left
       10	11	230	4.3	-40	1	0.8	0.9	1.3	
+      extend right
       11	12	340	3.8	-5	1.4	.	.	.	
+      #extend left
       12	13	85	4	5	.	.	.	.	
       #10	13b	225	2.5	-40	.	.	.	.	# Bouclage
+      extend right
       10	13	5	2.5	-40	.	.	.	.	# Bouclage ; Correction Az par Xavier pour améliorer le bouclage
       
       11	14	210	1.5	-90	0.7	0.7	0.8	0.4	
       #14	4	100	2.2	-35	.	.	.	.	# bouclage
+      extend left
       14	8 180	2.2	-35	.	.	.	.	# bouclage ; Rem Xav : est-ce sûr que c'est avec la station 4 ? Je dirais plutôt la 8 avec une grosse erreur topo... 
 
+      extend right
       5	15	135	2.2	45	.	.	.	.	
       15	16	105	7.6	40	0.7	0.8	4	2.1	
       16	17	120	3.7	-20	1.8	0.9	2.6	1.6	
-      17	18	180	1.3	-10	0.4	0.2	0.7	0.5	
+      17	18	180	1.3	-10	0.4	0.2	0.7	0.5
+    # Galerie de la mêche de 8	
       18	19	120	4.9	0	1.2	0.4	0.6	1.2	# Désob de 18 à 19
       19	20	90	2.1	30	0.35	0	0.3	0.3	
       20	21	130	2.6	5	1.1	0.7	0.5	0.8	
@@ -64,11 +84,15 @@ survey Stalactites -title "Galerie des Stalactites"
       23	24	70	5.1	-45	1.9	1.1	0.7	0.6	
       24	25	40	3.2	-70	0.9	0.6	1	1	
       25	26	140	1.7	-15	0.5	0.4	0.8	0.8	
+      26	26b	85	3.2	0	.	.	.	.	
+
+      extend left
       26	27	145	1.8	20	0.9	0.5	1.5	0.8	
       
+      extend right
       27	24	280	4.3	50	1.3	0.4	0.6	0.7	# Bouclage
       
-      26	26b	85	3.2	0	.	.	.	.	
+      
     
     # Dev : 161 m
 

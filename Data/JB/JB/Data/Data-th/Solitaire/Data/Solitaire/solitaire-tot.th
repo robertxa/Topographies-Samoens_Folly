@@ -12,7 +12,8 @@ survey Solitaire -title "Réseau du Solitaire"
 	input Data/solitaire-plan.th2
 	input Data/solitaire-plan2017.th2
 	input Data/solitaire2018.th2
-		join SP-solitaire_plan SP-sol2017-1 -count 2
+		#equate xxInterrogation3	2018-FD-12
+		#join SP-solitaire_plan SP-sol2017-1 -count 2
 
 	input Data/solitaire-coupe2017.th2
 

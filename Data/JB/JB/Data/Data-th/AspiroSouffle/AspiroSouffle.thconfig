@@ -89,7 +89,7 @@ layout my_layout-coupe
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
-  legend on
+  legend off
      legend-width 21 cm
   map-header 0 00 nw
   map-header-bg off
@@ -114,7 +114,7 @@ layout my_layout-coupe
   
 endlayout
 
- 
+ select MP-AspiroSouffle@AspiroSouffle
   
  export map -fmt xvi -layout xviexport -o Data/aspirosouffle-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o Data/asipirosouffle-coupe.xvi

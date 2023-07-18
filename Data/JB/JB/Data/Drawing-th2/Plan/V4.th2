@@ -473,7 +473,28 @@ endscrap
 
 scrap SP-V4 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 6949.75 5084.0 label -text "Salle Delacour"
+line pit
+  6900.0 5123.5
+  6900.0 5123.5 6897.5 5128.0 6893.0 5127.25
+endline
+
+point 6837.25 5134.25 pebbles
+
+point 6850.0 5129.0 pebbles
+
+point 6867.75 5125.75 pebbles
+
+point 6888.75 5122.25 pebbles
+
+point 6907.75 5113.25 pebbles
+
+point 6928.75 5107.25 pebbles
+
+point 6918.5 5107.25 pebbles
+
+point 6941.0 5107.5 pebbles
+
+point 6985.0 5171.75 label -text "salle Delacour"
 
 line pit
   7037.75 5103.5
@@ -503,6 +524,7 @@ line pit
   7030.0 5083.5
   7030.0 5083.5 7028.25 5090.0 7023.5 5089.25
   7018.75 5088.5 7016.5 5087.5 7013.5 5087.5
+  smooth off
 endline
 
 line pit
@@ -568,12 +590,14 @@ line wall
   7025.0 5069.0 7026.68 5068.18 7028.0 5066.5
   7030.75 5063.0 7039.75 5051.75 7039.75 5049.0
   7039.75 5046.25 7042.25 5045.25 7044.0 5044.0
+  smooth off
 endline
 
 line wall
   7011.75 5091.25
   7013.25 5094.25 7014.45 5101.67 7017.5 5091.0
   7018.0 5089.25 7019.0 5085.5 7016.75 5085.5
+  smooth off
 endline
 
 point 7064.68 5046.8 station -name Ja.10@jb-amonts2
@@ -711,11 +735,20 @@ line pit
   smooth off
 endline
 
+line pit
+  6989.0 5110.5
+  6989.0 5110.5 6992.75 5119.5 6989.0 5121.5
+endline
+
 line wall -reverse on
   7008.25 5092.0
   7008.25 5092.0 7010.75 5115.0 7007.0 5115.0
-  7003.25 5115.0 6981.75 5111.25 6979.0 5110.25
-  6976.25 5109.25 6929.75 5101.75 6924.5 5101.75
+  7003.25 5115.0 6986.75 5112.25 6984.0 5111.25
+endline
+
+line wall -reverse on
+  6976.75 5110.25
+  6974.0 5109.25 6929.75 5101.75 6924.5 5101.75
   6919.25 5101.75 6916.0 5101.75 6913.25 5103.25
   altitude .
   6910.5 5104.75 6899.25 5117.75 6895.75 5117.0
@@ -812,13 +845,13 @@ line wall -reverse on -subtype unsurveyed
   7033.25 5105.5
 endline
 
-point 6859.0 5112.75 label -text "Laminoir"
+point 6859.0 5112.75 label -text "laminoir"
 
-point 6916.5 5151.0 label -text "Etr."
+point 6916.5 5151.0 label -text "etr."
 
-point 6902.25 5149.5 label -text "Etr."
+point 6902.25 5149.5 label -text "etr."
 
-point 6867.5 5154.0 label -text "Etr."
+point 6867.5 5154.0 label -text "etr."
 
 line wall -reverse on -outline in -subtype unsurveyed
   7026.75 5103.5

@@ -12,6 +12,8 @@ survey AspiroSouffle -title "L'Aspiro-Souffle"
 
     # Dessins en plan
     input Data/Aval-aiguilles2.th2
+    input Data/Aspiro2023.th2
+        join SP-Aspiro2023-1 SP-aval-aiguilles2-4
     # Dessins en coupe
     #input Data/Aval-aiguilles2-coupe.th2
     

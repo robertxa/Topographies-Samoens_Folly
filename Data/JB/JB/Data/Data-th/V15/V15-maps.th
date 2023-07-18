@@ -8,15 +8,25 @@ encoding  utf-8
 
 map MP-V15 -title "V15"
 	SP-V15-1
-	#break
-	#SP-V15-1
+	break
+	SP-V15-2
+	break
+	SP-V15-3
+	break
+	SP-V15-4
 endmap
 
 ########## Coupe
 
-#map MC-V15 -title "V15"
-#	SC-V15-1
-#	break
-#	SC-V15-2
-#endmap
+map MC-V15 -title "V15"
+	SC-V15-1
+	break
+	SC-V15-2
+	break
+	SC-V15-3
+	break
+	SC-V15-5
+	break
+	SC-V15-4
+endmap
 

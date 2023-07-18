@@ -10,11 +10,11 @@ survey aspiro2023 -title "aspiro2023"
     date 2023.07.14 
       team "Xavier Robert" 
       team "Cédric Lacharmoise"
-    explo-date 2015.08
+    explo-date 2015.08.27
       # Stage Instructeur
       explo-team "Stéphane Emmer"
-      #explo-team "Tristan Godet" 
-    explo-date 2022.08
+      explo-team "Tristan Godet" 
+    explo-date 2022.08.20
       explo-team "Stéphane Lips"
       explo-team "Cédric Lacharmoise"
     explo-date 2023.07.14
@@ -84,8 +84,9 @@ survey aspiro2023 -title "aspiro2023"
     3 . 12.33 221.6 46.4
     extend left
     3 4 41.02 174.0 -88.7 # base du p46
-    extend right
+    extend left
     4b 5 30.81 282.2 85.6 # Sommet de l'escalade, visée approximative, à refaire ; le point 4b est sur la pointe du gros bloc à la base de l'escalade
+    extend right
     4b 6 3.88 45.7 27.1 # Sur pointe grosse lame
     # extend auto
     6 . 1.80 169.5 6.9
@@ -159,7 +160,7 @@ survey aspiro2023 -title "aspiro2023"
     # extend auto
     8 . 40.06 315.5 -2.5
     8 . 41.08 315.5 -2.5
-    extend vertical
+    extend right
     8 4 5.26 274.3 -71.8  # Retour base du P46 provenant de l'Aspiro-Souffle
     # extend auto
     4 . 0.87 277.2 20.9

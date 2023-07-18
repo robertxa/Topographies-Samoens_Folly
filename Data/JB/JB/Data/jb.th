@@ -125,9 +125,12 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	# L'aspiro-souffle
 	input Data-th/AspiroSouffle/AspiroSouffle-tot.th
 		### Equates data
-			equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
+			#equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
+			equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.46@jb-amonts2	# Pour limiter la déformation de l'AspiroSouffle, il y a une belle erreur de bouclage...
 			equate 16@aspiro2023.AspiroSouffle Fb.30@jb-amonts2
 		### Joins dessins Plan
+			join SP-Branlots SP-Aspiro2023-1@AspiroSouffle
+				# OK ; Il y a un problème entre l'AspiroSouffle de 2012 et 2023... Le dessin est trop déformé
 		### Joins dessins Coupe
 
 	## Le méandre des Crawleurs
@@ -289,7 +292,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	
 	## Le V15
 	input Data-th/V15/V15-tot
-		equate 43@V15.V15 Ih.9@jb-amonts2 # jonction V15 à l'entrée du laminoir du V4, côté salle Delacour
+		equate 43@V15.V15 Ih.8@jb-amonts2 # jonction V15 à l'entrée du laminoir du V4, côté salle Delacour
+		join SP-V15-3@V15 SP-V4
 
 	# Réseau de l'Eté Indien
 	input Data-th/Ete-Indien/Ete-Indien-tot.th
@@ -304,6 +308,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	## Galerie des Stalactites
 	input Data-th/Stalactites/Stalactites-tot.th
 		equate 1@Stalactites.Stalactites Jb.3@jb-amonts2
+		join SP-Stalactites-1@Stalactites SP-quitombea
 
 	## La Pierre Qui Tombe
 	input Drawing-th2/Plan/pierrequitombe.th2
