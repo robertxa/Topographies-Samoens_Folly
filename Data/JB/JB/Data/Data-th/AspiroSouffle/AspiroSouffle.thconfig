@@ -74,12 +74,12 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-   doc-title "Aval Aiguilles"
+   doc-title "Aspiro Souffle"
    doc-author "Xavier Robert"
    cs UTM32
-   base-scale 1 200
-  scale 1 500
-   scale-bar 50 m
+   base-scale 1 1200
+  scale 1 1400
+   scale-bar 100 m
 
   #color map-bg 85
   color map-fg [100 100 80]
@@ -90,12 +90,12 @@ layout my_layout-coupe
   statistics topo-length off
    statistics copyright all
   legend off
-     legend-width 21 cm
+     legend-width 14.5 cm
   map-header 0 00 nw
   map-header-bg off
   layers on
-	#symbol-hide line survey
-  debug station-names
+  symbol-hide line survey
+  #debug station-names
 
  # grid-size 100 100 100 m
    grid off
