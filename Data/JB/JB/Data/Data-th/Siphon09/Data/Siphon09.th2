@@ -1,0 +1,188 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -129.5 14655.566899999998 8238.240600000001
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {26042.46 0 1.0} {13620.0 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
+
+
+
+
+scrap SP-Siphon09 -projection plan -station-names "" "@Siphon09" -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+
+line wall
+  3512.0 2407.25
+  3512.0 2407.25 3512.0 2421.75 3507.5 2422.5
+  altitude .
+  3503.0 2423.25 3496.25 2414.75 3491.25 2417.5
+  3486.25 2420.25 3474.0 2430.75 3469.5 2428.5
+  3465.0 2426.25 3466.25 2419.25 3461.75 2422.0
+  3457.25 2424.75 3443.5 2436.75 3440.0 2434.75
+endline
+
+line wall
+  3440.0 2426.5
+  3442.75 2424.75 3455.25 2415.0 3458.25 2413.75
+  3461.25 2412.5 3462.75 2417.75 3465.25 2417.0
+  3467.75 2416.25 3467.5 2423.5 3471.0 2421.75
+  3474.5 2420.0 3484.25 2411.75 3490.25 2409.25
+  3496.25 2406.75 3504.0 2413.25 3504.5 2411.75
+  3505.0 2410.25 3506.25 2405.5 3506.25 2405.5
+  smooth off
+endline
+
+point 3507.96 2410.55 station -name xa-1-2009
+
+point 3506.62 2419.63 station -name xa-0-2009do
+
+point 3492.22 2412.17 station -name xa-2-2009
+
+point 3469.96 2425.87 station -name xa-3-2009
+
+point 3462.28 2418.6 station -name xa-4-2009
+
+point 3443.5 2430.15 station -name xa-5-2009
+
+line gradient
+  3501.5 2415.75
+  3495.5 2413.5
+endline
+
+line gradient
+  3468.75 2424.25
+  3460.0 2419.25
+endline
+
+line contour
+  3469.0 2415.75
+  3469.0 2415.75 3466.5 2417.25 3466.0 2420.75
+  3465.5 2424.25 3466.0 2428.5 3466.0 2428.5
+  smooth off
+endline
+
+line contour
+  3465.25 2414.0
+  3465.25 2414.0 3461.81 2415.2 3462.28 2418.6
+  3462.75 2422.0 3463.25 2427.5 3463.25 2427.5
+  smooth off
+endline
+
+point 3515.5 2389.25 continuation -attr Code S -attr Cavite JB -attr Reseau "Siphon 69" -text "Siphon à plonger, arrivée du Collecteur, eau claire"
+
+point 3580.0 2376.0 label -orientation 36.4 -text "Arrivée du Collecteur"
+
+point 3536.75 2413.25 label -text "Siphon 09"
+
+point 3685.0 2249.75 water-flow -orientation 317.6
+
+point 3640.25 2294.75 continuation
+
+point 3581.5 2351.0 continuation
+
+point 3548.25 2370.75 water-flow -orientation 317.6
+
+point 3608.75 2329.0 water-flow -orientation 317.6
+
+point 3511.75 2401.5 water-flow -orientation 338.2
+
+area water
+  l223-3483-2425
+  l168-3481-2427
+  l224-3476-2409
+  l167-3493-2415
+endarea
+
+area water
+  l225-3453-2431
+  l170-3446-2432
+  l226-3448-2417
+  l169-3458-2423
+endarea
+
+area sump
+  l166-3510-2407
+  l227-3515-2410
+  l165-3514-2414
+  l228-3504-2407
+endarea
+
+line label -id l228-3504-2407
+  3503.25 2408.75
+  3503.75 2404.5
+endline
+
+line label -id l227-3515-2410
+  3516.0 2408.5
+  3513.25 2414.25
+endline
+
+line label -id l226-3448-2417
+  3441.0 2423.0
+  3441.0 2423.0 3455.0 2410.0 3457.75 2409.75
+  3460.5 2409.5 3461.75 2411.0 3461.75 2411.0
+  smooth off
+endline
+
+line label -id l225-3453-2431
+  3458.75 2427.0
+  3448.75 2433.25
+endline
+
+line label -id l224-3476-2409
+  3472.5 2417.5
+  3472.5 2417.5 3475.0 2402.5 3487.25 2406.5
+  smooth off
+endline
+
+line label -id l223-3483-2425
+  3491.25 2417.5
+  3480.5 2426.75
+endline
+
+line label -id l167-3493-2415
+  3487.25 2406.5
+  3487.25 2406.5 3493.0 2410.5 3492.25 2413.75
+  3491.5 2417.0 3491.25 2417.5 3491.25 2417.5
+  smooth off
+endline
+
+line label -id l166-3510-2407
+  3503.75 2404.5
+  3516.0 2408.5
+endline
+
+line label -id l165-3514-2414 -reverse on
+  3503.25 2408.75
+  3503.25 2408.75 3503.75 2414.25 3506.25 2414.75
+  3508.75 2415.25 3513.25 2414.25 3513.25 2414.25
+  smooth off
+endline
+
+line label -id l168-3481-2427
+  3472.5 2417.5
+  3472.5 2417.5 3470.0 2422.25 3473.0 2424.25
+  3476.0 2426.25 3480.5 2426.75 3480.5 2426.75
+  smooth off
+endline
+
+line label -id l169-3458-2423
+  3461.75 2411.0
+  3461.75 2411.0 3457.75 2416.0 3457.75 2419.0
+  3457.75 2422.0 3458.75 2427.0 3458.75 2427.0
+  smooth off
+endline
+
+line label -id l170-3446-2432
+  3441.0 2423.0
+  3441.0 2423.0 3439.75 2427.0 3441.75 2428.5
+  3443.75 2430.0 3448.75 2433.25 3448.75 2433.25
+  smooth off
+endline
+
+endscrap
+
+
+
+
+
+
+
+

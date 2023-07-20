@@ -1,0 +1,832 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey B19 -title "Gouffre du B19" -entrance "B19"
+
+ centerline -extend right -title "B19 au P11 B19_B19double Da.21_Da.22"
+
+   date 1969.08.16
+   cs lat-long
+   fix B19 46.10422 6.79225 2118
+	station B19 "B19" entrance
+
+   team "Jacques Lopez"
+   team "Serge Aviotte"
+   explo-date 1969.08.16
+     explo-team "Jacques Lopez"
+     explo-team "Serge Aviotte"
+     explo-team "Yves Bally"
+     explo-team "Michel Heuguebaert"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   B19 B19double    0.       0.       90.       0.       0.       0.       0.    # Entree du B19
+   B19 Da.1    9.67       85.       17.       0.       0.       0.       0.    # Remontée dans éboulis coincés
+   Da.1 Da.2    4.7       275.       48.       0.       0.       0.       0.    
+   Da.2 Da.3    2.72       50.       70.       0.       0.       0.       0.    
+   Da.3 Da.4    2.74       125.       45.       0.       0.       0.       0.    
+   Da.4 Da.5    10.23       25.       30.       0.       0.       0.       0.    
+   Da.5 Da.6    10.       0.       90.       0.       0.       0.       0.    # Puits P10
+   Da.6 Da.7    4.79       25.       50.       0.       0.       0.       0.    
+   Da.7 Da.8    7.84       100.       7.       0.       0.       0.       0.    
+   Da.8 Da.9    6.6       106.       73.       0.       0.       0.       0.    
+   Da.9 Da.10    5.58       85.       15.       0.       0.       0.       0.    
+   Da.10 Da.11    8.       85.       32.       0.       0.       0.       0.    
+   Da.11 Da.12    11.       0.       90.       0.       0.       0.       0.    # Puits P11
+   Da.12 Da.13    2.9       79.       18.       0.       0.       0.       0.    
+   Da.13 Da.14    10.       0.       90.       0.       0.       0.       0.    # Puits P10
+   Da.14 Da.15    6.92       32.       38.       0.       0.       0.       0.    
+   Da.15 Da.16    10.       0.       90.       0.       0.       0.       0.    # P10
+   Da.16 Da.17    2.62       101.       20.       0.       0.       0.       0.    
+   Da.17 Da.18    4.14       3.       37.       0.       0.       0.       0.    
+   Da.18 Da.19    5.61       25.       69.       0.       0.       0.       0.    
+   Da.19 Da.20    2.84       17.       56.       0.       0.       0.       0.    
+   Da.20 Da.21    1.43       105.       22.       0.       0.       0.       0.    # Sommet du puits ; Chatière
+   Da.21 Da.22    11.8       5.       90.       0.       0.       0.       0.     # P11
+
+# dev = 141.0 m
+
+endcenterline
+
+
+#  centerline -extend right -title "B19, à partir P11 vers dynamitage Da.22_Da.23 Da.28_Da.29"
+
+#    date 1971.08.04
+#    #cs lat-long
+#    #fix B19 46.10422 6.79225 2118
+
+#    team "Jacques Lopez"
+#    team "Michel Heuguebaert"
+
+#    explo-date 1971.08.01
+#      explo-team "Jacques Lopez"
+#      explo-team "Pierre Rias"
+#      explo-team "Michel Heuguebaert"
+#    explo-date 1971.08.04
+#      explo-team "Jacques Lopez"
+#      explo-team "Michel Heuguebaert"
+#      explo-team "Jean-François Nyffenegger"
+#      explo-team "Marie-José Marchal"
+
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+
+#    data normal from to length backcompass backclino right left up down     
+
+#    Da.22 Da.23    3.7       308.       2.       0.       0.       0.       0.    # Flaque d'eau en bas du P12, 2.2°C.
+#    Da.23 Da.24    2.3       215.      -19.       0.       0.       0.       0.    
+#    Da.24 Da.25    7.2       0.       90.       25.       5.       0.       0.    # P7
+#    Da.25 Da.26    5.7       280.      -13.       0.       0.       0.       0.    
+#    Da.26 Da.27    2.7       218.      -7.       0.       0.       0.       0.    
+#    Da.27 Da.28    2.8       189.       26.       0.       0.       0.       0.    # Puits ; méandre très étroit
+#    Da.28 Da.29    11.5       0.       90.       0.       0.       0.       0.    
+
+# # Dev = 
+
+# endcenterline
+
+
+# centerline -extend right -title "B19, à partir dynamitage vers bouchon Da.29_Da.30 Da.65_Da.66"
+
+#    date 1973.10.13
+#    team "Jacques Lopez"
+#    team "Jean-François Nyffenegger"
+#    explo-date 1972.09.06
+#      explo-team "Jacques Lopez"
+#      explo-team "Pierre Rias"
+#      explo-team "Jean-François Nyffenegger"
+#    explo-date 1973.10.07
+#      explo-team "Claude Depierre"
+#      explo-team "Daniel Colliard"
+#    explo-date 1973.10.13
+#      explo-team "Jacques Lopez"
+#      explo-team "Daniel Colliard"
+#      explo-team "Jean-François Nyffenegger"
+#      explo-team "Théodore Lavrotte"
+
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+
+#    data normal from to length backcompass backclino right left up down     
+
+#    Da.29 Da.30    1.48      180.       37.       0.       0.       0.       0.    # Etroiture dynamitée
+#    Da.30 Da.31    4.33       205.       35.       0.       0.       0.       0.    
+#    Da.31 Da.32    1.       300.       0.       0.       0.       0.       0.    
+#    Da.32 Da.33    21.01       0.       90.       0.       0.       0.       0.    # P21
+#    Da.33 Da.34    8.64       272.       3.       0.       0.       2.       2.    # l = 4 m
+#    Da.34 Da.35    12.52       0.       90.       0.       0.       0.       0.    # P13
+#    Da.35 Da.36    3.74       275.       40.       0.       0.       0.       0.    
+#    Da.36 Da.37    5.82       12.       26.       0.       0.       0.       0.    
+#    Da.37 Da.38    1.99       290.      -18.       0.       0.       0.       0.   #  montée dans méandre 
+#    Da.38 Da.39    4.52       335.       13.       0.       0.       0.       0.    # méandre étroit
+#    Da.39 Da.40    1.64       272.       38.       0.       0.       0.       0.    # Second dynamitage ; erreur 180°
+#    Da.40 Da.41    12.65       0.       90.       0.       0.       0.       0.    # P13
+#    Da.41 Da.42    3.       50.       0.       0.       0.       0.       0.    
+#    Da.42 Da.43    4.58       0.       90.       0.       0.       0.       0.    # P5
+#    Da.43 Da.44    3.96       35.       20.       0.       0.       0.       0.    
+#    Da.44 Da.45    3.56       335.       25.       0.       0.       0.       0.    # méandre étroit ; Attention, longueur corrigée, 3.5 au lieu de 5.6
+#    Da.45 Da.46    1.53       340.       60.       0.       0.       0.       0.    
+#    Da.46 Da.47    3.05       305.       75.       0.       0.       0.       0.    
+#    Da.47 Da.48    3.32       345.      -20.       0.       0.       0.       0.    
+#    Da.48 Da.49    2.       20.       0.       0.       0.       0.       0.    
+#    Da.49 Da.50    8.09       0.       90.       0.       0.       0.       0.    # P8
+#    Da.50 Da.51    8.21       15.      -25.       0.       0.       0.       0.    # Arrivée sous joint de strate au sommet du puits
+#    Da.51 Da.52    13.92       0.       90.       0.       0.       0.       0.     # P14
+#    Da.52 Da.53    2.41       305.       48.       0.       0.       0.       0.    
+#    Da.53 Da.54    2.0       20.       0.       0.       0.       0.       0.    
+#    Da.54 Da.55    2.06       310.       45.       0.       0.       0.       0.    
+#    Da.55 Da.56    1.5       265.       0.       0.       0.       0.       0.    
+#    Da.56 Da.57    6.31       350.      -30.       3.       2.       0.       0.    
+#    Da.57 Da.58    4.99       15.      -57.       0.       0.       0.       0.    # Remontée dans méandre arrosé dans galerie sous joint
+#    Da.58 Da.59    7.81       337.       31.       0.       0.       2.       2.    # l = 4 m
+#    Da.59 Da.60    10.11       3.       30.       0.       0.       3.       3.    # l = 6 m
+#    Da.60 Da.61    7.81       15.       32.       0.       0.       0.       0.    
+#    Da.61 Da.62    6.59       345.       30.       0.       0.       0.       0.    
+#    Da.62 Da.63    10.3       10.       25.       0.       0.       0.       0.    
+#    Da.63 Da.64    9.9       350.       21.       0.       0.       0.       0.    
+
+#    extend left
+#    Da.64 Da.65    10.9       35.       20.       0.       0.       0.       0.    
+#    Da.65 Da.66    9.8       335.       15.       0.       0.       0.       0.    # Attention, erreur azimuth, 335 au lieu de 355
+   
+# # dev = 262.8 m
+   
+# endcenterline
+
+
+# centerline -extend left -title "B19 + r. aux Excentriques Da.66_Da.67 De.0_Da.204"
+
+#    date 1975.08.09
+#   team "Jacques Lopez"
+#   team "Christian Rigaldie"
+#   explo-date 1973.10.20  
+#     explo-team "Daniel Colliard"
+#     explo-team "Jacques Lopez"
+#     explo-team "Pierre Rias"
+#     explo-team "Christian Rigaldie"
+#     explo-team "Xavier Thurin"
+
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+#    data normal from to length backcompass backclino right left up down
+
+#    Da.66 Da.67    2.16       66.      -3.       0.       0.       0.       0.    # Chatière désobstruée
+#    Da.67 Da.68    7.84       94.       13.       0.       0.       0.       0.    
+#    Da.68 Da.69    5.72       155.      -14.       0.       0.       0.       0.   # Arrivée cascade 
+#    Da.69 Da.70    3.78       120.      -1.       0.       0.       0.       0.    
+#    Da.70 Da.71    1.01       23.       44.       0.       0.       0.       0.    # Descente dans méandre sous joint
+#    Da.71 Da.72    8.85       355.       22.       0.       0.       0.       0.    # Arrivée d'eau par plafond dans méandre
+#    Da.72 Da.73    3.95       300.       4.       0.       0.       0.       0.    
+#    Da.73 Da.74    3.48       50.       2.       0.       0.       0.       0.    
+#    Da.74 Da.75    2.37       73.       11.       0.       0.       0.       0.    
+#    Da.75 Da.76    1.71       354.       52.       0.       0.       0.       0.    
+#    Da.76 Da.77    1.59       39.      -6.       0.       0.       0.       0.    
+#    Da.77 Da.78    1.81       340.       16.       0.       0.       0.       0.    # Arrivée d'eau par sommet de puits
+#    Da.78 Da.79    15.82       72.       71.       0.       0.       0.       0.   # Ressaut dans méandre, approch 2 m ; P15
+#    Da.79 Da.80    26.37       0.       90.       0.       0.       0.       0.    # Puits (Jusqu'à la niche) ; P37
+#    Da.80 Da.81    10.88       0.       90.       0.       0.       0.       0.    # fin du puits
+   
+#    endcenterline
+
+
+centerline -extend left -title "B19 + r. aux Excentriques Da.66_Da.67 De.0_Da.204"
+
+   date 1975.08.09
+  team "Jacques Lopez"
+  team "Christian Rigaldie"
+  explo-date 1973.10.20  
+    explo-team "Daniel Colliard"
+    explo-team "Jacques Lopez"
+    explo-team "Pierre Rias"
+    explo-team "Christian Rigaldie"
+    explo-team "Xavier Thurin"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length backcompass backclino right left up down
+   Da.81 Da.82    5.81       334.      -9.       0.       0.       0.       0.    # Arrivée du collecteur dans la faille par une cascade
+   Da.82 Ca.40    3.14       347.       38.       0.       0.       0.       0.    
+   Ca.40 Da.84    10.02       57.       10.       0.       0.       0.       0.    
+   Da.84 Da.85    2.78       135.       3.       0.       0.       0.       0.    
+   Da.85 Da.86    2.73       184.       0.       0.       0.       0.       0.    
+   Da.86 Da.87    8.84       88.      -8.       0.       0.       0.       0.    
+   Da.87 Da.88    10.7       79.       1.       0.       0.       0.       0.    
+   Da.88 Da.89    4.57       58.      -28.       0.       0.       0.       0.    
+   Da.89 Da.90    3.89       0.       90.       0.       0.       0.       0.    # Ressaut ; P4
+   Da.90 Da.91    20.55       349.       8.       0.       0.       0.       0.    # Début rivière aux excentriques
+   
+   Da.91 Da.92    3.65       45.       0.       0.       0.       0.       0.    
+   Da.92 Da.93    6.57       17.       3.       0.       0.       0.       0.    
+   Da.93 Da.94    2.79       61.       2.       0.       0.       0.       0.    
+   Da.94 Da.95    4.       136.       2.       0.       0.       0.       0.    
+   Da.95 Da.96    3.99       175.       3.       0.       0.       0.       0.    
+   Da.96 Da.97    5.41       110.       5.       0.       0.       0.       0.    
+   Da.97 Da.98    2.86       109.      -4.       0.       0.       0.       0.    
+   Da.98 Da.99    5.62       60.       5.       0.       0.       0.       0.    
+   Da.100' Da.100    4.34       90.       2.       0.       0.       0.       0.    
+   Da.100 Da.101    3.25       87.       2.       0.       0.       0.       0.    # Cascade de 4 m
+   Da.101 Da.102    1.89       186.       3.       0.       0.       0.       0.    
+   Da.102 Da.103    5.28       150.      -29.       0.       0.       0.       0.    
+   Da.103 Da.104    2.69       170.       11.       0.       0.       0.       0.    # m.c. au dessus cascade
+   Da.104 Da.105    6.       0.       90.       0.       0.       0.       0.    # Puits 6 m ; C10
+   Da.105 Da.106    5.64       194.       1.       0.       0.       0.       0.    
+   Da.106 Da.107    2.72       145.       0.       0.       0.       0.       0.    
+   Da.107 Da.108    11.6       103.       1.       0.       0.       0.       0.    
+   Da.108 Da.109    6.64       63.       3.       0.       0.       0.       0.    
+
+
+   Da.109 Da.110    11.08       62.      -1.       0.       0.       0.       0.    
+   Da.110 Da.111    2.98       25.      -1.       0.       0.       0.       0.    
+   Da.111 Da.112    10.14       307.       4.       0.       0.       0.       0.    
+   Da.112 Da.113    1.79       26.       6.       0.       0.       0.       0.    
+   Da.113 Da.114    9.79       95.       0.       0.       0.       0.       0.    
+   Da.114 Da.115    4.21       72.       1.       0.       0.       0.       0.    
+   Da.115 Da.116    7.87       124.       0.       0.       0.       0.       0.   
+   Da.116 Da.117    9.13       100.       5.       0.       0.       0.       0.    
+   Da.117 Da.118    2.65       203.      -8.       0.       0.       0.       0.    
+   Da.118 Da.119    4.18       210.       43.       0.       0.       0.       0.    
+   Da.119 Da.120    1.65       150.       36.       0.       0.       0.       0.    
+   Da.120 Da.121    5.46       108.      -4.       0.       0.       0.       0.    
+   Da.121 Da.122    2.52       126.       4.       0.       0.       0.       0.    
+   Da.122 Da.123    8.68       102.      -2.       0.       0.       0.       0.    
+   Da.123 Da.124    6.72       103.       0.       0.       0.       0.       0.    
+   Da.124 Da.125    5.04       233.       0.       0.       0.       0.       0.    
+   Da.125 Da.126    8.15       188.       5.       0.       0.       0.       0.    
+   Da.126 Da.127    5.99       131.       2.       0.       0.       0.       0.    
+   Da.127 Da.128    4.38       115.       4.       0.       0.       0.       0.   # Arrivée d'eau par plafond 
+   Da.128 Da.129    1.9       99.       8.       0.       0.       0.       0.    
+   Da.129 Da.130    8.93       78.       2.       0.       0.       0.       0.    
+   Da.130 Da.131    5.06       41.       4.       0.       0.       0.       0.    
+   Da.131 Da.132    5.85       77.       0.       0.       0.       0.       0.    
+   Da.132 Da.133    6.42       55.       0.       0.       0.       0.       0.    
+   Da.133 Da.134    4.21       317.       5.       0.       0.       0.       0.    
+   Da.134 Da.135    1.87       76.       2.       0.       0.       0.       0.    # Début du méandre
+   Da.135 Da.136    3.51       108.       5.       0.       0.       0.       0.    
+   Da.136 Da.137    5.98       59.       6.       0.       0.       0.       0.    
+   Da.137 Da.138    3.24       335.      -4.       0.       0.       0.       0.    
+   Da.138 Da.139    2.64       29.       3.       0.       0.       0.       0.    
+   Da.139 Da.140    3.26       109.       24.       0.       0.       0.       0.    
+   Da.140 Da.141    3.45       167.      -7.       0.       0.       0.       0.   
+   Da.141 Da.142    4.29       219.      -9.       0.       0.       0.       0.    
+   Da.142 Da.143    1.76       91.       1.       0.       0.       0.       0.    
+   Da.143 Da.144    3.93       64.       30.       0.       0.       0.       0.    
+   Da.144 Da.145    4.02       30.       3.       0.       0.       0.       0.    
+   Da.145 Da.146    2.49       107.      -4.       0.       0.       0.       0.    
+   Da.146 Da.147    4.25       56.      -1.       0.       0.       0.       0.    
+   Da.147 Da.148    4.83       315.       4.       0.       0.       0.       0.    
+   Da.148 Da.149    2.47       50.      -3.       0.       0.       0.       0.    
+   Da.149 Da.150    4.76       71.       3.       0.       0.       0.       0.    
+   Da.150 Da.151    2.49       147.      -7.       0.       0.       0.       0.    
+   Da.151 Da.152    1.69       66.      -1.       0.       0.       0.       0.    
+   Da.152 Da.153    1.99       108.       13.       0.       0.       0.       0.    
+   
+
+   Da.153 Da.154    1.91       17.       2.       0.       0.       0.       0.    
+   Da.154 Da.155    2.97       113.       12.       0.       0.       0.       0.    
+   Da.155 Da.156    1.73       57.       2.       0.       0.       0.       0.    
+   Da.156 Da.157    3.43       112.      -3.       0.       0.       0.       0.    
+   Da.157 Da.158    2.17       51.       10.       0.       0.       0.       0.    
+   Da.158 Da.159    2.26       78.      -2.       0.       0.       0.       0.    
+   Da.159 Da.160    1.91       132.       19.       0.       0.       0.       0.    
+   Da.160 Da.161    1.49       63.       6.       0.       0.       0.       0.    
+   Da.161 Da.162    2.06       121.      -1.       0.       0.       0.       0.    
+   Da.162 Da.163    1.85       65.       4.       0.       0.       0.       0.    
+   Da.163 Da.164    1.94       332.       27.       0.       0.       0.       0.    
+   Da.164 Da.165    3.65       20.      -9.       0.       0.       0.       0.    
+   Da.165 Da.166    2.74       75.       0.       0.       0.       0.       0.    
+   Da.166 Da.167    1.7       32.      -3.       0.       0.       0.       0.    
+   Da.167 Da.168    4.66       112.       3.       0.       0.       0.       0.    
+   Da.168 Da.169    2.15       15.       6.       0.       0.       0.       0.    
+   Da.169 Da.170    1.44       45.      -4.       0.       0.       0.       0.    
+   Da.170 Da.171    2.72       333.       7.       0.       0.       0.       0.    
+   Da.171 Da.172    1.9       82.      -6.       0.       0.       0.       0.    
+   Da.172 Da.173    2.52       135.       5.       0.       0.       0.       0.    
+   Da.173 Da.174    2.06       32.      -21.       0.       0.       0.       0.    
+   Da.174 Da.175    4.65       127.       19.       0.       0.       0.       0.    
+
+
+
+   Da.175 Da.176    2.11       43.       68.       0.       0.       0.       0.    # Arrivée réseau remontant avec actif en rive gauche
+   Da.176 Da.177    2.02       346.      -3.       0.       0.       0.       0.    
+   Da.177 Da.178    4.32       25.       5.       0.       0.       0.       0.    
+   Da.178 Da.179    4.91       137.      -3.       0.       0.       0.       0.    
+
+endcenterline   
+
+
+
+
+
+centerline -extend left -title "B19 après la désob Dh.0_Dh.1 Dh.12_Dg.0"
+
+   date 1977.08.13
+  # declination -2.4943 degrees
+  team "Jean-Luc Thervenin"
+  team "Jean-Bernard/de Chabelier"
+
+  explo-date 1977.08.13
+    explo-team "Jean-Luc Thervenin"
+    explo-team "Jean-Bernard/de Chabelier"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Dh.0 Dh.1    12.11000       0.      -90.       0.       0.       0.       0.    
+   Dh.1 Dh.2    1.33       147.      -47.       0.       0.       0.       0.    
+   Dh.2 Dh.3    13.63000       0.      -90.       0.       0.       0.       0.    
+   Dh.3 Dh.4    2.52       300.      -45.       0.       0.       0.       0.    # Chatière
+   Dh.4 Dh.5    3.2       9.       0.       0.       0.       0.       0.    
+   Dh.5 Dh.6    1.58       81.       12.       0.       0.       0.       0.    
+   Dh.6 Dh.7    2.17       80.       8.       0.       0.       0.       0.    
+   Dh.7 Dh.8    5.34       70.       17.       0.       0.       0.       0.    
+   Dh.8 Dh.9    2.84       19.       18.       0.       0.       0.       0.    
+   Dh.9 Dh.10    2.68       304.       31.       0.       0.       0.       0.    
+   Dh.10 Dh.11    2.65       304.       90.       0.       0.       0.       0.    
+   Dh.11 Dh.12    6.73       82.       34.       0.       0.       0.       0.    
+   Dh.12 Dg.0    7.23       59.       39.       0.       0.       0.       0.    # Bas de la corde
+
+# Dev = 63.8 m
+
+endcenterline
+
+
+centerline -extend left -title "Excentriques sup Dg.0_Dg.1 D.15_Dg.16"
+
+   date 1977.08.05
+  # declination -2.4943 degrees
+  team "Josiane Lips"
+  team "Bernard Lips"
+  team "Jean-Philippe Faubert"
+
+  explo-date 1977.08.05
+   explo-team "Josiane Lips"
+   explo-team "Bernard Lips"
+   explo-team "Jean-Philippe Faubert"
+   units lenght meters
+
+   units compass degrees
+   units clino degrees
+   data normal from to length backcompass backclino right left up down
+
+   Dg.0 Dg.1    6.58       90.       7.       0.       0.       0.       0.    
+   Dg.1 Dg.2    4.51       43.       12.       0.       0.       0.       0.    
+   Dg.2 Dg.3    5.8       20.       13.       0.       0.       0.       0.    
+   Dg.3 Dg.4    6.44       46.      -39.       0.       0.       0.       0.    
+   Dg.4 Dg.5    9.87       350.       0.       0.       0.       0.       0.    
+   Dg.5 Dg.6    7.09       125.       5.       0.       0.       0.       0.    
+   Dg.6 Dg.7    7.69       175.       5.       0.       0.       0.       0.    
+   Dg.7 Dg.8    3.61       44.      -3.       0.       0.       0.       0.    
+   Dg.8 Dg.9    4.4       120.       4.       0.       0.       0.       0.    
+   Dg.9 Dg.10    4.04       15.       8.       0.       0.       0.       0.    
+   Dg.10 Dg.11    8.42       92.       0.       0.       0.       0.       0.    
+   Dg.11 Dg.12    7.11       75.       9.       0.       0.       0.       0.    
+   Dg.12 Dg.13    8.18       145.      -4.       0.       0.       0.       0.    
+   Dg.13 Dg.14    6.89       75.       15.       0.       0.       0.       0.    
+   Dg.14 Dg.15    8.14       145.       3.       0.       0.       0.       0.    
+   Dg.15 Dg.16    5.93       180.      -17.       0.       0.       0.       0.    
+
+# Dev = 100.6 m
+
+endcenterline 
+
+
+centerline -extend left -title "g. du Lavoir Db.0_Db.1 Db.12_Da.81"
+
+   date 1976.03.01
+ #  declination -3.0146 degrees
+
+  team "Bernard Lips"
+  team "Josiane Lips"
+  team "Pierre Cahingt"
+
+  explo-date 1976.03.05
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+    explo-team "Paul Courbon"
+  explo-date 1977.01.01
+    explo-team "Jean-Luc Thevenin"
+    explo-team "Yves Bally"
+    explo-team "Jean-Pierre Stéphanato"
+  explo-date 1977.11.08
+    explo-team "Benoît/Le Falher"
+    explo-team "Gérard Protat"
+  explo-date 1977.11.08
+    explo-team "Bernard Lips"  
+    explo-team "Benoît/Le Falher"
+
+  explo-date 1979.02.23
+    explo-team "Bernard Lips"  
+    explo-team "Benoît/Le Falher"
+
+  explo-date 1979.02.24
+    explo-team "Pierre Rias"  
+    explo-team "Christian Rigaldie"
+
+  explo-date 1979.02.25
+    explo-team "Bernard Lips"  
+    explo-team "Josiane Lips"
+    explo-team "Benoît/Le Falher"
+
+    explo-date 1979.03.04
+    explo-team "Bernard Lips"  
+    explo-team "Josiane Lips"
+    explo-team "Jean-Philippe Faubert"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Db.0 Db.1    5.2       327.       63.       0.       0.       0.       0.    
+   Db.1 Db.2    4.22       250.       29.       0.       0.       0.       0.    
+   Db.2 Db.3    2.83       317.       23.       0.       0.       0.       0.    
+   Db.3 Db.4    2.5       10.       24.       0.       0.       0.       0.    
+   Db.4 Db.5    6.02       0.       90.       0.       0.       0.       0.    
+   Db.5 Db.6    5.06       238.       8.       0.       0.       0.       0.    
+
+   extend right
+   Db.6 Db.7    2.43       185.       17.       0.       0.       0.       0.    
+   Db.7 Db.8    4.9       310.       52.       0.       0.       0.       0.    
+   Db.8 Db.9    6.47       292.       26.       0.       0.       0.       0.    
+   Db.9 Db.10    2.92       78.       42.       0.       0.       0.       0.    
+   Db.10 Db.11    5.08       9.       36.       0.       0.       0.       0.    
+   Db.11 Db.12    3.87       359.       45.       0.       0.       0.       0.    
+   Db.12 Da.81    6.3       342.      -14.       0.       0.       0.       0.
+
+# Dev = 57.8 m
+
+endcenterline
+
+
+centerline -extend left -title "Base lavoir sec vers raccourci Dj.0_Dj.1 Dj.11_Da.89"
+
+   date 1979.02.23
+  # declination -2.5000 degrees
+
+    team "Josiane Lips"
+    team "Jean-Luc Dinard"
+
+   explo-date 1979.02.23
+     explo-team "Josiane Lips"
+     explo-team "Jean-Luc Dinard"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount backcompass backclino right left up down
+
+   Dj.0 Dj.1 28939.0 29218.0    340.      -3.       0.       0.       0.       0.    
+   Dj.1 Dj.2 29218.0 29716.0    35.      -46.       0.       0.       0.       0.    
+   Dj.2 Dj.3 29716.0 30182.0    0.       1.       0.       0.       0.       0.    
+   Dj.3 Dj.4 30182.0 30428.0    59.      -26.       0.       0.       0.       0.    
+   Dj.4 Dj.5 30428.0 31120.0    90.      -56.       0.       0.       0.       0.    # arrivée de la galerie aux excentriques
+   Dj.5 Dj.6 31120.0 31506.0    86.       19.       0.       0.       0.       0.    # Puits : On s'élève au dessus de la galerie aux excentriques
+   Dj.6 Dj.7 31506.0 31963.0    110.      -19.       0.       0.       0.       0.    
+   Dj.7 Dj.8 31963.0 32347.0    204.      -30.       0.       0.       0.       0.    # On quite la galerie aux excentriques
+   Dj.8 Dj.9 32347.0 32921.0    91.       11.       0.       0.       0.       0.    # croisement
+   Dj.9 Dj.10 32921.0 33444.0    100.       32.       0.       0.       0.       0.    # Bouclage
+   Dj.10 Dj.11 33444.0 33951.0    9.       29.       0.       0.       0.       0.    # corde du puits du Raccourci
+   Dj.11 Da.89 33951.0 34235.0    309.       29.       0.       0.       0.       0.    # galerie aux excentriques, 1 m de l'escalade à équiper
+ 
+ # Dev =   
+
+endcenterline
+
+
+# centerline -extend left -title "M. des Crawleurs Da.107_Ea.1 Ea.17_Eb.28"
+
+#    date 1991.08.10
+#   # declination -1.1340 degrees
+#   team "Christophe Ohl"
+#   team "Frédéric Gennérat"
+#   explo-date 1991.08.10
+#     explo-team "Christophe Ohl"
+#     explo-team "Frédéric Gennérat"
+
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+
+#    data normal from to length compass clino left right up down
+
+#    Da.107 Ea.1    9.12       0.       90.       0.       0.       0.       0.   # spit 
+#    Ea.1 Ea.2    5.03       40.       45.       0.5       0.5       0.       0.    # l = 1 m
+#    Ea.2 Ea.3    6.5       345.       50.       0.       0.       0.       0.    # Base puits
+#    Ea.3 Ea.4    12.84000       0.       90.       0.       0.       0.       0.   # spit 
+#    Ea.4 Ea.5    1.05       40.       0.       0.       0.       0.       0.    # Lucarne
+#    Ea.5 Ea.6    1.29       265.       35.       0.15       0.15       0.       0.    # l = 0.3 m
+#    Ea.6 Ea.7   0.79       320.       0.       0.15       0.15       0.       0.    # l = 0.3 m
+#    Ea.7 Ea.8    1.59       50.       50.       0.15       0.15       0.       0.    # l = 0.3 m
+#    Ea.8 Ea.9    1.76       315.      -35.       0.3       0.3       0.       0.    # l = 0.6 m
+#    Ea.9 Ea.10    1.05       10.       0.       0.       0.       0.       0.    # plancher éboulis
+#    Ea.10 Ea.11    1.63       330.       45.       0.       0.       0.       0.    
+#    Ea.11 Ea.12    2.36       20.       40.       0.       0.       0.       0.    
+#    Ea.12 Ea.13    2.8       280.      -5.       0.       0.       0.       0.    
+#    Ea.13 Ea.14    2.47       20.      -15.       2.       2.       4.       2.    # 4*6 m ; fond à 2 m
+#    Ea.14 Ea.15    12.38000       0.       90.       0.       0.       0.       0.    # spit
+#    Ea.15 Ea.16    5.45       55.       20.       1.       1.       0.       0.    # l = 2 m
+#    Ea.16 Ea.17    8.42       340.       20.       0.       0.       0.       0.    
+#    Ea.17 Eb.28    9.69       355.       35.       0.       0.       0.       0.    
+
+# # Dev = 86.22 m
+
+# endcenterline 
+
+
+# centerline -extend left -title "M. des Crawleurs Eb.0_Eb.1 Eb.30_Dg.16"
+
+#    date 1991.07.20
+#   # declination -1.1320 grad
+
+#   team "Christophe Ohl"
+#   team "Jacques Orsola"
+#   explo-date 1991.07.20
+#     explo-team "Christophe Ohl"
+#    explo-team "Jacques Orsola"
+
+#    units lenght meters
+#    units compass grad
+#    units clino degrees
+
+#    data normal from to length compass clino left right up down
+
+#    Eb.0 Eb.1    1.55       342.       32.       0.5       0.5       0.5       0.5    # départ colmaté ; diam = 1 m
+#    Eb.1 Eb.2    3.48       213.       55.       0.       0.       0.       0.    
+#    Eb.2 Eb.3    5.28       274.      -16.       0.       0.       0.       0.    
+#    Eb.3 Eb.4    2.54       172.      -2.       0.       0.       0.       0.    
+#    Eb.4 Eb.5    4.18       221.      -57.       0.       0.       0.       0.    
+#    Eb.5 Eb.6    5.48       205.      -32.       0.       0.       0.       0.    
+#    Eb.6 Eb.7    1.31       162.      -32.       0.       0.       0.       0.    
+#    Eb.7 Eb.8    6.2       214.      -51.       0.5       0.5       6.5       1.5    # point topo eventuel ; l = 1 m ; h = 8 m
+#    Eb.8 Ec.11    7.51       249.      -45.       0.5       0.5       8.5       1.5  # l = 2 m ; h = 10 m  
+#    Ec.11 Eb.10    7.94       190.      -12.       0.       0.       5.       0.   # Hv = 5 m 
+#    Eb.10 Eb.11    6.27       188.      -53.       0.       0.       5.       0.    # Hw = 5 m
+#    Eb.11 Eb.12    5.54       204.       42.       0.       0.       0.       0.    
+#    Eb.12 Eb.13    4.29       200.       47.       0.       0.       0.       0.    # Arrivée CF
+#    Eb.13 Eb.14    10.55000       215.      -22.       0.       0.       0.       0.    
+#    Eb.14 Eb.15    3.83       394.      -30.       0.       0.       0.       0.    
+#    Eb.15 Eb.16    2.34       25.      -63.       0.       0.       0.       0.    
+#    Eb.16 Eb.17    1.44       215.      -43.       0.       0.       0.       0.    
+#    Eb.17 Eb.18    1.6       191.      -32.       0.       0.       0.       0.    
+#    Eb.18 Eb.19    1.78       183.      -10.       0.       0.       0.       0.    
+#    Eb.19 Eb.20    4.89       198.      -25.       0.       0.       0.       0.    
+#    Eb.20 Eb.21    3.11       194.       16.       0.       0.       0.       0.    
+#    Eb.21 Eb.22    3.71       211.       38.       0.       0.       0.       0.    # Plafond
+#    Eb.22 Eb.23    4.04       264.      -64.       0.       0.       0.       0.    # Bloc coincé
+#    Eb.23 Eb.24    2.35       184.      -32.       0.       0.       0.       8.    # sol à 8 m
+#    Eb.24 Eb.25    1.87       163.       64.       0.       0.       0.       0.    
+#    Eb.25 Eb.26    6.87       234.      -13.       0.       0.       0.       0.    # Plafond
+#    Eb.26 Eb.27    6.53       183.      -13.       0.       0.       0.       0.    
+#    Eb.27 Eb.28    10.92000       191.      -16.       0.       0.       0.       0.    # Arrivée Galerie principale
+#    Eb.28 Eb.29    7.63       291.      -5.       0.       0.       0.       0.    
+#    Eb.29 Eb.30    11.48000       236.      -29.       0.       0.       0.       0.    
+#    Eb.30 Dg.16    10.7       292.      -2.       0.       0.       0.       0.    
+ 
+#  # Dev = 157.21 m
+ 
+# endcenterline
+
+
+# centerline -extend right -title "M. des Crawleurs Ec.0_Ec.1 Ec.10_Ec.11"
+
+#    date 1991.08.10
+#   # declination -1.1340 degrees
+
+#   team "Christophe Ohl"
+#   team "Hughes Feuillet"
+#   explo-date 1991.08.10
+#     explo-team "Christophe Ohl"
+#     explo-team "Hughes Feuillet"
+
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+
+#    data normal from to length backcompass backclino right left up down
+
+#    Ec.0 Ec.1    9.83       330.       42.       0.       0.       0.       0.    # bloc coincé
+#    Ec.1 Ec.2    6.78       340.       41.       4.       4.       6.5       1.5    # Diam = 8 m
+#    Ec.2 Ec.3    2.8       330.       40.       1.       1.       2.5       1.5    # h = 4 m ; l = 2 m
+#    Ec.3 Ec.4    10.19000       337.       43.       1.5       1.5       0.       0.    # l = 3 m
+#    Ec.4 Ec.5    7.61       335.       43.       0.       0.       0.       0.    
+#    Ec.5 Ec.6    3.92       85.       58.       0.       0.       0.       0.    
+#    Ec.6 Ec.7    12.31000       350.       35.       0.       0.       0.       0.    
+#    Ec.7 Ec.8    15.03000       339.       27.       2.5       2.5       0.       0.    # l = 5 m
+#    Ec.8 Ec.9    15.52000       345.       29.       0.       0.       0.       0.    
+#    Ec.9 Ec.10    5.28       0.       38.       0.       0.       0.       0.    # Sommet puits
+#    Ec.10 Ec.11    7.65       0.       90.       0.       0.       0.       0.    
+
+# # Dev = m
+
+# endcenterline
+
+
+# centerline -extend left -title "M. du Crowleur Eh.0_Eh.1 Eh.18_Ec.7"
+
+#    date 2002.09.14
+#   # declination 0.  grad
+
+#    calibrate counter 0 1.000
+
+#   team "Bernard Lips"
+#   team "Nathalie Duverlie"
+#   team "Emamnuel Boutleux"
+#   explo-date 2002.09.14
+#     explo-team "Bernard Lips"
+#     explo-team "Stéphane Lips"
+#     explo-team "Josiane Lips"
+#     explo-team "Nathalie Duverlie"
+#     explo-team "Emmanuel Boutleux"
+
+#    units lenght meters
+#    units compass grad
+#    units clino grad
+#    units counter centimeters
+
+#    data topofil from to fromcount tocount compass clino left right up down
+#    #extend right
+#    Eh.0 Eh.1 42855.0 43635.0    240.       8.       1.       1.      0.5      0.5    # Com.
+#    Eh.1 Eh.2 43635.0 43921.0    320.      -10.       1.       1.       1.      0.5    
+#    Eh.2 Eh.3 43921.0 44199.0    220.      -70.       1.       1.       1.       1.    # P7 ; méandre
+#    #extend left
+#    Eh.3 Eh.3' 0.0 700.0    0.      -80.       1.       2.       3.       1.    
+#    extend right
+#    Eh.3 Eh.4 44199.0 44530.0    130.       15.       1.       1.       7.       1.    
+#    Eh.4 Eh.5 44530.0 45126.0    100.       0.       1.       2.      0.5      0.5    
+#    extend left
+#    Eh.3 Eh.6 45126.0 45570.0    335.       6.       1.       1.       1.      0.5    
+#    Eh.6 Eh.7 45570.0 46055.0    355.       17.       1.5       1.5      0.5      0.5    
+#    Eh.7 Eh.8 46055.0 46337.0    275.      -14.       3.       4.       1.       1.    # coulée stalagmitique
+#    Eh.8 Eh.9 46337.0 47067.0    235.      -33.       1.       3.       1.5       1.    
+#    Eh.9 Eh.10 47067.0 47703.0    285.      -3.       2.       1.       1.5       1.    
+#    Eh.10 Eh.11 47703.0 48704.0    210.      -30.       4.       2.       3.       1.    
+#    Eh.11 Eh.12 48704.0 49506.0    175.      -35.       2.       1.5       1.       1.    
+#    Eh.12 Eh.13 49506.0 50553.0    45.       26.       2.       2.       3.       1.    
+#    Eh.12 Eh.14 50553.0 51160.0    270.       6.       1.       1.       1.       1.    # P7 ; ammarage
+#    Eh.14 Eh.15 51160.0 51854.0    300.      -50.       1.       1.       3.       1.    
+#    Eh.15 Eh.16 51854.0 52192.0    310.      -67.       1.       1.       4.       1.    
+#    Eh.16 Eh.17 52192.0 53254.0    255.      -63.       1.       1.       4.       1.    
+#    Eh.17 Eh.18 53254.0 53870.0    160.      -73.       4.       1.       1.       1.    
+#    Eh.18 Ec.7 53870.0 54759.0    350.       3.       1.       1.       1.       1.    
+
+# # Dev = m
+
+# endcenterline
+ 
+
+centerline -extend right -title "G. des Aiguilles Ej.0_Ej.1 Ej.26_De.30"
+
+   date 1977.05.19
+  # declination -2.5143 degrees
+
+  team "Bernard Lips"
+  team "Christian Rigaldie"
+  explo-date 1977.05.19
+    explo-team "Benoît/Le Falher"
+    explo-team "Bernard Lips"
+    explo-team "Christian Rigaldie"
+    explo-team "Jean-Luc Thevenin"
+    explo-team "Pierre Rias"
+    explo-team "Philippe Lavabre"
+    explo-team "Henri/de Rocassera"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Ej.0 Ej.1    5.6       45.       0.       0.5       0.5       0.       0.    # Sommet du méandre ;  l = 1 m
+   Ej.1 Ej.2    6.08       75.       14.       0.       0.       0.       0.    # Passage sur bloc
+   Ej.2 Ej.3    5.21       96.       15.       0.       0.       0.       0.    # m.c.
+   Ej.3 Ej.4    8.34       125.       12.       0.       0.       0.       0.    # m.c.
+   Ej.4 Ej.5    3.49       139.      -11.       0.       0.       0.       0.    # m.c.
+   Ej.5 Ej.6    6.22       153.      -28.       0.       0.       0.       0.    
+   Ej.6 Ej.7    8.29       155.      -20.       0.       0.       0.       0.    
+   Ej.7 Ej.8    3.74       175.      -33.       0.       0.       0.       0.    # m.c. ; méandre
+   Ej.8 Ej.9    2.9       140.      -28.       2.5       2.5       3.5       1.5    # Arrivée dans la grande conduite forcée ; Diam =  5 m
+   Ej.9 Ej.10    4.27       80.      -54.       0.       0.       0.       0.    # colm. argile
+   Ej.10 Ej.11    10.2       267.      -27.       2.5       2.5       3.5       1.5  # c.f. ; Diam = 5 m  
+   Ej.11 Ej.12    13.47000       224.      -18.       0.       0.       0.       0.    
+   Ej.12 Dg.16    12.18000       256.      -11.       0.       0.       0.       0.    
+   extend left
+   Dg.16 Ej.14    8.49       200.      -21.       0.       0.       0.       0.    
+   Ej.14 Ej.15    13.82000       81.       15.       0.       0.       0.       0.    
+   Ej.15 Ej.16    13.67000       58.       15.       0.       0.       0.       0.    
+   Ej.16 Ej.17    7.46       78.       17.       0.       0.       0.       0.    
+
+   extend left
+   Ej.17 Ej.18    17.08000       152.      -6.       0.       0.       0.       0.    
+   Ej.18 Ej.19    12.24000       116.      -5.       0.       0.       0.       0.    
+   Ej.19 Ej.20    4.26       104.       32.       0.       0.       0.       0.    
+   Ej.20 Ej.21    16.86000       347.       16.       0.       0.       0.       0.    
+   Ej.21 Ej.22    7.22       0.       28.       0.       0.       0.       0.    
+   Ej.22 Ej.23    17.41000       81.       9.       0.       0.       0.       0.    
+   Ej.23 Ej.24    11.09000       53.       20.       0.       0.       0.       0.    
+   Ej.24 Ej.25    16.25000       48.       20.       0.       0.       0.       0.    
+   Ej.25 Ej.26    8.34       84.       3.       0.       0.       0.       0.    
+   Ej.26 De.30    10.48000       67.       19.       0.       0.       0.       0.    
+
+# Dev = 254.7 m
+
+endcenterline
+
+
+centerline -extend left -title "Puits des 2 Boeufs Di.0_Di.1 Di.10_Di.0"
+
+   date 1978.08.02
+ #  declination -2.4943 degrees
+   team "Josiane Lips"
+   team "Jean-Philippe Faubert"
+   explo-date 1978.08.02
+     #explo-#team "G.S. Vulcain"
+     explo-team "Josiane Lips"
+     explo-team "Jean-Philippe Faubert"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount backcompass backclino right left up down
+
+   Di.0 Di.1 7161.0 7667.0    10.       23.       0.       0.       0.       0.    
+   Di.1 Di.2 7690.0 8055.0    215.       30.       0.       0.       0.       0.    
+   Di.2 Di.3 8055.0 8302.0    350.      -10.       0.       0.       0.       0.    
+   Di.3 Di.4 0.0 800.0    0.      -90.       0.       0.       0.       0.    
+   Di.4 Di.5 8302.0 8608.0    350.       5.       0.       0.       0.       0.    
+   Di.5 Di.6 8608.0 9180.0    20.      -5.       0.       0.       0.       0.    # vire
+   Di.6 Di.7 9180.0 9657.0    65.       42.       0.       0.       0.       0.    
+   Di.7 Di.8 9657.0 9995.0    355.      -18.       0.       0.       0.       0.    
+   Di.8 Di.9 10170.0 10700.0    130.      -70.       0.       0.       0.       0.    # puits
+   Di.9 Di.10 10714.0 11094.0    20.       19.       0.       0.       0.       0.    # méandre
+   Di.10 Dg.0 11094.0 11614.0    355.       5.       0.       0.       0.       0.  # arrivée dans la salle, au spit du raccourci
+   
+# Dev =  
+     
+endcenterline
+ 
+ 
+ centerline -extend left -title "1 visée, c'est quoi ? Dg.0_Dj.10"
+
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino right left up down
+
+   Dg.0 Dj.10    30.       0.      -90.       0.       0.       0.       0.    
+
+endcenterline
+
+ 
+centerline -extend left -title "G. etr. glaise montante El.0_El.1 El.4_El.5"
+
+   date 1977.05.19
+  # declination -2.5143 degrees
+
+  team "Christian Rigaldie"
+  team "Bernard Lips"
+  explo-date 1977.05.19
+    explo-team "Christian Rigaldie"
+    explo-team "Bernard Lips"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   El.0 El.1    7.09       19.       24.       1.       1.       0.15       0.15    # etr. ; h =0.3 m ; l = 2 m
+   El.1 Eb.28    11.01       38.       25.       0.       0.       0.       0.    
+   Eb.28 El.3    11.15       78.       15.       2.5       2.5       1.       1.  # h = 2 m ; l = 5 m  
+   El.3 El.4    10.49       40.       24.       0.       0.       0.       0.    # arrivée d'eau
+   El.4 El.5    10.32       80.       5.       0.       0.       0.       0.    
+
+# Dev = 50.1 m
+
+endcenterline
+
+endsurvey

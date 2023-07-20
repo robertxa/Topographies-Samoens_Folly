@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source B19-tot.th
+source Siphon09-tot.th
 
 # Add config file
 input ../../../../../../config.thc 
@@ -89,8 +89,8 @@ layout my_layout-coupe
 	map-header 0 0 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  
@@ -109,11 +109,6 @@ layout my_layout-coupe
 	endcode  
   
 endlayout
-
- 
   
- #export map -fmt xvi -layout xviexport -o Data/siphons-2003.xvi
- #export map -projection extended -fmt xvi -layout xviexport -o Data/siphons-coupe-2003.xvi
-  
- export map  -projection plan -o Outputs/B19-2020-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/B19-2020-coupe.pdf
+ export map  -projection plan -o Outputs/Siphon09-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/Siphon09-coupe.pdf

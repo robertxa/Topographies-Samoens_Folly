@@ -74,9 +74,9 @@ map MP-B19 -title "B19"
 	SP-B19
 endmap
 
-map MP-senecaliens -title "Galerie des Sénécaliens"
-	SP-Senecaliens
-endmap
+#map MP-senecaliens -title "Galerie des Sénécaliens"
+#	SP-Senecaliens
+#endmap
 
 # map MP-lavoir-haut -title "Réseau du Lavoir"
 # 	SP-brownies1
@@ -473,10 +473,10 @@ endmap
 # endmap
 
 map MP-B19-V11 -title "Réseaux du B19 et du V11"
-	MP-senecaliens
-	break
+	MP-Senecaliens@Senecaliens
+	#break
 	MP-B19
-	preview below MP-senecaliens
+	#preview below MP-senecaliens
 	break
 	#MP-Lavoir@Lavoir [110 -110] above
 	MP-Lavoir@Lavoir
@@ -593,6 +593,8 @@ map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
 	MP-Damocles@GoureToi
 	break
 	MP-gourance
+	break
+	MP-Siphon09@Siphon09
 	break
 	MP-aval-gourance
 	break

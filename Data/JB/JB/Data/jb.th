@@ -69,7 +69,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SP-Gadoue SP-champs-elysees2
 		### Joins dessins Coupe
 
-	## Le B19       
+	## Le B19
 	input Drawing-th2/Plan/B19.th2
 		### Joins dessins Plan
 			join SP-base-racc@Lavoir SP-Excentriques1 
@@ -78,9 +78,13 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SP-B19 SP-Racc5@Lavoir
 			join SP-gadouejonction SP-Racc5@Lavoir
 	input Drawing-th2/Coupe/B19-coupe.th2 
-	input Drawing-th2/Coupe/B19senecaliens-coupe.th2
-		### Joins dessins Coupe
-			join SC-B19c1 SC-B19c2
+	## Les Sénécaliens dans le B19
+	input Data-th/Senecaliens/Senecaliens-tot.th
+		equate Da.58@Senecaliens.Senecaliens Da.58@jb-amonts2
+		join SP-Senecaliens@Senecaliens SP-B19
+		join SC-Senecaliens@Senecaliens SC-B19c1
+
+
 
 	## Le Lavoir	--> A REVOIR ENTIEREMENT POUR LE VERIFIER, SURTOUT LA COUPE DEVELOPPEE
 	#input Data-th/Lavoir/Data/Lavoir.th
@@ -415,6 +419,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SC-balcon3 SC-Gourance2022-1@GoureToi
 
 	## Riviere de la base de la Gourance aux Cinglés
+	## Le siphon 09
+	input Data-th/Siphon09/Siphon09-tot.th
+		equate Kh.37@Siphon09.Siphon09 Kh.37@jb-riv2
+		join SP-Siphon09@Siphon09 SP-gourance5
+		join SC-Siphon09@Siphon09 SC-avalc5
 	input Drawing-th2/Plan/toussaint.th2
 		### Joins dessins Plan
 			####join SP-gourance5 SP-gourance2	#### A REVOIR ????

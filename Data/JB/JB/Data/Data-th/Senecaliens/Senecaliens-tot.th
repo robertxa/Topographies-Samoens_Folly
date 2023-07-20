@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Senecaliens -title "Galerie des Sénécaliens"
+
+    input Data/Senecaliens.th
+
+    # Dessins en plan
+    input Data/Senecaliens.th2
+    # Dessins en coupe
+    input Data/Senecaliens-coupe.th2
+    
+    # Add maps
+    input Senecaliens-maps.th
+
+endsurvey

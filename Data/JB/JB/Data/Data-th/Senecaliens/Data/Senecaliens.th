@@ -1,0 +1,54 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Senecaliens -title "Galerie des Sénécaliens"   
+ 
+ centerline -extend left -title "g. des Sénécaliens 0_0double 21_Da.58"
+   # Topo de la galerie des Sénacaliens  
+  date 2004.07.15
+    team "Stéphane Lips"
+    team "Philippe Sénécal"
+    team "Bernard Lips"
+  explo-date 2004.07.15
+    explo-team "Stéphane Lips"
+    explo-team "Philippe Sénécal"
+    explo-team "Bernard Lips"
+
+   calibrate counter 0 1.000
+   units lenght meters
+   units compass grad
+   units clino grad
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   0 0double 0.0 0.0    0.       100.      0.5      0.5      0.5      0.5    
+   0double 1 67077.0 67534.0    379.       21.      0.5      0.5      0.5      0.5    
+   1 2 67810.0 68216.0    396.       35.      0.5      0.5      0.5      0.5    
+   2 3 68216.0 68415.0    356.       30.      0.5      0.5      0.5      0.5    
+   3 4 68573.0 68843.0    14.       36.      0.5      0.5      0.5      0.5    
+   4 5 68843.0 69326.0    374.       27.      0.5      0.5      0.5      0.5    
+   5 6 69326.0 69809.0    387.       28.      0.2      0.2      0.2       0.    
+   6 7 69809.0 70237.0    365.       33.      0.4      0.4      0.2      0.2    
+   7 8 70237.0 70607.0    13.       41.       1.       1.       2.       1.    
+   8 9 70607.0 71051.0    394.       64.       1.       1.       10.       1.    
+   9 10 71020.0 71430.0    185.       68.       1.       1.       10.       1.    
+   extend right
+   10 11 71430.0 72425.0    178.      -35.       1.       1.       2.       1.    
+   11 12 72425.0 73235.0    134.      -30.       2.       1.       1.       1.    
+   extend left
+   10 13 73235.0 74175.0    346.       57.      0.6      0.6       1.       1.    
+   13 14 74175.0 74717.0    365.       19.      0.4      0.4       1.       1.    
+   14 15 74717.0 75207.0    384.      -6.      0.6      0.6      0.6      0.8    
+   15 16 75207.0 75576.0    357.       40.      0.6      0.6      0.6      0.6    
+   16 17 75576.0 76076.0    3.      -10.      0.4      0.4      0.3      0.3    
+   17 18 76076.0 77013.0    363.       37.      0.4      0.4      0.4      0.4    
+   18 19 77013.0 77751.0    14.      -28.       2.       1.       2.       1.    
+   19 20 0.0 600.0    14.       30.      0.5      0.5       2.       1.    
+   19 21 77751.0 78194.0    265.      -34.       2.       2.      0.4      0.4    
+   21 Da.58 78194.0 78638.0    282.      -50.       0.       0.       0.       0.    
+ endcenterline
+
+ endsurvey  
+

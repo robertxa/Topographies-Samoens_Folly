@@ -65,8 +65,8 @@ map MC-gadoue -title "Rivière de la Gadoue"
 endmap
 
 map MC-B19 -title "B19"
-	SC-B19c2
-	break
+	#SC-B19c2	# Senecaliens
+	#break
 	SC-B19c1
 endmap
 
@@ -310,6 +310,8 @@ endmap
 map MC-B19-V11 -title "Réseaux du B19 et du V11"
 	MC-B19
 	break
+	MC-Senecaliens@Senecaliens
+	break
 	MC-gadoue
 	break
 	MC-lavoir [0 -350] below
@@ -409,6 +411,8 @@ endmap
 
 map MC-aval-800 -title "Le Cheneau et la salle du Chaos"
 	MC-aval-cheneau
+	break
+	MC-Siphon09@Siphon09
 	break
 	MC-laconscience
 endmap

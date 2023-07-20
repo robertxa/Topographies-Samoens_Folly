@@ -1,0 +1,339 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 14655.5669 8238.2406
+##XTHERION## xth_me_area_zoom_to 400
+
+
+
+scrap SP-nuitblanche1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14655.5669 -128.0 0.0 0.0 375.50259926 0.0 m]
+
+line wall
+  2364.5 1680.75
+  2364.5 1680.75 2362.5 1676.75 2360.25 1676.5
+  2358.0 1676.25 2348.5 1676.25 2348.5 1676.25
+  smooth off
+  2348.5 1676.25 2350.5 1675.0 2347.25 1671.75
+  2344.0 1668.5 2341.5 1674.75 2341.25 1670.5
+  smooth off
+endline
+
+point 2363.54 1682.62 station -name Kq.17@jb-riv2
+
+point 2380.5 1675.75 label -text "P15"
+
+point 2362.75 1667.75 label -text "Etr."
+
+point 2373.5 1636.5 label -text "Trémie de la Nuit Blanche"
+
+line wall
+  2323.75 1664.25
+  2323.75 1664.25 2323.25 1667.5 2328.75 1668.0
+  2334.25 1668.5 2341.25 1670.5 2341.25 1670.5
+  smooth off
+endline
+
+line wall
+  2339.5 1689.5
+  2339.5 1689.5 2331.25 1688.25 2328.0 1689.5
+  2324.75 1690.75 2321.25 1690.0 2321.25 1690.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  2321.25 1690.0
+  2321.25 1690.0 2319.0 1677.75 2319.75 1673.75
+  2320.5 1669.75 2323.75 1664.25 2323.75 1664.25
+  smooth off
+endline
+
+line wall -subtype invisible
+  2364.5 1680.75
+  2361.75 1685.25
+endline
+
+line wall -reverse on
+  2339.5 1689.5
+  2339.5 1689.5 2342.5 1682.75 2345.5 1682.75
+  2348.5 1682.75 2345.25 1679.25 2348.25 1679.5
+  2351.25 1679.75 2356.5 1681.25 2357.75 1682.0
+  2359.0 1682.75 2359.25 1684.5 2361.75 1685.25
+  smooth off
+endline
+
+point 2359.68 1678.97 station -name Kq.18@jb-riv2
+
+point 2346.49 1677.72 station -name Kq.19@jb-riv2
+
+point 2322.18 1674.14 station -name Kq.20@jb-riv2
+
+endscrap
+
+
+
+scrap SP-nuitblanche3 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14655.5669 -128.0 0.0 0.0 375.50259926 0.0 m]
+
+point 2473.25 1728.25 label -text "Perte"
+
+point 2430.5 1724.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
+
+line pit
+  2432.0 1710.25
+  2432.0 1710.25 2436.0 1709.5 2436.0 1705.75
+  2436.0 1702.0 2432.75 1700.0 2432.75 1700.0
+  smooth off
+endline
+
+point 2449.75 1723.75 water-flow -orientation 343.7
+
+line wall -subtype invisible
+  2393.75 1718.0
+  2389.75 1719.0
+endline
+
+line wall -subtype invisible
+  2453.0 1722.0
+  2448.75 1720.0
+endline
+
+line wall -subtype invisible
+  2438.0 1719.75
+  2438.0 1719.75 2434.5 1720.25 2435.75 1716.75
+endline
+
+line wall
+  2438.0 1719.75
+  2438.0 1719.75 2438.75 1717.0 2441.0 1717.75
+  2443.25 1718.5 2448.28 1716.52 2448.75 1720.0
+  smooth off
+endline
+
+line wall
+  2453.0 1722.0
+  2454.47 1718.85 2467.25 1723.25 2465.75 1718.25
+  2464.25 1713.25 2443.25 1706.5 2443.25 1706.5
+  smooth off
+endline
+
+line wall
+  2393.75 1718.0
+  2393.75 1718.0 2391.0 1716.25 2393.75 1715.75
+  2396.5 1715.25 2430.25 1707.5 2432.25 1708.25
+  2434.25 1709.0 2436.75 1708.5 2437.75 1710.75
+  2438.75 1713.0 2443.25 1714.0 2441.0 1715.0
+  2438.75 1716.0 2435.75 1716.75 2435.75 1716.75
+  smooth off
+endline
+
+line wall
+  2443.25 1706.5
+  2443.25 1706.5 2438.0 1703.25 2433.25 1703.75
+  2428.5 1704.25 2395.0 1712.0 2391.25 1714.5
+  2387.5 1717.0 2391.25 1718.75 2389.75 1719.0
+  smooth off
+endline
+
+point 2449.87 1714.59 station -name Kq.7a@jb-riv2
+
+point 2391.44 1716.7 station -name Kq.6@jb-riv2
+
+point 2433.02 1705.86 station -name Kq.7@jb-riv2
+
+endscrap
+
+
+
+scrap SP-nuitblanche4 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14655.5669 -128.0 0.0 0.0 375.50259926 0.0 m]
+
+line wall
+  2393.75 1718.0
+  2414.75 1709.25
+endline
+
+line wall
+  2390.25 1730.75
+  2390.25 1730.75 2381.25 1737.0 2381.0 1738.25
+  smooth off
+endline
+
+line wall
+  2419.0 1712.25
+  2419.0 1712.25 2400.25 1721.75 2396.5 1722.0
+  2392.75 1722.25 2377.0 1727.75 2379.25 1728.0
+  2381.5 1728.25 2382.75 1730.0 2384.0 1729.25
+  2385.25 1728.5 2387.75 1727.5 2387.75 1727.5
+  smooth off
+endline
+
+line wall -id l60-2335-1711
+  2378.0 1737.25
+  2378.0 1737.25 2382.25 1734.75 2380.0 1734.25
+  2377.75 1733.75 2374.75 1733.25 2371.5 1731.25
+  2368.25 1729.25 2366.25 1726.75 2361.0 1723.25
+  2355.75 1719.75 2343.5 1711.75 2339.75 1711.0
+  2336.0 1710.25 2333.75 1710.5 2333.75 1712.5
+  2333.75 1714.5 2332.75 1718.5 2332.75 1718.5
+  smooth off
+endline
+
+line wall -id l59-2329-1711 -reverse on
+  2318.5 1706.5
+  2318.5 1706.5 2325.0 1705.75 2326.0 1708.5
+  2327.0 1711.25 2331.0 1709.5 2330.0 1712.0
+  2329.0 1714.5 2329.0 1717.5 2329.0 1717.5
+  smooth off
+endline
+
+area water
+  l69-2340-1705
+  l70-2332-1713
+  l71-2324-1704
+endarea
+
+line label -id l71-2324-1704
+  2343.25 1703.0
+  2325.0 1693.25
+  2323.25 1711.0
+endline
+
+line label -id l70-2332-1713
+  2335.25 1713.5
+  2323.25 1711.0
+endline
+
+line pit -id l69-2340-1705
+  2343.25 1703.0
+  2343.25 1703.0 2336.25 1705.25 2336.5 1708.0
+  2336.75 1710.75 2335.25 1713.5 2335.25 1713.5
+  smooth off
+endline
+
+point 2314.0 1703.25 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
+
+point 2328.75 1728.0 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
+
+point 2419.5 1718.5 continuation
+
+point 2393.75 1727.5 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
+
+point 2377.5 1743.5 continuation -attr Code D -attr Cavite JB -attr Reseau "Réseau de la Nuit Blanche" -text "Passage étroit"
+
+line wall -id l58-2331-1700 -reverse on
+  2389.75 1719.0
+  2389.75 1719.0 2376.75 1728.25 2373.0 1725.25
+  2369.25 1722.25 2365.25 1721.5 2362.0 1718.25
+  2358.75 1715.0 2344.75 1706.75 2342.5 1704.75
+  2340.25 1702.75 2336.0 1700.25 2331.0 1699.0
+  2326.0 1697.75 2325.75 1699.75 2324.0 1701.0
+  2322.25 1702.25 2319.5 1700.75 2319.5 1700.75
+  smooth off
+endline
+
+point 2328.77 1702.57 station -name Kq.4@jb-riv2
+
+point 2340.87 1707.31 station -name Kq.3@jb-riv2
+
+point 2362.17 1721.35 station -name Kq.2@jb-riv2
+
+point 2372.82 1728.37 station -name Kq.1@jb-riv2
+
+point 2382.24 1731.5 station -name Kq.0double@jb-riv2
+
+point 2416.72 1710.09 station -name Kq.5a@jb-riv2
+
+point 2393.48 1719.77 station -name Kq.5@jb-riv2
+
+endscrap
+
+
+
+scrap SP-nuitblanche2 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14655.5669 -128.0 0.0 0.0 375.50259926 0.0 m]
+
+point 2462.94 1717.58 station -name Kq.8@jb-riv2
+
+point 2443.8 1712.31 station -name Kq.9@jb-riv2
+
+point 2424.72 1708.81 station -name Kq.10@jb-riv2
+
+point 2440.25 1692.5 label -text "Cascade"
+
+point 2413.25 1704.5 water-flow -orientation 64.9
+
+point 2381.75 1688.5 water-flow -orientation 64.9
+
+point 2321.5 1660.0 water-flow -orientation 110.9
+
+point 2330.0 1659.0 breakdown-choke -orientation 48.0
+
+line wall -reverse on
+  2462.0 1719.25
+  2462.0 1719.25 2467.25 1722.25 2465.75 1718.25
+  2464.25 1714.25 2443.25 1706.5 2443.25 1706.5
+  smooth off
+endline
+
+line pit
+  2462.0 1719.25
+  2462.0 1719.25 2454.5 1715.0 2451.0 1713.5
+  2447.5 1712.0 2445.25 1709.75 2440.5 1710.25
+  smooth off
+endline
+
+line pit -reverse on
+  2425.5 1704.25
+  2425.5 1704.25 2422.75 1704.25 2423.0 1707.25
+  2423.25 1710.25 2426.5 1713.75 2426.5 1713.75
+  smooth off
+endline
+
+line pit
+  2393.75 1701.25
+  2393.75 1701.25 2390.25 1695.0 2394.25 1694.25
+  2398.25 1693.5 2401.25 1693.5 2401.25 1693.5
+  smooth off
+endline
+
+line pit -reverse on
+  2372.0 1678.75
+  2372.0 1678.75 2368.25 1681.0 2368.5 1684.25
+  2368.75 1687.5 2371.25 1689.75 2371.25 1689.75
+  smooth off
+endline
+
+line wall
+  2462.0 1719.25
+  2462.0 1719.25 2451.5 1714.25 2445.25 1714.0
+  2439.0 1713.75 2436.5 1712.25 2433.0 1712.0
+  2429.5 1711.75 2429.25 1713.75 2423.75 1711.25
+  2418.25 1708.75 2400.75 1701.25 2394.5 1697.75
+  2388.25 1694.25 2372.25 1686.0 2369.75 1685.5
+  2367.25 1685.0 2363.0 1686.75 2357.75 1683.75
+  2352.5 1680.75 2329.0 1661.0 2329.0 1661.0
+  smooth off
+endline
+
+line wall
+  2332.25 1657.5
+  2332.25 1657.5 2349.25 1675.5 2351.5 1675.0
+  2353.75 1674.5 2355.75 1674.0 2356.5 1675.25
+  2357.25 1676.5 2360.5 1681.0 2362.75 1681.0
+  2365.0 1681.0 2367.0 1680.5 2370.75 1681.75
+  2374.5 1683.0 2394.25 1691.0 2397.75 1695.25
+  2401.25 1699.5 2420.5 1705.5 2425.25 1707.0
+  2430.0 1708.5 2440.5 1710.25 2440.5 1710.25
+  smooth off
+endline
+
+point 2396.37 1697.13 station -name Kq.11@jb-riv2
+
+point 2370.9 1683.94 station -name Kq.12@jb-riv2
+
+point 2362.45 1683.4 station -name Kq.16@jb-riv2
+
+point 2355.58 1677.37 station -name Kq.14@jb-riv2
+
+point 2350.74 1677.59 station -name Kq.15@jb-riv2
+
+point 2332.35 1660.21 station -name Kq.15a@jb-riv2
+
+endscrap
+
+

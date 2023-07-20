@@ -1,0 +1,35 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Siphon09 -title "Le Siphon 09"   
+  
+ centerline -extend left -title "Siphon09 xa-0-2009_xa-0-2009do xa-5-2009_Kh.37"
+ # topo vers le Siphon 09
+  date 2009.02.08
+    #declination 0.  degrees
+    team "Xavier Robert"
+    team "David Parrot"
+ 
+  explo-date 2009.02.08   
+    explo-team "Xavier Robert"
+    explo-team "David Parrot"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+   xa-0-2009 xa-0-2009do    0.       0.       0.      0.5      0.5      0.5      0.5    # Siphon 09 à plonger
+   xa-0-2009do xa-1-2009    2.35       170.      -7.      0.5      0.5       0.       0.    
+   xa-0-2009 xa-2-2009    4.15       241.      -7.       1.5       1.      0.5      0.4    
+   xa-2-2009 xa-3-2009    6.64       300.       0.       6.      0.5       0.      0.5    
+   xa-3-2009 xa-4-2009    3.1       225.      -30.       1.5      0.5       1.      0.3    
+   xa-4-2009 xa-5-2009    5.6       300.       0.       1.       0.       0.       1.5    
+   xa-5-2009 Kh.37    4.59       250.      -42.       10.       3.       1.       10.    # Jonction à l'aval
+ endcenterline
+
+ endsurvey  
+

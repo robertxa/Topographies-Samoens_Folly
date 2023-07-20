@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey B19 -title "Gouffre B19"
+
+    input Data/B19.th
+
+    # Dessins en plan
+    input Data/B19.th2
+    # Dessins en coupe
+    input Data/B19-coupe.th2
+    
+    # Add maps
+    input B19-maps.th
+
+endsurvey
