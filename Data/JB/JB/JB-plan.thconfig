@@ -252,9 +252,9 @@ endlayout
 #  select MP-JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MP-JB-plan-tot@Jean-Bernard
-export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2022-plan1000b.pdf -layout my_layout
-#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2021-plan1000_Continuations.pdf -layout my_layout-continuations
-#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2021-plan5000.pdf -layout my_layout
+export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2023-plan1000.pdf -layout my_layout
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2023-plan1000_Continuations.pdf -layout my_layout-continuations
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2023-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
 #export model -fmt esri -o Outputs/3D/JB #-layout my_layout
@@ -264,16 +264,16 @@ export map -proj plan -fmt esri -o Outputs/ESRI #-layout my_layout
 export cave-list -location on -o Outputs/ESRI/Caves.txt
 
 # Export du fichier 3d pour Loch
-export model -o Outputs/3D/jb-Xav-2022.lox
+export model -o Outputs/3D/jb-Xav-2023.lox
 
 # Export des fichiers kml
-export map -fmt kml -layout layout-kml -o Outputs/2D/jb-Xav-2022.kml
-export model -fmt kml -o Outputs/2D/jb_m-Xav-2022.kml -enable all
+export map -fmt kml -layout layout-kml -o Outputs/2D/jb-Xav-2023.kml
+export model -fmt kml -o Outputs/2D/jb_m-Xav-2023.kml -enable all
 
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
 #export database -o Outputs/Lists/DatabaseJB-2022.sql
-export continuation-list -o Outputs/Lists/Continuations-JB-plan-2022.html
-export survey-list -location on -o Outputs/Lists/Topographies_2022.html
-#export cave-list -location on -o Outputs/Lists/Cavites_2022.html
+export continuation-list -o Outputs/Lists/Continuations-JB-plan-2023.html
+export survey-list -location on -o Outputs/Lists/Topographies_2023.html
+#export cave-list -location on -o Outputs/Lists/Cavites_2023.html

@@ -181,10 +181,10 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   symbol-hide line survey
 	#debug station-names
-  debug scrap-names
+  #debug scrap-names
 	color map-fg altitude
 	symbol-hide point rope
-  
+
  # origin 12 22 0 m
  # origin-label 100 K
 
@@ -231,7 +231,7 @@ endlayout
 # Export du fichier pdf de la coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MC-JB-coupe-tot@Jean-Bernard
- export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2022-coupe.pdf
- #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2022-coupe-continuations.pdf
- export continuation-list -o Outputs/Lists/Continuations-coupe2022.html
- #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2022-coupe-STATIONS.pdf
+ export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2023-coupe.pdf
+ #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2023-coupe-continuations.pdf
+ export continuation-list -o Outputs/Lists/Continuations-coupe2023.html
+ #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2023-coupe-STATIONS.pdf
