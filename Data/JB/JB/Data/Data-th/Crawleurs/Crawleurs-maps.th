@@ -4,16 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey P11 -title "Le P11"
+map MP-Crawleur -title "Méandre des Crawleurs"
+	SP-Crawleurs
+	break
+	SP-Crawleuraval   
+endmap
 
-    input Data/P11.th
 
-    # Dessins en plan
-    input Data/P11.th2
-    # Dessins en coupe
-    input Data/P11-coupe.th2
-    
-    # Add maps
-    input p11-maps.th
-
-endsurvey
+#map MC-P11 -title "Méandre des Crawleurs"
+#	
+#endmap
+   

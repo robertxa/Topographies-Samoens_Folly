@@ -9,6 +9,8 @@ encoding  utf-8
  map MP-solitaire-tot -title "Réseau du Solitaire"
  	MP-Pixa@Pixa
 	break
+	MP-Lafayette@Lafayette
+	break
 	MP-rubis@Rubis
  	break
  	preview below MP-rubis@Rubis
@@ -36,6 +38,8 @@ encoding  utf-8
  	MC-Pixa@Pixa
  	break
 	MC-Rubis@Rubis	[-50 50 m] below
+	break
+	MC-Lafayette@Lafayette	[-50 50 m] below
  	break
 	MC-oeufs@Oeufs
 	break
@@ -52,11 +56,15 @@ map MC-solitaire-JB -title "Réseau du Solitaire"
  	MC-Pixa@Pixa 	[-200 200 m] below
  	break
 	MC-Rubis@Rubis	[-10 50 m] below
+	break
+	MC-Lafayette@Lafayette	[-10 50 m] below
  	break
 	MC-oeufs@Oeufs	#[-50 50 m] below
 	break
 	MC-Solitarises@Solitarises 	[-200 200 m] below
  	break
+	MC-Poncho@Poncho 	[-200 200 m] below
+	break
 	MC-solitaire@Solitaire 	[-200 200 m] below
  	break
  	MC-PuitsParalleles@PuitsParalleles 	[-200 200 m] below

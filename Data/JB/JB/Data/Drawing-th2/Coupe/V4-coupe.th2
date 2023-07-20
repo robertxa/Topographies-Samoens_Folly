@@ -781,11 +781,13 @@ line wall
   3900.5 1367.0 3917.5 1368.0 3925.5 1370.0
   3933.5 1372.0 3948.5 1369.5 3952.0 1376.0
   3955.5 1382.5 3951.5 1389.0 3958.5 1396.5
+  smooth off
 endline
 
 line wall
   3958.5 1396.5
   3965.5 1404.0 3966.5 1412.0 3976.0 1416.5
+  smooth off
 endline
 
 area u:galerie
@@ -803,6 +805,7 @@ endline
 line wall
   3976.0 1416.5
   3985.5 1421.0 3992.0 1424.0 3998.0 1424.5
+  smooth off
 endline
 
 line wall
@@ -1377,6 +1380,10 @@ line wall
   3589.0 1651.5 3593.0 1652.5 3593.0 1652.5
   smooth off
 endline
+
+point 3548.7999999999993 1625.99 map-connection
+
+point 4020.0 1356.5 map-connection
 
 line wall -subtype presumed
   3920.0 1519.0

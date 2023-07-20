@@ -312,7 +312,7 @@ map MC-B19-V11 -title "Réseaux du B19 et du V11"
 	break
 	MC-gadoue
 	break
-	MC-lavoir
+	MC-lavoir [0 -350] below
 	break
 	MC-V11
 	break
@@ -326,6 +326,8 @@ map MC-B19-V11 -title "Réseaux du B19 et du V11"
 endmap
 
 map MC-Branlots-J14 -title "Réseaux des Branlots et du J14"
+	MC-AspiroSouffle@AspiroSouffle
+	break
 	MC-echo	# Erreur dans le dessin, il est à revoir
 	break
 	MC-aven14J
@@ -360,9 +362,13 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MC-V4
 	break
-	MC-V5
+	MC-V15@V15 [-150 0] below
+	break
+	MC-V5 [0 100] below
 	break
 	MC-Ete-Indien@Ete-Indien
+	break
+	MC-Stalactites@Stalactites
 endmap
 
 ############## A REVOIR

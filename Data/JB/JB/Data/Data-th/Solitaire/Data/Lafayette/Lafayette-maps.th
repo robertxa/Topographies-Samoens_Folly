@@ -4,16 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey P11 -title "Le P11"
+#### Plan
 
-    input Data/P11.th
+map MP-Lafayette -title "Galerie Lafayette"
+	SP-Lafayette-1 
+endmap
 
-    # Dessins en plan
-    input Data/P11.th2
-    # Dessins en coupe
-    input Data/P11-coupe.th2
-    
-    # Add maps
-    input p11-maps.th
+########## Coupe
 
-endsurvey
+map MC-Lafayette -title "Réseau des Puits Paralleles"
+	SC-Lafayette-1
+endmap
+

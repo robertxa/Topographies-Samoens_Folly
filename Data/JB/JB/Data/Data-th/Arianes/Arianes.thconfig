@@ -5,10 +5,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
- #source Data/dino.th
- #source Data/dino.th2
- #source Data/dino-coupe.th2
- source dino-tot.th
+ source arianes-tot.th
  
  # Add config file
 input ../../../../../../config.thc 
@@ -25,7 +22,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
  
-   doc-title "Galerie du Petit Dino"
+   doc-title "Galerie du Petit Arianes"
    doc-author "Xavier Robert"
    cs UTM32
    base-scale 1 1000
@@ -37,7 +34,7 @@ layout my_layout
   #color map-fg altitude
   transparency on
   opacity 75
-  map-comment "Galerie du Petit Dino, plan, Projection UTM32, Samoëns, 74, France"
+  map-comment "Galerie du Petit Arianes, plan, Projection UTM32, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
@@ -75,7 +72,7 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-   doc-title "G. du Petit Dino"
+   doc-title "G. du Petit Arianes"
    doc-author "Xavier Robert"
    cs UTM32
    base-scale 1 500
@@ -86,7 +83,7 @@ layout my_layout-coupe
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  map-comment "Galerie du Petit Dino, coupe développée, Samoëns, 74, France"
+  map-comment "Galerie du Petit Arianes, coupe développée, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
@@ -117,10 +114,10 @@ endlayout
 
  
   
- export map -fmt xvi -layout xviexport -o Data/dino-map2014.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Data/dino-coupe2014.xvi
+ #export map -fmt xvi -layout xviexport -o Data/Arianes-map.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/Arianes-coupe.xvi
   
- export map -o Outputs/dino-plan2014.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/dino-coupe2014.pdf
- export model -o Outputs/dino.lox
+ export map -o Outputs/Arianes-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/Arianes-coupe.pdf
+ export model -o Outputs/Arianes.lox
  

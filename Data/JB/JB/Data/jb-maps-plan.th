@@ -478,6 +478,7 @@ map MP-B19-V11 -title "Réseaux du B19 et du V11"
 	MP-B19
 	preview below MP-senecaliens
 	break
+	#MP-Lavoir@Lavoir [110 -110] above
 	MP-Lavoir@Lavoir
 	#break
 	#MP-lavoir-test
@@ -640,9 +641,9 @@ endmap
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
 map MP-JB-plan-tot -title "Gouffre Jean-Bernard"
-	MP-C37-Riviera
-	break
 	MP-B22-B21
+	break
+	MP-C37-Riviera
 	break
 	MP-B19-V11
 	break

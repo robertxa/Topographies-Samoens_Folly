@@ -86,8 +86,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	#input Data-th/Lavoir/Data/Lavoir.th
 	input Data-th/Lavoir/Lavoir-tot.th
 		### Equates data
-			equate  2012-xa-0@Lavoir Dg.1@jb-amonts2
-    		equate  2012-xa-33@Lavoir Ca.40@jb-amonts2
+			equate  2012-xa-0@Lavoir.Lavoir Dg.1@jb-amonts2
+    		equate  2012-xa-33@Lavoir.Lavoir Ca.40@jb-amonts2
 			#equate Da.81@jb-amonts2.Lavoir	Da.81@jb-amonts2
 	#input Drawing-th2/Plan/Lavoir.th2
 	#input Drawing-th2/Plan/Lavoir-boeuf.th2
@@ -407,7 +407,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			equate Kg.9@Damocles.GoureToi Kg.9@jb-riv	# Si dans fichier Damocles2010.th --> A faire !!!
 			# Plafonds de la Gourance
 			equate  2014-SL-35@GoureToiDeLa.GoureToi Kh.46@jb-riv2    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
-			equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
+			#equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
 		### Joins dessins Plan
 		### Joins dessins Coupe
 			join SC-balconc1 SC-GourecoupeSteph3@GoureToi
