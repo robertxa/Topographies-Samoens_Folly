@@ -14,12 +14,6 @@ survey Solitaire -title "Réseau du Solitaire"
 	# Données topos Solitaire
 	input Data/Solitaire/Solitaire-tot.th
 
-	# Puits du Poncho
-	input Data/Poncho/Poncho-tot.th
-		 equate 13@Poncho.Poncho 2019-FD-40@solitaire.Solitaire
-		 #join @Poncho @Solitaire
-		 #join @Poncho @Solitaire
-
 	# Puits Paralleles
 	input Data/PuitsParalleles/PuitsParalleles-tot.th #puitsparalleles.th
 		#equate 1@puitsparalleles 2019-FD-65@solitaire
@@ -47,6 +41,14 @@ survey Solitaire -title "Réseau du Solitaire"
 		equate 25@rubis.Rubis 13@solitaire2020a.Oeufs
 		join SP-Rubis-1@Rubis SP-Sol2019d-1@Solitaire
 	
+
+	# Galerie Lafayette 
+	input Data/Lafayette/Lafayette-tot.th #221112-jb-oeufs1.th
+		equate 9@lafayette.Lafayette 43@rubis.Rubis
+		join SP-Rubis-2@Rubis SP-Lafayette-1@Lafayette
+		join SC-Rubis-2@Rubis SC-Lafayette-1@Lafayette
+
+
 	# 2017
 	#input th2/solitaire-plan.th2
 	#input th2/solitaire-plan2017.th2
