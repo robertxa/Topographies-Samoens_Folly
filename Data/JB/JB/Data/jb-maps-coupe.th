@@ -212,9 +212,9 @@ map MC-bivouac-500 -title "Le bivouac -500"
 	SC-biv500c3
 endmap
 
-map MC-siphon69 -title "Siphon 69"
-	SC-siphon69c
-endmap
+#map MC-siphon69 -title "Siphon 69"
+#	SC-siphon69c
+#endmap
 
 map MC-gourance -title "La Gourance"      
 	#SC-balconc1
@@ -370,7 +370,7 @@ map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"
 	break
 	MC-P11@P11
 	break
-	MC-siphon69
+	MC-Siphon69@Siphon69
 	break
 	MC-plafond-Gourance@GoureToi
 	break
@@ -492,7 +492,7 @@ map MC-Aval -title "V4-Siphons"
 	#break
 	#MC-P11
 	break
-	MC-siphon69
+	MC-Siphon69@Siphon69
 	#break
 	#MC-plafond-Gourance
 	break

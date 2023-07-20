@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Siphon69 -title "Siphon 09"
+
+    input Data/Siphon69.th
+
+    # Dessins en plan
+    input Data/Siphon69.th2
+    # Dessins en coupe
+    input Data/Siphon69-coupe.th2
+    
+    # Add maps
+    input Siphon69-maps.th
+
+endsurvey

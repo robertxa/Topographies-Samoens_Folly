@@ -384,6 +384,20 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SC-400c1 SC-biv500c4
 	## Le Bivouac -500
 	input Drawing-th2/Coupe/aval500.th2
+		# join 
+
+	## Le Siphon 69
+	input Data-th/Siphon69/Siphon69-tot
+		equate Ke.31@Siphon69.Siphon69 Ke.31@jb-riv
+		equate Ke.25@Siphon69.Siphon69 Ke.25@jb-riv	# arrivée fossiles de la Gourance
+		join SP-siphon69@Siphon69 SP-bivouac500c
+		join SC-siphon69@Siphon69 SC-siphon69c2
+	
+	## Etroiture de la 3ème
+	#input Data-th/Etr3eme/Etr3eme-tot.th
+		equate Ke.29@Siphon69.Siphon69 Ke.29@jb-riv2	# Etroiture de la 3eme
+
+
 
 	# Entre le bivouac -500 et la Gourance
 	# Galerie du P11

@@ -321,8 +321,8 @@ map MP-siphon69 -title "Siphon 69"
 	SP-Riv6
 	break
 	SP-riv-7
-	break
-	SP-siphon69
+	#break
+	#SP-siphon69
 endmap
 
 map MP-gourance -title "La Gourance"      
@@ -481,6 +481,8 @@ map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
 	MP-bivouac-500
 	break
 	MP-siphon69
+	break
+	MP-Siphon69@Siphon69
 	break
 	MP-plafond-Gourance@GoureToi	[-60 60 m] above
 	#MP-plafond-Gourance@GoureToi	[-60 60 m] below
