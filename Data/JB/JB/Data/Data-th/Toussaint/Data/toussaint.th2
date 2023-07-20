@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap SP-gourance5 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-gourance5 -projection plan -station-names "" "@Toussaint" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 3318.75 2538.25 label -text "Puits du Balcon"
 
@@ -83,6 +83,7 @@ line wall
   3401.5 2280.0 3431.25 2343.5 3431.25 2346.5
   3431.25 2349.5 3431.25 2415.75 3433.75 2418.25
   3436.25 2420.75 3437.25 2428.25 3440.0 2426.5
+  smooth off
 endline
 
 line wall
@@ -112,226 +113,51 @@ line wall
   smooth off
 endline
 
-point 3258.35 2242.16 station -name Kh.26@jb-riv2
+point 3258.35 2242.16 station -name Kh.26
 
-point 3270.05 2228.98 station -name Kh.27@jb-riv2
+point 3270.05 2228.98 station -name Kh.27
 
-point 3277.88 2225.03 station -name Kh.28@jb-riv2
+point 3277.88 2225.03 station -name Kh.28
 
-point 3280.01 2218.87 station -name Kh.29@jb-riv2
+point 3280.01 2218.87 station -name Kh.29
 
-point 3294.97 2231.33 station -name Kh.30@jb-riv2
+point 3294.97 2231.33 station -name Kh.30
 
-point 3311.63 2235.67 station -name Kh.31@jb-riv2
+point 3311.63 2235.67 station -name Kh.31
 
-point 3312.17 2241.55 station -name Kh.32@jb-riv2
+point 3312.17 2241.55 station -name Kh.32
 
-point 3345.4 2247.48 station -name Kh.33@jb-riv2
+point 3345.4 2247.48 station -name Kh.33
 
-point 3354.42 2245.19 station -name Kh.34@jb-riv2
+point 3354.42 2245.19 station -name Kh.34
 
-point 3396.13 2276.74 station -name Kh.35@jb-riv2
+point 3396.13 2276.74 station -name Kh.35
 
-point 3426.05 2346.57 station -name Kh.36@jb-riv2
+point 3426.05 2346.57 station -name Kh.36
 
-point 3430.76 2425.91 station -name Kh.37@jb-riv2
+point 3430.76 2425.91 station -name Kh.37
 
-point 3424.65 2438.77 station -name Kh.38@jb-riv2
+point 3424.65 2438.77 station -name Kh.38
 
-point 3420.14 2458.6 station -name Kh.39@jb-riv2
+point 3420.14 2458.6 station -name Kh.39
 
-point 3393.96 2518.52 station -name Kh.40@jb-riv2
+point 3393.96 2518.52 station -name Kh.40
 
-point 3375.77 2537.75 station -name Kh.42@jb-riv2
+point 3375.77 2537.75 station -name Kh.42
 
-point 3384.89 2538.79 station -name Kh.43@jb-riv2
+point 3384.89 2538.79 station -name Kh.43
 
-point 3385.25 2568.2 station -name Kh.44@jb-riv2
+point 3385.25 2568.2 station -name Kh.44
 
-point 3389.52 2586.25 station -name Kh.45@jb-riv2
+point 3389.52 2586.25 station -name Kh.45
 
-point 3392.37 2593.88 station -name Kh.46@jb-riv2
+point 3392.37 2593.88 station -name Kh.46
 
 endscrap
 
 
 
-# scrap SP-Siphon09 -projection plan -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
-
-# line wall
-#   3512.0 2407.25
-#   3512.0 2407.25 3512.0 2421.75 3507.5 2422.5
-#   altitude .
-#   3503.0 2423.25 3496.25 2414.75 3491.25 2417.5
-#   3486.25 2420.25 3474.0 2430.75 3469.5 2428.5
-#   3465.0 2426.25 3466.25 2419.25 3461.75 2422.0
-#   3457.25 2424.75 3443.5 2436.75 3440.0 2434.75
-# endline
-
-# line wall
-#   3440.0 2426.5
-#   3442.75 2424.75 3455.25 2415.0 3458.25 2413.75
-#   3461.25 2412.5 3462.75 2417.75 3465.25 2417.0
-#   3467.75 2416.25 3467.5 2423.5 3471.0 2421.75
-#   3474.5 2420.0 3484.25 2411.75 3490.25 2409.25
-#   3496.25 2406.75 3504.0 2413.25 3504.5 2411.75
-#   3505.0 2410.25 3506.25 2405.5 3506.25 2405.5
-#   smooth off
-# endline
-
-# point 3507.96 2410.55 station -name xa-1-2009@jb-riv2
-
-# point 3506.62 2419.63 station -name xa-0-2009do@jb-riv2
-
-# point 3492.22 2412.17 station -name xa-2-2009@jb-riv2
-
-# point 3469.96 2425.87 station -name xa-3-2009@jb-riv2
-
-# point 3462.28 2418.6 station -name xa-4-2009@jb-riv2
-
-# point 3443.5 2430.15 station -name xa-5-2009@jb-riv2
-
-# line gradient
-#   3501.5 2415.75
-#   3495.5 2413.5
-# endline
-
-# line gradient
-#   3468.75 2424.25
-#   3460.0 2419.25
-# endline
-
-# line contour
-#   3469.0 2415.75
-#   3469.0 2415.75 3466.5 2417.25 3466.0 2420.75
-#   3465.5 2424.25 3466.0 2428.5 3466.0 2428.5
-#   smooth off
-# endline
-
-# line contour
-#   3465.25 2414.0
-#   3465.25 2414.0 3461.81 2415.2 3462.28 2418.6
-#   3462.75 2422.0 3463.25 2427.5 3463.25 2427.5
-#   smooth off
-# endline
-
-# point 3515.5 2389.25 continuation -attr Code S -attr Cavite JB -attr Reseau "Siphon 69" -text "Siphon à plonger, arrivée du Collecteur, eau claire"
-
-# point 3580.0 2376.0 label -orientation 36.4 -text "Arrivée du Collecteur"
-
-# point 3536.75 2413.25 label -text "Siphon 09"
-
-# point 3685.0 2249.75 water-flow -orientation 317.6
-
-# point 3640.25 2294.75 continuation
-
-# point 3581.5 2351.0 continuation
-
-# point 3548.25 2370.75 water-flow -orientation 317.6
-
-# point 3608.75 2329.0 water-flow -orientation 317.6
-
-# endscrap
-
-# point 3511.75 2401.5 water-flow -orientation 338.2
-
-# area water
-#   l223-3483-2425
-#   l168-3481-2427
-#   l224-3476-2409
-#   l167-3493-2415
-# endarea
-
-# area water
-#   l225-3453-2431
-#   l170-3446-2432
-#   l226-3448-2417
-#   l169-3458-2423
-# endarea
-
-# area sump
-#   l166-3510-2407
-#   l227-3515-2410
-#   l165-3514-2414
-#   l228-3504-2407
-# endarea
-
-# line label -id l228-3504-2407
-#   3503.25 2408.75
-#   3503.75 2404.5
-# endline
-
-# line label -id l227-3515-2410
-#   3516.0 2408.5
-#   3513.25 2414.25
-# endline
-
-# line label -id l226-3448-2417
-#   3441.0 2423.0
-#   3441.0 2423.0 3455.0 2410.0 3457.75 2409.75
-#   3460.5 2409.5 3461.75 2411.0 3461.75 2411.0
-#   smooth off
-# endline
-
-# line label -id l225-3453-2431
-#   3458.75 2427.0
-#   3448.75 2433.25
-# endline
-
-# line label -id l224-3476-2409
-#   3472.5 2417.5
-#   3472.5 2417.5 3475.0 2402.5 3487.25 2406.5
-#   smooth off
-# endline
-
-# line label -id l223-3483-2425
-#   3491.25 2417.5
-#   3480.5 2426.75
-# endline
-
-# line label -id l167-3493-2415
-#   3487.25 2406.5
-#   3487.25 2406.5 3493.0 2410.5 3492.25 2413.75
-#   3491.5 2417.0 3491.25 2417.5 3491.25 2417.5
-#   smooth off
-# endline
-
-# line label -id l166-3510-2407
-#   3503.75 2404.5
-#   3516.0 2408.5
-# endline
-
-# line label -id l165-3514-2414 -reverse on
-#   3503.25 2408.75
-#   3503.25 2408.75 3503.75 2414.25 3506.25 2414.75
-#   3508.75 2415.25 3513.25 2414.25 3513.25 2414.25
-#   smooth off
-# endline
-
-# line label -id l168-3481-2427
-#   3472.5 2417.5
-#   3472.5 2417.5 3470.0 2422.25 3473.0 2424.25
-#   3476.0 2426.25 3480.5 2426.75 3480.5 2426.75
-#   smooth off
-# endline
-
-# line label -id l169-3458-2423
-#   3461.75 2411.0
-#   3461.75 2411.0 3457.75 2416.0 3457.75 2419.0
-#   3457.75 2422.0 3458.75 2427.0 3458.75 2427.0
-#   smooth off
-# endline
-
-# line label -id l170-3446-2432
-#   3441.0 2423.0
-#   3441.0 2423.0 3439.75 2427.0 3441.75 2428.5
-#   3443.75 2430.0 3448.75 2433.25 3448.75 2433.25
-#   smooth off
-# endline
-
-
-
-scrap SP-riv-10 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-riv-10 -projection plan -station-names "" "@Toussaint" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 area water
   l270-2874-2175
@@ -589,121 +415,121 @@ line wall
   smooth off
 endline
 
-point 2806.4 2131.38 station -name Kk.63@jb-riv2
+point 2806.4 2131.38 station -name Kk.63
 
-point 2816.84 2182.26 station -name Kk.64@jb-riv2
+point 2816.84 2182.26 station -name Kk.64
 
-point 2825.1 2193.39 station -name Kk.65@jb-riv2
+point 2825.1 2193.39 station -name Kk.65
 
-point 2821.51 2204.2 station -name Kk.67@jb-riv2
+point 2821.51 2204.2 station -name Kk.67
 
-point 2828.22 2193.21 station -name Kk.68@jb-riv2
+point 2828.22 2193.21 station -name Kk.68
 
-point 2853.21 2190.32 station -name Kk.69@jb-riv2
+point 2853.21 2190.32 station -name Kk.69
 
-point 2859.66 2183.25 station -name Kj.8@jb-riv2
+point 2859.66 2183.25 station -name Kj.8
 
-point 2870.74 2179.3 station -name Kj.7@jb-riv2
+point 2870.74 2179.3 station -name Kj.7
 
-point 2881.9 2172.44 station -name Kj.6@jb-riv2
+point 2881.9 2172.44 station -name Kj.6
 
-point 2901.51 2170.18 station -name Kj.5@jb-riv2
+point 2901.51 2170.18 station -name Kj.5
 
-point 2909.18 2152.47 station -name Kj.4@jb-riv2
+point 2909.18 2152.47 station -name Kj.4
 
-point 2907.39 2147.15 station -name Kj.3@jb-riv2
+point 2907.39 2147.15 station -name Kj.3
 
-point 2908.02 2136.52 station -name Kj.2@jb-riv2
+point 2908.02 2136.52 station -name Kj.2
 
-point 2922.71 2124.8 station -name Kj.1@jb-riv2
+point 2922.71 2124.8 station -name Kj.1
 
-point 2939.26 2128.74 station -name Ki.17@jb-riv2
+point 2939.26 2128.74 station -name Ki.17
 
-point 2950.93 2144.46 station -name Ki.16@jb-riv2
+point 2950.93 2144.46 station -name Ki.16
 
-point 2979.16 2151.19 station -name Ki.15@jb-riv2
+point 2979.16 2151.19 station -name Ki.15
 
-point 2992.51 2154.37 station -name Ki.14@jb-riv2
+point 2992.51 2154.37 station -name Ki.14
 
-point 3008.55 2155.04 station -name Ki.13@jb-riv2
+point 3008.55 2155.04 station -name Ki.13
 
-point 3013.15 2160.23 station -name Ki.12@jb-riv2
+point 3013.15 2160.23 station -name Ki.12
 
-point 3020.65 2159.49 station -name Ki.11@jb-riv2
+point 3020.65 2159.49 station -name Ki.11
 
-point 3033.1 2162.46 station -name Ki.10@jb-riv2
+point 3033.1 2162.46 station -name Ki.10
 
-point 3041.57 2197.48 station -name Ki.9@jb-riv2
+point 3041.57 2197.48 station -name Ki.9
 
-point 3038.04 2212.27 station -name Ki.8@jb-riv2
+point 3038.04 2212.27 station -name Ki.8
 
-point 3037.08 2228.48 station -name Ki.7@jb-riv2
+point 3037.08 2228.48 station -name Ki.7
 
-point 3044.53 2240.6 station -name Ki.6@jb-riv2
+point 3044.53 2240.6 station -name Ki.6
 
-point 3049.93 2259.94 station -name Ki.5@jb-riv2
+point 3049.93 2259.94 station -name Ki.5
 
 point 3158.5 2236.0 rope
 
 point 3080.5 2242.5 rope
 
-point 3074.54 2256.22 station -name Ki.4@jb-riv2
+point 3074.54 2256.22 station -name Ki.4
 
-point 3082.09 2267.58 station -name Ki.3@jb-riv2
+point 3082.09 2267.58 station -name Ki.3
 
-point 3119.32 2273.08 station -name Ki.2@jb-riv2
+point 3119.32 2273.08 station -name Ki.2
 
-point 3132.74 2289.3 station -name Ki.1@jb-riv2
+point 3132.74 2289.3 station -name Ki.1
 
-point 3131.82 2256.25 station -name Kh.16@jb-riv2
+point 3131.82 2256.25 station -name Kh.16
 
-point 3144.02 2253.96 station -name Kh.17@jb-riv2
+point 3144.02 2253.96 station -name Kh.17
 
-point 3160.17 2258.72 station -name Kh.18@jb-riv2
+point 3160.17 2258.72 station -name Kh.18
 
-point 3175.36 2251.05 station -name Kh.19@jb-riv2
+point 3175.36 2251.05 station -name Kh.19
 
-point 3190.48 2253.25 station -name Kh.20@jb-riv2
+point 3190.48 2253.25 station -name Kh.20
 
-point 3195.26 2260.59 station -name Kh.21@jb-riv2
+point 3195.26 2260.59 station -name Kh.21
 
-point 3207.55 2258.29 station -name Kh.22@jb-riv2
+point 3207.55 2258.29 station -name Kh.22
 
-point 3215.41 2258.82 station -name Kh.23@jb-riv2
+point 3215.41 2258.82 station -name Kh.23
 
-point 3230.44 2235.33 station -name Kh.24@jb-riv2
+point 3230.44 2235.33 station -name Kh.24
 
-point 3234.72 2247.35 station -name Kh.25@jb-riv2
+point 3234.72 2247.35 station -name Kh.25
 
 endscrap
 
 
 
-scrap SP-riv-11 -projection plan -author 2010 "Xavier Robert" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-riv-11 -projection plan -station-names "" "@Toussaint" -author 2010 "Xavier Robert" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 2368.98 1908.84 station -name Kk.17@jb-riv2
+point 2368.98 1908.84 station -name Kk.17
 
-point 2379.59 1910.41 station -name Kk.18@jb-riv2
+point 2379.59 1910.41 station -name Kk.18
 
-point 2390.06 1918.71 station -name Kk.19@jb-riv2
+point 2390.06 1918.71 station -name Kk.19
 
-point 2402.32 1926.8 station -name Kk.20@jb-riv2
+point 2402.32 1926.8 station -name Kk.20
 
-point 2421.86 1935.25 station -name Kk.21@jb-riv2
+point 2421.86 1935.25 station -name Kk.21
 
-point 2429.64 1950.81 station -name Kk.22@jb-riv2
+point 2429.64 1950.81 station -name Kk.22
 
-point 2436.93 1954.27 station -name Kk.23@jb-riv2
+point 2436.93 1954.27 station -name Kk.23
 
-point 2440.85 1965.27 station -name Kk.24@jb-riv2
+point 2440.85 1965.27 station -name Kk.24
 
-point 2436.55 1973.22 station -name Kk.25@jb-riv2
+point 2436.55 1973.22 station -name Kk.25
 
-point 2446.76 1971.13 station -name Kk.26@jb-riv2
+point 2446.76 1971.13 station -name Kk.26
 
-point 2467.13 1974.14 station -name Kk.27@jb-riv2
+point 2467.13 1974.14 station -name Kk.27
 
-point 2476.22 1984.37 station -name Kk.28@jb-riv2
+point 2476.22 1984.37 station -name Kk.28
 
 point 2375.25 1929.0 label -text "P7"
 
@@ -906,73 +732,75 @@ line wall
   smooth off
 endline
 
-point 2493.19 1980.89 station -name Kk.29@jb-riv2
+point 2493.19 1980.89 station -name Kk.29
 
-point 2498.01 1987.38 station -name Kk.30@jb-riv2
+point 2498.01 1987.38 station -name Kk.30
 
-point 2507.21 1987.12 station -name Kk.31@jb-riv2
+point 2507.21 1987.12 station -name Kk.31
 
-point 2521.41 1993.27 station -name Kk.32@jb-riv2
+point 2521.41 1993.27 station -name Kk.32
 
-point 2533.18 2012.4 station -name Kk.33@jb-riv2
+point 2533.18 2012.4 station -name Kk.33
 
-point 2543.13 2014.59 station -name Kk.34@jb-riv2
+point 2543.13 2014.59 station -name Kk.34
 
-point 2551.17 2010.57 station -name Kk.35@jb-riv2
+point 2551.17 2010.57 station -name Kk.35
 
-point 2561.75 2014.09 station -name Kk.36@jb-riv2
+point 2561.75 2014.09 station -name Kk.36
 
-point 2582.09 2026.02 station -name Kk.37@jb-riv2
+point 2582.09 2026.02 station -name Kk.37
 
-point 2595.75 2038.07 station -name Kk.38@jb-riv2
+point 2595.75 2038.07 station -name Kk.38
 
-point 2610.1 2042.85 station -name Kk.39@jb-riv2
+point 2610.1 2042.85 station -name Kk.39
 
-point 2612.18 2052.97 station -name Kk.40@jb-riv2
+point 2612.18 2052.97 station -name Kk.40
 
-point 2622.79 2043.55 station -name Kk.41@jb-riv2
+point 2622.79 2043.55 station -name Kk.41
 
-point 2644.07 2035.97 station -name Kk.42@jb-riv2
+point 2644.07 2035.97 station -name Kk.42
 
-point 2659.5 2036.35 station -name Kk.43@jb-riv2
+point 2659.5 2036.35 station -name Kk.43
 
-point 2664.09 2022.58 station -name Kk.44@jb-riv2
+point 2664.09 2022.58 station -name Kk.44
 
-point 2668.24 2030.2 station -name Kk.45@jb-riv2
+point 2668.24 2030.2 station -name Kk.45
 
-point 2680.14 2028.82 station -name Kk.46@jb-riv2
+point 2680.14 2028.82 station -name Kk.46
 
-point 2685.62 2023.6 station -name Kk.47@jb-riv2
+point 2685.62 2023.6 station -name Kk.47
 
-point 2695.26 2024.34 station -name Kk.48@jb-riv2
+point 2695.26 2024.34 station -name Kk.48
 
-point 2690.19 2011.53 station -name Kk.49@jb-riv2
+point 2690.19 2011.53 station -name Kk.49
 
-point 2700.1 2013.35 station -name Kk.50@jb-riv2
+point 2700.1 2013.35 station -name Kk.50
 
-point 2716.8 2009.01 station -name Kk.51@jb-riv2
+point 2716.8 2009.01 station -name Kk.51
 
-point 2725.46 2013.12 station -name Kk.52@jb-riv2
+point 2725.46 2013.12 station -name Kk.52
 
-point 2732.24 2006.67 station -name Kk.53@jb-riv2
+point 2732.24 2006.67 station -name Kk.53
 
-point 2734.24 1993.15 station -name Kk.54@jb-riv2
+point 2734.24 1993.15 station -name Kk.54
 
-point 2743.05 1997.52 station -name Kk.55@jb-riv2
+point 2743.05 1997.52 station -name Kk.55
 
-point 2753.38 1989.85 station -name Kk.56@jb-riv2
+point 2753.38 1989.85 station -name Kk.56
 
-point 2768.21 1997.87 station -name Kk.57@jb-riv2
+point 2768.21 1997.87 station -name Kk.57
 
-point 2764.99 2007.55 station -name Kk.58@jb-riv2
+point 2764.99 2007.55 station -name Kk.58
 
-point 2769.61 2026.66 station -name Kk.59@jb-riv2
+point 2769.61 2026.66 station -name Kk.59
 
-point 2775.63 2055.96 station -name Kk.60@jb-riv2
+point 2775.63 2055.96 station -name Kk.60
 
-point 2792.57 2069.4 station -name Kk.61@jb-riv2
+point 2792.57 2069.4 station -name Kk.61
 
-point 2799.88 2099.61 station -name Kk.62@jb-riv2
+point 2505.25 2032.0 label -text "Le Vestiaire"
+
+point 2799.88 2099.61 station -name Kk.62
 
 endscrap
 

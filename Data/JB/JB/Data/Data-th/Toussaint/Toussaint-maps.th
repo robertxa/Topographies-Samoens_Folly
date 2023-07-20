@@ -4,14 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Crawleurs -title "Méandre des Crawleurs"
-	SP-Crawleurs
+map MP-Toussaint -title "Cascade de la Toussaint"
+	SP-gourance5
 	break
-	SP-Crawleuraval   
+	SP-riv-10
+	break
+	SP-riv-11 
 endmap
 
 
-#map MC-P11 -title "Méandre des Crawleurs"
-#	
-#endmap
+map MC-Toussaint -title "Cascade de la Toussaint"
+	SC-avalc5
+	break
+	SC-avalc4
+endmap
    

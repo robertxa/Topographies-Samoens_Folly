@@ -4,16 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Crawleurs -title "Méandre des Crawleurs"
+survey Toussaint -title "Cascade de la Toussaint"
 
-    input Data/Crawleurs.th
+    input Data/Toussaint.th
 
     # Dessins en plan
-    input Data/Crawleurs.th2
+    input Data/Toussaint.th2
     # Dessins en coupe
-    #input Data/Crawleurs-coupe.th2
+    input Data/Toussaint-coupe.th2
     
     # Add maps
-    input Crawleurs-maps.th
+    input Toussaint-maps.th
 
 endsurvey

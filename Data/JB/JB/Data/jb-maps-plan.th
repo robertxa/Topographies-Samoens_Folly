@@ -49,14 +49,6 @@ map MP-B22 -title "B22"
 	break
 	SP-B22-2
 endmap
-
-#preview above JB-rev # C'était placé à la fin des maps précédentes. A replacer correctement si besoin !
- 
-#map MP-arianes -title "Méandre des Arianes"
-#	SP-arianes1
-#	break
-#	SP-arianes2
-#endmap
   
 map MP-champselysees -title "Les Champs Elysées"
 	SP-champs-elysees
@@ -73,66 +65,6 @@ endmap
 map MP-B19 -title "B19"
 	SP-B19
 endmap
-
-#map MP-senecaliens -title "Galerie des Sénécaliens"
-#	SP-Senecaliens
-#endmap
-
-# map MP-lavoir-haut -title "Réseau du Lavoir"
-# 	SP-brownies1
-# 	break
-# 	SP-Arva1
-# 	break
-# 	SP-Arva2
-# 	break
-# 	SP-Lavoir2
-# 	break
-# 	SP-Lavoir1
-# 	break
-# 	SP-Lavoir3
-# endmap
-
-# map MP-filou -title "Réseau Qui File Ou"
-# 	break
-# 	SP-Lavoir5
-# 	break
-# 	SP-Lavoir-FD
-# 	break
-# 	SP-Boeuf1
-# 	break
-# 	SP-filou1
-# 	break
-# 	SP-filou2
-# 	break
-# 	SP-fileou2019-1
-# endmap
-
- #map MP-lavoir-bas -title "Réseau du Lavoir"
- #map MP-lavoir-test -title "Réseau du Lavoir"
-# 	SP-Lavoir7
-# 	break
-# 	SP-Boeuf2  
-# 	break
-# 	SP-lavoir-sec   
-# 	break
-# 	SP-Racc3
-# 	break
-# 	SP-Racc2
-# 	break
-# 	SP-rac1
-# 	break
-# 	SP-racc4
-# 	break
-# 	SP-Racc
-# 	break
-# 	SP-Racc4
-# 	break
-# 	SP-Racc5
-# 	break
-# 	SP-base-racc
-# 	break
-# 	SP-Lavoir3old #--> Il faut l'interger ailleurs.... Car dépendant de JB-amont2.th
-# endmap
 
 map MP-riviere-excentriques -title "Rivière aux excentriques"
 	SP-Excentriques1
@@ -394,44 +326,24 @@ map MP-siphon69 -title "Siphon 69"
 endmap
 
 map MP-gourance -title "La Gourance"      
-	SP-gourance-1
+	SP-gourance-1@Gourance
 	break
-	SP-gourance2      
+	SP-gourance2@Gourance
 	break
 	SP-Gourance2013-1@Gourance2013
 	break
 	SP-Gourance2013-2@Gourance2013     
 	break
-	SP-gourance-4      
-	break
-	SP-gourance5
+	SP-gourance-4@Gourance
+	#break
+	#SP-gourance5
 endmap
 
-map MP-aval-gourance -title "Rivière à l'aval de la Gourance"
-	SP-riv-10
-	break
-	SP-riv-11
-	break
-	SP-cingles
-	break
-	SP-900-1
-endmap
-
-map MP-laconscience -title "galerie de la Conscience"
-	SP-conscience-1
-endmap
-
-map MP-nuitblanche -title "Réseau de la Nuit Blanche"
-	SP-nuitblanche1
-	break
-	SP-nuitblanche2      
-	break
-	SP-nuitblanche3
-	break
-	SP-nuitblanche4
-endmap
-
-#preview below SP-JB-amontsuite # pour JB-aval-riviere à partir solitaire
+#map MP-aval-gourance -title "Rivière à l'aval de la Gourance"
+#	SP-riv-10
+#	break
+#	SP-riv-11
+#endmap
 
 
 ##########################################################################
@@ -464,17 +376,9 @@ map MP-B22-B21 -title "B21 - B22"
 	MP-gadoue
 endmap
 
-# map MP-lavoir -title "Réseau du Lavoir"
-# 	MP-lavoir-haut
-# 	break
-# 	MP-filou
-# 	break
-# 	MP-lavoir-bas
-# endmap
-
 map MP-B19-V11 -title "Réseaux du B19 et du V11"
 	MP-Senecaliens@Senecaliens
-	#break
+	break
 	MP-B19
 	#preview below MP-senecaliens
 	break
@@ -560,19 +464,10 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MP-savoyards
 	break
-	#MP-Solitaire-tot
 	MP-solitaire-tot@Solitaire
 	break
 	MP-quitombe
 endmap
-
-#map MP-Solitaire-tot -title "Réseau du Solitaire"
-#	MP-rubis@Solitaire
-#	break
-#	MP-solitaire@Solitaire
-#	break
-#	MP-oeufs@Solitaire
-#endmap
 
 map MP-Jean-Dupond -title "Le début de la rivière aval"
 	MP-puitsAlain
@@ -596,11 +491,13 @@ map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
 	break
 	MP-Siphon09@Siphon09
 	break
-	MP-aval-gourance
+	MP-Toussaint@Toussaint
 	break
-	MP-laconscience
+	MP-Cheneau@Cheneau
 	break
-	MP-nuitblanche
+	MP-Conscience@Conscience
+	break
+	MP-NuitBlanche@NuitBlanche
 endmap
 
 map MP-aval-900 -title "Bivouac -900 et siphons terminaux"

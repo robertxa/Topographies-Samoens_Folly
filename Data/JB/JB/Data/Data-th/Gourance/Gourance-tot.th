@@ -4,16 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Crawleurs -title "Méandre des Crawleurs"
+survey Gourance -title "La Gourance"
 
-    input Data/Crawleurs.th
+    input Data/Gourance.th
 
     # Dessins en plan
-    input Data/Crawleurs.th2
+    input Data/Gourance.th2
     # Dessins en coupe
-    #input Data/Crawleurs-coupe.th2
+    input Data/Gourance-coupe.th2
     
     # Add maps
-    input Crawleurs-maps.th
+    input Gourance-maps.th
 
 endsurvey

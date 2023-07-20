@@ -4,7 +4,7 @@ encoding  utf-8
 
 
 
-scrap SP-gourance-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-gourance-1 -projection plan -station-names "" "@Gourance" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 3598.5 2622.75 continuation -attr Code Q -attr Cavite JB -attr Reseau "La Gourance" -text "A Voir ?"
 
@@ -45,25 +45,25 @@ line wall
   smooth off
 endline
 
-point 3582.57 2675.62 station -name Kg.12@jb-riv
+point 3582.57 2675.62 station -name Kg.12
 
-point 3586.55 2690.38 station -name Kg.13@jb-riv
+point 3586.55 2690.38 station -name Kg.13
 
-point 3601.36 2673.17 station -name Kg.14@jb-riv
+point 3601.36 2673.17 station -name Kg.14
 
-point 3604.03 2660.47 station -name Kg.15@jb-riv
+point 3604.03 2660.47 station -name Kg.15
 
-point 3601.53 2637.03 station -name Kg.16@jb-riv
+point 3601.53 2637.03 station -name Kg.16
 
-point 3615.02 2633.4 station -name Kg.17@jb-riv
+point 3615.02 2633.4 station -name Kg.17
 
-point 3628.14 2617.65 station -name Kg.18@jb-riv
+point 3628.14 2617.65 station -name Kg.18
 
-point 3641.12 2616.67 station -name Kg.19@jb-riv
+point 3641.12 2616.67 station -name Kg.19
 
-point 3657.72 2585.59 station -name Kg.20@jb-riv
+point 3657.72 2585.59 station -name Kg.20
 
-point 3681.88 2553.65 station -name Kg.21@jb-riv
+point 3681.88 2553.65 station -name Kg.21
 
 endscrap
 
@@ -72,9 +72,9 @@ endscrap
 
 
 
-scrap SP-gourance2 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-gourance2 -projection plan -station-names "" "@Gourance" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
-point 3396.19 2605.78 station -name Kh.47@jb-riv2
+point 3396.19 2605.78 station -name Kh.47
 
 point 3427.0 2635.75 label -text "E9"
 
@@ -158,7 +158,7 @@ line pit
   smooth off
 endline
 
-#point 3552.54 2652.37 station -name Gn.2@jb-riv2
+#point 3552.54 2652.37 station -name Gn.2
 
 
 line wall
@@ -228,135 +228,37 @@ line wall
   smooth off
 endline
 
-point 3403.79 2660.6 station -name Kh.48@jb-riv2
+point 3403.79 2660.6 station -name Kh.48
 
-point 3421.8 2664.39 station -name Kh.50@jb-riv2
+point 3421.8 2664.39 station -name Kh.50
 
-point 3430.12 2666.59 station -name Kg.2@jb-riv
+point 3430.12 2666.59 station -name Kg.2
 
-point 3423.55 2653.59 station -name Kg.0@jb-riv2
+point 3423.55 2653.59 station -name Kg.0
 
-point 3442.59 2668.61 station -name Kg.3@jb-riv
+point 3442.59 2668.61 station -name Kg.3
 
-point 3457.25 2657.33 station -name Kg.4@jb-riv
+point 3457.25 2657.33 station -name Kg.4
 
-point 3473.93 2657.39 station -name Kg.5@jb-riv
+point 3473.93 2657.39 station -name Kg.5
 
-point 3487.68 2654.37 station -name Kg.6@jb-riv
+point 3487.68 2654.37 station -name Kg.6
 
-point 3516.16 2656.71 station -name Kg.7@jb-riv
+point 3516.16 2656.71 station -name Kg.7
 
-point 3535.74 2663.15 station -name Kg.8@jb-riv
+point 3535.74 2663.15 station -name Kg.8
 
-#point 3544.44 2662.22 station -name Gn.1@jb-riv2
+#point 3544.44 2662.22 station -name Gn.1
 
+point 3548.24 2674.07 station -name Kg.10
 
-point 3548.24 2674.07 station -name Kg.10@jb-riv
-
-point 3558.28 2682.17 station -name Kg.11@jb-riv
+point 3558.28 2682.17 station -name Kg.11
 
 endscrap
 
-# Ce scrap est à supprimé une fois qu'il a été intégré à la topo des plafonds de la Gourance (voir GoureToiDeLa)
-#scrap SP-gourance-3 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
-
-#point 3389.67 2655.28 station -name Gn.16@jb-riv2
-
-#point 3404.91 2648.63 station -name Gn.15@jb-riv2
-
-#point 3418.32 2659.26 station -name Gn.14@jb-riv2
-
-#point 3428.15 2654.33 station -name Gn.13@jb-riv2
-
-#point 3438.24 2667.24 station -name Gn.11@jb-riv2
-
-#point 3441.32 2657.43 station -name Gn.10@jb-riv2
-
-#point 3456.3 2662.42 station -name Gn.8@jb-riv2
-
-#point 3483.47 2656.35 station -name Gn.7@jb-riv2
-
-#line wall
-#  3390.5 2657.75
-#  3390.5 2657.75 3401.25 2651.25 3403.75 2651.25
-#  3406.25 2651.25 3414.25 2661.25 3417.5 2660.5
-#  3420.75 2659.75 3425.0 2655.5 3425.75 2658.75
-#  3426.5 2662.0 3428.75 2670.25 3430.0 2669.5
-#  3431.25 2668.75 3436.25 2671.5 3438.5 2669.5
-#  3440.75 2667.5 3440.75 2660.75 3442.5 2660.75
-#  3444.25 2660.75 3453.75 2666.0 3456.5 2665.25
-#  3459.25 2664.5 3477.5 2659.0 3482.0 2659.75
-#  3486.5 2660.5 3488.25 2663.0 3491.25 2663.0
-#  3494.25 2663.0 3498.5 2660.0 3502.5 2661.5
-#  3506.5 2663.0 3539.25 2678.25 3543.75 2676.5
-#  3548.25 2674.75 3566.5 2648.25 3567.5 2643.0
-#  3568.5 2637.75 3567.5 2636.75 3564.25 2638.5
-#  3561.0 2640.25 3557.25 2642.75 3557.25 2642.75
-#  smooth off
-#endline
-
-#point 3373.5 2667.75 continuation -attr Code P -attr Cavite JB -attr Reseau "La Gourance - Damocles" -text "Arrêt sur Grand Puits"
-
-#point 3494.25 2642.25 label -text "E2"
-
-#point 3484.5 2681.75 label -text "M. Damoclès"
-
-#point 3480.75 2657.0 blocks
-
-#point 3486.75 2659.5 blocks
-
-#point 3536.5 2668.25 blocks
-
-#point 3544.75 2668.0 blocks
-
-#point 3541.0 2672.25 blocks
-
-#line pit
-#  3388.75 2649.25
-#  3388.75 2649.25 3392.5 2649.0 3393.5 2652.75
-#  3394.5 2656.5 3392.75 2659.75 3392.75 2659.75
-#  smooth off
-#endline
-
-#line pit -reverse on
-#  3494.75 2656.0
-#  3494.75 2656.0 3490.0 2657.5 3490.25 2660.25
-#  3490.5 2663.0 3492.5 2666.5 3492.5 2666.5
-#  smooth off
-#endline
-
-#line wall
-#  3559.5 2648.75
-#  3559.5 2648.75 3551.5 2655.75 3550.25 2658.25
-#  3549.0 2660.75 3548.75 2665.5 3543.0 2665.5
-#  3537.25 2665.5 3509.75 2657.0 3504.5 2657.0
-#  3499.25 2657.0 3493.75 2658.5 3491.75 2657.5
-#  3489.75 2656.5 3490.0 2654.25 3485.0 2654.5
-#  3480.0 2654.75 3461.5 2661.0 3457.25 2660.25
-#  3453.0 2659.5 3444.5 2653.0 3442.25 2654.5
-#  3440.0 2656.0 3440.75 2664.75 3437.75 2664.75
-#  3434.75 2664.75 3431.5 2667.0 3431.25 2664.5
-#  3431.0 2662.0 3434.75 2654.25 3431.5 2653.25
-#  3428.25 2652.25 3421.0 2658.0 3418.75 2656.25
-#  3416.5 2654.5 3409.0 2646.75 3406.25 2646.75
-#  3403.5 2646.75 3387.75 2653.0 3387.75 2653.0
-#  smooth off
-#endline
-
-#point 3491.87 2659.98 station -name Gn.6@jb-riv2
-
-#point 3502.46 2658.76 station -name Gn.5@jb-riv2
-
-#point 3545.58 2673.1 station -name Gn.4@jb-riv2
-
-#point 3564.99 2641.31 station -name Gn.3@jb-riv2
-
-#endscrap
 
 
-
-
-scrap SP-gourance-4 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
+scrap SP-gourance-4 -projection plan -station-names "" "@Gourance" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 3276.75 2630.5 altitude
 
@@ -437,31 +339,31 @@ line wall -id l114-3289-2624
   3285.75 2621.75
 endline
 
-point 3293.15 2622.32 station -name Kh.0@jb-riv2
+point 3293.15 2622.32 station -name Kh.0
 
-point 3305.74 2627.82 station -name Kh.1@jb-riv2
+point 3305.74 2627.82 station -name Kh.1
 
-point 3290.76 2639.35 station -name Kh.2@jb-riv2
+point 3290.76 2639.35 station -name Kh.2
 
-point 3280.88 2671.06 station -name Kh.3@jb-riv2
+point 3280.88 2671.06 station -name Kh.3
 
-point 3285.54 2673.27 station -name Kh.4@jb-riv2
+point 3285.54 2673.27 station -name Kh.4
 
-point 3302.57 2671.46 station -name Kh.6@jb-riv2
+point 3302.57 2671.46 station -name Kh.6
 
-point 3316.36 2668.2 station -name Kh.8@jb-riv2
+point 3316.36 2668.2 station -name Kh.8
 
 point 3296.0 2660.0 rope
 
 point 3306.0 2648.5 rope
 
-point 3357.98 2650.36 station -name Kh.9@jb-riv2
+point 3357.98 2650.36 station -name Kh.9
 
-point 3376.32 2652.75 station -name Kh.10@jb-riv2
+point 3376.32 2652.75 station -name Kh.10
 
-point 3395.36 2670.75 station -name Kh.11@jb-riv2
+point 3395.36 2670.75 station -name Kh.11
 
-point 3409.62 2672.61 station -name Kh.12@jb-riv2
+point 3409.62 2672.61 station -name Kh.12
 
 endscrap
 

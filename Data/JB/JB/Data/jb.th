@@ -354,7 +354,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Data-th/NonTriees/jb-riv.th
 		### Equates data
 			equate  Jf.14@jb-amonts2  Jf.14@jb-riv
-			equate  Kg.0@jb-riv  Kg.0@jb-riv2
     		equate  Ke.29@jb-riv  Ke.29@jb-riv2
     		equate  Ke.43@jb-riv  Ke.43@jb-riv2
     		equate  Ke.33@jb-riv  Ke.33@jb-riv2
@@ -363,8 +362,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Data-th/NonTriees/jb-riv2.th
 		### Equates data
 			equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
-    		equate  Da.58@jb-amonts2  Da.58@jb-riv2
+
+    		equate  Da.58@jb-amonts2  Da.58@Senecaliens.Senecaliens
     		equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
+
 	## L'arrivée à la cascade Jean Dupont
 	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
 		### Joins dessins Plan
@@ -391,79 +392,69 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			equate Xav2016-23@P11.P11 Kg.24@jb-riv
 		### Joins dessins Plan		
 			##join SP-P11-h1 ???
-		### Joins dessins Coupe
 
 	## La zone de la Gourance
-	input Drawing-th2/Plan/gourance.th2
-		### Joins dessins Plan
-			join SP-gourance-1 SP-bivouac500c
+	input Data-th/Gourance/Gourance-tot.th
+		equate Kg.21@Gourance.Gourance Kg.21@jb-riv
+		join SP-gourance-1@Gourance SP-bivouac500c
+		join SC-balcon3@Gourance SC-balcon3b
 	# Explo 2013 dans l'aval de la Gourance
 	input Data-th/Gourance2013/gourance2013-tot.th
-		### Equates data
-			equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@jb-riv2
-		### Joins dessins Plan
-		### Joins dessins Coupe
-			join SC-Gourance2013-c1@Gourance2013 SC-balcon2	# Escalade 2013 dans l'aval de la Gourance
+			equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@Gourance.Gourance
+			join SC-Gourance2013-c1@Gourance2013 SC-balcon2@Gourance	# Escalade 2013 dans l'aval de la Gourance
 	# Plafonds de la Gourance
 	input Data-th/GoureToiDeLa/goureToiDeLa-tot.th
-		### Equates data
 			# Damocles
-			equate Kg.9@Damocles.GoureToi Kg.9@jb-riv	# Si dans fichier Damocles2010.th --> A faire !!!
+			equate Kg.9@Damocles.GoureToi Kg.9@Gourance.Gourance	# Si dans fichier Damocles2010.th --> A faire !!!
 			# Plafonds de la Gourance
-			equate  2014-SL-35@GoureToiDeLa.GoureToi Kh.46@jb-riv2    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
+			equate  2014-SL-35@GoureToiDeLa.GoureToi Kh.46@Gourance.Gourance    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
 			#equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
-		### Joins dessins Plan
-		### Joins dessins Coupe
-			join SC-balconc1 SC-GourecoupeSteph3@GoureToi
-			join SC-GourecoupeSteph3@GoureToi SC-balcon2 # Plafonds de la Gourance
-			join SC-balcon3 SC-Gourance2022-1@GoureToi
+			join SC-balconc1@Toussaint SC-GourecoupeSteph3@GoureToi
+			join SC-GourecoupeSteph3@GoureToi SC-balcon2@Gourance # Plafonds de la Gourance
+			join SC-balcon3b SC-Gourance2022-1@GoureToi
 
 	## Riviere de la base de la Gourance aux Cinglés
 	## Le siphon 09
 	input Data-th/Siphon09/Siphon09-tot.th
-		equate Kh.37@Siphon09.Siphon09 Kh.37@jb-riv2
-		join SP-Siphon09@Siphon09 SP-gourance5
-		join SC-Siphon09@Siphon09 SC-avalc5
-	input Drawing-th2/Plan/toussaint.th2
-		### Joins dessins Plan
-			####join SP-gourance5 SP-gourance2	#### A REVOIR ????
-	input Drawing-th2/Coupe/avalc1
-		### Joins dessins Coupe
-			join SC-avalc1@Sezhommes SC-S1-c@Siphons	# Erreur ici ???
-			join SC-avalc5 SC-balconc1
+		equate Kh.37@Siphon09.Siphon09 Kh.37@Toussaint.Toussaint
+		join SP-Siphon09@Siphon09 SP-gourance5@Toussaint
+		join SC-Siphon09@Siphon09 SC-avalc5@Toussaint
+	
+	## Cascade de la Toussaint
+	input Data-th/Toussaint/Toussaint-tot.th
+		equate Kh.46@Toussaint.Toussaint Kh.46@Gourance.Gourance
+		join SP-gourance5@Toussaint SP-gourance2@Gourance
+		#join SC-avalc5@Toussaint SC-balconc1	#??? 
 
-	## Cheneau, Bivouac -900
-	#input Data-th/bivouac900.th
-		### Equates data
-		
-	## Des Cinglés au Bivouac -900
-	# Cette topographie est pour l'instant la topo originale de 1991.
-	# Il faut la remplacer par la retopographie de 2012 par l'USAN.
-	input Drawing-th2/Plan/chaos.th2
-		### Joins dessins Plan
-			join SP-cingles SP-riv-11
+	## Cheneau, Bivouac -900, Des Cinglés au Bivouac -900
+	# Cette topographie est pour l'instant la topo originale de 1991. Il faut la remplacer par la retopographie de 2012 par l'USAN.
+	input Data-th/Cheneau/Cheneau-tot.th
+		equate Kk.16@Cheneau.Cheneau	Kk.16@Toussaint.Toussaint
+		join SP-cingles@Cheneau SP-riv-11@Toussaint
+		join SC-avalc3@Cheneau SC-avalc4@Toussaint
+
+	## Galerie de la Bonne Conscience
+	input Data-th/Conscience/Conscience-tot.th
+		equate Km.8@Conscience.Conscience Km.8@Cheneau.Cheneau	#Kl.0@Chaos.Chaos/Cheneau
+		join SP-conscience-1@Conscience SP-900-1@Cheneau
+		join SC-conscience-1@Conscience SC-avalc2@Cheneau
 	## Galerie de la Nuit Blanche
-	input Drawing-th2/Plan/JB-nuitblanche.th2
-		### Joins dessins Plan
-		### Joins dessins Coupe
+	input Data-th/NuitBlanche/NuitBlanche-tot.th
+		equate Kn.4@NuitBlanche.NuitBlanche Kn.4@Cheneau.Cheneau
+		join SC-NuitBlanche@NuitBlanche SC-avalc2@Cheneau
 
 	## Galerie de Sezhommes avec zone de -900 m
 	input Data-th/Sezhommes/sezhommes-tot.th
-		### Equates data
-			equate Kn.1@sezhommes1975.Sezhommes Kn.1@jb-riv2
-			equate 46.2020@sezhommes2020.Sezhommes Kn.4@jb-riv2	# sommet du P6 juste avant le bivouac -900 m
-		### Joins dessins Plan
-			join SP-sezhommes2020-1@Sezhommes SP-900-1	# au niveau bivouac -900 m
-		### Joins dessins Coupe
-			join SC-avalc2 SC-sezhommes2020-3@Sezhommes
+			equate Kn.1@sezhommes1975.Sezhommes Kn.1@Cheneau.Cheneau
+			equate 46.2020@sezhommes2020.Sezhommes Kn.4@Cheneau.Cheneau	# sommet du P6 juste avant le bivouac -900 m
+			join SP-sezhommes2020-1@Sezhommes SP-900-1@Cheneau	# au niveau bivouac -900 m
+			join SC-avalc2@Cheneau SC-sezhommes2020-3@Sezhommes
 
 	## Zone des siphons terminaux
 	input Data-th/Siphons/siphons-tot.th
-		### Equates data
 			equate S1-0@siphons_aval.Siphons Kp.24@sezhommes1975.Sezhommes
-		### Joins dessins Plan
 			join SP-sezhommes2@Sezhommes SP-S1@Siphons
-		### Joins dessins Coupe
+			join SC-avalc1@Sezhommes SC-S1-c@Siphons
 
 
 	##################################################################################################

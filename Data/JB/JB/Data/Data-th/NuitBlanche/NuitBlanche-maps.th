@@ -4,14 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Crawleurs -title "Méandre des Crawleurs"
-	SP-Crawleurs
+map MP-NuitBlanche -title "Trémie de la Nuit Blanche"
+	SP-nuitblanche-1
 	break
-	SP-Crawleuraval   
+	SP-nuitblanche-2      
+	break
+	SP-nuitblanche-3
+	break
+	SP-nuitblanche-4
 endmap
 
 
-#map MC-P11 -title "Méandre des Crawleurs"
-#	
-#endmap
+map MC-NuitBlanche -title "Trémie de la Nuit Blanche"
+	SC-NuitBlanche
+endmap
    

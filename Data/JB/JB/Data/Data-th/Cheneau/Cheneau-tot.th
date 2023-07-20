@@ -4,16 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Crawleurs -title "Méandre des Crawleurs"
+survey Cheneau -title "Cinglés, Cheneau et Chaos"
 
-    input Data/Crawleurs.th
+    input Data/Cheneau.th
 
     # Dessins en plan
-    input Data/Crawleurs.th2
+    input Data/Cheneau.th2
     # Dessins en coupe
-    #input Data/P11-coupe.th2
+    input Data/Cheneau-coupe.th2
     
     # Add maps
-    input Crawleurs-maps.th
+    input Cheneau-maps.th
 
 endsurvey

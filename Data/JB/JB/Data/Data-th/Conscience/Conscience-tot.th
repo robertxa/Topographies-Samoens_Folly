@@ -4,16 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Crawleurs -title "Méandre des Crawleurs"
+survey Conscience -title "Galerie de la Bonne Conscience"
 
-    input Data/Crawleurs.th
+    input Data/Conscience.th
 
     # Dessins en plan
-    input Data/Crawleurs.th2
+    input Data/Conscience.th2
     # Dessins en coupe
-    #input Data/P11-coupe.th2
+    input Data/Conscience-coupe.th2
     
     # Add maps
-    input Crawleurs-maps.th
+    input Conscience-maps.th
 
 endsurvey

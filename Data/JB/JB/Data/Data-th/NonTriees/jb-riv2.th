@@ -6,307 +6,309 @@ encoding  utf-8
 
 survey jb-riv2 -title "JB rivière deuxième partie"   
   
+#  centerline -extend right -title "Puits de la Gourance Kh.0_Kh.1 Kh.50_Kg.0"
  
- 
- centerline -extend right -title " Kh.0_Kh.1 Kh.50_Kg.0"
- #  date YYYY.MM.DD
-   declination 0.  grad
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+#   date 1973.11.03
+#     team "Christian Rigaldie"
+#     team "Daniel Colliard"
+#   explo-date 1973.11.03
+#     explo-team "Christian Rigaldie"
+#     explo-team "Daniel Colliard"
 
-   units lenght meters
-   units compass grad
-   units clino degrees
- # infer equates on
- # infer plumbs on
-   data normal from to length compass clino left right up down
-   Kh.0 Kh.1    3.49       72.       0.       0.       0.       0.       0.    
-   Kh.1 Kh.2    4.8       340.       0.       0.       0.       0.       0.    
-   Kh.2 Kh.3    8.5       379.       7.       0.       0.       0.       0.    
-   Kh.3 Kh.4    3.1       70.       65.       0.       0.       0.       0.    
-   Kh.4 Kh.5    4.6       105.       19.       0.       0.       0.       0.    
-   Kh.5 Kh.6    6.1       0.       90.       0.       0.       0.       0.    
-   Kh.6 Kh.7    3.6       113.       0.       0.       0.       0.       0.    
-   Kh.7 Kh.8    12.7       0.       90.       0.       0.       0.       0.    
-   Kh.8 Kh.9    11.5       124.       0.       0.       0.       0.       0.    
-   Kh.9 Kh.10    5.       90.       20.       0.       0.       0.       0.    
-   Kh.10 Kh.11    9.1       50.       43.       0.       0.       0.       0.    
-   Kh.11 Kh.12    3.8       90.       16.       0.       0.       0.       0.    
-   Kh.0' Kh.16    8.4       200.       0.       0.       0.       0.       0.    
-   Kh.16 Kh.17    3.2       110.      -10.       0.       0.       0.       0.    
-   Kh.17 Kh.18    4.3       80.      -6.       0.       0.       0.       0.    
-   Kh.18 Kh.19    4.6       128.      -20.       0.       0.       0.       0.    
-   Kh.19 Kh.20    4.       89.       14.       0.       0.       0.       0.    
-   Kh.20 Kh.21    2.4       35.       22.       0.       0.       0.       0.    
-   Kh.21 Kh.22    3.2       110.       7.       0.       0.       0.       0.    
-   Kh.22 Kh.23    2.       94.       0.       0.       0.       0.       0.    
-   Kh.23 Kh.24    7.1       162.       4.       0.       0.       0.       0.    
-   Kh.24 Kh.25    3.25       20.       4.       0.       0.       0.       0.    
-   Kh.25 Kh.26    6.15       112.       2.       0.       0.       0.       0.    
-   Kh.26 Kh.27    4.5       152.       6.       0.       0.       0.       0.    
-   Kh.27 Kh.28    2.5       128.       27.       0.       0.       0.       0.    
-   Kh.28 Kh.29    1.7       177.       13.       0.       0.       0.       0.    
-   Kh.29 Kh.30    5.55       54.       27.       0.       0.       0.       0.    
-   Kh.30 Kh.31    4.55       82.       16.       0.       0.       0.       0.    
-   Kh.31 Kh.32    1.5       4.       0.       0.       0.       0.       0.    
-   Kh.32 Kh.33    8.68       87.       9.       0.       0.       0.       0.    
-   Kh.33 Kh.34    2.82       114.       33.       0.       0.       0.       0.    
-   Kh.34 Kh.35    13.3       57.       3.       0.       0.       0.       0.    
-   Kh.35 Kh.36    19.3       24.       1.       0.       0.       0.       0.    
-   Kh.36 Kh.37    20.3       2.       6.       0.       0.       0.       0.    
-   Kh.37 Kh.38    6.3       370.       55.       0.       0.       0.       0.    
-   Kh.38 Kh.39    5.8       384.       27.       0.       0.       0.       0.    
-   Kh.39 Kh.40    16.7       372.       6.       0.       0.       0.       0.    
-   Kh.40 Kh.41    7.2       350.       21.       0.       0.       0.       0.    
-   Kh.41 Kh.42    24.8       0.       90.       0.       0.       0.       0.    
-   Kh.42 Kh.43    3.       91.       39.       0.       0.       0.       0.    
-   Kh.43 Kh.44    7.7       399.      -14.       0.       0.       0.       0.    
-   Kh.44 Kh.45    4.8       13.      -11.       0.       0.       0.       0.    
-   Kh.45 Kh.46    2.3       21.       26.       0.       0.       0.       0.    
-   Kh.46 Kh.47    5.4       18.      -54.       0.       0.       0.       0.    
-   Kh.47 Kh.48    16.4       7.      -31.       0.       0.       0.       0.    
-   Kh.48 Kh.12    6.4       27.      -58.       0.       0.       0.       0.    
-   Kh.48 Kh.50    5.4       85.      -30.       0.       0.       0.       0.    
-   Kh.50 Kg.0    4.       188.      -46.       0.       0.       0.       0.    
- endcenterline
+#    units lenght meters
+#    units compass grad
+#    units clino degrees
+#  # infer equates on
+#  # infer plumbs on
+#    data normal from to length compass clino left right up down
+#    Kh.0 Kh.1    3.49       72.       0.       0.       0.       0.       0.    
+#    Kh.1 Kh.2    4.8       340.       0.       0.       0.       0.       0.    
+#    Kh.2 Kh.3    8.5       379.       7.       0.       0.       0.       0.    
+#    Kh.3 Kh.4    3.1       70.       65.       0.       0.       0.       0.    
+#    Kh.4 Kh.5    4.6       105.       19.       0.       0.       0.       0.    
+#    Kh.5 Kh.6    6.1       0.       90.       0.       0.       0.       0.    
+#    Kh.6 Kh.7    3.6       113.       0.       0.       0.       0.       0.    
+#    Kh.7 Kh.8    12.7       0.       90.       0.       0.       0.       0.    
+#    Kh.8 Kh.9    11.5       124.       0.       0.       0.       0.       0.    
+#    Kh.9 Kh.10    5.       90.       20.       0.       0.       0.       0.    
+#    Kh.10 Kh.11    9.1       50.       43.       0.       0.       0.       0.    
+#    Kh.11 Kh.12    3.8       90.       16.       0.       0.       0.       0.    
+   
+#   #  Kh.0' Kh.16    8.4       200.       0.       0.       0.       0.       0.    
+#   #  Kh.16 Kh.17    3.2       110.      -10.       0.       0.       0.       0.    
+#   #  Kh.17 Kh.18    4.3       80.      -6.       0.       0.       0.       0.    
+#   #  Kh.18 Kh.19    4.6       128.      -20.       0.       0.       0.       0.    
+#   #  Kh.19 Kh.20    4.       89.       14.       0.       0.       0.       0.    
+#   #  Kh.20 Kh.21    2.4       35.       22.       0.       0.       0.       0.    
+#   #  Kh.21 Kh.22    3.2       110.       7.       0.       0.       0.       0.    
+#   #  Kh.22 Kh.23    2.       94.       0.       0.       0.       0.       0.    
+#   #  Kh.23 Kh.24    7.1       162.       4.       0.       0.       0.       0.    
+#   #  Kh.24 Kh.25    3.25       20.       4.       0.       0.       0.       0.    
+#   #  Kh.25 Kh.26    6.15       112.       2.       0.       0.       0.       0.    
+#   #  Kh.26 Kh.27    4.5       152.       6.       0.       0.       0.       0.    
+#   #  Kh.27 Kh.28    2.5       128.       27.       0.       0.       0.       0.    
+#   #  Kh.28 Kh.29    1.7       177.       13.       0.       0.       0.       0.    
+#   #  Kh.29 Kh.30    5.55       54.       27.       0.       0.       0.       0.    
+#   #  Kh.30 Kh.31    4.55       82.       16.       0.       0.       0.       0.    
+#   #  Kh.31 Kh.32    1.5       4.       0.       0.       0.       0.       0.    
+#   #  Kh.32 Kh.33    8.68       87.       9.       0.       0.       0.       0.    
+#   #  Kh.33 Kh.34    2.82       114.       33.       0.       0.       0.       0.    
+#   #  Kh.34 Kh.35    13.3       57.       3.       0.       0.       0.       0.    
+#   #  Kh.35 Kh.36    19.3       24.       1.       0.       0.       0.       0.    
+#   #  Kh.36 Kh.37    20.3       2.       6.       0.       0.       0.       0.    
+#   #  Kh.37 Kh.38    6.3       370.       55.       0.       0.       0.       0.    
+#   #  Kh.38 Kh.39    5.8       384.       27.       0.       0.       0.       0.    
+#   #  Kh.39 Kh.40    16.7       372.       6.       0.       0.       0.       0.    
+#   #  Kh.40 Kh.41    7.2       350.       21.       0.       0.       0.       0.    
+#   #  Kh.41 Kh.42    24.8       0.       90.       0.       0.       0.       0.    
+#   #  Kh.42 Kh.43    3.       91.       39.       0.       0.       0.       0.    
+#   #  Kh.43 Kh.44    7.7       399.      -14.       0.       0.       0.       0.    
+#   #  Kh.44 Kh.45    4.8       13.      -11.       0.       0.       0.       0.    
+#   #  Kh.45 Kh.46    2.3       21.       26.       0.       0.       0.       0.    
+   
+#    Kh.46 Kh.47    5.4       18.      -54.       0.       0.       0.       0.    
+#    Kh.47 Kh.48    16.4       7.      -31.       0.       0.       0.       0.    
+#    Kh.48 Kh.12    6.4       27.      -58.       0.       0.       0.       0.    
+#    Kh.48 Kh.50    5.4       85.      -30.       0.       0.       0.       0.    
+#    Kh.50 Kg.0    4.       188.      -46.       0.       0.       0.       0.    
+#  endcenterline
    
    
- centerline -extend left -title " Kh.0'_Ki.1 Ki.16_Ki.17"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
+#  centerline -extend left -title " Kh.0'_Ki.1 Ki.16_Ki.17"
+#  #  date YYYY.MM.DD
+#    declination 0.  degrees
+#   #team "G.S. Vulcain"
+#  # (to be completed, add many lines as you need)
  
- #explo-team "G.S. Vulcain"
+#  #explo-team "G.S. Vulcain"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
- # infer equates on
- # infer plumbs on
-   data normal from to length backcompass backclino right left up down
-   Kh.0' Ki.1    15.2       0.       90.       0.       0.       0.       0.    
-   Ki.1 Ki.2    5.4       38.       8.       0.       0.       0.       0.    
-   Ki.2 Ki.3    11.4       80.       33.       0.       0.       0.       0.    
-   Ki.3 Ki.4    4.       32.       30.       0.       0.       0.       0.    
-   Ki.4 Ki.5    7.3       97.       30.       0.       0.       0.       0.    
-   Ki.5 Ki.6    5.1       14.       1.       0.       0.       0.       0.    
-   Ki.6 Ki.7    3.9       30.       22.       0.       0.       0.       0.    
-   Ki.7 Ki.8    4.2       355.       11.       0.       0.       0.       0.    
-   Ki.8 Ki.9    4.       345.       15.       0.       0.       0.       0.    
-   Ki.9 Ki.10    9.2       12.       6.       0.       0.       0.       0.    
-   Ki.10 Ki.11    3.4       75.       17.       0.       0.       0.       0.    
-   Ki.11 Ki.12    2.       94.       17.       0.       0.       0.       0.    
-   Ki.12 Ki.13    1.8       40.       12.       0.       0.       0.       0.    
-   Ki.13 Ki.14    4.1       86.       6.       0.       0.       0.       0.    
-   Ki.14 Ki.15    3.5       75.       5.       0.       0.       0.       0.    
-   Ki.15 Ki.16    7.4       75.       5.       0.       0.       0.       0.    
-   Ki.16 Ki.17    5.       35.       6.       0.       0.       0.       0.    
- endcenterline
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+#  # infer equates on
+#  # infer plumbs on
+#    data normal from to length backcompass backclino right left up down
+#    Kh.0' Ki.1    15.2       0.       90.       0.       0.       0.       0.    
+#    Ki.1 Ki.2    5.4       38.       8.       0.       0.       0.       0.    
+#    Ki.2 Ki.3    11.4       80.       33.       0.       0.       0.       0.    
+#    Ki.3 Ki.4    4.       32.       30.       0.       0.       0.       0.    
+#    Ki.4 Ki.5    7.3       97.       30.       0.       0.       0.       0.    
+#    Ki.5 Ki.6    5.1       14.       1.       0.       0.       0.       0.    
+#    Ki.6 Ki.7    3.9       30.       22.       0.       0.       0.       0.    
+#    Ki.7 Ki.8    4.2       355.       11.       0.       0.       0.       0.    
+#    Ki.8 Ki.9    4.       345.       15.       0.       0.       0.       0.    
+#    Ki.9 Ki.10    9.2       12.       6.       0.       0.       0.       0.    
+#    Ki.10 Ki.11    3.4       75.       17.       0.       0.       0.       0.    
+#    Ki.11 Ki.12    2.       94.       17.       0.       0.       0.       0.    
+#    Ki.12 Ki.13    1.8       40.       12.       0.       0.       0.       0.    
+#    Ki.13 Ki.14    4.1       86.       6.       0.       0.       0.       0.    
+#    Ki.14 Ki.15    3.5       75.       5.       0.       0.       0.       0.    
+#    Ki.15 Ki.16    7.4       75.       5.       0.       0.       0.       0.    
+#    Ki.16 Ki.17    5.       35.       6.       0.       0.       0.       0.    
+#  endcenterline
   
   
- centerline -extend left -title "Ki.17_Kj.1 Kj.8_Kj.9"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
+#  centerline -extend left -title "Ki.17_Kj.1 Kj.8_Kj.9"
+#  #  date YYYY.MM.DD
+#    declination 0.  degrees
+#   #team "G.S. Vulcain"
+#  # (to be completed, add many lines as you need)
  
- #explo-team "G.S. Vulcain"
+#  #explo-team "G.S. Vulcain"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
- # infer equates on
- # infer plumbs on
-   data normal from to length backcompass backclino right left up down
-   Ki.17 Kj.1    4.32       75.       0.       0.       0.       0.       0.    
-   Kj.1 Kj.2    4.78       127.      -3.       0.       0.       0.       0.    
-   Kj.2 Kj.3    2.71       175.       4.       0.       0.       0.       0.    
-   Kj.3 Kj.4    1.6       197.       27.       0.       0.       0.       0.    
-   Kj.4 Kj.5    4.92       155.       5.       0.       0.       0.       0.    
-   Kj.5 Kj.6    5.11       95.       11.       0.       0.       0.       0.    
-   Kj.6 Kj.7    4.06       120.       35.       0.       0.       0.       0.    
-   Kj.7 Kj.8    3.2       108.       21.       0.       0.       0.       0.    
-   Kj.8 Kj.9    2.47       136.       10.       0.       0.       0.       0.    
- endcenterline
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+#  # infer equates on
+#  # infer plumbs on
+#    data normal from to length backcompass backclino right left up down
+#    Ki.17 Kj.1    4.32       75.       0.       0.       0.       0.       0.    
+#    Kj.1 Kj.2    4.78       127.      -3.       0.       0.       0.       0.    
+#    Kj.2 Kj.3    2.71       175.       4.       0.       0.       0.       0.    
+#    Kj.3 Kj.4    1.6       197.       27.       0.       0.       0.       0.    
+#    Kj.4 Kj.5    4.92       155.       5.       0.       0.       0.       0.    
+#    Kj.5 Kj.6    5.11       95.       11.       0.       0.       0.       0.    
+#    Kj.6 Kj.7    4.06       120.       35.       0.       0.       0.       0.    
+#    Kj.7 Kj.8    3.2       108.       21.       0.       0.       0.       0.    
+#    Kj.8 Kj.9    2.47       136.       10.       0.       0.       0.       0.    
+#  endcenterline
   
   
- centerline -extend right -title " Kk.0_Kk.1 Kk.69_Kj.9"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+#  centerline -extend right -title " Kk.0_Kk.1 Kk.69_Kj.9"
+#   date 1975.01.03
+#     #declination 0.  degrees
+#     team "Jacques Lopez"
+#     team "Xavier Thurin"
+#   explo-date 1975.01.03
+#     explo-team "Jacques Lopez"
+#     explo-team "Xavier Thurin"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
- # infer equates on
- # infer plumbs on
-   data normal from to length backcompass backclino right left up down
-   Kk.0 Kk.1    4.1       55.      -52.       0.       0.       0.       0.    
-   Kk.1 Kk.2    11.03000       115.      -47.       0.       0.       0.       0.    
-   Kk.2 Kk.3    5.5       113.      -36.       0.       0.       0.       0.    
-   Kk.3 Kk.4    4.8       160.      -58.       0.       0.       0.       0.    
-   Kk.4 Kk.5    2.1       258.      -33.       0.       0.       0.       0.    
-   Kk.5 Kk.6    1.8       190.      -18.       0.       0.       0.       0.    
-   Kk.6 Kk.7    1.8       295.      -35.       0.       0.       0.       0.    
-   Kk.7 Kk.8    3.2       255.      -14.       0.       0.       0.       0.    
-   Kk.8 Kk.9    4.3       295.      -49.       0.       0.       0.       0.    
-   Kk.9 Kk.10    6.3       265.      -22.       0.       0.       0.       0.    
-   Kk.10 Kk.11    6.5       266.      -30.       0.       0.       0.       0.    
-   Kk.11 Kk.12    6.8       235.      -25.       0.       0.       0.       0.    
-   Kk.12 Kk.13    3.3       215.      -54.       0.       0.       0.       0.    
-   Kk.13 Kk.14    1.       255.       4.       0.       0.       0.       0.    
-   Kk.14 Kk.15    2.2       320.      -18.       0.       0.       0.       0.    
-   Kk.15 Kk.16    4.9       230.      -3.       0.       0.       0.       0.    
-   Kk.16 Kk.17    8.9       180.      -2.       0.       0.       0.       0.    
-   Kk.17 Kk.18    5.       260.      -57.       0.       0.       0.       0.    
-   Kk.18 Kk.19    4.8       230.      -45.       0.       0.       0.       0.    
-   Kk.19 Kk.20    4.4       235.      -32.       0.       0.       0.       0.    
-   Kk.20 Kk.21    6.6       245.      -35.       0.       0.       0.       0.    
-   Kk.21 Kk.22    4.8       205.      -23.       0.       0.       0.       0.    
-   Kk.22 Kk.23    2.3       243.      -27.       0.       0.       0.       0.    
-   Kk.23 Kk.24    3.2       198.      -22.       0.       0.       0.       0.    
-   Kk.24 Kk.25    2.6       150.      -28.       0.       0.       0.       0.    
-   Kk.25 Kk.26    2.8       280.      -19.       0.       0.       0.       0.    
-   Kk.26 Kk.27    5.5       260.      -18.       0.       0.       0.       0.    
-   Kk.27 Kk.28    3.9       220.      -27.       0.       0.       0.       0.    
-   Kk.28 Kk.29    4.5       280.      -12.       0.       0.       0.       0.    
-   Kk.29 Kk.30    2.1       215.      -12.       0.       0.       0.       0.    
-   Kk.30 Kk.31    2.7       270.      -30.       0.       0.       0.       0.    
-   Kk.31 Kk.32    4.3       245.      -24.       0.       0.       0.       0.    
-   Kk.32 Kk.33    6.       210.      -18.       0.       0.       0.       0.    
-   Kk.33 Kk.34    3.2       256.      -36.       0.       0.       0.       0.    
-   Kk.34 Kk.35    2.5       295.      -24.       0.       0.       0.       0.    
-   Kk.35 Kk.36    3.1       250.      -24.       0.       0.       0.       0.    
-   Kk.36 Kk.37    6.2       238.      -15.       0.       0.       0.       0.    
-   Kk.37 Kk.38    4.7       227.      -10.       0.       0.       0.       0.    
-   Kk.38 Kk.39    3.9       250.      -10.       0.       0.       0.       0.    
-   Kk.39 Kk.40    3.       190.      -29.       0.       0.       0.       0.    
-   Kk.40 Kk.41    4.4       310.      -35.       0.       0.       0.       0.    
-   Kk.41 Kk.42    6.       288.      -17.       0.       0.       0.       0.    
-   Kk.42 Kk.43    4.4       267.      -27.       0.       0.       0.       0.    
-   Kk.43 Kk.44    3.8       340.      -14.       0.       0.       0.       0.    
-   Kk.44 Kk.45    2.6       207.      -32.       0.       0.       0.       0.    
-   Kk.45 Kk.46    3.2       275.      -18.       0.       0.       0.       0.    
-   Kk.46 Kk.47    2.       312.      -16.       0.       0.       0.       0.    
-   Kk.47 Kk.48    2.5       264.      -11.       0.       0.       0.       0.    
-   Kk.48 Kk.49    3.5       20.      -1.       0.       0.       0.       0.    
-   Kk.49 Kk.50    2.9       258.      -28.       0.       0.       0.       0.    
-   Kk.50 Kk.51    4.4       283.      -5.       0.       0.       0.       0.    
-   Kk.51 Kk.52    2.5       243.      -13.       0.       0.       0.       0.    
-   Kk.52 Kk.53    2.4       312.      -8.       0.       0.       0.       0.    
-   Kk.53 Kk.54    3.8       350.      -24.       0.       0.       0.       0.    
-   Kk.54 Kk.55    2.5       242.      -2.       0.       0.       0.       0.    
-   Kk.55 Kk.56    3.3       305.      -8.       0.       0.       0.       0.    
-   Kk.56 Kk.57    4.3       240.      -5.       0.       0.       0.       0.    
-   Kk.57 Kk.58    2.6       160.      -5.       0.       0.       0.       0.    
-   Kk.58 Kk.59    5.       192.      -3.       0.       0.       0.       0.    
-   Kk.59 Kk.60    7.6       190.      -1.       0.       0.       0.       0.    
-   Kk.60 Kk.61    5.5       230.       3.       0.       0.       0.       0.    
-   Kk.61 Kk.62    7.9       192.      -2.       0.       0.       0.       0.    
-   Kk.62 Kk.63    8.3       190.      -7.       0.       0.       0.       0.    
-   Kk.63 Kk.64    13.2       190.      -2.       0.       0.       0.       0.    
-   Kk.64 Kk.65    4.2       215.      -33.       0.       0.       0.       0.    
-   Kk.65 Kk.66    2.9       160.      -4.       0.       0.       0.       0.    
-   Kk.66 Kk.67    12.9       0.      -90.       0.       0.       0.       0.    
-   Kk.67 Kk.68    3.9       327.      -33.       0.       0.       0.       0.    
-   Kk.68 Kk.69    8.       275.      -37.       0.       0.       0.       0.    
-   Kk.69 Kj.9    7.2       0.      -90.       0.       0.       0.       0.    
- endcenterline
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+#  # infer equates on
+#  # infer plumbs on
+#    data normal from to length backcompass backclino right left up down
+#   #  Kk.0 Kk.1    4.1       55.      -52.       0.       0.       0.       0.    
+#   #  Kk.1 Kk.2    11.03000       115.      -47.       0.       0.       0.       0.    
+#   #  Kk.2 Kk.3    5.5       113.      -36.       0.       0.       0.       0.    
+#   #  Kk.3 Kk.4    4.8       160.      -58.       0.       0.       0.       0.    
+#   #  Kk.4 Kk.5    2.1       258.      -33.       0.       0.       0.       0.    
+#   #  Kk.5 Kk.6    1.8       190.      -18.       0.       0.       0.       0.    
+#   #  Kk.6 Kk.7    1.8       295.      -35.       0.       0.       0.       0.    
+#   #  Kk.7 Kk.8    3.2       255.      -14.       0.       0.       0.       0.    
+#   #  Kk.8 Kk.9    4.3       295.      -49.       0.       0.       0.       0.    
+#   #  Kk.9 Kk.10    6.3       265.      -22.       0.       0.       0.       0.    
+#   #  Kk.10 Kk.11    6.5       266.      -30.       0.       0.       0.       0.    
+#   #  Kk.11 Kk.12    6.8       235.      -25.       0.       0.       0.       0.    
+#   #  Kk.12 Kk.13    3.3       215.      -54.       0.       0.       0.       0.    
+#   #  Kk.13 Kk.14    1.       255.       4.       0.       0.       0.       0.    
+#   #  Kk.14 Kk.15    2.2       320.      -18.       0.       0.       0.       0.    
+#   #  Kk.15 Kk.16    4.9       230.      -3.       0.       0.       0.       0.    
+#    Kk.16 Kk.17    8.9       180.      -2.       0.       0.       0.       0.    
+#    Kk.17 Kk.18    5.       260.      -57.       0.       0.       0.       0.    
+#    Kk.18 Kk.19    4.8       230.      -45.       0.       0.       0.       0.    
+#    Kk.19 Kk.20    4.4       235.      -32.       0.       0.       0.       0.    
+#    Kk.20 Kk.21    6.6       245.      -35.       0.       0.       0.       0.    
+#    Kk.21 Kk.22    4.8       205.      -23.       0.       0.       0.       0.    
+#    Kk.22 Kk.23    2.3       243.      -27.       0.       0.       0.       0.    
+#    Kk.23 Kk.24    3.2       198.      -22.       0.       0.       0.       0.    
+#    Kk.24 Kk.25    2.6       150.      -28.       0.       0.       0.       0.    
+#    Kk.25 Kk.26    2.8       280.      -19.       0.       0.       0.       0.    
+#    Kk.26 Kk.27    5.5       260.      -18.       0.       0.       0.       0.    
+#    Kk.27 Kk.28    3.9       220.      -27.       0.       0.       0.       0.    
+#    Kk.28 Kk.29    4.5       280.      -12.       0.       0.       0.       0.    
+#    Kk.29 Kk.30    2.1       215.      -12.       0.       0.       0.       0.    
+#    Kk.30 Kk.31    2.7       270.      -30.       0.       0.       0.       0.    
+#    Kk.31 Kk.32    4.3       245.      -24.       0.       0.       0.       0.    
+#    Kk.32 Kk.33    6.       210.      -18.       0.       0.       0.       0.    
+#    Kk.33 Kk.34    3.2       256.      -36.       0.       0.       0.       0.    
+#    Kk.34 Kk.35    2.5       295.      -24.       0.       0.       0.       0.    
+#    Kk.35 Kk.36    3.1       250.      -24.       0.       0.       0.       0.    
+#    Kk.36 Kk.37    6.2       238.      -15.       0.       0.       0.       0.    
+#    Kk.37 Kk.38    4.7       227.      -10.       0.       0.       0.       0.    
+#    Kk.38 Kk.39    3.9       250.      -10.       0.       0.       0.       0.    
+#    Kk.39 Kk.40    3.       190.      -29.       0.       0.       0.       0.    
+#    Kk.40 Kk.41    4.4       310.      -35.       0.       0.       0.       0.    
+#    Kk.41 Kk.42    6.       288.      -17.       0.       0.       0.       0.    
+#    Kk.42 Kk.43    4.4       267.      -27.       0.       0.       0.       0.    
+#    Kk.43 Kk.44    3.8       340.      -14.       0.       0.       0.       0.    
+#    Kk.44 Kk.45    2.6       207.      -32.       0.       0.       0.       0.    
+#    Kk.45 Kk.46    3.2       275.      -18.       0.       0.       0.       0.    
+#    Kk.46 Kk.47    2.       312.      -16.       0.       0.       0.       0.    
+#    Kk.47 Kk.48    2.5       264.      -11.       0.       0.       0.       0.    
+#    Kk.48 Kk.49    3.5       20.      -1.       0.       0.       0.       0.    
+#    Kk.49 Kk.50    2.9       258.      -28.       0.       0.       0.       0.    
+#    Kk.50 Kk.51    4.4       283.      -5.       0.       0.       0.       0.    
+#    Kk.51 Kk.52    2.5       243.      -13.       0.       0.       0.       0.    
+#    Kk.52 Kk.53    2.4       312.      -8.       0.       0.       0.       0.    
+#    Kk.53 Kk.54    3.8       350.      -24.       0.       0.       0.       0.    
+#    Kk.54 Kk.55    2.5       242.      -2.       0.       0.       0.       0.    
+#    Kk.55 Kk.56    3.3       305.      -8.       0.       0.       0.       0.    
+#    Kk.56 Kk.57    4.3       240.      -5.       0.       0.       0.       0.    
+#    Kk.57 Kk.58    2.6       160.      -5.       0.       0.       0.       0.    
+#    Kk.58 Kk.59    5.       192.      -3.       0.       0.       0.       0.    
+#    Kk.59 Kk.60    7.6       190.      -1.       0.       0.       0.       0.    
+#    Kk.60 Kk.61    5.5       230.       3.       0.       0.       0.       0.    
+#    Kk.61 Kk.62    7.9       192.      -2.       0.       0.       0.       0.    
+#    Kk.62 Kk.63    8.3       190.      -7.       0.       0.       0.       0.    
+#    Kk.63 Kk.64    13.2       190.      -2.       0.       0.       0.       0.    
+#    Kk.64 Kk.65    4.2       215.      -33.       0.       0.       0.       0.    
+#    Kk.65 Kk.66    2.9       160.      -4.       0.       0.       0.       0.    
+#    Kk.66 Kk.67    12.9       0.      -90.       0.       0.       0.       0.    
+#    Kk.67 Kk.68    3.9       327.      -33.       0.       0.       0.       0.    
+#    Kk.68 Kk.69    8.       275.      -37.       0.       0.       0.       0.    
+#    Kk.69 Kj.9    7.2       0.      -90.       0.       0.       0.       0.    
+#  endcenterline
   
   
- centerline -extend right -title "Kl.0_Kl.1 Kl.17_Kk.0"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
+#  centerline -extend right -title "Kl.0_Kl.1 Kl.17_Kk.0"
+#  #  date YYYY.MM.DD
+#    declination 0.  degrees
+#   #team "G.S. Vulcain"
+#  # (to be completed, add many lines as you need)
  
- #explo-team "G.S. Vulcain"
+#  #explo-team "G.S. Vulcain"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
- # infer equates on
- # infer plumbs on
-   data normal from to length backcompass backclino right left up down
-   Kl.0 Kl.1    8.5       105.      -31.       0.       0.       0.       0.    
-   Kl.1 Kl.2    4.9       180.      -54.       0.       0.       0.       0.    
-   Kl.2 Kl.3    4.1       140.      -25.       0.       0.       0.       0.    
-   Kl.3 Kl.4    4.8       230.      -23.       0.       0.       0.       0.    
-   Kl.4 Kl.5    3.3       220.      -26.       0.       0.       0.       0.    
-   Kl.5 Kl.6    5.5       185.      -22.       0.       0.       0.       0.    
-   Kl.6 Kl.7    8.       260.      -16.       0.       0.       0.       0.    
-   Kl.7 Kl.8    3.1       235.      -28.       0.       0.       0.       0.    
-   Kl.8 Kl.9    6.2       242.      -24.       0.       0.       0.       0.    
-   Kl.9 Kl.10    1.8       243.      -1.       0.       0.       0.       0.    
-   Kl.10 Kl.11    5.       76.      -3.       0.       0.       0.       0.    
-   Kl.11 Kl.12    2.8       65.      -43.       0.       0.       0.       0.    
-   Kl.12 Kl.13    4.5       80.       2.       0.       0.       0.       0.    
-   Kl.13 Kl.14    4.6       90.      -47.       0.       0.       0.       0.    
-   Kl.14 Kl.15    4.5       140.      -10.       0.       0.       0.       0.    
-   Kl.15 Kl.16    21.8       0.      -90.       0.       0.       0.       0.    
-   Kl.16 Kl.17    4.6       153.      -21.       0.       0.       0.       0.    
-   Kl.17 Kk.0    12.6       188.      -51.       0.       0.       0.       0.    
- endcenterline
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+#  # infer equates on
+#  # infer plumbs on
+#    data normal from to length backcompass backclino right left up down
+#    Kl.0 Kl.1    8.5       105.      -31.       0.       0.       0.       0.    
+#    Kl.1 Kl.2    4.9       180.      -54.       0.       0.       0.       0.    
+#    Kl.2 Kl.3    4.1       140.      -25.       0.       0.       0.       0.    
+#    Kl.3 Kl.4    4.8       230.      -23.       0.       0.       0.       0.    
+#    Kl.4 Kl.5    3.3       220.      -26.       0.       0.       0.       0.    
+#    Kl.5 Kl.6    5.5       185.      -22.       0.       0.       0.       0.    
+#    Kl.6 Kl.7    8.       260.      -16.       0.       0.       0.       0.    
+#    Kl.7 Kl.8    3.1       235.      -28.       0.       0.       0.       0.    
+#    Kl.8 Kl.9    6.2       242.      -24.       0.       0.       0.       0.    
+#    Kl.9 Kl.10    1.8       243.      -1.       0.       0.       0.       0.    
+#    Kl.10 Kl.11    5.       76.      -3.       0.       0.       0.       0.    
+#    Kl.11 Kl.12    2.8       65.      -43.       0.       0.       0.       0.    
+#    Kl.12 Kl.13    4.5       80.       2.       0.       0.       0.       0.    
+#    Kl.13 Kl.14    4.6       90.      -47.       0.       0.       0.       0.    
+#    Kl.14 Kl.15    4.5       140.      -10.       0.       0.       0.       0.    
+#    Kl.15 Kl.16    21.8       0.      -90.       0.       0.       0.       0.    
+#    Kl.16 Kl.17    4.6       153.      -21.       0.       0.       0.       0.    
+#    Kl.17 Kk.0    12.6       188.      -51.       0.       0.       0.       0.    
+#  endcenterline
   
   
- centerline -extend left -title " Km.0_Km.1 Km.10_Kl.0"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- #explo-team "G.S. Vulcain"
+#  centerline -extend left -title " Km.0_Km.1 Km.10_Kl.0"
+#  #  date YYYY.MM.DD
+#    declination 0.  degrees
+#   #team "G.S. Vulcain"
+#  # (to be completed, add many lines as you need)
+#  #explo-team "G.S. Vulcain"
  
-   units lenght meters
-   units compass degrees
-   units clino degrees
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
  
-   data normal from to length backcompass backclino right left up down
-   Km.0 Km.1    3.74       313.       21.       0.       0.       0.       0.    
-   Km.1 Km.2    11.82000       62.       15.       0.       0.       0.       0.    
-   Km.2 Km.3    5.79       67.       21.       0.       0.       0.       0.    
-   Km.3 Km.4    6.93       334.       3.       0.       0.       0.       0.    
-   Km.4 Km.5    10.57000       51.       33.       0.       0.       0.       0.    
-   Km.5 Km.6    1.54       326.       31.       0.       0.       0.       0.    
-   Km.6 Km.7    6.31       82.       23.       0.       0.       0.       0.    
-   Km.7 Km.8    4.84       80.       5.       0.       0.       0.       0.    
-   Km.8 Km.9    3.64       83.       15.       0.       0.       0.       0.    
-   Km.9 Km.10    7.89       103.       1.       0.       0.       0.       0.    
-   Km.10 Kl.0    4.74       200.       5.       0.       0.       0.       0.    
- endcenterline
+#    data normal from to length backcompass backclino right left up down
+#    Km.0 Km.1    3.74       313.       21.       0.       0.       0.       0.    
+#    Km.1 Km.2    11.82000       62.       15.       0.       0.       0.       0.    
+#    Km.2 Km.3    5.79       67.       21.       0.       0.       0.       0.    
+#    Km.3 Km.4    6.93       334.       3.       0.       0.       0.       0.    
+#    Km.4 Km.5    10.57000       51.       33.       0.       0.       0.       0.    
+#    Km.5 Km.6    1.54       326.       31.       0.       0.       0.       0.    
+#    Km.6 Km.7    6.31       82.       23.       0.       0.       0.       0.    
+#    Km.7 Km.8    4.84       80.       5.       0.       0.       0.       0.    
+#    Km.8 Km.9    3.64       83.       15.       0.       0.       0.       0.    
+#    Km.9 Km.10    7.89       103.       1.       0.       0.       0.       0.    
+#    Km.10 Kl.0    4.74       200.       5.       0.       0.       0.       0.    
+#  endcenterline
   
   
- centerline -extend right -title " Kn.0_Kn.1 Kn.5_Kl.0"
-	date 1975.01.01
-		team "Pierre Rias"
-		team "Yves Bailly"
-		team "Jacques Lopez"
-		team "Xavier Thurin"
-	explo-date 1975.01.01
-		explo-team "Pierre Rias"
-		explo-team "Yves Bailly"
-		explo-team "Jacques Lopez"
-		explo-team "Xavier Thurin" 
+#  centerline -extend right -title " Kn.0_Kn.1 Kn.5_Kl.0"
+# 	date 1975.01.01
+# 		team "Pierre Rias"
+# 		team "Yves Bailly"
+# 		team "Jacques Lopez"
+# 		team "Xavier Thurin"
+# 	explo-date 1975.01.01
+# 		explo-team "Pierre Rias"
+# 		explo-team "Yves Bailly"
+# 		explo-team "Jacques Lopez"
+# 		explo-team "Xavier Thurin" 
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
  
-   data normal from to length backcompass backclino right left up down
-   flags duplicate
-   Kn.0 Kn.1    12.38000       246.      -62.       0.       0.       0.       0.    
-   Kn.1 Kn.2    12.1       241.      -31.       0.       0.       0.       0.    
-   Kn.2 Kn.3    26.87000       247.      -17.       0.       0.       0.       0.    
-   Kn.3 Kn.4    8.21       270.      -45.       0.       0.       0.       0.    
-   flags not duplicate
-   Kn.4 Kn.5    5.85       264.      -37.       0.       0.       0.       0.    
-   Kn.5 Kl.0    4.55       253.       30.       0.       0.       0.       0.    
- endcenterline
+#    data normal from to length backcompass backclino right left up down
+#    flags duplicate
+#    Kn.0 Kn.1    12.38000       246.      -62.       0.       0.       0.       0.    
+#    Kn.1 Kn.2    12.1       241.      -31.       0.       0.       0.       0.    
+#    Kn.2 Kn.3    26.87000       247.      -17.       0.       0.       0.       0.    
+#    Kn.3 Kn.4    8.21       270.      -45.       0.       0.       0.       0.    
+#    flags not duplicate
+#    Kn.4 Kn.5    5.85       264.      -37.       0.       0.       0.       0.    
+#    Kn.5 Kl.0    4.55       253.       30.       0.       0.       0.       0.    
+#  endcenterline
   
  ## A VIRER CAR DANS SCRAP ALONE.... 
  #centerline -extend right -title " Ko.0_Ko.1 Ko.48_Kn.1"
@@ -476,81 +478,81 @@ survey jb-riv2 -title "JB rivière deuxième partie"
   
    
   
-  centerline -title "r. de la Nuit Blanche Kq.0_Kq.1 Kq.20_Kn.4"
-  # Topo de la désob de la nuit blanche et début du réseau de la nuit blanche.
-  # Attention, toute cette topo sera en doublon avec la partir -900. Ce sera à corriger
+  # centerline -title "r. de la Nuit Blanche Kq.0_Kq.1 Kq.20_Kn.4"
+  # # Topo de la désob de la nuit blanche et début du réseau de la nuit blanche.
+  # # Attention, toute cette topo sera en doublon avec la partir -900. Ce sera à corriger
    
-  date 2011.02.06
+  # date 2011.02.06
    
-  #declination 0.0000  degrees
+  # #declination 0.0000  degrees
   
-  #team "USAN"
-  #team "ASCR"
-  team "David Parrot"
-  team "Thomas Sergentet"
+  # #team "USAN"
+  # #team "ASCR"
+  # team "David Parrot"
+  # team "Thomas Sergentet"
   
-  explo-date 2011.02.06
-  explo-team "David Parrot"
-  explo-team "Thomas Sergentet"
+  # explo-date 2011.02.06
+  # explo-team "David Parrot"
+  # explo-team "Thomas Sergentet"
 
-  units lenght meters 
-  units compass degrees
-  units clino degrees
+  # units lenght meters 
+  # units compass degrees
+  # units clino degrees
    
-  data normal from to length compass clino left right up down
+  # data normal from to length compass clino left right up down
    
-  extend left
-  Kq.0 Kq.0double    0.000000       0.000000       0.000000       0.000000       0.000000       0.000000       0.000000    
-  Kq.0 Kq.1    3.700000       249.0000       47.00000       0.000000       0.000000       0.000000       0.000000    
-  Kq.1 Kq.2    3.270000       234.0000      -8.000000       0.000000       0.000000       0.000000       0.000000    
-  Kq.2 Kq.3    6.710000       234.0000      -15.00000       0.000000      0.6500000       1.000000      0.5000000    
-  Kq.3 Kq.4    3.980000       246.0000      -34.00000       1.000000       1.000000       4.000000       0.000000    
-  extend right
-  Kq.1 Kq.5    6.500000       110.0000       29.00000       0.000000      0.7000000       3.900000       1.000000    
-  extend left
-  Kq.5 Kq.5a    6.400000       110.0000      -2.500000       0.000000       0.000000       0.000000       0.000000    
-  extend right
-  Kq.5 Kq.6    2.300000       211.0000       66.00000      0.3000000      0.3000000       1.800000       1.000000    
-  Kq.6 Kq.7    11.30000       102.0000      -15.00000      0.5000000      0.5000000       1.500000       0.000000    
-  Kq.7 Kq.7a    8.400000       60.00000      -55.00000       0.000000       0.000000       0.000000       0.000000    
-  Kq.7 Kq.8    8.450000       66.00000      -15.00000      0.4000000      0.4000000       5.000000       1.000000    
-  Kq.8 Kq.9    5.660000       252.0000       27.00000      0.5000000      0.3000000       3.700000       1.000000    
-  Kq.9 Kq.10    6.850000       257.0000       44.00000       0.000000      0.6000000       3.400000       3.000000    
-  Kq.10 Kq.11    8.740000       245.0000       27.00000      0.4000000      0.4000000       3.600000       1.900000    
-  Kq.11 Kq.12    8.500000       240.0000       31.00000      0.5000000      0.3000000       5.200000       2.500000    
-  Kq.12 Kq.13    4.880000       263.0000       67.00000      0.1500000      0.3000000       1.000000       1.000000    
-  Kq.13 Kq.14    2.530000       230.0000       8.000000      0.5000000       0.000000      0.3000000      0.5000000    
-  Kq.14 Kq.15    1.840000       270.0000       48.00000       1.200000       0.000000       10.00000       1.140000    
-  extend left
-  Kq.15 Kq.15a    6.500000       224.0000       8.600000       0.000000       0.000000       0.000000       0.000000    
-  Kq.15 Kq.16    10.20000       61.00000       71.00000       0.000000       0.000000       0.000000       0.000000    
-  Kq.16 Kq.17    2.800000       123.0000       83.00000       0.000000       0.000000       0.000000       0.000000    
-  Kq.17 Kq.18    1.910000       224.0000       45.00000       0.000000       0.000000       0.000000       0.000000    
-  Kq.18 Kq.19    4.330000       262.0000       39.00000       1.650000       1.300000       4.000000      0.6000000    
-  Kq.19 Kq.20    9.920000       269.0000       51.00000       0.000000       0.000000       0.000000       0.000000    
-      # I changed the Az from 259 to 269
-  Kq.20 Kn.4    7.290000       286.0000       24.00000       0.000000       0.000000       0.000000       0.000000    
-      # I changed the Az from 226 to 286
+  # extend left
+  # Kq.0 Kq.0double    0.000000       0.000000       0.000000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.0 Kq.1    3.700000       249.0000       47.00000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.1 Kq.2    3.270000       234.0000      -8.000000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.2 Kq.3    6.710000       234.0000      -15.00000       0.000000      0.6500000       1.000000      0.5000000    
+  # Kq.3 Kq.4    3.980000       246.0000      -34.00000       1.000000       1.000000       4.000000       0.000000    
+  # extend right
+  # Kq.1 Kq.5    6.500000       110.0000       29.00000       0.000000      0.7000000       3.900000       1.000000    
+  # extend left
+  # Kq.5 Kq.5a    6.400000       110.0000      -2.500000       0.000000       0.000000       0.000000       0.000000    
+  # extend right
+  # Kq.5 Kq.6    2.300000       211.0000       66.00000      0.3000000      0.3000000       1.800000       1.000000    
+  # Kq.6 Kq.7    11.30000       102.0000      -15.00000      0.5000000      0.5000000       1.500000       0.000000    
+  # Kq.7 Kq.7a    8.400000       60.00000      -55.00000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.7 Kq.8    8.450000       66.00000      -15.00000      0.4000000      0.4000000       5.000000       1.000000    
+  # Kq.8 Kq.9    5.660000       252.0000       27.00000      0.5000000      0.3000000       3.700000       1.000000    
+  # Kq.9 Kq.10    6.850000       257.0000       44.00000       0.000000      0.6000000       3.400000       3.000000    
+  # Kq.10 Kq.11    8.740000       245.0000       27.00000      0.4000000      0.4000000       3.600000       1.900000    
+  # Kq.11 Kq.12    8.500000       240.0000       31.00000      0.5000000      0.3000000       5.200000       2.500000    
+  # Kq.12 Kq.13    4.880000       263.0000       67.00000      0.1500000      0.3000000       1.000000       1.000000    
+  # Kq.13 Kq.14    2.530000       230.0000       8.000000      0.5000000       0.000000      0.3000000      0.5000000    
+  # Kq.14 Kq.15    1.840000       270.0000       48.00000       1.200000       0.000000       10.00000       1.140000    
+  # extend left
+  # Kq.15 Kq.15a    6.500000       224.0000       8.600000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.15 Kq.16    10.20000       61.00000       71.00000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.16 Kq.17    2.800000       123.0000       83.00000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.17 Kq.18    1.910000       224.0000       45.00000       0.000000       0.000000       0.000000       0.000000    
+  # Kq.18 Kq.19    4.330000       262.0000       39.00000       1.650000       1.300000       4.000000      0.6000000    
+  # Kq.19 Kq.20    9.920000       269.0000       51.00000       0.000000       0.000000       0.000000       0.000000    
+  #     # I changed the Az from 259 to 269
+  # Kq.20 Kn.4    7.290000       286.0000       24.00000       0.000000       0.000000       0.000000       0.000000    
+  #     # I changed the Az from 226 to 286
  
-  endcenterline
+  # endcenterline
 
   
  
  centerline -extend left -title " Gk.0_Gk.1 Ia.17_Gk.15"
  #  date YYYY.MM.DD
    declination 0.  degrees
-   calibrate counter 0 0.500
+   
   #team "G.S. Vulcain"
  # (to be completed, add many lines as you need)
  
  #explo-team "G.S. Vulcain"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
- # infer equates on
- # infer plumbs on
-  units counter centimeters
+    units lenght meters
+    units compass degrees
+    units clino degrees
+    calibrate counter 0 0.500
+    units counter centimeters
+
    data topofil from to fromcount tocount compass clino left right up down
    Gk.0 Gk.1 26635.0 26992.0    272.       7.      0.4      0.4       10.       1.    
    Gk.1 Gk.2 26992.0 27594.0    342.       36.       1.       4.       8.       1.5    
@@ -690,18 +692,20 @@ survey jb-riv2 -title "JB rivière deuxième partie"
   
   
  centerline -extend right -title " Ke.29_Go.0 Go.14_Go.15"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+    # Etroiture de la 3ème
+  date 2010.02.24
+    team "David Parrot"
+    team "Olivier Gente"
+    team "Frédéric Delègue"
+  explo-date 2010.02.24
+    explo-team "David Parrot"
+    explo-team "Olivier Gente"
+    explo-team "Frédéric Delègue"
 
    units lenght meters
    units compass degrees
    units clino degrees
- # infer equates on
- # infer plumbs on
+ 
    data normal from to length compass clino left right up down
    Ke.29 Go.0    5.       0.       90.       2.3      0.8      0.5      0.5    
    Go.0 Go.1    4.56       55.       15.       2.75       1.81      0.82      0.5    
@@ -726,50 +730,52 @@ survey jb-riv2 -title "JB rivière deuxième partie"
  endcenterline
   
   
- centerline -extend left -title "Siphon09 xa-0-2009_xa-0-2009do xa-5-2009_Kh.37"
- # topo siphon 09
-   date 2009.02.08
-   #declination 0.  degrees
-  #team "G.S. Vulcain"
+#  centerline -extend left -title "Siphon09 xa-0-2009_xa-0-2009do xa-5-2009_Kh.37"
+#  # topo siphon 09
+#    date 2009.02.08
+#    #declination 0.  degrees
+#   #team "G.S. Vulcain"
   
-  team "Xavier Robert"
-  team "David Parrot"
+#   team "Xavier Robert"
+#   team "David Parrot"
  
- explo-date 2009.02.08   
- #explo-team "G.S. Vulcain"
+#  explo-date 2009.02.08   
+#  #explo-team "G.S. Vulcain"
    
- explo-team "Xavier Robert"
- explo-team "David Parrot"
+#  explo-team "Xavier Robert"
+#  explo-team "David Parrot"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
- # infer equates on
- # infer plumbs on
-   data normal from to length compass clino left right up down
-   xa-0-2009 xa-0-2009do    0.       0.       0.      0.5      0.5      0.5      0.5    
-   xa-0-2009do xa-1-2009    2.35       170.      -7.      0.5      0.5       0.       0.    
-   xa-0-2009 xa-2-2009    4.15       241.      -7.       1.5       1.      0.5      0.4    
-   xa-2-2009 xa-3-2009    6.64       300.       0.       6.      0.5       0.      0.5    
-   xa-3-2009 xa-4-2009    3.1       225.      -30.       1.5      0.5       1.      0.3    
-   xa-4-2009 xa-5-2009    5.6       300.       0.       1.       0.       0.       1.5    
-   xa-5-2009 Kh.37    4.59       250.      -42.       10.       3.       1.       10.    
- endcenterline
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+#  # infer equates on
+#  # infer plumbs on
+#    data normal from to length compass clino left right up down
+#    xa-0-2009 xa-0-2009do    0.       0.       0.      0.5      0.5      0.5      0.5    
+#    xa-0-2009do xa-1-2009    2.35       170.      -7.      0.5      0.5       0.       0.    
+#    xa-0-2009 xa-2-2009    4.15       241.      -7.       1.5       1.      0.5      0.4    
+#    xa-2-2009 xa-3-2009    6.64       300.       0.       6.      0.5       0.      0.5    
+#    xa-3-2009 xa-4-2009    3.1       225.      -30.       1.5      0.5       1.      0.3    
+#    xa-4-2009 xa-5-2009    5.6       300.       0.       1.       0.       0.       1.5    
+#    xa-5-2009 Kh.37    4.59       250.      -42.       10.       3.       1.       10.    
+#  endcenterline
   
   
  centerline -extend left -title " Ke.43_Gp.0 Gp.6_Gp.7"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+    # Etroiture Kiki
+  date 2010.02.24
+    team "David Parrot"
+    team "Olivier Gente"
+    team "Frédéric Delègue"
+  explo-date 2010.02.24
+    explo-team "David Parrot"
+    explo-team "Olivier Gente"
+    explo-team "Frédéric Delègue"
 
    units lenght meters
    units compass degrees
    units clino degrees
- # infer equates on
- # infer plumbs on
+ 
    data normal from to length compass clino left right up down
    Ke.43 Gp.0    0.       0.       0.       4.92       4.42       3.52       5.26    
    extend right
@@ -784,18 +790,20 @@ survey jb-riv2 -title "JB rivière deuxième partie"
   
   
  centerline -extend right -title " Ke.33_Gq.0 Gq.1_Gq.2"
- #  date YYYY.MM.DD
-   declination 0.  degrees
-  #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
- 
- #explo-team "G.S. Vulcain"
+    # Coulée de Calcite
+  date 2010.02.24
+    team "David Parrot"
+    team "Olivier Gente"
+    team "Frédéric Delègue"
+  explo-date 2010.02.24
+    explo-team "David Parrot"
+    explo-team "Olivier Gente"
+    explo-team "Frédéric Delègue"
 
    units lenght meters
    units compass degrees
    units clino degrees
- # infer equates on
- # infer plumbs on
+ 
    data normal from to length compass clino left right up down
    Ke.33 Gq.0    5.       10.       10.       2.26       1.76       3.67       1.    
    Gq.0 Gq.1    21.4       70.       39.       2.53       2.88       1.87       1.    

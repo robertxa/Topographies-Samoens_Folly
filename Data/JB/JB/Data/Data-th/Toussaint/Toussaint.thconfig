@@ -4,13 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source neufcent-tot.th
+source Toussaint-tot.th
+
 # Add config file
 input ../../../../../../config.thc 
 
 layout xviexport
 	scale 1 1000
-	grid-size 10 10 10 m
+	grid-size 250 250 250 m
 	grid bottom
 endlayout
   
@@ -20,24 +21,23 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
 	  
-	doc-title "Zone -900 m"
+	doc-title "Gouffre du B19"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
-	scale 1 1000
-	scale-bar 100 m
+	scale 1 500
+	scale-bar 50 m
 	#color map-bg 85
 	color map-fg [100 100 80]
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "<it>Plan<ss> - Puits du Cheneau et Bivouac -900 m, Samoëns, 74, France"
+	map-comment "Gouffre du B19, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
 	legend-width 16 cm
-	#map-header 70 60 nw
 	map-header 0 0 nw
 	map-header-bg off
 	layers on
@@ -59,13 +59,9 @@ layout my_layout
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
-
-	# add general view
-	#map-image 45 20 nw Data/jb-Xav-2020-plan20000.pdf
- 
- endlayout
- 
- 
+  
+endlayout
+  
  
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
@@ -73,24 +69,24 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-	doc-title "Cheneau et -900"
+	doc-title "Gouffre du B19"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 1000
-	scale 1 1000
-	scale-bar 100 m
+	base-scale 1 500
+	scale 1 500
+	scale-bar 50 m
 	#color map-bg 85
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
 	language fr
-	map-comment "<it>Coupe développée<ss> - Puits du Cheneau et Bivouac -900 m, coupe développée, Samoëns, 74, France"
+	map-comment "Gouffre du B19, coupe développée, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
 	legend-width 16 cm
-	map-header 0 45 sw
+	map-header 0 0 nw
 	map-header-bg off
 	layers on
 	#symbol-hide line survey
@@ -111,18 +107,8 @@ layout my_layout-coupe
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
-
-	# add general view
-	#map-image 30 110 nw Data/jb-Xav-2020-coupe20000.pdf  
-
- endlayout
-
- 
   
- export map -fmt xvi -layout xviexport -o Data/cheneau-2012.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Data/cheneau-coupe-2012.xvi
+endlayout
   
- export map -projection plan -o Outputs/cheneau-2012-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/cheneau-2012-coupe.pdf
-
- export model -o Outputs/cheneau-2012.lox
+ export map  -projection plan -o Outputs/Toussaint-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/Toussaint-coupe.pdf

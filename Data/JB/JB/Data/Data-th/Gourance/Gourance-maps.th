@@ -4,14 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Crawleurs -title "Méandre des Crawleurs"
-	SP-Crawleurs
+map MP-Gourance -title "La Gourance"
+	SP-gourance2
 	break
-	SP-Crawleuraval   
+	SP-gourance-1 
+	#break
+	#SP-gourance-4
 endmap
 
 
-#map MC-P11 -title "Méandre des Crawleurs"
-#	
-#endmap
+map MC-Gourance -title "La Gourance"
+	SC-balcon3
+	break
+	SC-balcon2
+endmap
    

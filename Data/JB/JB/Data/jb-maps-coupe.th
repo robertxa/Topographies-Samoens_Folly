@@ -65,38 +65,8 @@ map MC-gadoue -title "Rivière de la Gadoue"
 endmap
 
 map MC-B19 -title "B19"
-	#SC-B19c2	# Senecaliens
-	#break
 	SC-B19c1
 endmap
-
-# map MC-lavoir-principal -title "Réseau du Lavoir"
-# 	SC-browniesc1	# Erreur sur le scrap ???
-# 	break
-# 	SC-lavoirc3
-# 	break
-# 	SC-lavoirc1
-# 	break
-# 	SC-lavoirc2
-# 	break
-# 	SC-lavoirc4
-# 	#break
-# 	#SC-lavoirc5
-# 	break
-# 	SC-lavoirc6
-# 	break
-# 	SC-lavoirc7	# Problème de déformation du scrap
-# 	break
-# 	SC-lavoirc8
-# endmap
-
-# map MC-Filou -title "Réseau Qui File Ou"
-# 	SC-lavoirc5
-# 	break
-# 	SC-fileouc1
-# 	break
-# 	SC-fileOu2019-1
-# endmap
 
 map MC-V11 -title "V11"
 	SC-V11c1
@@ -231,7 +201,9 @@ map MC-bivouac-500 -title "Le bivouac -500"
 	break
 	SC-balcon4
 	break
-	SC-balcon3
+	SC-balcon3b
+	break
+	SC-balcon3@Gourance
 	break
 	SC-biv500c1
 	break
@@ -245,28 +217,24 @@ map MC-siphon69 -title "Siphon 69"
 endmap
 
 map MC-gourance -title "La Gourance"      
-	SC-balconc1
-	break
-	SC-balcon2
+	#SC-balconc1
+	#break
+	SC-balcon2@Gourance
 	break
 	SC-Gourance2013-c1@Gourance2013
 endmap
 
-map MC-aval-cheneau -title "Le cheneau et la salle du Chaos"
-	SC-avalc4
-	break
-	SC-avalc5
-	break
-	SC-avalc3
-endmap
+#map MC-aval-cheneau -title "Le cheneau et la salle du Chaos"
+#	SC-avalc4
+#	break
+#	SC-avalc5
+	#break
+	#SC-avalc3
+#endmap
 
-map MC-laconscience -title "galerie de la Conscience"
-	SC-consciencec1
-endmap
-
-map MC-nuitblanche -title "Réseau de la Nuit Blanche"
-	SC-avalc2
-endmap
+#map MC-Cheneau -title "Cascade des Cinglés et puits du Cheneau"
+#	SC-avalc2
+#endmap
 
 
 #preview below JB-amontsuite # pour JB-aval-riviere à partir solitaire
@@ -410,15 +378,18 @@ map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"
 endmap
 
 map MC-aval-800 -title "Le Cheneau et la salle du Chaos"
-	MC-aval-cheneau
+	#MC-aval-cheneau
+	MC-Toussaint@Toussaint
 	break
 	MC-Siphon09@Siphon09
 	break
-	MC-laconscience
+	MC-Conscience@Conscience
 endmap
 
 map MC-aval-900 -title "Du Bivouac -900 au siphon terminal"
-	MC-nuitblanche
+	MC-Cheneau@Cheneau
+	break
+	MC-NuitBlanche@NuitBlanche
 	break
 	MC-sezhommes@Sezhommes
 	break

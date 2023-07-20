@@ -1,0 +1,206 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Toussaint -title "Cascade de la Toussaint"   
+ 
+ centerline -extend right -title "Cascade de la Toussaint ; Kh.0_Kh.1 Kh.50_Kg.0"
+  
+  date 1973.11.03
+    team "Christian Rigaldie"
+    team "Daniel Colliard"
+  explo-date 1973.11.03
+    explo-team "Christian Rigaldie"
+    explo-team "Daniel Colliard"
+
+   units lenght meters
+   units compass grad
+   units clino degrees
+ 
+   data normal from to length compass clino left right up down
+   #Kh.0 Kh.1    3.49       72.       0.       0.       0.       0.       0.    
+   #Kh.1 Kh.2    4.8       340.       0.       0.       0.       0.       0.    
+   #Kh.2 Kh.3    8.5       379.       7.       0.       0.       0.       0.    
+   #Kh.3 Kh.4    3.1       70.       65.       0.       0.       0.       0.    
+   #Kh.4 Kh.5    4.6       105.       19.       0.       0.       0.       0.    
+   #Kh.5 Kh.6    6.1       0.       90.       0.       0.       0.       0.    
+   #Kh.6 Kh.7    3.6       113.       0.       0.       0.       0.       0.    
+   #Kh.7 Kh.8    12.7       0.       90.       0.       0.       0.       0.    
+   #Kh.8 Kh.9    11.5       124.       0.       0.       0.       0.       0.    
+   #Kh.9 Kh.10    5.       90.       20.       0.       0.       0.       0.    
+   #Kh.10 Kh.11    9.1       50.       43.       0.       0.       0.       0.    
+   #Kh.11 Kh.12    3.8       90.       16.       0.       0.       0.       0.    
+   
+   Kh.0' Kh.16    8.4       200.       0.       0.       0.       0.       0.    
+   Kh.16 Kh.17    3.2       110.      -10.       0.       0.       0.       0.    
+   Kh.17 Kh.18    4.3       80.      -6.       0.       0.       0.       0.    
+   Kh.18 Kh.19    4.6       128.      -20.       0.       0.       0.       0.    
+   Kh.19 Kh.20    4.       89.       14.       0.       0.       0.       0.    
+   Kh.20 Kh.21    2.4       35.       22.       0.       0.       0.       0.    
+   Kh.21 Kh.22    3.2       110.       7.       0.       0.       0.       0.    
+   Kh.22 Kh.23    2.       94.       0.       0.       0.       0.       0.    
+   Kh.23 Kh.24    7.1       162.       4.       0.       0.       0.       0.    
+   Kh.24 Kh.25    3.25       20.       4.       0.       0.       0.       0.    
+   Kh.25 Kh.26    6.15       112.       2.       0.       0.       0.       0.    
+   Kh.26 Kh.27    4.5       152.       6.       0.       0.       0.       0.    
+   Kh.27 Kh.28    2.5       128.       27.       0.       0.       0.       0.    
+   Kh.28 Kh.29    1.7       177.       13.       0.       0.       0.       0.    
+   Kh.29 Kh.30    5.55       54.       27.       0.       0.       0.       0.    
+   Kh.30 Kh.31    4.55       82.       16.       0.       0.       0.       0.    
+   Kh.31 Kh.32    1.5       4.       0.       0.       0.       0.       0.    
+   Kh.32 Kh.33    8.68       87.       9.       0.       0.       0.       0.    
+   Kh.33 Kh.34    2.82       114.       33.       0.       0.       0.       0.    
+   Kh.34 Kh.35    13.3       57.       3.       0.       0.       0.       0.    
+   Kh.35 Kh.36    19.3       24.       1.       0.       0.       0.       0.    
+   Kh.36 Kh.37    20.3       2.       6.       0.       0.       0.       0.    
+   Kh.37 Kh.38    6.3       370.       55.       0.       0.       0.       0.    
+   Kh.38 Kh.39    5.8       384.       27.       0.       0.       0.       0.    
+   Kh.39 Kh.40    16.7       372.       6.       0.       0.       0.       0.    
+   Kh.40 Kh.41    7.2       350.       21.       0.       0.       0.       0.    
+   Kh.41 Kh.42    24.8       0.       90.       0.       0.       0.       0.    
+   Kh.42 Kh.43    3.       91.       39.       0.       0.       0.       0.    
+   Kh.43 Kh.44    7.7       399.      -14.       0.       0.       0.       0.    
+   Kh.44 Kh.45    4.8       13.      -11.       0.       0.       0.       0.    
+   Kh.45 Kh.46    2.3       21.       26.       0.       0.       0.       0.    
+   
+   #Kh.46 Kh.47    5.4       18.      -54.       0.       0.       0.       0.    
+   #Kh.47 Kh.48    16.4       7.      -31.       0.       0.       0.       0.    
+   #Kh.48 Kh.12    6.4       27.      -58.       0.       0.       0.       0.    
+   #Kh.48 Kh.50    5.4       85.      -30.       0.       0.       0.       0.    
+   #Kh.50 Kg.0    4.       188.      -46.       0.       0.       0.       0.    
+ endcenterline
+   
+   
+ centerline -extend left -title "Le vestiaire ; Kh.0'_Ki.1 Ki.16_Ki.17"
+  
+  date 1975.01.04
+    team "Pierre Rias"
+    team "Yves Bailly"
+  explo-date 1975.01.04
+    explo-team "Pierre Rias"
+    explo-team "Yves Bailly"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ 
+   data normal from to length backcompass backclino right left up down
+   Kh.0' Ki.1    15.2       0.       90.       0.       0.       0.       0.    
+   Ki.1 Ki.2    5.4       38.       8.       0.       0.       0.       0.    
+   Ki.2 Ki.3    11.4       80.       33.       0.       0.       0.       0.    
+   Ki.3 Ki.4    4.       32.       30.       0.       0.       0.       0.    
+   Ki.4 Ki.5    7.3       97.       30.       0.       0.       0.       0.    
+   Ki.5 Ki.6    5.1       14.       1.       0.       0.       0.       0.    
+   Ki.6 Ki.7    3.9       30.       22.       0.       0.       0.       0.    
+   Ki.7 Ki.8    4.2       355.       11.       0.       0.       0.       0.    
+   Ki.8 Ki.9    4.       345.       15.       0.       0.       0.       0.    
+   Ki.9 Ki.10    9.2       12.       6.       0.       0.       0.       0.    
+   Ki.10 Ki.11    3.4       75.       17.       0.       0.       0.       0.    
+   Ki.11 Ki.12    2.       94.       17.       0.       0.       0.       0.    
+   Ki.12 Ki.13    1.8       40.       12.       0.       0.       0.       0.    
+   Ki.13 Ki.14    4.1       86.       6.       0.       0.       0.       0.    
+   Ki.14 Ki.15    3.5       75.       5.       0.       0.       0.       0.    
+   Ki.15 Ki.16    7.4       75.       5.       0.       0.       0.       0.    
+   Ki.16 Ki.17    5.       35.       6.       0.       0.       0.       0.    
+ endcenterline
+  
+  
+ centerline -extend left -title "Le Vestiaire ; Ki.17_Kj.1 Kj.8_Kj.9"
+ 
+  date 1975.02
+    team "Bernard Lips"
+    team "Christian Rigaldie"
+  explo-date 1975.02
+    explo-team "Bernard Lips"
+    explo-team "Christian Rigaldie"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+ 
+   data normal from to length backcompass backclino right left up down
+   Ki.17 Kj.1    4.32       75.       0.       0.       0.       0.       0.    
+   Kj.1 Kj.2    4.78       127.      -3.       0.       0.       0.       0.    
+   Kj.2 Kj.3    2.71       175.       4.       0.       0.       0.       0.    
+   Kj.3 Kj.4    1.6       197.       27.       0.       0.       0.       0.    
+   Kj.4 Kj.5    4.92       155.       5.       0.       0.       0.       0.    
+   Kj.5 Kj.6    5.11       95.       11.       0.       0.       0.       0.    
+   Kj.6 Kj.7    4.06       120.       35.       0.       0.       0.       0.    
+   Kj.7 Kj.8    3.2       108.       21.       0.       0.       0.       0.    
+   Kj.8 Kj.9    2.47       136.       10.       0.       0.       0.       0.    
+ endcenterline
+  
+  
+ centerline -extend right -title "Le Vestiaire ; Kk.0_Kk.1 Kk.69_Kj.9"
+  date 1975.01.03
+    team "Jacques Lopez"
+    team "Xavier Thurin"
+  explo-date 1975.01.03
+    explo-team "Jacques Lopez"
+    explo-team "Xavier Thurin"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down   
+   Kk.16 Kk.17    8.9       180.      -2.       0.       0.       0.       0.    
+   Kk.17 Kk.18    5.       260.      -57.       0.       0.       0.       0.    
+   Kk.18 Kk.19    4.8       230.      -45.       0.       0.       0.       0.    
+   Kk.19 Kk.20    4.4       235.      -32.       0.       0.       0.       0.    
+   Kk.20 Kk.21    6.6       245.      -35.       0.       0.       0.       0.    
+   Kk.21 Kk.22    4.8       205.      -23.       0.       0.       0.       0.    
+   Kk.22 Kk.23    2.3       243.      -27.       0.       0.       0.       0.    
+   Kk.23 Kk.24    3.2       198.      -22.       0.       0.       0.       0.    
+   Kk.24 Kk.25    2.6       150.      -28.       0.       0.       0.       0.    
+   Kk.25 Kk.26    2.8       280.      -19.       0.       0.       0.       0.    
+   Kk.26 Kk.27    5.5       260.      -18.       0.       0.       0.       0.    
+   Kk.27 Kk.28    3.9       220.      -27.       0.       0.       0.       0.    
+   Kk.28 Kk.29    4.5       280.      -12.       0.       0.       0.       0.    
+   Kk.29 Kk.30    2.1       215.      -12.       0.       0.       0.       0.    
+   Kk.30 Kk.31    2.7       270.      -30.       0.       0.       0.       0.    
+   Kk.31 Kk.32    4.3       245.      -24.       0.       0.       0.       0.    
+   Kk.32 Kk.33    6.       210.      -18.       0.       0.       0.       0.    
+   Kk.33 Kk.34    3.2       256.      -36.       0.       0.       0.       0.    
+   Kk.34 Kk.35    2.5       295.      -24.       0.       0.       0.       0.    
+   Kk.35 Kk.36    3.1       250.      -24.       0.       0.       0.       0.    
+   Kk.36 Kk.37    6.2       238.      -15.       0.       0.       0.       0.    
+   Kk.37 Kk.38    4.7       227.      -10.       0.       0.       0.       0.    
+   Kk.38 Kk.39    3.9       250.      -10.       0.       0.       0.       0.    
+   Kk.39 Kk.40    3.       190.      -29.       0.       0.       0.       0.    
+   Kk.40 Kk.41    4.4       310.      -35.       0.       0.       0.       0.    
+   Kk.41 Kk.42    6.       288.      -17.       0.       0.       0.       0.    
+   Kk.42 Kk.43    4.4       267.      -27.       0.       0.       0.       0.    
+   Kk.43 Kk.44    3.8       340.      -14.       0.       0.       0.       0.    
+   Kk.44 Kk.45    2.6       207.      -32.       0.       0.       0.       0.    
+   Kk.45 Kk.46    3.2       275.      -18.       0.       0.       0.       0.    
+   Kk.46 Kk.47    2.       312.      -16.       0.       0.       0.       0.    
+   Kk.47 Kk.48    2.5       264.      -11.       0.       0.       0.       0.    
+   Kk.48 Kk.49    3.5       20.      -1.       0.       0.       0.       0.    
+   Kk.49 Kk.50    2.9       258.      -28.       0.       0.       0.       0.    
+   Kk.50 Kk.51    4.4       283.      -5.       0.       0.       0.       0.    
+   Kk.51 Kk.52    2.5       243.      -13.       0.       0.       0.       0.    
+   Kk.52 Kk.53    2.4       312.      -8.       0.       0.       0.       0.    
+   Kk.53 Kk.54    3.8       350.      -24.       0.       0.       0.       0.    
+   Kk.54 Kk.55    2.5       242.      -2.       0.       0.       0.       0.    
+   Kk.55 Kk.56    3.3       305.      -8.       0.       0.       0.       0.    
+   Kk.56 Kk.57    4.3       240.      -5.       0.       0.       0.       0.    
+   Kk.57 Kk.58    2.6       160.      -5.       0.       0.       0.       0.    
+   Kk.58 Kk.59    5.       192.      -3.       0.       0.       0.       0.    
+   Kk.59 Kk.60    7.6       190.      -1.       0.       0.       0.       0.    
+   Kk.60 Kk.61    5.5       230.       3.       0.       0.       0.       0.    
+   Kk.61 Kk.62    7.9       192.      -2.       0.       0.       0.       0.    
+   Kk.62 Kk.63    8.3       190.      -7.       0.       0.       0.       0.    
+   Kk.63 Kk.64    13.2       190.      -2.       0.       0.       0.       0.    
+   Kk.64 Kk.65    4.2       215.      -33.       0.       0.       0.       0.    
+   Kk.65 Kk.66    2.9       160.      -4.       0.       0.       0.       0.    
+   Kk.66 Kk.67    12.9       0.      -90.       0.       0.       0.       0.    
+   Kk.67 Kk.68    3.9       327.      -33.       0.       0.       0.       0.    
+   Kk.68 Kk.69    8.       275.      -37.       0.       0.       0.       0.    
+   Kk.69 Kj.9    7.2       0.      -90.       0.       0.       0.       0.    
+ endcenterline
+
+ endsurvey  
+

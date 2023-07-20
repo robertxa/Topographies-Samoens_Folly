@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source Crawleurs-tot.th
+source Cheneau-tot.th
 
 # Add config file
 input ../../../../../../config.thc 
@@ -110,5 +110,5 @@ layout my_layout-coupe
   
 endlayout
   
- export map  -projection plan -o Outputs/Crawleurs-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/Crawleurs-coupe.pdf
+ export map  -projection plan -o Outputs/Cheneau-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/Cheneau-coupe.pdf

@@ -4,14 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Crawleur -title "Méandre des Crawleurs"
-	SP-Crawleurs
+map MP-Cheneau -title "Cinglés, Cheneau et Chaos"
+	SP-cingles
 	break
-	SP-Crawleuraval   
+	SP-900-1   
 endmap
 
 
-#map MC-P11 -title "Méandre des Crawleurs"
-#	
-#endmap
+map MC-Cheneau -title "Cinglés, Cheneau et Chaos"
+	SC-avalc3
+	break
+	SC-avalc2
+endmap
    
