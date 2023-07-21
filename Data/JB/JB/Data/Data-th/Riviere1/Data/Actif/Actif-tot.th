@@ -4,15 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Stalactites -title "Galerie des Stalactites"
+survey Actif -title "Actif de la rivière"
 	# Données topos
-	input Data/Stalactites.th
+	input Data/Actif.th
 	
 	# Dessins
-	input Data/Stalactites.th2
-	input Data/Stalactites-coupe.th2
+	input Data/Actif.th2
+	input Data/Actif-coupe.th2
 
 	# Add maps
-	input Stalactites-maps.th
+	input Actif-maps.th
 	
 endsurvey

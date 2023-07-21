@@ -7,29 +7,12 @@ encoding  utf-8
 survey Riviere1 -title "1ère partie de la Rivière"
 
     ## Toute la zone du Bivouac -500 m
-    input Data/Riviere1/Riviere1-tot.th
-        equate Ke.31@Siphon69.Siphon69 Ke.31@Riviere1.Riviere1
-
+    input Data/Actif/Actif-tot.th
     ## Méandre du Court Circuit
-    input Data/CourtCircuit/CourtCircuit-tot.th
-        equate Kg.25@CourtCircuit.CourtCircuit Kg.25@Riviere1.Riviere1
-        join SP-siphon69@Siphon69 SP-CourtCircuit-1@CourtCircuit
-        #join SC-CourtCircuit-1@CourtCircuit SC-biv500c1@Riviere1
-        
-    ## Le Siphon 69
-    input Data/Siphon69/Siphon69-tot.th
-        equate Ke.25@Siphon69.Siphon69 Ke.25@CourtCircuit.CourtCircuit	# arrivée fossiles de la Gourance
-        #join SP-siphon69@Siphon69 SP-bivouac500c@Riviere1
-		join SC-siphon69@Siphon69 SC-siphon69c2@Riviere1
-    ## Etroiture de la 3ème
-    input Data/Etr3eme/Etr3eme-tot.th
-        equate Ke.29@Siphon69.Siphon69 Ke.29@Etr3eme.Etr3eme	# Etroiture de la 3eme
-        join SP-siphon69@Siphon69 SP-Etr3eme-2@Etr3eme
-    
-	# Galerie du P11
-	input Data/P11/p11-tot.th
-		equate Xav2016-23@P11.P11 Kg.24@CourtCircuit.CourtCircuit
-		##join SP-P11-h1 ???
+    input Data/Fossiles/Fossiles-tot.th
+        equate Ka.34@Actif.Actif Ka.34@Fossiles.Fossiles
+        equate Kb.33@Actif.Actif Kb.33@Fossiles.Fossiles
+        join SP-riv-2@Fossiles SP-riv-3@Actif -count 3  # Fermer le dessin de SP-riv-3 à deux endroits ?
 
     # Add maps
     input Riviere1-maps.th

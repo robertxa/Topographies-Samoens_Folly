@@ -5,14 +5,14 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Riviere1 -title "1ère partie de la Rivière"
+	MP-Fossile@Fossile
+	break
 	MP-Actif@Actif
-	#break
-	#MP-Fossile@Fossile
 endmap
 
 map MC-Riviere1 -title "1ère partie de la Rivière"
+	MP-Fossile@Fossile
+	break
 	MP-Actif@Actif
-	#break
-	#MP-Fossile@Fossile
 endmap
    

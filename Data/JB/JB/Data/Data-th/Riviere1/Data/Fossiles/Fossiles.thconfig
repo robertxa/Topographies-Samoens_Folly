@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 # Import DATA  
-source Stalactites-tot.th
+source Fossiles-tot.th
 
 # Add config file
 input ../../../../../../config.thc 
@@ -35,7 +35,7 @@ layout layout_plan
 	
 	#debug scrap-names
 	  
-	doc-title "Stalactites-plan"
+	doc-title "Fossiles-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1250
@@ -81,7 +81,7 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 0 100 sw Outputs/Stalactites-coupe2022b.pdf
+	#map-image 0 100 sw Outputs/Fossiles-coupe2022b.pdf
   
 endlayout
   
@@ -94,7 +94,7 @@ layout layout_coupe
 	
 	#debug scrap-names
 
-	doc-title "Stalactites-coupe"
+	doc-title "Fossiles-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
 	#base-scale 1 2000
@@ -156,14 +156,14 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Stalactites-plan.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Stalactites-coupe.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Fossiles-plan.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Fossiles-coupe.xvi
 
-select MP-Stalactites-tot
+select MP-Fossiles-tot
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/Stalactites-coupe.pdf
-	export map -layout layout_plan -o Outputs/Stalactites-plan.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/Fossiles-coupe.pdf
+	export map -layout layout_plan -o Outputs/Fossiles-plan.pdf
  
 # Export des modeles 3D
-	export model -o Outputs/Stalactites.lox
+	export model -o Outputs/Fossiles.lox

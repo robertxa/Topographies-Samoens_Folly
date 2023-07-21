@@ -6,17 +6,19 @@ encoding  utf-8
 
 #### Plan
 
-map MP-Stalactites -title "Galerie des Stalactites"
-	SP-Stalactites-1
+map MP-Actif -title "Rivière entre -250 m et -500 m"
+	SP-riv-1
 	break
-	SP-Stalactites-2
+	SP-riv-3
+	break
+	SP-riv-4
 endmap
 
 ########## Coupe
 
-map MC-Stalactites -title "Galerie des Stalactites"
-	SC-Stalactites-1
+map MC-Actif -title "Rivière entre -250 m et -500 m"
+	SC-Actif-1
 	break
-	SC-Stalactites-2
+	SC-Actif-2
 endmap
 

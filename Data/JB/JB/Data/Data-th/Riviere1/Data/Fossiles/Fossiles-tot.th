@@ -4,15 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Stalactites -title "Galerie des Stalactites"
+survey Fossiles -title "Fossiles Historiques"
 	# Données topos
-	input Data/Stalactites.th
+	input Data/Fossiles.th
 	
 	# Dessins
-	input Data/Stalactites.th2
-	input Data/Stalactites-coupe.th2
+	input Data/Fossiles.th2
+	input Data/Fossiles-coupe.th2
 
 	# Add maps
-	input Stalactites-maps.th
+	input Fossiles-maps.th
 	
 endsurvey
