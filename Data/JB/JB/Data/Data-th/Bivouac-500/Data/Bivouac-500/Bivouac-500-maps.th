@@ -5,20 +5,20 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Bivouac-500 -title "Bivouac -500 m"
-	SP-riv-6
+	SP-riv-6	# Ke.33 --> Ke57
 	break
-	SP-bivouac500
+	SP-bivouac500	# Gp
 	break
-	SP-bivouac500b
+	SP-bivouac500b # Kg.47 --> Kg.54 + Ke.56
 	break
-	SP-Riv-8
+	SP-riv-8	# Kg.26 --> Kg.46
 endmap
 
 map MC-Bivouac-500 -title "Bivouac -500 m"
-	SC-biv500c
+	SC-biv500c1 # Kg.26 --> Kg.54
 	break
-	SC-siphon69c2
+	SC-siphon69c2 # Ke.32 (en double, en supprimmer 1 ?) --> Ke.45
 	break
-	SC-bib500c3
+	SC-biv500c3	# Gp
 endmap
    

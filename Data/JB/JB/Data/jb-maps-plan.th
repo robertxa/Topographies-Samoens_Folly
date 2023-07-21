@@ -305,17 +305,17 @@ map MP-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
 	SP-riv-5
 endmap
 
-map MP-bivouac-500 -title "Le bivouac -500"
-	SP-riv-6
-	break
-	SP-bivouac500b
-	break
-	SP-riv-8
+#map MP-bivouac-500 -title "Le bivouac -500"
+	#SP-riv-6
+	#break
+	#SP-bivouac500b
+	#break
+	#SP-riv-8
 	#break
 	#SP-bivouac500c
-	break
-	SP-bivouac500
-endmap
+	#break
+	#SP-bivouac500
+#endmap
 
 #map MP-siphon69 -title "Siphon 69"
 #	SP-Riv6
@@ -478,8 +478,8 @@ endmap
 map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
 	#MP-P11@P11
 	#break
-	MP-bivouac-500
-	break
+	#MP-bivouac-500
+	#break
 	MP-Bivouac-500@Bivouac-500
 	break
 	MP-plafond-Gourance@GoureToi	[-60 60 m] above

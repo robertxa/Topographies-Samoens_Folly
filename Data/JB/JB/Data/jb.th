@@ -354,9 +354,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Data-th/NonTriees/jb-riv.th
 		### Equates data
 			equate  Jf.14@jb-amonts2  Jf.14@jb-riv
-    		equate  Ke.29@jb-riv  Ke.29@jb-riv2
-    		equate  Ke.43@jb-riv  Ke.43@jb-riv2
-    		equate  Ke.33@jb-riv  Ke.33@jb-riv2
+    		#equate  Ke.43@jb-riv  Ke.43@jb-riv2
+			#equate  Ke.33@jb-riv  Ke.33@jb-riv2
+
 		### Joins dessins Plan
 		### Joins dessins Coupe
 	input Data-th/NonTriees/jb-riv2.th
@@ -375,31 +375,26 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Plan/riv-debut.th2
 	input Drawing-th2/Plan/riviere.th2
 			join SP-riv-3 SP-riv-4
-	input Drawing-th2/Plan/bivouac500.th2
-			join SP-bivouac500 SP-riv-5
+	#input Drawing-th2/Plan/bivouac500.th2
+	#		join SP-bivouac500 SP-riv-5
 	input Drawing-th2/Coupe/aval400.th2
 			join SC-400c1 SC-biv500c4
 	
 	
-	## Le Bivouac -500
 	input Drawing-th2/Coupe/aval500.th2
-		# join 
 
-	
+
+	## Le Bivouac -500
 	input Data-th/Bivouac-500/Bivouac-500-tot
+		equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@jb-riv
+		join SP-riv-6@Bivouac-500.Bivouac-500 SP-riv-5
+		join SC-siphon69c2@Bivouac-500.Bivouac-500 SC-biv500c4
 	
-	## Le Siphon 69
-	#input Data-th/Siphon69/Siphon69-tot
-		equate Ke.31@Siphon69.Siphon69.Bivouac-500 Ke.31@jb-riv
-		join SC-siphon69@Siphon69.Bivouac-500 SC-siphon69c2
-
-
-
 	## La zone de la Gourance
 	input Data-th/Gourance/Gourance-tot.th
 		equate Kg.21@Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
 		join SP-gourance-1@Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
-		join SC-balcon3@Gourance SC-CourtCircuit-2@CourtCircuit.Bivouac-500
+		#join SC-balcon3@Gourance SC-CourtCircuit-2@CourtCircuit.Bivouac-500
 	# Explo 2013 dans l'aval de la Gourance
 	input Data-th/Gourance2013/gourance2013-tot.th
 			equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@Gourance.Gourance

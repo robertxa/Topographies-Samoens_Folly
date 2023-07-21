@@ -7,7 +7,8 @@ encoding  utf-8
 map MP-Bivouac-500 -title "Zone du Bivouac -500 m"
 	MP-P11@P11
 	break
-
+	MP-Bivouac-500@Bivouac-500
+	break
 	MP-Etr3eme@Etr3eme
 	break
 	MP-CourtCircuit@CourtCircuit
@@ -17,6 +18,8 @@ endmap
 
 map MC-Bivouac-500 -title "Zone du Bivouac -500 m"
 	MC-Etr3eme@Etr3eme
+	break
+	MC-Bivouac-500@Bivouac-500
 	break
 	MC-CourtCircuit@CourtCircuit
 	break

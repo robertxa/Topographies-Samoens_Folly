@@ -761,54 +761,54 @@ survey jb-riv2 -title "JB rivière deuxième partie"
 #  endcenterline
   
   
- centerline -extend left -title " Ke.43_Gp.0 Gp.6_Gp.7"
-    # Etroiture Kiki
-  date 2010.02.24
-    team "David Parrot"
-    team "Olivier Gente"
-    team "Frédéric Delègue"
-  explo-date 2010.02.24
-    explo-team "David Parrot"
-    explo-team "Olivier Gente"
-    explo-team "Frédéric Delègue"
+#  centerline -extend left -title " Ke.43_Gp.0 Gp.6_Gp.7"
+#     # Etroiture Kiki
+#   date 2010.02.24
+#     team "David Parrot"
+#     team "Olivier Gente"
+#     team "Frédéric Delègue"
+#   explo-date 2010.02.24
+#     explo-team "David Parrot"
+#     explo-team "Olivier Gente"
+#     explo-team "Frédéric Delègue"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
  
-   data normal from to length compass clino left right up down
-   Ke.43 Gp.0    0.       0.       0.       4.92       4.42       3.52       5.26    
-   extend right
-   Gp.0 Gp.1    8.26       348.       25.       0.      0.69       4.14       1.    
-   Gp.1 Gp.2    10.32000       109.       46.      0.75      0.42       2.2       1.    
-   Gp.2 Gp.3    6.16       40.       39.      0.8       0.       1.4       0.    
-   Gp.3 Gp.4    4.06       106.       5.       1.1      0.2       1.27      0.5    
-   Gp.4 Gp.5    8.1       74.       0.      0.68       1.13      0.79      0.5    
-   Gp.5 Gp.6    4.96       74.       26.      0.62      0.64       1.04      0.5    
-   Gp.6 Gp.7    8.2       63.       34.      0.8      0.4       1.2      0.5    
- endcenterline
+#    data normal from to length compass clino left right up down
+#    Ke.43 Gp.0    0.       0.       0.       4.92       4.42       3.52       5.26    
+#    extend right
+#    Gp.0 Gp.1    8.26       348.       25.       0.      0.69       4.14       1.    
+#    Gp.1 Gp.2    10.32000       109.       46.      0.75      0.42       2.2       1.    
+#    Gp.2 Gp.3    6.16       40.       39.      0.8       0.       1.4       0.    
+#    Gp.3 Gp.4    4.06       106.       5.       1.1      0.2       1.27      0.5    
+#    Gp.4 Gp.5    8.1       74.       0.      0.68       1.13      0.79      0.5    
+#    Gp.5 Gp.6    4.96       74.       26.      0.62      0.64       1.04      0.5    
+#    Gp.6 Gp.7    8.2       63.       34.      0.8      0.4       1.2      0.5    
+#  endcenterline
   
   
- centerline -extend right -title " Ke.33_Gq.0 Gq.1_Gq.2"
-    # Coulée de Calcite
-  date 2010.02.24
-    team "David Parrot"
-    team "Olivier Gente"
-    team "Frédéric Delègue"
-  explo-date 2010.02.24
-    explo-team "David Parrot"
-    explo-team "Olivier Gente"
-    explo-team "Frédéric Delègue"
+#  centerline -extend right -title " Ke.33_Gq.0 Gq.1_Gq.2"
+#     # Coulée de Calcite
+#   date 2010.02.24
+#     team "David Parrot"
+#     team "Olivier Gente"
+#     team "Frédéric Delègue"
+#   explo-date 2010.02.24
+#     explo-team "David Parrot"
+#     explo-team "Olivier Gente"
+#     explo-team "Frédéric Delègue"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
  
-   data normal from to length compass clino left right up down
-   Ke.33 Gq.0    5.       10.       10.       2.26       1.76       3.67       1.    
-   Gq.0 Gq.1    21.4       70.       39.       2.53       2.88       1.87       1.    
-   Gq.1 Gq.2    5.8       355.       16.       2.53       2.88       1.87       1.    
- endcenterline
+#    data normal from to length compass clino left right up down
+#    Ke.33 Gq.0    5.       10.       10.       2.26       1.76       3.67       1.    
+#    Gq.0 Gq.1    21.4       70.       39.       2.53       2.88       1.87       1.    
+#    Gq.1 Gq.2    5.8       355.       16.       2.53       2.88       1.87       1.    
+#  endcenterline
 
  endsurvey  
 
