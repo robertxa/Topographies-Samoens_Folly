@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Fond -title "Bivouac -900 m, Sezhommes et siphons"
+
+    ## Réseau de Sezhommes
+    input Data/Sezhommes/Sezhommes-tot.th
+
+    ## Siphons terminaux
+    input Data/Siphons/Siphons-tot.th
+        equate S1-0@siphons_aval.Siphons Kp.24@sezhommes1975.Sezhommes
+		join SP-sezhommes2@Sezhommes SP-S1@Siphons
+		join SC-avalc1@Sezhommes SC-S1-c@Siphons
+
+    # Add maps
+    input Fond-maps.th
+
+endsurvey

@@ -5,17 +5,28 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Gourance -title "La Gourance"
-	SP-gourance2
+	MP-plafond-Gourance@GoureToi	[-60 60 m] above
+	#MP-plafond-Gourance@GoureToi	[-60 60 m] below
 	break
-	SP-gourance-1 
+	MP-Damocles@GoureToi
+	break
+	MP-Gourance2013@Gourance2013
+	break
+	MP-Gourance@Gourance
+	#SP-gourance2
+	#break
+	#SP-gourance-1 
 	#break
 	#SP-gourance-4
 endmap
 
 
 map MC-Gourance -title "La Gourance"
-	SC-balcon3
+	MC-plafond-Gourance@GoureToi
+	#break
+	#MC-Damocles@GoureToi
 	break
-	SC-balcon2
-endmap
-   
+	MC-Gourance2013@Gourance2013
+	break
+	MC-Gourance@Gourance
+endmap   

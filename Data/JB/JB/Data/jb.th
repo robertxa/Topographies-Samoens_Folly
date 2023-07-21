@@ -16,7 +16,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	
 	# Le C37
-	input Data-th/C37/Data/C37_2020.th
+	input Data-th/C37/Data/C37/Data/C37_2020.th
 		### Equates data
 			equate Aa.28@jb-amonts1 0.2020@C37_2020
 	input Drawing-th2/Plan/JB-C37.th2
@@ -363,7 +363,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Equates data
 			equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
 
-			## Ajout galerie des Sénécaliens
+			## Ajout galerie des Sénécaliens --> Voir B19 !!!
     		equate  Da.58@jb-amonts2  Da.58@Senecaliens.Senecaliens
     		equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
 
@@ -371,6 +371,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
 			#join V4-2 pAlain # au niveau du Téléphérique
 			join SC-V4c1 SC-dupontc2
+	
 	## Rivière à l'aval de la Jean Dupont
 	input Drawing-th2/Plan/riv-debut.th2
 	input Drawing-th2/Plan/riviere.th2
@@ -384,74 +385,31 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Coupe/aval500.th2
 
 
+################# Structure OK  #######################
 	## Le Bivouac -500
 	input Data-th/Bivouac-500/Bivouac-500-tot
 		equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@jb-riv
 		join SP-riv-6@Bivouac-500.Bivouac-500 SP-riv-5
 		join SC-siphon69c2@Bivouac-500.Bivouac-500 SC-biv500c4
-	
+
 	## La zone de la Gourance
 	input Data-th/Gourance/Gourance-tot.th
-		equate Kg.21@Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
-		join SP-gourance-1@Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
-		#join SC-balcon3@Gourance SC-CourtCircuit-2@CourtCircuit.Bivouac-500
-	# Explo 2013 dans l'aval de la Gourance
-	input Data-th/Gourance2013/gourance2013-tot.th
-			equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@Gourance.Gourance
-			join SC-Gourance2013-c1@Gourance2013 SC-balcon2@Gourance	# Escalade 2013 dans l'aval de la Gourance
-	# Plafonds de la Gourance
-	input Data-th/GoureToiDeLa/goureToiDeLa-tot.th
-			# Damocles
-			equate Kg.9@Damocles.GoureToi Kg.9@Gourance.Gourance	# Si dans fichier Damocles2010.th --> A faire !!!
-			# Plafonds de la Gourance
-			equate  2014-SL-35@GoureToiDeLa.GoureToi Kh.46@Gourance.Gourance    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
-			#equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
-			join SC-balconc1@Toussaint SC-GourecoupeSteph3@GoureToi
-			join SC-GourecoupeSteph3@GoureToi SC-balcon2@Gourance # Plafonds de la Gourance
-			join SC-CourtCircuit-2@CourtCircuit.Bivouac-500 SC-Gourance2022-1@GoureToi
+		equate Kg.21@Gourance.Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
+		join SP-gourance-1@Gourance.Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
+		join SC-balconc1@Toussaint.Riviere2 SC-GourecoupeSteph3@GoureToi.Gourance
 
-	## Riviere de la base de la Gourance aux Cinglés
-	## Le siphon 09
-	input Data-th/Siphon09/Siphon09-tot.th
-		equate Kh.37@Siphon09.Siphon09 Kh.37@Toussaint.Toussaint
-		join SP-Siphon09@Siphon09 SP-gourance5@Toussaint
-		join SC-Siphon09@Siphon09 SC-avalc5@Toussaint
-	
-	## Cascade de la Toussaint
-	input Data-th/Toussaint/Toussaint-tot.th
-		equate Kh.46@Toussaint.Toussaint Kh.46@Gourance.Gourance
-		join SP-gourance5@Toussaint SP-gourance2@Gourance
-		#join SC-avalc5@Toussaint SC-balconc1	#??? 
+	## Rivière de la base de la Gourance aux Cinglés
+	input Data-th/Riviere2/Riviere2-tot.th
+		equate Kh.46@Toussaint.Toussaint.Riviere2 Kh.46@Gourance.Gourance.Gourance
+		join SP-gourance5@Toussaint.Riviere2 SP-gourance2@Gourance.Gourance
+		##join SC-avalc5@Toussaint SC-balconc1	#??? 
 
-	## Cheneau, Bivouac -900, Des Cinglés au Bivouac -900
-	# Cette topographie est pour l'instant la topo originale de 1991. Il faut la remplacer par la retopographie de 2012 par l'USAN.
-	input Data-th/Cheneau/Cheneau-tot.th
-		equate Kk.16@Cheneau.Cheneau	Kk.16@Toussaint.Toussaint
-		join SP-cingles@Cheneau SP-riv-11@Toussaint
-		join SC-avalc3@Cheneau SC-avalc4@Toussaint
-
-	## Galerie de la Bonne Conscience
-	input Data-th/Conscience/Conscience-tot.th
-		equate Km.8@Conscience.Conscience Km.8@Cheneau.Cheneau	#Kl.0@Chaos.Chaos/Cheneau
-		join SP-conscience-1@Conscience SP-900-1@Cheneau
-		join SC-conscience-1@Conscience SC-avalc2@Cheneau
-	## Galerie de la Nuit Blanche
-	input Data-th/NuitBlanche/NuitBlanche-tot.th
-		equate Kn.4@NuitBlanche.NuitBlanche Kn.4@Cheneau.Cheneau
-		join SC-NuitBlanche@NuitBlanche SC-avalc2@Cheneau
-
-	## Galerie de Sezhommes avec zone de -900 m
-	input Data-th/Sezhommes/sezhommes-tot.th
-			equate Kn.1@sezhommes1975.Sezhommes Kn.1@Cheneau.Cheneau
-			equate 46.2020@sezhommes2020.Sezhommes Kn.4@Cheneau.Cheneau	# sommet du P6 juste avant le bivouac -900 m
-			join SP-sezhommes2020-1@Sezhommes SP-900-1@Cheneau	# au niveau bivouac -900 m
-			join SC-avalc2@Cheneau SC-sezhommes2020-3@Sezhommes
-
-	## Zone des siphons terminaux
-	input Data-th/Siphons/siphons-tot.th
-			equate S1-0@siphons_aval.Siphons Kp.24@sezhommes1975.Sezhommes
-			join SP-sezhommes2@Sezhommes SP-S1@Siphons
-			join SC-avalc1@Sezhommes SC-S1-c@Siphons
+	## Galerie de Sezhommes avec zone de -900 m et siphons terminaux
+	input Data-th/Fond/Fond-tot.th
+		equate Kn.1@sezhommes1975.Sezhommes.Fond Kn.1@Cheneau.Cheneau.Riviere2
+		equate 46.2020@sezhommes2020.Sezhommes.Fond Kn.4@Cheneau.Cheneau.Riviere2	# sommet du P6 juste avant le bivouac -900 m
+		join SP-sezhommes2020-1@Sezhommes.Fond SP-900-1@Cheneau.Riviere2	# au niveau bivouac -900 m
+		join SC-avalc2@Cheneau.Riviere2 SC-sezhommes2020-3@Sezhommes.Fond
 
 
 	##################################################################################################

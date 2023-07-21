@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Stalactites -title "Galerie des Stalactites"
+	# Données topos
+	input Data/Stalactites.th
+	
+	# Dessins
+	input Data/Stalactites.th2
+	input Data/Stalactites-coupe.th2
+
+	# Add maps
+	input Stalactites-maps.th
+	
+endsurvey

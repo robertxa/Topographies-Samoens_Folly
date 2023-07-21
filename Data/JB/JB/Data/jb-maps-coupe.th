@@ -198,44 +198,17 @@ endmap
 
 map MC-bivouac-500 -title "Le Bivouac -500 m"
 	SC-biv500c4
-	#break
-	#SC-balcon4
-	#break
-	#SC-balcon3b
 	break
-	SC-balcon3@Gourance
-	#break
-	#SC-biv500c1
-	#break
-	#SC-biv500c2
-	#break
-	#SC-biv500c3
-	#break
-	#SC-siphon69c2
+	SC-balcon3@Gourance.Gourance
 endmap
 
 map MC-gourance -title "La Gourance"      
 	#SC-balconc1
 	#break
-	SC-balcon2@Gourance
+	SC-balcon2@Gourance.Gourance
 	break
-	SC-Gourance2013-c1@Gourance2013
+	SC-Gourance2013-c1@Gourance2013.Gourance
 endmap
-
-#map MC-aval-cheneau -title "Le cheneau et la salle du Chaos"
-#	SC-avalc4
-#	break
-#	SC-avalc5
-	#break
-	#SC-avalc3
-#endmap
-
-#map MC-Cheneau -title "Cascade des Cinglés et puits du Cheneau"
-#	SC-avalc2
-#endmap
-
-
-#preview below JB-amontsuite # pour JB-aval-riviere à partir solitaire
 
 
 ##########################################################################
@@ -367,34 +340,31 @@ map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"
 	MC-bivouac-500
 	break
 	MC-Bivouac-500@Bivouac-500
-	#break
-	#MC-P11@P11
-	#break
-	#MC-Siphon69@Siphon69
 	break
-	MC-plafond-Gourance@GoureToi
+	MC-plafond-Gourance@GoureToi.Gourance
 	break
 	MC-gourance
 endmap
 
-map MC-aval-800 -title "Le Cheneau et la salle du Chaos"
-	#MC-aval-cheneau
-	MC-Toussaint@Toussaint
-	break
-	MC-Siphon09@Siphon09
-	break
-	MC-Conscience@Conscience
-endmap
+#map MC-aval-800 -title "Le Cheneau et la salle du Chaos"
+	#MC-Toussaint@Toussaint
+	#break
+	#MC-Siphon09@Siphon09
+	#break
+	#MC-Conscience@Conscience
+#endmap
 
-map MC-aval-900 -title "Du Bivouac -900 au siphon terminal"
-	MC-Cheneau@Cheneau
-	break
-	MC-NuitBlanche@NuitBlanche
-	break
-	MC-sezhommes@Sezhommes
-	break
-	MC-siphons@Siphons
-endmap
+#map MC-aval-900 -title "Du Bivouac -900 au siphon terminal"
+	#MC-Cheneau@Cheneau
+	#break
+	#MC-NuitBlanche@NuitBlanche
+	
+	#break
+	#MC-Fond@Fond
+	#MC-sezhommes@Sezhommes
+	#break
+	#MC-siphons@Siphons
+#endmap
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
@@ -412,10 +382,14 @@ map MC-JB-coupe-tot -title "Gouffre Jean-Bernard"
 	MC-Jean-Dupond
 	break
 	MC-Bivouac-500-Gourance
+	
 	break
-	MC-aval-800
+	MC-Riviere2@Riviere2
 	break
-	MC-aval-900
+	MC-Fond@Fond
+	#MC-aval-800
+	#break
+	#MC-aval-900
 endmap
 
 
@@ -500,13 +474,16 @@ map MC-Aval -title "V4-Siphons"
 	break
 	MC-gourance
 
-
 	break
-	MC-aval-800
+	MC-Riviere2@Riviere2
 	break
-	MC-aval-900
+	MC-Fond@Fond
+	#break
+	#MC-aval-800
+	#break
+	#MC-aval-900
 	break
-	MC-siphons@Siphons
+	MC-siphons@Siphons.Fond
 endmap
 
 map MC-V4-Siphons-Spelunca

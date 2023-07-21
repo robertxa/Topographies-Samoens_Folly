@@ -4,16 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Toussaint -title "Cascade de la Toussaint"
+survey AffluentC14 -title "Affluent du C14"
 
-    input Data/Toussaint.th
+    input Data/affluentC14.th
 
     # Dessins en plan
-    input Data/Toussaint.th2
+    input Data/affluentC14.th2
     # Dessins en coupe
-    input Data/Toussaint-coupe.th2
+    input Data/affluentC14-coupe.th2
     
     # Add maps
-    input Toussaint-maps.th
+    input affluentC14-maps.th
 
 endsurvey

@@ -6,12 +6,24 @@ encoding  utf-8
 
 survey Gourance -title "La Gourance"
 
-    input Data/Gourance.th
-
-    # Dessins en plan
-    input Data/Gourance.th2
-    # Dessins en coupe
-    input Data/Gourance-coupe.th2
+    ## La zone de la Gourance
+	input Data/Gourance/Gourance-tot.th
+		#equate Kg.21@Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
+		#join SP-gourance-1@Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
+	# Explo 2013 dans l'aval de la Gourance
+	input Data/Gourance2013/gourance2013-tot.th
+			equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@Gourance.Gourance
+			join SC-Gourance2013-c1@Gourance2013 SC-balcon2@Gourance	# Escalade 2013 dans l'aval de la Gourance
+	# Plafonds de la Gourance
+	input Data/GoureToiDeLa/goureToiDeLa-tot.th
+			# Damocles
+			equate Kg.9@Damocles.GoureToi Kg.9@Gourance.Gourance	# Si dans fichier Damocles2010.th --> A faire !!!
+			# Plafonds de la Gourance
+			equate  2014-SL-35@GoureToiDeLa.GoureToi Kh.46@Gourance.Gourance    # Sur le terrain, il semblerait que ce soit ce point Kh.46, mais sur la topo, ça ne colle plus...
+			#equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
+#			join SC-balconc1@Toussaint.Riviere2 SC-GourecoupeSteph3@GoureToi
+			join SC-GourecoupeSteph3@GoureToi SC-balcon2@Gourance # Plafonds de la Gourance
+			#join SC-CourtCircuit-2@CourtCircuit.Bivouac-500 SC-Gourance2022-1@GoureToi
     
     # Add maps
     input Gourance-maps.th

@@ -4,18 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Toussaint -title "Cascade de la Toussaint"
-	SP-gourance5
-	break
-	SP-riv-10
-	break
-	SP-riv-11 
+map MP-Riviere1 -title "1ère partie de la Rivière"
+	MP-Actif@Actif
+	#break
+	#MP-Fossile@Fossile
 endmap
 
-
-map MC-Toussaint -title "Cascade de la Toussaint"
-	SC-avalc5
-	break
-	SC-avalc4
+map MC-Riviere1 -title "1ère partie de la Rivière"
+	MP-Actif@Actif
+	#break
+	#MP-Fossile@Fossile
 endmap
    

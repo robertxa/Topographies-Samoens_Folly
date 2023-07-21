@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Toussaint -title "Cascade de la Toussaint"
+
+    input Data/Toussaint.th
+
+    # Dessins en plan
+    input Data/Toussaint.th2
+    # Dessins en coupe
+    input Data/Toussaint-coupe.th2
+        join SC-balconc1 SC-avalc5
+    
+    # Add maps
+    input Toussaint-maps.th
+
+endsurvey
