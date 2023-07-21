@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Bivouac-500 -title "Bivouac -500 m"
+
+    input Data/Bivouac-500.th
+
+    # Dessins en plan
+    input Data/Bivouac-500.th2
+    # Dessins en coupe
+    input Data/Bivouac-500-coupe.th2
+    
+    # Add maps
+    input Bivouac-500-maps.th
+
+endsurvey

@@ -4,11 +4,21 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Etr3eme -title "Etroiture de la 3ième"
-	SP-Etr3eme
+map MP-Bivouac-500 -title "Bivouac -500 m"
+	SP-riv-6
+	break
+	SP-bivouac500
+	break
+	SP-bivouac500b
+	break
+	SP-Riv-8
 endmap
 
-map MC-Etr3eme -title "Etroiture de la 3ième"
-	SC-Etr3eme
+map MC-Bivouac-500 -title "Bivouac -500 m"
+	SC-biv500c
+	break
+	SC-siphon69c2
+	break
+	SC-bib500c3
 endmap
    

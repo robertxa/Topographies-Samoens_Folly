@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Bivouac-500 -title "Zone du Bivouac -500 m"
+	MP-P11@P11
+	break
+
+	MP-Etr3eme@Etr3eme
+	break
+	MP-CourtCircuit@CourtCircuit
+	break
+	MP-Siphon69@Siphon69
+endmap
+
+map MC-Bivouac-500 -title "Zone du Bivouac -500 m"
+	MC-Etr3eme@Etr3eme
+	break
+	MC-CourtCircuit@CourtCircuit
+	break
+	MC-P11@P11
+	break
+	MC-Siphon69@Siphon69
+endmap
+   

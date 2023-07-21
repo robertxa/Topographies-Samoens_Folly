@@ -311,19 +311,19 @@ map MP-bivouac-500 -title "Le bivouac -500"
 	SP-bivouac500b
 	break
 	SP-riv-8
-	break
-	SP-bivouac500c
+	#break
+	#SP-bivouac500c
 	break
 	SP-bivouac500
 endmap
 
-map MP-siphon69 -title "Siphon 69"
-	SP-Riv6
-	break
-	SP-riv-7
-	#break
-	#SP-siphon69
-endmap
+#map MP-siphon69 -title "Siphon 69"
+#	SP-Riv6
+#	break
+#	SP-riv-7
+#	#break
+#	#SP-siphon69
+#endmap
 
 map MP-gourance -title "La Gourance"      
 	SP-gourance-1@Gourance
@@ -476,13 +476,11 @@ map MP-Jean-Dupond -title "Le début de la rivière aval"
 endmap
 
 map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
-	MP-P11@P11
-	break
+	#MP-P11@P11
+	#break
 	MP-bivouac-500
 	break
-	MP-siphon69
-	break
-	MP-Siphon69@Siphon69
+	MP-Bivouac-500@Bivouac-500
 	break
 	MP-plafond-Gourance@GoureToi	[-60 60 m] above
 	#MP-plafond-Gourance@GoureToi	[-60 60 m] below

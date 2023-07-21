@@ -363,55 +363,43 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Equates data
 			equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
 
+			## Ajout galerie des Sénécaliens
     		equate  Da.58@jb-amonts2  Da.58@Senecaliens.Senecaliens
     		equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
 
 	## L'arrivée à la cascade Jean Dupont
 	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
-		### Joins dessins Plan
 			#join V4-2 pAlain # au niveau du Téléphérique
 			join SC-V4c1 SC-dupontc2
 	## Rivière à l'aval de la Jean Dupont
 	input Drawing-th2/Plan/riv-debut.th2
 	input Drawing-th2/Plan/riviere.th2
-		### Joins dessins Plan
 			join SP-riv-3 SP-riv-4
 	input Drawing-th2/Plan/bivouac500.th2
-		### Joins dessins Plan
 			join SP-bivouac500 SP-riv-5
 	input Drawing-th2/Coupe/aval400.th2
-		### Joins dessins Coupe
 			join SC-400c1 SC-biv500c4
+	
+	
 	## Le Bivouac -500
 	input Drawing-th2/Coupe/aval500.th2
 		# join 
 
-	## Le Siphon 69
-	input Data-th/Siphon69/Siphon69-tot
-		equate Ke.31@Siphon69.Siphon69 Ke.31@jb-riv
-		equate Ke.25@Siphon69.Siphon69 Ke.25@jb-riv	# arrivée fossiles de la Gourance
-		join SP-siphon69@Siphon69 SP-bivouac500c
-		join SC-siphon69@Siphon69 SC-siphon69c2
 	
-	## Etroiture de la 3ème
-	#input Data-th/Etr3eme/Etr3eme-tot.th
-		equate Ke.29@Siphon69.Siphon69 Ke.29@jb-riv2	# Etroiture de la 3eme
+	input Data-th/Bivouac-500/Bivouac-500-tot
+	
+	## Le Siphon 69
+	#input Data-th/Siphon69/Siphon69-tot
+		equate Ke.31@Siphon69.Siphon69.Bivouac-500 Ke.31@jb-riv
+		join SC-siphon69@Siphon69.Bivouac-500 SC-siphon69c2
 
 
-
-	# Entre le bivouac -500 et la Gourance
-	# Galerie du P11
-	input Data-th/P11/p11-tot.th
-		### Equates data
-			equate Xav2016-23@P11.P11 Kg.24@jb-riv
-		### Joins dessins Plan		
-			##join SP-P11-h1 ???
 
 	## La zone de la Gourance
 	input Data-th/Gourance/Gourance-tot.th
-		equate Kg.21@Gourance.Gourance Kg.21@jb-riv
-		join SP-gourance-1@Gourance SP-bivouac500c
-		join SC-balcon3@Gourance SC-balcon3b
+		equate Kg.21@Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
+		join SP-gourance-1@Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
+		join SC-balcon3@Gourance SC-CourtCircuit-2@CourtCircuit.Bivouac-500
 	# Explo 2013 dans l'aval de la Gourance
 	input Data-th/Gourance2013/gourance2013-tot.th
 			equate  2013c-xa-11@Gourance2013.Gourance2013 Kh.4@Gourance.Gourance
@@ -425,7 +413,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			#equate 15@gour2022.GoureToi Gn.4@jb-riv2	# A peu près OK, A modifier si on met le Damocles avec la Gourance
 			join SC-balconc1@Toussaint SC-GourecoupeSteph3@GoureToi
 			join SC-GourecoupeSteph3@GoureToi SC-balcon2@Gourance # Plafonds de la Gourance
-			join SC-balcon3b SC-Gourance2022-1@GoureToi
+			join SC-CourtCircuit-2@CourtCircuit.Bivouac-500 SC-Gourance2022-1@GoureToi
 
 	## Riviere de la base de la Gourance aux Cinglés
 	## Le siphon 09

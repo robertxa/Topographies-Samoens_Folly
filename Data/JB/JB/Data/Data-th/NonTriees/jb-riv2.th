@@ -691,43 +691,43 @@ survey jb-riv2 -title "JB rivière deuxième partie"
  #endcenterline
   
   
- centerline -extend right -title " Ke.29_Go.0 Go.14_Go.15"
-    # Etroiture de la 3ème
-  date 2010.02.24
-    team "David Parrot"
-    team "Olivier Gente"
-    team "Frédéric Delègue"
-  explo-date 2010.02.24
-    explo-team "David Parrot"
-    explo-team "Olivier Gente"
-    explo-team "Frédéric Delègue"
+#  centerline -extend right -title " Ke.29_Go.0 Go.14_Go.15"
+#     # Etroiture de la 3ème
+#   date 2010.02.24
+#     team "David Parrot"
+#     team "Olivier Gente"
+#     team "Frédéric Delègue"
+#   explo-date 2010.02.24
+#     explo-team "David Parrot"
+#     explo-team "Olivier Gente"
+#     explo-team "Frédéric Delègue"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
  
-   data normal from to length compass clino left right up down
-   Ke.29 Go.0    5.       0.       90.       2.3      0.8      0.5      0.5    
-   Go.0 Go.1    4.56       55.       15.       2.75       1.81      0.82      0.5    
-   Go.1 Go.2    7.88       340.       25.      0.88       1.21      0.72      0.5    
-   Go.2 Go.3    6.51       321.       20.       1.      0.5      0.5      0.5    
-   Go.3 Go.4    9.13       325.       15.       1.      0.5      0.5      0.5    
-   Go.3 Go.5    7.13       17.       38.      0.88       2.35      0.74      0.5    
-   extend left
-   Go.5 Go.6    12.68000       316.       16.      0.88       2.35      0.66      0.5    
-   extend right
-   Go.5 Go.7    11.25000       100.       26.      0.65      0.73       1.69      0.5    
-   Go.7 Go.8    3.47       73.       40.      0.5      0.5      0.5       0.    
-   Go.8 Go.9    3.45       96.       10.       2.18       1.16       1.96       1.    
-    extend left
-   Go.9 Go.10    20.       330.       35.       1.47       2.1       2.07       1.    
-   extend right
-   Go.9 Go.11    2.89       119.       0.       1.26       1.19       7.83       1.    
-   Go.11 Go.12    5.       0.       90.       1.77       2.       3.       1.    
-   Go.12 Go.13    18.       327.       25.       1.78       4.64       1.04       1.    
-   Go.13 Go.14    9.6       40.       35.       2.91       3.57       1.49       1.    
-   Go.14 Go.15    6.55       99.       27.       0.       0.       0.       0.    
- endcenterline
+#    data normal from to length compass clino left right up down
+#    Ke.29 Go.0    5.       0.       90.       2.3      0.8      0.5      0.5    
+#    Go.0 Go.1    4.56       55.       15.       2.75       1.81      0.82      0.5    
+#    Go.1 Go.2    7.88       340.       25.      0.88       1.21      0.72      0.5    
+#    Go.2 Go.3    6.51       321.       20.       1.      0.5      0.5      0.5    
+#    Go.3 Go.4    9.13       325.       15.       1.      0.5      0.5      0.5    
+#    Go.3 Go.5    7.13       17.       38.      0.88       2.35      0.74      0.5    
+#    extend left
+#    Go.5 Go.6    12.68000       316.       16.      0.88       2.35      0.66      0.5    
+#    extend right
+#    Go.5 Go.7    11.25000       100.       26.      0.65      0.73       1.69      0.5    
+#    Go.7 Go.8    3.47       73.       40.      0.5      0.5      0.5       0.    
+#    Go.8 Go.9    3.45       96.       10.       2.18       1.16       1.96       1.    
+#     extend left
+#    Go.9 Go.10    20.       330.       35.       1.47       2.1       2.07       1.    
+#    extend right
+#    Go.9 Go.11    2.89       119.       0.       1.26       1.19       7.83       1.    
+#    Go.11 Go.12    5.       0.       90.       1.77       2.       3.       1.    
+#    Go.12 Go.13    18.       327.       25.       1.78       4.64       1.04       1.    
+#    Go.13 Go.14    9.6       40.       35.       2.91       3.57       1.49       1.    
+#    Go.14 Go.15    6.55       99.       27.       0.       0.       0.       0.    
+#  endcenterline
   
   
 #  centerline -extend left -title "Siphon09 xa-0-2009_xa-0-2009do xa-5-2009_Kh.37"
