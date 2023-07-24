@@ -43,6 +43,8 @@ layout my_layout
 	layers on
 	symbol-hide line survey
 	#debug station-names
+	debug scrap-names
+	color map-fg scraps
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
@@ -109,6 +111,6 @@ layout my_layout-coupe
 	endcode  
   
 endlayout
-  
+ 
  export map  -projection plan -o Outputs/Riviere1-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/Riviere1-coupe.pdf

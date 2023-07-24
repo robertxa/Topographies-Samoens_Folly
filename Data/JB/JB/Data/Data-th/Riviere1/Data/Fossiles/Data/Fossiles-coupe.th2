@@ -4,7 +4,7 @@ encoding  utf-8
 ##XTHERION## xth_me_image_insert {12426.68 1 1.0} {5853.0 Cc.0@jb-amonts2} coupe-aval-2.xvi 0 {}
 
 
-scrap SC-400c3 -projection extended -station-names "" "@Fossiles" -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 15561.0792 -128.0 0.0 0.0 398.50261168 0.0 m]
+scrap SC-Fossiles-1 -projection extended -station-names "" "@Fossiles" -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 15561.0792 -128.0 0.0 0.0 398.50261168 0.0 m]
 
 line wall
   10405.0 4294.0
@@ -117,7 +117,7 @@ line wall -subtype invisible
   smooth off
 endline
 
-point 10822.54 4417.99 station -name Ka.33
+#point 10822.54 4417.99 station -name Ka.33
 
 point 10777.9 4418.65 station -name Ka.35
 

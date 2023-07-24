@@ -290,20 +290,20 @@ map MP-puitsAlain -title "Puits Alain"
 	SP-cascatelles   
 endmap
 
-map MP-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
+#map MP-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
 # Regarder si on peut sortir les plafonds
-	SP-riv-1
-	break
-	SP-riv-2b
-	break
-	SP-riv-2
-	break
-	SP-riv-3
-	break
-	SP-riv-4
-	break
-	SP-riv-5
-endmap
+#	SP-riv-1
+#	break
+#	SP-riv-2b
+#	break
+#	SP-riv-2
+#	break
+#	SP-riv-3
+#	break
+#	SP-riv-4
+#	break
+#	SP-riv-5
+#endmap
 
 #map MP-gourance -title "La Gourance"      
 #	SP-gourance-1@Gourance
@@ -444,7 +444,8 @@ endmap
 map MP-Jean-Dupond -title "Le début de la rivière aval"
 	MP-puitsAlain
 	break
-	MP-rivieredebut
+	#MP-rivieredebut
+	MP-Riviere1@Riviere1
 endmap
 
 map MP-Bivouac-500-Gourance -title "Bivouac -500 et zone de la Gourance"
@@ -532,16 +533,17 @@ endmap
    
 ##################### Maps pour le Solitaire, la Rivière et le V4
 map MP-rivieredebutSol -title "La rivière entre la Cascade Jean Dupont et -500 m"
+	MP-Riviere1@Riviere1
 # Regarder si on peut sortir les plafonds
-	SP-riv-1
-	break
-	SP-riv-2b
-	break
-	SP-riv-2
-	break
-	SP-riv-3
-	break
-	SP-riv-4
+#	SP-riv-1
+#	break
+#	SP-riv-2b
+#	break
+#	SP-riv-2
+#	break
+#	SP-riv-3
+#	break
+#	SP-riv-4
 	#break
 	#SP-riv-5
 endmap

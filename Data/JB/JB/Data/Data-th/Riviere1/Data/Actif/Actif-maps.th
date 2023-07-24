@@ -7,18 +7,22 @@ encoding  utf-8
 #### Plan
 
 map MP-Actif -title "Rivière entre -250 m et -500 m"
-	SP-riv-1
-	break
 	SP-riv-3
 	break
 	SP-riv-4
+	break
+	SP-riv-4b
+	break
+	SP-riv-5
 endmap
 
 ########## Coupe
 
 map MC-Actif -title "Rivière entre -250 m et -500 m"
-	SC-Actif-1
+	SC-400c2
 	break
-	SC-Actif-2
+	SC-400c1
+	break
+	SC-biv500c4
 endmap
 

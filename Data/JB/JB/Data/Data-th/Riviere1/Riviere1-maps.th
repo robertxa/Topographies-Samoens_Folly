@@ -5,14 +5,18 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Riviere1 -title "1ère partie de la Rivière"
-	MP-Fossile@Fossile
+	MP-Jean-Dupont@Jean-Dupont
+	break
+	MP-Fossiles@Fossiles
 	break
 	MP-Actif@Actif
 endmap
 
 map MC-Riviere1 -title "1ère partie de la Rivière"
-	MP-Fossile@Fossile
+	MC-Jean-Dupont@Jean-Dupont
 	break
-	MP-Actif@Actif
+	MC-Fossiles@Fossiles
+	break
+	MC-Actif@Actif
 endmap
    

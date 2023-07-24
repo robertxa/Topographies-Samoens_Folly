@@ -183,21 +183,21 @@ map MC-puitsAlain -title "Puits Alain"
 endmap
 
 map MC-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
-	SC-dupondc1
-	break
+	#SC-dupondc1
+	#break
 	SC-dupontc2
 	break
 	SC-dupontc3
-	break
-	SC-400c3
-	break
-	SC-400c2
-	break
-	SC-400c1
+#	break
+#	SC-400c3
+#	break
+#	SC-400c2
+#	break
+#	SC-400c1
 endmap
 
 map MC-bivouac-500 -title "Le Bivouac -500 m"
-	SC-biv500c4
+#	SC-biv500c4
 	break
 	SC-balcon3@Gourance.Gourance
 endmap
@@ -321,6 +321,8 @@ endmap
 ############## A REVOIR
 
 map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
+	MC-Riviere1@Riviere1
+	break
 	MC-rivieredebut
 	break
 	MC-puitsAlain
@@ -437,7 +439,7 @@ map MC-Tr-V4-JD -title "V4b - Cascade Jean Dupont"
 	SC-V4c2
 	break   
 #MC-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
-	SC-dupondc1
+	SC-Dupont-1@Jean-Dupont.Riviere1
 	break
 	SC-dupontc2
 	break

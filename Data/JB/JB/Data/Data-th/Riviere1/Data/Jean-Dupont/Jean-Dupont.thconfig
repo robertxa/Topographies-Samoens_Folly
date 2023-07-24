@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 # Import DATA  
-source Actif-tot.th
+source Jean-Dupont-tot.th
 
 # Add config file
 input ../../../../../../../../config.thc 
@@ -35,7 +35,7 @@ layout layout_plan
 	
 	#debug scrap-names
 	  
-	doc-title "Actif-plan"
+	doc-title "Jean-Dupont-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1250
@@ -81,7 +81,7 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 0 100 sw Outputs/Actif-coupe2022b.pdf
+	#map-image 0 100 sw Outputs/Jean-Dupont-coupe2022b.pdf
   
 endlayout
   
@@ -94,7 +94,7 @@ layout layout_coupe
 	
 	#debug scrap-names
 
-	doc-title "Actif-coupe"
+	doc-title "Jean-Dupont-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
 	#base-scale 1 2000
@@ -156,14 +156,14 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Actif-plan.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Actif-coupe.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Jean-Dupont-plan.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Jean-Dupont-coupe.xvi
 
-select MP-Actif-tot
+select MP-Jean-Dupont-tot
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/Actif-coupe.pdf
-	export map -layout layout_plan -o Outputs/Actif-plan.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/Jean-Dupont-coupe.pdf
+	export map -layout layout_plan -o Outputs/Jean-Dupont-plan.pdf
  
 # Export des modeles 3D
-	export model -o Outputs/Actif.lox
+	export model -o Outputs/Jean-Dupont.lox

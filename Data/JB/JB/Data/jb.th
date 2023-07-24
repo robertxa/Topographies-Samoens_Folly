@@ -371,26 +371,31 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
 			#join V4-2 pAlain # au niveau du Téléphérique
 			join SC-V4c1 SC-dupontc2
+	input Drawing-th2/Coupe/aval400.th2
 	
 	## Rivière à l'aval de la Jean Dupont
-	input Drawing-th2/Plan/riv-debut.th2
-	input Drawing-th2/Plan/riviere.th2
-			join SP-riv-3 SP-riv-4
+	input Data-th/Riviere1/Riviere1-tot.th
+		equate Ka.13@Jean-Dupont.Jean-Dupont.Riviere1 Ka.13@jb-riv
+	#input Drawing-th2/Plan/riv-debut.th2
+	#	#equate Ka.14@Aval.Aval.Riviere1 Ka.14@jb-riv
+	
+	#input Drawing-th2/Plan/riviere.th2
+	#		join SP-riv-3 SP-riv-4		#########
 	#input Drawing-th2/Plan/bivouac500.th2
-	#		join SP-bivouac500 SP-riv-5
-	input Drawing-th2/Coupe/aval400.th2
-			join SC-400c1 SC-biv500c4
+	##		join SP-bivouac500 SP-riv-5
+	#input Drawing-th2/Coupe/aval400.th2
+			join SC-biv500c4@Actif.Riviere1 SC-biv500c3@Bivouac-500.Bivouac-500
 	
 	
-	input Drawing-th2/Coupe/aval500.th2
+	#input Drawing-th2/Coupe/aval500.th2
 
 
 ################# Structure OK  #######################
 	## Le Bivouac -500
 	input Data-th/Bivouac-500/Bivouac-500-tot
-		equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@jb-riv
-		join SP-riv-6@Bivouac-500.Bivouac-500 SP-riv-5
-		join SC-siphon69c2@Bivouac-500.Bivouac-500 SC-biv500c4
+		equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@Actif.Actif.Riviere1
+		join SP-riv-6@Bivouac-500.Bivouac-500 SP-riv-5@Actif.Riviere1
+		join SC-siphon69c2@Bivouac-500.Bivouac-500 SC-biv500c4@Actif.Riviere1
 
 	## La zone de la Gourance
 	input Data-th/Gourance/Gourance-tot.th

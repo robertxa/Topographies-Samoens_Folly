@@ -4,16 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Actif -title "Actif de la rivière"
+survey Jean-Dupont -title "Cascade Jean-Dupont"
 	# Données topos
-	input Data/Actif.th
+	input Data/Jean-Dupont.th
 	
 	# Dessins
-	input Data/Actif.th2
-		#join SP-riv-3 SP-riv-4
-	input Data/Actif-coupe.th2
+	input Data/Jean-Dupont.th2
+	input Data/Jean-Dupont-coupe.th2
 
 	# Add maps
-	input Actif-maps.th
+	input Jean-Dupont-maps.th
 	
 endsurvey

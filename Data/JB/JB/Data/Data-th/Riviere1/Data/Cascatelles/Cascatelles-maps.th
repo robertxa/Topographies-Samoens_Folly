@@ -4,16 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Actif -title "Actif de la rivière"
-	# Données topos
-	input Data/Actif.th
-	
-	# Dessins
-	input Data/Actif.th2
-		#join SP-riv-3 SP-riv-4
-	input Data/Actif-coupe.th2
+#### Plan
 
-	# Add maps
-	input Actif-maps.th
-	
-endsurvey
+map MP-Cascatelles -title "Les Cascatelles"
+	SP-riv-1
+endmap
+
+########## Coupe
+
+map MC-Cascatelles -title "Les Cascatelles"
+	SC-dupontc2
+	break
+	SC-dupontc3
+endmap
+

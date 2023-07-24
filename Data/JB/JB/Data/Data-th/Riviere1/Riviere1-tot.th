@@ -8,11 +8,15 @@ survey Riviere1 -title "1ère partie de la Rivière"
 
     ## Toute la zone du Bivouac -500 m
     input Data/Actif/Actif-tot.th
-    ## Méandre du Court Circuit
+
+    input Data/Jean-Dupont/Jean-Dupont-tot.th
+        equate Ka.34@Jean-Dupont.Jean-Dupont Ka.34@Fossiles.Fossiles
+        join SP-riv-1@Jean-Dupont SP-riv-2b@Fossiles
+        join SC-Dupont-1@Jean-Dupont SC-400c2@Actif
     input Data/Fossiles/Fossiles-tot.th
-        equate Ka.34@Actif.Actif Ka.34@Fossiles.Fossiles
         equate Kb.33@Actif.Actif Kb.33@Fossiles.Fossiles
-        join SP-riv-2@Fossiles SP-riv-3@Actif -count 3  # Fermer le dessin de SP-riv-3 à deux endroits ?
+        join SP-riv-2@Fossiles SP-riv-4b@Actif  # Fermer le dessin de SP-riv-3 à deux endroits ?
+        join SP-riv-2@Fossiles SP-riv-3@Actif #-count 2  # Fermer le dessin de SP-riv-3 à deux endroits ?
 
     # Add maps
     input Riviere1-maps.th
