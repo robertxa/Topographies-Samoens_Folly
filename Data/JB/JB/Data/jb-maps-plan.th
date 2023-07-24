@@ -133,7 +133,7 @@ endmap
 map MP-branlots -title "Réseau des Branlots"
 	SP-P15
 	break
-	SP-s-branlots1@ShuntBranlots
+	SP-s-branlots1@ShuntBranlots.Branlots
 	break
 	SP-Branlots
 	break
@@ -349,7 +349,7 @@ map MP-B22-B21 -title "B21 - B22"
 endmap
 
 map MP-B19-V11 -title "Réseaux du B19 et du V11"
-	MP-Senecaliens@Senecaliens
+	MP-B19@B19
 	break
 	MP-B19
 	#preview below MP-senecaliens
@@ -363,7 +363,7 @@ map MP-B19-V11 -title "Réseaux du B19 et du V11"
 	break
 	MP-couteau-grenoblois@CouteauG
 	break
-	MP-AspiroSouffle@AspiroSouffle
+	MP-AspiroSouffle@AspiroSouffle.Branlots
 	break
 	MP-reseauaiguilles
 	break
@@ -430,7 +430,7 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MP-V4
 	break
-	MP-Ete-Indien@Ete-Indien
+	MP-V4@V4
 	break
 	MP-Stalactites@Stalactites.PierreQuiTombe
 	break
@@ -551,7 +551,7 @@ endmap
 map MP-SolitaireEV -title "Réseau du Solitaire"
 	MP-V4
 	break
-	MP-Ete-Indien@Ete-Indien
+	MP-V4@V4
 	break
 	MP-savoyards
 	break

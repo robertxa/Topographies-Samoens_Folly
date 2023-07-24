@@ -4,13 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey B19 -title "Gouffre B19"
+survey Branlots -title "Les Branlots"
 
-    #input Data/B19/B19-tot.th
-    input Data/Senecaliens/Senecaliens-tot.th
-        #equate Da.58@Senecaliens Da.58@B19@B19
+    #input Data/Branlots.th
+    input Data/AspiroSouffle/AspiroSouffle-tot.th
 
+    input Data/ShuntBranlots/ShuntBranlots-tot.th
+    
     # Add maps
-    input B19-maps.th
+    input Branlots-maps.th
 
 endsurvey

@@ -4,38 +4,12 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Riviere2 -title "Riviere de -650 m à -900 m"
+survey V4 -title "Le V4"
 
-    ## Cascade de la Toussaint
-    input Data/Toussaint/Toussaint-tot.th
-        #equate Kh.46@Toussaint.Toussaint Kh.46@Gourance.Gourance
-		#join SP-gourance5@Toussaint SP-gourance2@Gourance
-
-    ## Le siphon 09
-	input Data/Siphon09/Siphon09-tot.th
-		equate Kh.37@Siphon09.Siphon09 Kh.37@Toussaint.Toussaint
-		join SP-Siphon09@Siphon09 SP-gourance5@Toussaint
-		join SC-Siphon09@Siphon09 SC-avalc5@Toussaint
-	
-	## Cheneau, Bivouac -900, Des Cinglés au Bivouac -900
-	# Cette topographie est pour l'instant la topo originale de 1991. Il faut la remplacer par la retopographie de 2012 par l'USAN.
-	input Data/Cheneau/Cheneau-tot.th
-		equate Kk.16@Cheneau.Cheneau	Kk.16@Toussaint.Toussaint
-		join SP-cingles@Cheneau SP-riv-11@Toussaint
-		join SC-avalc3@Cheneau SC-avalc4@Toussaint
-
-	## Galerie de la Bonne Conscience
-	input Data/Conscience/Conscience-tot.th
-		equate Km.8@Conscience.Conscience Km.8@Cheneau.Cheneau	#Kl.0@Chaos.Chaos/Cheneau
-		join SP-conscience-1@Conscience SP-900-1@Cheneau
-		join SC-conscience-1@Conscience SC-avalc2@Cheneau
-	## Galerie de la Nuit Blanche
-	input Data/NuitBlanche/NuitBlanche-tot.th
-		equate Kn.4@NuitBlanche.NuitBlanche Kn.4@Cheneau.Cheneau
-		join SC-NuitBlanche@NuitBlanche SC-avalc2@Cheneau
-
+    ## L'été Indien
+    input Data/Ete-Indien/Ete-Indien-tot.th
 
     # Add maps
-    input Riviere2-maps.th
+    input V4-maps.th
 
 endsurvey

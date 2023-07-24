@@ -4,13 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey B19 -title "Gouffre B19"
+map MP-Crawleurs -title "Méandre des Crawleurs"
+	SP-Crawleurs
+	break
+	SP-Crawleuraval   
+endmap
 
-    #input Data/B19/B19-tot.th
-    input Data/Senecaliens/Senecaliens-tot.th
-        #equate Da.58@Senecaliens Da.58@B19@B19
 
-    # Add maps
-    input B19-maps.th
-
-endsurvey
+#map MC-P11 -title "Méandre des Crawleurs"
+#	
+#endmap
+   

@@ -79,10 +79,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SP-gadouejonction SP-Racc5@Lavoir
 	input Drawing-th2/Coupe/B19-coupe.th2 
 	## Les Sénécaliens dans le B19
-	input Data-th/Senecaliens/Senecaliens-tot.th
-		equate Da.58@Senecaliens.Senecaliens Da.58@jb-amonts2
-		join SP-Senecaliens@Senecaliens SP-B19
-		join SC-Senecaliens@Senecaliens SC-B19c1
+	#input Data-th/Senecaliens/Senecaliens-tot.th
+	input Data-th/B19/B19-tot.th
+		equate Da.58@Senecaliens.Senecaliens.B19 Da.58@jb-amonts2
+		join SP-Senecaliens@Senecaliens.B19 SP-B19
+		join SC-Senecaliens@Senecaliens.B19 SC-B19c1
 
 
 
@@ -126,17 +127,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SC-aiguillesc1 SC-lavoirc7@Lavoir
 			##join SC-excenc2 SC-excenLavoir???
 
-	# L'aspiro-souffle
-	input Data-th/AspiroSouffle/AspiroSouffle-tot.th
-		### Equates data
-			#equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
-			equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.46@jb-amonts2	# Pour limiter la déformation de l'AspiroSouffle, il y a une belle erreur de bouclage...
-			equate 16@aspiro2023.AspiroSouffle Fb.30@jb-amonts2
-		### Joins dessins Plan
-			join SP-Branlots SP-Aspiro2023-1@AspiroSouffle
-				# OK ; Il y a un problème entre l'AspiroSouffle de 2012 et 2023... Le dessin est trop déformé
-		### Joins dessins Coupe
-
 	## Le méandre des Crawleurs
 	input Drawing-th2/Plan/crawleurs.th2
 		### Joins dessins Plan
@@ -171,6 +161,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SP-Pseudosiphon2 SP-Cristal
 			join SP-Echo SP-Colimaconaval
 
+
+
 	## La zone des Branlots
 	input Drawing-th2/Plan/montagnesrusses.th2
 	input Drawing-th2/Plan/echo2010.th2
@@ -186,18 +178,31 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SP-Echo2010-2 SP-Colimaconaval	## Erreur dans le 3D avec cette ligne suivante... A CORRIGER
 		### Joins dessins Coupe
 			join SC-branlotsc1 SC-V11c5
-
-	# Shunt des Branlots
-	input Data-th/Shunt-Branlots/shuntBranlots-tot.th
-		### Equates data
-			equate  2013-xac-14@shunt-branlots.ShuntBranlots Fb.29@jb-amonts2
-    		equate  2013-xac-0@shunt-branlots.ShuntBranlots Fd.14@jb-amonts2
-		### Joins dessins Plan
-			join SP-Branlots SP-s-branlots1@ShuntBranlots
-		### Joins dessins Coupe
-				join SC-J14c3 SC-s_branlots-c1@ShuntBranlots
-				##join SC-berreurc1 ??
 	
+	input Data-th/Branlots/Branlots-tot.th
+	# L'aspiro-souffle
+		##equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle.Branlots De.44@jb-amonts2
+		equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle.Branlots De.46@jb-amonts2	# Pour limiter la déformation de l'AspiroSouffle, il y a une belle erreur de bouclage...
+		equate 16@aspiro2023.AspiroSouffle.Branlots Fb.30@jb-amonts2
+		join SP-Branlots SP-Aspiro2023-1@AspiroSouffle.Branlots
+			# OK ; Il y a un problème entre l'AspiroSouffle de 2012 et 2023... Le dessin est trop déformé
+	# Le shunt des Branlots 
+		equate  2013-xac-14@shunt-branlots.ShuntBranlots.Branlots Fb.29@jb-amonts2
+    	equate  2013-xac-0@shunt-branlots.ShuntBranlots.Branlots Fd.14@jb-amonts2
+		join SP-Branlots SP-s-branlots1@ShuntBranlots.Branlots
+		join SC-J14c3 SC-s_branlots-c1@ShuntBranlots.Branlots
+		##join SC-berreurc1 ??
+	
+	# L'aspiro-souffle
+	#input Data-th/AspiroSouffle/AspiroSouffle-tot.th
+		### Equates data
+			##equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
+			#equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.46@jb-amonts2	# Pour limiter la déformation de l'AspiroSouffle, il y a une belle erreur de bouclage...
+			#equate 16@aspiro2023.AspiroSouffle Fb.30@jb-amonts2
+		### Joins dessins Plan
+			#join SP-Branlots SP-Aspiro2023-1@AspiroSouffle
+
+
 	# Réseau du Couteau Grenoblois
 	input Data-th/CouteauG/couteauG-tot.th
 		### Equates data
@@ -300,18 +305,15 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-V15-3@V15 SP-V4
 
 	# Réseau de l'Eté Indien
-	input Data-th/Ete-Indien/Ete-Indien-tot.th
-		### Equates data
-			equate 18@Ete-Indien.Ete-Indien Ih.14@jb-amonts2	# Carrefour V4/V4b
-			equate 14@Ete-Indien.Ete-Indien Ja.10@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
-		### Joins dessins Plan
-			join SP-V4 SP-EteIndien-1@Ete-Indien -count 3	# Le V4 et l'Eté Indien
-		### Joins dessins Coupe
-			##join SC-V4c4 SC-EteIndien-1@Ete-Indien -count 3	# Le V4 et l'Eté Indien
+	input Data-th/V4/V4-tot.th
+	#input Data-th/Ete-Indien/Ete-Indien-tot.th
+			equate 18@Ete-Indien.Ete-Indien.V4 Ih.14@jb-amonts2	# Carrefour V4/V4b
+			equate 14@Ete-Indien.Ete-Indien.V4 Ja.10@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
+			join SP-V4 SP-EteIndien-1@Ete-Indien.V4 -count 3	# Le V4 et l'Eté Indien
+			##join SC-V4c4 SC-EteIndien-1@Ete-Indien.V4 -count 3	# Le V4 et l'Eté Indien
 	
 	input Data-th/PierreQuiTombe/PierreQuiTombe-tot
 		## Galerie des Stalactites
-		#input Data-th/Stalactites/Stalactites-tot.th
 		equate 1@Stalactites.Stalactites.PierreQuiTombe Jb.3@jb-amonts2
 		join SP-Stalactites-1@Stalactites.PierreQuiTombe SP-quitombea
 
@@ -358,14 +360,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     		#equate  Ke.43@jb-riv  Ke.43@jb-riv2
 			#equate  Ke.33@jb-riv  Ke.33@jb-riv2
 
-		### Joins dessins Plan
-		### Joins dessins Coupe
 	input Data-th/NonTriees/jb-riv2.th
 		### Equates data
 			equate  Fv.1@jb-amonts2  Fv.1@jb-riv2
-
-			## Ajout galerie des Sénécaliens --> Voir B19 !!!
-    		equate  Da.58@jb-amonts2  Da.58@Senecaliens.Senecaliens
     		equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
 
 ################# Structure OK  #######################	

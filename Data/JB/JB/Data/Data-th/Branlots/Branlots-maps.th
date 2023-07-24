@@ -4,13 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-V4 -title "Gouffre V4"
-	
+map MP-Branlots -title "Zone des Branlots"
+	MP-AspiroSouffle@AspiroSouffle
+	break
+	MP-s_branlots@ShuntBranlots
 	#break
-	MP-Ete-Indien@Ete-Indien
+	#SP-Branlots-h1   
 endmap
 
-map MC-V4 -title "Gouffre V4"
-	MC-Ete-Indien@Ete-Indien
+
+map MC-Branlots -title "Zone des Branlots"
+	MC-AspiroSouffle@AspiroSouffle
+	break
+	MC-s_branlots@ShuntBranlots
 endmap
    
