@@ -14,11 +14,10 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 # Pour importer les différentes données de différents fichiers topos : 
 	input Data-th/NonTriees/jb-amonts1.th
 
-	
+
 	# Le C37
-	input Data-th/C37/Data/C37/Data/C37_2020.th
-		### Equates data
-			equate Aa.28@jb-amonts1 0.2020@C37_2020
+	input Data-th/C37/C37-tot.th
+		equate Aa.28@jb-amonts1 0.2020@C37_2020.C37.C37
 	input Drawing-th2/Plan/JB-C37.th2
 		### Joins dessins Plan
 			#join ?? ??
@@ -26,14 +25,16 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Joins dessins Coupe
 			#join ?? ??
 	
+	
 	# Affluent du C14
-	input Data-th/affluentC14/affluentC14-tot.th
 		### Equates data
-			equate  2013-xab-22@affluentC14.AffluentC14 Bg.0@jb-amonts1
+			equate  2013-xab-22@affluentC14.AffluentC14.C37 Bg.0@jb-amonts1
 		### Joins dessins Plan
-			join SP-reverbere SP-affluent-C14-2@AffluentC14
+			join SP-reverbere SP-affluent-C14-2@AffluentC14.C37
 		### Joins dessins Coupe
-			join SC-affluent-C14_c1@AffluentC14 SC-archec2 
+			join SC-affluent-C14_c1@AffluentC14.C37 SC-archec2 
+
+
 
 	input Data-th/NonTriees/jb-amonts2.th
 		### Equates data
@@ -44,12 +45,19 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     		join SC-voltic1 SC-C37c3
 		
 	# Le B22
+	input Data-th/B22/B22-tot.th
+
 	input Drawing-th2/Plan/JB-B22.th2
 		### Joins dessins Plan
 	input Drawing-th2/Coupe/B22-coupe.th2
 		### Joins dessins Coupe
 			join SC-B22c1 SC-B22cx
 			join SC-B22c2 SC-elyseesc1 
+
+		# Méandre des Arianes
+		equate  Bc.50@jb-arianes.Arianes.B22 Bc.50@jb-amonts1
+    	equate  Bb.115@jb-arianes.Arianes.B22 Bb.115@jb-amonts1
+	
 
 	## Le B21
 	input Drawing-th2/Plan/B21.th2
@@ -58,10 +66,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Joins dessins Coupe
 			##join SC-B21c SC-B22c3
 
-	input Data-th/Arianes/arianes-tot.th
-		### Equates data
-			equate  Bc.50@jb-arianes.arianes Bc.50@jb-amonts1
-    		equate  Bb.115@jb-arianes.arianes Bb.115@jb-amonts1
 	
 	## La rivière de la Gadoue    
 	input Drawing-th2/Plan/gadoue.th2
@@ -192,16 +196,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SP-Branlots SP-s-branlots1@ShuntBranlots.Branlots
 		join SC-J14c3 SC-s_branlots-c1@ShuntBranlots.Branlots
 		##join SC-berreurc1 ??
-	
-	# L'aspiro-souffle
-	#input Data-th/AspiroSouffle/AspiroSouffle-tot.th
-		### Equates data
-			##equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.44@jb-amonts2
-			#equate  2012c-xa-29@aval-aiguilles2.AspiroSouffle De.46@jb-amonts2	# Pour limiter la déformation de l'AspiroSouffle, il y a une belle erreur de bouclage...
-			#equate 16@aspiro2023.AspiroSouffle Fb.30@jb-amonts2
-		### Joins dessins Plan
-			#join SP-Branlots SP-Aspiro2023-1@AspiroSouffle
-
 
 	# Réseau du Couteau Grenoblois
 	input Data-th/CouteauG/couteauG-tot.th

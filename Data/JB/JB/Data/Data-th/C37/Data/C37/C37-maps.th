@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-C37 -title "Gouffre C37"
+	#MP-Cascatelles@Cascatelles
+	#break
+	MP-AffluentC14@AffluentC14
+	#break
+	#MP-Fossiles@Fossiles
+	#break
+	#MP-Actif@Actif
+endmap
+
+map MC-C37 -title "Gouffre C37"
+	#MC-Jean-Dupont@Jean-Dupont
+	#break
+	#MC-Cascatelles@Cascatelles
+	#break
+	MC-AffluentC14@AffluentC14
+	#break
+	#MC-Actif@Actif
+endmap
+   

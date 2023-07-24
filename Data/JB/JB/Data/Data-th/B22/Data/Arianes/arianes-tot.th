@@ -4,16 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey AffluentC14 -title "Affluent du C14"
+survey Arianes -title "Méandre des Arianes"
 
-    input Data/affluentC14.th
-
+    input Data/jb-arianes.th
     # Dessins en plan
-    input Data/affluentC14.th2
+    input Data/arianes.th2
     # Dessins en coupe
-    input Data/affluentC14-coupe.th2
-    
+    input Data/arianes-coupe.th2
+
     # Add maps
-    input affluentC14-maps.th
+    input arianes-maps.th
 
 endsurvey

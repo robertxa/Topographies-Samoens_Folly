@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey B22 -title "Gouffre B22"
+
+    ## Toute la zone du Bivouac -500 m
+    #input Data/B22/B22-tot.th
+
+    input Data/Arianes/arianes-tot.th
+        #equate Ka.13@Cascatelles.Cascatelles Ka.13@Jean-Dupont.Jean-Dupont
+        #join SP-Cascatelles@Cascatelles SP-riv-1@Jean-Dupont
+    
+
+    # Add maps
+    input B22-maps.th
+
+endsurvey

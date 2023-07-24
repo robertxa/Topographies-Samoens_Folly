@@ -4,15 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey arianes -title "Méandre des Arianes"
+survey C37 -title "Gouffre C37"
 
-    input Data/jb-arianes.th
-    # Dessins en plan
-    input Data/arianes.th2
-    # Dessins en coupe
-    input Data/arianes-coupe.th2
+    input Data/C37_2020.th
+
+    # Dessins
+    
 
     # Add maps
-    input arianes-maps.th
+    #input C37-maps.th
 
 endsurvey
