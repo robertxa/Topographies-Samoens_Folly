@@ -5,6 +5,8 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Riviere1 -title "1ère partie de la Rivière"
+	MP-Cascatelles@Cascatelles
+	break
 	MP-Jean-Dupont@Jean-Dupont
 	break
 	MP-Fossiles@Fossiles
@@ -14,6 +16,8 @@ endmap
 
 map MC-Riviere1 -title "1ère partie de la Rivière"
 	MC-Jean-Dupont@Jean-Dupont
+	break
+	MC-Cascatelles@Cascatelles
 	break
 	MC-Fossiles@Fossiles
 	break

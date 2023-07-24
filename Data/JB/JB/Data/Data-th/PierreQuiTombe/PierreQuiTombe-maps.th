@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-PierreQuiTombe -title "Réseau de la Pierre Qui Tombe"
+	MP-Stalactites@Stalactites
+	#break
+	#MP-Jean-Dupont@Jean-Dupont
+	#break
+	#MP-Fossiles@Fossiles
+	#break
+	#MP-Actif@Actif
+endmap
+
+map MC-PierreQuiTombe -title "Réseau de la Pierre Qui Tombe"
+	MC-Stalactites@Stalactites
+	#break
+	#MC-Cascatelles@Cascatelles
+	#break
+	#MC-Fossiles@Fossiles
+	#break
+	#MC-Actif@Actif
+endmap
+   

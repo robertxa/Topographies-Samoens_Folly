@@ -309,10 +309,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Joins dessins Coupe
 			##join SC-V4c4 SC-EteIndien-1@Ete-Indien -count 3	# Le V4 et l'Eté Indien
 	
-	## Galerie des Stalactites
-	input Data-th/Stalactites/Stalactites-tot.th
-		equate 1@Stalactites.Stalactites Jb.3@jb-amonts2
-		join SP-Stalactites-1@Stalactites SP-quitombea
+	input Data-th/PierreQuiTombe/PierreQuiTombe-tot
+		## Galerie des Stalactites
+		#input Data-th/Stalactites/Stalactites-tot.th
+		equate 1@Stalactites.Stalactites.PierreQuiTombe Jb.3@jb-amonts2
+		join SP-Stalactites-1@Stalactites.PierreQuiTombe SP-quitombea
 
 	## La Pierre Qui Tombe
 	input Drawing-th2/Plan/pierrequitombe.th2
@@ -351,9 +352,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	######### DESSINS A MODIFIER a partir d'ici ##############     
 	### La rivière vers l'aval	###
 
-	input Data-th/NonTriees/jb-riv.th
+	#input Data-th/NonTriees/jb-riv.th
 		### Equates data
-			equate  Jf.14@jb-amonts2  Jf.14@jb-riv
+			#equate  Jf.14@jb-amonts2  Jf.14@jb-riv
     		#equate  Ke.43@jb-riv  Ke.43@jb-riv2
 			#equate  Ke.33@jb-riv  Ke.33@jb-riv2
 
@@ -367,30 +368,19 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     		equate  Da.58@jb-amonts2  Da.58@Senecaliens.Senecaliens
     		equate  Ia.17@jb-amonts2  Ia.17@jb-riv2
 
+################# Structure OK  #######################	
+
 	## L'arrivée à la cascade Jean Dupont
 	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
+		equate Jd.32@Cascatelles.Cascatelles.Riviere1 Jd.32@jb-amonts2
+			join SP-pAlain SP-cascatelles@Cascatelles.Riviere1
 			#join V4-2 pAlain # au niveau du Téléphérique
-			join SC-V4c1 SC-dupontc2
-	input Drawing-th2/Coupe/aval400.th2
-	
+			join SC-V4c1 SC-dupontc2@Cascatelles.Riviere1
+
 	## Rivière à l'aval de la Jean Dupont
 	input Data-th/Riviere1/Riviere1-tot.th
-		equate Ka.13@Jean-Dupont.Jean-Dupont.Riviere1 Ka.13@jb-riv
-	#input Drawing-th2/Plan/riv-debut.th2
-	#	#equate Ka.14@Aval.Aval.Riviere1 Ka.14@jb-riv
-	
-	#input Drawing-th2/Plan/riviere.th2
-	#		join SP-riv-3 SP-riv-4		#########
-	#input Drawing-th2/Plan/bivouac500.th2
-	##		join SP-bivouac500 SP-riv-5
-	#input Drawing-th2/Coupe/aval400.th2
-			join SC-biv500c4@Actif.Riviere1 SC-biv500c3@Bivouac-500.Bivouac-500
-	
-	
-	#input Drawing-th2/Coupe/aval500.th2
+		join SC-biv500c4@Actif.Riviere1 SC-biv500c3@Bivouac-500.Bivouac-500
 
-
-################# Structure OK  #######################
 	## Le Bivouac -500
 	input Data-th/Bivouac-500/Bivouac-500-tot
 		equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@Actif.Actif.Riviere1

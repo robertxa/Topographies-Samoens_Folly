@@ -280,14 +280,14 @@ map MP-chatons -title "Méandre des Chatons"
 	SP-chatons
 endmap
 
-map MP-Cascatelles
-	SP-cascatelles
-endmap
+#map MP-Cascatelles
+#	SP-cascatelles
+#endmap
 
 map MP-puitsAlain -title "Puits Alain"     
 	SP-pAlain
-	break
-	SP-cascatelles   
+	#break
+	#SP-cascatelles
 endmap
 
 #map MP-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
@@ -432,7 +432,7 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MP-Ete-Indien@Ete-Indien
 	break
-	MP-Stalactites@Stalactites
+	MP-Stalactites@Stalactites.PierreQuiTombe
 	break
 	MP-savoyards
 	break
@@ -777,6 +777,8 @@ map MP-Tr-V4-JD -title "V4b - Cascade Jean Dupont"
 		MP-savoyards
 	break
 		MP-puitsAlain
+	#break
+	#MP-cascatelles@Cascatelles
 endmap
 ############ END Maps pour topoguide 74
 

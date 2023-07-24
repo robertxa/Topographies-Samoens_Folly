@@ -7,7 +7,11 @@ encoding  utf-8
 survey Riviere1 -title "1ère partie de la Rivière"
 
     ## Toute la zone du Bivouac -500 m
+    input Data/Cascatelles/Cascatelles-tot.th
+
     input Data/Actif/Actif-tot.th
+        equate Ka.13@Cascatelles.Cascatelles Ka.13@Jean-Dupont.Jean-Dupont
+        #join SP-Cascatelles@Cascatelles SP-riv-1@Jean-Dupont
 
     input Data/Jean-Dupont/Jean-Dupont-tot.th
         equate Ka.34@Jean-Dupont.Jean-Dupont Ka.34@Fossiles.Fossiles

@@ -1,0 +1,15 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey PierreQuiTombe -title "Réseau de la Pierre Qui Tombe"
+
+    ## Galerie des Stalactites
+    input Data/Stalactites/Stalactites-tot.th
+
+    # Add maps
+    input PierreQuiTombe-maps.th
+
+endsurvey
