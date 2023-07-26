@@ -20,11 +20,11 @@ map MC-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
 	SC-arche1c
 endmap
 
-map MC-rivieratot -title "La Riviera"
-	SC-rivierac1
-	break
-	SC-rivierac2
-endmap
+#map MC-rivieratot -title "La Riviera"
+#	SC-rivierac1
+#	break
+#	SC-rivierac2
+#endmap
 
 map MC-B21 -title "B21"
 	SC-B21c3
@@ -212,8 +212,8 @@ map MC-C37-Riviera -title "Du C37 à la Riviera"
 	MC-AffluentC14@AffluentC14.C37
 	break
 	MC-arche-reverbere
-	break
-	MC-rivieratot
+	#break
+	#MC-Riviera@Riviera.C37
 endmap
 
 map MC-B22-B21 -title "B21 - B22"

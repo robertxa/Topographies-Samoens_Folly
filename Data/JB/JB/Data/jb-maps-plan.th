@@ -7,8 +7,8 @@ encoding  utf-8
 
 map MP-C37 -title "C37"
 	SP-C37@C37.C37
-	#break
-	#SP-C37-jonction
+	break
+	SP-C37-jonction@C37.C37
 	break
     SP-arche
 endmap
@@ -27,7 +27,7 @@ map MP-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
 endmap
 
 map MP-rivieratot -title "La Riviera"
-	SP-riviera #(A mettre sous JB-B22 et arianes)
+	SP-riviera2 #(A mettre sous JB-B22 et arianes)
 endmap
 
 map MP-B21 -title "B21"
@@ -330,6 +330,8 @@ map MP-C37-Riviera -title "Du C37 à la Riviera"
 	MP-arche-reverbere
 	break
 	MP-rivieratot
+	break
+	MP-Riviera@Riviera.C37
 endmap
 
 map MP-B22-B21 -title "B21 - B22"

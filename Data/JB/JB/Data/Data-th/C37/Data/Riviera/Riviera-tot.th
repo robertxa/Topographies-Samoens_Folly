@@ -4,15 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey EscaladesOctobre -title "C37 - Escalades d'Octobre"
+survey Riviera -title "La Riviera"
 
-    input Data/EscaladesOctobre.th
+    input Data/Riviera.th
     
     # Add dessins
-    input Data/EscaladesOctobre.th2
-    input Data/EscaladesOctobre-coupe.th2
+    input Data/Riviera.th2
+    input Data/Riviera-coupe.th2
 
     # Add maps
-    input EscaladesOctobre-maps.th
+    input Riviera-maps.th
 
 endsurvey

@@ -175,7 +175,9 @@ layout my_layout
 	# Dessin ou pas du cheminement topo
 	symbol-hide line survey
 	#debug station-names
-	#debug scrap-names
+	debug scrap-names
+	  color map-fg scraps
+      color-legend off
 	color map-fg altitude
 	color-legend smooth
 	symbol-hide point rope
