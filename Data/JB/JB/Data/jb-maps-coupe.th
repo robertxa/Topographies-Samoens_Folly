@@ -4,18 +4,6 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MC-C37 -title "C37"
-	SC-C37c1	# Metapost error
-	break
-	SC-C37c2
-	break
-    SC-C37c3
-endmap
-
-map MC-escaladesoctobre -title "Escalades d'Octobre"
-	SC-escoctc
-endmap
-
 map MC-Voltigeurs -title "Méandre des Voltigeurs"
 	SC-voltic1
 	break
@@ -215,9 +203,9 @@ endmap
 # Maps intermédiaire pour construire uniquement certaines parties du gouffre
 
 map MC-C37-Riviera -title "Du C37 à la Riviera"
-	MC-escaladesoctobre
+	MC-EscaladesOctobre@EscaladesOctobre.C37
 	break
-	MC-C37
+	MC-C37@C37
 	break
 	MC-Voltigeurs
 	break
@@ -259,9 +247,9 @@ map MC-B19-V11 -title "Réseaux du B19 et du V11"
 	break
 	MC-reseauaiguilles
 	break
-	MC-couteau-grenoblois@CouteauG
+	MC-couteau-grenoblois@CouteauG.V11-Aiguilles
 	break
-	MC-traverse@PuitsTraverse
+	MC-traverse@PuitsTraverse.V11-Aiguilles
 	break
 	MC-bulle
 endmap
@@ -277,7 +265,7 @@ map MC-Branlots-J14 -title "Réseaux des Branlots et du J14"
 	break
 	MC-s_branlots@ShuntBranlots.Branlots
 	break
-	MC-erreur@Erreur
+	MC-erreur@Erreur.V6
 endmap
 
 map MC-V4-V6-Mais -title "V4 - V5 - V6"
@@ -287,7 +275,7 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MC-mais
 	break
-	MC-dino@dino
+	MC-dino@dino.V6
 #	break
 #	MC-grandescalier
 	break

@@ -1,0 +1,27 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey V6 -title "Le V6"
+
+    
+    # Galerie du Petit Dino
+	input Data/dino/dino-tot.th
+		#equate xa-2014a-1@jb-dino.dino Da.248@jb-amonts2
+    	#equate xa-2014a-9@jb-dino.dino Da.253@jb-amonts2
+		#join SP-dino-1@dino SP-Erreur -count 2
+		#join SC-maisc1 SC-dino-coupe@dino
+    # Shunt de l'Erreur
+	input Data/Erreur/erreur-tot.th
+		#equate Xa-2015e-0@Erreur.Erreur Da.2494@jb-amonts2
+    	#equate Xa-2015e-10@Erreur.Erreur Da.239@jb-amonts2
+		#join SP-Erreur SP-berreur1@Erreur
+    	#join SP-P15 SP-berreur1@Erreur
+		#join SC-berreurc1@Erreur SC-maisc1
+
+    # Add maps
+    input V6-maps.th
+
+endsurvey

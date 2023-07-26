@@ -4,17 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-C37 -title "Gouffre C37"
-	SP-C37
-	break
-	SP-C37-jonction
+map MP-V4 -title "Gouffre V4"
+	
+	#break
+	MP-Ete-Indien@Ete-Indien
 endmap
 
-map MC-C37 -title "Gouffre C37"
-	SC-C37c1
-	break
-	SC-C37c2
-	break
-	SC-C37c3
+map MC-V4 -title "Gouffre V4"
+	MC-Ete-Indien@Ete-Indien
 endmap
    

@@ -6,13 +6,13 @@ encoding  utf-8
 
 survey C37 -title "Gouffre C37"
 
-    ## Toute la zone du Bivouac -500 m
-    #input Data/C37/C37-tot.th
     input Data/C37/C37-tot.th #Data/C37_2020.th OK
+    input Data/EscaladesOctobre/EscaladesOctobre-tot.th
+        equate Ae.8@C37.C37 Ae.8@EscaladesOctobre.EscaladesOctobre
+        join SP-C37-jonction@C37 SP-escalade-octobre@EscaladesOctobre
+    
 
     input Data/AffluentC14/AffluentC14-tot.th
-        #equate Ka.13@Cascatelles.Cascatelles Ka.13@Jean-Dupont.Jean-Dupont
-        #join SP-Cascatelles@Cascatelles SP-riv-1@Jean-Dupont
     
 
     # Add maps

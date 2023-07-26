@@ -4,17 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey C37 -title "Gouffre C37"
+survey EscaladesOctobre -title "C37 - Escalades d'Octobre"
 
-    input Data/C37.th
-    input Data/C37_2020.th
-        equate Aa.28@C37 0.2020@C37_2020
+    input Data/EscaladesOctobre.th
     
     # Add dessins
-    input Data/C37.th2
-    input Data/C37-coupe.th2
+    input Data/EscaladesOctobre.th2
+    input Data/EscaladesOctobre-coupe.th2
 
     # Add maps
-    input C37-maps.th
+    input EscaladesOctobre-maps.th
 
 endsurvey

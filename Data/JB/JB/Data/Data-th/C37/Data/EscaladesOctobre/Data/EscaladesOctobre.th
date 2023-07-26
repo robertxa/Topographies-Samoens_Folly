@@ -1,0 +1,119 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey EscaladesOctobre -title "C37 - Escalades d'Octobre"
+   
+ centerline -extend left -title "Voie Rapide Ba.0_Ba.1 Ba.45_Ba46"
+
+   date 1983.10.22
+ #  declination -2.0140 degrees
+  team " Christophe Ohl"
+  team "Jean-Bernard/de Chabelier"
+  explo-date 1983.10.21
+    explo-team "Thierry Millet"
+    explo-team "Richard Knapszik"
+    explo-team "Jean-Bernard/de Chabelier"
+    explo-team "Christophe Ohl"
+    explo-team "Philippe Lavabre"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+   
+   data topofil from to fromcount tocount compass clino left right up down
+
+    Ba.0 Ba.1 0.0 953.0    158.      -63.       0.       0.       0.       0.    
+    Ba.1 Ba.2 953.0 1053.0    241.      -18.       0.       0.       0.       0.    
+    Ba.2 Ba.3 1053.0 2749.0    161.      -32.       0.       0.       0.       0.    
+    Ba.3 Ba.4 2749.0 3743.0    163.      -33.       0.       0.       0.       0.    
+    Ba.4 Ba.5 3743.0 4175.0    159.      -21.       0.       0.       0.       0.    
+    Ba.5 Ba.6 4175.0 5263.0    161.      -30.       0.       0.       0.       0.    
+    Ba.6 Ba.7 5263.0 6978.0    155.      -28.       0.       0.       0.       0.    
+    Ba.7 Ba.8 6978.0 8879.0    160.      -27.       0.       0.       0.       0.    
+    Ba.8 Ae.8 8879.0 9648.0    139.      -19.       0.       0.       0.       0.    
+  #  Ae.8 Ba.10 9648.0 10852.0    169.      -32.       0.       0.       0.       0.    
+  #  Ba.10 Ba.11 10852.0 11544.0    158.      -58.       0.       0.       0.       0.    
+  #  Ba.11 Ba.12 11544.0 12733.0    164.      -22.       0.       0.       0.       0.    
+  #  Ba.12 Ba.13 12733.0 13227.0    212.      -20.       0.       0.       0.       0.    
+  #  Ba.13 Ba.14 13227.0 13858.0    79.      -19.       0.       0.       0.       0.    
+  #  Ba.14 Ba.15 13858.0 14033.0    149.      -18.       0.       0.       0.       0.    
+  #  Ba.15 Ba.16 14033.0 14135.0    182.      -20.       0.       0.       0.       0.    
+  #  Ba.16 Ba.17 14135.0 14906.0    148.      -21.       0.       0.       0.       0.    
+  #  Ba.17 Ba.18 14906.0 15108.0    206.      -32.       0.       0.       0.       0.    
+  #  Ba.18 Ba.19 15108.0 15448.0    162.      -12.       0.       0.       0.       0.    
+  #  Ba.19 Ba.20 15448.0 16430.0    178.      -5.       0.       0.       0.       0.    
+  #  Ba.20 Ba.21 16430.0 17856.0    174.      -9.       0.       0.       0.       0.    
+  #  Ba.21 Ba.22 17856.0 19032.0    289.       54.       0.       0.       0.       0.    
+  #  Ba.22 Ba.23 19032.0 19776.0    321.       45.       0.       0.       0.       0.    
+  #  Ba.23 Ba.24 19776.0 20330.0    309.       37.       0.       0.       0.       0.    
+  #  Ba.24 Ba.25 20330.0 21502.0    338.      -25.       0.       0.       0.       0.    
+  #  Ba.25 Ba.26 21502.0 21974.0    319.       16.       0.       0.       0.       0.    
+  #  Ba.26 Ba.27 21974.0 22992.0    325.      -51.       0.       0.       0.       0.    
+  #  Ba.27 Ba.28 22992.0 23298.0    174.      -24.       0.       0.       0.       0.    
+  #  Ba.28 Ba.29 23298.0 23741.0    253.      -56.       0.       0.       0.       0.    
+  #  Ba.29 Ba.30 23741.0 24137.0    190.      -1.       0.       0.       0.       0.    
+  #  Ba.30 Ba.31 24137.0 25308.0    172.      -21.       0.       0.       0.       0.    
+  #  Ba.31 Ba.32 25308.0 25712.0    137.      -8.       0.       0.       0.       0.    
+  #  Ba.32 Ba.33 25712.0 26593.0    196.      -32.       0.       0.       0.       0.    
+  #  Ba.33 Ba.34 26593.0 26983.0    159.      -17.       0.       0.       0.       0.    
+  #  Ba.34 Ba.35 26983.0 27166.0    252.      -51.       0.       0.       0.       0.    
+  #  Ba.35 Ba.36 27166.0 27361.0    204.      -37.       0.       0.       0.       0.    
+  #  Ba.36 Ba.37 27361.0 27571.0    239.       1.       0.       0.       0.       0.    
+  #  Ba.37 Ba.38 27571.0 27882.0    169.      -15.       0.       0.       0.       0.    
+  #  Ba.38 Ba.39 27882.0 29219.0    242.      -26.       0.       0.       0.       0.    
+  #  Ba.39 Ba.40 29219.0 29620.0    262.      -11.       0.       0.       0.       0.    
+  #  Ba.40 Ba.41 29620.0 30169.0    164.      -24.       0.       0.       0.       0.    
+  #  Ba.41 Ba.42 30169.0 30883.0    210.      -24.       0.       0.       0.       0.    
+  #  Ba.42 Ba.43 30883.0 31276.0    162.      -33.       0.       0.       0.       0.    
+  #  Ba.43 Ba.44 31276.0 32375.0    192.      -68.       0.       0.       0.       0.    
+  #  Ba.44 Ba.45 32375.0 33211.0    231.      -5.       0.       0.       0.       0.    
+  #  Ba.45 Ba.46 33211.0 33666.0    254.      -8.       0.       0.       0.       0.    
+
+# Dev = 377.0 m
+
+ endcenterline
+
+  
+centerline -extend left -title "Escalade octobre Bi.0_Bi.1 Bi.12_Bi.4"
+
+   date 1983.11.01
+  # declination -2.0159 degrees
+  team "Christophe Ohl"
+  team "Jacques Kerdaffrec"
+  explo-date 1983.11.01
+    explo-team "Christophe Ohl"
+    explo-team "Jacques Kerdaffrec"
+   
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+
+   Bi.0 Bi.1    13.19000       70.      -75.       0.       0.       0.       0.    
+   Bi.1 Bi.2    7.22       0.      -90.       0.       0.       0.       0.    
+   Bi.2 Bi.3    2.61       20.       2.       0.       0.       0.       0.    
+   Bi.3 Bi.4    12.91000       92.      -78.       0.       0.       0.       0.    
+   Bi.4 Ba.0    4.42       182.      -79.       0.       0.       0.       0.    # Raccord terminus
+   Bi.6' Bi.6    3.97       0.       90.       0.       0.       0.       0.    # Petit méandre latéral
+   Bi.6 Bi.7    3.68       128.       29.       0.       0.       0.       0.    
+   Bi.7 Bi.8    3.75       121.       16.       0.       0.       0.       0.    
+   Bi.8 Bi.9    6.14       240.       67.       0.       0.       0.       0.    
+   Bi.9 Bi.10    8.53       182.       71.       0.       0.       0.       0.    
+   Bi.10 Bi.11    7.48       158.       31.       0.       0.       0.       0.    
+   Bi.11 Bi.12    1.97       210.       5.       0.       0.       0.       0.    
+   Bi.12 Bi.4    3.19       265.      -38.       0.       0.       0.       0.    
+
+# Dev = 79.0 m
+
+endcenterline
+
+endsurvey
+
+
+

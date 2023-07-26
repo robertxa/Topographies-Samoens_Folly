@@ -1,0 +1,38 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-V11-Aiguilles -title "Gouffre V11 et galerie des Aiguilles"
+	#MP-V11
+	#break
+	MP-couteau-grenoblois@CouteauG
+	#break
+	#MP-AspiroSouffle@AspiroSouffle.Branlots
+	#break
+	#MP-reseauaiguilles
+	break
+	MP-traverse@PuitsTraverse
+	break
+	MP-AvalAiguilles@AvalAiguilles
+	#break
+	#MP-riviere-excentriques
+	#preview below MP-AvalAiguilles@AvalAiguilles
+	#break
+	#MP-bulle  
+endmap
+
+
+map MC-V11-Aiguilles -title "Gouffre V11 et galerie des Aiguilles"
+	#MC-V11
+	#break
+	#MC-reseauaiguilles
+	#break
+	MC-couteau-grenoblois@CouteauG
+	break
+	MC-traverse@PuitsTraverse
+	#break
+	#MC-bulle
+endmap
+   

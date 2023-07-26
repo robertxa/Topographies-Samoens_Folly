@@ -1,0 +1,54 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey V11-Aiguilles -title "V11 et galerie des Aiguilles"
+
+    #input Drawing-th2/Plan/V11.th2
+	#	### Joins dessins Plan
+	#		join SP-V11 SP-Aiguilles
+	#		join SP-oublies SP-Ascension -count 2
+	#input Drawing-th2/Coupe/V11-coupe.th2
+
+	### Le réseau des Aiguilles
+	#input Drawing-th2/Plan/aiguilles.th2
+
+	## Le méandre des Crawleurs
+	#input Drawing-th2/Plan/crawleurs.th2
+	#		join SP-Crawleuraval SP-Excentriques1
+
+	## L'aval des Aiguilles
+	input Data/aval-aiguilles/AvalAiguilles-tot.th
+	#		equate  Xa-2013-11@aval-aiguilles.AvalAiguilles De.23@jb-amonts2
+    #		equate  2012c-xa-27@aval-aiguilles.AvalAiguilles De.8@jb-amonts2
+    #		equate  2012c-xa-0double@aval-aiguilles.AvalAiguilles Da.197@jb-amonts2
+	#	### Joins dessins Plan
+	#		join SP-oublies SP-audessusbulle
+	#		##join SP-scrap146@AvalAiguilles SP-Ascension
+	#		join SP-scrap146b@AvalAiguilles SP-Ascension -count 2
+	#	### Joins dessins Coupe
+
+	### La rivière aux Excentriques
+	#input Drawing-th2/Plan/excentriques.th2
+	#		join SP-Frenesie SP-Montagnesrusses
+	#		join SP-Pseudosiphon2 SP-Cristal
+	#		join SP-Echo SP-Colimaconaval
+
+	## Réseau du Couteau Grenoblois
+	input Data/CouteauG/couteauG-tot.th
+	#		equate Xa-2015f-0@CouteauG.CouteauG Ee.0@jb-amonts2	
+	#		join SP-CouteauG1@CouteauG SP-oublies
+	#		join SC-CouteauGc1@CouteauG SC-V11c3
+	
+	## Réseau du Puits que l'on traverse
+	input Data/puitsquelontraverse/puitsTraverse-tot.th
+	#		equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse.PuitsTraverse
+	#		join SP-traverse2@PuitsTraverse SP-audessusbulle
+	#		join SC-traversec1@PuitsTraverse SC-V11c5
+    
+    # Add maps
+    input V11-Aiguilles-maps.th
+
+endsurvey

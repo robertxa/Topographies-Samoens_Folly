@@ -1,0 +1,295 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey C37 -title "Gouffre C37" -entrance "C37b" -entrance "C37"
+  
+centerline -extend left -title "C37 Aa.1_Aa.2 Aa.31_Aa33"
+
+  cs lat-long
+  fix C37 46.10673 6.79960 2330
+
+  station C37b "C37b" entrance
+	station C37 "C37" entrance
+
+  date 1984.08.25
+    #  declination -1.5525 degrees
+    team "Christian Rigaldie"
+    team "Emile Saleh"
+  explo-date 1984.08.23
+    explo-team "Christophe Ohl"
+    explo-team "Christian Rigaldie"
+    explo-team "Emile Saleh"
+  explo-date 1984.08.24
+    explo-team "Christian Rigaldie"
+    explo-team "Thierry Millet"
+    explo-team "Christophe Ohl"
+    explo-team "Frédéric Pallu"
+  explo-date 1985.08.25
+    explo-team "Christian Rigaldie"
+    explo-team "Emile Saleh"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+	
+   data topofil from to fromcount tocount compass clino left right up down
+   
+   flags surface
+
+   C37b C37bdouble 0.0 0.0    0.       90.       0.       0.       0.       0.     # Entree C37
+   C37b C37 0.0 300.0    0.      -90.       0.       0.       0.       0.    
+   C37 Aa.1 46153.0 46604.0    110.      -80.       0.       0.       0.       0.    
+   
+   flags not surface
+   Aa.1 Aa.2 46604.0 47570.0    127.      -63.       0.       0.       0.       0.    
+   Aa.2 Aa.3 47570.0 47827.0    132.      -21.       0.       0.       0.       0.    
+   Aa.3 Aa.4 47827.0 48048.0    155.      -41.       0.       0.       0.       0.    
+   Aa.4 Aa.5 48048.0 49082.0    0.      -90.       0.       0.       0.       0.    
+   Aa.5 Aa.6 49082.0 49313.0    162.       15.       0.       0.       0.       0.    
+   Aa.6 Aa.7 49313.0 49795.0    83.       23.       0.       0.       0.       0.    
+   Aa.7 Aa.8 49795.0 50255.0    68.      -77.       0.       0.       0.       0.    
+   Aa.8 Aa.9 50255.0 50747.0    132.      -52.       0.       0.       0.       0.    
+   Aa.9 Aa.10 50747.0 50988.0    171.      -44.       0.       0.       0.       0.    
+   Aa.10 Aa.11 50988.0 52000.0    165.      -69.       0.       0.       0.       0.    
+   Aa.11 Aa.12 52000.0 52370.0    116.       52.       0.       0.       0.       0.    
+   Aa.12 Aa.13 52370.0 52856.0    50.      -48.       0.       0.       0.       0.    
+   Aa.13 Aa.14 52856.0 53043.0    116.       28.       0.       0.       0.       0.    
+   Aa.14 Aa.15 53043.0 53225.0    147.       35.       0.       0.       0.       0.    
+   Aa.15 Aa.16 53225.0 53902.0    96.      -75.       0.       0.       0.       0.    
+   Aa.16 Aa.17 53902.0 54158.0    345.       4.       0.       0.       0.       0.    
+   Aa.17 Aa.18 54158.0 55138.0    295.      -88.       0.       0.       0.       0.    
+   Aa.18 Aa.19 55138.0 55347.0    98.      -12.       0.       0.       0.       0.    
+   Aa.19 Aa.20 55347.0 55764.0    175.       19.       0.       0.       0.       0.    
+   Aa.20 Aa.21 55764.0 56221.0    194.      -64.       0.       0.       0.       0.    
+   Aa.21 Aa.22 56221.0 56954.0    178.      -50.       0.       0.       0.       0.    
+   Aa.22 Aa.23 56954.0 57260.0    166.       17.       0.       0.       0.       0.    
+   Aa.23 Aa.24 57260.0 57443.0    214.       14.       0.       0.       0.       0.    
+   Aa.24 Aa.25 57443.0 57780.0    165.      -41.       0.       0.       0.       0.    
+   Aa.25 Aa.26 57780.0 57915.0    234.      -60.       0.       0.       0.       0.    
+   Aa.26 Aa.27 57915.0 59007.0    221.      -70.       0.       0.       0.       0.    
+   Aa.27 Aa.28 59007.0 59313.0    271.      -5.       0.       0.       0.       0.    # Depart ; haut du P30
+   Aa.28 Aa.29 59313.0 61698.0    170.      -88.       0.       0.       0.       0.    
+   Aa.29 Aa.30 61698.0 62113.0    88.       35.       0.       0.       0.       0.    
+   Aa.30 Aa.31 62113.0 63171.0    0.      -90.       0.       0.       0.       0.    
+   Aa.31 Aa.32 63171.0 63332.0    179.       0.       0.       0.       0.       0.    
+   Aa.32 Aa.33 63332.0 64109.0    62.      -75.       0.       0.       0.       0.    # Haut du P23
+
+# Dev = 178.56 m
+
+ endcenterline
+
+  
+  
+
+ centerline -extend left -title "Boyau des Pétroleurs Aa.28_Ab.1 Ab.14_Aa15"
+
+   date 1985.08.01
+    #  declination -1.4917 degrees
+    team "Christophe Ohl"
+    team "Jean-Bernard/de Chabelier" 
+  explo-date 1984.08.31
+    explo-team "Christophe Ohl"
+    explo-team "Jean-Bernard/de Chabelier"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount compass clino left right up down
+
+   Aa.28 Ab.1 10000.0 10516.0    22.       30.       0.       0.       0.       0.    # Haut du P30
+   Ab.1 Ab.2 10516.0 10912.0    235.       14.       0.       0.       0.       0.    
+   Ab.2 Ab.3 10912.0 11179.0    172.       14.       0.       0.       0.       0.    
+   Ab.3 Ab.4 11179.0 11399.0    266.      -31.       0.       0.       0.       0.    
+   Ab.4 Ab.5 11399.0 11571.0    245.      -30.       0.       0.       0.       0.    
+   Ab.5 Ab.6 11571.0 12681.0    167.       0.       0.       0.       0.       0.    
+   Ab.6 Ab.7 12681.0 12985.0    132.      -17.       0.       0.       0.       0.    
+   Ab.7 Ab.8 12985.0 13165.0    184.      -30.       0.       0.       0.       0.    
+   Ab.8 Ab.9 13165.0 13443.0    223.      -44.       0.       0.       0.       0.    
+   Ab.9 Ab.10 13443.0 13905.0    167.      -27.       0.       0.       0.       0.    
+   Ab.10 Ab.11 13905.0 14051.0    190.      -40.       0.       0.       0.       0.    
+   Ab.11 Ab.12 14051.0 14191.0    256.      -31.       0.       0.       0.       0.    
+   Ab.12 Ab.13 14191.0 14378.0    180.      -21.       0.       0.       0.       0.    
+   Ab.13 Ab.14 14378.0 14519.0    255.      -46.       0.       0.       0.       0.    
+   Ab.14 Ab.15 14519.0 14866.0    252.      -26.       0.       0.       0.       0.    # Boyau des Pétroleurs
+
+# Dev = 48.6 m
+
+ endcenterline
+
+
+
+ centerline -extend left -title "C37 Ab.15_Ac.1 Ac.36_Ac37"
+
+   date 1989.09.03
+  # declination -1.2423 degrees
+  team "Christophe Ohl"
+  team "Alain Gresse"
+  explo-date 1988.08.26
+    explo-team "Thierry Millet"
+    explo-team "Michel Amiard"
+    explo-team "Christian Hubert"
+  explo-date 1988.08.27
+    explo-team "Thierry Millet"
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+  explo-date 1989.07.14
+    explo-team "Bernard Lips"
+    explo-team "Christian Rigaldie"
+    explo-team "Alain Gresse"
+  explo-date 1989.07.15
+    explo-team "Christophe Ohl"
+    explo-team "Michel Amiard"
+    explo-team "Patrice Plantier"
+    explo-team "Patrice Dubail"
+    #explo-team "G.S. Vulcain"
+  explo-date 1989.07.16
+    explo-team "Christophe Ohl"
+    explo-team "Patrice Plantier"
+    explo-team "Patrice Dubail"
+    explo-team "Patrick Comte"
+  explo-date 1989.08.29
+    explo-team "Christophe Ohl"
+    explo-team "Patrice Plantier"
+  explo-date 1989.09.01
+    explo-team "Thierry Millet"
+    explo-team "Christian Hubert"
+  explo-date 1989.08.03
+    explo-team "Thierry Millet"
+    explo-team "Christian Hubert"
+    explo-team "Christophe Ohl"
+    explo-team "Alain Gresse"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount compass clino left right up down
+
+   Ab.15 Ac.1 9695.0 9911.0    37.      -19.       0.       0.       0.       0.    
+   Ac.1 Ac.2 9911.0 10348.0    71.      -28.       0.       0.       0.       0.    
+   Ac.2 Ac.3 10348.0 10486.0    325.      -21.       0.       0.       0.       0.    
+   Ac.3 Ac.4 10486.0 10748.0    289.      -5.       0.       0.       0.       0.    
+   Ac.4 Ac.5 10748.0 11173.0    266.      -6.       0.       0.       0.       0.    
+   Ac.5 Ac.6 11173.0 11890.0    0.      -90.       0.       0.       0.       0.    
+   Ac.6 Ac.7 11890.0 12072.0    154.       49.       0.       0.       0.       0.    
+   Ac.7 Ac.8 12172.0 13179.0    113.      -76.       0.       0.       0.       0.    
+   Ac.8 Ac.9 13179.0 13320.0    60.      -43.       0.       0.       0.       0.    
+   Ac.9 Ac.10 13320.0 13490.0    159.      -3.       0.       0.       0.       0.    
+   Ac.10 Ac.11 13490.0 13619.0    170.       30.       0.       0.       0.       0.    
+   Ac.11 Ac.12 13619.0 13702.0    118.       42.       0.       0.       0.       0.    
+   Ac.12 Ac.13 14014.0 14400.0    159.      -42.       0.       0.       0.       0.    
+   Ac.13 Ac.14 14400.0 14657.0    172.       39.       0.       0.       0.       0.    
+   Ac.14 Ac.15 14657.0 16061.0    144.      -55.       0.       0.       0.       0.    
+   Ac.15 Ac.16 16061.0 16714.0    152.       25.       0.       0.       0.       0.    
+   Ac.16 Ac.17 16714.0 17555.0    0.      -90.       0.       0.       0.       0.    
+   Ac.17 Ac.18 17555.0 17947.0    135.       24.       0.       0.       0.       0.    
+   Ac.18 Ac.19 17947.0 18276.0    90.       46.       0.       0.       0.       0.    
+   Ac.19 Ac.20 18276.0 18377.0    104.       0.       0.       0.       0.       0.    
+   Ac.20 Ac.21 18377.0 18792.0    117.      -44.       0.       0.       0.       0.    
+   Ac.21 Ac.22 18792.0 19448.0    227.       13.       0.       0.       0.       0.    
+   Ac.22 Ac.23 19448.0 19850.0    160.      -15.       0.       0.       0.       0.    
+   Ac.23 Ac.24 19850.0 20202.0    157.      -33.       0.       0.       0.       0.    
+   Ac.24 Ac.25 20202.0 20502.0    148.      -31.       0.       0.       0.       0.    
+   Ac.25 Ac.26 20502.0 20733.0    147.      -20.       0.       0.       0.       0.    
+   Ac.26 Ac.27 20733.0 22065.0    131.      -79.       0.       0.       0.       0.    
+   Ac.27 Ac.28 22065.0 22222.0    89.       48.       0.       0.       0.       0.    
+   Ac.28 Ac.29 22222.0 22617.0    164.      -29.       0.       0.       0.       0.    
+   Ac.29 Ac.30 22617.0 22759.0    200.      -38.       0.       0.       0.       0.    
+   Ac.30 Ac.31 22759.0 23288.0    133.      -67.       0.       0.       0.       0.    
+   Ac.31 Ac.32 23288.0 24082.0    144.       45.       0.       0.       0.       0.    
+   Ac.32 Ac.33 24082.0 24218.0    183.       27.       0.       0.       0.       0.    
+   Ac.33 Ac.34 24218.0 24343.0    260.       34.       0.       0.       0.       0.    
+   Ac.34 Ac.35 24343.0 24730.0    177.      -64.       0.       0.       0.       0.    
+   Ac.35 Ac.36 24730.0 25180.0    166.       21.       0.       0.       0.       0.    
+   Ac.36 Ac.37 25180.0 26481.0    124.      -62.       0.       0.       0.       0.    # Puits de la Jonction
+
+# Dev = 163.7 m
+
+ endcenterline
+
+
+
+ centerline -extend left -title "C37 Ac.36_Ad.1 Ad.8_Ad9"
+
+   date 1989.10.29
+ #  declination -1.2333 degrees
+  team "Christophe Ohl"
+  team "Bernard Lips"
+  explo-date 1989.09.30
+    explo-team "Patrice Plantier"
+    explo-team "Christophe Ohl"
+  explo-date 1989.10.29
+    explo-team "Christophe Ohl"
+    explo-team "Bernard Lips"
+
+    units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount compass clino left right up down
+
+   Ac.36 Ad.1 0.0 240.0    75.       0.       0.       0.       0.       0.     # puits de la Jonction
+   Ad.1 Ad.2 240.0 706.0    110.      -66.       0.       0.       0.       0.    
+   Ad.2 Ad.3 706.0 1081.0    145.      -48.       0.       0.       0.       0.    
+   Ad.3 Ad.4 1081.0 1721.0    160.       0.       0.       0.       0.       0.    
+   Ad.4 Ad.5 1721.0 2484.0    155.      -49.       0.       0.       0.       0.    
+   Ad.5 Ad.6 2484.0 2676.0    130.      -42.       0.       0.       0.       0.    
+   Ad.6 Ad.7 2676.0 3778.0    0.      -90.       0.       0.       0.       0.    
+   Ad.7 Ad.8 3778.0 3978.0    140.      -45.       0.       0.       0.       0.    
+   Ad.8 Ad.9 3978.0 4778.0    140.      -90.       0.       0.       0.       0.    # imp.
+
+# Dev = 47.8 m
+
+ endcenterline
+
+
+ centerline -extend left -title "C37 jonction B22 Ac.36_Ae.1 Ae.7_Ae8"
+
+   date 1989.12.02
+	# declination -1.2340 degrees
+  team "Christophe Ohl"
+  team "Thierry Millet"
+  explo-date 1989.12.02
+    explo-team "Christophe Ohl"
+    explo-team "Patrice Plantier"
+    explo-team "Thierry Millet"
+    explo-team "Bernard Lips"
+    explo-team "Josiane Lips"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount compass clino left right up down
+
+   Ac.36 Ae.1 0.0 240.0    75.       0.       0.       0.       0.       0.      
+   Ae.1 Ae.2 240.0 1259.0    0.       90.       0.       0.       0.       0.    
+   Ae.2 Ae.3 1259.0 1513.0    127.       49.       0.       0.       0.       0.    
+   Ae.3 Ae.4 1513.0 2026.0    156.      -51.       0.       0.       0.       0.    
+   Ae.4 Ae.5 2026.0 2482.0    157.      -27.       0.       0.       0.       0.    
+   Ae.5 Ae.6 2482.0 3229.0    288.      -6.       0.       0.       0.       0.    
+   Ae.6 Ae.7 3229.0 3688.0    233.      -37.       0.       0.       0.       0.    
+   Ae.7 Ae.8 3688.0 4293.0    169.      -31.       0.       0.       0.       0.    
+
+# Dev = 18.0 m
+
+ endcenterline
+
+endsurvey
+
+
+

@@ -4,17 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-C37 -title "Gouffre C37"
-	SP-C37
-	break
-	SP-C37-jonction
+map MP-Riviera -title "La Riviera"
+	SP-riviera
 endmap
 
-map MC-C37 -title "Gouffre C37"
-	SC-C37c1
+map MC-Riviera -title "La RIviera"
+	SC-rivierac1
 	break
-	SC-C37c2
-	break
-	SC-C37c3
+	SC-rivierac2
 endmap
    

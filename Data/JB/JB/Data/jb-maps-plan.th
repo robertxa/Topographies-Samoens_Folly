@@ -6,15 +6,11 @@ encoding  utf-8
 
 
 map MP-C37 -title "C37"
-	SP-C37
-	break
-	SP-C37-jonction
+	SP-C37@C37.C37
+	#break
+	#SP-C37-jonction
 	break
     SP-arche
-endmap
-
-map MP-escaladesoctobre -title "Escalades d'Octobre"
-	SP-escalade-octobre
 endmap
 
 map MP-Voltigeurs -title "Méandre des Voltigeurs"
@@ -324,7 +320,7 @@ endmap
 map MP-C37-Riviera -title "Du C37 à la Riviera"
 	MP-C37
 	break
-	MP-escaladesoctobre
+	MP-EscaladesOctobre@EscaladesOctobre.C37
 	break
 		MP-Voltigeurs
 		preview below MP-C37
@@ -361,18 +357,18 @@ map MP-B19-V11 -title "Réseaux du B19 et du V11"
 	break
 	MP-V11
 	break
-	MP-couteau-grenoblois@CouteauG
+	MP-couteau-grenoblois@CouteauG.V11-Aiguilles
 	break
 	MP-AspiroSouffle@AspiroSouffle.Branlots
 	break
 	MP-reseauaiguilles
 	break
-	MP-traverse@PuitsTraverse
+	MP-traverse@PuitsTraverse.V11-Aiguilles
 	break
-	MP-AvalAiguilles@AvalAiguilles
+	MP-AvalAiguilles@AvalAiguilles.V11-Aiguilles
 	break
 	MP-riviere-excentriques
-	preview below MP-AvalAiguilles@AvalAiguilles
+	preview below MP-AvalAiguilles@AvalAiguilles.V11-Aiguilles
 	break
 	MP-bulle
 endmap
@@ -394,11 +390,11 @@ map MP-Branlots-J14 -title "Réseaux des Branlots et du J14"
 	break
 	MP-pseudosiphons
 	break
-	MP-dino@dino
+	MP-dino@dino.V6
 	break
 	MP-P15
 	break
-	MP-erreurS@Erreur
+	MP-erreurS@Erreur.V6
 	break
 	MP-erreur
 endmap

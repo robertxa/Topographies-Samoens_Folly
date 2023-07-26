@@ -4,17 +4,20 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-C37 -title "Gouffre C37"
-	SP-C37
-	break
-	SP-C37-jonction
+map MP-V6 -title "Gouffre V6"
+
+	MP-dino@dino
+	#break
+	#MP-P15
+	#break
+	MP-erreurS@Erreur
+	#break
+	#MP-erreur
 endmap
 
-map MC-C37 -title "Gouffre C37"
-	SC-C37c1
+map MC-V6 -title "Gouffre V6"
+	MC-erreur@Erreur
 	break
-	SC-C37c2
-	break
-	SC-C37c3
+	MC-dino@dino
 endmap
    
