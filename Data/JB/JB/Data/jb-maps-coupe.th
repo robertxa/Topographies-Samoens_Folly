@@ -4,26 +4,22 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MC-Voltigeurs -title "Méandre des Voltigeurs"
-	SC-voltic1
-	break
-	SC-voltic3
-	break
-	SC-voltic2
-	break
-	SC-voltic4
-endmap
-
-map MC-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
-	SC-archec2
-	break
-	SC-arche1c
-endmap
-
-#map MC-rivieratot -title "La Riviera"
-#	SC-rivierac1
+#map MC-Voltigeurs -title "Méandre des Voltigeurs"
+#	SC-voltic1@Arche-Voltigeurs.C37
 #	break
-#	SC-rivierac2
+#	SC-voltic3@Arche-Voltigeurs.C37
+#	break
+#	SC-voltic2@Arche-Voltigeurs.C37
+#	break
+#	SC-voltic4@Arche-Voltigeurs.C37
+#endmap
+
+#map MC-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
+#	SC-archec2@Arche-Voltigeurs.C37
+#	break
+#	SC-arche1c@Arche-Voltigeurs.C37
+#	break
+#	SC-FailleBivouac@Arche-Voltigeurs.C37
 #endmap
 
 map MC-B21 -title "B21"
@@ -202,19 +198,19 @@ endmap
 ##########################################################################
 # Maps intermédiaire pour construire uniquement certaines parties du gouffre
 
-map MC-C37-Riviera -title "Du C37 à la Riviera"
-	MC-EscaladesOctobre@EscaladesOctobre.C37
-	break
-	MC-C37@C37
-	break
-	MC-Voltigeurs
-	break
-	MC-AffluentC14@AffluentC14.C37
-	break
-	MC-arche-reverbere
-	#break
-	#MC-Riviera@Riviera.C37
-endmap
+#map MC-C37-Riviera -title "Du C37 à la Riviera"
+#	MC-EscaladesOctobre@EscaladesOctobre.C37
+#	break
+#	MC-C37@C37
+#	break
+#	MC-Voltigeurs
+#	break
+#	MC-AffluentC14@AffluentC14.C37
+#	break
+#	MC-arche-reverbere
+#	break
+#	MC-Riviera@Riviera.C37
+#endmap
 
 map MC-B22-B21 -title "B21 - B22"
 	MC-B21
@@ -361,7 +357,7 @@ endmap
 map MC-JB-coupe-tot -title "Gouffre Jean-Bernard"
 	MC-B22-B21
 	break
-	MC-C37-Riviera
+	MC-C37@C37
 	break
 	MC-B19-V11
 	break

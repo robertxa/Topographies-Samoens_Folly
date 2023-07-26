@@ -21,7 +21,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
 	  
-	doc-title "Gouffre du B19"
+	doc-title "Gouffre C37"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -71,7 +71,7 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-	doc-title "Gouffre du B19"
+	doc-title "Gouffre C37"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 500
@@ -112,5 +112,7 @@ layout my_layout-coupe
   
 endlayout
  
+ select MP-C37@C37
+ select MC-C37@C37
  export map  -projection plan -o Outputs/C37-plan.pdf -layout my_layout
  export map -projection extended -layout my_layout-coupe -o Outputs/C37-coupe.pdf

@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Arche-Voltigeurs -title "Boyau de l'Arche - Méandre des Voltigeurs - Méandre du Réverbère"
+
+    input Data/Arche-Voltigeurs.th
+    
+    # Add dessins
+    input Data/Arche-Voltigeurs.th2
+    input Data/Arche-Voltigeurs-coupe.th2
+
+    # Add maps
+    input Arche-Voltigeurs-maps.th
+
+endsurvey

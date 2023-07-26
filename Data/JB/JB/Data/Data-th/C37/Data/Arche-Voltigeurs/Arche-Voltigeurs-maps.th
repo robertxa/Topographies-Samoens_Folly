@@ -1,0 +1,36 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Arche-Voltigeurs -title "Boyau de l'Arche - Méandre des Voltigeurs - Méandre du Réverbère"
+	SP-arche
+	break
+	SP-Voltigeurs-amonts
+	break
+	SP-voltigeurs
+	break
+	SP-reverbere
+	break
+	SP-faille-bivouac
+	break
+	SP-riviera2
+endmap
+
+map MC-Arche-Voltigeurs -title "Boyau de l'Arche - Méandre des Voltigeurs - Méandre du Réverbère"
+	SC-voltic1
+	break
+	SC-voltic2
+	break
+	SC-voltic3
+	break
+	SC-voltic4
+	break
+	SC-arche1c
+	break
+	SC-archec2
+	break
+	SC-FailleBivouac
+endmap
+   

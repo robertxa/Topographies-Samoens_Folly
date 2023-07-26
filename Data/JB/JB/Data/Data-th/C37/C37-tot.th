@@ -7,13 +7,25 @@ encoding  utf-8
 survey C37 -title "Gouffre C37"
 
     input Data/C37/C37-tot.th #Data/C37_2020.th OK
+    
     input Data/EscaladesOctobre/EscaladesOctobre-tot.th
         equate Ae.8@C37.C37 Ae.8@EscaladesOctobre.EscaladesOctobre
         join SP-C37-jonction@C37 SP-escalade-octobre@EscaladesOctobre
-    input Data/Riviera/Riviera-tot.th
     
-
+    input Data/Arche-Voltigeurs/Arche-Voltigeurs-tot.th
+        equate Ae.8@C37.C37 Ae.8@Arche-Voltigeurs.Arche-Voltigeurs
+        join SP-arche@Arche-Voltigeurs SP-C37-jonction@C37 -count 2
+		join SC-C37c3@C37 SC-voltic1@Arche-Voltigeurs
+    
     input Data/AffluentC14/AffluentC14-tot.th
+        equate  2013-xab-22@affluentC14.AffluentC14 Bg.0@Arche-Voltigeurs.Arche-Voltigeurs
+		join SP-reverbere@Arche-Voltigeurs SP-affluent-C14-2@AffluentC14
+		join SC-affluent-C14_c1@AffluentC14 SC-archec2@Arche-Voltigeurs
+    
+    input Data/Riviera/Riviera-tot.th
+        equate Bb.90@Riviera.Riviera Bb.90@Arche-Voltigeurs.Arche-Voltigeurs
+        join SP-riviera@Riviera SP-riviera2@Arche-Voltigeurs
+        join SC-rivierac1@Riviera SC-FailleBivouac@Arche-Voltigeurs
     
 
     # Add maps

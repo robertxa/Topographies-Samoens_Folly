@@ -18,41 +18,20 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 #####################
 	# Le C37
 	input Data-th/C37/C37-tot.th
-		#equate Aa.28@jb-amonts1 0.2020@C37_2020.C37.C37
-		equate Ae.8@C37.C37.C37 Ae.8@jb-amonts1
-		
-		# La riviera
-		equate Bb.113@Riviera.Riviera.C37 Bb.113@jb-amonts1
-		equate Bb.90@Riviera.Riviera.C37 Bb.90@jb-amonts1
-		join SP-riviera@Riviera.C37 SP-riviera2
-
-
-	input Drawing-th2/Plan/JB-C37.th2
-			join SP-arche SP-C37-jonction@C37.C37 -count 2
-			join SC-C37c3@C37.C37 SC-voltic1
-
-	
-	# Affluent du C14
-		equate  2013-xab-22@affluentC14.AffluentC14.C37 Bg.0@jb-amonts1
-		join SP-reverbere SP-affluent-C14-2@AffluentC14.C37
-		join SC-affluent-C14_c1@AffluentC14.C37 SC-archec2 
 #####################
-
-
-
 	input Data-th/NonTriees/jb-amonts2.th
 		### Equates data
 			equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
     		equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
-	input Drawing-th2/Coupe/voltigeurs-coupe.th2
-		
 
 #####################
 	# Le B22
 	input Data-th/B22/B22-tot.th
+		equate Bb.113@Riviera.Riviera.C37 Bb.113@jb-amonts1
 
 	input Drawing-th2/Plan/JB-B22.th2
 		### Joins dessins Plan
+	input Drawing-th2/Coupe/voltigeurs-coupe.th2
 	input Drawing-th2/Coupe/B22-coupe.th2
 		### Joins dessins Coupe
 			join SC-B22c1 SC-B22cx
