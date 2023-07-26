@@ -22,12 +22,6 @@ line wall
   13060.75 6361.25
 endline
 
-line wall -subtype invisible
-  13060.75 6361.25
-  13060.75 6361.25 13072.25 6360.25 13073.5 6364.0
-  smooth off
-endline
-
 line wall -reverse on -subtype unsurveyed
   13081.75 6397.75
   13080.75 6393.0 13077.5 6376.75 13077.5 6376.75
@@ -506,6 +500,11 @@ line rock-border -close on
   13024.25 6262.0 13026.0 6265.0 13026.0 6265.0
   smooth off
   13024.5 6267.25
+endline
+
+line wall -subtype invisible
+  13021.5 6305.75
+  13018.25 6306.0
 endline
 
 line wall -id l460-13031-6281 -subtype unsurveyed
@@ -1321,11 +1320,13 @@ point 13011.02 6172.3 station -name Bb.9
 endscrap
 
 
+
 scrap SP-riviera2 -projection plan -station-names "" "@Arche-Voltigeurs" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 point 12371.81 5874.76 station -name Bb.90
 
 #point 12342.66 5859.25 station -name Bb.91
+
 
 point 12409.6 5913.44 station -name Bb.87
 
@@ -1653,3 +1654,5 @@ point 12413.3 5899.16 station -name Bb.86
 point 12449.2 5861.64 station -name Bb.85
 
 endscrap
+
+
