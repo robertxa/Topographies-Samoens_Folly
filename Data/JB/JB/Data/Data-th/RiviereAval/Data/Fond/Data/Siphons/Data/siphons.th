@@ -4,14 +4,13 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey siphons_aval -title "Siphons"
+survey siphons_aval -title "Siphons terminaux"
 
 centerline -title "S1 Aval"
 	# topo estimée, siphon non topographié
 
 	explo-date 1981.02.01
 		explo-team "Jean-Louis Fantoli"
-
 
 	units lenght meters
 	units compass degrees
@@ -27,6 +26,7 @@ centerline -title "S1 Aval"
 endcenterline
 
 centerline -title "Intersiphon S1-S2"
+	
 	date 2003.02.25   
 		team "Michel Guis"
 		team "Laurent Tarazona"

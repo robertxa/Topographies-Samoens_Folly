@@ -1,27 +1,16 @@
 # 2023.07.16 created by TopoDroid v 6.1.78
 
-survey lafayette 
-
-  # input "galerielafayette-1p.th2"
-  # input "galerielafayette-1s.th2"
-
-  # map m1p -projection plan
-  #   galerielafayette-1p
-  # endmap
-  # map m1s -projection extended
-  #   galerielafayette-1s
-  # endmap
+survey lafayette -title "Galerie Lafayette ; 2023"
 
   centerline
     date 2023.07.15 
-    team "Tanguy Racine" 
-    team "Arnauld Malard" 
-    team "Laurence [Boudoux d'Hautefeuille]"
-
+      team "Tanguy Racine" 
+      team "Arnauld Malard" 
+      team "Laurence [Boudoux d'Hautefeuille]"
     explo-date 2023.07.15 
-    explo-team "Tanguy Racine" 
-    explo-team "Arnauld Malard" 
-    explo-team "Laurence [Boudoux d'Hautefeuille]"
+      explo-team "Tanguy Racine" 
+      explo-team "Arnauld Malard" 
+      explo-team "Laurence [Boudoux d'Hautefeuille]"
 
     units length meters
     units compass clino degrees

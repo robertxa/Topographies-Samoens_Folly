@@ -285,39 +285,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	## L'arrivée à la cascade Jean Dupont
 	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
 		equate Jd.32@Cascatelles.Cascatelles.Riviere1.RiviereAval Jd.32@jb-amonts2
-			join SP-pAlain SP-cascatelles@Cascatelles.Riviere1.RiviereAval
-			#join V4-2 pAlain # au niveau du Téléphérique
-			join SC-V4c1 SC-dupontc2@Cascatelles.Riviere1.RiviereAval
-
-	## Rivière à l'aval de la Jean Dupont
-	#input Data-th/Riviere1/Riviere1-tot.th
-	#	join SC-biv500c4@Actif.Riviere1 SC-biv500c3@Bivouac-500.Bivouac-500
-
-	## Le Bivouac -500
-	#input Data-th/Bivouac-500/Bivouac-500-tot
-	#	equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@Actif.Actif.Riviere1
-	#	join SP-riv-6@Bivouac-500.Bivouac-500 SP-riv-5@Actif.Riviere1
-	#	join SC-siphon69c2@Bivouac-500.Bivouac-500 SC-biv500c4@Actif.Riviere1
-
-	### La zone de la Gourance
-	#input Data-th/Gourance/Gourance-tot.th
-	#	equate Kg.21@Gourance.Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
-	#	join SP-gourance-1@Gourance.Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
-	#	join SC-balconc1@Toussaint.Riviere2 SC-GourecoupeSteph3@GoureToi.Gourance
-
-	### Rivière de la base de la Gourance aux Cinglés
-	#input Data-th/Riviere2/Riviere2-tot.th
-	#	equate Kh.46@Toussaint.Toussaint.Riviere2 Kh.46@Gourance.Gourance.Gourance
-	#	join SP-gourance5@Toussaint.Riviere2 SP-gourance2@Gourance.Gourance
-	#	##join SC-avalc5@Toussaint SC-balconc1	#??? 
-
-	## Galerie de Sezhommes avec zone de -900 m et siphons terminaux
-	#input Data-th/Fond/Fond-tot.th
-	#	equate Kn.1@sezhommes1975.Sezhommes.Fond Kn.1@Cheneau.Cheneau.Riviere2
-	#	equate 46.2020@sezhommes2020.Sezhommes.Fond Kn.4@Cheneau.Cheneau.Riviere2	# sommet du P6 juste avant le bivouac -900 m
-	#	join SP-sezhommes2020-1@Sezhommes.Fond SP-900-1@Cheneau.Riviere2	# au niveau bivouac -900 m
-	#	join SC-avalc2@Cheneau.Riviere2 SC-sezhommes2020-3@Sezhommes.Fond
-
+		join SP-pAlain SP-cascatelles@Cascatelles.Riviere1.RiviereAval
+		#join V4-2 pAlain # au niveau du Téléphérique
+		join SC-V4c1 SC-dupontc2@Cascatelles.Riviere1.RiviereAval
 
 	##################################################################################################
 	##Add Maps definitions
