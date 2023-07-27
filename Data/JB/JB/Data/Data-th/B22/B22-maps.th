@@ -7,22 +7,16 @@ encoding  utf-8
 map MP-B22 -title "Gouffre B22"
 	MP-B22@B22
 	break
-	#MC-ChampsElysees@ChampsElysees
-	#break
+	MP-ChampsElysees@ChampsElysees
+	break
 	MP-arianes@Arianes
-	#break
-	#MP-Fossiles@Fossiles
-	#break
-	#MP-Actif@Actif
 endmap
 
 map MC-B22 -title "Gouffre B22"
-	#MC-ChampsElysees@ChampsElysees
-	#break
+	MC-ChampsElysees@ChampsElysees
+	break
 	MC-B22@B22
 	break
 	MC-arianes@Arianes
-	#break
-	#MC-Actif@Actif
 endmap
    

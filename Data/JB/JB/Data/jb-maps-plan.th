@@ -44,17 +44,17 @@ endmap
 #	SP-B22-2
 #endmap
   
-map MP-champselysees -title "Les Champs Elysées"
-	SP-champs-elysees
-	break
-	SP-champs-elysees2
-endmap
+#map MP-champselysees -title "Les Champs Elysées"
+#	SP-champs-elysees
+#	break
+#	SP-champs-elysees2
+#endmap
 
-map MP-gadoue -title "Rivière de la Gadoue"
-	SP-gadouejonction
-	break
-	SP-Gadoue
-endmap
+#map MP-gadoue -title "Rivière de la Gadoue"
+#	SP-gadouejonction
+#	break
+#	SP-Gadoue
+#endmap
 
 map MP-B19 -title "B19"
 	SP-B19
@@ -309,12 +309,12 @@ map MP-B22-B21 -title "B21 - B22"
 	MP-B21
 	break
 	MP-B22@B22
-	break
-	MP-champselysees
-	break
-	MP-arianes@Arianes.B22
-	break
-	MP-gadoue
+	#break
+	#MP-champselysees
+	#break
+	#MP-arianes@Arianes.B22
+	#break
+	#MP-gadoue
 endmap
 
 map MP-B19-V11 -title "Réseaux du B19 et du V11"
@@ -654,12 +654,12 @@ map MP-Tr-B22-V6 -title "B22 - V6"
 		#MP-B21
 		#break
 		MP-B22@B22
-		break
-		MP-champselysees
+		#break
+		#MP-champselysees
 		#break
 		#MP-arianes
-		break
-		MP-gadoue
+		#break
+		#MP-gadoue
 	break
 	#MP-B19-V11
 		#MP-senecaliens

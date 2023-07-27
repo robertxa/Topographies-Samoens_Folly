@@ -12,35 +12,23 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ## C'est tout simple !
 
 # Pour importer les différentes données de différents fichiers topos : 
-	input Data-th/NonTriees/jb-amonts1.th
 
+#####################
+	input Data-th/NonTriees/jb-amonts2.th
+		### Equates data
+			#jction B21 avec Gadoue :
+    		equate  Ca.0@ChampsElysees.ChampsElysees.B22  Ca.0@jb-amonts2
 
 #####################
 	# Le C37
 	input Data-th/C37/C37-tot.th
-#####################
-	input Data-th/NonTriees/jb-amonts2.th
-		### Equates data
-			equate  Ca.40x@jb-amonts1  Ca.40@jb-amonts2
-    		equate  Ca.0@jb-amonts1  Ca.0@jb-amonts2
 
 #####################
 	# Le B22
 	input Data-th/B22/B22-tot.th
-		equate Bb.113@Riviera.Riviera.C37 Bb.113@jb-amonts1
-		equate Bc.50@jb-amonts1 Bc.50@B22.B22.B22
+		equate Bb.113@Riviera.Riviera.C37 Bb.113@ChampsElysees.ChampsElysees.B22
 
 	input Drawing-th2/Plan/JB-B22.th2
-		### Joins dessins Plan
-	input Drawing-th2/Coupe/voltigeurs-coupe.th2
-	input Drawing-th2/Coupe/B22-coupe.th2
-		### Joins dessins Coupe
-			#join SC-B22c1 SC-B22cx
-			join SC-B22c2 SC-elyseesc1 
-
-		# Méandre des Arianes
-		equate  Bc.50@jb-arianes.Arianes.B22 Bc.50@jb-amonts1
-    	equate  Bb.115@jb-arianes.Arianes.B22 Bb.115@jb-amonts1
 
 #####################
 
@@ -50,15 +38,14 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	#input Data-th/B21/B21-tot.th
 	input Drawing-th2/Plan/B21.th2
 		#equate Bk.18@ChampsElysees.ChampsElysees.B22 Bk.18@jb-amonts1
-		#join SP-champs-elysees@ChampsElysees.B22 SP-jctionB21B22
+		join SP-AmontGadoue@ChampsElysees.B22 SP-jctionB21B22
 	input Drawing-th2/Coupe/B21-coupe.th2
 		### Joins dessins Coupe
 			##join SC-B21c SC-B22c3
 	## La rivière de la Gadoue    
-	input Drawing-th2/Plan/gadoue.th2
-		### Joins dessins Plan
-			join SP-Gadoue SP-champs-elysees2
-		### Joins dessins Coupe
+		equate Ca.40x@ChampsElysees.ChampsElysees.B22 Ca.40@jb-amonts2
+
+
 #####################
 
 
@@ -68,9 +55,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Joins dessins Plan
 			join SP-base-racc@Lavoir SP-Excentriques1 
 			join SP-Raccourci SP-rac1@Lavoir
-			join SP-Racc5@Lavoir SP-gadouejonction
+			join SP-Racc5@Lavoir SP-gadouejonction@ChampsElysees.B22
 			join SP-B19 SP-Racc5@Lavoir
-			join SP-gadouejonction SP-Racc5@Lavoir
+			join SP-gadouejonction@ChampsElysees.B22 SP-Racc5@Lavoir
 	input Drawing-th2/Coupe/B19-coupe.th2 
 	## Les Sénécaliens dans le B19
 	#input Data-th/Senecaliens/Senecaliens-tot.th
@@ -397,7 +384,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	##################################################################################################
 	centerline -title "Explorations non topographiées ou topographies manquantes"
 	## Rajout des longueurs explorées, non topo, ou topos perdues
-		station Ca.31@jb-amonts1 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
+		station Ca.31@ChampsElysees.ChampsElysees.B22 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
 		station De.36@jb-amonts2 "+43 m explorés et topographiés le 1991.09.21 par Bernard Lips et Robert Sonney, mais topographie perdue" continuation explored 43m	# Courte-échelle (station De.36, 43 m)
 	## Non Topographié
 		station Ib.23@jb-amonts2 "+20 m non topographiés (V6 ter)" continuation explored 20m	# Entrée du V6 ter

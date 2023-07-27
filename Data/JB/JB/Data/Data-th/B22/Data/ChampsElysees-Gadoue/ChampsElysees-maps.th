@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-ChampsElysees -title "Les Champs Elysees et la Rivière de la Gadoue"
+	SP-champs-elysees
+	break
+	SP-champs-elysees2
+	break
+	SP-AmontGadoue
+	break
+	SP-Gadoue
+	break
+	SP-gadouejonction
+endmap
+
+map MC-ChampsElysees -title "Les Champs Elysees et la Rivière de la Gadoue"
+	SC-elyseesc1
+	break
+	SC-B22c2
+	break
+	SC-gadouec1
+endmap   

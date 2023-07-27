@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey ChampsElysees -title "Les Champs Elysées et la rivière de la Gadoue"
+
+    input Data/ChampsElysees.th
+    # Dessins en plan
+    input Data/ChampsElysees.th2
+        join SP-Gadoue SP-AmontGadoue
+    # Dessins en coupe
+    input Data/ChampsElysees-coupe.th2
+        join SC-B22c2 SC-elyseesc1
+
+    # Add maps
+    input ChampsElysees-maps.th
+
+endsurvey
