@@ -4,53 +4,6 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MC-Voltigeurs -title "Méandre des Voltigeurs"
-#	SC-voltic1@Arche-Voltigeurs.C37
-#	break
-#	SC-voltic3@Arche-Voltigeurs.C37
-#	break
-#	SC-voltic2@Arche-Voltigeurs.C37
-#	break
-#	SC-voltic4@Arche-Voltigeurs.C37
-#endmap
-
-#map MC-arche-reverbere -title "Méandre de l'Arche et du Réverbère"
-#	SC-archec2@Arche-Voltigeurs.C37
-#	break
-#	SC-arche1c@Arche-Voltigeurs.C37
-#	break
-#	SC-FailleBivouac@Arche-Voltigeurs.C37
-#endmap
-
-map MC-B21 -title "B21"
-	SC-B21c3
-	break
-	SC-B21c2
-	break
-	SC-B21c1
-	break
-	SC-B21c4
-endmap
-
-#map MC-B22 -title "B22"
-#	SC-B22c1
-#	break
-#	SC-B22cx
-#endmap
-
-#map MC-champselysees -title "Les Champs Elysées"
-#	SC-elyseesc1
-#	break
-#	SC-B22c2
-#endmap
-
-#map MC-gadoue -title "Rivière de la Gadoue"
-#	SC-gadouec1
-#endmap
-
-map MC-B19 -title "B19"
-	SC-B19c1
-endmap
 
 map MC-V11 -title "V11"
 	SC-V11c1
@@ -183,15 +136,15 @@ endmap
 map MC-bivouac-500 -title "Le Bivouac -500 m"
 #	SC-biv500c4
 	break
-	SC-balcon3@Gourance.Gourance
+	SC-balcon3@Gourance.Gourance.RiviereAval
 endmap
 
 map MC-gourance -title "La Gourance"      
 	#SC-balconc1
 	#break
-	SC-balcon2@Gourance.Gourance
+	SC-balcon2@Gourance.Gourance.RiviereAval
 	break
-	SC-Gourance2013-c1@Gourance2013.Gourance
+	SC-Gourance2013-c1@Gourance2013.Gourance.RiviereAval
 endmap
 
 
@@ -215,7 +168,7 @@ endmap
 map MC-B22-B21 -title "B21 - B22"
 	#MC-champselysees
 	#break
-	MC-B21
+	MC-B21@B21
 	break
 	MC-B22@B22
 	break
@@ -231,8 +184,8 @@ map MC-lavoir -title "Réseau du Lavoir"
 endmap
 
 map MC-B19-V11 -title "Réseaux du B19 et du V11"
-	MC-B19
-	break
+	#MC-B19
+	#break
 	MC-B19@B19
 	#break
 	#MC-gadoue
@@ -305,7 +258,7 @@ endmap
 ############## A REVOIR
 
 map MC-Jean-Dupond -title "Zone de la cascade Jean-Dupond"
-	MC-Riviere1@Riviere1
+	MC-Riviere1@Riviere1.RiviereAval
 	break
 	#MC-rivieredebut
 	#break
@@ -325,32 +278,12 @@ endmap
 map MC-Bivouac-500-Gourance -title "Zone du Bivouac -500 et de la Gourance"
 	MC-bivouac-500
 	break
-	MC-Bivouac-500@Bivouac-500
+	MC-Bivouac-500@Bivouac-500.RiviereAval
 	break
-	MC-plafond-Gourance@GoureToi.Gourance
+	MC-plafond-Gourance@GoureToi.Gourance.RiviereAval
 	break
 	MC-gourance
 endmap
-
-#map MC-aval-800 -title "Le Cheneau et la salle du Chaos"
-	#MC-Toussaint@Toussaint
-	#break
-	#MC-Siphon09@Siphon09
-	#break
-	#MC-Conscience@Conscience
-#endmap
-
-#map MC-aval-900 -title "Du Bivouac -900 au siphon terminal"
-	#MC-Cheneau@Cheneau
-	#break
-	#MC-NuitBlanche@NuitBlanche
-	
-	#break
-	#MC-Fond@Fond
-	#MC-sezhommes@Sezhommes
-	#break
-	#MC-siphons@Siphons
-#endmap
 
 ##########################################################################
 # Map qui appelle toutes les autres maps pour construire le plan complet
@@ -370,9 +303,9 @@ map MC-JB-coupe-tot -title "Gouffre Jean-Bernard"
 	MC-Bivouac-500-Gourance
 	
 	break
-	MC-Riviere2@Riviere2
+	MC-Riviere2@Riviere2.RiviereAval
 	break
-	MC-Fond@Fond
+	MC-Fond@Fond.RiviereAval
 	#MC-aval-800
 	#break
 	#MC-aval-900
@@ -423,7 +356,7 @@ map MC-Tr-V4-JD -title "V4b - Cascade Jean Dupont"
 	SC-V4c2
 	break   
 #MC-rivieredebut -title "La rivière entre la Cascade Jean Dupont et -500 m"
-	SC-Dupont-1@Jean-Dupont.Riviere1
+	SC-Dupont-1@Jean-Dupont.Riviere1.RiviereAval
 #	break
 #	SC-dupontc2
 #	break
@@ -450,7 +383,7 @@ map MC-Aval -title "V4-Siphons"
 
 	MC-bivouac-500
 	break
-	MC-Bivouac-500@Bivouac-500
+	MC-Bivouac-500@Bivouac-500.RiviereAval
 	#break
 	#MC-P11
 	#break
@@ -461,15 +394,15 @@ map MC-Aval -title "V4-Siphons"
 	MC-gourance
 
 	break
-	MC-Riviere2@Riviere2
+	MC-Riviere2@Riviere2.RiviereAval
 	break
-	MC-Fond@Fond
+	MC-Fond@Fond.RiviereAval
 	#break
 	#MC-aval-800
 	#break
 	#MC-aval-900
 	break
-	MC-siphons@Siphons.Fond
+	MC-siphons@Siphons.Fond.RiviereAval
 endmap
 
 map MC-V4-Siphons-Spelunca

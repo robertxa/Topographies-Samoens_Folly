@@ -6,9 +6,11 @@ encoding  utf-8
 
 survey B19 -title "Gouffre B19"
 
-    #input Data/B19/B19-tot.th
+    input Data/B19/B19-tot.th
     input Data/Senecaliens/Senecaliens-tot.th
-        #equate Da.58@Senecaliens Da.58@B19@B19
+        equate Da.58@Senecaliens.Senecaliens Da.58@B19.B19
+		join SP-Senecaliens@Senecaliens SP-B19@B19
+		join SC-Senecaliens@Senecaliens SC-B19c1@B19
 
     # Add maps
     input B19-maps.th

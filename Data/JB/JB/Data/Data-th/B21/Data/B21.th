@@ -4,9 +4,9 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey jb-B21 -title "Gouffre du B21" -entrance "B21"
+survey B21 -title "B21" -entrance "B21"
 
-centerline -extend right -title "B21 Cc.0_Cc.1 Cc.51_B21"
+ centerline -extend right -title "B21 Cc.0_Cc.1 Cc.51_B21"
  # De la base du P140 à l'entrée du B21
 
    date 1979.07.05
@@ -110,10 +110,65 @@ centerline -extend right -title "B21 Cc.0_Cc.1 Cc.51_B21"
 
 # dev = 410 m   
    
-endcenterline
+ endcenterline
 
+  
+  
 
-centerline -extend right -title "B21 puits pourris Cb.0_Cb.1 Cb'.3_Cb.14"
+ centerline -extend right -title "Scotch-light Cc.0_Ce.1 Ce.9_Ca.0"
+ # De la Rivière de la Gadoue à la salle du Scotch Light
+
+   date 1977.08.25
+ #  declination -2.4943 degrees
+
+  ##team "G.S. Vulcain"
+  team "Jacques Lopez"
+  team "Philippe Bigeard"
+  explo-date 1977.08.22
+    explo-team "Christian Rigaldie"
+    explo-team "Pierre Rias"
+    explo-team "Jacques Lopez"
+    explo-team "Paul Deschamps"
+  explo-date 1977.08.23
+    explo-team "Bernard Lips"
+    explo-team "Jean-Pierre Stéphanato"
+    explo-team "Philippe Bigeard"
+  explo-date 1977.08.24
+    explo-team "Pierre Rias"
+    explo-team "Paul Deschamps"
+  explo-date 1977.08.25
+    explo-team "Jacques Lopez"
+    explo-team "Philippe Bigeard"
+
+  explo-date 1977.11.08
+    explo-team "Jacques Lopez"
+    explo-team "Christian Rigaldie"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Cc.0 Ce.1    8.9       330.       15.       0.       0.       0.       0.    # Arrivée d'Eau au plafond
+   Ce.1 Ce.2    13.3       303.      -24.       0.       0.       10.       10.    # Largeur 15-20 m
+   Ce.2 Ce.3    6.9       0.      -90.       0.       0.       0.       0.    # Gros bloc coincé au sommet du puits. La rivière se pert dans un méandre (P25\30)
+   Ce.3 Ce.4    5.5       285.      -80.       0.       0.       0.       0.    # Premier ressaut du puits
+   Ce.4 Ce.5    14.4       320.      -15.       0.       0.       0.       0.    
+   Ce.5 Ce.6    1.8       347.       14.       0.       0.       0.       0.    
+   Ce.6 Ce.7    7.5       305.       18.       0.       0.       0.       0.    
+   Ce.7 Ce.8    1.9       343.      -26.       0.       0.       0.       0.    
+   Ce.8 Ce.9    28.1       0.       90.       0.       0.       0.       0.    
+   Ce.9 Ca.0    7.7       305.      -5.       0.       0.       0.       0.   
+
+# dev = 88 m
+
+ endcenterline
+
+  
+  
+
+ centerline -extend right -title "B21 puits pourris Cb.0_Cb.1 Cb'.3_Cb.14"
  # du sommet du P140 à la base des Puits Pourris
 
    date 1980.08.21
@@ -214,8 +269,10 @@ centerline -extend right -title "B21 puits pourris Cb.0_Cb.1 Cb'.3_Cb.14"
 
 # Dev = 351 m
 
-endcenterline  
+ endcenterline
 
+ 
+  
 
  centerline -extend right -title "B21 g. de la Trémie Cd.0_Cd.1 Cd.9_Cd.36"
  # B21 - Galerie de la trémie
@@ -251,57 +308,9 @@ endcenterline
 # dev = 50 m
 # Dev = 47.9 m
        
-endcenterline
-
-
- centerline -extend right -title "Scotch-light Cc.0_Ce.1 Ce.9_Ca.0"
- # De la Rivière de la Gadoue à la salle du Scotch Light
-
-   date 1977.08.25
- #  declination -2.4943 degrees
-
-  ##team "G.S. Vulcain"
-  team "Jacques Lopez"
-  team "Philippe Bigeard"
-  explo-date 1977.08.22
-    explo-team "Christian Rigaldie"
-    explo-team "Pierre Rias"
-    explo-team "Jacques Lopez"
-    explo-team "Paul Deschamps"
-  explo-date 1977.08.23
-    explo-team "Bernard Lips"
-    explo-team "Jean-Pierre Stéphanato"
-    explo-team "Philippe Bigeard"
-  explo-date 1977.08.24
-    explo-team "Pierre Rias"
-    explo-team "Paul Deschamps"
-  explo-date 1977.08.25
-    explo-team "Jacques Lopez"
-    explo-team "Philippe Bigeard"
-
-  explo-date 1977.11.08
-    explo-team "Jacques Lopez"
-    explo-team "Christian Rigaldie"
-
-   units lenght meters
-   units compass degrees
-   units clino degrees
-
-   data normal from to length backcompass backclino right left up down
-
-   Cc.0 Ce.1    8.9       330.       15.       0.       0.       0.       0.    # Arrivée d'Eau au plafond
-   Ce.1 Ce.2    13.3       303.      -24.       0.       0.       10.       10.    # Largeur 15-20 m
-   Ce.2 Ce.3    6.9       0.      -90.       0.       0.       0.       0.    # Gros bloc coincé au sommet du puits. La rivière se pert dans un méandre (P25\30)
-   Ce.3 Ce.4    5.5       285.      -80.       0.       0.       0.       0.    # Premier ressaut du puits
-   Ce.4 Ce.5    14.4       320.      -15.       0.       0.       0.       0.    
-   Ce.5 Ce.6    1.8       347.       14.       0.       0.       0.       0.    
-   Ce.6 Ce.7    7.5       305.       18.       0.       0.       0.       0.    
-   Ce.7 Ce.8    1.9       343.      -26.       0.       0.       0.       0.    
-   Ce.8 Ce.9    28.1       0.       90.       0.       0.       0.       0.    
-   Ce.9 Ca.0    7.7       305.      -5.       0.       0.       0.       0.   
-
-# dev = 88 m
-
  endcenterline
- 
+
 endsurvey
+
+
+

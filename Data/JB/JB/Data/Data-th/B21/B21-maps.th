@@ -4,16 +4,25 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-B19 -title "Gouffre B19"
-	MP-B19@B19
+map MP-B21 -title "Gouffre B21"
+	SP-B21-1
 	break
-	MP-Senecaliens@Senecaliens
+	SP-B21-2
+	break
+	SP-B21-3
+	break
+	SP-B21-4
+	break
+	SP-jctionB21B22
 endmap
 
-
-map MC-B19 -title "Gouffre B19"
-	MC-B19@B19
+map MC-B21 -title "Gouffre B21"
+	SC-B21c3
 	break
-	MC-Senecaliens@Senecaliens
+	SC-B21c2
+	break
+	SC-B21c1
+	break
+	SC-B21c4
 endmap
    

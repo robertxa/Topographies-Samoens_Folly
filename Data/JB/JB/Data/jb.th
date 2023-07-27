@@ -13,101 +13,46 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 # Pour importer les différentes données de différents fichiers topos : 
 
-#####################
 	input Data-th/NonTriees/jb-amonts2.th
-		### Equates data
-			#jction B21 avec Gadoue :
-    		equate  Ca.0@ChampsElysees.ChampsElysees.B22  Ca.0@jb-amonts2
+			
 
 #####################
-	# Le C37
+	## Le C37
 	input Data-th/C37/C37-tot.th
 
 #####################
-	# Le B22
+	## Le B22
 	input Data-th/B22/B22-tot.th
+		# Jction B22 - Champs Elysées avec Riviera
 		equate Bb.113@Riviera.Riviera.C37 Bb.113@ChampsElysees.ChampsElysees.B22
-
-	input Drawing-th2/Plan/JB-B22.th2
-
-#####################
-
 
 #####################
 	## Le B21
-	#input Data-th/B21/B21-tot.th
-	input Drawing-th2/Plan/B21.th2
-		#equate Bk.18@ChampsElysees.ChampsElysees.B22 Bk.18@jb-amonts1
-		join SP-AmontGadoue@ChampsElysees.B22 SP-jctionB21B22
-	input Drawing-th2/Coupe/B21-coupe.th2
-		### Joins dessins Coupe
-			##join SC-B21c SC-B22c3
-	## La rivière de la Gadoue    
-		equate Ca.40x@ChampsElysees.ChampsElysees.B22 Ca.40@jb-amonts2
-
-
-#####################
-
+	input Data-th/B21/B21-tot.th
+		#jction B21 avec Gadoue :
+    	equate  Ca.0@ChampsElysees.ChampsElysees.B22  Ca.0@B21.B21
+		join SP-AmontGadoue@ChampsElysees.B22 SP-jctionB21B22@B21
 
 #####################
 	## Le B19
-	input Drawing-th2/Plan/B19.th2
-		### Joins dessins Plan
-			join SP-base-racc@Lavoir SP-Excentriques1 
-			join SP-Raccourci SP-rac1@Lavoir
-			join SP-Racc5@Lavoir SP-gadouejonction@ChampsElysees.B22
-			join SP-B19 SP-Racc5@Lavoir
-			join SP-gadouejonction@ChampsElysees.B22 SP-Racc5@Lavoir
-	input Drawing-th2/Coupe/B19-coupe.th2 
-	## Les Sénécaliens dans le B19
-	#input Data-th/Senecaliens/Senecaliens-tot.th
 	input Data-th/B19/B19-tot.th
-		equate Da.58@Senecaliens.Senecaliens.B19 Da.58@jb-amonts2
-		join SP-Senecaliens@Senecaliens.B19 SP-B19
-		join SC-Senecaliens@Senecaliens.B19 SC-B19c1
-#####################
+		## Arrivée du B19
+		equate Da.81@B19.B19.B19 Da.81@jb-amonts2
+		## La rivière de la Gadoue - B19
+		equate Ca.40x@ChampsElysees.ChampsElysees.B22 Ca.40@jb-amonts2
 
-
 #####################
-	## Le Lavoir	--> A REVOIR ENTIEREMENT POUR LE VERIFIER, SURTOUT LA COUPE DEVELOPPEE
-	#input Data-th/Lavoir/Data/Lavoir.th
 	input Data-th/Lavoir/Lavoir-tot.th
-		### Equates data
-			equate  2012-xa-0@Lavoir.Lavoir Dg.1@jb-amonts2
-    		equate  2012-xa-33@Lavoir.Lavoir Ca.40@jb-amonts2
-			#equate Da.81@jb-amonts2.Lavoir	Da.81@jb-amonts2
-	#input Drawing-th2/Plan/Lavoir.th2
-	#input Drawing-th2/Plan/Lavoir-boeuf.th2
-	#input Drawing-th2/Plan/Arva.th2
-	#input Drawing-th2/Plan/Brownies.th2
-	#input Drawing-th2/Plan/Lavoir3old.th2
-		### Joins dessins Plan
-			#join SP-Lavoir3old SP-B19	# A MODIFIER, IL FAUT LE REINTEGRER
-			##join SP-Lavoir3old SP-gadouejonction
-		#	join SP-brownies1 SP-Arva2 
-		#	join SP-Lavoir-new1 SP-Lavoir7
-		#	join SP-lavoir-sec SP-Boeuf2
-		#	join SP-base-racc SP-Racc5
-		### Joins dessins Coupe
-	#input Data-th/Lavoir/Data/FileOu.th
-		### Equates data
-		#	equate FD-2012-9@Lavoir 2017-FD-0@fileou
-	#input Drawing-th2/Plan/fileOu.th2
-	#input Drawing-th2/Plan/fileOu2019.th2
-		### Joins dessins Plan
-			#	join SP-fileou2019-1 SP-filou2
-		### Joins dessins Coupe
-	#input Drawing-th2/Coupe/lavoirsommet-coupe.th2
-	#input Drawing-th2/Coupe/lavoir-coupe2015.th2
-			#	join SC-lavoirc1 SC-lavoirc2 
-	#input Drawing-th2/Coupe/brownies-coupe.th2
-			#	join SC-lavoirc2 SC-browniesc1
-	#input Drawing-th2/Coupe/fileOu-coupe2019.th2
-			#	join SC-fileouc1 SC-fileOu2019-1
-	#input Drawing-th2/Coupe/FileOu-coupe.th2
-			#	join SC-fileouc1 SC-lavoirc5
-			join SC-aiguillesc1 SC-lavoirc7@Lavoir
-			##join SC-excenc2 SC-excenLavoir???
+		equate  2012-xa-0@Lavoir.Lavoir Dg.1@jb-amonts2
+    	equate  2012-xa-33@Lavoir.Lavoir Ca.40@jb-amonts2
+		##equate Da.81@jb-amonts2.Lavoir	Da.81@jb-amonts2
+		join SP-B19@B19.B19 SP-Racc5@Lavoir
+		join SC-aiguillesc1 SC-lavoirc7@Lavoir
+		##join SC-excenc2 SC-excenLavoir???
+		join SP-base-racc@Lavoir SP-Excentriques1 
+		join SP-Raccourci SP-rac1@Lavoir
+		join SP-Racc5@Lavoir SP-gadouejonction@ChampsElysees.B22
+		join SP-gadouejonction@ChampsElysees.B22 SP-Racc5@Lavoir
 #####################
 
 
@@ -117,9 +62,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	input Data-th/V11-Aiguilles/V11-Aiguilles-tot.th
 	
 	input Drawing-th2/Plan/V11.th2
-		### Joins dessins Plan
-			join SP-V11 SP-Aiguilles
-			join SP-oublies SP-Ascension -count 2
+		join SP-V11 SP-Aiguilles
+		join SP-oublies SP-Ascension -count 2
 	input Drawing-th2/Coupe/V11-coupe.th2
 
 	## Le réseau des Aiguilles
@@ -127,8 +71,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	## Le méandre des Crawleurs
 	input Drawing-th2/Plan/crawleurs.th2
-		### Joins dessins Plan
-			join SP-Crawleuraval SP-Excentriques1
+		join SP-Crawleuraval SP-Excentriques1
 
 	# L'aval des Aiguilles
 		equate  Xa-2013-11@aval-aiguilles.AvalAiguilles.V11-Aiguilles De.23@jb-amonts2
@@ -140,10 +83,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	## La rivière aux Excentriques
 	input Drawing-th2/Plan/excentriques.th2
-		### Joins dessins Plan
-			join SP-Frenesie SP-Montagnesrusses
-			join SP-Pseudosiphon2 SP-Cristal
-			join SP-Echo SP-Colimaconaval
+		join SP-Frenesie SP-Montagnesrusses
+		join SP-Pseudosiphon2 SP-Cristal
+		join SP-Echo SP-Colimaconaval
 
 	# Réseau du Couteau Grenoblois
 		equate Xa-2015f-0@CouteauG.CouteauG.V11-Aiguilles Ee.0@jb-amonts2	
@@ -151,9 +93,9 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		join SC-CouteauGc1@CouteauG.V11-Aiguilles SC-V11c3
 	
 	# Réseau du Puits que l'on traverse
-			equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse.PuitsTraverse.V11-Aiguilles
-			join SP-traverse2@PuitsTraverse.V11-Aiguilles SP-audessusbulle
-			join SC-traversec1@PuitsTraverse.V11-Aiguilles SC-V11c5
+		equate  De.18@jb-amonts2 XR-2015d-34@puitstraverse.PuitsTraverse.V11-Aiguilles
+		join SP-traverse2@PuitsTraverse.V11-Aiguilles SP-audessusbulle
+		join SC-traversec1@PuitsTraverse.V11-Aiguilles SC-V11c5
 ###################
 
 
@@ -338,41 +280,43 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 ################# Structure OK  #######################	
 
+	input Data-th/RiviereAval/RiviereAval-tot.th
+
 	## L'arrivée à la cascade Jean Dupont
 	input Drawing-th2/Plan/jean-dupont.th2	### A modifier
-		equate Jd.32@Cascatelles.Cascatelles.Riviere1 Jd.32@jb-amonts2
-			join SP-pAlain SP-cascatelles@Cascatelles.Riviere1
+		equate Jd.32@Cascatelles.Cascatelles.Riviere1.RiviereAval Jd.32@jb-amonts2
+			join SP-pAlain SP-cascatelles@Cascatelles.Riviere1.RiviereAval
 			#join V4-2 pAlain # au niveau du Téléphérique
-			join SC-V4c1 SC-dupontc2@Cascatelles.Riviere1
+			join SC-V4c1 SC-dupontc2@Cascatelles.Riviere1.RiviereAval
 
 	## Rivière à l'aval de la Jean Dupont
-	input Data-th/Riviere1/Riviere1-tot.th
-		join SC-biv500c4@Actif.Riviere1 SC-biv500c3@Bivouac-500.Bivouac-500
+	#input Data-th/Riviere1/Riviere1-tot.th
+	#	join SC-biv500c4@Actif.Riviere1 SC-biv500c3@Bivouac-500.Bivouac-500
 
 	## Le Bivouac -500
-	input Data-th/Bivouac-500/Bivouac-500-tot
-		equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@Actif.Actif.Riviere1
-		join SP-riv-6@Bivouac-500.Bivouac-500 SP-riv-5@Actif.Riviere1
-		join SC-siphon69c2@Bivouac-500.Bivouac-500 SC-biv500c4@Actif.Riviere1
+	#input Data-th/Bivouac-500/Bivouac-500-tot
+	#	equate Ke.57@Bivouac-500.Bivouac-500.Bivouac-500 Ke.57@Actif.Actif.Riviere1
+	#	join SP-riv-6@Bivouac-500.Bivouac-500 SP-riv-5@Actif.Riviere1
+	#	join SC-siphon69c2@Bivouac-500.Bivouac-500 SC-biv500c4@Actif.Riviere1
 
-	## La zone de la Gourance
-	input Data-th/Gourance/Gourance-tot.th
-		equate Kg.21@Gourance.Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
-		join SP-gourance-1@Gourance.Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
-		join SC-balconc1@Toussaint.Riviere2 SC-GourecoupeSteph3@GoureToi.Gourance
+	### La zone de la Gourance
+	#input Data-th/Gourance/Gourance-tot.th
+	#	equate Kg.21@Gourance.Gourance.Gourance Kg.21@CourtCircuit.CourtCircuit.Bivouac-500
+	#	join SP-gourance-1@Gourance.Gourance SP-CourtCircuit-1@CourtCircuit.Bivouac-500
+	#	join SC-balconc1@Toussaint.Riviere2 SC-GourecoupeSteph3@GoureToi.Gourance
 
-	## Rivière de la base de la Gourance aux Cinglés
-	input Data-th/Riviere2/Riviere2-tot.th
-		equate Kh.46@Toussaint.Toussaint.Riviere2 Kh.46@Gourance.Gourance.Gourance
-		join SP-gourance5@Toussaint.Riviere2 SP-gourance2@Gourance.Gourance
-		##join SC-avalc5@Toussaint SC-balconc1	#??? 
+	### Rivière de la base de la Gourance aux Cinglés
+	#input Data-th/Riviere2/Riviere2-tot.th
+	#	equate Kh.46@Toussaint.Toussaint.Riviere2 Kh.46@Gourance.Gourance.Gourance
+	#	join SP-gourance5@Toussaint.Riviere2 SP-gourance2@Gourance.Gourance
+	#	##join SC-avalc5@Toussaint SC-balconc1	#??? 
 
 	## Galerie de Sezhommes avec zone de -900 m et siphons terminaux
-	input Data-th/Fond/Fond-tot.th
-		equate Kn.1@sezhommes1975.Sezhommes.Fond Kn.1@Cheneau.Cheneau.Riviere2
-		equate 46.2020@sezhommes2020.Sezhommes.Fond Kn.4@Cheneau.Cheneau.Riviere2	# sommet du P6 juste avant le bivouac -900 m
-		join SP-sezhommes2020-1@Sezhommes.Fond SP-900-1@Cheneau.Riviere2	# au niveau bivouac -900 m
-		join SC-avalc2@Cheneau.Riviere2 SC-sezhommes2020-3@Sezhommes.Fond
+	#input Data-th/Fond/Fond-tot.th
+	#	equate Kn.1@sezhommes1975.Sezhommes.Fond Kn.1@Cheneau.Cheneau.Riviere2
+	#	equate 46.2020@sezhommes2020.Sezhommes.Fond Kn.4@Cheneau.Cheneau.Riviere2	# sommet du P6 juste avant le bivouac -900 m
+	#	join SP-sezhommes2020-1@Sezhommes.Fond SP-900-1@Cheneau.Riviere2	# au niveau bivouac -900 m
+	#	join SC-avalc2@Cheneau.Riviere2 SC-sezhommes2020-3@Sezhommes.Fond
 
 
 	##################################################################################################

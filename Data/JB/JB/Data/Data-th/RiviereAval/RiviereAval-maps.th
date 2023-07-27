@@ -1,0 +1,30 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-RiviereAval -title "Rivière Aval"
+	MP-Riviere1@Riviere1
+	break
+	MP-Bivouac-500@Bivouac-500
+	break
+	MP-Gourance@Gourance
+	break
+	MP-Riviere2@Riviere2
+	break
+	MP-Fond@Fond
+endmap
+
+map MC-RiviereAval -title "Rivière Aval"
+	MC-Riviere1@Riviere1
+	break
+	MC-Bivouac-500@Bivouac-500
+	break
+	MC-Gourance@Gourance
+	break
+	MC-Riviere2@Riviere2
+	break
+	MC-Fond@Fond
+endmap
+   

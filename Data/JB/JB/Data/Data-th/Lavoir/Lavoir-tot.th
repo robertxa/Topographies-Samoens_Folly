@@ -38,6 +38,40 @@ survey Lavoir -title "Le Lavoir"
 	input Data/FileOu-coupe.th2
 		join SC-fileouc1 SC-lavoirc5
 
+        ################ OLD ##################
+        #input Drawing-th2/Plan/Lavoir.th2
+	#input Drawing-th2/Plan/Lavoir-boeuf.th2
+	#input Drawing-th2/Plan/Arva.th2
+	#input Drawing-th2/Plan/Brownies.th2
+	#input Drawing-th2/Plan/Lavoir3old.th2
+		### Joins dessins Plan
+			#join SP-Lavoir3old SP-B19	# A MODIFIER, IL FAUT LE REINTEGRER
+			##join SP-Lavoir3old SP-gadouejonction
+		#	join SP-brownies1 SP-Arva2 
+		#	join SP-Lavoir-new1 SP-Lavoir7
+		#	join SP-lavoir-sec SP-Boeuf2
+		#	join SP-base-racc SP-Racc5
+		### Joins dessins Coupe
+	#input Data-th/Lavoir/Data/FileOu.th
+		### Equates data
+		#	equate FD-2012-9@Lavoir 2017-FD-0@fileou
+	#input Drawing-th2/Plan/fileOu.th2
+	#input Drawing-th2/Plan/fileOu2019.th2
+		### Joins dessins Plan
+			#	join SP-fileou2019-1 SP-filou2
+		### Joins dessins Coupe
+	#input Drawing-th2/Coupe/lavoirsommet-coupe.th2
+	#input Drawing-th2/Coupe/lavoir-coupe2015.th2
+			#	join SC-lavoirc1 SC-lavoirc2 
+	#input Drawing-th2/Coupe/brownies-coupe.th2
+			#	join SC-lavoirc2 SC-browniesc1
+	#input Drawing-th2/Coupe/fileOu-coupe2019.th2
+			#	join SC-fileouc1 SC-fileOu2019-1
+	#input Drawing-th2/Coupe/FileOu-coupe.th2
+			#	join SC-fileouc1 SC-lavoirc5
+
+    ##############################################
+    
     # Ajout des Maps
     input Lavoir-maps.th
 

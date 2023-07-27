@@ -4,10 +4,10 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source Data/B21.th
-#source siphons-tot.th
+source B21-tot.th
+
 # Add config file
-input ../../../../../../../config.thc 
+input ../../../../../../config.thc 
 
 layout xviexport
 	scale 1 1000
@@ -21,7 +21,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
 	  
-	doc-title "Gouffre du B21"
+	doc-title "Gouffre du B19"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -32,7 +32,7 @@ layout my_layout
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "Gouffre du B21, Samoëns, 74, France"
+	map-comment "Gouffre du B19, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -41,8 +41,10 @@ layout my_layout
 	map-header 0 0 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
+	debug scrap-names
+	color map-fg scraps
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
@@ -60,9 +62,8 @@ layout my_layout
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
- endlayout
- 
- 
+endlayout
+  
  
 layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
@@ -70,7 +71,7 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-	doc-title "Gouffre du B21"
+	doc-title "Gouffre du B19"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 500
@@ -81,7 +82,7 @@ layout my_layout-coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Gouffre du B21, coupe développée, Samoëns, 74, France"
+	map-comment "Gouffre du B19, coupe développée, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -90,8 +91,8 @@ layout my_layout-coupe
 	map-header 0 0 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  
@@ -109,12 +110,7 @@ layout my_layout-coupe
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
   
- endlayout
-
+endlayout
  
-  
- #export map -fmt xvi -layout xviexport -o Data/siphons-2003.xvi
- #export map -projection extended -fmt xvi -layout xviexport -o Data/siphons-coupe-2003.xvi
-  
- export map  -projection plan -o Outputs/B21-2020-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/B21-2020-coupe.pdf
+ export map  -projection plan -o Outputs/B21-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/B21-coupe.pdf

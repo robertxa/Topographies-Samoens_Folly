@@ -4,17 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey B19 -title "Gouffre du B19" -entrance "B19"
-
+survey B19 -title "Gouffre B19" -entrance "B19" 
+  
  centerline -extend right -title "B19 au P11 B19_B19double Da.21_Da.22"
 
-   date 1969.08.16
-   cs lat-long
-   fix B19 46.10422 6.79225 2118
+  cs lat-long
+  fix B19 46.10422 6.79225 2118
 	station B19 "B19" entrance
 
-   team "Jacques Lopez"
-   team "Serge Aviotte"
+   date 1969.08.16
+    team "Jacques Lopez"
+    team "Serge Aviotte"
    explo-date 1969.08.16
      explo-team "Jacques Lopez"
      explo-team "Serge Aviotte"
@@ -59,9 +59,8 @@ endcenterline
  centerline -extend right -title "B19, à partir P11 vers dynamitage Da.22_Da.23 Da.28_Da.29"
 
    date 1971.08.04
-   #cs lat-long
-   #fix B19 46.10422 6.79225 2118
 
+#   declination 0.  degrees
    team "Jacques Lopez"
    team "Michel Heuguebaert"
 
@@ -94,9 +93,10 @@ endcenterline
 endcenterline
 
 
-centerline -extend right -title "B19, à partir dynamitage vers bouchon Da.29_Da.30 Da.65_Da.66"
+ centerline -extend right -title "B19, à partir dynamitage vers bouchon Da.29_Da.30 Da.65_Da.66"
 
    date 1973.10.13
+#   declination 0.  degrees
    team "Jacques Lopez"
    team "Jean-François Nyffenegger"
    explo-date 1972.09.06
@@ -160,10 +160,12 @@ centerline -extend right -title "B19, à partir dynamitage vers bouchon Da.29_Da
    
 # dev = 262.8 m
    
-endcenterline
+ endcenterline
 
+  
+  
 
-centerline -extend left -title "B19 + r. aux Excentriques Da.66_Da.67 De.0_Da.204"
+ centerline -extend left -title "B19 + r. aux Excentriques Da.66_Da.67 De.0_Da.204"
 
    date 1975.08.09
   team "Jacques Lopez"
@@ -196,7 +198,145 @@ centerline -extend left -title "B19 + r. aux Excentriques Da.66_Da.67 De.0_Da.20
    Da.79 Da.80    26.37       0.       90.       0.       0.       0.       0.    # Puits (Jusqu'à la niche) ; P37
    Da.80 Da.81    10.88       0.       90.       0.       0.       0.       0.    # fin du puits
    
+  #  Da.81 Da.82    5.81       334.      -9.       0.       0.       0.       0.    # Arrivée du collecteur dans la faille par une cascade
+  #  Da.82 Ca.40    3.14       347.       38.       0.       0.       0.       0.    
+  #  Ca.40 Da.84    10.02       57.       10.       0.       0.       0.       0.    
+  #  Da.84 Da.85    2.78       135.       3.       0.       0.       0.       0.    
+  #  Da.85 Da.86    2.73       184.       0.       0.       0.       0.       0.    
+  #  Da.86 Da.87    8.84       88.      -8.       0.       0.       0.       0.    
+  #  Da.87 Da.88    10.7       79.       1.       0.       0.       0.       0.    
+  #  Da.88 Da.89    4.57       58.      -28.       0.       0.       0.       0.    
+  #  Da.89 Da.90    3.89       0.       90.       0.       0.       0.       0.    # Ressaut ; P4
+  #  Da.90 Da.91    20.55       349.       8.       0.       0.       0.       0.    # Début rivière aux excentriques
    
-   endcenterline
+  #  Da.91 Da.92    3.65       45.       0.       0.       0.       0.       0.    
+  #  Da.92 Da.93    6.57       17.       3.       0.       0.       0.       0.    
+  #  Da.93 Da.94    2.79       61.       2.       0.       0.       0.       0.    
+  #  Da.94 Da.95    4.       136.       2.       0.       0.       0.       0.    
+  #  Da.95 Da.96    3.99       175.       3.       0.       0.       0.       0.    
+  #  Da.96 Da.97    5.41       110.       5.       0.       0.       0.       0.    
+  #  Da.97 Da.98    2.86       109.      -4.       0.       0.       0.       0.    
+  #  Da.98 Da.99    5.62       60.       5.       0.       0.       0.       0.    
+  #  Da.100' Da.100    4.34       90.       2.       0.       0.       0.       0.    
+  #  Da.100 Da.101    3.25       87.       2.       0.       0.       0.       0.    # Cascade de 4 m
+  #  Da.101 Da.102    1.89       186.       3.       0.       0.       0.       0.    
+  #  Da.102 Da.103    5.28       150.      -29.       0.       0.       0.       0.    
+  #  Da.103 Da.104    2.69       170.       11.       0.       0.       0.       0.    # m.c. au dessus cascade
+  #  Da.104 Da.105    6.       0.       90.       0.       0.       0.       0.    # Puits 6 m ; C10
+  #  Da.105 Da.106    5.64       194.       1.       0.       0.       0.       0.    
+  #  Da.106 Da.107    2.72       145.       0.       0.       0.       0.       0.    
+  #  Da.107 Da.108    11.6       103.       1.       0.       0.       0.       0.    
+  #  Da.108 Da.109    6.64       63.       3.       0.       0.       0.       0.    
+
+
+  #  Da.109 Da.110    11.08       62.      -1.       0.       0.       0.       0.    
+  #  Da.110 Da.111    2.98       25.      -1.       0.       0.       0.       0.    
+  #  Da.111 Da.112    10.14       307.       4.       0.       0.       0.       0.    
+  #  Da.112 Da.113    1.79       26.       6.       0.       0.       0.       0.    
+  #  Da.113 Da.114    9.79       95.       0.       0.       0.       0.       0.    
+  #  Da.114 Da.115    4.21       72.       1.       0.       0.       0.       0.    
+  #  Da.115 Da.116    7.87       124.       0.       0.       0.       0.       0.   
+  #  Da.116 Da.117    9.13       100.       5.       0.       0.       0.       0.    
+  #  Da.117 Da.118    2.65       203.      -8.       0.       0.       0.       0.    
+  #  Da.118 Da.119    4.18       210.       43.       0.       0.       0.       0.    
+  #  Da.119 Da.120    1.65       150.       36.       0.       0.       0.       0.    
+  #  Da.120 Da.121    5.46       108.      -4.       0.       0.       0.       0.    
+  #  Da.121 Da.122    2.52       126.       4.       0.       0.       0.       0.    
+  #  Da.122 Da.123    8.68       102.      -2.       0.       0.       0.       0.    
+  #  Da.123 Da.124    6.72       103.       0.       0.       0.       0.       0.    
+  #  Da.124 Da.125    5.04       233.       0.       0.       0.       0.       0.    
+  #  Da.125 Da.126    8.15       188.       5.       0.       0.       0.       0.    
+  #  Da.126 Da.127    5.99       131.       2.       0.       0.       0.       0.    
+  #  Da.127 Da.128    4.38       115.       4.       0.       0.       0.       0.   # Arrivée d'eau par plafond 
+  #  Da.128 Da.129    1.9       99.       8.       0.       0.       0.       0.    
+  #  Da.129 Da.130    8.93       78.       2.       0.       0.       0.       0.    
+  #  Da.130 Da.131    5.06       41.       4.       0.       0.       0.       0.    
+  #  Da.131 Da.132    5.85       77.       0.       0.       0.       0.       0.    
+  #  Da.132 Da.133    6.42       55.       0.       0.       0.       0.       0.    
+  #  Da.133 Da.134    4.21       317.       5.       0.       0.       0.       0.    
+  #  Da.134 Da.135    1.87       76.       2.       0.       0.       0.       0.    # Début du méandre
+  #  Da.135 Da.136    3.51       108.       5.       0.       0.       0.       0.    
+  #  Da.136 Da.137    5.98       59.       6.       0.       0.       0.       0.    
+  #  Da.137 Da.138    3.24       335.      -4.       0.       0.       0.       0.    
+  #  Da.138 Da.139    2.64       29.       3.       0.       0.       0.       0.    
+  #  Da.139 Da.140    3.26       109.       24.       0.       0.       0.       0.    
+  #  Da.140 Da.141    3.45       167.      -7.       0.       0.       0.       0.   
+  #  Da.141 Da.142    4.29       219.      -9.       0.       0.       0.       0.    
+  #  Da.142 Da.143    1.76       91.       1.       0.       0.       0.       0.    
+  #  Da.143 Da.144    3.93       64.       30.       0.       0.       0.       0.    
+  #  Da.144 Da.145    4.02       30.       3.       0.       0.       0.       0.    
+  #  Da.145 Da.146    2.49       107.      -4.       0.       0.       0.       0.    
+  #  Da.146 Da.147    4.25       56.      -1.       0.       0.       0.       0.    
+  #  Da.147 Da.148    4.83       315.       4.       0.       0.       0.       0.    
+  #  Da.148 Da.149    2.47       50.      -3.       0.       0.       0.       0.    
+  #  Da.149 Da.150    4.76       71.       3.       0.       0.       0.       0.    
+  #  Da.150 Da.151    2.49       147.      -7.       0.       0.       0.       0.    
+  #  Da.151 Da.152    1.69       66.      -1.       0.       0.       0.       0.    
+  #  Da.152 Da.153    1.99       108.       13.       0.       0.       0.       0.    
+   
+
+  #  Da.153 Da.154    1.91       17.       2.       0.       0.       0.       0.    
+  #  Da.154 Da.155    2.97       113.       12.       0.       0.       0.       0.    
+  #  Da.155 Da.156    1.73       57.       2.       0.       0.       0.       0.    
+  #  Da.156 Da.157    3.43       112.      -3.       0.       0.       0.       0.    
+  #  Da.157 Da.158    2.17       51.       10.       0.       0.       0.       0.    
+  #  Da.158 Da.159    2.26       78.      -2.       0.       0.       0.       0.    
+  #  Da.159 Da.160    1.91       132.       19.       0.       0.       0.       0.    
+  #  Da.160 Da.161    1.49       63.       6.       0.       0.       0.       0.    
+  #  Da.161 Da.162    2.06       121.      -1.       0.       0.       0.       0.    
+  #  Da.162 Da.163    1.85       65.       4.       0.       0.       0.       0.    
+  #  Da.163 Da.164    1.94       332.       27.       0.       0.       0.       0.    
+  #  Da.164 Da.165    3.65       20.      -9.       0.       0.       0.       0.    
+  #  Da.165 Da.166    2.74       75.       0.       0.       0.       0.       0.    
+  #  Da.166 Da.167    1.7       32.      -3.       0.       0.       0.       0.    
+  #  Da.167 Da.168    4.66       112.       3.       0.       0.       0.       0.    
+  #  Da.168 Da.169    2.15       15.       6.       0.       0.       0.       0.    
+  #  Da.169 Da.170    1.44       45.      -4.       0.       0.       0.       0.    
+  #  Da.170 Da.171    2.72       333.       7.       0.       0.       0.       0.    
+  #  Da.171 Da.172    1.9       82.      -6.       0.       0.       0.       0.    
+  #  Da.172 Da.173    2.52       135.       5.       0.       0.       0.       0.    
+  #  Da.173 Da.174    2.06       32.      -21.       0.       0.       0.       0.    
+  #  Da.174 Da.175    4.65       127.       19.       0.       0.       0.       0.    
+
+
+
+  #  Da.175 Da.176    2.11       43.       68.       0.       0.       0.       0.    # Arrivée réseau remontant avec actif en rive gauche
+  #  Da.176 Da.177    2.02       346.      -3.       0.       0.       0.       0.    
+  #  Da.177 Da.178    4.32       25.       5.       0.       0.       0.       0.    
+  #  Da.178 Da.179    4.91       137.      -3.       0.       0.       0.       0.    
+  #  Da.180' Da.180    2.09       51.       9.       0.       0.       0.       0.    
+  #  Da.180 Da.181    2.94       330.       2.       0.       0.       0.       0.   
+  #  Da.181 Da.182    3.46       357.       5.       0.       0.       0.       0.    
+  #  Da.182 Da.183    2.       271.       2.       0.       0.       0.       0.    
+  #  Da.183 Da.184    1.68       228.       3.       0.       0.       0.       0.    
+  #  Da.184 Da.185    4.71       5.       0.       0.       0.       0.       0.    
+  #  Da.185 Da.186    5.32       22.       11.       0.       0.       0.       0.    
+  #  Da.186 Da.187    5.55       48.       4.       0.       0.       0.       0.    
+  #  Da.187 Da.188    3.7       171.       0.       0.       0.       0.       0.    
+  #  Da.188 Da.189    2.2       30.      -12.       0.       0.       0.       0.    
+  #  Da.189 Da.190    4.39       91.       5.       0.       0.       0.       0.    
+  #  Da.190 Da.191    2.47       113.       5.       0.       0.       0.       0.    
+  #  Da.191 Da.192    2.73       67.       6.       0.       0.       0.       0.    
+  #  Da.192 Da.193    6.24       75.       0.       0.       0.       0.       0.    
+  #  Da.193 Da.194    4.05       23.       3.       0.       0.       0.       0.    
+
+
+  #  Da.194 Da.195    8.15       145.      -2.       0.       0.       0.       0.    
+  #  Da.195 Da.196    3.95       25.       3.       0.       0.       0.       0.    
+  #  Da.196 Da.197    5.76       65.       0.       0.       0.       0.       0.    
+  #  Da.197 Da.198    3.19       10.      -29.       0.       0.       0.       0.    
+  #  Da.198 Da.199    3.14       95.      -32.       0.       0.       0.       0.    # Surcreusement ; lucarne ; départ rivière excentriques
+  #  Da.199 Da.200    5.69       91.       9.       0.       0.       0.       0.    # Regard sur la rivière
+  #  Da.200 Da.201    5.08       100.       5.       0.       0.       0.       0.    
+  #  Da.201 Da.202    5.68       114.       13.       0.       0.       0.       0.    
+  #  Da.202 De.0    7.77       89.       4.       0.       0.       0.       0.    # arrivée eau par plafond
+  #  De.0 Da.204    5.04       39.       0.       0.       0.       0.       0.    
+   
+# Dev (+Da.204-Da.235) = 780 m
+   
+ endcenterline
 
 endsurvey
+
+
+

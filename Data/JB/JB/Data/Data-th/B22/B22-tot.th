@@ -10,7 +10,7 @@ survey B22 -title "Gouffre B22"
     input Data/ChampsElysees-Gadoue/ChampsElysees-tot.th
         equate Bc.50@ChampsElysees.ChampsElysees Bc.50@B22.B22
         join SP-champs-elysees@ChampsElysees SP-B22-2@B22
-        #join SP-Gadoue@ChampsElysees SP-AmontGadoue@ChampsElysees
+        ##join SP-Gadoue@ChampsElysees SP-AmontGadoue@ChampsElysees
 
 
     input Data/Arianes/arianes-tot.th

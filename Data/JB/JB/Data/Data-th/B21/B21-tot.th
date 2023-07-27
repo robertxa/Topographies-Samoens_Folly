@@ -4,16 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-B19 -title "Gouffre B19"
-	MP-B19@B19
-	break
-	MP-Senecaliens@Senecaliens
-endmap
+survey B21 -title "Gouffre B21"
 
+    input Data/B21.th
+    
+    input Data/B21.th2
+    input Data/B21-coupe.th2
 
-map MC-B19 -title "Gouffre B19"
-	MC-B19@B19
-	break
-	MC-Senecaliens@Senecaliens
-endmap
-   
+    # Add maps
+    input B21-maps.th
+
+endsurvey
