@@ -5,11 +5,10 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source Arche-Voltigeurs-tot.th
-
-# Add config file
-input ../../../../../../../../config.thc 
-
+ source B22-tot.th
+ 
+ # Add config file
+input ../../../../../../config.thc 
  
 layout xviexport
    scale 1 1000
@@ -18,30 +17,31 @@ layout xviexport
 endlayout
   
 layout my_layout
-# Call the config settings (Layout config inside the config.thc file)
+ # Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl
 	copy langue-fr 
-  
-   doc-title "Réseau du Couteau Grenoblois"
+ 
+   doc-title "Galerie du Petit B22"
    doc-author "Xavier Robert"
    cs UTM32
    base-scale 1 1000
   scale 1 500
    scale-bar 50 m
+
   #color map-bg 85
   color map-fg [100 100 80]
   #color map-fg altitude
   transparency on
   opacity 75
-  map-comment "Réseau du Couteau Grenoblois, plan, Projection UTM32, Samoëns, 74, France"
+  map-comment "Galerie du Petit B22, plan, Projection UTM32, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
   legend off
-   legend-width 18 cm
-  map-header 0 00 nw
-  #map-header 0 -30 se
+   #  legend-width 14 cm
+#  map-header 0 00 nw
+  map-header 0 -10 se
   map-header-bg off
   layers on
   symbol-hide line survey
@@ -72,29 +72,32 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-   doc-title "Réseau du Couteau Grenoblois"
+   doc-title "G. du Petit B22"
    doc-author "Xavier Robert"
    cs UTM32
-   base-scale 1 1400
-  scale 1 1400
-   scale-bar 200 m
+   base-scale 1 500
+  scale 1 500
+   scale-bar 50 m
+
   #color map-bg 85
   color map-fg [100 100 80]
   transparency on
   opacity 75
-
-  map-comment "Réseau du Couteau Grenoblois, coupe développée, Samoëns, 74, France"
+  map-comment "Galerie du Petit B22, coupe développée, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
   legend off
-     legend-width 16 cm
-  map-header 0 0 nw
+     legend-width 21 cm
+  map-header 0 00 nw
   map-header-bg off
   layers on
   symbol-hide line survey
- # debug station-names
- 
+  #debug station-names
+
+ # grid-size 100 100 100 m
+   grid off
+
  # To change the Title          
      code tex-map
   
@@ -110,5 +113,11 @@ layout my_layout-coupe
 endlayout
 
  
- export map  -projection plan -o Outputs/Arche-Voltigeurs-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/Arche-Voltigeurs-coupe.pdf
+  
+ #export map -fmt xvi -layout xviexport -o Data/B22-map.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/B22-coupe.xvi
+  
+ export map -o Outputs/B22-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/B22-coupe.pdf
+ export model -o Outputs/B22.lox
+ 

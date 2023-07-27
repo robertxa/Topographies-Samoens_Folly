@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey B22 -title "Gouffre B22"
+
+    input Data/B22.th
+    # Dessins en plan
+    input Data/B22.th2
+    # Dessins en coupe
+    input Data/B22-coupe.th2
+        join SC-B22c1 SC-B22cx
+
+    # Add maps
+    input B22-maps.th
+
+endsurvey

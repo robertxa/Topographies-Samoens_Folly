@@ -28,24 +28,19 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	# Le B22
 	input Data-th/B22/B22-tot.th
 		equate Bb.113@Riviera.Riviera.C37 Bb.113@jb-amonts1
+		equate Bc.50@jb-amonts1 Bc.50@B22.B22.B22
 
 	input Drawing-th2/Plan/JB-B22.th2
 		### Joins dessins Plan
 	input Drawing-th2/Coupe/voltigeurs-coupe.th2
 	input Drawing-th2/Coupe/B22-coupe.th2
 		### Joins dessins Coupe
-			join SC-B22c1 SC-B22cx
+			#join SC-B22c1 SC-B22cx
 			join SC-B22c2 SC-elyseesc1 
 
 		# Méandre des Arianes
 		equate  Bc.50@jb-arianes.Arianes.B22 Bc.50@jb-amonts1
     	equate  Bb.115@jb-arianes.Arianes.B22 Bb.115@jb-amonts1
-
-	## La rivière de la Gadoue    
-	input Drawing-th2/Plan/gadoue.th2
-		### Joins dessins Plan
-			join SP-Gadoue SP-champs-elysees2
-		### Joins dessins Coupe
 
 #####################
 
@@ -54,10 +49,16 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	## Le B21
 	#input Data-th/B21/B21-tot.th
 	input Drawing-th2/Plan/B21.th2
-		### Joins dessins Plan
+		#equate Bk.18@ChampsElysees.ChampsElysees.B22 Bk.18@jb-amonts1
+		#join SP-champs-elysees@ChampsElysees.B22 SP-jctionB21B22
 	input Drawing-th2/Coupe/B21-coupe.th2
 		### Joins dessins Coupe
 			##join SC-B21c SC-B22c3
+	## La rivière de la Gadoue    
+	input Drawing-th2/Plan/gadoue.th2
+		### Joins dessins Plan
+			join SP-Gadoue SP-champs-elysees2
+		### Joins dessins Coupe
 #####################
 
 

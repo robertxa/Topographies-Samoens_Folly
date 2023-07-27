@@ -6,12 +6,14 @@ encoding  utf-8
 
 survey B22 -title "Gouffre B22"
 
-    ## Toute la zone du Bivouac -500 m
-    #input Data/B22/B22-tot.th
+    input Data/B22/B22-tot.th
+    #input Data/ChampsElysees/ChampsElysees-tot.th
+        #equate Bc.50@ChampsElysees.ChampsElysees Bc.50@B22.B22
+        #join SP-champs-elysees@ChampsElysees SP-B22-2@B22
 
     input Data/Arianes/arianes-tot.th
-        #equate Ka.13@Cascatelles.Cascatelles Ka.13@Jean-Dupont.Jean-Dupont
-        #join SP-Cascatelles@Cascatelles SP-riv-1@Jean-Dupont
+        #equate  Bc.50@jb-arianes.Arianes.B22 Bc.50@ChampsElysees.ChampsElysees
+    	#equate  Bb.115@jb-arianes.Arianes.B22 Bb.115@ChampsElysees.ChampsElysees
     
 
     # Add maps

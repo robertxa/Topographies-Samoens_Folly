@@ -72,6 +72,8 @@ survey Arche-Voltigeurs -title "Boyau de l'Arche - Méandre des Voltigeurs - Mé
    Ba.42 Ba.43 30883.0 31276.0    162.      -33.       0.       0.       0.       0.    
    Ba.43 Ba.44 31276.0 32375.0    192.      -68.       0.       0.       0.       0.    
    Ba.44 Ba.45 32375.0 33211.0    231.      -5.       0.       0.       0.       0.    
+   extend ignore Ba.45 Ba.46
+   extend ignore Ba.46 Ba.45
    Ba.45 Ba.46 33211.0 33666.0    254.      -8.       0.       0.       0.       0.    
 
 # Dev = 377.0 m
@@ -125,8 +127,12 @@ survey Arche-Voltigeurs -title "Boyau de l'Arche - Méandre des Voltigeurs - Mé
    Bb.22 Bb.23 16836.0 17049.0    174.       5.       1.5       0.       0.       0.    # h = 1.5 m
    Bb.23 Bb.24 17049.0 17568.0    203.      -62.       0.       0.       0.       0.    
    Bb.24 Bb.25 17568.0 18087.0    123.       8.       0.       0.       0.       0.    
+   #extend ignore Bb.25 Bb.26
    Bb.25 Bb.26 18087.0 18322.0    229.      -73.       2.       0.       0.       0.   # plafond à 2 m 
+   #extend ignore Bb.26 Ba.46
    Bb.26 Ba.46 18322.0 19345.0    148.       11.       0.       0.       0.       0.    # faille
+   #extend ignore Ba.46 Bb.28
+   #extend ignore Bb.28 Ba.46
    Ba.46 Bb.28 19345.0 19805.0    230.      -1.       4.       0.       0.       0.    # plafond à 4 m
    Bb.28 Bb.29 19805.0 20160.0    184.      -19.       0.       0.       0.       0.    
    Bb.29 Bb.30 20160.0 20544.0    225.      -42.       0.       0.       0.       0.    
@@ -184,9 +190,12 @@ survey Arche-Voltigeurs -title "Boyau de l'Arche - Méandre des Voltigeurs - Mé
    Bb.81 Bb.82 44179.0 44691.0    292.      -64.       0.       0.       0.       0.    
    Bb.82 Bb.83 44691.0 45206.0    323.       8.       0.       0.       0.       0.    
    Bb.83 Bb.84 45206.0 45959.0    12.       33.       0.       0.       0.       0.    
+   extend ignore Bb.84 Bb.85
+   extend ignore Bb.85 Bb.84
    Bb.84 Bb.85 45959.0 47477.0    333.       27.       1.       1.       0.5       0.5    # conduite 1 m * 2 m
    Bb.85 Bb.86 47477.0 48818.0    318.       3.       10.       0.       0.       0.   # h > 10 m 
    Bb.86 Bb.87 48818.0 49209.0    347.      -14.       0.       0.       0.       0.    # passage bas
+   extend left
    Bb.87 Bb.87' 74382.0 76168.0    336.       39.       0.       0.       0.       0.    
    Bb.87 Bb.88 49209.0 49673.0    222.       7.       0.       0.       0.       0.    
    Bb.88 Bb.89 49673.0 50404.0    243.      -40.       0.       0.       0.       0.    
@@ -299,6 +308,7 @@ survey Arche-Voltigeurs -title "Boyau de l'Arche - Méandre des Voltigeurs - Mé
    Be.43 Be.44 20385.0 20686.0    398.      -29.       0.       0.       0.       0.    
    Be.44 Be.45 20686.0 21144.0    256.      -10.       0.       0.       0.       0.    
    Be.45 Be.46 21144.0 21694.0    217.      -40.       0.       0.       0.       0.    
+   #extend ignore Ba.46 Be.46
    Be.46 Ba.46 21694.0 22177.0    261.      -2.       0.       0.       0.       0.    # Raccord voie rapide
 
 # Dev = 135.25 m

@@ -1,0 +1,127 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey B22 -title "Gouffre B22" -entrance "B22"
+  
+centerline -extend left -title "B22 B22_Bc.1 Bc.64_Bc.65"
+
+  cs lat-long
+  fix B22 46.10452 6.79435 2194
+  	station B22 "B22" entrance
+	
+	date 1983.08.07	
+  # declination -2.0312 degrees
+  team " Bernard Lips"
+  team " Christophe Ohl"
+  explo-date 1982.07.06
+    explo-team "Jean-Luc Dinard"
+    explo-team "Jean-Bernard/de Chabelier"
+  explo-date 1983.07.29
+    explo-team "Christophe Ohl"
+    explo-team "Bernard Lips"
+  explo-date 1983.07.30
+    explo-team "Jean-Bernard/de Chabelier"
+    explo-team "Christian Roy"
+  explo-date 1983.07.31
+    explo-team "Christian Roy"
+  explo-date 1983.08.02
+    explo-team "Christophe Ohl"
+    explo-team "Christian Rigaldie"
+  explo-date 1983.08.03
+    explo-team "Bernard Lips"
+    explo-team "Benoît/Le Falher"
+  explo-date 1983.08.06
+    explo-team "Jean-Bernard/de Chabelier"
+    explo-team "Luc Funcken"
+  explo-date 1983.08.07
+    explo-team "Christian Rigaldie"
+    explo-team "Jean-Bernard/de Chabelier"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount compass clino left right up down
+   
+   flags surface
+   B22 Bc.1 53176.0 53949.0    150.      -44.       0.       0.       0.       0.     # Entrée du B22
+   flags not surface
+    
+   Bc.1 Bc.2 53949.0 54194.0    70.      -74.       0.       0.       0.       0.    
+   Bc.2 Bc.3 54194.0 55113.0    0.      -90.       0.       0.       0.       0.    
+   Bc.3 Bc.4 55113.0 55409.0    275.      -45.       0.       0.       0.       0.    
+   Bc.4 Bc.5 55409.0 55887.0    340.      -68.       0.       0.       0.       0.    
+   Bc.5 Bc.6 55887.0 56195.0    270.      -19.       0.       0.       0.       0.    
+   Bc.6 Bc.7 56195.0 56740.0    245.      -26.       0.       0.       0.       0.    
+   Bc.7 Bc.8 56740.0 57088.0    258.      -1.       0.       0.       0.       0.    
+   Bc.8 Bc.9 57088.0 57452.0    240.      -28.       0.       0.       0.       0.    
+   Bc.9 Bc.10 57452.0 60186.0    0.      -90.       0.       0.       0.       0.    
+   Bc.10 Bc.11 60186.0 60776.0    350.       8.       0.       0.       0.       0.    
+   Bc.11 Bc.12 60776.0 60932.0    300.       15.       0.       0.       0.       0.    
+   Bc.12 Bc.13 60932.0 63857.0    0.      -90.       0.       0.       0.       0.    
+   Bc.13 Bc.14 63857.0 64113.0    185.      -25.       0.       0.       0.       0.    
+   Bc.14 Bc.15 64113.0 64228.0    75.      -41.       0.       0.       0.       0.    
+   Bc.15 Bc.16 64228.0 66796.0    0.      -90.       0.       0.       0.       0.    
+   Bc.16 Bc.17 66796.0 67108.0    10.       0.       0.       0.       0.       0.    
+   Bc.17 Bc.18 67108.0 68202.0    5.      -26.       0.       0.       0.       0.    
+   Bc.18 Bc.19 68202.0 70114.0    0.      -90.       0.       0.       0.       0.    
+   Bc.19 Bc.20 70114.0 70430.0    90.       27.       0.       0.       0.       0.    
+   Bc.20 Bc.21 70430.0 70827.0    135.      -49.       0.       0.       0.       0.    
+   Bc.21 Bc.22 70827.0 71187.0    145.      -55.       0.       0.       0.       0.    
+   Bc.22 Bc.23 71187.0 71356.0    120.       38.       0.       0.       0.       0.    
+   Bc.23 Bc.24 71356.0 71710.0    165.      -15.       0.       0.       0.       0.    
+   Bc.24 Bc.25 71710.0 71798.0    95.       0.       0.       0.       0.       0.    
+   Bc.25 Bc.26 71798.0 72057.0    150.      -20.       0.       0.       0.       0.    
+   Bc.26 Bc.27 72057.0 72236.0    60.       10.       0.       0.       0.       0.    
+   Bc.27 Bc.28 72236.0 72437.0    200.      -25.       0.       0.       0.       0.    
+   Bc.28 Bc.29 72437.0 72728.0    95.      -16.       0.       0.       0.       0.    
+   Bc.29 Bc.30 72728.0 73101.0    85.      -45.       0.       0.       0.       0.    
+   Bc.30 Bc.31 73101.0 73546.0    45.       25.       0.       0.       0.       0.    
+   Bc.31 Bc.32 73546.0 74110.0    0.      -90.       0.       0.       0.       0.    
+   Bc.32 Bc.33 74110.0 74447.0    27.       3.       0.       0.       0.       0.    
+   Bc.33 Bc.34 74447.0 74637.0    120.      -70.       0.       0.       0.       0.    
+   Bc.34 Bc.35 75612.0 76000.0    60.      -6.       0.       0.       0.       0.    
+   Bc.35 Bc.36 76000.0 76353.0    85.      -6.       0.       0.       0.       0.    
+   Bc.36 Bc.37 76353.0 76797.0    60.      -71.       0.       0.       0.       0.    
+   Bc.37 Bc.38 76797.0 77303.0    0.      -90.       0.       0.       0.       0.    
+   extend right
+   Bc.38 Bc.39 77303.0 77463.0    95.       0.       0.       0.       0.       0.    
+   Bc.39 Bc.40 77463.0 77968.0    175.      -30.       0.       0.       0.       0.    
+   Bc.40 Bc.41 77968.0 78344.0    195.       6.       0.       0.       0.       0.    
+   Bc.41 Bc.42 78344.0 78686.0    65.       23.       0.       0.       0.       0.    
+   Bc.42 Bc.43 78686.0 80041.0    134.      -20.       0.       0.       0.       0.    
+   Bc.43 Bc.44 80041.0 80601.0    100.       9.       0.       0.       0.       0.    
+   Bc.44 Bc.45 80601.0 82471.0    160.      -14.       0.       0.       0.       0.    
+   Bc.45 Bc.46 82408.0 84231.0    145.      -20.       0.       0.       0.       0.    
+   Bc.46 Bc.47 84231.0 85620.0    155.      -22.       0.       0.       0.       0.    
+   Bc.47 Bc.48 85620.0 87218.0    145.      -15.       0.       0.       0.       0.    
+   Bc.48 Bc.49 87218.0 88109.0    117.       0.       0.       0.       0.       0.    
+   Bc.49 Bc.50 88109.0 88902.0    142.      -10.       0.       0.       0.       0.    
+   
+  #  extend left
+  #  Bc.50 Bc.51 88903.0 90549.0    255.      -20.       0.       0.       0.       0.    
+  #  Bc.51 Bc.52 90549.0 93130.0    165.      -17.       0.       0.       0.       0.    
+  #  Bc.52 Bc.53 93130.0 94850.0    170.      -20.       0.       0.       0.       0.    
+  #  Bc.53 Bc.54 94850.0 95699.0    215.       3.       0.       0.       0.       0.    
+  #  Bc.54 Bc.55 95699.0 97454.0    265.      -28.       0.       0.       0.       0.    
+  #  Bc.55 Bc.56 97454.0 98509.0    245.       19.       0.       0.       0.       0.    
+  #  Bc.56 Bc.57 729.0 1190.0    28.      -30.       0.       0.       0.       0.    
+  #  Bc.57 Bc.58 1190.0 2597.0    280.       73.       0.       0.       0.       0.    
+  #  Bc.58 Bc.59 2597.0 3718.0    310.       27.       0.       0.       0.       0.    
+  #  Bc.59 Bc.60 6193.0 6933.0    330.       41.       0.       0.       0.       0.    
+  #  Bc.60 Bc.61 6933.0 7811.0    339.       26.       0.       0.       0.       0.    
+  #  Bc.61 Bc.62 7811.0 9275.0    282.      -16.       0.       0.       0.       0.    
+  #  Bc.62 Bc.63 9275.0 10420.0    210.      -34.       0.       0.       0.       0.    
+  #  Bc.63 Bc.64 10420.0 12247.0    283.      -8.       0.       0.       0.       0.    
+  #  Bc.64 Bc.65 12247.0 12742.0    293.      -16.       0.       0.       0.       0.    
+   
+# Dev = 539.58 m  
+   
+endcenterline
+
+endsurvey

@@ -38,11 +38,11 @@ map MP-B21 -title "B21"
 	SP-B21-4
 endmap
 
-map MP-B22 -title "B22"
-	SP-B22-1
-	break
-	SP-B22-2
-endmap
+#map MP-B22 -title "B22"
+#	SP-B22-1
+#	break
+#	SP-B22-2
+#endmap
   
 map MP-champselysees -title "Les Champs Elysées"
 	SP-champs-elysees
@@ -308,7 +308,7 @@ endmap
 map MP-B22-B21 -title "B21 - B22"
 	MP-B21
 	break
-	MP-B22
+	MP-B22@B22
 	break
 	MP-champselysees
 	break
@@ -653,7 +653,7 @@ map MP-Tr-B22-V6 -title "B22 - V6"
 	#MP-B22-B21 
 		#MP-B21
 		#break
-		MP-B22
+		MP-B22@B22
 		break
 		MP-champselysees
 		#break
