@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Cascatelles -title "Les Cascatelles"  
+survey Cascatelles -title "Les Cascatelles ; 1964, 1969 et 1975"  
 
 centerline -extend left -title "Savoyards vers Cascatelles - Jd Ja.24_Jd.1 Jd.45_Jd.46"
    
@@ -147,11 +147,9 @@ centerline -extend right -title "Collecteur amont de la Jean-Dupont - Je Jd.45_J
     # Date pas sûre !!!
     # Est-ce le réseau de la désobstruction (120 m) ? Est-ce la rivière Amont (129 m)?
    date 1969.11.11
-   #declination 0.  degrees
-
-  team "Alain Matteoli"
-  team "Jean-François Nyffenegger"
-  team "Yves Gosane"
+    team "Alain Matteoli"
+    team "Jean-François Nyffenegger"
+    team "Yves Gosane"
   explo-date 1969.11.11
     explo-team "Alain Matteoli"
     explo-team "Jean-François Nyffenegger"
@@ -201,10 +199,8 @@ centerline -extend left -title "Vers le gros Cailloux - Jf Jd.46_Jf.1 Jf.12_Jf.1
 
    # Attention à la date de la topo
    date 1975.11.01
-   #declination 0.  degrees
-
-  team "Jacques Lopez"
-  team "Jean-Pierre Stéphanato"
+    team "Jacques Lopez"
+    team "Jean-Pierre Stéphanato"
   explo-date 1965.08.02
      explo-team "Claude Milly"
      explo-team "Emile Cheilletz"
@@ -244,10 +240,10 @@ centerline -extend left -title "Vers le gros Cailloux - Jf Jd.46_Jf.1 Jf.12_Jf.1
  endcenterline
 
  centerline -extend left -title " Jf.14_Ka.1 Ka.70_Ka.71"
+ 
  #  date YYYY.MM.DD
    declination -3.0707 degrees
   #team "G.S. Vulcain"
- # (to be completed, add many lines as you need)
  
   #explo-team "G.S. Vulcain"
    units lenght meters

@@ -4,22 +4,21 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey B21 -title "Gouffre B21" -entrance "B21"
+survey B21 -title "Gouffre B21 ; 1977-1981" -entrance "B21"
 
  centerline -extend right -title "B21 Cc.0_Cc.1 Cc.51_B21"
  # De la base du P140 à l'entrée du B21
 
-   date 1979.07.05
  #  declination -2.3401 grad   
    cs lat-long
   fix B21   46.1036667   6.79451667  2237
   station B21 "B21" entrance
-
-  ##team "G.S. Vulcain"
-  team "Josiane Lips"
-  team "Bernard Lips"
-  team "Jean-Luc Dinard"
-  team "Benoît/Le Falher"
+  
+  date 1979.07.05
+    team "Josiane Lips"
+    team "Bernard Lips"
+    team "Jean-Luc Dinard"
+    team "Benoît/Le Falher"
   explo-date 1979.04.04
     explo-team "Pierre Rias"
     explo-team "Bernard Séroul"
@@ -279,11 +278,8 @@ survey B21 -title "Gouffre B21" -entrance "B21"
 
    date 1981.08.03
  #  declination -2.1653 grad
-
-  ##team "G.S. Vulcain"
-
-  team "Bernard Lips"
-  team "Josiane Lips"
+    team "Bernard Lips"
+    team "Josiane Lips"
   explo-date 1981.08.01
     explo-team "Bernard Lips"
     explo-team "Josiane Lips"  

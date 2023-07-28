@@ -4,29 +4,27 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey affluentC14 -title "Affluent C14"
+survey affluentC14 -title "Affluent C14 ; 2013"
     
  centerline -title "Affluent C14 2013-xab-0_2013-xab-0bdouble 2013-xab-21_2012-xab-22"
    date 2013.07.15
 #   declination 0.0000  degrees
-  #team "G.S. Vulcain"
-  team "Xavier Robert"
-  team "Gaëtan Poschmann"
+  	team "Xavier Robert"
+  	team "Gaëtan Poschmann"
   explo-date 2012.07.15
-    #explo-team "G.S. Vulcain"
     explo-team "Stéphane Lips"
     explo-team "Frédéric Delègue"
     explo-team "Max Pinard"
   explo-date 2013.07.15
     explo-team "Xavier Robert"
     explo-team "Gaëtan Poschmann"
-    #explo-team "G.S. Vulcain"
+
    units lenght meters
    units compass degrees
    units clino degrees
+
    data normal from to length compass clino left right up down
    extend left
-
 #Point depart	Point arrivee	L	A	P	G	D	H	B	Rem
 	2013-xab-0	2013-xab-0double	0	0	0	0.4	0	5.5	10	# Etr.
 	2013-xab-0double	2013-xab-1	1.22	130	0	0.2	0.2	5.5	10

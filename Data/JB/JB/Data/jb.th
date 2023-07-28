@@ -176,14 +176,12 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 ###################
 	input Data-th/V6/V6-tot.th
 	# Galerie du Petit Dino
-	#input Data-th/dino/dino-tot.th
 		equate xa-2014a-1@jb-dino.dino.V6 Da.248@jb-amonts2
     	equate xa-2014a-9@jb-dino.dino.V6 Da.253@jb-amonts2
 		join SP-dino-1@dino.V6 SP-Erreur -count 2
 		join SC-maisc1 SC-dino-coupe@dino.V6
 	
 	# Shunt de l'Erreur
-	#input Data-th/Erreur/erreur-tot.th
 		equate Xa-2015e-0@Erreur.Erreur.V6 Da.2494@jb-amonts2
     	equate Xa-2015e-10@Erreur.Erreur.V6 Da.239@jb-amonts2
 		join SP-Erreur SP-berreur1@Erreur.V6
@@ -192,8 +190,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	
 	# Mais et Erreur
 	input Drawing-th2/Plan/mais.th2
-		### Joins dessins Plan
-			join SP-Mais SP-Mais-2010
+		join SP-Mais SP-Mais-2010
 ###################
 
 

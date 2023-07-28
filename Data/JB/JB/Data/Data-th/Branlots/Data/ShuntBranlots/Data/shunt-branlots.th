@@ -4,24 +4,25 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey shunt-branlots -title "Shunt des Branlots"
+survey shunt-branlots -title "Shunt des Branlots ; 2013"
     
  centerline -title "Shunt Branlots 2013-xac-0_2013-xac-0bdouble 2013-xac-13_2013-xac-14"
-   date 2013.06.15
-
-  team "Xavier Robert"
-  team "Jonathan Mercier"
+  
+  date 2013.06.15
+  	team "Xavier Robert"
+  	team "Jonathan Mercier"
   explo-date 2013.06.15
-  explo-team "Cédric Lacharmoise"
-  explo-team "Xavier Robert"
-  explo-team "David Parrot"
-  explo-team "Jonathan Mercier"
+  	explo-team "Cédric Lacharmoise"
+  	explo-team "Xavier Robert"
+  	explo-team "David Parrot"
+  	explo-team "Jonathan Mercier"
+
    units lenght meters
    units compass degrees
    units clino degrees
+
    data normal from to length compass clino left right up down
    extend right
-
 #Point depart	Point arrivee	L	A	P	G	D	H	B	Rem
 	2013-xac-0	2013-xac-0double	0	0	0	3	3	3	0	# Base du puits, jonction dans CF, a voir pour bouclage topo
 	extend ignore 2013-xac-0double	2013-xac-1

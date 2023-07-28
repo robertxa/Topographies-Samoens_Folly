@@ -4,7 +4,7 @@
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey CouteauG -title "Réseau du Couteau Grenoblois"
+survey CouteauG -title "Réseau du Couteau Grenoblois ; 2015-2016"
   
   centerline -title "Xa-2015f-0_Xa-2015f-0bis Xa-2015f-36_Xa-2015f-37 Réseau du Couteau Grenoblois"
   explo-date 2015.05.30   
@@ -117,6 +117,7 @@ centerline -title "Xa-2015f-28_Xa-2016c-0 Xa-2016c-7_Xa-2016c-8 Réseau du Coute
 	data normal from to length compass clino left right up down
 	# Attention, TOPO approx car de tête, pas de notes prises
 	extend right
+	flags approximate
 	Xa-2015f-27	Xa-2016c-0	0	0	0	0.5	0.5	7	1	
 	Xa-2016c-0	Xa-2016c-1	7	0	90	0.5	0.5	2	8	
 	Xa-2016c-1	Xa-2016c-2	1	70	0	0.5	0.5	5	1	
@@ -126,6 +127,7 @@ centerline -title "Xa-2015f-28_Xa-2016c-0 Xa-2016c-7_Xa-2016c-8 Réseau du Coute
 	Xa-2016c-5	Xa-2016c-6	6	160	-25	0.4	0.4	0.4	0.4	
 	Xa-2016c-6	Xa-2016c-7	1	70	0	0.4	0.4	0.4	0.4	
 	Xa-2016c-7	Xa-2016c-8	1	160	-25	0.1	0.1	0.1	0.1	# imp.; colm. Alrgile ; Pas de c.a.
+	flags not approximate
 	
 # dev = 50 m
  endcenterline

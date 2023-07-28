@@ -4,17 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey C37_2020 -title "Fond du C37"
+survey C37_2020 -title "Fond du C37 ; 2020"
   
 centerline -title "Puits du C37, juste avant le départ des Pétroleurs : 0.2020_1.2020 6.2020_7.2020"
-	#  A partir de la base du puits d'accès au bivouac -900 m
+	
 	date 2020.07.13
 		team "Frédéric Delègue"
 		team "Olivier Gente"
 		team "Arne Bohr"
-	#explo-date 2020.01.25
+	#explo-date 2020.07.13
 	#	explo-team "Frédéric Delègue"
 	#	explo-team "Laurence d'Hautefeuille"
+
 	units length meters
 	units compass degrees
   	units clino degrees
@@ -29,6 +30,7 @@ centerline -title "Puits du C37, juste avant le départ des Pétroleurs : 0.2020
 	4.2020	5.2020	3.2	82	5	1.55	0.6	6	1
 	5.2020	6.2020	9.6	0	-90	1.55	0.6	9.8	1
 	6.2020	7.2020	5.8	280	-11	0.6	0.4	1	1
+	flags not duplicate
 							
 	#	Total = 70.93 m											
    
