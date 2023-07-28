@@ -44,7 +44,7 @@ point 1240.0 -980.5 breakdown-choke -orientation 93.6
 
 point 2439.0 -1236.0 air-draught -orientation 233.7 -subtype summer
 
-point 2502.0 -1394.0 label -text "<center> ressauts de<br>l'Espérance"
+point 2630.5 -1494.5 label -text "<center> ressauts de<br>l'Espérance"
 
 point 2037.0 -1225.0 label -text "R4"
 
@@ -290,8 +290,16 @@ line wall
   1874.5 -1279.0 1883.5 -1277.5 1886.5 -1286.5
   1889.5 -1295.5 1883.0 -1298.5 1885.0 -1304.5
   1887.0 -1310.5 1895.0 -1315.0 1905.5 -1315.0
+endline
+
+line wall -subtype debris
+  1905.5 -1315.0
   1916.0 -1315.0 1926.0 -1317.5 1933.0 -1318.5
   1940.0 -1319.5 1949.5 -1316.0 1952.0 -1320.5
+endline
+
+line wall
+  1952.0 -1320.5
   1954.5 -1325.0 1953.5 -1338.0 1951.0 -1347.0
   1948.5 -1356.0 1940.5 -1369.0 1955.5 -1374.0
   1970.5 -1379.0 1971.5 -1383.0 1981.0 -1383.0
