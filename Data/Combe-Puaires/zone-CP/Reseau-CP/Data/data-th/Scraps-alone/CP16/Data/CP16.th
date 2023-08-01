@@ -9,7 +9,7 @@ survey CP16 -title "CP16" -entrance CP16
 centerline -title "CP16.0_CP16.0doubl CP16.25_CP16.6"
  #cs lat-long
  #fix CP16   46.115050     6.798150  2135	#2137	#2135
- station CP16 entrance
+ station CP16 "CP16" entrance
    date 2006.10.14
    calibrate counter 0 0.500
   team "Stéphane Lips"
