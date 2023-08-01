@@ -103,7 +103,7 @@ centerline -title "1.10_4.1 5.4_5.5"
 endcenterline
 
   
-centerline -title "g. du P18 : A.54_7.1 7.18_7.19"
+centerline -title "g. du P18 : A.54_7.1 7.18_7.19 ; 1985"
    # Galerie du P18
    date 1985.10.15
  #  declination -2.1334 degrees
@@ -118,6 +118,7 @@ centerline -title "g. du P18 : A.54_7.1 7.18_7.19"
    units clino degrees
    data normal from to length compass clino left right up down
    extend right
+   flags duplicate
    A.54 7.1    12.41       136.0       11.       1.0       1.0       4.0       1.0    
    7.1 7.2    19.35       176.0       6.5       1.0       1.0       5.0       1.0    
    extend left
@@ -126,6 +127,8 @@ centerline -title "g. du P18 : A.54_7.1 7.18_7.19"
    7.4 7.5    17.30       302.0      -8.0      0.50      0.50       3.0       1.0    
    7.5 7.6    20.26       243.0       56.      0.60      0.60       3.0       1.0    
    7.6 7.7    8.050       289.0       30.      0.60      0.60       3.0       1.0    
+   flags not duplicate
+
    7.7 7.8    14.98       280.0       30.      0.60      0.60       15.       1.0    
    7.8 7.9    5.980       330.0      -36.50      0.60      0.60       4.0       1.0    
    7.9 7.10    9.090       0.0      -90.      0.60      0.60       15.       1.0    

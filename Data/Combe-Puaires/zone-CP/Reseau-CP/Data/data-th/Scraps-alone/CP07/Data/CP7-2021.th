@@ -1,6 +1,6 @@
 # 2021.08.21 created by TopoDroid v 5.1.54
 
-survey CP7-2021 -title "CP7 2021 : Puits de la Turbine"
+survey CP7-2021 -title "CP7 : Puits de la Turbine ; 2021"
 
   centerline
     date 2021.08.21 
@@ -34,7 +34,9 @@ survey CP7-2021 -title "CP7 2021 : Puits de la Turbine"
     0 . 1.19 86.8 -29.0
     0 . 4.34 129.9 -38.6
     extend left
+    flags duplicate
     0 1 5.14 127.7 -29.8  # Visée vers le fond en cours de désobstruction
+    flags not duplicate
     0 2 6.86 132.9 28.0 # Visée vers le méandre remontant avec Courant d'air, mais non travaillé pour l'instant
     extend vertical
     0 3 12.76 183.4 86.3  # Amarage foré de la déviation
@@ -146,7 +148,7 @@ survey CP7-2021 -title "CP7 2021 : Puits de la Turbine"
     7 . 1.62 19.3 27.2
   endcenterline
 
-    centerline
+  centerline
     date 2021.08.21 
       team "Frédéric Gennerat"
       team "Xavier Robert"

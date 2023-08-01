@@ -4,12 +4,6 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MC-rev -title ""
-#		Voltigeurs-amonts
-#	break
-#		voltigeurs
-#		preview below JB-amonts
-#endmap
 
 map MC-Billy2-c
 	SC-Billy2-c #@ReseauCP
@@ -225,6 +219,8 @@ map MC-ReseauCP-total -title "Réseau de la Combe aux Puaires"
 	MC-sirocco
 	break
 	MC-CP14
+	break
+	MC-CP7@CP7
 	break
 	MC-CP12-aval
 	break

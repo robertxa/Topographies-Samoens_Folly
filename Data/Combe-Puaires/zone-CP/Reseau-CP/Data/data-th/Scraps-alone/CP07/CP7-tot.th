@@ -7,8 +7,9 @@ encoding utf-8
 survey CP7 -title "CP7"
 	input Data/CP7.th
 	input Data/CP7-2021.th
-	equate 4@CP7 11@CP7-2021
-
+		equate 4@CP7 11@CP7-2021
+	input Data/CP7-2023.th
+		equate 0@CP7-2021 20@CP7-2023	# Jonction à la base du puits de la Turbine
 
 	# pour le plan
 	input Data/CP7.th2

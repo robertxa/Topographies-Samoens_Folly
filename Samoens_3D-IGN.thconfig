@@ -156,6 +156,11 @@ layout my_layout
 	symbol-hide line survey
   symbol-hide point u:symbol_plan
   symbol-hide point u:symbol_extend
+  symbol-hide point rope
+  
+  color map-fg altitude
+	color-legend smooth
+
 
   # Un commentaire a ajouter au titule, on pourrait indiquer ici
   # la mairie ou est place la cavite dont le nom est probablement

@@ -90,7 +90,7 @@ layout my_layout
   opacity 75
 
    # echelle graphique 100 m ampleur
-   scale-bar 100 m
+   scale-bar 200 m
   
    # Un commentaire a ajounter au titule,
   map-comment "<it>Plan<ss> - Samoëns, 74, France"
@@ -108,7 +108,9 @@ layout my_layout
   legend on
   
    # Par defaut, la legende est de 14 cm de largeur
-     legend-width 28 cm
+     legend-width 32 cm
+     legend-columns 4
+
   
    # Specification la position de la manchette : interieur
    # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -117,7 +119,7 @@ layout my_layout
    # 100 100, c est en haut, a droite
    # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
    # Il faut specifier un de ces points 
-  map-header 0 100 nw
+  map-header 0 113 nw
   
    # arrière plan de la manchette
   map-header-bg off
@@ -129,6 +131,13 @@ layout my_layout
    # les points et le nom des stations topos
    #debug station-names
    #debug scrap-names
+
+   symbol-hide point u:symbol_plan
+  symbol-hide point u:symbol_extend
+  symbol-hide point rope
+  
+  color map-fg altitude
+	color-legend smooth
   
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -155,7 +164,7 @@ layout my_layout
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Réseau de la Combe aux Puaires : CP12, CP14, CP16 et CP19 bis} 		
+ 		\cavename={Réseau de la Combe aux Puaires : CP07, CP12, CP14, CP16 et CP19 bis} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    \newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -175,14 +184,14 @@ endlayout
 # Select maps
 	select MP-ReseauCP-total@ReseauCP
 	
-export map -o Outputs/2D/ReseauCP-plan2022.pdf -layout my_layout
-#export map -o Outputs/2D/ReseauCP-plan2022-Continuations.pdf -layout my_layout
+export map -o Outputs/2D/ReseauCP-plan2023.pdf -layout my_layout
+#export map -o Outputs/2D/ReseauCP-plan2023-Continuations.pdf -layout my_layout
   
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/3D/ReseauCP2022 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/3D/ReseauCP -layout my_layout
  
 # Export du fichier 3d pour Loch
-#export model -o Outputs/3D/reseauCP-2022.lox
+export model -o Outputs/3D/reseauCP-2023.lox
   
 # Export des fichiers kml
 #export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2022.kml -layout my_layout
@@ -190,5 +199,5 @@ export map -proj plan -fmt esri -o Outputs/3D/ReseauCP2022 -layout my_layout
 # Export des listes:
 #export database -o Outputs/Lists/databaseCP-2022.sql
 #export continuation-list -o Outputs/Lists/ContinuationsCPPlan-2022.html
-#export survey-list -location on -o Outputs/Lists/SurveysCP2022.html
+export survey-list -location on -o Outputs/Lists/SurveysCP.html
 #export cave-list -location on -o Outputs/Lists/CavesCP2022.html

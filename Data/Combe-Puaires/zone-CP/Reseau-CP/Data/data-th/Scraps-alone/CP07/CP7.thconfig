@@ -10,7 +10,7 @@ source CP7-tot.th
 input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../../../config.thc 
+input ../../../../../../../../config.thc 
   
 layout xviexport
 	scale 1 500
@@ -29,9 +29,13 @@ layout my_layout
 	doc-title "CP7"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 250
-	scale 1 250
-	scale-bar 25 m
+	base-scale 1 500
+	scale 1 500
+	scale-bar 50 m
+	#base-scale 1 1000
+	#scale 1 1000
+	#scale-bar 100 m
+	
 	#rotate 2.25
 	# origin 12 22 0 m
 	# origin-label 100 K
@@ -83,9 +87,14 @@ layout my_layout-coupe
   
 	doc-title "CP7"
 	doc-author "Xavier Robert"
-	base-scale 1 250
-	scale 1 250
-	scale-bar 25 m
+	
+	base-scale 1 500
+	scale 1 500
+	scale-bar 50 m
+	#base-scale 1 1400
+	#scale 1 1400
+	#scale-bar 100 m
+	
 	#rotate 2.25
 	#origin 12 22 0 m
 	#origin-label 100 K
@@ -99,7 +108,7 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 20 90 ne
+	map-header 0 100 ne
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -138,15 +147,15 @@ endlayout
 
  
   
-export map -fmt xvi -layout xviexport -o Data/CP7-map2020a.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/CP7-coupe2020a.xvi
+export map -fmt xvi -layout xviexport -o Data/CP7-map2023a.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/CP7-coupe2023a.xvi
 
 # Select maps
-	select MP-CP7-plan-tot@CP7
-	select MC-CP7-coupe-tot@CP7
+	select MP-CP7@CP7
+	select MC-CP7@CP7
 	  
- export map -o Outputs/CP7-plan2021.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/CP7-coupe2021.pdf
+ export map -o Outputs/CP7-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/CP7-coupe.pdf
 #export map -o Outputs/CP7-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP7-coupe-Continuations.pdf
 

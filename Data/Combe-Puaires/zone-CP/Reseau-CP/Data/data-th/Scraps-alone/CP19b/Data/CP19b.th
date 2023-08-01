@@ -8,7 +8,8 @@ survey CP19b -title "CP19b" -entrance CP19b
 
 centerline -title "CP19b : CP19b_B.1 B.79_6.23"
 	cs lat-long
-	fix CP19b  46.112617 6.792833 1984
+	#fix CP19b  46.112617 6.792833 1984
+   fix CP19b  46.112617 6.792833 2019  # Altitude corrigée avec Google earth car erreur
 	station CP19b entrance
 
 	date 1995.08.24

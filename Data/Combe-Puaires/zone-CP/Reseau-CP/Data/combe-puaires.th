@@ -69,6 +69,13 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	input data-th/Scraps-alone/Clowns/Data/BivouacCP
 		equate 16.26@ReseauCP 16.26@BivouacCP
 	
+	input data-th/Scraps-alone/CP07/CP7-tot.th
+		equate 45@CP7-2023.CP7 7.3@aval-CP12	# Sommet E7 du puits qu'on traverse
+		equate 49@CP7-2023.CP7 A.53@CP12	# Début MC du P18, à la base du P60 du CP12
+		join SP-gP18-1@CP7 SP-CP12-2
+		join SC-CP7-2023-1@CP7 SC-P18-1	# Sommet P60 de la galerie du P18
+		join SC-gP18-2@CP7 SC-CP12-1	# Sommet du P18
+
 	
    
 # Pour importer les différents fichiers de dessins en Plan
@@ -163,7 +170,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires"
 	# CP12, CP19b et Reptiles
 	input data-th/Scraps-alone/CP12/Data/CP12-coupe.th2
 	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12-coupe.th2
-		join SC-CP12-1 SC-aval-CP12-1
+		join SC-CP12-1 SC-aval-CP12-1 -count 2
 		#join CP12-SC1 P18-SC1 ???
 	input data-th/Scraps-alone/Reptiles/Data/reptiles-coupe.th2
 		join SC-Reptiles-1 SC-aval-CP12-1

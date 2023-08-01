@@ -147,8 +147,8 @@ map MP-CP12 -title "CP12"
 	SP-CP12-1 #@ReseauCP
 	break
 	SP-CP12-2 #@ReseauCP
-	break
-	SP-P18-1 #@ReseauCP
+	#break
+	#SP-P18-1 #@ReseauCP	--> Dans CP7 maintenant
 	break
 	SP-CP12-5 #@ReseauCP
 	break
@@ -183,6 +183,8 @@ map MP-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP12 - CP14 - CP
 	MP-CP16
 	break
 	MP-CP14
+	break
+	MP-CP7@CP7
 	break
 	MP-CP12
 	break
