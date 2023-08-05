@@ -232,6 +232,7 @@ layout langue-fr
 		\newtoks\thwpage \thwpage={Page internet }
 		\newtoks\thexpe \thexpe={Expedition }
 		\newtoks\thguide \thguide={Guide(s) }
+		\newtoks\thdatat \thdatat={Données topographiques }
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\ththanksto \ththanksto{Nos remerciements }
 		\newtoks\thcoords \thcoords{Coordonnées GPS (WGS84) }
@@ -244,6 +245,7 @@ layout langue-fr
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
+		\newtoks\datat \datat={}
 		\newtoks\thanksto \thanksto={}
 		\newtoks\ECoordinates \ECoordinates={}
 		
@@ -268,6 +270,7 @@ layout langue-es
 		\newtoks\thexpe \thexpe={Expedición}
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\thguide \thguide={Guia(s)}
+		\newtoks\thdatat \thdatat={Datos topograficas}
 		\newtoks\ththanksto \ththanksto{Nuestros agradecimientos }
 		\newtoks\thcoords \thcoords{Coordinadas GPS (WGS84) }
 		\newtoks\explolengthtitle \explolengthtitle{Longitud explorada}
@@ -281,6 +284,7 @@ layout langue-es
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
+		\newtoks\datat \datat={}
 		\newtoks\thanksto \thanksto={}
 		\newtoks\ECoordinates \ECoordinates={}
 		
@@ -306,6 +310,7 @@ layout langue-en
 		\newtoks\thexpe \thexpe={Expedition}
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\thguide \thguide={Guide(s)}
+		\newtoks\thdatat \thdatat={Survey's data}
 		\newtoks\ththanksto \ththanksto{Acknowledgments }
 		\newtoks\thcoords \thcoords{GPS coordinates (WGS84) }
 		\newtoks\explolengthtitle \explolengthtitle{Explored length}
@@ -317,6 +322,7 @@ layout langue-en
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
+		\newtoks\datat \datat={}
 		\newtoks\thanksto \thanksto={}
 		\newtoks\ECoordinates \ECoordinates={}
 		
@@ -1771,6 +1777,10 @@ layout headerl
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
 		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
+		\fi
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
 			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
@@ -1897,6 +1907,10 @@ layout header_coupe_vert-to-place
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
 		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
+		\fi
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
 			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
@@ -2008,6 +2022,10 @@ layout header_coupe_vert-auto
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
 		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
+		\fi
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
 			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
@@ -2112,6 +2130,10 @@ layout header_coupe
         %%print the web page
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
 		\fi
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
@@ -2219,6 +2241,10 @@ layout header-plan-schema
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
 		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
+		\fi
 	
 		%%print copyrights
 		\edef\tmp{\the\copyrights} \ifx\tmp\empty \else
@@ -2311,6 +2337,10 @@ layout header_coupe-schema
         %%print the web page
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
 		\fi
 
 		%print copyrights
@@ -2436,6 +2466,10 @@ layout headeratlas
         %%print the web page
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
 		\fi
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty

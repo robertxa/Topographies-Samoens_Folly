@@ -193,19 +193,19 @@ text es "point u:symbol_extend" ""
 #<en> Different layouts to manage languages (en, fr, es)
 #     In your thconfig, call the layout langue-XX where XX is en, fr or es
 #     You need to add one of these layout if you use the layout headerl or header_coupe
-#     If you want to add one of the field club, syntesys, web page, expedition, guide, 
+#     If you want to add one of the field club, syntesys, web page, expedition, guide, datat,
 #        add the following line in the code tex-map/endcode block of your layout in the thconfig
 #		   \newtoks\YYYY \YYYY={the value of your variable}
-#        where YYYY = club, synth, wpage, expe or guide
+#        where YYYY = club, synth, wpage, expe, guide or datat
 #<fr> Différents layouts pour définir les langues (pour l'instant : en, fr, es)
 #     Dans votre thconfig, appelez le layout langue-XX où XX est en, fr ou es
 #     Vous devez ajouter l'un de ces layouts si vous voulez utiliser les layouts headerl ou header_coupe
 #     qui redéfinissent la présentation et les informations du cartouche (header).
-#     Si vous voulez ajouter un de ces champs club, syntesys, web page, expedition, guide, 
+#     Si vous voulez ajouter un de ces champs club, syntesys, web page, expedition, guide, datat,
 #        rajouter la ligne suivante dans le bloc code tex-map/endcode  de votre layout dans votre thconfig
 #        (voir les exemples)
 #		   \newtoks\YYYY \YYYY={Valeur de votre varialbe}
-#        où YYYY = club, synth, wpage, expe or guide
+#        où YYYY = club, synth, wpage, expe, guide or datat
 #
 #<en> You may add new fields, following the examples in the layouts. 
 #     If you add a new field, you need to edit the layout(s) headerl and/or header_coupe
@@ -228,6 +228,7 @@ layout langue-fr
 		\newtoks\thwpage \thwpage={Page internet }
 		\newtoks\thexpe \thexpe={Expedition }
 		\newtoks\thguide \thguide={Guide(s) }
+		\newtoks\thdatat \thdatat={Données topographiques }
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\ththanksto \ththanksto{Nos remerciements }
 		\newtoks\thcoords \thcoords{Coordonnées GPS (WGS84) }
@@ -240,6 +241,7 @@ layout langue-fr
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
+		\newtoks\datat \datat={}
 		\newtoks\thanksto \thanksto={}
 		\newtoks\ECoordinates \ECoordinates={}
 		
@@ -264,6 +266,7 @@ layout langue-es
 		\newtoks\thexpe \thexpe={Expedición}
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\thguide \thguide={Guia(s)}
+		\newtoks\thdatat \thdatat={Datos topograficas }
 		\newtoks\ththanksto \ththanksto{Nuestros agradecimientos }
 		\newtoks\thcoords \thcoords{Coordinadas GPS (WGS84) }
 		\newtoks\explolengthtitle \explolengthtitle{Longitud explorada}
@@ -277,6 +280,7 @@ layout langue-es
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
+		\newtoks\datat \datat={}
 		\newtoks\thanksto \thanksto={}
 		\newtoks\ECoordinates \ECoordinates={}
 		
@@ -302,6 +306,7 @@ layout langue-en
 		\newtoks\thexpe \thexpe={Expedition}
 		\newtoks\depthrangetitle \depthrangetitle={Depth range from }
 		\newtoks\thguide \thguide={Guide(s)}
+		\newtoks\thdatat \thdatat={Survey's data }
 		\newtoks\ththanksto \ththanksto{Acknowledgments }
 		\newtoks\thcoords \thcoords{GPS coordinates (WGS84) }
 		\newtoks\explolengthtitle \explolengthtitle{Explored length}
@@ -313,6 +318,7 @@ layout langue-en
 		\newtoks\wpage \wpage={}
 		\newtoks\expe \expe={}
 		\newtoks\guide \guide={}
+		\newtoks\datat \datat={}
 		\newtoks\thanksto \thanksto={}
 		\newtoks\ECoordinates \ECoordinates={}
 		
@@ -1732,15 +1738,15 @@ layout headerl
 
 		%print explorers names
 		\edef\tmp{\the\exploteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+			{\the\legendtextsize\si\the\explotitle : \ss\the\exploteam\quad\si\the\explodate\par}
 		\fi
 		%print surveyors names
 		\edef\tmp{\the\topoteam} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+			{\the\legendtextsize\si\the\topotitle : \ss\the\topoteam\quad\si\the\topodate\par}
 		\fi
 		 %%print the guides
 		\edef\tmp{\the\guide} \ifx\tmp\empty \else
-			{\the\legendtextsize\si\the\thguide: \ss\the\guide\par}
+			{\the\legendtextsize\si\the\thguide : \ss\the\guide\par}
 		\fi
 		%print cartographers names
 		\edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
@@ -1762,6 +1768,12 @@ layout headerl
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
 		\fi
+
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
+		\fi
+
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
 			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
@@ -1887,6 +1899,10 @@ layout header_coupe_vert-to-place
         %%print the web page
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
 		\fi
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
@@ -2104,6 +2120,10 @@ layout header_coupe
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
 		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
+		\fi
 		# % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
 		\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
 			{\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB \ss\the\thversion}
@@ -2302,6 +2322,10 @@ layout header_coupe-schema
         %%print the web page
 		\edef\tmp{\the\wpage} \ifx\tmp\empty \else
 			{\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+		\fi
+		%%print the survey's data web page
+		\edef\tmp{\the\datat} \ifx\tmp\empty \else
+			{\the\legendtextsize\si\the\thdatat: \ss\the\datat\par}
 		\fi
 
 		%print copyrights
