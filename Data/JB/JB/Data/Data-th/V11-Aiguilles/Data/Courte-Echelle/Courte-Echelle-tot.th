@@ -1,0 +1,19 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Courte-Echelle -title "Galerie de la Courte Echelle"
+
+    input Data/Courte-Echelle.th
+
+    # Dessins en plan
+    #input Data/Courte-Echelle.th2
+    # Dessins en coupe
+    #input Data/Courte-Echelle-coupe.th2
+    
+    # Add maps
+    #input Courte-Echelle-maps.th
+
+endsurvey

@@ -1,0 +1,51 @@
+encoding utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ survey TEST -title "TEST"
+    
+ centerline -title "TEST"
+  
+  #date 1991.09.28
+  #  team "Bernard Lips"
+  #  team "Robert Sonney"
+  #explo-date 2012.07.15
+  #  explo-team "Stéphane Lips"
+  #explo-date 2012.11.02
+  #  explo-team "Xavier Robert"
+  #  explo-team "Frédéric Delègue"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   calibrate clino 90 -1
+
+   data normal from to length clino compass #left right up down
+   extend left
+   0  1 2 61  47
+   1  2 7.32  93  160
+   2  3 5.55  111 127
+   3  4 8.63  114 190
+   4  5 2.1 137 75
+   5  6 7.4 128 155
+   6  7 9.41  124 253
+   7  8 2.39  141 222
+   8  9 2.64  114 275
+   9  10  3.11  180 0
+   10 11  2.90  132 235
+   11 12  6.2 90  162
+   12 13  10.45 180 0
+   13 14  6.37  145 194
+   14 15  4.23  136 244
+   15 16  12.41 131 157
+   16 17  6.84  115 132
+   17 18  10.08  118 152
+
+# dev = 44.41 m
+
+endcenterline
+
+endsurvey

@@ -13,7 +13,7 @@ layout Entrances_coords_JBJB
 
 	code tex-map
 		\def\thlocationJBJBa{V4    --  Lat. : 46.10222 N ; Long. : 6.77962 E ; Alt. : 1836 m}
-		\def\thlocationJBJBn{V15   --  Lat. : 46.10205 N ; Long. : 6.78024 E ; Alt. : 1849 m}
+		\def\thlocationJBJBo{V15   --  Lat. : 46.10205 N ; Long. : 6.78024 E ; Alt. : 1849 m}
 		\def\thlocationJBJBb{V4bis --  Lat. : 46.10238 N ; Long. : 6.78057 E ; Alt. : 1843 m}
 		\def\thlocationJBJBc{V4ter --  Lat. : 46.10257 N ; Long. : 6.78050 E ; Alt. = 1854 m}
 		\def\thlocationJBJBd{V5    --  Lat. : 46.10212 N ; Long. : 6.78202 E ; Alt. : 1873 m}
@@ -53,8 +53,8 @@ layout Coords_Header_JBJB
 			\edef\tmp{\thlocationJBJBa} \ifx\tmp\empty \else
 				{\size[\thsizem] \ss\thlocationJBJBa\vss}	% The first one should be without hskip
 			\fi
-			\edef\tmp{\thlocationJBJBn} \ifx\tmp\empty \else
-				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBn\vss}	% You need to set your hskip
+			\edef\tmp{\thlocationJBJBo} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBo\vss}	% You need to set your hskip
 			\fi
 			\edef\tmp{\thlocationJBJBb} \ifx\tmp\empty \else
 				{\size[\thsizem]\hskip5.95cm \ss\thlocationJBJBb\vss}	% You need to set your hskip

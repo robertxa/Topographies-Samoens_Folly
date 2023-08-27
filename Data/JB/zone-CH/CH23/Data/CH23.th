@@ -9,7 +9,9 @@ survey CH23 -title "CH23" -entrance "CH23"
  #fix CH23   946.7220       2132.589       2427 
  centerline
  cs lat-long
- fix CH23   46.1042100 006.8270900       2476	# 2481
+ #fix CH23   46.1042100 006.8270900       2476	# 2481  # OLD
+ fix CH23   46.10420 006.82670       2486	# 2481  # Coordonnées reprises le 12/08/2023 par F. Augey et F. Alvarez
+
    date 2011.09.07
   team "Gaëtan Poschmann"
   team "Frédéric Alvarez"
