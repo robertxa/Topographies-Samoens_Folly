@@ -1,0 +1,12 @@
+encoding  utf-8
+
+survey haselblad2023-3 -title "haselblad2023-3"
+   input Data/hasselblad2023-3.th
+      equate PTRHABUXR01@hasselblad2023-2 PTRHABUXR01@hasselbad2023-3
+	
+   #input Data/hasselbad2023-3-plan.th2
+	#input Data/hasselbad2023-3-coupe.th2
+
+   #input hasselblad2023-3-maps.th
+	
+endsurvey

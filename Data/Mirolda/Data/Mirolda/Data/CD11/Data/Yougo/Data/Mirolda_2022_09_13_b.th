@@ -1,6 +1,6 @@
 # 2022.09.14 created by TopoDroid v 5.1.40
 
-survey Yougo -title "Yougo"
+survey Yougo -title "Galerie des Yougoslaves"
     # fichier 2 
 
   centerline
@@ -141,7 +141,10 @@ survey Yougo -title "Yougo"
     14 . 7.68 275.3 -41.4
     14 . 7.67 274.4 -43.0
     extend left
+    flags duplicate
     14 PTRYOLEAP03 7.74 274.3 -43.1  # bas du puits non descendu ptr yo le ap 03
+    #PTRYOLRAP03
+    flags not duplicate
     extend left
     5 5A 5.35 196.7 -37.6
     # extend auto

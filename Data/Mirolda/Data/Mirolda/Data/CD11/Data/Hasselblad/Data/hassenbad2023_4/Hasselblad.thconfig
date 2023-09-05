@@ -1,0 +1,323 @@
+encoding  utf-8
+
+# 1-SOURCES 
+
+source haselblad2023-2-tot.th
+
+# Add entrances coordinates
+#input legendes/entrances_coordinates.th
+
+# Add config file
+input /home/urrutyb/Documents/Spéléo/database_speleo/Chartreuse/Réseau_ded/topo_kriska/therion_kriska/config.thc 
+
+#DEM
+#source ../GIS/DEM.th
+
+
+# 2-LAYOUT   
+
+layout xviexport
+	#cs UTM32
+	# échelle à laquelle on veut dessiner la topo
+	scale 1 100 # pour le plan
+	#scale 1 1000 # pour la coupe
+	# taille de la grille
+	grid-size 1 1 1 m
+	# mettre la grille en arrière plan
+	grid bottom
+endlayout
+# fin de la définition du layout "xviexport" 
+  
+layout my_layout
+   # Call the config settings (Layout config inside the config.thc file)
+   copy drawingconfig
+   copy headerl
+   copy langue-fr
+      
+   # Titre  
+   doc-title "haselblad2023-2"
+   # Auteur
+   doc-author "Benoît Urruty"
+
+   # Pour faire la topo dans le system UTM  
+   # Decommenter la ligne, et remplacer xx par la zone UTM
+   cs UTM32
+
+   # "base-scale" specifie l echelle auquel nous avons
+   # dessine nos croquis. Par defaut, c est 1/200.
+   # Si on a utilise une autre echelle, 
+   # il faut enlever le "#" et specifier l echelle vraiment
+   # employee, c est le cas apres avoir dessine la topo
+   # sur un cheminement exporte avec le layout "xviexport"
+   # (voir en bas)
+   base-scale 1 100
+
+   # "scale" : specification de l echelle,
+   # pour imprimer la topo. La combination entre scale et base-scale
+   # controlle le gros des lignes, rotation, etc, convenable
+   # pour faire l amplificaation-reduction entre dessin et
+   # le resultat de l imprimante
+   # C est tres important s assurer que la configuration de
+   # l imprimante ne specifie pas l option "Fit in page"
+   # ou similaire, sinon, l echelle sera change pendant
+   # l impression
+   scale 1 200
+
+   #surface bottom
+   #surface-opacity 70
+
+   # echelle graphique 100 m ampleur
+   scale-bar 20 m
+
+   # Pour faire une rotation
+   #rotate 90
+
+   # origin 12 22 0 m
+   # origin-label 100 K
+
+   # Une couleur de fond, 85% blanc = 15% noir
+   #color map-bg 85
+
+   # Une couleur de topo (RVB)
+   color map-fg [100 100 80]
+
+   # la topo est transparente (on peut voir les galeries sousjacentes)
+   # Par defaut, donc, pas vraiment besoin de specifier
+   transparency on
+
+   # Pourcentage de transparence, marche seulement si transparency est "on"
+   opacity 75
+
+   # Un commentaire a ajounter au titule,
+   map-comment "<it>Plan<ss> - Saint-Pierre de Chartreuse, 38, France"
+
+   # Afficher les statistiques d explo par équipe/nom. C est lourd
+   # si la cavite est importante et qu il y a beaucoup d explorateurs
+   statistics explo-length off
+   # Afficher developpement et profondeur de la cavite
+   statistics topo-length on
+
+   # Nous voulons une legende pour expliquer les symboles. "on" imprimera
+   # seulement la legende des symboles dessines sur la topo, si l on veut
+   # pour tous les symboles, utilises ou pas, il faut indiquer "all".
+   # "legend off" = pas de legende
+   legend on
+
+   # Par defaut, la legende est de 14 cm de largeur
+   legend-width 25 cm
+   legend-columns 3
+
+   # Specification la position de la manchette : interieur
+   # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
+   # les cordonnes du point de la topo ou l on veut la manchette :
+   # 0 0, c est en bas, a gauche
+   # 100 100, c est en haut, a droite
+   # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
+   # Il faut specifier un de ces points 
+   map-header 0 -7 nw
+
+   # arrière plan de la manchette
+   #map-header-bg off
+
+   layers on
+
+   # Options pour afficher le squelette topo,
+   # les points et le nom des stations topos
+   #symbol-hide line survey
+   #symbol-hide point cave-station
+
+   debug station-names
+
+   # Specifier qu il faut imprimer une grille
+   # au dessous de la topo  
+   grid bottom
+
+   # Specifier le pas de la grille, ici 100x100x100 metres
+   # (Trois dimensions, oui, ça sert pour la coupe aussi) 
+   grid-size 10 10 10 m
+   # Si nous ne voulons pas de grille :
+   grid off
+   # Affiche les coordonnées de la grille <off (pas de coordonnées) / all (sur tous les croisements) / border (uniquement aux niveau des croix aux bords de la carte>
+   grid-coords all
+
+   # Afficher un copyright
+   statistics copyright all
+
+   ######## Code Metapost pour modifier l aspect des symboles ####### 
+
+   # Titre          
+   code tex-map
+      % Output map title as determined by Therion 5.3 is stored in cavename. 
+      % It will be empty if there are multiple maps selected for any one projection
+      % AND there are multiple source surveys identified in the thconfig file 
+      % ie Therion can not infer a unique title from the input data given.
+      % This code allows you to define an output map title {cavename} if it happens to be empty
+      \edef\temp{\the\cavename}   % cavename from Therion
+      \edef\nostring{}            % empty string
+      \ifx\temp\nostring          % haselblad2023-2 if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+         \cavename={haselblad2023-2} 		
+      \else % if not empty keep the value set by therion, or assign an override cavename here
+      \fi
+      \newtoks\club \club={GUCEM}
+   endcode  
+
+   # add extended-elev on the same pdf
+   #map-image 105 0 s Outputs/P50-coupe.pdf
+
+endlayout
+
+  
+layout my_layout-coupe
+   # Call the config settings (Layout config inside the config.thc file)
+   copy drawingconfig
+   copy header_coupe
+   copy langue-fr
+      
+   # Titre  
+   doc-title "haselblad2023-2"
+   # Auteur
+   doc-author "Benoit Urruty"
+
+   # Pour faire la topo dans le system UTM  
+   # Decommenter la ligne, et remplacer xx par la zone UTM
+   #cs UTM32
+
+   # "base-scale" specifie l echelle auquel nous avons
+   # dessine nos croquis. Par defaut, c est 1/200.
+   # Si on a utilise une autre echelle, 
+   # il faut enlever le "#" et specifier l echelle vraiment
+   # employee, c est le cas apres avoir dessine la topo
+   # sur un cheminement exporte avec le layout "xviexport"
+   # (voir en bas)
+   base-scale 1 200
+
+   # "scale" : specification de l echelle,
+   # pour imprimer la topo. La combination entre scale et base-scale
+   # controlle le gros des lignes, rotation, etc, convenable
+   # pour faire l amplificaation-reduction entre dessin et
+   # le resultat de l imprimante
+   # C est tres important s assurer que la configuration de
+   # l imprimante ne specifie pas l option "Fit in page"
+   # ou similaire, sinon, l echelle sera change pendant
+   # l impression
+   scale 1 200
+
+   # echelle graphique 20 m ampleur
+   scale-bar 20 m
+
+   # Pour faire une rotation
+   #rotate 2.25
+   #origin 12 22 0 m
+   #origin-label 100 K
+
+   # Une couleur de fond, 85% blanc = 15% noir
+   #color map-bg 85
+
+   # Une couleur de topo (RVB)
+   color map-fg [100 100 80]
+
+   # la topo est transparente (on peut voir les galeries sousjacentes)
+   # Par defaut, donc, pas vraiment besoin de specifier
+   transparency on
+
+   # Pourcentage de transparence, marche seulement si transparency est "on"
+   opacity 75
+      
+   # Un commentaire a ajounter au titule,
+   map-comment "<it>Coupe développée<ss> - Saint-Pierre de Chartreuse,38, France"
+
+   # Afficher les statistiques d explo par équipe/nom. C est lourd
+   # si la cavite est importante et qu il y a beaucoup d explorateurs
+   statistics explo-length off
+   # Afficher developpement et profondeur de la cavite
+   statistics topo-length on
+
+   # Nous voulons une legende pour expliquer les symboles. "on" imprimera
+   # seulement la legende des symboles dessines sur la topo, si l on veut
+   # pour tous les symboles, utilises ou pas, il faut indiquer "all".
+   # "legend off" = pas de legende
+   legend on
+
+   # Par defaut, la legende est de 14 cm de largeur
+   legend-width 14.5 cm
+
+   # Specification la position de la manchette : interieur
+   # occuppe par le titule, auteurs, etc. Nous pouvons indiquer
+   # les cordonnes du point de la topo ou l on veut la manchette :
+   # 0 0, c est en bas, a gauche
+   # 100 100, c est en haut, a droite
+   # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
+   # Il faut specifier un de ces points 
+   map-header 0 00 nw
+
+   # arrière plan de la manchette
+   #map-header-bg off
+
+   layers on
+
+   # Options pour afficher le squelette topo,
+   # les points et le nom des stations topos
+   #symbol-hide line survey
+   #symbol-hide point cave-station
+
+   debug station-names
+
+   # Specifier qu il faut imprimer une grille
+   # au dessous de la topo  
+   grid bottom
+
+   # Specifier le pas de la grille, ici 100x100x100 metres
+   # (Trois dimensions, oui, ça sert pour la coupe aussi) 
+   grid-size 10 10 10 m
+   # Si nous ne voulons pas de grille :
+   #grid off
+   # Affiche les coordonnées de la grille <off (pas de coordonnées) / all (sur tous les croisements) / border (uniquement aux niveau des croix aux bords de la carte>
+   grid-coords all
+
+   # Afficher un copyright
+   statistics copyright all
+
+   # Titre          
+   code tex-map
+      % Output map title as determined by Therion 5.3 is stored in cavename. 
+      % It will be empty if there are multiple maps selected for any one projection
+      % AND there are multiple source surveys identified in the thconfig file 
+      % ie Therion can not infer a unique title from the input data given.
+      % This code allows you to define an output map title {cavename} if it happens to be empty
+      \edef\temp{\the\cavename}   % cavename from Therion
+      \edef\nostring{}            % empty string
+      \ifx\temp\nostring          % haselblad2023-2 if cavename is empty
+         % if empty reassign cavename to describe selected maps as a group
+         \cavename={haselblad2023-2} 		
+      \else % if not empty keep the value set by therion, or assign an override cavename here
+      \fi
+      \newtoks\club \club={GUCEM}
+   endcode  
+  
+endlayout  
+
+  
+# 3-EXPORTS
+
+export map -fmt xvi -layout xviexport -o Data/haselblad2023-2-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/haselblad2023-2-coupe.xvi
+export map -proj [elevation 17] -layout xviexport -o Data/haselblad2023-2-coupe_elevation.xvi 
+
+# Select maps
+  select MP-haselblad2023-2-plan-tot@haselblad2023-2
+  select MC-haselblad2023-2-coupe-tot@haselblad2023-2
+	 
+export map -projection [elevation 17] -layout my_layout-coupe -o Outputs/haselblad2023-2-coupe_elevation.pdf 
+export map -projection extended -layout my_layout-coupe -o Outputs/haselblad2023-2-coupe.pdf 
+export map -o Outputs/haselblad2023-2-plan.pdf -layout my_layout
+ 
+export model -o Outputs/haselblad2023-2.lox
+export continuation-list -o Outputs/questions.html
+export cave-list -o Outputs/haselblad2023-2.html  
+
+# Export des fichiers ESRI
+export map -proj plan -fmt esri -o Outputs/haselblad2023-2 -layout my_layout
+  
+# Export des fichiers kml
+export map -proj plan -fmt kml -o Outputs/haselblad2023-2.kml -layout my_layout

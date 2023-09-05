@@ -1,0 +1,54 @@
+encoding  utf-8				
+					
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>			
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:	
+#   "<http://creativecommons.org/licenses/by-nc-sa/4.0/>"
+					
+# Ce fichier topo a été construit par Xavier Robert (09/2022), à partir des données Visual Topo du CD11,
+#   données levées par l'ASE et les Cavernicoles et retrouvées tout à fait par hasard.			
+#   Ce fichier correspond à l'état de la topographie en mai 2003.			
+#   Il est à noter qu'aucune des sessions topographiques n'est datée,			
+#   ce qui fait que les données d'azimuth ne peuvent pas être corrigées de la déclinaison magnétique.
+#   Le positionnement des galeries du fond sont donc assez approximatives.	
+#   Aussi, les LRUD paraissent complètement arbitraires, il ne faut probablement pas les prendre en considération
+					
+survey	Aval-Dragounet -title "Aval Dragounet, version Tro de 2003"
+
+centerline
+
+    #date 2022.09.13 
+     team "GS Cavernicoles"
+
+    units length meters
+    units compass degrees
+    units clino grads
+    units counter centimeters
+    calibrate counter 0 1.000
+    data topofil from to fromcount tocount compass backclino left right up down
+    #data normal from to fromcount tocount compass clino left right up down	
+    # Param Topof 1.000 Deg Vulc Gra 0.0000 Dir,Dir,Dir Inc Std
+    # Aval rivière Dragounet
+    flags not duplicate
+
+384	385	68676	69360	142	44	1	1	2	2	#	Déaprt aval ; station PTRRDBF4 						
+385	386	69360	70540	99	0	1	1	2	2	#							
+386	387	71740	72049	110	30	1	1	2	2	#							
+387	388	72049	72763	114	14	1	1	2	2	#							
+388	389	72763	73512	123	28	1	1	2	2	#							
+389	390	73512	73976	223	19	1	1	2	2	#							
+390	391	73976	74627	298	1	1	1	2	2	#							
+391	392	74636	75233	272	11	1	1	2	2	#							
+392	393	75233	76228	264	35	1	1	2	2	#							
+393	394	76228	76647	180	-1	1	1	2	2	#							
+394	395	76647	76780	140	0	1	1	2	2	#							
+395	396	76816	77594	133	72	1	1	2	2	#							
+396	397	77594	78233	190	23	1	1	2	2	#							
+397	398	78753	79895	188	70	1	1	2	2	#							
+398	399	79913	80507	35	6	1	1	2	2	#							
+399	400	80507	81258	355	0	1	1	2	2	#							
+400	401	81258	81498	50	25	1	1	2	2	#							
+401	402	81498	81836	255	20	1	1	2	2	#							
+
+endcenterline
+
+endsurvey				

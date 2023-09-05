@@ -165,10 +165,10 @@ layout my_layout
 			\cavename={Gouffre Mirolda - CD11} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022}
-		%\newtoks\synth \synth={Xavier Robert}
+		\newtoks\club \club={Collectif Mirolda 2022 - 2023}
+		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), Alexandre Pont, Xavier Robert (2023)}
     \newtoks\datat \datat={https://github.com/robertxa/Mirolda}
-    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession ! QUI METTRE D'AUTRE ?}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
   
  endlayout
@@ -255,10 +255,10 @@ layout my_layout-coupe
 			\cavename={Gouffre Mirolda - CD11} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022}
-		%\newtoks\synth \synth={Xavier Robert}
+		\newtoks\club \club={Collectif Mirolda 2022 - 2023}
+		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), Alexandre Pont, Xavier Robert (2023)}
     \newtoks\datat \datat={https://github.com/robertxa/Mirolda}
-    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession ! QUI METTRE D'AUTRE ?}
+    \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien du groupe spéléo Ursus pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
 
  endlayout
@@ -296,29 +296,29 @@ select MC-CD11-coupe-tot@CD11
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/CD11-2022-plan.pdf -layout my_layout
- export map -proj plan -fmt pdf -o Outputs/CD11-2022-plan-continuations.pdf -layout my_layout-continuations
- export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/CD11-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/CD11-2023-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/CD11-2023-plan-continuations.pdf -layout my_layout-continuations
+ export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/CD11-2023-coupe.pdf
  #export map -projection extended -fmt pdf -layout my_layout-coupe-continuations -o Outputs/CD11-2022-coupe-continuations.pdf
 #export atlas -o Outputs/CD11-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/CD11-2022.lox
+ export model -enable all -o Outputs/CD11-2023.lox
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/CD11-2022 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CD11-2023 -layout my_layout
 
 # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/CD11-2022.kml -layout layout-kml
- export model -fmt kml -o Outputs/CD11-2022-model.kml -enable all
+ export map -proj plan -fmt kml -o Outputs/CD11-2023.kml -layout layout-kml
+ export model -fmt kml -o Outputs/CD11-2023-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseCD11-2022.sql
+#export database -fmt sql -o Outputs/databaseCD11-2022.sql
 
-export continuation-list -o Outputs/ContinuationsCD11-2022.html
+export continuation-list -o Outputs/ContinuationsCD11-2023.html
 #export continuation-list -o Outputs/ContinuationsCD11-2022.kml
-export survey-list -location on -o Outputs/SurveysCD112022.html
+export survey-list -location on -o Outputs/SurveysCD112023.html
 #export cave-list -location on -o Outputs/CavesCD112022.html

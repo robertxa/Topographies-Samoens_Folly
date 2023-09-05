@@ -24,6 +24,11 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		join SP-Yougo-Aval-2@Yougo-Aval SP-Yougo-2@Yougo
 		join SC-Yougo-Aval-01@Yougo-Aval SC-Yougo-1@Yougo
 	
+	# Galerie hasselblad
+	input Data/Hasselblad/hasselblad-tot.th
+		equate PTRYOEPAP05@hasselblad2023-1.Hasselblad PTRYOEPAP05@Yougo-Aval.Yougo-Aval
+
+	# Galerie de l'Ardèche
 	input Data/Ardeche/Ardeche-tot.th
 		equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.Ardeche
 	
@@ -39,16 +44,26 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Amont de la salle de la Confluence:
 	input Data/Amont-Confluence/AmontConfluence-tot.th
 		equate 181@AmontConfluence.AmontConfluence 33@20220913MiroldaXR1.Confluence
+	
 	# Départ Bivouac -600
 	input Data/Bivouac-600/Bivouac-600-tot.th
 		equate 354@Bivouac-600.Bivouac-600 PTRRDBF1@riviere_tonitruante.500
+	
+	
+	# Aval vers -800
+	input Data/-800/-800-tot.th
+		equate PTRMFBF08@mirolda_-800.800 PTRMFBF0@riviere_tonitruante.500
 	# Aval de la rivière Dragounet
 	input Data/Aval-Dragounet/Aval-Dragounet-tot.th
-		equate 384@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
+		equate PTRRDBF4@siphon-600.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
+	# Aval de la rivière Dragounet, données OLD
+	#input Data/Aval-Dragounet-OLD/Aval-Dragounet-tot.th
+	#	equate 384@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
 
 	# Aval du CD11
 	input Data/AvalTRO/AvalTRO-tot.th
-		equate 423@AvalTRO.AvalTRO PTRMFBF0@riviere_tonitruante.500
+		#equate 423@AvalTRO.AvalTRO PTRMFBF0@riviere_tonitruante.500
+		equate 472@AvalTRO.AvalTRO 56@mirolda_-800.800
 
 
 

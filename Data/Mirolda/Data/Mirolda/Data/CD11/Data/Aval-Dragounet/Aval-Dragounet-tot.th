@@ -1,21 +1,12 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
-# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
-#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
-
-survey Aval-Dragounet -title "Gouffre Mirolda - Aval-Dragounet"
-	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/Aval-Dragounet.th
+survey Aval-Dragounet -title "Riviere Dragounet aval, jusque vers Siphon -600 m"
+   
+   input Data/Aval-Dragounet.th
 	
-	# Import du dessin en plan
-	#input Data/Aval-Dragounet.th2
-
-	# Import du dessin en coupe
+    #input Data/Aval-Dragounet-plan.th2
 	#input Data/Aval-Dragounet-coupe.th2
 
-	# Import des maps
-	#input Aval-Dragounet-maps.th
- 
- endsurvey
- 
+    #input Aval-Dragounet-maps.th
+	
+endsurvey

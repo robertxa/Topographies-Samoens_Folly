@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 994.1422 711.5
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {629.925 1 1.0} {236.22400000000002 PTRMADG0} Yougo-map.xvi 0 {}
+##XTHERION## xth_me_area_adjust -131.0 -131.0 2411.4712 1702.8074
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {1417.324 1 1.0} {551.182 PTRMADG0@Yougo.Yougo} Yougo-map.xvi 0 {}
 
 
 
@@ -18,10 +18,6 @@ point 409.775 334.074 station -name 8
 point 296.32499999999993 395.594 station -name 10
 
 point 312.525 340.194 station -name 9
-
-point 107.5 557.25 station-name -scale xs
-
-point 130.11499999999995 525.194 station -name PTRYOLEAP03
 
 point 243.40499999999997 454.994 station -name PTRYOLRAP02
 
@@ -49,8 +45,6 @@ line floor-meander -reverse on
   smooth off
 endline
 
-point 130.11499999999995 525.194 map-connection
-
 point 820.9849999999999 543.734 map-connection
 
 line label -text "Réseau des Yougoslaves"
@@ -63,26 +57,9 @@ endline
 
 point 832.75 553.25 continuation -attr Code E -attr Cavite "CD11" -text "Vers réseaux Yougoslaves Amonts"
 
-point 98.5 527.0 continuation -attr Code P -attr Cavite "CD11" -text "Vers réseaux Hasselbad"
-
-point 166.0 556.0 height -value [-6 m]
-
-line floor-meander
-  163.75 522.75
-  163.75 522.75 127.75 524.75 122.0 525.0
-  smooth off
-endline
-
 line floor-meander
   172.5 519.5
   172.5 519.5 184.5 516.5 188.0 516.5
-  smooth off
-endline
-
-line pit
-  159.75 502.5
-  159.75 502.5 173.25 517.5 172.75 523.75
-  172.25 530.0 177.5 537.75 172.5 539.5
   smooth off
 endline
 
@@ -354,12 +331,6 @@ line border -reverse on -visibility off
   555.25 381.0
 endline
 
-line border -close on -reverse on -visibility off
-  120.75 522.25
-  121.5 530.0
-  120.75 522.25
-endline
-
 line wall -close on -outline in
   435.5 276.25
   435.5 276.25 438.25 275.5 439.0 265.75
@@ -374,13 +345,8 @@ line wall -close on -outline in
 endline
 
 line wall
-  120.75 522.25
-  altitude .
-  120.75 522.25 127.5 522.25 131.25 519.75
-  135.0 517.25 139.0 518.5 143.25 517.5
-  147.5 516.5 140.5 513.75 151.0 511.75
-  161.5 509.75 161.75 514.75 167.75 515.5
-  173.75 516.25 182.0 516.75 184.0 514.75
+  173.0 516.5
+  179.0 517.25 182.0 516.75 184.0 514.75
   186.0 512.75 188.75 511.5 191.5 511.0
   194.25 510.5 198.0 512.0 199.5 509.0
   201.0 506.0 201.25 507.25 203.5 504.0
@@ -437,17 +403,16 @@ line wall
   393.25 340.75 376.5 346.0 375.25 347.0
   374.0 348.0 357.75 348.5 355.5 352.25
   353.25 356.0 352.75 368.0 348.5 373.75
-  344.25 379.5 337.75 400.0 332.75 402.0
-  327.75 404.0 308.75 406.5 305.25 411.0
+  344.25 379.5 342.0 397.0 338.0 403.0
+endline
+
+line wall
+  322.0 406.0
+  315.0 404.0 308.2 407.21 305.25 411.0
   301.75 415.5 261.0 443.25 252.75 456.25
   244.5 469.25 235.25 475.75 225.75 491.0
   216.25 506.25 215.75 509.5 204.75 514.5
-  193.75 519.5 182.5 519.75 178.75 524.0
-  175.0 528.25 171.5 530.75 170.25 533.25
-  169.0 535.75 169.0 540.75 158.25 537.75
-  147.5 534.75 149.75 533.75 145.0 532.0
-  140.25 530.25 136.0 528.75 131.75 529.25
-  127.5 529.75 121.5 530.0 121.5 530.0
+  193.75 519.5 179.75 521.25 176.0 525.5
   smooth off
 endline
 
@@ -568,12 +533,14 @@ line wall -reverse on
   479.75 176.0 477.0 174.75 477.0 166.75
   477.0 158.75 478.0 157.5 475.5 145.0
   473.0 132.5 474.25 139.75 474.5 132.25
+  smooth off
 endline
 
 line wall
   472.75 191.25
   473.25 188.25 470.75 179.0 470.25 177.75
   469.75 176.5 471.5 173.25 467.75 171.0
+  smooth off
 endline
 
 point 548.0 138.75 station-name -scale xs

@@ -1,0 +1,97 @@
+# 2023.08.29 created by TopoDroid v 6.1.38
+
+survey cabane2023 -title "cabane2023"
+    # aff cabame, xav, yohan culot, ptryolrap03 
+
+  # input "cabane2023-1p.th2"
+
+  # map m1p -projection plan
+  #   cabane2023-1p
+  # endmap
+
+  centerline
+    date 2023.08.29 
+     team "Xavier Robert" 
+     team "Johan Culot"
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    PTRYOLRAP03 . 0.79 188.4 0.4
+    PTRYOLRAP03 . 1.51 190.8 -76.2
+    PTRYOLRAP03 . 0.51 194.6 41.3
+    PTRYOLRAP03 . 3.05 273.9 17.7
+    PTRYOLRAP03 . 0.68 340.1 39.6
+    PTRYOLRAP03 . 6.12 267.9 -33.4
+    PTRYOLRAP03 . 6.88 284.4 -28.7
+    PTRYOLRAP03 . 3.87 294.3 -34.0
+    PTRYOLRAP03 . 6.93 261.4 -69.5
+    PTRYOLRAP03 . 3.72 231.6 -1.6
+    PTRYOLRAP03 . 1.56 218.7 -11.8
+    PTRYOLRAP03 . 6.93 278.1 -67.5
+    PTRYOLRAP03 . 7.05 233.8 -66.7
+    extend left
+  # base p6
+    PTRYOLRAP03 1 7.02 255.8 -46.9
+    # extend auto
+    1 . 1.46 64.2 -68.2
+    1 . 1.89 33.3 11.2
+    1 . 3.60 25.8 44.9
+    1 . 5.69 44.6 70.5
+    1 . 1.71 137.5 72.9
+    1 . 2.91 134.5 -12.2
+    1 . 3.66 100.4 13.4
+    1 . 4.46 68.4 22.0
+    1 . 5.08 51.1 30.4
+    1 . 8.24 44.8 51.7
+    1 . 6.58 79.5 55.4
+    1 . 4.75 95.7 37.9
+    1 . 3.72 136.2 31.2
+    1 . 1.92 151.2 23.4
+    1 . 2.03 87.3 -40.2
+    1 . 3.99 61.5 -20.6
+    1 . 2.49 348.0 -49.4
+    1 . 3.67 343.1 -6.1
+    1 . 5.08 327.0 2.2
+    1 . 5.68 351.1 50.2
+    1 . 4.96 1.7 73.1
+    1 . 6.71 115.0 13.4
+    1 . 7.21 129.3 12.9
+    1 . 6.04 115.2 23.0
+    1 . 7.04 120.0 16.2
+    1 . 4.96 123.4 7.8
+    extend left
+  # cf colm
+    1 2 8.03 126.4 11.6
+    # extend auto
+    1 . 11.09 61.3 68.0
+    2 . 11.45 60.8 68.3
+    extend right
+  # chem arr eau
+    1 3 10.28 75.5 72.0
+    1 4 5.20 327.3 3.1
+    # extend auto
+    4 . 1.63 239.9 0.9
+    4 . 3.38 277.0 -53.0
+    4 . 3.61 297.6 -14.0
+    4 . 5.96 308.6 -6.2
+    4 . 4.80 321.1 -2.0
+    4 . 4.33 332.4 5.3
+    4 . 4.01 333.7 19.8
+    4 . 4.31 345.8 80.1
+    4 . 3.90 127.2 59.3
+    4 . 1.46 202.2 22.4
+    4 . 1.00 87.1 75.8
+    4 . 5.85 276.3 -79.4
+    4 . 3.72 337.1 -29.7
+    4 . 3.02 148.5 -30.9
+    4 . 2.34 147.4 3.5
+    4 . 3.41 125.3 -2.2
+    4 . 2.58 119.0 -8.5
+    4 . 2.41 156.7 -37.5
+    extend right
+  # sommet p20
+    4 PTRJCXRCA01 4.36 320.4 -19.0
+  endcenterline
+
+endsurvey

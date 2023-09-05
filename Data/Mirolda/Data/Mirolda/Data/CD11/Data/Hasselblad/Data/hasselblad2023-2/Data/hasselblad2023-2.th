@@ -1,0 +1,135 @@
+# 2023.08.30 created by TopoDroid v 6.2.13
+
+survey hasselblad2023-2 -title "haselblad2023-2"
+    # visée directe
+
+  centerline
+    date 2023.08.30 
+      team "Xavier/Robert"
+      team "Benoît/Urruty"
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    PTRJCXRHA01 . 4.43 244.5 7.2
+    PTRJCXRHA01 . 6.86 255.5 5.1
+    PTRJCXRHA01 . 6.61 274.7 3.1
+    PTRJCXRHA01 . 5.04 291.0 1.6
+    PTRJCXRHA01 . 1.70 307.7 2.7
+    PTRJCXRHA01 . 7.39 196.8 -20.2
+    PTRJCXRHA01 . 15.75 174.8 -21.9
+    PTRJCXRHA01 . 5.25 158.2 -11.8
+    PTRJCXRHA01 . 1.24 135.7 -4.9
+    PTRJCXRHA01 . 0.44 83.4 0.8
+    PTRJCXRHA01 . 1.17 17.3 5.1
+    PTRJCXRHA01 . 1.86 356.0 5.4
+    PTRJCXRHA01 . 7.11 313.6 41.0
+    PTRJCXRHA01 . 7.44 326.6 55.2
+    PTRJCXRHA01 . 4.16 347.6 52.0
+    PTRJCXRHA01 . 3.86 291.0 88.0
+    PTRJCXRHA01 . 4.74 177.5 19.0
+    PTRJCXRHA01 . 7.77 171.5 -8.4
+    PTRJCXRHA01 . 0.66 123.1 -71.6
+    PTRJCXRHA01 . 2.38 158.2 -41.6
+    PTRJCXRHA01 . 5.29 162.1 -34.4
+    PTRJCXRHA01 . 1.17 328.5 -27.2
+    PTRJCXRHA01 . 1.80 329.1 2.0
+    PTRJCXRHA01 . 2.82 329.9 20.1
+    PTRJCXRHA01 . 7.39 328.4 28.5
+    PTRJCXRHA01 . 7.08 257.6 -21.9
+    PTRJCXRHA01 . 10.69 256.1 -44.5
+    PTRJCXRHA01 . 4.32 251.9 -51.2
+    PTRJCXRHA01 . 0.99 256.9 -57.6
+    PTRJCXRHA01 . 2.73 342.5 28.7
+    PTRJCXRHA01 . 12.31 327.4 41.3
+    PTRJCXRHA01 . 13.30 345.0 44.0
+    extend right
+    PTRJCXRHA01 BUXR-1 17.28 337.1 36.1
+    # extend auto
+    BUXR-1 . 2.33 240.9 -7.5
+    BUXR-1 . 3.68 245.1 -19.6
+    BUXR-1 . 3.19 254.5 -35.9
+    BUXR-1 . 2.01 307.0 -67.2
+    BUXR-1 . 0.15 27.0 -58.1
+    BUXR-1 . 2.04 39.6 -38.7
+    BUXR-1 . 1.75 47.7 -19.2
+    BUXR-1 . 0.14 82.4 50.9
+    BUXR-1 . 4.39 343.5 1.9
+    BUXR-1 . 7.16 317.6 19.9
+    BUXR-1 . 9.85 306.8 8.7
+    BUXR-1 . 6.14 285.9 3.5
+    BUXR-1 . 14.62 316.2 12.4
+    BUXR-1 . 10.93 335.1 8.0
+    BUXR-1 . 7.86 175.9 -32.4
+    BUXR-1 . 7.03 164.0 -19.3
+    BUXR-1 . 9.19 152.4 -18.7
+    BUXR-1 . 10.18 145.3 -27.8
+    BUXR-1 . 9.09 148.8 -37.6
+    BUXR-1 . 8.20 161.9 -42.3
+    BUXR-1 . 12.94 155.1 -32.5
+    BUXR-1 . 15.33 319.2 9.8
+    extend right
+  # 2 départ en face du point colmaté par calcite
+    BUXR-1 BUXR-2 15.77 319.9 10.5
+    # extend auto
+    BUXR-2 . 0.14 249.4 2.7
+    BUXR-2 . 1.11 251.6 75.2
+    BUXR-2 . 2.67 55.4 68.0
+    BUXR-2 . 4.15 68.0 27.0
+    BUXR-2 . 2.80 73.7 42.9
+    BUXR-2 . 3.97 69.9 6.5
+    BUXR-2 . 3.23 64.3 -14.2
+    BUXR-2 . 1.61 57.7 -43.5
+    BUXR-2 . 1.11 47.5 -60.4
+    BUXR-2 . 8.63 335.4 28.7
+    BUXR-2 . 9.10 351.6 33.6
+    BUXR-2 . 8.40 10.6 29.9
+    BUXR-2 . 8.12 18.0 21.3
+    BUXR-2 . 7.95 7.6 16.1
+    BUXR-2 . 5.89 351.7 12.0
+    BUXR-2 . 2.84 158.0 2.0
+    BUXR-2 . 5.84 155.2 -4.5
+    BUXR-2 . 4.72 136.8 3.4
+    BUXR-2 . 2.65 119.4 28.0
+    BUXR-2 . 8.89 125.3 -14.6
+    BUXR-2 . 5.49 109.6 -11.7
+    BUXR-2 . 12.02 132.9 -11.3
+    BUXR-2 . 12.81 143.8 -7.1
+    extend right
+    BUXR-2 PTRHABUXR01 8.04 360.0 15.4
+    # extend auto
+    PTRHABUXR01 . 0.16 64.4 -52.4
+    PTRHABUXR01 . 1.98 75.7 28.1
+    PTRHABUXR01 . 3.01 76.0 37.6
+    PTRHABUXR01 . 2.93 92.4 70.1
+    PTRHABUXR01 . 4.22 267.7 64.4
+    PTRHABUXR01 . 3.46 260.0 18.5
+    PTRHABUXR01 . 1.50 262.8 -20.2
+    PTRHABUXR01 . 1.05 260.1 -42.5
+    PTRHABUXR01 . 5.40 140.6 1.8
+    PTRHABUXR01 . 7.08 180.5 -1.8
+    PTRHABUXR01 . 6.44 171.6 -26.8
+    PTRHABUXR01 . 5.70 164.8 7.7
+    PTRHABUXR01 . 6.90 306.8 29.3
+    PTRHABUXR01 . 7.32 334.4 40.6
+    PTRHABUXR01 . 7.49 1.3 39.9
+    PTRHABUXR01 . 6.22 14.5 32.9
+    PTRHABUXR01 . 5.61 2.1 20.8
+    PTRHABUXR01 . 4.54 351.4 -0.2
+    PTRHABUXR01 . 4.67 330.2 1.8
+    PTRHABUXR01 . 6.50 320.7 -34.8
+    PTRHABUXR01 . 6.29 335.4 -16.8
+    PTRHABUXR01 . 9.02 343.9 1.5
+    PTRHABUXR01 . 14.11 346.3 15.9
+    PTRHABUXR01 . 15.99 348.1 19.6
+    PTRHABUXR01 . 11.74 339.4 24.7
+    PTRHABUXR01 . 19.46 353.3 23.5
+  endcenterline
+
+  # input "haselblad2023-2-1p.th2"
+
+  # map m1p -projection plan
+  #   haselblad2023-2-1p
+  # endmap
+
+endsurvey
