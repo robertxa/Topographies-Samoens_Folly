@@ -1,21 +1,17 @@
 # 2023.09.02 created by TopoDroid v 6.1.38
 
-survey Yougo2023-4 -title "G. des Yougoslaves, amont de la salle du Pillier"
-    # doart ptrldtcmk7 
-
-  # input "Yougo2023-4-1p.th2"
-  # input "Yougo2023-4-1s.th2"
-
-  # map m1p -projection plan
-  #   Yougo2023-4-1p
-  # endmap
-  # map m1s -projection extended
-  #   Yougo2023-4-1s
-  # endmap
+survey Yougo2023-4 -title "G. des Yougoslaves, amont de la salle du Pillier (2023)"
+    # doart ptrldtcld07 
 
   centerline
     date 2023.09.02 
-    # team "Xavier Robert" 
+     team "Xavier Robert" 
+     team "Alexandre Pont"
+    explo-date 1985
+      explo-team "Spéléo-club du/Chablais"
+      explo-team "S.S.S./Genève"
+      explo-team "Thonon/Tauping Club"
+
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -649,7 +645,7 @@ survey Yougo2023-4 -title "G. des Yougoslaves, amont de la salle du Pillier"
     56 . 2.22 229.4 30.1
     56 . 2.03 246.1 -18.6
     extend right
-    56 36 11.75 326.8 -82.3 # boucle à verifier
+    56 36 11.75 326.8 -82.3 # boucle à vérifier
   endcenterline
 
 endsurvey

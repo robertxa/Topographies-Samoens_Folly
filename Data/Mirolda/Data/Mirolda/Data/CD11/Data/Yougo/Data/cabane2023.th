@@ -1,6 +1,6 @@
 # 2023.08.29 created by TopoDroid v 6.1.38
 
-survey cabane2023 -title "cabane2023"
+survey cabane2023 -title "Amont de la Cabane (2023)"
     # aff cabame, xav, yohan culot, ptryolrap03 
 
   # input "cabane2023-1p.th2"
@@ -12,7 +12,11 @@ survey cabane2023 -title "cabane2023"
   centerline
     date 2023.08.29 
      team "Xavier Robert" 
-     team "Johan Culot"
+     team "Johann Culot"
+    explo-date 1980
+      explo-team "Spéléo-club du/Chablais"
+      explo-team "S.S.S./Genève"
+      explo-team "Thonon/Tauping Club"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

@@ -18,6 +18,7 @@ centerline
 
     #date 2022.09.13 
      team "GS Cavernicoles"
+     team "URSUS"
 
     units length meters
     units compass clino degrees
@@ -29,6 +30,7 @@ centerline
 
     # Rivière La Majestueuse vers les Amonts du CD11 --> Direction VF3
 
+flags duplicate
 107	773	37588.0   38563.0   32.00   18.00   1.00   1.00   2.00		2	# Station 773 ici correspond à station PTRMAXR4
 773	774	38616.0   38858.0   61.00   27.00   1.00   1.00   2.00		2	#
 774	775	38858.0   39205.0   16.00   25.00   1.00   1.00   2.00		2	#
@@ -73,23 +75,26 @@ centerline
 813	814	67415.0   68062.0  110.00   31.00   1.00   1.00   2.00		2	#
 814	815	68062.0   68730.0  180.00   76.00   1.00   1.00   2.00		2	#
 815	816	68730.0   68880.0   54.00    0.00   1.00   1.00   2.00		2	#
-816	817	68880.0   69405.0   95.00   15.00   1.00   1.00   2.00		2	#  Départ de la galerie de l'Ardèche
+816	817	68880.0   69405.0   95.00   15.00   1.00   1.00   2.00		2	#  Départ de la galerie vers -300 m
 817	818	69405.0   70342.0  320.00   -1.00   1.00   1.00   2.00		2	#
 818	819	70342.0   70765.0   74.00   -9.00   1.00   1.00   2.00		2	#
 819	820	70765.0   71397.0   45.00   10.00   1.00   1.00   2.00		2	#
 820	821	71397.0   72690.0  320.00   37.00   1.00   1.00   2.00		2	#
 821	822	72690.0   73817.0   20.00   19.00   1.00   1.00   2.00		2	#
 822	823	73817.0   74428.0   78.00   26.00   1.00   1.00   2.00		2	#
-817	824	82685.0   83240.0  225.00   48.00   1.00   1.00   2.00		2	#  Galerie de l'Ardèche
+
+817	824	82685.0   83240.0  225.00   48.00   1.00   1.00   2.00		2	#  Galerie vers -300 m
 824	825	83663.0   84518.0  171.00  -20.00   1.00   1.00   2.00		2	#
 825	826	84649.0   85387.0  133.00  -53.00   1.00   1.00   2.00		2	#
+flags not duplicate
 
 endcenterline
 
 centerline
 
     #date 2022.09.13 
-     team "GS Cavernicoles"
+     #team "GS Cavernicoles"
+     team "URSUS"
 
     units length meters
     units compass clino degrees
@@ -119,7 +124,8 @@ endcenterline
 centerline
 
     #date 2022.09.13 
-     team "GS Cavernicoles"
+     #team "GS Cavernicoles"
+     team "URSUS"
 
     units length meters
     units compass clino degrees

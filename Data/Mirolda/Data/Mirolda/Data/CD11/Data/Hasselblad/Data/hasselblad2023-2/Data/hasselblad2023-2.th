@@ -1,12 +1,16 @@
 # 2023.08.30 created by TopoDroid v 6.2.13
 
-survey hasselblad2023-2 -title "haselblad2023-2"
-    # visée directe
+survey hasselblad2023-2 -title "G. Hasselblad, portion remontante (2023)"
+    # visées directes
 
   centerline
     date 2023.08.30 
       team "Xavier/Robert"
       team "Benoît/Urruty"
+    explo-date 1980
+      explo-team "Spéléo-club du/Chablais"
+      explo-team "S.S.S./Genève"
+      explo-team "Thonon/Tauping Club"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -69,8 +73,7 @@ survey hasselblad2023-2 -title "haselblad2023-2"
     BUXR-1 . 12.94 155.1 -32.5
     BUXR-1 . 15.33 319.2 9.8
     extend right
-  # 2 départ en face du point colmaté par calcite
-    BUXR-1 BUXR-2 15.77 319.9 10.5
+    BUXR-1 BUXR-2 15.77 319.9 10.5  # 2 départs en face du point, colmatés par calcite
     # extend auto
     BUXR-2 . 0.14 249.4 2.7
     BUXR-2 . 1.11 251.6 75.2
@@ -125,11 +128,5 @@ survey hasselblad2023-2 -title "haselblad2023-2"
     PTRHABUXR01 . 11.74 339.4 24.7
     PTRHABUXR01 . 19.46 353.3 23.5
   endcenterline
-
-  # input "haselblad2023-2-1p.th2"
-
-  # map m1p -projection plan
-  #   haselblad2023-2-1p
-  # endmap
 
 endsurvey

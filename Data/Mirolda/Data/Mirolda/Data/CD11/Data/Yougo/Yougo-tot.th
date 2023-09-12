@@ -20,7 +20,7 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 
 	input Data/Yougo_p35_pts_noir.th
 		#equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
-		equate PTRCHAPLR10@Yougo_p35_pts_noir 47@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	# ??? pour le 49
+		equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	# ??? pour le 49
 	input Data/Yougo2023-4.th
 		equate PTRY0MKTCLD07@Yougo2023-4 PTRY0MKTCLD07@Yougo_p35_pts_noir
 	input Data/Yougo2023-5.th

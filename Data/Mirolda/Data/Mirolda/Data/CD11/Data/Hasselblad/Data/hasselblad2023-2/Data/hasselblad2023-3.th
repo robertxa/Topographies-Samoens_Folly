@@ -1,12 +1,16 @@
 # 2023.09.01 created by TopoDroid v 6.2.13
 
-survey hasselblad2023-3 -title "hasselblad2023-3"
-    # visée direct 
+survey hasselblad2023-3 -title "G. Hasselblad , portion remontante (2023)"
+    # visées directes 
 
   centerline
     date 2023.08.31 
       team "Charlotte/Honiat" 
       team "Benoît/Urruty"
+    explo-date 1980
+      explo-team "Spéléo-club du/Chablais"
+      explo-team "S.S.S./Genève"
+      explo-team "Thonon/Tauping Club"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -630,19 +634,5 @@ survey hasselblad2023-3 -title "hasselblad2023-3"
     PTRHABUCH4 . 5.62 113.5 0.1
     PTRHABUCH4 . 8.43 125.6 -13.2
   endcenterline
-
-  # input "hasselbad2023-3-1p.th2"
-  # input "hasselbad2023-3-2p.th2"
-  # input "hasselbad2023-3-2s.th2"
-
-  # map m1p -projection plan
-  #   hasselbad2023-3-1p
-  # endmap
-  # map m2p -projection plan
-  #   hasselbad2023-3-2p
-  # endmap
-  # map m2s -projection extended
-  #   hasselbad2023-3-2s
-  # endmap
 
 endsurvey

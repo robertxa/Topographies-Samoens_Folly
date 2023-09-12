@@ -28,9 +28,9 @@ centerline
     #data normal from to fromcount tocount compass clino left right up down	
     # Param Topof 1.000 Deg Vulc Gra 0.0000 Dir,Dir,Dir Inc Std
     # Aval rivière Dragounet
-    flags not duplicate
+    flags duplicate
 
-384	385	68676	69360	142	44	1	1	2	2	#	Déaprt aval ; station PTRRDBF4 						
+384	385	68676	69360	142	44	1	1	2	2	#	Départ aval ; station PTRRDBF4 						
 385	386	69360	70540	99	0	1	1	2	2	#							
 386	387	71740	72049	110	30	1	1	2	2	#							
 387	388	72049	72763	114	14	1	1	2	2	#							
@@ -48,6 +48,8 @@ centerline
 399	400	80507	81258	355	0	1	1	2	2	#							
 400	401	81258	81498	50	25	1	1	2	2	#							
 401	402	81498	81836	255	20	1	1	2	2	#							
+
+flags not duplicate
 
 endcenterline
 

@@ -40,7 +40,13 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	#input Data/TRO/CD11-tot.th
 	# Amont de la rivière Majestueuse, vers le VF3
 	input Data/Amont-Majestueuse/Amont-Majestueuse-tot.th
+		# jonction avec la base du méandre des Trois
+		equate PTRMAXR04@majamonts2023.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
+		# jonction avec les Yougoslaves
+		equate PTRCHAPLR09@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.Yougo PTRCHAPLR09@majamonts2023.Amont-Majestueuse
+		# Vieux TRO de Daniel Colliard
 		equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
+
 	# Amont de la salle de la Confluence:
 	input Data/Amont-Confluence/AmontConfluence-tot.th
 		equate 181@AmontConfluence.AmontConfluence 33@20220913MiroldaXR1.Confluence

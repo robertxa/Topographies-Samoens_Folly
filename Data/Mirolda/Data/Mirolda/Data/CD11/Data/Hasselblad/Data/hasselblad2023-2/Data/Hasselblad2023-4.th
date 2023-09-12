@@ -1,6 +1,6 @@
 # 2023.09.05 created by TopoDroid v 5.1.40
 
-survey hasselblad2023-4 -title "Sommet Hasselblad, direction double S"
+survey hasselblad2023-4 -title "Sommet G. Hasselblad, direction du Double S (2023)"
     # Topo Prune ROCHE, Gael FAUROUX, Alex FAUCHEUX, Camille MAVRIS, Alex P. 
 
   centerline
@@ -10,6 +10,10 @@ survey hasselblad2023-4 -title "Sommet Hasselblad, direction double S"
      team "Alexandre Faucheux"
      team "Gaël Fauroux"
      team "Camille Mavris" 
+    explo-date 1980
+      explo-team "Spéléo-club du/Chablais"
+      explo-team "S.S.S./Genève"
+      explo-team "Thonon/Tauping Club"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -60,7 +64,7 @@ survey hasselblad2023-4 -title "Sommet Hasselblad, direction double S"
     5 . 10.48 152.6 -15.7
     5 . 7.70 164.4 -22.1
     extend vertical
-    5 6 5.87 9.2 47.7 # escalade....
+    5 6 5.87 9.2 47.7 # escalade...
     extend left
     5 7 13.56 252.3 -21.2
     # extend auto

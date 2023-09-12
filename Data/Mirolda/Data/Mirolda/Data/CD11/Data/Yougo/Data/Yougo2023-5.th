@@ -1,12 +1,16 @@
 # 2023.09.04 created by TopoDroid v 6.1.38
 
-survey Yougo2023-5 -title "Yougo2023-5"
-    # Départ au pied du puits, sur le point topo précédent le PTRYOXRAP0?? de la veille
+survey Yougo2023-5 -title "M. Rectiligne de l'Enfoiré (2023)"
+    # Départ au pied du puits, sur le point topo précédent le PTRYOXRAP05 de la veille
 
   centerline
     date 2023.09.04 
      team "Xavier Robert" 
-     team "Lara Danani"
+     team "Lara Dananaï"
+    explo-date 1985
+      explo-team "Spéléo-club du/Chablais"
+      explo-team "S.S.S./Genève"
+      explo-team "Thonon/Tauping Club"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -22,8 +26,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     0 . 9.89 343.5 65.0
     0 . 11.77 346.1 73.6
     extend right
-  # dommet e16, 2af
-    0 1 16.78 334.4 81.1
+    0 1 16.78 334.4 81.1  # Sommet E16, 2 AF
     # extend auto
     1 . 0.93 82.5 1.8
     1 . 5.29 126.7 -1.9
@@ -117,8 +120,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     7 . 3.32 45.6 -59.7
     7 . 3.28 90.4 -58.7
     extend right
-  # etr, eau
-    7 8 11.72 63.5 -57.7
+    7 8 11.72 63.5 -57.7  # étroiture, eau
     6 9 5.04 352.9 -3.1
     # extend auto
     9 . 0.78 91.9 -79.0
@@ -137,8 +139,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     extend left
     9 10 5.51 110.4 18.9
     extend right
-  # bittard, depart m metrique 2,5 m plus bas
-    9 PTRYOLDXR01 4.11 72.8 8.2
+    9 PTRYOLDXR01 4.11 72.8 8.2 # bittard, depart méandre métrique 2,5 m plus bas
     # extend auto
     PTRYOLDXR01 . 0.49 101.9 12.6
     PTRYOLDXR01 . 2.73 107.6 82.2
@@ -186,8 +187,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     13 . 2.86 151.9 59.5
     13 . 3.16 152.9 -42.3
     extend right
-  # double boucle
-    13 14 3.97 306.4 1.5
+    13 14 3.97 306.4 1.5  # double boucle
     # extend auto
     14 . 1.23 95.5 2.6
     14 . 2.95 111.4 47.0
@@ -254,8 +254,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     18 . 12.38 204.9 81.2
     18 . 12.93 277.5 73.5
     extend right
-  # base r6, dep1rt en face pl1fond cf
-    18 PTRYOLDXR02 3.37 328.4 -4.5
+    18 PTRYOLDXR02 3.37 328.4 -4.5  # base R6, départ en face, au plafond, c'est une CF. Bouclage ?
     # extend auto
     PTRYOLDXR02 . 0.61 212.6 -68.0
     PTRYOLDXR02 . 5.61 208.2 3.1
@@ -268,11 +267,9 @@ survey Yougo2023-5 -title "Yougo2023-5"
     PTRYOLDXR02 . 0.88 87.8 6.6
     PTRYOLDXR02 . 2.68 138.3 7.0
     extend left
-  # depart cf
-    PTRYOLDXR02 20 14.99 159.5 61.9
+    PTRYOLDXR02 20 14.99 159.5 61.9 # depart conduite forcée, bouclage ?
     extend vertical
-  # sommet r7
-    PTRYOLDXR02 21 6.60 278.3 54.5
+    PTRYOLDXR02 21 6.60 278.3 54.5  # sommet R7
     # extend auto
     21 . 0.76 5.7 10.4
     21 . 1.79 304.0 -27.4
@@ -283,8 +280,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     21 . 0.21 67.3 -52.6
     21 . 1.51 67.2 -40.9
     extend right
-  # sapuns, somet r2
-    21 22 3.90 299.7 26.6
+    21 22 3.90 299.7 26.6 # sapins d'argile, sommet R2
     # extend auto
     22 . 1.44 50.7 0.5
     22 . 2.68 92.4 -79.0
@@ -298,8 +294,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     22 . 8.15 347.3 28.8
     22 . 4.28 359.8 27.1
     extend right
-  # r4
-    22 23 9.29 357.5 23.9
+    22 23 9.29 357.5 23.9 # R4
     # extend auto
     23 . 0.95 102.8 -0.2
     23 . 2.03 110.8 -75.3
@@ -322,8 +317,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     23 . 2.40 308.3 50.1
     23 . 3.12 36.2 35.3
     extend right
-  # dommet e4
-    23 24 4.26 18.5 44.0
+    23 24 4.26 18.5 44.0  # Sommet E4
     # extend auto
     24 . 3.41 293.5 -80.3
     24 . 0.74 329.2 0.5
@@ -342,8 +336,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     24 . 1.44 111.0 47.3
     24 . 8.78 109.7 42.2
     extend left
-  # faille
-    24 25 5.28 238.9 39.8
+    24 25 5.28 238.9 39.8 # faille
     extend right
     24 26 5.08 74.3 2.3
     # extend auto
@@ -358,8 +351,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     26 . 6.18 75.9 -16.0
     26 . 4.56 135.0 52.1
     extend right
-  # puits borgne
-    26 27 16.85 316.6 -72.3
+    26 27 16.85 316.6 -72.3 # puits borgne. Au début de la faille, il y a un puits où les cailloux descendent de 50 - 60 m...
     extend vertical
     26 28 9.86 80.6 2.7
     # extend auto
@@ -428,11 +420,9 @@ survey Yougo2023-5 -title "Yougo2023-5"
     32 . 11.88 290.4 -76.4
     32 . 3.85 235.6 57.8
     extend left
-  # pr
-    32 33 14.69 240.2 76.6
+    32 33 14.69 240.2 76.6  # puits remontant
     extend right
-  # mc
-    32 34 17.13 63.2 -4.4
+    32 34 17.13 63.2 -4.4 # main courante
     # extend auto
     34 . 0.60 358.3 5.8
     34 . 3.14 52.7 11.0
@@ -443,43 +433,41 @@ survey Yougo2023-5 -title "Yougo2023-5"
     34 . 1.46 259.5 10.2
     34 . 4.27 219.3 48.3
     extend right
-  # ptryoldxr03
-    34 35 14.91 68.8 0.2
+    34 PTRYOLDXR03 14.91 68.8 0.2  # 35 =  ptryoldxr03
     # extend auto
-    35 . 1.58 0.4 -72.3
-    35 . 1.28 359.4 11.6
-    35 . 2.84 5.9 44.8
-    35 . 8.61 62.2 62.9
-    35 . 4.84 64.4 35.8
-    35 . 2.09 58.7 11.6
-    35 . 3.27 70.8 -16.6
-    35 . 3.40 79.6 17.7
-    35 . 1.06 104.0 20.5
-    35 . 8.44 62.9 62.7
-    35 . 2.37 268.2 -55.8
-    35 . 12.76 257.8 -37.1
-    35 . 2.48 226.2 -21.2
-    35 . 3.59 288.7 7.1
-    35 . 3.47 278.4 -19.6
-    35 . 2.90 292.4 -30.9
-    35 . 3.03 298.5 -25.1
-    35 . 4.57 243.2 45.2
-    35 . 5.29 241.5 0.7
-    35 . 9.87 242.4 1.3
-    35 . 4.01 251.3 -4.0
-    35 . 3.17 311.4 -1.3
-    35 . 6.13 247.2 75.0
-    35 . 7.88 63.6 70.7
-    35 . 7.27 231.6 85.6
-    35 . 13.56 154.6 72.3
-    35 . 19.66 131.8 75.6
-    35 . 18.68 152.6 78.7
-    35 . 13.84 168.5 77.3
+    PTRYOLDXR03 . 1.58 0.4 -72.3
+    PTRYOLDXR03 . 1.28 359.4 11.6
+    PTRYOLDXR03 . 2.84 5.9 44.8
+    PTRYOLDXR03 . 8.61 62.2 62.9
+    PTRYOLDXR03 . 4.84 64.4 35.8
+    PTRYOLDXR03 . 2.09 58.7 11.6
+    PTRYOLDXR03 . 3.27 70.8 -16.6
+    PTRYOLDXR03 . 3.40 79.6 17.7
+    PTRYOLDXR03 . 1.06 104.0 20.5
+    PTRYOLDXR03 . 8.44 62.9 62.7
+    PTRYOLDXR03 . 2.37 268.2 -55.8
+    PTRYOLDXR03 . 12.76 257.8 -37.1
+    PTRYOLDXR03 . 2.48 226.2 -21.2
+    PTRYOLDXR03 . 3.59 288.7 7.1
+    PTRYOLDXR03 . 3.47 278.4 -19.6
+    PTRYOLDXR03 . 2.90 292.4 -30.9
+    PTRYOLDXR03 . 3.03 298.5 -25.1
+    PTRYOLDXR03 . 4.57 243.2 45.2
+    PTRYOLDXR03 . 5.29 241.5 0.7
+    PTRYOLDXR03 . 9.87 242.4 1.3
+    PTRYOLDXR03 . 4.01 251.3 -4.0
+    PTRYOLDXR03 . 3.17 311.4 -1.3
+    PTRYOLDXR03 . 6.13 247.2 75.0
+    PTRYOLDXR03 . 7.88 63.6 70.7
+    PTRYOLDXR03 . 7.27 231.6 85.6
+    PTRYOLDXR03 . 13.56 154.6 72.3
+    PTRYOLDXR03 . 19.66 131.8 75.6
+    PTRYOLDXR03 . 18.68 152.6 78.7
+    PTRYOLDXR03 . 13.84 168.5 77.3
     extend left
-  # e30
-    35 36 28.45 151.2 77.9
+    PTRYOLDXR03 36 28.45 151.2 77.9 # E30
     extend right
-    35 37 3.28 309.7 -1.9
+    PTRYOLDXR03 37 3.28 309.7 -1.9
     # extend auto
     37 . 1.34 66.9 -72.7
     37 . 7.68 59.3 -47.3
@@ -495,8 +483,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     37 . 1.87 184.9 -5.9
     37 . 4.99 198.1 -55.4
     extend right
-  # mc
-    37 38 13.65 69.0 -1.9
+    37 38 13.65 69.0 -1.9 # main courante
     # extend auto
     38 . 1.22 161.4 -2.6
     38 . 7.99 71.5 -67.7
@@ -544,7 +531,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     40 . 2.50 281.6 -0.9
     40 . 2.16 274.5 -38.4
     extend right
-    40 PTRYOLDXR04 6.99 73.8 2.6
+    40 PTRYOLDXR04 6.99 73.8 2.6  # 41 = PTRYOLDXR04
     # extend auto
     PTRYOLDXR04 . 0.85 341.5 1.2
     PTRYOLDXR04 . 1.88 115.3 -72.9
@@ -577,11 +564,9 @@ survey Yougo2023-5 -title "Yougo2023-5"
     42 . 6.48 233.7 70.6
     42 . 2.91 262.9 34.1
     extend vertical
-  # meandre, eau
-    42 43 7.55 261.8 52.9
+    42 43 7.55 261.8 52.9 # méandre, eau
     extend right
-  # base p6, 4af
-    PTRYOLDXR04 44 6.97 78.9 -52.4
+    PTRYOLDXR04 44 6.97 78.9 -52.4  # base P6, 4 AF
     # extend auto
     44 . 1.13 356.0 1.6
     44 . 1.23 345.9 -77.7
@@ -598,8 +583,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     44 . 16.78 37.2 82.0
     44 . 16.64 66.9 58.1
     extend right
-  # salle faille, pr, blocs au sol
-    44 PTRYOLDXR05 4.24 47.1 11.5
+    44 PTRYOLDXR05 4.24 47.1 11.5 # Salle dans la faille, puits remontant (25 + 25 m ?), blocs au sol
     # extend auto
     PTRYOLDXR05 . 1.55 171.1 -78.9
     PTRYOLDXR05 . 2.01 145.8 -0.5
@@ -624,17 +608,7 @@ survey Yougo2023-5 -title "Yougo2023-5"
     PTRYOLDXR05 . 13.49 81.2 28.9
     PTRYOLDXR05 . 19.65 81.1 29.2
     extend ignore
-    PTRYOLDXR05 45 19.64 81.2 29.1
+    PTRYOLDXR05 45 19.64 81.2 29.1 # Visée dans la suite de la faille
   endcenterline
-
-  # input "Yougo2023-5-1p.th2"
-  # input "Yougo2023-5-1s.th2"
-
-  # map m1p -projection plan
-  #   Yougo2023-5-1p
-  # endmap
-  # map m1s -projection extended
-  #   Yougo2023-5-1s
-  # endmap
 
 endsurvey
