@@ -27,6 +27,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Galerie hasselblad
 	input Data/Hasselblad/hasselblad-tot.th
 		equate PTRYOEPAP05@hasselblad2023-1.Hasselblad PTRYOEPAP05@Yougo-Aval.Yougo-Aval
+		join SP-Hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
 
 	# Galerie de l'Ardèche
 	input Data/Ardeche/Ardeche-tot.th
@@ -90,7 +91,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Jonction au niveau de -370 m
 	join SC-Intrepide-3@Confluence SC-400-1@500
 
-	
+
 	# Import des maps, plan et coupe
 	input CD11-maps.th
  

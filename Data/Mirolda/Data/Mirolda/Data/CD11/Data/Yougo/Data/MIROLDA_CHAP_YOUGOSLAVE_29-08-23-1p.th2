@@ -4,7 +4,7 @@ encoding utf-8
 
 # 2023.09.01 created by TopoDroid v. 5.1.40
 
-scrap MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1p -projection plan -scale [0 0 9.8425 0 0 0 1 0 m]
+scrap SP_YOUGOSLAVE_29-08-23-1p -projection plan -station-names "" "@MIROLDA_CHAP_YOUGOSLAVE_29-08-23" -scale [0 0 9.8425 0 0 0 1 0 m]
 
 line wall
   45.68 -26.80
@@ -1417,7 +1417,7 @@ line rock-border -close on
   796.47 718.88
 endline
 
-point 795.14 721.01 label -text "PTR CHAP 04" -scale xs
+point 795.14 721.01 label -text "PTRCHAP04" -scale xs
 
 line wall
   722.15 716.79
@@ -1620,7 +1620,7 @@ line wall
   616.84 700.08
 endline
 
-point 47.60 -50.86 label -text "PTR APXRLR 2022"
+point 47.60 -50.86 label -text "PTRAPXRLR2022"
 
 
 line u:splay -visibility off
@@ -2760,7 +2760,7 @@ line u:splay -visibility off
   601.17 566.46
 endline
 
-point 49.21 -59.06 station -name "0"
+point 49.21 -59.06 station -name "PTRYOLRAP06"
 point 92.99 -64.17 station -name "1"
 point 113.54 -83.82 station -name "2"
 point 141.81 -67.07 station -name "3"
@@ -2775,12 +2775,12 @@ point 414.69 -46.74 station -name "11"
 point 428.61 -21.72 station -name "12"
 point 449.71 -59.15 station -name "13"
 point 482.08 -58.09 station -name "14"
-point 518.38 -105.05 station -name "15"
+point 518.38 -105.05 station -name "PTRCHAP01"
 point 591.61 -124.15 station -name "16"
 point 570.82 -38.66 station -name "17"
 point 590.91 -0.41 station -name "18"
 point 609.04 16.37 station -name "19"
-point 600.14 99.19 station -name "20"
+point 600.14 99.19 station -name "PTRCHAP02"
 point 553.36 84.19 station -name "21"
 point 551.00 61.90 station -name "22"
 point 529.93 84.17 station -name "23"
@@ -2796,7 +2796,7 @@ point 378.45 -32.47 station -name "32"
 point 355.83 -45.32 station -name "33"
 point 321.49 -42.52 station -name "34"
 point 285.00 -43.67 station -name "35"
-point 281.70 -58.09 station -name "36"
+point 281.70 -58.09 station -name "PTRCHAP03"
 point 309.14 -65.36 station -name "37"
 point 289.53 -72.66 station -name "38"
 point 239.35 -108.13 station -name "39"
@@ -2812,14 +2812,15 @@ point 627.11 698.56 station -name "49"
 point 702.66 723.60 station -name "50"
 point 742.07 726.04 station -name "51"
 point 774.62 699.51 station -name "52"
-point 795.56 718.66 station -name "53"
+point 795.56 718.66 station -name "PTRCHAP04"
 point 642.72 604.26 station -name "54"
 point 617.91 642.42 station -name "55"
 point 608.62 567.74 station -name "57"
 
-
 endscrap
-scrap MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1p1 -projection plan -scale [0 0 9.8425 0 0 0 1 0 m]
+
+
+scrap SP_YOUGOSLAVE_29-08-23-1p1 -projection plan -station-names "" "@MIROLDA_CHAP_YOUGOSLAVE_29-08-23" -scale [0 0 9.8425 0 0 0 1 0 m]
 
 line wall
   293.60 -38.11
@@ -2897,7 +2898,7 @@ endline
 
 point 300.82 -72.79 continuation
 
-point 280.70 -56.90 label -text "PTR CHAP 03" -scale xs
+point 280.70 -56.90 label -text "PTRCHAP03" -scale xs
 
 line wall
   269.69 -95.06
@@ -3088,7 +3089,7 @@ point 261.61 -83.84 station -name "7"
 point 288.94 -47.94 station -name "8"
 point 321.49 -42.52 station -name "34"
 point 285.00 -43.67 station -name "35"
-point 281.70 -58.09 station -name "36"
+point 281.70 -58.09 station -name "PTRCHAP03"
 point 309.14 -65.36 station -name "37"
 point 289.53 -72.66 station -name "38"
 point 239.35 -108.13 station -name "39"

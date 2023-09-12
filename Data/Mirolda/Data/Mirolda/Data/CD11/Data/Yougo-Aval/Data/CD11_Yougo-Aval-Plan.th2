@@ -113,7 +113,7 @@ point 457.79 227.40400000000005 station -name YO31
 
 point 184.25 198.25 station-name -scale xs
 
-point 101.5 160.25 station-name -scale xs
+point 122.5 79.25 station-name -scale xs
 
 point 284.75 141.0 water-flow -orientation 248.4
 
@@ -124,8 +124,6 @@ point 184.0 123.25 air-draught -orientation 220.2
 point 251.0 221.0 label -text "P? Affluent"
 
 point 241.25 109.25 height -value [-10 m]
-
-point 109.5 98.75 height -value [-30 m]
 
 line pit -reverse on
   244.75 158.5
@@ -147,16 +145,9 @@ line pit -reverse on
   smooth off
 endline
 
-line pit -reverse on
-  115.75 148.25
-  115.75 148.25 118.5 142.0 116.75 133.25
-  115.0 124.5 110.25 112.0 108.25 111.0
-  smooth off
-endline
-
 line wall
-  109.0 144.75
-  116.0 134.5 128.0 135.0 135.25 134.0
+  124.0 136.0
+  124.5 135.0 128.0 135.0 135.25 134.0
   142.5 133.0 144.5 130.75 152.0 136.0
   159.5 141.25 157.25 144.0 167.5 154.25
   177.75 164.5 172.0 160.5 181.0 166.25
@@ -192,9 +183,7 @@ line wall -reverse on
   189.0 147.0 181.0 136.25 179.0 134.25
   177.0 132.25 180.0 129.75 169.75 123.0
   159.5 116.25 160.25 116.0 153.75 115.75
-  147.25 115.5 133.25 120.75 129.0 122.5
-  124.75 124.25 117.75 131.25 102.0 123.5
-  smooth off
+  147.25 115.5 135.2 114.87 131.0 113.0
 endline
 
 line wall
@@ -476,8 +465,8 @@ line wall -subtype invisible
 endline
 
 line wall -subtype invisible
-  109.0 144.75
-  109.0 144.75 101.5 134.5 102.0 123.5
+  124.0 136.0
+  124.0 136.0 130.5 124.0 131.0 113.0
   smooth off
 endline
 

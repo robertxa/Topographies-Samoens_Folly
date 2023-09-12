@@ -239,12 +239,12 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Hasselblad-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Hasselblad-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Hasselblad-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Hasselblad-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Hasselblad-plan-tot@Hasselblad
-select MC-Hasselblad-coupe-tot@Hasselblad
+select MP-Hasselblad@Hasselblad
+select MC-Hasselblad@Hasselblad
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

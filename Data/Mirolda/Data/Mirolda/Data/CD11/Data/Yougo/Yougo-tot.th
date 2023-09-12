@@ -7,19 +7,27 @@ encoding  utf-8
 survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/Mirolda_2022_09_13_b.th
+		input Data/Yougo2022.th2
 	input Data/cabane2023.th
-		#equate PTRYOLRAP03@cabane2023 PTRYOLEAP03@Yougo
+		##equate PTRYOLRAP03@cabane2023 PTRYOLEAP03@Yougo
 		equate PTRYOLRAP03@cabane2023 14@Yougo
+		input Data/Cabane.th2
+			join SP-Cabane-2 SP-Yougo-1
+			join SP-Cabane-1 SP-Yougo-1
 	input Data/cabane2023-2.th
 		equate PTRYOLRAP01@cabane2023-2 PTRYOLRAP02@Yougo
 	
 	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23.th
 		equate PTRYOLRAP06@MIROLDA_CHAP_YOUGOSLAVE_29-08-23 2.8@Yougo
+		input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1p.th2
+			#join SP_YOUGOSLAVE_29-08-23-1p SP-Yougo-1	# Revoir le dessin...
 	input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.th
-		equate 0@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	PTRCHAP04@MIROLDA_CHAP_YOUGOSLAVE_29-08-23
+		equate PTRCHAP04@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	PTRCHAP04@MIROLDA_CHAP_YOUGOSLAVE_29-08-23
+		input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p.th2
+			#join ?? SP_YOUGOSLAVE_29-08-23-1p	# Revoir le dessin...
 
 	input Data/Yougo_p35_pts_noir.th
-		#equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
+		##equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
 		equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	# ??? pour le 49
 	input Data/Yougo2023-4.th
 		equate PTRY0MKTCLD07@Yougo2023-4 PTRY0MKTCLD07@Yougo_p35_pts_noir
@@ -31,10 +39,11 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 		##equate 64@CD11-Affluents 6@Yougo
 	
 	## Import du dessin en plan
-	input Data/Yougo2022.th2
-	input Data/Cabane.th2
-		join SP-Cabane-2 SP-Yougo-1
-		join SP-Cabane-1 SP-Yougo-1
+	
+	
+	
+	
+
 
 	# Import du dessin en coupe
 	input Data/Yougo-coupe.th2

@@ -9,19 +9,23 @@ survey Hasselblad -title "Gouffre Mirolda - Galerie Hasselblad"
 	#input Data/Mirolda_2022_09_13_b.th
 	input Data/hasselblad2023-1.th
 	input Data/hasselblad2023-2/hasselblad2023-2-tot.th
-		equate PTRJCXRHA01@hasselblad2023-2.haselblad2023-2 PTRJCXRHA01@hasselblad2023-1
+		equate PTRJCXRHA01@hasselblad2023-2.Hasselblad2023-2 PTRJCXRHA01@hasselblad2023-1
+	# A priori, les deux lignes ci-dessous seront à enlever par la suite. A voir où le double S sera dessiné
+	#input Data/hasselblad2023-3/hasselblad2023-3-tot.th
+	#	equate PTRHABUCH04@Hasselblad2023-3.Hasselblad2023-3 PTRHABUCH04@hasselblad2023-2.Hasselblad2023-2
 
 	#	equate 733@VieuxTRO PTRYOLRAP04@Hasselblad
 		#equate 64@CD11-Affluents 6@Hasselblad
 	
 	# Import du dessin en plan
-	#input Data/Hasselblad2022.th2
+	input Data/Hasselblad2023-1.th2
+		join SP-Hasselblad-1 SP-hasselblad2023-3-2@Hasselblad2023-2
 
 	# Import du dessin en coupe
 	#input Data/Hasselblad-coupe.th2
 
 	# Import des maps
-	#input Hasselblad-maps.th
+	input Hasselblad-maps.th
  
  endsurvey
  

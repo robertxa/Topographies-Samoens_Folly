@@ -15,16 +15,16 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     units compass clino degrees
     data normal from to length compass clino
     # extend auto
-    0 . 2.98 143.1 12.0 # PTRCHAP04
-    0 . 3.45 218.9 5.9
-    0 . 1.50 157.0 86.3
-    0 . 0.18 229.2 82.2
-    0 . 1.05 347.8 81.8
-    0 . 0.73 188.2 -78.7
-    0 . 0.16 151.6 -18.8
-    0 . 0.16 155.5 -19.0
+    PTRCHAP04 . 2.98 143.1 12.0 # 0 = PTRCHAP04
+    PTRCHAP04 . 3.45 218.9 5.9
+    PTRCHAP04 . 1.50 157.0 86.3
+    PTRCHAP04 . 0.18 229.2 82.2
+    PTRCHAP04 . 1.05 347.8 81.8
+    PTRCHAP04 . 0.73 188.2 -78.7
+    PTRCHAP04 . 0.16 151.6 -18.8
+    PTRCHAP04 . 0.16 155.5 -19.0
     extend right
-    0 1 10.44 149.4 -19.9
+    PTRCHAP04 1 10.44 149.4 -19.9
     # extend auto
     1 . 10.46 152.0 -19.8
     1 . 2.74 62.6 27.9
@@ -44,16 +44,16 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     extend right
     2 3 10.96 137.9 -19.8
     # extend auto
-    0 . 1.04 333.7 27.4
-    0 . 2.91 144.1 -0.6
-    0 . 1.43 75.4 79.3
-    0 . 1.08 189.2 -84.2
-    0 . 2.54 277.2 13.7
-    0 . 4.38 230.4 3.5
-    0 . 3.02 135.9 9.2
-    0 . 4.37 99.6 19.7
+    PTRCHAP04 . 1.04 333.7 27.4
+    PTRCHAP04 . 2.91 144.1 -0.6
+    PTRCHAP04 . 1.43 75.4 79.3
+    PTRCHAP04 . 1.08 189.2 -84.2
+    PTRCHAP04 . 2.54 277.2 13.7
+    PTRCHAP04 . 4.38 230.4 3.5
+    PTRCHAP04 . 3.02 135.9 9.2
+    PTRCHAP04 . 4.37 99.6 19.7
     extend right
-    0 4 6.42 113.7 15.0
+    PTRCHAP04 4 6.42 113.7 15.0
     # extend auto
     4 . 1.03 2.8 27.8
     4 . 2.04 177.2 -9.4
@@ -150,7 +150,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     13 . 2.05 271.1 1.4
     extend right
     13 14 10.19 158.7 -12.6
-    11 15 10.96 88.7 27.9
+    PTRCHAPLR05 15 10.96 88.7 27.9
     # extend auto
     15 . 0.73 134.9 -34.2
     15 . 2.80 15.8 9.5
