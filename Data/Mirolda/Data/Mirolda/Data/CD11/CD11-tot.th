@@ -32,11 +32,10 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	input Data/Ardeche/Ardeche-tot.th
 		equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.Ardeche
 	
-	# Anciennes Données topos des Cavernicoles
+	# Anciennes Données topos des Cavernicoles mises au format Therion
 	#	Il faudra mettre à jour ce fichier topo, 
 	#	en indiquant à chaque fois les visées qui seront dupliquées par notre topo 
 	#	au fur et à mesure de l'avancement !
-	#TOUTE LA TOPO DES CAVERNICOLES
 	#input Data/TRO/CD11-tot.th
 	# Amont de la rivière Majestueuse, vers le VF3
 	input Data/Amont-Majestueuse/Amont-Majestueuse-tot.th
@@ -44,7 +43,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		equate PTRMAXR04@majamonts2023.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
 		# jonction avec les Yougoslaves
 		equate PTRCHAPLR09@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.Yougo PTRCHAPLR09@majamonts2023.Amont-Majestueuse
-		# Vieux TRO de Daniel Colliard
+		# Vieux TRO
 		equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
 
 	# Amont de la salle de la Confluence:
@@ -91,6 +90,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Jonction au niveau de -370 m
 	join SC-Intrepide-3@Confluence SC-400-1@500
 
+	
 	# Import des maps, plan et coupe
 	input CD11-maps.th
  

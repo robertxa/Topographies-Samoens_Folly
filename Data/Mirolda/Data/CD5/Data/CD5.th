@@ -1,11 +1,15 @@
 # 2023.09.03 created by TopoDroid v 5.1.40
 
+# Copyright (C) 2023 Collectif Mirolda <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
 survey CD5 -title "CD5" -entrance "CD5"
 
   centerline
 
     cs lat-long
-    fix CD5 46.08943  6.76999 1910  # Altitude à réviser, coordonnées levées le 01/09/2023 par Alex Pont
+    fix CD5 46.08943  6.76999 1920  # Altitude à réviser, coordonnées levées le 01/09/2023 par Alex Pont
 
     station CD5 "CD5" entrance
 
@@ -357,7 +361,7 @@ survey CD5 -title "CD5" -entrance "CD5"
     44 . 0.78 146.6 20.3
     44 . 5.35 334.4 76.0
     44 . 1.84 320.7 -78.8
-    extend left
+    extend right
     43 47 7.92 327.6 11.8
     # extend auto
     45 . 0.76 225.7 -10.1
