@@ -170,22 +170,13 @@ point 501.25 1225.75 traverse
 
 point 492.5 1315.25 traverse
 
-point 598.25 1519.0 label -text "vers F123 - Amonts"
-
-point 640.25 1426.25 label -text "<center>arrivée de<br>La Majestueuse"
+point 732.5 1442.25 label -text "<center>arrivée de<br>La Majestueuse"
 
 point 492.25 971.5 continuation -attr Code E -attr Cavite "CD11" -text "Arrivée d'eau, méandre étroit à voir"
 
 point 512.25 993.0 continuation -attr Code E -attr Cavite "CD11" -text "Arrivée d'eau, départ en hauteur ?"
 
-line arrow
-  572.75 1467.5
-  591.75 1501.75
-endline
-
 point 488.75 1356.25 continuation -attr Code E -attr Cavite "CD11" -text "Départ après E7"
-
-point 580.5 1458.25 water-flow -orientation 205.2
 
 point 479.75 1425.0 water-flow -orientation 152.7
 
@@ -323,13 +314,6 @@ line water-flow
   547.25 1002.0 552.0 989.75 553.25 987.0
   554.5 984.25 556.75 976.5 556.75 968.0
   556.75 959.5 554.25 923.5 554.25 923.5
-  smooth off
-endline
-
-line water-flow
-  573.75 1446.75
-  573.75 1446.75 562.5 1422.5 561.0 1418.0
-  559.5 1413.5 556.0 1410.0 556.0 1410.0
   smooth off
 endline
 
@@ -483,22 +467,8 @@ line pit
 endline
 
 line pit
-  574.75 1424.5
-  574.75 1424.5 571.0 1435.25 564.25 1434.75
-  557.5 1434.25 551.75 1434.25 547.25 1432.5
-  smooth off
-endline
-
-line pit
   562.5 1397.0
   562.5 1397.0 555.5 1411.75 542.75 1412.75
-  smooth off
-endline
-
-line wall
-  569.25 1446.0
-  569.25 1446.0 565.25 1427.75 563.75 1431.75
-  562.25 1435.75 562.5 1449.0 562.5 1449.0
   smooth off
 endline
 
@@ -509,10 +479,7 @@ line wall
   528.25 1371.5 517.25 1378.75 526.5 1377.75
   535.75 1376.75 545.75 1381.0 551.75 1384.5
   altitude .
-  557.75 1388.0 561.75 1406.5 564.25 1412.75
-  566.75 1419.0 573.5 1435.0 573.5 1435.0
-  smooth off
-  576.25 1442.25
+  557.75 1388.0 557.75 1397.5 560.25 1403.75
 endline
 
 line label -text "rivière La Majestueuse"
@@ -647,9 +614,8 @@ line wall
 endline
 
 line wall
-  557.5 1453.75
-  557.5 1453.75 551.0 1435.5 549.5 1430.0
-  548.0 1424.5 551.5 1410.0 546.0 1409.75
+  549.25 1413.25
+  547.75 1407.75 551.5 1410.0 546.0 1409.75
   540.5 1409.5 536.25 1410.75 529.5 1408.25
   522.75 1405.75 515.25 1401.25 513.75 1397.5
   512.25 1393.75 507.75 1386.75 506.0 1391.25

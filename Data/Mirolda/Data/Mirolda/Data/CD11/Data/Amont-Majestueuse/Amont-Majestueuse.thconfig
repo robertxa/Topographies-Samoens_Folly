@@ -114,18 +114,18 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 -100 nw
+  map-header 0 0 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
 
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
@@ -142,8 +142,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -208,16 +208,16 @@ layout layout-coupe
   doc-title "CD11 coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 -50 nw
+  map-header 0 0 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende. Voir layout ci-dessus.
-  legend on
+  legend off
 
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 19 cm
+  legend-width 17 cm
 
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
@@ -259,12 +259,12 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Amont-Majestueuse-map.xvi
+export map -fmt xvi -layout xviexport -o Data/Amont-Majestueuse-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Amont-Majestueuse-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Amont-Majestueuse-plan-tot@Amont-Majestueuse
-select MC-Amont-Majestueuse-coupe-tot@Amont-Majestueuse
+select MP-Amont-Majestueuse@Amont-Majestueuse
+select MC-Amont-Majestueuse@Amont-Majestueuse
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

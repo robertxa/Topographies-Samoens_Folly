@@ -7,6 +7,8 @@ survey majamonts2023 -title "La Majestueuse, amonts (topo 2023)"
     date 2023.09.06 
      team "Xavier Robert" 
      team "Lara Dananaï"
+    explo-date 1980
+      explo-team "Spéléo-Club de/Lyon (SCL)"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
@@ -86,7 +88,7 @@ survey majamonts2023 -title "La Majestueuse, amonts (topo 2023)"
     PTRJMLDXR01 . 2.48 107.7 -41.4
     PTRJMLDXR01 . 7.67 92.0 76.8
     extend ignore
-    PTRJMLDXR01 4b 7.88 96.0 76.8 # départ petit méandreen hauteur, E7, actif en crue
+    PTRJMLDXR01 4b 7.88 96.0 76.8 # départ petit méandre en hauteur, E7, actif en crue
     extend left
     PTRJMLDXR01 5 5.79 179.8 -10.0  # joint de strate en dessous
     # extend auto
@@ -381,7 +383,7 @@ survey majamonts2023 -title "La Majestueuse, amonts (topo 2023)"
     PTRJMLDXR03 . 8.81 349.4 55.6
     
     extend left
-    PTRJMLDXR03 23 2.72 227.4 50.9  # E2, monté du seuil pour rejoindre le méandre qui descendrait jusqu'à -300 m
+    PTRJMLDXR03 23 2.72 227.4 50.9  # E2, montée du seuil pour rejoindre le méandre qui descendrait jusqu'à -300 m
     # extend auto
     23 . 3.46 47.1 -77.1
     23 . 2.16 89.4 -73.3
@@ -779,7 +781,8 @@ survey majamonts2023 -title "La Majestueuse, amonts (topo 2023)"
     PTRJMLDXR06 51 1.21 2.3 18.2
     extend vertical
     51 52 10.04 91.3 14.8 # etroiture, conccrétions
-    51 53 10.55 268.3 -14.2
+    PTRJMLDXR06 53 10.55 268.3 -14.2
+    #51 53 10.55 268.3 -14.2
     # extend auto
     53 . 0.88 186.0 7.9
     53 . 2.59 261.3 -52.9
@@ -854,7 +857,9 @@ survey majamonts2023 -title "La Majestueuse, amonts (topo 2023)"
     PTRJMLDXR07 56b 7.44 15.7 27.4
     extend right
     PTRJMLDXR07 57 4.88 48.3 18.8
-    57 58 1.15 6.7 20.2
+    
+    PTRJMLDXR07 58 1.15 6.7 20.2
+    #57 58 1.15 6.7 20.2
     58 59 9.06 302.2 2.4
     extend left
     PTRJMLDXR07 60 3.81 182.0 -6.7
