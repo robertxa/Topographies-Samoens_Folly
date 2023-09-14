@@ -310,7 +310,7 @@ export model -o Outputs/-800.lox
 #export cave-list -o Outputs/mirolda_-800.html  
 
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/mirolda_-800 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/mirolda_-800 -layout my_layout
   
 # Export des fichiers kml
 #export map -proj plan -fmt kml -o Outputs/mirolda_-800.kml -layout my_layout

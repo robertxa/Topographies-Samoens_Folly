@@ -13,10 +13,8 @@ scrap SP-800-1 -projection plan -station-names "" "@mirolda_-800" -author 2023 "
 point 218.14 -242.07 stalagmite
 
 line wall
-  43.37 -24.2
-  66.23 -61.07 78.9 -101.78 86.91 -144.13
-  89.65 -158.64 89.51 -173.7 93.32 -187.96
-  106.89 -238.73 111.99 -213.93 119.89 -265.3
+  94.0 -187.0
+  107.57 -237.77 111.99 -213.93 119.89 -265.3
   124.49 -295.2 118.95 -323.46 119.57 -353.42
   119.86 -367.49 122.49 -381.43 123.16 -395.49
   125.22 -439.07 120.16 -481.85 115.33 -525.06
@@ -28,11 +26,7 @@ line wall
   321.07 -491.75 339.94 -445.96 340.09 -397.82
   smooth off
   335.2 -361.05 332.23 -349.1 332.69 -312.15
-  333.45 -250.87 339.95 -286.27 329.99 -226.43
-  317.92 -153.89 326.62 -212.42 306.89 -143.2
-  303.15 -130.08 301.2 -116.51 298.36 -103.16
-  294.21 -89.02 290.05 -74.89 285.9 -60.75
-  smooth off
+  333.45 -250.87 335.96 -271.84 326.0 -212.0
 endline
 
 point -114.0 -2132.0 height -value [-20 m]
@@ -279,7 +273,7 @@ point 91.32 -2015.27 stalagmite
 
 point 52.54 -1997.94 stalactite
 
-point -209.07 -1972.3 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Criou" -attr CA "NA" -text "P20 à vérifier"
+point -344.07 -2020.3 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Criou" -attr CA "NA" -text "P20 à vérifier"
 
 line wall
   71.82 -2461.17
@@ -1269,15 +1263,13 @@ area water
 endarea
 
 line wall
-  1565.94 -9598.31
-  1546.14 -9581.4 1493.92 -9618.65 1479.74 -9599.74
-  1471.52 -9588.78 1482.42 -9537.62 1483.58 -9522.98
+  1488.0 -9604.0
+  1479.78 -9593.04 1482.42 -9537.62 1483.58 -9522.98
   smooth off
 endline
 
 line wall -reverse on
-  1467.52 -9666.32
-  1463.16 -9665.82 1458.55 -9666.35 1454.45 -9664.81
+  1454.45 -9664.81
   1452.2 -9663.96 1409.03 -9635.81 1407.74 -9634.19
   1404.96 -9630.7 1403.87 -9626.14 1401.94 -9622.12
   smooth off
@@ -1285,29 +1277,7 @@ endline
 
 point 1478.62 -9614.49 wall-calcite
 
-point 1533.63 -9605.06 wall-calcite
-
-line border -id l267-1577--9661 -close on -subtype invisible
-  1514.75 -9620.49
-  1503.99 -9691.41 1583.33 -9689.98 1588.9 -9630.97
-  1593.92 -9577.77 1517.91 -9599.68 1514.75 -9620.49
-endline
-
-area water
-  l267-1577--9661
-endarea
-
-line wall -reverse on
-  1552.83 -9673.4
-  1523.96 -9678.98 1496.01 -9670.15 1467.52 -9666.32
-  smooth off
-endline
-
-line pit
-  1545.0 -9594.0
-  1503.92 -9605.35 1492.72 -9652.29 1534.5 -9674.0
-  smooth off
-endline
+point 1463.63 -9582.06 wall-calcite
 
 line water-flow
   872.5 -8320.5
@@ -1330,7 +1300,7 @@ line water-flow
   smooth off
 endline
 
-point 1306.0 -9698.0 station-name -scale xs -align left
+point 1372.0 -9675.0 station-name -scale xs -align left
 
 point 432.0 -6070.0 station-name -scale xs -align left
 

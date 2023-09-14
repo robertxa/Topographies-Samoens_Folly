@@ -320,7 +320,7 @@ export model -o Outputs/900.lox
 #export cave-list -o Outputs/900.html  
 
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Outputs/900 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/900 -layout my_layout
   
 # Export des fichiers kml
 #export map -proj plan -fmt kml -o Outputs/900.kml -layout my_layout

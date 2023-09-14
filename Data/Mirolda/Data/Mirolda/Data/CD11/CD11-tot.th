@@ -74,7 +74,8 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	input Data/-900/900-tot.th
 		equate PTRBUCHLD4@mirolda_-800.800 PTRBUCHLD4@230906_BMPRGF_CD11.900
 		## Jonction au niveau de -800
-		join SP-900-1@900 SP-800-1@800
+		#join SP-900-1@900 SP-800-1@800
+		join SP-BMPRGF-1@900 SP-800-1@800
 
 	# Aval du CD11
 	input Data/AvalTRO/AvalTRO-tot.th

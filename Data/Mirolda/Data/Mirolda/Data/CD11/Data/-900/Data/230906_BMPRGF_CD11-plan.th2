@@ -1,16 +1,18 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -492.0 -5283.0 11296.0895 33489.3745
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -504.0 -5296.0 11296.0895 33489.3745
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {6955.49 1 1.0} {31786.559999999998 PTRBUCHLD4@230906_BMPRGF_CD11.900} 900-map.xvi 0 {}
 
 # 2023.09.07 created by TopoDroid v. 6.2.13
 
+
+
+
 scrap SP-BMPRGF-1 -projection plan -station-names "" "@230906_BMPRGF_CD11" -author 2023 "Barnabé Maurice" -author 2023 "Benoît Urruty" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 39.3701 0 0 0 1 0 m]
 
 line wall
-  -6.94 -125.82
-  -2.22 -127.31 2.73 -128.21 7.22 -130.29
-  25.89 -138.94 51.95 -164.3 71.35 -176.44
+  30.0 -144.0
+  48.67 -152.65 51.95 -164.3 71.35 -176.44
   95.44 -191.51 121.01 -203.93 145.9 -217.67
   160.1 -225.5 186.85 -232.53 192.14 -250.25
   195.05 -260.01 188.71 -269.84 187.56 -278.95
@@ -21,23 +23,26 @@ endline
 line pit -reverse on
   294.0 -959.0
   294.0 -959.0 389.0 -935.0 423.0 -949.0
+  smooth off
 endline
 
 point 217.0 -105.0 height -value [-7 m]
 
 line wall
-  25.45 -51.75
-  71.8 -51.86 85.12 -72.04 104.07 -109.57
+  68.0 -83.0
+  96.0 -93.0 96.85 -95.28 104.07 -109.57
   115.8 -132.8 126.74 -156.37 141.29 -177.69
-  148.68 -188.52 153.59 -207.81 168.91 -210.68
-  175.27 -211.87 203.81 -202.31 213.53 -201.05
+  148.68 -188.52 154.68 -200.13 170.0 -203.0
+  176.36 -204.19 203.81 -202.31 213.53 -201.05
   smooth off
 endline
 
+point 1504.0 -5096.0 label -text "Bivouac -900 m"
+
 line pit
-  214.67 -202.82
-  211.99 -209.47 172.81 -210.72 170.39 -212.49
-  161.13 -219.25 175.19 -229.39 179.2 -232.66
+  210.0 -198.0
+  207.32 -204.65 172.42 -201.23 170.0 -203.0
+  160.74 -209.76 175.19 -229.39 179.2 -232.66
   smooth off
 endline
 
@@ -427,7 +432,7 @@ line wall -reverse on -outline in
   -108.71 -4337.73 -104.32 -4308.08 -102.69 -4297.36
   -99.09 -4273.71 -96.41 -4250.11 -96.41 -4226.11
   -96.41 -4210.62 -97.66 -4195.03 -97.98 -4179.55
-  -98.24 -4167.18 -95.1 -4154.84 -93.26 -4142.69
+  -98.24 -4167.18 -94.71 -4158.47 -92.87 -4146.32
   smooth off
 endline
 
@@ -672,54 +677,63 @@ point 588.97 -3800.26 water-flow -orientation 256.6 -scale l
 line slope
   538.0 -4118.0
   538.0 -4118.0 468.0 -4063.0 406.0 -4074.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   487.0 -4211.0
   487.0 -4211.0 414.0 -4130.0 365.0 -4136.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   422.0 -4338.0
   422.0 -4338.0 306.0 -4286.0 269.0 -4298.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   375.0 -4449.0
   375.0 -4449.0 297.0 -4394.0 241.0 -4396.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   331.0 -4514.0
   331.0 -4514.0 229.0 -4427.0 200.0 -4455.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   275.0 -4600.0
   275.0 -4600.0 238.0 -4553.0 191.0 -4555.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   12.0 -4783.0
   12.0 -4783.0 0.0 -4705.0 -26.0 -4691.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   -45.0 -4805.0
   -45.0 -4805.0 -35.0 -4738.0 -71.0 -4718.0
+  smooth off
   l-size 20.0
 endline
 
 line slope
   -104.0 -4815.0
   -104.0 -4815.0 -85.0 -4759.0 -108.0 -4732.0
+  smooth off
   l-size 20.0
 endline
 
@@ -729,6 +743,7 @@ line flowstone
   448.0 -3248.0
   448.0 -3248.0 503.0 -3258.0 504.0 -3274.0
   505.0 -3290.0 489.0 -3322.0 484.0 -3327.0
+  smooth off
 endline
 
 line border
@@ -976,6 +991,7 @@ point 293.0 -1671.0 height -value [-10 m]
 line pit -reverse on
   115.0 -1684.0
   115.0 -1684.0 158.0 -1650.0 190.0 -1663.0
+  smooth off
 endline
 
 point 133.43999999999994 -1612.2700000000004 station -name 17
