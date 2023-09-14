@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -359.0 -9831.0 1721.0 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -492.0 -9824.0 1660.0 148.0
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {195.65999999999985 1 1.0} {-238.36000000000058 PTRMFBF08} -800-map.xvi 0 {}
 
 # 2023.09.03 created by TopoDroid v. 6.2.13
@@ -27,11 +27,17 @@ line wall
   smooth off
   335.2 -361.05 332.23 -349.1 332.69 -312.15
   333.45 -250.87 335.96 -271.84 326.0 -212.0
+  smooth off
 endline
 
 point -114.0 -2132.0 height -value [-20 m]
 
-point 692.0 -1032.0 height -value [-5 m]
+line label -reverse on -text "L'Impétueuse (rivière)"
+  -296.0 -6312.0
+  -296.0 -6312.0 168.0 -9440.0 236.0 -9728.0
+endline
+
+point 692.0 -1032.0 height -value [-12 m]
 
 point -58.0 -384.0 height -value [-3 m]
 
@@ -922,6 +928,12 @@ area water
 endarea
 
 point 742.47 -6365.94 curtain
+
+line label -reverse on -text "m. Semi-Fossile"
+  -216.0 -180.0
+  -216.0 -180.0 -248.0 -1044.0 -240.0 -1204.0
+  -232.0 -1364.0 -236.0 -1760.0 -232.0 -1792.0
+endline
 
 point 730.48 -6278.30 wall-calcite
 

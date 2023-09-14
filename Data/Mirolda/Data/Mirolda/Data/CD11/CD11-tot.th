@@ -27,7 +27,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Galerie hasselblad
 	input Data/Hasselblad/hasselblad-tot.th
 		equate PTRYOEPAP05@hasselblad2023-1.Hasselblad PTRYOEPAP05@Yougo-Aval.Yougo-Aval
-		join SP-Hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
+		join SP-hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
 
 	# Galerie de l'Ardèche
 	input Data/Ardeche/Ardeche-tot.th
@@ -65,7 +65,8 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		join SP-riviere_tonitruante-1@500 SP-800-1@800
 	# Aval de la rivière Dragounet
 	input Data/Aval-Dragounet/Aval-Dragounet-tot.th
-		equate PTRRDBF4@siphon-600.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
+		equate PTRRDBF4@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
+		join SP-Aval-Dragounet-1@Aval-Dragounet SP-riviere_tonitruante-1@500
 	# Aval de la rivière Dragounet, données OLD
 	#input Data/Aval-Dragounet-OLD/Aval-Dragounet-tot.th
 	#	equate 384@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500

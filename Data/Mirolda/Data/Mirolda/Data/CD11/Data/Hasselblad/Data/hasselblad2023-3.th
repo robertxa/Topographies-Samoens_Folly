@@ -1,5 +1,9 @@
 # 2023.09.01 created by TopoDroid v 6.2.13
 
+# Copyright (C) 2023 Collectif Mirolda <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
 survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     # visées directes 
 
@@ -67,7 +71,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH5 . 5.41 177.2 -26.9
     BUCH5 . 2.90 197.6 -1.6
     extend right
-    BUCH5 BUCH6 12.04 348.9 27.0
+    BUCH5 BUCH6 12.04 348.9 27.0  # 2 AF entre Buch5 et Buch6 + 2 AF en BUCH6
     # extend auto
     BUCH6 . 1.94 28.9 48.9
     BUCH6 . 1.99 123.2 40.5
@@ -87,7 +91,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     extend left
     BUCH6 BUCH7 16.93 89.3 21.7
     extend right
-    BUCH6 BUCH8 6.63 299.1 44.7
+    BUCH6 BUCH8 6.63 299.1 44.7 # 1 AF
     # extend auto
     BUCH8 . 2.49 59.9 -8.3
     BUCH8 . 1.06 73.8 15.5
@@ -118,7 +122,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH9 . 1.53 169.5 -42.8
     extend right
     BUCH9 BUCH10 5.40 357.7 -36.6
-    BUCH9 BUCH11 15.77 330.0 26.6
+    BUCH9 BUCH11 15.77 330.0 26.6 # 1 AF avant Buch11
     # extend auto
     BUCH11 . 1.76 261.9 14.2
     BUCH11 . 0.17 237.4 -73.9
@@ -136,7 +140,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH11 . 9.72 17.3 26.5
     BUCH11 . 4.02 3.9 21.2
     extend right
-    BUCH11 BUCH12 15.55 353.1 26.8
+    BUCH11 BUCH12 15.55 353.1 26.8  # 1 AF entre Buch11 et Buch12
     # extend auto
     BUCH12 . 1.35 258.7 -3.8
     BUCH12 . 2.14 265.1 -25.6
@@ -160,7 +164,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH12 . 13.09 340.6 11.5
     BUCH12 . 14.92 340.6 11.5
     extend right
-    BUCH12 PTRHABUCH1 13.10 340.8 11.6
+    BUCH12 PTRHABUCH1 13.10 340.8 11.6  # 2 AF entre Buch12 et PTRHABUCH1
     # extend auto
     PTRHABUCH1 . 2.19 327.4 21.3
     PTRHABUCH1 . 3.48 309.3 13.5
@@ -533,7 +537,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH38 . 2.03 255.7 -8.7
     BUCH38 . 0.38 238.4 -8.2
     extend right
-    BUCH38 BUCH40 8.47 16.3 -5.0
+    BUCH38 BUCH40 8.47 16.3 -5.0  # 1 AF
     # extend auto
     BUCH40 . 0.47 135.1 -6.5
     BUCH40 . 1.37 178.5 -8.9
@@ -616,23 +620,23 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH46 . 11.84 325.1 21.5
     BUCH46 . 19.77 333.5 27.7
     extend right
-    BUCH46 PTRHABUCH4 16.47 333.7 24.0
+    BUCH46 PTRHABUCH04 16.47 333.7 24.0
     # extend auto
-    PTRHABUCH4 . 1.61 22.4 79.6
-    PTRHABUCH4 . 3.81 69.9 54.6
-    PTRHABUCH4 . 5.94 78.6 16.0
-    PTRHABUCH4 . 0.69 272.2 48.5
-    PTRHABUCH4 . 5.49 286.1 55.6
-    PTRHABUCH4 . 2.24 311.6 43.0
-    PTRHABUCH4 . 2.39 340.8 37.5
-    PTRHABUCH4 . 21.77 352.3 29.9
-    PTRHABUCH4 . 13.25 10.4 30.1
-    PTRHABUCH4 . 9.12 26.5 30.3
-    PTRHABUCH4 . 6.75 48.4 28.8
-    PTRHABUCH4 . 2.40 169.6 1.4
-    PTRHABUCH4 . 6.31 99.8 9.0
-    PTRHABUCH4 . 5.62 113.5 0.1
-    PTRHABUCH4 . 8.43 125.6 -13.2
+    PTRHABUCH04 . 1.61 22.4 79.6
+    PTRHABUCH04 . 3.81 69.9 54.6
+    PTRHABUCH04 . 5.94 78.6 16.0
+    PTRHABUCH04 . 0.69 272.2 48.5
+    PTRHABUCH04 . 5.49 286.1 55.6
+    PTRHABUCH04 . 2.24 311.6 43.0
+    PTRHABUCH04 . 2.39 340.8 37.5
+    PTRHABUCH04 . 21.77 352.3 29.9
+    PTRHABUCH04 . 13.25 10.4 30.1
+    PTRHABUCH04 . 9.12 26.5 30.3
+    PTRHABUCH04 . 6.75 48.4 28.8
+    PTRHABUCH04 . 2.40 169.6 1.4
+    PTRHABUCH04 . 6.31 99.8 9.0
+    PTRHABUCH04 . 5.62 113.5 0.1
+    PTRHABUCH04 . 8.43 125.6 -13.2
   endcenterline
 
 endsurvey

@@ -1,20 +1,12 @@
 # 2023.09.03 created by TopoDroid v 6.2.13
 
-# Copyright (C) 2023 Collectif Mirolda <xavier.robert***@***ird.fr>
-# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
-#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
-
-survey Aval-Dragounet -title "Aval-Dragounet"
+survey siphon-600 -title "Aval de la rivière Dragounet, siphon -600 m (2023)"
 
   centerline
     date 2023.09.02 
      team "Théophile Cailhol"
      team "Benoît Urruty"
      team "Charlotte Honiat"
-    explo-date 1980
-      explo-team "Spéléo-Club de/Lyon (SCL)"
-      explo-team "Groupe Spéléo/Cavernicoles" 
-    
     units length meters
     units compass clino degrees
     data normal from to length compass clino

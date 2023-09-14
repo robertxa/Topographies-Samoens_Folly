@@ -1,25 +1,35 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey Hasselblad -title "Gouffre Mirolda - Galerie Hasselblad"
 	# Pour importer les différentes données de différents fichiers topos : 
-	#input Data/Mirolda_2022_09_13_b.th
+	
 	input Data/hasselblad2023-1.th
-	input Data/hasselblad2023-2/hasselblad2023-2-tot.th
-		equate PTRJCXRHA01@hasselblad2023-2.Hasselblad2023-2 PTRJCXRHA01@hasselblad2023-1
+	
+	input Data/hasselblad2023-2.th
+		equate PTRJCXRHA01@hasselblad2023-2 PTRJCXRHA01@hasselblad2023-1
+		
 	# A priori, les deux lignes ci-dessous seront à enlever par la suite. A voir où le double S sera dessiné
-	#input Data/hasselblad2023-3/hasselblad2023-3-tot.th
-	#	equate PTRHABUCH04@Hasselblad2023-3.Hasselblad2023-3 PTRHABUCH04@hasselblad2023-2.Hasselblad2023-2
+	input Data/hasselblad2023-3.th
+		equate PTRHABUXR01@hasselblad2023-2 PTRHABUXR01@hasselblad2023-3
+		
+	input Data/hasselblad2023-4.th
+		equate PTRHABUCH04@hasselblad2023-4 PTRHABUCH04@hasselblad2023-3
 
 	#	equate 733@VieuxTRO PTRYOLRAP04@Hasselblad
-		#equate 64@CD11-Affluents 6@Hasselblad
+		#equate 64PTRHABUCH04@CD11-Affluents 6@Hasselblad
 	
 	# Import du dessin en plan
-	input Data/Hasselblad2023-1.th2
-		join SP-Hasselblad-1 SP-hasselblad2023-3-2@Hasselblad2023-2
+	input Data/hasselblad2023-1.th2
+	
+	input Data/hasselblad2023-3.th2
+		join SP-hasselblad-1 SP-hasselblad2023-3-2
+		
+	input Data/hasselblad2023-4.th2
+		join SP-hasselblad2023-3-1 SP-hasselblad2023-4
 
 	# Import du dessin en coupe
 	#input Data/Hasselblad-coupe.th2

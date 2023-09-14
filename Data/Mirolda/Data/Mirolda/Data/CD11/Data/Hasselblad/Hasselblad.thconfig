@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -108,15 +108,15 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 -60 nw
+  map-header 0 50 nw
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 17 cm
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
@@ -240,7 +240,7 @@ layout layout-coupe
 
 # Export des xvi pour le dessin si besoin
 export map -fmt xvi -layout xviexport -o Data/Hasselblad-map.xvi
-export map -proj extended -layout xviexport -fmt xvi -o Data/Hasselblad-coupe.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/Hasselblad-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Hasselblad@Hasselblad
@@ -248,12 +248,12 @@ select MC-Hasselblad@Hasselblad
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Criou-Hasselblad-2023-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Hasselblad-2022.lox
+ export model -enable all -o Outputs/Hasselblad-2023.lox
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/Hasselblad-2022 -layout my_layout

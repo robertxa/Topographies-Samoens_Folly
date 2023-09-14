@@ -2,7 +2,7 @@ encoding  utf-8
 
 # 1-SOURCES 
 
-source haselblad2023-2-tot.th
+source siphon_-600-tot.th
 
 # Add entrances coordinates
 #input legendes/entrances_coordinates.th
@@ -35,7 +35,7 @@ layout my_layout
    copy langue-fr
       
    # Titre  
-   doc-title "haselblad2023-2"
+   doc-title "siphon_-600"
    # Auteur
    doc-author "Benoît Urruty"
 
@@ -50,7 +50,7 @@ layout my_layout
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 100
+   base-scale 1 200
 
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -154,9 +154,9 @@ layout my_layout
       % This code allows you to define an output map title {cavename} if it happens to be empty
       \edef\temp{\the\cavename}   % cavename from Therion
       \edef\nostring{}            % empty string
-      \ifx\temp\nostring          % haselblad2023-2 if cavename is empty
+      \ifx\temp\nostring          % siphon_-600 if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
-         \cavename={haselblad2023-2} 		
+         \cavename={siphon -600} 		
       \else % if not empty keep the value set by therion, or assign an override cavename here
       \fi
       \newtoks\club \club={GUCEM}
@@ -175,7 +175,7 @@ layout my_layout-coupe
    copy langue-fr
       
    # Titre  
-   doc-title "haselblad2023-2"
+   doc-title "siphon_-600"
    # Auteur
    doc-author "Benoit Urruty"
 
@@ -287,9 +287,9 @@ layout my_layout-coupe
       % This code allows you to define an output map title {cavename} if it happens to be empty
       \edef\temp{\the\cavename}   % cavename from Therion
       \edef\nostring{}            % empty string
-      \ifx\temp\nostring          % haselblad2023-2 if cavename is empty
+      \ifx\temp\nostring          % siphon_-600 if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
-         \cavename={haselblad2023-2} 		
+         \cavename={siphon -600} 		
       \else % if not empty keep the value set by therion, or assign an override cavename here
       \fi
       \newtoks\club \club={GUCEM}
@@ -300,24 +300,24 @@ endlayout
   
 # 3-EXPORTS
 
-export map -fmt xvi -layout xviexport -o Data/haselblad2023-2-map.xvi
-export map -proj extended -layout xviexport -fmt xvi -o Data/haselblad2023-2-coupe.xvi
-export map -proj [elevation 17] -layout xviexport -o Data/haselblad2023-2-coupe_elevation.xvi 
+export map -fmt xvi -layout xviexport -o Data/siphon_-600-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/siphon_-600-coupe.xvi
+export map -proj [elevation 17] -layout xviexport -o Data/siphon_-600-coupe_elevation.xvi 
 
 # Select maps
-  select MP-haselblad2023-2-plan-tot@haselblad2023-2
-  select MC-haselblad2023-2-coupe-tot@haselblad2023-2
+#	select MP-siphon_-600-plan-tot@siphon_-600
+#  select MC-siphon_-600-coupe-tot@siphon_-600
 	 
-export map -projection [elevation 17] -layout my_layout-coupe -o Outputs/haselblad2023-2-coupe_elevation.pdf 
-export map -projection extended -layout my_layout-coupe -o Outputs/haselblad2023-2-coupe.pdf 
-export map -o Outputs/haselblad2023-2-plan.pdf -layout my_layout
+export map -projection [elevation 17] -layout my_layout-coupe -o Outputs/siphon_-600-coupe_elevation.pdf 
+export map -projection extended -layout my_layout-coupe -o Outputs/siphon_-600-coupe.pdf 
+export map -o Outputs/siphon_-600-plan.pdf -layout my_layout
  
-export model -o Outputs/haselblad2023-2.lox
+export model -o Outputs/siphon_-600.lox
 export continuation-list -o Outputs/questions.html
-export cave-list -o Outputs/haselblad2023-2.html  
+export cave-list -o Outputs/siphon_-600.html  
 
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/haselblad2023-2 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/siphon_-600 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/haselblad2023-2.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/siphon_-600.kml -layout my_layout

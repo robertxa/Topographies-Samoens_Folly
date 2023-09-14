@@ -5,11 +5,19 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Hasselblad-P30 -title "Vire Hasselblad"
-	SP-Hasselblad-1
+	SP-hasselblad-1
+endmap
+
+map MP-Hasselblad-haut -title "Gouffre Mirolda - Galerie Hasselblad"
+	SP-hasselblad2023-3-1
+	break
+	SP-hasselblad2023-4
+	break
+	SP-hasselblad2023-3-2
 endmap
 
 map MP-Hasselblad -title "Gouffre Mirolda - Galerie Hasselblad"
-	MP-hasselblad2023-2-plan-tot@Hasselblad2023-2
+	MP-Hasselblad-haut
 	break
 	MP-Hasselblad-P30
 endmap

@@ -33,15 +33,15 @@ encoding  utf-8
 
 # MNT de la zone, avec wrappage des images 
 #   (éditer le fichier Data/DEM_10m-UTM32-Criou.th pour choisir l'image !)
-#source Data/DEM_10m-UTM32-Criou.th
-source Data/DEM_10m-L93-Criou.th
+# source Data/DEM_10m-UTM32-Criou.th
+# source Data/DEM_10m-L93-Criou.th
 
 # source JB/jb-atlas.th
  source Mirolda.th
  #source zone-A/A.th
  
 # Add config file
-input ../../config.thc 
+input config.thc 
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles
@@ -352,12 +352,13 @@ select MP-Criou@SystemMirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/Criou-2023-plan.pdf -layout my_layout
 # export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
-#export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
+ export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Criou-2023.lox
+ export model -enable all -o Outputs/Criou-2023.plt
 
 # Export des fichiers ESRI
  export map -proj plan -fmt esri -o Outputs/Criou -layout my_layout
