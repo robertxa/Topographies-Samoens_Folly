@@ -1,0 +1,20 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey 900 -title "Rivière jusqu'à -850 m et laminoir"
+   input Data/230906_BMPRGF_CD11.th
+   input Data/mirolda_mkbu.th
+      equate mkbu.30@mirolda_mkbu 46@230906_BMPRGF_CD11
+	
+   input Data/mirolda_mkbu_plan.th2
+	input Data/230906_BMPRGF_CD11-plan.th2
+      join SP-BMPRGF-1 SP-900-1
+
+   #input Data/mirolda_mkbu_coupe.th2
+
+	input 900-maps.th
+	
+endsurvey

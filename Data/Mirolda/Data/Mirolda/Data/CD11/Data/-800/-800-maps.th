@@ -4,12 +4,12 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey 800 -title "Rivière de -640 m à -780 m (2023)"
-   input Data/mirolda-800.th
-	
-   input Data/-800-plan.th2
-   input Data/-800-coupe.th2
-	
-   input -800-maps.th
+##Plan
+map MP-800-plan-tot -title "Rivière de -640 m à -780 m (2023)"
+  SP-800-1
+endmap
 
-endsurvey
+##Coupe
+#map MC-800-coupe-tot -title "Rivière de -640 m à -780 m (2023)"
+#  SC-800-1
+#endmap

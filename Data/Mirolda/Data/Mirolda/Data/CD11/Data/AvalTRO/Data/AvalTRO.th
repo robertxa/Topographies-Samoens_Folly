@@ -77,7 +77,7 @@ flags duplicate
  469	470	93005	93463	138	6	1	1	2	2	#							
  470	471	93463	93953	198	10	1	1	2	2	#							
  471	472	93953	94789	115	55	1	1	2	2	#							
-flags not duplicate
+#flags not duplicate
 
 472	473	94789	95307	180	10	1	1	2	2	#							
 473	474	95307	96045	150	27	1	1	2	2	#							
@@ -127,7 +127,8 @@ flags not duplicate
 517	518	23470	23827	152	42	1	1	2	2	#							
 518	519	23827	24374	303	2	1	1	2	2	#							
 519	520	24374	24871	202	0	1	1	2	2	#							
-520	521	24871	25383	305	9	1	1	2	2	#							
+520	521	24871	25383	305	9	1	1	2	2	#	
+flags not duplicate						
 
 endcenterline
 
@@ -140,9 +141,10 @@ centerline
     units compass clino degrees
     units counter centimeters
     calibrate counter 0 1.000
-    data topofil from to fromcount tocount compass clino left right up down
+    data topofil from to fromcount tocount backcompass clino left right up down
     #data normal from to length backcompass clino left right up down	
-    #Param Topof 1.000 Deg Clino Deg 0.0000 Inv,Dir,Dir Inc Std			
+    #Param Topof 1.000 Deg Clino Deg 0.0000 Inv,Dir,Dir Inc Std	
+flags duplicate		
 521	522	23509.0   23707.0  170.00   40.00   1.00   1.00   2.00		2	#
 522	523	23141.0   23509.0  110.00  -15.00   1.00   1.00   2.00		2	#
 523	524	22464.0   23141.0   75.00   10.00   1.00   1.00   2.00		2	#
@@ -166,6 +168,7 @@ centerline
 541	542	15066.0   15627.0    0.00  -15.00   1.00   1.00   2.00		2	#
 542	543	14683.0   15066.0  275.00  -35.00   1.00   1.00   2.00		2	#
 543	544	14180.0   14683.0    0.00  -20.00   1.00   1.00   2.00		2	#
+flags not duplicate
 endcenterline
 
 centerline
@@ -179,7 +182,8 @@ centerline
     calibrate counter 0 1.000
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down	
-    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std			
+    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std	
+flags duplicate		
 512	545	28780.0   29166.0  141.00    0.00   1.00   1.00   2.00		2	#
 545	546	29166.0   29477.0   59.00    0.00   1.00   1.00   2.00		2	#
 546	547	29477.0   29709.0  102.00   -2.00   1.00   1.00   2.00		2	#
@@ -210,6 +214,7 @@ centerline
 571	572	42444.0   42911.0  174.00  -25.00   1.00   1.00   2.00		2	#
 572	573	42911.0   43651.0  215.00  -30.00   1.00   1.00   2.00		2	#
 573	574	43651.0   44571.0  200.00  -30.00   1.00   1.00   2.00		2	#
+flags not duplicate
 
 endcenterline
 
@@ -249,6 +254,7 @@ centerline
     #data normal from to fromcount tocount compass clino left right up down	
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std		
     # Post-trémie
+flags duplicate
 572	690	3434.0    4081.0  110.00   12.00   1.00   1.00   2.00		2	#
 690	691	4081.0    5008.0  175.00  -22.00   1.00   1.00   2.00		2	#
 691	692	5008.0    5319.0  163.00  -19.00   1.00   1.00   2.00		2	#
@@ -268,6 +274,8 @@ centerline
 705	706	13743.0   15528.0  164.00  -18.00   1.00   1.00   2.00		2	#
 706	707	15528.0   16331.0  171.00    2.00   1.00   1.00   2.00		2	#
 707	708	16331.0   16674.0  172.00   19.00   1.00   1.00   2.00		2	#
+flags not duplicate
+
 708	709	16674.0   17265.0  148.00   -8.00   1.00   1.00   2.00		2	#
 709	710	17265.0   17602.0  132.00  -17.00   1.00   1.00   2.00		2	#
 710	711	17602.0   18017.0  189.00  -31.00   1.00   1.00   2.00		2	#

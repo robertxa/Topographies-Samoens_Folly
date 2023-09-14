@@ -1,15 +1,13 @@
 encoding  utf-8
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 # 1-SOURCES 
+source -800-tot.th
 
-source mirolda_-800-tot.th
-
-# Add entrances coordinates
-input /home/urrutyb/Documents/Spéléo/database_speleo/Chartreuse/Réseau_ded/topo_kriska/therion_kriska/config.thc 
-
-#DEM
-#source ../GIS/DEM.th
-
+# Add config file
+input ../../../../config.thc 
 
 # 2-LAYOUT   
 
@@ -32,7 +30,7 @@ layout my_layout
    copy langue-fr
       
    # Titre  
-   doc-title "mirolda_-800"
+   doc-title "Mirolda -800"
    # Auteur
    doc-author "Benoît Urruty"
 
@@ -47,7 +45,7 @@ layout my_layout
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 200
+   base-scale 1 1000
 
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -58,13 +56,13 @@ layout my_layout
    # l imprimante ne specifie pas l option "Fit in page"
    # ou similaire, sinon, l echelle sera change pendant
    # l impression
-   scale 1 200
+   scale 1 1000
 
    #surface bottom
    #surface-opacity 70
 
    # echelle graphique 100 m ampleur
-   scale-bar 20 m
+   scale-bar 100 m
 
    # Pour faire une rotation
    #rotate 90
@@ -86,22 +84,22 @@ layout my_layout
    opacity 75
 
    # Un commentaire a ajounter au titule,
-   map-comment "<it>Plan<ss> - Saint-Pierre de Chartreuse, 38, France"
+   map-comment "<it>Plan<ss> - Samoëns, 74, France"
 
    # Afficher les statistiques d explo par équipe/nom. C est lourd
    # si la cavite est importante et qu il y a beaucoup d explorateurs
    statistics explo-length off
    # Afficher developpement et profondeur de la cavite
-   statistics topo-length on
+   statistics topo-length off
 
    # Nous voulons une legende pour expliquer les symboles. "on" imprimera
    # seulement la legende des symboles dessines sur la topo, si l on veut
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
-   legend on
+   legend off
 
    # Par defaut, la legende est de 14 cm de largeur
-   legend-width 25 cm
+   legend-width 17 cm
    legend-columns 3
 
    # Specification la position de la manchette : interieur
@@ -114,16 +112,15 @@ layout my_layout
    map-header 0 -7 nw
 
    # arrière plan de la manchette
-   #map-header-bg off
+   map-header-bg off
 
    layers on
 
    # Options pour afficher le squelette topo,
    # les points et le nom des stations topos
-   #symbol-hide line survey
+   symbol-hide line survey
    #symbol-hide point cave-station
-
-   debug station-names
+   #debug station-names
 
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -153,10 +150,10 @@ layout my_layout
       \edef\nostring{}            % empty string
       \ifx\temp\nostring          % mirolda_-800 if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
-         \cavename={mirolda -800} 		
+         \cavename={CD11 - Rivière de -640 m à -780 m} 		
       \else % if not empty keep the value set by therion, or assign an override cavename here
       \fi
-      \newtoks\club \club={GUCEM}
+      \newtoks\club \club={Collectif Mirolda}
    endcode  
 
    # add extended-elev on the same pdf
@@ -172,7 +169,7 @@ layout my_layout-coupe
    copy langue-fr
       
    # Titre  
-   doc-title "mirolda_-800"
+   doc-title "Mirolda -800"
    # Auteur
    doc-author "Benoit Urruty"
 
@@ -187,7 +184,7 @@ layout my_layout-coupe
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 200
+   base-scale 1 1000
 
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -198,10 +195,10 @@ layout my_layout-coupe
    # l imprimante ne specifie pas l option "Fit in page"
    # ou similaire, sinon, l echelle sera change pendant
    # l impression
-   scale 1 200
+   scale 1 1400
 
    # echelle graphique 20 m ampleur
-   scale-bar 20 m
+   scale-bar 150 m
 
    # Pour faire une rotation
    #rotate 2.25
@@ -222,19 +219,19 @@ layout my_layout-coupe
    opacity 75
       
    # Un commentaire a ajounter au titule,
-   map-comment "<it>Coupe développée<ss> - Saint-Pierre de Chartreuse,38, France"
+   map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 
    # Afficher les statistiques d explo par équipe/nom. C est lourd
    # si la cavite est importante et qu il y a beaucoup d explorateurs
    statistics explo-length off
    # Afficher developpement et profondeur de la cavite
-   statistics topo-length on
+   statistics topo-length off
 
    # Nous voulons une legende pour expliquer les symboles. "on" imprimera
    # seulement la legende des symboles dessines sur la topo, si l on veut
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
-   legend on
+   legend off
 
    # Par defaut, la legende est de 14 cm de largeur
    legend-width 14.5 cm
@@ -249,15 +246,14 @@ layout my_layout-coupe
    map-header 0 00 nw
 
    # arrière plan de la manchette
-   #map-header-bg off
+   map-header-bg off
 
    layers on
 
    # Options pour afficher le squelette topo,
    # les points et le nom des stations topos
-   #symbol-hide line survey
+   symbol-hide line survey
    #symbol-hide point cave-station
-
    debug station-names
 
    # Specifier qu il faut imprimer une grille
@@ -286,10 +282,10 @@ layout my_layout-coupe
       \edef\nostring{}            % empty string
       \ifx\temp\nostring          % mirolda_-800 if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
-         \cavename={mirolda -800} 		
+         \cavename={CD11 - Rivière de -640 m à -780 m} 		
       \else % if not empty keep the value set by therion, or assign an override cavename here
       \fi
-      \newtoks\club \club={GUCEM}
+      \newtoks\club \club={Collectif Mirolda}
    endcode  
   
 endlayout  
@@ -297,24 +293,24 @@ endlayout
   
 # 3-EXPORTS
 
-export map -fmt xvi -layout xviexport -o Data/mirolda_-800-map.xvi
-export map -proj extended -layout xviexport -fmt xvi -o Data/mirolda_-800-coupe.xvi
-export map -proj [elevation 17] -layout xviexport -o Data/mirolda_-800-coupe_elevation.xvi 
+#export map -fmt xvi -layout xviexport -o Data/mirolda_-800-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/mirolda_-800-coupe.xvi
+#export map -proj [elevation 17] -layout xviexport -o Data/mirolda_-800-coupe_elevation.xvi 
 
 # Select maps
 #	select MP-mirolda_-800-plan-tot@mirolda_-800
 #  select MC-mirolda_-800-coupe-tot@mirolda_-800
 	 
-export map -projection [elevation 17] -layout my_layout-coupe -o Outputs/mirolda_-800-coupe_elevation.pdf 
-export map -projection extended -layout my_layout-coupe -o Outputs/mirolda_-800-coupe.pdf 
-export map -o Outputs/mirolda_-800-plan.pdf -layout my_layout
+#export map -projection [elevation 17] -layout my_layout-coupe -o Outputs/mirolda_-800-coupe_elevation.pdf 
+export map -projection extended -layout my_layout-coupe -o Outputs/-800-coupe.pdf 
+export map -o Outputs/-800-plan.pdf -layout my_layout
  
-export model -o Outputs/mirolda_-800.lox
-export continuation-list -o Outputs/questions.html
-export cave-list -o Outputs/mirolda_-800.html  
+export model -o Outputs/-800.lox
+#export continuation-list -o Outputs/questions.html
+#export cave-list -o Outputs/mirolda_-800.html  
 
 # Export des fichiers ESRI
 export map -proj plan -fmt esri -o Outputs/mirolda_-800 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/mirolda_-800.kml -layout my_layout
+#export map -proj plan -fmt kml -o Outputs/mirolda_-800.kml -layout my_layout

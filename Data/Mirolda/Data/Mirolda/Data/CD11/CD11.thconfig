@@ -128,6 +128,7 @@ layout my_layout
 
   # Par défaut, la légende est de 14 cm de largeur
   legend-width 21 cm
+  legend-columns 3
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
@@ -145,7 +146,14 @@ layout my_layout
   #symbol-hide point station        
   #debug scrap-names
   #debug station-names
+  #  color map-fg scraps
+    #  color-legend off
+	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
   symbol-hide line survey
+
+
 
   #debug all
 

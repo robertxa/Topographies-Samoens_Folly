@@ -1,0 +1,994 @@
+# 2023.09.07 created by TopoDroid v 6.2.13
+
+survey mirolda_mkbu -title "Rivière du Mirolda jusqu'à -920 m (2023)"
+
+  centerline
+    date 2023.09.06 
+      team "Martin Kern"
+      team "Benoît Urruty"
+      team "Gaël Fauroux"
+      team "Barnabé Maurice"
+    #explo-date 
+    #  explo-team ""
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # ###extend auto
+    mkbu.0 . 1.07 140.4 3.6
+    mkbu.0 . 2.03 191.5 -3.9
+    mkbu.0 . 3.23 214.2 -1.7
+    mkbu.0 . 1.02 225.5 -8.4
+    mkbu.0 . 2.72 93.5 12.1
+    mkbu.0 . 1.46 72.8 8.3
+    mkbu.0 . 1.75 169.5 67.3
+    mkbu.0 . 1.27 111.4 -78.7
+    mkbu.0 . 4.83 184.6 -74.0
+    mkbu.0 . 6.39 221.3 -55.1
+    extend right
+    mkbu.0 mkbu.1 3.41 96.4 14.2
+    # ###extend auto
+    mkbu.1 . 1.28 233.2 17.1
+    mkbu.1 . 1.24 174.4 11.4
+    mkbu.1 . 1.31 107.9 -2.2
+    mkbu.1 . 2.88 53.9 -6.2
+    mkbu.1 . 1.31 260.4 -2.4
+    mkbu.1 . 3.32 283.8 -10.8
+    mkbu.1 . 1.51 177.1 76.9
+    mkbu.1 . 0.83 62.7 -78.4
+    ###extend right
+    mkbu.1 mkbu.2 3.20 73.6 -1.1
+    # ###extend auto
+    mkbu.2 . 0.79 347.0 -3.7
+    mkbu.2 . 1.66 280.1 -0.1
+    mkbu.2 . 3.81 39.3 -14.9
+    mkbu.2 . 6.09 57.3 -11.6
+    mkbu.2 . 1.95 29.8 -67.6
+    mkbu.2 . 5.80 47.3 -58.0
+    ###extend right
+    mkbu.2 mkbu.3 6.42 63.0 -17.6
+    # ###extend auto
+    mkbu.3 . 3.13 273.4 1.8
+    mkbu.3 . 3.53 233.4 22.4
+    mkbu.3 . 2.22 212.5 41.1
+    mkbu.3 . 4.82 133.1 37.5
+    mkbu.3 . 1.97 113.1 -1.0
+    mkbu.3 . 0.75 189.1 -0.6
+    mkbu.3 . 1.83 141.8 3.5
+    mkbu.3 . 5.70 130.0 5.6
+    mkbu.3 . 2.51 170.4 88.8
+    mkbu.3 . 2.83 71.2 -83.3
+    extend left
+    mkbu.3 mkbu.4 4.61 256.3 -11.4
+    # ###extend auto
+    mkbu.4 . 1.23 153.7 -6.3
+    mkbu.4 . 1.21 335.5 16.7
+    mkbu.4 . 2.54 156.7 79.1
+    mkbu.4 . 3.35 275.3 6.6
+    mkbu.4 . 3.37 237.8 2.1
+    mkbu.4 . 1.47 198.3 4.6
+    ###extend left
+    mkbu.4 mkbu.5 4.61 259.8 -6.8
+    # ###extend auto
+    mkbu.5 . 1.27 188.1 -10.7
+    mkbu.5 . 1.82 116.0 3.9
+    mkbu.5 . 1.95 251.3 -13.5
+    mkbu.5 . 2.01 290.1 -5.0
+    mkbu.5 . 0.55 260.2 83.3
+    mkbu.5 . 1.82 175.2 -75.9
+    ###extend left
+    mkbu.5 mkbu.6 4.03 259.7 -19.0
+    extend right
+    mkbu.3 mkbu.7 6.17 131.9 -1.2
+    # ###extend auto
+    mkbu.7 . 1.57 348.6 9.7
+    mkbu.7 . 5.73 319.6 -1.9
+    mkbu.7 . 2.55 321.3 1.9
+    mkbu.7 . 1.91 290.0 -0.1
+    mkbu.7 . 2.64 29.1 -0.5
+    mkbu.7 . 4.87 50.2 -2.2
+    mkbu.7 . 4.91 25.6 69.9
+    mkbu.7 . 3.11 27.5 -72.1
+    
+    mkbu.7 mkbu.8 3.67 40.6 4.2
+    # ###extend auto
+    mkbu.8 . 1.32 127.9 12.0
+    mkbu.8 . 2.11 62.8 2.8
+    mkbu.8 . 3.29 36.0 -2.8
+    mkbu.8 . 5.05 20.5 0.5
+    mkbu.8 . 4.90 41.1 82.9
+    mkbu.8 . 2.25 67.8 -63.1
+    ###extend right
+    mkbu.8 mkbu.9 5.35 29.5 -5.0
+    # ###extend auto
+    mkbu.9 . 1.43 14.9 9.9
+    mkbu.9 . 2.99 39.7 0.3
+    mkbu.9 . 3.19 67.1 3.6
+    mkbu.9 . 2.85 100.9 9.1
+    mkbu.9 . 2.46 140.2 4.4
+    mkbu.9 . 1.36 183.8 0.9
+    mkbu.9 . 4.49 222.3 -2.3
+    mkbu.9 . 2.86 258.1 -1.0
+    mkbu.9 . 8.30 208.7 84.6
+    mkbu.9 . 1.29 96.5 -76.6
+    ###extend right
+    mkbu.9 mkbu.10 2.87 40.8 18.9
+    # ###extend auto
+    mkbu.10 . 2.91 234.6 -3.9
+    mkbu.10 . 2.87 175.0 -3.8
+    mkbu.10 . 1.82 141.9 13.8
+    mkbu.10 . 6.64 286.6 83.4
+    mkbu.10 . 2.05 45.3 -78.1
+    ###extend right
+    mkbu.10 mkbu.11 3.71 310.1 36.8
+    # ###extend auto
+    mkbu.11 . 1.53 20.5 -10.0
+    mkbu.11 . 3.21 56.3 1.6
+    mkbu.11 . 1.88 82.9 2.3
+    mkbu.11 . 1.82 100.1 9.0
+    mkbu.11 . 3.54 128.0 2.9
+    mkbu.11 . 5.08 142.1 -6.9
+    mkbu.11 . 5.02 142.6 77.4
+    mkbu.11 . 1.54 69.8 -85.1
+    ###extend right
+    mkbu.11 mkbu.12 3.55 68.1 -4.5
+    mkbu.12 mkbu.13 5.06 79.1 12.6
+    # ###extend auto
+    mkbu.13 . 0.55 291.9 23.4
+    mkbu.13 . 1.24 82.8 37.9
+    mkbu.13 . 2.12 206.6 10.8
+    mkbu.13 . 3.10 231.7 1.1
+    mkbu.13 . 1.25 354.7 14.2
+    mkbu.13 . 8.84 25.6 78.6
+    mkbu.13 . 1.69 317.5 -65.7
+    ###extend right
+    mkbu.13 mkbu.14 5.51 4.4 27.1
+    # ###extend auto
+    mkbu.14 . 4.70 100.9 -0.3
+    mkbu.14 . 2.46 128.7 6.6
+    mkbu.14 . 2.52 159.2 1.1
+    mkbu.14 . 5.08 173.3 2.5
+    mkbu.14 . 2.98 194.4 -5.9
+    mkbu.14 . 2.36 225.9 -0.3
+    mkbu.14 . 7.05 148.5 79.9
+    mkbu.14 . 1.53 185.5 -81.4
+    ###extend left
+    mkbu.14 mkbu.15 2.59 125.2 4.5
+    ###extend right
+    mkbu.15 mkbu.16 5.29 67.3 29.7
+    # ###extend auto
+    mkbu.16 . 3.62 113.9 4.0
+    mkbu.16 . 2.95 129.2 3.8
+    mkbu.16 . 1.43 184.0 4.1
+    mkbu.16 . 2.43 234.5 -2.0
+    mkbu.16 . 6.16 64.7 80.4
+    mkbu.16 . 1.50 61.8 -87.6
+    mkbu.16 . 4.56 277.9 -71.2
+    mkbu.16 . 3.28 120.5 -5.1
+    ###extend left
+    mkbu.16 mkbu.19 3.39 120.7 -3.1
+    # ###extend auto
+    mkbu.19 . 1.85 20.7 6.9
+    mkbu.19 . 4.89 356.8 9.9
+    mkbu.19 . 2.87 305.6 14.8
+    mkbu.19 . 1.12 325.9 12.1
+    mkbu.19 . 1.84 345.1 8.5
+    mkbu.19 . 7.71 357.0 74.3
+    mkbu.19 . 1.28 329.4 -63.6
+    ###extend right
+    mkbu.19 mkbu.20 4.72 358.8 8.0
+    # ###extend auto
+    mkbu.20 . 2.21 92.5 15.9
+    mkbu.20 . 2.08 149.2 11.7
+    mkbu.20 . 2.53 189.5 12.6
+    mkbu.20 . 1.48 219.0 13.5
+    mkbu.20 . 7.85 90.8 70.2
+    mkbu.20 . 1.49 110.3 -72.7
+    mkbu.20 . 6.89 112.4 13.8
+    ###extend ignore
+    mkbu.20 mkbu.21 6.90 112.4 13.8 # gros 1 rouge
+    # ###extend auto
+    mkbu.21 . 1.14 14.5 10.1
+    mkbu.21 . 1.46 329.7 14.4
+    mkbu.21 . 2.03 308.8 7.5
+    mkbu.21 . 2.76 279.2 15.9
+    mkbu.21 . 1.54 253.9 20.1
+    mkbu.21 . 0.96 123.6 46.4
+    mkbu.21 . 5.52 11.5 83.8
+    mkbu.21 . 1.38 19.3 -70.1
+    mkbu.21 . 5.33 49.1 83.3
+    mkbu.21 . 1.36 19.4 -66.8
+    extend left
+    mkbu.21 mkbu.22 2.55 30.2 14.6
+    # ###extend auto
+    mkbu.22 . 2.55 32.8 14.5
+    mkbu.22 . 1.00 258.2 5.8
+    mkbu.22 . 2.74 211.3 -1.1
+    mkbu.22 . 2.33 320.7 13.5
+    mkbu.22 . 5.91 225.3 86.4
+    mkbu.22 . 1.11 287.8 -71.6
+    ###extend right
+    mkbu.22 mkbu.23 4.43 355.5 12.7
+    # ###extend auto
+    mkbu.23 . 0.78 293.1 -6.6
+    mkbu.23 . 2.46 23.4 17.3
+    mkbu.23 . 0.64 359.5 14.3
+    mkbu.23 . 1.38 95.0 27.0
+    mkbu.23 . 1.46 155.3 17.4
+    mkbu.23 . 3.18 206.1 -4.7
+    mkbu.23 . 6.83 155.8 88.7
+    mkbu.23 . 1.28 257.3 -75.1
+    ###extend right
+    mkbu.23 mkbu.24 3.31 7.5 36.2
+    # ###extend auto
+    mkbu.24 . 0.85 205.9 10.2
+    mkbu.24 . 2.38 264.9 4.7
+    mkbu.24 . 4.60 280.4 -0.7
+    mkbu.24 . 4.35 299.4 -4.1
+    mkbu.24 . 1.90 136.0 28.0
+    mkbu.24 . 5.51 275.0 81.7
+    mkbu.24 . 2.16 240.4 -77.8
+    ###extend right
+    mkbu.24 mkbu.25 8.06 284.3 -10.1
+    # ###extend auto
+    mkbu.25 . 1.49 264.6 -1.2
+    mkbu.25 . 1.32 195.4 5.5
+    mkbu.25 . 1.89 149.7 8.6
+    mkbu.25 . 1.98 121.7 9.3
+    mkbu.25 . 1.05 208.1 -66.6
+    mkbu.25 . 5.51 320.2 86.3
+    ###extend left
+    mkbu.25 mkbu.26 3.93 232.7 61.7
+    # ###extend auto
+    mkbu.26 . 1.87 46.5 8.7
+    mkbu.26 . 3.59 77.7 0.2
+    mkbu.26 . 2.20 354.2 7.7
+    mkbu.26 . 3.25 11.3 7.6
+    mkbu.26 . 4.48 22.4 3.7
+    mkbu.26 . 2.84 44.4 72.6
+    mkbu.26 . 3.37 56.0 -79.8
+    ###extend ignore
+    mkbu.26 mkbu.27 4.83 24.9 0.3
+    # ###extend auto
+    mkbu.27 . 3.25 80.1 7.8
+    mkbu.27 . 1.09 130.1 18.5
+    mkbu.27 . 1.62 194.5 8.2
+    mkbu.27 . 4.52 212.9 7.7
+    mkbu.27 . 4.15 146.7 85.8
+    mkbu.27 . 1.68 337.6 -84.7
+    ###extend right
+    mkbu.27 mkbu.28 3.75 69.7 21.7
+    # ###extend auto
+    mkbu.28 . 1.80 329.2 5.5
+    mkbu.28 . 1.67 283.8 1.5
+    mkbu.28 . 5.68 247.5 -4.5
+    mkbu.28 . 5.05 308.9 73.3
+    mkbu.28 . 1.63 289.4 -78.4
+    ###extend right
+    mkbu.28 mkbu.29 3.59 337.4 -1.3
+    # ###extend auto
+    mkbu.29 . 1.50 330.7 0.7
+    mkbu.29 . 1.24 48.8 6.8
+    mkbu.29 . 1.56 109.8 0.7
+    mkbu.29 . 3.96 150.2 -8.4
+    mkbu.29 . 5.38 194.1 88.6
+    mkbu.29 . 1.38 85.2 -85.1
+    ###extend right
+    mkbu.29 mkbu.30 6.41 306.9 0.2  # jonction team desc point 46
+    # ###extend auto
+    mkbu.0 . 3.29 215.6 -8.0
+    mkbu.0 . 1.94 193.6 -0.5
+    mkbu.0 . 1.09 145.1 11.2
+    mkbu.0 . 1.23 163.4 -41.6
+    mkbu.0 . 3.61 185.2 -46.4
+    mkbu.0 . 4.62 207.6 -42.4
+    mkbu.0 . 5.32 220.5 -47.7
+    mkbu.0 . 4.72 188.3 -56.0
+    mkbu.0 . 5.11 240.2 -61.3
+    mkbu.0 . 6.41 238.0 -41.1
+    mkbu.0 . 6.75 233.2 -37.4
+    ###extend left
+    mkbu.0 mkbu.31 6.58 233.8 -39.1
+    mkbu.0 mkbu.32 3.69 195.7 -30.3
+    # ###extend auto
+    mkbu.32 . 1.28 48.1 3.3
+    mkbu.32 . 1.79 82.2 -2.3
+    mkbu.32 . 1.94 122.0 -13.9
+    mkbu.32 . 1.35 305.9 1.7
+    mkbu.32 . 2.25 353.8 -4.7
+    mkbu.32 . 3.17 4.0 -0.8
+    mkbu.32 . 0.57 161.4 79.4
+    mkbu.32 . 0.55 353.7 -81.6
+    ###extend left
+    mkbu.32 mkbu.33 3.38 128.5 -18.8
+    # ###extend auto
+    mkbu.33 . 0.46 256.7 20.8
+    mkbu.33 . 0.32 69.8 34.8
+    mkbu.33 . 1.03 204.8 -4.2
+    mkbu.33 . 2.27 163.2 -56.8
+    ###extend left
+    mkbu.33 mkbu.34 2.29 164.6 -55.6
+    # ###extend auto
+    mkbu.34 . 0.91 261.8 -2.8
+    mkbu.34 . 2.17 229.3 -13.3
+    mkbu.34 . 0.82 324.1 25.5
+    mkbu.34 . 0.51 219.3 73.1
+    mkbu.34 . 0.36 300.1 -75.6
+    ###extend left
+    mkbu.34 mkbu.37 2.97 208.5 -16.0
+    # ###extend auto
+    mkbu.37 . 2.71 238.0 -24.2
+    mkbu.37 . 3.00 221.5 -30.9
+    mkbu.37 . 1.06 178.3 -27.5
+    mkbu.37 . 1.16 116.1 -13.2
+    mkbu.37 . 1.17 185.0 -79.0
+    mkbu.37 . 0.45 207.6 59.3
+    ###extend left
+    mkbu.37 mkbu.38 2.10 105.3 -6.8
+    mkbu.37 mkbu.39 3.06 218.2 -27.7
+    # ###extend auto
+    mkbu.39 . 2.83 136.4 -14.6
+    mkbu.39 . 1.70 115.9 -10.2
+    mkbu.39 . 0.89 78.2 8.7
+    mkbu.39 . 1.68 52.2 18.3
+    mkbu.39 . 3.37 44.5 23.5
+    mkbu.39 . 2.77 30.5 28.2
+    mkbu.39 . 1.77 353.4 27.2
+    mkbu.39 . 0.59 147.7 64.6
+    mkbu.39 . 0.74 31.8 -79.2
+    ###extend left
+    mkbu.39 mkbu.40 2.94 138.8 -11.8
+    # ###extend auto
+    mkbu.40 . 1.18 279.3 -6.5
+    mkbu.40 . 1.23 297.0 0.8
+    mkbu.40 . 1.70 316.4 8.8
+    mkbu.40 . 4.12 326.2 14.1
+    mkbu.40 . 0.22 229.2 80.8
+    mkbu.40 . 0.93 25.4 -84.6
+    mkbu.40 . 1.64 259.3 -9.5
+    mkbu.40 . 2.78 231.6 -20.7
+    mkbu.40 . 3.42 211.6 -25.1
+    ###extend left
+    mkbu.40 mkbu.41 4.63 224.4 -23.6
+    # ###extend auto
+    mkbu.41 . 1.30 281.1 -11.5
+    mkbu.41 . 2.03 267.3 -12.1
+    mkbu.41 . 2.44 244.3 -20.1
+    mkbu.41 . 0.89 199.9 -11.8
+    mkbu.41 . 1.27 144.7 -10.1
+    mkbu.41 . 1.24 108.6 7.5
+    mkbu.41 . 1.85 61.0 22.2
+    mkbu.41 . 0.47 182.9 86.2
+    mkbu.41 . 1.14 186.4 -78.7
+    ###extend left
+    mkbu.41 mkbu.42 2.12 233.3 -23.1
+    # ###extend auto
+    mkbu.42 . 0.62 120.2 -13.2
+    mkbu.42 . 0.78 61.6 14.6
+    mkbu.42 . 1.11 58.3 -73.2
+    mkbu.42 . 0.36 127.7 63.4
+    ###extend left
+    mkbu.42 mkbu.43 2.64 152.3 -32.6
+    # ###extend auto
+    mkbu.43 . 0.45 265.7 3.9
+    mkbu.43 . 1.37 167.2 -14.7
+    mkbu.43 . 1.97 207.8 -14.2
+    mkbu.43 . 0.77 192.3 53.2
+    mkbu.43 . 0.61 212.0 -58.2
+    ###extend left
+    mkbu.43 mkbu.44 5.24 173.3 -18.3
+    # ###extend auto
+    mkbu.44 . 1.06 244.1 -11.8
+    mkbu.44 . 0.60 303.0 15.9
+    mkbu.44 . 0.51 200.1 64.5
+    mkbu.44 . 0.91 70.7 -78.5
+    mkbu.44 . 0.81 215.6 -3.8
+    ###extend left
+    mkbu.44 mkbu.45 0.79 217.0 -3.2
+    # ###extend auto
+    mkbu.45 . 1.98 140.8 -19.2
+    mkbu.45 . 0.51 95.8 -8.9
+    mkbu.45 . 0.49 40.4 3.4
+    mkbu.45 . 0.99 142.0 -74.2
+    ###extend left
+    mkbu.45 mkbu.46 4.77 163.1 -23.2
+    # ###extend auto
+    mkbu.46 . 1.64 251.1 -8.2
+    mkbu.46 . 0.96 292.0 9.5
+    mkbu.46 . 0.51 230.6 76.8
+    mkbu.46 . 0.68 345.2 -84.7
+    ###extend left
+    mkbu.46 mkbu.47 1.65 259.0 -10.0
+    # ###extend auto
+    mkbu.47 . 1.24 138.7 -12.8
+    mkbu.47 . 1.02 89.0 11.8
+    mkbu.47 . 1.88 172.9 -20.3
+    mkbu.47 . 1.28 153.4 -86.6
+    ###extend left
+    mkbu.47 mkbu.48 3.41 176.2 -23.9
+    # ###extend auto
+    mkbu.48 . 2.21 127.7 -19.7
+    mkbu.48 . 0.70 98.6 -10.1
+    mkbu.48 . 0.62 23.1 7.8
+    mkbu.48 . 0.42 133.1 69.9
+    mkbu.48 . 0.66 334.3 -84.8
+    ###extend left
+    mkbu.48 mkbu.49 2.68 142.3 -13.6
+    # ###extend auto
+    mkbu.49 . 4.08 142.0 -13.5
+    mkbu.49 . 1.65 150.8 -14.6
+    mkbu.49 . 2.97 167.9 -28.7
+    mkbu.49 . 3.93 185.5 -32.2
+    mkbu.49 . 1.53 212.1 -27.3
+    mkbu.49 . 0.83 261.5 -5.1
+    mkbu.49 . 0.33 188.4 77.0
+    mkbu.49 . 0.89 14.0 -89.1
+    ###extend left
+    mkbu.49 mkbu.50 3.33 180.1 -35.0
+    # ###extend auto
+    mkbu.50 . 2.41 255.9 -17.3
+    mkbu.50 . 1.28 293.0 3.4
+    mkbu.50 . 2.54 340.6 28.4
+    mkbu.50 . 1.16 24.5 -81.3
+    mkbu.50 . 0.53 238.4 57.8
+    ###extend left
+    mkbu.50 mkbu.51 2.10 231.7 -28.8
+    # ###extend auto
+    mkbu.51 . 2.88 150.3 -23.5
+    mkbu.51 . 1.21 118.4 -10.6
+    mkbu.51 . 0.94 60.7 13.6
+    mkbu.51 . 1.89 45.2 20.9
+    mkbu.51 . 3.57 34.5 27.7
+    mkbu.51 . 0.50 123.1 64.2
+    mkbu.51 . 0.80 54.8 -65.4
+    ###extend left
+    mkbu.51 mkbu.52 3.32 163.9 -21.5
+    # ###extend auto
+    mkbu.52 . 1.57 261.7 -12.6
+    mkbu.52 . 1.75 313.7 11.5
+    mkbu.52 . 0.41 279.2 72.1
+    mkbu.52 . 1.12 54.3 -85.5
+    ###extend left
+    mkbu.52 mkbu.53 2.77 247.2 -23.7
+    # ###extend auto
+    mkbu.53 . 2.20 165.0 -21.4
+    mkbu.53 . 1.20 137.4 -7.4
+    mkbu.53 . 0.89 107.2 6.2
+    mkbu.53 . 0.31 187.8 56.4
+    mkbu.53 . 0.68 83.9 -72.8
+    mkbu.53 . 2.20 165.8 -26.4
+    ###extend left
+    mkbu.53 mkbu.54 2.17 163.6 -27.8
+    # ###extend auto
+    mkbu.54 . 1.59 229.0 -19.3
+    mkbu.54 . 1.61 281.1 4.8
+    mkbu.54 . 1.23 328.9 19.0
+    mkbu.54 . 0.55 218.8 60.7
+    mkbu.54 . 0.59 50.3 -75.6
+    ###extend left
+    mkbu.54 mkbu.55 1.68 216.2 -14.9
+    # ###extend auto
+    mkbu.55 . 0.81 138.3 -13.5
+    mkbu.55 . 0.72 59.9 3.6
+    mkbu.55 . 0.77 21.1 -83.3
+    mkbu.55 . 0.29 139.8 82.3
+    ###extend left
+    mkbu.55 mkbu.56 4.08 170.8 -15.9
+    # ###extend auto
+    mkbu.56 . 1.15 210.9 -12.2
+    mkbu.56 . 0.91 326.6 19.4
+    mkbu.56 . 0.43 199.8 62.7
+    mkbu.56 . 0.73 61.7 -72.0
+    ###extend left
+    mkbu.56 mkbu.57 6.04 171.9 -22.9
+    # ###extend auto
+    mkbu.57 . 1.29 128.4 -6.4
+    mkbu.57 . 0.47 102.5 36.5
+    mkbu.57 . 0.64 86.7 -75.1
+    ###extend ignore
+    mkbu.57 mkbu.58 3.52 160.3 -12.9
+    # ###extend auto
+    mkbu.58 . 0.72 209.1 -2.3
+    mkbu.57 . 0.23 139.9 73.8
+    mkbu.57 . 0.96 242.7 -76.9
+    ###extend left
+    mkbu.58 mkbu.59 2.40 133.3 -31.6
+    # ###extend auto
+    mkbu.59 . 1.25 72.4 -2.4
+    mkbu.59 . 1.23 352.3 9.1
+    mkbu.59 . 1.28 311.9 12.8
+    mkbu.59 . 0.42 279.4 17.5
+    mkbu.59 . 1.23 17.4 -86.9
+    mkbu.59 . 0.57 79.7 72.9
+    mkbu.59 . 4.70 176.2 -28.0
+    ###extend left
+    mkbu.59 mkbu.60 4.23 176.4 -28.1
+    # ###extend auto
+    mkbu.60 . 0.58 59.2 13.4
+    mkbu.60 . 0.29 219.4 15.1
+    mkbu.60 . 0.34 131.0 73.6
+    mkbu.60 . 0.37 27.5 -43.2
+    ###extend left
+    mkbu.60 mkbu.61 0.71 130.2 -8.9
+    mkbu.61 mkbu.62 1.48 203.8 75.2
+    # ###extend auto
+    mkbu.62 . 0.63 118.6 6.6
+    mkbu.62 . 0.45 155.0 -3.1
+    mkbu.62 . 0.82 57.9 3.9
+    mkbu.62 . 1.35 27.7 -75.7
+    mkbu.62 . 0.49 138.3 67.9
+    ###extend left
+    mkbu.62 mkbu.63 0.83 188.2 -5.9
+    # ###extend auto
+    mkbu.63 . 0.47 164.5 2.4
+    mkbu.63 . 0.51 243.0 5.0
+    mkbu.63 . 0.40 309.2 4.1
+    mkbu.63 . 0.24 343.5 78.8
+    mkbu.63 . 0.46 135.7 -83.2
+    ###extend left
+    mkbu.63 mkbu.64 1.75 115.9 -9.1
+    # ###extend auto
+    mkbu.64 . 0.67 276.7 -44.1
+    mkbu.64 . 0.44 137.4 -44.7
+    mkbu.64 . 2.14 28.5 -25.5
+    mkbu.64 . 1.66 217.0 -58.8
+    mkbu.64 . 0.41 300.4 72.5
+    mkbu.64 . 1.33 243.9 -25.0
+    mkbu.64 . 2.00 217.3 -25.0
+    ###extend left
+    mkbu.64 mkbu.65 1.07 230.8 -36.8
+    # ###extend auto
+    mkbu.65 . 0.22 131.6 40.7
+    mkbu.65 . 0.19 312.9 3.3
+    mkbu.65 . 0.85 305.3 67.1
+    mkbu.65 . 0.70 60.1 -79.7
+    ###extend left
+    mkbu.65 mkbu.66 1.60 223.0 -11.3
+    # ###extend auto
+    mkbu.66 . 0.75 303.1 8.1
+    mkbu.66 . 0.50 263.3 1.0
+    mkbu.66 . 0.56 19.2 -15.6
+    mkbu.66 . 0.33 341.8 70.6
+    mkbu.66 . 0.63 308.3 -86.3
+    ###extend left
+    mkbu.66 mkbu.67 1.06 214.5 -11.0
+    ###extend left
+    mkbu.21 mkbu.68 4.61 277.5 77.9
+    # ###extend auto
+    mkbu.68 . 4.14 38.4 -0.1
+    mkbu.68 . 2.09 176.4 -2.4
+    mkbu.68 . 1.32 134.1 -6.3
+    mkbu.68 . 2.82 147.1 6.7
+    extend right
+    mkbu.68 mkbu.69 4.76 148.9 -0.6
+    # ###extend auto
+    mkbu.69 . 2.33 342.9 2.4
+    mkbu.69 . 1.30 317.1 8.9
+    mkbu.69 . 2.45 328.3 -10.8
+    mkbu.69 . 1.99 25.4 6.8
+    mkbu.69 . 1.78 52.9 5.3
+    mkbu.69 . 1.67 41.3 -16.5
+    mkbu.69 . 0.62 60.5 80.6
+    mkbu.69 . 0.58 240.8 -83.0
+    ###extend right
+    mkbu.69 mkbu.70 2.84 40.2 5.7
+    # ###extend auto
+    mkbu.70 . 0.50 55.9 85.0
+    mkbu.70 . 0.75 232.6 -84.7
+    mkbu.70 . 0.61 169.0 3.9
+    mkbu.70 . 0.17 354.5 8.8
+    ###extend vertical
+    mkbu.70 mkbu.71 3.13 99.0 -5.1
+    # ###extend auto
+    mkbu.71 . 1.41 264.8 78.4
+    mkbu.71 . 1.06 46.0 -79.0
+    mkbu.71 . 0.63 230.0 -1.9
+    mkbu.71 . 0.19 54.7 27.6
+    ###extend left
+    mkbu.71 mkbu.72 2.48 129.6 -10.0
+    # ###extend auto
+    mkbu.72 . 1.49 149.6 79.0
+    mkbu.72 . 1.59 77.8 -70.8
+    mkbu.72 . 1.97 209.3 -11.6
+    ###extend left
+    mkbu.72 mkbu.73 4.10 193.5 -35.8
+    # ###extend auto
+    mkbu.73 . 1.77 66.6 -8.0
+    mkbu.73 . 2.94 66.1 -57.4
+    mkbu.73 . 3.29 93.8 67.9
+    mkbu.73 . 0.16 237.2 29.6
+    ###extend right
+    mkbu.73 mkbu.74 6.45 65.9 38.1
+    # ###extend auto
+    mkbu.74 . 0.20 339.1 37.3
+    mkbu.74 . 1.47 138.8 2.9
+    mkbu.74 . 1.13 155.8 83.9
+    mkbu.74 . 1.22 67.4 -81.5
+    mkbu.74 . 2.09 266.1 -24.0
+    mkbu.74 . 2.80 222.1 -28.1
+    ###extend right
+    mkbu.74 mkbu.75 6.94 73.7 25.2
+    # ###extend auto
+    mkbu.75 . 1.51 13.7 21.8
+    mkbu.75 . 4.28 31.1 26.9
+    mkbu.75 . 3.54 60.7 27.2
+    mkbu.75 . 0.76 174.9 18.2
+    mkbu.75 . 2.09 111.6 24.1
+    mkbu.75 . 0.77 20.1 78.0
+    mkbu.75 . 0.26 21.8 -73.2
+    ###extend vertical
+    mkbu.75 mkbu.76 5.14 97.8 22.2
+    # ###extend auto
+    mkbu.76 . 0.65 351.0 2.0
+    mkbu.76 . 0.30 294.8 80.4
+    mkbu.76 . 0.38 17.9 -65.2
+    ###extend right
+    mkbu.76 mkbu.77 4.25 74.5 24.0
+    # ###extend auto
+    mkbu.77 . 0.65 282.5 -12.1
+    mkbu.77 . 1.94 332.2 15.7
+    mkbu.77 . 1.08 179.8 -20.1
+    mkbu.77 . 0.67 44.8 -72.0
+    ###extend right
+    mkbu.77 mkbu.78 7.71 344.4 18.7
+    ##extend right
+    mkbu.73 mkbu.79 5.08 142.9 -27.1
+    # ###extend auto
+    mkbu.79 . 4.16 192.2 78.2
+    mkbu.79 . 1.55 76.3 -83.7
+    mkbu.79 . 0.96 234.3 4.9
+    mkbu.79 . 0.77 145.3 4.2
+    mkbu.79 . 2.66 189.2 -10.7
+    ###extend left
+    mkbu.79 mkbu.80 2.98 189.4 -10.1
+    # ###extend auto
+    mkbu.80 . 0.90 64.0 4.9
+    mkbu.80 . 1.37 66.2 -51.8
+    mkbu.80 . 4.20 84.1 82.6
+    ###extend left
+    mkbu.80 mkbu.81 7.23 132.8 -7.1
+    # ###extend auto
+    mkbu.81 . 0.54 52.8 12.5
+    mkbu.81 . 2.78 167.6 77.4
+    mkbu.81 . 1.55 53.6 -68.7
+    ###extend left
+    mkbu.81 mkbu.82 5.55 154.2 -8.6
+    # ###extend auto
+    mkbu.82 . 3.20 134.7 80.6
+    mkbu.82 . 1.58 118.8 -86.3
+    mkbu.82 . 0.84 58.6 1.0
+    ###extend left
+    mkbu.82 mkbu.83 5.19 122.9 -7.7
+    # ###extend auto
+    mkbu.83 . 0.64 225.4 5.1
+    mkbu.83 . 4.11 232.7 63.8
+    mkbu.83 . 1.59 229.8 -66.7
+    ###extend left
+    mkbu.83 mkbu.84 3.45 171.7 -41.4
+    # ###extend auto
+    mkbu.84 . 0.67 117.8 7.2
+    mkbu.84 . 8.37 210.4 71.6
+    mkbu.84 . 0.91 111.8 -51.5
+    ###extend left
+    mkbu.84 mkbu.85 3.91 181.4 -39.4
+    # ###extend auto
+    mkbu.85 . 7.57 297.4 85.1
+    mkbu.85 . 3.58 154.6 58.5
+    mkbu.85 . 1.82 23.2 2.8
+    mkbu.85 . 0.96 54.5 -71.0
+    ###extend left
+    mkbu.85 mkbu.86 2.26 149.9 -1.2
+    # ###extend auto
+    mkbu.86 . 1.33 289.1 10.4
+    mkbu.86 . 7.75 293.4 64.0
+    mkbu.86 . 1.62 239.4 -54.7
+    ###extend left
+    mkbu.86 mkbu.87 4.17 197.9 -2.6
+    # ###extend auto
+    mkbu.87 . 4.89 73.2 82.8
+    mkbu.87 . 1.21 113.5 -75.4
+    mkbu.87 . 1.00 75.0 -10.5
+    ###extend left
+    mkbu.87 mkbu.88 8.48 163.1 -5.2
+    # ###extend auto
+    mkbu.88 . 1.63 35.3 9.4
+    mkbu.88 . 2.85 191.5 83.0
+    mkbu.88 . 1.18 47.3 -55.4
+    mkbu.88 . 3.58 312.3 12.8
+    ###extend left
+    mkbu.88 mkbu.89 2.44 115.2 -15.0
+    # ###extend auto
+    mkbu.89 . 0.65 227.5 -7.5
+    mkbu.89 . 3.30 228.3 67.6
+    mkbu.89 . 4.70 177.6 24.6
+    mkbu.89 . 1.23 198.7 -71.2
+    ###extend left
+    mkbu.89 mkbu.90 5.04 180.6 -3.3
+    # ###extend auto
+    mkbu.90 . 1.47 38.7 -0.0
+    mkbu.90 . 2.58 33.1 61.9
+    mkbu.90 . 2.10 351.9 -80.4
+    ###extend left
+    mkbu.90 mkbu.91 3.56 109.9 -18.1
+    # ###extend auto
+    mkbu.91 . 1.40 243.9 21.0
+    mkbu.91 . 2.84 234.5 55.4
+    mkbu.91 . 2.31 260.5 -57.0
+    mkbu.91 . 7.72 174.9 -54.3
+    ###extend left
+    mkbu.91 mkbu.92 4.94 180.8 -3.9
+    # ###extend auto
+    mkbu.92 . 1.15 267.9 70.0
+    mkbu.92 . 2.31 286.8 5.5
+    mkbu.92 . 7.19 353.3 -66.6
+    mkbu.92 . 4.97 286.2 -59.2
+    mkbu.92 . 8.70 31.3 -58.0
+    mkbu.92 . 1.70 228.2 -58.4
+    ###extend left
+    mkbu.92 mkbu.93 2.07 176.0 -8.6
+    # ###extend auto
+    mkbu.93 . 0.86 84.5 43.4
+    mkbu.93 . 0.82 75.8 -2.8
+    mkbu.93 . 2.23 55.2 -66.5
+    ###extend left
+    mkbu.93 mkbu.94 3.14 144.5 -24.8
+    # ###extend auto
+    mkbu.94 . 1.82 265.4 -2.2
+    mkbu.94 . 0.81 207.3 79.7
+    mkbu.94 . 1.43 295.9 -61.3
+    mkbu.94 . 6.67 171.5 -45.3
+    mkbu.94 . 5.57 200.0 -49.1
+    ###extend left
+    mkbu.94 mkbu.95 6.95 171.4 -40.3
+    # ###extend auto
+    mkbu.95 . 1.79 339.3 67.1
+    mkbu.95 . 1.00 225.8 -69.0
+    mkbu.95 . 3.10 264.6 15.2
+    mkbu.95 . 1.06 175.6 5.2
+    mkbu.95 . 1.23 122.8 -0.6
+    mkbu.95 . 1.67 148.9 32.3
+    ###extend left
+    mkbu.95 mkbu.96 7.69 159.2 -7.3
+    # ###extend auto
+    mkbu.96 . 1.06 36.3 1.9
+    mkbu.96 . 1.43 47.1 35.2
+    mkbu.96 . 0.93 48.7 -42.9
+    mkbu.96 . 0.61 232.1 -84.0
+    ###extend left
+    mkbu.96 mkbu.97 3.10 131.6 6.7
+    # ###extend auto
+    mkbu.97 . 1.20 118.6 -18.3
+    mkbu.97 . 2.65 177.7 -22.8
+    mkbu.97 . 1.42 353.5 -81.3
+    mkbu.97 . 1.87 302.9 -9.7
+    ###extend left
+    mkbu.97 mkbu.98 10.82 156.0 -14.3
+    # ###extend auto
+    mkbu.98 . 0.81 23.6 75.9
+    mkbu.98 . 3.07 30.9 35.7
+    mkbu.98 . 1.76 92.3 8.1
+    mkbu.98 . 2.36 145.3 4.9
+    ###extend left
+    mkbu.98 mkbu.99 3.64 117.0 10.3
+    # ###extend auto
+    mkbu.99 . 0.36 78.1 74.0
+    mkbu.99 . 0.39 282.2 -71.8
+    mkbu.99 . 0.79 171.3 -3.8
+    mkbu.99 . 1.96 142.7 -9.4
+    ###extend left
+    mkbu.99 mkbu.100 3.31 158.8 -12.3
+    # ###extend auto
+    mkbu.100 . 0.89 87.1 3.9
+    mkbu.100 . 2.93 148.3 -6.7
+    mkbu.100 . 3.33 167.4 -9.8
+    mkbu.100 . 1.27 189.9 -24.1
+    mkbu.100 . 2.91 237.1 -20.6
+    mkbu.100 . 3.61 196.0 -32.2
+    ###extend left
+    mkbu.100 mkbu.101 4.39 219.8 -32.7
+    # ###extend auto
+    mkbu.101 . 0.51 19.1 -84.6
+    mkbu.101 . 1.38 91.0 66.0
+    mkbu.101 . 5.22 155.8 -9.7
+    mkbu.101 . 4.59 177.3 -12.1
+    ###extend left
+    mkbu.101 mkbu.102 7.40 167.3 -16.7
+    # ###extend auto
+    mkbu.102 . 2.37 157.6 0.4
+    mkbu.102 . 2.64 284.8 1.2
+    mkbu.102 . 0.48 246.5 75.3
+    mkbu.102 . 1.06 21.5 -82.8
+    ###extend left
+    mkbu.102 mkbu.103 7.86 197.9 -27.5
+    # ###extend auto
+    mkbu.103 . 0.83 250.0 76.4
+    mkbu.103 . 1.32 117.2 3.0
+    mkbu.103 . 0.38 305.7 27.7
+    ###extend left
+    mkbu.103 mkbu.104 1.37 212.1 -5.9
+    # ###extend auto
+    mkbu.104 . 3.13 330.6 -1.1
+    mkbu.104 . 3.09 321.8 1.0
+    mkbu.104 . 3.38 302.7 -6.8
+    mkbu.104 . 2.45 321.8 -15.4
+    mkbu.104 . 0.30 310.6 80.3
+    mkbu.104 . 1.07 234.2 -84.0
+    mkbu.104 . 3.28 328.7 1.0
+    mkbu.104 . 2.24 198.0 -24.2
+    mkbu.104 . 2.58 166.6 -25.2
+    ###extend left
+    mkbu.104 mkbu.105 1.61 167.7 -24.1
+    # ###extend auto
+    mkbu.105 . 0.25 127.5 76.1
+    mkbu.105 . 0.74 33.6 -76.6
+    mkbu.105 . 0.62 128.4 -1.5
+    mkbu.105 . 0.46 180.4 5.5
+    ###extend left
+    mkbu.105 mkbu.106 1.49 163.4 -16.2
+    # ###extend auto
+    mkbu.106 . 0.87 208.0 5.0
+    mkbu.106 . 2.34 158.3 -6.6
+    ###extend left
+    mkbu.106 PTRMKBU1 2.31 158.9 -12.8  # PTRMKBU1 au dessus af
+    # ###extend auto
+    PTRMKBU1 . 1.40 117.7 12.1
+    PTRMKBU1 . 4.22 103.3 15.4
+    PTRMKBU1 . 2.57 68.8 19.6
+    PTRMKBU1 . 1.90 11.7 23.2
+    PTRMKBU1 . 2.15 207.2 -18.6
+    PTRMKBU1 . 3.47 229.5 -19.6
+    PTRMKBU1 . 2.50 241.7 -18.3
+    PTRMKBU1 . 1.21 269.0 -3.9
+    extend left
+    PTRMKBU1 mkbu.108 4.00 230.1 -25.2
+    # ###extend auto
+    mkbu.108 . 2.41 117.0 -11.9
+    mkbu.108 . 1.24 86.6 -77.8
+    mkbu.108 . 1.00 142.4 54.1
+    #extend left
+    mkbu.108 mkbu.109 3.68 216.0 -42.6
+    extend right
+    PTRMKBU1 mkbu.110 4.94 49.3 28.7
+    mkbu.110 . 0.73 166.9 0.8
+    mkbu.110 . 0.44 110.2 86.6
+    mkbu.110 . 0.51 38.0 -70.9
+
+  
+    mkbu.110 mkbu.111 5.90 96.9 14.4
+    mkbu.111 . 0.88 219.8 1.3
+    mkbu.111 . 0.81 167.5 83.3
+    ###extend left
+    mkbu.111 mkbu.112 1.83 160.0 -4.5
+    ###extend vertical
+    PTRMKBU1 mkbu.113 4.94 91.7 16.0  # début laminoir 
+    # ###extend auto
+    mkbu.113 . 1.46 21.4 44.2
+    mkbu.113 . 4.58 49.2 31.3
+    mkbu.113 . 0.85 114.2 28.6
+    mkbu.113 . 0.61 186.8 73.2
+    extend right
+    mkbu.113 mkbu.114 4.18 155.3 -14.5
+    # ###extend auto
+    mkbu.114 . 0.29 164.2 66.3
+    mkbu.114 . 1.26 98.4 20.8
+    mkbu.114 . 0.62 257.2 1.2
+    ###extend left
+    mkbu.114 mkbu.115 7.28 175.2 -21.3
+    # ###extend auto
+    mkbu.115 . 0.35 83.0 77.0
+    mkbu.115 . 0.97 83.7 23.0
+    mkbu.115 . 0.37 243.8 7.5
+    mkbu.115 . 3.34 138.7 -11.3
+    ###extend left
+    mkbu.115 mkbu.116 2.98 158.4 -20.5
+    # ###extend auto
+    mkbu.116 . 0.28 145.3 78.6
+    mkbu.116 . 1.20 91.3 19.1
+    mkbu.116 . 0.94 284.8 3.2
+    ###extend left
+    mkbu.116 mkbu.117 3.95 167.2 -24.0
+    # ###extend auto
+    mkbu.117 . 0.39 174.1 59.4
+    ###extend left
+    mkbu.117 mkbu.118 7.09 162.0 -23.5
+    # ###extend auto
+    mkbu.118 . 0.47 100.2 75.7
+    mkbu.118 . 1.79 124.7 7.9
+    mkbu.118 . 4.07 303.8 6.4
+    ###extend left
+    mkbu.118 mkbu.119 3.41 151.2 -8.6
+    # ###extend auto
+    mkbu.119 . 0.51 347.4 -76.2
+    mkbu.119 . 3.12 101.6 0.5
+    mkbu.119 . 1.65 279.6 -8.3
+    ###extend left
+    mkbu.119 mkbu.120 4.06 145.3 -20.7
+    # ###extend auto
+    mkbu.120 . 0.39 212.1 54.2
+    mkbu.120 . 0.71 75.2 21.5
+    mkbu.120 . 0.91 233.1 -21.4
+    ###extend left
+    mkbu.120 mkbu.121 3.10 160.3 -22.4  # fin laminoir 
+    # ###extend auto
+    mkbu.121 . 0.97 13.4 -54.9
+    mkbu.121 . 1.93 138.8 -16.6
+    mkbu.121 . 5.36 201.8 -36.8
+    mkbu.121 . 2.07 243.3 -36.7
+    ###extend left
+    mkbu.121 mkbu.122 4.94 207.4 -35.9
+    # ###extend auto
+    mkbu.122 . 1.69 4.6 80.4
+    mkbu.122 . 1.36 40.5 -77.5
+    mkbu.122 . 1.53 123.5 15.0
+    mkbu.122 . 2.00 353.0 21.6
+    ###extend left
+    mkbu.122 mkbu.123 2.80 222.8 -2.5
+    # ###extend auto
+    mkbu.123 . 1.27 179.8 55.5
+    mkbu.123 . 2.22 87.0 10.3
+    mkbu.123 . 1.88 233.4 16.0
+    ###extend left
+    mkbu.123 mkbu.124 11.18 165.8 -15.4
+    # ###extend auto
+    mkbu.124 . 1.31 353.9 -71.5
+    mkbu.124 . 0.56 61.2 8.5
+    mkbu.124 . 2.00 264.2 9.4
+    ###extend left
+    mkbu.124 mkbu.125 3.78 187.1 -34.8
+    # ###extend auto
+    mkbu.125 . 1.05 198.6 82.7
+    mkbu.125 . 1.81 101.1 5.8
+    mkbu.125 . 1.78 242.1 9.3
+    ###extend left
+    mkbu.125 mkbu.126 3.13 163.2 -9.0
+    # ###extend auto
+    mkbu.126 . 0.73 216.2 -40.8
+    mkbu.126 . 0.64 249.8 67.8
+    mkbu.126 . 0.82 24.9 -68.6
+    ###extend left
+    mkbu.126 mkbu.127 2.75 168.6 -25.8
+    # ###extend auto
+    mkbu.127 . 1.14 195.3 65.3
+    mkbu.127 . 1.93 86.2 8.6
+    ###extend left
+    mkbu.127 mkbu.128 2.31 213.8 10.7
+    # ###extend auto
+    mkbu.128 . 1.57 86.8 -6.9
+    mkbu.128 . 0.70 210.7 79.9
+    ###extend left
+    mkbu.128 mkbu.129 2.29 157.8 -16.7
+    # ###extend auto
+    mkbu.129 . 1.24 137.1 68.9
+    mkbu.129 . 0.48 350.4 -76.4
+    mkbu.129 . 2.79 92.3 14.9
+    mkbu.129 . 1.54 245.2 -17.5
+    mkbu.129 . 4.37 155.3 7.3
+    ###extend left
+    mkbu.129 mkbu.130 5.78 168.6 -10.7
+    # ###extend auto
+    mkbu.130 . 1.08 14.0 -74.6
+    mkbu.130 . 5.35 78.6 -19.6
+    mkbu.130 . 2.88 258.2 -21.2
+    mkbu.130 . 8.29 166.1 -47.8
+    ###extend left
+    mkbu.130 mkbu.131 9.16 151.1 -41.3  # 3 rouleaux de tuyau
+    # ###extend auto
+    mkbu.131 . 0.67 188.8 58.5
+    mkbu.131 . 3.90 290.1 14.7
+    mkbu.131 . 3.05 104.6 -0.5
+    ###extend left
+    mkbu.131 mkbu.132 12.92 200.2 -24.3
+    # ###extend auto
+    mkbu.132 . 2.91 76.2 -4.1
+    mkbu.132 . 1.38 262.0 -29.7
+    mkbu.132 . 0.92 3.3 -75.0
+    ###extend left
+    mkbu.132 PTRMKBU2 8.84 147.5 -19.8  # sur concrétion PTRMKBU2
+    # ###extend auto
+    PTRMKBU2 . 1.15 58.6 43.6
+    PTRMKBU2 . 3.33 233.4 -6.3
+    PTRMKBU2 . 1.21 218.8 75.8
+    ###extend left
+    PTRMKBU2 mkbu.134 13.38 163.0 -7.8
+  endcenterline
+
+endsurvey
