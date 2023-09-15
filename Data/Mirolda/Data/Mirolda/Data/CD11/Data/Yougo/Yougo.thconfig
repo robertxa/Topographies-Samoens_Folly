@@ -281,15 +281,15 @@ select MC-Yougo-coupe-tot@Yougo
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Yougo-2022.kml -layout my_layout
- export model -fmt kml -o Outputs/Yougo-2022-model.kml -enable all
+# export model -fmt kml -o Outputs/Yougo-2022-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseYougo-2022.sql
+#export database -fmt sql -o Outputs/databaseYougo-2022.sql
 
-export continuation-list -o Outputs/ContinuationsYougo-2022.html
+#export continuation-list -o Outputs/ContinuationsYougo-2022.html
 #export continuation-list -o Outputs/ContinuationsYougo-2022.kml
-export survey-list -location on -o Outputs/SurveysYougo2022.html
+#export survey-list -location on -o Outputs/SurveysYougo2022.html
 #export cave-list -location on -o Outputs/CavesYougo2022.html

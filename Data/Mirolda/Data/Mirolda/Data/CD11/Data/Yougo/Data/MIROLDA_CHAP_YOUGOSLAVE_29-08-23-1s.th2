@@ -4,7 +4,7 @@ encoding utf-8
 
 # 2023.09.01 created by TopoDroid v. 5.1.40
 
-scrap MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1s -projection extended -scale [0 0 9.8425 0 0 0 1 0 m]
+scrap MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1s -projection extended -station-names "" "@MIROLDA_CHAP_YOUGOSLAVE_29-08-23" -author 2023 "Charlotte Honiat" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 9.8425 0 0 0 1 0 m]
 
 line wall
   41.24 -75.79
@@ -2663,7 +2663,7 @@ line u:splay -visibility off
   1560.38 173.48
 endline
 
-point 49.21 -59.06 station -name "0"
+point 49.21 -59.06 station -name "PTRYOLRAP06"
 point 93.29 -12.60 station -name "1"
 point 121.72 -4.93 station -name "2"
 point 154.58 46.56 station -name "3"
@@ -2678,12 +2678,12 @@ point 538.40 185.46 station -name "11"
 point 567.03 134.63 station -name "12"
 point 530.29 243.41 station -name "13"
 point 562.68 251.35 station -name "14"
-point 622.03 271.82 station -name "15"
+point 622.03 271.82 station -name "PTRCHAP01"
 point 697.71 279.85 station -name "16"
 point 785.69 262.12 station -name "17"
 point 828.90 231.64 station -name "18"
 point 853.59 230.46 station -name "19"
-point 936.89 240.65 station -name "20"
+point 936.89 240.65 station -name "PTRCHAP02"
 point 887.76 259.05 station -name "21"
 point 865.34 261.80 station -name "22"
 point 834.68 248.90 station -name "23"
@@ -2699,7 +2699,7 @@ point 557.09 247.97 station -name "32"
 point 531.07 233.61 station -name "33"
 point 496.61 242.06 station -name "34"
 point 460.10 240.55 station -name "35"
-point 445.31 255.74 station -name "36"
+point 445.31 255.74 station -name "PTRCHAP03"
 point 416.93 262.22 station -name "37"
 point 428.77 252.60 station -name "38"
 point 367.32 220.18 station -name "39"
@@ -2716,13 +2716,14 @@ point 1592.59 152.45 station -name "49"
 point 1672.17 122.86 station -name "50"
 point 1711.66 120.91 station -name "51"
 point 1753.65 118.98 station -name "52"
-point 1782.03 119.36 station -name "53"
+point 1782.03 119.36 station -name "PTRCHAP04"
 point 1514.86 228.22 station -name "54"
 point 1560.38 182.12 station -name "55"
 
-
 endscrap
-scrap MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1s1 -projection extended -scale [0 0 9.8425 0 0 0 1 0 m]
+
+
+scrap MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1s1 -projection extended -station-names "" "@MIROLDA_CHAP_YOUGOSLAVE_29-08-23" -author 2023 "Charlotte Honiat" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 9.8425 0 0 0 1 0 m]
 
 line wall
   777.19 246.81
@@ -3188,7 +3189,7 @@ point 557.09 247.97 station -name "32"
 point 531.07 233.61 station -name "33"
 point 496.61 242.06 station -name "34"
 point 460.10 240.55 station -name "35"
-point 445.31 255.74 station -name "36"
+point 445.31 255.74 station -name "PTRCHAP03"
 point 416.93 262.22 station -name "37"
 point 428.77 252.60 station -name "38"
 point 367.32 220.18 station -name "39"

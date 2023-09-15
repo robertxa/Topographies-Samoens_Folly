@@ -45,7 +45,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		join SP-Maj-Amonts-5@Amont-Majestueuse SP-Bivouac-3@Bivouac270
 		# jonction avec les Yougoslaves
 		equate PTRCHAPLR09@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.Yougo PTRCHAPLR09@majamonts2023.Amont-Majestueuse
-			#join SP-Maj-Amonts-2@Amont-Majestueuse ??@Yougo
+		join SP-Maj-Amonts-2@Amont-Majestueuse MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p1@Yougo
 		# Vieux TRO
 		equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
 
@@ -67,9 +67,6 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	input Data/Aval-Dragounet/Aval-Dragounet-tot.th
 		equate PTRRDBF4@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
 		join SP-Aval-Dragounet-1@Aval-Dragounet SP-riviere_tonitruante-1@500
-	# Aval de la rivière Dragounet, données OLD
-	#input Data/Aval-Dragounet-OLD/Aval-Dragounet-tot.th
-	#	equate 384@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
 
 	# Aval vers -900 m
 	input Data/-900/900-tot.th

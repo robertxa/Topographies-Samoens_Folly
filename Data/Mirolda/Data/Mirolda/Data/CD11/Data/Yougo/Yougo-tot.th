@@ -20,11 +20,11 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23.th
 		equate PTRYOLRAP06@MIROLDA_CHAP_YOUGOSLAVE_29-08-23 2.8@Yougo
 		input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1p.th2
-			#join SP_YOUGOSLAVE_29-08-23-1p SP-Yougo-1	# Revoir le dessin...
+			join SP_YOUGOSLAVE_29-08-23-1p SP-Yougo-1
 	input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.th
 		equate PTRCHAP04@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	PTRCHAP04@MIROLDA_CHAP_YOUGOSLAVE_29-08-23
 		input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p.th2
-			#join ?? SP_YOUGOSLAVE_29-08-23-1p	# Revoir le dessin...
+			join MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p SP_YOUGOSLAVE_29-08-23-1p
 
 	input Data/Yougo_p35_pts_noir.th
 		##equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
@@ -47,6 +47,7 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 
 	# Import du dessin en coupe
 	input Data/Yougo-coupe.th2
+	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1s.th2
 
 	# Import des maps
 	input Yougo-maps.th
