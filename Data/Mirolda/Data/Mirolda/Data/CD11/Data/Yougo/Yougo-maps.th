@@ -32,8 +32,23 @@ map MP-Yougo-Amonts -title "Gouffre Mirolda - Réseau des Yougoslaves"
 
 endmap
 
+map MP-Enfoire -title "Gouffre Mirolda : Diaclase rectiligne de l'Enfoiré"
+	SP-Enfoire2023-6
+	break
+	SP-Enfoire2023-5
+	break
+	SP-Enfoire2023-4
+	break
+	SP-Enfoire2023-3
+	break
+	SP-Enfoire2023-2
+	break
+	SP-Enfoire2023-1
+endmap
 
 map MP-Yougo-plan-tot -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	MP-Enfoire
+	break
 	MP-Yougo-Amonts
 	break
 	MP-Yougo-Cabane

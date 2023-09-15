@@ -93,7 +93,12 @@ line pit -close on
   426.58 -47.24 429.66 -35.59 419.51 -39.44
 endline
 
-line wall
+line wall -outline in -subtype invisible
+  433.3 -20.41
+  428.47 -17.11
+endline
+
+line wall -outline in
   426.52 -39.1
   427.18 -32.4 430.5 -26.41 433.3 -20.41
   smooth off
@@ -101,7 +106,7 @@ endline
 
 point 435.25 -10.5 continuation -attr Code Q -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "A voir ?"
 
-line wall
+line wall -outline in
   428.47 -17.11
   424.14 -27.61 417.1 -36.69 411.62 -46.55
   smooth off
@@ -247,8 +252,8 @@ line wall
 endline
 
 line wall
-  284.63 -41.9
-  278.66 -43.0 274.18 -41.14 269.51 -37.62
+  283.37 -42.19
+  277.4 -43.29 274.18 -41.14 269.51 -37.62
   smooth off
 endline
 
@@ -264,13 +269,13 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   315.13 -51.48
   323.57 -48.98 331.36 -52.07 339.58 -53.75
   smooth off
 endline
 
-line wall
+line wall -outline in
   339.58 -53.75
   350.77 -55.07 387.44 -44.67 383.5 -28.67
   380.69 -17.28 348.26 0.16 364.84 9.55
@@ -296,7 +301,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   364.84 9.55
   375.11 14.34 380.76 21.77 387.73 30.55
   smooth off
@@ -323,7 +328,7 @@ line wall -subtype invisible
   smooth off
 endline
 
-line wall
+line wall -outline in
   387.73 30.55
   393.13 38.16 400.96 37.61 408.48 40.54
   410.78 41.44 412.93 44.81 414.9 45.42
@@ -352,7 +357,7 @@ line slope -reverse on
   smooth off
 endline
 
-line wall
+line wall -outline in
   447.48 50.43
   463.56 64.33 497.8 54.24 516.65 65.33
   522.75 68.92 522.37 77.78 530.2 74.53
@@ -398,12 +403,12 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   530.2 74.53
   535.85 71.31 530.21 63.19 533.24 59.51
   539.19 52.28 553.89 42.41 559.64 55.38
-  560.85 58.11 559.92 58.92 560.1 61.68
-  560.35 65.48 562.49 67.53 563.6 70.99
+  560.85 58.11 560.0 59.5 560.1 61.68
+  560.27 65.49 562.49 67.53 563.6 70.99
   564.54 73.92 563.24 78.19 564.46 80.8
   565.56 83.17 572.73 87.14 575.12 88.25
   579.62 90.33 583.14 86.34 586.45 83.89
@@ -411,7 +416,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   600.21 45.65
   594.97 27.12 585.6 6.89 573.57 -8.45
   568.53 -14.88 559.18 -23.13 556.3 -30.74
@@ -449,13 +454,13 @@ line slope -reverse on
   smooth off
 endline
 
-line wall
+line wall -outline in
   446.76 -51.16
   445.9 -33.02 440.94 -39.3 426.52 -39.1
   smooth off
 endline
 
-line wall
+line wall -outline in
   583.58 -100.96
   583.15 -105.45 578.29 -112.58 573.35 -113.52
   569.38 -114.27 565.74 -110.77 561.9 -109.51
@@ -511,7 +516,7 @@ line slope -reverse on
   smooth off
 endline
 
-line wall
+line wall -outline in
   411.62 -46.55
   401.19 -59.49 386.89 -65.85 371.94 -71.79
   smooth off
@@ -549,7 +554,7 @@ line pit
   smooth off
 endline
 
-line wall
+line wall -outline in
   371.94 -71.79
   349.14 -82.78 331.05 -49.38 315.13 -51.48
   smooth off

@@ -111,15 +111,15 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 -60 nw
+  map-header 0 0 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
 
   # Par défaut, la légende est de 14 cm de largeur
   legend-width 21 cm
@@ -277,7 +277,7 @@ select MC-Yougo-coupe-tot@Yougo
  export model -enable all -o Outputs/Yougo-2022.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Yougo-2022 -layout my_layout
+ #export map -proj plan -fmt esri -o Outputs/Yougo -layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Yougo-2022.kml -layout my_layout

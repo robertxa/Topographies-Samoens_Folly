@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -376.0 -753.75 1583.25 262.25
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -377.0 -755.0 1576.0 263.0
+##XTHERION## xth_me_area_zoom_to 200
 
 # 2023.09.01 created by TopoDroid v. 5.1.40
 
@@ -65,6 +65,7 @@ line slope
   312.25 -68.75 255.75 -84.25 242.75 -88.75
   229.75 -93.25 190.0 -99.5 172.0 -96.25
   154.0 -93.0 108.75 -64.0 107.0 -62.75
+  smooth off
   l-size 5.0
 endline
 
@@ -80,36 +81,42 @@ endline
 line slope
   200.5 -316.75
   200.5 -316.75 183.75 -317.25 174.5 -314.75
+  smooth off
   l-size 4.0
 endline
 
 line slope
   200.0 -289.0
   200.0 -289.0 183.0 -294.0 177.25 -293.75
+  smooth off
   l-size 4.0
 endline
 
 line slope
   168.0 -239.25
   168.0 -239.25 150.25 -257.5 140.5 -260.5
+  smooth off
   l-size 5.0
 endline
 
 line slope
   141.25 -210.25
   141.25 -210.25 117.75 -224.25 106.5 -223.5
+  smooth off
   l-size 5.0
 endline
 
 line slope
   126.75 -141.75
   126.75 -141.75 98.0 -160.25 85.25 -160.75
+  smooth off
   l-size 5.0
 endline
 
 line slope
   100.25 -108.5
   100.25 -108.5 85.0 -121.25 72.0 -121.75
+  smooth off
   l-size 5.0
 endline
 
@@ -238,7 +245,7 @@ line wall
   smooth off
 endline
 
-line wall -reverse on -outline in
+line wall -reverse on
   1266.6 -461.38
   1283.1 -452.22 1274.45 -458.03 1291.78 -442.87
   smooth off
@@ -446,11 +453,13 @@ endline
 line pit
   759.5 -601.75
   759.5 -601.75 771.75 -598.0 771.75 -592.0
+  smooth off
 endline
 
 line pit
   795.25 -553.75
   795.25 -553.75 785.5 -566.75 785.5 -576.5
+  smooth off
 endline
 
 line pit
@@ -458,22 +467,26 @@ line pit
   775.25 -532.25 759.75 -547.75 761.5 -555.75
   763.25 -563.75 768.75 -576.75 774.75 -572.5
   780.75 -568.25 786.5 -549.0 790.5 -548.0
+  smooth off
 endline
 
 line pit
   780.5 -520.5
   780.5 -520.5 801.5 -535.25 810.5 -524.5
+  smooth off
 endline
 
 line pit
   786.26 -483.67
   786.26 -483.67 780.49 -483.25 780.37 -489.5
+  smooth off
 endline
 
 line pit
   758.5 -503.25
   758.5 -503.25 766.25 -502.0 770.0 -495.0
   773.75 -488.0 773.0 -463.25 777.75 -463.25
+  smooth off
 endline
 
 line pit
@@ -488,6 +501,7 @@ point 784.5 -607.75 water-flow -orientation 292.1
 line pit
   841.75 -592.5
   841.75 -592.5 868.75 -574.0 864.0 -566.75
+  smooth off
 endline
 
 point 838.25 -541.0 height -value [+4 m]
@@ -542,12 +556,14 @@ line wall -reverse on -subtype pit
   781.62 -517.65 781.78 -511.84 771.13 -504.92
   767.11 -502.31 761.51 -502.88 757.59 -500.13
   753.89 -497.53 749.38 -494.99 748.83 -490.5
+  smooth off
   altitude .
 endline
 
 line wall -reverse on -subtype pit -outline none
   748.83 -490.5
   747.55 -480.05 767.06 -465.62 772.8 -464.14
+  smooth off
 endline
 
 line wall -reverse on -subtype pit
@@ -598,6 +614,7 @@ line label -text "Amonts du réseau des Yougoslaves
   -247.0 -46.0
   -247.0 -46.0 -19.53 115.7 224.0 133.0
   407.0 146.0 784.0 -20.0 816.0 -23.0
+  smooth off
 endline
 
 area clay
@@ -678,8 +695,8 @@ line wall
 endline
 
 line wall -reverse on
-  515.06 -327.16
-  496.5 -302.97 504.79 -301.26 474.65 -293.34
+  515.78 -327.19
+  497.22 -303.0 504.79 -301.26 474.65 -293.34
   smooth off
 endline
 
@@ -709,12 +726,14 @@ point 490.75 -183.5 label -text "R1.5"
 line pit
   496.75 -199.75
   496.75 -199.75 509.25 -223.25 514.75 -227.75
+  smooth off
 endline
 
 line slope
   554.75 -231.25
   554.75 -231.25 548.25 -208.75 541.0 -205.0
   533.75 -201.25 521.75 -195.75 517.25 -192.0
+  smooth off
   l-size 5.0
 endline
 
@@ -722,6 +741,7 @@ line slope
   538.75 -231.75
   538.75 -231.75 532.25 -212.5 526.5 -209.0
   520.75 -205.5 507.25 -204.0 504.25 -196.5
+  smooth off
   l-size 5.0
 endline
 
@@ -735,30 +755,35 @@ endline
 line slope
   563.75 -368.25
   563.75 -368.25 534.25 -369.75 533.0 -379.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   552.0 -336.25
   552.0 -336.25 520.25 -337.5 517.25 -351.0
+  smooth off
   l-size 5.0
 endline
 
 line slope
   534.25 -303.75
   534.25 -303.75 503.25 -305.0 503.0 -318.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   520.75 -284.75
   520.75 -284.75 490.5 -291.5 491.75 -307.75
+  smooth off
   l-size 5.0
 endline
 
 line slope
   508.5 -253.75
   508.5 -253.75 492.0 -251.0 493.25 -244.25
+  smooth off
   l-size 5.0
 endline
 
@@ -773,30 +798,35 @@ endline
 line slope
   464.5 -249.5
   464.5 -249.5 455.5 -264.75 445.0 -264.5
+  smooth off
   l-size 5.0
 endline
 
 line slope
   502.0 -232.5
   502.0 -232.5 487.75 -214.5 487.25 -207.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   487.75 -233.75
   487.75 -233.75 480.0 -218.75 480.0 -213.75
+  smooth off
   l-size 5.0
 endline
 
 line slope
   478.0 -231.25
   478.0 -231.25 471.0 -223.75 471.0 -218.25
+  smooth off
   l-size 5.0
 endline
 
 line slope
   467.0 -234.0
   467.0 -234.0 457.25 -226.25 462.25 -219.25
+  smooth off
   l-size 5.0
 endline
 
@@ -919,7 +949,7 @@ line wall -subtype invisible
   197.05 -351.27
 endline
 
-line wall -reverse on -outline in
+line wall -reverse on
   123.31 -148.24
   121.89 -178.49 128.74 -205.86 150.13 -228.28
   166.67 -245.62 186.14 -250.22 193.69 -275.12
