@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 1702.804 836.6618
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {393.702 1 1.0} {629.923 s42_0} Sado-Bozzo-map.xvi 0 {}
 
 
@@ -466,7 +466,7 @@ line wall
   smooth off
 endline
 
-point 486.5 543.25 label -text "réseau Sado Bozzo"
+point 126.5 492.25 label -orientation 287.8 -text "réseau Sado Bozzo"
 
 point 344.822 631.283 station -name s43_30
 
@@ -748,6 +748,8 @@ line wall
   801.0 599.0 804.75 597.25 810.75 599.25
   smooth off
 endline
+
+point 978.0 311.0 label -text "<center>escalade du<br>Hachoir<br>à Cochon"
 
 line wall
   810.75 599.25

@@ -42,6 +42,8 @@ line wall -subtype pit
   smooth off
 endline
 
+point 1223.5 272.0 dig
+
 line wall
   1172.25 265.0
   1172.25 265.0 1188.75 282.75 1188.75 289.5
@@ -272,6 +274,41 @@ line wall
   911.25 466.5 895.0 475.75 891.0 478.0
   887.0 480.25 872.25 489.75 872.25 489.75
   smooth off
+endline
+
+point 1278.75 313.5 continuation -attr Code A -attr Cavite "F126" -text "Galerie non topographiée, en face du pendule"
+
+line wall -reverse on -subtype invisible
+  1236.5 312.0
+  1205.0 317.0
+endline
+
+line wall -subtype invisible
+  1237.25 321.0
+  1206.0 323.75
+endline
+
+line wall -reverse on -subtype unsurveyed
+  1264.75 310.75
+  1264.75 310.75 1251.25 310.0 1246.75 310.5
+  1242.25 311.0 1236.5 312.0 1236.5 312.0
+  smooth off
+endline
+
+line wall -reverse on -subtype unsurveyed
+  1237.25 321.0
+  1237.25 321.0 1251.0 318.5 1254.25 318.5
+  1257.5 318.5 1266.0 317.25 1266.0 317.25
+  smooth off
+endline
+
+line pit
+  869.75 498.0
+  869.75 498.0 862.0 488.75 872.25 489.75
+endline
+
+line wall -subtype pit
+  872.25 489.75
   872.25 489.75 884.0 491.0 887.75 494.75
   891.5 498.5 898.0 504.25 899.75 505.0
   smooth off
@@ -295,10 +332,14 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -subtype pit
   898.0 511.25
   898.0 511.25 889.0 506.0 885.25 502.75
   881.5 499.5 875.5 496.75 869.75 495.25
+endline
+
+line wall
+  869.75 495.25
   864.0 493.75 851.75 491.0 846.75 489.75
   841.75 488.5 824.25 483.75 819.75 482.5
   815.25 481.25 815.0 474.75 813.5 477.25
@@ -557,11 +598,13 @@ line wall
   254.0 803.5 233.75 797.75 226.5 794.0
   219.25 790.25 202.25 779.75 194.75 779.5
   187.25 779.25 150.0 775.75 145.75 775.25
+  smooth off
 endline
 
 line wall -subtype unsurveyed
   145.75 775.25
   141.5 774.75 48.75 763.75 41.75 761.5
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -571,6 +614,7 @@ line wall -subtype unsurveyed
   42.0 756.0
   altitude .
   45.98 756.45 139.0 768.5 146.5 767.75
+  smooth off
 endline
 
 line wall
@@ -626,6 +670,7 @@ line wall -subtype pit
   321.25 752.5
   321.25 752.5 329.25 750.5 334.5 753.25
   339.75 756.0 344.5 766.25 346.75 771.25
+  smooth off
 endline
 
 line wall -subtype pit
@@ -654,6 +699,7 @@ point 409.75 675.0 label -text "R5"
 line pit
   393.75 663.75
   393.75 663.75 388.0 660.25 386.0 667.5
+  smooth off
 endline
 
 point 146.015 771.894 u:boss -scale xs
