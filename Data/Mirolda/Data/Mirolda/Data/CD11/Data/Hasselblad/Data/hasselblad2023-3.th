@@ -18,7 +18,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    extend right
+    extend left
     PTRHABUXR01 BUCH2 5.69 293.9 -35.1
     # extend auto
     BUCH2 . 1.58 259.7 6.4
@@ -27,7 +27,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH2 . 4.41 249.3 -80.0
     BUCH2 . 1.89 77.2 51.4
     BUCH2 . 7.59 87.6 65.4
-    extend right
+    extend left
     BUCH2 BUCH3 5.48 227.1 -71.2
     # extend auto
     BUCH3 . 8.36 185.1 -30.3
@@ -45,7 +45,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH2 . 1.11 321.3 26.5
     BUCH2 . 6.79 336.9 44.6
     BUCH2 . 2.29 358.9 50.4
-    extend right
+    extend left
     BUCH2 BUCH5 9.62 344.2 45.7
     # extend auto
     BUCH5 . 1.86 338.6 -82.7
@@ -70,7 +70,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH5 . 9.60 162.1 -23.6
     BUCH5 . 5.41 177.2 -26.9
     BUCH5 . 2.90 197.6 -1.6
-    extend right
+    extend left
     BUCH5 BUCH6 12.04 348.9 27.0  # 2 AF entre Buch5 et Buch6 + 2 AF en BUCH6
     # extend auto
     BUCH6 . 1.94 28.9 48.9
@@ -88,9 +88,9 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH6 . 3.67 246.3 18.7
     BUCH6 . 2.47 239.0 46.9
     BUCH6 . 2.77 280.0 53.9
-    extend left
-    BUCH6 BUCH7 16.93 89.3 21.7
     extend right
+    BUCH6 BUCH7 16.93 89.3 21.7
+    extend left
     BUCH6 BUCH8 6.63 299.1 44.7 # 1 AF
     # extend auto
     BUCH8 . 2.49 59.9 -8.3
@@ -107,7 +107,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH8 . 3.27 135.1 -29.0
     BUCH8 . 2.51 156.8 -37.8
     BUCH8 . 3.14 89.4 -25.6
-    extend right
+    extend left
     BUCH8 BUCH9 4.92 22.0 21.5
     # extend auto
     BUCH9 . 3.32 263.4 0.3
@@ -120,7 +120,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH9 . 2.49 347.3 25.7
     BUCH9 . 7.08 222.7 -28.2
     BUCH9 . 1.53 169.5 -42.8
-    extend right
+    extend left
     BUCH9 BUCH10 5.40 357.7 -36.6
     BUCH9 BUCH11 15.77 330.0 26.6 # 1 AF avant Buch11
     # extend auto
@@ -139,7 +139,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH11 . 8.73 5.4 34.9
     BUCH11 . 9.72 17.3 26.5
     BUCH11 . 4.02 3.9 21.2
-    extend right
+    extend left
     BUCH11 BUCH12 15.55 353.1 26.8  # 1 AF entre Buch11 et Buch12
     # extend auto
     BUCH12 . 1.35 258.7 -3.8
@@ -163,7 +163,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH12 . 5.13 150.7 -10.3
     BUCH12 . 13.09 340.6 11.5
     BUCH12 . 14.92 340.6 11.5
-    extend right
+    extend left
     BUCH12 PTRHABUCH1 13.10 340.8 11.6  # 2 AF entre Buch12 et PTRHABUCH1
     # extend auto
     PTRHABUCH1 . 2.19 327.4 21.3
@@ -418,7 +418,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH29 . 1.15 277.2 -0.2
     BUCH29 . 1.71 225.1 -5.6
     BUCH29 . 5.30 172.1 -25.2
-    extend left
+    extend right
     BUCH29 BUCH30 5.11 171.9 -25.1
     # extend auto
     BUCH30 . 0.55 9.5 4.4
@@ -460,7 +460,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH33 . 2.15 210.0 -8.3
     extend left
     BUCH33 BUCH34 4.33 266.9 -57.9
-    extend right
+    extend left
     PTRHABUCH1 BUCH35 12.85 302.1 9.1
     # extend auto
     BUCH35 . 1.41 51.2 29.5
@@ -480,7 +480,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH35 . 4.46 124.4 -15.0
     BUCH35 . 4.99 114.8 -8.0
     BUCH35 . 4.96 99.4 -11.1
-    extend right
+    extend left
     BUCH35 BUCH36 12.15 348.6 5.8
     # extend auto
     BUCH36 . 4.12 35.0 37.1
@@ -501,7 +501,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH36 . 5.00 3.6 37.1
     BUCH36 . 0.25 215.5 -75.1
     BUCH36 . 2.71 226.9 -25.8
-    extend right
+    extend left
     BUCH36 BUCH37 15.51 214.2 -17.4
     # extend auto
     BUCH37 . 4.34 8.8 50.0
@@ -522,7 +522,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH37 . 4.98 278.7 -4.6
     BUCH37 . 7.96 293.3 -5.4
     BUCH37 . 10.71 299.4 -5.5
-    extend right
+    extend left
     BUCH37 BUCH38 12.29 300.4 -7.9
     # extend auto
     BUCH38 . 3.65 348.4 52.3
@@ -536,7 +536,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH38 . 5.92 281.4 -7.0
     BUCH38 . 2.03 255.7 -8.7
     BUCH38 . 0.38 238.4 -8.2
-    extend right
+    extend left
     BUCH38 BUCH40 8.47 16.3 -5.0  # 1 AF
     # extend auto
     BUCH40 . 0.47 135.1 -6.5
@@ -550,7 +550,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH40 . 5.88 25.3 40.3
     BUCH40 . 2.63 9.2 45.6
     BUCH40 . 4.78 46.9 30.3
-    extend right
+    extend left
     BUCH40 PTRHABUCH3 3.92 37.2 23.1
     # extend auto
     PTRHABUCH3 . 2.09 111.1 10.4
@@ -564,6 +564,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     extend right
     PTRHABUCH3 BUCH42 27.99 191.4 73.7
     PTRHABUCH3 BUCH43 20.57 278.8 70.3
+    extend left
     BUCH38 BUCH44 14.49 272.7 -23.1
     # extend auto
     BUCH44 . 14.79 87.5 0.6
@@ -580,7 +581,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH44 . 3.23 20.0 53.7
     BUCH44 . 1.90 13.7 -53.0
     BUCH44 . 8.24 310.8 14.8
-    extend right
+    extend left
     BUCH44 BUCH45 22.11 330.5 16.7
     # extend auto
     BUCH45 . 3.67 24.3 80.7
@@ -602,7 +603,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH45 . 16.58 158.9 -18.6
     BUCH45 . 7.56 136.5 -13.0
     BUCH45 . 12.24 140.6 -15.5
-    extend right
+    extend left
     BUCH45 BUCH46 30.86 339.6 21.1
     # extend auto
     BUCH46 . 8.51 172.6 -13.9
@@ -619,7 +620,7 @@ survey hasselblad2023-3 -title "G. Hasselblad, portion remontante (2023)"
     BUCH46 . 9.51 317.9 19.8
     BUCH46 . 11.84 325.1 21.5
     BUCH46 . 19.77 333.5 27.7
-    extend right
+    extend left
     BUCH46 PTRHABUCH04 16.47 333.7 24.0
     # extend auto
     PTRHABUCH04 . 1.61 22.4 79.6

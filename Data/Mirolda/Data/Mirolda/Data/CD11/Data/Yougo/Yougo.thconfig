@@ -260,17 +260,17 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/Yougo-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Yougo-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/Yougo-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Yougo-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Yougo-plan-tot@Yougo
-select MC-Yougo-coupe-tot@Yougo
+#select MC-Yougo-coupe-tot@Yougo
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Yougoslaves-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Yougoslaves-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
