@@ -194,7 +194,7 @@ layout my_layout-coupe
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 1000
+   base-scale 1 1400
 
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -235,13 +235,13 @@ layout my_layout-coupe
    # si la cavite est importante et qu il y a beaucoup d explorateurs
    statistics explo-length off
    # Afficher developpement et profondeur de la cavite
-   statistics topo-length on
+   statistics topo-length off
 
    # Nous voulons une legende pour expliquer les symboles. "on" imprimera
    # seulement la legende des symboles dessines sur la topo, si l on veut
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
-   legend on
+   legend off
 
    # Par defaut, la legende est de 14 cm de largeur
    legend-width 14.5 cm
@@ -264,7 +264,6 @@ layout my_layout-coupe
    # les points et le nom des stations topos
    symbol-hide line survey
    #symbol-hide point cave-station
-
    #debug station-names
 
    # Specifier qu il faut imprimer une grille
@@ -273,7 +272,7 @@ layout my_layout-coupe
 
    # Specifier le pas de la grille, ici 100x100x100 metres
    # (Trois dimensions, oui, ça sert pour la coupe aussi) 
-   grid-size 10 10 10 m
+   grid-size 10 10 50 m
    # Si nous ne voulons pas de grille :
    #grid off
    # Affiche les coordonnées de la grille <off (pas de coordonnées) / all (sur tous les croisements) / border (uniquement aux niveau des croix aux bords de la carte>
@@ -293,10 +292,10 @@ layout my_layout-coupe
       \edef\nostring{}            % empty string
       \ifx\temp\nostring          % 900 if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
-         \cavename={900} 		
+         \cavename={Zone du Bivouac -900 m} 		
       \else % if not empty keep the value set by therion, or assign an override cavename here
       \fi
-      \newtoks\club \club={Collectif Mirolda 2022}
+      \newtoks\club \club={Collectif Mirolda 2023}
 
    endcode  
   
@@ -309,8 +308,8 @@ endlayout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/900-coupe.xvi
 
 # Select maps
-#	select MP-900-plan-tot@900
-#  select MC-900-coupe-tot@900
+	select MP-900-plan-tot@900
+  select MC-900-coupe-tot@900
 	 
 export map -projection extended -layout my_layout-coupe -o Outputs/900-coupe.pdf 
 export map -o Outputs/900-plan.pdf -layout my_layout
@@ -320,7 +319,7 @@ export model -o Outputs/900.lox
 #export cave-list -o Outputs/900.html  
 
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/900 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/900 -layout my_layout
   
 # Export des fichiers kml
 #export map -proj plan -fmt kml -o Outputs/900.kml -layout my_layout

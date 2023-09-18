@@ -184,7 +184,7 @@ layout my_layout-coupe
    # employee, c est le cas apres avoir dessine la topo
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
-   base-scale 1 1000
+   base-scale 1 1400
 
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -254,7 +254,7 @@ layout my_layout-coupe
    # les points et le nom des stations topos
    symbol-hide line survey
    #symbol-hide point cave-station
-   debug station-names
+   #debug station-names
 
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -262,7 +262,7 @@ layout my_layout-coupe
 
    # Specifier le pas de la grille, ici 100x100x100 metres
    # (Trois dimensions, oui, ça sert pour la coupe aussi) 
-   grid-size 10 10 10 m
+   grid-size 10 10 50 m
    # Si nous ne voulons pas de grille :
    #grid off
    # Affiche les coordonnées de la grille <off (pas de coordonnées) / all (sur tous les croisements) / border (uniquement aux niveau des croix aux bords de la carte>

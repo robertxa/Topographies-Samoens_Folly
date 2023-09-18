@@ -14,7 +14,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     units compass clino degrees
     data normal from to length compass clino
     # extend auto
-    PTRMFBF08 . 10.67 126.8 70.6
+    PTRMFBF08 . 10.67 126.8 70.6  # 2 AFs au départ
     PTRMFBF08 . 3.32 68.2 33.9
     PTRMFBF08 . 3.84 101.2 22.5
     PTRMFBF08 . 4.78 134.1 11.8
@@ -48,7 +48,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     2 . 0.98 297.2 1.5
     2 . 11.98 157.8 5.4
     extend right
-    2 3 3.79 156.8 -6.4
+    2 3 3.79 156.8 -6.4 # 2 AF entre 2 et 3
     # extend auto
     3 . 2.11 96.0 -77.6
     3 . 4.72 116.7 -9.6
@@ -57,7 +57,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     3 . 0.89 268.9 26.6
     3 . 1.83 307.3 22.6
     extend right
-    3 4 4.89 134.4 -39.5
+    3 4 4.89 134.4 -39.5  # 1 AN entre 3 et 4 ; 2 AF à 4
     # extend auto
     4 . 14.31 218.0 84.6
     4 . 14.03 200.9 85.1
@@ -69,7 +69,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     4 . 6.42 201.3 -1.4
     4 . 3.01 154.3 -2.0
     extend right
-    4 5 12.20 183.5 -65.4
+    4 5 12.20 183.5 -65.4 # 2 AF après descente de 3 m (frac)
     # extend auto
     5 . 16.13 188.4 84.6
     5 . 1.54 61.2 -87.7
@@ -194,7 +194,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     19 . 2.37 168.5 5.8
     19 . 4.02 161.6 -12.4
     extend right
-    19 20 9.71 163.2 -2.1
+    19 20 9.71 163.2 -2.1 # 2 AF
     # extend auto
     20 . 9.65 117.0 86.8
     20 . 1.62 68.6 -87.2
@@ -202,7 +202,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     20 . 1.36 260.2 24.1
     20 . 0.56 314.8 9.5
     extend right
-    20 21 3.53 146.0 -30.6
+    20 21 3.53 146.0 -30.6  # 2 AF
     # extend auto
     21 . 3.86 115.3 69.3
     21 . 0.77 53.8 -44.6
@@ -248,7 +248,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     26 . 3.17 300.2 24.0
     26 . 7.49 312.9 1.3
     extend right
-    26 27 4.04 171.0 10.3
+    26 27 4.04 171.0 10.3 # 2 AF
     # extend auto
     27 . 13.62 61.3 87.6
     27 . 3.20 51.9 -81.4
@@ -257,7 +257,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     27 . 2.04 347.9 5.5
     27 . 2.12 312.9 11.5
     extend right
-    27 28 2.63 81.0 -9.1
+    27 28 2.63 81.0 -9.1  # 2 AF entre 27 et 28, puis 2 AF en 28 ; P11
     # extend auto
     28 . 1.61 176.9 69.7
     28 . 12.35 176.8 70.1
@@ -295,7 +295,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     31 . 1.01 255.7 11.6
     31 . 2.39 305.0 29.6
     extend right
-    31 32 7.17 192.7 -23.7
+    31 32 7.17 192.7 -23.7  # 2 AF
     # extend auto
     32 . 1.82 305.2 73.0
     32 . 2.61 253.6 -58.1
@@ -308,7 +308,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     32 . 9.98 256.9 -24.5
     32 . 6.12 257.0 -43.3
     extend right
-    32 33 6.60 257.1 -21.0
+    32 33 6.60 257.1 -21.0  # 1 AN avant 33 : 2 AF en 33
     # extend auto
     33 . 6.59 257.2 -21.1
     33 . 1.48 353.6 57.6
@@ -403,7 +403,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     42 . 11.88 201.9 52.1
     42 . 5.42 164.3 3.0
     extend right
-    42 43 10.89 174.1 3.0
+    42 43 10.89 174.1 3.0 # 1 AF entre 42 et 43 ; 1 AF en 43
     # extend auto
     43 . 7.32 200.0 74.9
     43 . 8.56 132.3 -77.0
@@ -415,7 +415,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     43 . 7.83 182.0 -35.5
     43 . 9.67 138.9 -59.7
     extend right
-    43 44 9.30 174.0 -48.8
+    43 44 9.30 174.0 -48.8  # Frad sur 1 AF à mi puits
     # extend auto
     44 . 11.39 306.7 69.7
     44 . 4.80 151.0 -48.3
@@ -430,7 +430,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     44 . 7.65 1.7 11.4
     44 . 1.56 342.1 28.8
     extend right
-    44 45 9.00 192.2 -18.7
+    44 45 9.00 192.2 -18.7 # 1 AF + 1 S
     # extend auto
     45 . 6.45 85.4 71.1
     45 . 0.91 70.1 -59.9
@@ -443,7 +443,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     45 . 2.19 198.5 12.8
     45 . 3.83 153.8 4.4
     extend right
-    45 46 5.59 147.3 -3.4
+    45 46 5.59 147.3 -3.4 # 1 AF + 1S, tête de puits ; Frac sur 1 AF + 1S 6 m en dessous ; P15
     # extend auto
     46 . 6.55 20.1 56.8
     46 . 15.10 120.1 -71.7
@@ -530,7 +530,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     53 . 4.61 145.8 3.4
     53 . 2.09 281.1 22.5
     extend right
-    53 54 2.50 127.5 -5.2
+    53 54 2.50 127.5 -5.2 # 1 AF + 1S
     # extend auto
     54 . 6.68 202.8 75.8
     54 . 0.95 205.5 -84.2
@@ -541,7 +541,7 @@ survey mirolda_-800 -title "Rivière de -640 m à -780 m (2023)"
     54 . 3.00 196.9 -4.8
     54 . 5.03 175.2 -7.1
     extend right
-    54 55 5.60 167.9 -14.7
+    54 55 5.60 167.9 -14.7  # 1 AF + 1S
     # extend auto
     55 . 8.90 1.2 68.4
     55 . 1.43 67.4 -81.8

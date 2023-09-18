@@ -25,7 +25,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		join SC-Yougo-Aval-01@Yougo-Aval SC-Yougo-1@Yougo
 	
 	# Galerie hasselblad
-	input Data/Hasselblad/hasselblad-tot.th
+	input Data/Hasselblad/Hasselblad-tot.th
 		equate PTRYOEPAP05@hasselblad2023-1.Hasselblad PTRYOEPAP05@Yougo-Aval.Yougo-Aval
 		join SP-hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
 
@@ -63,17 +63,19 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		equate PTRMFBF08@mirolda_-800.800 PTRMFBF0@riviere_tonitruante.500
 		## Jonction au niveau de -640
 		join SP-riviere_tonitruante-1@500 SP-800-1@800
+		join SC-800-1@800 SC-Tonitruante-1@500
 	# Aval de la rivière Dragounet
 	input Data/Aval-Dragounet/Aval-Dragounet-tot.th
 		equate PTRRDBF4@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
 		join SP-Aval-Dragounet-1@Aval-Dragounet SP-riviere_tonitruante-1@500
+		join SC-Aval-Dragounet-2@Aval-Dragounet SC-Tonitruante-1@500
 
 	# Aval vers -900 m
 	input Data/-900/900-tot.th
 		equate PTRBUCHLD4@mirolda_-800.800 PTRBUCHLD4@230906_BMPRGF_CD11.900
 		## Jonction au niveau de -800
-		#join SP-900-1@900 SP-800-1@800
 		join SP-BMPRGF-1@900 SP-800-1@800
+		join SC-900-1@900 SC-800-1@800
 
 	# Aval du CD11
 	input Data/AvalTRO/AvalTRO-tot.th

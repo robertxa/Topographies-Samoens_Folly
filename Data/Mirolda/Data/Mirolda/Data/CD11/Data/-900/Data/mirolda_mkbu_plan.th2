@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -452.0 -7703.0 13057.4795 40068.3345
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {8716.88 1 1.0} {38365.52 PTRBUCHLD4@230906_BMPRGF_CD11.900} 900-map.xvi 0 {}
 
 # 2023.09.07 created by TopoDroid v. 6.2.13
@@ -214,6 +214,7 @@ line wall
   1676.64 542.15 1681.37 536.23 1687.21 532.35
   1703.92 521.24 1722.87 509.85 1741.35 501.97
   1747.68 499.27 1769.03 491.86 1775.5 489.5
+  smooth off
 endline
 
 line wall
@@ -452,7 +453,7 @@ area sump
   l345-60--240
 endarea
 
-point 239.0 -595.0 continuation -attr Code "A" -attr Cavite "CD11" -attr Reseau "Mirolda" -text "Départ à voir ?"
+point 239.0 -595.0 continuation -attr Code "A" -attr Cavite "CD11" -attr Reseau "Mirolda" -text "Départ à voir, très étroit"
 
 line border -id l345-60--240 -close off -subtype invisible
   -33.5 -265.0
@@ -847,6 +848,7 @@ line wall -subtype presumed
   24.0 -2880.5
   24.0 -2880.5 -3.72 -2900.01 -4.22 -2902.51
   -8.03 -2921.58 -17.5 -2957.5 -13.0 -2965.0
+  smooth off
   altitude .
 endline
 
@@ -855,6 +857,7 @@ line wall -subtype presumed
   23.5 -2986.5 37.5 -2947.5 43.5 -2943.5
   49.5 -2939.5 76.0 -2940.0 76.0 -2917.5
   76.0 -2895.0 79.32 -2878.52 74.91 -2874.51
+  smooth off
 endline
 
 area water
@@ -981,6 +984,7 @@ scrap SP-900-3 -projection plan -station-names "" "@mirolda_mkbu" -author 2023 "
 line pit
   1772.0 484.0
   1772.0 484.0 1802.0 460.0 1838.0 473.0
+  smooth off
 endline
 
 line wall
@@ -1365,6 +1369,7 @@ point 3160.0 -1708.0 traverse
 line pit -reverse on
   2992.0 -2044.0
   2992.0 -2044.0 3084.0 -2016.0 3127.0 -2039.0
+  smooth off
 endline
 
 point 3255.39 -2075.26 label -text "R5"
@@ -1862,6 +1867,7 @@ line wall -subtype invisible
   4229.0 -7571.0
   altitude .
   4229.0 -7571.0 4363.0 -7508.0 4366.0 -7477.0
+  smooth off
 endline
 
 line wall
@@ -1933,7 +1939,7 @@ line wall -subtype invisible
   4278.84 -5024.48
 endline
 
-point 4390.21 -4973.53 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Criou" -attr CA "NA" -text ""
+point 4390.21 -4973.53 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Criou" -attr CA "NA" -text "Galerie à aller voir, bivouac -900?"
 
 point 1792.32 507.20 station -name "mkbu.68"
 

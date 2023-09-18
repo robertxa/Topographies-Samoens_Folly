@@ -288,6 +288,7 @@ survey mirolda_mkbu -title "Rivière du Mirolda jusqu'à -920 m (2023)"
     mkbu.0 . 6.75 233.2 -37.4
     ###extend left
     mkbu.0 mkbu.31 6.58 233.8 -39.1
+    #extend right
     mkbu.0 mkbu.32 3.69 195.7 -30.3
     # ###extend auto
     mkbu.32 . 1.28 48.1 3.3
@@ -299,6 +300,7 @@ survey mirolda_mkbu -title "Rivière du Mirolda jusqu'à -920 m (2023)"
     mkbu.32 . 0.57 161.4 79.4
     mkbu.32 . 0.55 353.7 -81.6
     ###extend left
+    extend right
     mkbu.32 mkbu.33 3.38 128.5 -18.8
     # ###extend auto
     mkbu.33 . 0.46 256.7 20.8
@@ -552,6 +554,7 @@ survey mirolda_mkbu -title "Rivière du Mirolda jusqu'à -920 m (2023)"
     ###extend left
     mkbu.66 mkbu.67 1.06 214.5 -11.0
     ###extend left
+    extend left
     mkbu.21 mkbu.68 4.61 277.5 77.9
     # ###extend auto
     mkbu.68 . 4.14 38.4 -0.1

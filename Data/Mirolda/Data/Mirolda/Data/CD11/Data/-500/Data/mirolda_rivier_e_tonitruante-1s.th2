@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -516.0 -6912.0 22728.0 200.0
-##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_area_zoom_to 50
 
 # 2022.09.14 created by TopoDroid v. 5.1.40
 
@@ -62,8 +62,8 @@ line wall
 endline
 
 line wall -reverse on
-  410.52 -148.53
-  522.34 -166.84 488.07 -164.43 595.77 -170.31
+  413.55 -150.86
+  525.37 -169.17 488.07 -164.43 595.77 -170.31
   618.2 -171.54 640.78 -170.58 663.12 -172.96
   725.78 -179.64 785.72 -197.63 847.58 -208.25
   smooth off
@@ -246,7 +246,7 @@ endline
 line rope
   19084.0 -5604.0
   18948.0 -5616.0
-  18928.0 -5896.0
+  18950.0 -5836.0
 endline
 
 line rope
@@ -368,8 +368,6 @@ endline
 point 6448.0 -3392.0 continuation -attr Code P -attr Cavite "CD11" -text "Puits à descendre ?"
 
 point 7440.0 -3344.0 continuation -attr Code P -attr Cavite "CD11" -text "Puits à descendre ?"
-
-point 19676.0 -5988.0 continuation -attr Code A -attr Cavite "CD11" -text "Perte de la rivière à topographier jusqu'au siphon"
 
 point 16240.0 -4384.0 continuation -attr Code E -attr Cavite "CD11" -text "Escalade de 20 m, arrivée en plafond"
 
@@ -1554,11 +1552,9 @@ endline
 line wall
   18581.89 -5800.15
   altitude .
-  18640.35 -5817.05 18704.57 -5834.9 18761.4 -5855.02
-  18920.67 -5911.41 18838.0 -5890.0 18930.48 -5914.01
-  18963.89 -5922.68 18996.56 -5934.8 19030.64 -5940.3
-  19093.29 -5950.41 19408.91 -6009.2 19472.0 -6016.0
-  smooth off
+  18640.35 -5817.05 18703.7 -5841.52 18764.0 -5842.0
+  18886.6 -5842.98 18944.25 -5853.76 18976.0 -5862.0
+  19009.41 -5870.67 19083.92 -5898.5 19118.0 -5904.0
 endline
 
 line wall
@@ -1592,12 +1588,10 @@ line wall -reverse on
 endline
 
 line wall -reverse on
-  19054.98 -5694.78
-  19038.77 -5700.15 19014.12 -5695.68 19006.35 -5710.88
+  19062.38 -5691.29
+  19046.17 -5696.66 19014.12 -5695.68 19006.35 -5710.88
   18983.44 -5755.68 19045.88 -5776.29 19067.24 -5784.4
   19089.67 -5792.92 19113.08 -5798.59 19136.03 -5805.59
-  19262.96 -5844.31 19393.47 -5873.28 19525.72 -5885.96
-  smooth off
 endline
 
 line wall -reverse on
@@ -1786,9 +1780,8 @@ line wall
   22242.59 -6567.9 22217.6 -6555.65 22250.1 -6578.38
   22257.34 -6583.44 22265.9 -6586.55 22272.78 -6592.09
   22287.6 -6604.01 22298.78 -6622.46 22312.37 -6635.39
-  22380.18 -6699.94 22293.79 -6607.12 22359.5 -6679.79
+  22323.44 -6645.93 22351.0 -6657.0 22368.0 -6673.0
   smooth off
-  altitude .
 endline
 
 line wall -reverse on
@@ -1799,7 +1792,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 21723.64 -6382.86 label -text "r5"
+point 21723.64 -6382.86 label -text "R5"
 
 point 22373.54 -6688.70 stalagmite
 
@@ -1818,12 +1811,10 @@ line water-flow
   17248.0 -5572.0 17476.0 -5604.0 17558.0 -5614.0
   17640.0 -5624.0 18128.0 -5734.0 18212.0 -5744.0
   18296.0 -5754.0 18574.0 -5782.0 18640.0 -5804.0
-  18706.0 -5826.0 19182.0 -5946.0 19312.0 -5970.0
-  19442.0 -5994.0 19556.0 -6012.0 19556.0 -6012.0
-  smooth off
+  18706.0 -5826.0 18880.0 -5834.0 19010.0 -5858.0
 endline
 
-point 18878.0 -6052.0 station-name -scale xs
+point 18824.0 -5570.0 station-name -scale xs -align top-left
 
 point 15076.0 -5186.0 station-name -scale xs -align center
 
@@ -1837,7 +1828,7 @@ point 13422.0 -4682.0 station-name -scale xs -align bottom-left
 
 point 16198.0 -5368.0 station-name -scale xs -align bottom-left
 
-point 22580.0 -6764.0 station-name -scale xs
+point 22339.0 -6723.0 station-name -scale xs -align left
 
 line u:splay -visibility off
   -357.1 -283.19

@@ -181,7 +181,7 @@ layout layout-coupe
   
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
-  base-scale 1 1000
+  base-scale 1 1400
 
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
   scale 1 1500
@@ -211,13 +211,13 @@ layout layout-coupe
   map-header 0 -50 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende. Voir layout ci-dessus.
-  legend on
+  legend off
 
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 19 cm
+  legend-width 14.5 cm
 
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
@@ -232,8 +232,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -259,8 +259,8 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/CD11-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/CD11-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/CD11-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/CD11-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Aval-Dragounet@Aval-Dragounet
