@@ -1,0 +1,198 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 9340.5934 3513.8286000000003
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {1626.7199999999998 1 1.0} {866.1400000000001 PTRMADG0@Yougo.Yougo} Yougo-coupe.xvi 0 {}
+
+
+
+scrap SC-Cabane-1 -projection extended -station-names "" "@cabane2023" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.01000000000067 -128.0 9340.5934 -128.0 0.0 0.0 240.50252636 0.0 m]
+
+line wall
+  988.75 943.25
+  988.75 943.25 985.25 951.75 980.0 951.75
+  974.75 951.75 968.75 950.0 963.0 950.0
+  957.25 950.0 951.5 949.25 951.5 954.0
+  951.5 958.75 949.25 962.75 952.0 963.0
+  954.75 963.25 953.5 968.5 955.0 968.5
+  956.5 968.5 958.5 968.5 958.5 968.5
+  smooth off
+endline
+
+point 773.0 859.25 height -value [-20 m]
+
+point 955.25 1011.5 height -value [-6 m]
+
+point 910.25 1033.0 height -value [+10 m]
+
+point 787.0 982.0 height -value [+5 m]
+
+line rope
+  789.5 1013.25
+  838.75 963.75
+  839.25 910.0
+endline
+
+line rope
+  875.75 941.0
+  839.25 910.0
+  838.75 763.75
+endline
+
+line rope
+  953.25 977.75
+  926.0 977.75
+  925.5 929.5
+endline
+
+point 873.7600000000002 937.0200000000001 station -name 4
+
+line wall
+  935.25 927.25
+  935.25 927.25 936.0 937.25 941.0 938.25
+  946.0 939.25 947.0 939.5 956.25 941.25
+  965.5 943.0 977.25 946.0 980.0 944.75
+  subtype clay
+  982.75 943.5 987.0 941.5 987.0 941.5
+  smooth off
+endline
+
+line wall -subtype debris
+  900.75 926.25
+  900.75 926.25 909.5 925.25 916.0 925.5
+  922.5 925.75 931.0 926.75 935.25 927.25
+  smooth off
+endline
+
+point 814.25 919.5 station-name -scale xs -align left
+
+line wall
+  808.5 753.5
+  808.5 753.5 857.5 758.75 861.25 763.25
+  865.0 767.75 849.5 882.5 853.0 886.0
+  856.5 889.5 864.5 888.75 869.5 892.75
+  874.5 896.75 875.5 912.0 875.75 918.0
+  876.0 924.0 881.0 926.5 887.75 926.5
+  altitude .
+  894.5 926.5 899.75 926.25 900.75 926.25
+  smooth off
+endline
+
+line wall
+  758.5 968.0
+  758.5 968.0 781.5 957.0 790.25 955.5
+  799.0 954.0 825.25 939.5 826.25 930.75
+  827.25 922.0 825.5 856.0 825.5 849.25
+  825.5 842.5 825.5 811.5 821.0 807.75
+  816.5 804.0 805.75 797.5 805.75 797.5
+  smooth off
+endline
+
+line wall
+  877.25 1003.75
+  877.25 1003.75 883.0 1004.5 884.25 1000.25
+  885.5 996.0 886.25 985.0 886.5 979.25
+  886.75 973.5 893.25 964.75 887.0 965.5
+  880.75 966.25 875.25 969.5 868.5 969.5
+  861.75 969.5 844.5 967.75 840.0 968.5
+  835.5 969.25 826.0 997.5 823.5 1002.75
+  821.0 1008.0 802.25 1021.75 796.75 1023.25
+  smooth off
+endline
+
+point 787.5 731.25 label -text "<center>affluent de<br>la Cabane"
+
+point 988.5 917.75 label -text "colm."
+
+line wall
+  956.5 980.0
+  956.5 980.0 950.25 980.5 949.25 979.75
+  948.25 979.0 936.75 983.0 931.0 983.0
+  925.25 983.0 915.5 981.25 912.75 986.25
+  910.0 991.25 899.25 1010.0 897.5 1012.5
+  895.75 1015.0 891.75 1019.25 887.5 1020.0
+  883.25 1020.75 880.0 1021.5 880.0 1021.5
+  smooth off
+endline
+
+point 841.3000000000002 925.8400000000001 station -name PTRJCXRCA01
+
+point 886.5 1006.0 water-flow -orientation 161.8
+
+point 755.0 1012.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Affluent de la Cabane" -text "Gros méandre remontant à continuer"
+
+point 864.75 1015.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Affluent de la Cabane" -text "Cheminée à escalader, arrivée d'eau"
+
+point 889.6300000000001 1011.7800000000001 station -name 3
+
+point 976.5800000000004 947.5200000000001 station -name 2
+
+point 914.6400000000003 934.8000000000001 station -name 1
+
+point 952.4100000000003 975.1600000000001 station -name PTRYOLRAP03
+
+endscrap
+
+
+
+scrap SC-Cabane-2 -projection extended -station-names "" "@cabane2023-2" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.01000000000067 -128.0 9340.5934 -128.0 0.0 0.0 240.50252636 0.0 m]
+
+point 1206.0 998.75 narrow-end
+
+point 1223.75 991.75 water-flow -orientation 225.9
+
+point 1193.0 986.25 station-name -scale xs -align left
+
+line wall
+  1162.75 941.0
+  1162.75 941.0 1163.5 941.75 1167.25 941.75
+  1171.0 941.75 1174.75 939.25 1174.75 939.25
+  smooth off
+endline
+
+line wall
+  1203.5 934.0
+  1203.5 934.0 1151.25 953.25 1153.5 955.25
+endline
+
+line wall -subtype clay
+  1153.5 955.25
+  1155.75 957.25 1157.0 956.75 1162.25 958.25
+  1167.5 959.75 1173.0 963.5 1177.75 964.25
+  1182.5 965.0 1184.5 965.75 1189.5 966.75
+  1194.5 967.75 1193.5 969.5 1198.0 970.75
+  1202.5 972.0 1201.5 972.5 1205.25 974.0
+endline
+
+line wall
+  1205.25 974.0
+  1209.0 975.5 1215.75 975.0 1216.25 977.5
+  altitude .
+  1216.75 980.0 1219.0 985.5 1219.0 985.5
+  smooth off
+endline
+
+line wall
+  1216.75 986.5
+  1216.75 986.5 1215.75 981.0 1213.75 980.75
+  1211.75 980.5 1213.5 980.75 1207.75 978.75
+  1202.0 976.75 1196.25 977.0 1194.0 976.0
+  1191.75 975.0 1184.0 972.5 1180.0 970.5
+  1176.0 968.5 1162.25 963.0 1158.75 963.0
+  1155.25 963.0 1157.5 964.75 1152.75 963.0
+  1148.0 961.25 1139.75 959.25 1138.25 958.0
+  1136.75 956.75 1138.5 954.25 1140.5 952.5
+  1142.5 950.75 1151.75 942.5 1151.75 942.5
+  smooth off
+endline
+
+point 1214.3200000000002 978.1700000000001 station -name 1
+
+point 1194.71 972.8800000000001 station -name PTRJCXRCA02
+
+point 1155.75 959.7700000000001 station -name 2
+
+point 1140.8000000000002 957.5100000000001 station -name 3
+
+endscrap
+
+

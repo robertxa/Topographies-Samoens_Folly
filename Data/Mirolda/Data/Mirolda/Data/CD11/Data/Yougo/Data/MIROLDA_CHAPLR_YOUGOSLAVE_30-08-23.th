@@ -273,7 +273,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     # extend auto
     28 . 6.53 169.4 -34.6
     extend right
-    PTRCHAPLR07 29 7.29 175.8 48.8
+    PTRCHAPLR07 29 7.29 175.8 48.8  # Sommet R8, 2S
     # extend auto
     29 . 7.27 179.6 49.2
     29 . 1.10 153.6 9.1
@@ -287,7 +287,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     29 . 1.36 16.5 81.2
     29 . 4.20 340.4 -68.7
     extend right
-    29 30 4.14 237.5 41.9
+    29 30 4.14 237.5 41.9 # MC, 1S
     # extend auto
     30 . 1.55 152.0 10.6
     30 . 0.47 332.8 -1.0
@@ -297,7 +297,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     30 . 2.08 96.4 -3.0
     30 . 1.68 178.7 10.7
     extend right
-    30 31 2.80 187.0 18.8
+    30 31 2.80 187.0 18.8 # MC, 2S
     # extend auto
     31 . 0.16 317.0 12.7
     31 . 0.68 144.6 3.5
@@ -334,7 +334,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     35 . 1.86 260.7 0.4
     35 . 1.75 4.4 -76.3
     extend right
-    35 36 3.73 97.5 60.6
+    35 36 3.73 97.5 60.6  # Sommet R2, 2AF
     # extend auto
     36 . 0.54 25.5 5.0
     36 . 1.17 176.2 6.9
@@ -382,7 +382,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     40 . 2.59 40.7 76.0
     40 . 1.59 66.8 -77.0
     extend right
-    40 41 0.16 78.3 1.0
+    40 41 0.16 78.3 1.0 # Sommet R2, 2 AF
     41 42 8.99 77.0 1.5
     # extend auto
     42 . 0.65 350.4 4.5
@@ -421,7 +421,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     45 . 3.48 115.2 7.4
     45 . 0.63 115.7 8.4
     extend right
-    45 46 3.46 115.0 7.3
+    45 46 3.46 115.0 7.3  # Début MC, 1 AN, 1AF
     # extend auto
     46 . 0.15 322.1 17.0
     46 . 2.67 336.2 15.1
@@ -429,7 +429,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     46 . 2.18 19.7 73.1
     46 . 0.68 102.6 -69.5
     extend right
-    46 PTRCHAPLR10 5.47 37.6 1.6 # 47 = PTRCHAPLR10
+    46 PTRCHAPLR10 5.47 37.6 1.6 # 47 = PTRCHAPLR10, MC ; 1 AN + 2 AF
     # extend auto
     PTRCHAPLR10 . 1.25 143.4 0.4
     PTRCHAPLR10 . 0.47 308.6 3.5
@@ -438,7 +438,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     PTRCHAPLR10 . 0.16 239.9 -58.1
     PTRCHAPLR10 . 5.80 239.3 -58.4
     PTRCHAPLR10 . 0.16 239.2 -58.3
-    extend right
+    extend left
     PTRCHAPLR10 48 5.75 238.7 -57.9
     # extend auto
     48 . 0.62 117.9 2.4
@@ -447,7 +447,7 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     48 . 0.16 176.1 74.9
     48 . 2.59 213.1 67.7
     48 . 0.56 201.2 -85.2
-    extend right
+    extend left
     48 PTRCHAPLR09 2.71 243.2 -1.3 # 49 = PTRCHAPLR09
     # extend auto
     PTRCHAPLR09 . 2.82 108.0 -1.1
@@ -466,11 +466,13 @@ survey MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23 -title "G. des Yougoslaves, de l'E10 a
     
     # visée vers le puits de Jonction avec la Majestueuse, voir topo du 06/09/2023
     flags duplicate
+    extend left
     PTRCHAPLR09 51 7.02 173.7 -36.0
     flags not duplicate
     
     # Topo vers les amonts des Yougoslaves, voir la topo Yougo-P35_Pts_noir du 31/08/2023
     flags duplicate
+    extend right
     PTRCHAPLR10 52 4.50 63.8 -4.8
     # extend auto
     52 . 1.22 283.5 12.5

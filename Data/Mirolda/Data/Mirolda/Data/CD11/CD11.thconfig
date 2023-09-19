@@ -229,10 +229,11 @@ layout my_layout-coupe
   map-header-bg on
   
   # Légende. Voir layout ci-dessus.
-  legend off
+  legend on
 
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
+  legend-columns 3
 
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
@@ -247,6 +248,11 @@ layout my_layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
+  #  color map-fg scraps
+  #  color-legend off
+	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
   #debug station-names
   symbol-hide line survey
   

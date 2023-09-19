@@ -64,15 +64,13 @@ survey cabane2023 -title "Amont de la Cabane (2023)"
     1 . 6.04 115.2 23.0
     1 . 7.04 120.0 16.2
     1 . 4.96 123.4 7.8
-    extend left
-  # cf colm
-    1 2 8.03 126.4 11.6
-    # extend auto
-    1 . 11.09 61.3 68.0
-    2 . 11.45 60.8 68.3
     extend right
-  # chem arr eau
-    1 3 10.28 75.5 72.0
+    1 2 8.03 126.4 11.6 # c.f. colmatée
+    # extend auto
+    #1 . 11.09 61.3 68.0
+    #2 . 11.45 60.8 68.3
+    extend left
+    1 3 10.28 75.5 72.0 # cheminée avec arrivée d'eau
     1 4 5.20 327.3 3.1
     # extend auto
     4 . 1.63 239.9 0.9
@@ -93,9 +91,8 @@ survey cabane2023 -title "Amont de la Cabane (2023)"
     4 . 3.41 125.3 -2.2
     4 . 2.58 119.0 -8.5
     4 . 2.41 156.7 -37.5
-    extend right
-  # sommet p20
-    4 PTRJCXRCA01 4.36 320.4 -19.0
+    extend left
+    4 PTRJCXRCA01 4.36 320.4 -19.0  # sommet p20
   endcenterline
 
 endsurvey

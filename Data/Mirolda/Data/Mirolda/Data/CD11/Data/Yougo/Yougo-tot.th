@@ -14,6 +14,9 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 		input Data/Cabane.th2
 			join SP-Cabane-2 SP-Yougo-1
 			join SP-Cabane-1 SP-Yougo-1
+		input Data/Cabane-coupe.th2
+			join SC-Cabane-1 SC-Yougo-1
+			join SC-Cabane-2 SC-Yougo-1 -count 2
 	input Data/cabane2023-2.th
 		equate PTRYOLRAP01@cabane2023-2 PTRYOLRAP02@Yougo
 	
@@ -21,10 +24,12 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 		equate PTRYOLRAP06@MIROLDA_CHAP_YOUGOSLAVE_29-08-23 2.8@Yougo
 		input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1p.th2
 			join SP_YOUGOSLAVE_29-08-23-1p SP-Yougo-1
+			join SC-YOUGOSLAVE_29-08-23-1s SC-Yougo-1
 	input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.th
 		equate PTRCHAP04@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	PTRCHAP04@MIROLDA_CHAP_YOUGOSLAVE_29-08-23
 		input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p.th2
 			join MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p SP_YOUGOSLAVE_29-08-23-1p
+			join SC-YOUGOSLAVE_30-08-23-1s SC-YOUGOSLAVE_29-08-23-1s
 
 	input Data/Yougo_p35_pts_noir.th
 		##equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
@@ -35,6 +40,8 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 		equate 0@Yougo2023-5 52@Yougo2023-4
 		input Data/Enfoire2023.th2
 			#join SP-Enfoire2023-1 ??Pilier
+		input Data/Enfoire2023-coupe.th2
+			join SC-YOUGOSLAVE_30-08-23-1s SC-YougoJ-1
 		
 
 	##input Data/VieuxTRO.th

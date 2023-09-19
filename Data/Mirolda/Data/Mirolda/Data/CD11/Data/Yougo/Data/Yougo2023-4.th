@@ -356,7 +356,7 @@ survey Yougo2023-4 -title "G. des Yougoslaves, amont de la salle du Pilier (2023
     34 . 9.26 219.7 77.9
     34 . 2.15 165.1 34.3
     34 . 2.79 109.2 -8.2
-    extend left
+    extend right
     34 35 2.60 106.2 31.0
     # extend auto
     35 . 1.99 236.7 -8.6
@@ -589,6 +589,7 @@ survey Yougo2023-4 -title "G. des Yougoslaves, amont de la salle du Pilier (2023
     51 . 8.74 260.0 -51.7
     51 . 8.09 243.7 -54.4
     extend left
+    extend ignore 52 51
     51 52 6.97 284.0 -66.2  # Base puits, départs, point topo sur le bloc au milieu au sol
     # extend auto
     52 . 0.77 265.8 4.3

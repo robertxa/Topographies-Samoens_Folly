@@ -40,10 +40,10 @@ survey cabane2023-2 -title "Affluent à l'amont de la Cabane (2023)"
     PTRJCXRCA02 . 0.80 104.7 -10.4
     PTRJCXRCA02 . 1.24 117.9 2.3
     PTRJCXRCA02 . 2.17 114.8 17.6
-    extend left
+    extend right
   # fond, cf colm
     PTRJCXRCA02 1 2.58 109.0 15.1
-    extend vertical
+    extend left
     PTRJCXRCA02 2 5.22 269.5 -18.6
     # extend auto
     2 . 1.17 160.7 4.1
@@ -66,7 +66,7 @@ survey cabane2023-2 -title "Affluent à l'amont de la Cabane (2023)"
     3 . 4.43 153.6 -20.7
     3 . 5.43 206.1 -34.3
     3 . 7.84 225.5 -34.2
-    extend left
+    extend right
     3 4 9.51 171.0 -21.5
     # extend auto
     4 . 0.99 287.8 -86.2
@@ -89,7 +89,7 @@ survey cabane2023-2 -title "Affluent à l'amont de la Cabane (2023)"
     4 . 1.66 345.8 -16.0
     4 . 1.40 36.2 5.8
     4 . 4.20 324.2 -0.6
-    extend right
+    extend left
   # dupl.
   flags duplicate
     4 5 7.68 308.9 0.2

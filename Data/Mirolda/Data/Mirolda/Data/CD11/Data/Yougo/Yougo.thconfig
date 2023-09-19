@@ -208,16 +208,16 @@ layout layout-coupe
   doc-title "Yougo coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 -40 nw
+  map-header 0 0 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende. Voir layout ci-dessus.
-  legend on
+  legend off
 
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 18 cm
+  legend-width 15.5 cm
 
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
@@ -233,7 +233,7 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
+  #debug station-names
   symbol-hide line survey
   
   layers on
