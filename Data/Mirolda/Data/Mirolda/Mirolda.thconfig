@@ -119,6 +119,7 @@ layout my_layout
   legend on
   # Par défaut, la légende est de 14 cm de largeur
   legend-width 21 cm
+  legend-columns 3
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
   map-comment "Massif du Criou, Samoëns, 74, France"
@@ -133,6 +134,11 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
+  #  color map-fg scraps
+  #  color-legend off
+	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
   #debug station-names
   symbol-hide line survey
 
@@ -195,13 +201,14 @@ layout layout-coupe
   doc-title "Mirolda coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  #map-header 0 0 s
+  map-header 90 90 ne
   # arrière plan de la manchette
   map-header-bg on
   # Légende. Voir layout ci-dessus.
   legend on
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
+  legend-columns 3
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "Massif du Criou, Samoëns, 74, France"
  
@@ -214,6 +221,11 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
+  #  color map-fg scraps
+  #  color-legend off
+	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
   #debug station-names
   symbol-hide line survey
   
@@ -292,7 +304,7 @@ select MC-Mirolda-coupe-tot@Mirolda
 #    au second point et à l'avant dernier point de la série.
 export database -fmt sql -o Outputs/databaseMirolda-2022.sql
 
-export continuation-list -o Outputs/ContinuationsMirolda-2022.html
+export continuation-list -o Outputs/ContinuationsMirolda.html
 #export continuation-list -o Outputs/ContinuationsMirolda-2022.kml
-export survey-list -location on -o Outputs/SurveysMirolda2022.html
+export survey-list -location on -o Outputs/SurveysMirolda.html
 #export cave-list -location on -o Outputs/CavesMirolda2022.html

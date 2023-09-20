@@ -42,19 +42,13 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 			#join SP-Enfoire2023-1 ??Pilier
 		input Data/Enfoire2023-coupe.th2
 			join SC-YOUGOSLAVE_30-08-23-1s SC-YougoJ-1
+			#join SC-Enfoire2023-1 ??Pilier
 		
 
 	##input Data/VieuxTRO.th
 	##	equate 733@VieuxTRO PTRYOLRAP04@Yougo
 		##equate 64@CD11-Affluents 6@Yougo
 	
-	## Import du dessin en plan
-	
-	
-	
-	
-
-
 	# Import du dessin en coupe
 	input Data/Yougo-coupe.th2
 	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1s.th2
