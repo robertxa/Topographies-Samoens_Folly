@@ -31,6 +31,7 @@ centerline
     # Rivière La Majestueuse vers les Amonts du CD11 --> Direction VF3
 
 flags duplicate
+extend right
 107	773	37588.0   38563.0   32.00   18.00   1.00   1.00   2.00		2	# Station 773 ici correspond à station PTRMAXR4
 773	774	38616.0   38858.0   61.00   27.00   1.00   1.00   2.00		2	#
 774	775	38858.0   39205.0   16.00   25.00   1.00   1.00   2.00		2	#
@@ -76,6 +77,7 @@ flags duplicate
 814	815	68062.0   68730.0  180.00   76.00   1.00   1.00   2.00		2	#
 815	816	68730.0   68880.0   54.00    0.00   1.00   1.00   2.00		2	#
 816	817	68880.0   69405.0   95.00   15.00   1.00   1.00   2.00		2	#  Départ de la galerie vers -300 m
+extend left
 817	818	69405.0   70342.0  320.00   -1.00   1.00   1.00   2.00		2	#
 818	819	70342.0   70765.0   74.00   -9.00   1.00   1.00   2.00		2	#
 819	820	70765.0   71397.0   45.00   10.00   1.00   1.00   2.00		2	#
@@ -83,6 +85,7 @@ flags duplicate
 821	822	72690.0   73817.0   20.00   19.00   1.00   1.00   2.00		2	#
 822	823	73817.0   74428.0   78.00   26.00   1.00   1.00   2.00		2	#
 
+extend right
 817	824	82685.0   83240.0  225.00   48.00   1.00   1.00   2.00		2	#  Galerie vers -300 m
 824	825	83663.0   84518.0  171.00  -20.00   1.00   1.00   2.00		2	#
 825	826	84649.0   85387.0  133.00  -53.00   1.00   1.00   2.00		2	#
@@ -102,7 +105,9 @@ centerline
     #calibrate counter 0 1.000
     #data topofil from to fromcount tocount compass clino left right up down
     data normal from to length compass clino left right up down	
-    #Param Deca Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std								
+    #Param Deca Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std	
+
+extend left
 823	8230	100.00    0.00   45.00   1.00   1.00   2.00		2	#  En lieu et place des stations manquantes
 8230	900	3.68   44.00   28.00   1.00   1.00   2.00		2	#
 900	901	4.95  320.00  -10.00   1.00   1.00   2.00		2	#
@@ -133,7 +138,8 @@ centerline
     calibrate counter 0 1.000
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down		
-    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std			
+    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std		
+extend left	
 913	914	50020.0   50281.0    0.00   90.00   1.00   1.00   2.00		2	#
 914	915	50281.0   50746.0  318.00    6.00   1.00   1.00   2.00		2	#
 915	916	50746.0   51472.0  346.00   15.00   1.00   1.00   2.00		2	#
@@ -162,6 +168,7 @@ centerline
 938	939	64344.0   64776.0   80.00   15.00   1.00   1.00   2.00		2	#
 939	940	64776.0   65329.0   91.00    9.00   1.00   1.00   2.00		2	#
 940	941	65329.0   65461.0  167.00   12.00   1.00   1.00   2.00		2	#
+extend right
 937	942	65624.0   66004.0  340.00   32.00   1.00   1.00   2.00		2	#
 942	943	66083.0   67342.0   55.00   20.00   1.00   1.00   2.00		2	#
 943	944	67342.0   67520.0   17.00   22.00   1.00   1.00   2.00		2	#
@@ -220,7 +227,7 @@ centerline
     #data normal from to fromcount tocount compass clino left right up down		
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std	
     # Puits Belge à A0
-
+extend left
 941	1000	62806.0   63758.0   86.00    0.00   1.00   1.00   2.00		2	#   Bivouac
 1000	1001	63758.0   66498.0   27.00   90.00   1.00   1.00   2.00		2	#
 1001	1002	66498.0   67136.0   27.00   -7.00   1.00   1.00   2.00		2	#   Puis Belge
@@ -304,7 +311,7 @@ centerline
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down		
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std		
-
+extend left
 1025	1061	80943.0   81835.0  157.00   -8.00   1.00   1.00   2.00		2	# Départ station 7
 1061	1062	81835.0   82337.0   67.00    3.00   1.00   1.00   2.00		2	#
 1062	1063	82337.0   82802.0  102.00    8.00   1.00   1.00   2.00		2	#
@@ -337,7 +344,7 @@ centerline
     #data normal from to fromcount tocount compass clino left right up down		
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std		
     # A0 à A9
-
+extend left
 1060	1070	79924.0   80864.0   32.00   28.00   1.00   1.00   2.00		2	# Départ Station A9
 1070	1071	80864.0   82194.0  126.00   -2.00   1.00   1.00   2.00		2	#
 1071	1072	82194.0   82778.0   46.00   19.00   1.00   1.00   2.00		2	#
@@ -410,6 +417,7 @@ centerline
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down		
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std			
+extend left
 1119	1120	70455.0   71055.0  130.00   -3.00   1.00   1.00   2.00		2	# Station 1119 = Station A9
 1120	1121	71055.0   71553.0  151.00  -22.00   1.00   1.00   2.00		2	#
 1121	1122	71553.0   72323.0  105.00    1.00   1.00   1.00   2.00		2	#
@@ -457,6 +465,7 @@ centerline
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down		
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std	
+extend left
 1143	1144	20930.0   21625.0   68.00   14.00   1.00   1.00   2.00		2	# Départ Station A10
 1144	1145	21625.0   22354.0   14.00   40.00   1.00   1.00   2.00		2	#
 1145	1146	22354.0   23134.0   43.00   40.00   1.00   1.00   2.00		2	# Station A7
@@ -494,6 +503,7 @@ centerline
     #data normal from to fromcount tocount compass clino left right up down		
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std		
     # P9 --> Laminoir amont hauterivien
+extend left
 1163	1164	88567.0   89415.0  120.00  -30.00   1.00   1.00   2.00		2	# Départ station P9
 1164	1165	89415.0   90029.0  175.00  -20.00   1.00   1.00   2.00		2	#
 1165	1166	90029.0   91301.0  168.00  -27.00   1.00   1.00   2.00		2	#

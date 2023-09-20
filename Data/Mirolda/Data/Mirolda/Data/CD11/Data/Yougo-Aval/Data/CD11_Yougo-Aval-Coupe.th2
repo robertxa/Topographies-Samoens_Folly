@@ -26,8 +26,8 @@ point -1248.1989999999998 297.0849999999999 station -name YO37
 point -1218.7489999999998 297.55499999999995 station -name YO36
 
 line wall -reverse on
-  -1472.75 283.0
-  -1472.75 283.0 -1452.5 282.0 -1436.5 284.0
+  -1453.5 282.5
+  -1453.5 282.5 -1452.5 282.0 -1436.5 284.0
   -1420.5 286.0 -1403.75 290.5 -1395.0 293.5
   -1386.25 296.5 -1365.25 300.5 -1355.0 302.75
   -1344.75 305.0 -1325.5 306.5 -1309.0 307.25
@@ -47,8 +47,6 @@ line wall -reverse on
   smooth off
 endline
 
-point -1430.5 169.75 height -value [-30 m]
-
 line wall -close on
   -1325.5 195.0
   -1325.5 195.0
@@ -67,15 +65,11 @@ line wall -reverse on
   -1361.75 230.5
   -1361.75 230.5 -1365.5 229.5 -1369.5 228.25
   -1373.5 227.0 -1375.25 226.5 -1380.25 226.5
+  altitude .
   -1385.25 226.5 -1388.75 226.25 -1394.5 225.75
   -1400.25 225.25 -1414.0 225.0 -1418.0 225.0
   -1422.0 225.0 -1429.0 226.25 -1435.25 225.5
   -1441.5 224.75 -1447.0 226.0 -1450.25 224.75
-  -1453.5 223.5 -1457.0 224.25 -1457.0 219.75
-  -1457.0 215.25 -1456.68 211.11 -1456.75 209.0
-  -1457.25 194.5 -1457.0 199.5 -1456.25 190.5
-  -1455.58 182.42 -1456.5 171.0 -1456.25 164.0
-  smooth off
 endline
 
 point -1287.5 251.5 height -value [-10 m]
@@ -96,7 +90,7 @@ point -977.5 302.25 height -value [-5 m]
 
 point -995.3889999999999 332.9149999999999 station -name YO31
 
-point -935.0 277.0 station-name
+point -935.0 277.0 station-name -scale xs
 
 point -934.7089999999998 334.56499999999994 station -name PTRYOEPAP03
 
@@ -121,9 +115,8 @@ line border -visibility off
 endline
 
 line border -visibility off
-  -1472.75 283.0
-  -1472.0 218.75
-  -1456.25 164.0
+  -1453.5 282.5
+  -1450.25 224.75
 endline
 
 line border -reverse on -visibility off
@@ -324,7 +317,7 @@ point -299.30899999999986 666.8549999999999 station -name YO13
 
 point -272.04899999999986 672.2849999999999 station -name YO12
 
-point -204.75 629.0 station-name
+point -204.75 629.0 station-name -scale xs -align right
 
 point -206.06899999999985 672.045 station -name PTRYOEPAP01
 
@@ -495,11 +488,21 @@ endline
 
 point -1229.5 277.25 water-flow -orientation 265.9
 
-point -626.0 642.0 label -text ["Etr. ?"]
+area u:galerie
+  l133--1336-258
+endarea
 
-point -759.0 574.0 label -text ["Escalade"]
+line border -id l133--1336-258 -close on
+  -1342.5 304.5
+  -1342.5 304.5 -1352.5 280.5 -1352.5 267.0
+  -1352.5 253.5 -1353.5 241.5 -1347.5 241.0
+  -1341.5 240.5 -1337.0 245.0 -1337.0 257.5
+  -1337.0 270.0 -1332.5 287.5 -1335.5 293.5
+  -1338.5 299.5 -1342.5 304.5 -1342.5 304.5
+  smooth off
+endline
 
-point -1194.0 191.0 label -text ["P? Affluent"]
+point -626.0 642.0 label -text "etr. ?"
 
 point -1142.0 349.0 helictites
 
@@ -515,11 +518,13 @@ point -1412.0 332.0 air-draught -orientation 262.4 -subtype summer
 
 point -820.0 473.0 air-draught -orientation 254.1 -subtype summer
 
-point -1193.0 221.0 continuation
+point -1343.5 277.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "E? Affluent"
 
-point -685.5 592.0 continuation
+point -1203.5 196.5 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "P? Affluent"
 
-point -584.0 643.0 continuation
+point -681.0 598.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Arrivée de la Cabane ?"
+
+point -584.0 643.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Arrivée étroite à escalader ?"
 
 point -123.0 776.5 air-draught -orientation 232.3 -subtype summer
 
@@ -552,15 +557,11 @@ line rope
   -1147.75 285.25
 endline
 
-point -1347.5 341.75 station-name
+point -1347.5 341.75 station-name -scale xs
 
-point -1473.75 315.25 station-name
+point -1473.75 315.25 station-name -scale xs
 
-line rope
-  -1408.5 241.75
-  -1468.25 239.75
-  -1468.0 167.5
-endline
+point -1427.5 230.0 stalagmite
 
 line rope
   -1284.0 291.75

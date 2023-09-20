@@ -212,8 +212,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -240,7 +240,7 @@ layout layout-coupe
 
 # Export des xvi pour le dessin si besoin
 #export map -fmt xvi -layout xviexport -o Data/Hasselblad-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Hasselblad-coupe.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Hasselblad-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Hasselblad@Hasselblad

@@ -28,6 +28,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	input Data/Hasselblad/Hasselblad-tot.th
 		equate PTRYOEPAP05@hasselblad2023-1.Hasselblad PTRYOEPAP05@Yougo-Aval.Yougo-Aval
 		join SP-hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
+		join SC-Hasselblad-1@Hasselblad SC-Yougo-Aval-01@Yougo-Aval
 
 	# Galerie de l'Ardèche
 	input Data/Ardeche/Ardeche-tot.th
