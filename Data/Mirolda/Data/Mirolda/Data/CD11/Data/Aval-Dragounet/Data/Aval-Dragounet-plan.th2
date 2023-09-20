@@ -325,6 +325,7 @@ endline
 line pit
   716.0 -880.0
   716.0 -880.0 789.0 -809.0 776.0 -770.0
+  smooth off
 endline
 
 point 969.0 -660.0 label -text "R3"
@@ -334,16 +335,19 @@ point 577.0 -661.0 label -text "R5"
 line pit
   793.0 -733.0
   793.0 -733.0 800.0 -673.0 749.0 -687.0
+  smooth off
 endline
 
 line pit
   903.0 -630.0
   903.0 -630.0 933.0 -540.0 851.0 -572.0
+  smooth off
 endline
 
 line pit -reverse on
   589.0 -1152.0
   589.0 -1152.0 631.0 -1097.0 671.0 -1169.0
+  smooth off
 endline
 
 line wall
@@ -570,7 +574,7 @@ line wall
   smooth off
 endline
 
-point 881.54 -904.61 continuation -attr Code Q -attr Cavite "CD11" -attr Reseau "Criou" -text "Départ à voir ? Non renseigné"
+point 881.54 -904.61 continuation -attr Code Q -attr Cavite "CD11" -attr Reseau "Criou" -text "Départ en hauteur, boueux et étroit"
 
 point 829.02 -1032.64 clay
 

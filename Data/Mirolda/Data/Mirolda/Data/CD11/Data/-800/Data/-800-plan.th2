@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -492.0 -9824.0 1660.0 148.0
-##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {195.65999999999985 1 1.0} {-238.36000000000058 PTRMFBF08} -800-map.xvi 0 {}
 
 # 2023.09.03 created by TopoDroid v. 6.2.13
@@ -40,7 +40,7 @@ endline
 
 point 692.0 -1032.0 height -value [-12 m]
 
-point -58.0 -384.0 height -value [-3 m]
+point -58.0 -384.0 height -value [-10 m]
 
 line pit
   344.0 -362.0
@@ -569,14 +569,28 @@ line wall
 endline
 
 line wall -reverse on
-  -127.07 -3557.82
-  -99.61 -3611.66 -61.67 -3659.78 -15.24 -3698.26
+  -162.0 -3528.0
+  -134.54 -3581.84 -61.67 -3659.78 -15.24 -3698.26
+  smooth off
+endline
+
+area sump
+  l264--128--3568
+endarea
+
+line label -id l264--128--3568 -close on
+  -162.0 -3528.0
+  -206.0 -3560.0
+  -206.0 -3560.0 -214.0 -3612.0 -192.0 -3612.0
+  -170.0 -3612.0 -128.0 -3582.0 -128.0 -3570.0
+  -128.0 -3558.0 -120.0 -3552.0 -128.0 -3542.0
+  -136.0 -3532.0 -162.0 -3528.0 -162.0 -3528.0
   smooth off
 endline
 
 line wall
-  -160.68 -3623.68
-  -121.87 -3658.87 -94.98 -3707.13 -53.69 -3739.75
+  -206.0 -3560.0
+  -167.19 -3595.19 -94.98 -3707.13 -53.69 -3739.75
   -34.25 -3755.11 -18.12 -3760.15 4.56 -3769.9
   smooth off
 endline
@@ -744,7 +758,7 @@ endline
 
 point 902.0 -5874.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Criou" -attr CA "NA" -text "Perte à descendre"
 
-point -226.0 -3538.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Criou" -text "Arrivée de la rivière, à voir ?"
+point -274.0 -3450.0 continuation -attr Code S -attr Cavite "CD11" -attr Reseau "Criou" -text "Arrivée de la rivière, siphon étroit"
 
 point 894.0 -3618.0 continuation -attr Code S -attr Cavite "CD11" -attr Reseau "Criou" -text "Siphon"
 
