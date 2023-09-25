@@ -342,7 +342,7 @@ line wall
   smooth off
 endline
 
-point 1070.0 -1619.5 continuation -attr Code 'D' -attr Cavite 'CD11' -attr Reseau "Aval-Dragounet"  -attr CA "" -attr text "étroiture argileuse"
+point 1070.0 -1619.5 continuation -attr Code 'D' -attr Cavite 'CD11' -attr Reseau "Aval-Dragounet"  -attr CA "" -text "étroiture argileuse"
 
 line wall -subtype clay
   855.5 -1746.5

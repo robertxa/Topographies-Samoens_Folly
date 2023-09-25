@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -290.5 1951.5 419.0
+##XTHERION## xth_me_area_adjust -129.5 -290.5 1951.5 419.0
 ##XTHERION## xth_me_area_zoom_to 200
 
 # 2023.09.01 created by TopoDroid v. 5.1.40
@@ -29,13 +29,20 @@ line rope
   1410.5 104.0
 endline
 
-line wall -id CHA_up
-  1811.0 191.0
-  1787.0 191.5 1769.86 193.2 1747.9 196.19
+line rope
+  1692.5 159.5
+  1728.0 161.0
+  1774.0 165.0
+  1803.0 167.5
+endline
+
+line wall
+  1812.94 193.46
+  1791.2 184.96 1769.86 193.2 1747.9 196.19
   smooth off
 endline
 
-line wall -id CHA_down -reverse on
+line wall -reverse on
   1802.3 136.93
   1796.36 135.42 1782.5 140.0 1770.5 128.0
   smooth off
@@ -48,7 +55,7 @@ line wall
   smooth off
 endline
 
-line wall -id CHA_G
+line wall
   1659.62 130.11
   1710.01 152.51 1707.62 133.31 1708.5 128.0
   smooth off
@@ -427,9 +434,21 @@ point 1545.27 223.4 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "
 
 point 1759.01 147.64 crystal
 
+point 1747.12 139.36 crystal
+
+point 1790.68 155.31 stalagmite -scale xs
+
 point 1745.58 161.81 stalagmite -scale xs
 
-point 1775.43 182.01 curtain -scale xs
+point 1747.68 187.04 stalactite -scale xs
+
+point 1793.74 177.68 stalactite -scale xs
+
+point 1770.04 185.13 curtain
+
+point 1770.43 185.51 curtain -scale xs
+
+point 1745.7 172.62 traverse
 
 line wall
   844.66 1.1
@@ -1760,13 +1779,6 @@ endline
 line u:splay -visibility off
   1654.65 145.81
   1681.11 159.34
-endline
-
-line rope
-  1696.5 163.0
-  1724.0 166.5
-  1755.0 168.5
-  1778.5 166.5
 endline
 
 line u:splay -visibility off

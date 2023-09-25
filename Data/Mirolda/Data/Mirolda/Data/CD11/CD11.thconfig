@@ -309,9 +309,9 @@ select MC-CD11-coupe-tot@CD11
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -proj plan -fmt pdf -o Outputs/CD11-2023-plan.pdf -layout my_layout
- export map -proj plan -fmt pdf -o Outputs/CD11-2023-plan-continuations.pdf -layout my_layout-continuations
+ #export map -proj plan -fmt pdf -o Outputs/CD11-2023-plan-continuations.pdf -layout my_layout-continuations
  export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/CD11-2023-coupe.pdf
- #export map -projection extended -fmt pdf -layout my_layout-coupe-continuations -o Outputs/CD11-2022-coupe-continuations.pdf
+ #export map -projection extended -fmt pdf -layout my_layout-coupe-continuations -o Outputs/CD11-coupe-continuations.pdf
 #export atlas -o Outputs/CD11-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

@@ -34,15 +34,23 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 	input Data/Yougo_p35_pts_noir.th
 		##equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
 		equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	# ??? pour le 49
+		input Data/Yougo_p35_pts_noir-plan.th2
+				join SP-ptsNoir-1 MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p	### New
+			input Data/Yougo_p35_pts_noir-coupe.th2
+				join CHA_up:0 ptsNoir_aval_up:0
+				join CHA_down:0 ptsNoir_aval_down:end
+				join ptsNoir_aval_down:0 jonction_b:0
+
 	input Data/Yougo2023-4.th
 		equate PTRY0MKTCLD07@Yougo2023-4 PTRY0MKTCLD07@Yougo_p35_pts_noir
 	input Data/Yougo2023-5.th
 		equate 0@Yougo2023-5 52@Yougo2023-4
 		input Data/Enfoire2023.th2
-			#join SP-Enfoire2023-1 ??Pilier
+			join SP-Enfoire2023-1 SP-ptsNoir-2    ### New
 		input Data/Enfoire2023-coupe.th2
 			join SC-YOUGOSLAVE_30-08-23-1s SC-YougoJ-1
-			#join SC-Enfoire2023-1 ??Pilier
+			join ptsNoir_amont_up:0 enfoire_aval_up:end	#Ligne1
+			join ptsNoir_amont_down:end enfoire_aval_down:0 #Ligne1
 		
 
 	##input Data/VieuxTRO.th
