@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -132.0 9338.6034 5503.328600000001
+##XTHERION## xth_me_area_adjust -131.0 -131.0 9338.6034 5503.328600000001
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {431.69000000000005 1 1.0} {647.61 PTRCHAPLR10} C.xvi 0 {}
 ##XTHERION## xth_me_image_insert {1589.63 1 1.0} {2855.6400000000003 PTRMADG0@Yougo.Yougo} Yougo-coupe.xvi 0 {}
@@ -114,7 +114,7 @@ endline
 
 point 995.0 856.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Communique avec le méandre voisin ? Pas sûr... 8 m de hauteur"
 
-point 685.0 726.0 label -text "P5"
+point 685.0 768.0 height -value [-5 m]
 
 line rope
   522.0 681.0
@@ -128,11 +128,14 @@ point 535.5 518.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yo
 
 point 1142.5 928.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Voir ancienne topo, s'accède depuis le haut ? 8 m de hauteur"
 
+point 1002.0 1158.0 label -text "<center>Le Puits Noir<br>(P35)"
+
 line wall -reverse on
   901.0 850.0
   901.0 850.0 923.82 899.82 939.0 915.0
   957.0 933.0 1088.0 971.0 1129.0 964.0
   smooth off
+  altitude .
 endline
 
 line rope
@@ -176,6 +179,8 @@ point 652.75 645.38 station -name 3
 point 672.8899999999999 565.2 station -name 4
 
 point 767.31 584.9200000000001 station -name 5
+
+point 824.0 654.0 station-name -scale xs -place bottom -align left
 
 point 824.21 614.1700000000001 station -name PTRY0MKTCLD1
 
@@ -286,9 +291,9 @@ endline
 
 point 1447.5 785.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Suite du méandre. Ressaut de 4 m à grimper. Peut s'accèder depuis les départs en amont? "
 
-point 1240.5 560.5 label -text "R2"
+point 1263.5 540.5 label -text "R2"
 
-point 1187.0 488.5 label -text "R2"
+point 1217.0 475.5 label -text "R2"
 
 point 1153.0 800.5 label -text "R8"
 
@@ -298,9 +303,12 @@ line rope
   1205.0 616.5
 endline
 
+point 1354.0 609.0 station-name -scale xs -place bottom -align right
+
 line wall
   1038.0 466.0
   1047.18 466.97 1119.0 465.0 1125.0 467.0
+  altitude .
   1131.0 469.0 1140.5 521.5 1147.5 533.5
   1154.5 545.5 1186.0 539.0 1195.0 540.0
   1204.0 541.0 1190.0 577.0 1199.0 587.0
@@ -360,6 +368,10 @@ point 2121.75 1071.21 station -name 27
 point 2277.97 1127.76 station -name 28
 
 point 2377.19 1138.54 station -name 29
+
+point 1645.0 1054.0 station-name -scale xs -place bottom -align left
+
+point 2465.0 1088.0 station-name -scale xs -place bottom -align right
 
 point 2457.87 1164.14 station -name PTRY0MKTCLD4
 
@@ -458,17 +470,17 @@ endline
 line wall
 endline
 
-point 3131.0 1484.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Suite de méandre à re-topographier. Voir ancienne topo"
-
 point 2893.0 1509.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Arrivée en rive droite"
 
-point 2514.0 1581.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Belle cheminée de 25 m"
+point 2514.0 1618.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Belle cheminée de 25 m"
 
 line wall
   3457.0 1679.0
   3457.0 1679.0 3264.5 1665.0 3245.0 1659.0
   smooth off
 endline
+
+point 3219.0 1774.0 label -text "Le Tunnel"
 
 line wall
   3245.0 1659.0
@@ -502,9 +514,9 @@ line flowstone
   smooth off
 endline
 
-point 2605.5 1179.0 label -text "R5"
+point 2642.5 1168.0 label -text "R5"
 
-point 2765.5 1322.0 label -text "R5"
+point 2799.5 1318.0 label -text "R5"
 
 line rope
   2702.0 1435.5
@@ -527,6 +539,7 @@ line wall
   2486.0 1129.0 2535.0 1130.0 2550.0 1135.0
   2565.0 1140.0 2572.5 1234.0 2580.5 1237.0
   2588.5 1240.0 2658.0 1261.0 2677.0 1266.0
+  altitude .
   2696.0 1271.0 2755.0 1418.0 2778.0 1421.0
   2801.0 1424.0 2873.0 1445.0 2878.0 1458.0
   2883.0 1471.0 2900.0 1482.0 2909.0 1485.0
@@ -538,7 +551,7 @@ endline
 
 point 1528.0 844.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Arrivée d'un méandre en rive droite, s'accède en pendule depuis le puits. Arrivée des deux départs en amont ?"
 
-point 1971.5 1211.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Cheminée 10 m"
+point 1967.5 1239.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Cheminée 10 m"
 
 point 1654.5 939.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Galerie en rive gauche, 2 m en hauteur"
 
@@ -553,7 +566,7 @@ line wall
   smooth off
 endline
 
-point 1631.5 780.0 label -text "P8"
+point 1672.5 779.0 height -value [-8 m]
 
 line rope
   1629.0 922.0
@@ -565,6 +578,7 @@ line wall
   1272.0 732.0
   1272.0 732.0 1470.0 678.0 1466.0 696.0
   1457.9 732.47 1501.5 717.0 1582.5 720.0
+  altitude .
   1596.81 720.53 1589.0 879.0 1619.0 880.0
   1649.0 881.0 1738.0 888.0 1751.0 899.0
   1764.0 910.0 1881.0 969.0 1917.0 980.0
@@ -596,10 +610,18 @@ endscrap
 
 scrap SC-ptsNoir-4 -projection extended -station-names "" "@Yougo_p35_pts_noir" -author 2023 "Martin kern" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 4891.7699999999995 -128.0 0.0 0.0 127.50215799999998 0.0 m]
 
+point 3109.0 1476.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du Pilier" -text "Suite de méandre à re-topographier. Voir ancienne topo"
+
 line border
 endline
 
 point 4289.389999999999 1592.75 station -name PTRY0MKTCLD07
+
+point 4294.0 1484.0 station-name -scale xs -place bottom
+
+point 3642.0 1385.0 station-name -scale xs -place bottom -align right
+
+point 3436.0 1739.0 station-name -scale xs -place bottom -align right
 
 point 3423.31 1559.6000000000001 station -name PTRY0MKTCLD5
 
@@ -625,10 +647,50 @@ endline
 area water
 endarea
 
-line wall -id ptsNoir_amont_down
+line wall -subtype unsurveyed
+  4219.0 1526.0
+  4219.0 1526.0 4201.0 1522.0 4188.0 1521.0
+  4175.0 1520.0 4156.0 1519.0 4156.0 1519.0
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  4106.0 1468.0
+  4106.0 1468.0 4125.0 1471.0 4136.0 1477.0
+  4147.0 1483.0 4154.0 1492.0 4168.0 1492.0
+  4182.0 1492.0 4191.0 1487.0 4198.0 1500.0
+  4205.0 1513.0 4221.0 1515.0 4221.0 1515.0
+  smooth off
+endline
+
+line wall
   3942.5 1520.0
-  3942.5 1520.0 3975.5 1531.0 3998.0 1540.0
-  4020.5 1549.0 4061.0 1561.5 4074.5 1560.0
+  3942.5 1520.0 4006.0 1520.0 4021.0 1515.0
+  4036.0 1510.0 4041.0 1510.0 4057.0 1507.0
+  4073.0 1504.0 4088.0 1501.0 4103.0 1498.0
+  4118.0 1495.0 4145.0 1485.0 4131.0 1485.0
+endline
+
+line water-flow
+  4217.0 1519.0
+  4217.0 1519.0 4202.0 1510.0 4187.0 1505.0
+  4172.0 1500.0 4112.0 1478.0 4104.0 1473.0
+endline
+
+point 4238.0 1476.0 narrow-end
+
+point 4070.0 1467.0 narrow-end
+
+line wall -subtype unsurveyed
+  4131.0 1485.0
+  4117.0 1485.0 4106.0 1478.0 4106.0 1478.0
+  smooth off
+endline
+
+line wall -id ptsNoir_amont_down
+  4156.0 1519.0
+  4156.0 1519.0 4112.0 1526.0 4075.0 1536.0
+  4051.62 1542.32 4061.0 1561.5 4074.5 1560.0
   4088.0 1558.5 4223.5 1565.0 4237.5 1561.5
   4251.5 1558.0 4306.0 1572.0 4316.5 1569.0
   smooth off
@@ -737,7 +799,9 @@ line border
   smooth off
 endline
 
-point 3583.0 1568.5 label -text "R3"
+point 3127.0 1292.0 label -text "<center>v. Puits<br>Noir"
+
+point 3606.0 1567.5 label -text "R3"
 
 line rope
   3451.0 1592.5
@@ -798,7 +862,7 @@ endline
 
 point 4029.0 1296.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, pts noir" -text "Puits à descendre"
 
-point 3994.0 1693.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, pts noir" -text "Sommet du puits à voir ? 15 m"
+point 3993.0 1728.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, pts noir" -text "Sommet du puits à voir ? 15 m"
 
 line wall -subtype unsurveyed
   3959.5 1684.5
@@ -835,7 +899,7 @@ scrap SC-ptsNoir-4b -projection extended -station-names "" "@Yougo_p35_pts_noir"
 
 point 3867.33 1605.0 station -name 56
 
-point 3789.0 1689.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Belle arrivée en hauteur, rive droite"
+point 3779.0 1716.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Belle arrivée en hauteur, rive droite"
 
 line wall -reverse on
   3842.5 1686.5
@@ -845,7 +909,7 @@ endline
 
 line wall
   3752.0 1674.0
-  3752.0 1674.0 3776.5 1607.5 3801.5 1592.0
+  3752.0 1674.0 3758.0 1599.0 3801.5 1592.0
   smooth off
 endline
 
@@ -865,7 +929,7 @@ point 4244.97 1554.51 station -name 60
 
 point 4244.97 1539.83 station -name 61
 
-point 4246.0 1955.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Arrivée d'un très gros puits à gimper ? Se grimpe facilement. 30 m"
+point 4246.0 2006.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougos, salle du pilier" -text "Arrivée d'un très gros puits à gimper ? Se grimpe facilement. 30 m"
 
 line wall
   4193.0 1948.5
@@ -890,7 +954,7 @@ point 2928.46 1629.0700000000002 station -name 41
 
 point 2731.96 1685.79 station -name 42
 
-point 2682.0 1716.5 label -text "imp."
+point 2677.0 1760.5 label -text "imp."
 
 line wall
   3090.0 1618.5
@@ -911,6 +975,7 @@ endline
 
 line wall
   2716.5 1692.5
+  altitude .
   2715.0 1670.0 2919.0 1622.0 2927.0 1621.0
   2935.0 1620.0 2964.0 1594.5 2975.0 1589.5
   smooth off
@@ -921,6 +986,8 @@ endscrap
 
 
 scrap SC-ptsNoir-3a -projection extended -station-names "" "@Yougo_p35_pts_noir" -author 2023 "Martin kern" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 4891.7699999999995 -128.0 0.0 0.0 127.50215799999998 0.0 m]
+
+point 2014.0 988.0 station-name -scale xs -place bottom -align right
 
 point 1976.8899999999999 1034.2 station -name PTRY0MKTCLD3
 
