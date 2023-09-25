@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 3435.0884 1939.0246
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {393.70000000000005 1 1.0} {1496.067 PTRMADG0@madg0.Bivouac270} Bivouac270-coupe.xvi 0 {}
 
 
@@ -595,11 +595,12 @@ point 2397.6400000000003 513.197 station -name 38
 line wall
   1504.5 939.0
   1504.5 939.0 1499.5 881.0 1501.0 849.0
+  smooth off
 endline
 
 line map-connection -clip off
   1506.5 881.0
-  1625.5 880.5
+  2143.0 881.0
 endline
 
 area u:galerie
