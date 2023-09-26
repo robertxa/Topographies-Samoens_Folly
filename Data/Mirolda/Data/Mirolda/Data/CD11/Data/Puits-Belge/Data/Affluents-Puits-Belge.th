@@ -30,11 +30,12 @@ centerline
     calibrate counter 0 1.000
     calibrate clino 90 -1
     data topofil from to fromcount tocount compass clino left right up down	
-#extend left
+extend right
 A10	1	38242	38506	20	74	1	0	2	2	# Départ station A10
 1	2	38553	38754	292	129	0	1	4	0.5	
 2	3	38754	39501	21	40	0.2	0.5	1	1.5	
-3	4	39501	39853	0	19	0.4	0.4	0.2	3	
+3	4	39501	39853	0	19	0.4	0.4	0.2	3
+extend left	
 4	5	39853	40144	342	77	0.5	0	1	1	
 5	6	40144	41145	350	58	0	0.4	0.1	0	
 6	7	41145	41447	30	66	.	.	1	.	# Spit
@@ -61,7 +62,9 @@ centerline
     calibrate counter 0 1.000
     calibrate clino 90 -1
     data topofil from to fromcount tocount backcompass backclino left right up down
-    # Pour cette série, vérifier que c'est bon en orientation/pente, ça ne correspond aux notes topo, ça peut être back compass et backclino
+    # Pour cette série, vérifier que c'est bon en orientation/pente, ça ne correspond pas aux notes topo,
+    # ça peut être back compass et backclino --> Plutôt ça, j'ai fait ce choix (XR - 26/09/2023)
+    extend right
         4	9	44018	44604	25	56	.   .   .   .				
         9	10	43570	44018	170	124	0.5	0.6	0.5	0	
         10	11	43159	43426	145	36	0.5	0	0.1	0.2	
@@ -92,6 +95,7 @@ centerline
     calibrate clino 100 -1
 
     data topofil from to fromcount tocount compass clino #left right up down
+        extend left
         A10	15	95810	96419	80	91		# Départ en A10 ? Pas sûr, à vérifier			
         15	16	97212	97507	115	122					
         16	17	97507	97887	176	147					
