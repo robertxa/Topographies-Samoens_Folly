@@ -1,0 +1,105 @@
+encoding  utf-8				
+					
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>			
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:	
+#   "<http://creativecommons.org/licenses/by-nc-sa/4.0/>"
+					
+# Ce fichier topo a été construit par Xavier Robert (09/2022), à partir des données Visual Topo du CD11,
+#   données levées par l'ASE et les Cavernicoles et retrouvées tout à fait par hasard.			
+#   Ce fichier correspond à l'état de la topographie en mai 2003.			
+#   Il est à noter qu'aucune des sessions topographiques n'est datée,			
+#   ce qui fait que les données d'azimuth ne peuvent pas être corrigées de la déclinaison magnétique.
+#   Le positionnement des galeries du fond sont donc assez approximatives.	
+#   Aussi, les LRUD paraissent complètement arbitraires, il ne faut probablement pas les prendre en considération
+					
+survey	Affluents-Puits-Belge -title "CD11 - Puits Belge, 1987"
+
+centerline
+
+    explo-date 1986.07.13 
+     #explo-team "Groupe Spéléo/Cavernicoles"
+     explo-team "URSUS"
+    date 1986.07.13 
+     team "Claude Paradis"
+     team "Jean Bottazzi"
+     team "Ludovic Forest"
+
+    units length meters
+    units compass clino degrees
+    units counter centimeters
+    calibrate counter 0 1.000
+    calibrate clino 90 -1
+    data topofil from to fromcount tocount compass clino left right up down	
+#extend left
+A10	1	38242	38506	20	74	1	0	2	2	# Départ station A10
+1	2	38553	38754	292	129	0	1	4	0.5	
+2	3	38754	39501	21	40	0.2	0.5	1	1.5	
+3	4	39501	39853	0	19	0.4	0.4	0.2	3	
+4	5	39853	40144	342	77	0.5	0	1	1	
+5	6	40144	41145	350	58	0	0.4	0.1	0	
+6	7	41145	41447	30	66	.	.	1	.	# Spit
+7	8	41447	41958	0	180	.	.	.	.	
+data normal from to length compass clino 
+flags approximate
+8   8b  25  30  66  # non Topo, arrêt sur étroiture (?), estimé à partir du dessins du carnet topo
+flags not approximate
+endcenterline
+
+centerline
+
+    explo-date 1987.01.13 
+     #explo-team "Groupe Spéléo/Cavernicoles"
+     explo-team "URSUS"
+    date 1987.01.13 
+     team "Claude Paradis"
+     team "Jean Bottazzi"
+     team "Ludovic Forest"
+
+    units length meters
+    units compass clino degrees
+    units counter centimeters
+    calibrate counter 0 1.000
+    calibrate clino 90 -1
+    data topofil from to fromcount tocount backcompass backclino left right up down
+    # Pour cette série, vérifier que c'est bon en orientation/pente, ça ne correspond aux notes topo, ça peut être back compass et backclino
+        4	9	44018	44604	25	56	.   .   .   .				
+        9	10	43570	44018	170	124	0.5	0.6	0.5	0	
+        10	11	43159	43426	145	36	0.5	0	0.1	0.2	
+        11	12	42446	43159	92	75	0	1	2	1	
+        12	13	42079	42446	101	107	0.2	0.2	0.8	0.2	
+    data topofil from to fromcount tocount compass clino left right up down
+		flags approximate								
+        13	14	42446	42946	280	70  .   .   .   .	# approx, en fonction dessin
+        flags not approximate
+
+endcenterline
+
+centerline
+
+    explo-date 1987.01.13 
+     #explo-team "Groupe Spéléo/Cavernicoles"
+     explo-team "URSUS"
+    date 1987.01.13 
+     team "Claude Paradis"
+     team "Jean Bottazzi"
+     team "Ludovic Forest"
+
+    units length meters
+    units compass degrees
+    units clino grads
+    units counter centimeters
+    calibrate counter 0 1.000
+    calibrate clino 100 -1
+
+    data topofil from to fromcount tocount compass clino #left right up down
+        A10	15	95810	96419	80	91		# Départ en A10 ? Pas sûr, à vérifier			
+        15	16	97212	97507	115	122					
+        16	17	97507	97887	176	147					
+        17	18	97887	98405	71	114					
+        18	19	98405	98845	65	97					# A, Fil sur bitte
+        19	20	98845	99613	20	69					
+
+endcenterline
+
+
+endsurvey				

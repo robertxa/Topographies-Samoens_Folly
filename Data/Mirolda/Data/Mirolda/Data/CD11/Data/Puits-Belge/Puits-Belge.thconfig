@@ -27,7 +27,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera 
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-source Amont-Majestueuse-tot.th
+source Puits-Belge-tot.th
 
 # Add Coordinates
 #input legendes/entrances_coordinates.th
@@ -158,7 +158,7 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda - Amont Majestueuse} 
+			\cavename={Gouffre Mirolda - Puits Belge} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Collectif Mirolda 2022}
@@ -232,8 +232,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
   
   layers on
                 
@@ -243,7 +243,7 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda - Amont Majestueuse} 
+			\cavename={Gouffre Mirolda - Puits Belge} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Collectif Mirolda 2022}
@@ -259,21 +259,21 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Amont-Majestueuse-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Amont-Majestueuse-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Puits-Belge-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Puits-Belge-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Amont-Majestueuse@Amont-Majestueuse
-select MC-Amont-Majestueuse@Amont-Majestueuse
+select MP-PuitsBelge@Puits-Belge
+select MC-PuitsBelge@Puits-Belge
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Amont-Majestueuse-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Amont-Majestueuse-coupe.pdf
-#export atlas -o Outputs/Amont-Majestueuse-atlas.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/Puits-Belge-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Puits-Belge-coupe.pdf
+#export atlas -o Outputs/Puits-Belge-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Amont-Majestueuse.lox
+ export model -enable all -o Outputs/Puits-Belge.lox
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité

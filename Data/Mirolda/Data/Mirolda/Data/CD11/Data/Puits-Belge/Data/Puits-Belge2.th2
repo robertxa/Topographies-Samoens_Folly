@@ -1,11 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -3636 5089 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -134.0 -3636 5089 142.0
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} cd11_amont_dessins_1987_Page_2.png 0 {}
 
 
 
-scrap SP-Belge-3 -projection plan -station-names "" "@Amont-Majestueuse" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
+scrap SP-Belge-3 -projection plan -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
 
 line arrow
   1378.5 -1146.0
@@ -203,6 +203,7 @@ line wall
   1494.5 -1276.0 1498.5 -1274.5 1507.0 -1276.5
   1515.5 -1278.5 1522.0 -1278.0 1519.5 -1286.0
   1517.0 -1294.0 1511.0 -1296.5 1504.5 -1300.0
+  smooth off
 endline
 
 line wall
@@ -271,6 +272,7 @@ endline
 line wall
   85.5 -843.0
   85.5 -843.0 101.5 -853.0 98.5 -855.5
+  smooth off
 endline
 
 line wall
@@ -281,6 +283,7 @@ line wall
   107.0 -812.0 100.5 -819.0 100.5 -819.0
   smooth off
   100.5 -819.0 93.0 -827.5 85.5 -843.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -305,6 +308,16 @@ line wall
   smooth off
 endline
 
+point 2036.0 -1244.0 station-name -scale xs -align top-right
+
+point 1342.0 -1186.0 station-name -scale xs -align left
+
+point 900.0 -1062.0 station-name -scale xs -align right
+
+point 642.0 -960.0 station-name -scale xs -align bottom-left
+
+point 604.0 -810.0 station-name -scale xs -align right
+
 line wall
   655.5 -895.0
   652.0 -911.5
@@ -316,6 +329,7 @@ line wall
   579.0 -860.0 580.5 -844.0 580.0 -835.0
   579.5 -826.0 571.5 -815.5 572.0 -805.5
   572.5 -795.5 569.0 -784.0 576.5 -778.0
+  smooth off
 endline
 
 line wall
@@ -404,6 +418,7 @@ line wall
   1796.0 -1241.5 1794.0 -1260.0 1783.5 -1262.0
   1773.0 -1264.0 1765.0 -1269.5 1756.0 -1280.5
   1747.0 -1291.5 1734.5 -1306.5 1727.0 -1309.0
+  smooth off
 endline
 
 line wall
@@ -457,7 +472,7 @@ point 2261.5 -1390.0 station -name 1096
 
 point 2191.0 -1386.5 station -name 1095
 
-point 1968.0 -1269.5 station -name 1094
+point 1968.0 -1269.5 station -name A5
 
 point 1815.5 -1211.5 station -name 1093
 
@@ -475,7 +490,7 @@ point 1468.0 -1261.0 station -name 1087
 
 point 1437.5 -1228.5 station -name 1086
 
-point 1390.5 -1217.5 station -name 1085
+point 1390.5 -1217.5 station -name A4
 
 point 1365.5 -1257.5 station -name 1084
 
@@ -485,11 +500,11 @@ point 1027.5 -1271.5 station -name 1082
 
 point 984.5 -1203.5 station -name 1081
 
-point 832.5 -1070.5 station -name 1080
+point 832.5 -1070.5 station -name A3
 
 point 785.0 -1039.5 station -name 1079
 
-point 655.0 -926.0 station -name 1078
+point 655.0 -926.0 station -name A2
 
 point 572.0 -904.0 station -name 1077
 
@@ -497,7 +512,7 @@ point 546.0 -893.0 station -name 1076
 
 point 573.0 -877.0 station -name 1075
 
-point 563.0 -807.0 station -name 1074
+point 563.0 -807.0 station -name A1
 
 point 478.0 -789.0 station -name 1073
 
@@ -507,13 +522,13 @@ point 298.0 -863.0 station -name 1071
 
 point 168.0 -771.0 station -name 1070
 
-point 116.0 -851.0 station -name 1060
+point 116.0 -851.0 station -name A0
 
 endscrap
 
 
 
-scrap SP-Belge-4 -projection plan -station-names "" "@Amont-Majestueuse" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
+scrap SP-Belge-4 -projection plan -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
 
 line wall -close on -outline in
   4400.5 -1613.0
@@ -539,6 +554,7 @@ line water-flow
   2757.5 -1328.0 2755.5 -1406.5 2758.5 -1426.5
   2761.5 -1446.5 2771.0 -1478.0 2779.0 -1491.0
   2787.0 -1504.0 2808.0 -1534.0 2809.5 -1547.0
+  smooth off
 endline
 
 area sump
@@ -591,18 +607,21 @@ endline
 line slope
   3365.0 -1267.0
   3365.0 -1267.0 3382.0 -1233.5 3382.0 -1221.0
+  smooth off
   l-size 10.0
 endline
 
 line slope
   3342.5 -1260.0
   3342.5 -1260.0 3355.0 -1242.0 3355.5 -1221.5
+  smooth off
   l-size 10.0
 endline
 
 line slope
   3320.0 -1249.0
   3320.0 -1249.0 3335.0 -1235.0 3337.5 -1214.5
+  smooth off
   l-size 10.0
 endline
 
@@ -648,6 +667,7 @@ endline
 line pit
   4729.5 -1608.5
   4729.5 -1608.5 4692.0 -1600.0 4714.5 -1575.0
+  smooth off
 endline
 
 line wall
@@ -670,6 +690,7 @@ line wall
   4796.0 -1586.0 4798.5 -1587.5 4805.5 -1582.0
   4812.5 -1576.5 4825.5 -1583.5 4827.0 -1577.0
   4828.5 -1570.5 4826.5 -1562.0 4834.5 -1560.5
+  smooth off
 endline
 
 line wall
@@ -811,6 +832,10 @@ line wall
   smooth off
 endline
 
+point 3476.0 -1198.0 station-name -scale xs -align right
+
+point 2426.0 -1632.0 station-name -scale xs -align bottom-left
+
 line wall
   2514.0 -1567.0
   2514.0 -1567.0 2504.0 -1596.0 2494.5 -1593.0
@@ -865,6 +890,7 @@ line wall
   3045.0 -1348.5 3053.0 -1361.5 3032.0 -1363.0
   3011.0 -1364.5 3002.5 -1366.5 2997.0 -1363.0
   2991.5 -1359.5 3000.5 -1351.0 3004.5 -1346.5
+  smooth off
 endline
 
 line wall
@@ -981,7 +1007,7 @@ point 3544.0 -1345.0 station -name 1121
 
 point 3521.0 -1300.5 station -name 1120
 
-point 3464.5 -1257.5 station -name 1119
+point 3464.5 -1257.5 station -name A9
 
 point 3415.5 -1267.5 station -name 1118
 
@@ -1021,7 +1047,7 @@ point 2584.5 -1643.5 station -name 1101
 
 point 2508.0 -1635.5 station -name 1100
 
-point 2463.0 -1594.5 station -name 1099
+point 2463.0 -1594.5 station -name A6
 
 endscrap
 

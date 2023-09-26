@@ -1,11 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -3636 5089 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -129.5 -3636 5089 139.0
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} cd11_amont_dessins_1987_Page_3.png 0 {}
 
 
 
-scrap SP-Belge-5 -projection plan -station-names "" "@Amont-Majestueuse" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
+scrap SP-Belge-5 -projection plan -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
 
 point 1661.0 -1354.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Laminoir, jonction avec la Marmotte ?"
 
@@ -100,8 +100,12 @@ endline
 line wall
   518.5 -1507.0
   518.5 -1507.0 507.5 -1476.0 519.5 -1463.0
-  531.5 -1450.0 541.5 -1451.0 548.0 -1434.0
-  554.5 -1417.0 547.5 -1413.0 556.0 -1403.5
+  531.5 -1450.0 534.0 -1460.0 540.5 -1443.0
+endline
+
+line wall
+  544.0 -1437.5
+  550.5 -1420.5 547.5 -1413.0 556.0 -1403.5
   564.5 -1394.0 564.0 -1401.0 563.5 -1389.5
   563.0 -1378.0 559.5 -1368.5 569.5 -1357.5
   579.5 -1346.5 582.0 -1350.5 588.5 -1337.5
@@ -132,53 +136,6 @@ line wall
   464.0 -1505.5 472.0 -1482.5 480.0 -1476.0
   488.0 -1469.5 492.0 -1461.5 497.0 -1478.0
   502.0 -1494.5 502.0 -1511.0 502.0 -1511.0
-  smooth off
-endline
-
-line wall -subtype unsurveyed
-  431.0 -1289.0
-  431.0 -1289.0 441.5 -1311.0 434.5 -1326.0
-  427.5 -1341.0 422.5 -1351.0 419.0 -1362.5
-  415.5 -1374.0 394.0 -1390.0 405.5 -1399.5
-  417.0 -1409.0 417.5 -1411.5 431.5 -1409.0
-  445.5 -1406.5 450.5 -1404.0 451.5 -1407.0
-  452.5 -1410.0 455.5 -1409.5 455.5 -1409.5
-  smooth off
-endline
-
-line wall -subtype unsurveyed
-  808.0 -879.0
-  808.0 -879.0 777.0 -895.0 766.5 -903.5
-  756.0 -912.0 737.5 -935.5 724.0 -950.0
-  710.5 -964.5 697.0 -990.0 680.5 -995.5
-  664.0 -1001.0 667.5 -1006.5 656.0 -1012.0
-  644.5 -1017.5 634.5 -1021.0 626.0 -1015.0
-  617.5 -1009.0 616.5 -1006.0 600.5 -1003.0
-  584.5 -1000.0 567.5 -992.0 559.5 -1004.5
-  551.5 -1017.0 540.0 -1031.5 543.5 -1043.5
-  547.0 -1055.5 559.5 -1052.5 556.5 -1068.5
-  553.5 -1084.5 548.0 -1099.5 536.5 -1117.0
-  525.0 -1134.5 511.5 -1149.5 501.0 -1177.0
-  490.5 -1204.5 487.5 -1219.0 481.0 -1237.0
-  474.5 -1255.0 471.0 -1270.5 464.0 -1281.0
-  457.0 -1291.5 455.0 -1305.0 446.0 -1282.5
-endline
-
-line wall -subtype unsurveyed
-  466.5 -1402.5
-  466.5 -1402.5 467.0 -1394.0 461.5 -1386.5
-  456.0 -1379.0 446.5 -1358.5 458.0 -1352.0
-  469.5 -1345.5 480.0 -1339.5 480.5 -1325.0
-  481.0 -1310.5 483.5 -1285.5 491.0 -1271.0
-  498.5 -1256.5 506.5 -1228.5 517.5 -1210.0
-  528.5 -1191.5 532.0 -1161.5 546.0 -1149.0
-  560.0 -1136.5 580.5 -1121.5 578.5 -1112.0
-  576.5 -1102.5 576.5 -1088.0 590.5 -1070.0
-  604.5 -1052.0 609.5 -1043.0 618.5 -1037.0
-  627.5 -1031.0 626.0 -1035.0 644.0 -1028.5
-  662.0 -1022.0 690.5 -996.0 708.0 -983.0
-  725.5 -970.0 746.0 -949.0 758.5 -935.0
-  771.0 -921.0 809.0 -884.5 809.0 -884.5
   smooth off
 endline
 
@@ -217,8 +174,8 @@ line wall
 endline
 
 line wall
-  455.5 -1409.5
-  455.5 -1409.5 467.5 -1432.5 456.5 -1448.0
+  469.0 -1424.5
+  469.0 -1424.5 467.5 -1432.5 456.5 -1448.0
   445.5 -1463.5 444.0 -1463.5 437.5 -1478.0
   431.0 -1492.5 433.5 -1500.0 426.5 -1505.0
   419.5 -1510.0 421.5 -1509.5 419.0 -1524.0
@@ -232,24 +189,20 @@ line wall
 endline
 
 line wall
-  518.0 -1349.0
-  518.0 -1349.0 547.5 -1351.5 542.5 -1357.5
+  534.0 -1343.5
+  534.0 -1343.5 547.5 -1351.5 542.5 -1357.5
   537.5 -1363.5 535.0 -1371.5 532.5 -1381.5
   530.0 -1391.5 525.5 -1409.5 520.0 -1414.5
   514.5 -1419.5 512.0 -1422.0 504.5 -1421.5
   497.0 -1421.0 491.0 -1423.5 487.5 -1423.5
-  484.0 -1423.5 480.0 -1424.5 476.0 -1418.5
-  472.0 -1412.5 466.5 -1402.5 466.5 -1402.5
-  smooth off
+  484.0 -1423.5 478.98 -1431.14 480.0 -1424.0
 endline
 
 line wall
   557.0 -1304.5
   557.0 -1304.5 555.0 -1322.5 554.0 -1330.0
   553.0 -1337.5 551.0 -1352.5 546.0 -1347.5
-  541.0 -1342.5 544.0 -1338.0 536.0 -1338.0
-  528.0 -1338.0 521.5 -1337.5 521.5 -1337.5
-  smooth off
+  541.0 -1342.5 550.5 -1333.0 542.5 -1333.0
 endline
 
 line pit
@@ -257,6 +210,7 @@ line pit
   1544.5 -1400.0 1596.0 -1404.5 1596.0 -1388.0
   1596.0 -1371.5 1592.5 -1364.0 1577.5 -1353.0
   1562.5 -1342.0 1553.5 -1332.0 1550.5 -1328.0
+  smooth off
 endline
 
 point 1484.0 -1401.5 height -value [+9 m]
@@ -264,14 +218,16 @@ point 1484.0 -1401.5 height -value [+9 m]
 line pit
   1497.0 -1346.5
   1497.0 -1346.5 1530.5 -1341.0 1529.0 -1322.0
+  smooth off
 endline
 
-point 701.5 -1319.0 height -value [+5 m]
+point 704.0 -1297.5 height -value [+5 m]
 
 line pit
   670.0 -1294.5
   670.0 -1294.5 680.5 -1268.5 670.5 -1262.5
   660.5 -1256.5 660.0 -1258.5 649.5 -1263.5
+  smooth off
 endline
 
 line wall
@@ -325,6 +281,7 @@ line wall
   1111.5 -1019.0 1112.0 -1022.0 1103.5 -1018.0
   1095.0 -1014.0 1091.0 -1014.0 1084.0 -1014.5
   1077.0 -1015.0 1075.0 -1000.5 1075.5 -993.5
+  smooth off
 endline
 
 line wall
@@ -345,6 +302,7 @@ line wall
   1287.5 -1033.0 1274.5 -1018.0 1274.5 -1018.0
   smooth off
   1274.5 -1018.0 1297.0 -997.5 1301.0 -993.0
+  smooth off
 endline
 
 line wall
@@ -436,11 +394,7 @@ point 895.0 -1026.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "
 
 point 910.0 -1221.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 430.0 -1254.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
-
 point 562.0 -1282.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
-
-point 502.0 -1340.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
 point 514.0 -1534.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
@@ -457,6 +411,7 @@ point 1253.5 -955.0 label -text "R5"
 line pit
   1218.5 -981.0
   1218.5 -981.0 1204.0 -973.0 1188.5 -982.5
+  smooth off
 endline
 
 line wall
@@ -488,6 +443,7 @@ line wall
   1521.0 -1328.0 1518.0 -1323.5 1518.0 -1312.0
   1518.0 -1300.5 1510.0 -1299.0 1515.0 -1296.0
   1520.0 -1293.0 1541.0 -1279.0 1545.0 -1273.5
+  smooth off
 endline
 
 point 2019.0 -1684.0 station -name 1174
@@ -512,7 +468,7 @@ point 1595.0 -1438.0 station -name 1165
 
 point 1584.0 -1380.5 station -name 1164
 
-point 1513.0 -1334.0 station -name 1163
+point 1513.0 -1334.0 station -name P9
 
 point 1445.0 -1131.0 station -name 1162
 
@@ -534,7 +490,7 @@ point 1074.0 -1026.5 station -name 1154
 
 point 921.5 -1088.0 station -name 1153
 
-point 887.0 -1125.0 station -name 1152
+point 887.0 -1125.0 station -name A20
 
 point 820.0 -1145.5 station -name 1151
 
@@ -546,13 +502,13 @@ point 675.0 -1256.5 station -name 1148
 
 point 651.0 -1282.0 station -name 1147
 
-point 602.5 -1305.5 station -name 1146
+point 602.5 -1305.5 station -name A7
 
 point 556.5 -1351.0 station -name 1145
 
 point 537.0 -1419.5 station -name 1144
 
-point 474.0 -1441.5 station -name 1143
+point 474.0 -1441.5 station -name A10
 
 point 429.5 -1538.0 station -name 1142
 
@@ -563,6 +519,16 @@ point 344.0 -1564.5 station -name 1140
 point 310.5 -1528.5 station -name 1139
 
 point 226.0 -1501.5 station -name 1138
+
+point 1882.0 -1896.0 label -text "<center>laminoir sur<br>Hauterivien"
+
+point 1590.0 -1314.0 station-name -scale xs -align right
+
+point 616.0 -1334.0 station-name -scale xs -align bottom-right
+
+point 418.0 -1448.0 station-name -scale xs -align bottom-left
+
+point 950.0 -1170.0 station-name -scale xs -align right
 
 point 124.0 -1550.0 station -name 1137
 

@@ -16,13 +16,6 @@ survey Amont-Majestueuse -title "Gouffre Mirolda - Amont Majestueuse"
 
 	# Import du dessin en plan
 	input Data/majamonts2023.th2
-	
-	# Dessin à partir data URSUS
-	input Data/Amont-Majestueuse1.th2
-	input Data/Amont-Majestueuse2.th2
-		join SP-Belge-3 SP-Belge-2
-	input Data/Amont-Majestueuse3.th2
-		join SP-Belge-5 SP-Belge-4
 
 	# Import du dessin en coupe
 	input Data/majamonts2023-coupe.th2

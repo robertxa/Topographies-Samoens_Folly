@@ -1,11 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -3636 5089 139.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -131.0 -3636 5089 140.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} cd11_amont_dessins_1987_Page_1.png 0 {}
 
 
 
-scrap SP-Belge-1 -projection plan -station-names "" "@Amont-Majestueuse" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
+scrap SP-Belge-1 -projection plan -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
 
 point 1709.0 -2053.0 label -text "R18"
 
@@ -386,7 +386,7 @@ endscrap
 
 
 
-scrap SP-Belge-2 -projection plan -station-names "" "@Amont-Majestueuse" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
+scrap SP-Belge-2 -projection plan -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [128 -3636 5089 -3636 0.0 0.0 132.5118 0.0 m]
 
 line fault -clip off
   3006.0 -1905.0
@@ -451,7 +451,7 @@ line wall
   smooth off
 endline
 
-point 4164.0 -1286.0 station -name 1060
+point 4164.0 -1286.0 station -name A0
 
 point 4131.0 -1304.0 station -name 1059
 
@@ -490,6 +490,8 @@ point 2989.0 -1874.0 station -name 1043
 point 2922.0 -1839.0 station -name 1039
 
 point 2848.0 -1782.0 station -name 1038
+
+point 4166.0 -1318.0 station-name -scale xs -align bottom-right
 
 point 2788.0 -1800.0 station -name 1037
 

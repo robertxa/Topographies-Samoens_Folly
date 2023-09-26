@@ -48,6 +48,8 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		equate PTRCHAPLR09@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.Yougo PTRCHAPLR09@majamonts2023.Amont-Majestueuse
 		join SP-Maj-Amonts-2@Amont-Majestueuse MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p1@Yougo
 		join SC-Maj-Amonts-1@Amont-Majestueuse SC-YougoJ-1@Yougo
+	input Data/Puits-Belge/Puits-Belge-tot.th
+		equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
 
 		# Vieux TRO
 		#equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
