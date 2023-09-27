@@ -45,7 +45,9 @@ map MP-CD11-plan-tot -title "Gouffre Mirolda - CD11"
 endmap
 
 map MC-CD11-coupe-tot -title "Gouffre Mirolda - CD11"
-	MC-CD11-coupe-tot@CD11
+	MC-PuitsBelge@Puits-Belge
+    break
+    MC-CD11-coupe-tot@CD11
     break
     MC-Bivouac270-coupe-tot@Bivouac270
     break
