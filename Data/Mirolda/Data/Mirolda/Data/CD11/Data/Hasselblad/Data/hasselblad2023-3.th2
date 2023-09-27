@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -3698.0 -1724.0 1278.0 5294.0
+##XTHERION## xth_me_area_adjust -3708.0 -1736.0 1288.0 5304.0
 ##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {979.5999999999999 1 1.0} {-1583.0699999999997 PTRJCXRHA01@haselblad2023-2.haselblad2023-2} haselblad2023-2-map.xvi 0 {}
 
@@ -1160,6 +1160,66 @@ area clay
   l318--196-2964
 endarea
 
+line section
+  464.0 148.0
+  328.0 120.0
+endline
+
+line section
+  -732.0 -96.0
+  84.0 68.0
+endline
+
+line section
+  20.0 1480.0
+  -212.0 1472.0
+endline
+
+line section
+  -1160.0 1408.0
+  -440.0 1456.0
+endline
+
+line section
+  52.0 2648.0
+  -395.56 2719.08
+endline
+
+line section
+  -596.0 2772.0
+  -498.05 2747.56
+endline
+
+line section
+  -1412.0 1988.0
+  -892.68 2339.88
+endline
+
+line section
+  -640.0 2476.0
+  -760.0 2396.0
+endline
+
+line section
+  -3084.0 3600.0
+  -2900.0 3668.0
+endline
+
+line section
+  -2488.0 3824.0
+  -2724.0 3732.0
+endline
+
+point -2256.0 3900.0 section -scrap SS-Hasselblad-8
+
+point 204.0 2672.0 section -scrap SS-Hasselblad-7
+
+point -1536.0 1928.0 section -scrap SS-Hasselblad-6
+
+point -1392.0 1380.0 section -scrap SS-Hasselblad-5
+
+point -948.0 -140.0 section -scrap SS-Hasselblad-4
+
 line label -id l318--196-2964 -close on
   -196.0 2960.0
   -196.0 2960.0 -484.0 3088.0 -560.0 3004.0
@@ -1432,6 +1492,18 @@ line wall
   516.0 -588.0 489.0 -325.0 458.0 -276.0
   431.44 -234.02 431.0 -264.0 421.0 -212.0
   smooth off
+endline
+
+point -276.0 -1112.0 section -scrap SS-Hasselblad-3
+
+line section
+  -48.0 -1092.0
+  472.0 -868.0
+endline
+
+line section
+  784.0 -732.0
+  652.0 -796.0
 endline
 
 line wall

@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 2647.6864 2726.4266000000002
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 2647.6864 2726.4266000000002
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {2043.3 1 1.0} {706.6199999999999 PTRJCXRHA01@hasselblad2023-1.Hasselblad} Hasselblad-map.xvi 0 {}
 
 
@@ -34,16 +34,19 @@ endline
 line pit
   2146.25 562.5
   2146.25 562.5 2133.75 556.75 2128.75 555.75
+  smooth off
 endline
 
 line pit
   2179.25 569.5
   2179.25 569.5 2191.75 587.75 2180.5 587.75
+  smooth off
 endline
 
 line pit
   2179.75 589.0
   2179.75 589.0 2172.5 593.25 2171.0 587.5
+  smooth off
 endline
 
 point 2117.0 606.0 traverse
@@ -53,11 +56,13 @@ point 2087.25 682.75 traverse
 line pit
   2043.75 570.25
   2043.75 570.25 2028.75 572.25 2036.25 556.0
+  smooth off
 endline
 
 line pit
   2053.25 571.0
   2053.25 571.0 2057.75 548.0 2051.5 539.75
+  smooth off
 endline
 
 line pit
@@ -86,6 +91,7 @@ line pit
   2177.5 556.0 2163.75 554.0 2160.25 553.75
   2156.75 553.5 2156.5 554.25 2150.75 553.0
   2145.0 551.75 2129.5 548.5 2127.0 547.75
+  smooth off
 endline
 
 line wall -close on -outline none
@@ -124,6 +130,7 @@ line wall
   2159.5 524.25 2161.5 531.75 2170.0 531.75
   2178.5 531.75 2185.5 529.0 2189.75 532.5
   2194.0 536.0 2192.0 540.5 2197.25 541.25
+  smooth off
 endline
 
 line wall
@@ -134,6 +141,7 @@ endline
 line wall -subtype pit
   2034.5 565.25
   2034.5 565.25 2047.0 543.5 2052.0 543.25
+  smooth off
 endline
 
 line wall
@@ -148,6 +156,7 @@ endline
 line wall
   1968.0 709.0
   1968.0 709.0 1981.5 691.25 1990.75 689.25
+  smooth off
 endline
 
 point 2013.75 621.25 air-draught -orientation 333.5 -subtype summer
@@ -206,11 +215,13 @@ endline
 line pit
   1992.75 718.75
   1992.75 718.75 1984.5 702.75 1991.25 684.75
+  smooth off
 endline
 
 line wall -subtype pit
   1990.75 689.25
   2000.0 687.25 2008.75 692.5 2012.75 686.75
+  smooth off
 endline
 
 line wall
@@ -219,11 +230,13 @@ line wall
   2028.5 654.75 2043.25 625.75 2045.0 619.0
   2046.75 612.25 2054.0 591.25 2054.25 583.75
   2054.5 576.25 2055.75 570.75 2052.5 567.75
+  smooth off
 endline
 
 line wall -subtype pit
   2052.5 567.75
   2049.25 564.75 2040.5 567.25 2038.25 570.75
+  smooth off
 endline
 
 line wall
@@ -235,12 +248,14 @@ endline
 line wall
   2008.5 746.5
   2008.5 746.5 2011.25 740.5 2010.5 735.5
+  smooth off
 endline
 
 line wall -subtype pit
   2010.5 735.5
   2009.75 730.5 2008.5 724.0 2002.5 722.5
   1996.5 721.0 1994.0 717.75 1989.75 713.5
+  smooth off
 endline
 
 line wall
@@ -276,6 +291,18 @@ point 2142.18 565.2799999999999 station -name 3
 point 2106.11 565.2199999999999 station -name 2
 
 point 2066.86 636.6099999999999 station -name 1
+
+point 2240.0 712.0 section -scrap SS-Hasselblad-2
+
+line section
+  2023.0 640.5
+  2034.0 645.0
+endline
+
+line section
+  2195.5 707.0
+  2064.5 658.5
+endline
 
 point 2043.3 706.6199999999999 station -name PTRJCXRHA01
 

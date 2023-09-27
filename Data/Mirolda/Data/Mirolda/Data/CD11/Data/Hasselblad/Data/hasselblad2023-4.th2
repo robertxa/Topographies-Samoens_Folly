@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -1469.67 -3281.54 4084.0 1728.0
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_adjust -1469.67 -3281.54 4092.0 1736.0
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {-1341.67 1 1.0} {-3153.54 0} Cd11-Hassenbad-1p.xvi 0 {}
 
 # 2023.09.13 created by TopoDroid v. 5.1.40
@@ -618,7 +618,45 @@ line wall
   smooth off
 endline
 
-point 1103.97 550.19 air-draught -orientation 203.4 -subtype summer -scale xs
+line section
+  -324.0 -1048.0
+  -421.7 -998.64
+endline
+
+line section
+  -1148.0 -740.0
+  -892.0 -752.0
+  -584.38 -923.84
+endline
+
+point -1300.0 -824.0 section -scrap SS-Hasselblad-11
+
+point -424.0 460.0 section -scrap SS-Hasselblad-10
+
+line section
+  -192.0 476.0
+  92.0 -372.0
+  197.71 -420.6
+endline
+
+line section
+  532.0 -588.0
+  376.0 -520.0
+endline
+
+line section
+  1224.0 -80.0
+  1154.81 68.78
+endline
+
+line section
+  836.0 928.0
+  1124.0 260.0
+endline
+
+point 808.0 1092.0 section -scrap SS-Hasselblad-9
+
+point 1235.97 822.19 air-draught -orientation 203.4 -subtype summer -scale xs
 
 line wall -subtype invisible
 endline

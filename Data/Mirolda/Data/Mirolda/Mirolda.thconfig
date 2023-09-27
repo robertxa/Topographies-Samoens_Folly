@@ -177,7 +177,7 @@ layout layout-coupe
 	
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
-  base-scale 1 1000
+  base-scale 1 1300
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
   scale 1 1500
   # echelle graphique 100 m ampleur
@@ -249,6 +249,123 @@ layout layout-coupe
  endlayout
 # Fin de la definition du Layout "normal"
 
+layout atlas_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	copy LayoutAtlasNorthArrow # This line should be BEFORE the line copy drawingconfig, 
+	                           # otherwise the North Arrow size does not fit well
+	copy drawingconfig
+	copy AtlasSetUp
+	copy headeratlas 
+	copy langue-fr
+
+	cs UTM32
+  
+	# La ligne base-scale specifie l'echelle auquel nous avons
+	# dessine nos croquis. Par defaut, therion pense que c'est
+	# une echelle 1:200. Si on a utilise une autre echelle, 
+	# il faudrait enlever le "#" et especifier l'echelle vraiment 
+	# employee, comme c'est le cas apres avoir dessine la topo
+	# sur un cheminement exporte avec le layout "xviexport"
+	# (voir en bas)
+	base-scale 1 500
+
+	# Maitenant on va mettre une ligne "scale" pour specifier l'echelle
+	# pour imprimer la topo. La combination entre scale et base-scale
+	# controlle le gros des lignes, rotation, etc, convenable
+	# pour faire l'ampliation-reduction entre dessin et
+	# le resultat de l'imprimante
+
+	# C'est tres important s'assurer que la configuration de
+	# l'imprimante ne specifie pas l'option "Fit in page"
+	# ou similaire, sinon, l'echelle sera change pendant
+	# l'impression! 
+	scale 1 500
+	scale-bar 50 m
+
+
+	# Voici une ligne pour specifier qu'il faut imprimer une grille
+	# au dessous de la topo
+	grid bottom
+	# Une ligne pour specifier que la grille est 1000x1000x1000 metres
+	# (Trois dimensions, oui, ça sert pour la coupe aussi)
+	#grid-size 250 250 250 m  
+	grid off
+   
+	# une couleur de fond, 85% blanc = 15% noir
+	##color map-bg 90
+	##color map-bg 85
+	##color map-bg 75
+	color map-fg [100 100 80]
+	#color map-fg altitude  
+  
+	# la topo est transparente (on peut voir les galeries sousjacentes)
+	# C'est on par defaut, donc, pas vraiment besoin de specifier
+	transparency on
+
+	# ça marche seulement si transparency est "on" 90% blanc= 10% noir
+	opacity 75
+    
+	# Auteur 
+	doc-author "Xavier Robert"
+	# Titule
+	doc-title "Massif du Folly - 1:1000"
+
+	# arrière plan de la manchette
+	map-header-bg on
+  
+	# Nous voulons une legende pour expliquer les symboles. "on" imprimera
+	# seulement la legende des symboles dessines sur la topo, si l'on veut
+	# pour tous les symboles, utilises ou pas, il faut indiquer "all".
+	# "legend off" = pas de legende
+	legend off
+
+	# Un commentaire a ajounter au titule, on pourrait indiquer ici
+	# la mairie ou est place la cavite dont le nom est probablement
+	# le titule de la topo.
+	map-comment "Plan, Projection UTM32, Samoëns, 74, France"
+ 
+	# Afficher les statistiques d'explo par équipe/nom. C'est lourd
+	# si la cavité est importante et qu'il y a beaucoup d'explorateurs
+	statistics explo-length off
+
+	# Afficher le developpement et la profondeur de la cavite
+	statistics topo-length off
+  
+	# Afficher un copyright
+	statistics copyright 2
+  
+	# Dessin ou pas du cheminement topo
+	symbol-hide line survey
+	symbol-hide point u:symbol_plan
+	symbol-hide point u:symbol_extend
+
+	#debug station-names        
+
+	layers on
+            
+	# Titre                         
+    code tex-map
+		% Output map title as determined by Therion 5.3 is stored in cavename. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% i.e. Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+		\edef\temp{\the\cavename}        % cavename from Therion   
+		\edef\nostring{}                 % empty string 
+		\ifx\temp\nostring             % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Mirolda - Réseau Lucien Bouclier} 
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Collectif Mirolda}
+		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		#\newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
+		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+	endcode   
+  
+endlayout
+# Fin de la definition du Layout "atlas"
+
 layout my_layout-continuations
 	copy my_layout
 	copy layoutcontinuation	# Pour afficher le label des continuations
@@ -285,7 +402,8 @@ select MC-Mirolda-coupe-tot@Mirolda
  #export map -proj plan -fmt pdf -o Outputs/Mirolda-plan-continuations.pdf -layout my_layout-continuations
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Mirolda-coupe.pdf
  #export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Mirolda-coupe-continuations.pdf
-#export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
+export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
+#export atlas -projection extended -o Outputs/Mirolda-atlas-coupe.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Mirolda-2022.lox

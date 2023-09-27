@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 ############ Maps pour le Plan ##########
-map MP-Marches-plan-tot -title "Gouffre Mirolda - F126 - 1000 Marches"
+map MP-Marches-plan-tot -title "Réseau Lucien Bouclier - F126 - 1000 Marches"
 	SP-Marches-1
 	break
 	SP-Marches-3
@@ -19,18 +19,18 @@ endmap
 
 
 ############ Maps pour la coupe développée ##########
-map MC-Marches-1 -title "Gouffre Mirolda - F126 - 1000 Marches"
+map MC-Marches-1 -title "Réseau Lucien Bouclier - F126 - 1000 Marches"
 	SC-Marches-1
 endmap
-map MC-Marches-2 -title "Gouffre Mirolda - F126 - 1000 Marches"
+map MC-Marches-2 -title "Réseau Lucien Bouclier - F126 - 1000 Marches"
 	# Decalable, map jonctions OK
 	SC-Marches-2
 endmap
-map MC-Marches-3 -title "Gouffre Mirolda - F126 - 1000 Marches"
+map MC-Marches-3 -title "Réseau Lucien Bouclier - F126 - 1000 Marches"
 	SC-Marches-3
 endmap
 
-map MC-Marches-coupe-tot -title "Gouffre Mirolda - F126 - 1000 Marches"
+map MC-Marches-coupe-tot -title "Réseau Lucien Bouclier - F126 - 1000 Marches"
 	MC-Marches-1
 	break
 	MC-Marches-2

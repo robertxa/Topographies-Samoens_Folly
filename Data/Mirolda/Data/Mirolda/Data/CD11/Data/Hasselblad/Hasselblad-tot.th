@@ -24,12 +24,14 @@ survey Hasselblad -title "Gouffre Mirolda - Galerie Hasselblad"
 	
 	# Import du dessin en plan
 	input Data/hasselblad2023-1.th2
-	
 	input Data/hasselblad2023-3.th2
 		join SP-hasselblad-1 SP-hasselblad2023-3-2
-		
 	input Data/hasselblad2023-4.th2
 		join SP-hasselblad2023-3-1 SP-hasselblad2023-4
+	
+	# Import des sections
+	#	Proviennent du dessin de 1982 de la S.S.S Genève
+	input Data/hasselblad-sections.th2
 
 	# Import du dessin en coupe
 	input Data/hasselblad2023-1-coupe.th2
