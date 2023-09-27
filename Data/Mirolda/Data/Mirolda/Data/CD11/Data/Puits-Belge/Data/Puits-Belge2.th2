@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -134.0 -3636 5089 142.0
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_adjust -131.0 -3636 5089 140.0
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} cd11_amont_dessins_1987_Page_2.png 0 {}
 
 
@@ -20,7 +20,7 @@ point 2351.5 -1450.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau 
 
 point 2212.0 -1449.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 1948.5 -1186.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1978.5 -1185.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
 point 1738.0 -1244.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
@@ -52,6 +52,14 @@ line rock-border -close on
   873.5 -1089.5
   878.0 -1081.5
   874.0 -1078.0
+endline
+
+line pit
+  858.0 -1096.75
+  858.0 -1096.75 855.75 -1084.5 847.5 -1079.25
+  839.25 -1074.0 832.25 -1067.25 821.25 -1066.75
+  810.25 -1066.25 799.5 -1066.5 799.5 -1066.5
+  smooth off
 endline
 
 line rock-border -close on
@@ -109,6 +117,92 @@ line wall -outline in -subtype unsurveyed
   476.0 -704.0 476.5 -706.0 478.5 -718.0
   480.5 -730.0 481.5 -753.5 481.5 -753.5
   smooth off
+endline
+
+line section
+  296.0 -795.0
+  315.0 -817.0
+endline
+
+line section
+  404.0 -912.0
+  347.0 -846.0
+endline
+
+line section
+  411.0 -737.0
+  422.0 -774.0
+endline
+
+line section
+  447.0 -871.0
+  435.0 -810.0
+endline
+
+line section
+  1177.0 -1240.0
+  1177.0 -1271.0
+endline
+
+point 1940.0 -1123.0 section -scrap SS-Belge-7
+
+line section
+  1884.0 -1252.0
+  1861.0 -1294.0
+endline
+
+line section
+  1930.0 -1166.0
+  1894.0 -1232.0
+endline
+
+line section
+  1686.0 -1316.0
+  1691.0 -1291.0
+endline
+
+line section
+  1655.0 -1406.0
+  1676.0 -1382.0
+  1682.0 -1338.5
+endline
+
+line section
+  1234.0 -1355.0
+  1178.0 -1338.0
+  1179.0 -1300.0
+endline
+
+point 1628.0 -1435.0 section -scrap SS-Belge-6
+
+point 1258.0 -1368.0 section -scrap SS-Belge-5
+
+line section
+  684.0 -1022.0
+  715.0 -992.0
+endline
+
+line section
+  786.0 -925.0
+  724.0 -982.0
+endline
+
+point 806.0 -905.0 section -scrap SS-Belge-4
+
+point 449.0 -898.0 section -scrap SS-Belge-3
+
+point 388.0 -950.0 section -scrap SS-Belge-2
+
+point 276.0 -742.0 section -scrap SS-Belge-1
+
+line section
+  190.0 -851.0
+  209.5 -822.5
+endline
+
+line section
+  254.0 -764.0
+  223.0 -804.0
 endline
 
 line wall -reverse on -outline in
@@ -564,6 +658,42 @@ endarea
 point 3058.0 -1494.0 label -text "<center>siphon<br>temporaire<br>n°3"
 
 point 2668.0 -1731.0 label -text "<center>siphon temporaire<br>n°2"
+
+point 3913.0 -1643.0 section -scrap SS-Belge-10
+
+line section
+  3999.0 -1587.0
+  3947.0 -1632.0
+endline
+
+line section
+  4041.0 -1545.0
+  4011.0 -1575.5
+endline
+
+point 3762.0 -1329.0 section -scrap SS-Belge-9
+
+line section
+  3593.0 -1434.0
+  3635.0 -1410.0
+endline
+
+line section
+  3731.0 -1361.0
+  3673.0 -1391.0
+endline
+
+line section
+  2826.0 -1349.0
+  2825.0 -1385.0
+endline
+
+line section
+  2824.0 -1205.0
+  2825.0 -1331.0
+endline
+
+point 2840.0 -1177.0 section -scrap SS-Belge-8
 
 line label -id l152-2860--1598 -close on
   2859.0 -1598.5
@@ -1048,6 +1178,221 @@ point 2584.5 -1643.5 station -name 1101
 point 2508.0 -1635.5 station -name 1100
 
 point 2463.0 -1594.5 station -name A6
+
+endscrap
+
+
+
+scrap SS-Belge-1 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  333.0 -1898.0
+  333.0 -1898.0 346.0 -1890.5 343.5 -1880.0
+  341.0 -1869.5 344.5 -1860.0 333.5 -1860.5
+  322.5 -1861.0 317.0 -1859.0 310.0 -1862.0
+  303.0 -1865.0 298.0 -1868.5 298.0 -1876.5
+  298.0 -1884.5 300.5 -1886.5 303.0 -1891.5
+  305.5 -1896.5 301.5 -1904.0 302.5 -1908.5
+  303.5 -1913.0 304.0 -1914.5 309.0 -1911.5
+  314.0 -1908.5 313.5 -1902.0 320.0 -1901.0
+  326.5 -1900.0 333.0 -1898.0 333.0 -1898.0
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-2 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  352.5 -1974.5
+  352.5 -1974.5 313.5 -1978.0 305.0 -1980.0
+  296.5 -1982.0 293.5 -1985.0 302.0 -1990.5
+  310.5 -1996.0 320.0 -2001.5 332.5 -2002.0
+  345.0 -2002.5 354.0 -1999.0 358.0 -2009.0
+  362.0 -2019.0 353.0 -2032.0 362.0 -2031.5
+  371.0 -2031.0 377.5 -2029.0 376.0 -2024.0
+  374.5 -2019.0 371.5 -2016.5 380.5 -2010.0
+  389.5 -2003.5 392.5 -1989.0 392.5 -1982.0
+  392.5 -1975.0 387.0 -1971.5 377.0 -1972.5
+  367.0 -1973.5 352.5 -1974.5 352.5 -1974.5
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-3 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  384.0 -2149.5
+  384.0 -2149.5 388.0 -2134.0 380.5 -2126.5
+  373.0 -2119.0 358.0 -2107.0 347.5 -2102.5
+  337.0 -2098.0 334.5 -2090.0 321.5 -2093.0
+  308.5 -2096.0 299.5 -2089.5 300.0 -2099.5
+  300.5 -2109.5 297.5 -2118.5 308.0 -2122.0
+  318.5 -2125.5 328.0 -2130.5 339.5 -2130.0
+  351.0 -2129.5 362.5 -2125.0 363.0 -2133.5
+  363.5 -2142.0 358.0 -2152.5 365.0 -2152.5
+  372.0 -2152.5 384.0 -2149.5 384.0 -2149.5
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-4 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  319.5 -2270.0
+  319.5 -2270.0 337.5 -2273.0 337.0 -2270.0
+  336.5 -2267.0 336.5 -2268.0 334.5 -2263.0
+  332.5 -2258.0 332.0 -2245.0 326.0 -2241.0
+  320.0 -2237.0 317.5 -2231.5 316.0 -2224.0
+  314.5 -2216.5 312.5 -2203.5 305.0 -2204.5
+  297.5 -2205.5 294.0 -2206.5 295.5 -2215.5
+  297.0 -2224.5 304.0 -2229.0 304.5 -2234.5
+  305.0 -2240.0 302.5 -2247.0 307.5 -2250.0
+  312.5 -2253.0 315.5 -2257.5 316.5 -2260.0
+  317.5 -2262.5 319.5 -2270.0 319.5 -2270.0
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-5 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  330.5 -2447.0
+  330.5 -2447.0 347.0 -2450.0 347.0 -2444.0
+  347.0 -2438.0 346.0 -2426.5 341.0 -2413.0
+  336.0 -2399.5 330.0 -2381.5 329.5 -2369.5
+  329.0 -2357.5 330.5 -2336.0 320.5 -2335.0
+  310.5 -2334.0 305.0 -2324.5 301.0 -2339.0
+  297.0 -2353.5 308.0 -2370.5 307.0 -2378.5
+  306.0 -2386.5 306.5 -2393.0 306.5 -2407.5
+  306.5 -2422.0 301.5 -2440.0 310.0 -2442.5
+  318.5 -2445.0 321.0 -2447.0 325.0 -2447.0
+  329.0 -2447.0 330.5 -2447.0 330.5 -2447.0
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-6 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  319.5 -2579.5
+  319.5 -2579.5 320.5 -2559.5 318.0 -2552.0
+  315.5 -2544.5 305.5 -2535.0 316.5 -2529.5
+  327.5 -2524.0 338.5 -2514.5 333.5 -2509.0
+  328.5 -2503.5 312.5 -2509.5 307.0 -2513.5
+  301.5 -2517.5 272.5 -2535.0 279.5 -2541.0
+  286.5 -2547.0 288.0 -2542.0 292.0 -2549.5
+  296.0 -2557.0 292.5 -2563.0 295.0 -2570.0
+  297.5 -2577.0 302.5 -2577.5 303.5 -2588.0
+  304.5 -2598.5 305.0 -2604.0 305.5 -2611.5
+  306.0 -2619.0 308.5 -2624.5 312.5 -2621.0
+  316.5 -2617.5 317.0 -2609.0 317.0 -2602.5
+  317.0 -2596.0 319.5 -2579.5 319.5 -2579.5
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-7 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  331.0 -2713.0
+  331.0 -2713.0 336.5 -2689.5 327.0 -2687.0
+  317.5 -2684.5 301.5 -2683.5 299.0 -2692.0
+  296.5 -2700.5 296.0 -2703.5 298.5 -2710.0
+  301.0 -2716.5 300.5 -2718.5 300.5 -2724.5
+  300.5 -2730.5 301.5 -2738.0 307.0 -2733.0
+  312.5 -2728.0 311.5 -2722.5 315.5 -2720.5
+  319.5 -2718.5 331.0 -2713.0 331.0 -2713.0
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-8 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  340.0 -2865.0
+  340.0 -2865.0 300.5 -2849.0 294.5 -2850.0
+  288.5 -2851.0 282.5 -2857.0 285.5 -2864.5
+  288.5 -2872.0 296.5 -2874.0 296.5 -2882.0
+  296.5 -2890.0 296.0 -2892.5 299.5 -2897.0
+  303.0 -2901.5 303.0 -2906.0 303.0 -2912.5
+  303.0 -2919.0 303.0 -2927.0 307.0 -2921.5
+  311.0 -2916.0 307.0 -2909.5 310.5 -2906.0
+  314.0 -2902.5 308.0 -2899.5 310.5 -2893.0
+  313.0 -2886.5 309.5 -2880.5 316.5 -2879.0
+  323.5 -2877.5 314.5 -2870.0 324.0 -2869.5
+  333.5 -2869.0 340.0 -2865.0 340.0 -2865.0
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-9 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  339.0 -2992.0
+  294.0 -2968.5
+  294.0 -2968.5 282.0 -2972.5 285.5 -2979.0
+  289.0 -2985.5 299.5 -2992.0 289.5 -2994.0
+  279.5 -2996.0 262.5 -2998.0 258.0 -3006.5
+  253.5 -3015.0 253.5 -3016.0 267.0 -3019.5
+  280.5 -3023.0 288.5 -3023.5 288.5 -3032.0
+  288.5 -3040.5 282.0 -3044.0 287.0 -3046.0
+  292.0 -3048.0 292.5 -3052.5 283.0 -3053.5
+  273.5 -3054.5 255.5 -3059.0 262.0 -3065.0
+  268.5 -3071.0 273.5 -3068.5 282.0 -3077.0
+  290.5 -3085.5 290.0 -3096.5 295.5 -3100.0
+  301.0 -3103.5 306.5 -3113.5 308.5 -3105.0
+  310.5 -3096.5 304.5 -3089.0 310.5 -3085.5
+  316.5 -3082.0 323.5 -3078.5 323.0 -3070.5
+  322.5 -3062.5 320.0 -3058.5 324.0 -3056.0
+  328.0 -3053.5 315.5 -3038.5 324.0 -3036.5
+  332.5 -3034.5 345.0 -3039.5 343.0 -3030.0
+  341.0 -3020.5 333.5 -3016.5 330.5 -3009.5
+  327.5 -3002.5 325.5 -2997.5 330.0 -2995.0
+  334.5 -2992.5 339.0 -2992.0 339.0 -2992.0
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Belge-10 -projection none -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [589.5 -1680.0 708.5 -1680.0 0.0 0.0 5 0.0 m]
+
+line wall -close on
+  333.0 -3174.0
+  290.5 -3189.0
+  290.5 -3189.0 301.5 -3192.5 299.0 -3201.5
+  296.5 -3210.5 300.0 -3215.5 306.5 -3214.5
+  313.0 -3213.5 310.5 -3205.0 318.0 -3204.5
+  325.5 -3204.0 326.5 -3203.0 325.0 -3197.0
+  323.5 -3191.0 322.0 -3184.0 326.0 -3182.0
+  330.0 -3180.0 333.0 -3174.0 333.0 -3174.0
+  smooth off
+endline
 
 endscrap
 

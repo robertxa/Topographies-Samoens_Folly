@@ -22,7 +22,10 @@ map MP-PuitsBelge -title "Gouffre Mirolda - Puits Belge"
 	SP-Belge-1
 endmap
 
-#map MC-PuitsBelge -title "Gouffre Mirolda - Puits Belge"
-#	SC-Belge-1
-#endmap
+map MC-PuitsBelge -title "Gouffre Mirolda - Puits Belge"
+	SC-Belge-1
+	break
+	SC-Belge-2
+	#break
+endmap
    
