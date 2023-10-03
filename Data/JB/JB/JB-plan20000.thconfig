@@ -30,7 +30,10 @@ layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig		# Pour modifier les symboles
 	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
+	#copy headerl 			# Pour modifier le header/cartouche
+	copy scalebar_horiz
 	copy layoutmapborder	# Pour rajouter un cadre
+	
 
 	cs UTM32
   
@@ -43,6 +46,7 @@ layout my_layout
 	# (voir en bas)
 	base-scale 1 20000
 	scale 1 20000
+	scale-bar 1000 m
 	grid off
   
 	# une couleur de fond, 85% blanc = 15% noir
@@ -83,10 +87,13 @@ layout my_layout
 	symbol-hide group all
 	symbol-hide special north-arrow
 	symbol-hide special scale-bar
+	#symbol-show special scale-bar
 	symbol-show line wall
+	
 	#symbol-show point entrance
 
 	map-header 0 0 off
+	#map-header 0 100 nw
 	
 	layers on
   
@@ -98,6 +105,6 @@ endlayout
 
 # Export des fichiers pdf, plan et coupe. 
 select MP-JB-plan-tot@Jean-Bernard
- export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2022-plan20000.pdf -layout my_layout
+	export map -projection plan -fmt pdf -o Outputs/2D/jb-Xav-2022-plan20000.pdf -layout my_layout
 select MP-JB-coupe-tot@Jean-Bernard 
-export map -projection extended -fmt pdf -o Outputs/2D/jb-Xav-2022-coupe20000.pdf -layout my_layout
+	export map -projection extended -fmt pdf -o Outputs/2D/jb-Xav-2022-coupe20000.pdf -layout my_layout

@@ -38,9 +38,9 @@ point 12894.0 6905.0 label -text "P8"
 
 point 12889.75 6913.75 label -text "R4"
 
-point 12851.5 6890.0 label -text "C37" -scale xl
+point 12851.5 6890.0 label -text "<bf>C37" -scale xl
 
-point 12849.0 6915.5 label -text "C37b" -scale xl
+point 12849.0 6915.5 label -text "<bf>C37b" -scale xl
 
 point 12870.75 6892.25 entrance -orientation 49.8
 
@@ -558,6 +558,7 @@ scrap SP-C37-jonction -projection plan -station-names "" "@C37" -author 2010 "Xa
 line wall -reverse on -subtype unsurveyed
   13082.0 6423.5
   13082.0 6423.5 13082.75 6402.5 13081.75 6397.75
+  smooth off
 endline
 
 line wall -close on -reverse on -outline in
@@ -1124,3 +1125,5 @@ point 12961.04 6685.74 station -name Ac.2
 point 12958.04 6689.83 station -name Ac.3
 
 endscrap
+
+

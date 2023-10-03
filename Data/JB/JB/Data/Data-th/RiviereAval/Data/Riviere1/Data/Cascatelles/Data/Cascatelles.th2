@@ -42,11 +42,11 @@ point 7261.75 4352.25 label -text "<center>Cascatelle<br>Marie Françoise"
 
 point 7209.25 4287.0 label -text "<center>Cascade<br>Jean Dupont"
 
-point 7239.0 4271.75 label -text "Collecteur"
+point 7239.0 4271.75 label -text "collecteur"
 
-point 7617.25 4236.25 label -text "Collecteur"
+point 7617.25 4236.25 label -text "collecteur"
 
-point 7408.0 4191.0 label -text "Siphon"
+point 7431.75 4174.5 label -text "siphon"
 
 point 7281.5 4260.0 label -text "Siphon"
 
@@ -54,7 +54,7 @@ point 7629.5 4398.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Jea
 
 point 7624.0 4410.25 continuation -attr Code Q -attr Cavite JB -attr Reseau "Jean-Dupont" -text "A voir ?"
 
-point 7604.0 4406.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Jean-Dupont" -text "A voir ?"
+point 7603.5 4412.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Jean-Dupont" -text "A voir ?"
 
 point 7763.0 4331.0 continuation -explored 150m -text "environ 150 m non topo."
 
@@ -372,7 +372,15 @@ line wall -close on -outline in
 endline
 
 line wall
+  7619.0 4407.5
+  7619.0 4407.5 7617.75 4405.25 7614.75 4405.25
+  7611.75 4405.25 7609.75 4405.75 7609.75 4405.75
+  smooth off
+endline
+
+line wall
   7608.75 4403.25
+  altitude .
   7608.75 4403.25 7612.75 4403.5 7612.75 4401.0
   7612.75 4398.5 7613.75 4397.75 7610.0 4395.0
   7606.25 4392.25 7595.5 4390.25 7595.25 4387.75
@@ -403,7 +411,9 @@ line wall
   7536.0 4327.75 7536.25 4339.75 7537.75 4344.25
   7539.25 4348.75 7545.5 4357.5 7544.0 4361.5
   7542.5 4365.5 7527.75 4409.25 7523.0 4409.25
+  altitude .
   7518.25 4409.25 7500.25 4406.75 7497.75 4410.5
+  smooth off
 endline
 
 line wall
@@ -415,6 +425,7 @@ endline
 
 line wall
   7667.0 4321.75
+  altitude .
   7667.0 4321.75 7659.75 4311.75 7656.5 4312.0
   7653.25 4312.25 7643.25 4312.25 7639.5 4311.0
   7635.75 4309.75 7618.75 4300.75 7615.25 4300.75
@@ -424,6 +435,7 @@ line wall
   7583.25 4308.75 7580.75 4318.25 7580.5 4321.25
   7580.25 4324.25 7576.75 4327.75 7578.25 4331.0
   7579.75 4334.25 7583.25 4339.0 7583.25 4343.0
+  altitude .
   7583.25 4347.0 7576.75 4363.75 7580.5 4364.25
   7584.25 4364.75 7597.75 4368.75 7597.75 4370.5
   7597.75 4372.25 7595.0 4380.25 7600.0 4384.0
@@ -458,6 +470,7 @@ endline
 
 line wall
   7549.5 4235.25
+  altitude .
   7549.5 4235.25 7554.0 4240.5 7556.25 4241.5
   7558.5 4242.5 7562.75 4246.0 7562.75 4246.0
   smooth off
@@ -511,6 +524,7 @@ endline
 line wall
   7219.75 4322.25
   7219.75 4322.25 7222.5 4319.75 7224.75 4319.5
+  altitude .
   7227.0 4319.25 7237.5 4320.25 7238.75 4318.25
   7240.0 4316.25 7240.75 4312.5 7240.75 4312.5
   smooth off
@@ -582,14 +596,6 @@ point 7416.37 4238.43 station -name Jf.2
 
 point 7342.5 4329.5 label -text "Les Cascatelles"
 
-point 7220.0 4331.25 altitude -align top
-
-point 7667.0 4321.75 altitude -align top-left
-
-point 7619.0 4408.5 altitude -align top
-
-point 7400.5 4244.0 altitude -align top
-
 line wall
   7477.5 4304.25
   7477.5 4304.25 7438.25 4293.25 7436.5 4289.5
@@ -600,6 +606,7 @@ line wall
   7412.5 4238.5 7412.5 4238.5 7411.5 4240.0
   7410.5 4241.5 7409.75 4244.0 7407.5 4244.0
   7405.25 4244.0 7403.75 4245.25 7400.5 4244.0
+  altitude .
   7397.25 4242.75 7390.5 4236.0 7389.5 4238.0
   7388.5 4240.0 7387.0 4239.0 7387.0 4241.25
   7387.0 4243.5 7386.5 4248.25 7384.5 4250.0
@@ -722,6 +729,17 @@ point 7640.79 4307.74 station -name Je.16
 
 point 7657.65 4309.22 station -name Je.17
 
+line water-flow -subtype conjectural -place bottom
+  7422.5 4193.0
+  7422.5 4193.0 7374.5 4198.5 7355.75 4201.25
+  7337.0 4204.0 7307.25 4209.0 7303.5 4220.5
+  7299.75 4232.0 7302.25 4245.25 7298.0 4253.5
+  7293.75 4261.75 7289.0 4267.25 7289.0 4267.25
+  smooth off
+endline
+
 point 7667.14 4317.91 station -name Je.18
 
 endscrap
+
+

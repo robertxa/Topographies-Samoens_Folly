@@ -89,7 +89,7 @@ point 11200.0 6001.0 rope
 
 point 11278.5 5995.5 rope
 
-point 11315.75 6031.0 label -text "B22" -scale xl
+point 11315.75 6031.0 label -text "<bf>B22" -scale xl
 
 point 11275.0 6042.0 entrance -orientation 182.0
 
@@ -209,6 +209,7 @@ scrap SP-B22-2 -projection plan -station-names "" "@B22" -author 2010 "Xavier Ro
 line wall
   11540.5 5786.25
   11540.5 5786.25 11569.75 5774.5 11572.5 5772.5
+  smooth off
 endline
 
 point 11569.39 5777.08 station -name Bc.49
@@ -375,3 +376,5 @@ point 11248.01 6056.71 station -name Bc.23
 point 11243.38 6059.17 station -name Bc.22
 
 endscrap
+
+

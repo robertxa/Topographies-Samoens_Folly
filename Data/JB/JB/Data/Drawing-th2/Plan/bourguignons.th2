@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1} jb-Xav-2010.xvi 0 {}
 
@@ -123,6 +123,7 @@ line wall
   8650.25 4925.25 8629.5 4915.0 8623.25 4915.5
   8617.0 4916.0 8615.25 4907.5 8610.25 4912.5
   8605.25 4917.5 8597.5 4935.25 8593.75 4936.5
+  altitude .
   8590.0 4937.75 8576.75 4938.5 8575.25 4940.25
   8573.75 4942.0 8562.25 4953.5 8559.5 4954.75
   8556.75 4956.0 8552.0 4960.0 8552.25 4955.5
@@ -164,6 +165,7 @@ endline
 
 line wall
   8702.25 5077.25
+  altitude .
   8702.25 5077.25 8671.0 5038.75 8666.0 5029.75
   8661.0 5020.75 8659.75 5020.75 8657.5 5020.5
   8655.25 5020.25 8653.0 5023.75 8650.0 5017.0
@@ -172,7 +174,7 @@ line wall
   smooth off
 endline
 
-point 8558.5 4997.75 label -text "Galerie des Bourguignons"
+point 8558.5 4997.75 label -text "galerie des Bourguignons"
 
 point 8631.0 4925.75 continuation
 
@@ -209,7 +211,7 @@ line pit
   smooth off
 endline
 
-line pit -close on -outline in
+line wall -close on -reverse on -outline in
   8642.75 4911.75
   8636.25 4912.5 8631.75 4914.5 8631.75 4911.75
   8631.75 4909.0 8629.75 4908.75 8632.25 4905.0
@@ -271,11 +273,13 @@ endscrap
 
 scrap SP-Bourguignons1bis -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
-point 8666.66 4977.19 station -name Hb.6@jb-amonts2
+point 8666.66 4977.19 station -name Hb.7@jb-amonts2
 
 point 8653.38 5011.79 station -name Hb.5@jb-amonts2
 
-point 8704.0 4935.5 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
+point 8693.0 4946.5 gypsum
+
+point 8702.0 4929.0 label -text "colm."
 
 line wall
   8700.5 4946.5
@@ -399,6 +403,7 @@ line wall -subtype unsurveyed
   8464.0 4875.25
   8464.0 4875.25 8464.25 4880.5 8463.25 4885.0
   8462.25 4889.5 8465.5 4891.75 8464.0 4895.0
+  altitude .
   8462.5 4898.25 8458.5 4899.5 8458.5 4899.5
   smooth off
 endline
@@ -510,6 +515,7 @@ line wall
   8493.75 4980.75 8481.25 4986.5 8479.25 4988.0
   8477.25 4989.5 8472.75 4995.75 8470.75 4994.75
   8468.75 4993.75 8463.5 4977.25 8463.5 4974.5
+  altitude .
   8463.5 4971.75 8466.5 4958.0 8466.5 4953.75
   8466.5 4949.5 8468.0 4942.5 8465.75 4938.25
   8463.5 4934.0 8463.5 4932.0 8459.0 4932.0
@@ -575,7 +581,7 @@ scrap SP-Soucoupe -projection plan -author 2010 "Xavier Robert" -scale [-128.0 -
 
 point 8522.28 4768.15 station -name Hc.46@jb-amonts2
 
-point 8462.25 4793.5 label -orientation 48.2 -text "Méandre de la Soucoupe"
+point 8462.25 4793.5 label -orientation 48.2 -text "méandre de la Soucoupe"
 
 point 8374.25 4969.0 continuation -attr Code Q -attr Cavite JB -attr Reseau "Réseau des Bourguignons" -text "A revoir ?"
 
@@ -613,6 +619,7 @@ line wall
   smooth off
   8506.0 4821.75 8498.5 4832.0 8498.5 4836.5
   8498.5 4841.0 8499.0 4848.0 8497.75 4849.0
+  altitude .
   8496.5 4850.0 8493.0 4851.75 8490.75 4850.5
   8488.5 4849.25 8487.75 4849.25 8487.0 4846.75
   8486.25 4844.25 8478.5 4839.5 8479.0 4838.0
@@ -685,11 +692,13 @@ line wall
   8522.5 4772.25 8520.0 4771.75 8520.0 4768.75
   8520.0 4765.75 8521.0 4763.5 8523.0 4761.0
   smooth off
+  altitude .
 endline
 
 line wall
   8366.75 4962.5
   8366.75 4962.5 8362.75 4945.25 8366.75 4943.25
+  altitude .
   8370.75 4941.25 8383.25 4939.75 8383.25 4935.5
   8383.25 4931.25 8383.25 4930.0 8383.75 4925.75
   8384.25 4921.5 8387.25 4911.5 8389.5 4910.5
@@ -883,17 +892,17 @@ point 8564.5 4808.5 water-flow -orientation 253.3
 
 point 8548.5 4754.0 water-flow -orientation 173.1
 
-point 8567.75 4752.0 label -orientation 68.5 -text "Collecteur"
+point 8567.75 4752.0 label -orientation 68.5 -text "collecteur"
 
-point 8502.75 4944.5 label -orientation 67.8 -text "Collecteur"
+point 8502.75 4944.5 label -orientation 67.8 -text "collecteur"
 
-point 8592.0 4858.25 label -orientation 53.2 -text "Collecteur"
+point 8592.0 4858.25 label -orientation 53.2 -text "collecteur"
 
-point 8573.0 4993.75 label -text "Siphon"
+point 8573.0 4993.75 label -text "siphon"
 
 point 8588.5 4726.0 label -text "-591 m"
 
-point 8559.0 4712.75 label -text "Siphon"
+point 8559.0 4712.75 label -text "siphon"
 
 area sump
   l232-8565-4727
@@ -977,6 +986,7 @@ line wall -id l347-8552-4726
   8543.5 4762.0 8545.75 4753.0 8546.25 4748.75
   8546.75 4744.5 8552.5 4722.25 8552.5 4722.25
   smooth off
+  altitude .
 endline
 
 line wall -id l345-8550-4973
@@ -995,6 +1005,7 @@ line wall -id l345-8550-4973
   8589.5 4830.5 8579.0 4856.25 8576.25 4857.0
   8573.5 4857.75 8547.5 4879.0 8545.75 4882.5
   8544.0 4886.0 8527.5 4911.0 8525.0 4911.0
+  altitude .
   8522.5 4911.0 8492.0 4922.5 8490.75 4924.0
   8489.5 4925.5 8489.0 4929.75 8488.0 4931.75
   8487.0 4933.75 8479.0 4956.75 8481.0 4958.75
@@ -1046,6 +1057,14 @@ point 8492.6 4975.14 station -name Ha.22@jb-amonts2
 point 8518.97 4976.06 station -name Ha.23@jb-amonts2
 
 point 8538.74 4974.33 station -name Ha.24@jb-amonts2
+
+line water-flow -subtype conjectural -place bottom
+  8838.0 4869.5
+  8838.0 4869.5 8820.5 4895.5 8784.0 4903.5
+  8747.5 4911.5 8667.0 4979.5 8646.5 4979.5
+  8626.0 4979.5 8567.5 4976.5 8567.5 4976.5
+  smooth off
+endline
 
 point 8552.81 4975.56 station -name Ha.25@jb-amonts2
 

@@ -140,6 +140,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		### Joins dessins Plan
 			join SP-Pourquedalle SP-Passibas
 			join SP-J14 SP-P15
+			join SP-Erreur SP-P15-4
 		### Joins dessins Coupe
 			input Drawing-th2/Coupe/14J-coupe.th2
 
@@ -149,22 +150,22 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	# Galerie du P15
 	input Drawing-th2/Plan/P15.th2
 		### Joins dessins Plan
-			join SP-P15aval SP-Bourguignons1
 			join SP-P15aval SP-Pseudosiphon2
 	
 	## Réseau des Bourguignons	
 	input Drawing-th2/Plan/bourguignons.th2
+		#join SP-P15aval SP-Bourguignons1	# Revoir la jonction --> Faut-il forcer le bouclage ? Peut-être, en rajoutant une visée
 	
 	## Réseaux Anou2, Jaunisse, Grand Escalier
 	input Drawing-th2/Plan/anou2.th2
 		### Joins dessins Plan
-			join SP-Anou2 SP-Mais
-			join SP-flash SP-Mais
-			join SP-anou2bis SP-Mais
+			join SP-Anou2 SP-Mais	# A revoir, en nommant les objects ?
+			join SP-flash SP-Mais	# A revoir, en nommant les objects ?
+			join SP-anou2bis SP-Mais	# A revoir, en nommant les objects ?
 	input Drawing-th2/Plan/gd-escalier.th2
 		### Joins dessins Plan
 			join SP-anou2bis SP-grdescalier
-			join SP-grdescalier SP-Mais
+			join SP-grdescalier SP-Mais	# A revoir, en nommant les objects ?
 	input Drawing-th2/Coupe/jaunisse-coupe.th2
 		### Joins dessins Coupe
 			join SC-jaunissec6 SC-anou2c3

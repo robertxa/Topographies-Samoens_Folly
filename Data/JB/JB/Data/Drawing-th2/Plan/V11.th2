@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 14596.511750000001 8340.602859999999
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 
 ###XTHERION## xth_me_image_insert {12877.95 0 1.0} {6905.51 C37b@jb-amonts1} jb-Xav-2010.xvi 0 {}
 
@@ -30,12 +30,14 @@ line wall
   9907.5 5611.0 9889.0 5626.5 9887.25 5630.0
   9885.5 5633.5 9875.25 5649.25 9873.75 5651.5
   9872.25 5653.75 9866.25 5673.5 9863.25 5676.25
+  altitude .
   9860.25 5679.0 9850.5 5683.0 9847.5 5688.5
   9844.5 5694.0 9847.5 5693.25 9844.0 5698.25
   9840.5 5703.25 9811.0 5740.25 9810.0 5742.0
   9809.0 5743.75 9799.25 5753.25 9794.5 5760.75
   9789.75 5768.25 9766.5 5805.0 9763.75 5806.75
   9761.0 5808.5 9751.5 5824.25 9745.75 5828.25
+  altitude .
   9740.0 5832.25 9722.25 5863.75 9718.25 5865.25
   9714.25 5866.75 9702.25 5868.5 9700.25 5871.5
   9698.25 5874.5 9689.25 5883.25 9688.0 5887.75
@@ -175,9 +177,9 @@ endline
 
 point 10011.25 5549.0 label -text "-412 m"
 
-point 9593.75 6112.75 label -text "A14" -scale xl
+point 9593.75 6112.75 label -text "<bf>A14" -scale xl
 
-point 9501.75 6063.0 label -text "V11" -scale xl
+point 9501.75 6063.0 label -text "<bf>V11" -scale xl
 
 point 9659.75 5871.0 label -text "P20"
 
@@ -279,6 +281,18 @@ point 9587.5 5993.0 rope
 
 point 9683.0 5849.5 traverse
 
+point 10049.5 5444.25 stalagmites
+
+point 10019.0 5496.75 stalagmites
+
+point 10013.25 5507.0 stalagmites
+
+point 9888.5 5621.0 stalagmites
+
+point 9906.75 5603.75 stalagmites
+
+point 9802.75 5744.5 stalagmites
+
 point 9825.75 5737.25 traverse
 
 point 9920.5 5552.0 traverse
@@ -320,6 +334,8 @@ line wall
   smooth off
 endline
 
+point 9507.25 6039.5 altitude -align left
+
 line wall -id l1606-9540-6017 -reverse on
   9684.25 5863.25
   9681.25 5866.5 9678.75 5872.75 9673.5 5876.75
@@ -339,9 +355,29 @@ point 10045.0 5416.5 traverse
 
 point 10028.0 5449.25 traverse
 
+line slope
+  9982.5 5504.0
+  9982.5 5504.0 9973.0 5517.5 9965.0 5519.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  9990.0 5505.0
+  9990.0 5505.0 9986.0 5519.5 9978.0 5525.5
+  9970.0 5531.5 9958.5 5536.5 9958.5 5536.5
+  smooth off
+  l-size 5.0
+endline
+
+point 9960.0 5587.0 continuation -attr COde E -attr Cavite "V11" -attr Reseau "V11" -text "Escalade à faire ?"
+
+point 10083.5 5453.0 continuation -attr COde E -attr Cavite "V11" -attr Reseau "V11" -text "Escalade à faire ?"
+
 line wall
   10114.5 5346.25
   10113.25 5348.0 10109.75 5362.5 10106.75 5364.5
+  altitude .
   10103.75 5366.5 10087.25 5386.75 10084.0 5391.5
   10080.75 5396.25 10062.75 5428.25 10065.25 5428.25
   10067.75 5428.25 10072.5 5428.75 10073.25 5432.5
@@ -353,6 +389,7 @@ line wall
   10033.25 5483.25 10021.5 5516.5 10018.5 5520.0
   10015.5 5523.5 10015.27 5528.06 10011.5 5530.75
   smooth off
+  altitude .
 endline
 
 line wall
@@ -518,6 +555,7 @@ line wall
   9944.75 5572.0
   9944.75 5572.0 9944.25 5577.75 9940.25 5581.25
   9934.4 5586.37 9943.5 5598.5 9939.0 5600.5
+  altitude .
   9934.5 5602.5 9920.25 5608.75 9918.5 5611.25
   9916.75 5613.75 9910.0 5620.0 9908.0 5622.75
   9906.0 5625.5 9896.75 5638.0 9895.0 5640.75
@@ -651,11 +689,74 @@ point 9260.25 5557.75 dig
 
 point 9267.25 5550.75 label -text "-391 m"
 
-point 9398.0 5333.0 label -text "Vers Galerie de la Courte Echelle"
+line slope
+  9578.5 5263.5
+  9578.5 5263.5 9558.5 5275.0 9551.5 5263.0
+  smooth off
+  l-size 5.0
+endline
 
-point 9637.75 5468.75 label -text "Galerie des Oubliés"
+line slope
+  9572.5 5288.0
+  9572.5 5288.0 9549.5 5299.0 9541.5 5286.5
+  smooth off
+  l-size 5.0
+endline
 
-point 9437.75 5531.75 label -orientation 52.9 -text "Galerie des Dalles"
+line slope
+  9382.5 5545.5
+  9382.5 5545.5 9366.0 5546.0 9366.0 5538.0
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  9375.0 5559.0
+  9375.0 5559.0 9361.5 5557.5 9361.5 5549.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  9428.0 5498.5
+  9428.0 5498.5 9407.5 5500.5 9407.5 5490.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  9439.0 5480.0
+  9439.0 5480.0 9416.5 5483.5 9416.5 5473.0
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  9457.5 5444.0
+  9457.5 5444.0 9441.0 5446.0 9441.0 5437.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  9468.5 5424.5
+  9468.5 5424.5 9452.0 5426.5 9452.0 5417.0
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  9486.5 5394.0
+  9486.5 5394.0 9465.5 5388.5 9468.0 5379.5
+  smooth off
+  l-size 5.0
+endline
+
+point 9398.0 5333.0 label -text "Vers galerie de la Courte Echelle"
+
+point 9637.75 5468.75 label -text "galerie des Oubliés"
+
+point 9437.75 5531.75 label -orientation 52.9 -text "galerie des Dalles"
 
 point 9360.5 5595.25 continuation -attr Code Q -attr Cavite JB -attr Reseau V11 -attr CA "Courant d'air soufflant en été" -text "A voir ? Départ de méandre avec courant d'air"
 
@@ -694,6 +795,7 @@ line wall
   9600.0 5222.5 9587.5 5221.5 9583.5 5228.75
   9579.5 5236.0 9572.75 5268.0 9569.75 5275.5
   9566.75 5283.0 9564.5 5304.25 9565.0 5309.5
+  altitude .
   9565.5 5314.75 9572.0 5358.25 9570.25 5363.5
   9568.5 5368.75 9562.0 5389.0 9565.0 5392.25
   9568.0 5395.5 9569.75 5399.75 9572.25 5399.5
@@ -740,6 +842,7 @@ line wall
   9541.0 5306.0 9557.75 5251.5 9557.75 5251.5
   smooth off
   9557.75 5251.5 9563.75 5221.5 9563.0 5217.5
+  altitude .
   9562.25 5213.5 9562.25 5198.5 9562.25 5198.5
   smooth off
 endline
@@ -773,6 +876,7 @@ line wall
   9310.0 5565.5 9307.0 5567.75 9306.25 5571.0
   9305.5 5574.25 9303.0 5580.75 9301.5 5583.25
   9300.0 5585.75 9299.75 5590.0 9295.25 5588.25
+  altitude .
   9290.75 5586.5 9293.0 5585.25 9293.5 5582.5
   9294.0 5579.75 9300.25 5573.75 9296.0 5573.5
   9291.75 5573.25 9266.75 5572.75 9263.5 5571.25
@@ -784,6 +888,7 @@ line wall
   9957.5 5507.0 9953.0 5501.0 9948.5 5498.0
   9944.0 5495.0 9909.0 5492.0 9902.5 5490.5
   9896.0 5489.0 9861.0 5485.75 9853.0 5485.5
+  altitude .
   9845.0 5485.25 9826.0 5484.5 9821.0 5481.5
   9816.0 5478.5 9803.5 5464.5 9799.5 5464.5
   9795.5 5464.5 9793.5 5466.0 9793.0 5468.25

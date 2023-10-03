@@ -6,7 +6,7 @@ encoding  utf-8
 
 scrap SP-Echo2010-1 -projection plan -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.50240162 0.0 m]
 
-point 9289.5 4845.0 label -orientation 315.6 -text "Voute basse"
+point 9289.5 4845.0 label -orientation 315.6 -text "voute basse"
 
 line pit
   9274.5 4789.25
@@ -58,6 +58,7 @@ line wall
   9289.5 4821.25 9286.25 4823.0 9287.0 4816.25
   9287.75 4809.5 9290.75 4804.75 9288.0 4803.0
   9285.25 4801.25 9268.75 4795.5 9267.75 4797.25
+  smooth off
 endline
 
 point 9287.34 4800.88 station -name Fq.3@jb-amonts2
@@ -84,9 +85,9 @@ endline
 
 point 9223.5 4800.0 label -text "P27"
 
-point 9259.5 4818.25 label -text "Etr."
+point 9259.5 4818.25 label -text "etr."
 
-point 9252.5 4844.25 label -text "Etr."
+point 9252.5 4844.25 label -text "etr."
 
 line pit
   9259.25 4805.75
@@ -102,6 +103,7 @@ line wall
   9197.51 4849.77 9178.5 4873.25 9178.5 4873.25
   smooth off
   9178.5 4873.25 9165.25 4901.5 9163.0 4903.25
+  altitude .
   9160.75 4905.0 9158.0 4903.5 9158.0 4900.0
   9158.0 4896.5 9176.75 4869.0 9171.5 4870.0
   9166.25 4871.0 9144.75 4899.0 9144.75 4899.0
@@ -178,7 +180,7 @@ point 9285.0 4781.0 water-flow -orientation 256.3
 
 point 9295.25 4783.25 continuation -attr Code E -attr Cavite JB -attr Reseau "Echo" -text "Gros puits remontant arrosé à remonter en escalade (>80 m ?)"
 
-point 9321.25 4767.25 label -text "Salle de l'Echo"
+point 9321.25 4767.25 label -text "salle de l'Echo"
 
 line floor-meander
   9260.75 4760.75

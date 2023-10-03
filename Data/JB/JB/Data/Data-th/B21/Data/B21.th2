@@ -52,7 +52,7 @@ point 11234.25 5579.75 label -text "P15"
 
 point 11382.75 5673.0 label -text "P35"
 
-point 11369.25 5692.25 label -text "B21" -scale xl
+point 11369.25 5692.25 label -text "<bf>B21" -scale xl
 
 point 11365.25 5672.25 entrance -orientation 220.4
 
@@ -865,6 +865,7 @@ point 11249.92 5618.5 station -name Cc.31
 endscrap
 
 
+
 scrap SP-jctionB21B22 -projection plan -station-names "" "@B21" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [5246.0 2632.5 5246.0 2632.0 0.0 0.0 153.54210592 0.0 m]
 
 point 11026.59 5554.27 station -name Ce.1
@@ -880,6 +881,7 @@ line wall
   altitude .
   11101.5 5481.5 11127.0 5459.5 11130.5 5457.25
   11134.0 5455.0 11150.5 5448.75 11152.0 5446.0
+  smooth off
 endline
 
 line wall
@@ -979,3 +981,5 @@ point 11129.75 5491.5 continuation -attr Code Q -attr Cavite JB -attr Reseau Gad
 point 11157.0 5476.5 rope
 
 endscrap
+
+
