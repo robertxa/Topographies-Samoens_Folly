@@ -196,6 +196,7 @@ def cutLines(pathshp, outlines, outputspath):
         import rtree
         print ('\tYou may check the validity of your polygons with the verify function in QGIS')
         linesIN = linesIN.overlay(outlines, how = 'intersection', keep_geom_type=True)
+        print('TEST')
 
     # Removes inner lines that have different id and scrap_id
     linesIN = linesIN[linesIN['_SCRAP_ID'] == linesIN ['_ID']]
@@ -419,13 +420,14 @@ def ThCutAreas(pathshp, outputspath):
 
     #1- Read the outline shapefile
     outlines = gpd.read_file(pathshp + 'outline2d.shp', driver = 'ESRI shapefile')
-    # Change SHP to gpkg
-    shp2gpkg(pathshp, outputspath)
-    # Work with points
-    AddAltPoint(pathshp, outputspath)
-    # Work with lines
+    print('Check')
+    ## Change SHP to gpkg
+    #shp2gpkg(pathshp, outputspath)
+    ## Work with points
+    #AddAltPoint(pathshp, outputspath)
+    ## Work with lines
     cutLines(pathshp, outlines, outputspath)
-    # Work with Areas
+    ## Work with Areas
     if areaOK:
         print ('Cuting areas...')
         cutareas(pathshp, outlines, outputspath)

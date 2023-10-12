@@ -89,6 +89,7 @@ endlayout
   
 # 3-EXPORTS   
 export map -fmt xvi -layout xviexport -o trousVmap.xvi
+export map -proj plan -fmt esri -o ESRI
  
  select MP-zoneV@zoneV
 export map -o trouVplan.pdf -layout my_layout

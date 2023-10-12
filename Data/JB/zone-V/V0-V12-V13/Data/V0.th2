@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -186.8515 284.75 207.5
+##XTHERION## xth_me_area_adjust -128.75 -186.8537 284.75 207.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {39.614599999999996 1 1.0} {58.841499999999996 0@V0.V0} V0-map.xvi 0 {}
 
@@ -89,11 +89,6 @@ line wall -subtype invisible
   64.75 37.0
   64.75 37.0 79.5 39.75 89.0 35.0
   smooth off
-endline
-
-line wall -subtype invisible
-  69.75 18.75
-  65.75 19.25
 endline
 
 line rock-border -close on -clip off -place top
@@ -256,11 +251,13 @@ point 35.5 1.0 label -text "<bf>V13" -scale xl
 line pit
   57.75 5.0
   57.75 5.0 64.0 9.5 59.5 12.0
+  smooth off
 endline
 
 line pit
   35.5 25.5
   35.5 25.5 44.25 22.5 44.0 27.75
+  smooth off
 endline
 
 point 29.25 48.0 continuation -attr Code D -attr Cavite "V13" -attr Reseau "Jean Bernard" -attr CA "Courant d'air soufflant fort" -text "Arrêt sur étroiture à désobstruer, devrait joncitonner avec le V15"

@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -250.5 -467.0 721.0 340.18140000000005
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -249.0 -467.0 720.0 340.18140000000005
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {57.4544 1 1.0} {62.146100000000004 0@CP7.CP7} CP7-map2020a.xvi 0 {}
 ##XTHERION## xth_me_image_insert {57.577200000000005 1 1.0} {62.278999999999996 0@CP7.CP7} CP7-map2023a.xvi 0 {}
 
@@ -335,11 +335,13 @@ point 79.0 -100.5 dig
 line pit
   93.0 -161.0
   93.0 -161.0 101.25 -166.5 99.0 -158.75
+  smooth off
 endline
 
 line pit
   82.75 -149.75
   82.75 -149.75 93.5 -150.75 91.0 -144.75
+  smooth off
 endline
 
 point 75.25 -117.5 water-flow -orientation 323.8
@@ -347,6 +349,7 @@ point 75.25 -117.5 water-flow -orientation 323.8
 line pit
   81.0 -135.75
   81.0 -135.75 87.25 -133.25 87.0 -131.5
+  smooth off
 endline
 
 line pit
@@ -360,21 +363,25 @@ line pit
   68.25 -134.5
   68.25 -134.5 75.25 -142.75 79.0 -141.0
   82.75 -139.25 83.0 -140.75 83.25 -138.75
+  smooth off
 endline
 
 line pit
   72.25 -124.25
   72.25 -124.25 65.0 -119.25 64.75 -129.25
+  smooth off
 endline
 
 line pit
   64.0 -113.25
   64.0 -113.25 56.5 -103.5 53.75 -113.75
+  smooth off
 endline
 
 line pit
   55.0 -100.5
   55.0 -100.5 55.0 -94.75 47.5 -94.0
+  smooth off
 endline
 
 line wall
@@ -458,6 +465,7 @@ line wall
   76.0 -141.25 75.0 -143.25 78.75 -144.75
   82.5 -146.25 85.0 -149.0 87.25 -152.0
   89.5 -155.0 109.0 -175.5 111.5 -177.0
+  smooth off
 endline
 
 point 111.77720000000002 -154.89100000000002 station -name 10
@@ -484,20 +492,52 @@ endscrap
 
 scrap SP-CP7-2023-2 -projection plan -station-names "" "@CP7-2023" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-146.1832 -151.4585 188.55700000000002 -151.4585 0.0 0.0 8.50240108 0.0 m]
 
+point 96.89720000000003 -176.811 station -name 4
+
+point 106.6372 -170.95100000000002 station -name 8
+
+point 93.91720000000001 -179.091 station -name 9
+
+line wall -outline in
+  104.25 -172.25
+  104.25 -172.25 98.75 -174.25 95.5 -174.25
+  92.25 -174.25 86.75 -173.75 86.75 -173.75
+  smooth off
+endline
+
+line pit
+  102.5 -179.75
+  102.5 -179.75 104.5 -171.75 99.75 -172.75
+  95.0 -173.75 95.25 -180.75 95.25 -180.75
+  smooth off
+endline
+
+line wall
+  84.75 -176.5
+  84.75 -176.5 87.75 -177.5 89.0 -180.0
+  90.25 -182.5 94.0 -182.25 95.25 -180.75
+  96.5 -179.25 99.25 -177.25 101.25 -176.5
+  103.25 -175.75 105.5 -174.5 105.5 -174.5
+  smooth off
+endline
+
 line pit
   81.5 -177.5
   81.5 -177.5 87.0 -171.25 78.75 -169.5
+  smooth off
 endline
 
 line pit
   72.5 -174.0
   72.5 -174.0 77.25 -173.75 76.5 -171.5
+  smooth off
 endline
 
 line wall
   76.75 -166.0
   76.75 -166.0 79.75 -165.75 79.0 -167.75
   78.25 -169.75 78.5 -171.25 76.5 -171.5
+  smooth off
 endline
 
 line wall
@@ -517,7 +557,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   86.75 -173.75
   86.75 -173.75 81.0 -170.0 83.75 -170.0
   86.5 -170.0 85.75 -171.75 92.25 -172.0
@@ -546,82 +586,55 @@ endscrap
 
 
 
-scrap SP-CP7-2023-3 -projection plan -station-names "" "@CP7-2023" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-146.1832 -151.4585 188.55700000000002 -151.4585 0.0 0.0 8.50240108 0.0 m]
-
-line pit
-  102.5 -179.75
-  102.5 -179.75 104.5 -171.75 99.75 -172.75
-  95.0 -173.75 95.25 -180.75 95.25 -180.75
-  smooth off
-endline
-
-line wall
-  84.75 -176.5
-  84.75 -176.5 87.75 -177.5 89.0 -180.0
-  90.25 -182.5 94.0 -182.25 95.25 -180.75
-  96.5 -179.25 99.25 -177.25 101.25 -176.5
-  103.25 -175.75 105.5 -174.5 105.5 -174.5
-  smooth off
-endline
-
-line wall
-  104.25 -172.25
-  104.25 -172.25 98.75 -174.25 95.5 -174.25
-  92.25 -174.25 86.75 -173.75 86.75 -173.75
-  smooth off
-endline
-
-point 106.6372 -170.95100000000002 station -name 8
-
-point 93.91720000000001 -179.091 station -name 9
-
-point 96.89720000000003 -176.811 station -name 4
-
-endscrap
-
-
-
 scrap SP-CP7-2023-4 -projection plan -station-names "" "@CP7-2023" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-146.1832 -151.4585 188.55700000000002 -151.4585 0.0 0.0 8.50240108 0.0 m]
 
 line pit
   146.0 -192.75
   146.0 -192.75 147.0 -195.5 150.0 -191.75
+  smooth off
 endline
 
 line pit
   153.0 -194.25
   153.0 -194.25 148.0 -194.0 147.5 -200.5
+  smooth off
 endline
 
 line pit
   142.0 -194.5
   142.0 -194.5 136.5 -204.5 141.0 -205.25
+  smooth off
 endline
 
 line pit
   133.75 -191.75
   133.75 -191.75 124.5 -192.5 126.0 -203.75
+  smooth off
 endline
 
 line pit
   94.75 -163.0
   94.75 -163.0 90.75 -157.0 86.25 -158.25
   81.75 -159.5 83.75 -164.25 86.5 -168.75
+  smooth off
 endline
 
 line pit -reverse on
   75.25 -163.0
   75.25 -163.0 65.5 -156.0 66.25 -149.0
+  smooth off
 endline
 
 line pit
   58.75 -147.5
   58.75 -147.5 51.5 -142.5 51.25 -150.75
+  smooth off
 endline
 
 line pit
   73.5 -165.0
   73.5 -165.0 68.5 -163.0 63.75 -152.75
+  smooth off
 endline
 
 point 105.25 -205.5 height -value [-19 m]
@@ -629,6 +642,21 @@ point 105.25 -205.5 height -value [-19 m]
 point 33.25 -163.0 height -value [-10 m]
 
 point 39.75 -180.0 height -value [-20 m]
+
+line wall -subtype invisible
+  149.0 -191.0
+  146.0 -192.75
+endline
+
+line wall -subtype invisible
+  147.5 -200.5
+  153.0 -194.25
+endline
+
+line wall -subtype invisible
+  72.5 -174.0
+  76.5 -171.5
+endline
 
 line wall -reverse on
   147.5 -200.5
@@ -643,6 +671,7 @@ line wall -reverse on
   82.25 -167.25 81.5 -161.25 78.5 -161.75
   75.5 -162.25 72.5 -161.0 73.5 -165.0
   74.5 -169.0 77.0 -167.75 76.5 -171.5
+  smooth off
 endline
 
 line wall
@@ -651,6 +680,11 @@ line wall
 endline
 
 point 48.0 -130.25 continuation -attr Code E -attr Cavite "CP7" -attr Reseau "Combe aux Puaires" -text "Départ de méandre ?"
+
+line wall -subtype invisible
+  49.5 -137.5
+  47.0 -137.5
+endline
 
 line wall -reverse on
   49.5 -137.5
@@ -702,6 +736,7 @@ line wall
   112.75 -163.5
   112.75 -163.5 111.25 -169.75 109.5 -166.75
   107.75 -163.75 105.0 -160.75 105.0 -158.25
+  smooth off
 endline
 
 line wall
@@ -751,6 +786,7 @@ line wall -subtype clay
   201.5 -246.0
   201.5 -246.0 207.5 -248.0 207.5 -244.0
   207.5 -240.0 207.75 -236.75 206.0 -236.0
+  smooth off
 endline
 
 line wall
@@ -782,6 +818,7 @@ line pit
   97.25 -163.5 99.5 -180.5 105.0 -184.75
   110.5 -189.0 114.0 -193.5 117.25 -191.75
   120.5 -190.0 124.75 -179.25 130.75 -178.5
+  smooth off
 endline
 
 line pit
@@ -794,6 +831,7 @@ endline
 line pit
   125.25 -161.25
   125.25 -161.25 135.0 -171.0 131.75 -156.75
+  smooth off
 endline
 
 line pit -reverse on
@@ -809,11 +847,13 @@ line pit
   166.25 -204.0
   166.25 -204.0 165.0 -208.25 160.75 -208.0
   156.5 -207.75 154.0 -205.5 149.25 -205.75
+  smooth off
 endline
 
 line pit
   176.0 -239.0
   176.0 -239.0 201.0 -233.0 196.5 -222.25
+  smooth off
 endline
 
 line pit
@@ -828,11 +868,13 @@ line pit
   141.75 -215.5 145.5 -219.25 146.25 -223.0
   147.0 -226.75 146.75 -231.5 149.0 -230.5
   151.25 -229.5 149.25 -225.75 152.25 -224.75
+  smooth off
 endline
 
 line pit
   160.5 -198.25
   160.5 -198.25 154.0 -197.5 149.75 -203.0
+  smooth off
 endline
 
 line wall
@@ -848,6 +890,7 @@ line wall
   142.5 -213.25 142.0 -218.25 144.0 -222.75
   146.0 -227.25 147.0 -229.5 147.5 -232.0
   148.0 -234.5 150.5 -235.25 150.5 -237.75
+  smooth off
 endline
 
 point 115.20720000000003 -180.17100000000002 station -name 26
@@ -912,6 +955,7 @@ endline
 line pit
   135.75 -154.75
   135.75 -154.75 120.5 -156.75 123.75 -165.0
+  smooth off
 endline
 
 line pit
@@ -936,12 +980,14 @@ line pit
   485.25 -202.75 486.75 -195.75 478.25 -197.5
   469.75 -199.25 468.75 -206.5 463.0 -210.75
   457.25 -215.0 454.0 -219.75 451.5 -217.25
+  smooth off
 endline
 
 line pit -reverse on
   486.0 -198.5
   486.0 -198.5 481.0 -197.75 480.0 -186.5
   479.0 -175.25 477.75 -154.5 476.0 -148.0
+  smooth off
 endline
 
 point 525.0 -189.5 height -value [-7 m]
@@ -961,6 +1007,7 @@ line slope
   489.5 69.0 504.5 43.5 505.0 26.0
   505.5 8.5 503.0 -23.0 503.0 -37.0
   503.0 -51.0 500.5 -62.5 500.5 -71.25
+  smooth off
   l-size 5.0
 endline
 
@@ -968,6 +1015,7 @@ line slope
   500.5 -71.25
   500.5 -71.25 492.5 -131.25 497.25 -133.0
   502.0 -134.75 512.75 -109.25 518.25 -100.5
+  smooth off
   l-size 5.0
 endline
 
@@ -975,6 +1023,7 @@ line slope
   492.75 -96.5
   492.75 -96.5 489.25 -124.0 489.75 -137.0
   490.25 -150.0 472.75 -186.0 503.25 -164.5
+  smooth off
   l-size 5.0
 endline
 
@@ -998,6 +1047,7 @@ line floor-meander
   131.75 -161.0
   131.75 -161.0 141.75 -168.75 149.5 -172.0
   157.25 -175.25 165.0 -181.25 169.25 -181.25
+  smooth off
 endline
 
 line floor-meander
@@ -1024,11 +1074,13 @@ line wall
   474.0 109.5
   485.25 98.75 484.5 98.75 485.75 92.25
   487.0 85.75 485.5 86.25 486.25 84.25
+  smooth off
 endline
 
 line wall
   509.25 94.75
   509.25 94.75 494.0 113.0 491.25 119.75
+  smooth off
 endline
 
 line wall
@@ -1067,6 +1119,7 @@ line wall
   135.25 -169.25 135.0 -168.0 142.25 -173.5
   149.5 -179.0 153.25 -182.0 157.5 -188.25
   161.75 -194.5 163.25 -194.75 164.5 -196.75
+  smooth off
 endline
 
 line wall
@@ -1080,6 +1133,7 @@ line wall
   77.75 -125.5
   77.75 -125.5 89.25 -135.5 90.25 -139.0
   91.25 -142.5 97.75 -153.0 99.0 -155.5
+  smooth off
 endline
 
 line wall

@@ -152,7 +152,7 @@ export map -projection extended -layout my_layout-coupe -o Outputs/V0-V12-V13-co
 export model -o Outputs/V0.lox
   
 # Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/V0 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/V0 -layout my_layout
   
 # Export kml files
 export map -proj plan -fmt kml -o Outputs/V0.kml -layout my_layout

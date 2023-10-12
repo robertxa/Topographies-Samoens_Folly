@@ -409,7 +409,7 @@ export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
  export model -enable all -o Outputs/Mirolda-2022.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Mirolda-2022 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/Mirolda
 
 # Export des fichiers kml
  export map -proj plan -fmt kml -o Outputs/Mirolda.kml -layout layout-kml
