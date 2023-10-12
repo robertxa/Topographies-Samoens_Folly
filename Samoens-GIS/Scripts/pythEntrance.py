@@ -67,13 +67,13 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 	if not os.path.isfile(pathshp + inputfile):
 		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(pathshp + inputfile)))
 	if not os.path.exists(outpath):
-        print ('\033[91mWARNING:\033[00m ' + outpath + ' does not exist, I am creating it...')
-        os.mkdir(outpath)
+		print ('\033[91mWARNING:\033[00m ' + outpath + ' does not exist, I am creating it...')
+		os.mkdir(outpath)
 	
 	# open the input file
 	f = open(pathshp + inputfile, 'r').readlines()
 	for line in f:
-		if 'Gouffre Jean Bernard' in line:
+		if 'Gouffre Jean Bernard' in line:	
 			develJB = line.split('\t')[1]
 			denivJB = line.split('\t')[2]
 			if line.split('\t')[3] != '':
@@ -123,7 +123,8 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 				exploredD33 = line.split('\t')[3]
 			else:
 				exploredD33 = 0
-		elif 'Réseau de la Combe aux Puaires' in line:
+		#elif 'Réseau de la Combe aux Puaires' in line:
+		elif 'Réseau de la Combe au Puaires<br>CP07 - CP12 - CP14 - CP16 - CP19b' in line:
 			develCP = line.split('\t')[1]
 			denivCP = line.split('\t')[2]
 			if line.split('\t')[3] != '':
@@ -393,8 +394,8 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, crs):
 													'Explored': 'float',
 													'Deniv': 'float'}}
 							
-	JB_entrances = ['V4', 'V4bis', 'V6', 'V6b', 'V6ter', 'J14', 'V11', 'A14','B19', 'B21', 'B22', 'C37']
-	CPres_entrances = ['CP12', 'CP14', 'CP16', 'CP19b']
+	JB_entrances = ['V4', 'V4bis', 'V6', 'V6b', 'V6ter', 'V15', 'J14', 'V11', 'A14','B19', 'B21', 'B22', 'C37']
+	CPres_entrances = ['CP7', 'CP12', 'CP14', 'CP16', 'CP19b']
 	CP6_entrances = ['CP6', 'CP53']
 	LP9_entrances = ['LP9a', 'CP39']
 	A21_entrances = ['A(V)21', 'A24']
@@ -545,7 +546,7 @@ if __name__ == u'__main__':
 
 	systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV', 'SystemMirolda']
 
-	caves = {'SynclinalJB' : ['V4', 'V4bis', 'V6', 'V6b', 'V6ter', 'J14', 'V11', 
+	caves = {'SynclinalJB' : ['V4', 'V4bis', 'V6', 'V6b', 'V6ter', 'J14', 'V11', "V15",
 							  'A14',
 							  'B19', 'B21', 'B22',
 							  'D11', 'D33',
@@ -562,7 +563,7 @@ if __name__ == u'__main__':
 			 'SystemeA21' : ['A21', 'A22', 'A24'],
 			 'SystemeAV' : ['AV8'],
 			 'SystemMirolda' : ['CD11', 'VF3', 'F126', 'Jockers', 'Falaise', 'Fenêtre',
-			 					"L'Amine Dada -FLT7"],
+			 					"L'Amine Dada - FLT7"],
 			#Mirolda_entrances = ['CD11', 'VF3 - Mirolda - Réseau Lucien Bouclier', 
 			#			 'Gouffre de la Rondelle Jaune - F126', 'G. des Jockers',
 			#			 'Entrée de la Falaise', 'Fenêtre']

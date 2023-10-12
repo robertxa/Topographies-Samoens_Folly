@@ -425,4 +425,4 @@ export database -fmt sql -o Outputs/databaseMirolda-2022.sql
 export continuation-list -o Outputs/ContinuationsMirolda.html
 #export continuation-list -o Outputs/ContinuationsMirolda-2022.kml
 export survey-list -location on -o Outputs/SurveysMirolda.html
-#export cave-list -location on -o Outputs/CavesMirolda2022.html
+export cave-list -location on -o Outputs/CavesMirolda2022.html

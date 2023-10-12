@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -206.73800000000006 5482.3366 3120.1297999999997
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1417.324 1 1.0} {551.182 PTRMADG0@Yougo.Yougo} Yougo-map.xvi 0 {}
 
 
@@ -395,6 +395,10 @@ line wall
   smooth off
 endline
 
+point 624.0 215.0 map-connection
+
+point 749.0 507.0 map-connection
+
 line wall
   746.75 517.75
   744.25 518.0 743.75 518.5 737.0 519.5
@@ -466,6 +470,7 @@ line wall
   713.0 466.0 713.25 472.25 716.75 476.0
   720.25 479.75 718.75 481.0 725.0 482.5
   731.25 484.0 740.25 489.75 751.25 490.25
+  smooth off
 endline
 
 endscrap

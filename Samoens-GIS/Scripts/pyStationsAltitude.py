@@ -64,8 +64,8 @@ def ThAddAltStations(pathshp, inputfile, outpath):
 	if not os.path.isfile(pathshp + inputfile):
 		raise NameError('\033[91mERROR:\033[00m File %s does not exist' %(str(pathshp + inputfile)))
 	if not os.path.exists(outpath):
-        print ('\033[91mWARNING:\033[00m ' + outpath + ' does not exist, I am creating it...')
-        os.mkdir(outpath)
+		print ('\033[91mWARNING:\033[00m ' + outpath + ' does not exist, I am creating it...')
+		os.mkdir(outpath)
 
 	# Open the text file with the coordinates of the caves
 	#f = open('../../Lists/Therion-ShpEntrees/Caves.txt', 'r').readlines()
