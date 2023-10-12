@@ -24,7 +24,7 @@ Uniquement les fichiers sources sont sauvegardés pour des raisons de taille ; j
 	
 	* .thc, .th, .th2 et .thconfig pour le logiciel Therion
 	
-Cette base de données est hierarchisée en systèmes hydrologiques, puis par zone, puis par cavités, et enfin, pour les cavités importantes, par petits réseaux.
+Cette base de données est hierarchisée en systèmes hydrologiques, puis par zone, puis par cavités, et enfin, pour les cavités importantes, par petits réseaux. Les dossiers de cavités se terminant par "-coords" indiquent les cavités pour lesquelles nous n'avons pas les coordonnées des entrées.
 Pour obtenir les topographies en plan, coupe et/ou 3D de chaque élément, il faut compiler les différents fichiers Therion thconfig.
 Pour obtenir les topographies en plan et/ou 3D de l'ensemble d'un système ou de la base de données, il faut compiler les fichiers Therion thconfig parents. Il n'est pas nécessaire d'avoir compilé chaque petite entité auparavant.
 
