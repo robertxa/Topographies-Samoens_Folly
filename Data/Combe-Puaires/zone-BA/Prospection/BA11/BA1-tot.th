@@ -1,16 +1,16 @@
 encoding utf-8
 
-# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey V15 -title "V15"
-	input Data/V15.th
+survey BA1 -title "BA1"
+	input Data/BA1.th
 
 	# pour le plan
-	#input Data/V15.th2
+	input Data/BA1.th2
 	# Pour la coupe et le plan
-	#input Data/V15-coupe.th2
+	#input Data/BA1-coupe.th2
 
-	#input V15-maps.th
+	input BA1-maps.th
 endsurvey

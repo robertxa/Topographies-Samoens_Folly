@@ -1,0 +1,206 @@
+encoding  utf-8
+
+# Copyright (C) 2019-2021 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+# INTRO
+source Data/DEM_10m-L93-Criou.th
+
+# source JB/jb-atlas.th
+ source Mirolda.th
+ #source zone-A/A.th
+ 
+# Add config file
+input config.thc 
+  
+ # 2-LAYOUT
+
+## Debut de la definition du Layout "xviexport"
+#layout xviexport
+#  # echele auquel on veut faire la topo
+#  scale 1 1000
+#  # taille de la grille
+#  grid-size 10 10 10 m
+#  # mettre la grille en arrière plan
+#  grid bottom
+#endlayout
+## fin de la définition du layout "xviexport"
+
+
+#debut de la definition du layout "my_layout"
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	copy drawingconfig
+	#copy headerl 			# Pour modifier le header/cartouche
+	copy header_coupe 
+	copy langue-fr
+
+ #cs UTM32
+  
+  # La ligne base-scale specifie l'echelle auquel nous avons
+  # dessine nos croquis. Par defaut, therion pense que c'est
+  # une echelle 1:200. Si on a utilise une autre echelle, 
+  # il faudrait enlever le "#" et especifier l'echelle vraiment 
+  # employee, comme c'est le cas apres avoir dessine la topo
+  # sur un cheminement exporte avec le layout "xviexport"
+  # (voir en bas)
+  base-scale 1 20000
+
+  # Maitenant on va mettre une ligne "scale" pour specifier l'echelle
+  # pour imprimer la topo. La combination entre scale et base-scale
+  # controlle le gros des lignes, rotation, etc, convenable
+  # pour faire l'ampliation-reduction entre dessin et
+  # le resultat de l'imprimante
+
+  # C'est tres important s'assurer que la configuration de
+  # l'imprimante ne specifie pas l'option "Fit in page"
+  # ou similaire, sinon, l'echelle sera change pendant
+  # l'impression! 
+  scale 1 5000
+
+  # echelle graphique 100 m ampleur
+  scale-bar 1000 m
+
+  # Voici une ligne pour specifier qu'il faut imprimer une grille
+  # au dessous de la topo
+  grid bottom
+  grid-coords border
+
+  # Une ligne pour specifier que la grille est 1000x1000x1000 metres
+  # (Trois dimensions, oui, ça sert pour la coupe aussi)
+  grid-size 250 250 250 m  
+#  grid off
+ 
+  # La symbologie: UIS, ASF (Australie) CCNP (Etats Units) ou
+  # SKB (txekoslovakia) 
+  #symbol-set UIS
+  symbol-assign point station:temporary SKBB 
+  
+  # une couleur de fond, 85% blanc = 15% noir
+  #color map-bg 90
+#  color map-bg 85
+   #color map-fg [100 100 80]  
+   color map-fg [100 100 100]  
+  
+  # la topo est transparente (on peut voir les galeries sousjacentes)
+  # C'est on par defaut, donc, pas vraiment besoin de specifier
+  transparency on
+
+  # ça marche seulement si transparency est "on" 90% blanc= 10% noir
+  opacity 55
+  
+  # Auteur 
+  doc-author "Xavier Robert"
+
+  # Titule
+  doc-title "Gouffre Jean-Bernard - Coupe développée"
+
+  # Maitenant on va specifier la position de la manchette, dont l'interieur
+  # sera ocuppe par le titule, auteurs, etc. Nous pouvons indiquer
+  # les cordonnes du point de la topo ou l'on veut la manchette:
+  # 0 0, c'est en bas, a gauche
+  # 100 100, c'est en haut, a droite
+  # La manchette a des "points cardinaux" autour: n, s, ne, sw, etc.
+  # Il faut specifier un de ces points comme ce que sera place sur les
+  # cordonnees.
+  # Alors nous pouvons specifier que le sud-ouest de la manchette
+  # soit place en bas, a gauche, ou une autre combination
+  map-header 5 80 nw	# C'est lui le bon
+   
+  # arrière plan de la manchette
+  map-header-bg on
+  
+  # Nous voulons une legende pour expliquer les symboles. "on" imprimera
+  # seulement la legende des symboles dessines sur la topo, si l'on veut
+  # pour tous les symboles, utilises ou pas, il faut indiquer "all".
+  # "legend off" = pas de legende
+  legend off
+
+  # Par defaut, la legende est de 14 cm de largeur
+  legend-width 22 cm
+
+  # Il faut s'exprimer avec la langue de Voltaire...
+  language fr
+
+  # Un commentaire a ajounter au titule, on pourrait indiquer ici
+  # la mairie ou est place la cavite dont le nom est probablement
+  # le titule de la topo.
+  map-comment "<it>Coupe projetée sur plan 30 deg N<ss> - Samoëns, 74, France"
+#  map-comment "Synthèse 2010, Coupe développée"
+ 
+  # Afficher les statistiques d'explo par équipe/nom. C'est lourd
+  # si la cavité est importante et qu'il y a beaucoup d'explorateurs
+  statistics explo-length off
+  statistics explo off
+
+  # Afficher le developpement et la profondeur de la cavite
+  statistics topo-length off
+  statistics topo off
+  
+  # Modifier l'aspect et les données des statistiques de longueur affichees
+  #code tex-map
+  #     \cavelength{21460\thinspace{}m} 
+  #+ 150\thinspace{}m estimés}
+  #     \cavedepth{-1602\thinspace{}m}
+  #   endcode  
+  
+  # Afficher un copyright
+  statistics copyright all
+  
+  # Dessin ou pas du cheminement topo
+  #symbol-hide line survey
+  symbol-hide point station
+  #symbol-hide line splays
+	#debug station-names
+  #debug scrap-names
+	  #color map-fg scraps
+    #color-legend off
+  #color map-fg altitude
+	symbol-hide point rope
+
+ # origin 12 22 0 m
+ # origin-label 100 K
+
+  layers on
+              
+# Titre                         
+    code tex-map
+   % Output map title as determined by Therion 5.3 is stored in cavename. 
+   % It will be empty if there are multiple maps selected for any one projection
+   % AND there are multiple source surveys identified in the thconfig file 
+   % ie Therion can not infer a unique title from the input data given.
+   % This code allows you to define an output map title {cavename} if it happens to be empty
+   
+  \edef\temp{\the\cavename}        % cavename from Therion   
+  \edef\nostring{}                 % empty string 
+  \ifx\temp\nostring             % test if cavename is empty
+        % if empty reassign cavename to describe selected maps as a group
+
+		\cavename={Réseaux spéléologiques du Criou} 
+		
+  \else % if not empty keep the value set by therion, or assign an override cavename here
+  \fi
+  \newtoks\club \club={Groupe Spéléologique Vulcain}
+  \newtoks\synth \synth={Xavier Robert (2023)}
+  \newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
+  #\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+  endcode   
+  
+  #debug on
+  
+  # Rajout des logos du club
+	#map-image 73 35	nw	../../../Logos/vulcain.jpg
+	#map-image 80 40	nw	../../../Logos/vulcain2.jpg
+  
+ endlayout
+# Fin de la definition du Layout "normal"
+
+
+# 3-EXPORT
+# Export du fichier pdf de la coupe. 
+# ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
+#select MC-JB-coupe-tot@Jean-Bernard
+ #export map -projection [elevation 330 deg] -layout my_layout -fmt pdf -o Outputs/Samoens-coupeProj60.pdf
+ export map -projection [elevation 320 deg] -layout my_layout -fmt pdf -o Outputs/Criou-coupeProj30.pdf

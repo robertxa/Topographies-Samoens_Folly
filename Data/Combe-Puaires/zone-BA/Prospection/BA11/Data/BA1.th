@@ -1,0 +1,29 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey BA1 -title "BA1"
+
+	centerline -extend right
+		cs lat-long
+		fix       BA1        46.106917 6.776684 1573
+		station   BA1        "BA1" entrance #continuation explored 01m
+
+		date 2005.06.20
+			team "Stéphane Lips"
+			team "Xavier Robert"
+			team "Frédéric Delègue"
+		explo-date 2005.06.20
+			explo-team "Stéphane Lips"
+			explo-team "Xavier Robert"
+			explo-team "Frédéric Delègue"
+		
+		data normal from to length compass clino
+		flags approx
+		BA1	1	1	0	-90
+
+	endcenterline
+
+endsurvey
