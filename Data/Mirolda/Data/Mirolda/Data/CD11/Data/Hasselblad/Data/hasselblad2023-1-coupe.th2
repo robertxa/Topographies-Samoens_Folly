@@ -14,8 +14,9 @@ point 3378.0 776.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "H
 point 3509.0 447.5 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Suite vers le réseau de l'Ardèche à topographier"
 
 line label -text "galerie Hasselblad"
-  2765.5 1038.5
-  2883.5 1029.0 3194.5 904.0 3240.5 883.5
+  2792.0 1067.0
+  2891.0 1025.0 3194.5 904.0 3240.5 883.5
+  smooth off
 endline
 
 point 3556.5 473.0 air-draught -orientation 110.2 -subtype summer
@@ -39,9 +40,9 @@ point 3301.5 848.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "H
 
 point 3361.5 749.0 water-flow -orientation 160.5
 
-point 3303.0 809.0 water-flow -orientation 187.1
+point 3303.0 809.0 water-flow -orientation 181.8
 
-point 3288.0 648.5 water-flow -orientation 130.7
+point 3286.25 646.75 water-flow -orientation 141.2
 
 point 3239.0 704.5 station-name -scale xs -align left
 
@@ -78,6 +79,7 @@ line wall
   3562.0 571.5 3546.5 578.5 3554.0 584.0
   3561.5 589.5 3552.0 604.0 3552.0 613.5
   3552.0 623.0 3547.0 638.5 3554.0 640.5
+  smooth off
 endline
 
 line wall
@@ -88,6 +90,41 @@ line wall
   3414.0 425.5 3445.5 404.5 3461.5 398.0
   3477.5 391.5 3538.0 357.0 3538.0 357.0
   smooth off
+endline
+
+line wall -subtype invisible
+endline
+
+line wall -reverse on -subtype invisible
+  3565.5 502.0
+  3590.75 491.0
+  3619.5 453.0
+  3624.25 416.0
+  3617.25 390.0
+  3600.75 363.75
+  3585.5 351.75
+  3547.75 354.0
+  3538.0 357.0
+endline
+
+line wall -reverse on -subtype invisible
+  3500.0 723.0
+  3502.25 719.0
+endline
+
+line wall -reverse on -subtype invisible
+  3284.0 796.0
+  3317.5 794.0
+endline
+
+line wall -subtype invisible
+  3371.5 736.0
+  3363.0 732.5
+endline
+
+line wall -reverse on -subtype invisible
+  3298.5 641.5
+  3289.0 634.5
 endline
 
 line wall
@@ -158,6 +195,7 @@ line border
   3336.0 669.5 3351.0 657.5 3361.5 656.5
   3372.0 655.5 3378.0 652.5 3397.5 652.0
   3417.0 651.5 3448.0 649.5 3455.5 650.0
+  smooth off
 endline
 
 line border
@@ -171,14 +209,15 @@ endline
 point 3293.0 705.5 stalagmite
 
 line wall -subtype clay
-  3032.0 810.0
-  3032.0 810.0 3037.5 803.5 3050.5 802.5
+  3035.75 807.25
+  3035.75 807.25 3041.69 803.18 3050.5 802.5
   3063.5 801.5 3077.5 792.5 3089.5 791.5
   3101.5 790.5 3118.0 792.0 3130.0 790.5
   3142.0 789.0 3154.0 777.5 3162.5 775.0
   altitude .
   3171.0 772.5 3210.5 754.5 3221.0 746.5
   3231.5 738.5 3247.0 727.0 3253.0 723.5
+  smooth off
 endline
 
 line wall
@@ -200,7 +239,7 @@ line wall
   3203.5 787.5 3182.0 787.0 3170.5 793.0
   3159.0 799.0 3140.0 805.5 3121.5 809.5
   3103.0 813.5 3072.0 817.0 3064.5 819.0
-  3057.0 821.0 3041.0 832.5 3041.0 832.5
+  3057.0 821.0 3047.0 829.0 3047.0 829.0
   smooth off
 endline
 
@@ -246,7 +285,1172 @@ point 3359.81 665.914 station -name 1@hasselblad2023-1
 
 point 3176.0 788.224 station -name BUXR-1@hasselblad2023-2
 
-point 3053.91 810.844 station -name BUXR-2@hasselblad2023-2
+point 3053.91 810.894 station -name BUXR-2@hasselblad2023-2
+
+endscrap
+
+# Nota: Scrap "retournée" d'après SC-Hasselblad2023-3 By Alex 2023 10 17
+
+
+
+
+scrap SC-Hasselblad-5 -projection extended -station-names "" "@hasselblad2023-4" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 4065.01 -128.0 0.0 0.0 106.502454 0.0 m]
+
+point 793.0 971.75 station-name -scale xs -align right
+
+point 768.8500000000001 956.484 station -name PTRHAAPPR03
+
+point 689.9200000000001 989.004 map-connection
+
+point 643.5 1013.5 map-connection
+
+point 787.0 882.75 map-connection
+
+line rope
+  751.25 965.75
+  777.25 954.25
+  778.5 886.5
+endline
+
+line border
+  729.5 962.0
+  729.5 962.0 737.25 960.0 743.25 960.0
+  749.25 960.0 752.25 959.5 757.5 955.75
+  762.75 952.0 767.75 953.5 768.25 947.75
+  768.75 942.0 770.25 939.5 770.25 939.5
+  smooth off
+endline
+
+point 744.5 897.0 height -value [-5 m]
+
+point 788.5 863.0 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "P5 boueux à descendre, ça continue"
+
+line wall
+  797.5 882.25
+  797.5 882.25 796.25 910.75 794.0 919.75
+  791.75 928.75 783.75 938.25 782.25 944.5
+  780.75 950.75 777.5 958.25 772.5 961.75
+  767.5 965.25 775.5 962.75 765.0 965.5
+  754.5 968.25 733.25 973.25 730.5 976.0
+  727.75 978.75 731.0 976.0 723.5 981.0
+  716.0 986.0 710.25 991.5 706.75 995.0
+  703.25 998.5 702.5 998.75 700.25 999.0
+  698.0 999.25 698.75 998.75 696.75 999.0
+  694.75 999.25 690.25 998.75 690.25 998.75
+  smooth off
+endline
+
+line wall
+  634.25 1011.0
+  634.25 1011.0 645.0 1006.25 650.25 1006.25
+  655.5 1006.25 658.25 1007.75 663.75 1005.5
+  669.25 1003.25 672.0 1005.25 675.0 1000.25
+  678.0 995.25 677.75 987.25 681.5 987.0
+  685.25 986.75 686.0 986.75 686.0 986.75
+  smooth off
+  686.0 986.75 692.5 984.75 693.75 983.25
+  695.0 981.75 694.5 973.0 697.75 972.5
+  701.0 972.0 718.5 970.0 719.0 964.75
+  719.5 959.5 718.0 952.0 719.5 947.25
+  721.0 942.5 723.25 935.75 730.75 934.5
+  altitude .
+  738.25 933.25 757.75 925.25 761.5 917.5
+  765.25 909.75 777.75 882.0 777.75 882.0
+  smooth off
+endline
+
+line wall
+  690.25 998.75
+  690.25 998.75 680.25 1005.25 675.25 1009.0
+  670.25 1012.75 665.25 1013.25 659.5 1014.75
+  653.75 1016.25 648.5 1017.0 648.5 1017.0
+  smooth off
+endline
+
+point 724.19 972.384 station -name 28
+
+point 699.0900000000001 987.744 station -name 27
+
+point 823.5900000000001 922.5440000000001 station -name 30
+
+endscrap
+
+
+
+scrap SC-Hasselblad-3 -projection extended -author 2023 "Charlotte Honiat" -author 2023 "Benoît Urruty" -author 2023 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 4065.01 -128.0 0.0 0.0 106.502454 0.0 m]
+
+line wall -reverse on -subtype invisible
+  2671.25 902.75
+  2682.25 915.0
+endline
+
+line wall -reverse on
+  2893.5 738.0
+  2893.5 738.0 2910.5 750.5 2917.5 755.5
+  altitude .
+  2924.5 760.5 2939.5 776.5 2942.5 785.5
+  2945.5 794.5 2943.5 804.0 2942.5 807.0
+  2941.5 810.0 2933.0 819.5 2930.5 821.0
+  smooth off
+endline
+
+line wall -reverse on -subtype clay
+  2930.5 821.0
+  2922.26 825.94 2907.75 837.0 2901.75 841.5
+  2892.99 848.07 2876.2 857.71 2872.0 861.0
+  2866.25 865.5 2861.25 868.5 2852.5 868.5
+  2843.98 868.5 2821.78 859.35 2819.0 880.0
+  2817.25 893.0 2816.53 896.26 2812.5 898.5
+  2808.0 901.0 2797.0 911.5 2792.0 914.5
+  2787.0 917.5 2778.0 923.0 2770.5 923.0
+  2762.96 923.0 2755.75 925.5 2748.0 926.0
+  2742.0 926.39 2727.34 924.34 2718.5 915.5
+  2712.0 909.0 2684.0 897.75 2671.25 902.75
+  smooth off
+  altitude .
+endline
+
+line wall -reverse on -subtype clay
+  3004.5 763.5
+  3004.5 763.5 2993.5 769.5 2990.0 772.0
+  2986.5 774.5 2975.0 778.5 2968.5 776.5
+  2962.0 774.5 2955.07 771.57 2951.5 766.5
+  2946.75 759.75 2939.5 752.75 2934.5 746.5
+  2931.51 742.76 2918.5 731.0 2909.5 724.5
+  smooth off
+endline
+
+line wall
+  1986.0 1069.25
+  1986.0 1069.25 1973.0 1062.5 1934.5 1052.0
+  1896.0 1041.5 1896.5 1038.5 1864.5 1049.5
+  smooth off
+endline
+
+point 2359.0 1125.5 air-draught -orientation 273.9 -subtype summer
+
+line ceiling-meander
+endline
+
+line rope
+  2016.0 1064.75
+  2016.0 1064.75 2001.0 1060.0 1994.5 1058.75
+  1988.0 1057.5 1964.25 1039.0 1959.0 1035.5
+  1953.75 1032.0 1936.75 1023.75 1934.25 1023.75
+  1931.75 1023.75 1905.0 1019.5 1899.75 1020.75
+  1894.5 1022.0 1878.0 1026.0 1878.0 1026.0
+  smooth off
+  1878.0 1026.0 1853.25 1033.5 1851.5 1034.25
+  smooth off
+endline
+
+point 1524.5 1260.5 label -orientation 23.5 -text "g. du Chenal de Voute"
+
+point 1392.25 1168.25 station-name -scale xs -align left
+
+point 1693.0 1134.0 air-draught -orientation 289.8 -subtype summer
+
+line wall
+  1864.5 1049.5
+  1832.5 1060.5 1786.5 1070.0 1739.5 1087.5
+  1692.5 1105.0 1555.0 1148.0 1521.5 1161.5
+  1488.0 1175.0 1459.0 1193.0 1420.0 1218.0
+  1381.0 1243.0 1401.5 1228.5 1373.5 1248.5
+  smooth off
+endline
+
+point 2624.5 1180.5 stalagmite
+
+point 2551.5 1149.5 stalagmite
+
+point 2466.5 1109.0 stalagmite
+
+point 2444.5 1081.5 stalagmite
+
+point 2871.5 868.5 stalagmite
+
+point 2920.0 840.0 stalagmite
+
+point 2968.5 784.0 stalagmite
+
+point 2930.5 878.5 stalactite
+
+point 2876.0 888.0 stalactite
+
+point 2667.0 997.5 stalactite
+
+point 2586.0 1044.5 stalactite
+
+point 2511.5 1071.0 stalactite
+
+point 2656.5 1199.5 stalactite
+
+line wall
+  2888.75 1217.25
+  2888.75 1217.25 2866.75 1206.75 2849.25 1209.25
+  2831.75 1211.75 2821.75 1198.75 2803.75 1205.75
+  2785.75 1212.75 2788.75 1213.5 2769.25 1218.25
+  2749.75 1223.0 2760.5 1225.75 2726.5 1226.0
+  2692.5 1226.25 2715.25 1229.5 2685.5 1215.0
+  2655.75 1200.5 2645.0 1195.0 2633.25 1190.75
+  2621.5 1186.5 2597.0 1180.25 2580.75 1173.25
+  2564.5 1166.25 2563.25 1169.0 2551.0 1159.0
+  2538.75 1149.0 2532.0 1144.75 2509.25 1136.75
+  2486.5 1128.75 2492.5 1135.25 2472.5 1122.75
+  2452.5 1110.25 2458.5 1112.75 2447.25 1106.75
+  2436.0 1100.75 2436.75 1094.5 2428.75 1095.75
+  2420.75 1097.0 2404.0 1095.75 2385.75 1097.25
+  2367.5 1098.75 2340.0 1099.0 2318.25 1104.25
+  2296.5 1109.5 2280.5 1114.0 2272.0 1115.25
+  2263.5 1116.5 2267.5 1118.5 2262.25 1125.75
+  2257.0 1133.0 2254.75 1134.5 2241.75 1137.0
+  2224.81 1140.26 2224.75 1136.75 2218.5 1134.0
+  2212.25 1131.25 2211.75 1128.25 2189.25 1115.25
+  2174.86 1106.94 2141.25 1117.75 2114.0 1109.75
+  2081.14 1100.1 2098.5 1089.75 2054.0 1085.5
+  2009.5 1081.25 2004.0 1077.0 1986.0 1069.25
+  smooth off
+endline
+
+line wall
+endline
+
+line wall -reverse on
+  2981.25 1219.75
+  2992.5 1233.25 2996.0 1235.5 2996.5 1240.5
+  2997.0 1245.5 3001.0 1247.0 2995.5 1248.75
+  2990.0 1250.5 2990.5 1250.25 2983.5 1245.5
+  2976.5 1240.75 2979.5 1240.75 2968.25 1235.0
+  2957.0 1229.25 2957.75 1227.25 2949.75 1224.75
+  2941.75 1222.25 2934.87 1219.37 2931.75 1216.25
+  2929.25 1213.75 2940.5 1207.0 2941.5 1203.25
+  2942.5 1199.5 2941.0 1193.25 2936.5 1193.0
+  altitude .
+  2932.0 1192.75 2928.25 1200.0 2924.5 1202.0
+  2920.75 1204.0 2916.75 1206.75 2913.5 1203.25
+  2910.25 1199.75 2909.5 1198.5 2903.75 1196.0
+  2898.0 1193.5 2896.0 1193.0 2896.0 1193.0
+  smooth off
+endline
+
+line wall -reverse on
+  3076.5 1240.5
+  altitude .
+  3066.75 1239.25 3060.75 1238.5 3054.0 1237.25
+  3047.25 1236.0 3049.25 1234.75 3055.25 1232.75
+  3061.25 1230.75 3086.5 1216.75 3091.0 1214.5
+  3095.5 1212.25 3096.75 1208.5 3103.5 1203.75
+  3110.25 1199.0 3115.0 1194.5 3106.75 1193.25
+  altitude .
+  3098.5 1192.0 3099.25 1192.25 3090.25 1198.75
+  3081.25 1205.25 3070.0 1212.0 3057.25 1218.25
+  3044.5 1224.5 3032.0 1229.5 3027.25 1232.25
+  3022.5 1235.0 3017.25 1242.0 3011.0 1240.25
+  3004.75 1238.5 3000.69 1233.2 2996.5 1225.75
+  2994.25 1221.75 2991.5 1217.0 2989.5 1213.75
+  smooth off
+endline
+
+point 2976.25 1195.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Etroiture avec vide derrière"
+
+point 2646.0 916.0 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Meandre à continuer en aval et corde en hauteur"
+
+point 2880.0 708.0 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Meandre à continuer en aval et corde en hauteur"
+
+point 3037.0 757.0 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Meandre à continuer en aval et corde en hauteur"
+
+point 2754.5 1295.5 label -text "<center>réchaud<br>+ bougie"
+
+point 2974.0 963.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Meandre à continuer en aval et corde en hauteur"
+
+point 3106.0 1266.5 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Meandre à continuer en aval et corde en hauteur"
+
+line wall -close on -reverse on -outline in
+  3018.25 1252.5
+  3018.25 1252.5 3011.25 1257.5 3010.0 1254.0
+  3008.75 1250.5 3007.0 1250.0 3012.75 1247.75
+  3018.5 1245.5 3021.0 1243.5 3024.25 1243.5
+  3027.5 1243.5 3030.5 1241.75 3027.5 1246.5
+  3024.5 1251.25 3018.25 1252.5 3018.25 1252.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  2981.25 1219.75
+  2989.5 1213.75
+endline
+
+line wall -reverse on -subtype invisible
+  3077.25 1252.5
+  3076.5 1240.5
+endline
+
+line wall -reverse on
+  2888.75 1217.25
+  2888.75 1217.25 2898.0 1225.75 2907.5 1228.0
+  2917.0 1230.25 2918.75 1230.25 2932.25 1234.0
+  2945.75 1237.75 2953.0 1240.75 2963.0 1245.25
+  2973.0 1249.75 2973.75 1250.0 2982.5 1256.0
+  2991.25 1262.0 2991.75 1266.25 2998.0 1269.0
+  3004.25 1271.75 3005.75 1273.5 3010.25 1273.75
+  3014.75 1274.0 3018.25 1276.75 3021.75 1270.75
+  3025.25 1264.75 3022.25 1263.5 3027.25 1259.25
+  3032.25 1255.0 3036.75 1247.25 3043.25 1248.0
+  3049.75 1248.75 3053.5 1247.75 3061.5 1249.5
+  3069.5 1251.25 3072.25 1251.75 3077.25 1252.5
+  smooth off
+endline
+
+line wall
+endline
+
+line wall
+  2937.25 957.5
+  2921.34 952.09 2884.0 937.75 2877.25 934.0
+  2870.47 930.23 2844.0 913.5 2835.0 910.5
+  2827.1 907.87 2818.28 913.95 2809.75 921.75
+  2792.25 937.75 2782.75 943.75 2771.25 947.5
+  2759.75 951.25 2742.0 965.25 2727.25 971.75
+  2712.5 978.25 2678.25 992.25 2657.75 1006.5
+  2637.25 1020.75 2594.75 1047.25 2577.75 1053.25
+  2565.62 1057.53 2546.5 1063.75 2521.5 1071.5
+  2496.5 1079.25 2504.5 1079.5 2479.75 1085.75
+  2461.78 1090.29 2455.25 1093.75 2455.5 1095.75
+  smooth off
+endline
+
+line wall -subtype clay
+  2455.5 1095.75
+  2455.75 1097.75 2464.5 1103.25 2472.5 1107.25
+  2480.5 1111.25 2520.0 1125.5 2528.25 1129.0
+  2536.5 1132.5 2547.75 1140.75 2558.5 1147.25
+  2569.25 1153.75 2577.25 1154.25 2590.25 1159.25
+  2603.25 1164.25 2598.25 1164.25 2610.0 1170.5
+  2621.75 1176.75 2637.0 1178.75 2654.5 1186.0
+  2672.0 1193.25 2659.5 1189.75 2679.0 1198.0
+  2698.5 1206.25 2702.75 1212.5 2715.75 1215.75
+  2728.75 1219.0 2733.0 1216.25 2743.75 1215.0
+  2754.5 1213.75 2756.0 1214.0 2763.0 1209.75
+  2770.0 1205.5 2769.0 1203.0 2776.75 1199.5
+  2784.5 1196.0 2784.75 1195.75 2794.0 1193.0
+  2803.25 1190.25 2806.0 1192.0 2814.25 1192.25
+  2822.5 1192.5 2835.0 1189.75 2842.25 1190.5
+  2849.5 1191.25 2849.5 1189.0 2862.75 1189.5
+  2876.0 1190.0 2881.0 1189.25 2896.0 1193.0
+  smooth off
+endline
+
+point 2962.5 808.0 handrail
+
+point 2795.5 921.0 handrail
+
+point 2632.25 1006.5 handrail
+
+line wall -reverse on
+  2682.25 915.0
+  2683.75 916.75 2697.5 923.75 2704.75 929.5
+  2712.0 935.25 2720.75 938.75 2722.5 945.0
+  2724.25 951.25 2724.0 956.25 2716.25 958.25
+  smooth off
+endline
+
+line wall -reverse on -subtype clay
+  2716.25 958.25
+  2706.36 960.8 2703.5 961.25 2688.5 971.5
+  2673.5 981.75 2655.0 991.75 2644.0 997.0
+  2633.0 1002.25 2592.5 1019.75 2580.5 1024.25
+  2568.5 1028.75 2551.96 1041.56 2542.0 1046.25
+  2537.75 1048.25 2541.0 1052.0 2521.5 1053.75
+  2500.68 1055.62 2488.0 1061.75 2473.25 1066.25
+  2458.5 1070.75 2449.0 1073.5 2441.75 1075.25
+  2434.5 1077.0 2430.75 1078.5 2422.0 1080.0
+  2413.25 1081.5 2374.75 1084.75 2366.75 1085.25
+  2358.75 1085.75 2337.25 1091.0 2324.25 1092.5
+  2311.25 1094.0 2290.75 1098.0 2277.75 1099.25
+  smooth off
+endline
+
+area u:galerie
+  l93-1956-1042
+endarea
+
+line border -id l93-1956-1042 -close on -reverse on
+  1956.0 1051.0
+  1955.75 1042.0
+  1955.75 1042.0 1955.25 1041.75 1952.75 1035.75
+  1952.34 1034.77 1946.25 1033.0 1945.25 1036.25
+  1944.25 1039.5 1946.25 1042.5 1948.0 1046.5
+  1949.75 1050.5 1956.0 1051.0 1956.0 1051.0
+  smooth off
+endline
+
+point 1851.5 1034.25 handrail
+
+point 2016.0 1064.75 handrail
+
+line wall
+  1844.0 1021.25
+  1844.0 1021.25 1798.0 1033.5 1742.5 1054.0
+  1687.0 1074.5 1561.5 1120.0 1548.5 1126.0
+  1535.5 1132.0 1420.5 1180.0 1409.5 1186.0
+  1398.5 1192.0 1367.0 1208.0 1362.0 1212.5
+  smooth off
+endline
+
+line border
+  1937.5 1021.0
+  1937.5 1021.0 1948.75 1024.0 1953.0 1024.0
+  1957.25 1024.0 1962.25 1025.75 1962.25 1025.75
+  smooth off
+endline
+
+line border
+  1867.0 1018.5
+  1867.0 1018.5 1898.25 1010.25 1905.25 1010.25
+  1912.25 1010.25 1933.5 1010.25 1933.5 1010.25
+  smooth off
+endline
+
+point 1879.25 986.0 water-flow -orientation 231.3
+
+point 1887.25 954.75 label -text "imp."
+
+line wall
+  1890.0 990.0
+  1890.0 990.0 1899.25 990.75 1900.75 992.25
+  1902.25 993.75 1904.0 997.75 1905.25 998.5
+  1906.5 999.25 1908.75 1001.5 1908.75 1001.5
+  smooth off
+endline
+
+line wall
+  1899.0 1001.25
+  1899.0 1001.25 1897.5 998.5 1895.5 996.75
+  1893.5 995.0 1888.75 992.75 1888.75 992.75
+  smooth off
+endline
+
+line wall -reverse on
+  2277.75 1099.25
+  2264.75 1100.5 2241.75 1104.5 2235.0 1104.5
+  2228.25 1104.5 2238.0 1106.5 2220.75 1100.25
+  2203.5 1094.0 2156.75 1080.25 2147.25 1075.25
+  2137.75 1070.25 2123.0 1074.25 2120.25 1067.75
+  2117.5 1061.25 2118.0 1060.0 2113.25 1059.25
+  2108.5 1058.5 2095.75 1058.0 2087.0 1057.5
+  2078.25 1057.0 2038.25 1056.75 2025.0 1052.75
+  2011.75 1048.75 2015.5 1048.0 2000.0 1042.5
+  1984.5 1037.0 1971.75 1033.0 1969.75 1028.75
+  1967.75 1024.5 1965.0 1016.0 1961.0 1013.25
+  1957.0 1010.5 1925.0 1003.25 1918.5 1002.5
+  altitude .
+  1912.0 1001.75 1908.75 1001.5 1908.75 1001.5
+  smooth off
+endline
+
+line wall -reverse on
+  1899.0 1001.25
+  1899.0 1001.25 1864.5 1012.25 1844.0 1021.25
+  smooth off
+endline
+
+line wall -subtype invisible
+  2954.5 942.75
+  2937.25 957.5
+endline
+
+line rope
+  3025.0 815.75
+  3014.25 829.25
+  2997.5 837.75
+  2962.5 808.0
+  2909.75 848.25
+  2844.75 883.75
+  2795.5 921.0
+  2724.25 961.0
+  2641.0 1009.75
+  2632.25 1006.5
+endline
+
+line wall -reverse on -subtype clay
+  3035.75 807.25
+  3035.75 807.25 3026.25 812.75 3016.0 814.5
+  3007.61 815.93 3001.36 816.32 2995.0 815.0
+  smooth off
+endline
+
+line wall -reverse on
+  2995.0 815.0
+  2989.0 813.75 2985.74 808.9 2986.25 801.25
+  2986.75 793.75 2988.75 789.5 2994.25 786.0
+  3001.47 781.41 3012.0 776.5 3014.0 776.0
+  smooth off
+endline
+
+line wall -subtype invisible
+endline
+
+line wall -reverse on -subtype invisible
+  2909.5 724.5
+  2893.5 738.0
+endline
+
+line wall -reverse on -subtype invisible
+  3014.0 776.0
+  3004.5 763.5
+endline
+
+point 3016.75 866.0 station-name -scale xs -align right
+
+line wall
+  3047.0 829.0
+  3047.0 829.0 3015.37 844.56 3012.5 846.0
+  3009.0 847.75 2966.25 869.5 2961.0 872.0
+  2957.03 873.89 2932.3 886.5 2927.5 889.0
+  2921.25 892.25 2897.22 895.3 2889.5 894.5
+  2876.45 893.14 2868.52 895.69 2863.0 899.0
+  2856.75 902.75 2871.27 910.19 2874.0 911.25
+  2885.0 915.5 2889.75 916.25 2897.75 919.75
+  2902.33 921.75 2922.72 929.53 2929.0 932.5
+  2942.75 939.0 2945.75 939.0 2954.5 942.75
+  smooth off
+endline
+
+point 1399.98 1202.934 station -name PTRHABUCH04@hasselblad2023-3
+
+point 1518.46 1150.184 station -name BUCH46@hasselblad2023-3
+
+point 1745.16 1062.7040000000002 station -name BUCH45@hasselblad2023-3
+
+point 1911.91 1012.7040000000001 station -name BUCH44@hasselblad2023-3
+
+point 2016.8500000000001 1057.5040000000001 station -name BUCH38@hasselblad2023-3
+
+point 2112.71 1070.734 station -name BUCH37@hasselblad2023-3
+
+point 2229.2400000000002 1107.2740000000001 station -name BUCH36@hasselblad2023-3
+
+point 2324.42 1097.584 station -name BUCH35@hasselblad2023-3
+
+point 3105.34 1200.104 station -name BUCH32@hasselblad2023-3
+
+point 2987.11 1217.9740000000002 station -name BUCH34@hasselblad2023-3
+
+point 3005.23 1246.874 station -name BUCH33@hasselblad2023-3
+
+point 3064.76 1240.344 station -name BUCH30-1@hasselblad2023-3
+
+point 3050.33 1239.084 station -name BUCH30@hasselblad2023-3
+
+point 3025.0 1218.5 station-name -scale xs
+
+point 3030.02 1237.194 station -name PTRHABUCH2@hasselblad2023-3
+
+point 3013.8900000000003 1256.164 station -name BUCH29@hasselblad2023-3
+
+point 2992.2200000000003 1253.0140000000001 station -name BUCH28@hasselblad2023-3
+
+point 2952.15 1230.0240000000001 station -name BUCH27@hasselblad2023-3
+
+point 2917.73 1216.874 station -name BUCH26@hasselblad2023-3
+
+point 2899.53 1203.564 station -name BUCH24@hasselblad2023-3
+
+point 2862.51 1198.844 station -name BUCH23@hasselblad2023-3
+
+point 2835.1800000000003 1196.874 station -name BUCH22@hasselblad2023-3
+
+point 2792.28 1201.5240000000001 station -name BUCH21@hasselblad2023-3
+
+point 2760.2400000000002 1216.484 station -name BUCH20@hasselblad2023-3
+
+point 2723.15 1222.384 station -name BUCH19@hasselblad2023-3
+
+point 2669.0 1255.25 camp
+
+point 2679.73 1202.934 station -name BUCH18@hasselblad2023-3
+
+point 2611.33 1173.094 station -name BUCH17@hasselblad2023-3
+
+point 2560.76 1150.574 station -name BUCH16@hasselblad2023-3
+
+point 2472.94 1111.9940000000001 station -name BUCH15@hasselblad2023-3
+
+point 2235.0 1185.5 label -text "<center>Le Semi-<br>Bivouac"
+
+point 2232.5 1124.0 camp
+
+point 2422.25 1062.5 station-name -scale xs -align left
+
+point 2424.33 1081.604 station -name PTRHABUCH1@hasselblad2023-3
+
+point 2711.56 924.754 station -name BUCH10@hasselblad2023-3
+
+point 2525.37 1060.894 station -name BUCH12@hasselblad2023-3
+
+point 2634.66 1005.6940000000001 station -name BUCH11@hasselblad2023-3
+
+point 2745.69 950.104 station -name BUCH9@hasselblad2023-3
+
+point 2781.7400000000002 935.854 station -name BUCH8@hasselblad2023-3
+
+point 2942.7 948.4540000000001 station -name BUCH7@hasselblad2023-3
+
+point 2818.84 899.154 station -name BUCH6@hasselblad2023-3
+
+point 2942.31 761.0440000000001 station -name BUCH3@hasselblad2023-3
+
+point 2998.75 875.25 label -text "R3"
+
+point 3009.21 771.8340000000001 station -name BUCH4@hasselblad2023-3
+
+point 2956.2200000000003 801.914 station -name BUCH2@hasselblad2023-3
+
+point 2903.32 856.0840000000001 station -name BUCH5@hasselblad2023-3
+
+point 2992.87 827.6640000000001 station -name PTRHABUXR01@hasselblad2023-3
+
+endscrap
+
+
+
+scrap SC-Hasselblad-6 -projection extended -station-names "" "@hasselblad2023-3" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 4065.01 -128.0 0.0 0.0 106.502454 0.0 m]
+
+point 1922.02 1063.804 station -name PTRHABUCH3
+
+area u:galerie
+  l291-1991-1230
+endarea
+
+line border -id l291-1991-1230 -close on
+  1990.75 1230.25
+  1990.75 1230.25 1974.0 1226.25 1973.0 1223.25
+  1972.0 1220.25 1966.25 1210.0 1971.0 1208.5
+  1975.75 1207.0 1983.25 1204.5 1987.25 1210.0
+  1991.25 1215.5 1991.0 1219.0 1991.0 1222.0
+  1991.0 1225.0 1990.75 1230.25 1990.75 1230.25
+  smooth off
+endline
+
+line wall -reverse on
+  2020.5 1247.0
+  2002.0 1206.5 1984.0 1189.0 1977.0 1176.0
+  1970.0 1163.0 1956.5 1136.0 1951.5 1121.5
+  1946.5 1107.0 1944.59 1099.16 1939.0 1084.0
+  1932.0 1065.0 1942.75 1061.5 1942.75 1061.5
+  smooth off
+  1942.75 1061.5 1942.5 1059.25 1945.5 1056.25
+  smooth off
+endline
+
+line wall
+  1956.0 1051.0
+  1956.0 1051.0 1951.25 1053.75 1949.25 1054.25
+  1947.25 1054.75 1945.5 1056.25 1945.5 1056.25
+  smooth off
+endline
+
+line wall
+  1919.25 1047.5
+  1919.25 1047.5 1933.0 1040.75 1936.75 1039.5
+  1940.5 1038.25 1945.25 1036.25 1945.25 1036.25
+  smooth off
+endline
+
+line wall
+  1959.0 1294.0
+  1945.0 1241.0 1936.0 1208.0 1925.0 1176.5
+  1914.0 1145.0 1903.09 1101.2 1900.75 1087.75
+  1895.75 1059.0 1915.25 1050.5 1919.25 1047.5
+  smooth off
+endline
+
+point 1976.6200000000001 1216.2440000000001 station -name BUCH43
+
+point 1983.88 1275.304 station -name BUCH42
+
+line wall -subtype invisible
+  2020.5 1247.0
+  2020.5 1247.0 2046.0 1272.0 2050.75 1283.75
+  altitude .
+  2055.5 1295.5 2051.5 1318.75 2047.5 1333.75
+  2043.5 1348.75 2025.25 1367.0 2016.0 1362.75
+  2006.75 1358.5 1983.25 1356.75 1975.5 1337.5
+  1967.75 1318.25 1959.0 1294.0 1959.0 1294.0
+  smooth off
+endline
+
+point 1863.5 1264.25 height -value [+20 m]
+
+point 1873.75 1102.25 station-name -scale xs -align left
+
+point 2018.5 1287.5 water-flow -orientation 194.9
+
+point 2039.0 1389.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "E20 à grimper, arrivée d'eau"
+
+point 1950.41 1051.674 station -name BUCH40
+
+endscrap
+
+
+
+scrap SC-Hasselblad-4 -projection extended -author 2023 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 4065.01 -128.0 0.0 0.0 106.502454 0.0 m]
+
+point 863.0 1176.25 station-name -scale xs -align left
+
+point 1169.8300000000002 709.634 station -name 44@hasselblad2023-4
+
+line border
+  837.0 900.0
+  837.0 900.0 843.5 885.5 857.0 878.5
+  870.5 871.5 873.0 867.5 889.0 867.0
+  905.0 866.5 907.5 863.0 912.0 860.5
+  smooth off
+endline
+
+point 1087.25 761.0 station-name -scale xs -align left
+
+point 1098.69 784.354 station -name PTRHAAPPR04@hasselblad2023-4
+
+point 1073.81 793.5640000000001 station -name 42@hasselblad2023-4
+
+point 1052.48 800.0240000000001 station -name 41@hasselblad2023-4
+
+point 1013.5400000000001 817.904 station -name 40@hasselblad2023-4
+
+point 990.2700000000002 826.244 station -name 39@hasselblad2023-4
+
+point 951.5500000000002 845.4540000000001 station -name 38@hasselblad2023-4
+
+point 933.47 854.754 station -name 37@hasselblad2023-4
+
+point 896.8100000000002 879.3140000000001 station -name 36@hasselblad2023-4
+
+point 880.6100000000001 881.2040000000001 station -name 35@hasselblad2023-4
+
+point 808.99 935.224 station -name 34@hasselblad2023-4
+
+point 764.5400000000002 947.2740000000001 station -name 33@hasselblad2023-4
+
+point 735.0600000000002 962.9340000000001 station -name 32@hasselblad2023-4
+
+point 689.9200000000001 989.004 station -name 31@hasselblad2023-4
+
+point 667.6400000000001 996.644 station -name 25@hasselblad2023-4
+
+point 602.6700000000001 959.864 station -name 26@hasselblad2023-4
+
+point 613.3400000000001 1027.584 station -name 24@hasselblad2023-4
+
+point 628.3100000000002 1104.904 station -name 23@hasselblad2023-4
+
+point 608.19 1092.074 station -name 22@hasselblad2023-4
+
+point 582.6100000000001 1086.324 station -name 21@hasselblad2023-4
+
+point 516.25 1052.25 station-name -scale xs -align left
+
+point 535.1700000000001 1072.384 station -name PTRHAAPPR02@hasselblad2023-4
+
+point 411.08000000000015 1174.674 station -name 19@hasselblad2023-4
+
+point 679.5 1253.5 air-draught -orientation 233.4 -subtype summer -scale xs
+
+area u:galerie
+  l276-697-999
+endarea
+
+line border -id l276-697-999 -close on
+  696.75 999.0
+  696.75 999.0 686.75 999.25 685.75 995.5
+  684.75 991.75 684.25 989.25 686.0 986.75
+  687.75 984.25 693.0 985.75 693.75 983.25
+  694.5 980.75 695.5 973.0 697.75 972.5
+  700.0 972.0 704.75 971.25 704.75 974.25
+  704.75 977.25 705.5 980.75 704.0 987.75
+  702.5 994.75 702.25 999.0 700.25 999.0
+  698.25 999.0 696.75 999.0 696.75 999.0
+  smooth off
+endline
+
+area u:galerie
+  l274-648-1018
+endarea
+
+line border -id l274-648-1018 -close on -reverse on
+  638.25 1018.25
+  638.25 1018.25 646.0 1019.0 648.5 1017.0
+  651.0 1015.0 654.0 1012.0 649.0 1011.25
+  644.0 1010.5 632.5 1009.0 632.5 1012.5
+  632.5 1016.0 633.0 1015.25 635.0 1016.25
+  637.0 1017.25 638.25 1018.25 638.25 1018.25
+  smooth off
+endline
+
+point 912.0 717.0 label -text "<center>L'aval"
+
+point 901.75 1363.25 label -text "<center>Le Double 'S'<br>vers -402 m"
+
+line wall -reverse on -subtype invisible
+  890.0 1264.5
+  939.0 1267.5
+endline
+
+line wall
+  1198.5 666.0
+  1198.5 666.0 1188.5 666.0 1187.0 674.0
+  1185.5 682.0 1185.0 690.0 1182.5 698.5
+  1180.0 707.0 1178.0 713.0 1178.0 713.0
+  smooth off
+endline
+
+line wall
+  1165.0 666.0
+  1165.0 666.0 1177.0 655.5 1183.0 654.0
+  1189.0 652.5 1196.5 654.5 1196.5 654.5
+  smooth off
+endline
+
+line wall
+  1159.0 707.5
+  1159.0 707.5 1162.5 692.0 1162.5 683.0
+  1162.5 674.0 1165.0 666.0 1165.0 666.0
+  smooth off
+endline
+
+line wall -reverse on -subtype invisible
+  1198.5 666.0
+  1196.5 654.5
+endline
+
+line wall
+  572.75 982.25
+  572.75 974.5 573.25 975.75 576.75 966.25
+  580.25 956.75 585.25 952.5 591.5 952.5
+  altitude .
+  602.25 952.5 605.4 953.41 614.5 954.5
+  633.25 956.75 645.0 970.5 657.0 975.0
+  669.0 979.5 673.0 983.0 687.5 973.5
+  702.0 964.0 697.0 956.0 713.0 945.0
+  729.0 934.0 745.0 935.0 756.5 934.5
+  768.0 934.0 767.5 937.5 771.0 918.5
+  774.5 899.5 773.0 893.0 783.25 890.25
+  794.51 887.23 806.5 889.5 819.0 879.75
+  828.75 872.15 816.0 849.5 835.0 847.5
+  854.0 845.5 875.5 842.0 892.0 840.5
+  smooth off
+endline
+
+point 1226.5 658.0 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "P6 boueux à descendre, ça continue"
+
+line wall -subtype clay
+  892.0 840.5
+  908.5 839.0 927.5 841.5 939.5 838.0
+  951.5 834.5 967.5 829.0 979.0 824.0
+  990.5 819.0 1002.5 811.5 1013.5 805.5
+  1024.5 799.5 1010.5 805.5 1048.5 793.5
+  1086.5 781.5 1077.5 789.5 1092.5 776.5
+  1107.5 763.5 1143.5 728.5 1147.0 722.0
+  1150.5 715.5 1156.5 712.0 1159.0 707.5
+  smooth off
+  altitude .
+endline
+
+line wall -reverse on -subtype invisible
+  656.5 1125.5
+  678.0 1105.5
+endline
+
+line wall -reverse on
+  678.0 1105.5
+  655.2 1100.54 638.5 1099.5 629.0 1093.5
+  619.5 1087.5 624.0 1091.5 601.0 1081.5
+  578.0 1071.5 564.5 1072.0 574.0 1065.5
+  583.5 1059.0 596.5 1053.0 606.5 1044.5
+  616.5 1036.0 606.5 1041.5 631.0 1028.5
+  655.5 1015.5 653.5 1017.06 669.25 1000.75
+  676.25 993.5 708.5 1017.75 717.5 1009.75
+  726.5 1001.75 716.75 985.25 725.75 979.75
+  734.75 974.25 749.0 963.25 765.5 955.25
+  782.0 947.25 786.0 952.5 802.5 941.0
+  819.0 929.5 830.5 928.0 845.0 918.0
+  859.5 908.0 862.5 896.5 874.0 890.0
+  885.5 883.5 886.0 893.0 901.0 880.5
+  916.0 868.0 908.5 873.5 940.5 855.5
+  972.5 837.5 998.5 825.5 1007.5 824.0
+  1016.5 822.5 1032.5 817.0 1055.0 811.5
+  1077.5 806.0 1088.0 805.0 1095.5 798.0
+  1103.0 791.0 1136.5 760.0 1142.5 755.0
+  1148.5 750.0 1161.0 737.0 1164.0 732.5
+  1167.0 728.0 1175.0 716.0 1178.0 713.0
+  smooth off
+endline
+
+point 419.3600000000001 1147.114 station -name 18@hasselblad2023-4
+
+point 463.71000000000004 1120.734 station -name 17@hasselblad2023-4
+
+point 525.5 1147.75 station -name 16@hasselblad2023-4
+
+point 576.2900000000002 1155.304 station -name 15@hasselblad2023-4
+
+point 639.6600000000001 1156.714 station -name 14@hasselblad2023-4
+
+point 702.7900000000002 1186.0140000000001 station -name 13@hasselblad2023-4
+
+point 783.3800000000001 1211.124 station -name 12@hasselblad2023-4
+
+point 824.6800000000001 1208.054 station -name 11@hasselblad2023-4
+
+point 935.4100000000001 1253.7240000000002 station -name 10@hasselblad2023-4
+
+point 865.3600000000001 1206.484 station -name PTRHAAPPR01@hasselblad2023-4
+
+point 953.1100000000001 1209.394 station -name 8@hasselblad2023-4
+
+point 1048.93 1234.194 station -name 7@hasselblad2023-4
+
+point 1148.48 1272.784 station -name 5@hasselblad2023-4
+
+point 1117.3700000000001 1306.9540000000002 station -name 6@hasselblad2023-4
+
+point 1102.3700000000001 1350.4940000000001 station -name 3@hasselblad2023-4
+
+point 1186.8300000000002 1286.874 station -name 4@hasselblad2023-4
+
+point 1220.5 1283.0 station -name 2@hasselblad2023-4
+
+point 1297.93 1261.124 station -name 1@hasselblad2023-4
+
+line wall
+endline
+
+line wall -subtype presumed
+  1110.5 1317.0
+  1100.0 1323.5
+endline
+
+line wall
+  890.0 1264.5
+  888.5 1253.0 885.5 1249.5 883.5 1240.5
+  881.5 1231.5 886.5 1232.0 873.5 1229.0
+  860.5 1226.0 850.5 1222.0 836.5 1226.5
+  822.5 1231.0 825.0 1236.75 803.0 1238.25
+  781.0 1239.75 759.5 1239.5 742.5 1229.5
+  725.5 1219.5 704.5 1224.0 684.0 1211.5
+  663.5 1199.0 659.25 1188.85 629.5 1176.0
+  618.5 1171.25 617.75 1173.0 574.75 1166.5
+  531.75 1160.0 529.5 1156.0 519.75 1150.5
+  509.83 1144.9 494.25 1135.25 475.25 1132.25
+  456.25 1129.25 450.0 1132.75 435.25 1140.0
+  420.66 1147.17 421.25 1159.0 416.25 1170.0
+  411.25 1181.0 414.5 1193.0 413.0 1195.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  585.5 982.75
+  572.75 982.25
+endline
+
+line wall -subtype invisible
+  413.0 1195.5
+  411.5 1198.0 402.0 1204.5 398.5 1202.0
+  395.0 1199.5 396.0 1194.5 402.0 1180.5
+  smooth off
+endline
+
+line wall
+  402.0 1180.5
+  altitude .
+  408.0 1166.5 404.0 1163.0 409.5 1148.75
+  416.9 1129.57 439.0 1114.0 447.0 1111.0
+  455.0 1108.0 456.25 1105.5 459.25 1091.0
+  462.25 1076.5 465.5 1078.5 480.75 1074.25
+  495.68 1070.09 521.1 1069.56 532.0 1068.0
+  544.25 1066.25 550.5 1053.0 555.5 1048.5
+  563.73 1041.1 558.43 1046.59 559.25 1025.25
+  559.75 1012.25 559.25 1000.25 570.5 997.25
+  575.64 995.88 587.98 995.16 602.0 996.5
+  617.75 998.0 639.87 1000.69 639.5 994.0
+  639.0 985.0 639.9 989.74 624.5 980.5
+  619.5 977.5 608.75 977.0 600.0 970.5
+  591.73 964.35 589.56 968.15 587.75 971.5
+  586.0 974.75 585.0 977.25 585.5 982.75
+  smooth off
+endline
+
+line wall -reverse on -subtype presumed
+  920.5 1184.5
+  920.5 1184.5 922.0 1182.5 926.5 1175.5
+  smooth off
+endline
+
+line wall -reverse on -subtype invisible
+  926.5 1175.5
+  923.75 1168.75 926.25 1167.5 920.0 1165.0
+  smooth off
+endline
+
+line wall -reverse on -subtype presumed
+  920.0 1165.0
+  911.5 1180.5 911.5 1176.0 907.5 1185.5
+  smooth off
+endline
+
+line wall -reverse on -subtype clay
+  907.5 1185.5
+  903.5 1195.0 907.0 1196.5 903.5 1200.5
+  900.0 1204.5 892.0 1200.5 882.5 1200.5
+  873.0 1200.5 872.5 1187.5 866.5 1194.0
+  860.5 1200.5 857.5 1207.0 844.5 1205.0
+  831.5 1203.0 795.5 1201.5 786.0 1201.5
+  776.5 1201.5 764.5 1198.5 757.0 1194.0
+  749.5 1189.5 753.5 1181.5 737.5 1175.0
+  721.5 1168.5 715.0 1177.5 698.5 1169.0
+  682.0 1160.5 685.0 1155.25 665.5 1148.25
+  646.0 1141.25 635.75 1136.25 609.25 1136.75
+  582.75 1137.25 565.0 1140.0 551.0 1136.5
+  537.0 1133.0 520.24 1131.09 513.25 1126.5
+  504.5 1120.75 503.0 1116.5 507.5 1107.5
+  512.0 1098.5 532.5 1090.83 537.5 1087.5
+  smooth off
+endline
+
+line wall -reverse on
+  537.5 1087.5
+  540.0 1082.5 547.36 1083.86 552.0 1085.0
+  580.5 1092.0 600.75 1097.5 615.25 1102.0
+  629.75 1106.5 654.0 1125.5 656.5 1125.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  1100.0 1323.5
+  1100.0 1323.5 1093.5 1315.5 1096.5 1314.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  1096.5 1314.0
+  1099.5 1312.5 1105.0 1306.0 1105.0 1306.0
+  smooth off
+endline
+
+line wall
+  1105.0 1306.0
+  1112.5 1300.5 1130.5 1289.5 1131.0 1280.5
+  1131.5 1271.5 1123.5 1269.0 1103.0 1264.0
+  1082.5 1259.0 1060.5 1255.0 1043.5 1251.0
+  1026.5 1247.0 987.5 1235.5 974.5 1232.0
+  961.5 1228.5 924.39 1209.48 920.5 1223.5
+  918.0 1232.5 922.0 1230.5 931.0 1243.5
+  940.0 1256.5 938.5 1252.5 939.0 1267.5
+  smooth off
+endline
+
+point 1284.0 1276.5 stalactite
+
+point 1209.5 1304.5 stalactite
+
+point 1343.0 1229.0 stalagmite
+
+line wall
+  1373.5 1248.5
+  1373.5 1248.5 1336.25 1251.5 1294.25 1275.5
+  1252.25 1299.5 1235.5 1287.5 1223.0 1300.5
+  1210.5 1313.5 1199.5 1329.5 1178.5 1335.0
+  1157.5 1340.5 1149.0 1338.0 1126.0 1348.0
+  1103.0 1358.0 1104.5 1358.0 1093.5 1365.5
+  altitude .
+  1082.5 1373.0 1076.0 1373.5 1068.5 1368.0
+  smooth off
+endline
+
+point 1078.5 1325.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "Amont à voir ?"
+
+point 1037.5 1325.0 label -text "etr."
+
+point 1071.5 1410.0 label -text "colm."
+
+line wall -subtype clay
+  1068.5 1368.0
+  1061.0 1362.5 1076.5 1358.5 1086.5 1350.5
+  1096.5 1342.5 1133.5 1321.0 1139.5 1319.5
+  1145.5 1318.0 1178.5 1308.0 1178.5 1295.0
+  smooth off
+endline
+
+line wall
+  1178.5 1295.0
+  1178.5 1290.5 1172.44 1281.81 1161.5 1286.5
+  1147.5 1292.5 1154.5 1291.0 1136.5 1300.0
+  1118.5 1309.0 1114.0 1316.0 1110.5 1317.0
+  smooth off
+endline
+
+point 1209.0 722.0 height -value [-6 m]
+
+line rope
+  1127.0 758.0
+  1155.0 729.5
+  1155.0 729.5 1173.5 708.5 1174.0 706.5
+  1174.5 704.5 1177.0 690.5 1177.5 682.0
+  smooth off
+endline
+
+line rope
+  532.0 1079.0
+  568.5 1064.25
+  570.75 1007.75
+endline
+
+point 488.0 979.0 height -value [+? m]
+
+point 696.5 1120.5 label -text "imp."
+
+point 371.5 1226.0 label -text "imp."
+
+point 416.5 1225.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "Imp. ?"
+
+point 530.5 982.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "Escalade ?"
+
+point 729.5 1120.5 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "Imp ?"
+
+point 416.5 1225.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "Imp ?"
+
+point 954.0 1145.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "Imp ?"
+
+point 925.5 1144.5 label -text "imp."
+
+point 1157.0 1213.0 label -text "imp."
+
+point 1190.0 1214.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Hasselblad Double S" -text "Imp ?"
+
+line wall -reverse on -subtype invisible
+  1171.5 1243.5
+  1163.0 1239.0
+endline
+
+line wall -reverse on
+  1362.0 1212.5
+  1362.0 1212.5 1338.5 1225.0 1324.5 1234.0
+  1310.5 1243.0 1295.5 1250.0 1270.5 1260.0
+  1243.08 1270.97 1244.5 1270.5 1220.0 1273.0
+  1195.5 1275.5 1198.0 1274.5 1189.5 1270.0
+  1181.0 1265.5 1159.5 1260.5 1171.5 1243.5
+  smooth off
+endline
+
+line wall -reverse on
+  1163.0 1239.0
+  1154.0 1258.0 1105.5 1243.5 1083.0 1235.0
+  1060.5 1226.5 1057.5 1226.0 1027.5 1220.0
+  997.5 1214.0 977.5 1208.0 959.5 1204.5
+  941.5 1201.0 928.52 1200.9 926.0 1201.0
+  913.0 1201.5 914.0 1191.5 920.5 1184.5
+  smooth off
+endline
 
 endscrap
 

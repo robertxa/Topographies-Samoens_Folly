@@ -24,7 +24,22 @@ endmap
 
 map MC-Hasselblad -title "Gouffre Mirolda - Galerie Hasselblad"
 	SC-Hasselblad-1
-#	break
-#	SC-B3c2
+	break
+#	SC-hasselblad2023-1
+	SC-Hasselblad-3
+	break
+	SC-Hasselblad-4
+	break
+	SC-Hasselblad-6
+endmap
+
+map MC-Hasselblad-aval -title "Gouffre Mirolda - Galerie Hasselblad"
+	SC-Hasselblad-5
+endmap
+
+map MC-Hasselblad-tot -title "Gouffre Mirolda - Galerie Hasselblad"
+	MC-Hasselblad
+	break
+	MC-Hasselblad-aval [-25 -25 m] below
 endmap
    
