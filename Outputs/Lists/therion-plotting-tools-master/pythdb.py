@@ -433,7 +433,7 @@ if __name__ == u'__main__':
 	#inputfile = 'databaseLDB.sql'
 	inputfile = 'databaseJB-2023_new.sql'
 
-	graphfolder = "Graphs/" 
+	graphfolder = "Graphs/2023" 
 	#graphprefix = None
 	#bins = 144
 	#log = "log"

@@ -337,7 +337,7 @@ layout drawingconfig
 	
 	#<en> pdf-Author
 	#<fr> Auteur du pdf
-	doc-author "Xavier Robert"
+	doc-author "Xavier Robert (G.S. Vulcain)"
 
 	#<en> Set the symology you want to use: UIS, ASF (Australie) CCNP (Etats Units) ou
 	#                                       SKB (tchecoslovakia)
@@ -357,6 +357,8 @@ layout drawingconfig
 	symbol-color line water-flow [17 46 100]
 	symbol-color line water-flow:conjectural [17 46 100]
 	symbol-color line water-flow:intermittent [17 46 100]
+	symbol-color point spring [17 46 100]
+
 	symbol-color point ice [0 0 100]
 	symbol-color line wall:ice [0 0 100]
 	symbol-color point ice-pillar [0 0 100]
@@ -365,12 +367,13 @@ layout drawingconfig
 	symbol-color area ice [0 0 100]
 	symbol-color point snow [0 0 100]
 	symbol-color area snow [0 0 100]
-	symbol-color point spring [17 46 100]
+	
 	symbol-color point root [52 33 6]
 	symbol-color point vegetable-debris [13 47 6]
 	symbol-color point seed-germination [13 47 6]
 	symbol-color point altitude [100 50 0]
 	symbol-color point station [54 7 60]
+	
 	symbol-color line flowstone [100 60 20]
 	symbol-color line wall:flowstone [100 60 20]
 	symbol-color point flowstone [100 60 20]
@@ -406,6 +409,7 @@ layout drawingconfig
 	symbol-color area stalagmite [100 60 20]
 	symbol-color area pillar [100 60 20]
 	symbol-color area pillar-with-curtains [100 60 20]
+	
 	symbol-color area mudcrack [52 33 6]	# Color to verify ; Maybe to darken
 	symbol-color area clay [52 33 6]	# Color to verify
 	symbol-color point volcano [52 33 6]	# Color to verify
@@ -854,7 +858,7 @@ layout drawingconfig
 		#<fr> Pour obtenir un point de hauteur de passage avec P ou C comme préfixe
 		#     utiliser “point 0 0 height -value [+10 m]”
 		#     ou “point 0 0 height -value [-85 m]”
-		#     dans les données vous donner E10 ou P85 respectivement
+		#     dans les données vous donnez E10 ou P85 respectivement
 		verbatimtex \def\thheightpos{E}\def\thheightneg{P} etex
 
 
