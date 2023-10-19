@@ -62,7 +62,7 @@ Xavier Robert (xavier.robert@ird.fr)
 How to cite
 -----------
 
-``Robert, X. et Collectif Criou, Base de données topographiques des systèmes karstiques du massif du Criou (Samoëns, 74, France), https://github.com/robertxa/Mirolda , DOI:10.5281/Zenodo.10020918, 2023.``
+``Robert, X. et Collectif Criou, Base de données topographiques des systèmes karstiques du massif du Criou (Samoëns, 74, France), https://github.com/robertxa/Mirolda, DOI:10.5281/Zenodo.10020918, 2023.``
 
 .. image:: https://zenodo.org/badge/538504584.svg
   :target: https://zenodo.org/doi/10.5281/zenodo.10020918

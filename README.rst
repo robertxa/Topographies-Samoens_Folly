@@ -72,7 +72,7 @@ Xavier Robert (xavier.robert@ird.fr)
 How to cite
 -----------
 
-``Robert, X., Base de données Topographiques des systèmes karstiques du massif du Folly (Samoëns, 74, France), https://github.com/robertxa/Topographies-Samoens_Folly , DOI:10.5281/Zenodo.4745567, 2020.``
+``Robert, X., Base de données Topographiques des systèmes karstiques du massif du Folly (Samoëns, 74, France), https://github.com/robertxa/Topographies-Samoens_Folly, DOI:10.5281/Zenodo.4745567, 2020.``
 
 .. image:: https://zenodo.org/badge/185859787.svg
   :target: https://zenodo.org/doi/10.5281/zenodo.4745567
