@@ -22,6 +22,7 @@ survey RoiDeCoeurAmont -title "Gouffre des Morts Vivants - FLT5"
     calibrate clino 90 -1
 
     data normal from to length  compass   clino #left right up down 
+    flags duplicate
    	0	1	7.23	140	70					# Départ Roi de Cœur Amont
 1	2	3.19	190	97					
 2	3	2.79	146	104					
@@ -29,7 +30,8 @@ survey RoiDeCoeurAmont -title "Gouffre des Morts Vivants - FLT5"
 4	5	4.89	215	108					
 5	6	17.59	225	110					
 6	7	4.91	211	113					
-7	8	4.15	252	118					
+7	8	4.15	252	118
+flags not duplicate					
 8	9	4.05	110	58					
 9	10	13.58	68	59					
 10	11	7.97	72	81					

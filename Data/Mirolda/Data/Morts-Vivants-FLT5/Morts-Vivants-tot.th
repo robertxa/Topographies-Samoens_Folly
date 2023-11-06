@@ -11,11 +11,13 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		equate FLT5@Morts-Vivants.Morts-Vivants FLT5@2Lucarnes.2Lucarnes
 	input Data/3-P40-VieuxDepart/Vieux-Depart-tot.th
 		equate 0@Vieux-Depart.Vieux-Depart 15@Morts-Vivants.Morts-Vivants	# Jonction au niveau du spit FLT de départ du P40
+		#equate 0@Vieux-Depart.Vieux-Depart 27@Morts-Vivants.Morts-Vivants
 	input Data/4-VieuxDepart-Puits_Sec/PuitsSec-tot.th
 		equate 10@PuitsSec.PuitsSec 29@Vieux-Depart.Vieux-Depart
 	
 	input Data/5-Amonts/Morts-Vivants-amonts-tot.th
-		equate W@Morts-Vivants-amonts.Morts-Vivants-amonts W@PuitsSec.PuitsSec	# C'est bizarre cette connexion
+		#equate W@Morts-Vivants-amonts.Morts-Vivants-amonts W@PuitsSec.PuitsSec	# C'est bizarre cette connexion
+		equate 30@Morts-Vivants-amonts.Morts-Vivants-amonts 65@Morts-Vivants.Morts-Vivants
 
 	input Data/6-PuitsSec-Riviere/PuitsSec-Riviere-tot.th	
 		equate W@PuitsSec-Riviere.PuitsSec-Riviere W@PuitsSec.PuitsSec
@@ -25,7 +27,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		equate Z@Sagesse.Sagesse	Z@Sagesse-actif.Sagesse-actif
 
 	input Data/MV1-2-4/MV1-2-4-tot.th
-		equate Sapins@MV1-2-4.MV1-2-4 36@Sagesse.Sagesse
+		equate Station12@MV1-2-4.MV1-2-4 36@Sagesse.Sagesse
 	input Data/Coeur-Toyota/Coeur-Toyota-tot.th
 		equate Coeur@Coeur-Toyota.Coeur-Toyota Coeur@MV1-2-4.MV1-2-4
 		equate Toyota@Coeur-Toyota.Coeur-Toyota Toyota@MV1-2-4.MV1-2-4
@@ -37,13 +39,17 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		equate PSI@JambeDeBois.JambeDeBois PSI@MV1-2-4.MV1-2-4
 		equate PHI@JambeDeBois.JambeDeBois PHI@MV1-2-4.MV1-2-4
 	input Data/RoiDeCoeurAmont/RoiDeCoeurAmont-tot.th
-		equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont 0@MV1-2-4.MV1-2-4
+		#equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Station12@MV1-2-4.MV1-2-4
+		equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Coeur@MV1-2-4.MV1-2-4
+		equate 8@RoiDeCoeurAmont.RoiDeCoeurAmont 59@Coeur-Toyota.Coeur-Toyota
 	input Data/FailleCascade/FailleCascade-tot.th
 		equate Fruitiere@FailleCascade.FailleCascade Fruitiere@MV1-2-4.MV1-2-4
 	input Data/Cendrillon/Cendrillon-tot.th
 		equate 0@Cendrillon.Cendrillon 60@FailleCascade.FailleCascade
 	input Data/Sapin/Sapin-tot.th
 		equate Sapins@Sapin.Sapin Sapins@MV1-2-4.MV1-2-4
+	
+	# ---> Question, GRANY OK ???
 	input Data/Grany/Grany-tot.th
 		equate 0@Grany.Grany 15@Morts-Vivants.Morts-Vivants	# Est-ce OK ? A priori, c'est au sommet du P40, mais est-ce sûr ?
 

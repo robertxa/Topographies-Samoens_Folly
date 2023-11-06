@@ -22,7 +22,7 @@ survey MV1-2-4 -title "Gouffre des Morts Vivants - FLT5"
 
     data normal from to length  compass   clino #left right up down 
     extend left
-0	1	8.23	267	97					# Etr. ; station 12 ?
+Station12	1	8.23	267	97					# Etr. ; station 12 ?
 1	2	5.11	276	114					
 2	3	6.13	266	96					
 3	4	4.01	280	77					# Etr. Verticale
@@ -31,7 +31,7 @@ survey MV1-2-4 -title "Gouffre des Morts Vivants - FLT5"
 6	7	5.05	266	113					
 7	8	6.29	257	114					
 8	9	7.72	263	97					
-9	10	10.18	164	95					
+9	10	10.18	264	95					
 10	Coeur	3.69	255	90					# King Roi de Cœur
 Coeur	12	5.91	275	136					
 12	13	9.4	247	115					
@@ -180,7 +180,7 @@ centerline
         explo-team "URSUS"
     date 1986.09
         team "Jacques Gudefin"
-        team "Xavier Julliars"
+        team "Xavier Julliard"
         team "Michel Dussurget"
     
     units length meters
