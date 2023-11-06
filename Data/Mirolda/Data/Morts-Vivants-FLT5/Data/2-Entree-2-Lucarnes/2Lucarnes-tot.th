@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey 2Lucarnes -title "Gouffre des 2Lucarnes - FLT5"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/2Lucarnes.th
+	
+	# Import du dessin en plan
+	#input Data/2Lucarnes.th2
+
+	# Import du dessin en coupe
+	#input Data/2Lucarnes-coupe.th2
+
+	# Import des maps
+	#input 2Lucarnes-maps.th
+ 
+ endsurvey
+ 

@@ -1,0 +1,39 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey PuitsSec -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    
+    explo-date 1986.08
+        explo-team "URSUS"
+        #explo-team "Michel"
+        #explo-team "Jacques Gudefin"
+    date 1986.08
+        team "Thierry Marchand"
+        team "Sylvain Matricon"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  backcompass   backclino #left right up down 
+    extend left
+    W	1	16.08	0	180					# A partir de W (Puits Sec)
+1	2	2.46	285	136.8					
+2	3	1.45	13	88.2					
+3	4	2.99	306	109.8					
+4	5	3.06	348	121.5					# Visée n°30
+5	6	0.76	319	61.2					
+6	Y	1.8	18	117.9					# Y
+Y	M	17.33	104	152.1					# M
+M	9	5.58	83	124.2					# Diaclase
+9	10	7.37	60	72.9					# Jonction Vieux Depart ; Point 29 ? ; Base P50, vers puits Michel
+  
+endcenterline
+
+ endsurvey

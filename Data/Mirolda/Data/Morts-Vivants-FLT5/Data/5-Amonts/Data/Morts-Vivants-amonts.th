@@ -1,0 +1,59 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Morts-Vivants-amonts -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    
+    explo-date 1985
+        explo-team "URSUS"
+    
+    units length meters
+    #units compass clino degrees
+    units clino degrees # Est-ce bon ?
+    units clino grads
+    calibrate clino 100 -1
+
+    data normal from to length  clino compass # left right up down
+    extend right
+    W	1	2.22	97	237					# A partir Puits Sec ; station W
+1	2	5.87	112	173					
+2	3	6.34	104	130					
+3	4	2.25	106	194					
+4	X	2.7	114	240					
+X	6	2.18	100	261					
+6	7	5.92	106	319					
+7	8	4.26	200	0					# Problème Pente, sauf si en grades
+8	Y	1.5	100	65					# Actif
+Y	10	4.15	101	95					
+10	11	1.47	126	225					
+11	Z	3.4	126	199					
+Z	H	4.27	129	195					# 12 = station H
+H	13	3.85	125	335					# Reseau Vasque amont
+13	I	3.09	100	254					# Reseau  amont
+I	15	7.86	103	272					
+15	16	1.98	107	293					
+16	17	2.63	102	198					
+17	18	3.79	117	167					
+18	19	3.88	121	210					
+									
+H	20	7.18	80	148					# Départ de H
+20	21	4.38	30	190					
+21	22	5.78	138	195					# Station A
+22	A	3.65	164	177					# Reseau Vasque Aval
+A	24	6.87	113	290					
+24	25	2	100	270					
+25	26	6.87	87	180					
+									
+A	27	2.19	139	143					# Départ de A
+27	28	3.48	110	202					
+28	29	2.36	105	170					
+29	30	3.9	106	184					
+  
+endcenterline
+
+ endsurvey

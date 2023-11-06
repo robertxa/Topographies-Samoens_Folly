@@ -1,0 +1,53 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey PuitsSec-Riviere -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    
+    explo-date 1986.08
+        explo-team "URSUS"
+    date 1986.08
+        team "Jacques Gudefin"
+        team "Sylvain Matricon"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+    W	1	2.37	172	106.2					# A partir Puits Sec ; station W
+1	2	3.26	228	112.5					
+2	3	4.74	245	148.5					
+3	4	18.79	0	180					# Puits des Rognons ; P19
+4	5	1.92	80	88.2					
+5	6	3.74	100	107.1					
+6	7	0.5	203	90					
+7	8	5.16	235	153					
+8	9	18.89	0	180					# P19
+9	10	8.46	186	115.2					
+10	11	2.78	258	72.9					
+11	12	11.62	184	106.2					
+12	13	1.03	282	90					
+13	A	7.23	178	101.7					# Station 13 = A
+A	15	9.87	141	53.7					
+15	20	10.2	141	90.9					
+20	21	9.09	82	79.2					
+21	22	3.67	163	135.45					# Siphon
+									
+A	23	4.95	209	113.4					# A partir de A
+23	24	2.2	282	131.4					
+24	25	12.99	169	103.5					
+25	26	3.76	245	101.7					
+26	X	6.11	168	98.1					# Station 27 = X
+X	28	3.43	240	111.6					
+28	29	6.04	198	131					
+29	Z	4.94	221	112					# Station 30 = Z = numéro 8
+  
+endcenterline
+
+ endsurvey

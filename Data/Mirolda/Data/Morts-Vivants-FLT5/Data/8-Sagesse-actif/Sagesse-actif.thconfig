@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -27,17 +27,30 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera 
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-source Morts-Vivants-tot.th
+source Sagesse-actif-tot.th
 
 # Add Coordinates
 #input legendes/entrances_coordinates.th
 
 # Add config file
-input ../../config.thc 
+input ../../../../config.thc 
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles à utiliser (UIS, etc)
 # ou imprimer des explications des symboles
+
+# Debut de la definition du Layout "xviexport"
+layout xviexport
+	#cs UTM32
+	# echelle à laquelle on veut dessiner la topo
+	scale 1 500
+	#scale 1 1000
+	# taille de la grille
+	grid-size 10 10 10 m
+	# mettre la grille en arrière plan
+	grid bottom
+endlayout
+# fin de la définition du layout "xviexport" 
 
 #debut de la definition du layout "my_layout"
 layout my_layout
@@ -90,7 +103,7 @@ layout my_layout
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Morts-Vivants plan - 1:1000"
+  doc-title "Sagesse-actif plan - 1:1000"
 
   # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
   # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
@@ -99,7 +112,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 100 nw
+  #map-header 0 0 s
 
   # arrière plan de la manchette
   map-header-bg off
@@ -140,7 +153,7 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre des Morts-Vivants - FLT5} 
+			\cavename={Gouffre des Sagesse-actif - FLT5} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={FLT (1974), Collectif Mirolda (2023)}
@@ -175,7 +188,7 @@ layout layout-coupe
   scale-bar 150 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
-  grid-size 200 200 50 m  
+  grid-size 200 200 200 m  
   grid bottom
   grid-coords border
   
@@ -190,7 +203,7 @@ layout layout-coupe
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Morts-Vivants plan - 1:1000"
+  doc-title "Sagesse-actif plan - 1:1000"
 
   # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
   # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
@@ -243,7 +256,7 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre des Morts-Vivants - FLT5} 
+			\cavename={Gouffre des Sagesse-actif - FLT5} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={FLT (1974), Collectif Mirolda (2023)}
@@ -287,7 +300,7 @@ layout atlas_layout
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Morts-Vivants coupe développée - 1:1000"
+  doc-title "Sagesse-actif coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
   #map-header 0 0 s
@@ -325,7 +338,7 @@ layout atlas_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre des Morts-Vivants - FLT5} 
+			\cavename={Gouffre des Sagesse-actif - FLT5} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Collectif Mirolda}
@@ -336,39 +349,29 @@ layout atlas_layout
 # Fin de la definition du Layout "normal"
 
 
+
+
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Morts-Vivants-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Morts-Vivants-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Sagesse-actif-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Sagesse-actif-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Morts-Vivants-plan-tot@Morts-Vivants
-select MC-Morts-Vivants-coupe-tot@Morts-Vivants
+select MP-Sagesse-actif-plan-tot
+select MC-Sagesse-actif-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Morts-Vivants-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Morts-Vivants-coupe.pdf
-#export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/Sagesse-actif-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Sagesse-actif-coupe.pdf
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Morts-Vivants.lox
+ export model -enable all -o Outputs/Sagesse-actif.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Morts-Vivants -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/Sagesse-actif-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Morts-Vivants.kml -layout my_layout
- export model -fmt kml -o Outputs/Morts-Vivants-model.kml -enable all
-
-# Export de la database sql
-# export des statistiques de l'ensemble de la cavité
-#    Attention, les points de départ et d'arrivée de chaque centreline correspondent
-#    au second point et à l'avant dernier point de la série.
-#export database -fmt sql -o Outputs/databaseMorts-Vivants.sql
-
-#export continuation-list -o Outputs/ContinuationsMorts-Vivants.html
-#export continuation-list -o Outputs/ContinuationsMorts-Vivants.kml
-export survey-list -location on -o Outputs/SurveysMorts-Vivants.html
-#export cave-list -location on -o Outputs/CavesMorts-Vivants.html
+# export map -proj plan -fmt kml -o Outputs/Sagesse-actif-2022.kml -layout my_layout
+# export model -fmt kml -o Outputs/Sagesse-actif-2022-model.kml -enable all

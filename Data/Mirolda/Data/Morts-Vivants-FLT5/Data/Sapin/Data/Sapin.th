@@ -1,0 +1,49 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Sapin -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    #MV12 Faille Cascade
+
+    explo-date 1988.02
+        explo-team "URSUS"
+    date 1988.02
+        team "Jacques Gudefin"
+        team "Sylvain Matricon"
+        team "Xavier Julliard"
+        team "Michel Dussurget"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+   	Sapins	29	21.92	0	0					# Départ du Sapin ; MV15
+29	30	3.77	90	52					
+30	Bite1	4.49	60	90					
+Bite1	32	3.17	145	90					
+32	33	2.57	95	99					
+33	34	5.13	185	23					
+34	35	6.84	84	57					
+35	36	2.65	253	42					
+36	37	3.02	255	91					
+37	38	1.69	210	77					
+38	39	3.1	135	106					
+39	40	2.79	140	137					
+									
+Bite1	41	4.13	8	90					# Redépart de Bite1
+41	42	2.23	17	113					
+42	43	4	100	49					
+43	44	10.03	123	60					
+44	45	9.02	75	64					
+45	46	4.39	90	64					
+46	47	6.75	333	87					
+47	48	5.21	0	0								
+
+endcenterline
+ endsurvey

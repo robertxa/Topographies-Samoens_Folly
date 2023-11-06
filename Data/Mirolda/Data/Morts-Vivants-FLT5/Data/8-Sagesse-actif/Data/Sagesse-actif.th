@@ -1,0 +1,69 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Sagesse-actif -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    
+    explo-date 1986.10
+        explo-team "URSUS"
+    date 1986.10
+        team "Jacques Gudefin"
+        team "Pascale Bottazzi"
+        team "Sylvain Matricon"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+   			Z	1	8.69	241	107.4					# Apartir de Station8 = Z@Sagesse
+1	Station56	7.88	200	108.3					# 2 = Station56
+Station56	3	3.47	196	109.2					
+3	4	4.93	274	120.9					
+4	Station53	8.08	202	117.3					# 5 = Station53
+Station53	6	3.93	220	85.8					
+6	7	5.98	265	83.1					
+7	8	2.66	192	88.5					
+8	9	3.95	0	180					
+9	10	3.11	193	89.4					
+10	11	4.54	279	103.8					
+11	12	9.08	286	123.6					
+12	Station55	7.94	252	125.4					# 13 = Station55
+Station55	14	4.71	259	90.3					
+14	15	3.13	206	96.6					
+15	16	3.69	266	100.65					
+16	17	2.89	0	180					
+17	18	3.67	289	91.2					
+18	19	4.4	250	84					
+19	20	5.8	253	97.5					# Siphon
+									
+Station55	21	4.66	40	86.7					# A partir de Station55, remontée dans l'Actif
+21	22	12.76	67	60.9					
+22	23	2.71	32	67.8					
+23	24	8.51	99	63.3					
+									
+Station53	25	3.58	129	56.1					
+25	26	5.5	103	48					
+26	27	4.65	97	31.8					
+27	28	2.88	93	70.5					
+28	29	6.09	160	93.9					
+29	30	8.18	148	122.7					# A 1 m = Station29 au dessus
+30	Station29	1	0	0					# Approx
+									
+#Station12	Station7	16.29	65	83.1					# A partir Station12 pour amont fracture affluentS
+#Station7	33	6.8	92	100.2					# Station20 à 1 m au dessous
+#33	Station20	1	0	180					# Approx
+									
+#Station7	35	3.4	300	72.3					# A partir Station7, pour court-circuit
+#35	36	3.38	271	66					
+#36	37	8.14	34.4	56.1					
+#37	38	4.67	2.5	126.3						 			
+
+endcenterline
+
+ endsurvey
