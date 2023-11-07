@@ -199,10 +199,10 @@ layout layout-coupe
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 0 0 s
+  map-header 100 100 ne
 
   # arrière plan de la manchette
-  map-header-bg off
+  map-header-bg on
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende

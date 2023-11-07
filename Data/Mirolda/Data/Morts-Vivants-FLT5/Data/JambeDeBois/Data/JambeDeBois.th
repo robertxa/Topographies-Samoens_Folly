@@ -7,7 +7,7 @@ encoding  utf-8
  
 survey JambeDeBois -title "Gouffre des Morts Vivants - FLT5"
 
- centerline -extend right
+ centerline
     #MV10  Jambe de Bois
     #Date : 09/1987
     explo-date 1987.09
@@ -22,6 +22,7 @@ survey JambeDeBois -title "Gouffre des Morts Vivants - FLT5"
     calibrate clino 90 -1
 
     data normal from to length  compass   clino #left right up down 
+    extend left
    	PSI	64	2.57	157	25					# Départ de PSI
 64	65	9.01	335	63					
 65	66	8.27	7	67					
@@ -59,6 +60,7 @@ centerline -extend right
     calibrate clino 90 -1
 
     data normal from to length  compass   clino #left right up down 
+    extend left
 Bite	1	2.48	322	119.7					# Départ Station de la Bite
 1	2	11.67	5	76.5					
 2	3	4.52	25	79.2					

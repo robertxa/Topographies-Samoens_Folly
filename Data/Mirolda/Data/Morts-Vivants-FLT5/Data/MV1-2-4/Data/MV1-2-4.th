@@ -21,7 +21,7 @@ survey MV1-2-4 -title "Gouffre des Morts Vivants - FLT5"
     calibrate clino 90 -1
 
     data normal from to length  compass   clino #left right up down 
-    extend left
+    extend right
 Station12	1	8.23	267	97					# Etr. ; station 12 ?
 1	2	5.11	276	114					
 2	3	6.13	266	96					
@@ -74,7 +74,7 @@ extend left
 47	48	14.01	11	67					
 48	49	7.1	25	74					
 49	50	3.89	331	68					
-50	Sapins	2.41	51	81					# Sapins ; Jonction avec Sagesse
+50	Sapins	2.41	51	81					# Sapins ; Jonction avec Sagesse ?
 
 extend right									
 16	52	0.1	0	0					# Suite Fleur
@@ -121,7 +121,7 @@ centerline
 69	70	13.81	183	102					
 70	PHI	10.43	217	107					
 PHI	72	13.85	258	122					# Verna
-									
+extend right									
 PHI	73	6.44	196	90					# Redepart de PHI
 73	74	7.44	187	83					
 74	75	6.26	198	102					
@@ -230,10 +230,11 @@ centerline
     calibrate clino 90 -1
 
     data normal from to length  compass   clino #left right up down 	
-    flags duplicate
+    #flags duplicate
+    extend left
 Fruitiere	1b	10.52	342	73.8					# Redépart de Fruitière
 1b	2b	5.12	338	60.3					
 2b	GAMMA	6.21	31	83.7					
-    flags not duplicate
+    #flags not duplicate
     endcenterline
  endsurvey
