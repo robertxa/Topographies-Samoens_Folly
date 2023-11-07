@@ -29,13 +29,16 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 
 	input Data/MV1-2-4/MV1-2-4-tot.th
 		equate Station12@MV1-2-4.MV1-2-4 36@Sagesse.Sagesse
+		#join @MV1-2-4 SP-FailleFossile-1@Theta-FailleFossile
 	input Data/Coeur-Toyota/Coeur-Toyota-tot.th
 		equate Coeur@Coeur-Toyota.Coeur-Toyota Coeur@MV1-2-4.MV1-2-4
 		equate Toyota@Coeur-Toyota.Coeur-Toyota Toyota@MV1-2-4.MV1-2-4
 	input Data/To-FailleActive/To-FailleActive-tot.th
-		equate T0@To-FailleActive.To-FailleActive T0@MV1-2-4.MV1-2-4
+		equate T0@To-FailleActive.To-FailleActive T0@MV1-2-4.MV1-2-4	
 	input Data/Theta-FailleFossile/Theta-FailleFossile-tot.th
 		equate THETA@Theta-FailleFossile.Theta-FailleFossile THETA@MV1-2-4.MV1-2-4
+		join SP-FailleFossile-1@Theta-FailleFossile SP-FailleActive-1@To-FailleActive
+
 	input Data/JambeDeBois/JambeDeBois-tot.th
 		equate PSI@JambeDeBois.JambeDeBois PSI@MV1-2-4.MV1-2-4
 		equate PHI@JambeDeBois.JambeDeBois PHI@MV1-2-4.MV1-2-4

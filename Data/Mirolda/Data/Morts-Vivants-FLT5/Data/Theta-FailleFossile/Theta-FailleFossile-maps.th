@@ -4,19 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-Theta-FailleFossile-plan -title "Gouffre des Theta-FailleFossile - FLT5"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
-#endmap
+map MP-Theta-FailleFossile-plan -title "FLT5 - Faille Fossile terminale"
+	SP-FailleFossile-2
+	break
+    SP-FailleFossile-1
+endmap
 
-#map MC-Theta-FailleFossile-coupe -title "Gouffre des Theta-FailleFossile - FLT5"
+#map MC-Theta-FailleFossile-coupe -title "FLT5 - Faille Fossile terminale"
 #	SC-coupeB3-1
 #	break
 #	SC-B3c2

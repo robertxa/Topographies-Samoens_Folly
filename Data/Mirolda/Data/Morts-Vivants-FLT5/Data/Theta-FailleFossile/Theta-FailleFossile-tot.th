@@ -4,18 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Theta-FailleFossile -title "Gouffre des Theta-FailleFossile - FLT5"
+survey Theta-FailleFossile -title "FLT5 - Faille Fossile aval"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/Theta-FailleFossile.th
 	
 	# Import du dessin en plan
-	#input Data/Theta-FailleFossile.th2
+	input Data/Theta-FailleFossile.th2
 
 	# Import du dessin en coupe
 	#input Data/Theta-FailleFossile-coupe.th2
 
 	# Import des maps
-	#input Theta-FailleFossile-maps.th
+	input Theta-FailleFossile-maps.th
  
  endsurvey
  
