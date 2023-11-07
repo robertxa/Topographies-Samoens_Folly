@@ -4,13 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+#[Note Alex: Vérifications OK altitudes OK raccord OK le 06 11 2023]
  
 survey 2Lucarnes -title "Gouffre des Morts Vivants - FLT5"
 
  centerline -extend right
     
-    explo-date 1985
+    explo-date 1997
         explo-team "URSUS"
+    date 1997.08.01  #[Note Alex: Il est noté août 97]
+        team "Nicolas Faure"   #[Note Alex: Ajout]
+        team "Laurent Mangel"  #[Note Alex: Ajout]
     
     units length meters
     units compass clino degrees

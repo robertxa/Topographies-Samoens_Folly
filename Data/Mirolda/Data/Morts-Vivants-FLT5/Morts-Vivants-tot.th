@@ -14,6 +14,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		#equate 0@Vieux-Depart.Vieux-Depart 27@Morts-Vivants.Morts-Vivants
 	input Data/4-VieuxDepart-Puits_Sec/PuitsSec-tot.th
 		equate 10@PuitsSec.PuitsSec 29@Vieux-Depart.Vieux-Depart
+		#equate W@PuitsSec.PuitsSec 29@Vieux-Depart.Vieux-Depart	# [Proposition Alex, mais ne convient pas à Xav, voir note dans fichier PuitsSec.th]
 	
 	input Data/5-Amonts/Morts-Vivants-amonts-tot.th
 		#equate W@Morts-Vivants-amonts.Morts-Vivants-amonts W@PuitsSec.PuitsSec	# C'est bizarre cette connexion

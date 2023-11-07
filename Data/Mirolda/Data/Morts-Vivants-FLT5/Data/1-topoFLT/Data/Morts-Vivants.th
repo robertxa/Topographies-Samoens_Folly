@@ -4,6 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
+#[Note Alex: Vérif OK 2023 11 06]
  
 survey Morts-Vivants -title "Gouffre des Morts Vivants - FLT5"
 
@@ -18,11 +19,11 @@ survey Morts-Vivants -title "Gouffre des Morts Vivants - FLT5"
 
     #cs ???? (Lambert, mais lequel?)    
     #cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
-    #fix Morts_Vivants 943.740 129.900	1930  #ALT IGN
+    #fix Morts_Vivants 943.740 129.900	1930  #ALT IGN  [Note Alex: OK Scialet 04 - 1975]
     #fix FLT5 943740 2129900	1930  #ALT IGN
     
     cs UTM32
-    fix FLT5 328586	5105769	1940
+    fix FLT5 328586	5105769	1940    # [Note Alex: Coordonnées OK suivant pointage GPS Alex & Xav 2023]
     station FLT5 "G. des Morts Vivants - FLT5" entrance air-draught continuation #explored ????m
 
     data cartesian from to easting northing altitude
