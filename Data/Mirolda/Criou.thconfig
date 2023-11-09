@@ -132,7 +132,8 @@ layout my_layout
   legend on
 
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 25 cm
+  legend-columns 3
 
   # echelle graphique 100 m ampleur
   scale-bar 500 m
@@ -170,6 +171,9 @@ layout my_layout
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
+  	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
 #  symbol-hide point station        
 #  debug scrap-names
 #  debug station-names

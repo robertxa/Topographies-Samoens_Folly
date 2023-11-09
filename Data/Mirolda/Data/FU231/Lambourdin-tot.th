@@ -1,21 +1,21 @@
 encoding  utf-8
 
-# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Cendrillon -title "Gouffre des Cendrillon - FLT5"
+survey Lambourdin -title "Perte du Lambourdin"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/Cendrillon.th
+	input Data/Lambourdin.th
 	
 	# Import du dessin en plan
-	input Data/Cendrillon.th2
+	#input Data/Lambourdin.th2
 
 	# Import du dessin en coupe
-	#input Data/Cendrillon-coupe.th2
+	#input Data/Lambourdin-coupe.th2
 
 	# Import des maps
-	input Cendrillon-maps.th
+	#input Lambourdin-maps.th
  
  endsurvey
  

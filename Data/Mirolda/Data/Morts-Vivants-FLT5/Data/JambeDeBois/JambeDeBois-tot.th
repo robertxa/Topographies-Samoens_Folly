@@ -9,13 +9,15 @@ survey JambeDeBois -title "Gouffre des JambeDeBois - FLT5"
 	input Data/JambeDeBois.th
 	
 	# Import du dessin en plan
-	#input Data/JambeDeBois.th2
+	input Data/JambeDeBois.th2
+	input Data/JambeDeBois2.th2
+		 join SP-JambeBois-1 SP-JambeBois-3
 
 	# Import du dessin en coupe
 	#input Data/JambeDeBois-coupe.th2
 
 	# Import des maps
-	#input JambeDeBois-maps.th
+	input JambeDeBois-maps.th
  
  endsurvey
  

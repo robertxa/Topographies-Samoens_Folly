@@ -4,17 +4,21 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-MV1-2-4-plan -title "Gouffre des MV1-2-4 - FLT5"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
-#endmap
+map MP-MV1-2-4-plan -title "MV1-2-4 - FLT5"
+    SP-Urgo-2
+    break
+    SP-Urgo-1
+    break
+	SP-Fleurs-1
+	break
+	SP-Fleurs-2
+	break
+	SP-Diams-1
+	break
+    SP-Fruitiere-2
+	break
+	SP-Fruitiere-1
+endmap
 
 #map MC-MV1-2-4-coupe -title "Gouffre des MV1-2-4 - FLT5"
 #	SC-coupeB3-1

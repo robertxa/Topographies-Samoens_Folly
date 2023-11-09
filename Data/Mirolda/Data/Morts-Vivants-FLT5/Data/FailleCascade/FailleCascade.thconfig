@@ -124,7 +124,7 @@ layout my_layout
   legend-width 21 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif cu Criou, Samoëns, 74, France"
+  map-comment "Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -137,8 +137,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -153,7 +153,7 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre des FailleCascade - FLT5} 
+			\cavename={Faille Cendrillon - FLT5} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={FLT (1974), Collectif Mirolda (2023)}
@@ -354,12 +354,12 @@ layout atlas_layout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/FailleCascade-map.xvi
+#export map -fmt xvi -layout xviexport -o Data/FailleCascade-map.xvi
 export map -proj extended -layout xviexport -fmt xvi -o Data/FailleCascade-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-FailleCascade-plan-tot
-select MC-FailleCascade-coupe-tot
+select MP-FailleCascade-plan@FailleCascade
+select MC-FailleCascade-coupe@FailleCascade
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

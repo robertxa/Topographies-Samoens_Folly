@@ -4,18 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Cendrillon -title "Gouffre des Cendrillon - FLT5"
+survey FC231 -title "Perte du FC231"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/Cendrillon.th
+	input Data/FC231.th
 	
 	# Import du dessin en plan
-	input Data/Cendrillon.th2
+	input Data/FC231.th2
 
 	# Import du dessin en coupe
-	#input Data/Cendrillon-coupe.th2
+	input Data/FC231-coupe.th2
 
 	# Import des maps
-	input Cendrillon-maps.th
+	input FC231-maps.th
  
  endsurvey
  

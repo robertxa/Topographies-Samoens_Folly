@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap SP-FailleFossile-1 -projection plan -station-names "" "@Theta-FailleFossile" -author 1987 "URSUS" -author 2023 "Xavier Robert" -scale [-128 -3635 2607 -3635 0.0 0.0 69.469 0.0 m]
+scrap SP-FailleFossile-1 -projection plan -station-names "" "@Theta-FailleFossile" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3635 2607 -3635 0.0 0.0 69.469 0.0 m]
 
 line slope
   1568.5 -376.5
@@ -117,10 +117,19 @@ endline
 line wall
   1860.0 -443.5
   1860.0 -443.5 1878.0 -433.5 1885.0 -432.5
-  1892.0 -431.5 1900.5 -435.5 1903.5 -432.0
-  1906.5 -428.5 1915.5 -427.5 1912.5 -418.5
+  1892.0 -431.5 1921.0 -440.5 1924.0 -437.0
+endline
+
+line wall
+  1908.0 -396.0
+  1908.0 -396.0 1907.0 -385.0 1907.0 -377.0
+endline
+
+line wall
+  1930.0 -433.0
+  1933.0 -429.5 1915.5 -427.5 1912.5 -418.5
   altitude .
-  1909.5 -409.5 1906.0 -401.0 1906.0 -397.0
+  1909.5 -409.5 1908.0 -400.0 1908.0 -396.0
   smooth off
 endline
 
@@ -195,7 +204,7 @@ endscrap
 
 
 
-scrap SS-FailleFossile-1 -projection none -station-names "" "@Theta-FailleFossile" -author 1987 "URSUS" -author 2023 "Xavier Robert" -scale [1307.5 -216.0 1307.5 -274.0 0.0 0.0 0 -2.8 m]
+scrap SS-FailleFossile-1 -projection none -station-names "" "@Theta-FailleFossile" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [1307.5 -216.0 1307.5 -274.0 0.0 0.0 0 -2.8 m]
 
 line border -clip off
   1305.25 -219.25
@@ -273,7 +282,7 @@ endscrap
 
 
 
-scrap SP-FailleFossile-2 -projection plan -station-names "" "@Theta-FailleFossile" -author 1987 "URSUS" -author 2023 "Xavier Robert" -scale [-128 -3635 2607 -3635 0.0 0.0 69.469 0.0 m]
+scrap SP-FailleFossile-2 -projection plan -station-names "" "@Theta-FailleFossile" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3635 2607 -3635 0.0 0.0 69.469 0.0 m]
 
 line wall -subtype unsurveyed
   19.0 -2217.0

@@ -111,14 +111,16 @@ centerline
 #Date : ??/1986									
 								
 136	62	5.55	283	108					# Depart de la fin de MV4 ?
+#61	62	5.55	283	108					# Depart de la fin de MV4 ?
 62	63	12.94	266	115					
-63	64	3.5	187	114					
+63	64	3.5	287	114					
 64	65	21.4	256	124					
-65	66	23.59	174	114					
+65	66	23.59	274	114					
 66	67	10.67	282	112					
-67	68	6.36	247	123					
-68	69	9.87	227	113					
-69	70	13.81	183	102					
+67	68	6.26	247	123					
+68	69	9.87	240	116
+69	69b	5.53	227	113					
+69b	70	13.81	183	102					
 70	PHI	10.43	217	107					
 PHI	72	13.85	258	122					# Verna
 extend right									
@@ -188,7 +190,7 @@ centerline
     calibrate clino 90 -1
 
     data normal from to length  compass   clino #left right up down 									
-#MV4									
+#MV4 - Partie du méandre des Fleurs oubliée, en aval de Toyota
 									
 #Topographes : ????????? Jacques Gudefin, Xavier, Michel									
 #Date : ??/1986									
