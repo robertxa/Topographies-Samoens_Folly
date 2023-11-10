@@ -24,8 +24,14 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		equate W@PuitsSec-Riviere.PuitsSec-Riviere W@PuitsSec.PuitsSec
 	input Data/7-Meandre-Sagesse/Sagesse-tot.th
 		equate Z@Sagesse.Sagesse	Z@PuitsSec-Riviere.PuitsSec-Riviere
+		join SP-Sagesse-1@Sagesse SP-PuitsSec-Riv-1@PuitsSec-Riviere
+		join SP-Shunt-1@Sagesse SP-PuitsSec-Riv-1@PuitsSec-Riviere
+		join SP-SagesseAval-1@Sagesse-actif SP-PuitsSec-Riv-1@PuitsSec-Riviere
 	input Data/8-Sagesse-actif/Sagesse-actif-tot.th
 		equate Z@Sagesse.Sagesse	Z@Sagesse-actif.Sagesse-actif
+		equate Station29@Sagesse.Sagesse Station29@Sagesse-actif.Sagesse-actif
+		equate 38b@Sagesse.Sagesse X@PuitsSec-Riviere.PuitsSec-Riviere
+		join SP-SagesseAval-1@Sagesse-actif SP-Sagesse-1@Sagesse -count 2
 
 	input Data/MV1-2-4/MV1-2-4-tot.th
 		equate Station12@MV1-2-4.MV1-2-4 36@Sagesse.Sagesse
@@ -33,21 +39,19 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		join SP-Fruitiere-1@MV1-2-4 SP-FailleFossile-1@Theta-FailleFossile
 	input Data/Coeur-Toyota/Coeur-Toyota-tot.th
 		equate Coeur@Coeur-Toyota.Coeur-Toyota Coeur@MV1-2-4.MV1-2-4
+		join SP-Coeur-Toyota-1@Coeur-Toyota SP-Fleurs-1@MV1-2-4
 		equate Toyota@Coeur-Toyota.Coeur-Toyota Toyota@MV1-2-4.MV1-2-4
-	input Data/To-FailleActive/To-FailleActive-tot.th
-		equate T0@To-FailleActive.To-FailleActive T0@MV1-2-4.MV1-2-4	
-	input Data/Theta-FailleFossile/Theta-FailleFossile-tot.th
-		equate THETA@Theta-FailleFossile.Theta-FailleFossile THETA@MV1-2-4.MV1-2-4
-		join SP-FailleFossile-1@Theta-FailleFossile SP-FailleActive-1@To-FailleActive
+		join SP-Coeur-Toyota-1@Coeur-Toyota SP-Fleurs-2@MV1-2-4
+	input Data/RoiDeCoeurAmont/RoiDeCoeurAmont-tot.th
+		#equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Station12@MV1-2-4.MV1-2-4
+		equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Coeur@MV1-2-4.MV1-2-4
+		equate 8@RoiDeCoeurAmont.RoiDeCoeurAmont 59@Coeur-Toyota.Coeur-Toyota
+		join SP-Coeur-Toyota-1@Coeur-Toyota SP-Coeur-Amont-1@RoiDeCoeurAmont
 
 	input Data/JambeDeBois/JambeDeBois-tot.th
 		equate PSI@JambeDeBois.JambeDeBois PSI@MV1-2-4.MV1-2-4
 		equate PHI@JambeDeBois.JambeDeBois PHI@MV1-2-4.MV1-2-4
 		join SP-JambeBois-1@JambeDeBois SP-Fruitiere-1@MV1-2-4
-	input Data/RoiDeCoeurAmont/RoiDeCoeurAmont-tot.th
-		#equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Station12@MV1-2-4.MV1-2-4
-		equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Coeur@MV1-2-4.MV1-2-4
-		equate 8@RoiDeCoeurAmont.RoiDeCoeurAmont 59@Coeur-Toyota.Coeur-Toyota
 	input Data/FailleCascade/FailleCascade-tot.th
 		equate Fruitiere@FailleCascade.FailleCascade Fruitiere@MV1-2-4.MV1-2-4
 		join SP-Cendrillon-1@FailleCascade SP-Fruitiere-1@MV1-2-4
@@ -57,6 +61,11 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 	input Data/Sapin/Sapin-tot.th
 		equate Sapins@Sapin.Sapin Sapins@MV1-2-4.MV1-2-4
 		#join SP-Sapin-1@Sapin SP-Urgo-2@MV1-2-4
+	input Data/To-FailleActive/To-FailleActive-tot.th
+		equate T0@To-FailleActive.To-FailleActive T0@MV1-2-4.MV1-2-4	
+	input Data/Theta-FailleFossile/Theta-FailleFossile-tot.th
+		equate THETA@Theta-FailleFossile.Theta-FailleFossile THETA@MV1-2-4.MV1-2-4
+		join SP-FailleFossile-1@Theta-FailleFossile SP-FailleActive-1@To-FailleActive
 	
 	# ---> Question, GRANY OK ???
 	input Data/Grany/Grany-tot.th

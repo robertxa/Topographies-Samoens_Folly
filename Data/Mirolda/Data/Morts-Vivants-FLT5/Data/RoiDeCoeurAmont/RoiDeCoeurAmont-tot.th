@@ -9,13 +9,13 @@ survey RoiDeCoeurAmont -title "Gouffre des RoiDeCoeurAmont - FLT5"
 	input Data/RoiDeCoeurAmont.th
 	
 	# Import du dessin en plan
-	#input Data/RoiDeCoeurAmont.th2
+	input Data/RoiDeCoeurAmont.th2
 
 	# Import du dessin en coupe
 	#input Data/RoiDeCoeurAmont-coupe.th2
 
 	# Import des maps
-	#input RoiDeCoeurAmont-maps.th
+	input RoiDeCoeurAmont-maps.th
  
  endsurvey
  
