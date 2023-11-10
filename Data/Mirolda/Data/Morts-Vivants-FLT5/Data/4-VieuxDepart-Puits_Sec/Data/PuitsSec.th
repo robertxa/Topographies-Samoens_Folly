@@ -25,7 +25,7 @@ survey PuitsSec -title "Gouffre des Morts Vivants - FLT5"
     units compass clino degrees
     calibrate clino 90 -1
 
-    data normal from to length  compass   backclino #left right up down 
+    data normal from to length  backcompass   backclino #left right up down 
     extend left
     # La topo a été faite en remontant, du Puits Sec (W) vers le vieux départ (Station 29)
     W	1	16.08	0	180					# A partir de W (Puits Sec)

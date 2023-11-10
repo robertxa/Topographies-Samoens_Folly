@@ -4,7 +4,19 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"
+map MP-Morts-Vivants-1 -title "Gouffre des Morts-Vivants - FLT5"
+	SP-FLT-4
+	break
+	SP-FLT-3
+	break
+	SP-FLT-2
+	break
+	SP-FLT-1
+	break
+	SP-Collecteur-1
+endmap
+
+map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"
 #	SP-B3-1
 #	break
 #	SP-B3-2
@@ -13,8 +25,8 @@ encoding  utf-8
 #	break
 #	SP-B3-4
 #	break
-#	SP-B3-5
-#endmap
+	MP-Morts-Vivants-1
+endmap
 
 #map MC-Morts-Vivants-coupe -title "Gouffre des Morts-Vivants - FLT5"
 #	SC-coupeB3-1

@@ -12,6 +12,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 	input Data/3-P40-VieuxDepart/Vieux-Depart-tot.th
 		equate 0@Vieux-Depart.Vieux-Depart 15@Morts-Vivants.Morts-Vivants	# Jonction au niveau du spit FLT de départ du P40
 		#equate 0@Vieux-Depart.Vieux-Depart 27@Morts-Vivants.Morts-Vivants
+		join SP-VieuxD-1@Vieux-Depart SP-FLT-4@Morts-Vivants -count 2
 	input Data/4-VieuxDepart-Puits_Sec/PuitsSec-tot.th
 		equate 10@PuitsSec.PuitsSec 29@Vieux-Depart.Vieux-Depart
 		#equate W@PuitsSec.PuitsSec 29@Vieux-Depart.Vieux-Depart	# [Proposition Alex, mais ne convient pas à Xav, voir note dans fichier PuitsSec.th]
@@ -19,6 +20,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 	input Data/5-Amonts/Morts-Vivants-amonts-tot.th
 		#equate W@Morts-Vivants-amonts.Morts-Vivants-amonts W@PuitsSec.PuitsSec	# C'est bizarre cette connexion
 		equate 30@Morts-Vivants-amonts.Morts-Vivants-amonts 65@Morts-Vivants.Morts-Vivants
+		join SP-MVAmonts-2@Morts-Vivants-amonts SP-Collecteur-1@Morts-Vivants
 
 	input Data/6-PuitsSec-Riviere/PuitsSec-Riviere-tot.th	
 		equate W@PuitsSec-Riviere.PuitsSec-Riviere W@PuitsSec.PuitsSec

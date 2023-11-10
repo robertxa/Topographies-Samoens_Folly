@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -3635 2607 139.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -131.0 -3635 2607 140.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} flt5_198609_4p2.png 0 {}
 
 
@@ -113,7 +113,12 @@ line slope
   l-size 10.0
 endline
 
-point 1236.5 -1568.0 height -value [-24 m]
+line arrow
+  1304.0 -1620.0
+  1205.0 -1578.0
+endline
+
+point 1319.5 -1630.0 height -value [-24 m]
 
 line pit
   1187.0 -1586.5
@@ -264,6 +269,23 @@ line label -id l46-1382--2098 -close on
   smooth off
 endline
 
+line wall -subtype unsurveyed
+  1192.0 -1600.0
+  1192.0 -1600.0 1211.0 -1605.0 1211.0 -1616.0
+  1211.0 -1627.0 1216.0 -1642.0 1204.0 -1650.0
+  1192.0 -1658.0 1180.0 -1662.0 1180.0 -1662.0
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  1180.0 -1675.5
+  1180.0 -1675.5 1204.0 -1663.0 1212.0 -1653.0
+  1220.0 -1643.0 1222.0 -1621.0 1218.0 -1609.0
+  1214.0 -1597.0 1211.0 -1598.0 1205.0 -1595.0
+  1199.0 -1592.0 1192.5 -1592.0 1192.5 -1592.0
+  smooth off
+endline
+
 line wall
   1375.0 -2108.0
   1375.0 -2108.0 1378.0 -2098.0 1371.0 -2086.0
@@ -340,7 +362,7 @@ endscrap
 
 scrap SP-PuitsSec-Riv-2 -projection plan -station-names "" "@PuitsSec-Riviere" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128 -3635 2607 -3635 0.0 0.0 69.469 0.0 m]
 
-point 1063.0 -1536.0 height -value [-19 m]
+point 1118.0 -1394.0 height -value [-19 m]
 
 line wall
   1156.5 -1559.5
@@ -351,9 +373,19 @@ line wall
   smooth off
 endline
 
-point 996.5 -1419.5 label -text "<center>puits<br>Sec"
+line arrow
+  1117.0 -1409.0
+  1115.0 -1547.0
+endline
 
-point 973.5 -1530.0 label -text "<center>puits des<br>Rognons"
+line arrow
+  1243.0 -1426.0
+  1191.0 -1474.0
+endline
+
+point 1261.5 -1404.5 label -text "<center>puits<br>Sec"
+
+point 1120.5 -1334.0 label -text "<center>puits des<br>Rognons"
 
 line pit
   1158.0 -1566.0
@@ -400,6 +432,7 @@ point 1184.5 -1539.0 station -name 1
 line wall
   1192.5 -1501.0
   1192.5 -1501.0 1197.0 -1482.0 1178.5 -1486.5
+  smooth off
 endline
 
 point 1177.0 -1510.5 station -name W

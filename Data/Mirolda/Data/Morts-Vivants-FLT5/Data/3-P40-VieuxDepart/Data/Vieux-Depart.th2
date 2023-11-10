@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -3635 2607 139.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} CourtCircuit.png 0 {}
 
 
@@ -10,6 +10,7 @@ scrap SP-VieuxD-1 -projection plan -station-names "" "@Vieux-Depart" -author 198
 line pit
   1789.0 -832.5
   1789.0 -832.5 1768.0 -839.0 1758.5 -837.0
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -24,6 +25,7 @@ endline
 line wall -reverse on
   1784.0 -822.0
   1784.0 -822.0 1783.0 -837.0 1785.5 -844.0
+  smooth off
 endline
 
 line wall -subtype pit
@@ -34,26 +36,38 @@ line wall -subtype pit
   smooth off
 endline
 
-point 1650.0 -774.5 label -text "<center>salle du<br>Court-circuit"
+point 1596.0 -776.5 label -text "<center>salle du<br>Court-circuit"
 
-point 1393.5 -1146.0 height -value [-11 m]
+point 1332.5 -1159.0 height -value [-11 m]
 
-point 1250.5 -1194.0 height -value [-20 m]
+point 1228.5 -1202.0 height -value [-20 m]
 
-point 1214.0 -1069.5 height -value [-19 m]
+line arrow
+  1139.0 -1078.0
+  1196.0 -1105.0
+endline
+
+point 1106.0 -1066.5 height -value [-19 m]
 
 point 1399.0 -1021.0 height -value [-5 m]
 
-point 1465.5 -1011.5 height -value [-7 m]
+line arrow
+  1517.0 -983.0
+  1481.0 -1030.0
+endline
+
+point 1529.5 -972.5 height -value [-7 m]
 
 line pit
   1479.0 -1056.0
   1479.0 -1056.0 1483.5 -1036.5 1474.0 -1034.5
+  smooth off
 endline
 
 line pit
   1578.5 -1055.5
   1578.5 -1055.5 1586.5 -1038.5 1578.5 -1033.0
+  smooth off
 endline
 
 point 1571.0 -1012.0 height -value [-3 m]
@@ -63,6 +77,7 @@ point 1674.5 -890.0 height -value [-24 m]
 line pit
   1409.0 -1077.5
   1409.0 -1077.5 1427.5 -1054.0 1412.5 -1046.0
+  smooth off
 endline
 
 line pit
@@ -75,6 +90,7 @@ endline
 line pit
   1748.0 -873.0
   1748.0 -873.0 1736.0 -877.0 1726.0 -877.0
+  smooth off
 endline
 
 line pit
@@ -82,6 +98,7 @@ line pit
   1723.5 -963.0 1697.0 -959.5 1683.0 -961.0
   1669.0 -962.5 1657.0 -968.0 1654.5 -977.0
   1652.0 -986.0 1662.5 -996.5 1665.0 -999.5
+  smooth off
 endline
 
 point 1840.0 -907.5 height -value [-42 m]
@@ -93,6 +110,7 @@ line wall -reverse on -subtype pit
   1782.5 -872.5 1794.5 -900.0 1786.5 -908.5
   1778.5 -917.0 1779.0 -928.0 1762.5 -927.0
   1746.0 -926.0 1740.0 -923.0 1736.5 -928.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -156,6 +174,7 @@ line wall -reverse on
   1682.5 -955.0 1689.0 -960.0 1699.0 -952.0
   1709.0 -944.0 1712.0 -946.5 1711.5 -941.0
   1711.0 -935.5 1705.5 -939.0 1711.5 -927.5
+  smooth off
 endline
 
 line border
@@ -177,6 +196,7 @@ line wall -reverse on -subtype pit
   1711.5 -927.5
   1717.5 -916.0 1714.5 -906.5 1720.0 -895.0
   1725.5 -883.5 1735.0 -872.0 1729.5 -870.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -189,16 +209,19 @@ endline
 line pit
   1298.5 -1105.5
   1298.5 -1105.5 1292.5 -1130.5 1310.0 -1142.0
+  smooth off
 endline
 
 line pit
   1262.0 -1131.5
   1262.0 -1131.5 1255.5 -1151.0 1261.5 -1161.0
+  smooth off
 endline
 
 line pit
   1258.0 -1133.5
   1258.0 -1133.5 1243.0 -1131.5 1245.5 -1113.5
+  smooth off
 endline
 
 line wall -reverse on -subtype pit
@@ -208,12 +231,14 @@ line wall -reverse on -subtype pit
   altitude .
   1200.5 -1113.0 1201.0 -1103.0 1220.5 -1107.0
   1240.0 -1111.0 1235.5 -1121.5 1248.0 -1117.5
+  smooth off
 endline
 
 line wall -reverse on
   1316.0 -1138.0
   1316.0 -1138.0 1306.5 -1135.5 1288.5 -1143.0
   1270.5 -1150.5 1269.5 -1156.5 1255.0 -1158.5
+  smooth off
 endline
 
 point 1303.5 -1116.5 station -name 28
