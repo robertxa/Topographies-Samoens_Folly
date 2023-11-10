@@ -22,6 +22,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 
 	input Data/6-PuitsSec-Riviere/PuitsSec-Riviere-tot.th	
 		equate W@PuitsSec-Riviere.PuitsSec-Riviere W@PuitsSec.PuitsSec
+		#join SP-PuitsSec-1@PuitsSec SP-PuitsSec-Riv-2@PuitsSec-Riviere
 	input Data/7-Meandre-Sagesse/Sagesse-tot.th
 		equate Z@Sagesse.Sagesse	Z@PuitsSec-Riviere.PuitsSec-Riviere
 		join SP-Sagesse-1@Sagesse SP-PuitsSec-Riv-1@PuitsSec-Riviere

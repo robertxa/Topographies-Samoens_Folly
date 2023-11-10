@@ -5,7 +5,11 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"
-	MP-PuitsSec-Riviere-plan@PuitsSec-Riviere
+	MP-Vieux-Depart-plan@Vieux-Depart
+    break
+    MP-PuitsSec-plan@PuitsSec
+    break
+    MP-PuitsSec-Riviere-plan@PuitsSec-Riviere
     break
     MP-RoiDeCoeurAmont-plan@RoiDeCoeurAmont
     break
@@ -13,6 +17,7 @@ map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"
     break
     MP-Sagesse-actif-plan@Sagesse-actif
 	break
+    MP-Morts-Vivants-amonts-plan@Morts-Vivants-amonts
     MP-Sapin-plan@Sapin
     break
 	MP-JambeDeBois-plan@JambeDeBois
