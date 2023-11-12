@@ -34,7 +34,13 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		equate Z@Sagesse.Sagesse	Z@Sagesse-actif.Sagesse-actif
 		equate Station29@Sagesse.Sagesse Station29@Sagesse-actif.Sagesse-actif
 		equate 38b@Sagesse.Sagesse X@PuitsSec-Riviere.PuitsSec-Riviere
+			centerline
+			extend ignore 38b@Sagesse.Sagesse 37b@Sagesse.Sagesse
+			endcenterline
 		join SP-SagesseAval-1@Sagesse-actif SP-Sagesse-1@Sagesse -count 2
+			centerline
+			extend ignore 30@Sagesse-actif.Sagesse-actif Station29@Sagesse-actif.Sagesse-actif
+			endcenterline
 
 	input Data/MV1-2-4/MV1-2-4-tot.th
 		equate Station12@MV1-2-4.MV1-2-4 36@Sagesse.Sagesse
@@ -72,7 +78,8 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 	
 	# ---> Question, GRANY OK ???
 	input Data/Grany/Grany-tot.th
-		equate 0@Grany.Grany 15@Morts-Vivants.Morts-Vivants	# Est-ce OK ? A priori, c'est au sommet du P40, mais est-ce sûr ?
+		#equate 0@Grany.Grany 15@Morts-Vivants.Morts-Vivants	# Est-ce OK ? A priori, c'est au sommet du P40, mais est-ce sûr ?
+		equate 0@Grany.Grany 16@Morts-Vivants.Morts-Vivants	# Est-ce OK ? A la base du P40, mais est-ce sûr ?
 
 	# Import des maps
 	input Morts-Vivants-maps.th

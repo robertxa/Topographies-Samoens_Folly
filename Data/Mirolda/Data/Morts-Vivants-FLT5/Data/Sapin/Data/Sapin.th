@@ -7,7 +7,7 @@ encoding  utf-8
  
 survey Sapin -title "Gouffre des Morts Vivants - FLT5"
 
- centerline -extend right
+ centerline -extend left
     #MV12 Faille Cascade
 
     explo-date 1988.02
@@ -25,7 +25,8 @@ survey Sapin -title "Gouffre des Morts Vivants - FLT5"
     data normal from to length  compass   clino #left right up down 
    	Sapins	29	21.92	0	0					# Départ du Sapin ; MV15
 29	30	3.77	90	52					
-30	Bite1	4.49	60	90					
+30	Bite1	4.49	60	90
+extend right					
 Bite1	32	3.17	145	90					
 32	33	2.57	95	99					
 33	34	5.13	185	23					
@@ -35,7 +36,7 @@ Bite1	32	3.17	145	90
 37	38	1.69	210	77					
 38	39	3.1	135	106					
 39	40	2.79	140	137					
-									
+extend left		
 Bite1	41	4.13	8	90					# Redépart de Bite1
 41	42	2.23	17	113					
 42	43	4	100	49					

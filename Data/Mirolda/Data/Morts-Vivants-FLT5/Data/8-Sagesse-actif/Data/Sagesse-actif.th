@@ -41,19 +41,24 @@ Station55	14	4.71	259	90.3
 17	18	3.67	289	91.2					
 18	19	4.4	250	84					
 19	20	5.8	253	97.5					# Siphon
-									
+
+extend left									
 Station55	21	4.66	40	86.7					# A partir de Station55, remontée dans l'Actif
 21	22	12.76	67	60.9					
 22	23	2.71	32	67.8					
 23	24	8.51	99	63.3					
-									
+
+extend right									
 Station53	25	3.58	129	56.1					
 25	26	5.5	103	48					
 26	27	4.65	97	31.8					
 27	28	2.88	93	70.5					
-28	29	6.09	160	93.9					
+28	29	6.09	160	93.9
+extend vertical					
 29	30	8.18	148	122.7					# A 1 m = Station29 au dessus
+flags approx
 30	Station29	1	0	0					# Approx
+flags not approx
 									
 #Station12	Station7	16.29	65	83.1					# A partir Station12 pour amont fracture affluentS
 #Station7	33	6.8	92	100.2					# Station20 à 1 m au dessous
