@@ -124,7 +124,7 @@ layout my_layout
   legend-width 21 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif cu Criou, Samoëns, 74, France"
+  map-comment "Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -137,8 +137,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 

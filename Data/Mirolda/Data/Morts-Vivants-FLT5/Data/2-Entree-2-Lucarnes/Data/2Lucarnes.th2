@@ -1,15 +1,15 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 1387.8432 1151.6226000000001
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -129.5 -129.5 1387.8352 829.0
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1181.099 1 1.0} {472.441 FLT5} 2Lucarnes-map.xvi 0 {}
 
 
 
 scrap SP-2Lucarnes-01 -projection plan -station-names "" "@2Lucarnes" -author 1997 "URSUS" -author 2023 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0.0 3.0 1339.0 3.0 0.0 0.0 40.64 0.0 m]
 
-point 1113.25 511.5 map-connection
+point 1086.879 548.111 map-connection
 
-point 737.0 444.25 label -text "Le Zigouigoui" -scale xs -align right
+point 738.5 427.75 label -text "<center>Le Zigouigoui<br>(etr.)"
 
 line wall
   955.25 553.75
@@ -26,6 +26,7 @@ line wall
   829.75 503.0 828.75 500.75 818.75 501.5
   808.75 502.25 811.0 502.5 805.25 503.5
   799.5 504.5 797.5 506.5 792.0 504.5
+  altitude .
   787.89 503.0 785.0 495.5 782.25 495.5
   779.5 495.5 780.25 496.5 774.0 495.0
   767.75 493.5 770.5 487.5 766.25 485.75
@@ -66,22 +67,29 @@ line wall -reverse on -subtype invisible
   954.25 562.0
 endline
 
+line pit
+  1082.75 556.5
+  1082.75 556.5 1079.0 547.5 1092.25 539.25
+endline
+
 line wall -subtype pit
   1049.0 551.5
   1049.0 551.5 1080.24 547.63 1092.25 539.25
-  1105.5 530.0 1100.5 517.75 1110.25 517.25
+  smooth off
 endline
 
 point 1025.25 538.0 air-draught -orientation 111.1 -subtype summer
 
 line wall -reverse on -subtype pit
   1050.25 564.5
-  1065.25 562.5 1087.78 551.06 1100.75 552.0
-  1114.5 553.0 1115.5 555.25 1120.75 553.75
+  1065.25 562.5 1069.78 555.56 1082.75 556.5
+  smooth off
 endline
 
 line wall
 endline
+
+point 944.0 558.5 narrow-end
 
 line wall
   1050.25 564.5
@@ -91,6 +99,7 @@ line wall
   979.0 563.0 977.5 564.0 969.0 563.25
   960.5 562.5 958.75 562.75 954.25 562.0
   smooth off
+  altitude .
 endline
 
 point 736.539 465.591 station -name 24
@@ -115,15 +124,20 @@ point 828.429 497.721 station -name 15
 
 point 855.829 504.01099999999997 station -name 14
 
-point 859.5 509.0 station -name 14
-
-point 864.0 513.0 station -name 13
+point 861.8389999999999 510.97099999999995 station -name 13
 
 point 885.9889999999999 515.6709999999999 station -name 12
 
-point 892.049 515.121 station -name 11
+line pit -close on
+  916.25 518.0
+  916.25 518.0 911.0 531.25 909.0 527.25
+  907.0 523.25 906.5 521.75 907.0 519.0
+  907.5 516.25 911.0 517.0 913.0 517.0
+  915.0 517.0 916.25 518.0 916.25 518.0
+  smooth off
+endline
 
-point 898.189 515.901 station -name 110
+point 892.059 515.131 station -name 11
 
 point 905.5889999999999 520.631 station -name 10
 
@@ -151,17 +165,53 @@ endscrap
 
 
 
+scrap SP-2Lucarnes-04 -projection plan -station-names "" "@2Lucarnes" -author 1997 "URSUS" -author 2023 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0.0 3.0 1339.0 3.0 0.0 0.0 40.64 0.0 m]
+
+line wall
+  857.25 506.5
+  857.25 506.5 863.75 508.75 867.5 509.25
+  871.25 509.75 876.75 511.5 882.5 512.25
+  888.25 513.0 898.75 513.0 900.75 514.75
+  902.75 516.5 907.0 519.0 907.0 519.0
+  smooth off
+endline
+
+point 850.5 518.5 narrow-end
+
+line wall
+  906.75 522.0
+  906.75 522.0 902.0 518.25 897.0 517.0
+  892.0 515.75 887.25 513.5 879.75 513.0
+  872.25 512.5 869.75 512.0 866.25 511.5
+  862.75 511.0 857.25 509.75 857.25 509.75
+  smooth off
+endline
+
+point 858.779 508.92099999999994 station -name 111
+
+point 898.149 515.861 station -name 110
+
+endscrap
+
+
+
 scrap SP-2Lucarnes-02 -projection plan -station-names "" "@2Lucarnes" -author 1997 "URSUS" -author 2023 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0.0 3.0 1339.0 3.0 0.0 0.0 40.64 0.0 m]
 
-point 300.5 400.25 label -text "Puits des Fistuleuses" -scale xs -align right
+point 347.5 380.0 soda-straw
 
-point 347.25 414.25 height -value [-10 m] -scale xs
+point 346.0 455.25 label -text "<center>puits des<br>Fistuleuses"
 
-point 391.5 385.75 height -value [-8 m] -scale xs
+point 349.75 406.25 height -value [-10 m]
 
-point 480.25 382.0 label -text "Puits des Disques" -scale xs -align left
+point 404.0 393.25 height -value [-8 m]
 
-point 501.5 395.0 height -value [-9 m] -scale xs -align right
+point 476.5 401.0 disk
+
+point 469.0 414.0 disk
+
+point 463.75 466.0 label -text "<center>puits<br>des Disques"
+
+point 509.5 378.5 height -value [-9 m]
 
 line pit
   349.5 362.75
@@ -180,11 +230,19 @@ line pit -reverse on
   487.25 407.75
 endline
 
+line label -text "méandre des Deux Lucarnes"
+  353.0 546.0
+  353.0 546.0 678.0 662.0 716.0 670.0
+  754.0 678.0 1025.0 699.0 1025.0 699.0
+  smooth off
+endline
+
 line wall
   743.5 471.0
   743.5 471.0 742.0 469.0 737.5 469.25
   733.0 469.5 725.75 487.0 720.25 494.0
   714.75 501.0 717.5 501.5 706.0 501.25
+  altitude .
   694.5 501.0 675.5 493.5 671.25 496.0
   667.0 498.5 669.0 503.75 665.0 503.0
   661.0 502.25 658.5 503.25 654.25 493.25
@@ -197,6 +255,7 @@ line wall
   587.0 463.25 587.0 455.0 583.25 454.5
   579.5 454.0 572.75 456.0 566.0 455.75
   559.25 455.5 555.0 456.5 552.5 454.25
+  altitude .
   550.0 452.0 545.75 447.25 544.25 444.5
   542.75 441.75 541.75 436.5 539.5 436.5
   537.25 436.5 533.5 437.25 532.75 435.75
@@ -208,6 +267,7 @@ line wall
   495.75 414.5 497.75 424.5 493.5 424.25
   489.25 424.0 487.0 423.75 484.25 421.75
   481.5 419.75 480.5 418.25 476.25 419.75
+  smooth off
 endline
 
 line wall -subtype pit
@@ -215,6 +275,7 @@ line wall -subtype pit
   472.0 421.25 470.87 422.87 467.5 421.25
   461.25 418.25 461.5 420.5 460.5 413.75
   459.5 407.0 461.75 404.0 461.5 399.5
+  smooth off
 endline
 
 line wall
@@ -222,17 +283,20 @@ line wall
   461.25 395.0 456.0 393.75 450.25 389.25
   444.5 384.75 424.5 373.0 421.25 371.25
   418.0 369.5 402.5 363.25 396.75 363.5
+  smooth off
 endline
 
 line wall -subtype pit
   396.75 363.5
   391.0 363.75 387.75 366.75 382.75 365.25
   377.75 363.75 375.75 359.25 373.0 362.25
+  smooth off
 endline
 
 line wall
   373.0 362.25
   370.25 365.25 358.56 369.73 360.5 373.0
+  smooth off
 endline
 
 line wall -subtype pit
@@ -241,11 +305,13 @@ line wall -subtype pit
   354.25 391.0 341.73 389.68 339.75 384.0
   337.75 378.25 341.5 367.5 346.5 366.0
   351.5 364.5 355.0 367.75 358.5 364.5
+  smooth off
 endline
 
 line wall
   358.5 364.5
   362.0 361.25 366.25 358.75 368.25 356.5
+  smooth off
 endline
 
 line wall -subtype pit
@@ -253,6 +319,7 @@ line wall -subtype pit
   370.25 354.25 370.53 354.2 374.0 348.0
   377.5 341.75 387.25 342.0 393.25 347.75
   399.25 353.5 397.25 355.0 402.5 356.75
+  smooth off
 endline
 
 line wall
@@ -260,12 +327,14 @@ line wall
   407.75 358.5 422.75 364.0 424.25 365.0
   425.75 366.0 449.75 379.75 451.75 380.75
   453.75 381.75 464.13 393.37 467.75 393.25
+  smooth off
 endline
 
 line wall -subtype pit
   467.75 393.25
   475.5 393.0 485.75 397.0 486.75 401.75
   487.75 406.5 480.25 409.0 481.75 412.0
+  smooth off
 endline
 
 line wall
@@ -383,20 +452,14 @@ line wall -reverse on
   smooth off
 endline
 
-line wall
-  232.0 219.75
-  231.25 223.25
-endline
-
-line wall -reverse on
-  292.75 201.75
-  287.25 202.5
-endline
+point 291.25 188.0 narrow-end
 
 line wall -subtype invisible
   263.25 391.25
   260.25 387.75
 endline
+
+point 252.0 398.5 narrow-end
 
 line wall
   342.25 382.25
@@ -409,15 +472,14 @@ line wall
   283.5 384.75 283.25 382.25 279.25 384.75
   275.25 387.25 269.5 388.0 263.25 391.25
   smooth off
+  altitude .
 endline
 
 line wall
-  231.25 223.25
-  231.25 223.25 222.25 222.25 220.0 222.5
-  217.75 222.75 209.5 220.75 210.75 223.25
-  212.0 225.75 210.25 225.75 218.0 226.75
-  225.75 227.75 227.5 228.75 231.5 229.0
-  235.5 229.25 239.09 230.33 241.0 233.0
+  210.75 223.25
+  212.0 225.75 210.0 222.25 217.75 223.25
+  225.5 224.25 231.95 226.74 231.75 228.25
+  231.25 232.0 239.09 230.33 241.0 233.0
   243.5 236.5 244.25 237.5 246.25 241.5
   247.91 244.81 247.28 247.48 254.25 248.25
   258.75 248.75 262.5 247.0 267.75 244.75
@@ -434,21 +496,9 @@ line pit -close off
   240.5 225.5
 endline
 
-point 259.75 401.5 altitude
-
-point 242.5 220.0 altitude
-
-point 301.5 206.75 altitude
-
-line water-flow
-  213.75 224.0
-  213.75 224.0 207.5 215.75 207.75 211.25
-  smooth off
-endline
-
 line pit
-  215.25 224.75
-  215.25 224.75 208.0 240.75 204.0 239.0
+  214.25 219.75
+  214.25 219.75 214.25 236.25 210.25 234.5
   smooth off
 endline
 
@@ -494,6 +544,24 @@ line pit -reverse on
   smooth off
 endline
 
+line water-flow
+  222.0 306.5
+  222.0 306.5 199.0 316.5 190.0 319.5
+  181.0 322.5 164.5 329.5 158.0 329.5
+  151.5 329.5 143.0 330.0 143.0 330.0
+  smooth off
+endline
+
+line wall
+  166.0 325.0
+  175.5 321.5
+endline
+
+line wall
+  179.0 329.5
+  166.5 329.5
+endline
+
 line wall
   364.5 364.5
   364.5 364.5 394.5 361.5 398.5 359.0
@@ -518,16 +586,45 @@ line wall
   207.0 368.25 204.75 365.75 203.25 362.75
   201.75 359.75 194.5 350.5 195.5 342.0
   196.06 337.24 185.75 349.5 184.5 341.75
-  183.25 334.0 180.75 329.5 183.75 327.0
-  186.75 324.5 192.25 321.5 197.25 321.5
-  202.25 321.5 202.25 331.75 210.25 329.25
+  183.25 334.0 188.5 332.0 179.0 329.5
+  smooth off
+endline
+
+line wall
+  175.5 321.5
+  178.5 319.0 191.5 314.5 196.5 314.5
+  smooth off
+endline
+
+line wall
+  209.5 314.5
+  202.5 319.0
+endline
+
+line wall
+  196.5 314.5
+  205.5 312.0
+endline
+
+line wall
+  202.5 319.0
+  204.5 328.0 202.25 331.75 210.25 329.25
   218.25 326.75 223.0 325.0 225.75 323.5
   228.5 322.0 231.75 318.5 234.5 318.0
+  smooth off
 endline
 
 line wall -subtype pit
   234.5 318.0
   237.25 317.5 245.0 315.5 246.5 312.5
+  smooth off
+endline
+
+line pit
+  210.0 219.0
+  210.75 223.25
+  210.75 223.25 212.0 228.5 210.5 230.75
+  smooth off
 endline
 
 line wall
@@ -540,23 +637,22 @@ line wall
   243.0 266.25 245.25 265.75 245.75 261.5
   246.25 257.25 244.0 254.0 243.0 250.0
   242.0 246.0 238.0 237.75 234.25 236.5
-  230.5 235.25 227.25 234.25 225.25 233.0
-  223.25 231.75 219.0 233.25 216.0 235.25
-  213.0 237.25 212.5 234.25 211.0 233.5
-  209.5 232.75 203.5 236.75 201.75 231.25
-  200.0 225.75 195.0 222.75 201.0 219.5
-  207.0 216.25 216.25 219.0 221.5 219.0
-  226.75 219.0 228.0 219.25 232.0 219.75
+  230.5 235.25 229.25 233.75 227.25 232.5
+  225.25 231.25 219.75 229.0 216.75 231.0
+  213.75 233.0 212.0 231.5 210.5 230.75
+  209.0 230.0 200.88 231.66 199.75 226.0
+  198.75 221.0 203.92 223.25 210.75 223.25
   smooth off
 endline
 
-point 291.25 186.25 map-connection
+point 289.36899999999997 206.771 map-connection
 
 line wall -reverse on
   364.75 376.75
   364.75 376.75 391.75 369.75 399.5 367.0
   407.25 364.25 416.0 355.0 416.5 351.75
   417.0 348.5 409.75 331.0 402.75 328.0
+  altitude .
   395.75 325.0 387.0 331.25 383.75 331.75
   380.5 332.25 373.5 332.75 372.25 334.25
   371.0 335.75 370.0 342.75 368.0 343.5
@@ -576,6 +672,7 @@ line wall -reverse on
   215.5 348.5 194.75 338.75 206.5 340.25
   208.53 340.51 211.75 339.25 216.5 338.0
   221.25 336.75 235.5 330.0 239.0 329.5
+  smooth off
 endline
 
 line wall -reverse on -subtype pit
@@ -583,6 +680,7 @@ line wall -reverse on -subtype pit
   242.5 329.0 251.5 333.75 255.25 332.0
   259.0 330.25 261.5 329.5 261.75 325.0
   262.0 320.5 258.5 314.75 257.0 314.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -602,6 +700,7 @@ line wall -reverse on
   289.25 224.0 290.5 214.5 291.5 211.0
   292.5 207.5 292.75 201.75 292.75 201.75
   smooth off
+  altitude .
 endline
 
 point 289.36899999999997 206.771 station -name 123
@@ -614,32 +713,47 @@ point 294.87899999999996 229.29099999999997 station -name 120
 
 point 286.45899999999995 238.98099999999997 station -name 119
 
-point 203.61899999999997 224.88099999999997 station -name 107
+line arrow
+  123.0 273.5
+  221.5 241.25
+endline
 
-point 137.75 250.5 label -text "Puits de la Renverse" -scale xs -align left
+point 101.25 279.0 label -text "<center>puits de<br>la Renverse"
 
-point 113.75 228.75 label -text "Puits de l'Ardèche" -scale xs -align left
+point 120.25 211.75 label -text "<center>puits de<br>l'Ardèche"
 
-point 181.0 259.25 height -value [-9 m] -scale xs
+point 185.75 238.0 height -value [-9 m]
+
+line arrow
+  139.5 213.5
+  194.25 223.25
+endline
 
 line wall
 endline
 
-point 197.5 186.25 label -text "Puits de la Baise" -scale xs -align bottom-right
+line arrow
+  205.5 151.0
+  224.25 205.25
+endline
 
-point 222.75 205.75 height -value [-6 m] -scale xs -align right
+point 190.0 118.25 label -text "<center>puits de<br>la Baise"
 
-point 199.0 206.0 height -value [-6 m] -scale xs
+point 244.75 198.0 height -value [-6 m]
 
-point 207.75 226.0 station -name 104
+line pit
+  269.0 262.0
+  269.0 262.0 249.0 270.0 241.0 259.0
+  smooth off
+endline
 
-point 211.01899999999995 225.43099999999998 station -name 103
+point 193.75 198.75 height -value [-6 m]
 
-point 217.94899999999996 224.64099999999996 station -name 101
+point 210.98899999999998 225.40099999999995 station -name 103
 
-point 228.81899999999996 226.61099999999996 station -name 105
+point 217.92899999999997 224.67099999999996 station -name 101
 
-point 231.5 229.0 station -name 100
+point 230.23899999999998 228.43099999999995 station -name 100
 
 point 229.12899999999996 231.42099999999996 station -name 99
 
@@ -651,33 +765,54 @@ point 254.48899999999998 258.981 station -name 96
 
 point 260.38899999999995 271.02099999999996 station -name 94
 
-point 222.75 263.5 height -value [-4.5 m] -scale xs
+point 220.75 252.0 height -value [-4.5 m]
 
-point 301.5 279.25 label -text "Puits du Bas Bugey" -scale xs -align right
+point 340.5 261.25 label -text "puits du Bas Bugey" -align right
 
-point 277.75 279.25 height -value [-6 m] -scale xs -align right
+point 281.75 274.75 height -value [-6 m]
 
 point 248.97899999999998 288.58099999999996 station -name 93
 
-point 276.75 295.75 height -value [-3 m] -scale xs -align right
+point 283.25 294.25 height -value [-3 m]
 
 point 255.19899999999996 298.82099999999997 station -name 92
 
 point 251.88899999999995 308.421 station -name 90
 
-point 223.0 305.5 height -value [-4 m] -scale xs
+point 219.5 297.5 height -value [-4 m]
 
-point 202.75 312.0 height -value [-4 m] -scale xs
+point 192.75 296.5 height -value [-4 m]
 
-point 173.0 316.0 height -value [-3 m] -scale xs
+line arrow
+  336.0 297.5
+  291.5 306.0
+endline
 
-point 165.25 357.75 label -text "<center>Etr." -scale xs
+line arrow
+  333.0 261.5
+  295.5 271.5
+endline
 
-point 99.0 379.75 label -text "Puits des Crétions Volantes" -scale xs -align right
+line pit
+  209.5 342.5
+  209.5 342.5 193.0 333.5 190.5 346.5
+  smooth off
+endline
 
-point 301.5 309.75 label -text "Puits de l'Espoir" -scale xs -align right
+point 147.5 306.5 height -value [-3 m]
 
-point 273.5 310.75 height -value [-12 m] -scale xs -align right
+point 165.25 357.75 label -text "etr."
+
+line arrow
+  183.0 388.0
+  209.5 376.0
+endline
+
+point 174.5 414.75 label -text "<center>puits des<br>Crétions Volantes" -align left
+
+point 349.0 296.75 label -text "puits de l'Espoir" -align right
+
+point 274.5 310.25 height -value [-12 m]
 
 point 249.99899999999997 325.83099999999996 station -name 89
 
@@ -695,7 +830,7 @@ point 213.22899999999998 363.07099999999997 station -name 79
 
 point 220.62899999999996 364.09099999999995 station -name 78
 
-point 182.25 393.25 height -value [-13 m] -scale xs
+point 208.25 393.75 height -value [-13 m]
 
 point 227.24899999999997 371.97099999999995 station -name 77
 
@@ -750,6 +885,47 @@ point 324.799 384.881 station -name 113
 point 330.549 370.631 station -name 112
 
 point 351.57899999999995 383.311 station -name 58
+
+endscrap
+
+
+
+scrap SP-2Lucarnes-05 -projection plan -station-names "" "@2Lucarnes" -author 1997 "URSUS" -author 2023 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0.0 3.0 1339.0 3.0 0.0 0.0 40.64 0.0 m]
+
+line pit
+  216.5 229.75
+  216.5 229.75 215.25 221.75 216.0 219.5
+  smooth off
+endline
+
+line pit
+  226.0 229.25
+  226.0 229.25 225.0 224.0 226.0 222.0
+  smooth off
+endline
+
+point 207.82899999999995 225.86099999999996 station -name 108
+
+line wall
+  234.25 228.0
+  234.25 228.0 222.75 228.25 219.5 228.25
+  216.25 228.25 207.5 230.0 207.5 230.0
+  smooth off
+endline
+
+point 239.5 220.0 narrow-end
+
+line wall
+  208.25 224.0
+  208.25 224.0 214.5 221.75 220.0 222.25
+  225.5 222.75 232.0 223.75 232.0 223.75
+  smooth off
+  altitude .
+endline
+
+point 228.80899999999997 226.64099999999996 station -name 105
+
+point 203.589 224.88099999999994 station -name 107
 
 endscrap
 

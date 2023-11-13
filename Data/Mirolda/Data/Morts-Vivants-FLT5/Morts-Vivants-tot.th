@@ -9,6 +9,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 	input Data/1-topoFLT/Morts-Vivants-tot.th
 	input Data/2-Entree-2-lucarnes/2Lucarnes-tot.th
 		equate FLT5@Morts-Vivants.Morts-Vivants FLT5@2Lucarnes.2Lucarnes
+		join SP-2Lucarnes-01@2Lucarnes SP-FLT-4@Morts-Vivants
 	input Data/3-P40-VieuxDepart/Vieux-Depart-tot.th
 		equate 0@Vieux-Depart.Vieux-Depart 15@Morts-Vivants.Morts-Vivants	# Jonction au niveau du spit FLT de départ du P40
 		#equate 0@Vieux-Depart.Vieux-Depart 27@Morts-Vivants.Morts-Vivants
