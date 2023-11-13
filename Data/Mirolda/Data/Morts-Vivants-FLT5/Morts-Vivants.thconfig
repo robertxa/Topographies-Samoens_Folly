@@ -357,9 +357,11 @@ select MC-Morts-Vivants-coupe@Morts-Vivants
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Morts-Vivants.lox
+ export model -enable all -o Outputs/Morts-Vivants.plt
+ export model -enable all -o Outputs/Morts-Vivants.kml
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Morts-Vivants -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/Morts-Vivants -layout my_layout
 
 # Export des fichiers kml
 # export map -proj plan -fmt kml -o Outputs/Morts-Vivants.kml -layout my_layout
