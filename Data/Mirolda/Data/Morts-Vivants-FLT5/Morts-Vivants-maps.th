@@ -4,8 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"
-	
+map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"	
     MP-Vieux-Depart-plan@Vieux-Depart
     break
     MP-PuitsSec-plan@PuitsSec
@@ -14,28 +13,31 @@ map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"
     break
     MP-Morts-Vivants-1@Morts-Vivants
     break
+    MP-2Lucarnes-plan@2Lucarnes  [0 100 m] below
+    break
     MP-RoiDeCoeurAmont-plan@RoiDeCoeurAmont
     break
     MP-Sagesse-plan@Sagesse
     break
     MP-Sagesse-actif-plan@Sagesse-actif
-	break
+    break
     MP-Morts-Vivants-amonts-plan@Morts-Vivants-amonts
     MP-Sapin-plan@Sapin
     break
-	MP-JambeDeBois-plan@JambeDeBois
+    MP-JambeDeBois-plan@JambeDeBois
     break
     MP-Cendrillon-plan@Cendrillon
     break
     MP-FailleCascade-plan@FailleCascade
     break
     MP-Coeur-Toyota-plan@Coeur-Toyota
-	break
+    break
     MP-MV1-2-4-plan@MV1-2-4
-	break
-	MP-Theta-FailleFossile-plan@Theta-FailleFossile
-	break
-	MP-To-FailleActive-plan@To-FailleActive
+    break
+    MP-Theta-FailleFossile-plan@Theta-FailleFossile
+    break
+    MP-To-FailleActive-plan@To-FailleActive
+    
 endmap
 
 #map MC-Morts-Vivants-coupe -title "Gouffre des Morts-Vivants - FLT5"
