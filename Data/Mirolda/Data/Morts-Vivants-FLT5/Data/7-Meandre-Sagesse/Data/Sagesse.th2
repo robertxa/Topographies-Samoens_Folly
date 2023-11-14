@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -3635 2607 139.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} flt5_198609_4-p3.png 0 {}
 
 
@@ -59,7 +59,11 @@ point 1976.5 -2119.0 water-flow -orientation 237.1
 
 point 1687.0 -1710.0 water-flow -orientation 267.4
 
-point 1512.0 -1822.0 label -orientation 270.0 -text "méandre de la Sagesse"
+line label -text "méandre de la Sagesse"
+  1338.0 -2642.0
+  1338.0 -2642.0 1360.0 -1958.0 1372.0 -1900.0
+  1384.0 -1842.0 1458.0 -1504.0 1470.0 -1478.0
+endline
 
 point 1648.0 -2456.5 label -text "C3"
 

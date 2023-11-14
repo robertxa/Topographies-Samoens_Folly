@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -3635 5088 139.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} flt5_mv1-2-4_calques-1.png 0 {}
 
 
@@ -747,7 +747,12 @@ point 3290.0 -1734.0 label -text "R2"
 
 point 3273.0 -1053.5 continuation -attr Code D -attr Cavite "FLT5" -attr Reseau "Galerie Urgo" -text "Départ de petit méandre à voir ou à élargir ?"
 
-point 3018.0 -994.5 label -orientation 269.8 -text "galerie Urgo (paléo-collecteur)"
+line label -text "galerie Urgo (paléo-collecteur)"
+  2970.0 -1692.0
+  2970.0 -1692.0 2988.0 -1102.0 2992.0 -1006.0
+  2996.0 -910.0 3062.0 -502.0 3062.0 -502.0
+  smooth off
+endline
 
 point 3348.5 -1650.0 label -text "soutirage"
 
@@ -969,6 +974,7 @@ line wall
   3303.0 -498.0
   3303.0 -498.0 3310.5 -461.5 3290.0 -450.0
   3269.5 -438.5 3269.0 -433.0 3268.0 -428.5
+  smooth off
 endline
 
 point 3284.5 -441.5 water-flow -orientation 234.5

@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 1545.3235999999997 757.9206
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1307.0819999999999 1 1.0} {385.828 FLT5} Morts-Vivants-map.xvi 0 {}
 
 
@@ -232,7 +232,11 @@ line pit
   smooth off
 endline
 
-point 118.0 252.0 label -text "Le collecteur"
+line label -text "Le Collecteur"
+  164.0 75.5
+  164.0 75.5 159.5 212.0 139.0 242.0
+  118.5 272.0 26.0 431.0 21.5 442.5
+endline
 
 line water-flow
   230.0 319.0
@@ -842,6 +846,7 @@ endline
 line wall -subtype pit
   1212.25 477.25
   1212.25 477.25 1223.25 463.5 1223.5 461.0
+  smooth off
 endline
 
 line wall -subtype pit

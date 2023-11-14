@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -131.0 -3635 2607 140.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} flt5_amonts.png 0 {}
 
 
@@ -10,6 +10,7 @@ scrap SP-MVAmonts-1 -projection plan -station-names "" "@Morts-Vivants-amonts" -
 line pit
   976.0 -1623.0
   976.0 -1623.0 986.0 -1575.0 1001.0 -1571.0
+  smooth off
 endline
 
 line wall
@@ -118,6 +119,7 @@ line wall
   920.0 -2078.0 922.0 -2090.0 924.0 -2112.0
   926.0 -2134.0 929.0 -2155.0 932.0 -2163.0
   935.0 -2171.0 946.0 -2188.0 947.0 -2195.0
+  smooth off
 endline
 
 point 821.0 -1478.0 label -text "C4"
@@ -134,6 +136,7 @@ line wall -subtype unsurveyed
   715.0 -2078.0 741.0 -2136.0 758.0 -2136.0
   775.0 -2136.0 790.0 -2143.0 806.0 -2130.0
   822.0 -2117.0 823.0 -2107.0 822.0 -2099.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -154,6 +157,7 @@ line wall
   798.0 -1974.0 801.0 -1997.0 801.0 -2012.0
   801.0 -2027.0 800.0 -2038.0 800.0 -2054.0
   800.0 -2070.0 802.0 -2090.0 802.0 -2097.0
+  smooth off
 endline
 
 line wall
@@ -231,16 +235,19 @@ endline
 line pit
   978.0 -2131.0
   978.0 -2131.0 938.0 -2119.0 927.0 -2171.0
+  smooth off
 endline
 
 line pit
   976.0 -1955.0
   976.0 -1955.0 939.0 -1953.0 931.0 -1949.0
+  smooth off
 endline
 
 line pit
   936.0 -1711.0
   936.0 -1711.0 902.0 -1688.0 900.0 -1665.0
+  smooth off
 endline
 
 point 895.0 -1906.0 water-flow -orientation 179.5
@@ -275,6 +282,7 @@ line wall -subtype pit
   995.0 -1509.0 972.0 -1487.0 953.0 -1500.0
   934.0 -1513.0 912.0 -1517.0 914.0 -1542.0
   916.0 -1567.0 922.0 -1581.0 924.0 -1588.0
+  smooth off
 endline
 
 point 938.0 -1979.0 station -name A

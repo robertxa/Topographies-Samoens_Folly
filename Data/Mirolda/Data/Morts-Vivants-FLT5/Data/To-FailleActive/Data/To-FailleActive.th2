@@ -60,6 +60,7 @@ line water-flow
   1491.5 -498.5 1462.5 -498.0 1444.0 -501.5
   1425.5 -505.0 1406.5 -511.0 1395.0 -512.5
   1383.5 -514.0 1337.0 -516.5 1331.5 -517.0
+  smooth off
 endline
 
 point 1753.5 -545.5 label -text "R3"
@@ -67,6 +68,7 @@ point 1753.5 -545.5 label -text "R3"
 line pit
   1812.0 -455.5
   1812.0 -455.5 1769.5 -445.0 1748.0 -451.5
+  smooth off
 endline
 
 line wall
@@ -85,11 +87,11 @@ line wall
   smooth off
 endline
 
-point 1802.0 -438.5 station -name 13
+point 1803.0 -438.5 station -name 13
 
-point 1780.5 -445.0 station -name 14
+point 1789.0 -461.0 station -name 14
 
-point 1810.0 -469.5 station -name 15
+point 1754.5 -479.5 station -name 15
 
 point 1699.5 -483.5 station -name 16
 
