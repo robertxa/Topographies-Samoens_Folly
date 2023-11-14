@@ -99,7 +99,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 100 nw
+  map-header 40 95 nw
 
   # arrière plan de la manchette
   map-header-bg off
@@ -111,7 +111,7 @@ layout my_layout
   legend-width 21 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif cu Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -146,7 +146,7 @@ layout my_layout
 			\cavename={Gouffre des Morts-Vivants - FLT5} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={FLT (1974), Collectif Mirolda (2023)}
+		\newtoks\club \club={FLT (1974), URSUS (1986), Collectif Mirolda (2023)}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -214,7 +214,7 @@ layout layout-coupe
   legend-width 21 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -249,7 +249,7 @@ layout layout-coupe
 			\cavename={Gouffre des Morts-Vivants - FLT5} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={FLT (1974), Collectif Mirolda (2023)}
+		\newtoks\club \club={FLT (1974), URSUS (1986), Collectif Mirolda (2023)}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
