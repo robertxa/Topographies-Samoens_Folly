@@ -82,7 +82,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		# D'après Spéléalpes N°18 p59, le méandre du Grany partirait du sommet du P50. Oui, mais lequel ?
 		equate 0@Grany.Grany 15@Morts-Vivants.Morts-Vivants	# Est-ce OK ? A priori, c'est au sommet du P40, mais est-ce sûr ?
 		#equate 0@Grany.Grany 16@Morts-Vivants.Morts-Vivants	# Est-ce OK ? A la base du P40, mais est-ce sûr ?
-		join SP-Grany-01@Grany SP-FLT-3@Morts-Vivants
+		#join SP-Grany-01@Grany SP-FLT-3@Morts-Vivants
 
 	# Import des maps
 	input Morts-Vivants-maps.th
