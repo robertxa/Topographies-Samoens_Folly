@@ -4,18 +4,18 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Grany -title "Gouffre des Grany - FLT5"
+survey Grany -title "réseau du Grany - FLT5"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/Grany.th
 	
 	# Import du dessin en plan
-	#input Data/Grany.th2
+	input Data/Grany.th2
 
 	# Import du dessin en coupe
 	#input Data/Grany-coupe.th2
 
 	# Import des maps
-	#input Grany-maps.th
+	input Grany-maps.th
  
  endsurvey
  
