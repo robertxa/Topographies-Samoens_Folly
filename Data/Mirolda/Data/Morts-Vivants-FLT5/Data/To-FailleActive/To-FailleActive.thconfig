@@ -354,7 +354,7 @@ layout atlas_layout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/To-FailleActive-map.xvi
+#export map -fmt xvi -layout xviexport -o Data/To-FailleActive-map.xvi
 export map -proj extended -layout xviexport -fmt xvi -o Data/To-FailleActive-coupe.xvi
 
 # Selection des Maps à exporter

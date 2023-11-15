@@ -114,7 +114,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 0 nw
+  map-header 5 20 nw
 
   # arrière plan de la manchette
   map-header-bg off
@@ -125,11 +125,11 @@ layout my_layout
   legend off
 
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 17 cm
+  legend-width 24 cm
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -142,7 +142,7 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
+  #debug station-names
   symbol-hide line survey
 
   layers on
@@ -161,7 +161,7 @@ layout my_layout
 			\cavename={Gouffre Mirolda - Puits Belge} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022}
+		\newtoks\club \club={URSUS, Collectif Mirolda (2023)}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -208,7 +208,7 @@ layout layout-coupe
   doc-title "CD11 coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 0 nw
+  map-header 0 50 nw
 
   # arrière plan de la manchette
   map-header-bg off
@@ -217,10 +217,10 @@ layout layout-coupe
   legend off
 
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 17 cm
+  legend-width 24 cm
 
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
   statistics explo-length off
@@ -246,7 +246,7 @@ layout layout-coupe
 			\cavename={Gouffre Mirolda - Puits Belge} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022}
+		\newtoks\club \club={URSUS, Collectif Mirolda (2023)}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 

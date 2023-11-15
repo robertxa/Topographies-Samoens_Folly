@@ -271,7 +271,7 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/PuitsSec-map.xvi
+#export map -fmt xvi -layout xviexport -o Data/PuitsSec-map.xvi
 export map -proj extended -layout xviexport -fmt xvi -o Data/PuitsSec-coupe.xvi
 
 # Selection des Maps à exporter

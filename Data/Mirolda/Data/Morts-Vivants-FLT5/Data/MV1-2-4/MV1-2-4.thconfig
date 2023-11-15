@@ -355,7 +355,7 @@ layout atlas_layout
 
 # Export des xvi pour le dessin si besoin
 #export map -fmt xvi -layout xviexport -o Data/MV1-2-4-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/MV1-2-4-coupe.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/MV1-2-4-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-MV1-2-4-plan@MV1-2-4

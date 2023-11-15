@@ -355,7 +355,7 @@ layout atlas_layout
 
 # Export des xvi pour le dessin si besoin
 #export map -fmt xvi -layout xviexport -o Data/Sapin-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Sapin-coupe.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Sapin-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Sapin-plan@Sapin
