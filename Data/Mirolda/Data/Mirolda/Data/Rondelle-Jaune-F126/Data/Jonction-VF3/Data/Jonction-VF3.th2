@@ -252,7 +252,14 @@ line pit
   smooth off
 endline
 
-point 909.25 486.0 height -value [-30 m]
+line floor-meander
+  819.25 471.25
+  819.25 471.25 831.5 480.5 837.75 482.5
+  844.0 484.5 863.25 490.0 863.25 490.0
+  smooth off
+endline
+
+point 858.75 523.25 height -value [-40 m]
 
 line wall
   1206.0 323.75
@@ -305,12 +312,27 @@ endline
 line pit
   869.75 498.0
   869.75 498.0 862.0 488.75 872.25 489.75
+  smooth off
+endline
+
+line wall -subtype pit
+  928.5 519.25
+  928.5 519.25 919.75 521.0 916.0 519.0
+  912.25 517.0 898.0 511.25 898.0 511.25
+  smooth off
+endline
+
+line wall -subtype pit
+  899.0 505.0
+  899.0 505.0 912.5 508.0 916.5 509.5
+  920.5 511.0 927.0 511.75 927.0 511.75
+  smooth off
 endline
 
 line wall -subtype pit
   872.25 489.75
   872.25 489.75 884.0 491.0 887.75 494.75
-  891.5 498.5 898.0 504.25 899.75 505.0
+  891.5 498.5 897.25 504.25 899.0 505.0
   smooth off
 endline
 
@@ -336,6 +358,7 @@ line wall -subtype pit
   898.0 511.25
   898.0 511.25 889.0 506.0 885.25 502.75
   881.5 499.5 875.5 496.75 869.75 495.25
+  smooth off
 endline
 
 line wall

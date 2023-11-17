@@ -50,7 +50,6 @@ survey VF3 -title "Gouffre VF3 - Réseau Lucien Bouclier"
 
 	input Data/Sado-Bozzo/Sado-Bozzo-tot.th	# Réseau Sado-Bozzo. 
 		equate  s14_7@Sado-Bozzo.Sado-Bozzo s14_7@Hongroise.Hongroise
-		join SP-Sado-Bozzo-4@Sado-Bozzo SP-Hongroise-1@Hongroise
 		join SC-Sado-Bozzo-3@Sado-Bozzo SC-Hongroise-2@Hongroise
 		
 	input Data/Combattant/Combattant-tot.th	# Réseau du Combattant à partir Sado Bozzo
@@ -69,6 +68,7 @@ survey VF3 -title "Gouffre VF3 - Réseau Lucien Bouclier"
 	input Data/Hongroise/Hongroise-tot.th	# Galerie Hongroise
 		equate s41_0@Hongroise.Hongroise s41_0@DDiscovery.DDiscovery
 		join SP-Hongroise-2@Hongroise SP-Discovery-1@DDiscovery
+		join SP-Combattant-2@Combattant SP-Hongroise-1@Hongroise
 		join SC-Hongroise-1@Hongroise SC-Discovery-1@DDiscovery
 
 	input Data/Hongroise2/Hongroise2-tot.th	# Jonction Hongroise22 - Hongroise

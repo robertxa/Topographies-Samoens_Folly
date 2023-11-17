@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 1387.8432 2175.2452
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {236.22000000000003 1 1.0} {1858.27 VF3} VF3-coupe.xvi 0 {}
 
 
@@ -44,9 +44,9 @@ point 545.5 1207.0 height -value [-5 m]
 
 point 525.5 1259.5 height -value [-9 m]
 
-point 467.5 1454.0 height -value [-40 m]
+point 467.5 1454.0 height -value [-50 m]
 
-point 217.5 1734.5 height -value [-30 m]
+point 217.5 1734.5 height -value [-40 m]
 
 point 236.75 1865.0 altitude -align top-right
 
@@ -97,7 +97,7 @@ point 814.5 561.5 height -value [-8 m]
 
 point 782.5 614.5 height -value [-8 m]
 
-point 765.5 788.0 height -value [-40 m]
+point 765.5 788.0 height -value [-33 m]
 
 point 676.5 966.0 height -value [-10 m]
 
@@ -352,7 +352,7 @@ line wall
   smooth off
 endline
 
-point 192.75 1959.0 label -text "<bf>VF3" -scale xl
+point 192.75 2009.0 label -text "<center><bf>VF3<br>G. du Grand Méchant Loup" -scale xl
 
 point 208.0 1881.75 entrance -orientation 137.8
 

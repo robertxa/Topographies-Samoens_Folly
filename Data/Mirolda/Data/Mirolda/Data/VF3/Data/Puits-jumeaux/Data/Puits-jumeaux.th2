@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 1545.3236 1072.8824
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {866.14 1 1.0} {157.48400000000004 s38_9} Puits-jumeaux-map.xvi 0 {}
 
 
@@ -77,7 +77,7 @@ endline
 
 point 500.75 407.75 height -value [-4 m]
 
-point 748.75 535.0 height -value [-8 m]
+point 748.75 535.0 height -value [-7 m]
 
 line pit
   532.25 397.25
@@ -168,7 +168,7 @@ line wall -subtype pit
   smooth off
 endline
 
-point 1040.75 685.25 height -value [-10 m]
+point 1040.75 685.25 height -value [-8 m]
 
 line pit
   1018.0 661.5

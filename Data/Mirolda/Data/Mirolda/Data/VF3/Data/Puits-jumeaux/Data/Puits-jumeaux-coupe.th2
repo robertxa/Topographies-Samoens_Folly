@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 2253.9854 1939.0246
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {1790.21 1 1.0} {1259.841 s38_9} Puits-jumeaux-coupe.xvi 0 {}
 
 
@@ -48,7 +48,7 @@ line rope
   491.75 258.5
 endline
 
-point 836.5 772.5 label -text "les Puits Jumeaux"
+point 835.5 744.5 label -text "les Puits Jumeaux"
 
 line rope
   648.25 775.0
@@ -72,9 +72,9 @@ endline
 line wall -subtype debris
   674.75 838.75
   674.75 838.75 724.0 835.5 736.0 834.0
-  748.0 832.5 772.25 829.5 779.75 830.25
-  787.25 831.0 799.0 830.75 808.5 830.5
-  818.0 830.25 829.25 828.75 829.25 828.75
+  748.0 832.5 756.5 815.25 764.0 816.0
+  771.5 816.75 786.5 806.25 796.0 806.0
+  805.5 805.75 830.0 792.0 830.0 792.0
   smooth off
 endline
 
@@ -181,9 +181,9 @@ endscrap
 scrap SC-Puits-Jumeaux-2 -projection extended -station-names "" "@Puits-Jumeaux" -author 1998 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2253.9854 -128.0 0.0 0.0 60.50242916 0.0 m]
 
 line wall -subtype debris
-  829.25 828.75
-  829.25 828.75 873.0 826.75 885.5 825.0
-  898.0 823.25 917.0 821.0 917.0 821.0
+  830.0 792.0
+  830.0 792.0 877.5 807.75 890.0 806.0
+  902.5 804.25 917.0 821.0 917.0 821.0
   smooth off
 endline
 
@@ -232,7 +232,7 @@ point 978.75 1083.75 height -value [-14 m]
 
 point 941.0 1019.75 height -value [-21 m]
 
-point 944.5 878.25 height -value [-10 m]
+point 944.5 878.25 height -value [-8 m]
 
 line wall
   1023.25 1304.5
@@ -356,7 +356,7 @@ line rope
   1208.0 685.25
 endline
 
-point 1178.5 718.0 height -value [-8 m]
+point 1178.5 718.0 height -value [-7 m]
 
 area u:galerie
   l110-1237-713

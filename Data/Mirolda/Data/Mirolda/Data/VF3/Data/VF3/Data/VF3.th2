@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 698.75 757.9216
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {551.9749999999999 1 1.0} {447.763 VF3} VF3-map.xvi 0 {}
 
 
@@ -84,11 +84,11 @@ line wall
   smooth off
 endline
 
-point 433.0 368.75 height -value [-40 m]
+point 433.0 368.75 height -value [-50 m]
 
-point 497.5 471.25 height -value [-30 m]
+point 497.5 471.25 height -value [-40 m]
 
-point 566.75 503.5 label -text "<bf>VF3" -scale xl
+point 567.75 529.5 label -text "<center><bf>VF3<br>G. du Grand Méchant Loup" -scale xl
 
 point 569.5 465.0 entrance -orientation 235.3
 
@@ -321,7 +321,7 @@ line wall -subtype pit
   smooth off
 endline
 
-point 276.5 145.0 height -value [-40 m]
+point 276.5 145.0 height -value [-33 m]
 
 point 353.75 103.25 height -value [-8 m]
 

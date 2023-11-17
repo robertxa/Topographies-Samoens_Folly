@@ -132,6 +132,11 @@ layout my_layout
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
+  #  color map-fg scraps
+  #  color-legend off
+	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
   #symbol-hide point station        
   #debug scrap-names
   #debug station-names
@@ -201,9 +206,9 @@ layout layout-coupe
   #map-header 0 50 nw
   map-header 100 80 ne
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   # Légende. Voir layout ci-dessus.
-  legend on
+  legend off
   # Par defaut, la legende est de 14 cm de largeur
   legend-width 21 cm
   legend-columns 3
@@ -217,6 +222,11 @@ layout layout-coupe
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
+  #  color map-fg scraps
+  #  color-legend off
+	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
   #symbol-hide point station        
   #debug scrap-names
   #debug station-names

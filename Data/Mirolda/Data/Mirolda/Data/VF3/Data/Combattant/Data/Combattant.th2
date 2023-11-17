@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 3513.8286000000003 1781.5442
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {2519.69 1 1.0} {314.962 s14_7} Combattant-map.xvi 0 {}
 
 
@@ -972,6 +972,79 @@ point 2519.69 314.962 station -name s14_7
 point 2509.4 364.62199999999996 station -name s48_1
 
 point 2541.8 378.0419999999999 station -name s48_2
+
+point 2593.0 370.5 height -value [+12 m]
+
+line pit
+  2567.0 380.0
+  2567.0 380.0 2524.5 403.5 2506.0 401.0
+  smooth off
+endline
+
+line wall
+  2538.5 316.0
+  2538.5 316.0 2520.0 340.0 2520.0 351.0
+  2520.0 362.0 2541.5 364.0 2547.5 368.5
+  2553.5 373.0 2555.5 383.5 2552.0 391.0
+  2548.5 398.5 2545.0 413.0 2545.0 413.0
+  smooth off
+endline
+
+line pit -reverse on
+  2467.0 309.5
+  2467.0 309.5 2487.0 305.5 2486.0 293.0
+  smooth off
+endline
+
+line pit
+  2465.5 279.0
+  2465.5 279.0 2461.5 300.0 2446.0 298.5
+  smooth off
+endline
+
+point 2427.0 256.0 narrow-end
+
+line wall -subtype unsurveyed
+  2443.0 273.0
+  2443.0 273.0 2452.0 286.0 2461.0 291.0
+  2470.0 296.0 2471.5 296.5 2477.5 302.0
+  2483.5 307.5 2497.5 317.5 2497.5 317.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  2496.5 327.0
+  2496.5 327.0 2497.0 328.0 2490.0 322.0
+  2483.0 316.0 2483.5 314.0 2475.5 308.0
+  2467.5 302.0 2456.0 299.0 2450.0 291.5
+  2444.0 284.0 2437.5 276.0 2437.5 276.0
+  smooth off
+endline
+
+line wall
+  2520.0 411.5
+  2534.0 372.5 2511.5 397.5 2507.5 379.5
+  2503.5 361.5 2491.5 346.0 2496.5 327.0
+  smooth off
+endline
+
+line wall
+  2497.5 317.5
+  2499.63 309.39 2509.0 313.0 2523.0 310.0
+  smooth off
+endline
+
+line pit
+  2523.0 310.0
+  2523.0 310.0 2525.0 311.5 2528.5 309.5
+endline
+
+line wall
+  2528.5 309.5
+  2530.0 308.5 2535.5 306.0 2535.5 306.0
+  smooth off
+  altitude .
+endline
 
 point 2526.38 425.49199999999996 station -name s48_3
 
