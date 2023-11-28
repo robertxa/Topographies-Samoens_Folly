@@ -18,9 +18,12 @@ fix       CB3       943320     2131140     2170
 fix       CB4       943500     2131960     2140
 fix       CB5       943420     2131010     2150
 fix       CB6       943390     2131050     2155
-fix       CB7       943480     2131100     2190
+#fix       CB7       943480     2131100     2190
 fix       CB8       943440     2131260     2200
 fix       CB9       943390     2131220     2190
+
+cs UTM32
+fix       CB7       328297  5106735     2177    # GPS 2023 + Lidar IGN
 
 station   CB1       "CB1" entrance continuation explored 24m
 station   CB2       "CB2" entrance continuation explored 35m

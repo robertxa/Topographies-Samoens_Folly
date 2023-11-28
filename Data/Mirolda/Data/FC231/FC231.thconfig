@@ -62,7 +62,8 @@ layout my_layout
 	copy langue-fr
 	
   # Définition du système de projection du plan
-  cs UTM32
+  #cs UTM32
+  cs EPSG:2154
   
   # La ligne base-scale specifie l'échelle auquel nous avons dessiné nos croquis. 
   # Par defaut, Therion pense que c'est une échelle 1:200. Si on a utilisé une autre échelle, 
@@ -306,3 +307,4 @@ select MC-FC231-coupe@FC231
 # Export des fichiers kml
  export map -proj plan -fmt kml -o Outputs/FC231.kml -layout my_layout
  export model -fmt kml -o Outputs/FC231-model.kml -enable all
+ export cave-list -location on -o Outputs/FC231.html

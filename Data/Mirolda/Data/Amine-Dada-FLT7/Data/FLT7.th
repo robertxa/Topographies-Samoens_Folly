@@ -21,11 +21,12 @@ survey FLT7 -title "Gouffre Amine Dada - FLT7"
         explo-team "Club/Ursus"
 
     cs long-lat
-    fix FLT7 6.783152 46.081747	1929  #ALT IGN
-    station FLT7 "FLT7 - L'Amine Dada" entrance air-draught continuation #explored ????m
+    #fix FLT7 6.783152 46.081747	1929  #ALT IGN
+    fix FLT7 6.78290 46.083990	1940  # GPS 2023 + Lidar IGN
+    station FLT7 "FLT7 - L'Amin Dada" entrance air-draught continuation explored 296m
     
-    fix FLT7b 6.783152 46.081747	1929  #ALT IGN
-    station FLT7b "FLT7b" entrance air-draught continuation #explored ????m
+    #fix FLT7b 6.783152 46.081747	1929  #ALT IGN
+    #station FLT7b "FLT7b" entrance air-draught continuation #explored ????m
 
   
 endcenterline

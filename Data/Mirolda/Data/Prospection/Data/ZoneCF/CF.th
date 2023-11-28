@@ -16,9 +16,13 @@ fix       CF1       944240     2130980     2260
 #fix       CF2       944120     2130200     2100
 fix       CF3       944140     2130630     2200
 fix       CF4       944230     2130720     2240
-fix       CF5       944490     2130940     2340
-fix       CF6       944530     2130940     2345
+#fix       CF5       944490     2130940     2340
+#fix       CF6       944530     2130940     2345
 #fix       CF6       944490     2130980     2350 # Data Colliard - Spelealpes 08
+
+cs UTM32
+fix       CF5       329424  5106499     2328    # GPS 2023 + Lidar IGN
+fix       CF6       329457  5106501     2331    # GPS 2023 + Lidar IGN
 
 station   CF1       "CF1" entrance #air-draught continuation explored 28m
 #station   CF2       "CF2" entrance air-draught continuation explored 28m

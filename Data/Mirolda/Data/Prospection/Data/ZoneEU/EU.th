@@ -10,11 +10,14 @@ survey trousEU -title "trous EU"
 
  centerline
 #cs lat-long
-cs EPSG:27572 # LII Etendu
-
+cs EPSG:27572 # LII Etende
 fix       EU834       943850     2130350     1985
 
-station   EU834       "EU834" entrance air-draught continuation explored 40m
+cs UTM32
+fix       EU881       328619  5106476     2176    # GPS 2023 + Lidar IGN
+
+station   EU834       "EU834" entrance air-draught #continuation explored 40m
+station   EU881     "EU881" entrance air-draught continuation explored 40m
 
 endcenterline
 

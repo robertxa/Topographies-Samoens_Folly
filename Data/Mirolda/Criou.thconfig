@@ -83,7 +83,6 @@ layout my_layout
   # Voici une ligne pour specifier qu'il faut imprimer une grille
   # au dessous de la topo
   grid bottom
-
   # Une ligne pour specifier que la grille est 1000x1000x1000 metres
   # (Trois dimensions, oui, ça sert pour la coupe aussi)
   grid-size 250 250 250 m  
@@ -92,12 +91,9 @@ layout my_layout
   # la topo est transparente (on peut voir les galeries sousjacentes)
   # C'est on par defaut, donc, pas vraiment besoin de specifier
   transparency on
-  
   color map-fg [100 100 80]
-
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
-  
   
   surface bottom
   surface-opacity 70
@@ -383,3 +379,4 @@ export continuation-list -o Outputs/ContinuationsCriou-2022.html
 export continuation-list -o Outputs/ContinuationsCriou-2022.kml
 export survey-list -location on -o Outputs/SurveysCriou2022.html
 export cave-list -location on -o Outputs/CavesCriou2022.html
+export cave-list -location on -o Outputs/Caves-Criou.txt

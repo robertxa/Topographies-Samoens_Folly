@@ -178,7 +178,7 @@ layout layout-coupe
   scale-bar 150 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
-  grid-size 200 200 50 m  
+  grid-size 200 200 200 m  
   grid bottom
   grid-coords border
   
@@ -202,7 +202,8 @@ layout layout-coupe
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 100 100 ne
+  #map-header 100 100 ne
+  map-header 100 27 se
 
   # arrière plan de la manchette
   map-header-bg on

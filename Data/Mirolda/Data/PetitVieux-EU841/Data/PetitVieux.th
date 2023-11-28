@@ -13,11 +13,13 @@ survey PetitVieux -title "Gouffre du Petit Vieux - EU841"
         team "Xavier Robert"
 
     #cs ???? (Lambert, mais lequel?)
-    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    #cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+    ######fix EU841	944.1	130.36	2080
+    #fix EU841	944100	2130360	2080
 
-    ##fix EU841	944.1	130.36	2080
-    fix EU841	944100	2130360	2080
-    station EU841 "G. du Petit Vieux (EU841)" entrance air-draught
+    fix EU841       328939  5105920     2093    # GPS 2023 + Lidar IGN
+
+    station EU841 "G. du Petit Vieux (EU841)" entrance air-draught continuation explored 80m
   
 endcenterline
 

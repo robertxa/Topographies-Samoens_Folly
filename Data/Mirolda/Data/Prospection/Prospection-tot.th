@@ -15,16 +15,17 @@ survey prospectionCriou -title "Prospection Criou"
 	input Data/ZoneCF/CF-tot.th
 	input Data/ZoneE/E-tot.th
 	input Data/ZoneEU/EU-tot.th
+	input Data/ZoneF/F-tot.th
+	input Data/ZoneFC/FC-tot.th
+	input Data/ZoneFLT/FLT-tot.th
+	input Data/ZoneFU/FU-tot.th
 	#input Data/ZoneGU/GU-tot.th	# Problème de positionnement !!!!
-	
-	# Import du dessin en plan
-	#input Data/F40.th2
-
-	# Import du dessin en coupe
-	#input Data/F40-coupe.th2
+	input Data/ZoneSCF/SCF-tot.th
+	input Data/ZoneU/U-tot.th
+	input Data/ZoneVF/VF-tot.th
 
 	# Import des maps
-	#input F40-maps.th
+	#input Prospection-maps.th
  
  endsurvey
  

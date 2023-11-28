@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -27,7 +27,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera 
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-source Lambourdin-tot.th
+source FU231-tot.th
 
 # Add Coordinates
 #input legendes/entrances_coordinates.th
@@ -61,7 +61,8 @@ layout my_layout
 	copy langue-fr
 	
   # Définition du système de projection du plan
-  cs UTM32
+  #cs UTM32
+  cs EPSG:2154
   
   # La ligne base-scale specifie l'échelle auquel nous avons dessiné nos croquis. 
   # Par defaut, Therion pense que c'est une échelle 1:200. Si on a utilisé une autre échelle, 
@@ -105,7 +106,7 @@ layout my_layout
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Lambourdin plan - 1:1000"
+  doc-title "FU231 plan - 1:1000"
 
   # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
   # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
@@ -158,7 +159,7 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Perte du Lambourdin} 
+			\cavename={Perte du FU231} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Collectif Mirolda}
@@ -202,7 +203,7 @@ layout atlas_layout
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "Lambourdin coupe développée - 1:1000"
+  doc-title "FU231 coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
   #map-header 0 0 s
@@ -244,7 +245,7 @@ layout atlas_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Perte du Lambourdin} 
+			\cavename={Perte du FU231} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Collectif Mirolda}
@@ -260,36 +261,36 @@ layout atlas_layout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Lambourdin-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Lambourdin-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/FU231-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/FU231-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Lambourdin-plan-tot
-select MC-Lambourdin-coupe-tot
+select MP-FU231-plan@FU231
+select MC-FU231-coupe@FU231
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ #export map -proj plan -fmt pdf -o Outputs/FU231-plan.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout my_layout -o Outputs/FU231-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Lambourdin-2022.lox
+ #export model -enable all -o Outputs/FU231.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Lambourdin-2022 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/FU231-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Lambourdin-2022.kml -layout my_layout
- export model -fmt kml -o Outputs/Lambourdin-2022-model.kml -enable all
+# export map -proj plan -fmt kml -o Outputs/FU231-2022.kml -layout my_layout
+ #export model -fmt kml -o Outputs/FU231-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseLambourdin-2022.sql
+#export database -fmt sql -o Outputs/databaseFU231.sql
 
-export continuation-list -o Outputs/ContinuationsLambourdin-2022.html
-#export continuation-list -o Outputs/ContinuationsLambourdin-2022.kml
-export survey-list -location on -o Outputs/SurveysLambourdin2022.html
-#export cave-list -location on -o Outputs/CavesLambourdin2022.html
+#export continuation-list -o Outputs/ContinuationsFU231.html
+#export continuation-list -o Outputs/ContinuationsFU231.kml
+#export survey-list -location on -o Outputs/SurveysFU231.html -layout my_layout
+export cave-list -location on -o Outputs/CavesFU231.html -cs EPSG:2154

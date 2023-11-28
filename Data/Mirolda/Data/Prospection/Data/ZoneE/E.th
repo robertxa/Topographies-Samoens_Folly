@@ -11,10 +11,15 @@ survey trousE -title "trous E"
  centerline
 #cs lat-long
 cs EPSG:27572 # LII Etendu
-
 fix       E71       944040     2130380     2112
 
+cs UTM32
+fix E50       327695  5106640     2010    # GPS 2023 + Lidar IGN # Marquage difficile à lire, pas sûr du nom
+fix       E55       329114  5106253     2207    # GPS 2023 + Lidar IGN
+
 station   E71       "E71" entrance continuation explored 80m
+station E50    "E50?"  entrance
+station   E55       "E55" entrance #continuation explored 80m
 
 endcenterline
 

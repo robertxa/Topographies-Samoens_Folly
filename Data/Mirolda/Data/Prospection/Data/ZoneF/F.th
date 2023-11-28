@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousF -title "trous F"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+
+cs UTM32
+fix       F22       328545  5106455     2125    # GPS 2023 + Lidar IGN
+fix       F24       328535  5106431     2113    # GPS 2023 + Lidar IGN
+fix       F51       329381  5106581     2233    # GPS 2023 + Lidar IGN
+fix       F105      329147  5106316     2211    # GPS 2023 + Lidar IGN
+fix       F191      329302  5106513     2306    # GPS 2023 + Lidar IGN
+fix       F203      329475  5106606     2328    # GPS 2023 + Lidar IGN
+
+station   F22       "F22" entrance continuation explored 10m #air-draught #continuation explored 40m
+station   F24     "F40" entrance #air-draught continuation explored 40m
+station   F51     "F51" entrance continuation explored 25m #air-draught continuation explored 40m
+station   F105     "F105" entrance #continuation explored 25m #air-draught continuation explored 40m
+station   F191     "F191" entrance #continuation explored 25m #air-draught continuation explored 40m
+station   F203     "F203" entrance continuation explored 07m #air-draught continuation explored 40m
+
+endcenterline
+
+endsurvey

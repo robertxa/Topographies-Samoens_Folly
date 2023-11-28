@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
-survey Lambourdin -title "Perte du Lambourdin" -entrance Lambourdin
+survey FU231 -title "FU231" -entrance FU231
 
  centerline -extend right
     
@@ -19,16 +19,16 @@ survey Lambourdin -title "Perte du Lambourdin" -entrance Lambourdin
         explo-team "Michel Siméon"
 
     cs long-lat
-    fix Lambourdin 6.77127 46.07852	1541 # Altitude IGN, Coords A revoir
-    station Lambourdin "Perte du Lambourdin" entrance 
+    fix FU231 6.791828 46.090969	2301 # Altitude IGN, Coords A revoir
+    station FU231 "FU231" entrance continuation explored 45m
 
     units length meters
     units compass clino degrees
     data normal from to length compass clino left right up down
     flags approximate
-    Lambourdin   1   8 30   -80  0.3 0.3 0   4
-    1   2   20  230 -45  0.2 0.2 0.3 0.3
-    2   3   3   210 0   0.2 0.2 0.1 0.1
+    #Lambourdin   1   8 30   -80  0.3 0.3 0   4
+    #1   2   20  230 -45  0.2 0.2 0.3 0.3
+    #2   3   3   210 0   0.2 0.2 0.1 0.1
     flags not approximate
   
 endcenterline

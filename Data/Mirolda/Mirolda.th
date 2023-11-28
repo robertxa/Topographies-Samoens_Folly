@@ -7,7 +7,7 @@ encoding  utf-8
 survey SystemMirolda -title "Système du Mirolda - Lucien Bouclier"
 # Pour importer les différentes données de différents fichiers topos : 
 
-	#input Data/125-Pic-F40/F40-tot.th	# --> Coordonnées à trouver
+	input Data/125-Pic-F40/F40-tot.th
 	input Data/Amine-Dada-FLT7/FLT7-tot.th
 	
 	input Data/Babet-GU841/Babet-tot.th
@@ -27,6 +27,8 @@ survey SystemMirolda -title "Système du Mirolda - Lucien Bouclier"
 	#input Data/EU841/EU841-tot.th
 
 	input Data/Frigo-EU836/Frigo-tot.th
+	input Data/FU231/FU231-tot.th
+	
 	input Data/Innomable-EU831/Innomable-tot.th
 	
 	input Data/Lambourdin/Lambourdin-tot.th
