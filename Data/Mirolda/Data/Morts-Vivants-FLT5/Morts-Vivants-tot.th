@@ -52,30 +52,39 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		join SP-Coeur-Toyota-1@Coeur-Toyota SP-Fleurs-1@MV1-2-4
 		equate Toyota@Coeur-Toyota.Coeur-Toyota Toyota@MV1-2-4.MV1-2-4
 		join SP-Coeur-Toyota-1@Coeur-Toyota SP-Fleurs-2@MV1-2-4
+		join SC-Coeur-1@Coeur-Toyota SC-Fleurs-1@MV1-2-4 -count 2
 	input Data/RoiDeCoeurAmont/RoiDeCoeurAmont-tot.th
 		#equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Station12@MV1-2-4.MV1-2-4
 		equate 0@RoiDeCoeurAmont.RoiDeCoeurAmont Coeur@MV1-2-4.MV1-2-4
 		equate 8@RoiDeCoeurAmont.RoiDeCoeurAmont 59@Coeur-Toyota.Coeur-Toyota
 		join SP-Coeur-Toyota-1@Coeur-Toyota SP-Coeur-Amont-1@RoiDeCoeurAmont
+		
 
 	input Data/JambeDeBois/JambeDeBois-tot.th
 		equate PSI@JambeDeBois.JambeDeBois PSI@MV1-2-4.MV1-2-4
 		equate PHI@JambeDeBois.JambeDeBois PHI@MV1-2-4.MV1-2-4
 		join SP-JambeBois-1@JambeDeBois SP-Fruitiere-1@MV1-2-4
+		join SC-JambeBois-1@JambeDeBois SC-Fruitiere-1@MV1-2-4
+		join SC-JambeBois-1@JambeDeBois SC-Fruitiere-3@MV1-2-4
 	input Data/FailleCascade/FailleCascade-tot.th
 		equate Fruitiere@FailleCascade.FailleCascade Fruitiere@MV1-2-4.MV1-2-4
 		join SP-Cendrillon-1@FailleCascade SP-Fruitiere-1@MV1-2-4
+		join SC-Cendrillon-1@FailleCascade SC-Fruitiere-2@MV1-2-4
 	input Data/Cendrillon/Cendrillon-tot.th
 		equate 0@Cendrillon.Cendrillon 60@FailleCascade.FailleCascade
 		join SP-Cendrillon-2@FailleCascade SP-Cendrillon-3@Cendrillon
+		join SC-Cendrillon-3@Cendrillon SC-Cendrillon-2@FailleCascade
 	input Data/Sapin/Sapin-tot.th
-		equate Sapins@Sapin.Sapin Sapins@MV1-2-4.MV1-2-4
+		equate 29@Sapin.Sapin Sapins@MV1-2-4.MV1-2-4
 		#join SP-Sapin-1@Sapin SP-Urgo-2@MV1-2-4
+		join SC-Sapin-1@Sapin	SC-Urgo-1@MV1-2-4
 	input Data/To-FailleActive/To-FailleActive-tot.th
-		equate T0@To-FailleActive.To-FailleActive T0@MV1-2-4.MV1-2-4	
+		equate T0@To-FailleActive.To-FailleActive T0@MV1-2-4.MV1-2-4
+		join SC-Fruitiere-1@MV1-2-4 SC-FailleActive-1@To-FailleActive	
 	input Data/Theta-FailleFossile/Theta-FailleFossile-tot.th
 		equate THETA@Theta-FailleFossile.Theta-FailleFossile THETA@MV1-2-4.MV1-2-4
 		join SP-FailleFossile-1@Theta-FailleFossile SP-FailleActive-1@To-FailleActive
+		join SC-Fruitiere-1@MV1-2-4 SC-FailleFossile-1@Theta-FailleFossile
 	
 	# ---> Question, GRANY OK ???
 	input Data/Grany/Grany-tot.th

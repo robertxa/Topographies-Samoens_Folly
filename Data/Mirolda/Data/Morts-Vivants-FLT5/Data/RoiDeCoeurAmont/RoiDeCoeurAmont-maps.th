@@ -4,21 +4,11 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-RoiDeCoeurAmont-plan -title "Gouffre des RoiDeCoeurAmont - FLT5"
+map MP-RoiDeCoeurAmont-plan -title "Roi De Coeur Amont - FLT5"
 	SP-Coeur-Amont-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
 endmap
 
-#map MC-RoiDeCoeurAmont-coupe -title "Gouffre des RoiDeCoeurAmont - FLT5"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-RoiDeCoeurAmont-coupe -title "Roi De Coeur Amont - FLT5"
+	SC-Coeur-Amont-1
+endmap
    

@@ -42,9 +42,24 @@ map MP-Morts-Vivants-plan -title "Gouffre des Morts-Vivants - FLT5"
     
 endmap
 
-#map MC-Morts-Vivants-coupe -title "Gouffre des Morts-Vivants - FLT5"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Morts-Vivants-coupe -title "Gouffre des Morts-Vivants - FLT5"
+
+    MC-Sapin-coupe@Sapin
+    break
+	MC-MV1-2-4-coupe@MV1-2-4
+    break
+    MC-Coeur-Toyota-coupe@Coeur-Toyota
+    break
+    MC-RoiDeCoeurAmont-coupe@RoiDeCoeurAmont
+	break
+    MC-JambeDeBois-coupe@JambeDeBois
+    break
+    MC-FailleCascade-coupe@FailleCascade
+    break
+    MC-Cendrillon-coupe@Cendrillon
+    break
+	MC-To-FailleActive-coupe@To-FailleActive
+    break
+    MC-Theta-FailleFossile-coupe@Theta-FailleFossile
+endmap
    

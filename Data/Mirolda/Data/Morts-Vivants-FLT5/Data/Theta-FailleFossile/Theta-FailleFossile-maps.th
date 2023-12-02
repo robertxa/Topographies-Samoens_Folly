@@ -10,9 +10,9 @@ map MP-Theta-FailleFossile-plan -title "FLT5 - Faille Fossile terminale"
     SP-FailleFossile-1
 endmap
 
-#map MC-Theta-FailleFossile-coupe -title "FLT5 - Faille Fossile terminale"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Theta-FailleFossile-coupe -title "FLT5 - Faille Fossile terminale"
+	SC-FailleFossile-1
+	break
+	SC-FailleFossile-2
+endmap
    

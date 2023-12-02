@@ -20,9 +20,23 @@ map MP-MV1-2-4-plan -title "MV1-2-4 - FLT5"
 	SP-Fruitiere-1
 endmap
 
-#map MC-MV1-2-4-coupe -title "Gouffre des MV1-2-4 - FLT5"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Fleurs
+	SC-Fleurs-1
+	break
+	SC-Fruitiere-3
+	break
+	SC-Fruitiere-2
+	break
+	SC-Fruitiere-1
+endmap
+
+map MC-Urgo
+	SC-Urgo-1
+endmap
+
+map MC-MV1-2-4-coupe -title "MV1-2-4 - FLT5"
+	MC-Fleurs
+	break
+	MC-Urgo
+endmap
    

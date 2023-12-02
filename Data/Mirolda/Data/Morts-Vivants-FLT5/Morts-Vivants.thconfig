@@ -202,8 +202,9 @@ layout layout-coupe
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 100 100 ne
-  map-header 100 27 se
+  ####map-header 100 100 ne
+  #map-header 100 27 se # OK pour rapport !
+  map-header 0 0 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -231,8 +232,8 @@ layout layout-coupe
 	symbol-hide point rope
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
