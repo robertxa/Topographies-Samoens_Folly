@@ -5,10 +5,6 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Sagesse-plan -title "Méandre de la Sagesse - FLT5"
-#	SP-B3-1
-#	break
-#	SP-B3-2
-#	break
 	SP-Dada-1
 	break
 	SP-Shunt-1
@@ -16,9 +12,11 @@ map MP-Sagesse-plan -title "Méandre de la Sagesse - FLT5"
     SP-Sagesse-1
 endmap
 
-#map MC-Sagesse-coupe -title "Gouffre des Sagesse - FLT5"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Sagesse-coupe -title "Méandre de la Sagesse - FLT5"
+	SC-Sagesse-1
+	break
+	SC-Dada-1
+	break
+	SC-Dada-2
+endmap
    
