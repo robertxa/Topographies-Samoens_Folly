@@ -203,8 +203,8 @@ layout layout-coupe
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
   ####map-header 100 100 ne
-  #map-header 100 27 se # OK pour rapport !
-  map-header 0 0 nw
+  map-header 100 27 se # OK pour rapport !
+  #map-header 0 0 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -363,7 +363,7 @@ select MC-Morts-Vivants-coupe@Morts-Vivants
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Morts-Vivants-plan.pdf -layout my_layout
+# export map -proj plan -fmt pdf -o Outputs/Morts-Vivants-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Morts-Vivants-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
@@ -375,8 +375,8 @@ select MC-Morts-Vivants-coupe@Morts-Vivants
  export map -proj plan -fmt esri -o Outputs/Morts-Vivants -layout my_layout
 
 # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/Morts-Vivants.kml -layout layout-kml
- export model -fmt kml -o Outputs/Morts-Vivants-model.kml -enable all
+# export map -proj plan -fmt kml -o Outputs/Morts-Vivants.kml -layout layout-kml
+# export model -fmt kml -o Outputs/Morts-Vivants-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
@@ -386,5 +386,5 @@ select MC-Morts-Vivants-coupe@Morts-Vivants
 
 #export continuation-list -o Outputs/ContinuationsMorts-Vivants.html
 #export continuation-list -o Outputs/ContinuationsMorts-Vivants.kml
-export survey-list -location on -o Outputs/SurveysMorts-Vivants.html
+#export survey-list -location on -o Outputs/SurveysMorts-Vivants.html
 #export cave-list -location on -o Outputs/CavesMorts-Vivants.html

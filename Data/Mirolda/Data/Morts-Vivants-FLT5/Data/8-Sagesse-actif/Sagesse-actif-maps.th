@@ -6,19 +6,13 @@ encoding  utf-8
 
 map MP-Sagesse-actif-plan -title "Gouffre des Sagesse-actif - FLT5"
 	SP-SagesseAval-1
-#	break
-#	SP-B3-2
-#	break
-#	SP-B3-3
-#	break
-#	SP-B3-4
-#	break
-#	SP-B3-5
 endmap
 
-#map MC-Sagesse-actif-coupe -title "Gouffre des Sagesse-actif - FLT5"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-Sagesse-actif-coupe -title "Gouffre des Sagesse-actif - FLT5"
+	SC-SagesseAval-1
+	break
+	SC-SagesseAval-2
+	break
+	SC-SagesseAval-3
+endmap
    

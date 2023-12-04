@@ -14,18 +14,22 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 		equate 0@Vieux-Depart.Vieux-Depart 15@Morts-Vivants.Morts-Vivants	# Jonction au niveau du spit FLT de départ du P40
 		#equate 0@Vieux-Depart.Vieux-Depart 27@Morts-Vivants.Morts-Vivants
 		join SP-VieuxD-1@Vieux-Depart SP-FLT-4@Morts-Vivants -count 2
+		
 	input Data/4-VieuxDepart-Puits_Sec/PuitsSec-tot.th
 		equate 10@PuitsSec.PuitsSec 29@Vieux-Depart.Vieux-Depart
 		#equate W@PuitsSec.PuitsSec 29@Vieux-Depart.Vieux-Depart	# [Proposition Alex, mais ne convient pas à Xav, voir note dans fichier PuitsSec.th]
-	
+		join SC-VieuxDepot-1@Vieux-Depart SC-PSec-3@PuitsSec
+
 	input Data/5-Amonts/Morts-Vivants-amonts-tot.th
 		#equate W@Morts-Vivants-amonts.Morts-Vivants-amonts W@PuitsSec.PuitsSec	# C'est bizarre cette connexion
 		equate 30@Morts-Vivants-amonts.Morts-Vivants-amonts 65@Morts-Vivants.Morts-Vivants
 		join SP-MVAmonts-2@Morts-Vivants-amonts SP-Collecteur-1@Morts-Vivants
 
-	input Data/6-PuitsSec-Riviere/PuitsSec-Riviere-tot.th	
+	input Data/6-PuitsSec-Riviere/PuitsSec-Riviere-tot.th
 		equate W@PuitsSec-Riviere.PuitsSec-Riviere W@PuitsSec.PuitsSec
 		#join SP-PuitsSec-1@PuitsSec SP-PuitsSec-Riv-2@PuitsSec-Riviere
+		join SC-PSec-1@PuitsSec-Riviere SC-PSec-3@PuitsSec
+
 	input Data/7-Meandre-Sagesse/Sagesse-tot.th
 		equate Z@Sagesse.Sagesse	Z@PuitsSec-Riviere.PuitsSec-Riviere
 		join SP-Sagesse-1@Sagesse SP-PuitsSec-Riv-1@PuitsSec-Riviere
@@ -42,6 +46,7 @@ survey Morts-Vivants -title "Gouffre des Morts-Vivants - FLT5"
 			centerline
 			extend ignore 30@Sagesse-actif.Sagesse-actif Station29@Sagesse-actif.Sagesse-actif
 			endcenterline
+		join SC-PSec-1@PuitsSec-Riviere SC-SagesseAval-1@Sagesse-actif
 
 	input Data/MV1-2-4/MV1-2-4-tot.th
 		equate Station12@MV1-2-4.MV1-2-4 36@Sagesse.Sagesse
