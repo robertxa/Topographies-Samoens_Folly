@@ -81,6 +81,10 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		## Jonction au niveau de -800
 		join SP-BMPRGF-1@900 SP-800-1@800
 		join SC-900-1@900 SC-800-1@800
+	
+	# Galerie Daniel
+	input Data/GalerieDaniel/GalerieDaniel-tot.th
+		equate 724@AvalTRO.AvalTRO 724@GalerieDaniel.GalerieDaniel
 
 	# Aval du CD11
 	input Data/AvalTRO/AvalTRO-tot.th
