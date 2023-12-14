@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-2Lucarnes-plan -title "réseau des deux Lucarnes - FLT5"
+map MP-2Lucarnes-plan -title "Réseau des deux Lucarnes - FLT5"
 	SP-2Lucarnes-01
 	break
 	SP-2Lucarnes-02
@@ -16,9 +16,13 @@ map MP-2Lucarnes-plan -title "réseau des deux Lucarnes - FLT5"
 	SP-2Lucarnes-04
 endmap
 
-#map MC-2Lucarnes-coupe -title "Gouffre des 2Lucarnes - FLT5"
-#	SC-coupeB3-1
-#	break
-#	SC-B3c2
-#endmap
+map MC-2Lucarnes-coupe -title "Réseau des deux Lucarnes - FLT5"
+	SC-2Lucarnes-01
+	break
+	SC-2Lucarnes-02
+	break
+	SC-2Lucarnes-03
+	break
+	SC-2Lucarnes-04
+endmap
    

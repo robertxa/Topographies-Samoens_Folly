@@ -269,27 +269,27 @@ select MC-Chaperon-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Chaperon-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout my_layout -o Outputs/Chaperon-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Chaperon-2022.lox
+ export model -enable all -o Outputs/Chaperon.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Chaperon-2022 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/Chaperon -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Chaperon-2022.kml -layout my_layout
- export model -fmt kml -o Outputs/Chaperon-2022-model.kml -enable all
+# export map -proj plan -fmt kml -o Outputs/Chaperon.kml -layout my_layout
+ export model -fmt kml -o Outputs/Chaperon-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseChaperon-2022.sql
+#export database -fmt sql -o Outputs/databaseChaperon.sql
 
-export continuation-list -o Outputs/ContinuationsChaperon-2022.html
+#export continuation-list -o Outputs/ContinuationsChaperon-2022.html
 #export continuation-list -o Outputs/ContinuationsChaperon-2022.kml
-export survey-list -location on -o Outputs/SurveysChaperon2022.html
+#export survey-list -location on -o Outputs/SurveysChaperon2022.html
 #export cave-list -location on -o Outputs/CavesChaperon2022.html
