@@ -106,7 +106,7 @@ line wall -reverse on -subtype presumed
   smooth off
 endline
 
-line wall -subtype presumed
+line wall -subtype presumed -outline in
   589.0 1285.0
   589.0 1285.0 589.75 1276.75 588.5 1270.0
   587.48 1264.48 586.75 1251.75 583.0 1247.75
@@ -130,7 +130,7 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -reverse on
+line wall -reverse on -outline in
   589.0 1285.0
   580.75 1283.0 576.5 1297.25 570.5 1294.5
   564.5 1291.75 565.0 1285.25 564.5 1277.75
@@ -234,11 +234,13 @@ line wall
   587.75 1379.25 579.75 1373.5 579.75 1371.75
   579.75 1370.0 580.5 1370.0 582.75 1369.25
   585.0 1368.5 591.0 1366.75 590.75 1366.0
+  smooth off
 endline
 
 line pit
   597.0 1369.25
   597.0 1369.25 589.5 1367.25 589.25 1365.25
+  smooth off
 endline
 
 line wall -subtype pit
@@ -246,6 +248,7 @@ line wall -subtype pit
   590.5 1365.25 587.75 1359.5 594.75 1359.75
   601.75 1360.0 597.75 1363.25 596.75 1365.25
   595.75 1367.25 594.75 1367.5 594.0 1369.0
+  smooth off
 endline
 
 line wall
@@ -298,11 +301,13 @@ line wall
   189.0 1061.25 183.0 1061.0 187.25 1054.75
   altitude .
   191.5 1048.5 194.0 1042.25 193.25 1035.5
+  smooth off
 endline
 
 line wall
   193.25 1035.5
   193.25 1035.5 193.75 1030.25 195.5 1030.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -311,6 +316,7 @@ line wall -reverse on
   214.0 1037.75 214.0 1033.25 210.75 1031.0
   207.5 1028.75 206.0 1027.25 203.75 1027.5
   201.5 1027.75 199.75 1029.25 195.5 1030.0
+  smooth off
 endline
 
 line wall
@@ -441,6 +447,7 @@ line wall
   195.5 1054.75
   195.5 1054.75 196.5 1044.0 196.75 1041.5
   197.0 1039.0 195.25 1037.0 194.25 1036.25
+  smooth off
 endline
 
 line wall

@@ -114,7 +114,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 -10 nw
+  map-header 0 -100 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -142,8 +142,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
 
   layers on
 
@@ -161,7 +161,7 @@ layout my_layout
 			\cavename={Gouffre Mirolda - Amont de la salle de la Confluence} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		%\newtoks\club \club={Collectif Mirolda 2022}
+		\newtoks\club \club={Collectif Mirolda 2022}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -181,7 +181,7 @@ layout layout-coupe
   
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Voir layout ci-dessus.
-  base-scale 1 1500
+  base-scale 1 1000
 
   # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
   scale 1 1500
@@ -208,7 +208,7 @@ layout layout-coupe
   doc-title "CD11 coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 0 nw
+  map-header 0 -50 nw
 
   # arrière plan de la manchette
   map-header-bg on
@@ -246,14 +246,21 @@ layout layout-coupe
 			\cavename={Gouffre Mirolda - Amont de la salle de la Confluence} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		%\newtoks\club \club={Collectif Mirolda 2022}
+		\newtoks\club \club={Collectif Mirolda 2022}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
  endlayout
 # Fin de la definition du Layout "normal"
 
+
+
+
 # 3-EXPORT
+
+# Export des xvi pour le dessin si besoin
+#export map -fmt xvi -layout xviexport -o Data/GalerieDaniel-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/GalerieDaniel-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-GalerieDaniel@GalerieDaniel
@@ -263,6 +270,18 @@ select MC-GalerieDaniel@GalerieDaniel
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -proj plan -fmt pdf -o Outputs/GalerieDaniel-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/GalerieDaniel-coupe.pdf
+#export atlas -o Outputs/GalerieDaniel-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/GalerieDaniel.lox
+
+# Export de la database sql
+# export des statistiques de l'ensemble de la cavité
+#    Attention, les points de départ et d'arrivée de chaque centreline correspondent
+#    au second point et à l'avant dernier point de la série.
+#export database -fmt sql -o Outputs/databaseCD11-2022.sql
+
+#export continuation-list -o Outputs/ContinuationsCD11-2022.html
+##export continuation-list -o Outputs/ContinuationsCD11-2022.kml
+#export survey-list -location on -o Outputs/SurveysCD112022.html
+##export cave-list -location on -o Outputs/CavesCD112022.html

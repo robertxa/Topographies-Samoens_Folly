@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 1387.8352 829.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {1181.099 1 1.0} {472.441 FLT5} 2Lucarnes-map.xvi 0 {}
 
 
@@ -70,6 +70,7 @@ endline
 line pit
   1082.75 556.5
   1082.75 556.5 1079.0 547.5 1092.25 539.25
+  smooth off
 endline
 
 line wall -subtype pit
@@ -340,8 +341,8 @@ endline
 line wall
   481.75 412.0
   483.25 415.0 489.5 416.25 490.5 415.5
-  491.5 414.75 493.5 409.25 497.0 408.5
-  500.5 407.75 502.5 410.0 505.75 410.75
+  491.5 414.75 494.5 406.75 498.0 406.0
+  501.5 405.25 502.5 410.0 505.75 410.75
   509.0 411.5 514.5 409.0 516.5 409.25
   518.5 409.5 525.75 405.75 527.25 408.5
   528.75 411.25 533.5 431.0 536.0 432.0
@@ -366,7 +367,7 @@ line wall
   smooth off
 endline
 
-point 505.279 417.40099999999995 station -name 47
+point 505.279 417.40099999999995 station -name 45
 
 point 500.07899999999995 409.371 station -name 46
 
