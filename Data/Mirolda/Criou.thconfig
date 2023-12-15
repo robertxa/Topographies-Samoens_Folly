@@ -338,9 +338,6 @@ layout atlas_layout
  endlayout
 # Fin de la definition du Layout "normal"
 
-
-
-
 # 3-EXPORT
 
 select MP-Criou@SystemMirolda
@@ -354,7 +351,7 @@ select MP-Criou@SystemMirolda
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Criou-2023.lox
- export model -enable all -o Outputs/Criou-2023.plt
+ #export model -enable all -o Outputs/Criou-2023.plt
 
 # Export des fichiers ESRI
  export map -proj plan -fmt esri -o Outputs/Criou -layout my_layout
@@ -369,7 +366,7 @@ select MP-Criou@SystemMirolda
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseCriou-2022.sql
+#export database -fmt sql -o Outputs/databaseCriou-2022.sql
 
 export continuation-list -o Outputs/ContinuationsCriou-2022.html
 export continuation-list -o Outputs/ContinuationsCriou-2022.kml
