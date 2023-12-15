@@ -1,6 +1,6 @@
 encoding  utf-8				
 					
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>			
+# Copyright (C) G.S. Cavernicoles (2006), Xavier Robert <xavier.robert***@***ird.fr> (2023)			
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:	
 #   "<http://creativecommons.org/licenses/by-nc-sa/4.0/>"
 					
@@ -17,7 +17,7 @@ survey	GalerieDaniel -title "Galerie Daniel"
 centerline
 
     explo-date 1989.02.13 
-     explo-team "Groupe Spéléo/Ursus"
+     explo-team "URSUS"
     date 1989.02.13 
      #team "GS URSUS"
      team "Sylvain Matricon"
@@ -44,8 +44,17 @@ endcenterline
 
 centerline
 
-    date 2004.02 
-     team "GS Cavernicoles"
+    date 2006.02.06
+        team "Richard Grebeude" 
+        team "Arthur Meauxsoone"
+        team "Gaël Honegger"
+        team "Nicolas Borchers"
+        team "Jack London"
+        team "Françoise Bandorowicz"
+        team "Christophe Bandorowicz"
+    explo-date 2006
+        explo-team "Groupe Spéléo/Cavernicoles"
+        explo-team "Spéléo-Club de/Belgique"
 
     units length meters
     units compass clino degrees
