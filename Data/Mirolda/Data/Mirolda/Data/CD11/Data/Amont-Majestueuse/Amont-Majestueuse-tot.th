@@ -13,6 +13,8 @@ survey Amont-Majestueuse -title "Gouffre Mirolda - Amont Majestueuse"
 	## Old data from D. Colliard
 	input Data/Amont-Majestueuse.th
 		equate 773@Amont-Majestueuse PTRMAXR04@majamonts2023
+	input Data/Yougo-Cavernicoles.th
+		equate 80@Yougo-Cavernicoles PTRJMLDXR01@majamonts2023
 
 	# Import du dessin en plan
 	input Data/majamonts2023.th2
