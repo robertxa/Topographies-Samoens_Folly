@@ -186,6 +186,13 @@ def ThExtractEntrances(inputfile, systems, caves, crs):
 				exploredMirolda = line.split('\t')[3]
 			else:
 				exploredMirolda = 0
+		elif 'Gouffre Mirolda - Réseau Lucien Bouclier' in line:
+			develMV = line.split('\t')[1]
+			denivMV = line.split('\t')[2]
+			if line.split('\t')[3] != '':
+				exploredMV = line.split('\t')[3]
+			else:
+				exploredMV = 0
 		elif 'AntreOddaz' in line:
 			develOddaz = line.split('\t')[1]
 			denivOddaz = line.split('\t')[2]
