@@ -61,8 +61,7 @@ centerline
     units counter centimeters
     calibrate counter 0 1.000
     data topofil from to fromcount tocount compass clino left right up down
-    #data normal from to fromcount tocount compass clino left right up down	
-    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std			
+    extend right
 724	1250	73310.0   73840.0   70.00    0.00   1.00   1.00   2.00		2	#
 1250	1251	73840.0   74470.0  160.00   -9.00   1.00   1.00   2.00		2	#
 1251	1252	74470.0   75140.0  180.00  -30.00   1.00   1.00   2.00		2	#
