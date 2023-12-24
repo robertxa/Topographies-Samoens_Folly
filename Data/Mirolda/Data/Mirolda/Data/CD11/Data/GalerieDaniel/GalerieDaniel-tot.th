@@ -12,7 +12,8 @@ survey GalerieDaniel -title "Gouffre Mirolda - Galerie Daniel"
 	input Data/GalerieDaniel.th2
 
 	# Import du dessin en coupe
-	#input Data/GalerieDaniel-coupe.th2
+	input Data/GalerieDaniel-coupe.th2
+		join SC-GDaniel-4 SC-GDaniel-5
 
 	# Import des maps
 	input GalerieDaniel-maps.th
