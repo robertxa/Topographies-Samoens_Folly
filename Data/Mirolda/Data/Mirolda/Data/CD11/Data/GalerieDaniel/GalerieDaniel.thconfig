@@ -209,16 +209,16 @@ layout layout-coupe
   doc-title "CD11 coupe développée - 1:1000"
 
   # Position de la manchette. Voir layout ci-dessus.
-  map-header 0 -50 nw
+  map-header 100 60 ne
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende. Voir layout ci-dessus.
   legend off
 
   # Par defaut, la legende est de 14 cm de largeur
-  legend-width 19 cm
+  legend-width 15 cm
 
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
   map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
