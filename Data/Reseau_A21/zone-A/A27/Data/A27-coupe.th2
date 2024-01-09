@@ -41,6 +41,8 @@ line rope
   37.0 37.5
 endline
 
+point 61.0 128.75 u:symbol_extend
+
 line wall -subtype invisible
   9.5 127.75
   9.5 127.75 8.5 136.75 -0.5 132.25
@@ -74,6 +76,7 @@ line wall
   60.25 61.5 64.25 69.0 59.0 73.25
   53.75 77.5 49.75 81.75 46.5 82.5
   43.25 83.25 36.5 93.0 40.0 92.25
+  smooth off
 endline
 
 line wall
@@ -91,6 +94,7 @@ line wall
   7.25 58.0 25.5 55.0 26.0 52.0
   26.5 49.0 23.75 45.75 28.25 44.75
   32.75 43.75 28.0 45.0 30.25 40.0
+  smooth off
 endline
 
 line wall -subtype debris
@@ -99,6 +103,7 @@ line wall -subtype debris
   51.5 36.25 53.5 36.25 57.75 34.5
   62.0 32.75 62.5 34.25 66.5 30.5
   70.5 26.75 71.75 27.0 75.5 25.75
+  smooth off
 endline
 
 line wall

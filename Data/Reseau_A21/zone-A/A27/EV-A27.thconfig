@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-source CP7-tot.th
+source A27-tot.th
 
 # Add entrances coordinates
 input legendes/entrances_coordinates.th
@@ -13,14 +13,14 @@ input legendes/entrances_coordinates.th
 input ../../../../config.thc 
     
 layout my_layout
-
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_CPCPp
+	copy Coords_Header_AApra
 	copy drawingconfig
 	copy headerl
+	#copy header-plan-schema
 	copy langue-fr
   
-	doc-title "CP7"
+	doc-title "A27"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 250
@@ -33,13 +33,13 @@ layout my_layout
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	#map-comment "<it>Plan<ss> - Samoëns, 74, France"
 	map-comment "Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
 	legend off
-	legend-width 14.5 cm
+	legend-width 17.5 cm
+
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
@@ -55,17 +55,16 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={CP7} 		
+			\cavename={A27} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		#\cavelength{30\thinspace{}m}
-		#\cavedepth{-30\thinspace{}m}
+		#\cavelength{8\thinspace{}m}
+		#\cavedepth{-4\thinspace{}m}
 	endcode  
-
-# add extended-elev on the same pdf
- map-image 200 120 nw Outputs/CP7-coupeEV.pdf
+  # add extended-elev on the same pdf
+	map-image 100 160 nw Outputs/A27-coupeEV.pdf
 
 endlayout
  
@@ -73,13 +72,13 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_CPCPp
+	copy Coords_Header_AApra
 	copy drawingconfig
 	#copy header_coupe-schema
 	copy header_coupe
 	copy langue-fr
   
-	doc-title "CP7"
+	doc-title "A27"
 	doc-author "Xavier Robert"
 	base-scale 1 250
 	scale 1 250
@@ -91,16 +90,13 @@ layout my_layout-coupe
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	#map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
+	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	statistics explo-length off
-	statistics explo off
 	statistics topo-length off
-	statistics topo off
 	statistics copyright off
 	legend off
-	#legend-width 14.5 cm
-	#map-header 20 80 ne
-	map-header 20 0 off
+	legend-width 14.5 cm
+	map-header 50 80 off
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -115,21 +111,20 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={CP7} 		
+			\cavename={A27} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
-		#\cavelength{30\thinspace{}m}
-		#\cavedepth{-30\thinspace{}m}
+		#\cavelength{8\thinspace{}m}
+		#\cavedepth{-4\thinspace{}m}
 	endcode  
 
 endlayout
 
 # Select maps
-	select MP-CP7-plan-tot@CP7
-	select MC-CP7-coupe-tot@CP7
-
-export map -projection extended -layout my_layout-coupe -o Outputs/CP7-coupeEV.pdf	  
-export map -o Outputs/CP7-EV.pdf -layout my_layout
-
+	select MP-A27-plan-tot@A27
+	select MC-A27-coupe-tot@A27
+	  
+export map -projection extended -layout my_layout-coupe -o Outputs/A27-coupeEV.pdf
+export map -o Outputs/A27-planEV.pdf -layout my_layout

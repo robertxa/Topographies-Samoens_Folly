@@ -80,7 +80,8 @@ layout my_layout
 	#map-image 0 100 sw ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf
 	#map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
 	#map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
-	map-image 70 23 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
+	#map-image 70 23 nw ../../Outputs/2D/jb-Xav-2022-plan20000-Solitaire.pdf
+	map-image 70 23 nw ../../Outputs/2D/jb-Xav-2022-plan20000.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -106,7 +107,8 @@ layout my_layout-coupe
   
 	# Titule
 	doc-title "Gouffre Jean-Bernard - 1:1000"
-	map-header 35 0 sw
+	#map-header 35 0 sw
+	map-header 70 13 sw
 	map-header-bg off
 	legend off
 	legend-width 28 cm
@@ -143,7 +145,8 @@ layout my_layout-coupe
 		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 	endcode   
 	
-	map-image 00 90 nw ../../Outputs/2D/jb-Xav-2020-coupe20000-Solitaire.pdf
+	map-image 00 90 nw ../../Outputs/2D/jb-Xav-2022-coupe20000-Solitaire.pdf
+	#map-image 00 90 nw ../../Outputs/2D/jb-Xav-2022-coupe20000.pdf
 
 endlayout
 # Fin de la definition du Layout "normal"
@@ -265,21 +268,23 @@ endlayout
 #select M-sezhommes@Jean-Bernard
 #select  MP-Jean-Dupond@Jean-Bernard
 
-#select  MP-Solitaire-tot@Jean-Bernard
-select MP-SolitaireEV@Jean-Bernard
-select MP-solitaire-tot@Solitaire.Jean-Bernard -color [100 100 80]
-select MP-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+##select  MP-Solitaire-tot@Jean-Bernard
+#select MP-SolitaireEV@Jean-Bernard
+#select MP-solitaire-tot@Solitaire.Jean-Bernard -color [100 100 80]
+#select MP-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
 
-#select MC-Solitaire-tot@Jean-Bernard
+##select MC-Solitaire-tot@Jean-Bernard
 select MC-V4@Jean-Bernard
 select MC-puitsAlain@Jean-Bernard
-select MC-rivieredebut@Jean-Bernard
-select MC-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+#select MC-rivieredebut@Jean-Bernard
+select MC-Riviere1@Riviere1.RiviereAval.Jean-Bernard
+#select MC-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+select MC-V4@V4.Jean-Bernard -color [100 100 80]
 select MC-solitaire-JB@Solitaire.Jean-Bernard -color [100 100 80]
 
 #select  MP-oeufs@Jean-Bernard
 #select  MC-oeufs@Jean-Bernard
 
 export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2023-coupe1000.pdf -layout my_layout-coupe
-export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2023-plan1000.pdf -layout my_layout
+#export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2023-plan1000.pdf -layout my_layout
 #export atlas -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-atlas.pdf -layout AtlasPlan

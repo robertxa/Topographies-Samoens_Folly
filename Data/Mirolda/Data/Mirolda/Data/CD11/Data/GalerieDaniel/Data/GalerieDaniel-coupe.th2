@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -4211 10116 980.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -134.0 -4211 10116 984.0
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} GDaniel-CoupeD-Stations.png 0 {}
 
 
@@ -31,7 +31,7 @@ line wall
   smooth off
 endline
 
-line wall -subtype sand
+line wall -subtype clay
   2302.0 -1017.0
   2302.0 -1017.0 2355.0 -1016.0 2396.0 -1021.0
   2437.0 -1026.0 2517.0 -1029.0 2540.0 -1038.0
@@ -53,7 +53,7 @@ line wall -subtype debris
   smooth off
 endline
 
-line wall -subtype sand -outline none
+line wall -outline none -subtype clay
   1562.0 -671.0
   1562.0 -671.0 1633.0 -721.0 1619.0 -724.0
   1605.0 -727.0 1559.0 -711.0 1517.0 -717.0
@@ -64,7 +64,7 @@ line wall -subtype sand -outline none
   smooth off
 endline
 
-line wall -subtype sand
+line wall -subtype clay
   738.0 -393.0
   738.0 -393.0 824.0 -427.0 850.0 -435.0
   876.0 -443.0 927.0 -469.0 953.0 -479.0
@@ -114,6 +114,7 @@ line wall
   569.0 -230.0 495.0 -196.0 478.0 -190.0
   461.0 -184.0 447.0 -171.0 424.0 -171.0
   401.0 -171.0 353.0 -166.0 344.0 -166.0
+  smooth off
 endline
 
 point 2492.0 -808.0 label -text "etr."
@@ -167,6 +168,7 @@ endline
 line wall -subtype presumed
   2243.0 -795.0
   2243.0 -795.0 2178.0 -790.0 2145.0 -789.0
+  smooth off
 endline
 
 line wall -subtype debris
@@ -345,6 +347,7 @@ line label -text "galerie Daniel"
   2592.0 -32.0
   2592.0 -32.0 6824.0 300.0 6980.0 316.0
   7136.0 332.0 9400.0 840.0 9504.0 848.0
+  smooth off
 endline
 
 line wall
@@ -548,19 +551,7 @@ line wall
   smooth off
 endline
 
-point 4202.0 -2280.0 station -name 1312
-
 point 4116.0 -2306.0 station -name 1311
-
-point 4020.0 -2322.0 station -name 1310
-
-point 3956.0 -2320.0 station -name 1309
-
-point 3894.0 -2332.0 station -name 1308
-
-point 3836.0 -2336.0 station -name 1307
-
-point 3776.0 -2352.0 station -name 1306
 
 point 3708.0 -2372.0 station -name 1305
 
@@ -654,6 +645,7 @@ line wall -subtype debris
   5741.0 -3417.0 5764.0 -3428.0 5781.0 -3432.0
   5798.0 -3436.0 5793.0 -3449.0 5810.0 -3452.0
   5827.0 -3455.0 5838.0 -3460.0 5843.0 -3460.0
+  smooth off
 endline
 
 line wall -subtype debris
@@ -676,6 +668,7 @@ line wall
   5309.0 -3096.0 5327.0 -3095.0 5344.0 -3102.0
   5361.0 -3109.0 5372.0 -3101.0 5377.0 -3124.0
   5382.0 -3147.0 5380.0 -3180.0 5390.0 -3186.0
+  smooth off
 endline
 
 line wall -subtype debris
@@ -683,9 +676,10 @@ line wall -subtype debris
   5188.0 -3014.0 5194.0 -3040.0 5208.0 -3045.0
   5222.0 -3050.0 5217.0 -3073.0 5234.0 -3076.0
   5251.0 -3079.0 5305.0 -3095.0 5309.0 -3096.0
+  smooth off
 endline
 
-line wall -subtype sand
+line wall -subtype clay
   4810.0 -2744.0
   4810.0 -2744.0 4838.0 -2765.0 4857.0 -2768.0
   4876.0 -2771.0 4891.0 -2788.0 4907.0 -2800.0
@@ -695,6 +689,7 @@ line wall -subtype sand
   5086.0 -2930.0 5096.0 -2927.0 5107.0 -2949.0
   5118.0 -2971.0 5149.0 -2982.0 5172.0 -2994.0
   5195.0 -3006.0 5184.0 -3004.0 5188.0 -3014.0
+  smooth off
 endline
 
 line wall -subtype debris
@@ -711,7 +706,7 @@ line wall
   smooth off
 endline
 
-line wall -subtype sand
+line wall -subtype clay
   4484.0 -2409.0
   4484.0 -2409.0 4526.0 -2456.0 4548.0 -2469.0
   4570.0 -2482.0 4598.0 -2517.0 4613.0 -2532.0
@@ -830,7 +825,7 @@ point 4452.0 -2268.0 station -name 1315
 
 point 4388.0 -2272.0 station -name 1314
 
-point 4337.0 -2268.0 station -name 1313
+point 4335.0 -2280.0 station -name 1313
 
 endscrap
 
@@ -934,6 +929,7 @@ line wall
   9642.0 -3885.0 9637.0 -3880.0 9659.0 -3891.0
   9681.0 -3902.0 9736.0 -3924.0 9764.0 -3936.0
   9792.0 -3948.0 9811.0 -3962.0 9823.0 -3961.0
+  smooth off
 endline
 
 line wall
@@ -957,11 +953,13 @@ line wall -subtype debris
   6673.0 -3882.0 6689.0 -3893.0 6710.0 -3894.0
   6731.0 -3895.0 6739.0 -3898.0 6748.0 -3906.0
   6757.0 -3914.0 6770.0 -3930.0 6790.0 -3929.0
+  smooth off
 endline
 
 line wall -subtype debris
   6538.0 -3835.0
   6538.0 -3835.0 6612.0 -3862.0 6620.0 -3864.0
+  smooth off
 endline
 
 line wall
@@ -1080,6 +1078,7 @@ line wall -subtype debris
   6751.0 -398.0 6792.0 -411.0 6882.0 -411.0
   6972.0 -411.0 6988.0 -416.0 7026.0 -410.0
   7064.0 -404.0 7117.0 -394.0 7136.0 -394.0
+  smooth off
 endline
 
 line wall
@@ -1128,6 +1127,7 @@ line wall
   6762.0 -379.0 6747.0 -371.0 6747.0 -371.0
   smooth off
   6747.0 -371.0 6837.0 -364.0 6866.0 -360.0
+  smooth off
 endline
 
 point 6705.0 -375.0 station -name 1282
