@@ -865,6 +865,16 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  958.0 495.75
+  964.5 496.0
+endline
+
+line wall -subtype invisible
+  978.25 505.25
+  978.5 502.75
+endline
+
 line wall -subtype unsurveyed
   964.5 496.0
   964.5 496.0 964.0 499.0 966.75 499.0
@@ -897,7 +907,7 @@ line wall -subtype invisible
   939.0 563.0
 endline
 
-line wall -subtype invisible
+line wall -reverse on -subtype invisible
   1212.25 489.75
   1215.5 488.25
 endline

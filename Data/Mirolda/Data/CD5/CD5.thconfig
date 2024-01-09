@@ -286,7 +286,8 @@ select MC-CD5-coupe-tot@CD5
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/CD5.lox
-
+ export model -enable all -o Outputs/CD5.plt
+ 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/CD5-2022 -layout my_layout
 

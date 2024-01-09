@@ -253,6 +253,7 @@ select MC-Hasselblad-tot@Hasselblad
 
 # Export du fichier 3d pour Loch
  export model -enable all -o Outputs/Hasselblad-2023.lox
+ export model -enable all -o Outputs/Hasselblad-2023.plt
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/Hasselblad-2022 -layout my_layout

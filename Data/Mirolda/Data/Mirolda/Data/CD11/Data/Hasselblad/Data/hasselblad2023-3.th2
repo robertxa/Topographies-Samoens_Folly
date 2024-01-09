@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -3708.0 -1736.0 1288.0 5304.0
-##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {979.5999999999999 1 1.0} {-1583.0699999999997 PTRJCXRHA01@haselblad2023-2.haselblad2023-2} haselblad2023-2-map.xvi 0 {}
 
 
@@ -637,7 +637,7 @@ line wall
   smooth off
 endline
 
-line wall -outline in
+line wall -reverse on -outline in
   801.44 3414.75
   792.87 3430.75 794.57 3450.62 788.42 3467.15
   785.05 3476.23 776.67 3483.53 775.42 3493.13
@@ -703,7 +703,7 @@ line wall -outline in
   741.76 3223.29 745.66 3233.2 737.85 3261.16
   735.07 3271.12 728.7 3279.86 725.99 3289.84
   723.18 3300.21 720.7 3339.56 719.4 3349.51
-  714.7 3385.47 703.49 3422.54 715.64 3457.92
+  714.7 3385.47 702.54 3418.47 714.69 3453.85
   smooth off
 endline
 
