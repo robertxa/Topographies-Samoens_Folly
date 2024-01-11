@@ -143,6 +143,7 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
+  color map-fg scraps
   #debug station-names
   symbol-hide line survey
 
@@ -266,4 +267,6 @@ select MC-GalerieDaniel@GalerieDaniel
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/GalerieDaniel-coupe.pdf
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/GalerieDaniel.lox
+  export model -enable all -o Outputs/GalerieDaniel.lox
+  
+  export map -proj plan -fmt esri -o Outputs/Test

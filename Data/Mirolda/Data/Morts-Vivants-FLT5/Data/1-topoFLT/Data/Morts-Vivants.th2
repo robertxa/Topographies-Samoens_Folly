@@ -689,8 +689,14 @@ line wall -subtype pit
   1271.75 448.0 1272.75 451.0 1270.0 456.0
   1267.25 461.0 1260.5 463.5 1256.0 463.5
   1251.5 463.5 1236.11 470.34 1232.0 472.0
-  1217.75 477.75 1215.5 488.25 1215.5 488.25
+  1222.39 475.88 1226.25 475.5 1220.25 480.0
   smooth off
+  1220.25 480.0
+endline
+
+line wall
+  1220.25 480.0
+  1215.5 488.25
 endline
 
 line wall
@@ -750,9 +756,14 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  980.25 505.25
+  980.25 502.5
+endline
+
 line wall
-  978.5 502.75
-  978.5 502.75 982.0 504.25 982.0 502.0
+  980.25 502.5
+  980.25 502.5 982.0 504.25 982.0 502.0
   982.0 499.75 977.0 496.5 977.0 496.5
   smooth off
 endline
@@ -782,7 +793,7 @@ line wall
   1017.5 498.0 1013.25 502.0 1012.5 504.25
   1011.75 506.5 1012.25 509.25 1006.5 508.75
   1000.75 508.25 992.75 505.75 988.75 505.5
-  984.75 505.25 978.25 505.25 978.25 505.25
+  984.75 505.25 980.25 505.25 980.25 505.25
   smooth off
 endline
 
@@ -870,7 +881,7 @@ line wall -subtype invisible
   964.5 496.0
 endline
 
-line wall -subtype invisible
+line wall -reverse on -subtype invisible
   978.25 505.25
   978.5 502.75
 endline
@@ -905,11 +916,6 @@ endline
 line wall -subtype invisible
   937.0 562.75
   939.0 563.0
-endline
-
-line wall -reverse on -subtype invisible
-  1212.25 489.75
-  1215.5 488.25
 endline
 
 line wall -subtype unsurveyed
