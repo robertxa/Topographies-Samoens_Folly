@@ -1,0 +1,100 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -178.5 -129.5 553.5 394.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {78.744 1 1.0} {204.726 FU231} FU231-coupe.xvi 0 {}
+
+
+
+scrap SC-FU231-1 -projection extended -station-names "" "@FU231" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+line wall -subtype invisible
+  78.0 264.5
+  78.0 264.5 46.0 196.0 49.0 170.0
+endline
+
+line wall -subtype debris
+  83.0 198.0
+  83.0 198.0 196.0 143.5 213.0 135.5
+  230.0 127.5 248.5 118.5 256.5 117.0
+  264.5 115.5 297.0 114.0 315.0 112.0
+  333.0 110.0 342.5 109.5 353.0 109.0
+  363.5 108.5 370.5 110.5 370.5 99.5
+  370.5 88.5 369.5 68.5 369.5 68.5
+  smooth off
+endline
+
+point 236.5 232.5 air-draught -orientation 124.5 -subtype summer
+
+point -48.0 225.0 label -text "<bf>FU231" -scale xl
+
+point 37.0 224.0 entrance -orientation 124.6
+
+line wall
+  49.0 170.0
+  49.0 170.0 70.5 194.0 73.5 197.0
+  altitude .
+  76.5 200.0 78.5 201.0 83.0 198.0
+endline
+
+point 245.0 136.0 ice-stalactite
+
+point 271.0 127.5 ice-stalactite
+
+point 258.5 129.0 ice-stalactite
+
+point 423.0 128.0 dig
+
+point 318.0 150.0 dig
+
+point 376.5 41.5 continuation -attr Code D -attr Cavite "FU231" -attr CA "Courant d'air aspirant en été" -text "Trémie englacée verticale à désobstruer, courant d'air aspirant en été, proche gros puits remontant des putis Jumeaux (réseau Lucien Boulier)"
+
+point 378.0 78.5 breakdown-choke -orientation 88.1
+
+point 334.0 112.0 ice
+
+point 376.5 99.0 ice
+
+point 378.5 86.0 ice
+
+point 372.5 77.5 ice
+
+point 224.0 133.5 ice
+
+point 289.5 116.0 ice
+
+point 264.0 120.0 ice
+
+point 247.0 125.0 ice
+
+line wall -subtype unsurveyed
+  383.5 67.5
+  altitude .
+  383.5 67.5 385.5 112.5 374.0 113.5
+  362.5 114.5 341.0 125.5 326.0 123.0
+  311.0 120.5 307.5 120.5 293.0 121.5
+  278.5 122.5 277.0 126.5 267.0 128.0
+  257.0 129.5 248.5 137.0 235.5 139.5
+  222.5 142.0 238.0 164.0 225.5 173.0
+  213.0 182.0 195.5 213.5 177.5 215.0
+  159.5 216.5 142.0 217.5 125.0 212.5
+  108.0 207.5 95.0 205.5 87.5 206.5
+endline
+
+line wall
+  87.5 206.5
+  80.0 207.5 78.0 207.0 78.0 211.0
+  78.0 215.0 78.0 264.5 78.0 264.5
+  smooth off
+endline
+
+point 374.804 71.86599999999999 station -name 3
+
+point 374.804 111.23599999999999 station -name 2
+
+point 257.144 121.53599999999999 station -name 1
+
+point 78.744 204.726 station -name FU231
+
+endscrap
+
+

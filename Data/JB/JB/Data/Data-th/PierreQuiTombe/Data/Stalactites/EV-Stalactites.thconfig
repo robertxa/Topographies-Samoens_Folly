@@ -5,10 +5,13 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 # Import DATA  
-source Poncho-tot.th
+source Stalactites-tot.th
 
 # Add config file
 input ../../../../../../../../config.thc 
+
+# Add entrance coordinates
+#input ../../../../
   
  
   
@@ -32,12 +35,12 @@ layout layout_plan
 	
 	#debug scrap-names
 	  
-	doc-title "Putis du Poncho-plan"
+	doc-title "Stalactites-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 500
-	scale 1 500
-	scale-bar 50 m
+	base-scale 1 1250
+	scale 1 1000
+	scale-bar 100 m
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
@@ -48,8 +51,8 @@ layout layout_plan
 	statistics copyright all
 	legend off
 	#legend-width 22 cm
-	legend-width 15 cm
-	map-header 100 100 nw
+	legend-width 12 cm
+	map-header 0 -10 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -78,7 +81,7 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	map-image 25 100 sw Outputs/Poncho-coupe.pdf
+	map-image 0 100 sw Outputs/Stalactites-coupeEV.pdf
   
 endlayout
   
@@ -91,23 +94,23 @@ layout layout_coupe
 	
 	#debug scrap-names
 
-	doc-title "Puits du Poncho-coupe"
+	doc-title "Stalactites-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
 	#base-scale 1 2000
-	#base-scale 1 1400
-	base-scale 1 500
-	#base-scale 1 300
-	#scale 1 1400
-	scale 1 500
+	base-scale 1 1400
+	##base-scale 1 1000
+	##base-scale 1 300
+	scale 1 1400
+	##scale 1 1000
 	#scale 1 400
-	scale-bar 50 m
+	scale-bar 100 m
 	#color map-bg 85 
 	color map-fg [100 100 80]
 	transparency on
 	opacity 65
 	language fr
-	map-comment "<it>Coupe développée - <ss>Gouffre Jean-Bernard"
+	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
 	#statistics explo-length off
 	#statistics topo-length off
 	#statistics copyright all
@@ -123,13 +126,13 @@ layout layout_coupe
 	legend off
 	#legend-width 14.5 cm
 	legend-width 10 cm
-	map-header 0 10 nw
-	map-header-bg on
+	map-header 0 -5 nw
+	map-header-bg off
 	layers on
 	symbol-hide line survey
 	#debug station-names	
 	grid bottom
-	grid-size 100 100 10 m
+	grid-size 100 100 20 m
 	grid-coords border
 	#grid off
   
@@ -153,20 +156,14 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Poncho-plan2023.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Poncho-coupe2023.xvi
+#	export map -fmt xvi -layout xviexport_plan -o Data/Stalactites-plan.xvi
+#	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Stalactites-coupe.xvi
 
-select MP-Poncho-tot
+select MP-Stalactites-tot@Stalactites
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/Poncho-coupe.pdf
-	export map -layout layout_plan -o Outputs/Poncho-plan.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/Stalactites-coupeEV.pdf
+	export map -layout layout_plan -o Outputs/Stalactites-planEV.pdf
  
 # Export des modeles 3D
-	export model -o Outputs/Poncho.lox
-  
-# Export des fichiers ESRI
-	#export map -proj plan -fmt esri -o Outputs/3D/Poncho -layout layout_plan
-  
-# Export des fichiers kml
-	#export map -proj plan -fmt kml -o Outputs/3D/Poncho.kml -layout layout_plan
+#	export model -o Outputs/Stalactites.lox

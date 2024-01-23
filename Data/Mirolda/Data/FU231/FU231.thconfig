@@ -46,7 +46,7 @@ layout xviexport
 	scale 1 500
 	#scale 1 1000
 	# taille de la grille
-	grid-size 10 10 10 m
+	grid-size 5 5 5 m
 	# mettre la grille en arrière plan
 	grid bottom
 endlayout
@@ -70,17 +70,17 @@ layout my_layout
   # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
   # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
   # des caractères et des traits.
-  base-scale 1 200
+  base-scale 1 1000
 
   # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
   # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
   # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
   # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
-  scale 1 200
+  scale 1 500
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
-  scale-bar 20 m
+  scale-bar 50 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
   #grid bottom
@@ -92,14 +92,10 @@ layout my_layout
   # la topo est transparente (on peut voir les galeries sousjacentes)
   # C'est on par défaut, donc, pas vraiment besoin de specifier
   transparency on
-  
   # Couleur de la topographie
   color map-fg [100 100 80]
-
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
-  
-  
   surface bottom
   surface-opacity 100
   
@@ -115,22 +111,22 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 0 0 s
+  map-header 10 0 se
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
 
   # Par défaut, la légende est de 14 cm de largeur
-  #legend-width 21 cm
+  legend-width 14.5 cm
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif cu Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -143,10 +139,10 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
-  layers on
+  layers off
 
 	# Modification du Titre de la topo
 	code tex-map
@@ -159,74 +155,95 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Perte du FU231} 
+			\cavename={Gouffre FU231} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda}
+		\newtoks\club \club={Collectif Mirolda 2023}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
  endlayout
 # Fin de la definition du Layout "normal"
 
+layout my_layout-coupe
 
-
-layout atlas_layout
-	
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	copy header_coupe 
+	copy header_coupe
 	copy langue-fr
 	
+  # Définition du système de projection du plan
   #cs UTM32
+  cs EPSG:2154
   
-  # La ligne base-scale specifie l'echelle auquel nous avons
-  # dessine nos croquis. Voir layout ci-dessus.
+  # La ligne base-scale specifie l'échelle auquel nous avons dessiné nos croquis. 
+  # Par defaut, Therion pense que c'est une échelle 1:200. Si on a utilisé une autre échelle, 
+  # il faut enlever le "#" et spécifier l'échelle vraiment employée, comme c'est le cas
+  # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
+  # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
+  # des caractères et des traits.
   base-scale 1 1000
 
-  # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
-  scale 1 1000
+  # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
+  # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
+  # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
+  # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
+  # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
+  scale 1 500
 
-  # Une grille ?
-  #grid-size 250 250 250 m  
+  # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
+  scale-bar 50 m
+
+  # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
+  #grid bottom
   grid off
- 
-  # la topo est transparente
-  transparency on
+  # Une ligne pour specifier que la grille est 1000x1000x1000 m
+  # (Trois dimensions, oui, ça sert pour la coupe aussi)
+  #grid-size 250 250 250 m  
   
-  # Couleur de la topo
+  # la topo est transparente (on peut voir les galeries sousjacentes)
+  # C'est on par défaut, donc, pas vraiment besoin de specifier
+  transparency on
+  # Couleur de la topographie
   color map-fg [100 100 80]
-
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
-    
+  surface bottom
+  surface-opacity 100
+  
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "FU231 coupe développée - 1:1000"
+  doc-title "FU231 plan - 1:1000"
 
-  # Position de la manchette. Voir layout ci-dessus.
-  #map-header 0 0 s
+  # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
+  # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
+  # 0 0, c'est en bas, à gauche, 100 100, c'est en haut, à droite
+  # La manchette a des "points cardinaux" autour : n, s, ne, sw, etc.
+  # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
+  # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
+  # ou une autre combination...
+  map-header 0 0 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
-  # Légende. Voir layout ci-dessus.
-  legend on
+  # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
+  # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
+  # "legend off" = pas de legende
+  legend off
 
-  # Par defaut, la legende est de 14 cm de largeur
-  legend-width 21 cm
+  # Par défaut, la légende est de 14 cm de largeur
+  legend-width 14.5 cm
 
-  # echelle graphique 100 m ampleur
-  scale-bar 100 m
-
-  # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
-
+  # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
+  # dont le nom est probablement le titule de la topo.
+  map-comment "<it>Coupe développée - <ss>Massif du Criou, Samoëns, 74, France"
  
-  # Afficher les statistiques d'explo/topo par équipe/nom.
+  # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
+  # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
   statistics explo-length off
-  statistics topo-length on
+  statistics topo-length off
   
   # Afficher un copyright
   statistics copyright 2
@@ -236,27 +253,29 @@ layout atlas_layout
   #debug scrap-names
   #debug station-names
   symbol-hide line survey
-  
-  layers on
-                
-	# Titre                         
+
+  layers off
+
+	# Modification du Titre de la topo
 	code tex-map
+		% Output map title as determined by Therion is stored in cavename, défini par la une Map. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
 		\edef\temp{\the\cavename}        % cavename from Therion   
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Perte du FU231} 
+			\cavename={Gouffre FU231} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda}
-		%\newtoks\synth \synth={Xavier Robert}		
+		\newtoks\club \club={Collectif Mirolda 2023}
+		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
-
+  
  endlayout
 # Fin de la definition du Layout "normal"
-
-
-
 
 # 3-EXPORT
 
@@ -265,17 +284,18 @@ layout atlas_layout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/FU231-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-FU231-plan@FU231
-select MC-FU231-coupe@FU231
+select MP-FU231@FU231
+select MC-FU231@FU231
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- #export map -proj plan -fmt pdf -o Outputs/FU231-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/FU231-coupe.pdf
+ export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/FU231-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/FU231-plan.pdf -layout my_layout
+ 
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- #export model -enable all -o Outputs/FU231.lox
+ export model -enable all -o Outputs/FU231.lox
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/FU231-2022 -layout my_layout

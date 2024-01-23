@@ -9,26 +9,24 @@ survey FU231 -title "FU231" -entrance FU231
 
  centerline -extend right
     
-    date 2022.09.14
+    date 2023.09.10
         team "Xavier Robert"
-    explo-date 2014 # --> Il faut leur demander les données topos !
-        explo-team "Magali Brun"
-        explo-team "Alain Gresse"
-        explo-team "Gégène Perrin"
-        explo-team "Patrick Perrin"
-        explo-team "Michel Siméon"
+    explo-date 2023.08.31
+        explo-team "Johann Culot"
+        explo-team "Nicolas Faure"
 
     cs long-lat
     fix FU231 6.791828 46.090969	2301 # Altitude IGN, Coords A revoir
-    station FU231 "FU231" entrance continuation explored 45m
+    station FU231 "FU231" entrance #continuation explored 45m
 
     units length meters
     units compass clino degrees
     data normal from to length compass clino left right up down
     flags approximate
-    #Lambourdin   1   8 30   -80  0.3 0.3 0   4
-    #1   2   20  230 -45  0.2 0.2 0.3 0.3
-    #2   3   3   210 0   0.2 0.2 0.1 0.1
+    FU231   0   0   0   0   1.5 1.5 0.5 0.5 # Entrée, 3 m de large, 1 m de haut
+    FU231   1   25 150   -25  1.5 1.5 0.3   0.5
+    1       2   15  150 -5  1.5 1.5 0.3 0.5
+    2       3   5   150 -90   1.5 1.5 0.1 0.1   # Trémie englacée, courant d'air aspirant en été
     flags not approximate
   
 endcenterline
