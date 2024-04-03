@@ -18,8 +18,6 @@ map MP-Fond-plan -title "Grotte de l'Ermoy - Fond"
 	break
 	SP-Desob
 	break
-	SP-siphon_amont
-	break
 	SP-diverticule-fd
 	break
 	SP-P6_1
@@ -41,6 +39,8 @@ map MP-Fond-plan -title "Grotte de l'Ermoy - Fond"
 	SP-ermoy-SPzz
 	break
 	SP-P6_shunt
+	break
+	SP-siphon_amont
 endmap
 
 map MP-ermoy-rampes -title "Grotte de l'Ermoy - Grandes Rampes"
@@ -70,10 +70,6 @@ map MP-ermoy-rampes -title "Grotte de l'Ermoy - Grandes Rampes"
 endmap
 
 map MP-ermoy-siphons -title "Grotte de l'Ermoy - Siphons"
-	SP-avalinf
-	break
-	SP-siphon-aval
-	break
 	SP-aval2
 	break
 	SP-aval3
@@ -83,6 +79,10 @@ map MP-ermoy-siphons -title "Grotte de l'Ermoy - Siphons"
 	SP-brascas2
 	break
 	SP-jctaval
+	break
+	SP-avalinf
+	break
+	SP-siphon-aval
 endmap
 
 map MC-ermoy-entree -title "Grotte de l'Ermoy - Entrée"
@@ -135,9 +135,10 @@ map MP-Ermoy-plan-tot -title "Grotte de l'Ermoy"
 	break
 	MP-Fond-plan
 	break
-	MP-ermoy-rampes
-	break
 	MP-ermoy-siphons
+	break
+	MP-ermoy-rampes
+	
 endmap
 
 map MC-Ermoy-coupe-tot -title "Grotte de l'Ermoy"

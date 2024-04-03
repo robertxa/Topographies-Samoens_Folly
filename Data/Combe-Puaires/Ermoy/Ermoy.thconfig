@@ -130,6 +130,13 @@ layout my_layout
    # les points et le nom des stations topos
   symbol-hide line survey
   #debug station-names
+  color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
+  #debug scrap-names
+	#  color map-fg scraps
+  #  color-legend off
+
 
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  
@@ -176,6 +183,7 @@ layout my_layout-coupe
 	#copy layoutcontinuation	# Pour afficher le label des continuations
 	
 	doc-title "Ermoy coupe"
+  doc-author "Xavier Robert"
 	base-scale 1 1000
 	scale-bar 100 m
 	scale 1 1000
@@ -183,7 +191,6 @@ layout my_layout-coupe
 	#origin-label 100 K
 	#color map-bg 85
 	color map-fg [100 100 80]
-	doc-author "Xavier Robert"
 	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	transparency on
 	opacity 75
@@ -199,6 +206,13 @@ layout my_layout-coupe
 	map-header-bg off
 	layers on
 	#debug station-names
+  color map-fg altitude
+	color-legend smooth
+  #debug scrap-names
+	#  color map-fg scraps
+    #  color-legend off
+	symbol-hide point rope
+
 	#grid bottom
 	#grid-size 100 100 100 m
 	#debug on
