@@ -278,7 +278,7 @@ select MC-Mobylette-coupe-tot@Mobylette
 #    au second point et à l'avant dernier point de la série.
 #export database -fmt sql -o Outputs/databaseMobylette-2022.sql
 
-export continuation-list -o Outputs/ContinuationsMobylette-2022.html
+#export continuation-list -o Outputs/ContinuationsMobylette-2022.html
 #export continuation-list -o Outputs/ContinuationsMobylette-2022.kml
 #export survey-list -location on -o Outputs/SurveysMobylette2022.html
 #export cave-list -location on -o Outputs/CavesMobylette2022.html

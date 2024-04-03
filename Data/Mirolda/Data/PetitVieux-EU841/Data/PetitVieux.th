@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1984 - URSUS and 2022 - Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -9,17 +9,64 @@ survey PetitVieux -title "Gouffre du Petit Vieux - EU841"
 
  centerline -extend right
     
-    date 2021.08.12
-        team "Xavier Robert"
+    date 1984.10.12
+        team "Manu Pozzer    "
+        team "Vincent Philis"
+        team "Michel Dussurget"
+        team "Jacques Gudefin"
+    explo-date 1984.10.12
+        explo-team "Manu Pozzer    "
+        explo-team "Vincent Philis"
+        explo-team "Michel Dussurget"
+        explo-team "Jacques Gudefin"
+
 
     #cs ???? (Lambert, mais lequel?)
     #cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
     ######fix EU841	944.1	130.36	2080
     #fix EU841	944100	2130360	2080
-
+    cs UTM32
     fix EU841       328939  5105920     2093    # GPS 2023 + Lidar IGN
+    
 
-    station EU841 "G. du Petit Vieux (EU841)" entrance air-draught continuation explored 80m
+    station EU841 "G. du Petit Vieux (EU841)" entrance air-draught #continuation explored 80m
+
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to fromcount tocount clino compass #clino #left right up down
+    EU841   1   58942   59275   180 0   # Entrée
+    1   2   59275   59592   126.5   67 # Fil pas bis pris
+    2   3   60439   60554   180 0
+    3   4   60554   60672   95  65
+    4   5   60672   60898   94  320
+    5   6   60898   61120   72.5    268
+    6   7   61120   62815   180 0
+    7   8   62815   63217   104.9   280
+    8   9   63217   63637   180 0
+    9   10  63637   63761   93.2    357
+    10  11  63761   64447   143.7   127
+    11  12  64447   64838   123.8   228 # Fil pas bis pris
+    12  13  65107   65478   123.8   205
+    13  14  65478   65689   110.3   241
+    14  15  65689   66183   180 0
+    15  16  66183   66233   90  129
+    16  17  66233   66672   120.2   240
+    17  18  66672   67098   180 0
+    18  19  67098   67395   78.8    260
+    19  20  67395   67677   122 285
+    20  21  67677   68366   180 0
+    21  22  68366   68673   93.2    195
+    22  23  68673   68823   140 265 # Station E1
+    23  24  68823   69079   103.1   192 # Station E2 ?
+    24  25  69079   70436   180 0
+    24  26  70436   71136   180 0
+    26  27  71136   72858   105.6   267
+
+
   
 endcenterline
 
