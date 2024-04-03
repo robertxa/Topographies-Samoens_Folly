@@ -1,0 +1,71 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey FLT7 -title "Gouffre Amine Dada - FLT7"
+
+ centerline -extend right
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    explo-date 1975
+        explo-team "Club/Fontaine La Tronche (FLT)"
+    explo-date 1977
+        explo-team "Club/Fontaine La Tronche (FLT)"
+    explo-date 1980
+        explo-team "Club/Ursus"
+    explo-date 1990
+        explo-team "Club/Ursus"
+
+    #cs long-lat
+    #fix FLT7 6.783152 46.081747	1929  #ALT IGN
+    #fix FLT7 6.78290 46.083990	1940  # GPS 2023 + Lidar IGN
+
+    #fix FLT7 6.783423 46.083738	1940  # Approx GoogleEarth
+
+    #cs UTM32
+    #fix FLT7 328586 5105769	1940  # GPS 2023 + Lidar IGN
+    fix FLT7 328997 5106426	1940  # GPS 2023 + Lidar IGN
+
+    #cs EPSG:2154
+    #fix FLT7 992211.1383    6560801.889 1940    # REf BD URSUS 2023
+
+    station FLT7 "FLT7 - L'Amin Dada" entrance air-draught #continuation explored 296m
+    
+    #fix FLT7b 6.783152 46.081747	1929  #ALT IGN
+    #station FLT7b "FLT7b" entrance air-draught continuation #explored ????m
+
+    data cartesian from to easting northing altitude
+    extend right
+
+    FLT7	1	-7.4	2.1	6
+1	2	-3.1	-2.1	-14.2
+2	3	-2.1	2.1	-0.8
+3	4	-9	2.6	-0.7
+4	5	-2.6	-0.5	-0.7
+5	6	-2.1	-9.5	-3.8
+6	7	-7.4	-4.2	-2.2
+7	8	-6.3	-14.7	-4.5
+8	9	-1.1	-10.9	-1.5
+9	10	-0.5	-3.3	-1.5
+10	11	3.7	-7.9	-1.5
+11	12	-2.1	-8.4	0
+12	13	-4.2	-5.8	-0.7
+13	14	-4.7	-1.1	-0.8
+14	15	-3.7	-5.8	-3
+15	16	0	0	-207.4
+16	17	-2.1	5.8	0
+17	18	0	0	-29.9
+18	19	-5.8	4.2	3
+19	20	0	0	-17.9
+20	21	-11.1	-1.5	-0.7
+21	22	-2.1	-2.2	-0.8
+22	23	-7.4	-1	-1.5
+
+  
+endcenterline
+
+ endsurvey
