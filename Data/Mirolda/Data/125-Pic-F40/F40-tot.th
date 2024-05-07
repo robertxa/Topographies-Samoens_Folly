@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -9,13 +9,13 @@ survey F40 -title "Gouffre du Pic - F40"
 	input Data/F40.th
 	
 	# Import du dessin en plan
-	#input Data/F40.th2
+	input Data/F40.th2
 
 	# Import du dessin en coupe
-	#input Data/F40-coupe.th2
+	input Data/F40-coupe.th2
 
 	# Import des maps
-	#input F40-maps.th
+	input F40-maps.th
  
  endsurvey
  

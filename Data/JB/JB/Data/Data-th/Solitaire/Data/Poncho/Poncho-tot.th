@@ -7,6 +7,8 @@ encoding  utf-8
 survey Poncho -title "Galerie du Poncho"
 	# Données topos
 	input Data/Poncho.th
+	input Data/Poncho2024.th
+		equate 21@Poncho2024 0@Poncho
 	
 	# Galerie du Poncho
 	input Data/Poncho.th2

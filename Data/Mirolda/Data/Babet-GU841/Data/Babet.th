@@ -7,11 +7,20 @@ encoding  utf-8
  
 survey Babet -title "Gouffre Babet - GU841"
 
- centerline -extend right
-    
-    
-    date 2021.08.12
-        team "Xavier Robert"
+ centerline -extend left
+     
+    date 1984.08
+        team "Jacques Gudefin"
+        team "Patrick Loiseau"
+        team "Jean Bottazzi"
+        team "Michel Dussurget"
+
+    explo-date 1984.08
+        explo-team "Jacques Gudefin"
+        explo-team "Patrick Loiseau"
+        explo-team "Jean Bottazzi"
+        explo-team "Michel Dussurget"
+
     #cs ???? (Lambert, mais lequel?)    
     cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
 
@@ -19,6 +28,296 @@ survey Babet -title "Gouffre Babet - GU841"
     fix Babet	944120	2130320	2060
     station Babet "G. Babet (GU841)" entrance air-draught
   
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to fromcount tocount backclino backcompass left right up down
+
+  #Dossier 1	A partir de l'entrée		Aout 1984		Bozzo, ZIZ, Jacques Gudefin, Michel					
+Babet	1	10643	10955	67	112	0.1	0.2	0.7	0.1		# etr.	
+1	2	10955	11275	78	102	0.1	0.1	1	0.9		# etr.	
+#2	3	11275	11243	0	0	0.2	0.1	1.8	0.1		# dans le virage	
+#3	4	11243	11544	90	157	0.05	0.25	0.1	3		# passage du bloc + cairn	
+2	3	11275	11342	0	0	0.2	0.1	1.8	0.1		# dans le virage	
+3	4	11342	11544	90	157	0.05	0.25	0.1	3		# passage du bloc + cairn	
+4	5	11544	11877	50.5	127	0.3	0.2	0.5	.		# Méandre droit	
+5	6	11988	12226	105	95	0.1	0.4	0.5	.		# Méandre droit	
+6	7	12226	12342	124	36	0.2	0.2	0.4	0.1		# avant bloc	
+7	8	12342	12638	86	88	0.5	0.3	0.4	1.1		# après bloc	
+8	9	12638	12827	25	92	0.3	0.2	1	.		# Puits	
+9	10	12827	14227	0	0	0.2	0.3	4	.		# Puits	
+10	11	14227	14433	92	125	0.3	0.5	.	.		# Puits	
+11	12	14433	14752	0	0	0	0.4	.	.		# Spit n°3	
+12	13	14752	15074	90	131	0.3	0.1	.	.		# Puits	
+13	14	15114	16026	0	0	0.1	0.4	.	.		# Puits ; enlever 40 cm	
+14	15	16026	16613	86	149	1	0.4	.	1		# méandre	
+15	16	16613	17267	0	0	0.1	0.4	0	8		# etr.	
+16	17	17267	17627	67	126	0.6	0.6	.	1.3		# Spit gros puis	
+17	18	17627	19063	27	115	.	.	.	.		# palier	
+18	19	19063	19263	0	267	1	1.5	.	1.3		# Ajouter 2 m, carrefour, amarrage	
+19	20	19263	19968	50	100	.	.	.	.	# B	# Pendule	
+20	21	19968	20202	40	55	0.5	0.5	1	1	# B	# Petite concrétion	
+21	22	20202	20359	42	171	.	1	0	4		# Haut du puits	
+22	23	20359	21478	31	105	3	0.5	4	2		# palier	
+23	24	21478	21919	54	120	0.3	1	2	1.2		# Sommet du puits	
+24	25	21919	23264	0	0	1	0.1	1.5	.		# Palier	
+25	26	23264	23865	43	124	0.6	0.6	6	7.2		# Haut du puits	
+extend right
+27	26	23865	24768	163	105	0.7	0.7	3	10.2	# Pas de I	# visée inverseé, vers le fond	
+#27	28	24768	24798	0	0	.	.	.	.			
+												
+21	29	24768	25269	29	53	0.2	0.2	0.5	0.5		# Pas de I, et un 2	# etr.
+29	30	25269	25477	36	45.5	0.15	0.15	0.5	0.4		# haut de puits
+30	31	25477	25990	18	140	0.3	0.2	0.7	.		# bas de puis
+31	32	25990	26123	48	103 0.3	0.2	1	1.2		# m&andre
+32	33	26123	26777	0	0	0.2	0.3	1	1		# fond de méandre									
+
+endcenterline
+
+centerline -extend right
+     
+    date 1984.08
+        team "Jacques Gudefin"
+        team "Manu Pozzera"
+        team "Jean Bottazzi"
+
+    explo-date 1986.08
+        explo-team "Jacques Gudefin"
+        explo-team "Manu Pozzera"
+        explo-team "Jean Bottazzi"
+  
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to fromcount tocount clino compass  #left right up down
+20	35	26777	27942	138	124	# Pas de I, et 1
+35	36	27942	28101	107	220	# Pas de I
+36	37	28101	28353	122	292	# Pas de I
+37	38	28353	28698	101	230	# Pas de I
+38	39	28698	28864	98	93	# Pas de I
+39	40	28864	29008	95	63	# Pas de I
+40	41	29008	29268	120	126	# Pas de I
+#41	42	29268	20807	265	123.5	# Pas de I, pente bizarre, ça va générer une erreur
+#41	42	29268	29807	165	123.5	# Pas de I, pente bizarre, ça va générer une erreur
+41	42	29268	29807	123.5   265	# Pas de I, pente bizarre, ça va générer une erreur
+42	43	29807	30201	91	242	# Pas de I
+43	44	30201	30592	87	280	# Pas de I
+endcenterline
+
+centerline -extend left
+     
+    date 1984.08
+        team "Jacques Gudefin"
+        team "Xavier Julliard"
+
+    explo-date 1986.08
+        explo-team "Jacques Gudefin"
+        explo-team "Xavier Julliard"
+  
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to fromcount tocount backclino backcompass  #left right up down
+45	46	61389	61884	90	245	
+46	47	61884	62063	180	0	
+47	48	62063	62670	90	255	
+48	49	62724	64902	180	0	
+49	50	64902	65234	90	177	
+50	51	65234	65555	130	120	
+51	52	65555	65990	90	84	
+52	53	65990	68535	180	0	
+53	54	68535	68781	90	50	
+54	55	68781	69104	180	0	
+55	56	69104	69426	130	25	
+56	57	69426	69889	90	351	
+57	58	70243	70612	90	15	
+58	59	70612	70752	180	0	
+59	60	70752	71184	121	35	
+60	61	71184	71261	90	60	
+61	62	71261	71536	128	130	
+62	63	71536	71686	90	250	
+63	64	71569	72351	180	0	
+64	65	72351	72494	90	245	
+65	66	72494	72631	100	178	
+66	67	72631	72838	125	227	
+67	68	72838	73012	90	98	
+68	69	73012	73188	130	115	
+69	70	73188	73435	90	205	
+70	71	73435	73506	90	138	
+71	72	73506	74053	180	0	
+72	73	74053	74294	90	109	
+73	74	74294	74445	90	70	
+74	75	74445	74881	100	110	
+75	76	74881	75741	145	100	
+76	77	75741	76744	180	0	
+77	78	76744	77002	153	130	
+78	79	77002	77245	90	80	
+79	80	77245	77444	150	119	
+80	81	77444	77921	90	115	
+81	82	77444	78000	90	115	
+82	83	77921	79584	180	0	
+83	84	79584	80000	135	85	
+84	85	79584	80000	90	85	
+85	86	79584	80620	180	0	
+86	87	80620	81000	90	235	
+87	88	80620	81065	180	0	
+88	44	81065	81645	115	290	
+
+endcenterline
+
+centerline -extend left
+     
+    date 1984.08
+        team "Jacques Gudefin"
+        team "Xavier Julliard"
+        team "Jean Bottazzi"
+
+    explo-date 1984.08
+        explo-team "Jacques Gudefin"
+        explo-team "Xavier Julliard"
+        explo-team "Jean Bottazzi"
+  
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #left right up down
+
+#    Dossier 3				
+#méandre de -208 m				
+#Bozzo, Xavier, Jacques Gudefin				
+#En montant, topo en bas				
+				
+#from	to	 length	az	p
+72r	73r	3.56	304.2	45.9
+73r	74r	1.09	291.1	90
+74r	75r	2.02	3.6	79.2
+75r	76r	2.69	266.4	18.9
+76r	77r	2.9	319.5	90
+77r	78r	2.74	0	0
+78r	79r	2.35	343.8	70.2
+79r	80r	1.6	9	77.4
+80r	81r	3.25	251.9	54
+81r	82r	2.4	1.8	63.9
+82r	83r	1.02	334.8	63
+83r	84r	3.6	4.5	87.3
+84r	85r	3.82	21.6	71.1
+85r	86r	1.52	357.3	72.9
+86r	87r	5.59	21.6	71.1
+87r	88r	0.2	0	0
+88r	89r	6.82	50.4	62.1
+89r	90r	6.84	61.2	50.4
+90r	91r	4.05	54	54.9
+91r	92r	4.68	0	0
+92r	93r	1.17	193.3	60.3
+93r	94r	2.73	62.1	66.6
+94r	95r	0.98	91.8	84.6
+95r	96r	1.64	93.6	87.3
+96r	97r	1.31	80.1	78.3
+97r	98r	1.96	144	84.6
+#98r	33r	1.32	45	90
+98r	45	1.32	45	90
+
+
+endcenterline
+
+centerline -extend left
+     
+    date 1986.08
+        team "Jacques Gudefin"
+        team "Manu Pozzera"
+        team "Jean Bottazzi"
+
+    explo-date 1986.08
+        explo-team "Jacques Gudefin"
+        explo-team "Manu Pozzera"
+        explo-team "Jean Bottazzi"
+  
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #left right up down
+##Dossier0, suite de la rivière	Aout 1986		Jacques Gudefin, Manu, Bozzo			
+##Topofaite en remontant, donc visées vers le haut						du degrès
+##From	To	Length	Compass	clino		
+W	67r	9.64	72	64		
+67r	68r	7.27	83	67		
+68r	69r	3.29	117	101		
+69r	70r	7.42	88	62		
+70r	71r	9.63	70	54		
+71r	66r	1.5	160	90	# étroiture	
+endcenterline
+
+centerline -extend right
+     
+    date 1986.08
+        team "Jacques Gudefin"
+        team "Xavier Julliard"
+
+    explo-date 1986.08
+        explo-team "Jacques Gudefin"
+        explo-team "Xavier Julliard"
+  
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #left right up down
+#Dossier 2		Aout 86	Jacques Gudefin, Xavier		
+#		visée de haut en bas (boite en amont			
+#Accès à la rivière					
+					
+72r	34r	4.89	241	126	# Raccord meilleur
+
+34r	35r	4.26	265	120	
+35r	36r	14.47	241	135	
+36r	37r	3.82	170	147	
+37r	38r	9.71	251	114	# etr.
+38r	39r	2.87	0	180	# etr. Verticale ; vérifier pente
+39r	40r	2.62	175	88	
+40r	41r	3.52	247	99	
+41r	42r	6.6	165	140	
+42r	43r	13.3	245	118	
+43r	44r	2.11	165	118	
+44r	45r	9.45	246	110	
+45r	46r	5.65	287	87	
+46r	47r	2.12	240	125	# etr. Verticale ;marmitte
+47r	48r	4.47	285	103	
+48r	49r	4.27	225	125	
+49r	50r	23.68	223	96	
+50r	A	7.04	259	100	
+A	B	4.51	191	104	
+B	53r	9.73	228	122	
+53r	54r	3.32	185	124	# Toboggan
+54r	55r	19.7	248	118	# Toboggan
+55r	56r	19.91	233	126	
+56r	57r	1.67	244	119	
+57r	58r	6.9	182	124	
+58r	59r	8.36	245	117	
+59r	60r	1.97	222	125	
+60r	61r	3.53	292	98	
+61r	62r	1.42	0	180	
+62r	63r	0.5	257	90	# visée horizontale
+63r	64r	3.43	257	128	
+64r	65r	5.07	238	118	
+65r	66r	6.36	258	116	# etr.
+
 endcenterline
 
  endsurvey

@@ -6,17 +6,31 @@ encoding  utf-8
 
 #### Plan
 
-map MP-Poncho -title "Galerie du Poncho"
+map MP-Poncho1 -title "Galerie du Poncho"
 	SP-Poncho-1
-#	break
-#	SP-Poncho-1
 endmap
+
+map MP-Poncho2 -title "Galerie du Poncho"
+	SP-Poncho2024-1
+	break
+	SP-Poncho2024-2
+endmap
+
+map MP-Poncho -title "Galerie du Poncho"
+	MP-Poncho1
+	break
+	MP-Poncho2
+endmap
+
 
 ########## Coupe
 
 map MC-Poncho -title "Galerie du Poncho"
+	SC-Poncho2024-1
+	break
 	SC-Poncho-1
-#	break
-#	SC-Poncho-2
+	break
+	SC-Poncho2024-2
+	
 endmap
 

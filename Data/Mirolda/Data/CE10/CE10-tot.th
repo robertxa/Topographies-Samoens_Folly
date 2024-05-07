@@ -6,7 +6,8 @@ encoding  utf-8
 
 survey CE10 -title "Gouffre CE10"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/CE10.th
+	input Data/CE10/CE10-tot.th
+	input Data/E71/E71-tot.th
 	
 	# Import du dessin en plan
 	#input Data/CE10.th2

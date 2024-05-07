@@ -146,8 +146,8 @@ select MC-solitaire-tot@Solitaire
 #select MC-solitaire-JB@Solitaire
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2023b.pdf
-	export map -layout layout_plan -o Outputs/2D/solitaire-plan2023b.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/2D/solitaire-coupe2024.pdf
+	export map -layout layout_plan -o Outputs/2D/solitaire-plan2024.pdf
  
 # Export des modeles 3D
 	export model -o Outputs/3D/solitaire.lox

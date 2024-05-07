@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -27,7 +27,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera 
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-source FC231-tot.th
+source F30-tot.th
 
 # Add Coordinates
 #input legendes/entrances_coordinates.th
@@ -71,17 +71,17 @@ layout my_layout
   # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
   # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
   # des caractères et des traits.
-  base-scale 1 400
+  base-scale 1 1000
 
   # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
   # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
   # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
   # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
-  scale 1 200
+  scale 1 1000
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
-  scale-bar 20 m
+  scale-bar 100 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
   #grid bottom
@@ -104,7 +104,7 @@ layout my_layout
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "FC231 plan - 1:1000"
+  doc-title "F30 plan - 1:1000"
 
   # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
   # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
@@ -113,7 +113,7 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 0 nw
+  map-header 0 -30 nw
   # arrière plan de la manchette
   map-header-bg off
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
@@ -135,8 +135,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
 
   layers on
 
@@ -151,15 +151,15 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre FC231} 
+			\cavename={Gouffre F30} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda}
+		\newtoks\club \club={URSUS}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
 
   ## add extended-elev on the same pdf
-  map-image 90 110 nw Outputs/FC231-coupe.pdf
+  #map-image 90 110 nw Outputs/F30-coupe.pdf
   
  endlayout
 # Fin de la definition du Layout "normal"
@@ -170,8 +170,8 @@ layout layout-coupe
   #copy Coords_Header_CDa
 	## Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	#copy header_coupe 
-	#copy langue-fr
+	copy header_coupe 
+	copy langue-fr
 	
   # Définition du système de projection du plan
   #cs UTM32
@@ -182,17 +182,17 @@ layout layout-coupe
   # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
   # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
   # des caractères et des traits.
-  base-scale 1 200
+  base-scale 1 1000
 
   # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
   # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
   # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
   # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
-  scale 1 200
+  scale 1 1000
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
-  scale-bar 20 m
+  scale-bar 100 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
   #grid bottom
@@ -215,7 +215,7 @@ layout layout-coupe
   # Auteur 
   doc-author "Xavier Robert"
   # Titule
-  doc-title "FC231 coupe développée - 1:1000"
+  doc-title "F30 coupe développée - 1:1000"
 
   # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
   # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
@@ -224,60 +224,60 @@ layout layout-coupe
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 120 nw
+  map-header 0 0 nw
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
   legend off
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 10 cm
+  legend-width 15 cm
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
   #map-comment "Massif du Criou, Samoëns, 74, France"
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
   statistics explo-length off
-  statistics explo off
+  #statistics explo off
   statistics topo-length off
-  statistics topo off
-  statistics carto off
+  #statistics topo off
+  #statistics carto off
   ## Afficher un copyright
-  #statistics copyright 2
-  statistics copyright off
+  statistics copyright 2
+  #statistics copyright off
 
   # To suppress the displaY of cave length/depth in map header
-	code tex-map
-		\cavelength={} %empty
-		\cavedepth={}  %empty
-	endcode
+	#code tex-map
+	#	\cavelength={} %empty
+	#	\cavedepth={}  %empty
+	#endcode
   
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
 
   layers on
 
 	# Modification du Titre de la topo
-	#code tex-map
-	#	% Output map title as determined by Therion is stored in cavename, défini par la une Map. 
-	#	% It will be empty if there are multiple maps selected for any one projection
-	#	% AND there are multiple source surveys identified in the thconfig file 
-	#	% ie Therion can not infer a unique title from the input data given.
-	#	% This code allows you to define an output map title {cavename} if it happens to be empty
-	#	\edef\temp{\the\cavename}        % cavename from Therion   
-	#	\edef\nostring{}                 % empty string 
-	#	\ifx\temp\nostring             % test if cavename is empty
-	#		% if empty reassign cavename to describe selected maps as a group
-	#		\cavename={Gouffre FC231} 
-	#	\else % if not empty keep the value set by therion, or assign an override cavename here
-	#	\fi
-	#	\newtoks\club \club={Collectif Mirolda}
-	#	%\newtoks\synth \synth={Xavier Robert}
-	#endcode   
+	code tex-map
+		% Output map title as determined by Therion is stored in cavename, défini par la une Map. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+		\edef\temp{\the\cavename}        % cavename from Therion   
+		\edef\nostring{}                 % empty string 
+		\ifx\temp\nostring             % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre F30} 
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={URSUS}
+		%\newtoks\synth \synth={Xavier Robert}
+	endcode   
   
  endlayout
 # Fin de la definition du Layout "normal"
@@ -285,26 +285,26 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/FC231-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/FC231-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/F30-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/F30-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-FC231-plan@FC231
-select MC-FC231-coupe@FC231
+select MP-F30-plan@F30
+select MC-F30-coupe@F30
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/FC231-coupe.pdf
- export map -proj plan -fmt pdf -o Outputs/FC231-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/F30-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/F30-plan.pdf -layout my_layout
  
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/FC231.lox
+ export model -enable all -o Outputs/F30.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/FC231 -layout my_layout
+# export map -proj plan -fmt esri -o Outputs/F30 -layout my_layout
 
 # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/FC231.kml -layout my_layout
- export model -fmt kml -o Outputs/FC231-model.kml -enable all
- export cave-list -location on -o Outputs/FC231.html
+ export map -proj plan -fmt kml -o Outputs/F30.kml -layout my_layout
+ export model -fmt kml -o Outputs/F30-model.kml -enable all
+ #export cave-list -location on -o Outputs/F30.html

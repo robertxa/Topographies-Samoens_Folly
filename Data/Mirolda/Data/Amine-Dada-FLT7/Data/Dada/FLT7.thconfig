@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -111,18 +111,18 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 0 0 s
+  map-header 100 100 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
 
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 14 cm
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
   scale-bar 100 m
@@ -142,8 +142,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -170,7 +170,7 @@ layout my_layout
 
 
 
-layout atlas_layout
+layout layout-coupe
 	
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
@@ -260,17 +260,17 @@ layout atlas_layout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/FLT7-map.xvi
+export map -fmt xvi -layout xviexport -o Data/FLT7-map.xvi
 #export map -proj extended -layout xviexport -fmt xvi -o Data/FLT7-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-FLT7-tot
-select MC-FLT7-tot
+select MP-FLT7@FLT7
+select MC-FLT7@FLT7
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
  export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch

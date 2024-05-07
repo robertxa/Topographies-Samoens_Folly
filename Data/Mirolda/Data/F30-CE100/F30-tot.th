@@ -1,21 +1,21 @@
 encoding  utf-8
 
-# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey FC231 -title "Perte du FC231"
+survey F30 -title "Perte du F30"
 	# Pour importer les différentes données de différents fichiers topos : 
-	input Data/FC231.th
+	input Data/F30.th
 	
 	# Import du dessin en plan
-	input Data/FC231.th2
+	#input Data/F30.th2
 
 	# Import du dessin en coupe
-	input Data/FC231-coupe.th2
+	#input Data/F30-coupe.th2
 
 	# Import des maps
-	input FC231-maps.th
+	#input F30-maps.th
  
  endsurvey
  

@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1984 URSUS - 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -9,8 +9,8 @@ survey Frigo -title "Gouffre du Frigo - EU836"
 
  centerline -extend right
     
-    date 2021.08.12
-        team "Xavier Robert"
+    date 1984.08
+        #team ""
 
     #cs ???? (Lambert, mais lequel?)
     cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
@@ -18,6 +18,52 @@ survey Frigo -title "Gouffre du Frigo - EU836"
     ##fix Frigo	944.2	130.55	2164
     fix Frigo	944200	2130550	2164
     station Frigo "G. du Frigo (EU836)" entrance air-draught
+
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #clino #left right up down
+
+    Frigo	1	8.96	358	81	
+1	2	8.15	145	121.5	
+2	3	6.98	255	135	
+3	4	6.16	196	140.4	
+4	5	4.7	204	140.4	
+5	6	4.49	277	158.4	
+6	7	4.47	310	144	
+7	8	1.63	50	81	# visée faite à l'envers ?
+8	9	2.92	324	73.8	
+9	A	19.4	0	180	
+A	11	5.46	95	99	
+11	W	6.27	100	124.2	
+					
+A	13	7.21	336	103.5	# A partir de A
+13	Y	12.18	240	90.9	
+					
+A	15	5.48	161	50.4	# A partir de A
+15	16	17.19	270	11.6	
+16	17	9.34	328	117	
+17	18	8.06	210	94.5	
+					
+Y	19	7.24	280	126	# A parti de Y
+19	20	8.43	206	98.1	
+20	30	3.98	250	85.5	
+30	31	3.77	287	104.4	
+31	32	1.44	0	180	
+32	33	8.05	282	104.3	
+33	34	3.45	269	126.9	
+34	B	7.33	185	117	
+B	36	6.59	308	108	
+					
+B	37	8.64	0	180	# A parti de B
+					
+W	38	3.89	100	105.3	# A partir de W
+38	39	4.16	120	54	
+39	40	5.25	85	15.3	
+40	41	7.62	109	45.9	
   
 endcenterline
 

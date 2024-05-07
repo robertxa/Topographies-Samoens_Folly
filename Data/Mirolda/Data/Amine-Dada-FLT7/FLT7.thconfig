@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -111,25 +111,25 @@ layout my_layout
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  #map-header 0 0 s
+  map-header 0 0 nw
 
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
 
   # Par défaut, la légende est de 14 cm de largeur
-  legend-width 21 cm
+  legend-width 14 cm
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
   scale-bar 100 m
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif cu Criou, Samoëns, 74, France"
+  map-comment "<it>Plan - <ss>Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -161,7 +161,7 @@ layout my_layout
 			\cavename={L'Amine Dada - FLT7} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda}
+		\newtoks\club \club={FLT, URSUS}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -170,7 +170,7 @@ layout my_layout
 
 
 
-layout atlas_layout
+layout layout-coupe
 	
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
@@ -247,7 +247,7 @@ layout atlas_layout
 			\cavename={L'Amine Dada - FLT7} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda}
+		\newtoks\club \club={FLT, URSUS}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -264,17 +264,17 @@ layout atlas_layout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/FLT7-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-FLT7-plan-tot
-select MC-FLT7-coupe-tot
+select MP-FLT7@FLT7
+select MC-FLT7@FLT7
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/FLT7-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/FLT7-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/FLT7-2022.lox
+ export model -enable all -o Outputs/FLT7.lox
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/FLT7-2022 -layout my_layout
@@ -287,9 +287,9 @@ select MC-FLT7-coupe-tot
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseFLT7-2022.sql
+#export database -fmt sql -o Outputs/databaseFLT7-2022.sql
 
-export continuation-list -o Outputs/ContinuationsFLT7-2022.html
+#export continuation-list -o Outputs/ContinuationsFLT7-2022.html
 #export continuation-list -o Outputs/ContinuationsFLT7-2022.kml
-export survey-list -location on -o Outputs/SurveysFLT72022.html
+#export survey-list -location on -o Outputs/SurveysFLT72022.html
 #export cave-list -location on -o Outputs/CavesFLT72022.html

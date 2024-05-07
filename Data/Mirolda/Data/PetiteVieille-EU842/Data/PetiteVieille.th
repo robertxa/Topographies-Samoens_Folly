@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1984, URSUS - 2024, Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -9,8 +9,8 @@ survey PetiteVieille -title "Gouffre de la Petite Vieille - EU842"
 
  centerline -extend right
     
-    date 2021.08.12
-        team "Xavier Robert"
+    date 1984
+        #team "Xavier Robert"
 
     #cs ???? (Lambert, mais lequel?)
     cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
@@ -19,6 +19,44 @@ survey PetiteVieille -title "Gouffre de la Petite Vieille - EU842"
     fix EU842	943930	2130300	2015
     station EU842 "G. de la Petite Vieille (EU842)" entrance air-draught
     
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to fromcount tocount backclino backcompass #clino #left right up down
+    extend right
+    0	1	37196	38166	156	287	
+1	2	38166	38584	147	50	
+2	3	38584	39161	101	330	
+extend left
+3	4	39161	40472	121	130	
+4	5	40472	41207	94	142	
+5	6	41207	41707	90	157
+
+6	7	50502	52026	78	132	
+7	B	52026	53840	110	200	# Point B
+B	9	53840	54465	110	200	
+9	10	54465	55920	60	113	
+10	11	55920	57133	88	143	
+
+extend right						
+B	12	57133	57321	90	300	
+12	13	57321	57747	158	320	
+13	14	57747	58069	90	296	
+14	15	58069	58425	33	237	
+15	16	58425	59037	91	286	
+16	17	59037	60628	162	280	
+17	18	60628	61279	180	0	
+18	EU842	61279	61679	122	272	
+
+data normal from to length compass clino #left right up down
+flags approximate
+6   20  17  0   180
+5   21  46  0   180
+flags not approximate
+
 endcenterline
 
  endsurvey

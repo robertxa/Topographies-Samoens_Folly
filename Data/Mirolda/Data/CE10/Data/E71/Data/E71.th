@@ -1,0 +1,73 @@
+encoding  utf-8
+
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey E71 -title "Gouffre E71"
+
+ centerline -extend right
+    
+    
+    date 1985
+        team "Jacques Gudefin"
+        team "Gérard Gudefin"
+
+    #cs ???? (Lambert, mais lequel?)
+    #cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+	
+    cs EPSG:2154    # L93
+    fix E71	992541.4706	6561035.321	2112
+    station E71 "CE10" entrance air-draught
+    #fix E74	943960	2130370	2070
+    #station E74 "CE10" entrance air-draught
+
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #clino #left right up down
+    #from	to	L	A	P	Rem
+E71	1	6.78	329	132	
+1	2	4.44	284	138	
+2	3	2.52	192	145	
+3	4	9.38	0	180	
+4	5	16.19	0	180	
+5	6	1.84	300	85	
+6	7	4.57	64	161	
+7	8	3.76	344	82	
+8	9	12.2	360	87	
+9	10	2.17	4	83	
+8	11	6.81	295	83	# Départ de 8
+11	12	6.27	278	140	
+12	13	3.16	191	147	
+13	14	1.19	200	90	
+14	15	1.83	265	40	
+15	16	4.56	276	120	
+16	17	3.01	250	122	
+17	18	5.37	117	35	
+18	19	1.86	113	74	
+19	20	2.51	180	20	
+20	21	5.08	275	75	
+21	22	2.71	267	105	
+22	23	4.04	277	28	
+23	24	3.33	280	84	
+24	25	6.27	270	108	
+25	26	4.69	295	124	
+5	30	2.42	110	86	# Départ de 5
+30	31	5.52	105	160	
+31	32	5.14	0	180	
+32	33	7.35	140	161	
+5	40	2.25	240	132	# Départ de 5
+40	41	5.2	0	180	
+41	42	2.53	200	115	
+42	43	5.77	0	180	
+43	44	2.69	195	126	
+44	45	6.93	0	180	
+  
+endcenterline
+
+ endsurvey

@@ -1,21 +1,77 @@
 encoding  utf-8
 
-# Copyright (C) 2023, Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1986, URSUS - 2024, Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
-survey F40 -title "Gouffre F40"
+survey F40 -title "G. 125 à Pic (F40)"
 
  centerline -extend right
     
+    date 1986.08
+        team "Jacques Gudefin"
+        team "Sylvain Matricon"
+    explo-date 1986.08
+        explo-team "Jacques Gudefin"
+        explo-team "Sylvain Matricon"
     
-    #date 2021.08.12
-        #team "Xavier Robert"
     cs UTM32
     fix       F40       328621  5106466     2151    # GPS 2023 + Lidar IGN
-    station F40 "G. 125 à Pic (F40)" entrance air-draught continuation explored 190m
-  
+    station F40 "G. 125 à Pic (F40)" entrance air-draught #continuation explored 190m
+
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #clino #left right up down
+    
+    F40	1	6.3	193	129	# Entrée
+1	2	13.6	186	125	
+2	3	5.8	190	124	
+3	4	3.27	107	127	
+4	5	1.88	127	152	
+5	6	5.54	186	151	
+6	7	4.5	133	145	
+7	8	13.13	197	142	
+8	9	5.93	140	114	
+9	10	3.26	124	93	
+10	11	3.21	165	120	
+11	12	3.94	285	94	
+12	13	1.11	190	90	
+13	14	6.37	0	180	# Verticlae
+14	15	3.14	253	112	
+15	16	13.12	0	180	# Verticlae
+16	17	3.36	220	85	
+17	18	1.97	280	93	
+18	19	2.94	265	94	
+19	20	6.21	0	180	# Verticlae
+20	21	2.86	230	68	
+21	22	9.15	0	180	# Verticlae
+22	23	4.87	278	89	
+23	24	3.39	200	98	
+24	25	1.86	196	116	
+25	26	1.44	252	124	
+26	27	6.46	0	180	# Puits
+27	28	10.31	145	168	
+28	29	1.55	50	85	
+29	30	44.19	0	180	# P50
+extend left
+30	31	2.92	280	100	
+31	32	6.55	0	180	# Puits Z
+32	33	8.19	215	120	
+33	34	1.88	203	152	
+34	35	4.86	209	118	
+
+35	36	7.95	0	180	
+36	37	4.6	204	92	
+37	38	0.59	0	180	
+38	39	1.41	226	92	
+39	40	5.93	88	162	# Puits Noir
+#40	41	Non topo			
+
 endcenterline
 
  endsurvey

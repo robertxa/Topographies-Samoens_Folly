@@ -1,0 +1,224 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Babet -title "Gouffre Babet - GU841"
+
+ centerline -extend right
+     
+    date 1984.08
+        team "Jacques Gudefin"
+        team "Ziz"
+        team "Jean Bottazzi"
+        team "Michel "
+
+    explo-date 1984.08
+        explo-team "Jacques Gudefin"
+        explo-team "Ziz"
+        explo-team "Jean Bottazzi"
+        explo-team "Michel "
+
+    #cs ???? (Lambert, mais lequel?)    
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+
+    #fix Babet	944.12	130.32	2060
+    fix Babet	944120	2130320	2060
+    station Babet "G. Babet (GU841)" entrance air-draught
+  
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to fromcount tocount backcompass backclino left right up down
+
+  #Dossier 1	A partir de l'entrée		Aout 1984		Bozzo, ZIZ, Jacques Gudefin, Michel					
+									
+Babet	1	10643	10955	112	67	0.1	0.2	0.7	0.1	# etr.
+1	2	10955	11275	102	78	0.1	0.1	1	0.9	# etr.
+2	3	11275	11342	0	0	0.2	0.1	1.8	0.1	# dans le virage
+3	4	11342	11544	157	90	0.05	0.25	0.1	3	# passage du bloc + cairn
+4	5	11544	11877	127	50.5	0.3	0.2	0.5	.	# Méandre droit
+5	6	11988	12226	95	105	0.1	0.4	0.5	.	# Méandre droit
+6	7	12226	12342	36	124	0.2	0.2	0.4	0.1	# avant bloc
+7	8	12342	12638	88	86	0.5	0.3	0.4	1.1	# après bloc
+8	9	12638	12827	27	49	0.3	0.2	1	.	# Puits
+9	10	12827	13920	92	25	0.2	0.3	4	.	# Puits
+10	11	13920	14227	0	0	0.3	0.5	.	.	# Puits
+11	12	14227	14433	125	92	0	0.4	.	.	# Spit n°3
+12	13	14433	14752	0	0	0.3	0.1	.	.	# Puits
+13	14	14752	15114	131	90	0.1	0.4	.	.	# Puits ; enlever 40 cm
+14	15	15114	16026	0	0	1	0.4	.	1	
+15	16	16026	16613	149	84	0.1	0.4	0	8	# méandre
+16	17	16613	17267	0	0	0.6	0.6	.	1.3	# etr.
+17	18	17267	17627	126	67	.	.	.	.	# Spit gros puis
+18	19	17627	19063	115	27	1	1.5	.	1.3	# palier
+19	19b	19063	19263	267	90	.	.	.	.	# Ajouter 2 m, carrefour, amarrage
+19b	20	19063	19968	160	50	0.5	0.5	1	1	# Pendule
+20	21	19968	20202	55	40	.	1	0	4	# Petite concrétion
+21	22	20202	20359	171	42	3	0.5	4	2	# Haut du puits
+22	23	20359	21478	105	31	0.3	1	2	1.2	# palier
+23	24	21478	21919	120	54	1	0.1	1.5	.	# Sommet du puits
+24	25	21919	23264	0	0	0.6	0.6	6	7.2	# Palier
+25	26	23264	23865	124	43	0.7	0.7	3	10.2	# Haut du puits
+26	27	23992	24768	105	163	.	.	.	.	# visée inverseé, vers le fond
+27	28	24768	24798	0	0	0.2	0.2	0.5	0.5	
+										
+28	29	24768	25269	53	29	0.15	0.15	0.5	0.4	# etr.
+29	30	25269	25477	36	43.5	0.3	0.2	0.7	.	# haut de puits
+30	31	25477	25990	140	18	0.3	0.2	1	1.2	# bas de puis
+31	32	25990	26123	103	48	0.2	0.3	1	1	# m&andre
+32	33	26123	26777	0	0	.	.	.	.	# fond de méandre
+endcenterline
+
+centerline -extend right
+     
+    date 1984.08
+        team "Jacques Gudefin"
+        team "Xavier"
+        team "Jean Bottazzi"
+
+    explo-date 1984.08
+        explo-team "Jacques Gudefin"
+        explo-team "Xavier"
+        explo-team "Jean Bottazzi"
+  
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #left right up down
+
+#    Dossier 3				
+#méandre de -208 m				
+#Bozzo, Xavier, Jacques Gudefin				
+#En montant, topo en bas				
+				
+#from	to	 length	az	p
+xx	73	3.56	304.2	45.9
+73	74	1.09	291.1	90
+74	75	2.02	3.6	79.2
+75	76	2.69	266.4	18.9
+76	77	2.9	319.5	90
+77	78	2.74	0	0
+78	79	2.35	343.8	70.2
+79	80	1.6	9	77.4
+80	81	3.25	251.9	54
+81	82	2.4	1.8	63.9
+82	83	1.02	334.8	63
+83	84	3.6	4.5	87.3
+84	85	3.82	21.6	71.1
+85	86	1.52	357.3	72.9
+86	87	5.59	21.6	71.1
+87	88	0.2	0	0
+88	89	6.82	50.4	62.1
+89	90	6.84	61.2	50.4
+90	91	4.05	54	54.9
+91	92	4.68	0	0
+92	93	1.17	193.3	60.3
+93	94	2.73	62.1	66.6
+94	95	0.98	91.8	84.6
+95	96	1.64	93.6	87.3
+96	97	1.31	80.1	78.3
+97	98	1.96	144	84.6
+98	33	1.32	45	90
+
+
+endcenterline
+
+centerline -extend right
+     
+    date 1986.08
+        team "Jacques Gudefin"
+        team "Manu"
+        team "Jean Bottazzi"
+
+    explo-date 1986.08
+        explo-team "Jacques Gudefin"
+        explo-team "Manu"
+        explo-team "Jean Bottazzi"
+  
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #left right up down
+#Dossier0, suite de la rivière	Aout 1986		Jacques Gudefin, Manu, Bozzo			
+#Topofaite en remontant, donc visées vers le haut						du degrès
+#From	To	Length	Compass	clino		
+W	67	9.64	72	64		
+67	68	7.27	83	67		
+68	69	3.29	117	101		
+69	70	7.42	88	62		
+70	71	9.63	70	54		
+71	19	1.5	160	90	# étroiture	
+endcenterline
+
+centerline -extend right
+     
+    date 1986.08
+        team "Jacques Gudefin"
+        team "Xavier"
+
+    explo-date 1986.08
+        explo-team "Jacques Gudefin"
+        explo-team "Xavier"
+  
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #left right up down
+#Dossier 2		Aout 86	Jacques Gudefin, Xavier		
+#		visée de haut en bas (boite en amont			
+#Accès à la rivière					
+					
+74	34	4.89	241	126	# Raccord meilleur
+
+34	35	4.26	265	120	
+35	36	14.47	241	135	
+36	37	3.82	170	147	
+37	38	9.71	251	114	# etr.
+38	39	2.87	0	180	# etr. Verticale ; vérifier pente
+39	40	2.62	175	88	
+40	41	3.52	247	99	
+41	42	6.6	165	140	
+42	43	13.3	245	118	
+43	44	2.11	165	118	
+44	45	9.45	246	110	
+45	46	5.65	287	87	
+46	47	2.12	240	125	# etr. Verticale ;marmitte
+47	48	4.47	285	103	
+48	49	4.27	225	125	
+49	50	23.68	223	96	
+50	A	7.04	259	100	
+A	B	4.51	191	104	
+B	53	9.73	228	122	
+53	54	3.32	185	124	# Toboggan
+54	55	19.7	248	118	# Toboggan
+55	56	19.91	233	126	
+56	57	1.67	244	119	
+57	58	6.9	182	124	
+58	59	8.36	245	117	
+59	60	1.97	222	125	
+60	61	3.53	292	98	
+61	62	1.42	0	180	
+62	63	0.5	257	90	# visée horizontale
+63	64	3.43	257	128	
+64	65	5.07	238	118	
+65	66	6.36	258	116	# etr.
+
+endcenterline
+
+
+ endsurvey

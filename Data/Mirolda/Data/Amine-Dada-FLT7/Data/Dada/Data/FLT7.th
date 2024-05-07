@@ -12,23 +12,23 @@ survey FLT7 -title "Gouffre Amine Dada - FLT7"
     #date 2021.08.12
     #    team "Xavier Robert"
     explo-date 1975
-        explo-team "Club/Fontaine La Tronche (FLT)"
+        explo-team "FLT"
     explo-date 1977
-        explo-team "Club/Fontaine La Tronche (FLT)"
-    explo-date 1980
-        explo-team "Club/Ursus"
+        explo-team "FLT"
+    explo-date 1985
+        explo-team "URSUS"
     explo-date 1990
-        explo-team "Club/Ursus"
+        explo-team "URSUS"
 
-    #cs long-lat
+    cs long-lat
     #fix FLT7 6.783152 46.081747	1929  #ALT IGN
     #fix FLT7 6.78290 46.083990	1940  # GPS 2023 + Lidar IGN
 
-    #fix FLT7 6.783423 46.083738	1940  # Approx GoogleEarth
+    fix FLT7 6.783423 46.083738	1940  # Approx GoogleEarth
 
     #cs UTM32
     #fix FLT7 328586 5105769	1940  # GPS 2023 + Lidar IGN
-    fix FLT7 328997 5106426	1940  # GPS 2023 + Lidar IGN
+    #fix FLT7 328997 5106426	1940  # GPS 2023 + Lidar IGN
 
     #cs EPSG:2154
     #fix FLT7 992211.1383    6560801.889 1940    # REf BD URSUS 2023

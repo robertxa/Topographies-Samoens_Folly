@@ -1,16 +1,16 @@
 encoding  utf-8
 
-# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 1984, URSUS - 2024, Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
  
-survey NouveauNe -title "Gouffre du NouveauNe - GU847"
+survey NouveauNe -title "Gouffre du Nouveau Né - GU847"
 
  centerline -extend right
     
-    date 2021.08.12
-        team "Xavier Robert"
+    date 1984
+        #team "Xavier Robert"
 
     #cs ???? (Lambert, mais lequel?)
     cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
@@ -18,7 +18,30 @@ survey NouveauNe -title "Gouffre du NouveauNe - GU847"
     ##fix GU847	844.04	130.17	2010
     fix GU847	944040	2130170	2010
     station GU847 "G. du Nouveau Né (GU847)" entrance air-draught
-  
+    
+    units length meters
+    units counter centimeters
+    calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to fromcount tocount backclino compass #clino #left right up down
+    GU847	1	82086	82287	46	165
+1	2	82287	82596	70	340
+2	3	82596	82910	52	290
+3	4	82910	83055	90	72
+4	5	83055	84308	50	18
+5	6	84308	84750	75	11
+6	7	84750	86252	18	348
+7	8	86252	86672	52	260
+8	9	86714	90398	0	0
+9	10	90398	90727	78	195
+10	11	90727	91223	28	232
+11	12	91223	91614	28	238
+12	13	91614	92058	73	160
+13	14	92058	96727	0	0
+14	15	96727	97216	0	0
+
 endcenterline
 
  endsurvey

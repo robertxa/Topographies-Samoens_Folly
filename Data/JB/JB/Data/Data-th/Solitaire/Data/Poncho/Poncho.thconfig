@@ -49,7 +49,7 @@ layout layout_plan
 	legend off
 	#legend-width 22 cm
 	legend-width 15 cm
-	map-header 100 100 nw
+	map-header 60 60 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -78,7 +78,7 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	map-image 25 100 sw Outputs/Poncho-coupe.pdf
+	#map-image 25 100 sw Outputs/Poncho-coupe.pdf
   
 endlayout
   
@@ -86,7 +86,7 @@ endlayout
 layout layout_coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	#copy header_coupe 
+	copy header_coupe 
 	copy langue-fr
 	
 	#debug scrap-names
@@ -108,22 +108,23 @@ layout layout_coupe
 	opacity 65
 	language fr
 	map-comment "<it>Coupe développée - <ss>Gouffre Jean-Bernard"
-	#statistics explo-length off
-	#statistics topo-length off
-	#statistics copyright all
-	statistics explo off
-	statistics topo off
-	statistics carto off
-	statistics copyright off
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	#statistics explo off
+	#statistics topo off
+	#statistics carto off
+	#statistics copyright off
 	# To suppress the displaY of cave length/depth in map header
-	code tex-map
-		\cavelength={} %empty
-		\cavedepth={}  %empty
-	endcode
+	#code tex-map
+	#	\cavelength={} %empty
+	#	\cavedepth={}  %empty
+	#endcode
 	legend off
-	#legend-width 14.5 cm
-	legend-width 10 cm
-	map-header 0 10 nw
+	legend-width 20 cm
+	#legend-width 10 cm
+	#map-header 0 10 nw
+	map-header 30 15 nw
 	map-header-bg on
 	layers on
 	symbol-hide line survey
@@ -136,25 +137,25 @@ layout layout_coupe
 	######## Code Metapost pour modifier l aspect des symboles ####### 
 
 	# Titre          
-	#code tex-map  
-	#	\edef\temp{\the\cavename}   % cavename from Therion
-	#	\edef\nostring{}            % empty string
-	#	\ifx\temp\nostring          % test if cavename is empty
-	#		% if empty reassign cavename to describe selected maps as a group
-	#		\cavename={Gouffre Jean-Bernard}
-	#		
-	#	\else % if not empty keep the value set by therion, or assign an override cavename here
-	#	\fi
-	#	%\newtoks\club \club={Groupe Spéléologique Vulcain}
-	#endcode  
+	code tex-map  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard}
+			
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		%\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
   
 	######################### 
   
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Poncho-plan2023.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Poncho-coupe2023.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Poncho-plan2024.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Poncho-coupe2024.xvi
 
 select MP-Poncho-tot
 
