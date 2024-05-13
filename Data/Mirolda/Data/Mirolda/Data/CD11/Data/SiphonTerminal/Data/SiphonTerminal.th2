@@ -1,0 +1,226 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 4458.711 1860.2844
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {1889.7599999999998 1 1.0} {1181.103 1538} SiphonTerminal-map.xvi 0 {}
+
+
+
+scrap SP-SiphonTerminal -projection plan -station-names "" "@SiphonTerminal" -author 2003 "Michel Philips" -author 2024 "Alexandre Pont" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+point 1967.5 1279.0 label -text "<center>Siphon 2<br>(-4 m, 10 m)"
+
+area sump
+  l28-1963-1124
+endarea
+
+line label -id l28-1963-1124 -close on
+  1758.0 1224.0
+  1758.0 1224.0 1786.5 1161.0 1810.0 1157.5
+  1833.5 1154.0 1926.5 1184.0 1930.0 1192.5
+  1933.5 1201.0 1934.5 1244.0 1916.0 1261.5
+  1897.5 1279.0 1831.5 1315.0 1816.0 1314.5
+  1800.5 1314.0 1758.0 1224.0 1758.0 1224.0
+  smooth off
+endline
+
+line wall
+  1831.0 1256.0
+  altitude .
+  1831.0 1256.0 1946.0 1072.5 1946.0 1058.5
+  1946.0 1044.5 1866.49 1027.5 1850.0 1020.0
+  1833.5 1012.5 1548.5 922.5 1524.5 910.5
+  1500.5 898.5 1332.5 860.0 1318.5 832.5
+  1303.96 803.94 1328.0 772.0 1296.0 726.0
+  1264.0 680.0 1161.0 628.0 1117.0 614.0
+  1073.0 600.0 881.32 635.53 834.5 625.0
+  794.5 616.0 747.0 587.5 707.0 567.5
+  667.0 547.5 648.5 533.5 600.5 502.0
+  554.86 472.05 521.0 453.0 371.5 433.5
+  smooth off
+endline
+
+point 427.0 297.0 label -text "<center>Siphon Terminal"
+
+line pit -reverse on
+  3950.0 1350.0
+  3950.0 1350.0 3920.0 1326.0 3847.0 1328.0
+  smooth off
+endline
+
+line pit -reverse on
+  3873.5 1426.5
+  3873.5 1426.5 3901.5 1436.0 3944.0 1409.0
+  smooth off
+endline
+
+point 3990.0 1327.0 label -text "E2"
+
+point 4005.0 1389.5 label -text "<center>Salle"
+
+point 3562.5 1458.0 label -text "<center>Pseudo siphon"
+
+area sump
+  l34-493-381
+endarea
+
+line label -id l34-493-381 -close on -reverse on
+  338.5 475.0
+  424.0 475.0
+  424.0 475.0 456.0 434.5 441.0 374.0
+  426.0 313.5 354.0 342.5 354.0 342.5
+  smooth off
+  338.5 475.0
+endline
+
+point 487.0 543.0 label -text "R1"
+
+point 3945.5 1489.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Aval siphon 2" -text "Escalade"
+
+point 3974.0 960.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Aval siphon 2" -text "Arrêt sur rien, à poursuivre"
+
+point 313.0 415.0 continuation -attr Code D -attr Cavite "CD11" -attr Reseau "Aval Siphon 2" -text "siphon terminal à plonger"
+
+point 1334.5 704.0 blocks
+
+point 1146.5 594.0 blocks
+
+point 994.5 584.5 blocks
+
+point 844.5 611.0 blocks
+
+point 651.0 500.5 blocks
+
+line pit -reverse on
+  517.0 483.0
+  517.0 483.0 567.0 459.5 554.0 397.5
+  smooth off
+endline
+
+point 3153.5 1370.5 label -text "E8"
+
+point 3077.0 1358.5 label -text "E1"
+
+line pit -reverse on
+  3154.0 1303.0
+  3154.0 1303.0 3189.0 1264.0 3174.5 1208.5
+  smooth off
+endline
+
+line pit -reverse on
+  3106.5 1294.5
+  3106.5 1294.5 3139.5 1256.5 3125.0 1196.5
+  smooth off
+endline
+
+area clay
+  l51-3773-1419
+endarea
+
+line label -id l51-3773-1419 -close on
+  3462.5 1376.0
+  3462.5 1376.0 3410.5 1367.0 3400.5 1350.5
+  3390.5 1334.0 3392.0 1254.5 3399.0 1250.0
+  3406.0 1245.5 3713.0 1280.5 3713.0 1280.5
+  smooth off
+  3713.0 1280.5 3775.5 1304.0 3779.5 1327.0
+  3783.5 1350.0 3783.5 1419.0 3772.0 1420.0
+  3760.5 1421.0 3462.5 1376.0 3462.5 1376.0
+  smooth off
+endline
+
+point 3421.0 1309.5 blocks
+
+point 3725.5 1362.0 blocks
+
+point 3035.0 1236.0 blocks
+
+line wall -reverse on
+  3949.0 997.0
+  3949.0 997.0 3896.5 1312.0 3888.5 1330.0
+  3880.5 1348.0 3866.0 1367.0 3812.0 1357.0
+  3758.0 1347.0 3146.0 1244.0 3059.0 1220.5
+  2986.91 1201.03 2813.5 1177.0 2703.5 1159.0
+  2593.5 1141.0 2023.5 1053.5 1971.5 1037.5
+  1919.5 1021.5 1751.06 957.2 1715.5 942.5
+  1678.0 927.0 1597.5 902.5 1509.5 864.5
+  1421.5 826.5 1370.5 822.0 1364.5 802.0
+  1358.5 782.0 1370.5 710.0 1360.5 692.0
+  1350.5 674.0 1295.5 647.0 1259.5 625.0
+  1223.5 603.0 1168.0 561.5 1132.0 557.5
+  1096.0 553.5 1000.0 557.0 979.5 559.0
+  959.21 560.98 860.5 589.5 832.5 585.5
+  804.5 581.5 737.24 509.2 693.0 493.5
+  646.5 477.0 574.58 419.49 473.0 404.5
+  442.5 400.0 378.5 389.5 378.5 389.5
+  smooth off
+  altitude .
+endline
+
+line wall
+  3987.5 999.5
+  altitude .
+  3987.5 999.5 3974.0 1063.0 3967.0 1113.0
+  3960.14 1162.01 3934.0 1311.5 3930.0 1335.5
+  3926.0 1359.5 3961.0 1393.5 3933.5 1404.0
+  3909.88 1413.02 3937.82 1439.87 3940.5 1449.5
+  smooth off
+endline
+
+line wall -reverse on
+  1851.5 1265.5
+  1942.0 1113.0
+  1942.0 1113.0 1961.0 1077.0 1970.0 1070.0
+  1979.0 1063.0 1983.0 1061.0 2011.0 1069.0
+  2039.0 1077.0 2319.0 1126.5 2417.0 1148.5
+  2515.0 1170.5 2996.5 1248.0 3046.5 1258.0
+  3096.5 1268.0 3371.5 1316.0 3520.5 1343.0
+  3557.29 1349.67 3862.0 1406.0 3884.0 1414.0
+  3906.0 1422.0 3905.5 1441.0 3913.5 1455.0
+  smooth off
+endline
+
+point 3968.1899999999996 1002.9929999999999 station -name 4007
+
+point 3899.7599999999998 1390.713 station -name 4006
+
+point 3744.72 1363.383 station -name 4005
+
+point 3279.45 1281.3429999999998 station -name 4004
+
+point 3145.12 1257.633 station -name 4003
+
+point 3134.33 1255.753 station -name 4002
+
+point 3019.8399999999997 1235.5929999999998 station -name 4001
+
+point 454.16999999999985 424.72299999999996 station -name 1551
+
+point 541.4899999999998 440.08299999999997 station -name 1550
+
+point 605.5899999999999 477.08299999999997 station -name 1549
+
+point 689.3699999999999 525.433 station -name 1548
+
+point 837.0 609.0 station -name 1547
+
+point 848.6599999999999 608.663 station -name 1546
+
+point 982.9099999999999 584.963 station -name 1545
+
+point 1130.9399999999998 584.963 station -name 1544
+
+point 1261.4899999999998 660.393 station -name 1543
+
+point 1339.8399999999997 705.593 station -name 1542
+
+point 1339.8399999999997 821.893 station -name 1541
+
+point 1965.6699999999998 1049.683 station -name 1540
+
+point 1907.4799999999998 1150.393 station -name 1539
+
+point 1889.7599999999998 1181.103 station -name 1538
+
+endscrap
+
+

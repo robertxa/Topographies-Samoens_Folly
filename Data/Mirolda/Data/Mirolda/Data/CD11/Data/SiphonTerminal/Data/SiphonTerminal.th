@@ -1,0 +1,53 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#   "<http://creativecommons.org/licenses/by-nc-sa/4.0/>"
+
+# Ce fichier topo a été construit par Alexandre PONT (13/05/2024) à partir des données excel de Michel PHILIPS et du Visual Topo du CD11,
+# [Note Alex] Topo à refaire, visée de 150m, pentes nulles...
+
+
+survey	SiphonTerminal -title "CD11, siphon terminal 2003"
+	
+	centerline
+		
+		date 2003.01.09
+		explo-date 2003.01.09
+		explo-team "Groupe Spéléo/Cavernicoles"
+		team "Michel Philips"
+		
+		units length meters
+		units compass clino degrees
+		units counter centimeters
+		calibrate counter 0 1.000
+		data topofil from to fromcount tocount backcompass backclino right left up down # Est-ce qu'il faut garder le backclino ?
+		extend right
+		1538	1539	0.0     700.0  330.00   50.00   1.00   1.00   1.00		1.00	# Siphon (entrée vers sortie)
+		1539	1540	0.0    1500.0  330.00   10.00   1.00   1.00   1.00		1.00	#
+		1540	1541	0.0    9000.0   70.00   20.00   2.50   2.50   1.00		1.00	# Caïrn de jonction avec l'affluent du siphon 2
+		1541	1542	0.0    1500.0    0.00   10.00   3.00   3.00   1.00		1.00	# Galerie ovale
+		1542	1543	0.0    1500.0   60.00   40.00   3.00   3.00   1.50		1.50	# Dalle géante verticale en travers de la galerie
+		1543	1544	0.0    2500.0   60.00   40.00   3.00   3.00   1.50		1.50	# Sol calcaire lisse
+		1544	1545	0.0    2000.0   90.00   20.00   3.00   3.00   1.50		1.50	#
+		1545	1546	0.0    2000.0  100.00   30.00   2.50   2.50   1.00		1.00	# Dalle géante verticale en travers de la galerie
+		1546	1547	0.0     300.0  100.00   60.00   1.00   1.00   0.50		0.50	# Eboulis de blocs
+		1547	1548	0.0    2500.0   60.00   30.00   3.50   3.50   1.50		1.50	# Eboulis de blocs
+		1548	1549	0.0    1500.0   60.00   35.00   2.50   2.50   1.00		1.00	# Tas de terre
+		1549	1550	0.0    1000.0   60.00   20.00   2.50   2.50   1.00		1.00	# Amas de bloc
+		1550	1551	0.0    1300.0   80.00   30.00   2.50   2.50   1.00		1.00	# Sommet du ressaut de 1 m
+		1551	1552	0.0      10.0    0.00    0.00   2.50   2.50   1.00		1.00	# Niveau de l'eau du siphon aval (terminal)
+		
+		data topofil from to fromcount tocount compass clino right left up down
+		extend right
+		1540	4001	0.0   15000.0   80.00   25.00   2.50   2.50   1.00		1.00	# Amas de blocs
+		4001	4002	0.0    1500.0   80.00   10.00   2.00   2.00   1.00		1.00	# Ressaut de 2 m
+		4002	4003	0.0     800.0   80.00   80.00   2.00   2.00   1.00		1.00	# Resaut de 8 m
+		4003	4004	0.0    2000.0   80.00   30.00   2.00   2.00   1.00		1.00	# Galerie ovale
+		4004	4005	0.0    6000.0   80.00    0.00   2.00   2.00   1.00		1.00	# Siphon boueux asséché
+		4005	4006	0.0    2000.0   80.00    0.00   2.00   2.00   1.00		1.00	# Salle arrosée avec 2 départs
+		4006	4007	0.0    5000.0  170.00    0.00   2.00   2.00   1.00		1.00	# Arrêt sur rien dans galerie fossile
+		
+	endcenterline
+	
+endsurvey

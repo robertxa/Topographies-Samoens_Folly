@@ -92,7 +92,9 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		#equate 472@AvalTRO.AvalTRO 56@mirolda_-800.800
 		equate 708@AvalTRO.AvalTRO mkbu.134@mirolda_mkbu.900
 
-
+	# Siphon Terminal 
+	input Data/SiphonTerminal/SiphonTerminal-tot.th
+		equate 1538@AvalTRO.AvalTRO 1538@SiphonTerminal.SiphonTerminal
 
 
 	# Jonctions des dessins en plan
