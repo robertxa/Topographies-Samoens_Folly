@@ -71,7 +71,7 @@ layout my_layout
   # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
   # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
   # des caractères et des traits.
-  base-scale 1 400
+  base-scale 1 200
 
   # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
   # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
@@ -170,8 +170,8 @@ layout layout-coupe
   #copy Coords_Header_CDa
 	## Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
-	#copy header_coupe 
-	#copy langue-fr
+	copy header_coupe 
+	copy langue-fr
 	
   # Définition du système de projection du plan
   #cs UTM32
@@ -182,17 +182,17 @@ layout layout-coupe
   # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
   # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
   # des caractères et des traits.
-  base-scale 1 200
+  base-scale 1 1000
 
   # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
   # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
   # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
   # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
-  scale 1 200
+  scale 1 1000
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
-  scale-bar 20 m
+  scale-bar 100 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
   #grid bottom
@@ -224,9 +224,9 @@ layout layout-coupe
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 120 nw
+  map-header 0 0 nw
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
@@ -239,19 +239,19 @@ layout layout-coupe
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
   statistics explo-length off
-  statistics explo off
+#  statistics explo off
   statistics topo-length off
-  statistics topo off
-  statistics carto off
+ # statistics topo off
+ # statistics carto off
   ## Afficher un copyright
-  #statistics copyright 2
-  statistics copyright off
+  statistics copyright 2
+  #statistics copyright off
 
   # To suppress the displaY of cave length/depth in map header
-	code tex-map
-		\cavelength={} %empty
-		\cavedepth={}  %empty
-	endcode
+	#code tex-map
+	#	\cavelength={} %empty
+	#	\cavedepth={}  %empty
+	#endcode
   
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
@@ -262,7 +262,7 @@ layout layout-coupe
   layers on
 
 	# Modification du Titre de la topo
-	#code tex-map
+	code tex-map
 	#	% Output map title as determined by Therion is stored in cavename, défini par la une Map. 
 	#	% It will be empty if there are multiple maps selected for any one projection
 	#	% AND there are multiple source surveys identified in the thconfig file 
@@ -275,9 +275,9 @@ layout layout-coupe
 	#		\cavename={Trou Tombroi - EU981} 
 	#	\else % if not empty keep the value set by therion, or assign an override cavename here
 	#	\fi
-	#	\newtoks\club \club={URSUS}
+		\newtoks\club \club={URSUS}
 	#	%\newtoks\synth \synth={Xavier Robert}
-	#endcode   
+	endcode   
   
  endlayout
 # Fin de la definition du Layout "normal"
@@ -285,8 +285,8 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Tombroi-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Tombroi-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Tombroi-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Tombroi-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Tombroi@Tombroi
