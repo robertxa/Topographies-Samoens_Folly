@@ -7,9 +7,9 @@ encoding  utf-8
 
 scrap SC-SiphonTerminal -projection extended -station-names "" "@SiphonTerminal" -author 2003 "Michel Philips" -author 2024 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-point 1735.0 1741.0 label -text "E8"
+point 1735.0 1741.0 height -value [+8 m]
 
-point 1634.5 1665.5 label -text "E1"
+point 1634.5 1665.5 height -value [+1 m]
 
 point 1544.5 1688.5 blocks
 
@@ -25,6 +25,7 @@ line wall
   444.0 1207.25 369.75 1220.0 360.25 1232.25
   350.65 1244.63 327.5 1273.5 311.0 1273.25
   294.73 1273.0 268.75 1272.25 205.5 1252.5
+  smooth off
 endline
 
 line wall
@@ -32,15 +33,12 @@ endline
 
 line wall
   2840.0 1868.5
-  2840.0 1868.5 2520.5 1867.0 2456.5 1867.0
-  2392.5 1867.0 2101.51 1870.14 2046.5 1867.0
-  1994.0 1864.0 1843.15 1870.19 1823.0 1868.0
+  2840.0 1868.5 2520.47 1867.0 2456.5 1867.0
+  2273.19 1867.0 2130.5 1837.0 2046.0 1858.0
+  1994.92 1870.69 1843.15 1870.19 1823.0 1868.0
   1800.0 1865.5 1776.5 1875.0 1761.5 1891.0
+  smooth off
 endline
-
-point 1469.75 742.25 blocks
-
-point 1259.75 923.25 blocks
 
 area sump
   l39-2190-326
@@ -60,9 +58,13 @@ point 1766.5 1829.0 blocks
 
 point 1695.5 1787.0 blocks
 
-point 1817.5 1817.5 label -text "E2"
+point 1817.5 1817.5 height -value [+2 m]
 
 point 1720.0 1858.5 label -text "Salle"
+
+point 2866.0 1860.0 continuation -attr Code E -attr Cavite "CD11" -attr  Reseau "Aval Siphon" -text "Départ à voir"
+
+point 1727.0 1906.0 continuation -attr Code E -attr Cavite "CD11" -attr  Reseau "Aval Siphon" -text "Départ à voir"
 
 line wall
   2271.75 316.0
@@ -82,10 +84,12 @@ line wall
   1050.75 1455.25 1379.5 1607.75 1400.5 1617.75
   1421.5 1627.75 1513.5 1677.5 1550.5 1686.0
   1595.42 1696.32 1665.5 1699.5 1671.5 1708.5
+  altitude .
   1677.5 1717.5 1672.0 1752.0 1683.0 1768.0
   1694.0 1784.0 1793.0 1842.5 1815.0 1845.5
-  1837.0 1848.5 2263.5 1848.0 2279.5 1848.0
-  2295.5 1848.0 2815.5 1846.5 2838.5 1846.5
+  1837.0 1848.5 2250.0 1821.0 2282.0 1845.0
+  2294.79 1854.59 2815.5 1846.5 2838.5 1846.5
+  smooth off
   altitude .
 endline
 
@@ -103,29 +107,36 @@ line label -id l29-290-1223 -close on
   299.25 1258.5
 endline
 
-point 2010.25 441.0 blocks
-
-point 1778.0 598.0 blocks
-
-point 1645.75 671.75 blocks
-
 line wall
   227.5 1238.0
   altitude .
   227.5 1238.0 300.5 1272.5 315.5 1254.25
   325.67 1241.88 350.5 1217.25 360.5 1208.25
   370.5 1199.25 454.5 1195.75 475.5 1187.75
+  altitude .
   496.5 1179.75 1032.46 985.98 1048.75 979.0
+endline
+
+line wall -subtype debris
+  1048.75 979.0
   1066.25 971.5 1171.72 934.79 1199.25 934.0
   1225.5 933.25 1262.5 924.75 1287.0 902.0
   1312.08 878.71 1476.0 728.0 1492.0 720.0
+  altitude .
   1508.0 712.0 1629.5 676.25 1654.5 660.25
   1679.5 644.25 1764.0 604.0 1777.0 593.0
   1790.0 582.0 1798.5 568.0 1821.5 556.0
   1844.5 544.0 1962.0 468.25 1989.75 451.5
   2018.36 434.23 2067.23 393.88 2090.0 392.0
+endline
+
+point 2316.0 287.0 continuation -attr Code S -attr Cavite "CD11" -attr  Reseau "Aval Siphon" -text "Siphon à plonger"
+
+line wall
+  2090.0 392.0
   2123.25 389.25 2159.5 364.25 2189.5 346.25
   2219.5 328.25 2250.0 314.25 2254.0 311.25
+  smooth off
   altitude .
 endline
 

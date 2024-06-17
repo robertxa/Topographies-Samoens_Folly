@@ -13,15 +13,18 @@ survey	SiphonTerminal -title "CD11, siphon terminal 2003"
 	centerline
 		
 		date 2003.01.09
+			team "Michel Philips"
 		explo-date 2003.01.09
-		explo-team "Groupe Spéléo/Cavernicoles"
-		team "Michel Philips"
+			explo-team "Groupe Spéléo/Cavernicoles"
+		
 		
 		units length meters
 		units compass clino degrees
 		units counter centimeters
 		calibrate counter 0 1.000
+
 		data topofil from to fromcount tocount backcompass backclino right left up down # Est-ce qu'il faut garder le backclino ?
+		
 		extend right
 		1538	1539	0.0     700.0  330.00   50.00   1.00   1.00   1.00		1.00	# Siphon (entrée vers sortie)
 		1539	1540	0.0    1500.0  330.00   10.00   1.00   1.00   1.00		1.00	#
