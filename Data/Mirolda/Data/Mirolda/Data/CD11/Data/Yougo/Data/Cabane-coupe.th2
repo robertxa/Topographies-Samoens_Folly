@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.75 -128.75 9340.5934 3513.8286000000003
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1626.7199999999998 1 1.0} {866.1400000000001 PTRMADG0@Yougo.Yougo} Yougo-coupe.xvi 0 {}
 
 
@@ -18,7 +18,7 @@ line wall
   smooth off
 endline
 
-point 773.0 859.25 height -value [-20 m]
+point 898.0 846.25 height -value [-20 m]
 
 point 955.25 1011.5 height -value [-6 m]
 
@@ -35,7 +35,7 @@ endline
 line rope
   875.75 941.0
   839.25 910.0
-  838.75 763.75
+  835.0 798.5
 endline
 
 line rope
@@ -63,12 +63,12 @@ line wall -subtype debris
   smooth off
 endline
 
-point 814.25 919.5 station-name -scale xs -align left
+point 809.25 932.0 station-name -scale xs -align left
 
 line wall
-  808.5 753.5
-  808.5 753.5 857.5 758.75 861.25 763.25
-  865.0 767.75 849.5 882.5 853.0 886.0
+  845.0 787.0
+  845.0 787.0 856.75 804.5 860.5 809.0
+  864.25 813.5 849.5 882.5 853.0 886.0
   856.5 889.5 864.5 888.75 869.5 892.75
   874.5 896.75 875.5 912.0 875.75 918.0
   876.0 924.0 881.0 926.5 887.75 926.5
@@ -81,9 +81,14 @@ line wall
   758.5 968.0
   758.5 968.0 781.5 957.0 790.25 955.5
   799.0 954.0 825.25 939.5 826.25 930.75
-  827.25 922.0 825.5 856.0 825.5 849.25
-  825.5 842.5 825.5 811.5 821.0 807.75
-  816.5 804.0 805.75 797.5 805.75 797.5
+  827.25 922.0 824.0 922.75 824.0 916.0
+  smooth off
+endline
+
+line wall
+  824.0 916.0
+  824.0 909.25 826.0 906.0 815.0 910.0
+  810.38 911.68 802.0 911.5 802.0 911.5
   smooth off
 endline
 
@@ -99,7 +104,8 @@ line wall
   smooth off
 endline
 
-point 787.5 731.25 label -text "<center>affluent de<br>la Cabane"
+line rope
+endline
 
 point 988.5 917.75 label -text "colm."
 
@@ -152,6 +158,7 @@ endline
 line wall
   1203.5 934.0
   1203.5 934.0 1151.25 953.25 1153.5 955.25
+  smooth off
 endline
 
 line wall -subtype clay
@@ -161,6 +168,7 @@ line wall -subtype clay
   1182.5 965.0 1184.5 965.75 1189.5 966.75
   1194.5 967.75 1193.5 969.5 1198.0 970.75
   1202.5 972.0 1201.5 972.5 1205.25 974.0
+  smooth off
 endline
 
 line wall
@@ -192,6 +200,153 @@ point 1194.71 972.8800000000001 station -name PTRJCXRCA02
 point 1155.75 959.7700000000001 station -name 2
 
 point 1140.8000000000002 957.5100000000001 station -name 3
+
+endscrap
+
+
+
+scrap SC-Cabane-2024-1 -projection extended -station-names "" "@cabane2024-1" -author 2023 "Alexandre Pont" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.01000000000067 -128.0 9340.5934 -128.0 0.0 0.0 240.50252636 0.0 m]
+
+point 509.0 908.25 label -text "<center>affluent de<br>la Cabane"
+
+point 824.71 799.7700000000002 station -name 15
+
+point 805.7600000000002 787.8800000000002 station -name 14
+
+point 792.4500000000003 771.6600000000002 station -name 13
+
+point 759.9300000000003 780.4700000000003 station -name 12
+
+point 745.0500000000002 787.3300000000002 station -name 11
+
+point 728.6800000000003 796.7700000000002 station -name 10
+
+point 714.4300000000003 805.4400000000002 station -name 9
+
+point 713.29 835.2000000000002 station -name 8
+
+point 696.25 834.0200000000002 station -name 7
+
+line wall -subtype presumed
+  413.0 639.0
+  altitude .
+  413.0 639.0 496.5 683.5 515.5 695.0
+  534.5 706.5 544.0 720.5 560.5 734.5
+  577.0 748.5 591.0 752.0 606.5 756.0
+  622.99 760.26 646.56 759.85 653.5 759.5
+  663.5 759.0 690.5 759.5 710.0 760.5
+  smooth off
+endline
+
+point 471.5 679.5 water-flow -orientation 244.7
+
+point 766.5 893.0 label -text [?]
+
+line wall
+  710.0 760.5
+  731.29 761.01 764.5 755.0 779.5 758.0
+  793.47 760.79 812.94 767.87 822.0 770.5
+  837.5 775.0 845.0 787.0 845.0 787.0
+  smooth off
+endline
+
+line water-flow
+  849.0 807.5
+  849.0 807.5 838.0 786.0 825.0 779.0
+  812.0 772.0 790.0 763.5 774.5 763.5
+  759.0 763.5 732.0 766.5 723.5 766.5
+  smooth off
+endline
+
+line border
+  395.0 681.5
+  409.5 689.5
+  445.0 709.0
+  445.0 709.0 451.0 710.0 466.0 721.0
+  481.0 732.0 502.0 736.5 520.5 752.5
+  539.0 768.5 548.0 782.0 554.5 784.5
+  561.0 787.0 591.0 795.0 604.0 799.0
+  617.0 803.0 616.5 815.0 626.0 822.5
+  635.5 830.0 647.0 830.0 657.0 833.5
+  667.0 837.0 681.0 839.5 687.0 833.0
+  693.0 826.5 694.5 808.5 699.5 804.5
+  704.5 800.5 708.0 797.5 714.0 793.0
+  720.0 788.5 727.5 784.0 732.0 782.0
+  smooth off
+endline
+
+line wall -outline in -subtype presumed
+  727.5 853.5
+  727.5 853.5 723.0 855.5 723.5 862.5
+  724.0 869.5 743.5 874.0 751.5 874.5
+  759.5 875.0 771.04 874.66 781.5 875.5
+  819.0 878.5 804.0 869.5 804.0 869.5
+  smooth off
+endline
+
+line wall -outline in
+  804.0 869.5
+  804.0 869.5 806.5 865.0 800.5 860.0
+  794.5 855.0 790.0 837.0 777.0 837.5
+  764.0 838.0 756.0 833.0 749.5 839.5
+  743.0 846.0 735.0 848.5 727.5 853.5
+  smooth off
+endline
+
+line wall -reverse on -subtype presumed
+  698.5 911.0
+  698.5 911.0 723.5 916.5 736.5 915.5
+  749.5 914.5 802.0 911.5 802.0 911.5
+  smooth off
+endline
+
+point 417.5 808.0 station-name -scale xs -align left
+
+line wall
+  698.5 911.0
+  695.0 911.5 680.0 905.0 662.5 900.5
+  645.0 896.0 635.0 888.0 600.5 874.0
+  566.0 860.0 539.5 834.5 530.5 827.5
+  521.5 820.5 489.0 808.0 478.5 800.5
+  468.0 793.0 411.0 755.5 397.5 748.0
+  384.98 741.05 370.0 722.5 363.5 720.0
+  smooth off
+endline
+
+point 690.02 848.8200000000002 station -name 6
+
+point 634.3899999999999 844.1000000000003 station -name 5
+
+point 605.5 837.3300000000002 station -name 4
+
+point 605.3899999999999 813.0000000000002 station -name 3
+
+point 535.8899999999999 780.0800000000002 station -name 2
+
+point 479.0 746.9300000000002 station -name PTRAP202401
+
+point 380.3299999999999 692.6800000000002 station -name 1
+
+point 671.5 946.0 height -value [+3 m]
+
+point 650.0 838.0 blocks
+
+line rope
+  618.5 831.5
+  595.0 815.0
+  551.5 795.5
+  522.5 780.0
+  503.0 764.0
+  472.5 735.5
+  431.5 714.0
+  397.0 695.5
+  385.5 690.0
+endline
+
+line rope
+  718.0 841.0
+  719.0 810.0
+endline
 
 endscrap
 

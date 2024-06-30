@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -172.248 -128.75 1737.2962 1469.5834
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {743.149 1 1.0} {317.958 PTRMADG0@Yougo.Yougo} Yougo-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {743.1489999999999 1 1.0} {317.9580000000001 PTRMADG0@Yougo.Yougo} Yougo-map.xvi 0 {}
 
 
 
@@ -21,12 +21,10 @@ line wall
   smooth off
 endline
 
-point 179.25 611.75 map-connection
-
 line wall
-  191.75 607.25
-  191.75 607.25 194.5 634.0 199.0 637.75
-  203.5 641.5 202.25 647.25 206.0 639.5
+  208.75 621.25
+  208.75 621.25 206.25 628.75 203.75 633.5
+  201.02 638.69 202.25 647.25 206.0 639.5
   209.75 631.75 211.25 631.25 215.5 626.5
   219.75 621.75 221.0 621.75 226.0 619.5
   231.0 617.25 236.0 616.0 239.75 610.25
@@ -42,8 +40,6 @@ point 266.0 589.25 water-flow -orientation 32.7
 
 point 265.5 634.75 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Mirolda" -text "Cheminée arrosée à escalader, arrivée d'eau, E15 ?"
 
-point 174.25 594.25 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Mirolda" -text "Aval de la Cabane, à topographier"
-
 point 214.75 712.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Mirolda" -text "Amont à revoir et topographier"
 
 point 229.5 683.25 height -value [+6 m]
@@ -58,8 +54,6 @@ line floor-meander
   209.25 649.75 205.25 650.5 205.25 650.5
   smooth off
 endline
-
-point 121.5 575.5 label -text "g. de la Cabane"
 
 point 285.0 542.5 label -text "colm."
 
@@ -87,12 +81,20 @@ line chimney -close on
   smooth off
 endline
 
+point 203.75 673.25 water-flow -orientation 192.2
+
+line pit -reverse on
+  189.5 624.75
+  189.5 624.75 208.0 630.0 211.75 623.5
+  smooth off
+endline
+
 line wall
   203.5 697.75
-  203.5 697.75 198.75 678.0 194.0 670.75
+  203.5 697.75 197.75 679.75 193.0 672.5
   altitude .
-  189.25 663.5 181.75 655.0 177.5 643.75
-  173.25 632.5 169.75 617.0 169.75 617.0
+  188.25 665.25 189.0 651.5 195.5 639.0
+  204.54 621.61 186.75 617.0 186.75 617.0
   smooth off
 endline
 
@@ -214,6 +216,213 @@ point 452.53899999999993 499.38800000000003 station -name 2
 point 491.489 499.72800000000007 station -name PTRJCXRCA02
 
 point 510.02899999999994 493.338 station -name 1
+
+endscrap
+
+
+
+scrap SP-Cabane-2024-1 -projection plan -station-names "" "@cabane2024-1" -author 2024 "Alexandre Pont" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 994.1422 -128.0 0.0 0.0 28.50241188 0.0 m]
+
+point 5.75 445.75 label -text "g. de la Cabane"
+
+point 44.75 219.5 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Mirolda" -text "Aval de la Cabane, à topographier"
+
+point 193.1489999999999 620.638 station -name 13
+
+point 214.25 680.25 station -name 16
+
+point 198.34899999999993 640.4780000000001 station -name 15
+
+point 206.1489999999999 623.2280000000001 station -name 14
+
+point 180.78899999999976 590.558 station -name 12
+
+point 169.84899999999993 600.558 station -name 11
+
+point 163.46899999999982 585.518 station -name 10
+
+point 149.21899999999982 583.388 station -name 8
+
+line wall
+  186.75 617.0
+  186.75 617.0 183.0 615.75 182.5 609.75
+  182.19 606.07 176.0 611.0 172.0 607.5
+  168.0 604.0 164.69 585.74 158.25 587.75
+  150.25 590.25 143.25 585.0 142.25 580.5
+  141.25 576.0 136.0 575.5 137.5 569.75
+  139.0 564.0 137.5 563.25 138.0 554.75
+  138.5 546.25 136.25 539.5 134.0 534.25
+  131.75 529.0 132.5 525.75 127.25 519.25
+  122.0 512.75 116.0 512.25 112.0 508.5
+  108.0 504.75 104.0 503.5 102.75 497.25
+  101.5 491.0 101.5 490.5 99.75 480.75
+  98.0 471.0 94.5 461.0 96.5 451.75
+  98.5 442.5 99.25 436.25 99.5 429.25
+  99.75 422.25 105.5 399.25 106.75 392.25
+  108.0 385.25 112.5 384.75 107.0 376.25
+  101.5 367.75 89.0 359.75 85.0 350.5
+  81.0 341.25 46.0 251.75 44.75 247.0
+  smooth off
+endline
+
+line pit
+  142.75 592.75
+  142.75 592.75 145.0 577.5 153.5 574.75
+  smooth off
+endline
+
+point 191.75 614.0 water-flow -orientation 209.9
+
+line section
+  139.75 342.25
+  121.25 351.0
+endline
+
+point 187.5 325.75 section -scrap SS-Cabane-2024-Sections
+
+line section
+  67.25 377.75
+  90.0 367.5
+endline
+
+line wall -reverse on
+  208.75 621.25
+  208.75 621.25 214.0 618.75 195.0 611.0
+  191.42 609.54 197.75 603.0 198.75 597.5
+  199.75 592.0 200.0 593.5 195.75 588.5
+  191.86 583.92 183.25 585.75 180.0 587.75
+  176.75 589.75 175.5 596.75 171.0 593.75
+  166.5 590.75 167.5 586.0 166.75 583.25
+  166.0 580.5 153.25 581.5 152.75 580.0
+  152.25 578.5 146.25 573.0 147.25 568.75
+  148.25 564.5 156.5 552.25 154.0 546.75
+  151.5 541.25 144.25 525.0 141.75 518.75
+  139.25 512.5 139.75 503.0 134.25 500.25
+  128.75 497.5 121.0 502.75 117.5 496.75
+  114.0 490.75 114.5 480.75 114.0 473.5
+  113.5 466.25 109.0 455.0 109.25 448.25
+  109.5 441.5 109.25 438.25 111.75 432.75
+  114.25 427.25 127.0 396.75 130.5 388.5
+  134.0 380.25 136.25 378.0 130.75 372.0
+  125.25 366.0 105.25 336.0 102.0 328.5
+  98.75 321.0 91.25 308.75 87.75 303.5
+  84.25 298.25 68.75 260.5 66.0 253.25
+  63.25 246.0 61.75 240.25 59.25 235.75
+  smooth off
+  altitude .
+endline
+
+point 149.60899999999992 582.368 station -name 9
+
+point 139.84899999999993 569.2180000000001 station -name 7
+
+point 145.82899999999972 567.638 station -name 6
+
+point 135.82899999999972 512.918 station -name 5
+
+point 108.97899999999981 502.288 station -name 4
+
+point 101.96900000000005 444.418 station -name 3
+
+point 120.86899999999969 377.48800000000006 station -name 2
+
+point 85.19899999999961 333.158 station -name PTRAP202401
+
+point 49.998999999999796 241.02800000000002 station -name 1
+
+line floor-meander
+  53.5 247.0
+  53.75 248.0 68.0 279.75 70.0 284.25
+  72.0 288.75 80.5 313.5 83.75 319.5
+  87.0 325.5 84.25 329.75 91.25 337.5
+  98.25 345.25 109.75 355.75 112.75 364.25
+  115.75 372.75 119.75 382.0 118.25 388.75
+  116.75 395.5 115.0 396.5 111.0 406.5
+  107.0 416.5 103.75 440.25 104.5 443.75
+  105.25 447.25 105.0 470.25 106.0 477.5
+  107.0 484.75 110.0 497.5 113.75 500.75
+  smooth off
+endline
+
+area clay
+  l90-184-462
+endarea
+
+line contour -id l90-184-462 -close on -visibility off
+  91.0 564.0
+  34.0 386.0
+  34.0 386.0 -3.0 284.0 -1.0 280.0
+  1.0 276.0 30.0 163.0 30.0 163.0
+  smooth off
+  30.0 163.0 134.37 255.5 134.25 260.5
+  130.0 435.5 159.25 483.5 159.25 483.5
+  smooth off
+  170.0 530.0
+  91.0 564.0
+endline
+
+point 138.75 530.25 blocks
+
+point 127.0 508.5 blocks
+
+point 184.75 556.25 height -value [+3 m]
+
+point 156.25 425.75 traverse
+
+point 146.5 319.5 traverse
+
+point 47.5 235.0 map-connection
+
+point 62.75 334.75 station-name -scale xs -align left
+
+endscrap
+
+
+
+scrap SS-Cabane-2024-Sections -projection none -author 2024 "Alexandre Pont" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [199.75 289.75 216.0 289.75 0.0 0.0 2 0.0 m]
+
+line wall
+  203.75 388.0
+  203.75 388.0 189.0 386.0 190.75 374.75
+  smooth off
+endline
+
+line wall -subtype clay
+  190.75 374.75
+  191.69 368.71 197.0 363.75 201.25 361.75
+  205.7 359.66 205.25 357.0 205.25 357.0
+  smooth off
+endline
+
+line wall
+  205.25 357.0
+  205.25 357.0 205.5 354.25 205.75 348.5
+  206.03 342.01 206.0 336.5 205.75 331.25
+  205.5 326.0 205.25 316.25 205.5 313.5
+  205.75 310.75 205.23 301.75 207.0 301.75
+  210.25 301.75 209.25 301.25 209.5 312.25
+  209.75 323.25 209.0 340.75 209.5 347.0
+  210.0 353.25 209.25 354.5 209.25 354.5
+  smooth off
+endline
+
+line wall -subtype clay
+  209.25 354.5
+  209.25 354.5 208.0 359.0 211.5 361.25
+  218.29 365.62 220.35 372.9 218.25 378.75
+  smooth off
+endline
+
+line wall
+  218.25 378.75
+  214.75 388.5 203.75 388.0 203.75 388.0
+  smooth off
+endline
+
+point 206.5 297.75 water-flow -orientation 208.4
+
+line wall
+endline
 
 endscrap
 
