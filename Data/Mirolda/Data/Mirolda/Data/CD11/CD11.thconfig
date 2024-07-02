@@ -143,9 +143,9 @@ layout my_layout
   statistics copyright 2
   
   # Dessin ou pas du cheminement topo
-  #symbol-hide point station        
-  debug station-names
-  #debug scrap-names
+  # symbol-hide point station        
+  # debug station-names
+  # debug scrap-names
   #  color map-fg scraps
   #  color-legend off
 	color map-fg altitude
