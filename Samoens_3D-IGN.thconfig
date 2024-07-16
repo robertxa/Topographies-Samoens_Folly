@@ -39,6 +39,8 @@ source Samoens-GIS/dem/IGN_JB_10m-IGN.th
 #source Samoens-GIS/dem/DEM_10m-L93-cutFolly.th # Pour l'instant, il y a un problème avec le DEM, il y a un décalage !
 #source Samoens-GIS/dem/IGN_JB.th
 
+#source Samoens-GIS/dem/MNT-Criou_Folly-LIDAR-10m-crop.th # Pour l'instant, il y a un problème avec le DEM, il y a un décalage !
+
 # Add config file
 input config.thc 
  
@@ -56,7 +58,8 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
 
-	cs UTM32N 
+	#cs UTM32N
+  cs EPSG:2154  # Lambert 93
   
   # La ligne base-scale specifie l'echelle auquel nous avons
   # dessine nos croquis. Par defaut, therion pense que c'est

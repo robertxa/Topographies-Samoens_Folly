@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -1632.5 -2965.5 3637 215.13599999999997
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} Dessin1.gif 0 {}
 ##XTHERION## xth_me_image_insert {1195.94 1 1.0} {-1373.5630000000003 0@solitaire2022.Solitarises} Solitarises-plan2023.xvi 0 {}
 ##XTHERION## xth_me_image_insert {1195.1599999999999 1 1.0} {-1375.1799999999998 0@solitaire2022.Solitarises} Solitarises-plan2023b.xvi 0 {}
@@ -604,6 +604,7 @@ line wall
   1004.0 -1148.0
   1004.0 -1148.0 1017.75 -1078.25 1021.25 -1073.25
   1024.75 -1068.25 1030.75 -1048.0 1037.75 -1040.5
+  smooth off
 endline
 
 point 940.1599999999999 -1021.56 station -name 9c
@@ -3477,13 +3478,6 @@ line wall
   smooth off
 endline
 
-line wall -clip off -outline none -subtype presumed
-  3187.5 -336.0
-  3187.5 -336.0 3225.5 -335.5 3241.0 -334.5
-  3256.5 -333.5 3259.5 -333.5 3259.5 -333.5
-  smooth off
-endline
-
 line rock-border -close on -clip off
   3178.5 -290.5
   3166.0 -285.5
@@ -3786,19 +3780,21 @@ line floor-meander
   smooth off
 endline
 
-line wall -clip off -outline none -subtype presumed
-  3243.5 -273.0
-  3243.5 -273.0 3148.5 -260.5 3118.0 -259.5
-  3087.5 -258.5 3020.0 -262.0 3014.0 -263.5
-  3008.0 -265.0 3007.5 -266.0 3007.5 -266.0
-  smooth off
-endline
-
 line wall
   3182.0 -305.0
   3182.0 -305.0 3154.0 -314.0 3115.0 -306.5
   3076.0 -299.0 3045.0 -294.5 3036.5 -290.5
-  3028.0 -286.5 3012.0 -272.5 3007.5 -266.0
+endline
+
+line wall -close on -subtype invisible
+  3009.5 -299.0
+  3007.5 -266.0
+  3009.5 -299.0
+endline
+
+line wall -subtype invisible
+  3036.5 -290.5
+  3028.0 -286.5 3016.0 -296.25 3009.5 -299.0
   smooth off
 endline
 

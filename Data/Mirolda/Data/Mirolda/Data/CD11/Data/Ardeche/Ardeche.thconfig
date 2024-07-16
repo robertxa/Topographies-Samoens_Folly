@@ -110,11 +110,11 @@ layout my_layout
   # ou une autre combination...
   map-header 0 -60 nw
   # arrière plan de la manchette
-  map-header-bg on
+  map-header-bg off
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
   # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
   # "legend off" = pas de legende
-  legend on
+  legend off
   # Par défaut, la légende est de 14 cm de largeur
   legend-width 21 cm
 
@@ -131,8 +131,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
 
   layers on
 
@@ -147,10 +147,10 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda - Réseau des Ardecheslaves} 
+			\cavename={Gouffre Mirolda - Réseau de -370 m} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2023}
+		\newtoks\club \club={Collectif Mirolda}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -212,8 +212,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  #debug station-names
-  symbol-hide line survey
+  debug station-names
+  #symbol-hide line survey
   
   layers on
                 
@@ -223,10 +223,10 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda - Réseau des Ardecheslaves} 
+			\cavename={Gouffre Mirolda - Réseau de -370 m} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2023}
+		\newtoks\club \club={Collectif Mirolda}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 

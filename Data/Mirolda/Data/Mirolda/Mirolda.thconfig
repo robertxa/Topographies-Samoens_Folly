@@ -406,23 +406,23 @@ export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
 #export atlas -projection extended -o Outputs/Mirolda-atlas-coupe.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Mirolda-2022.lox
+ export model -enable all -o Outputs/Mirolda-2024.lox
 
 # Export des fichiers ESRI
  export map -proj plan -fmt esri -o Outputs/Mirolda
 
 # Export des fichiers kml
  export map -proj plan -fmt kml -o Outputs/Mirolda.kml -layout layout-kml
- export model -fmt kml -o Outputs/Mirolda-2022-model.kml -enable all
- export continuation-list -fmt kml -o Outputs/ContinuationsMirolda-2022.kml
+ export model -fmt kml -o Outputs/Mirolda-2024-model.kml -enable all
+ export continuation-list -fmt kml -o Outputs/ContinuationsMirolda-2024.kml
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseMirolda-2022.sql
+export database -fmt sql -o Outputs/databaseMirolda-2024.sql
 
 export continuation-list -o Outputs/ContinuationsMirolda.html
-#export continuation-list -o Outputs/ContinuationsMirolda-2022.kml
+#export continuation-list -o Outputs/ContinuationsMirolda-2024.kml
 export survey-list -location on -o Outputs/SurveysMirolda.html
-export cave-list -location on -o Outputs/CavesMirolda2022.html
+export cave-list -location on -o Outputs/CavesMirolda2024.html

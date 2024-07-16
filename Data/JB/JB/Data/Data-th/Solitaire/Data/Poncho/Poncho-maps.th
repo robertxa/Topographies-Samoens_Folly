@@ -16,10 +16,17 @@ map MP-Poncho2 -title "Galerie du Poncho"
 	SP-Poncho2024-2
 endmap
 
+map MP-Poncho3 -title "Galerie du Poncho"
+	SP-Poncho2024b-1
+endmap
+
+
 map MP-Poncho -title "Galerie du Poncho"
 	MP-Poncho1
 	break
 	MP-Poncho2
+	break
+	MP-Poncho3
 endmap
 
 
@@ -31,6 +38,9 @@ map MC-Poncho -title "Galerie du Poncho"
 	SC-Poncho-1
 	break
 	SC-Poncho2024-2
-	
+	break
+	SC-Poncho2024b-1
+	break
+	SC-Poncho2024b-2
 endmap
 

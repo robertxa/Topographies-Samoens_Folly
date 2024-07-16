@@ -1,8 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -290.207 -325.0 635.0847 285.3309
+##XTHERION## xth_me_area_adjust -787.05 -640.2339999999999 650.0530000000001 324.42780000000005
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {253.434 1 1.0} {78.738 0} Poncho-coupe2023.xvi 0 {}
-##XTHERION## xth_me_image_insert {253.654 1 1.0} {78.58600000000001 0@Poncho.Poncho} Poncho-coupe2024.xvi 0 {}
+##XTHERION## xth_me_image_insert {253.65400000000005 1 1.0} {78.58600000000007 0@Poncho.Poncho} Poncho-coupe2024.xvi 0 {}
 
 
 
@@ -91,6 +91,7 @@ line wall
   311.5 94.0 312.25 95.25 301.75 93.75
   291.25 92.25 284.0 90.75 275.5 90.5
   267.0 90.25 256.0 89.75 249.25 89.5
+  smooth off
 endline
 
 point 455.61400000000003 70.858 station -name 13
@@ -124,12 +125,6 @@ endscrap
 
 
 scrap SC-Poncho2024-1 -projection extended -station-names "" "@Poncho2024" -author 2024 "Xavier Robert" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
-
-line rope
-  -34.0 -95.5
-  -50.0 -99.0
-  -49.25 -148.0
-endline
 
 line rock-border -close on -reverse on
   65.5 -52.5
@@ -174,11 +169,7 @@ point 129.5 -69.75 height -value [-10 m]
 
 point 40.5 -91.75 height -value [+2 m]
 
-point 4.5 -86.75 height -value [-15 m]
-
-point -22.75 -133.25 height -value [-10 m]
-
-line rope
+line rope -clip off
   24.0 -37.75
   6.25 -40.0
   -13.5 -52.0
@@ -223,13 +214,10 @@ line wall
   129.25 52.0 130.25 47.5 120.0 38.25
   109.75 29.0 74.25 17.25 56.75 7.5
   39.25 -2.25 3.75 -20.75 -3.0 -27.5
-  -9.75 -34.25 -27.25 -49.5 -36.75 -58.0
-  altitude .
-  -46.25 -66.5 -95.25 -106.0 -95.25 -106.0
+  -9.75 -34.25 -22.0 -44.75 -31.5 -53.25
   smooth off
+  altitude .
 endline
-
-point -101.0 -131.0 continuation -attr Code P -attr Cavite "Jean Bernard" -attr Reseau "Solitaire - Poncho" -text "Suite du méandre à explorer, P15 puis P10 à équiper"
 
 point 296.0 58.75 continuation -attr Code E -attr Cavite "Jean Bernard" -attr Reseau "Solitaire - Poncho" -text "Méandre à escalader"
 
@@ -255,6 +243,7 @@ line wall -subtype debris
   214.5 -68.5 221.0 -70.25 221.0 -67.5
   221.0 -64.75 218.5 -58.5 222.5 -57.5
   226.5 -56.5 229.0 -50.75 233.25 -50.25
+  smooth off
 endline
 
 line wall
@@ -265,6 +254,7 @@ line wall
   204.0 -52.5 200.25 -50.25 200.25 -52.5
   200.25 -54.75 201.25 -63.0 201.75 -68.25
   202.25 -73.5 204.0 -74.75 205.75 -75.25
+  smooth off
 endline
 
 line wall -subtype debris
@@ -274,6 +264,7 @@ line wall -subtype debris
   166.75 -31.75 167.5 -30.75 173.0 -31.0
   178.5 -31.25 183.75 -28.75 187.25 -34.0
   190.75 -39.25 193.0 -40.75 195.75 -41.75
+  smooth off
 endline
 
 line wall
@@ -290,6 +281,7 @@ line wall
   118.75 -41.5 121.75 -34.0 122.5 -32.25
   123.25 -30.5 121.75 -29.5 127.0 -29.5
   132.25 -29.5 136.5 -31.25 143.25 -29.75
+  smooth off
 endline
 
 line wall -subtype debris
@@ -300,23 +292,16 @@ line wall -subtype debris
   33.75 -67.5 30.75 -77.75 33.5 -77.75
   36.25 -77.75 46.5 -78.0 50.75 -77.5
   55.0 -77.0 57.75 -76.75 62.5 -76.25
+  smooth off
 endline
 
 line wall
-  -83.25 -152.0
-  -83.25 -152.0 -44.75 -152.75 -44.5 -148.0
-  -44.25 -143.25 -42.25 -129.0 -43.0 -121.0
-  -43.75 -113.0 -46.0 -105.0 -40.25 -105.0
-  -34.5 -105.0 -29.0 -102.0 -25.25 -103.25
-  -21.5 -104.5 -11.25 -103.25 -11.25 -97.5
-  -11.25 -91.75 -10.0 -81.25 -10.25 -75.75
-  -10.5 -70.25 -12.5 -65.0 -9.5 -61.75
+  -9.5 -61.75
   -6.5 -58.5 -6.25 -56.75 -2.0 -53.0
   2.25 -49.25 4.75 -48.0 7.0 -48.0
   9.25 -48.0 11.75 -47.75 13.25 -48.75
+  smooth off
 endline
-
-point -82.696 -117.43399999999998 station -name 2
 
 point -8.086000000000013 -50.26399999999999 station -name 1
 
@@ -349,6 +334,170 @@ point 283.99399999999997 4.886000000000013 station -name 14
 point 230.144 -47.673999999999985 station -name 13
 
 point 207.784 -43.02399999999999 station -name 12
+
+endscrap
+
+
+
+scrap SC-Poncho2024b-1 -projection extended -station-names "" "@Poncho2024b" -author 2024 "Xavier Robert" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
+
+point -22.75 -133.25 height -value [-7 m]
+
+line wall
+  -86.0 -138.25
+  -86.0 -138.25 -60.75 -143.25 -60.5 -138.5
+  -60.25 -133.75 -59.75 -126.25 -60.5 -118.25
+  smooth off
+endline
+
+line wall -subtype debris
+  -60.5 -118.25
+  -61.25 -110.25 -65.75 -107.75 -60.0 -107.75
+  -54.25 -107.75 -29.0 -102.0 -25.25 -103.25
+  smooth off
+endline
+
+line wall
+  -138.75 -143.75
+  -138.75 -143.75 -124.0 -134.5 -116.0 -134.5
+  -108.0 -134.5 -86.0 -138.25 -86.0 -138.25
+  smooth off
+endline
+
+area u:galerie
+  l113--254--220
+endarea
+
+area u:galerie
+  l114--160--147
+endarea
+
+line border -id l114--160--147 -close on
+  -160.5 -147.0
+  -160.5 -147.0 -170.75 -152.0 -167.25 -153.25
+  -163.75 -154.5 -155.25 -152.5 -156.5 -149.75
+  -157.75 -147.0 -160.5 -147.0 -160.5 -147.0
+  smooth off
+endline
+
+line border -id l113--254--220 -close on
+  -258.0 -220.25
+  -258.0 -220.25 -259.0 -229.25 -258.25 -231.25
+  -257.5 -233.25 -255.75 -236.25 -254.75 -231.0
+  -253.75 -225.75 -251.5 -219.5 -254.25 -219.5
+  -257.0 -219.5 -258.0 -220.25 -258.0 -220.25
+  smooth off
+endline
+
+line wall -subtype debris
+  -319.25 -241.75
+  -319.25 -241.75 -315.75 -238.75 -300.0 -237.75
+  -284.25 -236.75 -263.5 -238.75 -259.75 -237.75
+  altitude .
+  -256.0 -236.75 -237.0 -216.25 -229.75 -210.5
+  -222.5 -204.75 -194.5 -185.25 -189.25 -179.0
+  -184.0 -172.75 -173.0 -163.25 -169.5 -160.75
+  -166.0 -158.25 -151.5 -148.0 -138.75 -143.75
+  smooth off
+endline
+
+line wall
+  -95.25 -106.0
+  -95.25 -106.0 -144.5 -134.25 -155.0 -141.25
+  -165.5 -148.25 -202.5 -167.25 -214.75 -178.5
+  -227.0 -189.75 -249.75 -220.25 -267.75 -220.5
+  -285.75 -220.75 -309.25 -218.0 -320.25 -227.75
+  smooth off
+endline
+
+line wall
+  -25.25 -103.25
+  -21.5 -104.5 -11.25 -103.25 -11.25 -97.5
+  -11.25 -91.75 -10.0 -81.25 -10.25 -75.75
+  -10.5 -70.25 -12.5 -65.0 -9.5 -61.75
+  smooth off
+endline
+
+line wall
+  -31.5 -53.25
+  -41.0 -61.75 -95.25 -106.0 -95.25 -106.0
+  smooth off
+endline
+
+point -68.0 -45.75 height -value [-10 m]
+
+line rope
+  -61.0 -99.0
+  -70.75 -102.0
+  -70.5 -128.5
+endline
+
+point -348.75600000000003 -273.56399999999996 station -name 15
+
+point -348.75600000000003 -250.73399999999992 station -name 14
+
+point -336.86600000000004 -243.01399999999995 station -name 13
+
+point -313.92600000000004 -230.81399999999996 station -name 12
+
+point -260.216 -232.68399999999994 station -name 10
+
+point -212.23600000000002 -189.48399999999995 station -name 9
+
+point -156.54600000000002 -144.39399999999995 station -name 8
+
+point -117.12600000000002 -128.46399999999994 station -name 7
+
+point -86.31600000000003 -129.54399999999995 station -name 6
+
+point -65.26600000000002 -132.49399999999994 station -name 5
+
+point -65.26600000000002 -105.33399999999995 station -name 4
+
+point -17.646000000000022 -96.93399999999994 station -name 3
+
+point -17.646000000000022 -67.41399999999994 station -name 2
+
+endscrap
+
+
+
+scrap SC-Poncho2024b-2 -projection extended -station-names "" "@Poncho2024b" -author 2024 "Xavier Robert" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
+
+line wall -subtype unsurveyed
+  -167.25 -153.25
+  -167.25 -153.25 -166.75 -166.0 -172.75 -173.0
+  -178.75 -180.0 -197.0 -191.5 -206.0 -196.5
+  smooth off
+endline
+
+line wall
+  -206.0 -196.5
+  -215.0 -201.5 -254.25 -219.5 -254.25 -219.5
+  smooth off
+endline
+
+line wall -subtype debris
+  -256.0 -233.75
+  -256.0 -233.75 -235.75 -225.0 -229.0 -223.25
+  -222.25 -221.5 -210.25 -212.0 -204.0 -210.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  -204.0 -210.5
+  -197.75 -209.0 -193.0 -205.0 -192.0 -201.5
+  -191.0 -198.0 -172.25 -190.75 -166.25 -186.75
+  -160.25 -182.75 -157.25 -175.25 -157.0 -171.5
+  -156.75 -167.75 -156.5 -151.0 -156.5 -151.0
+  smooth off
+endline
+
+point -156.54600000000002 -144.39399999999995 station -name 8
+
+point -204.90600000000003 -206.89399999999995 station -name 11
+
+point -260.216 -232.68399999999994 station -name 10
 
 endscrap
 

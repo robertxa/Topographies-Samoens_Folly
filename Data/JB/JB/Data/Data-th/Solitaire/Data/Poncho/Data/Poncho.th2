@@ -1,8 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -206.75 -679.049 521.701 521.8334
+##XTHERION## xth_me_area_adjust -1079.175 -1379.0629999999999 1381.5506000000003 687.9616000000001
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {157.48499999999999 1 1.0} {78.74100000000001 0} Poncho-plan2023.xvi 0 {}
-##XTHERION## xth_me_image_insert {157.46900000000002 1 1.0} {78.86700000000002 0@Poncho.Poncho} Poncho-plan2024.xvi 0 {}
+##XTHERION## xth_me_image_insert {157.46899999999994 1 1.0} {78.86700000000008 0@Poncho.Poncho} Poncho-plan2024.xvi 0 {}
 
 
 
@@ -157,8 +157,6 @@ endscrap
 scrap SP-Poncho2024-1 -projection plan -station-names "" "@Poncho2024" -author 2024 "Xavier Robert" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
 
 point 120.77900000000002 20.447000000000024 station -name 11
-
-point -2.75 -392.5 height -value [-10 m]
 
 point 18.75 -291.75 height -value [-15 m]
 
@@ -349,15 +347,12 @@ line wall
   altitude .
   43.25 -256.0 41.25 -269.5 42.0 -277.75
   42.75 -286.0 48.25 -303.75 40.0 -310.75
-  31.75 -317.75 17.25 -343.0 16.5 -355.75
-  15.75 -368.5 19.0 -411.25 12.0 -420.25
-  5.0 -429.25 -10.25 -431.0 -10.25 -431.0
   smooth off
 endline
 
 point 145.0 78.5 map-connection
 
-point -6.75 -445.25 map-connection
+point 61.5 -309.5 map-connection
 
 point 104.25 209.25 map-connection
 
@@ -440,22 +435,10 @@ line pit
   smooth off
 endline
 
-line pit
-  60.0 -407.0
-  60.0 -407.0 48.0 -387.75 40.25 -388.25
-  32.5 -388.75 17.75 -393.5 13.0 -399.0
-  smooth off
-endline
-
-point -22.5 -448.0 continuation -attr Code P -attr Reseau "Jean Bernard" -attr Cavite "Jean Bernard" -text "Suite du méandre à explorer, P15 puis P10 à équiper"
-
 point 102.75 222.0 continuation -attr Code E -attr Reseau "Jean Bernard" -attr Cavite "Jean Bernard" -attr Code A -text "Amont du méandre à escalader"
 
 line wall
-  -3.25 -462.5
-  -3.25 -462.5 42.25 -456.75 47.75 -441.0
-  altitude .
-  53.25 -425.25 73.75 -323.0 75.25 -314.5
+  75.25 -314.5
   76.75 -306.0 79.25 -300.25 78.75 -294.0
   78.25 -287.75 84.0 -284.0 84.5 -278.25
   85.0 -272.5 102.75 -252.25 110.5 -245.75
@@ -478,8 +461,6 @@ line wall
   149.25 72.25 151.25 73.0 151.25 73.0
   smooth off
 endline
-
-point 24.319000000000017 -445.383 station -name 2
 
 point 54.31900000000002 -299.243 station -name 1
 
@@ -519,6 +500,179 @@ endscrap
 
 
 
+scrap SP-Poncho2024b-1 -projection plan -station-names "" "@Poncho2024b" -author 2024 "Xavier Robert" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
+
+point -324.631 -658.9929999999998 station -name 12
+
+point -217.62099999999998 -668.3529999999998 station -name 10
+
+point -107.16099999999999 -662.5629999999999 station -name 11
+
+point -162.581 -589.7429999999998 station -name 9
+
+point -64.25099999999999 -537.4629999999999 station -name 8
+
+point 7.789000000000016 -505.39299999999986 station -name 7
+
+point 32.84900000000002 -449.10299999999984 station -name 6
+
+point 26.259000000000015 -407.51299999999986 station -name 5
+
+point 55.16900000000001 -299.21299999999985 station -name 1
+
+line wall -outline in
+  -102.5 -643.5
+  -102.5 -643.5 -130.5 -650.5 -144.75 -653.0
+  -159.0 -655.5 -191.0 -662.5 -193.75 -655.75
+  -196.5 -649.0 -192.0 -642.75 -185.5 -637.75
+  -179.0 -632.75 -173.0 -627.25 -173.0 -627.25
+  smooth off
+endline
+
+line wall -outline in -subtype unsurveyed
+  -61.25 -587.75
+  -61.25 -587.75 -53.5 -609.5 -66.75 -620.25
+  -80.0 -631.0 -97.0 -641.5 -102.5 -643.5
+  smooth off
+endline
+
+line pit
+  -341.0 -673.25
+  -341.0 -673.25 -334.0 -661.0 -340.0 -658.5
+  -346.0 -656.0 -349.25 -654.75 -349.25 -654.75
+  smooth off
+endline
+
+point -349.0 -699.75 height -value [-11 m]
+
+point -332.5 -621.5 height -value [-7 m]
+
+point -12.5 -406.0 height -value [-7 m]
+
+line pit -reverse on
+  15.0 -407.0
+  15.0 -407.0 31.5 -398.5 41.0 -404.5
+  smooth off
+endline
+
+area blocks
+  l156-81--332
+endarea
+
+line label -id l156-81--332 -close on
+  79.5 -332.0
+  79.5 -332.0 31.5 -305.0 22.5 -316.5
+  13.5 -328.0 3.0 -384.0 3.0 -401.5
+  3.0 -419.0 3.5 -445.0 11.5 -449.0
+  19.5 -453.0 50.0 -464.5 51.5 -451.0
+  53.0 -437.5 54.5 -391.5 62.0 -375.5
+  69.5 -359.5 79.5 -332.0 79.5 -332.0
+  smooth off
+endline
+
+area blocks
+  l154--32--574
+endarea
+
+line label -id l154--32--574 -close on
+  -33.0 -574.5
+  -33.0 -574.5 -59.0 -566.0 -70.0 -555.0
+  -81.0 -544.0 -86.5 -517.5 -119.5 -532.0
+  -152.5 -546.5 -190.0 -577.0 -218.0 -594.5
+  -246.0 -612.0 -301.5 -612.0 -299.5 -639.5
+  -297.5 -667.0 -263.5 -708.5 -215.0 -714.5
+  -166.5 -720.5 -95.5 -705.5 -64.0 -682.0
+  -32.5 -658.5 -26.0 -623.5 -31.0 -605.0
+  -36.0 -586.5 -33.0 -574.5 -33.0 -574.5
+  smooth off
+endline
+
+line wall -outline in
+  -173.0 -627.25
+  -173.0 -627.25 -145.25 -602.0 -127.5 -596.25
+  -109.75 -590.5 -74.5 -578.5 -68.75 -577.25
+  -63.0 -576.0 -61.25 -587.75 -61.25 -587.75
+  smooth off
+endline
+
+point -30.5 -508.5 mudcrack
+
+point -24.25 -524.5 mudcrack
+
+point -38.75 -544.0 mudcrack
+
+point -53.0 -540.0 mudcrack
+
+point -31.5 -533.0 mudcrack
+
+point -39.5 -516.75 mudcrack
+
+point -52.25 -527.25 mudcrack
+
+point -59.25 -524.5 mudcrack
+
+line wall
+  -47.5 -581.25
+  -47.5 -581.25 -52.25 -575.5 -42.75 -566.5
+  -33.25 -557.5 16.5 -523.25 21.75 -509.5
+  27.0 -495.75 43.5 -457.25 41.5 -446.0
+  39.5 -434.75 39.0 -405.75 42.25 -398.25
+  45.5 -390.75 70.25 -332.5 72.5 -325.5
+  74.75 -318.5 75.25 -314.5 75.25 -314.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  -100.25 -675.25
+  -100.25 -675.25 -47.0 -652.0 -44.25 -640.0
+  -41.5 -628.0 -44.5 -611.0 -45.25 -604.5
+  -46.0 -598.0 -47.5 -584.0 -47.5 -581.25
+  smooth off
+endline
+
+line pit -reverse on
+  -337.25 -647.0
+  -337.25 -647.0 -317.75 -663.75 -329.75 -676.5
+  smooth off
+endline
+
+line wall
+  -341.0 -673.25
+  -330.0 -674.75 -321.25 -673.75 -308.0 -673.75
+  -294.75 -673.75 -226.0 -677.5 -217.75 -674.5
+  -209.5 -671.5 -156.75 -698.0 -144.0 -694.5
+  -131.25 -691.0 -106.5 -679.5 -100.25 -675.25
+  smooth off
+endline
+
+point -370.25 -626.0 traverse
+
+point -343.75 -660.75 map-connection
+
+point -115.5 -714.25 label -text "Le By-Pass"
+
+line wall
+  40.0 -310.75
+  40.0 -310.75 20.25 -332.25 18.75 -344.5
+  17.25 -356.75 18.5 -399.0 19.25 -409.75
+  20.0 -420.5 27.5 -445.0 13.5 -460.5
+  -0.5 -476.0 -7.25 -480.0 -22.5 -490.0
+  altitude .
+  -37.75 -500.0 -59.5 -509.75 -73.75 -520.25
+  -88.0 -530.75 -155.5 -582.5 -166.5 -587.75
+  -177.5 -593.0 -218.5 -618.0 -234.75 -624.0
+  altitude .
+  -251.0 -630.0 -314.25 -654.75 -326.5 -653.0
+  -338.75 -651.25 -333.75 -651.75 -346.25 -650.75
+  smooth off
+endline
+
+point 58.82900000000001 -318.03299999999984 station -name 3
+
+endscrap
+
+
+
 scrap SP-Poncho2024-2 -projection plan -station-names "" "@Poncho2024" -author 2024 "Xavier Robert" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
 
 line border -close on
@@ -550,6 +704,7 @@ line wall -subtype invisible
   79.25 89.5 80.75 89.25 81.25 88.0
   81.75 86.75 85.25 81.25 88.25 81.0
   91.25 80.75 91.0 81.0 92.75 81.25
+  smooth off
 endline
 
 line wall

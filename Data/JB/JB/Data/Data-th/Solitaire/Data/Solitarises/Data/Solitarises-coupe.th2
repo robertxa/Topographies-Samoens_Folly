@@ -246,10 +246,32 @@ line wall
   smooth off
 endline
 
+line rope
+  3146.0 -1329.0
+  3192.5 -1338.5
+  3198.0 -1557.0
+endline
+
+point 3288.0 -1627.0 height -value [-11 m]
+
+point 3072.0 -1220.0 height -value [-7 m]
+
+line rope
+  3175.0 -1257.0
+  3144.0 -1273.0
+  3146.0 -1329.0
+endline
+
+line wall -subtype invisible
+  3413.5 -1298.0
+  3413.5 -1298.0 3407.0 -1288.0 3377.0 -1288.0
+  3347.0 -1288.0 3276.0 -1297.0 3249.0 -1296.0
+  3222.0 -1295.0 3190.0 -1289.0 3192.0 -1282.0
+endline
+
 line wall
-  3205.5 -1254.0
-  3205.5 -1254.0 3190.0 -1252.0 3172.5 -1257.5
-  3155.0 -1263.0 3098.5 -1282.5 3082.0 -1291.0
+  3176.0 -1248.0
+  3158.5 -1253.5 3098.5 -1282.5 3082.0 -1291.0
   3065.5 -1299.5 3005.5 -1330.5 2989.0 -1341.5
   2972.5 -1352.5 2945.5 -1377.0 2936.5 -1380.5
   2927.5 -1384.0 2927.5 -1381.5 2919.5 -1396.5
@@ -318,14 +340,6 @@ line rope
   3444.5 -1489.0
 endline
 
-line wall -subtype presumed
-  3404.5 -1251.0
-  3404.5 -1251.0 3337.0 -1254.5 3316.0 -1254.0
-  3295.0 -1253.5 3247.0 -1258.5 3231.0 -1257.0
-  3215.0 -1255.5 3205.5 -1254.0 3205.5 -1254.0
-  smooth off
-endline
-
 line wall -subtype debris
   3484.0 -1352.0
   3484.0 -1352.0 3466.0 -1342.0 3452.5 -1334.5
@@ -345,8 +359,6 @@ line wall
 endline
 
 point 2390.0 -1822.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Les Solitarisés" -attr CA "?" -text "Puits à descendre"
-
-point 3429.5 -1269.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Les Solitarisés" -attr CA "?" -text " Départ à voir en hauteur après escalade ; suite logique de la Conduite Forcée ?"
 
 point 1860.0 -1541.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Les Solitarisés" -attr CA "?" -text " Départ à voir en hauteur après escalade ; suite logique de la Conduite Forcée ?"
 

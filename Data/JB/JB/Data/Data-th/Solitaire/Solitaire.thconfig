@@ -31,7 +31,6 @@ layout layout_plan
 	copy headerl 
 	copy langue-fr
 	
-	#debug scrap-names
 	  
 	doc-title "Réseau du Solitaire-plan"
 	doc-author "Xavier Robert"
@@ -53,9 +52,14 @@ layout layout_plan
 	map-header 5 90 nw
 	map-header-bg off
 	layers on
+	color map-fg altitude
+	color-legend smooth
+	symbol-hide point rope
 	symbol-hide line survey
 	#debug station-names
 	#debug scrap-names
+	#color map-fg scraps
+	#color-legend off
 	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
@@ -110,9 +114,13 @@ layout layout_coupe
 	map-header 5 100 nw
 	map-header-bg off
 	layers on
+	color map-fg altitude
+	color-legend smooth
 	symbol-hide line survey
 	#debug station-names	
 	#debug scrap-names	
+	#color map-fg scraps
+	#color-legend off
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  

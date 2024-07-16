@@ -52,7 +52,7 @@ layout layout_plan
 	map-header-bg off
 	layers on
 	symbol-hide line survey
-	#debug station-names
+	debug station-names
 	# grid bottom
 	# grid-size 100 100 100 m
 	grid off
@@ -124,7 +124,7 @@ layout layout_coupe
 	map-header-bg off
 	layers on
 	symbol-hide line survey
-	#debug station-names	
+	debug station-names	
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off  

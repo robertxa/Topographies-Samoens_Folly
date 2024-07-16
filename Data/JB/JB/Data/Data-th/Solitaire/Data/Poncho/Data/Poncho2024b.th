@@ -1,0 +1,56 @@
+encoding utf-8
+
+# Copyright (C) 2024 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+
+survey Poncho2024b -title "Puits du Poncho ; 2024b"
+
+  centerline
+    date 2024.07.13 
+      team "Arnauld Malard"
+      team "Frédéric Delègue"
+      team "Alexandre Chamfray"
+      team "Gaëtan Poschmann"
+    explo-date 2024.07.13 
+      explo-team "Arnauld Malard"
+      explo-team "Frédéric Delègue"
+      explo-team "Alexandre Chamfray"
+      explo-team "Gaëtan Poschmann"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino left right up down
+    extend left
+    # Départ de la station 0 de Poncho2024a, au niveau de la MC
+    0 1 5.13  180 -25  2.25 0.65  5.4 1.5
+    1 2 4.87  169 -60  1.7 7.4 4 .  # MC ?
+    2 3 7.50  0 -90 2 0.9 9 1.5 # P8
+    3 4 12.28 200 -10  1.4 0.7 3.4 .
+    4 5 6.90  0 -90 130 1 9 1.5 # P7
+    5 6 5.40  171 8 0.7 0.8 4.35  2
+    6 7 7.83  204 2 1.8 3.7 1.9 1.5
+    7 8 10.8  246 -22 4.73  2.6 0.4 1.5 # Départ du By-Pass
+    8 9 18.2  242 -39 2.1 0.6 3.3 1.5
+    9 10  16.4  215 -42 0.7 6.6 3.1 1
+    extend right
+    10  11  15.5  87  25  2 2 3 1.5 # Le By-Pass ; Bouclage non effectué
+
+    extend left
+    10  12  13.65 275 2 2 0.7 2.5 2
+    12  13  6.60  290 -28 3.7 0.3 6.4 2
+    13  14  3.60  245 -33 4 0.5 2.6 .
+    14  15  5.80  . -90 2.3 0.8 6 1.5 # P7
+    15  16  4 128 -23 3.5 0.3 11  . # Vire + sommet de puits
+    16  17  10.5  0 -90 . . . . # P11, jonction avec le départ des Solitarisés, A priori, Station 54 des Solitarisés2022
+    
+    flags duplicate
+    15  18  7.60  239 -18 2.7 1 6.3 1.5 # Vire
+    18  19  16.20 232 -33 20  1 1.35  12.5
+    19  20  13.00 244 -8  31  0.1 1 0.5
+    20  21  16.80 240 -33 . . . . # Jonction avec la MC dans les Solitarisés ; a priori, station 21 des Solitarisés2022
+    flags not duplicate
+  endcenterline
+
+endsurvey
