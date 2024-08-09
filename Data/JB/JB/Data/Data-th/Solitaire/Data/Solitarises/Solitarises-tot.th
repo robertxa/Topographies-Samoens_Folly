@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -11,6 +11,11 @@ survey Solitarises -title "Réseau des Solitarisés"
 		equate 19@solitaire2023a 0@solitaire2022
 	input Data/solitaire2023b.th
 		equate 0@solitaire2023a 0@solitaire2023b
+	input Data/affluent_de_la_soif.th
+		equate 6@affluent_de_la_soif 52@solitaire2023b
+		equate 7@affluent_de_la_soif 54@solitaire2023b
+	input Data/aval_de_l'affluent_de_la_soif.th
+		equate 20@aval_de_laffluent_de_la_soif 58@solitaire2023b
 
 	input Data/Solitarises.th2
 	
@@ -20,7 +25,13 @@ survey Solitarises -title "Réseau des Solitarisés"
 	input Data/Solitaire2023b-coupe.th2
 		join SC-Solitarises2023-1 SC-Solitarises2023b-1
 		join SC-Solitarises2023-1 SC-Solitarises2023b-4
-
+	input Data/affluent_de_la_soif-1p.th2
+		join SP-Kissikol-1 SP-Solitarises2023b-8
+		join SP-ShuntSoif-1 SP-Solitarises2023b-8
+		join SP-ShuntSoif-1 SP-Solitarises2023b-6
+		join SP-Etancheur-1 SP-Solitarises2023b-6
+	
+	
 	# Add maps
 	input Solitarises-maps.th
 	

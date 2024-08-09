@@ -1,0 +1,309 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -982.0 -838.0 508.0 384.0
+##XTHERION## xth_me_area_zoom_to 50
+
+# 2024.07.28 created by TopoDroid v. 5.1.40
+
+
+
+
+scrap SP-ShuntSoif-1 -projection plan -station-names "" "@affluent_de_la_soif" -author 2024 "Stéphane Lips" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall
+  -129.58 -464.36
+  -138.18 -454.58 -149.71 -448.54 -158.76 -439.56
+  -160.8 -437.54 -161.7 -434.59 -163.66 -432.49
+  -180.03 -414.94 -199.32 -414.47 -214.74 -397.05
+  smooth off
+endline
+
+line pit
+  -422.0 -344.0
+  -432.99 -374.27 -431.97 -457.27 -389.2 -459.65
+  smooth off
+endline
+
+line pit
+  -366.0 -336.0
+  -363.56 -337.97 -338.82 -366.9 -336.63 -370.04
+  -325.42 -386.1 -323.39 -420.32 -329.86 -438.74
+  -334.05 -450.65 -336.5 -451.49 -344.76 -460.27
+  smooth off
+endline
+
+point -391.93 -382.93 clay
+
+point -277.08 -403.98 clay
+
+point -372.75 -420.49 clay
+
+point -227.45 -441.81 clay
+
+point -174.57 -497.49 clay
+
+point -166.06 -461.26 clay
+
+point -284.87 -427.69 clay
+
+point -441.69 -438.88 clay
+
+point -443.49 -399.18 clay
+
+point -349.97 -393.32 clay
+
+point -304.89 -380.27 clay
+
+line wall -reverse on
+  -306.45 -451.13
+  -348.34 -448.81 -464.0 -468.0 -496.0 -500.0
+  smooth off
+endline
+
+line wall
+  -214.74 -397.05
+  -238.9 -377.54 -271.66 -367.64 -301.71 -360.54
+  -322.4 -355.65 -346.08 -347.96 -367.52 -348.29
+  -391.72 -348.66 -425.31 -355.99 -446.4 -368.3
+  -457.26 -374.64 -453.5 -374.39 -462.33 -383.21
+  -470.35 -391.22 -481.25 -397.15 -487.02 -407.21
+  -490.07 -412.53 -531.12 -442.58 -534.0 -448.0
+  smooth off
+endline
+
+line wall -reverse on
+  -184.8 -509.14
+  -190.22 -498.43 -196.73 -484.43 -205.73 -476.16
+  -226.51 -457.07 -243.76 -463.0 -267.6 -459.74
+  -285.26 -457.32 -301.07 -451.45 -319.25 -452.38
+  smooth off
+endline
+
+point -4.38 -647.98 station -name "7"
+
+point -63.89 -655.87 station -name "8"
+
+point -197.22 -447.54 station -name "9"
+
+point -483.17 -414.36 station -name "10"
+
+point -528.59 -464.02 station -name "11"
+
+endscrap
+
+
+
+scrap SP-Kissikol-1 -projection plan -station-names "" "@affluent_de_la_soif" -author 2024 "Stéphane Lips" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 39.3701 0 0 0 1 0 m]
+
+point -776.50 -457.10 station -name "12"
+
+point -776.30 -403.07 station -name "13"
+
+point -843.07 -131.55 station -name "14"
+
+point -737.05 -3.17 station -name "15"
+
+point -764.81 148.28 station -name "16"
+
+point -654.37 179.57 station -name "17"
+
+point -558.97 200.47 station -name "18"
+
+point -416.50 131.63 station -name "19"
+
+line wall -reverse on
+  -832.0 -26.0
+  -833.11 -15.58 -828.27 0.82 -826.72 11.22
+  -823.58 32.25 -814.38 58.55 -822.86 79.49
+  -830.89 99.31 -849.49 108.2 -844.56 132.84
+  -839.97 155.78 -809.78 171.58 -792.47 186.2
+  -778.35 198.13 -775.81 199.86 -759.5 208.52
+  smooth off
+endline
+
+line wall -reverse on -outline in
+  -798.71 122.33
+  -800.97 116.22 -804.96 106.6 -804.75 100.47
+  -804.61 96.45 -800.31 78.53 -790.15 82.35
+  -786.52 83.71 -755.97 143.29 -792.28 130.5
+  smooth off
+endline
+
+line wall
+  -718.91 -47.93
+  -709.96 -9.15 -689.27 3.24 -691.03 43.64
+  smooth off
+endline
+
+line wall -reverse on
+  -759.5 208.52
+  -725.59 210.94 -762.9 207.64 -730.49 212.42
+  -713.33 214.95 -695.65 214.76 -678.75 219.14
+  -653.17 225.76 -628.2 235.55 -602.64 242.5
+  smooth off
+endline
+
+line wall
+  -691.03 43.64
+  -685.83 61.31 -699.62 81.79 -692.61 98.86
+  -690.81 103.24 -686.89 106.4 -684.02 110.17
+  -663.36 137.32 -630.36 133.56 -600.28 143.77
+  smooth off
+endline
+
+point -252.0 154.0 continuation -attr Code A -attr Cavite "Gouffre Jean-Bernard" -attr Reseau "Solitarisés" -text "Laminoir dans 5 cm d'eau, derrière, ça a l'air de s'agrandir, gros affluent en débit"
+
+area water
+  l74--396-90
+endarea
+
+line label -id l74--396-90 -close on
+  -369.88 173.57
+  -369.88 173.57 -391.98 210.68 -442.99 182.34
+  -494.0 154.0 -490.0 124.0 -466.0 98.0
+  -442.0 72.0 -380.74 71.78 -376.37 115.89
+  -372.0 160.0 -369.88 173.57 -369.88 173.57
+  smooth off
+endline
+
+line water-flow
+  -500.0 156.0
+  -500.0 156.0 -592.0 184.0 -652.0 162.0
+  -712.0 140.0 -734.0 92.0 -740.0 66.0
+  -746.0 40.0 -754.0 12.0 -754.0 12.0
+  smooth off
+endline
+
+line water-flow
+  -342.0 154.0
+  -342.0 154.0 -448.0 170.0 -506.0 178.0
+  -564.0 186.0 -592.0 218.0 -630.0 208.0
+  -668.0 198.0 -716.0 156.0 -742.0 128.0
+  -768.0 100.0 -794.0 50.0 -794.0 34.0
+endline
+
+line wall
+  -600.28 143.77
+  -592.79 145.62 -580.5 149.36 -572.4 148.73
+  -555.52 147.41 -539.99 137.77 -523.85 133.47
+  -475.52 120.58 -426.39 113.15 -376.37 115.89
+  smooth off
+endline
+
+line wall -reverse on
+  -602.64 242.5
+  -570.54 257.64 -574.59 254.96 -539.33 239.15
+  -522.31 231.52 -509.78 217.43 -494.71 206.98
+  -484.95 200.21 -479.47 198.58 -469.45 192.57
+  -465.36 190.12 -461.94 186.45 -457.5 184.73
+  -452.93 182.96 -447.79 183.31 -442.99 182.34
+  -432.4 180.2 -422.29 175.95 -411.64 174.12
+  -398.07 171.78 -383.41 173.12 -369.88 173.57
+  smooth off
+  altitude .
+endline
+
+endscrap
+
+
+
+scrap SP-Etancheur-1 -projection plan -station-names "" "@affluent_de_la_soif" -author 2024 "Stéphane Lips" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 39.3701 0 0 0 1 0 m]
+
+point 196.77 -72.45 station -name "1"
+
+point 368.33 -698.99 station -name "6"
+
+point 295.93 -219.23 station -name "0"
+
+point 290.76 -415.08 station -name "3"
+
+point 331.96 -510.30 station -name "4"
+
+point 364.40 -546.88 station -name "5"
+
+point 196.85 -236.22 station -name 2
+
+point 162.0 -232.0 water-flow -orientation 89.3
+
+point 254.0 -429.0 water-flow -orientation 89.3
+
+line wall
+  312.37 -487.68
+  321.16 -500.19 317.49 -496.11 324.32 -509.65
+  smooth off
+endline
+
+line wall
+  203.49 -74.1
+  225.07 -100.82 242.22 -130.64 258.6 -160.67
+  262.63 -168.05 274.39 -184.4 273.12 -193.13
+  272.65 -196.37 270.66 -199.43 268.26 -201.65
+  249.79 -218.77 203.09 -222.13 179.0 -226.0
+  smooth off
+endline
+
+line wall
+  253.26 -247.09
+  274.71 -238.65 293.42 -235.2 313.01 -222.83
+  315.82 -221.06 319.4 -220.36 321.73 -217.99
+  altitude .
+  335.26 -204.26 316.83 -202.59 305.7 -197.83
+  smooth off
+endline
+
+line wall
+  180.0 -237.0
+  159.93 -271.79 173.87 -273.96 197.94 -304.75
+  201.93 -309.85 204.51 -315.98 208.65 -320.97
+  217.24 -331.32 216.1 -325.48 221.44 -336.14
+  225.78 -344.8 224.93 -354.26 227.88 -363.05
+  230.9 -372.04 239.43 -379.87 244.56 -387.71
+  smooth off
+endline
+
+line wall -reverse on
+  253.26 -247.09
+  244.24 -254.31 235.1 -264.03 235.65 -276.77
+  236.73 -301.98 278.17 -338.05 292.59 -357.82
+  301.9 -370.58 310.67 -386.94 317.38 -401.16
+  smooth off
+endline
+
+line wall
+  244.56 -387.71
+  267.81 -418.52 299.57 -451.14 312.37 -487.68
+  smooth off
+endline
+
+line wall -reverse on
+  317.38 -401.16
+  334.4 -429.42 338.77 -459.29 355.28 -487.48
+  smooth off
+endline
+
+line water-flow
+  192.0 -247.0
+  192.0 -247.0 221.0 -301.0 235.0 -325.0
+  249.0 -349.0 291.0 -413.0 305.0 -439.0
+  319.0 -465.0 324.0 -479.0 332.0 -492.0
+  smooth off
+endline
+
+point 184.0 -6.0 low-end
+
+line wall -reverse on
+  217.69 -66.73
+  237.83 -86.66 247.61 -115.42 257.16 -141.61
+  smooth off
+endline
+
+line wall -reverse on
+  257.16 -141.61
+  262.37 -144.64 268.35 -146.64 272.8 -150.71
+  275.7 -153.36 276.43 -157.69 278.44 -161.07
+  285.84 -173.54 295.3 -187.8 305.7 -197.83
+  smooth off
+endline
+
+endscrap
+
+

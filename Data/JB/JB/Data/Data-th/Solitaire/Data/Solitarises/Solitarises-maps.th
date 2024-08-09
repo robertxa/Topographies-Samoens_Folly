@@ -7,7 +7,7 @@ encoding  utf-8
 #### Plan
 
 
-map MP-Solitarises -title "Réseau des Solitarisés"
+map MP-SolitarisesSup -title "Réseau des Solitarisés"
 	SP-Solitarises-4
 	break
 	SP-Solitarises-5
@@ -31,7 +31,15 @@ map MP-Solitarises -title "Réseau des Solitarisés"
 	SP-Solitarises2023b-2
 	break
 	SP-Solitarises2023b-3
+	
 	break
+	SP-Etancheur-1
+	break
+	SP-Kissikol-1
+	break
+	SP-ShuntSoif-1
+	break
+
 	SP-Solitarises2023b-4
 	break
 	SP-Solitarises2023b-5
@@ -43,6 +51,28 @@ map MP-Solitarises -title "Réseau des Solitarisés"
 	SP-Solitarises2023b-9
 	break
 	SP-Solitarises2023b-8
+
+	#break
+	#SP-SoifInf-1
+	#break
+	#SP-SoifInf-3
+	#break
+	#SP-SoifInf-2
+
+endmap
+
+map MP-SoifInf
+	SP-SoifInf-1
+	break
+	SP-SoifInf-3
+	break
+	SP-SoifInf-2
+endmap
+
+map MP-Solitarises -title "Réseau des Solitarisés"
+	MP-SolitarisesSup
+	break
+	MP-SoifInf [0 -25 m] below
 endmap
 
 
@@ -60,4 +90,12 @@ map MC-Solitarises -title "Réseau des Solitarisés"
 	SC-Solitarises2023b-2
 	break
 	SC-Solitarises2023b-3
+	break
+	SC-Etancheur-1
+	break
+	SC-Kissikol-1
+	break
+	SC-Kissikol-2
+	break
+	SC-SoifInf-1
 endmap   

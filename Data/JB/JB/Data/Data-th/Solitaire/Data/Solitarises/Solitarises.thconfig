@@ -49,9 +49,10 @@ layout layout_plan
 	statistics copyright all
 	legend off
 	#legend-width 22 cm
-	legend-width 15 cm
+	legend-width 15.5 cm
 #	map-header 35 45 nw
-	map-header 0 100 nw
+#	map-header 0 100 nw
+	map-header 65 60 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -82,7 +83,8 @@ layout layout_plan
 	# Ajouter une coupe développée sur le même pdf
 	#map-image 0 100 sw Outputs/Solitarises-coupe2022b.pdf
 	#map-image 0 100 sw Outputs/Solitarises-coupe2023.pdf
-	map-image 0 0 nw Outputs/Solitarises-coupe2023b.pdf
+	#map-image 0 0 nw Outputs/Solitarises-coupe2023b.pdf
+	map-image 0 0 nw Outputs/Solitarises-coupe2024.pdf
   
 endlayout
   
@@ -155,15 +157,15 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2023b.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2023b.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2024.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2024.xvi
 
-select MP-Solitarises-tot@Solitarises
-select MC-Solitarises-tot@Solitarises
+select MP-Solitarises@Solitarises
+select MC-Solitarises@Solitarises
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2023b.pdf
-	export map -layout layout_plan -o Outputs/Solitarises-plan2023b.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2024.pdf
+	export map -layout layout_plan -o Outputs/Solitarises-plan2024.pdf
  
 # Export des modeles 3D
 	export model -o Outputs/Solitarises.lox
@@ -173,3 +175,5 @@ select MC-Solitarises-tot@Solitarises
   
 # Export des fichiers kml
 	#export map -proj plan -fmt kml -o Outputs/3D/Solitarises.kml -layout layout_plan
+
+export survey-list -location off -o Outputs/Topographies_2024.html

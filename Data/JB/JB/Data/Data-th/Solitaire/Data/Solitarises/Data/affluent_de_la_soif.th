@@ -1,0 +1,217 @@
+# 2024.07.28 created by TopoDroid v 5.1.40
+
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey affluent_de_la_soif -title "affluent de la Soif ; 2024"
+    # Du fond vers la galerie principale 
+
+  centerline
+    date 2024.07.27 
+      team "Olivier Gente"
+      team "Stéphane Lips"
+    explo-date 2024.07.27 
+      explo-team "Olivier Gente"
+      explo-team "Stéphane Lips"
+      explo-team "Antoine Aigueperse"
+      explo-team "Mahieddine Bourekoume"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend right
+    0 1 4.92 326.0 23.8 # station 0 = terminus, laminoir étroit sur joint de strate
+    # extend auto
+    0 . 0.94 21.4 26.2
+    0 . 0.43 13.3 50.4
+    0 . 0.65 70.3 0.1
+    0 . 0.67 104.8 -21.2
+    0 . 0.32 166.3 -49.8
+    extend left
+    0 2 2.69 260.3 -18.1  # arrivée d'eau imp.
+    # extend auto
+    2 . 0.25 142.0 87.5
+    2 . 0.88 10.3 41.0
+    2 . 0.51 36.4 7.9
+    2 . 0.63 103.5 23.8
+    2 . 0.38 55.4 -79.3
+    extend left
+    2 3 5.75 152.3 -26.9  # Arrivée de l'eau
+    # extend auto
+    3 . 0.68 237.5 4.3
+    3 . 0.15 156.8 77.6
+    3 . 0.82 243.9 -76.2
+    3 . 0.20 54.5 -7.2
+    3 . 2.70 155.8 -20.6
+    extend left
+    3 4 2.81 156.6 -20.5  # amarrage
+    # extend auto
+    4 . 0.62 48.5 -12.3
+    4 . 0.45 54.3 26.7
+    4 . 1.00 272.7 -83.5
+    4 . 0.25 67.7 77.3
+    4 . 1.25 137.3 -10.0
+    extend left
+    4 5 1.26 138.4 -10.3
+    # extend auto
+    5 . 1.22 172.7 -85.3
+    5 . 0.55 56.7 -33.1
+    5 . 0.30 237.2 -51.1
+    5 . 1.26 172.6 -84.9
+    5 . 2.36 231.4 -67.1
+    5 . 1.71 255.2 -48.0
+    5 . 8.58 213.1 -50.0
+    5 . 7.85 164.6 -42.1
+    extend left
+    5 6 6.83 178.5 -55.5  # station 6 = Jonction dans grande galerie sur point topo existant
+    # extend auto
+    6 . 1.37 207.4 23.4
+    6 . 2.76 232.4 63.5
+    6 . 4.03 334.7 57.9
+    6 . 3.15 6.6 26.9
+    6 . 5.23 49.5 34.9
+    6 . 3.48 247.6 29.3
+    6 . 1.15 217.9 -30.0
+    6 . 2.59 285.6 -58.5
+    6 . 0.24 229.6 -59.9
+    6 . 3.27 21.3 -19.1
+    
+    flags duplicate
+    extend left
+    6 7 9.56 277.8 0.0  # Station 7 = Station 54
+    # extend auto
+    7 . 3.60 178.9 -1.1
+    7 . 1.59 228.6 -76.3
+    7 . 3.49 179.2 66.2
+    7 . 2.34 279.7 81.3
+    7 . 0.31 52.6 28.7
+    extend left
+    7 8 2.39 262.5 50.3
+    flags not duplicate
+
+    # extend auto
+    8 . 1.60 45.1 -5.0
+    8 . 0.25 43.5 78.6
+    8 . 1.38 309.3 -79.0
+    8 . 1.49 248.4 -29.8
+    8 . 1.04 149.9 -6.7
+    extend left
+    8 9 6.59 327.4 17.5
+    # extend auto
+    9 . 0.87 193.8 9.3
+    9 . 0.51 310.7 75.3
+    9 . 0.26 9.7 3.9
+    9 . 0.39 202.0 -62.3
+    9 . 1.05 216.2 -30.3
+    9 . 2.38 270.7 10.6
+    9 . 3.13 304.1 12.7
+    extend left
+    9 10 7.39 276.6 -8.6
+    # extend auto
+    10 . 1.63 155.5 -6.9
+    10 . 0.75 157.6 -70.8
+    10 . 0.95 341.9 84.5
+    10 . 0.24 321.1 -1.8
+    10 . 3.29 54.4 -25.9
+    10 . 0.80 230.0 -51.0
+    10 . 2.17 73.6 -62.4
+    10 . 3.42 65.0 47.3
+    10 . 1.47 212.9 4.2
+    10 . 1.22 239.0 6.4
+    extend left
+    10 11 1.72 222.5 4.9  # Début de la vire
+    # extend auto
+    11 . 0.57 181.6 -17.6
+    11 . 1.26 237.8 -47.2
+    11 . 1.41 291.6 -54.7
+    11 . 0.29 179.9 84.4
+    11 . 0.63 344.6 -14.9
+    11 . 1.24 264.4 -71.5
+    extend left
+    11 12 6.32 271.6 -4.6 # Fin de la vire
+    # extend auto
+    12 . 5.97 122.7 -21.7
+    12 . 9.01 159.2 -26.9
+    12 . 5.94 146.9 -32.1
+    12 . 10.46 173.6 -36.2
+    12 . 15.24 202.7 -37.9
+    12 . 6.55 234.9 -29.5
+    12 . 2.76 263.0 -17.2
+    12 . 1.11 268.5 -42.0
+    12 . 0.56 94.8 -57.1
+    12 . 1.40 111.3 23.0
+    12 . 0.30 167.6 58.8
+    12 . 14.70 196.6 -68.5
+    12 . 14.81 130.8 -72.3
+    extend right
+    12 13 1.59 0.2 30.6 # Mickey
+    # extend auto
+    13 . 1.60 291.7 -4.1
+    13 . 0.70 337.8 -61.5
+    13 . 0.15 72.1 81.6
+    13 . 0.50 83.8 5.5
+    13 . 2.22 53.2 22.0
+    13 . 2.49 326.7 18.8
+    13 . 8.06 346.6 28.5
+    13 . 8.41 346.2 28.5
+    extend right
+    13 14 8.05 346.2 28.0
+    # extend auto
+    14 . 1.62 92.7 25.0
+    14 . 3.47 97.6 20.3
+    14 . 0.85 288.2 27.6
+    14 . 0.50 61.3 82.8
+    14 . 0.91 54.0 -71.4
+    extend right
+    14 15 5.11 39.5 34.1
+    # extend auto
+    15 . 2.55 284.1 7.6
+    15 . 1.19 62.5 31.9
+    15 . 0.33 196.6 80.5
+    15 . 0.24 268.3 -79.0
+    15 . 2.17 309.9 4.6
+    extend right
+    15 16 4.57 349.6 31.2
+    # extend auto
+    16 . 0.46 189.8 7.4
+    16 . 0.51 57.1 70.2
+    16 . 1.28 353.1 32.2
+    16 . 0.43 15.7 -25.1
+    16 . 0.30 2.5 -62.4
+    16 . 0.80 124.0 22.6
+    16 . 2.34 61.0 32.4
+    16 . 0.25 255.4 2.8
+    16 . 2.39 244.1 -14.1
+    16 . 1.27 264.5 0.2
+    16 . 1.42 202.1 -10.8
+    16 . 1.33 306.8 26.9
+    extend right
+    16 17 3.24 74.2 25.7
+    # extend auto
+    17 . 0.93 5.0 1.8
+    17 . 0.51 2.6 65.2
+    17 . 0.17 196.9 39.8
+    17 . 0.86 166.5 -35.4
+    17 . 0.52 87.1 -75.9
+    17 . 1.00 119.3 -39.5
+    extend right
+    17 18 2.53 77.6 11.1  # Caouetch
+    # extend auto
+    18 . 0.69 190.1 -8.2
+    18 . 1.23 192.5 -23.5
+    18 . 0.30 199.1 73.7
+    18 . 0.58 82.5 -78.2
+    18 . 0.26 10.0 18.9
+    extend right
+    18 19 4.04 115.8 -5.7 # fin topo dans laminoir aquatique, ça continue !
+    # extend auto
+    19 . 0.41 31.5 0.7
+    19 . 0.59 186.5 -3.1
+    19 . 0.26 87.3 68.0
+    19 . 0.29 353.6 -71.2
+
+    # dev = 54 m nouveau par rapport à l'ancienne topographie !
+  endcenterline
+
+endsurvey
