@@ -30,9 +30,9 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		join SP-hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
 		join SC-Hasselblad-1@Hasselblad SC-Yougo-Aval-01@Yougo-Aval
 
-	# Galerie de l'Ardèche
-	input Data/Ardeche/Ardeche-tot.th
-		equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.Ardeche
+	# Galerie de l'Ardèche Suisse, aval Cabane ?
+	input Data/ArdecheSuisse/ArdecheSuisse-tot.th
+		equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.ArdecheSuisse
 	
 	# Anciennes Données topos des Cavernicoles mises au format Therion
 	#	Il faudra mettre à jour ce fichier topo, 
@@ -48,6 +48,10 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		equate PTRCHAPLR09@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.Yougo PTRCHAPLR09@majamonts2023.Amont-Majestueuse
 		join SP-Maj-Amonts-2@Amont-Majestueuse MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p1@Yougo
 		join SC-Maj-Amonts-1@Amont-Majestueuse SC-YougoJ-1@Yougo
+	# Galerie de l'Ardèche
+	input Data/Ardeche/Ardeche-tot.th
+		equate PTRJMLDXR04@Ardeche.Ardeche	PTRJMLDXR04@majamonts2023.Amont-Majestueuse
+
 	input Data/Puits-Belge/Puits-Belge-tot.th
 		equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
 

@@ -4,10 +4,10 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey Ardeche -title "Gouffre Mirolda - Réseau de l'Ardèche"
+survey ArdecheSuisse -title "Gouffre Mirolda - Réseau de l'Ardèche"
 	# Pour importer les différentes données de différents fichiers topos : 
 	#input Data/Mirolda_2022_09_13_b.th
-	input Data/Ardeche.th
+	input Data/VieuxTRO.th
 	#	equate 733@VieuxTRO PTRYOLRAP04@Ardeche
 		#equate 64@CD11-Affluents 6@Ardeche
 	
