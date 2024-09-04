@@ -63,6 +63,8 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 			join ptsNoir_amont_down:end enfoire_aval_down:0 #Ligne1
 	input Data/YougoAmont2024.th
 		equate PTRYOLDXR05@YougoAmont2024 PTRYOLDXR05@Yougo2023-5
+		input Data/YougoAmont2024-coupe.th2
+			join SC-Enfoire-1 SC-YougoAmont2024-1
 
 		
 
