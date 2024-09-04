@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 3198.8678 2726.4266000000002
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -128.00000000000023 -128.0 3198.8678 2726.4266000000002
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {2677.16 1 1.0} {2283.46 0} Confluence-map.xvi 0 {}
 
 
@@ -1485,9 +1485,7 @@ endline
 line wall
   2707.5 1343.75
   2707.5 1343.75 2695.75 1336.75 2702.25 1345.0
-  2708.75 1353.25 2738.5 1375.25 2741.0 1382.75
-  2743.5 1390.25 2752.25 1419.25 2752.25 1419.25
-  smooth off
+  2708.75 1353.25 2710.0 1350.0 2712.5 1357.5
 endline
 
 line pit
@@ -1544,10 +1542,9 @@ endline
 point 2527.0 1310.25 traverse
 
 line wall
-  2735.25 1425.5
-  2735.25 1425.5 2703.25 1374.75 2695.0 1366.25
+  2679.25 1373.75
   altitude .
-  2686.75 1357.75 2651.0 1352.25 2641.5 1348.5
+  2671.0 1365.25 2651.0 1352.25 2641.5 1348.5
   2632.0 1344.75 2591.75 1322.5 2583.75 1317.25
   2575.75 1312.0 2558.25 1304.25 2547.5 1299.75
   2536.75 1295.25 2521.75 1285.5 2514.75 1278.75
@@ -1711,7 +1708,7 @@ line pit
   smooth off
 endline
 
-point 3003.5 1412.5 label -text "<center>salle de<br>la Confluence"
+point 2821.5 1168.5 label -text "<center>salle de<br>la Confluence"
 
 line pit
   2798.0 1396.75

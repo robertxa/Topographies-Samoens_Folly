@@ -7,12 +7,12 @@ encoding  utf-8
 survey CD11 -title "Gouffre Mirolda - Entrée CD11"
 	# Pour importer les différentes données de différents fichiers topos : 
 	input Data/CD11.th
-	
-	# Import du dessin en plan
-	input Data/CD11.th2
-
-	# Import du dessin en coupe
-	input Data/CD11-coupe.th2
+		input Data/CD11.th2
+		input Data/CD11-coupe.th2
+	input Data/Base-70_290824.th
+		equate 0@Base-70_290824 46@CD11	# Sommet Echelle
+		input Data/Base-70_290824-1p.th2
+		input Data/Base-70_290824-1s.th2
 
 	# Import des maps
 	input CD11-maps.th

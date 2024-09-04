@@ -120,7 +120,7 @@ layout my_layout
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Plan -<ss> Massif du Criou, Samoëns, 74, France"
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
   statistics explo-length off
@@ -131,8 +131,8 @@ layout my_layout
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
 
   layers on
 
@@ -147,7 +147,7 @@ layout my_layout
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda - Réseau de -370 m} 
+			\cavename={Gouffre Mirolda - Réseau de l'Ardèche} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Collectif Mirolda}
@@ -212,8 +212,8 @@ layout layout-coupe
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
   #debug scrap-names
-  debug station-names
-  #symbol-hide line survey
+  #debug station-names
+  symbol-hide line survey
   
   layers on
                 
@@ -223,7 +223,7 @@ layout layout-coupe
 		\edef\nostring{}                 % empty string 
 		\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre Mirolda - Réseau de -370 m} 
+			\cavename={Gouffre Mirolda - Réseau de l'Ardèche} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Collectif Mirolda}
@@ -239,36 +239,28 @@ layout layout-coupe
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Ardeche-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Ardeche-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Ardeche-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Ardeche-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Ardeche-plan-tot@Ardeche
-select MC-Ardeche-coupe-tot@Ardeche
+select MP-Ardeche-tot@Ardeche
+select MC-Ardeche-tot@Ardeche
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
- export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
-#export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/Ardeche-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Ardeche-coupe.pdf
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Ardeche-2022.lox
+ export model -enable all -o Outputs/Ardeche.lox
 
 # Export des fichiers ESRI
-# export map -proj plan -fmt esri -o Outputs/Ardeche-2022 -layout my_layout
-
-# Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Ardeche-2022.kml -layout my_layout
- #export model -fmt kml -o Outputs/Ardeche-2022-model.kml -enable all
+# export map -proj plan -fmt esri -o Outputs/Ardeche -layout my_layout
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-#export database -fmt sql -o Outputs/databaseArdeche-2022.sql
+#export database -fmt sql -o Outputs/databaseArdeche.sql
 
-#export continuation-list -o Outputs/ContinuationsArdeche-2022.html
-#export continuation-list -o Outputs/ContinuationsArdeche-2022.kml
-#export survey-list -location on -o Outputs/SurveysArdeche2022.html
-#export cave-list -location on -o Outputs/CavesArdeche2022.html
+#export survey-list -location on -o Outputs/SurveysArdeche.html

@@ -1,5 +1,9 @@
 # 2024.08.29 created by TopoDroid v 5.1.40
 
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
 survey Ardeche -title "Galerie de l'Ardèche"
 
   centerline
@@ -22,7 +26,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     PTRJMLDXR04 . 1.72 112.0 79.0
     PTRJMLDXR04 . 5.37 91.6 53.0
     PTRJMLDXR04 . 2.25 288.9 -84.1
-    extend right
+    #extend right
+    extend left
     PTRJMLDXR04 1 4.08 33.8 49.3
     # extend auto
     1 . 1.31 95.6 0.5
@@ -33,9 +38,11 @@ survey Ardeche -title "Galerie de l'Ardèche"
     1 . 6.27 145.6 74.3
     1 . 1.48 186.4 -79.8
     1 . 5.91 31.4 69.2
-    extend right
-    1 2 13.59 106.1 80.0    # Sommet de l'arrivée d'eau
+    #extend right
     extend left
+    1 2 13.59 106.1 80.0    # Sommet de l'arrivée d'eau
+    #extend left
+    extend right
     PTRJMLDXR04 3 3.23 166.8 -29.5
     # extend auto
     3 . 2.69 83.3 -6.9
@@ -44,7 +51,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     3 . 0.37 248.5 17.1
     3 . 4.01 126.4 81.8
     3 . 5.86 117.6 -76.7
-    extend left
+    #extend left
+    extend right
     3 4 6.68 142.6 -57.6
     # extend auto
     4 . 2.83 257.2 2.3
@@ -57,14 +65,16 @@ survey Ardeche -title "Galerie de l'Ardèche"
     4 . 6.60 268.5 62.9
     4 . 6.74 285.6 65.8
     4 . 0.82 119.3 -85.5
-    extend left
+    #extend left
+    extend right
     4 5 3.18 216.4 -14.7
     # extend auto
     5 . 0.57 319.7 3.1
     5 . 0.20 158.9 2.6
     5 . 0.44 255.9 68.9
     5 . 0.67 0.3 -80.8
-    extend left
+    #extend left
+    extend right
     5 6 3.26 261.1 -30.2
     # extend auto
     6 . 2.41 136.8 -3.1
@@ -75,7 +85,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     6 . 2.36 104.8 2.0
     6 . 4.54 136.0 72.5
     6 . 1.58 100.3 -78.4
-    extend left
+    #extend left
+    extend right
     6 7 7.73 175.4 -30.5
     # extend auto
     7 . 1.74 109.9 7.1
@@ -86,7 +97,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     7 . 1.64 303.7 5.8
     7 . 6.82 123.2 87.9
     7 . 0.29 104.0 -88.3
-    extend left
+    #extend left
+    extend right
     7 8 7.45 198.4 -14.8
     # extend auto
     8 . 0.50 93.9 -9.1
@@ -95,7 +107,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     8 . 2.71 16.1 -1.4
     8 . 6.92 173.1 82.6
     8 . 1.15 9.4 -80.4
-    extend left
+    #extend left
+    extend right
     8 9 3.14 184.7 40.0
     # extend auto
     9 . 0.37 114.6 18.1
@@ -104,7 +117,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     9 . 7.99 12.1 7.0
     9 . 3.03 305.0 82.9
     9 . 3.51 301.5 -87.0
-    extend left
+    #extend left
+    extend right
     9 10 7.31 220.3 -32.9
     # extend auto
     10 . 0.75 311.9 -0.9
@@ -113,7 +127,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     10 . 7.88 201.0 -17.1
     10 . 11.73 175.3 70.7
     10 . 1.49 305.0 -82.2
-    extend left
+    #extend left
+    extend right
     10 11 5.14 209.0 -28.1
     # extend auto
     11 . 1.03 119.9 -2.1
@@ -122,7 +137,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     11 . 3.18 28.4 6.2
     11 . 14.50 76.5 79.8
     11 . 1.58 94.6 -76.4
-    extend left
+    #extend left
+    extend right
     11 12 8.03 171.8 -17.7
     # extend auto
     12 . 1.43 256.4 1.2
@@ -131,7 +147,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     12 . 7.03 345.1 14.9
     12 . 4.94 354.7 74.0
     12 . 6.90 117.2 -86.0
-    extend left
+    #extend left
+    extend right
     12 13 7.04 107.9 -82.6
     # extend auto
     13 . 1.47 78.2 7.5
@@ -144,7 +161,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     13 . 1.07 6.5 19.7
     13 . 11.53 310.0 79.1
     13 . 0.32 160.2 -81.5
-    extend left
+    #extend left
+    extend right
     13 14 6.18 181.3 15.4
     # extend auto
     14 . 0.78 278.4 -4.0
@@ -153,7 +171,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     14 . 7.54 359.0 2.9
     14 . 11.73 245.4 83.5
     14 . 1.84 166.8 -88.4
-    extend left
+    #extend left
+    extend right
     14 15 3.97 205.2 0.9
     # extend auto
     15 . 1.30 310.1 15.1
@@ -162,7 +181,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     15 . 6.38 19.6 9.6
     15 . 9.23 280.4 69.3
     15 . 2.48 123.3 -71.3
-    extend left
+    #extend left
+    extend right
     15 PTRA28 10.44 229.8 -22.1 # 16 ptr a28
     # extend auto
     PTRA28 . 0.43 175.2 12.2
@@ -172,9 +192,11 @@ survey Ardeche -title "Galerie de l'Ardèche"
     PTRA28 . 2.36 39.6 -0.5
     PTRA28 . 12.72 331.3 75.0
     PTRA28 . 1.52 34.2 -88.6
-    extend right
-    PTRA28 17 22.12 359.1 68.2  # cheminée 
+    #extend right
     extend left
+    PTRA28 17 22.12 359.1 68.2  # cheminée 
+    #extend left
+    extend right
     PTRA28 18 3.87 227.0 -20.6
     # extend auto
     18 . 0.65 161.2 -7.4
@@ -184,7 +206,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     18 . 1.01 85.0 -4.0
     18 . 1.95 323.8 76.4
     18 . 1.64 307.4 -83.4
-    extend left
+    #extend left
+    extend right
     18 19 2.17 255.6 -6.1
     # extend auto
     19 . 0.70 102.4 -2.8
@@ -195,7 +218,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     19 . 1.82 57.8 18.6
     19 . 5.87 83.3 74.6
     19 . 1.43 120.1 -86.4
-    extend left
+    #extend left
+    extend right
     19 20 6.51 165.5 -11.4
     # extend auto
     20 . 6.59 161.1 -10.7
@@ -208,7 +232,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     20 . 0.40 258.5 -14.9
     20 . 10.01 35.6 76.6
     20 . 1.18 336.8 -82.6
-    extend left
+    #extend left
+    extend right
     20 21 4.77 140.4 5.2
     # extend auto
     21 . 0.76 283.0 2.3
@@ -218,7 +243,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     21 . 8.19 327.6 -1.7
     21 . 7.35 258.7 76.6
     21 . 1.88 262.0 -79.7
-    extend left
+    extend right
+    #extend left
     21 22 3.63 231.8 -2.0
     # extend auto
     22 . 1.12 110.8 -2.4
@@ -226,7 +252,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     22 . 0.85 1.2 5.6
     22 . 9.87 93.9 81.3
     22 . 2.37 128.4 -82.7
-    extend left
+    #extend left
+    extend right
     22 23 3.98 192.8 -22.4
     # extend auto
     23 . 3.96 179.9 -21.3
@@ -241,7 +268,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     23 . 1.97 37.5 10.3
     23 . 9.66 207.7 70.7
     23 . 1.45 176.3 -73.0
-    extend left
+    #extend left
+    extend right
     23 24 7.73 152.3 -1.1
     # extend auto
     24 . 7.10 224.3 52.7
@@ -256,7 +284,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     24 . 2.39 18.6 5.2
     24 . 1.19 350.1 -79.6
     24 . 8.47 242.9 77.9
-    extend left
+    #extend left
+    extend right
     24 25 8.18 232.3 62.1
     23 26 4.98 254.4 17.7
     # extend auto
@@ -265,7 +294,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     26 . 1.29 35.4 9.2
     26 . 0.61 196.8 -17.0
     26 . 0.97 344.8 58.0
-    extend left
+    #extend left
+    extend right
     26 27 9.20 245.1 -86.3
     # extend auto
     27 . 0.72 351.9 4.0
@@ -277,7 +307,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     27 . 1.31 39.7 11.8
     27 . 7.76 230.0 79.3
     27 . 0.25 95.1 -77.6
-    extend left
+    #extend left
+    extend right
     27 28 8.38 263.8 15.8
     # extend auto
     28 . 2.24 24.8 -6.1
@@ -294,7 +325,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     28 . 1.41 256.8 -83.0
     28 . 12.34 64.4 65.6
     28 . 7.87 54.6 65.1
-    extend left
+    #extend left
+    extend right
     28 29 5.92 342.6 0.3
     # extend auto
     29 . 1.78 224.0 11.0
@@ -305,7 +337,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     29 . 4.02 175.8 -4.1
     29 . 1.47 194.7 -86.0
     29 . 12.94 21.0 78.1
-    extend left
+    #extend left
+    extend right
     29 30 3.39 282.4 -5.0
     # extend auto
     30 . 0.91 30.7 15.2
@@ -316,7 +349,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     30 . 0.45 99.0 6.3
     30 . 11.10 0.7 72.0
     30 . 1.44 16.8 -81.4
-    extend left
+    #extend left
+    extend right
     30 31 2.93 330.7 -3.6
     # extend auto
     31 . 0.50 24.1 -6.4
@@ -328,7 +362,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     31 . 3.92 144.4 0.2
     31 . 1.81 223.3 -86.7
     31 . 11.05 33.9 83.5
-    extend left
+    #extend left
+    extend right
     31 32 4.86 263.3 -13.8
     # extend auto
     32 . 1.42 357.9 9.8
@@ -337,7 +372,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     32 . 2.20 65.0 21.5
     32 . 1.63 104.6 -5.0
     32 . 4.54 313.6 73.4
-    extend left
+    #extend left
+    extend right
     32 33 6.43 273.6 -71.3
     # extend auto
     33 . 0.27 320.8 -1.4
@@ -349,7 +385,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     33 . 3.18 199.7 3.4
     33 . 6.72 136.6 83.0
     33 . 0.29 149.3 -86.7
-    extend left
+    #extend left
+    extend right
     33 34 3.41 143.0 14.8
     # extend auto
     34 . 0.51 71.3 0.0
@@ -359,7 +396,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     34 . 1.76 192.5 -8.0
     34 . 4.18 285.5 74.8
     34 . 0.87 230.3 -87.3
-    extend left
+    #extend left
+    extend right
     34 35 5.22 165.5 7.3
     # extend auto
     35 . 1.85 317.3 26.6
@@ -369,7 +407,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     35 . 0.38 194.7 -1.1
     35 . 3.55 240.3 -5.9
     35 . 9.61 236.5 73.1
-    extend left
+    #extend left
+    extend right
     35 36 5.62 227.5 -73.8
     # extend auto
     36 . 0.64 251.5 0.4
@@ -381,7 +420,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     36 . 2.14 145.9 9.8
     36 . 13.45 299.4 85.4
     36 . 0.43 28.2 -87.2
-    extend left
+    #extend left
+    extend right
     36 37 2.62 136.2 31.5
     # extend auto
     37 . 1.09 251.5 -6.0
@@ -393,7 +433,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     37 . 3.14 303.8 -2.2
     37 . 2.28 251.7 -79.9
     37 . 1.37 261.1 67.8
-    extend left
+    #extend left
+    extend right
     37 38 4.37 180.2 0.9
     # extend auto
     38 . 7.57 358.7 -1.1
@@ -405,7 +446,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     38 . 0.31 237.8 7.6
     38 . 3.58 8.8 -78.7
     38 . 10.56 338.1 71.2
-    extend left
+    #extend left
+    extend right
     38 39 4.05 126.8 -33.5
     # extend auto
     39 . 0.54 254.2 2.7
@@ -417,7 +459,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     39 . 1.65 340.8 -4.1
     39 . 1.07 299.0 -55.2
     39 . 9.45 331.2 87.2
-    extend left
+    #extend left
+    extend right
     39 40 2.52 191.5 4.5
     # extend auto
     40 . 0.56 60.7 -1.0
@@ -426,7 +469,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     40 . 2.40 13.4 -2.0
     40 . 1.68 50.4 -77.5
     40 . 6.01 28.7 79.9
-    extend left
+    #extend left
+    extend right
     40 41 2.54 157.7 -4.8
     # extend auto
     41 . 0.60 279.1 1.2
@@ -434,7 +478,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     41 . 1.55 6.2 14.0
     41 . 4.43 206.0 -74.5
     41 . 9.42 291.1 78.9
-    extend left
+    #extend left
+    extend right
     41 42 1.99 191.2 -11.2
     # extend auto
     42 . 0.50 62.4 -5.2
@@ -445,7 +490,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     42 . 0.78 58.9 6.7
     42 . 0.19 253.4 73.0
     42 . 0.19 33.4 35.8
-    extend left
+    #extend left
+    extend right
     42 43 7.95 122.1 -39.8
     # extend auto
     43 . 0.98 249.6 0.3
@@ -457,7 +503,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     43 . 2.42 304.8 -14.0
     43 . 2.10 353.8 -76.6
     43 . 2.34 224.5 77.9
-    extend left
+    #extend left
+    extend right
     43 44 5.89 358.2 -0.1
     # extend auto
     44 . 1.35 100.6 2.5
@@ -469,9 +516,11 @@ survey Ardeche -title "Galerie de l'Ardèche"
     44 . 0.57 217.5 -77.0
     44 . 9.37 310.8 83.4
     44 . 1.79 140.3 -59.6
-    extend right
-    44 45 9.35 338.3 80.2   # cheminée 
+    #extend right
     extend left
+    44 45 9.35 338.3 80.2   # cheminée 
+    #extend left
+    extend right
     43 46 2.82 118.4 8.6
     # extend auto
     46 . 1.89 248.2 3.6
@@ -482,7 +531,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     46 . 0.97 32.2 3.9
     46 . 3.16 116.0 -84.9
     46 . 5.38 266.1 67.2
-    extend left
+    #extend left
+    extend right
     46 47 3.61 197.6 1.3
     # extend auto
     47 . 0.91 70.3 3.5
@@ -490,7 +540,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     47 . 2.77 170.9 -5.6
     47 . 1.31 86.6 -74.9
     47 . 5.12 105.3 60.5
-    extend left
+    #extend left
+    extend right
     47 48 2.46 134.6 16.4
     # extend auto
     48 . 1.47 99.6 6.4
@@ -498,14 +549,16 @@ survey Ardeche -title "Galerie de l'Ardèche"
     48 . 2.50 162.1 -70.9
     48 . 4.74 160.4 -71.8
     48 . 4.46 124.0 74.5
-    extend left
+    #extend left
+    extend right
     48 49 3.48 169.5 -37.8
     # extend auto
     49 . 0.84 303.7 3.2
     49 . 0.26 123.8 -3.2
     49 . 5.69 175.4 86.5
     49 . 7.08 281.2 -74.2
-    extend left
+    #extend left
+    extend right
     49 50 9.13 242.3 -49.0
     # extend auto
     50 . 0.54 176.4 -10.5
@@ -515,7 +568,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     50 . 3.47 84.5 3.2
     50 . 3.04 216.8 -79.3
     50 . 15.19 119.5 74.8
-    extend left
+    #extend left
+    extend right
     50 51 2.71 271.4 20.9
     51 52 8.28 255.6 -87.0
     # extend auto
@@ -526,14 +580,16 @@ survey Ardeche -title "Galerie de l'Ardèche"
     52 . 0.92 14.1 -4.5
     52 . 0.36 187.6 -86.5
     52 . 8.88 171.0 87.7
-    extend left
+    #extend left
+    extend right
     52 53 4.15 160.5 17.9
     # extend auto
     53 . 0.72 282.6 0.1
     53 . 0.27 125.9 -19.9
     53 . 14.54 261.0 71.0
     53 . 4.17 212.4 -76.5
-    extend left
+    #extend left
+    extend right
     53 54 4.60 242.3 -40.0
     # extend auto
     54 . 1.69 315.0 3.3
@@ -543,7 +599,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     54 . 3.88 66.5 0.2
     54 . 0.81 97.1 -75.3
     54 . 15.71 297.2 82.1
-    extend left
+    #extend left
+    extend right
     54 55 9.34 212.3 -22.0
     # extend auto
     55 . 0.57 117.3 -13.4
@@ -553,7 +610,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     55 . 4.82 26.5 -3.3
     55 . 3.64 47.5 1.5
     55 . 3.12 6.2 13.4
-    extend left
+    #extend left
+    extend right
     55 56 5.38 182.5 -22.3
     # extend auto
     56 . 2.06 261.8 -0.5
@@ -563,7 +621,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     56 . 2.39 312.5 -0.8
     56 . 1.43 285.4 -70.0
     56 . 11.35 174.7 82.0
-    extend left
+    #extend left
+    extend right
     56 57 3.93 188.0 32.2
     # extend auto
     57 . 0.27 268.6 -6.4
@@ -572,7 +631,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     57 . 10.47 186.4 78.6
     57 . 6.74 0.4 -4.7
     57 . 7.75 153.9 -8.6
-    extend left
+    #extend left
+    extend right
     57 58 5.50 146.1 -7.6
     # extend auto
     58 . 1.07 255.0 -6.4
@@ -582,7 +642,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     58 . 2.21 232.6 -88.7
     58 . 2.25 272.0 59.4
     58 . 2.24 204.6 0.2
-    extend left
+    #extend left
+    extend right
     58 59 2.36 204.8 0.2
     # extend auto
     59 . 1.26 302.1 15.9
@@ -591,7 +652,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     59 . 2.93 15.8 -1.6
     59 . 3.15 205.7 -82.7
     59 . 4.86 238.7 66.1
-    extend left
+    #extend left
+    extend right
     59 60 3.83 199.6 -26.3
     # extend auto
     60 . 0.35 292.8 -1.4
@@ -600,7 +662,8 @@ survey Ardeche -title "Galerie de l'Ardèche"
     60 . 0.77 136.1 -80.0
     60 . 5.74 218.7 79.7
     60 . 0.68 278.9 14.5
-    extend left
+    #extend left
+    extend right
     60 PTRA32 2.01 187.3 37.5   # 61 ptr a32 fin du jour
     # extend auto
     PTRA32 . 1.65 220.9 -2.3
@@ -612,9 +675,12 @@ survey Ardeche -title "Galerie de l'Ardèche"
     PTRA32 . 1.22 247.4 -75.7
     PTRA32 . 9.27 232.0 -64.4
     PTRA32 . 1.63 299.1 -5.0
-    extend left
+    #extend left
+    extend right
+    flags duplicate
     PTRA32 62 1.62 293.6 -3.9
     62 63 13.92 194.4 -56.2 # Bas du réseau
+    flags not duplicate
   endcenterline
 
 

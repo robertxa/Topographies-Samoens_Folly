@@ -261,7 +261,7 @@ endlayout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Yougo-map.xvi
+export map -fmt xvi -layout xviexport -o Data/Yougo-map2024.xvi
 export map -proj extended -layout xviexport -fmt xvi -o Data/Yougo-coupe.xvi
 
 # Selection des Maps à exporter

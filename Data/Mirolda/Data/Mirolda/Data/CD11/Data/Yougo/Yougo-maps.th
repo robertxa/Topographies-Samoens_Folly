@@ -17,6 +17,8 @@ map MP-Yougo-Entree -title "Gouffre Mirolda - Réseau des Yougoslaves"
 endmap
 
 map MP-Yougo-Cabane -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	SP-AffluentCabaneAmont_290824-1
+	break
 	SP-Cabane-1
 	break
 	SP-Cabane-2024-1
@@ -40,6 +42,10 @@ map MP-Yougo-Amonts -title "Gouffre Mirolda - Réseau des Yougoslaves"
 endmap
 
 map MP-Enfoire -title "Gouffre Mirolda : Diaclase rectiligne de l'Enfoiré"
+	SP-Yougo2024-2
+	break
+	SP-Yougo2024-1
+	break
 	SP-Enfoire2023-6
 	break
 	SP-Enfoire2023-5
@@ -108,6 +114,8 @@ map MC-Yougo-coupe-tot -title "Gouffre Mirolda - Réseau des Yougoslaves"
 	SC-Yougo-ChauveS-1
 	break
 	SC-Yougo-1
+	break
+	AffluentCabaneAmont_290824-1s
 	break
 	SC-Cabane-2
 	break

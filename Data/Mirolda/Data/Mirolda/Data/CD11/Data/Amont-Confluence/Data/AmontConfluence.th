@@ -30,6 +30,7 @@ centerline
     # Amonts dans le bas de la salle de la Confluence. 
     #   Est-ce l'amont de la rivière l'Impétueuse ?
     #   D'après les topos, ça n'a pas l'air !
+    flags duplicate
 181	5500	59601.0   60219.0  340.00  -49.00   1.00   1.00   2.00		2	#   Station 181 ici = station 33 XR
 5500	5501	60219.0   61285.0   70.00   -7.00   1.00   1.00   2.00		2	#
 5501	5502	61285.0   61963.0   94.00   15.00   1.00   1.00   2.00		2	#
@@ -63,7 +64,7 @@ centerline
 5529	5530	75051.0   76126.0  336.00   27.00   1.00   1.00   2.00		2	#
 5530	5531	76126.0   77045.0  344.00   48.00   1.00   1.00   2.00		2	#
 5531	5532	77045.0   77977.0  349.00   19.00   1.00   1.00   2.00		2	#
-
+flags not duplicate
 endcenterline
 
 endsurvey				

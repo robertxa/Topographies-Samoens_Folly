@@ -23,6 +23,9 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		equate PTRYOLRAP04@Yougo.Yougo PTRYOLRAP04@Yougo-Aval.Yougo-Aval
 		join SP-Yougo-Aval-2@Yougo-Aval SP-Yougo-2@Yougo
 		join SC-Yougo-Aval-01@Yougo-Aval SC-Yougo-1@Yougo
+
+		equate PTRYOEPAP02@cd11_cabanne_aval_suite.Yougo PTRYOEPAP02@Yougo-Aval.Yougo-Aval
+		join SP-Conf-1@Confluence SP-ArdecheX-1@Ardeche
 	
 	# Galerie Hasselblad
 	input Data/Hasselblad/Hasselblad-tot.th
@@ -33,6 +36,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Galerie de l'Ardèche Suisse, aval Cabane ?
 	input Data/ArdecheSuisse/ArdecheSuisse-tot.th
 		equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.ArdecheSuisse
+		equate PTRYOEPAP05@Ardeche_2_cabane.ArdecheSuisse	PTRYOEPAP05@Yougo-Aval.Yougo-Aval
 	
 	# Anciennes Données topos des Cavernicoles mises au format Therion
 	#	Il faudra mettre à jour ce fichier topo, 
@@ -51,6 +55,7 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Galerie de l'Ardèche
 	input Data/Ardeche/Ardeche-tot.th
 		equate PTRJMLDXR04@Ardeche.Ardeche	PTRJMLDXR04@majamonts2023.Amont-Majestueuse
+		equate PTRIXR1@ArdecheX.Ardeche PTRIXR1@20220913MiroldaXR1.Confluence
 
 	input Data/Puits-Belge/Puits-Belge-tot.th
 		equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
@@ -58,9 +63,10 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		# Vieux TRO
 		#equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
 
+	### Données dupliquées, pas la peine de les garder dans la synthèse
 	# Amont de la salle de la Confluence:
-	input Data/Amont-Confluence/AmontConfluence-tot.th
-		equate 181@AmontConfluence.AmontConfluence 33@20220913MiroldaXR1.Confluence
+	#input Data/Amont-Confluence/AmontConfluence-tot.th
+	#	equate 181@AmontConfluence.AmontConfluence 33@20220913MiroldaXR1.Confluence
 	
 	# Départ Bivouac -600
 	input Data/Bivouac-600/Bivouac-600-tot.th

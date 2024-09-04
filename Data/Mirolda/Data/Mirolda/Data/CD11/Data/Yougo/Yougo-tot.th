@@ -17,10 +17,18 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 		input Data/Cabane-coupe.th2
 			join SC-Cabane-1 SC-Yougo-1
 			join SC-Cabane-2 SC-Yougo-1 -count 2
+
+	input Data/AffluentCabaneAmont_290824.th
+		equate PTRJCXRCA01@AffluentCabaneAmont_290824 PTRJCXRCA01@cabane2023
+		input Data/AffluentCabaneAmont_290824-1p.th2
+		input Data/AffluentCabaneAmont_290824-1s.th2
+
 	input Data/cabane2023-2.th
 		equate PTRYOLRAP01@cabane2023-2 PTRYOLRAP02@Yougo
 	input Data/cabane2024-1.th
 	   equate PTRJCXRCA01@cabane2024-1 PTRJCXRCA01@cabane2023
+	input Data/cd11_cabanne_aval_suite.th
+		equate PTRAP202401@cd11_cabanne_aval_suite PTRAP202401@cabane2024-1
 	
 	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23.th
 		equate PTRYOLRAP06@MIROLDA_CHAP_YOUGOSLAVE_29-08-23 2.8@Yougo
@@ -53,6 +61,9 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 			join SC-YOUGOSLAVE_30-08-23-1s SC-YougoJ-1
 			join ptsNoir_amont_up:0 enfoire_aval_up:end	#Ligne1
 			join ptsNoir_amont_down:end enfoire_aval_down:0 #Ligne1
+	input Data/YougoAmont2024.th
+		equate PTRYOLDXR05@YougoAmont2024 PTRYOLDXR05@Yougo2023-5
+
 		
 
 	##input Data/VieuxTRO.th

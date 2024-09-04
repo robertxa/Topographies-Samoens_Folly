@@ -458,8 +458,12 @@ survey 20220913MiroldaXR1 -title "Aval, Bivouac -270 m à -420 m env. (2022)"
     PTRIXR1 . 8.74 344.9 -41.8
     PTRIXR1 . 4.46 341.5 -23.0
     PTRIXR1 . 1.45 357.3 -60.0
+    
+    flags duplicate
     extend left
     PTRIXR1 35 14.30 37.2 -14.5 # arrivee de la rivière Impétueuse
+    flags not duplicate
+
     extend right
     PTRIXR1 36 8.68 280.5 -37.5
     # extend auto

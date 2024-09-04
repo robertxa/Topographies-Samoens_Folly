@@ -1,18 +1,11 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -191.25 -128.75 585.5 601.25
+##XTHERION## xth_me_area_adjust -191.25 -83.75 666.7392 601.25
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {66.298 1 1.0} {94.012 CD11} CD11-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {52.337999999999994 1 1.0} {111.5 CD11@CD11.CD11} CD11-map.xvi 0 {}
 
 
 
 scrap SP-CD11-1 -projection plan -author 2022 "Alexandre Pont" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 600.4412 -128.0 0.0 0.0 18.502406479999998 0.0 m]
-
-line arrow
-  236.25 218.0
-  233.5 457.0
-endline
-
-point 232.5 472.0 label -text "Sup. vers CD5"
 
 line border
   255.5 218.25
@@ -27,14 +20,45 @@ point 49.0 88.75 entrance -orientation 62.0
 
 point 23.75 45.5 air-draught -orientation 221.6 -subtype summer
 
-line wall -subtype invisible
-  356.25 183.75
-  363.75 180.0
-endline
-
 point 380.5 370.75 label -text R4
 
-point 353.0 169.25 continuation -attr Code P -attr Cavite "CD11" -text "topo à suivre..."
+line rock-border -close on
+  411.5 238.25
+  409.75 234.5
+  415.25 236.75
+  411.5 238.25
+endline
+
+line rock-border -close on
+  416.0 246.5
+  414.75 241.25
+  421.75 243.25
+  421.5 249.0
+  416.0 246.5
+endline
+
+line rock-border -close on
+  426.0 252.25
+  425.75 246.5
+  429.0 248.75
+  430.0 252.25
+  426.0 252.25
+endline
+
+line rock-border -close on
+  429.75 262.75
+  428.0 257.25
+  431.75 258.5
+  432.25 262.75
+  429.75 262.75
+endline
+
+line wall
+  409.75 247.0
+  409.75 247.0 401.5 230.5 407.0 231.5
+  412.5 232.5 420.75 239.0 420.75 239.0
+  smooth off
+endline
 
 line label -text [Puits Aven]
   235.0 312.0
@@ -45,6 +69,22 @@ endline
 point 406.75 366.5 fixed-ladder
 
 point 426.828 365.54200000000003 station -name 46@CD11
+
+line rock-border -close on
+  74.25 206.0
+  71.0 202.0
+  81.5 202.75
+  78.5 207.0
+  74.25 206.0
+endline
+
+line rock-border -close on
+  74.5 214.5
+  71.5 208.75
+  77.25 209.25
+  77.25 212.5
+  74.5 214.5
+endline
 
 line wall -reverse on
   61.0 99.75
@@ -65,8 +105,9 @@ line wall -reverse on
   smooth off
   80.5 197.0
   81.0 199.75
-  80.0 210.5
-  76.75 233.0
+  81.0 199.75 62.67 189.05 68.5 208.25
+  75.25 230.5 76.75 233.0 76.75 233.0
+  smooth off
   76.5 260.0
   78.0 272.25
   80.75 276.25
@@ -85,6 +126,32 @@ line wall -reverse on
   107.75 323.75
   107.0 328.75
   111.25 332.5
+endline
+
+point 111.25 352.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Entrée" -attr CA "Couant d'air aspirant" -text "Petit réseau à aller revoir"
+
+line flowstone -reverse on
+  111.25 333.75
+  111.25 333.75 118.0 331.25 121.75 336.0
+  smooth off
+endline
+
+line wall
+  111.75 342.75
+  111.75 342.75 114.75 337.5 113.5 335.0
+  112.25 332.5 111.25 332.5 111.25 332.5
+  smooth off
+endline
+
+line wall
+  125.25 335.5
+  125.25 335.5 119.5 332.25 118.5 336.25
+  117.5 340.25 117.25 345.25 117.25 345.25
+  smooth off
+endline
+
+line wall -reverse on
+  125.25 335.5
   133.25 337.75
   140.0 343.5
   140.0 343.5 150.25 346.25 150.75 345.5
@@ -223,18 +290,10 @@ line wall -reverse on
   431.5 269.0 436.69 268.42 431.5 250.5
   altitude .
   428.75 241.0 424.5 240.75 420.75 239.0
-  419.82 238.57 397.5 217.5 397.5 217.5
-  smooth off
-  376.75 193.75
-  376.75 193.75 365.25 179.0 363.75 180.0
   smooth off
 endline
 
 line wall -reverse on
-  356.25 183.75
-  356.25 188.5 359.5 189.25 362.0 195.25
-  364.5 201.25 394.25 225.25 394.25 225.25
-  smooth off
   409.75 247.0
   408.75 252.75
   401.5 252.75
@@ -607,7 +666,7 @@ point 188.0 164.75 station -name 27@CD11
 
 point 185.0 176.5 station -name 26@CD11
 
-point 128.5 359.5 label -text "R2"
+point 132.0 370.25 label -text "R2"
 
 point 204.0 324.25 label -text "R2"
 

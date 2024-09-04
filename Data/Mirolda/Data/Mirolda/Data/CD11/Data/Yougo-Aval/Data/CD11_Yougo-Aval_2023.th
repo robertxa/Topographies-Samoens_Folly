@@ -197,8 +197,11 @@ survey Yougo-Aval -title "CD11-Yougoslaves Aval (2022)"
     PTRYOEPAP02 . 1.95 207.0 71.5
     PTRYOEPAP02 . 0.29 268.9 -51.4
     
+    flags duplicate
 	extend left
     PTRYOEPAP02 A01 6.29 328.9 36.4          # Départ a voir YO21 = PTRYOEPAP02
+    flags not duplicate
+
 	# extend auto
     PTRYOEPAP02 . 1.61 133.5 3.7
     PTRYOEPAP02 . 1.80 63.6 85.7
@@ -217,7 +220,10 @@ survey Yougo-Aval -title "CD11-Yougoslaves Aval (2022)"
     YO22 YO23 9.13 183.2 -62.9
 	
     extend left
+    flags duplicate
     YO23 B01 10.44 300.9 60.1              # Amorce, escalade corde en place
+    flags not duplicate
+
     # extend auto
     YO23 . 1.58 115.4 12.4
     YO23 . 1.31 249.4 38.5
