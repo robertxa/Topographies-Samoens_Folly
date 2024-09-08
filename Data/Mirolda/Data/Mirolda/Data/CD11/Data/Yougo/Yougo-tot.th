@@ -2,83 +2,86 @@ encoding  utf-8
 
 # Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
-#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
-	# Pour importer les différentes données de différents fichiers topos : 
+	# Pour importer les différentes données de différents fichiers topos :
 	input Data/Mirolda_2022_09_13_b.th
-		input Data/Yougo2022.th2
+	input Data/Yougo2022.th2
 	input Data/cabane2023.th
-		##equate PTRYOLRAP03@cabane2023 PTRYOLEAP03@Yougo
-		equate PTRYOLRAP03@cabane2023 14@Yougo
-		input Data/Cabane.th2
-			join SP-Cabane-2 SP-Yougo-1
-			join SP-Cabane-1 SP-Yougo-1
-		input Data/Cabane-coupe.th2
-			join SC-Cabane-1 SC-Yougo-1
-			join SC-Cabane-2 SC-Yougo-1 -count 2
-
+	##equate PTRYOLRAP03@cabane2023 PTRYOLEAP03@Yougo
+	equate PTRYOLRAP03@cabane2023 14@Yougo
+	input Data/Cabane.th2
+	join SP-Cabane-2 SP-Yougo-1
+	join SP-Cabane-1 SP-Yougo-1
+	input Data/Cabane-coupe.th2
+	join SC-Cabane-1 SC-Yougo-1
+	join SC-Cabane-2 SC-Yougo-1 -count 2
+	
 	input Data/AffluentCabaneAmont_290824.th
-		equate PTRJCXRCA01@AffluentCabaneAmont_290824 PTRJCXRCA01@cabane2023
-		input Data/AffluentCabaneAmont_290824-1p.th2
-		input Data/AffluentCabaneAmont_290824-1s.th2
-
-	input Data/cabane2023-2.th
-		equate PTRYOLRAP01@cabane2023-2 PTRYOLRAP02@Yougo
-	input Data/cabane2024-1.th
-	   equate PTRJCXRCA01@cabane2024-1 PTRJCXRCA01@cabane2023
-	input Data/cd11_cabanne_aval_suite.th
-		equate PTRAP202401@cd11_cabanne_aval_suite PTRAP202401@cabane2024-1
+	equate PTRJCXRCA01@AffluentCabaneAmont_290824 PTRJCXRCA01@cabane2023
+	input Data/AffluentCabaneAmont_290824-1p.th2
+	input Data/AffluentCabaneAmont_290824-1s.th2
+	
+	input Data/Cabane2023-2.th
+	equate PTRYOLRAP01@cabane2023-2 PTRYOLRAP02@Yougo
+	input Data/Cabane2024-1.th
+	equate PTRJCXRCA01@cabane2024-1 PTRJCXRCA01@cabane2023
+	input Data/Cabane2024-2_aval_suite.th
+	equate PTRAP202401@cabane2024-2 PTRAP202401@cabane2024-1
+	input Data/cabane2024-2_aval_suite.th2
+	join SP-Cabane-2024-1 SP-Cabane-2024-2-1
+	input Data/Cabane2024-2_aval_suite-coupe.th2
+	join SC-Cabane2-1 SC-Cabane-2024-1
 	
 	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23.th
-		equate PTRYOLRAP06@MIROLDA_CHAP_YOUGOSLAVE_29-08-23 2.8@Yougo
-		input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1p.th2
-			join SP_YOUGOSLAVE_29-08-23-1p SP-Yougo-1
-			join SC-YOUGOSLAVE_29-08-23-1s SC-Yougo-1
+	equate PTRYOLRAP06@MIROLDA_CHAP_YOUGOSLAVE_29-08-23 2.8@Yougo
+	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1p.th2
+	join SP_YOUGOSLAVE_29-08-23-1p SP-Yougo-1
+	join SC-YOUGOSLAVE_29-08-23-1s SC-Yougo-1
 	input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.th
-		equate PTRCHAP04@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	PTRCHAP04@MIROLDA_CHAP_YOUGOSLAVE_29-08-23
-		input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p.th2
-			join MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p SP_YOUGOSLAVE_29-08-23-1p
-			join SC-YOUGOSLAVE_30-08-23-1s SC-YOUGOSLAVE_29-08-23-1s
-
+	equate PTRCHAP04@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	PTRCHAP04@MIROLDA_CHAP_YOUGOSLAVE_29-08-23
+	input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p.th2
+	join MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p SP_YOUGOSLAVE_29-08-23-1p
+	join SC-YOUGOSLAVE_30-08-23-1s SC-YOUGOSLAVE_29-08-23-1s
+	
 	input Data/Yougo_p35_pts_noir.th
-		##equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
-		equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	# ??? pour le 49
-		input Data/Yougo_p35_pts_noir-plan.th2
-				join SP-ptsNoir-1 MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p	### New
-			input Data/Yougo_p35_pts_noir-coupe.th2
-				join CHA_up:0 ptsNoir_aval_up:0
-				join CHA_down:0 ptsNoir_aval_down:end
-				join ptsNoir_aval_down:0 jonction_b:0
-
+	##equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23
+	equate PTRCHAPLR10@Yougo_p35_pts_noir PTRCHAPLR10@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23	# ??? pour le 49
+	input Data/Yougo_p35_pts_noir-plan.th2
+	join SP-ptsNoir-1 MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p	### New
+	input Data/Yougo_p35_pts_noir-coupe.th2
+	join CHA_up:0 ptsNoir_aval_up:0
+	join CHA_down:0 ptsNoir_aval_down:end
+	join ptsNoir_aval_down:0 jonction_b:0
+	
 	input Data/Yougo2023-4.th
-		equate PTRY0MKTCLD07@Yougo2023-4 PTRY0MKTCLD07@Yougo_p35_pts_noir
+	equate PTRY0MKTCLD07@Yougo2023-4 PTRY0MKTCLD07@Yougo_p35_pts_noir
 	input Data/Yougo2023-5.th
-		equate 0@Yougo2023-5 52@Yougo2023-4
-		input Data/Enfoire2023.th2
-			join SP-Enfoire2023-1 SP-ptsNoir-2    ### New
-		input Data/Enfoire2023-coupe.th2
-			join SC-YOUGOSLAVE_30-08-23-1s SC-YougoJ-1
-			join ptsNoir_amont_up:0 enfoire_aval_up:end	#Ligne1
-			join ptsNoir_amont_down:end enfoire_aval_down:0 #Ligne1
+	equate 0@Yougo2023-5 52@Yougo2023-4
+	input Data/Enfoire2023.th2
+	join SP-Enfoire2023-1 SP-ptsNoir-2    ### New
+	input Data/Enfoire2023-coupe.th2
+	join SC-YOUGOSLAVE_30-08-23-1s SC-YougoJ-1
+	join ptsNoir_amont_up:0 enfoire_aval_up:end	#Ligne1
+	join ptsNoir_amont_down:end enfoire_aval_down:0 #Ligne1
 	input Data/YougoAmont2024.th
-		equate PTRYOLDXR05@YougoAmont2024 PTRYOLDXR05@Yougo2023-5
-		input Data/YougoAmont2024-coupe.th2
-			join SC-Enfoire-1 SC-YougoAmont2024-1
-
-		
-
+	equate PTRYOLDXR05@YougoAmont2024 PTRYOLDXR05@Yougo2023-5
+	input Data/YougoAmont2024-coupe.th2
+	join SC-Enfoire-1 SC-YougoAmont2024-1
+	
+	
+	
 	##input Data/VieuxTRO.th
 	##	equate 733@VieuxTRO PTRYOLRAP04@Yougo
-		##equate 64@CD11-Affluents 6@Yougo
-
+	##equate 64@CD11-Affluents 6@Yougo
+	
 	# Import du dessin en coupe
 	input Data/Yougo-coupe.th2
 	input Data/MIROLDA_CHAP_YOUGOSLAVE_29-08-23-1s.th2
 	input Data/MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1s.th2
-
+	
 	# Import des maps
 	input Yougo-maps.th
- 
- endsurvey
- 
+	
+endsurvey

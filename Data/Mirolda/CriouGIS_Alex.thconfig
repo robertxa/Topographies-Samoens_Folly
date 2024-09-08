@@ -194,7 +194,7 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={URSUS, Collectif Mirolda}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2024)}
     \newtoks\datat \datat={https://github.com/robertxa/Mirolda}
     \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	\framethickness=0.8mm  
@@ -333,7 +333,7 @@ layout atlas_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={URSUS, Collectif Mirolda}
-		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2024)}
     \newtoks\datat \datat={https://github.com/robertxa/Mirolda}
     \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
@@ -351,14 +351,14 @@ select MP-Criou@SystemMirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Criou-2023-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2023-coupe.pdf
-# export atlas -o Outputs/Criou-2023-atlas.pdf -layout atlas_layout
+ export map -proj plan -fmt pdf -o Outputs/Criou-plan_2024.pdf -layout my_layout
+# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-coupe_2024.pdf
+# export atlas -o Outputs/Criou-2024-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Criou-2023.lox
- export model -enable all -o Outputs/Criou-2023.plt
- export model -fmt kml -enable all -o Outputs/Criou-2023.kml				
+ export model -enable all -o Outputs/Criou-2024.lox
+ export model -enable all -o Outputs/Criou-2024.plt
+ export model -fmt kml -enable all -o Outputs/Criou-2024.kml				
 
 # Export des fichiers ESRI
  export map -proj plan -fmt esri -o Outputs/Criou -layout my_layout
@@ -367,7 +367,7 @@ select MP-Criou@SystemMirolda
 
 	   
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Criou-2023.kml -layout my_layout
+# export map -proj plan -fmt kml -o Outputs/Criou-2024.kml -layout my_layout
 export model -fmt kml -o Outputs/Criou-model.kml -enable all
 export model -fmt esri -o Outputs/SHP/therion -enc UTF-8
   
@@ -375,10 +375,10 @@ export model -fmt esri -o Outputs/SHP/therion -enc UTF-8
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseCriou-2023.sql
+export database -fmt sql -o Outputs/databaseCriou-2024.sql
 
-export continuation-list -o Outputs/ContinuationsCriou-2023.html
-export continuation-list -o Outputs/ContinuationsCriou-2023.kml
-export survey-list -location on -o Outputs/SurveysCriou2023.html
-export cave-list -location on -o Outputs/CavesCriou2023.html
+export continuation-list -o Outputs/ContinuationsCriou-2024.html
+export continuation-list -o Outputs/ContinuationsCriou-2024.kml
+export survey-list -location on -o Outputs/SurveysCriou2024.html
+export cave-list -location on -o Outputs/CavesCriou2024.html
 export cave-list -location on -o Outputs/Caves-Criou.txt

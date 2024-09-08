@@ -2,11 +2,13 @@ encoding  utf-8
 
 # Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
-#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 map MP-Ardeche-tot -title "Gouffre Mirolda - Réseau de l'Ardèche"
-#	SP-Ardeche-1
-	
+	SP-Ardeche-1
+	break
+	SP-Ardeche-2
+	break
 	SP-Ardeche_300824-1
 	break
 	SP-ArdecheX-2
@@ -15,7 +17,10 @@ map MP-Ardeche-tot -title "Gouffre Mirolda - Réseau de l'Ardèche"
 endmap
 
 map MC-Ardeche-tot -title "Gouffre Mirolda - Réseau de l'Ardèche"
-#	SC-Ardeche-1
+	SC-Ardeche-1
+	break
+	SC-Ardeche-2
+	break
 	Ardeche_300824-1s
 	break
 	SC-ArdecheX-3
@@ -24,4 +29,4 @@ map MC-Ardeche-tot -title "Gouffre Mirolda - Réseau de l'Ardèche"
 	break
 	SC-ArdecheX-1
 endmap
-   
+
