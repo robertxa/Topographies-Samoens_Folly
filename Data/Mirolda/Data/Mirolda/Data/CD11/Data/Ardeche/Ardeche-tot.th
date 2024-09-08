@@ -17,12 +17,12 @@ survey Ardeche -title "Gouffre Mirolda - Réseau de l'Ardèche"
 		#equate 64@CD11-Affluents 6@Ardeche
 	
 	# Import du dessin en plan
-	input Data/Ardèche_300824-1p.th2
+	input Data/Ardeche_300824-1p.th2
 	input Data/ArdecheX.th2
 		join SP-ArdecheX-2 SP-Ardeche_300824-1
 
 	# Import du dessin en coupe
-	input Data/Ardèche_300824-1s.th2
+	input Data/Ardeche_300824-1s.th2
 	input Data/ArdecheX-coupe.th2
 
 	# Import des maps
