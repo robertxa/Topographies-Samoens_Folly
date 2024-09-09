@@ -58,7 +58,9 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 		equate PTRIXR1@ArdecheX.Ardeche PTRIXR1@20220913MiroldaXR1.Confluence
 
 	input Data/Puits-Belge/Puits-Belge-tot.th
-		equate 941@Puits-Belge.Puits-Belge 103@MajAmont2024.Amont-Majestueuse
+		#equate 941@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
+		equate 1000@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
+		join SP-majamonts2024-5@Amont-Majestueuse SP-Belge-1@Puits-Belge
 		#equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
 
 		# Vieux TRO
