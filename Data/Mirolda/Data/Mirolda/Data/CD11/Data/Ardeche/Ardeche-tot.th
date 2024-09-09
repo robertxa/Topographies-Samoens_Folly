@@ -2,31 +2,34 @@ encoding  utf-8
 
 # Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
-#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 survey Ardeche -title "Gouffre Mirolda - Réseau de l'Ardèche"
-	# Pour importer les différentes données de différents fichiers topos : 
+	# Pour importer les différentes données de différents fichiers topos :
 	#input Data/Mirolda_2022_09_13_b.th
 	input Data/Ardeche.th
 	input Data/Ardeche_300824.th	# A RENOMMER AVEC LE FICHIER FINAL DE CHARLOTTE
-		equate PTRFDAP05@Ardeche2024-2 PTRA32@Ardeche
+	equate PTRFDAP05@Ardeche2024-2 PTRA32@Ardeche
 	# Jonction avec l'aval de la salle de la Confluence
 	input Data/ArdecheX.th
-		equate 0@ArdecheX 22@Ardeche2024-2
+	equate 0@ArdecheX 22@Ardeche2024-2
 	#	equate 733@VieuxTRO PTRYOLRAP04@Ardeche
-		#equate 64@CD11-Affluents 6@Ardeche
+	#equate 64@CD11-Affluents 6@Ardeche
 	
 	# Import du dessin en plan
-	input Data/Ardèche_300824-1p.th2
+	input Data/Ardeche.th2
+	join SP-Ardeche-2 SP-Ardeche_300824-1
+	input Data/Ardeche_300824-1p.th2
 	input Data/ArdecheX.th2
-		join SP-ArdecheX-2 SP-Ardeche_300824-1
-
+	join SP-ArdecheX-2 SP-Ardeche_300824-1
+	
 	# Import du dessin en coupe
-	input Data/Ardèche_300824-1s.th2
+	input Data/Ardeche-coupe.th2
+	join SC-Ardeche-2 Ardeche_300824-1s
+	input Data/Ardeche_300824-1s.th2
 	input Data/ArdecheX-coupe.th2
-
+	
 	# Import des maps
 	input Ardeche-maps.th
- 
- endsurvey
- 
+	
+endsurvey

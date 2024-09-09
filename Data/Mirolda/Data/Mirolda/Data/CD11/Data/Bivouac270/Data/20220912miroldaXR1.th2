@@ -162,7 +162,9 @@ endscrap
 
 scrap SP-Bivouac-3 -projection plan -station-names "" "@20220912miroldaXR1" -author 2022 "Xavier Robert" -copyright 2022 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1151.6226000000001 -128.0 0.0 0.0 32.502414040000005 0.0 m]
 
-point 455.5 1402.25 label -text "etr."
+point 466.25 1386.75 dig
+
+point 455.5 1402.25 label -text "ex. etr."
 
 point 498.0 1131.75 traverse
 
@@ -480,6 +482,7 @@ line wall
   535.75 1376.75 545.75 1381.0 551.75 1384.5
   altitude .
   557.75 1388.0 557.75 1397.5 560.25 1403.75
+  smooth off
 endline
 
 line label -text "rivière La Majestueuse"
@@ -908,7 +911,9 @@ line wall
   smooth off
 endline
 
-point 428.0 1588.0 label -text "etr."
+point 429.25 1565.0 dig
+
+point 428.0 1588.0 label -text "ex. etr."
 
 line floor-meander
   466.0 1542.5

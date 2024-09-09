@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 757.9216 1309.103
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {551.1800000000001 1 1.0} {1102.364 PTRYOLRAP04} Yougo-Aval-map.xvi 0 {}
 
 
@@ -45,15 +45,6 @@ line floor-meander
   450.0 523.5 451.5 513.5 452.25 507.5
   smooth off
 endline
-
-line pit -reverse on
-  424.25 551.5
-  424.25 551.5 424.25 562.0 426.5 565.5
-  428.75 569.0 430.75 577.5 432.75 577.75
-  smooth off
-endline
-
-point 405.25 646.25 rope
 
 point 423.5 98.5 label -text "R1"
 
@@ -184,6 +175,7 @@ line wall -reverse on
   177.0 132.25 180.0 129.75 169.75 123.0
   159.5 116.25 160.25 116.0 153.75 115.75
   147.25 115.5 135.2 114.87 131.0 113.0
+  smooth off
 endline
 
 line wall
@@ -251,8 +243,6 @@ line pit -reverse on
 endline
 
 point 449.53000000000003 553.384 station -name YO23
-
-point 414.41 574.414 station -name B01
 
 line pit
 endline
@@ -325,9 +315,7 @@ line floor-meander
   smooth off
 endline
 
-point 360.75 581.0 height -value [+? m]
-
-point 401.75 679.25 label -text "Etr. "
+point 424.0 726.0 label -text "Etr. "
 
 point 482.75 588.75 height -value [-8 m]
 
@@ -340,8 +328,8 @@ line wall
   435.0 622.75 434.5 625.5 432.5 614.0
   430.5 602.5 430.5 607.75 432.0 597.25
   433.5 586.75 433.75 579.75 434.75 576.75
-  435.75 573.75 435.25 573.0 429.5 575.25
-  423.75 577.5 417.25 581.0 412.75 582.75
+  435.75 573.75 436.75 571.75 431.0 574.0
+  425.25 576.25 426.0 577.25 421.5 579.0
   smooth off
 endline
 
@@ -372,8 +360,12 @@ line wall
   348.75 822.5 349.5 824.75 350.75 821.0
   352.0 817.25 364.75 800.75 367.75 797.75
   370.75 794.75 414.0 770.75 429.75 767.0
-  445.5 763.25 463.75 755.5 475.25 752.25
-  486.75 749.0 488.0 746.25 489.25 742.75
+  445.5 763.25 480.75 760.5 465.5 746.5
+endline
+
+line wall
+  475.75 742.0
+  483.69 750.93 488.0 746.25 489.25 742.75
   490.5 739.25 490.25 738.25 489.75 734.5
   smooth off
 endline
@@ -409,9 +401,31 @@ point 453.0 263.5 water-flow -orientation 158.5
 
 point 478.5 400.0 water-flow -orientation 158.5
 
-line wall -subtype invisible
-  423.75 660.75
+line pit -reverse on
+  398.25 672.5
+  398.25 672.5 423.75 672.25 427.25 669.0
+endline
+
+line pit -reverse on
+  424.0 621.5
+  424.0 621.5 433.5 641.75 446.0 645.25
+endline
+
+line wall
+  475.75 742.0
+  475.75 742.0 463.0 730.5 455.25 715.75
+  447.5 701.0 441.5 702.0 437.75 695.25
+  434.0 688.5 424.87 680.23 422.5 675.5
+  417.5 665.5 423.75 660.75 423.75 660.75
+  smooth off
+endline
+
+line wall
   417.5 655.75
+  411.25 665.5
+  411.25 665.5 405.5 668.25 411.75 680.75
+  416.01 689.28 430.75 710.5 434.25 714.5
+  437.75 718.5 462.5 741.5 465.5 746.5
 endline
 
 line floor-meander
@@ -425,30 +439,19 @@ endline
 
 point 521.25 704.25 air-draught -orientation 183.7 -subtype summer
 
-point 491.0 752.0 water-flow -orientation 136.2
+point 468.25 780.5 water-flow -orientation 136.2
 
 point 394.25 825.0 water-flow -orientation 148.9
 
 point 376.5 887.75 water-flow -orientation 148.9
 
-point 448.5 724.25 stalactites-stalagmites
+point 454.5 727.5 stalactites-stalagmites
 
 point 459.5 818.25 stalactites-stalagmites
-
-line pit -reverse on
-  465.25 742.25
-  465.25 742.25 462.25 748.25 469.5 757.0
-  476.75 765.75 475.5 766.75 481.25 769.5
-  smooth off
-endline
 
 point 494.0 790.0 height -value [-5 m]
 
 point 306.0 205.75 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Affluent à voir ?"
-
-point 386.25 600.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Affluent à voir après escalade"
-
-point 416.5 682.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Affluent à voir après escalade"
 
 point 413.75 927.5 height -value [-6 m]
 
@@ -457,11 +460,6 @@ line pit -reverse on
   324.75 918.0 340.5 931.0 355.0 931.5
   382.81 932.46 387.09 932.67 394.5 927.25
   smooth off
-endline
-
-line wall -subtype invisible
-  412.75 582.75
-  406.25 570.25
 endline
 
 line wall -subtype invisible
@@ -476,9 +474,9 @@ line wall -subtype invisible
 endline
 
 line wall
-  406.25 570.25
-  406.25 570.25 411.75 565.5 424.25 558.25
-  436.75 551.0 436.75 551.0 436.75 549.5
+  416.0 561.5
+  416.0 561.5 419.5 563.25 432.0 556.0
+  444.5 548.75 436.75 551.0 436.75 549.5
   436.75 548.0 439.5 550.75 436.75 540.25
   434.0 529.75 435.5 523.75 437.75 520.0
   440.0 516.25 446.5 507.25 448.0 499.75
@@ -538,20 +536,30 @@ line wall -reverse on
   smooth off
 endline
 
+line pit
+  443.75 817.0
+  443.75 817.0 439.25 811.25 441.5 806.25
+  443.75 801.25 455.0 786.25 456.0 785.0
+  457.0 783.75 468.25 775.0 471.0 773.5
+  473.75 772.0 479.73 768.56 484.5 764.0
+  490.0 758.75 498.0 758.5 495.5 753.75
+  493.0 749.0 486.0 739.25 486.0 738.0
+endline
+
 line wall -reverse on
   386.5 908.5
   387.25 903.25 390.5 889.75 392.75 883.75
   395.0 877.75 395.25 873.0 396.75 866.0
   398.25 859.0 396.0 861.0 398.75 855.5
   401.5 850.0 408.5 845.25 412.25 841.0
-  416.0 836.75 424.75 829.5 430.75 819.5
-  436.75 809.5 441.0 804.25 442.5 798.5
-  444.0 792.75 444.0 792.0 446.0 788.25
-  448.0 784.5 448.75 777.0 451.75 773.75
-  454.75 770.5 463.0 767.25 470.25 765.5
-  477.5 763.75 485.25 761.0 493.25 759.75
-  501.25 758.5 497.25 758.75 505.25 757.75
-  513.25 756.75 511.25 756.5 511.0 751.75
+  416.0 836.75 427.11 828.84 435.0 820.25
+  443.5 811.0 445.88 813.41 450.25 810.5
+  455.5 807.0 457.0 805.0 461.0 803.25
+  464.89 801.55 469.5 796.5 472.5 793.25
+  475.5 790.0 475.75 790.0 481.75 785.0
+  487.48 780.22 486.97 778.77 494.0 774.75
+  501.0 770.75 506.25 767.5 508.25 762.25
+  511.12 754.71 511.25 756.5 511.0 751.75
   510.75 747.0 510.75 740.25 510.0 736.75
   smooth off
 endline

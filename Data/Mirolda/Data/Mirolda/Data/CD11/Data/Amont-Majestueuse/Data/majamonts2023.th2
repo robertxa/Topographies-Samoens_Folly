@@ -1,6 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 898.5 822.0 4143.754400000001 4379.9748
-##XTHERION## xth_me_area_zoom_to 200
+
+##XTHERION## xth_me_area_adjust -128.75 -206.73 10600.4566 5167.383000000001
+##XTHERION## xth_me_area_zoom_to 400
+
 ##XTHERION## xth_me_image_insert {3779.5340000000006 1 1.0} {4015.75 PTRCHAPLR09} Amont-Majestueuse-map.xvi 0 {}
 
 
@@ -212,8 +214,6 @@ point 2323.75 2387.0 height -value [+7 m]
 
 point 2353.25 2066.75 height -value [-6 m]
 
-point 2378.5 1805.75 height -value [-4 m]
-
 point 2264.25 1803.0 height -value [+2 m]
 
 point 2200.0 1902.5 height -value [-12 m]
@@ -337,7 +337,7 @@ endline
 
 point 2215.5 2380.25 station-name -scale xs
 
-point 2401.0 1757.75 station-name -scale xs
+point 2394.25 1781.25 station-name -scale xs
 
 point 2397.0 1865.0 station-name -scale xs
 
@@ -493,20 +493,16 @@ line pit
 endline
 
 line wall
-  2334.25 1706.5
-  altitude .
-  2334.25 1706.5 2333.75 1721.25 2334.0 1728.0
-  2334.25 1734.75 2334.5 1744.75 2338.0 1751.0
-  2341.5 1757.25 2346.0 1765.25 2350.0 1774.75
-  2354.0 1784.25 2357.75 1790.0 2356.0 1795.25
-  2354.25 1800.5 2345.75 1809.0 2342.25 1811.5
+  2351.5 1789.25
+  2349.68 1799.41 2352.0 1799.75 2350.25 1805.0
+  2348.5 1810.25 2345.75 1809.0 2342.25 1811.5
   2338.75 1814.0 2339.5 1827.0 2339.5 1827.0
   smooth off
 endline
 
 point 2271.5 2054.5 air-draught -orientation 181.3 -subtype summer
 
-point 2292.25 1732.25 air-draught -orientation 181.3 -subtype summer
+point 2287.75 1774.0 air-draught -orientation 159.2 -subtype summer
 
 point 2169.75 1790.0 air-draught -orientation 270.0 -subtype summer
 
@@ -519,11 +515,8 @@ line wall
   2255.5 1822.25 2292.75 1830.25 2297.5 1828.25
   2302.25 1826.25 2297.75 1822.5 2296.75 1813.75
   2295.75 1805.0 2297.25 1798.5 2299.25 1792.0
-  2301.25 1785.5 2311.5 1776.75 2315.75 1773.5
-  2320.0 1770.25 2316.75 1764.25 2317.0 1757.75
-  2317.25 1751.25 2325.25 1736.5 2326.0 1731.0
-  2326.75 1725.5 2326.75 1706.75 2326.75 1706.75
-  smooth off
+  2301.25 1785.5 2303.75 1784.0 2308.0 1780.75
+  2312.25 1777.5 2315.0 1774.75 2318.0 1768.25
 endline
 
 point 2205.86 1849.1799999999998 station -name 31

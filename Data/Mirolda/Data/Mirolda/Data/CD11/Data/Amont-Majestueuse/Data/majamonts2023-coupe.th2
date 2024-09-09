@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -134.0 -134.0 2805.086800000001 1702.0690000000004
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1653.460000000001 1 1.0} {1337.8500000000004 PTRCHAPLR09} Amont-Majestueuse-coupe.xvi 0 {}
 
 
@@ -27,6 +27,7 @@ line flowstone -reverse on
   2400.0 911.5
   2400.0 911.5 2428.5 907.0 2436.0 902.5
   2443.5 898.0 2447.0 896.5 2457.0 897.0
+  smooth off
 endline
 
 line wall -outline none
@@ -50,6 +51,7 @@ line wall -outline none
   1709.5 1171.5 1757.0 1168.0 1777.5 1155.5
   1798.0 1143.0 1805.5 1133.5 1824.0 1133.5
   1842.5 1133.5 1889.0 1141.5 1896.0 1143.5
+  smooth off
 endline
 
 line wall -outline none
@@ -65,6 +67,7 @@ line wall -outline none
   1663.5 1222.5 1637.0 1247.0 1648.0 1249.5
   1659.0 1252.0 1684.0 1254.5 1698.0 1254.5
   1712.0 1254.5 1728.0 1250.5 1736.0 1244.5
+  smooth off
 endline
 
 line wall -outline none
@@ -132,6 +135,7 @@ line wall
   2354.75 991.25
   2354.75 991.25 2365.5 957.25 2365.5 952.25
   2365.5 947.25 2333.25 947.25 2326.0 948.0
+  smooth off
 endline
 
 line wall
@@ -142,9 +146,7 @@ line wall
 endline
 
 line wall
-  2513.5 861.5
-  2513.5 861.5 2488.25 902.75 2478.75 909.0
-  2469.25 915.25 2456.0 927.5 2444.25 928.75
+  2444.25 928.75
   2432.5 930.0 2432.0 930.25 2425.25 932.75
   2418.5 935.25 2412.0 947.0 2412.0 947.0
   smooth off
@@ -154,9 +156,7 @@ point 1845.5 1257.5 air-draught -orientation 133.5 -subtype summer
 
 point 2024.0 821.5 air-draught -orientation 236.9 -subtype summer
 
-point 2536.0 831.5 air-draught -orientation 120.1 -subtype summer
-
-point 2523.5 790.5 label -text "v. -300 m - salle de la Confluence"
+point 2388.5 868.5 air-draught -orientation 120.1 -subtype summer
 
 point 1766.0 1022.0 label -text "R4"
 
@@ -171,6 +171,7 @@ line wall
   2143.25 745.25 2205.0 763.0 2216.75 768.25
   altitude .
   2228.5 773.5 2248.5 784.25 2255.5 785.0
+  smooth off
 endline
 
 line wall -subtype flowstone
@@ -179,6 +180,7 @@ line wall -subtype flowstone
   2279.0 788.75 2275.5 795.25 2280.0 799.0
   2284.5 802.75 2293.0 804.25 2293.0 809.5
   2293.0 814.75 2294.5 816.25 2299.5 817.0
+  smooth off
 endline
 
 line wall
@@ -196,15 +198,7 @@ line wall
   2380.25 890.5 2384.25 888.5 2393.75 887.0
   2403.25 885.5 2406.0 885.75 2413.0 883.75
   2420.0 881.75 2425.25 879.5 2428.0 878.75
-  2430.75 878.0 2429.75 846.25 2430.0 843.0
-  2430.25 839.75 2443.0 838.75 2454.0 839.0
-  2465.0 839.25 2482.75 837.0 2488.0 835.5
-  2493.25 834.0 2506.25 830.0 2506.25 830.0
-  smooth off
-  altitude .
 endline
-
-point 2538.0 921.0 height -value [-4 m]
 
 point 2289.5 883.5 stalactites-stalagmites
 
@@ -214,6 +208,7 @@ line border
   2134.5 779.0
   2134.5 779.0 2176.0 804.0 2183.5 801.0
   2191.0 798.0 2194.0 788.0 2201.0 785.5
+  smooth off
 endline
 
 line water-flow
@@ -227,6 +222,7 @@ line water-flow
   2019.0 927.0
   2019.0 927.0 2069.5 902.0 2085.5 896.0
   2101.5 890.0 2145.0 877.0 2157.0 875.0
+  smooth off
 endline
 
 line water-flow
@@ -268,12 +264,14 @@ line water-flow
   1848.0 996.5
   1848.0 996.5 1893.5 990.5 1909.5 988.5
   1925.5 986.5 1944.5 986.0 1952.0 984.0
+  smooth off
 endline
 
 line water-flow
   1542.0 1073.0
   1542.0 1073.0 1680.0 1061.0 1699.0 1059.5
   1718.0 1058.0 1768.0 1054.5 1777.0 1051.0
+  smooth off
 endline
 
 point 1850.5 1072.0 water-flow -orientation 154.0
@@ -292,8 +290,6 @@ point 1555.5 1172.0 traverse
 
 point 1465.0 1195.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Majestueuse amont" -attr CA "Courant d'air soufflant fort en été" -text "Amonts de la Majestueuse, en direction du VF3 à topographier, courant d'air soufflant important en été"
 
-point 2559.0 851.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Majestueuse amont" -attr CA "Courant d'air aspirant fort en été" -text "Méandre qui descendrait vers -300 m, à topographier, courant d'air aspirant important en été"
-
 point 2353.0 1054.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Majestueuse amont" -text "Arrivée d'eau à voir ?"
 
 point 1660.0 1161.0 water-flow -orientation 185.0
@@ -309,6 +305,7 @@ line flowstone
   1653.0 1176.0
   1653.0 1176.0 1654.5 1170.5 1655.0 1160.0
   1655.5 1149.5 1655.5 1138.5 1655.5 1134.5
+  smooth off
 endline
 
 area u:galerie
@@ -328,7 +325,7 @@ point 1672.5 1192.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "
 
 point 2427.0 1002.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Majestueuse amont" -text "Arrivée d'eau à voir ?"
 
-point 2372.0 850.5 height -value [+2 m]
+point 2352.5 847.0 height -value [+2 m]
 
 point 2337.0 793.5 height -value [-12 m]
 
@@ -423,12 +420,14 @@ line wall
   2196.75 847.5 2170.0 844.25 2170.0 844.25
   smooth off
   2170.0 844.25 2134.25 827.5 2129.0 825.0
+  smooth off
 endline
 
 line wall -subtype presumed
   1518.0 1086.25
   1518.0 1086.25 1614.5 1075.25 1623.75 1073.75
   1633.0 1072.25 1669.25 1071.0 1681.5 1070.0
+  smooth off
 endline
 
 line wall
@@ -443,8 +442,6 @@ line wall -subtype presumed
   1586.25 1293.5
   1506.25 1294.5
 endline
-
-point 2484.92 844.545 station -name 27
 
 point 2422.37 895.925 station -name PTRJMLDXR04
 
@@ -551,6 +548,7 @@ line border
   2091.5 754.0 2095.0 747.0 2088.5 744.0
   2082.0 741.0 2066.0 738.5 2060.5 736.0
   2055.0 733.5 2052.5 734.0 2052.5 729.0
+  smooth off
 endline
 
 area u:galerie
@@ -705,6 +703,7 @@ line wall
   1884.5 671.0 1905.0 673.0 1922.0 679.5
   1939.0 686.0 1951.0 688.5 1968.0 691.5
   1985.0 694.5 2041.0 714.5 2050.0 717.5
+  smooth off
 endline
 
 line wall
@@ -825,6 +824,7 @@ line wall
   439.5 457.0 463.5 448.0 463.5 442.5
   463.5 437.0 468.0 380.0 427.5 382.0
   387.0 384.0 355.0 372.0 341.0 370.5
+  smooth off
 endline
 
 line wall
@@ -878,6 +878,7 @@ line wall
   1138.25 578.5 1134.5 613.0 1134.5 613.0
   smooth off
   1134.5 613.0 1132.75 621.0 1130.0 623.0
+  smooth off
 endline
 
 line wall
@@ -906,6 +907,7 @@ line wall
   1518.0 639.0
   1518.0 639.0 1440.0 632.0 1428.5 627.0
   1417.0 622.0 1420.5 620.5 1411.5 616.75
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -934,6 +936,7 @@ endline
 line label -text "La Majestueuse amont"
   475.0 629.0
   700.0 754.0 1266.0 872.0 1488.0 876.0
+  smooth off
 endline
 
 line water-flow -subtype intermittent
@@ -941,12 +944,14 @@ line water-flow -subtype intermittent
   522.25 313.75 467.5 302.25 456.5 301.5
   445.5 300.75 432.0 295.0 426.25 293.0
   420.5 291.0 389.0 281.0 383.75 280.75
+  smooth off
 endline
 
 line water-flow -subtype intermittent
   727.0 398.25
   727.0 398.25 694.75 392.75 683.5 390.25
   672.25 387.75 652.75 380.75 648.25 379.5
+  smooth off
 endline
 
 line water-flow -subtype intermittent
@@ -970,6 +975,7 @@ line water-flow -subtype intermittent
   smooth off
   993.25 479.25 927.25 464.5 915.5 462.25
   903.75 460.0 834.0 436.25 825.75 432.25
+  smooth off
 endline
 
 line wall
@@ -990,6 +996,7 @@ line wall
   1421.5 602.0 1422.5 602.5 1432.5 604.5
   1442.5 606.5 1470.5 615.0 1480.5 617.0
   1490.5 619.0 1514.5 625.0 1523.5 628.0
+  smooth off
 endline
 
 line wall -subtype invisible
@@ -1135,6 +1142,7 @@ line wall
   803.5 431.0 826.0 442.5 842.5 449.0
   859.0 455.5 864.5 457.0 883.5 463.5
   902.5 470.0 905.5 470.0 918.5 472.0
+  smooth off
 endline
 
 point 317.57000000000016 268.3349999999999 station -name 84
