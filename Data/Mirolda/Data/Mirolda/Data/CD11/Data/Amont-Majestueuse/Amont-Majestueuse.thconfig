@@ -260,7 +260,7 @@ layout layout-coupe
 
 # Export des xvi pour le dessin si besoin
 #export map -fmt xvi -layout xviexport -o Data/Amont-Majestueuse2024-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Amont-Majestueuse2024-coupe.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Amont-Majestueuse2024-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Amont-Majestueuse@Amont-Majestueuse
