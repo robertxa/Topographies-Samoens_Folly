@@ -67,12 +67,15 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	join SC-Ardeche-1@Ardeche SC-Maj-Amonts-1@Amont-Majestueuse
 	
 	input Data/Puits-Belge/Puits-Belge-tot.th
-	equate 941@Puits-Belge.Puits-Belge 103@MajAmont2024.Amont-Majestueuse
-	#equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
-	
-	# Vieux TRO
-	#equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
-	
+		#equate 941@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
+		equate 1000@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
+		join SP-majamonts2024-5@Amont-Majestueuse SP-Belge-1@Puits-Belge
+		#equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
+
+		# Vieux TRO
+		#equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
+
+
 	### Données dupliquées, pas la peine de les garder dans la synthèse
 	# Amont de la salle de la Confluence:
 	#input Data/Amont-Confluence/AmontConfluence-tot.th
