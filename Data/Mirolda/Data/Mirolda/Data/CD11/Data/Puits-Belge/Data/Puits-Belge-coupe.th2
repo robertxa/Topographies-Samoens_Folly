@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 10521.706400000001 2962.6472
+##XTHERION## xth_me_area_adjust -128.0 -116.59000000000009 10521.706400000001 2895.317
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {9557.45 1 1.0} {944.8799999999999 941@Puits-Belge.Puits-Belge} Puits-Belge-coupe.xvi 0 {}
 
@@ -167,6 +167,7 @@ endline
 line wall
   1593.5 1863.0
   1593.5 1863.0 1605.0 1863.0 1610.0 1863.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -180,12 +181,14 @@ line wall -reverse on
   altitude .
   1824.5 1896.0 1813.5 1890.0 1813.5 1898.0
   1813.5 1906.0 1816.0 1909.5 1809.5 1914.0
+  smooth off
 endline
 
 line wall -reverse on -subtype debris
   1809.5 1914.0
   1803.0 1918.5 1810.5 1920.5 1794.0 1919.0
   1777.5 1917.5 1787.5 1926.0 1774.0 1926.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -198,6 +201,7 @@ line wall -reverse on
   altitude .
   1616.5 1915.5 1602.5 1915.0 1599.5 1910.0
   1596.5 1905.0 1594.5 1880.5 1594.5 1874.5
+  smooth off
 endline
 
 line rope
@@ -222,6 +226,7 @@ line wall -reverse on
   1420.5 1782.5 1392.0 1788.0 1381.0 1787.5
   1370.0 1787.0 1369.0 1784.0 1357.0 1779.0
   1345.0 1774.0 1335.5 1778.0 1326.5 1772.5
+  smooth off
 endline
 
 line wall -reverse on -subtype clay
@@ -272,6 +277,7 @@ line wall -reverse on
   2451.5 1715.5 2433.5 1719.5 2420.5 1720.0
   2407.5 1720.5 2382.0 1717.5 2382.0 1727.5
   2382.0 1737.5 2370.0 1741.5 2363.0 1743.5
+  smooth off
 endline
 
 point 2655.5 1754.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
@@ -345,6 +351,7 @@ endline
 line wall -reverse on
   2363.0 1743.5
   2363.0 1743.5 2356.0 1740.0 2353.5 1738.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -516,6 +523,7 @@ line wall -subtype clay
   4711.5 1380.0 4728.0 1375.5 4728.0 1383.0
   4728.0 1390.5 4728.5 1400.0 4738.5 1400.0
   4748.5 1400.0 4740.0 1400.5 4765.5 1401.0
+  smooth off
 endline
 
 line wall
@@ -561,6 +569,7 @@ line wall -subtype flowstone
   4298.5 1516.5 4355.5 1475.5 4363.5 1470.0
   4371.5 1464.5 4382.5 1451.0 4399.5 1440.0
   4416.5 1429.0 4451.0 1410.0 4456.0 1407.5
+  smooth off
 endline
 
 line wall -subtype clay
@@ -571,6 +580,7 @@ endline
 line wall
   3981.0 1454.0
   3981.0 1454.0 3974.5 1452.5 3971.0 1454.0
+  smooth off
 endline
 
 line wall
@@ -579,6 +589,7 @@ line wall
   3872.0 1487.0 3930.0 1489.0 3938.5 1488.5
   3947.0 1488.0 3971.5 1481.0 3973.5 1471.0
   3975.5 1461.0 3971.0 1457.0 3981.0 1454.0
+  smooth off
 endline
 
 line wall -subtype clay
@@ -590,16 +601,19 @@ line wall -subtype clay
   4071.0 1424.0 4088.0 1429.5 4097.0 1428.0
   4106.0 1426.5 4105.0 1426.5 4115.5 1427.5
   4126.0 1428.5 4145.5 1421.5 4145.5 1431.0
+  smooth off
 endline
 
 line wall
   4157.5 1437.5
   4157.5 1437.5 4146.0 1436.5 4144.5 1437.0
+  smooth off
 endline
 
 line wall
   4145.5 1431.0
   4145.5 1431.0 4153.5 1430.0 4156.0 1430.0
+  smooth off
 endline
 
 line wall -subtype clay
@@ -610,18 +624,21 @@ line wall -subtype clay
   4195.5 1471.0 4194.5 1471.0 4204.5 1471.0
   4214.5 1471.0 4230.0 1468.5 4230.0 1475.5
   4230.0 1482.5 4218.5 1491.5 4230.0 1492.0
+  smooth off
 endline
 
 line wall
   4230.0 1492.0
   4241.5 1492.5 4233.5 1509.5 4244.0 1510.5
   4254.5 1511.5 4294.5 1518.5 4298.5 1516.5
+  smooth off
 endline
 
 line wall
   3733.5 1510.0
   3733.5 1510.0 3704.5 1510.5 3695.5 1510.5
   3686.5 1510.5 3677.0 1513.0 3689.0 1517.0
+  smooth off
 endline
 
 area sump
@@ -642,12 +659,14 @@ line border
   3604.0 1517.0
   3604.0 1517.0 3615.5 1516.5 3630.0 1517.5
   3644.5 1518.5 3655.0 1516.0 3665.5 1516.0
+  smooth off
 endline
 
 line wall -subtype debris
   3689.0 1517.0
   3701.0 1521.0 3712.5 1528.0 3719.0 1533.0
   3725.5 1538.0 3753.5 1535.5 3758.5 1535.5
+  smooth off
 endline
 
 line wall
@@ -687,6 +706,7 @@ line wall
   3496.5 1533.0 3451.0 1532.5 3443.0 1536.0
   3435.0 1539.5 3434.5 1539.5 3434.5 1548.5
   3434.5 1557.5 3435.73 1553.24 3434.0 1559.0
+  smooth off
 endline
 
 line wall
@@ -717,6 +737,7 @@ line wall
   3163.5 1571.5 3195.5 1577.0 3203.0 1574.5
   3210.5 1572.0 3213.5 1571.0 3231.5 1570.5
   3249.5 1570.0 3260.0 1569.0 3260.5 1559.5
+  smooth off
 endline
 
 line wall -reverse on
@@ -737,6 +758,7 @@ line wall
   altitude .
   3427.0 1513.5 3439.0 1512.5 3450.5 1512.0
   3462.0 1511.5 3488.5 1507.5 3494.0 1507.5
+  smooth off
 endline
 
 point 4610.5 1321.0 label -text "siphon temporaire n°2"
@@ -1009,6 +1031,7 @@ line wall -outline in
   6473.0 1446.0 6464.0 1447.0 6436.0 1447.5
   6408.0 1448.0 6393.5 1444.0 6387.0 1446.5
   6380.5 1449.0 6384.0 1452.5 6391.0 1457.0
+  smooth off
 endline
 
 line border
@@ -1030,6 +1053,7 @@ line border
   6728.5 1385.5
   6728.5 1385.5 6753.5 1401.0 6761.5 1401.0
   6769.5 1401.0 6775.5 1400.0 6778.0 1396.0
+  smooth off
 endline
 
 line border
@@ -1080,6 +1104,7 @@ line wall
   6997.5 1383.0 7044.0 1384.0 7060.0 1383.0
   7076.0 1382.0 7165.0 1371.0 7185.0 1371.0
   7205.0 1371.0 7217.0 1369.5 7233.0 1369.0
+  smooth off
 endline
 
 area u:galerie
@@ -1127,6 +1152,7 @@ line wall -subtype clay
   5895.5 1382.0 5901.5 1386.5 5915.0 1387.5
   5928.5 1388.5 5957.5 1397.0 5971.5 1398.5
   5985.5 1400.0 5982.0 1414.5 5999.5 1417.0
+  smooth off
 endline
 
 line wall
@@ -1169,6 +1195,7 @@ line wall
   5195.5 1461.5 5218.5 1458.0 5225.0 1458.0
   5231.5 1458.0 5237.0 1455.5 5241.5 1454.0
   5246.0 1452.5 5240.5 1447.0 5237.5 1446.5
+  smooth off
 endline
 
 point 6619.5 1352.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
@@ -1300,13 +1327,7 @@ endline
 point 8732.0 1234.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Conduite forcée à voir"
 
 line wall
-  9555.0 960.5
-  9555.0 960.5 9533.0 959.0 9529.5 968.5
-  9526.0 978.0 9519.5 1001.0 9516.5 1021.0
-  9513.5 1041.0 9518.0 1066.5 9517.0 1084.5
-  9516.0 1102.5 9516.5 1139.0 9511.0 1151.0
-  9505.5 1163.0 9503.5 1163.0 9493.5 1166.5
-  9483.5 1170.0 9482.5 1171.0 9465.5 1169.0
+  9465.5 1169.0
   9448.5 1167.0 9437.5 1158.5 9429.0 1171.5
   9420.5 1184.5 9417.0 1196.5 9413.0 1217.0
   9409.0 1237.5 9405.5 1256.5 9401.5 1270.0
@@ -1351,8 +1372,6 @@ line wall
   smooth off
 endline
 
-point 9541.0 944.0 camp -scale s
-
 line wall
   8681.0 1218.5
   8681.0 1218.5 8656.0 1228.0 8648.5 1240.5
@@ -1384,12 +1403,6 @@ line wall
   altitude .
   9378.0 1136.0 9404.0 1143.5 9417.0 1144.0
   9430.0 1144.5 9444.5 1149.5 9451.0 1146.5
-  9457.5 1143.5 9464.5 1134.0 9470.5 1122.0
-  9476.5 1110.0 9477.5 1087.5 9477.5 1075.5
-  9477.5 1063.5 9472.5 941.0 9474.5 932.5
-  altitude .
-  9476.5 924.0 9498.5 930.5 9512.5 931.0
-  9526.5 931.5 9544.5 931.0 9551.5 931.0
 endline
 
 area u:boue
@@ -1426,8 +1439,6 @@ line wall -outline in
   smooth off
 endline
 
-point 9206.5 1082.5 label -text "<center>Puits<br>Belge"
-
 point 8732.5 1181.5 air-draught -orientation 297.0
 
 point 8655.5 1143.0 label -text "<center>conduite<br>forcée"
@@ -1442,12 +1453,22 @@ point 8923.0 1430.5 height -value [+10 m]
 
 point 9316.0 1204.0 height -value [+17 m]
 
-point 9405.0 1040.5 height -value [+25 m]
-
 line rope
-  9435.0 1160.5
-  9494.0 1163.0
-  9494.0 934.5
+  9432.5 1160.0
+  9456.0 1160.0
+  9486.0 1158.0
+endline
+
+line wall
+  9451.0 1146.5
+  9451.0 1146.5 9461.0 1129.0 9465.5 1126.5
+  9470.0 1124.0 9488.0 1117.0 9488.0 1117.0
+  smooth off
+endline
+
+line wall
+  9486.0 1168.5
+  9465.5 1169.0
 endline
 
 line rope
@@ -1492,6 +1513,7 @@ endline
 line wall -outline in
   8214.5 1395.0
   8214.5 1395.0 8207.0 1412.5 8214.5 1409.5
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -1540,11 +1562,8 @@ line wall
   8323.5 1370.5 8323.0 1370.0 8323.0 1363.5
   8323.0 1357.0 8315.5 1292.0 8323.5 1290.5
   8331.5 1289.0 8351.5 1299.0 8356.0 1296.5
+  smooth off
 endline
-
-point 9557.45 944.8799999999999 station -name 941
-
-point 9482.490000000002 944.8799999999999 station -name 1000
 
 point 9482.490000000002 1160.6299999999999 station -name 1001
 
@@ -1780,6 +1799,7 @@ line wall -subtype unsurveyed
   2351.0 1817.5 2352.5 1814.0 2365.0 1811.5
   2377.5 1809.0 2394.5 1805.5 2403.0 1805.5
   2411.5 1805.5 2431.0 1806.0 2437.5 1807.5
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -1804,6 +1824,7 @@ line wall
   2433.0 1835.5 2441.0 1836.5 2441.5 1832.5
   2442.0 1828.5 2443.0 1823.5 2448.0 1821.0
   2453.0 1818.5 2446.0 1816.5 2440.0 1814.5
+  smooth off
 endline
 
 point 2416.5 1909.5 height -value [-6 m]
@@ -1832,6 +1853,7 @@ line wall -subtype unsurveyed
   2324.0 1848.0 2334.0 1845.5 2334.0 1845.5
   smooth off
   2334.0 1845.5 2364.0 1827.5 2368.5 1826.0
+  smooth off
 endline
 
 line wall -subtype unsurveyed
@@ -1851,6 +1873,7 @@ line wall
   2490.0 1815.0 2478.5 1817.5 2475.5 1822.5
   2472.5 1827.5 2416.0 1856.0 2406.0 1862.5
   2396.0 1869.0 2387.0 1878.0 2381.0 1881.0
+  smooth off
 endline
 
 point 2694.1700000000005 1796.86 station -name 14

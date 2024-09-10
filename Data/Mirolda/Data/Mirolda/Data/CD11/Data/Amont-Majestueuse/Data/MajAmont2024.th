@@ -438,7 +438,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     29 . 1.85 308.9 -8.2
     29 . 2.48 291.9 25.7
     29 . 0.24 41.3 11.1
-    extend left
+    extend right
   
     29 30 4.69 157.7 45.6 # fistuleuses
     # extend auto
@@ -457,7 +457,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     30 . 5.12 119.5 7.8
     30 . 10.52 138.5 27.0
     30 . 7.12 73.8 14.5
-    extend left
+    extend right
     30 PTRMADRXR2 5.32 119.7 10.9
     # extend auto
     PTRMADRXR2 . 5.01 35.8 3.3
@@ -467,8 +467,10 @@ survey MajAmonts2024 -title "MajAmont2024"
     PTRMADRXR2 . 3.45 205.0 34.2
     PTRMADRXR2 . 3.32 258.2 22.0
     PTRMADRXR2 . 0.34 357.5 -76.8
+    extend right
+    PTRMADRXR2 32 31.74 44.6 83.1 # Cheminée à escalader
+
     extend left
-    PTRMADRXR2 32 31.74 44.6 83.1
     29 33 5.26 312.6 14.9
     # extend auto
     33 . 1.24 30.8 -8.3
@@ -1248,7 +1250,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     90 . 5.08 325.5 -13.5
     90 . 4.69 346.5 -23.7
     90 . 0.97 336.5 9.0
-    extend left
+    extend right
     90 91 6.63 352.2 2.3
     # extend auto
     91 . 2.45 125.9 -48.8
