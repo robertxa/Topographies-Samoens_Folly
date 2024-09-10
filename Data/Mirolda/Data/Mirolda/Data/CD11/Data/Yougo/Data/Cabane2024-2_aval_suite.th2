@@ -106,7 +106,7 @@ point 233.86299999999997 751.422 station -name 1
 line wall
 endline
 
-point 185.75 515.75 station-name -scale xs
+point 185.75 515.75 station-name -scale xs -align right
 
 line wall -reverse on
   255.25 784.25
@@ -198,7 +198,7 @@ point 600.0029999999999 189.29199999999997 station -name 24
 
 point 577.713 178.582 station -name 23
 
-point 570.0 134.5 height -value [+5 m]
+point 552.5 144.5 height -value [+5 m]
 
 point 537.0129999999999 175.04199999999997 station -name 22
 
@@ -228,6 +228,7 @@ line wall -reverse on
   490.5 209.75 495.25 208.0 501.25 203.0
   507.25 198.0 518.0 187.25 529.75 185.5
   541.5 183.75 564.5 184.75 571.25 185.75
+  smooth off
 endline
 
 area flowstone
@@ -307,6 +308,7 @@ line wall
   497.5 191.0 504.25 186.25 510.5 180.75
   516.75 175.25 522.75 169.75 530.75 169.5
   538.75 169.25 560.75 171.0 568.25 172.25
+  smooth off
 endline
 
 point 269.373 337.48199999999997 station -name 16

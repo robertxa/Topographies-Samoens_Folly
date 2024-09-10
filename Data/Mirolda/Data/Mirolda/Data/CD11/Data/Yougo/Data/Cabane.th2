@@ -219,7 +219,7 @@ endscrap
 
 scrap SP-Cabane-2024-1 -projection plan -station-names "" "@cabane2024-1" -author 2024 "Alexandre Pont" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 994.1422 -128.0 0.0 0.0 28.50241188 0.0 m]
 
-point 5.75 445.75 label -text "g. de la Cabane"
+point 72.5 539.0 label -orientation 295.9 -text "g. de la Cabane"
 
 point 193.1489999999999 620.638 station -name 13
 
@@ -255,6 +255,7 @@ line wall
   99.75 422.25 105.5 399.25 106.75 392.25
   108.0 385.25 112.5 384.75 107.0 376.25
   101.5 367.75 83.5 349.25 79.5 340.0
+  smooth off
 endline
 
 line pit
@@ -297,6 +298,7 @@ line wall -reverse on
   114.25 427.25 127.0 396.75 130.5 388.5
   134.0 380.25 136.25 378.0 130.75 372.0
   125.25 366.0 105.25 336.0 102.0 328.5
+  smooth off
 endline
 
 point 149.60899999999992 582.368 station -name 9
