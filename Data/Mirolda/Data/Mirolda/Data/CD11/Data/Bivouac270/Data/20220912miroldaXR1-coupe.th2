@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 3435.0884 1939.0246
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {393.70000000000005 1 1.0} {1496.067 PTRMADG0@madg0.Bivouac270} Bivouac270-coupe.xvi 0 {}
 
 
@@ -100,7 +100,9 @@ line label -text "méandre Des Trois"
   smooth off
 endline
 
-point 1141.5 1013.0 label -text "etr."
+point 973.0 1087.0 dig
+
+point 1141.5 1013.0 label -text "ex-etr."
 
 line border
   1112.5 1036.5
@@ -437,6 +439,10 @@ line border
   1466.0 945.5 1472.0 940.0 1480.5 937.5
   smooth off
 endline
+
+point 1368.5 949.5 dig
+
+point 1466.0 923.5 dig
 
 line border
   1402.0 927.5
