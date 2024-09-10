@@ -104,13 +104,22 @@ point 457.79 227.40400000000005 station -name YO31
 
 point 184.25 198.25 station-name -scale xs
 
-point 122.5 79.25 station-name -scale xs
+line pit
+  201.75 183.0
+  201.75 183.0 200.25 178.0 204.75 169.5
+  209.25 161.0 216.75 153.5 220.0 149.75
+  223.25 146.0 230.25 138.75 226.0 137.25
+  221.75 135.75 217.0 138.0 217.0 138.0
+  smooth off
+endline
+
+point -20.75 121.5 station-name -scale xs -align left
 
 point 284.75 141.0 water-flow -orientation 248.4
 
 point 279.5 197.25 water-flow -orientation 240.6
 
-point 184.0 123.25 air-draught -orientation 220.2
+point 168.5 176.5 air-draught -orientation 228.9 -subtype summer
 
 point 251.0 221.0 label -text "P? Affluent"
 
@@ -129,14 +138,35 @@ line pit -reverse on
   smooth off
 endline
 
-line pit -reverse on
-  254.75 161.0
-  254.75 161.0 253.5 151.25 250.25 145.25
-  247.0 139.25 245.75 136.5 236.0 132.0
+line border -subtype presumed
+endline
+
+line wall -subtype presumed
+  219.0 123.25
+  219.0 123.25 214.25 115.75 213.25 113.5
   smooth off
 endline
 
-line wall
+line pit -reverse on
+  215.0 135.0
+  215.0 135.0 233.75 134.5 238.75 124.5
+  smooth off
+endline
+
+line wall -subtype presumed
+  223.75 108.75
+  224.75 112.5 228.0 119.0 228.0 119.0
+  smooth off
+endline
+
+line pit -reverse on
+  254.75 161.0
+  254.75 161.0 254.44 150.54 252.5 144.0
+  250.5 137.25 250.25 132.25 240.5 127.75
+  smooth off
+endline
+
+line wall -reverse on
   124.0 136.0
   124.5 135.0 128.0 135.0 135.25 134.0
   142.5 133.0 144.5 130.75 152.0 136.0
@@ -167,8 +197,13 @@ line wall -reverse on
   270.5 117.75 268.25 123.0 268.25 123.0
   smooth off
   252.5 131.25
-  252.5 131.25 237.25 137.75 235.5 139.25
-  233.75 140.75 220.5 144.5 217.25 146.0
+  252.5 131.25 238.4 143.7 228.0 119.0
+  smooth off
+endline
+
+line wall -reverse on
+  219.0 123.25
+  226.75 138.25 220.5 144.5 217.25 146.0
   214.0 147.5 207.75 156.25 203.5 155.25
   199.25 154.25 193.5 151.0 191.25 149.0
   189.0 147.0 181.0 136.25 179.0 134.25
@@ -259,7 +294,7 @@ point 451.42 586.0640000000001 station -name YO22
 
 point 427.09000000000003 653.0740000000001 station -name A01
 
-point 467.25 608.0 station-name -scale xs
+point 414.75 619.75 station-name -scale xs -align left
 
 point 447.64000000000004 618.974 station -name PTRYOEPAP02
 
@@ -315,7 +350,7 @@ line floor-meander
   smooth off
 endline
 
-point 412.75 726.25 label -text "Etr. "
+point 402.0 713.0 label -text "etr. "
 
 point 482.75 588.75 height -value [-8 m]
 
@@ -327,13 +362,10 @@ line wall
   428.75 636.75 432.5 633.25 433.75 628.0
   435.0 622.75 434.5 625.5 432.5 614.0
   430.5 602.5 430.5 607.75 432.0 597.25
-  433.5 586.75 432.5 590.75 433.5 587.75
-  434.5 584.75 438.25 583.25 432.5 581.5
-  426.59 579.7 426.0 577.25 421.5 579.0
-  smooth off
+  433.5 586.75 439.0 573.5 425.75 578.25
 endline
 
-line wall
+line wall -outline in
   489.75 734.5
   489.75 734.5 483.0 723.75 481.5 719.25
   480.0 714.75 479.25 717.25 479.25 705.5
@@ -364,7 +396,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   475.75 742.0
   483.69 750.93 488.0 746.25 489.25 742.75
   490.5 739.25 490.25 738.25 489.75 734.5
@@ -414,7 +446,9 @@ line pit -reverse on
   smooth off
 endline
 
-line wall -subtype unsurveyed
+
+line wall -subtype unsurveyed -reverse on -outline in
+
   475.75 742.0
   475.75 742.0 463.0 730.5 455.25 715.75
   447.5 701.0 441.5 702.0 437.75 695.25
@@ -423,7 +457,7 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-line wall -subtype unsurveyed
+line wall -subtype unsurveyed -reverse on
   417.5 655.75
   411.25 665.5
   411.25 665.5 405.5 668.25 411.75 680.75
@@ -449,7 +483,7 @@ point 394.25 825.0 water-flow -orientation 148.9
 
 point 376.5 887.75 water-flow -orientation 148.9
 
-point 454.5 727.5 stalactites-stalagmites
+point 434.25 740.25 stalactites-stalagmites
 
 point 459.5 818.25 stalactites-stalagmites
 
@@ -457,24 +491,17 @@ point 494.0 790.0 height -value [-5 m]
 
 point 306.0 205.75 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "Affluent à voir ?"
 
-point 413.75 927.5 height -value [-6 m]
-
-line pit -reverse on
-  324.75 918.0
-  324.75 918.0 340.5 931.0 355.0 931.5
-  382.81 932.46 387.09 932.67 394.5 927.25
-  smooth off
-endline
-
-line wall -subtype invisible
-  124.0 136.0
-  124.0 136.0 130.5 124.0 131.0 113.0
-  smooth off
-endline
-
 line wall -subtype invisible
   271.0 187.0
   262.0 196.25
+endline
+
+line wall
+endline
+
+line pit
+  432.0 581.0
+  432.0 581.0 427.25 562.25 429.5 557.0
 endline
 
 line pit
@@ -485,10 +512,8 @@ line pit
 endline
 
 line wall
-  420.5 570.75
-  420.5 570.75 421.25 571.25 433.75 564.0
-  446.25 556.75 438.0 554.5 438.0 553.0
-  438.0 551.5 439.5 550.75 436.75 540.25
+  424.5 564.75
+  440.75 563.75 439.5 550.75 436.75 540.25
   434.0 529.75 435.5 523.75 437.75 520.0
   440.0 516.25 446.5 507.25 448.0 499.75
   449.5 492.25 450.0 496.25 447.0 482.25
@@ -506,8 +531,7 @@ line wall
   437.0 287.5 438.25 280.75 439.0 278.0
   439.75 275.25 447.0 229.0 447.25 226.0
   447.5 223.0 450.5 201.25 450.5 196.25
-  450.5 191.25 451.0 163.75 451.25 160.25
-  smooth off
+  450.5 191.25 456.75 162.75 451.25 160.25
 endline
 
 line wall -reverse on
@@ -601,6 +625,15 @@ endscrap
 
 
 scrap SP-Yougo-Aval-2 -projection plan -station-names "" "@Yougo-Aval" -author 2023 "Xavier Robert" -author 2023 "Alexandre Pont" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 757.9216 -128.0 0.0 0.0 22.50240864 0.0 m]
+
+line pit -reverse on
+  324.75 918.0
+  324.75 918.0 340.5 931.0 355.0 931.5
+  382.81 932.46 387.09 932.67 394.5 927.25
+  smooth off
+endline
+
+point 413.75 927.5 height -value [-6 m]
 
 point 373.0 911.0 map-connection
 
@@ -702,8 +735,8 @@ point 295.0 1021.0 section -scrap SS-Yougo-Aval-2
 
 line wall
   550.5 1121.0
-  550.5 1121.0 557.75 1121.75 543.75 1121.25
-  529.75 1120.75 521.0 1122.0 511.5 1118.25
+  550.5 1121.0 543.54 1121.64 539.5 1121.5
+  525.5 1121.0 521.0 1122.0 511.5 1118.25
   502.0 1114.5 501.5 1112.0 499.5 1106.25
   497.5 1100.5 494.5 1097.5 491.0 1092.25
   487.5 1087.0 478.25 1080.75 474.0 1078.75

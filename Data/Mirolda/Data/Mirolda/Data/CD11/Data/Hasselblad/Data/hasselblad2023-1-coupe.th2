@@ -1,17 +1,21 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 4065.01 1781.5442
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {3285.94 1 1.0} {708.0540000000001 PTRJCXRHA01@hasselblad2023-1.Hasselblad} Hasselblad-coupe.xvi 0 {}
 
 
 
 scrap SC-Hasselblad-1 -projection extended -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 4065.01 -128.0 0.0 0.0 106.502454 0.0 m]
 
+line wall -reverse on
+  3571.0 633.0
+  3571.0 633.0 3551.5 625.0 3544.0 623.5
+  3536.5 622.0 3519.0 626.5 3517.0 605.5
+endline
+
 point 3464.5 738.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Arrivée d'eau d'un petit méandre à voir"
 
 point 3378.0 776.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Puits remontant arrosé"
-
-point 3509.0 447.5 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "Suite vers le réseau de l'Ardèche à topographier"
 
 line label -text "galerie Hasselblad"
   2792.0 1067.0
@@ -19,20 +23,9 @@ line label -text "galerie Hasselblad"
   smooth off
 endline
 
-point 3556.5 473.0 air-draught -orientation 110.2 -subtype summer
-
 point 3172.5 825.0 air-draught -orientation 288.4 -subtype summer
 
 point 3453.5 661.0 stalactites-stalagmites
-
-line rope
-  3565.5 656.0
-  3522.5 644.0
-  3502.5 550.5
-  3502.0 385.5
-endline
-
-point 3565.0 323.5 label -text "<center> v. -370 m"
 
 point 3299.5 623.0 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Hasselblad" -text "L'eau part dans le joint de strate, à voir"
 
@@ -47,8 +40,6 @@ point 3286.25 646.75 water-flow -orientation 141.2
 point 3239.0 704.5 station-name -scale xs -align left
 
 point 3232.5 664.0 height -value [-6 m]
-
-point 3308.5 480.0 height -value [-30 m]
 
 point 3478.0 703.0 water-flow -orientation 151.7
 
@@ -71,40 +62,7 @@ line wall
   smooth off
 endline
 
-line wall
-  3565.5 502.0
-  3565.5 502.0 3542.5 502.5 3539.5 513.5
-  3536.5 524.5 3531.5 547.5 3540.0 551.5
-  3548.5 555.5 3560.0 548.5 3561.0 560.0
-  3562.0 571.5 3546.5 578.5 3554.0 584.0
-  3561.5 589.5 3552.0 604.0 3552.0 613.5
-  3552.0 623.0 3547.0 638.5 3554.0 640.5
-  smooth off
-endline
-
-line wall
-  3337.0 634.0
-  3337.0 634.0 3337.5 577.0 3344.0 565.0
-  3350.5 553.0 3365.0 562.0 3369.0 549.5
-  3373.0 537.0 3384.0 458.5 3399.0 442.0
-  3414.0 425.5 3445.5 404.5 3461.5 398.0
-  3477.5 391.5 3538.0 357.0 3538.0 357.0
-  smooth off
-endline
-
 line wall -subtype invisible
-endline
-
-line wall -reverse on -subtype invisible
-  3565.5 502.0
-  3590.75 491.0
-  3619.5 453.0
-  3624.25 416.0
-  3617.25 390.0
-  3600.75 363.75
-  3585.5 351.75
-  3547.75 354.0
-  3538.0 357.0
 endline
 
 line wall -reverse on -subtype invisible
@@ -127,6 +85,12 @@ line wall -reverse on -subtype invisible
   3289.0 634.5
 endline
 
+line rope
+  3522.5 644.0
+  3502.0 631.0
+  3502.0 595.5
+endline
+
 line wall
   3298.5 641.5
   3298.5 641.5 3282.0 654.5 3286.0 661.0
@@ -135,7 +99,7 @@ line wall
   3312.0 683.0 3318.5 683.5 3323.0 680.0
   3327.5 676.5 3329.5 668.5 3331.5 667.0
   3333.5 665.5 3336.5 658.5 3336.5 652.5
-  3336.5 646.5 3337.0 634.0 3337.0 634.0
+  3336.5 646.5 3338.5 609.5 3338.5 609.5
   smooth off
 endline
 
@@ -158,22 +122,6 @@ line rope
   3459.0 669.0
   3478.5 679.5
   3489.5 680.5
-endline
-
-line border
-  3424.0 622.0
-  3424.0 622.0 3439.5 614.0 3447.5 609.0
-  3455.5 604.0 3465.5 594.0 3468.0 583.0
-  3470.5 572.0 3474.5 545.5 3474.5 545.5
-  smooth off
-endline
-
-line border
-  3353.5 636.5
-  3353.5 636.5 3369.5 625.0 3385.0 615.5
-  3400.5 606.0 3413.0 605.5 3419.5 594.5
-  3426.0 583.5 3437.0 542.0 3437.0 542.0
-  smooth off
 endline
 
 line border

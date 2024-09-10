@@ -1,11 +1,17 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 2647.6864 2726.4266000000002
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {2043.3 1 1.0} {706.6199999999999 PTRJCXRHA01@hasselblad2023-1.Hasselblad} Hasselblad-map.xvi 0 {}
 
 
 
 scrap SP-hasselblad-1 -projection plan -station-names "" "@hasselblad2023-1" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2647.6864 -128.0 0.0 0.0 70.50243456 0.0 m]
+
+line pit -reverse on
+  2053.0 522.5
+  2053.0 522.5 2066.75 534.25 2087.0 540.5
+  2107.25 546.75 2113.5 547.75 2118.75 548.0
+endline
 
 point 2031.75 576.75 water-flow -orientation 142.7
 
@@ -121,15 +127,12 @@ line wall
 endline
 
 line wall
-  2070.5 397.25
-  2070.5 397.25 2094.5 480.5 2098.75 485.0
-  2103.0 489.5 2109.75 493.0 2117.25 496.0
-  2124.75 499.0 2129.5 494.5 2131.0 501.75
+  2131.0 501.75
   2132.5 509.0 2134.25 524.5 2141.25 524.0
   2148.25 523.5 2147.5 520.25 2153.5 522.25
   2159.5 524.25 2161.5 531.75 2170.0 531.75
-  2178.5 531.75 2185.5 529.0 2189.75 532.5
-  2194.0 536.0 2192.0 540.5 2197.25 541.25
+  2178.5 531.75 2185.5 534.25 2189.75 537.75
+  2194.0 541.25 2189.75 547.25 2195.0 548.0
   smooth off
 endline
 
@@ -148,8 +151,6 @@ line wall
   2052.0 543.25
   2057.0 543.0 2060.75 541.75 2060.75 537.0
   2060.75 532.25 2057.25 520.0 2057.0 515.5
-  2056.75 511.0 2042.5 486.5 2039.0 477.25
-  2035.5 468.0 2012.25 420.75 2012.25 420.75
   smooth off
 endline
 
@@ -160,12 +161,6 @@ line wall
 endline
 
 point 2013.75 621.25 air-draught -orientation 333.5 -subtype summer
-
-point 2002.25 487.75 air-draught -orientation 204.8 -subtype summer
-
-point 2023.75 366.25 label -text "<center>v. -370 m"
-
-point 2168.75 486.25 height -value [-30 m]
 
 point 2128.0 582.75 stalactites-stalagmites
 
@@ -179,7 +174,7 @@ endline
 line floor-meander
   2052.25 643.25
   2052.25 643.25 2079.0 569.25 2081.5 561.5
-  2084.0 553.75 2088.0 534.25 2088.0 534.25
+  2084.0 553.75 2087.0 540.5 2087.0 540.5
   smooth off
 endline
 

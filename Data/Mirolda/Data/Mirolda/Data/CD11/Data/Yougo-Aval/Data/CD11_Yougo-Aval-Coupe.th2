@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -1781.5389999999998 -206.74000000000007 521.7062000000003 1151.6228
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {236.22100000000012 1 1.0} {866.145 PTRYOLRAP04} Yougo-Aval-coupe.xvi 0 {}
 
 
@@ -47,16 +47,11 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -close on
-  -1325.5 195.0
-  -1325.5 195.0
-endline
-
 line wall
   -1355.75 227.5
   -1355.75 227.5 -1349.55 218.69 -1348.75 216.5
-  -1345.75 208.25 -1345.5 209.5 -1342.0 205.25
-  -1338.5 201.0 -1325.5 195.0 -1325.5 195.0
+  -1345.75 208.25 -1347.04 207.45 -1342.0 205.25
+  -1322.0 196.5 -1334.0 177.0 -1334.0 177.0
   smooth off
 endline
 
@@ -111,8 +106,8 @@ line border -visibility off
 endline
 
 line border -reverse on -visibility off
-  -1244.0 233.75
-  -1240.5 149.5
+  -1310.0 169.5
+  -1334.0 177.0
 endline
 
 line wall -subtype presumed
@@ -148,18 +143,6 @@ line wall -subtype presumed
   -487.75 551.5
   -479.0 566.5
   -478.0 573.0
-endline
-
-line wall -subtype presumed
-  -1325.5 195.0
-  -1325.5 195.0 -1320.75 191.5 -1314.5 187.5
-  -1308.25 183.5 -1304.25 181.0 -1303.25 172.0
-  -1302.25 163.0 -1301.25 161.25 -1299.25 155.25
-  -1297.25 149.25 -1290.5 149.0 -1284.5 148.5
-  -1278.5 148.0 -1271.5 149.0 -1264.75 149.0
-  -1258.0 149.0 -1247.75 149.5 -1240.5 149.5
-  smooth off
-  altitude .
 endline
 
 line wall -reverse on
@@ -205,9 +188,9 @@ line wall -reverse on
   -1320.5 248.75 -1319.0 254.25 -1321.25 241.75
   -1321.83 238.55 -1322.5 235.0 -1319.75 232.5
   -1313.84 227.13 -1314.75 230.0 -1310.5 228.25
-  -1306.25 226.5 -1299.0 224.0 -1292.25 221.75
-  -1282.52 218.51 -1274.25 218.75 -1266.0 222.5
-  -1257.75 226.25 -1248.75 231.25 -1244.0 233.75
+  -1306.25 226.5 -1301.52 224.43 -1298.5 218.0
+  -1294.5 209.5 -1299.39 203.19 -1302.0 194.5
+  -1305.0 184.5 -1307.0 179.0 -1310.0 169.5
   smooth off
 endline
 
@@ -411,6 +394,7 @@ line wall
   -393.25 660.25 -398.25 658.5 -413.75 649.25
   -429.25 640.0 -424.5 639.5 -443.5 629.25
   -462.5 619.0 -469.75 620.5 -487.25 623.75
+  smooth off
 endline
 
 line wall
@@ -531,11 +515,7 @@ point -820.0 473.0 air-draught -orientation 254.1 -subtype summer
 
 point -1343.5 277.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "E? Affluent"
 
-point -1203.5 196.5 continuation -attr Code P -attr Cavite "CD11" -attr Reseau "Yougoslaves Aval" -text "P? Affluent"
-
 point -123.0 776.5 air-draught -orientation 232.3 -subtype summer
-
-point -1231.5 163.25 water-flow -orientation 265.4
 
 point -784.75 394.5 water-flow -orientation 239.1
 

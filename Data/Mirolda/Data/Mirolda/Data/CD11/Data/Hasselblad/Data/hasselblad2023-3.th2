@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -3708.0 -1736.0 1288.0 5304.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {979.5999999999999 1 1.0} {-1583.0699999999997 PTRJCXRHA01@haselblad2023-2.haselblad2023-2} haselblad2023-2-map.xvi 0 {}
 
 
@@ -383,6 +383,11 @@ point -252.99 1015.96 clay
 point -142.88 715.50 clay
 
 point 20.72 375.73 clay
+
+line label -reverse on -text [galerie Hasselblad]
+  -2628.0 2284.0
+  -2628.0 2284.0 -1584.0 -380.0 -1464.0 -672.0
+endline
 
 point 135.55 201.12 clay
 
@@ -1481,8 +1486,6 @@ line slope -reverse on
   smooth off
   l-size 40.0
 endline
-
-point 1140.0 -656.0 label -text "g. Hasselblad"
 
 line wall
   978.0 -1422.0

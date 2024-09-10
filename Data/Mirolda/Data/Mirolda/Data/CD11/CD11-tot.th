@@ -38,8 +38,14 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	
 	# Galerie de l'Ardèche Suisse, aval Cabane ?
 	input Data/ArdecheSuisse/ArdecheSuisse-tot.th
-		equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.ArdecheSuisse
-		equate PTRYOEPAP05@Ardeche_2_cabane.ArdecheSuisse	PTRYOEPAP05@Yougo-Aval.Yougo-Aval
+	  #equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.ArdecheSuisse
+	  equate PTRYOEPAP05@Ardeche_2_cabane.ArdecheSuisse	PTRYOEPAP05@Yougo-Aval.Yougo-Aval
+	  join SP-hasselblad-1@Hasselblad SP-Ardeche_2_cabane-1@ArdecheSuisse
+	  join SP-Yougo-Aval-01@Yougo-Aval SP-Ardeche_2_cabane-1@ArdecheSuisse
+	  join SP-Yougo-Aval-01@Yougo-Aval SP-hasselblad-1@Hasselblad
+	  join SC-Hasselblad-1@Hasselblad SC-Ardeche_2_cabane-1@ArdecheSuisse
+	  join SC-Yougo-Aval-01@Yougo-Aval SC-Ardeche_2_cabane-1@ArdecheSuisse
+	  join SP-Yougo-Aval-01@Yougo-Aval SP-Cabane-2024-2-2@Yougo
 	
 	# Anciennes Données topos des Cavernicoles mises au format Therion
 	#	Il faudra mettre à jour ce fichier topo,

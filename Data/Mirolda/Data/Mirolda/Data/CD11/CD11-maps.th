@@ -5,6 +5,8 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 map MP-CD11-plan-tot -title "Gouffre Mirolda - CD11"
+	MP-Ardeche_2_cabane@ArdecheSuisse
+	break
 	MP-PuitsBelge@Puits-Belge
 	break
 	#
@@ -17,9 +19,9 @@ map MP-CD11-plan-tot -title "Gouffre Mirolda - CD11"
 	break
 	MP-CD11-plan-tot@CD11
 	break
-	MP-Yougo-Cabane@Yougo [0 150 m] below
+	MP-Yougo-Cabane@Yougo # [0 150 m] below
 	break
-	MP-Yougo-Entree@Yougo  [0 150 m] below # déplace le dessin topographié de 75 m vers le N pour faciliter la lecture de la topographie
+	MP-Yougo-Entree@Yougo # [0 75 m] below # déplace le dessin topographié de 75 m vers le N pour faciliter la lecture de la topographie
 	break
 	MP-Yougo-Cabane2@Yougo
 	break
@@ -29,7 +31,7 @@ map MP-CD11-plan-tot -title "Gouffre Mirolda - CD11"
 	#break
 	#MP-Yougo-Aval-2@Yougo-Aval  [0 75 m] below
 	break
-	MP-Yougo-Aval-2@Yougo-Aval  [0 150 m] below
+	MP-Yougo-Aval-2@Yougo-Aval  # [0 150 m] below
 	break
 	MP-Yougo-Aval-1@Yougo-Aval
 	break
@@ -53,7 +55,8 @@ map MP-CD11-plan-tot -title "Gouffre Mirolda - CD11"
 endmap
 
 map MC-CD11-coupe-tot -title "Gouffre Mirolda - CD11"
-	
+	MC-Ardeche_2_cabane@ArdecheSuisse
+	break
 	MC-CD11-coupe-tot@CD11
 	break
 	MC-Bivouac270-coupe-tot@Bivouac270
