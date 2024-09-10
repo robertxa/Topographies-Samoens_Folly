@@ -446,7 +446,9 @@ line pit -reverse on
   smooth off
 endline
 
-line wall -reverse on -outline in
+
+line wall -subtype unsurveyed -reverse on -outline in
+
   475.75 742.0
   475.75 742.0 463.0 730.5 455.25 715.75
   447.5 701.0 441.5 702.0 437.75 695.25
@@ -455,7 +457,7 @@ line wall -reverse on -outline in
   smooth off
 endline
 
-line wall -reverse on
+line wall -subtype unsurveyed -reverse on
   417.5 655.75
   411.25 665.5
   411.25 665.5 405.5 668.25 411.75 680.75
@@ -500,6 +502,13 @@ endline
 line pit
   432.0 581.0
   432.0 581.0 427.25 562.25 429.5 557.0
+endline
+
+line pit
+  433.75 584.25
+  433.75 584.25 433.75 574.0 435.0 567.25
+  436.25 560.5 436.25 556.0 436.25 556.0
+  smooth off
 endline
 
 line wall

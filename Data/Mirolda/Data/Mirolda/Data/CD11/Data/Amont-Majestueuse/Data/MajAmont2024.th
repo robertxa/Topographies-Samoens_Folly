@@ -30,7 +30,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     1 . 8.85 0.2 36.5
     1 . 1.42 354.0 47.3
     1 . 12.61 66.3 87.8
-    extend right
+    extend left
     1 2 14.57 357.0 28.4
     # extend auto
     2 . 1.50 257.1 3.9
@@ -46,7 +46,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     2 . 2.60 179.1 -37.8
     2 . 3.51 219.0 -23.2
     2 . 0.43 292.1 -8.1
-    extend right
+    extend left
     2 3 0.40 303.5 -14.7
     # extend auto
     3 . 3.95 280.3 -22.4
@@ -58,7 +58,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     3 . 3.03 327.4 0.8
     3 . 3.50 338.8 15.2
     3 . 4.46 326.7 30.1
-    extend right
+    extend left
     3 4 10.79 333.7 13.4  # blocs, eau coule à droite, pas accès 
     # extend auto
     4 . 2.41 150.9 -79.6
@@ -74,7 +74,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     4 . 5.37 318.7 2.6
     4 . 2.11 325.9 -18.9
     4 . 2.15 38.9 46.1
-    extend right
+    extend left
   
     4 5 10.71 332.9 -1.8  # R3, blocs, entrée salle à base Puits
     # extend auto
@@ -96,7 +96,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     5 . 7.34 144.8 59.1
     5 . 1.96 125.5 -18.1
     5 . 1.66 131.3 -33.8
-    extend right
+    extend left
   
     5 6 11.99 339.2 2.1 # base puits
     # extend auto
@@ -124,7 +124,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     7 . 4.94 173.1 80.5
     7 . 10.49 62.5 77.9
     7 . 4.58 61.8 50.6
-    extend right
+    extend left
   
     7 8 2.88 41.4 22.8  # palier, 2 blocs, 1 s, 1 af
     # extend auto
@@ -159,7 +159,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     9 . 1.69 297.9 56.0
     9 . 3.12 20.8 18.3
     9 . 5.44 8.0 3.0
-    extend right
+    extend left
     9 10 7.33 10.6 11.7
     # extend auto
     10 . 0.92 257.3 10.2
@@ -174,7 +174,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     10 . 3.00 326.8 -3.1
     10 . 2.58 335.6 2.0
     10 . 3.07 330.5 -30.4
-    extend right
+    extend left
   
     10 11 3.51 327.3 -7.4 # blocs
     # extend auto
@@ -187,7 +187,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     11 . 5.47 344.8 21.0
     11 . 2.02 346.4 7.0
     11 . 1.58 359.2 -26.4
-    extend right
+    extend left
     11 12 5.95 347.1 11.0
     # extend auto
     12 . 2.76 34.7 -72.3
@@ -198,7 +198,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     12 . 1.35 24.3 60.4
     12 . 11.05 14.0 39.4
     12 . 3.84 15.5 -31.2
-    extend right
+    extend left
     12 13 3.30 23.0 -18.6
     # extend auto
     13 . 0.51 281.6 4.6
@@ -210,7 +210,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     13 . 28.12 20.6 84.4
     13 . 13.53 58.5 78.0
     13 . 19.25 30.4 71.0
-    extend right
+    extend left
     13 PTRMADRXR1 3.91 5.2 27.4
     # extend auto
     PTRMADRXR1 . 1.09 132.0 -6.2
@@ -231,7 +231,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     PTRMADRXR1 . 13.48 66.8 52.2
     PTRMADRXR1 . 20.64 53.2 71.5
     PTRMADRXR1 . 4.38 33.9 49.5
-    extend right
+    extend left
   
     PTRMADRXR1 15 8.18 61.8 -1.1  # base puits
     # extend auto
@@ -247,7 +247,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     15 . 10.13 300.1 82.5
     15 . 6.26 4.3 71.5
     15 . 1.14 335.5 69.7
-    extend right
+    extend left
   
     15 16 11.40 336.5 85.2  # sommet p10
     # extend auto
@@ -260,7 +260,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     16 . 1.76 326.9 31.4
     16 . 9.79 249.5 -78.3
     16 . 5.51 179.5 -49.7
-    extend right
+    extend left
   
     16 17 5.28 337.8 7.4  # exc.
     # extend auto
@@ -276,7 +276,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     17 . 2.47 166.5 8.1
     17 . 5.93 115.8 56.8
     17 . 7.79 43.3 68.6
-    extend right
+    extend left
     17 18 4.02 70.9 -14.2
     # extend auto
     18 . 1.55 338.0 -79.0
@@ -290,7 +290,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     18 . 1.99 319.5 -47.5
     18 . 1.29 301.1 10.8
     18 . 1.01 330.5 13.6
-    extend right
+    extend left
     18 19 1.46 311.7 7.9
     # extend auto
     19 . 1.58 88.3 -83.5
@@ -303,7 +303,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     19 . 2.41 170.7 -48.9
     19 . 2.49 146.2 -35.9
     19 . 2.47 164.5 35.2
-    extend right
+    extend left
   
     19 20 4.33 24.7 26.9  # faille
     # extend auto
@@ -323,7 +323,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     20 . 0.95 237.8 11.2
     20 . 6.50 326.3 68.4
     20 . 7.66 340.5 55.4
-    extend right
+    extend left
   
     20 21 4.26 337.7 24.9 # E2, boucle faille
     # extend auto
@@ -339,7 +339,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     21 . 1.68 175.3 5.6
     21 . 2.34 143.9 21.8
     21 . 3.20 152.9 60.0
-    extend right
+    extend left
   
     21 22 5.15 347.5 8.8  # oppo, exc.
     # extend auto
@@ -350,7 +350,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     22 . 2.54 356.0 39.3
     22 . 7.96 341.0 23.8
     22 . 3.10 319.5 15.8
-    extend right
+    extend left
   
     22 23 2.03 324.2 -19.9  # eau au fond
     # extend auto
@@ -367,7 +367,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     23 . 4.97 119.0 80.5
     23 . 8.58 2.5 25.9
     23 . 8.14 355.0 31.5
-    extend right
+    extend left
     23 24 5.97 358.2 -20.2
     # extend auto
     24 . 0.64 273.7 -12.1
@@ -378,7 +378,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     24 . 2.23 8.3 41.4
     24 . 11.74 4.5 70.2
     24 . 27.14 224.1 80.8
-    extend right
+    extend left
     24 25 4.94 355.9 9.5
     # extend auto
     25 . 1.27 93.6 -81.4
@@ -389,7 +389,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     25 . 7.04 9.7 36.3
     25 . 8.19 1.7 46.8
     25 . 2.40 358.7 9.3
-    extend right
+    extend left
     25 26 6.13 4.9 9.6
     # extend auto
     26 . 0.68 237.1 41.1
@@ -399,7 +399,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     26 . 2.28 315.1 30.4
     26 . 3.78 310.7 80.6
     26 . 27.55 292.0 77.8
-    extend right
+    extend left
   
     26 27 4.94 328.3 8.8  # calcite RG
     # extend auto
@@ -408,7 +408,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     27 . 1.98 282.2 50.4
     27 . 0.86 193.8 27.3
     27 . 18.10 306.9 75.2
-    extend vertical
+    extend left
     27 28 4.44 277.2 9.1
     # extend auto
     28 . 0.50 13.6 0.4
@@ -421,7 +421,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     28 . 3.66 319.0 23.6
     28 . 2.71 306.3 13.4
     28 . 3.82 318.8 11.2
-    extend right
+    extend left
     28 29 5.50 317.5 11.4
     # extend auto
     29 . 0.48 219.8 -3.0
@@ -467,7 +467,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     PTRMADRXR2 . 3.45 205.0 34.2
     PTRMADRXR2 . 3.32 258.2 22.0
     PTRMADRXR2 . 0.34 357.5 -76.8
-    extend right
+    extend left
     PTRMADRXR2 32 31.74 44.6 83.1
     29 33 5.26 312.6 14.9
     # extend auto
@@ -477,7 +477,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     33 . 1.76 352.2 39.1
     33 . 2.75 300.3 -28.2
     33 . 1.84 283.1 -15.5
-    extend right
+    extend left
     33 34 3.79 300.0 4.7
     # extend auto
     34 . 1.05 67.3 -2.8
@@ -489,7 +489,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     34 . 4.19 27.9 22.3
     34 . 3.12 18.2 28.2
     34 . 3.76 20.7 6.2
-    extend right
+    extend left
     34 35 4.88 22.4 25.1
     # extend auto
     35 . 1.58 328.0 -73.4
@@ -503,13 +503,13 @@ survey MajAmonts2024 -title "MajAmont2024"
     35 . 4.46 160.0 55.8
     35 . 10.03 145.0 46.7
     35 . 3.49 22.9 19.7
-    extend right
+    extend left
     35 36 3.49 21.4 20.5
     # extend auto
     36 . 2.66 317.5 -10.0
     36 . 2.01 332.0 12.7
     36 . 6.26 193.1 79.5
-    extend right
+    extend left
     36 37 5.36 343.2 61.0
     # extend auto
     37 . 1.06 210.9 -8.8
@@ -522,7 +522,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     37 . 2.55 262.8 -16.6
     37 . 4.09 281.3 24.4
     37 . 3.07 291.6 -25.8
-    extend right
+    extend left
     37 38 3.15 291.7 -25.3
     # extend auto
     38 . 0.89 264.4 10.1
@@ -535,7 +535,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     38 . 1.98 10.3 10.9
     38 . 1.42 166.7 -24.4
     38 . 2.07 137.7 12.4
-    extend right
+    extend left
     38 39 7.55 341.2 15.6
     # extend auto
     39 . 0.78 259.6 3.6
@@ -548,7 +548,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     39 . 3.30 292.4 84.0
     39 . 4.74 341.3 36.0
     39 . 3.21 5.7 35.4
-    extend right
+    extend left
     39 40 4.58 2.3 26.5
     # extend auto
     40 . 0.91 101.7 -5.2
@@ -563,7 +563,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     40 . 4.97 351.2 66.6
     40 . 6.23 5.2 37.3
     40 . 3.23 26.8 35.4
-    extend right
+    extend left
     40 41 4.29 19.5 14.6
     # extend auto
     41 . 1.88 305.5 -1.5
@@ -577,7 +577,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     41 . 3.10 0.6 12.5
     41 . 2.73 337.7 11.2
     41 . 1.85 352.8 46.6
-    extend right
+    extend left
     41 42 5.41 15.4 51.5
     # extend auto
     42 . 0.95 121.0 -9.6
@@ -590,7 +590,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     42 . 1.84 60.5 -6.7
     42 . 1.90 34.0 22.8
     42 . 2.05 58.6 48.0
-    extend right
+    extend left
     42 43 3.70 36.9 -4.6
     # extend auto
     43 . 0.57 137.2 -5.1
@@ -603,7 +603,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     43 . 4.59 57.4 43.4
     43 . 7.12 65.3 43.2
     43 . 15.05 60.7 47.3
-    extend right
+    extend left
     43 44 6.95 63.3 45.7
     # extend auto
     44 . 1.83 251.8 -60.4
@@ -626,7 +626,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     44 . 9.77 72.6 65.3
     44 . 16.26 63.1 73.4
     44 . 15.59 316.6 86.7
-    extend right
+    extend left
   
     44 45 14.21 56.0 87.0 # sommet  P14, 2af
     # extend auto
@@ -636,9 +636,9 @@ survey MajAmonts2024 -title "MajAmont2024"
     45 . 1.99 84.3 -19.1
     45 . 5.82 70.6 -27.3
     45 . 3.18 25.4 62.1
-    extend right
-  # mc af, af, dpart, lame rg
-    45 46 4.31 66.5 9.4
+    extend left
+  
+    45 46 4.31 66.5 9.4 # mc af, af, dpart, lame rg
     # extend auto
     46 . 1.44 323.8 1.5
     46 . 5.99 342.2 -73.2
@@ -661,10 +661,11 @@ survey MajAmonts2024 -title "MajAmont2024"
     46 . 0.46 52.8 33.6
     46 . 2.20 83.5 17.9
     46 . 3.13 91.9 17.4
-    extend vertical
-  # ça souff, depat sur faille
-    46 47 13.98 89.0 12.9
     extend right
+  
+    46 47 13.98 89.0 12.9 # ça souff, depat sur faille
+
+    extend left
     46 48 3.63 10.1 33.1
     # extend auto
     48 . 0.82 297.4 -10.2
@@ -678,7 +679,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     48 . 1.76 29.4 29.5
     48 . 3.84 17.5 -12.5
     48 . 2.38 335.5 13.3
-    extend right
+    extend left
     48 49 4.90 23.6 17.9
     # extend auto
     49 . 3.78 186.6 -82.6
@@ -693,10 +694,11 @@ survey MajAmonts2024 -title "MajAmont2024"
     49 . 10.83 24.8 84.0
     49 . 3.08 231.1 -2.4
     49 . 1.31 193.4 15.2
-    extend left
-  # départ faille
-    49 50 6.51 126.3 4.0
     extend right
+  
+    49 50 6.51 126.3 4.0  # départ faille
+
+    extend left
     49 51 3.15 27.7 4.4
     # extend auto
     51 . 1.53 146.9 -2.6
@@ -712,7 +714,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     51 . 2.17 244.2 -46.9
     51 . 1.27 180.5 -8.3
     51 . 3.31 180.0 -50.9
-    extend right
+    extend left
     51 52 9.03 69.3 36.7
     # extend auto
     52 . 1.33 348.4 10.6
@@ -729,7 +731,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     52 . 2.54 232.9 -1.0
     52 . 6.56 249.2 82.3
     52 . 0.30 142.3 74.7
-    extend ignore
+    extend right
     52 52b 0.32 141.2 76.0
     # extend auto
     52 . 1.73 41.0 56.8
@@ -738,12 +740,12 @@ survey MajAmonts2024 -title "MajAmont2024"
     52 . 7.64 87.7 71.0
     52 . 4.38 99.5 41.9
     52 . 3.99 122.0 38.5
-    extend left
-  # départ  méandre 
-    52b 53 6.54 112.5 30.3
     extend right
-  # mc,  surf, dpart
-    52 54 6.41 28.4 -7.0
+  
+    52b 53 6.54 112.5 30.3  # départ  méandre 
+
+    extend left
+    52 54 6.41 28.4 -7.0  # mc,  surf, dpart
     # extend auto
     54 . 3.23 84.0 -77.4
     54 . 3.88 25.9 -52.1
@@ -770,10 +772,10 @@ survey MajAmonts2024 -title "MajAmont2024"
     54 . 2.95 133.4 18.6
     54 . 3.16 141.6 20.0
     
-    #extend left
+    #extend right
     #54 55 8.26 146.1 9.2  # dpart,  sur la g
 
-    extend right
+    extend left
   # base p7, arr ezu, méandre etr en rd
     54 56 10.20 356.9 -0.4
     # extend auto
@@ -816,7 +818,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     57 . 6.22 45.3 38.6
     57 . 5.39 39.0 22.0
     57 . 3.74 43.8 -17.9
-    extend right
+    extend left
   # base p7
     57 58 3.73 42.5 -17.5
     # extend auto
@@ -837,7 +839,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     58 . 5.43 166.4 45.0
     58 . 7.46 162.6 42.2
     58 . 6.19 168.9 54.3
-    extend vertical
+    extend left
   # sommet  p7
     58 59 7.27 86.5 80.7
     # extend auto
@@ -862,10 +864,10 @@ survey MajAmonts2024 -title "MajAmont2024"
     59 . 2.98 29.9 17.0
     59 . 2.76 33.8 -15.3
     59 . 3.17 62.0 37.6
-    extend left
+    extend right
   # dpart etr
     59 60 8.51 173.3 -31.4
-    extend right
+    extend left
     59 61 5.92 48.8 18.6
     # extend auto
     61 . 1.08 357.7 13.1
@@ -887,7 +889,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     61 . 2.71 230.0 -41.6
     61 . 3.14 194.0 -17.6
     61 . 6.14 215.2 -12.6
-    extend right
+    extend left
   # miroir faille, blocs, exc
     61 62 5.00 65.3 26.3
     # extend auto
@@ -902,7 +904,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     62 . 1.55 221.7 -11.6
     62 . 2.70 206.6 -18.1
     62 . 2.79 256.6 -21.5
-    extend vertical
+    extend left
   # bloc
     62 63 2.90 90.0 -34.2
     # extend auto
@@ -915,7 +917,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     63 . 1.26 1.7 37.7
     63 . 4.36 82.6 57.7
     63 . 1.92 149.2 42.2
-    extend right
+    extend left
   # dpart rg faille au dessus
     63 64 7.52 338.6 -11.5
     # extend auto
@@ -946,7 +948,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     65 . 3.03 326.5 -23.8
     65 . 6.14 6.8 42.4
     65 . 2.58 337.2 1.2
-    extend right
+    extend left
     65 66 3.93 333.1 4.6
     # extend auto
     66 . 0.76 210.5 12.0
@@ -959,7 +961,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     66 . 2.78 27.1 19.8
     66 . 1.09 343.4 17.9
     66 . 2.02 0.9 -12.9
-    extend right
+    extend left
   # petit m au sol
     66 67 4.44 350.5 1.6
     # extend auto
@@ -973,7 +975,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     67 . 4.59 128.3 58.8
     67 . 1.95 172.3 57.3
     67 . 1.38 335.1 77.1
-    extend vertical
+    extend left
   # sommet r3, pont au-dessus m
     67 68 3.37 258.6 85.1
     # extend auto
@@ -989,7 +991,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     68 . 7.13 314.0 24.4
     68 . 4.30 321.7 12.7
     68 . 2.53 313.8 -32.6
-    extend right
+    extend left
     68 PTRMADRXR3 2.03 326.5 -4.1
     # extend auto
     PTRMADRXR3 . 1.40 272.7 5.9
@@ -1008,9 +1010,11 @@ survey MajAmonts2024 -title "MajAmont2024"
     PTRMADRXR3 . 6.93 307.1 28.0
     PTRMADRXR3 . 4.18 0.5 31.3
     PTRMADRXR3 . 3.26 351.2 9.8
+    
     extend right
-  
     PTRMADRXR3 70 7.34 340.1 -6.2 # traversée ressaut, etr.imp.
+    
+    extend left
     PTRMADRXR3 71 4.39 310.3 3.5
     # extend auto
     71 . 0.90 222.2 -4.5
@@ -1026,7 +1030,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     71 . 4.91 287.5 27.9
     71 . 2.77 122.3 53.2
     71 . 1.64 162.7 25.8
-    extend right
+    extend left
     71 72 6.36 282.0 13.2
     # extend auto
     72 . 0.64 31.0 -8.2
@@ -1036,7 +1040,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     72 . 1.83 332.6 23.5
     72 . 1.65 302.9 -32.0
     72 . 1.65 52.2 -0.5
-    extend right
+    extend left
     72 73 4.26 347.8 15.7
     # extend auto
     73 . 1.72 292.1 -78.3
@@ -1057,7 +1061,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     73 . 6.70 349.2 1.4
     73 . 7.91 3.6 -29.4
     73 . 1.82 13.0 -23.6
-    extend right
+    extend left
     73 74 1.82 12.7 -22.1
     # extend auto
     74 . 3.01 310.2 -10.4
@@ -1071,9 +1075,10 @@ survey MajAmonts2024 -title "MajAmont2024"
     74 . 4.83 28.3 19.3
     74 . 5.25 31.6 68.9
     74 . 0.50 85.1 17.7
-    extend right
+    extend left
   
     74 75 6.47 355.2 -46.6  # Bas puits traversée 
+    extend left
 
     74 76 7.23 3.9 40.5
     # extend auto
@@ -1088,18 +1093,17 @@ survey MajAmonts2024 -title "MajAmont2024"
     76 . 1.72 13.1 -12.9
     76 . 1.34 348.5 6.4
     76 . 4.09 41.0 11.7
-    extend right
+    extend left
   
     76 77 4.86 340.2 19.0 # reste 1C30
 
-    extend ignore
+    extend right
     76 76b 8.44 147.5 -51.1 # départ, 10 m
     # extend auto
     77 . 8.92 147.1 -51.0
     77 . 8.46 147.0 -51.1
-    extend left
-
-  
+    
+    extend right
     54 77b 7.12 150.5 8.4 # dpart vers puits belge
     # extend auto
     77b . 1.34 134.2 -83.5
@@ -1113,7 +1117,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     77b . 2.35 66.4 40.6
     77b . 1.67 83.4 16.0
     77b . 2.21 107.5 17.2
-    extend vertical
+    extend right
   
     77b 78 3.96 97.6 12.3  # 78 = carré bleu sur la paroi
     # extend auto
@@ -1133,13 +1137,13 @@ survey MajAmonts2024 -title "MajAmont2024"
     78 . 6.03 357.6 41.2
     78 . 8.73 21.4 70.4
     78 . 8.79 350.5 75.1
-    extend right
+    extend left
   # eau, pr
     78 79 17.38 12.0 73.5
-    extend left
+    extend right
   # 2 dparts
     78 80 12.50 144.8 39.7
-    extend right
+    extend left
     78 81 8.19 4.5 29.3
     # extend auto
     81 . 1.90 242.7 -4.6
@@ -1159,7 +1163,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     81 . 4.76 327.8 50.1
     extend left
     81 82 9.51 245.3 22.7
-    extend right
+    extend left
     81 83 4.57 352.1 37.2
     # extend auto
     83 . 1.71 293.5 12.5
@@ -1171,10 +1175,11 @@ survey MajAmonts2024 -title "MajAmont2024"
     83 . 1.52 350.7 57.7
     83 . 2.20 69.8 64.6
     83 . 3.74 250.1 -63.3
-    extend right
+    extend left
   # e 3 glissante ça souff
     83 84 6.19 345.6 31.0
-    extend left
+    
+    extend right
   # becquet 
     78 85 3.18 186.3 65.6
     # extend auto
@@ -1187,10 +1192,11 @@ survey MajAmonts2024 -title "MajAmont2024"
     85 . 2.45 120.7 7.4
     85 . 4.13 146.2 20.4
     85 . 2.07 138.0 -20.9
-    extend left
-  
+    
+    extend right
     85 86 10.91 160.7 -39.2  # eau en bas du méandre
 
+    extend right
     85 87 6.07 128.7 17.9
     # extend auto
     87 . 0.69 51.1 21.6
@@ -1204,7 +1210,8 @@ survey MajAmonts2024 -title "MajAmont2024"
     87 . 6.60 153.1 32.9
     87 . 3.22 160.3 -14.7
     87 . 5.84 197.8 -62.4
-    extend left
+
+    extend right
     87 88 2.34 157.8 -23.2
     # extend auto
     88 . 1.42 250.0 9.1
@@ -1216,7 +1223,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     88 . 4.71 237.2 -66.9
     88 . 1.92 196.1 -72.7
     88 . 0.79 306.2 -11.5
-    extend left
+    extend right
     88 89 2.30 177.2 -8.0
     # extend auto
     89 . 0.80 48.1 13.0
@@ -1228,7 +1235,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     89 . 5.82 32.0 71.8
     89 . 3.64 110.0 -0.8
     89 . 4.25 125.4 0.5
-    extend left
+    extend right
   # bivouac, 4 cuillère, 3 bols,2 ptie casseroles,1 grande casserole,  2 marteau, 1 couvercle
     89 90 10.53 119.7 -2.4
     # extend auto
@@ -1241,7 +1248,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     90 . 5.08 325.5 -13.5
     90 . 4.69 346.5 -23.7
     90 . 0.97 336.5 9.0
-    extend right
+    extend left
     90 91 6.63 352.2 2.3
     # extend auto
     91 . 2.45 125.9 -48.8
@@ -1263,7 +1270,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     91 . 8.63 56.3 28.3
     91 . 5.54 39.4 35.2
     91 . 5.52 20.8 35.4
-    extend right
+    extend left
     91 92 7.06 358.8 29.7
     # extend auto
     92 . 1.64 166.4 -68.0
@@ -1276,7 +1283,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     92 . 2.06 79.9 -7.8
     92 . 2.83 83.3 22.5
     92 . 1.69 63.2 26.7
-    extend right
+    extend left
     92 93 3.34 77.7 24.4
     # extend auto
     93 . 1.08 332.1 1.2
@@ -1290,7 +1297,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     93 . 3.65 42.0 19.3
     93 . 2.41 59.2 17.9
     93 . 5.21 49.1 30.5
-    extend ignore
+    extend left
     93 94 8.18 50.8 23.9
     # extend auto
     94 . 0.95 312.2 -7.9
@@ -1300,7 +1307,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     94 . 2.52 355.7 24.1
     94 . 2.03 345.2 52.4
     94 . 1.11 330.6 10.1
-    extend right
+    extend left
   # sommet r1
     94 95 2.94 346.2 30.6
     # extend auto
@@ -1313,9 +1320,10 @@ survey MajAmonts2024 -title "MajAmont2024"
     95 . 3.18 314.4 2.0
     95 . 4.43 314.6 12.8
     95 . 3.93 303.7 -1.5
-    extend right
+    extend left
   # ?
     95 96 8.08 318.7 9.1
+    extend right
     91 97 7.97 69.5 20.8
     # extend auto
     97 . 2.23 304.5 -81.5
@@ -1341,7 +1349,7 @@ survey MajAmonts2024 -title "MajAmont2024"
     98 . 2.10 87.3 34.3
     98 . 1.61 194.8 -36.0
     98 . 2.35 175.5 -62.1
-    extend left
+    extend right
     98 99 3.78 139.6 12.7
     # extend auto
     99 . 2.98 12.9 -5.7
@@ -1375,16 +1383,17 @@ survey MajAmonts2024 -title "MajAmont2024"
   # dpart cf ?
     99 101 36.87 160.9 83.9
     # extend auto
-    101 . 23.14 144.6 55.7
+    #101 . 23.14 144.6 55.7
     extend ignore
   # eau
     99 101b 25.92 144.4 55.6
-    extend right
+    extend ignore
   # arrivée eau
     99 102 18.18 42.9 62.3
+    extend right
   # base puits belge
     99 103 9.02 71.4 0.7
-    extend vertical
+    extend right
   # sommet  pts belge
     103 104 27.04 81.6 86.2
   endcenterline
