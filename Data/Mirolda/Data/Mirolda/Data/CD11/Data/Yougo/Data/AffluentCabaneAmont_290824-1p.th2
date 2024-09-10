@@ -10,113 +10,64 @@ encoding  utf-8
 
 scrap SP-AffluentCabaneAmont_290824-1 -projection plan -station-names "" "@AffluentCabaneAmont_290824" -author 2024 "Charlotte Honiat" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 3.9370 0 0 0 1 0 m]
 
-line wall -reverse on
-  16.18 -8.55
-  14.08 -8.77 12.35 -9.81 10.63 -10.9
-  smooth off
-endline
+point 24.950000000000003 -15.7 curtain -scale xs
 
-line wall
-  20.46 -7.12
-  15.47 -5.1 10.09 -5.42 7.22 -10.53
-  smooth off
-endline
-
-line wall -reverse on
-  23.02 -10.53
-  21.21 -11.82 20.88 -10.69 20.79 -8.95
-  smooth off
-endline
-
-point 21.45 -10.70 curtain -scale xs
-
-point 46.02 9.66 water-drip
+point 65.52000000000001 3.41 water-drip
 
 point 30.060000000000002 31.23 air-draught -orientation 177.9
 
-line wall
+line wall -reverse on -subtype invisible
   42.27 35.7
-  39.17 25.4 47.88 15.69 43.06 6.24
-  smooth off
+  44.47 33.13
 endline
 
 point -2.75 -0.5 height -value [+6 m]
 
-line wall
-  47.57 13.85
-  44.47 20.45 44.16 26.1 44.47 33.13
-  smooth off
-  altitude .
-endline
+point 46.76 43.9 water-flow -orientation 201.5 -scale xs
 
-line wall -reverse on
-  47.57 13.85
-  47.74 9.76 47.46 7.66 44.77 4.44
+point 51.22 54.82 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Affluent de la Cabane amont" -text "Ressaut étroit à grimper, peu de courant d'air"
+
+line floor-meander
+  18.0 -10.5
+  21.28 -10.05 28.55 -6.06 31.75 -5.25
   smooth off
 endline
 
 line wall
-  43.06 6.24
-  40.83 3.23 38.05 0.65 35.65 -2.23
-  smooth off
-endline
-
-line wall
-  30.06 -2.8
-  27.85 -1.68 22.58 -5.01 20.85 -7.17
-  smooth off
-endline
-
-line wall
-  35.8 -2.15
-  33.98 -4.35 32.18 -4.26 30.05 -2.67
-  smooth off
-endline
-
-line wall -reverse on -outline in
-  44.77 4.44
-  41.23 0.27 36.79 -2.97 32.99 -6.86
+  20.25 -16.75
+  20.25 -16.75 21.0 -13.75 23.5 -12.5
+  26.0 -11.25 30.25 -11.5 33.25 -9.25
+  36.25 -7.0 39.75 -5.75 42.75 -1.0
+  45.75 3.75 48.75 8.0 48.75 11.0
+  48.75 14.0 46.25 22.75 45.75 23.75
+  45.25 24.75 44.47 33.13 44.47 33.13
   smooth off
 endline
 
 line wall -reverse on
-  32.66 -7.26
-  29.66 -8.96 26.18 -9.3 23.02 -10.53
-  smooth off
+  13.0 -5.75
+  13.0 -5.75 20.5 -6.5 22.0 -6.0
+  23.5 -5.5 24.0 -3.25 29.5 -3.0
+  35.0 -2.75 33.25 -1.75 35.75 0.25
+  38.25 2.25 43.25 5.5 43.5 7.5
+  43.75 9.5 42.5 16.5 42.25 19.5
+  42.0 22.5 40.75 27.25 40.75 29.25
+  40.75 31.25 40.54 33.9 42.27 35.7
 endline
-
-line wall
-  20.17 -8.48
-  18.73 -9.48 18.03 -9.16 16.5 -8.61
-  smooth off
-endline
-
-point 42.76 27.4 water-flow -orientation 164.00 -scale xs
-
-point 44.22 44.57 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Affluent de la Cabane amont" -text "Ressaut étroit à grimper, peu de courant d'air"
 
 line floor-meander
-  12.56 -23.35
-  1.85 -3.74 14.65 -9.89 22.95 -8.75
-  26.23 -8.3 29.39 -6.52 32.59 -5.71
+  31.75 -5.25
+  36.25 -5.75 42.93 2.25 45.75 8.5
   smooth off
 endline
 
 line floor-meander
-  32.62 -5.66
-  38.47 -2.07 42.97 3.1 45.79 9.35
+  45.75 8.5
+  47.09 13.47 45.43 18.98 43.75 23.5
   smooth off
 endline
 
-line floor-meander
-  45.82 9.4
-  47.16 14.37 44.67 18.76 42.99 23.28
-  smooth off
-endline
-
-point 9.55 -19.64 clay -scale xs
-
-point 9.02 -10.24 clay -scale xs
+point 16.55 -12.14 clay -scale xs
 
 # line u:splay -visibility off
 #   11.93 -22.06

@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -3235 9527 536.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} GMichel-Stations.png 0 {}
 
 
@@ -2321,6 +2321,11 @@ line wall
   smooth off
 endline
 
+line wall -reverse on -subtype invisible
+  6892.0 -572.0
+  6888.5 -602.5
+endline
+
 line wall
   6486.0 -732.0
   6486.0 -732.0 6477.5 -718.5 6490.0 -708.5
@@ -2483,6 +2488,11 @@ line wall -close on -outline in
   6509.0 -898.0 6503.0 -887.0 6510.0 -881.0
   6517.0 -875.0 6518.0 -874.0 6518.0 -874.0
   smooth off
+endline
+
+line wall -close on -reverse on
+  6892.0 -572.0
+  6892.0 -572.0
 endline
 
 line wall -close on
