@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 9340.5934 3513.8286000000003
+##XTHERION## xth_me_area_adjust -1050.4299999999998 -648.8699999999999 10150.4578 4095.3214
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1626.7199999999998 1 1.0} {866.1400000000001 PTRMADG0@Yougo.Yougo} Yougo-coupe.xvi 0 {}
 
@@ -24,10 +24,10 @@ point 955.25 1011.5 height -value [-6 m]
 
 point 910.25 1033.0 height -value [+10 m]
 
-point 787.0 982.0 height -value [+5 m]
+point 826.5 1040.0 height -value [+5 m]
 
-line rope
-  789.5 1013.25
+line rope -clip off
+  813.0 972.0
   838.75 963.75
   839.25 910.0
 endline
@@ -78,9 +78,8 @@ line wall
 endline
 
 line wall
-  758.5 968.0
-  758.5 968.0 781.5 957.0 790.25 955.5
-  799.0 954.0 825.25 939.5 826.25 930.75
+  822.0 943.5
+  830.75 942.0 825.25 939.5 826.25 930.75
   827.25 922.0 824.0 922.75 824.0 916.0
   smooth off
 endline
@@ -99,9 +98,6 @@ line wall
   886.75 973.5 893.25 964.75 887.0 965.5
   880.75 966.25 875.25 969.5 868.5 969.5
   861.75 969.5 844.5 967.75 840.0 968.5
-  835.5 969.25 826.0 997.5 823.5 1002.75
-  821.0 1008.0 802.25 1021.75 796.75 1023.25
-  smooth off
 endline
 
 line rope
@@ -123,8 +119,6 @@ endline
 point 841.3000000000002 925.9100000000001 station -name PTRJCXRCA01
 
 point 886.5 1006.0 water-flow -orientation 161.8
-
-point 755.0 1012.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Affluent de la Cabane" -text "Gros méandre remontant à continuer"
 
 point 864.75 1015.5 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Affluent de la Cabane" -text "Cheminée à escalader, arrivée d'eau"
 
