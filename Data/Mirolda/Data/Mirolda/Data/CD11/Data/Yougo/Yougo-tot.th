@@ -22,6 +22,7 @@ survey Yougo -title "Gouffre Mirolda - Réseau des Yougoslaves"
 	equate PTRJCXRCA01@AffluentCabaneAmont_290824 PTRJCXRCA01@cabane2023
 	input Data/AffluentCabaneAmont_290824-1p.th2
 	input Data/AffluentCabaneAmont_290824-1s.th2
+	join SP-AffluentCabaneAmont_290824-1 SP-Cabane-1
 	
 	input Data/Cabane2023-2.th
 	equate PTRYOLRAP01@cabane2023-2 PTRYOLRAP02@Yougo

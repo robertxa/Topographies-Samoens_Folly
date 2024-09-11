@@ -27,7 +27,8 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-source Data/cabane2024-2_aval_suite.th
+#source Data/cabane2024-2_aval_suite.th
+source Data/AffluentCabaneAmont_290824.th
 
 # Add Coordinates
 #input legendes/entrances_coordinates.th
@@ -261,8 +262,11 @@ endlayout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-export map -fmt xvi -layout xviexport -o Data/cabane2024-2_aval_suite.xvi
-export map -proj extended -layout xviexport -fmt xvi -o Data/cabane2024-2_aval_suite-coupe.xvi
+
+#export map -fmt xvi -layout xviexport -o Data/cabane2024-2_aval_suite.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/cabane2024-2_aval_suite-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/AffluentCabaneAmont_290824.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/AffluentCabaneAmont_290824-coupe.xvi
 
 # Selection des Maps à exporter
 #select MP-Yougo-plan-tot@Yougo

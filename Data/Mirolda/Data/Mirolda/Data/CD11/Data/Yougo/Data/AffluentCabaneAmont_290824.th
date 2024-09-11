@@ -2,103 +2,103 @@ encoding utf-8
 # 2024.08.29 created by TopoDroid v 6.2.85
 
 survey AffluentCabaneAmont_290824 -title "AffluentCabaneAmont 290824"
-
-  # input "AffluentCabaneAmont_290824-1p.th2"
-  # input "AffluentCabaneAmont_290824-1s.th2"
-
-  # map m1p -projection plan
-  #   AffluentCabaneAmont_290824-1p
-  # endmap
-  # map m1s -projection extended
-  #   AffluentCabaneAmont_290824-1s
-  # endmap
-
-  centerline
-    date 2024.08.29 
-      team "Charlotte Honiat"
-      team "Nicolas Faure"
-      team "Augustin Madeleine"
-
-    units length meters
-    units compass clino degrees
-    
-    data normal from to length compass backclino
-    extend left
-    PTRJCXRCA01 1 4.44 101.4 -63.1
-    # extend auto
-    PTRJCXRCA01 . 6.82 138.9 -44.8
-    PTRJCXRCA01 . 5.51 112.2 -51.6
-    PTRJCXRCA01 . 7.29 193.5 -24.6
-    PTRJCXRCA01 . 14.71 197.2 -54.2
-    PTRJCXRCA01 . 19.26 160.4 -75.7
-    PTRJCXRCA01 . 18.29 304.6 -90.0
-    PTRJCXRCA01 . 2.02 340.2 -15.3
-    PTRJCXRCA01 . 0.62 267.5 10.8
-    PTRJCXRCA01 . 3.50 347.9 7.2
-    PTRJCXRCA01 . 0.94 333.2 8.6
-    PTRJCXRCA01 . 0.84 1.5 9.9
-    PTRJCXRCA01 . 0.92 231.3 58.0
-    PTRJCXRCA01 . 3.03 343.5 50.6
-    extend left
-    2 PTRJCXRCA01 3.01 171.0 -5.9
-    # extend auto
-    2 . 3.22 45.7 81.5
-    2 . 0.60 293.4 12.9
-    2 . 0.65 241.5 16.6
-    2 . 0.61 354.4 -2.6
-    2 . 1.31 34.3 -3.6
-    2 . 14.72 179.3 -86.3
-    3 . 0.52 198.1 -17.8
-    3 . 0.87 284.8 77.8
-    3 . 1.29 128.2 8.3
-    3 . 0.88 117.8 8.9
-    3 . 0.80 245.4 2.6
-    extend left
-    3 2 2.43 249.5 10.1
-    # extend auto
-    2 . 1.23 115.1 49.2
-    extend left
-    3 4 1.97 114.1 49.0
-    # extend auto
-    4 . 0.21 11.8 1.4
-    4 . 2.92 71.5 -4.7
-    4 . 0.37 107.8 -2.1
-    4 . 2.19 32.9 0.4
-    extend left
-    4 5 2.17 248.0 76.6
-    6 4 3.30 243.9 12.2
-    # extend auto
-    4 . 0.77 313.8 3.5
-    4 . 4.02 348.5 75.0
-    4 . 4.97 77.4 -81.8
-    4 . 1.78 221.9 7.5
-    4 . 1.71 259.5 5.5
-    4 . 1.24 26.9 -7.7
-    extend right
-    6 7 3.64 45.0 -26.0
-    # extend auto
-    7 . 0.30 115.0 0.9
-    7 . 3.86 144.7 88.3
-    7 . 4.31 206.2 -80.0
-    7 . 1.38 44.7 -19.3
-    extend right
-    7 8 2.46 22.8 -40.0
-    # extend auto
-    8 . 0.37 261.9 12.2
-    8 . 1.17 227.3 -81.7
-    8 . 2.42 261.1 -81.7
-    8 . 3.89 39.0 88.2
-    extend right
-    8 9 3.38 340.3 -22.0
-    9 10 2.76 2.0 10.4
-
-    units left right up down meters
-    data dimensions station left right up down
-    PTRJCXRCA01 3.19 8.56 8.56 18.66
-    2 0.90 0.58 0.58 14.69
-    3 1.09 0.11 0.11 0.16
-    6 0.00 0.00 0.00 0.00
-    7 0.04 0.49 0.49 4.24
-  endcenterline
-
+	
+	# input "AffluentCabaneAmont_290824-1p.th2"
+	# input "AffluentCabaneAmont_290824-1s.th2"
+	
+	# map m1p -projection plan
+	#   AffluentCabaneAmont_290824-1p
+	# endmap
+	# map m1s -projection extended
+	#   AffluentCabaneAmont_290824-1s
+	# endmap
+	
+	centerline
+		date 2024.08.29
+		team "Charlotte Honiat"
+		team "Nicolas Faure"
+		team "Augustin Madeleine"
+		
+		units length meters
+		units compass clino degrees
+		
+		data normal from to length compass backclino
+		extend left
+		PTRJCXRCA01 1 4.44 101.4 -63.1
+		# extend auto
+		PTRJCXRCA01 . 6.82 138.9 -44.8
+		PTRJCXRCA01 . 5.51 112.2 -51.6
+		PTRJCXRCA01 . 7.29 193.5 -24.6
+		PTRJCXRCA01 . 14.71 197.2 -54.2
+		PTRJCXRCA01 . 19.26 160.4 -75.7
+		PTRJCXRCA01 . 18.29 304.6 -90.0
+		PTRJCXRCA01 . 2.02 340.2 -15.3
+		PTRJCXRCA01 . 0.62 267.5 10.8
+		PTRJCXRCA01 . 3.50 347.9 7.2
+		PTRJCXRCA01 . 0.94 333.2 8.6
+		PTRJCXRCA01 . 0.84 1.5 9.9
+		PTRJCXRCA01 . 0.92 231.3 58.0
+		PTRJCXRCA01 . 3.03 343.5 50.6
+		extend left
+		2 PTRJCXRCA01 3.01 171.0 -5.9
+		# extend auto
+		2 . 3.22 45.7 81.5
+		2 . 0.60 293.4 12.9
+		2 . 0.65 241.5 16.6
+		2 . 0.61 354.4 -2.6
+		2 . 1.31 34.3 -3.6
+		2 . 14.72 179.3 -86.3
+		3 . 0.52 198.1 -17.8
+		3 . 0.87 284.8 77.8
+		3 . 1.29 128.2 8.3
+		3 . 0.88 117.8 8.9
+		3 . 0.80 245.4 2.6
+		extend left
+		3 2 2.43 249.5 10.1
+		# extend auto
+		2 . 1.23 115.1 49.2
+		extend left
+		3 4 1.97 114.1 49.0
+		# extend auto
+		4 . 0.21 11.8 1.4
+		4 . 2.92 71.5 -4.7
+		4 . 0.37 107.8 -2.1
+		4 . 2.19 32.9 0.4
+		extend left
+		4 5 2.17 248.0 76.6
+		6 4 3.30 243.9 12.2
+		# extend auto
+		4 . 0.77 313.8 3.5
+		4 . 4.02 348.5 75.0
+		4 . 4.97 77.4 -81.8
+		4 . 1.78 221.9 7.5
+		4 . 1.71 259.5 5.5
+		4 . 1.24 26.9 -7.7
+		extend right
+		6 7 3.64 45.0 -26.0
+		# extend auto
+		7 . 0.30 115.0 0.9
+		7 . 3.86 144.7 88.3
+		7 . 4.31 206.2 -80.0
+		7 . 1.38 44.7 -19.3
+		extend right
+		7 8 2.46 22.8 -40.0
+		# extend auto
+		8 . 0.37 261.9 12.2
+		8 . 1.17 227.3 -81.7
+		8 . 2.42 261.1 -81.7
+		8 . 3.89 39.0 88.2
+		extend right
+		8 9 3.38 340.3 -22.0
+		9 10 2.76 2.0 10.4
+		
+		units left right up down meters
+		data dimensions station left right up down
+		PTRJCXRCA01 3.19 8.56 8.56 18.66
+		2 0.90 0.58 0.58 14.69
+		3 1.09 0.11 0.11 0.16
+		6 0.00 0.00 0.00 0.00
+		7 0.04 0.49 0.49 4.24
+	endcenterline
+	
 endsurvey

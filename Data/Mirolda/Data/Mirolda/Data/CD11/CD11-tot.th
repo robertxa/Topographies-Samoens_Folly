@@ -10,42 +10,43 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Filaire vers le fond
 	input Data/Entree/CD11-tot.th
 	input Data/Bivouac270/Bivouac270-tot.th
-		equate PTRMADG0@CD11.CD11 PTRMADG0@madg0.Bivouac270
+	equate PTRMADG0@CD11.CD11 PTRMADG0@madg0.Bivouac270
 	input Data/Confluence/Confluence-tot.th
-		equate 0@20220913MiroldaXR1.Confluence 54@20220912miroldaXR1.Bivouac270
+	equate 0@20220913MiroldaXR1.Confluence 54@20220912miroldaXR1.Bivouac270
 	input Data/-500/500-tot.th
-		equate PTRXR1@20220913MiroldaXR1.Confluence PTRXR0@coulee_calcite.500
+	equate PTRXR1@20220913MiroldaXR1.Confluence PTRXR0@coulee_calcite.500
 	
 	# Réseau des Yougoslaves
 	input Data/Yougo/Yougo-tot.th
-		equate PTRMADG0@Yougo.Yougo PTRMADG0@madg0.Bivouac270
+	equate PTRMADG0@Yougo.Yougo PTRMADG0@madg0.Bivouac270
 	input Data/Yougo-Aval/Yougo-Aval-tot.th
-		equate PTRYOLRAP04@Yougo.Yougo PTRYOLRAP04@Yougo-Aval.Yougo-Aval
-		join SP-Yougo-Aval-2@Yougo-Aval SP-Yougo-2@Yougo
-		join SP-Cabane-2024-2-2@Yougo SP-Yougo-Aval-01@Yougo-Aval
-		join SC-Yougo-Aval-01@Yougo-Aval SC-Yougo-1@Yougo
-		join SC-Yougo-Aval-01@Yougo-Aval SC-Cabane2-2@Yougo
-		
+	equate PTRYOLRAP04@Yougo.Yougo PTRYOLRAP04@Yougo-Aval.Yougo-Aval
+	join SP-Yougo-Aval-2@Yougo-Aval SP-Yougo-2@Yougo
+	join SP-Cabane-2024-2-2@Yougo SP-Yougo-Aval-01@Yougo-Aval
+	join SC-Yougo-Aval-01@Yougo-Aval SC-Yougo-1@Yougo
+	join SC-Yougo-Aval-01@Yougo-Aval SC-Cabane2-2@Yougo
+	
 	
 	equate PTRYOEPAP02@cabane2024-2.Yougo PTRYOEPAP02@Yougo-Aval.Yougo-Aval
-		join SP-Conf-1@Confluence SP-ArdecheX-1@Ardeche
+	join SP-Conf-1@Confluence SP-ArdecheX-1@Ardeche
 	
 	# Galerie Hasselblad
 	input Data/Hasselblad/Hasselblad-tot.th
-		equate PTRYOEPAP05@hasselblad2023-1.Hasselblad PTRYOEPAP05@Yougo-Aval.Yougo-Aval
-		join SP-hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
-		join SC-Hasselblad-1@Hasselblad SC-Yougo-Aval-01@Yougo-Aval
+	equate PTRYOEPAP05@hasselblad2023-1.Hasselblad PTRYOEPAP05@Yougo-Aval.Yougo-Aval
+	join SP-hasselblad-1@Hasselblad SP-Yougo-Aval-01@Yougo-Aval
+	join SC-Hasselblad-1@Hasselblad SC-Yougo-Aval-01@Yougo-Aval
 	
 	# Galerie de l'Ardèche Suisse, aval Cabane ?
 	input Data/ArdecheSuisse/ArdecheSuisse-tot.th
-	  #equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.ArdecheSuisse
-	  equate PTRYOEPAP05@Ardeche_2_cabane.ArdecheSuisse	PTRYOEPAP05@Yougo-Aval.Yougo-Aval
-	  join SP-hasselblad-1@Hasselblad SP-Ardeche_2_cabane-1@ArdecheSuisse
-	  join SP-Yougo-Aval-01@Yougo-Aval SP-Ardeche_2_cabane-1@ArdecheSuisse
-	  join SP-Yougo-Aval-01@Yougo-Aval SP-hasselblad-1@Hasselblad
-	  join SC-Hasselblad-1@Hasselblad SC-Ardeche_2_cabane-1@ArdecheSuisse
-	  join SC-Yougo-Aval-01@Yougo-Aval SC-Ardeche_2_cabane-1@ArdecheSuisse
-	  join SP-Yougo-Aval-01@Yougo-Aval SP-Cabane-2024-2-2@Yougo
+	#equate PTRYOEPAP05@Yougo-Aval.Yougo-Aval 615@VieuxTRO.ArdecheSuisse
+	equate PTRYOEPAP05@Ardeche_2_cabane.ArdecheSuisse	PTRYOEPAP05@Yougo-Aval.Yougo-Aval
+	join SP-hasselblad-1@Hasselblad SP-Ardeche_2_cabane-1@ArdecheSuisse
+	join SP-Yougo-Aval-01@Yougo-Aval SP-Ardeche_2_cabane-1@ArdecheSuisse
+	join SP-Yougo-Aval-01@Yougo-Aval SP-hasselblad-1@Hasselblad
+	join SC-Hasselblad-1@Hasselblad SC-Ardeche_2_cabane-1@ArdecheSuisse
+	join SC-Yougo-Aval-01@Yougo-Aval SC-Ardeche_2_cabane-1@ArdecheSuisse
+	join SP-Yougo-Aval-01@Yougo-Aval SP-Cabane-2024-2-2@Yougo
+	
 	
 	# Anciennes Données topos des Cavernicoles mises au format Therion
 	#	Il faudra mettre à jour ce fichier topo,
@@ -56,28 +57,28 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	input Data/Amont-Majestueuse/Amont-Majestueuse-tot.th
 	# jonction avec la base du méandre des Trois
 	equate PTRMAXR04@majamonts2023.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
-		join SP-Maj-Amonts-5@Amont-Majestueuse SP-Bivouac-3@Bivouac270
-		# jonction avec les Yougoslaves
-		equate PTRCHAPLR09@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.Yougo PTRCHAPLR09@majamonts2023.Amont-Majestueuse
-		join SP-Maj-Amonts-2@Amont-Majestueuse MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p1@Yougo
-		join SC-Maj-Amonts-1@Amont-Majestueuse SC-YougoJ-1@Yougo
+	join SP-Maj-Amonts-5@Amont-Majestueuse SP-Bivouac-3@Bivouac270
+	# jonction avec les Yougoslaves
+	equate PTRCHAPLR09@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23.Yougo PTRCHAPLR09@majamonts2023.Amont-Majestueuse
+	join SP-Maj-Amonts-2@Amont-Majestueuse MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p1@Yougo
+	join SC-Maj-Amonts-1@Amont-Majestueuse SC-YougoJ-1@Yougo
 	# Galerie de l'Ardèche
 	input Data/Ardeche/Ardeche-tot.th
-		equate PTRJMLDXR04@Ardeche.Ardeche	PTRJMLDXR04@majamonts2023.Amont-Majestueuse
-		equate PTRIXR1@ArdecheX.Ardeche PTRIXR1@20220913MiroldaXR1.Confluence
-		join SP-Ardeche-1@Ardeche SP-Maj-Amonts-1@Amont-Majestueuse
-		join SC-Ardeche-1@Ardeche SC-Maj-Amonts-1@Amont-Majestueuse
+	equate PTRJMLDXR04@Ardeche.Ardeche	PTRJMLDXR04@majamonts2023.Amont-Majestueuse
+	equate PTRIXR1@ArdecheX.Ardeche PTRIXR1@20220913MiroldaXR1.Confluence
+	join SP-Ardeche-1@Ardeche SP-Maj-Amonts-1@Amont-Majestueuse
+	join SC-Ardeche-1@Ardeche SC-Maj-Amonts-1@Amont-Majestueuse
 	
 	input Data/Puits-Belge/Puits-Belge-tot.th
-		#equate 941@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
-		equate 1000@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
-		join SP-majamonts2024-5@Amont-Majestueuse SP-Belge-1@Puits-Belge
-		#equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
-
-		# Vieux TRO
-		#equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
-
-
+	#equate 941@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
+	equate 1000@Puits-Belge.Puits-Belge 103@MajAmonts2024.Amont-Majestueuse
+	join SP-majamonts2024-5@Amont-Majestueuse SP-Belge-1@Puits-Belge
+	#equate 941@Puits-Belge.Puits-Belge 941@Amont-Majestueuse.Amont-Majestueuse
+	
+	# Vieux TRO
+	#equate 773@Amont-Majestueuse.Amont-Majestueuse PTRMAXR04@20220912miroldaXR1.Bivouac270
+	
+	
 	### Données dupliquées, pas la peine de les garder dans la synthèse
 	# Amont de la salle de la Confluence:
 	#input Data/Amont-Confluence/AmontConfluence-tot.th
@@ -85,41 +86,41 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	
 	# Départ Bivouac -600
 	input Data/Bivouac-600/Bivouac-600-tot.th
-		equate 354@Bivouac-600.Bivouac-600 PTRRDBF1@riviere_tonitruante.500
+	equate 354@Bivouac-600.Bivouac-600 PTRRDBF1@riviere_tonitruante.500
 	
 	
 	# Aval vers -800
 	input Data/-800/-800-tot.th
-		equate PTRMFBF08@mirolda_-800.800 PTRMFBF0@riviere_tonitruante.500
-		## Jonction au niveau de -640
-		join SP-riviere_tonitruante-1@500 SP-800-1@800
-		join SC-800-1@800 SC-Tonitruante-1@500
+	equate PTRMFBF08@mirolda_-800.800 PTRMFBF0@riviere_tonitruante.500
+	## Jonction au niveau de -640
+	join SP-riviere_tonitruante-1@500 SP-800-1@800
+	join SC-800-1@800 SC-Tonitruante-1@500
 	# Aval de la rivière Dragounet
 	input Data/Aval-Dragounet/Aval-Dragounet-tot.th
-		equate PTRRDBF4@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
-		join SP-Aval-Dragounet-1@Aval-Dragounet SP-riviere_tonitruante-1@500
-		join SC-Aval-Dragounet-2@Aval-Dragounet SC-Tonitruante-1@500
+	equate PTRRDBF4@Aval-Dragounet.Aval-Dragounet PTRRDBF4@riviere_tonitruante.500
+	join SP-Aval-Dragounet-1@Aval-Dragounet SP-riviere_tonitruante-1@500
+	join SC-Aval-Dragounet-2@Aval-Dragounet SC-Tonitruante-1@500
 	
 	# Aval vers -900 m
 	input Data/-900/900-tot.th
-		equate PTRBUCHLD4@mirolda_-800.800 PTRBUCHLD4@230906_BMPRGF_CD11.900
-		## Jonction au niveau de -800
-		join SP-BMPRGF-1@900 SP-800-1@800
-		join SC-900-1@900 SC-800-1@800
+	equate PTRBUCHLD4@mirolda_-800.800 PTRBUCHLD4@230906_BMPRGF_CD11.900
+	## Jonction au niveau de -800
+	join SP-BMPRGF-1@900 SP-800-1@800
+	join SC-900-1@900 SC-800-1@800
 	
 	# Galerie Daniel
 	input Data/GalerieDaniel/GalerieDaniel-tot.th
-		equate 724@AvalTRO.AvalTRO 724@GalerieDaniel.GalerieDaniel
+	equate 724@AvalTRO.AvalTRO 724@GalerieDaniel.GalerieDaniel
 	
 	# Aval du CD11
 	input Data/AvalTRO/AvalTRO-tot.th
-		#equate 423@AvalTRO.AvalTRO PTRMFBF0@riviere_tonitruante.500
-		#equate 472@AvalTRO.AvalTRO 56@mirolda_-800.800
-		equate 708@AvalTRO.AvalTRO mkbu.134@mirolda_mkbu.900
+	#equate 423@AvalTRO.AvalTRO PTRMFBF0@riviere_tonitruante.500
+	#equate 472@AvalTRO.AvalTRO 56@mirolda_-800.800
+	equate 708@AvalTRO.AvalTRO mkbu.134@mirolda_mkbu.900
 	
 	# Siphon Terminal
 	input Data/SiphonTerminal/SiphonTerminal-tot.th
-		equate 1538@AvalTRO.AvalTRO 1538@SiphonTerminal.SiphonTerminal
+	equate 1538@AvalTRO.AvalTRO 1538@SiphonTerminal.SiphonTerminal
 	
 	
 	# Jonctions des dessins en plan
