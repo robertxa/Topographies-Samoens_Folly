@@ -27,6 +27,8 @@ survey Amont-Majestueuse -title "Gouffre Mirolda - Amont Majestueuse"
 	# Import du dessin en coupe
 	input Data/majamonts2023-coupe.th2
 	input Data/MajAmont2024-coupe.th2
+		# Jonction de la Majestueuse au niveau de La Jonction
+		join SC-MajAmonts2024-1 SC-Maj-Amonts-1
 
 	# Import des maps
 	input Amont-Majestueuse-maps.th

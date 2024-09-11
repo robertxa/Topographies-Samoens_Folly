@@ -198,6 +198,7 @@ line wall
   2380.25 890.5 2384.25 888.5 2393.75 887.0
   2403.25 885.5 2406.0 885.75 2413.0 883.75
   2420.0 881.75 2425.25 879.5 2428.0 878.75
+  smooth off
 endline
 
 point 2289.5 883.5 stalactites-stalagmites
@@ -287,8 +288,6 @@ point 2199.0 1031.0 station-name -scale xs -align right
 point 1669.5 1039.5 station-name -scale xs
 
 point 1555.5 1172.0 traverse
-
-point 1465.0 1195.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Majestueuse amont" -attr CA "Courant d'air soufflant fort en été" -text "Amonts de la Majestueuse, en direction du VF3 à topographier, courant d'air soufflant important en été"
 
 point 2353.0 1054.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Majestueuse amont" -text "Arrivée d'eau à voir ?"
 
