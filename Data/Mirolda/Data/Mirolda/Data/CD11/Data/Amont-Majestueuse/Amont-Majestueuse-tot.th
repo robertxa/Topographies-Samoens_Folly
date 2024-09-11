@@ -12,6 +12,8 @@ survey Amont-Majestueuse -title "Gouffre Mirolda - Amont Majestueuse"
 	# Amont de la majestueuse de la jonction vers le Puits Belge
 	input Data/MajAmont2024.th
 		equate PTRJMLDXR01@MajAmonts2024 PTRJMLDXR01@majamonts2023
+	input Data/amont_puits_belge.th
+		equate 0@amont-puits-belge 77@MajAmonts2024
 
 	## Old data from D. Colliard
 	#input Data/Amont-Majestueuse.th
@@ -23,12 +25,16 @@ survey Amont-Majestueuse -title "Gouffre Mirolda - Amont Majestueuse"
 	input Data/majamonts2023.th2
 	input Data/MajAmont2024.th2
 		join SP-majamonts2024-1 SP-Maj-Amonts-1
+	input Data/amont_puits_belge.th2
+		join SP-MajAmont2024Dav-1 SP-majamonts2024-6
 
 	# Import du dessin en coupe
 	input Data/majamonts2023-coupe.th2
 	input Data/MajAmont2024-coupe.th2
 		# Jonction de la Majestueuse au niveau de La Jonction
 		join SC-MajAmonts2024-1 SC-Maj-Amonts-1
+	input Data/amont_puits_belge-coupe.th2
+		join SC-MajAmont2024Dav-1 SC-MajAmonts2024-2
 
 	# Import des maps
 	input Amont-Majestueuse-maps.th

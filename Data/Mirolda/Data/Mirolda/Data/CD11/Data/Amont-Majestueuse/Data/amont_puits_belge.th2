@@ -1,0 +1,249 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -70.0 56.0 910.0 1073.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {94.85500000000002 1 1.0} {325.697 0} th_p.xvi 0 {}
+
+
+
+scrap SP-MajAmont2024Dav-1 -projection plan -station-names "" "@amont-puits-belge" -author 2024 "David Parrot" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 915.4 -128.0 0.0 0.0 26.50236 0.0 m]
+
+point 170.0 349.0 station -name 3
+
+point 182.825 346.26700000000005 station -name 2
+
+point 235.905 373.317 station -name 3
+
+line wall
+  393.0 368.0
+  298.0 380.0 317.34 451.44 274.5 436.0
+  237.45 422.64 208.5 393.0 175.5 371.5
+  smooth off
+endline
+
+line pit -reverse on
+  175.5 371.5
+  175.5 371.5 205.5 361.5 200.0 321.5
+  smooth off
+endline
+
+line wall -subtype pit
+  175.5 371.5
+  147.5 359.0 80.83 393.91 71.0 371.5
+  64.35 356.35 59.7 334.45 61.5 318.0
+  63.45 300.2 75.87 292.2 84.5 276.5
+endline
+
+line wall
+  134.0 239.0
+  128.0 263.0
+endline
+
+line wall
+  84.5 276.5
+  95.0 248.0
+endline
+
+line wall -subtype pit
+  128.0 263.0
+  144.09 264.54 135.26 268.97 149.0 277.5
+  156.92 282.41 151.0 298.5 157.0 307.5
+  smooth off
+  171.17 314.0 192.0 309.5 200.0 321.5
+  smooth off
+endline
+
+line wall -outline out
+endline
+
+line wall
+  254.0 357.0
+  254.83 350.83 259.19 344.11 256.5 338.5
+  246.8 318.28 229.8 302.36 218.5 283.0
+  211.5 271.0 215.0 272.0 208.5 253.5
+  smooth off
+endline
+
+area water
+  l81-748-606
+endarea
+
+line border -id l81-748-606 -close on -visibility off
+  704.0 619.0
+  609.94 610.86 702.32 481.03 753.5 553.0
+  784.7 596.87 728.44 621.11 704.0 619.0
+endline
+
+line wall
+endline
+
+point 710.5 371.0 water-flow -orientation 180.2
+
+point 657.0 728.5 water-flow -orientation 157.8
+
+point 427.5 250.0 water-flow -orientation 280.6
+
+point 674.0 870.0 station-name -align right -scale xs
+
+point 543.5 874.0 height -value [+12]
+
+point 128.5 443.0 height -value [+7]
+
+point 280.0 285.5 water-flow -orientation 245.1
+
+point 274.0 496.5 air-draught -orientation 233.8 -subtype summer
+
+point 650.0 455.5 air-draught -orientation 183.0 -subtype summer
+
+line pit -reverse on
+  620.0 791.5
+  620.0 791.5 620.0 820.0 662.0 802.5
+  smooth off
+endline
+
+point 594.0 552.0 height -value [+20? m]
+
+point 777.0 581.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Amonts de la Majestuesue" -text "PR 20"
+
+point 612.0 940.0 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Amonts de la Majestuesue" -text "Il faut remotner la corde en place"
+
+point 206.5 235.0 continuation
+
+line wall
+  223.0 245.5
+  236.0 252.0 246.83 250.67 254.5 254.0
+  smooth off
+endline
+
+line pit -reverse on
+  218.5 283.0
+  218.5 283.0 257.5 297.0 254.5 254.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  254.5 254.0
+  298.64 282.92 323.68 271.43 368.5 253.5
+  smooth off
+endline
+
+line wall
+  200.0 321.5
+  209.39 358.47 226.0 353.5 254.0 357.0
+  smooth off
+endline
+
+point 279.935 374.237 station -name 4
+
+point 94.85500000000002 325.697 station -name 0
+
+point 218.095 257.91700000000003 station -name 5
+
+point 510.675 327.297 station -name 6
+
+point 615.255 293.91700000000003 station -name 7
+
+point 692.855 294.59700000000004 station -name 8
+
+point 709.7149999999999 327.53700000000003 station -name 9
+
+point 709.515 439.207 station -name 10
+
+point 716.765 577.547 station -name 11
+
+point 704.685 591.017 station -name 12
+
+point 617.315 880.407 station -name PTRLVBFB48
+
+line wall
+  619.5 797.5
+  630.5 792.5 639.89 764.59 670.5 607.0
+  smooth off
+endline
+
+line wall -subtype pit
+  670.5 607.0
+  676.0 572.0 680.0 586.5 704.0 569.5
+  707.98 566.68 705.0 559.83 705.5 555.0
+  smooth off
+endline
+
+line wall
+  705.5 555.0
+  689.17 478.5 702.02 399.85 690.0 323.0
+  686.91 303.22 652.74 318.87 626.0 322.0
+  489.5 338.0 554.5 322.5 393.0 368.0
+  smooth off
+endline
+
+line wall -reverse on -subtype pit
+  619.5 797.5
+  573.81 816.62 582.18 866.3 592.5 905.5
+  smooth off
+  altitude .
+endline
+
+line wall -reverse on -subtype pit
+  636.5 911.0
+  661.36 877.54 653.99 842.35 653.0 802.0
+  smooth off
+endline
+
+line wall -reverse on
+  653.0 802.0
+  656.0 763.0 690.5 675.0 704.0 619.0
+  smooth off
+endline
+
+line wall -reverse on -subtype pit
+  704.0 619.0
+  704.83 614.0 704.92 611.03 708.0 607.0
+  710.16 604.17 714.53 604.57 717.0 602.0
+  736.55 581.65 731.21 579.66 727.0 556.5
+  smooth off
+endline
+
+line wall -reverse on
+  727.0 556.5
+  726.5 533.67 726.0 510.83 725.5 488.0
+  smooth off
+  722.33 471.17 716.88 454.61 716.0 437.5
+  714.87 415.5 718.68 393.52 719.5 371.5
+  719.85 362.01 718.29 352.42 719.5 343.0
+  720.16 337.87 726.03 333.57 725.0 328.5
+  altitude .
+  721.9 313.22 697.98 294.52 690.5 283.0
+  smooth off
+endline
+
+line wall -close on -reverse on -clip off -outline out
+  311.5 322.5
+  307.54 316.54 314.84 306.11 321.5 303.5
+  352.93 291.19 386.6 284.91 420.0 280.0
+  436.83 277.52 454.48 277.44 471.0 281.5
+  476.44 282.84 486.1 292.69 481.0 295.0
+  474.87 297.77 320.61 336.19 311.5 322.5
+endline
+
+line wall -close on -reverse on -outline out
+  515.0 280.0
+  511.04 273.05 520.44 263.28 527.5 259.5
+  534.91 255.53 610.72 236.32 621.0 254.0
+  624.4 259.84 621.81 271.08 615.5 273.5
+  596.42 280.82 572.39 282.68 552.0 284.0
+  538.86 284.85 521.52 291.44 515.0 280.0
+endline
+
+line wall -reverse on -subtype presumed
+  690.5 283.0
+  680.71 267.93 665.25 257.41 656.0 242.0
+  643.23 220.71 645.36 209.19 622.5 199.5
+  598.41 189.29 576.19 184.4 551.0 191.5
+  441.66 222.32 437.5 232.0 368.5 253.5
+  smooth off
+endline
+
+point 590.785 887.4670000000001 station -name 14
+
+endscrap
+
+
