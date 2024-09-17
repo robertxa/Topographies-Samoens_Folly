@@ -31,6 +31,7 @@ line wall -subtype pit
   147.5 359.0 80.83 393.91 71.0 371.5
   64.35 356.35 59.7 334.45 61.5 318.0
   63.45 300.2 75.87 292.2 84.5 276.5
+  smooth off
 endline
 
 line wall
@@ -215,7 +216,7 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -close on -reverse on -clip off -outline out
+line wall -close on -reverse on -outline in
   311.5 322.5
   307.54 316.54 314.84 306.11 321.5 303.5
   352.93 291.19 386.6 284.91 420.0 280.0
@@ -224,7 +225,7 @@ line wall -close on -reverse on -clip off -outline out
   474.87 297.77 320.61 336.19 311.5 322.5
 endline
 
-line wall -close on -reverse on -outline out
+line wall -close on -reverse on -outline in
   515.0 280.0
   511.04 273.05 520.44 263.28 527.5 259.5
   534.91 255.53 610.72 236.32 621.0 254.0

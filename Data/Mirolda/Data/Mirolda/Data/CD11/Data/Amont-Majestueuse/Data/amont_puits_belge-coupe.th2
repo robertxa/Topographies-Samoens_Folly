@@ -119,7 +119,7 @@ point 562.5 306.5 water-flow -orientation 180.8
 
 point 748.0 466.0 air-draught -orientation 261.2 -subtype summer
 
-line wall -close on -outline out
+line wall -close on -outline in
   803.0 394.5
   799.48 393.93 803.95 386.05 807.5 386.5
   858.7 393.02 907.82 405.0 957.5 419.0
@@ -127,7 +127,7 @@ line wall -close on -outline out
   902.66 416.52 914.0 412.5 803.0 394.5
 endline
 
-line wall -close on -reverse on -outline out
+line wall -close on -reverse on -outline in
   589.5 358.5
   584.38 358.21 585.83 348.18 591.0 348.0
   604.79 347.52 732.5 349.5 747.5 379.0
