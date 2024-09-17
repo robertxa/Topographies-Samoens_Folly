@@ -247,11 +247,11 @@ layout my_layout-coupe
   
   # Dessin ou pas du cheminement topo
   #symbol-hide point station        
-  debug scrap-names
-    color map-fg scraps
-    color-legend off
-	#color map-fg altitude
-	#color-legend smooth
+  #debug scrap-names
+  #  color map-fg scraps
+  #  color-legend off
+	color map-fg altitude
+	color-legend smooth
 	
   symbol-hide point rope
   #debug station-names

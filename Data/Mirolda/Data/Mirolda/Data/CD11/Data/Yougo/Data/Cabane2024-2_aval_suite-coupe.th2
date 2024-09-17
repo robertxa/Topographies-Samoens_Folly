@@ -51,6 +51,16 @@ endline
 
 point 184.5 178.0 station-name -scale xs
 
+line map-connection
+  347.0 209.0
+  131.0 198.5
+endline
+
+line map-connection
+  355.5 246.5
+  142.0 238.0
+endline
+
 line wall -subtype presumed
   73.5 251.0
   81.0 247.0 96.5 234.5 104.0 228.0
@@ -171,11 +181,6 @@ point 408.486 223.85700000000003 station -name 16
 #line wall
 	#endline
 
-
-line map-connection
-  390.5 220.5
-  345.0 221.5
-endline
 
 line wall -reverse on
   389.0 240.5
