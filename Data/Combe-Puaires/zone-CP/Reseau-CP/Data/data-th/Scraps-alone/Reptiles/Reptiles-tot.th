@@ -1,0 +1,20 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Reptiles -title "Réseau des Reptiles"
+	input Data/reptiles.th
+
+	input Data/BoucleReptiles.th
+		equate 12@BoucleReptiles 6.21@reptiles
+
+	## pour le plan
+	#input Data/CP19b.th2
+	## Pour la coupe et le plan
+	input Data/reptiles-coupe.th2
+
+	input Reptiles-maps.th
+
+endsurvey

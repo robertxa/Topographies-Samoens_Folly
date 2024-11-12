@@ -147,25 +147,26 @@ endlayout
 
  
   
-export map -fmt xvi -layout xviexport -o Data/CP7-map2023a.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/CP7-coupe2023a.xvi
+#export map -fmt xvi -layout xviexport -o Data/CP7-map2023a.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/CP7-coupe2023a.xvi
 
 # Select maps
 	select MP-CP7@CP7
 	select MC-CP7@CP7
 	  
  export map -o Outputs/CP7-plan.pdf -layout my_layout
-export map -projection extended -layout my_layout-coupe -o Outputs/CP7-coupe.pdf
+ export map -projection extended -layout my_layout-coupe -o Outputs/CP7-coupe.pdf
+
 #export map -o Outputs/CP7-plan-Continuations.pdf -layout my_layout-Continuations
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/CP7-coupe-Continuations.pdf
 
 export model -o Outputs/CP7.lox
   
 # Export ESRI files
-export map -proj plan -fmt esri -o Outputs/CP7 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/CP7 -layout my_layout
   
 # Export kml files
-export map -proj plan -fmt kml -o Outputs/CP7.kml -layout my_layout
+#export map -proj plan -fmt kml -o Outputs/CP7.kml -layout my_layout
 
 # Export database sql
-export database -fmt sql -o Outputs/databaseCP7-2022.sql
+#export database -fmt sql -o Outputs/databaseCP7-2022.sql

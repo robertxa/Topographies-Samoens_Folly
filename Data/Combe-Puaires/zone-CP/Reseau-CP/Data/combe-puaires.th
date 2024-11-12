@@ -9,22 +9,32 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 # Pour importer les différentes données de différents fichiers topos : 
 	input data-th/ReseauCP
 	
-	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12
-		equate 1.0@aval-CP12 1.0@ReseauCP
-	input data-th/Scraps-alone/CP12/Data/CP12
-		equate 1.19@aval-CP12 1.19@CP12
+	#input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12.th
+	#	equate 1.0@aval-CP12 1.0@ReseauCP
+	input data-th/Scraps-alone/Aval-CP12/Aval-CP12-tot.th
+		equate 1.0@aval-CP12.Aval-CP12 1.0@ReseauCP
 	
-	input data-th/Scraps-alone/CP14/Data/CP14
+	input data-th/Scraps-alone/CP12/Data/CP12.th
+		equate 1.19@aval-CP12.Aval-CP12 1.19@CP12
+	
+	input data-th/Scraps-alone/CP14/Data/CP14.th
 		equate 9.17@ReseauCP 9.17@CP14
 		equate E.9@2xxpats E.9@CP14
 	
-	input data-th/Scraps-alone/CP16/Data/CP16
+	input data-th/Scraps-alone/CP16/Data/CP16.th
 		equate 20.13@billy 20.13@CP16
 	
-	input data-th/Scraps-alone/CP19b/Data/CP19b
-		equate 6.23@reptiles 6.23@CP19b
-	input data-th/Scraps-alone/Reptiles/Data/reptiles
-		equate 1.28@aval-CP12 1.28@reptiles	
+	#input data-th/Scraps-alone/CP19b/Data/CP19b.th
+	#	equate 6.23@reptiles 6.23@CP19b
+	input data-th/Scraps-alone/CP19b/CP19b-tot.th
+		equate 6.21@reptiles.Reptiles 12@jct-CP19b.CP19b
+
+	#input data-th/Scraps-alone/Reptiles/Data/reptiles.th
+	#	equate 1.28@aval-CP12.Aval-CP12 1.28@reptiles
+	input data-th/Scraps-alone/Reptiles/Reptiles-tot.th
+		equate 1.28@aval-CP12.Aval-CP12 1.28@reptiles.Reptiles
+
+
 	
 	input data-th/Scraps-alone/Billy/Data/billy
 		equate 11.22@ReseauCP 11.22@billy
@@ -70,11 +80,13 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		equate 16.26@ReseauCP 16.26@BivouacCP
 	
 	input data-th/Scraps-alone/CP07/CP7-tot.th
-		equate 45@CP7-2023.CP7 7.3@aval-CP12	# Sommet E7 du puits qu'on traverse
+		equate 45@CP7-2023.CP7 7.3@aval-CP12.Aval-CP12	# Sommet E7 du puits qu'on traverse
 		equate 49@CP7-2023.CP7 A.53@CP12	# Début MC du P18, à la base du P60 du CP12
 		join SP-gP18-1@CP7 SP-CP12-2
-		join SC-CP7-2023-1@CP7 SC-P18-1	# Sommet P60 de la galerie du P18
+		join SC-CP7-2023-1@CP7 SC-P18-1@Aval-CP12	# Sommet P60 de la galerie du P18
 		join SC-gP18-2@CP7 SC-CP12-1	# Sommet du P18
+		
+		equate 16@PuitsGP18.CP7 16@Meandrecairn.Aval-CP12
 
 	
    
@@ -126,7 +138,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
  	
  	# le Sirocco et les 4 vents
  	input data-th/Scraps-alone/Huit/huit-coupe.th2
- 		join SC-aval-CP12-2 SC-huit-1
+ 		join SC-aval-CP12-2@Aval-CP12 SC-huit-1
  	
  	#join sirocco-SC4 rasoir-SC?
  	input data-th/Scraps-alone/2xxpats/Data/2xxpats-coupe.th2
@@ -169,12 +181,12 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 
 	# CP12, CP19b et Reptiles
 	input data-th/Scraps-alone/CP12/Data/CP12-coupe.th2
-	input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12-coupe.th2
-		join SC-CP12-1 SC-aval-CP12-1 -count 2
+	#input data-th/Scraps-alone/Aval-CP12/Data/aval-CP12-coupe.th2
+		join SC-CP12-1 SC-aval-CP12-1@Aval-CP12 -count 2
 		#join CP12-SC1 P18-SC1 ???
-	input data-th/Scraps-alone/Reptiles/Data/reptiles-coupe.th2
-		join SC-Reptiles-1 SC-aval-CP12-1
-	input data-th/Scraps-alone/CP19b/Data/CP19b-coupe.th2
+	#input data-th/Scraps-alone/Reptiles/Data/reptiles-coupe.th2
+		join SC-Reptiles-1@Reptiles SC-aval-CP12-1@Aval-CP12
+	#input data-th/Scraps-alone/CP19b/Data/CP19b-coupe.th2
 		# Pas de join ?
 
 	# Add maps definition

@@ -10,10 +10,14 @@ survey CP7 -title "CP7"
 		equate 4@CP7 11@CP7-2021
 	input Data/CP7-2023.th
 		equate 0@CP7-2021 20@CP7-2023	# Jonction à la base du puits de la Turbine
+	
+	input Data/PuitsGP18.th
+		equate 87@PuitsGP18 24@CP7-2023
+		equate 81@PuitsGP18 31@CP7-2023
 
-	# pour le plan
+	## pour le plan
 	input Data/CP7.th2
-	# Pour la coupe et le plan
+	## Pour la coupe et le plan
 	input Data/CP7-coupe.th2
 
 	input CP7-maps.th

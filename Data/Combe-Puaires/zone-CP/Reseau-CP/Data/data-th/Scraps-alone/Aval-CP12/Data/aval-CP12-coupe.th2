@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap SC-aval-CP12-1 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
+scrap SC-aval-CP12-1 -projection extended -station-names "" "@aval-CP12" -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
 
 line rope
   345.0 895.0
@@ -35,11 +35,11 @@ line wall
   smooth off
 endline
 
-point 1536.52 437.407 station -name 7.13@aval-CP12
+point 1536.52 437.407 station -name 7.13
 
-point 1428.8899999999999 445.74699999999996 station -name 2.1@aval-CP12
+point 1428.8899999999999 445.74699999999996 station -name 2.1
 
-point 1401.12 483.937 station -name 2.2@aval-CP12
+point 1401.12 483.937 station -name 2.2
 
 line rope
   1404.0 529.0
@@ -396,55 +396,55 @@ line wall
   smooth off
 endline
 
-point 2079.03 557.007 station -name 1.17@aval-CP12
+point 2079.03 557.007 station -name 1.17
 
-point 2018.67 572.047 station -name 1.18@aval-CP12
+point 2018.67 572.047 station -name 1.18
 
-point 1899.29 526.217 station -name 1.19@aval-CP12
+point 1899.29 526.217 station -name 1.19
 
-point 1812.65 512.517 station -name 1.20@aval-CP12
+point 1812.65 512.517 station -name 1.20
 
-point 1725.03 489.057 station -name 1.21@aval-CP12
+point 1725.03 489.057 station -name 1.21
 
-point 1630.65 463.777 station -name 1.22@aval-CP12
+point 1630.65 463.777 station -name 1.22
 
-point 1552.0900000000001 421.967 station -name 1.23@aval-CP12
+point 1552.0900000000001 421.967 station -name 1.23
 
-point 1488.08 425.35699999999997 station -name 1.24@aval-CP12
+point 1488.08 425.35699999999997 station -name 1.24
 
-point 1421.76 395.827 station -name 1.25@aval-CP12
+point 1421.76 395.827 station -name 1.25
 
-point 1363.3400000000001 351.80699999999996 station -name 1.26@aval-CP12
+point 1363.3400000000001 351.80699999999996 station -name 1.26
 
-point 1283.3400000000001 351.80699999999996 station -name 1.27@aval-CP12
+point 1283.3400000000001 351.80699999999996 station -name 1.27
 
-point 1192.13 362.99699999999996 station -name 1.28@aval-CP12
+point 1192.13 362.99699999999996 station -name 1.28
 
-point 1080.63 378.657 station -name 19.9@aval-CP12
+point 1080.63 378.657 station -name 19.9
 
-point 1013.52 403.067 station -name 19.8@aval-CP12
+point 1013.52 403.067 station -name 19.8
 
-point 877.78 407.877 station -name 19.7@aval-CP12
+point 877.78 407.877 station -name 19.7
 
-point 667.26 519.767 station -name 19.6@aval-CP12
+point 667.26 519.767 station -name 19.6
 
-point 597.98 479.767 station -name 19.5@aval-CP12
+point 597.98 479.767 station -name 19.5
 
-point 597.98 594.6469999999999 station -name 19.4@aval-CP12
+point 597.98 594.6469999999999 station -name 19.4
 
-point 590.0999999999999 594.6469999999999 station -name 19.3@aval-CP12
+point 590.0999999999999 594.6469999999999 station -name 19.3
 
-point 579.2 624.6469999999999 station -name 19.2@aval-CP12
+point 579.2 624.6469999999999 station -name 19.2
 
-point 520.6300000000001 750.237 station -name 19.1@aval-CP12
+point 520.6300000000001 750.237 station -name 19.1
 
-point 345.80999999999995 881.967 station -name 19.0@aval-CP12
+point 345.80999999999995 881.967 station -name 19.0
 
 endscrap
 
 
 
-scrap SC-aval-CP12-5 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
+scrap SC-aval-CP12-5 -projection extended -station-names "" "@aval-CP12" -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
 
 point 1414.0 348.5 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "A quoi correspond ce départ ????"
 
@@ -463,15 +463,15 @@ line wall
   smooth off
 endline
 
-point 1418.93 380.54699999999997 station -name 3.2@aval-CP12
+point 1418.93 380.54699999999997 station -name 3.2
 
-point 1465.81 395.827 station -name 3.1@aval-CP12
+point 1465.81 395.827 station -name 3.1
 
 endscrap
 
 
 
-scrap SC-P18-1 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
+scrap SC-P18-1 -projection extended -station-names "" "@aval-CP12" -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
 
 point 1293.0 683.0 height -value [-50 m]
 
@@ -563,19 +563,19 @@ line wall
   smooth off
 endline
 
-point 1603.07 976.297 station -name 7.9@aval-CP12
+point 1603.07 976.297 station -name 7.9
 
-point 1603.07 904.727 station -name 7.10@aval-CP12
+point 1603.07 904.727 station -name 7.10
 
-point 1576.7 904.727 station -name 7.11@aval-CP12
+point 1576.7 904.727 station -name 7.11
 
-point 1536.52 863.777 station -name 7.12@aval-CP12
+point 1536.52 863.777 station -name 7.12
 
 endscrap
 
 
 
-scrap SC-aval-CP12-2 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
+scrap SC-aval-CP12-2 -projection extended -station-names "" "@aval-CP12" -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
 
 area u:galerie
   l157-2236-617
@@ -701,45 +701,45 @@ line rope
   3229.0 1019.0
 endline
 
-point 3228.35 1023.627 station -name 1.0@aval-CP12
+point 3228.35 1023.627 station -name 1.0
 
-point 3142.8900000000003 992.517 station -name 1.1@aval-CP12
+point 3142.8900000000003 992.517 station -name 1.1
 
-point 3071.13 957.477 station -name 1.2@aval-CP12
+point 3071.13 957.477 station -name 1.2
 
-point 2985.42 915.747 station -name 1.3@aval-CP12
+point 2985.42 915.747 station -name 1.3
 
-point 2940.87 910.237 station -name 1.4@aval-CP12
+point 2940.87 910.237 station -name 1.4
 
-point 2892.16 925.117 station -name 1.5@aval-CP12
+point 2892.16 925.117 station -name 1.5
 
-point 2866.64 914.327 station -name 1.6@aval-CP12
+point 2866.64 914.327 station -name 1.6
 
-point 2835.77 898.587 station -name 1.7@aval-CP12
+point 2835.77 898.587 station -name 1.7
 
-point 2747.65 853.697 station -name 1.8@aval-CP12
+point 2747.65 853.697 station -name 1.8
 
-point 2662.52 812.127 station -name 1.9@aval-CP12
+point 2662.52 812.127 station -name 1.9
 
-point 2600.92 779.367 station -name 1.10@aval-CP12
+point 2600.92 779.367 station -name 1.10
 
-point 2520.83 736.847 station -name 1.11@aval-CP12
+point 2520.83 736.847 station -name 1.11
 
-point 2475.28 703.697 station -name 1.12@aval-CP12
+point 2475.28 703.697 station -name 1.12
 
-point 2396.5 667.007 station -name 1.13@aval-CP12
+point 2396.5 667.007 station -name 1.13
 
-point 2292.55 633.227 station -name 1.14@aval-CP12
+point 2292.55 633.227 station -name 1.14
 
-point 2236.3 600.707 station -name 1.15@aval-CP12
+point 2236.3 600.707 station -name 1.15
 
-point 2132.77 558.8969999999999 station -name 1.16@aval-CP12
+point 2132.77 558.8969999999999 station -name 1.16
 
 endscrap
 
 
 
-scrap SC-aval-CP12-3 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
+scrap SC-aval-CP12-3 -projection extended -station-names "" "@aval-CP12" -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
 
 line rope
   2446.0 499.5
@@ -814,53 +814,53 @@ line wall
   smooth off
 endline
 
-point 2477.45 379.60699999999997 station -name 8.0@aval-CP12
+point 2477.45 379.60699999999997 station -name 8.0
 
-point 2477.45 411.10699999999997 station -name 8.1@aval-CP12
+point 2477.45 411.10699999999997 station -name 8.1
 
-point 2477.45 449.447 station -name 8.2@aval-CP12
+point 2477.45 449.447 station -name 8.2
 
-point 2477.45 465.197 station -name 8.3@aval-CP12
+point 2477.45 465.197 station -name 8.3
 
-point 2456.43 465.197 station -name 8.4@aval-CP12
+point 2456.43 465.197 station -name 8.4
 
-point 2456.43 491.027 station -name 8.5@aval-CP12
+point 2456.43 491.027 station -name 8.5
 
-point 2436.27 491.027 station -name 8.6@aval-CP12
+point 2436.27 491.027 station -name 8.6
 
-point 2436.27 577.087 station -name 8.7@aval-CP12
+point 2436.27 577.087 station -name 8.7
 
-point 2396.27 577.087 station -name 8.8@aval-CP12
+point 2396.27 577.087 station -name 8.8
 
-point 2396.27 624.6469999999999 station -name 8.9@aval-CP12
+point 2396.27 624.6469999999999 station -name 8.9
 
-point 2332.3 605.5169999999999 station -name 8.10@aval-CP12
+point 2332.3 605.5169999999999 station -name 8.10
 
-point 2307.39 602.917 station -name 8.11@aval-CP12
+point 2307.39 602.917 station -name 8.11
 
-point 2272.31 604.567 station -name 8.12@aval-CP12
+point 2272.31 604.567 station -name 8.12
 
-point 2249.29 600.947 station -name 8.13@aval-CP12
+point 2249.29 600.947 station -name 8.13
 
 endscrap
 
 
 
-scrap SC-aval-CP12-4 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
+scrap SC-aval-CP12-4 -projection extended -station-names "" "@aval-CP12" -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 3986.2698 -128.0 0.0 0.0 104.50245292 0.0 m]
 
-point 3497.36 977.4069999999999 station -name 4.20@aval-CP12
+point 3497.36 977.4069999999999 station -name 4.20
 
-point 3472.24 965.117 station -name 4.19@aval-CP12
+point 3472.24 965.117 station -name 4.19
 
-point 3449.12 966.377 station -name 4.18@aval-CP12
+point 3449.12 966.377 station -name 4.18
 
-point 3398.1800000000003 951.737 station -name 4.17@aval-CP12
+point 3398.1800000000003 951.737 station -name 4.17
 
-point 3352.3199999999997 935.987 station -name 4.16@aval-CP12
+point 3352.3199999999997 935.987 station -name 4.16
 
-point 3316.31 932.837 station -name 4.15@aval-CP12
+point 3316.31 932.837 station -name 4.15
 
-point 3270.1400000000003 919.607 station -name 4.14@aval-CP12
+point 3270.1400000000003 919.607 station -name 4.14
 
 line wall
   3597.0 1021.5
@@ -887,7 +887,7 @@ line wall
   smooth off
 endline
 
-point 3586.15 1009.687 station -name 4.21@aval-CP12
+point 3586.15 1009.687 station -name 4.21
 
 line wall
   3446.5 759.5
@@ -959,41 +959,41 @@ line wall
   smooth off
 endline
 
-point 3435.76 759.527 station -name 5.5@aval-CP12
+point 3435.76 759.527 station -name 5.5
 
-point 3401.41 795.117 station -name 5.4@aval-CP12
+point 3401.41 795.117 station -name 5.4
 
-point 3345.48 840.3969999999999 station -name 5.3@aval-CP12
+point 3345.48 840.3969999999999 station -name 5.3
 
-point 3309.96 846.617 station -name 5.2@aval-CP12
+point 3309.96 846.617 station -name 5.2
 
-point 3269.31 880.787 station -name 5.1@aval-CP12
+point 3269.31 880.787 station -name 5.1
 
-point 3223.55 883.1469999999999 station -name 4.13@aval-CP12
+point 3223.55 883.1469999999999 station -name 4.13
 
-point 3203.11 877.327 station -name 4.12@aval-CP12
+point 3203.11 877.327 station -name 4.12
 
-point 3128.98 870.787 station -name 4.11@aval-CP12
+point 3128.98 870.787 station -name 4.11
 
-point 3092.45 853.777 station -name 4.10@aval-CP12
+point 3092.45 853.777 station -name 4.10
 
-point 3072.21 855.517 station -name 4.9@aval-CP12
+point 3072.21 855.517 station -name 4.9
 
-point 3021.58 838.107 station -name 4.8@aval-CP12
+point 3021.58 838.107 station -name 4.8
 
-point 2985.7200000000003 834.327 station -name 4.7@aval-CP12
+point 2985.7200000000003 834.327 station -name 4.7
 
-point 2975.75 824.4069999999999 station -name 4.6@aval-CP12
+point 2975.75 824.4069999999999 station -name 4.6
 
-point 2932.87 809.607 station -name 4.5@aval-CP12
+point 2932.87 809.607 station -name 4.5
 
-point 2831.05 772.597 station -name 4.4@aval-CP12
+point 2831.05 772.597 station -name 4.4
 
-point 2723.12 741.577 station -name 4.3@aval-CP12
+point 2723.12 741.577 station -name 4.3
 
-point 2653.5299999999997 746.457 station -name 4.2@aval-CP12
+point 2653.5299999999997 746.457 station -name 4.2
 
-point 2629.21 757.327 station -name 4.1@aval-CP12
+point 2629.21 757.327 station -name 4.1
 
 endscrap
 

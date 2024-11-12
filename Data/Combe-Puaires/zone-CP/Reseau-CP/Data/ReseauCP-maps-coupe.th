@@ -115,29 +115,29 @@ map MC-CP12 -title "Gouffre CP12"
 endmap
 
 map MC-Secoues -title "galeries du CP12"
-	SC-aval-CP12-1 #@ReseauCP
+	SC-aval-CP12-1@Aval-CP12 #@ReseauCP
+	#break
+	#SC-P18-1@Aval-CP12 #@ReseauCP
 	break
-	SC-P18-1 #@ReseauCP
+	SC-aval-CP12-2@Aval-CP12 #@ReseauCP
 	break
-	SC-aval-CP12-2 #@ReseauCP
+	SC-aval-CP12-3@Aval-CP12 #@ReseauCP
 	break
-	SC-aval-CP12-3 #@ReseauCP
+	SC-aval-CP12-4@Aval-CP12 #@ReseauCP
 	break
-	SC-aval-CP12-4 #@ReseauCP
-	break
-	SC-aval-CP12-5 #@ReseauCP
+	SC-aval-CP12-5@Aval-CP12 #@ReseauCP
 endmap
 
 map MC-reptiles -title "Réseau des Reptiles"
-	SC-Reptiles-1 #@ReseauCP
+	SC-Reptiles-1@Reptiles #@ReseauCP
 	preview above MC-CP19b
 endmap
 
 map MC-CP19b -title "CP19 bis"
-	SC-CP19b-2 #@ReseauCP
+	SC-CP19b-2@CP19b #@ReseauCP
 	preview below MC-reptiles
 	break
-	SC-CP19b-1 #@ReseauCP
+	SC-CP19b-1@CP19b #@ReseauCP
 endmap
 
 map MC-sirocco -title "Boucle du Sirocco et des Quatre Vents"

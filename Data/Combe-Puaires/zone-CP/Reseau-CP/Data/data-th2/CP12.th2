@@ -236,7 +236,7 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 2054.0 1327.25 label -orientation 315.0 -text "galerie du Huit
+point 2054.0 1327.25 label -orientation 315.0 -text "galerie du Huit"
 
 point 1795.5 1392.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du Huit" -text "CF à atteindre en hauteur ?"
 
@@ -321,7 +321,7 @@ endscrap
 
 
 
-scrap SP-Huit-2 -projection plan -station-names "" "@aval-CP12" -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-Huit-2 -projection plan -station-names "" "@aval-CP12.Aval-CP12" -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line wall
   1630.5 1649.0
@@ -456,7 +456,7 @@ endscrap
 
 
 
-scrap SP-Huit-3 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-Huit-3 -projection plan -station-names "" "@aval-CP12.Aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line wall -subtype unsurveyed
   1979.0 1670.0
@@ -933,7 +933,7 @@ endscrap
 
 
 
-scrap SP-P18-1 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-P18-1 -projection plan -station-names "" "@aval-CP12.Aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 1340.25 1305.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du P18" -text "Puits remontant à escalader"
 
@@ -1083,7 +1083,7 @@ endscrap
 
 
 
-scrap SP-CP12-5 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-CP12-5 -projection plan -station-names "" "@aval-CP12.Aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line wall
   1068.5 1291.25
@@ -1261,7 +1261,7 @@ endscrap
 
 
 
-scrap SP-P18-2 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-P18-2 -projection plan -station-names "" "@aval-CP12.Aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 1126.0 1447.0 height -value [-6 m]
 
@@ -1348,7 +1348,7 @@ endscrap
 
 
 
-scrap SP-Secoues-1 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-Secoues-1 -projection plan -station-names "" "@aval-CP12.Aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line rock-border -close on
   849.0 1326.25
@@ -1658,35 +1658,35 @@ endscrap
 
 
 
-scrap SP-CP19b-1 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-CP19b-1 -projection plan -station-names "" "@CP19b.CP19b" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 1087.44 1033.98 station -name B.15@CP19b
+point 1087.44 1033.98 station -name B.15
 
-point 1085.47 1036.9 station -name B.14@CP19b
+point 1085.47 1036.9 station -name B.14
 
-point 1088.8 1043.46 station -name B.13@CP19b
+point 1088.8 1043.46 station -name B.13
 
-point 1090.2 1047.52 station -name B.12@CP19b
+point 1090.2 1047.52 station -name B.12
 
-point 1102.59 1049.35 station -name B.11@CP19b
+point 1102.59 1049.35 station -name B.11
 
-point 1107.05 1041.99 station -name B.10@CP19b
+point 1107.05 1041.99 station -name B.10
 
-point 1100.65 1039.8 station -name B.9@CP19b
+point 1100.65 1039.8 station -name B.9
 
-point 1104.73 1033.85 station -name B.7@CP19b
+point 1104.73 1033.85 station -name B.7
 
-point 1112.32 1033.82 station -name B.6@CP19b
+point 1112.32 1033.82 station -name B.6
 
-point 1115.97 1035.78 station -name B.5@CP19b
+point 1115.97 1035.78 station -name B.5
 
-point 1120.9 1036.35 station -name B.4@CP19b
+point 1120.9 1036.35 station -name B.4
 
-point 1129.19 1041.85 station -name B.3@CP19b
+point 1129.19 1041.85 station -name B.3
 
-point 1143.68 1046.84 station -name B.2@CP19b
+point 1143.68 1046.84 station -name B.2
 
-point 1143.73 1052.3 station -name B.1@CP19b
+point 1143.73 1052.3 station -name B.1
 
 line wall
   1086.75 1031.75
@@ -1805,13 +1805,13 @@ line wall
   smooth off
 endline
 
-point 1151.95 1056.39 station -name CP19b@CP19b
+point 1151.95 1056.39 station -name CP19b
 
 endscrap
 
 
 
-scrap SP-Reptiles-2 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-Reptiles-2 -projection plan -station-names "" "@reptiles.Reptiles" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 853.75 866.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
 
@@ -1945,77 +1945,77 @@ line wall
   smooth off
 endline
 
-point 535.77 724.13 station -name 6.59@reptiles
+point 535.77 724.13 station -name 6.59
 
-point 543.79 703.4 station -name 6.58@reptiles
+point 543.79 703.4 station -name 6.58
 
-point 550.69 696.04 station -name 6.57@reptiles
+point 550.69 696.04 station -name 6.57
 
-point 562.68 674.53 station -name 6.56@reptiles
+point 562.68 674.53 station -name 6.56
 
-point 571.13 666.41 station -name 6.55@reptiles
+point 571.13 666.41 station -name 6.55
 
-point 576.62 661.98 station -name 6.53@reptiles
+point 576.62 661.98 station -name 6.53
 
-point 581.23 654.92 station -name 6.51@reptiles
+point 581.23 654.92 station -name 6.51
 
-point 589.2 645.13 station -name 6.50@reptiles
+point 589.2 645.13 station -name 6.50
 
-point 604.27 641.42 station -name 6.49@reptiles
+point 604.27 641.42 station -name 6.49
 
-point 611.66 650.59 station -name 6.48@reptiles
+point 611.66 650.59 station -name 6.48
 
-point 623.0 656.16 station -name 6.47@reptiles
+point 623.0 656.16 station -name 6.47
 
-point 628.5 658.86 station -name 6.46@reptiles
+point 628.5 658.86 station -name 6.46
 
-point 628.63 663.04 station -name 6.45@reptiles
+point 628.63 663.04 station -name 6.45
 
-point 631.15 679.2 station -name 6.44@reptiles
+point 631.15 679.2 station -name 6.44
 
-point 640.03 710.45 station -name 6.43@reptiles
+point 640.03 710.45 station -name 6.43
 
-point 648.85 725.81 station -name 6.42@reptiles
+point 648.85 725.81 station -name 6.42
 
-point 647.4 739.28 station -name 6.41@reptiles
+point 647.4 739.28 station -name 6.41
 
-point 722.37 754.05 station -name 6.40@reptiles
+point 722.37 754.05 station -name 6.40
 
-point 746.1 768.38 station -name 6.39@reptiles
+point 746.1 768.38 station -name 6.39
 
-point 781.14 789.56 station -name 6.38@reptiles
+point 781.14 789.56 station -name 6.38
 
-point 795.69 807.61 station -name 6.37@reptiles
+point 795.69 807.61 station -name 6.37
 
-point 802.2 826.7 station -name 6.36@reptiles
+point 802.2 826.7 station -name 6.36
 
-point 810.34 838.83 station -name 6.35@reptiles
+point 810.34 838.83 station -name 6.35
 
-point 809.32 850.18 station -name 6.34@reptiles
+point 809.32 850.18 station -name 6.34
 
-point 827.98 861.46 station -name 6.33@reptiles
+point 827.98 861.46 station -name 6.33
 
-point 837.73 867.35 station -name 6.32@reptiles
+point 837.73 867.35 station -name 6.32
 
-point 837.01 903.76 station -name 6.31@reptiles
+point 837.01 903.76 station -name 6.31
 
-point 844.17 921.61 station -name 6.30@reptiles
+point 844.17 921.61 station -name 6.30
 
-point 857.46 925.46 station -name 6.29@reptiles
+point 857.46 925.46 station -name 6.29
 
-point 863.75 936.87 station -name 6.28@reptiles
+point 863.75 936.87 station -name 6.28
 
-point 886.56 938.12 station -name 6.27@reptiles
+point 886.56 938.12 station -name 6.27
 
-point 896.9 919.56 station -name 6.26@reptiles
+point 896.9 919.56 station -name 6.26
 
-point 904.42 923.25 station -name 6.25@reptiles
+point 904.42 923.25 station -name 6.25
 
 endscrap
 
 
 
-scrap SP-Reptiles-3 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-Reptiles-3 -projection plan -station-names "" "@reptiles.Reptiles" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 529.25 736.75 label -text "-325 m"
 
@@ -2035,77 +2035,77 @@ line wall
   smooth off
 endline
 
-point 540.38 708.21 station -name 6.60@reptiles
+point 540.38 708.21 station -name 6.60
 
-point 548.77 702.58 station -name 6.61@reptiles
+point 548.77 702.58 station -name 6.61
 
-point 557.29 691.74 station -name 6.62@reptiles
+point 557.29 691.74 station -name 6.62
 
-point 575.18 671.96 station -name 6.63@reptiles
+point 575.18 671.96 station -name 6.63
 
 endscrap
 
 
 
-scrap SP-CP19-2 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-CP19-2 -projection plan -station-names "" "@CP19b.CP19b" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 963.25 981.4 station -name B.50@CP19b
+point 963.25 981.4 station -name B.50
 
-point 962.28 968.48 station -name B.49@CP19b
+point 962.28 968.48 station -name B.49
 
-point 963.0 967.75 station -name B.48@CP19b
+point 963.0 967.75 station -name B.48
 
-point 957.12 954.47 station -name B.47@CP19b
+point 957.12 954.47 station -name B.47
 
-point 945.48 955.29 station -name B.46@CP19b
+point 945.48 955.29 station -name B.46
 
-point 935.39 967.74 station -name B.45@CP19b
+point 935.39 967.74 station -name B.45
 
-point 933.98 980.86 station -name B.44@CP19b
+point 933.98 980.86 station -name B.44
 
-point 935.55 985.32 station -name B.43@CP19b
+point 935.55 985.32 station -name B.43
 
-point 938.92 984.72 station -name B.42@CP19b
+point 938.92 984.72 station -name B.42
 
-point 946.3 984.69 station -name B.41@CP19b
+point 946.3 984.69 station -name B.41
 
-point 944.92 994.11 station -name B.40@CP19b
+point 944.92 994.11 station -name B.40
 
-point 958.5 1003.21 station -name B.39@CP19b
+point 958.5 1003.21 station -name B.39
 
-point 961.77 995.24 station -name B.38@CP19b
+point 961.77 995.24 station -name B.38
 
-point 965.31 994.14 station -name B.37@CP19b
+point 965.31 994.14 station -name B.37
 
-point 965.22 998.06 station -name B.336@CP19b
+point 965.22 998.06 station -name B.336
 
-point 967.55 999.11 station -name B.35@CP19b
+point 967.55 999.11 station -name B.35
 
-point 970.14 999.59 station -name B.34@CP19b
+point 970.14 999.59 station -name B.34
 
-point 975.16 1007.15 station -name B.33@CP19b
+point 975.16 1007.15 station -name B.33
 
-point 981.03 1005.95 station -name B.32@CP19b
+point 981.03 1005.95 station -name B.32
 
-point 991.56 1006.46 station -name B.31@CP19b
+point 991.56 1006.46 station -name B.31
 
-point 995.6 1005.34 station -name B.30@CP19b
+point 995.6 1005.34 station -name B.30
 
-point 1001.59 1002.42 station -name B.29@CP19b
+point 1001.59 1002.42 station -name B.29
 
-point 1009.28 1001.25 station -name B.28@CP19b
+point 1009.28 1001.25 station -name B.28
 
-point 1037.69 1002.51 station -name B.27@CP19b
+point 1037.69 1002.51 station -name B.27
 
-point 1042.33 1006.2 station -name B.26@CP19b
+point 1042.33 1006.2 station -name B.26
 
-point 1053.28 1011.07 station -name B.25@CP19b
+point 1053.28 1011.07 station -name B.25
 
-point 1055.39 1016.88 station -name B.24@CP19b
+point 1055.39 1016.88 station -name B.24
 
-point 1073.96 1022.54 station -name B.22@CP19b
+point 1073.96 1022.54 station -name B.22
 
-point 1075.3 1026.39 station -name B.21@CP19b
+point 1075.3 1026.39 station -name B.21
 
 point 1054.25 1031.5 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "CP19b" -text "A Voir"
 
@@ -2348,19 +2348,19 @@ line wall
   smooth off
 endline
 
-point 1077.86 1034.79 station -name B.20@CP19b
+point 1077.86 1034.79 station -name B.20
 
-point 1083.4 1035.62 station -name B.19@CP19b
+point 1083.4 1035.62 station -name B.19
 
-point 1091.6 1033.92 station -name B.18@CP19b
+point 1091.6 1033.92 station -name B.18
 
-point 1081.05 1034.03 station -name B.17@CP19b
+point 1081.05 1034.03 station -name B.17
 
 endscrap
 
 
 
-scrap SP-CP19b-3 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-CP19b-3 -projection plan -station-names "" "@CP19b.CP19b" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line contour
   968.5 1038.0
@@ -2466,41 +2466,41 @@ line wall
   smooth off
 endline
 
-point 973.14 1042.4 station -name B.68@CP19b
+point 973.14 1042.4 station -name B.68
 
-point 963.8 1039.45 station -name B.65@CP19b
+point 963.8 1039.45 station -name B.65
 
-point 962.34 1040.95 station -name B.66@CP19b
+point 962.34 1040.95 station -name B.66
 
-point 954.82 1047.19 station -name B.64@CP19b
+point 954.82 1047.19 station -name B.64
 
-point 950.19 1028.96 station -name B.63@CP19b
+point 950.19 1028.96 station -name B.63
 
-point 953.37 1025.68 station -name B.61@CP19b
+point 953.37 1025.68 station -name B.61
 
-point 945.04 1029.85 station -name B.60@CP19b
+point 945.04 1029.85 station -name B.60
 
-point 925.08 1036.29 station -name B.59@CP19b
+point 925.08 1036.29 station -name B.59
 
-point 933.14 1026.4 station -name B.58@CP19b
+point 933.14 1026.4 station -name B.58
 
-point 935.75 1023.71 station -name B.57@CP19b
+point 935.75 1023.71 station -name B.57
 
-point 958.52 1012.33 station -name B.56@CP19b
+point 958.52 1012.33 station -name B.56
 
-point 956.32 1006.43 station -name B.54@CP19b
+point 956.32 1006.43 station -name B.54
 
-point 962.59 996.08 station -name B.52@CP19b
+point 962.59 996.08 station -name B.52
 
-point 962.14 1000.42 station -name B.53@CP19b
+point 962.14 1000.42 station -name B.53
 
-point 964.65 990.22 station -name B.51@CP19b
+point 964.65 990.22 station -name B.51
 
 endscrap
 
 
 
-scrap SP-CP19b-4 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-CP19b-4 -projection plan -station-names "" "@CP19b.CP19b" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line floor-meander
   960.31 958.52
@@ -2573,29 +2573,29 @@ line wall
   smooth off
 endline
 
-point 965.01 950.04 station -name B.77@CP19b
+point 965.01 950.04 station -name B.77
 
-point 962.25 952.88 station -name B.79@CP19b
+point 962.25 952.88 station -name B.79
 
-point 960.31 958.52 station -name B.76@CP19b
+point 960.31 958.52 station -name B.76
 
-point 961.24 963.41 station -name B.73@CP19b
+point 961.24 963.41 station -name B.73
 
-point 959.85 964.84 station -name B.74@CP19b
+point 959.85 964.84 station -name B.74
 
-point 960.46 978.02 station -name B.72@CP19b
+point 960.46 978.02 station -name B.72
 
-point 959.59 994.33 station -name B.71@CP19b
+point 959.59 994.33 station -name B.71
 
-point 948.84 1045.1 station -name B.70@CP19b
+point 948.84 1045.1 station -name B.70
 
-point 963.15 1047.77 station -name B.69@CP19b
+point 963.15 1047.77 station -name B.69
 
 endscrap
 
 
 
-scrap SP-Reptiles-1 -projection plan -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-Reptiles-1 -projection plan -station-names "" "@reptiles.Reptiles" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line floor-meander
   924.5 941.25
@@ -2748,51 +2748,51 @@ line wall
   smooth off
 endline
 
-point 919.75 942.28 station -name 6.24@reptiles
+point 919.75 942.28 station -name 6.24
 
-point 988.75 964.33 station -name 6.22@reptiles
+point 988.75 964.33 station -name 6.22
 
-point 1014.19 967.83 station -name 6.21@reptiles
+point 1014.19 967.83 station -name 6.21
 
-point 1012.87 995.1 station -name 6.20@reptiles
+point 1012.87 995.1 station -name 6.20
 
-point 1062.7 1002.66 station -name 6.19@reptiles
+point 1062.7 1002.66 station -name 6.19
 
-point 1065.11 1011.81 station -name 6.18@reptiles
+point 1065.11 1011.81 station -name 6.18
 
-point 1096.67 1026.74 station -name 6.17@reptiles
+point 1096.67 1026.74 station -name 6.17
 
-point 1094.65 1034.43 station -name 6.16@reptiles
+point 1094.65 1034.43 station -name 6.16
 
-point 1106.74 1046.62 station -name 6.15@reptiles
+point 1106.74 1046.62 station -name 6.15
 
-point 1108.89 1054.89 station -name 6.14@reptiles
+point 1108.89 1054.89 station -name 6.14
 
-point 1102.07 1066.03 station -name 6.13@reptiles
+point 1102.07 1066.03 station -name 6.13
 
-point 1104.4 1084.02 station -name 6.12@reptiles
+point 1104.4 1084.02 station -name 6.12
 
-point 1150.67 1099.54 station -name 6.11@reptiles
+point 1150.67 1099.54 station -name 6.11
 
-point 1152.69 1121.08 station -name 6.10@reptiles
+point 1152.69 1121.08 station -name 6.10
 
-point 1137.81 1135.41 station -name 6.9@reptiles
+point 1137.81 1135.41 station -name 6.9
 
-point 1129.16 1132.47 station -name 6.8@reptiles
+point 1129.16 1132.47 station -name 6.8
 
-point 1091.11 1131.86 station -name 6.7@reptiles
+point 1091.11 1131.86 station -name 6.7
 
-point 1079.19 1169.02 station -name 6.6@reptiles
+point 1079.19 1169.02 station -name 6.6
 
-point 1077.07 1206.56 station -name 6.5@reptiles
+point 1077.07 1206.56 station -name 6.5
 
-point 1089.18 1236.56 station -name 6.4@reptiles
+point 1089.18 1236.56 station -name 6.4
 
-point 1068.91 1250.37 station -name 6.3@reptiles
+point 1068.91 1250.37 station -name 6.3
 
-point 1069.59 1254.37 station -name 6.2@reptiles
+point 1069.59 1254.37 station -name 6.2
 
-point 1051.82 1269.83 station -name 6.1@reptiles
+point 1051.82 1269.83 station -name 6.1
 
 endscrap
 
@@ -3104,7 +3104,7 @@ endscrap
 
 
 
-scrap SP-CP12-3 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+scrap SP-CP12-3 -projection plan -station-names "" "@aval-CP12.Aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 point 1541.75 1645.0 water-flow -orientation 82.2
 

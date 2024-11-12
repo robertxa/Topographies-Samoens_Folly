@@ -1,0 +1,17 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Aval-CP12 -title "Aval-CP12"
+	input Data/aval-CP12.th
+	#input Data/aval-CP12.th2
+	input Data/aval-CP12-coupe.th2
+	
+	input Data/meandrecairn.th
+		equate 16@Meandrecairn 1.23@aval-CP12	# Cairn, marque le départ du méandr du Cairn
+
+
+	input Aval-CP12-maps.th
+endsurvey
