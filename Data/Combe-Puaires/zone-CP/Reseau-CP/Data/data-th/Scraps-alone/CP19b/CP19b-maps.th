@@ -4,13 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-CP19b -title "CP19b"
-#	SP-CP7-2
-#	break
-#	SP-CP7-1
-#endmap
+map MP-CP19b -title "CP19 bis"
+	SP-CP19b-1
+	break
+	SP-CP19-2
+	break
+	SP-CP19b-3
+	break
+	SP-CP19b-4
+endmap
 
-map MC-CP19b -title "CP19b"
+map MC-CP19b -title "CP19 bis"
 	SC-CP19b-1
 	break
 	SC-CP19b-2

@@ -159,23 +159,13 @@ map MP-CP12 -title "CP12"
 	SP-Secoues-1 #@ReseauCP
 endmap
 
-map MP-reptiles -title "Réseau des Reptiles"
-	SP-Reptiles-2 #@ReseauCP
-	break
-	SP-Reptiles-3 #@ReseauCP
-	break
-	SP-Reptiles-1 #@ReseauCP
-endmap
-
-map MP-CP19 -title "CP19 bis"
-	SP-CP19b-1 #@ReseauCP
-	break
-	SP-CP19-2 #@ReseauCP
-	break
-	SP-CP19b-3 #@ReseauCP
-	break
-	SP-CP19b-4 #@ReseauCP
-endmap
+#map MP-reptiles -title "Réseau des Reptiles"
+#	SP-Reptiles-2 #@ReseauCP
+#	break
+#	SP-Reptiles-3 #@ReseauCP
+#	break
+#	SP-Reptiles-1 #@ReseauCP
+#endmap
 
 
 #####################################################################
@@ -188,11 +178,11 @@ map MP-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	break
 	MP-CP12
 	break
-	MP-CP19
+	MP-CP19b@CP19b
 	break
 	MP-Billy
 	break
-	MP-reptiles
+	MP-reptiles@Reptiles
 	break
 	MP-RivAmont2019
 	break

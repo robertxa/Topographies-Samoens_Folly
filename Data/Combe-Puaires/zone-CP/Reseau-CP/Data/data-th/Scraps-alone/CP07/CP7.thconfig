@@ -7,7 +7,7 @@ encoding  utf-8
 source CP7-tot.th
 
 # Add entrances coordinates
-input legendes/entrances_coordinates.th
+#input legendes/entrances_coordinates.th	# REVOIR CETTE DEFINITION? IL Y A UNE ERREUR !
 
 # Add config file
 input ../../../../../../../../config.thc 
@@ -68,7 +68,7 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		% Ajout de la spéléométrie explorée
+		#% Ajout de la spéléométrie explorée
 		#\cavelength{30\thinspace{}m}
 		#\cavedepth{-30\thinspace{}m}
 	endcode  

@@ -28,6 +28,9 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 	#	equate 6.23@reptiles 6.23@CP19b
 	input data-th/Scraps-alone/CP19b/CP19b-tot.th
 		equate 6.21@reptiles.Reptiles 12@jct-CP19b.CP19b
+		# join SP-jctCP19b-1@CP19b SP-reptilesX@Reptiles	# idem pour la coupe
+		#join SP-reptilesX@Reptiles SP-AvalCP12@Aval-CP12	# idem pour la coupe
+		
 
 	#input data-th/Scraps-alone/Reptiles/Data/reptiles.th
 	#	equate 1.28@aval-CP12.Aval-CP12 1.28@reptiles
