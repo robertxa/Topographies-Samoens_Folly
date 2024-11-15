@@ -17,6 +17,8 @@ survey CP7 -title "CP7"
 
 	## pour le plan
 	input Data/CP7.th2
+	input Data/PuitsGP18.th2
+		join SP-PuitsGP18-5 SP-gP18-1
 	## Pour la coupe et le plan
 	input Data/CP7-coupe.th2
 

@@ -18,6 +18,7 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     units compass clino degrees
     data normal from to length compass clino
     # extend auto
+    extend left
     # Départ de la base des Puits du CP19b
     0 . 1.38 62.4 12.5
     0 . 2.89 132.7 32.2
@@ -42,7 +43,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     0 . 12.49 314.9 60.8
     0 . 25.91 291.5 72.2
     0 . 14.24 257.9 80.0
-    extend right
+    #extend right
+    extend left
     0 1 4.53 335.2 -2.5
     # extend auto
     1 . 0.62 71.2 6.0
@@ -54,7 +56,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     1 . 1.05 16.2 5.5
     1 . 2.85 74.3 79.4
     1 . 1.47 350.7 33.0
-    extend right
+    #extend right
+    extend left
     1 2 2.59 5.0 -3.1
     # extend auto
     2 . 0.81 251.4 3.3
@@ -68,7 +71,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     2 . 0.51 151.5 1.7
     2 . 0.73 209.0 3.5
     2 . 2.47 199.5 62.6
-    extend right
+    #extend right
+    extend left
     2 3 2.10 313.8 11.3
     # extend auto
     3 . 1.61 309.0 -88.5
@@ -78,6 +82,7 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     3 . 1.98 255.8 -81.1
     3 . 0.65 297.5 -65.7
     3 . 0.93 220.6 -61.3
+    #extend left
     extend left
     3 4 1.42 244.1 -22.8
     # extend auto
@@ -87,7 +92,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     4 . 0.61 341.9 42.0
     4 . 2.12 345.9 -59.8
     4 . 0.72 20.9 -42.3
-    extend right
+    #extend right
+    extend left
     4 5 1.63 346.9 -14.2
     # extend auto
     5 . 1.56 143.3 -83.8
@@ -110,7 +116,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     6 . 1.54 239.7 -81.0
     6 . 2.00 338.1 -62.7
     6 . 0.64 329.6 -20.2
-    extend right
+    #extend right
+    extend left
     6 7 1.84 350.1 -7.4 # sommet R3
     # extend auto
     7 . 0.40 210.9 -9.7
@@ -127,7 +134,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     7 . 0.60 188.4 -46.0
     7 . 3.91 296.9 -69.5
     7 . 3.76 303.5 -79.2
-    extend vertical
+    #extend vertical
+    extend left
     7 8 2.52 271.5 -55.2
     # extend auto
     8 . 1.71 62.0 -67.1
@@ -146,7 +154,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     8 . 1.15 326.4 23.7
     8 . 1.57 352.3 -9.6
     8 . 2.12 350.5 -45.5
-    extend right
+    #extend right
+    extend left
     8 9 5.67 7.4 -17.3
     # extend auto
     9 . 1.53 209.0 -16.9
@@ -161,7 +170,7 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     9 . 1.79 261.0 -14.2
     9 . 5.60 253.3 -17.0
     9 . 1.40 227.3 13.1
-    extend left
+    extend right
     9 10 2.22 187.5 62.1
     # extend auto
     10 . 0.72 17.2 -16.7
@@ -189,7 +198,8 @@ survey jct-CP19b -title "Jonction CP19b - Reptiles (2024)"
     11 . 2.02 42.6 11.8
     11 . 3.22 61.3 19.5
     11 . 2.93 105.1 26.8
-    extend vertical
+    #extend vertical
+    extend right
   
     11 12 2.54 81.1 19.1  # raccord, genoux, point topo au milieu de la galerie, dans le carrefour
     # extend auto

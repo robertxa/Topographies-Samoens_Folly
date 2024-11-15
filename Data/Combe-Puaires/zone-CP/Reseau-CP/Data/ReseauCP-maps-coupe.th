@@ -114,19 +114,19 @@ map MC-CP12 -title "Gouffre CP12"
 	SC-CP12-2 #@ReseauCP	
 endmap
 
-map MC-Secoues -title "galeries du CP12"
-	SC-aval-CP12-1@Aval-CP12 #@ReseauCP
-	#break
-	#SC-P18-1@Aval-CP12 #@ReseauCP
-	break
-	SC-aval-CP12-2@Aval-CP12 #@ReseauCP
-	break
-	SC-aval-CP12-3@Aval-CP12 #@ReseauCP
-	break
-	SC-aval-CP12-4@Aval-CP12 #@ReseauCP
-	break
-	SC-aval-CP12-5@Aval-CP12 #@ReseauCP
-endmap
+# map MC-Secoues -title "galeries du CP12"
+# 	SC-aval-CP12-1@Aval-CP12 #@ReseauCP
+# 	#break
+# 	#SC-P18-1@Aval-CP12 #@ReseauCP
+# 	break
+# 	SC-aval-CP12-2@Aval-CP12 #@ReseauCP
+# 	break
+# 	SC-aval-CP12-3@Aval-CP12 #@ReseauCP
+# 	break
+# 	SC-aval-CP12-4@Aval-CP12 #@ReseauCP
+# 	break
+# 	SC-aval-CP12-5@Aval-CP12 #@ReseauCP
+# endmap
 
 map MC-reptiles -title "Réseau des Reptiles"
 	SC-Reptiles-1@Reptiles #@ReseauCP
@@ -192,7 +192,8 @@ endmap
 map MC-CP12-aval -title "CP12"
 	MC-CP12
 	break
-	MC-Secoues
+	#MC-Secoues
+	MC-Aval-CP12@Aval-CP12
 endmap
 
 map MC-CP14 -title "CP14"
@@ -224,7 +225,10 @@ map MC-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	break
 	MC-CP12-aval
 	break
-	MC-CP19-Reptiles-Aval
+	#MC-CP19-Reptiles-Aval
+	MC-Reptiles@Reptiles
+	break
+	MC-CP19b@CP19b
 	break
 	MC-Billy
 	break

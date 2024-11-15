@@ -130,7 +130,6 @@ layout my_layout
    symbol-hide line survey
    # les points et le nom des stations topos
    #debug station-names
-   #debug scrap-names
 
    symbol-hide point u:symbol_plan
   symbol-hide point u:symbol_extend
@@ -138,6 +137,9 @@ layout my_layout
   
   color map-fg altitude
 	color-legend smooth
+  #debug scrap-names
+	#  color map-fg scraps
+  #  color-legend off
   
    # Specifier qu il faut imprimer une grille
    # au dessous de la topo  

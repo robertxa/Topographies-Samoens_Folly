@@ -28,8 +28,8 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 	#	equate 6.23@reptiles 6.23@CP19b
 	input data-th/Scraps-alone/CP19b/CP19b-tot.th
 		equate 6.21@reptiles.Reptiles 12@jct-CP19b.CP19b
-		# join SP-jctCP19b-1@CP19b SP-reptilesX@Reptiles	# idem pour la coupe
-		#join SP-reptilesX@Reptiles SP-AvalCP12@Aval-CP12	# idem pour la coupe
+		join SP-jctCP19b-1@CP19b SP-Reptiles-1@Reptiles
+		#join SP-Reptiles-1@Reptiles SP-Secoues-1@Aval-CP12	# idem pour la coupe
 		
 
 	#input data-th/Scraps-alone/Reptiles/Data/reptiles.th
@@ -90,6 +90,8 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		join SC-gP18-2@CP7 SC-CP12-1	# Sommet du P18
 		
 		equate 16@PuitsGP18.CP7 16@Meandrecairn.Aval-CP12
+		join SP-PuitsGP18-1@CP7 SP-CP12-5@Aval-CP12
+		join SP-PuitsGP18-2@CP7 SP-CP12-5@Aval-CP12
 
 	
    

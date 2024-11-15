@@ -1,7 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -131.0 -131.0 2332.7256 2253.9854
-##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {1968.5100000000002 1 1.0} {1921.26 CP19b} CP19b-coupe.xvi 0 {}
+##XTHERION## xth_me_area_adjust -127.98999999999978 -169.51440000000002 2332.7356000000004 2292.4856
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {1968.5200000000002 0 1.0} {1920.39 CP19b@CP19b.CP19b} CP19b-coupe.xvi 0 {}
+##XTHERION## xth_me_image_insert {1968.5200000000004 1 1.0} {1919.1156 CP19b@CP19b.CP19b} CP19b-coupe2024.xvi 0 {}
 
 
 
@@ -273,7 +274,54 @@ endscrap
 
 
 
-scrap SC-CP19b-2 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
+scrap SC-CP19b-2 -projection extended -author 2009 "Stéphane Lips" -author 2020 "Xavier Robert" -author 2024 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 2332.7256 -128.0 0.0 0.0 62.50243024 0.0 m]
+
+line wall -subtype invisible
+  479.0 252.0
+  479.0 252.0 470.75 222.0 467.75 205.5
+  smooth off
+endline
+
+line wall
+  467.75 205.5
+  467.75 205.5 481.75 212.5 482.75 218.0
+  483.75 223.5 484.75 225.75 486.75 225.25
+  488.75 224.75 489.0 225.5 489.0 225.5
+  smooth off
+endline
+
+line wall
+  507.0 257.0
+  507.0 257.0 500.25 254.5 497.0 254.25
+  493.75 254.0 479.0 252.0 479.0 252.0
+  smooth off
+endline
+
+line wall
+  608.5 295.0
+  608.5 295.0 599.0 292.5 587.5 287.5
+  576.0 282.5 563.5 275.5 556.0 272.5
+  548.5 269.5 547.0 269.0 539.0 267.0
+  531.0 265.0 530.0 266.5 522.0 263.0
+  514.0 259.5 510.0 257.0 507.0 257.0
+  smooth off
+endline
+
+line wall
+  489.0 225.5
+  494.0 225.5 504.0 224.0 509.0 225.0
+  514.0 226.0 519.0 224.0 519.0 229.5
+  519.0 235.0 515.5 242.5 520.0 243.0
+  524.5 243.5 532.0 244.0 535.5 244.5
+  539.0 245.0 535.0 253.5 539.0 253.5
+  543.0 253.5 551.5 252.5 555.5 255.0
+  559.5 257.5 559.5 257.0 563.5 258.0
+  567.5 259.0 565.0 261.5 572.0 261.5
+  579.0 261.5 584.5 262.5 594.0 262.5
+  603.5 262.5 613.5 262.5 620.0 262.0
+  626.5 261.5 633.5 263.0 633.5 263.0
+  smooth off
+endline
 
 line wall
   547.0 698.0
@@ -281,7 +329,6 @@ line wall
   556.5 599.0 545.0 572.0 555.0 543.0
   565.0 514.0 544.5 407.0 550.5 381.0
   556.5 355.0 595.0 302.5 608.5 295.0
-  622.0 287.5 630.0 296.5 632.0 280.0
   smooth off
 endline
 
@@ -290,7 +337,9 @@ line wall
   547.0 698.0
 endline
 
-point 747.5 1146.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Galerie à Atteindre et à explorer"
+point 760.0 1200.5 label -text "colm."
+
+point 747.5 1146.0 narrow-end
 
 point 882.5 1085.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "CP19" -attr CA " " -text "Arrivée d'eau en hauteur"
 
@@ -570,8 +619,8 @@ point 1005.0 900.0 label -text "etr."
 point 386.5 521.5 label -text "<center>puits de<br>la Résonnance"
 
 line wall
-  638.5 241.0
-  638.5 241.0 659.0 273.0 659.0 288.0
+  633.5 263.0
+  633.5 263.0 659.0 273.0 659.0 288.0
   659.0 303.0 660.0 389.0 660.0 408.0
   660.0 427.0 673.0 418.0 677.0 435.0
   681.0 452.0 674.0 522.0 674.0 533.0

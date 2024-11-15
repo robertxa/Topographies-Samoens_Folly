@@ -317,7 +317,7 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o data/reptiles-map.xvi
+ export map -fmt xvi -layout xviexport -o data/reptiles-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o data/reptiles-coupe.xvi
  
  export map -projection extended -layout my_layout-coupe -o Outputs/reptiles-coupe.pdf 

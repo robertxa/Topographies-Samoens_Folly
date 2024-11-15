@@ -17,7 +17,7 @@ source Data/combe-puaires.th
 input ../../../../config.thc
 
 # Add the entrance coordinates
-input legendes/entrances_coordinates.th
+#input legendes/entrances_coordinates.th
 
   
 # 2-LAYOUT   
@@ -118,7 +118,7 @@ endlayout
 	#select MC-Rivamont@ReseauCP 
 	#select MC-Billy-tot@ReseauCP
 	
-export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2023.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2024.pdf
 #export map -projection extended -layout my_layout-coupe-continuations -o Outputs/2D/ReseauCP-coupe2023-Continuations.pdf
  
 # Export du fichier 3d pour Loch

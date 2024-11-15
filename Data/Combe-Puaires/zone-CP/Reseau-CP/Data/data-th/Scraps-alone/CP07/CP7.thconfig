@@ -57,6 +57,8 @@ layout my_layout
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
+	color map-fg altitude
+	color-legend smooth
   
 	# To change the Title          
 	code tex-map
@@ -112,6 +114,7 @@ layout my_layout-coupe
 	map-header-bg off
 	layers on
 	symbol-hide line survey
+	symbol-hide line map-connection
 	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
@@ -148,10 +151,10 @@ endlayout
  
   
 #export map -fmt xvi -layout xviexport -o Data/CP7-map2023a.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/CP7-coupe2023a.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/CP7-coupe2023a.xvi
 
 # Select maps
-	select MP-CP7@CP7
+	select MP-CP7-tot@CP7
 	select MC-CP7@CP7
 	  
  export map -o Outputs/CP7-plan.pdf -layout my_layout

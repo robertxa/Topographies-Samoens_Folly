@@ -12,6 +12,7 @@ survey Reptiles -title "Réseau des Reptiles"
 
 	## pour le plan
 	input Data/reptiles.th2
+		join SP-bclereptiles-1 SP-Reptiles-1
 	## Pour la coupe et le plan
 	input Data/reptiles-coupe.th2
 

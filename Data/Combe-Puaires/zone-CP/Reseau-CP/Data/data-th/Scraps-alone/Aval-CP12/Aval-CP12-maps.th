@@ -4,18 +4,22 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-#map MP-Aval-CP12 -title "Aval du CP12"
-	#SP-CP7-2
-	#break
-	#SP-CP7-1
-#endmap
+map MP-Aval-CP12 -title "Aval du CP12"	
+	SP-Huit-2
+	break
+	SP-Huit-3
+	break
+	SP-CP12-5
+	break
+	SP-CP12-3
+	break
+	SP-Secoues-1
+	break
+	SP-Cairn-1
+endmap
 
 map MC-Aval-CP12 -title "Aval du CP12"
 	SC-aval-CP12-1
-	#break
-	#SC-aval-CP12-5
-	#break
-	#SC-P18-1	# A virer ?
 	break
 	SC-aval-CP12-2
 	break
@@ -23,6 +27,6 @@ map MC-Aval-CP12 -title "Aval du CP12"
 	break
 	SC-aval-CP12-4
 	break
-
+	SC-Cairn-1
 endmap
    

@@ -17,6 +17,7 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     units compass clino degrees
     data normal from to length compass clino
     # extend auto
+    extend left
     # Fond du méandre du Cairn
     0 . 1.24 322.0 -71.4
     0 . 0.49 263.0 5.3
@@ -29,9 +30,10 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     0 . 0.99 215.5 16.8
     0 . 0.89 180.7 55.3
     0 . 0.43 172.1 24.7
-    extend right
-    0 1 3.15 310.9 -15.3
     extend left
+    0 1 3.15 310.9 -15.3
+    #extend left
+    extend right
     0 2 1.82 185.3 40.4
     # extend auto
     2 . 0.38 85.4 2.3
@@ -50,7 +52,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     2 . 3.33 160.4 68.9
     2 . 2.07 151.9 -21.3
     2 . 2.91 152.1 -9.7
-    extend left
+    #extend left
+    extend right
     2 3 3.28 150.5 12.5
     # extend auto
     3 . 0.35 59.0 7.9
@@ -64,7 +67,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     3 . 4.32 327.1 56.5
     3 . 3.17 330.6 -49.0
     3 . 1.28 81.3 -57.9
-    extend left
+    #extend left
+    extend right
     3 4 2.78 142.1 24.6
     # extend auto
     4 . 1.24 281.7 -3.4
@@ -83,7 +87,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     4 . 2.29 213.1 40.4
     4 . 2.76 254.7 51.6
     4 . 1.08 275.6 17.5
-    extend left
+    #extend left
+    extend right
     4 5 1.56 244.1 -1.3
     # extend auto
     5 . 1.43 148.0 -83.2
@@ -96,7 +101,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     5 . 1.92 153.0 44.2
     5 . 4.15 52.0 69.7
     5 . 3.38 63.9 79.2
-    extend left
+    #extend left
+    extend right
     5 6 3.74 108.9 62.4 # sommet P4
     # extend auto
     6 . 4.95 236.6 -82.7
@@ -110,7 +116,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     6 . 1.64 320.7 45.0
     6 . 1.37 346.5 45.1
     6 . 1.00 312.2 30.5
-    extend vertical
+    #extend vertical
+    extend right
     6 7 1.51 98.0 12.3
     # extend auto
     7 . 0.43 136.8 10.6
@@ -134,7 +141,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     8 . 0.70 73.4 40.0
     8 . 1.38 98.6 21.3
     8 . 1.79 127.1 -25.5
-    extend left
+    #extend left
+    extend right
     8 9 1.62 110.1 -15.7
     # extend auto
     9 . 0.34 258.0 -2.1
@@ -143,7 +151,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     9 . 1.97 141.4 77.0
     9 . 2.32 184.4 -7.1
     9 . 4.54 179.2 4.0
-    extend left
+    #extend left
+    extend right
     #9 10 3.78 184.6 9.3
     9 11 1.58 181.3 62.6
     # extend auto
@@ -154,7 +163,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     11 . 1.61 229.3 85.3
     11 . 1.31 284.0 56.7
     11 . 1.38 327.6 29.7
-    extend vertical
+    #extend vertical
+    extend right
     11 12 1.52 264.8 61.5
     # extend auto
     12 . 1.17 60.6 -0.5
@@ -172,13 +182,15 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     12 . 2.33 171.9 -38.4
     12 . 2.69 19.4 -10.6
     12 . 2.85 18.4 -9.7
-    extend ignore
+    #extend ignore
+    extend left
     12 12b 2.75 18.5 -9.7 # CF colmatée
     # extend auto
     12 . 2.95 18.6 -9.2
     12 . 8.13 164.7 24.3
-    extend left
-    11 13 6.96 164.7 24.3
+    #extend left
+    extend right
+    12 13 6.96 164.7 24.3
     # extend auto
     13 . 2.04 335.2 -18.0
     13 . 0.77 355.8 5.3
@@ -210,7 +222,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     13 . 3.59 78.3 -15.4
     extend right
     13 14 3.76 76.4 -14.4
-    extend left
+    #extend left
+    extend right
     13 15 4.62 146.1 37.9
     # extend auto
     15 . 1.14 333.3 11.9
@@ -223,7 +236,8 @@ survey Meandrecairn -title "Méandre du Cairn (2024)"
     15 . 3.64 152.4 36.8
     15 . 3.57 167.5 59.3
     15 . 1.29 235.8 64.0
-    extend vertical
+    #extend vertical
+    extend right
     15 16 2.65 92.9 -4.6  # Station 16 = cairn = Station 1.23@aval-CP12
     # extend auto
     16 . 1.57 315.7 9.0

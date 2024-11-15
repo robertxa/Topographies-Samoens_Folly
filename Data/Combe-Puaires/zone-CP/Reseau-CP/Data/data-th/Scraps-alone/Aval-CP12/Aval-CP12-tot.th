@@ -6,7 +6,9 @@ encoding utf-8
 
 survey Aval-CP12 -title "Aval-CP12"
 	input Data/aval-CP12.th
-	#input Data/aval-CP12.th2
+	input Data/aval-CP12.th2
+	input Data/meandrecairn.th2
+		join SP-Cairn-1 SP-CP12-5
 	input Data/aval-CP12-coupe.th2
 	
 	input Data/meandrecairn.th

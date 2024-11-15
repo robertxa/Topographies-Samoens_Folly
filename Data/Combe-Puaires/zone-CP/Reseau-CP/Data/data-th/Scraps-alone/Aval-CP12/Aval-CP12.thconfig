@@ -114,7 +114,7 @@ layout my_layout
 	# La manchette a des "points cardinaux" : n, s, ne, sw, etc.
 	# Il faut specifier un de ces points 
 	#map-header 100 -80 se
-	map-header 30 30 nw
+	map-header 0 0 nw
    
 	# arrière plan de la manchette
 	map-header-bg off
@@ -123,8 +123,8 @@ layout my_layout
   
 	# Options pour afficher le squelette topo,
 	# les points et le nom des stations topos
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
   
 	# Specifier qu il faut imprimer une grille
 	# au dessous de la topo  
@@ -319,11 +319,11 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o data/avalCP12-map.xvi
+ export map -fmt xvi -layout xviexport -o data/avalCP12-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o data/avalCP12-coupe.xvi
  
  export map -projection extended -layout my_layout-coupe -o Outputs/avalCP12-coupe.pdf 
- #export map -o Outputs/avalCP12-plan.pdf -layout my_layout
+ export map -o Outputs/avalCP12-plan.pdf -layout my_layout
  
  export model -o Outputs/avalCP12.lox
  export continuation-list -o Outputs/Continuations-avalCP12-coupe.html

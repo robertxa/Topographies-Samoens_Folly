@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -249.0 -467.0 720.0 340.18140000000005
+##XTHERION## xth_me_area_adjust -249.0 -466.978 720.0 340.20340000000004
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {57.4544 1 1.0} {62.146100000000004 0@CP7.CP7} CP7-map2020a.xvi 0 {}
 ##XTHERION## xth_me_image_insert {57.577200000000005 1 1.0} {62.278999999999996 0@CP7.CP7} CP7-map2023a.xvi 0 {}
@@ -782,6 +782,8 @@ line wall
   smooth off
 endline
 
+point 207.5 -244.0 map-connection
+
 line wall -subtype clay
   201.5 -246.0
   201.5 -246.0 207.5 -248.0 207.5 -244.0
@@ -1130,9 +1132,8 @@ line wall
 endline
 
 line wall
-  77.75 -125.5
-  77.75 -125.5 89.25 -135.5 90.25 -139.0
-  91.25 -142.5 97.75 -153.0 99.0 -155.5
+  92.5 -138.75
+  93.5 -142.25 97.75 -153.0 99.0 -155.5
   smooth off
 endline
 
@@ -1162,8 +1163,6 @@ line wall
   174.75 -172.75 175.0 -172.0 164.25 -168.5
   153.5 -165.0 144.75 -164.5 138.75 -160.0
   132.75 -155.5 112.75 -139.25 106.75 -134.75
-  100.75 -130.25 86.5 -120.5 86.5 -120.5
-  smooth off
 endline
 
 point 512.7072000000001 75.70899999999999 station -name 48
@@ -1280,6 +1279,8 @@ line pit
   55.75 1.75 56.0 -0.0 56.0 -0.0
   smooth off
 endline
+
+point 15.0 37.25 map-connection
 
 point 9.0 35.5 altitude -align top-left
 

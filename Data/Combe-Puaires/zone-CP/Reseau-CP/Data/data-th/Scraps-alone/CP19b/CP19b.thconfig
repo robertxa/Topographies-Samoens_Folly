@@ -317,8 +317,8 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o data/CP19b-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o data/CP19b-coupe.xvi
+ #export map -fmt xvi -layout xviexport -o data/CP19b-map2024.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o data/CP19b-coupe2024.xvi
  
  export map -projection extended -layout my_layout-coupe -o Outputs/CP19b-coupe.pdf 
  export map -o Outputs/CP19b-plan.pdf -layout my_layout

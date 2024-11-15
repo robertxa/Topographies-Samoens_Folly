@@ -201,10 +201,11 @@ survey PuitsGP18 -title "Putis de la galerie du P18 (2024)"
     38 . 3.42 92.4 82.3
     38 . 6.49 334.5 79.2
     38 . 10.53 214.4 77.4
-    extend vertical
+    #extend vertical
+    extend left
   
     38 40 5.93 83.5 -2.5  # bloc, imp
-  
+    extend vertical
     38 42 4.13 273.9 36.5 # frac  2af 1 af
     # extend auto
     42 . 1.32 135.0 9.1
@@ -399,6 +400,7 @@ survey PuitsGP18 -title "Putis de la galerie du P18 (2024)"
     68 . 2.02 200.5 28.4
     68 . 1.47 239.1 39.6
     extend left
+    #extend right
     68 69 8.09 151.5 38.8
     # extend auto
     69 . 0.89 246.5 -17.6
@@ -421,6 +423,7 @@ survey PuitsGP18 -title "Putis de la galerie du P18 (2024)"
     69 . 1.88 128.0 46.8
     69 . 3.33 120.6 30.3
     extend left
+    #extend right
     69 71 4.04 144.9 -12.2
     # extend auto
     71 . 2.23 29.5 -70.4
@@ -445,8 +448,10 @@ survey PuitsGP18 -title "Putis de la galerie du P18 (2024)"
     71 . 3.26 130.8 60.6
     71 . 1.37 204.3 67.5
     extend left
+    #extend right
     71 73 14.28 128.2 -73.6
-    extend right
+    #extend right
+    extend left
     71 75 9.56 58.2 81.9
     # extend auto
     75 . 1.14 184.1 -0.6
@@ -465,7 +470,9 @@ survey PuitsGP18 -title "Putis de la galerie du P18 (2024)"
     75 . 1.42 320.0 0.2
     75 . 2.97 282.8 8.5
     extend left
+    #extend right
     75 77 6.67 226.6 61.7
+    extend right
     75 79 3.19 146.9 38.5
     # extend auto
     79 . 0.78 218.5 -5.1
@@ -481,10 +488,10 @@ survey PuitsGP18 -title "Putis de la galerie du P18 (2024)"
     79 . 3.83 149.3 73.5
     79 . 1.38 111.0 56.2
     79 . 2.47 166.2 38.9
-    extend left
-  
+    #extend left
+    extend ignore 79 81
     79 81 7.66 122.6 -11.1  # jction station 31@CP7-2023.CP7
-
+    extend right
     79 83 4.21 181.8 44.2
     # extend auto
     83 . 1.11 67.5 11.2
@@ -498,10 +505,12 @@ survey PuitsGP18 -title "Putis de la galerie du P18 (2024)"
     83 . 2.61 324.8 -20.6
     83 . 4.94 332.8 -3.9
     83 . 4.44 309.7 -0.3
-    extend left
-    83 85 4.12 135.4 31.2
+    #extend left
     extend right
-  
+    83 85 4.12 135.4 31.2
+    
+    #extend right
+    extend ignore 85 87
     85 87 2.72 77.1 14.1  # jction rouge, Station 24@CP7-2023.CP7
     
   endcenterline

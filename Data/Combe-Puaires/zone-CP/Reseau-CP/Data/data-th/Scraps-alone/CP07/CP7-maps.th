@@ -20,10 +20,33 @@ map MP-CP7 -title "CP7"
 	SP-CP7-2023-4
 	break
 	SP-CP7-2023-5
-	break
-	SP-gP18-1
+	
+	#break
+	#SP-gP18-1
 
 endmap
+
+map MP-PuitsGP18 -title "Puits parallèles de la galerie du P18"
+	SP-gP18-1
+	break
+	SP-PuitsGP18-5
+	break
+	SP-PuitsGP18-4
+	break
+	SP-PuitsGP18-3
+	break
+	SP-PuitsGP18-1
+	break
+	SP-PuitsGP18-2
+
+endmap
+
+map MP-CP7-tot -title "CP7"
+	MP-CP7 [0 70 m] above
+	break
+	MP-PuitsGP18
+endmap
+
 
 map MC-CP7 -title "CP7"
 	SC-CP7-1
@@ -35,6 +58,8 @@ map MC-CP7 -title "CP7"
 	SC-gP18-1
 	break
 	SC-gP18-2
+	break
+	SC-PuitsGP18-1
 
 endmap
    
