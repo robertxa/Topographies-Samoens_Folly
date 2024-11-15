@@ -143,21 +143,6 @@ map MP-Billy -title "Méandre Billy"
 	SP-Billy-9 #@ReseauCP
 endmap
  
-map MP-CP12 -title "CP12"
-	SP-CP12-1 #@ReseauCP
-	break
-	SP-CP12-2 #@ReseauCP
-	#break
-	#SP-P18-1 #@ReseauCP	--> Dans CP7 maintenant
-	#break
-	#SP-CP12-5 #@ReseauCP
-	#break
-	#SP-P18-2 #@ReseauCP
-	#break
-	#SP-CP12-3 #@ReseauCP
-	#break
-	#SP-Secoues-1 #@ReseauCP
-endmap
 
 
 #####################################################################
@@ -168,7 +153,7 @@ map MP-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	break
 	MP-CP7-tot@CP7
 	break
-	MP-CP12
+	MP-CP12@CP12
 	break
 	MP-Aval-CP12@Aval-CP12
 	break

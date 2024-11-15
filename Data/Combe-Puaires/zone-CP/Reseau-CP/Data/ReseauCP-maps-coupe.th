@@ -108,28 +108,8 @@ map MC-CP16 -title "CP16"
 	SC-CP16-4 #@ReseauCP
 endmap
 
-map MC-CP12 -title "Gouffre CP12"
-	SC-CP12-1 #@ReseauCP
-	break
-	SC-CP12-2 #@ReseauCP	
-endmap
-
-# map MC-Secoues -title "galeries du CP12"
-# 	SC-aval-CP12-1@Aval-CP12 #@ReseauCP
-# 	#break
-# 	#SC-P18-1@Aval-CP12 #@ReseauCP
-# 	break
-# 	SC-aval-CP12-2@Aval-CP12 #@ReseauCP
-# 	break
-# 	SC-aval-CP12-3@Aval-CP12 #@ReseauCP
-# 	break
-# 	SC-aval-CP12-4@Aval-CP12 #@ReseauCP
-# 	break
-# 	SC-aval-CP12-5@Aval-CP12 #@ReseauCP
-# endmap
-
 map MC-reptiles -title "Réseau des Reptiles"
-	SC-Reptiles-1@Reptiles #@ReseauCP
+	SC-Reptiles-1@Reptiles
 	preview above MC-CP19b
 endmap
 
@@ -190,9 +170,8 @@ map MC-Rivamont -title "Rivière amont"
 endmap
 
 map MC-CP12-aval -title "CP12"
-	MC-CP12
+	MC-CP12@CP12
 	break
-	#MC-Secoues
 	MC-Aval-CP12@Aval-CP12
 endmap
 
