@@ -10,7 +10,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 	input data-th/ReseauCP
 	
 	input data-th/Scraps-alone/Aval-CP12/Aval-CP12-tot.th
-		equate 1.0@aval-CP12.Aval-CP12 1.0@ReseauCP
+		equate 1.0@aval-CP12.Aval-CP12 1.0@Huit.Huit
 	
 	input data-th/Scraps-alone/CP12/CP12-tot.th
 		equate 1.19@aval-CP12.Aval-CP12 1.19@CP12.CP12
@@ -20,24 +20,31 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		equate 9.17@ReseauCP 9.17@CP14
 		equate E.9@2xxpats E.9@CP14
 	
+	input data-th/Scraps-alone/Huit/Huit-tot.th
+		equate 9.10@Huit.Huit 9.10@ReseauCP
+		#input data-th/Scraps-alone/Huit/Data/Huit.th2
+		join SP-huit-1@Huit SP-Huit-2@Aval-CP12
+		join SP-huit-1@Huit SP-CP14-2 -count 2
+		
+		join SC-aval-CP12-2@Aval-CP12 SC-huit-1@Huit
+		join SC-huit-2@Huit SC-huit-3
+
+ 	input data-th2/Huit-coupe.th2	# Attention, il va falloir découper le dessin de la coupe pour que ça entre dans les clous !
+ 		
+
+	
 	input data-th/Scraps-alone/CP16/Data/CP16.th
 		equate 20.13@billy 20.13@CP16
 	
-	#input data-th/Scraps-alone/CP19b/Data/CP19b.th
-	#	equate 6.23@reptiles 6.23@CP19b
 	input data-th/Scraps-alone/CP19b/CP19b-tot.th
 		equate 6.21@reptiles.Reptiles 12@jct-CP19b.CP19b
 		join SP-jctCP19b-1@CP19b SP-Reptiles-1@Reptiles
 		#join SP-Reptiles-1@Reptiles SP-Secoues-1@Aval-CP12	# idem pour la coupe
 		
-
-	#input data-th/Scraps-alone/Reptiles/Data/reptiles.th
-	#	equate 1.28@aval-CP12.Aval-CP12 1.28@reptiles
 	input data-th/Scraps-alone/Reptiles/Reptiles-tot.th
 		equate 1.28@aval-CP12.Aval-CP12 1.28@reptiles.Reptiles
 
 
-	
 	input data-th/Scraps-alone/Billy/Data/billy
 		equate 11.22@ReseauCP 11.22@billy
 		equate 11.25@billy 11.25@ReseauCP
@@ -142,11 +149,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
  	# le Sirocco et les 4 vents
 	# TO DO : Découper le fichier topo pour ne garder que le Huit dans ce dossier. 
 	# Mettre le Sirocco et les 4 vents à part
-	input data-th/Scraps-alone/Huit/Data/Huit.th2
-		join SP-huit-1 SP-Huit-2@Aval-CP12
-		join SP-huit-1 SP-CP14-2 -count 2
- 	input data-th/Scraps-alone/Huit/Data/Huit-coupe.th2
- 		join SC-aval-CP12-2@Aval-CP12 SC-huit-1
+	
  	
  	#join sirocco-SC4 rasoir-SC?
  	input data-th/Scraps-alone/2xxpats/Data/2xxpats-coupe.th2

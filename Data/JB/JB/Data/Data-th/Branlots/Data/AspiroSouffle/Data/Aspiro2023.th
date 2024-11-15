@@ -172,7 +172,11 @@ survey aspiro2023 -title "L'AspiroSouffle, 2023"
     4 . 12.88 346.1 64.2
     4 . 0.88 336.9 -0.8
     extend right
-    4 10 4.43 332.3 15.3  # bloc
+    4 10b 4.43 332.3 15.3  # bloc 
+
+    
+    # ATTENTION ! J'ai coupé artificiellment le cheminement pour limiter les déformations dans le bouclage global
+    #  En réalité, La station 10b = station 10
     # extend auto
     10 . 3.03 280.3 -49.5
     10 . 2.40 33.3 -27.7

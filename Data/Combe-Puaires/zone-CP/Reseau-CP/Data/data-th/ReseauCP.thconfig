@@ -7,7 +7,7 @@ encoding  utf-8
   
  # 1-SOURCES 
 source ReseauCP.th
-source Scraps-alone/Huit/huit-coupe.th2
+#source Scraps-alone/Huit/huit-coupe.th2
 
 # Add config file
 input ../../../../../../config.thc
@@ -122,8 +122,8 @@ layout my_layout
   
 	# Options pour afficher le squelette topo,
 	# les points et le nom des stations topos
-	symbol-hide line survey
-	#debug station-names
+	#symbol-hide line survey
+	debug station-names
   
 	# Specifier qu il faut imprimer une grille
 	# au dessous de la topo  
@@ -321,10 +321,10 @@ endlayout
   
  # 3-EXPORTS   
  #export map -fmt xvi -layout xviexport -o Scraps-alone/Huit/test-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o Scraps-alone/Huit/test-coupe.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Scraps-alone/Huit/test-coupe.xvi
  
  export map -projection extended -layout my_layout-coupe -o Outputs/test-coupe.pdf 
-# export map -o Outputs/espoir-plan.pdf -layout my_layout
+ export map -o Outputs/test-plan.pdf -layout my_layout
  
 # export model -o Outputs/test.lox
 # export continuation-list -o Outputs/Continuations-test.html

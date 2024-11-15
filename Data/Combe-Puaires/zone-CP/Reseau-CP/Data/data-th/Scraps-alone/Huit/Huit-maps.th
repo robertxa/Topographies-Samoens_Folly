@@ -4,22 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Huit -title "Huit"
+map MP-Huit -title "Galerie du Huit"
 	SP-huit-1
 endmap
 
-map MC-Huit -title "Huit"
-	SC-Huit-1
-	break
-	SC-Huit-2
-	break
-	SC-Huit-2023-1
-	break
-	SC-gP18-1
-	break
-	SC-gP18-2
-	break
-	SC-PuitsGP18-1
-
-endmap
+ map MC-Huit -title "Galerie du Huit"
+ 	SC-huit-2
+ 	break
+ 	SC-huit-1
+ endmap
    

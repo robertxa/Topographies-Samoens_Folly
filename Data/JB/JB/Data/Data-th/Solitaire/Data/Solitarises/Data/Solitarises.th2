@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -1633.0 -2965.864 3637 215.13599999999997
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0 0 1.0} {0 {}} Dessin1.gif 0 {}
 ##XTHERION## xth_me_image_insert {1195.94 1 1.0} {-1373.5630000000003 0@solitaire2022.Solitarises} Solitarises-plan2023.xvi 0 {}
 ##XTHERION## xth_me_image_insert {1195.1599999999999 0 1.0} {-1375.1799999999998 0@solitaire2022.Solitarises} Solitarises-plan2023b.xvi 0 {}
@@ -2113,6 +2113,7 @@ line wall
   -548.75 -1997.75 -571.0 -1999.25 -580.0 -2002.5
   -589.0 -2005.75 -595.5 -1987.25 -600.5 -1982.75
   -605.5 -1978.25 -619.5 -1959.25 -625.0 -1955.0
+  smooth off
   altitude .
 endline
 
@@ -2577,6 +2578,7 @@ endline
 line pit
   -746.0 -1997.5
   -746.0 -1997.5 -739.0 -1989.5 -742.5 -1982.5
+  smooth off
 endline
 
 line wall
@@ -2592,6 +2594,7 @@ endline
 line wall -subtype pit
   -739.5 -2024.0
   -745.25 -2015.5 -749.0 -2004.25 -746.0 -1997.5
+  smooth off
 endline
 
 line wall -subtype pit
@@ -2787,6 +2790,7 @@ line wall
   -648.25 -2034.75 -639.75 -2014.25 -635.5 -2013.25
   -631.25 -2012.25 -601.0 -2008.5 -594.5 -2006.5
   -588.0 -2004.5 -566.75 -2002.0 -566.75 -2000.25
+  smooth off
 endline
 
 line wall
@@ -2821,6 +2825,7 @@ point -490.71000000000004 -2013.114 station -name 15
 line pit
   -349.25 -1985.0
   -349.25 -1985.0 -351.0 -1997.75 -343.0 -2000.5
+  smooth off
 endline
 
 point -564.0 -1999.25 map-connection
@@ -2839,6 +2844,7 @@ line wall
   -439.0 -1997.75 -500.75 -1978.0 -509.75 -1983.0
   -518.75 -1988.0 -519.25 -1998.0 -528.25 -1998.75
   -537.25 -1999.5 -551.0 -2001.5 -562.25 -1997.75
+  smooth off
 endline
 
 point -341.22 -1985.784 station -name 8
@@ -2944,6 +2950,7 @@ line wall
   -236.25 -1992.25 -223.75 -1990.25 -214.25 -1988.0
   -204.75 -1985.75 -179.25 -1980.25 -171.25 -1978.75
   -163.25 -1977.25 -153.25 -1977.0 -149.5 -1972.0
+  smooth off
 endline
 
 point -122.32000000000016 -1940.454 station -name 11
@@ -3919,15 +3926,14 @@ line wall
   smooth off
 endline
 
-line wall -close on -subtype invisible
+line wall -subtype invisible
   3009.5 -299.0
   3007.5 -266.0
-  3009.5 -299.0
 endline
 
 line wall -subtype invisible
   3036.5 -290.5
-  3028.0 -286.5 3016.0 -296.25 3009.5 -299.0
+  3028.0 -286.5 3026.5 -293.0 3009.5 -299.0
   smooth off
 endline
 

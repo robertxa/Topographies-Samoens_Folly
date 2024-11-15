@@ -81,14 +81,6 @@ map MP-espoir -title "Réseau de l'Espoir'"
 	SP-homjct-2 #@ReseauCP
 endmap
 
-map MP-huit -title "Galerie du Huit"
-	SP-huit-1 #@ReseauCP
-	#break
-	#SP-Huit-2 #@ReseauCP
-	#break
-	#SP-Huit-3 #@ReseauCP
-endmap
-
 map MP-CP16 -title "CP16"
 	SP-CP16-4 #@ReseauCP
 	break
@@ -173,5 +165,5 @@ map MP-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	break
 	MP-RivTeteHomme
 	break
-	MP-huit
+	MP-Huit@Huit
 endmap

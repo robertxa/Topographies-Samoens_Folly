@@ -72,6 +72,9 @@ layout my_layout-coupe
 
 	color map-fg altitude
 	color-legend smooth
+	debug scrap-names
+	  color map-fg scraps
+      color-legend off
 
 	grid bottom
 	grid-size 100 100 100 m
