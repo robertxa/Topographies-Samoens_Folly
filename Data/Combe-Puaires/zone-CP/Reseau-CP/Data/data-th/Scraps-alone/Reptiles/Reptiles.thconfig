@@ -113,7 +113,8 @@ layout my_layout
 	# La manchette a des "points cardinaux" : n, s, ne, sw, etc.
 	# Il faut specifier un de ces points 
 	#map-header 100 -80 se
-	map-header 30 30 nw
+	#map-header 30 30 nw
+	map-header 70 60 se
    
 	# arrière plan de la manchette
 	map-header-bg off

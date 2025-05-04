@@ -24,7 +24,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
   
-   doc-title "Aval Aiguilles"
+   doc-title "Courte Echelle"
    doc-author "Xavier Robert"
    cs UTM32
    base-scale 1 1000
@@ -43,8 +43,8 @@ layout my_layout
   map-header 0 00 nw
   map-header-bg off
   layers on
-  #symbol-hide line survey
-  debug station-names
+  symbol-hide line survey
+  #debug station-names
 
  # grid-size 100 100 100 m
    grid off
@@ -56,7 +56,7 @@ layout my_layout
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Gouffre Jean-Bernard} 		
+ 		\cavename={Galerie de la Courte Echelle} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    endcode  
@@ -70,7 +70,7 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-   doc-title "Aval Aiguilles"
+   doc-title "Courte Echelle"
    doc-author "Xavier Robert"
    cs UTM32
    base-scale 1 1000
@@ -86,12 +86,12 @@ layout my_layout-coupe
   statistics topo-length off
    statistics copyright all
   legend on
-     legend-width 21 cm
+     legend-width 14.5 cm
   map-header 0 00 nw
   map-header-bg off
   layers on
-  #symbol-hide line survey
-  debug station-names
+  symbol-hide line survey
+  #debug station-names
 
  # grid-size 100 100 100 m
    grid off 
@@ -103,18 +103,19 @@ layout my_layout-coupe
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Gouffre Jean-Bernard} 		
+ 		\cavename={Galerie de la Courte Echelle} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    endcode  
  
 endlayout
 
- 
+ select MP-Courte-Echelle@Courte-Echelle
+ select MC-Courte-Echelle@Courte-Echelle
+   
+ #export map -fmt xvi -layout xviexport -o Data/Courte-Echelle-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o Data/Courte-Echelle-coupe.xvi
   
- #export map -fmt xvi -layout xviexport -o Data/Courte-Echelle-map2013.xvi
- #export map -projection extended -fmt xvi -layout xviexport -o Data/Courte-Echelle-coupe.xvi
-  
- export map -o Outputs/Courte-Echelle-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/Courte-Echelle-coupe.pdf
+ export map -o Outputs/Courte-Echelle-plan2025.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/Courte-Echelle-coupe2025.pdf
  export model -o Outputs/Courte-Echelle.lox

@@ -37,7 +37,7 @@ source Data/jb.th
 input ../../../config.thc 
 
 # Add the entrance coordinates
-input legendes/entrances_coordinates.th
+#input legendes/entrances_coordinates.th
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles
@@ -59,7 +59,7 @@ endlayout
 #debut de la definition du layout "my_layout"
 layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy headerl 			# Pour modifier le header/cartouche
 	copy header_coupe 
@@ -122,7 +122,6 @@ layout my_layout
   
   # Auteur 
   doc-author "Xavier Robert"
-
   # Titule
   doc-title "Gouffre Jean-Bernard - Coupe développée"
 
@@ -164,9 +163,10 @@ layout my_layout
   # Afficher les statistiques d'explo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs
   statistics explo-length off
-
   # Afficher le developpement et la profondeur de la cavite
   statistics topo-length off
+  # Afficher un copyright
+  statistics copyright all
   
   # Modifier l'aspect et les données des statistiques de longueur affichees
   #code tex-map
@@ -174,9 +174,6 @@ layout my_layout
   #+ 150\thinspace{}m estimés}
   #     \cavedepth{-1602\thinspace{}m}
   #   endcode  
-  
-  # Afficher un copyright
-  statistics copyright all
   
   # Dessin ou pas du cheminement topo
   symbol-hide line survey
@@ -186,9 +183,6 @@ layout my_layout
     #color-legend off
   color map-fg altitude
 	symbol-hide point rope
-
- # origin 12 22 0 m
- # origin-label 100 K
 
   layers on
               
@@ -210,7 +204,7 @@ layout my_layout
   \else % if not empty keep the value set by therion, or assign an override cavename here
   \fi
   \newtoks\club \club={Groupe Spéléologique Vulcain}
-  \newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2011-2024)}
+  \newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2011-2025)}
   \newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
   \newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
   endcode   
@@ -234,7 +228,7 @@ endlayout
 # Export du fichier pdf de la coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MC-JB-coupe-tot@Jean-Bernard
- export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2024-coupe.pdf
- #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2023-coupe-continuations.pdf
- export continuation-list -o Outputs/Lists/Continuations-coupe2024.html
- #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2023-coupe-STATIONS.pdf
+ export map -projection extended -fmt pdf -layout my_layout -o Outputs/2D/jb-2025-coupe.pdf
+ #export map -projection extended -fmt pdf -layout my_layout-continuations -o Outputs/2D/jb-2025-coupe-continuations.pdf
+ export continuation-list -o Outputs/Lists/Continuations-coupe2025.html
+ #export map -projection extended -fmt pdf -layout my_layout -o Outputs/jb-2025-coupe-STATIONS.pdf

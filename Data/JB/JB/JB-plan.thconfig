@@ -63,7 +63,7 @@ layout my_layout
 
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig		# Pour modifier les symboles
-	copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
+	#copy Coords_Header_JBJB	# Pour rajouter les coordonnées des entrées
 	copy headerl 			# Pour modifier le header/cartouche
 	copy langue-fr			# Pour avoir la langue française dans le header et les légendes
 
@@ -182,6 +182,9 @@ layout my_layout
 	color-legend smooth
 	symbol-hide point rope
 
+	#debug on
+	symbol-hide point station-name
+
 	layers on
                 
 	# Titre                         
@@ -200,7 +203,7 @@ layout my_layout
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2011-2024)}
+		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2011-2025)}
 		\newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
 		\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 		
@@ -256,9 +259,9 @@ endlayout
 #  select MP-JB-rev@jb -map-level 0
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 select MP-JB-plan-tot@Jean-Bernard
-export map -projection plan -fmt pdf -o Outputs/2D/jb-2024-plan1000.pdf -layout my_layout
-#export map -projection plan -fmt pdf -o Outputs/2D/jb-2023-plan1000_Continuations.pdf -layout my_layout-continuations
-#export map -projection plan -fmt pdf -o Outputs/2D/jb-2023-plan5000.pdf -layout my_layout
+export map -projection plan -fmt pdf -o Outputs/2D/jb-2025-plan1000.pdf -layout my_layout
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-2025-plan1000_Continuations.pdf -layout my_layout-continuations
+#export map -projection plan -fmt pdf -o Outputs/2D/jb-2025-plan5000.pdf -layout my_layout
 
 # Export des fichiers ESRI
 #export model -fmt esri -o Outputs/3D/JB #-layout my_layout
@@ -268,16 +271,16 @@ export map -proj plan -fmt esri -o Outputs/ESRI #-layout my_layout
 export cave-list -location on -o Outputs/ESRI/Caves.txt
 
 # Export du fichier 3d pour Loch
-export model -o Outputs/3D/jb-Xav-2024.lox
+export model -o Outputs/3D/jb-Xav-2025.lox
 
 # Export des fichiers kml
-export map -fmt kml -layout layout-kml -o Outputs/2D/jb-Xav-2024.kml
-export model -fmt kml -o Outputs/2D/jb_m-Xav-2024.kml -enable all
+export map -fmt kml -layout layout-kml -o Outputs/2D/jb-Xav-2025.kml
+export model -fmt kml -o Outputs/2D/jb_m-Xav-2025.kml -enable all
 
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-#export database -o Outputs/Lists/DatabaseJB-2022.sql
-export continuation-list -o Outputs/Lists/Continuations-JB-plan-2024.html
-export survey-list -location on -o Outputs/Lists/Topographies_2024.html
-#export cave-list -location on -o Outputs/Lists/Cavites_2023.html
+#export database -o Outputs/Lists/DatabaseJB-2025.sql
+export continuation-list -o Outputs/Lists/Continuations-JB-plan-2025.html
+export survey-list -location on -o Outputs/Lists/Topographies_2025.html
+#export cave-list -location on -o Outputs/Lists/Cavites_2025.html

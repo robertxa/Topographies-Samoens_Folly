@@ -109,24 +109,25 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, entrees_rese
 	for line in f:
 		# first, complete cavesinfo dictionnary
 		for item in cavesinfo.keys():
-			#if item == 'MV' and 'Gouffre des Morts-Vivants' in line: print(cavesinfo[item]['Nom'], line)
-			#if cavesinfo[item]['Nom'].strip() in line:
-			if item in sum(list(caves.values()), []):
-				cavesinfo[item]['Devel'] = line.split('\t')[1]
-				cavesinfo[item]['Deniv'] = line.split('\t')[2]
-				if line.split('\t')[3] != '':
-					cavesinfo[item]['Explored'] = line.split('\t')[3]
-				else:
-					cavesinfo[item]['Explored'] = 0
-			else:
-				if cavesinfo[item]['Nom'] in line.split('\t')[0]:
+			if item in line:
+				#if item == 'MV' and 'Gouffre des Morts-Vivants' in line: print(cavesinfo[item]['Nom'], line)
+				#if cavesinfo[item]['Nom'].strip() in line:
+				if item in sum(list(caves.values()), []):
 					cavesinfo[item]['Devel'] = line.split('\t')[1]
 					cavesinfo[item]['Deniv'] = line.split('\t')[2]
 					if line.split('\t')[3] != '':
 						cavesinfo[item]['Explored'] = line.split('\t')[3]
 					else:
 						cavesinfo[item]['Explored'] = 0
-				
+				else:
+					if cavesinfo[item]['Nom'] in line.split('\t')[0]:
+						cavesinfo[item]['Devel'] = line.split('\t')[1]
+						cavesinfo[item]['Deniv'] = line.split('\t')[2]
+						if line.split('\t')[3] != '':
+							cavesinfo[item]['Explored'] = line.split('\t')[3]
+						else:
+							cavesinfo[item]['Explored'] = 0
+		
 		for item in caves.values():
 			for cavename in item:
 				if line.split()[0] == cavename and cavename not in (JB_entrances + CPres_entrances + CP6_entrances + LP9_entrances + A21_entrances + Mirolda_entrances):
@@ -142,12 +143,15 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, entrees_rese
 		# Now, get the data for each entire system
 		for item in systsinfo.keys():
 			if systsinfo[item]['Nom'] in line:
+				#print (item, systsinfo[item]['Nom'], line, line.split('\t')[1])
 				systsinfo[item]['Devel']   = line.split('\t')[1]
 				systsinfo[item]['Deniv']   = line.split('\t')[2]
 			if line.split('\t')[3] != '':
 				systsinfo[item]['Explored'] = line.split('\t')[3]
 			else:
 				systsinfo[item]['Explored'] = 0
+			
+			print(systsinfo[item])
 
 	# Créer le schéma des shapefiles
 	schema = { 'geometry': 'Point', 'properties': { 'LocationID': 'str',
@@ -176,21 +180,40 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, entrees_rese
 							if cave in JB_entrances:
 								reseau = 'Jean Bernard'
 								item = 'JB'
+								devel = systsinfo[item]['Devel']
+								deniv = systsinfo[item]['Deniv']
+								explored = systsinfo[item]['Explored']
 							elif cave in CPres_entrances:
 								reseau = 'Combe aux Puaires'
 								item = 'CP'
+								devel = systsinfo[item]['Devel']
+								deniv = systsinfo[item]['Deniv']
+								explored = systsinfo[item]['Explored']
+							
 							elif cave in CP6_entrances:
 								reseau : 'CP6 - CP53'
 								item = 'CP6'
+								devel = systsinfo[item]['Devel']
+								deniv = systsinfo[item]['Deniv']
+								explored = systsinfo[item]['Explored']
 							elif cave in LP9_entrances:
 								reseau : 'LP9 - CP39'
 								item = 'LP9'
+								devel = systsinfo[item]['Devel']
+								deniv = systsinfo[item]['Deniv']
+								explored = systsinfo[item]['Explored']
 							elif cave in A21_entrances:
 								reseau = 'A21 - A24'
 								item = 'A21'
+								devel = systsinfo[item]['Devel']
+								deniv = systsinfo[item]['Deniv']
+								explored = systsinfo[item]['Explored']
 							elif cave in Mirolda_entrances:
 								reseau = 'Mirolda - Lucien Bouclier'
 								item = 'Mirolda'
+								devel = systsinfo[item]['Devel']
+								deniv = systsinfo[item]['Deniv']
+								explored = systsinfo[item]['Explored']
 							else:
 								item =''
 								reseau = ''
@@ -201,11 +224,13 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, entrees_rese
 								else:
 									explored = 0
 
-							if item != '':
-								print(item, cave, line, line.split('\t')[5])
-								devel = float(cavesinfo[item]['Devel'])
-								deniv = float(cavesinfo[item]['Deniv'])
-								explored = float(cavesinfo[item]['Explored'])
+							
+							#if item != '' and item in cavesinfo.keys():
+							#	print(item, cave, line, line.split('\t')[5])
+							#	print(cavesinfo[item])
+							#	devel = float(cavesinfo[item]['Devel'])
+							#	deniv = float(cavesinfo[item]['Deniv'])
+							#	explored = float(cavesinfo[item]['Explored'])
 						
 							# elif(line.split('\t')[1]) != '' and (line.split('\t')[5]) == '':		
 							# 	if cave in JB_entrances:
@@ -243,7 +268,7 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, entrees_rese
 							# 		explored = float(cavesinfo[item]['Explored'])
 
 							# Extract coordinates, alt, length, depth
-							print(cave, line)
+							#print(cave, line)
 							point = Point(float(line.split('\t')[4]), float(line.split('\t')[5]))
 							
 							prop = {'LocationID': cave,
@@ -272,14 +297,17 @@ def ThExtractEntrances(inputfile, pathshp, outpath, systems, caves, entrees_rese
 								  'Devel': 'float',
 								  'Explored': 'float',
 								  'Deniv': 'float'}}
+
 	# Make a new shapefile instance
+	print(cavesinfo)
 	with fiona.open(shpout, 'w',crs=crs, driver='GPKG', schema=Newschema, encoding = 'utf8') as output:
 		# Find the line corresponding to each big cave
 		for cave in list(cavesinfo.keys()):
 			# Extract coordinates, alt, length, depth
 			#point = Point(float(line.split('\t')[4]), float(line.split('\t')[5]))
 			point = Point(cavesinfo[cave]['Point'][0], cavesinfo[cave]['Point'][1])
-			#print(cave, cavesinfo[cave])
+			print(cave, cavesinfo[cave])
+			#print(cave)
 			prop = {'LocationID': cavesinfo[cave]['Nom'],
 					'Nom': cavesinfo[cave]['Nom'], 
 					'System': cavesinfo[cave]['System'],
@@ -326,9 +354,21 @@ if __name__ == u'__main__':
 	pathshp = '../../Outputs/SHP/therion/'
 	# outpath: path where we will store the new shapefiles produced by this script
 	outpath = '../../Outputs/SHP/GPKG/'
+
+	# crs: projected coordinates system to use for the new shapefiles
+	crs = 'epsg:32632'	# UTM32N
+
 	# systems: list of the karstic systems to work on; 
 	# 		   theses names are the names used in the Therion survey definition
 	systems = ['SynclinalJB', 'SystemeCP', 'SystemeA21', 'SystemeAV', 'SystemMirolda']
+
+	items = {'SynclinalJB'   : 'JB', 
+			 'SystemeCP'     : 'CP',
+			 'SystemeA21'    : 'A21', 
+			 'SystemeAV'     : 'AV',
+			 'SystemMirolda' : 'Mirolda',
+			 'LP9 - CP39'    : 'LP9',
+			 'CP6 - CP53'    : 'CP6'}
 
 	# entrees_reseaux: list of all the entrances of a multi-entrances cave
 	entrees_reseaux = {'JB'         : ['V4', 'V4bis', 'V6', 'V6b', 'V6ter', 'V15', 'J14', 'V11', 
@@ -345,6 +385,22 @@ if __name__ == u'__main__':
 									   'Entrée de la Falaise', 'Fenêtre']
 					  }
 	
+
+
+	cavesb = {'V4' : {system : 'SynclinalJB',
+					  entree_reseau : 'JB',
+					  item : "JB"},
+			'V4bis':{system : 'SynclinalJB',
+					  entree_reseau : 'JB',
+					  item : "JB"}
+			'V6':{system : 'SynclinalJB',
+					  entree_reseau : 'JB',
+					  item : "JB"}
+			'V6b':{system : 'SynclinalJB',
+					  entree_reseau : 'JB',
+					  item : "JB"}
+					  }
+
 	# caves: for each system defined in the Therion structure, names of the entrances to extract
 	caves = {'SynclinalJB' : ['V4', 'V4bis', 'V6', 'V6b', 'V6ter', 'J14', 'V11', "V15",
 							  'A14',
@@ -372,8 +428,6 @@ if __name__ == u'__main__':
 			#			 'Entrée de la Falaise', 'Fenêtre']
 			 'SystemeBossetan' : ["Antre d'Oddaz"]}
 
-	# crs: projected coordinates system to use for the new shapefiles
-	crs = 'epsg:32632'	# UTM32N
 				
 	# cavesinfo: for each cave, what and where to plot infos
 	#			 If a cave has multiple entrances, the name should be the same 
@@ -447,7 +501,7 @@ if __name__ == u'__main__':
 						   'Point'   : [327265, 5109190]}	#crs = 32632	# UTM32N
 				}
 	# systinfo: for each system, what and where to plot infos
-	systsinfo = {'JB' : {'Nom'     : 'Réseau du Jean Bernard',
+	systsinfo = {'JB' : {'Nom'     : 'Réseau du Jean-Bernard',
 						'System'  : 'Système du Jean Bernard', 
 						#'Point'   : [328750, 5107082]},	#crs = 32632	# UTM32N
 						'Point'   : [328750, 5107265]},	#crs = 32632	# UTM32N

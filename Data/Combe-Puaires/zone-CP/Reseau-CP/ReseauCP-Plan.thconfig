@@ -91,6 +91,7 @@ layout my_layout
 
    # echelle graphique 100 m ampleur
    scale-bar 200 m
+   scale-bar 100 m
   
    # Un commentaire a ajounter au titule,
   map-comment "<it>Plan<ss> - Samoëns, 74, France"
@@ -106,10 +107,12 @@ layout my_layout
    # pour tous les symboles, utilises ou pas, il faut indiquer "all".
    # "legend off" = pas de legende
   legend on
+  legend off
   
    # Par defaut, la legende est de 14 cm de largeur
-     legend-width 32 cm
-     legend-columns 4
+   #  legend-width 32 cm
+     legend-width 14.5 cm
+   #  legend-columns 4
 
   
    # Specification la position de la manchette : interieur
@@ -119,7 +122,8 @@ layout my_layout
    # 100 100, c est en haut, a droite
    # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
    # Il faut specifier un de ces points 
-  map-header 0 117 nw
+  #map-header 0 117 nw
+  map-header -40 117 nw
   
    # arrière plan de la manchette
   map-header-bg off
@@ -169,15 +173,15 @@ layout my_layout
  		\cavename={Réseau de la Combe aux Puaires : CP07, CP12, CP14, CP16 et CP19 bis} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
-   \newtoks\synth \synth={Christophe Ohl (1987), Stéphane Lips (2009), Xavier Robert (2023)}
+   #\newtoks\synth \synth={Christophe Ohl (1987), Stéphane Lips (2009), Xavier Robert (2023)}
    \newtoks\club \club={Groupe Spéléologique Vulcain}
-   \newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
-   \newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
+   #\newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
+   #\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
    endcode  
  
 	# Rajout des logos
-	map-image 65 70	nw	../../../../Logos/vulcain.jpg
-	map-image 80 75	nw	../../../../Logos/vulcain2.jpg 
+	#map-image 65 70	nw	../../../../Logos/vulcain.jpg
+	#map-image 80 75	nw	../../../../Logos/vulcain2.jpg 
 	
 endlayout
 
@@ -186,13 +190,18 @@ endlayout
 #export map -fmt xvi -layout xviexport -o data-th2/ReseauCP-map2020.xvi
 
 # Select maps
-	select MP-ReseauCP-total@ReseauCP
+	#select MP-ReseauCP-total@ReseauCP
+
+  select MP-EV82@ReseauCP
+  
 	
-export map -o Outputs/2D/ReseauCP-plan2024.pdf -layout my_layout
+#export map -o Outputs/2D/ReseauCP-plan2024.pdf -layout my_layout
+export map -o Outputs/2D/Reptiles-plan2024.pdf -layout my_layout
 #export map -o Outputs/2D/ReseauCP-plan2023-Continuations.pdf -layout my_layout
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Outputs/3D/ReseauCP -layout my_layout
+export map -proj plan -fmt esri -o Outputs/ReseauCP_SHP -layout my_layout
+export model -fmt esri -o Outputs/ReseauCP_SHP
  
 # Export du fichier 3d pour Loch
 export model -o Outputs/3D/reseauCP-2024.lox

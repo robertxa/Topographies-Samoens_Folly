@@ -1,0 +1,283 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 679.1814 364.2206
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {282.438 1 1.0} {78.74099999999999 0@Courte-Echelle.Courte-Echelle} Courte-Echelle-coupe.xvi 0 {}
+
+
+
+scrap SC-CourteE-1 -projection extended -station-names "" "@Courte-Echelle1991" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+point 145.0 136.25 label -orientation 30.5 -text "g. de la Courte Echelle"
+
+point 68.75 221.75 label -text "colm."
+
+point 64.0 207.0 narrow-end
+
+line wall -subtype clay
+  69.25 204.75
+  69.25 204.75 84.5 198.25 88.25 195.25
+  altitude .
+  92.0 192.25 125.0 173.0 125.0 173.0
+  smooth off
+  125.0 173.0 172.25 143.5 176.25 142.25
+  180.25 141.0 210.75 122.5 210.75 122.5
+  smooth off
+endline
+
+line wall -subtype presumed
+  126.75 178.5
+  126.75 178.5 84.5 203.0 80.75 204.0
+  77.0 205.0 69.25 208.25 69.25 208.25
+  smooth off
+endline
+
+line wall
+  216.25 135.75
+  216.25 135.75 179.0 151.75 169.0 156.25
+  159.0 160.75 135.75 173.0 126.75 178.5
+endline
+
+point 261.968 102.52099999999999 station -name 3
+
+point 237.418 121.02099999999999 station -name 2
+
+point 177.038 145.43099999999998 station -name 1
+
+point 129.888 172.641 station -name 0
+
+point 78.738 202.161 station -name 0b
+
+endscrap
+
+
+
+scrap SC-CourteE-2 -projection extended -station-names "" "@Courte-Echelle" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+line border -close on
+  295.0 76.25
+  299.75 75.0
+  303.0 70.25
+  292.25 71.25
+  295.0 76.25
+endline
+
+line wall
+  236.75 216.0
+  236.75 216.0 249.25 201.0 251.5 194.5
+  253.75 188.0 255.25 171.0 257.75 161.0
+  260.25 151.0 265.0 134.5 267.25 129.25
+  269.5 124.0 269.5 115.5 269.5 111.5
+  269.5 107.5 266.25 104.0 260.0 110.25
+  253.75 116.5 246.0 122.25 237.25 126.75
+  228.5 131.25 216.25 135.75 216.25 135.75
+  smooth off
+endline
+
+line wall
+  327.25 86.5
+  327.25 86.5 320.25 83.75 316.5 83.0
+  312.75 82.25 318.5 87.0 318.75 89.0
+  319.0 91.0 323.0 96.75 319.0 99.5
+  315.0 102.25 295.25 104.5 294.5 111.25
+  293.75 118.0 289.0 127.0 288.25 138.5
+  287.5 150.0 278.75 165.0 278.75 176.75
+  278.75 188.5 278.0 194.5 275.25 198.25
+  altitude .
+  272.5 202.0 270.0 205.0 266.5 209.75
+  263.0 214.5 259.0 220.5 259.0 220.5
+  smooth off
+endline
+
+point 243.75 231.5 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Courte Echelle" -text "Gros puits remontant, 30 m mini, départ au sommet ?"
+
+point 332.5 108.0 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Courte Echelle" -text "Départ en lucarne après E3"
+
+point 293.75 52.5 height -value [-5 m]
+
+point 300.25 173.0 height -value [+30? m]
+
+point 317.75 116.25 height -value [+3 m]
+
+point 240.0 85.25 height -value [+5 m]
+
+line rope
+  249.5 115.75
+  264.25 105.0
+  264.0 78.25
+endline
+
+line border
+  292.25 88.75
+  292.25 88.75 298.25 86.0 301.25 84.25
+  304.25 82.5 305.75 82.5 305.75 82.5
+  smooth off
+endline
+
+line rope
+  299.75 98.5
+  307.0 96.25
+  306.0 72.25
+endline
+
+area u:galerie
+  l33-305-99
+endarea
+
+line border -id l33-305-99 -close on
+  305.0 99.25
+  305.0 99.25 297.75 101.25 295.75 99.25
+  293.75 97.25 294.0 95.75 296.5 94.5
+  299.0 93.25 301.75 92.25 304.0 92.75
+  306.25 93.25 308.0 94.0 307.0 96.25
+  306.0 98.5 305.0 99.25 305.0 99.25
+  smooth off
+endline
+
+area u:galerie
+  l31-317-97
+endarea
+
+line border -id l31-317-97 -close on
+  317.25 97.0
+  317.25 97.0 312.0 92.75 314.5 90.75
+  317.0 88.75 319.25 90.25 319.0 92.25
+  318.75 94.25 317.25 97.0 317.25 97.0
+  smooth off
+endline
+
+point 323.25 61.0 breakdown-choke -orientation 298.4
+
+point 333.25 86.75 breakdown-choke -orientation 258.7
+
+line wall -subtype debris
+  314.75 79.25
+  314.75 79.25 324.0 79.75 325.0 80.5
+  326.0 81.25 327.75 84.25 327.75 84.25
+  smooth off
+endline
+
+line wall
+  321.0 64.25
+  321.0 64.25 314.25 68.5 313.0 71.5
+  311.75 74.5 312.0 79.0 314.75 79.25
+endline
+
+line wall
+  210.75 122.5
+  210.75 122.5 230.75 115.25 235.5 112.25
+  240.25 109.25 257.75 101.75 258.0 97.5
+  258.25 93.25 259.5 78.75 262.5 77.25
+  265.5 75.75 274.5 73.75 280.0 72.75
+endline
+
+line wall -subtype debris
+  280.0 72.75
+  285.5 71.75 287.25 68.5 293.0 67.25
+  altitude .
+  298.75 66.0 302.5 70.25 304.25 67.75
+  306.0 65.25 310.75 62.75 313.5 62.25
+  316.25 61.75 320.0 60.5 320.0 60.5
+  smooth off
+endline
+
+point 261.608 195.671 station -name 1
+
+point 323.348 82.28099999999999 station -name 4
+
+point 317.528 92.64099999999999 station -name 5
+
+point 298.898 77.091 station -name 2
+
+point 282.438 78.74099999999999 station -name 0
+
+point 218.708 123.03099999999999 station -name 3
+
+endscrap
+
+
+
+scrap SC-CourteE-3 -projection extended -station-names "" "@Courte-Echelle" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+point 451.5 103.75 label -text "R2"
+
+point 440.0 71.0 height -value [-10 m]
+
+point 308.5 98.25 stalactites
+
+point 322.5 96.75 stalactites
+
+point 339.25 94.0 stalactites
+
+point 367.75 92.75 stalactites
+
+point 439.25 88.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Courte Echelle" -text "Départ horizontal à mi-puits à atteindre ?"
+
+point 399.75 65.75 narrow-end
+
+line wall
+  431.25 88.75
+  431.25 88.75 424.5 87.0 424.5 90.25
+  424.5 93.5 423.25 98.5 424.0 101.75
+  424.75 105.0 425.75 105.0 430.0 106.0
+  434.25 107.0 440.5 107.5 440.5 110.25
+  440.5 113.0 442.5 113.75 445.25 114.75
+  448.0 115.75 452.5 118.25 456.0 118.5
+  459.5 118.75 468.25 118.5 468.25 118.5
+  smooth off
+endline
+
+line wall
+  409.5 57.75
+  altitude .
+  409.5 57.75 420.75 62.25 422.5 63.0
+  424.25 63.75 423.0 74.25 423.5 78.5
+  424.0 82.75 430.75 85.5 430.75 85.5
+  smooth off
+endline
+
+line wall
+  304.0 92.75
+  304.0 92.75 324.0 91.25 330.75 90.25
+  337.5 89.25 354.75 86.25 363.0 86.75
+  371.25 87.25 382.75 87.75 385.25 90.75
+  387.75 93.75 388.25 94.5 394.5 96.5
+  400.75 98.5 405.25 99.25 408.5 101.0
+  411.75 102.75 416.5 106.5 416.5 102.5
+  416.5 98.5 419.0 93.5 416.5 90.25
+  414.0 87.0 403.5 76.0 401.5 75.75
+endline
+
+line wall
+  467.75 125.0
+  467.75 125.0 461.0 124.0 456.75 124.0
+  452.5 124.0 454.75 123.0 449.25 122.5
+  443.75 122.0 435.5 119.0 432.0 116.5
+  428.5 114.0 423.0 110.0 420.5 111.0
+  418.0 112.0 418.25 113.0 412.5 111.75
+  406.75 110.5 401.75 106.5 393.5 103.0
+  385.25 99.5 368.25 93.5 362.5 93.5
+  356.75 93.5 355.5 92.5 343.25 94.25
+  331.0 96.0 317.75 98.25 314.0 98.75
+  310.25 99.25 305.0 99.25 305.0 99.25
+  smooth off
+endline
+
+point 478.658 121.261 station -name 13
+
+point 458.328 122.24099999999999 station -name 12
+
+point 418.028 63.50099999999999 station -name 11
+
+point 423.098 86.731 station -name 10
+
+point 419.588 104.291 station -name 9
+
+point 414.95799999999997 106.381 station -name 8
+
+point 359.828 89.291 station -name 7
+
+point 298.898 96.691 station -name 6
+
+endscrap
+
+

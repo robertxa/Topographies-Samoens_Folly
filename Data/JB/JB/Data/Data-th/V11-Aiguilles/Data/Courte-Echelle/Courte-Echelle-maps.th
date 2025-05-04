@@ -5,11 +5,17 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Courte-Echelle -title "Galerie de la Courte Echelle"
-	SP-aval-aiguilles4  
+	SP-CourteE-1
+	break
+	SP-CourteE-2  
 endmap
 
 
-#map MC-Courte-Echelle -title "Galerie de la Courte-Echelle"
-#	SC-Courte-Echelle-hc1	# scrap à nettoyer ?
-#endmap
+map MC-Courte-Echelle -title "Galerie de la Courte Echelle"
+	SC-CourteE-1
+	break
+	SC-CourteE-2
+	break
+	SC-CourteE-3
+endmap
    

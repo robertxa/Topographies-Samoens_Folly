@@ -15,6 +15,11 @@ survey V11-Aiguilles -title "V11 et galerie des Aiguilles"
 	### Le réseau des Aiguilles
 	#input Drawing-th2/Plan/aiguilles.th2
 
+	### La galerie de la Courte Echelle
+	input Data/Courte-Echelle/Courte-Echelle-tot.th
+	#	equate 13@Courte-Echelle.Courte-Echelle De.36@Aiguilles.Aiguilles
+	#	join SP-CourteE-2 SP-oublies
+
 	## Le méandre des Crawleurs
 	#input Drawing-th2/Plan/crawleurs.th2
 	#		join SP-Crawleuraval SP-Excentriques1

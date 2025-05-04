@@ -224,3 +224,8 @@ map MC-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	preview below MC-sirocco
 endmap
    
+map MC-EV82 -title "CP19bis et galerie des Reptiles"
+	MC-Reptiles@Reptiles
+	break
+	MC-CP19b@CP19b
+endmap

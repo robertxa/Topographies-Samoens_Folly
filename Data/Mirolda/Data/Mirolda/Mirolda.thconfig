@@ -56,7 +56,7 @@ endlayout
 layout my_layout
 	
 	# Rajout des coordonnées de l'entrée
-	copy Coords_Header_CDa
+	#copy Coords_Header_CDa
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl
@@ -141,6 +141,8 @@ layout my_layout
 	symbol-hide point rope
 	#debug station-names
 	symbol-hide line survey
+
+	#debug on
 	
 	layers on
 	
@@ -169,7 +171,7 @@ endlayout
 
 layout layout-coupe
 	# Rajout des coordonnées de l'entrée
-	copy Coords_Header_CDa
+	#copy Coords_Header_CDa
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe
@@ -398,6 +400,7 @@ select MC-Mirolda-coupe-tot@Mirolda
 
 # Export des fichiers pdf, plan et coupe.
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
+#export map -proj plan -fmt pdf -o Outputs/Mirolda-planDEBUG.pdf -layout my_layout
 export map -proj plan -fmt pdf -o Outputs/Mirolda-plan.pdf -layout my_layout
 export map -proj plan -fmt pdf -o Outputs/Mirolda-plan-continuations.pdf -layout my_layout-continuations
 export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Mirolda-coupe.pdf

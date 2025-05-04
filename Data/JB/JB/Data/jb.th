@@ -69,6 +69,14 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	## Le réseau des Aiguilles
 	input Drawing-th2/Plan/aiguilles.th2
 
+	### La galerie de la Courte Echelle
+	#input Data/Courte-Echelle/Courte-Echelle-tot.th
+		#equate 13, 14 ou 15@Courte-Echelle.Courte-Echelle ??@Aiguilles.Aiguilles
+		#equate 13@Courte-Echelle.Courte-Echelle.V11-Aiguilles De.36@Aiguilles.Aiguilles
+		equate 13@Courte-Echelle.Courte-Echelle.V11-Aiguilles De.36@jb-amonts2
+		join SP-CourteE-2@Courte-Echelle.V11-Aiguilles SP-oublies
+		#join SP-CourteE-2 SP-oublies
+
 	## Le méandre des Crawleurs
 	input Drawing-th2/Plan/crawleurs.th2
 		join SP-Crawleuraval SP-Excentriques1

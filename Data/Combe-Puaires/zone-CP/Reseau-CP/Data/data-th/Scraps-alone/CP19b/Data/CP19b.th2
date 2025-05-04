@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 3455.0299999999997 3254.7799999999997
+##XTHERION## xth_me_area_adjust 415.7500000000001 263.27999999999963 3455.0299999999997 3254.7799999999997
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {3327.0299999999997 1 1.0} {3126.7799999999997 1.0@ReseauCP.ReseauCP} ReseauCP-map.xvi 0 {}
 ##XTHERION## xth_me_image_insert {1115.401 0 1.0} {1086.7099999999996 CP19b@CP19b.CP19b} CP19b-map2024.xvi 0 {}
@@ -120,6 +120,8 @@ point 1131.5 1043.75 pebbles -scale xs
 point 1160.25 1058.5 entrance -orientation 253.1
 
 point 1115.5 1045.5 continuation
+
+point 1151.95 1056.39 map-connection
 
 line wall -subtype invisible
   1153.25 1052.25
@@ -422,6 +424,8 @@ line wall
   1050.5 1012.5
 endline
 
+point 921.0 981.5 map-connection
+
 line wall
   1050.5 1012.5
   1046.75 1010.25 1043.0 1009.75 1040.75 1007.75
@@ -641,6 +645,7 @@ point 991.75 941.25 height -value [-42 m]
 line wall -subtype invisible
   966.0 945.25
   966.0 945.25 969.25 943.75 969.0 948.0
+  smooth off
 endline
 
 line wall
@@ -663,6 +668,7 @@ endline
 line pit
   970.5 950.0
   970.5 950.0 967.25 948.75 964.75 944.0
+  smooth off
 endline
 
 line wall
@@ -677,6 +683,7 @@ line wall
   958.25 963.0 956.5 959.25 957.5 956.75
   958.5 954.25 959.75 950.0 961.5 947.75
   963.25 945.5 965.0 948.75 966.0 945.25
+  smooth off
 endline
 
 point 965.01 950.04 station -name B.77

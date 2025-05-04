@@ -1,0 +1,366 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 442.9608 380.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {168.588 1 1.0} {74.68199999999999 0@Courte-Echelle.Courte-Echelle} Courte-Echelle-map.xvi 0 {}
+
+
+
+scrap SP-CourteE-1 -projection plan -station-names "" "@Courte-Echelle1991" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+point 38.75 148.0 label -text "<center>g. de la<br>Courte Echelle"
+
+line wall -subtype presumed
+  36.5 241.25
+  36.5 241.25 52.75 211.0 57.25 205.0
+  61.75 199.0 69.75 189.5 69.75 189.5
+  smooth off
+endline
+
+line wall -subtype presumed
+  80.0 197.0
+  80.0 197.0 59.25 227.0 54.75 231.0
+  50.25 235.0 44.5 245.75 44.5 245.75
+  smooth off
+  altitude .
+endline
+
+line wall
+  69.75 189.5
+  69.75 189.5 97.75 152.5 101.75 146.25
+  105.75 140.0 119.0 125.25 120.25 122.75
+endline
+
+point 20.75 235.75 label -text "colm."
+
+point 37.25 251.0 narrow-end
+
+point 45.75 238.75 clay
+
+point 39.5 243.5 clay
+
+point 49.0 223.5 clay
+
+point 66.25 212.25 clay
+
+point 70.25 194.5 clay
+
+point 86.75 181.5 clay
+
+point 95.5 163.75 clay
+
+point 111.75 142.0 clay
+
+line wall
+  125.75 133.0
+  125.75 133.0 110.5 152.0 104.75 160.0
+  99.0 168.0 82.75 193.75 80.0 197.0
+endline
+
+point 140.868 107.52199999999999 station -name 2
+
+point 102.04799999999999 153.742 station -name 1
+
+point 74.99799999999999 192.402 station -name 0
+
+point 45.66799999999998 234.29199999999997 station -name 0b
+
+endscrap
+
+
+
+scrap SP-CourteE-2 -projection plan -station-names "" "@Courte-Echelle" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+point 276.028 196.892 station -name 13
+
+point 257.288 189.012 station -name 12
+
+point 246.728 155.272 station -name 10
+
+point 247.59799999999998 151.38199999999998 station -name 11
+
+point 246.09799999999998 151.85199999999998 station -name 9
+
+point 245.748 147.202 station -name 8
+
+point 243.148 92.16199999999998 station -name 7
+
+point 182.28799999999998 94.37199999999999 station -name 6
+
+point 190.78799999999998 51.69199999999999 station -name 5
+
+point 180.238 35.511999999999986 station -name 4
+
+point 173.658 59.05199999999999 station -name 2
+
+point 167.75799999999998 53.90199999999999 station -name 1
+
+point 168.588 74.68199999999999 station -name 0
+
+line pit
+  262.0 176.5
+  262.0 176.5 253.75 182.75 250.0 179.75
+  246.25 176.75 242.5 173.25 237.5 172.75
+endline
+
+line contour
+  262.75 107.75
+  262.75 107.75 243.75 115.5 235.0 108.5
+endline
+
+line contour
+  259.5 116.75
+  259.5 116.75 244.25 128.5 234.75 114.25
+endline
+
+line contour
+  257.25 131.0
+  257.25 131.0 238.5 139.25 234.0 127.25
+endline
+
+line contour
+  155.0 97.5
+  155.0 97.5 144.5 99.25 141.75 90.5
+endline
+
+line contour
+  145.25 111.0
+  145.25 111.0 133.0 113.0 133.5 100.0
+endline
+
+line contour
+  138.0 121.25
+  138.0 121.25 124.0 120.0 123.75 112.0
+endline
+
+line pit
+endline
+
+line pit
+  170.25 81.75
+  170.25 81.75 170.0 83.25 162.25 84.0
+  154.5 84.75 149.5 84.25 146.25 80.75
+endline
+
+line pit
+  182.5 66.75
+  182.5 66.75 180.75 78.0 175.25 79.75
+  169.75 81.5 163.0 88.25 163.0 88.25
+  smooth off
+endline
+
+line pit
+  183.25 50.5
+  183.25 50.5 181.25 51.75 182.5 55.75
+  183.75 59.75 183.5 62.75 183.5 62.75
+  smooth off
+endline
+
+line wall
+  234.5 162.75
+  234.5 162.75 238.75 159.25 239.5 156.25
+  240.25 153.25 240.75 144.25 239.25 139.75
+  237.75 135.25 236.25 136.25 236.75 126.5
+  237.25 116.75 240.5 111.25 239.5 107.0
+  238.5 102.75 238.0 102.0 232.0 99.25
+  226.0 96.5 224.0 99.0 217.75 99.75
+  211.5 100.5 210.25 104.0 202.25 102.75
+  194.25 101.5 171.25 94.25 168.25 91.5
+  165.25 88.75 165.0 84.5 161.5 87.0
+  158.0 89.5 149.5 99.5 144.75 106.25
+  140.0 113.0 125.75 133.0 125.75 133.0
+  smooth off
+endline
+
+line wall
+  267.75 195.75
+  267.75 195.75 253.75 190.0 249.75 186.75
+  altitude .
+  245.75 183.5 241.25 179.0 240.75 172.5
+  240.25 166.0 242.25 158.25 240.0 160.25
+  237.75 162.25 236.25 164.5 236.25 164.5
+  smooth off
+endline
+
+line fault -clip off
+  195.25 17.0
+  122.5 95.0
+endline
+
+line contour
+  167.5 41.75
+  167.5 41.75 176.5 51.0 184.5 48.75
+endline
+
+line contour
+  175.5 33.0
+  175.5 33.0 179.0 44.5 188.75 41.5
+endline
+
+line contour
+  172.75 36.25
+  172.75 36.25 176.75 48.5 186.5 46.25
+endline
+
+line floor-meander
+  174.5 83.75
+  174.5 83.75 170.5 78.0 172.0 73.5
+  173.5 69.0 178.25 59.5 178.25 59.5
+  smooth off
+  176.75 54.25
+endline
+
+line floor-meander
+  247.75 147.5
+  247.75 147.5 245.0 144.25 245.75 138.5
+  246.5 132.75 248.75 131.5 248.75 125.5
+  248.75 119.5 252.5 114.0 251.75 108.25
+  251.0 102.5 243.25 96.25 243.25 96.25
+  smooth off
+endline
+
+line floor-meander
+  236.5 162.75
+  242.75 156.0
+endline
+
+line pit -close on
+  245.25 157.75
+  245.25 157.75 242.0 157.5 242.5 152.25
+  243.0 147.0 245.25 147.0 247.75 147.5
+  250.25 148.0 250.75 151.0 249.5 153.25
+  248.25 155.5 245.25 157.75 245.25 157.75
+  smooth off
+endline
+
+line wall
+  196.0 57.0
+  196.0 57.0 187.25 57.75 185.0 58.25
+  182.75 58.75 178.5 63.25 180.0 66.25
+  181.5 69.25 183.5 72.75 183.75 78.0
+  184.0 83.25 184.25 86.75 188.75 87.75
+  193.25 88.75 204.25 89.0 209.5 88.75
+  214.75 88.5 228.0 85.0 233.25 85.0
+  altitude .
+  238.5 85.0 244.5 91.75 248.5 95.25
+  252.5 98.75 257.0 100.0 257.25 110.0
+  257.5 120.0 258.0 118.5 255.5 127.0
+  253.0 135.5 248.0 141.25 250.25 146.0
+  252.5 150.75 254.75 152.5 254.75 159.5
+  254.75 166.5 254.75 167.25 256.25 172.0
+  257.75 176.75 258.0 178.0 262.75 180.25
+  267.5 182.5 272.75 183.75 272.75 183.75
+  smooth off
+endline
+
+line pit
+  192.25 46.75
+  192.25 46.75 188.25 55.0 190.25 58.75
+endline
+
+line wall
+  187.75 38.75
+  187.75 38.75 179.0 54.75 182.0 52.75
+  185.0 50.75 190.25 47.0 191.5 47.75
+  192.75 48.5 196.25 51.75 196.25 51.75
+  smooth off
+endline
+
+point 145.25 101.0 clay
+
+point 133.75 110.5 clay
+
+point 128.0 122.5 clay
+
+point 240.0 125.0 stalactites
+
+point 231.5 89.0 stalactites
+
+point 209.75 98.5 stalactites
+
+point 191.5 97.5 stalactites
+
+point 265.5 156.5 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Courte Echelle" -text "Départ horizontal à mi-puits à atteindre ?"
+
+point 143.5 54.25 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Courte Echelle" -text "Gros puits remontant, 30 m mini, départ au sommet ?"
+
+point 205.5 54.75 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Courte Echelle" -text "Départ en lucarne après E3"
+
+area blocks
+  l65-177-30
+endarea
+
+line label -id l65-177-30 -close on
+  177.0 29.75
+  177.0 29.75 178.25 42.0 182.0 42.5
+  185.75 43.0 181.25 56.5 178.25 54.75
+  175.25 53.0 170.75 50.0 168.25 55.5
+  165.75 61.0 165.5 68.0 165.0 72.5
+  164.5 77.0 159.5 84.25 156.25 82.0
+  153.0 79.75 144.25 76.5 144.25 70.5
+  144.25 64.5 156.75 47.0 160.25 44.0
+  163.75 41.0 177.0 29.75 177.0 29.75
+  smooth off
+endline
+
+line border
+  171.75 76.0
+  171.75 76.0 171.25 76.0 168.0 77.75
+  164.75 79.5 162.25 84.0 162.25 84.0
+  smooth off
+endline
+
+point 186.0 34.5 breakdown-choke -orientation 327.7
+
+line chimney -close on
+  159.0 73.0
+  159.0 73.0 153.25 63.25 157.0 59.5
+  160.75 55.75 166.75 47.0 170.25 50.0
+  173.75 53.0 176.75 58.0 174.25 63.75
+  171.75 69.5 168.75 74.0 164.75 74.0
+  160.75 74.0 159.0 73.0 159.0 73.0
+  smooth off
+endline
+
+point 230.0 171.75 narrow-end
+
+point 266.0 147.0 height -value [-10 m]
+
+point 141.25 40.5 height -value [+30? m]
+
+point 193.75 65.25 height -value [+3 m]
+
+line border
+  177.0 74.25
+  177.0 74.25 178.0 66.25 179.25 61.25
+  180.5 56.25 182.0 52.75 182.0 52.75
+  smooth off
+endline
+
+line border -close on
+  176.75 50.25
+  176.75 50.25 174.5 60.75 172.75 65.0
+  171.0 69.25 166.25 71.25 166.5 68.75
+  166.75 66.25 170.0 59.75 171.75 55.5
+  173.5 51.25 176.75 50.25 176.75 50.25
+  smooth off
+endline
+
+point 124.0 77.75 label -text "R5"
+
+point 170.25 105.75 label -text "R5"
+
+line wall
+  120.25 122.75
+  120.25 122.75 137.75 102.25 140.75 97.0
+  143.75 91.75 148.5 87.75 148.0 82.5
+  147.5 77.25 146.25 73.5 147.25 69.25
+  148.25 65.0 179.25 33.75 179.25 33.75
+  smooth off
+  altitude .
+endline
+
+point 123.978 121.97199999999998 station -name 3
+
+endscrap
+
+

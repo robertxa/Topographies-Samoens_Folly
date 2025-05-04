@@ -7,13 +7,15 @@ encoding  utf-8
 survey Courte-Echelle -title "Galerie de la Courte Echelle"
 
     input Data/Courte-Echelle.th
+    input Data/Courte-Echelle1991.th
+        equate 0b@Courte-Echelle 4@Courte-Echelle1991
 
     # Dessins en plan
-    #input Data/Courte-Echelle.th2
+    input Data/Courte-Echelle.th2
     # Dessins en coupe
-    #input Data/Courte-Echelle-coupe.th2
+    input Data/Courte-Echelle-coupe.th2
     
     # Add maps
-    #input Courte-Echelle-maps.th
+    input Courte-Echelle-maps.th
 
 endsurvey

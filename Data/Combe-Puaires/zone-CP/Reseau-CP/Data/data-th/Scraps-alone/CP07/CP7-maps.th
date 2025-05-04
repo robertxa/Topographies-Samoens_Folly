@@ -47,6 +47,12 @@ map MP-CP7-tot -title "CP7"
 	MP-PuitsGP18
 endmap
 
+map MP-CP7-tot-SD -title "CP7"
+	MP-CP7 [0 35 m] above
+	break
+	MP-PuitsGP18
+endmap
+
 
 map MC-CP7 -title "CP7"
 	SC-CP7-1

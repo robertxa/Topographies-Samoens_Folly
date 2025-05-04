@@ -1,0 +1,52 @@
+encoding utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ survey Courte-Echelle1991 -title "Galerie de la Courte Echelle ; 1991 + approx."
+    
+ centerline -title "g. Courte Echelle ; "
+  
+  date 1991.09.28
+    team "Bernard Lips"
+    team "Robert Sonney"
+  #explo-date 2012.07.15
+  #  explo-team "Stéphane Lips"
+  #explo-date 2012.11.02
+  #  explo-team "Xavier Robert"
+  #  explo-team "Frédéric Delègue"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   calibrate clino 90 -1
+
+   data normal from to length compass clino #left right up down
+   extend left
+   
+   flags approximate
+   extend left
+    0 0b  15  325 60  # suite cf, étroit, colm ; jonctionnerait avec l'aval du Couteau Grenoblois
+   flags not approximate
+   extend right
+   0  1 13.83  145 120
+   1  2 16.54  140 112
+   2  3 7.81 150 127
+   3  4 6.43 150 160  # base du ressaut de la Courte Echelle
+
+   #flags approximate
+   ## Topographie manquante dans les notes, 
+   ##   remplacé par une estimation à partir de la topographie de 1991
+   # GD  GD1 8 220 110   # Départ dans la galerie des Dalles, au niveau du carrefour
+   # GD1 GD2 12  180 110
+   # GD2 GD3 20  260 90
+   # GD3 4 7 260 170 # jction base de puits
+   #flags not approximate
+
+# dev = 44.41 m
+
+endcenterline
+
+endsurvey

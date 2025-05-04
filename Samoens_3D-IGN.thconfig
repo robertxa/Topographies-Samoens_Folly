@@ -30,16 +30,15 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appellera 
 # "jb.th" et a leur tour, "jb.th" appellera
 # "jb-dessin.th2")
-
 source Data/Folly-Total.th
 
 # MNT de la zone, avec wrappage des images (éditer le fichier Samoens-GIS/dem/samoens.th pour choisir l'image !)
 #source Samoens-GIS/dem/samoens.th
-source Samoens-GIS/dem/IGN_JB_10m-IGN.th
+#source Samoens-GIS/dem/IGN_JB_10m-IGN.th
 #source Samoens-GIS/dem/DEM_10m-L93-cutFolly.th # Pour l'instant, il y a un problème avec le DEM, il y a un décalage !
 #source Samoens-GIS/dem/IGN_JB.th
 
-#source Samoens-GIS/dem/MNT-Criou_Folly-LIDAR-10m-crop.th # Pour l'instant, il y a un problème avec le DEM, il y a un décalage !
+source Samoens-GIS/dem/MNT-Criou_Folly-LIDAR-10m-crop.th # Pour l'instant, il y a un problème avec le DEM, il y a un décalage !
 
 # Add config file
 input config.thc 

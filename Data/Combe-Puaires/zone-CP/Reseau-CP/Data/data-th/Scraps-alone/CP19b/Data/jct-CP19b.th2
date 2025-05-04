@@ -14,6 +14,7 @@ point -70.5 132.25 label -text "R2"
 line pit
   -59.5 142.25
   -59.5 142.25 -49.0 146.5 -49.0 153.5
+  smooth off
 endline
 
 line wall
@@ -32,22 +33,26 @@ line wall
   -24.0 116.5 -27.0 119.0 -26.0 113.75
   -25.0 108.5 -22.25 108.75 -22.75 104.25
   -23.25 99.75 -23.0 95.5 -24.0 92.25
+  smooth off
 endline
 
 line pit
   -19.25 32.75
   -19.25 32.75 3.5 46.0 2.25 62.5
+  smooth off
 endline
 
 line pit
   -38.25 100.75
   -38.25 100.75 -48.25 78.25 -47.0 63.0
+  smooth off
 endline
 
 line pit
   -26.5 92.75
   -26.5 92.75 -27.5 77.0 -25.25 66.0
   -23.0 55.0 -21.5 40.5 -20.0 36.25
+  smooth off
 endline
 
 line wall -subtype pit
@@ -61,6 +66,7 @@ line wall -subtype pit
   -1.75 23.5 4.5 37.0 3.5 45.5
   2.5 54.0 -3.75 68.25 -6.5 75.75
   -9.25 83.25 -7.5 85.5 -10.75 89.5
+  smooth off
 endline
 
 line wall
@@ -78,6 +84,8 @@ line wall
   -56.25 170.25 -53.5 174.0 -53.5 174.0
   smooth off
 endline
+
+point -55.0 176.0 map-connection
 
 point -53.623999999999995 188.89499999999995 station -name 9
 

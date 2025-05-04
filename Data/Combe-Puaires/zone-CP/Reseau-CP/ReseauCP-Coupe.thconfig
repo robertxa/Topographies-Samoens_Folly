@@ -48,7 +48,7 @@ layout my_layout-coupe
 	#origin 12 22 0 m
 	#origin-label 100 K
 	#color map-bg 85
-	color map-fg [100 100 80]
+	#color map-fg [100 100 80]
 	doc-author "Xavier Robert"
 	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
 	transparency on
@@ -57,11 +57,15 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend on
+	#legend off
 	legend-width 32 cm
-	legend-columns 4
+	#legend-width 14.5 cm
+
+	#legend-columns 4
 	#map-header 5 50 e
 	map-header 93 55 n
-	map-header-bg on
+	#map-header 10 85 nw	# pour Reptiles
+	map-header-bg off
 	layers on
 	symbol-hide line survey
 	#debug station-names
@@ -72,9 +76,9 @@ layout my_layout-coupe
 
 	color map-fg altitude
 	color-legend smooth
-	debug scrap-names
-	  color map-fg scraps
-      color-legend off
+	#debug scrap-names
+	#  color map-fg scraps
+    #  color-legend off
 
 	grid bottom
 	grid-size 100 100 100 m
@@ -118,10 +122,13 @@ endlayout
 
 # Select maps
 	select MC-ReseauCP-total@ReseauCP
+	
 	#select MC-Rivamont@ReseauCP 
 	#select MC-Billy-tot@ReseauCP
+	#select MC-EV82@ReseauCP
 	
 export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2024.pdf
+#export map -projection extended -layout my_layout-coupe -o Outputs/2D/Reptiles-coupe2024.pdf
 #export map -projection extended -layout my_layout-coupe-continuations -o Outputs/2D/ReseauCP-coupe2023-Continuations.pdf
  
 # Export du fichier 3d pour Loch
