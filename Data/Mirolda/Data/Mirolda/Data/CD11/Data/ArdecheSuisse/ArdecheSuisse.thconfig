@@ -90,7 +90,10 @@ layout my_layout
 	# C'est on par défaut, donc, pas vraiment besoin de specifier
 	transparency on
 	# Couleur de la topographie
-	color map-fg [100 100 80]
+	#color map-fg [100 100 80]
+	color map-fg altitude
+	color-legend smooth
+
 	# ça marche seulement si transparency est "on" 90% blanc= 10% noir
 	opacity 75
 	surface bottom
@@ -108,7 +111,7 @@ layout my_layout
 	# Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
 	# Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
 	# ou une autre combination...
-	map-header 0 -60 nw
+	map-header 0 -5 nw
 	# arrière plan de la manchette
 	map-header-bg off
 	# Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
@@ -116,7 +119,7 @@ layout my_layout
 	# "legend off" = pas de legende
 	legend off
 	# Par défaut, la légende est de 14 cm de largeur
-	legend-width 21 cm
+	legend-width 19 cm
 	
 	# Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
 	# dont le nom est probablement le titule de la topo.
@@ -183,7 +186,10 @@ layout layout-coupe
 	# la topo est transparente
 	transparency on
 	# Couleur de la topo
-	color map-fg [100 100 80]
+	#color map-fg [100 100 80]
+	color map-fg altitude
+	color-legend smooth
+
 	# ça marche seulement si transparency est "on" 90% blanc= 10% noir
 	opacity 75
 	
@@ -243,8 +249,8 @@ endlayout
 export map -proj extended -layout xviexport -fmt xvi -o Data/ArdecheSuisse-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Ardeche-plan-tot@Ardeche
-select MC-Ardeche-coupe-tot@Ardeche
+select MP-Ardeche_2_cabane@ArdecheSuisse
+select MC-Ardeche_2_cabane@ArdecheSuisse
 
 # Export des fichiers pdf, plan et coupe.
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

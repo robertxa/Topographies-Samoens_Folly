@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
+map MP-AmontJonction -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SP-MajAmont2024Dav-1
 	break
 	SP-majamonts2024-6	# Les extrèmes amonts de la Majestueuse
@@ -20,7 +20,9 @@ map MP-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SP-majamonts2024-1
 	break
 	SP-Maj-Amonts-2
-	break
+endmap
+
+map MP-AvalJonction -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SP-Maj-Amonts-1
 	break
 	SP-Maj-Amonts-4
@@ -30,7 +32,14 @@ map MP-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SP-Maj-Amonts-5
 endmap
 
-map MC-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
+map MP-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
+	MP-AmontJonction
+	break
+	MP-AvalJonction
+endmap
+
+
+map MC-AmontJonction -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SC-MajAmont2024Dav-1
 	break
 	SC-MajAmonts2024-2
@@ -42,7 +51,9 @@ map MC-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SC-MajAmonts2024-5
 	break
 	SC-MajAmonts2024-1
-	break
+endmap
+
+map MC-AvalJonction -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SC-Maj-Amonts-1
 	break
 	SC-Maj-Amonts-4
@@ -52,5 +63,11 @@ map MC-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
 	SC-Maj-Amonts-2
 	break
 	SC-Maj-Amonts-5
+endmap
+
+map MC-Amont-Majestueuse -title "Gouffre Mirolda - Amonts de La Majestueuse"
+	MC-AmontJonction
+	break
+	MC-AvalJonction
 endmap
    

@@ -94,11 +94,11 @@ layout my_layout
   
   # Couleur de la topographie
   color map-fg [100 100 80]
+  color map-fg altitude
+	color-legend smooth
 
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
-  
-  
   surface bottom
   surface-opacity 100
   
@@ -161,7 +161,7 @@ layout my_layout
 			\cavename={Gouffre Mirolda - Amont Majestueuse} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022}
+		\newtoks\club \club={Collectif Mirolda 2022, 2023, 2024}
 		%\newtoks\synth \synth={Xavier Robert}
 	endcode   
   
@@ -198,6 +198,8 @@ layout layout-coupe
   
   # Couleur de la topo
   color map-fg [100 100 80]
+  color map-fg altitude
+	color-legend smooth
 
   # ça marche seulement si transparency est "on" 90% blanc= 10% noir
   opacity 75
@@ -246,7 +248,7 @@ layout layout-coupe
 			\cavename={Gouffre Mirolda - Amont Majestueuse} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022}
+		\newtoks\club \club={Collectif Mirolda 2022, 2023, 2024}
 		%\newtoks\synth \synth={Xavier Robert}		
 	endcode   
 
@@ -263,8 +265,10 @@ layout layout-coupe
 export map -proj extended -layout xviexport -fmt xvi -o Data/Amont-Majestueuse2024-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Amont-Majestueuse@Amont-Majestueuse
-select MC-Amont-Majestueuse@Amont-Majestueuse
+#select MP-Amont-Majestueuse@Amont-Majestueuse
+#select MC-Amont-Majestueuse@Amont-Majestueuse
+select MP-AmontJonction@Amont-Majestueuse
+select MC-AmontJonction@Amont-Majestueuse
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

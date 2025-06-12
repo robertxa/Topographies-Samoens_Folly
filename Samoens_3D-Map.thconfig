@@ -195,7 +195,7 @@ layout my_layout
   \else % if not empty keep the value set by therion, or assign an override cavename here
   \fi
   \newtoks\club \club={Groupe Spéléologique Vulcain}
-  \newtoks\synth \synth={Xavier Robert (2023)}
+  \newtoks\synth \synth={Xavier Robert (2025)}
   \newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
   \newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
   endcode   
@@ -214,10 +214,10 @@ endlayout
 select MP-Folly-tot@MassifFolly
 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/Folly-2022-plan-Map.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/Folly-2025-plan-Map.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
- export model -o Outputs/3D/Folly-tot-Map-2022.lox
+ export model -o Outputs/3D/Folly-tot-Map-2025.lox
  #export model -o Outputs/3D/Folly-tot-Xav-2022.3d
 
 ##export model -o Outputs/vrml/Folly2022.vrml

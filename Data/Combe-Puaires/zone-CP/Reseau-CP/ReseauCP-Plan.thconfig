@@ -204,7 +204,7 @@ export map -proj plan -fmt esri -o Outputs/ReseauCP_SHP -layout my_layout
 export model -fmt esri -o Outputs/ReseauCP_SHP
  
 # Export du fichier 3d pour Loch
-export model -o Outputs/3D/reseauCP-2024.lox
+export model -o Outputs/3D/reseauCP-2025.lox
   
 # Export des fichiers kml
 #export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2022.kml -layout my_layout
