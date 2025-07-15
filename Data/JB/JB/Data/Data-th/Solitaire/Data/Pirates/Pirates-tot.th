@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Pirates -title "Puits des Pirates"
+	# Données topos
+	input Data/Pirates.th
+	
+	# Galerie du Pirates
+	#input Data/Pirates.th2
+	#input Data/Pirates-coupe.th2
+
+	# Add maps
+	#input Pirates-maps.th
+	
+endsurvey

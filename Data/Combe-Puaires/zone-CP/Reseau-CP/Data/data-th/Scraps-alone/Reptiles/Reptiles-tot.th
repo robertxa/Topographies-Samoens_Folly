@@ -9,6 +9,17 @@ survey Reptiles -title "Réseau des Reptiles"
 
 	input Data/BoucleReptiles.th
 		equate 12@BoucleReptiles 6.21@reptiles
+	input Data/DiverticuleReptiles/DiverticuleReptiles-tot.th
+		equate 0@DiverticuleReptiles.DiverticuleReptiles 6.12@reptiles
+		#equate 26@DiverticuleReptiles.DiverticuleReptiles 23@BoucleReptiles
+		equate 15@DiverticuleReptiles.DiverticuleReptiles 6.14@reptiles
+
+	input Data/EscaladeReptiles/EscaladeReptiles-tot.th
+		equate 8@EscaladeReptiles2025.EscaladeReptiles 6.28@reptiles	# C'est a priori la meilleur station de bouclage
+
+
+	input Data/MeandreAff/meandrereptiles-tot.th
+		equate 5@meandrereptiles.meandrereptiles 6.3@reptiles
 
 	## pour le plan
 	input Data/reptiles.th2

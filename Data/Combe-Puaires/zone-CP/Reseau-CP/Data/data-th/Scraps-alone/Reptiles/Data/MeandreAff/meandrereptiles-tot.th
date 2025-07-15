@@ -1,0 +1,17 @@
+encoding utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey meandrereptiles -title "Méandre affluent des Reptiles"
+	input Data/meandrereptiles.th
+
+	## pour le plan
+	#input Data/reptiles.th2
+	## Pour la coupe et le plan
+	#input Data/reptiles-coupe.th2
+
+	#input Reptiles-maps.th
+
+endsurvey

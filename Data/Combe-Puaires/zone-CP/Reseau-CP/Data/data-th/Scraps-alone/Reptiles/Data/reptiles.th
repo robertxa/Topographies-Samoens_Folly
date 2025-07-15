@@ -4,16 +4,17 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey reptiles -title "g. des Reptiles"
+survey reptiles -title "g. des Reptiles 1977"
 
 centerline -title "1.28_6.1 6.62_6.63"
    date 1977.10.09
  #  declination -3.1307 degrees
-  team "Christian Rigaldie"
-  team "Josiane Lips"
-  explo-date 1977.10.09
-  explo-team "Josiane Lips"
-  explo-team "Christian Rigaldie"
+      team "Christian Rigaldie"
+      team "Josiane Lips"
+   explo-date 1977.10.09
+      explo-team "Josiane Lips"
+      explo-team "Christian Rigaldie"
+   
    units lenght meters
    units compass degrees
    units clino degrees

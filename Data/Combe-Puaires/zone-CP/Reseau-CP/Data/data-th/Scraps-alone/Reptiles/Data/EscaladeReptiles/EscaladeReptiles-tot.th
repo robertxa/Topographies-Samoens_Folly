@@ -1,0 +1,21 @@
+encoding utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey EscaladeReptiles -title "Escalade des Reptiles"
+	input Data/EscaladeReptiles2025.th
+
+	input Data/puits_remontant_des_reptiles.th
+		equate 4@EscaladeReptiles2025 2@PR_reptiles2
+
+	## pour le plan
+	#input Data/reptiles.th2
+	#	join SP-bclereptiles-1 SP-Reptiles-1
+	## Pour la coupe et le plan
+	#input Data/reptiles-coupe.th2
+
+	#input EscaladeReptiles-maps.th
+
+endsurvey

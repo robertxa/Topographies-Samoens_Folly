@@ -6,6 +6,10 @@ encoding utf-8
 
 survey Aval-CP12 -title "Aval-CP12"
 	input Data/aval-CP12.th
+
+	input Data/EscaladesBoucle/EscaladesBoucle-tot.th
+		equate 0@EscaladesBoucle.EscaladesBoucle 19.8@aval-CP12
+
 	input Data/aval-CP12.th2
 	input Data/meandrecairn.th2
 		join SP-Cairn-1 SP-CP12-5

@@ -1,16 +1,16 @@
 encoding  utf-8
   
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>  
   
   
  # 1-SOURCES 
-source Reptiles-tot.th
-#source Data/reptiles-coupe.th2
+source EscaladeReptiles-tot.th
+#source Data/EscaladeReptiles-coupe.th2
 
 # Add config file
-input ../../../../../../../../config.thc
+input ../../../../../../../../../../config.thc
 
   
 # 2-LAYOUT   
@@ -33,7 +33,7 @@ layout my_layout
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Réseau des Reptiles"
+	doc-title "Escalade des Reptiles"
 	# Auteur
 	doc-author "Xavier Robert"
   
@@ -87,7 +87,7 @@ layout my_layout
 	scale-bar 100 m
   
 	# Un commentaire a ajounter au titule,
-	map-comment "Réseau des Reptiles, Samoëns, 74, France"
+	map-comment "Réseau de la Combe aux Puaires, Samoëns, 74, France"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -154,7 +154,7 @@ layout my_layout
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Réseau de la Combe aux Puaires} 		
+ 		\cavename={Escalade des Reptiles} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
    \newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -178,7 +178,7 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Réseau des Reptiles"
+	doc-title "Escalade des Reptiles"
 	# Auteur
 	doc-author "Xavier Robert"
   
@@ -233,7 +233,7 @@ layout my_layout-coupe
   
 	# Un commentaire a ajounter au titule,
 	#map-comment "Diverticule du méandre Billy, Coupe développée, Samoëns, 74, France"
-	map-comment "Réseau des Reptiles, Coupe développée"
+	map-comment "Réseau de la Combe aux Puaires, Coupe développée"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -306,7 +306,7 @@ layout my_layout-coupe
    \edef\nostring{}            % empty string
    \ifx\temp\nostring          % test if cavename is empty
          % if empty reassign cavename to describe selected maps as a group
- 		\cavename={Réseau de la Combe aux Puaires} 		
+ 		\cavename={Escalade des Reptiles} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    %\newtoks\club \club={Groupe Spéléologique Vulcain}
 	%\newtoks\thanksto \thanksto={}
@@ -318,12 +318,11 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o data/reptiles-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o data/reptiles-coupe.xvi
+ export map -fmt xvi -layout xviexport -o data/EscaladeReptiles-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o data/EscaladeReptiles-coupe.xvi
  
- export map -projection extended -layout my_layout-coupe -o Outputs/reptiles-coupe.pdf 
- export map -o Outputs/reptiles-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/EscaladeReptiles-coupe.pdf 
+ export map -o Outputs/EscaladeReptiles-plan.pdf -layout my_layout
  
- export model -o Outputs/reptiles.lox
- export continuation-list -o Outputs/Continuations-reptiles.html
- export survey-list -o Outputs/Surveys.html
+ export model -o Outputs/EscaladeReptiles.lox
+ #export continuation-list -o Outputs/Continuations-EscaladeReptiles.html
