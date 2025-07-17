@@ -190,13 +190,13 @@ endlayout
 #export map -fmt xvi -layout xviexport -o data-th2/ReseauCP-map2020.xvi
 
 # Select maps
-	#select MP-ReseauCP-total@ReseauCP
+	select MP-ReseauCP-total@ReseauCP
 
-  select MP-EV82@ReseauCP
+  #select MP-EV82@ReseauCP
   
 	
-#export map -o Outputs/2D/ReseauCP-plan2024.pdf -layout my_layout
-export map -o Outputs/2D/Reptiles-plan2024.pdf -layout my_layout
+export map -o Outputs/2D/ReseauCP-plan2025.pdf -layout my_layout
+#export map -o Outputs/2D/Reptiles-plan2025.pdf -layout my_layout
 #export map -o Outputs/2D/ReseauCP-plan2023-Continuations.pdf -layout my_layout
   
 # Export des fichiers ESRI

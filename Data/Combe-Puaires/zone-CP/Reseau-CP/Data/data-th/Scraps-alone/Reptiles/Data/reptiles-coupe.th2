@@ -41,7 +41,7 @@ point 513.8699999999999 750.556 station -name 6.57@reptiles
 
 point 563.1099999999999 744.566 station -name 6.56@reptiles
 
-point 2776.0 358.5 height -value [+12 m]
+point 2776.0 358.5 height -value [+4 m]
 
 point 1800.0 611.5 altitude -align bottom-right
 
@@ -49,14 +49,13 @@ point 312.0 562.0 altitude -align bottom-right
 
 point 2173.0 660.5 altitude -align bottom
 
-point 2387.5 592.5 height -value [+8 m]
-
 point 935.0 572.0 dig
 
 line wall
   1586.5 547.0
   1586.5 547.0 1596.5 551.0 1602.5 552.0
   1608.5 553.0 1605.0 566.0 1610.0 567.0
+  smooth off
 endline
 
 line water-flow
@@ -114,6 +113,7 @@ line wall
   1609.5 607.0 1617.0 602.5 1616.0 596.0
   1615.0 589.5 1606.0 585.5 1602.5 584.0
   1599.0 582.5 1589.0 578.5 1581.0 575.0
+  smooth off
 endline
 
 point 1679.0 572.0 height -value [-8 m]
@@ -152,12 +152,6 @@ line rope
 endline
 
 line rope
-  2411.0 637.0
-  2430.0 636.5
-  2455.0 593.0
-endline
-
-line rope
   2797.5 413.0
   2819.5 408.5
   2827.0 375.5
@@ -193,10 +187,6 @@ point 1976.25 751.5 air-draught -orientation 242.8 -subtype summer
 point 2213.5 734.5 air-draught -orientation 325.0 -subtype summer
 
 point 2626.5 535.5 air-draught -orientation 303.1 -subtype summer
-
-point 2786.0 471.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Faille remontante, courant d'air, explorée sur une 40aine de mètres, ça continue, à revoir" -explored 40m
-
-point 2510.5 651.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA " " -text "Faille remontante, courant d'air, explorée sur une 40aine de mètres, ça continue, à revoir"
 
 point 2192.5 719.0 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Réseau des Reptiles" -attr CA "Courant d'air" -text "Petite galerie non topographieé (explorée ?) ; courant d'air"
 
@@ -299,9 +289,10 @@ line wall
 endline
 
 line wall
-  2476.0 653.5
-  2476.0 653.5 2441.0 641.5 2429.0 640.5
-  2417.0 639.5 2402.0 657.0 2392.5 659.5
+  2456.75 603.5
+  2456.75 603.5 2436.0 625.25 2425.25 636.0
+  2416.73 644.52 2402.0 657.0 2392.5 659.5
+  altitude .
   2383.0 662.0 2385.0 666.5 2371.5 662.0
   2358.0 657.5 2320.0 648.5 2306.5 644.5
   2293.0 640.5 2284.5 634.0 2272.5 640.0
@@ -312,25 +303,44 @@ line wall
 endline
 
 line wall
-  2765.5 451.0
-  2765.5 451.0 2751.5 434.5 2731.5 434.0
-  2711.5 433.5 2694.5 440.5 2682.0 452.0
+  2481.5 592.5
+  2481.5 592.5 2486.25 599.25 2480.0 598.5
+  2473.75 597.75 2470.5 596.0 2466.0 597.5
+  2461.5 599.0 2456.75 603.5 2456.75 603.5
+  smooth off
+endline
+
+line wall
+  2759.25 425.0
+  2759.25 425.0 2751.5 425.5 2730.25 428.5
+  2710.44 431.3 2694.5 440.5 2682.0 452.0
   2669.5 463.5 2638.5 482.0 2621.0 495.0
   2603.5 508.0 2574.0 529.5 2572.0 537.0
   2570.0 544.5 2568.5 543.5 2554.5 550.0
   2540.5 556.5 2511.5 569.0 2502.5 574.0
   2493.5 579.0 2479.0 587.5 2475.5 589.0
-  2472.0 590.5 2469.0 594.5 2469.0 602.0
-  2469.0 609.5 2483.5 621.5 2483.5 621.5
+  2472.0 590.5 2470.0 588.5 2469.5 593.0
+  2469.3 594.79 2481.5 592.5 2481.5 592.5
   smooth off
 endline
 
 line wall
   2872.5 394.0
-  2872.5 394.0 2836.0 400.0 2829.5 403.5
-  2823.0 407.0 2817.5 414.0 2808.5 415.5
-  2799.5 417.0 2767.0 416.0 2769.5 421.0
-  2772.0 426.0 2784.5 441.0 2784.5 441.0
+  2872.5 394.0 2852.0 385.25 2845.5 388.75
+endline
+
+line border
+  2827.5 388.0
+  2827.5 388.0 2832.75 387.75 2838.25 387.75
+  2843.75 387.75 2845.5 388.75 2845.5 388.75
+  smooth off
+endline
+
+line wall
+  2823.0 409.0
+  2816.5 412.5 2817.5 414.0 2808.5 415.5
+  2799.5 417.0 2774.29 418.12 2769.5 421.0
+  2765.75 423.25 2759.25 425.0 2759.25 425.0
   smooth off
 endline
 
@@ -404,11 +414,13 @@ line wall
   1525.0 595.0 1531.5 597.5 1545.0 596.0
   1558.5 594.5 1556.0 587.5 1576.5 596.0
   1597.0 604.5 1597.5 607.0 1609.5 607.0
+  smooth off
 endline
 
 line wall
   1641.5 573.5
   1653.5 573.5 1643.0 600.5 1652.0 603.0
+  smooth off
 endline
 
 line wall
@@ -609,6 +621,7 @@ line wall -subtype clay
   2167.75 731.5 2178.0 730.75 2178.0 733.75
   2178.0 736.75 2183.25 735.0 2185.0 738.25
   2186.75 741.5 2184.0 745.5 2187.75 745.5
+  smooth off
 endline
 
 line wall
@@ -618,6 +631,7 @@ line wall
   2203.75 734.0 2204.25 729.0 2207.0 729.0
   2209.75 729.0 2211.0 720.0 2211.0 715.0
   2211.0 710.0 2211.75 705.25 2216.0 705.0
+  smooth off
 endline
 
 line wall -subtype clay
@@ -637,6 +651,7 @@ line wall
   2053.75 723.75 2008.25 714.0 2002.25 712.75
   1996.25 711.5 1988.25 711.5 1982.0 709.75
   1975.75 708.0 1939.75 690.25 1937.75 689.25
+  smooth off
 endline
 
 line wall
@@ -652,6 +667,7 @@ line wall
   2158.75 797.25 2160.25 817.25 2155.5 818.5
   2150.75 819.75 2140.5 819.25 2134.25 819.25
   2128.0 819.25 2106.75 822.5 2104.25 823.0
+  smooth off
 endline
 
 point 2123.970000000001 807.925 station -name 20

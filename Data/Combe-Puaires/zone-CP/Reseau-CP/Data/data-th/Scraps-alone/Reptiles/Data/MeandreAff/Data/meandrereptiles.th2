@@ -1,0 +1,88 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 265.5 239.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.741 1 1.0} {78.7444 0} meandrereptiles-map.xvi 0 {}
+
+
+
+scrap SP-MReptiles-1 -projection plan -station-names "" "@meandrereptiles" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+line pit
+  96.25 107.75
+  96.25 107.75 87.0 100.25 92.75 96.0
+  smooth off
+endline
+
+line pit
+  78.75 106.75
+  78.75 106.75 78.25 96.25 89.5 98.0
+  smooth off
+endline
+
+line pit
+  59.0 70.5
+  59.0 70.5 61.75 64.75 68.5 65.75
+  smooth off
+endline
+
+line pit
+  68.0 80.5
+  68.0 80.5 64.5 67.75 76.0 71.25
+  smooth off
+endline
+
+point 42.5 98.25 height -value [+4 m]
+
+point 58.0 46.5 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "aval CP12" -attr CA "Courant d'air léger" -text "méandre remontant, arrêt sur E4 facile, courant d'air"
+
+line wall
+  64.25 56.25
+  64.25 56.25 66.0 65.75 68.5 68.25
+  71.0 70.75 79.0 73.25 81.0 80.5
+  83.0 87.75 87.0 100.5 89.25 100.25
+  91.5 100.0 95.0 98.75 98.75 98.25
+  102.5 97.75 105.0 98.5 106.0 98.0
+  107.0 97.5 111.75 96.75 106.75 93.5
+  101.75 90.25 99.5 81.5 104.5 80.75
+  109.5 80.0 114.0 84.25 116.0 84.75
+  smooth off
+endline
+
+line pit
+  106.5 95.5
+  106.5 95.5 106.75 80.0 112.75 78.75
+  smooth off
+endline
+
+point 78.0 85.0 water-flow -orientation 20.2 -subtype intermittent
+
+line wall
+  114.5 109.0
+  114.5 109.0 109.25 108.0 106.5 109.25
+  103.75 110.5 103.0 112.25 101.0 110.5
+  99.0 108.75 98.0 104.5 95.5 105.25
+  93.0 106.0 90.75 109.5 87.75 109.5
+  84.75 109.5 81.5 110.75 81.0 106.75
+  80.5 102.75 77.0 92.75 75.25 90.25
+  73.5 87.75 74.5 86.5 71.75 83.25
+  69.0 80.0 60.25 69.25 59.25 67.0
+  58.25 64.75 57.25 58.0 57.25 58.0
+  smooth off
+  altitude .
+endline
+
+point 62.681 64.2544 station -name 1
+
+point 78.741 78.7444 station -name 0
+
+point 82.911 107.3244 station -name 2
+
+point 97.321 103.3044 station -name 3
+
+point 108.03099999999999 99.6844 station -name 4
+
+point 136.061 85.90440000000001 station -name 5
+
+endscrap
+
+

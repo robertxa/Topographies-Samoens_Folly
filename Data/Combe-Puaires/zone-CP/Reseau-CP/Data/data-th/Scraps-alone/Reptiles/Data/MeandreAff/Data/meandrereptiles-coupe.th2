@@ -1,0 +1,63 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 260.5 348.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {100.3605 1 1.0} {157.47799999999998 0} meandrereptiles-coupe.xvi 0 {}
+
+
+
+scrap SC-MReptiles-1 -projection extended -station-names "" "@meandrereptiles" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 127.25 194.25 air-draught -orientation 326.1 -scale xs
+
+point 45.0 218.5 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "aval CP12" -attr CA "Courant d'air léger" -text "méandre remontant, arrêt sur E4 facile, courant d'air"
+
+line rope
+  71.25 215.75
+  96.25 196.5
+  97.5 146.25
+endline
+
+line wall
+  64.5 205.5
+  64.5 205.5 75.75 204.75 77.75 200.75
+  79.75 196.75 89.25 179.0 91.0 172.0
+  92.75 165.0 91.75 162.0 93.0 155.0
+  94.25 148.0 93.0 144.0 100.0 143.0
+  107.0 142.0 107.5 141.75 111.75 138.75
+  116.0 135.75 123.5 128.75 121.25 127.0
+  119.0 125.25 119.0 119.25 116.25 120.5
+  113.5 121.75 110.25 129.0 105.75 131.75
+  101.25 134.5 98.75 137.0 95.75 137.25
+endline
+
+line wall
+  103.25 104.5
+  103.25 104.5 107.5 103.5 110.75 104.75
+  114.0 106.0 112.25 111.75 116.75 111.5
+  121.25 111.25 120.75 113.0 122.75 116.0
+  124.75 119.0 127.75 116.0 128.75 119.0
+  129.75 122.0 133.0 127.75 131.25 135.5
+  129.5 143.25 130.5 151.0 125.0 154.5
+  119.5 158.0 114.0 165.25 110.0 171.5
+  106.0 177.75 98.75 197.0 95.75 201.5
+  92.75 206.0 82.5 213.25 79.0 215.0
+  75.5 216.75 71.0 219.25 71.0 219.25
+  smooth off
+  altitude .
+endline
+
+point 78.7405 211.028 station -name 1
+
+point 100.3605 157.47799999999998 station -name 0
+
+point 129.26049999999998 130.628 station -name 2
+
+point 114.28049999999999 113.38799999999999 station -name 3
+
+point 103.03049999999999 117.008 station -name 4
+
+point 71.75049999999999 118.978 station -name 5
+
+endscrap
+
+

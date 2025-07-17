@@ -318,8 +318,11 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o data/meandrereptiles-map.xvi
+ #export map -fmt xvi -layout xviexport -o data/meandrereptiles-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o data/meandrereptiles-coupe.xvi
+ 
+ select MP-MeandreReptiles@meandrereptiles
+ select MC-MeandreReptiles@meandrereptiles
  
  export map -projection extended -layout my_layout-coupe -o Outputs/meandrereptiles-coupe.pdf 
  export map -o Outputs/meandrereptiles-plan.pdf -layout my_layout

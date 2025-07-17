@@ -4,19 +4,39 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-reptiles -title "Réseau des Reptiles"
+map MP-reptiles1 -title "Réseau des Reptiles"
 	SP-Reptiles-2
 	break
 	SP-Reptiles-3
 	break
-	SP-bclereptiles-1
-	break
 	SP-Reptiles-1
 endmap
 
-map MC-Reptiles -title "Réseau des Reptiles"
+map MP-reptiles2
+	SP-bclereptiles-1
+endmap
+
+map MP-reptiles -title "Réseau des Reptiles"
+	MP-MeandreReptiles@meandrereptiles
+	break
+	MP-reptiles2
+	break
+	MP-DiverticuleReptiles@DiverticuleReptiles
+	break
+	MP-reptiles1
+endmap
+
+##################
+map MC-Reptiles1 -title "Réseau des Reptiles"
 	SC-Reptiles-1
 	break
 	SC-bclereptiles-1
 endmap
    
+map MC-Reptiles -title "Réseau des Reptiles"
+	MC-Reptiles1
+	#break
+	#MC-DiverticuleReptiles@DiverticuleReptiles
+	break
+	MC-MeandreReptiles@meandrereptiles
+endmap
