@@ -1,16 +1,16 @@
 encoding  utf-8
   
-# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>  
   
   
  # 1-SOURCES 
-source Reptiles-tot.th
-#source Data/reptiles-coupe.th2
+source meandrereptiles-tot.th
+#source Data/meandrereptiles-coupe.th2
 
 # Add config file
-input ../../../../../../../../config.thc
+input ../../../../../../../../../../config.thc
 
   
 # 2-LAYOUT   
@@ -33,7 +33,7 @@ layout my_layout
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Réseau des Reptiles"
+	doc-title "Réseau des meandrereptiles"
 	# Auteur
 	doc-author "Xavier Robert"
   
@@ -87,7 +87,7 @@ layout my_layout
 	scale-bar 100 m
   
 	# Un commentaire a ajounter au titule,
-	map-comment "Réseau des Reptiles, Samoëns, 74, France"
+	map-comment "Réseau des meandrereptiles, Samoëns, 74, France"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -178,7 +178,7 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	# Titre  
-	doc-title "Réseau des Reptiles"
+	doc-title "Réseau des meandrereptiles"
 	# Auteur
 	doc-author "Xavier Robert"
   
@@ -233,7 +233,7 @@ layout my_layout-coupe
   
 	# Un commentaire a ajounter au titule,
 	#map-comment "Diverticule du méandre Billy, Coupe développée, Samoëns, 74, France"
-	map-comment "Réseau des Reptiles, Coupe développée"
+	map-comment "Réseau des meandrereptiles, Coupe développée"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -318,11 +318,11 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o data/reptiles-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o data/reptiles-coupe.xvi
+ export map -fmt xvi -layout xviexport -o data/meandrereptiles-map.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o data/meandrereptiles-coupe.xvi
  
- export map -projection extended -layout my_layout-coupe -o Outputs/reptiles-coupe.pdf 
- export map -o Outputs/reptiles-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/meandrereptiles-coupe.pdf 
+ export map -o Outputs/meandrereptiles-plan.pdf -layout my_layout
  
- export model -o Outputs/reptiles.lox
- export continuation-list -o Outputs/Continuations-reptiles.html
+ export model -o Outputs/meandrereptiles.lox
+ export continuation-list -o Outputs/Continuations-meandrereptiles.html
