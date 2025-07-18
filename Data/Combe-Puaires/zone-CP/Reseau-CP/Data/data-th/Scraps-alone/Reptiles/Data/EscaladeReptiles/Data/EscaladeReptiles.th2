@@ -1,0 +1,296 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 364.2206 398.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {170.70600000000002 1 1.0} {116.301 0@EscaladeReptiles2025.EscaladeReptiles} EscaladeReptiles-map.xvi 0 {}
+
+
+
+scrap SP-EscReptiles-1 -projection plan -station-names "" "@EscaladeReptiles2025" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 364.2206 -128.0 0.0 0.0 12.50240324 0.0 m]
+
+point 131.0 104.0 narrow-end
+
+point 179.5 177.0 narrow-end
+
+line pit
+  161.5 151.0
+  161.5 151.0 158.25 142.5 160.5 139.0
+endline
+
+line pit -reverse on
+  164.5 105.5
+  164.5 105.5 155.0 110.75 153.75 115.75
+endline
+
+line pit -reverse on
+  179.0 129.0
+  179.0 129.0 171.5 133.0 170.25 134.0
+endline
+
+line wall -close on -outline in
+  160.5 139.0
+  160.5 139.0 162.25 145.0 164.75 145.0
+  167.25 145.0 171.25 141.75 172.75 137.75
+  174.25 133.75 172.75 132.75 169.75 132.75
+  166.75 132.75 165.25 128.75 163.75 131.5
+  162.25 134.25 160.5 134.0 161.0 136.25
+  161.5 138.5 160.5 139.0 160.5 139.0
+  smooth off
+endline
+
+line wall
+  140.5 103.75
+  140.5 103.75 151.0 107.25 155.75 107.25
+  160.5 107.25 163.75 109.5 168.5 106.25
+endline
+
+line wall -subtype pit
+  168.5 106.25
+  173.25 103.0 176.5 93.0 181.75 90.25
+  187.0 87.5 189.75 82.5 189.75 82.5
+  smooth off
+endline
+
+line wall
+  166.5 172.0
+  166.5 172.0 164.75 167.75 163.25 164.5
+  161.75 161.25 160.25 160.5 161.0 157.25
+  161.75 154.0 165.0 152.25 164.0 149.25
+  163.0 146.25 159.5 150.75 158.75 152.5
+endline
+
+line wall -subtype pit
+  158.75 152.5
+  158.0 154.25 152.5 159.25 148.0 156.0
+  143.5 152.75 142.5 146.0 146.25 139.5
+  altitude .
+  150.0 133.0 153.0 124.75 155.0 121.5
+endline
+
+line wall
+  155.0 121.5
+  157.0 118.25 156.5 115.0 153.5 114.0
+  150.5 113.0 140.25 107.0 140.25 107.0
+  smooth off
+endline
+
+point 219.75 114.25 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Reptiles" -text "E50 a minima à effectuer"
+
+point 103.75 141.25 height -value [+35 m]
+
+point 146.25 83.5 height -value [+50 m]
+
+line chimney -close on
+  201.75 102.0
+  201.75 102.0 194.25 110.75 187.5 109.5
+  180.75 108.25 177.75 95.0 184.5 92.5
+  191.25 90.0 203.0 87.75 202.5 92.75
+  202.0 97.75 201.75 102.0 201.75 102.0
+  smooth off
+endline
+
+point 96.5 102.0 label -text "colm."
+
+area blocks
+  l27-198-116
+endarea
+
+line label -id l27-198-116 -close on
+  185.5 126.0
+  185.5 126.0 176.0 127.75 172.25 129.25
+  168.5 130.75 160.0 134.75 158.25 139.5
+  156.5 144.25 161.5 147.0 159.0 150.25
+  156.5 153.5 144.75 153.5 142.75 144.75
+  140.75 136.0 151.75 119.25 154.0 117.25
+  156.25 115.25 165.5 109.25 168.25 103.75
+  171.0 98.25 187.75 80.75 188.75 80.75
+  189.75 80.75 189.75 82.5 189.75 82.5
+  smooth off
+  209.0 94.5
+  209.0 94.5 202.25 111.25 197.75 116.75
+  193.25 122.25 185.5 126.0 185.5 126.0
+  smooth off
+endline
+
+line water-flow
+  178.0 134.25
+  178.0 134.25 172.5 145.25 169.0 147.25
+  165.5 149.25 165.25 151.75 165.0 156.0
+  164.75 160.25 166.5 166.0 167.75 169.5
+  169.0 173.0 171.25 181.5 171.25 181.5
+  smooth off
+endline
+
+line wall -subtype pit
+  209.0 94.5
+  209.0 94.5 193.0 117.75 188.75 121.0
+  184.5 124.25 172.75 129.75 177.0 130.5
+endline
+
+line wall
+  177.0 130.5
+  181.25 131.25 188.0 126.75 184.0 131.75
+  180.0 136.75 176.25 142.25 172.25 145.0
+  168.25 147.75 167.0 153.25 166.5 157.5
+  altitude .
+  166.0 161.75 170.75 167.75 169.75 171.75
+endline
+
+point 195.82600000000002 99.05099999999999 station -name 6
+
+point 162.836 158.821 station -name 3
+
+point 174.726 140.71099999999998 station -name 1
+
+point 157.636 138.111 station -name 2
+
+point 142.836 106.30099999999999 station -name 5
+
+point 170.70600000000002 116.301 station -name 0
+
+endscrap
+
+
+
+scrap SP-EscReptiles-2 -projection plan -station-names "" "@PR_reptiles2" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 364.2206 -128.0 0.0 0.0 12.50240324 0.0 m]
+
+line wall -reverse on
+  180.5 98.0
+  180.5 98.0 175.25 115.75 169.75 120.25
+  164.25 124.75 156.5 134.0 156.5 134.0
+  smooth off
+endline
+
+line pit
+  82.5 248.25
+  82.5 248.25 64.0 248.25 64.25 237.5
+endline
+
+line pit
+  90.5 233.25
+  90.5 233.25 76.25 238.75 74.5 226.0
+endline
+
+line pit
+  103.5 213.25
+  103.5 213.25 90.5 215.5 89.75 204.25
+endline
+
+line pit
+  118.5 195.75
+  118.5 195.75 106.5 199.25 104.5 187.5
+endline
+
+line pit -reverse on
+  123.25 174.25
+  123.25 174.25 120.5 188.25 129.25 187.25
+endline
+
+line pit
+  147.25 176.5
+  147.25 176.5 145.0 189.25 138.25 190.25
+endline
+
+line pit
+  158.75 187.25
+  158.75 187.25 154.75 197.25 148.75 195.25
+endline
+
+line pit
+  186.0 115.75
+  186.0 115.75 176.75 115.0 176.5 109.0
+endline
+
+line pit
+  177.0 124.25
+  177.0 124.25 169.25 127.75 169.75 120.25
+endline
+
+line pit
+  156.5 134.0
+  156.5 134.0 162.75 130.25 164.0 137.25
+endline
+
+line pit
+  195.25 107.5
+  195.25 107.5 191.5 111.75 187.5 109.5
+  183.5 107.25 179.75 104.0 180.5 98.0
+endline
+
+line wall -reverse on
+  164.0 137.25
+  164.0 137.25 178.5 122.25 186.0 115.75
+  193.5 109.25 195.25 107.5 195.25 107.5
+  smooth off
+endline
+
+point 55.25 268.75 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Reptiles" -text "Escalade à effectuer"
+
+point 164.0 175.75 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Reptiles" -text "Escalade à effectuer"
+
+point 173.25 206.75 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Reptiles" -text "Escalade à effectuer"
+
+line wall
+  159.0 150.25
+  159.0 150.25 163.25 156.25 160.0 160.5
+  156.75 164.75 158.75 163.0 155.5 166.5
+  152.25 170.0 139.5 173.75 148.0 181.75
+  156.5 189.75 163.75 195.25 163.75 195.25
+  smooth off
+endline
+
+line wall
+  60.5 252.0
+  60.5 252.0 78.0 224.5 83.75 217.75
+  89.5 211.0 101.5 197.75 105.0 193.25
+  108.5 188.75 130.0 173.25 134.25 169.0
+  138.5 164.75 135.25 165.0 140.5 159.75
+  145.75 154.5 147.75 150.75 147.75 150.75
+  smooth off
+endline
+
+point 132.0 224.25 height -value [+25 m]
+
+line chimney -close on
+  149.25 168.75
+  149.25 168.75 140.0 170.5 143.5 166.25
+  147.0 162.0 157.25 156.5 156.5 160.0
+  155.75 163.5 155.0 166.5 152.25 167.5
+  149.5 168.5 149.25 168.75 149.25 168.75
+  smooth off
+endline
+
+line pit
+  159.25 165.75
+  159.25 165.75 141.5 165.5 139.5 157.25
+endline
+
+line pit
+  159.0 150.25
+  159.0 150.25 153.0 155.0 147.75 150.75
+endline
+
+line wall
+  159.25 200.5
+  159.25 200.5 143.0 188.5 137.5 186.75
+  132.0 185.0 126.0 184.0 122.5 187.0
+  119.0 190.0 97.75 218.75 94.25 223.0
+  altitude .
+  90.75 227.25 70.75 259.75 70.75 259.75
+  smooth off
+endline
+
+point 97.16600000000001 208.191 station -name 0
+
+point 186.92600000000002 96.851 station -name 5
+
+point 194.64600000000002 105.511 station -name 4
+
+point 157.246 152.99099999999999 station -name 3
+
+point 157.476 157.481 station -name 2
+
+point 127.166 174.881 station -name 1
+
+endscrap
+
+

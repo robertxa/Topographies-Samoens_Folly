@@ -11,11 +11,11 @@ survey EscaladeReptiles -title "Escalade des Reptiles"
 		equate 4@EscaladeReptiles2025 2@PR_reptiles2
 
 	## pour le plan
-	#input Data/reptiles.th2
+	input Data/EscaladeReptiles.th2
 	#	join SP-bclereptiles-1 SP-Reptiles-1
 	## Pour la coupe et le plan
-	#input Data/reptiles-coupe.th2
+	input Data/EscaladeReptiles-coupe.th2
 
-	#input EscaladeReptiles-maps.th
+	input EscaladeReptiles-maps.th
 
 endsurvey

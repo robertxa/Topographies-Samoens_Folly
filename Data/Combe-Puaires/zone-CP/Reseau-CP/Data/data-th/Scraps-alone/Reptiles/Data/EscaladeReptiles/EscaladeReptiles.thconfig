@@ -318,9 +318,12 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o data/EscaladeReptiles-map.xvi
+ #export map -fmt xvi -layout xviexport -o data/EscaladeReptiles-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o data/EscaladeReptiles-coupe.xvi
  
+ select  MP-EscaladeReptiles@EscaladeReptiles
+ select  MC-EscaladeReptiles@EscaladeReptiles
+  
  export map -projection extended -layout my_layout-coupe -o Outputs/EscaladeReptiles-coupe.pdf 
  export map -o Outputs/EscaladeReptiles-plan.pdf -layout my_layout
  

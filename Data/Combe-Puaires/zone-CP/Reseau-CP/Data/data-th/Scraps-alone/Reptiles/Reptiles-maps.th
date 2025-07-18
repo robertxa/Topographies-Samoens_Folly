@@ -17,6 +17,8 @@ map MP-reptiles2
 endmap
 
 map MP-reptiles -title "Réseau des Reptiles"
+	MP-EscaladeReptiles@EscaladeReptiles
+	break
 	MP-MeandreReptiles@meandrereptiles
 	break
 	MP-reptiles2
@@ -42,7 +44,11 @@ endmap
 
    
 map MC-Reptiles -title "Réseau des Reptiles"
+	#MC-EscaladeReptiles@EscaladeReptiles
+	#break
 	MC-Reptiles1
+	break
+	MC-EscaladeReptiles@EscaladeReptiles
 	break
 	MC-MeandreReptiles@meandrereptiles
 	break

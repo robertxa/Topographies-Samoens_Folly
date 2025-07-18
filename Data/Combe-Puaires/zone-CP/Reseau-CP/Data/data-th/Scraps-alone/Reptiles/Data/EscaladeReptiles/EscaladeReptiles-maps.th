@@ -5,18 +5,14 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-EscaladeReptiles -title "Escalade des Reptiles"
-	#SP-Reptiles-2
-	#break
-	#SP-Reptiles-3
-	#break
-	#SP-bclereptiles-1
-	#break
-	#SP-Reptiles-1
+	SP-EscReptiles-2
+	break
+	SP-EscReptiles-1
 endmap
 
-#map MC-EscaladeReptiles -title "Escalade des Reptiles"
-#	SC-Reptiles-1
-#	break
-#	SC-bclereptiles-1
-#endmap
+map MC-EscaladeReptiles -title "Escalade des Reptiles"
+	SC-EscReptiles-1
+	break
+	SC-EscReptiles-2
+endmap
    

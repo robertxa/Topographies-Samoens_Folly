@@ -10,43 +10,21 @@ scrap SP-Reptiles-2 -projection plan -station-names "" "@reptiles" -author 1977 
 
 point 895.0180000000001 900.3069999999999 station -name 6.32b -visibility off
 
-point 895.25 969.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "Puits remontant à escalader, gros courant d'air aspirant, est-ce la suite vers l'aval ?"
-
-line pit -close on
-  881.75 943.75
-  880.5 941.75 890.75 936.0 892.0 940.25
-  893.25 944.5 892.0 951.75 893.0 954.0
-  894.0 956.25 895.25 958.75 894.25 959.0
-  893.25 959.25 892.5 961.25 891.25 960.5
-  890.0 959.75 885.0 960.25 883.5 959.0
-  882.0 957.75 876.5 953.75 878.25 950.75
-  880.0 947.75 883.26 946.17 881.75 943.75
-endline
-
 point 895.5 921.0 clay
 
 point 891.75 926.75 clay
 
 line pit
-  883.0 926.25
-  883.0 926.25 887.25 927.75 890.5 931.0
-  892.63 933.13 896.75 939.25 896.75 939.25
+  881.75 932.0
+  881.75 932.0 887.25 931.75 890.5 935.0
+  892.63 937.13 892.0 941.75 892.0 941.75
   smooth off
 endline
 
 point 826.25 906.75 air-draught -orientation 187.9 -scale xs -subtype summer
 
-point 864.5 964.5 height -value [+30 m]
-
-point 881.0 986.0 air-draught -orientation 326.2 -subtype summer
-
 line wall
-  893.5 963.0
-  893.5 963.0 894.5 960.5 891.25 960.5
-  888.0 960.5 887.0 960.75 883.5 959.0
-  880.0 957.25 876.0 953.25 878.25 950.75
-  880.5 948.25 883.75 944.5 881.75 943.75
-  879.75 943.0 865.25 941.75 862.5 938.75
+  862.5 938.75
   859.75 935.75 859.0 927.75 856.0 927.25
   853.0 926.75 844.5 926.5 842.5 923.0
   altitude .
@@ -110,23 +88,90 @@ endline
 
 point 875.75 911.25 height -value [-8 m]
 
-point 881.25 951.25 debris
+line pit
+  862.75 942.25
+  862.75 942.25 866.75 937.0 868.75 932.25
+  smooth off
+endline
 
-point 888.0 944.25 debris
+point 644.25 756.0 label -text "etr."
 
-point 886.75 949.0 debris
+point 665.5 721.75 dig
 
-point 890.0 957.0 debris
+point 618.75 654.0 clay
 
-point 884.75 954.75 debris
+point 630.0 672.25 clay
 
-point 882.25 965.25 water-flow -orientation 156.3
+point 635.5 693.75 clay
 
-point 897.5 945.5 water-flow -orientation 263.8
+point 643.75 716.75 clay
+
+point 648.0 732.25 clay
+
+point 659.75 742.0 clay
+
+point 687.0 747.5 clay
+
+point 732.75 760.0 clay
+
+point 771.0 783.25 clay
+
+point 786.0 795.25 clay
+
+point 798.5 817.0 clay
+
+point 806.5 833.0 clay
+
+point 832.75 863.5 clay
+
+point 818.25 856.5 clay
+
+point 879.0 889.5 clay
+
+point 857.5 877.5 clay
+
+point 837.75 870.75 clay
+
+point 837.25 891.0 clay
+
+point 838.75 911.0 clay
+
+point 850.0 922.75 clay
 
 line pit
-  880.5 944.5
-  880.5 944.5 878.5 934.0 880.5 929.25
+  865.5 943.25
+  865.5 943.25 871.5 940.75 876.25 941.75
+  881.0 942.75 885.5 942.5 885.5 942.5
+  smooth off
+  885.5 942.5 881.25 945.25 884.25 948.25
+endline
+
+line wall
+  865.5 950.0
+  865.5 950.0 868.25 946.25 867.25 943.5
+  866.25 940.75 862.5 938.75 862.5 938.75
+  smooth off
+endline
+
+line wall
+  885.0 945.5
+  885.0 945.5 879.0 952.0 877.25 953.75
+endline
+
+line wall -subtype presumed
+  892.0 944.5
+  885.0 945.5
+endline
+
+line wall -subtype presumed
+  884.75 943.75
+  884.75 943.75 890.25 942.5 892.0 941.75
+endline
+
+line wall
+  892.0 939.0
+  892.0 939.0 889.75 941.5 887.5 941.75
+  885.25 942.0 884.75 943.75 884.75 943.75
   smooth off
 endline
 
@@ -134,14 +179,7 @@ line wall
   910.5 936.75
   910.5 936.75 903.5 927.0 902.0 926.5
   900.5 926.0 899.0 923.5 898.25 925.75
-  897.5 928.0 892.0 939.25 892.0 941.75
-  smooth off
-endline
-
-line wall
-  892.0 944.5
-  892.0 947.0 892.75 951.75 893.0 954.0
-  893.25 956.25 895.5 961.75 895.5 961.75
+  897.5 928.0 892.0 936.5 892.0 939.0
   smooth off
 endline
 

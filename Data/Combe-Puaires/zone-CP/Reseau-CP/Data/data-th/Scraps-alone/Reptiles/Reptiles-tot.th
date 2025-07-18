@@ -23,7 +23,7 @@ survey Reptiles -title "Réseau des Reptiles"
 
 	input Data/EscaladeReptiles/EscaladeReptiles-tot.th
 		equate 8@EscaladeReptiles2025.EscaladeReptiles 6.28@reptiles	# C'est a priori la meilleur station de bouclage
-
+		join SP-EscReptiles-1@EscaladeReptiles SP-Reptiles-2
 
 	input Data/MeandreAff/meandrereptiles-tot.th
 		equate 5@meandrereptiles.meandrereptiles 6.3@reptiles

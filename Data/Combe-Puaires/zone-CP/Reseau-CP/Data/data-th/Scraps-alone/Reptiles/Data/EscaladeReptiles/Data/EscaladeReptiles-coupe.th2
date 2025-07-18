@@ -1,0 +1,315 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -222.10999999999999 -128.0 430.0 782.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {190.36700000000002 1 1.0} {105.03899999999999 0@EscaladeReptiles2025.EscaladeReptiles} EscaladeReptiles-coupe.xvi 0 {}
+
+
+
+scrap SC-EscReptiles-1 -projection extended -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+
+line wall
+  -2.0 521.5
+  -2.0 521.5 6.0 510.5 8.5 499.0
+  11.0 487.5 10.0 476.5 14.5 461.0
+  19.0 445.5 32.0 427.5 31.5 412.5
+  31.0 397.5 44.5 377.0 53.0 372.0
+  altitude .
+  61.5 367.0 57.0 374.0 72.0 371.5
+  87.0 369.0 81.0 362.5 87.5 362.0
+  94.0 361.5 92.0 356.5 101.0 352.5
+  110.0 348.5 108.5 340.0 115.0 330.5
+  121.5 321.0 115.0 313.0 123.5 313.0
+  132.0 313.0 126.5 296.5 132.5 296.5
+  altitude .
+  138.5 296.5 149.5 309.5 149.5 297.0
+  149.5 284.5 151.5 139.5 151.5 129.0
+  151.5 118.5 154.0 113.0 156.5 108.0
+  159.0 103.0 150.5 99.5 163.5 99.0
+endline
+
+line wall -close on -reverse on -outline in
+  83.5 383.5
+  83.5 383.5 84.0 379.0 94.0 379.0
+  104.0 379.0 121.0 377.0 124.5 380.0
+  128.0 383.0 135.5 394.0 126.5 394.5
+  117.5 395.0 115.5 393.5 105.5 391.5
+  95.5 389.5 83.5 383.5 83.5 383.5
+  smooth off
+endline
+
+line border
+  194.5 193.5
+  194.5 193.5 204.0 192.5 209.0 192.5
+  214.0 192.5 218.5 192.0 218.5 192.0
+  smooth off
+endline
+
+line border
+  60.5 431.5
+  60.5 431.5 64.0 430.5 71.0 427.0
+  78.0 423.5 78.0 412.0 78.0 409.0
+endline
+
+area u:galerie
+  l39-164-122
+endarea
+
+line border -id l39-164-122 -close on
+  165.0 123.5
+  165.0 123.5 160.0 115.5 161.0 108.0
+  162.0 100.5 167.0 97.0 168.0 101.5
+  169.0 106.0 170.0 114.5 168.5 117.5
+  167.0 120.5 165.0 123.5 165.0 123.5
+  smooth off
+endline
+
+area u:galerie
+  l37-179-118
+endarea
+
+line border -id l37-179-118 -close on
+  179.0 117.5
+  179.0 117.5 172.5 112.5 175.0 111.0
+  177.5 109.5 182.0 108.0 182.0 112.0
+  182.0 116.0 179.0 117.5 179.0 117.5
+  smooth off
+endline
+
+area u:galerie
+  l35-188-124
+endarea
+
+line border -id l35-188-124 -close on
+  188.5 125.0
+  188.5 125.0 185.0 115.5 185.0 108.0
+  185.0 100.5 191.0 97.5 193.0 98.5
+  195.0 99.5 196.5 109.5 195.5 114.5
+  194.5 119.5 188.5 125.0 188.5 125.0
+  smooth off
+endline
+
+line wall -subtype debris
+  163.5 99.0
+  176.5 98.5 193.5 97.5 200.0 100.0
+  206.5 102.5 206.5 104.0 215.5 104.0
+  224.5 104.0 227.5 104.5 233.5 104.5
+endline
+
+line wall
+  233.5 104.5
+  239.5 104.5 235.0 125.5 240.5 126.5
+  246.0 127.5 254.0 125.0 257.0 129.5
+  260.0 134.0 264.5 131.5 271.0 144.5
+  277.5 157.5 282.5 164.5 282.0 171.0
+  281.5 177.5 280.5 182.5 280.5 182.5
+  smooth off
+endline
+
+line wall
+  106.5 531.0
+  106.5 531.0 107.5 481.5 107.0 466.0
+  106.5 450.5 103.5 419.0 96.0 420.0
+  88.5 421.0 83.0 440.0 70.0 443.0
+endline
+
+point 299.5 500.5 height -value [+50? m]
+
+line water-flow
+  155.0 308.0
+  155.0 308.0 166.5 272.0 167.0 250.5
+  167.5 229.0 169.5 148.5 169.0 141.5
+endline
+
+line water-flow
+  78.5 375.0
+  78.5 375.0 112.5 351.5 119.0 339.5
+  125.5 327.5 127.0 309.5 138.0 307.5
+  149.0 305.5 158.5 298.5 158.5 283.5
+  158.5 268.5 161.5 133.0 161.5 133.0
+  smooth off
+endline
+
+line water-flow
+  226.0 587.5
+  224.5 137.0
+endline
+
+line water-flow
+  235.5 588.5
+  229.5 145.5
+endline
+
+point 82.0 265.0 height -value [+35 m]
+
+point -43.5 378.5 height -value [+25 m]
+
+point 216.0 651.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Galerie des Reptiles" -text "Très gros puits remontant"
+
+point 170.5 522.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Galerie des Reptiles" -text "Puits remontant"
+
+point 115.0 558.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Galerie des Reptiles" -text "Puits remontant"
+
+point 73.0 503.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Galerie des Reptiles" -text "Puits remontant"
+
+point -12.5 561.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Galerie des Reptiles" -text "Puits Méandre remontant"
+
+line wall
+  61.0 479.0
+  61.0 479.0 60.5 452.5 56.0 447.0
+endline
+
+line wall
+  70.0 443.0
+  70.0 443.0 80.5 459.5 82.0 463.5
+  83.5 467.5 84.0 476.5 84.0 476.5
+  smooth off
+endline
+
+line wall
+  56.0 447.0
+  43.0 450.0 57.5 449.5 53.0 457.5
+  48.5 465.5 19.0 537.5 19.0 537.5
+  smooth off
+endline
+
+line wall
+  163.0 495.0
+  163.0 495.0 149.5 432.5 144.5 429.0
+  139.5 425.5 131.5 427.0 130.0 446.5
+  128.5 466.0 127.0 477.0 127.0 489.5
+  127.0 502.0 128.0 534.0 128.0 534.0
+  smooth off
+endline
+
+line wall
+  191.5 605.5
+  191.5 605.5 191.0 556.5 192.0 529.0
+  193.0 501.5 191.0 432.0 191.0 424.5
+endline
+
+line rope
+  154.0 315.0
+  177.0 313.5
+  204.0 313.0
+  211.0 202.5
+  220.0 201.5
+  219.0 107.0
+endline
+
+line rope
+  241.5 604.5
+  221.5 599.0
+  221.0 108.0
+endline
+
+line rope
+  5.0 530.5
+  25.5 515.0
+  58.0 402.0
+  80.0 405.0
+  111.0 412.0
+  151.0 401.5
+  154.0 315.0
+  168.5 111.5
+endline
+
+line wall -outline in
+  194.0 389.5
+  194.0 382.0 195.5 379.0 184.0 369.5
+  172.5 360.0 157.5 373.5 161.5 383.5
+  165.5 393.5 175.0 388.5 174.5 403.0
+endline
+
+line wall -reverse on -outline in
+  194.0 389.5
+  194.0 389.5 196.0 403.0 187.5 403.5
+  179.0 404.0 174.5 403.0 174.5 403.0
+  smooth off
+endline
+
+line wall
+  191.0 424.5
+  191.0 424.5 180.5 414.5 171.0 422.5
+endline
+
+line wall
+  171.0 422.5
+  170.5 437.0 163.0 460.5 165.0 466.5
+  167.0 472.5 174.0 491.5 174.0 491.5
+  smooth off
+endline
+
+line wall
+  280.5 182.5
+  280.5 182.5 268.0 176.5 261.5 171.5
+  255.0 166.5 237.5 149.5 237.5 162.5
+  237.5 175.5 246.0 334.0 248.0 355.0
+  250.0 376.0 248.0 595.0 246.5 601.5
+  altitude .
+endline
+
+point 220.84700000000004 587.8689999999999 station -name 6b@EscaladeReptiles2025
+
+point 65.76700000000002 385.039 station -name 0@PR_reptiles2
+
+point 110.56700000000002 403.38899999999995 station -name 1@PR_reptiles2
+
+point 145.54700000000003 393.69899999999996 station -name 2@PR_reptiles2
+
+point 210.45700000000002 199.52899999999997 station -name 4@PR_reptiles2
+
+point 222.077 197.86899999999997 station -name 5@PR_reptiles2
+
+point 150.05700000000002 313.149 station -name 3@PR_reptiles2
+
+point 164.88700000000003 110.07899999999998 station -name 2@EscaladeReptiles2025
+
+point 190.36700000000002 105.03899999999999 station -name 0@EscaladeReptiles2025
+
+point 220.84700000000004 115.42899999999997 station -name 6@EscaladeReptiles2025
+
+point 249.73700000000002 145.58899999999997 station -name 7@EscaladeReptiles2025
+
+endscrap
+
+
+
+scrap SC-EscReptiles-2 -projection extended -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
+
+point 66.0 59.0 narrow-end
+
+point 5.0 80.5 continuation -attr Code D -attr Cavite "Réseau CP" -attr Reseau "Galerie des Reptiles" -attr CA "Néant" -text "méandre étroit dans l'Hauterivien, pas de courant d'air"
+
+line water-flow
+  193.5 89.0
+  193.5 89.0 172.5 84.0 167.0 79.0
+  161.5 74.0 154.0 66.5 142.5 59.0
+  131.0 51.5 101.5 45.0 101.5 45.0
+  smooth off
+endline
+
+line wall
+  105.0 55.5
+  105.0 55.5 115.5 52.5 120.0 55.0
+  124.5 57.5 120.5 65.0 131.5 65.0
+  142.5 65.0 145.0 65.5 151.5 72.0
+  158.0 78.5 149.5 84.0 161.5 86.0
+  173.5 88.0 184.0 85.5 184.5 89.5
+  185.0 93.5 193.0 98.5 193.0 98.5
+  smooth off
+endline
+
+line wall
+  188.5 125.0
+  188.5 125.0 174.0 127.5 165.0 123.5
+  156.0 119.5 142.0 111.0 133.0 104.0
+  124.0 97.0 100.0 85.5 92.5 83.0
+endline
+
+point 190.36700000000002 100.46899999999997 station -name 1@EscaladeReptiles2025
+
+point 143.537 87.94899999999998 station -name 3@EscaladeReptiles2025
+
+endscrap
+
+
