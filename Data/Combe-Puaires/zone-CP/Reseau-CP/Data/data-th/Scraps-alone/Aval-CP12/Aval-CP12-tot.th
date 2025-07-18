@@ -9,6 +9,8 @@ survey Aval-CP12 -title "Aval-CP12"
 
 	input Data/EscaladesBoucle/EscaladesBoucle-tot.th
 		equate 0@EscaladesBoucle.EscaladesBoucle 19.8@aval-CP12
+		# Bouclage forcé pour que les galeries se superposent
+		equate 12@EscaladesBoucle.EscaladesBoucle 19.3@aval-CP12
 
 	input Data/aval-CP12.th2
 	input Data/meandrecairn.th2
