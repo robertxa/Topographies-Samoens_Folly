@@ -322,6 +322,7 @@ endlayout
  export map -projection extended -fmt xvi -layout xviexport -o data/DiverticuleReptiles-coupe.xvi
  
 select  MP-DiverticuleReptiles@DiverticuleReptiles
+select MC-DiverticuleReptiles@DiverticuleReptiles
  
  export map -projection extended -layout my_layout-coupe -o Outputs/DiverticuleReptiles-coupe.pdf 
  export map -o Outputs/DiverticuleReptiles-plan.pdf -layout my_layout

@@ -12,9 +12,23 @@ map MP-DiverticuleReptiles -title "Diverticule des Reptiles"
 	SP-DiverticuleReptiles-2
 endmap
 
-#map MC-DiverticuleReptiles -title "Diverticule des Reptiles"
-#	SC-Reptiles-1
-#	break
-#	SC-bclereptiles-1
-#endmap
+map MC-DiverticuleReptiles1 -title "Diverticule des Reptiles"
+	SC-DiverticuleReptiles-1
+	#break
+	#SC-DiverticuleReptiles-2
+endmap
+
+map MC-DiverticuleReptiles2 -title "Diverticule des Reptiles"
+	#SC-DiverticuleReptiles-1
+	#break
+	SC-DiverticuleReptiles-2
+endmap
+
+
+
+map MC-DiverticuleReptiles -title "Diverticule des Reptiles"
+	MC-DiverticuleReptiles1
+	break
+	MC-DiverticuleReptiles2 [-2 -42] below
+endmap
    

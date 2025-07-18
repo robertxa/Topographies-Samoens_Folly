@@ -85,4 +85,23 @@ centerline -title "1.28_6.1 6.62_6.63"
    6.62 6.63    10.54       319.0       50.      0.40      0.40       8.0       1.0    
 endcenterline
 
+centerline -title "1.28_6.1 6.62_6.63"
+   date 1977.10.09
+ #  declination -3.1307 degrees
+      team "Christian Rigaldie"
+      team "Josiane Lips"
+   explo-date 1977.10.09
+      explo-team "Josiane Lips"
+      explo-team "Christian Rigaldie"
+   
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino #right left up down
+   extend right
+   flags approximate
+      6.32 6.32b    17       60.       8.0       #1.0       1.0       1.0       1.0    
+   flags not approximate
+endcenterline
+
 endsurvey

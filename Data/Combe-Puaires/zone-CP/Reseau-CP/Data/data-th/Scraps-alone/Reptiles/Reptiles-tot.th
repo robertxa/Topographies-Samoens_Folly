@@ -14,6 +14,9 @@ survey Reptiles -title "Réseau des Reptiles"
 		equate 26@DiverticuleReptiles.DiverticuleReptiles 23@BoucleReptiles
 		join SP-DiverticuleReptiles-3@DiverticuleReptiles SP-bclereptiles-1
 		equate 15@DiverticuleReptiles.DiverticuleReptiles 6.14@reptiles
+		#centerline
+		#	extend ignore 15@DiverticuleReptiles.DiverticuleReptiles 6.14@reptiles
+		#endcenterline
 		join SP-DiverticuleReptiles-1@DiverticuleReptiles SP-Reptiles-1 #-count 2
 		join SP-DiverticuleReptiles-2@DiverticuleReptiles SP-Reptiles-1
 

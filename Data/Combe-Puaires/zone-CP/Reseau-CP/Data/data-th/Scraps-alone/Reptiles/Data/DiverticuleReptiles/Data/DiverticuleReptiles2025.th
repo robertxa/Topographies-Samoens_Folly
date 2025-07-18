@@ -111,7 +111,7 @@ survey DiverticuleReptiles -title "Diverticules des Reptiles 2025"
     4 . 3.16 63.8 17.8
     4 . 1.63 71.6 -2.2
     4 . 6.18 79.2 15.8
-    extend vertical
+    extend left
     4 5 6.62 84.6 22.5  # sommet R2
     # extend auto
     5 . 0.32 176.6 -11.7
@@ -244,6 +244,7 @@ survey DiverticuleReptiles -title "Diverticules des Reptiles 2025"
     14 . 3.05 298.3 -26.3
     14 . 1.44 302.3 -13.6
     extend left
+    extend ignore 14 15
     14 15 2.11 239.9 -33.1  # jct, au niveau carrefour, sur becquet
 
     14 16 4.12 175.2 6.2  # bloc au sol
@@ -264,15 +265,15 @@ survey DiverticuleReptiles -title "Diverticules des Reptiles 2025"
     16 . 3.97 270.4 75.2
     16 . 3.60 247.7 73.5
     16 . 1.30 339.6 69.0
-    extend left
     
     flags duplicate
+    extend left
     16 17 6.87 258.0 78.8 # E7
+    # extend auto
+    #17 . 6.75 255.6 78.8
+    #17 . 6.60 243.4 79.0
     flags not duplicate
 
-    # extend auto
-    17 . 6.75 255.6 78.8
-    17 . 6.60 243.4 79.0
     extend left
     16 18 4.16 137.7 22.0
     # extend auto
@@ -317,7 +318,7 @@ survey DiverticuleReptiles -title "Diverticules des Reptiles 2025"
     21 . 1.38 281.3 -17.7
     21 . 2.78 271.7 -9.4
     21 . 2.48 267.7 -30.4
-    extend vertical
+    extend right
     21 22 2.78 267.8 -14.4
     # extend auto
     22 . 1.05 7.4 -6.4
@@ -344,7 +345,7 @@ survey DiverticuleReptiles -title "Diverticules des Reptiles 2025"
     23 . 0.70 137.4 28.8
     23 . 2.04 117.9 43.9
     23 . 2.71 113.0 35.0
-    extend left
+    extend right
     23 24 4.89 246.4 -18.3  # excentriques
     # extend auto
     24 . 0.45 167.3 -83.3
@@ -363,11 +364,13 @@ survey DiverticuleReptiles -title "Diverticules des Reptiles 2025"
     24 . 1.62 250.0 -13.1
     24 . 3.52 255.1 -18.2
     24 . 3.73 243.1 -20.8
-    extend left
+    #extend left
+    extend ignore 24 26
     #24 25 4.65 249.6 -14.7  # dupliquée par la visée suivante
     24 26 9.41 248.6 -16.3  # Etr. rideau de concrétion, jction avec la base du puits 2024 proche
     # extend auto
     #26 . 8.76 248.5 -16.4
+
     flags duplicate
     extend right
     14 27 8.43 317.5 -23.8
@@ -385,7 +388,9 @@ survey DiverticuleReptiles -title "Diverticules des Reptiles 2025"
     27 . 2.64 151.1 -14.6
     27 . 2.40 131.6 2.8
     27 . 1.79 145.1 33.4
-    extend right
+    
+    #extend right
+    extend ignore 27 0
     27 0 4.45 29.2 -7.4 
     flags not duplicate
   endcenterline

@@ -122,8 +122,8 @@ layout my_layout
    # 100 100, c est en haut, a droite
    # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
    # Il faut specifier un de ces points 
-  #map-header 0 117 nw
-  map-header -40 117 nw
+  map-header 0 117 nw
+  #map-header -40 117 nw
   
    # arrière plan de la manchette
   map-header-bg off
@@ -180,8 +180,8 @@ layout my_layout
    endcode  
  
 	# Rajout des logos
-	#map-image 65 70	nw	../../../../Logos/vulcain.jpg
-	#map-image 80 75	nw	../../../../Logos/vulcain2.jpg 
+	map-image 65 70	nw	../../../../Logos/vulcain.jpg
+	map-image 80 75	nw	../../../../Logos/vulcain2.jpg 
 	
 endlayout
 

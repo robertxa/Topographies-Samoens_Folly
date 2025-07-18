@@ -1,14 +1,14 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -443.9849999999999 -128.75 3455.0299999999997 3254.7799999999997
+##XTHERION## xth_me_area_adjust 396.0 506.0 3455.0299999999997 3254.7799999999997
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {3327.0299999999997 1 1.0} {3126.7799999999997 1.0@ReseauCP.ReseauCP} ReseauCP-map.xvi 0 {}
-##XTHERION## xth_me_image_insert {960.238 1 1.0} {1953.5169999999998 1.28@reptiles.Reptiles} reptiles-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {1062.2380000000003 1 1.0} {1274.0169999999998 1.28@reptiles.Reptiles} reptiles-map.xvi 0 {}
 
 
 
 scrap SP-Reptiles-2 -projection plan -station-names "" "@reptiles" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 853.75 866.0 continuation -attr Code Q -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "A Voir"
+point 895.0180000000001 900.3069999999999 station -name 6.32b -visibility off
 
 point 895.25 969.0 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie des Reptiles" -text "Puits remontant à escalader, gros courant d'air aspirant, est-ce la suite vers l'aval ?"
 
@@ -146,9 +146,9 @@ line wall
 endline
 
 line wall
-  847.5 868.25
-  847.5 868.25 841.75 866.25 841.25 868.25
-  840.75 870.25 838.0 900.0 839.5 903.75
+  848.0 874.25
+  848.0 874.25 841.5 869.0 841.0 871.0
+  840.5 873.0 838.0 900.0 839.5 903.75
   841.0 907.5 844.0 918.75 845.75 919.5
   847.5 920.25 856.75 920.25 858.5 922.75
   860.25 925.25 862.75 934.5 865.5 934.5
@@ -168,6 +168,20 @@ line label -text "galerie des Reptiles"
   708.0 824.5
   708.0 824.5 750.5 839.5 755.5 846.0
   760.5 852.5 773.75 867.5 777.25 879.25
+  smooth off
+endline
+
+line wall
+  848.0 874.25
+  848.0 874.25 863.75 884.5 868.25 886.25
+  872.75 888.0 884.0 894.5 884.0 894.5
+  smooth off
+endline
+
+line wall
+  847.75 869.75
+  847.75 869.75 859.0 875.0 863.25 877.75
+  867.5 880.5 886.0 891.25 886.0 891.25
   smooth off
 endline
 
@@ -197,7 +211,7 @@ line wall
   812.75 840.25 811.0 844.0 813.25 848.25
   815.5 852.5 826.5 857.0 829.0 858.0
   831.5 859.0 837.0 864.0 839.5 864.0
-  842.0 864.0 847.0 864.0 847.0 864.0
+  842.0 864.0 847.75 869.75 847.75 869.75
   smooth off
 endline
 

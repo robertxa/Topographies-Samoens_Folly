@@ -17,7 +17,7 @@ input ../../../../../../../../config.thc
 # Debut de la definition du Layout "xviexport"
 layout xviexport
 	# echelle a laquelle on veut dessiner la topo
-	scale 1 500
+	scale 1 1000
 	# taille de la grille
 	grid-size 10 10 10 m
 	# mettre la grille en arrière plan
@@ -321,6 +321,9 @@ endlayout
  export map -fmt xvi -layout xviexport -o data/reptiles-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o data/reptiles-coupe.xvi
  
+ select MP-reptiles@Reptiles
+ select MC-Reptiles@Reptiles
+
  export map -projection extended -layout my_layout-coupe -o Outputs/reptiles-coupe.pdf 
  export map -o Outputs/reptiles-plan.pdf -layout my_layout
  
