@@ -4,16 +4,12 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-EscaladeBoucle -title "CP12 - Escalade Boucle"
-	#SP-CP12-1
-	#break
-	#SP-CP12-2
+map MP-EscaladesBoucle -title "CP12 - Escalade de la Boucle"
+	SP-EBoucle-1
 endmap
 
 
-#map MC-EscaladeBoucle -title "CP12 - Escalade Boucle"
-#	SC-CP12-1
-#	break
-#	SC-CP12-2
-#endmap
+map MC-EscaladesBoucle -title "CP12 - Escalade de la Boucle"
+	SC-Eboucle-1
+endmap
    

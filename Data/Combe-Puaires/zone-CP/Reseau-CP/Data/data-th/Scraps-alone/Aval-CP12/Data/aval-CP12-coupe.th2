@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -127.65000000000009 -180.3769999999999 3986.6198 1571.6868000000002
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {3228.7 1 1.0} {1021.7180000000001 1.0@aval-CP12.Aval-CP12} avalCP12-coupe.xvi 0 {}
 
 
@@ -54,7 +54,7 @@ point 288.5 923.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Resea
 
 point 706.5 807.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Cheminée à escalader"
 
-point 858.0 610.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Cheminée à escalader"
+point 1086.0 485.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Méandre à escalader, déjà 15 m effectué, il faut continuer"
 
 point 1732.5 592.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Départ en plafond"
 
@@ -215,6 +215,26 @@ line wall -subtype debris
   smooth off
 endline
 
+area u:galerie
+  l262-667-638
+endarea
+
+line rope
+  676.0 634.0
+  640.0 597.0
+  641.0 502.0
+endline
+
+line border -id l262-667-638 -close on
+  675.0 661.0
+  675.0 661.0 647.0 648.0 638.0 639.0
+  629.0 630.0 618.0 584.0 635.0 576.0
+  652.0 568.0 699.0 588.0 709.0 596.0
+  719.0 604.0 679.0 646.0 679.0 655.0
+  679.0 664.0 675.0 661.0 675.0 661.0
+  smooth off
+endline
+
 line wall
   669.5 793.0
   669.5 793.0 645.0 712.0 629.0 714.5
@@ -243,6 +263,7 @@ endline
 line wall -subtype debris -outline none
   1474.0 429.0
   1474.0 429.0 1487.5 438.5 1491.5 439.5
+  smooth off
 endline
 
 line border -id l255-1502-458 -close on
@@ -300,6 +321,7 @@ point 1373.0 366.5 gypsum
 line wall
   1474.5 412.0
   1474.5 412.0 1487.0 418.0 1494.0 418.5
+  smooth off
 endline
 
 line wall
@@ -311,39 +333,30 @@ line wall
   smooth off
 endline
 
-line rope
-  945.0 504.5
-  863.5 501.5
-  855.0 480.5
-endline
-
-point 840.0 488.0 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "Aval CP12" -text "Conduite forcée à atteindre en pendulant"
-
-line rope
-  945.0 504.5
-  1016.5 479.5
-  1013.52 403.067
-endline
-
 area u:galerie
-  l237-860-486
+  l264-1053-427
 endarea
 
-line border -id l237-860-486 -close on
-  854.0 491.0
-  854.0 491.0 850.0 485.5 850.5 479.5
-  851.0 473.5 852.0 468.0 857.0 473.5
-  862.0 479.0 862.5 482.0 861.0 485.5
-  859.5 489.0 854.0 491.0 854.0 491.0
+line border -id l264-1053-427 -close on
+  1033.0 463.0
+  1033.0 463.0 1019.0 430.0 1020.0 408.0
+  1021.0 386.0 1023.0 389.0 1040.0 392.0
+  1057.0 395.0 1053.0 412.0 1053.0 425.0
+  1053.0 438.0 1033.0 463.0 1033.0 463.0
   smooth off
 endline
 
-line wall -subtype unsurveyed
+line wall
+  878.0 473.0
+  878.0 473.0 847.0 512.0 836.0 518.0
+  825.0 524.0 819.0 525.5 819.0 525.5
+  smooth off
+endline
+
+line wall
   1055.0 435.0
-  1055.0 435.0 1038.0 471.0 1024.5 480.5
-  1011.0 490.0 989.5 515.0 963.5 520.5
-  937.5 526.0 885.0 531.0 870.5 530.5
-  856.0 530.0 819.0 525.5 819.0 525.5
+  1055.0 435.0 1045.0 462.0 1029.0 466.0
+  1013.0 470.0 1012.0 449.0 1012.0 449.0
   smooth off
 endline
 
@@ -354,16 +367,9 @@ line wall
   smooth off
 endline
 
-line wall -outline in
-  1001.0 452.5
-  986.0 454.5 887.5 466.5 878.0 473.0
-  smooth off
-endline
-
-line wall -subtype unsurveyed -outline in
-  878.0 473.0
-  868.5 479.5 930.0 484.2 940.0 484.5
-  956.5 485.0 1001.0 452.5 1001.0 452.5
+line wall
+  981.0 448.0
+  966.0 450.0 887.5 466.5 878.0 473.0
   smooth off
 endline
 
@@ -373,6 +379,7 @@ line wall
   1498.0 463.0 1482.5 464.5 1470.5 463.5
   1458.5 462.5 1459.0 460.0 1444.0 464.5
   1429.0 469.0 1425.5 454.5 1424.0 442.0
+  smooth off
 endline
 
 line wall

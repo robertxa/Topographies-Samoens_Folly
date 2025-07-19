@@ -1,0 +1,151 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -127.99999999999999 603.5 368.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {472.442 1 1.0} {157.48000000000002 0} CP12-map.xvi 0 {}
+
+
+
+scrap SP-EBoucle-1 -projection plan -station-names "" "@EscaladesBoucle" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 600.4412 -128.0 0.0 0.0 18.502406479999998 0.0 m]
+
+line pit
+  161.5 188.0
+  161.5 188.0 180.5 175.0 177.5 197.0
+endline
+
+point 218.0 238.0 height -value [-20 m]
+
+point 393.5 204.5 height -value [+10 m]
+
+line pit
+  145.5 209.0
+  145.5 209.0 166.0 195.0 168.0 211.0
+endline
+
+line wall
+  145.5 209.0
+  161.5 188.0
+endline
+
+line wall
+  177.5 197.0
+  168.0 211.0
+endline
+
+line slope
+  179.0 160.5
+  179.0 160.5 209.0 170.0 204.5 185.0
+  l-size 10.0
+endline
+
+line slope
+  213.5 145.0
+  213.5 145.0 225.0 163.0 219.0 174.5
+  l-size 10.0
+endline
+
+line slope
+  242.5 143.0
+  242.5 143.0 252.0 167.5 239.0 171.5
+  l-size 10.0
+endline
+
+line slope
+  271.0 141.5
+  271.0 141.5 277.5 159.5 269.5 167.5
+  l-size 10.0
+endline
+
+line slope
+  321.0 139.5
+  316.0 130.0 307.5 124.5 312.0 117.0
+  l-size 10.0
+endline
+
+line slope
+  348.0 135.0
+  348.0 135.0 326.0 121.5 335.0 109.5
+  l-size 10.0
+endline
+
+line slope
+  371.0 128.0
+  371.0 128.0 361.0 105.5 373.5 102.0
+  l-size 10.0
+endline
+
+line slope
+  400.5 124.5
+  400.5 124.5 391.5 110.0 402.0 102.0
+  l-size 10.0
+endline
+
+point 454.0 81.0 height -value [+10 m]
+
+line pit
+  436.0 124.5
+  436.0 124.5 446.0 112.5 456.0 112.5
+endline
+
+line pit
+  429.0 165.5
+  429.0 165.5 425.0 150.5 438.0 148.5
+endline
+
+line pit
+  453.5 164.5
+  453.5 164.5 448.5 161.5 456.0 156.5
+endline
+
+line wall
+  161.5 188.0
+  161.5 188.0 178.5 159.0 195.5 155.0
+  212.5 151.0 219.0 149.5 244.0 150.0
+  269.0 150.5 293.0 148.5 296.5 136.0
+  altitude .
+  300.0 123.5 322.5 119.0 344.5 114.5
+  366.5 110.0 420.5 106.5 433.5 109.0
+  446.5 111.5 456.5 112.0 451.0 121.0
+  445.5 130.0 427.5 154.0 435.0 155.0
+  442.5 156.0 456.0 156.5 456.0 156.5
+  smooth off
+endline
+
+line wall
+  453.5 164.5
+  453.5 164.5 427.0 165.0 424.5 157.5
+  422.0 150.0 444.5 121.0 438.0 119.5
+  431.5 118.0 399.5 119.0 381.5 123.0
+  363.5 127.0 318.0 132.5 313.0 140.0
+  308.0 147.5 308.5 159.5 282.5 163.5
+  256.5 167.5 226.0 162.0 212.5 170.5
+  199.0 179.0 177.5 197.0 177.5 197.0
+  smooth off
+endline
+
+point 159.452 194.88 station -name 11
+
+point 182.202 182.60000000000002 station -name 10
+
+point 195.43200000000002 175.20000000000002 station -name 9
+
+point 222.122 164.88 station -name 8
+
+point 293.072 148.98000000000002 station -name 7
+
+point 305.902 127.87 station -name 6
+
+point 388.272 109.45000000000002 station -name 5
+
+point 446.452 114.17000000000002 station -name 4
+
+point 450.002 117.56 station -name 3
+
+point 426.53200000000004 156.38 station -name 2
+
+point 453.15200000000004 161.10000000000002 station -name 1
+
+point 472.442 157.48000000000002 station -name 0
+
+endscrap
+
+

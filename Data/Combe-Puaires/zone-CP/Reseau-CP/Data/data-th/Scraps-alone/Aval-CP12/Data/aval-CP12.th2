@@ -334,8 +334,6 @@ point 1632.17 1652.48 station -name 4.1
 
 endscrap
 
-
-
 # scrap SP-P18-1 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 # point 1340.25 1305.5 continuation -attr Code E -attr Cavite ReseauCP -attr Reseau "Galerie du P18" -text "Puits remontant à escalader"
@@ -486,6 +484,7 @@ endscrap
 
 
 
+
 scrap SP-CP12-5 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
 line wall
@@ -494,6 +493,7 @@ line wall
   1091.5 1306.5 1112.75 1331.75 1115.25 1334.25
   1117.75 1336.75 1138.0 1354.25 1139.25 1357.75
   1140.5 1361.25 1150.5 1377.0 1152.5 1376.25
+  smooth off
 endline
 
 line wall
@@ -528,11 +528,13 @@ line wall
   1241.0 1466.25 1247.0 1461.0 1242.75 1457.25
   1238.5 1453.5 1211.75 1440.5 1205.75 1436.25
   1199.75 1432.0 1171.75 1410.72 1170.0 1409.22
+  smooth off
 endline
 
 line wall
   1164.25 1404.5
   1162.5 1403.0 1154.5 1396.75 1152.75 1397.75
+  smooth off
 endline
 
 point 1156.25 1392.75 pebbles -scale s
@@ -589,8 +591,6 @@ point 1281.19 1485.56 station -name 1.20
 point 1368.44 1540.87 station -name 1.18
 
 endscrap
-
-
 
 # scrap SP-P18-2 -projection plan -station-names "" "@aval-CP12" -author 1977 "Pierre Rias" -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
@@ -676,6 +676,7 @@ endscrap
 # point 1136.97 1391.4 station -name 7.18
 
 # endscrap
+
 
 
 
@@ -886,27 +887,84 @@ endline
 
 line wall
   976.5 1296.75
-  973.25 1296.75 956.25 1301.25 950.75 1300.5
+  973.25 1296.75 951.5 1300.75 946.0 1300.0
   smooth off
 endline
 
-point 946.0 1318.0 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "aval CP12" -text "Conduite Forcée à atteindre en pendule"
+line slope
+  1035.0 1271.25
+  1035.0 1271.25 1033.5 1282.5 1043.25 1285.5
+  1053.0 1288.5 1061.25 1284.5 1061.25 1284.5
+  smooth off
+  l-size 4.0
+endline
 
-line pit
-  950.75 1300.5
-  950.75 1300.5 951.5 1299.0 946.0 1300.0
+line rock-border -close on
+  1035.0 1278.0
+  1037.5 1281.5
+  1039.25 1277.0
+  1036.25 1275.5
+  1035.0 1278.0
+endline
+
+line rock-border -close on
+  1044.75 1281.75
+  1048.75 1281.5
+  1046.25 1279.0
+  1044.75 1281.75
+endline
+
+line rock-border -close on
+  1040.5 1283.0
+  1043.0 1284.0
+  1044.0 1280.0
+  1040.75 1279.75
+  1040.5 1283.0
+endline
+
+line rock-border -close on
+  1049.5 1287.5
+  1047.5 1283.25
+  1053.25 1283.5
+  1053.25 1287.0
+  1049.5 1287.5
+endline
+
+point 1040.0 1284.75 gypsum
+
+point 1039.5 1279.0 gypsum
+
+point 1044.75 1283.5 gypsum
+
+point 1051.0 1283.75 gypsum
+
+point 936.25 1288.75 gypsum
+
+point 928.5 1288.5 gypsum
+
+point 939.75 1295.25 gypsum
+
+point 932.5 1294.0 gypsum
+
+point 922.5 1292.5 gypsum
+
+area blocks
+  l198-768-1350
+endarea
+
+line label -id l198-768-1350 -close on
+  771.5 1325.0
+  771.5 1325.0 776.0 1340.5 767.25 1348.75
+  758.5 1357.0 679.0 1384.75 679.0 1384.75
+  smooth off
+  669.75 1362.0
+  669.75 1362.0 701.0 1330.5 711.5 1329.25
+  722.0 1328.0 759.0 1322.5 764.0 1323.75
+  769.0 1325.0 771.5 1325.0 771.5 1325.0
   smooth off
 endline
 
-line wall
-  944.5 1307.0
-  946.0 1300.0
-endline
-
-line wall
-  950.75 1300.5
-  950.5 1306.5
-endline
+point 808.25 1320.5 continuation -attr Code E -attr Cavite "ReseauCP" -attr Reseau "aval CP12" -text "Conduite Forcée à atteindre en pendule et escalade"
 
 line wall
   946.0 1300.0
@@ -929,7 +987,7 @@ line wall
   smooth off
 endline
 
-point 960.0 1260.5 height -value [+15 m]
+point 1005.25 1321.5 height -value [+15 m]
 
 area blocks
   l733-1002-1288
@@ -944,7 +1002,22 @@ line label -id l733-1002-1288 -close on
   smooth off
 endline
 
-line wall -id l386-983-1264
+line pit
+  810.75 1338.25
+  810.75 1338.25 814.75 1339.5 816.0 1337.25
+endline
+
+line wall
+  812.75 1330.0
+  816.0 1337.25
+endline
+
+line wall
+  810.75 1338.25
+  810.75 1338.25 809.75 1332.25 808.75 1330.75
+endline
+
+line wall
   671.0 1366.75
   altitude .
   671.0 1366.75 746.0 1328.0 753.0 1328.25
@@ -952,7 +1025,11 @@ line wall -id l386-983-1264
   760.0 1328.5 781.75 1330.5 783.75 1331.0
   785.75 1331.5 782.25 1339.75 784.25 1337.5
   786.25 1335.25 784.25 1332.25 789.5 1333.25
-  794.75 1334.25 811.0 1339.25 816.0 1337.25
+  794.75 1334.25 805.75 1340.25 810.75 1338.25
+endline
+
+line wall
+  816.0 1337.25
   821.0 1335.25 849.25 1323.25 850.75 1321.5
   852.25 1319.75 861.75 1313.75 867.25 1307.5
   872.75 1301.25 897.5 1286.0 905.75 1284.75

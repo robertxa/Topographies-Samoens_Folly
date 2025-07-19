@@ -322,6 +322,9 @@ endlayout
  export map -fmt xvi -layout xviexport -o data/avalCP12-map.xvi
  export map -projection extended -fmt xvi -layout xviexport -o data/avalCP12-coupe.xvi
  
+ select MP-Aval-CP12@Aval-CP12
+ select MC-Aval-CP12@Aval-CP12
+ 
  export map -projection extended -layout my_layout-coupe -o Outputs/avalCP12-coupe.pdf 
  export map -o Outputs/avalCP12-plan.pdf -layout my_layout
  
