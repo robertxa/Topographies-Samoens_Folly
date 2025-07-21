@@ -10,6 +10,7 @@ scrap SP-EBoucle-1 -projection plan -station-names "" "@EscaladesBoucle" -author
 line pit
   161.5 188.0
   161.5 188.0 180.5 175.0 177.5 197.0
+  smooth off
 endline
 
 point 218.0 238.0 height -value [-20 m]
@@ -19,6 +20,7 @@ point 393.5 204.5 height -value [+10 m]
 line pit
   145.5 209.0
   145.5 209.0 166.0 195.0 168.0 211.0
+  smooth off
 endline
 
 line wall
@@ -34,48 +36,56 @@ endline
 line slope
   179.0 160.5
   179.0 160.5 209.0 170.0 204.5 185.0
+  smooth off
   l-size 10.0
 endline
 
 line slope
   213.5 145.0
   213.5 145.0 225.0 163.0 219.0 174.5
+  smooth off
   l-size 10.0
 endline
 
 line slope
   242.5 143.0
   242.5 143.0 252.0 167.5 239.0 171.5
+  smooth off
   l-size 10.0
 endline
 
 line slope
   271.0 141.5
   271.0 141.5 277.5 159.5 269.5 167.5
+  smooth off
   l-size 10.0
 endline
 
 line slope
   321.0 139.5
   316.0 130.0 307.5 124.5 312.0 117.0
+  smooth off
   l-size 10.0
 endline
 
 line slope
   348.0 135.0
   348.0 135.0 326.0 121.5 335.0 109.5
+  smooth off
   l-size 10.0
 endline
 
 line slope
   371.0 128.0
   371.0 128.0 361.0 105.5 373.5 102.0
+  smooth off
   l-size 10.0
 endline
 
 line slope
   400.5 124.5
   400.5 124.5 391.5 110.0 402.0 102.0
+  smooth off
   l-size 10.0
 endline
 
@@ -84,25 +94,49 @@ point 454.0 81.0 height -value [+10 m]
 line pit
   436.0 124.5
   436.0 124.5 446.0 112.5 456.0 112.5
+  smooth off
 endline
 
 line pit
   429.0 165.5
   429.0 165.5 425.0 150.5 438.0 148.5
+  smooth off
 endline
 
 line pit
   453.5 164.5
   453.5 164.5 448.5 161.5 456.0 156.5
+  smooth off
+endline
+
+point 267.5 95.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Aval CP12, escalades Boucle" -text "CF à atteindre en escalade"
+
+line pit -reverse on
+  299.5 130.5
+  299.5 130.5 304.0 137.5 294.5 139.5
+endline
+
+line wall
+  286.0 129.0
+  299.5 130.5
+endline
+
+line wall
+  294.5 139.5
+  285.0 137.5
 endline
 
 line wall
   161.5 188.0
   161.5 188.0 178.5 159.0 195.5 155.0
-  212.5 151.0 219.0 149.5 244.0 150.0
-  269.0 150.5 293.0 148.5 296.5 136.0
+  212.5 151.0 231.5 149.5 256.5 150.0
   altitude .
-  300.0 123.5 322.5 119.0 344.5 114.5
+  281.5 150.5 291.0 152.0 294.5 139.5
+endline
+
+line wall
+  299.5 130.5
+  303.0 118.0 322.5 119.0 344.5 114.5
   366.5 110.0 420.5 106.5 433.5 109.0
   446.5 111.5 456.5 112.0 451.0 121.0
   445.5 130.0 427.5 154.0 435.0 155.0

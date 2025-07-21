@@ -10,6 +10,7 @@ scrap SC-Eboucle-1 -projection extended -station-names "" "@EscaladesBoucle" -au
 line wall
   250.0 443.0
   250.0 443.0 237.0 435.0 222.0 436.0
+  smooth off
 endline
 
 line rope -clip off
@@ -37,7 +38,25 @@ line wall
   635.0 217.0
   635.0 217.0 621.0 333.0 601.0 344.0
   581.0 355.0 571.0 438.0 539.0 453.0
-  507.0 468.0 430.0 518.0 403.0 536.0
+endline
+
+point 596.0 507.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Aval CP12, escalades Boucle" -text "CF à atteindre en escalade"
+
+line wall
+  559.0 489.0
+  559.0 489.0 524.0 462.0 519.0 462.0
+endline
+
+line wall
+  539.0 453.0
+  539.0 453.0 541.0 456.0 551.0 462.0
+  561.0 468.0 572.0 472.0 572.0 472.0
+  smooth off
+endline
+
+line wall
+  519.0 462.0
+  487.0 477.0 430.0 518.0 403.0 536.0
   376.0 554.0 340.18 513.39 308.0 495.0
   294.0 487.0 250.0 443.0 250.0 443.0
   smooth off
