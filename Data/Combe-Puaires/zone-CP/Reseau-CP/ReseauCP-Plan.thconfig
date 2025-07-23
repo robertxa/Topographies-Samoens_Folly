@@ -207,7 +207,7 @@ export model -fmt esri -o Outputs/ReseauCP_SHP
 export model -o Outputs/3D/reseauCP-2025.lox
   
 # Export des fichiers kml
-#export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2022.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2025.kml -layout my_layout
  
 # Export des listes:
 #export database -o Outputs/Lists/databaseCP-2022.sql

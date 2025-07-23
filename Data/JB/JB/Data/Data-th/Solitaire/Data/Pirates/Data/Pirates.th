@@ -19,13 +19,16 @@ survey Pirates -title "Puits des Pirates ; 2025"
     units length meters
     units compass clino degrees
     data normal from to length compass clino left right up down
+    extend right
     0 0b  0 0 0 2 0.2 0.5 1
     0 1 8.5 353 25  3 0.3 1.5 1
     1 2 7.5 80  22  0.4 1.2 2.7 2.6
     2 3 7.2 95  23  0.8 0.7 2 0.5
     3 4 6.25  85  3 1 0.5 10  1
-    4 5 10  0 90  0.5 1 0.5 10
+    4 5 10  0 90  0.5 1 0.5 10  # Puits des Pirates
+    extend left
     5 6 6.72  16  44  2.5 2 1 1
+    extend left
     6 7 8.2 305 -33 . . . . # Station 7 = jonction avec le Solitaire à la base de la savonette
     
     # Dev : 54.37 m
@@ -44,6 +47,7 @@ survey Pirates -title "Puits des Pirates ; 2025"
     units length meters
     units compass clino degrees
     data normal from to length compass clino left right up down
+      extend right
       6 8 10  30  -4  1.5 1.5 1.5 1.5
     # Dev : 10 m
   endcenterline
@@ -62,15 +66,21 @@ survey Pirates -title "Puits des Pirates ; 2025"
     units length meters
     units compass clino degrees
     data normal from to length compass clino left right up down
+      extend left
       0c  0d  0 0 0 4 1 6 1 # Sommet puits donnant sur la rivière, au niveau de l'amarrage
       flags duplicate
+      #extend ignore 0c A
       0c  A 8 150 -50 . . . . # Visée vers la rivière
       flags not duplicate
+      extend ignore 0c 1b
+      extend ignore 1b 0c
       0c  1b  10.6  38  34  2.6 1 6 1
-      1b  2b  9.4 285 62  0.5 3 10  1
+      extend right
+      1b  2b  9.4 285 62  0.5 3 10  1 # Puits du Solitaire Egaré
       2b  3b  16  245 60  1.3 0.3 2 1
       3b  4b  3.15  165 0 17  1 1.4 1
       4b  0 3 109 21  . . . . # Jction station 0 précédente
+      extend left
       0 6b  15  208 16  1.5 15.3  2 0.5 # CF très surcreusée et boueuse à souhait...
     
     # Dev : 57.15 m

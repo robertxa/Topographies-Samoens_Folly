@@ -25,6 +25,8 @@ encoding  utf-8
  	MP-solitaire1@Solitaire
  	preview below MP-rubis@Rubis
  	break
+	MP-Pirates@Pirates
+	break
  	MP-PuitsParalleles@PuitsParalleles
  	break
 	#preview above MP-solitaire2@Solitaire
@@ -54,6 +56,8 @@ encoding  utf-8
 	break
 	MC-solitaire@Solitaire 	#[-200 200 m] below
  	break
+	MC-Pirates@Pirates
+	break
  	MC-PuitsParalleles@PuitsParalleles
  endmap   
 
@@ -71,6 +75,8 @@ map MC-solitaire-JB -title "Réseau du Solitaire"
 	MC-Poncho@Poncho 	[-200 200 m] below
 	break
 	MC-solitaire@Solitaire 	[-200 200 m] below
+	break
+	MC-Pirates@Pirates 	[-200 200 m] below
  	break
  	MC-PuitsParalleles@PuitsParalleles 	[-200 200 m] below
  endmap   

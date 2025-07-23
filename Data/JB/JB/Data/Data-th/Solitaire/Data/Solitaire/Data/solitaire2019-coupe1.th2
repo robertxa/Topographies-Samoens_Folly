@@ -50,7 +50,7 @@ endline
 
 point 792.8000000000002 257.90999999999997 station -name 2019-FD-19@solitaire
 
-point 756.25 191.75 label -text "<center>puits de la<br>Savonnette"
+point 725.75 191.0 label -text "<center>p. de la<br>Savonnette"
 
 point 589.5 177.5 label -text "<center>puits<br>de Newton"
 
@@ -58,7 +58,7 @@ point 537.0 132.5 label -text "<center>carrefour<br>Daniel"
 
 point 658.0 270.25 label -text "R1.5"
 
-point 784.5 220.25 continuation -attr Code A -text "Départ à explorer"
+point 770.25 202.25 continuation -attr Code A -text "Départ à explorer"
 
 line wall
   780.25 236.25
@@ -80,8 +80,12 @@ line wall
   677.15 227.46 686.0 241.5 696.0 240.0
   706.0 238.5 716.25 238.25 722.5 236.0
   728.75 233.75 725.75 221.0 733.5 219.75
-  741.25 218.5 764.0 218.75 769.75 220.5
-  775.5 222.25 772.0 222.0 772.0 227.75
+  741.25 218.5 745.5 218.75 752.75 219.0
+endline
+
+line wall
+  770.5 220.0
+  776.25 221.75 772.0 222.0 772.0 227.75
   smooth off
 endline
 
@@ -215,7 +219,7 @@ point 610.25 204.25 height -value [-7 m]
 
 point 228.25 196.75 height -value [-9 m]
 
-point 801.5 236.75 height -value [-7 m]
+point 745.75 236.75 height -value [-7 m]
 
 line rope
   783.5 257.0
@@ -228,6 +232,20 @@ line rope
   586.0 227.25
   560.0 228.25
   570.5 228.0
+endline
+
+line wall
+  768.0 211.75
+  768.0 211.75 760.0 218.0 762.75 218.0
+  765.5 218.0 770.5 220.0 770.5 220.0
+  smooth off
+endline
+
+line wall
+  752.75 219.0
+  752.75 219.0 755.75 219.5 757.5 218.0
+  759.25 216.5 763.75 210.25 763.75 210.25
+  smooth off
 endline
 
 point 758.5 220.75 water-flow -orientation 152.1

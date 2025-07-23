@@ -1,0 +1,208 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -29.554000000000002 -128.0 502.0367 442.9608
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {206.05 1 1.0} {196.849 0} Pirates-coupe2024.xvi 0 {}
+
+
+
+scrap SC-Pirates-1 -projection extended -station-names "" "@Pirates" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-108.29199999999999 -128.0 502.0389 -128.0 0.0 0.0 15.50240486 0.0 m]
+
+line rope
+  195.0 195.75
+  179.75 195.25
+  147.5 143.0
+  132.25 113.75
+  132.25 100.5
+endline
+
+point 265.5 244.0 continuation -attr Code E -attr Cavite "Gouffre Jean-Bernard" -attr Reseau "Pirates - Solitaire" -text "Jonction vers le carrefour Daniel ?"
+
+area u:galerie
+  l35-274-229
+endarea
+
+line border -id l35-274-229 -close on
+  272.0 232.75
+  272.0 232.75 268.5 228.25 269.0 223.5
+  269.5 218.75 272.75 213.75 272.75 217.25
+  272.75 220.75 276.0 226.75 274.5 229.25
+  273.0 231.75 272.0 232.75 272.0 232.75
+  smooth off
+endline
+
+line wall
+  313.0 271.75
+  313.0 271.75 315.5 247.0 310.5 246.5
+  305.5 246.0 280.0 238.25 269.0 232.75
+  258.0 227.25 245.0 219.5 232.0 213.5
+  219.0 207.5 218.0 207.5 207.0 204.0
+  196.0 200.5 188.0 207.5 181.0 200.5
+  174.0 193.5 149.5 194.5 148.5 182.5
+  147.5 170.5 139.5 160.0 134.0 152.0
+  128.5 144.0 136.5 131.5 130.0 126.0
+  smooth off
+endline
+
+point 336.5 208.0 label -text "<center>P. des<br>Pirates"
+
+point 349.25 257.5 height -value [-10 m]
+
+line rope
+  316.75 274.75
+  316.5 231.25
+endline
+
+line rope
+  294.75 237.0
+  281.75 235.0
+  280.75 214.0
+endline
+
+area u:galerie
+  l18-209-200
+endarea
+
+line border -id l18-209-200 -close on
+  207.0 204.0
+  207.0 204.0 202.25 203.75 202.25 200.25
+  202.25 196.75 203.0 192.75 205.5 193.75
+  208.0 194.75 209.5 198.5 209.0 200.25
+  208.5 202.0 207.0 204.0 207.0 204.0
+  smooth off
+endline
+
+line wall -subtype debris
+  138.5 105.0
+  138.5 105.0 149.0 107.0 151.0 114.0
+  153.0 121.0 151.55 148.67 157.0 142.0
+  171.5 124.25 177.5 137.0 177.5 147.5
+  smooth off
+endline
+
+point 204.75 161.5 height -value [-15 m]
+
+point 247.25 98.25 label -text "<center>P. du Solitaire<br>Egaré"
+
+line wall
+  177.5 147.5
+  altitude .
+  177.5 158.0 181.0 188.5 185.0 188.5
+  189.0 188.5 199.0 187.0 202.5 188.5
+  206.0 190.0 229.0 207.0 240.0 207.0
+  smooth off
+endline
+
+line wall -subtype debris
+  240.0 207.0
+  251.0 207.0 257.5 211.5 265.5 211.0
+  smooth off
+endline
+
+line rope
+  337.5 291.5
+  317.75 291.75
+  296.25 294.75
+endline
+
+line border
+  307.0 284.75
+  307.0 284.75 316.0 286.0 319.5 285.0
+  323.0 284.0 329.0 284.0 329.0 284.0
+  smooth off
+endline
+
+line wall
+  283.75 280.75
+  283.75 280.75 293.5 288.5 295.5 284.25
+  297.5 280.0 300.0 279.5 304.25 276.25
+  308.5 273.0 313.0 271.75 313.0 271.75
+  smooth off
+endline
+
+line wall
+  341.0 296.75
+  341.0 296.75 324.0 295.5 314.75 296.0
+  305.5 296.5 300.75 299.0 295.25 297.75
+  289.75 296.5 283.75 291.75 283.75 291.75
+  smooth off
+endline
+
+line wall
+  332.25 273.5
+  332.25 273.5 333.5 281.75 337.0 283.5
+  smooth off
+endline
+
+line wall
+  265.5 211.0
+  273.5 210.5 285.5 208.0 285.5 214.5
+  285.5 221.0 288.5 231.0 296.0 231.0
+  303.5 231.0 320.5 227.0 322.5 233.5
+  324.5 240.0 332.25 273.5 332.25 273.5
+  smooth off
+endline
+
+point 133.75 105.38899999999998 station -name 1b
+
+point 151.13000000000002 138.069 station -name 2b
+
+point 182.62 192.599 station -name 3b
+
+point 195.03000000000003 192.599 station -name 4b
+
+point 206.05 196.849 station -name 0
+
+point 236.38000000000002 210.97899999999998 station -name 1
+
+point 263.76 222.04899999999998 station -name 2
+
+point 289.85 233.149 station -name 3
+
+point 314.43 234.409 station -name 4
+
+point 314.43 273.779 station -name 5
+
+endscrap
+
+
+
+scrap SC-Pirates-2 -projection extended -station-names "" "@Pirates" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-108.29199999999999 -128.0 502.0389 -128.0 0.0 0.0 15.50240486 0.0 m]
+
+line wall
+  197.0 182.25
+  197.0 182.25 204.5 191.0 205.5 193.75
+  smooth off
+endline
+
+line wall -subtype presumed
+  134.75 175.5
+  134.75 175.5 148.5 182.0 156.0 182.0
+  163.5 182.0 197.0 182.25 197.0 182.25
+  smooth off
+endline
+
+line border
+  134.5 207.25
+  134.5 207.25 153.0 207.0 158.0 205.75
+  163.0 204.5 167.75 202.25 173.75 201.75
+  179.75 201.25 197.25 193.75 200.5 193.5
+  203.75 193.25 205.5 193.75 205.5 193.75
+  smooth off
+endline
+
+point 130.0 199.0 continuation -attr Code E -attr Cavite "Gouffre Jean-Bernard" -attr Reseau "Pirates - Solitaire" -text "Conduite forcée très surcreusée, progression difficile, tout en artif"
+
+line wall
+  207.0 204.0
+  207.0 204.0 164.25 215.25 158.25 217.75
+  152.25 220.25 139.75 221.0 134.25 221.0
+  smooth off
+endline
+
+point 149.29000000000002 213.10899999999998 station -name 6b
+
+point 206.05 196.849 station -name 0
+
+endscrap
+
+

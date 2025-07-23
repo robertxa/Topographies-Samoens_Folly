@@ -13,10 +13,14 @@ survey Solitaire -title "Réseau du Solitaire"
 
 	# Données topos Solitaire
 	input Data/Solitaire/Solitaire-tot.th
+		join SC-solitaire2019-1@Solitaire SC-Solitaire-c_2018-1@Solitaire
 
 	# Puits des Pirates
 	input Data/Pirates/Pirates-tot.th
 		equate 7@Pirates.Pirates 2019-FD-21@solitaire.Solitaire
+		join SP-Pirates-2@Pirates SP-solitaire2019-1@Solitaire -count 2
+		join SC-Pirates-1@Pirates SC-solitaire2019-1@Solitaire
+		join SC-Pirates-1@Pirates SC-Solitaire-c_2018-1@Solitaire
 
 	# Puits du Poncho
 	input Data/Poncho/Poncho-tot.th

@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -147.0 1387.8432 620.8113000000001
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -128.0 -147.0 1387.8432 620.8113000000001
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {1013.543 1 1.0} {335.333 xx0init} solitaire-coupe2018b.xvi 0 {}
 
 
@@ -76,9 +76,30 @@ line wall
 endline
 
 line wall
+  245.0 174.0
+  245.0 174.0 250.0 177.0 253.5 178.75
+  257.0 180.5 260.0 188.5 260.0 188.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  227.0 210.5
+  223.0 215.5
+endline
+
+line wall
+  250.0 189.5
+  250.0 189.5 248.5 188.0 246.0 187.5
+endline
+
+line wall
   198.0 194.0
   198.0 194.0 206.0 194.5 217.5 194.0
-  229.0 193.5 251.0 188.0 260.0 188.5
+  229.0 193.5 241.0 189.0 250.0 189.5
+endline
+
+line wall
+  260.0 188.5
   269.0 189.0 276.0 193.5 287.0 193.5
   298.0 193.5 303.5 197.0 320.0 198.5
   336.5 200.0 359.0 205.5 368.0 202.0

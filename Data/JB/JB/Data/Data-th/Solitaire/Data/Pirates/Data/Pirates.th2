@@ -1,0 +1,283 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.75 -128.75 600.4412 460.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {236.21900000000002 1 1.0} {157.47899999999998 0} Pirates-plan2024.xvi 0 {}
+
+
+
+scrap SP-Pirates-1 -projection plan -station-names "" "@Pirates" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 600.4412 -128.0 0.0 0.0 18.502406479999998 0.0 m]
+
+point 215.35900000000004 164.649 station -name 4b
+
+point 208.97900000000004 188.57899999999998 station -name 3b
+
+point 266.059 215.279 station -name 2b
+
+point 299.60900000000004 206.219 station -name 1b
+
+point 257.009 151.72899999999998 station -name 0d
+
+point 277.249 116.689 station -name A
+
+line rock-border -close on
+  234.75 203.5
+  243.75 210.75
+  245.5 201.25
+  237.0 196.5
+  234.75 203.5
+endline
+
+line rock-border -close on
+  254.5 216.5
+  248.75 210.0
+  254.25 204.25
+  259.0 209.25
+  254.5 216.5
+endline
+
+line rock-border -close on
+  254.5 227.75
+  247.0 214.75
+  260.5 211.25
+  262.5 227.25
+  254.5 227.75
+endline
+
+line rock-border -close on
+  244.75 221.75
+  237.5 210.75
+  248.75 204.75
+  254.25 212.25
+  244.75 221.75
+endline
+
+line pit -reverse on
+  273.0 202.0
+  273.0 202.0 286.4 200.79 290.75 189.75
+endline
+
+line pit
+  209.0 161.25
+  209.0 161.25 228.0 160.5 224.5 173.0
+endline
+
+line pit
+  232.75 222.25
+  232.75 222.25 233.5 203.0 246.75 197.75
+endline
+
+line wall
+  231.0 164.25
+  231.0 164.25 214.5 178.75 217.75 182.0
+  221.0 185.25 246.25 198.0 253.5 202.5
+  260.75 207.0 262.0 210.75 273.0 202.0
+  276.04 199.58 271.5 195.75 271.5 195.75
+  smooth off
+endline
+
+line wall -subtype pit
+  279.75 184.75
+  279.75 184.75 282.5 186.5 286.25 188.0
+  290.0 189.5 290.75 189.75 290.75 189.75
+  smooth off
+endline
+
+line wall
+  290.75 189.75
+  298.0 191.25 300.25 192.0 300.25 192.0
+  smooth off
+endline
+
+line wall -subtype pit
+  271.5 195.75
+  271.5 195.75 264.25 195.0 266.5 190.75
+  268.75 186.5 274.5 183.25 279.75 184.75
+endline
+
+line wall
+  300.25 192.0
+  300.25 192.0 307.75 204.75 302.25 212.0
+  296.75 219.25 290.25 230.0 279.0 231.5
+  267.75 233.0 259.5 243.75 250.5 234.75
+  241.5 225.75 204.75 198.25 205.5 187.0
+  altitude .
+  206.25 175.75 211.75 159.0 215.75 157.0
+  219.75 155.0 225.5 154.75 225.5 154.75
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SP-Pirates-2 -projection plan -station-names "" "@Pirates" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 600.4412 -128.0 0.0 0.0 18.502406479999998 0.0 m]
+
+line wall
+  225.5 154.75
+  167.25 48.5
+endline
+
+line wall
+  190.5 44.0
+  190.5 44.0 247.25 142.75 247.25 151.75
+  247.25 160.75 234.75 175.75 234.25 190.0
+  233.75 204.25 235.5 217.5 262.5 217.0
+  289.5 216.5 326.0 215.5 342.0 217.5
+  358.0 219.5 388.5 214.25 395.75 228.5
+  403.0 242.75 403.25 248.0 403.25 248.0
+  smooth off
+endline
+
+line rock-border -close on
+  310.0 224.5
+  302.75 220.75
+  308.5 217.25
+  312.0 220.25
+  310.0 224.5
+endline
+
+line rock-border -close on
+  299.25 230.25
+  293.25 227.25
+  299.25 221.25
+  301.75 224.5
+  299.25 230.25
+endline
+
+line rock-border -close on
+  293.0 231.75
+  288.25 227.0
+  293.75 222.75
+  295.25 226.75
+  293.0 231.75
+endline
+
+line floor-meander
+  223.5 225.5
+  223.5 225.5 227.0 216.75 226.75 207.25
+  226.5 197.75 227.0 184.75 229.0 180.25
+  231.0 175.75 234.5 167.0 234.5 167.0
+  smooth off
+endline
+
+line floor-meander
+  236.25 153.25
+  179.75 49.25
+endline
+
+point 173.0 35.5 continuation -attr Code E -attr Cavite "Gouffre Jean-Bernard" -attr Reseau "Pirates - Solitaire" -text "Conduite forcée très surcreusée, progression difficile, tout en artif"
+
+line pit
+  402.5 241.25
+  402.5 241.25 394.5 254.75 374.0 252.5
+endline
+
+line slope
+  386.75 291.5
+  386.75 291.5 395.0 278.0 392.0 275.0
+  389.0 272.0 379.25 267.0 375.25 268.5
+  371.25 270.0 371.0 286.5 371.0 286.5
+  smooth off
+  l-size 5.0
+endline
+
+line pit
+  348.75 263.25
+  348.75 263.25 362.5 270.5 366.25 280.5
+endline
+
+line pit
+  412.25 259.5
+  412.25 259.5 405.25 269.25 392.0 267.0
+  378.75 264.75 368.0 259.75 368.0 259.75
+  smooth off
+endline
+
+line wall
+  348.25 266.25
+  348.25 266.25 354.41 263.17 356.0 261.5
+  360.75 256.5 376.0 254.5 376.0 254.5
+  smooth off
+endline
+
+line wall
+  393.0 280.5
+  387.0 274.5 387.25 278.25 380.0 280.0
+  372.75 281.75 363.5 276.5 363.5 276.5
+  smooth off
+endline
+
+line wall
+  403.25 248.0
+  403.25 248.0 408.25 260.5 412.5 268.25
+endline
+
+point 349.839 294.56899999999996 station -name 7
+
+point 433.46900000000005 331.57899999999995 station -name 8
+
+point 394.16900000000004 263.539 station -name 6
+
+point 453.25 259.0 label -text "<center>P. des<br>Pirates"
+
+point 417.0 224.25 height -value [-10 m]
+
+point 314.5 248.75 label -text "R4"
+
+line pit
+  316.5 212.0
+  316.5 212.0 327.0 223.75 316.5 233.5
+endline
+
+line pit -reverse on
+  212.5 222.0
+  212.5 222.0 214.5 231.25 220.5 232.75
+endline
+
+point 187.75 244.25 continuation -attr Code E -attr Cavite "Gouffre Jean-Bernard" -attr Reseau "Pirates - Solitaire" -text "Jonction vers le carrefour Daniel ?"
+
+line wall
+  199.75 233.75
+  199.75 233.75 215.5 228.75 214.5 222.75
+  213.5 216.75 209.75 208.25 209.75 205.0
+  209.75 201.75 209.0 200.0 209.0 200.0
+  smooth off
+endline
+
+line wall
+  223.25 232.25
+  223.25 232.25 217.0 230.25 214.0 233.0
+  211.0 235.75 203.0 239.75 203.0 239.75
+  smooth off
+endline
+
+line wall
+  376.0 254.5
+  376.0 254.5 382.0 236.25 369.0 234.0
+  356.0 231.75 342.75 230.25 322.75 229.75
+  302.75 229.25 236.25 246.0 228.25 237.0
+  225.5 233.91 225.0 236.25 223.25 232.25
+endline
+
+line wall
+  209.0 200.0
+  209.5 189.0 224.25 179.0 226.25 174.25
+  228.25 169.5 231.0 164.25 231.0 164.25
+  smooth off
+endline
+
+point 383.699 226.929 station -name 5
+
+point 334.72900000000004 222.679 station -name 3
+
+point 282.759 227.16899999999998 station -name 2
+
+point 228.81900000000002 217.719 station -name 1
+
+point 182.90900000000002 57.239000000000004 station -name 6b
+
+point 236.21900000000002 157.47899999999998 station -name 0b
+
+endscrap
+
+

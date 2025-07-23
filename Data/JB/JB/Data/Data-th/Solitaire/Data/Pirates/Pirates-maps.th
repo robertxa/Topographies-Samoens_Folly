@@ -6,14 +6,17 @@ encoding  utf-8
 
 #### Plan
 
-map MP-Pirates1 -title "Puits des Pirates"
+map MP-Pirates -title "Puits des Pirates"
+	SP-Pirates-2
+	break
 	SP-Pirates-1
 endmap
 
 ########## Coupe
 
-#map MC-Pirates -title "Puits des Pirates"
-#	SC-Pirates2024-1
-	
-#endmap
+map MC-Pirates -title "Puits des Pirates"
+	SC-Pirates-1
+	break
+	SC-Pirates-2	
+endmap
 
