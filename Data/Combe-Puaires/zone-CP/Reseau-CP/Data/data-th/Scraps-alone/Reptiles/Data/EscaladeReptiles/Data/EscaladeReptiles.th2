@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 364.2206 398.0
+##XTHERION## xth_me_area_adjust -128.00099999999998 -127.99399999999999 364.2196 442.96680000000003
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {170.70600000000002 1 1.0} {116.301 0@EscaladeReptiles2025.EscaladeReptiles} EscaladeReptiles-map.xvi 0 {}
 
@@ -14,16 +14,19 @@ point 179.5 177.0 narrow-end
 line pit
   161.5 151.0
   161.5 151.0 158.25 142.5 160.5 139.0
+  smooth off
 endline
 
 line pit -reverse on
   164.5 105.5
   164.5 105.5 155.0 110.75 153.75 115.75
+  smooth off
 endline
 
 line pit -reverse on
   179.0 129.0
   179.0 129.0 171.5 133.0 170.25 134.0
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -41,6 +44,7 @@ line wall
   140.5 103.75
   140.5 103.75 151.0 107.25 155.75 107.25
   160.5 107.25 163.75 109.5 168.5 106.25
+  smooth off
 endline
 
 line wall -subtype pit
@@ -56,6 +60,7 @@ line wall
   161.75 161.25 160.25 160.5 161.0 157.25
   161.75 154.0 165.0 152.25 164.0 149.25
   163.0 146.25 159.5 150.75 158.75 152.5
+  smooth off
 endline
 
 line wall -subtype pit
@@ -64,6 +69,7 @@ line wall -subtype pit
   143.5 152.75 142.5 146.0 146.25 139.5
   altitude .
   150.0 133.0 153.0 124.75 155.0 121.5
+  smooth off
 endline
 
 line wall
@@ -75,7 +81,7 @@ endline
 
 point 219.75 114.25 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Reptiles" -text "E50 a minima à effectuer"
 
-point 103.75 141.25 height -value [+35 m]
+point 100.75 154.0 height -value [+35 m]
 
 point 146.25 83.5 height -value [+50 m]
 
@@ -124,6 +130,7 @@ line wall -subtype pit
   209.0 94.5
   209.0 94.5 193.0 117.75 188.75 121.0
   184.5 124.25 172.75 129.75 177.0 130.5
+  smooth off
 endline
 
 line wall
@@ -133,6 +140,7 @@ line wall
   168.25 147.75 167.0 153.25 166.5 157.5
   altitude .
   166.0 161.75 170.75 167.75 169.75 171.75
+  smooth off
 endline
 
 point 195.82600000000002 99.05099999999999 station -name 6
@@ -153,6 +161,18 @@ endscrap
 
 scrap SP-EscReptiles-2 -projection plan -station-names "" "@PR_reptiles2" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 364.2206 -128.0 0.0 0.0 12.50240324 0.0 m]
 
+line wall
+  193.5 90.0
+  193.5 90.0 196.75 100.0 196.5 104.0
+  196.25 108.0 195.25 107.5 195.25 107.5
+  smooth off
+endline
+
+line wall
+  180.5 98.0
+  180.5 98.0 168.5 92.75 176.0 86.25
+endline
+
 line wall -reverse on
   180.5 98.0
   180.5 98.0 175.25 115.75 169.75 120.25
@@ -163,57 +183,68 @@ endline
 line pit
   82.5 248.25
   82.5 248.25 64.0 248.25 64.25 237.5
+  smooth off
 endline
 
 line pit
   90.5 233.25
   90.5 233.25 76.25 238.75 74.5 226.0
+  smooth off
 endline
 
 line pit
   103.5 213.25
   103.5 213.25 90.5 215.5 89.75 204.25
+  smooth off
 endline
 
 line pit
   118.5 195.75
   118.5 195.75 106.5 199.25 104.5 187.5
+  smooth off
 endline
 
 line pit -reverse on
   123.25 174.25
   123.25 174.25 120.5 188.25 129.25 187.25
+  smooth off
 endline
 
 line pit
   147.25 176.5
   147.25 176.5 145.0 189.25 138.25 190.25
+  smooth off
 endline
 
 line pit
   158.75 187.25
   158.75 187.25 154.75 197.25 148.75 195.25
+  smooth off
 endline
 
 line pit
   186.0 115.75
   186.0 115.75 176.75 115.0 176.5 109.0
+  smooth off
 endline
 
 line pit
   177.0 124.25
   177.0 124.25 169.25 127.75 169.75 120.25
+  smooth off
 endline
 
 line pit
   156.5 134.0
   156.5 134.0 162.75 130.25 164.0 137.25
+  smooth off
 endline
 
 line pit
   195.25 107.5
   195.25 107.5 191.5 111.75 187.5 109.5
   183.5 107.25 179.75 104.0 180.5 98.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -236,6 +267,16 @@ line wall
   152.25 170.0 139.5 173.75 148.0 181.75
   156.5 189.75 163.75 195.25 163.75 195.25
   smooth off
+endline
+
+line wall
+  164.0 137.25
+  164.0 137.25 162.25 146.75 159.0 150.25
+endline
+
+line wall
+  147.75 150.75
+  147.75 150.75 155.5 135.5 156.5 134.0
 endline
 
 line wall
@@ -262,11 +303,13 @@ endline
 line pit
   159.25 165.75
   159.25 165.75 141.5 165.5 139.5 157.25
+  smooth off
 endline
 
 line pit
   159.0 150.25
   159.0 150.25 153.0 155.0 147.75 150.75
+  smooth off
 endline
 
 line wall

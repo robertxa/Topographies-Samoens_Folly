@@ -114,7 +114,7 @@ layout my_layout
 	# Il faut specifier un de ces points 
 	#map-header 100 -80 se
 	#map-header 30 30 nw
-	map-header 70 60 se
+	map-header 70 70 se
    
 	# arrière plan de la manchette
 	map-header-bg off
@@ -260,7 +260,8 @@ layout my_layout-coupe
 	#endcode
   
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 14.5 cm
+	#legend-width 14.5 cm
+	legend-width 28 cm
   
 	# Specification la position de la manchette : interieur
 	# occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -270,7 +271,7 @@ layout my_layout-coupe
 	# La manchette a des "points cardinaux" : n, s, ne, sw, etc.
 	# Il faut specifier un de ces points 
 	#map-header 100 -80 se
-	map-header 0 00 nw
+	map-header 0 15 nw
   
 	# arrière plan de la manchette
 	map-header-bg off

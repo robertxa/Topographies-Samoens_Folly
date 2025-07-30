@@ -114,6 +114,7 @@ point 267.5 95.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Resea
 line pit -reverse on
   299.5 130.5
   299.5 130.5 304.0 137.5 294.5 139.5
+  smooth off
 endline
 
 line wall
@@ -132,6 +133,13 @@ line wall
   212.5 151.0 231.5 149.5 256.5 150.0
   altitude .
   281.5 150.5 291.0 152.0 294.5 139.5
+  smooth off
+endline
+
+line label -text "shunt Qui-ne-sert-à-rien"
+  119.5 113.5
+  119.5 113.5 238.5 57.0 269.0 52.0
+  299.5 47.0 451.0 41.5 463.5 43.5
 endline
 
 line wall

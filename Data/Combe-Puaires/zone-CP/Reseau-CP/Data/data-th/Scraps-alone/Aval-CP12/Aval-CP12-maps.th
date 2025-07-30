@@ -39,7 +39,7 @@ map MC-Aval-CP12-1 -title "Aval du CP12"
 endmap
    
 map MC-Aval-CP12 -title "Aval du CP12"
-	MC-Aval-CP12-1
-	break
 	MC-EscaladesBoucle@EscaladesBoucle
+	break
+	MC-Aval-CP12-1
 endmap

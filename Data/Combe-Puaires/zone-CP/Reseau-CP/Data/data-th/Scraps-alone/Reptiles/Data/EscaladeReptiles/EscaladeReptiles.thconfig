@@ -318,8 +318,8 @@ layout my_layout-coupe
 endlayout 
   
  # 3-EXPORTS   
- #export map -fmt xvi -layout xviexport -o data/EscaladeReptiles-map.xvi
- export map -projection extended -fmt xvi -layout xviexport -o data/EscaladeReptiles-coupe.xvi
+ export map -fmt xvi -layout xviexport -o data/EscaladeReptiles-map.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o data/EscaladeReptiles-coupe.xvi
  
  select  MP-EscaladeReptiles@EscaladeReptiles
  select  MC-EscaladeReptiles@EscaladeReptiles

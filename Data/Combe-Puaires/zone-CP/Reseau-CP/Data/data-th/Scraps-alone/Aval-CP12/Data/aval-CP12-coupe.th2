@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -127.65000000000009 -180.3769999999999 3986.6198 1571.6868000000002
+##XTHERION## xth_me_area_adjust -200.12000000000035 -218.27499999999992 4071.6301999999996 1533.7888000000003
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {3228.7 1 1.0} {1021.7180000000001 1.0@aval-CP12.Aval-CP12} avalCP12-coupe.xvi 0 {}
+##XTHERION## xth_me_image_insert {3313.7 1 1.0} {1002.7180000000001 1.0@aval-CP12.Aval-CP12} avalCP12-coupe.xvi 0 {}
 
 
 
@@ -51,8 +51,6 @@ point 449.0 895.5 air-draught -orientation 309.1 -subtype summer -scale xl
 point 336.0 877.0 altitude -align bottom-left
 
 point 288.5 923.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA "Courant d'air" -text "Vers le CP1 ? Courant d'air, mais trémie dangeureuse !!!"
-
-point 706.5 807.5 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Cheminée à escalader"
 
 point 1086.0 485.0 continuation -attr Code E -attr Cavite "RéseauCP" -attr Reseau "Aval CP12" -attr CA " " -text "Méandre à escalader, déjà 15 m effectué, il faut continuer"
 
@@ -215,35 +213,45 @@ line wall -subtype debris
   smooth off
 endline
 
-area u:galerie
-  l262-667-638
-endarea
-
 line rope
-  676.0 634.0
-  640.0 597.0
-  641.0 502.0
-endline
-
-line border -id l262-667-638 -close on
-  675.0 661.0
-  675.0 661.0 647.0 648.0 638.0 639.0
-  629.0 630.0 618.0 584.0 635.0 576.0
-  652.0 568.0 699.0 588.0 709.0 596.0
-  719.0 604.0 679.0 646.0 679.0 655.0
-  679.0 664.0 675.0 661.0 675.0 661.0
-  smooth off
+  729.0 641.0
+  709.0 617.0
+  710.0 471.0
 endline
 
 line wall
-  669.5 793.0
-  669.5 793.0 645.0 712.0 629.0 714.5
-  613.0 717.0 581.5 766.0 565.5 775.0
-  549.5 784.0 503.5 789.5 492.5 802.0
+  672.0 782.0
+  656.0 784.5 582.0 781.0 570.0 786.0
+  553.06 793.06 503.5 789.5 492.5 802.0
   481.5 814.5 397.5 874.0 384.5 885.5
   371.5 897.0 346.5 913.5 341.5 917.0
   336.5 920.5 323.0 931.5 323.0 931.5
   smooth off
+endline
+
+line border
+  593.0 659.0
+  593.0 659.0 619.0 658.0 630.0 657.0
+  smooth off
+endline
+
+line border
+  573.0 717.0
+  573.0 717.0 616.0 714.0 632.0 714.0
+  648.0 714.0 670.0 709.0 670.0 709.0
+  smooth off
+endline
+
+line border
+  614.0 588.0
+  614.0 588.0 629.0 595.0 632.0 587.0
+  635.0 579.0 634.0 563.0 634.0 563.0
+  smooth off
+endline
+
+line wall -subtype invisible
+  741.0 622.0
+  672.0 782.0
 endline
 
 line wall
@@ -254,9 +262,7 @@ endline
 
 line wall
   743.5 591.0
-  724.0 611.0 699.0 637.5 686.5 647.0
-  674.0 656.5 679.0 680.0 679.0 687.0
-  679.0 694.0 711.5 748.0 711.5 748.0
+  735.0 594.0 728.0 610.0 741.0 622.0
   smooth off
 endline
 
