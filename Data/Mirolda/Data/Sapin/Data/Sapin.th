@@ -1,0 +1,33 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Sapin -title "gouffre du Sapin" -entrance Sapin
+
+ centerline -extend right
+    
+    date 2024.09.05
+        team "Collectif Mirolda"
+    explo-date 2024.09.05
+        #explo-team "Xavier Robert"
+        #explo-team "Daniel Betz"
+        explo-team "Collectif Mirolda"
+
+    cs long-lat
+    fix Sapin 6.77xxx 46.08XXX	XXXX
+    station Sapin "G. du Sapin" entrance
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino left right up down
+    #Sapin   0   0 0   0  1.7 20.8 0   .    # bord de la doline
+    Sapin   0   3.4 65.1   -0.7  .  .   .   . # entrée
+    0   1   15.1    291.9   -84.4   1.1 0.5 .   .
+    1   2   1.9  32.7 -49  0.15 1   .   . # etr.
+  
+endcenterline
+
+ endsurvey

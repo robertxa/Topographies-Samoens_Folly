@@ -1,0 +1,145 @@
+encoding  utf-8
+  
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+  
+source L40-tot.th
+
+# Add entrances coordinates
+#input legendes/entrances_coordinates.th
+
+# Add config file
+input ../../../../config.thc 
+  
+layout xviexport
+	scale 1 500
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+  
+layout my_layout
+ 	# Call the config settings (Layout config inside the config.thc file)
+	copy Coords_Header_CPLd
+	copy drawingconfig
+	copy headerl
+	copy langue-fr
+  
+	doc-title "L40"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 500
+	scale 1 250
+	scale-bar 25 m
+	#rotate 2.25
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "<it>Plan<ss> - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 14.5 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	#symbol-hide line survey
+	debug station-names
+
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+ 				\cavename={L40} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+
+endlayout 
+ 
+layout my_layout-coupe
+ 	# Call the config settings (Layout config inside the config.thc file)
+	#copy Coords_Header_CPLd
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr
+ 
+	doc-title "L40"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 500
+	scale 1 250
+	scale-bar 25 m
+	#rotate 2.25
+	#origin 12 22 0 m
+	#origin-label 100 K
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	map-comment "<it>Coupe développée<ss> - Samoëns, 74, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 21 cm
+	map-header 0 00 nw
+	map-header-bg off
+	layers on
+	#symbol-hide line survey
+	debug station-names
+
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+ 
+	# To change the Title          
+	code tex-map
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={L40} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+endlayout
+
+layout my_layout-Continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+layout my_layout-coupe-Continuations
+	copy my_layout-coupe
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+
+#export map -fmt xvi -layout xviexport -o Data/L40-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/L40-coupe.xvi
+
+# Select maps
+	select MP-L40-plan-tot@L40
+	select MC-L40-coupe-tot@L40
+	  
+export map -o Outputs/L40-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/L40-coupe.pdf
+#export map -o Outputs/L40-plan-Continuations.pdf -layout my_layout-Continuations
+#export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/L40-coupe-Continuations.pdf
+
+export model -o Outputs/L40.lox
+export map -proj plan -fmt kml -o Outputs/L40.kml -layout my_layout
+export model -fmt kml -o Outputs/L40m.kml

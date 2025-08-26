@@ -1,0 +1,85 @@
+encoding utf-8
+# 2025.08.25 created by TopoDroid v 6.2.95
+
+survey LP64 -title "LP64" -entrance LP64
+    # LP64 
+
+  centerline
+    cs lat-long
+    #fix LP64
+
+    date 2025.08.24 
+      team "Alex Chanfray"
+      team "Stéphane Lips"
+    explo-date 2025.08.24 
+      explo-team "Alex Chanfray"
+      explo-team "Stéphane Lips"   
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    # extend auto
+    LP64 . 0.96 225.5 -2.0
+    LP64 . 2.85 267.7 -6.8
+    LP64 . 3.25 280.3 -6.2
+    LP64 . 1.18 216.0 -72.4
+    LP64 . 1.49 290.1 -35.4
+    LP64 . 1.47 295.6 -17.4
+    extend right
+    LP64 1 5.33 251.1 -57.2
+    # extend auto
+    1 . 1.18 238.6 -13.1
+    1 . 1.04 90.2 -76.0
+    1 . 1.42 221.2 -40.1
+    1 . 2.84 279.8 -4.8
+    1 . 1.62 254.0 1.7
+    1 . 3.76 240.1 64.2
+    1 . 2.39 272.6 19.8
+    extend right
+    1 2 2.92 284.3 -37.2
+    # extend auto
+    2 . 0.99 309.1 -79.9
+    2 . 0.95 344.7 -9.3
+    2 . 1.75 326.6 9.6
+    2 . 3.95 321.0 -38.3
+    2 . 0.88 265.1 5.7
+    extend right
+    2 3 4.16 304.8 -51.5
+    # extend auto
+    3 . 0.65 291.9 36.3
+    3 . 0.78 349.2 -12.1
+    3 . 1.30 348.3 31.6
+    3 . 1.22 291.5 45.5
+    3 . 1.51 295.4 84.2
+    extend right
+    3 4 3.67 319.9 46.3
+    # extend auto
+    4 . 1.79 27.6 17.3
+    4 . 1.85 103.9 45.9
+    4 . 0.29 205.7 76.3
+    4 . 1.06 323.5 -63.6
+    4 . 0.89 182.2 -18.3
+    extend right
+    4 5 2.73 226.2 10.4
+    # extend auto
+    5 . 0.28 146.6 72.7
+    5 . 0.96 355.2 -59.4
+    5 . 1.76 23.2 -4.6
+    5 . 2.01 301.8 -13.7
+    5 . 4.23 345.3 38.2
+    5 . 1.85 316.9 32.9
+    5 . 4.31 350.4 20.6
+    extend left
+    5 6 3.83 91.5 -2.7
+  endcenterline
+
+  # input "LPXX4-1p.th2"
+  # input "LPXX4-1s.th2"
+
+  # map m1p -projection plan
+  #   LPXX4-1p
+  # endmap
+  # map m1s -projection extended
+  #   LPXX4-1s
+  # endmap
+
+endsurvey
