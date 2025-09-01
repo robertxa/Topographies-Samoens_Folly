@@ -1,0 +1,244 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -125.4015 -153.5 278.0 211.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {36.77160000000001 1 1.0} {14.487000000000002 0} LS64-map.xvi 0 {}
+
+
+
+scrap SP-LS64-1 -projection plan -station-names "" "@LS64" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-125.4015 -142.487 248.7088 -142.487 0.0 0.0 9.502401619999999 0.0 m]
+
+line pit
+  98.5 32.5
+  98.5 32.5 101.25 40.25 95.25 41.25
+endline
+
+point 88.25 28.25 debris
+
+point 92.25 34.25 debris
+
+point 86.25 34.0 debris
+
+point 82.75 28.5 debris
+
+point 82.0 35.25 debris
+
+line wall
+  100.75 41.25
+  100.75 41.25 97.0 43.0 95.25 41.25
+  93.5 39.5 91.5 40.25 88.75 38.0
+  86.0 35.75 83.5 37.5 81.0 37.5
+  78.5 37.5 70.5 35.25 66.5 34.0
+  62.5 32.75 61.5 32.75 57.0 32.75
+  52.5 32.75 54.25 34.5 49.25 29.25
+  44.25 24.0 43.25 26.5 40.0 23.25
+  36.75 20.0 33.25 15.75 33.25 15.75
+  smooth off
+endline
+
+line wall
+  69.75 29.5
+  66.0 29.25
+  66.0 29.25 67.75 31.0 71.25 31.0
+  74.75 31.0 73.0 35.0 76.0 31.5
+  79.0 28.0 79.0 23.75 83.75 24.0
+  88.5 24.25 91.5 25.0 93.0 28.25
+  94.5 31.5 98.5 31.25 98.5 32.5
+  98.5 33.75 101.75 36.25 101.75 36.25
+  smooth off
+endline
+
+line pit
+  55.75 15.5
+  55.75 15.5 48.75 19.75 45.25 19.5
+  41.75 19.25 36.5 19.0 34.75 19.5
+endline
+
+point 27.0 4.25 debris
+
+point 35.0 12.0 debris
+
+point 34.0 6.25 debris
+
+point 26.75 6.25 debris
+
+point 30.5 11.5 debris
+
+point 55.75 56.5 height -value [-11 m]
+
+point 33.5 50.5 height -value [-8 m]
+
+point 18.0 29.5 height -value [-8 m]
+
+line pit
+  58.75 27.0
+  58.75 27.0 62.0 26.75 63.75 27.75
+  65.5 28.75 66.5 27.25 66.0 29.25
+  65.5 31.25 63.5 35.0 63.5 35.0
+  smooth off
+endline
+
+line pit
+  53.75 18.25
+  53.75 18.25 51.0 20.75 52.0 23.75
+  53.0 26.75 55.0 30.0 49.75 27.25
+  44.5 24.5 40.0 23.25 40.0 23.25
+  smooth off
+endline
+
+line pit
+  37.0 8.75
+  37.0 8.75 40.0 15.5 33.5 14.75
+endline
+
+line wall
+  33.25 15.75
+  33.25 15.75 22.25 10.75 22.75 5.25
+  altitude .
+  23.25 -0.25 26.0 -0.75 31.0 1.25
+  36.0 3.25 34.75 8.0 38.0 8.75
+  41.25 9.5 47.25 8.75 50.75 9.75
+  54.25 10.75 58.25 12.75 55.75 15.5
+  53.25 18.25 50.75 19.0 54.25 21.75
+  57.75 24.5 57.25 27.5 58.75 27.0
+  60.25 26.5 63.0 27.75 63.0 24.75
+  63.0 21.75 67.25 26.5 67.25 26.5
+  smooth off
+endline
+
+point 89.7616 31.967 station -name 6
+
+point 74.3316 35.987 station -name 5
+
+point 66.5316 30.627000000000002 station -name 4
+
+point 53.7816 29.217 station -name 2
+
+point 36.7716 14.487000000000002 station -name 0
+
+point 30.6316 4.177 station -name 1
+
+endscrap
+
+
+
+scrap SP-LS64-2 -projection plan -station-names "" "@LS64" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-125.4015 -142.487 248.7088 -142.487 0.0 0.0 9.502401619999999 0.0 m]
+
+point 64.0 -24.25 label -text "<bf>LS64a" -scale xl
+
+point 63.75 0.5 entrance -orientation 0.0
+
+line wall -subtype pit
+  67.25 26.5
+  67.25 26.5 64.5 24.5 62.5 22.75
+  60.5 21.0 60.5 12.5 63.5 13.25
+  66.5 14.0 66.25 16.25 68.75 19.25
+  71.25 22.25 71.0 23.75 73.0 25.0
+  75.0 26.25 75.75 29.5 73.5 29.5
+  71.25 29.5 69.75 29.5 69.75 29.5
+  smooth off
+endline
+
+point 71.6516 27.877000000000002 station -name 3
+
+point 64.2516 19.527 station -name LS64a
+
+endscrap
+
+
+
+scrap SP-LS64-3 -projection plan -station-names "" "@LS64" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-125.4015 -142.487 248.7088 -142.487 0.0 0.0 9.502401619999999 0.0 m]
+
+point 82.75 82.25 label -text "<bf>LS64c" -scale xl
+
+point 88.75 52.5 entrance -orientation 171.9
+
+line wall -close on -subtype pit
+  91.5 39.25
+  91.5 39.25 90.25 40.5 88.75 38.0
+  87.25 35.5 87.0 33.5 90.25 34.0
+  93.5 34.5 95.0 34.0 94.0 36.5
+  93.0 39.0 91.5 39.25 91.5 39.25
+  smooth off
+endline
+
+point 91.4216 36.697 station -name 8
+
+point 89.0516 36.297 station -name LS64c
+
+endscrap
+
+
+
+scrap SP-LS64-4 -projection plan -station-names "" "@LS64" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-125.4015 -142.487 248.7088 -142.487 0.0 0.0 9.502401619999999 0.0 m]
+
+point 133.7816 64.957 station -name 10
+
+point 116.7716 50.947 station -name 9
+
+point 107.5616 42.127 station -name 7
+
+point 109.13159999999999 41.107 station -name 11
+
+point 121.0 41.75 debris
+
+point 118.0 38.25 debris
+
+point 116.5 44.5 debris
+
+point 131.5 59.75 debris
+
+point 125.25 56.25 debris
+
+point 127.75 60.75 debris
+
+line slope
+  127.25 64.75
+  127.25 64.75 120.75 64.0 121.0 59.25
+  121.25 54.5 121.25 52.25 124.25 52.5
+  127.25 52.75 130.75 55.5 130.75 55.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  112.75 39.25
+  112.75 39.25 116.25 30.25 120.0 35.25
+  123.75 40.25 126.5 45.75 123.25 46.5
+  120.0 47.25 116.0 47.75 116.0 47.75
+  smooth off
+  l-size 5.0
+endline
+
+line pit
+  105.25 38.25
+  105.25 38.25 109.25 45.75 103.75 44.75
+endline
+
+point 148.75 41.0 height -value [-11 m]
+
+line wall -subtype pit
+  101.75 36.25
+  101.75 36.25 103.0 40.25 105.5 40.0
+  108.0 39.75 109.25 41.0 110.0 38.25
+  110.75 35.5 111.25 28.75 114.5 26.5
+  117.75 24.25 117.5 22.25 121.5 27.0
+  altitude .
+  125.5 31.75 126.5 41.75 128.75 46.5
+  131.0 51.25 129.0 48.0 132.5 54.0
+  136.0 60.0 138.75 68.25 135.0 67.25
+  131.25 66.25 114.75 68.25 115.5 64.25
+  116.25 60.25 119.5 55.75 116.0 52.5
+  112.5 49.25 109.75 46.5 107.0 45.0
+  104.25 43.5 100.75 41.25 100.75 41.25
+  smooth off
+endline
+
+point 126.75 -20.5 label -text "<bf>LS64b" -scale xl
+
+point 121.0 6.75 entrance -orientation 355.0
+
+point 119.2116 26.777 station -name LS64b
+
+endscrap
+
+

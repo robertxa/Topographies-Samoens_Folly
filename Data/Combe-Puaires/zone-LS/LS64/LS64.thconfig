@@ -13,8 +13,8 @@ source LS64-tot.th
 input ../../../../config.thc 
   
 layout xviexport
-	scale 1 1000
-	grid-size 10 10 10 m
+	scale 1 500
+	grid-size 5 5 5 m
 	grid bottom
 endlayout
   
@@ -29,8 +29,11 @@ layout my_layout
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 350
+	#base-scale 1 1000
 	scale 1 250
+	#scale 1 1000
 	scale-bar 25 m
+	#scale-bar 100 m
 	#rotate 2.25
 	#origin 12 22 0 m
 	#origin-label 100 K
@@ -47,8 +50,8 @@ layout my_layout
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
@@ -77,6 +80,11 @@ layout my_layout-coupe
 	base-scale 1 750
 	scale-bar 50 m
 	scale 1 500
+	
+	#base-scale 1 1200
+	#scale-bar 100 m
+	#scale 1 1200
+	
 	#origin 12 22 0 m
 	#origin-label 100 K
 	#color map-bg 85
@@ -91,8 +99,8 @@ layout my_layout-coupe
 	legend off
 	legend-width 14.5 cm
 	map-header 30 93 ne
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	map-header-bg off
 	layers on
 	#grid bottom
@@ -130,13 +138,14 @@ layout my_layout-coupe-Continuations
 	copy layoutcontinuation	# Pour afficher le label des continuations
 endlayout
 
+
   
-export map -fmt xvi -layout xviexport -o Data/LS64-map.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/LS64-coupe.xvi
+#export map -fmt xvi -layout xviexport -o Data/LS64-map.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/LS64-coupe.xvi
  
 # Select maps
-	select MP-LS64-plan-tot@LS64
-	select MC-LS64-coupe-tot@LS64
+	select MP-LS64@LS64
+	select MC-LS64@LS64
 	  
 export map -o Outputs/LS64-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS64-coupe.pdf

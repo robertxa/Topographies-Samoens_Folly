@@ -1,0 +1,189 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 337.5 482.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {67.036 1 1.0} {122.917 0} LS64-coupe.xvi 0 {}
+
+
+
+scrap SC-LS64-1 -projection extended -station-names "" "@LS64" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-125.4015 -142.487 248.7088 -142.487 0.0 0.0 9.502401619999999 0.0 m]
+
+line wall -subtype debris
+  51.0 55.0
+  71.0 55.0
+endline
+
+line wall
+  74.0 276.5
+  74.0 276.5 78.0 270.5 77.0 265.5
+  76.0 260.5 70.5 265.0 71.0 251.5
+  71.5 238.0 76.0 210.5 76.5 199.0
+  77.0 187.5 75.5 187.0 76.0 176.0
+  76.5 165.0 84.5 167.0 78.5 157.5
+  72.5 148.0 63.0 145.0 59.5 141.5
+  56.0 138.0 56.0 123.5 56.0 113.0
+  56.0 102.5 52.0 106.5 51.5 88.0
+  51.0 69.5 51.0 55.0 51.0 55.0
+  smooth off
+endline
+
+line wall
+  114.0 285.0
+  114.0 285.0 118.0 273.0 118.0 267.5
+  118.0 262.0 115.5 238.5 115.5 234.0
+  115.5 229.5 112.5 227.0 108.5 219.5
+  104.5 212.0 98.5 208.0 97.5 202.5
+  96.5 197.0 93.5 189.0 93.5 194.5
+  93.5 200.0 95.0 227.0 95.0 236.0
+  95.0 245.0 99.5 257.0 98.0 264.5
+  96.5 272.0 94.5 275.0 95.0 280.0
+endline
+
+line wall
+  146.5 284.0
+  146.5 284.0 147.5 270.0 144.0 269.5
+  140.5 269.0 137.5 265.0 134.5 265.0
+  131.5 265.0 130.5 265.5 130.5 271.5
+  130.5 277.5 123.0 281.0 123.0 284.5
+endline
+
+point 207.0 352.0 label -text "<bf>LS64b" -scale xl
+
+point 13.0 80.5 height -value [-7 m]
+
+point 32.5 146.5 height -value [-7 m]
+
+point 162.5 195.5 height -value [-11 m]
+
+point 38.0 225.5 height -value [-11 m]
+
+point 107.5 350.0 label -text "<bf>LS64c" -scale xl
+
+point 19.0 320.5 label -text "<bf>LS64a" -scale xl
+
+point 160.0 317.0 entrance -orientation 179.4
+
+point 117.5 310.5 entrance -orientation 179.4
+
+point 78.5 300.5 entrance -orientation 172.3
+
+line wall
+  180.0 241.5
+  180.0 241.5 178.5 255.5 174.0 261.0
+  169.5 266.5 168.0 265.5 169.5 272.0
+  171.0 278.5 177.0 281.5 177.0 281.5
+  smooth off
+  180.0 285.5
+  altitude .
+endline
+
+line rope
+  148.5 271.5
+  134.5 265.0
+  124.5 188.0
+endline
+
+line rope
+  123.0 284.5
+  123.0 182.0
+endline
+
+line rope
+  74.0 276.5
+  87.5 277.5
+  88.5 140.0
+  62.5 127.0
+  62.5 57.0
+endline
+
+line wall -subtype invisible
+  95.0 280.0
+  74.0 276.5
+endline
+
+line wall -subtype invisible
+  123.0 284.5
+  114.0 285.0
+endline
+
+line wall -subtype invisible
+  180.0 285.5
+  146.5 284.0
+endline
+
+line wall -subtype debris
+  155.5 247.0
+  174.5 242.0
+  180.0 241.5
+endline
+
+line wall
+  123.0 182.0
+  123.0 182.0 130.5 190.5 130.5 197.0
+  130.5 203.5 135.0 227.0 135.0 233.0
+  135.0 239.0 140.0 247.5 140.0 249.5
+  140.0 251.5 141.0 260.0 142.5 261.0
+  144.0 262.0 149.0 265.5 151.5 263.0
+  154.0 260.5 152.5 248.5 155.5 247.0
+endline
+
+line wall -subtype debris
+  94.5 182.5
+  94.5 182.5 102.5 184.0 106.0 183.5
+  109.5 183.0 112.0 182.0 115.5 182.0
+  119.0 182.0 123.0 182.0 123.0 182.0
+  smooth off
+endline
+
+line wall
+  96.0 128.0
+  96.0 128.0 98.0 137.0 98.0 143.0
+  98.0 149.0 101.5 160.0 100.5 163.0
+  99.5 166.0 92.0 172.0 92.0 175.5
+  92.0 179.0 90.5 181.0 94.5 182.5
+endline
+
+line wall -subtype debris
+  75.5 116.0
+  75.5 116.0 81.5 121.5 84.0 121.5
+  86.5 121.5 92.0 126.5 96.0 128.0
+endline
+
+line wall
+  71.0 55.0
+  altitude .
+  71.0 55.0 79.5 102.5 76.5 102.5
+  73.5 102.5 70.0 98.5 70.0 104.5
+  70.0 110.5 72.0 115.0 75.5 116.0
+endline
+
+point 171.026 251.257 station -name 10
+
+point 172.046 283.467 station -name LS64b
+
+point 149.026 268.507 station -name 9
+
+point 136.376 261.097 station -name 11
+
+point 120.21600000000001 274.247 station -name 8
+
+point 118.106 283.467 station -name LS64c
+
+point 79.49600000000001 275.587 station -name LS64a
+
+point 89.556 258.427 station -name 3
+
+point 117.96600000000001 195.197 station -name 6
+
+point 99.646 192.757 station -name 5
+
+point 89.556 185.667 station -name 4
+
+point 89.556 168.657 station -name 2
+
+point 67.036 122.917 station -name 0
+
+point 55.016 58.107 station -name 1
+
+endscrap
+
+

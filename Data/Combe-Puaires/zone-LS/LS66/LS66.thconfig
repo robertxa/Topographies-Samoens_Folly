@@ -28,9 +28,14 @@ layout my_layout
 	doc-title "LS66"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 350
-	scale 1 250
-	scale-bar 25 m
+	#base-scale 1 350
+	#scale 1 250
+	#scale-bar 25 m
+	
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	
 	#rotate 2.25
 	#origin 12 22 0 m
 	#origin-label 100 K
@@ -47,8 +52,8 @@ layout my_layout
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
@@ -74,9 +79,15 @@ layout my_layout-coupe
 	copy langue-fr
 	
 	doc-title "LS66 coupe"
-	base-scale 1 750
-	scale-bar 50 m
-	scale 1 500
+	
+	#base-scale 1 750
+	#scale-bar 50 m
+	#scale 1 500
+	
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	
 	#origin 12 22 0 m
 	#origin-label 100 K
 	#color map-bg 85
@@ -91,8 +102,8 @@ layout my_layout-coupe
 	legend off
 	legend-width 14.5 cm
 	map-header 30 93 ne
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	map-header-bg off
 	layers on
 	#grid bottom
@@ -135,8 +146,8 @@ export map -fmt xvi -layout xviexport -o Data/LS66-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o Data/LS66-coupe.xvi
  
 # Select maps
-	select MP-LS66-plan-tot@LS66
-	select MC-LS66-coupe-tot@LS66
+	select MP-LS66@LS66
+	select MC-LS66@LS66
 	  
 export map -o Outputs/LS66-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS66-coupe.pdf

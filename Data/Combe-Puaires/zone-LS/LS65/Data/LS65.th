@@ -5,8 +5,8 @@ survey LS65 -title "LS65" -entrance "LS65"
 
   centerline
 
-    cs lat-long
-    #fix LS65 
+    cs long-lat
+    fix LS65 6.80902 46.11290  2383
   
     explo-date 2025.08.24 
       explo-team "Stéphane Lips"

@@ -4,13 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-
-
-map MP-LS64-plan-tot -title "LS64"
+map MP-LS64 -title "LS64"
+	SP-LS64-4
+	break
+	SP-LS64-3
+	break
+	SP-LS64-2
+	break
 	SP-LS64-1
 endmap
 
-#map MC-LS64-coupe-tot -title "LS64"
-#	SC-LS64-c1
-#endmap
+map MC-LS64 -title "LS64"
+	SC-LS64-1
+endmap
    

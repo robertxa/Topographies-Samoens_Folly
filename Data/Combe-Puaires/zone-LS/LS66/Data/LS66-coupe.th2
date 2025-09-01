@@ -1,0 +1,81 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -167.3719 -161.25 223.5 261.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.3692 1 1.0} {43.3036 LS66} LS66-coupe.xvi 0 {}
+
+
+
+scrap SC-LS66-1 -projection extended -station-names "" "@LS66" -author 2025 "Alexandre Chanfray" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 167.3701 -128.0 0.0 0.0 7.502400539999999 0.0 m]
+
+point 81.5 53.75 label -text "<bf>LS66" -scale xl
+
+point 64.25 33.0 entrance -orientation 293.6
+
+point 76.0 14.5 height -value [+10 m]
+
+point 6.5 97.0 height -value [+5 m]
+
+point -28.75 77.25 narrow-end
+
+line wall
+  41.25 45.0
+  41.25 45.0 22.25 55.0 18.5 57.25
+  14.75 59.5 13.5 58.0 13.5 62.25
+  13.5 66.5 10.75 73.75 13.25 75.5
+  15.75 77.25 18.75 80.25 14.5 80.25
+  10.25 80.25 3.75 80.75 2.25 80.0
+  0.75 79.25 3.25 77.25 6.0 77.25
+  8.75 77.25 10.25 75.75 10.75 72.75
+  11.25 69.75 12.0 62.25 9.5 62.75
+  7.0 63.25 -2.5 70.25 -6.5 70.25
+  -10.5 70.25 -14.0 70.5 -15.25 69.5
+endline
+
+line wall -outline none -clip off
+  28.25 132.0
+  28.25 132.0 35.25 117.25 37.5 109.0
+  39.75 100.75 43.0 80.0 43.0 71.25
+  43.0 62.5 41.5 50.0 41.5 49.0
+  41.5 48.0 41.25 45.0 41.25 45.0
+  smooth off
+endline
+
+line wall -subtype debris -outline none -clip off
+  51.75 -0.5
+  51.75 -0.5 66.0 -17.25 72.0 -20.5
+  78.0 -23.75 94.5 -32.25 94.5 -32.25
+  smooth off
+endline
+
+line wall -outline none -clip off
+  39.75 40.75
+  39.75 40.75 46.25 37.75 47.25 34.0
+  48.25 30.25 49.0 20.5 49.0 20.5
+  smooth off
+  49.0 12.0
+  51.75 -0.5
+endline
+
+line wall -subtype debris
+  -15.5 67.25
+  altitude .
+  -15.5 67.25 -5.5 67.5 -3.5 66.0
+  -1.5 64.5 18.25 53.25 23.75 50.25
+  29.25 47.25 39.75 40.75 39.75 40.75
+  smooth off
+  altitude .
+endline
+
+point -12.830800000000004 68.8936 station -name 4
+
+point -4.9608000000000025 68.8936 station -name 3
+
+point 12.089199999999998 78.7436 station -name 2
+
+point 12.089199999999998 59.0536 station -name 1
+
+point 39.3692 43.3036 station -name 0
+
+endscrap
+
+
