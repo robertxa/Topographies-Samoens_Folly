@@ -6,17 +6,11 @@ encoding  utf-8
 
 survey LP64 -title "LP64"
 # Pour importer les différentes données de différents fichiers topos : 
-   input Data/LP64.th
+   	input Data/LP64.th
 	
- 
-##########################################################################################
-## Pour importer les différents fichiers de dessins en plan
-	## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
-	## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). C'est tout simple !
+	input Data/LP64.th2
+	input Data/LP64-coupe.th2
 
-	#input Data/LP64.th2
-	#input Data/LP64-coupe.th2
-
-	#input LP64-maps.th
+	input LP64-maps.th
 
 endsurvey

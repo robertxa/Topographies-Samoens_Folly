@@ -1,0 +1,92 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 262.0 255.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {118.1072 1 1.0} {39.370599999999996 0} L40-map.xvi 0 {}
+
+
+
+scrap SP-L40-1 -projection plan -station-names "" "@L40" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.502401619999999 0.0 m]
+
+point 128.75 70.25 narrow-end
+
+line overhang
+  61.5 62.75
+  61.5 62.75 78.5 72.75 79.25 78.75
+endline
+
+line wall
+  124.25 58.5
+  124.25 58.5 120.75 53.25 119.5 51.75
+  118.25 50.25 117.75 44.5 116.75 48.0
+  115.75 51.5 120.5 66.25 114.75 66.25
+  109.0 66.25 107.25 62.5 103.75 63.0
+  100.25 63.5 101.25 67.25 97.0 68.25
+  92.75 69.25 81.75 60.25 81.0 64.25
+  80.25 68.25 79.25 78.75 79.25 78.75
+  smooth off
+endline
+
+line pit
+  97.0 68.25
+  97.0 68.25 80.75 58.75 80.0 38.25
+endline
+
+line wall
+  61.5 62.75
+  61.5 62.75 69.5 60.5 73.5 55.25
+  77.5 50.0 80.5 29.25 87.75 22.25
+  95.0 15.25 97.5 22.75 100.75 22.0
+  104.0 21.25 107.75 19.0 109.75 21.25
+  111.75 23.5 114.75 31.0 118.0 31.0
+  121.25 31.0 133.25 37.75 133.0 41.0
+  132.75 44.25 122.0 38.5 123.0 43.0
+  124.0 47.5 126.0 53.5 126.0 53.5
+  smooth off
+  126.25 57.5
+  altitude .
+endline
+
+point 120.25 44.75 debris
+
+point 117.25 34.25 debris
+
+point 102.75 38.25 debris
+
+point 93.25 27.5 debris
+
+point 96.5 51.75 debris
+
+point 106.75 58.25 debris
+
+point 58.5 25.5 label -text "R7"
+
+point 11.75 126.5 label -text "<bf>L40" -scale xl
+
+point 28.0 93.25 entrance -orientation 113.8
+
+line wall -subtype pit
+  79.25 78.75
+  79.25 78.75 79.0 100.25 75.5 104.25
+  72.0 108.25 61.5 111.5 56.5 107.25
+  51.5 103.0 45.0 91.0 44.0 84.25
+  43.0 77.5 37.5 71.25 45.25 70.25
+  altitude .
+  53.0 69.25 61.5 62.75 61.5 62.75
+  smooth off
+endline
+
+point 42.9872 72.4406 station -name L40
+
+point 65.2772 96.22059999999999 station -name 4
+
+point 73.3872 73.6206 station -name 3
+
+point 82.4372 55.5106 station -name 2
+
+point 118.1072 39.370599999999996 station -name 0
+
+point 122.5172 52.6806 station -name 1
+
+endscrap
+
+

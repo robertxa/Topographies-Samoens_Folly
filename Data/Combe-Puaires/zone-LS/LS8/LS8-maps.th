@@ -5,10 +5,18 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-LS8-plan-tot -title "LS08"
+	SP-LS8-3
+	break
+	SP-LS8-4
+	break
+	SP-LS8-2
+	break
 	SP-LS8-1
 endmap
 
-#map MC-LS8-coupe-tot -title "LS08"
-#	SC-LS8-1
-#endmap
+map MC-LS8-coupe-tot -title "LS08"
+	SC-LS8-1
+	break
+	SC-LS8-2
+endmap
    

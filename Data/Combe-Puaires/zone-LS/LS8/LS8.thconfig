@@ -13,8 +13,8 @@ source LS8-tot.th
 input ../../../../config.thc 
   
 layout xviexport
-	scale 1 1000
-	grid-size 10 10 10 m
+	scale 1 500
+	grid-size 5 5 5 m
 	grid bottom
 endlayout
   
@@ -23,15 +23,22 @@ layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
 	#copy Coords_Header_CPLSpra
 	copy drawingconfig
-	copy header-plan-schema
+	#copy header-plan-schema
+	copy headerl
 	copy langue-fr
   
 	doc-title "LS8"
 	doc-author "Xavier Robert"
 	cs UTM32
+	
 	base-scale 1 250
 	scale 1 250
 	scale-bar 25 m
+	
+	#base-scale 1 1000
+	#scale 1 1000
+	#scale-bar 100 m
+	
 	#rotate 2.25
 	# origin 12 22 0 m
 	# origin-label 100 K
@@ -48,9 +55,9 @@ layout my_layout
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
-	#grid bottom
+	symbol-hide line survey
+	#debug station-names
+	grid bottom
 	#grid-size 100 100 100 m
 	grid off
   
@@ -77,7 +84,7 @@ layout my_layout-coupe
 	# Call the config settings (Layout config inside the config.thc file)
 	#copy Coords_Header_CPLSpra
 	copy drawingconfig
-	copy header_coupe-schema
+	copy header_coupe
 	copy langue-fr
   
 	doc-title "LS8"
@@ -98,11 +105,11 @@ layout my_layout-coupe
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 50 80 ne
+	map-header 0 80 ne
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off

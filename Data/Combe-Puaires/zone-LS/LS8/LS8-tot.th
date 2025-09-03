@@ -7,10 +7,8 @@ encoding utf-8
 survey LS8 -title "LS08"
 	input Data/LS08.th
 
-	# pour le plan
-	#input Data/LS8.th2
-	# Pour la coupe et le plan
-	#input Data/LS8-coupe.th2
+	input Data/LS08.th2
+	input Data/LS8-coupe.th2
 
-	#input LS8-maps.th
+	input LS8-maps.th
 endsurvey

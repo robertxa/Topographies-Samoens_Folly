@@ -5,18 +5,11 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey LP63 -title "LP63"
-# Pour importer les différentes données de différents fichiers topos : 
-   input Data/LP63.th
-	
- 
-##########################################################################################
-## Pour importer les différents fichiers de dessins en plan
-	## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
-	## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). C'est tout simple !
+	input Data/LP63.th
 
-	#input Data/LP63.th2
-	#input Data/LP63-coupe.th2
+	input Data/LP63.th2
+	input Data/LP63-coupe.th2
 
-	#input LP63-maps.th
+	input LP63-maps.th
 
 endsurvey

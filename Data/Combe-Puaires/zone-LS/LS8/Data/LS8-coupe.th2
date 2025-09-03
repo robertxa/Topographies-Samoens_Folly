@@ -1,0 +1,187 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 291.0 455.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {76.6408 1 1.0} {58.659000000000006 0} LS8-coupe.xvi 0 {}
+
+
+
+scrap SC-LS8-1 -projection extended -station-names "" "@LS8" -author 2012 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-144.7712 -140.47809999999998 189.969 -140.47809999999998 0.0 0.0 8.502401079999999 0.0 m]
+
+point 86.25 294.5 entrance -orientation 195.1
+
+point 57.75 293.75 entrance -orientation 158.5
+
+line wall -subtype invisible
+  92.75 279.75
+  92.75 279.75 56.0 281.25 48.0 276.5
+endline
+
+line wall
+  128.0 197.25
+  altitude .
+  128.0 197.25 119.75 198.75 118.75 202.5
+  117.75 206.25 114.25 210.75 111.5 212.25
+  108.75 213.75 108.25 213.25 105.75 217.0
+  103.25 220.75 98.5 223.0 95.75 224.5
+  93.0 226.0 93.25 233.5 92.75 238.75
+  92.25 244.0 90.0 270.5 89.25 272.75
+  88.5 275.0 83.0 276.0 85.75 277.5
+  88.5 279.0 92.75 279.75 92.75 279.75
+  smooth off
+  altitude .
+endline
+
+line wall -subtype presumed
+  148.25 25.0
+  148.25 25.0 144.25 47.75 140.75 59.5
+  137.25 71.25 132.25 125.75 132.25 135.5
+  132.25 145.25 128.0 197.25 128.0 197.25
+  smooth off
+endline
+
+line wall -subtype presumed
+  109.25 195.25
+  109.25 195.25 109.25 140.0 109.25 130.25
+  109.25 120.5 109.5 79.5 112.5 72.25
+  115.5 65.0 120.75 28.5 120.75 28.5
+  smooth off
+endline
+
+line wall
+  60.0 96.25
+  60.0 96.25 62.5 99.25 63.75 96.0
+  65.0 92.75 62.0 70.25 65.5 69.75
+  69.0 69.25 74.0 68.25 73.0 70.0
+  72.0 71.75 68.75 71.25 67.75 77.5
+  66.75 83.75 66.5 96.5 65.0 102.5
+  63.5 108.5 56.0 166.0 56.5 172.75
+  57.0 179.5 56.25 203.0 56.5 207.0
+  56.75 211.0 60.25 211.75 61.5 216.5
+  62.75 221.25 60.75 222.0 61.25 231.75
+  61.75 241.5 66.5 245.75 66.5 251.25
+  66.5 256.75 65.5 264.0 66.25 266.75
+  67.0 269.5 68.5 270.25 71.75 271.5
+  75.0 272.75 77.25 275.5 77.25 272.75
+  77.25 270.0 77.75 223.5 80.25 222.75
+  82.75 222.0 88.75 222.75 89.5 221.0
+  90.25 219.25 91.75 215.25 94.25 215.0
+  96.75 214.75 100.25 216.5 101.25 215.25
+  102.25 214.0 99.5 209.75 102.25 209.75
+  105.0 209.75 107.5 208.25 107.75 206.25
+  108.0 204.25 109.25 195.25 109.25 195.25
+  smooth off
+endline
+
+line wall
+  48.0 276.5
+  48.0 276.5 62.25 274.75 62.25 273.0
+  62.25 271.25 58.75 255.5 57.5 249.0
+  56.25 242.5 49.0 216.25 49.5 207.25
+  50.0 198.25 50.25 183.0 49.5 179.25
+  48.75 175.5 49.0 172.0 47.5 155.0
+  46.0 138.0 46.5 124.25 46.0 115.75
+  45.5 107.25 48.0 104.25 45.5 96.0
+  43.0 87.75 42.25 85.75 44.5 85.75
+  altitude .
+  46.75 85.75 49.0 86.0 49.25 89.75
+  49.5 93.5 47.5 102.5 50.75 102.5
+  54.0 102.5 55.75 101.75 56.5 101.0
+  57.25 100.25 56.25 96.75 56.25 96.75
+  smooth off
+endline
+
+point 120.4808 197.949 station -name 16
+
+point 96.49080000000001 223.06900000000002 station -name 15
+
+point 87.4808 224.099 station -name 14
+
+point 66.77080000000001 71.96900000000001 station -name 5
+
+point 47.3308 89.059 station -name 7
+
+point 48.9508 105.35900000000001 station -name 6
+
+point 59.0908 103.939 station -name 4
+
+point 54.570800000000006 167.00900000000001 station -name 8
+
+point 50.860800000000005 214.099 station -name 9
+
+point 60.3708 252.209 station -name 10
+
+point 65.0808 271.259 station -name 11
+
+line rope
+  74.5 275.75
+  65.0808 271.259
+  50.860800000000005 214.099
+  55.0 103.25
+endline
+
+line rope
+  78.74080000000001 275.589
+  84.1908 276.379
+  87.4808 224.099
+endline
+
+point 161.75 133.25 height -value [-30? m]
+
+point 22.75 185.25 height -value [-26 m]
+
+point 115.5 253.25 height -value [-6 m]
+
+point 124.75 225.5 dig
+
+point 129.25 47.0 continuation -attr code DP -attr Cavite "LS08" -attr CA "Courant d'air soufflant parfois très fort" -text "P30 environ à descendre après étroiture de 1 m à casser ; courant d'air"
+
+point 120.75 119.0 air-draught -orientation 0.0
+
+point 70.5 326.0 label -text "<bf>LS8" -scale xl
+
+point 78.74080000000001 275.589 station -name LS8
+
+point 84.1908 276.379 station -name 13
+
+endscrap
+
+
+
+scrap SC-LS8-2 -projection extended -station-names "" "@LS8" -author 2012 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-144.7712 -140.47809999999998 189.969 -140.47809999999998 0.0 0.0 8.502401079999999 0.0 m]
+
+point 62.75 43.0 air-draught -orientation 295.6
+
+point 101.0 43.5 continuation -attr code D -attr Cavite "LS08" -attr CA "Courant d'air soufflant parfois très fort" -text "Etroiture difficile à désobstruer ; courant d'air"
+
+line wall
+  89.25 46.75
+  89.25 46.75 80.5 51.75 80.5 55.5
+  80.5 59.25 82.75 66.25 78.75 66.25
+  74.75 66.25 70.25 61.5 68.5 67.0
+  66.75 72.5 63.75 85.75 62.75 89.5
+  61.75 93.25 60.0 96.25 60.0 96.25
+  smooth off
+endline
+
+line wall
+  56.25 96.75
+  56.25 96.75 57.0 85.25 57.0 79.75
+  57.0 74.25 53.5 63.75 56.75 61.25
+  60.0 58.75 66.25 58.5 70.0 58.0
+  73.75 57.5 75.75 51.5 77.25 48.75
+  78.75 46.0 87.75 44.0 87.75 44.0
+  smooth off
+  altitude .
+endline
+
+point 81.6808 47.479 station -name 1
+
+point 76.6408 58.659000000000006 station -name 0
+
+point 69.2008 60.388999999999996 station -name 2
+
+point 59.0908 82.209 station -name 3
+
+endscrap
+
+

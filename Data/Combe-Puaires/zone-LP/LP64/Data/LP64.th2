@@ -1,0 +1,141 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 283.5 210.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {118.1076 1 1.0} {39.374 LP64} LP64-map.xvi 0 {}
+
+
+
+scrap SP-LP64-1 -projection plan -station-names "" "@LP64" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.502401619999999 0.0 m]
+
+line slope
+  38.5 62.5
+  38.5 62.5 44.25 54.25 43.5 52.0
+  l-size 5.0
+endline
+
+line slope -reverse on
+  48.75 54.75
+  48.75 54.75 48.0 64.75 43.25 64.75
+  l-size 5.0
+endline
+
+line slope
+  24.25 70.75
+  24.25 70.75 31.75 67.5 34.75 72.0
+  l-size 5.0
+endline
+
+line slope
+  23.25 63.0
+  23.25 63.0 30.25 57.0 34.5 64.5
+  l-size 5.0
+endline
+
+line slope
+  71.75 35.25
+  71.75 35.25 73.0 43.75 78.5 44.0
+  l-size 5.0
+endline
+
+line slope
+  66.0 40.5
+  66.0 40.5 62.75 48.25 70.5 50.25
+  l-size 5.0
+endline
+
+point 154.25 79.0 label -text "<bf>LP64" -scale xl
+
+point 125.5 55.0 entrance -orientation 220.4
+
+line overhang
+  95.25 37.0
+  95.25 37.0 108.0 33.0 112.0 33.25
+endline
+
+line wall -close on -outline in
+  42.0 52.25
+  42.0 52.25 46.75 57.0 50.5 56.25
+  54.25 55.5 57.75 51.75 55.5 51.25
+  53.25 50.75 44.75 49.75 42.75 49.75
+  40.75 49.75 37.25 50.5 39.25 51.25
+  41.25 52.0 42.0 52.25 42.0 52.25
+  smooth off
+endline
+
+point 57.0 73.5 debris
+
+point 51.5 71.25 debris
+
+point 29.75 49.0 debris
+
+point 35.0 58.25 debris
+
+point 27.25 64.0 debris
+
+point 28.75 74.5 debris
+
+point 82.75 36.0 debris
+
+point 88.5 31.5 debris
+
+point 104.75 34.0 snow
+
+line wall -close on -subtype ice -outline none
+  99.5 31.5
+  99.5 31.5 100.5 36.75 104.25 37.0
+  108.0 37.25 113.25 36.75 111.25 34.75
+  109.25 32.75 101.75 29.25 100.5 29.75
+  99.25 30.25 99.5 31.5 99.5 31.5
+  smooth off
+endline
+
+line wall
+  95.25 37.0
+  95.25 37.0 84.5 37.5 80.75 40.25
+  77.0 43.0 68.25 51.25 63.75 55.25
+  59.25 59.25 57.25 61.25 57.25 65.0
+  57.25 68.75 61.75 73.5 60.0 75.75
+  58.25 78.0 53.75 79.25 51.0 74.75
+  48.25 70.25 45.5 63.75 42.25 62.0
+  39.0 60.25 34.0 60.5 33.75 66.0
+  33.5 71.5 30.0 84.75 27.5 81.25
+  25.0 77.75 26.0 71.75 25.5 66.25
+  25.0 60.75 20.5 63.0 21.25 56.75
+  22.0 50.5 29.0 45.25 33.0 45.25
+  altitude .
+  37.0 45.25 49.5 44.75 53.25 45.75
+  57.0 46.75 63.25 45.5 66.5 42.5
+  69.75 39.5 71.75 35.75 76.25 33.0
+  80.75 30.25 84.75 28.75 87.5 26.5
+  90.25 24.25 89.0 22.75 94.75 25.75
+  100.5 28.75 112.0 33.25 112.0 33.25
+  smooth off
+endline
+
+line wall -subtype pit
+  112.0 33.25
+  112.0 33.25 122.5 37.75 119.75 40.0
+  altitude .
+  117.0 42.25 108.5 44.25 102.5 44.5
+  96.5 44.75 92.75 43.75 94.75 41.25
+  96.75 38.75 95.25 37.0 95.25 37.0
+  smooth off
+endline
+
+point 64.0976 48.034000000000006 station -name 6
+
+point 34.01760000000001 48.814 station -name 5
+
+point 49.217600000000004 63.464 station -name 4
+
+point 62.12760000000001 48.184000000000005 station -name 3
+
+point 78.8176 36.534000000000006 station -name 2
+
+point 96.61760000000001 31.964000000000002 station -name 1
+
+point 118.1076 39.374 station -name LP64
+
+endscrap
+
+

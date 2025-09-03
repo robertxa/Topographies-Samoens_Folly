@@ -1,0 +1,98 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -167.37630000000001 -128.0072 190.5 268.75
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.3663 1 1.0} {39.3672 0} LP63-map.xvi 0 {}
+
+
+
+scrap SP-LP63-1 -projection plan -station-names "" "@LP63" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-167.37630000000001 -128.0072 167.3639 -128.0072 0.0 0.0 8.50240108 0.0 m]
+
+line wall
+  54.25 51.25
+  54.25 51.25 46.5 42.75 46.25 44.75
+  46.0 46.75 42.25 52.0 40.75 55.25
+  39.25 58.5 36.5 65.25 36.5 65.25
+  smooth off
+endline
+
+line wall
+  25.25 41.0
+  25.25 41.0 36.5 35.75 39.5 36.25
+  42.5 36.75 42.75 35.75 45.5 38.25
+  altitude .
+  48.25 40.75 47.25 41.0 50.25 44.0
+  53.25 47.0 55.75 50.25 55.75 50.25
+  smooth off
+endline
+
+line wall
+  30.75 55.0
+  30.75 55.0 35.0 53.25 36.75 51.75
+  38.5 50.25 39.75 48.0 38.5 45.5
+  37.25 43.0 35.25 42.25 33.0 42.5
+  30.75 42.75 26.5 44.25 26.5 44.25
+  smooth off
+endline
+
+point -3.75 139.5 label -text "<bf>LP63" -scale xl
+
+point 12.25 100.75 entrance -orientation 151.8
+
+point 61.25 57.0 narrow-end
+
+point 10.75 45.25 continuation -attr code D -attr Cavite "LP63" -attr CA "Courant d'air soufflant" -text "Méandre soufflant encombré de blocs"
+
+point 21.0 32.25 air-draught -orientation 105.4
+
+point 22.75 43.75 breakdown-choke -orientation 109.5
+
+point 48.25 43.5 debris
+
+point 34.0 39.0 debris
+
+point 42.0 46.25 debris
+
+point 35.0 59.25 debris
+
+point 27.0 61.0 debris
+
+point 9.75 67.0 snow
+
+point -2.25 65.75 snow
+
+point 2.5 74.5 snow
+
+line wall -close on -reverse on -subtype ice -outline none
+  9.75 80.0
+  9.75 80.0 -12.0 75.5 -11.75 63.0
+  -11.5 50.5 -6.0 56.0 0.5 57.0
+  7.0 58.0 21.75 64.0 19.75 67.75
+  17.75 71.5 16.5 74.25 14.25 75.75
+  12.0 77.25 9.75 80.0 9.75 80.0
+  smooth off
+endline
+
+line wall -subtype pit
+  36.5 65.25
+  36.5 65.25 29.25 86.0 26.25 87.0
+  altitude .
+  23.25 88.0 -9.25 83.0 -15.5 75.0
+  -21.75 67.0 -20.5 45.75 -11.0 49.0
+  -1.5 52.25 8.5 58.25 13.75 58.5
+  19.0 58.75 30.75 55.0 30.75 55.0
+  smooth off
+endline
+
+point 29.5963 41.727199999999996 station -name 1
+
+point 39.3663 39.3672 station -name 0
+
+point 44.7963 41.0972 station -name 2
+
+point 34.3263 67.5472 station -name 3
+
+point 25.896300000000004 83.0672 station -name LP63
+
+endscrap
+
+

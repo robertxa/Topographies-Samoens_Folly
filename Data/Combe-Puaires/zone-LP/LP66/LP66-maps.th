@@ -9,7 +9,9 @@ map MP-LP66-plan-tot -title "LP66"
 	SP-LP66-1
 endmap
 
-#map MC-LP66-coupe-tot -title "LP66"
-#	SC-LP66-1
-#endmap
+map MC-LP66-coupe-tot -title "LP66"
+	SC-LP66-1
+	break
+	SC-LP66-2
+endmap
    

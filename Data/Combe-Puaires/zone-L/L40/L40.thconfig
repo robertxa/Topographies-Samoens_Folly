@@ -14,7 +14,7 @@ input ../../../../config.thc
   
 layout xviexport
 	scale 1 500
-	grid-size 10 10 10 m
+	grid-size 5 5 5 m
 	grid bottom
 endlayout
   
@@ -28,9 +28,15 @@ layout my_layout
 	doc-title "L40"
 	doc-author "Xavier Robert"
 	cs UTM32
+	
 	base-scale 1 500
 	scale 1 250
 	scale-bar 25 m
+	
+	#base-scale 1 1000
+	#scale 1 1000
+	#scale-bar 100 m
+	
 	#rotate 2.25
 	#origin 12 22 0 m
 	#origin-label 100 K
@@ -47,8 +53,8 @@ layout my_layout
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 
 	#grid bottom
 	#grid-size 100 100 100 m
@@ -97,8 +103,8 @@ layout my_layout-coupe
 	map-header 0 00 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 
 	#grid bottom
 	#grid-size 100 100 100 m
@@ -132,8 +138,8 @@ endlayout
 #export map -projection extended -fmt xvi -layout xviexport -o Data/L40-coupe.xvi
 
 # Select maps
-	select MP-L40-plan-tot@L40
-	select MC-L40-coupe-tot@L40
+	select MP-L40@L40
+	select MC-L40@L40
 	  
 export map -o Outputs/L40-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/L40-coupe.pdf

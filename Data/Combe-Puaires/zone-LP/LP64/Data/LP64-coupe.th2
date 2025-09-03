@@ -1,0 +1,111 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 285.75 293.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.37050000000001 1 1.0} {118.1087 LP64} LP64-coupe.xvi 0 {}
+
+
+
+scrap SC-LP64-1 -projection extended -station-names "" "@LP64" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 246.1103 -128.0 0.0 0.0 9.502401619999999 0.0 m]
+
+point 71.75 78.5 snow
+
+point 62.75 78.25 snow
+
+line wall -reverse on -outline none -subtype ice
+  67.25 74.5
+  67.25 74.5 77.0 74.0 77.5 75.75
+  78.0 77.5 79.25 82.25 73.5 82.0
+  67.75 81.75 61.5 80.5 59.0 80.0
+  56.5 79.5 56.75 75.5 59.25 74.75
+endline
+
+point 41.75 163.75 label -text "<bf>LP64" -scale xl
+
+point 33.25 135.25 entrance -orientation 144.1
+
+line wall -close on -reverse on -outline in
+  109.25 64.5
+  109.25 64.5 100.75 66.0 98.0 64.5
+  95.25 63.0 95.75 60.5 98.75 57.75
+  101.75 55.0 107.0 54.5 109.25 56.5
+  111.5 58.5 116.25 59.75 113.75 61.75
+  111.25 63.75 109.25 64.5 109.25 64.5
+  smooth off
+endline
+
+line wall -subtype invisible
+  59.25 127.25
+  59.25 127.25 36.5 130.0 32.5 120.25
+  altitude .
+endline
+
+line wall
+  155.0 78.25
+  155.0 78.25 154.5 88.5 150.25 88.5
+  146.0 88.5 122.75 76.5 112.5 74.25
+  102.25 72.0 97.5 67.75 91.25 73.5
+  85.0 79.25 80.75 84.5 76.5 93.75
+  72.25 103.0 68.5 115.25 65.0 117.25
+  61.5 119.25 59.25 127.25 59.25 127.25
+  smooth off
+endline
+
+line wall -subtype debris
+  153.0 74.75
+  153.0 74.75 152.75 76.0 155.0 78.25
+endline
+
+line wall
+  156.0 61.5
+  157.75 66.0 157.0 66.0 155.25 67.0
+  153.5 68.0 150.5 67.75 150.75 71.75
+  151.0 75.75 153.0 74.75 153.0 74.75
+  smooth off
+endline
+
+line wall
+  129.75 58.0
+  129.75 58.0 136.25 61.75 141.75 62.0
+  147.25 62.25 155.0 59.25 156.0 61.5
+endline
+
+line wall
+  107.0 42.25
+  107.0 42.25 108.5 48.25 112.5 51.75
+  116.5 55.25 120.5 57.25 122.5 57.5
+  124.5 57.75 129.75 58.0 129.75 58.0
+  smooth off
+endline
+
+line wall -subtype debris
+  57.25 74.75
+  57.25 74.75 65.0 76.5 67.25 74.5
+  69.5 72.5 66.5 68.25 70.75 65.5
+  75.0 62.75 78.75 64.75 82.0 60.75
+  85.25 56.75 96.25 40.25 99.5 40.5
+  altitude .
+  102.75 40.75 105.75 41.0 107.0 42.25
+endline
+
+line wall
+  32.5 120.25
+  32.5 120.25 36.25 119.25 37.75 116.75
+  39.25 114.25 41.25 110.75 42.0 107.0
+  42.75 103.25 52.75 75.25 57.25 74.75
+endline
+
+point 141.9205 68.0287 station -name 5
+
+point 120.7705 64.1687 station -name 4
+
+point 100.8105 43.308699999999995 station -name 3
+
+point 80.4205 68.89869999999999 station -name 2
+
+point 62.100500000000004 82.8387 station -name 1
+
+point 39.37050000000001 118.1087 station -name LP64
+
+endscrap
+
+

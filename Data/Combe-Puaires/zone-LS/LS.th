@@ -6,6 +6,7 @@ encoding  utf-8
 
 survey zoneLS -title "Zone LS" 
 	# Pour importer les différentes données de différents fichiers topos :
+	input LS8/LS8-tot.th
 	input LS22/LS22-tot.th
 	input LS30/LS30-tot.th
 	input LS64/LS64-tot.th
