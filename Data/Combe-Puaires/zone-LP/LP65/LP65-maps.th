@@ -5,11 +5,21 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map MP-LP65-plan-tot -title "LP65"
+map MP-LP65 -title "LP65"
 	SP-LP65-1
+	break
+	SP-LP65-2
+	break
+	SP-LP65-3
+	break
+	SP-LP65-4
+	break
+	SP-LP65-5
 endmap
 
-#map MC-LP65-coupe-tot -title "LP65"
-#	SC-LP65-1
-#endmap
+map MC-LP65 -title "LP65"
+	SC-LP65-1
+	break
+	SC-LP65-2
+endmap
    

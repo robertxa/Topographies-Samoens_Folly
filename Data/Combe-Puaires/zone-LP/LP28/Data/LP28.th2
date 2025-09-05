@@ -1,11 +1,11 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 324.8505 331.5
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {39.367000000000004 1 1.0} {118.11200000000001 LP66} LP66-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {39.367000000000004 1 1.0} {118.11200000000001 LP28} LP28-map.xvi 0 {}
 
 
 
-scrap SP-LP66-1 -projection plan -station-names "" "@LP66" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+scrap SP-LP28-1 -projection plan -station-names "" "@LP28" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
 
 line wall
   183.5 106.75
@@ -53,7 +53,7 @@ line pit
   91.25 114.0 87.25 101.5 99.25 105.0
 endline
 
-point 12.0 161.5 label -text "<bf>LP66" -scale xl
+point 12.0 161.5 label -text "<bf>LP28" -scale xl
 
 point 22.75 127.0 entrance -orientation 133.1
 
@@ -214,7 +214,7 @@ point 68.737 81.732 station -name 2
 
 point 68.107 96.452 station -name 1
 
-point 39.367000000000004 118.11200000000001 station -name LP66
+point 39.367000000000004 118.11200000000001 station -name LP28
 
 endscrap
 

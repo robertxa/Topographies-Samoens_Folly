@@ -1,16 +1,20 @@
 encoding utf-8
 # 2025.08.25 created by TopoDroid v 6.2.95
 
-survey LP66 -title "LP66" -entrance LP66
-    # LP66 
+survey LP28 -title "LP28" -entrance LP28
+    # LP28 
 
   centerline
     cs lat-long 
-    fix LP66 46.11317  6.7993603  2250  # Alt A revoir
+    fix LP28 46.11317  6.7993603  2250  # Alt A revoir
 
     date 2025.08.23 
       team "Frédéric Delègue"
       team "Stéphane Lips"
+    explo-date  1988.11.11
+			explo-team "Bernard Lips"
+		explo-date 1988.11.12
+			explo-team "Bernard Lips"
     explo-date 2025.08.23 
       explo-team "Frédéric Delègue"
       explo-team "Stéphane Lips"
@@ -19,18 +23,18 @@ survey LP66 -title "LP66" -entrance LP66
     units compass clino degrees
     data normal from to length compass clino
     # extend auto
-    LP66 . 1.04 44.6 4.6
-    LP66 . 1.00 213.7 -0.0
-    LP66 . 1.21 129.0 -77.8
-    LP66 . 1.01 37.4 -44.6
-    LP66 . 1.42 179.5 -50.6
-    LP66 . 8.32 138.0 -34.8
-    LP66 . 15.34 123.7 12.7
-    LP66 . 12.01 120.3 29.3
-    LP66 . 6.34 107.1 19.2
-    LP66 . 2.82 140.8 8.5
+    LP28 . 1.04 44.6 4.6
+    LP28 . 1.00 213.7 -0.0
+    LP28 . 1.21 129.0 -77.8
+    LP28 . 1.01 37.4 -44.6
+    LP28 . 1.42 179.5 -50.6
+    LP28 . 8.32 138.0 -34.8
+    LP28 . 15.34 123.7 12.7
+    LP28 . 12.01 120.3 29.3
+    LP28 . 6.34 107.1 19.2
+    LP28 . 2.82 140.8 8.5
     extend right
-    LP66 1 5.05 127.0 -25.2
+    LP28 1 5.05 127.0 -25.2
     # extend auto
     1 . 0.98 56.8 7.9
     1 . 0.60 216.9 2.3

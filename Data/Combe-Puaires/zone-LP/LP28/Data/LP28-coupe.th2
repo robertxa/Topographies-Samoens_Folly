@@ -1,11 +1,11 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -88.63100000000001 -128.0 414.75 363.5
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {78.741 1 1.0} {157.476 LP66} LP66-coupe.xvi 0 {}
+##XTHERION## xth_me_image_insert {78.741 1 1.0} {157.476 LP28} LP28-coupe.xvi 0 {}
 
 
 
-scrap SC-LP66-1 -projection extended -station-names "" "@LP66" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+scrap SC-LP28-1 -projection extended -station-names "" "@LP28" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
 
 point 166.25 156.25 snow
 
@@ -59,7 +59,7 @@ endline
 
 point 138.25 112.5 breakdown-choke -orientation 299.1
 
-point 71.5 231.25 label -text "<bf>LP66" -scale xl
+point 71.5 231.25 label -text "<bf>LP28" -scale xl
 
 point 66.0 177.25 entrance -orientation 122.0
 
@@ -101,13 +101,13 @@ point 129.46099999999998 118.03599999999999 station -name 2
 
 point 114.72099999999998 140.55599999999998 station -name 1
 
-point 78.74099999999999 157.476 station -name LP66
+point 78.74099999999999 157.476 station -name LP28
 
 endscrap
 
 
 
-scrap SC-LP66-2 -projection extended -station-names "" "@LP66" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+scrap SC-LP28-2 -projection extended -station-names "" "@LP28" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
 
 point 285.5 140.0 breakdown-choke
 
