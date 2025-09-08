@@ -1,0 +1,30 @@
+encoding utf-8
+# 2025.08.23 created by TopoDroid v 6.2.95
+
+survey LS69 -title "LS69"
+
+  centerline
+    
+    station LS69 "LS69" entrance
+
+    cs long-lat
+    fix LS69 6.8186836 46.115 2486  # Alt Lidar HD
+    #puits à descendre. ça aspirant ?
+
+    date 2025.08.24 
+      team "Stéphane Lips"
+    explo-date 2025.08.24
+      explo-team "Stéphane Lips"  
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino  left  right up  down
+    extend left
+    flags approximate
+    LS69  0 0 0 0 1 1 0 10
+    0 1 10 0 -90 1 1 10 0 # P10
+    flags not approximate
+    
+  endcenterline
+
+endsurvey

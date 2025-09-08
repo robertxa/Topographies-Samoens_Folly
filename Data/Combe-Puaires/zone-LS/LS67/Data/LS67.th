@@ -1,0 +1,33 @@
+encoding utf-8
+
+survey LS67 -title "LS67"
+
+  centerline
+    
+    station LS67 "LS67" entrance  #glacière
+
+    cs long-lat
+    fix LS67 6.8168073 46.115158 2457  # ALT Lidar HD
+    
+    #cs EPSG:2154
+    #fix LS67 994846.2 6564353.6 2493  # Coord entrée à partir LidarHD
+    
+    date 2025.08.24 
+      team "Stéphane Lips"
+      team "Alexandre Chanfray"
+    explo-date 2025.08.24
+      explo-team "Stéphane Lips"
+      explo-team "Alexandre Chanfray"  
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino  left  right up  down
+    #extend left
+    flags approximate
+    LS67  0 0 0 0 2 2 0 4
+    0 1 15 160 30 2 2 4 0
+    flags not approximate
+    
+  endcenterline
+
+endsurvey

@@ -1,0 +1,16 @@
+encoding  utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LS68 -title "LS68"
+# Pour importer les différentes données de différents fichiers topos : 
+   	input Data/LS68.th
+	
+	#input Data/LS68.th2
+	#input Data/LS68-coupe.th2
+
+	#input LS68-maps.th
+
+endsurvey

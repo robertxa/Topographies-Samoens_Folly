@@ -148,8 +148,8 @@ export map -fmt xvi -layout xviexport -o Data/LS8-map.xvi
 export map -projection extended -fmt xvi -layout xviexport -o Data/LS8-coupe.xvi
 
 # Select maps
-	select MP-LS8-plan-tot@LS8
-#	select MC-LS8-coupe-tot@LS8
+	select MP-LS8@LS8
+	select MC-LS8@LS8
 	  
 export map -o Outputs/LS8-plan.pdf -layout my_layout
 export map -projection extended -layout my_layout-coupe -o Outputs/LS8-coupe.pdf

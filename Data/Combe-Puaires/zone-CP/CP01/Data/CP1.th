@@ -12,6 +12,7 @@ centerline
 	cs lat-long
 	#fix CP1 46.355   06.050016667  1906
 	#fix CP1 46.113550    6.790500  1906
+	#station CP1 "CP1" entrance air-draught
 	date 1982.11.11
 		team "Christophe Ohl"
 		team "Jean-Bernard/de Chabelier"
@@ -23,13 +24,14 @@ centerline
 	calibrate counter 0 1.000
 	data topofil from to fromcount tocount compass clino left right up down
 	flags duplicate   
-	CP1 CP1a 0.0 0.0    0.000000       100.0000       0.000000       0.000000       0.000000       0.000000    
-	CP1 1 0.0 1000.0    50.00000       0.000000       0.000000       0.000000       0.000000       0.000000    
-	CP1 2 0.0 1000.0    0.000000      -100.0000       0.000000       0.000000       0.000000       0.000000    
-	CP1 3 0.0 1000.0    0.000000       100.0000       0.000000       0.000000       0.000000       0.000000    
-	CP1 4 0.0 1000.0    150.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
-	CP1 5 0.0 1000.0    250.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
-	CP1 6 0.0 1000.0    350.0000       0.000000       0.000000       0.000000       0.000000       0.000000    
+	CP1 CP1a 0.0 0.0    0       100       0       0       0       0    
+	CP1 1 0.0 1000.0    500       0       0       0       0       0    
+	CP1 2 0.0 1000.0    0      -100       0       0       0       0    
+	CP1 3 0.0 1000.0    0       100       0       0       0       0    
+	CP1 4 0.0 1000.0    150       0       0       0       0       0    
+	CP1 5 0.0 1000.0    250       0       0       0       0       0    
+	CP1 6 0.0 1000.0    350       0       0       0       0       0    
+	flags not duplicate
 endcenterline
 
 centerline
@@ -37,9 +39,9 @@ centerline
 	fix CP1b 46.113350    6.790860  1921
 	fix CP1c 46.113550    6.790930  1914
 	#fix CP1a 46.113480    6.791020  1929
-	station CP1b entrance
-	station CP1c entrance
-	station CP1a entrance
+	station CP1b "CP1b" entrance
+	station CP1c "CP1C" entrance
+	station CP1a "CP1a" entrance
 	date 2015.08.29
 		team "Bernard Lips"
 		team "Xavier Robert"

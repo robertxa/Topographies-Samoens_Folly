@@ -4,20 +4,22 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey V4ter -title "V4ter" -entrance "6"
+survey V4ter -title "V4ter" -entrance "V4ter"
 
  centerline
  cs lat-long
- fix 6  46.10209    6.77944  1830
-   date 2013.07.13
-  team "Xavier Robert"
-  team "Nasir Ahmed"
-  team "Frédéric Alvarez"
+ fix V4ter  46.10209    6.77944  1830
+ station V4ter "V4ter" entrance
+
+  date 2013.07.13
+    team "Xavier Robert"
+    team "Nasir Ahmed"
+    team "Frédéric Alvarez"
   explo-date 2013.07.13
-  explo-team "Xavier Robert"
-  explo-team "Nasir Ahmed"
-  explo-team "Frédéric Alvarez"
-  explo-team "David Parrot"
+    explo-team "Xavier Robert"
+    explo-team "Nasir Ahmed"
+    explo-team "Frédéric Alvarez"
+    explo-team "David Parrot"
   units lenght meters
   units compass deg
   units clino deg
@@ -31,6 +33,6 @@ survey V4ter -title "V4ter" -entrance "6"
    3	4	3.02	377	33	0.2	0.2	0.1	0.1	# entree imp.
    extend right
    3	5	2.74	51	22	0.4	0.4	0.3	0.3
-   5	6	3.74	25	27	1	1	0.6	0.3
+   5	V4ter	3.74	25	27	1	1	0.6	0.3
    endcenterline
   endsurvey

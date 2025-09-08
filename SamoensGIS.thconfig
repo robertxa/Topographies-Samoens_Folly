@@ -217,10 +217,10 @@ select MP-Folly-tot@MassifFolly
 # Export des fichiers ESRI
   # Export en 2D
   export map -proj plan -fmt esri -o Outputs/SHP/therion -layout my_layout -enc ASCII
-  export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2D -layout my_layout -enc ASCII
+  #export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2D -layout my_layout -enc ASCII
   #export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2D -layout my_layout -enc UTF-8
   # Export en 3D
-  export model -fmt esri -o Outputs/3D/Folly-tot-3D -enc UTF-8
+  #export model -fmt esri -o Outputs/3D/Folly-tot-3D -enc UTF-8
   export model -fmt esri -o Outputs/SHP/therion -enc UTF-8
 
 # Export des fichiers kml

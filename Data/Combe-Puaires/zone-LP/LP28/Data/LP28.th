@@ -5,8 +5,11 @@ survey LP28 -title "LP28" -entrance LP28
     # LP28 
 
   centerline
-    cs lat-long 
-    fix LP28 46.11317  6.7993603  2250  # Alt A revoir
+    #cs lat-long 
+    #fix LP28 46.11317  6.7993603  2250  # Alt A revoir
+
+    cs EPSG:2154
+    fix LP28 993323.26  6564095.04  2221  # Alt à partir LidarHD
 
     date 2025.08.23 
       team "Frédéric Delègue"

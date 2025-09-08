@@ -10,7 +10,10 @@ survey LS66 -title "LS66"
     cs long-lat
     # Les coordonnées sont à corriger avec le MNT Lidar...
     #fix LS66 6.81920 46.11504 2471  # Coord estimées par Xav
-    fix LS66 6.819223 46.114834 2471  # Coord Vire par Steph
+    #fix LS66 6.819223 46.114834 2471  # Coord Vire par Steph
+    
+    cs EPSG:2154
+    fix LS66 994846.2 6564353.6 2493  # Coord entrée à partir LidarHD
     
     date 2025.08.24 
       team "Alexandre Chanfray"

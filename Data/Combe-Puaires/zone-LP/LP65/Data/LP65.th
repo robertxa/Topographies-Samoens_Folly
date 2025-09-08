@@ -6,8 +6,10 @@ survey LP65 -title "LP65" -entrance LP65a
 
   centerline
 
-    cs lat-long
-    fix LP65a 46.112568 6.800254 2200  # Alt à revoir
+    #cs lat-long
+    #fix LP65a 46.112568 6.800254 2266  # Alt à partir Lidar HD
+    cs EPSG:2154
+    fix LP65a 993396.3  6564028.6 2263  # Alt à partir Lidar HD + positionnement sur image Bing
 
     date 2025.08.23 
       team "Frédéric Delègue"

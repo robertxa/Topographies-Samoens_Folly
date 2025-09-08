@@ -1,0 +1,30 @@
+encoding utf-8
+# 2025.08.23 created by TopoDroid v 6.2.95
+
+survey LP66 -title "LP66"
+
+  centerline
+  
+    station LP66 "LP66" entrance
+    # Correspond au LP14 ? --> A descendre pour vérifier !
+    cs long-lat
+    fix LP66 6.8003955 46.11196 2269  # Alt à CORRIGER
+
+
+    date 2025.08.24 
+      team "Stéphane Lips"
+    explo-date 2025.08.24
+      explo-team "Stéphane Lips"  
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino  left  right up  down
+    extend left
+    flags approximate
+    LP66  0 0 0 0 1 1 0 10
+    0 1 20 0 -90 1 1 10 0 # P20
+    flags not approximate
+    
+  endcenterline
+
+endsurvey

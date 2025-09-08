@@ -1,0 +1,30 @@
+encoding utf-8
+
+survey L41 -title "L41"
+
+  centerline
+  
+    station L41 "L41" entrance
+    #puits protégé à descendre. les cailloux roulent sur 30 à 40 mètres - geo:,
+
+    cs long-lat
+    fix L41 6.801304 46.109917 2305  # Alt à CORRIGER
+
+
+    date 2025.08.24 
+      team "Stéphane Lips"
+    explo-date 2025.08.24
+      explo-team "Stéphane Lips"  
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino  left  right up  down
+    extend left
+    flags approximate
+    L41  0 0 0 0 1 1 0 10
+    0 1 40 0 -90 1 1 10 0 # P30 à 40
+    flags not approximate
+    
+  endcenterline
+
+endsurvey

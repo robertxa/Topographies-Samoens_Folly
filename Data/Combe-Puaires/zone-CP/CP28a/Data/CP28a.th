@@ -4,14 +4,14 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CP28a -title "CP28" -entrance "0"
+survey CP28a -title "CP28" -entrance "CP28"
   
  #cs EPSG:<27572>
  #fix CP28   944.0000       2133.000       0.000000    
 centerline
  cs lat-long
-# fix 0 46.515  06.83668333    2149
-  fix 0 46.115150  6.798367    2149
+# fix CP28 46.515  06.83668333    2149
+  fix CP28 46.115150  6.798367    2149
    date 2007.07.08
    calibrate counter 0 0.500
   team "Bernard Lips"
@@ -28,7 +28,7 @@ centerline
 
   units counter centimeters
    data topofil from to fromcount tocount compass clino left right up down
-   0 0double 0.0 0.0    0.000000       90.00000       0.000000       0.000000       0.000000       0.000000    
+   CP28 0double 0.0 0.0    0.000000       90.00000       0.000000       0.000000       0.000000       0.000000    
    0double 1 84108.0 85178.0    162.0000      -23.00000       0.000000       0.000000       0.000000       0.000000    
    1 2 85178.0 86100.0    134.0000      -33.00000       0.000000       0.000000       0.000000       0.000000    
    2 3 86100.0 87188.0    260.0000      -20.00000       0.000000       0.000000       0.000000       0.000000    

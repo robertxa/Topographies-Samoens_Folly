@@ -8,7 +8,7 @@ survey LP1 -title "LP1"
 
 	centerline -extend right
 		cs lat-long
-		fix       LP1      46.113483     6.80078      2275	# 2109
+		fix       LP1      46.113483     6.80078      2270 #LidarHD	#2275	# 2109
 		station   LP1      "LP1" entrance #continuation explored 50m
 	
 		explo-date  1977.08.15

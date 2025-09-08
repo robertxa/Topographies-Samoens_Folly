@@ -1,0 +1,16 @@
+encoding  utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP66 -title "LP66"
+# Pour importer les différentes données de différents fichiers topos : 
+   	input Data/LP66.th
+	
+	#input Data/LP66.th2
+	#input Data/LP66-coupe.th2
+
+	#input LP66-maps.th
+
+endsurvey

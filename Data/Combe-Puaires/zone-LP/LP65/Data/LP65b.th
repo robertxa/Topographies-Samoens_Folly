@@ -6,8 +6,11 @@ survey LP65b -title "LP65b" -entrance LP65b
 
   centerline
     
-    cs lat-long
-    #fix LP65b 46.112514 6.800409  2203    # Alt à revoir
+    #cs lat-long
+    #fix LP65b 46.112514 6.800409  2269    # Alt à partir LidarHD
+    
+    cs EPSG:2154
+    fix LP65a 993412.7  6564035.3 2271  # Alt à partir Lidar HD + positionnement sur image Bing
 
     date 2025.08.25 
       team "Xavier Robert"
