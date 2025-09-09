@@ -8,13 +8,14 @@ survey CP81 -title "CP81"
 
 	centerline
 		cs lat-long
-		fix		CP81	46.11790 6.79534 2073
-		station   CP81      "CP81" entrance continuation explored 03m air-draught
+		fix		CP81	46.11453 6.78733 1847
+		station   CP81      "CP81" entrance #continuation explored 03m air-draught
 
-		explo-date 2021.06.26
+		explo-date 2021.07.12
 			explo-team "Xavier Robert"
 			explo-team "Constance Picque"
-			explo-team "Frédéric Gennerat"
-  
+			explo-team "Stéphane Lips"
+			explo-team "Bernard Lips"
+
 	endcenterline
 endsurvey
