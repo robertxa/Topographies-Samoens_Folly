@@ -4,12 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey CP79 -title "CP79"
+survey CP80 -title "CP80"
 
 	centerline
 		cs lat-long
-		fix		CP79	46.11790 6.79534 2073
-		station   CP79      "CP79" entrance continuation explored 03m air-draught
+		fix		CP80	46.11790 6.79534 2073
+		station   CP80      "CP80" entrance continuation explored 03m air-draught
+		
+		# Voir si CP80 et CP79 ne sont pas les mêmes trous !
 
 		explo-date 2021.06.26
 			explo-team "Xavier Robert"

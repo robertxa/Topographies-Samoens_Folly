@@ -4,14 +4,14 @@ encoding utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CP79 -title "CP79"
-	input Data/CP79.th
+survey CP84 -title "CP84"
+	input Data/CP84.th
 
 	# pour le plan
-	#input Data/CP79.th2
-	#input Data/CP79EV.th2
+	#input Data/CP84.th2
+	#input Data/CP84EV.th2
 	# Pour la coupe et le plan
-	#input Data/CP79-coupe.th2
+	#input Data/CP84-coupe.th2
 
-	#input CP79-maps.th
+	#input CP84-maps.th
 endsurvey

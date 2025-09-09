@@ -4,17 +4,16 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey CP79 -title "CP79"
+survey CP84 -title "CP84"
 
 	centerline
 		cs lat-long
-		fix		CP79	46.11790 6.79534 2073
-		station   CP79      "CP79" entrance continuation explored 03m air-draught
+		#fix		CP84	46.11790 6.79534 2073 # A REVOIR CE NE SONT PAS LES BONNES
+		fix		CP84	46.11700 6.79568 2049 # A REVOIR CE NE SONT PAS LES BONNES
+		station   CP84      "CP84" entrance continuation explored 20m #air-draught dig
 
-		explo-date 2021.06.26
+		explo-date 2021.08.10
 			explo-team "Xavier Robert"
-			explo-team "Constance Picque"
-			explo-team "Frédéric Gennerat"
   
 	endcenterline
 endsurvey

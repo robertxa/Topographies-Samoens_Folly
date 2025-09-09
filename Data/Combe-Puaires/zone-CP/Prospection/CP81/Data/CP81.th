@@ -4,15 +4,17 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
-survey CP83 -title "CP83"
+survey CP81 -title "CP81"
 
 	centerline
 		cs lat-long
-		fix		CP83	46.11790 6.79534 2073 # A REVOIR CE NE SONT PAS LES BONNES
-		station   CP83      "CP83" entrance continuation explored 01m air-draught dig
+		fix		CP81	46.11790 6.79534 2073
+		station   CP81      "CP81" entrance continuation explored 03m air-draught
 
-		explo-date 2021.08.10
+		explo-date 2021.06.26
 			explo-team "Xavier Robert"
+			explo-team "Constance Picque"
+			explo-team "Frédéric Gennerat"
   
 	endcenterline
 endsurvey

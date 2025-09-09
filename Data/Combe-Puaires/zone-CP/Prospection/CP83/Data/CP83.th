@@ -8,7 +8,8 @@ survey CP83 -title "CP83"
 
 	centerline
 		cs lat-long
-		fix		CP83	46.11790 6.79534 2073 # A REVOIR CE NE SONT PAS LES BONNES
+		#fix		CP83	46.11790 6.79534 2073 # A REVOIR CE NE SONT PAS LES BONNES
+		fix		CP83	46.11729 6.795645 1778 # A REVOIR CE NE SONT PAS LES BONNES
 		station   CP83      "CP83" entrance continuation explored 01m air-draught dig
 
 		explo-date 2021.08.10
