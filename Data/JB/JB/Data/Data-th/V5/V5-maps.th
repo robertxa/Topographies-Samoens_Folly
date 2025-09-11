@@ -4,12 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey V4 -title "Le V4"
+map MP-V5 -title "Gouffre V5"
+	
+	#break
+	MP-Ete-Indien@Ete-Indien
+endmap
 
-    ## L'été Indien
-    input Data/Ete-Indien/Ete-Indien-tot.th
-
-    # Add maps
-    input V4-maps.th
-
-endsurvey
+#map MC-V5 -title "Gouffre V5"
+#	MC-Ete-Indien@Ete-Indien
+#endmap
+   

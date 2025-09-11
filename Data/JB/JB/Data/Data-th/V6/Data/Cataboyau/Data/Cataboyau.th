@@ -1,0 +1,51 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Cataboyau -title "JB Cataboyau (2007)"   
+
+ centerline -extend left -title " Ia.17_Gm.1 Gm.15_Gm.16 : Cataboyau"
+  # Cataboyau
+   date 2007.07.11
+   #declination 0.  degrees
+    team "Xavier Robert"
+    team "Gaëtan Poschmann"
+    team "Cédric Chambe"
+    team "Frédéric Alvarez"
+    team "Philippe Sénécal"
+  explo-date 2007.07.11
+   #declination 0.  degrees
+    explo-team "Xavier Robert"
+    explo-team "Gaëtan Poschmann"
+    explo-team "Cédric Chambe"
+    explo-team "Frédéric Alvarez"
+    explo-team "Philippe Sénécal"
+
+   calibrate counter 0 0.500
+   units lenght meters
+   units compass degrees
+   units clino degrees
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   Ia.17 Gm.1 35454.0 36518.0    6.       31.       1.5       1.5       8.       1.5    
+   Gm.1 Gjm.2 36518.0 37126.0    265.       0.      0.1      0.1       1.       3.    
+   Gm.1 Gm.3 37126.0 38481.0    118.       78.      0.3       1.       5.       5.    
+   Gm.3 Gm.4 38481.0 39092.0    175.       15.      0.6       1.       2.5       1.    
+   Gm.4 Gm.5 39092.0 39505.0    140.      -30.      0.2      0.3      0.3      0.3    
+   Gm.5 Gm.6 39505.0 39709.0    157.       15.      0.2      0.4      0.2      0.4    
+   Gm.6 Gm.7 39709.0 39709.0    0.       90.      0.5       1.       3.      0.4    
+   Gm.7 Gm.8 39709.0 40237.0    184.       8.      0.3      0.6       10.       1.5    
+   Gm.8 Gm.9 40237.0 41363.0    210.       45.      0.8      0.8       10.       1.5    
+   Gm.9 Gm.10 41368.0 42571.0    165.       79.      0.3      0.3       2.5       7.    
+   Gm.10 Gm.11 42571.0 42884.0    220.       20.      0.2      0.1       2.       1.5    
+   Gm.11 Gm.12 42884.0 43181.0    165.       5.      0.2      0.1       2.      0.3    
+   Gm.12 Gm.13 43181.0 44058.0    187.       20.      0.4      0.1       6.       1.5    
+   Gm.13 Gm.14 44058.0 44702.0    190.       86.      0.5       1.       3.       1.5    
+   Gm.14 Gm15 44702.0 45165.0    210.       44.      0.3      0.7       3.       1.5    
+   Gm15 Gm.16 45165.0 45822.0    320.       43.      0.5       1.5       3.       1.5    
+ endcenterline
+
+ endsurvey  
+

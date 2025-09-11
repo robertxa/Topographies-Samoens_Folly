@@ -6,9 +6,15 @@ encoding  utf-8
 
 survey PierreQuiTombe -title "Réseau de la Pierre Qui Tombe"
 
+    # Galerie de la Feigne
+    input Data/Feigne/Feigne-tot.th
+        #join MP-Feigne@Feigne  MP-Mais@Mais
+        #join MP-Feigne@Feigne  MP-Anou2@Anou2 ou Jaunisse ?
+        #### Idem pour la coupe !! A faire
+
     ## Galerie des Stalactites
     input Data/Stalactites/Stalactites-tot.th
-
+    
     # Add maps
     input PierreQuiTombe-maps.th
 

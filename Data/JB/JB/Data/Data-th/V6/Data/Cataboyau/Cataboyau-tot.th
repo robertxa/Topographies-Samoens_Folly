@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Cataboyau -title "Galerie du Petit Cataboyau"
+
+    input Data/Cataboyau.th
+    # Dessins en plan
+    input Data/Cataboyau.th2
+    # Dessins en coupe
+    input Data/Cataboyau-coupe.th2
+
+    # Add maps
+    input Cataboyau-maps.th
+
+endsurvey

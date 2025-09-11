@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Grand-Escalier -title "Grand Escalier"
+	# Données topos
+	input Data/Grand-Escalier.th
+	
+	# Dessins
+	#input Data/Grand-Escalier.th2
+	#input Data/Grand-Escalier-coupe.th2
+
+	# Add maps
+	#input Grand-Escalier-maps.th
+	
+endsurvey

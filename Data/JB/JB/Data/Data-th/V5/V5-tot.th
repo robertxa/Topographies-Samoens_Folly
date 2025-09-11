@@ -4,13 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-V4 -title "Gouffre V4"
-	
-	#break
-	MP-Ete-Indien@Ete-Indien
-endmap
+survey V5 -title "Gouffre V5"
 
-map MC-V4 -title "Gouffre V4"
-	MC-Ete-Indien@Ete-Indien
-endmap
-   
+    ## V5
+    input Data/V5.th
+
+    #input Data/V5.th2
+    #input Data/V5-coupe.th2
+    
+    # Add maps
+    #input V5-maps.th
+
+endsurvey

@@ -1,0 +1,61 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Grand-Escalier -title "Grand-Escalier"
+ 
+ centerline -extend right -title "Sommet Escalier - Fv Fv.0_Fv.1 Fv.11_Da.269"
+
+   date 1976.02.03
+   #declination -3.0225 degrees
+    team "Josiane Lips"
+    team "Bernard Lips"
+  explo-date 1976.02.03
+    explo-team "Josiane Lips"
+    explo-team " Bernard Lips"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+
+   Fv.0 Fv.1    10.34000       225.      -68.       0.       0.       0.       0.    # Puits
+   Fv.1 Fv.2    11.18000       178.      -24.       0.       0.       0.       0.    
+   Fv.2 Fv.3    17.26000       215.      -63.       0.       0.       0.       0.    # Puits
+   Fv.3 Fv.4    5.75       160.      -20.       0.       0.       0.       0.    
+   Fv.4 Fv.5    5.41       220.       0.       0.       0.       0.       0.    
+   Fv.5 Fv.6    16.56000       0.      -90.       0.       0.       0.       0.    # Puits
+   Fv.6 Fv.7    5.79       157.      -25.       0.       0.       0.       0.    
+   Fv.7 Fv.8    11.22000       298.      -58.       0.       0.       0.       0.    # Puits
+   Fv.8 Fv.9    7.       253.      -19.       0.       0.       0.       0.    # Petit méandre
+   Fv.9 Fv.10    3.71       281.      -8.       0.       0.       0.       0.    # Petit méandre
+   Fv.10 Fv.11    3.22       318.       0.       0.       0.       0.       0.    # Petit méandre
+   Fv.11 Da.269    2.       0.       90.       0.       0.       0.       0.    # ressaut jusqu'au sommet de l'escalier
+
+ endcenterline
+
+ centerline -extend left -title " Fv.1_Gl.1 Gl.2_Gk.0"
+ #  date YYYY.MM.DD
+   declination 0.  degrees
+   calibrate counter 0 0.500
+  #team "G.S. Vulcain"
+ 
+ #explo-team "G.S. Vulcain"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   Fv.1 Gl.1 31151.0 32092.0    342.       35.       2.       1.       5.       1.2    
+   Gl.1 Gl.2 32092.0 33306.0    257.       81.       1.       2.       8.       2.    
+   Gl.2 Gk.0 33306.0 35430.0    262.       67.       3.       7.       8.       10.    
+ endcenterline
+ 
+endsurvey
+
+
+

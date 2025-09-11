@@ -1,0 +1,170 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+# Import DATA  
+source Feigne-tot.th
+
+# Add config file
+input ../../../../../../../../config.thc 
+
+# Add entrance coordinates
+#input ../../../../
+  
+ 
+  
+layout xviexport_plan
+	scale 1 500
+	grid-size 10 10 10 m
+	grid bottom
+endlayout  
+ 
+layout xviexport_coupe
+   scale 1 1000
+   grid-size 10 10 10 m
+   grid bottom
+endlayout
+  
+layout layout_plan
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl 
+	copy langue-fr
+	
+	#debug scrap-names
+	  
+	doc-title "Feigne-plan"
+	doc-author "Xavier Robert"
+	cs UTM32
+	base-scale 1 1250
+	scale 1 1000
+	scale-bar 100 m
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "<it>Plan - <ss>Gouffre Jean-Bernard"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	#legend-width 22 cm
+	legend-width 15 cm
+	map-header 100 100 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#debug scrap-names
+	# grid bottom
+	# grid-size 100 100 100 m
+	grid off
+  
+	######## Code Metapost pour modifier l aspect des symboles ####### 
+
+	# Titre          
+	code tex-map
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+ 
+	######################### 
+  
+	# Ajouter une coupe développée sur le même pdf
+	#map-image 0 100 sw Outputs/Feigne-coupe2022b.pdf
+  
+endlayout
+  
+  
+layout layout_coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe 
+	copy langue-fr
+	
+	#debug scrap-names
+
+	doc-title "Feigne-coupe"
+	doc-author "Xavier Robert"
+	cs UTM32
+	#base-scale 1 2000
+	base-scale 1 1400
+	##base-scale 1 1000
+	##base-scale 1 300
+	scale 1 1400
+	##scale 1 1000
+	#scale 1 400
+	scale-bar 100 m
+	#color map-bg 85 
+	color map-fg [100 100 80]
+	transparency on
+	opacity 65
+	language fr
+	map-comment "Gouffre Jean-Bernard <it>- Coupe développée"
+	#statistics explo-length off
+	#statistics topo-length off
+	#statistics copyright all
+	statistics explo off
+	statistics topo off
+	statistics carto off
+	statistics copyright off
+	# To suppress the displaY of cave length/depth in map header
+	#code tex-map
+	#	\cavelength={} %empty
+	#	\cavedepth={}  %empty
+	#endcode
+	legend off
+	#legend-width 14.5 cm
+	legend-width 10 cm
+	map-header 0 -5 nw
+	map-header-bg on
+	layers on
+	symbol-hide line survey
+	#debug station-names	
+	grid bottom
+	grid-size 100 100 20 m
+	grid-coords border
+	#grid off
+  
+	######## Code Metapost pour modifier l aspect des symboles ####### 
+
+	# Titre          
+	code tex-map  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Jean-Bernard}
+			
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		%\newtoks\club \club={Groupe Spéléologique Vulcain}
+	endcode  
+  
+	######################### 
+  
+endlayout
+
+# Export des fichiers xvi  
+	#export map -fmt xvi -layout xviexport_plan -o Data/Feigne-plan.xvi
+	#export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Feigne-coupe.xvi
+
+select MP-Feigne@Feigne
+select MC-Feigne@Feigne
+
+# Export des fichiers pdf  
+	export map -projection extended -layout layout_coupe -o Outputs/Feigne-coupe.pdf
+	export map -layout layout_plan -o Outputs/Feigne-plan.pdf
+ 
+# Export des modeles 3D
+	export model -o Outputs/Feigne.lox

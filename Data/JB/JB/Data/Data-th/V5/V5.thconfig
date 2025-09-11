@@ -4,7 +4,7 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
-source Riviere2-tot.th
+source V5-tot.th
 
 # Add config file
 input ../../../../../../config.thc 
@@ -21,7 +21,7 @@ layout my_layout
 	copy headerl
 	copy langue-fr 
 	  
-	doc-title "Gouffre du B19"
+	doc-title "Gouffre V5"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -32,7 +32,7 @@ layout my_layout
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "Gouffre du B19, Samoëns, 74, France"
+	map-comment "<it>Plan -<ss> Gouffre Jean-Bernard, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -69,7 +69,7 @@ layout my_layout-coupe
 	copy header_coupe
 	copy langue-fr 
   
-	doc-title "Gouffre du B19"
+	doc-title "Gouffre V5"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 500
@@ -80,7 +80,7 @@ layout my_layout-coupe
 	transparency on
 	opacity 75
 	language fr
-	map-comment "Gouffre du B19, coupe développée, Samoëns, 74, France"
+	map-comment "<it>Coupe développée -<ss> Gouffre Jean-Bernard, Samoëns, 74, France"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -109,6 +109,9 @@ layout my_layout-coupe
 	endcode  
   
 endlayout
+
+ select MP-V5@V5
+ select MC-V5@V5
   
- export map  -projection plan -o Outputs/Riviere2-plan.pdf -layout my_layout
- export map -projection extended -layout my_layout-coupe -o Outputs/Riviere2-coupe.pdf
+ export map  -projection plan -o Outputs/V5-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o Outputs/V5-coupe.pdf

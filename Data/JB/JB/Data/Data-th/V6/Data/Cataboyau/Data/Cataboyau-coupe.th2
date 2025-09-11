@@ -1,0 +1,173 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 296.25 324.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {160.6283 1 1.0} {39.3708 Ia.17} Cataboyau-coupe.xvi 0 {}
+
+
+
+scrap SC-Cataboyau-1 -projection extended -station-names "" "@Cataboyau" -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 285.48040000000003 -128.0 0.0 0.0 10.50240216 0.0 m]
+
+point 63.0 178.0 air-draught -orientation 302.8 -subtype summer
+
+point 26.0 121.0 height -value [+7 m]
+
+point 151.0 117.5 height -value [+7 m]
+
+point 65.25 83.75 height -value [+7 m]
+
+point 160.0 57.0 continuation -attr Code D -attr Cavite JB -attr reseau "Galerie du Mais - Cataboyau" -text "etr."
+
+point 18.5 158.0 continuation -attr Code E -attr Cavite JB -attr reseau "Galerie du Mais - Cataboyau" -text "Escalade etr."
+
+point 124.25 110.5 continuation -attr Code E -attr Cavite JB -attr reseau "Galerie du Mais - Cataboyau" -text "Escalade"
+
+point 167.0 101.0 continuation -attr Code E -attr Cavite JB -attr reseau "Galerie du Mais - Cataboyau" -text "Escalade"
+
+line wall
+  150.75 56.75
+  150.75 56.75 144.5 54.5 144.5 58.0
+  144.5 61.5 145.0 67.5 145.0 67.5
+  smooth off
+endline
+
+line wall
+  128.25 68.25
+  128.25 68.25 128.5 55.5 130.75 53.75
+  133.0 52.0 141.0 49.25 142.25 52.25
+  143.5 55.25 145.75 54.25 146.75 54.25
+  147.75 54.25 150.0 54.5 150.0 54.5
+  smooth off
+endline
+
+line rope
+  125.25 81.0
+  137.75 81.0
+  137.5 53.25
+endline
+
+line rope
+  72.75 126.0
+  88.75 121.75
+  91.25 84.0
+endline
+
+line rope
+  40.25 155.5
+  58.25 145.75
+  57.5 121.5
+endline
+
+line wall -close on -outline in
+  103.75 88.0
+  103.75 88.0 110.75 88.5 110.75 87.0
+  110.75 85.5 110.75 82.5 108.5 82.5
+  106.25 82.5 104.75 82.25 104.75 83.75
+  104.75 85.25 103.75 88.0 103.75 88.0
+  smooth off
+endline
+
+line wall -close on -outline in
+  57.75 111.5
+  57.75 111.5 54.25 119.5 56.75 119.5
+  59.25 119.5 73.25 118.5 74.75 117.0
+  76.25 115.5 81.75 106.5 79.75 106.25
+  77.75 106.0 73.75 105.25 73.75 106.5
+  73.75 107.75 73.25 109.5 71.5 109.75
+  69.75 110.0 57.75 111.5 57.75 111.5
+  smooth off
+endline
+
+line wall
+  124.25 98.25
+  124.25 98.25 128.0 93.75 126.25 90.5
+  124.5 87.25 125.0 82.5 123.25 80.75
+  121.5 79.0 119.25 77.75 117.75 77.75
+  116.25 77.75 114.75 93.75 114.75 98.25
+  114.75 102.75 116.5 119.25 114.25 123.5
+  112.0 127.75 107.75 125.75 105.25 125.75
+  102.75 125.75 101.25 123.0 98.0 121.75
+  94.75 120.5 88.75 125.0 84.25 126.25
+  79.75 127.5 68.75 137.75 63.5 143.0
+  58.25 148.25 53.25 149.0 53.25 153.25
+  53.25 157.5 50.5 166.25 47.0 166.25
+  43.5 166.25 33.25 165.75 33.25 165.75
+  smooth off
+endline
+
+line wall
+  154.5 93.5
+  154.5 93.5 144.0 84.0 141.25 84.25
+  138.5 84.5 138.25 91.5 134.5 91.5
+  130.75 91.5 126.25 99.0 126.25 99.0
+  smooth off
+endline
+
+line wall
+  145.0 67.5
+  145.0 67.5 140.0 76.75 142.5 79.0
+  145.0 81.25 156.5 90.5 156.5 90.5
+  smooth off
+endline
+
+line wall
+  112.0 68.5
+  112.0 68.5 108.75 74.5 112.75 74.25
+  116.75 74.0 118.0 74.25 121.0 74.25
+  124.0 74.25 128.5 71.5 128.25 68.25
+endline
+
+line label -text "Le Cataboyau"
+  79.5 195.5
+  79.5 195.5 151.25 143.75 163.25 131.75
+endline
+
+line wall
+  32.75 148.75
+  altitude .
+  32.75 148.75 36.0 147.25 39.25 146.0
+  42.5 144.75 48.0 135.0 48.0 126.5
+  48.0 118.0 47.25 102.75 49.0 102.5
+  50.75 102.25 60.5 102.0 65.0 101.75
+  69.5 101.5 80.25 102.0 82.25 99.0
+  84.25 96.0 84.0 83.5 84.0 82.25
+  84.0 81.0 94.5 83.25 96.25 80.5
+  98.0 77.75 95.0 72.0 98.5 72.0
+  102.0 72.0 102.25 71.5 106.25 71.5
+  110.25 71.5 109.25 68.5 109.25 68.5
+  smooth off
+endline
+
+line wall
+endline
+
+point 142.6783 50.1608 station -name Gm.1
+
+point 137.1283 76.2608 station -name Gm.3
+
+point 125.5083 79.3708 station -name Gm.4
+
+point 118.4683 75.3108 station -name Gm.5
+
+point 114.5883 76.3408 station -name Gm.7
+
+point 104.2983 77.7908 station -name Gm.8
+
+point 88.6283 93.4608 station -name Gm.9
+
+point 84.1083 116.6908 station -name Gm.10
+
+point 78.3183 118.8208 station -name Gm.11
+
+point 72.4883 119.3308 station -name Gm.12
+
+point 56.2683 125.24080000000001 station -name Gm.13
+
+point 55.3883 137.8708 station -name Gm.14
+
+point 48.8283 144.2108 station -name Gm15
+
+point 39.3683 153.0308 station -name Gm.16
+
+endscrap
+
+

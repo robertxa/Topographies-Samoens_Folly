@@ -134,9 +134,9 @@ map MP-bourguignons -title "Réseau des Bourguignons"
 	SP-bourguignonscollecteur
 endmap
      
-map MP-cataboyau -title "Galerie du Cataboyau"
-	SP-Cataboyau
-endmap
+#map MP-cataboyau -title "Galerie du Cataboyau"
+#	SP-Cataboyau
+#endmap
 
 map MP-mais -title "Galerie du Mais"
 	SP-Mais
@@ -154,9 +154,9 @@ map MP-anou2 -title "Réseau Anou 2"
 	SP-anou2bis
 endmap
 
-map MP-flash -title "Puits du Flash"
-	SP-flash
-endmap
+#map MP-flash -title "Puits du Flash"
+#	SP-flash
+#endmap
 
 map MP-jaunisse -title "Galerie de la Jaunisse"
 	SP-jaunisse
@@ -300,16 +300,20 @@ endmap
 
 map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	MP-bourguignons
+	#break
+	#MP-cataboyau
 	break
-	MP-cataboyau
+	MP-Feigne@Feigne.PierreQuiTombe
+	break
+	MP-V6@V6
 	break
 	MP-mais
 	break
 	MP-grandescalier
 	break
 	MP-anou2
-	break
-	MP-flash
+	#break
+	#MP-flash
 	break
 	MP-jaunisse
 	break

@@ -1,0 +1,93 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Feigne -title "Réseau de la Feigne (2007)"
+ 
+ centerline -extend left -title " Gk.0_Gk.1 Ia.17_Gk.15 : G. de la Feigne (2007)"
+  
+  # Galerie de la Feigne, Du sommet du puits vers la galerie du maïs en remontant
+  date 2007.03.07
+  #declination 0.  degrees 
+    team "Xavier Robert"
+    team "Estelle Forbach"
+    team "Stéphane Lips"
+ explo-date 2007.03.07 
+    explo-team "Xavier Robert"
+    explo-team "Estelle Forbach"
+    explo-team "Stéphane Lips"
+
+    units lenght meters
+    units compass degrees
+    units clino degrees
+    calibrate counter 0 0.500
+    units counter centimeters
+
+   data topofil from to fromcount tocount compass clino left right up down
+   Gk.0 Gk.1 26635.0 26992.0    272.       7.      0.4      0.4       10.       1.    
+   Gk.1 Gk.2 26992.0 27594.0    342.       36.       1.       4.       8.       1.5    
+   Gk.2 Gk.3 27594.0 28222.0    13.      -1.      0.5      0.5       2.       1.5    
+   Gk.3 Gk.4 28222.0 30081.0    349.       36.       1.       2.       1.5      0.5    
+   Gk.4 Gk.5 30081.0 30900.0    32.       12.       3.       1.       5.       1.5    
+   Gk.5 Gk.6 30900.0 31785.0    2.      -16.       1.       3.       20.       1.5    
+   Gk.6 Gk.7 31785.0 33386.0    278.       51.       1.       1.       15.       1.5    
+   Gk.7 Gk.8 33386.0 34760.0    305.       20.       2.       2.       15.       1.5    
+   Gk.8 Gk.9 34760.0 36048.0    9.       56.       1.       1.       14.       1.5    
+   Gk.9 Gk.10 36048.0 37396.0    11.       52.       3.       1.       13.       1.5    
+   Gk.10 Gk.11 37396.0 38030.0    38.       12.       1.       3.       16.       1.5    
+   Gk.11 Gk.12 38030.0 39110.0    104.      -2.       1.       1.       10.       1.5    
+   Gk.11 Gk.13 39110.0 42309.0    0.       90.       0.       4.       4.       16.    
+   Gk.13 Ia.17 42309.0 43181.0    287.      -16.       1.       1.       4.       1.5    
+   Ia.17 Gk.15 43181.0 44493.0    358.       30.       2.       2.       7.       1.5    
+ endcenterline
+  
+  
+ centerline -extend left -title " Gk.15_Gk.16 : G. de la Feigne (2007)"
+   # Galerie de la Feigne, Du sommet du puits vers la galerie du maïs en remontant
+  date 2007.03.07
+  #declination 0.  degrees 
+    team "Xavier Robert"
+    team "Estelle Forbach"
+    team "Stéphane Lips"
+ explo-date 2007.03.07 
+    explo-team "Xavier Robert"
+    explo-team "Estelle Forbach"
+    explo-team "Stéphane Lips"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   Gk.15 Gk.16    10.47000       139.       74.       1.       1.       1.       1.    
+ endcenterline
+  
+  
+ centerline -extend left -title " Fv.1_Gl.1 Gl.2_Gk.0 : G. de la Feigne (2007)"
+  # Galerie de la Feigne, Du sommet du puits vers la galerie du maïs en remontant
+  date 2007.07.11
+  #declination 0.  degrees 
+    team "Xavier Robert"
+    team "Cédric Chambe"
+    team "Gaëtan Poschmann"
+  explo-date 2007.07.11 
+    explo-team "Xavier Robert"
+    explo-team "Cédric Chambe"
+    explo-team "Gaëtan Poschmann"
+    
+   calibrate counter 0 0.500
+   units lenght meters
+   units compass degrees
+   units clino degrees
+  units counter centimeters
+   data topofil from to fromcount tocount compass clino left right up down
+   Fv.1 Gl.1 31151.0 32092.0    342.       35.       2.       1.       5.       1.2    
+   Gl.1 Gl.2 32092.0 33306.0    257.       81.       1.       2.       8.       2.    
+   Gl.2 Gk.0 33306.0 35430.0    262.       67.       3.       7.       8.       10.    
+ endcenterline
+ 
+endsurvey
+
+
+
