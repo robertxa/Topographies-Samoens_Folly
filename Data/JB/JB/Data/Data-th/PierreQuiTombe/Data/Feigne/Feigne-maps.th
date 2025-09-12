@@ -8,15 +8,11 @@ encoding  utf-8
 
 map MP-Feigne -title "Réseau de la Feigne"
 	SP-Feigne-1
-	#break
-	#SP-Feigne-2
 endmap
 
 ########## Coupe
 
-#map MC-Feigne -title "Réseau de la Feigne"
-#	SC-Feigne-1
-#	break
-#	SC-Feigne-2
-#endmap
+map MC-Feigne -title "Réseau de la Feigne"
+	SC-Feigne-1
+endmap
 

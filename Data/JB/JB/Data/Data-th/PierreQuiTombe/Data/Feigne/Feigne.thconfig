@@ -17,13 +17,13 @@ input ../../../../../../../../config.thc
   
 layout xviexport_plan
 	scale 1 500
-	grid-size 10 10 10 m
+	grid-size 5 5 5 m
 	grid bottom
 endlayout  
  
 layout xviexport_coupe
-   scale 1 1000
-   grid-size 10 10 10 m
+   scale 1 500
+   grid-size 5 5 5 m
    grid bottom
 endlayout
   
@@ -99,10 +99,10 @@ layout layout_coupe
 	cs UTM32
 	#base-scale 1 2000
 	base-scale 1 1400
-	##base-scale 1 1000
+	#base-scale 1 1000
 	##base-scale 1 300
 	scale 1 1400
-	##scale 1 1000
+	#scale 1 1000
 	#scale 1 400
 	scale-bar 100 m
 	#color map-bg 85 
@@ -157,7 +157,7 @@ endlayout
 
 # Export des fichiers xvi  
 	#export map -fmt xvi -layout xviexport_plan -o Data/Feigne-plan.xvi
-	#export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Feigne-coupe.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Feigne-coupe.xvi
 
 select MP-Feigne@Feigne
 select MC-Feigne@Feigne

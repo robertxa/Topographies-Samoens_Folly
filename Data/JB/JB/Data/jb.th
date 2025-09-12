@@ -199,7 +199,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     	join SP-P15 SP-berreur1@Erreur.V6
 		join SC-berreurc1@Erreur.V6 SC-maisc1
 	
-	# Cataboyau
+	# Cataboyau		# Plan et Coupe OK
 		equate Ia.17@Cataboyau.Cataboyau.V6	Ia.17@jb-amonts2
 		#join MP-Cataboyau@Cataboyau	?@?
 	
@@ -244,7 +244,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		equate 1@Stalactites.Stalactites.PierreQuiTombe Jb.3@jb-amonts2
 		join SP-Stalactites-1@Stalactites.PierreQuiTombe SP-quitombea
 	
-		# Galerie de la Feigne
+		# Galerie de la Feigne		# Plan OK, Coupe à dessiner
 		equate Ia.17@Feigne.Feigne.PierreQuiTombe Ia.17@jb-amonts2
 		equate Fv.1@Feigne.Feigne.PierreQuiTombe Fv.1@jb-amonts2
 	
@@ -258,6 +258,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	## V4 - Puits Alain
 		### Joins dessins Plan
 			join SP-pAlain SP-V4-2
+
+
+
+
+################# Structure OK  #######################	
 
 	# Réseau du Solitaire		# Plan et Coupe OK
 	input Data-th/Solitaire/solitaire-tot.th
@@ -281,25 +286,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SP-pAlain SP-solitaire_plan@Solitaire.Solitaire
 		### Joins dessins Coupe
 
-	##################################################################################################
-	######### DESSINS A MODIFIER a partir d'ici ##############     
-	### La rivière vers l'aval	###
-
-	#input Data-th/NonTriees/jb-riv.th
-		### Equates data
-			#equate  Jf.14@jb-amonts2  Jf.14@jb-riv
-    		#equate  Ke.43@jb-riv  Ke.43@jb-riv2
-			#equate  Ke.33@jb-riv  Ke.33@jb-riv2
-
-	#input Data-th/NonTriees/jb-riv2.th
-		### Equates data
-	#		equate  Fv.1@jb-amonts2  Fv.1@jb-riv2	# Feigne
-    		#equate  Ia.17@jb-amonts2  Ia.17@jb-riv2	# Cataboyau
-
-
-
-################# Structure OK  #######################	
-
 	input Data-th/RiviereAval/RiviereAval-tot.th		# Plan et Coupe OK
 
 	## L'arrivée à la cascade Jean Dupont
@@ -311,6 +297,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	
 	## Arrivée du puits des Pirates
 		equate Ka.30@Jean-Dupont.Jean-Dupont.Riviere1.RiviereAval	0c@Pirates.Pirates.Solitaire
+
+
 
 	##################################################################################################
 	##Add Maps definitions
