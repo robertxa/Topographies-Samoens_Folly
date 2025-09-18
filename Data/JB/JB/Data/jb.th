@@ -203,6 +203,11 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		equate Ia.17@Cataboyau.Cataboyau.V6	Ia.17@jb-amonts2
 		#join MP-Cataboyau@Cataboyau	?@?
 	
+	# V6bis
+		equate Ih.40@V6bis.V6bis.V6	Ih.40@jb-amonts2
+		join SC-V6bis-1@V6bis.V6 SC-V6c2
+		join SP-V6ter@V6bis.V6 SP-V6
+
 	# Mais et Erreur
 	input Drawing-th2/Plan/mais.th2
 		join SP-Mais SP-Mais-2010
@@ -221,11 +226,14 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			join SC-maisc1 SC-V6c1
 	
 	## Le V5
-	#input Data-th/V5/V5-tot.th
-	input Drawing-th2/Plan/V5.th2
+	input Data-th/V5/V5-tot.th
+		equate Ib.0@V5.V5 Ib.0@jb-amonts2	# Changer jb-amonts2 pour V6.V6
+	input Drawing-th2/Plan/V5.th2	# Changer pour V6
 		### Joins dessins Plan
-			join SP-V6 SP-V5
+			join SP-V6 SP-V6aval-1
 	
+
+
 	## Le V15		# Plan et Coupe OK
 	input Data-th/V15/V15-tot
 		equate 43@V15.V15 Ih.8@jb-amonts2 # jonction V15 à l'entrée du laminoir du V4, côté salle Delacour

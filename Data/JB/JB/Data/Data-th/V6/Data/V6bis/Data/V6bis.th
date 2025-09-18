@@ -1,0 +1,47 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey V6bis -title "JB, V6 ; 1991" -entrance "V6b"
+ 
+ centerline -extend right -title "V6bis - Ie V6b_Ie.1 Ie.10_Ie.11"
+
+   cs lat-long
+   fix V6b 46.10245 6.78135 1863
+   station V6b "V6b" entrance
+
+  date 1991.06.30
+    team "Patrice Plantier"
+    team "Bernard Lips"
+  explo-date 1991.06.30
+    explo-team "Patrice Plantier"
+    explo-team "Bernard Lips"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+
+   data normal from to length backcompass backclino right left up down
+
+   V6b Ie.1    4.28       265.       8.       0.3       0.3       0.3       0.3    # A partir entrée ; diam = 0.6 m
+   Ie.1 Ie.2    6.38       273.       6.       0.       0.       0.       0.    
+   Ie.2 Ie.3    6.58       223.       53.       0.       0.       0.       0.    # Descente en escalade
+   Ie.3 Ie.4    6.1       115.       32.       0.       0.       0.       0.    
+   Ie.4 Ie.5    5.44       85.       7.       0.       0.       0.       0.    
+   Ie.5 Ie.6    5.91       235.       26.       0.75       0.75       0.75       0.75    # Diam = 1.5 m
+   Ie.6 Ie.7    6.73       140.       57.       0.       0.       0.       0.    # Descente en escalade
+   Ie.7 Ie.8    5.06       102.      -12.       0.       0.       0.       0.    
+   Ie.8 Ih.40    5.35       75.       20.       0.75       0.75       0.75       0.75    # Diam = 1.5 ;  Jction
+   Ih.40 Ie.10    10.65       118.       28.       0.       0.       0.       0.    
+   Ie.10 Ie.11    3.59       70.       22.       0.       0.       0.       0.    # Départ vers V4 bis
+
+  # Dev = 66.07 m
+
+ endcenterline
+
+endsurvey
+
+
+

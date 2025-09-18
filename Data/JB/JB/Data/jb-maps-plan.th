@@ -172,16 +172,18 @@ map MP-soucoupe -title "Méandre de la Soucoupe"
 	SP-Soucoupe2
 endmap
 
-map MP-V5 -title "Méandre du V5"
-	SP-V5
-	break
-	SP-V5aval
-endmap
+#map MP-V5 -title "Méandre du V5"
+#	SP-V5@V5
+#endmap
 
 map MP-V6 -title "V6"
-	SP-V6ter
-	break
+	#SP-V6ter@V6bis.V6	# Nommenclature à revoir car appel directement par maps V6 supérieur
+	#break
 	SP-V6
+	break
+	SP-V6aval-1
+	break
+	SP-V5aval
 endmap
 
 map MP-V4 -title "V4"
@@ -321,7 +323,7 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MP-chatons
 	break
-	MP-V5
+	MP-V5@V5
 	break
 	MP-V6
 	break
@@ -555,7 +557,7 @@ map	MP-maisMIN
 	#SP-Mais-2010      	
 endmap
 map MP-V5MIN
-	SP-V5
+	SP-V5@V5
 	#break
 	#SP-V5aval
 endmap

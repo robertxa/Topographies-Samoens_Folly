@@ -3,6 +3,8 @@ A FAIRE sur la base de données topographiques de Samoëns
 - JB : Revoir indexation des dessins pour les intégrer dans les scraps alone et ne pas faire de doublons
 		Revoir l'indexation des Maps pour les mettre directement dans les scraps alone --> faciliter le travail
 	--> Travail en cours (Tout l'aval fait (JB-riv2.th), C37 fait jusqu'au Lavoir)
+	Tenter de simplifier la structure de la base de dessins (i.e. utiliser les dessins directement dans les scraps-alone ?)
+	--> En cours !
 
 - JB : Vérifier l'intégration du Lavoir, il y a visiblement un problème avec l'arrivée du B19 (2022-08-30, après découpage Lavoir, AspiroSouffle et AvalAiguilles)
 		--> Manque 1 scrap, et aussi 27331 - 27076 = 255 m de topo --> A voir si c'est parce qu'on a intégré la vieille topo du Lavoir ? Bizarre
@@ -11,13 +13,17 @@ A FAIRE sur la base de données topographiques de Samoëns
 		Debug Coupe développée, gros problème dans les amonts, beaucoup d'erreurs
 
 - JB : Faire les jonction du Cataboyau, plan et coupe, une fois que toute la zone a été découpée en petites parties
-		Faire les jonctions de la Feigne, plan et coupe
+		Faire les jonctions de la Feigne, plan et coupe ; Ajouter un extend ignore quelque part !
 
 - Corriger les altitudes des entrées avec le MNT IGN :
 		zones A-JB-V, A-A21, AV, B, BA, CH, CP (revoir pour Cartouche au cas par cas) D, DR, E, F, L, LP, PV, T --> OK total (data + cartouche)
 		zones C, LS --> A faire (Data + Cartouche)
 
 - Revoir toutes les visées à distance nulle ? Ca fait planter les xvi des coupes développées ?
+
+- Revoir le code pour intégration entrances_coordinates.th, ça plante à chaque fois depuis la mise à jour de Therion
+
+- Faire un layhout spécial kml dans le config.thc
 
 - Dans la zone DR/prospection, dessiner les sections
 
@@ -50,8 +56,5 @@ A FAIRE sur la base de données topographiques de Samoëns
 	* Coordonnées du C52 et L17 à re-trouver
 	* Coordonnées du CH23 à corriger
 	* Analyser les erreurs de bouclage dans le JB pour trouver où sont les erreurs
-
-- Tenter de simplifier la structure de la base de dessins (i.e. utiliser les dessins directement dans les scraps-alone ?)
-	--> En cours !
 
 		

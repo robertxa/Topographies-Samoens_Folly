@@ -4,11 +4,15 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-V5 -title "Gouffre V5"
-	SP-V5
-endmap
+survey V6 -title "Gouffre V6"
 
-map MC-V5 -title "Gouffre V5"
-	SC-V5
-endmap
-   
+    ## V6
+    input Data/V6.th
+
+    #input Data/V6.th2
+    #input Data/V6-coupe.th2
+    
+    # Add maps
+    #input V6-maps.th
+
+endsurvey

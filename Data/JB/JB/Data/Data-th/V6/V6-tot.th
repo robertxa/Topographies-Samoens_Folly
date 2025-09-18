@@ -23,6 +23,12 @@ survey V6 -title "Le V6"
 		#join SP-Erreur SP-berreur1@Erreur
     	#join SP-P15 SP-berreur1@Erreur
 		#join SC-berreurc1@Erreur SC-maisc1
+	
+	# le V6bis
+	input Data/V6bis/V6bis-tot.th
+		#equate Ih.40@V6bis.V6bis.V6	Ih.40@jb-amonts2
+		#join SP-V6ter@V6bis.V6 SP-V6
+		#join SC-V6bis-1@V6bis.V6 SC-V6c2				# METTRE LE V6b derriere le V6 pour la coupe !
 
     # Add maps
     input V6-maps.th

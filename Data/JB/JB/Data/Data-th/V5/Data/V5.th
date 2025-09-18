@@ -1,0 +1,92 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey V5 -title "JB, V5 ; 1974" -entrance "V5"
+  
+
+ centerline -extend right -title "V5 - Id V5_Id.1 Id.42_Ib.0"
+
+   cs lat-long
+   fix V5 46.10212 6.78202 1873
+   station V5 "V5" entrance
+
+  date 1974.08.13
+    team "Christian Rigaldie"
+    team "Pierre Cahingt"
+  explo-date 1974.08.10
+    explo-team "Bernard Lips"
+    explo-team "Pierre Cahingt"
+    explo-team "Daniel Colliard"
+  explo-date 1974.08.11
+    explo-team "Bernard Lips"
+    explo-team "Pierre Cahingt"
+    explo-team "Daniel Colliard"
+  explo-date 1974.08.15
+    explo-team "Christian Rigaldie"
+    explo-team "Pierre Cahingt"
+  explo-date 1974.08.14
+    explo-team "Christian Rigaldie"
+    explo-team "Michel Goujon"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+
+   V5 Id.1    3.6       132.       22.       0.       0.       0.       0.    # Entrée
+   Id.1 Id.2    7.2       93.      -15.       0.       0.       0.       0.   # Méandre 
+   Id.2 Id.3    5.3       0.      -90.       0.       0.       0.       0.    # Puits dans méandre
+   Id.3 Id.4   0.9       92.       0.       0.       0.       0.       0.    # Méandre 
+   Id.4 Id.5    8.8       129.      -30.       0.       0.       0.       0.    # Méandre 
+   Id.5 Id.6    2.3       146.       0.       0.       0.       0.       0.    # Méandre 
+   Id.6 Id.7    3.4       190.      -71.       0.       0.       0.       0.    # Méandre 
+   Id.7 Id.8    3.5       236.      -58.       0.       0.       0.       0.    # Méandre 
+   Id.8 Id.9    2.       210.      -20.       0.2       0.2       3.       3.    # Méandre  ; h = 3 m
+   Id.9 Id.10    9.1       225.       21.       0.2       0.2       3.       3.    # Méandre ; l = 40 cm
+   Id.10 Id.11    4.       0.      -90.       0.3       0.3       3.       3.    # Méandre ; l = 60 cm
+   Id.11 Id.12    4.2       196.      -28.       0.       0.       0.       0.    
+   Id.12 Id.13    2.2       275.      -21.       0.       0.       0.       0.4    # A 40 cm du sol
+   Id.13 Id.14    1.8       203.       0.       0.       0.       0.       0.    
+   Id.14 Id.15    4.6       230.       26.       0.       0.       0.       0.    
+   Id.15 Id.16    4.3       256.       20.       0       0      0.       0.    
+   Id.16 Id.17    2.1       138.       16.       0.5       0.5       0.       0.    # l = 1 m
+   Id.17 Id.18    2.       211.       20.       0.5       0.5       2.       6.    # l = 1 m ; h_cloche = 4 m
+   Id.18 Id.19    2.9       263.       20.       0.75       0.75       0.       0.    # l = 1.5 m
+   Id.19 Id.20    3.1       218.       38.       0.5       0.5       0.       0.    # l = 1 m
+   Id.20 Id.21    5.3       230.       8.       0.4       0.4       0.       0.3    # l = 0.8 m
+   Id.21 Id.22    2.5       233.      -8.       0.25       0.25       0.       0.    # l = 0.5 m
+   Id.22 Id.23    2.1       235.      -20.       0.5       0.5       0.       0.    # l = 1 m
+   Id.23 Id.24    5.5       250.      -20.       0.       0.       0.       0.    
+   Id.24 Id.25    2.6       235.      -58.       0.       0.       0.       0.    # Visée sur spit
+   Id.25 Id.26    7.       0.      -90.       0.       0.       0.       0.    # Visée sur spit
+   Id.26 Id.27    4.1       65.      -29.       0.       0.       0.       0.    # Spit
+   Id.27 Id.28    4.1       233.      -47.       0.       0.       0.       0.    
+   extend right
+   Id.28 Id.29    10.       0.      -90.       0.       0.       0.       0.    
+   Id.29 Id.30    7.       336.       0.       0.       0.       0.       0.    
+   Id.30 Id.31    6.5       0.      -90.       0.       0.       0.       0.    
+   Id.31 Id.32    5.6       353.      -15.       0.       0.       0.       0.    
+   Id.32 Id.33    4.4       51.      -43.       0.       0.       0.       0.    # méandre
+   Id.33 Id.34    2.2       40.      -33.       0.       0.       0.       0.    # méandre
+   Id.34 Id.35    11.3       0.      -90.       0.       0.       0.       0.    
+   Id.35 Id.36    5.9       13.       26.       0.       0.       0.       0.    # Salle
+   Id.36 Id.37    2.8       8.      -3.       0.       0.       0.       0.    
+   Id.37 Id.38    3.5       290.       15.       0.       0.       0.       0.    
+   Id.38 Id.39    13.3       0.      -90.       0.       0.       0.       0.    
+   Id.39 Id.40    4.3       325.      -11.       0.       0.       0.       0.    
+   Id.40 Id.41    3.2       334.      -36.       0.       0.       0.       0.    
+   Id.41 Id.42    2.7       0.      -90.       0.       0.       0.       0.    
+   Id.42 Ib.0    7.3       346.      -48.       0.       0.       0.       0.    
+
+  # Dév. : 200 m
+
+ endcenterline
+
+endsurvey
+
+
+

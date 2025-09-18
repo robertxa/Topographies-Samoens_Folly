@@ -93,9 +93,9 @@ map MC-jaunisse -title "Galerie de la Jaunisse"
 	SC-jaunissec7
 endmap
 
-map MC-V5 -title "Méandre du V5"
-	SC-V5c
-endmap
+#map MC-V5 -title "Méandre du V5"
+#	SC-V5c
+#endmap
 
 map MC-V6 -title "V6"
 	SC-V6c1
@@ -248,7 +248,7 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	break
 	MC-V15@V15 [-150 0] below
 	break
-	MC-V5 [0 100] below
+	MC-V5@V5 [0 100] below
 	break
 	MC-V4@V4
 	break
