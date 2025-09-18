@@ -27,8 +27,16 @@ survey V6 -title "Le V6"
 	# le V6bis
 	input Data/V6bis/V6bis-tot.th
 		#equate Ih.40@V6bis.V6bis.V6	Ih.40@jb-amonts2
-		#join SP-V6ter@V6bis.V6 SP-V6
+		#join SP-V6 SP-V6aval-2@V6bis.V6
 		#join SC-V6bis-1@V6bis.V6 SC-V6c2				# METTRE LE V6b derriere le V6 pour la coupe !
+	
+	# Le V6
+	input Data/V6/V6-tot.th
+		equate Ih.40@V6.V6 Ih.40@V6bis.V6bis
+		join SP-V6@V6 SP-V6aval-2@V6bis
+		#equate Ia.3@V6.V6.V6 Ia.3@jb-amonts2	# Jonction avec le maïs
+		#join SP-V6@V6.V6 SP-Mais
+		#join SC-V6-1@V6.V6 SC-MaisV6-1
 
     # Add maps
     input V6-maps.th

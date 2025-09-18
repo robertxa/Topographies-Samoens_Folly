@@ -185,6 +185,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 
 ###################
+	## Le V6
 	input Data-th/V6/V6-tot.th
 	# Galerie du Petit Dino		# Plan et Coupe OK
 		equate xa-2014a-1@jb-dino.dino.V6 Da.248@jb-amonts2
@@ -203,47 +204,56 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		equate Ia.17@Cataboyau.Cataboyau.V6	Ia.17@jb-amonts2
 		#join MP-Cataboyau@Cataboyau	?@?
 	
+	# Le V6
+		equate Ia.3@V6.V6.V6 Ia.3@jb-amonts2	# Jonction avec le maïs
+		join SP-V6@V6.V6 SP-Mais
+		join SC-V6-1@V6.V6 SC-MaisV6-1
+
+		equate Ih.34@V6.V6.V6 Ih.34@V4.V4.V4  # Jonction avec le V4
+		join SP-V6@V6.V6 SP-V4-3@V4.V4
+		join SC-V6-1@V6.V6 SC-V4-1@V4.V4
+
 	# V6bis
 		equate Ih.40@V6bis.V6bis.V6	Ih.40@jb-amonts2
-		join SC-V6bis-1@V6bis.V6 SC-V6c2
-		join SP-V6ter@V6bis.V6 SP-V6
+		#join SP-V6bis-1@V6bis.V6 SP-V6
 
 	# Mais et Erreur
 	input Drawing-th2/Plan/mais.th2
 		join SP-Mais SP-Mais-2010
-	
+
 ###################
+	## Le V5
+	input Data-th/V5/V5-tot.th
+		equate Ib.0@V5.V5 Ib.0@V6bis.V6bis.V6
+		### Joins dessins Plan
+			#join SP-V6 SP-V6aval-2@V6bis.V6	
 
-
-	## Le V4 et le V6	
+###################
+	## Le V4
 	input Drawing-th2/Plan/V4.th2
 		### Joins dessins Plan
-			join SP-V4-2 SP-quitombea
-			join SP-V6 SP-Mais
+			join SP-V4-2@V4.V4 SP-quitombea
+			#join SP-V6 SP-Mais
+			join SP-V6@V6.V6 SP-Mais
 	input Drawing-th2/Coupe/V4-coupe.th2
 		### Joins dessins Coupe
 			#join SC-V4c1 SC-dupontc3 	
-			join SC-maisc1 SC-V6c1
-	
-	## Le V5
-	input Data-th/V5/V5-tot.th
-		equate Ib.0@V5.V5 Ib.0@jb-amonts2	# Changer jb-amonts2 pour V6.V6
-	input Drawing-th2/Plan/V5.th2	# Changer pour V6
-		### Joins dessins Plan
-			join SP-V6 SP-V6aval-1
-	
-
-
+			join SC-maisc1 SC-MaisV6-1
+		
 	## Le V15		# Plan et Coupe OK
 	input Data-th/V15/V15-tot
 		equate 43@V15.V15 Ih.8@jb-amonts2 # jonction V15 à l'entrée du laminoir du V4, côté salle Delacour
-		join SP-V15-3@V15 SP-V4
+		join SP-V15-3@V15 SP-V4@V4.V4
 
-	# Réseau de l'Eté Indien		# Plan et Coupe OK
+	# Réseau de l'Eté Indien et V4		# Plan et Coupe OK
 	input Data-th/V4/V4-tot.th
-		equate 18@Ete-Indien.Ete-Indien.V4 Ih.14@jb-amonts2	# Carrefour V4/V4b
-		equate 14@Ete-Indien.Ete-Indien.V4 Ja.10@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
-		join SP-V4 SP-EteIndien-1@Ete-Indien.V4 -count 3	# Le V4 et l'Eté Indien
+		#Jonction avec les Savoyards ?
+		equate Ja.24@V4.V4.V4 Ja.24@jb-amonts2
+		join SP-V4-2@V4.V4 SP-SavoyardsSup-1
+		
+		#equate 18@Ete-Indien.Ete-Indien.V4 Ih.14@jb-amonts2	# Carrefour V4/V4b
+		#equate 14@Ete-Indien.Ete-Indien.V4 Ja.10@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
+		#join SP-V4 SP-EteIndien-1@Ete-Indien.V4 -count 3	# Le V4 et l'Eté Indien
 		##join SC-V4c4 SC-EteIndien-1@Ete-Indien.V4 -count 3	# Le V4 et l'Eté Indien
 	
 	## La Pierre Qui Tombe
@@ -265,7 +275,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 
 	## V4 - Puits Alain
 		### Joins dessins Plan
-			join SP-pAlain SP-V4-2
+			join SP-pAlain SP-V4-2@V4.V4
 
 
 
@@ -288,7 +298,7 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     		##extend ignore 2019-FD-9 Jd.24
 		### Joins dessins Plan
 			# Jointure dessins Puits des Savoyards, galerie Pixa
-			join SP-Pixa-1@Pixa.Solitaire SP-V4-2
+			join SP-Pixa-1@Pixa.Solitaire SP-V4-2@V4.V4
 			join SC-Pixa-1@Pixa.Solitaire SC-V4c1
 			# Jointure Puits Alain et Solitaire
 			join SP-pAlain SP-solitaire_plan@Solitaire.Solitaire
@@ -320,8 +330,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		station Ca.31@ChampsElysees.ChampsElysees.B22 "+78 m explorés et topographiés le 1979.11.02 par Pierre Rias et France Guillaume, mais topographie perdue" continuation explored 78m	# Aval Gadoue (station Ca.31, 78 m)
 		#station De.36@jb-amonts2 "+43 m explorés et topographiés le 1991.09.21 par Bernard Lips et Robert Sonney, mais topographie perdue" continuation explored 43m	# Courte-échelle (station De.36, 43 m)	# Topographié en 2025 par Xavier Robert
 	## Non Topographié
-		station Ib.23@jb-amonts2 "+20 m non topographiés (V6 ter)" continuation explored 20m	# Entrée du V6 ter
-		station Ib.23@jb-amonts2 "+80 m non topographiés (A14)" continuation explored 80m	# Entrée du A14
+		station Ib.23@V6.V6.V6 "+20 m non topographiés (V6 ter)" continuation explored 20m	# Entrée du V6 ter
+		station Ef.12@jb-amonts2 "+80 m non topographiés (A14)" continuation explored 80m	# Entrée du A14
 	endcenterline
     
 

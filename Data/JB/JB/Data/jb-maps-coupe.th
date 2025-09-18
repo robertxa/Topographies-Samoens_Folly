@@ -60,6 +60,8 @@ map MC-bourguignons -title "Réseau des Bourguignons"
 endmap
 
 map MC-mais -title "Galerie du Mais"
+	SC-MaisV6-1
+	break
 	SC-maisc1	# Erreur scrap, à retravailler
 	break
 	SC-maisc2
@@ -97,16 +99,16 @@ endmap
 #	SC-V5c
 #endmap
 
-map MC-V6 -title "V6"
-	SC-V6c1
-	break
-	SC-V6c2
-endmap
+#map MC-V6 -title "V6"
+#	SC-V6c1
+	#break
+	#SC-V6c2
+#endmap
 
 map MC-V4 -title "V4"
       SC-SavoySup-1
-      break
-      SC-V4c4
+      #break
+      #SC-V4c4
       break
       SC-V4c5
 endmap
@@ -237,12 +239,14 @@ map MC-V4-V6-Mais -title "V4 - V5 - V6"
 	MC-jaunisse
 	break
 	MC-chatons
-	
+	#break
+	#MC-V6
+
 	break
 	MC-V6@V6
-	
 	break
-	MC-V6
+	MC-V4@V4
+
 	break
 	MC-V4
 	break
@@ -351,8 +355,8 @@ map MC-Tr-V4-JD -title "V4b - Cascade Jean Dupont"
 #MC-V4 -title "V4"
 	#SC-SavoySup-1
 	#break
-	SC-V4c4
-	break
+	#SC-V4c4
+	#break
 	#SC-V4c5
 	#break
 

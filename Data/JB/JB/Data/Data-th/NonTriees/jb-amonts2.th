@@ -4,12 +4,8 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey jb-amonts2 -title "JB amonts du B19 au V4" #-entrance "B19" -entrance "B21" -entrance "V11" -entrance "J14" -entrance "V6" -entrance "V6b" -entrance "V4" -entrance "V4bis"
+survey jb-amonts2 -title "JB amonts du B19 au V4"
  
- # Il faut rajouter les coord du V6 et le V6ter
-
-  
-
 #  centerline -extend right -title "B21 Cc.0_Cc.1 Cc.51_B21"
 #  # De la base du P140 à l'entrée du B21
 
@@ -2819,7 +2815,30 @@ survey jb-amonts2 -title "JB amonts du B19 au V4" #-entrance "B19" -entrance "B2
   
   
 
- centerline -extend right -title "Galerie du Mais - Ia Ia.0_Ia.1 Ia.22_Da.269"
+#  centerline -extend right -title "Galerie du Mais - Ia Ia.0_Ia.1 Ia.22_Da.269"
+
+#    date 1976.02.06
+#    #declination 0.  degrees
+#     team " Jean-Pierre Stéphanato"
+#     team "Jacques Aubert"
+#   explo-date 1976.02.06
+#     explo-team " Jean-Pierre Stéphanato"
+#     explo-team "Jacques Aubert"
+
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+
+#    data normal from to length backcompass backclino right left up down
+# extend start Da.269
+#    Ia.0 Ia.1    10.2       237.       27.       0.       0.       0.       0.    
+#    Ia.1 Ia.2    7.9       263.      -36.       0.       0.       0.       0.    # Ressaut
+#    Ia.2 Ia.3    7.04       0.      -90.       0.       0.       0.       0.    # Puits
+   
+#   endcenterline
+   
+   
+   centerline -extend right -title "Galerie du Mais - Ia Ia.0_Ia.1 Ia.22_Da.269"
 
    date 1976.02.06
    #declination 0.  degrees
@@ -2835,9 +2854,6 @@ survey jb-amonts2 -title "JB amonts du B19 au V4" #-entrance "B19" -entrance "B2
 
    data normal from to length backcompass backclino right left up down
 extend start Da.269
-   Ia.0 Ia.1    10.2       237.       27.       0.       0.       0.       0.    
-   Ia.1 Ia.2    7.9       263.      -36.       0.       0.       0.       0.    # Ressaut
-   Ia.2 Ia.3    7.04       0.      -90.       0.       0.       0.       0.    # Puits
    Ia.3 Ia.4    8.79       255.      -22.       0.       0.       0.       0.    
    Ia.4 Ia.5    7.14       267.      -31.       0.       0.       0.       0.    
    Ia.5 Ia.6    5.78       280.      -5.       0.       0.       0.       0.    
@@ -2863,67 +2879,90 @@ extend start Da.269
 
  endcenterline
 
-  
-  
 
- centerline -extend right -title "V6 - Ib Ib.0_Ib.1 Ib.27_V6"
+#  centerline -extend right -title "V6 - Ib Ib.0_Ib.1 Ib.27_V6"
 
-   cs lat-long
-   fix V6 46.10273 6.78067 1853
-   station V6 "V6" entrance
+#   date 1975.11.10
+#     team "Jacques Aubert"
+#     team "Benoît/Le Falher"
+#     team "Bernard Séroul"
+#   explo-date 1975.11.10
+#     explo-team "Jacques Aubert"
+#     explo-team "Benoît/Le Falher"
+#     explo-team "Bernard Séroul"
+#   explo-date 1963.08.24
+#     explo-team "Pierre Rias"
+#     explo-team "Emile Cheilletz"
+#     explo-team "Claude Milly"
+#     explo-team "Jean-Paul Jaboulet"
+#     explo-team "Jacques Dill"
 
-  date 1975.11.10
-    team "Jacques Aubert"
-    team "Benoît/Le Falher"
-    team "Bernard Séroul"
-  explo-date 1975.11.10
-    explo-team "Jacques Aubert"
-    explo-team "Benoît/Le Falher"
-    explo-team "Bernard Séroul"
-  explo-date 1963.08.24
-    explo-team "Pierre Rias"
-    explo-team "Emile Cheilletz"
-    explo-team "Claude Milly"
-    explo-team "Jean-Paul Jaboulet"
-    explo-team "Jacques Dill"
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
+#    data normal from to length compass clino left right up down
 
-   data normal from to length compass clino left right up down
+#    Ib.0 Ib.1    6.83       347.      -1.       1.       1.       1.       3.    # méandre ; l = 2 à 2.5 m
+#    Ib.1 Ib.2    3.15       0.       26.       1.       1.       1.       3.    # prof méandre = 2 à 3 m
+#    Ib.2 Ib.3    10.38000       318.       49.       0.       0.       0.       0.    # Ressaut
+#    Ib.3 Ib.4    6.85       263.       0.       0.75       0.75       0.5       0.5    # Chatière ; h = 1 m ; l = 1.5 m
+#    Ib.4 Ib.5    6.57       325.       29.       1.       1.       1.8       0.2    # Petite CF ; Diam = 1.5 à 2 m
+#    Ib.5 Ib.6    7.73       307.       37.       0.       0.       0.       2.    # Vire sur méandre de 2 m de profondeur
+#    Ib.6 Ib.7    4.88       25.       26.       0.       0.       0.       3.    # Après une chatière au dessus d'un ressaut de 3 m, AZ = 285 à partir de la visée 7 au Carrefour
+#    Ib.7 Ib.8    4.65       30.       48.       0.       0.       0.       0.    # g. à droite qui s'arrète au bout de 15 m sur bouchon d'argile (Az = 105 m)
+#    Ib.8 Ib.9    6.37       328.       45.       0.75       0.75       3.       1.    # CF l = 1.5 m, h = 4 m
+#    Ib.9 Ib.10    3.63       52.       27.       0.       0.       0.       0.    
+#    Ib.10 Ib.11    9.23       325.       38.       0.       0.       0.       0.    # Marmite dans méandre de 1.5 à 2 m
+#    Ib.11 Ib.12    5.91       284.       22.       0.       0.       0.       0.    # Méandre ; blocs
+#    Ib.12 Ih.40    5.9       12.       39.       0.       0.       0.       0.    # Vire
+#     endcenterline
 
-   Ib.0 Ib.1    6.83       347.      -1.       1.       1.       1.       3.    # méandre ; l = 2 à 2.5 m
-   Ib.1 Ib.2    3.15       0.       26.       1.       1.       1.       3.    # prof méandre = 2 à 3 m
-   Ib.2 Ib.3    10.38000       318.       49.       0.       0.       0.       0.    # Ressaut
-   Ib.3 Ib.4    6.85       263.       0.       0.75       0.75       0.5       0.5    # Chatière ; h = 1 m ; l = 1.5 m
-   Ib.4 Ib.5    6.57       325.       29.       1.       1.       1.8       0.2    # Petite CF ; Diam = 1.5 à 2 m
-   Ib.5 Ib.6    7.73       307.       37.       0.       0.       0.       2.    # Vire sur méandre de 2 m de profondeur
-   Ib.6 Ib.7    4.88       25.       26.       0.       0.       0.       3.    # Après une chatière au dessus d'un ressaut de 3 m, AZ = 285 à partir de la visée 7 au Carrefour
-   Ib.7 Ib.8    4.65       30.       48.       0.       0.       0.       0.    # g. à droite qui s'arrète au bout de 15 m sur bouchon d'argile (Az = 105 m)
-   Ib.8 Ib.9    6.37       328.       45.       0.75       0.75       3.       1.    # CF l = 1.5 m, h = 4 m
-   Ib.9 Ib.10    3.63       52.       27.       0.       0.       0.       0.    
-   Ib.10 Ib.11    9.23       325.       38.       0.       0.       0.       0.    # Marmite dans méandre de 1.5 à 2 m
-   Ib.11 Ib.12    5.91       284.       22.       0.       0.       0.       0.    # Méandre ; blocs
-   Ib.12 Ih.40    5.9       12.       39.       0.       0.       0.       0.    # Vire
-   extend left
-   Ih.40 Ib.14    5.81       277.       4.       0.       0.       0.       0.    # Grande salle
-   Ib.14 Ib.15    1.74       42.      -66.       0.       0.       11.       1.    # h = 12 m
-   Ib.15 Ib.16    4.42       318.      -18.       0.       0.       0.       0.    # topo salle
-   Ib.16 Ib.17    5.1       320.       0.       0.       0.       0.       0.    # topo salle
-   Ib.16 Ib.18    10.57000       392.      -32.       0.       0.       0.       0.    # topo salle
-   Ib.18 Ia.2    14.01000       97.       22.       0.       0.       0.       0.    # topo salle
-   Ib.18 Ib.20    11.5       268.      -3.       0.       0.       0.       0.    
-   Ib.20 Ib.21    9.17       336.       38.       1.5       1.5       2.       1.    # CF ; diam = 3 m
-   Ib.21 Ib.22    7.43       260.      -3.       1.25       1.25       1.       1.    # CF ; h = 2 m ; l = 2.5 m
-   Ib.22 Ib.23    8.21       265.       0.       0.       0.       0.       0.    # méandre de sortie
-   Ib.22 Ib.24    6.5       326.       42.       0.       0.       0.       0.    
-   Ib.24 Ib.25    1.65       287.       2.       0.5       0.5       1.       2.    # méandre ; h = 3 m ; l = 1 m
-   Ib.25 Ib.26    3.81       2.       51.       0.       0.       0.       0.    
-   Ib.26 Ib.27    3.13       45.       40.       0.       0.       0.       0.    # Petite étroiture
-   Ib.27 V6    3.13       275.       15.       0.       0.       0.       0.    # Petite lucarne ; sortie V6
 
- endcenterline
+#  centerline -extend right -title "V6 - Ib Ib.0_Ib.1 Ib.27_V6"
+
+#    cs lat-long
+#    fix V6 46.10273 6.78067 1853
+#    station V6 "V6" entrance
+
+#   date 1975.11.10
+#     team "Jacques Aubert"
+#     team "Benoît/Le Falher"
+#     team "Bernard Séroul"
+#   explo-date 1975.11.10
+#     explo-team "Jacques Aubert"
+#     explo-team "Benoît/Le Falher"
+#     explo-team "Bernard Séroul"
+#   explo-date 1963.08.24
+#     explo-team "Pierre Rias"
+#     explo-team "Emile Cheilletz"
+#     explo-team "Claude Milly"
+#     explo-team "Jean-Paul Jaboulet"
+#     explo-team "Jacques Dill"
+
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
+
+#    data normal from to length compass clino left right up down
+#    extend left
+#    Ih.40 Ib.14    5.81       277.       4.       0.       0.       0.       0.    # Grande salle
+#    Ib.14 Ib.15    1.74       42.      -66.       0.       0.       11.       1.    # h = 12 m
+#    Ib.15 Ib.16    4.42       318.      -18.       0.       0.       0.       0.    # topo salle
+#    Ib.16 Ib.17    5.1       320.       0.       0.       0.       0.       0.    # topo salle
+#    Ib.16 Ib.18    10.57000       392.      -32.       0.       0.       0.       0.    # topo salle
+#    Ib.18 Ia.2    14.01000       97.       22.       0.       0.       0.       0.    # topo salle
+#    Ib.18 Ib.20    11.5       268.      -3.       0.       0.       0.       0.    
+#    Ib.20 Ib.21    9.17       336.       38.       1.5       1.5       2.       1.    # CF ; diam = 3 m
+#    Ib.21 Ib.22    7.43       260.      -3.       1.25       1.25       1.       1.    # CF ; h = 2 m ; l = 2.5 m
+#    Ib.22 Ib.23    8.21       265.       0.       0.       0.       0.       0.    # méandre de sortie
+#    Ib.22 Ib.24    6.5       326.       42.       0.       0.       0.       0.    
+#    Ib.24 Ib.25    1.65       287.       2.       0.5       0.5       1.       2.    # méandre ; h = 3 m ; l = 1 m
+#    Ib.25 Ib.26    3.81       2.       51.       0.       0.       0.       0.    
+#    Ib.26 Ib.27    3.13       45.       40.       0.       0.       0.       0.    # Petite étroiture
+#    Ib.27 V6    3.13       275.       15.       0.       0.       0.       0.    # Petite lucarne ; sortie V6
+
+#  endcenterline
 
   
 
@@ -3045,90 +3084,90 @@ extend start Da.269
   
   
 
- centerline -extend left -title "V6 - If Ib.0_If.1 If.34_Ib.3"
+#  centerline -extend left -title "V6 - If Ib.0_If.1 If.34_Ib.3"
 
-   date 1991.06.30
-    team "Patrice Plantier"
-    team "Bernard Lips"
-  explo-date 1991.06.30
-    explo-team "Patrice Plantier"
-    explo-team "Bernard Lips"
-  explo-date 1963.08.26
-    explo-team "Pierre Rias"
-    explo-team "Emile Cheilletz"
-    explo-team "Marcel Salort"
-    explo-team "Jean-Paul Jaboulet"
-    explo-team "Jacques Dill"
-  explo-date 1968.08.05
-    explo-team "Serge Aviotte"
-    explo-team "Stéphane Vallin"
-    explo-team "Jacques Lopez"
-  explo-date 1968.08.06
-    explo-team "Serge Aviotte"
-    explo-team "Jacques Lopez"
-    explo-team "Stéphane Vallin"
-  explo-date 1974.08.09
-    explo-team "Daniel Colliard"
-    explo-team "Christian Rigaldie"
-    explo-team "Pierre Cahingt"
-  explo-date 1974.08.13
-    explo-team "Daniel Colliard"
-    explo-team "Michel Goujon"
-  explo-date 1974.08.14
-    explo-team "Daniel Colliard"
-    explo-team "Jean-Pierre Stéphanato"
-    explo-team "Serge Conduché"
-  explo-date 1974.08.15
-    explo-team "Daniel Colliard"
-    explo-team "Bernard Lips"
-    explo-team "Jean-Pierre Stéphanato"
+#    date 1991.06.30
+#     team "Patrice Plantier"
+#     team "Bernard Lips"
+#   explo-date 1991.06.30
+#     explo-team "Patrice Plantier"
+#     explo-team "Bernard Lips"
+#   explo-date 1963.08.26
+#     explo-team "Pierre Rias"
+#     explo-team "Emile Cheilletz"
+#     explo-team "Marcel Salort"
+#     explo-team "Jean-Paul Jaboulet"
+#     explo-team "Jacques Dill"
+#   explo-date 1968.08.05
+#     explo-team "Serge Aviotte"
+#     explo-team "Stéphane Vallin"
+#     explo-team "Jacques Lopez"
+#   explo-date 1968.08.06
+#     explo-team "Serge Aviotte"
+#     explo-team "Jacques Lopez"
+#     explo-team "Stéphane Vallin"
+#   explo-date 1974.08.09
+#     explo-team "Daniel Colliard"
+#     explo-team "Christian Rigaldie"
+#     explo-team "Pierre Cahingt"
+#   explo-date 1974.08.13
+#     explo-team "Daniel Colliard"
+#     explo-team "Michel Goujon"
+#   explo-date 1974.08.14
+#     explo-team "Daniel Colliard"
+#     explo-team "Jean-Pierre Stéphanato"
+#     explo-team "Serge Conduché"
+#   explo-date 1974.08.15
+#     explo-team "Daniel Colliard"
+#     explo-team "Bernard Lips"
+#     explo-team "Jean-Pierre Stéphanato"
     
-   units lenght meters
-   units compass grad
-   units clino grad
+#    units lenght meters
+#    units compass grad
+#    units clino grad
 
-   data normal from to length backcompass backclino right left up down
+#    data normal from to length backcompass backclino right left up down
 
-   Ib.0 If.1    23.3       0.       100.       0.       0.       0.       0.    # A partir du spit du P30
-   If.1 If.2    7.13       0.       100.       0.       0.       0.       0.    
-   If.2 If.3    10.01000       355.       11.       0.       0.       0.       0.    
-   If.3 If.4    7.53       385.       30.       0.       0.       0.       0.    
-   If.4 If.5    7.6       383.      -35.       0.       0.       0.       0.    
-   If.5 If.6    3.92       345.       36.       0.       0.       0.       0.    
-   If.6 If.7    3.13       0.       100.       0.       0.       0.       0.    # R3 ; C8 ; AN
-   If.7 If.8    6.59       362.       18.       0.       0.       0.       0.    
-   If.8 If.9    11.4       393.       31.       0.       0.       0.       0.    
-   If.9 If.10    1.91       111.       9.       0.       0.       0.       0.    
-   If.10 If.11    2.81       0.       100.       0.       0.       0.       0.    # Désescalade, corde utile
-   If.11 If.12    3.08       200.       14.       0.       0.       0.       0.    # Sommet du puits
-   If.12 If.13    7.31       140.       74.       0.       0.       0.       0.    # Puits ; 1 spit + AN
-   If.13 If.14    3.47       18.       73.       0.       0.       0.       0.    # Puits
-   If.14 If.15    2.51       155.      -6.       0.       0.       0.       0.    # Vers l'amont
-   If.15 If.16    4.41       0.      -100.       0.       0.       0.       0.    
-   If.16 If.17    5.85       210.      -23.       0.       0.       0.       0.    
-   If.17 If.18    2.92       167.      -15.       0.       0.       0.       0.    # Méandre aval, à partir de l'etr. vers l'amont
-   If.19' If.19    3.63       259.      -12.       0.       0.       0.       0.    
-   If.19 If.20    4.12       238.      -84.       0.       0.       0.       0.    
-   If.20 If.21    2.51       180.      -25.       0.       0.       0.       0.    
-   If.21 If.22    2.27       132.      -64.       0.       0.       0.       0.    
-   If.22 If.23    2.24       130.      -47.       0.       0.       0.       0.    # Etr.
-   If.23 If.24    3.48       96.       0.       0.       0.       0.       0.    
-   If.24 If.25    4.38       142.      -28.       0.       0.       0.       0.    
-   If.25 If.26    3.5       220.      -47.       0.       0.       0.       0.    
-   If.26 If.27    3.7       280.      -21.       0.       0.       0.       0.    # Etr.
-   If.27 If.10    1.47       167.       11.       0.       0.       0.       0.    # Jction avec le point 16
-   extend right
-   If.29' If.29    4.92       300.       0.       0.       0.       0.       0.    # CF ; à partir du colmatage vers grande galerie en amont de la section plate
-   If.29 If.30    4.47       18.       38.       0.       0.       0.       0.    
-   If.30 If.31    8.18       82.       18.       0.       0.       0.       0.    
-   If.31 If.32    8.42       80.       16.       0.       0.       0.       0.    
-   If.32 If.33    5.64       134.       20.       0.       0.       0.       0.    
-   If.33 If.34    3.99       5.       44.       0.       0.       0.       0.    # Jction avec la galerie principale
-   If.34 Ib.3    0.       0.       100.       0.       0.       0.       0.    
+#    Ib.0 If.1    23.3       0.       100.       0.       0.       0.       0.    # A partir du spit du P30
+#    If.1 If.2    7.13       0.       100.       0.       0.       0.       0.    
+#    If.2 If.3    10.01000       355.       11.       0.       0.       0.       0.    
+#    If.3 If.4    7.53       385.       30.       0.       0.       0.       0.    
+#    If.4 If.5    7.6       383.      -35.       0.       0.       0.       0.    
+#    If.5 If.6    3.92       345.       36.       0.       0.       0.       0.    
+#    If.6 If.7    3.13       0.       100.       0.       0.       0.       0.    # R3 ; C8 ; AN
+#    If.7 If.8    6.59       362.       18.       0.       0.       0.       0.    
+#    If.8 If.9    11.4       393.       31.       0.       0.       0.       0.    
+#    If.9 If.10    1.91       111.       9.       0.       0.       0.       0.    
+#    If.10 If.11    2.81       0.       100.       0.       0.       0.       0.    # Désescalade, corde utile
+#    If.11 If.12    3.08       200.       14.       0.       0.       0.       0.    # Sommet du puits
+#    If.12 If.13    7.31       140.       74.       0.       0.       0.       0.    # Puits ; 1 spit + AN
+#    If.13 If.14    3.47       18.       73.       0.       0.       0.       0.    # Puits
+#    If.14 If.15    2.51       155.      -6.       0.       0.       0.       0.    # Vers l'amont
+#    If.15 If.16    4.41       0.      -100.       0.       0.       0.       0.    
+#    If.16 If.17    5.85       210.      -23.       0.       0.       0.       0.    
+#    If.17 If.18    2.92       167.      -15.       0.       0.       0.       0.    # Méandre aval, à partir de l'etr. vers l'amont
+#    If.19' If.19    3.63       259.      -12.       0.       0.       0.       0.    
+#    If.19 If.20    4.12       238.      -84.       0.       0.       0.       0.    
+#    If.20 If.21    2.51       180.      -25.       0.       0.       0.       0.    
+#    If.21 If.22    2.27       132.      -64.       0.       0.       0.       0.    
+#    If.22 If.23    2.24       130.      -47.       0.       0.       0.       0.    # Etr.
+#    If.23 If.24    3.48       96.       0.       0.       0.       0.       0.    
+#    If.24 If.25    4.38       142.      -28.       0.       0.       0.       0.    
+#    If.25 If.26    3.5       220.      -47.       0.       0.       0.       0.    
+#    If.26 If.27    3.7       280.      -21.       0.       0.       0.       0.    # Etr.
+#    If.27 If.10    1.47       167.       11.       0.       0.       0.       0.    # Jction avec le point 16
+#    extend right
+#    If.29' If.29    4.92       300.       0.       0.       0.       0.       0.    # CF ; à partir du colmatage vers grande galerie en amont de la section plate
+#    If.29 If.30    4.47       18.       38.       0.       0.       0.       0.    
+#    If.30 If.31    8.18       82.       18.       0.       0.       0.       0.    
+#    If.31 If.32    8.42       80.       16.       0.       0.       0.       0.    
+#    If.32 If.33    5.64       134.       20.       0.       0.       0.       0.    
+#    If.33 If.34    3.99       5.       44.       0.       0.       0.       0.    # Jction avec la galerie principale
+#    If.34 Ib.3    0.       0.       100.       0.       0.       0.       0.    
 
-  # Dev = 181.80 m
+#   # Dev = 181.80 m
 
- endcenterline
+#  endcenterline
  
  
   centerline -title "Depart G. Maïs Ia.15_Ia.15b Ij.3_Ij.6"
@@ -3157,62 +3196,62 @@ extend start Da.269
 
   
 
- centerline -extend right -title "V4bis vers Savoyards - Ja V4bis_Ja.1 Ja.23_Ja.24"
+#  centerline -extend right -title "V4bis vers Savoyards - Ja V4bis_Ja.1 Ja.23_Ja.24"
 
-  cs lat-long
-  fix V4bis 46.102383 6.780567 1843
-  station V4bis "V4bis" entrance
+#   cs lat-long
+#   fix V4bis 46.102383 6.780567 1843
+#   station V4bis "V4bis" entrance
 
-  # Vérifier la date de la topo !!!!
-  date 1975.08.01
-    team "Christian Rigaldie"
-    team "Jean-Charles Chouquet"
-  explo-date 1963.08.21
-    explo-team "Pierre Rias"
-    explo-team "Emile Cheilletz"
-  explo-date 1975.08.01
-    explo-team "Christian Rigaldie"
-    explo-team "Jean-Charles Chouquet"
+#   # Vérifier la date de la topo !!!!
+#   date 1975.08.01
+#     team "Christian Rigaldie"
+#     team "Jean-Charles Chouquet"
+#   explo-date 1963.08.21
+#     explo-team "Pierre Rias"
+#     explo-team "Emile Cheilletz"
+#   explo-date 1975.08.01
+#     explo-team "Christian Rigaldie"
+#     explo-team "Jean-Charles Chouquet"
 
-   units lenght meters
-   units compass degrees
-   units clino degrees
+#    units lenght meters
+#    units compass degrees
+#    units clino degrees
    
-   data normal from to length backcompass clino right left up down
+#    data normal from to length backcompass clino right left up down
 
-   V4bis Ja.1    11.37000       58.      -22.       0.       0.       0.       0.    
-   #Ja.1 Ja.2    9.6       340.      -34.       0.       0.       0.       0.    
-   #Ja.2 Ja.3    5.52       285.      -35.       0.       0.       0.       0.
-   # change Ja.2 to Ih.18 pour bouclage coupe
-   Ja.1 Ih.18    9.6       340.      -34.       0.       0.       0.       0.    
-   Ih.18 Ja.3    5.52       285.      -35.       0.       0.       0.       0.    
+#    V4bis Ja.1    11.37000       58.      -22.       0.       0.       0.       0.    
+#    #Ja.1 Ja.2    9.6       340.      -34.       0.       0.       0.       0.    
+#    #Ja.2 Ja.3    5.52       285.      -35.       0.       0.       0.       0.
+#    # change Ja.2 to Ih.18 pour bouclage coupe
+#    Ja.1 Ih.18    9.6       340.      -34.       0.       0.       0.       0.    
+#    Ih.18 Ja.3    5.52       285.      -35.       0.       0.       0.       0.    
    
-   Ja.3 Ja.4    6.31       355.      -45.       0.       0.       0.       0.    
-   extend left
-   Ja.4 Ja.5    8.12       55.      -13.       0.       0.       0.       0.    
-   Ja.5 Ja.6    5.66       40.      -10.       0.       0.       0.       0.    
-   Ja.6 Ja.7    7.15       8.      -36.       0.       0.       0.       0.    
-   Ja.7 Ja.8    5.71       288.      -18.       0.       0.       0.       0.    
-   Ja.8 Ja.9    6.15       22.      -42.       0.       0.       0.       0.    
-   Ja.9 Ja.10    15.72000       308.      -31.       0.       0.       0.       0.    
-   Ja.10 Ja.11    9.23       272.      -7.       0.       0.       0.       0.    
-   Ja.11 Ja.12    5.63       305.      -26.       0.       0.       0.       0.    
-   Ja.12 Ja.13    5.8       258.      -19.       0.       0.       0.       0.    
-   Ja.13 Ja.14    11.75000       330.      -39.       0.       0.       0.       0.    
-   Ja.14 Ja.15    10.9       255.      -5.       0.       0.       0.       0.    
-   Ja.15 Ja.16    20.04000       335.      -35.       0.       0.       0.       0.    
-   Ja.16 Ja.17    6.18       310.      -33.       0.       0.       0.       0.    
-   Ja.17 Ja.18    6.09       295.      -36.       0.       0.       0.       0.   
-   Ja.18 Ja.19    14.75000       344.      -32.       0.       0.       0.       0.    
-   Ja.19 Ja.20    13.4       328.      -34.       0.       0.       0.       0.    
-   Ja.20 Ja.21    12.07000       334.      -33.       0.       0.       0.       0.    
-   Ja.21 Ja.22    11.59000       305.      -30.       0.       0.       0.       0.    
-   Ja.22 Ja.23    8.65       322.      -37.       0.       0.       0.       0.    
-   Ja.23 Ja.24    8.14       315.      -24.       0.       0.       0.       0.    # Sommet puits des Savoyards
+#    Ja.3 Ja.4    6.31       355.      -45.       0.       0.       0.       0.    
+#    extend left
+#    Ja.4 Ja.5    8.12       55.      -13.       0.       0.       0.       0.    
+#    Ja.5 Ja.6    5.66       40.      -10.       0.       0.       0.       0.    
+#    Ja.6 Ja.7    7.15       8.      -36.       0.       0.       0.       0.    
+#    Ja.7 Ja.8    5.71       288.      -18.       0.       0.       0.       0.    
+#    Ja.8 Ja.9    6.15       22.      -42.       0.       0.       0.       0.    
+#    Ja.9 Ja.10    15.72000       308.      -31.       0.       0.       0.       0.    
+#    Ja.10 Ja.11    9.23       272.      -7.       0.       0.       0.       0.    
+#    Ja.11 Ja.12    5.63       305.      -26.       0.       0.       0.       0.    
+#    Ja.12 Ja.13    5.8       258.      -19.       0.       0.       0.       0.    
+#    Ja.13 Ja.14    11.75000       330.      -39.       0.       0.       0.       0.    
+#    Ja.14 Ja.15    10.9       255.      -5.       0.       0.       0.       0.    
+#    Ja.15 Ja.16    20.04000       335.      -35.       0.       0.       0.       0.    
+#    Ja.16 Ja.17    6.18       310.      -33.       0.       0.       0.       0.    
+#    Ja.17 Ja.18    6.09       295.      -36.       0.       0.       0.       0.   
+#    Ja.18 Ja.19    14.75000       344.      -32.       0.       0.       0.       0.    
+#    Ja.19 Ja.20    13.4       328.      -34.       0.       0.       0.       0.    
+#    Ja.20 Ja.21    12.07000       334.      -33.       0.       0.       0.       0.    
+#    Ja.21 Ja.22    11.59000       305.      -30.       0.       0.       0.       0.    
+#    Ja.22 Ja.23    8.65       322.      -37.       0.       0.       0.       0.    
+#    Ja.23 Ja.24    8.14       315.      -24.       0.       0.       0.       0.    # Sommet puits des Savoyards
 
-  # Dev = 225.53
+#   # Dev = 225.53
 
- endcenterline
+#  endcenterline
 
   
   
@@ -4137,88 +4176,114 @@ extend start Da.269
   
   
 
- centerline -extend right -title "V4 - V6 - Ih V4_Ih.1 Ih.39_Ih.40"
+#  centerline -extend right -title "V4 - V6 - Ih V4_Ih.1 Ih.39_Ih.40"
 
-   cs lat-long
-   fix V4 46.10222 6.77962 1836
-   station V4 "V4" entrance
-   #fix Ja.0 46.10238 6.78057 1843
-   #declination 0.  grad
+#    cs lat-long
+#    fix V4 46.10222 6.77962 1836
+#    station V4 "V4" entrance
+#    #fix Ja.0 46.10238 6.78057 1843
+#    #declination 0.  grad
 
-# Je ne suis pas sûr, mais cette partie de topo a du être refaite en 1991
-   date 1991.06.30
-    team "Bernard Lips"
-    team "Patrice Plantier"
-  explo-date 1963.08.21
-    explo-team "Pierre Rias"
-    explo-team "Emile Cheilletz"
-  explo-date 1968.08.06
-    explo-team "Pierre Rias"
-    explo-team "Jacques Lopez"
-    explo-team "Serge Aviotte"
+# # Je ne suis pas sûr, mais cette partie de topo a du être refaite en 1991
+#    date 1991.06.30
+#     team "Bernard Lips"
+#     team "Patrice Plantier"
+#   explo-date 1963.08.21
+#     explo-team "Pierre Rias"
+#     explo-team "Emile Cheilletz"
+#   explo-date 1968.08.06
+#     explo-team "Pierre Rias"
+#     explo-team "Jacques Lopez"
+#     explo-team "Serge Aviotte"
 
-   units lenght meters
-   units compass grad
-   units clino grad
-   units counter centimeters
-   calibrate counter 0 1.000
+#    units lenght meters
+#    units compass grad
+#    units clino grad
+#    units counter centimeters
+#    calibrate counter 0 1.000
 
-   data topofil from to fromcount tocount compass clino left right up down
+#    data topofil from to fromcount tocount compass clino left right up down
 
-   V4 V4double 0.0 0.0    0.       100.       0.       0.       0.       0.    
-   V4 Ih.1 23462.0 23777.0    121.       0.       0.       0.       0.       0.    
-   Ih.1 Ih.2 22362.0 23462.0    114.      -6.       0.       0.       0.       0.    
-   Ih.2 Ih.3 22056.0 22362.0    108.       12.       0.       0.       0.       0.    
-   Ih.3 Ih.4 21694.0 22056.0    8.       40.       0.       0.       0.       0.    
-   Ih.4 Ih.5 21149.0 21694.0    77.       28.       0.       0.       0.       0.    
-   Ih.5 Ih.6 20179.0 21149.0    98.       3.       0.       0.       0.       0.    
-   extend left
-   Ih.4 Ih.7 19532.0 20179.0    322.       0.       0.       0.       0.       0.    
-	extend right
-   Ih.3 Ih.8 18893.0 19532.0    142.      -19.       0.       0.       0.       0.    
-   Ih.8 Ih.9 18197.0 18893.0    105.       81.       0.       0.       0.       0.    
-   Ih.9 Ih.10 16748.0 18197.0    90.       6.       0.       0.       0.       0.    
-   Ih.10 Ih.11 16102.0 16748.0    81.       13.       0.       0.       0.       0.    
-   #extend left
-   Ih.11 Ih.12 15454.0 16102.0    29.       36.       0.       0.       0.       0.    
-   Ih.12 Ih.13 14506.0 15454.0    82.       12.       0.       0.       0.       0.    
-   #extend right
-   Ih.11 Ih.14 14166.0 14506.0    130.      -6.       0.       0.       0.       0.    
-   Ih.14 Ih.15 13224.0 14166.0    41.       14.       0.       0.       0.       0.    
-   Ih.15 Ih.16 12670.0 13224.0    64.       15.       0.       0.       0.       0.    
-   Ih.16 Ih.17 12156.0 12670.0    391.       42.       0.       0.       0.       0.    
-   Ih.17 Ih.18 11680.0 12156.0    82.       46.       0.       0.       0.       0.    
+#    V4 V4double 0.0 0.0    0.       100.       0.       0.       0.       0.    
+#    V4 Ih.1 23462.0 23777.0    121.       0.       0.       0.       0.       0.    
+#    Ih.1 Ih.2 22362.0 23462.0    114.      -6.       0.       0.       0.       0.    
+#    Ih.2 Ih.3 22056.0 22362.0    108.       12.       0.       0.       0.       0.    
+#    Ih.3 Ih.4 21694.0 22056.0    8.       40.       0.       0.       0.       0.    
+#    Ih.4 Ih.5 21149.0 21694.0    77.       28.       0.       0.       0.       0.    
+#    Ih.5 Ih.6 20179.0 21149.0    98.       3.       0.       0.       0.       0.    
+#    extend left
+#    Ih.4 Ih.7 19532.0 20179.0    322.       0.       0.       0.       0.       0.    
+# 	extend right
+#    Ih.3 Ih.8 18893.0 19532.0    142.      -19.       0.       0.       0.       0.    
+#    Ih.8 Ih.9 18197.0 18893.0    105.       81.       0.       0.       0.       0.    
+#    Ih.9 Ih.10 16748.0 18197.0    90.       6.       0.       0.       0.       0.    
+#    Ih.10 Ih.11 16102.0 16748.0    81.       13.       0.       0.       0.       0.    
+#    #extend left
+#    Ih.11 Ih.12 15454.0 16102.0    29.       36.       0.       0.       0.       0.    
+#    Ih.12 Ih.13 14506.0 15454.0    82.       12.       0.       0.       0.       0.    
+#    #extend right
+#    Ih.11 Ih.14 14166.0 14506.0    130.      -6.       0.       0.       0.       0.    
+#    Ih.14 Ih.15 13224.0 14166.0    41.       14.       0.       0.       0.       0.    
+#    Ih.15 Ih.16 12670.0 13224.0    64.       15.       0.       0.       0.       0.    
+#    Ih.16 Ih.17 12156.0 12670.0    391.       42.       0.       0.       0.       0.    
+#    Ih.17 Ih.18 11680.0 12156.0    82.       46.       0.       0.       0.       0.    
+
+#    Ih.18 Ih.19 10221.0 11680.0    346.       31.       0.       0.       0.       0.    
+#    Ih.19 Ih.20 9484.0 10221.0    340.       23.       0.       0.       0.       0.    
+#    extend left
+#    Ih.20 V4c 8861.0 9484.0    312.       10.       0.       0.       0.       0.    
+#    extend right
+#    Ih.19 Ja.0 7814.0 8861.0    58.       22.       0.       0.       0.       0.    
+#    extend left
+#    Ih.18 Ih.23 7066.0 7814.0    107.       0.       0.       0.       0.       0.    
+# 	extend right
+#    Ih.18 Ih.24 6451.0 7066.0    42.       13.       0.       0.       0.       0.    
+#    Ih.24 Ih.25 5096.0 6451.0    362.       40.       0.       0.       0.       0.    
+#    Ih.24 Ih.26 4423.0 5096.0    68.      -20.       0.       0.       0.       0.    
+#    Ih.26 Ih.27 3613.0 4423.0    54.       5.       0.       0.       0.       0.    
+#    Ih.27 Ih.28 2659.0 3613.0    53.       88.       0.       0.       0.       0.    
+#    Ih.28 Ih.29 2042.0 2659.0    61.       4.       0.       0.       0.       0.    
+#    Ih.29 Ih.30 1575.0 2042.0    75.       10.       0.       0.       0.       0.    
+#    Ih.30 Ih.31 892.0 1575.0    32.      -30.       0.       0.       0.       0.    
+#    Ih.31 Ih.32 528.0 892.0    0.       100.       0.       0.       0.       0.    
+#    Ih.32 Ih.33 334.0 528.0    95.       8.       0.       0.       0.       0.    
+#    Ih.33 Ih.34 99794.0 100334.    397.      -4.       0.       0.       0.       0.   
+#   endcenterline 
+
+
+#   centerline -extend right -title "V4 - V6 - Ih V4_Ih.1 Ih.39_Ih.40"
+
+# # Je ne suis pas sûr, mais cette partie de topo a du être refaite en 1991
+#    date 1991.06.30
+#     team "Bernard Lips"
+#     team "Patrice Plantier"
+#   explo-date 1963.08.21
+#     explo-team "Pierre Rias"
+#     explo-team "Emile Cheilletz"
+#   explo-date 1968.08.06
+#     explo-team "Pierre Rias"
+#     explo-team "Jacques Lopez"
+#     explo-team "Serge Aviotte"
+
+#    units lenght meters
+#    units compass grad
+#    units clino grad
+#    units counter centimeters
+#    calibrate counter 0 1.000
+
+#    data topofil from to fromcount tocount compass clino left right up down 
+#    # La salle du V6
+#    Ih.34 Ih.35 99364.0 99794.0    15.       0.       0.       0.       0.       0.    
+#    Ih.35 Ih.36 98776.0 99364.0    63.       8.       0.       0.       0.       0.    
+#    Ih.36 Ih.37 97740.0 98776.0    41.      -32.       0.       0.       0.       0.   
+#    Ih.37 Ia.2 96761.0 97740.0    100.       27.       0.       0.       0.       0.    
    
-   Ih.18 Ih.19 10221.0 11680.0    346.       31.       0.       0.       0.       0.    
-   Ih.19 Ih.20 9484.0 10221.0    340.       23.       0.       0.       0.       0.    
-   extend left
-   Ih.20 V4c 8861.0 9484.0    312.       10.       0.       0.       0.       0.    
-   extend right
-   Ih.19 Ja.0 7814.0 8861.0    58.       22.       0.       0.       0.       0.    
-   extend left
-   Ih.18 Ih.23 7066.0 7814.0    107.       0.       0.       0.       0.       0.    
-	extend right
-   Ih.18 Ih.24 6451.0 7066.0    42.       13.       0.       0.       0.       0.    
-   Ih.24 Ih.25 5096.0 6451.0    362.       40.       0.       0.       0.       0.    
-   Ih.24 Ih.26 4423.0 5096.0    68.      -20.       0.       0.       0.       0.    
-   Ih.26 Ih.27 3613.0 4423.0    54.       5.       0.       0.       0.       0.    
-   Ih.27 Ih.28 2659.0 3613.0    53.       88.       0.       0.       0.       0.    
-   Ih.28 Ih.29 2042.0 2659.0    61.       4.       0.       0.       0.       0.    
-   Ih.29 Ih.30 1575.0 2042.0    75.       10.       0.       0.       0.       0.    
-   Ih.30 Ih.31 892.0 1575.0    32.      -30.       0.       0.       0.       0.    
-   Ih.31 Ih.32 528.0 892.0    0.       100.       0.       0.       0.       0.    
-   Ih.32 Ih.33 334.0 528.0    95.       8.       0.       0.       0.       0.    
-   Ih.33 Ih.34 99794.0 100334.    397.      -4.       0.       0.       0.       0.    
-   Ih.34 Ih.35 99364.0 99794.0    15.       0.       0.       0.       0.       0.    
-   Ih.35 Ih.36 98776.0 99364.0    63.       8.       0.       0.       0.       0.    
-   Ih.36 Ih.37 97740.0 98776.0    41.      -32.       0.       0.       0.       0.   
-   Ih.37 Ia.2 96761.0 97740.0    100.       27.       0.       0.       0.       0.    
-   Ih.36 Ih.39 95929.0 96761.0    140.       20.       0.       0.       0.       0.    
-   Ih.39 Ih.40 95672.0 95929.0    97.       0.       0.       0.       0.       0.    
+#    Ih.36 Ih.39 95929.0 96761.0    140.       20.       0.       0.       0.       0.    
+#    Ih.39 Ih.40 95672.0 95929.0    97.       0.       0.       0.       0.       0.    
    
-  # Dev =  281.05 m
+#   # Dev =  281.05 m ; avec le reste de la session Ih ; Voir V4/V4bis
 
- endcenterline
+#  endcenterline
 
 endsurvey
 

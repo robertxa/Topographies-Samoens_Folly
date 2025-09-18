@@ -1,0 +1,144 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey V4 -title "JB, V4, V4bis, 1963"
+ 
+ centerline -extend right -title "V4bis vers Savoyards - Ja V4bis_Ja.1 Ja.23_Ja.24"
+
+  cs lat-long
+  fix V4bis 46.102383 6.780567 1843
+  station V4bis "V4bis" entrance
+
+  # Vérifier la date de la topo !!!!
+  date 1975.08.01
+    team "Christian Rigaldie"
+    team "Jean-Charles Chouquet"
+  explo-date 1963.08.21
+    explo-team "Pierre Rias"
+    explo-team "Emile Cheilletz"
+  explo-date 1975.08.01
+    explo-team "Christian Rigaldie"
+    explo-team "Jean-Charles Chouquet"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   
+   data normal from to length backcompass clino right left up down
+
+   V4bis Ja.1    11.37000       58.      -22.       0.       0.       0.       0.    
+   #Ja.1 Ja.2    9.6       340.      -34.       0.       0.       0.       0.    
+   #Ja.2 Ja.3    5.52       285.      -35.       0.       0.       0.       0.
+   # change Ja.2 to Ih.18 pour bouclage coupe
+   Ja.1 Ih.18    9.6       340.      -34.       0.       0.       0.       0.    
+   Ih.18 Ja.3    5.52       285.      -35.       0.       0.       0.       0.    
+   
+   Ja.3 Ja.4    6.31       355.      -45.       0.       0.       0.       0.    
+   extend left
+   Ja.4 Ja.5    8.12       55.      -13.       0.       0.       0.       0.    
+   Ja.5 Ja.6    5.66       40.      -10.       0.       0.       0.       0.    
+   Ja.6 Ja.7    7.15       8.      -36.       0.       0.       0.       0.    
+   Ja.7 Ja.8    5.71       288.      -18.       0.       0.       0.       0.    
+   Ja.8 Ja.9    6.15       22.      -42.       0.       0.       0.       0.    
+   Ja.9 Ja.10    15.72000       308.      -31.       0.       0.       0.       0.    
+   Ja.10 Ja.11    9.23       272.      -7.       0.       0.       0.       0.    
+   Ja.11 Ja.12    5.63       305.      -26.       0.       0.       0.       0.    
+   Ja.12 Ja.13    5.8       258.      -19.       0.       0.       0.       0.    
+   Ja.13 Ja.14    11.75000       330.      -39.       0.       0.       0.       0.    
+   Ja.14 Ja.15    10.9       255.      -5.       0.       0.       0.       0.    
+   Ja.15 Ja.16    20.04000       335.      -35.       0.       0.       0.       0.    
+   Ja.16 Ja.17    6.18       310.      -33.       0.       0.       0.       0.    
+   Ja.17 Ja.18    6.09       295.      -36.       0.       0.       0.       0.   
+   Ja.18 Ja.19    14.75000       344.      -32.       0.       0.       0.       0.    
+   Ja.19 Ja.20    13.4       328.      -34.       0.       0.       0.       0.    
+   Ja.20 Ja.21    12.07000       334.      -33.       0.       0.       0.       0.    
+   Ja.21 Ja.22    11.59000       305.      -30.       0.       0.       0.       0.    
+   Ja.22 Ja.23    8.65       322.      -37.       0.       0.       0.       0.    
+   Ja.23 Ja.24    8.14       315.      -24.       0.       0.       0.       0.    # Sommet puits des Savoyards
+
+  # Dev = 225.53
+
+ endcenterline
+
+
+ centerline -extend right -title "V4 - V6 - Ih V4_Ih.1 Ih.39_Ih.40"
+
+   cs lat-long
+   fix V4 46.10222 6.77962 1836
+   station V4 "V4" entrance
+   #fix Ja.0 46.10238 6.78057 1843
+   #declination 0.  grad
+
+# Je ne suis pas sûr, mais cette partie de topo a du être refaite en 1991
+   date 1991.06.30
+    team "Bernard Lips"
+    team "Patrice Plantier"
+  explo-date 1963.08.21
+    explo-team "Pierre Rias"
+    explo-team "Emile Cheilletz"
+  explo-date 1968.08.06
+    explo-team "Pierre Rias"
+    explo-team "Jacques Lopez"
+    explo-team "Serge Aviotte"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount compass clino left right up down
+
+   V4 V4double 0.0 0.0    0.       100.       0.       0.       0.       0.    
+   V4 Ih.1 23462.0 23777.0    121.       0.       0.       0.       0.       0.    
+   Ih.1 Ih.2 22362.0 23462.0    114.      -6.       0.       0.       0.       0.    
+   Ih.2 Ih.3 22056.0 22362.0    108.       12.       0.       0.       0.       0.    
+   Ih.3 Ih.4 21694.0 22056.0    8.       40.       0.       0.       0.       0.    
+   Ih.4 Ih.5 21149.0 21694.0    77.       28.       0.       0.       0.       0.    
+   Ih.5 Ih.6 20179.0 21149.0    98.       3.       0.       0.       0.       0.    
+   extend left
+   Ih.4 Ih.7 19532.0 20179.0    322.       0.       0.       0.       0.       0.    
+	extend right
+   Ih.3 Ih.8 18893.0 19532.0    142.      -19.       0.       0.       0.       0.    
+   Ih.8 Ih.9 18197.0 18893.0    105.       81.       0.       0.       0.       0.    
+   Ih.9 Ih.10 16748.0 18197.0    90.       6.       0.       0.       0.       0.    
+   Ih.10 Ih.11 16102.0 16748.0    81.       13.       0.       0.       0.       0.    
+   #extend left
+   Ih.11 Ih.12 15454.0 16102.0    29.       36.       0.       0.       0.       0.    
+   Ih.12 Ih.13 14506.0 15454.0    82.       12.       0.       0.       0.       0.    
+   #extend right
+   Ih.11 Ih.14 14166.0 14506.0    130.      -6.       0.       0.       0.       0.    
+   Ih.14 Ih.15 13224.0 14166.0    41.       14.       0.       0.       0.       0.    
+   Ih.15 Ih.16 12670.0 13224.0    64.       15.       0.       0.       0.       0.    
+   Ih.16 Ih.17 12156.0 12670.0    391.       42.       0.       0.       0.       0.    
+   Ih.17 Ih.18 11680.0 12156.0    82.       46.       0.       0.       0.       0.    
+
+   Ih.18 Ih.19 10221.0 11680.0    346.       31.       0.       0.       0.       0.    
+   Ih.19 Ih.20 9484.0 10221.0    340.       23.       0.       0.       0.       0.    
+   extend left
+   Ih.20 V4c 8861.0 9484.0    312.       10.       0.       0.       0.       0.    
+   extend right
+   Ih.19 Ja.0 7814.0 8861.0    58.       22.       0.       0.       0.       0.    
+   extend left
+   Ih.18 Ih.23 7066.0 7814.0    107.       0.       0.       0.       0.       0.    
+	extend right
+   Ih.18 Ih.24 6451.0 7066.0    42.       13.       0.       0.       0.       0.    
+   Ih.24 Ih.25 5096.0 6451.0    362.       40.       0.       0.       0.       0.    
+   Ih.24 Ih.26 4423.0 5096.0    68.      -20.       0.       0.       0.       0.    
+   Ih.26 Ih.27 3613.0 4423.0    54.       5.       0.       0.       0.       0.    
+   Ih.27 Ih.28 2659.0 3613.0    53.       88.       0.       0.       0.       0.    
+   Ih.28 Ih.29 2042.0 2659.0    61.       4.       0.       0.       0.       0.    
+   Ih.29 Ih.30 1575.0 2042.0    75.       10.       0.       0.       0.       0.    
+   Ih.30 Ih.31 892.0 1575.0    32.      -30.       0.       0.       0.       0.    
+   Ih.31 Ih.32 528.0 892.0    0.       100.       0.       0.       0.       0.    
+   Ih.32 Ih.33 334.0 528.0    95.       8.       0.       0.       0.       0.    
+   Ih.33 Ih.34 99794.0 100334.    397.      -4.       0.       0.       0.       0.   
+  endcenterline 
+
+endsurvey
+
+
+

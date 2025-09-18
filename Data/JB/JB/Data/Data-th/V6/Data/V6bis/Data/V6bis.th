@@ -41,6 +41,132 @@ survey V6bis -title "JB, V6 ; 1991" -entrance "V6b"
 
  endcenterline
 
+   centerline -extend right -title "V6 - Ib Ib.0_Ib.1 Ib.27_V6"
+
+  date 1975.11.10
+    team "Jacques Aubert"
+    team "Benoît/Le Falher"
+    team "Bernard Séroul"
+  explo-date 1975.11.10
+    explo-team "Jacques Aubert"
+    explo-team "Benoît/Le Falher"
+    explo-team "Bernard Séroul"
+  explo-date 1963.08.24
+    explo-team "Pierre Rias"
+    explo-team "Emile Cheilletz"
+    explo-team "Claude Milly"
+    explo-team "Jean-Paul Jaboulet"
+    explo-team "Jacques Dill"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+
+   Ib.0 Ib.1    6.83       347.      -1.       1.       1.       1.       3.    # méandre ; l = 2 à 2.5 m
+   Ib.1 Ib.2    3.15       0.       26.       1.       1.       1.       3.    # prof méandre = 2 à 3 m
+   Ib.2 Ib.3    10.38000       318.       49.       0.       0.       0.       0.    # Ressaut
+   Ib.3 Ib.4    6.85       263.       0.       0.75       0.75       0.5       0.5    # Chatière ; h = 1 m ; l = 1.5 m
+   Ib.4 Ib.5    6.57       325.       29.       1.       1.       1.8       0.2    # Petite CF ; Diam = 1.5 à 2 m
+   Ib.5 Ib.6    7.73       307.       37.       0.       0.       0.       2.    # Vire sur méandre de 2 m de profondeur
+   Ib.6 Ib.7    4.88       25.       26.       0.       0.       0.       3.    # Après une chatière au dessus d'un ressaut de 3 m, AZ = 285 à partir de la visée 7 au Carrefour
+   Ib.7 Ib.8    4.65       30.       48.       0.       0.       0.       0.    # g. à droite qui s'arrète au bout de 15 m sur bouchon d'argile (Az = 105 m)
+   Ib.8 Ib.9    6.37       328.       45.       0.75       0.75       3.       1.    # CF l = 1.5 m, h = 4 m
+   Ib.9 Ib.10    3.63       52.       27.       0.       0.       0.       0.    
+   Ib.10 Ib.11    9.23       325.       38.       0.       0.       0.       0.    # Marmite dans méandre de 1.5 à 2 m
+   Ib.11 Ib.12    5.91       284.       22.       0.       0.       0.       0.    # Méandre ; blocs
+   Ib.12 Ih.40    5.9       12.       39.       0.       0.       0.       0.    # Vire
+    endcenterline
+  
+ centerline -extend left -title "V6 - If Ib.0_If.1 If.34_Ib.3"
+
+   date 1991.06.30
+    team "Patrice Plantier"
+    team "Bernard Lips"
+  explo-date 1991.06.30
+    explo-team "Patrice Plantier"
+    explo-team "Bernard Lips"
+  explo-date 1963.08.26
+    explo-team "Pierre Rias"
+    explo-team "Emile Cheilletz"
+    explo-team "Marcel Salort"
+    explo-team "Jean-Paul Jaboulet"
+    explo-team "Jacques Dill"
+  explo-date 1968.08.05
+    explo-team "Serge Aviotte"
+    explo-team "Stéphane Vallin"
+    explo-team "Jacques Lopez"
+  explo-date 1968.08.06
+    explo-team "Serge Aviotte"
+    explo-team "Jacques Lopez"
+    explo-team "Stéphane Vallin"
+  explo-date 1974.08.09
+    explo-team "Daniel Colliard"
+    explo-team "Christian Rigaldie"
+    explo-team "Pierre Cahingt"
+  explo-date 1974.08.13
+    explo-team "Daniel Colliard"
+    explo-team "Michel Goujon"
+  explo-date 1974.08.14
+    explo-team "Daniel Colliard"
+    explo-team "Jean-Pierre Stéphanato"
+    explo-team "Serge Conduché"
+  explo-date 1974.08.15
+    explo-team "Daniel Colliard"
+    explo-team "Bernard Lips"
+    explo-team "Jean-Pierre Stéphanato"
+    
+   units lenght meters
+   units compass grad
+   units clino grad
+
+   data normal from to length backcompass backclino right left up down
+
+   Ib.0 If.1    23.3       0.       100.       0.       0.       0.       0.    # A partir du spit du P30
+   If.1 If.2    7.13       0.       100.       0.       0.       0.       0.    
+   If.2 If.3    10.01000       355.       11.       0.       0.       0.       0.    
+   If.3 If.4    7.53       385.       30.       0.       0.       0.       0.    
+   If.4 If.5    7.6       383.      -35.       0.       0.       0.       0.    
+   If.5 If.6    3.92       345.       36.       0.       0.       0.       0.    
+   If.6 If.7    3.13       0.       100.       0.       0.       0.       0.    # R3 ; C8 ; AN
+   If.7 If.8    6.59       362.       18.       0.       0.       0.       0.    
+   If.8 If.9    11.4       393.       31.       0.       0.       0.       0.    
+   If.9 If.10    1.91       111.       9.       0.       0.       0.       0.    
+   If.10 If.11    2.81       0.       100.       0.       0.       0.       0.    # Désescalade, corde utile
+   If.11 If.12    3.08       200.       14.       0.       0.       0.       0.    # Sommet du puits
+   If.12 If.13    7.31       140.       74.       0.       0.       0.       0.    # Puits ; 1 spit + AN
+   If.13 If.14    3.47       18.       73.       0.       0.       0.       0.    # Puits
+   If.14 If.15    2.51       155.      -6.       0.       0.       0.       0.    # Vers l'amont
+   If.15 If.16    4.41       0.      -100.       0.       0.       0.       0.    
+   If.16 If.17    5.85       210.      -23.       0.       0.       0.       0.    
+   If.17 If.18    2.92       167.      -15.       0.       0.       0.       0.    # Méandre aval, à partir de l'etr. vers l'amont
+   
+   If.19' If.19    3.63       259.      -12.       0.       0.       0.       0.    
+   If.19 If.20    4.12       238.      -84.       0.       0.       0.       0.    
+   If.20 If.21    2.51       180.      -25.       0.       0.       0.       0.    
+   If.21 If.22    2.27       132.      -64.       0.       0.       0.       0.    
+   If.22 If.23    2.24       130.      -47.       0.       0.       0.       0.    # Etr.
+   If.23 If.24    3.48       96.       0.       0.       0.       0.       0.    
+   If.24 If.25    4.38       142.      -28.       0.       0.       0.       0.    
+   If.25 If.26    3.5       220.      -47.       0.       0.       0.       0.    
+   If.26 If.27    3.7       280.      -21.       0.       0.       0.       0.    # Etr.
+   If.27 If.10    1.47       167.       11.       0.       0.       0.       0.    # Jction avec le point 16
+   
+   extend right
+   If.29' If.29    4.92       300.       0.       0.       0.       0.       0.    # CF ; à partir du colmatage vers grande galerie en amont de la section plate
+   If.29 If.30    4.47       18.       38.       0.       0.       0.       0.    
+   If.30 If.31    8.18       82.       18.       0.       0.       0.       0.    
+   If.31 If.32    8.42       80.       16.       0.       0.       0.       0.    
+   If.32 If.33    5.64       134.       20.       0.       0.       0.       0.    
+   If.33 If.34    3.99       5.       44.       0.       0.       0.       0.    # Jction avec la galerie principale
+   If.34 Ib.3    0.       0.       100.       0.       0.       0.       0.    
+
+  # Dev = 181.80 m
+
+ endcenterline
+
+
 endsurvey
 
 

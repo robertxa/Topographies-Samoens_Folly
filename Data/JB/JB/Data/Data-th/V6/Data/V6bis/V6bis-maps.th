@@ -5,10 +5,18 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-V6bis -title "Gouffre V6bis"
-	SP-V6ter
+	SP-V6bis-1
+	break
+	SP-V6aval-2
+	break
+	SP-V6aval-1
+	break
+	SP-V5aval
 endmap
 
 map MC-V6bis -title "Gouffre V6bis"
 	SC-V6bis-1
+	break
+	SC-V6bis-2
 endmap
    

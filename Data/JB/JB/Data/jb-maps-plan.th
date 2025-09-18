@@ -176,25 +176,27 @@ endmap
 #	SP-V5@V5
 #endmap
 
-map MP-V6 -title "V6"
+#map MP-V6 -title "V6"
 	#SP-V6ter@V6bis.V6	# Nommenclature à revoir car appel directement par maps V6 supérieur
 	#break
-	SP-V6
-	break
-	SP-V6aval-1
-	break
-	SP-V5aval
-endmap
+	#SP-V6
+	#break
+	#SP-V6aval-1
+	#break
+	#SP-V5aval
+#endmap
 
-map MP-V4 -title "V4"
-    SP-V4-3
-    break
-    SP-V4
-    break
-    SP-V4-2
-endmap
+#map MP-V4 -title "V4"
+#    SP-V4-3
+#    break
+#    SP-V4
+#    break
+#    SP-V4-2
+#endmap
 
 map MP-savoyards -title "Puits des Savoyards"
+	SP-SavoyardsSup-1
+	break
 	SP-savoyards
 endmap
 
@@ -324,12 +326,12 @@ map MP-V4-V6-Mais -title "V4 - V5 - V6"
 	MP-chatons
 	break
 	MP-V5@V5
-	break
-	MP-V6
+	#break
+	#MP-V6
 	break
 	MP-V15@V15 [-60 60] below
-	break
-	MP-V4
+	#break
+	#MP-V4
 	break
 	MP-V4@V4
 	break
@@ -444,8 +446,8 @@ map MP-rivieredebutSol -title "La rivière entre la Cascade Jean Dupont et -500 
 endmap
 
 map MP-SolitaireEV -title "Réseau du Solitaire"
-	MP-V4
-	break
+	#MP-V4
+	#break
 	MP-V4@V4
 	break
 	MP-savoyards
@@ -567,9 +569,9 @@ endmap
 #	SP-V6
 #endmap
 map MP-V4MIN
-	SP-V4-3
+	SP-V4-3@V4.V4
 	break
-	SP-V4
+	SP-V4@V4.V4
 	#break
 	#SP-V4-2
 endmap
@@ -656,7 +658,7 @@ map MP-Tr-B22-V6 -title "B22 - V6"
 		break
 		MP-V5MIN
 		break
-		MP-V6
+		MP-V6@V6
 		break
 		MP-V4MIN
 		#break
@@ -665,9 +667,9 @@ map MP-Tr-B22-V6 -title "B22 - V6"
 		#MP-quitombe
 endmap
 map MP-Tr-V4-JD -title "V4b - Cascade Jean Dupont"
-		MP-V6
+		MP-V6@V6
 	break
-		MP-V4
+		MP-V4@V4
 	break
 		MP-savoyards
 	break

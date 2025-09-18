@@ -1,0 +1,127 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey V6 -title "JB, V6 ; 1975, 1976, 1991"
+ 
+ # Il faut rajouter les coords du V6ter  
+  
+
+ centerline -extend right -title "Galerie du Mais - Ia Ia.0_Ia.1 Ia.22_Da.269"
+
+   date 1976.02.06
+   #declination 0.  degrees
+    team " Jean-Pierre Stéphanato"
+    team "Jacques Aubert"
+  explo-date 1976.02.06
+    explo-team " Jean-Pierre Stéphanato"
+    explo-team "Jacques Aubert"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length backcompass backclino right left up down
+#extend start Da.269
+# Salle du V6 et départ vers le Maïs
+  extend right
+   Ia.0 Ia.1    10.2       237.       27.       0.       0.       0.       0.    
+   Ia.1 Ia.2    7.9       263.      -36.       0.       0.       0.       0.    # Ressaut
+   Ia.2 Ia.3    7.04       0.      -90.       0.       0.       0.       0.    # Puits
+   
+  endcenterline
+
+
+ centerline -extend right -title "V6 - Ib Ib.0_Ib.1 Ib.27_V6"
+
+   cs lat-long
+   fix V6 46.10273 6.78067 1853
+   station V6 "V6" entrance
+
+   cs epsg:2154
+   fix V6ter 991930.17 6562854.95 1849
+   station V6ter "V6ter" entrance
+
+  date 1975.11.10
+    team "Jacques Aubert"
+    team "Benoît/Le Falher"
+    team "Bernard Séroul"
+  explo-date 1975.11.10
+    explo-team "Jacques Aubert"
+    explo-team "Benoît/Le Falher"
+    explo-team "Bernard Séroul"
+  explo-date 1963.08.24
+    explo-team "Pierre Rias"
+    explo-team "Emile Cheilletz"
+    explo-team "Claude Milly"
+    explo-team "Jean-Paul Jaboulet"
+    explo-team "Jacques Dill"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+
+   data normal from to length compass clino left right up down
+   extend left
+   Ih.40 Ib.14    5.81       277.       4.       0.       0.       0.       0.    # Grande salle
+   Ib.14 Ib.15    1.74       42.      -66.       0.       0.       11.       1.    # h = 12 m
+   Ib.15 Ib.16    4.42       318.      -18.       0.       0.       0.       0.    # topo salle
+   Ib.16 Ib.17    5.1       320.       0.       0.       0.       0.       0.    # topo salle
+   Ib.16 Ib.18    10.57000       392.      -32.       0.       0.       0.       0.    # topo salle
+   Ib.18 Ia.2    14.01000       97.       22.       0.       0.       0.       0.    # topo salle
+   
+   extend left
+   Ib.18 Ib.20    11.5       268.      -3.       0.       0.       0.       0.    
+   Ib.20 Ib.21    9.17       336.       38.       1.5       1.5       2.       1.    # CF ; diam = 3 m
+   Ib.21 Ib.22    7.43       260.      -3.       1.25       1.25       1.       1.    # CF ; h = 2 m ; l = 2.5 m
+   Ib.22 Ib.23    8.21       265.       0.       0.       0.       0.       0.    # méandre de sortie
+   Ib.22 Ib.24    6.5       326.       42.       0.       0.       0.       0.    
+   Ib.24 Ib.25    1.65       287.       2.       0.5       0.5       1.       2.    # méandre ; h = 3 m ; l = 1 m
+   Ib.25 Ib.26    3.81       2.       51.       0.       0.       0.       0.    
+   Ib.26 Ib.27    3.13       45.       40.       0.       0.       0.       0.    # Petite étroiture
+   Ib.27 V6    3.13       275.       15.       0.       0.       0.       0.    # Petite lucarne ; sortie V6
+
+ endcenterline
+
+
+  centerline -extend right -title "V4 - V6 - Ih V4_Ih.1 Ih.39_Ih.40"
+
+# Je ne suis pas sûr, mais cette partie de topo a du être refaite en 1991
+   date 1991.06.30
+    team "Bernard Lips"
+    team "Patrice Plantier"
+  explo-date 1963.08.21
+    explo-team "Pierre Rias"
+    explo-team "Emile Cheilletz"
+  explo-date 1968.08.06
+    explo-team "Pierre Rias"
+    explo-team "Jacques Lopez"
+    explo-team "Serge Aviotte"
+
+   units lenght meters
+   units compass grad
+   units clino grad
+   units counter centimeters
+   calibrate counter 0 1.000
+
+   data topofil from to fromcount tocount compass clino left right up down 
+   # La salle du V6
+   extend right
+   Ih.34 Ih.35 99364.0 99794.0    15.       0.       0.       0.       0.       0.    
+   Ih.35 Ih.36 98776.0 99364.0    63.       8.       0.       0.       0.       0.    
+   Ih.36 Ih.37 97740.0 98776.0    41.      -32.       0.       0.       0.       0.   
+   Ih.37 Ia.2 96761.0 97740.0    100.       27.       0.       0.       0.       0.    
+   
+   Ih.36 Ih.39 95929.0 96761.0    140.       20.       0.       0.       0.       0.    
+   Ih.39 Ih.40 95672.0 95929.0    97.       0.       0.       0.       0.       0.    
+   
+  # Dev =  281.05 m ; avec le reste de la session Ih ; Voir V4/V4bis
+
+ endcenterline
+
+endsurvey
+
+
+
