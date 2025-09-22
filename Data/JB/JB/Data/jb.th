@@ -232,7 +232,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 	## Le V4
 	input Drawing-th2/Plan/V4.th2
 		### Joins dessins Plan
-			join SP-V4-2@V4.V4 SP-quitombea
+			#join SP-V4-2@V4.V4 SP-quitombea
+			join SP-SavoyardsSup-1 SP-quitombea
 			#join SP-V6 SP-Mais
 			join SP-V6@V6.V6 SP-Mais
 	input Drawing-th2/Coupe/V4-coupe.th2
@@ -250,11 +251,6 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 		#Jonction avec les Savoyards ?
 		equate Ja.24@V4.V4.V4 Ja.24@jb-amonts2
 		join SP-V4-2@V4.V4 SP-SavoyardsSup-1
-		
-		#equate 18@Ete-Indien.Ete-Indien.V4 Ih.14@jb-amonts2	# Carrefour V4/V4b
-		#equate 14@Ete-Indien.Ete-Indien.V4 Ja.10@jb-amonts2	# Vers Puits des Savoyards (ou Ja.7?)
-		#join SP-V4 SP-EteIndien-1@Ete-Indien.V4 -count 3	# Le V4 et l'Eté Indien
-		##join SC-V4c4 SC-EteIndien-1@Ete-Indien.V4 -count 3	# Le V4 et l'Eté Indien
 	
 	## La Pierre Qui Tombe
 	input Data-th/PierreQuiTombe/PierreQuiTombe-tot
@@ -298,7 +294,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
     		##extend ignore 2019-FD-9 Jd.24
 		### Joins dessins Plan
 			# Jointure dessins Puits des Savoyards, galerie Pixa
-			join SP-Pixa-1@Pixa.Solitaire SP-V4-2@V4.V4
+			#join SP-Pixa-1@Pixa.Solitaire SP-V4-2@V4.V4
+			join SP-Pixa-1@Pixa.Solitaire SP-SavoyardsSup-1
 			join SC-Pixa-1@Pixa.Solitaire SC-V4c1
 			# Jointure Puits Alain et Solitaire
 			join SP-pAlain SP-solitaire_plan@Solitaire.Solitaire

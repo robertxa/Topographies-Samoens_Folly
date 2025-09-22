@@ -1483,6 +1483,7 @@ encoding  utf-8
 
 
 
+
 scrap SP-SavoyardsSup-1 -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
 
 point 7386.0 4771.0 traverse
@@ -1503,9 +1504,19 @@ point 7431.14 4691.59 station -name Jd.11@jb-amonts2
 
 point 7444.75 4678.44 station -name Jd.12@jb-amonts2
 
+line wall -subtype invisible
+  7378.75 4747.0
+  7391.0 4724.0
+endline
+
+line wall -reverse on
+  7378.75 4747.0
+  7377.0 4749.75
+endline
+
 line wall
-  7378.0 4739.5
-  7378.0 4739.5 7389.75 4723.5 7396.75 4720.5
+  7391.0 4724.0
+  7391.0 4724.0 7389.75 4723.5 7396.75 4720.5
   7403.75 4717.5 7409.25 4722.0 7411.25 4717.0
   7413.25 4712.0 7418.5 4706.5 7420.0 4703.25
   7421.5 4700.0 7424.75 4694.75 7425.5 4699.25
@@ -1523,6 +1534,7 @@ line wall
   7419.5 4765.0
   7419.5 4765.0 7412.25 4760.0 7406.75 4758.75
   7401.25 4757.5 7393.0 4760.25 7389.25 4759.75
+  smooth off
 endline
 
 line wall
@@ -1571,6 +1583,7 @@ line pit
   7426.75 4737.5
   7426.75 4737.5 7413.25 4742.5 7409.75 4747.0
   7406.25 4751.5 7403.5 4759.75 7400.5 4762.0
+  smooth off
 endline
 
 line rock-border -close on

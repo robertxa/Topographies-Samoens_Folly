@@ -701,7 +701,12 @@ point 7361.29 4774.3 station -name Ja.23
 
 point 7373.5 4774.5 rope
 
-point 7381.99 4753.6 station -name Ja.23
+line wall
+  7356.25 4771.75
+  7356.25 4771.75 7372.25 4747.25 7374.75 4744.75
+endline
+
+point 7381.99 4753.6 station -name Ja.24
 
 point 7295.5 4761.25 label -text "<center>puits des<br>Savoyards"
 
@@ -979,7 +984,7 @@ endline
 
 line wall
   7374.75 4744.75
-  7377.75 4740.0 7378.0 4739.5 7378.0 4739.5
+  7377.75 4740.0 7376.25 4742.25 7376.25 4742.25
   smooth off
 endline
 
@@ -1000,4 +1005,5 @@ line wall
 endline
 
 endscrap
+
 
