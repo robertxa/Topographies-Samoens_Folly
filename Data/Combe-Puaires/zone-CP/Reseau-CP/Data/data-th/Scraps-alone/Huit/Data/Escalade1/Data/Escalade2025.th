@@ -14,8 +14,9 @@ survey Escalade2025 -title "Escalade 2025"
     units length meters
     units compass clino degrees
     data normal from to length compass clino
-    extend left
+    extend right
     1 0 3.59 342.1 30.9 # sommet escalade
+    extend left
     1 2 6.25 117.6 -60.3
     extend right
     2 3 4.14 77.8 -55.4

@@ -152,10 +152,14 @@ endmap
 
 map MC-huit -title "galerie du Huit"
 	SC-huit-3 #@ReseauCP
-	break
-	SC-huit-2@Huit.Huit #@ReseauCP
-	break
-	SC-huit-1@Huit.Huit #@ReseauCP
+	#break
+	#SC-huit-2@Huit.Huit #@ReseauCP
+	#break
+	#SC-huit-1@Huit.Huit #@ReseauCP
+	#break
+	#SC-Huit2025-1@Huit.Huit
+	#break
+	#SC-Huit2025-2@Huit.Huit
 endmap
 
 #####################################################################
@@ -195,6 +199,10 @@ map MC-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	MC-espoir
 	break
 	MC-huit
+	break
+	MC-Huit@Huit
+	break
+	MC-Escalade1@Escalade1.Huit
 	break
 	MC-sirocco
 	break

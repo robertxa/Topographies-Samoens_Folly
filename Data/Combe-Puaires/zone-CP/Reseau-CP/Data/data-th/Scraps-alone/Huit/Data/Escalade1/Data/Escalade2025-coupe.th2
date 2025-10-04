@@ -1,0 +1,108 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -118.85900000000001 -128.0 412.7317 482.3309
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {102.99599999999998 1 1.0} {314.962 1} Escalade1-coupe.xvi 0 {}
+
+
+
+scrap SC-Escalade1-1 -projection extended -station-names "" "@Escalade2025" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-118.85900000000001 -128.0 412.7317 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+
+point 149.0 340.5 narrow-end
+
+line rope
+  109.5 325.5
+  96.0 317.75
+  77.75 276.75
+  86.25 249.0
+  85.5 134.25
+endline
+
+point 43.5 303.75 height -value [+25 m]
+
+line wall
+  137.5 334.5
+  137.5 334.5 130.5 331.5 124.25 330.0
+  118.0 328.5 105.25 326.75 98.75 321.75
+  92.25 316.75 75.75 310.25 74.75 300.25
+  73.75 290.25 74.25 278.5 74.0 266.5
+endline
+
+line wall -subtype invisible
+  64.0 270.0
+  64.0 270.0 58.5 248.0 61.75 241.0
+endline
+
+line wall
+  61.75 241.0
+  61.75 241.0 69.75 250.0 73.25 250.0
+endline
+
+line wall
+  74.0 266.5
+  74.0 266.5 66.75 269.0 64.0 270.0
+endline
+
+line wall
+  73.25 250.0
+  73.0 238.0 71.5 212.5 71.5 205.5
+  71.5 198.5 67.75 191.0 67.75 191.0
+  smooth off
+endline
+
+line wall
+  88.5 139.0
+  88.5 139.0 90.5 175.0 91.5 183.5
+  92.5 192.0 97.0 197.0 99.0 208.5
+  101.0 220.0 102.5 227.0 102.5 236.5
+  102.5 246.0 98.0 260.5 99.0 270.5
+  100.0 280.5 105.0 289.0 106.0 296.0
+  107.0 303.0 103.0 311.5 109.5 315.0
+  116.0 318.5 138.5 332.5 138.5 332.5
+  smooth off
+  altitude .
+endline
+
+point 67.076 130.86199999999997 station -name 4
+
+point 97.12599999999999 245.35199999999998 station -name 3
+
+point 78.61599999999999 272.202 station -name 2
+
+point 102.99599999999998 314.962 station -name 1
+
+point 127.24599999999998 329.452 station -name 0
+
+endscrap
+
+
+
+scrap SC-Escalade1-2 -projection extended -station-names "" "@Escalade2025" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-118.85900000000001 -128.0 412.7317 -128.0 0.0 0.0 13.502403779999998 0.0 m]
+
+line wall
+  236.0 150.25
+  236.0 150.25 215.5 160.75 215.0 167.75
+  214.5 174.75 207.5 190.0 207.5 196.0
+  207.5 202.0 207.0 207.75 207.0 207.75
+  smooth off
+endline
+
+point 165.0 168.5 height -value [+15? m]
+
+point 199.0 218.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Galerie du Huit" -text "Escalade à faire, mini 15 m"
+
+line wall
+  191.75 206.0
+  191.75 206.0 190.75 177.25 192.25 168.5
+  193.75 159.75 199.5 148.0 207.5 136.5
+  215.5 125.0 216.5 122.25 218.75 114.25
+  221.0 106.25 223.0 93.0 223.0 93.0
+  smooth off
+endline
+
+point 252.71599999999998 83.93199999999997 station -name 7
+
+point 205.71599999999998 167.01199999999997 station -name 8
+
+endscrap
+
+

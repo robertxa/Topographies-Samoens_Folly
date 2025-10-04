@@ -12,7 +12,11 @@ map MP-Huit -title "Galerie du Huit"
 	MP-Fakir@Fakir
 endmap
 
- map MC-Huit -title "Galerie du Huit"
+map MC-Huit -title "Galerie du Huit"
  	MC-Huit@Huit
- endmap
+	break
+	MC-Fakir@Fakir
+	break
+	MC-Escalade1@Escalade1
+endmap
    

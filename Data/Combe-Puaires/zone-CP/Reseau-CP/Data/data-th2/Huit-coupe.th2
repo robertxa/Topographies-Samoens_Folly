@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -129.5 -129.5 9813.037 3120.1356
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {3738.4700000000003 1 1.0} {1574.81 1.0} test-coupe.xvi 0 {}
 
 
@@ -84,8 +84,6 @@ point 6399.76 2309.06 station -name 12.1@ReseauCP
 point 6486.93 2309.06 station -name 12.0@ReseauCP
 
 endscrap
-
-
 
 # scrap SC-huit-1 -projection extended -station-names "" "@Huit.Huit" -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [2973.1 738.15 9764.5366 738.15 0.0 0.0 172.50248963999996 0.0 m]
 
@@ -338,6 +336,7 @@ endscrap
 
 
 
+
 scrap SC-huit-3 -projection extended -author 2020 "Xavier Robert" -copyright 2020 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [2973.1 738.15 9764.5366 738.15 0.0 0.0 172.50248963999996 0.0 m]
 
 point 5385.0 1978.0 soda-straw
@@ -387,19 +386,29 @@ line border -id l95-5048-1897 -close on
   smooth off
 endline
 
-point 5444.5 1967.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA "Courant d'air" -text "Galerie non topographiée, courant d'air"
-
 point 5668.5 2039.5 continuation -attr Code A -attr Cavite "RéseauCP" -attr Reseau "Galerie du Huit" -attr CA "Courant d'air" -text "Galerie non topographiée, courant d'air"
 
 area u:galerie
   l91-5444-1978
 endarea
 
+area u:galerie
+  l333-5300-1949
+endarea
+
+line border -id l333-5300-1949 -close on
+  5300.5 1943.0
+  5300.5 1943.0 5296.0 1937.0 5303.0 1937.0
+  5310.0 1937.0 5308.5 1943.5 5304.5 1942.5
+  5300.5 1941.5 5300.5 1943.0 5300.5 1943.0
+  smooth off
+endline
+
 line border -id l91-5444-1978 -close on
-  5443.5 1977.0
-  5443.5 1977.0 5433.5 1966.5 5437.0 1963.5
-  5440.5 1960.5 5453.0 1958.5 5452.0 1964.5
-  5451.0 1970.5 5443.5 1977.0 5443.5 1977.0
+  5381.5 1968.5
+  5381.5 1968.5 5365.5 1956.0 5369.0 1953.0
+  5372.5 1950.0 5388.0 1949.0 5387.0 1955.0
+  5386.0 1961.0 5381.5 1968.5 5381.5 1968.5
   smooth off
 endline
 
@@ -488,6 +497,7 @@ line wall -reverse on
   5305.5 1927.5 5210.5 1910.5 5187.0 1903.5
   5163.5 1896.5 5092.0 1881.5 5070.5 1873.0
   5049.0 1864.5 5004.5 1841.5 4977.5 1828.5
+  smooth off
 endline
 
 point 5999.360000000001 2215.21 station -name 12.7@ReseauCP

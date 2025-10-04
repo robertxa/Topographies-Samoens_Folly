@@ -172,7 +172,7 @@ survey Fakir2025 -title "Galerie du Fakir"
     #10 11 2.60 268.5 18.8 # doublon
     extend left
     10 12 3.91 233.3 -16.9  # siphon
-    extend vertical
+    extend left
     10 13 2.58 268.1 18.0 # R1
     # extend auto
     13 . 0.53 153.6 7.3
@@ -214,7 +214,7 @@ survey Fakir2025 -title "Galerie du Fakir"
     14 . 1.17 144.3 43.6
     14 . 0.93 226.6 27.4
     14 . 1.06 115.4 41.1
-    extend vertical
+    extend right
     14 15 1.01 274.9 -24.2
     # extend auto
     15 . 0.62 46.2 -10.9
@@ -354,7 +354,9 @@ survey Fakir2025 -title "Galerie du Fakir"
     27 . 1.75 194.7 22.2
     27 . 2.88 184.4 10.1
     27 . 2.22 202.3 -2.0
-    extend right
+    #extend right
+    extend ignore 27 21
+    extend ignore 21 27
     27 21 4.82 31.8 19.4
     extend left
     27 29 3.19 196.7 16.3
@@ -414,7 +416,7 @@ survey Fakir2025 -title "Galerie du Fakir"
     extend right
     32 33 2.48 76.5 23.6
     # extend auto
-    extend ignore
+    extend left
     32 34 1.81 130.6 18.4
     # extend auto
     34 . 0.57 263.4 9.5
@@ -540,7 +542,7 @@ survey Fakir2025 -title "Galerie du Fakir"
     47 . 1.56 316.1 -5.2
     47 . 1.56 317.1 -26.9
     47 . 0.63 330.2 -44.2
-    extend right
+    extend left
     47 48 2.43 309.8 -10.6
     # extend auto
     48 . 0.55 180.9 8.1
@@ -614,7 +616,7 @@ survey Fakir2025 -title "Galerie du Fakir"
     53 . 3.81 216.6 -17.2
     53 . 4.73 192.6 -12.2
     53 . 4.35 215.8 0.4
-    extend left
+    extend vertical
     53 54 2.27 207.5 -34.7
     # extend auto
     54 . 1.46 292.1 -75.5
@@ -635,12 +637,12 @@ survey Fakir2025 -title "Galerie du Fakir"
     54 . 1.46 237.5 -44.5
     54 . 2.05 236.5 -10.0
     54 . 6.02 231.8 -18.1
-    extend ignore
-  
-    54 55 6.24 231.7 -18.0  # ça aso
-    # extend auto
-    54 . 6.03 231.6 -18.0
+    
     extend right
+    54 55 6.24 231.7 -18.0  # CA aspirant
+    # extend auto
+    #54 . 6.03 231.6 -18.0
+    extend left
     54 56 2.64 58.1 2.1
     # extend auto
     56 . 1.55 145.2 -57.5
@@ -676,7 +678,7 @@ survey Fakir2025 -title "Galerie du Fakir"
     flags duplicate
     extend left
     57 58 8.63 204.2 1.5
-    extend vertical
+    extend right
     57 59 18.55 81.6 21.1
     flags not duplicate
   endcenterline
