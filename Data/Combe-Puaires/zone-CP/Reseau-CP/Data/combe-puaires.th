@@ -10,7 +10,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 	input data-th/ReseauCP
 	
 	input data-th/Scraps-alone/Aval-CP12/Aval-CP12-tot.th
-		equate 1.0@aval-CP12.Aval-CP12 1.0@Huit.Huit
+		equate 1.0@aval-CP12.Aval-CP12 1.0@Huit.Huit.Huit
 	
 	input data-th/Scraps-alone/CP12/CP12-tot.th
 		equate 1.19@aval-CP12.Aval-CP12 1.19@CP12.CP12
@@ -21,13 +21,15 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		equate E.9@2xxpats E.9@CP14
 	
 	input data-th/Scraps-alone/Huit/Huit-tot.th
-		equate 9.10@Huit.Huit 9.10@ReseauCP
+		equate 9.10@Huit.Huit.Huit 9.10@ReseauCP
 		#input data-th/Scraps-alone/Huit/Data/Huit.th2
-		join SP-huit-1@Huit SP-Huit-2@Aval-CP12
-		join SP-huit-1@Huit SP-CP14-2 -count 2
+		join SP-huit-1@Huit.Huit SP-Huit-2@Aval-CP12
+		join SP-huit-1@Huit.Huit SP-CP14-2 -count 2	# Attention SP-CP14-2 est dans le fichier Billy.th2 qui est à découper
+		join SP-Huit2025-1@Huit.Huit SP-CP14-2
+		join SP-Huit2025-2@Huit.Huit SP-CP14-2
 		
-		join SC-aval-CP12-2@Aval-CP12 SC-huit-1@Huit
-		join SC-huit-2@Huit SC-huit-3
+		join SC-aval-CP12-2@Aval-CP12 SC-huit-1@Huit.Huit
+		join SC-huit-2@Huit.Huit SC-huit-3
 
  	input data-th2/Huit-coupe.th2	# Attention, il va falloir découper le dessin de la coupe pour que ça entre dans les clous !
  		

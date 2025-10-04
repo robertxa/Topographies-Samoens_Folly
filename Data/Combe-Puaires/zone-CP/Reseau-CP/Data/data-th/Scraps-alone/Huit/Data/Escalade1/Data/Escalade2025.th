@@ -1,0 +1,59 @@
+encoding utf-8
+# 2025.10.04 created by TopoDroid v 6.3.20
+
+survey Escalade2025 -title "Escalade 2025"
+
+  centerline
+    date 2025.10.02 
+      team "Charlotte Honiat"
+      team "Rémi Monari"
+    explo-date 2025.10.02 
+      explo-team "Charlotte Honiat"
+      explo-team "Rémi Monari"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend left
+    1 0 3.59 342.1 30.9 # sommet escalade
+    1 2 6.25 117.6 -60.3
+    extend right
+    2 3 4.14 77.8 -55.4
+    extend left
+    3 4 15.04 106.1 -75.3
+    # extend auto
+    4 . 7.74 208.0 86.3
+    4 . 10.49 175.6 44.7
+    4 . 4.61 121.4 35.7
+    4 . 3.88 47.3 13.5
+    4 . 6.70 24.9 -1.5
+    4 . 4.28 348.2 3.5
+    
+    flags duplicate
+    extend right
+    4 5 4.80 350.8 5.3
+    # extend auto
+    5 . 3.61 85.0 -1.6
+    5 . 2.57 80.9 -46.8
+    5 . 4.53 21.8 81.1
+    5 . 5.79 2.7 -23.3
+    5 . 13.56 29.3 -28.2
+    5 . 23.84 22.0 -22.0
+    5 . 21.83 16.0 -21.2
+    extend right
+    5 6 17.95 11.4 -27.5
+    # extend auto
+    6 . 6.86 266.2 75.3
+    6 . 4.14 208.7 30.0
+    6 . 5.70 143.5 15.8
+    6 . 5.53 53.5 15.4
+    6 . 2.65 8.2 17.8
+    extend right
+    6 7 3.44 342.2 33.3 #jction avec le carrefour de l'E13
+    
+    flags not duplicate
+    extend left
+    7 8 12.12 229.9 60.5  # Visée dans l'escalade au dessus de l'E13
+  endcenterline
+
+endsurvey

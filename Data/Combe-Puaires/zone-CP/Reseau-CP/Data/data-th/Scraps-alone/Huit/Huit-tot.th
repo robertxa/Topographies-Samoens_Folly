@@ -5,12 +5,16 @@ encoding utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey Huit -title "Huit"
-	input Data/Huit.th
+	input Data/Huit/Huit-tot.th
+	input Data/Fakir/Fakir-tot.th
+		equate 59@Fakir2025.Fakir 	9.10@Huit.Huit
+		#equate 57@Fakir.Fakir 	10.1@Huit.Huit
+		join SP-Fakir-1@Fakir SP-huit-1@Huit
 	
-	## pour le plan
-	input Data/Huit.th2
-	## Pour la coupe et le plan
-	input Data/Huit-coupe.th2
-
+	input Data/Escalade1/Escalade1-tot.th
+		equate 7@Escalade2025.Escalade1	9.2@Huit.Huit
+		join SP-Escalade1-2@Escalade1 SP-huit-1@Huit
+		join SP-Escalade1-1@Escalade1 SP-huit-1@Huit
+	
 	input Huit-maps.th
 endsurvey

@@ -151,6 +151,9 @@ map MP-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	break
 	MP-CP19b@CP19b #[0 -70 m] above
 	break
+	#MP-Huit@Huit.Huit
+	MP-Huit@Huit
+	break
 	MP-Billy
 	break
 	MP-reptiles@Reptiles
@@ -164,8 +167,7 @@ map MP-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	MP-espoir
 	break
 	MP-RivTeteHomme
-	break
-	MP-Huit@Huit
+	
 endmap
 
 map MP-EV82 -title "CP19bis et galerie des Reptiles"

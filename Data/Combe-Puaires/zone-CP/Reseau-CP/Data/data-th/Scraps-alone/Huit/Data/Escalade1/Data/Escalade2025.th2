@@ -1,0 +1,116 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 324.8505 442.9608
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {39.36760000000001 1 1.0} {118.112 1} Escalade1-map2023a.xvi 0 {}
+
+
+
+scrap SP-Escalade1-1 -projection plan -station-names "" "@Escalade2025" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+line wall
+  100.5 113.75
+  100.5 113.75 83.25 115.25 79.5 115.25
+  75.75 115.25 65.0 116.25 60.25 116.25
+  55.5 116.25 43.75 116.25 41.75 119.0
+  39.75 121.75 33.75 137.25 33.75 140.75
+  33.75 144.25 33.0 147.0 33.0 147.0
+  smooth off
+endline
+
+point 32.5 160.5 narrow-end
+
+line pit
+  43.25 118.25
+  43.25 118.25 35.0 125.25 36.25 116.5
+endline
+
+line pit
+  55.25 116.25
+  55.25 116.25 43.5 107.5 52.25 102.75
+endline
+
+line pit
+  72.75 115.5
+  72.75 115.5 60.0 111.25 70.75 101.25
+endline
+
+line pit
+  84.5 115.25
+  84.5 115.25 74.75 105.5 84.25 100.25
+endline
+
+line pit
+  100.5 113.75
+  100.5 113.75 94.0 104.75 102.25 98.25
+endline
+
+point 21.5 89.5 height -value [+25 m]
+
+line wall
+  30.75 147.0
+  30.75 147.0 30.5 140.25 30.5 136.5
+  altitude .
+  30.5 132.75 35.71 120.72 36.25 116.5
+  38.25 101.0 52.5 103.0 58.5 102.75
+  64.5 102.5 68.0 101.0 78.0 100.5
+  88.0 100.0 102.25 98.25 102.25 98.25
+  smooth off
+endline
+
+point 31.887600000000006 141.182 station -name 0
+
+point 39.36760000000001 118.112 station -name 1
+
+point 60.94760000000001 106.85199999999999 station -name 2
+
+point 79.05760000000001 110.71199999999999 station -name 3
+
+point 107.95760000000001 102.36199999999998 station -name 4
+
+endscrap
+
+
+
+scrap SP-Escalade1-2 -projection plan -station-names "" "@Escalade2025" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+point 67.5 277.0 height -value [+15? m]
+
+point 53.0 246.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "G. du Huit" -text "Escalade à faire, il n'y a qu'une visée qui a été faite"
+
+line pit
+  77.75 257.75
+  77.75 257.75 74.5 251.0 81.25 247.75
+endline
+
+line pit
+  87.25 265.25
+  87.25 265.25 84.75 257.25 92.0 256.0
+endline
+
+line pit
+  108.25 280.5
+  108.25 280.5 104.75 272.0 110.25 271.0
+endline
+
+line wall
+  71.25 244.75
+  71.25 244.75 81.0 246.5 83.75 248.75
+  86.5 251.0 95.75 259.75 99.25 261.25
+  102.75 262.75 110.25 271.0 110.25 271.0
+  smooth off
+endline
+
+line wall
+  108.25 280.5
+  108.25 280.5 79.5 259.5 77.75 257.75
+  76.0 256.0 69.25 253.75 69.25 253.75
+  smooth off
+endline
+
+point 83.8576 253.702 station -name 8
+
+point 119.7676 284.012 station -name 7
+
+endscrap
+
+
