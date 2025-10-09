@@ -323,6 +323,7 @@ centerline
    units compass grad
    units clino grad
    data normal from to length compass clino left right up down
+   flags duplicate
    extend right
    A24 A24.0double    0.000000       0.000000       0.000000      0.2000000       0.000000       0.000000       0.000000    
    A24.0double A24.1    1.830000       0.000000      -100.0000      0.6000000      0.6000000       0.000000       0.000000    
@@ -378,5 +379,6 @@ centerline
    A24.32 A24.35    4.330000       375.0000       10.00000      0.2000000      0.2000000      0.3000000      0.3000000    
    A24.35 A24.36    2.000000       330.0000       10.00000      0.2000000      0.2000000      0.4000000      0.4000000    
    A24.36 A24.37    2.000000       240.0000       20.00000       0.000000       0.000000       0.000000       0.000000    
+   flags not duplicate
 endcenterline
 endsurvey
