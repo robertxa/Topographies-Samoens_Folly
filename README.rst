@@ -11,7 +11,7 @@ Ce dépôt est mis à jour à chaque fois qu'une nouvelle topographie est rajout
 
 Si besoin, des templates pour Therion sont disponibles sur https://github.com/robertxa/Th-Config-Xav .
 
-Un article sur cette base de données topographiques, publié dans l'Echo des Vulcain n°77, est accessible dans le dossier Docs/.
+Un article sur cette base de données topographiques, publié dans l'Echo des Vulcain n°77, est accessible dans le dossier Docs/ de ce repository.
 
 Description
 -----------
@@ -27,6 +27,10 @@ Uniquement les fichiers sources sont sauvegardés pour des raisons de taille ; j
 Cette base de données est hierarchisée en systèmes hydrologiques, puis par zone, puis par cavités, et enfin, pour les cavités importantes, par petits réseaux. Les dossiers de cavités se terminant par "-coords" indiquent les cavités pour lesquelles nous n'avons pas les coordonnées des entrées.
 Pour obtenir les topographies en plan, coupe et/ou 3D de chaque élément, il faut compiler les différents fichiers Therion thconfig.
 Pour obtenir les topographies en plan et/ou 3D de l'ensemble d'un système ou de la base de données, il faut compiler les fichiers Therion thconfig parents. Il n'est pas nécessaire d'avoir compilé chaque petite entité auparavant.
+
+.. warning::
+        Pour compiler l'ensemble de la base de données à partir de la racine, il faut d'abord modifier le fichier de configuration Therion (**therion.ini'**) en y ajoutant la ligne :
+		**mpost-options "-numbersystem=double"**
 
 Aussi, cette base de données topographique est à la base de projets SIG, que ce soit pour la production de cartes propres, ou pour la mise en place d'une application portable sur appareils Android ou iOS. Pour générer ou mettre à jour les différents champs non produits directement par Therion, il faut lancer dans un Terminal le script shell Build-Samoens-SIG.sh. Il faut alors être un peu patient !
 Ce script shell fait appel à des scripts Python, qui utilisent le module Fiona, Shapely et alive_progress qui sont à installer préalablement.
