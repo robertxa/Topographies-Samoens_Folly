@@ -1,0 +1,71 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Sirocco -title "Sirocco"
+	SP-Sirocco-2
+	break
+	SP-Sirocco-1
+	break
+	SP-Sirocco-3
+	break
+	SP-Sirocco-2023-1
+	break
+	SP-Sirocco-2023-2
+	#break
+	#SP-Sirocco-2023-3
+	break
+	SP-Sirocco-2023-4
+	break
+	SP-Sirocco-2023-5
+	
+	#break
+	#SP-gP18-1
+
+endmap
+
+map MP-PuitsGP18 -title "Puits parallèles de la galerie du P18"
+	SP-gP18-1
+	break
+	SP-PuitsGP18-5
+	break
+	SP-PuitsGP18-4
+	break
+	SP-PuitsGP18-3
+	break
+	SP-PuitsGP18-1
+	break
+	SP-PuitsGP18-2
+
+endmap
+
+map MP-Sirocco-tot -title "Sirocco"
+	MP-Sirocco [0 70 m] above
+	break
+	MP-PuitsGP18
+endmap
+
+map MP-Sirocco-tot-SD -title "Sirocco"
+	MP-Sirocco [0 35 m] above
+	break
+	MP-PuitsGP18
+endmap
+
+
+map MC-Sirocco -title "Sirocco"
+	SC-Sirocco-1
+	break
+	SC-Sirocco-2
+	break
+	SC-Sirocco-2023-1
+	break
+	SC-gP18-1
+	break
+	SC-gP18-2
+	break
+	SC-PuitsGP18-1
+
+endmap
+   

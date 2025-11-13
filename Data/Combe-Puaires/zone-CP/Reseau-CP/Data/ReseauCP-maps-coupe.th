@@ -58,9 +58,9 @@ map MC-clowns -title "Réseau des Clowns"
 	SC-clowns-3 #@ReseauCP
 endmap
 
-map MC-Affluent-Steph -title "Affluent de la rivière amont"
-	SC-aff_coupe_1 #@ReseauCP
-endmap
+#map MC-Affluent-Steph -title "Affluent de la rivière amont"
+#	SC-aff_coupe_1 #@ReseauCP
+#endmap
 
 map MC-rivamont -title "Rivière amont 2019"
 	SC-rivamont2019-1 #@ReseauCP
@@ -170,7 +170,8 @@ map MC-Rivamont -title "Rivière amont"
 	break
 	MC-rivamont
 	break
-	MC-Affluent-Steph
+	MC-Pinaille@Pinaille
+	#MC-Affluent-Steph
 endmap
 
 map MC-CP12-aval -title "CP12"

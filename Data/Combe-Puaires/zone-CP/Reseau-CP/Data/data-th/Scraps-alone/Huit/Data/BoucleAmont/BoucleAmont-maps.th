@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-BoucleAmont -title "Boucle Amont du Huit"
+	SP-BoucleAmont-1
+	break
+	SP-BoucleAmont-2
+	break
+	SP-BoucleAmont-4
+	break
+	SP-BoucleAmont-3
+	break
+	SP-BoucleAmont-5
+endmap
+
+map MC-BoucleAmont -title "Boucle Amont du Huit"
+ 	SC-BoucleAmont-1
+ 	break
+ 	SC-BoucleAmont-2
+	break
+	SC-BoucleAmont-3
+endmap
+   

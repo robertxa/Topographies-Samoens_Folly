@@ -1,0 +1,409 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -141.0 -128.0 548.0 642.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {157.476 1 1.0} {314.957 0} Pinaille2025-map.xvi 0 {}
+
+
+
+scrap SP-Pinaille-1 -projection plan -station-names "" "@Pinaille2025" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
+
+point 409.75 185.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -text "Enorme méandre remontant à voir"
+
+point 363.25 238.75 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -text "Galerie/méandre remontante à voir"
+
+point 94.75 398.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -attr CA "Courant d'air aspirant en hiver" -text "Suite logique dans la faille, galerie horizontale active, 2 * 3 m, E20 à faire, courant d'air"
+
+point 399.0 126.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -text "Méandre remontant à voir"
+
+point 321.75 106.5 height -value [+30 m]
+
+line water-flow
+  161.75 288.25
+  161.75 288.25 173.5 267.75 174.5 259.0
+  175.5 250.25 181.5 232.5 183.75 224.25
+  186.0 216.0 187.75 208.5 187.75 208.5
+  smooth off
+endline
+
+line water-flow
+  104.5 371.25
+  104.5 371.25 110.0 363.5 111.75 361.25
+  113.5 359.0 117.5 352.75 121.5 348.75
+  125.5 344.75 133.5 336.75 133.5 336.75
+  smooth off
+endline
+
+point 98.25 303.0 label -text "R2"
+
+point 206.25 368.25 height -value [+6 m]
+
+point 152.75 398.75 height -value [+20 m]
+
+point 237.5 330.5 height -value [+30 m]
+
+point 116.25 280.75 height -value [+12 m]
+
+area blocks
+  l42-255-237
+endarea
+
+line label -id l42-255-237 -close on
+  254.25 236.75
+  254.25 236.75 229.0 247.0 222.5 239.5
+  216.0 232.0 202.0 215.5 205.0 203.75
+  208.0 192.0 245.25 198.0 256.0 192.5
+  266.75 187.0 296.5 177.0 302.0 175.5
+  307.5 174.0 315.75 177.75 314.25 185.25
+  312.75 192.75 307.5 203.75 300.25 209.75
+  293.0 215.75 290.75 224.75 282.5 230.0
+  274.25 235.25 254.25 236.75 254.25 236.75
+  smooth off
+endline
+
+line rock-border
+endline
+
+line rock-border -close on
+  237.0 231.5
+  234.5 227.0
+  239.0 225.25
+  241.75 228.0
+  237.0 231.5
+endline
+
+line rock-border -close on
+  189.0 242.5
+  182.75 239.0
+  187.0 232.25
+  193.25 235.75
+  189.0 242.5
+endline
+
+line rock-border -close on
+  175.5 310.25
+  176.75 301.25
+  185.25 307.0
+  184.5 313.75
+  175.5 310.25
+endline
+
+line rock-border -close on
+  177.0 316.0
+  169.75 313.0
+  175.75 305.75
+  179.25 310.25
+  177.0 316.0
+endline
+
+line rock-border -close on
+  165.25 305.5
+  165.75 301.0
+  172.25 302.75
+  168.0 306.5
+  165.25 305.5
+endline
+
+line rock-border -close on
+  165.0 313.0
+  158.0 305.75
+  162.75 302.5
+  168.0 306.5
+  165.0 313.0
+endline
+
+line rock-border
+  153.5 303.5
+  152.75 298.25
+  157.75 299.0
+  159.25 306.5
+  154.25 304.75
+endline
+
+line rock-border -close on
+  154.5 312.0
+  148.0 309.0
+  149.5 301.0
+  156.5 303.0
+  155.25 307.75
+  154.5 312.0
+endline
+
+line rock-border -close on
+  147.0 319.5
+  143.0 315.25
+  147.0 311.5
+  148.75 314.5
+  147.0 319.5
+endline
+
+line pit -close on
+  166.5 333.75
+  166.5 333.75 155.75 342.75 151.5 338.25
+  147.25 333.75 149.75 322.75 153.0 316.25
+  156.25 309.75 164.5 309.0 169.75 306.25
+  175.0 303.5 172.5 312.0 170.5 318.75
+  168.5 325.5 166.5 333.75 166.5 333.75
+  smooth off
+endline
+
+line pit
+  125.75 356.5
+  125.75 356.5 111.75 359.5 112.25 349.5
+endline
+
+point 25.5 410.75 air-draught -orientation 317.4 -subtype winter
+
+line pit
+  153.5 357.75
+  153.5 357.75 140.75 357.25 133.5 351.75
+  126.25 346.25 123.75 342.25 122.75 336.5
+endline
+
+line pit
+  179.25 291.0
+  179.25 291.0 197.5 287.25 197.25 309.5
+endline
+
+line pit
+  180.25 288.5
+  180.25 288.5 166.0 306.5 150.5 290.75
+endline
+
+line pit
+  373.75 176.75
+  373.75 176.75 379.75 190.5 374.75 192.5
+endline
+
+line pit
+  355.5 176.0
+  355.5 176.0 360.25 188.5 352.75 194.5
+endline
+
+line pit
+  348.25 149.25
+  348.25 149.25 361.5 152.75 361.0 160.5
+endline
+
+line pit
+  325.75 164.75
+  325.75 164.75 334.75 165.75 337.25 172.0
+endline
+
+line pit
+  319.25 213.25
+  319.25 213.25 315.75 224.75 303.25 226.5
+endline
+
+line pit
+  311.25 170.25
+  311.25 170.25 319.75 187.75 315.0 196.0
+  310.25 204.25 299.0 214.5 295.25 218.75
+  291.5 223.0 289.5 224.75 289.5 224.75
+  smooth off
+endline
+
+line pit
+  285.5 127.5
+  285.5 127.5 293.0 149.75 278.25 155.75
+endline
+
+line wall
+  94.25 371.75
+  altitude .
+  94.25 371.75 106.0 358.75 111.5 350.75
+  117.0 342.75 134.0 324.25 139.0 315.25
+  144.0 306.25 145.25 304.75 150.5 290.75
+  155.75 276.75 155.5 254.75 161.75 247.75
+  168.0 240.75 171.5 237.0 183.5 229.25
+  195.5 221.5 208.25 201.25 215.5 200.5
+  222.75 199.75 235.5 205.5 249.0 201.5
+  262.5 197.5 271.5 195.5 273.75 187.75
+  276.0 180.0 278.25 155.75 278.25 155.75
+  smooth off
+endline
+
+line fault -clip off
+  360.0 98.0
+  416.0 40.0
+endline
+
+line fault -clip off
+  -9.0 510.0
+  64.0 414.0
+endline
+
+line wall
+  233.25 290.25
+  233.25 290.25 204.5 304.25 197.25 309.5
+  190.0 314.75 188.0 328.5 180.0 334.0
+  172.0 339.5 160.25 355.5 153.5 357.75
+  146.75 360.0 133.75 354.0 127.0 355.75
+  120.25 357.5 114.75 375.0 114.75 375.0
+  smooth off
+endline
+
+line wall
+  331.25 234.25
+  331.25 234.25 297.0 224.5 289.5 224.75
+  282.0 225.0 276.5 231.25 270.75 231.25
+  265.0 231.25 259.0 231.25 250.0 231.0
+  241.0 230.75 238.5 235.75 233.0 239.25
+  227.5 242.75 226.25 258.5 213.5 261.75
+  200.75 265.0 190.25 272.75 186.5 277.75
+  182.75 282.75 179.25 291.0 179.25 291.0
+  smooth off
+  179.25 291.0 205.25 273.25 210.0 271.75
+  214.75 270.25 228.0 265.5 228.0 265.5
+  smooth off
+endline
+
+line wall
+  380.75 191.75
+  380.75 191.75 347.5 194.0 344.25 197.25
+  341.0 200.5 318.0 211.5 319.25 213.25
+  320.5 215.0 340.0 221.5 340.0 221.5
+  smooth off
+endline
+
+line wall
+  386.25 145.5
+  386.25 145.5 365.5 157.5 361.0 160.5
+  356.5 163.5 329.75 175.25 333.0 176.0
+  336.25 176.75 350.0 176.0 355.5 176.0
+  361.0 176.0 375.75 177.0 375.75 177.0
+  smooth off
+endline
+
+line wall
+  285.5 127.5
+  285.5 127.5 292.5 125.25 297.25 134.5
+  302.0 143.75 303.25 151.25 304.25 155.5
+  305.25 159.75 307.0 171.75 311.25 170.25
+  315.5 168.75 320.25 167.25 325.75 164.75
+  331.25 162.25 342.25 154.0 348.25 149.25
+  354.25 144.5 362.0 133.25 365.0 131.25
+  368.0 129.25 376.75 124.5 376.75 124.5
+  smooth off
+endline
+
+point 282.596 131.02700000000002 station -name 10
+
+point 365.51599999999996 146.537 station -name 8
+
+point 335.906 180.707 station -name 7
+
+point 309.446 180.317 station -name 9
+
+point 326.376 224.097 station -name 6
+
+point 262.75600000000003 215.58700000000002 station -name 5
+
+point 177.476 248.347 station -name 4
+
+point 157.796 290.15700000000004 station -name 3
+
+point 211.576 275.90700000000004 station -name 2
+
+point 157.476 314.957 station -name 0
+
+point 117.006 357.007 station -name 1
+
+endscrap
+
+
+
+scrap SP-Pinaille-2 -projection plan -station-names "" "@Pinaille2025" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 521.701 -128.0 0.0 0.0 16.5024054 0.0 m]
+
+line wall
+  235.0 189.5
+  altitude .
+  235.0 189.5 246.75 171.0 247.75 163.0
+  248.75 155.0 252.25 142.5 254.5 136.25
+  256.75 130.0 263.0 123.25 264.75 119.25
+endline
+
+line wall
+  278.25 155.75
+  278.25 155.75 284.25 165.25 284.0 168.75
+  283.75 172.25 285.5 178.5 279.0 180.5
+  272.5 182.5 266.25 190.0 262.75 188.0
+  259.25 186.0 252.75 183.5 250.25 185.25
+  247.75 187.0 238.75 192.25 238.75 192.25
+  smooth off
+endline
+
+area water
+  l69-270-174
+endarea
+
+line label -id l69-270-174 -close on
+  263.75 174.75
+  263.75 174.75 255.5 171.0 255.75 162.0
+  256.0 153.0 262.0 139.0 267.25 139.75
+  272.5 140.5 273.75 149.25 273.75 154.0
+  273.75 158.75 273.25 171.75 270.75 173.0
+  268.25 174.25 263.75 174.75 263.75 174.75
+  smooth off
+endline
+
+line water-flow
+  203.0 195.75
+  203.0 195.75 224.5 200.25 228.5 197.75
+  232.5 195.25 240.25 187.5 240.25 187.5
+  smooth off
+  254.25 172.5
+endline
+
+point 237.0 191.0 breakdown-choke -orientation 141.4
+
+line pit
+  250.25 185.25
+  250.25 185.25 241.25 186.25 241.25 180.0
+endline
+
+line pit
+  270.25 184.75
+  270.25 184.75 258.75 182.75 254.0 178.75
+  249.25 174.75 247.75 163.0 247.75 163.0
+  smooth off
+endline
+
+line rock-border -close on
+  276.0 130.25
+  272.0 123.25
+  278.25 124.25
+  278.25 127.5
+  276.0 130.25
+endline
+
+line rock-border -close on
+  267.25 133.25
+  264.5 129.75
+  267.25 127.25
+  270.25 129.0
+  267.25 133.25
+endline
+
+line rock-border -close on
+  268.5 135.0
+  274.0 137.0
+  274.0 131.75
+  270.25 131.75
+  268.5 135.0
+endline
+
+line wall
+  286.25 123.75
+  283.0 128.0 285.5 127.5 285.5 127.5
+  smooth off
+endline
+
+point 259.766 137.957 station -name 11
+
+point 246.296 178.027 station -name 12
+
+point 272.75600000000003 170.707 station -name 13
+
+endscrap
+
+

@@ -32,7 +32,13 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		join SC-huit-2@Huit.Huit SC-huit-3
 
  	input data-th2/Huit-coupe.th2	# Attention, il va falloir découper le dessin de la coupe pour que ça entre dans les clous !
- 		
+
+		# ATTENTION, il faudra inclure ces jonctions dans la partie 8
+		equate 0@BoucleAmont.BoucleAmont.Huit	9.14@ReseauCP
+		equate 14@BoucleAmont.BoucleAmont.Huit	9.13@ReseauCP
+
+	input data-th/Scraps-alone/Sirocco/Sirocco-tot.th
+		equate 29b@Attente.Attente.Sirocco 9.21@ReseauCP
 
 	
 	input data-th/Scraps-alone/CP16/Data/CP16.th
@@ -76,9 +82,15 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		equate 14.4@riviere_aval 40.0@riviere_amont
 		##equate 40.60@ReseauCP 40.60@riviere_amont
 		##equate 40.50@ReseauCP 40.50@riviere_amont
-	#input data-th/Scraps-alone/Affluent_Steph/Data/affluent_steph 
-	input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont
-		equate 40.34@riviere_amont Xa-2014-14@affluent_Steph
+	#input data-th/Scraps-alone/Affluent_Steph/Data/affluent_steph
+	# ICI, IL FAUT REFAIRE LA STRUCTURE 
+	input data-th/Scraps-alone/Pinaille/Pinaille-tot.th
+		equate 40.34@riviere_amont Xa-2014-14@affluent_Steph.Pinaille2014.Pinaille
+	#input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont
+	#	equate 40.34@riviere_amont Xa-2014-14@affluent_Steph
+	#input data-th/Scraps-alone/Affluent_Steph/Data/Pinaille2025/Pinaille2025-tot.th
+	#	equate 13@Pinaille2025.Pinaille2025	Xa-2014-11@affluent_Steph
+		#join SP-Pinaille-2@Pinaille2025 SP-affsteph-1	# SP-affSteph1 à déplacer dans le dossier Pinaille 2014
 	
 	input data-th/Scraps-alone/Riviere_amont/data/rivamont2019
 		equate 52.0@riviere_amont 52.0@rivamont2019
@@ -130,7 +142,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
  	input data-th2/riv_amont.th2
  		join SP-palm-1 SP-Pierrot-6
  		join SP-amont-dessous-1 SP-Pierrot-6
- 		join SP-affsteph-1 SP-Pierrot-1
+ 		join SP-affsteph-1@Pinaille2014.Pinaille SP-Pierrot-1
  		# Homme-8 et Homme-7 à commenter !!! C'est tout pourri ! c'est ce qui a été dessiné à partir des data des Cataphiles...
  		join SP-homjct-2 SP-Homme-3
  		join SP-homjct-2 SP-Massues-3
@@ -171,8 +183,8 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
  	## La rivière à Pierrot
  	input data-th/Scraps-alone/Riviere_amont/data/rivamont2014-coupe.th2
  	
- 	input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont_coupe.th2
- 		join  SC-hautspots-3 SC-aff_coupe_1
+ 	#input data-th/Scraps-alone/Affluent_Steph/Data/affluent_amont_coupe.th2
+ 		join  SC-hautspots-3 SC-aff_coupe_1@Pinaille2014.Pinaille
  	input data-th/Scraps-alone/Riviere_amont/data/rivamont2019-coupe.th2
  		join SC-rivamont2019-1 SC-Palmier-1
  	

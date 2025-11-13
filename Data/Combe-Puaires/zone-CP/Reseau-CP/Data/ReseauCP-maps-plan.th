@@ -17,8 +17,8 @@ map MP-RivAPierrot -title "Rivière à Pierrot"
 	SP-palm-1 #@ReseauCP
 	break
 	SP-palm-2 #@ReseauCP
-	break
-	SP-affsteph-1 #@ReseauCP
+	#break
+	#SP-affsteph-1 #@ReseauCP
 	break
 	SP-Bousiers #@ReseauCP
 	break
@@ -157,6 +157,8 @@ map MP-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	MP-Billy
 	break
 	MP-reptiles@Reptiles
+	break
+	MP-Pinaille@Pinaille	# A revoir organisation des maps
 	break
 	MP-RivAmont2019
 	break

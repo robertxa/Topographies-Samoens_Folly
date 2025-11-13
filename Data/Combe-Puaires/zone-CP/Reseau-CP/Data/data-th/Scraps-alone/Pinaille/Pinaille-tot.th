@@ -1,0 +1,15 @@
+encoding utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Pinaille -title "Escalades Pinaille 2014"
+	input Data/Pinaille2014/Pinaille2014-tot.th
+	input Data/Pinaille2025/Pinaille2025-tot.th
+		equate 13@Pinaille2025.Pinaille2025	Xa-2014-11@affluent_Steph.Pinaille2014
+		join SP-Pinaille-2@Pinaille2025 SP-affsteph-1@Pinaille2014
+		join SC-Pinaille2025-1@Pinaille2025 SC-aff_coupe_1@Pinaille2014
+
+	input Pinaille-maps.th
+endsurvey

@@ -17,5 +17,10 @@ survey Huit -title "Huit"
 		join SP-Escalade1-2@Escalade1 SP-huit-1@Huit
 		join SP-Escalade1-1@Escalade1 SP-huit-1@Huit
 	
+	input Data/BoucleAmont/BoucleAmont-tot.th
+		# Faire l'Equate ici lorsque tout sera bien mis ensemble ! --> Boulot de découpage
+		#equate 0@BoucleAmont.BoucleAmont	9.14@ReseauCP
+		#equate 14@BoucleAmont.BoucleAmont	9.13@ReseauCP
+	
 	input Huit-maps.th
 endsurvey

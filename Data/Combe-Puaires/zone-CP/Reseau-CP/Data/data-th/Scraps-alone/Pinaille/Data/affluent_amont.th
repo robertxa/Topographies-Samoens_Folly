@@ -46,7 +46,13 @@ extend right
 	Xa-2014-8 Xa-2014-9	8.24	9	-50	0.3	3	5	7
 	Xa-2014-9 Xa-2014-10	8.48	48	-60	2	1.5	5	1.5
 	Xa-2014-10 Xa-2014-11	7.23	341	0	2.5	1	20	1.5	# Cairn, base de la cascade
-	Xa-2014-11 Xa-2014-12	20	0	90	2	2	8	21	# visée fictive
+	
+  flags duplicate
+  flags approximate
+  Xa-2014-11 Xa-2014-12	20	0	90	2	2	8	21	# visée fictive
+  flags not approximate
+  flags not duplicate
+
 extend left
 	Xa-2014-10 Xa-2014-13	6.87	208	-24	0.5	2.5	3	7 # sommet de la cascade
 	Xa-2014-13 Xa-2014-14	10.40	238	-47	5	5	20	1.5 # cairn de jonction dans la salle sous la cascade
@@ -60,20 +66,22 @@ centerline -title "Affluent Amont Xa-2014-0_Xa-2014-0bis Xa-2014-14_Xa-2014-15"
   
    date 2022.08.14
 #   declination 0.0000  degrees
-  team "Xavier Robert"
-  team "Théo Prévot"
+    team "Xavier Robert"
+    team "Théo Prévot"
   explo-date 2022.08.14
-  explo-team "Xavier Robert"
-  explo-team "Théo Prévot"
+    explo-team "Xavier Robert"
+    explo-team "Théo Prévot"
 
    units lenght meters
    units compass degrees
    units clino degrees
    data normal from to length compass clino left right up down
-extend right
+  extend right
+  flags duplicate
   flags approximate
 	Xa-2014-12 Xa-2022-01	5	341	0	0.5	0.5	0.1	0.1	# visée fictive ; arrivée actif, impénétrable
   flags not approximate
+  flags not duplicate
 endcenterline
 
 endsurvey	

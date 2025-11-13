@@ -45,17 +45,20 @@ centerline -title "Galerie du 8 et Sirocco : 1.0_9.1 9.25_9.26"
    9.12 9.13    21.12       84.       17.       1.5       1.5       6.0       1.0    
    9.13 9.14    22.87       71.       14.       1.5       1.5       4.0       1.0    
    9.14 9.15    11.33       276.0      -18.       1.5       1.5       1.0       1.0    
+   
+   # Vers Sirocco
    9.15 9.16    7.9       57.      -15.       1.5       1.5       1.0       1.0    
-   9.16 9.17    10.74       0.0      -90.       1.5       1.5       10.       1.0    
+   9.16 9.17    10.74       0.0      -90.       1.5       1.5       10.       1.0  # P11  
    9.17 9.18    28.98       250.0      -22.       1.0       1.0       3.0       1.0    
    9.18 9.19    33.88       244.0      -14.       1.0       1.0       3.0       1.0    
    9.19 9.20    4.560       228.0      -63.       1.0       1.0       7.0       1.0    
-   9.20 9.21    24.32       110.0      -75.       1.0       1.0       30.       20.    
-   9.21 9.22    11.28       140.0       7.0       1.0       1.0       15.       1.0    
-   9.22 9.23    15.79       150.0       21.       1.0       1.0       12.       1.0    
-   9.23 9.24    13.53       133.0       5.0       1.0       1.0       8.0       1.0    
-   9.24 9.25    13.10       158.0       41.       1.0       1.0       4.0       1.0    
-   9.25 9.26    19.26       142.0       13.       1.0       1.0       4.0       1.0    
+   9.20 9.21    24.32       110.0      -75.       1.0       1.0       30.       20.  # P27  
+
+   9.21 9.22    11.28       140.0       7.0       1.0       1.0       15.       1.0  # Faille  du Sirocco
+   9.22 9.23    15.79       150.0       21.       1.0       1.0       12.       1.0    # Faille
+   9.23 9.24    13.53       133.0       5.0       1.0       1.0       8.0       1.0    # Faille
+   9.24 9.25    13.10       158.0       41.       1.0       1.0       4.0       1.0    # Faille
+   9.25 9.26    19.26       142.0       13.       1.0       1.0       4.0       1.0    # Faille
 endcenterline
 
   
@@ -92,7 +95,7 @@ endcenterline
 # endcenterline
 
   
-centerline -title "Puits Borgne 12.0_12.1 12.10_9.14"
+centerline -title "Puits Borgne : 12.0_12.1 12.10_9.14"
   # Puits borgne
    date 1986.11.09 # ????
  #  declination -2.0529 grad
@@ -109,6 +112,13 @@ centerline -title "Puits Borgne 12.0_12.1 12.10_9.14"
    units lenght meters
    units compass grad
    units clino grad
+   data normal from to length compass clino #left right up down
+   
+   flags approximate
+      12.0  12.0app1 30 0  -90   # Visée dans Puits borgne
+      12.0  12.0app2 20 0  +90   # Visée en hauteur
+   flags not approximate
+
    data normal from to length compass clino left right up down
    #extend left
    12.0 12.1    11.07       50.       0.0       4.0       4.0       1.0       1.0    
@@ -124,7 +134,7 @@ centerline -title "Puits Borgne 12.0_12.1 12.10_9.14"
 endcenterline
   
   
-centerline -title "16.7_11.1 11.38_9.14"
+centerline -title "G. des 4 Vents vers Rasoir : 16.7_11.1 11.38_9.14"
  # 314.06 m de topo non trouvé !!!!!
     date 1986.09.21
    #declination -2.0529 grad
@@ -204,6 +214,8 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
 
    data normal from to length compass clino left right up down
    extend right
+   
+   # Galerie du Sirocco
    9.26 16.1    7.560       95.       62.       1.5       1.5       10.       1.0    
    16.1 16.2    15.04       115.0       13.       1.0       1.0       10.       1.0    
    16.2 16.3    18.07       115.0       28.       2.0       2.0       5.0       1.0    
@@ -211,6 +223,8 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
    16.4 16.5    13.69       80.       0.0       2.5       2.5       0.0       1.0    
    16.5 16.6    10.01       25.       21.       2.0       2.0       3.0       1.0    
    16.6 16.7    14.18       84.       30.       1.0       1.0       3.0       1.0    
+   
+   # Galerie des 4 vents vers le Puits que l'on Traverse
    #extend ignore 16.7 16.8
    16.7 16.8    13.27       145.0       5.0       1.0       1.0       8.0       1.0    
    16.8 16.9    5.790       345.0       68.       1.0       1.0       3.0       1.0    
@@ -223,6 +237,8 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
    16.15 16.16    5.990       162.0      -49.       4.0       4.0       15.       1.0    
    16.16 16.17    28.08       0.0      -90.       4.0       4.0       40.       1.0    
    16.17 16.18    9.490       264.0       8.0       1.5       1.5       5.0       1.0    
+   
+   # vers salle du Bivouac
    extend left
    16.18 16.19    7.540       320.0      -17.       1.0       1.0       3.0       1.0    
    16.19 16.20    6.090       20.       8.0       1.0       1.0       1.0       1.0    
@@ -235,7 +251,9 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
    16.26 16.27    6.750       322.0      -7.0       1.0       1.0       8.0       1.0    
    16.27 16.28    12.14       291.0      -21.       1.0       1.0       8.0       3.0    
    16.28 16.29    12.31       296.0      -30.       1.0       1.0       5.0       1.0    
-   16.29 16.30    12.89       226.0      -34.       1.0       1.0       6.0       1.0    
+   16.29 16.30    12.89       226.0      -34.       1.0       1.0       6.0       1.0    # Salle du Bivouac
+   
+   # Galerie des Massues vers la rivière
    16.18 17.1    6.240       256.0       0.0       1.0       1.0       4.0       1.0    
    extend right
    17.1 17.2    12.41       182.0       16.      0.70      0.70       2.0       1.0    
@@ -253,7 +271,7 @@ centerline -title "g. des Massues : 9.26_16.1 17.12_17.13"
 endcenterline
 
   
-centerline -title "16.7_18.1 18.17_16.18"
+centerline -title "G. des Massues entre P.-que-l'on-traverse et 4 vents : 16.7_18.1 18.17_16.18"
  # 116.70
    date 1986.07.27
    # declination -2.0529 grad
@@ -266,6 +284,7 @@ centerline -title "16.7_18.1 18.17_16.18"
    units clino grad
 
    data normal from to length compass clino left right up down
+   # Galerie des Massues entre Puits que l'on traverse et 4 vents
    #extend ignore 16.7 18.1
    16.7 18.1    6.8       90.      -35.       1.0       1.0       1.5       0.0    
    extend right

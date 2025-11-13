@@ -1,0 +1,197 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -127.99999999999997 -128.0 736.0 831.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {460.41700000000003 1 1.0} {393.702 0} Pinaille2025-coupe.xvi 0 {}
+
+
+
+scrap SC-Pinaille2025-1 -projection extended -station-names "" "@Pinaille2025" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 679.1814 -128.0 0.0 0.0 20.50240756 0.0 m]
+
+line rope -clip off
+  460.0 411.5
+  423.0 417.5
+  398.0 371.0
+  397.0 316.0
+endline
+
+line rope -clip off
+  556.0 544.5
+  506.5 533.5
+  500.5 400.0
+endline
+
+line rope -clip off
+  215.0 343.5
+  168.5 335.5
+  163.5 223.0
+  191.5 106.0
+endline
+
+line wall
+  140.0 470.0
+  140.0 470.0 169.0 463.0 169.0 458.0
+  169.0 453.0 173.0 434.0 180.0 429.5
+  187.0 425.0 190.0 412.0 181.0 402.0
+  172.0 392.0 143.0 391.0 143.0 391.0
+  smooth off
+endline
+
+line wall
+  148.0 544.0
+  148.0 544.0 197.5 534.5 204.0 529.0
+  210.5 523.5 235.0 498.0 236.0 486.0
+  237.0 474.0 235.0 447.5 240.0 439.0
+  245.0 430.5 260.0 395.5 243.5 411.0
+  227.0 426.5 208.5 465.0 207.5 474.0
+  206.5 483.0 182.5 493.5 173.5 498.5
+  164.5 503.5 146.0 507.0 146.0 507.0
+  smooth off
+endline
+
+line wall
+  268.0 652.0
+  268.0 652.0 289.0 645.5 292.5 630.5
+  296.0 615.5 291.5 599.5 284.5 588.0
+  277.5 576.5 278.5 543.5 260.5 549.5
+  242.5 555.5 231.0 567.0 219.0 570.5
+  207.0 574.0 169.0 602.5 169.0 602.5
+  smooth off
+endline
+
+line wall
+  560.0 582.5
+  560.0 582.5 527.0 574.5 513.0 577.5
+  499.0 580.5 431.0 632.5 423.0 635.5
+  415.0 638.5 356.0 676.0 341.5 678.0
+  327.0 680.0 305.0 690.0 305.0 690.0
+  smooth off
+endline
+
+line wall
+  420.0 307.5
+  420.0 307.5 422.5 317.0 424.0 325.5
+  425.5 334.0 423.5 338.0 434.0 338.0
+  444.5 338.0 461.5 339.0 474.0 339.5
+  486.5 340.0 488.0 343.5 487.0 349.0
+  486.0 354.5 486.0 367.0 486.0 372.5
+  486.0 378.0 486.5 383.5 495.0 383.5
+  503.5 383.5 516.5 379.5 517.0 387.0
+  517.5 394.5 516.0 442.5 516.5 456.0
+  517.0 469.5 519.5 486.0 522.0 501.0
+  524.5 516.0 524.5 520.0 530.5 524.5
+  536.5 529.0 556.0 531.5 556.0 531.5
+  smooth off
+  altitude .
+endline
+
+point 202.5 632.0 height -value [+30 m]
+
+point 382.0 443.5 height -value [+12 m]
+
+point 547.5 340.5 height -value [+6 m]
+
+point 588.5 444.0 height -value [+20 m]
+
+line wall -close on
+  316.0 549.0
+  316.0 549.0 310.5 581.0 313.0 590.0
+  315.5 599.0 305.0 615.0 321.0 615.5
+  337.0 616.0 360.0 609.0 368.5 597.5
+  377.0 586.0 387.5 545.5 372.0 544.5
+  356.5 543.5 333.0 527.5 327.0 534.0
+  321.0 540.5 316.0 549.0 316.0 549.0
+  smooth off
+endline
+
+line wall -close on -subtype debris
+  437.5 390.0
+  437.5 390.0 473.5 391.0 474.0 386.5
+  474.5 382.0 468.5 371.0 466.5 365.0
+  464.5 359.0 448.0 350.0 444.5 350.0
+  441.0 350.0 424.0 356.5 424.0 364.5
+  424.0 372.5 424.5 377.0 428.0 381.5
+  431.5 386.0 437.5 390.0 437.5 390.0
+  smooth off
+endline
+
+line wall -subtype debris
+  205.5 325.5
+  205.5 325.5 236.0 331.0 244.5 331.0
+  253.0 331.0 271.5 334.5 277.5 335.5
+  283.5 336.5 283.5 343.0 292.0 343.0
+  300.5 343.0 309.5 345.0 314.5 341.5
+  319.5 338.0 312.5 317.5 320.5 315.0
+  328.5 312.5 347.0 317.0 356.5 310.0
+  366.0 303.0 369.0 305.5 377.0 305.0
+  385.0 304.5 393.5 305.5 402.5 306.0
+  411.5 306.5 420.0 307.5 420.0 307.5
+  smooth off
+endline
+
+point 106.5 594.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -text "Méandre énorme"
+
+line water-flow -subtype conjectural
+  316.0 281.0
+  316.0 281.0 249.0 271.0 237.5 269.0
+  226.0 267.0 214.5 261.5 214.5 261.5
+  smooth off
+endline
+
+line water-flow
+  480.0 348.5
+  480.0 348.5 442.5 348.0 434.0 343.5
+  425.5 339.0 414.5 316.5 407.0 313.5
+  399.5 310.5 372.0 299.0 372.0 299.0
+  smooth off
+endline
+
+line water-flow
+  568.0 539.0
+  568.0 539.0 534.0 534.5 527.5 528.5
+  521.0 522.5 509.0 479.5 509.0 467.0
+  509.0 454.5 506.0 398.0 506.0 398.0
+  smooth off
+endline
+
+point 594.5 612.0 air-draught -orientation 74.2 -subtype winter
+
+point 84.5 496.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -text "Galerie remontante"
+
+point 253.5 701.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -text "Galerie remontante"
+
+point 605.5 564.0 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Escalade de la Pinaille" -attr CA "Courant d'air aspirant en hiver" -text "Suite logique dans la faille, galerie horizontale active, 2 * 3 m, E20 à faire, courant d'air"
+
+point 456.5 284.5 label -text "R4"
+
+line wall
+  184.0 317.5
+  184.0 317.5 180.5 321.5 189.0 323.5
+  197.5 325.5 205.5 325.5 205.5 325.5
+  smooth off
+endline
+
+point 183.417 325.192 station -name 10
+
+point 239.507 335.35200000000003 station -name 9
+
+point 174.267 470.392 station -name 8
+
+point 217.027 563.312 station -name 7
+
+point 298.03700000000003 532.992 station -name 6
+
+point 298.03700000000003 346.612 station -name 5
+
+point 389.377 315.35200000000003 station -name 4
+
+point 435.587 405.272 station -name 3
+
+point 460.41700000000003 393.702 station -name 0
+
+point 393.697 602.752 station -name 2
+
+point 518.7570000000001 532.522 station -name 1
+
+endscrap
+
+

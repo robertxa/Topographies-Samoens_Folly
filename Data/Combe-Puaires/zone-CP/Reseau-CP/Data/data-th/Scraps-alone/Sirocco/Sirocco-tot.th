@@ -1,0 +1,13 @@
+encoding utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Sirocco -title "Puits et Galerie du Sirocco"
+	#input Data/Sirocco.th
+	input Data/Attente/Attente-tot.th
+		#equate 29b@Attente.Attente.Sirocco 9.21@ReseauCP
+
+	#input Sirocco-maps.th
+endsurvey
