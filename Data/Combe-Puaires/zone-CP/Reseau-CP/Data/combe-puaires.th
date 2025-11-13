@@ -39,6 +39,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 
 	input data-th/Scraps-alone/Sirocco/Sirocco-tot.th
 		equate 29b@Attente.Attente.Sirocco 9.21@ReseauCP
+		join SP-Attente-1@Attente.Sirocco SP-4vents-3
 
 	
 	input data-th/Scraps-alone/CP16/Data/CP16.th

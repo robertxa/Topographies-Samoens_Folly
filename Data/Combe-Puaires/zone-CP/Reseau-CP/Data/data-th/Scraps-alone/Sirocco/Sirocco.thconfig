@@ -151,10 +151,10 @@ endlayout
  
   
 #export map -fmt xvi -layout xviexport -o Data/Sirocco-map2023a.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/Sirocco-coupe2023a.xvi
+#export map -projection extended -fmt xvi -layout xviexport -o Data/Sirocco-coupe2023a.xvi
 
 # Select maps
-	select MP-Sirocco-tot@Sirocco
+	select MP-Sirocco@Sirocco
 	select MC-Sirocco@Sirocco
 	  
  export map -o Outputs/Sirocco-plan.pdf -layout my_layout

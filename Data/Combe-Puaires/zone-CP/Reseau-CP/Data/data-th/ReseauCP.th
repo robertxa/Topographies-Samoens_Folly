@@ -45,9 +45,29 @@ centerline -title "Galerie du 8 et Sirocco : 1.0_9.1 9.25_9.26"
    9.12 9.13    21.12       84.       17.       1.5       1.5       6.0       1.0    
    9.13 9.14    22.87       71.       14.       1.5       1.5       4.0       1.0    
    9.14 9.15    11.33       276.0      -18.       1.5       1.5       1.0       1.0    
-   
-   # Vers Sirocco
    9.15 9.16    7.9       57.      -15.       1.5       1.5       1.0       1.0    
+
+endcenterline
+
+centerline -title "Galerie du 8 et Sirocco : 1.0_9.1 9.25_9.26"
+   # Sirocco et galerie du 8
+   date 1986.07.27
+   #declination -2.0529 degrees
+  team "Christophe Ohl"
+  team "Al Warild"
+  team "Christian Roy"
+  team "Pierre Bergeron"
+  explo-date 1986.07.27
+  explo-team "Christophe Ohl"
+  explo-team "Al Warild"
+  explo-team "Christian Roy"
+  explo-team "Pierre Bergeron"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   # Vers Sirocco
    9.16 9.17    10.74       0.0      -90.       1.5       1.5       10.       1.0  # P11  
    9.17 9.18    28.98       250.0      -22.       1.0       1.0       3.0       1.0    
    9.18 9.19    33.88       244.0      -14.       1.0       1.0       3.0       1.0    

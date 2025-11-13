@@ -10,7 +10,7 @@ source Attente-tot.th
 #input legendes/entrances_coordinates.th	# REVOIR CETTE DEFINITION? IL Y A UNE ERREUR !
 
 # Add config file
-input ../../../../../../../../config.thc 
+input ../../../../../../../../../../config.thc 
   
 layout xviexport
 	scale 1 500
@@ -150,11 +150,11 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/Attente-map2023a.xvi
-export map -projection extended -fmt xvi -layout xviexport -o Data/Attente-coupe2023a.xvi
+export map -fmt xvi -layout xviexport -o Data/Attente-map.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/Attente-coupe.xvi
 
 # Select maps
-	select MP-Attente-tot@Attente
+	select MP-Attente@Attente
 	select MC-Attente@Attente
 	  
  export map -o Outputs/Attente-plan.pdf -layout my_layout
@@ -164,12 +164,3 @@ export map -projection extended -fmt xvi -layout xviexport -o Data/Attente-coupe
 #export map -projection extended -layout my_layout-coupe-Continuations -o Outputs/Attente-coupe-Continuations.pdf
 
 export model -o Outputs/Attente.lox
-  
-# Export ESRI files
-#export map -proj plan -fmt esri -o Outputs/Attente -layout my_layout
-  
-# Export kml files
-#export map -proj plan -fmt kml -o Outputs/Attente.kml -layout my_layout
-
-# Export database sql
-#export database -fmt sql -o Outputs/databaseAttente-2022.sql

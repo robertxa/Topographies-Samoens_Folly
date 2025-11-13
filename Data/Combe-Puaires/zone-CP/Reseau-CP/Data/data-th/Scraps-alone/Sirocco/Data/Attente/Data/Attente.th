@@ -329,15 +329,16 @@ survey Attente -title "boyau de l'Attente (2025)"
     extend ignore
     25 25b 7.87 100.3 -55.9
     # extend auto
-    25 . 7.45 100.1 -55.4
-    25 . 7.87 100.1 -55.6
+    #25 . 7.45 100.1 -55.4
+    #25 . 7.87 100.1 -55.6
     extend right
     25 26 6.21 14.2 18.0
     extend left
     24 27 1.89 119.3 -3.9
     # extend auto
     27 . 1.47 100.9 -35.8
-    extend vertical
+    #extend vertical
+    extend ignore 27 28
     27 28 1.48 97.4 -35.6 # jct
     # extend auto
     28 . 2.72 44.3 -7.1
