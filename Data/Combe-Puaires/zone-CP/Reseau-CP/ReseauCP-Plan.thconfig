@@ -185,6 +185,26 @@ layout my_layout
 	
 endlayout
 
+layout my_layout-continuations
+	copy my_layout
+	copy layoutcontinuation	# Pour afficher le label des continuations
+endlayout
+#layout layout-coupe-continuations
+#	copy layout-coupe
+#	copy layoutcontinuation	# Pour afficher le label des continuations
+#endlayout
+
+layout layout-kml
+	# Définition du système de projection du plan
+	cs UTM32
+	# Couleur de la topographie
+	# Rouge-Orange = 255,69,0 -->
+	# Orange = 255,165,0 -->
+	# Orange Sombre = 255,140,0 -->
+	# Bleu --> 0, 0 255
+	color map-fg [0 0 100]
+endlayout
+
   
 # 3-EXPORTS   
 #export map -fmt xvi -layout xviexport -o data-th2/ReseauCP-map2020.xvi
@@ -197,7 +217,7 @@ endlayout
 	
 export map -o Outputs/2D/ReseauCP-plan2025.pdf -layout my_layout
 #export map -o Outputs/2D/Reptiles-plan2025.pdf -layout my_layout
-#export map -o Outputs/2D/ReseauCP-plan2023-Continuations.pdf -layout my_layout
+export map -o Outputs/2D/ReseauCP-plan-Continuations.pdf -layout my_layout-continuations
   
 # Export des fichiers ESRI
 export map -proj plan -fmt esri -o Outputs/ReseauCP_SHP -layout my_layout
@@ -207,7 +227,7 @@ export model -fmt esri -o Outputs/ReseauCP_SHP
 export model -o Outputs/3D/reseauCP-2025.lox
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2025.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/kml/ReseauCP2025.kml -layout layout-kml
  
 # Export des listes:
 #export database -o Outputs/Lists/databaseCP-2022.sql

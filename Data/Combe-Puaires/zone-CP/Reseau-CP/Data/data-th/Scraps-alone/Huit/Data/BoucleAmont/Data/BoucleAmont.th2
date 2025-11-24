@@ -1,0 +1,199 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -104.38200000000003 -154.871 595.5 416.0898
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {299.21299999999997 1 1.0} {209.351 0} BoucleAmont-map2023a.xvi 0 {}
+
+
+
+scrap SP-BoucleAmont-1 -projection plan -station-names "" "@BoucleAmont" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+line slope
+  391.0 73.75
+  391.0 73.75 399.75 117.25 392.25 119.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  430.25 119.75
+  430.25 119.75 415.75 123.75 412.25 116.75
+  408.75 109.75 412.5 83.5 412.5 83.5
+  smooth off
+  l-size 5.0
+endline
+
+line chimney -close on
+  195.25 83.25
+  195.25 83.25 184.5 86.5 182.75 81.25
+  181.0 76.0 178.0 67.5 185.5 69.0
+  193.0 70.5 200.0 72.0 199.25 76.5
+  198.5 81.0 195.25 83.25 195.25 83.25
+  smooth off
+endline
+
+line slope
+  383.25 133.0
+  383.25 133.0 383.5 157.25 373.75 158.75
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  340.75 146.0
+  340.75 146.0 366.25 151.5 370.0 157.75
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  337.75 159.5
+  337.75 159.5 364.25 156.0 365.75 164.75
+  smooth off
+  l-size 5.0
+endline
+
+line wall -close on -outline in
+  369.75 153.25
+  359.5 169.5
+  364.5 173.5 368.75 166.5 370.5 164.0
+  372.66 160.92 380.0 153.75 376.75 153.75
+  373.5 153.75 369.75 153.25 369.75 153.25
+  smooth off
+endline
+
+line wall -close on -outline in
+  357.5 123.0
+  357.5 123.0 361.5 135.5 365.75 138.0
+  370.0 140.5 393.75 141.5 393.75 135.5
+  393.75 129.5 406.0 123.75 399.0 122.5
+  392.0 121.25 385.75 107.25 376.5 102.5
+  363.75 95.95 362.25 94.0 360.5 107.75
+  359.92 112.28 353.5 115.75 356.0 118.0
+  358.5 120.25 357.5 123.0 357.5 123.0
+  smooth off
+endline
+
+point 164.0 46.5 continuation -attr Cade ED -attr Cavite "Réseau CP" -attr Reseau "Huit" -text "Départ petit en plafond, peu d'intérêt"
+
+line wall
+  336.5 169.0
+  336.5 169.0 344.25 149.0 340.5 143.0
+  336.75 137.0 327.25 120.75 320.25 115.0
+  313.25 109.25 295.0 101.25 276.5 100.0
+  258.0 98.75 246.25 97.25 235.5 103.5
+  224.75 109.75 214.0 109.25 202.5 117.25
+  191.0 125.25 190.5 147.25 184.5 148.0
+  smooth off
+endline
+
+line wall
+  455.25 103.5
+  455.25 103.5 452.25 104.5 446.75 107.5
+  441.25 110.5 442.5 107.0 436.25 114.5
+  430.0 122.0 427.73 119.54 419.75 128.75
+  413.25 136.25 409.75 134.75 404.75 143.5
+  399.75 152.25 403.5 162.5 397.75 169.25
+  392.0 176.0 391.25 183.5 391.25 183.5
+  smooth off
+endline
+
+line wall
+  117.5 118.0
+  117.5 118.0 133.0 101.5 140.5 94.0
+  148.0 86.5 152.5 74.0 161.5 69.0
+  170.5 64.0 184.0 50.0 199.0 50.0
+  214.0 50.0 289.0 66.0 305.0 68.5
+  321.0 71.0 329.0 71.0 344.5 74.0
+  360.0 77.0 383.0 65.75 390.5 72.75
+  398.0 79.75 402.0 89.25 410.5 84.25
+  419.0 79.25 424.5 95.5 424.25 107.0
+  424.11 113.43 432.5 100.25 437.0 100.25
+  441.5 100.25 453.75 98.0 453.75 98.0
+  smooth off
+endline
+
+point 444.953 105.881 station -name 7
+
+point 412.12299999999993 126.36099999999999 station -name 6
+
+line flowstone
+  437.0 100.25
+  437.0 100.25 439.0 101.5 438.75 107.0
+  438.5 112.5 436.25 114.5 436.25 114.5
+  smooth off
+endline
+
+point 442.0 82.75 height -value [+5 m]
+
+point 466.25 98.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Huit" -text "Petite galerie (4 pattes) à atteindre après E5"
+
+point 273.0 69.5 helictites
+
+point 192.25 61.5 stalactites-stalagmites
+
+point 159.0 92.25 clay
+
+point 137.5 121.0 clay
+
+point 191.0 120.25 clay
+
+point 204.0 65.5 clay
+
+point 226.25 96.5 clay
+
+point 253.75 69.0 clay
+
+point 299.25 93.75 clay
+
+point 344.5 84.25 clay
+
+point 335.5 109.25 clay
+
+point 357.75 135.25 clay
+
+point 379.0 102.0 clay
+
+point 390.75 160.5 clay
+
+line pit
+  442.0 98.5
+  442.0 98.5 447.25 100.75 442.75 109.25
+  smooth off
+endline
+
+line pit
+  383.25 156.25
+  383.25 156.25 389.75 137.0 396.0 140.0
+  402.25 143.0 404.75 143.5 404.75 143.5
+  smooth off
+endline
+
+line pit
+  370.75 165.0
+  370.75 165.0 395.75 163.0 393.5 176.0
+  smooth off
+endline
+
+point 410.563 99.79100000000001 station -name 8
+
+point 377.3929999999999 164.821 station -name 5
+
+point 347.973 189.181 station -name 4
+
+point 360.073 136.75099999999998 station -name 2
+
+point 358.97299999999996 157.141 station -name 10
+
+point 327.47299999999996 88.32099999999998 station -name 9
+
+point 187.63299999999998 75.98100000000001 station -name 12
+
+point 207.713 83.941 station -name 11
+
+point 163.783 105.98100000000001 station -name 13
+
+point 122.12299999999999 150.631 station -name 14
+
+endscrap
+
+

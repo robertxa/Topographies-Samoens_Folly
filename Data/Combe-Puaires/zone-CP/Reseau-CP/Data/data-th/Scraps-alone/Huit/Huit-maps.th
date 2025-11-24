@@ -5,6 +5,8 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 map MP-Huit -title "Galerie du Huit"
+	MP-BoucleAmont@BoucleAmont
+	break
 	MP-Escalade1@Escalade1
 	break
 	MP-Huit@Huit
@@ -14,6 +16,8 @@ endmap
 
 map MC-Huit -title "Galerie du Huit"
  	MC-Huit@Huit
+	break
+	MC-BoucleAmont@BoucleAmont
 	break
 	MC-Fakir@Fakir
 	break

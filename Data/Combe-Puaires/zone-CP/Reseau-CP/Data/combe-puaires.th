@@ -36,10 +36,12 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		# ATTENTION, il faudra inclure ces jonctions dans la partie 8
 		equate 0@BoucleAmont.BoucleAmont.Huit	9.14@ReseauCP
 		equate 14@BoucleAmont.BoucleAmont.Huit	9.13@ReseauCP
+		join SP-BoucleAmont-1@BoucleAmont.Huit SP-CP14-2 -count 2
 
 	input data-th/Scraps-alone/Sirocco/Sirocco-tot.th
 		equate 29b@Attente.Attente.Sirocco 9.21@ReseauCP
 		join SP-Attente-1@Attente.Sirocco SP-4vents-3
+		join SC-Attente-1@Attente.Sirocco SC-sirocco-1
 
 	
 	input data-th/Scraps-alone/CP16/Data/CP16.th

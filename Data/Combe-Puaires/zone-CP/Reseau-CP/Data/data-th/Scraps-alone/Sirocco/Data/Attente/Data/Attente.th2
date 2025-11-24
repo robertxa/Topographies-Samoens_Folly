@@ -277,14 +277,14 @@ point 102.75 116.5 clay
 
 point 105.0 86.0 label -text "colm."
 
-line wall -reverse on -clip off -subtype unsurveyed
+line wall -reverse on -outline in -subtype unsurveyed
   627.75 443.25
   627.75 443.25 618.25 438.25 614.25 435.75
   610.25 433.25 600.75 429.0 600.75 429.0
   smooth off
 endline
 
-line wall -reverse on -clip off
+line wall -reverse on -outline in
   600.75 429.0
   600.75 429.0 597.0 427.0 597.25 423.5
   597.5 420.0 597.0 419.25 597.75 416.75
@@ -297,7 +297,7 @@ line wall -reverse on -clip off
   smooth off
 endline
 
-line wall -close on -clip off
+line wall -close on -outline in
   571.0 392.75
   571.0 392.75 562.75 385.0 560.0 385.25
   557.25 385.5 554.0 386.5 556.75 389.25
@@ -307,12 +307,12 @@ line wall -close on -clip off
   smooth off
 endline
 
-line wall -clip off -subtype unsurveyed
+line wall -outline in -subtype unsurveyed
   577.0 407.25
   589.0 419.25
 endline
 
-line wall -clip off
+line wall -outline in
   589.0 419.25
   589.0 419.25 593.0 426.25 593.0 424.0
   593.0 421.75 593.75 413.25 594.0 411.25
@@ -326,14 +326,14 @@ endline
 
 point 683.25 539.75 continuation -attr Code AE -attr Cavite "Réseau CP" -attr Reseau "Puits du Sirocco" -text "Suite de la galerie de l'attente à explorer, un pas facile à équiper"
 
-line wall -clip off -subtype unsurveyed
+line wall -outline in -subtype unsurveyed
   687.75 418.75
   687.75 418.75 663.0 408.75 654.75 405.0
   646.5 401.25 631.5 393.25 631.5 393.25
   smooth off
 endline
 
-line wall -clip off
+line wall -outline in
   631.5 393.25
   631.5 393.25 606.25 373.75 602.5 372.25
   598.75 370.75 590.75 369.5 589.75 367.0

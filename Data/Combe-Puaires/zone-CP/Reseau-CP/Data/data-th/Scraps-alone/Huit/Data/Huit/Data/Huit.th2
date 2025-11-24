@@ -50,14 +50,14 @@ line pit -reverse on
   smooth off
 endline
 
-line wall
+line wall -outline in
   1908.0 1409.5
   1908.0 1409.5 1911.25 1405.5 1910.5 1403.25
   1909.75 1401.0 1905.75 1398.5 1905.75 1398.5
   smooth off
 endline
 
-line wall
+line wall -outline in
   1920.5 1389.5
   1920.5 1389.5 1921.0 1392.75 1923.5 1392.75
   1926.0 1392.75 1926.0 1394.5 1923.25 1397.0
@@ -66,7 +66,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in
   2079.25 1492.75
   2079.25 1492.75 2065.25 1462.25 2062.5 1456.5
   2059.75 1450.75 2060.25 1442.75 2054.25 1439.25
@@ -76,7 +76,12 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -outline in -subtype invisible
+  1912.75 1410.5
+  1908.0 1409.5
+endline
+
+line wall -outline in
   1905.75 1398.5
   1899.0 1401.0 1887.0 1407.5 1888.25 1410.25
   1889.5 1413.0 1891.75 1422.75 1888.75 1422.75
@@ -409,8 +414,8 @@ endline
 point 1942.0 1400.75 height -value [+30? m]
 
 line border
-  1907.5 1397.5
-  1907.5 1397.5 1919.0 1389.75 1920.5 1389.5
+  1905.75 1398.5
+  1905.75 1398.5 1919.0 1389.75 1920.5 1389.5
   smooth off
 endline
 

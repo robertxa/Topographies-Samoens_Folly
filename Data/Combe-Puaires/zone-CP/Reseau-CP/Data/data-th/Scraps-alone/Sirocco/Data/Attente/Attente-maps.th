@@ -4,12 +4,14 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-map MP-Attente -title "Attente"
+map MP-Attente -title "Galerie de l'Attente"
 	SP-Attente-1
 
 endmap
 
-#map MC-Attente -title "Attente"
-
-#endmap
+map MC-Attente -title "Galerie de l'Attente"
+	SC-Attente-1
+	break
+	SC-Attente-2
+endmap
    
