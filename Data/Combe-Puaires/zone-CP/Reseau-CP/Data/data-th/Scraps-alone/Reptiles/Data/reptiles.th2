@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 396.0 506.0 3455.0299999999997 3254.7799999999997
+##XTHERION## xth_me_area_adjust 298.84500000000025 400.9789999999998 3455.0299999999997 3254.7799999999997
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {3327.0299999999997 1 1.0} {3126.7799999999997 1.0@ReseauCP.ReseauCP} ReseauCP-map.xvi 0 {}
 ##XTHERION## xth_me_image_insert {1062.2380000000003 1 1.0} {1274.0169999999998 1.28@reptiles.Reptiles} reptiles-map.xvi 0 {}
@@ -144,6 +144,7 @@ line pit
   881.0 942.75 885.5 942.5 885.5 942.5
   smooth off
   885.5 942.5 881.25 945.25 884.25 948.25
+  smooth off
 endline
 
 line wall
@@ -156,6 +157,7 @@ endline
 line wall
   885.0 945.5
   885.0 945.5 879.0 952.0 877.25 953.75
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -166,6 +168,7 @@ endline
 line wall -subtype presumed
   884.75 943.75
   884.75 943.75 890.25 942.5 892.0 941.75
+  smooth off
 endline
 
 line wall
@@ -221,6 +224,21 @@ line wall
   847.75 869.75 859.0 875.0 863.25 877.75
   867.5 880.5 886.0 891.25 886.0 891.25
   smooth off
+endline
+
+line fault -clip off
+  909.75 905.75
+  960.5 837.5
+endline
+
+line fault -clip off
+  493.25 788.25
+  522.25 742.5
+endline
+
+line fault -clip off
+  592.25 638.75
+  629.5 591.75
 endline
 
 line wall

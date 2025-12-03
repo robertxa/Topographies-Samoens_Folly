@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -129.5 5210.5 1799.81
+##XTHERION## xth_me_area_adjust 1452.06 135.5 5211.0 1799.81
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1580.06 1 1.0} {1671.81 CP12} ../ReseauCP-map.xvi 0 {}
 
@@ -1704,6 +1704,11 @@ line wall
   smooth off
 endline
 
+line fault -clip off
+  3504.0 461.0
+  3663.0 266.0
+endline
+
 line wall
   3387.75 562.0
   3387.75 562.0 3397.5 556.0 3396.75 559.0
@@ -2331,6 +2336,11 @@ line wall -id l615-3538-807
   smooth off
 endline
 
+line fault -clip off
+  3647.0 631.0
+  3870.0 395.0
+endline
+
 line wall -id l614-3524-721
   3398.75 731.5
   3398.75 731.5 3404.75 729.75 3405.0 731.25
@@ -2694,6 +2704,7 @@ point 4601.75 925.5 water-flow -orientation 244.0
 point 4567.5 955.25 water-flow -orientation 222.9
 
 #point 4568.25 1008.0 station -name Xa-2014-15@affluent_Steph
+
 
 point 4548.5 989.0 height -value [+10 m]
 
@@ -4667,6 +4678,21 @@ line wall -id l1118-2235-1019
   smooth off
 endline
 
+line wall
+  2388.0 1090.0
+  2388.0 1090.0 2380.0 1089.5 2377.5 1083.0
+endline
+
+line fault -clip off
+  2790.0 1117.0
+  2829.0 1042.5
+endline
+
+line fault -clip off
+  2714.5 1283.5
+  2760.0 1188.0
+endline
+
 line wall -id l1117-2607-1164
   3013.5 1110.75
   3013.5 1110.75 3006.25 1106.75 2999.0 1108.75
@@ -4760,6 +4786,19 @@ line rock-border -close on
   3039.5 1052.5
 endline
 
+line slope -reverse on
+  2755.0 1127.5
+  2755.0 1127.5 2742.0 1141.75 2726.0 1146.5
+  2710.0 1151.25 2689.5 1150.25 2672.25 1150.75
+  2655.0 1151.25 2615.5 1147.25 2600.0 1144.5
+  2584.5 1141.75 2548.0 1135.75 2534.0 1130.5
+  l-size 8.0
+  2520.0 1125.25 2497.5 1130.5 2492.25 1121.75
+  2487.0 1113.0 2487.25 1100.25 2486.5 1089.0
+  2485.75 1077.75 2487.5 1066.0 2487.5 1066.0
+  smooth off
+endline
+
 line label -id l1166-2814-1165
   3069.0 1045.75
   3069.0 1045.75 3065.75 1046.25 3061.75 1046.25
@@ -4787,7 +4826,7 @@ line label -id l1166-2814-1165
   2850.25 1168.5 2834.5 1162.25 2826.75 1162.75
   2819.0 1163.25 2811.25 1164.75 2808.25 1165.5
   2805.25 1166.25 2794.25 1167.0 2791.25 1167.0
-  2788.25 1167.0 2781.25 1166.75 2781.25 1166.75
+  2788.25 1167.0 2773.75 1165.75 2773.75 1161.5
   smooth off
 endline
 
@@ -4803,8 +4842,8 @@ area water
 endarea
 
 line label -id l1164-2814-1161
-  2781.25 1166.75
-  2781.25 1166.75 2784.25 1163.75 2790.5 1164.25
+  2773.75 1161.5
+  2773.75 1161.5 2784.25 1163.75 2790.5 1164.25
   2796.75 1164.75 2803.5 1164.5 2807.25 1162.5
   2811.0 1160.5 2822.25 1158.5 2826.75 1159.25
   2831.25 1160.0 2851.5 1165.75 2855.5 1166.75
@@ -4827,7 +4866,21 @@ line label -id l1164-2814-1161
   smooth off
 endline
 
-point 2412.25 1100.5 camp
+point 2518.5 1061.0 height -value [+20 m]
+
+point 2526.5 1085.5 water-flow -orientation 313.9
+
+line slope
+  2224.75 981.25
+  2224.75 981.25 2238.0 985.25 2245.0 984.0
+  2252.0 982.75 2254.25 981.75 2261.75 988.5
+  2269.25 995.25 2278.0 1002.0 2290.75 1003.0
+  2303.5 1004.0 2322.25 998.75 2322.25 998.75
+  smooth off
+  l-size 5.0
+endline
+
+point 2278.25 950.0 camp
 
 point 2382.0 1086.75 sand -scale xs
 
@@ -4923,11 +4976,9 @@ point 2820.75 1129.5 height -value [+7 m]
 
 point 2998.0 1125.0 height -value [-7 m]
 
-point 2373.25 1089.75 continuation
-
 point 3097.0 1019.0 continuation -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'homme" -attr Code E -text "Départ à voir après escalade"
 
-point 2541.5 1075.5 continuation -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'homme" -attr Code E -text "Escalade entaméen il faut la terminer, gros volume"
+point 2541.5 1075.5 continuation -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'homme" -attr Code E -text "Escalade entaméen il faut la terminer, il manque 4 m pour atteindre un petit méandre actif"
 
 line pit
   2515.0 1081.5
@@ -4973,6 +5024,25 @@ line pit -reverse on
   2805.75 1152.75 2804.25 1160.25 2800.0 1161.5
   2795.75 1162.75 2784.75 1162.5 2784.75 1162.5
   smooth off
+endline
+
+line pit
+  3015.5 1104.0
+  3015.5 1104.0 3022.75 1102.75 3024.5 1105.25
+  3026.25 1107.75 3025.25 1111.0 3025.25 1112.5
+endline
+
+point 3036.25 1106.25 helictites
+
+point 3068.0 1084.0 stalactites-stalagmites
+
+point 3059.0 1100.25 stalactites-stalagmites
+
+point 2961.0 1052.0 bridge
+
+line pit -reverse on
+  2989.75 1098.5
+  2989.75 1098.5 2987.25 1095.5 2981.75 1095.75
 endline
 
 line pit
@@ -5063,7 +5133,11 @@ endscrap
 
 scrap SP-Homme-5 -projection plan -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
 
-point 1930.0 930.25 label -text "-372 m"
+point 1889.5 893.5 air-draught -orientation 90.4 -scale s -subtype winter
+
+point 1901.0 946.0 dig
+
+point 1951.0 958.25 label -text "-372 m"
 
 point 1918.5 871.75 label -text "Colm."
 
@@ -5099,6 +5173,10 @@ line floor-meander
   smooth off
 endline
 
+point 1919.5 908.0 breakdown-choke -orientation 109.1
+
+point 1889.5 913.5 continuation -attr Code T -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'Homme" -text "Désobstruction dans une trémie instable, il y a du vide dessous"
+
 line wall -id l1193-1998-899
   2173.5 923.75
   2173.5 923.75 2168.75 917.5 2163.5 913.75
@@ -5106,8 +5184,8 @@ line wall -id l1193-1998-899
   2091.5 861.0 2084.0 855.0 2075.25 855.5
   2066.5 856.0 2026.75 884.0 2021.75 886.5
   2016.75 889.0 1978.75 908.25 1967.0 909.5
-  1955.25 910.75 1925.75 920.5 1922.75 914.25
-  1919.75 908.0 1914.75 894.75 1920.25 890.5
+  1955.25 910.75 1926.08 920.33 1922.75 914.25
+  1918.5 906.5 1914.75 894.75 1920.25 890.5
   altitude .
   1925.75 886.25 1929.5 885.75 1933.25 886.0
   1937.0 886.25 1946.75 887.75 1953.0 886.25
@@ -5134,8 +5212,6 @@ endscrap
 
 
 scrap SP-Homme-6 -projection plan -author 1988 "Christophe Ohl" -author 2008 "Stéphane Lips" -author 2011 "Xavier Robert" -copyright 2011 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 1663.4339 -128.0 0.0 0.0 45.50242106 0.0 m]
-
-point 2010.75 971.0 continuation -attr Code T -attr Cavite ReseauCP -attr Reseau "Aval Tête à l'Homme" -text "Désobstruction dans une trémie instable, il y a du vide dessous"
 
 point 2031.75 970.75 breakdown-choke -orientation 124.3
 
@@ -5240,6 +5316,22 @@ line wall -close on -outline in
   2164.25 1030.0 2160.5 1036.0 2160.5 1036.0
   smooth off
 endline
+
+line fault -clip off
+  2033.75 1104.25
+  2085.5 1056.5
+endline
+
+line fault -clip off
+  2153.0 988.75
+  2185.25 960.75
+endline
+
+point 2132.0 1037.5 pebbles
+
+point 2150.0 1042.0 pebbles
+
+point 2138.0 1044.0 pebbles
 
 line wall
   2207.5 1014.5

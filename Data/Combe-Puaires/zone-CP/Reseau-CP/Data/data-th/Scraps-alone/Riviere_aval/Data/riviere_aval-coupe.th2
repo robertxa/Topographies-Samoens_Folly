@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.5 -207.0 4308.2306 1938.7648
+##XTHERION## xth_me_area_adjust -121.00000000000023 -207.0 4308.2306 1938.7648
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {2999.12 1 1.0} {1417.068 17.13} RivAval-coupe.xvi 0 {}
 
@@ -18,7 +18,7 @@ endline
 
 point 631.0 357.5 altitude -align bottom-right
 
-point 620.0 332.0 breakdown-choke -orientation 0.0
+point 613.5 345.5 breakdown-choke -orientation 20.2
 
 point 986.0 384.0 altitude -align bottom-left
 
@@ -26,11 +26,14 @@ point 1020.0 388.0 narrow-end
 
 point 924.0 390.5 dig
 
-point 586.5 351.5 dig
+line fault -clip off
+  937.5 608.5
+  939.0 510.5
+endline
 
 line wall -subtype debris
-  629.5 337.0
-  629.5 337.0 620.0 356.0 631.0 357.5
+  612.5 349.5
+  612.5 349.5 620.0 356.0 631.0 357.5
   642.0 359.0 650.0 359.5 657.0 366.5
   664.0 373.5 674.0 385.5 686.0 394.5
   698.0 403.5 730.5 425.0 752.0 438.5
@@ -43,7 +46,20 @@ line wall -subtype debris
   smooth off
 endline
 
-point 622.0 301.0 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " " -text "Trémie instable à désobstruer, vide important en dessous, gros chantier"
+point 1024.0 449.5 pebbles
+
+point 994.5 437.0 pebbles
+
+point 966.0 441.0 pebbles
+
+line border
+  952.0 444.5
+  952.0 444.5 958.5 447.0 966.5 449.5
+  974.5 452.0 978.5 455.5 989.0 455.5
+  999.5 455.5 1009.5 458.5 1020.5 459.0
+  1031.5 459.5 1048.5 461.0 1048.5 461.0
+  smooth off
+endline
 
 line wall
   1241.0 650.5
@@ -63,7 +79,7 @@ line wall
   653.5 418.5 657.5 392.5 657.5 388.5
   657.5 384.5 655.0 377.0 642.0 372.5
   629.0 368.0 613.0 366.0 612.5 361.0
-  612.0 356.0 612.0 337.0 612.0 337.0
+  612.0 356.0 612.5 349.5 612.5 349.5
   smooth off
 endline
 
@@ -131,6 +147,8 @@ point 1512.41 697.087 station -name 13.26@riviere_aval
 
 point 1241.5100000000002 536.847 station -name 13.27@riviere_aval
 
+point 346.5 366.5 dig
+
 line wall
   1713.0 898.5
   1713.0 898.5 1718.5 869.0 1695.0 861.5
@@ -149,6 +167,11 @@ line wall
   389.0 404.0 386.0 366.5 387.5 358.5
   389.0 350.5 389.0 339.5 389.0 339.5
   smooth off
+endline
+
+line fault -clip off
+  2305.0 1177.0
+  2306.0 1123.0
 endline
 
 line wall
@@ -182,7 +205,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -subtype debris
   2023.5 872.0
   2023.5 872.0 2091.5 899.5 2111.0 904.0
   2130.5 908.5 2164.0 928.0 2176.5 927.5
@@ -243,7 +266,11 @@ endline
 
 point 2193.0 870.0 water-flow -orientation 227.9
 
-point 1664.0 759.5 camp
+point 927.5 478.5 stalactites-stalagmites
+
+point 841.0 448.5 stalactites-stalagmites
+
+point 1194.0 570.0 camp
 
 point 2169.0 889.0 narrow-end
 
@@ -254,15 +281,36 @@ line rope
   1848.5 821.0
 endline
 
-point 1729.5 928.0 continuation -attr Code E  -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " "-text "Escalade des Cataphiles à terminer, gros volume"
+line border
+  1703.0 865.5
+  1703.0 865.5 1700.5 843.0 1704.0 835.0
+  1707.5 827.0 1723.0 827.0 1735.0 828.5
+  1747.0 830.0 1755.5 832.5 1763.0 840.0
+  1770.5 847.5 1764.0 854.0 1772.5 858.5
+  1781.0 863.0 1782.0 868.5 1780.0 875.0
+  1778.0 881.5 1776.5 885.5 1776.5 885.5
+  smooth off
+endline
 
-point 1335.5 533.0 continuation -attr Code Q -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " " -text "Non renseigné sur la topo antérieure"
+point 1726.0 935.0 continuation -attr Code E  -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA " "-text "Escalade des Cataphiles à terminer, gros volume"
+
+point 1286.0 533.0 clay
+
+line wall -subtype unsurveyed
+  1332.5 566.0
+  1332.5 566.0 1302.0 550.5 1290.0 546.5
+  1278.0 542.5 1261.0 539.0 1263.5 533.5
+  1266.0 528.0 1277.0 527.5 1301.0 529.5
+  1325.0 531.5 1344.0 546.5 1350.0 552.5
+  1356.0 558.5 1355.5 564.0 1355.5 564.0
+  smooth off
+endline
 
 point 2468.5 1082.0 height -value [+7 m]
 
 point 2436.5 953.5 height -value [-23 m]
 
-point 1742.5 839.5 height -value [+25 m]
+point 1830.5 956.5 height -value [+25 m]
 
 point 1693.5 471.5 label -text "galerie de la Tête à l'Homme"
 
@@ -312,13 +360,30 @@ point 396.0 335.0 breakdown-choke -orientation 0.0
 
 point 389.0 339.5 altitude -align bottom-left
 
+line fault -clip off
+  406.0 515.0
+  396.0 423.0
+endline
+
+point 367.0 302.0 air-draught -orientation 41.1 -subtype winter -scale s
+
+point 412.5 305.5 continuation -attr Code D -attr Cavite "RéseauCP" -attr Reseau "Rivière aval" -attr CA "Courant d'air soufflant en hiver, léger" -text "Trémie instable à désobstruer, vide important en dessous, gros chantier"
+
 line wall -subtype debris
-  400.0 342.5
-  400.0 342.5 491.0 354.0 521.0 363.0
-  551.0 372.0 568.0 376.5 591.0 380.0
+  400.5 341.0
+  500.0 382.5 470.5 332.0 508.0 351.5
+  521.29 358.41 568.0 376.5 591.0 380.0
+endline
+
+line wall
+  591.0 380.0
   614.0 383.5 705.0 397.5 721.5 400.0
   738.0 402.5 794.5 415.0 813.0 422.0
   831.5 429.0 889.0 442.0 912.0 450.0
+endline
+
+line wall -subtype debris
+  912.0 450.0
   935.0 458.0 1094.0 514.0 1113.0 516.0
   1132.0 518.0 1185.5 523.0 1208.5 525.0
   1231.5 527.0 1233.0 527.0 1244.0 531.5
@@ -397,11 +462,36 @@ line wall
   smooth off
 endline
 
+line fault -clip off
+  3835.5 1649.5
+  3835.0 1559.0
+endline
+
+point 3664.0 1249.0 label -text "R3"
+
+point 3728.0 1300.5 label -text "R3"
+
+line rock-border -close on
+  3671.0 1324.5
+  3667.5 1311.0
+  3688.0 1319.5
+  3693.5 1335.0
+  3671.0 1324.5
+endline
+
+line rock-border -close on
+  3695.5 1329.0
+  3694.5 1359.5
+  3712.5 1359.5
+  3715.5 1341.5
+  3695.5 1329.0
+endline
+
 line wall -subtype debris
   3437.5 1223.5
   3437.5 1223.5 3513.5 1252.5 3536.5 1263.5
-  3559.5 1274.5 3696.0 1328.0 3706.0 1331.5
-  3716.0 1335.0 3753.5 1358.5 3767.5 1358.5
+  3567.36 1278.26 3685.0 1303.0 3706.0 1331.5
+  3712.28 1340.02 3753.5 1358.5 3767.5 1358.5
   3781.5 1358.5 3799.0 1359.5 3816.5 1352.5
   3834.0 1345.5 3846.0 1344.0 3850.0 1340.0
   3854.0 1336.0 3876.5 1324.5 3883.0 1331.5
@@ -682,14 +772,20 @@ line wall
   smooth off
 endline
 
+line border
+  2944.5 1213.0
+  2944.5 1213.0 2962.5 1214.0 2978.5 1213.5
+  2994.5 1213.0 2998.0 1212.5 3005.0 1212.5
+endline
+
 line wall
   2706.0 1078.0
   2706.0 1078.0 2768.5 1103.5 2777.0 1105.0
   2785.5 1106.5 2788.0 1103.0 2797.0 1100.5
   2806.0 1098.0 2831.0 1096.5 2836.0 1097.5
-  2841.0 1098.5 2845.5 1108.0 2859.5 1114.5
-  2873.5 1121.0 2949.0 1150.5 2963.5 1155.5
-  2978.0 1160.5 2990.0 1161.0 3002.0 1164.0
+  2841.0 1098.5 2844.22 1112.52 2859.5 1114.5
+  2886.5 1118.0 2912.0 1151.5 2963.5 1155.5
+  2978.77 1156.69 2990.0 1161.0 3002.0 1164.0
   3014.0 1167.0 3018.0 1164.5 3027.0 1164.5
   3036.0 1164.5 3034.0 1156.5 3042.0 1155.5
   3050.0 1154.5 3061.5 1152.5 3066.5 1155.0
