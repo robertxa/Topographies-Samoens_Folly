@@ -1,0 +1,62 @@
+encoding utf-8
+
+# Copyright (C) 2019 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey HuitAmont -title "Galerie du Huit Amont" 
+  
+centerline -title "Galerie du 8 amont : 1.0_9.1 9.25_9.26"
+   # Sirocco et galerie du 8
+   date 1986.07.27
+   #declination -2.0529 degrees
+  team "Christophe Ohl"
+  team "Al Warild"
+  team "Christian Roy"
+  team "Pierre Bergeron"
+  explo-date 1986.07.27
+  explo-team "Christophe Ohl"
+  explo-team "Al Warild"
+  explo-team "Christian Roy"
+  explo-team "Pierre Bergeron"
+
+   units lenght meters
+   units compass degrees
+   units clino degrees
+   data normal from to length compass clino left right up down
+   extend right
+   9.10 9.11    15.43       80.       16.       1.5       1.5       5.0       1.0    
+   9.11 9.12    41.04       69.       12.       1.5       1.5       4.0       1.0    
+   9.12 9.13    21.12       84.       17.       1.5       1.5       6.0       1.0    
+   9.13 9.14    22.87       71.       14.       1.5       1.5       4.0       1.0    
+   9.14 9.15    11.33       276.0      -18.       1.5       1.5       1.0       1.0    
+   9.15 9.16    7.9       57.      -15.       1.5       1.5       1.0       1.0    # Sommet puits vers CP14 et Sirocco
+
+endcenterline
+  
+  
+centerline -title "G. des 4 Vents vers Rasoir : 16.7_11.1 11.38_9.14"
+ # 314.06 m de topo non trouvé !!!!!
+    date 1986.09.21
+   #declination -2.0529 grad
+  team "Vincent Treiber"
+  team "Philippe Rydin"
+  team "Christophe Ohl"
+  team "Al Warild"  
+  explo-date 1986.09.21
+  explo-team "Vincent Treiber"
+  explo-team "Philippe Rydin"
+  explo-team "Christophe Ohl"
+  explo-team "Al Warild"
+   units lenght meters
+   units compass grad
+   units clino grad
+
+   data normal from to length compass clino left right up down
+   extend left
+   
+   11.38 9.14    8.410       324.0      -10.       0.0       0.0       0.0       0.0     # Pour la jonction !
+endcenterline
+
+  
+endsurvey

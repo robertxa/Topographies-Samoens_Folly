@@ -150,18 +150,6 @@ map MC-espoir -title "Réseau de l'Espoir'"
 	SC-gant-2 #@ReseauCP
 endmap
 
-map MC-huit -title "galerie du Huit"
-	SC-huit-3 #@ReseauCP
-	#break
-	#SC-huit-2@Huit.Huit #@ReseauCP
-	#break
-	#SC-huit-1@Huit.Huit #@ReseauCP
-	#break
-	#SC-Huit2025-1@Huit.Huit
-	#break
-	#SC-Huit2025-2@Huit.Huit
-endmap
-
 #####################################################################
 #    Réseaux intermédiaires
 
@@ -198,8 +186,6 @@ map MC-ReseauCP-total -title "Réseau de la Combe au Puaires<br>CP07 - CP12 - CP
 	MC-CP16
 	break
 	MC-espoir
-	break
-	MC-huit
 	break
 	MC-Huit@Huit
 	break

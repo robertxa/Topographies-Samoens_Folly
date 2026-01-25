@@ -1,0 +1,33 @@
+encoding utf-8
+
+# Copyright (C) 2025 Groupe Spéléologique Vulcain, Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey LP23b -title "LP23b" #-entrance "LP23b"
+  
+   centerline
+
+      cs lat-long
+      ##fix LP23b1    46.11196        6.80040       2263	# 2259
+      fix LP23b   46.11226   6.80027   2263  # Altitude à Partir LidaHD
+      ##fix LP33   46.11196 6.8003955   2270  # Altitude à REVOIR
+      station LP23b "LP23b" entrance
+      ##station LP23b2 "LP23b-2" entrance
+
+      fix TEST    46.11196        6.80040       2263	# 2259
+      station TEST "LP TEST" entrance
+
+      #explo-date 1988.11.11
+      #   explo-team "Vincent Treiber"
+      #   explo-team "Philippe Rydin"
+      #   explo-team "Christophe Ohl"
+      #units lenght meters
+      #units compass grad
+      #units clino grad
+  
+      #data normal from to length compass clino #left right up down
+
+   endcenterline
+
+endsurvey

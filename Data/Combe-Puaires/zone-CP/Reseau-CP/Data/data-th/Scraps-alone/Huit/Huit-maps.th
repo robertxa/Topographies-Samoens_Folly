@@ -7,6 +7,8 @@ encoding  utf-8
 map MP-Huit -title "Galerie du Huit"
 	MP-BoucleAmont@BoucleAmont
 	break
+	MP-HuitAmont@HuitAmont
+	break
 	MP-Escalade1@Escalade1
 	break
 	MP-Huit@Huit
@@ -15,7 +17,9 @@ map MP-Huit -title "Galerie du Huit"
 endmap
 
 map MC-Huit -title "Galerie du Huit"
- 	MC-Huit@Huit
+ 	MC-HuitAmont@HuitAmont
+	break
+	MC-Huit@Huit
 	break
 	MC-BoucleAmont@BoucleAmont
 	break

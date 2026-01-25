@@ -27,7 +27,7 @@ layout my_layout
 	doc-title "Huit"
 	doc-author "Xavier Robert"
 	cs UTM32
-	base-scale 1 500
+	base-scale 1 1000
 	scale 1 500
 	scale-bar 50 m
 	#base-scale 1 1000
@@ -47,7 +47,7 @@ layout my_layout
 	statistics copyright all
 	legend off
 	legend-width 14.5 cm
-	map-header 0 00 nw
+	map-header 3 95 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
@@ -87,8 +87,8 @@ layout my_layout-coupe
 	doc-title "Huit"
 	doc-author "Xavier Robert"
 	
-	base-scale 1 500
-	scale 1 500
+	base-scale 1 1500
+	scale 1 1000
 	scale-bar 50 m
 	#base-scale 1 1400
 	#scale 1 1400
@@ -105,17 +105,25 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
+	
+	statistics explo off
+	statistics topo off
+	statistics copyright off
+	
 	legend off
 	legend-width 14.5 cm
-	map-header 30 100 ne
+	#map-header 30 100 ne
+	map-header 10 155 nw
 	map-header-bg off
 	layers on
 	symbol-hide line survey
-	symbol-hide line map-connection
+	#symbol-hide line map-connection
 	#debug station-names
 	#grid bottom
 	#grid-size 100 100 100 m
 	grid off
+	color map-fg altitude
+	color-legend off
  
 	# To change the Title          
 	code tex-map
@@ -126,7 +134,7 @@ layout my_layout-coupe
 			\cavename={Galerie du Huit} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Groupe Spéléologique Vulcain}
+		%\newtoks\club \club={Groupe Spéléologique Vulcain}
 		% Ajout de la spéléométrie explorée
 		#\cavelength{30\thinspace{}m}
 		#\cavedepth{-30\thinspace{}m}

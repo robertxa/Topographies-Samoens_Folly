@@ -21,22 +21,33 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
 		equate E.9@2xxpats E.9@CP14
 	
 	input data-th/Scraps-alone/Huit/Huit-tot.th
-		equate 9.10@Huit.Huit.Huit 9.10@ReseauCP
-		#input data-th/Scraps-alone/Huit/Data/Huit.th2
+		equate 9.16@HuitAmont.HuitAmont.Huit 9.16@ReseauCP
+		equate 11.38@HuitAmont.HuitAmont.Huit 11.38@ReseauCP
+		join SC-Sirocco-0@HuitAmont.Huit SC-sirocco-1
+
+		# REVOIR JONCTIOn 8 AVEC LA BOUCLE DU RASOIR/4VENTS/SIROCCO !
+
 		join SP-huit-1@Huit.Huit SP-Huit-2@Aval-CP12
-		join SP-huit-1@Huit.Huit SP-CP14-2 -count 2	# Attention SP-CP14-2 est dans le fichier Billy.th2 qui est à découper
-		join SP-Huit2025-1@Huit.Huit SP-CP14-2
-		join SP-Huit2025-2@Huit.Huit SP-CP14-2
+		#join SP-huit-1@Huit.Huit SP-CP14-2 -count 2	# Attention SP-CP14-2 est dans le fichier Billy.th2 qui est à découper
+		#join SP-Huit2025-1@Huit.Huit SP-CP14-2	#	A SUPPRIMER
+		#join SP-Huit2025-2@Huit.Huit SP-CP14-2	#	A SUPPRIMER
 		
 		join SC-aval-CP12-2@Aval-CP12 SC-huit-1@Huit.Huit
-		join SC-huit-2@Huit.Huit SC-huit-3
+		#join SC-huit-2@Huit.Huit SC-huit-3
 
  	input data-th2/Huit-coupe.th2	# Attention, il va falloir découper le dessin de la coupe pour que ça entre dans les clous !
 
 		# ATTENTION, il faudra inclure ces jonctions dans la partie 8
-		equate 0@BoucleAmont.BoucleAmont.Huit	9.14@ReseauCP
-		equate 14@BoucleAmont.BoucleAmont.Huit	9.13@ReseauCP
-		join SP-BoucleAmont-1@BoucleAmont.Huit SP-CP14-2 -count 2
+		#equate 0@BoucleAmont.BoucleAmont.Huit	9.14@ReseauCP	# A supprimer !
+		#equate 14@BoucleAmont.BoucleAmont.Huit	9.13@ReseauCP	# A supprimer
+		#join SP-BoucleAmont-1@BoucleAmont.Huit SP-CP14-2 -count 2	# A supprimmer
+
+		#equate 11.38@HuitAmont.HuitAmont.Huit 11.38@ReseauCP	# Amont Huit vers Rasoir
+		#equate 9.16@HuitAmont.HuitAmont.Huit 9.16@ReseauCP	# Départ de la faille du Sirocco/CP14
+		#join SC-Sirocco-0 SC-Sirocco-1
+		#join SP-HuitAmont-1@HuitAmont.Huit SP-CP14-2
+		#join SC-huit-3@HuitAmont.Huit SC-Sirocco-4b
+		
 
 	input data-th/Scraps-alone/Sirocco/Sirocco-tot.th
 		equate 29b@Attente.Attente.Sirocco 9.21@ReseauCP
@@ -154,7 +165,7 @@ survey ReseauCP -title "Réseau de la Combe aux Puaires<br>CP07 - CP12 - CP14 - 
  		join SP-rivamont2019-3 SP-palm-2
  	
  	input data-th2/CP14-2011.th2
- 		join SP-CP14_2008-1 SP-CP14-2
+ 		#join SP-CP14_2008-1 SP-CP14-2	# Join à Améliorer !!!!
 
 
 

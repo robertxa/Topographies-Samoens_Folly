@@ -34,7 +34,7 @@ layout my_layout
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  map-comment "Gouffre Jean-Bernard, plan, Samoëns, 74, France"
+  map-comment "<it>plan -<ss> Gouffre Jean-Bernard, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
@@ -74,18 +74,18 @@ layout my_layout-coupe
    doc-author "Xavier Robert"
    cs UTM32
    base-scale 1 1000
-  scale 1 1000
-   scale-bar 100 m
+  scale 1 500
+   scale-bar 50 m
 
   #color map-bg 85
   color map-fg [100 100 80]
   transparency on
   opacity 75
-  map-comment "Gouffre Jean-Bernard, coupe développée, Samoëns, 74, France"
+  map-comment "<it>Coupe développée -<ss> Gouffre Jean-Bernard, Samoëns, 74, France"
    statistics explo-length off
   statistics topo-length off
    statistics copyright all
-  legend on
+  legend off
      legend-width 14.5 cm
   map-header 0 00 nw
   map-header-bg off

@@ -37,7 +37,8 @@ layout my_layout
 	# employee, c est le cas apres avoir dessine la topo
 	# sur un cheminement exporte avec le layout "xviexport"
 	# (voir en bas)
-	base-scale 1 1250
+	#base-scale 1 1250
+	base-scale 1 1000
   
 	# "scale" : specification de l echelle,
 	# pour imprimer la topo. La combination entre scale et base-scale
@@ -48,7 +49,10 @@ layout my_layout
 	# l imprimante ne specifie pas l option "Fit in page"
 	# ou similaire, sinon, l echelle sera change pendant
 	# l impression
-	scale 1 1000
+	scale 1 500
+
+	# echelle graphique 100 m ampleur
+	scale-bar 50 m
   
 	# Pour faire une rotation
 	#rotate 2.25
@@ -69,14 +73,8 @@ layout my_layout
 	# Pourcentage de transparence, marche seulement si transparency est "on"
 	opacity 75
   
-	# Il faut s exprimer avec la langue de Voltaire...
-	language fr
-  
-	# echelle graphique 100 m ampleur
-	scale-bar 100 m
-  
 	# Un commentaire a ajounter au titule,
-	map-comment "CP12, Samoëns, 74, France"
+	map-comment "<it>Plan -<ss> Réseau de la Combe aux Puaires, Samoëns, 74, France"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs
@@ -92,7 +90,7 @@ layout my_layout
 	legend off
   
 	# Par defaut, la legende est de 14 cm de largeur
-	legend-width 15 cm
+	legend-width 13.5 cm
   
 	# Specification la position de la manchette : interieur
 	# occuppe par le titule, auteurs, etc. Nous pouvons indiquer
@@ -102,7 +100,8 @@ layout my_layout
 	# La manchette a des "points cardinaux" : n, s, ne, sw, etc.
 	# Il faut specifier un de ces points 
 	#map-header 100 -80 se
-	map-header 30 30 nw
+	#map-header 30 30 nw
+	map-header 0 0 nw
    
 	# arrière plan de la manchette
 	map-header-bg off
@@ -181,7 +180,8 @@ layout my_layout-coupe
 	# employee, c est le cas apres avoir dessine la topo
 	# sur un cheminement exporte avec le layout "xviexport"
 	# (voir en bas)
-	base-scale 1 1250
+	#base-scale 1 1250
+	base-scale 1 1000
   
 	# "scale" : specification de l echelle,
 	# pour imprimer la topo. La combination entre scale et base-scale
@@ -192,7 +192,10 @@ layout my_layout-coupe
 	# l imprimante ne specifie pas l option "Fit in page"
 	# ou similaire, sinon, l echelle sera change pendant
 	# l impression
-	scale 1 1000
+	scale 1 500
+	
+	# echelle graphique 100 m ampleur
+	scale-bar 50 m
   
 	# Pour faire une rotation
 	#rotate 2.25
@@ -212,16 +215,10 @@ layout my_layout-coupe
   
 	# Pourcentage de transparence, marche seulement si transparency est "on"
 	opacity 75
-  
-	# Il faut s exprimer avec la langue de Voltaire...
-	language fr
-  
-	# echelle graphique 100 m ampleur
-	scale-bar 100 m
-  
+    
 	# Un commentaire a ajounter au titule,
 	#map-comment "Diverticule du méandre Billy, Coupe développée, Samoëns, 74, France"
-	map-comment "CP12, Samoëns, 74 - <it>Coupe développée"
+	map-comment "<it>Coupe développée -<ss> Réseau de la Combe aux Puaires, Samoëns, 74"
   
 	# Afficher les statistiques d explo par équipe/nom. C est lourd
 	# si la cavite est importante et qu il y a beaucoup d explorateurs

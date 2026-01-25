@@ -8,7 +8,7 @@ survey L41 -title "L41"
     #puits protégé à descendre. les cailloux roulent sur 30 à 40 mètres - geo:,
 
     cs long-lat
-    fix L41 6.801304 46.109917 2305  # Alt à CORRIGER
+    fix L41 6.801304 46.109917 2305  # Altitude issue du Lidar HD
 
 
     date 2025.08.24 
@@ -22,7 +22,7 @@ survey L41 -title "L41"
     extend left
     flags approximate
     L41  0 0 0 0 1 1 0 10
-    0 1 40 0 -90 1 1 10 0 # P30 à 40
+    0 1 40 0 -90 1 1 10 0 # P30 à P40
     flags not approximate
     
   endcenterline

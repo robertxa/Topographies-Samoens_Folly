@@ -1,0 +1,53 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 206.74020000000002 246.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {50.8678 1 1.0} {76.6185 LS67} LS67-map.xvi 0 {}
+
+
+
+scrap SP-LS67-1 -projection plan -station-names "" "@LS67" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 38.75 116.75 label -text "<bf>LS67" -scale xl
+
+point 46.75 90.75 entrance -orientation 159.4
+
+point 68.0 36.5 ice
+
+point 55.75 44.5 ice
+
+point 52.25 29.5 ice
+
+point 65.75 42.5 ice
+
+point 52.0 57.75 ice
+
+point 53.25 67.0 ice
+
+area ice
+  l5-66-68
+endarea
+
+line wall -id l5-66-68 -close on -subtype pit
+  48.0 76.25
+  48.0 76.25 46.5 73.75 45.25 69.0
+  44.0 64.25 47.0 58.75 49.25 56.0
+  51.5 53.25 55.0 42.0 45.75 30.75
+  40.75 24.67 52.5 25.75 57.5 25.75
+  altitude .
+  62.5 25.75 71.75 30.5 73.75 31.0
+  75.75 31.5 78.5 34.0 74.5 38.75
+  70.5 43.5 64.0 55.5 62.25 57.75
+  60.5 60.0 67.5 63.75 65.75 68.25
+  altitude .
+  64.0 72.75 62.0 69.5 59.25 73.75
+  56.5 78.0 48.0 76.25 48.0 76.25
+  smooth off
+endline
+
+point 64.4078 27.3185 station -name 1
+
+point 50.8678 76.6185 station -name 0
+
+endscrap
+
+

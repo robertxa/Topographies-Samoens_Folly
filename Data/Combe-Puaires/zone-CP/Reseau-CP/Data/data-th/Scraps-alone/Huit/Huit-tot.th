@@ -6,6 +6,14 @@ encoding utf-8
 
 survey Huit -title "Huit"
 	input Data/Huit/Huit-tot.th
+
+	input Data/HuitAmont/HuitAmont-tot.th
+		equate 9.10@HuitAmont.HuitAmont 9.10@Huit.Huit
+		join SP-HuitAmont-1@HuitAmont SP-huit-1@Huit -count 2
+		join SP-HuitAmont-1@HuitAmont SP-Huit2025-1@Huit
+		join SP-HuitAmont-1@HuitAmont SP-Huit2025-2@Huit
+
+		join SC-huit-3@HuitAmont SC-huit-2@Huit
 	input Data/Fakir/Fakir-tot.th
 		equate 59@Fakir2025.Fakir 	9.10@Huit.Huit
 		#equate 57@Fakir.Fakir 	10.1@Huit.Huit
@@ -19,8 +27,9 @@ survey Huit -title "Huit"
 	
 	input Data/BoucleAmont/BoucleAmont-tot.th
 		# Faire l'Equate ici lorsque tout sera bien mis ensemble ! --> Boulot de découpage
-		#equate 0@BoucleAmont.BoucleAmont	9.14@ReseauCP
-		#equate 14@BoucleAmont.BoucleAmont	9.13@ReseauCP
+		equate 0@BoucleAmont.BoucleAmont	9.14@HuitAmont.HuitAmont
+		equate 14@BoucleAmont.BoucleAmont	9.13@HuitAmont.HuitAmont
+		join SP-BoucleAmont-1@BoucleAmont SP-HuitAmont-1@HuitAmont -count 2
 	
 	input Huit-maps.th
 endsurvey
