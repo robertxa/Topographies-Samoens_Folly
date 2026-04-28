@@ -61,6 +61,8 @@ layout my_layout
   
 	symbol-hide line survey
 	#debug station-names
+	symbol-hide point rope
+	symbol-hide point traverse
                 
 	# Titre                         
     code tex-map
@@ -72,16 +74,17 @@ layout my_layout
 		#\else % if not empty keep the value set by therion, or assign an override cavename here
 		#\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
+		#\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
+		\newtoks\synth \synth={Xavier Robert (2026)}
 		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}		
 	endcode   
 	
 	# Add logos to the map
-	#map-image 0 100 sw ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf
-	#map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
-	#map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
-	#map-image 70 23 nw ../../Outputs/2D/jb-Xav-2022-plan20000-Solitaire.pdf
-	map-image 70 23 nw ../../Outputs/2D/jb-Xav-2022-plan20000.pdf
+	##map-image 0 100 sw ../../Outputs/2D/Crops/Solitaire-jb-Xav-2020-coupe1000.pdf
+	##map-image 130 10 sw ../../Data/Data-th/Crops_reseaux/Solitaire/Data/jb-Xav-2020-plan20000.pdf
+	##map-image 35 100 nw ../../Outputs/2D/jb-Xav-2020-plan20000-Solitaire.pdf
+	##map-image 70 23 nw ../../Outputs/2D/jb-Xav-2022-plan20000-Solitaire.pdf
+	#map-image 70 23 nw ../../Outputs/2D/jb-Xav-2022-plan20000.pdf
   
 endlayout
 # Fin de la definition du Layout "normal"
@@ -141,12 +144,13 @@ layout my_layout-coupe
 		#\else % if not empty keep the value set by therion, or assign an override cavename here
 		#\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
-		\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
+		%\newtoks\synth \synth={Pierre Rias (1981), Christophe Ohl (1991), Xavier Robert (2023)}
+		\newtoks\synth \synth={Xavier Robert (2026)}
 		#\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
 	endcode   
 	
-	map-image 00 90 nw ../../Outputs/2D/jb-Xav-2022-coupe20000-Solitaire.pdf
-	#map-image 00 90 nw ../../Outputs/2D/jb-Xav-2022-coupe20000.pdf
+	#map-image 00 90 nw ../../Outputs/2D/jb-Xav-2022-coupe20000-Solitaire.pdf
+	##map-image 00 90 nw ../../Outputs/2D/jb-Xav-2022-coupe20000.pdf
 
 endlayout
 # Fin de la definition du Layout "normal"
@@ -204,6 +208,7 @@ layout AtlasPlan
   	#color map-fg [100 100 80] # Jaune
 	#color map-fg [100 100 100] # Blanc
 	color map-fg [67 67 67] # Gris 
+	#color map-fg altitude
   	transparency on
 	opacity 75
 	layers on
@@ -266,25 +271,41 @@ endlayout
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
 #select JB-plan-tot@Jean-Bernard
 #select M-sezhommes@Jean-Bernard
-#select  MP-Jean-Dupond@Jean-Bernard
+#select MP-Jean-Dupond@Jean-Bernard
 
-##select  MP-Solitaire-tot@Jean-Bernard
+select MP-V15@V15.Jean-Bernard -color [100 100 80]
+select MP-solitaire-tot@Solitaire.Jean-Bernard -color [100 100 80]
+select MP-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+
+select MP-savoyards@Jean-Bernard -color [67 67 67]
+select MP-puitsAlain@Jean-Bernard -color [67 67 67]
+select MP-V4@V4.Jean-Bernard -color [67 67 67]
+#select MP-Stalactites@Stalactites.PierreQuiTombe.Jean-Bernard
+select MP-Riviere1@Riviere1.RiviereAval.Jean-Bernard -color [67 67 67]
+
+#select  MP-Solitaire-tot@Jean-Bernard
 #select MP-SolitaireEV@Jean-Bernard
-#select MP-solitaire-tot@Solitaire.Jean-Bernard -color [100 100 80]
-#select MP-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+
+
+
 
 ##select MC-Solitaire-tot@Jean-Bernard
-select MC-V4@Jean-Bernard
-select MC-puitsAlain@Jean-Bernard
+##select MC-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+#select MC-V4@V4.Jean-Bernard #-color [100 100 80]
+#select MC-solitaire-JB@Solitaire.Jean-Bernard #-color [100 100 80]
+
+select MC-V4@Jean-Bernard #-color [67 67 67]
+select MC-puitsAlain@Jean-Bernard #-color [67 67 67]
 #select MC-rivieredebut@Jean-Bernard
-select MC-Riviere1@Riviere1.RiviereAval.Jean-Bernard
-#select MC-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
+select MC-Riviere1@Riviere1.RiviereAval.Jean-Bernard #-color [67 67 67]
+##select MC-Ete-Indien@Ete-Indien.Jean-Bernard -color [100 100 80]
 select MC-V4@V4.Jean-Bernard -color [100 100 80]
 select MC-solitaire-JB@Solitaire.Jean-Bernard -color [100 100 80]
+#select MC-V15@V15.Jean-Bernard -color [100 100 80]
 
 #select  MP-oeufs@Jean-Bernard
 #select  MC-oeufs@Jean-Bernard
 
-export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2023-coupe1000.pdf -layout my_layout-coupe
-#export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2023-plan1000.pdf -layout my_layout
+export map -projection extended -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2025-coupe1000.pdf -layout my_layout-coupe
+export map -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2025-plan1000.pdf -layout my_layout
 #export atlas -projection plan -fmt pdf -o ../../Outputs/2D/Crops/Solitaire-jb-2022-atlas.pdf -layout AtlasPlan
