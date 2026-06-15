@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -104.38200000000003 -154.871 595.5 416.0898
+##XTHERION## xth_me_area_adjust -110.03700000000003 -159.899 626.0 411.0618
 ##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {299.21299999999997 1 1.0} {209.351 0} BoucleAmont-map2023a.xvi 0 {}
+##XTHERION## xth_me_image_insert {298.746 1 1.0} {208.57500000000002 0@BoucleAmont.BoucleAmont} BoucleAmont-map2023a.xvi 0 {}
 
 
 
@@ -87,10 +87,8 @@ line wall
 endline
 
 line wall
-  455.25 103.5
-  455.25 103.5 452.25 104.5 446.75 107.5
-  441.25 110.5 442.5 107.0 436.25 114.5
-  430.0 122.0 427.73 119.54 419.75 128.75
+  431.5 116.5
+  425.25 124.0 427.73 119.54 419.75 128.75
   413.25 136.25 409.75 134.75 404.75 143.5
   399.75 152.25 403.5 162.5 397.75 169.25
   392.0 176.0 391.25 183.5 391.25 183.5
@@ -107,8 +105,7 @@ line wall
   360.0 77.0 383.0 65.75 390.5 72.75
   398.0 79.75 402.0 89.25 410.5 84.25
   419.0 79.25 424.5 95.5 424.25 107.0
-  424.11 113.43 432.5 100.25 437.0 100.25
-  441.5 100.25 453.75 98.0 453.75 98.0
+  424.11 113.43 426.25 108.0 430.0 105.75
   smooth off
 endline
 
@@ -116,16 +113,7 @@ point 444.953 105.881 station -name 7
 
 point 412.12299999999993 126.36099999999999 station -name 6
 
-line flowstone
-  437.0 100.25
-  437.0 100.25 439.0 101.5 438.75 107.0
-  438.5 112.5 436.25 114.5 436.25 114.5
-  smooth off
-endline
-
-point 442.0 82.75 height -value [+5 m]
-
-point 466.25 98.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "Huit" -text "Petite galerie (4 pattes) à atteindre après E5"
+point 441.25 138.5 height -value [+5 m]
 
 point 273.0 69.5 helictites
 
@@ -154,12 +142,6 @@ point 357.75 135.25 clay
 point 379.0 102.0 clay
 
 point 390.75 160.5 clay
-
-line pit
-  442.0 98.5
-  442.0 98.5 447.25 100.75 442.75 109.25
-  smooth off
-endline
 
 line pit
   383.25 156.25
@@ -193,6 +175,72 @@ point 207.713 83.941 station -name 11
 point 163.783 105.98100000000001 station -name 13
 
 point 122.12299999999999 150.631 station -name 14
+
+endscrap
+
+
+
+scrap SP-BAmont2026-1 -projection plan -station-names "" "@pret2026" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 639.8113000000001 -128.0 0.0 0.0 19.50240702 0.0 m]
+
+line flowstone
+  439.75 98.75
+  439.75 98.75 440.5 107.25 439.0 110.75
+  smooth off
+endline
+
+line pit
+  435.75 96.75
+  435.75 96.75 438.75 106.0 435.75 111.75
+  smooth off
+endline
+
+point 496.75 122.75 air-draught -orientation 230.7 -scale s -subtype summer
+
+line arrow
+  440.25 47.75
+  456.25 104.25
+endline
+
+point 434.75 37.75 label -text "m. du Prêt"
+
+point 479.0 134.75 continuation -attr Code A -attr Cavite "Réseau CP" -attr Reseau "Huit" -text "Petit méandre étroit mais passable, courant d'air soufflant en été"
+
+line fault -clip off
+  442.75 94.5
+  480.5 49.0
+endline
+
+line wall
+  430.0 105.75
+  430.0 105.75 431.0 104.25 432.0 101.75
+  433.0 99.25 436.75 97.25 439.75 98.75
+  442.75 100.25 441.25 101.5 444.25 103.25
+  447.25 105.0 447.25 104.5 451.0 106.0
+  454.75 107.5 453.75 109.25 455.75 111.5
+  457.75 113.75 462.75 114.5 462.0 116.75
+  461.25 119.0 461.25 117.75 464.75 118.5
+  468.25 119.25 470.25 122.0 470.25 122.0
+  smooth off
+  altitude .
+endline
+
+line wall
+  468.25 123.75
+  468.25 123.75 467.5 120.25 464.5 120.75
+  461.5 121.25 459.0 123.25 458.25 120.25
+  457.5 117.25 457.75 114.5 454.25 114.0
+  450.75 113.5 449.75 114.75 447.5 111.75
+  445.25 108.75 445.5 107.0 442.25 108.5
+  439.0 110.0 437.75 109.75 435.75 111.75
+  433.75 113.75 431.5 116.5 431.5 116.5
+  smooth off
+endline
+
+point 459.85599999999994 117.78500000000001 station -name 1
+
+point 449.6959999999999 107.47500000000001 station -name 0
+
+point 434.65599999999995 101.72500000000001 station -name 2
 
 endscrap
 

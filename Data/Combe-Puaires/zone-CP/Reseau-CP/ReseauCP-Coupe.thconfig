@@ -45,6 +45,9 @@ layout my_layout-coupe
 	base-scale 1 1000
 	scale-bar 100 m
 	scale 1 1000
+	#base-scale 1 2000
+	#scale-bar 200 m
+	#scale 1 2000
 	#origin 12 22 0 m
 	#origin-label 100 K
 	#color map-bg 85
@@ -57,8 +60,9 @@ layout my_layout-coupe
 	statistics explo-length off
 	statistics copyright all
 	legend on
-	#legend off
+	legend off
 	legend-width 32 cm
+	#legend-width 18 cm
 	#legend-width 14.5 cm
 	legend-columns 4
 
@@ -68,7 +72,7 @@ layout my_layout-coupe
 	#map-header 10 85 nw	# pour Reptiles
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
+	symbol-hide line survey
 	#debug station-names
 
 	symbol-hide point u:symbol_plan
@@ -128,12 +132,13 @@ endlayout
 	#select MC-Billy-tot@ReseauCP
 	#select MC-EV82@ReseauCP
 	
-export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2025.pdf
+export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2026(1-1000).pdf
+#export map -projection extended -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupe2025(1-2000).pdf
 #export map -projection extended -layout my_layout-coupe -o Outputs/2D/Reptiles-coupe2024.pdf
 #export map -projection extended -layout my_layout-coupe-continuations -o Outputs/2D/ReseauCP-coupe2023-Continuations.pdf
 
-export map -projection [elevation 240 deg] -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupeProj240.pdf
-export map -projection [elevation 330 deg] -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupeProj330.pdf
+#export map -projection [elevation 240 deg] -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupeProj240.pdf
+#export map -projection [elevation 330 deg] -layout my_layout-coupe -o Outputs/2D/ReseauCP-coupeProj330.pdf
  
 # Export du fichier 3d pour Loch
 #export model -o Outputs/3D/reseauCP-2022.lox

@@ -1,0 +1,57 @@
+encoding utf-8
+# 2026.06.14 created by TopoDroid v 6.4.50
+
+survey pret2026 -title "pret2026"
+
+  centerline
+    explo-date 2026.06.13
+      explo-team "Xavier Robert"
+      explo-team "Julien Léger"
+    date 2026.06.13 
+      team "Xavier Robert" 
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    # extend auto
+    0 . 0.38 21.0 33.3
+    0 . 0.44 60.9 56.5
+    0 . 0.37 129.0 14.8
+    0 . 0.76 327.1 25.5
+    0 . 0.46 275.1 0.9
+    0 . 1.02 242.0 -34.0
+    0 . 2.29 246.4 -27.5
+    0 . 0.58 264.5 -22.9
+    0 . 0.61 31.2 -31.0
+    0 . 1.95 58.7 33.3
+    0 . 1.08 31.5 41.5
+    0 . 0.24 354.1 33.9
+    extend left
+    0 1 2.09 44.5 28.3
+    extend right
+    0 2 2.29 249.1 -27.0
+    # extend auto
+    2 . 1.31 10.2 21.5
+    2 . 0.73 51.2 -6.3
+    2 . 1.46 86.6 33.2
+    2 . 1.23 56.3 29.2
+    2 . 1.41 45.8 15.8
+    2 . 1.27 76.7 13.8
+    2 . 0.82 263.3 70.0
+    2 . 0.59 242.5 13.1
+    2 . 0.39 197.1 15.2
+    2 . 1.99 346.5 -4.8
+    2 . 3.68 316.7 9.8
+    2 . 4.12 320.3 30.9
+    2 . 1.54 329.3 42.2
+    2 . 0.35 305.5 15.6
+    2 . 3.89 338.9 -41.2
+    2 . 4.21 329.1 -57.9
+    2 . 1.20 10.7 -86.8
+    2 . 4.24 4.3 -80.9
+    2 . 3.36 312.4 -43.0
+    extend right
+  # cairn jct
+    2 3 5.77 316.0 -43.2
+  endcenterline
+
+endsurvey

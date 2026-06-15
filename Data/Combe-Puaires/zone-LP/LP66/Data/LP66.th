@@ -21,8 +21,8 @@ survey LP66 -title "LP66"
     data normal from to length compass clino  left  right up  down
     extend left
     flags approximate
-    LP66  0 0 0 0 1 1 0 10
-    0 1 20 0 -90 1 1 10 0 # P20
+      LP66  0 0 0 0 1 1 0 10
+      0 1 20 0 -90 1 1 10 0 # P20
     flags not approximate
     
   endcenterline

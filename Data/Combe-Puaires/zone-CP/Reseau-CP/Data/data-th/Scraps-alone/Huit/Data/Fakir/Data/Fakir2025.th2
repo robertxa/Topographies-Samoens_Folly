@@ -7,11 +7,12 @@ encoding  utf-8
 
 scrap SP-Fakir-1 -projection plan -station-names "" "@Fakir2025" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.002 -128.00699999999995 561.0690999999999 -128.00699999999995 0.0 0.0 17.502405939999996 0.0 m]
 
-point 90.0 171.0 narrow-end
+point 79.25 160.5 narrow-end
 
 line pit
   152.0 225.75
   152.0 225.75 144.25 221.5 140.25 223.5
+  smooth off
 endline
 
 line pit -close on
@@ -36,8 +37,22 @@ line wall
 endline
 
 line wall
-  105.75 175.0
-  105.75 175.0 110.5 184.0 115.0 184.0
+  92.25 164.25
+  92.25 164.25 92.75 166.5 96.5 170.5
+  100.25 174.5 103.25 178.0 103.25 178.0
+  smooth off
+endline
+
+line wall
+  90.25 187.0
+  90.25 187.0 91.75 183.0 90.25 179.75
+  88.75 176.5 85.0 173.5 85.0 173.5
+  smooth off
+endline
+
+line wall
+  103.25 178.0
+  103.25 178.0 110.5 184.0 115.0 184.0
   119.5 184.0 123.75 185.25 126.25 183.25
   128.75 181.25 140.0 176.5 140.0 184.5
   140.0 192.5 138.0 202.0 143.5 205.5
@@ -47,23 +62,24 @@ line wall
   smooth off
 endline
 
-point 54.0 176.5 continuation -attr Code D -attr Cavite "Réseau CP" -attr Reseau "G. du Huit - Fakir" -text "etr. à désobstruer, léger CA"
-
-point 163.5 334.25 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "G. du Huit - Fakir" -text "Coulée de calcite à escalader"
+point 54.0 176.5 continuation -attr Code D -attr Cavite "Réseau CP" -attr Reseau "G. du Huit - Fakir" -attr CA "Courant d'air aspirant fort en été" -text "etr. à désobstruer (1-2 tirs ?), CA aspirant fort en été"
 
 line flowstone
   201.75 275.25
   201.75 275.25 184.5 268.25 176.5 276.0
+  smooth off
 endline
 
 line flowstone
   201.25 283.25
   201.25 283.25 183.5 276.25 175.75 283.75
+  smooth off
 endline
 
 line flowstone
   199.75 302.75
   199.75 302.75 185.5 292.75 175.75 299.5
+  smooth off
 endline
 
 line flowstone -reverse on
@@ -82,9 +98,16 @@ line pit
   smooth off
 endline
 
-point 65.0 148.25 air-draught -orientation 219.4 -scale s -subtype summer
+point 84.0 133.5 air-draught -orientation 219.4 -subtype summer
 
 point 124.75 241.5 height -value [+2 m]
+
+line wall
+  198.5 317.5
+  198.5 317.5 197.25 325.75 188.5 322.5
+  179.75 319.25 178.5 318.0 178.5 318.0
+  smooth off
+endline
 
 line wall
   178.5 318.0
@@ -121,8 +144,6 @@ endscrap
 
 scrap SP-Fakir-2 -projection plan -station-names "" "@Fakir2025" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.002 -128.00699999999995 561.0690999999999 -128.00699999999995 0.0 0.0 17.502405939999996 0.0 m]
 
-point 224.25 545.5 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "G. du Huit - Fakir" -text "Coulée de calcite à escalader"
-
 line label -text "galerie du Fakir"
   117.0 317.0
   117.0 317.0 119.0 648.0 131.0 691.0
@@ -130,11 +151,36 @@ line label -text "galerie du Fakir"
   smooth off
 endline
 
-point 272.5 531.75 continuation -attr Code E -attr Cavite "Réseau CP" -attr Reseau "G. du Huit - Fakir" -text "Coulée de calcite à escalader"
+point 247.5 520.75 helictites
+
+point 223.5 520.0 helictites
+
+point 232.25 533.0 helictites
+
+point 231.25 525.0 helictites
+
+point 223.0 529.25 helictites
+
+line wall -close on -outline in
+  227.75 520.75
+  227.75 520.75 227.0 513.25 228.75 511.5
+  230.5 509.75 233.75 510.5 233.5 514.75
+  233.25 519.0 232.0 520.75 230.0 520.75
+  228.0 520.75 227.75 520.75 227.75 520.75
+  smooth off
+endline
 
 line wall
-  214.0 531.75
-  214.0 531.75 218.75 525.75 220.5 522.5
+  234.5 528.75
+  234.5 528.75 241.0 532.25 236.25 534.75
+  231.5 537.25 228.0 537.5 224.5 535.75
+  221.0 534.0 220.25 532.0 220.25 532.0
+  smooth off
+endline
+
+line wall
+  220.25 532.0
+  220.25 532.0 218.75 525.75 220.5 522.5
   222.25 519.25 225.75 503.25 225.75 497.5
   225.75 491.75 226.75 477.25 226.25 469.75
   225.75 462.25 224.5 457.5 222.0 449.75
@@ -159,10 +205,10 @@ line wall
 endline
 
 line wall
-  261.75 528.0
-  261.75 528.0 251.0 528.5 245.75 526.75
-  240.5 525.0 233.75 518.0 230.75 521.25
-  227.75 524.5 219.0 533.25 219.0 533.25
+  250.5 523.5
+  250.5 523.5 251.0 528.5 245.75 526.75
+  240.5 525.0 241.0 519.25 238.0 522.5
+  235.0 525.75 234.5 528.75 234.5 528.75
   smooth off
 endline
 
@@ -189,16 +235,19 @@ point 219.25 319.75 helictites
 line flowstone
   245.5 515.75
   245.5 515.75 226.75 512.5 221.75 518.5
+  smooth off
 endline
 
 line flowstone
   242.25 509.25
   242.25 509.25 227.5 504.25 223.5 511.5
+  smooth off
 endline
 
 line flowstone -reverse on
   225.5 502.75
   225.5 502.75 234.25 497.75 239.5 502.0
+  smooth off
 endline
 
 line gradient
@@ -235,7 +284,7 @@ line wall
   238.5 480.5 235.25 487.0 237.0 492.0
   238.75 497.0 240.75 505.75 242.75 511.25
   244.75 516.75 249.25 517.75 251.0 519.0
-  252.75 520.25 259.25 521.75 259.25 521.75
+  252.75 520.25 250.5 523.5 250.5 523.5
   smooth off
   altitude .
 endline
@@ -465,6 +514,7 @@ endline
 line pit
   225.25 636.75
   225.25 636.75 225.75 630.25 228.5 627.5
+  smooth off
 endline
 
 area water
@@ -490,11 +540,13 @@ endline
 line pit
   241.5 685.75
   241.5 685.75 237.5 698.5 237.0 701.25
+  smooth off
 endline
 
 line pit
   229.75 687.25
   229.75 687.25 226.5 680.25 227.5 676.5
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -567,6 +619,7 @@ line wall
   245.75 742.25 243.0 732.25 242.25 726.0
   241.5 719.75 239.5 714.25 239.5 709.25
   239.5 704.25 238.0 701.25 237.0 701.25
+  smooth off
 endline
 
 point 357.317 998.029 station -name 1

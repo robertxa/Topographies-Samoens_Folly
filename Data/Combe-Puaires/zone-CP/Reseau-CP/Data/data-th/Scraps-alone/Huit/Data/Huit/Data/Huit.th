@@ -70,6 +70,13 @@ centerline -title "Huit inférieur : 9.10_10.1 10.10_9.4"
    10.4 10.5    14.05       192.0       10.       2.0       2.0       3.0       1.0    
    10.5 10.6    12.55       318.0      -39.       2.5       2.5       3.0       1.0    
    10.6 10.7    17.39       266.0      -18.       2.5       2.5       3.0       1.0    
+
+   flags duplicate
+   flags approximate
+      10.7  10.7app  15 350   35 1  1  10 1  # Visée estimée dans le méandre remontant
+   flags not approximate
+   flags not duplicate
+
    10.7 10.8    21.29       276.0      -19.       2.5       2.5       3.0       1.0    
    10.8 10.9    10.45       238.0      -12.       2.5       2.5       3.0       1.0    
    10.9 10.10    14.71       267.0      -17.       2.0       2.0       3.0       1.0    

@@ -6,6 +6,9 @@ encoding utf-8
 
 survey BoucleAmont -title "Boucle Amont du Huit"
 	input Data/BoucleAmont.th
+
+	input Data/pret2026.th
+		equate 3@pret2026 6@BoucleAmont
 	
 	input Data/BoucleAmont.th2
 	input Data/BoucleAmont-coupe.th2

@@ -1,7 +1,8 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 5157.0 3015.5
+##XTHERION## xth_me_area_adjust 1452.06 1428.5610000000001 2758.5 1989.5
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {1580.06 1 1.0} {1671.81 CP12} ../billy-map.xvi 0 {}
+##XTHERION## xth_me_image_insert {1852.6659999999997 1 1.0} {1615.611 9.10} HuitAmont-map2025.xvi 0 {}
 
 
 
@@ -171,6 +172,7 @@ endline
 line wall
   2625.5 1815.25
   2625.75 1816.75 2625.5 1822.25 2628.5 1819.0
+  smooth off
 endline
 
 line rock-border -close on
@@ -248,4 +250,5 @@ point 2508.0 1791.75 stalactites-stalagmites
 point 2375.25 1761.5 helictites
 
 endscrap
+
 

@@ -58,6 +58,7 @@ layout my_layout
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
    base-scale 1 1000
+   #base-scale 1 2000
   
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -69,6 +70,7 @@ layout my_layout
    # ou similaire, sinon, l echelle sera change pendant
    # l impression
   scale 1 1000
+  #scale 1 2000
   
   # Pour faire une rotation
   #rotate 2.25
@@ -111,6 +113,7 @@ layout my_layout
   
    # Par defaut, la legende est de 14 cm de largeur
      legend-width 32 cm
+     #legend-width 18 cm
    #  legend-width 14.5 cm
      legend-columns 4
 
@@ -122,7 +125,8 @@ layout my_layout
    # 100 100, c est en haut, a droite
    # La manchette a des "points cardinaux" : n, s, ne, sw, etc.
    # Il faut specifier un de ces points 
-  map-header 0 117 nw
+  map-header 0 117 nw # 1/1000
+  #map-header 0 147 nw # 1/2000
   #map-header -40 117 nw
   
    # arrière plan de la manchette
@@ -173,7 +177,7 @@ layout my_layout
  		\cavename={Réseau de la Combe aux Puaires : CP07, CP12, CP14, CP16 et CP19 bis} 		
    \else % if not empty keep the value set by therion, or assign an override cavename here
    \fi
-   #\newtoks\synth \synth={Christophe Ohl (1987), Stéphane Lips (2009), Xavier Robert (2023)}
+   #\newtoks\synth \synth={Christophe Ohl (1987), Stéphane Lips (2009), Xavier Robert (2026)}
    \newtoks\club \club={Groupe Spéléologique Vulcain}
    #\newtoks\datat \datat={https://github.com/robertxa/Topographies-Samoens\_Folly}
    #\newtoks\thanksto \thanksto={Jean Moatti, Charlotte Carpentier et Tendi Sherpa, les inconditionnels gardiens du refuge du Folly, ainsi qu'à Paul Granger et à la municipalité de Samoëns. Sans leur appui, les explorations du massif du Folly ne seraient pas possibles sans organiser des camps d'altitudes lourds.}
@@ -215,9 +219,10 @@ endlayout
   #select MP-EV82@ReseauCP
   
 	
-export map -o Outputs/2D/ReseauCP-plan2025.pdf -layout my_layout
+export map -o Outputs/2D/ReseauCP-plan2026.pdf -layout my_layout
+#export map -o Outputs/2D/ReseauCP-plan2025(1-2000).pdf -layout my_layout
 #export map -o Outputs/2D/Reptiles-plan2025.pdf -layout my_layout
-export map -o Outputs/2D/ReseauCP-plan-Continuations.pdf -layout my_layout-continuations
+#export map -o Outputs/2D/ReseauCP-plan-Continuations.pdf -layout my_layout-continuations
   
 # Export des fichiers ESRI
 export map -proj plan -fmt esri -o Outputs/ReseauCP_SHP -layout my_layout

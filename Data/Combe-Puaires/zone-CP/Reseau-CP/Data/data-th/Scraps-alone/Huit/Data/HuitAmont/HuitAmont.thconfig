@@ -12,7 +12,7 @@ source HuitAmont-tot.th
 input ../../../../../../../../../../config.thc 
   
 layout xviexport
-	scale 1 500
+	scale 1 1000
 	grid-size 5 5 5 m
 	grid bottom
 endlayout
@@ -147,8 +147,8 @@ endlayout
 
  
   
-#export map -fmt xvi -layout xviexport -o Data/HuitAmont-map2025.xvi
-#export map -projection extended -fmt xvi -layout xviexport -o Data/HuitAmont-coupe2025.xvi
+export map -fmt xvi -layout xviexport -o Data/HuitAmont-map2025.xvi
+export map -projection extended -fmt xvi -layout xviexport -o Data/HuitAmont-coupe2025.xvi
 
 # Select maps
 	select MP-HuitAmont@HuitAmont
