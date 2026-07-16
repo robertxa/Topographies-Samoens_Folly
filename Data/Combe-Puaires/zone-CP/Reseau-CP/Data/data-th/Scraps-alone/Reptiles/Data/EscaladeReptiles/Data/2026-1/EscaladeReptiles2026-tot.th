@@ -1,0 +1,21 @@
+encoding utf-8
+
+# Copyright (C) 2025 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey EscaladeReptiles2026 -title "Escalade des Reptiles 2026"
+	input Data/2026-07-11-EscaladeReptiles.th
+
+	## pour le plan
+	input Data/2026-07-11-EscaladeReptiles-Planp.th2
+			# Remarques pour Steph :
+			#	- Trop de points sur les lignes --> Il faut modifier les options de Topodroid ; J'ai du reprendre toutes les lignes pour réduire le nombre de points (sous XTherion : clic droit --> modifier la ligne --> convertir en courbe)
+			#	- 2 lignes de paroi qu'il m'a fallu inverser
+			#	- Des jonctions de lignes de parois qui ne se font pas car les débuts et fin de chaque ligne ne se superposent pas
+	## Pour la coupe et le plan
+	input Data/2026-07-11-EscaladeReptiles-Plans.th2
+
+	input EscaladeReptiles2026-maps.th
+
+endsurvey

@@ -5,16 +5,11 @@ encoding utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 survey EscaladeReptiles -title "Escalade des Reptiles"
-	input Data/EscaladeReptiles2025.th
-
-	input Data/puits_remontant_des_reptiles.th
-		equate 4@EscaladeReptiles2025 5@PR_reptiles2
-
-	## pour le plan
-	input Data/EscaladeReptiles.th2
-	#	join SP-bclereptiles-1 SP-Reptiles-1
-	## Pour la coupe et le plan
-	input Data/EscaladeReptiles-coupe.th2
+	input Data/2025-1/EscaladeReptiles2025-tot.th
+	input Data/2026-1/EscaladeReptiles2026-tot.th
+		equate 10@2026-07-11-EscaladeReptiles.EscaladeReptiles2026 0@PR_reptiles2.EscaladeReptiles2025
+		join SP-EscaladeReptiles2026-1@EscaladeReptiles2026 SP-EscReptiles-2@EscaladeReptiles2025
+		join SC-EscaladeReptiles2026-1@EscaladeReptiles2026 SC-EscReptiles-1@EscaladeReptiles2025
 
 	input EscaladeReptiles-maps.th
 
