@@ -5,8 +5,8 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
  
 # Import DATA  
-#source Solitarises.th
-source Solitarises-tot.th
+#source PuitsSolitarises.th
+source PuitsSolitarises-tot.th
 
 # Add config file
 input ../../../../../../../../config.thc 
@@ -33,7 +33,7 @@ layout layout_plan
 	
 	#debug scrap-names
 	  
-	doc-title "Réseau du Solitarises-plan"
+	doc-title "Puits des Solitarises-plan"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 1000
@@ -55,8 +55,8 @@ layout layout_plan
 	map-header 65 60 nw
 	map-header-bg off
 	layers on
-	symbol-hide line survey
-	#debug station-names
+	#symbol-hide line survey
+	debug station-names
 	#debug scrap-names
 	# grid bottom
 	# grid-size 100 100 100 m
@@ -81,10 +81,10 @@ layout layout_plan
 	######################### 
   
 	# Ajouter une coupe développée sur le même pdf
-	#map-image 0 100 sw Outputs/Solitarises-coupe2022b.pdf
-	#map-image 0 100 sw Outputs/Solitarises-coupe2023.pdf
-	#map-image 0 0 nw Outputs/Solitarises-coupe2023b.pdf
-	map-image 0 0 nw Outputs/Solitarises-coupe2024.pdf
+	#map-image 0 100 sw Outputs/PuitsSolitarises-coupe2022b.pdf
+	#map-image 0 100 sw Outputs/PuitsSolitarises-coupe2023.pdf
+	#map-image 0 0 nw Outputs/PuitsSolitarises-coupe2023b.pdf
+	#map-image 0 0 nw Outputs/PuitsSolitarises-coupe2024.pdf
   
 endlayout
   
@@ -97,7 +97,7 @@ layout layout_coupe
 	
 	#debug scrap-names
 
-	doc-title "Réseau du Solitarises-coupe"
+	doc-title "Puit des sSolitarises-coupe"
 	doc-author "Xavier Robert"
 	cs UTM32
 	base-scale 1 2000
@@ -121,18 +121,18 @@ layout layout_coupe
 	statistics carto off
 	statistics copyright off
 	# To suppress the displaY of cave length/depth in map header
-	code tex-map
-		\cavelength={} %empty
-		\cavedepth={}  %empty
-	endcode
+	#code tex-map
+	#	\cavelength={} %empty
+	#	\cavedepth={}  %empty
+	#endcode
 	legend off
 	#legend-width 14.5  cm
 	legend-width 10  cm
 	map-header 100 36 ne
 	map-header-bg on
 	layers on
-	symbol-hide line survey
-	#debug station-names	
+	#symbol-hide line survey
+	debug station-names	
 	#grid bottom
 	#grid-size 100 100 100 m
 	#grid off  
@@ -157,23 +157,23 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/Solitarises-plan2024.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/Solitarises-coupe2024.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/PuitsSolitarises-plan2024.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/PuitsSolitarises-coupe2024.xvi
 
-select MP-Solitarises@Solitarises
-select MC-Solitarises@Solitarises
+select MP-PuitsSolitarises@PuitsSolitarises
+select MC-PuitsSolitarises@PuitsSolitarises
 
 # Export des fichiers pdf  
-	export map -projection extended -layout layout_coupe -o Outputs/Solitarises-coupe2024.pdf
-	export map -layout layout_plan -o Outputs/Solitarises-plan2024.pdf
+	export map -projection extended -layout layout_coupe -o Outputs/PuitsSolitarises-coupe2026.pdf
+	export map -layout layout_plan -o Outputs/PuitsSolitarises-plan2026.pdf
  
 # Export des modeles 3D
-	export model -o Outputs/Solitarises.lox
+	export model -o Outputs/PuitsSolitarises.lox
   
 # Export des fichiers ESRI
-	#export map -proj plan -fmt esri -o Outputs/3D/Solitarises -layout layout_plan
+	#export map -proj plan -fmt esri -o Outputs/3D/PuitsSolitarises -layout layout_plan
   
 # Export des fichiers kml
-	#export map -proj plan -fmt kml -o Outputs/3D/Solitarises.kml -layout layout_plan
+	#export map -proj plan -fmt kml -o Outputs/3D/PuitsSolitarises.kml -layout layout_plan
 
 export survey-list -location off -o Outputs/Topographies_2024.html

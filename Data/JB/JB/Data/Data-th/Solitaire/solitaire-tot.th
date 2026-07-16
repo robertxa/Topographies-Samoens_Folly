@@ -47,6 +47,10 @@ survey Solitaire -title "Réseau du Solitaire"
 		join SP-Solitarises-4@Solitarises SP-Solitaire-2021-2@Solitaire
 		join SC-Solitarises-1@Solitarises SC-Solitaire-2021-1@Solitaire
 	
+	# Puits des Solitarisés
+	input Data/PuitsSolitarises/PuitsSolitarises-tot.th
+		equate 0@PuitsSolitarises.PuitsSolitarises 10@solitaire2023a.Solitarises
+	
 	# Méandre des Oeufs
 	input Data/Oeufs/Oeufs-tot.th	#input Data/jb_solitaire2020a.th
 		equate 1@solitaire2020a.Oeufs 2019d-FD-10@solitaire.Solitaire
