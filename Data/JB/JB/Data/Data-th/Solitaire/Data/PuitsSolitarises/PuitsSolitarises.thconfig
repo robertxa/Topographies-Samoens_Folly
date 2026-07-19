@@ -128,8 +128,9 @@ layout layout_coupe
 	legend off
 	#legend-width 14.5  cm
 	legend-width 10  cm
-	map-header 100 36 ne
-	map-header-bg on
+	#map-header 100 36 ne
+	map-header 0 0 nw
+	map-header-bg off
 	layers on
 	#symbol-hide line survey
 	debug station-names	
