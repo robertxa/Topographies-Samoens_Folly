@@ -292,6 +292,8 @@ survey Jean-Bernard -title "Gouffre Jean Bernard"
 			# Jonction Solitaire et Base du puits Alain (2019)
     		##equate 2019-FD-9@solitaire Jd.24@jb-amonts2
     		##extend ignore 2019-FD-9 Jd.24
+			# Jonction Solitarisés et Rivière au sommet du puits de la Rivière
+			equate 29@PuitsSolitarises.PuitsSolitarises.Solitaire Kd.27@Actif.Actif.Riviere1.RiviereAval
 		### Joins dessins Plan
 			# Jointure dessins Puits des Savoyards, galerie Pixa
 			#join SP-Pixa-1@Pixa.Solitaire SP-V4-2@V4.V4

@@ -100,3 +100,5 @@ source CD-tot.th
  export map -fmt xvi -layout xviexport -o trousCDmap.xvi
    
  export map -o trouCDplan.pdf -layout my_layout
+
+ export model -o trouCD.kml

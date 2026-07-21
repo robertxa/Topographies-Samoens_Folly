@@ -15,7 +15,7 @@ cs EPSG:27572 # LII Etendu
 fix       CE1       943090     2130740     2030
 fix       CE2       943690     2130820     2020
 fix       CE3       943150     2130840     1990
-fix       CE4       943400     2130610     1900
+#fix       CE4       943400     2130610     1900
 fix       CE5       943480     2130690     2060
 fix       CE6       943430     2130690     2060
 fix       CE7       943490     2130660     2050
@@ -26,6 +26,16 @@ fix       CE11       943980     2130600     2080
 fix       CE12       943760     2130570     2080
 fix       CE13       943750     2130550     2080
 fix       CE14       943770     2130470     2040
+
+##################################################
+#  Coordonnées GPS 2026 et +
+cs lat-long
+#fix       CE4       46.0882083	6.7770182     1960  # Coordonnées prises par Augustin en août 2024, précision moyenne ; Alt à modifier
+fix CE_Arthur1      46.089174	6.776167    1987    # Coordonnées prises par Arthur en septembre 2024 ; Alt Lidar HD
+station CE_Arthur1  "CE_Arthur1" entrance
+cs EPSG:2154
+fix       CE4      991732.14	6561238.62      1960  # Coordonnées sur le point Lidar d'après les coordonnées prises par Augustin en août 2024 ; Alt Lidar HD
+
 
 station   CE1       "CE1" entrance air-draught continuation explored 26m
 station   CE2       "CE2" entrance continuation explored 09m

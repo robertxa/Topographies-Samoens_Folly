@@ -14,7 +14,7 @@ cs EPSG:27572 # LII Etendu
 
 fix       CB1       943270     2131140     2140
 fix       CB2       943320     2131180     2170
-fix       CB3       943320     2131140     2170
+#fix       CB3       943320     2131140     2170    # Coordonnées URSUS anciennes
 fix       CB4       943500     2131960     2140
 fix       CB5       943420     2131010     2150
 fix       CB6       943390     2131050     2155
@@ -24,6 +24,12 @@ fix       CB9       943390     2131220     2190
 
 cs UTM32
 fix       CB7       328297  5106735     2177    # GPS 2023 + Lidar IGN
+
+cs lat-long
+fix     CB3        46.092769	6.77732 2124    # Coordonnées GPS 2024 Arthur (meilleures qu'Augustin ?) + alt à revoir
+#station   CB3Arthur       "CB3Arthur" entrance continuation explored 54m
+#fix     CB3Augustin        46.092778	6.777395 2170    # Coordonnées GPS 2024 Augustin + alt à revoir
+#station   CB3Augustin       "CB3Augustin" entrance continuation explored 54m
 
 station   CB1       "CB1" entrance continuation explored 24m
 station   CB2       "CB2" entrance continuation explored 35m

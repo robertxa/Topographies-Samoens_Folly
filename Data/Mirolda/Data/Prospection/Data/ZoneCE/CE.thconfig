@@ -100,3 +100,5 @@ source CE-tot.th
  export map -fmt xvi -layout xviexport -o trousCEmap.xvi
    
  export map -o trouCEplan.pdf -layout my_layout
+
+ export model -o trouCE.kml

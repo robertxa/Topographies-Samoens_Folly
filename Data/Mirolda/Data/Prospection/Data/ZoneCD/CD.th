@@ -6,13 +6,13 @@ encoding  utf-8
  
 survey trousCD -title "trous CD"
 
-# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+# Fichier contenant les positions des entrées de la zone CD (Criou), Samoens, France
 
  centerline
 #cs lat-long
 cs EPSG:27572 # LII Etendu
 
-fix       CD1       942430     2130810     1910
+#fix       CD1       942430     2130810     1910    # Revue en 2026
 #fix       CD2       942780     2130880     1980
 #fix       CD3       942800     2130860     1980
 fix       CD4       942470     2130880     1900
@@ -27,6 +27,7 @@ fix       CD12      942370     2130750     1891
 
 fix       CD20      942950     2131320     2210
 
+####################################################################
 ##### New entrances coordinates from GPS measurments (2023 --> ++)
 cs UTM32
 fix       CD2       327712  5106589     1996    # GPS 2023 + Lidar IGN
@@ -35,9 +36,13 @@ fix       CD9       327625  5106385     1910    # GPS 2023 + Lidar IGN
 fix       CD10       327619  5106444     1937    # GPS 2023 + Lidar IGN
 
 cs long-lat
+fix       GrotteE       6.773260    46.089254   1927    # GPS 2026 + Lidar HD
+fix       CD1   6.767405    46.089981   1899    # GPS 2026 + Lidar HD IGN # Soufflant le 12/07/2026 à 10h36
 fix       CD3       6.77161  46.09118     1996    # GPS 2023 + Lidar IGN
+####################################################################
 
-station   CD1       "CD1" entrance continuation explored 30m
+station GrotteE "Grotte E" entrance continuation explored 10m air-draught #-text "Entrée en pente, en bas du cône ; CA soufflant froid le 11/07/2026"
+station   CD1       "CD1" entrance continuation explored 30m   air-draught
 station   CD2       "CD2" entrance continuation explored 40m
 station   CD3       "CD3" entrance continuation explored 15m #air-draught
 station   CD4       "CD4 - Tanne du Vrai" entrance continuation explored 63m

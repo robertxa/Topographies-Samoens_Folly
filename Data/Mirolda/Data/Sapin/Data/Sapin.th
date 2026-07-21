@@ -1,6 +1,6 @@
 encoding  utf-8
 
-# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
@@ -12,12 +12,12 @@ survey Sapin -title "gouffre du Sapin" -entrance Sapin
     date 2024.09.05
         team "Collectif Mirolda"
     explo-date 2024.09.05
-        #explo-team "Xavier Robert"
-        #explo-team "Daniel Betz"
+        #explo-team "Arthur "
+        #explo-team "Augustin "
         explo-team "Collectif Mirolda"
 
     cs long-lat
-    fix Sapin 6.77xxx 46.08XXX	XXXX
+    fix Sapin 6.77625 46.0887778	1965    # Coordonnées Augustin, Août 2024
     station Sapin "G. du Sapin" entrance
 
     units length meters

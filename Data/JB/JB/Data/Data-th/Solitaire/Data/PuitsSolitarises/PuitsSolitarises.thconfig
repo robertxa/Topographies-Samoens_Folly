@@ -55,8 +55,8 @@ layout layout_plan
 	map-header 65 60 nw
 	map-header-bg off
 	layers on
-	#symbol-hide line survey
-	debug station-names
+	symbol-hide line survey
+	#debug station-names
 	#debug scrap-names
 	# grid bottom
 	# grid-size 100 100 100 m
@@ -158,8 +158,8 @@ layout layout_coupe
 endlayout
 
 # Export des fichiers xvi  
-	export map -fmt xvi -layout xviexport_plan -o Data/PuitsSolitarises-plan2024.xvi
-	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/PuitsSolitarises-coupe2024.xvi
+	export map -fmt xvi -layout xviexport_plan -o Data/PuitsSolitarises-plan2026.xvi
+	export map -projection extended -fmt xvi -layout xviexport_coupe -o Data/PuitsSolitarises-coupe2026.xvi
 
 select MP-PuitsSolitarises@PuitsSolitarises
 select MC-PuitsSolitarises@PuitsSolitarises
@@ -177,4 +177,4 @@ select MC-PuitsSolitarises@PuitsSolitarises
 # Export des fichiers kml
 	#export map -proj plan -fmt kml -o Outputs/3D/PuitsSolitarises.kml -layout layout_plan
 
-export survey-list -location off -o Outputs/Topographies_2024.html
+#export survey-list -location off -o Outputs/Topographies_2024.html
