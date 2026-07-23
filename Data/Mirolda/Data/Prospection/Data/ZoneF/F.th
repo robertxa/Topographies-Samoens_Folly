@@ -19,12 +19,33 @@ fix       F105      329147  5106316     2211    # GPS 2023 + Lidar IGN
 fix       F191      329302  5106513     2306    # GPS 2023 + Lidar IGN
 fix       F203      329475  5106606     2328    # GPS 2023 + Lidar IGN
 
+cs lat-long
+fix F64 46.09211 6.78779    2257    # GPS 2024 + ; neige ; Florian Matricon
+fix F67 46.09054 6.78249    2156   # GPS 2024 + Lidar IGN ; Pf 30 ; Florian Matricon
+fix F81 46.09290 6.78917    2191    # GPS 2024 + ; Marqué d'une croix ; Florian Matricon
+fix F123 46.09263 6.78769    2267   # GPS 2024 + ; Pf 2 ; Florian Matricon
+fix F125 46.08875 6.78698    2154    # GPS 2024 + ; Marqué d'une croix ; Florian Matricon
+fix F125b 46.08897 6.78799    2182    # GPS 2024 + ; double entrée, marquage effacé ; Florian Matricon
+fix F150 46.09142 6.77931    2122    # GPS 2024 + Lidar IGN ; Florian Matricon
+
+
+
 station   F22       "F22" entrance continuation explored 10m #air-draught #continuation explored 40m
 station   F24     "F40" entrance #air-draught continuation explored 40m
 station   F51     "F51" entrance continuation explored 25m #air-draught continuation explored 40m
+station   F64      "F64" entrance continuation explored 12m # P12, terminé
+station   F67      "F67" entrance continuation explored 10m # P30 d'entrée ?
+station F81 "F81" entrance continuation explored 08m
 station   F105     "F105" entrance #continuation explored 25m #air-draught continuation explored 40m
+station   F123      "F123" entrance continuation explored 02m # -2 m terminé
+station F125   "F125" entrance continuation explored 20m # P20, terminé
+station F125b   "F125b" entrance
+station F150    "F150" entrance continuation explored 10m  # Attention, il y a 2 F150
 station   F191     "F191" entrance #continuation explored 25m #air-draught continuation explored 40m
 station   F203     "F203" entrance continuation explored 07m #air-draught continuation explored 40m
+
+
+
 
 endcenterline
 

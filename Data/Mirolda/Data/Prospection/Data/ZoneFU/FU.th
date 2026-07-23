@@ -16,9 +16,19 @@ fix       FU852       328763  5106490     2190    # GPS 2023 + Lidar IGN
 fix       FU853       328758  5106510     2193    # GPS 2023 + Lidar IGN
 fix       FU911       329271  5106569     2285    # GPS 2023 + Lidar IGN
 
+cs lat-long
+fix FU603   46.09369 6.79216    2345    # GPS2024  + Lidar IGN ; Florian Matricon ; Marqué d'une croix, souffle abondamment en été, méandre ; noté 503 par Florian MAticon sur son carnet de pointage
+fix FU604b  46.09137 6.78938    2264    # GPS 2024 + Lidar IGN ; Florian Matricon
+fix FU861   46.09300 6.79262    2341    # GPS 2024 + Lidar IGN ; Florian Matricon ; marqué d'une croix
+fix FU943   46.09319 6.79002    2313    # GPS 2024 + Lidar IGN ; Florian Matricon ; petit méandre, souffle un peu, 35 m de long, prof 25 m
+
+station FU603   "FU603" entrance continuation explored 10m air-draught
+station FU604b "FU604b"    entrance continuation explored 40m # -10 m
 station   FU852       "FU852" entrance continuation explored 10m #air-draught #continuation explored 40m
 station   FU853     "FU853" entrance continuation explored 20m
+station FU861   "FU861" entrance continuation explored 40m # -40 m, terminé
 station   FU911     "FU911" entrance continuation explored 10m #air-draught continuation explored 40m
+station     FU943   "FU943" entrance continuation explored 35m air-draught
 
 endcenterline
 

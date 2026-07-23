@@ -15,8 +15,12 @@ cs EPSG:27572 # LII Etendu
 fix       B133       943770     2131480     2320
 fix       B134      943780     2131520     2340
 
+cs lat-long
+fix B241    46.09035 6.78390    2173    # GPS 2024 + ; Non marqué, belle entrée ; Florian Matricon
+
 station   B133       "B133" entrance continuation explored 60m
 station   B134       "B134" entrance continuation explored 20m
+station B241 "F241" entrance # Belle entrée, à explorer
 
 endcenterline
 

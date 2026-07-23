@@ -208,7 +208,7 @@ endlayout
 select MP-Folly-tot@MassifFolly
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/Folly-2022-plan-NU.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/Folly-2026-plan-NU.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
  #export model -o Outputs/3D/Folly-tot-IGN-2022.lox
@@ -216,7 +216,8 @@ select MP-Folly-tot@MassifFolly
 
 # Export des fichiers ESRI
   # Export en 2D
-  export map -proj plan -fmt esri -o Outputs/SHP/therion -layout my_layout -enc ASCII
+  #export map -proj plan -fmt esri -o Outputs/SHP/therion -layout my_layout -enc ASCII
+  export map -proj plan -fmt esri -o Outputs/SHP/therion -layout my_layout -enc UTF-8
   #export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2D -layout my_layout -enc ASCII
   #export map -proj plan -fmt esri -o Outputs/3D/Folly-tot-2D -layout my_layout -enc UTF-8
   # Export en 3D
