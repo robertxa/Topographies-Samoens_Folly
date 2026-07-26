@@ -129,7 +129,7 @@ layout my_layout
 
   # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
   # dont le nom est probablement le titule de la topo.
-  map-comment "Massif cu Criou, Samoëns, 74, France"
+  map-comment "<it>Plan -<ss> Massif du Criou, Samoëns, 74, France"
  
   # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
   # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
@@ -220,7 +220,7 @@ layout atlas_layout
   scale-bar 100 m
 
   # Un commentaire a ajouter au titule. Voir layout ci-dessus.
-  map-comment "Massif du Criou, Samoëns, 74, France"
+  map-comment "<it>Coupe développée -<ss> Massif du Criou, Samoëns, 74, France"
 
  
   # Afficher les statistiques d'explo/topo par équipe/nom.
@@ -260,8 +260,8 @@ layout atlas_layout
 # 3-EXPORT
 
 # Export des xvi pour le dessin si besoin
-#export map -fmt xvi -layout xviexport -o Data/Lambourdin-map.xvi
-#export map -proj extended -layout xviexport -fmt xvi -o Data/Lambourdin-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Lambourdin.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Lambourdin-coupe.xvi
 
 # Selection des Maps à exporter
 select MP-Lambourdin-plan-tot
@@ -269,27 +269,27 @@ select MC-Lambourdin-coupe-tot
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Lambourdin-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout my_layout -o Outputs/Labourdin-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/Lambourdin-2022.lox
+ export model -enable all -o Outputs/Lambourdin.lox
 
 # Export des fichiers ESRI
 # export map -proj plan -fmt esri -o Outputs/Lambourdin-2022 -layout my_layout
 
 # Export des fichiers kml
-# export map -proj plan -fmt kml -o Outputs/Lambourdin-2022.kml -layout my_layout
- export model -fmt kml -o Outputs/Lambourdin-2022-model.kml -enable all
+ export map -proj plan -fmt kml -o Outputs/Lambourdin.kml -layout my_layout
+ export model -fmt kml -o Outputs/Lambourdin-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseLambourdin-2022.sql
+#export database -fmt sql -o Outputs/databaseLambourdin-2022.sql
 
-export continuation-list -o Outputs/ContinuationsLambourdin-2022.html
+#export continuation-list -o Outputs/ContinuationsLambourdin-2022.html
 #export continuation-list -o Outputs/ContinuationsLambourdin-2022.kml
-export survey-list -location on -o Outputs/SurveysLambourdin2022.html
+#export survey-list -location on -o Outputs/SurveysLambourdin2022.html
 #export cave-list -location on -o Outputs/CavesLambourdin2022.html

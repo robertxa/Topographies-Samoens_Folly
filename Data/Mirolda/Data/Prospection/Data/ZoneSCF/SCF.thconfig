@@ -8,7 +8,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/>   
   
  # 1-SOURCES 
-source EU-tot.th
+source SCF-tot.th
    
  # 2-LAYOUT   
  # Debut de la definition du Layout "xviexport"
@@ -97,6 +97,8 @@ source EU-tot.th
     
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o trousEUmap.xvi
+ #export map -fmt xvi -layout xviexport -o trousEUmap.xvi
    
- export map -o trouEUplan.pdf -layout my_layout
+ export map -o trouSCFplan.pdf -layout my_layout
+
+ export model -o scf.kml

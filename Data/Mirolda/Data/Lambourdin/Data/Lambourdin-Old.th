@@ -1,0 +1,36 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Lambourdin -title "Perte du Lambourdin" -entrance Lambourdin
+
+ centerline -extend right
+    
+    date 2022.09.14
+        team "Xavier Robert"
+    explo-date 2014 # --> Il faut leur demander les données topos !
+        explo-team "Magali Brun"
+        explo-team "Alain Gresse"
+        explo-team "Gégène Perrin"
+        explo-team "Patrick Perrin"
+        explo-team "Michel Siméon"
+
+    cs long-lat
+    fix Lambourdin 6.77127 46.07852	1541 # Altitude IGN, Coords A revoir
+    station Lambourdin "Perte du Lambourdin" entrance 
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino left right up down
+    flags approximate
+    Lambourdin   1   8 30   -80  0.3 0.3 0   4
+    1   2   20  230 -45  0.2 0.2 0.3 0.3
+    2   3   3   210 0   0.2 0.2 0.1 0.1
+    flags not approximate
+  
+endcenterline
+
+ endsurvey
