@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 1860.2844 836.6618
+##XTHERION## xth_me_area_adjust -129.0 -129.0 1860.2844 836.6618
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {470.242 1 1.0} {275.588 0@solitaire2022.Solitarises} Solitarises-coupe2023.xvi 0 {}
 
@@ -90,6 +90,7 @@ line wall
   208.5 186.5 208.0 186.5 201.75 185.25
   195.5 184.0 196.5 183.5 190.5 182.25
   184.5 181.0 187.0 181.0 182.75 180.25
+  smooth off
 endline
 
 point 211.75 233.25 label -text "colm."
@@ -120,8 +121,6 @@ line rope
 endline
 
 point 421.5 298.75 height -value [-7 m]
-
-point 497.5 137.0 height -value [-15 m]
 
 point 397.0 241.75 height -value [-4 m]
 
@@ -165,6 +164,7 @@ line wall
   333.25 256.5 332.75 249.25 332.75 246.75
   332.75 244.25 335.5 245.25 327.0 242.25
   324.88 241.5 324.25 240.25 318.25 237.75
+  smooth off
 endline
 
 line wall
@@ -206,28 +206,24 @@ line wall
   smooth off
 endline
 
-line wall -close on -outline in -subtype presumed
+line wall -subtype presumed
   418.5 225.5
-  418.5 225.5 448.5 220.25 450.0 215.5
-  451.5 210.75 453.0 194.25 449.0 192.75
-  445.0 191.25 410.75 195.25 408.75 197.75
-  406.75 200.25 405.0 215.25 404.75 219.25
+  418.5 225.5 448.63 220.29 450.0 215.5
+  450.5 213.75 451.0 212.5 451.0 209.75
+endline
+
+line wall -subtype presumed
+  448.0 202.0
+  444.0 200.5 410.0 205.75 408.0 208.25
+  406.0 210.75 405.0 215.25 404.75 219.25
   404.5 223.25 418.5 225.5 418.5 225.5
   smooth off
 endline
 
 line wall
-  492.75 187.75
-  492.75 187.75 468.25 187.25 468.25 190.5
-  468.25 193.75 464.75 211.75 470.5 214.0
+  467.75 210.0
+  467.75 213.25 468.1 213.06 470.5 214.0
   476.25 216.25 493.5 215.75 493.5 215.75
-  smooth off
-endline
-
-line wall
-  473.25 114.75
-  473.25 114.75 471.0 164.75 474.75 165.75
-  478.5 166.75 492.25 168.5 492.25 168.5
   smooth off
 endline
 
@@ -240,10 +236,8 @@ line wall
   362.0 217.5 355.0 208.0 355.0 204.5
   355.0 201.0 377.5 197.75 384.75 193.25
   altitude .
-  392.0 188.75 402.25 181.25 409.75 176.75
-  417.25 172.25 440.25 167.0 446.25 164.0
-  452.25 161.0 451.25 115.5 451.25 115.5
-  smooth off
+  392.0 188.75 405.02 189.18 413.5 187.0
+  422.25 184.75 441.5 185.75 449.25 186.75
 endline
 
 line rock-border -close on
@@ -313,8 +307,6 @@ line rope
 endline
 
 point 238.75 269.75 continuation -attr Code D -attr Cavite "Jean-Bernard" -attr Reseau "Réseau des Solitarisés" -text "Boyau à désobtruer, courant d'air aspirant en été"
-
-point 460.25 175.25 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Réseau des Solitarisés" -text "Puits dans le méandre à descendre"
 
 point 463.75 301.75 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Réseau des Solitarisés" -text "Conduite forcée à atteindre après E8"
 

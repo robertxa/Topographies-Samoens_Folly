@@ -84,18 +84,6 @@ line wall -subtype invisible
   smooth off
 endline
 
-line wall -subtype invisible
-  790.0 362.25
-  790.0 362.25 783.0 319.0 792.25 313.5
-  801.5 308.0 843.25 312.25 856.5 310.5
-  869.75 308.75 900.0 308.0 900.0 316.5
-  altitude .
-  900.0 325.0 901.25 356.0 898.75 372.5
-  896.25 389.0 893.25 398.0 892.75 404.75
-  892.25 411.5 889.5 416.25 889.5 416.25
-  smooth off
-endline
-
 line wall
   889.5 416.25
   889.5 416.25 859.25 419.25 850.0 421.0
@@ -162,35 +150,19 @@ line border
   smooth off
 endline
 
-line border
-  895.5 319.5
-  895.5 319.5 884.25 312.0 878.0 311.5
-  871.75 311.0 859.5 307.0 859.5 307.0
-  smooth off
+line wall -subtype invisible
+  790.0 362.25
+  889.5 416.25
 endline
 
-line border
-  838.5 340.5
-  838.5 340.5 833.5 329.25 824.5 329.0
-  815.5 328.75 807.0 325.25 802.5 325.25
-  smooth off
-endline
-
-line border
-  885.0 371.5
-  885.0 371.5 871.0 372.25 866.5 365.0
-  862.0 357.75 858.5 357.25 856.0 356.75
-  smooth off
-endline
-
-line border
+line border -clip off
   821.75 373.0
   821.75 373.0 812.0 363.0 805.75 362.5
   799.5 362.0 794.0 361.5 794.0 361.5
   smooth off
 endline
 
-line border
+line border -clip off
   869.5 403.25
   869.5 403.25 853.0 398.75 846.5 396.0
   840.0 393.25 840.75 386.0 834.25 386.25
@@ -570,6 +542,7 @@ line wall
   220.0 305.5
   220.0 305.5 220.25 301.0 220.5 296.75
   220.75 292.5 222.0 290.0 215.5 288.5
+  smooth off
 endline
 
 point 189.0 295.75 height -value [+6 m]
@@ -609,8 +582,6 @@ endline
 point 675.25 437.75 continuation -attr Code E -attr Cavite "Jean-Bernard" -attr Reseau "Solitarisés" -text "Affluent de la Crémière à atteindre et explorer !"
 
 point 636.0 319.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Solitarisés" -text "Perte de l'affluent de la Crémière, Puits arrosé à descendre"
-
-point 849.75 375.0 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Solitarisés" -text "Méandre à descendre"
 
 point 721.0 327.75 continuation -attr Code P -attr Cavite "Jean-Bernard" -attr Reseau "Solitarisés" -text "Méandre à descendre"
 
@@ -921,6 +892,7 @@ line wall
   93.52 334.63 88.75 325.0 82.5 324.75
   76.25 324.5 73.75 324.0 67.75 323.5
   61.75 323.0 60.75 322.0 52.25 324.0
+  smooth off
 endline
 
 line wall
@@ -929,6 +901,7 @@ line wall
   155.75 337.75 150.25 337.75 144.5 336.25
   138.75 334.75 135.25 332.75 132.25 331.5
   129.25 330.25 126.0 331.0 121.5 328.75
+  smooth off
 endline
 
 line rope
@@ -1026,6 +999,7 @@ endline
 line wall
   102.5 300.75
   102.5 300.75 100.0 298.25 99.0 297.0
+  smooth off
 endline
 
 line wall -outline in
@@ -1254,6 +1228,7 @@ endline
 line wall
   295.25 292.0
   295.25 292.0 272.0 296.25 276.0 300.0
+  smooth off
 endline
 
 line wall
@@ -1453,6 +1428,7 @@ line water-flow
   58.25 360.5
   58.25 360.5 51.0 358.5 43.75 353.25
   36.5 348.0 25.5 341.5 23.5 340.75
+  smooth off
 endline
 
 line wall
@@ -1477,6 +1453,7 @@ endline
 line wall
   -26.5 323.5
   -26.5 323.5 -43.75 323.25 -45.25 322.75
+  smooth off
 endline
 
 line wall
@@ -1544,6 +1521,7 @@ line wall
   0.0 318.5 6.25 319.75 8.75 319.75
   11.25 319.75 33.75 325.75 36.25 323.75
   38.75 321.75 47.5 316.0 49.0 314.25
+  smooth off
 endline
 
 point 2.3999999999998636 323.3658000000002 station -name 11

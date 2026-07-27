@@ -3,8 +3,6 @@ encoding  utf-8
 ##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {12426.68 1 1.0} {5853.0 Cc.0@jb-amonts2} coupe-aval-2.xvi 0 {}
 
-
-
 # scrap SC-dupondc1 -projection extended -station-names "" "@Riviere1" -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 15561.0792 -128.0 0.0 0.0 398.50261168 0.0 m]
 
 # point 11265.77 4516.3099999999995 station -name Ka.14
@@ -204,6 +202,8 @@ encoding  utf-8
 # point 10864.57 4423.889999999999 station -name Ka.32
 
 # endscrap
+
+
 
 
 scrap SC-400c1 -projection extended -station-names "" "@Actif"  -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 15561.0792 -128.0 0.0 0.0 398.50261168 0.0 m]
@@ -408,6 +408,11 @@ line water-flow
   8296.0 3541.0 8268.0 3543.0 8256.0 3541.0
   8244.0 3539.0 8212.0 3541.0 8202.0 3540.0
   smooth off
+endline
+
+line map-connection
+  8673.5 3649.5
+  8304.0 3644.0
 endline
 
 point 8358.0 3533.0 label -text "R4"
@@ -877,6 +882,7 @@ point 9488.33 3923.18 station -name Kd.2
 endscrap
 
 
+
 scrap SC-biv500c4 -projection extended -station-names "" "@Actif" -author 2015 "Xavier Robert" -copyright 2015 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -127.99999999999977 15561.0792 -127.99999999999977 0.0 0.0 398.50261168 0.0 m]
 
 point 8116.58 3538.1499999999996 station -name Ke.96
@@ -956,6 +962,7 @@ line wall -subtype presumed
   7504.0 3468.0 7370.5 3472.0 7360.5 3470.0
   7350.5 3468.0 7131.5 3375.5 7124.5 3366.5
   7117.5 3357.5 7061.5 3323.5 7045.5 3313.0
+  smooth off
 endline
 
 line border
@@ -1062,3 +1069,5 @@ point 7047.07 3258.99 station -name Ke.58
 point 7102.13 3260.37 station -name Ke.62
 
 endscrap
+
+

@@ -50,6 +50,8 @@ survey Solitaire -title "Réseau du Solitaire"
 	# Puits des Solitarisés
 	input Data/PuitsSolitarises/PuitsSolitarises-tot.th
 		equate 0@PuitsSolitarises.PuitsSolitarises 10@solitaire2023a.Solitarises
+		join SC-PuitsSolitarises-1@PuitsSolitarises SC-Solitarises2023b-1@Solitarises
+		join SC-PuitsSolitarises-1@PuitsSolitarises SC-Solitarises2023-1@Solitarises -count 2
 	
 	# Méandre des Oeufs
 	input Data/Oeufs/Oeufs-tot.th	#input Data/jb_solitaire2020a.th

@@ -28,7 +28,6 @@ encoding  utf-8
 	MP-Pirates@Pirates
 	break
  	MP-PuitsParalleles@PuitsParalleles
- 	break
 	#preview above MP-solitaire2@Solitaire
  	MP-Solitarises@Solitarises
 	break
@@ -53,6 +52,8 @@ encoding  utf-8
 	MC-oeufs@Oeufs
 	break
 	MC-Solitarises@Solitarises
+	break
+	MC-PuitsSolitarises@PuitsSolitarises
  	break
 	MC-Poncho@Poncho
 	break
@@ -73,6 +74,8 @@ map MC-solitaire-JB -title "Réseau du Solitaire"
 	MC-oeufs@Oeufs	#[-50 50 m] below
 	break
 	MC-Solitarises@Solitarises 	[-200 200 m] below
+	break
+	MC-PuitsSolitarises@PuitsSolitarises 	[-200 200 m] below
  	break
 	MC-Poncho@Poncho 	[-200 200 m] below
 	break
