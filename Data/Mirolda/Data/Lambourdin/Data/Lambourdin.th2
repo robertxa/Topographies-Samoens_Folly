@@ -1,6 +1,222 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.0 -128.0 442.9608 364.2206
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -128.0 -128.0 469.75 436.25
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {202.445 1 1.0} {184.171 0} Lambourdin.xvi 0 {}
+
+
+
+scrap SP-Lambourdin-1 -projection plan -station-names "" "@Lambourdin" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+line water-flow -clip off
+  316.25 211.5
+  316.25 211.5 294.5 212.5 289.25 211.75
+  284.0 211.0 275.25 209.0 275.25 209.0
+  smooth off
+endline
+
+line water-flow -clip off
+  135.5 139.25
+  135.5 139.25 130.25 130.25 125.0 126.25
+  119.75 122.25 113.0 121.25 112.0 115.0
+  111.0 108.75 114.0 97.75 110.5 93.75
+  107.0 89.75 101.25 88.0 99.25 79.25
+  97.25 70.5 93.75 64.25 93.75 64.25
+  smooth off
+endline
+
+point 340.5 224.0 continuation -attr Code D -attr Cavite "Lambourdin" -attr CA "Courant d'air soufflant en été" -text "Amont du méandre, CA soufflant en été, étroit et impénétrable"
+
+point 61.25 53.75 continuation -attr Code D -attr Cavite "Lambourdin" -attr CA "Courant d'air aspirant en été" -text "Suite aval du méandre à désobstruer, CA aspirant en été ; largeur 5 à 10 cm, tournicotte"
+
+line wall
+  90.0 73.5
+  altitude .
+  90.0 73.5 93.5 77.75 93.75 80.0
+  94.0 82.25 94.25 86.0 95.5 89.0
+  96.75 92.0 98.5 95.75 101.25 96.75
+  104.0 97.75 105.0 102.25 105.0 105.0
+  105.0 107.75 104.5 109.5 106.5 114.25
+  108.5 119.0 109.5 120.75 111.5 124.25
+  113.5 127.75 117.0 126.0 118.75 129.0
+  120.5 132.0 123.75 136.0 125.0 142.0
+  126.25 148.0 127.0 150.25 130.75 153.75
+  134.5 157.25 136.25 162.75 141.25 165.25
+  146.25 167.75 150.0 167.75 154.75 170.25
+  159.5 172.75 164.75 177.0 169.0 177.5
+  173.25 178.0 199.0 180.75 202.25 182.0
+  205.5 183.25 221.75 191.5 227.25 194.0
+  232.75 196.5 243.25 202.75 245.5 204.25
+  247.75 205.75 253.5 208.5 257.0 211.5
+  260.5 214.5 263.25 216.25 267.5 217.5
+  271.75 218.75 274.25 219.0 280.0 219.75
+  285.75 220.5 299.25 220.5 302.5 220.5
+  305.75 220.5 309.75 221.0 309.75 221.0
+  smooth off
+endline
+
+point 76.5 63.5 narrow-end
+
+point 322.5 222.25 narrow-end
+
+point 77.25 169.75 label -text "R1"
+
+point 182.0 139.25 label -text "R5"
+
+line fault -clip off
+  186.75 179.0
+  150.5 160.25
+endline
+
+point 239.25 167.75 dig
+
+point 162.25 200.25 dig
+
+point 73.5 89.0 dig
+
+point 88.0 130.25 air-draught -orientation 205.0 -scale xs -subtype summer
+
+point 282.5 243.75 air-draught -orientation 259.9 -scale xs -subtype summer
+
+line water-flow -clip off
+  250.75 195.0
+  250.75 195.0 235.5 191.25 222.25 184.75
+  209.0 178.25 200.25 173.0 193.25 173.0
+  186.25 173.0 182.25 173.0 182.25 173.0
+  smooth off
+endline
+
+line pit
+  124.25 138.75
+  124.25 138.75 123.75 149.5 114.25 142.0
+  smooth off
+endline
+
+line pit
+  130.75 153.75
+  130.75 153.75 132.25 163.5 123.0 157.5
+  smooth off
+endline
+
+line pit
+  160.75 174.0
+  160.75 174.0 163.0 178.0 157.25 178.0
+  smooth off
+endline
+
+line pit
+  141.25 165.25
+  141.25 165.25 148.5 169.75 135.5 172.75
+  smooth off
+endline
+
+line pit
+  154.75 170.25
+  154.75 170.25 158.75 177.0 148.75 174.0
+  smooth off
+endline
+
+line wall
+  310.75 223.25
+  altitude .
+  310.75 223.25 297.25 223.0 291.25 222.75
+  285.25 222.5 283.25 224.5 276.25 223.25
+  269.25 222.0 267.5 220.25 262.5 220.25
+  257.5 220.25 251.5 215.25 248.25 212.0
+  245.0 208.75 242.25 204.25 236.5 202.0
+  230.75 199.75 206.25 187.0 201.5 186.75
+  196.75 186.5 170.0 182.75 164.75 180.75
+  159.5 178.75 154.75 177.0 148.75 174.0
+  142.75 171.0 138.75 172.5 135.5 172.75
+  132.25 173.0 127.75 174.5 127.75 170.75
+  127.75 167.0 132.0 167.5 128.0 163.0
+  124.0 158.5 121.25 156.0 119.75 152.5
+  118.25 149.0 118.5 153.0 115.5 144.75
+  112.5 136.5 111.5 134.5 109.75 131.25
+  108.0 128.0 107.0 125.25 104.5 120.75
+  102.0 116.25 101.5 116.25 99.25 110.25
+  97.0 104.25 96.5 104.75 94.25 98.5
+  92.0 92.25 90.5 88.75 90.5 85.75
+  90.5 82.75 91.25 82.0 91.0 79.5
+  90.75 77.0 88.5 75.0 88.5 75.0
+  smooth off
+endline
+
+point 307.245 222.12099999999998 station -name 13
+
+point 270.475 220.861 station -name 12
+
+point 253.305 210.311 station -name 3
+
+point 223.705 194.881 station -name 2
+
+point 202.445 184.171 station -name 0
+
+point 168.425 180.861 station -name 1
+
+point 135.595 165.751 station -name 4
+
+point 128.97500000000002 160.551 station -name 5
+
+point 121.105 147.011 station -name 6
+
+point 112.205 130.311 station -name 7
+
+point 102.285 109.451 station -name 8
+
+point 99.925 100.001 station -name 9
+
+point 92.045 85.75099999999999 station -name 10
+
+endscrap
+
+
+
+scrap SP-Lambourdin-2 -projection plan -station-names "" "@Lambourdin" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 442.9608 -128.0 0.0 0.0 14.50240432 0.0 m]
+
+point 212.25 214.0 entrance -orientation 100.2
+
+point 245.5 240.0 label -text "R4"
+
+line wall -subtype invisible
+  239.75 211.5
+  233.5 206.75
+endline
+
+line pit
+  256.25 214.0
+  256.25 214.0 262.25 210.25 263.75 215.75
+  smooth off
+endline
+
+point 172.0 226.75 air-draught -orientation 112.7 -scale xs -subtype summer
+
+point 175.75 307.0 label -text "<center><bf>Perte du<br>Lambourdin" -scale xl
+
+point 264.75 196.25 dig
+
+line wall
+  233.5 206.75
+  233.5 206.75 244.75 204.75 247.5 206.0
+  250.25 207.25 256.5 210.0 259.5 210.25
+  262.5 210.5 267.0 211.0 266.5 212.75
+  266.0 214.5 265.25 215.75 263.75 215.75
+  262.25 215.75 264.25 221.0 261.25 220.0
+  258.25 219.0 252.75 217.5 251.5 215.25
+  250.25 213.0 257.5 215.25 256.25 214.0
+  255.0 212.75 250.75 210.25 247.75 210.25
+  244.75 210.25 243.0 211.5 239.75 211.5
+  smooth off
+  altitude .
+endline
+
+point 259.605 217.481 station -name 11
+
+point 262.675 211.971 station -name 14
+
+point 244.175 207.011 station -name 15
+
+point 237.245 208.351 station -name Lambourdin
+
+endscrap
 
 
