@@ -113,6 +113,7 @@ line wall -subtype debris
   536.75 377.75 556.75 385.0 562.0 386.25
   567.25 387.5 577.5 389.25 581.0 389.25
   584.5 389.25 586.25 390.75 588.25 391.25
+  smooth off
 endline
 
 point 125.75 203.25 narrow-end
@@ -212,7 +213,24 @@ line wall
   544.0 269.25 521.25 289.75 528.5 291.25
   535.75 292.75 527.75 326.25 528.25 338.75
   528.75 351.25 532.5 375.25 536.75 377.75
+  smooth off
 endline
+
+point 198.75 114.0 height -value [-6 m]
+
+point 244.25 149.75 height -value [-12 m]
+
+point 265.25 215.75 height -value [-11 m]
+
+point 156.0 214.25 height -value [-11 m]
+
+point 313.75 316.75 height -value [-5 m]
+
+point 417.5 335.25 label -text "R3"
+
+point 622.25 474.75 height -value [-10 m]
+
+point 566.5 334.0 height -value [-22 m]
 
 line wall
   196.75 174.75
@@ -237,11 +255,13 @@ line wall
   altitude .
   135.25 178.75 156.5 185.25 167.5 186.0
   178.5 186.75 179.75 180.75 179.75 176.5
+  smooth off
 endline
 
 line wall
   571.5 444.0
   571.5 444.0 572.29 441.11 570.75 436.5
+  smooth off
 endline
 
 line wall
@@ -251,6 +271,7 @@ line wall
   567.25 394.75 568.0 399.5 561.5 398.25
   555.0 397.0 538.75 390.5 532.75 388.25
   526.75 386.0 530.0 393.5 521.25 381.75
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -285,6 +306,7 @@ line wall -subtype presumed -outline none
   409.0 303.0 392.0 303.75 379.0 298.25
   366.0 292.75 348.0 289.25 330.75 284.5
   313.5 279.75 299.0 278.5 291.75 274.5
+  smooth off
 endline
 
 line wall
