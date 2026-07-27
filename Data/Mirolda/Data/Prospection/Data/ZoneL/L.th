@@ -1,0 +1,28 @@
+encoding  utf-8
+
+# Copyright (C) 2026 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousL -title "trous L"
+
+# Fichier contenant les positions des entrées de la zone L, proches du Lambourdin, Samoens, France
+
+ centerline
+#cs lat-long
+
+#cs UTM32
+cs EPSG:2154 
+fix     L261        991388.4    6560427.9   1602    # GPS 2026 + Lidar IGN
+fix     L262        991592.0    6560550.1   1701    # GPS 2026 + Lidar IGN
+fix     L263        991264.5    6560205.9   1492    # GPS 2026 + Lidar IGN
+fix     L264        991196.2    6560180.5   1516    # GPS 2026 + Lidar IGN
+
+station   L261       "L261" entrance continuation explored 08m #air-draught #8 m -6 m
+station   L262       "L262" entrance continuation explored 03m #air-draught #Perte commblée sur la droite, à gauche trop étroit, continue mais pas de CA # 1-154
+station   L263       "L263" entrance continuation explored 08m #air-draught #Fentes de Lapiaz de 6 à 8 m de profondeur environ, pas de CA mais belle gueule # 1-78
+station   L264       "L264" entrance continuation explored 08m #air-draught #Fente de Lapiaz de 8 m de profondeur environ, pas de CA # 1-75
+
+endcenterline
+
+endsurvey
