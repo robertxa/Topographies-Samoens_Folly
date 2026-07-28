@@ -11,9 +11,10 @@ survey trousSCF -title "trous SCF"
  centerline
 #cs lat-long
 
-cs UTM32
-fix       SCF3       328264  5105567     1805    # GPS 2023 + Lidar IGN     # COORDONNEES FAUSSES, A REPRENDRE
-
+#cs UTM32
+#fix       SCF3       328264  5105567     1805    # GPS 2023 + Lidar IGN     # COORDONNEES FAUSSES, A REPRENDRE
+cs EPSG:2154    
+fix       SCF3       991452.04  6561766.06     2097    # Lidar IGN     # COORDONNEES meilleures ? C'est le bon trou ?
 station   SCF3       "SCF3" entrance continuation explored 31m air-draught #continuation explored 40m
 
 endcenterline

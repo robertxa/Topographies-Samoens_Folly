@@ -97,6 +97,8 @@ source CF-tot.th
     
   
  # 3-EXPORTS   
- export map -fmt xvi -layout xviexport -o trousCFmap.xvi
+ #export map -fmt xvi -layout xviexport -o trousCFmap.xvi
    
  export map -o trouCFplan.pdf -layout my_layout
+
+ export model -o trouCF.kml

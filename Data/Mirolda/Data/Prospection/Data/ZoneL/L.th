@@ -9,19 +9,57 @@ survey trousL -title "trous L"
 # Fichier contenant les positions des entrées de la zone L, proches du Lambourdin, Samoens, France
 
  centerline
-#cs lat-long
+cs lat-long
+
+fix L265    46.08075    6.77237 1604   # GPS 2026 + Lidar IGN
+station L265    "L265"  entrance    # P4 colmaté, sous cutané, Terminé, pas de CA
+    data normal from to length  compass clino   left    right   up  down
+    L265    L265b   0   0   0   0.5 0.5 0   4
+    L265    L265-1  4   0   -90 0.5 0.5 4   0   # colm
+
+fix L269    46.07880    6.76938 1490   # GPS 2026 + Lidar IGN
+station L269    "L269"  entrance    # P4 colmaté, diam 1.2 m, sous cutané au pied d'un bel arbre, Terminé, pas de CA
+    data normal from to length  compass clino   left    right   up  down
+    L269    L269b   0   0   0   0.5 0.7 0   4
+    L269    L269-1  4   0   -90 0.5 0.7 4   0   # colm
+
 
 #cs UTM32
-cs EPSG:2154 
-fix     L261        991388.4    6560427.9   1602    # GPS 2026 + Lidar IGN
-fix     L262        991592.0    6560550.1   1701    # GPS 2026 + Lidar IGN
-fix     L263        991264.5    6560205.9   1492    # GPS 2026 + Lidar IGN
-fix     L264        991196.2    6560180.5   1516    # GPS 2026 + Lidar IGN
 
-station   L261       "L261" entrance continuation explored 08m #air-draught #8 m -6 m
-station   L262       "L262" entrance continuation explored 03m #air-draught #Perte commblée sur la droite, à gauche trop étroit, continue mais pas de CA # 1-154
-station   L263       "L263" entrance continuation explored 08m #air-draught #Fentes de Lapiaz de 6 à 8 m de profondeur environ, pas de CA mais belle gueule # 1-78
-station   L264       "L264" entrance continuation explored 08m #air-draught #Fente de Lapiaz de 8 m de profondeur environ, pas de CA # 1-75
+
+cs EPSG:2154 
+fix     L261        991388.4    6560427.9   1602    # Lidar IGN  # 1-152
+station   L261       "L261" entrance continuation explored 08m #air-draught #8 m -6 m ; Méandre sur Faille, pas de Zef, Terminé, réseau sous cutané
+
+fix     L262        991592.0    6560550.1   1701    # Lidar IGN  # 1-154
+station   L262       "L262" entrance continuation explored 03m #air-draught #Perte commblée sur la droite, à gauche trop étroit, continue mais pas de CA
+
+fix     L263        991264.5    6560205.9   1492    # Lidar IGN  # 1-78
+station   L263       "L263" entrance continuation explored 08m #air-draught #Fentes de Lapiaz de 6 à 8 m de profondeur environ, pas de CA mais belle gueule 
+
+fix     L264        991196.2    6560180.5   1516    # Lidar IGN  # 1-75
+station   L264       "L264" entrance #continuation explored 08m #air-draught #Fente de Lapiaz de 8 m de profondeur environ, pas de CA 
+    data normal from to length  compass clino   left    right   up  down
+    L264    L264b   0   0   0   1 2 0   8
+    L264    L264-1  8   0   -90 0.5 3 8   0 # colm
+
+fix L266  991368.8  6560337.1 1584 # Lidar IGN # 1-145
+station L266    "L266"  entrance    # Faille dans Lapiaz, -4 m, colmatée
+    data normal from to length  compass clino   left    right   up  down
+    L266    L266b   0   0   0   1 4 0   4
+    L266    L266-1  4   0   -90 0.5 4 4   0 # colm
+
+fix L267  991377.8  6560342.8 1581 # Lidar IGN # 1-146
+station L267    "L267"  entrance    # large Faille dans Lapiaz, -5 m, colmatée
+    data normal from to length  compass clino   left    right   up  down
+    L267    L267b   0   0   0   1.5 5 0   4
+    L267    L267-1  6   0   -90 0.5 5 6   0 # colm
+
+fix L268  991250.7  6560196.5 1511 # Lidar IGN # 1-77
+station L268    "L268"  entrance    # large Faille dans Lapiaz, -5 m, colmatée
+    data normal from to length  compass clino   left    right   up  down
+    L268    L268b   0   0   0   1 1 0   3
+    L268    L268-1  3   0   -90 0.2 1 3   0 # colm
 
 
 endcenterline

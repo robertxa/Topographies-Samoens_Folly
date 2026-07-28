@@ -9,7 +9,16 @@ survey trousFU -title "trous FU"
 # Fichier contenant les positions des entrées de la zone AV, Samoens, France
 
  centerline
-#cs lat-long
+cs lat-long
+
+fix FU241   46.09243    6.79286 2312    # GPS2024 + Lidar IGN
+station FU241   "FU241" entrance    # Puit creusé non marqué ; Percé pour marquage inox ; Sondé à-15 m ; Mérite visite
+    data normal from to length  compass clino   #left    right   up  down
+    FU241    FU241b   0   0   0   #0.5 0.7 0   4
+    FU241    FU241-1  15   0   -90 #0.5 0.7 4   0   # ?
+
+fix FU242   46.09283    6.79270   2333    # GPS2024 + Lidar IGN
+station FU242   "FU242" entrance    # Puits à neige en falaise ; Difficile d'accès 
 
 cs UTM32
 fix       FU852       328763  5106490     2190    # GPS 2023 + Lidar IGN
@@ -26,7 +35,10 @@ station FU603   "FU603" entrance continuation explored 10m air-draught
 station FU604b "FU604b"    entrance continuation explored 40m # -10 m
 station   FU852       "FU852" entrance continuation explored 10m #air-draught #continuation explored 40m
 station   FU853     "FU853" entrance continuation explored 20m
-station FU861   "FU861" entrance continuation explored 40m # -40 m, terminé
+station FU861   "FU861" entrance #continuation explored 40m # -40 m, terminé, noté SCL F par Florent Matricon
+data normal from to length  compass clino   #left    right   up  down
+    FU861    FU861b   0   0   0   #0.5 0.7 0   4
+    FU861    FU861-1  40   0   -90 #0.5 0.7 4   0   # ?
 station   FU911     "FU911" entrance continuation explored 10m #air-draught continuation explored 40m
 station     FU943   "FU943" entrance continuation explored 35m air-draught
 
