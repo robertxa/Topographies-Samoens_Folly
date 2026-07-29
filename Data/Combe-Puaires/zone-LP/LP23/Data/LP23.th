@@ -10,21 +10,20 @@ survey LP23 -title "LP23" -entrance "LP23"
  #fix LP23   944.8320       2133.399       2259 
 centerline
    date 1989.08.25
-  team "Bernard Lips"
-  team "Patrice Dubail"
- cs lat-long
- fix LP23    46.112667        6.799750       2249	# 2259
- #fix LP33   46.11196 6.8003955   2270  # Altitude à REVOIR
- fix LP33   46.112255   6.8002725   2263  # Altitude à Partir LidaHD
+      team "Bernard Lips"
+      team "Patrice Dubail"
+   
+   cs lat-long
+   fix LP23    46.112667        6.799750       2249	# 2259
+   ##fix LP33   46.11196 6.8003955   2270  # Altitude à REVOIR
+   fix LP33   46.112255   6.8002725   2263  # Altitude à Partir LidaHD
+   station LP33 "LP33" entrance # LP33 pour deuxieme entree
 
- station LP33 "LP33" entrance
-
- # LP33 pour deuxieme entree
    calibrate counter 0 1.000
-  explo-date 1988.11.11
-  explo-team "Vincent Treiber"
-  explo-team "Philippe Rydin"
-  explo-team "Christophe Ohl"
+   explo-date 1988.11.11
+      explo-team "Vincent Treiber"
+      explo-team "Philippe Rydin"
+      explo-team "Christophe Ohl"
    units lenght meters
    units compass grad
    units clino grad
@@ -87,7 +86,7 @@ centerline
    1.28 1.29    2.24       236      -30       00       00       00       00    
    1.29 1.30    3.15       275      -17       00       00       00       00    
    1.30 1.31    4.28       352      -14       00       00       00       00    
-   1.31 1.32    20       352       00       00       00       00       00    
+   1.31 1.32    2.0       352       00       00       00       00       00    
    1.32 1.33    3.57       00      -100       00       00       00       00    
    1.33 1.34    4.30       111      -32       00       00       00       00    
    1.34 1.35    5.30       344      -26       00       00       00       00    
@@ -115,7 +114,7 @@ centerline
    extend right
    2.0 2.1 1.0 6.0    350       00       00       00       00       00    
    2.1 2.2 10300.0 10704.0    384       60       00       00       00       00    
-   2.2 2.3 10704.0 11087.0    70      -50       00       00       00       00    
+   2.2 2.3 10704.0 11087.0    7      -50       00       00       00       00    
    2.3 2.4 11087.0 11462.0    360       38       00       00       00       00    
    2.4 2.5 11462.0 12011.0    375       30       00       00       00       00    
    2.5 2.6 12011.0 12743.0    300       65       00       00       00       00    

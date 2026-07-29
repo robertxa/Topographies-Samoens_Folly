@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 445.25 482.3179
+##XTHERION## xth_me_area_adjust -128.017 -128.013 445.25 482.3179
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {107.268 1 1.0} {311.243 LP23} LP23-map.xvi 0 {}
 
@@ -481,7 +481,7 @@ point 248.738 139.033 station -name 4.1@LP23
 
 point 233.068 159.403 station -name 1.26@LP23
 
-point 236.898 168.543 station -name 1.24@LP23
+point 236.878 168.53300000000002 station -name 1.24@LP23
 
 point 231.268 178.893 station -name 1.23@LP23
 
@@ -561,6 +561,7 @@ endline
 line wall -subtype invisible
   93.75 263.25
   93.75 263.25 96.5 265.5 94.25 268.0
+  smooth off
 endline
 
 line wall -subtype invisible
@@ -767,8 +768,8 @@ line wall
   41.75 311.75
   41.75 311.75 47.75 307.5 50.75 306.25
   53.75 305.0 54.75 305.5 55.75 302.0
-  56.75 298.5 60.25 289.25 60.25 286.25
-  60.25 283.25 51.75 278.0 52.75 275.5
+  56.75 298.5 59.25 290.0 59.25 287.0
+  59.25 284.0 51.75 278.0 52.75 275.5
   53.75 273.0 61.0 273.25 62.25 271.25
   63.5 269.25 65.0 266.75 66.25 265.0
   67.5 263.25 76.5 238.0 77.25 240.75
