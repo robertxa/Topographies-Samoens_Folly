@@ -5,13 +5,13 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-survey CP88 -title "CP88" -entrance CP88
+survey CP88 -title "CP88" #-entrance CP88
 
   centerline
     
     cs lat-long
     fix CP88 46.11266 6.791489 1965
-    station CP88 entrance air-draught
+    station CP88 "CP88" entrance air-draught
 
     date 2026.07.13 
       team "Xavier Robert"

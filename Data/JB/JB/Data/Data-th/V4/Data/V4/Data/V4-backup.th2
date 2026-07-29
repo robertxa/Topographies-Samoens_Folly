@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 6688.0 4612.75 26023.25 13867.130000000001
+##XTHERION## xth_me_area_adjust 6688.0 4612.5 26023.25 13867.130000000001
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {25895.25 0 1.0} {13739.130000000001 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
@@ -703,7 +703,7 @@ point 7373.5 4774.5 rope
 
 line wall
   7356.25 4771.75
-  7368.5 4752.0
+  7374.75 4744.75
 endline
 
 point 7381.99 4753.6 station -name Ja.24
@@ -753,8 +753,8 @@ line floor-meander
 endline
 
 line wall
-  7380.75 4763.75
-  7377.0 4763.25 7367.5 4771.25 7365.5 4774.75
+  7389.25 4759.75
+  7385.5 4759.25 7367.5 4771.25 7365.5 4774.75
   7363.5 4778.25 7351.5 4796.75 7348.0 4799.25
   altitude .
   7344.5 4801.75 7318.75 4815.0 7316.25 4820.25
@@ -904,6 +904,11 @@ line gradient
 endline
 
 line wall -subtype invisible
+  7376.25 4742.25
+  7389.25 4759.75
+endline
+
+line wall -subtype invisible
   7110.75 5047.5
   7110.75 5047.5 7111.25 5050.25 7109.25 5051.0
   smooth off
@@ -989,6 +994,12 @@ line wall
   altitude .
   7312.75 4812.75 7336.25 4798.25 7340.0 4793.25
   7343.75 4788.25 7354.75 4775.5 7356.25 4771.75
+  smooth off
+endline
+
+line wall
+  7374.75 4744.75
+  7377.75 4740.0 7376.25 4742.25 7376.25 4742.25
   smooth off
 endline
 

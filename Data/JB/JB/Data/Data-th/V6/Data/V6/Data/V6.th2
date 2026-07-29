@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust 6811.0 5156.5 26023.25 13867.130000000001
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust 6812.25 5157.75 26023.25 13867.130000000001
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {25895.25 0 1.0} {13739.130000000001 C37b@jb-amonts1.Jean-Bernard} synthese_plan.xvi 0 {}
 
 # scrap SP-V6ter -projection plan -author 2010 "Xavier Robert" -copyright 2010 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 14576.8267 -128.0 0.0 0.0 373.50259818 0.0 m]
@@ -230,6 +230,11 @@ line wall
   smooth off
 endline
 
+line wall -subtype invisible
+  7180.0 5301.25
+  7189.25 5297.0
+endline
+
 line wall
   7097.5 5369.0
   7097.5 5369.0 7102.0 5370.5 7104.0 5370.5
@@ -239,8 +244,9 @@ line wall
   7176.0 5351.75 7181.5 5350.75 7183.5 5349.0
   7185.5 5347.25 7190.0 5341.75 7190.5 5337.25
   altitude .
-  7191.0 5332.75 7185.0 5319.25 7185.0 5316.0
-  7185.0 5312.75 7182.25 5299.25 7182.25 5296.75
+  7191.0 5332.75 7185.25 5316.25 7185.25 5316.25
+  smooth off
+  7185.25 5316.25 7181.5 5304.5 7180.0 5301.25
   smooth off
 endline
 
@@ -268,7 +274,7 @@ line wall -subtype unsurveyed
   7098.0 5376.0
   7098.0 5376.0 7074.0 5340.0 7065.0 5339.0
   7056.0 5338.0 7049.5 5317.0 7046.0 5317.0
-  7042.5 5317.0 7031.0 5310.5 7031.0 5313.0
+  7042.5 5317.0 7031.0 5313.0 7031.0 5313.0
   smooth off
 endline
 
@@ -322,9 +328,14 @@ line wall -id V6-1
   smooth off
 endline
 
+line wall -subtype invisible
+  7269.5 5395.5
+  7262.5 5397.75
+endline
+
 line wall
-  7231.25 5312.25
-  7226.75 5312.75 7225.25 5311.25 7227.25 5316.0
+  7231.25 5311.5
+  7226.75 5312.0 7225.25 5311.25 7227.25 5316.0
   7229.25 5320.75 7236.75 5320.5 7246.75 5324.0
   7256.75 5327.5 7264.5 5324.5 7268.5 5327.75
   7272.5 5331.0 7273.25 5334.25 7273.25 5337.25
@@ -362,8 +373,6 @@ point 7215.11 5330.02 station -name Ia.0
 point 7233.11 5353.44 station -name Ih.37
 
 point 7221.77 5357.13 station -name Ib.18
-
-point 7205.75 5326.75 station -name Ih.37
 
 point 7208.78 5325.57 station -name Ih.36
 

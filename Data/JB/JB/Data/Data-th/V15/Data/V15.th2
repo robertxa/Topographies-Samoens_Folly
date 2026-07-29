@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -138.25 450.0 413.75
+##XTHERION## xth_me_area_adjust -85.13000000000001 -138.25 450.0 413.75
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {210.267 1 1.0} {168.307 V15@V15.V15} V15-plan.xvi 0 {}
 
@@ -10,32 +10,38 @@ scrap SP-V15-1 -projection plan -station-names "" "@V15" -author 2023 "Xavier Ro
 line pit
   192.75 215.25
   192.75 215.25 196.0 208.75 190.25 207.25
+  smooth off
 endline
 
 line pit
   207.5 201.0
   207.5 201.0 214.25 198.0 216.25 205.25
+  smooth off
 endline
 
 line pit
   219.75 194.5
   219.75 194.5 218.25 203.25 216.25 205.25
+  smooth off
 endline
 
 line pit
   206.5 199.75
   206.5 199.75 202.0 195.0 210.25 194.25
+  smooth off
 endline
 
 line pit
   203.5 141.5
   203.5 141.5 203.75 154.5 204.5 159.75
+  smooth off
 endline
 
 line wall -subtype invisible
   218.25 164.5
   218.25 164.5 217.0 169.25 213.0 170.5
   209.0 171.75 207.25 171.75 205.0 170.5
+  smooth off
 endline
 
 point 217.0 136.75 air-draught -orientation 30.6 -subtype summer
@@ -113,6 +119,7 @@ line wall
   203.75 189.0 206.0 192.5 210.25 194.25
   214.5 196.0 217.25 196.5 219.25 198.25
   221.25 200.0 221.0 201.25 222.75 202.75
+  smooth off
 endline
 
 point 192.93699999999998 221.037 station -name 13
@@ -182,11 +189,13 @@ point 252.387 207.627 station -name 17
 line wall
   267.5 185.25
   267.5 185.25 277.0 182.25 278.25 178.25
+  smooth off
 endline
 
 line wall -subtype unsurveyed
   245.5 195.25
   245.5 195.25 265.25 187.25 267.5 185.25
+  smooth off
 endline
 
 line wall -outline in -subtype unsurveyed
@@ -210,6 +219,7 @@ line wall
   211.25 209.75
   211.25 209.75 220.5 216.25 222.0 213.25
   223.5 210.25 225.25 210.0 223.5 207.75
+  smooth off
 endline
 
 line wall
@@ -280,33 +290,39 @@ point 303.0 225.5 height -value [-6 m]
 line pit
   267.0 235.5
   267.0 235.5 283.0 240.0 278.0 245.75
+  smooth off
 endline
 
 line pit
   273.25 233.25
   273.25 233.25 278.75 227.0 279.5 224.5
   280.25 222.0 283.25 228.5 287.0 230.75
+  smooth off
 endline
 
 line pit
   261.5 205.25
   261.5 205.25 270.5 195.25 275.75 198.25
+  smooth off
 endline
 
 line pit
   265.75 192.75
   265.75 192.75 277.5 187.5 277.25 195.0
+  smooth off
 endline
 
 line pit
   229.75 200.25
   229.75 200.25 232.75 201.25 239.25 201.0
   245.75 200.75 248.75 200.0 252.25 200.5
+  smooth off
 endline
 
 line pit
   252.5 203.75
   252.5 203.75 260.0 212.5 254.0 219.5
+  smooth off
 endline
 
 line pit
@@ -320,6 +336,7 @@ endline
 line pit
   222.25 209.25
   222.25 209.25 226.25 211.0 226.25 202.75
+  smooth off
 endline
 
 line wall
@@ -358,6 +375,7 @@ point 210.25 225.0 masonry
 line pit
   219.0 224.5
   219.0 224.5 227.25 224.5 227.25 229.75
+  smooth off
 endline
 
 line chimney -close on
@@ -383,11 +401,13 @@ endline
 line pit
   203.25 225.0
   203.25 225.0 206.75 230.0 202.75 234.5
+  smooth off
 endline
 
 line pit
   222.0 234.5
   222.0 234.5 217.75 233.75 217.5 239.0
+  smooth off
 endline
 
 point 211.25 214.5 blocks
@@ -505,6 +525,7 @@ line wall
   123.0 93.25 127.0 90.25 128.25 83.75
   129.5 77.25 128.25 73.0 126.5 71.0
   124.75 69.0 119.0 68.25 117.25 67.75
+  smooth off
 endline
 
 line wall
@@ -597,37 +618,44 @@ point 126.0 208.75 label -text "etr."
 line pit
   177.25 178.5
   177.25 178.5 181.0 189.75 176.0 192.0
+  smooth off
 endline
 
 line pit
   170.5 174.0
   170.5 174.0 168.75 189.0 169.25 195.0
+  smooth off
 endline
 
 line pit
   149.5 202.75
   149.5 202.75 160.0 195.25 159.75 199.25
   159.5 203.25 157.25 209.75 154.5 211.0
+  smooth off
 endline
 
 line pit
   162.0 171.5
   162.0 171.5 163.25 167.0 158.5 164.75
+  smooth off
 endline
 
 line pit
   166.5 158.75
   166.5 158.75 171.0 166.0 171.0 169.25
+  smooth off
 endline
 
 line pit
   162.25 156.5
   162.25 156.5 171.0 164.5 158.5 164.75
+  smooth off
 endline
 
 line pit
   154.0 146.5
   154.0 146.5 159.5 158.0 149.5 157.25
+  smooth off
 endline
 
 line pit
@@ -638,26 +666,31 @@ endline
 line pit
   144.25 137.5
   144.25 137.5 140.0 143.0 136.0 139.0
+  smooth off
 endline
 
 line pit
   119.0 107.5
   119.0 107.5 121.25 112.75 121.25 117.25
+  smooth off
 endline
 
 line pit
   136.5 99.25
   136.5 99.25 129.0 100.5 126.75 95.75
+  smooth off
 endline
 
 line pit
   107.75 45.25
   107.75 45.25 100.25 53.25 96.0 47.5
+  smooth off
 endline
 
 line pit
   95.25 12.25
   95.25 12.25 85.25 19.0 84.0 12.5
+  smooth off
 endline
 
 point 105.0 -9.0 label -text "etr."

@@ -216,10 +216,10 @@ endlayout
 select MP-Folly-tot@MassifFolly
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -projection plan -fmt pdf -o Outputs/2D/Folly-2025-plan-IGN.pdf -layout my_layout
+ export map -projection plan -fmt pdf -o Outputs/2D/Folly-2026-plan-IGN.pdf -layout my_layout
 
 # Export du fichier 3d pour Loch
- export model -o Outputs/3D/Folly-tot-IGN-2025.lox
+ export model -o Outputs/3D/Folly-tot-IGN-2026.lox
 # export model -o Outputs/3D/Folly-tot-Xav-2022.3d
 
 # Export des fichiers ESRI
@@ -233,9 +233,9 @@ select MP-Folly-tot@MassifFolly
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/Lists/databaseJB-2025.sql
+export database -fmt sql -o Outputs/Lists/databaseJB-2026.sql
 
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2025.html
-export continuation-list -o Outputs/Lists/ContinuationsJB2-2025.kml
-export survey-list -location on -o Outputs/Lists/Surveys2025.html
-export cave-list -location on -o Outputs/Lists/Caves2025.html
+export continuation-list -o Outputs/Lists/ContinuationsJB2-2026.html
+export continuation-list -o Outputs/Lists/ContinuationsJB2-2026.kml
+export survey-list -location on -o Outputs/Lists/Surveys2026.html
+export cave-list -location on -o Outputs/Lists/Caves2026.html
