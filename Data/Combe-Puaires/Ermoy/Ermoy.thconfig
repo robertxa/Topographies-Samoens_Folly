@@ -36,7 +36,7 @@ endlayout
   
 layout my_layout
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_Ermoy	# Pour rajouter les coordonnées des entrées
+	#copy Coords_Header_Ermoy	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy headerl
 	copy langue-fr
@@ -176,7 +176,7 @@ endlayout
 layout my_layout-coupe
 
 	# Call the config settings (Layout config inside the config.thc file)
-	copy Coords_Header_Ermoy	# Pour rajouter les coordonnées des entrées
+	#copy Coords_Header_Ermoy	# Pour rajouter les coordonnées des entrées
 	copy drawingconfig
 	copy header_coupe
 	copy langue-fr
@@ -264,7 +264,7 @@ export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-MARS-20
 #export model -o Outputs/Ermoy-MARS-2009.lox
   
 # Export des fichiers ESRI
-export map -proj plan -fmt esri -o Outputs/Ermoy-MARS-2009 -layout my_layout
+export map -proj plan -fmt esri -o Outputs/Ermoy -layout my_layout
   
 # Export des fichiers kml
 #export map -proj plan -fmt kml -o Outputs/Ermoy-MARS-2009.kml -layout my_layout

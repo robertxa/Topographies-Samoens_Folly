@@ -18,6 +18,7 @@ survey Ermoy -title "Grotte de l'Ermoy"
  	
 	# Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
 	## join scrap1 scrap2 . C'est tout simple !
+	join SP-v_bivouac SP-bivouac
 	join SP-v_bivouac SP-Escalades
 	join SP-jctaval SP-Aval-sup
 	join SP-avalinf SP-Ermoy-entree2
