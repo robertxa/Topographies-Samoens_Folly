@@ -1,0 +1,66 @@
+encoding utf-8
+# 2026.08.19 created by TopoDroid v 6.4.50
+
+survey Su01 -title "Su01"
+
+  centerline
+
+    cs epsg:2154
+    fix Su01  988488 6562160 1297
+    station Su01 "Su01" entrance
+    
+    explo-date 2005.07.29
+      explo-team "Xavier Robert"
+    date 2026.08.19 
+      team "Xavier Robert"
+
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    # extend auto
+    Su01 . 1.87 231.9 -34.6
+    Su01 . 1.50 213.9 -45.5
+    Su01 . 2.44 287.4 -33.1
+    Su01 . 4.15 314.4 -2.8
+    Su01 . 3.13 303.2 -13.7
+    Su01 . 0.94 319.9 -21.1
+    Su01 . 2.00 314.6 -18.5
+    Su01 . 2.47 310.1 -58.7
+    Su01 . 1.85 281.1 -62.3
+    Su01 . 5.69 311.9 -49.0
+    Su01 . 4.57 290.2 -58.3
+    extend right
+    Su01 1 1.49 260.0 -39.4
+    # extend auto
+    1 . 3.30 336.5 1.2
+    1 . 1.20 1.5 -10.8
+    1 . 1.36 24.9 -49.7
+    1 . 0.79 45.5 -71.9
+    1 . 1.24 307.9 -13.8
+    1 . 1.74 323.7 -3.6
+    1 . 4.48 333.2 -35.8
+    1 . 13.81 327.3 -62.2
+    1 . 7.07 339.0 -63.3
+    1 . 5.05 338.0 -49.9
+    1 . 4.53 321.7 -48.5
+    1 . 3.25 302.0 -66.5
+    1 . 3.30 1.4 -71.0
+    extend right
+    1 2 11.51 323.8 -76.3
+
+    flags approximate
+      extend right
+      2 3 4 325 -30
+      extend left
+      2 4 5 75  -15
+    flags not approximate
+
+  endcenterline
+
+  # input "Su01-0s.th2"
+
+  # map m0s -projection extended
+  #   Su01-0s
+  # endmap
+
+endsurvey

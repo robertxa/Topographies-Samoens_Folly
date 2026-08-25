@@ -11,7 +11,7 @@ encoding  utf-8
 # les donnees du dessin, comme ça, ce fichier thconfig appelera 
 # nomcavite.th" et a son tour, "nomcavite.th" appelera
 # "nomcavite.th2")
-source CP88-tot.th
+source Su02-tot.th
 
 # Add entrances coordinates
 #input legendes/entrances_coordinates.th
@@ -41,7 +41,7 @@ layout my_layout
 	copy langue-fr
 	  
    # Titre  
-   doc-title "CP88"
+   doc-title "Su02"
    # Auteur
    doc-author "Xavier Robert"
   
@@ -57,7 +57,7 @@ layout my_layout
    # sur un cheminement exporte avec le layout "xviexport"
    # (voir en bas)
    base-scale 1 400
-#   base-scale 1 1000
+   #base-scale 1 1000
      
    # "scale" : specification de l echelle,
    # pour imprimer la topo. La combination entre scale et base-scale
@@ -69,7 +69,7 @@ layout my_layout
    # ou similaire, sinon, l echelle sera change pendant
    # l impression
     scale 1 200
- #     scale 1 1000
+  #    scale 1 1000
   
    # echelle graphique 100 m ampleur
   scale-bar 20 m
@@ -157,14 +157,14 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={CP88} 		
+			\cavename={Su02} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
 	endcode  
 
 # add extended-elev on the same pdf
-# map-image 105 -100 sw Outputs/CP88-coupe.pdf
+# map-image 105 -100 sw Outputs/Su02-coupe.pdf
 
 endlayout
 
@@ -177,7 +177,7 @@ layout my_layout-coupe
 	copy langue-fr
 	  
    # Titre  
-  doc-title "CP88"
+  doc-title "Su02"
    # Auteur
   doc-author "Xavier Robert"
   
@@ -287,7 +287,7 @@ layout my_layout-coupe
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={CP88} 		
+			\cavename={Su02} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 		\newtoks\club \club={Groupe Spéléologique Vulcain}
@@ -297,21 +297,21 @@ endlayout
 
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o Data/CP88-map.xvi
-export map -proj extended -layout xviexport -fmt xvi -o Data/CP88-coupe.xvi
+export map -fmt xvi -layout xviexport -o Data/Su02-map.xvi
+export map -proj extended -layout xviexport -fmt xvi -o Data/Su02-coupe.xvi
 
 # Select maps
-	select MP-CP88-tot@CP88
-	select MC-CP88-tot@CP88
+	select MP-Su02-tot@Su02
+	select MC-Su02-tot@Su02
 	 
-export map -projection extended -layout my_layout-coupe -o Outputs/CP88-coupe.pdf 
-export map -o Outputs/CP88-plan.pdf -layout my_layout
+export map -projection extended -layout my_layout-coupe -o Outputs/Su02-coupe.pdf 
+export map -o Outputs/Su02-plan.pdf -layout my_layout
  
-export model -o Outputs/CP88.lox
+export model -o Outputs/Su02.lox
   
 # Export des fichiers ESRI
-#export map -proj plan -fmt esri -o Outputs/CP88 -layout my_layout
+#export map -proj plan -fmt esri -o Outputs/Su02 -layout my_layout
   
 # Export des fichiers kml
-export map -proj plan -fmt kml -o Outputs/CP88.kml -layout my_layout
-export model -o Outputs/CP88m.kml
+export map -proj plan -fmt kml -o Outputs/Su02.kml -layout my_layout
+export model -o Outputs/Su02m.kml

@@ -4,13 +4,13 @@ encoding  utf-8
 # This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
-survey CP88 -title "CP88"
+survey Su01 -title "Su01"
 # Pour importer les différentes données de différents fichiers topos : 
-	input Data/CP88.th
+	input Data/Su01.th
 
-	input Data/CP88.th2
-	input Data/CP88-coupe.th2
+	input Data/Su01.th2
+	input Data/Su01-coupe.th2
 
-	input CP88-maps.th
+	input Su01-maps.th
 
 endsurvey

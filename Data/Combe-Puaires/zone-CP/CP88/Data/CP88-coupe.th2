@@ -1,0 +1,67 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -127.99759999999998 -128.0 259.25 357.25
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {78.74350000000001 1 1.0} {118.1084 CP88} CP88-coupe.xvi 0 {}
+
+
+
+scrap SC-CP88-1 -projection extended -station-names "" "@CP88" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+line wall -subtype invisible
+  96.75 122.75
+  96.75 122.75 65.75 119.5 61.75 115.0
+endline
+
+line wall
+  106.75 75.0
+  altitude .
+  106.75 75.0 104.25 85.0 104.25 89.75
+  104.25 94.5 103.0 108.5 102.5 109.75
+  102.0 111.0 95.0 108.25 93.75 111.5
+  92.5 114.75 86.75 116.5 88.5 118.5
+  90.25 120.5 96.75 122.75 96.75 122.75
+  smooth off
+endline
+
+line wall
+  72.75 115.0
+  72.75 115.0 75.5 111.0 79.25 108.5
+  83.0 106.0 87.0 107.5 87.0 104.75
+  87.0 102.0 86.0 95.0 88.0 93.75
+endline
+
+point 103.75 74.0 breakdown-choke -orientation 338.7
+
+line wall -subtype clay
+  88.0 93.75
+  90.0 92.5 93.5 94.0 93.5 90.5
+  93.5 87.0 95.25 85.0 96.25 82.75
+  97.25 80.5 99.5 74.25 99.5 74.25
+  smooth off
+endline
+
+point 130.0 103.5 dig
+
+point 8.25 228.0 label -text "<bf>CP88" -scale xl
+
+point 55.75 156.75 entrance -orientation 146.2
+
+point 84.0 62.5 continuation -attr Code D -attr Cavite "CP88" -attr CA "Courant d'air soufflant en été" -text "A désobstruer (cailloutis et terre), courant d'air, placé au dessus des escalades des Reptiles"
+
+point 111.75 50.75 air-draught -orientation 336.5 -subtype summer
+
+line wall
+  61.75 115.0
+  altitude .
+  61.75 115.0 71.75 115.0 72.75 115.0
+endline
+
+point 105.3835 77.0884 station -name 2
+
+point 88.4235 112.2084 station -name 1
+
+point 78.74350000000001 118.1084 station -name CP88
+
+endscrap
+
+

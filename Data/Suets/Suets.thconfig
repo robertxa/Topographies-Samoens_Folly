@@ -5,7 +5,7 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
   
 # 1-SOURCES 
-source suets.th
+source suets-tot.th
  
  # Add config file
 input ../../config.thc 
@@ -30,14 +30,14 @@ layout my_layout
 
 	doc-title "zone B"
 	cs UTM32
-	base-scale 1 1000
-	scale 1 5000   
+	base-scale 1 400
+	scale 1 200   
 	#color map-bg 85
 	color map-fg [100 100 80]
 	transparency on
 	opacity 75
-	scale-bar 1000 m
-	map-comment "Plan, Projection UTM32, Samoëns, 74, France"
+	scale-bar 20 m
+	map-comment "<it>Plan -<ss> Samoëns, 74, France"
 	statistics explo off
 	statistics copyright all
 	legend off
@@ -62,9 +62,9 @@ layout my_layout
 	symbol-hide line survey
 	#debug station-names
  
-	grid bottom
-	grid-size 500 500 500 m
- 	#grid off
+	#grid bottom
+	#grid-size 500 500 500 m
+ 	grid off
 	
 	# Titre          
 	code tex-map
@@ -77,7 +77,7 @@ layout my_layout
 		\edef\nostring{}            % empty string
 		\ifx\temp\nostring          % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Massif du Suet} 		
+			\cavename={Massif des Suets} 		
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
 	endcode  
@@ -86,7 +86,7 @@ endlayout
     
   
 # 3-EXPORTS   
-export map -fmt xvi -layout xviexport -o trousSuetsmap2020.xvi
+#export map -fmt xvi -layout xviexport -o trousSuetsmap2020.xvi
 
-select MP-suets@suets
-export map -o suets-plan.pdf -layout my_layout
+select MP-Suets@Suets
+export map -o Outputs/Suets-plan.pdf -layout my_layout

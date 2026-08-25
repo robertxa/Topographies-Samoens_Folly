@@ -1,0 +1,31 @@
+encoding utf-8
+# 2026.08.19 created by TopoDroid v 6.4.50
+
+survey Su02 -title "Su02"
+
+  centerline
+    cs epsg:2154
+    fix Su02  988497 6562167  1300
+    station Su02 "Su02" entrance
+    
+    explo-date 2026.08.19
+      explo-team "Xavier Robert"
+    date 2026.08.19 
+      team "Xavier Robert"
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    # extend auto
+    Su02 . 0.75 287.4 -2.8
+    Su02 . 0.68 228.5 -20.4
+    Su02 . 1.03 318.0 -62.2
+    Su02 . 1.90 282.9 -47.9
+    Su02 . 0.85 220.4 -67.4
+    Su02 . 0.87 205.6 -88.4
+    Su02 . 4.24 277.1 -77.3
+    Su02 . 4.01 348.8 -85.1
+    extend left
+    Su02 1 4.57 304.1 -71.8
+  endcenterline
+
+endsurvey

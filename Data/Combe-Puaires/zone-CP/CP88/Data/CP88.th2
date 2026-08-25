@@ -1,0 +1,51 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 261.75 234.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {69.84039999999999 1 1.0} {47.166799999999995 CP88} CP88-map.xvi 0 {}
+
+
+
+scrap SP-CP88-1 -projection plan -station-names "" "@CP88" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 43.75 104.75 label -text "<bf>CP88" -scale xl
+
+point 57.75 62.25 entrance -orientation 144.6
+
+point 117.5 34.0 continuation -attr Code D -attr Cavite "CP88" -attr CA "Courant d'air soufflant en été" -text "A désobstruer (cailloutis et terre), courant d'air, placé au dessus des escalades des Reptiles"
+
+point 76.25 61.0 air-draught -orientation 313.7 -subtype summer
+
+line fault -clip off
+  91.75 35.75
+  132.75 7.25
+endline
+
+point 85.75 41.0 debris
+
+line pit
+  82.0 43.5
+  82.0 43.5 71.5 47.25 72.75 36.75
+endline
+
+line wall
+  67.0 45.25
+  altitude .
+  67.0 45.25 66.5 42.0 68.75 40.5
+  71.0 39.0 72.0 34.75 76.25 35.25
+  80.5 35.75 84.25 38.0 87.75 38.0
+  91.25 38.0 102.25 39.75 96.75 41.5
+  altitude .
+  91.25 43.25 85.75 42.75 82.0 43.5
+  78.25 44.25 72.5 48.0 72.5 48.0
+  smooth off
+endline
+
+point 94.3304 40.3168 station -name 2
+
+point 77.32039999999999 41.0268 station -name 1
+
+point 69.84039999999999 47.166799999999995 station -name CP88
+
+endscrap
+
+

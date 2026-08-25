@@ -1,0 +1,111 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 215.5 254.0
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {62.9947 1 1.0} {78.738 Su01} Su01-map.xvi 0 {}
+
+
+
+scrap SP-Su01-1 -projection plan -station-names "" "@Su01" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point 13.5 72.0 height -value [-10 m]
+
+line rock-border -close on
+  57.5 77.5
+  52.0 77.5
+  53.25 74.75
+  57.75 74.75
+  57.5 77.5
+endline
+
+line rock-border -close on
+  50.0 100.0
+  48.5 97.0
+  51.25 95.75
+  52.25 98.0
+  50.0 100.0
+endline
+
+line rock-border -close on
+  35.75 100.75
+  35.75 104.0
+  40.0 103.0
+  38.25 100.25
+  35.75 100.75
+endline
+
+line wall -subtype pit -outline none
+  49.75 93.0
+  49.75 93.0 46.75 100.5 43.0 99.75
+  39.25 99.0 36.75 97.25 38.0 95.75
+  39.25 94.25 40.75 92.0 40.75 92.0
+  smooth off
+endline
+
+line wall
+  80.5 109.5
+  80.5 109.5 76.5 111.5 70.25 108.25
+  64.0 105.0 55.25 101.25 52.25 101.0
+  49.25 100.75 45.25 100.25 43.75 101.0
+  42.25 101.75 35.5 112.25 33.0 115.5
+  30.5 118.75 21.25 125.0 21.25 125.0
+  smooth off
+  altitude .
+  21.25 125.0 24.0 115.75 26.25 112.75
+  28.5 109.75 33.5 100.75 36.25 97.25
+  39.0 93.75 40.75 92.0 40.75 92.0
+  smooth off
+endline
+
+line wall
+  49.75 93.0
+  49.75 93.0 56.0 96.5 60.75 96.75
+  65.5 97.0 78.5 99.5 80.0 101.25
+  altitude .
+  81.5 103.0 84.0 106.75 84.0 106.75
+  smooth off
+endline
+
+point 86.25 110.0 breakdown-choke -orientation 248.1
+
+point 32.75 109.25 bones
+
+line pit
+  52.25 101.0
+  52.25 101.0 50.0 95.5 55.0 95.25
+  smooth off
+endline
+
+line pit
+  32.5 102.5
+  32.5 102.5 40.75 99.75 39.5 106.0
+  smooth off
+endline
+
+point 84.0 5.25 label -text "<bf>Su01" -scale xl
+
+point 71.75 49.25 entrance -orientation 327.6
+
+line wall -subtype pit
+  40.75 92.0
+  40.75 92.0 43.75 88.25 47.0 82.0
+  50.25 75.75 49.25 73.25 53.75 72.75
+  58.25 72.25 62.0 72.75 62.5 75.0
+  altitude .
+  63.0 77.25 65.25 80.5 61.75 82.75
+  58.25 85.0 49.75 93.0 49.75 93.0
+  smooth off
+endline
+
+point 62.9947 78.738 station -name Su01
+
+point 54.014700000000005 77.248 station -name 1
+
+point 78.3447 104.178 station -name 4
+
+point 41.4947 94.64800000000001 station -name 2
+
+point 26.064700000000002 117.08800000000001 station -name 3
+
+endscrap
+
+

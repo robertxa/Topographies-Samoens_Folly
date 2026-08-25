@@ -5,6 +5,12 @@ encoding  utf-8
 #	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
 
 
-map MP-suets -title "Massif du Suets"
-	MP-suets1
+map MP-Suets -title "Massif des Suets"
+	MP-Su02-tot@Su02
+	break
+	MP-Su01-tot@Su01
 endmap 
+
+#map MC-Suets1 -title "Massif des Suets"
+#	SP-suets-2020
+#endmap

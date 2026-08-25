@@ -1,0 +1,50 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 252.5 214.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {55.1162 1 1.0} {55.1135 Su02} Su02-map.xvi 0 {}
+
+
+
+scrap SP-Su02-1 -projection plan -station-names "" "@Su02" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 128.0 -128.0 0.0 0.0 6.5024 0.0 m]
+
+point 23.5 71.5 narrow-end
+
+point 56.75 83.75 height -value [-4 m]
+
+point 123.25 85.25 label -text "<bf>Su02" -scale xl
+
+point 81.5 65.75 entrance -orientation 243.4
+
+line pit
+  54.75 52.25
+  54.75 52.25 57.25 53.25 56.75 55.75
+endline
+
+line wall
+  42.5 62.0
+  42.5 62.0 45.5 61.75 45.25 60.0
+  45.0 58.25 44.5 54.5 50.0 52.5
+  altitude .
+  52.67 51.53 52.5 53.5 54.75 52.25
+  57.0 51.0 58.5 48.5 61.5 47.25
+  64.5 46.0 71.5 43.75 71.5 43.75
+  smooth off
+endline
+
+line wall
+  72.0 45.25
+  72.0 45.25 61.25 49.25 59.75 51.0
+  58.25 52.75 57.0 53.75 56.75 55.75
+  56.5 57.75 55.5 58.75 53.5 58.75
+  51.5 58.75 50.0 58.75 48.75 60.25
+  47.5 61.75 43.0 63.75 43.0 63.75
+  smooth off
+endline
+
+point 55.1162 55.1135 station -name Su02
+
+point 45.8262 61.4935 station -name 1
+
+endscrap
+
+

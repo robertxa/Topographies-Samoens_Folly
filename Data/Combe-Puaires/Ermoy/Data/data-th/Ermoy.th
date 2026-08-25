@@ -739,10 +739,16 @@ centerline
  endcenterline
   
  centerline
- #cs EPSG:<27572>
- #fix Ermoy   941.2600       2131.600       860. 
- cs lat-long
- fix Ermoy  46.09832       6.75231       860.
+  #cs EPSG:<27572>
+  #fix Ermoy   941.2600       2131.600       860. 
+ 
+  #cs lat-long
+  #fix Ermoy  46.09832       6.75231       860. # Old
+  #fix Ermoy  46.09836       6.75262       865. # GPS Stéphane du 23/08/2026, mieux mais pas tout à fait ça
+
+  cs epsg:2154
+  fix Ermoy  989801.7       6562277.0       864.06  # Coordonnées et altitude à partir du Lidar IGN ; Xavier, août 2026
+
  #  date YYYY.MM.DD
    declination 0.1500  grad
 
