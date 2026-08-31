@@ -267,7 +267,7 @@ export map -projection extended -layout my_layout-coupe -o Outputs/Ermoy-MARS-20
 export map -proj plan -fmt esri -o Outputs/Ermoy -layout my_layout
   
 # Export des fichiers kml
-#export map -proj plan -fmt kml -o Outputs/Ermoy-MARS-2009.kml -layout my_layout
+export map -proj plan -fmt kml -o Outputs/Ermoy.kml -layout my_layout
 
 # Export Listes
 #export continuation-list -o Outputs/Continuations-Ermoy-2020.html

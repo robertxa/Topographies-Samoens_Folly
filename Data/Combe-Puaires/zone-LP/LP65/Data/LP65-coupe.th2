@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -127.99999999999999 -128.00000000000003 771.75 600.4412
+##XTHERION## xth_me_area_adjust -167.373 -176.58500000000004 876.75 630.5964
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {434.141 1 1.0} {286.61199999999997 0@LP65.LP65} LP65-coupe.xvi 0 {}
 
@@ -8,10 +8,6 @@ encoding  utf-8
 scrap SC-LP65-1 -projection extended -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 482.3309 -128.0 0.0 0.0 15.502404859999997 0.0 m]
 
 point 130.5 336.5 dig
-
-point 625.0 97.0 continuation -attr Code P -attr Cavite "LP65" -attr CA "Courant d'air Soufflant lors de l'exploration" -text "P11 à descendre derrière étroiture, se shunte par les plafonds, courant d'air soufflant important"
-
-point 642.5 140.5 air-draught -orientation 290.8
 
 point 263.0 262.0 air-draught -orientation 290.8
 
@@ -24,6 +20,7 @@ point 74.0 425.5 entrance -orientation 159.1
 line wall -subtype invisible
   167.0 415.5
   167.0 415.5 72.5 418.0 59.0 395.5
+  smooth off
   altitude .
 endline
 
@@ -82,10 +79,10 @@ line wall
 endline
 
 line wall
-  602.0 195.0
-  602.0 195.0 586.0 207.5 578.5 210.0
-  571.0 212.5 546.0 241.0 533.5 242.0
-  521.0 243.0 502.5 245.5 493.5 251.0
+  589.0 205.25
+  589.0 205.25 586.0 207.5 578.5 210.0
+  571.0 212.5 558.5 241.25 533.5 242.0
+  520.98 242.38 502.5 245.5 493.5 251.0
   484.5 256.5 477.0 276.5 477.0 294.5
   477.0 312.5 464.0 335.5 450.0 336.0
   436.0 336.5 413.0 335.0 391.5 338.5
@@ -120,6 +117,7 @@ endline
 line border
   518.0 173.0
   518.0 173.0 531.0 179.0 536.5 179.0
+  smooth off
 endline
 
 line border
@@ -127,6 +125,7 @@ line border
   348.5 290.5 362.5 288.5 374.5 288.5
   386.5 288.5 396.0 287.0 400.5 286.5
   405.0 286.0 405.5 280.0 409.5 274.0
+  smooth off
 endline
 
 line border
@@ -164,9 +163,9 @@ point 341.0 226.5 height -value [-10 m]
 
 point 409.5 167.0 height -value [-7 m]
 
-point 508.5 101.5 height -value [-11 m]
+point 629.75 148.0 height -value [-11 m]
 
-line rope
+line rope -clip off
   556.5 224.5
   579.0 205.5
   580.5 81.0
@@ -179,12 +178,12 @@ line rope
 endline
 
 line wall -close on -outline in
-  554.5 201.5
-  554.5 201.5 531.5 196.5 531.0 202.5
-  530.5 208.5 527.0 216.5 534.5 216.5
-  542.0 216.5 548.0 215.0 553.5 214.0
-  559.0 213.0 565.5 209.0 566.0 205.0
-  566.5 201.0 554.5 201.5 554.5 201.5
+  555.25 198.0
+  555.25 198.0 531.5 196.5 531.0 202.5
+  530.5 208.5 526.75 222.0 534.25 222.0
+  541.75 222.0 549.0 220.0 554.5 219.0
+  560.0 218.0 556.0 204.75 567.25 201.75
+  571.13 200.72 555.25 198.0 555.25 198.0
   smooth off
 endline
 
@@ -213,13 +212,8 @@ line wall
   465.0 157.5 476.5 156.5 488.0 156.5
   499.5 156.5 500.0 145.0 515.5 143.5
   531.0 142.0 550.0 145.5 554.5 140.0
-  559.0 134.5 553.5 83.0 563.0 79.5
-  572.5 76.0 600.5 78.5 600.5 78.5
-  smooth off
-  altitude .
+  559.0 134.5 554.25 91.0 559.5 85.5
 endline
-
-point 584.351 85.12199999999999 station -name 1@LP65c
 
 point 575.341 166.692 station -name 0@LP65c
 
@@ -255,12 +249,14 @@ line wall -subtype debris
   72.0 380.0
   72.0 380.0 113.0 363.0 124.5 362.5
   136.0 362.0 148.0 361.0 151.0 358.5
+  smooth off
 endline
 
 line wall
   59.0 395.5
   59.0 395.5 69.5 397.5 69.5 394.5
   69.5 391.5 69.5 384.5 72.0 380.0
+  smooth off
 endline
 
 point 315.461 383.782 station -name 4@LP65b
@@ -309,6 +305,143 @@ endscrap
 
 
 
+scrap SC-LP65_2026-1 -projection extended -station-names "" "@LP65_2026" -author 2026 "Xavier Robert" -copyright 2026 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 482.3309 -128.0 0.0 0.0 15.502404859999997 0.0 m]
+
+line wall -subtype invisible
+  728.5 49.0
+  728.5 49.0 746.25 143.5 727.0 153.25
+endline
+
+point 718.0 99.5 air-draught -orientation 104.4 -subtype summer
+
+line wall -reverse on -subtype presumed
+  638.25 171.25
+  638.25 171.25 650.75 169.5 657.0 168.0
+  663.25 166.5 672.0 163.75 679.75 162.75
+  687.5 161.75 727.0 153.25 727.0 153.25
+  smooth off
+endline
+
+line wall -reverse on
+  531.25 98.75
+  531.25 98.75 539.25 91.75 543.5 90.25
+  547.75 88.75 548.19 86.75 553.25 86.75
+  558.5 86.75 559.5 85.5 559.5 85.5
+  smooth off
+endline
+
+point 590.25 231.5 label -text "R2"
+
+line border
+  587.25 129.75
+  587.25 129.75 587.25 135.25 594.75 140.25
+  602.25 145.25 615.75 144.0 615.75 144.0
+  smooth off
+endline
+
+line border
+  624.25 102.5
+  624.25 102.5 629.0 109.0 633.5 110.0
+  638.0 111.0 648.5 112.0 648.5 112.0
+  smooth off
+endline
+
+line border
+  602.25 87.25
+  602.25 87.25 605.75 91.25 609.75 92.0
+  613.75 92.75 620.5 92.75 620.5 92.75
+  smooth off
+endline
+
+point 747.5 70.25 continuation -attr Code D -attr "Cavite" "LP65" -attr CA "Courant d'air aspirant en été" -text "arrêt sur méandre étroit, courant d'air aspirant en été"
+
+point 717.25 133.25 narrow-end
+
+point 636.25 193.25 narrow-end
+
+line wall -reverse on
+  647.5 75.0
+  647.5 75.0 629.0 79.25 619.75 79.5
+  610.5 79.75 600.5 78.5 600.5 78.5
+  smooth off
+  altitude .
+  600.5 78.5 568.0 77.75 563.0 79.5
+  558.0 81.25 555.5 81.5 552.75 81.5
+  550.0 81.5 548.25 80.0 545.0 81.0
+  541.75 82.0 536.0 85.25 533.75 87.0
+  531.5 88.75 526.75 94.75 526.75 94.75
+  smooth off
+endline
+
+line wall -outline none
+  655.0 102.5
+  655.0 102.5 663.75 101.25 670.25 100.0
+  676.75 98.75 682.0 98.0 685.75 97.25
+endline
+
+line wall -outline none
+  695.25 116.25
+  695.25 116.25 682.5 119.0 677.5 121.25
+  672.5 123.5 657.0 129.75 655.25 130.0
+endline
+
+line wall -reverse on -subtype presumed
+  728.5 49.0
+  728.5 49.0 714.75 61.0 704.0 63.75
+  693.25 66.5 690.0 67.75 673.75 70.0
+  657.5 72.25 647.5 75.0 647.5 75.0
+  smooth off
+endline
+
+line wall -reverse on
+  624.25 188.75
+  624.25 188.75 613.75 189.75 609.5 189.75
+  605.25 189.75 598.25 194.75 599.0 190.0
+  599.75 185.25 612.5 177.5 625.75 173.5
+  633.67 171.11 638.25 171.25 638.25 171.25
+  smooth off
+endline
+
+line wall
+  622.5 197.25
+  622.5 197.25 606.0 202.5 599.0 203.25
+  592.0 204.0 589.0 205.25 589.0 205.25
+  smooth off
+endline
+
+point 621.021 193.22199999999995 station -name 5
+
+point 545.761 230.31199999999995 station -name 1
+
+point 561.931 224.09199999999996 station -name 2
+
+point 561.931 206.77199999999996 station -name 3
+
+point 684.091 116.22199999999995 station -name 10
+
+point 654.0509999999999 122.59199999999996 station -name 9
+
+point 584.341 85.11199999999997 station -name 6
+
+point 635.941 122.59199999999996 station -name 8
+
+point 552.871 84.01199999999994 station -name 7
+
+point 536.75 89.25 water-flow -orientation 115.3
+
+point 510.25 102.5 narrow-end
+
+line wall -subtype invisible
+  531.25 98.75
+  526.75 94.75
+endline
+
+point 584.341 202.44199999999995 station -name 4
+
+endscrap
+
+
+
 scrap SC-LP65-2 -projection extended -station-names "" "@LP65b" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 482.3309 -128.0 0.0 0.0 15.502404859999997 0.0 m]
 
 point 264.601 355.27199999999993 station -name 7
@@ -337,6 +470,7 @@ line wall -subtype debris
   249.25 345.5 258.75 349.0 261.75 350.75
   264.75 352.5 264.75 351.5 268.25 355.25
   271.75 359.0 276.5 357.5 276.25 362.5
+  smooth off
 endline
 
 line wall
@@ -351,6 +485,7 @@ endline
 line wall -subtype invisible
   299.75 427.5
   299.75 427.5 273.0 422.25 270.0 418.75
+  smooth off
   altitude .
 endline
 
@@ -374,6 +509,7 @@ endline
 line wall -subtype debris
   278.75 404.0
   278.75 404.0 287.5 403.75 288.75 402.75
+  smooth off
 endline
 
 line wall
@@ -381,6 +517,7 @@ line wall
   270.0 418.75 268.75 417.5 271.25 414.5
   273.75 411.5 275.25 411.75 276.5 410.0
   277.75 408.25 274.5 404.0 278.75 404.0
+  smooth off
 endline
 
 point 262.5 432.0 entrance -orientation 134.4

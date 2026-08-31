@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -141.75 -138.47000000000003 510.516 353.75059999999996
+##XTHERION## xth_me_area_adjust -145.79500000000002 -161.54000000000002 503.906 378.0
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {264.486 1 1.0} {82.75399999999999 0@LP65.LP65} LP65-map.xvi 0 {}
 
@@ -16,11 +16,13 @@ point 147.0 190.25 entrance -orientation 119.2
 line overhang
   180.25 170.75
   180.25 170.75 184.25 171.75 182.5 177.25
+  smooth off
 endline
 
 line pit
   202.5 158.25
   202.5 158.25 196.75 156.75 197.25 150.5
+  smooth off
 endline
 
 line wall
@@ -93,17 +95,20 @@ line wall
   198.0 167.0 201.25 161.25 199.5 158.75
   197.75 156.25 197.25 151.0 198.25 145.75
   199.25 140.5 198.75 136.75 202.0 135.5
+  smooth off
 endline
 
 line wall
   209.75 124.25
   209.75 124.25 216.75 129.25 218.75 128.75
   220.75 128.25 223.25 127.0 224.25 126.75
+  smooth off
 endline
 
 line pit -reverse on
   210.5 133.0
   210.5 133.0 212.25 139.0 220.0 138.0
+  smooth off
 endline
 
 line wall
@@ -116,6 +121,7 @@ endline
 line wall
   226.25 133.75
   226.25 133.75 221.5 137.5 220.0 138.0
+  smooth off
 endline
 
 point 225.586 132.754 station -name 0
@@ -127,11 +133,13 @@ point 218.5 176.25 height -value [-9 m]
 line pit -reverse on
   224.25 126.75
   224.25 126.75 220.5 134.0 226.25 133.75
+  smooth off
 endline
 
 line pit
   205.25 160.5
   205.25 160.5 202.25 158.25 199.5 158.75
+  smooth off
 endline
 
 point 214.0 133.0 debris
@@ -219,11 +227,13 @@ point 75.0 195.0 debris
 line overhang
   94.75 156.25
   94.75 156.25 77.75 157.75 74.75 150.0
+  smooth off
 endline
 
 line overhang
   75.25 175.75
   75.25 175.75 84.0 172.0 90.5 177.75
+  smooth off
 endline
 
 line wall -subtype pit
@@ -303,6 +313,7 @@ line wall -subtype pit
   112.0 140.25 108.0 141.75 107.75 145.0
   107.5 148.25 106.5 150.5 104.5 153.5
   102.5 156.5 96.75 156.0 94.75 156.25
+  smooth off
 endline
 
 line wall
@@ -315,6 +326,7 @@ line wall
   131.0 131.25 130.5 130.75 129.0 133.25
   127.5 135.75 127.5 139.25 124.25 139.5
   121.0 139.75 115.5 139.5 112.0 140.25
+  smooth off
 endline
 
 line wall
@@ -347,6 +359,7 @@ point 244.716 124.80399999999999 station -name 6
 line pit
   190.5 116.5
   190.5 116.5 193.5 120.25 188.5 122.0
+  smooth off
 endline
 
 line floor-meander
@@ -448,16 +461,19 @@ scrap SP-LP65-4 -projection plan -station-names "" "@LP65c" -author 2025 "Stéph
 line pit
   266.75 90.0
   266.75 90.0 258.0 91.25 258.75 84.0
+  smooth off
 endline
 
 line pit
   295.25 71.75
   295.25 71.75 298.5 67.75 301.0 68.0
+  smooth off
 endline
 
 line pit -reverse on
   312.0 69.0
   312.0 69.0 307.25 62.75 304.0 64.5
+  smooth off
 endline
 
 line wall -close on -outline in
@@ -473,9 +489,10 @@ line pit
   261.0 97.25
   261.0 97.25 277.25 88.25 281.5 86.0
   285.75 83.75 294.0 74.25 295.25 71.75
+  smooth off
 endline
 
-point 369.75 138.5 height -value [-11 m]
+point 369.75 138.5 height -value [-15 m]
 
 point 297.5 106.25 height -value [-7 m]
 
@@ -492,17 +509,20 @@ line floor-meander
   339.25 87.0 339.0 93.25 338.5 99.5
   338.0 105.75 336.0 108.75 340.25 112.0
   344.5 115.25 349.25 118.0 346.25 120.0
+  smooth off
 endline
 
 line pit
   266.75 90.0
   266.75 90.0 276.5 79.75 280.25 78.25
+  smooth off
 endline
 
 line wall -subtype pit
   257.5 88.75
   257.5 88.75 259.0 75.5 263.25 74.75
   267.5 74.0 268.75 79.25 274.5 79.25
+  smooth off
 endline
 
 point 348.5 63.75 label -text "etr."
@@ -535,6 +555,7 @@ endline
 line pit -reverse on
   340.25 108.25
   340.25 108.25 329.75 115.0 331.25 123.5
+  smooth off
 endline
 
 line wall
@@ -604,37 +625,71 @@ endscrap
 
 
 
-scrap SP-LP65-5 -projection plan -station-names "" "@LP65c" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 482.3309 -128.0 0.0 0.0 15.502404859999997 0.0 m]
+scrap SP-LP65-5 -projection plan -station-names "" "@LP65_2026" -author 2025 "Stéphane Lips" -author 2025 "Xavier Robert" -copyright 2025 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 482.3309 -128.0 0.0 0.0 15.502404859999997 0.0 m]
 
-point 380.5 89.5 air-draught -orientation 309.2
+point 318.75 231.75 narrow-end
 
-point 359.75 99.5 continuation -attr Code P -attr Cavite "LP65" -attr CA "Courant d'air Soufflant lors de l'exploration" -text "P11 à descendre derrière étroiture, se shunte par les plafonds, courant d'air soufflant important"
+point 374.25 86.0 narrow-end
 
 line wall
-  343.75 119.25
-  344.0 122.25
+  316.75 218.75
+  316.75 218.75 309.25 204.0 312.0 201.0
+  314.75 198.0 326.25 181.25 324.5 178.25
+  322.75 175.25 314.5 165.75 316.25 161.0
+  318.0 156.25 327.0 144.75 327.75 140.25
 endline
 
+point 299.25 200.0 air-draught -orientation 355.2 -subtype summer
+
 line wall -subtype pit
-  348.0 111.5
-  altitude .
-  348.0 111.5 342.0 117.0 342.75 117.75
-  343.5 118.5 343.75 119.25 343.75 119.25
+  327.75 140.25
+  328.5 135.75 326.25 129.25 328.5 124.5
+  330.75 119.75 339.0 109.25 343.0 109.0
+endline
+
+line wall
+  343.0 109.0
+  347.0 108.75 350.25 109.75 353.5 107.25
+  356.75 104.75 362.5 101.5 365.25 99.5
+  368.0 97.5 369.25 95.25 369.25 95.25
   smooth off
 endline
 
-line wall -subtype pit
-  344.0 122.25
-  344.0 122.25 348.25 127.75 346.5 130.75
-  344.75 133.75 344.0 143.5 339.0 138.5
-  334.0 133.5 332.25 132.25 333.5 126.0
-  334.75 119.75 334.75 118.0 336.0 115.75
-  337.25 113.5 342.5 109.5 344.5 108.25
+point 363.25 105.5 water-flow -orientation 301.0
+
+line wall
+  373.5 98.0
+  373.5 98.0 374.0 101.25 371.25 104.25
+  altitude .
+  368.5 107.25 358.5 111.0 354.5 114.25
 endline
 
-point 345.116 111.814 station -name 1
+line wall -subtype pit
+  354.5 114.25
+  350.5 117.5 353.0 123.25 349.0 128.75
+  345.0 134.25 338.5 146.25 334.25 151.75
+endline
 
-point 340.866 119.684 station -name 0
+point 320.0 248.75 continuation -attr Code D -attr "Cavite" "LP65" -attr CA "Courant d'air aspirant en été" -text "arrêt sur méandre étroit, courant d'air aspirant en été"
+
+line wall
+  334.25 151.75
+  330.0 157.25 321.75 162.5 325.0 166.5
+  328.25 170.5 333.5 179.0 330.25 182.0
+  327.0 185.0 315.0 204.0 315.75 208.5
+  316.5 213.0 319.5 218.5 319.5 218.5
+  smooth off
+endline
+
+point 314.566 203.154 station -name 10
+
+point 330.31600000000003 177.564 station -name 9
+
+point 368.666 100.00399999999999 station -name 7
+
+point 318.816 163.54399999999998 station -name 8
+
+point 342.676 117.79399999999998 station -name 6
 
 endscrap
 

@@ -1,0 +1,40 @@
+encoding utf-8
+
+# Copyright (C) 2026 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+
+survey LP65_2026 -title "LP65 (2026)"
+
+  centerline
+
+    date 2026.08.22 
+      team "Frédéric Delègue"
+      team "Alexandre Chanfay"
+    explo-date 2026.08.21 
+      explo-team "Frédéric Delègue"
+      explo-team "Alexandre Chanfay"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino  left  right up  down
+      extend right
+      0 1 8 0 90  0.7 1.14  0.9 9 # station 0 est dans l'alcolve de départ, jonction avec la topographie 2025 ; E8
+      1 2 2.2 335 -21 0.97  0.4 1.3 2.2
+      2 3 2.2 0 -90 0.66  0.34  3.6 0.5 # R2
+      3 4 2.9 330 -11 1.9 2.1 0.3 1.5
+      4 5 4.8 385 -14 0.3 0.3 0.4 0.5 # Boyau étroit
+      
+      4 6 14.9  0 -90 1.45  1.4 14.5  1 # P15
+      extend left
+      6 7 4 124 -2  0.7 0.7 6 1 # Boyau étroit, méandre impénétrable
+
+      extend right
+      6 8 8.1 332 36  0.35  0.64  6.1 10.7
+      8 9 2.3 39  0 0.6 0 1.6 2.5
+      9 10  3.9 328 -12 0.3 0.2 0.1 2.5 # méandre impénétrable
+    
+  endcenterline
+
+endsurvey

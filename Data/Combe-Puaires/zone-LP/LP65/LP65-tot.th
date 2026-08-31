@@ -11,6 +11,9 @@ survey LP65 -title "LP65"
 		equate 0@LP65b 7@LP65
    	input Data/LP65c.th
 		equate 10@LP65c 0@LP65
+	input Data/LP65_2026.th
+		#equate 0@LP65_2026 7@LP65c
+		equate 6@LP65_2026 1@LP65c
 
 	input Data/LP65.th2
 	input Data/LP65-coupe.th2
