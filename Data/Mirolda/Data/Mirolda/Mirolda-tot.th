@@ -24,6 +24,8 @@ survey Mirolda -title "Gouffre Mirolda - Réseau Lucien Bouclier"
 	input Data/VF3/VF3-tot.th
 		equate s23_33@Combattant.Combattant.VF3 1174@Puits-Belge.Puits-Belge.CD11    # [[note Alex: A valider si manque puits]
 		#equate s23_33@Combattant.Combattant.VF3 1174@Majestueuse-Amont.Majestueuse-Amont.CD11    # [[note Alex: A valider si manque puits]
+	   join SP-Marmotte-1@Combattant.VF3 SP-Belge-5@Puits-Belge.CD11
+		
 	input Data/Jockers/Jockers-tot.th
 		equate s11_17@Jockers.Jockers s11_17@Hongroise.Hongroise.VF3
 		join SP-Jockers-7@Jockers SP-Hongroise-4@Hongroise.VF3

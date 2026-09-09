@@ -7,9 +7,9 @@ encoding  utf-8
 
 scrap SP-Aff-Belge-1 -projection plan -station-names "" "@Affluents-Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 8159.5004 -128.0 0.0 0.0 210.50251016 0.0 m]
 
-point 6514.25 1271.25 narrow-end
+point 6496.75 1261.25 narrow-end
 
-point 6497.5 1201.5 stalagmite
+point 6507.0 1188.75 stalagmite
 
 line wall
   6414.25 1198.5
@@ -33,6 +33,7 @@ line wall
   6459.75 1185.25 6434.0 1173.5 6434.0 1178.25
   6434.0 1183.0 6435.75 1195.75 6431.25 1197.0
   6426.75 1198.25 6424.5 1201.0 6419.25 1202.25
+  smooth off
 endline
 
 point 6517.54 1249.98 station -name 20
@@ -86,7 +87,7 @@ line pit
   smooth off
 endline
 
-point 6231.5 1280.25 water-flow -orientation 95.6
+point 6232.75 1292.0 water-flow -orientation 97.3
 
 point 6205.5 1293.5 narrow-end
 
@@ -209,7 +210,7 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 6466.5 1541.0 water-flow -orientation 230.5
+point 6474.25 1531.5 water-flow -orientation 209.7
 
 point 6401.5 1343.5 narrow-end
 
@@ -246,8 +247,8 @@ endline
 
 line wall
   6368.75 1250.5
-  6368.75 1250.5 6367.0 1242.0 6365.75 1239.5
-  6364.5 1237.0 6359.0 1225.0 6358.75 1221.75
+  6368.75 1250.5 6367.25 1238.5 6366.0 1236.0
+  6364.75 1233.5 6362.5 1227.0 6358.75 1221.75
   smooth off
 endline
 
@@ -258,7 +259,7 @@ line wall
   smooth off
 endline
 
-point 6345.5 1384.0 height -value [-3 m]
+point 6393.0 1374.0 height -value [-3 m] -align right
 
 line wall
   6374.0 1390.25
