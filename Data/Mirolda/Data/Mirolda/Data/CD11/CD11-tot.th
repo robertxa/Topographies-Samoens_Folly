@@ -151,6 +151,11 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	## Jonction au niveau de -800
 	#join SC-900-1@900 SC-800-1@800
 	
+	# Marmotte Aval 2026
+	input Data/Marmotte/Marmotte-tot.th
+	equate 0@Marmotte.Marmotte 1172@Puits-Belge.Puits-Belge
+	equate 31@Marmotte.Marmotte A10@Puits-Belge.Puits-Belge
+	equate 21@Marmotte.Marmotte A20@Puits-Belge.Puits-Belge
 	
 	# Import des maps, plan et coupe
 	input CD11-maps.th

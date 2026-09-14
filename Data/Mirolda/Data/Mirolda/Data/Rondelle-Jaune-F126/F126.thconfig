@@ -30,7 +30,7 @@ encoding  utf-8
 source F126-tot.th
 
 # Add Coordinates
-input legendes/entrances_coordinates.th
+# input legendes/entrances_coordinates.th
 
 # Add config file
 input ../../config.thc 
@@ -144,14 +144,14 @@ layout my_layout
 		% AND there are multiple source surveys identified in the thconfig file 
 		% ie Therion can not infer a unique title from the input data given.
 		% This code allows you to define an output map title {cavename} if it happens to be empty
-		\edef\temp{\the\cavename}        % cavename from Therion   
-		\edef\nostring{}                 % empty string 
-		\ifx\temp\nostring             % test if cavename is empty
+		%\edef\temp{\the\cavename}        % cavename from Therion   
+		%\edef\nostring{}                 % empty string 
+		%\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre de la Rondelle Jaune - F126} 
-		\else % if not empty keep the value set by therion, or assign an override cavename here
-		\fi
-		\newtoks\club \club={URSUS, Collectif Mirolda}
+			%\cavename={Gouffre de la Rondelle Jaune - F126} 
+		%\else % if not empty keep the value set by therion, or assign an override cavename here
+		%\fi
+			\newtoks\club \club={URSUS, Collectif Mirolda}
 		%\newtoks\synth \synth={Alexandre Pont, Xavier Robert (2023)}
 	endcode   
   
@@ -218,13 +218,13 @@ layout layout-coupe
                 
 	# Titre                         
 	code tex-map
-		\edef\temp{\the\cavename}        % cavename from Therion   
-		\edef\nostring{}                 % empty string 
-		\ifx\temp\nostring             % test if cavename is empty
+		%\edef\temp{\the\cavename}        % cavename from Therion   
+		%\edef\nostring{}                 % empty string 
+		%\ifx\temp\nostring             % test if cavename is empty
 			% if empty reassign cavename to describe selected maps as a group
-			\cavename={Gouffre de la Rondelle Jaune - F126} 
-		\else % if not empty keep the value set by therion, or assign an override cavename here
-		\fi
+			%\cavename={Gouffre de la Rondelle Jaune - F126} 
+		%\else % if not empty keep the value set by therion, or assign an override cavename here
+		%\fi
 		\newtoks\club \club={URSUS, Collectif Mirolda}
 		\newtoks\synth \synth={Laurent Mangel, Vincent Vieillerobe (1999), Alexandre Pont, Xavier Robert (2023)}	
 	endcode   
