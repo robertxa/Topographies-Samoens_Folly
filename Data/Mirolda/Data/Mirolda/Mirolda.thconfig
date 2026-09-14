@@ -395,8 +395,8 @@ endlayout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/Mirolda-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-Mirolda-plan-tot@Mirolda
-select MC-Mirolda-coupe-tot@Mirolda
+select MP-Mirolda-tot@Mirolda
+select MC-Mirolda-tot@Mirolda
 
 # Export des fichiers pdf, plan et coupe.
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
@@ -405,7 +405,7 @@ export map -proj plan -fmt pdf -o Outputs/Mirolda-plan.pdf -layout my_layout
 export map -proj plan -fmt pdf -o Outputs/Mirolda-plan-continuations.pdf -layout my_layout-continuations
 export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Mirolda-coupe.pdf
 export map -projection extended -fmt pdf -layout layout-coupe-continuations -o Outputs/Mirolda-coupe-continuations.pdf
-export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
+#export atlas -o Outputs/Mirolda-atlas.pdf -layout atlas_layout
 #export atlas -projection extended -o Outputs/Mirolda-atlas-coupe.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
@@ -423,7 +423,7 @@ export continuation-list -fmt kml -o Outputs/ContinuationsMirolda-2024.kml
 # export des statistiques de l'ensemble de la cavité
 #    Attention, les points de départ et d'arrivée de chaque centreline correspondent
 #    au second point et à l'avant dernier point de la série.
-export database -fmt sql -o Outputs/databaseMirolda-2024.sql
+#export database -fmt sql -o Outputs/databaseMirolda-2024.sql
 
 export continuation-list -o Outputs/ContinuationsMirolda.html
 #export continuation-list -o Outputs/ContinuationsMirolda-2024.kml

@@ -245,7 +245,7 @@ select MC-Combattant-coupe-tot@Combattant
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Combattant-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/Combattant-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Combattant-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 

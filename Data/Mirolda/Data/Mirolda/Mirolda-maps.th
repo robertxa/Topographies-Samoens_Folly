@@ -22,7 +22,7 @@ map MP-Amonts-Mirolda-plan -title "Réseau Lucien Bouclier : Jockers, VF3 & F126
 	MP-VF3-inf@VF3
 endmap
 
-map MP-Mirolda-plan-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
+map MP-Mirolda-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
 	MP-Amonts-Mirolda-plan
 	break
 	MP-CD11-plan-tot@CD11
@@ -42,7 +42,7 @@ map MC-Amonts-Mirolda-coupe -title "Réseau Lucien Bouclier : Jockers, VF3 & F12
 	MC-F126-coupe-tot@F126
 endmap   
 
-map MC-Mirolda-coupe-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
+map MC-Mirolda-tot -title "Gouffre Mirolda et réseau Lucien Bouclier"
 	MC-Amonts-Mirolda-coupe
 	break
 	MC-CD11-coupe-tot@CD11
