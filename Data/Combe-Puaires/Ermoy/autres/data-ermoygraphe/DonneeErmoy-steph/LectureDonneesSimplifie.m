@@ -13,7 +13,7 @@ Date = datenum(Data(:,1:6));
 Hauteur = Data(:,8);
 
 
-%% Ouverture du fichier des donn�es m�t�os
+%% Ouverture du fichier des données météos
 
 %[num, txt]= xlsread('DonneeClimato.xls');
 load RawData
