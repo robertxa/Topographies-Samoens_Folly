@@ -1,0 +1,17 @@
+encoding  utf-8
+
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey FLT7 -title "L'Amine Dada - FLT7"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/Dada/FLT7-tot.th
+	#input Data/PuitsParalleles/PuitsParalleles-tot.th
+	#	equate 15@FLT7.FLT8 1@PuitsParalleles.PuitsParalleles	# A veririfer !!!
+
+	# Import des maps
+	input FLT7-maps.th
+ 
+ endsurvey
+ 

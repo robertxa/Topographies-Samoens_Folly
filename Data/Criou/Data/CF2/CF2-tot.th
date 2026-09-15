@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey CF2 -title "Gouffre CF2"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/CF2.th
+	
+	# Import du dessin en plan
+	#input Data/CF2.th2
+
+	# Import du dessin en coupe
+	#input Data/CF2-coupe.th2
+
+	# Import des maps
+	#input CF2-maps.th
+ 
+ endsurvey
+ 

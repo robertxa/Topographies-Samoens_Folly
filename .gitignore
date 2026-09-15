@@ -182,3 +182,13 @@ config-old.thc
 
 *.error
 /Data/Combe-Puaires/Ermoy/autres/data-ermoygraphe/backup/error
+
+
+# Exceptions dans le dossier Data/Criou/Biblio
+!Data/Criou/Biblio/*.pdf
+!Data/Criou/Biblio/*.PDF
+!Data/Criou/Biblio/Karsteau_Criou/*.pdf
+!Data/Criou/Biblio/Karsteau_Criou/*.PDF
+!Data/Criou/Biblio/Karsteau_Criou/*.jpg
+!Data/Criou/Biblio/Karsteau_Criou/*.JPG
+

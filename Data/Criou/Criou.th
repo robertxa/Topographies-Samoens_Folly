@@ -1,0 +1,63 @@
+encoding  utf-8
+
+# Copyright (C) 2021 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey SystemCriou -title "Système du Criou (Mirolda - Lucien Bouclier)"
+# Pour importer les différentes données de différents fichiers topos : 
+
+	input Data/125-Pic-F40/F40-tot.th
+	input Data/Amine-Dada-FLT7/FLT7-tot.th
+	input Data/Babet-GU841/Babet-tot.th	
+	input Data/CB3/CB3-tot.th
+	input Data/CB_Nom_de_dieu/CB_Nom_de_dieu-tot.th
+	input Data/CB_Oh_putain/CB_Oh_putain-tot.th
+	input Data/CD1/CD1-tot.th
+	input Data/CD5/CD5-tot.th
+	input Data/CD17/CD17-tot.th
+	input Data/CE10/CE10-tot.th
+	input Data/CF2/CF2-tot.th
+	input Data/Chaperon-exurgence/Chaperon-tot.th
+	input Data/Cultane-U835/CulTane-tot.th
+	input Data/Daniel/Daniel-tot.th
+	input Data/Ecorchoir-U6/Ecorchoir-tot.th
+
+	#input Data/F30-CE100/F30-tot.th	# Revoir les coordonnées, elles sont complètement fausses et foutent la merde dans le 3D !
+
+	input Data/FC231/FC231-tot.th
+
+	#input Data/EU841/EU841-tot.th
+
+	input Data/Frigo-EU836/Frigo-tot.th
+	input Data/FU231/FU231-tot.th
+	
+	input Data/Innomable-EU831/Innomable-tot.th
+	
+	input Data/Lambourdin/Lambourdin-tot.th
+
+	input Data/Mirolda/Mirolda-tot.th
+	
+	input Data/Mobylette-FU891/Mobylette-tot.th
+	
+	input Data/Morts-Vivants-FLT5/Morts-Vivants-tot.th
+	input Data/NouveauNe-GU847/NouveauNe-tot.th
+	
+	input Data/Peterets-exurgence/Peterets-tot.th
+	input Data/PetiteVieille-EU842/PetiteVieille-tot.th
+	input Data/PetitVieux-EU841/PetitVieux-tot.th
+
+	input Data/Sapin/Sapin-tot.th
+
+	input Data/Superieur/Superieur-tot.th
+	input Data/Tombroi-EU981/Tombroi-tot.th
+
+
+	# Les données de prospection, non dessinées
+	input Data/Prospection/prospection-tot.th
+
+	# Import maps
+	input Criou-maps.th
+ 
+ endsurvey
+ 
