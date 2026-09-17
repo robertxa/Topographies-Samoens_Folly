@@ -1,0 +1,50 @@
+encoding  utf-8
+
+# Copyright (C) 1986 URSUS - 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Coeur-Toyota -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    #MV9  de Cœur à Toyota
+
+    #Topographes : Gérard Gudefin, Isabelle Matricon, Philippe M.
+    #Date : 09/1987
+    explo-date 1987.09
+        explo-team "URSUS"
+    date 1987.09
+        team "Gérard Gudefin"
+        team "Isabelle Matricon"
+        team "Philippe Magnard"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+    #extend vertical
+    extend ignore Coeur 46
+   Coeur	46	4.44	140	75.6					# Départ de Cœur
+   extend right
+46	47	1.72	126	84.6					
+47	48	2.42	215	82.8					# Concrétions
+48	49	3.8	151	99.9					
+49	50	2.12	223	98.1					
+50	51	2.31	218	119.7					
+51	52	4.11	205	109.8					
+52	53	3.39	255	104.4					
+53	54	10.36	215	116					
+54	55	6.5	210	112.5					
+55	56	6.64	215	114.5					
+56	57	0.94	111	106.2					
+57	58	4.09	208	118.8					
+58	59	2.87	260	129.6					
+59	60	12.34	289	124.2					
+60	61	5.97	270	111.6					
+61	62	5.73	310	97.2					
+62	Toyota	4.97	240	126					
+
+endcenterline
+ endsurvey

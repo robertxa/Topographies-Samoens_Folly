@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Sagesse-plan -title "Méandre de la Sagesse - FLT5"
+	SP-Dada-1
+	break
+	SP-Shunt-1
+	break
+    SP-Sagesse-1
+endmap
+
+map MC-Sagesse-coupe -title "Méandre de la Sagesse - FLT5"
+	SC-Sagesse-1
+	break
+	SC-Dada-1
+	break
+	SC-Dada-2
+endmap
+   

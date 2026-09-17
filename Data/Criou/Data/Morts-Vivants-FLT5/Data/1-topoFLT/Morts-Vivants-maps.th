@@ -1,0 +1,52 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Morts-Vivants-1 -title "G. des Morts-Vivants - FLT5"
+	SP-FLT-4
+	break
+	SP-FLT-3
+	break
+	SP-FLT-2
+	break
+	SP-FLT-1
+	break
+	SP-Collecteur-1
+endmap
+
+map MP-Morts-Vivants-plan -title "G. des Morts-Vivants - FLT5"
+#	SP-B3-1
+#	break
+#	SP-B3-2
+#	break
+#	SP-B3-3
+#	break
+#	SP-B3-4
+#	break
+	MP-Morts-Vivants-1
+endmap
+
+map MC-MV-1
+	SC-MV-3	
+endmap
+
+map MC-MV-2
+	SC-MV-4
+endmap
+
+map MC-Collecteur
+	SC-MV-1
+	break
+	SC-MV-2
+endmap
+
+map MC-Morts-Vivants-coupe -title "Gouffre des Morts-Vivants - FLT5"
+	MC-MV-2
+	break
+	MC-Collecteur
+	break
+	MC-MV-1	[-80 0 m] below
+endmap
+   

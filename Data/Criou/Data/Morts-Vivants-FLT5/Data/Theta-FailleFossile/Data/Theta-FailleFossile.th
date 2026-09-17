@@ -1,0 +1,73 @@
+encoding  utf-8
+
+# Copyright (C) 1986 URSUS - 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Theta-FailleFossile -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    #MV7 Faille Active
+
+    #Topographes : Gérard Gudefin, Isabelle Matricon, Philippe M.
+    #Date : 09/1987
+    explo-date 1987.09
+        explo-team "URSUS"
+    date 1987.09
+        team "Gérard Gudefin"
+        team "Isabelle Matricon"
+        team "Philippe Matricon"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+THETA	1	9.09	274	101					# Départ de Theta ; Faille Fossile
+1	2	3.98	297	78					
+2	3	10.06	283	109					
+3	4	5.65	283	95					
+4	5	12.19	284	132					
+5	6	5.69	274	118					
+6	7	7.67	223	150					
+7	8	5.12	252	134					
+8	9	8.09	196	148					
+9	10	4.77	281	105					
+10	11	6.1	266	137					
+11	12	14.47	272	119					
+
+flags duplicate
+extend left
+THETA	20	15.47	2	53					# Départ de Theta ; Faille fossile ; Retour en arrière pour le départ ?
+flags not duplicate
+extend right
+20	21	6.03	0	0					
+21	22	6.8	189	87					
+22	23	7.99	208	104					
+23	24	9.55	171	95					
+24	25	5.16	108	77					
+25	26	4.51	217	116					
+26	27	8.07	260	106					
+27	28	4	221	107					
+28	29	2.11	142	102					
+29	30	4.47	220	104					
+30	31	14.43	182	103					
+31	32	16.54	198	102					
+32	Canailles	6.45	180	94					# Canailles
+Canailles	34	7.81	186	98					
+34	35	10.18	172	96					
+35	36	6.27	177	104					
+36	37	8.58	254	114					
+37	38	7.69	186	96					
+38	39	10.85	237	117					
+39	40	6.09	241	119					
+40	41	12.44	252	123					
+41	42	12.57	268	123					
+42	43	13.79	259	121					
+43	44	19.44	248	126					
+44	45	14.01	246	122					
+
+
+endcenterline
+ endsurvey

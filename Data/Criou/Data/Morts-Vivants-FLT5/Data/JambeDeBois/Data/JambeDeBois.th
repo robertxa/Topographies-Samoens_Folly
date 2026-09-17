@@ -1,0 +1,79 @@
+encoding  utf-8
+
+# Copyright (C) 1986 URSUS - 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey JambeDeBois -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline
+    #MV10  Jambe de Bois
+    #Date : 09/1987
+    explo-date 1987.09
+        explo-team "URSUS"
+    date 1987.09
+        team "Jacques Gudefin"
+        team "Sylvain Matricon"
+        team "Philippe Matricon"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+    extend left
+   	PSI	64	2.57	157	25					# Départ de PSI
+64	65	9.01	335	63					
+65	66	8.27	7	67					
+66	67	7.52	316	57					
+67	68	4.86	52	72					
+68	69	2.74	51	105					
+69	70	16.98	1	73					
+70	71	23.19	87	69					
+71	Fil	17.68	81	65					# Station du Fil
+Fil	73	14.83	36	66					
+73	74	9.58	65	60					
+74	75	5.42	55	59					
+75	76	8.02	346	65					
+76	77	5.01	344	84					
+77	78	13.66	356	85					
+78	79	5.34	35	104					
+79	Bite	4.67	2	93					# Station de la Bite
+Bite	81	10.61	218	130					
+81	82	6.69	106	140						
+
+endcenterline
+
+centerline -extend right
+    #MV10  Jambe de Bois
+    #Date : 09/1987
+    explo-date 1987.12.24
+        explo-team "URSUS"
+    date 1987.09
+        team "Gérard Gudefin"
+        team "Sylvain Matricon"
+        team "Michel Dussurget"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+    extend left
+Bite	1	2.48	322	119.7					# Départ Station de la Bite
+extend ignore 2 1
+1	2	11.67	5	76.5					
+2	3	4.52	25	79.2					
+3	4	3.65	341	94.5					
+4	5	9.54	18	117
+extend right					
+5	6	2.3	35	105					
+6	7	3.25	250	112.5					
+7	8	3.3	190	117
+#extend left					
+8	9	10.68	0	180					
+9	PHI	2.93	25	144					
+endcenterline
+
+ endsurvey

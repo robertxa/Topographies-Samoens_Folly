@@ -1,0 +1,42 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-MV1-2-4-plan -title "MV1-2-4 - FLT5"
+    SP-Urgo-2
+    break
+    SP-Urgo-1
+    break
+	SP-Fleurs-1
+	break
+	SP-Fleurs-2
+	break
+	SP-Diams-1
+	break
+    SP-Fruitiere-2
+	break
+	SP-Fruitiere-1
+endmap
+
+map MC-Fleurs
+	SC-Fleurs-1
+	break
+	SC-Fruitiere-3
+	break
+	SC-Fruitiere-2
+	break
+	SC-Fruitiere-1
+endmap
+
+map MC-Urgo
+	SC-Urgo-1
+endmap
+
+map MC-MV1-2-4-coupe -title "MV1-2-4 - FLT5"
+	MC-Fleurs
+	break
+	MC-Urgo
+endmap
+   

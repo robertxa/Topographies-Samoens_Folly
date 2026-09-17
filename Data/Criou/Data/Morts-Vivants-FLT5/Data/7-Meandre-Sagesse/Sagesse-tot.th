@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Sagesse -title "Gouffre des Sagesse - FLT5"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/Sagesse.th
+	
+	# Import du dessin en plan
+	input Data/Sagesse.th2
+	input Data/shunt.th2
+		join SP-Shunt-1 SP-Sagesse-1
+	input Data/Dada.th2
+		join SP-Dada-1 SP-Shunt-1
+
+
+	# Import du dessin en coupe
+	input Data/Sagesse-coupe.th2
+
+	# Import des maps
+	input Sagesse-maps.th
+ 
+ endsurvey
+ 

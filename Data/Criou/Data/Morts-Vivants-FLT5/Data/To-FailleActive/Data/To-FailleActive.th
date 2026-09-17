@@ -1,0 +1,36 @@
+encoding  utf-8
+
+# Copyright (C) 1986 URSUS - 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey To-FailleActive -title "Gouffre des Morts Vivants - FLT5"
+
+ centerline -extend right
+    #MV7 Faille Active
+
+    #Topographes : Gérard Gudefin, Isabelle Matricon, Philippe M.
+    #Date : 09/1987
+    explo-date 1987.09
+        explo-team "URSUS"
+    date 1987.09
+        team "Gérard Gudefin"
+        team "Isabelle Matricon"
+        team "Philippe Matricon"
+    
+    units length meters
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length  compass   clino #left right up down 
+   	T0	13	1.69	152	108					# Départ de T0 ; Faille active
+13	14	5.6	232	163					
+14	15	3.8	257	120					
+15	16	7.73	271	127					
+16	17	12.78	264	135					
+17	18	7.92	273	122					
+18	19	11.96	258	129								
+
+endcenterline
+ endsurvey

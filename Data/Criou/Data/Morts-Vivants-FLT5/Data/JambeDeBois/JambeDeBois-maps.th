@@ -1,0 +1,22 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-JambeDeBois-plan -title "Gouffre des JambeDeBois - FLT5"
+#	SP-B3-1
+#	break
+	SP-JambeBois-3
+#	break
+#	SP-JambeBois-4
+	break
+	SP-JambeBois-1
+	break
+	SP-JambeBois-2
+endmap
+
+map MC-JambeDeBois-coupe -title "Gouffre des JambeDeBois - FLT5"
+	SC-JambeBois-1
+endmap
+   

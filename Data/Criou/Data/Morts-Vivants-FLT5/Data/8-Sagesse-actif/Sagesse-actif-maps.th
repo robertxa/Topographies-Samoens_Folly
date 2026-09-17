@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Sagesse-actif-plan -title "Gouffre des Sagesse-actif - FLT5"
+	SP-SagesseAval-1
+endmap
+
+map MC-Sagesse-actif-coupe -title "Gouffre des Sagesse-actif - FLT5"
+	SC-SagesseAval-1
+	break
+	SC-SagesseAval-2
+	break
+	SC-SagesseAval-3
+endmap
+   

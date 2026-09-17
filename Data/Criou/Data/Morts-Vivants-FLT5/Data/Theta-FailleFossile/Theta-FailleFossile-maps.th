@@ -1,0 +1,18 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Theta-FailleFossile-plan -title "FLT5 - Faille Fossile terminale"
+	SP-FailleFossile-2
+	break
+    SP-FailleFossile-1
+endmap
+
+map MC-Theta-FailleFossile-coupe -title "FLT5 - Faille Fossile terminale"
+	SC-FailleFossile-1
+	break
+	SC-FailleFossile-2
+endmap
+   

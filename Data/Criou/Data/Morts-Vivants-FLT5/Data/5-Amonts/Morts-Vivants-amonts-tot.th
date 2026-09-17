@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Morts-Vivants-amonts -title "Gouffre des Morts-Vivants-amonts - FLT5"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/Morts-Vivants-amonts.th
+	
+	# Import du dessin en plan
+	input Data/Morts-Vivants-amonts.th2
+
+	# Import du dessin en coupe
+	input Data/Morts-Vivants-amonts-coupe.th2
+
+	# Import des maps
+	input Morts-Vivants-amonts-maps.th
+ 
+ endsurvey
+ 
