@@ -1,0 +1,66 @@
+encoding  utf-8
+
+# Copyright (C) 1999 Ursus - 2023 Alexandre Pont & Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+#[Note: Version Alex 2023 03 19 - import Données URSUS]
+ 
+survey F126 -title "Gouffre de la Rondelle Jaune - F126 (1992)" -entrance F126
+
+ centerline -extend right    
+	
+	# Serie: 64 -  Entrée F126
+    #========================	
+	#  Explo URSUS 26
+	
+    cs long-lat   
+
+    #fix F126 6.75026 46.09791	833  #ALT IGN --> Coordonnées Fausses
+    cs EPSG:27572   # LII étendu
+    #fix F126 944110 2130860	2230
+    #944150.00  2130939.00 # Données URSUS
+    #fix F126 944150 2130939	2220    # Données URSUS
+    fix F126 944110 2130860	2220
+    # fix F126 944150.00 2130939.00 2220.00 #  F126 entrée Coordonnées URSUS
+    #station F126 "G. de la Rondelle Jaune (F126)" entrance air-draught continuation #explored ????m
+		
+    date 1992 08 16
+	    team "Isabelle Matricon"
+	    team "Laurent Flandrin"
+	    team "Jean Bottazzi"
+    
+    explo-date 1992
+        explo-team "URSUS"
+		
+	units length meters
+	units compass degrees
+    units clino degrees
+    data normal from to length compass clino right left up down
+       F126 s64_1 11.53 103.50 4.50  0.30 0.30  0.30 0.30  # Entrée F126
+       s64_1 s64_2 1.88 130.50 43.20  0.50 0.50  0.30 0.30  
+       s64_2 s64_3 3.94 112.50 -36.00  0.25 0.25  0.50 0.50  
+       s64_3 s64_4 1.53 96.30 16.65  0.35 0.35  1.00 1.00  
+       s64_4 s64_5 4.25 134.10 -18.00  0.35 0.35  2.00 0.50  
+       s64_5 s64_6 12.51 100.80 0.00  0.25 0.25  0.50 0.50  
+       s64_6 s64_7 1.03 159.30 -2.70  0.25 0.25  0.20 0.20  # Observ: sommet P37
+
+
+    # units length meters
+    # units compass clino degrees
+    # data normal from to length compass backclino
+    # #	??	0	0	-90	# VF58 - F126 départ du haut du P37
+    # flags approximate
+    # F126	0	20	100	10	# Forçage fictif par Xavier le 26/09/2022
+    # flags not approximate
+    # 0	VF3-28-1	25.17	74.7	73.8	
+    # VF3-28-1	VF3-28-2	3.95	73.8	3.6	
+    # VF3-28-2	VF3-28-3	3.48	107.1	40.5	
+    # VF3-28-3	VF3-28-4	5.35	99	-9.45	
+    # VF3-28-4	VF3-28-5	2.08	167.4	27	
+    # #VF3-28-5	VF3-28-6	6.76	0	90	
+    # VF3-28-5	VF3-28-6	6.76	0	90	
+
+endcenterline
+
+ endsurvey

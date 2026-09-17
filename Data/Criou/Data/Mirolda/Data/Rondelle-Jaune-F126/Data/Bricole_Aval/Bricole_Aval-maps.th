@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Bricole_Aval-plan-tot -title "Réseau Lucien Bouclier - Bricole Aval"
+	SP-Bricole_Aval-1
+	break
+	SP-Bricole_Aval-2
+	break
+	SP-Bricole_Aval-3
+endmap
+
+map MC-Bricole_Aval-coupe-tot -title "Réseau Lucien Bouclier - Bricole Aval"
+	SC-Bricole-Aval-1
+	break
+	SC-Bricole-Aval-2
+	break
+	SC-Bricole-Aval-3
+	break
+	SC-Bricole-Aval-4
+endmap
+   
