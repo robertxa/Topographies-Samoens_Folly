@@ -1,0 +1,114 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+
+layout Entrances_coords_CDa
+# Layout where we define the different variables that contain the text with 
+# the entrance coordinates we want to print in the header.
+# We need one variable per entrance.
+
+# This layout is called by the layout Coords_Header below
+
+	code tex-map
+		\def\thjunk{ }
+		\def\thlocationCDa{CD11    --  Lat. : 46.08887$^{\circ}$ N ; Long. : 6.77048$^{\circ}$ E ; Alt. : 1880 m}
+		\def\thlocationFenetre{Fenêtre Hongroise    --  Lat. : 46.09005$^{\circ}$ N ; Long. : 6.79529$^{\circ}$ E ; Alt. : 2103 m}
+		\def\thlocationRondelle{F126 (Rondelle Jaune)    --  Lat. : 46.09023$^{\circ}$ N ; Long. : 6.78857$^{\circ}$ E ; Alt. : 2220 m}
+		\def\thlocationVF{VF3    --  Lat. : 46.09084$^{\circ}$ N ; Long. : 6.79367$^{\circ}$ E ; Alt. : 2324 m}
+		\def\thlocationFalaise{Entrée de la Falaise    --  Lat. : 46.08952$^{\circ}$ N ; Long. : 6.79443$^{\circ}$ E ; Alt. : 2218 m}
+		\def\thlocationJockers{Gouffre des Jokers    --  Lat. : 46.09200$^{\circ}$ N ; Long. : 6.79390$^{\circ}$ E ; Alt. : 2330 m}
+	endcode 
+	
+endlayout
+
+
+layout Coords_Header_CDa
+# Layout that set the presentation for the entrance coordinates.
+	
+	copy Entrances_coords_CDa
+	# it calls the layout above Entrances_coords where we defined the different 
+	# variables that contain the text with 
+	# the entrance coordinates we want to print in the header.
+	
+	code tex-map
+		\def\nostring{}
+		\def\thsizexl{}
+		\def\thsizel{}
+		\def\thsizem{}
+		\ifx\thsizexl\nostring\def\thsizexl{30}\else\fi
+		\ifx\thsizel\nostring\def\thsizel{24}\else\fi
+		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
+		
+		\ECoordinates={
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}
+			\fi
+			\edef\tmp{\thlocationJockers} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationJockers\vss}
+			\fi
+			\edef\tmp{\thlocationVF} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationVF\vss}
+			\fi
+			\edef\tmp{\thlocationRondelle} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationRondelle\vss}
+			\fi
+			\edef\tmp{\thlocationFalaise} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFalaise\vss}
+			\fi
+			\edef\tmp{\thlocationFenetre} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFenetre\vss}
+			\fi
+			\edef\tmp{\thlocationCDa} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationCDa\vss}
+			\fi
+		}
+	endcode
+
+endlayout
+
+
+layout Coords_Header_LB
+# Layout that set the presentation for the entrance coordinates.
+	
+	copy Entrances_coords_CDa
+	# it calls the layout above Entrances_coords where we defined the different 
+	# variables that contain the text with 
+	# the entrance coordinates we want to print in the header.
+	
+	code tex-map
+		\def\nostring{}
+		\def\thsizexl{}
+		\def\thsizel{}
+		\def\thsizem{}
+		\ifx\thsizexl\nostring\def\thsizexl{30}\else\fi
+		\ifx\thsizel\nostring\def\thsizel{24}\else\fi
+		\ifx\thsizem\nostring\def\thsizem{12}\else\fi
+		
+		\ECoordinates={
+			\edef\tmp{\thjunk} \ifx\tmp\empty \else
+				{\size[\thsizem] \ss\thjunk\vss}
+			\fi
+			\edef\tmp{\thlocationJockers} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationJockers\vss}
+			\fi
+			\edef\tmp{\thlocationVF} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationVF\vss}
+			\fi
+			\edef\tmp{\thlocationRondelle} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationRondelle\vss}
+			\fi
+			\edef\tmp{\thlocationFalaise} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFalaise\vss}
+			\fi
+			\edef\tmp{\thlocationFenetre} \ifx\tmp\empty \else
+				{\size[\thsizem]\hskip2cm  \ss\thlocationFenetre\vss}
+			\fi
+		}
+	endcode
+
+endlayout
+
+
