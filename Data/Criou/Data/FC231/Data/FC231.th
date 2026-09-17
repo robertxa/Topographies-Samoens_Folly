@@ -1,0 +1,37 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey FC231 -title "gouffre FC231" -entrance FC231
+
+ centerline -extend right
+    
+    date 2023.09.07
+        team "Xavier Robert"
+    explo-date 2023.09.07
+        #explo-team "Xavier Robert"
+        #explo-team "Daniel Betz"
+        explo-team "Collectif Mirolda"
+
+    cs long-lat
+    fix FC231 6.773599 46.089047	1926
+    station FC231 "Gouffre FC231" entrance continuation air-draught
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino left right up down
+    # Attention, ces données topos sont fictives, elles ont été construites artificiellement
+    #   à partir de la mémoire de Xavier --> Il faudra faire une vraie topo lorsqu'on aura avancé
+    flags approximate
+    FC231   0   0 0   0  1.5 2 0   0    # bord de la doline
+    FC231   1   6 165   -20  1.5 1 1.5   0  # trémie désobstruée
+    1   2   3  100 -50  0.2 0.2 1 0 # etr.
+    2   3   4   165 -25   0.4 0.4 0.2 0.2    # blocs, il faut les enlever, courant d'air soufflant en été
+    flags not approximate
+  
+endcenterline
+
+ endsurvey

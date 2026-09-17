@@ -1,0 +1,111 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -144.5 350.5 562.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {63.855000000000004 1 1.0} {317.036 FU231} FU231-map.xvi 0 {}
+
+
+
+scrap SP-FU231-1 -projection plan -station-names "" "@FU231" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 324.8505 -128.0 0.0 0.0 11.5024027 0.0 m]
+
+line wall -subtype invisible
+  76.5 323.0
+  76.5 323.0 54.5 333.0 46.5 308.5
+  smooth off
+endline
+
+line wall -subtype pit -outline none -clip off
+  76.5 323.0
+  109.0 338.0
+  altitude .
+endline
+
+point 171.0 160.0 ice-stalactite -clip off
+
+point 160.0 122.5 ice-stalactite
+
+point 137.5 144.5 ice-stalactite
+
+point 134.5 171.0 ice-stalactite
+
+point 83.5 100.0 dig
+
+point 112.5 34.0 dig
+
+line wall -subtype unsurveyed
+  212.0 34.0
+  altitude .
+  212.0 34.0 198.0 81.0 186.5 94.0
+  175.0 107.0 155.0 144.0 151.5 162.0
+  148.0 180.0 142.0 216.5 128.0 231.5
+  114.0 246.5 99.0 276.0 93.5 290.5
+  88.0 305.0 76.5 323.0 76.5 323.0
+  smooth off
+endline
+
+point 213.5 -14.0 continuation -attr Code D -attr Cavite "FU231" -attr CA "Courant d'air aspirant en été" -text "Trémie englacée verticale à désobstruer, courant d'air aspirant en été, proche gros puits remontant des putis Jumeaux (réseau Lucien Boulier)"
+
+point 156.0 235.5 air-draught -orientation 153.8 -subtype summer
+
+point 197.0 38.0 breakdown-choke -orientation 329.3
+
+line pit
+  209.5 59.5
+  209.5 59.5 169.5 65.5 169.0 47.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  46.5 308.5
+  46.5 308.5 51.5 315.0 57.0 303.5
+  62.5 292.0 62.0 271.0 67.5 252.5
+  73.0 234.0 84.5 225.0 93.0 209.5
+  101.5 194.0 96.0 173.0 104.0 161.5
+  112.0 150.0 126.5 159.0 132.0 143.0
+  137.5 127.0 148.0 98.0 156.0 83.0
+  164.0 68.0 174.5 49.5 178.5 44.0
+  182.5 38.5 186.5 29.5 186.5 29.5
+  smooth off
+endline
+
+area ice
+  l13-127-292
+endarea
+
+area blocks
+  l13-127-292
+endarea
+
+line label -id l13-127-292 -close on
+  87.5 319.5
+  87.5 319.5 55.0 321.5 52.5 295.0
+  50.0 268.5 96.0 156.5 111.5 130.0
+  127.0 103.5 163.0 30.5 176.0 28.5
+  189.0 26.5 186.5 29.5 186.5 29.5
+  smooth off
+  212.0 34.0
+  212.0 34.0 229.0 74.0 216.0 105.5
+  203.0 137.0 170.5 220.0 163.0 230.5
+  155.5 241.0 147.5 278.0 127.0 291.0
+  106.5 304.0 87.5 319.5 87.5 319.5
+  smooth off
+endline
+
+point 5.0 432.0 label -text "<bf>FU231" -scale xl
+
+point 41.0 358.0 entrance -orientation 153.7
+
+line wall -subtype pit -outline none -clip off
+  21.5 296.5
+  21.5 296.5 43.0 308.5 46.5 308.5
+  smooth off
+endline
+
+point 191.29500000000002 49.79599999999999 station -name 3
+
+point 140.645 155.99599999999998 station -name 1
+
+point 63.855000000000004 317.036 station -name 0
+
+endscrap
+
+

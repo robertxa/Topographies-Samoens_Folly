@@ -1,0 +1,101 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -159.49599999999998 475.5 401.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {78.744 1 1.0} {141.728 FC231} FC231-coupe.xvi 0 {}
+
+
+
+scrap SC-FC231-1 -projection extended -station-names "" "@FC231" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 285.48040000000003 -128.0 0.0 0.0 10.50240216 0.0 m]
+
+line wall -subtype invisible
+  175.5 174.0
+  175.5 174.0 84.0 162.0 67.0 139.0
+endline
+
+line wall
+  269.0 38.5
+  269.0 38.5 265.0 48.0 252.5 55.0
+  240.0 62.0 211.0 77.0 207.0 82.5
+  203.0 88.0 203.5 97.0 199.5 103.0
+  195.5 109.0 183.0 109.5 182.0 115.5
+  181.0 121.5 177.0 126.0 178.0 133.5
+  179.0 141.0 176.0 158.5 176.0 161.5
+  176.0 164.5 175.5 174.0 175.5 174.0
+  smooth off
+endline
+
+point 241.5 134.0 dig
+
+line rock-border -close on
+  168.0 99.0
+  167.5 91.5
+  176.0 90.5
+  176.0 94.5
+  168.0 99.0
+endline
+
+line rock-border -close on
+  158.5 116.5
+  157.0 110.0
+  167.534 109.41799999999999
+  165.0 113.5
+  158.5 116.5
+endline
+
+line wall -subtype pebbles
+  201.0 67.0
+  201.0 67.0 233.5 51.0 240.0 48.0
+  246.5 45.0 258.0 38.5 258.0 38.5
+  smooth off
+  altitude .
+  268.0 33.5
+endline
+
+point 318.0 50.0 continuation -attr Code D -attr Cavite "FC231" -attr CA "Courant d'air soufflant fort en été" -text "Galerie à désobstruer, bocs à enlever, bon courant d'air soufflant en été"
+
+point 102.5 56.5 u:symbol_extend -scale s
+
+point 345.0 3.0 air-draught -orientation 298.0 -subtype summer
+
+point 70.0 271.0 label -text "<bf>FC231" -scale xl
+
+point 96.5 189.5 entrance -orientation 139.7
+
+point 128.5 112.0 masonry
+
+line wall
+  150.0 90.5
+  150.0 90.5 155.5 82.0 160.5 80.5
+  165.5 79.0 181.0 73.0 185.5 71.5
+  190.0 70.0 201.0 67.0 201.0 67.0
+  smooth off
+endline
+
+line wall -subtype pebbles
+  117.0 120.0
+  117.0 120.0 137.5 120.5 139.0 117.5
+  140.5 114.5 137.5 106.0 143.5 106.0
+  149.5 106.0 162.0 112.5 162.0 106.0
+  162.0 99.5 167.0 91.5 163.0 90.5
+  159.0 89.5 152.0 93.5 152.0 93.5
+  smooth off
+endline
+
+line wall
+  67.0 139.0
+  altitude .
+  67.0 139.0 78.0 134.0 84.0 133.0
+  90.0 132.0 111.0 122.0 117.0 120.0
+endline
+
+point 254.984 46.608000000000004 station -name 3
+
+point 197.894 73.228 station -name 2
+
+point 167.534 109.41799999999999 station -name 1
+
+point 78.744 141.728 station -name FC231
+
+endscrap
+
+

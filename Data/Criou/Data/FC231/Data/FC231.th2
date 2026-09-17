@@ -1,0 +1,105 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -129.5 -192.5 366.5 409.0
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {123.63199999999999 1 1.0} {179.57999999999998 FC231} FC231-map.xvi 0 {}
+
+
+
+scrap SP-FC231-1 -projection plan -station-names "" "@FC231" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 285.48040000000003 -128.0 0.0 0.0 10.50240216 0.0 m]
+
+line wall
+  187.5 18.0
+  187.5 18.0 181.5 51.5 179.0 62.0
+  176.5 72.5 170.5 81.5 174.0 83.0
+  177.5 84.5 183.0 82.0 183.0 88.5
+  183.0 95.0 178.5 105.5 175.0 121.5
+  171.5 137.5 171.0 158.0 171.0 167.0
+endline
+
+line pit
+  177.5 84.0
+  177.5 84.0 174.0 101.0 167.5 94.5
+  161.0 88.0 158.5 78.5 158.5 78.5
+  smooth off
+endline
+
+line pit
+  174.0 124.0
+  174.0 124.0 139.5 110.5 132.5 102.5
+  125.5 94.5 122.5 84.0 122.5 84.0
+  smooth off
+endline
+
+point 165.5 100.5 blocks
+
+point 128.0 112.5 masonry
+
+point 230.5 -3.5 continuation -attr Code D -attr Cavite "FC231" -attr CA "Courant d'air soufflant fort en été" -text "Galerie à désobstruer, bocs à enlever, bon courant d'air soufflant en été"
+
+point 36.0 21.0 u:symbol_plan -scale s
+
+point 138.5 278.5 label -text "<bf>FC231" -scale xl
+
+point 94.0 218.0 entrance -orientation 154.7
+
+line slope
+  172.0 137.5
+  172.0 137.5 127.5 146.5 117.5 128.5
+  107.5 110.5 104.0 91.0 104.0 91.0
+  smooth off
+  l-size 8.0
+endline
+
+line slope
+  170.0 156.0
+  170.0 156.0 126.0 167.0 113.0 153.5
+  l-size 8.0
+  100.0 140.0 87.5 95.5 87.5 95.5
+  smooth off
+endline
+
+line u:doline -clip off
+  171.0 167.0
+  171.0 167.0 128.5 186.0 111.5 177.5
+  94.5 169.0 87.0 156.0 85.5 143.5
+  84.0 131.0 79.0 113.5 79.0 113.5
+  smooth off
+endline
+
+point 236.0 97.5 dig
+
+point 196.0 -62.0 air-draught -orientation 348.9 -subtype summer
+
+point 179.0 21.0 blocks
+
+line wall -subtype invisible
+  171.0 167.0
+  altitude .
+  171.0 167.0 126.5 187.0 111.5 177.5
+  96.5 168.0 90.0 160.0 85.5 143.5
+  81.0 127.0 79.0 113.5 79.0 113.5
+  smooth off
+endline
+
+line wall
+  79.0 113.5
+  79.0 113.5 77.0 93.0 96.0 91.5
+  115.0 90.0 115.0 88.5 122.5 84.0
+  130.0 79.5 130.5 75.0 136.5 75.0
+  142.5 75.0 162.0 82.0 162.5 77.0
+  163.0 72.0 173.5 15.5 173.5 15.5
+  smooth off
+  altitude .
+endline
+
+point 179.59199999999998 28.519999999999996 station -name 3
+
+point 169.202 84.66 station -name 2
+
+point 139.802 92.27 station -name 1
+
+point 123.63199999999999 179.57999999999998 station -name 0
+
+endscrap
+
+
