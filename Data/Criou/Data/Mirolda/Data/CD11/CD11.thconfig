@@ -30,10 +30,10 @@ encoding  utf-8
 source CD11-tot.th
 
 # Add Coordinates
-input Legendes/entrances_coordinates.th
+#input Legendes/entrances_coordinates.th
 
 # Add config file
-input ../../../../config.thc 
+input ../../../../../../config.thc 
   
  # 2-LAYOUT
 # Ici, on peut specifier des choses comme les symboles à utiliser (UIS, etc)
@@ -56,7 +56,7 @@ endlayout
 layout my_layout
 
   # Rajout des coordonnées de l'entrée
-  copy Coords_Header_CDa
+  #copy Coords_Header_CDa
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl 
@@ -171,8 +171,8 @@ layout my_layout
 			\cavename={Gouffre Mirolda - CD11} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022 - 2024}
-		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), Pierre Chevalley, Gérald Favre (1982), Jean-Claude Raymond (1986), Alexandre Pont, Xavier Robert (2023-2024)}
+		\newtoks\club \club={Collectif Mirolda 2022 - 2026}
+		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), Pierre Chevalley, Gérald Favre (1982), Jean-Claude Raymond (1986), Alexandre Pont, Xavier Robert (2023-2026)}
     \newtoks\datat \datat={https://github.com/robertxa/Mirolda}
     \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
@@ -268,8 +268,8 @@ layout my_layout-coupe
 			\cavename={Gouffre Mirolda - CD11} 
 		\else % if not empty keep the value set by therion, or assign an override cavename here
 		\fi
-		\newtoks\club \club={Collectif Mirolda 2022 - 2024}
-		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), Pierre Chevalley, Gérald Favre (1982), Jean-Claude Raymond (1986), Alexandre Pont, Xavier Robert (2023)}
+		\newtoks\club \club={Collectif Mirolda 2022 - 2026}
+		\newtoks\synth \synth={S.C. Lyon, S.C. Cavernicoles (1981), Pierre Chevalley, Gérald Favre (1982), Jean-Claude Raymond (1986), Alexandre Pont, Xavier Robert (2026)}
     \newtoks\datat \datat={https://github.com/robertxa/Mirolda}
     \newtoks\thanksto \thanksto={Cette synthèse topographique n'aurait pu avoir vu le jour sans le fort soutien des URSUS pour le partage de leur connaissance, ainsi que l'ouverture de l'ensemble de la Fruitière du Criou. Merci aussi à ceux qui ont transmis les données en leur possession !}
 	endcode   
@@ -309,21 +309,21 @@ select MC-CD11-coupe-tot@CD11
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/CD11-2024-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/CD11-plan.pdf -layout my_layout
  #export map -proj plan -fmt pdf -o Outputs/CD11-2023-plan-continuations.pdf -layout my_layout-continuations
- export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/CD11-2024-coupe.pdf
+ export map -projection extended -fmt pdf -layout my_layout-coupe -o Outputs/CD11-coupe.pdf
  #export map -projection extended -fmt pdf -layout my_layout-coupe-continuations -o Outputs/CD11-coupe-continuations.pdf
 #export atlas -o Outputs/CD11-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
- export model -enable all -o Outputs/CD11-2024.lox
+ export model -enable all -o Outputs/CD11.lox
 
 # Export des fichiers ESRI
- export map -proj plan -fmt esri -o Outputs/CD11-2024 -layout my_layout
+ export map -proj plan -fmt esri -o Outputs/CD11 -layout my_layout
 
 # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/CD11-2024.kml -layout layout-kml
- export model -fmt kml -o Outputs/CD11-2024-model.kml -enable all
+ export map -proj plan -fmt kml -o Outputs/CD11.kml -layout layout-kml
+ export model -fmt kml -o Outputs/CD11-model.kml -enable all
 
 # Export de la database sql
 # export des statistiques de l'ensemble de la cavité
@@ -331,7 +331,7 @@ select MC-CD11-coupe-tot@CD11
 #    au second point et à l'avant dernier point de la série.
 #export database -fmt sql -o Outputs/databaseCD11-2022.sql
 
-export continuation-list -o Outputs/ContinuationsCD11-2024.html
-#export continuation-list -o Outputs/ContinuationsCD11-2022.kml
-export survey-list -location on -o Outputs/SurveysCD112024.html
-#export cave-list -location on -o Outputs/CavesCD112022.html
+export continuation-list -o Outputs/ContinuationsCD11.html
+#export continuation-list -o Outputs/ContinuationsCD11.kml
+export survey-list -location on -o Outputs/SurveysCD11html
+#export cave-list -location on -o Outputs/CavesCD11.html
