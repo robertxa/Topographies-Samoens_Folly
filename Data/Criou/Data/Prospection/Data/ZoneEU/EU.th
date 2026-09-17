@@ -1,0 +1,24 @@
+encoding  utf-8
+
+# Copyright (C) 2019 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+ 
+survey trousEU -title "trous EU"
+
+# Fichier contenant les positions des entrées de la zone AV, Samoens, France
+
+ centerline
+#cs lat-long
+cs EPSG:27572 # LII Etende
+fix       EU834       943850     2130350     1985
+
+cs UTM32
+fix       EU881       328619  5106476     2176    # GPS 2023 + Lidar IGN
+
+station   EU834       "EU834" entrance air-draught #continuation explored 40m
+station   EU881     "EU881" entrance air-draught continuation explored 40m
+
+endcenterline
+
+endsurvey

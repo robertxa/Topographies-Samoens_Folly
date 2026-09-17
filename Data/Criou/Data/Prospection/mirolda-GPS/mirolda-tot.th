@@ -1,0 +1,26 @@
+encoding  utf-8
+
+# Copyright (C) 2021 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey mirolda -title "Entrées du Massif du Criou"
+
+# Pour importer les différentes données de différents fichiers topos : 
+   input Data/mirolda-gps.th
+ 
+##########################################################################################
+## Pour importer les différents fichiers de dessins en plan
+	## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
+	## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). C'est tout simple !
+
+	#input mirolda-gps.th2
+
+	#import maps
+	#input mirolda-maps.th
+
+	#map MP-mirolda1 -title "Entrées du massif du Criou"
+	#	SP-mirolda-2020
+	#endmap
+
+endsurvey

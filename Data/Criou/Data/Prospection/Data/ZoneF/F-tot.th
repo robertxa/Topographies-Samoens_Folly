@@ -1,0 +1,28 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+# Pour importer les différentes données de différents fichiers topos : 
+#   input trousEU.th
+
+survey zoneF -title "Zone F"
+# Pour importer les différentes données de différents fichiers topos : 
+   
+   input F.th
+   
+   #input F-maps.th
+
+endsurvey
+
+##########################################################################################
+## Pour importer les différents fichiers de dessins en plan
+	## Et Pour assembler plusieurs scraps entre eux, il faut utiliser la commande
+	## join scrap1 scrap2 -count n (où n = nombre de galerie à connecter, par défaut n = 1). C'est tout simple !
+
+#input trousAV.th2
+
+#map MP-trousAV
+#	SP-AV-1
+#endmap
