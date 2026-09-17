@@ -398,8 +398,8 @@ endlayout
 	# export map -proj extended -layout xviexport -fmt xvi -o Data/CD1-Extended.xvi
 
 ## Sélection des Maps à exporter
-	select MP-CD1-Plan-tot@CD1
-	select MC-CD1-Extended-tot@CD1
+	select MP-CD1-tot@CD1
+	select MC-CD1-tot@CD1
 
 ## Export des fichiers pdf, plan et coupe.
 ## ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

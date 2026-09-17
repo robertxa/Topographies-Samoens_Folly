@@ -398,8 +398,8 @@ endlayout
 	# export map -proj extended -layout xviexport -fmt xvi -o Data/CB3-Extended.xvi
 
 ## Sélection des Maps à exporter
-	select MP-CB3-Plan-tot@CB3
-	select MC-CB3-Extended-tot@CB3
+	select MP-CB3-tot@CB3
+	select MC-CB3-tot@CB3
 
 ## Export des fichiers pdf, plan et coupe.
 ## ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

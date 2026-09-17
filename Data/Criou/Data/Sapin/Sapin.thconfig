@@ -72,16 +72,19 @@ layout my_layout
   # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
   # des caractères et des traits.
   base-scale 1 400
+  base-scale 1 1000
 
   # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
   # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
   # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
   # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
-  scale 1 200
+#  scale 1 200
+  scale 1 1000
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
-  scale-bar 20 m
+#   scale-bar 20 m
+   scale-bar 100 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
   #grid bottom
@@ -182,17 +185,17 @@ layout layout-coupe
   # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
   # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
   # des caractères et des traits.
-  base-scale 1 200
+  base-scale 1 1000
 
   # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
   # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
   # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
   # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
   # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
-  scale 1 200
+  scale 1 1000
 
   # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
-  scale-bar 20 m
+  scale-bar 100 m
 
   # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
   #grid bottom
@@ -224,7 +227,8 @@ layout layout-coupe
   # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
   # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
   # ou une autre combination...
-  map-header 0 120 nw
+#  map-header 0 120 nw
+  map-header 0 -50 nw
   # arrière plan de la manchette
   map-header-bg on
   # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés

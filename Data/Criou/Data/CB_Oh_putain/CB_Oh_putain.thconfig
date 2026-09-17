@@ -398,8 +398,8 @@ endlayout
 	# export map -proj extended -layout xviexport -fmt xvi -o Data/CB_Oh_putain-Extended.xvi
 
 ## Sélection des Maps à exporter
-	select MP-CB_Oh_putain-Plan-tot@CB_Oh_putain
-	select MC-CB_Oh_putain-Extended-tot@CB_Oh_putain
+	select MP-CB_Oh_putain-tot@CB_Oh_putain
+	select MC-CB_Oh_putain-tot@CB_Oh_putain
 
 ## Export des fichiers pdf, plan et coupe.
 ## ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !

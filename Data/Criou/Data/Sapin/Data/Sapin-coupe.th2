@@ -1,0 +1,54 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -146.0 -128.00000000000003 315.0 567.5
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {78.73700000000001 1 1.0} {314.95899999999995 Sapin} Sapin-coupe.xvi 0 {}
+
+
+
+scrap SC-Sapin-1 -projection extended -station-names "" "@Sapin" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [-128.0 -128.0 206.74020000000002 -128.0 0.0 0.0 8.50240108 0.0 m]
+
+point -15.5 437.0 label -text "<bf><center>gouffre<br>du Sapin" -scale xl
+
+point 127.5 364.0 entrance -orientation 177.5
+
+point 4.0 195.5 height -value [-16 m]
+
+line rope
+  132.27700000000002 314.32899999999995
+  138.5 80.5
+endline
+
+line wall
+  185.0 55.0
+  altitude .
+  185.0 55.0 170.5 70.5 170.5 83.0
+  170.5 95.5 169.0 168.5 162.5 182.0
+  156.0 195.5 151.0 219.5 152.0 232.0
+  153.0 244.5 154.0 265.0 154.0 277.0
+  154.0 289.0 150.5 314.5 150.5 314.5
+  smooth off
+  altitude .
+endline
+
+line wall
+  114.5 313.0
+  114.5 313.0 119.0 172.0 120.5 151.0
+  122.0 130.0 128.5 120.5 128.0 106.5
+  127.5 92.5 127.0 78.5 135.5 77.0
+  144.0 75.5 147.0 77.5 148.0 69.5
+  149.0 61.5 149.0 62.5 158.0 57.0
+  167.0 51.5 181.5 48.5 181.5 48.5
+  smooth off
+endline
+
+point 175.11700000000002 55.119 station -name 2
+
+point 155.487 77.63899999999998 station -name 1
+
+point 132.27700000000002 314.32899999999995 station -name 0
+
+point 78.73700000000001 314.95899999999995 station -name Sapin
+
+endscrap
+
+

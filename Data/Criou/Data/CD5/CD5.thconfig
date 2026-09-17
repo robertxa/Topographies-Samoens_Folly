@@ -275,8 +275,8 @@ endlayout
 #export map -proj extended -layout xviexport -fmt xvi -o Data/CD5-coupe.xvi
 
 # Selection des Maps à exporter
-select MP-CD5-plan-tot@CD5
-select MC-CD5-coupe-tot@CD5
+select MP-CD5-tot@CD5
+select MC-CD5-tot@CD5
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
