@@ -1,0 +1,597 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -198.73000000000002 -221.22 203.0 185.5
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {-70.73 1 1.0} {-93.22 0} Base-70_290824-1s.xvi 0 {}
+
+# 2024.09.03 created by TopoDroid v. 6.2.85
+
+
+
+
+scrap Base-70_290824-1s -projection extended -station-names "" "@Base-70_290824" -author 2024 "Charlotte Honiat" -copyright 2024 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 2.6247 0 0 0 1 0 m]
+
+line wall
+  -6.42 -17.33
+  -4.59 -14.33 -2.54 -11.87 0.46 -10.03
+  smooth off
+endline
+
+point -0.96 -9.10 clay
+
+point -6.13 -14.35 clay
+
+point -4.02 -11.26 blocks
+
+point 12.65 -15.66 blocks
+
+line wall
+  0.84 -9.8
+  3.88 -9.3 7.16 -11.26 8.98 -13.7
+  smooth off
+endline
+
+line wall -reverse on
+  23.81 -10.95
+  18.99 -9.49 17.19 -8.14 15.75 -13.47
+  smooth off
+endline
+
+line wall
+  -13.14 -9.86
+  -15.09 -12.17 -15.7 -14.64 -15.7 -17.59
+  smooth off
+endline
+
+line wall
+  -16.91 -28.34
+  -14.25 -23.74 -10.56 -20.31 -6.31 -17.29
+  smooth off
+endline
+
+line wall -reverse on
+  -20.94 -27.03
+  altitude .
+  -20.11 -23.57 -17.42 -20.99 -15.73 -17.97
+  smooth off
+endline
+
+line wall
+  -44.49 48.84
+  altitude .
+  -35.53 36.14 -29.78 21.57 -22.11 8.33
+  -20.88 6.21 -17.38 5.17 -15.98 3.97
+  -14.11 2.36 -15.94 -0.64 -15.19 -2.49
+  -14.67 -3.77 -11.85 -4.18 -11.38 -6.08
+  -10.92 -7.91 -12.11 -8.64 -13.14 -9.86
+  smooth off
+endline
+
+line wall
+  1.58 29.65
+  -12.81 32.32 -20.78 46.31 -32.81 52.36
+  smooth off
+endline
+
+point -42.03 56.35 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Entrée" -text "Trace ancienne escalade"
+
+point -24.27 25.00 water-flow -orientation 169.00
+
+line wall
+  12.54 -22.09
+  18.91 -25.7 22.4 -29.32 23.21 -37.99
+  smooth off
+endline
+
+line wall -reverse on
+  15.75 -13.47
+  18.92 -21.01 28.91 -20.46 33.19 -25.22
+  smooth off
+endline
+
+line wall
+  23.21 -37.99
+  26.93 -47.82 23.89 -56.52 36.55 -55.84
+  smooth off
+endline
+
+line wall
+  57.51 -45.28
+  54.14 -44.69 50.68 -46.11 47.87 -43.71
+  44.5 -40.83 44.25 -36.04 41.63 -32.65
+  39.28 -29.61 33.14 -29.46 33.19 -25.22
+  smooth off
+endline
+
+point 73.82 -59.69 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Entrée" -text "Méandre étroit descendant"
+
+line wall -reverse on
+  57.51 -45.28
+  62.16 -45.1 67.18 -45.25 71.84 -45.11
+  smooth off
+endline
+
+line wall
+  9.06 -13.87
+  10.66 -16.43 11.09 -19.39 12.54 -22.09
+  smooth off
+endline
+
+point -18.91 -27.57 narrow-end
+
+line wall
+  35.25 -5.75
+  24.75 -4.75 26.03 0.92 18.2 12.48
+  13.82 18.95 7.89 25.16 1.58 29.65
+  smooth off
+endline
+
+point 9.25 -45.25 height -value [-18 m]
+
+point -35.25 -0.75 height -value [+30 m]
+
+line rope
+  -42.5 50.0
+  -36.5 49.75
+  -11.0 12.0
+  -9.5 -17.25
+endline
+
+line rope
+  46.75 -49.5
+  56.5 -51.75
+  57.5 -64.0
+endline
+
+line rope
+  20.75 -24.0
+  28.25 -23.5
+  30.5 -52.25
+endline
+
+line wall
+  23.81 -10.95
+  31.44 -16.55 28.67 -16.18 37.5 -15.75
+  smooth off
+endline
+
+line wall -reverse on
+  60.41 -66.94
+  58.7 -66.73 58.99 -67.05 57.77 -65.78
+  48.04 -55.67 48.03 -60.08 36.55 -55.84
+  smooth off
+endline
+
+line wall -reverse on
+  72.84 -66.53
+  altitude .
+  68.71 -66.58 64.54 -66.77 60.41 -66.94
+  smooth off
+endline
+
+# line u:splay -visibility off
+#   16.90 -7.71
+#   12.94 -15.76
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   19.66 -6.91
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   17.80 -7.16
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   16.33 -7.39
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   14.09 -6.96
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   12.46 -7.66
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   9.96 -8.51
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   15.16 -7.93
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   16.46 -7.79
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   -2.40 29.68
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   -11.89 16.00
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   -14.90 -2.34
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   9.28 -7.62
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   9.47 -8.33
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   4.75 -9.30
+# endline
+# line u:splay -visibility off
+#   16.90 -7.71
+#   9.93 -13.84
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   0.22 -4.38
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -7.92 -17.07
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -11.73 -8.53
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -13.60 -11.06
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -15.67 -14.98
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -4.70 -3.96
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -0.17 -4.20
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -3.87 0.68
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   -13.23 5.31
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   5.86 -4.52
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   20.33 -4.62
+# endline
+# line u:splay -visibility off
+#   0.09 -6.77
+#   2.35 -5.68
+# endline
+# line u:splay -visibility off
+#   -13.57 -15.54
+#   -7.38 -17.44
+# endline
+# line u:splay -visibility off
+#   -13.57 -15.54
+#   -12.08 -15.34
+# endline
+# line u:splay -visibility off
+#   -7.34 -0.30
+#   -6.60 3.71
+# endline
+# line u:splay -visibility off
+#   -7.34 -0.30
+#   -5.63 0.10
+# endline
+# line u:splay -visibility off
+#   -7.34 -0.30
+#   -1.90 -7.83
+# endline
+# line u:splay -visibility off
+#   -7.34 -0.30
+#   -14.55 -2.34
+# endline
+# line u:splay -visibility off
+#   -7.34 -0.30
+#   -5.50 5.83
+# endline
+# line u:splay -visibility off
+#   -7.34 -0.30
+#   -2.00 10.17
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -17.16 4.22
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -22.96 10.48
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -20.65 7.22
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -9.32 0.73
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -20.48 14.27
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -25.06 23.34
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -10.32 32.92
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -16.57 37.85
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -21.35 44.67
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -29.59 51.20
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -36.99 42.20
+# endline
+# line u:splay -visibility off
+#   -18.29 12.76
+#   -12.40 13.05
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   15.19 -15.83
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   14.56 -3.37
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   13.75 -15.91
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   17.66 -17.74
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   19.20 -18.49
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   15.26 -16.76
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   15.79 -17.17
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   18.10 -18.40
+# endline
+# line u:splay -visibility off
+#   13.12 -15.75
+#   14.13 -23.83
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   15.54 -20.52
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   20.03 -24.43
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   18.72 -24.52
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   20.18 -24.46
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   22.63 -24.70
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   27.33 -24.70
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   32.04 -24.93
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   26.76 -24.45
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   23.50 -24.13
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   19.02 -24.09
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   19.93 -0.15
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   22.56 -27.96
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   22.67 -28.51
+# endline
+# line u:splay -visibility off
+#   20.75 -24.91
+#   24.43 -37.12
+# endline
+# line u:splay -visibility off
+#   27.42 -24.70
+#   28.08 -25.32
+# endline
+# line u:splay -visibility off
+#   27.42 -24.70
+#   31.79 -25.37
+# endline
+# line u:splay -visibility off
+#   27.42 -24.70
+#   32.96 -25.26
+# endline
+# line u:splay -visibility off
+#   30.65 -55.20
+#   30.52 -54.53
+# endline
+# line u:splay -visibility off
+#   30.65 -55.20
+#   30.92 -54.99
+# endline
+# line u:splay -visibility off
+#   30.65 -55.20
+#   30.31 -55.19
+# endline
+# line u:splay -visibility off
+#   30.65 -55.20
+#   29.92 -54.76
+# endline
+# line u:splay -visibility off
+#   30.65 -55.20
+#   28.89 -54.81
+# endline
+# line u:splay -visibility off
+#   30.65 -55.20
+#   34.28 -53.12
+# endline
+# line u:splay -visibility off
+#   30.65 -55.20
+#   39.23 -51.92
+# endline
+# line u:splay -visibility off
+#   40.90 -51.66
+#   42.39 -51.72
+# endline
+# line u:splay -visibility off
+#   40.90 -51.66
+#   36.45 -51.34
+# endline
+# line u:splay -visibility off
+#   40.90 -51.66
+#   40.12 -32.14
+# endline
+# line u:splay -visibility off
+#   40.90 -51.66
+#   41.21 -56.94
+# endline
+# line u:splay -visibility off
+#   47.71 -51.37
+#   46.29 -50.73
+# endline
+# line u:splay -visibility off
+#   47.71 -51.37
+#   49.11 -50.96
+# endline
+# line u:splay -visibility off
+#   47.71 -51.37
+#   52.10 -51.94
+# endline
+# line u:splay -visibility off
+#   47.71 -51.37
+#   55.80 -51.10
+# endline
+# line u:splay -visibility off
+#   47.71 -51.37
+#   50.55 -62.82
+# endline
+# line u:splay -visibility off
+#   55.76 -59.84
+#   54.85 -59.50
+# endline
+# line u:splay -visibility off
+#   55.76 -59.84
+#   52.89 -59.67
+# endline
+# line u:splay -visibility off
+#   55.76 -59.84
+#   58.56 -60.18
+# endline
+# line u:splay -visibility off
+#   55.76 -59.84
+#   66.88 -62.00
+# endline
+# line u:splay -visibility off
+#   55.76 -59.84
+#   68.06 -61.80
+# endline
+# line u:splay -visibility off
+#   55.76 -59.84
+#   59.29 -66.35
+# endline
+# line u:splay -visibility off
+#   55.76 -59.84
+#   54.70 -45.61
+# endline
+
+
+point 13.12 -15.75 station -name "3"
+
+point 16.90 -7.71 station -name "2"
+
+point 0.09 -6.77 station -name "4"
+
+point -13.57 -15.54 station -name "5"
+
+point -18.91 -25.84 station -name "6"
+
+point -7.34 -0.30 station -name "7"
+
+point -18.29 12.76 station -name "8"
+
+point -40.48 48.83 station -name "9"
+
+point 20.75 -24.91 station -name "10"
+
+point 27.42 -24.70 station -name "11"
+
+point 30.65 -55.20 station -name "12"
+
+point 40.90 -51.66 station -name "13"
+
+point 47.71 -51.37 station -name "14"
+
+point 55.76 -59.84 station -name "15"
+
+point 67.79 -61.66 station -name "16"
+
+point 35.66 -14.17 station -name "1"
+
+point 51.31 -11.51 station -name "0"
+
+endscrap
+
+

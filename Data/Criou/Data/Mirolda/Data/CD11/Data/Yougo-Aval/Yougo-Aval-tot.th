@@ -1,0 +1,23 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Yougo-Aval -title "Gouffre Mirolda - Réseau des Yougoslaves aval"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/CD11_Yougo-Aval_2023.th
+	#input Data/VieuxTRO.th
+	#	equate 733@VieuxTRO PTRYOLRAP04@Yougo
+		#equate 64@CD11-Affluents 6@Yougo
+	
+	# Import du dessin en plan
+	input Data/CD11_Yougo-Aval-Plan.th2
+
+	# Import du dessin en coupe
+	input Data/CD11_Yougo-Aval-Coupe.th2
+
+	# Import des maps
+	input Yougo-Aval-maps.th
+ 
+ endsurvey

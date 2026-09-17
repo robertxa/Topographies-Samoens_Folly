@@ -1,0 +1,58 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -6261 7907 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} Mirolda-CD11-TOPO-SSG-NOTES.png 0 {}
+
+
+
+scrap SS-Hasselblad-1 -projection none -author 1981 "Pierre Chevallay" -author 1982 "Gérald Favre" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [3546.0 -1520.0 4132.0 -1513.0 0.0 0.0 50 0.0 m]
+
+line wall -close on
+  7106.5 -979.0
+  7106.5 -979.0 7107.5 -972.5 7101.5 -972.0
+  7095.5 -971.5 7090.5 -971.5 7089.0 -976.5
+  7087.5 -981.5 7086.5 -982.0 7090.5 -983.5
+  7094.5 -985.0 7096.0 -986.0 7100.0 -985.0
+  7104.0 -984.0 7106.5 -979.0 7106.5 -979.0
+  smooth off
+endline
+
+endscrap
+
+
+
+scrap SS-Hasselblad-1b -projection none -author 1981 "Pierre Chevallay" -author 1982 "Gérald Favre" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [3546.0 -1520.0 4132.0 -1513.0 0.0 0.0 50 0.0 m]
+
+line fault
+  6686.0 -1939.0
+  6683.0 -1918.0 6613.0 -1768.0 6613.0 -1768.0
+  smooth off
+endline
+
+line wall -close on
+  6653.0 -1863.0
+  6653.0 -1863.0 6644.0 -1832.0 6637.0 -1833.0
+  6630.0 -1834.0 6615.0 -1834.0 6619.0 -1842.0
+  6623.0 -1850.0 6621.45 -1849.42 6631.0 -1853.0
+  6639.0 -1856.0 6645.0 -1862.0 6645.0 -1862.0
+  smooth off
+  6653.0 -1863.0
+endline
+
+endscrap
+
+
+
+scrap SS-Hasselblad-1c -projection none -author 1981 "Pierre Chevallay" -author 1982 "Gérald Favre" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [3546.0 -1520.0 4132.0 -1513.0 0.0 0.0 50 0.0 m]
+
+line wall -close on
+  5867.0 -1711.5
+  5867.0 -1711.5 5869.0 -1703.0 5863.5 -1703.0
+  5858.0 -1703.0 5860.5 -1710.5 5861.0 -1714.5
+  5861.5 -1718.5 5859.5 -1721.5 5861.5 -1726.0
+  5863.5 -1730.5 5868.0 -1725.0 5868.0 -1721.0
+  5868.0 -1717.0 5867.0 -1711.5 5867.0 -1711.5
+  smooth off
+endline
+
+endscrap

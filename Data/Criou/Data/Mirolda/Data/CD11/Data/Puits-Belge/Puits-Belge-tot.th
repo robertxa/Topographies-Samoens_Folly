@@ -1,0 +1,30 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Puits-Belge -title "Gouffre Mirolda - Amont Majestueuse"
+	# Pour importer les différentes données de différents fichiers topos : 
+	## Old data from D. Colliard & URSUS
+	input Data/Puits-Belge.th
+		input Data/Puits-Belge1.th2
+		input Data/Puits-Belge2.th2
+			join SP-Belge-3 SP-Belge-2
+		input Data/Puits-Belge3.th2
+			join SP-Belge-5 SP-Belge-4
+
+	input Data/Affluents-Puits-Belge.th
+		equate A10@Puits-Belge A10@Affluents-Puits-Belge
+		input Data/Affluents-Puits-Belge.th2
+		join SP-Aff-Belge-1 SP-Belge-5
+		join SP-Aff-Belge-3 SP-Belge-5 -count 2
+
+	# Import du dessin en coupe
+	input Data/Puits-Belge-coupe.th2
+
+	# Import des maps
+	input Puits-Belge-maps.th
+ 
+ endsurvey
+ 

@@ -1,0 +1,2529 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -377.0 -755.0 1576.0 263.0
+##XTHERION## xth_me_area_zoom_to 200
+
+# 2023.09.01 created by TopoDroid v. 5.1.40
+
+
+
+
+scrap MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p -projection plan -station-names "" "@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23" -author 2023 "Charlotte Honiat" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 9.8425 0 0 0 1 0 m]
+
+point 1320.48 -456.56 station-name -scale xs -align right
+
+point 95.70 -144.42 pillar
+
+point 92.41 -138.10 stalactite -scale xs
+
+point 100.76 -138.10 stalactite -scale xs
+
+area clay
+  l643-96--48
+endarea
+
+line label -id l643-96--48 -close on
+  95.5 -48.0
+  95.5 -48.0 52.75 -77.5 51.5 -91.75
+  50.25 -106.0 113.0 -248.25 123.25 -260.25
+  133.5 -272.25 166.5 -335.5 170.25 -340.5
+  174.0 -345.5 198.75 -346.75 207.25 -345.25
+  215.75 -343.75 214.75 -270.0 211.0 -263.25
+  207.25 -256.5 155.0 -191.5 146.75 -175.25
+  138.5 -159.0 202.75 -148.25 215.25 -140.75
+  227.75 -133.25 255.25 -129.75 262.75 -123.75
+  270.25 -117.75 308.25 -71.75 311.5 -66.0
+  314.75 -60.25 313.75 -40.25 296.75 -38.75
+  279.75 -37.25 95.5 -48.0 95.5 -48.0
+  smooth off
+endline
+
+point 187.56 -367.04 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "CF sur joint de strate descendante, à continuer"
+
+point 112.05 -187.66 water-flow -orientation 180.00
+
+line wall
+  133.26 -111.91
+  175.07 -132.4
+endline
+
+point 176.94 -271.07 stalagmite -scale xs
+
+point 177.77 -274.58 stalagmite -scale xs
+
+point 177.00 -261.86 stalactite -scale xs
+
+point 267.74 -73.48 stalactite -scale xs
+
+point 270.20 -57.39 stalactite
+
+point 300.83 -89.28 stalactite -scale xs
+
+point 313.55 -97.70 stalactite -scale xs
+
+line slope
+  312.25 -68.75
+  312.25 -68.75 255.75 -84.25 242.75 -88.75
+  229.75 -93.25 190.0 -99.5 172.0 -96.25
+  154.0 -93.0 108.75 -64.0 107.0 -62.75
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  304.25 -58.25
+  304.25 -58.25 259.75 -71.75 247.25 -72.75
+  234.75 -73.75 184.25 -77.25 171.75 -77.25
+  159.25 -77.25 130.75 -66.75 130.75 -66.75
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  200.5 -316.75
+  200.5 -316.75 183.75 -317.25 174.5 -314.75
+  smooth off
+  l-size 4.0
+endline
+
+line slope
+  200.0 -289.0
+  200.0 -289.0 183.0 -294.0 177.25 -293.75
+  smooth off
+  l-size 4.0
+endline
+
+line slope
+  168.0 -239.25
+  168.0 -239.25 150.25 -257.5 140.5 -260.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  141.25 -210.25
+  141.25 -210.25 117.75 -224.25 106.5 -223.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  126.75 -141.75
+  126.75 -141.75 98.0 -160.25 85.25 -160.75
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  100.25 -108.5
+  100.25 -108.5 85.0 -121.25 72.0 -121.75
+  smooth off
+  l-size 5.0
+endline
+
+point 319.13 -79.93 water-flow -orientation 225.00
+
+point 282.32 -110.27 water-flow -orientation 225.00
+
+point 384.74 -14.92 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "Laminoir étroit remontant avec écho (pas de courant d'air)"
+
+point 407.8 -132.68 air-draught -orientation 312.1 -subtype summer
+
+point 408.46 -177.35 stalactite
+
+point 411.87 -201.63 stalagmite
+
+point 401.07 -237.74 station-name -scale xs -align left
+
+point 435.81 -189.64 curtain
+
+point 427.79 -205.75 stalagmite
+
+point 514.60 -292.51 stalactite -scale xs
+
+point 424.5 -244.0 gypsum
+
+point 362.94 -274.26 label -text "<center>Hydro-<br>Magnesite" -scale xs
+
+line wall
+  528.17 -300.78
+  507.9 -269.71
+endline
+
+point 545.01 -358.83 flowstone
+
+point 704.33 -261.48 station-name -scale xs -align right
+
+line wall
+  536.81 -308.9
+  528.17 -300.78
+endline
+
+point 659.20 -248.29 pillar
+
+point 668.38 -272.13 curtain
+
+point 676.78 -267.24 curtain
+
+line wall
+  667.6 -234.79
+  656.24 -240.99
+endline
+
+point 722.34 -154.71 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "Méandre remontant, à voir"
+
+point 676.79 -234.44 water-flow -orientation 203.00
+
+point 657.86 -276.01 water-flow -orientation 203.00
+
+point 677.45 -278.57 pebbles
+
+point 723.97 -344.16 stalagmite
+
+point 693.60 -314.94 stalagmite
+
+line floor-meander
+  702.48 -322.02
+  715.23 -342.27
+endline
+
+point 724.53 -324.94 stalagmite
+
+point 726.10 -333.42 flowstone
+
+point 699.26 -301.55 flowstone
+
+point 705.85 -315.84 flowstone
+
+line floor-meander
+  731.59 -359.33
+  729.44 -370.7
+endline
+
+point 727.44 -368.87 water-flow -orientation 200.00
+
+point 716.84 -361.80 water-flow -orientation 168.00
+
+line wall -reverse on
+  746.38 -366.34
+  755.24 -377.74
+endline
+
+line wall
+  710.85 -378.61
+  721.36 -387.81
+endline
+
+point 1321.0 -490.0 traverse
+
+line pit
+  1242.5 -459.5
+  1239.0 -495.75 1279.0 -492.5 1269.0 -458.75
+  smooth off
+endline
+
+line pit
+  1274.43 -455.32
+  1283.04 -461.11 1276.67 -484.61 1273.5 -493.75
+  smooth off
+endline
+
+line border
+  1286.12 -449.63
+  1293.65 -455.38 1296.81 -461.69 1297.43 -470.82
+  smooth off
+endline
+
+line wall
+  1298.37 -470.71
+  1314.86 -449.23 1339.17 -434.62 1360.02 -417.25
+  smooth off
+endline
+
+line wall
+  1336.94 -415.52
+  1323.43 -424.79 1308.89 -441.13 1291.78 -442.87
+  smooth off
+endline
+
+line wall -reverse on
+  1266.6 -461.38
+  1283.1 -452.22 1274.45 -458.03 1291.78 -442.87
+  smooth off
+endline
+
+line wall
+  1265.46 -489.81
+  1269.03 -490.63 1272.66 -493.34 1276.16 -492.26
+  1283.0 -490.15 1293.41 -476.26 1298.37 -470.71
+  smooth off
+endline
+
+line wall -reverse on
+  1265.46 -489.81
+  1240.58 -490.27 1234.01 -479.44 1210.3 -492.81
+  smooth off
+endline
+
+line wall
+  1266.6 -461.38
+  1242.21 -456.03 1225.67 -464.36 1205.52 -477.02
+  smooth off
+endline
+
+line wall
+  1161.79 -516.29
+  1176.49 -504.95 1194.06 -500.88 1210.3 -492.81
+  smooth off
+endline
+
+line wall
+  1205.52 -477.02
+  1189.78 -487.25 1173.37 -496.2 1156.81 -505.0
+  smooth off
+endline
+
+line wall -reverse on
+  1161.79 -516.29
+  1142.41 -529.53 1120.31 -537.01 1097.82 -542.93
+  smooth off
+endline
+
+line wall
+  1156.81 -505.0
+  1141.72 -512.92 1126.7 -519.87 1111.82 -528.32
+  smooth off
+endline
+
+line wall
+  1111.82 -528.32
+  1086.79 -530.64 1063.22 -543.57 1038.7 -547.29
+  1030.77 -548.49 1022.67 -547.78 1014.66 -548.03
+  smooth off
+endline
+
+line wall
+  1018.67 -569.71
+  1042.71 -553.74 1071.06 -551.48 1097.82 -542.93
+  smooth off
+endline
+
+line border
+  1015.5 -545.25
+  1020.52 -550.71 1020.51 -565.38 1020.25 -572.25
+  smooth off
+endline
+
+line wall -reverse on
+  975.83 -551.65
+  988.28 -545.27 1001.31 -547.45 1014.66 -548.03
+  smooth off
+endline
+
+point 1011.75 -516.75 height -value [+4 m]
+
+line arrow
+  1388.0 -588.75
+  1289.0 -500.5
+endline
+
+point 1445.5 -602.5 label -text "La Jonction"
+
+point 1120.75 -621.5 label -text "Le Grand Canyon"
+
+line wall
+  968.13 -565.51
+  984.55 -579.86 999.89 -576.16 1018.67 -569.71
+  smooth off
+  altitude .
+endline
+
+line wall
+  975.83 -551.65
+  948.85 -551.78 928.11 -569.57 903.45 -577.49
+  smooth off
+endline
+
+line wall
+  917.73 -587.95
+  931.81 -572.77 947.89 -566.46 968.13 -565.51
+  smooth off
+endline
+
+line wall -reverse on
+  874.57 -571.64
+  889.75 -588.03 880.76 -561.92 903.45 -577.49
+  smooth off
+endline
+
+line wall
+  878.47 -590.97
+  877.17 -591.48 859.13 -598.91 859.0 -601.24
+  858.81 -604.57 865.04 -604.52 868.37 -604.75
+  885.33 -605.92 903.05 -594.54 917.73 -587.95
+  smooth off
+endline
+
+line chimney -clip off
+  874.18 -547.99
+  889.86 -523.69 899.35 -557.76 874.1 -548.14
+  smooth off
+endline
+
+line chimney
+  859.26 -568.45
+  855.5 -578.94 848.31 -582.76 838.73 -586.88
+  smooth off
+endline
+
+line wall
+  825.39 -582.27
+  841.37 -593.49 860.24 -587.54 878.47 -590.97
+  smooth off
+endline
+
+line wall
+  859.71 -567.95
+  867.52 -562.8 874.28 -556.48 881.95 -551.16
+  smooth off
+endline
+
+line wall -reverse on
+  850.27 -563.7
+  858.92 -559.6 866.25 -553.48 874.1 -548.14
+  smooth off
+endline
+
+line wall -reverse on
+  859.79 -568.05
+  864.97 -567.91 869.68 -570.35 874.57 -571.64
+  smooth off
+endline
+
+line wall -reverse on
+  819.81 -572.36
+  829.94 -569.41 840.02 -567.23 849.99 -563.74
+  smooth off
+endline
+
+line wall
+  796.05 -582.54
+  806.66 -586.21 814.58 -581.58 825.39 -582.27
+  smooth off
+endline
+
+line floor-meander
+  801.79 -582.29
+  811.81 -564.98 806.31 -573.44 818.34 -556.94
+  smooth off
+endline
+
+line wall -reverse on
+  794.46 -558.23
+  799.05 -558.43 803.72 -559.76 808.22 -558.84
+  812.82 -557.9 816.96 -550.31 820.94 -552.8
+  829.11 -557.92 822.46 -568.18 819.81 -572.36
+  smooth off
+endline
+
+line border
+  754.99 -556.91
+  763.22 -573.03 756.75 -569.6 772.45 -570.26
+  smooth off
+endline
+
+line wall
+  778.5 -601.5
+  760.83 -593.61 768.64 -561.87 786.34 -571.56
+  790.63 -573.91 792.81 -578.88 796.05 -582.54
+  smooth off
+endline
+
+line chimney
+  804.47 -536.4
+  789.15 -533.19 795.24 -536.37 785.32 -528.75
+  smooth off
+endline
+
+line wall
+  794.46 -558.23
+  774.46 -549.12 791.67 -540.89 803.04 -537.32
+  smooth off
+endline
+
+line pit
+  759.5 -601.75
+  759.5 -601.75 771.75 -598.0 771.75 -592.0
+  smooth off
+endline
+
+line pit
+  795.25 -553.75
+  795.25 -553.75 785.5 -566.75 785.5 -576.5
+  smooth off
+endline
+
+line pit
+  775.25 -532.25
+  775.25 -532.25 759.75 -547.75 761.5 -555.75
+  763.25 -563.75 768.75 -576.75 774.75 -572.5
+  780.75 -568.25 786.5 -549.0 790.5 -548.0
+  smooth off
+endline
+
+line pit
+  780.5 -520.5
+  780.5 -520.5 801.5 -535.25 810.5 -524.5
+  smooth off
+endline
+
+line pit
+  786.26 -483.67
+  786.26 -483.67 780.49 -483.25 780.37 -489.5
+  smooth off
+endline
+
+line pit
+  758.5 -503.25
+  758.5 -503.25 766.25 -502.0 770.0 -495.0
+  773.75 -488.0 773.0 -463.25 777.75 -463.25
+  smooth off
+endline
+
+line pit
+  756.75 -601.0
+  756.75 -601.0 762.25 -583.25 758.75 -583.0
+  755.25 -582.75 747.25 -586.0 747.25 -586.0
+  smooth off
+endline
+
+point 784.5 -607.75 water-flow -orientation 292.1
+
+line pit
+  841.75 -592.5
+  841.75 -592.5 868.75 -574.0 864.0 -566.75
+  smooth off
+endline
+
+point 838.25 -541.0 height -value [+4 m]
+
+area clay
+  l700-1002--537
+endarea
+
+line label -id l700-1002--537 -close on
+  902.25 -561.75
+  902.25 -561.75 854.75 -590.25 851.25 -597.25
+  847.75 -604.25 870.5 -615.5 896.5 -607.25
+  922.5 -599.0 951.25 -575.5 963.75 -576.0
+  976.25 -576.5 1006.0 -587.25 1009.5 -579.25
+  1013.0 -571.25 1011.75 -537.75 1001.75 -537.75
+  991.75 -537.75 922.5 -552.75 916.5 -555.0
+  910.5 -557.25 902.25 -561.75 902.25 -561.75
+  smooth off
+endline
+
+point 718.5 -462.0 height -value [+8 m]
+
+point 676.25 -562.0 label -text "La Lucarne"
+
+point 808.0 -624.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "éandre remontant, à voir, arrivée d'eau"
+
+point 731.25 -622.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "éandre descendant, à voir"
+
+line wall
+  747.5 -602.0
+  747.5 -602.0 751.25 -595.75 756.25 -597.75
+  761.25 -599.75 775.5 -608.0 775.5 -608.0
+  smooth off
+endline
+
+line wall
+  752.25 -586.25
+  743.0 -597.0
+  altitude .
+endline
+
+line wall -reverse on
+  752.25 -586.25
+  743.2 -570.28 745.77 -551.5 763.57 -538.57
+  767.74 -535.54 773.61 -535.99 778.33 -533.9
+  781.64 -532.43 784.41 -529.97 787.45 -528.0
+  smooth off
+endline
+
+line wall -reverse on -subtype pit
+  785.32 -528.75
+  781.62 -517.65 781.78 -511.84 771.13 -504.92
+  767.11 -502.31 761.51 -502.88 757.59 -500.13
+  753.89 -497.53 749.38 -494.99 748.83 -490.5
+  smooth off
+  altitude .
+endline
+
+line wall -reverse on -subtype pit -outline none
+  748.83 -490.5
+  747.55 -480.05 767.06 -465.62 772.8 -464.14
+  smooth off
+endline
+
+line wall -reverse on -subtype pit
+  772.64 -463.71
+  787.28 -459.94 808.28 -509.95 807.86 -520.99
+  807.64 -526.66 804.65 -531.88 803.04 -537.32
+  smooth off
+endline
+
+line wall
+  772.64 -463.71
+  775.62 -450.47 775.64 -456.26 775.35 -448.27
+  smooth off
+endline
+
+line wall
+  759.88 -429.83
+  758.11 -450.62 750.12 -469.76 748.83 -490.5
+  smooth off
+endline
+
+line wall
+  775.35 -448.27
+  781.05 -425.91 764.25 -413.89 757.6 -395.46
+  755.58 -389.86 756.03 -383.65 755.24 -377.74
+  smooth off
+endline
+
+line wall
+  721.36 -387.81
+  741.38 -397.65 750.49 -410.41 759.88 -429.83
+  smooth off
+endline
+
+line floor-meander
+  714.51 -340.76
+  717.67 -367.27 715.71 -354.07 720.39 -380.35
+  smooth off
+endline
+
+line wall
+  746.38 -366.34
+  746.79 -326.98 732.18 -323.54 709.06 -296.45
+  smooth off
+endline
+
+line label -text "Amonts du réseau des Yougoslaves
+  -247.0 -46.0
+  -247.0 -46.0 -19.53 115.7 224.0 133.0
+  407.0 146.0 784.0 -20.0 816.0 -23.0
+  smooth off
+endline
+
+area clay
+  l671-501--155
+endarea
+
+line label -id l671-501--155 -close on
+  500.0 -154.0
+  500.0 -154.0 414.0 -240.0 419.0 -292.0
+  424.0 -344.0 521.0 -433.0 553.0 -433.0
+  585.0 -433.0 613.0 -329.0 625.0 -313.0
+  637.0 -297.0 643.0 -225.0 632.0 -216.0
+  621.0 -207.0 500.0 -154.0 500.0 -154.0
+  smooth off
+endline
+
+line wall
+  615.5 -266.12
+  649.28 -275.01 666.13 -302.49 687.93 -326.83
+  693.32 -332.85 701.82 -336.98 704.35 -344.65
+  718.97 -388.97 686.25 -352.25 710.85 -378.61
+  smooth off
+endline
+
+line floor-meander
+  732.44 -322.5
+  729.24 -334.84 728.92 -347.39 732.14 -359.72
+  smooth off
+endline
+
+line wall
+  709.06 -296.45
+  707.26 -283.71 690.81 -278.33 687.74 -266.46
+  683.06 -248.4 708.27 -237.62 716.64 -224.06
+  722.04 -215.31 726.67 -198.57 730.18 -189.21
+  731.91 -184.59 733.75 -176.0 734.25 -173.75
+  smooth off
+endline
+
+line floor-meander
+  706.48 -177.06
+  695.43 -186.82 696.45 -202.35 690.45 -214.29
+  688.38 -218.4 684.56 -221.37 681.96 -225.17
+  670.44 -242.03 661.61 -260.99 655.41 -280.26
+  smooth off
+endline
+
+line wall
+  703.23 -167.03
+  altitude .
+  692.19 -190.31 682.9 -213.92 667.6 -234.79
+  smooth off
+endline
+
+line wall
+  515.78 -327.19
+  521.46 -341.1 545.4 -404.0 556.03 -410.14
+  altitude .
+  559.71 -412.26 566.38 -408.22 567.24 -404.06
+  569.74 -392.0 541.98 -321.56 536.81 -308.9
+  smooth off
+endline
+
+line wall
+  656.24 -240.99
+  651.33 -237.99 647.13 -233.22 641.51 -231.98
+  605.61 -224.03 642.61 -245.14 606.43 -231.83
+  592.73 -226.79 582.09 -215.69 569.99 -207.52
+  smooth off
+  altitude .
+endline
+
+line wall
+  531.69 -230.4
+  536.66 -228.7 540.59 -226.7 545.82 -226.3
+  562.12 -225.06 601.69 -256.03 615.5 -266.12
+  smooth off
+endline
+
+line wall -reverse on
+  515.78 -327.19
+  497.22 -303.0 504.79 -301.26 474.65 -293.34
+  smooth off
+endline
+
+line wall
+  569.99 -207.52
+  550.05 -202.48 523.29 -191.71 502.52 -200.77
+  492.8 -205.01 485.36 -213.22 476.78 -219.44
+  smooth off
+endline
+
+line wall -close on -outline in
+  464.12 -234.66
+  467.38 -224.7 484.9 -231.94 495.31 -230.8
+  502.09 -230.06 513.0 -222.73 515.7 -229.0
+  517.75 -233.75 447.74 -284.73 464.12 -234.66
+endline
+
+line wall -reverse on
+  531.69 -230.4
+  521.27 -234.52 500.77 -238.91 498.73 -254.5
+  497.96 -260.37 504.84 -264.64 507.9 -269.71
+  smooth off
+endline
+
+point 490.75 -183.5 label -text "R1.5"
+
+line pit
+  496.75 -199.75
+  496.75 -199.75 509.25 -223.25 514.75 -227.75
+  smooth off
+endline
+
+line slope
+  554.75 -231.25
+  554.75 -231.25 548.25 -208.75 541.0 -205.0
+  533.75 -201.25 521.75 -195.75 517.25 -192.0
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  538.75 -231.75
+  538.75 -231.75 532.25 -212.5 526.5 -209.0
+  520.75 -205.5 507.25 -204.0 504.25 -196.5
+  smooth off
+  l-size 5.0
+endline
+
+line wall -reverse on
+  434.6 -179.66
+  450.52 -185.86 442.34 -211.1 454.7 -219.21
+  460.85 -223.25 469.42 -219.36 476.78 -219.44
+  smooth off
+endline
+
+line slope
+  563.75 -368.25
+  563.75 -368.25 534.25 -369.75 533.0 -379.25
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  552.0 -336.25
+  552.0 -336.25 520.25 -337.5 517.25 -351.0
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  534.25 -303.75
+  534.25 -303.75 503.25 -305.0 503.0 -318.25
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  520.75 -284.75
+  520.75 -284.75 490.5 -291.5 491.75 -307.75
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  508.5 -253.75
+  508.5 -253.75 492.0 -251.0 493.25 -244.25
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  503.75 -258.5
+  503.75 -258.5 478.25 -257.0 471.5 -259.25
+  464.75 -261.5 453.0 -276.25 453.0 -276.25
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  464.5 -249.5
+  464.5 -249.5 455.5 -264.75 445.0 -264.5
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  502.0 -232.5
+  502.0 -232.5 487.75 -214.5 487.25 -207.25
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  487.75 -233.75
+  487.75 -233.75 480.0 -218.75 480.0 -213.75
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  478.0 -231.25
+  478.0 -231.25 471.0 -223.75 471.0 -218.25
+  smooth off
+  l-size 5.0
+endline
+
+line slope
+  467.0 -234.0
+  467.0 -234.0 457.25 -226.25 462.25 -219.25
+  smooth off
+  l-size 5.0
+endline
+
+line wall
+  409.07 -232.73
+  436.06 -273.21 403.51 -232.36 448.84 -262.29
+  455.5 -266.69 468.93 -285.62 474.65 -293.34
+  smooth off
+endline
+
+line wall -reverse on
+  409.07 -232.73
+  394.6 -217.17 371.78 -155.15 357.03 -146.06
+  349.49 -141.41 339.61 -142.87 330.9 -141.28
+  smooth off
+  altitude .
+endline
+
+line wall
+  434.6 -179.66
+  407.93 -152.18 373.48 -133.98 348.56 -104.52
+  smooth off
+endline
+
+line wall
+  250.67 -117.61
+  284.57 -112.9 303.28 -125.79 330.9 -141.28
+  smooth off
+endline
+
+line floor-meander
+  372.1 -31.58
+  340.93 -60.86 307.79 -87.78 275.74 -116.17
+  smooth off
+endline
+
+line wall -reverse on
+  386.39 -33.29
+  385.01 -43.95 334.09 -78.49 333.36 -82.06
+  331.58 -90.71 343.04 -99.53 348.56 -104.52
+  smooth off
+endline
+
+line wall -reverse on
+  296.77 -56.13
+  299.82 -60.45 301.14 -66.8 305.91 -69.09
+  320.65 -76.16 356.98 -34.64 365.65 -24.37
+  smooth off
+  altitude .
+endline
+
+line wall -reverse on
+  236.34 -62.95
+  262.01 -55.13 271.44 -36.98 296.89 -56.14
+  smooth off
+endline
+
+line wall
+  175.07 -132.4
+  201.49 -138.0 225.69 -124.03 250.67 -117.61
+  smooth off
+endline
+
+line wall
+  236.34 -62.95
+  212.11 -68.6 186.69 -60.94 162.47 -63.29
+  152.92 -64.22 144.03 -68.62 134.81 -71.28
+  smooth off
+endline
+
+line wall -reverse on
+  47.06 -49.61
+  72.48 -44.7 91.1 -59.75 113.72 -66.73
+  120.59 -68.85 127.78 -69.76 134.81 -71.28
+  smooth off
+endline
+
+line wall
+  99.7 -112.59
+  98.46 -111.66 68.69 -91.48 74.01 -86.0
+  78.71 -81.16 85.66 -92.81 91.72 -95.76
+  104.76 -102.11 119.75 -107.04 133.26 -111.91
+  smooth off
+endline
+
+line wall -reverse on
+  22.5 -56.25
+  29.25 -52.5 37.5 -51.0 47.06 -49.61
+  smooth off
+endline
+
+line wall
+  123.31 -148.24
+  120.98 -132.55 109.68 -123.73 99.7 -112.59
+  smooth off
+endline
+
+line rock-border -close on
+  48.0 -63.0
+  51.5 -63.0
+  51.0 -68.75
+  47.0 -67.5
+  48.0 -63.0
+endline
+
+line wall
+  30.5 -82.5
+  68.71 -65.18 66.11 -112.78 82.33 -140.53
+  smooth off
+endline
+
+line floor-meander
+  121.16 -169.81
+  111.23 -182.55 110.55 -197.71 108.59 -212.89
+  smooth off
+endline
+
+line wall -subtype invisible
+  178.57 -344.74
+  197.05 -351.27
+endline
+
+line wall -reverse on
+  123.31 -148.24
+  121.89 -178.49 128.74 -205.86 150.13 -228.28
+  166.67 -245.62 186.14 -250.22 193.69 -275.12
+  200.85 -298.74 195.84 -326.85 197.05 -351.27
+  smooth off
+endline
+
+point 471.25 -82.5 label -text "<center>Le Passage<br>en Dahut"
+
+line wall
+  82.33 -140.53
+  97.23 -192.52 97.86 -215.34 139.42 -253.93
+  144.84 -258.97 150.26 -264.04 156.04 -268.66
+  161.56 -273.07 169.14 -275.28 173.27 -281.01
+  184.09 -296.02 177.9 -307.39 177.51 -323.67
+  177.34 -330.7 178.22 -337.72 178.57 -344.74
+  smooth off
+  altitude .
+endline
+
+point 802.05 -480.06 station-name -scale xs -align right
+
+point 801.09 -577.16 water-flow -orientation 58.00 -scale s
+
+point 822.30 -575.67 pebbles -scale xs
+
+point 828.70 -575.31 pebbles -scale xs
+
+point 826.33 -572.29 crystal -scale xs
+
+point 895.07 -531.7 continuation -attr Code E -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "Cheminée à escalader"
+
+point 866.13 -574.81 pebbles
+
+point 890.4 -617.15 station-name -scale xs
+
+point 1013.11 -560.96 pebbles -scale xs
+
+point 1010.16 -550.09 wall-calcite -scale xs
+
+point 1015.65 -550.49 wall-calcite -scale xs
+
+point 1021.35 -559.04 wall-calcite -orientation 80.00
+
+point 1117.61 -537.10 stalagmite -scale xs
+
+point 1133.01 -525.08 stalagmite -scale xs
+
+point 1053.44 -547.51 stalactite -scale xs
+
+point 1095.12 -510.47 air-draught -orientation 247.5 -subtype summer
+
+point 1186.85 -496.51 stalagmite
+
+point 1190.94 -490.62 stalactite
+
+point 1250.49 -463.99 stalactite
+
+point 1246.43 -479.34 stalagmite
+
+point 1261.11 -482.14 stalagmite
+
+point 1246.92 -466.79 pebbles -scale xs
+
+point 1266.90 -481.46 pebbles -scale xs
+
+point 1269.81 -478.85 curtain -scale xs
+
+point 1256.32 -465.90 flowstone -scale xs
+
+point 1266.15 -486.19 flowstone -scale xs
+
+point 1296.51 -449.41 crystal
+
+point 1296.67 -455.60 crystal
+
+point 1345.41 -424.05 stalactite -scale xs
+
+point 1341.11 -427.36 stalagmite -scale xs
+
+point 1336.81 -434.14 stalagmite -scale xs
+
+point 1316.12 -436.29 stalagmite -scale xs
+
+point 1309.17 -439.27 curtain -scale xs
+
+point 1302.59 -444.95 stalagmite -scale xs
+
+line u:splay -visibility off
+  49.21 -59.06
+  66.43 -81.99
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  28.02 -85.31
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  49.01 -60.45
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  49.91 -60.34
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  49.82 -60.39
+endline
+
+line u:splay -visibility off
+  95.13 -144.18
+  116.29 -133.21
+endline
+
+line u:splay -visibility off
+  95.13 -144.18
+  88.73 -147.93
+endline
+
+line u:splay -visibility off
+  95.13 -144.18
+  107.14 -210.7
+endline
+
+line u:splay -visibility off
+  95.13 -144.18
+  112.97 -195.76
+endline
+
+line u:splay -visibility off
+  95.13 -144.18
+  95.61 -145.58
+endline
+
+line u:splay -visibility off
+  108.12 -194.98
+  121.43 -201.78
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  45.19 -50.92
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  66.02 -82.27
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  51.75 -58.4
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  25.15 -56.03
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  16.03 -86.5
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  69.65 -80.16
+endline
+
+line u:splay -visibility off
+  49.21 -59.06
+  89.12 -65.78
+endline
+
+line u:splay -visibility off
+  105.14 -83.57
+  105.58 -74.58
+endline
+
+line u:splay -visibility off
+  105.14 -83.57
+  106.09 -103.31
+endline
+
+line u:splay -visibility off
+  105.14 -83.57
+  102.55 -84.85
+endline
+
+line u:splay -visibility off
+  105.14 -83.57
+  116.46 -70.3
+endline
+
+line u:splay -visibility off
+  105.14 -83.57
+  133.83 -98.43
+endline
+
+line u:splay -visibility off
+  105.14 -83.57
+  108.82 -87.15
+endline
+
+line u:splay -visibility off
+  105.14 -83.57
+  83.46 -95.3
+endline
+
+line u:splay -visibility off
+  188.88 -94.07
+  190.55 -63.16
+endline
+
+line u:splay -visibility off
+  188.88 -94.07
+  182.4 -133.54
+endline
+
+line u:splay -visibility off
+  188.88 -94.07
+  187.52 -94.04
+endline
+
+line u:splay -visibility off
+  188.88 -94.07
+  188.38 -98.82
+endline
+
+line u:splay -visibility off
+  188.88 -94.07
+  190.24 -94.82
+endline
+
+line u:splay -visibility off
+  263.1 -96.6
+  295.91 -58.82
+endline
+
+line u:splay -visibility off
+  263.1 -96.6
+  257.1 -110.74
+endline
+
+line u:splay -visibility off
+  263.1 -96.6
+  265.34 -95.61
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  339.07 -111.24
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  256.33 -88.29
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  295.65 -102.07
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  295.71 -115.76
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  268.11 -114.0
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  333.96 -133.89
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  308.03 -74.78
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  280.37 -53.92
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  298.31 -100.0
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  286.85 -79.86
+endline
+
+line u:splay -visibility off
+  293.01 -96.39
+  293.05 -98.9
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  369.12 -124.89
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  356.89 -141.84
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  361.82 -131.9
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  392.31 -156.05
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  370.31 -147.77
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  368.87 -152.35
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  349.67 -117.59
+endline
+
+line u:splay -visibility off
+  361.2 -130.32
+  324.34 -130.92
+endline
+
+line u:splay -visibility off
+  410.64 -199.84
+  422.79 -196.75
+endline
+
+line u:splay -visibility off
+  410.64 -199.84
+  402.44 -218.59
+endline
+
+line u:splay -visibility off
+  410.64 -199.84
+  409.3 -200.11
+endline
+
+line u:splay -visibility off
+  410.64 -199.84
+  425.84 -214.41
+endline
+
+line u:splay -visibility off
+  410.64 -199.84
+  420.29 -226.31
+endline
+
+line u:splay -visibility off
+  410.64 -199.84
+  416.27 -166.28
+endline
+
+line u:splay -visibility off
+  429.54 -228.1
+  443.52 -212.48
+endline
+
+line u:splay -visibility off
+  429.54 -228.1
+  416.09 -243.17
+endline
+
+line u:splay -visibility off
+  429.54 -228.1
+  428.63 -227.14
+endline
+
+line u:splay -visibility off
+  429.54 -228.1
+  454.23 -241.91
+endline
+
+line u:splay -visibility off
+  429.54 -228.1
+  435.41 -247.68
+endline
+
+line u:splay -visibility off
+  429.54 -228.1
+  405.67 -225.82
+endline
+
+line u:splay -visibility off
+  490.76 -287.18
+  507.71 -275.28
+endline
+
+line u:splay -visibility off
+  490.76 -287.18
+  483.38 -292.55
+endline
+
+line u:splay -visibility off
+  490.76 -287.18
+  490.86 -286.65
+endline
+
+line u:splay -visibility off
+  490.76 -287.18
+  489.23 -287.08
+endline
+
+line u:splay -visibility off
+  490.76 -287.18
+  514.27 -293.99
+endline
+
+line u:splay -visibility off
+  517.85 -300.3
+  526.3 -297.35
+endline
+
+line u:splay -visibility off
+  517.85 -300.3
+  505.9 -317.02
+endline
+
+line u:splay -visibility off
+  517.85 -300.3
+  517.07 -301.81
+endline
+
+line u:splay -visibility off
+  517.85 -300.3
+  516.88 -301.35
+endline
+
+line u:splay -visibility off
+  517.85 -300.3
+  515.76 -328.02
+endline
+
+line u:splay -visibility off
+  517.85 -300.3
+  497.67 -299.92
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  529.03 -230.06
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  532.22 -199.72
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  525.14 -227.05
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  554.31 -224.13
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  542.15 -212.1
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  495.84 -205.67
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  523.36 -225.5
+endline
+
+line u:splay -visibility off
+  524.83 -225.88
+  523.34 -225.54
+endline
+
+line u:splay -visibility off
+  629.96 -266.86
+  653.52 -275.51
+endline
+
+line u:splay -visibility off
+  629.96 -266.86
+  628.38 -266.58
+endline
+
+line u:splay -visibility off
+  629.96 -266.86
+  626.32 -265.96
+endline
+
+line u:splay -visibility off
+  629.96 -266.86
+  627.84 -269.48
+endline
+
+line u:splay -visibility off
+  629.96 -266.86
+  643.74 -233.16
+endline
+
+line u:splay -visibility off
+  629.96 -266.86
+  648.7 -239.24
+endline
+
+line u:splay -visibility off
+  669.59 -260.22
+  641.98 -245.35
+endline
+
+line u:splay -visibility off
+  669.59 -260.22
+  673.41 -264.21
+endline
+
+line u:splay -visibility off
+  669.59 -260.22
+  668.59 -259.51
+endline
+
+line u:splay -visibility off
+  669.59 -260.22
+  660.9 -239.63
+endline
+
+line u:splay -visibility off
+  697.94 -205.85
+  685.64 -200.75
+endline
+
+line u:splay -visibility off
+  697.94 -205.85
+  701.0 -207.1
+endline
+
+line u:splay -visibility off
+  697.94 -205.85
+  700.48 -207.2
+endline
+
+line u:splay -visibility off
+  697.94 -205.85
+  719.9 -216.3
+endline
+
+line u:splay -visibility off
+  697.94 -205.85
+  683.63 -218.51
+endline
+
+line u:splay -visibility off
+  697.94 -205.85
+  698.16 -209.58
+endline
+
+line u:splay -visibility off
+  692.26 -315.21
+  700.09 -309.04
+endline
+
+line u:splay -visibility off
+  692.26 -315.21
+  687.42 -326.04
+endline
+
+line u:splay -visibility off
+  692.26 -315.21
+  693.32 -316.82
+endline
+
+line u:splay -visibility off
+  692.26 -315.21
+  672.11 -307.83
+endline
+
+line u:splay -visibility off
+  692.26 -315.21
+  704.39 -331.9
+endline
+
+line u:splay -visibility off
+  723.48 -343.72
+  740.37 -356.23
+endline
+
+line u:splay -visibility off
+  723.48 -343.72
+  707.58 -345.49
+endline
+
+line u:splay -visibility off
+  723.48 -343.72
+  723.86 -344.03
+endline
+
+line u:splay -visibility off
+  723.48 -343.72
+  719.37 -345.72
+endline
+
+line u:splay -visibility off
+  723.48 -343.72
+  741.19 -333.82
+endline
+
+line u:splay -visibility off
+  723.48 -343.72
+  700.76 -366.6
+endline
+
+line u:splay -visibility off
+  723.48 -343.72
+  716.56 -318.92
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  750.61 -376.46
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  726.29 -390.63
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  730.19 -386.15
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  730.7 -383.91
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  757.57 -397.75
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  730.16 -386.39
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  714.75 -369.85
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  733.18 -389.18
+endline
+
+line u:splay -visibility off
+  729.13 -384.92
+  730.2 -386.0
+endline
+
+line u:splay -visibility off
+  769.6 -424.76
+  760.57 -430.93
+endline
+
+line u:splay -visibility off
+  769.6 -424.76
+  771.1 -423.89
+endline
+
+line u:splay -visibility off
+  769.6 -424.76
+  768.71 -425.46
+endline
+
+line u:splay -visibility off
+  769.6 -424.76
+  768.71 -423.76
+endline
+
+line u:splay -visibility off
+  769.6 -424.76
+  772.55 -433.54
+endline
+
+line u:splay -visibility off
+  769.07 -442.89
+  759.0 -442.0
+endline
+
+line u:splay -visibility off
+  769.07 -442.89
+  772.98 -443.76
+endline
+
+line u:splay -visibility off
+  769.07 -442.89
+  768.89 -444.03
+endline
+
+line u:splay -visibility off
+  763.15 -479.67
+  768.57 -483.52
+endline
+
+line u:splay -visibility off
+  763.15 -479.67
+  755.83 -477.5
+endline
+
+line u:splay -visibility off
+  763.15 -479.67
+  771.63 -483.01
+endline
+
+line u:splay -visibility off
+  763.15 -479.67
+  786.29 -451.74
+endline
+
+line u:splay -visibility off
+  763.15 -479.67
+  773.69 -477.78
+endline
+
+line u:splay -visibility off
+  763.15 -479.67
+  755.15 -496.35
+endline
+
+line u:splay -visibility off
+  756.34 -492.84
+  772.83 -504.53
+endline
+
+line u:splay -visibility off
+  756.34 -492.84
+  752.17 -493.24
+endline
+
+line u:splay -visibility off
+  756.34 -492.84
+  765.26 -500.59
+endline
+
+line u:splay -visibility off
+  756.34 -492.84
+  760.91 -481.92
+endline
+
+line u:splay -visibility off
+  756.34 -492.84
+  780.75 -480.0
+endline
+
+line u:splay -visibility off
+  756.34 -492.84
+  783.95 -499.67
+endline
+
+line u:splay -visibility off
+  786.26 -483.67
+  787.53 -497.54
+endline
+
+line u:splay -visibility off
+  786.26 -483.67
+  764.38 -473.55
+endline
+
+line u:splay -visibility off
+  786.26 -483.67
+  755.79 -480.05
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  793.12 -540.17
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  786.8 -511.96
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  803.65 -531.71
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  789.33 -529.41
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  799.97 -500.97
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  800.48 -514.58
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  791.54 -527.67
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  799.89 -516.74
+endline
+
+line u:splay -visibility off
+  788.37 -530.62
+  783.32 -516.46
+endline
+
+line u:splay -visibility off
+  762.82 -546.91
+  769.85 -560.12
+endline
+
+line u:splay -visibility off
+  762.82 -546.91
+  760.69 -542.75
+endline
+
+line u:splay -visibility off
+  762.82 -546.91
+  775.19 -539.05
+endline
+
+line u:splay -visibility off
+  762.82 -546.91
+  790.03 -540.93
+endline
+
+line u:splay -visibility off
+  762.82 -546.91
+  783.15 -549.18
+endline
+
+line u:splay -visibility off
+  762.82 -546.91
+  763.19 -563.2
+endline
+
+line u:splay -visibility off
+  759.65 -572.84
+  758.59 -571.71
+endline
+
+line u:splay -visibility off
+  759.65 -572.84
+  763.49 -578.25
+endline
+
+line u:splay -visibility off
+  759.65 -572.84
+  754.47 -594.13
+endline
+
+line u:splay -visibility off
+  759.65 -572.84
+  768.85 -537.76
+endline
+
+line u:splay -visibility off
+  759.65 -572.84
+  773.13 -568.98
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  779.9 -567.55
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  809.7 -582.47
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  806.73 -579.51
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  806.43 -579.45
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  809.17 -561.87
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  820.13 -570.18
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  789.67 -560.38
+endline
+
+line u:splay -visibility off
+  806.39 -579.14
+  802.33 -580.65
+endline
+
+line u:splay -visibility off
+  848.66 -572.57
+  845.95 -565.94
+endline
+
+line u:splay -visibility off
+  848.66 -572.57
+  851.81 -577.14
+endline
+
+line u:splay -visibility off
+  848.66 -572.57
+  860.82 -561.79
+endline
+
+line u:splay -visibility off
+  848.66 -572.57
+  855.52 -574.33
+endline
+
+line u:splay -visibility off
+  848.66 -572.57
+  830.58 -575.52
+endline
+
+line u:splay -visibility off
+  848.66 -572.57
+  848.97 -568.49
+endline
+
+line u:splay -visibility off
+  866.54 -574.92
+  868.8 -570.18
+endline
+
+line u:splay -visibility off
+  866.54 -574.92
+  867.3 -586.3
+endline
+
+line u:splay -visibility off
+  866.54 -574.92
+  871.12 -576.5
+endline
+
+line u:splay -visibility off
+  866.54 -574.92
+  837.53 -586.57
+endline
+
+line u:splay -visibility off
+  866.54 -574.92
+  881.41 -589.57
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  887.77 -571.91
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  887.32 -597.3
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  891.18 -585.17
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  860.49 -600.57
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  857.0 -583.41
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  883.16 -578.44
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  903.63 -577.1
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  910.6 -590.5
+endline
+
+line u:splay -visibility off
+  888.64 -593.11
+  888.75 -600.09
+endline
+
+line u:splay -visibility off
+  948.83 -560.56
+  948.79 -558.44
+endline
+
+line u:splay -visibility off
+  948.83 -560.56
+  948.1 -557.73
+endline
+
+line u:splay -visibility off
+  948.83 -560.56
+  948.35 -566.57
+endline
+
+line u:splay -visibility off
+  948.83 -560.56
+  943.28 -567.85
+endline
+
+line u:splay -visibility off
+  948.83 -560.56
+  955.19 -565.15
+endline
+
+line u:splay -visibility off
+  1018.6 -554.9
+  1017.29 -565.91
+endline
+
+line u:splay -visibility off
+  1018.6 -554.9
+  1014.34 -549.32
+endline
+
+line u:splay -visibility off
+  1018.6 -554.9
+  988.17 -551.2
+endline
+
+line u:splay -visibility off
+  1018.6 -554.9
+  988.72 -573.57
+endline
+
+line u:splay -visibility off
+  1018.6 -554.9
+  1018.54 -557.79
+endline
+
+line u:splay -visibility off
+  1022.17 -556.87
+  1018.45 -547.87
+endline
+
+line u:splay -visibility off
+  1022.17 -556.87
+  1023.76 -558.48
+endline
+
+line u:splay -visibility off
+  1022.17 -556.87
+  1026.2 -552.19
+endline
+
+line u:splay -visibility off
+  1022.17 -556.87
+  1025.41 -555.49
+endline
+
+line u:splay -visibility off
+  1109.86 -536.71
+  1108.79 -530.44
+endline
+
+line u:splay -visibility off
+  1109.86 -536.71
+  1110.35 -539.26
+endline
+
+line u:splay -visibility off
+  1109.86 -536.71
+  1112.08 -529.0
+endline
+
+line u:splay -visibility off
+  1158.76 -516.16
+  1157.84 -514.51
+endline
+
+line u:splay -visibility off
+  1158.76 -516.16
+  1152.19 -507.65
+endline
+
+line u:splay -visibility off
+  1158.76 -516.16
+  1159.69 -518.1
+endline
+
+line u:splay -visibility off
+  1158.76 -516.16
+  1156.17 -513.03
+endline
+
+line u:splay -visibility off
+  1158.76 -516.16
+  1171.4 -501.41
+endline
+
+line u:splay -visibility off
+  1158.76 -516.16
+  1143.86 -516.99
+endline
+
+line u:splay -visibility off
+  1186.5 -493.48
+  1185.95 -492.13
+endline
+
+line u:splay -visibility off
+  1186.5 -493.48
+  1187.05 -499.28
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1240.18 -461.96
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1238.51 -482.85
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1238.42 -470.53
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1267.93 -472.63
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1257.5 -487.37
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1233.7 -473.92
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1207.47 -476.09
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1209.34 -489.03
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1269.08 -487.8
+endline
+
+line u:splay -visibility off
+  1238.39 -473.34
+  1243.93 -476.0
+endline
+
+line u:splay -visibility off
+  1269.03 -487.65
+  1268.18 -486.56
+endline
+
+line u:splay -visibility off
+  1269.03 -487.65
+  1258.77 -464.42
+endline
+
+line u:splay -visibility off
+  1269.03 -487.65
+  1271.93 -491.49
+endline
+
+line u:splay -visibility off
+  1269.03 -487.65
+  1271.13 -481.79
+endline
+
+line u:splay -visibility off
+  1269.03 -487.65
+  1271.31 -488.16
+endline
+
+line u:splay -visibility off
+  1301.83 -444.99
+  1309.2 -454.9
+endline
+
+line u:splay -visibility off
+  1301.83 -444.99
+  1298.19 -442.08
+endline
+
+line u:splay -visibility off
+  1301.83 -444.99
+  1301.13 -445.4
+endline
+
+line u:splay -visibility off
+  1301.83 -444.99
+  1276.14 -460.25
+endline
+
+line u:splay -visibility off
+  1301.83 -444.99
+  1301.14 -445.41
+endline
+
+line u:splay -visibility off
+  1276.16 -460.61
+  1281.58 -463.48
+endline
+
+line u:splay -visibility off
+  1276.16 -460.61
+  1285.2 -463.66
+endline
+
+line u:splay -visibility off
+  1276.16 -460.61
+  1268.96 -460.03
+endline
+
+line u:splay -visibility off
+  1276.16 -460.61
+  1276.19 -461.01
+endline
+
+line u:splay -visibility off
+  1276.16 -460.61
+  1270.87 -468.73
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1278.77 -481.25
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1256.59 -476.35
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1272.69 -486.45
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1253.06 -473.84
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1253.05 -473.82
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1258.9 -487.12
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1247.58 -495.57
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1252.63 -471.2
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1252.66 -471.24
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1248.62 -430.46
+endline
+
+line u:splay -visibility off
+  1252.36 -472.66
+  1251.25 -471.61
+endline
+
+line u:splay -visibility off
+  1341.43 -425.54
+  1330.0 -422.79
+endline
+
+line u:splay -visibility off
+  1341.43 -425.54
+  1344.68 -427.37
+endline
+
+line u:splay -visibility off
+  1341.43 -425.54
+  1338.9 -426.42
+endline
+
+point 49.21 -59.06 station -name "PTRCHAP04"
+
+point 95.13 -144.18 station -name "1"
+
+point 108.12 -194.98 station -name "2"
+
+point 176.08 -270.31 station -name "3"
+
+point 105.14 -83.57 station -name "4"
+
+point 188.88 -94.07 station -name "5"
+
+point 263.10 -96.60 station -name "6"
+
+point 293.01 -96.39 station -name "7"
+
+point 362.28 -50.92 station -name "8"
+
+point 361.20 -130.32 station -name "9"
+
+point 410.64 -199.84 station -name "10"
+
+point 429.54 -228.10 station -name "PTRCHAPLR05"
+
+point 490.76 -287.18 station -name "12"
+
+point 517.85 -300.30 station -name "13"
+
+point 553.47 -391.44 station -name "14"
+
+point 524.83 -225.88 station -name "15"
+
+point 561.68 -213.79 station -name "16"
+
+point 629.96 -266.86 station -name "17"
+
+point 669.59 -260.22 station -name "PTRCHAPLR06"
+
+point 697.94 -205.85 station -name "19"
+
+point 692.26 -315.21 station -name "20"
+
+point 723.48 -343.72 station -name "21"
+
+point 729.13 -384.92 station -name "22"
+
+point 769.60 -424.76 station -name "23"
+
+point 769.07 -442.89 station -name "24"
+
+point 763.15 -479.67 station -name "25"
+
+point 756.34 -492.84 station -name "26"
+
+point 786.26 -483.67 station -name "PTRCHAPLR07"
+
+point 794.22 -535.91 station -name "28"
+
+point 788.37 -530.62 station -name "29"
+
+point 762.82 -546.91 station -name "30"
+
+point 759.65 -572.84 station -name "31"
+
+point 775.19 -603.88 station -name "32"
+
+point 748.94 -595.61 station -name "33"
+
+point 806.39 -579.14 station -name "34"
+
+point 848.66 -572.57 station -name "35"
+
+point 866.54 -574.92 station -name "36"
+
+point 888.64 -593.11 station -name "PTRCHAPLR08"
+
+point 948.83 -560.56 station -name "38"
+
+point 1018.60 -554.90 station -name "39"
+
+point 1022.17 -556.87 station -name "40"
+
+point 1023.69 -556.56 station -name "41"
+
+point 1109.86 -536.71 station -name "42"
+
+point 1158.76 -516.16 station -name "43"
+
+point 1186.50 -493.48 station -name "44"
+
+point 1238.39 -473.34 station -name "45"
+
+point 1269.03 -487.65 station -name "46"
+
+point 1301.83 -444.99 station -name "PTRCHAPLR10"
+
+point 1276.16 -460.61 station -name "48"
+
+point 1252.36 -472.66 station -name "PTRCHAPLR09"
+
+point 1211.05 -433.39 station -name "50"
+
+point 1258.45 -528.26 station -name "51"
+
+point 1341.43 -425.54 station -name "52"
+
+endscrap
+
+
+
+scrap MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p1 -projection plan -station-names "" "@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23" -author 2023 "Charlotte Honiat" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 9.8425 0 0 0 1 0 m]
+
+line chimney -close off -clip off
+  1252.89 -511.25
+  1267.68 -485.28 1273.6 -524.08 1259.31 -521.74
+  1255.26 -521.08 1255.03 -514.75 1252.89 -511.25
+  smooth off
+endline
+
+line chimney -clip off
+  1267.7 -542.02
+  1294.42 -542.1 1273.42 -574.73 1263.33 -555.43
+  1261.17 -551.3 1266.17 -546.55 1267.59 -542.11
+  smooth off
+endline
+
+line wall
+  1274.43 -455.32
+  1263.97 -462.51 1268.9 -459.8 1259.98 -464.04
+  smooth off
+endline
+
+line wall
+  1270.73 -494.77
+  1275.76 -485.83 1278.16 -479.64 1277.9 -469.41
+  smooth off
+endline
+
+line wall
+  1241.51 -473.4
+  1238.01 -484.9 1241.93 -492.08 1247.58 -501.78
+  smooth off
+endline
+
+line wall
+  1259.98 -464.04
+  1257.65 -453.54 1259.85 -434.67 1248.27 -428.16
+  1244.5 -426.04 1239.4 -428.63 1235.35 -427.12
+  1224.34 -423.02 1216.87 -411.05 1211.18 -401.59
+  smooth off
+endline
+
+line wall
+  1193.38 -425.93
+  1208.92 -443.94 1229.62 -452.47 1241.51 -473.4
+  smooth off
+endline
+
+line floor-meander
+  1199.27 -413.89
+  1210.44 -434.17 1230.39 -446.42 1243.62 -465.41
+  smooth off
+endline
+
+point 1188.67 -392.41 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "Sommet méandre remontant, est-ce le sommet de l'amont de la Majestueuse ?"
+
+point 1358.52 -398.65 continuation
+
+line floor-meander
+  1254.29 -493.2
+  1264.33 -515.94 1268.1 -540.63 1274.64 -564.49
+  smooth off
+endline
+
+point 1252.14 -473.74 stalactite -scale xs
+
+point 1229.15 -471.88 station-name -scale xs -align left
+
+point 1276.16 -460.61 station -name "48"
+
+point 1252.36 -472.66 station -name "PTRCHAPLR09"
+
+point 1211.05 -433.39 station -name "50"
+
+point 1258.45 -528.26 station -name "51"
+
+endscrap
+
+
+
+scrap SP-Yougo2023-1 -projection plan -station-names "" "@MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23" -author 2023 "Charlotte Honiat" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [0 0 9.8425 0 0 0 1 0 m]
+
+line wall
+  799.74 -539.29
+  791.62 -521.76 796.77 -499.78 786.37 -483.58
+  smooth off
+endline
+
+line wall
+  780.37 -489.5
+  781.67 -489.7 783.41 -489.11 784.28 -490.1
+  790.51 -497.22 791.45 -529.09 794.6 -539.83
+  smooth off
+endline
+
+point 786.26 -483.67 station -name "PTRCHAPLR07"
+
+point 794.22 -535.91 station -name "28"
+
+point 803.91 -550.35 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Yougoslaves" -text "éandre descendant, à voir"
+
+endscrap
+
+

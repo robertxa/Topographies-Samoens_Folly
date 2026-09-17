@@ -1,0 +1,43 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey Amont-Majestueuse -title "Gouffre Mirolda - Amont Majestueuse"
+	# Pour importer les différentes données de différents fichiers topos : 
+	
+	# Données levées en été 2023
+	input Data/majamonts2023.th
+	# Amont de la majestueuse de la jonction vers le Puits Belge
+	input Data/MajAmont2024.th
+		equate PTRJMLDXR01@MajAmonts2024 PTRJMLDXR01@majamonts2023
+	input Data/amont_puits_belge.th
+		equate 0@amont-puits-belge 77@MajAmonts2024
+
+	## Old data from D. Colliard
+	#input Data/Amont-Majestueuse.th
+	#	equate 773@Amont-Majestueuse PTRMAXR04@majamonts2023
+	#input Data/Yougo-Cavernicoles.th
+	#	equate 80@Yougo-Cavernicoles PTRJMLDXR01@majamonts2023
+
+	# Import du dessin en plan
+	input Data/majamonts2023.th2
+	input Data/MajAmont2024.th2
+		join SP-majamonts2024-1 SP-Maj-Amonts-1
+	input Data/amont_puits_belge.th2
+		join SP-MajAmont2024Dav-1 SP-majamonts2024-6
+
+	# Import du dessin en coupe
+	input Data/majamonts2023-coupe.th2
+	input Data/MajAmont2024-coupe.th2
+		# Jonction de la Majestueuse au niveau de La Jonction
+		join SC-MajAmonts2024-1 SC-Maj-Amonts-1
+	input Data/amont_puits_belge-coupe.th2
+		join SC-MajAmont2024Dav-1 SC-MajAmonts2024-2
+
+	# Import des maps
+	input Amont-Majestueuse-maps.th
+ 
+ endsurvey
+ 

@@ -1,0 +1,144 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+map MP-Yougo-Entree -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	SP-Cabane-1
+	break
+	SP-Cabane-2
+	break
+	SP-Cabane-2024-1
+	break
+	SP-Yougo-1
+	break
+	SP-Yougo-2
+endmap
+
+map MP-Yougo-Cabane -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	SP-AffluentCabaneAmont_290824-1
+	break
+	SP-Cabane-1
+	break
+	SP-Cabane-2024-1
+	#break
+	#SP-Cabane-2024-2-1
+	#break
+	#SP-Cabane-2024-2-2
+endmap
+
+map MP-Yougo-Cabane2 -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	SP-Cabane-2024-2-1
+	break
+	SP-Cabane-2024-2-2
+endmap
+
+map MP-Yougo-Amonts -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	SP-ptsNoir-2
+	break
+	SP-ptsNoir-1
+	break
+	MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p
+	break
+	SP-Yougo2023-1
+	break
+	MIROLDA_CHAPLR_YOUGOSLAVE_30-08-23-1p1
+	break
+	SP_YOUGOSLAVE_29-08-23-1p1	# Retour vers le sommet du P10
+	break
+	SP_YOUGOSLAVE_29-08-23-1p
+	
+endmap
+
+map MP-Enfoire -title "Gouffre Mirolda : Diaclase rectiligne de l'Enfoiré"
+	SP-Yougo2024-2
+	break
+	SP-Yougo2024-1
+	break
+	SP-Enfoire2023-6
+	break
+	SP-Enfoire2023-5
+	break
+	SP-Enfoire2023-4
+	break
+	SP-Enfoire2023-3
+	break
+	SP-Enfoire2023-2
+	break
+	SP-Enfoire2023-1
+endmap
+
+map MP-Yougo-plan-tot -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	MP-Enfoire
+	break
+	MP-Yougo-Amonts
+	break
+	MP-Yougo-Cabane
+	break
+	MP-Yougo-Entree
+endmap
+
+#####################
+
+map MC-Yougo-coupe-tot -title "Gouffre Mirolda - Réseau des Yougoslaves"
+	AffluentCabaneAmont_290824-1s
+	break
+	SC-YougoAmont2024-1
+	break
+	SC-Enfoire-1
+	break
+	SC-Enfoire-2
+	break
+	SC-Enfoire-3
+	break
+	SC-Enfoire-6
+	break
+	SC-Enfoire-4
+	break
+	SC-Enfoire-5
+	break
+	# La salle du Pilier et le Puits Noir
+	SC-ptsNoir-1
+	break
+	SC-ptsNoir-2
+	break
+	SC-ptsNoir-4
+	break
+	SC-ptsNoir-3
+	break
+	SC-ptsNoir-3a
+	break
+	SC-ptsNoir-3b
+	break
+	SC-ptsNoir-4a
+	break
+	SC-ptsNoir-4b
+	break
+	SC-ptsNoir-4c
+	break
+	SC-YOUGOSLAVE_30-08-23-1s
+	break
+	SC-YougoJ-1
+	break
+	SC-YOUGOSLAVE_29-08-23-1s
+	break
+	SC-YOUGOSLAVE_29-08-23-1s1
+	break
+	SC-Yougo-ChauveS-1
+	break
+	SC-Yougo-1
+	break
+	#AffluentCabaneAmont_290824-1s   # [Note Alex: NOK modifier]
+	#break
+	SC-Cabane-2
+	break
+	SC-Cabane-1
+	break
+	SC-Cabane-2024-1
+	break
+	SC-Cabane2-1
+	break
+	SC-Cabane2-2
+endmap
+

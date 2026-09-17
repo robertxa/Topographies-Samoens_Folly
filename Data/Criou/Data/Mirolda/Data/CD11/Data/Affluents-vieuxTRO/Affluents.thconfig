@@ -1,0 +1,294 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+# INTRO
+
+# le signe "#" en début de ligne signifie que la ligne est commentée. Elle ne
+# sera donc pas lue lors de la compilation. 
+
+# Dans ce fichier on met les specifications generales, à savoir
+# dans quel fichier sont les donnees topo, l'aspect que l'on veut
+# donner aux topos imprimees (layout) et ce que l'on 
+# veut comme resultat : map, ou atlas ou 3D ou donnees en format SQL
+
+# Alors, on peut fractioner ce fichier en trois parts:
+# - source, pour specifier les fichiers ou sont les données topo/dessin
+# - layout, pour specifier la composition du document à imprimer
+# - export: map, atlas, etc
+
+
+# 1-SOURCES 
+# La ligne source specifie le fichier ou sont les donnees topo
+# jb.th". (Au fichier "jb.th" il faudra avoir une ligne 
+# "input "nomducavite.th2" pour specifier le fichier ou se trouvent
+# les donnees du dessin, comme ça, ce fichier thconfig appellera 
+# "jb.th" et a leur tour, "jb.th" appellera
+# "jb-dessin.th2")
+source CD11-tot.th
+
+# Add Coordinates
+#input legendes/entrances_coordinates.th
+
+# Add config file
+input ../../../../../../config.thc 
+  
+ # 2-LAYOUT
+# Ici, on peut specifier des choses comme les symboles à utiliser (UIS, etc)
+# ou imprimer des explications des symboles
+
+# Debut de la definition du Layout "xviexport"
+layout xviexport
+	#cs UTM32
+	# echelle à laquelle on veut dessiner la topo
+	scale 1 500
+	#scale 1 1000
+	# taille de la grille
+	grid-size 10 10 10 m
+	# mettre la grille en arrière plan
+	grid bottom
+endlayout
+# fin de la définition du layout "xviexport" 
+
+#debut de la definition du layout "my_layout"
+layout my_layout
+
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl 
+	copy langue-fr
+	
+  # Définition du système de projection du plan
+  cs UTM32
+  
+  # La ligne base-scale specifie l'échelle auquel nous avons dessiné nos croquis. 
+  # Par defaut, Therion pense que c'est une échelle 1:200. Si on a utilisé une autre échelle, 
+  # il faut enlever le "#" et spécifier l'échelle vraiment employée, comme c'est le cas
+  # après avoir dessiné la topo sur un cheminement exporté avec le layout "xviexport".
+  # Jouer avec le ration base-scale/scale permet de jouer globalement sur les tailles
+  # des caractères et des traits.
+  base-scale 1 1000
+
+  # Maitenant on va mettre une ligne "scale" pour specifier l'échelle pour imprimer la topo.
+  # La combination entre scale et base-scale controlle l'épaisseur des lignes, rotation, etc, convenable
+  # pour faire l'ampliation-réduction entre dessin et le resultat de l'imprimante
+  # C'est tres important s'assurer que la configuration de l'imprimante ne specifie pas l'option "Fit in page"
+  # ou similaire, sinon, l'échelle sera changée pendant l'impression! 
+  scale 1 1000
+
+  # Echelle graphique 100 m ampleur (Généralement, le choix scale/10 est plutôt pas mal)
+  scale-bar 100 m
+
+  # Voici une ligne pour specifier qu'il faut imprimer une grille au dessous de la topo
+  #grid bottom
+  grid off
+  # Une ligne pour specifier que la grille est 1000x1000x1000 m
+  # (Trois dimensions, oui, ça sert pour la coupe aussi)
+  #grid-size 250 250 250 m  
+  
+  # la topo est transparente (on peut voir les galeries sousjacentes)
+  # C'est on par défaut, donc, pas vraiment besoin de specifier
+  transparency on
+  
+  # Couleur de la topographie
+  color map-fg [100 100 80]
+
+  # ça marche seulement si transparency est "on" 90% blanc= 10% noir
+  opacity 75
+  
+  
+  surface bottom
+  surface-opacity 100
+  
+  # Auteur 
+  doc-author "Xavier Robert"
+  # Titule
+  doc-title "CD11 plan - 1:1000"
+
+  # Maitenant on spécifie la position de la manchette, dont l'interieur est ocuppé par le titule, auteurs, etc.
+  # Nous pouvons indiquer les cordonnées du point de la topo ou l'on veut la manchette :
+  # 0 0, c'est en bas, à gauche, 100 100, c'est en haut, à droite
+  # La manchette a des "points cardinaux" autour : n, s, ne, sw, etc.
+  # Il faut specifier un de ces points comme ce que sera placé sur les cordonnées.
+  # Alors nous pouvons specifier que le sud-ouest de la manchette soit placé en bas, a gauche,
+  # ou une autre combination...
+  map-header 0 -100 nw
+
+  # arrière plan de la manchette
+  map-header-bg on
+  
+  # Légende pour expliciter les symboles. "on" imprimera seulement la legende des symboles dessinés
+  # sur la topo. Si l'on veut pour tous les symboles, utilisés ou pas, il faut indiquer "all".
+  # "legend off" = pas de legende
+  legend on
+
+  # Par défaut, la légende est de 14 cm de largeur
+  legend-width 21 cm
+
+  # Un commentaire à ajounter au titule, on pourrait indiquer ici la mairie où est placée la cavité
+  # dont le nom est probablement le titule de la topo.
+  map-comment "Massif du Criou, Samoëns, 74, France"
+ 
+  # Afficher les statistiques d'explo/topo par équipe/nom. C'est lourd
+  # si la cavité est importante et qu'il y a beaucoup d'explorateurs/topogrpahes.
+  statistics explo-length off
+  statistics topo-length off
+  
+  # Afficher un copyright
+  statistics copyright 2
+  
+  # Dessin ou pas du cheminement topo
+  #symbol-hide point station        
+  #debug scrap-names
+  debug station-names
+  #symbol-hide line survey
+
+  layers on
+
+	# Modification du Titre de la topo
+	code tex-map
+		% Output map title as determined by Therion is stored in cavename, défini par la une Map. 
+		% It will be empty if there are multiple maps selected for any one projection
+		% AND there are multiple source surveys identified in the thconfig file 
+		% ie Therion can not infer a unique title from the input data given.
+		% This code allows you to define an output map title {cavename} if it happens to be empty
+		\edef\temp{\the\cavename}        % cavename from Therion   
+		\edef\nostring{}                 % empty string 
+		\ifx\temp\nostring             % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Mirolda - Entrée CD11} 
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Collectif Mirolda 2022}
+		%\newtoks\synth \synth={Xavier Robert}
+	endcode   
+  
+ endlayout
+# Fin de la definition du Layout "normal"
+
+
+
+layout layout-coupe
+	
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe 
+	copy langue-fr
+	
+  #cs UTM32
+  
+  # La ligne base-scale specifie l'echelle auquel nous avons
+  # dessine nos croquis. Voir layout ci-dessus.
+  base-scale 1 1000
+
+  # scale : pour specifier l'echelle pour imprimer la topo.  Voir layout ci-dessus.
+  scale 1 1500
+
+  # echelle graphique 150 m ampleur
+  scale-bar 150 m
+
+  # Une grille ?
+  #grid-size 250 250 250 m  
+  grid off
+ 
+  # la topo est transparente
+  transparency on
+  
+  # Couleur de la topo
+  color map-fg [100 100 80]
+
+  # ça marche seulement si transparency est "on" 90% blanc= 10% noir
+  opacity 75
+    
+  # Auteur 
+  doc-author "Xavier Robert"
+  # Titule
+  doc-title "CD11 coupe développée - 1:1000"
+
+  # Position de la manchette. Voir layout ci-dessus.
+  map-header 0 -50 nw
+
+  # arrière plan de la manchette
+  map-header-bg on
+  
+  # Légende. Voir layout ci-dessus.
+  legend on
+
+  # Par defaut, la legende est de 14 cm de largeur
+  legend-width 19 cm
+
+  # Un commentaire a ajouter au titule. Voir layout ci-dessus.
+  map-comment "Massif du Criou, Samoëns, 74, France"
+ 
+  # Afficher les statistiques d'explo/topo par équipe/nom.
+  statistics explo-length off
+  statistics topo-length off
+  
+  # Afficher un copyright
+  statistics copyright 2
+  
+  # Dessin ou pas du cheminement topo
+  #symbol-hide point station        
+  #debug scrap-names
+  debug station-names
+  #symbol-hide line survey
+  
+  layers on
+                
+	# Titre                         
+	code tex-map
+		\edef\temp{\the\cavename}        % cavename from Therion   
+		\edef\nostring{}                 % empty string 
+		\ifx\temp\nostring             % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre Mirolda - Entrée CD11} 
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		\newtoks\club \club={Collectif Mirolda 2022}
+		%\newtoks\synth \synth={Xavier Robert}		
+	endcode   
+
+ endlayout
+# Fin de la definition du Layout "normal"
+
+
+
+
+# 3-EXPORT
+
+# Export des xvi pour le dessin si besoin
+#export map -fmt xvi -layout xviexport -o Data/CD11-map.xvi
+#export map -proj extended -layout xviexport -fmt xvi -o Data/CD11-coupe.xvi
+
+# Selection des Maps à exporter
+select MP-CD11-plan-tot@CD11
+select MC-CD11-coupe-tot@CD11
+
+# Export des fichiers pdf, plan et coupe. 
+# ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
+ export map -proj plan -fmt pdf -o Outputs/Criou-2022-plan.pdf -layout my_layout
+ export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Criou-2022-coupe.pdf
+#export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
+
+# Export du fichier 3d pour Loch
+ export model -enable all -o Outputs/CD11-2022.lox
+
+# Export des fichiers ESRI
+# export map -proj plan -fmt esri -o Outputs/CD11-2022 -layout my_layout
+
+# Export des fichiers kml
+# export map -proj plan -fmt kml -o Outputs/CD11-2022.kml -layout my_layout
+ export model -fmt kml -o Outputs/CD11-2022-model.kml -enable all
+
+# Export de la database sql
+# export des statistiques de l'ensemble de la cavité
+#    Attention, les points de départ et d'arrivée de chaque centreline correspondent
+#    au second point et à l'avant dernier point de la série.
+#export database -fmt sql -o Outputs/databaseCD11-2022.sql
+
+#export continuation-list -o Outputs/ContinuationsCD11-2022.html
+##export continuation-list -o Outputs/ContinuationsCD11-2022.kml
+#export survey-list -location on -o Outputs/SurveysCD112022.html
+##export cave-list -location on -o Outputs/CavesCD112022.html
