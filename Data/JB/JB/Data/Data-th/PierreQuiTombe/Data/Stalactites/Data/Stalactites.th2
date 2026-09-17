@@ -9,7 +9,7 @@ scrap SP-Stalactites-1 -projection plan -station-names "" "@Stalactites" -author
 
 point 388.75 334.5 stalactites
 
-line wall
+line wall -outline in
   339.0 206.0
   339.0 206.0 338.5 208.5 336.0 210.25
   333.5 212.0 327.25 213.0 328.25 208.75
@@ -18,7 +18,7 @@ line wall
   smooth off
 endline
 
-line wall -subtype unsurveyed
+line wall -subtype unsurveyed -outline in
   344.0 266.75
   344.0 266.75 346.0 248.0 345.25 239.25
   344.5 230.5 340.25 214.75 340.0 212.0
@@ -159,41 +159,48 @@ line wall
   350.5 162.0
   350.5 162.0 366.5 161.5 363.5 170.5
   360.5 179.5 357.0 192.5 345.5 200.0
+  smooth off
 endline
 
-line wall
+line wall -outline in
   313.5 217.25
   313.5 217.25 327.25 219.5 327.0 222.0
   326.75 224.5 325.75 224.0 321.75 224.0
   317.75 224.0 316.75 224.0 316.5 226.0
+  smooth off
 endline
 
-line wall
+line wall -outline in
   327.25 196.0
   315.75 203.5 309.5 198.25 300.5 202.25
   291.5 206.25 304.85 215.68 313.5 217.25
+  smooth off
 endline
 
 line pit
   332.25 283.0
   332.25 283.0 330.25 285.0 321.25 283.0
+  smooth off
 endline
 
 line pit -reverse on
   339.25 267.25
   339.25 267.25 350.0 270.75 353.5 270.75
+  smooth off
 endline
 
 line wall
   351.0 268.25
   351.0 268.25 350.5 273.75 354.75 275.75
+  smooth off
 endline
 
-line wall
+line wall -outline in
   316.5 226.0
   322.0 238.5 326.0 244.5 327.5 254.5
   329.0 264.5 325.0 268.75 332.25 269.75
   339.5 270.75 339.0 268.0 344.0 266.75
+  smooth off
 endline
 
 area clay
@@ -360,6 +367,7 @@ line wall
   419.44 130.23 405.0 123.53 411.5 127.5
   420.5 133.0 403.0 135.75 397.0 137.75
   391.0 139.75 385.25 139.0 378.0 142.25
+  smooth off
 endline
 
 point 322.75 108.5 height -value [-2 m]
@@ -367,6 +375,7 @@ point 322.75 108.5 height -value [-2 m]
 line pit
   345.5 126.25
   345.5 126.25 353.25 132.25 349.75 139.25
+  smooth off
 endline
 
 line wall
@@ -416,6 +425,7 @@ line wall -outline in
   384.5 128.5
   384.5 128.5 391.0 134.0 395.0 129.5
   399.0 125.0 406.5 120.75 401.75 120.75
+  smooth off
 endline
 
 line wall -outline in -subtype unsurveyed
