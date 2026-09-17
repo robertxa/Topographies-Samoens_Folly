@@ -1,0 +1,25 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey PuitsParalleles -title "Gouffre Amine Dada - FLT7 - Puits Paralleles"
+
+ centerline -extend right
+    
+    date 1984.04.08
+        team "Bernard Duffour"
+        team "Patrick Loiseau"
+        team "Jacques Gudefin"
+    explo-date 1984.04.08
+        explo-team "Bernard Duffour"
+        explo-team "Patrick Loiseau"
+        explo-team "Jacques Gudefin"
+        #explo-team "Club/Ursus"
+
+  
+endcenterline
+
+ endsurvey
