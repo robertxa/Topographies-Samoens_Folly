@@ -1,0 +1,83 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Tremie -title "VF3 - Mirolda - Réseau Lucien Bouclier - g. de la Trémie"
+
+centerline -extend right    
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#VF3-4-11	VF3-4-11	0	0	-90	# a partir du P40 
+VF3-4-11	VF3-8-1	0.99	255	14.4	# galerie sup.fossile   [Note Alex : Raccord VF3-4-11]
+VF3-8-1	VF3-8-2	4.51	184	27	
+VF3-8-2	VF3-8-3	1.83	198	-11.7	
+VF3-8-3	VF3-8-4	9.62	0	-90	# remontee vert.
+VF3-8-4	VF3-8-5	12.35	194	-9.9	
+VF3-8-5	VF3-8-6	12.99	286	-8.1	
+VF3-8-6	VF3-8-7	4.95	310	27.9	
+VF3-8-7	VF3-8-8	3.43	277	-3.6	
+VF3-8-8	VF3-8-10	8.9	257	22.5	# station 10
+VF3-8-10	VF3-8-11	7.67	249	-26.1	
+VF3-8-11	VF3-8-12	4.5	222	-7.2	
+VF3-8-12	VF3-8-13	5.78	230	27	
+VF3-8-13	VF3-8-14	5.83	329	-3.6	
+VF3-8-14	VF3-8-15	11.67	246	3.6	
+VF3-8-15	VF3-8-16	8.28	213	0	
+VF3-8-16	VF3-8-17	8.49	212	-6.3	
+VF3-8-17	VF3-8-18	7.36	210	23.4	
+VF3-8-18	VF3-8-19	13.34	184	-0.9	
+VF3-8-19	VF3-8-20	3.03	279	-7.2	
+VF3-8-20	VF3-8-21	6.75	208	7.2	
+VF3-8-21	VF3-8-22	16.57	190	27.9	
+VF3-8-22	VF3-8-23	5.48	250	11.7	
+VF3-8-23	VF3-8-24	10.38	232	12.6	
+VF3-8-24	VF3-8-25	13.62	217	22.5	
+VF3-8-25	VF3-8-26	3.94	187	1.8	
+VF3-8-26	VF3-8-27	4.49	105	23.4	
+VF3-8-27	VF3-8-28	11.99	208	33.3	
+VF3-8-28	VF3-8-29	22.61	196	34.2	
+VF3-8-29	VF3-8-30	6.35	205	25.2	
+VF3-8-30	VF3-8-31	11.6	218	28.4	
+VF3-8-31	VF3-8-32	6.62	257	4.5	
+VF3-8-32	VF3-8-33	13.82	207	18.9	
+endcenterline
+
+centerline -extend right    
+    
+    #date 2021.08.12
+    #    team "Xavier Robert"
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+#VF3-8-24	VF3-8-24	0	0	-90	# recoupement de la station 24 à la station 20
+VF3-8-24	VF3-8-24b	20.65	335	-26.1	
+VF3-8-24b	VF3-8-25b	4.42	2	-28.8	
+VF3-8-25b	VF3-8-26b	6.31	50	-28.8	
+VF3-8-26b	VF3-8-27b	6.6	78	-9.9	
+VF3-8-27b	VF3-8-28b	7.98	58	3.6	
+VF3-8-28b	VF3-8-29b	9.63	126	36	
+VF3-8-29b	VF3-8-20	1.2	56	0	            #  [Note Alex : raccord fermeture boucle sur VF-8-20]
+endcenterline
+
+endsurvey

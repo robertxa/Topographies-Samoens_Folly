@@ -1,0 +1,31 @@
+encoding  utf-8
+
+# Copyright (C) 2023 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+map MP-Chauves-Souris-plan-tot -title "Galerie des Chauves-Souris"
+	SP-Chauves-Souris-2
+	break
+	SP-Chauves-Souris-3
+	break
+	SP-Chauves-Souris-1
+endmap
+
+
+map MC-Chauves-Souris-1
+	SC-Chauves-Souris-1
+	break
+	SC-Chauves-Souris-2
+endmap
+
+map MC-Chauves-Souris-2
+	SC-Chauves-Souris-3
+endmap
+
+map MC-Chauves-Souris-coupe-tot -title "Galerie des Chauves-Souris"
+	MC-Chauves-Souris-1
+	break
+	MC-Chauves-Souris-2
+endmap
+   

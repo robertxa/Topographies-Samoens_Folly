@@ -1,0 +1,169 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey Hongroise -title "Galerie Hongroise - Réseau Lucien Bouclier - Mirolda"
+
+centerline -extend right          # [Note Alex: Ajout]
+
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+    
+    units length meters
+    units compass clino degrees
+    data normal from to length backcompass clino
+        VF3-ST-0	VF3-1	2.86 	 46.0   	 26.0   	# galerie hongroise  [Note Alex: Raccord ???]
+        VF3-1	VF3-2	4.75 	 19.0   	-30.0   	
+        VF3-2	VF3-3	4.75 	 53.0   	-44.0   	
+        VF3-3	VF3-4	3.33 	 99.0   	-22.0   	
+        VF3-4	VF3-5	3.33 	 83.0   	-27.0   	
+        VF3-5	VF3-6	3.33 	 67.0   	-31.0   	
+        VF3-6	VF3-7	4.95 	 84.0   	-22.0   	
+        VF3-7	VF3-8	8.67 	 135.0   	 1.0   	
+        VF3-8	VF3-9	5.96 	 138.0   	 6.0   	
+        VF3-9	VF3-10	5.7 	 56.0   	-27.0   	
+        VF3-10	VF3-11	5.7 	 76.0   	-21.0   	
+        VF3-11	VF3-12	5.7 	 51.0   	-19.0   	
+        VF3-12	VF3-13	5.7 	 65.0   	-15.0   	
+        VF3-13	VF3-14	10.27 	 72.0   	-10.0   	
+        VF3-14	VF3-15	10.27 	 93.0   	-9.0   	
+        VF3-15	VF3-16	1.34 	 90.0   	-6.0   	
+        VF3-16	VF3-17	1.34 	 102.0   	-5.0   	
+        VF3-17	VF3-18	1.34 	 93.0   	-6.0   	
+        VF3-18	VF3-19	3.33 	 121.0   	 6.0   	
+        VF3-19	VF3-20	7.33 	 55.0   	-15.0   	
+        VF3-20 	VF3-ST-21	1.28 	 107.0   	 4.0   	# commenté par Xav   	
+        VF3-ST-21	VF3-22	7.61 	 139.0   	 6.0   	    # commenté par Xav   	
+        #VF3-20 	VF3-21C	1.28 	 107.0   	 4.0        # modifé par Xav   	
+        #VF3-21C	VF3-22	7.61 	 139.0   	 6.0        # modifé par Xav   	
+        VF3-22	VF3-23	7.61 	 165.0   	 24.0   	
+        VF3-23	VF3-24	7.61 	 208.0   	 22.0   	
+        VF3-24	VF3-25	7.61 	 161.0   	 24.0   	# commenté par Xav
+        #VF3-24	VF3-21	7.61 	 161.0   	 24.0        # modifé par Xav   	
+
+        VF3-ST-21	VF3-21B	7.61 	 000.0     	-90.0   	 # à partir de 21
+        VF3-21B	VF3-26	10.53 	 225.0   	 56.0   	
+        VF3-26	VF3-27	0 	 230.0   	 14.0   	
+        VF3-27	VF3-28	4.18 	 228.0   	 48.0   	
+        VF3-28	VF3-29	8.83 	 228.0   	 25.0   	
+        VF3-29	VF3-30	6.19 	 226.0   	 24.0   	
+        VF3-30	VF3-31	6.19 	 230.0   	 21.0   	
+        VF3-31	VF3-32	6.19 	 202.0   	 26.0   	
+        VF3-32	VF3_Erreur	0.7 	 195.0   	 44.0   	# arrivée à station 60  [Note Alex: Raccord ??? à voir]
+        #VF3-32	VF3-ST-21	0.7 	 195.0   	 44.0   	# Modifié par Xav
+endcenterline
+
+		
+centerline -extend right     # [Note Alex: Ajout]
+    
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+        VF3-ST-65	VF3-A1	13.6 	 341.0   	-14.0   	# à partir de 65 ; Xav : Pour moi, cette jonction va bien
+        VF3-A1	VF3-A2	17.49 	 317.0   	-14.0   	
+        VF3-A2	VF3-A3	7.14 	 300.0   	-13.1   	
+        VF3-A3	VF3-A4	13.94 	 318.0   	-12.2   	
+        VF3-A4	VF3-A5	4.53 	 282.0   	 3.2   	
+        VF3-A5	VF3-A6	4.06 	 304.0   	-17.6   	
+        VF3-A6	VF3-ST-66	7.08 	 263.0   	 2.3   	# On dirait que le point VF3-66 est le point de départ des réseaux Sado-Bozzo et Combattants
+endcenterline
+
+			 
+centerline -extend right    # [Note Alex: Ajout]
+    
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino			 
+        VF3-ST-65	VF3-B1	2.03 	 226.0   	 33.8   	#Station 65
+        VF3-B1	VF3-B2	3.12 	 294.0   	 14.9   	
+        VF3-B2	VF3-67	5.41 	 237.0   	 27.5   	
+        VF3-67	VF3-B3	9.24 	 119.0   	 3.2   	
+        VF3-B3	VF3-68	5.27 	 149.0   	 10.4   	
+        VF3-68	VF3-B4	6.18 	 89.0   	-8.6   	
+        VF3-B4	VF3-B5	9.24 	 126.0   	 5.9   	
+        VF3-B5	VF3-B6	4.87 	 130.0   	 19.4   	
+        VF3-B6	VF3-B7	5.09 	 78.0   	-20.3   	
+        VF3-B7	VF3-B8	4.61 	 68.0   	-15.8   	
+        VF3-B8	VF3-B9	4.06 	 55.0   	-26.1   	
+        VF3-B9	VF3-B10	5.06 	 28.0   	-23.4   	
+        VF3-B10	VF3-ST-21	5.77 	 46.0   	-10.4   	# Arrivée à st.21 
+endcenterline
+
+				
+centerline -extend right    # [Note Alex: Ajout]
+    
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino							
+        VF3-25	VF3-C1	9.91 	 92.0   	 59.0   	# à partir de 25
+        VF3-C1	VF3-C2	13.09 	 234.0   	 1.4   	
+        VF3-C2	VF3-70	14.36 	 239.0   	 14.0   	
+        VF3-70	VF3-C3	2.26 	 0     	-90.0   	
+        VF3-C3	VF3-71	7.03 	 242.0   	 30.2   	
+        VF3-71	VF3-C4	3.47 	 323.0   	-23.9   	
+        VF3-C4	VF3-C5	7.79 	 7.0   	-41.9   	
+        VF3-C5	VF3-C6	5.21 	 26.0   	-23.0   	
+        VF3-C6	VF3-C7	1.21 	 44.0   	 6.8   	
+        VF3-C7	VF3-C8	4.5 	 131.0   	 68.0   	
+        VF3-C8	VF3-72	4.99 	 59.0   	-3.1   	
+        VF3-72	VF3-73	7.12 	 41.0   	-27.5   	
+endcenterline
+
+centerline -extend right     # [Note Alex: Ajout]
+    
+    date 1995
+        #team "Xavier Robert"
+    explo-date 1972
+        explo-team "Equipe d'Exploration Spéléo de/Villefranche sur Saône"
+    explo-date 1978
+        explo-team "Groupe Spéléo/Ursus"
+
+    units length meters
+    units compass clino degrees
+    data normal from to length compass backclino
+        #VF3-71	VF3-D1	7.03 	 0     	 30.2   	# à partir de 71
+        VF3-D0	VF3-D1	7.03 	 0     	 30.2   	# à partir de 71 ; Modifié par Xav
+        VF3-D1	VF3-D2	7.03 	 232.0   	 40.1   	
+        VF3-D2	VF3-D3	2.49 	 269.0   	-11.3   	
+        VF3-D3	VF3-D4	9.14 	 179.0   	 27.5   	
+        VF3-D4	VF3-D5	16.13 	 201.0   	 39.2   	
+        VF3-D5	VF3-74	5.83 	 232.0   	 15.8   	
+        VF3-74	VF3-D6	5.5 	 243.0   	 22.1   	
+        VF3-D6	VF3-D7	5.36 	 177.0   	 30.2   	
+        VF3-D7	VF3-D8	3.85 	 202.0   	 15.8   	
+        VF3-D8	VF3-D9	2.58 	 249.0   	 10.4   	
+        VF3-D9	VF3-D10	2.75 	 233.0   	 15.8   	
+        VF3-D10	VF3-D11	5.4 	 305.0   	-14.0   	
+        #VF3-D11	VF3-D12	2.8 	 286.0   	 32.0   #	station 0 [Note Alex: Raccord à voir ???]
+        VF3-D11	VF3-ST-0	2.8 	 286.0   	 32.0   # Modifé par Xav
+endcenterline
+
+endsurvey
