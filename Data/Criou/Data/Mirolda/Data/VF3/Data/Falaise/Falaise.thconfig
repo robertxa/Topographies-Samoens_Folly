@@ -30,7 +30,7 @@ encoding  utf-8
 source Falaise-tot.th
 
 # Add Coordinates
-input legendes/entrances_coordinates.th
+#input legendes/entrances_coordinates.th
 
 # Add config file
 input ../../../../../../config.thc 
@@ -55,7 +55,7 @@ endlayout
 #debut de la definition du layout "my_layout"
 layout my_layout
 
-  copy Coords_Header_Falaise
+  #copy Coords_Header_Falaise
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl 
@@ -156,7 +156,7 @@ layout my_layout
 
 layout layout-coupe
 	
-  copy Coords_Header_Falaise
+  #copy Coords_Header_Falaise
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe 
@@ -240,7 +240,7 @@ select MC-Falaise-coupe-tot@Falaise
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
-# export map -proj plan -fmt pdf -o Outputs/Falaise-plan.pdf -layout my_layout
+ export map -proj plan -fmt pdf -o Outputs/Falaise-plan.pdf -layout my_layout
  export map -projection extended -fmt pdf -layout layout-coupe -o Outputs/Falaise-coupe.pdf
 #export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 

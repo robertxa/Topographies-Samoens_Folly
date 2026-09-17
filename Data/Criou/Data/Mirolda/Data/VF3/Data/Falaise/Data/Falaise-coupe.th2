@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128.75 -128.75 2096.505 757.9216
+##XTHERION## xth_me_area_adjust -128.00000000000003 -128.0 2096.505 757.9216
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {784.4 1 1.0} {393.704 s31_5} Falaise-coupe.xvi 0 {}
 
@@ -24,6 +24,7 @@ line border
   281.5 440.75
   281.5 440.75 288.5 441.5 293.5 440.75
   298.5 440.0 303.75 436.75 309.25 436.75
+  smooth off
 endline
 
 line wall -subtype invisible
@@ -93,6 +94,7 @@ line wall -subtype invisible
   236.25 462.25
   236.25 462.25 230.75 461.5 228.0 455.75
   225.25 450.0 227.75 447.75 228.5 446.0
+  smooth off
 endline
 
 line wall
@@ -114,6 +116,7 @@ line wall -outline none -clip off
   237.25 513.25 239.75 515.0 240.0 518.5
   240.25 522.0 239.75 529.75 238.25 536.25
   236.75 542.75 241.5 549.5 241.0 557.0
+  smooth off
 endline
 
 line wall
@@ -333,6 +336,7 @@ line wall
   1369.0 446.5 1380.75 437.0 1387.25 433.5
   1393.75 430.0 1394.75 430.5 1404.25 431.25
   1413.75 432.0 1450.25 435.5 1453.0 436.5
+  smooth off
 endline
 
 point 821.5 491.0 label -text "pseudo-siphon"
@@ -373,11 +377,7 @@ line wall
   851.75 436.0 866.25 434.75 877.75 433.5
   889.25 432.25 893.5 438.25 903.5 439.25
   913.5 440.25 928.75 440.0 937.0 442.5
-endline
-
-line map-connection
-  659.3 475.30400000000003
-  625.81 475.30400000000003
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -394,6 +394,7 @@ line wall -subtype presumed
   937.0 442.5 946.0 424.5 948.0 419.0
   950.0 413.5 951.25 409.0 955.0 398.25
   958.75 387.5 961.5 375.5 962.5 374.75
+  smooth off
 endline
 
 line wall
@@ -435,6 +436,7 @@ line wall -subtype debris
   altitude .
   451.75 486.75 493.25 478.75 506.75 476.5
   520.25 474.25 549.0 468.75 558.75 468.25
+  smooth off
 endline
 
 line wall
@@ -472,6 +474,7 @@ line wall
   837.75 446.25 804.75 442.75 793.25 442.75
   781.75 442.75 756.0 439.75 744.75 444.0
   733.5 448.25 666.0 483.0 657.25 486.25
+  smooth off
 endline
 
 line wall

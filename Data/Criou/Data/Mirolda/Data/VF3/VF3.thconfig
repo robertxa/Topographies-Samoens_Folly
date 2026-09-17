@@ -55,7 +55,7 @@ endlayout
 #debut de la definition du layout "my_layout"
 layout my_layout
 
-  copy Coords_Header_VF
+  #copy Coords_Header_VF
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy headerl 
@@ -156,7 +156,7 @@ layout my_layout
 
 layout layout-coupe
 
-	copy Coords_Header_VF
+	#copy Coords_Header_VF
 	# Call the config settings (Layout config inside the config.thc file)
 	copy drawingconfig
 	copy header_coupe 
