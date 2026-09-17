@@ -1,0 +1,82 @@
+# Copyright (C) Collectif Mirolda 2026
+# This work is under the Creative Commons Attribution-NonCommercial-NoDerivatives License:
+# <http://creativecommons.org/licenses/by-nc-nd/4.0/>
+encoding utf-8
+# 2026.09.14 created by TopoDroid 6.4.102
+
+survey CB_Oh_putain -title "Oh putain !"
+
+  centerline
+    cs long-lat
+    fix 0 6.7770947 46.0917850 2087 # Coordonnées QGis/Lidar,
+
+	 station 0 "Oh putain !" entrance
+    
+	 date 2026.09.12 
+    team "Pierre-Bernard Laussac"
+	 team "Alexandre Pont"
+
+	 explo-date 2026
+	 explo-team "Collectif Mirolda"	 
+
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    extend left
+    0 . 4.10 85.3 -25.3
+    0 . 4.26 91.5 -12.2
+    0 . 6.09 71.5 -16.2
+    0 . 7.39 65.8 -24.6
+    0 . 3.23 115.4 -16.7
+    0 . 12.85 45.7 -17.4
+    0 . 4.90 44.8 -12.2
+    0 . 7.93 49.5 -19.5
+    0 . 5.91 64.2 -22.3
+   
+    0 1 11.02 72.7 -48.6
+    1 . 11.37 71.5 -44.8
+    1 . 2.84 283.9 9.9
+    1 . 4.04 323.7 26.5
+    1 . 4.20 305.4 41.4
+    1 . 5.21 331.9 33.8
+    1 . 4.81 268.4 32.2
+    1 . 5.44 250.8 19.9
+    1 . 6.64 230.9 12.5
+    1 . 1.15 194.5 28.7
+    1 . 1.01 126.9 30.8
+    1 . 5.35 194.3 -24.8
+    1 . 3.49 48.1 38.3
+    1 . 3.88 42.6 55.4
+    1 . 3.02 152.9 -31.4
+    1 . 2.70 235.6 69.7
+
+    1 2 4.96 184.9 -33.1
+    2 . 1.79 273.5 40.0
+    2 . 3.43 314.6 30.9
+    2 . 3.08 40.6 38.0
+    2 . 1.73 348.4 61.8
+
+    2 3 4.61 242.2 -9.7
+    3 . 0.65 306.2 9.8
+    3 . 1.28 322.9 -41.2
+    3 . 2.79 227.4 -83.9
+    3 . 2.07 130.0 -69.8
+    3 . 2.25 313.7 65.2
+    3 . 6.88 326.0 75.7
+    3 . 1.55 80.1 75.9
+    3 . 0.85 98.0 26.5
+    3 . 1.09 82.5 37.0
+  
+    3 4 2.78 160.3 -84.2 # 4 neige, pas de suite, pas de CA sensible
+    4 . 1.26 102.6 23.6
+    4 . 2.11 101.2 48.5
+    4 . 2.36 102.9 71.4
+    4 . 1.67 214.2 87.3
+    4 . 2.04 308.8 72.9
+    4 . 1.71 355.2 33.6
+    4 . 1.19 283.9 80.3
+    4 . 4.07 312.7 77.9
+    4 . 3.26 86.5 81.5
+  endcenterline
+
+endsurvey
