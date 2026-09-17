@@ -1,0 +1,21 @@
+encoding  utf-8
+
+# Copyright (C) 2024 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+survey E71 -title "Gouffre E71"
+	# Pour importer les différentes données de différents fichiers topos : 
+	input Data/E71.th
+	
+	# Import du dessin en plan
+	#input Data/E71.th2
+
+	# Import du dessin en coupe
+	#input Data/E71-coupe.th2
+
+	# Import des maps
+	#input E71-maps.th
+ 
+ endsurvey
+ 

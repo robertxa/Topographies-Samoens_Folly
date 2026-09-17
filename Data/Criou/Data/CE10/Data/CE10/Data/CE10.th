@@ -1,0 +1,80 @@
+encoding  utf-8
+
+# Copyright (C) 2022 Xavier Robert <xavier.robert***@***ird.fr>
+# This work is under the Creative Commons Attribution-ShareAlike-NonCommecial License:
+#	<http://creativecommons.org/licenses/by-nc-sa/4.0/> 
+
+ 
+survey CE10 -title "Gouffre CE10"
+
+ centerline -extend right
+    
+    date 1984
+        team "Jacques Gudefin"
+        team "Michel Dussurget"
+    explo-date 1984
+        explo-team "Jacques Gudefin"
+        explo-team "Michel Dussurget"
+
+    #cs ???? (Lambert, mais lequel?)
+    cs EPSG:27572   # Lambert II étendu? --> Ca a l'air OK, à faire vérifier !
+	
+    #fix CE10	943.96	130.37	2070
+    fix CE10	943960	2130370	2070
+    station CE10 "CE10" entrance air-draught continuation explored 07m
+    #fix E74	943960	2130370	2070
+    #station E74 "CE10" entrance air-draught
+
+    units length meters
+    #units counter centimeters
+    #calibrate counter 0 1
+    units compass clino degrees
+    calibrate clino 90 -1
+
+    data normal from to length compass clino #clino #left right up down
+    CE10	1	2.25	348	145	
+1	2	3.03	40	160	
+2	3	6.25	110	113	
+3	4	3.31	78	105	
+4	5	4.51	92	50	
+5	6	3.18	0	180	
+6	7	1.97	325	160	
+7	8	2.79	100	90	
+8	9	7.72	65	55	
+9	10	2.93	132	130	
+10	11	4.95	125	155	
+11	12	2.73	87	95	
+12	13	14.37	107	78	
+13	14	2.1	360	66	
+14	15	8.1	106	54	
+15	16	5.51	102	73	
+16	17	4.99	17	73	
+17	18	8.71	75	83	
+18	19	4.28	98	80	
+19	20	3.83	180	130	
+20	21	6.19	137	97	
+21	22	13	135	126	
+22	23	13.75	85	117	
+23	24	31.26	106	76	
+24	25	33.6	115	60	
+25	26	9.52	136	60	
+26	27	3	136	60	
+					
+22	40	1	238	83	
+40	41	17.13	125	62	
+
+
+11	51	3.27	186	112
+51	52	13	84	162
+52	A	16	0	180
+A	A'	1	0	180
+A	b	6.7	100	90
+b	c	6.7	92	72
+c	d	6.7	90	88
+extend left
+A	55	6.7	160	90
+55	56	10	170	67
+  
+endcenterline
+
+ endsurvey
