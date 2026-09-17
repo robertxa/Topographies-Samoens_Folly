@@ -1,0 +1,59 @@
+# Copyright (C) Collectif Mirolda 2026
+# This work is under the Creative Commons Attribution-NonCommercial-NoDerivatives License:
+# <http://creativecommons.org/licenses/by-nc-nd/4.0/>
+encoding utf-8
+# 2026.09.08 created by TopoDroid 6.4.102
+
+survey CD17 -title "CD17"
+
+  centerline
+    cs long-lat
+    fix 4 6.76414900 46.08854836 1801 # Coordonnées QGis/Lidar,
+	 station 4 "CD17 Gouffre du trou du soir" entrance
+	 
+	 date 2026.09.08 
+	 team "July Fillon"
+	 team "Augustin Madeleine"
+	 team "Lucas Schaeffer"
+	 
+	 explo-date 1997
+	 explo-team "URSUS"
+	 
+	 explo-date 2026
+	 explo-team "Collectif Mirolda"	 
+	 
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+ 
+    0 . 0.53 43.8 -2.2
+    0 . 0.24 213.2 -6.7
+    0 . 1.50 90.2 -86.1
+    0 . 3.36 149.2 88.2
+    extend left
+  
+    0 1 4.27 135.1 -11.7 # 0 fond
+    
+    1 . 1.34 258.9 0.9
+    1 . 0.86 80.8 0.6
+    1 . 0.36 337.3 -77.8
+    1 . 14.85 152.0 82.0
+    
+    1 2 22.72 170.0 79.9
+    2 . 1.09 38.7 1.7
+    2 . 3.56 56.6 -18.6
+    2 . 2.94 118.0 24.9
+    2 . 3.33 35.1 47.8
+    2 . 1.42 196.2 67.1
+    
+    2 3 8.15 115.8 78.1
+    3 . 0.37 194.9 -8.4
+    3 . 0.44 163.1 -59.6
+    3 . 4.38 304.3 -43.9
+    3 . 1.62 158.0 -12.0
+    3 . 2.37 146.6 5.2
+  
+    3 4 2.44 162.8 21.7 # 4 entrée 
+  endcenterline
+
+endsurvey
