@@ -12,7 +12,7 @@ survey trousCB -title "trous CB"
 #cs lat-long
 cs EPSG:27572 # LII Etendu
 
-fix       CB1       943270     2131140     2140
+#fix       CB1       943270     2131140     2140
 fix       CB2       943320     2131180     2170
 #fix       CB3       943320     2131140     2170    # Coordonnées URSUS anciennes
 fix       CB4       943500     2131960     2140
@@ -26,6 +26,7 @@ cs UTM32
 fix       CB7       328297  5106735     2177    # GPS 2023 + Lidar IGN
 
 cs lat-long
+fix       CB1       46.0929006	6.7763603 2112 # Pointage 2026  Lidar
 #fix     CB3        46.092769	6.77732 2124    # Coordonnées GPS 2024 Arthur (meilleures qu'Augustin ?) + alt à revoir
 #station   CB3Arthur       "CB3Arthur" entrance continuation explored 54m
 #fix     CB3Augustin        46.092778	6.777395 2170    # Coordonnées GPS 2024 Augustin + alt à revoir

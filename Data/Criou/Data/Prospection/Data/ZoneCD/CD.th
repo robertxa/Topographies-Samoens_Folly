@@ -37,11 +37,13 @@ fix       CD10       327619  5106444     1937    # GPS 2023 + Lidar IGN
 
 cs long-lat
 fix       GrotteE       6.773260    46.089254   1927    # GPS 2026 + Lidar HD
-fix       CD1   6.767405    46.089981   1899    # GPS 2026 + Lidar HD IGN # Soufflant le 12/07/2026 à 10h36
+#fix       CD1   6.767405    46.089981   1899    # GPS 2026 + Lidar HD IGN # Soufflant le 12/07/2026 à 10h36
         #46.08999	6.76739	1901	Pointage David P (09/2024) ; 
         #   Doline d’entrée, puits d’entrée, fraicheur bien marquée à l’entrée, mais pas idéal pour distinguer un courant d’air, l’entrée est très vaste.
+fix       CD2   6.77126181  46.09114306  1990    # Pointage 2026 + Lidar IGN	  
 fix       CD4   6.76732     46.09129    1967    # GPS 2024 (David Parrot) + Lidar HD IGN
-fix       CD3       6.77161  46.09118     1996    # GPS 2023 + Lidar IGN
+fix       CD3   6.7716242   46.0911814  1990    # GPS 2026 + Lidar IGN
+#fix       CD3       6.77161  46.09118     1996    # GPS 2023 + Lidar IGN
 fix       CD241    6.76613 46.08925    1853    # GPS 2024 (David Parrot) + 
 fix       CD242    6.76466 46.0914    1966    # GPS 2024 (David Parrot) + ; Porche
 fix       CD243    6.76974 46.09022    1950    # GPS 2024 (David Parrot) + Lidar HD IGN ; pas vu le fond, mais beau puits peu profond (10 m max.) les cailloux ne semble pas descendre plus bas, pas de courant d’air ce jour, mais je ne suis pas descendu.
@@ -49,7 +51,7 @@ fix       CD244    6.76986 46.09077    1970    # GPS 2024 (David Parrot) + Lidar
 ####################################################################
 
 station GrotteE "Grotte E" entrance continuation explored 10m air-draught #-text "Entrée en pente, en bas du cône ; CA soufflant froid le 11/07/2026"
-station   CD1       "CD1" entrance continuation explored 30m   air-draught
+#station   CD1       "CD1" entrance continuation explored 30m   air-draught
 station   CD2       "CD2" entrance continuation explored 40m
 station   CD3       "CD3" entrance continuation explored 15m #air-draught
 station   CD4       "CD4 - Tanne du Vrai" entrance continuation explored 63m air-draught
@@ -58,10 +60,8 @@ station   CD6       "CD6" entrance continuation explored 18m
 station   CD7       "CD7" entrance continuation explored 32m
 station   CD8       "CD8" entrance air-draught continuation explored 05m
 station   CD9       "CD9" entrance continuation explored 50m
-
 station   CD10      "CD10" entrance air-draught continuation explored 20m
 station   CD12      "CD12" entrance continuation explored 100m  # Spelealpes 10
-
 station   CD20      "CD20" entrance air-draught #continuation explored 40m
 
 station   CD241    "CD241" entrance     # Pointage David P (09/2024) ;
