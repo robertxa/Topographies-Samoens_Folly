@@ -28,7 +28,7 @@ import copy
 # Altitude de l'Ermoygraphe (m)
 Alti = 790.0
 # hauteur d'eau (en m) au dessus de laquelle les siphons temporaires ne passent pas
-seuil = 5
+seuil = 3   # J'avais mis 5 m, mais Steph dit plutôt 3 m suite à une sortie récente.
 
 
 # define the year range of the record
