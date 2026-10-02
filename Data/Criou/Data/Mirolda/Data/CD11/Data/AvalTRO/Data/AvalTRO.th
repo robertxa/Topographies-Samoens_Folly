@@ -230,9 +230,11 @@ centerline
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down						
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc 1,0,0			
+flags duplicate
 570	575	44571.0   45170.0  250.00  -28.00   1.00   1.00   2.00		2	#
 575	576	45170.0   45500.0  223.00  -28.00   1.00   1.00   2.00		2	#
 576	577	45500.0   46400.0  180.00  -25.00   1.00   1.00   2.00		2	#
+flags not duplicate
 
 endcenterline
 
@@ -276,6 +278,7 @@ flags duplicate
 707	708	16331.0   16674.0  172.00   19.00   1.00   1.00   2.00		2	#
 flags not duplicate
 
+flags duplicate
 708	709	16674.0   17265.0  148.00   -8.00   1.00   1.00   2.00		2	#
 709	710	17265.0   17602.0  132.00  -17.00   1.00   1.00   2.00		2	#
 710	711	17602.0   18017.0  189.00  -31.00   1.00   1.00   2.00		2	#
@@ -292,6 +295,7 @@ flags not duplicate
 721	722	29780.0   30344.0  170.00  -42.00   1.00   1.00   2.00		2	#
 722	723	30344.0   32070.0  171.00    0.00   1.00   1.00   2.00		2	#
 723	724	32070.0   33828.0  175.00  -24.00   1.00   1.00   2.00		2	#
+flags not duplicate
 
 endcenterline
 
@@ -334,7 +338,8 @@ centerline
     calibrate counter 0 1.000
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down	
-    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std			
+    #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std
+flags duplicate	 
 724	1200	46524.0   46846.0  201.00    0.00   1.00   1.00   2.00		2	#
 1200	1201	46846.0   47368.0  225.00  -45.00   1.00   1.00   2.00		2	#
 1201	1202	47368.0   48084.0  274.00   -6.00   1.00   1.00   2.00		2	#
@@ -368,6 +373,7 @@ centerline
 1229	1230	67230.0   68192.0  255.00  -22.00   1.00   1.00   2.00		2	#
 1230	1231	68192.0   69040.0  252.00  -30.00   1.00   1.00   2.00		2	#
 1231	1232	69040.0   69640.0  200.00  -30.00   1.00   1.00   2.00		2	#
+flags not duplicate
 
 endcenterline
 
@@ -536,8 +542,10 @@ centerline
     data topofil from to fromcount tocount compass clino left right up down
     #data normal from to fromcount tocount compass clino left right up down	
     #Param Topof 1.000 Deg Clino Deg 0.0000 Dir,Dir,Dir Inc Std			
+flags duplicate
 1232	1500	0.0     700.0  245.00    0.00   1.00   1.00   2.00		2	#
 1500	1501	272.0     708.0  177.00    3.00   1.00   1.00   2.00		2	#
+flags not duplicate
 1501	1502	708.0    1412.0  249.00  -20.00   1.00   1.00   2.00		2	#
 1502	1503	1412.0    1885.0  206.00  -14.00   1.00   1.00   2.00		2	#
 1503	1504	1885.0    2491.0  256.00  -15.00   1.00   1.00   2.00		2	#

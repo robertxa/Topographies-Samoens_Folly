@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -5032.0 -2752.0 18643.234599999996 19634.373900000002
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {-1091.0400000000009 1 1.0} {17419.760000000002 PTRBUCHLD4@230906_BMPRGF_CD11.900} 900-coupe.xvi 0 {}
 
 # 2023.09.07 created by TopoDroid v. 6.2.13
@@ -213,8 +213,8 @@ line label -text "laminoir"
 endline
 
 line wall
-  12924.0 -2563.0
-  12896.0 -2562.0 12426.0 -2509.0 12400.5 -2497.0
+  12890.0 -2566.0
+  12861.0 -2580.0 12426.0 -2509.0 12400.5 -2497.0
   12375.0 -2485.0 12073.42 -2425.28 12063.71 -2414.8899999999994
   12054.0 -2404.5 11644.0 -2212.5 11612.0 -2183.0
   11580.0 -2153.5 11357.88 -1983.8 11329.19 -1967.6499999999996
@@ -270,7 +270,7 @@ line wall
   smooth off
   12042.0 -2447.5 12422.5 -2546.0 12434.0 -2547.0
   altitude .
-  12445.5 -2548.0 12882.5 -2614.0 12910.5 -2616.0
+  12445.5 -2548.0 12853.0 -2617.0 12885.0 -2611.0
   smooth off
 endline
 
@@ -471,22 +471,18 @@ endline
 point 2776.0 -168.0 label -text "R4"
 
 area water
-  l275-2712-44
+  l300-13002--2641
 endarea
 
-area water
-  l274-2568-76
-endarea
-
-area water
-  l273-2152-120
-endarea
-
-area water
-  l273-2152-120
-endarea
-
-point 12928.0 -2408.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Bivouac -900 m" -text "voute mouillante"
+line border -id l300-13002--2641 -close on -subtype invisible
+  12977.5 -2602.0
+  12977.5 -2602.0 12886.5 -2591.0 12848.0 -2592.0
+  12809.5 -2593.0 12700.5 -2588.5 12692.0 -2601.0
+  12683.5 -2613.5 12683.0 -2643.5 12777.0 -2646.5
+  12871.0 -2649.5 12982.0 -2656.0 13003.5 -2639.5
+  13025.0 -2623.0 12977.5 -2602.0 12977.5 -2602.0
+  smooth off
+endline
 
 point 8026.0 -1248.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Bivouac -900 m" -text "Petite galerie à continuer"
 
