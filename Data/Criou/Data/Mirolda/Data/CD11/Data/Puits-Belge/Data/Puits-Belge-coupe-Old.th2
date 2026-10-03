@@ -1,11 +1,11 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -116.59000000000009 10521.706400000001 2895.317
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {9557.45 1 1.0} {944.8799999999999 941@Puits-Belge.Puits-Belge} Puits-Belge-coupe.xvi 0 {}
 
 
 
-scrap SC-Belge-1 -projection extended -station-names "" "@Puits-Belge" -author 2026 "Collectif Mirolda" -author 1987 "URSUS" -author 2026 "Barnabé Fourgous" -author 2026 "Alexandre Pont" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [716.0 -2623.0 837.0 -2623.0 0.0 0.0 5 0.0 m]
+scrap SC-Belge-1 -projection extended -station-names "" "@Puits-Belge" -author 1987 "URSUS" -author 2023 "Xavier Robert" -copyright 2023 "licence CCby-nc-sa : http://creativecommons.org/licenses/by-nc-sa/4.0/" -scale [716.0 -2623.0 837.0 -2623.0 0.0 0.0 5 0.0 m]
 
 line wall -reverse on
   2642.0 1744.0
@@ -39,10 +39,10 @@ line wall -reverse on
 endline
 
 line wall -reverse on
-  2064.5 1880.25
-  2064.5 1880.25 2059.0 1864.5 2067.0 1861.5
-  2075.0 1858.5 2081.25 1857.5 2089.75 1856.5
-  2098.25 1855.5 2129.0 1857.0 2137.5 1857.5
+  2065.0 1872.5
+  2065.0 1872.5 2040.5 1866.0 2048.5 1863.0
+  2056.5 1860.0 2070.5 1859.0 2079.0 1858.0
+  2087.5 1857.0 2129.0 1857.0 2137.5 1857.5
   2146.0 1858.0 2140.0 1860.0 2146.5 1869.5
   2153.0 1879.0 2151.5 1880.0 2164.5 1880.5
   2177.5 1881.0 2206.0 1877.0 2214.5 1874.0
@@ -58,8 +58,8 @@ line wall -reverse on
   2019.0 1887.5
   2019.0 1887.5 1984.0 1886.0 1989.5 1882.5
   1995.0 1879.0 2008.0 1875.0 2019.0 1872.0
-  2030.0 1869.0 2031.5 1866.5 2039.5 1869.0
-  2047.5 1871.5 2048.5 1884.75 2048.5 1884.75
+  2030.0 1869.0 2036.0 1866.0 2044.0 1868.5
+  2052.0 1871.0 2060.0 1876.5 2060.0 1876.5
   smooth off
 endline
 
@@ -92,27 +92,28 @@ line wall -reverse on
 endline
 
 line wall -reverse on
-  1779.5 1944.0
+  1790.5 1955.0
+  1790.5 1955.0 1772.5 1944.0 1779.5 1944.0
   1786.5 1944.0 1796.5 1944.5 1803.0 1946.0
-  1809.5 1947.5 1830.0 1955.5 1830.0 1955.5
+  1809.5 1947.5 1829.5 1956.0 1829.5 1956.0
   smooth off
 endline
 
 line wall -reverse on
-  1725.25 1949.5
-  1725.25 1949.5 1719.25 1939.25 1727.25 1938.75
-  1735.25 1938.25 1738.0 1939.0 1747.0 1940.5
-  1756.0 1942.0 1751.75 1940.5 1758.75 1942.5
-  1765.75 1944.5 1779.5 1944.0 1779.5 1944.0
+  1735.5 1947.5
+  1735.5 1947.5 1712.5 1941.5 1720.5 1941.0
+  1728.5 1940.5 1738.0 1939.0 1747.0 1940.5
+  1756.0 1942.0 1757.0 1941.5 1764.0 1943.5
+  1771.0 1945.5 1781.0 1956.0 1781.0 1956.0
   smooth off
 endline
 
 line wall -reverse on
-  1648.75 1980.5
-  1648.75 1980.5 1646.0 1964.0 1655.0 1961.0
+  1621.0 1977.0
+  1621.0 1977.0 1646.0 1964.0 1655.0 1961.0
   1664.0 1958.0 1674.5 1953.5 1681.5 1952.0
-  1688.5 1950.5 1687.0 1948.0 1696.5 1948.5
-  1706.0 1949.0 1707.25 1956.5 1707.25 1956.5
+  1688.5 1950.5 1700.5 1945.5 1710.0 1946.0
+  1719.5 1946.5 1732.5 1950.5 1732.5 1950.5
   smooth off
 endline
 
@@ -121,9 +122,9 @@ line wall -reverse on
   1465.5 1882.5 1491.0 1878.0 1503.5 1880.0
   1516.0 1882.0 1524.5 1888.0 1547.0 1900.0
   1569.5 1912.0 1572.0 1913.5 1587.5 1921.0
-  1603.0 1928.5 1607.5 1940.0 1616.5 1945.5
-  1625.5 1951.0 1634.54 1959.17 1636.0 1965.0
-  1636.75 1968.0 1634.0 1980.25 1634.0 1980.25
+  1603.0 1928.5 1621.0 1946.5 1630.0 1952.0
+  1639.0 1957.5 1642.0 1964.5 1636.0 1965.0
+  1630.0 1965.5 1619.0 1970.5 1619.0 1970.5
   smooth off
 endline
 
@@ -139,17 +140,9 @@ line wall -reverse on
   1170.0 1757.5 1190.5 1744.0 1205.5 1745.0
   1220.5 1746.0 1253.5 1751.0 1272.5 1762.0
   1291.5 1773.0 1348.0 1802.0 1361.0 1807.0
-  1374.0 1812.0 1401.0 1819.5 1394.75 1836.0
-endline
-
-line wall -reverse on
-  1408.5 1841.75
-  1414.5 1831.0 1436.5 1842.5 1426.5 1850.5
-endline
-
-line wall -reverse on
-  1437.0 1858.5
-  1442.75 1844.75 1502.5 1873.5 1493.5 1874.0
+  1374.0 1812.0 1387.0 1818.0 1399.5 1823.5
+  1412.0 1829.0 1452.5 1850.5 1460.5 1855.5
+  1468.5 1860.5 1502.5 1873.5 1493.5 1874.0
   1484.5 1874.5 1465.0 1874.5 1465.0 1874.5
   smooth off
 endline
@@ -160,34 +153,21 @@ line rope
   1452.5 1791.5
 endline
 
-line wall
-  1614.0 1871.0
-  1590.0 1877.0 1587.24 1885.32 1626.75 1880.0
+line rope
+  1608.0 1928.5
+  1583.5 1914.5
+  1583.0 1856.0
 endline
 
 line wall
-  1579.5 1866.5
-  1579.5 1866.5 1605.0 1863.0 1610.0 1863.0
-  smooth off
+  1610.5 1874.5
+  1594.5 1874.5
 endline
 
-point 1895.75 1852.5 height -align bottom-right -value [+8 m]
-
-line rock-border -close on
-  1876.25 1858.5
-  1868.0 1858.75
-  1865.5 1845.25
-  1877.75 1851.25
-  1876.25 1858.5
-endline
-
-line rock-border -close on
-  1863.5 1863.0
-  1854.75 1856.75
-  1854.75 1856.75 1858.75 1846.25 1859.75 1846.25
-  1860.75 1846.25 1866.0 1855.25 1866.0 1855.25
+line wall
+  1593.5 1863.0
+  1593.5 1863.0 1605.0 1863.0 1610.0 1863.0
   smooth off
-  1863.5 1863.0
 endline
 
 line wall -reverse on
@@ -195,61 +175,39 @@ line wall -reverse on
   1954.5 1874.0 1986.0 1871.5 1978.0 1875.0
   1970.0 1878.5 1954.5 1882.0 1944.5 1886.0
   1934.5 1890.0 1916.0 1898.5 1914.0 1899.0
-  1912.0 1899.5 1904.42 1901.81 1901.5 1902.5
-  1886.75 1906.0 1894.57 1854.64 1871.25 1853.0
-  1839.25 1850.75 1863.25 1901.75 1834.0 1896.0
+  1912.0 1899.5 1904.5 1902.5 1901.5 1902.5
+  1898.5 1902.5 1870.5 1905.5 1864.5 1905.5
+  1858.5 1905.5 1843.5 1896.0 1834.0 1896.0
   altitude .
-  1824.68 1894.17 1813.5 1890.0 1813.5 1898.0
+  1824.5 1896.0 1813.5 1890.0 1813.5 1898.0
   1813.5 1906.0 1816.0 1909.5 1809.5 1914.0
   smooth off
 endline
 
-line wall -reverse on
+line wall -reverse on -subtype debris
   1809.5 1914.0
   1803.0 1918.5 1810.5 1920.5 1794.0 1919.0
   1777.5 1917.5 1787.5 1926.0 1774.0 1926.0
   smooth off
 endline
 
-line wall
-  1698.0 1917.75
-  1698.0 1917.75 1700.75 1923.0 1703.5 1922.25
-  1706.25 1921.5 1705.75 1914.25 1705.75 1914.25
-  smooth off
-endline
-
-line wall -reverse on
-  1715.5 1954.75
-  1715.5 1954.75 1705.84 1945.24 1713.25 1944.0
-  1716.25 1943.5 1720.5 1951.75 1720.5 1951.75
-  smooth off
-endline
-
 line wall -reverse on
   1774.0 1926.0
   1760.5 1926.0 1746.0 1919.5 1738.5 1920.0
-  1731.0 1920.5 1715.75 1924.75 1714.25 1913.75
-endline
-
-line wall -reverse on
-  1690.75 1920.25
-  1689.0 1932.25 1662.25 1936.75 1664.75 1923.5
-endline
-
-line wall -reverse on
-  1651.25 1925.0
-  1652.94 1934.86 1641.0 1944.5 1639.0 1936.0
-  1637.0 1927.5 1633.25 1930.25 1628.0 1922.75
+  1731.0 1920.5 1705.5 1930.0 1692.5 1932.5
+  1679.5 1935.0 1660.0 1944.0 1650.0 1944.5
+  1640.0 1945.0 1641.0 1944.5 1639.0 1936.0
+  1637.0 1927.5 1634.5 1916.5 1625.5 1916.0
   altitude .
-  1622.83 1915.36 1618.5 1912.5 1615.5 1907.5
-  1612.5 1902.5 1616.5 1886.25 1630.25 1886.5
+  1616.5 1915.5 1602.5 1915.0 1599.5 1910.0
+  1596.5 1905.0 1594.5 1880.5 1594.5 1874.5
   smooth off
 endline
 
 line rope
   2173.0 1874.0
   2153.5 1872.0
-  2153.25 1828.5
+  2151.5 1824.0
 endline
 
 line rope
@@ -259,10 +217,10 @@ line rope
 endline
 
 line wall -reverse on
-  1579.5 1866.5
-  1570.25 1864.25 1556.52 1863.07 1545.75 1856.75
-  1534.25 1850.0 1528.5 1844.75 1512.5 1843.75
-  1496.5 1842.75 1484.0 1849.0 1475.5 1840.5
+  1593.5 1863.0
+  1593.5 1857.0 1584.5 1848.5 1572.0 1848.0
+  1559.5 1847.5 1533.5 1845.0 1517.5 1844.0
+  1501.5 1843.0 1484.0 1849.0 1475.5 1840.5
   1467.0 1832.0 1467.5 1796.0 1467.5 1790.5
   1467.5 1785.0 1457.5 1785.5 1439.0 1784.0
   1420.5 1782.5 1392.0 1788.0 1381.0 1787.5
@@ -271,29 +229,7 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -reverse on
-  924.25 1741.25
-  924.25 1741.25 926.5 1704.75 926.5 1695.75
-  926.5 1686.75 926.0 1683.5 931.25 1682.5
-  936.5 1681.5 958.75 1682.0 966.25 1688.75
-  973.75 1695.5 977.25 1706.0 978.5 1713.75
-  979.75 1721.5 981.5 1725.25 981.5 1725.25
-  smooth off
-endline
-
-line wall
-  901.5 1743.25
-  901.5 1743.25 904.5 1710.5 903.75 1699.25
-  903.0 1688.0 903.5 1675.5 906.25 1671.0
-  909.0 1666.5 913.25 1663.25 915.75 1662.0
-  918.25 1660.75 924.5 1659.25 945.5 1661.75
-  966.5 1664.25 999.25 1665.75 1006.25 1667.25
-  1013.25 1668.75 1021.5 1675.25 1031.0 1681.75
-endline
-
-point 863.0 1694.75 height -align left -value [-8 m]
-
-line wall -reverse on
+line wall -reverse on -subtype clay
   1326.5 1772.5
   1317.5 1767.0 1302.0 1754.5 1290.0 1749.5
   1278.0 1744.5 1271.0 1740.0 1260.5 1735.5
@@ -304,26 +240,12 @@ line wall -reverse on
   1157.5 1742.0 1151.0 1747.5 1138.5 1747.0
   1126.0 1746.5 1098.5 1745.5 1085.5 1745.5
   1072.5 1745.5 1056.0 1753.5 1046.0 1752.0
-endline
-
-point 1070.5 1800.5 air-draught -orientation 84.1 -subtype summer
-
-line wall -reverse on -subtype presumed
-  1046.0 1752.0
   1036.0 1750.5 1024.5 1749.5 1016.5 1750.0
   1008.5 1750.5 1009.0 1754.0 1000.0 1754.0
   991.0 1754.0 988.5 1757.0 979.5 1756.5
-  970.5 1756.0 946.5 1756.25 939.0 1756.25
-endline
-
-line wall -reverse on
-  939.0 1756.25
-  931.5 1756.25 925.5 1758.0 924.25 1741.25
-endline
-
-line wall -reverse on -subtype clay
-  901.5 1743.25
-  900.25 1762.75 862.0 1760.0 862.0 1760.0
+  970.5 1756.0 946.0 1759.5 938.5 1759.5
+  931.0 1759.5 924.0 1759.0 914.0 1759.0
+  904.0 1759.0 862.0 1760.0 862.0 1760.0
   smooth off
 endline
 
@@ -352,12 +274,8 @@ line wall -reverse on
   altitude .
   2493.0 1696.0 2475.5 1692.0 2475.5 1700.5
   2475.5 1709.0 2479.5 1709.5 2465.5 1712.5
-  2451.5 1715.5 2425.0 1732.25 2439.75 1700.5
-endline
-
-line wall -reverse on
-  2423.75 1701.75
-  2410.0 1726.75 2382.0 1717.5 2382.0 1727.5
+  2451.5 1715.5 2433.5 1719.5 2420.5 1720.0
+  2407.5 1720.5 2382.0 1717.5 2382.0 1727.5
   2382.0 1737.5 2370.0 1741.5 2363.0 1743.5
   smooth off
 endline
@@ -366,65 +284,51 @@ point 2655.5 1754.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "
 
 point 2550.0 1750.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 2445.25 1671.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 2612.0 1682.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 2070.5 1903.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 2078.0 1882.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
 point 1969.5 1840.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
 point 1937.5 1865.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 2027.5 1909.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 2033.0 1900.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
 point 1951.0 1928.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 2391.25 1702.75 station-name -scale xs -align bottom-left
+point 2415.5 1699.5 station-name -scale xs
 
-point 2272.25 1800.75 station-name -scale xs -align bottom-right
+point 2271.5 1804.5 station-name -scale xs -align left
 
 point 2042.0 1824.0 station-name -scale xs
 
-line rope
-  1899.5 1915.5
-  1860.0 1908.75
-  1829.5 1911.25
-endline
+point 1431.0 1857.5 station-name -scale xs -align left
+
+point 1785.5 1891.0 label -text "R5"
 
 point 1869.5 2006.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Puits remontant à escalader"
 
-point 1825.0 1977.75 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1844.5 1956.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 1729.5 1969.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1784.5 1974.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 1664.0 1900.75 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1743.5 1964.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 1638.75 2004.25 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1599.0 1978.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 1620.25 1839.75 air-draught -orientation 115.6 -subtype summer
+point 1628.0 1869.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 1661.25 1874.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1439.5 1880.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
 
-point 1904.75 1992.75 air-draught -orientation 180.7 -subtype summer
+point 837.5 1764.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -attr CA "CA soufflant en été" -text "Laminoir dans Hauterivien, étroiture de la Marmotte proche ?"
 
-point 1711.5 1976.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1520.5 1932.5 height -value [-9 m]
 
-point 1711.0 1893.5 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 1508.0 1787.0 height -value [-9 m]
 
-point 1692.0 1896.75 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
+point 932.0 1689.0 label -text "<center>laminoir<br>sur Hauterivien"
 
-point 1643.5 1855.25 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
-
-point 1420.5 1891.25 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
-
-point 1383.0 1868.0 continuation -attr Code A -attr Cavite "CD11" -attr Reseau "Puits Belge" -text "Départ à voir ?"
-
-point 1503.0 1800.25 height -value [-4 m]
-
-point 806.5 1812.5 label -text "<center>laminoir<br>sur Hauterivien"
-
-point 2213.75 1810.0 height -align bottom-right -value [-2 m]
-
-point 2169.25 1810.75 height -value [+4 m] -align bottom-right
+point 2196.5 1807.0 height -value [+5 m]
 
 area u:galerie
   l72-2426-1748
@@ -539,7 +443,7 @@ point 1044.8900000000003 1762.25 station -name 1172
 
 point 984.0300000000007 1763.31 station -name 1173
 
-point 930.3299999999999 1761.4899999999998 station -name 1174
+point 930.3299999999999 1763.31 station -name 1174
 
 endscrap
 
@@ -883,22 +787,8 @@ line wall
   2639.0 1707.5
   2639.0 1707.5 2651.5 1707.5 2658.0 1705.0
   2664.5 1702.5 2690.0 1704.0 2697.5 1697.5
-  2705.0 1691.0 2706.75 1683.75 2688.0 1685.0
-endline
-
-line wall -subtype unsurveyed
-  2593.5 1686.5
-  2692.5 1675.0
-endline
-
-line wall -reverse on -subtype unsurveyed
-  2598.5 1693.0
-  2688.0 1685.0
-endline
-
-line wall
-  2692.5 1675.0
-  2705.0 1675.0 2730.0 1674.0 2738.0 1674.0
+  2705.0 1691.0 2702.5 1676.5 2715.0 1676.5
+  2727.5 1676.5 2730.0 1674.0 2738.0 1674.0
   2746.0 1674.0 2754.5 1674.5 2758.5 1667.5
   2762.5 1660.5 2761.0 1654.0 2774.5 1650.5
   2788.0 1647.0 2797.0 1651.0 2803.5 1643.0
@@ -1513,7 +1403,6 @@ line wall
   altitude .
   9378.0 1136.0 9404.0 1143.5 9417.0 1144.0
   9430.0 1144.5 9444.5 1149.5 9451.0 1146.5
-  smooth off
 endline
 
 area u:boue

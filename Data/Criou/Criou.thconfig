@@ -325,12 +325,12 @@ endlayout
 # 3-EXPORT
 
 select MP-Criou@SystemMirolda
-#select MC-Criou-coupe-tot@SystemMirolda
+# select MC-Criou-coupe-tot@SystemMirolda
 
 # Export des fichiers pdf, plan et coupe. 
 # ATTENTION, la topo étant énorme, il faut mettre l'option ne traçant pas la centerline !
- export map -proj plan -fmt pdf -o Outputs/Criou-2024-plan.pdf -layout my_layout
-# export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2022-coupe.pdf
+ export map -proj plan -fmt pdf -o Outputs/Criou-2026-plan.pdf -layout my_layout
+ # export map -projection extended -fmt pdf -layout my_layout -o Outputs/Criou-2026-coupe.pdf
  export atlas -o Outputs/Criou-atlas.pdf -layout atlas_layout
 
 # Export du fichier 3d pour Loch
@@ -343,7 +343,7 @@ select MP-Criou@SystemMirolda
  export cave-list -location on -o Outputs/Criou/Caves.txt
 
 # Export des fichiers kml
- export map -proj plan -fmt kml -o Outputs/Criou-2024.kml -layout layout-kml
+ export map -proj plan -fmt kml -o Outputs/Criou-2026.kml -layout layout-kml
  export model -fmt kml -o Outputs/Criou-model.kml -enable all
 
 # Export de la database sql
@@ -352,8 +352,8 @@ select MP-Criou@SystemMirolda
 #    au second point et à l'avant dernier point de la série.
 #export database -fmt sql -o Outputs/databaseCriou-2022.sql
 
-export continuation-list -o Outputs/ContinuationsCriou-2024.html
-export continuation-list -o Outputs/ContinuationsCriou-2024.kml
-export survey-list -location on -o Outputs/SurveysCriou2024.html
-export cave-list -location on -o Outputs/CavesCriou2024.html
+export continuation-list -o Outputs/ContinuationsCriou-2026.html
+export continuation-list -o Outputs/ContinuationsCriou-2026.kml
+export survey-list -location on -o Outputs/SurveysCriou2026.html
+export cave-list -location on -o Outputs/CavesCriou2026.html
 export cave-list -location on -o Outputs/Caves-Criou.txt

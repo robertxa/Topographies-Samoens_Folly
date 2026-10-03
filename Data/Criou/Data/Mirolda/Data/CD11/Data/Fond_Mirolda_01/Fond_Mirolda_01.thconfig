@@ -394,7 +394,7 @@ endlayout
 
 ## Export des xvi pour le dessin si besoin
 	# export map -proj plan -layout xviexport -fmt xvi -o Data/Fond_Mirolda_01-Plan.xvi
-	# export map -proj extended -layout xviexport -fmt xvi -o Data/Fond_Mirolda_01-Extended.xvi
+	export map -proj extended -layout xviexport -fmt xvi -o Data/Fond_Mirolda_01-Extended.xvi
 
 ## Sélection des Maps à exporter
 	select MP-Fond_Mirolda_01-Plan-tot@Fond_Mirolda_01

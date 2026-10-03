@@ -132,19 +132,24 @@ survey CD11 -title "Gouffre Mirolda - CD11"
 	# Siphon Terminal
 	input Data/SiphonTerminal/SiphonTerminal-tot.th
 		equate 1538@AvalTRO.AvalTRO 1538@SiphonTerminal.SiphonTerminal
-		# Fond 2026 (-900  -1000)
+		
+	# Fond 2026 (-900  -1000)
 	input Data/Fond_Mirolda_01/Fond_Mirolda_01-tot.th
 		equate 0@Fond_Mirolda_01.Fond_Mirolda_01 PTRMKBU2@mirolda_mkbu.900
 		join SP-Fond_Mirolda_01_01@Fond_Mirolda_01 SP-900-3@900
 		join SP-Fond_Mirolda_01_01@Fond_Mirolda_01 SP-Fond_Mirolda_02_01@Fond_Mirolda_02
 		join SP-Fond_Mirolda_01_01@Fond_Mirolda_01 SP-GDaniel-1@GalerieDaniel
+		join SC-Fond_Mirolda_01_01@Fond_Mirolda_01 SC-900-1@900
+		join SC-Fond_Mirolda_01_01@Fond_Mirolda_01 SC-Fond_Mirolda_02_01@Fond_Mirolda_02
+		join SC-Fond_Mirolda_01_01@Fond_Mirolda_01 SC-GDaniel-1@GalerieDaniel
 	
-	# Fond 2026 suite (-900  -1000)
+
 	input Data/Fond_Mirolda_02/Fond_Mirolda_02-tot.th
 		equate 25@Fond_Mirolda_01.Fond_Mirolda_01 32@Fond_Mirolda_02.Fond_Mirolda_02
-		equate 12@Fond_Mirolda_02.Fond_Mirolda_02 12190@AvalTRO.AvalTRO	# a verifier !
+		equate 12@Fond_Mirolda_02.Fond_Mirolda_02 1219@AvalTRO.AvalTRO	
 		equate 0@Fond_Mirolda_02.Fond_Mirolda_02 1501@AvalTRO.AvalTRO
-	
+
+
 	# Jonctions des dessins en plan
 	# Jonction au niveau de -97 m
 	join SP-CD11-1@CD11 SP-MA-6@Bivouac270

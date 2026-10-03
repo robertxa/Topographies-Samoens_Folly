@@ -42,7 +42,6 @@ source Fond_Mirolda_02-tot.th
 input ../../../../../../../../config.thc 
 
 
-
 ###############################################################################################
 ## 2-LAYOUT                                                                                  ##
 ###############################################################################################
@@ -395,8 +394,8 @@ endlayout
 ###############################################################################################
 
 ## Export des xvi pour le dessin si besoin
-	# export map -proj plan -layout xviexport -fmt xvi -o Data/Fond_Mirolda_02-Plan.xvi
-	# export map -proj extended -layout xviexport -fmt xvi -o Data/Fond_Mirolda_02-Extended.xvi
+	export map -proj plan -layout xviexport -fmt xvi -o Data/Fond_Mirolda_02-Plan.xvi
+	export map -proj extended -layout xviexport -fmt xvi -o Data/Fond_Mirolda_02-Extended.xvi
 
 ## Sélection des Maps à exporter
 	select MP-Fond_Mirolda_02-Plan-tot@Fond_Mirolda_02

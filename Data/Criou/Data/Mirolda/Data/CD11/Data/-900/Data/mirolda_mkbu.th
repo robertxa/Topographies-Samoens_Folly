@@ -991,7 +991,11 @@ survey mirolda_mkbu -title "Rivière du Mirolda jusqu'à -920 m (2023)"
     PTRMKBU2 . 3.33 233.4 -6.3
     PTRMKBU2 . 1.21 218.8 75.8
     ###extend left
+	 
+	 flags duplicate
     PTRMKBU2 mkbu.134 13.38 163.0 -7.8
+	 flags not duplicate
+	 
   endcenterline
 
 endsurvey
